@@ -18,10 +18,8 @@ object Anon_Disabled {
     toggleOption: js.Function1[antdLib.libCheckboxGroupMod.CheckboxOptionType, scala.Unit],
     value: js.Any
   ): Anon_Disabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("toggleOption")(toggleOption)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(disabled = disabled, toggleOption = toggleOption, value = value)
+  
     __obj.asInstanceOf[Anon_Disabled]
   }
 }

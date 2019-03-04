@@ -27,12 +27,8 @@ object IDirectionsStepWarning {
     to: java.lang.String,
     warningType: java.lang.String
   ): IDirectionsStepWarning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("warningType")(warningType)
+    val __obj = js.Dynamic.literal(origin = origin, severity = severity, text = text, to = to, warningType = warningType)
+  
     __obj.asInstanceOf[IDirectionsStepWarning]
   }
 }

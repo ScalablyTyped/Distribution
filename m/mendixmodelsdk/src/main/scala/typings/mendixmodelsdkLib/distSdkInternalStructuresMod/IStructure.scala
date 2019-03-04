@@ -78,19 +78,7 @@ object IStructure {
     unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit,
     container: mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.IContainer = null
   ): IStructure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allProperties")(allProperties)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("loadedProperties")(loadedProperties)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("publicProperties")(publicProperties)
-    __obj.updateDynamic("structureTypeName")(structureTypeName)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("traverse")(traverse)
-    __obj.updateDynamic("traverseFind")(traverseFind)
-    __obj.updateDynamic("traversePublicParts")(traversePublicParts)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(allProperties = allProperties, id = id, isLoaded = isLoaded, loadedProperties = loadedProperties, model = model, publicProperties = publicProperties, structureTypeName = structureTypeName, toJSON = toJSON, traverse = traverse, traverseFind = traverseFind, traversePublicParts = traversePublicParts, unit = unit)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStructure]
   }

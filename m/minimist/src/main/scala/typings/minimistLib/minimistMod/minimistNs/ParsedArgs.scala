@@ -24,7 +24,8 @@ object ParsedArgs {
     `--`: js.Array[java.lang.String] = null,
     StringDictionary: /* arg */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ParsedArgs = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     if (`--` != null) __obj.updateDynamic("--")(`--`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ParsedArgs]

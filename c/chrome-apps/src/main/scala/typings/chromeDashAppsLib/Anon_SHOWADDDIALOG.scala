@@ -16,9 +16,8 @@ object Anon_SHOWADDDIALOG {
     SHOW_ADD_DIALOG: chromeDashAppsLib.chromeDashAppsLibStrings.showAddDialog,
     SHOW_CONFIGURE_DIALOG: chromeDashAppsLib.chromeDashAppsLibStrings.showConfigureDialog
   ): Anon_SHOWADDDIALOG = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SHOW_ADD_DIALOG")(SHOW_ADD_DIALOG)
-    __obj.updateDynamic("SHOW_CONFIGURE_DIALOG")(SHOW_CONFIGURE_DIALOG)
+    val __obj = js.Dynamic.literal(SHOW_ADD_DIALOG = SHOW_ADD_DIALOG, SHOW_CONFIGURE_DIALOG = SHOW_CONFIGURE_DIALOG)
+  
     __obj.asInstanceOf[Anon_SHOWADDDIALOG]
   }
 }

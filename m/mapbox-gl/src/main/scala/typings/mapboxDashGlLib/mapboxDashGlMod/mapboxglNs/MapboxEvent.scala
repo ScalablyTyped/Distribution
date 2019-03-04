@@ -14,9 +14,8 @@ trait MapboxEvent[TOrig] extends js.Object {
 object MapboxEvent {
   @scala.inline
   def apply[TOrig](originalEvent: TOrig, target: Map, `type`: java.lang.String): MapboxEvent[TOrig] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MapboxEvent[TOrig]]
   }
 }

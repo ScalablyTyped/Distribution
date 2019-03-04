@@ -26,12 +26,8 @@ object Anon_KeyLoadedTabs {
     ],
     tabsHistory: org.scalablytyped.runtime.NumberDictionary[js.Array[historyLib.historyMod.Location[historyLib.historyMod.LocationState]]]
   ): Anon_KeyLoadedTabs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadedTabs")(loadedTabs)
-    __obj.updateDynamic("navigationState")(navigationState)
-    __obj.updateDynamic("rootIndex")(rootIndex)
-    __obj.updateDynamic("tabs")(tabs)
-    __obj.updateDynamic("tabsHistory")(tabsHistory)
+    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs, navigationState = navigationState, rootIndex = rootIndex, tabs = tabs, tabsHistory = tabsHistory)
+  
     __obj.asInstanceOf[Anon_KeyLoadedTabs]
   }
 }

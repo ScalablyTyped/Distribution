@@ -12,8 +12,8 @@ trait AttentionDetails extends js.Object {
 object AttentionDetails {
   @scala.inline
   def apply(tabId: scala.Double): AttentionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
+  
     __obj.asInstanceOf[AttentionDetails]
   }
 }

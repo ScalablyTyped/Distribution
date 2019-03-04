@@ -24,13 +24,8 @@ object Anon_ContainerHeight {
     realWidth: scala.Double,
     topPosition: scala.Double
   ): Anon_ContainerHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerHeight")(containerHeight)
-    __obj.updateDynamic("containerWidth")(containerWidth)
-    __obj.updateDynamic("leftPosition")(leftPosition)
-    __obj.updateDynamic("realHeight")(realHeight)
-    __obj.updateDynamic("realWidth")(realWidth)
-    __obj.updateDynamic("topPosition")(topPosition)
+    val __obj = js.Dynamic.literal(containerHeight = containerHeight, containerWidth = containerWidth, leftPosition = leftPosition, realHeight = realHeight, realWidth = realWidth, topPosition = topPosition)
+  
     __obj.asInstanceOf[Anon_ContainerHeight]
   }
 }

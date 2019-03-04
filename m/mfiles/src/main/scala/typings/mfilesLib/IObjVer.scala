@@ -34,18 +34,8 @@ object IObjVer {
     Unserialize: js.Function1[js.Array[scala.Double], scala.Unit],
     Version: scala.Double
   ): IObjVer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("ObjID")(ObjID)
-    __obj.updateDynamic("Serialize")(Serialize)
-    __obj.updateDynamic("SetIDs")(SetIDs)
-    __obj.updateDynamic("SetObjIDAndVersion")(SetObjIDAndVersion)
-    __obj.updateDynamic("ToJSON")(ToJSON)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Unserialize")(Unserialize)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, ID = ID, ObjID = ObjID, Serialize = Serialize, SetIDs = SetIDs, SetObjIDAndVersion = SetObjIDAndVersion, ToJSON = ToJSON, Type = Type, Unserialize = Unserialize, Version = Version)
+  
     __obj.asInstanceOf[IObjVer]
   }
 }

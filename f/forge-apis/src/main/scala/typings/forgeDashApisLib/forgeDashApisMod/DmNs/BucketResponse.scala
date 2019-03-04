@@ -22,12 +22,8 @@ object BucketResponse {
     permissions: js.Array[forgeDashApisLib.Anon_Access],
     policyKey: java.lang.String
   ): BucketResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketKey")(bucketKey)
-    __obj.updateDynamic("bucketOwner")(bucketOwner)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("permissions")(permissions)
-    __obj.updateDynamic("policyKey")(policyKey)
+    val __obj = js.Dynamic.literal(bucketKey = bucketKey, bucketOwner = bucketOwner, createdDate = createdDate, permissions = permissions, policyKey = policyKey)
+  
     __obj.asInstanceOf[BucketResponse]
   }
 }

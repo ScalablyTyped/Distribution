@@ -12,8 +12,8 @@ trait Anon_PathBrand extends js.Object {
 object Anon_PathBrand {
   @scala.inline
   def apply(__pathBrand: js.Any): Anon_PathBrand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__pathBrand")(__pathBrand)
+    val __obj = js.Dynamic.literal(__pathBrand = __pathBrand)
+  
     __obj.asInstanceOf[Anon_PathBrand]
   }
 }

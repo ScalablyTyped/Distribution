@@ -18,10 +18,8 @@ object Anon_MessageView {
     newViewState: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates,
     oldViewState: inboxsdkLib.inboxsdkMod.InboxSDKNs.ConversationsNs.MessageViewViewStates
   ): Anon_MessageView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageView")(messageView)
-    __obj.updateDynamic("newViewState")(newViewState)
-    __obj.updateDynamic("oldViewState")(oldViewState)
+    val __obj = js.Dynamic.literal(messageView = messageView, newViewState = newViewState, oldViewState = oldViewState)
+  
     __obj.asInstanceOf[Anon_MessageView]
   }
 }

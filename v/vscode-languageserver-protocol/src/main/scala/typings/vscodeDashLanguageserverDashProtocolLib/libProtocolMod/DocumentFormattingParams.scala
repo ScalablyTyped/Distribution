@@ -22,9 +22,8 @@ object DocumentFormattingParams {
     options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FormattingOptions,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): DocumentFormattingParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(options = options, textDocument = textDocument)
+  
     __obj.asInstanceOf[DocumentFormattingParams]
   }
 }

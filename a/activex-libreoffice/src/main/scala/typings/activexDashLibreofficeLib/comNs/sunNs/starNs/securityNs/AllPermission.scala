@@ -16,8 +16,8 @@ trait AllPermission extends js.Object {
 object AllPermission {
   @scala.inline
   def apply(dummy: scala.Double): AllPermission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dummy")(dummy)
+    val __obj = js.Dynamic.literal(dummy = dummy)
+  
     __obj.asInstanceOf[AllPermission]
   }
 }

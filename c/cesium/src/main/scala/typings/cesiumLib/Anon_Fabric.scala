@@ -18,8 +18,7 @@ object Anon_Fabric {
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     translucent: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Fabric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fabric")(fabric)
+    val __obj = js.Dynamic.literal(fabric = fabric)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
     __obj.asInstanceOf[Anon_Fabric]

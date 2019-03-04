@@ -22,12 +22,8 @@ object RadialBarData {
     outerRadius: scala.Double,
     value: js.Any
   ): RadialBarData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cx")(cx)
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("outerRadius")(outerRadius)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(cx = cx, cy = cy, innerRadius = innerRadius, outerRadius = outerRadius, value = value)
+  
     __obj.asInstanceOf[RadialBarData]
   }
 }

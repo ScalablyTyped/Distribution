@@ -33,16 +33,8 @@ object CompilationResult {
     syntaxErrors: scala.Double,
     transpileErrors: scala.Double
   ): CompilationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("declarationErrors")(declarationErrors)
-    __obj.updateDynamic("emitErrors")(emitErrors)
-    __obj.updateDynamic("emitSkipped")(emitSkipped)
-    __obj.updateDynamic("globalErrors")(globalErrors)
-    __obj.updateDynamic("noEmit")(noEmit)
-    __obj.updateDynamic("optionsErrors")(optionsErrors)
-    __obj.updateDynamic("semanticErrors")(semanticErrors)
-    __obj.updateDynamic("syntaxErrors")(syntaxErrors)
-    __obj.updateDynamic("transpileErrors")(transpileErrors)
+    val __obj = js.Dynamic.literal(declarationErrors = declarationErrors, emitErrors = emitErrors, emitSkipped = emitSkipped, globalErrors = globalErrors, noEmit = noEmit, optionsErrors = optionsErrors, semanticErrors = semanticErrors, syntaxErrors = syntaxErrors, transpileErrors = transpileErrors)
+  
     __obj.asInstanceOf[CompilationResult]
   }
 }

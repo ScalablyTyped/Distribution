@@ -28,15 +28,8 @@ object Anon_BorderColorBorderWidth {
     labelStyle: js.Object,
     secondaryLabelStyle: js.Object
   ): Anon_BorderColorBorderWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("iconDefaults")(iconDefaults)
-    __obj.updateDynamic("indicatorColor")(indicatorColor)
-    __obj.updateDynamic("indicatorIconDefaults")(indicatorIconDefaults)
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("secondaryLabelStyle")(secondaryLabelStyle)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, color = color, iconDefaults = iconDefaults, indicatorColor = indicatorColor, indicatorIconDefaults = indicatorIconDefaults, labelStyle = labelStyle, secondaryLabelStyle = secondaryLabelStyle)
+  
     __obj.asInstanceOf[Anon_BorderColorBorderWidth]
   }
 }

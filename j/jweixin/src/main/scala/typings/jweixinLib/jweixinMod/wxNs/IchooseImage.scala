@@ -31,9 +31,7 @@ object IchooseImage {
     sizeType: js.Array[ImageSizeType] = null,
     sourceType: js.Array[ImageSourceType] = null
   ): IchooseImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(cancel = cancel, success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

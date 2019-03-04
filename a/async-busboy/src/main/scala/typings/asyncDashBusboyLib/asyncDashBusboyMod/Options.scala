@@ -34,8 +34,7 @@ object Options {
     limits: busboyLib.Anon_FieldNameSize = null,
     preservePath: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onFile")(onFile)
+    val __obj = js.Dynamic.literal(onFile = onFile)
     if (defCharset != null) __obj.updateDynamic("defCharset")(defCharset)
     if (fileHwm != null) __obj.updateDynamic("fileHwm")(fileHwm.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

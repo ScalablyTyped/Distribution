@@ -25,10 +25,8 @@ object NativeNumberXmlAttributes {
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     Style: java.lang.String
   ): NativeNumberXmlAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Format")(Format)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Style")(Style)
+    val __obj = js.Dynamic.literal(Format = Format, Locale = Locale, Style = Style)
+  
     __obj.asInstanceOf[NativeNumberXmlAttributes]
   }
 }

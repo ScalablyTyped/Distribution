@@ -102,19 +102,8 @@ object XDesktop {
     removeTerminateListener: js.Function1[XTerminateListener, scala.Unit],
     terminate: js.Function0[scala.Boolean]
   ): XDesktop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Components")(Components)
-    __obj.updateDynamic("CurrentComponent")(CurrentComponent)
-    __obj.updateDynamic("CurrentFrame")(CurrentFrame)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTerminateListener")(addTerminateListener)
-    __obj.updateDynamic("getComponents")(getComponents)
-    __obj.updateDynamic("getCurrentComponent")(getCurrentComponent)
-    __obj.updateDynamic("getCurrentFrame")(getCurrentFrame)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTerminateListener")(removeTerminateListener)
-    __obj.updateDynamic("terminate")(terminate)
+    val __obj = js.Dynamic.literal(Components = Components, CurrentComponent = CurrentComponent, CurrentFrame = CurrentFrame, acquire = acquire, addTerminateListener = addTerminateListener, getComponents = getComponents, getCurrentComponent = getCurrentComponent, getCurrentFrame = getCurrentFrame, queryInterface = queryInterface, release = release, removeTerminateListener = removeTerminateListener, terminate = terminate)
+  
     __obj.asInstanceOf[XDesktop]
   }
 }

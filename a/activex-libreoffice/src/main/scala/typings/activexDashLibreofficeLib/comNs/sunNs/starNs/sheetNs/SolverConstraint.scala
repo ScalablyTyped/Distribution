@@ -20,10 +20,8 @@ object SolverConstraint {
     Operator: SolverConstraintOperator,
     Right: js.Any
   ): SolverConstraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("Right")(Right)
+    val __obj = js.Dynamic.literal(Left = Left, Operator = Operator, Right = Right)
+  
     __obj.asInstanceOf[SolverConstraint]
   }
 }

@@ -32,8 +32,7 @@ object ReactSpecimenProps {
     sourceText: java.lang.String = null,
     state: js.Any = null
   ): ReactSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark)
     if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
     if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)

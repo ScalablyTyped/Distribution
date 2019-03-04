@@ -28,12 +28,7 @@ object Transformer {
     path: java.lang.String = null,
     tag: markoLib.srcCompilerTaglibDashLoaderTagMod.namespaced = null
   ): Transformer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFunc")(getFunc)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("taglibId")(taglibId)
+    val __obj = js.Dynamic.literal(getFunc = getFunc, id = id, priority = priority, properties = properties, taglibId = taglibId)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)
     if (tag != null) __obj.updateDynamic("tag")(tag)

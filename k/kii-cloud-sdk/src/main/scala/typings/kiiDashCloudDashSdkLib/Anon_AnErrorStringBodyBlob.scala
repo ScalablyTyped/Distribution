@@ -16,9 +16,8 @@ object Anon_AnErrorStringBodyBlob {
     failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any],
     success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, stdLib.Blob, js.Any]
   ): Anon_AnErrorStringBodyBlob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringBodyBlob]
   }
 }

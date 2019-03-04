@@ -20,11 +20,8 @@ object CircuitBreaker {
     isOpen: js.Function0[scala.Boolean],
     markSuccess: js.Function0[scala.Unit]
   ): CircuitBreaker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowRequest")(allowRequest)
-    __obj.updateDynamic("allowSingleTest")(allowSingleTest)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("markSuccess")(markSuccess)
+    val __obj = js.Dynamic.literal(allowRequest = allowRequest, allowSingleTest = allowSingleTest, isOpen = isOpen, markSuccess = markSuccess)
+  
     __obj.asInstanceOf[CircuitBreaker]
   }
 }

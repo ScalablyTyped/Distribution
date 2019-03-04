@@ -153,8 +153,7 @@ object StrictFormSelectProps {
     width: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
     wrapSelection: js.UndefOr[scala.Boolean] = js.undefined
   ): StrictFormSelectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (additionLabel != null) __obj.updateDynamic("additionLabel")(additionLabel.asInstanceOf[js.Any])
     if (additionPosition != null) __obj.updateDynamic("additionPosition")(additionPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(allowAdditions)) __obj.updateDynamic("allowAdditions")(allowAdditions)

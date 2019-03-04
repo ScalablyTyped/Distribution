@@ -42,12 +42,8 @@ object QueriesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): QueriesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createquery")(createquery)
-    __obj.updateDynamic("deletequery")(deletequery)
-    __obj.updateDynamic("getquery")(getquery)
-    __obj.updateDynamic("listqueries")(listqueries)
-    __obj.updateDynamic("runquery")(runquery)
+    val __obj = js.Dynamic.literal(createquery = createquery, deletequery = deletequery, getquery = getquery, listqueries = listqueries, runquery = runquery)
+  
     __obj.asInstanceOf[QueriesResource]
   }
 }

@@ -23,11 +23,8 @@ object PCTrueColorRendererResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     renderer: PointCloudRGBRenderer
   ): PCTrueColorRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer)
+  
     __obj.asInstanceOf[PCTrueColorRendererResult]
   }
 }

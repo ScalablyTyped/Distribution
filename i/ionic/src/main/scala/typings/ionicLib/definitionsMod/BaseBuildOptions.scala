@@ -20,8 +20,8 @@ object BaseBuildOptions {
     platform: java.lang.String = null,
     project: java.lang.String = null
   ): BaseBuildOptions = {
-    val __obj = js.Dynamic.literal(`--` = `--`)
-    __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(engine = engine)
+    __obj.updateDynamic("--")(`--`)
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)
     __obj.asInstanceOf[BaseBuildOptions]

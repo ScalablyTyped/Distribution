@@ -22,9 +22,8 @@ object UpdateInformationEntry {
     Description: java.lang.String,
     UpdateDocument: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XElement
   ): UpdateInformationEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("UpdateDocument")(UpdateDocument)
+    val __obj = js.Dynamic.literal(Description = Description, UpdateDocument = UpdateDocument)
+  
     __obj.asInstanceOf[UpdateInformationEntry]
   }
 }

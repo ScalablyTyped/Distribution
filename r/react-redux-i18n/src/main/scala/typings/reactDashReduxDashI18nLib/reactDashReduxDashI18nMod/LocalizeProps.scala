@@ -26,8 +26,7 @@ object LocalizeProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): LocalizeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(dangerousHTML)) __obj.updateDynamic("dangerousHTML")(dangerousHTML)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)

@@ -22,12 +22,8 @@ object EventGuest {
     getName: js.Function0[java.lang.String],
     getStatus: js.Function0[java.lang.String]
   ): EventGuest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdditionalGuests")(getAdditionalGuests)
-    __obj.updateDynamic("getEmail")(getEmail)
-    __obj.updateDynamic("getGuestStatus")(getGuestStatus)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getAdditionalGuests = getAdditionalGuests, getEmail = getEmail, getGuestStatus = getGuestStatus, getName = getName, getStatus = getStatus)
+  
     __obj.asInstanceOf[EventGuest]
   }
 }

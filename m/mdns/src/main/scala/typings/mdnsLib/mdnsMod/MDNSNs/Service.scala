@@ -37,15 +37,8 @@ object Service {
     rawTxtRecord: nodeLib.Buffer = null,
     txtRecord: js.Any = null
   ): Service = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("fullname")(fullname)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("interfaceIndex")(interfaceIndex)
-    __obj.updateDynamic("networkInterface")(networkInterface)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("replyDomain")(replyDomain)
+    val __obj = js.Dynamic.literal(addresses = addresses, flags = flags, fullname = fullname, host = host, interfaceIndex = interfaceIndex, networkInterface = networkInterface, port = port, replyDomain = replyDomain)
+    __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
     if (rawTxtRecord != null) __obj.updateDynamic("rawTxtRecord")(rawTxtRecord)
     if (txtRecord != null) __obj.updateDynamic("txtRecord")(txtRecord)

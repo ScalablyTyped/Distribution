@@ -18,10 +18,8 @@ object Anon_AnimationFrame {
     immediate: plottableLib.plottableLibStrings.immediate,
     timeout: plottableLib.plottableLibStrings.timeout
   ): Anon_AnimationFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationFrame")(animationFrame)
-    __obj.updateDynamic("immediate")(immediate)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(animationFrame = animationFrame, immediate = immediate, timeout = timeout)
+  
     __obj.asInstanceOf[Anon_AnimationFrame]
   }
 }

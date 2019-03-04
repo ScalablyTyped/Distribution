@@ -28,8 +28,7 @@ object INotification {
     text: java.lang.String = null,
     url: java.lang.String = null
   ): INotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (image != null) __obj.updateDynamic("image")(image)
     if (onClickFunc != null) __obj.updateDynamic("onClickFunc")(onClickFunc)
     if (onCloseFunc != null) __obj.updateDynamic("onCloseFunc")(onCloseFunc)

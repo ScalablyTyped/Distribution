@@ -24,10 +24,8 @@ object IntrospectionField {
     deprecationReason: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
   ): IntrospectionField = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("isDeprecated")(isDeprecated)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args, isDeprecated = isDeprecated, name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionField]

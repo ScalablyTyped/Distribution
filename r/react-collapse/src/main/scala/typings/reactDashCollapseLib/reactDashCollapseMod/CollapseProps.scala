@@ -39,9 +39,7 @@ object CollapseProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     theme: reactDashCollapseLib.Anon_Collapse = null
   ): CollapseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("isOpened")(isOpened)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isOpened = isOpened)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (fixedHeight != null) __obj.updateDynamic("fixedHeight")(fixedHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(forceInitialAnimation)) __obj.updateDynamic("forceInitialAnimation")(forceInitialAnimation)

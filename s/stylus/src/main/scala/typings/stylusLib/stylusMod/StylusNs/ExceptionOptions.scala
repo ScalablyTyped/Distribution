@@ -22,12 +22,8 @@ object ExceptionOptions {
     input: java.lang.String,
     lineno: scala.Double
   ): ExceptionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("lineno")(lineno)
+    val __obj = js.Dynamic.literal(column = column, context = context, filename = filename, input = input, lineno = lineno)
+  
     __obj.asInstanceOf[ExceptionOptions]
   }
 }

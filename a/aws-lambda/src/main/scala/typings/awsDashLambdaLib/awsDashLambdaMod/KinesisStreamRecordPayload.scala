@@ -22,12 +22,8 @@ object KinesisStreamRecordPayload {
     partitionKey: java.lang.String,
     sequenceNumber: java.lang.String
   ): KinesisStreamRecordPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approximateArrivalTimestamp")(approximateArrivalTimestamp)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("kinesisSchemaVersion")(kinesisSchemaVersion)
-    __obj.updateDynamic("partitionKey")(partitionKey)
-    __obj.updateDynamic("sequenceNumber")(sequenceNumber)
+    val __obj = js.Dynamic.literal(approximateArrivalTimestamp = approximateArrivalTimestamp, data = data, kinesisSchemaVersion = kinesisSchemaVersion, partitionKey = partitionKey, sequenceNumber = sequenceNumber)
+  
     __obj.asInstanceOf[KinesisStreamRecordPayload]
   }
 }

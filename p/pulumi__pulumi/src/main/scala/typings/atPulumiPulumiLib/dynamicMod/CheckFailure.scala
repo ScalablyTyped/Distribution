@@ -19,9 +19,8 @@ trait CheckFailure extends js.Object {
 object CheckFailure {
   @scala.inline
   def apply(property: java.lang.String, reason: java.lang.String): CheckFailure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(property = property, reason = reason)
+  
     __obj.asInstanceOf[CheckFailure]
   }
 }

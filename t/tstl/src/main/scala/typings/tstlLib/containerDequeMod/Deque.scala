@@ -73,15 +73,15 @@ class Deque[T] ()
   /**
     * @hidden
     */
-  var `capacity_`: js.Any = js.native
+  var capacity_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `matrix_`: js.Any = js.native
+  var matrix_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * The capacity to store elements.
     *

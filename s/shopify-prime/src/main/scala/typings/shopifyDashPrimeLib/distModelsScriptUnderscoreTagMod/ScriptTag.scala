@@ -42,8 +42,7 @@ object ScriptTag {
     id: scala.Int | scala.Double = null,
     updated_at: java.lang.String = null
   ): ScriptTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (display_scope != null) __obj.updateDynamic("display_scope")(display_scope.asInstanceOf[js.Any])

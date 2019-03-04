@@ -106,17 +106,8 @@ object XObjectInspectorUI {
     showCategory: js.Function2[java.lang.String, scala.Boolean, scala.Unit],
     showPropertyUI: js.Function1[java.lang.String, scala.Unit]
   ): XObjectInspectorUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enablePropertyUI")(enablePropertyUI)
-    __obj.updateDynamic("enablePropertyUIElements")(enablePropertyUIElements)
-    __obj.updateDynamic("getPropertyControl")(getPropertyControl)
-    __obj.updateDynamic("hidePropertyUI")(hidePropertyUI)
-    __obj.updateDynamic("rebuildPropertyUI")(rebuildPropertyUI)
-    __obj.updateDynamic("registerControlObserver")(registerControlObserver)
-    __obj.updateDynamic("revokeControlObserver")(revokeControlObserver)
-    __obj.updateDynamic("setHelpSectionText")(setHelpSectionText)
-    __obj.updateDynamic("showCategory")(showCategory)
-    __obj.updateDynamic("showPropertyUI")(showPropertyUI)
+    val __obj = js.Dynamic.literal(enablePropertyUI = enablePropertyUI, enablePropertyUIElements = enablePropertyUIElements, getPropertyControl = getPropertyControl, hidePropertyUI = hidePropertyUI, rebuildPropertyUI = rebuildPropertyUI, registerControlObserver = registerControlObserver, revokeControlObserver = revokeControlObserver, setHelpSectionText = setHelpSectionText, showCategory = showCategory, showPropertyUI = showPropertyUI)
+  
     __obj.asInstanceOf[XObjectInspectorUI]
   }
 }

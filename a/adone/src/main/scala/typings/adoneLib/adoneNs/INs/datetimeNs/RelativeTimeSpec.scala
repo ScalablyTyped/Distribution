@@ -38,20 +38,8 @@ object RelativeTimeSpec {
     y: RelativeTimeSpecVal,
     yy: RelativeTimeSpecVal
   ): RelativeTimeSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("M")(M.asInstanceOf[js.Any])
-    __obj.updateDynamic("MM")(MM.asInstanceOf[js.Any])
-    __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    __obj.updateDynamic("dd")(dd.asInstanceOf[js.Any])
-    __obj.updateDynamic("future")(future.asInstanceOf[js.Any])
-    __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    __obj.updateDynamic("hh")(hh.asInstanceOf[js.Any])
-    __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    __obj.updateDynamic("mm")(mm.asInstanceOf[js.Any])
-    __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
-    __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    __obj.updateDynamic("yy")(yy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(M = M.asInstanceOf[js.Any], MM = MM.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], future = future.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hh = hh.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], mm = mm.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], yy = yy.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RelativeTimeSpec]
   }
 }

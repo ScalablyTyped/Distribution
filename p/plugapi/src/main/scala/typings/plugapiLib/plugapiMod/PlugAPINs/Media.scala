@@ -26,14 +26,8 @@ object Media {
     image: java.lang.String,
     title: java.lang.String
   ): Media = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("cid")(cid)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(author = author, cid = cid, duration = duration, format = format, id = id, image = image, title = title)
+  
     __obj.asInstanceOf[Media]
   }
 }

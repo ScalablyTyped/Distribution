@@ -42,22 +42,8 @@ object ProcessesProcessData {
     tty: java.lang.String,
     user: java.lang.String
   ): ProcessesProcessData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("mem_rss")(mem_rss)
-    __obj.updateDynamic("mem_vsz")(mem_vsz)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("pcpu")(pcpu)
-    __obj.updateDynamic("pcpus")(pcpus)
-    __obj.updateDynamic("pcpuu")(pcpuu)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("pmem")(pmem)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("started")(started)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tty")(tty)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(command = command, mem_rss = mem_rss, mem_vsz = mem_vsz, name = name, nice = nice, pcpu = pcpu, pcpus = pcpus, pcpuu = pcpuu, pid = pid, pmem = pmem, priority = priority, started = started, state = state, tty = tty, user = user)
+  
     __obj.asInstanceOf[ProcessesProcessData]
   }
 }

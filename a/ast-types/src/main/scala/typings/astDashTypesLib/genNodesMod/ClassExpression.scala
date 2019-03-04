@@ -32,9 +32,8 @@ object ClassExpression {
     superTypeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): ClassExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, implements = implements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (superClass != null) __obj.updateDynamic("superClass")(superClass)
     if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])

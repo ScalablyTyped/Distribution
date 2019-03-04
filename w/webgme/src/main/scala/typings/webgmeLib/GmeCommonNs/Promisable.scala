@@ -13,8 +13,9 @@ trait Promisable extends js.Object {
 object Promisable {
   @scala.inline
   def apply(`catch`: js.Function1[CatchCallback, Promisable], `then`: js.Function1[ThenCallback, Promisable]): Promisable = {
-    val __obj = js.Dynamic.literal(`catch` = `catch`, `then` = `then`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("catch")(`catch`)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[Promisable]
   }
 }

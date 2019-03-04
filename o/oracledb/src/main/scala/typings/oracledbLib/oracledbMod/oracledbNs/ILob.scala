@@ -62,10 +62,8 @@ object ILob {
       scala.Unit
     ] = null
   ): ILob = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chunkSize")(chunkSize)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("pieceSize")(pieceSize)
+    val __obj = js.Dynamic.literal(chunkSize = chunkSize, length = length, pieceSize = pieceSize)
+    __obj.updateDynamic("type")(`type`)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read)
     if (release != null) __obj.updateDynamic("release")(release)

@@ -30,14 +30,7 @@ object State {
     focusedOption: OptionType = null,
     focusedValue: OptionType = null
   ): State[OptionType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ariaLiveContext")(ariaLiveContext)
-    __obj.updateDynamic("ariaLiveSelection")(ariaLiveSelection)
-    __obj.updateDynamic("inputIsHidden")(inputIsHidden)
-    __obj.updateDynamic("isComposing")(isComposing)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("menuOptions")(menuOptions)
-    __obj.updateDynamic("selectValue")(selectValue)
+    val __obj = js.Dynamic.literal(ariaLiveContext = ariaLiveContext, ariaLiveSelection = ariaLiveSelection, inputIsHidden = inputIsHidden, isComposing = isComposing, isFocused = isFocused, menuOptions = menuOptions, selectValue = selectValue)
     if (focusedOption != null) __obj.updateDynamic("focusedOption")(focusedOption.asInstanceOf[js.Any])
     if (focusedValue != null) __obj.updateDynamic("focusedValue")(focusedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[State[OptionType]]

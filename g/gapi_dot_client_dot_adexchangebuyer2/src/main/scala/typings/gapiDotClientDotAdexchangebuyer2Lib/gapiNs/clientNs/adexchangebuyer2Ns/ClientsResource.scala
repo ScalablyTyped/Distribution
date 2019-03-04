@@ -40,13 +40,8 @@ object ClientsResource {
     ],
     users: UsersResource
   ): ClientsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("invitations")(invitations)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(create = create, get = get, invitations = invitations, list = list, update = update, users = users)
+  
     __obj.asInstanceOf[ClientsResource]
   }
 }

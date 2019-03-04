@@ -61,8 +61,8 @@ object CapabilityStatementRestResourceSearchParam {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementRestResourceSearchParam = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

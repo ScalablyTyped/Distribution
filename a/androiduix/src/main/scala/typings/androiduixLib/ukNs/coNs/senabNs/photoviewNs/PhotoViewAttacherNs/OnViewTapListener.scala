@@ -14,8 +14,8 @@ object OnViewTapListener {
   def apply(
     onViewTap: js.Function3[androiduixLib.androidNs.viewNs.View, scala.Double, scala.Double, scala.Unit]
   ): OnViewTapListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onViewTap")(onViewTap)
+    val __obj = js.Dynamic.literal(onViewTap = onViewTap)
+  
     __obj.asInstanceOf[OnViewTapListener]
   }
 }

@@ -12,9 +12,8 @@ trait ConversationsGrant extends Grant {
 object ConversationsGrant {
   @scala.inline
   def apply(configurationProfileSid: java.lang.String, toPayload: js.Function0[ConversationsGrantPayload]): ConversationsGrant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurationProfileSid")(configurationProfileSid)
-    __obj.updateDynamic("toPayload")(toPayload)
+    val __obj = js.Dynamic.literal(configurationProfileSid = configurationProfileSid, toPayload = toPayload)
+  
     __obj.asInstanceOf[ConversationsGrant]
   }
 }

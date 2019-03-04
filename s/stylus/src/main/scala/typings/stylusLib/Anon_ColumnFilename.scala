@@ -20,11 +20,8 @@ object Anon_ColumnFilename {
     lineno: scala.Double,
     nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
   ): Anon_ColumnFilename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(column = column, filename = filename, lineno = lineno, nodes = nodes)
+  
     __obj.asInstanceOf[Anon_ColumnFilename]
   }
 }

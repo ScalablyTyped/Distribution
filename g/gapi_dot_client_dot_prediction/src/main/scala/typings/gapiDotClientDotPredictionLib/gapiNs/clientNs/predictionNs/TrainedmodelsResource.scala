@@ -54,14 +54,8 @@ object TrainedmodelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Insert2]
     ]
   ): TrainedmodelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analyze")(analyze)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("predict")(predict)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(analyze = analyze, delete = delete, get = get, insert = insert, list = list, predict = predict, update = update)
+  
     __obj.asInstanceOf[TrainedmodelsResource]
   }
 }

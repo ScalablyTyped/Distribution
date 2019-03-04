@@ -26,10 +26,7 @@ object LocationRecord {
     population_density: scala.Int | scala.Double = null,
     time_zone: java.lang.String = null
   ): LocationRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy_radius")(accuracy_radius)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(accuracy_radius = accuracy_radius, latitude = latitude, longitude = longitude)
     if (average_income != null) __obj.updateDynamic("average_income")(average_income.asInstanceOf[js.Any])
     if (metro_code != null) __obj.updateDynamic("metro_code")(metro_code.asInstanceOf[js.Any])
     if (population_density != null) __obj.updateDynamic("population_density")(population_density.asInstanceOf[js.Any])

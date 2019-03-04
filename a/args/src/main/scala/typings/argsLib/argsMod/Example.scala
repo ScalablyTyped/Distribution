@@ -13,9 +13,8 @@ trait Example extends js.Object {
 object Example {
   @scala.inline
   def apply(description: java.lang.String, usage: java.lang.String): Example = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(description = description, usage = usage)
+  
     __obj.asInstanceOf[Example]
   }
 }

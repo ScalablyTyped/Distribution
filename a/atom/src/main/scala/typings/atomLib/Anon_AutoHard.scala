@@ -16,9 +16,8 @@ object Anon_AutoHard {
     scopeDescriptor: atomLib.atomMod.ScopeDescriptor,
     value: atomLib.atomLibStrings.auto | atomLib.atomLibStrings.soft | atomLib.atomLibStrings.hard
   ): Anon_AutoHard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AutoHard]
   }
 }

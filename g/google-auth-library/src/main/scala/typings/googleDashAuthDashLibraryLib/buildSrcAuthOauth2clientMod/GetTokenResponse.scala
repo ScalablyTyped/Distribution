@@ -16,8 +16,7 @@ object GetTokenResponse {
     tokens: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials,
     res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[_] = null
   ): GetTokenResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(tokens = tokens)
     if (res != null) __obj.updateDynamic("res")(res)
     __obj.asInstanceOf[GetTokenResponse]
   }

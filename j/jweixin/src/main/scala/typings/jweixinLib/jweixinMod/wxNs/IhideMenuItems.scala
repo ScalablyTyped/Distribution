@@ -17,8 +17,7 @@ object IhideMenuItems {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IhideMenuItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("menuList")(menuList)
+    val __obj = js.Dynamic.literal(menuList = menuList)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

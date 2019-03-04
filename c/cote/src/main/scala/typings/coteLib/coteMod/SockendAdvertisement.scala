@@ -23,8 +23,7 @@ object SockendAdvertisement {
     respondsTo: js.Array[java.lang.String] = null,
     subset: java.lang.String = null
   ): SockendAdvertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts)
     if (key != null) __obj.updateDynamic("key")(key)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)

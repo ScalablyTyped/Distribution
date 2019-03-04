@@ -18,11 +18,8 @@ object OperationError {
     message: java.lang.String,
     name: java.lang.String
   ): OperationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(date = date, init = init, message = message, name = name)
+  
     __obj.asInstanceOf[OperationError]
   }
 }

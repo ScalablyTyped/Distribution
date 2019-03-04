@@ -40,11 +40,8 @@ object IJobInfo {
     setWork: js.Function1[js.Function, scala.Unit],
     shouldYield: scala.Boolean
   ): IJobInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("setPromise")(setPromise)
-    __obj.updateDynamic("setWork")(setWork)
-    __obj.updateDynamic("shouldYield")(shouldYield)
+    val __obj = js.Dynamic.literal(job = job, setPromise = setPromise, setWork = setWork, shouldYield = shouldYield)
+  
     __obj.asInstanceOf[IJobInfo]
   }
 }

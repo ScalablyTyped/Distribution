@@ -81,8 +81,7 @@ object WaitOnOptions {
     verbose: js.UndefOr[scala.Boolean] = js.undefined,
     window: scala.Int | scala.Double = null
   ): WaitOnOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(resources = resources)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects)

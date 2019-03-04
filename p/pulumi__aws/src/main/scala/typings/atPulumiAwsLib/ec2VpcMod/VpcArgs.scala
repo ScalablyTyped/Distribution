@@ -57,8 +57,7 @@ object VpcArgs {
     instanceTenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): VpcArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cidrBlock = cidrBlock.asInstanceOf[js.Any])
     if (assignGeneratedIpv6CidrBlock != null) __obj.updateDynamic("assignGeneratedIpv6CidrBlock")(assignGeneratedIpv6CidrBlock.asInstanceOf[js.Any])
     if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
     if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])

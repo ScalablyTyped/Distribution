@@ -18,8 +18,7 @@ object GraphQLError {
     locations: js.Array[httpDashLinkDashDataloaderLib.Anon_Column] = null,
     path: js.Array[java.lang.String] = null
   ): GraphQLError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (locations != null) __obj.updateDynamic("locations")(locations)
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[GraphQLError]

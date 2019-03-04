@@ -24,11 +24,7 @@ object PlatformIOSStatic {
       js.Any
     ]
   ): PlatformIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OS")(OS)
-    __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    __obj.updateDynamic("isPad")(isPad)
-    __obj.updateDynamic("isTVOS")(isTVOS)
+    val __obj = js.Dynamic.literal(OS = OS, Version = Version.asInstanceOf[js.Any], isPad = isPad, isTVOS = isTVOS)
     __obj.updateDynamic("select")(select_default)
     __obj.asInstanceOf[PlatformIOSStatic]
   }

@@ -50,10 +50,7 @@ object ElementDefinitionBase {
     fhir_comments: js.Array[java.lang.String] = null,
     id: java.lang.String = null
   ): ElementDefinitionBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(max = max, min = min, path = path)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_max != null) __obj.updateDynamic("_max")(_max)

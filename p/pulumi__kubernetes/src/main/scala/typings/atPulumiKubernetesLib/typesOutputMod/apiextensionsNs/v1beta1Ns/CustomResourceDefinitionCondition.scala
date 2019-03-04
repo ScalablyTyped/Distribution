@@ -40,11 +40,8 @@ object CustomResourceDefinitionCondition {
     status: java.lang.String,
     `type`: java.lang.String
   ): CustomResourceDefinitionCondition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("lastTransitionTime")(lastTransitionTime)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(lastTransitionTime = lastTransitionTime, message = message, reason = reason, status = status)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CustomResourceDefinitionCondition]
   }
 }

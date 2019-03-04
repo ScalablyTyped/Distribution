@@ -27,9 +27,8 @@ object Clustering {
     ],
     rowToDataPoint: js.Function1[Row, heremapsLib.HNs.clusteringNs.DataPoint]
   ): Clustering = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("rowToDataPoint")(rowToDataPoint)
+    val __obj = js.Dynamic.literal(options = options, rowToDataPoint = rowToDataPoint)
+  
     __obj.asInstanceOf[Clustering]
   }
 }

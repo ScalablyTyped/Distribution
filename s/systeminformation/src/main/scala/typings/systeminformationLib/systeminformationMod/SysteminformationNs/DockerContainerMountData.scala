@@ -24,13 +24,8 @@ object DockerContainerMountData {
     Source: java.lang.String,
     Type: java.lang.String
   ): DockerContainerMountData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Destination")(Destination)
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Propagation")(Propagation)
-    __obj.updateDynamic("RW")(RW)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Destination = Destination, Mode = Mode, Propagation = Propagation, RW = RW, Source = Source, Type = Type)
+  
     __obj.asInstanceOf[DockerContainerMountData]
   }
 }

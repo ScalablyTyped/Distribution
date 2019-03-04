@@ -44,12 +44,7 @@ object IItemOptions {
     lat: scala.Int | scala.Double = null,
     long: scala.Int | scala.Double = null
   ): IItemOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(date = date, description = description, guid = guid, title = title, url = url)
     if (author != null) __obj.updateDynamic("author")(author)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure)

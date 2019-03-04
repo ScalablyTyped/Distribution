@@ -22,8 +22,8 @@ object Footnote {
     data: unistLib.unistMod.Data = null,
     position: unistLib.unistMod.Position = null
   ): Footnote = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[Footnote]

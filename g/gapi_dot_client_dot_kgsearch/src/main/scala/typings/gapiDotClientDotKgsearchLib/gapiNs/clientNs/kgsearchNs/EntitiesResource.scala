@@ -22,8 +22,8 @@ object EntitiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchResponse]
     ]
   ): EntitiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
+  
     __obj.asInstanceOf[EntitiesResource]
   }
 }

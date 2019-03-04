@@ -28,15 +28,8 @@ object TextMode {
     toggleCommentLines: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Unit],
     transformAction: js.Function5[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
   ): TextMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoOutdent")(autoOutdent)
-    __obj.updateDynamic("checkOutdent")(checkOutdent)
-    __obj.updateDynamic("createModeDelegates")(createModeDelegates)
-    __obj.updateDynamic("createWorker")(createWorker)
-    __obj.updateDynamic("getNextLineIndent")(getNextLineIndent)
-    __obj.updateDynamic("getTokenizer")(getTokenizer)
-    __obj.updateDynamic("toggleCommentLines")(toggleCommentLines)
-    __obj.updateDynamic("transformAction")(transformAction)
+    val __obj = js.Dynamic.literal(autoOutdent = autoOutdent, checkOutdent = checkOutdent, createModeDelegates = createModeDelegates, createWorker = createWorker, getNextLineIndent = getNextLineIndent, getTokenizer = getTokenizer, toggleCommentLines = toggleCommentLines, transformAction = transformAction)
+  
     __obj.asInstanceOf[TextMode]
   }
 }

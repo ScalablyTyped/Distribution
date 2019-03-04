@@ -18,9 +18,8 @@ object Anon_MeasureTuple {
     tuple: js.Array[java.lang.String],
     `type`: java.lang.String
   ): Anon_MeasureTuple = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("measure")(measure)
-    __obj.updateDynamic("tuple")(tuple)
+    val __obj = js.Dynamic.literal(measure = measure, tuple = tuple)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_MeasureTuple]
   }
 }

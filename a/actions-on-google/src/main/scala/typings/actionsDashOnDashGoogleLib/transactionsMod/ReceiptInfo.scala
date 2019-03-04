@@ -13,8 +13,8 @@ trait ReceiptInfo extends js.Object {
 object ReceiptInfo {
   @scala.inline
   def apply(confirmedActionOrderId: java.lang.String): ReceiptInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirmedActionOrderId")(confirmedActionOrderId)
+    val __obj = js.Dynamic.literal(confirmedActionOrderId = confirmedActionOrderId)
+  
     __obj.asInstanceOf[ReceiptInfo]
   }
 }

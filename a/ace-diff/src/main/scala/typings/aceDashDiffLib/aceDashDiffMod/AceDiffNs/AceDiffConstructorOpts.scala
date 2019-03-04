@@ -27,10 +27,7 @@ object AceDiffConstructorOpts {
     showDiffs: js.UndefOr[scala.Boolean] = js.undefined,
     theme: java.lang.String = null
   ): AceDiffConstructorOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], left = left, right = right)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (diffGranularity != null) __obj.updateDynamic("diffGranularity")(diffGranularity.asInstanceOf[js.Any])
     if (maxDiffs != null) __obj.updateDynamic("maxDiffs")(maxDiffs.asInstanceOf[js.Any])

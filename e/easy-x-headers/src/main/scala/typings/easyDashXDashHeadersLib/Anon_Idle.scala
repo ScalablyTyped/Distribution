@@ -16,12 +16,8 @@ trait Anon_Idle extends js.Object {
 object Anon_Idle {
   @scala.inline
   def apply(idle: scala.Double, irq: scala.Double, nice: scala.Double, sys: scala.Double, user: scala.Double): Anon_Idle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idle")(idle)
-    __obj.updateDynamic("irq")(irq)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("sys")(sys)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(idle = idle, irq = irq, nice = nice, sys = sys, user = user)
+  
     __obj.asInstanceOf[Anon_Idle]
   }
 }

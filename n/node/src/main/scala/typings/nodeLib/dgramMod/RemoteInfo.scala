@@ -20,11 +20,8 @@ object RemoteInfo {
     port: scala.Double,
     size: scala.Double
   ): RemoteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(address = address, family = family.asInstanceOf[js.Any], port = port, size = size)
+  
     __obj.asInstanceOf[RemoteInfo]
   }
 }

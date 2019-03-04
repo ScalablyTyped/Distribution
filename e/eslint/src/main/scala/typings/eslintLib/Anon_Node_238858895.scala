@@ -13,8 +13,8 @@ trait Anon_Node_238858895
 object Anon_Node_238858895 {
   @scala.inline
   def apply(node: estreeLib.estreeMod.Node): Anon_Node_238858895 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Node_238858895]
   }
 }

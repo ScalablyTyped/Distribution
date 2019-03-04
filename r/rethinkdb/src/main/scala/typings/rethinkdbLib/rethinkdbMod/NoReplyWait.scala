@@ -12,8 +12,8 @@ trait NoReplyWait extends js.Object {
 object NoReplyWait {
   @scala.inline
   def apply(noreplyWait: scala.Boolean): NoReplyWait = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("noreplyWait")(noreplyWait)
+    val __obj = js.Dynamic.literal(noreplyWait = noreplyWait)
+  
     __obj.asInstanceOf[NoReplyWait]
   }
 }

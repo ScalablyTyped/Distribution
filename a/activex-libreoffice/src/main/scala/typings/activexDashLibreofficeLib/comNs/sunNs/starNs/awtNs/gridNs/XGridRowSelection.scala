@@ -72,17 +72,8 @@ object XGridRowSelection {
     selectAllRows: js.Function0[scala.Unit],
     selectRow: js.Function1[scala.Double, scala.Unit]
   ): XGridRowSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SelectedRows")(SelectedRows)
-    __obj.updateDynamic("addSelectionListener")(addSelectionListener)
-    __obj.updateDynamic("deselectAllRows")(deselectAllRows)
-    __obj.updateDynamic("deselectRow")(deselectRow)
-    __obj.updateDynamic("getSelectedRows")(getSelectedRows)
-    __obj.updateDynamic("hasSelectedRows")(hasSelectedRows)
-    __obj.updateDynamic("isRowSelected")(isRowSelected)
-    __obj.updateDynamic("removeSelectionListener")(removeSelectionListener)
-    __obj.updateDynamic("selectAllRows")(selectAllRows)
-    __obj.updateDynamic("selectRow")(selectRow)
+    val __obj = js.Dynamic.literal(SelectedRows = SelectedRows, addSelectionListener = addSelectionListener, deselectAllRows = deselectAllRows, deselectRow = deselectRow, getSelectedRows = getSelectedRows, hasSelectedRows = hasSelectedRows, isRowSelected = isRowSelected, removeSelectionListener = removeSelectionListener, selectAllRows = selectAllRows, selectRow = selectRow)
+  
     __obj.asInstanceOf[XGridRowSelection]
   }
 }

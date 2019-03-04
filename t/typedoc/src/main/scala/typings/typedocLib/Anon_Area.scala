@@ -40,21 +40,8 @@ object Anon_Area {
     source: scala.Boolean,
     wbr: scala.Boolean
   ): Anon_Area = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("br")(br)
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("embed")(embed)
-    __obj.updateDynamic("hr")(hr)
-    __obj.updateDynamic("img")(img)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("param")(param)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("wbr")(wbr)
+    val __obj = js.Dynamic.literal(area = area, base = base, br = br, col = col, command = command, embed = embed, hr = hr, img = img, input = input, link = link, meta = meta, param = param, source = source, wbr = wbr)
+  
     __obj.asInstanceOf[Anon_Area]
   }
 }

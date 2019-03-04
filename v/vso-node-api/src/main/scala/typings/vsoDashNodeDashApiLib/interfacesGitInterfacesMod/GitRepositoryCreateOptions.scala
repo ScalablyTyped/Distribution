@@ -18,10 +18,8 @@ object GitRepositoryCreateOptions {
     parentRepository: GitRepositoryRef,
     project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
   ): GitRepositoryCreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentRepository")(parentRepository)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(name = name, parentRepository = parentRepository, project = project)
+  
     __obj.asInstanceOf[GitRepositoryCreateOptions]
   }
 }

@@ -13,9 +13,8 @@ trait HashtagWithIndices extends EntityWithIndices {
 object HashtagWithIndices {
   @scala.inline
   def apply(hashtag: java.lang.String, indices: js.Tuple2[scala.Double, scala.Double]): HashtagWithIndices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashtag")(hashtag)
-    __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(hashtag = hashtag, indices = indices)
+  
     __obj.asInstanceOf[HashtagWithIndices]
   }
 }

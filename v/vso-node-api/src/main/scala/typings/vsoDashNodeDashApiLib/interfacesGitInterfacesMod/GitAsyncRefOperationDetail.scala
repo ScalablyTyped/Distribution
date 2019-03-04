@@ -42,13 +42,8 @@ object GitAsyncRefOperationDetail {
     status: GitAsyncRefOperationFailureStatus,
     timedout: scala.Boolean
   ): GitAsyncRefOperationDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conflict")(conflict)
-    __obj.updateDynamic("currentCommitId")(currentCommitId)
-    __obj.updateDynamic("failureMessage")(failureMessage)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timedout")(timedout)
+    val __obj = js.Dynamic.literal(conflict = conflict, currentCommitId = currentCommitId, failureMessage = failureMessage, progress = progress, status = status, timedout = timedout)
+  
     __obj.asInstanceOf[GitAsyncRefOperationDetail]
   }
 }

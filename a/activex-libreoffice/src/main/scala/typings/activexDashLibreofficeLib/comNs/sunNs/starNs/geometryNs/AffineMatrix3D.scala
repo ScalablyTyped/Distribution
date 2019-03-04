@@ -59,19 +59,8 @@ object AffineMatrix3D {
     m22: scala.Double,
     m23: scala.Double
   ): AffineMatrix3D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m00")(m00)
-    __obj.updateDynamic("m01")(m01)
-    __obj.updateDynamic("m02")(m02)
-    __obj.updateDynamic("m03")(m03)
-    __obj.updateDynamic("m10")(m10)
-    __obj.updateDynamic("m11")(m11)
-    __obj.updateDynamic("m12")(m12)
-    __obj.updateDynamic("m13")(m13)
-    __obj.updateDynamic("m20")(m20)
-    __obj.updateDynamic("m21")(m21)
-    __obj.updateDynamic("m22")(m22)
-    __obj.updateDynamic("m23")(m23)
+    val __obj = js.Dynamic.literal(m00 = m00, m01 = m01, m02 = m02, m03 = m03, m10 = m10, m11 = m11, m12 = m12, m13 = m13, m20 = m20, m21 = m21, m22 = m22, m23 = m23)
+  
     __obj.asInstanceOf[AffineMatrix3D]
   }
 }

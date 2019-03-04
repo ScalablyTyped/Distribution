@@ -29,9 +29,7 @@ object OutputFormatUmd {
     plugins: js.Array[_] = null,
     trace: js.UndefOr[scala.Boolean] = js.undefined
   ): OutputFormatUmd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(format = format, output = output)
     if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)

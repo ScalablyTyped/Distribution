@@ -22,12 +22,8 @@ object Font {
     kernings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]],
     pages: coreDashJsLib.Array[java.lang.String]
   ): Font = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chars")(chars)
-    __obj.updateDynamic("common")(common)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("kernings")(kernings)
-    __obj.updateDynamic("pages")(pages)
+    val __obj = js.Dynamic.literal(chars = chars, common = common, info = info, kernings = kernings, pages = pages)
+  
     __obj.asInstanceOf[Font]
   }
 }

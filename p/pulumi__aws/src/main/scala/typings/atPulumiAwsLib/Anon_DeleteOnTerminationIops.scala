@@ -22,12 +22,8 @@ object Anon_DeleteOnTerminationIops {
     volumeSize: scala.Double,
     volumeType: java.lang.String
   ): Anon_DeleteOnTerminationIops = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("volumeId")(volumeId)
-    __obj.updateDynamic("volumeSize")(volumeSize)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(deleteOnTermination = deleteOnTermination, iops = iops, volumeId = volumeId, volumeSize = volumeSize, volumeType = volumeType)
+  
     __obj.asInstanceOf[Anon_DeleteOnTerminationIops]
   }
 }

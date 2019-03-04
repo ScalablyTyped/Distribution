@@ -12,8 +12,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(notifications: js.Array[Notification]): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notifications")(notifications)
+    val __obj = js.Dynamic.literal(notifications = notifications)
+  
     __obj.asInstanceOf[State]
   }
 }

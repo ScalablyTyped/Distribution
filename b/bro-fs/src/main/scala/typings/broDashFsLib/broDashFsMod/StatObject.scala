@@ -24,13 +24,8 @@ object StatObject {
     name: java.lang.String,
     size: scala.Double
   ): StatObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullPath")(fullPath)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("isFile")(isFile)
-    __obj.updateDynamic("modificationTime")(modificationTime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(fullPath = fullPath, isDirectory = isDirectory, isFile = isFile, modificationTime = modificationTime, name = name, size = size)
+  
     __obj.asInstanceOf[StatObject]
   }
 }

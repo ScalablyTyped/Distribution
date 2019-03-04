@@ -21,8 +21,7 @@ object ICacheArgs {
     childrenOf: scala.Int | scala.Double = null,
     section: java.lang.String = null
   ): ICacheArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheKey")(cacheKey)
+    val __obj = js.Dynamic.literal(cacheKey = cacheKey)
     if (childrenOf != null) __obj.updateDynamic("childrenOf")(childrenOf.asInstanceOf[js.Any])
     if (section != null) __obj.updateDynamic("section")(section)
     __obj.asInstanceOf[ICacheArgs]

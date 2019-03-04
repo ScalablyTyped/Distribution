@@ -38,8 +38,8 @@ object LogScale {
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     zero: vegaDashTypingsLib.vegaDashTypingsLibNumbers.`false` = null
   ): LogScale = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])

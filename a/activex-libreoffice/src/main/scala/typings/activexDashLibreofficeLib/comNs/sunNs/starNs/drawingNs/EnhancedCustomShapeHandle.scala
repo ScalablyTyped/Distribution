@@ -64,22 +64,8 @@ object EnhancedCustomShapeHandle {
     RefY: scala.Double,
     Switched: scala.Boolean
   ): EnhancedCustomShapeHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MirroredX")(MirroredX)
-    __obj.updateDynamic("MirroredY")(MirroredY)
-    __obj.updateDynamic("Polar")(Polar)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("RadiusRangeMaximum")(RadiusRangeMaximum)
-    __obj.updateDynamic("RadiusRangeMinimum")(RadiusRangeMinimum)
-    __obj.updateDynamic("RangeXMaximum")(RangeXMaximum)
-    __obj.updateDynamic("RangeXMinimum")(RangeXMinimum)
-    __obj.updateDynamic("RangeYMaximum")(RangeYMaximum)
-    __obj.updateDynamic("RangeYMinimum")(RangeYMinimum)
-    __obj.updateDynamic("RefAngle")(RefAngle)
-    __obj.updateDynamic("RefR")(RefR)
-    __obj.updateDynamic("RefX")(RefX)
-    __obj.updateDynamic("RefY")(RefY)
-    __obj.updateDynamic("Switched")(Switched)
+    val __obj = js.Dynamic.literal(MirroredX = MirroredX, MirroredY = MirroredY, Polar = Polar, Position = Position, RadiusRangeMaximum = RadiusRangeMaximum, RadiusRangeMinimum = RadiusRangeMinimum, RangeXMaximum = RangeXMaximum, RangeXMinimum = RangeXMinimum, RangeYMaximum = RangeYMaximum, RangeYMinimum = RangeYMinimum, RefAngle = RefAngle, RefR = RefR, RefX = RefX, RefY = RefY, Switched = Switched)
+  
     __obj.asInstanceOf[EnhancedCustomShapeHandle]
   }
 }

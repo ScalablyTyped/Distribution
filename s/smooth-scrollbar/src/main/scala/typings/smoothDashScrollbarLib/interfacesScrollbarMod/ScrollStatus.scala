@@ -16,9 +16,8 @@ object ScrollStatus {
     limit: smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d,
     offset: smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
   ): ScrollStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(limit = limit, offset = offset)
+  
     __obj.asInstanceOf[ScrollStatus]
   }
 }

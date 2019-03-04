@@ -96,8 +96,7 @@ object Anon_AllThreadsRelatedToChannelId {
     userIp: java.lang.String = null,
     videoId: java.lang.String = null
   ): Anon_AllThreadsRelatedToChannelId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (allThreadsRelatedToChannelId != null) __obj.updateDynamic("allThreadsRelatedToChannelId")(allThreadsRelatedToChannelId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)

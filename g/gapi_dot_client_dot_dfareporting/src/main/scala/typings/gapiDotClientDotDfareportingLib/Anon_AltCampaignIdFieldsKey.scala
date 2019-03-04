@@ -52,8 +52,7 @@ object Anon_AltCampaignIdFieldsKey {
     tagFormats: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCampaignIdFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

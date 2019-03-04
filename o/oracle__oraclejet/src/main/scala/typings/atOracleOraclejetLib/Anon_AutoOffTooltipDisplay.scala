@@ -16,9 +16,8 @@ object Anon_AutoOffTooltipDisplay {
     tooltipDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     tooltipLabel: java.lang.String
   ): Anon_AutoOffTooltipDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tooltipDisplay")(tooltipDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("tooltipLabel")(tooltipLabel)
+    val __obj = js.Dynamic.literal(tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel)
+  
     __obj.asInstanceOf[Anon_AutoOffTooltipDisplay]
   }
 }

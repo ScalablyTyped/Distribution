@@ -111,8 +111,7 @@ object Anon_AccesstokenAddress {
     upload_protocol: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AccesstokenAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("companyId")(companyId)
+    val __obj = js.Dynamic.literal(companyId = companyId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (address != null) __obj.updateDynamic("address")(address)

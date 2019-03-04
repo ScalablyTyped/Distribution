@@ -107,26 +107,8 @@ object GetBucketObjectResult {
     versionId: java.lang.String,
     websiteRedirectLocation: java.lang.String
   ): GetBucketObjectResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("cacheControl")(cacheControl)
-    __obj.updateDynamic("contentDisposition")(contentDisposition)
-    __obj.updateDynamic("contentEncoding")(contentEncoding)
-    __obj.updateDynamic("contentLanguage")(contentLanguage)
-    __obj.updateDynamic("contentLength")(contentLength)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("expiration")(expiration)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
-    __obj.updateDynamic("sseKmsKeyId")(sseKmsKeyId)
-    __obj.updateDynamic("storageClass")(storageClass)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("versionId")(versionId)
-    __obj.updateDynamic("websiteRedirectLocation")(websiteRedirectLocation)
+    val __obj = js.Dynamic.literal(body = body, cacheControl = cacheControl, contentDisposition = contentDisposition, contentEncoding = contentEncoding, contentLanguage = contentLanguage, contentLength = contentLength, contentType = contentType, etag = etag, expiration = expiration, expires = expires, id = id, lastModified = lastModified, metadata = metadata, serverSideEncryption = serverSideEncryption, sseKmsKeyId = sseKmsKeyId, storageClass = storageClass, tags = tags, versionId = versionId, websiteRedirectLocation = websiteRedirectLocation)
+  
     __obj.asInstanceOf[GetBucketObjectResult]
   }
 }

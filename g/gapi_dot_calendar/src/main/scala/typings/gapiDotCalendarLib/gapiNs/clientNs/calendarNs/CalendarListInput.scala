@@ -32,8 +32,7 @@ object CalendarListInput {
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     summaryOverride: java.lang.String = null
   ): CalendarListInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (colorId != null) __obj.updateDynamic("colorId")(colorId)
     if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders)

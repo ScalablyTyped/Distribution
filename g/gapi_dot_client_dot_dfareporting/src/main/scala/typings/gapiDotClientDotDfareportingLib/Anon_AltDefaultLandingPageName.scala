@@ -45,10 +45,7 @@ object Anon_AltDefaultLandingPageName {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDefaultLandingPageName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultLandingPageName")(defaultLandingPageName)
-    __obj.updateDynamic("defaultLandingPageUrl")(defaultLandingPageUrl)
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(defaultLandingPageName = defaultLandingPageName, defaultLandingPageUrl = defaultLandingPageUrl, profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

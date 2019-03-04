@@ -26,15 +26,8 @@ object Options {
     style: StyleOptions,
     truncate: java.lang.String
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chars")(chars)
-    __obj.updateDynamic("colAligns")(colAligns)
-    __obj.updateDynamic("colWidths")(colWidths)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("rowAligns")(rowAligns)
-    __obj.updateDynamic("rowHeights")(rowHeights)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("truncate")(truncate)
+    val __obj = js.Dynamic.literal(chars = chars, colAligns = colAligns, colWidths = colWidths, head = head, rowAligns = rowAligns, rowHeights = rowHeights, style = style, truncate = truncate)
+  
     __obj.asInstanceOf[Options]
   }
 }

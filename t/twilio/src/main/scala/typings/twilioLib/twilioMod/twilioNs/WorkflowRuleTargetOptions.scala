@@ -20,8 +20,7 @@ object WorkflowRuleTargetOptions {
     priority: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null
   ): WorkflowRuleTargetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queue")(queue)
+    val __obj = js.Dynamic.literal(queue = queue)
     if (expression != null) __obj.updateDynamic("expression")(expression)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

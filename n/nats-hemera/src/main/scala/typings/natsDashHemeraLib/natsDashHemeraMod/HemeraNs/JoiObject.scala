@@ -12,8 +12,8 @@ trait JoiObject extends js.Object {
 object JoiObject {
   @scala.inline
   def apply(isJoi: scala.Boolean): JoiObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isJoi")(isJoi)
+    val __obj = js.Dynamic.literal(isJoi = isJoi)
+  
     __obj.asInstanceOf[JoiObject]
   }
 }

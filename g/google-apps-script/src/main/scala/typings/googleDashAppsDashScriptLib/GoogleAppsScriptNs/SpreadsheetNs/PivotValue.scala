@@ -28,15 +28,8 @@ object PivotValue {
     showAs: js.Function1[PivotValueDisplayType, PivotValue],
     summarizeBy: js.Function1[PivotTableSummarizeFunction, PivotValue]
   ): PivotValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayType")(getDisplayType)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getPivotTable")(getPivotTable)
-    __obj.updateDynamic("getSummarizedBy")(getSummarizedBy)
-    __obj.updateDynamic("setDisplayName")(setDisplayName)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("showAs")(showAs)
-    __obj.updateDynamic("summarizeBy")(summarizeBy)
+    val __obj = js.Dynamic.literal(getDisplayType = getDisplayType, getFormula = getFormula, getPivotTable = getPivotTable, getSummarizedBy = getSummarizedBy, setDisplayName = setDisplayName, setFormula = setFormula, showAs = showAs, summarizeBy = summarizeBy)
+  
     __obj.asInstanceOf[PivotValue]
   }
 }

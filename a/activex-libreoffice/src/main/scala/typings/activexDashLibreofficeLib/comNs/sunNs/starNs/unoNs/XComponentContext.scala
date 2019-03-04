@@ -40,13 +40,8 @@ object XComponentContext {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XComponentContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ServiceManager")(ServiceManager)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getServiceManager")(getServiceManager)
-    __obj.updateDynamic("getValueByName")(getValueByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ServiceManager = ServiceManager, acquire = acquire, getServiceManager = getServiceManager, getValueByName = getValueByName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XComponentContext]
   }
 }

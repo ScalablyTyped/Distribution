@@ -31,10 +31,8 @@ object IMediaDeviceController {
       winrtLib.WindowsNs.FoundationNs.IAsyncAction
     ]
   ): IMediaDeviceController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAvailableMediaStreamProperties")(getAvailableMediaStreamProperties)
-    __obj.updateDynamic("getMediaStreamProperties")(getMediaStreamProperties)
-    __obj.updateDynamic("setMediaStreamPropertiesAsync")(setMediaStreamPropertiesAsync)
+    val __obj = js.Dynamic.literal(getAvailableMediaStreamProperties = getAvailableMediaStreamProperties, getMediaStreamProperties = getMediaStreamProperties, setMediaStreamPropertiesAsync = setMediaStreamPropertiesAsync)
+  
     __obj.asInstanceOf[IMediaDeviceController]
   }
 }

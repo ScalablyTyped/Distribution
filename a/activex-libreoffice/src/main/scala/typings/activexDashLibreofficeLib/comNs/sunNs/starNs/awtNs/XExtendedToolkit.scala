@@ -115,23 +115,8 @@ object XExtendedToolkit {
     removeKeyHandler: js.Function1[XKeyHandler, scala.Unit],
     removeTopWindowListener: js.Function1[XTopWindowListener, scala.Unit]
   ): XExtendedToolkit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTopWindow")(ActiveTopWindow)
-    __obj.updateDynamic("TopWindowCount")(TopWindowCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFocusListener")(addFocusListener)
-    __obj.updateDynamic("addKeyHandler")(addKeyHandler)
-    __obj.updateDynamic("addTopWindowListener")(addTopWindowListener)
-    __obj.updateDynamic("fireFocusGained")(fireFocusGained)
-    __obj.updateDynamic("fireFocusLost")(fireFocusLost)
-    __obj.updateDynamic("getActiveTopWindow")(getActiveTopWindow)
-    __obj.updateDynamic("getTopWindow")(getTopWindow)
-    __obj.updateDynamic("getTopWindowCount")(getTopWindowCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFocusListener")(removeFocusListener)
-    __obj.updateDynamic("removeKeyHandler")(removeKeyHandler)
-    __obj.updateDynamic("removeTopWindowListener")(removeTopWindowListener)
+    val __obj = js.Dynamic.literal(ActiveTopWindow = ActiveTopWindow, TopWindowCount = TopWindowCount, acquire = acquire, addFocusListener = addFocusListener, addKeyHandler = addKeyHandler, addTopWindowListener = addTopWindowListener, fireFocusGained = fireFocusGained, fireFocusLost = fireFocusLost, getActiveTopWindow = getActiveTopWindow, getTopWindow = getTopWindow, getTopWindowCount = getTopWindowCount, queryInterface = queryInterface, release = release, removeFocusListener = removeFocusListener, removeKeyHandler = removeKeyHandler, removeTopWindowListener = removeTopWindowListener)
+  
     __obj.asInstanceOf[XExtendedToolkit]
   }
 }

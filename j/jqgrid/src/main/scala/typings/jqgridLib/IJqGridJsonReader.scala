@@ -46,12 +46,8 @@ object IJqGridJsonReader {
     root: java.lang.String | (js.Function1[/* obj */ js.Any, _]),
     total: java.lang.String | (js.Function1[/* obj */ js.Any, scala.Double])
   ): IJqGridJsonReader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
-    __obj.updateDynamic("repeatitems")(repeatitems)
-    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], repeatitems = repeatitems, root = root.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IJqGridJsonReader]
   }
 }

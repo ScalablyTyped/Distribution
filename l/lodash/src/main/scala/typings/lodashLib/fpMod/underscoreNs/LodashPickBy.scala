@@ -20,14 +20,14 @@ trait LodashPickBy extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[T],
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): lodashLib.lodashMod.underscoreNs.NumericDictionary[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashPickBy2x2[T] = js.native
-  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashPickBy5x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__): LodashPickBy2x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashPickBy5x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashPickBy1x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashPickBy2x2[T] = js.native
   def apply[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIterateeTypeGuard[T, S]): LodashPickBy1x1[T, S] = js.native

@@ -36,8 +36,7 @@ object ThroughOptions {
     scope: AssociationScope = null,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): ThroughOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(model = model)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
     __obj.asInstanceOf[ThroughOptions]

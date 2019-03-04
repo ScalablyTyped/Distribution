@@ -52,15 +52,8 @@ object UAParser {
     getUA: js.Function0[java.lang.String],
     setUA: js.Function1[java.lang.String, UAParser]
   ): UAParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBrowser")(getBrowser)
-    __obj.updateDynamic("getCPU")(getCPU)
-    __obj.updateDynamic("getDevice")(getDevice)
-    __obj.updateDynamic("getEngine")(getEngine)
-    __obj.updateDynamic("getOS")(getOS)
-    __obj.updateDynamic("getResult")(getResult)
-    __obj.updateDynamic("getUA")(getUA)
-    __obj.updateDynamic("setUA")(setUA)
+    val __obj = js.Dynamic.literal(getBrowser = getBrowser, getCPU = getCPU, getDevice = getDevice, getEngine = getEngine, getOS = getOS, getResult = getResult, getUA = getUA, setUA = setUA)
+  
     __obj.asInstanceOf[UAParser]
   }
 }

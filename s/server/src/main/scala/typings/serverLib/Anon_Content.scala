@@ -16,9 +16,8 @@ object Anon_Content {
     level: serverLib.typingsCommonMod.LogLevel,
     report: js.Function2[java.lang.String, serverLib.typingsCommonMod.LogLevel, scala.Unit]
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("report")(report)
+    val __obj = js.Dynamic.literal(level = level, report = report)
+  
     __obj.asInstanceOf[Anon_Content]
   }
 }

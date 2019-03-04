@@ -63,14 +63,7 @@ object INxStateCounts {
     qSelectedExcluded: scala.Double,
     qOption: scala.Int | scala.Double = null
   ): INxStateCounts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAlternative")(qAlternative)
-    __obj.updateDynamic("qDeselected")(qDeselected)
-    __obj.updateDynamic("qExcluded")(qExcluded)
-    __obj.updateDynamic("qLocked")(qLocked)
-    __obj.updateDynamic("qLockedExcluded")(qLockedExcluded)
-    __obj.updateDynamic("qSelected")(qSelected)
-    __obj.updateDynamic("qSelectedExcluded")(qSelectedExcluded)
+    val __obj = js.Dynamic.literal(qAlternative = qAlternative, qDeselected = qDeselected, qExcluded = qExcluded, qLocked = qLocked, qLockedExcluded = qLockedExcluded, qSelected = qSelected, qSelectedExcluded = qSelectedExcluded)
     if (qOption != null) __obj.updateDynamic("qOption")(qOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxStateCounts]
   }

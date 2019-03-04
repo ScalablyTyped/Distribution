@@ -38,8 +38,7 @@ object CustomConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): CustomConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawFunc")(drawFunc)
+    val __obj = js.Dynamic.literal(drawFunc = drawFunc)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)

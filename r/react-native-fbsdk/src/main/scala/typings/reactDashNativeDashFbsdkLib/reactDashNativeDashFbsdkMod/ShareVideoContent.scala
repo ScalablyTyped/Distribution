@@ -47,9 +47,7 @@ object ShareVideoContent {
     contentUrl: java.lang.String = null,
     previewPhoto: SharePhoto = null
   ): ShareVideoContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(contentType = contentType, video = video)
     if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
     if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
     if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)

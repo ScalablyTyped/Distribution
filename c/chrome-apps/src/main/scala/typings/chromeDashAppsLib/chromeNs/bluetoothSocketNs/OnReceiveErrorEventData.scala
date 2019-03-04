@@ -30,10 +30,8 @@ object OnReceiveErrorEventData {
     errorMessage: java.lang.String,
     socketId: chromeDashAppsLib.chromeNs.integer
   ): OnReceiveErrorEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("socketId")(socketId)
+    val __obj = js.Dynamic.literal(error = error, errorMessage = errorMessage, socketId = socketId)
+  
     __obj.asInstanceOf[OnReceiveErrorEventData]
   }
 }

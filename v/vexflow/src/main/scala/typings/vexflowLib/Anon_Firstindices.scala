@@ -20,11 +20,8 @@ object Anon_Firstindices {
     last_indices: js.Array[scala.Double],
     last_note: vexflowLib.VexNs.FlowNs.Note
   ): Anon_Firstindices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_indices")(first_indices)
-    __obj.updateDynamic("first_note")(first_note)
-    __obj.updateDynamic("last_indices")(last_indices)
-    __obj.updateDynamic("last_note")(last_note)
+    val __obj = js.Dynamic.literal(first_indices = first_indices, first_note = first_note, last_indices = last_indices, last_note = last_note)
+  
     __obj.asInstanceOf[Anon_Firstindices]
   }
 }

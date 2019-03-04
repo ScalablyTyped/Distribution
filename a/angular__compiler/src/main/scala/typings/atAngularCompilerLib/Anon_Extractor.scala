@@ -16,9 +16,8 @@ object Anon_Extractor {
     extractor: atAngularCompilerLib.srcI18nExtractorMod.Extractor,
     staticReflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector
   ): Anon_Extractor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extractor")(extractor)
-    __obj.updateDynamic("staticReflector")(staticReflector)
+    val __obj = js.Dynamic.literal(extractor = extractor, staticReflector = staticReflector)
+  
     __obj.asInstanceOf[Anon_Extractor]
   }
 }

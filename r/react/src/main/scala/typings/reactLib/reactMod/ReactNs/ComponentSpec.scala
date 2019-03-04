@@ -61,8 +61,7 @@ object ComponentSpec {
     ] = null,
     statics: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ComponentSpec[P, S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(render = render)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (UNSAFE_componentWillMount != null) __obj.updateDynamic("UNSAFE_componentWillMount")(UNSAFE_componentWillMount)
     if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(UNSAFE_componentWillReceiveProps)

@@ -14,8 +14,8 @@ trait ExpectedItem extends js.Object {
 object ExpectedItem {
   @scala.inline
   def apply(description: java.lang.String, `type`: java.lang.String, value: java.lang.String = null): ExpectedItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
+    __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ExpectedItem]
   }

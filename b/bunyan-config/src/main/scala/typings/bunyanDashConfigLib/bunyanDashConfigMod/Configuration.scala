@@ -28,8 +28,7 @@ object Configuration {
     stream: nodeLib.NodeJSNs.WritableStream = null,
     streams: js.Array[Stream] = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (serializers != null) __obj.updateDynamic("serializers")(serializers)
     if (!js.isUndefined(src)) __obj.updateDynamic("src")(src)

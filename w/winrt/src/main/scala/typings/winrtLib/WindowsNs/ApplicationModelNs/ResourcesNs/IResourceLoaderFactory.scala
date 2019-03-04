@@ -12,8 +12,8 @@ trait IResourceLoaderFactory extends js.Object {
 object IResourceLoaderFactory {
   @scala.inline
   def apply(createResourceLoaderByName: js.Function1[java.lang.String, ResourceLoader]): IResourceLoaderFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createResourceLoaderByName")(createResourceLoaderByName)
+    val __obj = js.Dynamic.literal(createResourceLoaderByName = createResourceLoaderByName)
+  
     __obj.asInstanceOf[IResourceLoaderFactory]
   }
 }

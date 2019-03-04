@@ -267,11 +267,7 @@ object Page {
     _visualComplete: scala.Int | scala.Double = null,
     comment: java.lang.String = null
   ): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pageTimings")(pageTimings)
-    __obj.updateDynamic("startedDateTime")(startedDateTime)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, pageTimings = pageTimings, startedDateTime = startedDateTime, title = title)
     if (_SpeedIndex != null) __obj.updateDynamic("_SpeedIndex")(_SpeedIndex.asInstanceOf[js.Any])
     if (_TTFB != null) __obj.updateDynamic("_TTFB")(_TTFB.asInstanceOf[js.Any])
     if (_URL != null) __obj.updateDynamic("_URL")(_URL)

@@ -24,8 +24,7 @@ object Anon_TitleTransition {
     transition: firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType = null,
     visitTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null
   ): Anon_TitleTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (title != null) __obj.updateDynamic("title")(title)
     if (transition != null) __obj.updateDynamic("transition")(transition)
     if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])

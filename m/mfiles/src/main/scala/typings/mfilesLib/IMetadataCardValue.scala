@@ -32,17 +32,8 @@ object IMetadataCardValue {
     State: js.Any,
     Version: scala.Double
   ): IMetadataCardValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HasIcon")(HasIcon)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IconURL")(IconURL)
-    __obj.updateDynamic("IsDeleted")(IsDeleted)
-    __obj.updateDynamic("IsHidden")(IsHidden)
-    __obj.updateDynamic("IsMultiValue")(IsMultiValue)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(HasIcon = HasIcon, ID = ID, IconURL = IconURL, IsDeleted = IsDeleted, IsHidden = IsHidden, IsMultiValue = IsMultiValue, Item = Item, Name = Name, State = State, Version = Version)
+  
     __obj.asInstanceOf[IMetadataCardValue]
   }
 }

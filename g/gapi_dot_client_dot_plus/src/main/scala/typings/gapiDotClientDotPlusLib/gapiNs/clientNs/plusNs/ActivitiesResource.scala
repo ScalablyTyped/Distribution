@@ -30,10 +30,8 @@ object ActivitiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ActivityFeed]
     ]
   ): ActivitiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(get = get, list = list, search = search)
+  
     __obj.asInstanceOf[ActivitiesResource]
   }
 }

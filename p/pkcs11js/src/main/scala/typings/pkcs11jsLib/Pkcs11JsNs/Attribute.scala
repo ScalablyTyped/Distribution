@@ -16,7 +16,8 @@ object Attribute {
     `type`: scala.Double,
     value: scala.Double | scala.Boolean | java.lang.String | nodeLib.Buffer = null
   ): Attribute = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attribute]
   }

@@ -25,13 +25,8 @@ object Anon_Ie {
     win: scala.Boolean,
     wk: js.Any
   ): Anon_Ie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ie")(ie)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("pv")(pv)
-    __obj.updateDynamic("w3")(w3)
-    __obj.updateDynamic("win")(win)
-    __obj.updateDynamic("wk")(wk)
+    val __obj = js.Dynamic.literal(ie = ie, mac = mac, pv = pv, w3 = w3, win = win, wk = wk)
+  
     __obj.asInstanceOf[Anon_Ie]
   }
 }

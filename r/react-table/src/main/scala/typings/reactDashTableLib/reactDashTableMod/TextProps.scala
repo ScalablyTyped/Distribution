@@ -33,14 +33,8 @@ object TextProps {
     previousText: reactLib.reactMod.ReactNs.ReactNode,
     rowsText: java.lang.String
   ): TextProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadingText")(loadingText.asInstanceOf[js.Any])
-    __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    __obj.updateDynamic("ofText")(ofText.asInstanceOf[js.Any])
-    __obj.updateDynamic("pageText")(pageText.asInstanceOf[js.Any])
-    __obj.updateDynamic("previousText")(previousText.asInstanceOf[js.Any])
-    __obj.updateDynamic("rowsText")(rowsText)
+    val __obj = js.Dynamic.literal(loadingText = loadingText.asInstanceOf[js.Any], nextText = nextText.asInstanceOf[js.Any], noDataText = noDataText.asInstanceOf[js.Any], ofText = ofText.asInstanceOf[js.Any], pageText = pageText.asInstanceOf[js.Any], previousText = previousText.asInstanceOf[js.Any], rowsText = rowsText)
+  
     __obj.asInstanceOf[TextProps]
   }
 }

@@ -61,30 +61,8 @@ object DateFormattingInfo {
     universalSortableDateTimePattern: java.lang.String,
     yearMonthPattern: java.lang.String
   ): DateFormattingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviatedDayNames")(abbreviatedDayNames)
-    __obj.updateDynamic("abbreviatedMonthGenitiveNames")(abbreviatedMonthGenitiveNames)
-    __obj.updateDynamic("abbreviatedMonthNames")(abbreviatedMonthNames)
-    __obj.updateDynamic("amDesignator")(amDesignator)
-    __obj.updateDynamic("calendar")(calendar)
-    __obj.updateDynamic("calendarWeekRule")(calendarWeekRule)
-    __obj.updateDynamic("dateSeparator")(dateSeparator)
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
-    __obj.updateDynamic("fullDateTimePattern")(fullDateTimePattern)
-    __obj.updateDynamic("longDatePattern")(longDatePattern)
-    __obj.updateDynamic("longTimePattern")(longTimePattern)
-    __obj.updateDynamic("monthDayPattern")(monthDayPattern)
-    __obj.updateDynamic("monthGenitiveNames")(monthGenitiveNames)
-    __obj.updateDynamic("monthNames")(monthNames)
-    __obj.updateDynamic("pmDesignator")(pmDesignator)
-    __obj.updateDynamic("shortDatePattern")(shortDatePattern)
-    __obj.updateDynamic("shortTimePattern")(shortTimePattern)
-    __obj.updateDynamic("shortestDayNames")(shortestDayNames)
-    __obj.updateDynamic("sortableDateTimePattern")(sortableDateTimePattern)
-    __obj.updateDynamic("timeSeparator")(timeSeparator)
-    __obj.updateDynamic("universalSortableDateTimePattern")(universalSortableDateTimePattern)
-    __obj.updateDynamic("yearMonthPattern")(yearMonthPattern)
+    val __obj = js.Dynamic.literal(abbreviatedDayNames = abbreviatedDayNames, abbreviatedMonthGenitiveNames = abbreviatedMonthGenitiveNames, abbreviatedMonthNames = abbreviatedMonthNames, amDesignator = amDesignator, calendar = calendar, calendarWeekRule = calendarWeekRule, dateSeparator = dateSeparator, dayNames = dayNames, firstDayOfWeek = firstDayOfWeek, fullDateTimePattern = fullDateTimePattern, longDatePattern = longDatePattern, longTimePattern = longTimePattern, monthDayPattern = monthDayPattern, monthGenitiveNames = monthGenitiveNames, monthNames = monthNames, pmDesignator = pmDesignator, shortDatePattern = shortDatePattern, shortTimePattern = shortTimePattern, shortestDayNames = shortestDayNames, sortableDateTimePattern = sortableDateTimePattern, timeSeparator = timeSeparator, universalSortableDateTimePattern = universalSortableDateTimePattern, yearMonthPattern = yearMonthPattern)
+  
     __obj.asInstanceOf[DateFormattingInfo]
   }
 }

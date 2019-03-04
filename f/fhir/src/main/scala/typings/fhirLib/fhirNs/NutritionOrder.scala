@@ -99,9 +99,7 @@ object NutritionOrder {
     supplement: js.Array[NutritionOrderSupplement] = null,
     text: Narrative = null
   ): NutritionOrder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateTime")(dateTime)
-    __obj.updateDynamic("patient")(patient)
+    val __obj = js.Dynamic.literal(dateTime = dateTime, patient = patient)
     if (_dateTime != null) __obj.updateDynamic("_dateTime")(_dateTime)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

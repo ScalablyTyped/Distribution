@@ -23,8 +23,7 @@ trait SerializerOptions extends js.Object {
 object SerializerOptions {
   @scala.inline
   def apply(space: js.Any, replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null): SerializerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("space")(space)
+    val __obj = js.Dynamic.literal(space = space)
     if (replacer != null) __obj.updateDynamic("replacer")(replacer)
     __obj.asInstanceOf[SerializerOptions]
   }

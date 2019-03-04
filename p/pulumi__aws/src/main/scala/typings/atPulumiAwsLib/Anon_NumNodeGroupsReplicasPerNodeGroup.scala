@@ -16,9 +16,8 @@ object Anon_NumNodeGroupsReplicasPerNodeGroup {
     numNodeGroups: atPulumiPulumiLib.outputMod.Input[scala.Double],
     replicasPerNodeGroup: atPulumiPulumiLib.outputMod.Input[scala.Double]
   ): Anon_NumNodeGroupsReplicasPerNodeGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("numNodeGroups")(numNodeGroups.asInstanceOf[js.Any])
-    __obj.updateDynamic("replicasPerNodeGroup")(replicasPerNodeGroup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(numNodeGroups = numNodeGroups.asInstanceOf[js.Any], replicasPerNodeGroup = replicasPerNodeGroup.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_NumNodeGroupsReplicasPerNodeGroup]
   }
 }

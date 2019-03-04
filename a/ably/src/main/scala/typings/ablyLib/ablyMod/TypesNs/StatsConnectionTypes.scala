@@ -14,10 +14,8 @@ trait StatsConnectionTypes extends js.Object {
 object StatsConnectionTypes {
   @scala.inline
   def apply(all: StatsResourceCount, plain: StatsResourceCount, tls: StatsResourceCount): StatsConnectionTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("plain")(plain)
-    __obj.updateDynamic("tls")(tls)
+    val __obj = js.Dynamic.literal(all = all, plain = plain, tls = tls)
+  
     __obj.asInstanceOf[StatsConnectionTypes]
   }
 }

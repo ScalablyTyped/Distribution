@@ -54,14 +54,8 @@ object CollapsibleOptions {
     onOpenStart: js.Function2[Collapsible, stdLib.Element, scala.Unit],
     outDuration: scala.Double
   ): CollapsibleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accordion")(accordion)
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("outDuration")(outDuration)
+    val __obj = js.Dynamic.literal(accordion = accordion, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
     __obj.asInstanceOf[CollapsibleOptions]
   }
 }

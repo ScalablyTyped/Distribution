@@ -41,14 +41,8 @@ object XIdlMember {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIdlMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DeclaringClass")(DeclaringClass)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDeclaringClass")(getDeclaringClass)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, Name = Name, acquire = acquire, getDeclaringClass = getDeclaringClass, getName = getName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIdlMember]
   }
 }

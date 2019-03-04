@@ -20,11 +20,8 @@ object Attempt {
     responseTime: java.lang.String,
     scheduleTime: java.lang.String
   ): Attempt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatchTime")(dispatchTime)
-    __obj.updateDynamic("responseStatus")(responseStatus)
-    __obj.updateDynamic("responseTime")(responseTime)
-    __obj.updateDynamic("scheduleTime")(scheduleTime)
+    val __obj = js.Dynamic.literal(dispatchTime = dispatchTime, responseStatus = responseStatus, responseTime = responseTime, scheduleTime = scheduleTime)
+  
     __obj.asInstanceOf[Attempt]
   }
 }

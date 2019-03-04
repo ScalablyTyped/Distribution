@@ -80,34 +80,8 @@ object XPersistentLibraryContainer {
     setModified: js.Function1[scala.Boolean, scala.Unit],
     storeLibraries: js.Function0[scala.Unit]
   ): XPersistentLibraryContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContainerLocationName")(ContainerLocationName)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("RootLocation")(RootLocation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("createLibrary")(createLibrary)
-    __obj.updateDynamic("createLibraryLink")(createLibraryLink)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLibraryLinkURL")(getLibraryLinkURL)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("isLibraryLink")(isLibraryLink)
-    __obj.updateDynamic("isLibraryLoaded")(isLibraryLoaded)
-    __obj.updateDynamic("isLibraryReadOnly")(isLibraryReadOnly)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("loadLibrary")(loadLibrary)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLibrary")(removeLibrary)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("renameLibrary")(renameLibrary)
-    __obj.updateDynamic("setLibraryReadOnly")(setLibraryReadOnly)
-    __obj.updateDynamic("setModified")(setModified)
-    __obj.updateDynamic("storeLibraries")(storeLibraries)
+    val __obj = js.Dynamic.literal(ContainerLocationName = ContainerLocationName, ElementNames = ElementNames, ElementType = ElementType, RootLocation = RootLocation, acquire = acquire, addModifyListener = addModifyListener, createLibrary = createLibrary, createLibraryLink = createLibraryLink, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLibraryLinkURL = getLibraryLinkURL, hasByName = hasByName, hasElements = hasElements, isLibraryLink = isLibraryLink, isLibraryLoaded = isLibraryLoaded, isLibraryReadOnly = isLibraryReadOnly, isModified = isModified, loadLibrary = loadLibrary, queryInterface = queryInterface, release = release, removeLibrary = removeLibrary, removeModifyListener = removeModifyListener, renameLibrary = renameLibrary, setLibraryReadOnly = setLibraryReadOnly, setModified = setModified, storeLibraries = storeLibraries)
+  
     __obj.asInstanceOf[XPersistentLibraryContainer]
   }
 }

@@ -16,9 +16,8 @@ object Anon_END {
     END: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.end,
     START: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start
   ): Anon_END = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("END")(END)
-    __obj.updateDynamic("START")(START)
+    val __obj = js.Dynamic.literal(END = END, START = START)
+  
     __obj.asInstanceOf[Anon_END]
   }
 }

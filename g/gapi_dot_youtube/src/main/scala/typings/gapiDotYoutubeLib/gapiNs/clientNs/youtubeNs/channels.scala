@@ -32,9 +32,8 @@ object channels {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelResource]
     ]
   ): channels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(list = list, update = update)
+  
     __obj.asInstanceOf[channels]
   }
 }

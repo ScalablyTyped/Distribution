@@ -32,8 +32,7 @@ object Rule {
     selector: java.lang.String = null,
     tags: js.Array[java.lang.String] = null
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (all != null) __obj.updateDynamic("all")(all)
     if (any != null) __obj.updateDynamic("any")(any)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

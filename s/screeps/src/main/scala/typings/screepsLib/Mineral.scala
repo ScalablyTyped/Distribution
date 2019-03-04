@@ -43,13 +43,7 @@ object Mineral {
     ticksToRegeneration: scala.Double,
     room: Room = null
   ): Mineral[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mineralAmount")(mineralAmount)
-    __obj.updateDynamic("mineralType")(mineralType.asInstanceOf[js.Any])
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("ticksToRegeneration")(ticksToRegeneration)
+    val __obj = js.Dynamic.literal(density = density, id = id, mineralAmount = mineralAmount, mineralType = mineralType.asInstanceOf[js.Any], pos = pos, ticksToRegeneration = ticksToRegeneration)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Mineral[T]]
   }

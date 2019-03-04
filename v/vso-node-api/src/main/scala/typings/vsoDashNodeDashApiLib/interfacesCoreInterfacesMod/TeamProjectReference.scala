@@ -52,15 +52,8 @@ object TeamProjectReference {
     url: java.lang.String,
     visibility: ProjectVisibility
   ): TeamProjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviation")(abbreviation)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation, description = description, id = id, name = name, revision = revision, state = state, url = url, visibility = visibility)
+  
     __obj.asInstanceOf[TeamProjectReference]
   }
 }

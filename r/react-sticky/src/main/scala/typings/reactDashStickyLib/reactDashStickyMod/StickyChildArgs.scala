@@ -24,13 +24,8 @@ object StickyChildArgs {
     style: reactLib.reactMod.ReactNs.CSSProperties,
     wasSticky: scala.Boolean
   ): StickyChildArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculatedHeight")(calculatedHeight)
-    __obj.updateDynamic("distanceFromBottom")(distanceFromBottom)
-    __obj.updateDynamic("distanceFromTop")(distanceFromTop)
-    __obj.updateDynamic("isSticky")(isSticky)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("wasSticky")(wasSticky)
+    val __obj = js.Dynamic.literal(calculatedHeight = calculatedHeight, distanceFromBottom = distanceFromBottom, distanceFromTop = distanceFromTop, isSticky = isSticky, style = style, wasSticky = wasSticky)
+  
     __obj.asInstanceOf[StickyChildArgs]
   }
 }

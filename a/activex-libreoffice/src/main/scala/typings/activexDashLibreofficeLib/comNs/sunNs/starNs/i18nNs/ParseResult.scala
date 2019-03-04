@@ -40,15 +40,8 @@ object ParseResult {
     TokenType: scala.Double,
     Value: scala.Double
   ): ParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharLen")(CharLen)
-    __obj.updateDynamic("ContFlags")(ContFlags)
-    __obj.updateDynamic("DequotedNameOrString")(DequotedNameOrString)
-    __obj.updateDynamic("EndPos")(EndPos)
-    __obj.updateDynamic("LeadingWhiteSpace")(LeadingWhiteSpace)
-    __obj.updateDynamic("StartFlags")(StartFlags)
-    __obj.updateDynamic("TokenType")(TokenType)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(CharLen = CharLen, ContFlags = ContFlags, DequotedNameOrString = DequotedNameOrString, EndPos = EndPos, LeadingWhiteSpace = LeadingWhiteSpace, StartFlags = StartFlags, TokenType = TokenType, Value = Value)
+  
     __obj.asInstanceOf[ParseResult]
   }
 }

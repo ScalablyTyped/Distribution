@@ -60,31 +60,8 @@ object IPointerPointProperties {
     xTilt: scala.Double,
     yTilt: scala.Double
   ): IPointerPointProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contactRect")(contactRect)
-    __obj.updateDynamic("contactRectRaw")(contactRectRaw)
-    __obj.updateDynamic("getUsageValue")(getUsageValue)
-    __obj.updateDynamic("hasUsage")(hasUsage)
-    __obj.updateDynamic("isBarrelButtonPressed")(isBarrelButtonPressed)
-    __obj.updateDynamic("isCanceled")(isCanceled)
-    __obj.updateDynamic("isEraser")(isEraser)
-    __obj.updateDynamic("isHorizontalMouseWheel")(isHorizontalMouseWheel)
-    __obj.updateDynamic("isInRange")(isInRange)
-    __obj.updateDynamic("isInverted")(isInverted)
-    __obj.updateDynamic("isLeftButtonPressed")(isLeftButtonPressed)
-    __obj.updateDynamic("isMiddleButtonPressed")(isMiddleButtonPressed)
-    __obj.updateDynamic("isPrimary")(isPrimary)
-    __obj.updateDynamic("isRightButtonPressed")(isRightButtonPressed)
-    __obj.updateDynamic("isXButton1Pressed")(isXButton1Pressed)
-    __obj.updateDynamic("isXButton2Pressed")(isXButton2Pressed)
-    __obj.updateDynamic("mouseWheelDelta")(mouseWheelDelta)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("pointerUpdateKind")(pointerUpdateKind)
-    __obj.updateDynamic("pressure")(pressure)
-    __obj.updateDynamic("touchConfidence")(touchConfidence)
-    __obj.updateDynamic("twist")(twist)
-    __obj.updateDynamic("xTilt")(xTilt)
-    __obj.updateDynamic("yTilt")(yTilt)
+    val __obj = js.Dynamic.literal(contactRect = contactRect, contactRectRaw = contactRectRaw, getUsageValue = getUsageValue, hasUsage = hasUsage, isBarrelButtonPressed = isBarrelButtonPressed, isCanceled = isCanceled, isEraser = isEraser, isHorizontalMouseWheel = isHorizontalMouseWheel, isInRange = isInRange, isInverted = isInverted, isLeftButtonPressed = isLeftButtonPressed, isMiddleButtonPressed = isMiddleButtonPressed, isPrimary = isPrimary, isRightButtonPressed = isRightButtonPressed, isXButton1Pressed = isXButton1Pressed, isXButton2Pressed = isXButton2Pressed, mouseWheelDelta = mouseWheelDelta, orientation = orientation, pointerUpdateKind = pointerUpdateKind, pressure = pressure, touchConfidence = touchConfidence, twist = twist, xTilt = xTilt, yTilt = yTilt)
+  
     __obj.asInstanceOf[IPointerPointProperties]
   }
 }

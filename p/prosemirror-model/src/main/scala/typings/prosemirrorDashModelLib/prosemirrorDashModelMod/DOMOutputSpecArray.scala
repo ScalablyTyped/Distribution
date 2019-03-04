@@ -34,7 +34,8 @@ object DOMOutputSpecArray {
     `8`: DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0` = null,
     `9`: DOMOutputSpec | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`0` = null
   ): DOMOutputSpecArray = {
-    val __obj = js.Dynamic.literal(`0` = `0`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`)
     if (`1` != null) __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     if (`2` != null) __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
     if (`3` != null) __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])

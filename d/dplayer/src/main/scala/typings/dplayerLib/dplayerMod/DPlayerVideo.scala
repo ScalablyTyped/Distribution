@@ -26,8 +26,7 @@ object DPlayerVideo {
     thumbnails: java.lang.String = null,
     `type`: VideoType | java.lang.String = null
   ): DPlayerVideo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (customType != null) __obj.updateDynamic("customType")(customType)
     if (defaultQuality != null) __obj.updateDynamic("defaultQuality")(defaultQuality.asInstanceOf[js.Any])
     if (pic != null) __obj.updateDynamic("pic")(pic)

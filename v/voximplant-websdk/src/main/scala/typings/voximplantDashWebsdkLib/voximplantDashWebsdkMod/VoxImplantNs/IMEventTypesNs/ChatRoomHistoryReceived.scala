@@ -31,10 +31,8 @@ object ChatRoomHistoryReceived {
     messages: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMHistoryMessage],
     room: java.lang.String
   ): ChatRoomHistoryReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(message_id = message_id, messages = messages, room = room)
+  
     __obj.asInstanceOf[ChatRoomHistoryReceived]
   }
 }

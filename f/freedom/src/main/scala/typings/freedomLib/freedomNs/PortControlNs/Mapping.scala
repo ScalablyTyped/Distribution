@@ -30,12 +30,7 @@ object Mapping {
     nonce: js.Array[scala.Double] = null,
     timeoutId: scala.Int | scala.Double = null
   ): Mapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("externalPort")(externalPort)
-    __obj.updateDynamic("internalIp")(internalIp)
-    __obj.updateDynamic("internalPort")(internalPort)
-    __obj.updateDynamic("lifetime")(lifetime)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(externalPort = externalPort, internalIp = internalIp, internalPort = internalPort, lifetime = lifetime, protocol = protocol)
     if (errInfo != null) __obj.updateDynamic("errInfo")(errInfo)
     if (externalIp != null) __obj.updateDynamic("externalIp")(externalIp)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

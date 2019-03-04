@@ -12,8 +12,8 @@ trait IAffixProvider extends js.Object {
 object IAffixProvider {
   @scala.inline
   def apply(defaults: IAffixOptions): IAffixProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[IAffixProvider]
   }
 }

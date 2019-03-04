@@ -13,8 +13,7 @@ trait Response extends js.Object {
 object Response {
   @scala.inline
   def apply(headers: Headers, status: scala.Int | scala.Double = null): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }

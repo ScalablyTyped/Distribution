@@ -29,12 +29,8 @@ object XPrintSettingsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPrintSettingsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrintSettings")(PrintSettings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPrintSettings")(getPrintSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(PrintSettings = PrintSettings, acquire = acquire, getPrintSettings = getPrintSettings, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPrintSettingsSupplier]
   }
 }

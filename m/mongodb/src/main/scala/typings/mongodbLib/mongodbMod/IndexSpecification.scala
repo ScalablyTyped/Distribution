@@ -48,8 +48,7 @@ object IndexSpecification {
     unique: js.UndefOr[scala.Boolean] = js.undefined,
     weights: js.Object = null
   ): IndexSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (`2dsphereIndexVersion` != null) __obj.updateDynamic("2dsphereIndexVersion")(`2dsphereIndexVersion`.asInstanceOf[js.Any])
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
     if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])

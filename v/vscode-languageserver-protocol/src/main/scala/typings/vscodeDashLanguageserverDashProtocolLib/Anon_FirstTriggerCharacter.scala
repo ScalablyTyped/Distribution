@@ -19,8 +19,7 @@ trait Anon_FirstTriggerCharacter extends js.Object {
 object Anon_FirstTriggerCharacter {
   @scala.inline
   def apply(firstTriggerCharacter: java.lang.String, moreTriggerCharacter: js.Array[java.lang.String] = null): Anon_FirstTriggerCharacter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstTriggerCharacter")(firstTriggerCharacter)
+    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter)
     if (moreTriggerCharacter != null) __obj.updateDynamic("moreTriggerCharacter")(moreTriggerCharacter)
     __obj.asInstanceOf[Anon_FirstTriggerCharacter]
   }

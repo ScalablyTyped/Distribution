@@ -75,17 +75,8 @@ object Anon_AuthenticationMethod {
     startSession: js.Function,
     terminateSession: js.Function
   ): Anon_AuthenticationMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AuthenticationMethod")(AuthenticationMethod)
-    __obj.updateDynamic("ErrorType")(ErrorType)
-    __obj.updateDynamic("SinkState")(SinkState)
-    __obj.updateDynamic("getAvailableSinks")(getAvailableSinks)
-    __obj.updateDynamic("onSessionErrorOccured")(onSessionErrorOccured)
-    __obj.updateDynamic("onSessionTerminated")(onSessionTerminated)
-    __obj.updateDynamic("onSinksUpdated")(onSinksUpdated)
-    __obj.updateDynamic("requestAuthentication")(requestAuthentication)
-    __obj.updateDynamic("startSession")(startSession)
-    __obj.updateDynamic("terminateSession")(terminateSession)
+    val __obj = js.Dynamic.literal(AuthenticationMethod = AuthenticationMethod, ErrorType = ErrorType, SinkState = SinkState, getAvailableSinks = getAvailableSinks, onSessionErrorOccured = onSessionErrorOccured, onSessionTerminated = onSessionTerminated, onSinksUpdated = onSinksUpdated, requestAuthentication = requestAuthentication, startSession = startSession, terminateSession = terminateSession)
+  
     __obj.asInstanceOf[Anon_AuthenticationMethod]
   }
 }

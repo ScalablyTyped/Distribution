@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
   extends atOracleOraclejetLib.ojinputtextMod.inputBase[java.lang.String, SP, java.lang.String, java.lang.String] {
   var converter: atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[java.lang.String] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter = js.native
-  var datePicker: atOracleOraclejetLib.`Anon_` = js.native
+  var datePicker: atOracleOraclejetLib.Anon_ = js.native
   var dayMetaData: org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.StringDictionary[
       org.scalablytyped.runtime.StringDictionary[atOracleOraclejetLib.Anon_ClassNameDisabled]
@@ -25,7 +25,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     _
   ]) | scala.Null = js.native
   var onDatePickerChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.`Anon_`], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_], 
     _
   ]) | scala.Null = js.native
   var onDayFormatterChanged: (js.Function1[
@@ -179,7 +179,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.datePickerChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.`Anon_`], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_], 
       _
     ]
   ): scala.Unit = js.native
@@ -188,7 +188,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.datePickerChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.`Anon_`], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_], 
       _
     ],
     useCapture: scala.Boolean
@@ -285,7 +285,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
   @JSName("getProperty")
   def getProperty_converter(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.converter): atOracleOraclejetLib.ojvalidationDashBaseMod.Converter[java.lang.String] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredConverter = js.native
   @JSName("getProperty")
-  def getProperty_datePicker(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.datePicker): atOracleOraclejetLib.`Anon_` = js.native
+  def getProperty_datePicker(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.datePicker): atOracleOraclejetLib.Anon_ = js.native
   @JSName("getProperty")
   def getProperty_dayMetaData(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.dayMetaData): org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.StringDictionary[
@@ -333,7 +333,7 @@ trait ojInputDate[SP /* <: ojInputDateSettableProperties */]
   @JSName("setProperty")
   def setProperty_datePicker(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.datePicker,
-    value: atOracleOraclejetLib.`Anon_`
+    value: atOracleOraclejetLib.Anon_
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_dayMetaData(

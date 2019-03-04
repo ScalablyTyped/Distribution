@@ -27,13 +27,8 @@ object XUpdatable2 {
     updateHard: js.Function0[scala.Unit],
     updateSoft: js.Function0[scala.Unit]
   ): XUpdatable2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateHard")(updateHard)
-    __obj.updateDynamic("updateSoft")(updateSoft)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, update = update, updateHard = updateHard, updateSoft = updateSoft)
+  
     __obj.asInstanceOf[XUpdatable2]
   }
 }

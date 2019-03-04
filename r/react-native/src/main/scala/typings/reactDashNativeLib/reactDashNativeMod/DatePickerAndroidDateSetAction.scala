@@ -20,11 +20,8 @@ object DatePickerAndroidDateSetAction {
     month: scala.Double,
     year: scala.Double
   ): DatePickerAndroidDateSetAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(action = action, day = day, month = month, year = year)
+  
     __obj.asInstanceOf[DatePickerAndroidDateSetAction]
   }
 }

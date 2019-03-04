@@ -14,10 +14,8 @@ trait TPageResult extends js.Object {
 object TPageResult {
   @scala.inline
   def apply(duration: scala.Double, pages: scala.Double, total: scala.Double): TPageResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(duration = duration, pages = pages, total = total)
+  
     __obj.asInstanceOf[TPageResult]
   }
 }

@@ -58,16 +58,8 @@ object ReportsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Report]
     ]
   ): ReportsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compatibleFields")(compatibleFields)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(compatibleFields = compatibleFields, delete = delete, files = files, get = get, insert = insert, list = list, patch = patch, run = run, update = update)
+  
     __obj.asInstanceOf[ReportsResource]
   }
 }

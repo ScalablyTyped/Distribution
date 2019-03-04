@@ -19,9 +19,8 @@ trait ExecutionResult extends js.Object {
 object ExecutionResult {
   @scala.inline
   def apply(elapsed: scala.Double, err: js.Any): ExecutionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elapsed")(elapsed)
-    __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(elapsed = elapsed, err = err)
+  
     __obj.asInstanceOf[ExecutionResult]
   }
 }

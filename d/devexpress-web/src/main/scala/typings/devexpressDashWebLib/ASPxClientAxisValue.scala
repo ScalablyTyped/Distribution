@@ -39,11 +39,8 @@ object ASPxClientAxisValue {
     qualitativeValue: java.lang.String,
     scaleType: java.lang.String
   ): ASPxClientAxisValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateTimeValue")(dateTimeValue)
-    __obj.updateDynamic("numericalValue")(numericalValue)
-    __obj.updateDynamic("qualitativeValue")(qualitativeValue)
-    __obj.updateDynamic("scaleType")(scaleType)
+    val __obj = js.Dynamic.literal(dateTimeValue = dateTimeValue, numericalValue = numericalValue, qualitativeValue = qualitativeValue, scaleType = scaleType)
+  
     __obj.asInstanceOf[ASPxClientAxisValue]
   }
 }

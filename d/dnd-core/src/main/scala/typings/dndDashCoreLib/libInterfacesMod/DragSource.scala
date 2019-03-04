@@ -20,11 +20,8 @@ object DragSource {
     endDrag: js.Function2[DragDropMonitor, java.lang.String, scala.Unit],
     isDragging: js.Function2[DragDropMonitor, java.lang.String, scala.Boolean]
   ): DragSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginDrag")(beginDrag)
-    __obj.updateDynamic("canDrag")(canDrag)
-    __obj.updateDynamic("endDrag")(endDrag)
-    __obj.updateDynamic("isDragging")(isDragging)
+    val __obj = js.Dynamic.literal(beginDrag = beginDrag, canDrag = canDrag, endDrag = endDrag, isDragging = isDragging)
+  
     __obj.asInstanceOf[DragSource]
   }
 }

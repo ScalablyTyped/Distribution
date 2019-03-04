@@ -24,8 +24,7 @@ object Anon_ArgumentCommentsLocQualifier {
     qualifier: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
   ): Anon_ArgumentCommentsLocQualifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])

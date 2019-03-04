@@ -16,9 +16,8 @@ object IRightTappedEventArgs {
     pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
     position: winrtLib.WindowsNs.FoundationNs.Point
   ): IRightTappedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType, position = position)
+  
     __obj.asInstanceOf[IRightTappedEventArgs]
   }
 }

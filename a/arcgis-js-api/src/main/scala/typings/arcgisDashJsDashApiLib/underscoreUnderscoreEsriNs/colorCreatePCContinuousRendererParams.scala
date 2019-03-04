@@ -71,12 +71,7 @@ object colorCreatePCContinuousRendererParams {
     size: java.lang.String = null,
     statistics: SummaryStatisticsResult = null
   ): colorCreatePCContinuousRendererParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])

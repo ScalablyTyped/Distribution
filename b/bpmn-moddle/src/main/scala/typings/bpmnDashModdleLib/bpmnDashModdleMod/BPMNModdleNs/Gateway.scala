@@ -30,16 +30,7 @@ object Gateway {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): Gateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("gatewayDirection")(gatewayDirection)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incoming")(incoming)
-    __obj.updateDynamic("lanes")(lanes)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("outgoing")(outgoing)
+    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, gatewayDirection = gatewayDirection, id = id, incoming = incoming, lanes = lanes, monitoring = monitoring, outgoing = outgoing)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

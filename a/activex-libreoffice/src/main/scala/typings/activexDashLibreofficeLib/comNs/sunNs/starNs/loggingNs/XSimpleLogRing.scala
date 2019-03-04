@@ -36,10 +36,8 @@ object XSimpleLogRing {
     getCollectedLog: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
     logString: js.Function1[java.lang.String, scala.Unit]
   ): XSimpleLogRing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CollectedLog")(CollectedLog)
-    __obj.updateDynamic("getCollectedLog")(getCollectedLog)
-    __obj.updateDynamic("logString")(logString)
+    val __obj = js.Dynamic.literal(CollectedLog = CollectedLog, getCollectedLog = getCollectedLog, logString = logString)
+  
     __obj.asInstanceOf[XSimpleLogRing]
   }
 }

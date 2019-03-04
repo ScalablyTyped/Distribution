@@ -22,8 +22,7 @@ object Anon_Cache {
     fileNameOptional: java.lang.String = null,
     fileType: java.lang.String = null
   ): Anon_Cache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (fileNameOptional != null) __obj.updateDynamic("fileNameOptional")(fileNameOptional)

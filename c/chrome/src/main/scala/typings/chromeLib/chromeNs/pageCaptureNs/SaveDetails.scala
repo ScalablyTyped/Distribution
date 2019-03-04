@@ -13,8 +13,8 @@ trait SaveDetails extends js.Object {
 object SaveDetails {
   @scala.inline
   def apply(tabId: scala.Double): SaveDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
+  
     __obj.asInstanceOf[SaveDetails]
   }
 }

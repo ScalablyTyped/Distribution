@@ -12,8 +12,8 @@ trait Behavior extends js.Object {
 object Behavior {
   @scala.inline
   def apply(tick: js.Function0[scala.Unit]): Behavior = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tick")(tick)
+    val __obj = js.Dynamic.literal(tick = tick)
+  
     __obj.asInstanceOf[Behavior]
   }
 }

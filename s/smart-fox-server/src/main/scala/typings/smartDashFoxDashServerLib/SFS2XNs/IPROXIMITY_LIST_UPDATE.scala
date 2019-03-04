@@ -20,11 +20,8 @@ object IPROXIMITY_LIST_UPDATE {
     removedItems: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.MMOItem],
     removedUsers: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser]
   ): IPROXIMITY_LIST_UPDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addedItems")(addedItems)
-    __obj.updateDynamic("addedUsers")(addedUsers)
-    __obj.updateDynamic("removedItems")(removedItems)
-    __obj.updateDynamic("removedUsers")(removedUsers)
+    val __obj = js.Dynamic.literal(addedItems = addedItems, addedUsers = addedUsers, removedItems = removedItems, removedUsers = removedUsers)
+  
     __obj.asInstanceOf[IPROXIMITY_LIST_UPDATE]
   }
 }

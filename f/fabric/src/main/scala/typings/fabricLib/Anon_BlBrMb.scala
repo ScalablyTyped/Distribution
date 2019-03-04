@@ -30,16 +30,8 @@ object Anon_BlBrMb {
     tl: fabricLib.fabricDashImplMod.Point,
     tr: fabricLib.fabricDashImplMod.Point
   ): Anon_BlBrMb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bl")(bl)
-    __obj.updateDynamic("br")(br)
-    __obj.updateDynamic("mb")(mb)
-    __obj.updateDynamic("ml")(ml)
-    __obj.updateDynamic("mr")(mr)
-    __obj.updateDynamic("mt")(mt)
-    __obj.updateDynamic("mtr")(mtr)
-    __obj.updateDynamic("tl")(tl)
-    __obj.updateDynamic("tr")(tr)
+    val __obj = js.Dynamic.literal(bl = bl, br = br, mb = mb, ml = ml, mr = mr, mt = mt, mtr = mtr, tl = tl, tr = tr)
+  
     __obj.asInstanceOf[Anon_BlBrMb]
   }
 }

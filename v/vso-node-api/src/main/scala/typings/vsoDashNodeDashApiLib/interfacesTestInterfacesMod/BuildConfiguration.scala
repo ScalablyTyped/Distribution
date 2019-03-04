@@ -32,17 +32,8 @@ object BuildConfiguration {
     sourceVersion: java.lang.String,
     uri: java.lang.String
   ): BuildConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchName")(branchName)
-    __obj.updateDynamic("buildDefinitionId")(buildDefinitionId)
-    __obj.updateDynamic("flavor")(flavor)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("sourceVersion")(sourceVersion)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(branchName = branchName, buildDefinitionId = buildDefinitionId, flavor = flavor, id = id, number = number, platform = platform, project = project, repositoryId = repositoryId, sourceVersion = sourceVersion, uri = uri)
+  
     __obj.asInstanceOf[BuildConfiguration]
   }
 }

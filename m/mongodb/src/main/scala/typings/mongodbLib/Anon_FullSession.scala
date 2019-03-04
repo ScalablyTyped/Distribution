@@ -13,9 +13,8 @@ trait Anon_FullSession extends js.Object {
 object Anon_FullSession {
   @scala.inline
   def apply(full: scala.Boolean, session: mongodbLib.mongodbMod.ClientSession): Anon_FullSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(full = full, session = session)
+  
     __obj.asInstanceOf[Anon_FullSession]
   }
 }

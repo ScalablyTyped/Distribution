@@ -56,8 +56,7 @@ object Props {
     trigger: js.Array[Trigger] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(afterVisibleChange)
     if (align != null) __obj.updateDynamic("align")(align)
     if (arrowContent != null) __obj.updateDynamic("arrowContent")(arrowContent.asInstanceOf[js.Any])

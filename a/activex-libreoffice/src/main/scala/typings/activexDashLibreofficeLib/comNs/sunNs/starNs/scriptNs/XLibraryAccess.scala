@@ -61,18 +61,8 @@ object XLibraryAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLibraryAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ModuleNames")(ModuleNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFunctionCode")(getFunctionCode)
-    __obj.updateDynamic("getFunctionSource")(getFunctionSource)
-    __obj.updateDynamic("getModuleCode")(getModuleCode)
-    __obj.updateDynamic("getModuleNames")(getModuleNames)
-    __obj.updateDynamic("getModuleSource")(getModuleSource)
-    __obj.updateDynamic("isFunction")(isFunction)
-    __obj.updateDynamic("isValidPath")(isValidPath)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ModuleNames = ModuleNames, acquire = acquire, getFunctionCode = getFunctionCode, getFunctionSource = getFunctionSource, getModuleCode = getModuleCode, getModuleNames = getModuleNames, getModuleSource = getModuleSource, isFunction = isFunction, isValidPath = isValidPath, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLibraryAccess]
   }
 }

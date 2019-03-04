@@ -32,16 +32,7 @@ object EllipticalArcCommand {
     y: scala.Double,
     relative: js.UndefOr[scala.Boolean] = js.undefined
   ): EllipticalArcCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("largeArc")(largeArc)
-    __obj.updateDynamic("rx")(rx)
-    __obj.updateDynamic("ry")(ry)
-    __obj.updateDynamic("sweep")(sweep)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xAxisRotation")(xAxisRotation)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command, largeArc = largeArc, rx = rx, ry = ry, sweep = sweep, x = x, xAxisRotation = xAxisRotation, y = y)
     if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[EllipticalArcCommand]
   }

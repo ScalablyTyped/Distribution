@@ -14,10 +14,8 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(cols: js.Array[DataObjectColumn], p: js.Any, rows: js.Array[DataObjectRow]): DataObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cols")(cols)
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(cols = cols, p = p, rows = rows)
+  
     __obj.asInstanceOf[DataObject]
   }
 }

@@ -22,11 +22,8 @@ object Anon_Count {
     startDate: stdLib.Date,
     `type`: java.lang.String
   ): Anon_Count = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("predefinedPeriod")(predefinedPeriod)
-    __obj.updateDynamic("startDate")(startDate)
+    val __obj = js.Dynamic.literal(count = count, endDate = endDate, predefinedPeriod = predefinedPeriod, startDate = startDate)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Count]
   }
 }

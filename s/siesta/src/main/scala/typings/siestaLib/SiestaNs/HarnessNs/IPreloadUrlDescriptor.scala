@@ -13,8 +13,8 @@ trait IPreloadUrlDescriptor extends js.Object {
 object IPreloadUrlDescriptor {
   @scala.inline
   def apply(`type`: java.lang.String, url: java.lang.String): IPreloadUrlDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPreloadUrlDescriptor]
   }
 }

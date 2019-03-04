@@ -14,9 +14,8 @@ trait ExportEntitiesOptions extends js.Object {
 object ExportEntitiesOptions {
   @scala.inline
   def apply(asString: scala.Boolean, includeMetadata: scala.Boolean): ExportEntitiesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asString")(asString)
-    __obj.updateDynamic("includeMetadata")(includeMetadata)
+    val __obj = js.Dynamic.literal(asString = asString, includeMetadata = includeMetadata)
+  
     __obj.asInstanceOf[ExportEntitiesOptions]
   }
 }

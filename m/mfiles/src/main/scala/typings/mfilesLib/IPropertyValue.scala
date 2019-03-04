@@ -43,15 +43,8 @@ object IPropertyValue {
     TypedValue: ITypedValue,
     Value: ITypedValue
   ): IPropertyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("GetValueAsLocalizedText")(GetValueAsLocalizedText)
-    __obj.updateDynamic("GetValueAsText")(GetValueAsText)
-    __obj.updateDynamic("GetValueAsUnlocalizedText")(GetValueAsUnlocalizedText)
-    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
-    __obj.updateDynamic("TypedValue")(TypedValue)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, GetValueAsLocalizedText = GetValueAsLocalizedText, GetValueAsText = GetValueAsText, GetValueAsUnlocalizedText = GetValueAsUnlocalizedText, PropertyDef = PropertyDef.asInstanceOf[js.Any], TypedValue = TypedValue, Value = Value)
+  
     __obj.asInstanceOf[IPropertyValue]
   }
 }

@@ -22,9 +22,8 @@ object WorkItemTypeStateInfo {
     states: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     workItemTypeName: java.lang.String
   ): WorkItemTypeStateInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("states")(states)
-    __obj.updateDynamic("workItemTypeName")(workItemTypeName)
+    val __obj = js.Dynamic.literal(states = states, workItemTypeName = workItemTypeName)
+  
     __obj.asInstanceOf[WorkItemTypeStateInfo]
   }
 }

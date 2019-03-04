@@ -22,11 +22,8 @@ object WatchResource {
     token: java.lang.String,
     `type`: java.lang.String
   ): WatchResource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("expiration")(expiration)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(address = address, expiration = expiration, id = id, token = token)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WatchResource]
   }
 }

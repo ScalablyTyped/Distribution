@@ -44,23 +44,8 @@ object DeploymentQueryParameters {
     queryType: DeploymentsQueryType,
     sourceBranch: java.lang.String
   ): DeploymentQueryParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactSourceId")(artifactSourceId)
-    __obj.updateDynamic("artifactTypeId")(artifactTypeId)
-    __obj.updateDynamic("artifactVersions")(artifactVersions)
-    __obj.updateDynamic("deploymentStatus")(deploymentStatus)
-    __obj.updateDynamic("deploymentsPerEnvironment")(deploymentsPerEnvironment)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("expands")(expands)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("latestDeploymentsOnly")(latestDeploymentsOnly)
-    __obj.updateDynamic("maxDeploymentsPerEnvironment")(maxDeploymentsPerEnvironment)
-    __obj.updateDynamic("maxModifiedTime")(maxModifiedTime)
-    __obj.updateDynamic("minModifiedTime")(minModifiedTime)
-    __obj.updateDynamic("operationStatus")(operationStatus)
-    __obj.updateDynamic("queryOrder")(queryOrder)
-    __obj.updateDynamic("queryType")(queryType)
-    __obj.updateDynamic("sourceBranch")(sourceBranch)
+    val __obj = js.Dynamic.literal(artifactSourceId = artifactSourceId, artifactTypeId = artifactTypeId, artifactVersions = artifactVersions, deploymentStatus = deploymentStatus, deploymentsPerEnvironment = deploymentsPerEnvironment, environments = environments, expands = expands, isDeleted = isDeleted, latestDeploymentsOnly = latestDeploymentsOnly, maxDeploymentsPerEnvironment = maxDeploymentsPerEnvironment, maxModifiedTime = maxModifiedTime, minModifiedTime = minModifiedTime, operationStatus = operationStatus, queryOrder = queryOrder, queryType = queryType, sourceBranch = sourceBranch)
+  
     __obj.asInstanceOf[DeploymentQueryParameters]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Vary extends js.Object {
 object Anon_Vary {
   @scala.inline
   def apply(vary: scala.Boolean, weak: scala.Boolean): Anon_Vary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vary")(vary)
-    __obj.updateDynamic("weak")(weak)
+    val __obj = js.Dynamic.literal(vary = vary, weak = weak)
+  
     __obj.asInstanceOf[Anon_Vary]
   }
 }

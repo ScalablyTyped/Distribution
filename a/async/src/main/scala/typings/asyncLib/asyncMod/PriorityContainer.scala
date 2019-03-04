@@ -12,8 +12,8 @@ trait PriorityContainer extends js.Object {
 object PriorityContainer {
   @scala.inline
   def apply(priority: scala.Double): PriorityContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(priority = priority)
+  
     __obj.asInstanceOf[PriorityContainer]
   }
 }

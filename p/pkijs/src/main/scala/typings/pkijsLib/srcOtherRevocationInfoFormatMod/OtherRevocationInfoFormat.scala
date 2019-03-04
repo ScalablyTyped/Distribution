@@ -22,12 +22,8 @@ object OtherRevocationInfoFormat {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): OtherRevocationInfoFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("otherRevInfo")(otherRevInfo)
-    __obj.updateDynamic("otherRevInfoFormat")(otherRevInfoFormat)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, otherRevInfo = otherRevInfo, otherRevInfoFormat = otherRevInfoFormat, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[OtherRevocationInfoFormat]
   }
 }

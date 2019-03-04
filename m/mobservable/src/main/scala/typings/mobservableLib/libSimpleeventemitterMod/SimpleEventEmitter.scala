@@ -26,11 +26,8 @@ object SimpleEventEmitter {
       mobservableLib.libInterfacesMod.Lambda
     ]
   ): SimpleEventEmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
+    val __obj = js.Dynamic.literal(emit = emit, listeners = listeners, on = on, once = once)
+  
     __obj.asInstanceOf[SimpleEventEmitter]
   }
 }

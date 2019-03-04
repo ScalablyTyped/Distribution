@@ -18,9 +18,8 @@ object StageChangeEventArguments {
     getDirection: js.Function0[xrmLib.XrmNs.ProcessFlowNs.StageChangeDirection],
     getStage: js.Function0[xrmLib.XrmNs.ProcessFlowNs.Stage]
   ): StageChangeEventArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDirection")(getDirection)
-    __obj.updateDynamic("getStage")(getStage)
+    val __obj = js.Dynamic.literal(getDirection = getDirection, getStage = getStage)
+  
     __obj.asInstanceOf[StageChangeEventArguments]
   }
 }

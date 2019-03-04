@@ -39,10 +39,7 @@ object FeedDialogParams {
     source: java.lang.String = null,
     to: java.lang.String = null
   ): FeedDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app_id")(app_id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(app_id = app_id, method = method, name = name)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (description != null) __obj.updateDynamic("description")(description)
     if (display != null) __obj.updateDynamic("display")(display)

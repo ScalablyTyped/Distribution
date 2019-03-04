@@ -32,17 +32,8 @@ object FlashLayer {
     parentLayer: FlashLayer,
     visible: scala.Boolean
   ): FlashLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("frameCount")(frameCount)
-    __obj.updateDynamic("frames")(frames)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("layerType")(layerType)
-    __obj.updateDynamic("locked")(locked)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("parentLayer")(parentLayer)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(color = color, frameCount = frameCount, frames = frames, height = height, layerType = layerType, locked = locked, name = name, outline = outline, parentLayer = parentLayer, visible = visible)
+  
     __obj.asInstanceOf[FlashLayer]
   }
 }

@@ -23,9 +23,8 @@ object SelectionRange {
     kind: java.lang.String,
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
   ): SelectionRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(kind = kind, range = range)
+  
     __obj.asInstanceOf[SelectionRange]
   }
 }

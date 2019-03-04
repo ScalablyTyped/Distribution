@@ -57,13 +57,8 @@ object Scripto {
       scala.Unit
     ]
   ): Scripto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("evalSha")(evalSha)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadFromDir")(loadFromDir)
-    __obj.updateDynamic("loadFromFile")(loadFromFile)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(eval = eval, evalSha = evalSha, load = load, loadFromDir = loadFromDir, loadFromFile = loadFromFile, run = run)
+  
     __obj.asInstanceOf[Scripto]
   }
 }

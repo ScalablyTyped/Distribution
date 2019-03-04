@@ -52,9 +52,7 @@ object ListProps {
     size: ListSize = null,
     split: js.UndefOr[scala.Boolean] = js.undefined
   ): ListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("renderItem")(renderItem)
+    val __obj = js.Dynamic.literal(dataSource = dataSource, renderItem = renderItem)
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

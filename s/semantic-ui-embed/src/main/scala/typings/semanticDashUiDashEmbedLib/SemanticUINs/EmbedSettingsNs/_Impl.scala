@@ -165,31 +165,8 @@ object _Impl {
     url: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("brandedUI")(brandedUI)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("hd")(hd)
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onCreate")(onCreate)
-    __obj.updateDynamic("onDisplay")(onDisplay)
-    __obj.updateDynamic("onEmbed")(onEmbed)
-    __obj.updateDynamic("onPlaceholderDisplay")(onPlaceholderDisplay)
-    __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className.asInstanceOf[js.Any], color = color, debug = debug, error = error.asInstanceOf[js.Any], hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onCreate = onCreate, onDisplay = onDisplay, onEmbed = onEmbed, onPlaceholderDisplay = onPlaceholderDisplay, parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

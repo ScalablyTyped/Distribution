@@ -92,16 +92,8 @@ object Texture {
     RepeatModeX: scala.Double,
     RepeatModeY: scala.Double
   ): Texture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AffineTransform")(AffineTransform)
-    __obj.updateDynamic("Alpha")(Alpha)
-    __obj.updateDynamic("Bitmap")(Bitmap)
-    __obj.updateDynamic("Gradient")(Gradient)
-    __obj.updateDynamic("HatchAttributes")(HatchAttributes)
-    __obj.updateDynamic("Hatching")(Hatching)
-    __obj.updateDynamic("NumberOfHatchPolygons")(NumberOfHatchPolygons)
-    __obj.updateDynamic("RepeatModeX")(RepeatModeX)
-    __obj.updateDynamic("RepeatModeY")(RepeatModeY)
+    val __obj = js.Dynamic.literal(AffineTransform = AffineTransform, Alpha = Alpha, Bitmap = Bitmap, Gradient = Gradient, HatchAttributes = HatchAttributes, Hatching = Hatching, NumberOfHatchPolygons = NumberOfHatchPolygons, RepeatModeX = RepeatModeX, RepeatModeY = RepeatModeY)
+  
     __obj.asInstanceOf[Texture]
   }
 }

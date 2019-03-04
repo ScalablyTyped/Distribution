@@ -25,8 +25,7 @@ object ServerMethodCache {
     staleIn: scala.Double | (js.Function2[/* stored */ scala.Double, /* ttl */ scala.Double, scala.Double]) = null,
     staleTimeout: scala.Int | scala.Double = null
   ): ServerMethodCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateTimeout")(generateTimeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(generateTimeout = generateTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(dropOnError)) __obj.updateDynamic("dropOnError")(dropOnError)
     if (expiresAt != null) __obj.updateDynamic("expiresAt")(expiresAt)
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])

@@ -14,10 +14,8 @@ trait ColorLAB extends js.Object {
 object ColorLAB {
   @scala.inline
   def apply(a: NumericValueRef, b: NumericValueRef, l: NumericValueRef): ColorLAB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    __obj.updateDynamic("l")(l.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ColorLAB]
   }
 }

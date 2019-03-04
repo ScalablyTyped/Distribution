@@ -37,15 +37,8 @@ object DataSettings {
     RowHeight: scala.Double,
     TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
   ): DataSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApplyFilter")(ApplyFilter)
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
-    __obj.updateDynamic("GroupBy")(GroupBy)
-    __obj.updateDynamic("HavingClause")(HavingClause)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("RowHeight")(RowHeight)
-    __obj.updateDynamic("TextColor")(TextColor)
+    val __obj = js.Dynamic.literal(ApplyFilter = ApplyFilter, Filter = Filter, FontDescriptor = FontDescriptor, GroupBy = GroupBy, HavingClause = HavingClause, Order = Order, RowHeight = RowHeight, TextColor = TextColor)
+  
     __obj.asInstanceOf[DataSettings]
   }
 }

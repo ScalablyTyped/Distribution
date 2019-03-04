@@ -18,8 +18,8 @@ trait ErrorInfo extends js.Object {
 object ErrorInfo {
   @scala.inline
   def apply(componentStack: java.lang.String): ErrorInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentStack")(componentStack)
+    val __obj = js.Dynamic.literal(componentStack = componentStack)
+  
     __obj.asInstanceOf[ErrorInfo]
   }
 }

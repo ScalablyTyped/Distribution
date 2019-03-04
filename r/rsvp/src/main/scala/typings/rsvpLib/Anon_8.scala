@@ -12,8 +12,8 @@ trait Anon_8 extends js.Object {
 object Anon_8 {
   @scala.inline
   def apply(length: rsvpLib.rsvpLibNumbers.`8`): Anon_8 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(length = length)
+  
     __obj.asInstanceOf[Anon_8]
   }
 }

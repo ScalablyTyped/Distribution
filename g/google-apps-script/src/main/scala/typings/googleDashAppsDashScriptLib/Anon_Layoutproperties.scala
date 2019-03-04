@@ -24,11 +24,8 @@ object Anon_Layoutproperties {
     notes_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.NotesProperties,
     slide_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.SlideProperties
   ): Anon_Layoutproperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layout_properties")(layout_properties)
-    __obj.updateDynamic("master_properties")(master_properties)
-    __obj.updateDynamic("notes_properties")(notes_properties)
-    __obj.updateDynamic("slide_properties")(slide_properties)
+    val __obj = js.Dynamic.literal(layout_properties = layout_properties, master_properties = master_properties, notes_properties = notes_properties, slide_properties = slide_properties)
+  
     __obj.asInstanceOf[Anon_Layoutproperties]
   }
 }

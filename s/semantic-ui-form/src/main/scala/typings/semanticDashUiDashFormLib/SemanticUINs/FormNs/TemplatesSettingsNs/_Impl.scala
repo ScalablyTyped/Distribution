@@ -16,9 +16,8 @@ object _Impl {
     error: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery],
     prompt: js.Function1[js.Array[java.lang.String], semanticDashUiDashFormLib.JQuery]
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("prompt")(prompt)
+    val __obj = js.Dynamic.literal(error = error, prompt = prompt)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

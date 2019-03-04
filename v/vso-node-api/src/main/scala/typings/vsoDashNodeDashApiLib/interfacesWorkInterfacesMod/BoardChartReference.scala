@@ -19,9 +19,8 @@ trait BoardChartReference extends js.Object {
 object BoardChartReference {
   @scala.inline
   def apply(name: java.lang.String, url: java.lang.String): BoardChartReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(name = name, url = url)
+  
     __obj.asInstanceOf[BoardChartReference]
   }
 }

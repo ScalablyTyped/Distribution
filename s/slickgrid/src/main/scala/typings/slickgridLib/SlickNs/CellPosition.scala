@@ -24,14 +24,8 @@ object CellPosition {
     visible: scala.Boolean,
     width: scala.Double
   ): CellPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, top = top, visible = visible, width = width)
+  
     __obj.asInstanceOf[CellPosition]
   }
 }

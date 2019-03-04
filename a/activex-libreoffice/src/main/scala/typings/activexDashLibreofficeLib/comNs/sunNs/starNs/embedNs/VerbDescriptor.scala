@@ -33,11 +33,8 @@ object VerbDescriptor {
     VerbID: scala.Double,
     VerbName: java.lang.String
   ): VerbDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VerbAttributes")(VerbAttributes)
-    __obj.updateDynamic("VerbFlags")(VerbFlags)
-    __obj.updateDynamic("VerbID")(VerbID)
-    __obj.updateDynamic("VerbName")(VerbName)
+    val __obj = js.Dynamic.literal(VerbAttributes = VerbAttributes, VerbFlags = VerbFlags, VerbID = VerbID, VerbName = VerbName)
+  
     __obj.asInstanceOf[VerbDescriptor]
   }
 }

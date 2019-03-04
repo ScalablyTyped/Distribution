@@ -24,12 +24,7 @@ object Anon_Blur {
     y: jssLib.cssMod.Length,
     inset: jssLib.jssLibStrings.inset = null
   ): Anon_Blur = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], color = color, spread = spread.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     if (inset != null) __obj.updateDynamic("inset")(inset)
     __obj.asInstanceOf[Anon_Blur]
   }

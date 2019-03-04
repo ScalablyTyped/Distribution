@@ -26,14 +26,8 @@ object Anon_Boolean {
     string: scala.Double,
     stringList: scala.Double
   ): Anon_Boolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("branchFilter")(branchFilter)
-    __obj.updateDynamic("multiLine")(multiLine)
-    __obj.updateDynamic("pickList")(pickList)
-    __obj.updateDynamic("radio")(radio)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("stringList")(stringList)
+    val __obj = js.Dynamic.literal(boolean = boolean, branchFilter = branchFilter, multiLine = multiLine, pickList = pickList, radio = radio, string = string, stringList = stringList)
+  
     __obj.asInstanceOf[Anon_Boolean]
   }
 }

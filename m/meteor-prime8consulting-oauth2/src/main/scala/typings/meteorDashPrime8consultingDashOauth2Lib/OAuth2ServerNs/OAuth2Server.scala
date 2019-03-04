@@ -24,13 +24,8 @@ object OAuth2Server {
     pubSubNames: PubSubNames,
     subscribeTo: SubscribeTo
   ): OAuth2Server = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callMethod")(callMethod)
-    __obj.updateDynamic("collections")(collections)
-    __obj.updateDynamic("methodNames")(methodNames)
-    __obj.updateDynamic("oauthserver")(oauthserver)
-    __obj.updateDynamic("pubSubNames")(pubSubNames)
-    __obj.updateDynamic("subscribeTo")(subscribeTo)
+    val __obj = js.Dynamic.literal(callMethod = callMethod, collections = collections, methodNames = methodNames, oauthserver = oauthserver, pubSubNames = pubSubNames, subscribeTo = subscribeTo)
+  
     __obj.asInstanceOf[OAuth2Server]
   }
 }

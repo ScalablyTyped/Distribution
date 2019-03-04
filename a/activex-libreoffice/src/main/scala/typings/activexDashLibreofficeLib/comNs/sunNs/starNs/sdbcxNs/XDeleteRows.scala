@@ -28,11 +28,8 @@ object XDeleteRows {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDeleteRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("deleteRows")(deleteRows)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, deleteRows = deleteRows, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDeleteRows]
   }
 }

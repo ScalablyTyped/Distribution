@@ -21,8 +21,8 @@ object Anon_String {
       ]
     ]
   ): Anon_String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toBits")(toBits)
+    val __obj = js.Dynamic.literal(toBits = toBits)
+  
     __obj.asInstanceOf[Anon_String]
   }
 }

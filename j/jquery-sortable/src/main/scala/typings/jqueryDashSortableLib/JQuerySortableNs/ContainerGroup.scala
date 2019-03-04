@@ -53,27 +53,8 @@ object ContainerGroup {
     sameResultBox: jqueryDashSortableLib.Anon_Bottom,
     scrollProxy: js.Any
   ): ContainerGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$document")($document)
-    __obj.updateDynamic("containerDimensions")(containerDimensions)
-    __obj.updateDynamic("containers")(containers)
-    __obj.updateDynamic("delayMet")(delayMet)
-    __obj.updateDynamic("dragInitDone")(dragInitDone)
-    __obj.updateDynamic("dragProxy")(dragProxy)
-    __obj.updateDynamic("dragging")(dragging)
-    __obj.updateDynamic("dropProxy")(dropProxy)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("itemContainer")(itemContainer)
-    __obj.updateDynamic("lastAppendedItem")(lastAppendedItem)
-    __obj.updateDynamic("lastPointer")(lastPointer)
-    __obj.updateDynamic("lastRelativePointer")(lastRelativePointer)
-    __obj.updateDynamic("offsetParent")(offsetParent)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("pointer")(pointer)
-    __obj.updateDynamic("relativePointer")(relativePointer)
-    __obj.updateDynamic("sameResultBox")(sameResultBox)
-    __obj.updateDynamic("scrollProxy")(scrollProxy)
+    val __obj = js.Dynamic.literal($document = $document, containerDimensions = containerDimensions, containers = containers, delayMet = delayMet, dragInitDone = dragInitDone, dragProxy = dragProxy, dragging = dragging, dropProxy = dropProxy, item = item, itemContainer = itemContainer, lastAppendedItem = lastAppendedItem, lastPointer = lastPointer, lastRelativePointer = lastRelativePointer, offsetParent = offsetParent, options = options, placeholder = placeholder, pointer = pointer, relativePointer = relativePointer, sameResultBox = sameResultBox, scrollProxy = scrollProxy)
+  
     __obj.asInstanceOf[ContainerGroup]
   }
 }

@@ -45,12 +45,7 @@ object LoginItemSettings {
     wasOpenedAtLogin: scala.Boolean,
     options: Options = null
   ): LoginItemSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openAsHidden")(openAsHidden)
-    __obj.updateDynamic("openAtLogin")(openAtLogin)
-    __obj.updateDynamic("restoreState")(restoreState)
-    __obj.updateDynamic("wasOpenedAsHidden")(wasOpenedAsHidden)
-    __obj.updateDynamic("wasOpenedAtLogin")(wasOpenedAtLogin)
+    val __obj = js.Dynamic.literal(openAsHidden = openAsHidden, openAtLogin = openAtLogin, restoreState = restoreState, wasOpenedAsHidden = wasOpenedAsHidden, wasOpenedAtLogin = wasOpenedAtLogin)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[LoginItemSettings]
   }

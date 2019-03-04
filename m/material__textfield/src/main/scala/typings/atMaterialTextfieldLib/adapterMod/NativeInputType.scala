@@ -20,11 +20,8 @@ object NativeInputType {
     validity: atMaterialTextfieldLib.Anon_BadInput,
     value: java.lang.String
   ): NativeInputType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badInput")(badInput)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("validity")(validity)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(badInput = badInput, disabled = disabled, validity = validity, value = value)
+  
     __obj.asInstanceOf[NativeInputType]
   }
 }

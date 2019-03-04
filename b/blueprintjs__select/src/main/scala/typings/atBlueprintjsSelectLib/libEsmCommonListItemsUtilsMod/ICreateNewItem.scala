@@ -14,8 +14,8 @@ object ICreateNewItem {
   def apply(
     __blueprintCreateNewItemBrand: atBlueprintjsSelectLib.atBlueprintjsSelectLibStrings.`blueprint-create-new-item`
   ): ICreateNewItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__blueprintCreateNewItemBrand")(__blueprintCreateNewItemBrand)
+    val __obj = js.Dynamic.literal(__blueprintCreateNewItemBrand = __blueprintCreateNewItemBrand)
+  
     __obj.asInstanceOf[ICreateNewItem]
   }
 }

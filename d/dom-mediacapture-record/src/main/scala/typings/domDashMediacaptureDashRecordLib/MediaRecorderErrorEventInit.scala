@@ -18,8 +18,7 @@ object MediaRecorderErrorEventInit {
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined
   ): MediaRecorderErrorEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

@@ -13,9 +13,8 @@ trait AdminTopicOffset extends js.Object {
 object AdminTopicOffset {
   @scala.inline
   def apply(offset: java.lang.String, partition: scala.Double): AdminTopicOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("partition")(partition)
+    val __obj = js.Dynamic.literal(offset = offset, partition = partition)
+  
     __obj.asInstanceOf[AdminTopicOffset]
   }
 }

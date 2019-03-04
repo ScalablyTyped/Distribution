@@ -16,9 +16,8 @@ object Anon_Info {
     info: pdfjsDashDistLib.pdfjsDashDistMod.PDFInfo,
     metadata: pdfjsDashDistLib.pdfjsDashDistMod.PDFMetadata
   ): Anon_Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(info = info, metadata = metadata)
+  
     __obj.asInstanceOf[Anon_Info]
   }
 }

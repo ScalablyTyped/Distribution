@@ -39,14 +39,8 @@ object ChaiStatic {
     use: js.Function1[js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit], ChaiStatic],
     version: java.lang.String
   ): ChaiStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AssertionError")(AssertionError)
-    __obj.updateDynamic("assert")(assert)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("expect")(expect)
-    __obj.updateDynamic("should")(should)
-    __obj.updateDynamic("use")(use)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(AssertionError = AssertionError, assert = assert, config = config, expect = expect, should = should, use = use, version = version)
+  
     __obj.asInstanceOf[ChaiStatic]
   }
 }

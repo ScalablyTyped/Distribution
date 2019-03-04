@@ -26,9 +26,7 @@ object BaseOptions {
     ] = null,
     baseUrl: java.lang.String = null
   ): BaseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repo")(repo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(repo = repo, user = user)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     __obj.asInstanceOf[BaseOptions]

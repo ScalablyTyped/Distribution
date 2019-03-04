@@ -18,10 +18,8 @@ object Anon_AppearDone {
     enter: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], js.Any],
     leave: js.Function2[reactLib.HTMLElement, js.Function0[scala.Unit], js.Any]
   ): Anon_AppearDone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appear")(appear)
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("leave")(leave)
+    val __obj = js.Dynamic.literal(appear = appear, enter = enter, leave = leave)
+  
     __obj.asInstanceOf[Anon_AppearDone]
   }
 }

@@ -15,9 +15,8 @@ trait CursorPositionParameters extends js.Object {
 object CursorPositionParameters {
   @scala.inline
   def apply(candidateID: scala.Double, contextID: scala.Double): CursorPositionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("candidateID")(candidateID)
-    __obj.updateDynamic("contextID")(contextID)
+    val __obj = js.Dynamic.literal(candidateID = candidateID, contextID = contextID)
+  
     __obj.asInstanceOf[CursorPositionParameters]
   }
 }

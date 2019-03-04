@@ -60,20 +60,8 @@ object XNumberFormatter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNumberFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NumberFormatsSupplier")(NumberFormatsSupplier)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("attachNumberFormatsSupplier")(attachNumberFormatsSupplier)
-    __obj.updateDynamic("convertNumberToString")(convertNumberToString)
-    __obj.updateDynamic("convertStringToNumber")(convertStringToNumber)
-    __obj.updateDynamic("detectNumberFormat")(detectNumberFormat)
-    __obj.updateDynamic("formatString")(formatString)
-    __obj.updateDynamic("getInputString")(getInputString)
-    __obj.updateDynamic("getNumberFormatsSupplier")(getNumberFormatsSupplier)
-    __obj.updateDynamic("queryColorForNumber")(queryColorForNumber)
-    __obj.updateDynamic("queryColorForString")(queryColorForString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(NumberFormatsSupplier = NumberFormatsSupplier, acquire = acquire, attachNumberFormatsSupplier = attachNumberFormatsSupplier, convertNumberToString = convertNumberToString, convertStringToNumber = convertStringToNumber, detectNumberFormat = detectNumberFormat, formatString = formatString, getInputString = getInputString, getNumberFormatsSupplier = getNumberFormatsSupplier, queryColorForNumber = queryColorForNumber, queryColorForString = queryColorForString, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNumberFormatter]
   }
 }

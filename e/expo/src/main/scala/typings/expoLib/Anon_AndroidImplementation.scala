@@ -20,8 +20,7 @@ object Anon_AndroidImplementation {
     androidImplementation: java.lang.String = null,
     error: java.lang.String = null
   ): Anon_AndroidImplementation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLoaded")(isLoaded)
+    val __obj = js.Dynamic.literal(isLoaded = isLoaded)
     if (androidImplementation != null) __obj.updateDynamic("androidImplementation")(androidImplementation)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[Anon_AndroidImplementation]

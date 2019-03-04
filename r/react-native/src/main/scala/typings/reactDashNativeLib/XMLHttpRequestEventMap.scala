@@ -24,15 +24,8 @@ object XMLHttpRequestEventMap {
     readystatechange: reactLib.Event,
     timeout: reactLib.Event
   ): XMLHttpRequestEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadend")(loadend)
-    __obj.updateDynamic("loadstart")(loadstart)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("readystatechange")(readystatechange)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress, readystatechange = readystatechange, timeout = timeout)
+  
     __obj.asInstanceOf[XMLHttpRequestEventMap]
   }
 }

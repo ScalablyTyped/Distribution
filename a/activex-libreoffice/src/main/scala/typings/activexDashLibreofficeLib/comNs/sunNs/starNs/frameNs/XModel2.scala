@@ -128,34 +128,8 @@ object XModel2 {
     setCurrentController: js.Function1[XController, scala.Unit],
     unlockControllers: js.Function0[scala.Unit]
   ): XModel2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Args")(Args)
-    __obj.updateDynamic("AvailableViewControllerNames")(AvailableViewControllerNames)
-    __obj.updateDynamic("Controllers")(Controllers)
-    __obj.updateDynamic("CurrentController")(CurrentController)
-    __obj.updateDynamic("CurrentSelection")(CurrentSelection)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attachResource")(attachResource)
-    __obj.updateDynamic("connectController")(connectController)
-    __obj.updateDynamic("createDefaultViewController")(createDefaultViewController)
-    __obj.updateDynamic("createViewController")(createViewController)
-    __obj.updateDynamic("disconnectController")(disconnectController)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getArgs")(getArgs)
-    __obj.updateDynamic("getAvailableViewControllerNames")(getAvailableViewControllerNames)
-    __obj.updateDynamic("getControllers")(getControllers)
-    __obj.updateDynamic("getCurrentController")(getCurrentController)
-    __obj.updateDynamic("getCurrentSelection")(getCurrentSelection)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("hasControllersLocked")(hasControllersLocked)
-    __obj.updateDynamic("lockControllers")(lockControllers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setCurrentController")(setCurrentController)
-    __obj.updateDynamic("unlockControllers")(unlockControllers)
+    val __obj = js.Dynamic.literal(Args = Args, AvailableViewControllerNames = AvailableViewControllerNames, Controllers = Controllers, CurrentController = CurrentController, CurrentSelection = CurrentSelection, URL = URL, acquire = acquire, addEventListener = addEventListener, attachResource = attachResource, connectController = connectController, createDefaultViewController = createDefaultViewController, createViewController = createViewController, disconnectController = disconnectController, dispose = dispose, getArgs = getArgs, getAvailableViewControllerNames = getAvailableViewControllerNames, getControllers = getControllers, getCurrentController = getCurrentController, getCurrentSelection = getCurrentSelection, getURL = getURL, hasControllersLocked = hasControllersLocked, lockControllers = lockControllers, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setCurrentController = setCurrentController, unlockControllers = unlockControllers)
+  
     __obj.asInstanceOf[XModel2]
   }
 }

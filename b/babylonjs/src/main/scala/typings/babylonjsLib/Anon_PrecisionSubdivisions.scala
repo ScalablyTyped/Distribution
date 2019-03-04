@@ -26,11 +26,7 @@ object Anon_PrecisionSubdivisions {
     subdivisions: Anon_H = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_PrecisionSubdivisions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xmax")(xmax)
-    __obj.updateDynamic("xmin")(xmin)
-    __obj.updateDynamic("zmax")(zmax)
-    __obj.updateDynamic("zmin")(zmin)
+    val __obj = js.Dynamic.literal(xmax = xmax, xmin = xmin, zmax = zmax, zmin = zmin)
     if (precision != null) __obj.updateDynamic("precision")(precision)
     if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions)
     if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable)

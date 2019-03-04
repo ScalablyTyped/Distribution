@@ -113,17 +113,8 @@ object Transaction {
     start: js.Function1[js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit], scala.Unit],
     startSync: js.Function0[scala.Unit]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("commitSync")(commitSync)
-    __obj.updateDynamic("inTransaction")(inTransaction)
-    __obj.updateDynamic("prepareSync")(prepareSync)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("querySync")(querySync)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("rollbackSync")(rollbackSync)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startSync")(startSync)
+    val __obj = js.Dynamic.literal(commit = commit, commitSync = commitSync, inTransaction = inTransaction, prepareSync = prepareSync, query = query, querySync = querySync, rollback = rollback, rollbackSync = rollbackSync, start = start, startSync = startSync)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

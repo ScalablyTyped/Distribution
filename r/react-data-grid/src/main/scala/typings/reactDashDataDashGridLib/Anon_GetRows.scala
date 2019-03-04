@@ -16,9 +16,8 @@ object Anon_GetRows {
     getRows: js.Function1[js.Object, js.Array[js.Object]],
     getSelectedRowsByKey: js.Function1[js.Object, js.Array[js.Object]]
   ): Anon_GetRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("getSelectedRowsByKey")(getSelectedRowsByKey)
+    val __obj = js.Dynamic.literal(getRows = getRows, getSelectedRowsByKey = getSelectedRowsByKey)
+  
     __obj.asInstanceOf[Anon_GetRows]
   }
 }

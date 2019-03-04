@@ -38,20 +38,8 @@ object BaseUI {
     setSize: js.Function2[scala.Double, scala.Double, scala.Unit],
     state: scala.Double
   ): BaseUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendTo")(appendTo)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getOffset")(getOffset)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("isAppended")(isAppended)
-    __obj.updateDynamic("isBuilt")(isBuilt)
-    __obj.updateDynamic("setOffset")(setOffset)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(appendTo = appendTo, build = build, destroy = destroy, getOffset = getOffset, getPosition = getPosition, getSize = getSize, hot = hot, isAppended = isAppended, isBuilt = isBuilt, setOffset = setOffset, setPosition = setPosition, setSize = setSize, state = state)
+  
     __obj.asInstanceOf[BaseUI]
   }
 }

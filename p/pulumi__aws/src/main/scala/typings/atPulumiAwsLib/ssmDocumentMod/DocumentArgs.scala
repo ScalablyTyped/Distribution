@@ -42,9 +42,7 @@ object DocumentArgs {
     permissions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccountIdsTypeInput] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): DocumentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("documentType")(documentType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], documentType = documentType.asInstanceOf[js.Any])
     if (documentFormat != null) __obj.updateDynamic("documentFormat")(documentFormat.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])

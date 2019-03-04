@@ -13,8 +13,8 @@ trait ListItemStart
 object ListItemStart {
   @scala.inline
   def apply(`type`: markedLib.markedLibStrings.list_item_start): ListItemStart = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ListItemStart]
   }
 }

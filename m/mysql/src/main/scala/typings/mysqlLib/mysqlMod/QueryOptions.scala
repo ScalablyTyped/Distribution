@@ -58,8 +58,7 @@ object QueryOptions {
     typeCast: TypeCast = null,
     values: js.Any = null
   ): QueryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sql")(sql)
+    val __obj = js.Dynamic.literal(sql = sql)
     if (nestTables != null) __obj.updateDynamic("nestTables")(nestTables)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (typeCast != null) __obj.updateDynamic("typeCast")(typeCast.asInstanceOf[js.Any])

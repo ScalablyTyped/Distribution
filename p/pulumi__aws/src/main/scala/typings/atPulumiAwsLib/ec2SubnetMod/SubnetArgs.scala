@@ -57,9 +57,7 @@ object SubnetArgs {
     mapPublicIpOnLaunch: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SubnetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cidrBlock = cidrBlock.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     if (assignIpv6AddressOnCreation != null) __obj.updateDynamic("assignIpv6AddressOnCreation")(assignIpv6AddressOnCreation.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (availabilityZoneId != null) __obj.updateDynamic("availabilityZoneId")(availabilityZoneId.asInstanceOf[js.Any])

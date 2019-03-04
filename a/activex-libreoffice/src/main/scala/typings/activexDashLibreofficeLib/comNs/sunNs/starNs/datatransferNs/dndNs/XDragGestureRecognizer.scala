@@ -37,13 +37,8 @@ object XDragGestureRecognizer {
     removeDragGestureListener: js.Function1[XDragGestureListener, scala.Unit],
     resetRecognizer: js.Function0[scala.Unit]
   ): XDragGestureRecognizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDragGestureListener")(addDragGestureListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDragGestureListener")(removeDragGestureListener)
-    __obj.updateDynamic("resetRecognizer")(resetRecognizer)
+    val __obj = js.Dynamic.literal(acquire = acquire, addDragGestureListener = addDragGestureListener, queryInterface = queryInterface, release = release, removeDragGestureListener = removeDragGestureListener, resetRecognizer = resetRecognizer)
+  
     __obj.asInstanceOf[XDragGestureRecognizer]
   }
 }

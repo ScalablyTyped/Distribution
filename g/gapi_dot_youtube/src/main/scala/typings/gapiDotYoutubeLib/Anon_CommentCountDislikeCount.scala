@@ -37,12 +37,8 @@ object Anon_CommentCountDislikeCount {
     likeCount: scala.Double,
     viewCount: scala.Double
   ): Anon_CommentCountDislikeCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commentCount")(commentCount)
-    __obj.updateDynamic("dislikeCount")(dislikeCount)
-    __obj.updateDynamic("favoriteCount")(favoriteCount)
-    __obj.updateDynamic("likeCount")(likeCount)
-    __obj.updateDynamic("viewCount")(viewCount)
+    val __obj = js.Dynamic.literal(commentCount = commentCount, dislikeCount = dislikeCount, favoriteCount = favoriteCount, likeCount = likeCount, viewCount = viewCount)
+  
     __obj.asInstanceOf[Anon_CommentCountDislikeCount]
   }
 }

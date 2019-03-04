@@ -16,9 +16,8 @@ object Anon_FakeClock {
     Sorter: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.utilNs.INs.Sorter],
     fakeClockNs: js.Any
   ): Anon_FakeClock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Sorter")(Sorter)
-    __obj.updateDynamic("fakeClockNs")(fakeClockNs)
+    val __obj = js.Dynamic.literal(Sorter = Sorter, fakeClockNs = fakeClockNs)
+  
     __obj.asInstanceOf[Anon_FakeClock]
   }
 }

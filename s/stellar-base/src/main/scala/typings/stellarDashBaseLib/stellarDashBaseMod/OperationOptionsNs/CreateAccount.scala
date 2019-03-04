@@ -15,9 +15,7 @@ trait CreateAccount
 object CreateAccount {
   @scala.inline
   def apply(destination: java.lang.String, startingBalance: java.lang.String, source: java.lang.String = null): CreateAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("startingBalance")(startingBalance)
+    val __obj = js.Dynamic.literal(destination = destination, startingBalance = startingBalance)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[CreateAccount]
   }

@@ -12,8 +12,8 @@ trait Anon_Locked extends js.Object {
 object Anon_Locked {
   @scala.inline
   def apply(locked: scala.Boolean): Anon_Locked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locked")(locked)
+    val __obj = js.Dynamic.literal(locked = locked)
+  
     __obj.asInstanceOf[Anon_Locked]
   }
 }

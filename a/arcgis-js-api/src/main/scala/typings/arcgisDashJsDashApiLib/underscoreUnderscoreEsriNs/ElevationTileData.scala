@@ -51,15 +51,8 @@ object ElevationTileData {
     values: js.Array[scala.Double],
     width: scala.Double
   ): ElevationTileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maxZError")(maxZError)
-    __obj.updateDynamic("noDataValue")(noDataValue)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("values")(values)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, height = height, maxZError = maxZError, noDataValue = noDataValue, propertyIsEnumerable = propertyIsEnumerable, values = values, width = width)
+  
     __obj.asInstanceOf[ElevationTileData]
   }
 }

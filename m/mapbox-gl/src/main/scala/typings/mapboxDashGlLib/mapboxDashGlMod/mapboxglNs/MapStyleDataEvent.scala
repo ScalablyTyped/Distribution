@@ -19,9 +19,8 @@ object MapStyleDataEvent {
     `type`: java.lang.String,
     originalEvent: js.UndefOr[scala.Nothing] = js.undefined
   ): MapStyleDataEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(dataType = dataType, target = target)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[MapStyleDataEvent]
   }

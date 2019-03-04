@@ -42,13 +42,8 @@ object Anon_IconClass {
     spinnerClass: java.lang.String,
     textClass: java.lang.String
   ): Anon_IconClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconClass")(iconClass)
-    __obj.updateDynamic("loadingClass")(loadingClass)
-    __obj.updateDynamic("loadingText")(loadingText)
-    __obj.updateDynamic("overlayClass")(overlayClass)
-    __obj.updateDynamic("spinnerClass")(spinnerClass)
-    __obj.updateDynamic("textClass")(textClass)
+    val __obj = js.Dynamic.literal(iconClass = iconClass, loadingClass = loadingClass, loadingText = loadingText, overlayClass = overlayClass, spinnerClass = spinnerClass, textClass = textClass)
+  
     __obj.asInstanceOf[Anon_IconClass]
   }
 }

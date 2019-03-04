@@ -22,12 +22,8 @@ object ICacheNameDetails {
     runtime: java.lang.String,
     suffix: java.lang.String
   ): ICacheNameDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("googleAnalytics")(googleAnalytics)
-    __obj.updateDynamic("precache")(precache)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("suffix")(suffix)
+    val __obj = js.Dynamic.literal(googleAnalytics = googleAnalytics, precache = precache, prefix = prefix, runtime = runtime, suffix = suffix)
+  
     __obj.asInstanceOf[ICacheNameDetails]
   }
 }

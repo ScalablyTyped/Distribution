@@ -14,7 +14,7 @@ trait dynaTrace extends js.Object {
     */
   def addPageLeavingListener(listener: js.Function1[/* key */ java.lang.String, js.Object]): scala.Unit = js.native
   @JSName("addStreamingNode")
-  def `addStreamingNode__error_`(
+  def addStreamingNode__error_(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,
@@ -23,7 +23,7 @@ trait dynaTrace extends js.Object {
     playTime: scala.Double,
     bufferingCount: scala.Double,
     bufferingTime: scala.Double,
-    `type`: dynatraceLib.dynatraceLibStrings.`_error_`
+    `type`: dynatraceLib.dynatraceLibStrings._error_
   ): scala.Unit = js.native
   /**
     * @description Sends a Streaming Node to the Server
@@ -39,7 +39,7 @@ trait dynaTrace extends js.Object {
     *     on the serverside, e.g. _info_, _warn_, _error_
     */
   @JSName("addStreamingNode")
-  def `addStreamingNode__info_`(
+  def addStreamingNode__info_(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,
@@ -48,10 +48,10 @@ trait dynaTrace extends js.Object {
     playTime: scala.Double,
     bufferingCount: scala.Double,
     bufferingTime: scala.Double,
-    `type`: dynatraceLib.dynatraceLibStrings.`_info_`
+    `type`: dynatraceLib.dynatraceLibStrings._info_
   ): scala.Unit = js.native
   @JSName("addStreamingNode")
-  def `addStreamingNode__warn_`(
+  def addStreamingNode__warn_(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,
@@ -60,7 +60,7 @@ trait dynaTrace extends js.Object {
     playTime: scala.Double,
     bufferingCount: scala.Double,
     bufferingTime: scala.Double,
-    `type`: dynatraceLib.dynatraceLibStrings.`_warn_`
+    `type`: dynatraceLib.dynatraceLibStrings._warn_
   ): scala.Unit = js.native
   /**
     * @description Indicates the start of a user input. User inputs must always

@@ -18,10 +18,8 @@ object IPRIVATE_MESSAGE {
     message: java.lang.String,
     sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
   ): IPRIVATE_MESSAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(data = data, message = message, sender = sender)
+  
     __obj.asInstanceOf[IPRIVATE_MESSAGE]
   }
 }

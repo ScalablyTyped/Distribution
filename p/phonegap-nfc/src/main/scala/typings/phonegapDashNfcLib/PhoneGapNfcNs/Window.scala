@@ -23,11 +23,8 @@ object Window {
     nfc: Nfc,
     util: Util
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fireNfcTagEvent")(fireNfcTagEvent)
-    __obj.updateDynamic("ndef")(ndef)
-    __obj.updateDynamic("nfc")(nfc)
-    __obj.updateDynamic("util")(util)
+    val __obj = js.Dynamic.literal(fireNfcTagEvent = fireNfcTagEvent, ndef = ndef, nfc = nfc, util = util)
+  
     __obj.asInstanceOf[Window]
   }
 }

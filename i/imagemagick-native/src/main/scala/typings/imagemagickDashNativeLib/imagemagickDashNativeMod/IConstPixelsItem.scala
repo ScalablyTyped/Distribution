@@ -15,11 +15,8 @@ trait IConstPixelsItem extends js.Object {
 object IConstPixelsItem {
   @scala.inline
   def apply(blue: scala.Double, green: scala.Double, opacity: scala.Double, red: scala.Double): IConstPixelsItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("red")(red)
+    val __obj = js.Dynamic.literal(blue = blue, green = green, opacity = opacity, red = red)
+  
     __obj.asInstanceOf[IConstPixelsItem]
   }
 }

@@ -27,10 +27,8 @@ object Anon_Any {
     cm: js.Function1[js.Any, scala.Double],
     kg: js.Function1[js.Any, scala.Double]
   ): Anon_Any = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("any")(any)
-    __obj.updateDynamic("cm")(cm)
-    __obj.updateDynamic("kg")(kg)
+    val __obj = js.Dynamic.literal(any = any, cm = cm, kg = kg)
+  
     __obj.asInstanceOf[Anon_Any]
   }
 }

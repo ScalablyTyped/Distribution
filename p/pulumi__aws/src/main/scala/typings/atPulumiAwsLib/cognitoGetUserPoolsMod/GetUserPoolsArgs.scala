@@ -15,8 +15,8 @@ trait GetUserPoolsArgs extends js.Object {
 object GetUserPoolsArgs {
   @scala.inline
   def apply(name: java.lang.String): GetUserPoolsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[GetUserPoolsArgs]
   }
 }

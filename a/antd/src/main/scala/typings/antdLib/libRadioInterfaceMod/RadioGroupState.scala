@@ -12,8 +12,8 @@ trait RadioGroupState extends js.Object {
 object RadioGroupState {
   @scala.inline
   def apply(value: js.Any): RadioGroupState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[RadioGroupState]
   }
 }

@@ -18,10 +18,8 @@ object Anon_Attributes {
     listeners: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     properties: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Anon_Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(attributes = attributes, listeners = listeners, properties = properties)
+  
     __obj.asInstanceOf[Anon_Attributes]
   }
 }

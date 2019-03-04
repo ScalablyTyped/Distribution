@@ -32,10 +32,8 @@ object Anon_DateEarliest {
     latest: java.lang.String,
     `type`: stripeLib.stripeLibStrings.range | stripeLib.stripeLibStrings.exact
   ): Anon_DateEarliest = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("earliest")(earliest)
-    __obj.updateDynamic("latest")(latest)
+    val __obj = js.Dynamic.literal(date = date, earliest = earliest, latest = latest)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateEarliest]
   }
 }

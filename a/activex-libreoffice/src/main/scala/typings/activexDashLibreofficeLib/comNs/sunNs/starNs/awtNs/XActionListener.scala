@@ -21,12 +21,8 @@ object XActionListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XActionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("actionPerformed")(actionPerformed)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, actionPerformed = actionPerformed, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XActionListener]
   }
 }

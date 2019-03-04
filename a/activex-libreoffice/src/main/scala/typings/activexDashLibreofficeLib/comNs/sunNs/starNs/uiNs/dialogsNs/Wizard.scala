@@ -62,27 +62,8 @@ object Wizard {
     travelPrevious: js.Function0[scala.Boolean],
     updateTravelUI: js.Function0[scala.Unit]
   ): Wizard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentPage")(CurrentPage)
-    __obj.updateDynamic("DialogWindow")(DialogWindow)
-    __obj.updateDynamic("HelpURL")(HelpURL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activatePath")(activatePath)
-    __obj.updateDynamic("advanceTo")(advanceTo)
-    __obj.updateDynamic("createMultiplePathsWizard")(createMultiplePathsWizard)
-    __obj.updateDynamic("createSinglePathWizard")(createSinglePathWizard)
-    __obj.updateDynamic("enableButton")(enableButton)
-    __obj.updateDynamic("enablePage")(enablePage)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
-    __obj.updateDynamic("goBackTo")(goBackTo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefaultButton")(setDefaultButton)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("travelNext")(travelNext)
-    __obj.updateDynamic("travelPrevious")(travelPrevious)
-    __obj.updateDynamic("updateTravelUI")(updateTravelUI)
+    val __obj = js.Dynamic.literal(CurrentPage = CurrentPage, DialogWindow = DialogWindow, HelpURL = HelpURL, acquire = acquire, activatePath = activatePath, advanceTo = advanceTo, createMultiplePathsWizard = createMultiplePathsWizard, createSinglePathWizard = createSinglePathWizard, enableButton = enableButton, enablePage = enablePage, execute = execute, getCurrentPage = getCurrentPage, goBackTo = goBackTo, queryInterface = queryInterface, release = release, setDefaultButton = setDefaultButton, setTitle = setTitle, travelNext = travelNext, travelPrevious = travelPrevious, updateTravelUI = updateTravelUI)
+  
     __obj.asInstanceOf[Wizard]
   }
 }

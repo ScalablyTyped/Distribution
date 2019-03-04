@@ -20,11 +20,8 @@ object IProximityMessage {
     messageType: java.lang.String,
     subscriptionId: scala.Double
   ): IProximityMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dataAsString")(dataAsString)
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("subscriptionId")(subscriptionId)
+    val __obj = js.Dynamic.literal(data = data, dataAsString = dataAsString, messageType = messageType, subscriptionId = subscriptionId)
+  
     __obj.asInstanceOf[IProximityMessage]
   }
 }

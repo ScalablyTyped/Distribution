@@ -12,8 +12,8 @@ trait AsyncEncryptorConfig extends js.Object {
 object AsyncEncryptorConfig {
   @scala.inline
   def apply(secretKey: java.lang.String): AsyncEncryptorConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secretKey")(secretKey)
+    val __obj = js.Dynamic.literal(secretKey = secretKey)
+  
     __obj.asInstanceOf[AsyncEncryptorConfig]
   }
 }

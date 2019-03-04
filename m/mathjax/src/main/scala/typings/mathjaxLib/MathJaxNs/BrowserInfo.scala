@@ -56,10 +56,7 @@ object BrowserInfo {
     isPC: js.UndefOr[scala.Boolean] = js.undefined,
     isSafari: js.UndefOr[scala.Boolean] = js.undefined
   ): BrowserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Select")(Select)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionAtLeast")(versionAtLeast)
+    val __obj = js.Dynamic.literal(Select = Select, version = version, versionAtLeast = versionAtLeast)
     if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome)
     if (!js.isUndefined(isFirefox)) __obj.updateDynamic("isFirefox")(isFirefox)
     if (!js.isUndefined(isKonqueror)) __obj.updateDynamic("isKonqueror")(isKonqueror)

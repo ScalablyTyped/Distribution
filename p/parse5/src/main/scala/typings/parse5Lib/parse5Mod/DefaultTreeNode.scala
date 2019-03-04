@@ -15,8 +15,8 @@ trait DefaultTreeNode extends js.Object {
 object DefaultTreeNode {
   @scala.inline
   def apply(nodeName: java.lang.String): DefaultTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeName")(nodeName)
+    val __obj = js.Dynamic.literal(nodeName = nodeName)
+  
     __obj.asInstanceOf[DefaultTreeNode]
   }
 }

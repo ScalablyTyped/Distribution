@@ -26,12 +26,7 @@ object WindowLoadSettings {
     env: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null,
     profileStartup: js.UndefOr[scala.Boolean] = js.undefined
   ): WindowLoadSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("atomHome")(atomHome)
-    __obj.updateDynamic("devMode")(devMode)
-    __obj.updateDynamic("resourcePath")(resourcePath)
-    __obj.updateDynamic("safeMode")(safeMode)
+    val __obj = js.Dynamic.literal(appVersion = appVersion, atomHome = atomHome, devMode = devMode, resourcePath = resourcePath, safeMode = safeMode)
     if (env != null) __obj.updateDynamic("env")(env)
     if (!js.isUndefined(profileStartup)) __obj.updateDynamic("profileStartup")(profileStartup)
     __obj.asInstanceOf[WindowLoadSettings]

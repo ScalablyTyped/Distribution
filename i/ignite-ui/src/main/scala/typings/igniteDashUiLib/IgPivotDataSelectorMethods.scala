@@ -41,12 +41,8 @@ object IgPivotDataSelectorMethods {
     destroy: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): IgPivotDataSelectorMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, update = update)
+  
     __obj.asInstanceOf[IgPivotDataSelectorMethods]
   }
 }

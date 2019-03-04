@@ -14,10 +14,8 @@ trait PublicKey extends js.Object {
 object PublicKey {
   @scala.inline
   def apply(fingerprint: java.lang.String, key: java.lang.String, words: js.Array[java.lang.String]): PublicKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint, key = key, words = words)
+  
     __obj.asInstanceOf[PublicKey]
   }
 }

@@ -139,10 +139,8 @@ object DocumentReference {
     subject: Reference = null,
     text: Narrative = null
   ): DocumentReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("indexed")(indexed)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(content = content, indexed = indexed, status = status)
+    __obj.updateDynamic("type")(`type`)
     if (_created != null) __obj.updateDynamic("_created")(_created)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_docStatus != null) __obj.updateDynamic("_docStatus")(_docStatus)

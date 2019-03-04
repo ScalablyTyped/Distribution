@@ -13,8 +13,7 @@ trait Anon_TargetBucket extends js.Object {
 object Anon_TargetBucket {
   @scala.inline
   def apply(targetBucket: java.lang.String, targetPrefix: java.lang.String = null): Anon_TargetBucket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetBucket")(targetBucket)
+    val __obj = js.Dynamic.literal(targetBucket = targetBucket)
     if (targetPrefix != null) __obj.updateDynamic("targetPrefix")(targetPrefix)
     __obj.asInstanceOf[Anon_TargetBucket]
   }

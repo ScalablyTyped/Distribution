@@ -31,10 +31,8 @@ object BinaryExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): BinaryExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, operator = operator.asInstanceOf[js.Any], right = right)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

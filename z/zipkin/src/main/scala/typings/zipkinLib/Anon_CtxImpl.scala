@@ -26,9 +26,7 @@ object Anon_CtxImpl {
     sampler: zipkinLib.zipkinMod.zipkinNs.samplerNs.Sampler = null,
     traceId128Bit: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CtxImpl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctxImpl")(ctxImpl)
-    __obj.updateDynamic("recorder")(recorder)
+    val __obj = js.Dynamic.literal(ctxImpl = ctxImpl, recorder = recorder)
     if (localEndpoint != null) __obj.updateDynamic("localEndpoint")(localEndpoint)
     if (localServiceName != null) __obj.updateDynamic("localServiceName")(localServiceName)
     if (log != null) __obj.updateDynamic("log")(log)

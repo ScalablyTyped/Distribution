@@ -18,10 +18,8 @@ object Repeater {
     count: js.Function0[Future],
     row: js.Function1[scala.Double, Future]
   ): Repeater = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(column = column, count = count, row = row)
+  
     __obj.asInstanceOf[Repeater]
   }
 }

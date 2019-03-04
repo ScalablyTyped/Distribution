@@ -150,33 +150,8 @@ object GetLaunchTemplateResult {
     userData: java.lang.String,
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetLaunchTemplateResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings)
-    __obj.updateDynamic("creditSpecifications")(creditSpecifications)
-    __obj.updateDynamic("defaultVersion")(defaultVersion)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("disableApiTermination")(disableApiTermination)
-    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
-    __obj.updateDynamic("elasticGpuSpecifications")(elasticGpuSpecifications)
-    __obj.updateDynamic("iamInstanceProfiles")(iamInstanceProfiles)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageId")(imageId)
-    __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior)
-    __obj.updateDynamic("instanceMarketOptions")(instanceMarketOptions)
-    __obj.updateDynamic("instanceType")(instanceType)
-    __obj.updateDynamic("kernelId")(kernelId)
-    __obj.updateDynamic("keyName")(keyName)
-    __obj.updateDynamic("latestVersion")(latestVersion)
-    __obj.updateDynamic("monitorings")(monitorings)
-    __obj.updateDynamic("networkInterfaces")(networkInterfaces)
-    __obj.updateDynamic("placements")(placements)
-    __obj.updateDynamic("ramDiskId")(ramDiskId)
-    __obj.updateDynamic("securityGroupNames")(securityGroupNames)
-    __obj.updateDynamic("tagSpecifications")(tagSpecifications)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("userData")(userData)
-    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(arn = arn, blockDeviceMappings = blockDeviceMappings, creditSpecifications = creditSpecifications, defaultVersion = defaultVersion, description = description, disableApiTermination = disableApiTermination, ebsOptimized = ebsOptimized, elasticGpuSpecifications = elasticGpuSpecifications, iamInstanceProfiles = iamInstanceProfiles, id = id, imageId = imageId, instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior, instanceMarketOptions = instanceMarketOptions, instanceType = instanceType, kernelId = kernelId, keyName = keyName, latestVersion = latestVersion, monitorings = monitorings, networkInterfaces = networkInterfaces, placements = placements, ramDiskId = ramDiskId, securityGroupNames = securityGroupNames, tagSpecifications = tagSpecifications, tags = tags, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+  
     __obj.asInstanceOf[GetLaunchTemplateResult]
   }
 }

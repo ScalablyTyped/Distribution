@@ -21,10 +21,8 @@ object EnhancedCustomShapeAdjustmentValue {
     State: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
     Value: js.Any
   ): EnhancedCustomShapeAdjustmentValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Name = Name, State = State, Value = Value)
+  
     __obj.asInstanceOf[EnhancedCustomShapeAdjustmentValue]
   }
 }

@@ -18,8 +18,7 @@ object Anon_Gamepads {
     keyboard: playcanvasLib.pcNs.Keyboard = null,
     mouse: playcanvasLib.pcNs.Mouse = null
   ): Anon_Gamepads = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gamepads")(gamepads)
+    val __obj = js.Dynamic.literal(gamepads = gamepads)
     if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
     if (mouse != null) __obj.updateDynamic("mouse")(mouse)
     __obj.asInstanceOf[Anon_Gamepads]

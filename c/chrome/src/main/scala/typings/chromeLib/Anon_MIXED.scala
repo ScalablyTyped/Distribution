@@ -18,10 +18,8 @@ object Anon_MIXED {
     NORMAL: chromeLib.chromeLibStrings.normal,
     OFF: chromeLib.chromeLibStrings.off
   ): Anon_MIXED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MIXED")(MIXED)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("OFF")(OFF)
+    val __obj = js.Dynamic.literal(MIXED = MIXED, NORMAL = NORMAL, OFF = OFF)
+  
     __obj.asInstanceOf[Anon_MIXED]
   }
 }

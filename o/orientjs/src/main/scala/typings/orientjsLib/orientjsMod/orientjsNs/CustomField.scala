@@ -37,10 +37,8 @@ object CustomField {
     set: js.Function2[java.lang.String, js.Any, CustomField],
     unset: js.Function1[java.lang.String, CustomField]
   ): CustomField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("unset")(unset)
+    val __obj = js.Dynamic.literal(get = get, set = set, unset = unset)
+  
     __obj.asInstanceOf[CustomField]
   }
 }

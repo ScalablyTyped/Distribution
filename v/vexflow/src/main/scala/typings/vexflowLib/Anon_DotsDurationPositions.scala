@@ -22,9 +22,7 @@ object Anon_DotsDurationPositions {
     stem_direction: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): Anon_DotsDurationPositions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(duration = duration, positions = positions)
     if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
     if (stem_direction != null) __obj.updateDynamic("stem_direction")(stem_direction.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)

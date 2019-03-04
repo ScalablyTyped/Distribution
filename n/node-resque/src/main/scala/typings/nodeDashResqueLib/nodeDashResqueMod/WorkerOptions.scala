@@ -22,8 +22,7 @@ object WorkerOptions {
     name: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): WorkerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queues")(queues)
+    val __obj = js.Dynamic.literal(queues = queues)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping)
     if (name != null) __obj.updateDynamic("name")(name)

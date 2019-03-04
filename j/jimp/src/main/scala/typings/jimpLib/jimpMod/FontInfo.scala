@@ -34,18 +34,8 @@ object FontInfo {
     stretchH: scala.Double,
     unicode: scala.Double
   ): FontInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aa")(aa)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("charset")(charset)
-    __obj.updateDynamic("face")(face)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("smooth")(smooth)
-    __obj.updateDynamic("spacing")(spacing)
-    __obj.updateDynamic("stretchH")(stretchH)
-    __obj.updateDynamic("unicode")(unicode)
+    val __obj = js.Dynamic.literal(aa = aa, bold = bold, charset = charset, face = face, italic = italic, padding = padding, size = size, smooth = smooth, spacing = spacing, stretchH = stretchH, unicode = unicode)
+  
     __obj.asInstanceOf[FontInfo]
   }
 }

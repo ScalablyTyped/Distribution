@@ -32,17 +32,8 @@ object Paragraph {
     text: java.lang.String,
     words: js.Array[Word]
   ): Paragraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("is_ltr")(is_ltr)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, confidence = confidence, is_ltr = is_ltr, lines = lines, page = page, symbols = symbols, text = text, words = words)
+  
     __obj.asInstanceOf[Paragraph]
   }
 }

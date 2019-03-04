@@ -14,10 +14,8 @@ trait VimeoCuePoint extends js.Object {
 object VimeoCuePoint {
   @scala.inline
   def apply(data: VimeoCuePointData, id: java.lang.String, time: scala.Double): VimeoCuePoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(data = data, id = id, time = time)
+  
     __obj.asInstanceOf[VimeoCuePoint]
   }
 }

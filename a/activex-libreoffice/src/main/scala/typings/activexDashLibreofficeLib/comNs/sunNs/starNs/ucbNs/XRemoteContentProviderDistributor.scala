@@ -42,13 +42,8 @@ object XRemoteContentProviderDistributor {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRemoteContentProviderDistributor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("connectToRemoteAcceptor")(connectToRemoteAcceptor)
-    __obj.updateDynamic("disconnectFromAll")(disconnectFromAll)
-    __obj.updateDynamic("disconnectFromRemoteAcceptor")(disconnectFromRemoteAcceptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, connectToRemoteAcceptor = connectToRemoteAcceptor, disconnectFromAll = disconnectFromAll, disconnectFromRemoteAcceptor = disconnectFromRemoteAcceptor, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRemoteContentProviderDistributor]
   }
 }

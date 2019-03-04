@@ -61,11 +61,8 @@ object XUpdateInformationProvider {
       scala.Unit
     ]
   ): XUpdateInformationProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("getUpdateInformation")(getUpdateInformation)
-    __obj.updateDynamic("getUpdateInformationEnumeration")(getUpdateInformationEnumeration)
-    __obj.updateDynamic("setInteractionHandler")(setInteractionHandler)
+    val __obj = js.Dynamic.literal(cancel = cancel, getUpdateInformation = getUpdateInformation, getUpdateInformationEnumeration = getUpdateInformationEnumeration, setInteractionHandler = setInteractionHandler)
+  
     __obj.asInstanceOf[XUpdateInformationProvider]
   }
 }

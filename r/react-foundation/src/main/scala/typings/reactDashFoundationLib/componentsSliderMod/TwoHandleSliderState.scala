@@ -13,9 +13,8 @@ trait TwoHandleSliderState extends js.Object {
 object TwoHandleSliderState {
   @scala.inline
   def apply(maxValue: scala.Double, minValue: scala.Double): TwoHandleSliderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
+    val __obj = js.Dynamic.literal(maxValue = maxValue, minValue = minValue)
+  
     __obj.asInstanceOf[TwoHandleSliderState]
   }
 }

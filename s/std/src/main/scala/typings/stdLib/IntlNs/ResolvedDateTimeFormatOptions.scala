@@ -40,11 +40,7 @@ object ResolvedDateTimeFormatOptions {
     weekday: java.lang.String = null,
     year: java.lang.String = null
   ): ResolvedDateTimeFormatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendar")(calendar)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("numberingSystem")(numberingSystem)
-    __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(calendar = calendar, locale = locale, numberingSystem = numberingSystem, timeZone = timeZone)
     if (day != null) __obj.updateDynamic("day")(day)
     if (era != null) __obj.updateDynamic("era")(era)
     if (hour != null) __obj.updateDynamic("hour")(hour)

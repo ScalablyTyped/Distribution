@@ -36,9 +36,8 @@ object ViewState {
     AffineTransform: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
     Clip: XPolyPolygon2D
   ): ViewState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AffineTransform")(AffineTransform)
-    __obj.updateDynamic("Clip")(Clip)
+    val __obj = js.Dynamic.literal(AffineTransform = AffineTransform, Clip = Clip)
+  
     __obj.asInstanceOf[ViewState]
   }
 }

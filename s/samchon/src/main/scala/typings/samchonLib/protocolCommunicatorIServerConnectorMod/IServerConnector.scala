@@ -48,14 +48,8 @@ object IServerConnector {
     replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
     sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
   ): IServerConnector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onConnect")(onConnect)
-    __obj.updateDynamic("replyData")(replyData)
-    __obj.updateDynamic("sendData")(sendData)
+    val __obj = js.Dynamic.literal(close = close, connect = connect, isConnected = isConnected, onClose = onClose, onConnect = onConnect, replyData = replyData, sendData = sendData)
+  
     __obj.asInstanceOf[IServerConnector]
   }
 }

@@ -10,8 +10,8 @@ trait BaseObject extends IBaseObject
 object BaseObject {
   @scala.inline
   def apply(toJSON: js.Function0[js.Any]): BaseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
+  
     __obj.asInstanceOf[BaseObject]
   }
 }

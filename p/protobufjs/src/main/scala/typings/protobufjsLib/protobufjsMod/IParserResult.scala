@@ -27,8 +27,7 @@ object IParserResult {
     syntax: java.lang.String = null,
     weakImports: js.Array[java.lang.String] = null
   ): IParserResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(root = root)
     if (imports != null) __obj.updateDynamic("imports")(imports)
     if (`package` != null) __obj.updateDynamic("package")(`package`)
     if (syntax != null) __obj.updateDynamic("syntax")(syntax)

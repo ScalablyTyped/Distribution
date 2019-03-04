@@ -32,10 +32,8 @@ object Merge {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): Merge = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, toJSON = toJSON, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

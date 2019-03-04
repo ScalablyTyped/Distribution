@@ -20,8 +20,7 @@ object GetMarkupFromTreeOptions {
     context: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     renderFunction: js.Function1[/* tree */ reactLib.reactMod.ReactNs.ReactElement[_], java.lang.String] = null
   ): GetMarkupFromTreeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tree")(tree.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tree = tree.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
     if (renderFunction != null) __obj.updateDynamic("renderFunction")(renderFunction)
     __obj.asInstanceOf[GetMarkupFromTreeOptions]

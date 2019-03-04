@@ -21,9 +21,7 @@ object CFB$Container {
     FullPaths: js.Array[java.lang.String],
     raw: cfbLib.Anon_Header = null
   ): CFB$Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FileIndex")(FileIndex)
-    __obj.updateDynamic("FullPaths")(FullPaths)
+    val __obj = js.Dynamic.literal(FileIndex = FileIndex, FullPaths = FullPaths)
     if (raw != null) __obj.updateDynamic("raw")(raw)
     __obj.asInstanceOf[CFB$Container]
   }

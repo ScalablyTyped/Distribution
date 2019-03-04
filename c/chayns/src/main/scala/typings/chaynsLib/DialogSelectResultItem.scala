@@ -13,8 +13,7 @@ trait DialogSelectResultItem extends js.Object {
 object DialogSelectResultItem {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String = null): DialogSelectResultItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[DialogSelectResultItem]
   }

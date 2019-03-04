@@ -89,14 +89,7 @@ object IConnection {
     qPassword: java.lang.String = null,
     qUserName: java.lang.String = null
   ): IConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qConnectionString")(qConnectionString)
-    __obj.updateDynamic("qId")(qId)
-    __obj.updateDynamic("qLogOn")(qLogOn)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qModifiedDate")(qModifiedDate)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qType")(qType)
+    val __obj = js.Dynamic.literal(qConnectionString = qConnectionString, qId = qId, qLogOn = qLogOn, qMeta = qMeta, qModifiedDate = qModifiedDate, qName = qName, qType = qType)
     if (qPassword != null) __obj.updateDynamic("qPassword")(qPassword)
     if (qUserName != null) __obj.updateDynamic("qUserName")(qUserName)
     __obj.asInstanceOf[IConnection]

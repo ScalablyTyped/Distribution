@@ -20,11 +20,8 @@ object Endpoint {
     setPort: js.Function1[scala.Double, scala.Unit],
     setServiceName: js.Function1[java.lang.String, scala.Unit]
   ): Endpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("setIpv4")(setIpv4)
-    __obj.updateDynamic("setPort")(setPort)
-    __obj.updateDynamic("setServiceName")(setServiceName)
+    val __obj = js.Dynamic.literal(isEmpty = isEmpty, setIpv4 = setIpv4, setPort = setPort, setServiceName = setServiceName)
+  
     __obj.asInstanceOf[Endpoint]
   }
 }

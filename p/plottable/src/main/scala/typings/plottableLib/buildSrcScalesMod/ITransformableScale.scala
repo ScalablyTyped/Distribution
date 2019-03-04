@@ -59,14 +59,8 @@ object ITransformableScale {
     setTransformationDomain: js.Function1[js.Tuple2[scala.Double, scala.Double], scala.Unit],
     zoom: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): ITransformableScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTransformationDomain")(getTransformationDomain)
-    __obj.updateDynamic("getTransformationExtent")(getTransformationExtent)
-    __obj.updateDynamic("invertedTransformation")(invertedTransformation)
-    __obj.updateDynamic("pan")(pan)
-    __obj.updateDynamic("scaleTransformation")(scaleTransformation)
-    __obj.updateDynamic("setTransformationDomain")(setTransformationDomain)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(getTransformationDomain = getTransformationDomain, getTransformationExtent = getTransformationExtent, invertedTransformation = invertedTransformation, pan = pan, scaleTransformation = scaleTransformation, setTransformationDomain = setTransformationDomain, zoom = zoom)
+  
     __obj.asInstanceOf[ITransformableScale]
   }
 }

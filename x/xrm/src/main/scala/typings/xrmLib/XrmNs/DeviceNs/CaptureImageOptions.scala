@@ -40,12 +40,8 @@ object CaptureImageOptions {
     quality: scala.Double,
     width: scala.Double
   ): CaptureImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowEdit")(allowEdit)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("preferFrontCamera")(preferFrontCamera)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(allowEdit = allowEdit, height = height, preferFrontCamera = preferFrontCamera, quality = quality, width = width)
+  
     __obj.asInstanceOf[CaptureImageOptions]
   }
 }

@@ -32,11 +32,8 @@ object LoaderConfig {
     retryDelay: scala.Double,
     timeout: scala.Double
   ): LoaderConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxRetry")(maxRetry)
-    __obj.updateDynamic("maxRetryDelay")(maxRetryDelay)
-    __obj.updateDynamic("retryDelay")(retryDelay)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(maxRetry = maxRetry, maxRetryDelay = maxRetryDelay, retryDelay = retryDelay, timeout = timeout)
+  
     __obj.asInstanceOf[LoaderConfig]
   }
 }

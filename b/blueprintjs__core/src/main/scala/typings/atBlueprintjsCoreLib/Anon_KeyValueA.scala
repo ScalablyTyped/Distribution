@@ -18,10 +18,8 @@ object Anon_KeyValueA {
     valueA: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any,
     valueB: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   ): Anon_KeyValueA[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("valueA")(valueA)
-    __obj.updateDynamic("valueB")(valueB)
+    val __obj = js.Dynamic.literal(key = key, valueA = valueA, valueB = valueB)
+  
     __obj.asInstanceOf[Anon_KeyValueA[T]]
   }
 }

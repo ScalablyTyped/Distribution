@@ -81,8 +81,7 @@ object LDUser {
     name: java.lang.String = null,
     privateAttributeNames: js.Array[java.lang.String] = null
   ): LDUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (country != null) __obj.updateDynamic("country")(country)

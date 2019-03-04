@@ -18,10 +18,8 @@ object RouteConfig {
     method: RouteConfigMethod,
     path: java.lang.String
   ): RouteConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method, path = path)
+  
     __obj.asInstanceOf[RouteConfig]
   }
 }

@@ -56,13 +56,8 @@ object TargetTcpProxiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): TargetTcpProxiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setBackendService")(setBackendService)
-    __obj.updateDynamic("setProxyHeader")(setProxyHeader)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setBackendService = setBackendService, setProxyHeader = setProxyHeader)
+  
     __obj.asInstanceOf[TargetTcpProxiesResource]
   }
 }

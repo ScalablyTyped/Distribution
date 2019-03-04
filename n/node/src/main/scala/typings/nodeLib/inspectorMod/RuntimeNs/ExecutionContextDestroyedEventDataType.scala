@@ -15,8 +15,8 @@ trait ExecutionContextDestroyedEventDataType extends js.Object {
 object ExecutionContextDestroyedEventDataType {
   @scala.inline
   def apply(executionContextId: ExecutionContextId): ExecutionContextDestroyedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executionContextId")(executionContextId)
+    val __obj = js.Dynamic.literal(executionContextId = executionContextId)
+  
     __obj.asInstanceOf[ExecutionContextDestroyedEventDataType]
   }
 }

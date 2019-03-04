@@ -68,8 +68,7 @@ object RadialBarProps {
     radiusAxisId: java.lang.String | scala.Double = null,
     shape: ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): RadialBarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeShape != null) __obj.updateDynamic("activeShape")(activeShape.asInstanceOf[js.Any])
     if (angleAxisId != null) __obj.updateDynamic("angleAxisId")(angleAxisId.asInstanceOf[js.Any])
     if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])

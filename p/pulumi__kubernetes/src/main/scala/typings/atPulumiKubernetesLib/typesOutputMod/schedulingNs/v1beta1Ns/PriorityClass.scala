@@ -59,13 +59,8 @@ object PriorityClass {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     value: scala.Double
   ): PriorityClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("globalDefault")(globalDefault)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, description = description, globalDefault = globalDefault, kind = kind, metadata = metadata, value = value)
+  
     __obj.asInstanceOf[PriorityClass]
   }
 }

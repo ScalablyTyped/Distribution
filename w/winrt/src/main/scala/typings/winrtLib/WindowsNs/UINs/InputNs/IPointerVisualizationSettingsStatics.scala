@@ -12,8 +12,8 @@ trait IPointerVisualizationSettingsStatics extends js.Object {
 object IPointerVisualizationSettingsStatics {
   @scala.inline
   def apply(getForCurrentView: js.Function0[PointerVisualizationSettings]): IPointerVisualizationSettingsStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getForCurrentView")(getForCurrentView)
+    val __obj = js.Dynamic.literal(getForCurrentView = getForCurrentView)
+  
     __obj.asInstanceOf[IPointerVisualizationSettingsStatics]
   }
 }

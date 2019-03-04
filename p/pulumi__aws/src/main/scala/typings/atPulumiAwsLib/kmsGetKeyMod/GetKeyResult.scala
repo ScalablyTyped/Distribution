@@ -41,20 +41,8 @@ object GetKeyResult {
     origin: java.lang.String,
     validTo: java.lang.String
   ): GetKeyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("awsAccountId")(awsAccountId)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("deletionDate")(deletionDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("expirationModel")(expirationModel)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("keyManager")(keyManager)
-    __obj.updateDynamic("keyState")(keyState)
-    __obj.updateDynamic("keyUsage")(keyUsage)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("validTo")(validTo)
+    val __obj = js.Dynamic.literal(arn = arn, awsAccountId = awsAccountId, creationDate = creationDate, deletionDate = deletionDate, description = description, enabled = enabled, expirationModel = expirationModel, id = id, keyManager = keyManager, keyState = keyState, keyUsage = keyUsage, origin = origin, validTo = validTo)
+  
     __obj.asInstanceOf[GetKeyResult]
   }
 }

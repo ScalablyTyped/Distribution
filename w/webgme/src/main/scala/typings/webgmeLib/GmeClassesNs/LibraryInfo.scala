@@ -17,10 +17,8 @@ trait LibraryInfo extends js.Object {
 object LibraryInfo {
   @scala.inline
   def apply(branchName: java.lang.String, commitHash: java.lang.String, projectId: java.lang.String): LibraryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchName")(branchName)
-    __obj.updateDynamic("commitHash")(commitHash)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(branchName = branchName, commitHash = commitHash, projectId = projectId)
+  
     __obj.asInstanceOf[LibraryInfo]
   }
 }

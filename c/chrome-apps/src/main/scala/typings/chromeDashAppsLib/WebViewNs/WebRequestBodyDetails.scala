@@ -27,15 +27,8 @@ object WebRequestBodyDetails {
     url: java.lang.String,
     initiator: java.lang.String = null
   ): WebRequestBodyDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestBody")(requestBody)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestBody = requestBody, requestId = requestId, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (initiator != null) __obj.updateDynamic("initiator")(initiator)
     __obj.asInstanceOf[WebRequestBodyDetails]
   }

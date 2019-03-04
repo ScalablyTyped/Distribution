@@ -26,10 +26,8 @@ object DocumentIndexMarkAsian {
     SecondaryKeyReading: java.lang.String,
     TextReading: java.lang.String
   ): DocumentIndexMarkAsian = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrimaryKeyReading")(PrimaryKeyReading)
-    __obj.updateDynamic("SecondaryKeyReading")(SecondaryKeyReading)
-    __obj.updateDynamic("TextReading")(TextReading)
+    val __obj = js.Dynamic.literal(PrimaryKeyReading = PrimaryKeyReading, SecondaryKeyReading = SecondaryKeyReading, TextReading = TextReading)
+  
     __obj.asInstanceOf[DocumentIndexMarkAsian]
   }
 }

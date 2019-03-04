@@ -37,9 +37,7 @@ object IAuth0ClientOptions {
     loginUrl: java.lang.String = null,
     sso: js.UndefOr[scala.Boolean] = js.undefined
   ): IAuth0ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(clientID = clientID, domain = domain)
     if (loginState != null) __obj.updateDynamic("loginState")(loginState)
     if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl)
     if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso)

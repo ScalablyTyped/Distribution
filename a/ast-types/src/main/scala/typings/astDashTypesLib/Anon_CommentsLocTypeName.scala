@@ -20,8 +20,7 @@ object Anon_CommentsLocTypeName {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
   ): Anon_CommentsLocTypeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)

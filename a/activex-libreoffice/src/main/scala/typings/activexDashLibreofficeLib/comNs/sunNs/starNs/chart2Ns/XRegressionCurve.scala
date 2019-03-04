@@ -26,15 +26,8 @@ object XRegressionCurve {
     release: js.Function0[scala.Unit],
     setEquationProperties: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit]
   ): XRegressionCurve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Calculator")(Calculator)
-    __obj.updateDynamic("EquationProperties")(EquationProperties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCalculator")(getCalculator)
-    __obj.updateDynamic("getEquationProperties")(getEquationProperties)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEquationProperties")(setEquationProperties)
+    val __obj = js.Dynamic.literal(Calculator = Calculator, EquationProperties = EquationProperties, acquire = acquire, getCalculator = getCalculator, getEquationProperties = getEquationProperties, queryInterface = queryInterface, release = release, setEquationProperties = setEquationProperties)
+  
     __obj.asInstanceOf[XRegressionCurve]
   }
 }

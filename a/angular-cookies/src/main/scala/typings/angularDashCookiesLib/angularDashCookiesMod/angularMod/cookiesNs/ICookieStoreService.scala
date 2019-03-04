@@ -35,10 +35,8 @@ object ICookieStoreService {
     put: js.Function2[java.lang.String, js.Any, scala.Unit],
     remove: js.Function1[java.lang.String, scala.Unit]
   ): ICookieStoreService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(get = get, put = put, remove = remove)
+  
     __obj.asInstanceOf[ICookieStoreService]
   }
 }

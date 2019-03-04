@@ -24,8 +24,7 @@ object Shadow {
     spread: java.lang.String = null,
     v: java.lang.String = null
   ): Shadow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
+    val __obj = js.Dynamic.literal(color = color)
     if (blur != null) __obj.updateDynamic("blur")(blur)
     if (h != null) __obj.updateDynamic("h")(h)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)

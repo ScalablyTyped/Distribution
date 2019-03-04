@@ -24,8 +24,7 @@ object RadioButtonProps {
     label: reactLib.reactMod.ReactNs.ReactNode = null,
     onChange: js.Function1[/* repeated */ js.Any, _] = null
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)

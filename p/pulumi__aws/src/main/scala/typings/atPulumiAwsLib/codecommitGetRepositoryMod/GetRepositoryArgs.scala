@@ -15,8 +15,8 @@ trait GetRepositoryArgs extends js.Object {
 object GetRepositoryArgs {
   @scala.inline
   def apply(repositoryName: java.lang.String): GetRepositoryArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repositoryName")(repositoryName)
+    val __obj = js.Dynamic.literal(repositoryName = repositoryName)
+  
     __obj.asInstanceOf[GetRepositoryArgs]
   }
 }

@@ -18,8 +18,7 @@ object ValidationOptionsWithKey {
     audience: js.Any = null,
     bypassExpiration: js.UndefOr[scala.Boolean] = js.undefined
   ): ValidationOptionsWithKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(publicKey = publicKey)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (!js.isUndefined(bypassExpiration)) __obj.updateDynamic("bypassExpiration")(bypassExpiration)
     __obj.asInstanceOf[ValidationOptionsWithKey]

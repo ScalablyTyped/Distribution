@@ -31,13 +31,7 @@ object OutputInfo {
     cropOffsetLeft: scala.Int | scala.Double = null,
     cropOffsetTop: scala.Int | scala.Double = null
   ): OutputInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("premultiplied")(premultiplied)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(channels = channels, format = format, height = height, premultiplied = premultiplied, size = size, width = width)
     if (cropOffsetLeft != null) __obj.updateDynamic("cropOffsetLeft")(cropOffsetLeft.asInstanceOf[js.Any])
     if (cropOffsetTop != null) __obj.updateDynamic("cropOffsetTop")(cropOffsetTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputInfo]

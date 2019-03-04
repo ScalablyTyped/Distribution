@@ -19,10 +19,8 @@ object ExtensionEventUrls {
     extensionPage: java.lang.String,
     manageExtensionsPage: java.lang.String
   ): ExtensionEventUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensionIcon")(extensionIcon)
-    __obj.updateDynamic("extensionPage")(extensionPage)
-    __obj.updateDynamic("manageExtensionsPage")(manageExtensionsPage)
+    val __obj = js.Dynamic.literal(extensionIcon = extensionIcon, extensionPage = extensionPage, manageExtensionsPage = manageExtensionsPage)
+  
     __obj.asInstanceOf[ExtensionEventUrls]
   }
 }

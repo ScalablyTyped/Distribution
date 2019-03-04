@@ -37,12 +37,8 @@ object XEncryptionResultBroadcaster {
     release: js.Function0[scala.Unit],
     removeEncryptionResultListener: js.Function1[XEncryptionResultListener, scala.Unit]
   ): XEncryptionResultBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEncryptionResultListener")(addEncryptionResultListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryptionResultListener")(removeEncryptionResultListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEncryptionResultListener = addEncryptionResultListener, queryInterface = queryInterface, release = release, removeEncryptionResultListener = removeEncryptionResultListener)
+  
     __obj.asInstanceOf[XEncryptionResultBroadcaster]
   }
 }

@@ -42,8 +42,8 @@ object opacity {
       arcgisDashJsDashApiLib.IPromise[opacityVisualVariableResult]
     ]
   ): opacity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createVisualVariable")(createVisualVariable)
+    val __obj = js.Dynamic.literal(createVisualVariable = createVisualVariable)
+  
     __obj.asInstanceOf[opacity]
   }
 }

@@ -16,9 +16,8 @@ object Parser {
     extension: java.lang.String | js.Array[java.lang.String],
     parse: js.Function1[java.lang.String, js.Any]
   ): Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], parse = parse)
+  
     __obj.asInstanceOf[Parser]
   }
 }

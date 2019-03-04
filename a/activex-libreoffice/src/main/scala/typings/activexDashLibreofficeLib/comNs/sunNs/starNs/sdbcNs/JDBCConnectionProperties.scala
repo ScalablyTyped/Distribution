@@ -65,15 +65,8 @@ object JDBCConnectionProperties {
     password: java.lang.String,
     user: java.lang.String
   ): JDBCConnectionProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoRetrievingStatement")(AutoRetrievingStatement)
-    __obj.updateDynamic("IsAutoRetrievingEnabled")(IsAutoRetrievingEnabled)
-    __obj.updateDynamic("JavaDriverClass")(JavaDriverClass)
-    __obj.updateDynamic("JavaDriverClassPath")(JavaDriverClassPath)
-    __obj.updateDynamic("SystemProperties")(SystemProperties)
-    __obj.updateDynamic("TypeInfoSettings")(TypeInfoSettings)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(AutoRetrievingStatement = AutoRetrievingStatement, IsAutoRetrievingEnabled = IsAutoRetrievingEnabled, JavaDriverClass = JavaDriverClass, JavaDriverClassPath = JavaDriverClassPath, SystemProperties = SystemProperties, TypeInfoSettings = TypeInfoSettings, password = password, user = user)
+  
     __obj.asInstanceOf[JDBCConnectionProperties]
   }
 }

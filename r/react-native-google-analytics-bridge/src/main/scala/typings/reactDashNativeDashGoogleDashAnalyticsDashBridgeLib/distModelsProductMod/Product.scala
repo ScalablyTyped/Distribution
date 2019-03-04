@@ -28,9 +28,7 @@ object Product {
     quantity: scala.Int | scala.Double = null,
     variant: java.lang.String = null
   ): Product = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
     if (brand != null) __obj.updateDynamic("brand")(brand)
     if (category != null) __obj.updateDynamic("category")(category)
     if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode)

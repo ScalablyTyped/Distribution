@@ -35,11 +35,8 @@ object XGoalSeek {
       GoalResult
     ]
   ): XGoalSeek = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("seekGoal")(seekGoal)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, seekGoal = seekGoal)
+  
     __obj.asInstanceOf[XGoalSeek]
   }
 }

@@ -27,11 +27,7 @@ object PutStreamOptions {
     contentLength: scala.Int | scala.Double = null,
     headers: js.Object = null
   ): PutStreamOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("mime")(mime)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(callback = callback, meta = meta, mime = mime, timeout = timeout)
     if (contentLength != null) __obj.updateDynamic("contentLength")(contentLength.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[PutStreamOptions]

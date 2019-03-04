@@ -30,16 +30,8 @@ object ICertificateRequestProperties {
     keyUsages: EnrollKeyUsages,
     subject: java.lang.String
   ): ICertificateRequestProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exportable")(exportable)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("hashAlgorithmName")(hashAlgorithmName)
-    __obj.updateDynamic("keyAlgorithmName")(keyAlgorithmName)
-    __obj.updateDynamic("keyProtectionLevel")(keyProtectionLevel)
-    __obj.updateDynamic("keySize")(keySize)
-    __obj.updateDynamic("keyStorageProviderName")(keyStorageProviderName)
-    __obj.updateDynamic("keyUsages")(keyUsages)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(exportable = exportable, friendlyName = friendlyName, hashAlgorithmName = hashAlgorithmName, keyAlgorithmName = keyAlgorithmName, keyProtectionLevel = keyProtectionLevel, keySize = keySize, keyStorageProviderName = keyStorageProviderName, keyUsages = keyUsages, subject = subject)
+  
     __obj.asInstanceOf[ICertificateRequestProperties]
   }
 }

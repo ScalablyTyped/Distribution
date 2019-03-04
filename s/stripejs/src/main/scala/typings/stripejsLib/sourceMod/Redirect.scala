@@ -40,10 +40,7 @@ object Redirect {
     url: java.lang.String,
     failure_reason: stripejsLib.stripejsLibStrings.user_abort | stripejsLib.stripejsLibStrings.declined | stripejsLib.stripejsLibStrings.processing_error = null
   ): Redirect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("return_url")(return_url)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(return_url = return_url, status = status.asInstanceOf[js.Any], url = url)
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Redirect]
   }

@@ -26,11 +26,7 @@ object Anon_Index {
     line: scala.Int | scala.Double = null,
     word: java.lang.String = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("ruleName")(ruleName)
+    val __obj = js.Dynamic.literal(message = message, node = node, result = result, ruleName = ruleName)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (word != null) __obj.updateDynamic("word")(word)

@@ -54,14 +54,8 @@ object XAnimationListener {
     release: js.Function0[scala.Unit],
     repeat: js.Function2[XAnimationNode, scala.Double, scala.Unit]
   ): XAnimationListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("beginEvent")(beginEvent)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("endEvent")(endEvent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("repeat")(repeat)
+    val __obj = js.Dynamic.literal(acquire = acquire, beginEvent = beginEvent, disposing = disposing, endEvent = endEvent, queryInterface = queryInterface, release = release, repeat = repeat)
+  
     __obj.asInstanceOf[XAnimationListener]
   }
 }

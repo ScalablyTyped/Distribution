@@ -12,8 +12,8 @@ trait ISettingsPaneCommandsRequestedEventArgs extends js.Object {
 object ISettingsPaneCommandsRequestedEventArgs {
   @scala.inline
   def apply(request: SettingsPaneCommandsRequest): ISettingsPaneCommandsRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[ISettingsPaneCommandsRequestedEventArgs]
   }
 }

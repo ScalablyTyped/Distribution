@@ -28,8 +28,7 @@ object SignOptions {
     privateKeys: openpgpLib.openpgpMod.keyNs.Key | js.Array[openpgpLib.openpgpMod.keyNs.Key] = null,
     streaming: openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false` = null
   ): SignOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (!js.isUndefined(armor)) __obj.updateDynamic("armor")(armor)
     if (date != null) __obj.updateDynamic("date")(date)
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)

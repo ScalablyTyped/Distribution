@@ -20,10 +20,8 @@ object DropdownButtonAccessoryDescriptor {
     onClick: js.Function1[DropdownButtonClickEvent, scala.Unit],
     `type`: inboxsdkLib.inboxsdkLibStrings.DROPDOWN_BUTTON
   ): DropdownButtonAccessoryDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("buttonBackgroundColor")(buttonBackgroundColor)
-    __obj.updateDynamic("buttonForegroundColor")(buttonForegroundColor)
-    __obj.updateDynamic("onClick")(onClick)
+    val __obj = js.Dynamic.literal(buttonBackgroundColor = buttonBackgroundColor, buttonForegroundColor = buttonForegroundColor, onClick = onClick)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DropdownButtonAccessoryDescriptor]
   }
 }

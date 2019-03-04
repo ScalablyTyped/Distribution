@@ -24,13 +24,8 @@ object Message {
     toBuffer: js.Function0[nodeLib.Buffer],
     unshift: js.Function1[/* repeated */ nodeLib.Buffer, scala.Double]
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("toBuffer")(toBuffer)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(inspect = inspect, pop = pop, push = push, shift = shift, toBuffer = toBuffer, unshift = unshift)
+  
     __obj.asInstanceOf[Message]
   }
 }

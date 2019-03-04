@@ -58,15 +58,8 @@ object ASPxClientSeriesPoint {
     toolTipText: java.lang.String,
     values: js.Array[js.Object]
   ): ASPxClientSeriesPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("percentValue")(percentValue)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("toolTipHint")(toolTipHint)
-    __obj.updateDynamic("toolTipText")(toolTipText)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(argument = argument, chart = chart, color = color, percentValue = percentValue, series = series, toolTipHint = toolTipHint, toolTipText = toolTipText, values = values)
+  
     __obj.asInstanceOf[ASPxClientSeriesPoint]
   }
 }

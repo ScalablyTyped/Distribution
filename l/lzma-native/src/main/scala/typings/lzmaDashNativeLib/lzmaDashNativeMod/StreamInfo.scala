@@ -26,14 +26,8 @@ object StreamInfo {
     streams: scala.Double,
     uncompressedSize: scala.Double
   ): StreamInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("checks")(checks)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("memlimit")(memlimit)
-    __obj.updateDynamic("streamPadding")(streamPadding)
-    __obj.updateDynamic("streams")(streams)
-    __obj.updateDynamic("uncompressedSize")(uncompressedSize)
+    val __obj = js.Dynamic.literal(blocks = blocks, checks = checks, fileSize = fileSize, memlimit = memlimit, streamPadding = streamPadding, streams = streams, uncompressedSize = uncompressedSize)
+  
     __obj.asInstanceOf[StreamInfo]
   }
 }

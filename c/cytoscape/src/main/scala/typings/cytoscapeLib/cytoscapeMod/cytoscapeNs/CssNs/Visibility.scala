@@ -40,10 +40,8 @@ object Visibility {
     visibility: cytoscapeLib.cytoscapeLibStrings.none | cytoscapeLib.cytoscapeLibStrings.visible,
     `z-index`: scala.Double
   ): Visibility = {
-    val __obj = js.Dynamic.literal(`z-index` = `z-index`)
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], opacity = opacity, visibility = visibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("z-index")(`z-index`)
     __obj.asInstanceOf[Visibility]
   }
 }

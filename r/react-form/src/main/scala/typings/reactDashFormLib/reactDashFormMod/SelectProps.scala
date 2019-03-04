@@ -19,8 +19,7 @@ object SelectProps {
     SelectHTMLAttributes: reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement] = null,
     placeholder: java.lang.String = null
   ): SelectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, FieldProps)
     js.Dynamic.global.Object.assign(__obj, SelectHTMLAttributes)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

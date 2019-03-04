@@ -13,9 +13,8 @@ trait Anon_Mdurl extends js.Object {
 object Anon_Mdurl {
   @scala.inline
   def apply(mdurl: Anon_Decode, ucmicro: Anon_Any): Anon_Mdurl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mdurl")(mdurl)
-    __obj.updateDynamic("ucmicro")(ucmicro)
+    val __obj = js.Dynamic.literal(mdurl = mdurl, ucmicro = ucmicro)
+  
     __obj.asInstanceOf[Anon_Mdurl]
   }
 }

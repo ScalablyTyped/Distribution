@@ -39,16 +39,8 @@ object XFixedText {
     setAlignment: js.Function1[scala.Double, scala.Unit],
     setText: js.Function1[java.lang.String, scala.Unit]
   ): XFixedText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAlignment")(getAlignment)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAlignment")(setAlignment)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Text = Text, acquire = acquire, getAlignment = getAlignment, getText = getText, queryInterface = queryInterface, release = release, setAlignment = setAlignment, setText = setText)
+  
     __obj.asInstanceOf[XFixedText]
   }
 }

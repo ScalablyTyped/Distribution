@@ -26,14 +26,8 @@ object Image {
     setOnClickOpenLinkAction: js.Function1[Action, Image],
     setOpenLink: js.Function1[OpenLink, Image]
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAltText")(setAltText)
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setImageUrl")(setImageUrl)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
+    val __obj = js.Dynamic.literal(setAltText = setAltText, setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setImageUrl = setImageUrl, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink)
+  
     __obj.asInstanceOf[Image]
   }
 }

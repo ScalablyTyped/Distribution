@@ -20,10 +20,7 @@ object Anon_Assign {
     version: scala.Double,
     protocol: js.Function1[/* options */ Anon_Topics, Anon_Metadata] = null
   ): Anon_Assign = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assign")(assign)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(assign = assign, name = name, version = version)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)
     __obj.asInstanceOf[Anon_Assign]
   }

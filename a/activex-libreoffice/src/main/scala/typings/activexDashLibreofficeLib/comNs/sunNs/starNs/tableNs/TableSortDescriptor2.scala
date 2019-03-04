@@ -36,10 +36,8 @@ object TableSortDescriptor2 {
     MaxSortFieldsCount: scala.Double,
     SortFields: activexDashInteropLib.SafeArray[TableSortField]
   ): TableSortDescriptor2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsSortColumns")(IsSortColumns)
-    __obj.updateDynamic("MaxSortFieldsCount")(MaxSortFieldsCount)
-    __obj.updateDynamic("SortFields")(SortFields)
+    val __obj = js.Dynamic.literal(IsSortColumns = IsSortColumns, MaxSortFieldsCount = MaxSortFieldsCount, SortFields = SortFields)
+  
     __obj.asInstanceOf[TableSortDescriptor2]
   }
 }

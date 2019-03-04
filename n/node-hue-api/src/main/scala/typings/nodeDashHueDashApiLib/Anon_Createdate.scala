@@ -14,8 +14,9 @@ trait Anon_Createdate extends js.Object {
 object Anon_Createdate {
   @scala.inline
   def apply(`create date`: stdLib.Date, `last use date`: stdLib.Date, name: java.lang.String): Anon_Createdate = {
-    val __obj = js.Dynamic.literal(`create date` = `create date`, `last use date` = `last use date`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("create date")(`create date`)
+    __obj.updateDynamic("last use date")(`last use date`)
     __obj.asInstanceOf[Anon_Createdate]
   }
 }

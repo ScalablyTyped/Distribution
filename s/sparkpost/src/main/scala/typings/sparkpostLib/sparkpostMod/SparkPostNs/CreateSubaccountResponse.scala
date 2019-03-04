@@ -20,11 +20,8 @@ object CreateSubaccountResponse {
     short_key: java.lang.String,
     subaccount_id: scala.Double
   ): CreateSubaccountResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("short_key")(short_key)
-    __obj.updateDynamic("subaccount_id")(subaccount_id)
+    val __obj = js.Dynamic.literal(key = key, label = label, short_key = short_key, subaccount_id = subaccount_id)
+  
     __obj.asInstanceOf[CreateSubaccountResponse]
   }
 }

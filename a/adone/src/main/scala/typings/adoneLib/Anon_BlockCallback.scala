@@ -52,10 +52,8 @@ object Anon_BlockCallback {
       adoneLib.adoneNs.shaniNs.INs.Test
     ]
   ): Anon_BlockCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Block")(Block)
-    __obj.updateDynamic("Hook")(Hook)
-    __obj.updateDynamic("Test")(Test)
+    val __obj = js.Dynamic.literal(Block = Block, Hook = Hook, Test = Test)
+  
     __obj.asInstanceOf[Anon_BlockCallback]
   }
 }

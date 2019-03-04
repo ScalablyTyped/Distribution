@@ -103,8 +103,16 @@ object ElevenColorScheme {
       java.lang.String
     ]
   ): ElevenColorScheme = {
-    val __obj = js.Dynamic.literal(`10` = `10`, `11` = `11`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`, `9` = `9`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("10")(`10`)
+    __obj.updateDynamic("11")(`11`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("6")(`6`)
+    __obj.updateDynamic("7")(`7`)
+    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("9")(`9`)
     __obj.asInstanceOf[ElevenColorScheme]
   }
 }

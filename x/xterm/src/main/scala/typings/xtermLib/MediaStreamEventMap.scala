@@ -20,11 +20,8 @@ object MediaStreamEventMap {
     inactive: Event,
     removetrack: MediaStreamTrackEvent
   ): MediaStreamEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("addtrack")(addtrack)
-    __obj.updateDynamic("inactive")(inactive)
-    __obj.updateDynamic("removetrack")(removetrack)
+    val __obj = js.Dynamic.literal(active = active, addtrack = addtrack, inactive = inactive, removetrack = removetrack)
+  
     __obj.asInstanceOf[MediaStreamEventMap]
   }
 }

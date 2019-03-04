@@ -105,8 +105,7 @@ object StrictPaginationProps {
     ] = null,
     siblingRange: scala.Double | java.lang.String = null
   ): StrictPaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(totalPages = totalPages.asInstanceOf[js.Any])
     if (activePage != null) __obj.updateDynamic("activePage")(activePage.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (boundaryRange != null) __obj.updateDynamic("boundaryRange")(boundaryRange.asInstanceOf[js.Any])

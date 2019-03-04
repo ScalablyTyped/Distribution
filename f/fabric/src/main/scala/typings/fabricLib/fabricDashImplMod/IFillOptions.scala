@@ -32,8 +32,7 @@ object IFillOptions {
     offsetY: scala.Int | scala.Double = null,
     repeat: java.lang.String = null
   ): IFillOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
     if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
     if (repeat != null) __obj.updateDynamic("repeat")(repeat)

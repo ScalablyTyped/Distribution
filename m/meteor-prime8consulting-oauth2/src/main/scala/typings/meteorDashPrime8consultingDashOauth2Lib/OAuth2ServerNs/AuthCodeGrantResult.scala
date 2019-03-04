@@ -20,11 +20,8 @@ object AuthCodeGrantResult {
     redirectToUri: java.lang.String,
     success: scala.Boolean
   ): AuthCodeGrantResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationCode")(authorizationCode)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("redirectToUri")(redirectToUri)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(authorizationCode = authorizationCode, error = error, redirectToUri = redirectToUri, success = success)
+  
     __obj.asInstanceOf[AuthCodeGrantResult]
   }
 }

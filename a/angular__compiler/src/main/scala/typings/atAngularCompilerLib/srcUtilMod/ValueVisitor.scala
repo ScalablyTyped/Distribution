@@ -20,11 +20,8 @@ object ValueVisitor {
     visitPrimitive: js.Function2[js.Any, js.Any, js.Any],
     visitStringMap: js.Function2[org.scalablytyped.runtime.StringDictionary[js.Any], js.Any, js.Any]
   ): ValueVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitArray")(visitArray)
-    __obj.updateDynamic("visitOther")(visitOther)
-    __obj.updateDynamic("visitPrimitive")(visitPrimitive)
-    __obj.updateDynamic("visitStringMap")(visitStringMap)
+    val __obj = js.Dynamic.literal(visitArray = visitArray, visitOther = visitOther, visitPrimitive = visitPrimitive, visitStringMap = visitStringMap)
+  
     __obj.asInstanceOf[ValueVisitor]
   }
 }

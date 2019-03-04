@@ -12,8 +12,8 @@ trait LogObject extends js.Object {
 object LogObject {
   @scala.inline
   def apply(log: js.Function0[scala.Unit]): LogObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
+  
     __obj.asInstanceOf[LogObject]
   }
 }

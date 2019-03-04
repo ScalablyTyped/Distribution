@@ -141,8 +141,7 @@ object UploaderOption {
     unique_names: js.UndefOr[scala.Boolean] = js.undefined,
     uploadedMessage: js.UndefOr[scala.Boolean] = js.undefined
   ): UploaderOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload)
     if (!js.isUndefined(browseByClickList)) __obj.updateDynamic("browseByClickList")(browseByClickList)
     if (browse_button != null) __obj.updateDynamic("browse_button")(browse_button)

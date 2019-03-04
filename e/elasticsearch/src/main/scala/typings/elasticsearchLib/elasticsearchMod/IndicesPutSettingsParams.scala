@@ -32,9 +32,7 @@ object IndicesPutSettingsParams {
     preserveExisting: js.UndefOr[scala.Boolean] = js.undefined,
     requestTimeout: scala.Int | scala.Double = null
   ): IndicesPutSettingsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, index = index.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])

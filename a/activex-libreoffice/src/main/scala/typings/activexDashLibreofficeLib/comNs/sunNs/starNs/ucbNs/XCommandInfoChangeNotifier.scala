@@ -35,12 +35,8 @@ object XCommandInfoChangeNotifier {
     release: js.Function0[scala.Unit],
     removeCommandInfoChangeListener: js.Function1[XCommandInfoChangeListener, scala.Unit]
   ): XCommandInfoChangeNotifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addCommandInfoChangeListener")(addCommandInfoChangeListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeCommandInfoChangeListener")(removeCommandInfoChangeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addCommandInfoChangeListener = addCommandInfoChangeListener, queryInterface = queryInterface, release = release, removeCommandInfoChangeListener = removeCommandInfoChangeListener)
+  
     __obj.asInstanceOf[XCommandInfoChangeNotifier]
   }
 }

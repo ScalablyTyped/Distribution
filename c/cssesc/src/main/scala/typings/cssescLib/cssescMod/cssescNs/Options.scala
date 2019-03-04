@@ -20,11 +20,8 @@ object Options {
     quotes: java.lang.String,
     wrap: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("escapeEverything")(escapeEverything)
-    __obj.updateDynamic("isIdentifier")(isIdentifier)
-    __obj.updateDynamic("quotes")(quotes)
-    __obj.updateDynamic("wrap")(wrap)
+    val __obj = js.Dynamic.literal(escapeEverything = escapeEverything, isIdentifier = isIdentifier, quotes = quotes, wrap = wrap)
+  
     __obj.asInstanceOf[Options]
   }
 }

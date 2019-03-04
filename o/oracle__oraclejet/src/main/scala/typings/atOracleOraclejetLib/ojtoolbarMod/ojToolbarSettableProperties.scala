@@ -16,8 +16,7 @@ object ojToolbarSettableProperties {
     chroming: atOracleOraclejetLib.atOracleOraclejetLibStrings.full | atOracleOraclejetLib.atOracleOraclejetLibStrings.half | atOracleOraclejetLib.atOracleOraclejetLibStrings.outlined,
     translations: js.Object = null
   ): ojToolbarSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chroming")(chroming.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chroming = chroming.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojToolbarSettableProperties]
   }

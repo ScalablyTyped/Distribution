@@ -16,7 +16,7 @@ trait Support extends js.Object {
   var getAllKeys: scala.Boolean
   var iteratesOwnFirst: scala.Boolean
   @JSName("java")
-  var `java_`: scala.Boolean
+  var java_ : scala.Boolean
   var nodeClass: scala.Boolean
   var timeout: scala.Boolean
 }
@@ -33,22 +33,12 @@ object Support {
     descriptors: scala.Boolean,
     getAllKeys: scala.Boolean,
     iteratesOwnFirst: scala.Boolean,
-    `java_`: scala.Boolean,
+    java_ : scala.Boolean,
     nodeClass: scala.Boolean,
     timeout: scala.Boolean
   ): Support = {
-    val __obj = js.Dynamic.literal(`java_` = `java_`)
-    __obj.updateDynamic("air")(air)
-    __obj.updateDynamic("argumentsClass")(argumentsClass)
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("charByIndex")(charByIndex)
-    __obj.updateDynamic("charByOwnIndex")(charByOwnIndex)
-    __obj.updateDynamic("decompilation")(decompilation)
-    __obj.updateDynamic("descriptors")(descriptors)
-    __obj.updateDynamic("getAllKeys")(getAllKeys)
-    __obj.updateDynamic("iteratesOwnFirst")(iteratesOwnFirst)
-    __obj.updateDynamic("nodeClass")(nodeClass)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(air = air, argumentsClass = argumentsClass, browser = browser, charByIndex = charByIndex, charByOwnIndex = charByOwnIndex, decompilation = decompilation, descriptors = descriptors, getAllKeys = getAllKeys, iteratesOwnFirst = iteratesOwnFirst, nodeClass = nodeClass, timeout = timeout)
+    __obj.updateDynamic("java")(java_)
     __obj.asInstanceOf[Support]
   }
 }

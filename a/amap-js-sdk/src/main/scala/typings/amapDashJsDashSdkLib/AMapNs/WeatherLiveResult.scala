@@ -33,17 +33,8 @@ object WeatherLiveResult {
     windDirection: java.lang.String,
     windPower: scala.Double
   ): WeatherLiveResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("humidity")(humidity)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("reportTime")(reportTime)
-    __obj.updateDynamic("temperature")(temperature)
-    __obj.updateDynamic("weather")(weather)
-    __obj.updateDynamic("windDirection")(windDirection)
-    __obj.updateDynamic("windPower")(windPower)
+    val __obj = js.Dynamic.literal(adcode = adcode, city = city, humidity = humidity, info = info, province = province, reportTime = reportTime, temperature = temperature, weather = weather, windDirection = windDirection, windPower = windPower)
+  
     __obj.asInstanceOf[WeatherLiveResult]
   }
 }

@@ -13,9 +13,8 @@ trait SliderEndEvent extends js.Object {
 object SliderEndEvent {
   @scala.inline
   def apply(slider: Slider, step: SliderStep): SliderEndEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("slider")(slider)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(slider = slider, step = step)
+  
     __obj.asInstanceOf[SliderEndEvent]
   }
 }

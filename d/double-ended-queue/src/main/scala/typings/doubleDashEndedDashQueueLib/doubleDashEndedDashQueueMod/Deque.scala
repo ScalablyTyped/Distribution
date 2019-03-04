@@ -34,18 +34,8 @@ object Deque {
     toArray: js.Function0[js.Array[T]],
     unshift: js.Function1[/* repeated */ T, scala.Double]
   ): Deque[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("peekBack")(peekBack)
-    __obj.updateDynamic("peekFront")(peekFront)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, isEmpty = isEmpty, length = length, peekBack = peekBack, peekFront = peekFront, pop = pop, push = push, shift = shift, toArray = toArray, unshift = unshift)
+  
     __obj.asInstanceOf[Deque[T]]
   }
 }

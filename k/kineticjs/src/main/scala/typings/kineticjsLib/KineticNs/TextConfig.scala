@@ -58,8 +58,7 @@ object TextConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): TextConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (align != null) __obj.updateDynamic("align")(align)
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)

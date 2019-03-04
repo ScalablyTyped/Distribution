@@ -20,8 +20,7 @@ object UserVoiceSettings {
     pan: discordDashRpcLib.Anon_Left = null,
     volume: scala.Int | scala.Double = null
   ): UserVoiceSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
     if (pan != null) __obj.updateDynamic("pan")(pan)
     if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])

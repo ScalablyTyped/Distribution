@@ -80,34 +80,8 @@ object ModuleUIConfigurationManager {
     store: js.Function0[scala.Unit],
     storeToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): ModuleUIConfigurationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventsManager")(EventsManager)
-    __obj.updateDynamic("ImageManager")(ImageManager)
-    __obj.updateDynamic("ShortCutManager")(ShortCutManager)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConfigurationListener")(addConfigurationListener)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("createSettings")(createSettings)
-    __obj.updateDynamic("getDefaultSettings")(getDefaultSettings)
-    __obj.updateDynamic("getEventsManager")(getEventsManager)
-    __obj.updateDynamic("getImageManager")(getImageManager)
-    __obj.updateDynamic("getSettings")(getSettings)
-    __obj.updateDynamic("getShortCutManager")(getShortCutManager)
-    __obj.updateDynamic("getUIElementsInfo")(getUIElementsInfo)
-    __obj.updateDynamic("hasSettings")(hasSettings)
-    __obj.updateDynamic("insertSettings")(insertSettings)
-    __obj.updateDynamic("isDefaultSettings")(isDefaultSettings)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("removeConfigurationListener")(removeConfigurationListener)
-    __obj.updateDynamic("removeSettings")(removeSettings)
-    __obj.updateDynamic("replaceSettings")(replaceSettings)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("storeToStorage")(storeToStorage)
+    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = acquire, addConfigurationListener = addConfigurationListener, createDefault = createDefault, createSettings = createSettings, getDefaultSettings = getDefaultSettings, getEventsManager = getEventsManager, getImageManager = getImageManager, getSettings = getSettings, getShortCutManager = getShortCutManager, getUIElementsInfo = getUIElementsInfo, hasSettings = hasSettings, insertSettings = insertSettings, isDefaultSettings = isDefaultSettings, isModified = isModified, isReadOnly = isReadOnly, queryInterface = queryInterface, release = release, reload = reload, removeConfigurationListener = removeConfigurationListener, removeSettings = removeSettings, replaceSettings = replaceSettings, reset = reset, store = store, storeToStorage = storeToStorage)
+  
     __obj.asInstanceOf[ModuleUIConfigurationManager]
   }
 }

@@ -24,11 +24,8 @@ object Layer {
     `type`: flowdocLib.flowdocLibStrings.LAYER | flowdocLib.flowdocLibStrings.HOTSPOT,
     connections: js.Array[Connection] = null
   ): Layer = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (connections != null) __obj.updateDynamic("connections")(connections)
     __obj.asInstanceOf[Layer]
   }

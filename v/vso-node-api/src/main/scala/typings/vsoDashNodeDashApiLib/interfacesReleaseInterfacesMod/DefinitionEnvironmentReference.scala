@@ -20,11 +20,8 @@ object DefinitionEnvironmentReference {
     releaseDefinitionId: scala.Double,
     releaseDefinitionName: java.lang.String
   ): DefinitionEnvironmentReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionEnvironmentId")(definitionEnvironmentId)
-    __obj.updateDynamic("definitionEnvironmentName")(definitionEnvironmentName)
-    __obj.updateDynamic("releaseDefinitionId")(releaseDefinitionId)
-    __obj.updateDynamic("releaseDefinitionName")(releaseDefinitionName)
+    val __obj = js.Dynamic.literal(definitionEnvironmentId = definitionEnvironmentId, definitionEnvironmentName = definitionEnvironmentName, releaseDefinitionId = releaseDefinitionId, releaseDefinitionName = releaseDefinitionName)
+  
     __obj.asInstanceOf[DefinitionEnvironmentReference]
   }
 }

@@ -30,16 +30,8 @@ object ListItem {
     setValueByIndex: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, java.lang.String, ListItem],
     setValueByName: js.Function2[java.lang.String, java.lang.String, ListItem]
   ): ListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteListItem")(deleteListItem)
-    __obj.updateDynamic("getDatePublished")(getDatePublished)
-    __obj.updateDynamic("getLastUpdated")(getLastUpdated)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
-    __obj.updateDynamic("getValueByName")(getValueByName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setValueByIndex")(setValueByIndex)
-    __obj.updateDynamic("setValueByName")(setValueByName)
+    val __obj = js.Dynamic.literal(deleteListItem = deleteListItem, getDatePublished = getDatePublished, getLastUpdated = getLastUpdated, getParent = getParent, getValueByIndex = getValueByIndex, getValueByName = getValueByName, setParent = setParent, setValueByIndex = setValueByIndex, setValueByName = setValueByName)
+  
     __obj.asInstanceOf[ListItem]
   }
 }

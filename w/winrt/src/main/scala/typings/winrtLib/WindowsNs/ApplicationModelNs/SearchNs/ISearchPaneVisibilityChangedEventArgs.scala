@@ -12,8 +12,8 @@ trait ISearchPaneVisibilityChangedEventArgs extends js.Object {
 object ISearchPaneVisibilityChangedEventArgs {
   @scala.inline
   def apply(visible: scala.Boolean): ISearchPaneVisibilityChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
+  
     __obj.asInstanceOf[ISearchPaneVisibilityChangedEventArgs]
   }
 }

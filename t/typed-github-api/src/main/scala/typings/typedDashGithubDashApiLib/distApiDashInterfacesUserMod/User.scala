@@ -56,36 +56,8 @@ object User {
     updated_at: stdLib.Date,
     url: java.lang.String
   ): User = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("bio")(bio)
-    __obj.updateDynamic("blog")(blog)
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("events_url")(events_url)
-    __obj.updateDynamic("followers")(followers)
-    __obj.updateDynamic("followers_url")(followers_url)
-    __obj.updateDynamic("following")(following)
-    __obj.updateDynamic("following_url")(following_url)
-    __obj.updateDynamic("gists_url")(gists_url)
-    __obj.updateDynamic("gravatar_id")(gravatar_id)
-    __obj.updateDynamic("hireable")(hireable)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("organizations_url")(organizations_url)
-    __obj.updateDynamic("public_gists")(public_gists)
-    __obj.updateDynamic("public_repos")(public_repos)
-    __obj.updateDynamic("received_events_url")(received_events_url)
-    __obj.updateDynamic("repos_url")(repos_url)
-    __obj.updateDynamic("site_admin")(site_admin)
-    __obj.updateDynamic("starred_url")(starred_url)
-    __obj.updateDynamic("subscriptions_url")(subscriptions_url)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, bio = bio, blog = blog, company = company, created_at = created_at, email = email, events_url = events_url, followers = followers, followers_url = followers_url, following = following, following_url = following_url, gists_url = gists_url, gravatar_id = gravatar_id, hireable = hireable, html_url = html_url, id = id, location = location, login = login, name = name, organizations_url = organizations_url, public_gists = public_gists, public_repos = public_repos, received_events_url = received_events_url, repos_url = repos_url, site_admin = site_admin, starred_url = starred_url, subscriptions_url = subscriptions_url, updated_at = updated_at, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[User]
   }
 }

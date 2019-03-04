@@ -13,9 +13,8 @@ trait ProximityData extends js.Object {
 object ProximityData {
   @scala.inline
   def apply(cm: scala.Double, in: scala.Double): ProximityData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cm")(cm)
-    __obj.updateDynamic("in")(in)
+    val __obj = js.Dynamic.literal(cm = cm, in = in)
+  
     __obj.asInstanceOf[ProximityData]
   }
 }

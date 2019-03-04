@@ -22,8 +22,7 @@ object Anon_AccessControlTranslation {
     replicaKmsKeyId: java.lang.String = null,
     storageClass: java.lang.String = null
   ): Anon_AccessControlTranslation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
+    val __obj = js.Dynamic.literal(bucket = bucket)
     if (accessControlTranslation != null) __obj.updateDynamic("accessControlTranslation")(accessControlTranslation)
     if (accountId != null) __obj.updateDynamic("accountId")(accountId)
     if (replicaKmsKeyId != null) __obj.updateDynamic("replicaKmsKeyId")(replicaKmsKeyId)

@@ -24,8 +24,8 @@ object Code {
     meta: java.lang.String = null,
     position: unistLib.unistMod.Position = null
   ): Code = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (meta != null) __obj.updateDynamic("meta")(meta)

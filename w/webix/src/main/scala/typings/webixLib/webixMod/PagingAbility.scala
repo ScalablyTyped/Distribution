@@ -18,10 +18,8 @@ object PagingAbility {
     getPager: js.Function0[js.Any],
     setPage: js.Function1[scala.Double, scala.Unit]
   ): PagingAbility = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPage")(getPage)
-    __obj.updateDynamic("getPager")(getPager)
-    __obj.updateDynamic("setPage")(setPage)
+    val __obj = js.Dynamic.literal(getPage = getPage, getPager = getPager, setPage = setPage)
+  
     __obj.asInstanceOf[PagingAbility]
   }
 }

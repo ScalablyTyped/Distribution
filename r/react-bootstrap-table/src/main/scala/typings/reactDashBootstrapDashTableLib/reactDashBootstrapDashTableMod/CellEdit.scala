@@ -91,8 +91,7 @@ object CellEdit {
     blurToSave: js.UndefOr[scala.Boolean] = js.undefined,
     nonEditableRows: js.Function0[js.Array[scala.Double | java.lang.String]] = null
   ): CellEdit[TRow] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (afterSaveCell != null) __obj.updateDynamic("afterSaveCell")(afterSaveCell)
     if (beforeSaveCell != null) __obj.updateDynamic("beforeSaveCell")(beforeSaveCell)
     if (!js.isUndefined(blurToEscape)) __obj.updateDynamic("blurToEscape")(blurToEscape)

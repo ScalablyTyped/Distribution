@@ -56,13 +56,7 @@ object FontOptions {
     weightClass: java.lang.String = null,
     widthClass: java.lang.String = null
   ): FontOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascender")(ascender)
-    __obj.updateDynamic("createdTimestamp")(createdTimestamp)
-    __obj.updateDynamic("descender")(descender)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("styleName")(styleName)
-    __obj.updateDynamic("unitsPerEm")(unitsPerEm)
+    val __obj = js.Dynamic.literal(ascender = ascender, createdTimestamp = createdTimestamp, descender = descender, familyName = familyName, styleName = styleName, unitsPerEm = unitsPerEm)
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (description != null) __obj.updateDynamic("description")(description)
     if (designer != null) __obj.updateDynamic("designer")(designer)

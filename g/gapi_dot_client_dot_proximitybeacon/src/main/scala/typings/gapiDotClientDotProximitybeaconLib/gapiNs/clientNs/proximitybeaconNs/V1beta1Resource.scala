@@ -26,8 +26,8 @@ object V1beta1Resource {
       gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
     ]
   ): V1beta1Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEidparams")(getEidparams)
+    val __obj = js.Dynamic.literal(getEidparams = getEidparams)
+  
     __obj.asInstanceOf[V1beta1Resource]
   }
 }

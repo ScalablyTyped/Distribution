@@ -47,12 +47,7 @@ object BackupDetails {
     BackupExpiryDateTime: _Date = null,
     BackupSizeBytes: js.UndefOr[BackupSizeBytes] = js.undefined
   ): BackupDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupArn")(BackupArn)
-    __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime)
-    __obj.updateDynamic("BackupName")(BackupName)
-    __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
-    __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BackupArn = BackupArn, BackupCreationDateTime = BackupCreationDateTime, BackupName = BackupName, BackupStatus = BackupStatus.asInstanceOf[js.Any], BackupType = BackupType.asInstanceOf[js.Any])
     if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime)
     if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes)
     __obj.asInstanceOf[BackupDetails]

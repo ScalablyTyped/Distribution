@@ -18,9 +18,7 @@ object Command {
     command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.moveto | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.lineto | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`horizontal lineto`) | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`vertical lineto`) | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.curveto | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`smooth curveto`) | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`quadratic curveto`) | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`smooth quadratic curveto`) | (svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`elliptical arc`) | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.closepath,
     relative: js.UndefOr[scala.Boolean] = js.undefined
   ): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
     if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[Command]
   }

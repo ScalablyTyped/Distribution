@@ -18,10 +18,8 @@ object Anon_AUTO {
     GROW: reactDashFoundationLib.enumsMod.SpaceControls,
     SHRINK: reactDashFoundationLib.enumsMod.SpaceControls
   ): Anon_AUTO = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUTO")(AUTO)
-    __obj.updateDynamic("GROW")(GROW)
-    __obj.updateDynamic("SHRINK")(SHRINK)
+    val __obj = js.Dynamic.literal(AUTO = AUTO, GROW = GROW, SHRINK = SHRINK)
+  
     __obj.asInstanceOf[Anon_AUTO]
   }
 }

@@ -42,13 +42,8 @@ object MDCTextFieldHelperTextAdapter {
     setAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setContent: js.Function1[java.lang.String, scala.Unit]
   ): MDCTextFieldHelperTextAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("removeAttr")(removeAttr)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setAttr")(setAttr)
-    __obj.updateDynamic("setContent")(setContent)
+    val __obj = js.Dynamic.literal(addClass = addClass, hasClass = hasClass, removeAttr = removeAttr, removeClass = removeClass, setAttr = setAttr, setContent = setContent)
+  
     __obj.asInstanceOf[MDCTextFieldHelperTextAdapter]
   }
 }

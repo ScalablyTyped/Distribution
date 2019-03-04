@@ -30,7 +30,8 @@ object ColumnSpec {
     unique: js.UndefOr[scala.Boolean] = js.undefined,
     unsigned: js.UndefOr[scala.Boolean] = js.undefined
   ): ColumnSpec = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)

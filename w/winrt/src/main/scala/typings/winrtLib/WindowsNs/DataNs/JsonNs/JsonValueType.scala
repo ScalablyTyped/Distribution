@@ -20,7 +20,7 @@ object JsonValueType extends js.Object {
     extends winrtLib.WindowsNs.DataNs.JsonNs.JsonValueType
   
   @js.native
-  sealed trait `null_`
+  sealed trait null_
     extends winrtLib.WindowsNs.DataNs.JsonNs.JsonValueType
   
   @js.native
@@ -37,7 +37,7 @@ object JsonValueType extends js.Object {
   
   val array: array with java.lang.String = js.native
   val boolean: boolean with java.lang.String = js.native
-  val `null_`: `null_` with java.lang.String = js.native
+  val null_ : null_ with java.lang.String = js.native
   val number: number with java.lang.String = js.native
   val `object`: `object` with java.lang.String = js.native
   val string: string with java.lang.String = js.native

@@ -48,13 +48,8 @@ object Frame {
     name: java.lang.String,
     traces: js.Array[scala.Double]
   ): Frame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseframe")(baseframe)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("traces")(traces)
+    val __obj = js.Dynamic.literal(baseframe = baseframe, data = data, group = group, layout = layout, name = name, traces = traces)
+  
     __obj.asInstanceOf[Frame]
   }
 }

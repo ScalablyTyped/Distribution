@@ -20,11 +20,8 @@ object Anon_CancelIsRefreshMap {
     Map: activexDashExcelLib.ExcelNs.XmlMap,
     Url: java.lang.String
   ): Anon_CancelIsRefreshMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("IsRefresh")(IsRefresh)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, IsRefresh = IsRefresh, Map = Map, Url = Url)
+  
     __obj.asInstanceOf[Anon_CancelIsRefreshMap]
   }
 }

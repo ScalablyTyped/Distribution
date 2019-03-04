@@ -16,9 +16,8 @@ object ErrorMessageEvent {
     description: java.lang.String,
     event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.error
   ): ErrorMessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(description = description, event = event)
+  
     __obj.asInstanceOf[ErrorMessageEvent]
   }
 }

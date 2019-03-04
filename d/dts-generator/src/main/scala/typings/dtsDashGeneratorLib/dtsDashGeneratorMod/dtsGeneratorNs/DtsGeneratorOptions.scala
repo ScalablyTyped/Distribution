@@ -80,9 +80,7 @@ object DtsGeneratorOptions {
     target: typescriptLib.typescriptMod.tsNs.ScriptTarget = null,
     types: js.Array[java.lang.String] = null
   ): DtsGeneratorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("out")(out)
+    val __obj = js.Dynamic.literal(name = name, out = out)
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
     if (eol != null) __obj.updateDynamic("eol")(eol)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)

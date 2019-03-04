@@ -14,8 +14,7 @@ trait PluginOptions extends js.Object {
 object PluginOptions {
   @scala.inline
   def apply(loaders: js.Any, id: java.lang.String = null, threads: scala.Int | scala.Double = null): PluginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loaders")(loaders)
+    val __obj = js.Dynamic.literal(loaders = loaders)
     if (id != null) __obj.updateDynamic("id")(id)
     if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]

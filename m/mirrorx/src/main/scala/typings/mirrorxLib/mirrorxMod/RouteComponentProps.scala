@@ -24,9 +24,8 @@ object RouteComponentProps {
     `match`: reactDashRouterLib.reactDashRouterMod.`match`[Params],
     staticContext: js.Any = null
   ): RouteComponentProps[Params] = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(history = history, location = location)
+    __obj.updateDynamic("match")(`match`)
     if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext)
     __obj.asInstanceOf[RouteComponentProps[Params]]
   }

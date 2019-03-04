@@ -20,10 +20,8 @@ object LoadOperation {
     source: java.lang.String,
     `type`: sparqljsLib.sparqljsLibStrings.load
   ): LoadOperation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent, source = source)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LoadOperation]
   }
 }

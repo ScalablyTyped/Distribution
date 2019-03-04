@@ -38,9 +38,7 @@ object Settings {
     suggestedDisplayName: java.lang.String = null,
     websiteUrl: java.lang.String = null
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentUrl")(contentUrl)
-    __obj.updateDynamic("entityId")(entityId)
+    val __obj = js.Dynamic.literal(contentUrl = contentUrl, entityId = entityId)
     if (removeUrl != null) __obj.updateDynamic("removeUrl")(removeUrl)
     if (suggestedDisplayName != null) __obj.updateDynamic("suggestedDisplayName")(suggestedDisplayName)
     if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)

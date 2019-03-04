@@ -30,10 +30,7 @@ trait SharePayload extends js.Object {
 object SharePayload {
   @scala.inline
   def apply(image: java.lang.String, intent: Intent, text: java.lang.String, data: js.Any = null): SharePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(image = image, intent = intent, text = text)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[SharePayload]
   }

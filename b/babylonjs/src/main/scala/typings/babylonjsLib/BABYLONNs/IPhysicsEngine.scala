@@ -115,22 +115,8 @@ object IPhysicsEngine {
     setGravity: js.Function1[Vector3, scala.Unit],
     setTimeStep: js.Function1[scala.Double, scala.Unit]
   ): IPhysicsEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_step")(_step)
-    __obj.updateDynamic("addImpostor")(addImpostor)
-    __obj.updateDynamic("addJoint")(addJoint)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getImpostorForPhysicsObject")(getImpostorForPhysicsObject)
-    __obj.updateDynamic("getImpostorWithPhysicsBody")(getImpostorWithPhysicsBody)
-    __obj.updateDynamic("getImpostors")(getImpostors)
-    __obj.updateDynamic("getPhysicsPlugin")(getPhysicsPlugin)
-    __obj.updateDynamic("getPhysicsPluginName")(getPhysicsPluginName)
-    __obj.updateDynamic("getTimeStep")(getTimeStep)
-    __obj.updateDynamic("gravity")(gravity)
-    __obj.updateDynamic("removeImpostor")(removeImpostor)
-    __obj.updateDynamic("removeJoint")(removeJoint)
-    __obj.updateDynamic("setGravity")(setGravity)
-    __obj.updateDynamic("setTimeStep")(setTimeStep)
+    val __obj = js.Dynamic.literal(_step = _step, addImpostor = addImpostor, addJoint = addJoint, dispose = dispose, getImpostorForPhysicsObject = getImpostorForPhysicsObject, getImpostorWithPhysicsBody = getImpostorWithPhysicsBody, getImpostors = getImpostors, getPhysicsPlugin = getPhysicsPlugin, getPhysicsPluginName = getPhysicsPluginName, getTimeStep = getTimeStep, gravity = gravity, removeImpostor = removeImpostor, removeJoint = removeJoint, setGravity = setGravity, setTimeStep = setTimeStep)
+  
     __obj.asInstanceOf[IPhysicsEngine]
   }
 }

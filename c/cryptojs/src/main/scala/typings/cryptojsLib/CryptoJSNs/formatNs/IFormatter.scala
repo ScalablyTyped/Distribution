@@ -16,9 +16,8 @@ object IFormatter {
     parse: js.Function1[java.lang.String, cryptojsLib.CryptoJSNs.libNs.CipherParams],
     stringify: js.Function1[cryptojsLib.CryptoJSNs.libNs.CipherParamsData, java.lang.String]
   ): IFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+  
     __obj.asInstanceOf[IFormatter]
   }
 }

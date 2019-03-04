@@ -62,35 +62,8 @@ object ErrorBar {
       scala.Unit
     ]
   ): ErrorBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSequences")(DataSequences)
-    __obj.updateDynamic("ErrorBarStyle")(ErrorBarStyle)
-    __obj.updateDynamic("LineCap")(LineCap)
-    __obj.updateDynamic("LineColor")(LineColor)
-    __obj.updateDynamic("LineDash")(LineDash)
-    __obj.updateDynamic("LineDashName")(LineDashName)
-    __obj.updateDynamic("LineEnd")(LineEnd)
-    __obj.updateDynamic("LineEndCenter")(LineEndCenter)
-    __obj.updateDynamic("LineEndName")(LineEndName)
-    __obj.updateDynamic("LineEndWidth")(LineEndWidth)
-    __obj.updateDynamic("LineJoint")(LineJoint)
-    __obj.updateDynamic("LineStart")(LineStart)
-    __obj.updateDynamic("LineStartCenter")(LineStartCenter)
-    __obj.updateDynamic("LineStartName")(LineStartName)
-    __obj.updateDynamic("LineStartWidth")(LineStartWidth)
-    __obj.updateDynamic("LineStyle")(LineStyle)
-    __obj.updateDynamic("LineTransparence")(LineTransparence)
-    __obj.updateDynamic("LineWidth")(LineWidth)
-    __obj.updateDynamic("NegativeError")(NegativeError)
-    __obj.updateDynamic("PositiveError")(PositiveError)
-    __obj.updateDynamic("ShowNegativeError")(ShowNegativeError)
-    __obj.updateDynamic("ShowPositiveError")(ShowPositiveError)
-    __obj.updateDynamic("Weight")(Weight)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataSequences")(getDataSequences)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setData")(setData)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, ErrorBarStyle = ErrorBarStyle, LineCap = LineCap, LineColor = LineColor, LineDash = LineDash, LineDashName = LineDashName, LineEnd = LineEnd, LineEndCenter = LineEndCenter, LineEndName = LineEndName, LineEndWidth = LineEndWidth, LineJoint = LineJoint, LineStart = LineStart, LineStartCenter = LineStartCenter, LineStartName = LineStartName, LineStartWidth = LineStartWidth, LineStyle = LineStyle, LineTransparence = LineTransparence, LineWidth = LineWidth, NegativeError = NegativeError, PositiveError = PositiveError, ShowNegativeError = ShowNegativeError, ShowPositiveError = ShowPositiveError, Weight = Weight, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release, setData = setData)
+  
     __obj.asInstanceOf[ErrorBar]
   }
 }

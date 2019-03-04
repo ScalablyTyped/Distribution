@@ -13,8 +13,8 @@ trait Anon_Stdev
 object Anon_Stdev {
   @scala.inline
   def apply(stdev: java.lang.String): Anon_Stdev = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stdev")(stdev)
+    val __obj = js.Dynamic.literal(stdev = stdev)
+  
     __obj.asInstanceOf[Anon_Stdev]
   }
 }

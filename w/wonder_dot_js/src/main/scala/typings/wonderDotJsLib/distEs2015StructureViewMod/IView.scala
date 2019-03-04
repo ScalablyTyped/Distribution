@@ -35,17 +35,8 @@ object IView {
     x: scala.Double,
     y: scala.Double
   ): IView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dom")(dom)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("initCanvas")(initCanvas)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("styleHeight")(styleHeight)
-    __obj.updateDynamic("styleWidth")(styleWidth)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(dom = dom, getContext = getContext, height = height, initCanvas = initCanvas, offset = offset, styleHeight = styleHeight, styleWidth = styleWidth, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[IView]
   }
 }

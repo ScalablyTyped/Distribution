@@ -18,10 +18,8 @@ object IVaultAutomaticMetadataOperations {
     GetAutomaticMetadataForTemporaryFile: js.Function1[scala.Double, IAutomaticMetadataResult],
     GetAutomaticMetadataForTemporaryFiles: js.Function1[IIDs, IAutomaticMetadataResult]
   ): IVaultAutomaticMetadataOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAutomaticMetadataForObject")(GetAutomaticMetadataForObject)
-    __obj.updateDynamic("GetAutomaticMetadataForTemporaryFile")(GetAutomaticMetadataForTemporaryFile)
-    __obj.updateDynamic("GetAutomaticMetadataForTemporaryFiles")(GetAutomaticMetadataForTemporaryFiles)
+    val __obj = js.Dynamic.literal(GetAutomaticMetadataForObject = GetAutomaticMetadataForObject, GetAutomaticMetadataForTemporaryFile = GetAutomaticMetadataForTemporaryFile, GetAutomaticMetadataForTemporaryFiles = GetAutomaticMetadataForTemporaryFiles)
+  
     __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
   }
 }

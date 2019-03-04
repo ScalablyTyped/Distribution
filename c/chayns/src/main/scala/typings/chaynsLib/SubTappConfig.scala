@@ -37,14 +37,7 @@ object SubTappConfig {
     isExclusiveView: js.UndefOr[scala.Boolean] = js.undefined,
     replaceParent: js.UndefOr[scala.Boolean] = js.undefined
   ): SubTappConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonName")(buttonName)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sortID")(sortID)
-    __obj.updateDynamic("tappID")(tappID)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(buttonName = buttonName, color = color, icon = icon, name = name, sortID = sortID, tappID = tappID, url = url)
     if (!js.isUndefined(boldText)) __obj.updateDynamic("boldText")(boldText)
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
     if (colorText != null) __obj.updateDynamic("colorText")(colorText)

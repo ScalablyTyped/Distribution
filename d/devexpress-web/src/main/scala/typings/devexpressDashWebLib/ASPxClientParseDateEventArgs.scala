@@ -29,10 +29,8 @@ trait ASPxClientParseDateEventArgs extends ASPxClientEventArgs {
 object ASPxClientParseDateEventArgs {
   @scala.inline
   def apply(date: stdLib.Date, handled: scala.Boolean, value: java.lang.String): ASPxClientParseDateEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(date = date, handled = handled, value = value)
+  
     __obj.asInstanceOf[ASPxClientParseDateEventArgs]
   }
 }

@@ -31,10 +31,8 @@ object CopyTableRowEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     SourceData: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet
   ): CopyTableRowEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("SourceData")(SourceData)
+    val __obj = js.Dynamic.literal(Error = Error, Source = Source, SourceData = SourceData)
+  
     __obj.asInstanceOf[CopyTableRowEvent]
   }
 }

@@ -70,21 +70,8 @@ object GetVpcEndpointResult {
     vpcEndpointType: java.lang.String,
     vpcId: java.lang.String
   ): GetVpcEndpointResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cidrBlocks")(cidrBlocks)
-    __obj.updateDynamic("dnsEntries")(dnsEntries)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("networkInterfaceIds")(networkInterfaceIds)
-    __obj.updateDynamic("policy")(policy)
-    __obj.updateDynamic("prefixListId")(prefixListId)
-    __obj.updateDynamic("privateDnsEnabled")(privateDnsEnabled)
-    __obj.updateDynamic("routeTableIds")(routeTableIds)
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("vpcEndpointType")(vpcEndpointType)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(cidrBlocks = cidrBlocks, dnsEntries = dnsEntries, id = id, networkInterfaceIds = networkInterfaceIds, policy = policy, prefixListId = prefixListId, privateDnsEnabled = privateDnsEnabled, routeTableIds = routeTableIds, securityGroupIds = securityGroupIds, serviceName = serviceName, state = state, subnetIds = subnetIds, vpcEndpointType = vpcEndpointType, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetVpcEndpointResult]
   }
 }

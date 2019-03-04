@@ -16,9 +16,8 @@ object Anon_DataResNormalSuccessResponse {
     data: aliDashOssLib.aliDashOssMod.OSSNs.PutChannelConf,
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
   ): Anon_DataResNormalSuccessResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(data = data, res = res)
+  
     __obj.asInstanceOf[Anon_DataResNormalSuccessResponse]
   }
 }

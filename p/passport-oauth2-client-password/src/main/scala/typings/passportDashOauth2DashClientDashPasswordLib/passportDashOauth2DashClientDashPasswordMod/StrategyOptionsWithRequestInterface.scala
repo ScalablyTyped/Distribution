@@ -12,8 +12,8 @@ trait StrategyOptionsWithRequestInterface extends js.Object {
 object StrategyOptionsWithRequestInterface {
   @scala.inline
   def apply(passReqToCallback: scala.Boolean): StrategyOptionsWithRequestInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
+  
     __obj.asInstanceOf[StrategyOptionsWithRequestInterface]
   }
 }

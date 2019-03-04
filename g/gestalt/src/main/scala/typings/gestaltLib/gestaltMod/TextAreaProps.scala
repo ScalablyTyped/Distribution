@@ -36,9 +36,7 @@ object TextAreaProps {
     rows: scala.Int | scala.Double = null,
     value: java.lang.String = null
   ): TextAreaProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])

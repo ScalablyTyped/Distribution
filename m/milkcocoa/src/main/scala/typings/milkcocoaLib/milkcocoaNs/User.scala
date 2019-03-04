@@ -13,9 +13,8 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(email: java.lang.String, id: java.lang.String): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(email = email, id = id)
+  
     __obj.asInstanceOf[User]
   }
 }

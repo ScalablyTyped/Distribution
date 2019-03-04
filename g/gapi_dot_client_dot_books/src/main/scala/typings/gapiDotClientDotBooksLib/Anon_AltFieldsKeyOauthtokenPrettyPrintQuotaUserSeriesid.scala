@@ -39,8 +39,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserSeriesid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("series_id")(series_id)
+    val __obj = js.Dynamic.literal(series_id = series_id)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

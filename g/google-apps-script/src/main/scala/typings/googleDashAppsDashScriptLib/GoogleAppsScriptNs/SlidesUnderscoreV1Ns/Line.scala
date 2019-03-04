@@ -15,9 +15,8 @@ trait Line extends js.Object {
 object Line {
   @scala.inline
   def apply(line_properties: LineProperties, line_type: LineType): Line = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("line_properties")(line_properties)
-    __obj.updateDynamic("line_type")(line_type)
+    val __obj = js.Dynamic.literal(line_properties = line_properties, line_type = line_type)
+  
     __obj.asInstanceOf[Line]
   }
 }

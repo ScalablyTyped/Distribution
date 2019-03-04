@@ -63,13 +63,8 @@ object TransferOperationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
     ]
   ): TransferOperationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("resume")(resume)
+    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, get = get, list = list, pause = pause, resume = resume)
+  
     __obj.asInstanceOf[TransferOperationsResource]
   }
 }

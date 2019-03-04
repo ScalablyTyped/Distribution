@@ -22,8 +22,7 @@ object NotifyOptions {
     title: java.lang.String = null,
     url: java.lang.String = null
   ): NotifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (target != null) __obj.updateDynamic("target")(target)
     if (title != null) __obj.updateDynamic("title")(title)

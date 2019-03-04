@@ -62,12 +62,8 @@ object PixelRatioStatic {
     roundToNearestPixel: js.Function1[scala.Double, scala.Double],
     startDetecting: js.Function0[scala.Unit]
   ): PixelRatioStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getFontScale")(getFontScale)
-    __obj.updateDynamic("getPixelSizeForLayoutSize")(getPixelSizeForLayoutSize)
-    __obj.updateDynamic("roundToNearestPixel")(roundToNearestPixel)
-    __obj.updateDynamic("startDetecting")(startDetecting)
+    val __obj = js.Dynamic.literal(get = get, getFontScale = getFontScale, getPixelSizeForLayoutSize = getPixelSizeForLayoutSize, roundToNearestPixel = roundToNearestPixel, startDetecting = startDetecting)
+  
     __obj.asInstanceOf[PixelRatioStatic]
   }
 }

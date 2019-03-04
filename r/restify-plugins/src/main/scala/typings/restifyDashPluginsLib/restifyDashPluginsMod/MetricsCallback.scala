@@ -28,12 +28,8 @@ object MetricsCallback {
     res: restifyLib.restifyMod.Response,
     route: restifyLib.restifyMod.Route
   ): MetricsCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("metrics")(metrics)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(err = err, metrics = metrics, req = req, res = res, route = route)
+  
     __obj.asInstanceOf[MetricsCallback]
   }
 }

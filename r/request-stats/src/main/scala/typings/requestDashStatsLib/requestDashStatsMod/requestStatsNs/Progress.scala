@@ -31,12 +31,8 @@ object Progress {
     time: scala.Double,
     timeDelta: scala.Double
   ): Progress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("timeDelta")(timeDelta)
+    val __obj = js.Dynamic.literal(completed = completed, req = req, res = res, time = time, timeDelta = timeDelta)
+  
     __obj.asInstanceOf[Progress]
   }
 }

@@ -11,8 +11,8 @@ trait ServerSend
 object ServerSend {
   @scala.inline
   def apply(annotationType: java.lang.String): ServerSend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
+    val __obj = js.Dynamic.literal(annotationType = annotationType)
+  
     __obj.asInstanceOf[ServerSend]
   }
 }

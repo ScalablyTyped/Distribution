@@ -13,9 +13,8 @@ trait IMaintenanceTrigger extends IBackgroundTrigger {
 object IMaintenanceTrigger {
   @scala.inline
   def apply(freshnessTime: scala.Double, oneShot: scala.Boolean): IMaintenanceTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("freshnessTime")(freshnessTime)
-    __obj.updateDynamic("oneShot")(oneShot)
+    val __obj = js.Dynamic.literal(freshnessTime = freshnessTime, oneShot = oneShot)
+  
     __obj.asInstanceOf[IMaintenanceTrigger]
   }
 }

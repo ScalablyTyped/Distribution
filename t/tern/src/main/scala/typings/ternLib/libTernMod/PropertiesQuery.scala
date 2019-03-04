@@ -24,7 +24,8 @@ object PropertiesQuery {
     prefix: java.lang.String = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined
   ): PropertiesQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
     if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

@@ -30,16 +30,8 @@ object TinderPerson {
     ping_time: java.lang.String,
     user_number: scala.Double
   ): TinderPerson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("badges")(badges)
-    __obj.updateDynamic("bio")(bio)
-    __obj.updateDynamic("birth_date")(birth_date)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("ping_time")(ping_time)
-    __obj.updateDynamic("user_number")(user_number)
+    val __obj = js.Dynamic.literal(_id = _id, badges = badges, bio = bio, birth_date = birth_date, gender = gender, name = name, photos = photos, ping_time = ping_time, user_number = user_number)
+  
     __obj.asInstanceOf[TinderPerson]
   }
 }

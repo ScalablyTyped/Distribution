@@ -24,13 +24,8 @@ object Anon_ColumnFilenameIsList {
     lineno: scala.Double,
     nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
   ): Anon_ColumnFilenameIsList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("isList")(isList)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, isList = isList, lineno = lineno, nodes = nodes)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameIsList]
   }
 }

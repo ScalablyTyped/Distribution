@@ -225,21 +225,8 @@ object IWebElement {
     ],
     submit: js.Function0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]]
   ): IWebElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getCssValue")(getCssValue)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getLocation")(getLocation)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("getTagName")(getTagName)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("isDisplayed")(isDisplayed)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isSelected")(isSelected)
-    __obj.updateDynamic("sendKeys")(sendKeys)
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(clear = clear, click = click, getAttribute = getAttribute, getCssValue = getCssValue, getId = getId, getLocation = getLocation, getSize = getSize, getTagName = getTagName, getText = getText, isDisplayed = isDisplayed, isEnabled = isEnabled, isSelected = isSelected, sendKeys = sendKeys, submit = submit)
+  
     __obj.asInstanceOf[IWebElement]
   }
 }

@@ -30,8 +30,7 @@ object TileJSONOptions {
     transition: scala.Int | scala.Double = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): TileJSONOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)

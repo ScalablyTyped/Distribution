@@ -20,11 +20,8 @@ object Anon_AllDay {
     event: TEvent,
     start: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.stringOrDate
   ): Anon_AllDay[TEvent] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allDay")(allDay)
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allDay = allDay, end = end.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AllDay[TEvent]]
   }
 }

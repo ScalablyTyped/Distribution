@@ -17,18 +17,18 @@ class Semaphore protected ()
   /**
     * @hidden
     */
-  var `hold_count_`: js.Any = js.native
+  var hold_count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `listeners_`: js.Any = js.native
+  var listeners_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `locked_count_`: js.Any = js.native
+  var locked_count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
 }
 

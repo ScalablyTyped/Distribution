@@ -28,8 +28,7 @@ object Anon_HeadersProxy {
     retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null
   ): Anon_HeadersProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)

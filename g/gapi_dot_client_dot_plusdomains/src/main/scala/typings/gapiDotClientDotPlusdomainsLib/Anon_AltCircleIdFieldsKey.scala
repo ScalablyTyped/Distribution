@@ -51,8 +51,7 @@ object Anon_AltCircleIdFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCircleIdFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circleId")(circleId)
+    val __obj = js.Dynamic.literal(circleId = circleId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

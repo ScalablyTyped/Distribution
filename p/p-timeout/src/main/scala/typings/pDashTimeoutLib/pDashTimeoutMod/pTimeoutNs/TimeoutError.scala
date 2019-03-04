@@ -18,9 +18,7 @@ object TimeoutError {
     name: pDashTimeoutLib.pDashTimeoutLibStrings.TimeoutError,
     stack: java.lang.String = null
   ): TimeoutError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[TimeoutError]
   }

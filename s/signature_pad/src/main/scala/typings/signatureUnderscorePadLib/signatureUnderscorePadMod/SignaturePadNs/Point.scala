@@ -24,12 +24,7 @@ object Point {
     y: scala.Double,
     color: java.lang.String = null
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distanceTo")(distanceTo)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("velocityFrom")(velocityFrom)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(distanceTo = distanceTo, time = time, velocityFrom = velocityFrom, x = x, y = y)
     if (color != null) __obj.updateDynamic("color")(color)
     __obj.asInstanceOf[Point]
   }

@@ -75,17 +75,8 @@ object ASPxClientWeekDays {
     WeekendDays: scala.Double,
     WorkDays: scala.Double
   ): ASPxClientWeekDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EveryDay")(EveryDay)
-    __obj.updateDynamic("Friday")(Friday)
-    __obj.updateDynamic("Monday")(Monday)
-    __obj.updateDynamic("Saturday")(Saturday)
-    __obj.updateDynamic("Sunday")(Sunday)
-    __obj.updateDynamic("Thursday")(Thursday)
-    __obj.updateDynamic("Tuesday")(Tuesday)
-    __obj.updateDynamic("Wednesday")(Wednesday)
-    __obj.updateDynamic("WeekendDays")(WeekendDays)
-    __obj.updateDynamic("WorkDays")(WorkDays)
+    val __obj = js.Dynamic.literal(EveryDay = EveryDay, Friday = Friday, Monday = Monday, Saturday = Saturday, Sunday = Sunday, Thursday = Thursday, Tuesday = Tuesday, Wednesday = Wednesday, WeekendDays = WeekendDays, WorkDays = WorkDays)
+  
     __obj.asInstanceOf[ASPxClientWeekDays]
   }
 }

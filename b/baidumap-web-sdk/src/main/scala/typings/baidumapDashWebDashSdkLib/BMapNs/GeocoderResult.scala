@@ -22,12 +22,8 @@ object GeocoderResult {
     point: Point,
     surroundingPoi: js.Array[LocalResultPoi]
   ): GeocoderResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("addressComponents")(addressComponents)
-    __obj.updateDynamic("business")(business)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("surroundingPoi")(surroundingPoi)
+    val __obj = js.Dynamic.literal(address = address, addressComponents = addressComponents, business = business, point = point, surroundingPoi = surroundingPoi)
+  
     __obj.asInstanceOf[GeocoderResult]
   }
 }

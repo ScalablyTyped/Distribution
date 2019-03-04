@@ -16,9 +16,8 @@ object Anon_DestinationArnFormat {
     destinationArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     format: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_DestinationArnFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationArn")(destinationArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DestinationArnFormat]
   }
 }

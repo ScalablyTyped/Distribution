@@ -34,9 +34,8 @@ object FilterDatetime {
     date: java.lang.String,
     specificity: FilterDatetimeSpecificity | officeDashJsLib.officeDashJsLibStrings.Year | officeDashJsLib.officeDashJsLibStrings.Month | officeDashJsLib.officeDashJsLibStrings.Day | officeDashJsLib.officeDashJsLibStrings.Hour | officeDashJsLib.officeDashJsLibStrings.Minute | officeDashJsLib.officeDashJsLibStrings.Second
   ): FilterDatetime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("specificity")(specificity.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(date = date, specificity = specificity.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FilterDatetime]
   }
 }

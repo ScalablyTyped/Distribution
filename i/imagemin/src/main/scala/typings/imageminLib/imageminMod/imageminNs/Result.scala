@@ -13,9 +13,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(data: nodeLib.Buffer, path: java.lang.String): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(data = data, path = path)
+  
     __obj.asInstanceOf[Result]
   }
 }

@@ -32,12 +32,8 @@ object XSheetFilterable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetFilterable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createFilterDescriptor")(createFilterDescriptor)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createFilterDescriptor = createFilterDescriptor, filter = filter, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetFilterable]
   }
 }

@@ -48,10 +48,7 @@ object Anon_AltConsistencyTokenFieldsKeyMilestoneId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyMilestoneId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("milestoneId")(milestoneId)
-    __obj.updateDynamic("questId")(questId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(milestoneId = milestoneId, questId = questId, requestId = requestId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

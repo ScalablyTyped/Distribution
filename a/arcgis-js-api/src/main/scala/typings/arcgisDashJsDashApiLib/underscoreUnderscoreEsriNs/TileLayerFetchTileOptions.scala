@@ -23,10 +23,7 @@ object TileLayerFetchTileOptions {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     timestamp: js.UndefOr[scala.Boolean] = js.undefined
   ): TileLayerFetchTileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp)
     __obj.asInstanceOf[TileLayerFetchTileOptions]
   }

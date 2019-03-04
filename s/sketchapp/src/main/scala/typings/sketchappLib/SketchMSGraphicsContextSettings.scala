@@ -20,10 +20,7 @@ object SketchMSGraphicsContextSettings {
     opacity: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSGraphicsContextSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("blendMode")(blendMode)
-    __obj.updateDynamic("opacity")(opacity)
+    val __obj = js.Dynamic.literal(_class = _class, blendMode = blendMode, opacity = opacity)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSGraphicsContextSettings]
   }

@@ -27,13 +27,8 @@ object Transaction {
     rollback: js.Function0[js.Promise[scala.Unit]],
     stats: js.Function0[TransactionStats]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(attach = attach, begin = begin, commit = commit, exec = exec, rollback = rollback, stats = stats)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

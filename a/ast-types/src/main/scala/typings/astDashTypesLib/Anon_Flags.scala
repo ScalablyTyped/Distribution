@@ -13,9 +13,8 @@ trait Anon_Flags extends js.Object {
 object Anon_Flags {
   @scala.inline
   def apply(flags: java.lang.String, pattern: java.lang.String): Anon_Flags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(flags = flags, pattern = pattern)
+  
     __obj.asInstanceOf[Anon_Flags]
   }
 }

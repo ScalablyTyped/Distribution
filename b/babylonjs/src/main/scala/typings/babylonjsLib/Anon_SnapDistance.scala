@@ -12,8 +12,8 @@ trait Anon_SnapDistance extends js.Object {
 object Anon_SnapDistance {
   @scala.inline
   def apply(snapDistance: scala.Double): Anon_SnapDistance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("snapDistance")(snapDistance)
+    val __obj = js.Dynamic.literal(snapDistance = snapDistance)
+  
     __obj.asInstanceOf[Anon_SnapDistance]
   }
 }

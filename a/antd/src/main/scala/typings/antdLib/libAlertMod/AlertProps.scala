@@ -52,8 +52,7 @@ object AlertProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     `type`: antdLib.antdLibStrings.success | antdLib.antdLibStrings.info | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error = null
   ): AlertProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
     if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner)
     if (className != null) __obj.updateDynamic("className")(className)

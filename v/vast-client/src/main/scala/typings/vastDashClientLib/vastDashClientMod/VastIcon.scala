@@ -42,13 +42,7 @@ object VastIcon {
     staticResource: java.lang.String = null,
     `type`: java.lang.String = null
   ): VastIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("iconClickTrackingURLTemplates")(iconClickTrackingURLTemplates)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("xPosition")(xPosition)
-    __obj.updateDynamic("yPosition")(yPosition)
+    val __obj = js.Dynamic.literal(duration = duration, height = height, iconClickTrackingURLTemplates = iconClickTrackingURLTemplates, width = width, xPosition = xPosition, yPosition = yPosition)
     if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
     if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource)
     if (iconClickThroughURLTemplate != null) __obj.updateDynamic("iconClickThroughURLTemplate")(iconClickThroughURLTemplate)

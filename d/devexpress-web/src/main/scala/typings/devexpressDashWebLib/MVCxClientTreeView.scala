@@ -51,38 +51,8 @@ object MVCxClientTreeView {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): MVCxClientTreeView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("CheckedChanged")(CheckedChanged)
-    __obj.updateDynamic("CollapseAll")(CollapseAll)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ExpandAll")(ExpandAll)
-    __obj.updateDynamic("ExpandedChanged")(ExpandedChanged)
-    __obj.updateDynamic("ExpandedChanging")(ExpandedChanging)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetNode")(GetNode)
-    __obj.updateDynamic("GetNodeByName")(GetNodeByName)
-    __obj.updateDynamic("GetNodeByText")(GetNodeByText)
-    __obj.updateDynamic("GetNodeCount")(GetNodeCount)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetRootNode")(GetRootNode)
-    __obj.updateDynamic("GetSelectedNode")(GetSelectedNode)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("NodeClick")(NodeClick)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetSelectedNode")(SetSelectedNode)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, BeginCallback = BeginCallback, CallbackError = CallbackError, CheckedChanged = CheckedChanged, CollapseAll = CollapseAll, EndCallback = EndCallback, ExpandAll = ExpandAll, ExpandedChanged = ExpandedChanged, ExpandedChanging = ExpandedChanging, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetNode = GetNode, GetNodeByName = GetNodeByName, GetNodeByText = GetNodeByText, GetNodeCount = GetNodeCount, GetParentControl = GetParentControl, GetRootNode = GetRootNode, GetSelectedNode = GetSelectedNode, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, NodeClick = NodeClick, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetSelectedNode = SetSelectedNode, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[MVCxClientTreeView]
   }
 }

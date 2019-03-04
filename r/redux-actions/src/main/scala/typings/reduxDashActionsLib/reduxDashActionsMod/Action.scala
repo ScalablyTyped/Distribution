@@ -13,7 +13,8 @@ trait Action[Payload] extends BaseAction {
 object Action {
   @scala.inline
   def apply[Payload](`type`: java.lang.String, error: js.UndefOr[scala.Boolean] = js.undefined, payload: Payload = null): Action[Payload] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action[Payload]]

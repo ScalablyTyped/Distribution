@@ -32,11 +32,8 @@ object _Impl {
     radio: java.lang.String,
     readOnly: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("radio")(radio)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(checked = checked, disabled = disabled, radio = radio, readOnly = readOnly)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

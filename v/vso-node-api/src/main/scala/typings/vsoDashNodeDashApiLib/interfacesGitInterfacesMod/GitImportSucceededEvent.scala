@@ -13,9 +13,8 @@ trait GitImportSucceededEvent extends js.Object {
 object GitImportSucceededEvent {
   @scala.inline
   def apply(sourceRepositoryName: java.lang.String, targetRepository: GitRepository): GitImportSucceededEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceRepositoryName")(sourceRepositoryName)
-    __obj.updateDynamic("targetRepository")(targetRepository)
+    val __obj = js.Dynamic.literal(sourceRepositoryName = sourceRepositoryName, targetRepository = targetRepository)
+  
     __obj.asInstanceOf[GitImportSucceededEvent]
   }
 }

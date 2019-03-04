@@ -16,9 +16,8 @@ object HeadersProcessor {
     composeRequest: js.Function1[Headers, scala.Unit],
     parseResponse: js.Function1[Headers, scala.Unit]
   ): HeadersProcessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("composeRequest")(composeRequest)
-    __obj.updateDynamic("parseResponse")(parseResponse)
+    val __obj = js.Dynamic.literal(composeRequest = composeRequest, parseResponse = parseResponse)
+  
     __obj.asInstanceOf[HeadersProcessor]
   }
 }

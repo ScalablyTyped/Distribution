@@ -12,8 +12,8 @@ trait Anon_GraphqlResponse extends js.Object {
 object Anon_GraphqlResponse {
   @scala.inline
   def apply(graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse): Anon_GraphqlResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graphqlResponse")(graphqlResponse)
+    val __obj = js.Dynamic.literal(graphqlResponse = graphqlResponse)
+  
     __obj.asInstanceOf[Anon_GraphqlResponse]
   }
 }

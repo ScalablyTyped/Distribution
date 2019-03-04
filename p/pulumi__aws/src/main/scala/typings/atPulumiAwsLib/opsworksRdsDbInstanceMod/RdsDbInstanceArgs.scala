@@ -32,11 +32,8 @@ object RdsDbInstanceArgs {
     rdsDbInstanceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     stackId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): RdsDbInstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dbPassword")(dbPassword.asInstanceOf[js.Any])
-    __obj.updateDynamic("dbUser")(dbUser.asInstanceOf[js.Any])
-    __obj.updateDynamic("rdsDbInstanceArn")(rdsDbInstanceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dbPassword = dbPassword.asInstanceOf[js.Any], dbUser = dbUser.asInstanceOf[js.Any], rdsDbInstanceArn = rdsDbInstanceArn.asInstanceOf[js.Any], stackId = stackId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RdsDbInstanceArgs]
   }
 }

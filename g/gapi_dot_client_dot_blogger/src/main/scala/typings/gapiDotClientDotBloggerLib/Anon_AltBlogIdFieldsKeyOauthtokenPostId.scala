@@ -42,9 +42,7 @@ object Anon_AltBlogIdFieldsKeyOauthtokenPostId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBlogIdFieldsKeyOauthtokenPostId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
-    __obj.updateDynamic("postId")(postId)
+    val __obj = js.Dynamic.literal(blogId = blogId, postId = postId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -33,8 +33,7 @@ object CameraData {
     yaw: scala.Int | scala.Double = null,
     zoom: scala.Int | scala.Double = null
   ): CameraData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
     if (fov != null) __obj.updateDynamic("fov")(fov.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
     if (roll != null) __obj.updateDynamic("roll")(roll.asInstanceOf[js.Any])

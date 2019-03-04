@@ -16,9 +16,8 @@ object Hasher {
     digest: js.Function1[OutputEncoding, java.lang.String],
     update: js.Function1[java.lang.String, scala.Unit]
   ): Hasher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(digest = digest, update = update)
+  
     __obj.asInstanceOf[Hasher]
   }
 }

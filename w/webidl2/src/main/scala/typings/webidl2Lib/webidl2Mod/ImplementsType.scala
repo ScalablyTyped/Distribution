@@ -23,10 +23,8 @@ object ImplementsType {
     target: java.lang.String,
     `type`: webidl2Lib.webidl2LibStrings.implements
   ): ImplementsType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("implements")(implements)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, implements = implements, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ImplementsType]
   }
 }

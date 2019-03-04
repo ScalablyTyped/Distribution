@@ -36,11 +36,8 @@ object ChatRoomStateUpdate {
     room: java.lang.String,
     state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType
   ): ChatRoomStateUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(from = from, resource = resource, room = room, state = state)
+  
     __obj.asInstanceOf[ChatRoomStateUpdate]
   }
 }

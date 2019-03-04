@@ -27,10 +27,8 @@ trait MessageRemoved
 object MessageRemoved {
   @scala.inline
   def apply(id: java.lang.String, message_id: java.lang.String, to: java.lang.String): MessageRemoved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(id = id, message_id = message_id, to = to)
+  
     __obj.asInstanceOf[MessageRemoved]
   }
 }

@@ -61,27 +61,8 @@ object XLibraryContainer2 {
     renameLibrary: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setLibraryReadOnly: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): XLibraryContainer2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createLibrary")(createLibrary)
-    __obj.updateDynamic("createLibraryLink")(createLibraryLink)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLibraryLinkURL")(getLibraryLinkURL)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("isLibraryLink")(isLibraryLink)
-    __obj.updateDynamic("isLibraryLoaded")(isLibraryLoaded)
-    __obj.updateDynamic("isLibraryReadOnly")(isLibraryReadOnly)
-    __obj.updateDynamic("loadLibrary")(loadLibrary)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLibrary")(removeLibrary)
-    __obj.updateDynamic("renameLibrary")(renameLibrary)
-    __obj.updateDynamic("setLibraryReadOnly")(setLibraryReadOnly)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, createLibrary = createLibrary, createLibraryLink = createLibraryLink, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLibraryLinkURL = getLibraryLinkURL, hasByName = hasByName, hasElements = hasElements, isLibraryLink = isLibraryLink, isLibraryLoaded = isLibraryLoaded, isLibraryReadOnly = isLibraryReadOnly, loadLibrary = loadLibrary, queryInterface = queryInterface, release = release, removeLibrary = removeLibrary, renameLibrary = renameLibrary, setLibraryReadOnly = setLibraryReadOnly)
+  
     __obj.asInstanceOf[XLibraryContainer2]
   }
 }

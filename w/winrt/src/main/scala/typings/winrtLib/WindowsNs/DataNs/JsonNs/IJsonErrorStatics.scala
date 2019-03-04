@@ -12,8 +12,8 @@ trait IJsonErrorStatics extends js.Object {
 object IJsonErrorStatics {
   @scala.inline
   def apply(getStatus: js.Function1[scala.Double, JsonErrorStatus]): IJsonErrorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  
     __obj.asInstanceOf[IJsonErrorStatics]
   }
 }

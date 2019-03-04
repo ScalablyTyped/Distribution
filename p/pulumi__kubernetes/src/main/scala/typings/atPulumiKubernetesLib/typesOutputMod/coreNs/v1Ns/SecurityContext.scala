@@ -81,16 +81,8 @@ object SecurityContext {
     runAsUser: scala.Double,
     seLinuxOptions: SELinuxOptions
   ): SecurityContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPrivilegeEscalation")(allowPrivilegeEscalation)
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("privileged")(privileged)
-    __obj.updateDynamic("procMount")(procMount)
-    __obj.updateDynamic("readOnlyRootFilesystem")(readOnlyRootFilesystem)
-    __obj.updateDynamic("runAsGroup")(runAsGroup)
-    __obj.updateDynamic("runAsNonRoot")(runAsNonRoot)
-    __obj.updateDynamic("runAsUser")(runAsUser)
-    __obj.updateDynamic("seLinuxOptions")(seLinuxOptions)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, capabilities = capabilities, privileged = privileged, procMount = procMount, readOnlyRootFilesystem = readOnlyRootFilesystem, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions)
+  
     __obj.asInstanceOf[SecurityContext]
   }
 }

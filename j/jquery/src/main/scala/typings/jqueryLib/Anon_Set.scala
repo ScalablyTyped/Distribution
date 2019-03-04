@@ -17,8 +17,8 @@ trait Anon_Set[TElement]
 object Anon_Set {
   @scala.inline
   def apply[TElement](set: js.Function1[jqueryLib.JQueryNs.Tween[TElement], scala.Unit]): Anon_Set[TElement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(set = set)
+  
     __obj.asInstanceOf[Anon_Set[TElement]]
   }
 }

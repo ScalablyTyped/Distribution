@@ -20,9 +20,7 @@ object ParameterObject {
     description: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined
   ): ParameterObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(in = in, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
     __obj.asInstanceOf[ParameterObject]

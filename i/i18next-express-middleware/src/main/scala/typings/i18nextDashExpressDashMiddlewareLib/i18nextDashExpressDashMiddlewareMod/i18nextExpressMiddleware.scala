@@ -16,9 +16,8 @@ object i18nextExpressMiddleware {
     LanguageDetector: js.Function0[expressLib.expressMod.eNs.Handler],
     missingKeyHandler: js.Function0[expressLib.expressMod.eNs.Handler]
   ): i18nextExpressMiddleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LanguageDetector")(LanguageDetector)
-    __obj.updateDynamic("missingKeyHandler")(missingKeyHandler)
+    val __obj = js.Dynamic.literal(LanguageDetector = LanguageDetector, missingKeyHandler = missingKeyHandler)
+  
     __obj.asInstanceOf[i18nextExpressMiddleware]
   }
 }

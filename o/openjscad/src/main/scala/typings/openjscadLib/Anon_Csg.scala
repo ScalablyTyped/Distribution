@@ -16,9 +16,8 @@ object Anon_Csg {
     fromCSG: js.Function2[CSG, js.Any, Anon_BoundLen],
     getGeometryVertex: js.Function2[js.Any, js.Any, scala.Double]
   ): Anon_Csg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromCSG")(fromCSG)
-    __obj.updateDynamic("getGeometryVertex")(getGeometryVertex)
+    val __obj = js.Dynamic.literal(fromCSG = fromCSG, getGeometryVertex = getGeometryVertex)
+  
     __obj.asInstanceOf[Anon_Csg]
   }
 }

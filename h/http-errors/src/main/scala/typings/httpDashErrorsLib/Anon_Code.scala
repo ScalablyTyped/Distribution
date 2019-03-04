@@ -16,8 +16,7 @@ object Anon_Code {
     HttpError: httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.HttpErrorConstructor,
     StringDictionary: /* code */ org.scalablytyped.runtime.StringDictionary[httpDashErrorsLib.httpDashErrorsMod.createHttpErrorNs.HttpErrorConstructor] = null
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HttpError")(HttpError)
+    val __obj = js.Dynamic.literal(HttpError = HttpError)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Code]
   }

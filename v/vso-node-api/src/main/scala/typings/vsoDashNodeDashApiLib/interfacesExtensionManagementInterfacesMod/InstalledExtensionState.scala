@@ -27,10 +27,8 @@ object InstalledExtensionState {
     installationIssues: js.Array[InstalledExtensionStateIssue],
     lastUpdated: stdLib.Date
   ): InstalledExtensionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("installationIssues")(installationIssues)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
+    val __obj = js.Dynamic.literal(flags = flags, installationIssues = installationIssues, lastUpdated = lastUpdated)
+  
     __obj.asInstanceOf[InstalledExtensionState]
   }
 }

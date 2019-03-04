@@ -51,8 +51,7 @@ object Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdOauthtoken {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyLanguageMatchIdOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchId")(matchId)
+    val __obj = js.Dynamic.literal(matchId = matchId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -25,11 +25,8 @@ object Bullet {
     list_id: java.lang.String,
     nesting_level: scala.Double
   ): Bullet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bullet_style")(bullet_style)
-    __obj.updateDynamic("glyph")(glyph)
-    __obj.updateDynamic("list_id")(list_id)
-    __obj.updateDynamic("nesting_level")(nesting_level)
+    val __obj = js.Dynamic.literal(bullet_style = bullet_style, glyph = glyph, list_id = list_id, nesting_level = nesting_level)
+  
     __obj.asInstanceOf[Bullet]
   }
 }

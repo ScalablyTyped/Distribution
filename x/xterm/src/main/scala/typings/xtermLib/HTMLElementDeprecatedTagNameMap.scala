@@ -13,9 +13,8 @@ trait HTMLElementDeprecatedTagNameMap extends js.Object {
 object HTMLElementDeprecatedTagNameMap {
   @scala.inline
   def apply(listing: HTMLPreElement, xmp: HTMLPreElement): HTMLElementDeprecatedTagNameMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listing")(listing)
-    __obj.updateDynamic("xmp")(xmp)
+    val __obj = js.Dynamic.literal(listing = listing, xmp = xmp)
+  
     __obj.asInstanceOf[HTMLElementDeprecatedTagNameMap]
   }
 }

@@ -36,8 +36,7 @@ object CreateTemplate {
     options: CreateTemplateOptions = null,
     published: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)

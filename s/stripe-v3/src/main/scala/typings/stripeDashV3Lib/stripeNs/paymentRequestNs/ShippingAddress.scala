@@ -30,14 +30,7 @@ object ShippingAddress {
     dependentLocality: java.lang.String = null,
     sortingCode: java.lang.String = null
   ): ShippingAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressLine")(addressLine)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(addressLine = addressLine, city = city, country = country, phone = phone, postalCode = postalCode, recipient = recipient, region = region)
     if (dependentLocality != null) __obj.updateDynamic("dependentLocality")(dependentLocality)
     if (sortingCode != null) __obj.updateDynamic("sortingCode")(sortingCode)
     __obj.asInstanceOf[ShippingAddress]

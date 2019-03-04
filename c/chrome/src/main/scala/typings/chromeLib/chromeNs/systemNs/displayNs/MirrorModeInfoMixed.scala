@@ -20,8 +20,7 @@ object MirrorModeInfoMixed {
     mirroringDestinationIds: js.Array[java.lang.String] = null,
     mirroringSourceId: java.lang.String = null
   ): MirrorModeInfoMixed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (mirroringDestinationIds != null) __obj.updateDynamic("mirroringDestinationIds")(mirroringDestinationIds)
     if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
     __obj.asInstanceOf[MirrorModeInfoMixed]

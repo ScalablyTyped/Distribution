@@ -62,15 +62,8 @@ object DeploymentStatus {
     unavailableReplicas: scala.Double,
     updatedReplicas: scala.Double
   ): DeploymentStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availableReplicas")(availableReplicas)
-    __obj.updateDynamic("collisionCount")(collisionCount)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
-    __obj.updateDynamic("readyReplicas")(readyReplicas)
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("unavailableReplicas")(unavailableReplicas)
-    __obj.updateDynamic("updatedReplicas")(updatedReplicas)
+    val __obj = js.Dynamic.literal(availableReplicas = availableReplicas, collisionCount = collisionCount, conditions = conditions, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas, unavailableReplicas = unavailableReplicas, updatedReplicas = updatedReplicas)
+  
     __obj.asInstanceOf[DeploymentStatus]
   }
 }

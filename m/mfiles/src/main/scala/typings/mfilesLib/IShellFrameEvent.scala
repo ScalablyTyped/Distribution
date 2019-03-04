@@ -48,9 +48,7 @@ object IShellFrameEvent {
     OnStarted: js.Function0[scala.Unit] = null,
     OnStop: js.Function0[scala.Unit] = null
   ): IShellFrameEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnActiveListingChanged != null) __obj.updateDynamic("OnActiveListingChanged")(OnActiveListingChanged)
     if (OnNewBottomPane != null) __obj.updateDynamic("OnNewBottomPane")(OnNewBottomPane)
     if (OnNewCommands != null) __obj.updateDynamic("OnNewCommands")(OnNewCommands)

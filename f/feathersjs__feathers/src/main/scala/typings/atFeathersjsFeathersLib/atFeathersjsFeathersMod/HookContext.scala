@@ -89,12 +89,8 @@ object HookContext {
     result: T = null,
     statusCode: scala.Int | scala.Double = null
   ): HookContext[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(app = app, method = method, params = params, path = path, service = service)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)

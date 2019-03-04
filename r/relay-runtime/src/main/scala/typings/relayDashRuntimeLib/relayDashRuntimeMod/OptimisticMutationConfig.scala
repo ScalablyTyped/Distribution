@@ -22,9 +22,7 @@ object OptimisticMutationConfig {
     optimisticResponse: js.Object = null,
     optimisticUpdater: SelectorStoreUpdater[_] = null
   ): OptimisticMutationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables)
     if (configs != null) __obj.updateDynamic("configs")(configs)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
     if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(optimisticUpdater)

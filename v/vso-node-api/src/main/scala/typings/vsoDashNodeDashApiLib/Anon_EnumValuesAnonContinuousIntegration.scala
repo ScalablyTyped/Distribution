@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonContinuousIntegration extends js.Object {
 object Anon_EnumValuesAnonContinuousIntegration {
   @scala.inline
   def apply(enumValues: Anon_ContinuousIntegration): Anon_EnumValuesAnonContinuousIntegration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonContinuousIntegration]
   }
 }

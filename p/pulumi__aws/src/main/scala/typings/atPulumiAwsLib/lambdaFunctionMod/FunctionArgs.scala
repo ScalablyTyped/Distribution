@@ -120,10 +120,7 @@ object FunctionArgs {
     tracingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ModeInput] = null,
     vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput] = null
   ): FunctionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (deadLetterConfig != null) __obj.updateDynamic("deadLetterConfig")(deadLetterConfig.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

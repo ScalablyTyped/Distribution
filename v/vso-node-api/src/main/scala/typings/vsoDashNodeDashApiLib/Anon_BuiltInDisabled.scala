@@ -38,20 +38,8 @@ object Anon_BuiltInDisabled {
     unpublished: scala.Double,
     validated: scala.Double
   ): Anon_BuiltInDisabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("builtIn")(builtIn)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("locked")(locked)
-    __obj.updateDynamic("multiVersion")(multiVersion)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("paid")(paid)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("trial")(trial)
-    __obj.updateDynamic("trusted")(trusted)
-    __obj.updateDynamic("unpublished")(unpublished)
-    __obj.updateDynamic("validated")(validated)
+    val __obj = js.Dynamic.literal(builtIn = builtIn, disabled = disabled, locked = locked, multiVersion = multiVersion, none = none, paid = paid, preview = preview, public = public, system = system, trial = trial, trusted = trusted, unpublished = unpublished, validated = validated)
+  
     __obj.asInstanceOf[Anon_BuiltInDisabled]
   }
 }

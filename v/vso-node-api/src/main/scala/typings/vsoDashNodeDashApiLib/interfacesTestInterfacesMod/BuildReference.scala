@@ -26,14 +26,8 @@ object BuildReference {
     repositoryId: java.lang.String,
     uri: java.lang.String
   ): BuildReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchName")(branchName)
-    __obj.updateDynamic("buildSystem")(buildSystem)
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(branchName = branchName, buildSystem = buildSystem, definitionId = definitionId, id = id, number = number, repositoryId = repositoryId, uri = uri)
+  
     __obj.asInstanceOf[BuildReference]
   }
 }

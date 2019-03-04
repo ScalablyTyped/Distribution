@@ -22,9 +22,8 @@ trait CustomResourceSubresources extends js.Object {
 object CustomResourceSubresources {
   @scala.inline
   def apply(scale: CustomResourceSubresourceScale, status: js.Any): CustomResourceSubresources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(scale = scale, status = status)
+  
     __obj.asInstanceOf[CustomResourceSubresources]
   }
 }

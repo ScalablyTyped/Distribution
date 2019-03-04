@@ -13,8 +13,8 @@ trait Object
 object Object {
   @scala.inline
   def apply(define: js.Function1[normalizrLib.normalizrMod.Schema, scala.Unit]): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("define")(define)
+    val __obj = js.Dynamic.literal(define = define)
+  
     __obj.asInstanceOf[Object]
   }
 }

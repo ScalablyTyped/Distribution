@@ -14,8 +14,7 @@ trait AuthenticationClientOptions extends js.Object {
 object AuthenticationClientOptions {
   @scala.inline
   def apply(domain: java.lang.String, clientId: java.lang.String = null, clientSecret: java.lang.String = null): AuthenticationClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
     __obj.asInstanceOf[AuthenticationClientOptions]

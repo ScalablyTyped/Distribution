@@ -13,9 +13,8 @@ trait Anon_BoundingBox extends js.Object {
 object Anon_BoundingBox {
   @scala.inline
   def apply(boundingBox: java.lang.String, text: java.lang.String): Anon_BoundingBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingBox")(boundingBox)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(boundingBox = boundingBox, text = text)
+  
     __obj.asInstanceOf[Anon_BoundingBox]
   }
 }

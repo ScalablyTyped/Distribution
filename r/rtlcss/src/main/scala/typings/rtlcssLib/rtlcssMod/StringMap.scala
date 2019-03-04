@@ -24,12 +24,7 @@ object StringMap {
     search: java.lang.String | js.Array[java.lang.String],
     exclusive: js.UndefOr[scala.Boolean] = js.undefined
   ): StringMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, options = options, priority = priority, replace = replace.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
     __obj.asInstanceOf[StringMap]
   }

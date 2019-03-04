@@ -99,16 +99,8 @@ object IGenericBookmark {
     setProperties: js.Function1[IGenericBookmarkProperties, js.Promise[scala.Unit]],
     unPublish: js.Function0[js.Promise[scala.Unit]]
   ): IGenericBookmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("applyPatches")(applyPatches)
-    __obj.updateDynamic("getFieldValues")(getFieldValues)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getLayout")(getLayout)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("setProperties")(setProperties)
-    __obj.updateDynamic("unPublish")(unPublish)
+    val __obj = js.Dynamic.literal(apply = apply, applyPatches = applyPatches, getFieldValues = getFieldValues, getInfo = getInfo, getLayout = getLayout, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+  
     __obj.asInstanceOf[IGenericBookmark]
   }
 }

@@ -13,8 +13,7 @@ trait WebcamState extends js.Object {
 object WebcamState {
   @scala.inline
   def apply(hasUserMedia: scala.Boolean, src: java.lang.String = null): WebcamState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasUserMedia")(hasUserMedia)
+    val __obj = js.Dynamic.literal(hasUserMedia = hasUserMedia)
     if (src != null) __obj.updateDynamic("src")(src)
     __obj.asInstanceOf[WebcamState]
   }

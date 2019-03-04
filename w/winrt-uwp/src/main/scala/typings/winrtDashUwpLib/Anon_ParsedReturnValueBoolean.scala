@@ -16,9 +16,8 @@ object Anon_ParsedReturnValueBoolean {
     parsed: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbInterfaceDescriptor,
     returnValue: scala.Boolean
   ): Anon_ParsedReturnValueBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parsed")(parsed)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(parsed = parsed, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ParsedReturnValueBoolean]
   }
 }

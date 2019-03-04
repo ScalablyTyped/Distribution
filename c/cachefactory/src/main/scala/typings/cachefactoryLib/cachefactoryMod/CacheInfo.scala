@@ -28,9 +28,7 @@ object CacheInfo {
     storeOnReject: js.UndefOr[scala.Boolean] = js.undefined,
     storeOnResolve: js.UndefOr[scala.Boolean] = js.undefined
   ): CacheInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(id = id, size = size)
     if (cacheFlushInterval != null) __obj.updateDynamic("cacheFlushInterval")(cacheFlushInterval.asInstanceOf[js.Any])
     if (capacity != null) __obj.updateDynamic("capacity")(capacity.asInstanceOf[js.Any])
     if (deleteOnExpire != null) __obj.updateDynamic("deleteOnExpire")(deleteOnExpire)

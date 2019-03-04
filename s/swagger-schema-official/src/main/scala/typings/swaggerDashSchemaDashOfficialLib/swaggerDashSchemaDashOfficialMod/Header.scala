@@ -34,7 +34,8 @@ object Header {
     title: java.lang.String = null,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): Header = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)

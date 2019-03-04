@@ -13,7 +13,7 @@ trait LodashOverArgs extends js.Object {
     transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
   ): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply(
-    func: lodashLib.lodashMod.underscoreNs.`__`,
+    func: lodashLib.lodashMod.underscoreNs.__,
     transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
   ): LodashOverArgs1x2 = js.native
 }

@@ -78,17 +78,8 @@ object SubscriptionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
     ]
   ): SubscriptionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("changePlan")(changePlan)
-    __obj.updateDynamic("changeRenewalSettings")(changeRenewalSettings)
-    __obj.updateDynamic("changeSeats")(changeSeats)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("startPaidService")(startPaidService)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(activate = activate, changePlan = changePlan, changeRenewalSettings = changeRenewalSettings, changeSeats = changeSeats, delete = delete, get = get, insert = insert, list = list, startPaidService = startPaidService, suspend = suspend)
+  
     __obj.asInstanceOf[SubscriptionsResource]
   }
 }

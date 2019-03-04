@@ -49,23 +49,7 @@ object ojPictoChartItemSettableProperties {
     svgStyle: js.Object,
     shape: atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | java.lang.String = null
   ): ojPictoChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("columnSpan")(columnSpan)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rowSpan")(rowSpan)
-    __obj.updateDynamic("shortDesc")(shortDesc)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceHover")(sourceHover)
-    __obj.updateDynamic("sourceHoverSelected")(sourceHoverSelected)
-    __obj.updateDynamic("sourceSelected")(sourceSelected)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, categories = categories, color = color, columnSpan = columnSpan, count = count, drilling = drilling.asInstanceOf[js.Any], name = name, rowSpan = rowSpan, shortDesc = shortDesc, source = source, sourceHover = sourceHover, sourceHoverSelected = sourceHoverSelected, sourceSelected = sourceSelected, svgClassName = svgClassName, svgStyle = svgStyle)
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojPictoChartItemSettableProperties]
   }

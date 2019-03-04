@@ -32,10 +32,8 @@ object ApplicativeComposition3C1 {
       fpDashTsLib.libHKTMod.Type3[F, UF, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]
     ]
   ): ApplicativeComposition3C1[F, G, UF, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, map = map, of = of)
+  
     __obj.asInstanceOf[ApplicativeComposition3C1[F, G, UF, LF]]
   }
 }

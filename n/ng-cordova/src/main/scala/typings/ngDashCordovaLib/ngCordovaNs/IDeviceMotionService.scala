@@ -18,10 +18,8 @@ object IDeviceMotionService {
     getCurrentAcceleration: js.Function0[angularLib.angularMod.angularNs.IPromise[IDeviceMotionAcceleration]],
     watchAcceleration: js.Function1[IDeviceMotionAccelerometerOptions, IDeviceMotionWatchPromise]
   ): IDeviceMotionService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearWatch")(clearWatch)
-    __obj.updateDynamic("getCurrentAcceleration")(getCurrentAcceleration)
-    __obj.updateDynamic("watchAcceleration")(watchAcceleration)
+    val __obj = js.Dynamic.literal(clearWatch = clearWatch, getCurrentAcceleration = getCurrentAcceleration, watchAcceleration = watchAcceleration)
+  
     __obj.asInstanceOf[IDeviceMotionService]
   }
 }

@@ -16,9 +16,8 @@ trait StringPair extends js.Object {
 object StringPair {
   @scala.inline
   def apply(First: java.lang.String, Second: java.lang.String): StringPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("First")(First)
-    __obj.updateDynamic("Second")(Second)
+    val __obj = js.Dynamic.literal(First = First, Second = Second)
+  
     __obj.asInstanceOf[StringPair]
   }
 }

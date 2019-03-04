@@ -21,8 +21,7 @@ object RequestUrlAndHeaderInfo {
     url: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): RequestUrlAndHeaderInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[RequestUrlAndHeaderInfo]
   }

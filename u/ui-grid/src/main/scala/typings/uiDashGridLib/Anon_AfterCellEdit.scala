@@ -54,10 +54,8 @@ object Anon_AfterCellEdit {
       scala.Unit
     ]
   ): Anon_AfterCellEdit[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterCellEdit")(afterCellEdit)
-    __obj.updateDynamic("beginCellEdit")(beginCellEdit)
-    __obj.updateDynamic("cancelCellEdit")(cancelCellEdit)
+    val __obj = js.Dynamic.literal(afterCellEdit = afterCellEdit, beginCellEdit = beginCellEdit, cancelCellEdit = cancelCellEdit)
+  
     __obj.asInstanceOf[Anon_AfterCellEdit[TEntity]]
   }
 }

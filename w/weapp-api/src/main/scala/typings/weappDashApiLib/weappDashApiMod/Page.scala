@@ -20,8 +20,8 @@ trait Page extends js.Object {
 object Page {
   @scala.inline
   def apply(setData: js.Function1[js.Any, scala.Unit]): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setData")(setData)
+    val __obj = js.Dynamic.literal(setData = setData)
+  
     __obj.asInstanceOf[Page]
   }
 }

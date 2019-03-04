@@ -28,8 +28,7 @@ object GraphQLOptions {
     rootValue: js.Object = null,
     validationRules: js.Array[_] = null
   ): GraphQLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
     if (formatError != null) __obj.updateDynamic("formatError")(formatError)
     if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)

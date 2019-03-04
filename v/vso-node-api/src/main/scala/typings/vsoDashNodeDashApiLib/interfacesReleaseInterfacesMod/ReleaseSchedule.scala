@@ -37,12 +37,8 @@ object ReleaseSchedule {
     startMinutes: scala.Double,
     timeZoneId: java.lang.String
   ): ReleaseSchedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("daysToRelease")(daysToRelease)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("startHours")(startHours)
-    __obj.updateDynamic("startMinutes")(startMinutes)
-    __obj.updateDynamic("timeZoneId")(timeZoneId)
+    val __obj = js.Dynamic.literal(daysToRelease = daysToRelease, jobId = jobId, startHours = startHours, startMinutes = startMinutes, timeZoneId = timeZoneId)
+  
     __obj.asInstanceOf[ReleaseSchedule]
   }
 }

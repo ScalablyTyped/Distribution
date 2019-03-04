@@ -43,13 +43,8 @@ object Anon_Center {
     visible: scala.Boolean,
     xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right
   ): Anon_Center = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("suffix")(suffix)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(font = font, offset = offset, prefix = prefix, suffix = suffix, visible = visible, xanchor = xanchor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Center]
   }
 }

@@ -26,8 +26,9 @@ object WatchEvent {
     `object`: atPulumiKubernetesLib.typesOutputMod.pkgNs.runtimeNs.RawExtension,
     `type`: java.lang.String
   ): WatchEvent = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WatchEvent]
   }
 }

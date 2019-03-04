@@ -18,8 +18,7 @@ trait RTCRtpParameters extends js.Object {
 object RTCRtpParameters {
   @scala.inline
   def apply(transactionId: java.lang.String, degradationPreference: stdLib.RTCDegradationPreference = null): RTCRtpParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transactionId")(transactionId)
+    val __obj = js.Dynamic.literal(transactionId = transactionId)
     if (degradationPreference != null) __obj.updateDynamic("degradationPreference")(degradationPreference)
     __obj.asInstanceOf[RTCRtpParameters]
   }

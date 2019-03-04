@@ -19,8 +19,7 @@ object PushSignal {
     on: js.Array[vegaDashTypingsLib.typesSpecOnDashEventsMod.OnEvent] = null,
     push: vegaDashTypingsLib.vegaDashTypingsLibStrings.outer = null
   ): PushSignal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (on != null) __obj.updateDynamic("on")(on)
     if (push != null) __obj.updateDynamic("push")(push)

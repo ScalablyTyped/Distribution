@@ -109,8 +109,7 @@ object TableCardHeaderProps {
     transitionLeaveTimeout: scala.Int | scala.Double = null,
     transitionName: java.lang.String = null
   ): TableCardHeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

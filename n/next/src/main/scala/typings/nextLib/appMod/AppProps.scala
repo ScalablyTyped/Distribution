@@ -16,9 +16,8 @@ object AppProps {
     Component: nextLib.nextMod.nextNs.NextComponentType[_, _, nextLib.nextMod.nextNs.NextContext[Q]],
     router: nextDashServerLib.routerMod.RouterProps[Q]
   ): AppProps[Q] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], router = router)
+  
     __obj.asInstanceOf[AppProps[Q]]
   }
 }

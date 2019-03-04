@@ -47,11 +47,8 @@ object XLPivot {
     deletePivotTable: js.Function1[java.lang.String, scala.Unit],
     refreshDataSource: js.Function2[java.lang.String, scala.Double, scala.Unit]
   ): XLPivot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearPivotFieldList")(clearPivotFieldList)
-    __obj.updateDynamic("createPivotTable")(createPivotTable)
-    __obj.updateDynamic("deletePivotTable")(deletePivotTable)
-    __obj.updateDynamic("refreshDataSource")(refreshDataSource)
+    val __obj = js.Dynamic.literal(clearPivotFieldList = clearPivotFieldList, createPivotTable = createPivotTable, deletePivotTable = deletePivotTable, refreshDataSource = refreshDataSource)
+  
     __obj.asInstanceOf[XLPivot]
   }
 }

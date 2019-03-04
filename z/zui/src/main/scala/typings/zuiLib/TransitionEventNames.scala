@@ -12,8 +12,8 @@ trait TransitionEventNames extends js.Object {
 object TransitionEventNames {
   @scala.inline
   def apply(end: java.lang.String): TransitionEventNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
+    val __obj = js.Dynamic.literal(end = end)
+  
     __obj.asInstanceOf[TransitionEventNames]
   }
 }

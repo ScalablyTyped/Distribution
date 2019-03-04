@@ -17,8 +17,8 @@ object CordovaPlugins {
   def apply(
     version: cordovaUnderscoreAppUnderscoreVersionUnderscorePluginLib.CordovaAppVersionPluginNs.CordovaAppVersionPlugin
   ): CordovaPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
+  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

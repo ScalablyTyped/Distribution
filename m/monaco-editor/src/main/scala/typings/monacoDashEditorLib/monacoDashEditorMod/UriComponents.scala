@@ -22,12 +22,8 @@ object UriComponents {
     query: java.lang.String,
     scheme: java.lang.String
   ): UriComponents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authority")(authority)
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(authority = authority, fragment = fragment, path = path, query = query, scheme = scheme)
+  
     __obj.asInstanceOf[UriComponents]
   }
 }

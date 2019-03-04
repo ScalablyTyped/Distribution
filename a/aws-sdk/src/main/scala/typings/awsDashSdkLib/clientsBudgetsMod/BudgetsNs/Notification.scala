@@ -37,10 +37,7 @@ object Notification {
     NotificationState: NotificationState = null,
     ThresholdType: ThresholdType = null
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    __obj.updateDynamic("NotificationType")(NotificationType.asInstanceOf[js.Any])
-    __obj.updateDynamic("Threshold")(Threshold)
+    val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], NotificationType = NotificationType.asInstanceOf[js.Any], Threshold = Threshold)
     if (NotificationState != null) __obj.updateDynamic("NotificationState")(NotificationState.asInstanceOf[js.Any])
     if (ThresholdType != null) __obj.updateDynamic("ThresholdType")(ThresholdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Notification]

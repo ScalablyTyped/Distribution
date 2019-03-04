@@ -34,8 +34,7 @@ object LoggerOptionsWithTransports {
     skip: RouteFilter = null,
     statusLevels: expressDashWinstonLib.Anon_Error = null
   ): LoggerOptionsWithTransports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transports")(transports)
+    val __obj = js.Dynamic.literal(transports = transports)
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
     if (bodyBlacklist != null) __obj.updateDynamic("bodyBlacklist")(bodyBlacklist)
     if (bodyWhitelist != null) __obj.updateDynamic("bodyWhitelist")(bodyWhitelist)

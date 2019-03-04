@@ -34,9 +34,8 @@ object ConditionalTextComparisonRule {
     operator: ConditionalTextOperator | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Contains | officeDashJsLib.officeDashJsLibStrings.NotContains | officeDashJsLib.officeDashJsLibStrings.BeginsWith | officeDashJsLib.officeDashJsLibStrings.EndsWith,
     text: java.lang.String
   ): ConditionalTextComparisonRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], text = text)
+  
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }
 }

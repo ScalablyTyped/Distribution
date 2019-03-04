@@ -17,8 +17,7 @@ object EvictOptions {
     rootId: java.lang.String = null,
     variables: TVariables = null
   ): EvictOptions[TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (rootId != null) __obj.updateDynamic("rootId")(rootId)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvictOptions[TVariables]]

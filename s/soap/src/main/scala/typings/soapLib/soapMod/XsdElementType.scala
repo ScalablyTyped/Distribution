@@ -44,20 +44,7 @@ object XsdElementType {
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     xmlns: WsdlXmlns = null
   ): XsdElementType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$lookupType")($lookupType)
-    __obj.updateDynamic("$lookupTypes")($lookupTypes)
-    __obj.updateDynamic("$name")($name)
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nsName")(nsName)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("targetNSAlias")(targetNSAlias)
-    __obj.updateDynamic("targetNamespace")(targetNamespace)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal($lookupType = $lookupType, $lookupTypes = $lookupTypes, $name = $name, $type = $type, children = children.asInstanceOf[js.Any], ignoredNamespaces = ignoredNamespaces, name = name, nsName = nsName, prefix = prefix, targetNSAlias = targetNSAlias, targetNamespace = targetNamespace, valueKey = valueKey, xmlKey = xmlKey)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[XsdElementType]

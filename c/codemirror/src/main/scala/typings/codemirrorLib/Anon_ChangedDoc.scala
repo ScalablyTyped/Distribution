@@ -18,9 +18,7 @@ object Anon_ChangedDoc {
     name: java.lang.String,
     changed: Anon_FromTo = null
   ): Anon_ChangedDoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doc")(doc)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(doc = doc, name = name)
     if (changed != null) __obj.updateDynamic("changed")(changed)
     __obj.asInstanceOf[Anon_ChangedDoc]
   }

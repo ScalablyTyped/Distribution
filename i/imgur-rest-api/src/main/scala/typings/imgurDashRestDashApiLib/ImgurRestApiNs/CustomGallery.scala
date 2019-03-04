@@ -22,12 +22,8 @@ object CustomGallery {
     link: java.lang.String,
     tags: js.Array[java.lang.String]
   ): CustomGallery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_url")(account_url)
-    __obj.updateDynamic("item_count")(item_count)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(account_url = account_url, item_count = item_count, items = items, link = link, tags = tags)
+  
     __obj.asInstanceOf[CustomGallery]
   }
 }

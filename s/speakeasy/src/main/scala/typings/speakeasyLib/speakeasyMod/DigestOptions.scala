@@ -23,9 +23,7 @@ object DigestOptions {
     encoding: Encoding = null,
     key: java.lang.String = null
   ): DigestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counter")(counter)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(counter = counter, secret = secret)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (key != null) __obj.updateDynamic("key")(key)

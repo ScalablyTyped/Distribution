@@ -36,9 +36,7 @@ object CapabilityStatementMessagingEndpoint {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementMessagingEndpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(address = address, protocol = protocol)
     if (_address != null) __obj.updateDynamic("_address")(_address)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

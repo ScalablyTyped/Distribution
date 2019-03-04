@@ -30,16 +30,8 @@ object InterfaceProjection {
     rf: scala.Double,
     sphere: scala.Double
   ): InterfaceProjection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("datum")(datum)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("ep2")(ep2)
-    __obj.updateDynamic("es")(es)
-    __obj.updateDynamic("forward")(forward)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("rf")(rf)
-    __obj.updateDynamic("sphere")(sphere)
+    val __obj = js.Dynamic.literal(b = b, datum = datum, e = e, ep2 = ep2, es = es, forward = forward, inverse = inverse, rf = rf, sphere = sphere)
+  
     __obj.asInstanceOf[InterfaceProjection]
   }
 }

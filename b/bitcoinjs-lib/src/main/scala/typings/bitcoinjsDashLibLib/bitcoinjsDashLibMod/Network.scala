@@ -24,12 +24,7 @@ object Network {
     wif: scala.Double,
     bech32: java.lang.String = null
   ): Network = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bip32")(bip32)
-    __obj.updateDynamic("messagePrefix")(messagePrefix)
-    __obj.updateDynamic("pubKeyHash")(pubKeyHash)
-    __obj.updateDynamic("scriptHash")(scriptHash)
-    __obj.updateDynamic("wif")(wif)
+    val __obj = js.Dynamic.literal(bip32 = bip32, messagePrefix = messagePrefix, pubKeyHash = pubKeyHash, scriptHash = scriptHash, wif = wif)
     if (bech32 != null) __obj.updateDynamic("bech32")(bech32)
     __obj.asInstanceOf[Network]
   }

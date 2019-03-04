@@ -22,9 +22,7 @@ object SearchEngine {
     alias: java.lang.String = null,
     favIconUrl: java.lang.String = null
   ): SearchEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(isDefault = isDefault, name = name)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
     __obj.asInstanceOf[SearchEngine]

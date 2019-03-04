@@ -14,10 +14,8 @@ trait ProgressData extends js.Object {
 object ProgressData {
   @scala.inline
   def apply(completedFiles: scala.Double, completedSize: scala.Double, totalFiles: scala.Double): ProgressData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completedFiles")(completedFiles)
-    __obj.updateDynamic("completedSize")(completedSize)
-    __obj.updateDynamic("totalFiles")(totalFiles)
+    val __obj = js.Dynamic.literal(completedFiles = completedFiles, completedSize = completedSize, totalFiles = totalFiles)
+  
     __obj.asInstanceOf[ProgressData]
   }
 }

@@ -55,13 +55,8 @@ object XStringSubstitution {
     release: js.Function0[scala.Unit],
     substituteVariables: js.Function2[java.lang.String, scala.Boolean, java.lang.String]
   ): XStringSubstitution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSubstituteVariableValue")(getSubstituteVariableValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("reSubstituteVariables")(reSubstituteVariables)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("substituteVariables")(substituteVariables)
+    val __obj = js.Dynamic.literal(acquire = acquire, getSubstituteVariableValue = getSubstituteVariableValue, queryInterface = queryInterface, reSubstituteVariables = reSubstituteVariables, release = release, substituteVariables = substituteVariables)
+  
     __obj.asInstanceOf[XStringSubstitution]
   }
 }

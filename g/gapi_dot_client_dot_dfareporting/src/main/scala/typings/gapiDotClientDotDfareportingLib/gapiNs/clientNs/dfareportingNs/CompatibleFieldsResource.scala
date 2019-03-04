@@ -21,8 +21,8 @@ object CompatibleFieldsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CompatibleFields]
     ]
   ): CompatibleFieldsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[CompatibleFieldsResource]
   }
 }

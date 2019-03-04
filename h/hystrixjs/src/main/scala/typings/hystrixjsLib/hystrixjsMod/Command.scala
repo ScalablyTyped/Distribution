@@ -12,8 +12,8 @@ trait Command extends js.Object {
 object Command {
   @scala.inline
   def apply(execute: js.Function1[/* repeated */ js.Any, js.Thenable[_]]): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[Command]
   }
 }

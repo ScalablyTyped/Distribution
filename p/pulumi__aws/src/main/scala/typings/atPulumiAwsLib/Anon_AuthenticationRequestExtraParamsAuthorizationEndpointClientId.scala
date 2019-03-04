@@ -34,17 +34,7 @@ object Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientId {
     userInfoEndpoint: java.lang.String,
     authenticationRequestExtraParams: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationEndpoint")(authorizationEndpoint)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("sessionCookieName")(sessionCookieName)
-    __obj.updateDynamic("sessionTimeout")(sessionTimeout)
-    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
-    __obj.updateDynamic("userInfoEndpoint")(userInfoEndpoint)
+    val __obj = js.Dynamic.literal(authorizationEndpoint = authorizationEndpoint, clientId = clientId, clientSecret = clientSecret, issuer = issuer, onUnauthenticatedRequest = onUnauthenticatedRequest, scope = scope, sessionCookieName = sessionCookieName, sessionTimeout = sessionTimeout, tokenEndpoint = tokenEndpoint, userInfoEndpoint = userInfoEndpoint)
     if (authenticationRequestExtraParams != null) __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams)
     __obj.asInstanceOf[Anon_AuthenticationRequestExtraParamsAuthorizationEndpointClientId]
   }

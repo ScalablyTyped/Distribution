@@ -74,38 +74,8 @@ object MDCMenuAdapter {
     setPosition: js.Function1[atMaterialMenuLib.Anon_BottomLeft, scala.Unit],
     setTransformOrigin: js.Function1[java.lang.String, scala.Unit]
   ): MDCMenuAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("addClassForOptionAtIndex")(addClassForOptionAtIndex)
-    __obj.updateDynamic("deregisterBodyClickHandler")(deregisterBodyClickHandler)
-    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("focusItemAtIndex")(focusItemAtIndex)
-    __obj.updateDynamic("getAnchorDimensions")(getAnchorDimensions)
-    __obj.updateDynamic("getAttributeForEventTarget")(getAttributeForEventTarget)
-    __obj.updateDynamic("getFocusedItemIndex")(getFocusedItemIndex)
-    __obj.updateDynamic("getIndexForEventTarget")(getIndexForEventTarget)
-    __obj.updateDynamic("getInnerDimensions")(getInnerDimensions)
-    __obj.updateDynamic("getNumberOfItems")(getNumberOfItems)
-    __obj.updateDynamic("getWindowDimensions")(getWindowDimensions)
-    __obj.updateDynamic("hasAnchor")(hasAnchor)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("hasNecessaryDom")(hasNecessaryDom)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("isRtl")(isRtl)
-    __obj.updateDynamic("notifyCancel")(notifyCancel)
-    __obj.updateDynamic("notifySelected")(notifySelected)
-    __obj.updateDynamic("registerBodyClickHandler")(registerBodyClickHandler)
-    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("restoreFocus")(restoreFocus)
-    __obj.updateDynamic("rmAttrForOptionAtIndex")(rmAttrForOptionAtIndex)
-    __obj.updateDynamic("rmClassForOptionAtIndex")(rmClassForOptionAtIndex)
-    __obj.updateDynamic("saveFocus")(saveFocus)
-    __obj.updateDynamic("setAttrForOptionAtIndex")(setAttrForOptionAtIndex)
-    __obj.updateDynamic("setMaxHeight")(setMaxHeight)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setTransformOrigin")(setTransformOrigin)
+    val __obj = js.Dynamic.literal(addClass = addClass, addClassForOptionAtIndex = addClassForOptionAtIndex, deregisterBodyClickHandler = deregisterBodyClickHandler, deregisterInteractionHandler = deregisterInteractionHandler, focus = focus, focusItemAtIndex = focusItemAtIndex, getAnchorDimensions = getAnchorDimensions, getAttributeForEventTarget = getAttributeForEventTarget, getFocusedItemIndex = getFocusedItemIndex, getIndexForEventTarget = getIndexForEventTarget, getInnerDimensions = getInnerDimensions, getNumberOfItems = getNumberOfItems, getWindowDimensions = getWindowDimensions, hasAnchor = hasAnchor, hasClass = hasClass, hasNecessaryDom = hasNecessaryDom, isFocused = isFocused, isRtl = isRtl, notifyCancel = notifyCancel, notifySelected = notifySelected, registerBodyClickHandler = registerBodyClickHandler, registerInteractionHandler = registerInteractionHandler, removeClass = removeClass, restoreFocus = restoreFocus, rmAttrForOptionAtIndex = rmAttrForOptionAtIndex, rmClassForOptionAtIndex = rmClassForOptionAtIndex, saveFocus = saveFocus, setAttrForOptionAtIndex = setAttrForOptionAtIndex, setMaxHeight = setMaxHeight, setPosition = setPosition, setTransformOrigin = setTransformOrigin)
+  
     __obj.asInstanceOf[MDCMenuAdapter]
   }
 }

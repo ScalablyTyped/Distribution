@@ -19,7 +19,8 @@ trait BackoffOptions extends js.Object {
 object BackoffOptions {
   @scala.inline
   def apply(`type`: java.lang.String, delay: scala.Int | scala.Double = null): BackoffOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackoffOptions]
   }

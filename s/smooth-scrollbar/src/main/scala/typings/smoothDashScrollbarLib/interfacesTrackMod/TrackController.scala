@@ -20,11 +20,8 @@ object TrackController {
     xAxis: ScrollbarTrack,
     yAxis: ScrollbarTrack
   ): TrackController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoHideOnIdle")(autoHideOnIdle)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("xAxis")(xAxis)
-    __obj.updateDynamic("yAxis")(yAxis)
+    val __obj = js.Dynamic.literal(autoHideOnIdle = autoHideOnIdle, update = update, xAxis = xAxis, yAxis = yAxis)
+  
     __obj.asInstanceOf[TrackController]
   }
 }

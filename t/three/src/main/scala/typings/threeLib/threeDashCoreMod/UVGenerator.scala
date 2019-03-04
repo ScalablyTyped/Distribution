@@ -44,9 +44,8 @@ object UVGenerator {
       js.Array[Vector2]
     ]
   ): UVGenerator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateSideWallUV")(generateSideWallUV)
-    __obj.updateDynamic("generateTopUV")(generateTopUV)
+    val __obj = js.Dynamic.literal(generateSideWallUV = generateSideWallUV, generateTopUV = generateTopUV)
+  
     __obj.asInstanceOf[UVGenerator]
   }
 }

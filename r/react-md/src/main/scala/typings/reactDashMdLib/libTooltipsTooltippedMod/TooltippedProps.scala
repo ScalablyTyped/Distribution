@@ -93,8 +93,7 @@ object TooltippedProps {
     tooltipClassName: java.lang.String = null,
     tooltipStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TooltippedProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (container != null) __obj.updateDynamic("container")(container)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

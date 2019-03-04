@@ -35,16 +35,8 @@ object IHotspotAuthenticationContext {
     triggerAttentionRequired: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     wirelessNetworkId: stdLib.Uint8Array
   ): IHotspotAuthenticationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abortAuthentication")(abortAuthentication)
-    __obj.updateDynamic("authenticationUrl")(authenticationUrl)
-    __obj.updateDynamic("issueCredentials")(issueCredentials)
-    __obj.updateDynamic("networkAdapter")(networkAdapter)
-    __obj.updateDynamic("redirectMessageUrl")(redirectMessageUrl)
-    __obj.updateDynamic("redirectMessageXml")(redirectMessageXml)
-    __obj.updateDynamic("skipAuthentication")(skipAuthentication)
-    __obj.updateDynamic("triggerAttentionRequired")(triggerAttentionRequired)
-    __obj.updateDynamic("wirelessNetworkId")(wirelessNetworkId)
+    val __obj = js.Dynamic.literal(abortAuthentication = abortAuthentication, authenticationUrl = authenticationUrl, issueCredentials = issueCredentials, networkAdapter = networkAdapter, redirectMessageUrl = redirectMessageUrl, redirectMessageXml = redirectMessageXml, skipAuthentication = skipAuthentication, triggerAttentionRequired = triggerAttentionRequired, wirelessNetworkId = wirelessNetworkId)
+  
     __obj.asInstanceOf[IHotspotAuthenticationContext]
   }
 }

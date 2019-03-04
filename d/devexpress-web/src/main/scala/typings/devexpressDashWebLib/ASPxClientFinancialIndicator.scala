@@ -30,12 +30,8 @@ object ASPxClientFinancialIndicator {
     point2: ASPxClientFinancialIndicatorPoint,
     series: ASPxClientSeries
   ): ASPxClientFinancialIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("point1")(point1)
-    __obj.updateDynamic("point2")(point2)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, point1 = point1, point2 = point2, series = series)
+  
     __obj.asInstanceOf[ASPxClientFinancialIndicator]
   }
 }

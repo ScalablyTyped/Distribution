@@ -19,8 +19,8 @@ object Anon_Fields {
       (js.Array[java.lang.String | scala.Double | scala.Boolean]) | vegaDashTypingsLib.typesSpecScaleMod.DataRef | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
     ]
   ): Anon_Fields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(fields = fields)
+  
     __obj.asInstanceOf[Anon_Fields]
   }
 }

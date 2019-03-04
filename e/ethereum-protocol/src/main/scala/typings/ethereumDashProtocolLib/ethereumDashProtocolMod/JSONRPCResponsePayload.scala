@@ -14,10 +14,8 @@ trait JSONRPCResponsePayload extends js.Object {
 object JSONRPCResponsePayload {
   @scala.inline
   def apply(id: scala.Double, jsonrpc: java.lang.String, result: js.Any): JSONRPCResponsePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("jsonrpc")(jsonrpc)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(id = id, jsonrpc = jsonrpc, result = result)
+  
     __obj.asInstanceOf[JSONRPCResponsePayload]
   }
 }

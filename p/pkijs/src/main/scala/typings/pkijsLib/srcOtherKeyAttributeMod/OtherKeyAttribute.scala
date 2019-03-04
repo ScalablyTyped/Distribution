@@ -22,12 +22,8 @@ object OtherKeyAttribute {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): OtherKeyAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyAttr")(keyAttr)
-    __obj.updateDynamic("keyAttrId")(keyAttrId)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyAttr = keyAttr, keyAttrId = keyAttrId, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[OtherKeyAttribute]
   }
 }

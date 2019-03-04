@@ -45,12 +45,7 @@ object CallbackArgs {
     waypointTop: scala.Double,
     event: reactLib.Event = null
   ): CallbackArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentPosition")(currentPosition)
-    __obj.updateDynamic("previousPosition")(previousPosition)
-    __obj.updateDynamic("viewportBottom")(viewportBottom)
-    __obj.updateDynamic("viewportTop")(viewportTop)
-    __obj.updateDynamic("waypointTop")(waypointTop)
+    val __obj = js.Dynamic.literal(currentPosition = currentPosition, previousPosition = previousPosition, viewportBottom = viewportBottom, viewportTop = viewportTop, waypointTop = waypointTop)
     if (event != null) __obj.updateDynamic("event")(event)
     __obj.asInstanceOf[CallbackArgs]
   }

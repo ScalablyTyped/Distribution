@@ -15,8 +15,8 @@ trait Anon_DetectScreenOrientation extends js.Object {
 object Anon_DetectScreenOrientation {
   @scala.inline
   def apply(detectScreenOrientation: scala.Boolean): Anon_DetectScreenOrientation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectScreenOrientation")(detectScreenOrientation)
+    val __obj = js.Dynamic.literal(detectScreenOrientation = detectScreenOrientation)
+  
     __obj.asInstanceOf[Anon_DetectScreenOrientation]
   }
 }

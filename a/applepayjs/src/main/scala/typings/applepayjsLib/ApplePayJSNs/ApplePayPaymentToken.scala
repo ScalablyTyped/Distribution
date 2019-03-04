@@ -26,10 +26,8 @@ trait ApplePayPaymentToken extends js.Object {
 object ApplePayPaymentToken {
   @scala.inline
   def apply(paymentData: js.Any, paymentMethod: ApplePayPaymentMethod, transactionIdentifier: java.lang.String): ApplePayPaymentToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paymentData")(paymentData)
-    __obj.updateDynamic("paymentMethod")(paymentMethod)
-    __obj.updateDynamic("transactionIdentifier")(transactionIdentifier)
+    val __obj = js.Dynamic.literal(paymentData = paymentData, paymentMethod = paymentMethod, transactionIdentifier = transactionIdentifier)
+  
     __obj.asInstanceOf[ApplePayPaymentToken]
   }
 }

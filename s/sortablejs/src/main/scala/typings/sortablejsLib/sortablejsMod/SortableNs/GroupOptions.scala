@@ -44,8 +44,7 @@ object GroupOptions {
     put: scala.Boolean | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* to */ sortablejsLib.sortablejsMod.Sortable, scala.Boolean]) = null,
     revertClone: js.UndefOr[scala.Boolean] = js.undefined
   ): GroupOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
     if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
     if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone)

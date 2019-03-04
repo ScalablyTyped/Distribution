@@ -44,14 +44,8 @@ object JobTaskCreateJobVersionParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     user: java.lang.String
   ): JobTaskCreateJobVersionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, name = name, parent = parent, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
     __obj.asInstanceOf[JobTaskCreateJobVersionParams]
   }
 }

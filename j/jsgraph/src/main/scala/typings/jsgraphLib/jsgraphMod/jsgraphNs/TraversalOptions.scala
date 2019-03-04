@@ -20,11 +20,8 @@ object TraversalOptions {
     startVector: java.lang.String | js.Array[java.lang.String],
     traverseContext: TraversalContext
   ): TraversalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowEmptyStartVector")(allowEmptyStartVector)
-    __obj.updateDynamic("signalStart")(signalStart)
-    __obj.updateDynamic("startVector")(startVector.asInstanceOf[js.Any])
-    __obj.updateDynamic("traverseContext")(traverseContext)
+    val __obj = js.Dynamic.literal(allowEmptyStartVector = allowEmptyStartVector, signalStart = signalStart, startVector = startVector.asInstanceOf[js.Any], traverseContext = traverseContext)
+  
     __obj.asInstanceOf[TraversalOptions]
   }
 }

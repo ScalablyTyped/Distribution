@@ -42,8 +42,7 @@ object Anon_Alt {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stateKey")(stateKey)
+    val __obj = js.Dynamic.literal(stateKey = stateKey)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (currentDataVersion != null) __obj.updateDynamic("currentDataVersion")(currentDataVersion)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -18,9 +18,7 @@ object SelectInfo {
     start: momentLib.momentMod.momentNs.Moment,
     resourceId: java.lang.String = null
   ): SelectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
     if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
     __obj.asInstanceOf[SelectInfo]
   }

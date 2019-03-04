@@ -42,10 +42,7 @@ object ShareButtonData {
     url: java.lang.String,
     download: js.UndefOr[scala.Boolean] = js.undefined
   ): ShareButtonData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, label = label, url = url)
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
     __obj.asInstanceOf[ShareButtonData]
   }

@@ -20,11 +20,8 @@ object StreamedBatch {
     nextLink: java.lang.String,
     values: js.Array[T]
   ): StreamedBatch[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continuationToken")(continuationToken)
-    __obj.updateDynamic("isLastBatch")(isLastBatch)
-    __obj.updateDynamic("nextLink")(nextLink)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(continuationToken = continuationToken, isLastBatch = isLastBatch, nextLink = nextLink, values = values)
+  
     __obj.asInstanceOf[StreamedBatch[T]]
   }
 }

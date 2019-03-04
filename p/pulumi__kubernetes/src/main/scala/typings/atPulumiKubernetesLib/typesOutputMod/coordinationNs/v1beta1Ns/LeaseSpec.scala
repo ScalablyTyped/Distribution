@@ -41,12 +41,8 @@ object LeaseSpec {
     leaseTransitions: scala.Double,
     renewTime: java.lang.String
   ): LeaseSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquireTime")(acquireTime)
-    __obj.updateDynamic("holderIdentity")(holderIdentity)
-    __obj.updateDynamic("leaseDurationSeconds")(leaseDurationSeconds)
-    __obj.updateDynamic("leaseTransitions")(leaseTransitions)
-    __obj.updateDynamic("renewTime")(renewTime)
+    val __obj = js.Dynamic.literal(acquireTime = acquireTime, holderIdentity = holderIdentity, leaseDurationSeconds = leaseDurationSeconds, leaseTransitions = leaseTransitions, renewTime = renewTime)
+  
     __obj.asInstanceOf[LeaseSpec]
   }
 }

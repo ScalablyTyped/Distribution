@@ -22,12 +22,8 @@ object RequestLog {
     tags: js.Array[java.lang.String],
     timestamp: scala.Double
   ): RequestLog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel, data = data.asInstanceOf[js.Any], request = request, tags = tags, timestamp = timestamp)
+  
     __obj.asInstanceOf[RequestLog]
   }
 }

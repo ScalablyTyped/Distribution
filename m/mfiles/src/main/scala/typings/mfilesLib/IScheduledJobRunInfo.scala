@@ -30,16 +30,8 @@ object IScheduledJobRunInfo {
     ScheduledJobOutputInfo: IScheduledJobOutputInfo,
     StepCompletionPercent: scala.Double
   ): IScheduledJobRunInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancelled")(Cancelled)
-    __obj.updateDynamic("CurrentStep")(CurrentStep)
-    __obj.updateDynamic("LastRun")(LastRun)
-    __obj.updateDynamic("LastRunErrors")(LastRunErrors)
-    __obj.updateDynamic("LastRunSucceeded")(LastRunSucceeded)
-    __obj.updateDynamic("NextRun")(NextRun)
-    __obj.updateDynamic("Running")(Running)
-    __obj.updateDynamic("ScheduledJobOutputInfo")(ScheduledJobOutputInfo)
-    __obj.updateDynamic("StepCompletionPercent")(StepCompletionPercent)
+    val __obj = js.Dynamic.literal(Cancelled = Cancelled, CurrentStep = CurrentStep, LastRun = LastRun, LastRunErrors = LastRunErrors, LastRunSucceeded = LastRunSucceeded, NextRun = NextRun, Running = Running, ScheduledJobOutputInfo = ScheduledJobOutputInfo, StepCompletionPercent = StepCompletionPercent)
+  
     __obj.asInstanceOf[IScheduledJobRunInfo]
   }
 }

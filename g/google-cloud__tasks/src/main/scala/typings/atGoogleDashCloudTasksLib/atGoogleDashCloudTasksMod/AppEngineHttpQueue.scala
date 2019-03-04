@@ -12,8 +12,8 @@ trait AppEngineHttpQueue extends js.Object {
 object AppEngineHttpQueue {
   @scala.inline
   def apply(appEngineRoutingOverride: AppEngineRouting): AppEngineHttpQueue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride)
+    val __obj = js.Dynamic.literal(appEngineRoutingOverride = appEngineRoutingOverride)
+  
     __obj.asInstanceOf[AppEngineHttpQueue]
   }
 }

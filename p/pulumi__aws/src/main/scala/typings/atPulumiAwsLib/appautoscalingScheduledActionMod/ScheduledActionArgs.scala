@@ -52,9 +52,7 @@ object ScheduledActionArgs {
     schedule: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     startTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ScheduledActionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait IROOM_REMOVE extends js.Object {
 object IROOM_REMOVE {
   @scala.inline
   def apply(room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom): IROOM_REMOVE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(room = room)
+  
     __obj.asInstanceOf[IROOM_REMOVE]
   }
 }

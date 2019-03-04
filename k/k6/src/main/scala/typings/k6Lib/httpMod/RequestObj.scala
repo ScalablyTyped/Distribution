@@ -20,8 +20,7 @@ object RequestObj {
     method: java.lang.String = null,
     params: RequestParams = null
   ): RequestObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (params != null) __obj.updateDynamic("params")(params)

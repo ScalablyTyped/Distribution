@@ -18,11 +18,8 @@ object BlockMapFile {
     offset: scala.Double,
     sizes: js.Array[scala.Double]
   ): BlockMapFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checksums")(checksums)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("sizes")(sizes)
+    val __obj = js.Dynamic.literal(checksums = checksums, name = name, offset = offset, sizes = sizes)
+  
     __obj.asInstanceOf[BlockMapFile]
   }
 }

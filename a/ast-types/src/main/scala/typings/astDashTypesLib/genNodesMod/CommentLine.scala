@@ -22,10 +22,8 @@ object CommentLine {
     value: java.lang.String,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): CommentLine = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("leading")(leading)
-    __obj.updateDynamic("trailing")(trailing)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(leading = leading, trailing = trailing, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[CommentLine]
   }

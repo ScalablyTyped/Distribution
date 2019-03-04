@@ -39,8 +39,7 @@ object CertificateAuthorityArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): CertificateAuthorityArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateAuthorityConfiguration")(certificateAuthorityConfiguration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certificateAuthorityConfiguration = certificateAuthorityConfiguration.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (revocationConfiguration != null) __obj.updateDynamic("revocationConfiguration")(revocationConfiguration.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

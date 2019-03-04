@@ -18,10 +18,8 @@ object Anon_Http {
     https: nodeLib.httpMod.Agent,
     httpsAllowUnauthorized: nodeLib.httpMod.Agent
   ): Anon_Http = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("https")(https)
-    __obj.updateDynamic("httpsAllowUnauthorized")(httpsAllowUnauthorized)
+    val __obj = js.Dynamic.literal(http = http, https = https, httpsAllowUnauthorized = httpsAllowUnauthorized)
+  
     __obj.asInstanceOf[Anon_Http]
   }
 }

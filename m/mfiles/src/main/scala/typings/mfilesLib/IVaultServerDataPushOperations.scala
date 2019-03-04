@@ -24,13 +24,8 @@ object IVaultServerDataPushOperations {
     SendResponse: js.Function2[scala.Double, java.lang.String, scala.Unit],
     SetServerDataPushSink: js.Function1[IServerDataPushSink, scala.Unit]
   ): IVaultServerDataPushOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CloneVaultForServerDataPush")(CloneVaultForServerDataPush)
-    __obj.updateDynamic("SendCancel")(SendCancel)
-    __obj.updateDynamic("SendError")(SendError)
-    __obj.updateDynamic("SendHeartbeat")(SendHeartbeat)
-    __obj.updateDynamic("SendResponse")(SendResponse)
-    __obj.updateDynamic("SetServerDataPushSink")(SetServerDataPushSink)
+    val __obj = js.Dynamic.literal(CloneVaultForServerDataPush = CloneVaultForServerDataPush, SendCancel = SendCancel, SendError = SendError, SendHeartbeat = SendHeartbeat, SendResponse = SendResponse, SetServerDataPushSink = SetServerDataPushSink)
+  
     __obj.asInstanceOf[IVaultServerDataPushOperations]
   }
 }

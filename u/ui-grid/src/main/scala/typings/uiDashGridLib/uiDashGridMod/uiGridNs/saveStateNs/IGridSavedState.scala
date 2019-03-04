@@ -22,10 +22,7 @@ object IGridSavedState {
     columns: js.Array[ISavedColumn] = null,
     scrollFocus: ISavedScrollFocus = null
   ): IGridSavedState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grouping")(grouping)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("treeView")(treeView)
+    val __obj = js.Dynamic.literal(grouping = grouping, selection = selection, treeView = treeView)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (scrollFocus != null) __obj.updateDynamic("scrollFocus")(scrollFocus)
     __obj.asInstanceOf[IGridSavedState]

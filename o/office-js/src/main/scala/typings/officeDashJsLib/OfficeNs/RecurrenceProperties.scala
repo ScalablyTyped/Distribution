@@ -60,14 +60,8 @@ object RecurrenceProperties {
     month: officeDashJsLib.OfficeNs.MailboxEnumsNs.Month,
     weekNumber: officeDashJsLib.OfficeNs.MailboxEnumsNs.WeekNumber
   ): RecurrenceProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayOfMonth")(dayOfMonth)
-    __obj.updateDynamic("dayOfWeek")(dayOfWeek)
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("weekNumber")(weekNumber)
+    val __obj = js.Dynamic.literal(dayOfMonth = dayOfMonth, dayOfWeek = dayOfWeek, days = days, firstDayOfWeek = firstDayOfWeek, interval = interval, month = month, weekNumber = weekNumber)
+  
     __obj.asInstanceOf[RecurrenceProperties]
   }
 }

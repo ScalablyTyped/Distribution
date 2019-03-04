@@ -126,28 +126,9 @@ object ITransfer {
     status: Statuses,
     `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.stripe_account
   ): ITransfer = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("amount_reversed")(amount_reversed)
-    __obj.updateDynamic("application_fee")(application_fee)
-    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("destination_payment")(destination_payment)
-    __obj.updateDynamic("failure_code")(failure_code)
-    __obj.updateDynamic("failure_message")(failure_message)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("reversals")(reversals)
-    __obj.updateDynamic("reversed")(reversed)
-    __obj.updateDynamic("source_transaction")(source_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("source_type")(source_type)
-    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(amount = amount, amount_reversed = amount_reversed, application_fee = application_fee, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, date = date, description = description, destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment, failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, reversals = reversals, reversed = reversed, source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type, statement_descriptor = statement_descriptor, status = status)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITransfer]
   }
 }

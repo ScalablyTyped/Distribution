@@ -20,11 +20,8 @@ object Timezone {
     offsetStr: java.lang.String,
     utcOffset: scala.Double
   ): Timezone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countries")(countries)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offsetStr")(offsetStr)
-    __obj.updateDynamic("utcOffset")(utcOffset)
+    val __obj = js.Dynamic.literal(countries = countries, name = name, offsetStr = offsetStr, utcOffset = utcOffset)
+  
     __obj.asInstanceOf[Timezone]
   }
 }

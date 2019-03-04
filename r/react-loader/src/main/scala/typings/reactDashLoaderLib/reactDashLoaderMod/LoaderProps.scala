@@ -38,8 +38,7 @@ object LoaderProps {
     width: scala.Int | scala.Double = null,
     zIndex: scala.Int | scala.Double = null
   ): LoaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loaded")(loaded)
+    val __obj = js.Dynamic.literal(loaded = loaded)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)
     if (corners != null) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])

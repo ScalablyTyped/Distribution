@@ -15,7 +15,7 @@ class Some[A] protected () extends Option[A] {
   val value: A = js.native
   def alt(fa: Option[A]): Option[A] = js.native
   def ap[B](fab: Option[js.Function1[/* a */ A, B]]): Option[B] = js.native
-  def `ap_`[B, C](`this`: Option[js.Function1[/* b */ B, C]], fb: Option[B]): Option[C] = js.native
+  def ap_[B, C](`this`: Option[js.Function1[/* b */ B, C]], fb: Option[B]): Option[C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Option[B]]): Option[B] = js.native
   def contains(S: fpDashTsLib.libSetoidMod.Setoid[A], a: A): scala.Boolean = js.native
   def exists(p: js.Function1[/* a */ A, scala.Boolean]): scala.Boolean = js.native

@@ -24,13 +24,8 @@ object RoomRole {
     NONE: scala.Double,
     RESIDENTDJ: scala.Double
   ): RoomRole = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOUNCER")(BOUNCER)
-    __obj.updateDynamic("COHOST")(COHOST)
-    __obj.updateDynamic("HOST")(HOST)
-    __obj.updateDynamic("MANAGER")(MANAGER)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("RESIDENTDJ")(RESIDENTDJ)
+    val __obj = js.Dynamic.literal(BOUNCER = BOUNCER, COHOST = COHOST, HOST = HOST, MANAGER = MANAGER, NONE = NONE, RESIDENTDJ = RESIDENTDJ)
+  
     __obj.asInstanceOf[RoomRole]
   }
 }

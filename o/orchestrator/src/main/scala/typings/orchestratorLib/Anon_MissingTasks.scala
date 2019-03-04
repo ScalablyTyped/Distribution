@@ -18,10 +18,8 @@ object Anon_MissingTasks {
     recursiveDependencies: js.Array[java.lang.String],
     sequence: js.Array[java.lang.String]
   ): Anon_MissingTasks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("missingTasks")(missingTasks)
-    __obj.updateDynamic("recursiveDependencies")(recursiveDependencies)
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(missingTasks = missingTasks, recursiveDependencies = recursiveDependencies, sequence = sequence)
+  
     __obj.asInstanceOf[Anon_MissingTasks]
   }
 }

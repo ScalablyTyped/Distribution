@@ -16,8 +16,7 @@ object Anon_Deleted {
     rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId,
     deleted: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Deleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rev")(rev)
+    val __obj = js.Dynamic.literal(rev = rev)
     if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
     __obj.asInstanceOf[Anon_Deleted]
   }

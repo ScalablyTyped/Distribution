@@ -25,8 +25,7 @@ object NewSignal {
     update: vegaDashTypingsLib.typesSpecExprMod.Expr = null,
     value: SignalValue = null
   ): NewSignal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (bind != null) __obj.updateDynamic("bind")(bind)
     if (description != null) __obj.updateDynamic("description")(description)
     if (on != null) __obj.updateDynamic("on")(on)

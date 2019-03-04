@@ -24,9 +24,7 @@ object ClickAwayListenerProps {
     mouseEvent: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.onClick | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.onMouseDown | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.onMouseUp | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false` = null,
     touchEvent: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.onTouchStart | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.onTouchEnd | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false` = null
   ): ClickAwayListenerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("onClickAway")(onClickAway)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], onClickAway = onClickAway)
     if (mouseEvent != null) __obj.updateDynamic("mouseEvent")(mouseEvent.asInstanceOf[js.Any])
     if (touchEvent != null) __obj.updateDynamic("touchEvent")(touchEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickAwayListenerProps]

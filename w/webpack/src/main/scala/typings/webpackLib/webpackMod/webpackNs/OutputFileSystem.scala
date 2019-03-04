@@ -61,13 +61,8 @@ object OutputFileSystem {
       scala.Unit
     ]
   ): OutputFileSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("mkdir")(mkdir)
-    __obj.updateDynamic("mkdirp")(mkdirp)
-    __obj.updateDynamic("rmdir")(rmdir)
-    __obj.updateDynamic("unlink")(unlink)
-    __obj.updateDynamic("writeFile")(writeFile)
+    val __obj = js.Dynamic.literal(join = join, mkdir = mkdir, mkdirp = mkdirp, rmdir = rmdir, unlink = unlink, writeFile = writeFile)
+  
     __obj.asInstanceOf[OutputFileSystem]
   }
 }

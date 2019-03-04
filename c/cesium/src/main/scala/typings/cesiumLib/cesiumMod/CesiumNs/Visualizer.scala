@@ -18,10 +18,8 @@ object Visualizer {
     isDestroyed: js.Function0[scala.Boolean],
     update: js.Function1[JulianDate, scala.Boolean]
   ): Visualizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, update = update)
+  
     __obj.asInstanceOf[Visualizer]
   }
 }

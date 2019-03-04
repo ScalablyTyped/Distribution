@@ -18,7 +18,8 @@ object OutputSpeech {
     ssml: java.lang.String = null,
     text: java.lang.String = null
   ): OutputSpeech = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ssml != null) __obj.updateDynamic("ssml")(ssml)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[OutputSpeech]

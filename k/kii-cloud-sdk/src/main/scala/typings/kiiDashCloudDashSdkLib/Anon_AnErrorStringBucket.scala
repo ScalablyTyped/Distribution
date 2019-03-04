@@ -25,9 +25,8 @@ object Anon_AnErrorStringBucket {
       js.Any
     ]
   ): Anon_AnErrorStringBucket[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringBucket[T]]
   }
 }

@@ -52,8 +52,7 @@ object VolumeArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VolumeArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any])
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])

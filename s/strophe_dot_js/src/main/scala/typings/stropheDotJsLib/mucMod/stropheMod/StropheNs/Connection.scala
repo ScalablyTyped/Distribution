@@ -12,8 +12,8 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(muc: stropheDotJsLib.mucMod.stropheMod.StropheNs.MUCNs.Plugin): Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("muc")(muc)
+    val __obj = js.Dynamic.literal(muc = muc)
+  
     __obj.asInstanceOf[Connection]
   }
 }

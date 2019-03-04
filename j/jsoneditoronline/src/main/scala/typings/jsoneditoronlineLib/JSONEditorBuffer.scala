@@ -18,10 +18,8 @@ object JSONEditorBuffer {
     set: js.Function1[java.lang.String, scala.Unit],
     text: java.lang.String
   ): JSONEditorBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(flush = flush, set = set, text = text)
+  
     __obj.asInstanceOf[JSONEditorBuffer]
   }
 }

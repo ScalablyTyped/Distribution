@@ -18,10 +18,8 @@ object module {
     id: java.lang.String,
     plugin: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): module = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultConfig")(defaultConfig)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(defaultConfig = defaultConfig, id = id, plugin = plugin)
+  
     __obj.asInstanceOf[module]
   }
 }

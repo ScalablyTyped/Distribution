@@ -16,9 +16,8 @@ object SignatureInfoForFuncDecl {
     allSignatures: js.Array[typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol],
     signature: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol
   ): SignatureInfoForFuncDecl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allSignatures")(allSignatures)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(allSignatures = allSignatures, signature = signature)
+  
     __obj.asInstanceOf[SignatureInfoForFuncDecl]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_StartIndex extends js.Object {
 object Anon_StartIndex {
   @scala.inline
   def apply(startIndex: scala.Double, stopIndex: scala.Double): Anon_StartIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startIndex")(startIndex)
-    __obj.updateDynamic("stopIndex")(stopIndex)
+    val __obj = js.Dynamic.literal(startIndex = startIndex, stopIndex = stopIndex)
+  
     __obj.asInstanceOf[Anon_StartIndex]
   }
 }

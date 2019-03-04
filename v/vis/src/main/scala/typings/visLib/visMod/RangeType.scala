@@ -13,9 +13,8 @@ trait RangeType extends js.Object {
 object RangeType {
   @scala.inline
   def apply(max: IdType, min: IdType): RangeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RangeType]
   }
 }

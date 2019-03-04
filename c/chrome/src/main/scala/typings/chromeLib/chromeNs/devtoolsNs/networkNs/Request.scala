@@ -27,8 +27,8 @@ object Request {
       scala.Unit
     ]
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContent")(getContent)
+    val __obj = js.Dynamic.literal(getContent = getContent)
+  
     __obj.asInstanceOf[Request]
   }
 }

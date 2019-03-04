@@ -30,8 +30,7 @@ object RedBoxProps {
     useColumns: js.UndefOr[scala.Boolean] = js.undefined,
     useLines: js.UndefOr[scala.Boolean] = js.undefined
   ): RedBoxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (editorScheme != null) __obj.updateDynamic("editorScheme")(editorScheme)

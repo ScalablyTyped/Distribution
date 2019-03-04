@@ -63,16 +63,8 @@ object HasChildFilter {
     toJSON: js.Function0[HasChildFilter],
     `type`: js.Function1[java.lang.String, HasChildFilter]
   ): HasChildFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("shortCircuitCutoff")(shortCircuitCutoff)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, query = query, scope = scope, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HasChildFilter]
   }
 }

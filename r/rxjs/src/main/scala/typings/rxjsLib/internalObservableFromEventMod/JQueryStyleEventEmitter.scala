@@ -17,9 +17,8 @@ object JQueryStyleEventEmitter {
     off: js.Function2[java.lang.String, js.Function, scala.Unit],
     on: js.Function2[java.lang.String, js.Function, scala.Unit]
   ): JQueryStyleEventEmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(off = off, on = on)
+  
     __obj.asInstanceOf[JQueryStyleEventEmitter]
   }
 }

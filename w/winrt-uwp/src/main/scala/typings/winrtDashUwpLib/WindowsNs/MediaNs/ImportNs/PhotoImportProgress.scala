@@ -28,12 +28,8 @@ object PhotoImportProgress {
     totalBytesToImport: scala.Double,
     totalItemsToImport: scala.Double
   ): PhotoImportProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesImported")(bytesImported)
-    __obj.updateDynamic("importProgress")(importProgress)
-    __obj.updateDynamic("itemsImported")(itemsImported)
-    __obj.updateDynamic("totalBytesToImport")(totalBytesToImport)
-    __obj.updateDynamic("totalItemsToImport")(totalItemsToImport)
+    val __obj = js.Dynamic.literal(bytesImported = bytesImported, importProgress = importProgress, itemsImported = itemsImported, totalBytesToImport = totalBytesToImport, totalItemsToImport = totalItemsToImport)
+  
     __obj.asInstanceOf[PhotoImportProgress]
   }
 }

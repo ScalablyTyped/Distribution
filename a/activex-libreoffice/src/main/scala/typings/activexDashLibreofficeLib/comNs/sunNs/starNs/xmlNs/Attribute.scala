@@ -18,10 +18,8 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(Name: java.lang.String, NamespaceURL: java.lang.String, Value: java.lang.String): Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NamespaceURL")(NamespaceURL)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Name = Name, NamespaceURL = NamespaceURL, Value = Value)
+  
     __obj.asInstanceOf[Attribute]
   }
 }

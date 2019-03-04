@@ -20,8 +20,7 @@ object ReaddirParams {
     fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
     success: js.Function1[/* res */ wegameDashApiLib.Anon_Files, scala.Unit] = null
   ): ReaddirParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirPath")(dirPath)
+    val __obj = js.Dynamic.literal(dirPath = dirPath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

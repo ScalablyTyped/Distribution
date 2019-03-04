@@ -20,8 +20,7 @@ object Anon_AutoFocus {
     priority: scala.Int | scala.Double = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AutoFocus[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

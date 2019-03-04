@@ -27,8 +27,7 @@ object imageAuditOptions {
     imgUrl: java.lang.String = null,
     success: js.Function1[/* res */ imageAuditResponse, scala.Unit] = null
   ): imageAuditOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl)

@@ -14,10 +14,8 @@ trait AnimationTransition extends js.Object {
 object AnimationTransition {
   @scala.inline
   def apply(delay: scala.Double, duration: scala.Double, timingFunction: TimingFunction): AnimationTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("timingFunction")(timingFunction)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration, timingFunction = timingFunction)
+  
     __obj.asInstanceOf[AnimationTransition]
   }
 }

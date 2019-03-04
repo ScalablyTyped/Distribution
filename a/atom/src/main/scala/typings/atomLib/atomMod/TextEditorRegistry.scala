@@ -51,16 +51,8 @@ object TextEditorRegistry {
     remove: js.Function1[TextEditor, scala.Boolean],
     setGrammarOverride: js.Function2[TextEditor, java.lang.String, scala.Unit]
   ): TextEditorRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clearGrammarOverride")(clearGrammarOverride)
-    __obj.updateDynamic("getGrammarOverride")(getGrammarOverride)
-    __obj.updateDynamic("maintainConfig")(maintainConfig)
-    __obj.updateDynamic("maintainGrammar")(maintainGrammar)
-    __obj.updateDynamic("observe")(observe)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setGrammarOverride")(setGrammarOverride)
+    val __obj = js.Dynamic.literal(add = add, clear = clear, clearGrammarOverride = clearGrammarOverride, getGrammarOverride = getGrammarOverride, maintainConfig = maintainConfig, maintainGrammar = maintainGrammar, observe = observe, remove = remove, setGrammarOverride = setGrammarOverride)
+  
     __obj.asInstanceOf[TextEditorRegistry]
   }
 }

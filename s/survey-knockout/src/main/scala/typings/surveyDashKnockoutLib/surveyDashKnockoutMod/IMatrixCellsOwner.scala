@@ -19,12 +19,8 @@ object IMatrixCellsOwner {
     getProcessedText: js.Function1[java.lang.String, java.lang.String],
     getRows: js.Function0[js.Array[_]]
   ): IMatrixCellsOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
-    __obj.updateDynamic("getRows")(getRows)
+    val __obj = js.Dynamic.literal(getColumns = getColumns, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRows = getRows)
+  
     __obj.asInstanceOf[IMatrixCellsOwner]
   }
 }

@@ -59,10 +59,7 @@ object TopicRuleArgs {
     sns: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MessageFormatRoleArn] = null,
     sqs: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_QueueUrlRoleArn] = null
   ): TopicRuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    __obj.updateDynamic("sql")(sql.asInstanceOf[js.Any])
-    __obj.updateDynamic("sqlVersion")(sqlVersion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any], sqlVersion = sqlVersion.asInstanceOf[js.Any])
     if (cloudwatchAlarm != null) __obj.updateDynamic("cloudwatchAlarm")(cloudwatchAlarm.asInstanceOf[js.Any])
     if (cloudwatchMetric != null) __obj.updateDynamic("cloudwatchMetric")(cloudwatchMetric.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

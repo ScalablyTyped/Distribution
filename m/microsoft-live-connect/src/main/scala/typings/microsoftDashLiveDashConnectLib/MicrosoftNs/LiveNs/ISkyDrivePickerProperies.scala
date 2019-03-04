@@ -62,10 +62,7 @@ object ISkyDrivePickerProperies {
     state: java.lang.String = null,
     theme: java.lang.String = null
   ): ISkyDrivePickerProperies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(element = element, mode = mode, name = name)
     if (lightbox != null) __obj.updateDynamic("lightbox")(lightbox)
     if (onerror != null) __obj.updateDynamic("onerror")(onerror)
     if (onselected != null) __obj.updateDynamic("onselected")(onselected)

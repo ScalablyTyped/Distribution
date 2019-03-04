@@ -18,10 +18,8 @@ object Anon_ContributedFeatureEnabledValue {
     ContributedFeatureState: js.Any,
     ContributedFeatureStateQuery: js.Any
   ): Anon_ContributedFeatureEnabledValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContributedFeatureEnabledValue")(ContributedFeatureEnabledValue)
-    __obj.updateDynamic("ContributedFeatureState")(ContributedFeatureState)
-    __obj.updateDynamic("ContributedFeatureStateQuery")(ContributedFeatureStateQuery)
+    val __obj = js.Dynamic.literal(ContributedFeatureEnabledValue = ContributedFeatureEnabledValue, ContributedFeatureState = ContributedFeatureState, ContributedFeatureStateQuery = ContributedFeatureStateQuery)
+  
     __obj.asInstanceOf[Anon_ContributedFeatureEnabledValue]
   }
 }

@@ -260,10 +260,7 @@ object Anon_ArialabelAutoHeightChildren {
     tabIndex: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Anon_ArialabelAutoHeightChildren = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headerHeight")(headerHeight)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headerHeight = headerHeight, rowCount = rowCount, rowHeight = rowHeight.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

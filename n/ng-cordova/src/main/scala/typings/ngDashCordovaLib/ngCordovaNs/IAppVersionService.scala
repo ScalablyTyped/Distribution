@@ -16,9 +16,8 @@ object IAppVersionService {
     getVersionCode: js.Function0[angularLib.angularMod.angularNs.IPromise[java.lang.String]],
     getVersionNumber: js.Function0[angularLib.angularMod.angularNs.IPromise[java.lang.String]]
   ): IAppVersionService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getVersionCode")(getVersionCode)
-    __obj.updateDynamic("getVersionNumber")(getVersionNumber)
+    val __obj = js.Dynamic.literal(getVersionCode = getVersionCode, getVersionNumber = getVersionNumber)
+  
     __obj.asInstanceOf[IAppVersionService]
   }
 }

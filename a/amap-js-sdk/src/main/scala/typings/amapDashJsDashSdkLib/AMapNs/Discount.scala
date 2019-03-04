@@ -28,15 +28,8 @@ object Discount {
     title: java.lang.String,
     url: java.lang.String
   ): Discount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("sold_num")(sold_num)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(detail = detail, end_time = end_time, photos = photos, provider = provider, sold_num = sold_num, start_time = start_time, title = title, url = url)
+  
     __obj.asInstanceOf[Discount]
   }
 }

@@ -51,8 +51,7 @@ object Anon_Address {
     returnAllAvailableData: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(address = address)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (electionId != null) __obj.updateDynamic("electionId")(electionId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

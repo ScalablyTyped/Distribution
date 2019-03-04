@@ -122,23 +122,8 @@ object XBezierPolyPolygon2D {
     setClosed: js.Function2[scala.Double, scala.Boolean, scala.Unit],
     setFillRule: js.Function1[FillRule, scala.Unit]
   ): XBezierPolyPolygon2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FillRule")(FillRule)
-    __obj.updateDynamic("NumberOfPolygons")(NumberOfPolygons)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPolyPolygon")(addPolyPolygon)
-    __obj.updateDynamic("getBezierSegment")(getBezierSegment)
-    __obj.updateDynamic("getBezierSegments")(getBezierSegments)
-    __obj.updateDynamic("getFillRule")(getFillRule)
-    __obj.updateDynamic("getNumberOfPolygonPoints")(getNumberOfPolygonPoints)
-    __obj.updateDynamic("getNumberOfPolygons")(getNumberOfPolygons)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setBezierSegment")(setBezierSegment)
-    __obj.updateDynamic("setBezierSegments")(setBezierSegments)
-    __obj.updateDynamic("setClosed")(setClosed)
-    __obj.updateDynamic("setFillRule")(setFillRule)
+    val __obj = js.Dynamic.literal(FillRule = FillRule, NumberOfPolygons = NumberOfPolygons, acquire = acquire, addPolyPolygon = addPolyPolygon, getBezierSegment = getBezierSegment, getBezierSegments = getBezierSegments, getFillRule = getFillRule, getNumberOfPolygonPoints = getNumberOfPolygonPoints, getNumberOfPolygons = getNumberOfPolygons, isClosed = isClosed, queryInterface = queryInterface, release = release, setBezierSegment = setBezierSegment, setBezierSegments = setBezierSegments, setClosed = setClosed, setFillRule = setFillRule)
+  
     __obj.asInstanceOf[XBezierPolyPolygon2D]
   }
 }

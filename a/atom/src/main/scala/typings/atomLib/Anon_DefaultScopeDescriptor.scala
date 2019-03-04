@@ -16,9 +16,8 @@ object Anon_DefaultScopeDescriptor {
     scopeDescriptor: atomLib.atomMod.ScopeDescriptor,
     value: atomLib.atomLibStrings.default | atomLib.atomLibStrings.srgb
   ): Anon_DefaultScopeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DefaultScopeDescriptor]
   }
 }

@@ -161,31 +161,8 @@ object _Impl {
     uncheckable: semanticDashUiDashCheckboxLib.semanticDashUiDashCheckboxLibStrings.auto | scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeChecked")(beforeChecked)
-    __obj.updateDynamic("beforeDeterminate")(beforeDeterminate)
-    __obj.updateDynamic("beforeIndeterminate")(beforeIndeterminate)
-    __obj.updateDynamic("beforeUnchecked")(beforeUnchecked)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fireOnInit")(fireOnInit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onChecked")(onChecked)
-    __obj.updateDynamic("onDeterminate")(onDeterminate)
-    __obj.updateDynamic("onDisable")(onDisable)
-    __obj.updateDynamic("onDisabled")(onDisabled)
-    __obj.updateDynamic("onEnable")(onEnable)
-    __obj.updateDynamic("onEnabled")(onEnabled)
-    __obj.updateDynamic("onIndeterminate")(onIndeterminate)
-    __obj.updateDynamic("onUnchecked")(onUnchecked)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("uncheckable")(uncheckable.asInstanceOf[js.Any])
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(beforeChecked = beforeChecked, beforeDeterminate = beforeDeterminate, beforeIndeterminate = beforeIndeterminate, beforeUnchecked = beforeUnchecked, className = className.asInstanceOf[js.Any], debug = debug, error = error, fireOnInit = fireOnInit, name = name, namespace = namespace, onChange = onChange, onChecked = onChecked, onDeterminate = onDeterminate, onDisable = onDisable, onDisabled = onDisabled, onEnable = onEnable, onEnabled = onEnabled, onIndeterminate = onIndeterminate, onUnchecked = onUnchecked, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, uncheckable = uncheckable.asInstanceOf[js.Any], verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

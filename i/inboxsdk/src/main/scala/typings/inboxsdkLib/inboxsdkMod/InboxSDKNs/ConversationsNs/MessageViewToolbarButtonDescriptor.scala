@@ -24,12 +24,7 @@ object MessageViewToolbarButtonDescriptor {
     title: java.lang.String,
     iconClass: java.lang.String = null
   ): MessageViewToolbarButtonDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("orderHint")(orderHint)
-    __obj.updateDynamic("section")(section)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, onClick = onClick, orderHint = orderHint, section = section, title = title)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     __obj.asInstanceOf[MessageViewToolbarButtonDescriptor]
   }

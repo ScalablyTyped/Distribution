@@ -12,8 +12,8 @@ trait Session extends js.Object {
 object Session {
   @scala.inline
   def apply(flash: Flash): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flash")(flash)
+    val __obj = js.Dynamic.literal(flash = flash)
+  
     __obj.asInstanceOf[Session]
   }
 }

@@ -20,11 +20,8 @@ object AccessToken {
     expires: stdLib.Date,
     userId: java.lang.String
   ): AccessToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, clientId = clientId, expires = expires, userId = userId)
+  
     __obj.asInstanceOf[AccessToken]
   }
 }

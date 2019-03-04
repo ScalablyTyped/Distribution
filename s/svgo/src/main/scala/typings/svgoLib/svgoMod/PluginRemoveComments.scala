@@ -12,8 +12,8 @@ trait PluginRemoveComments extends js.Object {
 object PluginRemoveComments {
   @scala.inline
   def apply(removeComments: scala.Boolean | js.Object): PluginRemoveComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeComments")(removeComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeComments = removeComments.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveComments]
   }
 }

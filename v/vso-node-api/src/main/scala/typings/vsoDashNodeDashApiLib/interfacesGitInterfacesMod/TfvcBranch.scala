@@ -39,18 +39,8 @@ object TfvcBranch {
     relatedBranches: js.Array[TfvcShallowBranchRef],
     url: java.lang.String
   ): TfvcBranch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("relatedBranches")(relatedBranches)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, children = children, createdDate = createdDate, description = description, isDeleted = isDeleted, mappings = mappings, owner = owner, parent = parent, path = path, relatedBranches = relatedBranches, url = url)
+  
     __obj.asInstanceOf[TfvcBranch]
   }
 }

@@ -30,16 +30,8 @@ object ILaddaButton {
     stop: js.Function0[ILaddaButton],
     toggle: js.Function0[ILaddaButton]
   ): ILaddaButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isLoading")(isLoading)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setProgress")(setProgress)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startAfter")(startAfter)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isLoading = isLoading, remove = remove, setProgress = setProgress, start = start, startAfter = startAfter, stop = stop, toggle = toggle)
+  
     __obj.asInstanceOf[ILaddaButton]
   }
 }

@@ -13,9 +13,8 @@ trait GoogleFont extends js.Object {
 object GoogleFont {
   @scala.inline
   def apply(name: java.lang.String, styles: js.Array[java.lang.String]): GoogleFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(name = name, styles = styles)
+  
     __obj.asInstanceOf[GoogleFont]
   }
 }

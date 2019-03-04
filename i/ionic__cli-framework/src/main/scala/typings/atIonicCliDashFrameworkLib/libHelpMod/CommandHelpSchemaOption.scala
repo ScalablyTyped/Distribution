@@ -26,12 +26,8 @@ object CommandHelpSchemaOption {
     `type`: java.lang.String,
     default: java.lang.String | scala.Boolean = null
   ): CommandHelpSchemaOption = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("spec")(spec)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(aliases = aliases, groups = groups, name = name, spec = spec, summary = summary)
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpSchemaOption]
   }

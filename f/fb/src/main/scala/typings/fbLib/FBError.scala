@@ -26,10 +26,8 @@ object FBError {
     error_user_msg: java.lang.String = null,
     error_user_title: java.lang.String = null
   ): FBError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("fbtrace_id")(fbtrace_id)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, fbtrace_id = fbtrace_id, message = message)
+    __obj.updateDynamic("type")(`type`)
     if (error_subcode != null) __obj.updateDynamic("error_subcode")(error_subcode.asInstanceOf[js.Any])
     if (error_user_msg != null) __obj.updateDynamic("error_user_msg")(error_user_msg)
     if (error_user_title != null) __obj.updateDynamic("error_user_title")(error_user_title)

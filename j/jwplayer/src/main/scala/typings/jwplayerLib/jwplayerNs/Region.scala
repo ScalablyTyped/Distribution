@@ -21,11 +21,8 @@ object Region {
     x: jwplayerLib.jwplayerLibNumbers.`0`,
     y: jwplayerLib.jwplayerLibNumbers.`0`
   ): Region = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Region]
   }
 }

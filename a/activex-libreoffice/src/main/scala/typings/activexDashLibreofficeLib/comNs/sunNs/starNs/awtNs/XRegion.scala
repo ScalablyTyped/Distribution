@@ -59,24 +59,8 @@ object XRegion {
     xOrRectangle: js.Function1[Rectangle, scala.Unit],
     xOrRegion: js.Function1[XRegion, scala.Unit]
   ): XRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bounds")(Bounds)
-    __obj.updateDynamic("Rectangles")(Rectangles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("excludeRectangle")(excludeRectangle)
-    __obj.updateDynamic("excludeRegion")(excludeRegion)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getRectangles")(getRectangles)
-    __obj.updateDynamic("intersectRectangle")(intersectRectangle)
-    __obj.updateDynamic("intersectRegion")(intersectRegion)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("unionRectangle")(unionRectangle)
-    __obj.updateDynamic("unionRegion")(unionRegion)
-    __obj.updateDynamic("xOrRectangle")(xOrRectangle)
-    __obj.updateDynamic("xOrRegion")(xOrRegion)
+    val __obj = js.Dynamic.literal(Bounds = Bounds, Rectangles = Rectangles, acquire = acquire, clear = clear, excludeRectangle = excludeRectangle, excludeRegion = excludeRegion, getBounds = getBounds, getRectangles = getRectangles, intersectRectangle = intersectRectangle, intersectRegion = intersectRegion, move = move, queryInterface = queryInterface, release = release, unionRectangle = unionRectangle, unionRegion = unionRegion, xOrRectangle = xOrRectangle, xOrRegion = xOrRegion)
+  
     __obj.asInstanceOf[XRegion]
   }
 }

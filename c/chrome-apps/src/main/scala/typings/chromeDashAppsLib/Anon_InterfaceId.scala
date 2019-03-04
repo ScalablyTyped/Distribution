@@ -18,9 +18,7 @@ object Anon_InterfaceId {
     vendorId: chromeDashAppsLib.chromeNs.integer,
     interfaceId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): Anon_InterfaceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(productId = productId, vendorId = vendorId)
     if (!js.isUndefined(interfaceId)) __obj.updateDynamic("interfaceId")(interfaceId)
     __obj.asInstanceOf[Anon_InterfaceId]
   }

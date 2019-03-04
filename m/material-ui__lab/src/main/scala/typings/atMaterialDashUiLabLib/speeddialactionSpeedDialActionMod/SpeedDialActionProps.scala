@@ -43,8 +43,7 @@ object SpeedDialActionProps {
     tooltipPlacement: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`bottom-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.bottom | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`left-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.left | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`right-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.right | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-end` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`top-start` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.top = null,
     tooltipTitle: reactLib.reactMod.ReactNs.ReactNode = null
   ): SpeedDialActionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)
     if (TooltipClasses != null) __obj.updateDynamic("TooltipClasses")(TooltipClasses)
     if (className != null) __obj.updateDynamic("className")(className)

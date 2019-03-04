@@ -12,8 +12,8 @@ trait statusDetails extends js.Object {
 object statusDetails {
   @scala.inline
   def apply(progress: java.lang.String): statusDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(progress = progress)
+  
     __obj.asInstanceOf[statusDetails]
   }
 }

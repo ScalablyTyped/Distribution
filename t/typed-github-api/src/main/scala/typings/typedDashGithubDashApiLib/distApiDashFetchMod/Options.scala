@@ -21,8 +21,7 @@ object Options {
     oAuthToken: java.lang.String = null,
     version: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.v3 | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`thor-preview` = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userAgent")(userAgent)
+    val __obj = js.Dynamic.literal(userAgent = userAgent)
     if (oAuthToken != null) __obj.updateDynamic("oAuthToken")(oAuthToken)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

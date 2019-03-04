@@ -16,8 +16,7 @@ object JSONPrettyProps {
     json: js.Object | java.lang.String,
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashJsonDashPrettyLib.JSONPretty] = null
   ): JSONPrettyProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     __obj.asInstanceOf[JSONPrettyProps]
   }

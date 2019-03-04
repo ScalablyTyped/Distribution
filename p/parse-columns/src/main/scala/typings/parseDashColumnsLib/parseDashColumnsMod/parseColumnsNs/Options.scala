@@ -21,8 +21,7 @@ object Options {
     headers: js.Array[java.lang.String] = null,
     separator: java.lang.String = null
   ): Options[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(transform = transform)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (separator != null) __obj.updateDynamic("separator")(separator)
     __obj.asInstanceOf[Options[T]]

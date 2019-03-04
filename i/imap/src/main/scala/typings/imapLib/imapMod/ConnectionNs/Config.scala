@@ -51,9 +51,7 @@ object Config {
     xoauth: java.lang.String = null,
     xoauth2: java.lang.String = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(password = password, user = user)
     if (authTimeout != null) __obj.updateDynamic("authTimeout")(authTimeout.asInstanceOf[js.Any])
     if (autotls != null) __obj.updateDynamic("autotls")(autotls)
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])

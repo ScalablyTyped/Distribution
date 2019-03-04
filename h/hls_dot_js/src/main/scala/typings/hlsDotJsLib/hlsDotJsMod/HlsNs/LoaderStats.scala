@@ -42,13 +42,8 @@ object LoaderStats {
     total: scala.Double,
     trequest: scala.Double
   ): LoaderStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bw")(bw)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("tfirst")(tfirst)
-    __obj.updateDynamic("tload")(tload)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("trequest")(trequest)
+    val __obj = js.Dynamic.literal(bw = bw, loaded = loaded, tfirst = tfirst, tload = tload, total = total, trequest = trequest)
+  
     __obj.asInstanceOf[LoaderStats]
   }
 }

@@ -38,10 +38,8 @@ object TraversableComposition {
       ]
     ]
   ): TraversableComposition[F, G] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("traverse")(traverse)
+    val __obj = js.Dynamic.literal(map = map, reduce = reduce, traverse = traverse)
+  
     __obj.asInstanceOf[TraversableComposition[F, G]]
   }
 }

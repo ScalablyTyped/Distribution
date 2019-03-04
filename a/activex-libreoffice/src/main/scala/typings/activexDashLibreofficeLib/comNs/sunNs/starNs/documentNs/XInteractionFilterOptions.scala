@@ -46,14 +46,8 @@ object XInteractionFilterOptions {
       scala.Unit
     ]
   ): XInteractionFilterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FilterOptions")(FilterOptions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFilterOptions")(getFilterOptions)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setFilterOptions")(setFilterOptions)
+    val __obj = js.Dynamic.literal(FilterOptions = FilterOptions, acquire = acquire, getFilterOptions = getFilterOptions, queryInterface = queryInterface, release = release, select = select, setFilterOptions = setFilterOptions)
+  
     __obj.asInstanceOf[XInteractionFilterOptions]
   }
 }

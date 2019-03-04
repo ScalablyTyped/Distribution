@@ -13,9 +13,8 @@ trait Anon_DetectedSourceLanguage extends js.Object {
 object Anon_DetectedSourceLanguage {
   @scala.inline
   def apply(detectedSourceLanguage: java.lang.String, translatedText: java.lang.String): Anon_DetectedSourceLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectedSourceLanguage")(detectedSourceLanguage)
-    __obj.updateDynamic("translatedText")(translatedText)
+    val __obj = js.Dynamic.literal(detectedSourceLanguage = detectedSourceLanguage, translatedText = translatedText)
+  
     __obj.asInstanceOf[Anon_DetectedSourceLanguage]
   }
 }

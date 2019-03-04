@@ -14,10 +14,8 @@ trait Anon_BaseURL extends js.Object {
 object Anon_BaseURL {
   @scala.inline
   def apply(baseURL: java.lang.String, cache: Anon_Ttl, live: Anon_PollTime): Anon_BaseURL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseURL")(baseURL)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("live")(live)
+    val __obj = js.Dynamic.literal(baseURL = baseURL, cache = cache, live = live)
+  
     __obj.asInstanceOf[Anon_BaseURL]
   }
 }

@@ -30,10 +30,8 @@ trait INxValidationError extends js.Object {
 object INxValidationError {
   @scala.inline
   def apply(qContext: java.lang.String, qErrorCode: scala.Double, qExtendedMessage: java.lang.String): INxValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qContext")(qContext)
-    __obj.updateDynamic("qErrorCode")(qErrorCode)
-    __obj.updateDynamic("qExtendedMessage")(qExtendedMessage)
+    val __obj = js.Dynamic.literal(qContext = qContext, qErrorCode = qErrorCode, qExtendedMessage = qExtendedMessage)
+  
     __obj.asInstanceOf[INxValidationError]
   }
 }

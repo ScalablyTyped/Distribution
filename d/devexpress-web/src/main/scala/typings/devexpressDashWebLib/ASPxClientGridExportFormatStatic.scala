@@ -42,13 +42,8 @@ object ASPxClientGridExportFormatStatic {
     Xls: java.lang.String,
     Xlsx: java.lang.String
   ): ASPxClientGridExportFormatStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Csv")(Csv)
-    __obj.updateDynamic("Docx")(Docx)
-    __obj.updateDynamic("Pdf")(Pdf)
-    __obj.updateDynamic("Rtf")(Rtf)
-    __obj.updateDynamic("Xls")(Xls)
-    __obj.updateDynamic("Xlsx")(Xlsx)
+    val __obj = js.Dynamic.literal(Csv = Csv, Docx = Docx, Pdf = Pdf, Rtf = Rtf, Xls = Xls, Xlsx = Xlsx)
+  
     __obj.asInstanceOf[ASPxClientGridExportFormatStatic]
   }
 }

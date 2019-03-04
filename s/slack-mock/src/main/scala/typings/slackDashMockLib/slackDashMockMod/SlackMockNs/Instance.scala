@@ -28,15 +28,8 @@ object Instance {
     slashCommands: SlashCommands[_],
     web: Web[_]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("incomingWebhooks")(incomingWebhooks)
-    __obj.updateDynamic("interactiveButtons")(interactiveButtons)
-    __obj.updateDynamic("outgoingWebhooks")(outgoingWebhooks)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("rtm")(rtm)
-    __obj.updateDynamic("slashCommands")(slashCommands)
-    __obj.updateDynamic("web")(web)
+    val __obj = js.Dynamic.literal(events = events, incomingWebhooks = incomingWebhooks, interactiveButtons = interactiveButtons, outgoingWebhooks = outgoingWebhooks, reset = reset, rtm = rtm, slashCommands = slashCommands, web = web)
+  
     __obj.asInstanceOf[Instance]
   }
 }

@@ -12,8 +12,8 @@ trait ValueObject extends js.Object {
 object ValueObject {
   @scala.inline
   def apply(value: java.lang.String): ValueObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[ValueObject]
   }
 }

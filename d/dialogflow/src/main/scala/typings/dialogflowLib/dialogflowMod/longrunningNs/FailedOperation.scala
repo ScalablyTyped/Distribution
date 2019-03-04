@@ -21,11 +21,8 @@ object FailedOperation {
     metadata: js.Any,
     name: java.lang.String
   ): FailedOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(done = done, error = error, metadata = metadata, name = name)
+  
     __obj.asInstanceOf[FailedOperation]
   }
 }

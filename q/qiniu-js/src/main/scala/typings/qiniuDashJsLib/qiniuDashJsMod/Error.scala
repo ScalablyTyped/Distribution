@@ -23,10 +23,7 @@ object Error {
     reqId: java.lang.String,
     isRequestError: qiniuDashJsLib.qiniuDashJsLibNumbers.`true` = null
   ): Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reqId")(reqId)
+    val __obj = js.Dynamic.literal(code = code, message = message, reqId = reqId)
     if (isRequestError != null) __obj.updateDynamic("isRequestError")(isRequestError)
     __obj.asInstanceOf[Error]
   }

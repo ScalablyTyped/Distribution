@@ -18,8 +18,7 @@ object Anon_Auto {
     newValue: atomLib.atomLibStrings.auto | atomLib.atomLibStrings.soft | atomLib.atomLibStrings.hard,
     oldValue: atomLib.atomLibStrings.auto | atomLib.atomLibStrings.soft | atomLib.atomLibStrings.hard = null
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Auto]
   }

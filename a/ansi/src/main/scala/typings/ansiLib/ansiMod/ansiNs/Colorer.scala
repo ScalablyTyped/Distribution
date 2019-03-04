@@ -73,28 +73,7 @@ object Colorer {
     yellow: js.Function0[Cursor],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] = null
   ): Colorer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_setColorCode")(_setColorCode)
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("brightBlack")(brightBlack)
-    __obj.updateDynamic("brightBlue")(brightBlue)
-    __obj.updateDynamic("brightCyan")(brightCyan)
-    __obj.updateDynamic("brightGreen")(brightGreen)
-    __obj.updateDynamic("brightMagenta")(brightMagenta)
-    __obj.updateDynamic("brightRed")(brightRed)
-    __obj.updateDynamic("brightWhite")(brightWhite)
-    __obj.updateDynamic("brightYellow")(brightYellow)
-    __obj.updateDynamic("cyan")(cyan)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("grey")(grey)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("magenta")(magenta)
-    __obj.updateDynamic("red")(red)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("white")(white)
-    __obj.updateDynamic("yellow")(yellow)
+    val __obj = js.Dynamic.literal(_setColorCode = _setColorCode, black = black, blue = blue, brightBlack = brightBlack, brightBlue = brightBlue, brightCyan = brightCyan, brightGreen = brightGreen, brightMagenta = brightMagenta, brightRed = brightRed, brightWhite = brightWhite, brightYellow = brightYellow, cyan = cyan, green = green, grey = grey, hex = hex, magenta = magenta, red = red, reset = reset, rgb = rgb, white = white, yellow = yellow)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Colorer]
   }

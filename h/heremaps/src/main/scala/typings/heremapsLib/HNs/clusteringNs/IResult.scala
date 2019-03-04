@@ -39,11 +39,8 @@ object IResult {
     getWeight: js.Function0[scala.Double],
     isCluster: js.Function0[scala.Boolean]
   ): IResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMinZoom")(getMinZoom)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getWeight")(getWeight)
-    __obj.updateDynamic("isCluster")(isCluster)
+    val __obj = js.Dynamic.literal(getMinZoom = getMinZoom, getPosition = getPosition, getWeight = getWeight, isCluster = isCluster)
+  
     __obj.asInstanceOf[IResult]
   }
 }

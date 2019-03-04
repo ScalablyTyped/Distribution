@@ -24,8 +24,7 @@ object StoreCreatorOptions {
     serializeState: js.Any = null,
     storeKey: java.lang.String = null
   ): StoreCreatorOptions[TInitialState, TStateProps, TDispatchProps, TOwnProps, TMergedProps] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isServer")(isServer)
+    val __obj = js.Dynamic.literal(isServer = isServer)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (deserializeState != null) __obj.updateDynamic("deserializeState")(deserializeState)
     if (query != null) __obj.updateDynamic("query")(query)

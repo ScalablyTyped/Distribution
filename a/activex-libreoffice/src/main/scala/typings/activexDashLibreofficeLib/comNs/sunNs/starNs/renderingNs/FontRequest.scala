@@ -63,11 +63,8 @@ object FontRequest {
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     ReferenceAdvancement: scala.Double
   ): FontRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CellSize")(CellSize)
-    __obj.updateDynamic("FontDescription")(FontDescription)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("ReferenceAdvancement")(ReferenceAdvancement)
+    val __obj = js.Dynamic.literal(CellSize = CellSize, FontDescription = FontDescription, Locale = Locale, ReferenceAdvancement = ReferenceAdvancement)
+  
     __obj.asInstanceOf[FontRequest]
   }
 }

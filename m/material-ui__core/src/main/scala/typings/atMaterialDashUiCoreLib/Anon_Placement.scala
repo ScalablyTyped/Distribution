@@ -16,8 +16,7 @@ object Anon_Placement {
     placement: atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null
   ): Anon_Placement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placement")(placement)
+    val __obj = js.Dynamic.literal(placement = placement)
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
     __obj.asInstanceOf[Anon_Placement]
   }

@@ -16,9 +16,7 @@ trait Directive extends Node {
 object Directive {
   @scala.inline
   def apply(kind: java.lang.String, name: Name, arguments: js.Array[Argument] = null, loc: Location = null): Directive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Directive]

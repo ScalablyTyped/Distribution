@@ -22,9 +22,8 @@ trait DataResult extends js.Object {
 object DataResult {
   @scala.inline
   def apply(Flags: scala.Double, Value: scala.Double): DataResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Flags = Flags, Value = Value)
+  
     __obj.asInstanceOf[DataResult]
   }
 }

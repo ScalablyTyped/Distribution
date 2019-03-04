@@ -20,8 +20,8 @@ object TypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.TypeAnnotation,
     typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
   ): TypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeAnnotation]
   }
 }

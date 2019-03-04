@@ -49,12 +49,8 @@ object OperationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningListOperationsResponse]
     ]
   ): OperationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, delete = delete, get = get, list = list)
+  
     __obj.asInstanceOf[OperationsResource]
   }
 }

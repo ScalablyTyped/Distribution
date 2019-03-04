@@ -22,12 +22,8 @@ object MerkleTree {
     nodes: js.Function0[scala.Double],
     root: js.Function0[java.lang.String]
   ): MerkleTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("levels")(levels)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(depth = depth, level = level, levels = levels, nodes = nodes, root = root)
+  
     __obj.asInstanceOf[MerkleTree]
   }
 }

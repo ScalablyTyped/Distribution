@@ -13,9 +13,8 @@ trait PivotSchemaAxes extends js.Object {
 object PivotSchemaAxes {
   @scala.inline
   def apply(columns: PivotSchemaColumnAxis, rows: PivotSchemaRowAxis): PivotSchemaAxes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
+  
     __obj.asInstanceOf[PivotSchemaAxes]
   }
 }

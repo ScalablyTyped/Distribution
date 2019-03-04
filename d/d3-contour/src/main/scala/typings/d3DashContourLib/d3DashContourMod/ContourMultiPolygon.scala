@@ -22,10 +22,9 @@ object ContourMultiPolygon {
     value: scala.Double,
     bbox: geojsonLib.geojsonMod.BBox = null
   ): ContourMultiPolygon = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("coordinates")(coordinates)
+    val __obj = js.Dynamic.literal(coordinates = coordinates, value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(type_MultiPolygon)
-    __obj.updateDynamic("value")(value)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContourMultiPolygon]
   }

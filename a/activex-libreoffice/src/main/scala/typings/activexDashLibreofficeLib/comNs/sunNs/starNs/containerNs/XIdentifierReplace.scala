@@ -32,17 +32,8 @@ object XIdentifierReplace {
     release: js.Function0[scala.Unit],
     replaceByIdentifer: js.Function2[scala.Double, js.Any, scala.Unit]
   ): XIdentifierReplace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Identifiers")(Identifiers)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIdentifier")(getByIdentifier)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getIdentifiers")(getIdentifiers)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceByIdentifer")(replaceByIdentifer)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, queryInterface = queryInterface, release = release, replaceByIdentifer = replaceByIdentifer)
+  
     __obj.asInstanceOf[XIdentifierReplace]
   }
 }

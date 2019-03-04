@@ -30,8 +30,7 @@ object FileConsumer {
     ],
     isIncludeDir: js.UndefOr[scala.Boolean] = js.undefined
   ): FileConsumer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consume")(consume)
+    val __obj = js.Dynamic.literal(consume = consume)
     if (!js.isUndefined(isIncludeDir)) __obj.updateDynamic("isIncludeDir")(isIncludeDir)
     __obj.asInstanceOf[FileConsumer]
   }

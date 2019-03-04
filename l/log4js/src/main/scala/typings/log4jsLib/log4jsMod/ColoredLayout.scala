@@ -12,8 +12,8 @@ trait ColoredLayout extends Layout {
 object ColoredLayout {
   @scala.inline
   def apply(`type`: log4jsLib.log4jsLibStrings.colored | log4jsLib.log4jsLibStrings.coloured): ColoredLayout = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColoredLayout]
   }
 }

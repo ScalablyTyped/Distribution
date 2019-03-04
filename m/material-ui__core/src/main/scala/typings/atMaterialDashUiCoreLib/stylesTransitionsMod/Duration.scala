@@ -26,14 +26,8 @@ object Duration {
     shortest: scala.Double,
     standard: scala.Double
   ): Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complex")(complex)
-    __obj.updateDynamic("enteringScreen")(enteringScreen)
-    __obj.updateDynamic("leavingScreen")(leavingScreen)
-    __obj.updateDynamic("short")(short)
-    __obj.updateDynamic("shorter")(shorter)
-    __obj.updateDynamic("shortest")(shortest)
-    __obj.updateDynamic("standard")(standard)
+    val __obj = js.Dynamic.literal(complex = complex, enteringScreen = enteringScreen, leavingScreen = leavingScreen, short = short, shorter = shorter, shortest = shortest, standard = standard)
+  
     __obj.asInstanceOf[Duration]
   }
 }

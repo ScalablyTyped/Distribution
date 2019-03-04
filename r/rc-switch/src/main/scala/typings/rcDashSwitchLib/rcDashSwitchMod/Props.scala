@@ -36,9 +36,7 @@ object Props {
     prefixCls: java.lang.String = null,
     tabIndex: scala.Int | scala.Double = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkedChildren")(checkedChildren.asInstanceOf[js.Any])
-    __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkedChildren = checkedChildren.asInstanceOf[js.Any], unCheckedChildren = unCheckedChildren.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (className != null) __obj.updateDynamic("className")(className)

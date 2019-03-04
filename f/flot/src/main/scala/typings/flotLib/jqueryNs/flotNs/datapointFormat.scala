@@ -22,9 +22,7 @@ object datapointFormat {
     x: js.UndefOr[scala.Boolean] = js.undefined,
     y: js.UndefOr[scala.Boolean] = js.undefined
   ): datapointFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(number = number, required = required)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(x)) __obj.updateDynamic("x")(x)
     if (!js.isUndefined(y)) __obj.updateDynamic("y")(y)

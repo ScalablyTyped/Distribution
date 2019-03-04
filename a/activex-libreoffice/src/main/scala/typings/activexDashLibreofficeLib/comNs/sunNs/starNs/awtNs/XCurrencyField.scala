@@ -86,33 +86,8 @@ object XCurrencyField {
     setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
     setValue: js.Function1[scala.Double, scala.Unit]
   ): XCurrencyField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DecimalDigits")(DecimalDigits)
-    __obj.updateDynamic("First")(First)
-    __obj.updateDynamic("Last")(Last)
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("Min")(Min)
-    __obj.updateDynamic("SpinSize")(SpinSize)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDecimalDigits")(getDecimalDigits)
-    __obj.updateDynamic("getFirst")(getFirst)
-    __obj.updateDynamic("getLast")(getLast)
-    __obj.updateDynamic("getMax")(getMax)
-    __obj.updateDynamic("getMin")(getMin)
-    __obj.updateDynamic("getSpinSize")(getSpinSize)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDecimalDigits")(setDecimalDigits)
-    __obj.updateDynamic("setFirst")(setFirst)
-    __obj.updateDynamic("setLast")(setLast)
-    __obj.updateDynamic("setMax")(setMax)
-    __obj.updateDynamic("setMin")(setMin)
-    __obj.updateDynamic("setSpinSize")(setSpinSize)
-    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(DecimalDigits = DecimalDigits, First = First, Last = Last, Max = Max, Min = Min, SpinSize = SpinSize, Value = Value, acquire = acquire, getDecimalDigits = getDecimalDigits, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getSpinSize = getSpinSize, getValue = getValue, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setDecimalDigits = setDecimalDigits, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setSpinSize = setSpinSize, setStrictFormat = setStrictFormat, setValue = setValue)
+  
     __obj.asInstanceOf[XCurrencyField]
   }
 }

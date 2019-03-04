@@ -127,8 +127,7 @@ object JQueryJqGridColumn {
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): JQueryJqGridColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (cellattr != null) __obj.updateDynamic("cellattr")(cellattr)
     if (classes != null) __obj.updateDynamic("classes")(classes)

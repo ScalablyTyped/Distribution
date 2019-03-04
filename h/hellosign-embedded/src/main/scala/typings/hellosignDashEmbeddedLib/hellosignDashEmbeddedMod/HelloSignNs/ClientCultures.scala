@@ -65,15 +65,8 @@ object ClientCultures {
     ZH_CN: java.lang.String,
     supportedCultures: js.Array[java.lang.String]
   ): ClientCultures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DA_DK")(DA_DK)
-    __obj.updateDynamic("DE_DE")(DE_DE)
-    __obj.updateDynamic("EN_US")(EN_US)
-    __obj.updateDynamic("FR_FR")(FR_FR)
-    __obj.updateDynamic("NL_NL")(NL_NL)
-    __obj.updateDynamic("SV_SE")(SV_SE)
-    __obj.updateDynamic("ZH_CN")(ZH_CN)
-    __obj.updateDynamic("supportedCultures")(supportedCultures)
+    val __obj = js.Dynamic.literal(DA_DK = DA_DK, DE_DE = DE_DE, EN_US = EN_US, FR_FR = FR_FR, NL_NL = NL_NL, SV_SE = SV_SE, ZH_CN = ZH_CN, supportedCultures = supportedCultures)
+  
     __obj.asInstanceOf[ClientCultures]
   }
 }

@@ -52,16 +52,7 @@ object Anon_Avatar {
     realname: java.lang.String = null,
     timecreated: scala.Int | scala.Double = null
   ): Anon_Avatar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("avatarfull")(avatarfull)
-    __obj.updateDynamic("avatarmedium")(avatarmedium)
-    __obj.updateDynamic("communityvisibilitystate")(communityvisibilitystate)
-    __obj.updateDynamic("lastlogoff")(lastlogoff)
-    __obj.updateDynamic("personaname")(personaname)
-    __obj.updateDynamic("personastate")(personastate)
-    __obj.updateDynamic("profileurl")(profileurl)
-    __obj.updateDynamic("steamid")(steamid)
+    val __obj = js.Dynamic.literal(avatar = avatar, avatarfull = avatarfull, avatarmedium = avatarmedium, communityvisibilitystate = communityvisibilitystate, lastlogoff = lastlogoff, personaname = personaname, personastate = personastate, profileurl = profileurl, steamid = steamid)
     if (commentpermission != null) __obj.updateDynamic("commentpermission")(commentpermission.asInstanceOf[js.Any])
     if (gameextrainfo != null) __obj.updateDynamic("gameextrainfo")(gameextrainfo)
     if (gameid != null) __obj.updateDynamic("gameid")(gameid)

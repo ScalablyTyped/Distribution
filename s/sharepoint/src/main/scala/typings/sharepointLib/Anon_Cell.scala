@@ -28,15 +28,8 @@ object Anon_Cell {
     TimescaleTier: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.TimescaleTier,
     Widget: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget
   ): Anon_Cell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cell")(Cell)
-    __obj.updateDynamic("GridPane")(GridPane)
-    __obj.updateDynamic("Header")(Header)
-    __obj.updateDynamic("RowHeaderStyle")(RowHeaderStyle)
-    __obj.updateDynamic("Splitter")(Splitter)
-    __obj.updateDynamic("SplitterHandle")(SplitterHandle)
-    __obj.updateDynamic("TimescaleTier")(TimescaleTier)
-    __obj.updateDynamic("Widget")(Widget)
+    val __obj = js.Dynamic.literal(Cell = Cell, GridPane = GridPane, Header = Header, RowHeaderStyle = RowHeaderStyle, Splitter = Splitter, SplitterHandle = SplitterHandle, TimescaleTier = TimescaleTier, Widget = Widget)
+  
     __obj.asInstanceOf[Anon_Cell]
   }
 }

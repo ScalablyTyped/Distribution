@@ -49,28 +49,8 @@ object ChartTwoAxisXSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): ChartTwoAxisXSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HasSecondaryXAxis")(HasSecondaryXAxis)
-    __obj.updateDynamic("HasSecondaryXAxisDescription")(HasSecondaryXAxisDescription)
-    __obj.updateDynamic("HasSecondaryXAxisTitle")(HasSecondaryXAxisTitle)
-    __obj.updateDynamic("HasXAxis")(HasXAxis)
-    __obj.updateDynamic("HasXAxisDescription")(HasXAxisDescription)
-    __obj.updateDynamic("HasXAxisGrid")(HasXAxisGrid)
-    __obj.updateDynamic("HasXAxisHelpGrid")(HasXAxisHelpGrid)
-    __obj.updateDynamic("HasXAxisTitle")(HasXAxisTitle)
-    __obj.updateDynamic("SecondaryXAxis")(SecondaryXAxis)
-    __obj.updateDynamic("XAxis")(XAxis)
-    __obj.updateDynamic("XAxisTitle")(XAxisTitle)
-    __obj.updateDynamic("XHelpGrid")(XHelpGrid)
-    __obj.updateDynamic("XMainGrid")(XMainGrid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSecondaryXAxis")(getSecondaryXAxis)
-    __obj.updateDynamic("getXAxis")(getXAxis)
-    __obj.updateDynamic("getXAxisTitle")(getXAxisTitle)
-    __obj.updateDynamic("getXHelpGrid")(getXHelpGrid)
-    __obj.updateDynamic("getXMainGrid")(getXMainGrid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HasSecondaryXAxis = HasSecondaryXAxis, HasSecondaryXAxisDescription = HasSecondaryXAxisDescription, HasSecondaryXAxisTitle = HasSecondaryXAxisTitle, HasXAxis = HasXAxis, HasXAxisDescription = HasXAxisDescription, HasXAxisGrid = HasXAxisGrid, HasXAxisHelpGrid = HasXAxisHelpGrid, HasXAxisTitle = HasXAxisTitle, SecondaryXAxis = SecondaryXAxis, XAxis = XAxis, XAxisTitle = XAxisTitle, XHelpGrid = XHelpGrid, XMainGrid = XMainGrid, acquire = acquire, getSecondaryXAxis = getSecondaryXAxis, getXAxis = getXAxis, getXAxisTitle = getXAxisTitle, getXHelpGrid = getXHelpGrid, getXMainGrid = getXMainGrid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[ChartTwoAxisXSupplier]
   }
 }

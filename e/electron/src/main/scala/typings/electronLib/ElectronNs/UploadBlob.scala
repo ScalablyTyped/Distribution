@@ -20,8 +20,8 @@ trait UploadBlob extends js.Object {
 object UploadBlob {
   @scala.inline
   def apply(blobUUID: java.lang.String, `type`: java.lang.String): UploadBlob = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("blobUUID")(blobUUID)
+    val __obj = js.Dynamic.literal(blobUUID = blobUUID)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UploadBlob]
   }
 }

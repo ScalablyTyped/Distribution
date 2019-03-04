@@ -18,8 +18,8 @@ object SavedColumnsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SavedColumnList]
     ]
   ): SavedColumnsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[SavedColumnsResource]
   }
 }

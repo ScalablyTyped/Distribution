@@ -61,36 +61,8 @@ object CellAnnotation {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): CellAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AnnotationShape")(AnnotationShape)
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createTextCursor")(createTextCursor)
-    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
-    __obj.updateDynamic("getAnnotationShape")(getAnnotationShape)
-    __obj.updateDynamic("getAuthor")(getAuthor)
-    __obj.updateDynamic("getDate")(getDate)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getIsVisible")(getIsVisible)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
-    __obj.updateDynamic("insertString")(insertString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setIsVisible")(setIsVisible)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(AnnotationShape = AnnotationShape, Author = Author, Date = Date, End = End, IsVisible = IsVisible, Parent = Parent, Position = Position, Start = Start, String = String, acquire = acquire, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getAnnotationShape = getAnnotationShape, getAuthor = getAuthor, getDate = getDate, getEnd = getEnd, getIsVisible = getIsVisible, getParent = getParent, getPosition = getPosition, getStart = getStart, getString = getString, getText = getText, insertControlCharacter = insertControlCharacter, insertString = insertString, queryInterface = queryInterface, release = release, setIsVisible = setIsVisible, setParent = setParent, setString = setString)
+  
     __obj.asInstanceOf[CellAnnotation]
   }
 }

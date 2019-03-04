@@ -12,8 +12,8 @@ trait TemplateElement extends js.Object {
 object TemplateElement {
   @scala.inline
   def apply(element: java.lang.String | stdLib.Node): TemplateElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TemplateElement]
   }
 }

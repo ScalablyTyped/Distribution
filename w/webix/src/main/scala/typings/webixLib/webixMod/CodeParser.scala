@@ -16,9 +16,8 @@ object CodeParser {
     collapseNames: js.Function1[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]],
     expandNames: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], js.Any]
   ): CodeParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseNames")(collapseNames)
-    __obj.updateDynamic("expandNames")(expandNames)
+    val __obj = js.Dynamic.literal(collapseNames = collapseNames, expandNames = expandNames)
+  
     __obj.asInstanceOf[CodeParser]
   }
 }

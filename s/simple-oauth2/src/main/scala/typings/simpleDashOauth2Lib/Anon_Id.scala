@@ -24,9 +24,7 @@ object Anon_Id {
     idParamName: ClientIdName = null,
     secretParamName: java.lang.String = null
   ): Anon_Id[ClientIdName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(id = id, secret = secret)
     if (idParamName != null) __obj.updateDynamic("idParamName")(idParamName.asInstanceOf[js.Any])
     if (secretParamName != null) __obj.updateDynamic("secretParamName")(secretParamName)
     __obj.asInstanceOf[Anon_Id[ClientIdName]]

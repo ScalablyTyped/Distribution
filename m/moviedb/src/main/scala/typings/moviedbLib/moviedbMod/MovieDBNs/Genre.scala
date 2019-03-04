@@ -13,9 +13,8 @@ trait Genre extends js.Object {
 object Genre {
   @scala.inline
   def apply(id: scala.Double, name: java.lang.String): Genre = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[Genre]
   }
 }

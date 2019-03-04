@@ -27,11 +27,8 @@ object HighlightedRange {
     PreferredColor: scala.Double,
     RangeRepresentation: java.lang.String
   ): HighlightedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowMerginigWithOtherRanges")(AllowMerginigWithOtherRanges)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("PreferredColor")(PreferredColor)
-    __obj.updateDynamic("RangeRepresentation")(RangeRepresentation)
+    val __obj = js.Dynamic.literal(AllowMerginigWithOtherRanges = AllowMerginigWithOtherRanges, Index = Index, PreferredColor = PreferredColor, RangeRepresentation = RangeRepresentation)
+  
     __obj.asInstanceOf[HighlightedRange]
   }
 }

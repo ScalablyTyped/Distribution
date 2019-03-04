@@ -12,8 +12,8 @@ trait Anon_Verbatim extends js.Object {
 object Anon_Verbatim {
   @scala.inline
   def apply(verbatim: java.lang.String): Anon_Verbatim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("verbatim")(verbatim)
+    val __obj = js.Dynamic.literal(verbatim = verbatim)
+  
     __obj.asInstanceOf[Anon_Verbatim]
   }
 }

@@ -20,8 +20,7 @@ object Anon_AddonTypeAppend {
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null
   ): Anon_AddonTypeAppend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addonType")(addonType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

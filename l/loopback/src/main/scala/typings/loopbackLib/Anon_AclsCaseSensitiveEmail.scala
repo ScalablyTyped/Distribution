@@ -32,17 +32,8 @@ object Anon_AclsCaseSensitiveEmail {
     saltWorkFactor: scala.Double,
     ttl: scala.Double
   ): Anon_AclsCaseSensitiveEmail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acls")(acls)
-    __obj.updateDynamic("caseSensitiveEmail")(caseSensitiveEmail)
-    __obj.updateDynamic("emailVerificationRequired")(emailVerificationRequired)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("maxTTL")(maxTTL)
-    __obj.updateDynamic("realmDelimiter")(realmDelimiter)
-    __obj.updateDynamic("realmRequired")(realmRequired)
-    __obj.updateDynamic("resetPasswordTokenTTL")(resetPasswordTokenTTL)
-    __obj.updateDynamic("saltWorkFactor")(saltWorkFactor)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(acls = acls, caseSensitiveEmail = caseSensitiveEmail, emailVerificationRequired = emailVerificationRequired, http = http, maxTTL = maxTTL, realmDelimiter = realmDelimiter, realmRequired = realmRequired, resetPasswordTokenTTL = resetPasswordTokenTTL, saltWorkFactor = saltWorkFactor, ttl = ttl)
+  
     __obj.asInstanceOf[Anon_AclsCaseSensitiveEmail]
   }
 }

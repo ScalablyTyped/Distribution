@@ -19,9 +19,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(ios: stdLib.RegExp, mobile: stdLib.RegExp): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ios")(ios)
-    __obj.updateDynamic("mobile")(mobile)
+    val __obj = js.Dynamic.literal(ios = ios, mobile = mobile)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

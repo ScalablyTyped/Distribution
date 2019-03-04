@@ -22,10 +22,7 @@ object ComputedKeyframe {
     StringDictionary: /* property */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Null]] = null,
     offset: scala.Int | scala.Double = null
   ): ComputedKeyframe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("composite")(composite)
-    __obj.updateDynamic("computedOffset")(computedOffset)
-    __obj.updateDynamic("easing")(easing)
+    val __obj = js.Dynamic.literal(composite = composite, computedOffset = computedOffset, easing = easing)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputedKeyframe]

@@ -26,14 +26,8 @@ object SSHKey {
     pubkey: java.lang.String,
     updated: java.lang.String
   ): SSHKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotation")(annotation)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pubkey")(pubkey)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(annotation = annotation, created = created, fingerprint = fingerprint, id = id, name = name, pubkey = pubkey, updated = updated)
+  
     __obj.asInstanceOf[SSHKey]
   }
 }

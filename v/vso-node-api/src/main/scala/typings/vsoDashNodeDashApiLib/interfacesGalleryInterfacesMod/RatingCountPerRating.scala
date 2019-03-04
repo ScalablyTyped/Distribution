@@ -19,9 +19,8 @@ trait RatingCountPerRating extends js.Object {
 object RatingCountPerRating {
   @scala.inline
   def apply(rating: scala.Double, ratingCount: scala.Double): RatingCountPerRating = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("ratingCount")(ratingCount)
+    val __obj = js.Dynamic.literal(rating = rating, ratingCount = ratingCount)
+  
     __obj.asInstanceOf[RatingCountPerRating]
   }
 }

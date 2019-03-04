@@ -70,8 +70,7 @@ object CreateDomainOptions {
     snapshotThreshold: scala.Int | scala.Double = null,
     useLoaderExtensions: cqrsDashDomainLib.cqrsDashDomainLibNumbers.`true` = null
   ): CreateDomainOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainPath")(domainPath)
+    val __obj = js.Dynamic.literal(domainPath = domainPath)
     if (aggregateLock != null) __obj.updateDynamic("aggregateLock")(aggregateLock)
     if (commandRejectedEventName != null) __obj.updateDynamic("commandRejectedEventName")(commandRejectedEventName)
     if (deduplication != null) __obj.updateDynamic("deduplication")(deduplication)

@@ -37,9 +37,7 @@ object ImageCropData {
     displaySize: reactDashNativeLib.Anon_Height = null,
     resizeMode: reactDashNativeLib.reactDashNativeLibStrings.contain | reactDashNativeLib.reactDashNativeLibStrings.cover | reactDashNativeLib.reactDashNativeLibStrings.stretch = null
   ): ImageCropData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(offset = offset, size = size)
     if (displaySize != null) __obj.updateDynamic("displaySize")(displaySize)
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageCropData]

@@ -16,9 +16,8 @@ object IHashComputation {
     append: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Unit],
     getValueAndReset: js.Function0[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer]
   ): IHashComputation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("getValueAndReset")(getValueAndReset)
+    val __obj = js.Dynamic.literal(append = append, getValueAndReset = getValueAndReset)
+  
     __obj.asInstanceOf[IHashComputation]
   }
 }

@@ -26,14 +26,8 @@ object Anon_Arrow {
     svgStyle: js.Object,
     width: scala.Double
   ): Anon_Arrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("endConnectorType")(endConnectorType.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("startConnectorType")(startConnectorType.asInstanceOf[js.Any])
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(color = color, endConnectorType = endConnectorType.asInstanceOf[js.Any], labelStyle = labelStyle, startConnectorType = startConnectorType.asInstanceOf[js.Any], svgClassName = svgClassName, svgStyle = svgStyle, width = width)
+  
     __obj.asInstanceOf[Anon_Arrow]
   }
 }

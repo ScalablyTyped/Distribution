@@ -22,11 +22,7 @@ object Anon_Context {
     width: scala.Double,
     stroke: java.lang.String = null
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(context = context, height = height, items = items, width = width)
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
     __obj.asInstanceOf[Anon_Context]
   }

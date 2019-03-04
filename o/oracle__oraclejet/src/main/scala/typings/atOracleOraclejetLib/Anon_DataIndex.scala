@@ -14,10 +14,8 @@ trait Anon_DataIndex[D, K] extends js.Object {
 object Anon_DataIndex {
   @scala.inline
   def apply[D, K](data: D, index: scala.Double, key: K): Anon_DataIndex[D, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index, key = key.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DataIndex[D, K]]
   }
 }

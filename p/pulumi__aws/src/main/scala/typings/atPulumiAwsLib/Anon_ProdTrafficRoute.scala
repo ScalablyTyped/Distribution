@@ -18,9 +18,7 @@ object Anon_ProdTrafficRoute {
     targetGroups: js.Array[Anon_NameString_201725593],
     testTrafficRoute: Anon_ListenerArns = null
   ): Anon_ProdTrafficRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prodTrafficRoute")(prodTrafficRoute)
-    __obj.updateDynamic("targetGroups")(targetGroups)
+    val __obj = js.Dynamic.literal(prodTrafficRoute = prodTrafficRoute, targetGroups = targetGroups)
     if (testTrafficRoute != null) __obj.updateDynamic("testTrafficRoute")(testTrafficRoute)
     __obj.asInstanceOf[Anon_ProdTrafficRoute]
   }

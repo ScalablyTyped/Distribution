@@ -42,10 +42,7 @@ object RelationMapping {
       QueryBuilder[_, js.Array[_], js.Array[_]]
     ]) | java.lang.String | js.Object = null
   ): RelationMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("modelClass")(modelClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("relation")(relation)
+    val __obj = js.Dynamic.literal(join = join, modelClass = modelClass.asInstanceOf[js.Any], relation = relation)
     if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (modify != null) __obj.updateDynamic("modify")(modify.asInstanceOf[js.Any])

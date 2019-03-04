@@ -26,14 +26,8 @@ object DatabaseAccount {
     ReadableLocations: js.Array[java.lang.String],
     WritableLocations: js.Array[java.lang.String]
   ): DatabaseAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConsistencyPolicy")(ConsistencyPolicy)
-    __obj.updateDynamic("CurrentMediaStorageUsageInMB")(CurrentMediaStorageUsageInMB)
-    __obj.updateDynamic("DatabasesLink")(DatabasesLink)
-    __obj.updateDynamic("MaxMediaStorageUsageInMB")(MaxMediaStorageUsageInMB)
-    __obj.updateDynamic("MediaLink")(MediaLink)
-    __obj.updateDynamic("ReadableLocations")(ReadableLocations)
-    __obj.updateDynamic("WritableLocations")(WritableLocations)
+    val __obj = js.Dynamic.literal(ConsistencyPolicy = ConsistencyPolicy, CurrentMediaStorageUsageInMB = CurrentMediaStorageUsageInMB, DatabasesLink = DatabasesLink, MaxMediaStorageUsageInMB = MaxMediaStorageUsageInMB, MediaLink = MediaLink, ReadableLocations = ReadableLocations, WritableLocations = WritableLocations)
+  
     __obj.asInstanceOf[DatabaseAccount]
   }
 }

@@ -12,8 +12,8 @@ trait IDialogProvider extends js.Object {
 object IDialogProvider {
   @scala.inline
   def apply(addPreset: js.Function2[java.lang.String, angularDashMaterialLib.Anon_Methods, IDialogProvider]): IDialogProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPreset")(addPreset)
+    val __obj = js.Dynamic.literal(addPreset = addPreset)
+  
     __obj.asInstanceOf[IDialogProvider]
   }
 }

@@ -21,10 +21,7 @@ object ContextMenuSelectEvent {
     target: stdLib.Element = null,
     `type`: java.lang.String = null
   ): ContextMenuSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     if (target != null) __obj.updateDynamic("target")(target)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

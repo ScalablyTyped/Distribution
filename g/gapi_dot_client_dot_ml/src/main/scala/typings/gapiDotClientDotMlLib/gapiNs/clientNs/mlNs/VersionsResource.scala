@@ -91,13 +91,8 @@ object VersionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
     ]
   ): VersionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setDefault")(setDefault)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, setDefault = setDefault)
+  
     __obj.asInstanceOf[VersionsResource]
   }
 }

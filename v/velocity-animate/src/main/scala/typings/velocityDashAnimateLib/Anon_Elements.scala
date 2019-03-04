@@ -18,10 +18,8 @@ object Anon_Elements {
     options: velocityDashAnimateLib.jqueryNs.velocityNs.Options,
     properties: velocityDashAnimateLib.jqueryNs.velocityNs.Properties
   ): Anon_Elements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], options = options, properties = properties)
+  
     __obj.asInstanceOf[Anon_Elements]
   }
 }

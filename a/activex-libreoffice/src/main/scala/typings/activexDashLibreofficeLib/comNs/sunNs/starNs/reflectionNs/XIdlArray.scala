@@ -54,14 +54,8 @@ object XIdlArray {
     release: js.Function0[scala.Unit],
     set: js.Function3[js.Array[_], scala.Double, js.Any, scala.Unit]
   ): XIdlArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getLen")(getLen)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("realloc")(realloc)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(acquire = acquire, get = get, getLen = getLen, queryInterface = queryInterface, realloc = realloc, release = release, set = set)
+  
     __obj.asInstanceOf[XIdlArray]
   }
 }

@@ -13,8 +13,7 @@ trait ThemeProviderProps extends js.Object {
 object ThemeProviderProps {
   @scala.inline
   def apply(theme: Theme, children: reactLib.reactMod.ReactNs.ReactElement[_] = null): ThemeProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[ThemeProviderProps]
   }

@@ -23,10 +23,8 @@ trait DataProviderExceptionDetails extends js.Object {
 object DataProviderExceptionDetails {
   @scala.inline
   def apply(exceptionType: java.lang.String, message: java.lang.String, stackTrace: java.lang.String): DataProviderExceptionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exceptionType")(exceptionType)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stackTrace")(stackTrace)
+    val __obj = js.Dynamic.literal(exceptionType = exceptionType, message = message, stackTrace = stackTrace)
+  
     __obj.asInstanceOf[DataProviderExceptionDetails]
   }
 }

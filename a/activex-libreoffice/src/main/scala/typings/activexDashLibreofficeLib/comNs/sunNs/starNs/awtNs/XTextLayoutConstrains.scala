@@ -23,12 +23,8 @@ object XTextLayoutConstrains {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextLayoutConstrains = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnsAndLines")(getColumnsAndLines)
-    __obj.updateDynamic("getMinimumSize")(getMinimumSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getColumnsAndLines = getColumnsAndLines, getMinimumSize = getMinimumSize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextLayoutConstrains]
   }
 }

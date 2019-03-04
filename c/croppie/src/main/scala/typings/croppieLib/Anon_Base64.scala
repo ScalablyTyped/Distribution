@@ -12,8 +12,8 @@ trait Anon_Base64 extends js.Object {
 object Anon_Base64 {
   @scala.inline
   def apply(`type`: croppieLib.croppieLibStrings.base64 | croppieLib.croppieLibStrings.canvas): Anon_Base64 = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base64]
   }
 }

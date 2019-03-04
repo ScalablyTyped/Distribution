@@ -44,10 +44,8 @@ object Company {
     user_count: scala.Int | scala.Double = null,
     website: java.lang.String = null
   ): Company = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("updated_at")(updated_at)
+    val __obj = js.Dynamic.literal(created_at = created_at, id = id, updated_at = updated_at)
+    __obj.updateDynamic("type")(`type`)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (company_id != null) __obj.updateDynamic("company_id")(company_id)
     if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes)

@@ -22,12 +22,8 @@ object GitPushEventData {
     commits: js.Array[GitCommit],
     repository: GitRepository
   ): GitPushEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterId")(afterId)
-    __obj.updateDynamic("beforeId")(beforeId)
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("commits")(commits)
-    __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(afterId = afterId, beforeId = beforeId, branch = branch, commits = commits, repository = repository)
+  
     __obj.asInstanceOf[GitPushEventData]
   }
 }

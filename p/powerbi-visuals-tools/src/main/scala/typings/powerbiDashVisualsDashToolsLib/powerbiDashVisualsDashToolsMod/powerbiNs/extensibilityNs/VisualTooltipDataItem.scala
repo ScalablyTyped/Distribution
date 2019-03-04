@@ -22,9 +22,7 @@ object VisualTooltipDataItem {
     header: java.lang.String = null,
     opacity: java.lang.String = null
   ): VisualTooltipDataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(displayName = displayName, value = value)
     if (color != null) __obj.updateDynamic("color")(color)
     if (header != null) __obj.updateDynamic("header")(header)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)

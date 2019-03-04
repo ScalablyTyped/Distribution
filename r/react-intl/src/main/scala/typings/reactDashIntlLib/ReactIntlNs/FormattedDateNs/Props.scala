@@ -33,8 +33,7 @@ object Props {
     weekday: java.lang.String = null,
     year: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     if (day != null) __obj.updateDynamic("day")(day)
     if (era != null) __obj.updateDynamic("era")(era)

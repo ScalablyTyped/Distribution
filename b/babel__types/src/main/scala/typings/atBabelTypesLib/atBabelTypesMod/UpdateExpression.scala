@@ -30,10 +30,8 @@ object UpdateExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): UpdateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(argument = argument, operator = operator.asInstanceOf[js.Any], prefix = prefix)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(colorpicker: JQueryColorpickerStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorpicker")(colorpicker)
+    val __obj = js.Dynamic.literal(colorpicker = colorpicker)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

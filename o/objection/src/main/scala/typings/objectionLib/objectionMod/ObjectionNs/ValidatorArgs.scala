@@ -15,11 +15,8 @@ trait ValidatorArgs extends js.Object {
 object ValidatorArgs {
   @scala.inline
   def apply(ctx: ValidatorContext, json: Pojo, model: Model, options: ModelOptions): ValidatorArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctx")(ctx)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(ctx = ctx, json = json, model = model, options = options)
+  
     __obj.asInstanceOf[ValidatorArgs]
   }
 }

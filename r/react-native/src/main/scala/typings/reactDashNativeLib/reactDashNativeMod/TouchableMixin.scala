@@ -70,16 +70,8 @@ object TouchableMixin {
     touchableHandleLongPress: js.Function1[GestureResponderEvent, scala.Unit],
     touchableHandlePress: js.Function1[GestureResponderEvent, scala.Unit]
   ): TouchableMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("touchableGetHighlightDelayMS")(touchableGetHighlightDelayMS)
-    __obj.updateDynamic("touchableGetHitSlop")(touchableGetHitSlop)
-    __obj.updateDynamic("touchableGetLongPressDelayMS")(touchableGetLongPressDelayMS)
-    __obj.updateDynamic("touchableGetPressOutDelayMS")(touchableGetPressOutDelayMS)
-    __obj.updateDynamic("touchableGetPressRectOffset")(touchableGetPressRectOffset)
-    __obj.updateDynamic("touchableHandleActivePressIn")(touchableHandleActivePressIn)
-    __obj.updateDynamic("touchableHandleActivePressOut")(touchableHandleActivePressOut)
-    __obj.updateDynamic("touchableHandleLongPress")(touchableHandleLongPress)
-    __obj.updateDynamic("touchableHandlePress")(touchableHandlePress)
+    val __obj = js.Dynamic.literal(touchableGetHighlightDelayMS = touchableGetHighlightDelayMS, touchableGetHitSlop = touchableGetHitSlop, touchableGetLongPressDelayMS = touchableGetLongPressDelayMS, touchableGetPressOutDelayMS = touchableGetPressOutDelayMS, touchableGetPressRectOffset = touchableGetPressRectOffset, touchableHandleActivePressIn = touchableHandleActivePressIn, touchableHandleActivePressOut = touchableHandleActivePressOut, touchableHandleLongPress = touchableHandleLongPress, touchableHandlePress = touchableHandlePress)
+  
     __obj.asInstanceOf[TouchableMixin]
   }
 }

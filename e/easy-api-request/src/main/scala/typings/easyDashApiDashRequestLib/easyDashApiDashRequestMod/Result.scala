@@ -15,9 +15,7 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(body: js.Any, response: nodeLib.httpMod.IncomingMessage, data: js.Any = null, err: js.Any = null): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(body = body, response = response)
     if (data != null) __obj.updateDynamic("data")(data)
     if (err != null) __obj.updateDynamic("err")(err)
     __obj.asInstanceOf[Result]

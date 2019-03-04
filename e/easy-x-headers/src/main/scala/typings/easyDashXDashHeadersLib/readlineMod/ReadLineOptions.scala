@@ -20,9 +20,7 @@ object ReadLineOptions {
     completer: js.Function = null,
     terminal: js.UndefOr[scala.Boolean] = js.undefined
   ): ReadLineOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(input = input, output = output)
     if (completer != null) __obj.updateDynamic("completer")(completer)
     if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
     __obj.asInstanceOf[ReadLineOptions]

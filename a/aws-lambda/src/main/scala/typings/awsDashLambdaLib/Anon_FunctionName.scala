@@ -13,9 +13,8 @@ trait Anon_FunctionName extends js.Object {
 object Anon_FunctionName {
   @scala.inline
   def apply(FunctionName: java.lang.String, UserParameters: java.lang.String): Anon_FunctionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FunctionName")(FunctionName)
-    __obj.updateDynamic("UserParameters")(UserParameters)
+    val __obj = js.Dynamic.literal(FunctionName = FunctionName, UserParameters = UserParameters)
+  
     __obj.asInstanceOf[Anon_FunctionName]
   }
 }

@@ -14,10 +14,8 @@ trait IFinalOptions extends js.Object {
 object IFinalOptions {
   @scala.inline
   def apply(arrayFormat: arrayFormat, booleanFormat: booleanFormat, nullFormat: nullFormat): IFinalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrayFormat")(arrayFormat)
-    __obj.updateDynamic("booleanFormat")(booleanFormat)
-    __obj.updateDynamic("nullFormat")(nullFormat)
+    val __obj = js.Dynamic.literal(arrayFormat = arrayFormat, booleanFormat = booleanFormat, nullFormat = nullFormat)
+  
     __obj.asInstanceOf[IFinalOptions]
   }
 }

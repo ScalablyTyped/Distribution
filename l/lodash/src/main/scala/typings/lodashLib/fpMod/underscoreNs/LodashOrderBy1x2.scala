@@ -25,10 +25,10 @@ trait LodashOrderBy1x2 extends js.Object {
     ],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.`__`): LodashOrderBy3x6[T] = js.native
-  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashOrderBy3x6[T] = js.native
+  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.__): LodashOrderBy3x6[T] = js.native
+  def apply[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashOrderBy3x6[T] = js.native
   def apply[T](
-    iteratees: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratees: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashOrderBy1x6[T] = js.native
 }

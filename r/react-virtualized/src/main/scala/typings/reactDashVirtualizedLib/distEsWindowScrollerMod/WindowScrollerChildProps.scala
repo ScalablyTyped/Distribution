@@ -24,13 +24,8 @@ object WindowScrollerChildProps {
     scrollTop: scala.Double,
     width: scala.Double
   ): WindowScrollerChildProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("onChildScroll")(onChildScroll)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, isScrolling = isScrolling, onChildScroll = onChildScroll, scrollLeft = scrollLeft, scrollTop = scrollTop, width = width)
+  
     __obj.asInstanceOf[WindowScrollerChildProps]
   }
 }

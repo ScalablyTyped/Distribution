@@ -19,11 +19,8 @@ trait PolicyGetCachedOptions[T] extends js.Object {
 object PolicyGetCachedOptions {
   @scala.inline
   def apply[T](isStale: scala.Boolean, item: T, stored: scala.Double, ttl: scala.Double): PolicyGetCachedOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isStale")(isStale)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("stored")(stored)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(isStale = isStale, item = item.asInstanceOf[js.Any], stored = stored, ttl = ttl)
+  
     __obj.asInstanceOf[PolicyGetCachedOptions[T]]
   }
 }

@@ -28,10 +28,7 @@ object Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout {
     retryDuration: scala.Int | scala.Double = null,
     s3BackupMode: java.lang.String = null
   ): Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
-    __obj.updateDynamic("hecEndpoint")(hecEndpoint)
-    __obj.updateDynamic("hecToken")(hecToken)
+    val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions, hecEndpoint = hecEndpoint, hecToken = hecToken)
     if (hecAcknowledgmentTimeout != null) __obj.updateDynamic("hecAcknowledgmentTimeout")(hecAcknowledgmentTimeout.asInstanceOf[js.Any])
     if (hecEndpointType != null) __obj.updateDynamic("hecEndpointType")(hecEndpointType)
     if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration)

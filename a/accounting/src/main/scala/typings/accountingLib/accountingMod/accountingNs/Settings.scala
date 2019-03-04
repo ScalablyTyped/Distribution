@@ -14,9 +14,8 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(currency: CurrencySettings[_], number: NumberSettings): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(currency = currency, number = number)
+  
     __obj.asInstanceOf[Settings]
   }
 }

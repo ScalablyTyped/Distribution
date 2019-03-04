@@ -36,8 +36,7 @@ object RedomComponent {
       scala.Unit
     ] = null
   ): RedomComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(el = el)
     if (onmount != null) __obj.updateDynamic("onmount")(onmount)
     if (onremount != null) __obj.updateDynamic("onremount")(onremount)
     if (onunmount != null) __obj.updateDynamic("onunmount")(onunmount)

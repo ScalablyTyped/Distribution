@@ -12,8 +12,8 @@ trait Anon_Email extends js.Object {
 object Anon_Email {
   @scala.inline
   def apply(`type`: waterlineLib.waterlineLibStrings.email): Anon_Email = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Email]
   }
 }

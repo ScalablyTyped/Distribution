@@ -22,8 +22,8 @@ object Anon_ParseElements {
       leafletDashGpxLib.leafletDashGpxLibStrings.waypoint
     ]
   ): Anon_ParseElements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parseElements")(parseElements)
+    val __obj = js.Dynamic.literal(parseElements = parseElements)
+  
     __obj.asInstanceOf[Anon_ParseElements]
   }
 }

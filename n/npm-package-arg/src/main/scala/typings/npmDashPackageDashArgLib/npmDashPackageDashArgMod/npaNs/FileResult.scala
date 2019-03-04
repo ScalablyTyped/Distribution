@@ -32,12 +32,8 @@ object FileResult {
     name: java.lang.String = null,
     scope: java.lang.String = null
   ): FileResult = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawSpec")(rawSpec)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("saveSpec")(saveSpec)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(raw = raw, rawSpec = rawSpec, registry = registry, saveSpec = saveSpec, where = where)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (escapedName != null) __obj.updateDynamic("escapedName")(escapedName)
     if (fetchSpec != null) __obj.updateDynamic("fetchSpec")(fetchSpec)
     if (gitCommittish != null) __obj.updateDynamic("gitCommittish")(gitCommittish)

@@ -26,12 +26,7 @@ object DomEventRegisterData {
     dom: stdLib.HTMLElement = null,
     target: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject = null
   ): DomEventRegisterData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domHandler")(domHandler)
-    __obj.updateDynamic("eventData")(eventData)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("originHandler")(originHandler)
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(domHandler = domHandler, eventData = eventData, handler = handler, originHandler = originHandler, priority = priority)
     if (dom != null) __obj.updateDynamic("dom")(dom)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[DomEventRegisterData]

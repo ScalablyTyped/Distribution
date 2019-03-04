@@ -16,9 +16,8 @@ object Anon_Affected {
     affected: typescriptLib.typescriptMod.tsNs.SourceFile | typescriptLib.typescriptMod.tsNs.Program,
     result: T
   ): Anon_Affected[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affected")(affected.asInstanceOf[js.Any])
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(affected = affected.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Affected[T]]
   }
 }

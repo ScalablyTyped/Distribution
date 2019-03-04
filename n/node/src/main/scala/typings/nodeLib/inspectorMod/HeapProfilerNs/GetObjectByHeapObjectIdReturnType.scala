@@ -15,8 +15,8 @@ trait GetObjectByHeapObjectIdReturnType extends js.Object {
 object GetObjectByHeapObjectIdReturnType {
   @scala.inline
   def apply(result: nodeLib.inspectorMod.RuntimeNs.RemoteObject): GetObjectByHeapObjectIdReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[GetObjectByHeapObjectIdReturnType]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_Renderer extends js.Object {
 object Anon_Renderer {
   @scala.inline
   def apply(renderer: java.lang.String, vendor: java.lang.String, version: java.lang.String): Anon_Renderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("vendor")(vendor)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(renderer = renderer, vendor = vendor, version = version)
+  
     __obj.asInstanceOf[Anon_Renderer]
   }
 }

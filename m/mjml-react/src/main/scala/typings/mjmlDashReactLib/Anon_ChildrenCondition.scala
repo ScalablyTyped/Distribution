@@ -13,9 +13,8 @@ trait Anon_ChildrenCondition extends js.Object {
 object Anon_ChildrenCondition {
   @scala.inline
   def apply(children: java.lang.String, condition: java.lang.String): Anon_ChildrenCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(children = children, condition = condition)
+  
     __obj.asInstanceOf[Anon_ChildrenCondition]
   }
 }

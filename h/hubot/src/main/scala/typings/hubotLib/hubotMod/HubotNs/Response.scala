@@ -22,11 +22,8 @@ object Response {
     reply: js.Function1[/* repeated */ java.lang.String, scala.Unit],
     send: js.Function1[/* repeated */ java.lang.String, scala.Unit]
   ): Response[R] = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("random")(random)
-    __obj.updateDynamic("reply")(reply)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(message = message, random = random, reply = reply, send = send)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Response[R]]
   }
 }

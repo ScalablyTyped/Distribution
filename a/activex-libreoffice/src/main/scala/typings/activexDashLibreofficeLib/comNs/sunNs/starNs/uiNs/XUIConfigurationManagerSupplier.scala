@@ -32,12 +32,8 @@ object XUIConfigurationManagerSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XUIConfigurationManagerSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UIConfigurationManager")(UIConfigurationManager)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getUIConfigurationManager")(getUIConfigurationManager)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(UIConfigurationManager = UIConfigurationManager, acquire = acquire, getUIConfigurationManager = getUIConfigurationManager, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XUIConfigurationManagerSupplier]
   }
 }

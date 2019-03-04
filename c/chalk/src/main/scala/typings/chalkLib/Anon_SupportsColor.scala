@@ -12,8 +12,8 @@ trait Anon_SupportsColor extends js.Object {
 object Anon_SupportsColor {
   @scala.inline
   def apply(supportsColor: chalkLib.chalkMod.ColorSupport): Anon_SupportsColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("supportsColor")(supportsColor)
+    val __obj = js.Dynamic.literal(supportsColor = supportsColor)
+  
     __obj.asInstanceOf[Anon_SupportsColor]
   }
 }

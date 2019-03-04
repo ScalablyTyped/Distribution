@@ -47,8 +47,7 @@ object YarOptions {
     name: java.lang.String = null,
     storeBlank: js.UndefOr[scala.Boolean] = js.undefined
   ): YarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookieOptions")(cookieOptions)
+    val __obj = js.Dynamic.literal(cookieOptions = cookieOptions)
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady)
     if (maxCookieSize != null) __obj.updateDynamic("maxCookieSize")(maxCookieSize.asInstanceOf[js.Any])

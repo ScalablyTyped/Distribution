@@ -28,15 +28,8 @@ object Progress {
     speed: scala.Double,
     transferred: scala.Double
   ): Progress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("eta")(eta)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("percentage")(percentage)
-    __obj.updateDynamic("remaining")(remaining)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("transferred")(transferred)
+    val __obj = js.Dynamic.literal(delta = delta, eta = eta, length = length, percentage = percentage, remaining = remaining, runtime = runtime, speed = speed, transferred = transferred)
+  
     __obj.asInstanceOf[Progress]
   }
 }

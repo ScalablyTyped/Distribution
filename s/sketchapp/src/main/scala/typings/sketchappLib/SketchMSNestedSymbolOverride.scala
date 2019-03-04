@@ -12,8 +12,8 @@ trait SketchMSNestedSymbolOverride extends js.Object {
 object SketchMSNestedSymbolOverride {
   @scala.inline
   def apply(symbolID: java.lang.String): SketchMSNestedSymbolOverride = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("symbolID")(symbolID)
+    val __obj = js.Dynamic.literal(symbolID = symbolID)
+  
     __obj.asInstanceOf[SketchMSNestedSymbolOverride]
   }
 }

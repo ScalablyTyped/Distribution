@@ -33,8 +33,7 @@ object AnimationOptions {
     easing: java.lang.String = null,
     step: js.Function0[scala.Unit] = null
   ): AnimationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(duration = duration)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (step != null) __obj.updateDynamic("step")(step)

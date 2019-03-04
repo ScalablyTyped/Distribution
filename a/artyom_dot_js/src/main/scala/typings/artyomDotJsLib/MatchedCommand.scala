@@ -14,9 +14,7 @@ trait MatchedCommand extends js.Object {
 object MatchedCommand {
   @scala.inline
   def apply(index: scala.Double, instruction: ArtyomCommand, wildcard: js.Any = null): MatchedCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("instruction")(instruction)
+    val __obj = js.Dynamic.literal(index = index, instruction = instruction)
     if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard)
     __obj.asInstanceOf[MatchedCommand]
   }

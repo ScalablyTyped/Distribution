@@ -22,8 +22,8 @@ trait PermissionDescriptor[N /* <: PermissionName */] extends js.Object {
 object PermissionDescriptor {
   @scala.inline
   def apply[N /* <: PermissionName */](name: N): PermissionDescriptor[N] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PermissionDescriptor[N]]
   }
 }

@@ -26,14 +26,8 @@ object ISession {
     ssoLogin: js.Function1[java.lang.String, js.Promise[scala.Unit]],
     tokenLogin: js.Function1[java.lang.String, js.Promise[scala.Unit]]
   ): ISession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUser")(getUser)
-    __obj.updateDynamic("getUserToken")(getUserToken)
-    __obj.updateDynamic("isLoggedIn")(isLoggedIn)
-    __obj.updateDynamic("login")(login)
-    __obj.updateDynamic("logout")(logout)
-    __obj.updateDynamic("ssoLogin")(ssoLogin)
-    __obj.updateDynamic("tokenLogin")(tokenLogin)
+    val __obj = js.Dynamic.literal(getUser = getUser, getUserToken = getUserToken, isLoggedIn = isLoggedIn, login = login, logout = logout, ssoLogin = ssoLogin, tokenLogin = tokenLogin)
+  
     __obj.asInstanceOf[ISession]
   }
 }

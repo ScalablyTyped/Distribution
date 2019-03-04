@@ -82,38 +82,8 @@ object Anon_Bind {
     Timeout: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Timeout],
     Unknown: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Unknown]
   ): Anon_Bind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bind")(Bind)
-    __obj.updateDynamic("Connect")(Connect)
-    __obj.updateDynamic("Database")(Database)
-    __obj.updateDynamic("DatabaseInitialization")(DatabaseInitialization)
-    __obj.updateDynamic("DatabaseOpen")(DatabaseOpen)
-    __obj.updateDynamic("DatabaseRead")(DatabaseRead)
-    __obj.updateDynamic("DatabaseWrite")(DatabaseWrite)
-    __obj.updateDynamic("Empty")(Empty)
-    __obj.updateDynamic("Encoding")(Encoding)
-    __obj.updateDynamic("Exception")(Exception)
-    __obj.updateDynamic("Exists")(Exists)
-    __obj.updateDynamic("IllegalState")(IllegalState)
-    __obj.updateDynamic("IncompleteBufferError")(IncompleteBufferError)
-    __obj.updateDynamic("Incorrect")(Incorrect)
-    __obj.updateDynamic("InvalidAccess")(InvalidAccess)
-    __obj.updateDynamic("InvalidArgument")(InvalidArgument)
-    __obj.updateDynamic("InvalidNumberOfArguments")(InvalidNumberOfArguments)
-    __obj.updateDynamic("LimitExceeded")(LimitExceeded)
-    __obj.updateDynamic("NetronIllegalState")(NetronIllegalState)
-    __obj.updateDynamic("NetronPeerDisconnected")(NetronPeerDisconnected)
-    __obj.updateDynamic("NetronTimeout")(NetronTimeout)
-    __obj.updateDynamic("Network")(Network)
-    __obj.updateDynamic("NotAllowed")(NotAllowed)
-    __obj.updateDynamic("NotExists")(NotExists)
-    __obj.updateDynamic("NotFound")(NotFound)
-    __obj.updateDynamic("NotImplemented")(NotImplemented)
-    __obj.updateDynamic("NotSupported")(NotSupported)
-    __obj.updateDynamic("NotValid")(NotValid)
-    __obj.updateDynamic("Runtime")(Runtime)
-    __obj.updateDynamic("Timeout")(Timeout)
-    __obj.updateDynamic("Unknown")(Unknown)
+    val __obj = js.Dynamic.literal(Bind = Bind, Connect = Connect, Database = Database, DatabaseInitialization = DatabaseInitialization, DatabaseOpen = DatabaseOpen, DatabaseRead = DatabaseRead, DatabaseWrite = DatabaseWrite, Empty = Empty, Encoding = Encoding, Exception = Exception, Exists = Exists, IllegalState = IllegalState, IncompleteBufferError = IncompleteBufferError, Incorrect = Incorrect, InvalidAccess = InvalidAccess, InvalidArgument = InvalidArgument, InvalidNumberOfArguments = InvalidNumberOfArguments, LimitExceeded = LimitExceeded, NetronIllegalState = NetronIllegalState, NetronPeerDisconnected = NetronPeerDisconnected, NetronTimeout = NetronTimeout, Network = Network, NotAllowed = NotAllowed, NotExists = NotExists, NotFound = NotFound, NotImplemented = NotImplemented, NotSupported = NotSupported, NotValid = NotValid, Runtime = Runtime, Timeout = Timeout, Unknown = Unknown)
+  
     __obj.asInstanceOf[Anon_Bind]
   }
 }

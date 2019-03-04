@@ -91,14 +91,8 @@ object Composite {
     parent: Composite,
     `type`: java.lang.String
   ): Composite = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodies")(bodies)
-    __obj.updateDynamic("composites")(composites)
-    __obj.updateDynamic("constraints")(constraints)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(bodies = bodies, composites = composites, constraints = constraints, id = id, isModified = isModified, label = label, parent = parent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Composite]
   }
 }

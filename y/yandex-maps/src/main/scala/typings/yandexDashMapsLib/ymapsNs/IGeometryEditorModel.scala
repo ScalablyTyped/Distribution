@@ -17,10 +17,8 @@ object IGeometryEditorModel {
     events: IEventManager,
     getPixels: js.Function0[js.Array[scala.Double]]
   ): IGeometryEditorModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getPixels")(getPixels)
+    val __obj = js.Dynamic.literal(destroy = destroy, events = events, getPixels = getPixels)
+  
     __obj.asInstanceOf[IGeometryEditorModel]
   }
 }

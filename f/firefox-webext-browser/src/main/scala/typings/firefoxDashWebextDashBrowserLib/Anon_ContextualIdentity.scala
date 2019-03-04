@@ -15,8 +15,8 @@ object Anon_ContextualIdentity {
   def apply(
     contextualIdentity: firefoxDashWebextDashBrowserLib.browserNs.contextualIdentitiesNs.ContextualIdentity
   ): Anon_ContextualIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextualIdentity")(contextualIdentity)
+    val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity)
+  
     __obj.asInstanceOf[Anon_ContextualIdentity]
   }
 }

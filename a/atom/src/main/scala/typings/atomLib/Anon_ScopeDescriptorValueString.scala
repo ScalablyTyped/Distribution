@@ -13,9 +13,8 @@ trait Anon_ScopeDescriptorValueString extends js.Object {
 object Anon_ScopeDescriptorValueString {
   @scala.inline
   def apply(scopeDescriptor: atomLib.atomMod.ScopeDescriptor, value: java.lang.String): Anon_ScopeDescriptorValueString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(scopeDescriptor = scopeDescriptor, value = value)
+  
     __obj.asInstanceOf[Anon_ScopeDescriptorValueString]
   }
 }

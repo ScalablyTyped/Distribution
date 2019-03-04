@@ -55,9 +55,7 @@ object IRequestConfig {
     xsrfCookieName: java.lang.String = null,
     xsrfHeaderName: java.lang.String = null
   ): IRequestConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (data != null) __obj.updateDynamic("data")(data)
     if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers)

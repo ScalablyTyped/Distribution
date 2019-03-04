@@ -18,9 +18,7 @@ object AliasItem {
     name: java.lang.String,
     onlyModule: js.UndefOr[scala.Boolean] = js.undefined
   ): AliasItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(alias = alias, name = name)
     if (!js.isUndefined(onlyModule)) __obj.updateDynamic("onlyModule")(onlyModule)
     __obj.asInstanceOf[AliasItem]
   }

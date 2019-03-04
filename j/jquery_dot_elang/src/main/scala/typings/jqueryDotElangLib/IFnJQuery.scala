@@ -27,8 +27,8 @@ object IFnJQuery {
       jqueryLib.JQuery[stdLib.HTMLElement]
     ]
   ): IFnJQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fnPlugin")(fnPlugin)
+    val __obj = js.Dynamic.literal(fnPlugin = fnPlugin)
+  
     __obj.asInstanceOf[IFnJQuery]
   }
 }

@@ -244,37 +244,8 @@ object XAccessibleTable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessibleCaption")(AccessibleCaption)
-    __obj.updateDynamic("AccessibleColumnCount")(AccessibleColumnCount)
-    __obj.updateDynamic("AccessibleColumnHeaders")(AccessibleColumnHeaders)
-    __obj.updateDynamic("AccessibleRowCount")(AccessibleRowCount)
-    __obj.updateDynamic("AccessibleRowHeaders")(AccessibleRowHeaders)
-    __obj.updateDynamic("AccessibleSummary")(AccessibleSummary)
-    __obj.updateDynamic("SelectedAccessibleColumns")(SelectedAccessibleColumns)
-    __obj.updateDynamic("SelectedAccessibleRows")(SelectedAccessibleRows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAccessibleCaption")(getAccessibleCaption)
-    __obj.updateDynamic("getAccessibleCellAt")(getAccessibleCellAt)
-    __obj.updateDynamic("getAccessibleColumn")(getAccessibleColumn)
-    __obj.updateDynamic("getAccessibleColumnCount")(getAccessibleColumnCount)
-    __obj.updateDynamic("getAccessibleColumnDescription")(getAccessibleColumnDescription)
-    __obj.updateDynamic("getAccessibleColumnExtentAt")(getAccessibleColumnExtentAt)
-    __obj.updateDynamic("getAccessibleColumnHeaders")(getAccessibleColumnHeaders)
-    __obj.updateDynamic("getAccessibleIndex")(getAccessibleIndex)
-    __obj.updateDynamic("getAccessibleRow")(getAccessibleRow)
-    __obj.updateDynamic("getAccessibleRowCount")(getAccessibleRowCount)
-    __obj.updateDynamic("getAccessibleRowDescription")(getAccessibleRowDescription)
-    __obj.updateDynamic("getAccessibleRowExtentAt")(getAccessibleRowExtentAt)
-    __obj.updateDynamic("getAccessibleRowHeaders")(getAccessibleRowHeaders)
-    __obj.updateDynamic("getAccessibleSummary")(getAccessibleSummary)
-    __obj.updateDynamic("getSelectedAccessibleColumns")(getSelectedAccessibleColumns)
-    __obj.updateDynamic("getSelectedAccessibleRows")(getSelectedAccessibleRows)
-    __obj.updateDynamic("isAccessibleColumnSelected")(isAccessibleColumnSelected)
-    __obj.updateDynamic("isAccessibleRowSelected")(isAccessibleRowSelected)
-    __obj.updateDynamic("isAccessibleSelected")(isAccessibleSelected)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AccessibleCaption = AccessibleCaption, AccessibleColumnCount = AccessibleColumnCount, AccessibleColumnHeaders = AccessibleColumnHeaders, AccessibleRowCount = AccessibleRowCount, AccessibleRowHeaders = AccessibleRowHeaders, AccessibleSummary = AccessibleSummary, SelectedAccessibleColumns = SelectedAccessibleColumns, SelectedAccessibleRows = SelectedAccessibleRows, acquire = acquire, getAccessibleCaption = getAccessibleCaption, getAccessibleCellAt = getAccessibleCellAt, getAccessibleColumn = getAccessibleColumn, getAccessibleColumnCount = getAccessibleColumnCount, getAccessibleColumnDescription = getAccessibleColumnDescription, getAccessibleColumnExtentAt = getAccessibleColumnExtentAt, getAccessibleColumnHeaders = getAccessibleColumnHeaders, getAccessibleIndex = getAccessibleIndex, getAccessibleRow = getAccessibleRow, getAccessibleRowCount = getAccessibleRowCount, getAccessibleRowDescription = getAccessibleRowDescription, getAccessibleRowExtentAt = getAccessibleRowExtentAt, getAccessibleRowHeaders = getAccessibleRowHeaders, getAccessibleSummary = getAccessibleSummary, getSelectedAccessibleColumns = getSelectedAccessibleColumns, getSelectedAccessibleRows = getSelectedAccessibleRows, isAccessibleColumnSelected = isAccessibleColumnSelected, isAccessibleRowSelected = isAccessibleRowSelected, isAccessibleSelected = isAccessibleSelected, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleTable]
   }
 }

@@ -51,23 +51,8 @@ object XTabPageContainerModel {
     ],
     replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit]
   ): XTabPageContainerModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("createTabPage")(createTabPage)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByIndex")(insertByIndex)
-    __obj.updateDynamic("loadTabPage")(loadTabPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, addContainerListener = addContainerListener, createTabPage = createTabPage, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, loadTabPage = loadTabPage, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, removeContainerListener = removeContainerListener, replaceByIndex = replaceByIndex)
+  
     __obj.asInstanceOf[XTabPageContainerModel]
   }
 }

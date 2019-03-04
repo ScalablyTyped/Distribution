@@ -12,8 +12,8 @@ trait DebugStatic extends js.Object {
 object DebugStatic {
   @scala.inline
   def apply(events: flightLib.Anon_Action): DebugStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(events = events)
+  
     __obj.asInstanceOf[DebugStatic]
   }
 }

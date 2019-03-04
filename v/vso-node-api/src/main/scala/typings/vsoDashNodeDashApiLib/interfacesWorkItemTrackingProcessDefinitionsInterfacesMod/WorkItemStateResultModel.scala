@@ -47,14 +47,8 @@ object WorkItemStateResultModel {
     stateCategory: java.lang.String,
     url: java.lang.String
   ): WorkItemStateResultModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("stateCategory")(stateCategory)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(color = color, hidden = hidden, id = id, name = name, order = order, stateCategory = stateCategory, url = url)
+  
     __obj.asInstanceOf[WorkItemStateResultModel]
   }
 }

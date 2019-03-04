@@ -17,8 +17,7 @@ object Props {
     channel: java.lang.String,
     children: js.Function1[/* state */ T, reactLib.reactMod.ReactNs.ReactNode] = null
   ): Props[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
+    val __obj = js.Dynamic.literal(channel = channel)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[Props[T]]
   }

@@ -24,13 +24,8 @@ object Anon_AnsiX923 {
     Pkcs7: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding,
     ZeroPadding: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding
   ): Anon_AnsiX923 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AnsiX923")(AnsiX923)
-    __obj.updateDynamic("Iso10126")(Iso10126)
-    __obj.updateDynamic("Iso97971")(Iso97971)
-    __obj.updateDynamic("NoPadding")(NoPadding)
-    __obj.updateDynamic("Pkcs7")(Pkcs7)
-    __obj.updateDynamic("ZeroPadding")(ZeroPadding)
+    val __obj = js.Dynamic.literal(AnsiX923 = AnsiX923, Iso10126 = Iso10126, Iso97971 = Iso97971, NoPadding = NoPadding, Pkcs7 = Pkcs7, ZeroPadding = ZeroPadding)
+  
     __obj.asInstanceOf[Anon_AnsiX923]
   }
 }

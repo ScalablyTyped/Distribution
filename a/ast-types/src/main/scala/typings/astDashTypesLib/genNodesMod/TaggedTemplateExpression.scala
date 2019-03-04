@@ -24,9 +24,8 @@ object TaggedTemplateExpression {
     tag: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TaggedTemplateExpression
   ): TaggedTemplateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("quasi")(quasi)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(quasi = quasi, tag = tag)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TaggedTemplateExpression]
   }
 }

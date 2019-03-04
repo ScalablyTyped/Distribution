@@ -22,9 +22,7 @@ object NodeProps {
     className: java.lang.String = null,
     extraProps: js.Any = null
   ): NodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagramEngine")(diagramEngine)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine, node = node)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)

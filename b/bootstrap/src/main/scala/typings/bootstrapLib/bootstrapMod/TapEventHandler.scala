@@ -66,18 +66,8 @@ object TapEventHandler {
     view: stdLib.Window = null,
     which: scala.Int | scala.Double = null
   ): TapEventHandler[TElement] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("delegateTarget")(delegateTarget.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("relatedTarget")(relatedTarget)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, delegateTarget = delegateTarget.asInstanceOf[js.Any], isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, relatedTarget = relatedTarget, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])

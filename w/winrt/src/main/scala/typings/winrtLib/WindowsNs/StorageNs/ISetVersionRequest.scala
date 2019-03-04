@@ -18,10 +18,8 @@ object ISetVersionRequest {
     desiredVersion: scala.Double,
     getDeferral: js.Function0[SetVersionDeferral]
   ): ISetVersionRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentVersion")(currentVersion)
-    __obj.updateDynamic("desiredVersion")(desiredVersion)
-    __obj.updateDynamic("getDeferral")(getDeferral)
+    val __obj = js.Dynamic.literal(currentVersion = currentVersion, desiredVersion = desiredVersion, getDeferral = getDeferral)
+  
     __obj.asInstanceOf[ISetVersionRequest]
   }
 }

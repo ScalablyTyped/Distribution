@@ -59,22 +59,8 @@ object XMultiSelectionSupplier {
     removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
     select: js.Function1[js.Any, scala.Boolean]
   ): XMultiSelectionSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("SelectionCount")(SelectionCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelection")(addSelection)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("clearSelection")(clearSelection)
-    __obj.updateDynamic("createReverseSelectionEnumeration")(createReverseSelectionEnumeration)
-    __obj.updateDynamic("createSelectionEnumeration")(createSelectionEnumeration)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getSelectionCount")(getSelectionCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelection")(removeSelection)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(Selection = Selection, SelectionCount = SelectionCount, acquire = acquire, addSelection = addSelection, addSelectionChangeListener = addSelectionChangeListener, clearSelection = clearSelection, createReverseSelectionEnumeration = createReverseSelectionEnumeration, createSelectionEnumeration = createSelectionEnumeration, getSelection = getSelection, getSelectionCount = getSelectionCount, queryInterface = queryInterface, release = release, removeSelection = removeSelection, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+  
     __obj.asInstanceOf[XMultiSelectionSupplier]
   }
 }

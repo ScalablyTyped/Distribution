@@ -26,14 +26,8 @@ object ExecuteAnonymousResult {
     line: scala.Double,
     success: scala.Boolean
   ): ExecuteAnonymousResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("compileProblem")(compileProblem)
-    __obj.updateDynamic("compiled")(compiled)
-    __obj.updateDynamic("exceptionMessage")(exceptionMessage)
-    __obj.updateDynamic("exceptionStackTrace")(exceptionStackTrace)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(column = column, compileProblem = compileProblem, compiled = compiled, exceptionMessage = exceptionMessage, exceptionStackTrace = exceptionStackTrace, line = line, success = success)
+  
     __obj.asInstanceOf[ExecuteAnonymousResult]
   }
 }

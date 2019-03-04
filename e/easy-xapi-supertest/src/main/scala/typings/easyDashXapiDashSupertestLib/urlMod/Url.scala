@@ -37,17 +37,7 @@ object Url {
     hash: java.lang.String = null,
     path: java.lang.String = null
   ): Url = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("slashes")(slashes)
+    val __obj = js.Dynamic.literal(auth = auth, host = host, hostname = hostname, href = href, pathname = pathname, port = port, protocol = protocol, query = query, search = search, slashes = slashes)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[Url]

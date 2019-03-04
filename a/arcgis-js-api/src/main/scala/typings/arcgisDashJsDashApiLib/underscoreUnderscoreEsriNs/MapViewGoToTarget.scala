@@ -46,10 +46,7 @@ object MapViewGoToTarget {
     target: js.Array[scala.Double] | Geometry | js.Array[Geometry] | Graphic | js.Array[Graphic] | Viewpoint = null,
     zoom: scala.Int | scala.Double = null
   ): MapViewGoToTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (center != null) __obj.updateDynamic("center")(center)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])

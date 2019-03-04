@@ -12,8 +12,8 @@ trait KnockoutValidationRuleBase extends js.Object {
 object KnockoutValidationRuleBase {
   @scala.inline
   def apply(message: java.lang.String): KnockoutValidationRuleBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[KnockoutValidationRuleBase]
   }
 }

@@ -46,8 +46,7 @@ object LazyLogProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     width: java.lang.String | scala.Double = null
   ): LazyLogProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
     if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
     if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)

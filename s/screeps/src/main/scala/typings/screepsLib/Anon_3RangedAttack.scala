@@ -13,9 +13,8 @@ trait Anon_3RangedAttack extends js.Object {
 object Anon_3RangedAttack {
   @scala.inline
   def apply(rangedAttack: screepsLib.screepsLibNumbers.`3`, rangedMassAttack: screepsLib.screepsLibNumbers.`3`): Anon_3RangedAttack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rangedAttack")(rangedAttack)
-    __obj.updateDynamic("rangedMassAttack")(rangedMassAttack)
+    val __obj = js.Dynamic.literal(rangedAttack = rangedAttack, rangedMassAttack = rangedMassAttack)
+  
     __obj.asInstanceOf[Anon_3RangedAttack]
   }
 }

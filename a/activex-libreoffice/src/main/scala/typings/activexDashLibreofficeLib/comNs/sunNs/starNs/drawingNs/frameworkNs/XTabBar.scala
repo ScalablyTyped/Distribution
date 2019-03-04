@@ -71,13 +71,8 @@ object XTabBar {
     hasTabBarButton: js.Function1[TabBarButton, scala.Boolean],
     removeTabBarButton: js.Function1[TabBarButton, scala.Unit]
   ): XTabBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TabBarButtons")(TabBarButtons)
-    __obj.updateDynamic("addTabBarButtonAfter")(addTabBarButtonAfter)
-    __obj.updateDynamic("appendTabBarButton")(appendTabBarButton)
-    __obj.updateDynamic("getTabBarButtons")(getTabBarButtons)
-    __obj.updateDynamic("hasTabBarButton")(hasTabBarButton)
-    __obj.updateDynamic("removeTabBarButton")(removeTabBarButton)
+    val __obj = js.Dynamic.literal(TabBarButtons = TabBarButtons, addTabBarButtonAfter = addTabBarButtonAfter, appendTabBarButton = appendTabBarButton, getTabBarButtons = getTabBarButtons, hasTabBarButton = hasTabBarButton, removeTabBarButton = removeTabBarButton)
+  
     __obj.asInstanceOf[XTabBar]
   }
 }

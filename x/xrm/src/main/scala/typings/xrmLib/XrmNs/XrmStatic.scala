@@ -67,15 +67,8 @@ object XrmStatic {
     Utility: Utility,
     WebApi: WebApi
   ): XrmStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Device")(Device)
-    __obj.updateDynamic("Encoding")(Encoding)
-    __obj.updateDynamic("Mobile")(Mobile)
-    __obj.updateDynamic("Navigation")(Navigation)
-    __obj.updateDynamic("Page")(Page)
-    __obj.updateDynamic("Panel")(Panel)
-    __obj.updateDynamic("Utility")(Utility)
-    __obj.updateDynamic("WebApi")(WebApi)
+    val __obj = js.Dynamic.literal(Device = Device, Encoding = Encoding, Mobile = Mobile, Navigation = Navigation, Page = Page, Panel = Panel, Utility = Utility, WebApi = WebApi)
+  
     __obj.asInstanceOf[XrmStatic]
   }
 }

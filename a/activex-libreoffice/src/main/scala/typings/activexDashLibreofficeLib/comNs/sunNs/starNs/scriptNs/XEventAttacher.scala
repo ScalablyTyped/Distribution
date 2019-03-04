@@ -77,13 +77,8 @@ object XEventAttacher {
       scala.Unit
     ]
   ): XEventAttacher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("attachListener")(attachListener)
-    __obj.updateDynamic("attachSingleEventListener")(attachSingleEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, attachListener = attachListener, attachSingleEventListener = attachSingleEventListener, queryInterface = queryInterface, release = release, removeListener = removeListener)
+  
     __obj.asInstanceOf[XEventAttacher]
   }
 }

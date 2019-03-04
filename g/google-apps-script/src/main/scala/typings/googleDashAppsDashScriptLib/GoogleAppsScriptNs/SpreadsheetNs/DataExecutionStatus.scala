@@ -22,12 +22,8 @@ object DataExecutionStatus {
     getLastRefreshedTime: js.Function0[stdLib.Date],
     isTruncated: js.Function0[scala.Boolean]
   ): DataExecutionStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getErrorCode")(getErrorCode)
-    __obj.updateDynamic("getErrorMessage")(getErrorMessage)
-    __obj.updateDynamic("getExecutionState")(getExecutionState)
-    __obj.updateDynamic("getLastRefreshedTime")(getLastRefreshedTime)
-    __obj.updateDynamic("isTruncated")(isTruncated)
+    val __obj = js.Dynamic.literal(getErrorCode = getErrorCode, getErrorMessage = getErrorMessage, getExecutionState = getExecutionState, getLastRefreshedTime = getLastRefreshedTime, isTruncated = isTruncated)
+  
     __obj.asInstanceOf[DataExecutionStatus]
   }
 }

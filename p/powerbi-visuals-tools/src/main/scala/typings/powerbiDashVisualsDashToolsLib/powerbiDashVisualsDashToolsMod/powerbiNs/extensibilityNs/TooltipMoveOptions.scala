@@ -24,10 +24,7 @@ object TooltipMoveOptions {
     isTouchEvent: scala.Boolean,
     dataItems: js.Array[VisualTooltipDataItem] = null
   ): TooltipMoveOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("identities")(identities)
-    __obj.updateDynamic("isTouchEvent")(isTouchEvent)
+    val __obj = js.Dynamic.literal(coordinates = coordinates, identities = identities, isTouchEvent = isTouchEvent)
     if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems)
     __obj.asInstanceOf[TooltipMoveOptions]
   }

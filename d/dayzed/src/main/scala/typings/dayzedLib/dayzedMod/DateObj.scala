@@ -24,13 +24,8 @@ object DateObj {
     selected: scala.Boolean,
     today: scala.Boolean
   ): DateObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("nextMonth")(nextMonth)
-    __obj.updateDynamic("prevMonth")(prevMonth)
-    __obj.updateDynamic("selectable")(selectable)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("today")(today)
+    val __obj = js.Dynamic.literal(date = date, nextMonth = nextMonth, prevMonth = prevMonth, selectable = selectable, selected = selected, today = today)
+  
     __obj.asInstanceOf[DateObj]
   }
 }

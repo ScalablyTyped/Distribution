@@ -18,9 +18,7 @@ object FederatedSignonCertsResponse {
     format: CertificateFormat,
     res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[scala.Unit] = null
   ): FederatedSignonCertsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certs")(certs)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(certs = certs, format = format)
     if (res != null) __obj.updateDynamic("res")(res)
     __obj.asInstanceOf[FederatedSignonCertsResponse]
   }

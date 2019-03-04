@@ -37,12 +37,8 @@ object XSignatureCreationResultBroadcaster {
     release: js.Function0[scala.Unit],
     removeSignatureCreationResultListener: js.Function1[XSignatureCreationResultListener, scala.Unit]
   ): XSignatureCreationResultBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSignatureCreationResultListener")(addSignatureCreationResultListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSignatureCreationResultListener")(removeSignatureCreationResultListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSignatureCreationResultListener = addSignatureCreationResultListener, queryInterface = queryInterface, release = release, removeSignatureCreationResultListener = removeSignatureCreationResultListener)
+  
     __obj.asInstanceOf[XSignatureCreationResultBroadcaster]
   }
 }

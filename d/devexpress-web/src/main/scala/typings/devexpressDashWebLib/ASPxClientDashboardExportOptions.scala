@@ -129,26 +129,8 @@ object ASPxClientDashboardExportOptions {
     Title: java.lang.String,
     TreemapOptions: TreemapExportOptions
   ): ASPxClientDashboardExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFitPageCount")(AutoFitPageCount)
-    __obj.updateDynamic("CardOptions")(CardOptions)
-    __obj.updateDynamic("ChartOptions")(ChartOptions)
-    __obj.updateDynamic("ExcelOptions")(ExcelOptions)
-    __obj.updateDynamic("FilterState")(FilterState)
-    __obj.updateDynamic("GaugeOptions")(GaugeOptions)
-    __obj.updateDynamic("GridOptions")(GridOptions)
-    __obj.updateDynamic("ImageOptions")(ImageOptions)
-    __obj.updateDynamic("MapOptions")(MapOptions)
-    __obj.updateDynamic("PageLayout")(PageLayout)
-    __obj.updateDynamic("PaperKind")(PaperKind)
-    __obj.updateDynamic("PieOptions")(PieOptions)
-    __obj.updateDynamic("PivotOptions")(PivotOptions)
-    __obj.updateDynamic("RangeFilterOptions")(RangeFilterOptions)
-    __obj.updateDynamic("ScaleFactor")(ScaleFactor)
-    __obj.updateDynamic("ScaleMode")(ScaleMode)
-    __obj.updateDynamic("ShowTitle")(ShowTitle)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("TreemapOptions")(TreemapOptions)
+    val __obj = js.Dynamic.literal(AutoFitPageCount = AutoFitPageCount, CardOptions = CardOptions, ChartOptions = ChartOptions, ExcelOptions = ExcelOptions, FilterState = FilterState, GaugeOptions = GaugeOptions, GridOptions = GridOptions, ImageOptions = ImageOptions, MapOptions = MapOptions, PageLayout = PageLayout, PaperKind = PaperKind, PieOptions = PieOptions, PivotOptions = PivotOptions, RangeFilterOptions = RangeFilterOptions, ScaleFactor = ScaleFactor, ScaleMode = ScaleMode, ShowTitle = ShowTitle, Title = Title, TreemapOptions = TreemapOptions)
+  
     __obj.asInstanceOf[ASPxClientDashboardExportOptions]
   }
 }

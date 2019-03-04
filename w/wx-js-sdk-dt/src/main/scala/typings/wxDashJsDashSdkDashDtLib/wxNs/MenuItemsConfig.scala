@@ -21,8 +21,7 @@ object MenuItemsConfig {
     fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
     success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
   ): MenuItemsConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("menuList")(menuList)
+    val __obj = js.Dynamic.literal(menuList = menuList)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

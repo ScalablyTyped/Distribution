@@ -13,9 +13,8 @@ trait TextChange extends js.Object {
 object TextChange {
   @scala.inline
   def apply(range: grammarkdownLib.distCoreMod.Range, text: java.lang.String): TextChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(range = range, text = text)
+  
     __obj.asInstanceOf[TextChange]
   }
 }

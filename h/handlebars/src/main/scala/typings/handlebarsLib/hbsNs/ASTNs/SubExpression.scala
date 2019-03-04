@@ -20,11 +20,8 @@ object SubExpression {
     path: PathExpression,
     `type`: java.lang.String
   ): SubExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(hash = hash, loc = loc, params = params, path = path)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SubExpression]
   }
 }

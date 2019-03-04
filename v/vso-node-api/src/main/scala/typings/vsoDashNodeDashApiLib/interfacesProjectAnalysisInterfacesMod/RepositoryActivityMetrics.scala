@@ -18,10 +18,8 @@ object RepositoryActivityMetrics {
     codeChangesTrend: js.Array[CodeChangeTrendItem],
     repositoryId: java.lang.String
   ): RepositoryActivityMetrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codeChangesCount")(codeChangesCount)
-    __obj.updateDynamic("codeChangesTrend")(codeChangesTrend)
-    __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal(codeChangesCount = codeChangesCount, codeChangesTrend = codeChangesTrend, repositoryId = repositoryId)
+  
     __obj.asInstanceOf[RepositoryActivityMetrics]
   }
 }

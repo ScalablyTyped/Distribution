@@ -12,8 +12,8 @@ trait fragLoadEmergencyAbortedData extends js.Object {
 object fragLoadEmergencyAbortedData {
   @scala.inline
   def apply(frag: Fragment): fragLoadEmergencyAbortedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frag")(frag)
+    val __obj = js.Dynamic.literal(frag = frag)
+  
     __obj.asInstanceOf[fragLoadEmergencyAbortedData]
   }
 }

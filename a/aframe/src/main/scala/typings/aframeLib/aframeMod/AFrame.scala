@@ -54,28 +54,8 @@ object AFrame {
     utils: Utils,
     version: java.lang.String
   ): AFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AComponent")(AComponent)
-    __obj.updateDynamic("AEntity")(AEntity)
-    __obj.updateDynamic("ANode")(ANode)
-    __obj.updateDynamic("AScene")(AScene)
-    __obj.updateDynamic("THREE")(THREE)
-    __obj.updateDynamic("TWEEN")(TWEEN)
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("geometries")(geometries)
-    __obj.updateDynamic("primitives")(primitives)
-    __obj.updateDynamic("registerComponent")(registerComponent)
-    __obj.updateDynamic("registerElement")(registerElement)
-    __obj.updateDynamic("registerGeometry")(registerGeometry)
-    __obj.updateDynamic("registerPrimitive")(registerPrimitive)
-    __obj.updateDynamic("registerShader")(registerShader)
-    __obj.updateDynamic("registerSystem")(registerSystem)
-    __obj.updateDynamic("scenes")(scenes)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("shaders")(shaders)
-    __obj.updateDynamic("systems")(systems)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(AComponent = AComponent, AEntity = AEntity, ANode = ANode, AScene = AScene, THREE = THREE, TWEEN = TWEEN, components = components, geometries = geometries, primitives = primitives, registerComponent = registerComponent, registerElement = registerElement, registerGeometry = registerGeometry, registerPrimitive = registerPrimitive, registerShader = registerShader, registerSystem = registerSystem, scenes = scenes, schema = schema, shaders = shaders, systems = systems, utils = utils, version = version)
+  
     __obj.asInstanceOf[AFrame]
   }
 }

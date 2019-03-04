@@ -21,8 +21,8 @@ object QuestMilestonesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): QuestMilestonesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claim")(claim)
+    val __obj = js.Dynamic.literal(claim = claim)
+  
     __obj.asInstanceOf[QuestMilestonesResource]
   }
 }

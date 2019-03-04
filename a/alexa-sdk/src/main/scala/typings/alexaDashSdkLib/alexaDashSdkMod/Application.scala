@@ -16,8 +16,7 @@ object Application {
     applicationId: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Application = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId)
+    val __obj = js.Dynamic.literal(applicationId = applicationId)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Application]
   }

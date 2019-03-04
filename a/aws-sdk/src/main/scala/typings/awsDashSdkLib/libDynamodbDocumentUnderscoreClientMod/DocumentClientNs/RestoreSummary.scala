@@ -32,9 +32,7 @@ object RestoreSummary {
     SourceBackupArn: BackupArn = null,
     SourceTableArn: TableArn = null
   ): RestoreSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RestoreDateTime")(RestoreDateTime)
-    __obj.updateDynamic("RestoreInProgress")(RestoreInProgress)
+    val __obj = js.Dynamic.literal(RestoreDateTime = RestoreDateTime, RestoreInProgress = RestoreInProgress)
     if (SourceBackupArn != null) __obj.updateDynamic("SourceBackupArn")(SourceBackupArn)
     if (SourceTableArn != null) __obj.updateDynamic("SourceTableArn")(SourceTableArn)
     __obj.asInstanceOf[RestoreSummary]

@@ -16,9 +16,8 @@ object QueryMatch {
     queryId: scala.Double,
     value: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTokenMetadata
   ): QueryMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryId")(queryId)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(queryId = queryId, value = value)
+  
     __obj.asInstanceOf[QueryMatch]
   }
 }

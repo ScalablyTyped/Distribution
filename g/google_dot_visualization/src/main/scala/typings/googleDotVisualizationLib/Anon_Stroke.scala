@@ -13,8 +13,7 @@ trait Anon_Stroke extends js.Object {
 object Anon_Stroke {
   @scala.inline
   def apply(stroke: java.lang.String, strokeWidth: scala.Int | scala.Double = null): Anon_Stroke = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(stroke = stroke)
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Stroke]
   }

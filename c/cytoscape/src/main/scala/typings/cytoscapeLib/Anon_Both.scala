@@ -18,10 +18,8 @@ object Anon_Both {
     left: cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionReturnValue,
     right: cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionReturnValue
   ): Anon_Both = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("both")(both)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(both = both, left = left, right = right)
+  
     __obj.asInstanceOf[Anon_Both]
   }
 }

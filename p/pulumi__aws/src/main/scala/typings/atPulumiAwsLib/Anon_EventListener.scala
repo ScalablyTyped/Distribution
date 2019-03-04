@@ -24,13 +24,8 @@ object Anon_EventListener {
     VALIDATE_REGION: js.Function0[scala.Unit],
     removeListener: js.Function2[java.lang.String, js.Function, scala.Unit]
   ): Anon_EventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HTTP_DATA")(HTTP_DATA)
-    __obj.updateDynamic("SEND")(SEND)
-    __obj.updateDynamic("VALIDATE_CREDENTIALS")(VALIDATE_CREDENTIALS)
-    __obj.updateDynamic("VALIDATE_PARAMETERS")(VALIDATE_PARAMETERS)
-    __obj.updateDynamic("VALIDATE_REGION")(VALIDATE_REGION)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(HTTP_DATA = HTTP_DATA, SEND = SEND, VALIDATE_CREDENTIALS = VALIDATE_CREDENTIALS, VALIDATE_PARAMETERS = VALIDATE_PARAMETERS, VALIDATE_REGION = VALIDATE_REGION, removeListener = removeListener)
+  
     __obj.asInstanceOf[Anon_EventListener]
   }
 }

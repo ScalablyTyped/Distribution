@@ -20,10 +20,7 @@ object Anon_Data {
     method: java.lang.String,
     timeout: scala.Int | scala.Double = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(data = data, endpoint = endpoint, method = method)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Data]
   }

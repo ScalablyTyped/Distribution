@@ -28,15 +28,8 @@ object SectionHeaderItem {
     setHelpText: js.Function1[java.lang.String, SectionHeaderItem],
     setTitle: js.Function1[java.lang.String, SectionHeaderItem]
   ): SectionHeaderItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(duplicate = duplicate, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, setHelpText = setHelpText, setTitle = setTitle)
+  
     __obj.asInstanceOf[SectionHeaderItem]
   }
 }

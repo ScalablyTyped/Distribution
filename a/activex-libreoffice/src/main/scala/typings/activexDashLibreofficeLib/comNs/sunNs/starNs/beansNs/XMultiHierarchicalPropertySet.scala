@@ -72,14 +72,8 @@ object XMultiHierarchicalPropertySet {
       scala.Unit
     ]
   ): XMultiHierarchicalPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HierarchicalPropertySetInfo")(HierarchicalPropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getHierarchicalPropertySetInfo")(getHierarchicalPropertySetInfo)
-    __obj.updateDynamic("getHierarchicalPropertyValues")(getHierarchicalPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setHierarchicalPropertyValues")(setHierarchicalPropertyValues)
+    val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo, acquire = acquire, getHierarchicalPropertySetInfo = getHierarchicalPropertySetInfo, getHierarchicalPropertyValues = getHierarchicalPropertyValues, queryInterface = queryInterface, release = release, setHierarchicalPropertyValues = setHierarchicalPropertyValues)
+  
     __obj.asInstanceOf[XMultiHierarchicalPropertySet]
   }
 }

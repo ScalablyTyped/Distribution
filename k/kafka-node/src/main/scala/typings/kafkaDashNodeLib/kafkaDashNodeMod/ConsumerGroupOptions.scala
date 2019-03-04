@@ -70,8 +70,7 @@ object ConsumerGroupOptions {
     ssl: js.UndefOr[scala.Boolean] = js.undefined,
     zk: ZKOptions = null
   ): ConsumerGroupOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
+    val __obj = js.Dynamic.literal(groupId = groupId)
     if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
     if (autoCommitIntervalMs != null) __obj.updateDynamic("autoCommitIntervalMs")(autoCommitIntervalMs.asInstanceOf[js.Any])
     if (batch != null) __obj.updateDynamic("batch")(batch)

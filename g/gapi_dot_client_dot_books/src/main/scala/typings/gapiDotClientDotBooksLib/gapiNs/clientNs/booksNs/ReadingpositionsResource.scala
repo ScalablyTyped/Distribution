@@ -24,9 +24,8 @@ object ReadingpositionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): ReadingpositionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("setPosition")(setPosition)
+    val __obj = js.Dynamic.literal(get = get, setPosition = setPosition)
+  
     __obj.asInstanceOf[ReadingpositionsResource]
   }
 }

@@ -20,11 +20,8 @@ object PhotoCapabilities {
     imageWidth: MediaSettingsRange,
     redEyeReduction: RedEyeReduction
   ): PhotoCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fillLightMode")(fillLightMode)
-    __obj.updateDynamic("imageHeight")(imageHeight)
-    __obj.updateDynamic("imageWidth")(imageWidth)
-    __obj.updateDynamic("redEyeReduction")(redEyeReduction)
+    val __obj = js.Dynamic.literal(fillLightMode = fillLightMode, imageHeight = imageHeight, imageWidth = imageWidth, redEyeReduction = redEyeReduction)
+  
     __obj.asInstanceOf[PhotoCapabilities]
   }
 }

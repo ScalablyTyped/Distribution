@@ -98,22 +98,8 @@ object XResourceId {
     isBoundTo: js.Function2[XResourceId, AnchorBindingMode, scala.Boolean],
     isBoundToURL: js.Function2[java.lang.String, AnchorBindingMode, scala.Boolean]
   ): XResourceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("AnchorURLs")(AnchorURLs)
-    __obj.updateDynamic("FullResourceURL")(FullResourceURL)
-    __obj.updateDynamic("ResourceTypePrefix")(ResourceTypePrefix)
-    __obj.updateDynamic("ResourceURL")(ResourceURL)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("compareTo")(compareTo)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getAnchorURLs")(getAnchorURLs)
-    __obj.updateDynamic("getFullResourceURL")(getFullResourceURL)
-    __obj.updateDynamic("getResourceTypePrefix")(getResourceTypePrefix)
-    __obj.updateDynamic("getResourceURL")(getResourceURL)
-    __obj.updateDynamic("hasAnchor")(hasAnchor)
-    __obj.updateDynamic("isBoundTo")(isBoundTo)
-    __obj.updateDynamic("isBoundToURL")(isBoundToURL)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, AnchorURLs = AnchorURLs, FullResourceURL = FullResourceURL, ResourceTypePrefix = ResourceTypePrefix, ResourceURL = ResourceURL, clone = clone, compareTo = compareTo, getAnchor = getAnchor, getAnchorURLs = getAnchorURLs, getFullResourceURL = getFullResourceURL, getResourceTypePrefix = getResourceTypePrefix, getResourceURL = getResourceURL, hasAnchor = hasAnchor, isBoundTo = isBoundTo, isBoundToURL = isBoundToURL)
+  
     __obj.asInstanceOf[XResourceId]
   }
 }

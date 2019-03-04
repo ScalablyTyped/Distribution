@@ -128,18 +128,8 @@ object XArray {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaseType")(BaseType)
-    __obj.updateDynamic("BaseTypeName")(BaseTypeName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getArrayAtIndex")(getArrayAtIndex)
-    __obj.updateDynamic("getBaseType")(getBaseType)
-    __obj.updateDynamic("getBaseTypeName")(getBaseTypeName)
-    __obj.updateDynamic("getResultSet")(getResultSet)
-    __obj.updateDynamic("getResultSetAtIndex")(getResultSetAtIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, BaseTypeName = BaseTypeName, acquire = acquire, getArray = getArray, getArrayAtIndex = getArrayAtIndex, getBaseType = getBaseType, getBaseTypeName = getBaseTypeName, getResultSet = getResultSet, getResultSetAtIndex = getResultSetAtIndex, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XArray]
   }
 }

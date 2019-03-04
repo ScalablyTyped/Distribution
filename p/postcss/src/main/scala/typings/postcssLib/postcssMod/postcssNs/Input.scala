@@ -45,12 +45,8 @@ object Input {
     map: PreviousMap,
     origin: js.Function2[scala.Double, scala.Double, InputOrigin]
   ): Input = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(file = file, from = from, id = id, map = map, origin = origin)
+  
     __obj.asInstanceOf[Input]
   }
 }

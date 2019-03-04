@@ -38,19 +38,7 @@ object Milestone {
     updated: momentLib.momentMod.momentNs.Moment,
     closed: momentLib.momentMod.momentNs.Moment = null
   ): Milestone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closedIssueCount")(closedIssueCount)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("creator")(creator)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("due")(due)
-    __obj.updateDynamic("htmlUri")(htmlUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("openIssueCount")(openIssueCount)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(closedIssueCount = closedIssueCount, created = created, creator = creator, description = description, due = due, htmlUri = htmlUri, id = id, number = number, openIssueCount = openIssueCount, state = state.asInstanceOf[js.Any], title = title, updated = updated)
     if (closed != null) __obj.updateDynamic("closed")(closed)
     __obj.asInstanceOf[Milestone]
   }

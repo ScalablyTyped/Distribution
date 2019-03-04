@@ -13,9 +13,8 @@ trait DataViewObjectPropertyIdentifier extends js.Object {
 object DataViewObjectPropertyIdentifier {
   @scala.inline
   def apply(objectName: java.lang.String, propertyName: java.lang.String): DataViewObjectPropertyIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectName")(objectName)
-    __obj.updateDynamic("propertyName")(propertyName)
+    val __obj = js.Dynamic.literal(objectName = objectName, propertyName = propertyName)
+  
     __obj.asInstanceOf[DataViewObjectPropertyIdentifier]
   }
 }

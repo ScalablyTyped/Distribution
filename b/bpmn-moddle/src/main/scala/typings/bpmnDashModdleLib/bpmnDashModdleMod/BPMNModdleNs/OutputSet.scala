@@ -28,14 +28,7 @@ object OutputSet {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): OutputSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("dataOutputRefs")(dataOutputRefs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputSetRefs")(inputSetRefs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionalOutputRefs")(optionalOutputRefs)
-    __obj.updateDynamic("whileExecutingOutputREfs")(whileExecutingOutputREfs)
+    val __obj = js.Dynamic.literal($type = $type, dataOutputRefs = dataOutputRefs, id = id, inputSetRefs = inputSetRefs, name = name, optionalOutputRefs = optionalOutputRefs, whileExecutingOutputREfs = whileExecutingOutputREfs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

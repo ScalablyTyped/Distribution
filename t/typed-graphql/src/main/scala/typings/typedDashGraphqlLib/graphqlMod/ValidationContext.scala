@@ -42,22 +42,8 @@ object ValidationContext {
     getVariableUsages: js.Function1[HasSelectionSet, js.Array[VariableUsage]],
     reportError: js.Function1[GraphQLError, scala.Unit]
   ): ValidationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getArgument")(getArgument)
-    __obj.updateDynamic("getDirective")(getDirective)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("getErrors")(getErrors)
-    __obj.updateDynamic("getFieldDef")(getFieldDef)
-    __obj.updateDynamic("getFragment")(getFragment)
-    __obj.updateDynamic("getFragmentSpreads")(getFragmentSpreads)
-    __obj.updateDynamic("getInputType")(getInputType)
-    __obj.updateDynamic("getParentType")(getParentType)
-    __obj.updateDynamic("getRecursiveVariableUsages")(getRecursiveVariableUsages)
-    __obj.updateDynamic("getRecursivelyReferencedFragments")(getRecursivelyReferencedFragments)
-    __obj.updateDynamic("getSchema")(getSchema)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getVariableUsages")(getVariableUsages)
-    __obj.updateDynamic("reportError")(reportError)
+    val __obj = js.Dynamic.literal(getArgument = getArgument, getDirective = getDirective, getDocument = getDocument, getErrors = getErrors, getFieldDef = getFieldDef, getFragment = getFragment, getFragmentSpreads = getFragmentSpreads, getInputType = getInputType, getParentType = getParentType, getRecursiveVariableUsages = getRecursiveVariableUsages, getRecursivelyReferencedFragments = getRecursivelyReferencedFragments, getSchema = getSchema, getType = getType, getVariableUsages = getVariableUsages, reportError = reportError)
+  
     __obj.asInstanceOf[ValidationContext]
   }
 }

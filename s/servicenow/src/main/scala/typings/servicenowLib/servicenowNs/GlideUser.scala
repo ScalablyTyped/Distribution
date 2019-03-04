@@ -28,15 +28,8 @@ object GlideUser {
     isMemberOf: js.Function1[java.lang.String, scala.Boolean],
     savePreference: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): GlideUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCompanyID")(getCompanyID)
-    __obj.updateDynamic("getDisplayName")(getDisplayName)
-    __obj.updateDynamic("getID")(getID)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPreference")(getPreference)
-    __obj.updateDynamic("hasRole")(hasRole)
-    __obj.updateDynamic("isMemberOf")(isMemberOf)
-    __obj.updateDynamic("savePreference")(savePreference)
+    val __obj = js.Dynamic.literal(getCompanyID = getCompanyID, getDisplayName = getDisplayName, getID = getID, getName = getName, getPreference = getPreference, hasRole = hasRole, isMemberOf = isMemberOf, savePreference = savePreference)
+  
     __obj.asInstanceOf[GlideUser]
   }
 }

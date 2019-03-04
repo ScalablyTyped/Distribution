@@ -12,8 +12,8 @@ trait Anon_ContextMenu extends js.Object {
 object Anon_ContextMenu {
   @scala.inline
   def apply(ContextMenu: activexDashOutlookLib.OutlookNs.OlContextMenu): Anon_ContextMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContextMenu")(ContextMenu)
+    val __obj = js.Dynamic.literal(ContextMenu = ContextMenu)
+  
     __obj.asInstanceOf[Anon_ContextMenu]
   }
 }

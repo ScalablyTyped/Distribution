@@ -23,15 +23,8 @@ object ImageAdBuilder {
     withName: js.Function1[java.lang.String, ImageAdBuilder[ImageAd]],
     withTrackingTemplate: js.Function1[java.lang.String, ImageAdBuilder[ImageAd]]
   ): ImageAdBuilder[ImageAd] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withDisplayUrl")(withDisplayUrl)
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withImage")(withImage)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
-    __obj.updateDynamic("withName")(withName)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withDisplayUrl = withDisplayUrl, withFinalUrl = withFinalUrl, withImage = withImage, withMobileFinalUrl = withMobileFinalUrl, withName = withName, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[ImageAdBuilder[ImageAd]]
   }
 }

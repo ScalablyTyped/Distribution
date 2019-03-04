@@ -13,9 +13,8 @@ trait Anon_ClientOperations[TCache] extends js.Object {
 object Anon_ClientOperations {
   @scala.inline
   def apply[TCache](client: apolloDashClientLib.apolloDashClientMod.default[TCache], operations: js.Any): Anon_ClientOperations[TCache] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(client = client, operations = operations)
+  
     __obj.asInstanceOf[Anon_ClientOperations[TCache]]
   }
 }

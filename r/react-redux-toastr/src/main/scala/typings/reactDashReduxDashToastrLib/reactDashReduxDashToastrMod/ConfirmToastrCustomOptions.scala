@@ -12,8 +12,8 @@ trait ConfirmToastrCustomOptions extends js.Object {
 object ConfirmToastrCustomOptions {
   @scala.inline
   def apply(component: reactLib.reactMod.Global.JSXNs.Element): ConfirmToastrCustomOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
+  
     __obj.asInstanceOf[ConfirmToastrCustomOptions]
   }
 }

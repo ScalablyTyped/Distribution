@@ -76,20 +76,8 @@ object ICoupon {
     times_redeemed: scala.Double,
     valid: scala.Boolean
   ): ICoupon = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount_off")(amount_off)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration_in_months")(duration_in_months)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("max_redemptions")(max_redemptions)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("percent_off")(percent_off)
-    __obj.updateDynamic("redeem_by")(redeem_by)
-    __obj.updateDynamic("times_redeemed")(times_redeemed)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(amount_off = amount_off, created = created, currency = currency, duration = duration.asInstanceOf[js.Any], duration_in_months = duration_in_months, id = id, livemode = livemode, max_redemptions = max_redemptions, metadata = metadata, percent_off = percent_off, redeem_by = redeem_by, times_redeemed = times_redeemed, valid = valid)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[ICoupon]
   }
 }

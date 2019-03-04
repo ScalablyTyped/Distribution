@@ -34,9 +34,7 @@ object Anon_IdKinesisFirehoseKinesisStreamNamePrefix {
     startingPositionConfigurations: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_StartingPositionInput]]] = null,
     streamNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_IdKinesisFirehoseKinesisStreamNamePrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(namePrefix = namePrefix.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose.asInstanceOf[js.Any])
     if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream.asInstanceOf[js.Any])

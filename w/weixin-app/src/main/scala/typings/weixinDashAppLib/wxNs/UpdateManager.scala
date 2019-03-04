@@ -33,11 +33,8 @@ object UpdateManager {
     onUpdateFailed: js.Function1[js.Function1[/* res */ weixinDashAppLib.Anon_ErrMsg, scala.Unit], scala.Unit],
     onUpdateReady: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): UpdateManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyUpdate")(applyUpdate)
-    __obj.updateDynamic("onCheckForUpdate")(onCheckForUpdate)
-    __obj.updateDynamic("onUpdateFailed")(onUpdateFailed)
-    __obj.updateDynamic("onUpdateReady")(onUpdateReady)
+    val __obj = js.Dynamic.literal(applyUpdate = applyUpdate, onCheckForUpdate = onCheckForUpdate, onUpdateFailed = onUpdateFailed, onUpdateReady = onUpdateReady)
+  
     __obj.asInstanceOf[UpdateManager]
   }
 }

@@ -13,9 +13,8 @@ trait IonicEnvironmentFlags extends js.Object {
 object IonicEnvironmentFlags {
   @scala.inline
   def apply(confirm: scala.Boolean, interactive: scala.Boolean): IonicEnvironmentFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirm")(confirm)
-    __obj.updateDynamic("interactive")(interactive)
+    val __obj = js.Dynamic.literal(confirm = confirm, interactive = interactive)
+  
     __obj.asInstanceOf[IonicEnvironmentFlags]
   }
 }

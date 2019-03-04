@@ -31,10 +31,8 @@ object Profunctor {
       fpDashTsLib.libHKTMod.HKT2[F, js.Any, js.Any]
     ]
   ): Profunctor[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("promap")(promap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], map = map, promap = promap)
+  
     __obj.asInstanceOf[Profunctor[F]]
   }
 }

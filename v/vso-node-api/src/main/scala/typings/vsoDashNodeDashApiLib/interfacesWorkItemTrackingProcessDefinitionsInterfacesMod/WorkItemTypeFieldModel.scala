@@ -30,15 +30,8 @@ object WorkItemTypeFieldModel {
     `type`: FieldType,
     url: java.lang.String
   ): WorkItemTypeFieldModel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("allowGroups")(allowGroups)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pickList")(pickList)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(allowGroups = allowGroups, defaultValue = defaultValue, name = name, pickList = pickList, readOnly = readOnly, referenceName = referenceName, required = required, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorkItemTypeFieldModel]
   }
 }

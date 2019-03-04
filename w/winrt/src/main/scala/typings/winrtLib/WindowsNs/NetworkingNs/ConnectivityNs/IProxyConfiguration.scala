@@ -16,9 +16,8 @@ object IProxyConfiguration {
     canConnectDirectly: scala.Boolean,
     proxyUris: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtLib.WindowsNs.FoundationNs.Uri]
   ): IProxyConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canConnectDirectly")(canConnectDirectly)
-    __obj.updateDynamic("proxyUris")(proxyUris)
+    val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly, proxyUris = proxyUris)
+  
     __obj.asInstanceOf[IProxyConfiguration]
   }
 }

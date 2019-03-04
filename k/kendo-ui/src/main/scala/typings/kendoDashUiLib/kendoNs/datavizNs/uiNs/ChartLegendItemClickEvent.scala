@@ -25,10 +25,7 @@ object ChartLegendItemClickEvent {
     seriesIndex: scala.Int | scala.Double = null,
     text: java.lang.String = null
   ): ChartLegendItemClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series)

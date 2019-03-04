@@ -26,8 +26,7 @@ object PopperProps {
     positionFixed: js.UndefOr[scala.Boolean] = js.undefined,
     referenceElement: popperDotJsLib.popperDotJsMod.ReferenceObject = null
   ): PopperProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers)

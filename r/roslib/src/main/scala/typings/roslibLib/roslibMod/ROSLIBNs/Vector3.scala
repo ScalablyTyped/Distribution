@@ -40,14 +40,8 @@ object Vector3 {
     y: scala.Double,
     z: scala.Double
   ): Vector3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("multiplyQuaternion")(multiplyQuaternion)
-    __obj.updateDynamic("subtract")(subtract)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(add = add, clone = clone, multiplyQuaternion = multiplyQuaternion, subtract = subtract, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[Vector3]
   }
 }

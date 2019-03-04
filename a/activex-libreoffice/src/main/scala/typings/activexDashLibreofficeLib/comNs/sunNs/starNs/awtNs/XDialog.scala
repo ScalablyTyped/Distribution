@@ -32,15 +32,8 @@ object XDialog {
     release: js.Function0[scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("endExecute")(endExecute)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(Title = Title, acquire = acquire, endExecute = endExecute, execute = execute, getTitle = getTitle, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
     __obj.asInstanceOf[XDialog]
   }
 }

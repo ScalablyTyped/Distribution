@@ -26,14 +26,8 @@ object FlashCompiledClipInstance {
     silent: scala.Boolean,
     tabIndex: scala.Double
   ): FlashCompiledClipInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accName")(accName)
-    __obj.updateDynamic("actionScript")(actionScript)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("forceSimple")(forceSimple)
-    __obj.updateDynamic("shortcut")(shortcut)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("tabIndex")(tabIndex)
+    val __obj = js.Dynamic.literal(accName = accName, actionScript = actionScript, description = description, forceSimple = forceSimple, shortcut = shortcut, silent = silent, tabIndex = tabIndex)
+  
     __obj.asInstanceOf[FlashCompiledClipInstance]
   }
 }

@@ -28,8 +28,8 @@ object Anon_ImageData {
       js.Promise[scala.Unit]
     ]
   ): Anon_ImageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setImageData")(setImageData)
+    val __obj = js.Dynamic.literal(setImageData = setImageData)
+  
     __obj.asInstanceOf[Anon_ImageData]
   }
 }

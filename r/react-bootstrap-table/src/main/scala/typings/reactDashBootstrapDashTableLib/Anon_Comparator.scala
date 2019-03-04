@@ -22,9 +22,8 @@ object Anon_Comparator {
     comparator: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator,
     number: scala.Double
   ): Anon_Comparator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparator")(comparator)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(comparator = comparator, number = number)
+  
     __obj.asInstanceOf[Anon_Comparator]
   }
 }

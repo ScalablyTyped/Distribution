@@ -16,9 +16,8 @@ object MarkedDateCustomStyles {
     container: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle],
     text: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ): MarkedDateCustomStyles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MarkedDateCustomStyles]
   }
 }

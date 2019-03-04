@@ -40,27 +40,8 @@ object PageDefinitions {
     properties: ComponentProperties,
     ready: js.Function0[scala.Unit]
   ): PageDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attached")(attached)
-    __obj.updateDynamic("beforeLoad")(beforeLoad)
-    __obj.updateDynamic("compute")(compute)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("detached")(detached)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("mixins")(mixins)
-    __obj.updateDynamic("moved")(moved)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onLoad")(onLoad)
-    __obj.updateDynamic("onPageScroll")(onPageScroll)
-    __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
-    __obj.updateDynamic("onReachBottom")(onReachBottom)
-    __obj.updateDynamic("onReady")(onReady)
-    __obj.updateDynamic("onShareAppMessage")(onShareAppMessage)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("onUnload")(onUnload)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(attached = attached, beforeLoad = beforeLoad, compute = compute, created = created, data = data, detached = detached, methods = methods, mixins = mixins, moved = moved, onHide = onHide, onLoad = onLoad, onPageScroll = onPageScroll, onPullDownRefresh = onPullDownRefresh, onReachBottom = onReachBottom, onReady = onReady, onShareAppMessage = onShareAppMessage, onShow = onShow, onUnload = onUnload, properties = properties, ready = ready)
+  
     __obj.asInstanceOf[PageDefinitions]
   }
 }

@@ -20,11 +20,8 @@ object Anon_ActionName {
     serverName: java.lang.String,
     timeout: scala.Double
   ): Anon_ActionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionName")(actionName)
-    __obj.updateDynamic("ros")(ros)
-    __obj.updateDynamic("serverName")(serverName)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(actionName = actionName, ros = ros, serverName = serverName, timeout = timeout)
+  
     __obj.asInstanceOf[Anon_ActionName]
   }
 }

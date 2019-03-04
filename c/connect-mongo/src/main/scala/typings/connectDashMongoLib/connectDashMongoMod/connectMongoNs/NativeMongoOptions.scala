@@ -26,8 +26,7 @@ object NativeMongoOptions {
     ttl: scala.Int | scala.Double = null,
     w: scala.Int | scala.Double = null
   ): NativeMongoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(db = db)
     if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
     if (autoRemove != null) __obj.updateDynamic("autoRemove")(autoRemove)
     if (autoRemoveInterval != null) __obj.updateDynamic("autoRemoveInterval")(autoRemoveInterval.asInstanceOf[js.Any])

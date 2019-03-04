@@ -12,8 +12,8 @@ trait Anon_StatusBar extends js.Object {
 object Anon_StatusBar {
   @scala.inline
   def apply(StatusBar: scala.Boolean): Anon_StatusBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StatusBar")(StatusBar)
+    val __obj = js.Dynamic.literal(StatusBar = StatusBar)
+  
     __obj.asInstanceOf[Anon_StatusBar]
   }
 }

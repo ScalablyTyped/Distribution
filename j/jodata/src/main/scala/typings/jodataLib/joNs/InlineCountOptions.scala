@@ -13,9 +13,8 @@ trait InlineCountOptions extends js.Object {
 object InlineCountOptions {
   @scala.inline
   def apply(allPages: js.Function0[jodataLib.jo], none: js.Function0[jodataLib.jo]): InlineCountOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allPages")(allPages)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(allPages = allPages, none = none)
+  
     __obj.asInstanceOf[InlineCountOptions]
   }
 }

@@ -20,11 +20,8 @@ object Anon_ErrorCode {
     id: java.lang.String,
     url: java.lang.String
   ): Anon_ErrorCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorString")(errorString)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorString = errorString, id = id, url = url)
+  
     __obj.asInstanceOf[Anon_ErrorCode]
   }
 }

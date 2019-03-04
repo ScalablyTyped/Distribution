@@ -12,8 +12,8 @@ trait Empty[T] extends Option[T] {
 object Empty {
   @scala.inline
   def apply[T](kind: typescriptDashOptionalLib.typescriptDashOptionalLibStrings.empty): Empty[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[Empty[T]]
   }
 }

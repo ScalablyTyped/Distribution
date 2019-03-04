@@ -18,9 +18,7 @@ object AsnResponse {
     autonomous_system_organization: java.lang.String,
     ip_address: java.lang.String = null
   ): AsnResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autonomous_system_number")(autonomous_system_number)
-    __obj.updateDynamic("autonomous_system_organization")(autonomous_system_organization)
+    val __obj = js.Dynamic.literal(autonomous_system_number = autonomous_system_number, autonomous_system_organization = autonomous_system_organization)
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address)
     __obj.asInstanceOf[AsnResponse]
   }

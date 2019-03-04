@@ -39,10 +39,8 @@ object UiKeyPressable {
     fireOnKeyPress: js.Function0[scala.Unit],
     removeOnKeyPress: js.Function1[xrmLib.XrmNs.EventsNs.ContextSensitiveHandler, scala.Unit]
   ): UiKeyPressable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOnKeyPress")(addOnKeyPress)
-    __obj.updateDynamic("fireOnKeyPress")(fireOnKeyPress)
-    __obj.updateDynamic("removeOnKeyPress")(removeOnKeyPress)
+    val __obj = js.Dynamic.literal(addOnKeyPress = addOnKeyPress, fireOnKeyPress = fireOnKeyPress, removeOnKeyPress = removeOnKeyPress)
+  
     __obj.asInstanceOf[UiKeyPressable]
   }
 }

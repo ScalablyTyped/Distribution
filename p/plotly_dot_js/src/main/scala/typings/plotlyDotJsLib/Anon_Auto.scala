@@ -30,16 +30,8 @@ object Anon_Auto {
     yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom,
     yref: plotlyDotJsLib.plotlyDotJsLibStrings.container | plotlyDotJsLib.plotlyDotJsLibStrings.paper
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("pad")(pad)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(font = font, pad = pad, text = text, x = x, xanchor = xanchor.asInstanceOf[js.Any], xref = xref.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any], yref = yref.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Auto]
   }
 }

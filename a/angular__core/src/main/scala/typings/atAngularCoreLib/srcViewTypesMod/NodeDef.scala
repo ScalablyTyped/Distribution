@@ -74,22 +74,7 @@ object NodeDef {
     renderParent: NodeDef = null,
     text: TextDef = null
   ): NodeDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingFlags")(bindingFlags)
-    __obj.updateDynamic("bindingIndex")(bindingIndex)
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("checkIndex")(checkIndex)
-    __obj.updateDynamic("childCount")(childCount)
-    __obj.updateDynamic("childFlags")(childFlags)
-    __obj.updateDynamic("childMatchedQueries")(childMatchedQueries)
-    __obj.updateDynamic("directChildFlags")(directChildFlags)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("matchedQueries")(matchedQueries)
-    __obj.updateDynamic("matchedQueryIds")(matchedQueryIds)
-    __obj.updateDynamic("nodeIndex")(nodeIndex)
-    __obj.updateDynamic("outputIndex")(outputIndex)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(bindingFlags = bindingFlags, bindingIndex = bindingIndex, bindings = bindings, checkIndex = checkIndex, childCount = childCount, childFlags = childFlags, childMatchedQueries = childMatchedQueries, directChildFlags = directChildFlags, flags = flags, matchedQueries = matchedQueries, matchedQueryIds = matchedQueryIds, nodeIndex = nodeIndex, outputIndex = outputIndex, outputs = outputs, references = references)
     if (element != null) __obj.updateDynamic("element")(element)
     if (ngContent != null) __obj.updateDynamic("ngContent")(ngContent)
     if (ngContentIndex != null) __obj.updateDynamic("ngContentIndex")(ngContentIndex.asInstanceOf[js.Any])

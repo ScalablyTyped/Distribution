@@ -62,8 +62,8 @@ object PromptQuestionBase {
     ] = null,
     when: scala.Boolean | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, scala.Boolean]) | (js.Function1[inquirerLib.inquirerMod.inquirerNs.Answers, js.Promise[scala.Boolean]]) = null
   ): PromptQuestionBase = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])

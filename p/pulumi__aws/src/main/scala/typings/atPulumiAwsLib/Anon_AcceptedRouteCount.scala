@@ -22,12 +22,8 @@ object Anon_AcceptedRouteCount {
     status: java.lang.String,
     statusMessage: java.lang.String
   ): Anon_AcceptedRouteCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptedRouteCount")(acceptedRouteCount)
-    __obj.updateDynamic("lastStatusChange")(lastStatusChange)
-    __obj.updateDynamic("outsideIpAddress")(outsideIpAddress)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(acceptedRouteCount = acceptedRouteCount, lastStatusChange = lastStatusChange, outsideIpAddress = outsideIpAddress, status = status, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[Anon_AcceptedRouteCount]
   }
 }

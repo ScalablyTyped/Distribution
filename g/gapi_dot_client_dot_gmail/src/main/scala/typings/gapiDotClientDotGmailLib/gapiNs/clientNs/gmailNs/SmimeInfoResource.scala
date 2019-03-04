@@ -42,12 +42,8 @@ object SmimeInfoResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): SmimeInfoResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setDefault")(setDefault)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setDefault = setDefault)
+  
     __obj.asInstanceOf[SmimeInfoResource]
   }
 }

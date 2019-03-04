@@ -18,10 +18,8 @@ object Anon_Name {
     namespace: sanctuaryLib.sanctuaryMod.Maybe[java.lang.String],
     version: NonNegativeInteger
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, version = version)
+  
     __obj.asInstanceOf[Anon_Name]
   }
 }

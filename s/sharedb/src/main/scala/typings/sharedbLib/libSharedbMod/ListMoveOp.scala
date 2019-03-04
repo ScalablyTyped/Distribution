@@ -13,9 +13,8 @@ trait ListMoveOp extends Op {
 object ListMoveOp {
   @scala.inline
   def apply(lm: js.Any, p: Path): ListMoveOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lm")(lm)
-    __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(lm = lm, p = p)
+  
     __obj.asInstanceOf[ListMoveOp]
   }
 }

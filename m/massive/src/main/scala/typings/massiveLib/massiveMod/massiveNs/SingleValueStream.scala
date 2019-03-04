@@ -27,9 +27,8 @@ object SingleValueStream {
     ],
     singleValue: js.Function1[AnyObject[_], js.Any]
   ): SingleValueStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_transform")(_transform)
-    __obj.updateDynamic("singleValue")(singleValue)
+    val __obj = js.Dynamic.literal(_transform = _transform, singleValue = singleValue)
+  
     __obj.asInstanceOf[SingleValueStream]
   }
 }

@@ -20,11 +20,8 @@ object ContextModuleFactoryHooks {
     beforeResolve: tapableLib.tapableMod.AsyncSeriesWaterfallHook[_, _, _],
     contextModuleFiles: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
   ): ContextModuleFactoryHooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterResolve")(afterResolve)
-    __obj.updateDynamic("alternatives")(alternatives)
-    __obj.updateDynamic("beforeResolve")(beforeResolve)
-    __obj.updateDynamic("contextModuleFiles")(contextModuleFiles)
+    val __obj = js.Dynamic.literal(afterResolve = afterResolve, alternatives = alternatives, beforeResolve = beforeResolve, contextModuleFiles = contextModuleFiles)
+  
     __obj.asInstanceOf[ContextModuleFactoryHooks]
   }
 }

@@ -12,8 +12,8 @@ trait VersionInfo extends js.Object {
 object VersionInfo {
   @scala.inline
   def apply(content: java.lang.String): VersionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+  
     __obj.asInstanceOf[VersionInfo]
   }
 }

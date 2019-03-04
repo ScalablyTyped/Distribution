@@ -15,9 +15,8 @@ trait External extends js.Object {
 object External {
   @scala.inline
   def apply(AddSearchProvider: js.Function0[scala.Unit], IsSearchProviderInstalled: js.Function0[scala.Unit]): External = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddSearchProvider")(AddSearchProvider)
-    __obj.updateDynamic("IsSearchProviderInstalled")(IsSearchProviderInstalled)
+    val __obj = js.Dynamic.literal(AddSearchProvider = AddSearchProvider, IsSearchProviderInstalled = IsSearchProviderInstalled)
+  
     __obj.asInstanceOf[External]
   }
 }

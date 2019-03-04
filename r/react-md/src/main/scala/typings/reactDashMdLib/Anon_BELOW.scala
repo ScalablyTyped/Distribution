@@ -22,12 +22,8 @@ object Anon_BELOW {
     TOP_LEFT: reactDashMdLib.reactDashMdLibStrings.tl,
     TOP_RIGHT: reactDashMdLib.reactDashMdLibStrings.tr
   ): Anon_BELOW = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BELOW")(BELOW)
-    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
-    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
-    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
-    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
+    val __obj = js.Dynamic.literal(BELOW = BELOW, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT)
+  
     __obj.asInstanceOf[Anon_BELOW]
   }
 }

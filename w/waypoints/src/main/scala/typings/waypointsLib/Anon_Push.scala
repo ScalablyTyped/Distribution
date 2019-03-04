@@ -12,8 +12,8 @@ trait Anon_Push extends js.Object {
 object Anon_Push {
   @scala.inline
   def apply(push: Anon_Adapter): Anon_Push = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(push = push)
+  
     __obj.asInstanceOf[Anon_Push]
   }
 }

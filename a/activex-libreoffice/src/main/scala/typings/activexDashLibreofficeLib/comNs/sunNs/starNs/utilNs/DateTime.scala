@@ -40,15 +40,8 @@ object DateTime {
     Seconds: scala.Double,
     Year: scala.Double
   ): DateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Day")(Day)
-    __obj.updateDynamic("Hours")(Hours)
-    __obj.updateDynamic("IsUTC")(IsUTC)
-    __obj.updateDynamic("Minutes")(Minutes)
-    __obj.updateDynamic("Month")(Month)
-    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
-    __obj.updateDynamic("Seconds")(Seconds)
-    __obj.updateDynamic("Year")(Year)
+    val __obj = js.Dynamic.literal(Day = Day, Hours = Hours, IsUTC = IsUTC, Minutes = Minutes, Month = Month, NanoSeconds = NanoSeconds, Seconds = Seconds, Year = Year)
+  
     __obj.asInstanceOf[DateTime]
   }
 }

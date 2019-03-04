@@ -18,10 +18,8 @@ object Anon_TriggerEvents {
     triggerName: java.lang.String,
     triggerTargetArn: java.lang.String
   ): Anon_TriggerEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("triggerEvents")(triggerEvents)
-    __obj.updateDynamic("triggerName")(triggerName)
-    __obj.updateDynamic("triggerTargetArn")(triggerTargetArn)
+    val __obj = js.Dynamic.literal(triggerEvents = triggerEvents, triggerName = triggerName, triggerTargetArn = triggerTargetArn)
+  
     __obj.asInstanceOf[Anon_TriggerEvents]
   }
 }

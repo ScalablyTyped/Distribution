@@ -21,10 +21,7 @@ object DiagramDragEvent {
     connections: js.Any = null,
     shapes: js.Any = null
   ): DiagramDragEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (connectionHandle != null) __obj.updateDynamic("connectionHandle")(connectionHandle)
     if (connections != null) __obj.updateDynamic("connections")(connections)
     if (shapes != null) __obj.updateDynamic("shapes")(shapes)

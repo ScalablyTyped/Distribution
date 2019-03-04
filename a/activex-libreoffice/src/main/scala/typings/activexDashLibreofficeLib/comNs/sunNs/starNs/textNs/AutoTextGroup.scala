@@ -46,30 +46,8 @@ object AutoTextGroup {
     renameByName: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     setName: js.Function1[java.lang.String, scala.Unit]
   ): AutoTextGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("FilePath")(FilePath)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Titles")(Titles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getTitles")(getTitles)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertNewByName")(insertNewByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("renameByName")(renameByName)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, FilePath = FilePath, Name = Name, Title = Title, Titles = Titles, acquire = acquire, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, getName = getName, getTitles = getTitles, hasByName = hasByName, hasElements = hasElements, insertNewByName = insertNewByName, queryInterface = queryInterface, release = release, removeByName = removeByName, renameByName = renameByName, setName = setName)
+  
     __obj.asInstanceOf[AutoTextGroup]
   }
 }

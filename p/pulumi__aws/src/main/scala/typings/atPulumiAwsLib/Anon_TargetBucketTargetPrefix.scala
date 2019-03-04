@@ -16,8 +16,7 @@ object Anon_TargetBucketTargetPrefix {
     targetBucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     targetPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_TargetBucketTargetPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetBucket")(targetBucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(targetBucket = targetBucket.asInstanceOf[js.Any])
     if (targetPrefix != null) __obj.updateDynamic("targetPrefix")(targetPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TargetBucketTargetPrefix]
   }

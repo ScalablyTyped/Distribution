@@ -82,21 +82,8 @@ object ResumableFile {
     size: scala.Double,
     uniqueIdentifier: java.lang.String
   ): ResumableFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("bootstrap")(bootstrap)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("chunks")(chunks)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("isComplete")(isComplete)
-    __obj.updateDynamic("isUploading")(isUploading)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("relativePath")(relativePath)
-    __obj.updateDynamic("resumableObj")(resumableObj)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uniqueIdentifier")(uniqueIdentifier)
+    val __obj = js.Dynamic.literal(abort = abort, bootstrap = bootstrap, cancel = cancel, chunks = chunks, file = file, fileName = fileName, isComplete = isComplete, isUploading = isUploading, progress = progress, relativePath = relativePath, resumableObj = resumableObj, retry = retry, size = size, uniqueIdentifier = uniqueIdentifier)
+  
     __obj.asInstanceOf[ResumableFile]
   }
 }

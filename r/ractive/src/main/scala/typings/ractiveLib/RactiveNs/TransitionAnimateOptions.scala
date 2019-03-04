@@ -18,9 +18,7 @@ trait TransitionAnimateOptions extends js.Object {
 object TransitionAnimateOptions {
   @scala.inline
   def apply(delay: scala.Double, duration: scala.Double, easing: java.lang.String = null): TransitionAnimateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(delay = delay, duration = duration)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     __obj.asInstanceOf[TransitionAnimateOptions]
   }

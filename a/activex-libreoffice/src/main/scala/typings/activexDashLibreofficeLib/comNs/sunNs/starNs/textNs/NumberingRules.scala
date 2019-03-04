@@ -74,32 +74,8 @@ object NumberingRules {
     replaceByIndex: js.Function2[scala.Double, js.Any, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): NumberingRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("DefaultListId")(DefaultListId)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("IsAbsoluteMargins")(IsAbsoluteMargins)
-    __obj.updateDynamic("IsAutomatic")(IsAutomatic)
-    __obj.updateDynamic("IsContinuousNumbering")(IsContinuousNumbering)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NumberingIsOutline")(NumberingIsOutline)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Count = Count, DefaultListId = DefaultListId, ElementType = ElementType, IsAbsoluteMargins = IsAbsoluteMargins, IsAutomatic = IsAutomatic, IsContinuousNumbering = IsContinuousNumbering, Name = Name, NumberingIsOutline = NumberingIsOutline, NumberingType = NumberingType, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasElements = hasElements, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, replaceByIndex = replaceByIndex, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[NumberingRules]
   }
 }

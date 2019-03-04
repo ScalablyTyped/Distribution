@@ -40,21 +40,8 @@ object IPair {
     timeCreated: scala.Double,
     timeUpdated: scala.Double
   ): IPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeContacts")(activeContacts)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("contacts")(contacts)
-    __obj.updateDynamic("friction")(friction)
-    __obj.updateDynamic("frictionStatic")(frictionStatic)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inverseMass")(inverseMass)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("restitution")(restitution)
-    __obj.updateDynamic("separation")(separation)
-    __obj.updateDynamic("slop")(slop)
-    __obj.updateDynamic("timeCreated")(timeCreated)
-    __obj.updateDynamic("timeUpdated")(timeUpdated)
+    val __obj = js.Dynamic.literal(activeContacts = activeContacts, bodyA = bodyA, bodyB = bodyB, contacts = contacts, friction = friction, frictionStatic = frictionStatic, id = id, inverseMass = inverseMass, isActive = isActive, restitution = restitution, separation = separation, slop = slop, timeCreated = timeCreated, timeUpdated = timeUpdated)
+  
     __obj.asInstanceOf[IPair]
   }
 }

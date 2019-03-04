@@ -18,10 +18,8 @@ object Jsonnet {
     eval: js.Function1[java.lang.String, js.Any],
     evalFile: js.Function0[js.Any]
   ): Jsonnet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("evalFile")(evalFile)
+    val __obj = js.Dynamic.literal(destroy = destroy, eval = eval, evalFile = evalFile)
+  
     __obj.asInstanceOf[Jsonnet]
   }
 }

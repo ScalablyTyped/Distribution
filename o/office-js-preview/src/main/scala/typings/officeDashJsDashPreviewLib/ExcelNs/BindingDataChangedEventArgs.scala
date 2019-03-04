@@ -24,8 +24,8 @@ trait BindingDataChangedEventArgs extends js.Object {
 object BindingDataChangedEventArgs {
   @scala.inline
   def apply(binding: Binding): BindingDataChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binding")(binding)
+    val __obj = js.Dynamic.literal(binding = binding)
+  
     __obj.asInstanceOf[BindingDataChangedEventArgs]
   }
 }

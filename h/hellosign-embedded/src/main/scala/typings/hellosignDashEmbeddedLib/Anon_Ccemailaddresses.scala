@@ -20,11 +20,8 @@ object Anon_Ccemailaddresses {
     signatures: js.Array[Anon_Haspin],
     title: java.lang.String
   ): Anon_Ccemailaddresses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cc_email_addresses")(cc_email_addresses)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("signatures")(signatures)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cc_email_addresses = cc_email_addresses, message = message, signatures = signatures, title = title)
+  
     __obj.asInstanceOf[Anon_Ccemailaddresses]
   }
 }

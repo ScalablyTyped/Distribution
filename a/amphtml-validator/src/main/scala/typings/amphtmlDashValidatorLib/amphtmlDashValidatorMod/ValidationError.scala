@@ -28,14 +28,7 @@ object ValidationError {
     severity: ValidationErrorSeverity,
     specUrl: java.lang.String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(category = category, code = code, col = col, line = line, message = message, params = params, severity = severity)
     if (specUrl != null) __obj.updateDynamic("specUrl")(specUrl)
     __obj.asInstanceOf[ValidationError]
   }

@@ -26,9 +26,7 @@ trait FullAttachment extends Attachment {
 object FullAttachment {
   @scala.inline
   def apply(content_type: java.lang.String, data: AttachmentData, digest: java.lang.String = null): FullAttachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_type")(content_type)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content_type = content_type, data = data.asInstanceOf[js.Any])
     if (digest != null) __obj.updateDynamic("digest")(digest)
     __obj.asInstanceOf[FullAttachment]
   }

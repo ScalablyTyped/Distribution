@@ -18,10 +18,8 @@ object IBitMatrix {
     setValueAt: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit],
     valueAt: js.Function2[scala.Double, scala.Double, scala.Boolean]
   ): IBitMatrix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValueAt")(setValueAt)
-    __obj.updateDynamic("valueAt")(valueAt)
+    val __obj = js.Dynamic.literal(release = release, setValueAt = setValueAt, valueAt = valueAt)
+  
     __obj.asInstanceOf[IBitMatrix]
   }
 }

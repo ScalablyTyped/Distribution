@@ -44,14 +44,8 @@ object XFilterManager {
     release: js.Function0[scala.Unit],
     setCurrentFilter: js.Function1[java.lang.String, scala.Unit]
   ): XFilterManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentFilter")(CurrentFilter)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendFilter")(appendFilter)
-    __obj.updateDynamic("getCurrentFilter")(getCurrentFilter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentFilter")(setCurrentFilter)
+    val __obj = js.Dynamic.literal(CurrentFilter = CurrentFilter, acquire = acquire, appendFilter = appendFilter, getCurrentFilter = getCurrentFilter, queryInterface = queryInterface, release = release, setCurrentFilter = setCurrentFilter)
+  
     __obj.asInstanceOf[XFilterManager]
   }
 }

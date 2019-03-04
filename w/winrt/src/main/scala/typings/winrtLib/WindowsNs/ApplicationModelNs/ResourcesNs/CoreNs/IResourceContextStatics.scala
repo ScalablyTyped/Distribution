@@ -17,8 +17,8 @@ object IResourceContextStatics {
       ResourceContext
     ]
   ): IResourceContextStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createMatchingContext")(createMatchingContext)
+    val __obj = js.Dynamic.literal(createMatchingContext = createMatchingContext)
+  
     __obj.asInstanceOf[IResourceContextStatics]
   }
 }

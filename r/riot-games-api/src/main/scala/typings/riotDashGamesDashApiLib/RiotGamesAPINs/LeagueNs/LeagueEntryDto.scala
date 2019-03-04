@@ -34,18 +34,8 @@ object LeagueEntryDto {
     playerOrTeamName: java.lang.String,
     wins: scala.Double
   ): LeagueEntryDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("division")(division)
-    __obj.updateDynamic("isFreshBlood")(isFreshBlood)
-    __obj.updateDynamic("isHotStreak")(isHotStreak)
-    __obj.updateDynamic("isInactive")(isInactive)
-    __obj.updateDynamic("isVeteran")(isVeteran)
-    __obj.updateDynamic("leaguePoints")(leaguePoints)
-    __obj.updateDynamic("losses")(losses)
-    __obj.updateDynamic("miniSeries")(miniSeries)
-    __obj.updateDynamic("playerOrTeamId")(playerOrTeamId)
-    __obj.updateDynamic("playerOrTeamName")(playerOrTeamName)
-    __obj.updateDynamic("wins")(wins)
+    val __obj = js.Dynamic.literal(division = division, isFreshBlood = isFreshBlood, isHotStreak = isHotStreak, isInactive = isInactive, isVeteran = isVeteran, leaguePoints = leaguePoints, losses = losses, miniSeries = miniSeries, playerOrTeamId = playerOrTeamId, playerOrTeamName = playerOrTeamName, wins = wins)
+  
     __obj.asInstanceOf[LeagueEntryDto]
   }
 }

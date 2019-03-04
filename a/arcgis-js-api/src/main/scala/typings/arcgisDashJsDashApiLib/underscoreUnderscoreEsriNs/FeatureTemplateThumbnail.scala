@@ -44,14 +44,8 @@ object FeatureTemplateThumbnail {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     width: scala.Double
   ): FeatureTemplateThumbnail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("imageData")(imageData)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(constructor = constructor, contentType = contentType, hasOwnProperty = hasOwnProperty, height = height, imageData = imageData, propertyIsEnumerable = propertyIsEnumerable, width = width)
+  
     __obj.asInstanceOf[FeatureTemplateThumbnail]
   }
 }

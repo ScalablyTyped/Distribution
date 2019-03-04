@@ -16,8 +16,7 @@ object Anon_Measure {
     tuple: js.Array[java.lang.String],
     measure: flexmonsterLib.flexmonsterMod.FlexmonsterNs.MeasureObject = null
   ): Anon_Measure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tuple")(tuple)
+    val __obj = js.Dynamic.literal(tuple = tuple)
     if (measure != null) __obj.updateDynamic("measure")(measure)
     __obj.asInstanceOf[Anon_Measure]
   }

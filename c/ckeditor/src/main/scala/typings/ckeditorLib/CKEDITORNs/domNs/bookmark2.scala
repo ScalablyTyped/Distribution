@@ -26,14 +26,8 @@ object bookmark2 {
     start: js.Array[scala.Double],
     startOffset: scala.Double
   ): bookmark2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapsed")(collapsed)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endOffset")(endOffset)
-    __obj.updateDynamic("is2")(is2)
-    __obj.updateDynamic("normalized")(normalized)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startOffset")(startOffset)
+    val __obj = js.Dynamic.literal(collapsed = collapsed, end = end, endOffset = endOffset, is2 = is2, normalized = normalized, start = start, startOffset = startOffset)
+  
     __obj.asInstanceOf[bookmark2]
   }
 }

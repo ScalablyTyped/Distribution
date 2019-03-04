@@ -12,8 +12,8 @@ trait Anon_PreventDefault extends js.Object {
 object Anon_PreventDefault {
   @scala.inline
   def apply(preventDefault: scala.Boolean): Anon_PreventDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preventDefault")(preventDefault)
+    val __obj = js.Dynamic.literal(preventDefault = preventDefault)
+  
     __obj.asInstanceOf[Anon_PreventDefault]
   }
 }

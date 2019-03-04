@@ -54,16 +54,8 @@ object IAdcControllerProvider {
     releaseChannel: js.Function1[scala.Double, scala.Unit],
     resolutionInBits: scala.Double
   ): IAdcControllerProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquireChannel")(acquireChannel)
-    __obj.updateDynamic("channelCount")(channelCount)
-    __obj.updateDynamic("channelMode")(channelMode)
-    __obj.updateDynamic("isChannelModeSupported")(isChannelModeSupported)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("readValue")(readValue)
-    __obj.updateDynamic("releaseChannel")(releaseChannel)
-    __obj.updateDynamic("resolutionInBits")(resolutionInBits)
+    val __obj = js.Dynamic.literal(acquireChannel = acquireChannel, channelCount = channelCount, channelMode = channelMode, isChannelModeSupported = isChannelModeSupported, maxValue = maxValue, minValue = minValue, readValue = readValue, releaseChannel = releaseChannel, resolutionInBits = resolutionInBits)
+  
     __obj.asInstanceOf[IAdcControllerProvider]
   }
 }

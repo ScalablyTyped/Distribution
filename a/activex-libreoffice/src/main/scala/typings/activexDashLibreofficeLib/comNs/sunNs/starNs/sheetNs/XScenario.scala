@@ -51,17 +51,8 @@ object XScenario {
     release: js.Function0[scala.Unit],
     setScenarioComment: js.Function1[java.lang.String, scala.Unit]
   ): XScenario = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsScenario")(IsScenario)
-    __obj.updateDynamic("ScenarioComment")(ScenarioComment)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRanges")(addRanges)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("getIsScenario")(getIsScenario)
-    __obj.updateDynamic("getScenarioComment")(getScenarioComment)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setScenarioComment")(setScenarioComment)
+    val __obj = js.Dynamic.literal(IsScenario = IsScenario, ScenarioComment = ScenarioComment, acquire = acquire, addRanges = addRanges, apply = apply, getIsScenario = getIsScenario, getScenarioComment = getScenarioComment, queryInterface = queryInterface, release = release, setScenarioComment = setScenarioComment)
+  
     __obj.asInstanceOf[XScenario]
   }
 }

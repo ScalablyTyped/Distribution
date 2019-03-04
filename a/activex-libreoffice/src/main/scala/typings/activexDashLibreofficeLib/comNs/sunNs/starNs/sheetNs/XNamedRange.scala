@@ -73,22 +73,8 @@ object XNamedRange {
     setReferencePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
     setType: js.Function1[scala.Double, scala.Unit]
   ): XNamedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReferencePosition")(ReferencePosition)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getReferencePosition")(getReferencePosition)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setReferencePosition")(setReferencePosition)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(Content = Content, Name = Name, ReferencePosition = ReferencePosition, Type = Type, acquire = acquire, getContent = getContent, getName = getName, getReferencePosition = getReferencePosition, getType = getType, queryInterface = queryInterface, release = release, setContent = setContent, setName = setName, setReferencePosition = setReferencePosition, setType = setType)
+  
     __obj.asInstanceOf[XNamedRange]
   }
 }

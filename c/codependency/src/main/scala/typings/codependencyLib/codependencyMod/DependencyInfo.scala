@@ -22,8 +22,7 @@ object DependencyInfo {
     isValid: js.UndefOr[scala.Boolean] = js.undefined,
     supportedRange: java.lang.String = null
   ): DependencyInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pkgPath")(pkgPath)
+    val __obj = js.Dynamic.literal(pkgPath = pkgPath)
     if (installedVersion != null) __obj.updateDynamic("installedVersion")(installedVersion)
     if (!js.isUndefined(isInstalled)) __obj.updateDynamic("isInstalled")(isInstalled)
     if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid)

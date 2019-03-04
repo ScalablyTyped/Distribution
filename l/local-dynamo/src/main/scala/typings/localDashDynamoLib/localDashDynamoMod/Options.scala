@@ -26,8 +26,7 @@ object Options {
     sharedDb: js.UndefOr[scala.Boolean] = js.undefined,
     stdio: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
     if (dir != null) __obj.updateDynamic("dir")(dir)

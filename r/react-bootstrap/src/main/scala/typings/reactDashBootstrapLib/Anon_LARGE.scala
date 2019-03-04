@@ -25,10 +25,8 @@ trait Anon_Large extends js.Object {
 object Anon_LARGE {
   @scala.inline
   def apply(LARGE: java.lang.String, SMALL: java.lang.String, XSMALL: java.lang.String): Anon_LARGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LARGE")(LARGE)
-    __obj.updateDynamic("SMALL")(SMALL)
-    __obj.updateDynamic("XSMALL")(XSMALL)
+    val __obj = js.Dynamic.literal(LARGE = LARGE, SMALL = SMALL, XSMALL = XSMALL)
+  
     __obj.asInstanceOf[Anon_LARGE]
   }
 }
@@ -45,15 +43,8 @@ object Anon_Large {
     xs: java.lang.String,
     xsmall: java.lang.String
   ): Anon_Large = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("large")(large)
-    __obj.updateDynamic("lg")(lg)
-    __obj.updateDynamic("md")(md)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("sm")(sm)
-    __obj.updateDynamic("small")(small)
-    __obj.updateDynamic("xs")(xs)
-    __obj.updateDynamic("xsmall")(xsmall)
+    val __obj = js.Dynamic.literal(large = large, lg = lg, md = md, medium = medium, sm = sm, small = small, xs = xs, xsmall = xsmall)
+  
     __obj.asInstanceOf[Anon_Large]
   }
 }

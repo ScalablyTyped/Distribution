@@ -12,8 +12,8 @@ trait ISystemTriggerFactory extends js.Object {
 object ISystemTriggerFactory {
   @scala.inline
   def apply(create: js.Function2[SystemTriggerType, scala.Boolean, SystemTrigger]): ISystemTriggerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[ISystemTriggerFactory]
   }
 }

@@ -33,8 +33,7 @@ object StepperProps {
     orientation: Orientation = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): StepperProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])
     if (!js.isUndefined(alternativeLabel)) __obj.updateDynamic("alternativeLabel")(alternativeLabel)
     if (className != null) __obj.updateDynamic("className")(className)

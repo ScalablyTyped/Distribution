@@ -16,9 +16,8 @@ object Anon_Key {
     platforms: js.Array[java.lang.String],
     plugins: org.scalablytyped.runtime.StringDictionary[js.Object]
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("platforms")(platforms)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(platforms = platforms, plugins = plugins)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

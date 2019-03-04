@@ -12,8 +12,8 @@ trait Anon_RegionInput extends js.Object {
 object Anon_RegionInput {
   @scala.inline
   def apply(region: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_RegionInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RegionInput]
   }
 }

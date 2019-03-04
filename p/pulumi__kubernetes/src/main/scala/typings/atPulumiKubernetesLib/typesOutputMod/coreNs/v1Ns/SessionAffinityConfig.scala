@@ -18,8 +18,8 @@ trait SessionAffinityConfig extends js.Object {
 object SessionAffinityConfig {
   @scala.inline
   def apply(clientIP: ClientIPConfig): SessionAffinityConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientIP")(clientIP)
+    val __obj = js.Dynamic.literal(clientIP = clientIP)
+  
     __obj.asInstanceOf[SessionAffinityConfig]
   }
 }

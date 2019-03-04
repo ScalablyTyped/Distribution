@@ -28,9 +28,7 @@ object Parameter {
     prompts: js.Array[java.lang.String] = null,
     value: java.lang.String = null
   ): Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (entityTypeDisplayName != null) __obj.updateDynamic("entityTypeDisplayName")(entityTypeDisplayName)
     if (!js.isUndefined(isList)) __obj.updateDynamic("isList")(isList)

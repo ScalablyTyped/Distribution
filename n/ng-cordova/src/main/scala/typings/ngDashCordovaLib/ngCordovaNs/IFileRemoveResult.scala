@@ -13,9 +13,8 @@ trait IFileRemoveResult[TEntry] extends js.Object {
 object IFileRemoveResult {
   @scala.inline
   def apply[TEntry](fileRemoved: TEntry, success: scala.Boolean): IFileRemoveResult[TEntry] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileRemoved")(fileRemoved.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(fileRemoved = fileRemoved.asInstanceOf[js.Any], success = success)
+  
     __obj.asInstanceOf[IFileRemoveResult[TEntry]]
   }
 }

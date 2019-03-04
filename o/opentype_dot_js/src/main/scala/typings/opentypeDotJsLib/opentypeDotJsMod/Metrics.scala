@@ -24,12 +24,7 @@ object Metrics {
     yMin: scala.Double,
     rightSideBearing: scala.Int | scala.Double = null
   ): Metrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leftSideBearing")(leftSideBearing)
-    __obj.updateDynamic("xMax")(xMax)
-    __obj.updateDynamic("xMin")(xMin)
-    __obj.updateDynamic("yMax")(yMax)
-    __obj.updateDynamic("yMin")(yMin)
+    val __obj = js.Dynamic.literal(leftSideBearing = leftSideBearing, xMax = xMax, xMin = xMin, yMax = yMax, yMin = yMin)
     if (rightSideBearing != null) __obj.updateDynamic("rightSideBearing")(rightSideBearing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metrics]
   }

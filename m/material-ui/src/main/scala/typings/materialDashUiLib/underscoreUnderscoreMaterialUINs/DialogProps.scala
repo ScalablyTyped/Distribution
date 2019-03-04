@@ -65,8 +65,7 @@ object DialogProps {
     titleClassName: java.lang.String = null,
     titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): DialogProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(open = open)
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, Props)
     if (actionFocus != null) __obj.updateDynamic("actionFocus")(actionFocus)

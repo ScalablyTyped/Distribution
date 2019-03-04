@@ -42,13 +42,8 @@ object ExtensionRequestEvent {
     request: ExtensionRequest,
     updateType: ExtensionRequestUpdateType
   ): ExtensionRequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostName")(hostName)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("updateType")(updateType)
+    val __obj = js.Dynamic.literal(extension = extension, host = host, hostName = hostName, links = links, request = request, updateType = updateType)
+  
     __obj.asInstanceOf[ExtensionRequestEvent]
   }
 }

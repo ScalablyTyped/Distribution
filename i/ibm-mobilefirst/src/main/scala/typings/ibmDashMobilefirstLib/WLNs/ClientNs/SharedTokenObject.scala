@@ -12,8 +12,8 @@ trait SharedTokenObject extends js.Object {
 object SharedTokenObject {
   @scala.inline
   def apply(key: java.lang.String): SharedTokenObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+  
     __obj.asInstanceOf[SharedTokenObject]
   }
 }

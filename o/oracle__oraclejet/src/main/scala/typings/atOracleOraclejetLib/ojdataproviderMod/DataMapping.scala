@@ -26,8 +26,7 @@ object DataMapping {
     mapSortCriteria: js.Function1[/* sortCriteria */ js.Array[SortCriterion[D]], js.Array[SortCriterion[Din]]] = null,
     unmapSortCriteria: js.Function1[/* sortCriteria */ js.Array[SortCriterion[Din]], js.Array[SortCriterion[D]]] = null
   ): DataMapping[K, D, Kin, Din] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapFields")(mapFields)
+    val __obj = js.Dynamic.literal(mapFields = mapFields)
     if (mapFilterCriterion != null) __obj.updateDynamic("mapFilterCriterion")(mapFilterCriterion)
     if (mapSortCriteria != null) __obj.updateDynamic("mapSortCriteria")(mapSortCriteria)
     if (unmapSortCriteria != null) __obj.updateDynamic("unmapSortCriteria")(unmapSortCriteria)

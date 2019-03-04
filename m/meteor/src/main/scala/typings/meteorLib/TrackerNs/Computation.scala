@@ -26,14 +26,8 @@ object Computation {
     stop: js.Function0[scala.Unit],
     stopped: scala.Boolean
   ): Computation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstRun")(firstRun)
-    __obj.updateDynamic("invalidate")(invalidate)
-    __obj.updateDynamic("invalidated")(invalidated)
-    __obj.updateDynamic("onInvalidate")(onInvalidate)
-    __obj.updateDynamic("onStop")(onStop)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopped")(stopped)
+    val __obj = js.Dynamic.literal(firstRun = firstRun, invalidate = invalidate, invalidated = invalidated, onInvalidate = onInvalidate, onStop = onStop, stop = stop, stopped = stopped)
+  
     __obj.asInstanceOf[Computation]
   }
 }

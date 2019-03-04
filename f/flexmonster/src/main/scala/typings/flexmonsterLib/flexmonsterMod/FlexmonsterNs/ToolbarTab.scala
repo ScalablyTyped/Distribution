@@ -30,16 +30,8 @@ object ToolbarTab {
     mobile: scala.Boolean,
     title: java.lang.String
   ): ToolbarTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("android")(android)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ios")(ios)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(android = android, args = args, handler = handler.asInstanceOf[js.Any], icon = icon, id = id, ios = ios, menu = menu, mobile = mobile, title = title)
+  
     __obj.asInstanceOf[ToolbarTab]
   }
 }

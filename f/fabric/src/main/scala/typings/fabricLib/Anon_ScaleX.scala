@@ -13,9 +13,8 @@ trait Anon_ScaleX extends js.Object {
 object Anon_ScaleX {
   @scala.inline
   def apply(scaleX: scala.Double, scaleY: scala.Double): Anon_ScaleX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
+    val __obj = js.Dynamic.literal(scaleX = scaleX, scaleY = scaleY)
+  
     __obj.asInstanceOf[Anon_ScaleX]
   }
 }

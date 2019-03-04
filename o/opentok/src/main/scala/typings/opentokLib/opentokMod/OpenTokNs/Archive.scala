@@ -38,20 +38,8 @@ object Archive {
     status: ArchiveStatus,
     url: java.lang.String
   ): Archive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("hasAudio")(hasAudio)
-    __obj.updateDynamic("hasVideo")(hasVideo)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outputMode")(outputMode)
-    __obj.updateDynamic("partnerId")(partnerId)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(createdAt = createdAt, duration = duration, hasAudio = hasAudio, hasVideo = hasVideo, id = id, name = name, outputMode = outputMode, partnerId = partnerId, reason = reason, sessionId = sessionId, size = size, status = status, url = url)
+  
     __obj.asInstanceOf[Archive]
   }
 }

@@ -23,11 +23,8 @@ object PrintResponse {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     url: java.lang.String
   ): PrintResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, url = url)
+  
     __obj.asInstanceOf[PrintResponse]
   }
 }

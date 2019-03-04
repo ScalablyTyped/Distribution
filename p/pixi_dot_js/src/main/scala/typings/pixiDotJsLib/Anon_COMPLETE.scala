@@ -15,11 +15,8 @@ trait Anon_COMPLETE extends js.Object {
 object Anon_COMPLETE {
   @scala.inline
   def apply(COMPLETE: scala.Double, DATA_URL: scala.Double, LOADING: scala.Double, NONE: scala.Double): Anon_COMPLETE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("COMPLETE")(COMPLETE)
-    __obj.updateDynamic("DATA_URL")(DATA_URL)
-    __obj.updateDynamic("LOADING")(LOADING)
-    __obj.updateDynamic("NONE")(NONE)
+    val __obj = js.Dynamic.literal(COMPLETE = COMPLETE, DATA_URL = DATA_URL, LOADING = LOADING, NONE = NONE)
+  
     __obj.asInstanceOf[Anon_COMPLETE]
   }
 }

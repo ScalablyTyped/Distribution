@@ -53,24 +53,8 @@ object MenuItemSeparator {
     setVisible: js.Function1[scala.Boolean, MenuItemSeparator],
     setWidth: js.Function1[java.lang.String, MenuItemSeparator]
   ): MenuItemSeparator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setHeight = setHeight, setId = setId, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
     __obj.asInstanceOf[MenuItemSeparator]
   }
 }

@@ -37,12 +37,8 @@ object RequestedExtension {
     publisherName: java.lang.String,
     requestCount: scala.Double
   ): RequestedExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("extensionRequests")(extensionRequests)
-    __obj.updateDynamic("publisherDisplayName")(publisherDisplayName)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("requestCount")(requestCount)
+    val __obj = js.Dynamic.literal(extensionName = extensionName, extensionRequests = extensionRequests, publisherDisplayName = publisherDisplayName, publisherName = publisherName, requestCount = requestCount)
+  
     __obj.asInstanceOf[RequestedExtension]
   }
 }

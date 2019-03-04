@@ -34,10 +34,8 @@ object InlineQueryResultArticle {
     thumb_width: scala.Int | scala.Double = null,
     url: java.lang.String = null
   ): InlineQueryResultArticle = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("input_message_content")(input_message_content)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, input_message_content = input_message_content, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(hide_url)) __obj.updateDynamic("hide_url")(hide_url)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)

@@ -145,32 +145,8 @@ object ChartScrollbarSettings {
     selectedGraphLineColor: java.lang.String,
     updateOnReleaseOnly: scala.Boolean
   ): ChartScrollbarSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoGridCount")(autoGridCount)
-    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("graphFillAlpha")(graphFillAlpha)
-    __obj.updateDynamic("graphFillColor")(graphFillColor)
-    __obj.updateDynamic("graphLineAlpha")(graphLineAlpha)
-    __obj.updateDynamic("graphLineColor")(graphLineColor)
-    __obj.updateDynamic("graphType")(graphType)
-    __obj.updateDynamic("gridAlpha")(gridAlpha)
-    __obj.updateDynamic("gridColor")(gridColor)
-    __obj.updateDynamic("gridCount")(gridCount)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("hideResizeGrips")(hideResizeGrips)
-    __obj.updateDynamic("scrollDuration")(scrollDuration)
-    __obj.updateDynamic("selectedBackgroundAlpha")(selectedBackgroundAlpha)
-    __obj.updateDynamic("selectedBackgroundColor")(selectedBackgroundColor)
-    __obj.updateDynamic("selectedGraphFillAlpha")(selectedGraphFillAlpha)
-    __obj.updateDynamic("selectedGraphFillColor")(selectedGraphFillColor)
-    __obj.updateDynamic("selectedGraphLineAlpha")(selectedGraphLineAlpha)
-    __obj.updateDynamic("selectedGraphLineColor")(selectedGraphLineColor)
-    __obj.updateDynamic("updateOnReleaseOnly")(updateOnReleaseOnly)
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, color = color, enabled = enabled, fontSize = fontSize, graph = graph, graphFillAlpha = graphFillAlpha, graphFillColor = graphFillColor, graphLineAlpha = graphLineAlpha, graphLineColor = graphLineColor, graphType = graphType, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, height = height, hideResizeGrips = hideResizeGrips, scrollDuration = scrollDuration, selectedBackgroundAlpha = selectedBackgroundAlpha, selectedBackgroundColor = selectedBackgroundColor, selectedGraphFillAlpha = selectedGraphFillAlpha, selectedGraphFillColor = selectedGraphFillColor, selectedGraphLineAlpha = selectedGraphLineAlpha, selectedGraphLineColor = selectedGraphLineColor, updateOnReleaseOnly = updateOnReleaseOnly)
+  
     __obj.asInstanceOf[ChartScrollbarSettings]
   }
 }

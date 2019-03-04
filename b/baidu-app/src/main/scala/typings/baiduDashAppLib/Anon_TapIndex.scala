@@ -15,8 +15,8 @@ trait Anon_TapIndex extends js.Object {
 object Anon_TapIndex {
   @scala.inline
   def apply(tapIndex: scala.Double): Anon_TapIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tapIndex")(tapIndex)
+    val __obj = js.Dynamic.literal(tapIndex = tapIndex)
+  
     __obj.asInstanceOf[Anon_TapIndex]
   }
 }

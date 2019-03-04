@@ -29,15 +29,8 @@ object WebResponseDetails {
     url: java.lang.String,
     initiator: java.lang.String = null
   ): WebResponseDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (initiator != null) __obj.updateDynamic("initiator")(initiator)
     __obj.asInstanceOf[WebResponseDetails]
   }

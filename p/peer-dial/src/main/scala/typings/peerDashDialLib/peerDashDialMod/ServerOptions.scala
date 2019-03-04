@@ -36,14 +36,7 @@ object ServerOptions {
     maxContentLength: scala.Int | scala.Double = null,
     uuid: nodeDashUuidLib.nodeDashUuidMod.UUIDOptions = null
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("corsAllowOrigins")(corsAllowOrigins.asInstanceOf[js.Any])
-    __obj.updateDynamic("delegate")(delegate)
-    __obj.updateDynamic("expressApp")(expressApp)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(corsAllowOrigins = corsAllowOrigins.asInstanceOf[js.Any], delegate = delegate, expressApp = expressApp, manufacturer = manufacturer, modelName = modelName, port = port, prefix = prefix)
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
     if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
     if (host != null) __obj.updateDynamic("host")(host)

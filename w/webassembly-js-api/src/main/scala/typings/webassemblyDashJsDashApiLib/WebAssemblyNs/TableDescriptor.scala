@@ -21,9 +21,7 @@ object TableDescriptor {
     initial: scala.Double,
     maximum: scala.Int | scala.Double = null
   ): TableDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("initial")(initial)
+    val __obj = js.Dynamic.literal(element = element, initial = initial)
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDescriptor]
   }

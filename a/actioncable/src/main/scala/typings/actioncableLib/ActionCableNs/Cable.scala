@@ -22,12 +22,8 @@ object Cable {
     send: js.Function1[js.Any, scala.Unit],
     subscriptions: Subscriptions
   ): Cable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("ensureActiveConnection")(ensureActiveConnection)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("subscriptions")(subscriptions)
+    val __obj = js.Dynamic.literal(connect = connect, disconnect = disconnect, ensureActiveConnection = ensureActiveConnection, send = send, subscriptions = subscriptions)
+  
     __obj.asInstanceOf[Cable]
   }
 }

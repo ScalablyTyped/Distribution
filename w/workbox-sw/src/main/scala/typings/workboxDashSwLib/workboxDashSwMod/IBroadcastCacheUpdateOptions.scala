@@ -19,9 +19,8 @@ trait IBroadcastCacheUpdateOptions extends js.Object {
 object IBroadcastCacheUpdateOptions {
   @scala.inline
   def apply(headersToCheck: js.Array[java.lang.String], source: java.lang.String): IBroadcastCacheUpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headersToCheck")(headersToCheck)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(headersToCheck = headersToCheck, source = source)
+  
     __obj.asInstanceOf[IBroadcastCacheUpdateOptions]
   }
 }

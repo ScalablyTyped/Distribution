@@ -12,8 +12,8 @@ trait ChannelOptions extends js.Object {
 object ChannelOptions {
   @scala.inline
   def apply(cipher: js.Any): ChannelOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cipher")(cipher)
+    val __obj = js.Dynamic.literal(cipher = cipher)
+  
     __obj.asInstanceOf[ChannelOptions]
   }
 }

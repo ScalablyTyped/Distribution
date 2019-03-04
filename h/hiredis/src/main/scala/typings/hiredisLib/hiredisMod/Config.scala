@@ -12,8 +12,8 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(return_buffers: scala.Boolean): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("return_buffers")(return_buffers)
+    val __obj = js.Dynamic.literal(return_buffers = return_buffers)
+  
     __obj.asInstanceOf[Config]
   }
 }

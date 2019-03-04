@@ -20,9 +20,8 @@ trait WorkspaceFolder extends js.Object {
 object WorkspaceFolder {
   @scala.inline
   def apply(name: java.lang.String, uri: java.lang.String): WorkspaceFolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(name = name, uri = uri)
+  
     __obj.asInstanceOf[WorkspaceFolder]
   }
 }

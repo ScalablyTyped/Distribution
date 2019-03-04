@@ -22,9 +22,8 @@ object Marker {
     setRotationAngle: js.Function1[scala.Double, Marker],
     setRotationOrigin: js.Function1[java.lang.String, Marker]
   ): Marker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setRotationAngle")(setRotationAngle)
-    __obj.updateDynamic("setRotationOrigin")(setRotationOrigin)
+    val __obj = js.Dynamic.literal(setRotationAngle = setRotationAngle, setRotationOrigin = setRotationOrigin)
+  
     __obj.asInstanceOf[Marker]
   }
 }

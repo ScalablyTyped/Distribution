@@ -22,12 +22,8 @@ object Anon_FontFamily {
     letterSpacing: java.lang.String,
     lineHeight: java.lang.String
   ): Anon_FontFamily = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("letterSpacing")(letterSpacing)
-    __obj.updateDynamic("lineHeight")(lineHeight)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing, lineHeight = lineHeight)
+  
     __obj.asInstanceOf[Anon_FontFamily]
   }
 }

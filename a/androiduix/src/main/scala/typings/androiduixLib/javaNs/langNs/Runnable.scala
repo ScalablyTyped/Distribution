@@ -12,8 +12,8 @@ trait Runnable extends js.Object {
 object Runnable {
   @scala.inline
   def apply(run: js.Function0[js.Any]): Runnable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(run = run)
+  
     __obj.asInstanceOf[Runnable]
   }
 }

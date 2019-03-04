@@ -12,9 +12,8 @@ trait IVisibilityChangedEventArgs extends ICoreWindowEventArgs {
 object IVisibilityChangedEventArgs {
   @scala.inline
   def apply(handled: scala.Boolean, visible: scala.Boolean): IVisibilityChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(handled = handled, visible = visible)
+  
     __obj.asInstanceOf[IVisibilityChangedEventArgs]
   }
 }

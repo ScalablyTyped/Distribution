@@ -22,8 +22,7 @@ object Anon_Ca {
     host: java.lang.String = null,
     key: java.lang.String = null
   ): Anon_Ca = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    val __obj = js.Dynamic.literal(rejectUnauthorized = rejectUnauthorized)
     if (ca != null) __obj.updateDynamic("ca")(ca)
     if (cert != null) __obj.updateDynamic("cert")(cert)
     if (host != null) __obj.updateDynamic("host")(host)

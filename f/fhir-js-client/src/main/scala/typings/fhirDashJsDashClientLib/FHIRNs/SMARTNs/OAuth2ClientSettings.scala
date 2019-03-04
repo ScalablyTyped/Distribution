@@ -40,8 +40,7 @@ object OAuth2ClientSettings {
     secret: java.lang.String = null,
     state: java.lang.String = null
   ): OAuth2ClientSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
+    val __obj = js.Dynamic.literal(client_id = client_id)
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     if (secret != null) __obj.updateDynamic("secret")(secret)

@@ -22,9 +22,8 @@ object Anon_NeedLoadMoreData {
     needLoadMoreData: angularLib.angularMod.Global.Function,
     needLoadMoreDataTop: angularLib.angularMod.Global.Function
   ): Anon_NeedLoadMoreData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("needLoadMoreData")(needLoadMoreData)
-    __obj.updateDynamic("needLoadMoreDataTop")(needLoadMoreDataTop)
+    val __obj = js.Dynamic.literal(needLoadMoreData = needLoadMoreData, needLoadMoreDataTop = needLoadMoreDataTop)
+  
     __obj.asInstanceOf[Anon_NeedLoadMoreData]
   }
 }

@@ -84,37 +84,8 @@ object BootstrapClientTreeViewNode {
     parent: BootstrapClientTreeViewNode,
     treeView: BootstrapClientTreeView
   ): BootstrapClientTreeViewNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBadgeIconCssClass")(GetBadgeIconCssClass)
-    __obj.updateDynamic("GetBadgeText")(GetBadgeText)
-    __obj.updateDynamic("GetCheckState")(GetCheckState)
-    __obj.updateDynamic("GetChecked")(GetChecked)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetExpanded")(GetExpanded)
-    __obj.updateDynamic("GetHtmlElement")(GetHtmlElement)
-    __obj.updateDynamic("GetIconCssClass")(GetIconCssClass)
-    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
-    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
-    __obj.updateDynamic("GetNode")(GetNode)
-    __obj.updateDynamic("GetNodeByName")(GetNodeByName)
-    __obj.updateDynamic("GetNodeByText")(GetNodeByText)
-    __obj.updateDynamic("GetNodeCount")(GetNodeCount)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetBadgeIconCssClass")(SetBadgeIconCssClass)
-    __obj.updateDynamic("SetBadgeText")(SetBadgeText)
-    __obj.updateDynamic("SetChecked")(SetChecked)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetExpanded")(SetExpanded)
-    __obj.updateDynamic("SetIconCssClass")(SetIconCssClass)
-    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
-    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("treeView")(treeView)
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetCheckState = GetCheckState, GetChecked = GetChecked, GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetHtmlElement = GetHtmlElement, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetNode = GetNode, GetNodeByName = GetNodeByName, GetNodeByText = GetNodeByText, GetNodeCount = GetNodeCount, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetChecked = SetChecked, SetEnabled = SetEnabled, SetExpanded = SetExpanded, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, index = index, name = name, parent = parent, treeView = treeView)
+  
     __obj.asInstanceOf[BootstrapClientTreeViewNode]
   }
 }

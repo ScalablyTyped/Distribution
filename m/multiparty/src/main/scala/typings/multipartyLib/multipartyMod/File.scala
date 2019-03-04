@@ -37,12 +37,8 @@ object File {
     path: java.lang.String,
     size: scala.Double
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("originalFilename")(originalFilename)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(fieldName = fieldName, headers = headers, originalFilename = originalFilename, path = path, size = size)
+  
     __obj.asInstanceOf[File]
   }
 }

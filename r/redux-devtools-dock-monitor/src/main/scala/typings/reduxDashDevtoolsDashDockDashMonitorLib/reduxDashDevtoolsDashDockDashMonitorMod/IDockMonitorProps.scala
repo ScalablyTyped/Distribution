@@ -66,9 +66,7 @@ object IDockMonitorProps {
     defaultSize: scala.Int | scala.Double = null,
     fluid: js.UndefOr[scala.Boolean] = js.undefined
   ): IDockMonitorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changePositionKey")(changePositionKey)
-    __obj.updateDynamic("toggleVisibilityKey")(toggleVisibilityKey)
+    val __obj = js.Dynamic.literal(changePositionKey = changePositionKey, toggleVisibilityKey = toggleVisibilityKey)
     if (changeMonitorKey != null) __obj.updateDynamic("changeMonitorKey")(changeMonitorKey)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultIsVisible)) __obj.updateDynamic("defaultIsVisible")(defaultIsVisible)

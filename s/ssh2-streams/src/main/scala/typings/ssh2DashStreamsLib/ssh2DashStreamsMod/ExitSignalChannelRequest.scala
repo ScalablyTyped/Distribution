@@ -22,12 +22,8 @@ object ExitSignalChannelRequest {
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`exit-signal`,
     signal: java.lang.String
   ): ExitSignalChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coredump")(coredump)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("signal")(signal)
+    val __obj = js.Dynamic.literal(coredump = coredump, description = description, recipient = recipient, request = request, signal = signal)
+  
     __obj.asInstanceOf[ExitSignalChannelRequest]
   }
 }

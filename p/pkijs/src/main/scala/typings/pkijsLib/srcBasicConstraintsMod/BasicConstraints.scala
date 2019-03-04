@@ -22,12 +22,8 @@ object BasicConstraints {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): BasicConstraints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cA")(cA)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("pathLenConstraint")(pathLenConstraint.asInstanceOf[js.Any])
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(cA = cA, fromSchema = fromSchema, pathLenConstraint = pathLenConstraint.asInstanceOf[js.Any], toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[BasicConstraints]
   }
 }

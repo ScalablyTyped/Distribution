@@ -20,10 +20,7 @@ object Bundle {
     publicPath: java.lang.String,
     name: java.lang.String = null
   ): Bundle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("publicPath")(publicPath)
+    val __obj = js.Dynamic.literal(file = file, id = id, publicPath = publicPath)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Bundle]
   }

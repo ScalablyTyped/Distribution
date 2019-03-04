@@ -35,11 +35,8 @@ object TSMethodSignature {
     typeAnnotation: TSTypeAnnotation = null,
     typeParameters: TypeParameterDeclaration = null
   ): TSMethodSignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, key = key, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

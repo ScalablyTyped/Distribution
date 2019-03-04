@@ -26,14 +26,8 @@ object MovieImage {
     vote_count: scala.Double,
     width: scala.Double
   ): MovieImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspect_ratio")(aspect_ratio)
-    __obj.updateDynamic("file_path")(file_path)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("iso_639_1")(iso_639_1)
-    __obj.updateDynamic("vote_average")(vote_average)
-    __obj.updateDynamic("vote_count")(vote_count)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(aspect_ratio = aspect_ratio, file_path = file_path, height = height, iso_639_1 = iso_639_1, vote_average = vote_average, vote_count = vote_count, width = width)
+  
     __obj.asInstanceOf[MovieImage]
   }
 }

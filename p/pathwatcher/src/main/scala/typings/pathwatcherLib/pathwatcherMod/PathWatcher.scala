@@ -19,9 +19,8 @@ object PathWatcher {
       eventDashKitLib.eventDashKitMod.Disposable
     ]
   ): PathWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("onDidChange")(onDidChange)
+    val __obj = js.Dynamic.literal(close = close, onDidChange = onDidChange)
+  
     __obj.asInstanceOf[PathWatcher]
   }
 }

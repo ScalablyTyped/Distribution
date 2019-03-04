@@ -28,15 +28,8 @@ object ILookups {
     Item: js.Function1[scala.Double, ILookup],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): ILookups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetLookupByItem")(GetLookupByItem)
-    __obj.updateDynamic("GetLookupIndexByItem")(GetLookupIndexByItem)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, CloneFrom = CloneFrom, Count = Count, GetLookupByItem = GetLookupByItem, GetLookupIndexByItem = GetLookupIndexByItem, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[ILookups]
   }
 }

@@ -33,8 +33,8 @@ object OverlayStatic {
       scala.Unit
     ]
   ): OverlayStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEffect")(addEffect)
+    val __obj = js.Dynamic.literal(addEffect = addEffect)
+  
     __obj.asInstanceOf[OverlayStatic]
   }
 }

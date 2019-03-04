@@ -18,10 +18,8 @@ object RootComponentProps {
     routes: reactLib.reactMod.Global.JSXNs.Element,
     store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]
   ): RootComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(history = history, routes = routes, store = store)
+  
     __obj.asInstanceOf[RootComponentProps]
   }
 }

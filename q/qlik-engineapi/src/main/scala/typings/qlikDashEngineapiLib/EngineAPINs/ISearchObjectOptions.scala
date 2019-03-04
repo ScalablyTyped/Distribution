@@ -28,9 +28,8 @@ trait ISearchObjectOptions extends js.Object {
 object ISearchObjectOptions {
   @scala.inline
   def apply(qAttributes: js.Array[java.lang.String], qCharEncoding: java.lang.String): ISearchObjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttributes")(qAttributes)
-    __obj.updateDynamic("qCharEncoding")(qCharEncoding)
+    val __obj = js.Dynamic.literal(qAttributes = qAttributes, qCharEncoding = qCharEncoding)
+  
     __obj.asInstanceOf[ISearchObjectOptions]
   }
 }

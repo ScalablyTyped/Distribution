@@ -18,9 +18,8 @@ object SessionEndedRequest {
     locale: java.lang.String = null,
     reason: java.lang.String = null
   ): SessionEndedRequest = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(requestId = requestId, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     __obj.asInstanceOf[SessionEndedRequest]

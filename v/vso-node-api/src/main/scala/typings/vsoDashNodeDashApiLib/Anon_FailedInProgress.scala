@@ -22,12 +22,8 @@ object Anon_FailedInProgress {
     pending: scala.Double,
     succeeded: scala.Double
   ): Anon_FailedInProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(failed = failed, inProgress = inProgress, none = none, pending = pending, succeeded = succeeded)
+  
     __obj.asInstanceOf[Anon_FailedInProgress]
   }
 }

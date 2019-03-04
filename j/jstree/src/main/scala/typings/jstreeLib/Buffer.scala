@@ -14,10 +14,8 @@ trait Buffer extends js.Object {
 object Buffer {
   @scala.inline
   def apply(inst: js.Any, mode: java.lang.String, node: js.Array[_]): Buffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inst")(inst)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(inst = inst, mode = mode, node = node)
+  
     __obj.asInstanceOf[Buffer]
   }
 }

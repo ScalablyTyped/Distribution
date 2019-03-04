@@ -46,24 +46,8 @@ object PlanUpdateModel {
     state: java.lang.String,
     status: java.lang.String
   ): PlanUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("automatedTestEnvironment")(automatedTestEnvironment)
-    __obj.updateDynamic("automatedTestSettings")(automatedTestSettings)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildDefinition")(buildDefinition)
-    __obj.updateDynamic("configurationIds")(configurationIds)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("iteration")(iteration)
-    __obj.updateDynamic("manualTestEnvironment")(manualTestEnvironment)
-    __obj.updateDynamic("manualTestSettings")(manualTestSettings)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("releaseEnvironmentDefinition")(releaseEnvironmentDefinition)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(area = area, automatedTestEnvironment = automatedTestEnvironment, automatedTestSettings = automatedTestSettings, build = build, buildDefinition = buildDefinition, configurationIds = configurationIds, description = description, endDate = endDate, iteration = iteration, manualTestEnvironment = manualTestEnvironment, manualTestSettings = manualTestSettings, name = name, owner = owner, releaseEnvironmentDefinition = releaseEnvironmentDefinition, startDate = startDate, state = state, status = status)
+  
     __obj.asInstanceOf[PlanUpdateModel]
   }
 }

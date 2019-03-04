@@ -34,12 +34,8 @@ object GetInstancesResult {
     privateIps: js.Array[java.lang.String],
     publicIps: js.Array[java.lang.String]
   ): GetInstancesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("instanceTags")(instanceTags)
-    __obj.updateDynamic("privateIps")(privateIps)
-    __obj.updateDynamic("publicIps")(publicIps)
+    val __obj = js.Dynamic.literal(id = id, ids = ids, instanceTags = instanceTags, privateIps = privateIps, publicIps = publicIps)
+  
     __obj.asInstanceOf[GetInstancesResult]
   }
 }

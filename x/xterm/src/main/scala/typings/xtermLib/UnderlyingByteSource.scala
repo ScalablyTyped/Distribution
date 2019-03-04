@@ -22,7 +22,8 @@ object UnderlyingByteSource {
     pull: ReadableByteStreamControllerCallback = null,
     start: ReadableByteStreamControllerCallback = null
   ): UnderlyingByteSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (autoAllocateChunkSize != null) __obj.updateDynamic("autoAllocateChunkSize")(autoAllocateChunkSize.asInstanceOf[js.Any])
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (pull != null) __obj.updateDynamic("pull")(pull)

@@ -43,8 +43,7 @@ object Anon_Body {
     method: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs._DownloadMethod = null,
     saveAs: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body)
     if (conflictAction != null) __obj.updateDynamic("conflictAction")(conflictAction)
     if (filename != null) __obj.updateDynamic("filename")(filename)

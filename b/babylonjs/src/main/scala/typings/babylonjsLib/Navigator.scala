@@ -57,16 +57,8 @@ object Navigator {
       scala.Unit
     ]
   ): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeVRDisplays")(activeVRDisplays)
-    __obj.updateDynamic("getVRDisplays")(getVRDisplays)
-    __obj.updateDynamic("mozGetUserMedia")(mozGetUserMedia)
-    __obj.updateDynamic("mozGetVRDevices")(mozGetVRDevices)
-    __obj.updateDynamic("msGetGamepads")(msGetGamepads)
-    __obj.updateDynamic("msGetUserMedia")(msGetUserMedia)
-    __obj.updateDynamic("webkitGamepads")(webkitGamepads)
-    __obj.updateDynamic("webkitGetGamepads")(webkitGetGamepads)
-    __obj.updateDynamic("webkitGetUserMedia")(webkitGetUserMedia)
+    val __obj = js.Dynamic.literal(activeVRDisplays = activeVRDisplays, getVRDisplays = getVRDisplays, mozGetUserMedia = mozGetUserMedia, mozGetVRDevices = mozGetVRDevices, msGetGamepads = msGetGamepads, msGetUserMedia = msGetUserMedia, webkitGamepads = webkitGamepads, webkitGetGamepads = webkitGetGamepads, webkitGetUserMedia = webkitGetUserMedia)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

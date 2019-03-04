@@ -18,9 +18,7 @@ object Anon_Force {
     selector: js.Function1[js.Any, js.Object],
     force: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Force = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(id = id, selector = selector)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
     __obj.asInstanceOf[Anon_Force]
   }

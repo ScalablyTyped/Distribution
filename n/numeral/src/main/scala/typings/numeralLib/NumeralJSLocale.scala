@@ -20,11 +20,8 @@ object NumeralJSLocale {
     delimiters: Anon_Decimal,
     ordinal: js.Function1[scala.Double, java.lang.String]
   ): NumeralJSLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviations")(abbreviations)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("delimiters")(delimiters)
-    __obj.updateDynamic("ordinal")(ordinal)
+    val __obj = js.Dynamic.literal(abbreviations = abbreviations, currency = currency, delimiters = delimiters, ordinal = ordinal)
+  
     __obj.asInstanceOf[NumeralJSLocale]
   }
 }

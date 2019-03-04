@@ -30,11 +30,8 @@ object Verb {
     VerbIsOnMenu: scala.Boolean,
     VerbName: java.lang.String
   ): Verb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VerbId")(VerbId)
-    __obj.updateDynamic("VerbIsConst")(VerbIsConst)
-    __obj.updateDynamic("VerbIsOnMenu")(VerbIsOnMenu)
-    __obj.updateDynamic("VerbName")(VerbName)
+    val __obj = js.Dynamic.literal(VerbId = VerbId, VerbIsConst = VerbIsConst, VerbIsOnMenu = VerbIsOnMenu, VerbName = VerbName)
+  
     __obj.asInstanceOf[Verb]
   }
 }

@@ -16,9 +16,8 @@ object PartialModule {
     fileName: java.lang.String,
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
   ): PartialModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(fileName = fileName, statements = statements)
+  
     __obj.asInstanceOf[PartialModule]
   }
 }

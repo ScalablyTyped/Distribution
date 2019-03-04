@@ -72,38 +72,8 @@ object XToolkit2 {
     removeTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
     reschedule: js.Function0[scala.Unit]
   ): XToolkit2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTopWindow")(ActiveTopWindow)
-    __obj.updateDynamic("DesktopWindow")(DesktopWindow)
-    __obj.updateDynamic("TopWindowCount")(TopWindowCount)
-    __obj.updateDynamic("WorkArea")(WorkArea)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFocusListener")(addFocusListener)
-    __obj.updateDynamic("addKeyHandler")(addKeyHandler)
-    __obj.updateDynamic("addTopWindowListener")(addTopWindowListener)
-    __obj.updateDynamic("createMessageBox")(createMessageBox)
-    __obj.updateDynamic("createRegion")(createRegion)
-    __obj.updateDynamic("createScreenCompatibleDevice")(createScreenCompatibleDevice)
-    __obj.updateDynamic("createSystemChild")(createSystemChild)
-    __obj.updateDynamic("createWindow")(createWindow)
-    __obj.updateDynamic("createWindows")(createWindows)
-    __obj.updateDynamic("fireFocusGained")(fireFocusGained)
-    __obj.updateDynamic("fireFocusLost")(fireFocusLost)
-    __obj.updateDynamic("getActiveTopWindow")(getActiveTopWindow)
-    __obj.updateDynamic("getClipboard")(getClipboard)
-    __obj.updateDynamic("getDesktopWindow")(getDesktopWindow)
-    __obj.updateDynamic("getDragGestureRecognizer")(getDragGestureRecognizer)
-    __obj.updateDynamic("getDragSource")(getDragSource)
-    __obj.updateDynamic("getDropTarget")(getDropTarget)
-    __obj.updateDynamic("getTopWindow")(getTopWindow)
-    __obj.updateDynamic("getTopWindowCount")(getTopWindowCount)
-    __obj.updateDynamic("getWorkArea")(getWorkArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFocusListener")(removeFocusListener)
-    __obj.updateDynamic("removeKeyHandler")(removeKeyHandler)
-    __obj.updateDynamic("removeTopWindowListener")(removeTopWindowListener)
-    __obj.updateDynamic("reschedule")(reschedule)
+    val __obj = js.Dynamic.literal(ActiveTopWindow = ActiveTopWindow, DesktopWindow = DesktopWindow, TopWindowCount = TopWindowCount, WorkArea = WorkArea, acquire = acquire, addFocusListener = addFocusListener, addKeyHandler = addKeyHandler, addTopWindowListener = addTopWindowListener, createMessageBox = createMessageBox, createRegion = createRegion, createScreenCompatibleDevice = createScreenCompatibleDevice, createSystemChild = createSystemChild, createWindow = createWindow, createWindows = createWindows, fireFocusGained = fireFocusGained, fireFocusLost = fireFocusLost, getActiveTopWindow = getActiveTopWindow, getClipboard = getClipboard, getDesktopWindow = getDesktopWindow, getDragGestureRecognizer = getDragGestureRecognizer, getDragSource = getDragSource, getDropTarget = getDropTarget, getTopWindow = getTopWindow, getTopWindowCount = getTopWindowCount, getWorkArea = getWorkArea, queryInterface = queryInterface, release = release, removeFocusListener = removeFocusListener, removeKeyHandler = removeKeyHandler, removeTopWindowListener = removeTopWindowListener, reschedule = reschedule)
+  
     __obj.asInstanceOf[XToolkit2]
   }
 }

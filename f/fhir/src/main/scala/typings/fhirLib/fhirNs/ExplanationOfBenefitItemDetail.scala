@@ -111,8 +111,8 @@ object ExplanationOfBenefitItemDetail {
     udi: js.Array[Reference] = null,
     unitPrice: Money = null
   ): ExplanationOfBenefitItemDetail = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(sequence = sequence)
+    __obj.updateDynamic("type")(`type`)
     if (_factor != null) __obj.updateDynamic("_factor")(_factor)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

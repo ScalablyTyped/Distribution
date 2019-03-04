@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
-  var `_https_`: js.UndefOr[scala.Boolean] = js.undefined
+  var _https_ : js.UndefOr[scala.Boolean] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var hostname: js.UndefOr[java.lang.String] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
@@ -18,7 +18,7 @@ trait RequestOptions extends js.Object {
 object RequestOptions {
   @scala.inline
   def apply(
-    `_https_`: js.UndefOr[scala.Boolean] = js.undefined,
+    _https_ : js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     hostname: java.lang.String = null,
     method: java.lang.String = null,
@@ -27,7 +27,7 @@ object RequestOptions {
     proto: java.lang.String = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`_https_`)) __obj.updateDynamic("_https_")(`_https_`)
+    if (!js.isUndefined(_https_)) __obj.updateDynamic("_https_")(_https_)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
     if (method != null) __obj.updateDynamic("method")(method)

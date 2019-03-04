@@ -18,10 +18,8 @@ object TestResultsDetailsForGroup {
     results: js.Array[TestCaseResult],
     resultsCountByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome]
   ): TestResultsDetailsForGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupByValue")(groupByValue)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("resultsCountByOutcome")(resultsCountByOutcome)
+    val __obj = js.Dynamic.literal(groupByValue = groupByValue, results = results, resultsCountByOutcome = resultsCountByOutcome)
+  
     __obj.asInstanceOf[TestResultsDetailsForGroup]
   }
 }

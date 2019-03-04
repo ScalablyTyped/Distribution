@@ -46,24 +46,8 @@ object AntdTreeNodeAttribute {
     selected: scala.Boolean,
     title: reactLib.reactMod.ReactNs.ReactNode
   ): AntdTreeNodeAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("disableCheckbox")(disableCheckbox)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("dragOverGapBottom")(dragOverGapBottom)
-    __obj.updateDynamic("dragOverGapTop")(dragOverGapTop)
-    __obj.updateDynamic("eventKey")(eventKey)
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("halfChecked")(halfChecked)
-    __obj.updateDynamic("isLeaf")(isLeaf)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("selectable")(selectable)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checked = checked, children = children.asInstanceOf[js.Any], className = className, disableCheckbox = disableCheckbox, disabled = disabled, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, isLeaf = isLeaf, pos = pos, prefixCls = prefixCls, selectable = selectable, selected = selected, title = title.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AntdTreeNodeAttribute]
   }
 }

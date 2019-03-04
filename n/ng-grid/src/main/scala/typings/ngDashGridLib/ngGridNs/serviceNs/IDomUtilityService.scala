@@ -67,21 +67,8 @@ object IDomUtilityService {
     ],
     setStyleText: js.Function2[ngDashGridLib.ngGridNs.IGridInstance, java.lang.String, scala.Unit]
   ): IDomUtilityService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AssignGridContainers")(AssignGridContainers)
-    __obj.updateDynamic("BuildStyles")(BuildStyles)
-    __obj.updateDynamic("LetterW")(LetterW)
-    __obj.updateDynamic("RebuildGrid")(RebuildGrid)
-    __obj.updateDynamic("ScrollH")(ScrollH)
-    __obj.updateDynamic("ScrollW")(ScrollW)
-    __obj.updateDynamic("UpdateGridLayout")(UpdateGridLayout)
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("eventStorage")(eventStorage)
-    __obj.updateDynamic("getRealWidth")(getRealWidth)
-    __obj.updateDynamic("immediate")(immediate)
-    __obj.updateDynamic("numberOfGrids")(numberOfGrids)
-    __obj.updateDynamic("setColLeft")(setColLeft)
-    __obj.updateDynamic("setStyleText")(setStyleText)
+    val __obj = js.Dynamic.literal(AssignGridContainers = AssignGridContainers, BuildStyles = BuildStyles, LetterW = LetterW, RebuildGrid = RebuildGrid, ScrollH = ScrollH, ScrollW = ScrollW, UpdateGridLayout = UpdateGridLayout, digest = digest, eventStorage = eventStorage, getRealWidth = getRealWidth, immediate = immediate, numberOfGrids = numberOfGrids, setColLeft = setColLeft, setStyleText = setStyleText)
+  
     __obj.asInstanceOf[IDomUtilityService]
   }
 }

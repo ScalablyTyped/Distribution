@@ -14,10 +14,8 @@ trait Label extends js.Object {
 object Label {
   @scala.inline
   def apply(bgcolor: java.lang.String, bordercolor: java.lang.String, font: stdLib.Partial[Font]): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bgcolor")(bgcolor)
-    __obj.updateDynamic("bordercolor")(bordercolor)
-    __obj.updateDynamic("font")(font)
+    val __obj = js.Dynamic.literal(bgcolor = bgcolor, bordercolor = bordercolor, font = font)
+  
     __obj.asInstanceOf[Label]
   }
 }

@@ -39,9 +39,8 @@ object ObjectTypeProperty {
     trailingComments: js.Array[Comment] = null,
     variance: Variance = null
   ): ObjectTypeProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

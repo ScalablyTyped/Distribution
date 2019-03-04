@@ -61,8 +61,7 @@ object NpmModule {
     ] = null,
     registerPartial: js.Function2[/* name */ java.lang.String, /* src */ java.lang.String, scala.Unit] = null
   ): NpmModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compile")(compile.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compile = compile.asInstanceOf[js.Any])
     if (prepare != null) __obj.updateDynamic("prepare")(prepare)
     if (registerHelper != null) __obj.updateDynamic("registerHelper")(registerHelper)
     if (registerPartial != null) __obj.updateDynamic("registerPartial")(registerPartial)

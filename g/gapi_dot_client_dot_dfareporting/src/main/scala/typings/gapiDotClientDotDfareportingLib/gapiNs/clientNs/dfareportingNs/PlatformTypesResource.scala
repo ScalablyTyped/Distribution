@@ -24,9 +24,8 @@ object PlatformTypesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[PlatformTypesListResponse]
     ]
   ): PlatformTypesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
     __obj.asInstanceOf[PlatformTypesResource]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonExcludeDeleted extends js.Object {
 object Anon_EnumValuesAnonExcludeDeleted {
   @scala.inline
   def apply(enumValues: Anon_ExcludeDeleted): Anon_EnumValuesAnonExcludeDeleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonExcludeDeleted]
   }
 }

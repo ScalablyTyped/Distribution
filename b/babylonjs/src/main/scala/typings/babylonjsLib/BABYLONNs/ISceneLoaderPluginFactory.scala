@@ -31,9 +31,7 @@ object ISceneLoaderPluginFactory {
     name: java.lang.String,
     canDirectLoad: js.Function1[/* data */ java.lang.String, scala.Boolean] = null
   ): ISceneLoaderPluginFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPlugin")(createPlugin)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(createPlugin = createPlugin, name = name)
     if (canDirectLoad != null) __obj.updateDynamic("canDirectLoad")(canDirectLoad)
     __obj.asInstanceOf[ISceneLoaderPluginFactory]
   }

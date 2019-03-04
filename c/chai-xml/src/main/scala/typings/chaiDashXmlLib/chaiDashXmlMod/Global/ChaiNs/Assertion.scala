@@ -12,8 +12,8 @@ trait Assertion extends js.Object {
 object Assertion {
   @scala.inline
   def apply(xml: chaiDashXmlLib.chaiDashXmlMod.ChaiXmlNs.XmlAssertion): Assertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xml")(xml)
+    val __obj = js.Dynamic.literal(xml = xml)
+  
     __obj.asInstanceOf[Assertion]
   }
 }

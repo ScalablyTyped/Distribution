@@ -24,13 +24,8 @@ object TableHeaderRowProps {
     style: reactLib.reactMod.ReactNs.CSSProperties,
     width: scala.Double
   ): TableHeaderRowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("scrollbarWidth")(scrollbarWidth)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(className = className, columns = columns, height = height, scrollbarWidth = scrollbarWidth, style = style, width = width)
+  
     __obj.asInstanceOf[TableHeaderRowProps]
   }
 }

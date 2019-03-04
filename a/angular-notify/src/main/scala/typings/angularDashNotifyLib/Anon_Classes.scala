@@ -54,8 +54,7 @@ object Anon_Classes {
     position: java.lang.String = null,
     templateUrl: java.lang.String = null
   ): Anon_Classes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if ($scope != null) __obj.updateDynamic("$scope")($scope)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (container != null) __obj.updateDynamic("container")(container)

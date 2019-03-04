@@ -58,16 +58,8 @@ object sizeContinuousRendererResult {
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[SizeVariable]
   ): sizeContinuousRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("visualVariables")(visualVariables)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+  
     __obj.asInstanceOf[sizeContinuousRendererResult]
   }
 }

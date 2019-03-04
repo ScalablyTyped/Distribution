@@ -18,10 +18,8 @@ object Anon_Abort {
     changeUrl: js.Function1[java.lang.String, scala.Unit],
     setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): Anon_Abort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("changeUrl")(changeUrl)
-    __obj.updateDynamic("setHeader")(setHeader)
+    val __obj = js.Dynamic.literal(abort = abort, changeUrl = changeUrl, setHeader = setHeader)
+  
     __obj.asInstanceOf[Anon_Abort]
   }
 }

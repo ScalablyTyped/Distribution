@@ -29,10 +29,8 @@ trait ASPxClientUploadControlFile extends js.Object {
 object ASPxClientUploadControlFile {
   @scala.inline
   def apply(name: java.lang.String, size: js.Any, sourceFileObject: js.Any): ASPxClientUploadControlFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sourceFileObject")(sourceFileObject)
+    val __obj = js.Dynamic.literal(name = name, size = size, sourceFileObject = sourceFileObject)
+  
     __obj.asInstanceOf[ASPxClientUploadControlFile]
   }
 }

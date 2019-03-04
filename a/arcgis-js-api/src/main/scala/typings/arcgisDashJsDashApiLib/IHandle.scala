@@ -12,8 +12,8 @@ trait IHandle extends js.Object {
 object IHandle {
   @scala.inline
   def apply(remove: js.Function0[scala.Unit]): IHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(remove = remove)
+  
     __obj.asInstanceOf[IHandle]
   }
 }

@@ -54,8 +54,7 @@ object LinkProps {
     style: ObjectLiteral[_] = null,
     target: java.lang.String = null
   ): LinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     if (activeProps != null) __obj.updateDynamic("activeProps")(activeProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (location != null) __obj.updateDynamic("location")(location)

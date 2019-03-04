@@ -16,9 +16,8 @@ object PageMod {
     destroy: js.Function0[scala.Unit],
     include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
   ): PageMod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = destroy, include = include.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PageMod]
   }
 }

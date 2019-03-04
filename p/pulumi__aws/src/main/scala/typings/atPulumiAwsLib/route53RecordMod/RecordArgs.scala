@@ -103,8 +103,8 @@ object RecordArgs {
     ttl: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     weightedRoutingPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_WeightInput]]] = null
   ): RecordArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(zoneId = zoneId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (allowOverwrite != null) __obj.updateDynamic("allowOverwrite")(allowOverwrite.asInstanceOf[js.Any])
     if (failoverRoutingPolicies != null) __obj.updateDynamic("failoverRoutingPolicies")(failoverRoutingPolicies.asInstanceOf[js.Any])

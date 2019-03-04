@@ -38,14 +38,7 @@ object Anon_Currency {
     replyMarkup: js.Any = null,
     replyToMessage: scala.Int | scala.Double = null
   ): Anon_Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("prices")(prices)
-    __obj.updateDynamic("providerToken")(providerToken)
-    __obj.updateDynamic("startParameter")(startParameter)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(currency = currency, description = description, payload = payload, prices = prices, providerToken = providerToken, startParameter = startParameter, title = title)
     if (!js.isUndefined(isFlexible)) __obj.updateDynamic("isFlexible")(isFlexible)
     if (need != null) __obj.updateDynamic("need")(need)
     if (!js.isUndefined(notification)) __obj.updateDynamic("notification")(notification)

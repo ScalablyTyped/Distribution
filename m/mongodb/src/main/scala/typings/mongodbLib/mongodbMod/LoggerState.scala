@@ -22,11 +22,8 @@ object LoggerState {
     pid: scala.Double,
     `type`: java.lang.String
   ): LoggerState = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pid")(pid)
+    val __obj = js.Dynamic.literal(className = className, date = date, message = message, pid = pid)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LoggerState]
   }
 }

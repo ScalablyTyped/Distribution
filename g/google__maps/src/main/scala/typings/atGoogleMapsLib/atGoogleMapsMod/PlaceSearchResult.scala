@@ -115,22 +115,8 @@ object PlaceSearchResult {
     types: js.Array[PlaceType1 | PlaceType2],
     vicinity: scala.Double
   ): PlaceSearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alt_ids")(alt_ids)
-    __obj.updateDynamic("formatted_address")(formatted_address)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("opening_hours")(opening_hours)
-    __obj.updateDynamic("permanently_closed")(permanently_closed)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("place_id")(place_id)
-    __obj.updateDynamic("plus_code")(plus_code)
-    __obj.updateDynamic("price_level")(price_level)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("types")(types)
-    __obj.updateDynamic("vicinity")(vicinity)
+    val __obj = js.Dynamic.literal(alt_ids = alt_ids, formatted_address = formatted_address, geometry = geometry, icon = icon, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, scope = scope, types = types, vicinity = vicinity)
+  
     __obj.asInstanceOf[PlaceSearchResult]
   }
 }

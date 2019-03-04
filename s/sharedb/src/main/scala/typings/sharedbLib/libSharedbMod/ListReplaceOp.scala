@@ -14,10 +14,8 @@ trait ListReplaceOp extends Op {
 object ListReplaceOp {
   @scala.inline
   def apply(ld: js.Any, li: js.Any, p: Path): ListReplaceOp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ld")(ld)
-    __obj.updateDynamic("li")(li)
-    __obj.updateDynamic("p")(p)
+    val __obj = js.Dynamic.literal(ld = ld, li = li, p = p)
+  
     __obj.asInstanceOf[ListReplaceOp]
   }
 }

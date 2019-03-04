@@ -23,8 +23,8 @@ object OnKeyListener {
       scala.Unit
     ]
   ): OnKeyListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onKey")(onKey)
+    val __obj = js.Dynamic.literal(onKey = onKey)
+  
     __obj.asInstanceOf[OnKeyListener]
   }
 }

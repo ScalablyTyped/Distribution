@@ -44,23 +44,8 @@ object Date {
     weekStart: js.Function1[js.Any, js.Any],
     yearStart: js.Function1[js.Any, js.Any]
   ): Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("datePart")(datePart)
-    __obj.updateDynamic("dateToStr")(dateToStr)
-    __obj.updateDynamic("dayStart")(dayStart)
-    __obj.updateDynamic("equal")(equal)
-    __obj.updateDynamic("getISOWeek")(getISOWeek)
-    __obj.updateDynamic("getUTCISOWeek")(getUTCISOWeek)
-    __obj.updateDynamic("isHoliday")(isHoliday)
-    __obj.updateDynamic("monthStart")(monthStart)
-    __obj.updateDynamic("startOnMonday")(startOnMonday)
-    __obj.updateDynamic("strToDate")(strToDate)
-    __obj.updateDynamic("timePart")(timePart)
-    __obj.updateDynamic("toFixed")(toFixed)
-    __obj.updateDynamic("weekStart")(weekStart)
-    __obj.updateDynamic("yearStart")(yearStart)
+    val __obj = js.Dynamic.literal(add = add, copy = copy, datePart = datePart, dateToStr = dateToStr, dayStart = dayStart, equal = equal, getISOWeek = getISOWeek, getUTCISOWeek = getUTCISOWeek, isHoliday = isHoliday, monthStart = monthStart, startOnMonday = startOnMonday, strToDate = strToDate, timePart = timePart, toFixed = toFixed, weekStart = weekStart, yearStart = yearStart)
+  
     __obj.asInstanceOf[Date]
   }
 }

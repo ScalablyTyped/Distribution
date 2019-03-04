@@ -23,10 +23,8 @@ trait ExtensionQuery extends js.Object {
 object ExtensionQuery {
   @scala.inline
   def apply(assetTypes: js.Array[java.lang.String], filters: js.Array[QueryFilter], flags: ExtensionQueryFlags): ExtensionQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assetTypes")(assetTypes)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("flags")(flags)
+    val __obj = js.Dynamic.literal(assetTypes = assetTypes, filters = filters, flags = flags)
+  
     __obj.asInstanceOf[ExtensionQuery]
   }
 }

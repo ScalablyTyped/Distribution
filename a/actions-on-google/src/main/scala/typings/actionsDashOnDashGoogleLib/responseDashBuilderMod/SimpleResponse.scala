@@ -15,8 +15,7 @@ trait SimpleResponse extends js.Object {
 object SimpleResponse {
   @scala.inline
   def apply(speech: java.lang.String, displayText: java.lang.String = null): SimpleResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("speech")(speech)
+    val __obj = js.Dynamic.literal(speech = speech)
     if (displayText != null) __obj.updateDynamic("displayText")(displayText)
     __obj.asInstanceOf[SimpleResponse]
   }

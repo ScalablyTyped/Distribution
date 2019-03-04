@@ -38,14 +38,8 @@ object RetentionPolicy {
     deleteTestResults: scala.Boolean,
     minimumToKeep: scala.Double
   ): RetentionPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactTypesToDelete")(artifactTypesToDelete)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("branches")(branches)
-    __obj.updateDynamic("daysToKeep")(daysToKeep)
-    __obj.updateDynamic("deleteBuildRecord")(deleteBuildRecord)
-    __obj.updateDynamic("deleteTestResults")(deleteTestResults)
-    __obj.updateDynamic("minimumToKeep")(minimumToKeep)
+    val __obj = js.Dynamic.literal(artifactTypesToDelete = artifactTypesToDelete, artifacts = artifacts, branches = branches, daysToKeep = daysToKeep, deleteBuildRecord = deleteBuildRecord, deleteTestResults = deleteTestResults, minimumToKeep = minimumToKeep)
+  
     __obj.asInstanceOf[RetentionPolicy]
   }
 }

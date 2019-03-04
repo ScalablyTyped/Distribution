@@ -20,13 +20,8 @@ object Delete {
     toSql: js.Function0[java.lang.String],
     where: js.Function1[lovefieldLib.lovefieldMod.lfNs.Predicate, Delete]
   ): Delete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("explain")(explain)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("toSql")(toSql)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(bind = bind, exec = exec, explain = explain, from = from, toSql = toSql, where = where)
+  
     __obj.asInstanceOf[Delete]
   }
 }

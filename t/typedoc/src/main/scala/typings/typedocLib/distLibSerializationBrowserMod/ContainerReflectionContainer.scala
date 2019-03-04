@@ -12,8 +12,8 @@ trait ContainerReflectionContainer[TChildren] extends js.Object {
 object ContainerReflectionContainer {
   @scala.inline
   def apply[TChildren](children: js.Array[TChildren]): ContainerReflectionContainer[TChildren] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[ContainerReflectionContainer[TChildren]]
   }
 }

@@ -15,8 +15,8 @@ trait PluginPackage extends js.Object {
 object PluginPackage {
   @scala.inline
   def apply(pkg: js.Any): PluginPackage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pkg")(pkg)
+    val __obj = js.Dynamic.literal(pkg = pkg)
+  
     __obj.asInstanceOf[PluginPackage]
   }
 }

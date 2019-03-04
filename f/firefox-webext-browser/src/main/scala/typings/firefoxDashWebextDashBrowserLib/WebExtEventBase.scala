@@ -18,10 +18,8 @@ object WebExtEventBase {
     hasListener: js.Function1[TCallback, scala.Boolean],
     removeListener: js.Function1[TCallback, scala.Unit]
   ): WebExtEventBase[TAddListener, TCallback] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasListener")(hasListener)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(addListener = addListener.asInstanceOf[js.Any], hasListener = hasListener, removeListener = removeListener)
+  
     __obj.asInstanceOf[WebExtEventBase[TAddListener, TCallback]]
   }
 }

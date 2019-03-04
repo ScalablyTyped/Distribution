@@ -23,12 +23,7 @@ object FormalExpression {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): FormalExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("evaluatesToTypeRef")(evaluatesToTypeRef)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal($type = $type, body = body, evaluatesToTypeRef = evaluatesToTypeRef, id = id, language = language)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

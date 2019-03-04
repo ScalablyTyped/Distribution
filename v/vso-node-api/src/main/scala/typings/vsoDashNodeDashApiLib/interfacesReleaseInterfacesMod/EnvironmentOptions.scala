@@ -28,15 +28,8 @@ object EnvironmentOptions {
     skipArtifactsDownload: scala.Boolean,
     timeoutInMinutes: scala.Double
   ): EnvironmentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoLinkWorkItems")(autoLinkWorkItems)
-    __obj.updateDynamic("badgeEnabled")(badgeEnabled)
-    __obj.updateDynamic("emailNotificationType")(emailNotificationType)
-    __obj.updateDynamic("emailRecipients")(emailRecipients)
-    __obj.updateDynamic("enableAccessToken")(enableAccessToken)
-    __obj.updateDynamic("publishDeploymentStatus")(publishDeploymentStatus)
-    __obj.updateDynamic("skipArtifactsDownload")(skipArtifactsDownload)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(autoLinkWorkItems = autoLinkWorkItems, badgeEnabled = badgeEnabled, emailNotificationType = emailNotificationType, emailRecipients = emailRecipients, enableAccessToken = enableAccessToken, publishDeploymentStatus = publishDeploymentStatus, skipArtifactsDownload = skipArtifactsDownload, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[EnvironmentOptions]
   }
 }

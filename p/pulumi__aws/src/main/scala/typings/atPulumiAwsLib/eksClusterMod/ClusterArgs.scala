@@ -32,9 +32,7 @@ object ClusterArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], vpcConfig = vpcConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterArgs]

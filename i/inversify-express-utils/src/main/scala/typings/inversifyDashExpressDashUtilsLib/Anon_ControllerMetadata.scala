@@ -22,10 +22,8 @@ object Anon_ControllerMetadata {
     ],
     parameterMetadata: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.ControllerParameterMetadata
   ): Anon_ControllerMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controllerMetadata")(controllerMetadata)
-    __obj.updateDynamic("methodMetadata")(methodMetadata)
-    __obj.updateDynamic("parameterMetadata")(parameterMetadata)
+    val __obj = js.Dynamic.literal(controllerMetadata = controllerMetadata, methodMetadata = methodMetadata, parameterMetadata = parameterMetadata)
+  
     __obj.asInstanceOf[Anon_ControllerMetadata]
   }
 }

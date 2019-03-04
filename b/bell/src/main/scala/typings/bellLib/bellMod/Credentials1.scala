@@ -18,11 +18,7 @@ object Credentials1 {
     token: java.lang.String,
     profile: js.Object = null
   ): Credentials1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query, secret = secret, token = token)
     if (profile != null) __obj.updateDynamic("profile")(profile)
     __obj.asInstanceOf[Credentials1]
   }

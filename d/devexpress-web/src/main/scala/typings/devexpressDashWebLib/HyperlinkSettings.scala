@@ -39,11 +39,8 @@ object HyperlinkSettings {
     tooltip: java.lang.String,
     url: java.lang.String
   ): HyperlinkSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bookmark")(bookmark)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bookmark = bookmark, text = text, tooltip = tooltip, url = url)
+  
     __obj.asInstanceOf[HyperlinkSettings]
   }
 }

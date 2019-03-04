@@ -19,8 +19,8 @@ trait PhysicsUpdraftEventData extends js.Object {
 object PhysicsUpdraftEventData {
   @scala.inline
   def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cylinder")(cylinder)
+    val __obj = js.Dynamic.literal(cylinder = cylinder)
+  
     __obj.asInstanceOf[PhysicsUpdraftEventData]
   }
 }

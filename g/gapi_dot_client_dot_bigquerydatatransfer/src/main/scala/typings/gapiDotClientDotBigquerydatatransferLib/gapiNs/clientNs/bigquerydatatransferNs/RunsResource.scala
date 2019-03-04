@@ -32,11 +32,8 @@ object RunsResource {
     ],
     transferLogs: TransferLogsResource
   ): RunsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("transferLogs")(transferLogs)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, transferLogs = transferLogs)
+  
     __obj.asInstanceOf[RunsResource]
   }
 }

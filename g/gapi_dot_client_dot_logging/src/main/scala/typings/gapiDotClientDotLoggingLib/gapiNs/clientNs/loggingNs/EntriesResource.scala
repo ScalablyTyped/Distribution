@@ -31,9 +31,8 @@ object EntriesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
     ]
   ): EntriesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(list = list, write = write)
+  
     __obj.asInstanceOf[EntriesResource]
   }
 }

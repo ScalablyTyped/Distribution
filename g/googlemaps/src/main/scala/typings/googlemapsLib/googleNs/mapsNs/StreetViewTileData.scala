@@ -20,8 +20,7 @@ object StreetViewTileData {
     tileSize: Size = null,
     worldSize: Size = null
   ): StreetViewTileData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTileUrl")(getTileUrl)
+    val __obj = js.Dynamic.literal(getTileUrl = getTileUrl)
     if (centerHeading != null) __obj.updateDynamic("centerHeading")(centerHeading.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize)
     if (worldSize != null) __obj.updateDynamic("worldSize")(worldSize)

@@ -18,10 +18,8 @@ object IBackgroundTransferContentPart {
     setHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setText: js.Function1[java.lang.String, scala.Unit]
   ): IBackgroundTransferContentPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFile")(setFile)
-    __obj.updateDynamic("setHeader")(setHeader)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(setFile = setFile, setHeader = setHeader, setText = setText)
+  
     __obj.asInstanceOf[IBackgroundTransferContentPart]
   }
 }

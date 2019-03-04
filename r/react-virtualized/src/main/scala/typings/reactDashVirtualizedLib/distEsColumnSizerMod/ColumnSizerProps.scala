@@ -51,9 +51,7 @@ object ColumnSizerProps {
     columnMaxWidth: scala.Int | scala.Double = null,
     columnMinWidth: scala.Int | scala.Double = null
   ): ColumnSizerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(children = children, width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
     if (columnMaxWidth != null) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.asInstanceOf[js.Any])

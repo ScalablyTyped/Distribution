@@ -27,10 +27,7 @@ object RetrievedDocument {
     _rid: java.lang.String = null,
     ttl: scala.Int | scala.Double = null
   ): RetrievedDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_self")(_self)
-    __obj.updateDynamic("_ts")(_ts)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(_self = _self, _ts = _ts, id = id)
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
     if (_etag != null) __obj.updateDynamic("_etag")(_etag)
     if (_rid != null) __obj.updateDynamic("_rid")(_rid)

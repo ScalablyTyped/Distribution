@@ -65,9 +65,7 @@ object PlaceRadarRequest {
     opennow: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: AddressType = null
   ): PlaceRadarRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], radius = radius)
     if (keyword != null) __obj.updateDynamic("keyword")(keyword)
     if (language != null) __obj.updateDynamic("language")(language)
     if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])

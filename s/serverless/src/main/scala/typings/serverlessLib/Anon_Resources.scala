@@ -12,8 +12,8 @@ trait Anon_Resources extends js.Object {
 object Anon_Resources {
   @scala.inline
   def apply(Resources: js.Array[_]): Anon_Resources = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Resources")(Resources)
+    val __obj = js.Dynamic.literal(Resources = Resources)
+  
     __obj.asInstanceOf[Anon_Resources]
   }
 }

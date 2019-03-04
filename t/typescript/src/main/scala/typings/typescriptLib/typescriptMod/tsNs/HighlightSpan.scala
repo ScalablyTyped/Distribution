@@ -20,9 +20,7 @@ object HighlightSpan {
     fileName: java.lang.String = null,
     isInString: typescriptLib.typescriptLibNumbers.`true` = null
   ): HighlightSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("textSpan")(textSpan)
+    val __obj = js.Dynamic.literal(kind = kind, textSpan = textSpan)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (isInString != null) __obj.updateDynamic("isInString")(isInString)
     __obj.asInstanceOf[HighlightSpan]

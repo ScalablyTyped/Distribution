@@ -36,19 +36,8 @@ object GlideElementDescriptor {
     isEdgeEncrypted: js.Function0[scala.Boolean],
     isVirtual: js.Function0[scala.Boolean]
   ): GlideElementDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAttachmentEncryptionType")(getAttachmentEncryptionType)
-    __obj.updateDynamic("getEncryptionType")(getEncryptionType)
-    __obj.updateDynamic("getInternalType")(getInternalType)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPlural")(getPlural)
-    __obj.updateDynamic("hasAttachmentsEncrypted")(hasAttachmentsEncrypted)
-    __obj.updateDynamic("isAutoOrSysID")(isAutoOrSysID)
-    __obj.updateDynamic("isChoiceTable")(isChoiceTable)
-    __obj.updateDynamic("isEdgeEncrypted")(isEdgeEncrypted)
-    __obj.updateDynamic("isVirtual")(isVirtual)
+    val __obj = js.Dynamic.literal(getAttachmentEncryptionType = getAttachmentEncryptionType, getEncryptionType = getEncryptionType, getInternalType = getInternalType, getLabel = getLabel, getLength = getLength, getName = getName, getPlural = getPlural, hasAttachmentsEncrypted = hasAttachmentsEncrypted, isAutoOrSysID = isAutoOrSysID, isChoiceTable = isChoiceTable, isEdgeEncrypted = isEdgeEncrypted, isVirtual = isVirtual)
+  
     __obj.asInstanceOf[GlideElementDescriptor]
   }
 }

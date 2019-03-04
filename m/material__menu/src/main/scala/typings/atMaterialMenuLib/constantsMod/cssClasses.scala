@@ -23,12 +23,8 @@ object cssClasses {
     ROOT: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-menu`,
     SELECTED_LIST_ITEM: atMaterialMenuLib.atMaterialMenuLibStrings.`mdc-list-item--selected`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANIMATING_CLOSED")(ANIMATING_CLOSED)
-    __obj.updateDynamic("ANIMATING_OPEN")(ANIMATING_OPEN)
-    __obj.updateDynamic("OPEN")(OPEN)
-    __obj.updateDynamic("ROOT")(ROOT)
-    __obj.updateDynamic("SELECTED_LIST_ITEM")(SELECTED_LIST_ITEM)
+    val __obj = js.Dynamic.literal(ANIMATING_CLOSED = ANIMATING_CLOSED, ANIMATING_OPEN = ANIMATING_OPEN, OPEN = OPEN, ROOT = ROOT, SELECTED_LIST_ITEM = SELECTED_LIST_ITEM)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

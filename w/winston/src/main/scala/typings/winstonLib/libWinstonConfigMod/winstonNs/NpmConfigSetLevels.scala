@@ -26,14 +26,8 @@ object NpmConfigSetLevels {
     verbose: scala.Double,
     warn: scala.Double
   ): NpmConfigSetLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("silly")(silly)
-    __obj.updateDynamic("verbose")(verbose)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, http = http, info = info, silly = silly, verbose = verbose, warn = warn)
+  
     __obj.asInstanceOf[NpmConfigSetLevels]
   }
 }

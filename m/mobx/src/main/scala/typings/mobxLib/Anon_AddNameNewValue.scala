@@ -21,9 +21,9 @@ object Anon_AddNameNewValue {
     `object`: js.Any,
     `type`: mobxLib.mobxLibStrings.update | mobxLib.mobxLibStrings.add
   ): Anon_AddNameNewValue = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(name = name, newValue = newValue)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AddNameNewValue]
   }
 }

@@ -41,10 +41,8 @@ object TimeRange {
     length: scala.Double,
     start: js.Function1[scala.Double, scala.Double]
   ): TimeRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, length = length, start = start)
+  
     __obj.asInstanceOf[TimeRange]
   }
 }

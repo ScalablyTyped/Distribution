@@ -36,8 +36,7 @@ object NodeProps {
     uniformsOptions: js.Any = null,
     width: scala.Int | scala.Double = null
   ): NodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shader")(shader.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(shader = shader.asInstanceOf[js.Any])
     if (!js.isUndefined(backbuffering)) __obj.updateDynamic("backbuffering")(backbuffering)
     if (blendFunc != null) __obj.updateDynamic("blendFunc")(blendFunc)
     if (children != null) __obj.updateDynamic("children")(children)

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashBindKey extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: lodashLib.lodashMod.underscoreNs.`__` = js.native
+  var placeholder_Original: lodashLib.lodashMod.underscoreNs.__ = js.native
   def apply(`object`: js.Object): LodashBindKey1x1 = js.native
   def apply(`object`: js.Object, key: java.lang.String): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(`object`: lodashLib.lodashMod.underscoreNs.`__`, key: java.lang.String): LodashBindKey1x2 = js.native
+  def apply(`object`: lodashLib.lodashMod.underscoreNs.__, key: java.lang.String): LodashBindKey1x2 = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.
     * Methods that operate on and return arrays, collections, and functions can be chained together.

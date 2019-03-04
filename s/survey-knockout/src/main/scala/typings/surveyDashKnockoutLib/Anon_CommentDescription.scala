@@ -34,18 +34,8 @@ object Anon_CommentDescription {
     titleLeftRoot: java.lang.String,
     titleRequired: java.lang.String
   ): Anon_CommentDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("flowRoot")(flowRoot)
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("mainRoot")(mainRoot)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleLeftRoot")(titleLeftRoot)
-    __obj.updateDynamic("titleRequired")(titleRequired)
+    val __obj = js.Dynamic.literal(comment = comment, description = description, flowRoot = flowRoot, hasError = hasError, indent = indent, mainRoot = mainRoot, number = number, required = required, title = title, titleLeftRoot = titleLeftRoot, titleRequired = titleRequired)
+  
     __obj.asInstanceOf[Anon_CommentDescription]
   }
 }

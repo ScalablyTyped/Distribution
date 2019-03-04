@@ -22,10 +22,8 @@ object FieldDefinition {
     `type`: Type,
     loc: Location = null
   ): FieldDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(arguments = arguments, kind = kind, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[FieldDefinition]
   }

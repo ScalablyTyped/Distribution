@@ -22,11 +22,8 @@ object SelectChangeEvent {
     marker: Marker,
     `type`: java.lang.String
   ): SelectChangeEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("listElement")(listElement)
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(data = data, id = id, listElement = listElement, marker = marker)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SelectChangeEvent]
   }
 }

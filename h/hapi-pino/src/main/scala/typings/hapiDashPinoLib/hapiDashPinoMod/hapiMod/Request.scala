@@ -12,8 +12,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(logger: pinoLib.pinoMod.PNs.Logger): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(logger = logger)
+  
     __obj.asInstanceOf[Request]
   }
 }

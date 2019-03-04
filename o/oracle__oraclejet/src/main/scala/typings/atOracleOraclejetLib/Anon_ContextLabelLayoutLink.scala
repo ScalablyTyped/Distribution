@@ -30,9 +30,8 @@ object Anon_ContextLabelLayoutLink {
       java.lang.String
     ]
   ): Anon_ContextLabelLayoutLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelLayout")(labelLayout)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(labelLayout = labelLayout, path = path)
+  
     __obj.asInstanceOf[Anon_ContextLabelLayoutLink]
   }
 }

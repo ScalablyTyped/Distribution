@@ -30,16 +30,8 @@ object GradientCondition {
     getMinType: js.Function0[InterpolationType],
     getMinValue: js.Function0[java.lang.String]
   ): GradientCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMaxColor")(getMaxColor)
-    __obj.updateDynamic("getMaxType")(getMaxType)
-    __obj.updateDynamic("getMaxValue")(getMaxValue)
-    __obj.updateDynamic("getMidColor")(getMidColor)
-    __obj.updateDynamic("getMidType")(getMidType)
-    __obj.updateDynamic("getMidValue")(getMidValue)
-    __obj.updateDynamic("getMinColor")(getMinColor)
-    __obj.updateDynamic("getMinType")(getMinType)
-    __obj.updateDynamic("getMinValue")(getMinValue)
+    val __obj = js.Dynamic.literal(getMaxColor = getMaxColor, getMaxType = getMaxType, getMaxValue = getMaxValue, getMidColor = getMidColor, getMidType = getMidType, getMidValue = getMidValue, getMinColor = getMinColor, getMinType = getMinType, getMinValue = getMinValue)
+  
     __obj.asInstanceOf[GradientCondition]
   }
 }

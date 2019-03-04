@@ -154,21 +154,8 @@ object XRelationshipAccess {
     release: js.Function0[scala.Unit],
     removeRelationshipByID: js.Function1[java.lang.String, scala.Unit]
   ): XRelationshipAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllRelationships")(AllRelationships)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearRelationships")(clearRelationships)
-    __obj.updateDynamic("getAllRelationships")(getAllRelationships)
-    __obj.updateDynamic("getRelationshipByID")(getRelationshipByID)
-    __obj.updateDynamic("getRelationshipsByType")(getRelationshipsByType)
-    __obj.updateDynamic("getTargetByID")(getTargetByID)
-    __obj.updateDynamic("getTypeByID")(getTypeByID)
-    __obj.updateDynamic("hasByID")(hasByID)
-    __obj.updateDynamic("insertRelationshipByID")(insertRelationshipByID)
-    __obj.updateDynamic("insertRelationships")(insertRelationships)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRelationshipByID")(removeRelationshipByID)
+    val __obj = js.Dynamic.literal(AllRelationships = AllRelationships, acquire = acquire, clearRelationships = clearRelationships, getAllRelationships = getAllRelationships, getRelationshipByID = getRelationshipByID, getRelationshipsByType = getRelationshipsByType, getTargetByID = getTargetByID, getTypeByID = getTypeByID, hasByID = hasByID, insertRelationshipByID = insertRelationshipByID, insertRelationships = insertRelationships, queryInterface = queryInterface, release = release, removeRelationshipByID = removeRelationshipByID)
+  
     __obj.asInstanceOf[XRelationshipAccess]
   }
 }

@@ -30,8 +30,7 @@ object ID3PieOptions {
     size: d3pieLib.Anon_CanvasHeight = null,
     tooltips: d3pieLib.Anon_Caption = null
   ): ID3PieOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
     if (effects != null) __obj.updateDynamic("effects")(effects)
     if (footer != null) __obj.updateDynamic("footer")(footer)

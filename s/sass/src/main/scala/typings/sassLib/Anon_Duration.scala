@@ -37,12 +37,8 @@ object Anon_Duration {
     includedFiles: js.Array[java.lang.String],
     start: scala.Double
   ): Anon_Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("entry")(entry)
-    __obj.updateDynamic("includedFiles")(includedFiles)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(duration = duration, end = end, entry = entry, includedFiles = includedFiles, start = start)
+  
     __obj.asInstanceOf[Anon_Duration]
   }
 }

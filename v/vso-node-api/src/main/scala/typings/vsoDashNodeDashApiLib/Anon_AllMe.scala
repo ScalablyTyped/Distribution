@@ -14,10 +14,8 @@ trait Anon_AllMe extends js.Object {
 object Anon_AllMe {
   @scala.inline
   def apply(all: scala.Double, me: scala.Double, none: scala.Double): Anon_AllMe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("me")(me)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(all = all, me = me, none = none)
+  
     __obj.asInstanceOf[Anon_AllMe]
   }
 }

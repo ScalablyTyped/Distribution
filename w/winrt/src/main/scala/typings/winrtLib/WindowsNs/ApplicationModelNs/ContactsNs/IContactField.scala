@@ -20,10 +20,8 @@ object IContactField {
     `type`: ContactFieldType,
     value: java.lang.String
   ): IContactField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(category = category, name = name, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IContactField]
   }
 }

@@ -46,8 +46,7 @@ object ValueSetComposeIncludeConceptDesignation {
     modifierExtension: js.Array[Extension] = null,
     use: Coding = null
   ): ValueSetComposeIncludeConceptDesignation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_language != null) __obj.updateDynamic("_language")(_language)

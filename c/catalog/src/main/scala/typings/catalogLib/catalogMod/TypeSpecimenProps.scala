@@ -22,10 +22,7 @@ object TypeSpecimenProps {
     color: java.lang.String = null,
     style: java.lang.String = null
   ): TypeSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("headings")(headings.asInstanceOf[js.Any])
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(font = font, headings = headings.asInstanceOf[js.Any], weight = weight)
     if (color != null) __obj.updateDynamic("color")(color)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[TypeSpecimenProps]

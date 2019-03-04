@@ -11,11 +11,11 @@ trait LodashFlatMapDepth1x2 extends js.Object {
   def apply(iteratee: java.lang.String, collection: js.Object): js.Array[_] = js.native
   def apply(iteratee: js.Object): js.Array[scala.Boolean] = js.native
   def apply(iteratee: js.Object, collection: js.Object): js.Array[scala.Boolean] = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashFlatMapDepth3x6 = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: js.Object): LodashFlatMapDepth3x6 = js.native
-  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashFlatMapDepth2x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__): LodashFlatMapDepth3x6 = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__, collection: js.Object): LodashFlatMapDepth3x6 = js.native
+  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashFlatMapDepth2x6[T] = js.native
   def apply[T](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFlatMapDepth1x6[T] = js.native
   def apply[T, TResult](

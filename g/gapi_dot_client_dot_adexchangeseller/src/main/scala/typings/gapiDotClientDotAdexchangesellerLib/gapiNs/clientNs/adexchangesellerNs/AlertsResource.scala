@@ -18,8 +18,8 @@ object AlertsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Alerts]
     ]
   ): AlertsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[AlertsResource]
   }
 }

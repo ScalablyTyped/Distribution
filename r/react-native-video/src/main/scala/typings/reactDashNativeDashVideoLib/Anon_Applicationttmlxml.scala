@@ -18,10 +18,8 @@ object Anon_Applicationttmlxml {
     TTML: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`application/ttml+xml`,
     VTT: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.`text/vtt`
   ): Anon_Applicationttmlxml = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SRT")(SRT)
-    __obj.updateDynamic("TTML")(TTML)
-    __obj.updateDynamic("VTT")(VTT)
+    val __obj = js.Dynamic.literal(SRT = SRT, TTML = TTML, VTT = VTT)
+  
     __obj.asInstanceOf[Anon_Applicationttmlxml]
   }
 }

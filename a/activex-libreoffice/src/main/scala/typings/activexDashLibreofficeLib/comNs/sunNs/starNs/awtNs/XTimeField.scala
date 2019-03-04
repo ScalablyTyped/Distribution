@@ -74,29 +74,8 @@ object XTimeField {
     setStrictFormat: js.Function1[scala.Boolean, scala.Unit],
     setTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit]
   ): XTimeField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("First")(First)
-    __obj.updateDynamic("Last")(Last)
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("Min")(Min)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFirst")(getFirst)
-    __obj.updateDynamic("getLast")(getLast)
-    __obj.updateDynamic("getMax")(getMax)
-    __obj.updateDynamic("getMin")(getMin)
-    __obj.updateDynamic("getTime")(getTime)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isStrictFormat")(isStrictFormat)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEmpty")(setEmpty)
-    __obj.updateDynamic("setFirst")(setFirst)
-    __obj.updateDynamic("setLast")(setLast)
-    __obj.updateDynamic("setMax")(setMax)
-    __obj.updateDynamic("setMin")(setMin)
-    __obj.updateDynamic("setStrictFormat")(setStrictFormat)
-    __obj.updateDynamic("setTime")(setTime)
+    val __obj = js.Dynamic.literal(First = First, Last = Last, Max = Max, Min = Min, Time = Time, acquire = acquire, getFirst = getFirst, getLast = getLast, getMax = getMax, getMin = getMin, getTime = getTime, isEmpty = isEmpty, isStrictFormat = isStrictFormat, queryInterface = queryInterface, release = release, setEmpty = setEmpty, setFirst = setFirst, setLast = setLast, setMax = setMax, setMin = setMin, setStrictFormat = setStrictFormat, setTime = setTime)
+  
     __obj.asInstanceOf[XTimeField]
   }
 }

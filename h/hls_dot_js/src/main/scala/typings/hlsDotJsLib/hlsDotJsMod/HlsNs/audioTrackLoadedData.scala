@@ -14,10 +14,8 @@ trait audioTrackLoadedData extends js.Object {
 object audioTrackLoadedData {
   @scala.inline
   def apply(details: LevelDetails, id: java.lang.String, stats: Stats): audioTrackLoadedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(details = details, id = id, stats = stats)
+  
     __obj.asInstanceOf[audioTrackLoadedData]
   }
 }

@@ -13,9 +13,8 @@ trait ChildProcessInfo extends js.Object {
 object ChildProcessInfo {
   @scala.inline
   def apply(detached: scala.Boolean, process: nodeLib.childUnderscoreProcessMod.ChildProcess): ChildProcessInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detached")(detached)
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(detached = detached, process = process)
+  
     __obj.asInstanceOf[ChildProcessInfo]
   }
 }

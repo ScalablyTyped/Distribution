@@ -20,10 +20,8 @@ object OverwatchApiResponse {
     `private`: scala.Boolean,
     username: java.lang.String
   ): OverwatchApiResponse = {
-    val __obj = js.Dynamic.literal(`private` = `private`)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("portrait")(portrait)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(level = level, portrait = portrait, username = username)
+    __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[OverwatchApiResponse]
   }
 }

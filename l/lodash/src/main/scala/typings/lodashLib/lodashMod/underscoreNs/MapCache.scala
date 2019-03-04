@@ -49,11 +49,7 @@ object MapCache {
     set: js.Function2[js.Any, js.Any, MapCache],
     clear: js.Function0[scala.Unit] = null
   ): MapCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, has = has, set = set)
     if (clear != null) __obj.updateDynamic("clear")(clear)
     __obj.asInstanceOf[MapCache]
   }

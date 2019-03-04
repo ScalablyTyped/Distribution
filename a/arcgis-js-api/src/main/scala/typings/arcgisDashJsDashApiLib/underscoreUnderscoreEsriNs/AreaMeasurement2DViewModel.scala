@@ -106,18 +106,8 @@ object AreaMeasurement2DViewModel {
     unitOptions: js.Array[java.lang.String],
     view: MapView
   ): AreaMeasurement2DViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearMeasurement")(clearMeasurement)
-    __obj.updateDynamic("geodesicDistanceThreshold")(geodesicDistanceThreshold)
-    __obj.updateDynamic("measurement")(measurement)
-    __obj.updateDynamic("measurementLabel")(measurementLabel)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("newMeasurement")(newMeasurement)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    __obj.updateDynamic("unitOptions")(unitOptions)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(clearMeasurement = clearMeasurement, geodesicDistanceThreshold = geodesicDistanceThreshold, measurement = measurement, measurementLabel = measurementLabel, mode = mode.asInstanceOf[js.Any], modes = modes, newMeasurement = newMeasurement, state = state, unit = unit.asInstanceOf[js.Any], unitOptions = unitOptions, view = view)
+  
     __obj.asInstanceOf[AreaMeasurement2DViewModel]
   }
 }

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Constructor[T]
   extends org.scalablytyped.runtime.Instantiable0[T]
      with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, T] {
-  var `super_`: js.Any = js.native
+  var super_ : js.Any = js.native
 }
 

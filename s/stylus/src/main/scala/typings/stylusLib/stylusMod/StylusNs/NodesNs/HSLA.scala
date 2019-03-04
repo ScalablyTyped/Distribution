@@ -58,31 +58,8 @@ object HSLA {
     toExpression: js.Function0[Expression],
     toJSON: js.Function0[stylusLib.Anon_AColumn]
   ): HSLA = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("adjustHue")(adjustHue)
-    __obj.updateDynamic("adjustLightness")(adjustLightness)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("coerce")(coerce)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("hsla")(hsla)
-    __obj.updateDynamic("l")(l)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("operate")(operate)
-    __obj.updateDynamic("rgba")(rgba)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("shouldCoerce")(shouldCoerce)
-    __obj.updateDynamic("substract")(substract)
-    __obj.updateDynamic("toBoolean")(toBoolean)
-    __obj.updateDynamic("toExpression")(toExpression)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(a = a, add = add, adjustHue = adjustHue, adjustLightness = adjustLightness, clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, h = h, hash = hash, hsla = hsla, l = l, lineno = lineno, nodeName = nodeName, operate = operate, rgba = rgba, s = s, shouldCoerce = shouldCoerce, substract = substract, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+  
     __obj.asInstanceOf[HSLA]
   }
 }

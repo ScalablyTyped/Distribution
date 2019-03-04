@@ -16,9 +16,8 @@ object Visitor {
     enter: js.Function1[java.lang.String, scala.Unit],
     exit: js.Function1[java.lang.String, istanbulDashLibDashInstrumentLib.Anon_FileCoverage]
   ): Visitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("exit")(exit)
+    val __obj = js.Dynamic.literal(enter = enter, exit = exit)
+  
     __obj.asInstanceOf[Visitor]
   }
 }

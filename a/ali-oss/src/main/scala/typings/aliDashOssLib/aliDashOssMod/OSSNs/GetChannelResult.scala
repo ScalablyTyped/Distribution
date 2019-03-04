@@ -24,9 +24,7 @@ object GetChannelResult {
     RemoteAddr: java.lang.String = null,
     Video: js.Object = null
   ): GetChannelResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(Status = Status, res = res)
     if (Audio != null) __obj.updateDynamic("Audio")(Audio)
     if (ConnectedTime != null) __obj.updateDynamic("ConnectedTime")(ConnectedTime)
     if (RemoteAddr != null) __obj.updateDynamic("RemoteAddr")(RemoteAddr)

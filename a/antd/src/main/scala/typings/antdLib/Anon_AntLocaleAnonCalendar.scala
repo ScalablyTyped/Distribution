@@ -12,8 +12,8 @@ trait Anon_AntLocaleAnonCalendar extends js.Object {
 object Anon_AntLocaleAnonCalendar {
   @scala.inline
   def apply(antLocale: Anon_Calendar): Anon_AntLocaleAnonCalendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antLocale")(antLocale)
+    val __obj = js.Dynamic.literal(antLocale = antLocale)
+  
     __obj.asInstanceOf[Anon_AntLocaleAnonCalendar]
   }
 }

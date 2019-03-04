@@ -24,8 +24,7 @@ object GetPhotosParamType {
     groupTypes: CameraRollGroupType = null,
     mimeTypes: js.Array[java.lang.String] = null
   ): GetPhotosParamType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
+    val __obj = js.Dynamic.literal(first = first)
     if (after != null) __obj.updateDynamic("after")(after)
     if (assetType != null) __obj.updateDynamic("assetType")(assetType)
     if (groupName != null) __obj.updateDynamic("groupName")(groupName)

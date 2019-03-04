@@ -57,10 +57,7 @@ object Budget {
     LastUpdatedTime: GenericTimestamp = null,
     TimePeriod: TimePeriod = null
   ): Budget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BudgetName")(BudgetName)
-    __obj.updateDynamic("BudgetType")(BudgetType.asInstanceOf[js.Any])
-    __obj.updateDynamic("TimeUnit")(TimeUnit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BudgetName = BudgetName, BudgetType = BudgetType.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
     if (BudgetLimit != null) __obj.updateDynamic("BudgetLimit")(BudgetLimit)
     if (CalculatedSpend != null) __obj.updateDynamic("CalculatedSpend")(CalculatedSpend)
     if (CostFilters != null) __obj.updateDynamic("CostFilters")(CostFilters)

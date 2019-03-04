@@ -40,12 +40,8 @@ object DefaultRecurrenceRuleValuesAccessor {
     GetWeekDays: js.Function0[ASPxClientWeekDays],
     GetWeekOfMonth: js.Function0[ASPxClientWeekOfMonth]
   ): DefaultRecurrenceRuleValuesAccessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDayNumber")(GetDayNumber)
-    __obj.updateDynamic("GetMonth")(GetMonth)
-    __obj.updateDynamic("GetPeriodicity")(GetPeriodicity)
-    __obj.updateDynamic("GetWeekDays")(GetWeekDays)
-    __obj.updateDynamic("GetWeekOfMonth")(GetWeekOfMonth)
+    val __obj = js.Dynamic.literal(GetDayNumber = GetDayNumber, GetMonth = GetMonth, GetPeriodicity = GetPeriodicity, GetWeekDays = GetWeekDays, GetWeekOfMonth = GetWeekOfMonth)
+  
     __obj.asInstanceOf[DefaultRecurrenceRuleValuesAccessor]
   }
 }

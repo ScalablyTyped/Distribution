@@ -21,11 +21,8 @@ object SuccessfulOperation {
     name: java.lang.String,
     response: js.Any
   ): SuccessfulOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(done = done, metadata = metadata, name = name, response = response)
+  
     __obj.asInstanceOf[SuccessfulOperation]
   }
 }

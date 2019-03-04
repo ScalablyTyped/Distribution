@@ -12,8 +12,8 @@ trait Dual extends js.Object {
 object Dual {
   @scala.inline
   def apply(`type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.dual): Dual = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Dual]
   }
 }

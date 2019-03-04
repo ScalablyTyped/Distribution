@@ -17,10 +17,8 @@ object AesCtrParams {
     length: scala.Double,
     name: java.lang.String
   ): AesCtrParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], length = length, name = name)
+  
     __obj.asInstanceOf[AesCtrParams]
   }
 }

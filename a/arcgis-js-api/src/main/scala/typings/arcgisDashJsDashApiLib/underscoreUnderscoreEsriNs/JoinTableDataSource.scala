@@ -64,15 +64,8 @@ object JoinTableDataSource {
     rightTableSource: DynamicMapLayer | DynamicDataLayer,
     `type`: java.lang.String
   ): JoinTableDataSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("joinType")(joinType)
-    __obj.updateDynamic("leftTableKey")(leftTableKey)
-    __obj.updateDynamic("leftTableSource")(leftTableSource.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("rightTableKey")(rightTableKey)
-    __obj.updateDynamic("rightTableSource")(rightTableSource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, joinType = joinType, leftTableKey = leftTableKey, leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, rightTableKey = rightTableKey, rightTableSource = rightTableSource.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JoinTableDataSource]
   }
 }

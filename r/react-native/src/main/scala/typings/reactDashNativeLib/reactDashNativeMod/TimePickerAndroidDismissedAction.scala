@@ -12,8 +12,8 @@ trait TimePickerAndroidDismissedAction extends TimePickerAndroidOpenReturn {
 object TimePickerAndroidDismissedAction {
   @scala.inline
   def apply(action: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction): TimePickerAndroidDismissedAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
+  
     __obj.asInstanceOf[TimePickerAndroidDismissedAction]
   }
 }

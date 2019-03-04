@@ -16,9 +16,8 @@ object Anon_RecordColumnDelimiterRecordRowDelimiter {
     recordColumnDelimiter: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     recordRowDelimiter: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_RecordColumnDelimiterRecordRowDelimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordColumnDelimiter")(recordColumnDelimiter.asInstanceOf[js.Any])
-    __obj.updateDynamic("recordRowDelimiter")(recordRowDelimiter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(recordColumnDelimiter = recordColumnDelimiter.asInstanceOf[js.Any], recordRowDelimiter = recordRowDelimiter.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RecordColumnDelimiterRecordRowDelimiter]
   }
 }

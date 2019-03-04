@@ -26,14 +26,7 @@ object DataStore {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): DataStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("dataState")(dataState)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isUnlimited")(isUnlimited)
-    __obj.updateDynamic("itemSubjectRef")(itemSubjectRef)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($type = $type, capacity = capacity, dataState = dataState, id = id, isUnlimited = isUnlimited, itemSubjectRef = itemSubjectRef, name = name)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

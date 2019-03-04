@@ -47,15 +47,8 @@ object XMarkableStream {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMarkableStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createMark")(createMark)
-    __obj.updateDynamic("deleteMark")(deleteMark)
-    __obj.updateDynamic("jumpToFurthest")(jumpToFurthest)
-    __obj.updateDynamic("jumpToMark")(jumpToMark)
-    __obj.updateDynamic("offsetToMark")(offsetToMark)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createMark = createMark, deleteMark = deleteMark, jumpToFurthest = jumpToFurthest, jumpToMark = jumpToMark, offsetToMark = offsetToMark, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMarkableStream]
   }
 }

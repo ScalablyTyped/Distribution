@@ -15,8 +15,8 @@ trait StopReturnType extends js.Object {
 object StopReturnType {
   @scala.inline
   def apply(profile: Profile): StopReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(profile = profile)
+  
     __obj.asInstanceOf[StopReturnType]
   }
 }

@@ -24,13 +24,8 @@ object Occluder {
     position: Cartesian3,
     radius: scala.Double
   ): Occluder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cameraPosition")(cameraPosition)
-    __obj.updateDynamic("computeVisibility")(computeVisibility)
-    __obj.updateDynamic("isBoundingSphereVisible")(isBoundingSphereVisible)
-    __obj.updateDynamic("isPointVisible")(isPointVisible)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(cameraPosition = cameraPosition, computeVisibility = computeVisibility, isBoundingSphereVisible = isBoundingSphereVisible, isPointVisible = isPointVisible, position = position, radius = radius)
+  
     __obj.asInstanceOf[Occluder]
   }
 }

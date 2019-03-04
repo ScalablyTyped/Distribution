@@ -12,8 +12,8 @@ trait Anon_PromiseSingleColumnMenuResponse extends js.Object {
 object Anon_PromiseSingleColumnMenuResponse {
   @scala.inline
   def apply(promise: js.Promise[terminalDashKitLib.terminalMod.TerminalNs.SingleColumnMenuResponse]): Anon_PromiseSingleColumnMenuResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(promise = promise)
+  
     __obj.asInstanceOf[Anon_PromiseSingleColumnMenuResponse]
   }
 }

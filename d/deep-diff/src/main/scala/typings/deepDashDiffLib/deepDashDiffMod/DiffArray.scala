@@ -20,10 +20,7 @@ object DiffArray {
     kind: deepDashDiffLib.deepDashDiffLibStrings.A,
     path: js.Array[_] = null
   ): DiffArray[LHS, RHS] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(index = index, item = item, kind = kind)
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[DiffArray[LHS, RHS]]
   }

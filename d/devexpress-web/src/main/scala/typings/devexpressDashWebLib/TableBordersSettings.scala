@@ -57,14 +57,8 @@ object TableBordersSettings {
     right: TableBorderSettings,
     top: TableBorderSettings
   ): TableBordersSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("insideHorizontal")(insideHorizontal)
-    __obj.updateDynamic("insideVertical")(insideVertical)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, bottom = bottom, insideHorizontal = insideHorizontal, insideVertical = insideVertical, left = left, right = right, top = top)
+  
     __obj.asInstanceOf[TableBordersSettings]
   }
 }

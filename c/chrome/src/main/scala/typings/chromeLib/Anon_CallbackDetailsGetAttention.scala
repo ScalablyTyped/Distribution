@@ -20,11 +20,8 @@ object Anon_CallbackDetailsGetAttention {
     onClicked: chromeLib.chromeNs.scriptBadgeNs.ScriptBadgeClickedEvent,
     setPopup: js.Function1[chromeLib.chromeNs.scriptBadgeNs.SetPopupDetails, scala.Unit]
   ): Anon_CallbackDetailsGetAttention = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAttention")(getAttention)
-    __obj.updateDynamic("getPopup")(getPopup)
-    __obj.updateDynamic("onClicked")(onClicked)
-    __obj.updateDynamic("setPopup")(setPopup)
+    val __obj = js.Dynamic.literal(getAttention = getAttention, getPopup = getPopup, onClicked = onClicked, setPopup = setPopup)
+  
     __obj.asInstanceOf[Anon_CallbackDetailsGetAttention]
   }
 }

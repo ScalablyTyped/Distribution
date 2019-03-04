@@ -19,10 +19,7 @@ object SpreadsheetRenameSheetEvent {
     newSheetName: java.lang.String = null,
     sheet: kendoDashUiLib.kendoNs.spreadsheetNs.Sheet = null
   ): SpreadsheetRenameSheetEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (newSheetName != null) __obj.updateDynamic("newSheetName")(newSheetName)
     if (sheet != null) __obj.updateDynamic("sheet")(sheet)
     __obj.asInstanceOf[SpreadsheetRenameSheetEvent]

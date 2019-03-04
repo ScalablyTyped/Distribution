@@ -20,11 +20,8 @@ object Args {
     Settable: js.Array[java.lang.String],
     Value: java.lang.String
   ): Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Settable")(Settable)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, Settable = Settable, Value = Value)
+  
     __obj.asInstanceOf[Args]
   }
 }

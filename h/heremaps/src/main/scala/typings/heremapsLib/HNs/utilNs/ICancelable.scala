@@ -18,8 +18,8 @@ trait ICancelable extends js.Object {
 object ICancelable {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit]): ICancelable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+  
     __obj.asInstanceOf[ICancelable]
   }
 }

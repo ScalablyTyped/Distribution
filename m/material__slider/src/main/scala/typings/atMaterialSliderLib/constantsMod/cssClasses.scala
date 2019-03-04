@@ -27,14 +27,8 @@ object cssClasses {
     IN_TRANSIT: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--in-transit`,
     IS_DISCRETE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--discrete`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACTIVE")(ACTIVE)
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("DISCRETE")(DISCRETE)
-    __obj.updateDynamic("FOCUS")(FOCUS)
-    __obj.updateDynamic("HAS_TRACK_MARKER")(HAS_TRACK_MARKER)
-    __obj.updateDynamic("IN_TRANSIT")(IN_TRANSIT)
-    __obj.updateDynamic("IS_DISCRETE")(IS_DISCRETE)
+    val __obj = js.Dynamic.literal(ACTIVE = ACTIVE, DISABLED = DISABLED, DISCRETE = DISCRETE, FOCUS = FOCUS, HAS_TRACK_MARKER = HAS_TRACK_MARKER, IN_TRANSIT = IN_TRANSIT, IS_DISCRETE = IS_DISCRETE)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

@@ -13,9 +13,8 @@ trait ClassificationResult extends js.Object {
 object ClassificationResult {
   @scala.inline
   def apply(entries: js.Array[ClassificationInfo], finalLexState: EndOfLineState): ClassificationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("finalLexState")(finalLexState)
+    val __obj = js.Dynamic.literal(entries = entries, finalLexState = finalLexState)
+  
     __obj.asInstanceOf[ClassificationResult]
   }
 }

@@ -22,8 +22,7 @@ object SubscribeRequest {
     data: js.Any = null,
     waitForAuth: js.UndefOr[scala.Boolean] = js.undefined
   ): SubscribeRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("socket")(socket)
+    val __obj = js.Dynamic.literal(socket = socket)
     if (authTokenExpiredError != null) __obj.updateDynamic("authTokenExpiredError")(authTokenExpiredError)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (data != null) __obj.updateDynamic("data")(data)

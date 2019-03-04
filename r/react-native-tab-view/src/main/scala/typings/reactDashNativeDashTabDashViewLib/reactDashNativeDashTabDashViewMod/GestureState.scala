@@ -32,17 +32,8 @@ object GestureState {
     x0: scala.Double,
     y0: scala.Double
   ): GestureState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("moveX")(moveX)
-    __obj.updateDynamic("moveY")(moveY)
-    __obj.updateDynamic("numberActiveTouches")(numberActiveTouches)
-    __obj.updateDynamic("stateID")(stateID)
-    __obj.updateDynamic("vx")(vx)
-    __obj.updateDynamic("vy")(vy)
-    __obj.updateDynamic("x0")(x0)
-    __obj.updateDynamic("y0")(y0)
+    val __obj = js.Dynamic.literal(dx = dx, dy = dy, moveX = moveX, moveY = moveY, numberActiveTouches = numberActiveTouches, stateID = stateID, vx = vx, vy = vy, x0 = x0, y0 = y0)
+  
     __obj.asInstanceOf[GestureState]
   }
 }

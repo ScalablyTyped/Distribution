@@ -38,12 +38,8 @@ object InlineQueryResultVideo {
     video_height: scala.Int | scala.Double = null,
     video_width: scala.Int | scala.Double = null
   ): InlineQueryResultVideo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mime_type")(mime_type)
-    __obj.updateDynamic("thumb_url")(thumb_url)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("video_url")(video_url)
+    val __obj = js.Dynamic.literal(id = id, mime_type = mime_type, thumb_url = thumb_url, title = title, video_url = video_url)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (description != null) __obj.updateDynamic("description")(description)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)

@@ -51,15 +51,8 @@ object WorkflowTaskResolveConflictParams {
     stepId: scala.Double,
     user: java.lang.String
   ): WorkflowTaskResolveConflictParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("optionReturnCode")(optionReturnCode)
-    __obj.updateDynamic("optionStepIds")(optionStepIds)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stepId")(stepId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, optionReturnCode = optionReturnCode, optionStepIds = optionStepIds, propertyIsEnumerable = propertyIsEnumerable, stepId = stepId, user = user)
+  
     __obj.asInstanceOf[WorkflowTaskResolveConflictParams]
   }
 }

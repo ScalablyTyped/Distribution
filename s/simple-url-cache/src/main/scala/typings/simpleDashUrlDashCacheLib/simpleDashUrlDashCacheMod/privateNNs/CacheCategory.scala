@@ -20,11 +20,8 @@ object CacheCategory {
     getCurrentUrl: js.Function0[java.lang.String],
     getRegexTest: js.Function1[simpleDashUrlDashCacheLib.simpleDashUrlDashCacheMod.RegexRule, scala.Boolean]
   ): CacheCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCacheCategory")(getCacheCategory)
-    __obj.updateDynamic("getCategory")(getCategory)
-    __obj.updateDynamic("getCurrentUrl")(getCurrentUrl)
-    __obj.updateDynamic("getRegexTest")(getRegexTest)
+    val __obj = js.Dynamic.literal(getCacheCategory = getCacheCategory, getCategory = getCategory, getCurrentUrl = getCurrentUrl, getRegexTest = getRegexTest)
+  
     __obj.asInstanceOf[CacheCategory]
   }
 }

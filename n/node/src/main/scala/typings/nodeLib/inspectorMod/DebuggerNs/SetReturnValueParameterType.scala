@@ -15,8 +15,8 @@ trait SetReturnValueParameterType extends js.Object {
 object SetReturnValueParameterType {
   @scala.inline
   def apply(newValue: nodeLib.inspectorMod.RuntimeNs.CallArgument): SetReturnValueParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(newValue = newValue)
+  
     __obj.asInstanceOf[SetReturnValueParameterType]
   }
 }

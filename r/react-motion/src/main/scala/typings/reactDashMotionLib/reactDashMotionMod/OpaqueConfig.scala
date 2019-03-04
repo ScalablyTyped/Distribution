@@ -15,10 +15,8 @@ trait OpaqueConfig extends js.Object {
 object OpaqueConfig {
   @scala.inline
   def apply(damping: scala.Double, precision: scala.Double, stiffness: scala.Double, `val`: scala.Double): OpaqueConfig = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("damping")(damping)
-    __obj.updateDynamic("precision")(precision)
-    __obj.updateDynamic("stiffness")(stiffness)
+    val __obj = js.Dynamic.literal(damping = damping, precision = precision, stiffness = stiffness)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[OpaqueConfig]
   }
 }

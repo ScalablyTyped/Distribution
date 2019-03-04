@@ -18,10 +18,8 @@ object GroupsApp {
     getGroupByEmail: js.Function1[java.lang.String, Group],
     getGroups: js.Function0[js.Array[Group]]
   ): GroupsApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Role")(Role)
-    __obj.updateDynamic("getGroupByEmail")(getGroupByEmail)
-    __obj.updateDynamic("getGroups")(getGroups)
+    val __obj = js.Dynamic.literal(Role = Role, getGroupByEmail = getGroupByEmail, getGroups = getGroups)
+  
     __obj.asInstanceOf[GroupsApp]
   }
 }

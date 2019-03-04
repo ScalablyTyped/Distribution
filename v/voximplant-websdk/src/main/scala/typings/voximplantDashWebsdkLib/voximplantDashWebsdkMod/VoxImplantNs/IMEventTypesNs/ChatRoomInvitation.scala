@@ -41,12 +41,8 @@ object ChatRoomInvitation {
     reason: java.lang.String,
     room: java.lang.String
   ): ChatRoomInvitation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(body = body, from = from, password = password, reason = reason, room = room)
+  
     __obj.asInstanceOf[ChatRoomInvitation]
   }
 }

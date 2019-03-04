@@ -19,10 +19,8 @@ trait MVCxClientGlobalBeginCallbackEventArgs extends ASPxClientGlobalBeginCallba
 object MVCxClientGlobalBeginCallbackEventArgs {
   @scala.inline
   def apply(command: java.lang.String, control: ASPxClientControl, customArgs: js.Object): MVCxClientGlobalBeginCallbackEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("customArgs")(customArgs)
+    val __obj = js.Dynamic.literal(command = command, control = control, customArgs = customArgs)
+  
     __obj.asInstanceOf[MVCxClientGlobalBeginCallbackEventArgs]
   }
 }

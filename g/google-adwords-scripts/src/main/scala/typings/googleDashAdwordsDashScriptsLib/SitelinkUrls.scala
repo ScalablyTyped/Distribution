@@ -26,16 +26,8 @@ object SitelinkUrls {
     setMobileFinalUrl: js.Function1[java.lang.String, scala.Unit],
     setTrackingTemplate: js.Function1[java.lang.String, scala.Unit]
   ): SitelinkUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearMobileFinalUrl")(clearMobileFinalUrl)
-    __obj.updateDynamic("getCustomParameters")(getCustomParameters)
-    __obj.updateDynamic("getFinalUrl")(getFinalUrl)
-    __obj.updateDynamic("getMobileFinalUrl")(getMobileFinalUrl)
-    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate)
-    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
-    __obj.updateDynamic("setFinalUrl")(setFinalUrl)
-    __obj.updateDynamic("setMobileFinalUrl")(setMobileFinalUrl)
-    __obj.updateDynamic("setTrackingTemplate")(setTrackingTemplate)
+    val __obj = js.Dynamic.literal(clearMobileFinalUrl = clearMobileFinalUrl, getCustomParameters = getCustomParameters, getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl, getTrackingTemplate = getTrackingTemplate, setCustomParameters = setCustomParameters, setFinalUrl = setFinalUrl, setMobileFinalUrl = setMobileFinalUrl, setTrackingTemplate = setTrackingTemplate)
+  
     __obj.asInstanceOf[SitelinkUrls]
   }
 }

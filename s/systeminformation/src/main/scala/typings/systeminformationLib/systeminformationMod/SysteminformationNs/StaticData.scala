@@ -30,16 +30,8 @@ object StaticData {
     version: java.lang.String,
     versions: VersionData
   ): StaticData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("diskLayout")(diskLayout)
-    __obj.updateDynamic("graphics")(graphics)
-    __obj.updateDynamic("memLayout")(memLayout)
-    __obj.updateDynamic("net")(net)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(cpu = cpu, diskLayout = diskLayout, graphics = graphics, memLayout = memLayout, net = net, os = os, system = system, version = version, versions = versions)
+  
     __obj.asInstanceOf[StaticData]
   }
 }

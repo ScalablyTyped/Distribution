@@ -48,13 +48,8 @@ object MaterialboxOptions {
     onOpenStart: js.Function2[Materialbox, stdLib.Element, scala.Unit],
     outDuration: scala.Double
   ): MaterialboxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("outDuration")(outDuration)
+    val __obj = js.Dynamic.literal(inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
     __obj.asInstanceOf[MaterialboxOptions]
   }
 }

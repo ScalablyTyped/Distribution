@@ -54,19 +54,7 @@ object TabBarBottomProps {
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
     tabStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
   ): TabBarBottomProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeBackgroundColor")(activeBackgroundColor)
-    __obj.updateDynamic("activeTintColor")(activeTintColor)
-    __obj.updateDynamic("allowFontScaling")(allowFontScaling)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getOnPress")(getOnPress)
-    __obj.updateDynamic("getTestIDProps")(getTestIDProps)
-    __obj.updateDynamic("inactiveBackgroundColor")(inactiveBackgroundColor)
-    __obj.updateDynamic("inactiveTintColor")(inactiveTintColor)
-    __obj.updateDynamic("jumpToIndex")(jumpToIndex)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("renderIcon")(renderIcon)
+    val __obj = js.Dynamic.literal(activeBackgroundColor = activeBackgroundColor, activeTintColor = activeTintColor, allowFontScaling = allowFontScaling, getLabel = getLabel, getOnPress = getOnPress, getTestIDProps = getTestIDProps, inactiveBackgroundColor = inactiveBackgroundColor, inactiveTintColor = inactiveTintColor, jumpToIndex = jumpToIndex, navigation = navigation, position = position, renderIcon = renderIcon)
     if (!js.isUndefined(adaptive)) __obj.updateDynamic("adaptive")(adaptive)
     if (animateStyle != null) __obj.updateDynamic("animateStyle")(animateStyle)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)

@@ -32,8 +32,7 @@ object Anon_CallProperties {
     internalSlots: js.Array[astDashTypesLib.genKindsMod.ObjectTypeInternalSlotKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CallProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
     if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)

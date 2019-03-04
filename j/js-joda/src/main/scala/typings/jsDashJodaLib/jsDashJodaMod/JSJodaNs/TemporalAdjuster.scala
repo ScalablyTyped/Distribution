@@ -12,8 +12,8 @@ trait TemporalAdjuster extends js.Object {
 object TemporalAdjuster {
   @scala.inline
   def apply(adjustInto: js.Function1[Temporal, Temporal]): TemporalAdjuster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adjustInto")(adjustInto)
+    val __obj = js.Dynamic.literal(adjustInto = adjustInto)
+  
     __obj.asInstanceOf[TemporalAdjuster]
   }
 }

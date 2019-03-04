@@ -71,8 +71,7 @@ object ConceptMapGroup {
     targetVersion: java.lang.String = null,
     unmapped: ConceptMapGroupUnmapped = null
   ): ConceptMapGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_source != null) __obj.updateDynamic("_source")(_source)

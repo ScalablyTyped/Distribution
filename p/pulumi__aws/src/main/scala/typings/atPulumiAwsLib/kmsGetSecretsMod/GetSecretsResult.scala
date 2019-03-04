@@ -19,9 +19,8 @@ trait GetSecretsResult extends js.Object {
 object GetSecretsResult {
   @scala.inline
   def apply(id: java.lang.String, plaintext: org.scalablytyped.runtime.StringDictionary[java.lang.String]): GetSecretsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("plaintext")(plaintext)
+    val __obj = js.Dynamic.literal(id = id, plaintext = plaintext)
+  
     __obj.asInstanceOf[GetSecretsResult]
   }
 }

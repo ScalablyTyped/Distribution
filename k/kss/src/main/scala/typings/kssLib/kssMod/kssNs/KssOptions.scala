@@ -30,8 +30,7 @@ object KssOptions {
     mask: java.lang.String | stdLib.RegExp = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): KssOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (builder != null) __obj.updateDynamic("builder")(builder)
     if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
     if (custom != null) __obj.updateDynamic("custom")(custom)

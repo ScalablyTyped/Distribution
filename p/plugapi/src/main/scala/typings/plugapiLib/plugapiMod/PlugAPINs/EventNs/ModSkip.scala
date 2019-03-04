@@ -13,9 +13,8 @@ trait ModSkip extends js.Object {
 object ModSkip {
   @scala.inline
   def apply(m: java.lang.String, mi: scala.Double): ModSkip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("mi")(mi)
+    val __obj = js.Dynamic.literal(m = m, mi = mi)
+  
     __obj.asInstanceOf[ModSkip]
   }
 }

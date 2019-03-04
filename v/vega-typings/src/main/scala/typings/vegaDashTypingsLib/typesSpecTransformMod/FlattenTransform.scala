@@ -18,8 +18,8 @@ object FlattenTransform {
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.flatten,
     as: js.Array[java.lang.String] = null
   ): FlattenTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as)
     __obj.asInstanceOf[FlattenTransform]
   }

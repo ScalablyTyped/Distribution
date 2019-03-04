@@ -20,11 +20,8 @@ object JSSOptions {
     plugins: js.Array[JSSPlugin],
     virtual: scala.Boolean
   ): JSSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createGenerateClassName")(createGenerateClassName)
-    __obj.updateDynamic("insertionPoint")(insertionPoint.asInstanceOf[js.Any])
-    __obj.updateDynamic("plugins")(plugins)
-    __obj.updateDynamic("virtual")(virtual)
+    val __obj = js.Dynamic.literal(createGenerateClassName = createGenerateClassName, insertionPoint = insertionPoint.asInstanceOf[js.Any], plugins = plugins, virtual = virtual)
+  
     __obj.asInstanceOf[JSSOptions]
   }
 }

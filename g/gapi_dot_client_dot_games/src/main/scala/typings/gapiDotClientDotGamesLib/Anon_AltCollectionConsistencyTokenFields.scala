@@ -60,10 +60,7 @@ object Anon_AltCollectionConsistencyTokenFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCollectionConsistencyTokenFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("leaderboardId")(leaderboardId)
-    __obj.updateDynamic("timeSpan")(timeSpan)
+    val __obj = js.Dynamic.literal(collection = collection, leaderboardId = leaderboardId, timeSpan = timeSpan)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

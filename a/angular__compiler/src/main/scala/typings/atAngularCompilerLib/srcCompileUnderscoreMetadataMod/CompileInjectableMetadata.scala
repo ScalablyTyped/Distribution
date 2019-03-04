@@ -28,8 +28,8 @@ object CompileInjectableMetadata {
     useFactory: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = null,
     useValue: js.Any = null
   ): CompileInjectableMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(symbol = symbol)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn)
     if (useClass != null) __obj.updateDynamic("useClass")(useClass)

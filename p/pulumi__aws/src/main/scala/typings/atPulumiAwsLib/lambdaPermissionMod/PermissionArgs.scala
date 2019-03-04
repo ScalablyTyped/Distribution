@@ -66,10 +66,7 @@ object PermissionArgs {
     statementId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     statementIdPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PermissionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any], principal = principal.asInstanceOf[js.Any])
     if (eventSourceToken != null) __obj.updateDynamic("eventSourceToken")(eventSourceToken.asInstanceOf[js.Any])
     if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
     if (sourceAccount != null) __obj.updateDynamic("sourceAccount")(sourceAccount.asInstanceOf[js.Any])

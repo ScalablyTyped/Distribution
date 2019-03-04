@@ -24,8 +24,7 @@ object OptionsWithEndpoints {
     baseUrl: java.lang.String = null,
     cache: gotLib.gotMod.gotNs.Cache | onionooLib.onionooLibNumbers.`false` = null
   ): OptionsWithEndpoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
+    val __obj = js.Dynamic.literal(endpoints = endpoints)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsWithEndpoints]

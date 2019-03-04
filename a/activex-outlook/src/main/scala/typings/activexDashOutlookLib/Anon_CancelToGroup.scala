@@ -13,9 +13,8 @@ trait Anon_CancelToGroup extends js.Object {
 object Anon_CancelToGroup {
   @scala.inline
   def apply(Cancel: scala.Boolean, ToGroup: activexDashOutlookLib.OutlookNs.OutlookBarGroup): Anon_CancelToGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("ToGroup")(ToGroup)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, ToGroup = ToGroup)
+  
     __obj.asInstanceOf[Anon_CancelToGroup]
   }
 }

@@ -49,14 +49,8 @@ object XSubmission {
       scala.Unit
     ]
   ): XSubmission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSubmissionVetoListener")(addSubmissionVetoListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSubmissionVetoListener")(removeSubmissionVetoListener)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("submitWithInteraction")(submitWithInteraction)
+    val __obj = js.Dynamic.literal(acquire = acquire, addSubmissionVetoListener = addSubmissionVetoListener, queryInterface = queryInterface, release = release, removeSubmissionVetoListener = removeSubmissionVetoListener, submit = submit, submitWithInteraction = submitWithInteraction)
+  
     __obj.asInstanceOf[XSubmission]
   }
 }

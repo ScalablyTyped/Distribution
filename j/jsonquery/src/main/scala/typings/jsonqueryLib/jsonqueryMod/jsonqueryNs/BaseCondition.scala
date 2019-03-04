@@ -42,17 +42,8 @@ object BaseCondition {
     $ne: P,
     $nin: js.Array[P]
   ): BaseCondition[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$all")($all)
-    __obj.updateDynamic("$elemMatch")($elemMatch)
-    __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
-    __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
-    __obj.updateDynamic("$in")($in)
-    __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
-    __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
-    __obj.updateDynamic("$mod")($mod)
-    __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
-    __obj.updateDynamic("$nin")($nin)
+    val __obj = js.Dynamic.literal($all = $all, $elemMatch = $elemMatch, $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $in = $in, $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $mod = $mod, $ne = $ne.asInstanceOf[js.Any], $nin = $nin)
+  
     __obj.asInstanceOf[BaseCondition[P]]
   }
 }

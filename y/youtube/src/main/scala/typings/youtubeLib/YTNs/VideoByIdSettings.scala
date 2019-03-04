@@ -20,8 +20,7 @@ object VideoByIdSettings {
     startSeconds: scala.Int | scala.Double = null,
     suggestedQuality: SuggestedVideoQuality = null
   ): VideoByIdSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(videoId = videoId)
     if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
     if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
     if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])

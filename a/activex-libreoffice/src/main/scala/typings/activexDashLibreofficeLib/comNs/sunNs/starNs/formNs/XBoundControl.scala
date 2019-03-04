@@ -35,13 +35,8 @@ object XBoundControl {
     release: js.Function0[scala.Unit],
     setLock: js.Function1[scala.Boolean, scala.Unit]
   ): XBoundControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Lock")(Lock)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLock")(getLock)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLock")(setLock)
+    val __obj = js.Dynamic.literal(Lock = Lock, acquire = acquire, getLock = getLock, queryInterface = queryInterface, release = release, setLock = setLock)
+  
     __obj.asInstanceOf[XBoundControl]
   }
 }

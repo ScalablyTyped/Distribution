@@ -69,8 +69,7 @@ object CallFunctionOnParameterType {
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     userGesture: js.UndefOr[scala.Boolean] = js.undefined
   ): CallFunctionOnParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functionDeclaration")(functionDeclaration)
+    val __obj = js.Dynamic.literal(functionDeclaration = functionDeclaration)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
     if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)

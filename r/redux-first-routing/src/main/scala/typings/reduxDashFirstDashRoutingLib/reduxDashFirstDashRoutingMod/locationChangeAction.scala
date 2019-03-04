@@ -18,8 +18,8 @@ object locationChangeAction {
     payload: reduxDashFirstDashRoutingLib.Anon_Hash[P, S, H],
     `type`: reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/LOCATION_CHANGE`
   ): locationChangeAction[P, S, H] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[locationChangeAction[P, S, H]]
   }
 }

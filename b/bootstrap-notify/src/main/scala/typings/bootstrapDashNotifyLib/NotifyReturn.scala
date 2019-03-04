@@ -19,10 +19,8 @@ object NotifyReturn {
     close: js.Function0[scala.Unit],
     update: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): NotifyReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$ele")($ele)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal($ele = $ele, close = close, update = update)
+  
     __obj.asInstanceOf[NotifyReturn]
   }
 }

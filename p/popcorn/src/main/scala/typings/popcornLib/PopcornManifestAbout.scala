@@ -20,11 +20,8 @@ object PopcornManifestAbout {
     version: java.lang.String,
     website: java.lang.String
   ): PopcornManifestAbout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("website")(website)
+    val __obj = js.Dynamic.literal(author = author, name = name, version = version, website = website)
+  
     __obj.asInstanceOf[PopcornManifestAbout]
   }
 }

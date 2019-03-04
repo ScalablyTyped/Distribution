@@ -42,10 +42,7 @@ object InteractionProps {
     name: java.lang.String = null,
     new_value: js.Object | java.lang.String | scala.Double | scala.Boolean = null
   ): InteractionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("existing_src")(existing_src)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("updated_src")(updated_src)
+    val __obj = js.Dynamic.literal(existing_src = existing_src, namespace = namespace, updated_src = updated_src)
     if (existing_value != null) __obj.updateDynamic("existing_value")(existing_value.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (new_value != null) __obj.updateDynamic("new_value")(new_value.asInstanceOf[js.Any])

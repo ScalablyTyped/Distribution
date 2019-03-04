@@ -37,13 +37,8 @@ object SearchViewModelSuggestResult {
     sourceIndex: scala.Double,
     text: java.lang.String
   ): SearchViewModelSuggestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sourceIndex")(sourceIndex)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, key = key, propertyIsEnumerable = propertyIsEnumerable, sourceIndex = sourceIndex, text = text)
+  
     __obj.asInstanceOf[SearchViewModelSuggestResult]
   }
 }

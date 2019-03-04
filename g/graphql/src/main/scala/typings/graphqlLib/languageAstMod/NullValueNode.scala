@@ -15,8 +15,7 @@ trait NullValueNode
 object NullValueNode {
   @scala.inline
   def apply(kind: graphqlLib.graphqlLibStrings.NullValue, loc: Location = null): NullValueNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[NullValueNode]
   }

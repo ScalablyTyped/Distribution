@@ -19,8 +19,7 @@ trait Anon_Scope extends js.Object {
 object Anon_Scope {
   @scala.inline
   def apply(value: js.Any, scope: firefoxDashWebextDashBrowserLib.browserNs.typesNs.SettingScope = null): Anon_Scope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[Anon_Scope]
   }

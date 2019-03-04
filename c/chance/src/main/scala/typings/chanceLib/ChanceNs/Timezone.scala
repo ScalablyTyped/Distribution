@@ -24,13 +24,8 @@ object Timezone {
     text: java.lang.String,
     utc: js.Array[java.lang.String]
   ): Timezone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbr")(abbr)
-    __obj.updateDynamic("isdst")(isdst)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("utc")(utc)
+    val __obj = js.Dynamic.literal(abbr = abbr, isdst = isdst, name = name, offset = offset, text = text, utc = utc)
+  
     __obj.asInstanceOf[Timezone]
   }
 }

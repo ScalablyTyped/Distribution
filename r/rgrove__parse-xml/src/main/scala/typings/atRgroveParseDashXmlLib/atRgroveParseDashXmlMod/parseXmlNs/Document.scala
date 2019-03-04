@@ -18,8 +18,8 @@ object Document {
     `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.document,
     parent: NodeBase = null
   ): Document = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Document]
   }

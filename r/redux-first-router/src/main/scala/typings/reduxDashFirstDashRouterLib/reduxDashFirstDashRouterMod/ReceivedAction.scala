@@ -24,8 +24,8 @@ object ReceivedAction {
     query: js.Object = null,
     search: java.lang.String = null
   ): ReceivedAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)

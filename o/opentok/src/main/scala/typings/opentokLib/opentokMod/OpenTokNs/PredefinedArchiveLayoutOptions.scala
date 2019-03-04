@@ -14,8 +14,8 @@ object PredefinedArchiveLayoutOptions {
   def apply(
     `type`: opentokLib.opentokLibStrings.bestFit | opentokLib.opentokLibStrings.pip | opentokLib.opentokLibStrings.verticalPresentation | opentokLib.opentokLibStrings.horizontalPresentation
   ): PredefinedArchiveLayoutOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredefinedArchiveLayoutOptions]
   }
 }

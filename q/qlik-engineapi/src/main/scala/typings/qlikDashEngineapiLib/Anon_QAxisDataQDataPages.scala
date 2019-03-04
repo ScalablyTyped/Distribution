@@ -16,9 +16,8 @@ object Anon_QAxisDataQDataPages {
     qAxisData: js.Array[qlikDashEngineapiLib.EngineAPINs.INxAxisData],
     qDataPages: qlikDashEngineapiLib.EngineAPINs.INxDataPage
   ): Anon_QAxisDataQDataPages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAxisData")(qAxisData)
-    __obj.updateDynamic("qDataPages")(qDataPages)
+    val __obj = js.Dynamic.literal(qAxisData = qAxisData, qDataPages = qDataPages)
+  
     __obj.asInstanceOf[Anon_QAxisDataQDataPages]
   }
 }

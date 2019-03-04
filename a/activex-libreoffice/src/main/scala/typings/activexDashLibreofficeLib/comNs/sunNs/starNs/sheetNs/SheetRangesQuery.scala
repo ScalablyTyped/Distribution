@@ -29,19 +29,8 @@ object SheetRangesQuery {
     queryVisibleCells: js.Function0[XSheetCellRanges],
     release: js.Function0[scala.Unit]
   ): SheetRangesQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryColumnDifferences")(queryColumnDifferences)
-    __obj.updateDynamic("queryContentCells")(queryContentCells)
-    __obj.updateDynamic("queryDependents")(queryDependents)
-    __obj.updateDynamic("queryEmptyCells")(queryEmptyCells)
-    __obj.updateDynamic("queryFormulaCells")(queryFormulaCells)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryIntersection")(queryIntersection)
-    __obj.updateDynamic("queryPrecedents")(queryPrecedents)
-    __obj.updateDynamic("queryRowDifferences")(queryRowDifferences)
-    __obj.updateDynamic("queryVisibleCells")(queryVisibleCells)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryColumnDifferences = queryColumnDifferences, queryContentCells = queryContentCells, queryDependents = queryDependents, queryEmptyCells = queryEmptyCells, queryFormulaCells = queryFormulaCells, queryInterface = queryInterface, queryIntersection = queryIntersection, queryPrecedents = queryPrecedents, queryRowDifferences = queryRowDifferences, queryVisibleCells = queryVisibleCells, release = release)
+  
     __obj.asInstanceOf[SheetRangesQuery]
   }
 }

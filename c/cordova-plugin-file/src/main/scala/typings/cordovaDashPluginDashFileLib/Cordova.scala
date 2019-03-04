@@ -15,8 +15,8 @@ trait Cordova extends js.Object {
 object Cordova {
   @scala.inline
   def apply(file: Anon_ApplicationDirectory): Cordova = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
+  
     __obj.asInstanceOf[Cordova]
   }
 }

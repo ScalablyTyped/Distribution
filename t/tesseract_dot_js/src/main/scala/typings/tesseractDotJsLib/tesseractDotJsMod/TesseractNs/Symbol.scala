@@ -40,21 +40,8 @@ object Symbol {
     text: java.lang.String,
     word: Word
   ): Symbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("choices")(choices)
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("is_dropcap")(is_dropcap)
-    __obj.updateDynamic("is_subscript")(is_subscript)
-    __obj.updateDynamic("is_superscript")(is_superscript)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("paragraph")(paragraph)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("word")(word)
+    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, block = block, choices = choices, confidence = confidence, image = image, is_dropcap = is_dropcap, is_subscript = is_subscript, is_superscript = is_superscript, line = line, page = page, paragraph = paragraph, text = text, word = word)
+  
     __obj.asInstanceOf[Symbol]
   }
 }

@@ -127,27 +127,8 @@ object IgSpreadsheetMethods {
     showTopOrBottomDialogForWorksheet: js.Function1[scala.Double, scala.Unit],
     styleUpdated: js.Function0[scala.Unit]
   ): IgSpreadsheetMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("executeAction")(executeAction)
-    __obj.updateDynamic("exportVisualData")(exportVisualData)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getActivePane")(getActivePane)
-    __obj.updateDynamic("getActiveSelection")(getActiveSelection)
-    __obj.updateDynamic("getActiveSelectionCellRangeFormat")(getActiveSelectionCellRangeFormat)
-    __obj.updateDynamic("getActiveTable")(getActiveTable)
-    __obj.updateDynamic("getCellEditMode")(getCellEditMode)
-    __obj.updateDynamic("getIsInEditMode")(getIsInEditMode)
-    __obj.updateDynamic("getIsRenamingWorksheet")(getIsRenamingWorksheet)
-    __obj.updateDynamic("getPanes")(getPanes)
-    __obj.updateDynamic("showFilterDialogForTable")(showFilterDialogForTable)
-    __obj.updateDynamic("showFilterDialogForWorksheet")(showFilterDialogForWorksheet)
-    __obj.updateDynamic("showTopOrBottomDialogForTable")(showTopOrBottomDialogForTable)
-    __obj.updateDynamic("showTopOrBottomDialogForWorksheet")(showTopOrBottomDialogForWorksheet)
-    __obj.updateDynamic("styleUpdated")(styleUpdated)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, executeAction = executeAction, exportVisualData = exportVisualData, flush = flush, getActivePane = getActivePane, getActiveSelection = getActiveSelection, getActiveSelectionCellRangeFormat = getActiveSelectionCellRangeFormat, getActiveTable = getActiveTable, getCellEditMode = getCellEditMode, getIsInEditMode = getIsInEditMode, getIsRenamingWorksheet = getIsRenamingWorksheet, getPanes = getPanes, showFilterDialogForTable = showFilterDialogForTable, showFilterDialogForWorksheet = showFilterDialogForWorksheet, showTopOrBottomDialogForTable = showTopOrBottomDialogForTable, showTopOrBottomDialogForWorksheet = showTopOrBottomDialogForWorksheet, styleUpdated = styleUpdated)
+  
     __obj.asInstanceOf[IgSpreadsheetMethods]
   }
 }

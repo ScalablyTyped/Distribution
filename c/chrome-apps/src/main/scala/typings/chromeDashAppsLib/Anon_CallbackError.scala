@@ -73,14 +73,8 @@ object Anon_CallbackError {
     ],
     unregister: js.Function1[js.Function0[scala.Unit], scala.Unit]
   ): Anon_CallbackError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MAX_MESSAGE_SIZE")(MAX_MESSAGE_SIZE)
-    __obj.updateDynamic("onMessage")(onMessage)
-    __obj.updateDynamic("onMessagesDeleted")(onMessagesDeleted)
-    __obj.updateDynamic("onSendError")(onSendError)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("unregister")(unregister)
+    val __obj = js.Dynamic.literal(MAX_MESSAGE_SIZE = MAX_MESSAGE_SIZE, onMessage = onMessage, onMessagesDeleted = onMessagesDeleted, onSendError = onSendError, register = register, send = send, unregister = unregister)
+  
     __obj.asInstanceOf[Anon_CallbackError]
   }
 }

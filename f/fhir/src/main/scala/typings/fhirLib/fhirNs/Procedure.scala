@@ -179,9 +179,7 @@ object Procedure {
     usedCode: js.Array[CodeableConcept] = null,
     usedReference: js.Array[Reference] = null
   ): Procedure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(status = status, subject = subject)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

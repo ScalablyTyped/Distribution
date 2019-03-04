@@ -104,13 +104,7 @@ object Bridge {
     version: java.lang.String = null,
     version_status: onionooLib.onionooLibStrings.recommended | onionooLib.onionooLibStrings.experimental | onionooLib.onionooLibStrings.obsolete | (onionooLib.onionooLibStrings.`new in series`) | onionooLib.onionooLibStrings.unrecommended = null
   ): Bridge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_seen")(first_seen)
-    __obj.updateDynamic("hashed_fingerprint")(hashed_fingerprint)
-    __obj.updateDynamic("last_seen")(last_seen)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("or_addresses")(or_addresses)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(first_seen = first_seen, hashed_fingerprint = hashed_fingerprint, last_seen = last_seen, nickname = nickname, or_addresses = or_addresses, running = running)
     if (advertised_bandwidth != null) __obj.updateDynamic("advertised_bandwidth")(advertised_bandwidth.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (last_restarted != null) __obj.updateDynamic("last_restarted")(last_restarted)

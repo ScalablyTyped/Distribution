@@ -20,11 +20,8 @@ object IQuestionPanelDynamicData {
     getSurvey: js.Function0[ISurvey],
     setPanelItemData: js.Function3[ISurveyData, java.lang.String, js.Any, js.Any]
   ): IQuestionPanelDynamicData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItemIndex")(getItemIndex)
-    __obj.updateDynamic("getPanelItemData")(getPanelItemData)
-    __obj.updateDynamic("getSurvey")(getSurvey)
-    __obj.updateDynamic("setPanelItemData")(setPanelItemData)
+    val __obj = js.Dynamic.literal(getItemIndex = getItemIndex, getPanelItemData = getPanelItemData, getSurvey = getSurvey, setPanelItemData = setPanelItemData)
+  
     __obj.asInstanceOf[IQuestionPanelDynamicData]
   }
 }

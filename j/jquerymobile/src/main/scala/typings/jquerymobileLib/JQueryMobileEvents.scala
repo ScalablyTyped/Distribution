@@ -72,37 +72,8 @@ object JQueryMobileEvents {
     vmouseover: js.Any,
     vmouseup: js.Any
   ): JQueryMobileEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orientationchange")(orientationchange)
-    __obj.updateDynamic("pagebeforechange")(pagebeforechange)
-    __obj.updateDynamic("pagebeforecreate")(pagebeforecreate)
-    __obj.updateDynamic("pagebeforehide")(pagebeforehide)
-    __obj.updateDynamic("pagebeforeload")(pagebeforeload)
-    __obj.updateDynamic("pagebeforeshow")(pagebeforeshow)
-    __obj.updateDynamic("pagechange")(pagechange)
-    __obj.updateDynamic("pagechangefailed")(pagechangefailed)
-    __obj.updateDynamic("pagecreate")(pagecreate)
-    __obj.updateDynamic("pagehide")(pagehide)
-    __obj.updateDynamic("pageinit")(pageinit)
-    __obj.updateDynamic("pageload")(pageload)
-    __obj.updateDynamic("pageloadfailed")(pageloadfailed)
-    __obj.updateDynamic("pageremove")(pageremove)
-    __obj.updateDynamic("pageshow")(pageshow)
-    __obj.updateDynamic("scrollstart")(scrollstart)
-    __obj.updateDynamic("scrollstop")(scrollstop)
-    __obj.updateDynamic("swipe")(swipe)
-    __obj.updateDynamic("swipeleft")(swipeleft)
-    __obj.updateDynamic("swiperight")(swiperight)
-    __obj.updateDynamic("tap")(tap)
-    __obj.updateDynamic("taphold")(taphold)
-    __obj.updateDynamic("updatelayout")(updatelayout)
-    __obj.updateDynamic("vclick")(vclick)
-    __obj.updateDynamic("vmousecancel")(vmousecancel)
-    __obj.updateDynamic("vmousedown")(vmousedown)
-    __obj.updateDynamic("vmousemove")(vmousemove)
-    __obj.updateDynamic("vmouseout")(vmouseout)
-    __obj.updateDynamic("vmouseover")(vmouseover)
-    __obj.updateDynamic("vmouseup")(vmouseup)
+    val __obj = js.Dynamic.literal(orientationchange = orientationchange, pagebeforechange = pagebeforechange, pagebeforecreate = pagebeforecreate, pagebeforehide = pagebeforehide, pagebeforeload = pagebeforeload, pagebeforeshow = pagebeforeshow, pagechange = pagechange, pagechangefailed = pagechangefailed, pagecreate = pagecreate, pagehide = pagehide, pageinit = pageinit, pageload = pageload, pageloadfailed = pageloadfailed, pageremove = pageremove, pageshow = pageshow, scrollstart = scrollstart, scrollstop = scrollstop, swipe = swipe, swipeleft = swipeleft, swiperight = swiperight, tap = tap, taphold = taphold, updatelayout = updatelayout, vclick = vclick, vmousecancel = vmousecancel, vmousedown = vmousedown, vmousemove = vmousemove, vmouseout = vmouseout, vmouseover = vmouseover, vmouseup = vmouseup)
+  
     __obj.asInstanceOf[JQueryMobileEvents]
   }
 }

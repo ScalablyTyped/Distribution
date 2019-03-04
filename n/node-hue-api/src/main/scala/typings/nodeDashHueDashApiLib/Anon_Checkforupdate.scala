@@ -25,13 +25,8 @@ object Anon_Checkforupdate {
     updatestate: scala.Double,
     url: java.lang.String
   ): Anon_Checkforupdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkforupdate")(checkforupdate)
-    __obj.updateDynamic("devicetypes")(devicetypes)
-    __obj.updateDynamic("notify")(notify)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("updatestate")(updatestate)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(checkforupdate = checkforupdate, devicetypes = devicetypes, notify = notify, text = text, updatestate = updatestate, url = url)
+  
     __obj.asInstanceOf[Anon_Checkforupdate]
   }
 }

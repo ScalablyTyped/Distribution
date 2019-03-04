@@ -59,16 +59,8 @@ object XStatisticDisplay {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStatisticDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DownBar")(DownBar)
-    __obj.updateDynamic("MinMaxLine")(MinMaxLine)
-    __obj.updateDynamic("UpBar")(UpBar)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDownBar")(getDownBar)
-    __obj.updateDynamic("getMinMaxLine")(getMinMaxLine)
-    __obj.updateDynamic("getUpBar")(getUpBar)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DownBar = DownBar, MinMaxLine = MinMaxLine, UpBar = UpBar, acquire = acquire, getDownBar = getDownBar, getMinMaxLine = getMinMaxLine, getUpBar = getUpBar, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStatisticDisplay]
   }
 }

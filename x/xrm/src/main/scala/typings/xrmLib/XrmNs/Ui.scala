@@ -111,20 +111,8 @@ object Ui {
     setFormNotification: js.Function3[java.lang.String, FormNotificationLevel, java.lang.String, scala.Boolean],
     tabs: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.Tab]
   ): Ui = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearFormNotification")(clearFormNotification)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("formSelector")(formSelector)
-    __obj.updateDynamic("getFormType")(getFormType)
-    __obj.updateDynamic("getViewPortHeight")(getViewPortHeight)
-    __obj.updateDynamic("getViewPortWidth")(getViewPortWidth)
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("process")(process)
-    __obj.updateDynamic("quickForms")(quickForms)
-    __obj.updateDynamic("refreshRibbon")(refreshRibbon)
-    __obj.updateDynamic("setFormNotification")(setFormNotification)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(clearFormNotification = clearFormNotification, close = close, controls = controls, formSelector = formSelector, getFormType = getFormType, getViewPortHeight = getViewPortHeight, getViewPortWidth = getViewPortWidth, navigation = navigation, process = process, quickForms = quickForms, refreshRibbon = refreshRibbon, setFormNotification = setFormNotification, tabs = tabs)
+  
     __obj.asInstanceOf[Ui]
   }
 }

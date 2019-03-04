@@ -66,25 +66,8 @@ object XInterfaceMethodTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInterfaceMethodTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Exceptions")(Exceptions)
-    __obj.updateDynamic("MemberName")(MemberName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("ReturnType")(ReturnType)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getExceptions")(getExceptions)
-    __obj.updateDynamic("getMemberName")(getMemberName)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getReturnType")(getReturnType)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("isOneway")(isOneway)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Exceptions = Exceptions, MemberName = MemberName, Name = Name, Parameters = Parameters, Position = Position, ReturnType = ReturnType, TypeClass = TypeClass, acquire = acquire, getExceptions = getExceptions, getMemberName = getMemberName, getName = getName, getParameters = getParameters, getPosition = getPosition, getReturnType = getReturnType, getTypeClass = getTypeClass, isOneway = isOneway, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInterfaceMethodTypeDescription]
   }
 }

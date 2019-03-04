@@ -12,8 +12,8 @@ trait ItemStructuredResponse extends RichResponseItem {
 object ItemStructuredResponse {
   @scala.inline
   def apply(structuredResponse: StructuredResponse): ItemStructuredResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("structuredResponse")(structuredResponse)
+    val __obj = js.Dynamic.literal(structuredResponse = structuredResponse)
+  
     __obj.asInstanceOf[ItemStructuredResponse]
   }
 }

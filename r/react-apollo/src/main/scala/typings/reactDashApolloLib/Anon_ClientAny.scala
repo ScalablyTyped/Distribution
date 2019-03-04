@@ -12,8 +12,8 @@ trait Anon_ClientAny extends js.Object {
 object Anon_ClientAny {
   @scala.inline
   def apply(client: apolloDashClientLib.apolloDashClientMod.ApolloClient[_]): Anon_ClientAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(client = client)
+  
     __obj.asInstanceOf[Anon_ClientAny]
   }
 }

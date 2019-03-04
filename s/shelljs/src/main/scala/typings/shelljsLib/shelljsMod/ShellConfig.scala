@@ -42,12 +42,7 @@ object ShellConfig {
     verbose: scala.Boolean,
     execPath: java.lang.String = null
   ): ShellConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fatal")(fatal)
-    __obj.updateDynamic("globOptions")(globOptions)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(fatal = fatal, globOptions = globOptions, reset = reset, silent = silent, verbose = verbose)
     if (execPath != null) __obj.updateDynamic("execPath")(execPath)
     __obj.asInstanceOf[ShellConfig]
   }

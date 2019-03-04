@@ -35,8 +35,7 @@ object IconProps {
     spin: js.UndefOr[scala.Boolean] = js.undefined,
     stack: IconStackSize = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, SizeOverrideHTMLProps)
     if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth)

@@ -23,14 +23,8 @@ object IGeometryEditorChildModel {
     getPixels: js.Function0[js.Array[scala.Double]],
     setPixels: js.Function1[js.Array[scala.Double], scala.Unit]
   ): IGeometryEditorChildModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPixels")(getPixels)
-    __obj.updateDynamic("setPixels")(setPixels)
+    val __obj = js.Dynamic.literal(destroy = destroy, editor = editor, events = events, geometry = geometry, getParent = getParent, getPixels = getPixels, setPixels = setPixels)
+  
     __obj.asInstanceOf[IGeometryEditorChildModel]
   }
 }

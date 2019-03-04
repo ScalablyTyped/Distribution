@@ -25,13 +25,8 @@ object ColumnsRendererContext {
     parentElement: stdLib.Element,
     row: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): ColumnsRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellContext")(cellContext)
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cellContext = cellContext, columnIndex = columnIndex, componentElement = componentElement, data = data.asInstanceOf[js.Any], parentElement = parentElement, row = row)
+  
     __obj.asInstanceOf[ColumnsRendererContext[K, D]]
   }
 }

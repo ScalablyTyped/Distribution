@@ -50,14 +50,8 @@ object Symbol {
     StandardSymbol: scala.Double,
     Style: SymbolStyle
   ): Symbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BorderColor")(BorderColor)
-    __obj.updateDynamic("FillColor")(FillColor)
-    __obj.updateDynamic("Graphic")(Graphic)
-    __obj.updateDynamic("PolygonCoords")(PolygonCoords)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("StandardSymbol")(StandardSymbol)
-    __obj.updateDynamic("Style")(Style)
+    val __obj = js.Dynamic.literal(BorderColor = BorderColor, FillColor = FillColor, Graphic = Graphic, PolygonCoords = PolygonCoords, Size = Size, StandardSymbol = StandardSymbol, Style = Style)
+  
     __obj.asInstanceOf[Symbol]
   }
 }

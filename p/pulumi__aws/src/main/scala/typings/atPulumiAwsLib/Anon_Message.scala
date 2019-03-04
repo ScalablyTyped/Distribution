@@ -24,11 +24,7 @@ object Anon_Message {
     statusCode: java.lang.String = null,
     topicArn: java.lang.String = null
   ): Anon_Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("smtpReplyCode")(smtpReplyCode)
+    val __obj = js.Dynamic.literal(message = message, position = position, sender = sender, smtpReplyCode = smtpReplyCode)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)
     __obj.asInstanceOf[Anon_Message]

@@ -44,14 +44,8 @@ object ClientApi {
     stop: js.Function0[scala.Unit],
     validateSegmentName: js.Function1[java.lang.String, scala.Null | stdLib.Error]
   ): ClientApi[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drop")(drop)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("validateSegmentName")(validateSegmentName)
+    val __obj = js.Dynamic.literal(drop = drop, get = get, isReady = isReady, set = set, start = start, stop = stop, validateSegmentName = validateSegmentName)
+  
     __obj.asInstanceOf[ClientApi[T]]
   }
 }

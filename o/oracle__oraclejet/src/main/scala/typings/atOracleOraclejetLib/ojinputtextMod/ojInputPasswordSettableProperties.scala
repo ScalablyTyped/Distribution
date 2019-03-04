@@ -38,21 +38,7 @@ object ojInputPasswordSettableProperties {
     ] = null,
     value: java.lang.String = null
   ): ojInputPasswordSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncValidators")(asyncValidators)
-    __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    __obj.updateDynamic("autofocus")(autofocus)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators, autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus, disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, placeholder = placeholder, readonly = readonly, required = required, translations = translations, valid = valid.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
     if (validators != null) __obj.updateDynamic("validators")(validators)

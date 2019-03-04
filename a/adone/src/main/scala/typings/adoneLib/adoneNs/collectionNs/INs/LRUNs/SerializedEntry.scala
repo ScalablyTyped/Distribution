@@ -23,10 +23,8 @@ trait SerializedEntry[K, V] extends js.Object {
 object SerializedEntry {
   @scala.inline
   def apply[K, V](e: scala.Double, key: K, value: V): SerializedEntry[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(e = e, key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SerializedEntry[K, V]]
   }
 }

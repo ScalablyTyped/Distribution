@@ -40,21 +40,8 @@ object IObjectFile {
     ToJSON: js.Function0[java.lang.String],
     Version: scala.Double
   ): IObjectFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChangeTimeUtc")(ChangeTimeUtc)
-    __obj.updateDynamic("CreationTimeUtc")(CreationTimeUtc)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("FileGUID")(FileGUID)
-    __obj.updateDynamic("FileVer")(FileVer)
-    __obj.updateDynamic("GetNameForFileSystem")(GetNameForFileSystem)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LastAccessTimeUtc")(LastAccessTimeUtc)
-    __obj.updateDynamic("LastWriteTimeUtc")(LastWriteTimeUtc)
-    __obj.updateDynamic("LogicalSize")(LogicalSize)
-    __obj.updateDynamic("LogicalSize_32bit")(LogicalSize_32bit)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("ToJSON")(ToJSON)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(ChangeTimeUtc = ChangeTimeUtc, CreationTimeUtc = CreationTimeUtc, Extension = Extension, FileGUID = FileGUID, FileVer = FileVer, GetNameForFileSystem = GetNameForFileSystem, ID = ID, LastAccessTimeUtc = LastAccessTimeUtc, LastWriteTimeUtc = LastWriteTimeUtc, LogicalSize = LogicalSize, LogicalSize_32bit = LogicalSize_32bit, Title = Title, ToJSON = ToJSON, Version = Version)
+  
     __obj.asInstanceOf[IObjectFile]
   }
 }

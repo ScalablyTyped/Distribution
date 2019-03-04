@@ -27,10 +27,8 @@ object TSTypeParameter {
     name: java.lang.String = null,
     trailingComments: js.Array[Comment] = null
   ): TSTypeParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (constraint != null) __obj.updateDynamic("constraint")(constraint)
     if (default != null) __obj.updateDynamic("default")(default)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

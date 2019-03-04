@@ -105,8 +105,8 @@ object SelectionControlGroupProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: scala.Double | java.lang.String = null
   ): SelectionControlGroupProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("controls")(controls)
+    val __obj = js.Dynamic.literal(controls = controls)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

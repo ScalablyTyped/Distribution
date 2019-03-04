@@ -16,9 +16,8 @@ object Anon_ScopeDescriptionScopeName {
     scopeDescription: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     scopeName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ScopeDescriptionScopeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopeDescription")(scopeDescription.asInstanceOf[js.Any])
-    __obj.updateDynamic("scopeName")(scopeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scopeDescription = scopeDescription.asInstanceOf[js.Any], scopeName = scopeName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ScopeDescriptionScopeName]
   }
 }

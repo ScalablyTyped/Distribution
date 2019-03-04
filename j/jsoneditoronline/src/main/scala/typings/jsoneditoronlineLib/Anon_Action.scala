@@ -42,11 +42,8 @@ object Anon_Action {
     ],
     stopPropagation: js.Function1[stdLib.Event, scala.Unit]
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, preventDefault = preventDefault, removeEventListener = removeEventListener, stopPropagation = stopPropagation)
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

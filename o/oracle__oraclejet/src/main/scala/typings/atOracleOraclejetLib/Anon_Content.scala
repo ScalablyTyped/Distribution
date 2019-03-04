@@ -18,10 +18,8 @@ object Anon_Content {
     height: java.lang.String,
     rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content, height = height, rendered = rendered.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Content]
   }
 }

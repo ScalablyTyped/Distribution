@@ -22,9 +22,7 @@ object Crop {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Crop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

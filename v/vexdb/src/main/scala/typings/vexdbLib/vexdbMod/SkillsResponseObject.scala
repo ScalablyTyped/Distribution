@@ -26,13 +26,8 @@ object SkillsResponseObject {
     team: java.lang.String,
     `type`: scala.Double
   ): SkillsResponseObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attempts")(attempts)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("sku")(sku)
-    __obj.updateDynamic("team")(team)
+    val __obj = js.Dynamic.literal(attempts = attempts, program = program, rank = rank, score = score, sku = sku, team = team)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SkillsResponseObject]
   }
 }

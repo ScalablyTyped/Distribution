@@ -50,9 +50,7 @@ object PausedEventDataType {
     data: js.Object = null,
     hitBreakpoints: js.Array[java.lang.String] = null
   ): PausedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFrames")(callFrames)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(callFrames = callFrames, reason = reason)
     if (asyncCallStackTraceId != null) __obj.updateDynamic("asyncCallStackTraceId")(asyncCallStackTraceId)
     if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
     if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)

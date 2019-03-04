@@ -26,14 +26,8 @@ object feedEntry {
     publishedDate: java.lang.String,
     title: java.lang.String
   ): feedEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentSnippet")(contentSnippet)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("mediaGroup")(mediaGroup)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(categories = categories, content = content, contentSnippet = contentSnippet, link = link, mediaGroup = mediaGroup, publishedDate = publishedDate, title = title)
+  
     __obj.asInstanceOf[feedEntry]
   }
 }

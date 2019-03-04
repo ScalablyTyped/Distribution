@@ -107,25 +107,8 @@ object Resource {
     validation: js.Function0[js.Any],
     validationIssues: js.Function0[js.Any]
   ): Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allEmbeddedArrays")(allEmbeddedArrays)
-    __obj.updateDynamic("allEmbeddedResourceArrays")(allEmbeddedResourceArrays)
-    __obj.updateDynamic("allEmbeddedResources")(allEmbeddedResources)
-    __obj.updateDynamic("allLinkArrays")(allLinkArrays)
-    __obj.updateDynamic("allLinks")(allLinks)
-    __obj.updateDynamic("curie")(curie)
-    __obj.updateDynamic("curieArray")(curieArray)
-    __obj.updateDynamic("embedded")(embedded)
-    __obj.updateDynamic("embeddedArray")(embeddedArray)
-    __obj.updateDynamic("embeddedResource")(embeddedResource)
-    __obj.updateDynamic("embeddedResourceArray")(embeddedResourceArray)
-    __obj.updateDynamic("hasCuries")(hasCuries)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("linkArray")(linkArray)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("reverseResolveCurie")(reverseResolveCurie)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("validationIssues")(validationIssues)
+    val __obj = js.Dynamic.literal(allEmbeddedArrays = allEmbeddedArrays, allEmbeddedResourceArrays = allEmbeddedResourceArrays, allEmbeddedResources = allEmbeddedResources, allLinkArrays = allLinkArrays, allLinks = allLinks, curie = curie, curieArray = curieArray, embedded = embedded, embeddedArray = embeddedArray, embeddedResource = embeddedResource, embeddedResourceArray = embeddedResourceArray, hasCuries = hasCuries, link = link, linkArray = linkArray, original = original, reverseResolveCurie = reverseResolveCurie, validation = validation, validationIssues = validationIssues)
+  
     __obj.asInstanceOf[Resource]
   }
 }

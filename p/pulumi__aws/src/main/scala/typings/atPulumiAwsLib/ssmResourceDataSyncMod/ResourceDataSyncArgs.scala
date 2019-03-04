@@ -22,8 +22,7 @@ object ResourceDataSyncArgs {
     s3Destination: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ResourceDataSyncArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3Destination")(s3Destination.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3Destination = s3Destination.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncArgs]
   }

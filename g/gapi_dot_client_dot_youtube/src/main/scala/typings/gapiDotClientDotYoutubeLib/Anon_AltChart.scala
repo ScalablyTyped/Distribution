@@ -120,8 +120,7 @@ object Anon_AltChart {
     userIp: java.lang.String = null,
     videoCategoryId: java.lang.String = null
   ): Anon_AltChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (chart != null) __obj.updateDynamic("chart")(chart)
     if (fields != null) __obj.updateDynamic("fields")(fields)

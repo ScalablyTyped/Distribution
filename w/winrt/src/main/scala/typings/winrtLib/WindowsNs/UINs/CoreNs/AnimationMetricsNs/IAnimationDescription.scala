@@ -22,12 +22,8 @@ object IAnimationDescription {
     staggerDelayFactor: scala.Double,
     zOrder: scala.Double
   ): IAnimationDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animations")(animations)
-    __obj.updateDynamic("delayLimit")(delayLimit)
-    __obj.updateDynamic("staggerDelay")(staggerDelay)
-    __obj.updateDynamic("staggerDelayFactor")(staggerDelayFactor)
-    __obj.updateDynamic("zOrder")(zOrder)
+    val __obj = js.Dynamic.literal(animations = animations, delayLimit = delayLimit, staggerDelay = staggerDelay, staggerDelayFactor = staggerDelayFactor, zOrder = zOrder)
+  
     __obj.asInstanceOf[IAnimationDescription]
   }
 }

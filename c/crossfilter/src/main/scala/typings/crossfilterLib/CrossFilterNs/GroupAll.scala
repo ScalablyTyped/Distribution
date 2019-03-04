@@ -31,12 +31,8 @@ object GroupAll {
     reduceSum: js.Function1[Selector[T], GroupAll[T, TValue]],
     value: js.Function0[TValue]
   ): GroupAll[T, TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("reduceCount")(reduceCount)
-    __obj.updateDynamic("reduceSum")(reduceSum)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(dispose = dispose, reduce = reduce, reduceCount = reduceCount, reduceSum = reduceSum, value = value)
+  
     __obj.asInstanceOf[GroupAll[T, TValue]]
   }
 }

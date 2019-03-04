@@ -59,8 +59,7 @@ object NimblePickerProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: java.lang.String = null
   ): NimblePickerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(backgroundImageFn)
     if (color != null) __obj.updateDynamic("color")(color)

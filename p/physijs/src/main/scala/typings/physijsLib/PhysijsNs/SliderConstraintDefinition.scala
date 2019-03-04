@@ -26,13 +26,8 @@ object SliderConstraintDefinition {
     positionb: threeLib.threeMod.Vector3,
     `type`: java.lang.String
   ): SliderConstraintDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("objecta")(objecta)
-    __obj.updateDynamic("objectb")(objectb)
-    __obj.updateDynamic("positiona")(positiona)
-    __obj.updateDynamic("positionb")(positionb)
+    val __obj = js.Dynamic.literal(axis = axis, id = id, objecta = objecta, objectb = objectb, positiona = positiona, positionb = positionb)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SliderConstraintDefinition]
   }
 }

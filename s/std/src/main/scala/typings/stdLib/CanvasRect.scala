@@ -18,10 +18,8 @@ object CanvasRect {
     fillRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
     strokeRect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
   ): CanvasRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearRect")(clearRect)
-    __obj.updateDynamic("fillRect")(fillRect)
-    __obj.updateDynamic("strokeRect")(strokeRect)
+    val __obj = js.Dynamic.literal(clearRect = clearRect, fillRect = fillRect, strokeRect = strokeRect)
+  
     __obj.asInstanceOf[CanvasRect]
   }
 }

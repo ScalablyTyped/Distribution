@@ -24,11 +24,7 @@ object IRectangle {
     bottom: scala.Int | scala.Double = null,
     right: scala.Int | scala.Double = null
   ): IRectangle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, left = left, top = top, width = width)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRectangle]

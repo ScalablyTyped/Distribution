@@ -30,16 +30,8 @@ object AccessToken {
     toJwt: js.Function1[java.lang.String, js.Any],
     ttl: scala.Double
   ): AccessToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountSid")(accountSid)
-    __obj.updateDynamic("addGrant")(addGrant)
-    __obj.updateDynamic("grants")(grants)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("keySid")(keySid)
-    __obj.updateDynamic("nbf")(nbf)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("toJwt")(toJwt)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(accountSid = accountSid, addGrant = addGrant, grants = grants, identity = identity, keySid = keySid, nbf = nbf, secret = secret, toJwt = toJwt, ttl = ttl)
+  
     __obj.asInstanceOf[AccessToken]
   }
 }

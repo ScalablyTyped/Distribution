@@ -32,12 +32,8 @@ object IResourceManager {
       scala.Unit
     ]
   ): IResourceManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allResourceMaps")(allResourceMaps)
-    __obj.updateDynamic("defaultContext")(defaultContext)
-    __obj.updateDynamic("loadPriFiles")(loadPriFiles)
-    __obj.updateDynamic("mainResourceMap")(mainResourceMap)
-    __obj.updateDynamic("unloadPriFiles")(unloadPriFiles)
+    val __obj = js.Dynamic.literal(allResourceMaps = allResourceMaps, defaultContext = defaultContext, loadPriFiles = loadPriFiles, mainResourceMap = mainResourceMap, unloadPriFiles = unloadPriFiles)
+  
     __obj.asInstanceOf[IResourceManager]
   }
 }

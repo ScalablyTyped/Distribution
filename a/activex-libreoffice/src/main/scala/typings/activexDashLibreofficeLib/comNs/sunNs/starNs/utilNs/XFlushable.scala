@@ -26,13 +26,8 @@ object XFlushable {
     release: js.Function0[scala.Unit],
     removeFlushListener: js.Function1[XFlushListener, scala.Unit]
   ): XFlushable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFlushListener")(addFlushListener)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFlushListener")(removeFlushListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addFlushListener = addFlushListener, flush = flush, queryInterface = queryInterface, release = release, removeFlushListener = removeFlushListener)
+  
     __obj.asInstanceOf[XFlushable]
   }
 }

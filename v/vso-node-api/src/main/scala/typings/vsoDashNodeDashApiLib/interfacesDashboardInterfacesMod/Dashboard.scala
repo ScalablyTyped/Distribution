@@ -56,17 +56,8 @@ object Dashboard {
     url: java.lang.String,
     widgets: js.Array[Widget]
   ): Dashboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("eTag")(eTag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("refreshInterval")(refreshInterval)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("widgets")(widgets)
+    val __obj = js.Dynamic.literal(_links = _links, description = description, eTag = eTag, id = id, name = name, ownerId = ownerId, position = position, refreshInterval = refreshInterval, url = url, widgets = widgets)
+  
     __obj.asInstanceOf[Dashboard]
   }
 }

@@ -13,9 +13,8 @@ trait InspectResource extends js.Object {
 object InspectResource {
   @scala.inline
   def apply(operations: OperationsResource, results: ResultsResource): InspectResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(operations = operations, results = results)
+  
     __obj.asInstanceOf[InspectResource]
   }
 }

@@ -18,9 +18,7 @@ object Anon_NameTypeValue {
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_NameTypeValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameTypeValue]
   }

@@ -36,8 +36,8 @@ object SubscriptionRequest {
     message: java.lang.String = null,
     resource: java.lang.String = null
   ): SubscriptionRequest = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (message != null) __obj.updateDynamic("message")(message)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[SubscriptionRequest]

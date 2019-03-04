@@ -34,18 +34,8 @@ object ModelAnimation {
     stopTime: JulianDate,
     update: Event
   ): ModelAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("removeOnStop")(removeOnStop)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("speedup")(speedup)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopTime")(stopTime)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delay = delay, loop = loop, name = name, removeOnStop = removeOnStop, reverse = reverse, speedup = speedup, start = start, startTime = startTime, stop = stop, stopTime = stopTime, update = update)
+  
     __obj.asInstanceOf[ModelAnimation]
   }
 }

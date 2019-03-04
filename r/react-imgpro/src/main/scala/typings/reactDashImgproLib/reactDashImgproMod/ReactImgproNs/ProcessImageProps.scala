@@ -66,9 +66,7 @@ object ProcessImageProps {
     sepia: js.UndefOr[scala.Boolean] = js.undefined,
     storage: js.UndefOr[scala.Boolean] = js.undefined
   ): ProcessImageProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("onProcessFinish")(onProcessFinish)
+    val __obj = js.Dynamic.literal(image = image, onProcessFinish = onProcessFinish)
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)

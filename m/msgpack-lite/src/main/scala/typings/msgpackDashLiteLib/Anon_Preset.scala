@@ -15,8 +15,8 @@ trait Anon_Preset extends js.Object {
 object Anon_Preset {
   @scala.inline
   def apply(preset: msgpackDashLiteLib.msgpackDashLiteMod.Codec): Anon_Preset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preset")(preset)
+    val __obj = js.Dynamic.literal(preset = preset)
+  
     __obj.asInstanceOf[Anon_Preset]
   }
 }

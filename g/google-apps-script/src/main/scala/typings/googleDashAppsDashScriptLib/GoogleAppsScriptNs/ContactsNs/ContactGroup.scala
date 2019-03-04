@@ -32,17 +32,8 @@ object ContactGroup {
     setGroupName: js.Function1[java.lang.String, scala.Unit],
     setName: js.Function1[java.lang.String, ContactGroup]
   ): ContactGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addContact")(addContact)
-    __obj.updateDynamic("deleteGroup")(deleteGroup)
-    __obj.updateDynamic("getContacts")(getContacts)
-    __obj.updateDynamic("getGroupName")(getGroupName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("isSystemGroup")(isSystemGroup)
-    __obj.updateDynamic("removeContact")(removeContact)
-    __obj.updateDynamic("setGroupName")(setGroupName)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addContact = addContact, deleteGroup = deleteGroup, getContacts = getContacts, getGroupName = getGroupName, getId = getId, getName = getName, isSystemGroup = isSystemGroup, removeContact = removeContact, setGroupName = setGroupName, setName = setName)
+  
     __obj.asInstanceOf[ContactGroup]
   }
 }

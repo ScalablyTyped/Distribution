@@ -28,8 +28,8 @@ object Anon_Auths {
     location: java.lang.String = null,
     reportBuildStatus: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Auths = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("sourceIdentifier")(sourceIdentifier)
+    val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier)
+    __obj.updateDynamic("type")(`type`)
     if (auths != null) __obj.updateDynamic("auths")(auths)
     if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec)
     if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])

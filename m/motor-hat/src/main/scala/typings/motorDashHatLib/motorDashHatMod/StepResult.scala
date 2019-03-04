@@ -27,11 +27,8 @@ trait StepResult extends js.Object {
 object StepResult {
   @scala.inline
   def apply(dir: Direction, duration: scala.Double, retried: scala.Double, steps: scala.Double): StepResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("retried")(retried)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(dir = dir, duration = duration, retried = retried, steps = steps)
+  
     __obj.asInstanceOf[StepResult]
   }
 }

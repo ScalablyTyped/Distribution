@@ -45,16 +45,8 @@ object DisplayMode {
     width: scala.Double,
     widthInNativePixels: scala.Double
   ): DisplayMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightInNativePixels")(heightInNativePixels)
-    __obj.updateDynamic("isNative")(isNative)
-    __obj.updateDynamic("isSelected")(isSelected)
-    __obj.updateDynamic("refreshRate")(refreshRate)
-    __obj.updateDynamic("uiScale")(uiScale)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("widthInNativePixels")(widthInNativePixels)
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, height = height, heightInNativePixels = heightInNativePixels, isNative = isNative, isSelected = isSelected, refreshRate = refreshRate, uiScale = uiScale, width = width, widthInNativePixels = widthInNativePixels)
+  
     __obj.asInstanceOf[DisplayMode]
   }
 }

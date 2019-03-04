@@ -32,8 +32,7 @@ object LayoutComponent {
     options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null,
     passProps: P = null
   ): LayoutComponent[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (options != null) __obj.updateDynamic("options")(options)
     if (passProps != null) __obj.updateDynamic("passProps")(passProps.asInstanceOf[js.Any])

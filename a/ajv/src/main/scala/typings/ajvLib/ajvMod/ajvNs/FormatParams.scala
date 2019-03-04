@@ -12,8 +12,8 @@ trait FormatParams extends ErrorParameters {
 object FormatParams {
   @scala.inline
   def apply(format: java.lang.String): FormatParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[FormatParams]
   }
 }

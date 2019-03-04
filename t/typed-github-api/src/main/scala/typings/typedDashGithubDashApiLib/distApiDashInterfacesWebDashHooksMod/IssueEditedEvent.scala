@@ -18,10 +18,8 @@ object IssueEditedEvent {
     changes: typedDashGithubDashApiLib.Anon_Body,
     issue: typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.Issue
   ): IssueEditedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("issue")(issue)
+    val __obj = js.Dynamic.literal(action = action, changes = changes, issue = issue)
+  
     __obj.asInstanceOf[IssueEditedEvent]
   }
 }

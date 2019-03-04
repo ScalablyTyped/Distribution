@@ -18,9 +18,7 @@ object Anon_Document {
     previousResult: js.Any,
     variables: apolloDashClientLib.coreTypesMod.OperationVariables = null
   ): Anon_Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("previousResult")(previousResult)
+    val __obj = js.Dynamic.literal(document = document, previousResult = previousResult)
     if (variables != null) __obj.updateDynamic("variables")(variables)
     __obj.asInstanceOf[Anon_Document]
   }

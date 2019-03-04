@@ -18,10 +18,8 @@ object MylibraryResource {
     bookshelves: BookshelvesResource,
     readingpositions: ReadingpositionsResource
   ): MylibraryResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("bookshelves")(bookshelves)
-    __obj.updateDynamic("readingpositions")(readingpositions)
+    val __obj = js.Dynamic.literal(annotations = annotations, bookshelves = bookshelves, readingpositions = readingpositions)
+  
     __obj.asInstanceOf[MylibraryResource]
   }
 }

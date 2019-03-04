@@ -38,9 +38,7 @@ object EfsLocationArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): EfsLocationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ec2Config")(ec2Config.asInstanceOf[js.Any])
-    __obj.updateDynamic("efsFileSystemArn")(efsFileSystemArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ec2Config = ec2Config.asInstanceOf[js.Any], efsFileSystemArn = efsFileSystemArn.asInstanceOf[js.Any])
     if (subdirectory != null) __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[EfsLocationArgs]

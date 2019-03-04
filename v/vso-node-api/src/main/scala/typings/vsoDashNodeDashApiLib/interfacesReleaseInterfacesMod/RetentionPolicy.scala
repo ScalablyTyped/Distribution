@@ -12,8 +12,8 @@ trait RetentionPolicy extends js.Object {
 object RetentionPolicy {
   @scala.inline
   def apply(daysToKeep: scala.Double): RetentionPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("daysToKeep")(daysToKeep)
+    val __obj = js.Dynamic.literal(daysToKeep = daysToKeep)
+  
     __obj.asInstanceOf[RetentionPolicy]
   }
 }

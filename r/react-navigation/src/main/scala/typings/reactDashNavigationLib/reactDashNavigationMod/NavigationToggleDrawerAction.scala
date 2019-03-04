@@ -16,7 +16,8 @@ object NavigationToggleDrawerAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/TOGGLE_DRAWER`,
     key: java.lang.String = null
   ): NavigationToggleDrawerAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[NavigationToggleDrawerAction]
   }

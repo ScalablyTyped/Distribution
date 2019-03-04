@@ -81,15 +81,8 @@ object XInputStream {
     release: js.Function0[scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): XInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[XInputStream]
   }
 }

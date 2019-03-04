@@ -13,8 +13,8 @@ trait Recorder extends js.Object {
 object Recorder {
   @scala.inline
   def apply(record: js.Function1[Record, scala.Unit]): Recorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("record")(record)
+    val __obj = js.Dynamic.literal(record = record)
+  
     __obj.asInstanceOf[Recorder]
   }
 }

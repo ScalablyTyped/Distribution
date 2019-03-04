@@ -75,14 +75,8 @@ object XProofreadingIterator {
       scala.Unit
     ]
   ): XProofreadingIterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("checkSentenceAtPosition")(checkSentenceAtPosition)
-    __obj.updateDynamic("isProofreading")(isProofreading)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resetIgnoreRules")(resetIgnoreRules)
-    __obj.updateDynamic("startProofreading")(startProofreading)
+    val __obj = js.Dynamic.literal(acquire = acquire, checkSentenceAtPosition = checkSentenceAtPosition, isProofreading = isProofreading, queryInterface = queryInterface, release = release, resetIgnoreRules = resetIgnoreRules, startProofreading = startProofreading)
+  
     __obj.asInstanceOf[XProofreadingIterator]
   }
 }

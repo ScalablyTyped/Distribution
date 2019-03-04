@@ -16,10 +16,8 @@ trait Anon_Dist extends js.Object {
 object Anon_Dist {
   @scala.inline
   def apply(dist: stdLib.Blob, height: scala.Double, width: scala.Double): Anon_Dist = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dist")(dist)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(dist = dist, height = height, width = width)
+  
     __obj.asInstanceOf[Anon_Dist]
   }
 }

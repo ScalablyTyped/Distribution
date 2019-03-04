@@ -46,13 +46,8 @@ object AffineMatrix2D {
     m11: scala.Double,
     m12: scala.Double
   ): AffineMatrix2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m00")(m00)
-    __obj.updateDynamic("m01")(m01)
-    __obj.updateDynamic("m02")(m02)
-    __obj.updateDynamic("m10")(m10)
-    __obj.updateDynamic("m11")(m11)
-    __obj.updateDynamic("m12")(m12)
+    val __obj = js.Dynamic.literal(m00 = m00, m01 = m01, m02 = m02, m10 = m10, m11 = m11, m12 = m12)
+  
     __obj.asInstanceOf[AffineMatrix2D]
   }
 }

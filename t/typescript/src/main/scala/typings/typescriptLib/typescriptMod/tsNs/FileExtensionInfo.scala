@@ -14,9 +14,7 @@ trait FileExtensionInfo extends js.Object {
 object FileExtensionInfo {
   @scala.inline
   def apply(extension: java.lang.String, isMixedContent: scala.Boolean, scriptKind: ScriptKind = null): FileExtensionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("isMixedContent")(isMixedContent)
+    val __obj = js.Dynamic.literal(extension = extension, isMixedContent = isMixedContent)
     if (scriptKind != null) __obj.updateDynamic("scriptKind")(scriptKind)
     __obj.asInstanceOf[FileExtensionInfo]
   }

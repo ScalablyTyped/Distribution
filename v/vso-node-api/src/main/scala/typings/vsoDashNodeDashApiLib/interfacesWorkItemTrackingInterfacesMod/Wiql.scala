@@ -15,8 +15,8 @@ trait Wiql extends js.Object {
 object Wiql {
   @scala.inline
   def apply(query: java.lang.String): Wiql = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[Wiql]
   }
 }

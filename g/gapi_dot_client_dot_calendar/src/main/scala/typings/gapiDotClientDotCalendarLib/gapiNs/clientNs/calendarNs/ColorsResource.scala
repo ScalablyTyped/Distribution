@@ -18,8 +18,8 @@ object ColorsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Colors]
     ]
   ): ColorsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[ColorsResource]
   }
 }

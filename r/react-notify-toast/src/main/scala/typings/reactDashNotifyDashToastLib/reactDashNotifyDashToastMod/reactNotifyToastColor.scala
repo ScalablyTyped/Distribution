@@ -13,9 +13,8 @@ trait reactNotifyToastColor extends js.Object {
 object reactNotifyToastColor {
   @scala.inline
   def apply(background: java.lang.String, text: java.lang.String): reactNotifyToastColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(background = background, text = text)
+  
     __obj.asInstanceOf[reactNotifyToastColor]
   }
 }

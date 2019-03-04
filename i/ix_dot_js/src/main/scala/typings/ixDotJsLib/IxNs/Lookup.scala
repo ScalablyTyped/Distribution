@@ -20,11 +20,8 @@ object Lookup {
     length: js.Function0[scala.Double],
     toEnumerable: js.Function0[Enumerable[Grouping[TKey, TValue]]]
   ): Lookup[TKey, TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("toEnumerable")(toEnumerable)
+    val __obj = js.Dynamic.literal(get = get, has = has, length = length, toEnumerable = toEnumerable)
+  
     __obj.asInstanceOf[Lookup[TKey, TValue]]
   }
 }

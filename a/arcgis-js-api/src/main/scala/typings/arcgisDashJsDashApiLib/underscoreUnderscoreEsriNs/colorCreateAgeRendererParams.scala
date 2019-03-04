@@ -137,14 +137,7 @@ object colorCreateAgeRendererParams {
     theme: java.lang.String = null,
     unit: java.lang.String = null
   ): colorCreateAgeRendererParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(constructor = constructor, endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, startTime = startTime.asInstanceOf[js.Any], view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)
     if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme)

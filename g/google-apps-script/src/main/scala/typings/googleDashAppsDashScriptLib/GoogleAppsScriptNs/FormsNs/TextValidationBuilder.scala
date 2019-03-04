@@ -48,25 +48,8 @@ object TextValidationBuilder {
     requireTextMatchesPattern: js.Function1[java.lang.String, TextValidationBuilder],
     requireWholeNumber: js.Function0[TextValidationBuilder]
   ): TextValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireNumber")(requireNumber)
-    __obj.updateDynamic("requireNumberBetween")(requireNumberBetween)
-    __obj.updateDynamic("requireNumberEqualTo")(requireNumberEqualTo)
-    __obj.updateDynamic("requireNumberGreaterThan")(requireNumberGreaterThan)
-    __obj.updateDynamic("requireNumberGreaterThanOrEqualTo")(requireNumberGreaterThanOrEqualTo)
-    __obj.updateDynamic("requireNumberLessThan")(requireNumberLessThan)
-    __obj.updateDynamic("requireNumberLessThanOrEqualTo")(requireNumberLessThanOrEqualTo)
-    __obj.updateDynamic("requireNumberNotBetween")(requireNumberNotBetween)
-    __obj.updateDynamic("requireNumberNotEqualTo")(requireNumberNotEqualTo)
-    __obj.updateDynamic("requireTextContainsPattern")(requireTextContainsPattern)
-    __obj.updateDynamic("requireTextDoesNotContainPattern")(requireTextDoesNotContainPattern)
-    __obj.updateDynamic("requireTextDoesNotMatchPattern")(requireTextDoesNotMatchPattern)
-    __obj.updateDynamic("requireTextIsEmail")(requireTextIsEmail)
-    __obj.updateDynamic("requireTextIsUrl")(requireTextIsUrl)
-    __obj.updateDynamic("requireTextLengthGreaterThanOrEqualTo")(requireTextLengthGreaterThanOrEqualTo)
-    __obj.updateDynamic("requireTextLengthLessThanOrEqualTo")(requireTextLengthLessThanOrEqualTo)
-    __obj.updateDynamic("requireTextMatchesPattern")(requireTextMatchesPattern)
-    __obj.updateDynamic("requireWholeNumber")(requireWholeNumber)
+    val __obj = js.Dynamic.literal(requireNumber = requireNumber, requireNumberBetween = requireNumberBetween, requireNumberEqualTo = requireNumberEqualTo, requireNumberGreaterThan = requireNumberGreaterThan, requireNumberGreaterThanOrEqualTo = requireNumberGreaterThanOrEqualTo, requireNumberLessThan = requireNumberLessThan, requireNumberLessThanOrEqualTo = requireNumberLessThanOrEqualTo, requireNumberNotBetween = requireNumberNotBetween, requireNumberNotEqualTo = requireNumberNotEqualTo, requireTextContainsPattern = requireTextContainsPattern, requireTextDoesNotContainPattern = requireTextDoesNotContainPattern, requireTextDoesNotMatchPattern = requireTextDoesNotMatchPattern, requireTextIsEmail = requireTextIsEmail, requireTextIsUrl = requireTextIsUrl, requireTextLengthGreaterThanOrEqualTo = requireTextLengthGreaterThanOrEqualTo, requireTextLengthLessThanOrEqualTo = requireTextLengthLessThanOrEqualTo, requireTextMatchesPattern = requireTextMatchesPattern, requireWholeNumber = requireWholeNumber)
+  
     __obj.asInstanceOf[TextValidationBuilder]
   }
 }

@@ -20,10 +20,7 @@ object Anon_PreviousSizeStyleClass {
     tile: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_PreviousSizeStyleClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("previousSizeStyleClass")(previousSizeStyleClass)
-    __obj.updateDynamic("sizeStyleClass")(sizeStyleClass)
-    __obj.updateDynamic("tile")(tile)
+    val __obj = js.Dynamic.literal(previousSizeStyleClass = previousSizeStyleClass, sizeStyleClass = sizeStyleClass, tile = tile)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PreviousSizeStyleClass]
   }

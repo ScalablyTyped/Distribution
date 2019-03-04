@@ -74,18 +74,8 @@ object XProfileManager {
     setCurrentProfile: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
     shutdownProfile: js.Function0[scala.Double]
   ): XProfileManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentProduct")(CurrentProduct)
-    __obj.updateDynamic("CurrentProfile")(CurrentProfile)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("bootupProfile")(bootupProfile)
-    __obj.updateDynamic("getCurrentProduct")(getCurrentProduct)
-    __obj.updateDynamic("getCurrentProfile")(getCurrentProfile)
-    __obj.updateDynamic("isCurrentProfileLocked")(isCurrentProfileLocked)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentProfile")(setCurrentProfile)
-    __obj.updateDynamic("shutdownProfile")(shutdownProfile)
+    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, acquire = acquire, bootupProfile = bootupProfile, getCurrentProduct = getCurrentProduct, getCurrentProfile = getCurrentProfile, isCurrentProfileLocked = isCurrentProfileLocked, queryInterface = queryInterface, release = release, setCurrentProfile = setCurrentProfile, shutdownProfile = shutdownProfile)
+  
     __obj.asInstanceOf[XProfileManager]
   }
 }

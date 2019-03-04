@@ -34,9 +34,7 @@ object Options {
     visibilityTimeout: scala.Int | scala.Double = null,
     waitTimeSeconds: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleMessage")(handleMessage)
-    __obj.updateDynamic("queueUrl")(queueUrl)
+    val __obj = js.Dynamic.literal(handleMessage = handleMessage, queueUrl = queueUrl)
     if (attributeNames != null) __obj.updateDynamic("attributeNames")(attributeNames)
     if (authenticationErrorTimeout != null) __obj.updateDynamic("authenticationErrorTimeout")(authenticationErrorTimeout.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])

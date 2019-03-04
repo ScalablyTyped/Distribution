@@ -20,11 +20,8 @@ object Anon_FinishTime {
     pluginName: java.lang.String,
     success: scala.Boolean
   ): Anon_FinishTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(finishTime = finishTime, messages = messages, pluginName = pluginName, success = success)
+  
     __obj.asInstanceOf[Anon_FinishTime]
   }
 }

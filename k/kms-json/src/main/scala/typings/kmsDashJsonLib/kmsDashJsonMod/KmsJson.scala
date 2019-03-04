@@ -16,9 +16,8 @@ object KmsJson {
     decrypt: js.Function1[java.lang.String, js.Object],
     encrypt: js.Function1[js.Object, java.lang.String]
   ): KmsJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
+    val __obj = js.Dynamic.literal(decrypt = decrypt, encrypt = encrypt)
+  
     __obj.asInstanceOf[KmsJson]
   }
 }

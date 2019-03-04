@@ -27,9 +27,7 @@ object ReactMotionLoopProps {
       reactLib.reactMod.ReactNs.ReactElement[_]
     ] = null
   ): ReactMotionLoopProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styleFrom")(styleFrom)
-    __obj.updateDynamic("styleTo")(styleTo)
+    val __obj = js.Dynamic.literal(styleFrom = styleFrom, styleTo = styleTo)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[ReactMotionLoopProps]
   }

@@ -13,9 +13,8 @@ trait LoaderResponse extends js.Object {
 object LoaderResponse {
   @scala.inline
   def apply(data: java.lang.String | stdLib.ArrayBuffer, url: java.lang.String): LoaderResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url)
+  
     __obj.asInstanceOf[LoaderResponse]
   }
 }

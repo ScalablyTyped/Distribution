@@ -47,16 +47,7 @@ object ojNBoxNodeSettableProperties {
     xPercentage: scala.Int | scala.Double = null,
     yPercentage: scala.Int | scala.Double = null
   ): ojNBoxNodeSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("secondaryLabel")(secondaryLabel)
-    __obj.updateDynamic("shortDesc")(shortDesc)
-    __obj.updateDynamic("svgClassName")(svgClassName)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, categories = categories, column = column, label = label, row = row, secondaryLabel = secondaryLabel, shortDesc = shortDesc, svgClassName = svgClassName)
     if (color != null) __obj.updateDynamic("color")(color)
     if (groupCategory != null) __obj.updateDynamic("groupCategory")(groupCategory)
     if (icon != null) __obj.updateDynamic("icon")(icon)

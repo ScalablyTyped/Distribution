@@ -12,8 +12,8 @@ trait ServerBroadcastOptions extends js.Object {
 object ServerBroadcastOptions {
   @scala.inline
   def apply(user: js.Any): ServerBroadcastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(user = user)
+  
     __obj.asInstanceOf[ServerBroadcastOptions]
   }
 }

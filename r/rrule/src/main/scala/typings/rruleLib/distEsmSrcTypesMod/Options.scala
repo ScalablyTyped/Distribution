@@ -50,9 +50,7 @@ object Options {
     until: stdLib.Date = null,
     wkst: rruleLib.distEsmSrcWeekdayMod.Weekday | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("freq")(freq)
-    __obj.updateDynamic("interval")(interval)
+    val __obj = js.Dynamic.literal(freq = freq, interval = interval)
     if (byeaster != null) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
     if (byhour != null) __obj.updateDynamic("byhour")(byhour.asInstanceOf[js.Any])
     if (byminute != null) __obj.updateDynamic("byminute")(byminute.asInstanceOf[js.Any])

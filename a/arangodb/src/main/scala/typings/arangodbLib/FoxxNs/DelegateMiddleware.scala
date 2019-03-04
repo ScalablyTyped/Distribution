@@ -12,8 +12,8 @@ trait DelegateMiddleware extends js.Object {
 object DelegateMiddleware {
   @scala.inline
   def apply(register: js.Function1[Endpoint, SimpleMiddleware]): DelegateMiddleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(register = register)
+  
     __obj.asInstanceOf[DelegateMiddleware]
   }
 }

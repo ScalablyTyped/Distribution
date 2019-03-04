@@ -12,8 +12,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(newPath: java.lang.String): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newPath")(newPath)
+    val __obj = js.Dynamic.literal(newPath = newPath)
+  
     __obj.asInstanceOf[IOptions]
   }
 }

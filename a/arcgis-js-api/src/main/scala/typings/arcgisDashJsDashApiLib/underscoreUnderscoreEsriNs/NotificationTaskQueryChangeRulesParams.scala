@@ -44,14 +44,8 @@ object NotificationTaskQueryChangeRulesParams {
     searchType: java.lang.String,
     user: java.lang.String
   ): NotificationTaskQueryChangeRulesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("searchType")(searchType)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, searchType = searchType, user = user)
+  
     __obj.asInstanceOf[NotificationTaskQueryChangeRulesParams]
   }
 }

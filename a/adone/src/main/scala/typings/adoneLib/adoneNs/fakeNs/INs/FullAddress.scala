@@ -30,16 +30,8 @@ object FullAddress {
     streetD: java.lang.String,
     zipcode: java.lang.String
   ): FullAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("county")(county)
-    __obj.updateDynamic("geo")(geo)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("streetA")(streetA)
-    __obj.updateDynamic("streetB")(streetB)
-    __obj.updateDynamic("streetC")(streetC)
-    __obj.updateDynamic("streetD")(streetD)
-    __obj.updateDynamic("zipcode")(zipcode)
+    val __obj = js.Dynamic.literal(city = city, county = county, geo = geo, state = state, streetA = streetA, streetB = streetB, streetC = streetC, streetD = streetD, zipcode = zipcode)
+  
     __obj.asInstanceOf[FullAddress]
   }
 }

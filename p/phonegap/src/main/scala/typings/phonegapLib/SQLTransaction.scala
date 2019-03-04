@@ -12,8 +12,8 @@ trait SQLTransaction extends js.Object {
 object SQLTransaction {
   @scala.inline
   def apply(executeSql: js.Function1[java.lang.String, SQLResultSet]): SQLTransaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executeSql")(executeSql)
+    val __obj = js.Dynamic.literal(executeSql = executeSql)
+  
     __obj.asInstanceOf[SQLTransaction]
   }
 }

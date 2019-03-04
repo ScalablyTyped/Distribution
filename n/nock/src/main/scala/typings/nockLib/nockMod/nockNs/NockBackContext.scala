@@ -14,10 +14,8 @@ trait NockBackContext extends js.Object {
 object NockBackContext {
   @scala.inline
   def apply(assertScopesFinished: js.Function0[scala.Unit], isLoaded: scala.Boolean, scopes: js.Array[Scope]): NockBackContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assertScopesFinished")(assertScopesFinished)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(assertScopesFinished = assertScopesFinished, isLoaded = isLoaded, scopes = scopes)
+  
     __obj.asInstanceOf[NockBackContext]
   }
 }

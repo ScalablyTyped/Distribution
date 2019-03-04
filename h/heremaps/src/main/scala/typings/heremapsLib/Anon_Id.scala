@@ -28,15 +28,8 @@ object Anon_Id {
     shape: js.Array[java.lang.String],
     travelTime: scala.Double
   ): Anon_Id = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instruction")(instruction)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("note")(note)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("travelTime")(travelTime)
+    val __obj = js.Dynamic.literal(_type = _type, id = id, instruction = instruction, length = length, note = note, position = position, shape = shape, travelTime = travelTime)
+  
     __obj.asInstanceOf[Anon_Id]
   }
 }

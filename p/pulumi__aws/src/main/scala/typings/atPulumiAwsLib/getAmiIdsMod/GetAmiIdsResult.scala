@@ -16,9 +16,8 @@ trait GetAmiIdsResult extends js.Object {
 object GetAmiIdsResult {
   @scala.inline
   def apply(id: java.lang.String, ids: js.Array[java.lang.String]): GetAmiIdsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ids")(ids)
+    val __obj = js.Dynamic.literal(id = id, ids = ids)
+  
     __obj.asInstanceOf[GetAmiIdsResult]
   }
 }

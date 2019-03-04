@@ -20,11 +20,8 @@ object SNSEventRecord {
     EventVersion: java.lang.String,
     Sns: SNSMessage
   ): SNSEventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventSource")(EventSource)
-    __obj.updateDynamic("EventSubscriptionArn")(EventSubscriptionArn)
-    __obj.updateDynamic("EventVersion")(EventVersion)
-    __obj.updateDynamic("Sns")(Sns)
+    val __obj = js.Dynamic.literal(EventSource = EventSource, EventSubscriptionArn = EventSubscriptionArn, EventVersion = EventVersion, Sns = Sns)
+  
     __obj.asInstanceOf[SNSEventRecord]
   }
 }

@@ -30,8 +30,7 @@ object SubscriptionProps {
     shouldResubscribe: js.Any = null,
     variables: TVariables = null
   ): SubscriptionProps[TData, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(subscription = subscription)
     if (children != null) __obj.updateDynamic("children")(children)
     if (client != null) __obj.updateDynamic("client")(client)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)

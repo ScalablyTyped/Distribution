@@ -22,12 +22,8 @@ object StubbedStorageArea {
     remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
     set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
   ): StubbedStorageArea = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getBytesInUse")(getBytesInUse)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, getBytesInUse = getBytesInUse, remove = remove, set = set)
+  
     __obj.asInstanceOf[StubbedStorageArea]
   }
 }

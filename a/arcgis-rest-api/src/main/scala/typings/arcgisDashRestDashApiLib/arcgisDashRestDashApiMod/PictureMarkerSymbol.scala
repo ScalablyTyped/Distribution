@@ -32,7 +32,8 @@ object PictureMarkerSymbol {
     xoffset: scala.Int | scala.Double = null,
     yoffset: scala.Int | scala.Double = null
   ): PictureMarkerSymbol = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

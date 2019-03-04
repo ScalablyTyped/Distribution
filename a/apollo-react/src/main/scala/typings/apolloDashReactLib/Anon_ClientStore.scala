@@ -20,9 +20,8 @@ object Anon_ClientStore {
     ],
     store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]
   ): Anon_ClientStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(client = client, store = store)
+  
     __obj.asInstanceOf[Anon_ClientStore]
   }
 }

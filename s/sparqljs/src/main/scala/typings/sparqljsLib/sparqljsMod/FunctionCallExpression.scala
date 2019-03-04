@@ -22,9 +22,8 @@ object FunctionCallExpression {
     `type`: sparqljsLib.sparqljsLibStrings.functionCall,
     distinct: js.UndefOr[scala.Boolean] = js.undefined
   ): FunctionCallExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("function")(function)
+    val __obj = js.Dynamic.literal(args = args, function = function)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
     __obj.asInstanceOf[FunctionCallExpression]
   }

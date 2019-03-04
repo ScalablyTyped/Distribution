@@ -22,11 +22,7 @@ object PluralIdentifyingRootFieldConfig {
     resolveSingleInput: js.Function3[js.Any, js.Any, graphqlLib.typeDefinitionMod.GraphQLResolveInfo, js.Any],
     description: java.lang.String = null
   ): PluralIdentifyingRootFieldConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argName")(argName)
-    __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
-    __obj.updateDynamic("resolveSingleInput")(resolveSingleInput)
+    val __obj = js.Dynamic.literal(argName = argName, inputType = inputType.asInstanceOf[js.Any], outputType = outputType.asInstanceOf[js.Any], resolveSingleInput = resolveSingleInput)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[PluralIdentifyingRootFieldConfig]
   }

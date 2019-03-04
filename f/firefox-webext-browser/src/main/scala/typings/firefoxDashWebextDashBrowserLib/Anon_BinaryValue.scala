@@ -19,8 +19,7 @@ trait Anon_BinaryValue extends js.Object {
 object Anon_BinaryValue {
   @scala.inline
   def apply(name: java.lang.String, binaryValue: js.Array[scala.Double] = null, value: java.lang.String = null): Anon_BinaryValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (binaryValue != null) __obj.updateDynamic("binaryValue")(binaryValue)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_BinaryValue]

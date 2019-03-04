@@ -45,10 +45,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRouter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(project = project, region = region, router = router)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

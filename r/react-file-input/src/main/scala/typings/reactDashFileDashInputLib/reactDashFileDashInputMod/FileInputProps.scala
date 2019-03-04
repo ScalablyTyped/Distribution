@@ -24,12 +24,7 @@ object FileInputProps {
     placeholder: java.lang.String,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): FileInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("placeholder")(placeholder)
+    val __obj = js.Dynamic.literal(accept = accept, className = className, name = name, onChange = onChange, placeholder = placeholder)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[FileInputProps]
   }

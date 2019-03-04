@@ -14,10 +14,8 @@ trait ASPxClientFloatingActionButtonTextVisibilityModeStatic extends js.Object {
 object ASPxClientFloatingActionButtonTextVisibilityModeStatic {
   @scala.inline
   def apply(Always: java.lang.String, Hidden: java.lang.String, OnHover: java.lang.String): ASPxClientFloatingActionButtonTextVisibilityModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Always")(Always)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("OnHover")(OnHover)
+    val __obj = js.Dynamic.literal(Always = Always, Hidden = Hidden, OnHover = OnHover)
+  
     __obj.asInstanceOf[ASPxClientFloatingActionButtonTextVisibilityModeStatic]
   }
 }

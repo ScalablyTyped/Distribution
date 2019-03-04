@@ -20,8 +20,8 @@ object EventTriggerCondition {
     `type`: java.lang.String,
     selfCallback: js.UndefOr[scala.Boolean] = js.undefined
   ): EventTriggerCondition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(selfCallback)) __obj.updateDynamic("selfCallback")(selfCallback)
     __obj.asInstanceOf[EventTriggerCondition]
   }

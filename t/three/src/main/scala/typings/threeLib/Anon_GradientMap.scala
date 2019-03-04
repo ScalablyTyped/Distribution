@@ -12,8 +12,8 @@ trait Anon_GradientMap extends js.Object {
 object Anon_GradientMap {
   @scala.inline
   def apply(gradientMap: threeLib.threeDashCoreMod.IUniform): Anon_GradientMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gradientMap")(gradientMap)
+    val __obj = js.Dynamic.literal(gradientMap = gradientMap)
+  
     __obj.asInstanceOf[Anon_GradientMap]
   }
 }

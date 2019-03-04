@@ -20,12 +20,8 @@ object IAbstractUnitJson {
     containmentName: java.lang.String,
     contents: IAbstractElementJson
   ): IAbstractUnitJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$ID")($ID)
-    __obj.updateDynamic("$Type")($Type)
-    __obj.updateDynamic("containerId")(containerId)
-    __obj.updateDynamic("containmentName")(containmentName)
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type, containerId = containerId, containmentName = containmentName, contents = contents)
+  
     __obj.asInstanceOf[IAbstractUnitJson]
   }
 }

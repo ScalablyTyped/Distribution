@@ -24,13 +24,8 @@ object Moon {
     show: scala.Boolean,
     textureUrl: java.lang.String
   ): Moon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("ellipsoid")(ellipsoid)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("onlySunLighting")(onlySunLighting)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("textureUrl")(textureUrl)
+    val __obj = js.Dynamic.literal(destroy = destroy, ellipsoid = ellipsoid, isDestroyed = isDestroyed, onlySunLighting = onlySunLighting, show = show, textureUrl = textureUrl)
+  
     __obj.asInstanceOf[Moon]
   }
 }

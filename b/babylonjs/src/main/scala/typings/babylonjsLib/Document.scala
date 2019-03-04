@@ -38,20 +38,8 @@ object Document {
     webkitIsFullScreen: scala.Boolean,
     webkitPointerLockElement: stdLib.HTMLElement
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exitPointerLock")(exitPointerLock)
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("mozCancelFullScreen")(mozCancelFullScreen)
-    __obj.updateDynamic("mozFullScreen")(mozFullScreen)
-    __obj.updateDynamic("mozPointerLockElement")(mozPointerLockElement)
-    __obj.updateDynamic("msCancelFullScreen")(msCancelFullScreen)
-    __obj.updateDynamic("msIsFullScreen")(msIsFullScreen)
-    __obj.updateDynamic("msPointerLockElement")(msPointerLockElement)
-    __obj.updateDynamic("pointerLockElement")(pointerLockElement)
-    __obj.updateDynamic("requestPointerLock")(requestPointerLock)
-    __obj.updateDynamic("webkitCancelFullScreen")(webkitCancelFullScreen)
-    __obj.updateDynamic("webkitIsFullScreen")(webkitIsFullScreen)
-    __obj.updateDynamic("webkitPointerLockElement")(webkitPointerLockElement)
+    val __obj = js.Dynamic.literal(exitPointerLock = exitPointerLock, fullscreen = fullscreen, mozCancelFullScreen = mozCancelFullScreen, mozFullScreen = mozFullScreen, mozPointerLockElement = mozPointerLockElement, msCancelFullScreen = msCancelFullScreen, msIsFullScreen = msIsFullScreen, msPointerLockElement = msPointerLockElement, pointerLockElement = pointerLockElement, requestPointerLock = requestPointerLock, webkitCancelFullScreen = webkitCancelFullScreen, webkitIsFullScreen = webkitIsFullScreen, webkitPointerLockElement = webkitPointerLockElement)
+  
     __obj.asInstanceOf[Document]
   }
 }

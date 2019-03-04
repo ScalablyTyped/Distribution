@@ -33,8 +33,7 @@ object RegularShapeOptions {
     snapToPixel: js.UndefOr[scala.Boolean] = js.undefined,
     stroke: openlayersLib.openlayersMod.styleNs.Stroke = null
   ): RegularShapeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

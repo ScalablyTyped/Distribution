@@ -20,10 +20,7 @@ object Credentials {
     grant_type: java.lang.String,
     scope: java.lang.String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("grant_type")(grant_type)
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, grant_type = grant_type)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[Credentials]
   }

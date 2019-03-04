@@ -27,11 +27,8 @@ trait DeleteSubscriberRequest extends js.Object {
 object DeleteSubscriberRequest {
   @scala.inline
   def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification, Subscriber: Subscriber): DeleteSubscriberRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("BudgetName")(BudgetName)
-    __obj.updateDynamic("Notification")(Notification)
-    __obj.updateDynamic("Subscriber")(Subscriber)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName, Notification = Notification, Subscriber = Subscriber)
+  
     __obj.asInstanceOf[DeleteSubscriberRequest]
   }
 }

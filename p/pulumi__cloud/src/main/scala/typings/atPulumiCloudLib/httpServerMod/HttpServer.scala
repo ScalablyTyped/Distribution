@@ -12,8 +12,8 @@ trait HttpServer extends js.Object {
 object HttpServer {
   @scala.inline
   def apply(url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]): HttpServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[HttpServer]
   }
 }

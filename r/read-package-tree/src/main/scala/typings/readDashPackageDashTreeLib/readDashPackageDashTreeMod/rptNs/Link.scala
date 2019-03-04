@@ -25,14 +25,8 @@ object Link {
     error: stdLib.Error = null,
     parent: Node = null
   ): Link = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isLink")(isLink)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("realpath")(realpath)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(children = children, id = id, isLink = isLink, name = name, path = path, realpath = realpath, target = target)
+    __obj.updateDynamic("package")(`package`)
     if (error != null) __obj.updateDynamic("error")(error)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Link]

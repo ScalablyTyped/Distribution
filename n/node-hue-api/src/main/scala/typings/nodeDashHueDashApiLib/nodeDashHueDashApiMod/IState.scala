@@ -20,11 +20,8 @@ object IState {
     lights: org.scalablytyped.runtime.StringDictionary[ILight],
     schedules: org.scalablytyped.runtime.StringDictionary[ISchedule]
   ): IState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("lights")(lights)
-    __obj.updateDynamic("schedules")(schedules)
+    val __obj = js.Dynamic.literal(config = config, groups = groups, lights = lights, schedules = schedules)
+  
     __obj.asInstanceOf[IState]
   }
 }

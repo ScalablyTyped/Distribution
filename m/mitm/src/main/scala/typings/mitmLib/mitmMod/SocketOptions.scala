@@ -24,8 +24,7 @@ object SocketOptions {
     localAddress: java.lang.String = null,
     localPort: java.lang.String = null
   ): SocketOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host)

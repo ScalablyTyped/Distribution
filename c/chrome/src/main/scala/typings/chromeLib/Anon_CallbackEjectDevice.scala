@@ -44,12 +44,8 @@ object Anon_CallbackEjectDevice {
     onAttached: chromeLib.chromeNs.systemNs.storageNs.SystemStorageAttachedEvent,
     onDetached: chromeLib.chromeNs.systemNs.storageNs.SystemStorageDetachedEvent
   ): Anon_CallbackEjectDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ejectDevice")(ejectDevice)
-    __obj.updateDynamic("getAvailableCapacity")(getAvailableCapacity)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("onAttached")(onAttached)
-    __obj.updateDynamic("onDetached")(onDetached)
+    val __obj = js.Dynamic.literal(ejectDevice = ejectDevice, getAvailableCapacity = getAvailableCapacity, getInfo = getInfo, onAttached = onAttached, onDetached = onDetached)
+  
     __obj.asInstanceOf[Anon_CallbackEjectDevice]
   }
 }

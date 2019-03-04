@@ -52,15 +52,8 @@ object TabtabEnv {
     prev: java.lang.String,
     words: scala.Double
   ): TabtabEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("lastPartial")(lastPartial)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("partial")(partial)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(complete = complete, last = last, lastPartial = lastPartial, line = line, partial = partial, point = point, prev = prev, words = words)
+  
     __obj.asInstanceOf[TabtabEnv]
   }
 }

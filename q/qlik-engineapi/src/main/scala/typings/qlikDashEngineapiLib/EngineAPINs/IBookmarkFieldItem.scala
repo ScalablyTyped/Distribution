@@ -62,14 +62,8 @@ object IBookmarkFieldItem {
     qSelectInfo: ISelectInfo,
     qValues: js.Array[IFieldValue]
   ): IBookmarkFieldItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAndMode")(qAndMode)
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qExcludedValues")(qExcludedValues)
-    __obj.updateDynamic("qLocked")(qLocked)
-    __obj.updateDynamic("qOneAndOnlyOne")(qOneAndOnlyOne)
-    __obj.updateDynamic("qSelectInfo")(qSelectInfo)
-    __obj.updateDynamic("qValues")(qValues)
+    val __obj = js.Dynamic.literal(qAndMode = qAndMode, qDef = qDef, qExcludedValues = qExcludedValues, qLocked = qLocked, qOneAndOnlyOne = qOneAndOnlyOne, qSelectInfo = qSelectInfo, qValues = qValues)
+  
     __obj.asInstanceOf[IBookmarkFieldItem]
   }
 }

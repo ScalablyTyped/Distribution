@@ -20,9 +20,7 @@ object Anon_Dir1 {
     dir2: java.lang.String = null,
     list2: java.lang.String = null
   ): Anon_Dir1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir1")(dir1)
-    __obj.updateDynamic("list1")(list1)
+    val __obj = js.Dynamic.literal(dir1 = dir1, list1 = list1)
     if (dir2 != null) __obj.updateDynamic("dir2")(dir2)
     if (list2 != null) __obj.updateDynamic("list2")(list2)
     __obj.asInstanceOf[Anon_Dir1]

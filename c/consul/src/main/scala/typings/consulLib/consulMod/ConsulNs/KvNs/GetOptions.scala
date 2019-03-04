@@ -33,8 +33,7 @@ object GetOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): GetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)

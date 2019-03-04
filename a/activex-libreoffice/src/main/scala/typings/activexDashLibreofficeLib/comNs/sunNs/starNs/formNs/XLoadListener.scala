@@ -58,16 +58,8 @@ object XLoadListener {
     unloaded: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     unloading: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XLoadListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reloaded")(reloaded)
-    __obj.updateDynamic("reloading")(reloading)
-    __obj.updateDynamic("unloaded")(unloaded)
-    __obj.updateDynamic("unloading")(unloading)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, loaded = loaded, queryInterface = queryInterface, release = release, reloaded = reloaded, reloading = reloading, unloaded = unloaded, unloading = unloading)
+  
     __obj.asInstanceOf[XLoadListener]
   }
 }

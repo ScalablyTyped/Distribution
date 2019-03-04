@@ -32,15 +32,8 @@ object Currency2 {
     Symbol: java.lang.String,
     UsedInCompatibleFormatCodes: scala.Boolean
   ): Currency2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BankSymbol")(BankSymbol)
-    __obj.updateDynamic("DecimalPlaces")(DecimalPlaces)
-    __obj.updateDynamic("Default")(Default)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LegacyOnly")(LegacyOnly)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Symbol")(Symbol)
-    __obj.updateDynamic("UsedInCompatibleFormatCodes")(UsedInCompatibleFormatCodes)
+    val __obj = js.Dynamic.literal(BankSymbol = BankSymbol, DecimalPlaces = DecimalPlaces, Default = Default, ID = ID, LegacyOnly = LegacyOnly, Name = Name, Symbol = Symbol, UsedInCompatibleFormatCodes = UsedInCompatibleFormatCodes)
+  
     __obj.asInstanceOf[Currency2]
   }
 }

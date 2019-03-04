@@ -30,12 +30,7 @@ object Anon_IdKinesisFirehose {
     parallelism: Anon_Count = null,
     processingConfiguration: Anon_LambdaAnonResourceArn = null
   ): Anon_IdKinesisFirehose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("namePrefix")(namePrefix)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("startingPositionConfigurations")(startingPositionConfigurations)
-    __obj.updateDynamic("streamNames")(streamNames)
+    val __obj = js.Dynamic.literal(id = id, namePrefix = namePrefix, schema = schema, startingPositionConfigurations = startingPositionConfigurations, streamNames = streamNames)
     if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose)
     if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream)
     if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism)

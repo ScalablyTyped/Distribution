@@ -54,26 +54,8 @@ object ASPxClientReportParametersPanel {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientReportParametersPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("AssignParameter")(AssignParameter)
-    __obj.updateDynamic("AssignParameters")(AssignParameters)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetEditorByParameterName")(GetEditorByParameterName)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParameterNames")(GetParameterNames)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, AssignParameter = AssignParameter, AssignParameters = AssignParameters, GetClientVisible = GetClientVisible, GetEditorByParameterName = GetEditorByParameterName, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParameterNames = GetParameterNames, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientReportParametersPanel]
   }
 }

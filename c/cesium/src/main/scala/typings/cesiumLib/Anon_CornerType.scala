@@ -28,9 +28,7 @@ object Anon_CornerType {
     height: scala.Int | scala.Double = null,
     vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
   ): Anon_CornerType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(positions = positions, width = width)
     if (cornerType != null) __obj.updateDynamic("cornerType")(cornerType)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])

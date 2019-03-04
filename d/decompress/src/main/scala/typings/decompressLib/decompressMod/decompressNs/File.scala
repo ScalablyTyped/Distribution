@@ -22,11 +22,8 @@ object File {
     path: java.lang.String,
     `type`: java.lang.String
   ): File = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(data = data, mode = mode, mtime = mtime, path = path)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[File]
   }
 }

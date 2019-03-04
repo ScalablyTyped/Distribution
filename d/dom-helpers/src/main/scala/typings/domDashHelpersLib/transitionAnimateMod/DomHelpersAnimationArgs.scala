@@ -22,9 +22,7 @@ object DomHelpersAnimationArgs {
     duration: scala.Int | scala.Double = null,
     easing: js.UndefOr[scala.Boolean] = js.undefined
   ): DomHelpersAnimationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(element = element, properties = properties)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(easing)) __obj.updateDynamic("easing")(easing)

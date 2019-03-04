@@ -132,30 +132,8 @@ object XFormsUIHelper1 {
       scala.Unit
     ]
   ): XFormsUIHelper1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneBindingAsGhost")(cloneBindingAsGhost)
-    __obj.updateDynamic("createAttribute")(createAttribute)
-    __obj.updateDynamic("createElement")(createElement)
-    __obj.updateDynamic("getBindingForNode")(getBindingForNode)
-    __obj.updateDynamic("getBindingName")(getBindingName)
-    __obj.updateDynamic("getDefaultBindingExpressionForNode")(getDefaultBindingExpressionForNode)
-    __obj.updateDynamic("getDefaultServiceNameForNode")(getDefaultServiceNameForNode)
-    __obj.updateDynamic("getNodeDisplayName")(getNodeDisplayName)
-    __obj.updateDynamic("getNodeName")(getNodeName)
-    __obj.updateDynamic("getResultForExpression")(getResultForExpression)
-    __obj.updateDynamic("getSubmissionName")(getSubmissionName)
-    __obj.updateDynamic("isValidPrefixName")(isValidPrefixName)
-    __obj.updateDynamic("isValidXMLName")(isValidXMLName)
-    __obj.updateDynamic("newInstance")(newInstance)
-    __obj.updateDynamic("newModel")(newModel)
-    __obj.updateDynamic("removeBindingForNode")(removeBindingForNode)
-    __obj.updateDynamic("removeBindingIfUseless")(removeBindingIfUseless)
-    __obj.updateDynamic("removeInstance")(removeInstance)
-    __obj.updateDynamic("removeModel")(removeModel)
-    __obj.updateDynamic("renameInstance")(renameInstance)
-    __obj.updateDynamic("renameModel")(renameModel)
-    __obj.updateDynamic("renameNode")(renameNode)
-    __obj.updateDynamic("setNodeValue")(setNodeValue)
+    val __obj = js.Dynamic.literal(cloneBindingAsGhost = cloneBindingAsGhost, createAttribute = createAttribute, createElement = createElement, getBindingForNode = getBindingForNode, getBindingName = getBindingName, getDefaultBindingExpressionForNode = getDefaultBindingExpressionForNode, getDefaultServiceNameForNode = getDefaultServiceNameForNode, getNodeDisplayName = getNodeDisplayName, getNodeName = getNodeName, getResultForExpression = getResultForExpression, getSubmissionName = getSubmissionName, isValidPrefixName = isValidPrefixName, isValidXMLName = isValidXMLName, newInstance = newInstance, newModel = newModel, removeBindingForNode = removeBindingForNode, removeBindingIfUseless = removeBindingIfUseless, removeInstance = removeInstance, removeModel = removeModel, renameInstance = renameInstance, renameModel = renameModel, renameNode = renameNode, setNodeValue = setNodeValue)
+  
     __obj.asInstanceOf[XFormsUIHelper1]
   }
 }

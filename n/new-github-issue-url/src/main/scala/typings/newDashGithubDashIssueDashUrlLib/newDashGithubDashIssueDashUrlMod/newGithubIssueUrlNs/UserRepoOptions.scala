@@ -29,9 +29,7 @@ object UserRepoOptions {
     template: java.lang.String = null,
     title: java.lang.String = null
   ): UserRepoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repo")(repo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(repo = repo, user = user)
     if (assignee != null) __obj.updateDynamic("assignee")(assignee)
     if (body != null) __obj.updateDynamic("body")(body)
     if (labels != null) __obj.updateDynamic("labels")(labels)

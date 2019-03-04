@@ -20,11 +20,8 @@ object PaletteColor {
     light: java.lang.String,
     main: java.lang.String
   ): PaletteColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contrastText")(contrastText)
-    __obj.updateDynamic("dark")(dark)
-    __obj.updateDynamic("light")(light)
-    __obj.updateDynamic("main")(main)
+    val __obj = js.Dynamic.literal(contrastText = contrastText, dark = dark, light = light, main = main)
+  
     __obj.asInstanceOf[PaletteColor]
   }
 }

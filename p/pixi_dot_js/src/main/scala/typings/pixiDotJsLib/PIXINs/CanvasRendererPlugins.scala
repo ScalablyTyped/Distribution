@@ -17,11 +17,8 @@ object CanvasRendererPlugins {
     interaction: pixiDotJsLib.PIXINs.interactionNs.InteractionManager,
     prepare: pixiDotJsLib.PIXINs.prepareNs.CanvasPrepare
   ): CanvasRendererPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessibility")(accessibility)
-    __obj.updateDynamic("extract")(extract)
-    __obj.updateDynamic("interaction")(interaction)
-    __obj.updateDynamic("prepare")(prepare)
+    val __obj = js.Dynamic.literal(accessibility = accessibility, extract = extract, interaction = interaction, prepare = prepare)
+  
     __obj.asInstanceOf[CanvasRendererPlugins]
   }
 }

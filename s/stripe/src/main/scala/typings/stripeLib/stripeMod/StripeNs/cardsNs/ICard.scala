@@ -76,16 +76,8 @@ object ICard {
     recipient: java.lang.String | stripeLib.stripeMod.StripeNs.recipientsNs.IRecipient = null,
     tokenization_method: stripeLib.stripeLibStrings.apple_pay | stripeLib.stripeLibStrings.android_pay = null
   ): ICard = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("cvc_check")(cvc_check.asInstanceOf[js.Any])
-    __obj.updateDynamic("exp_month")(exp_month)
-    __obj.updateDynamic("exp_year")(exp_year)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("funding")(funding.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last4")(last4)
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country, cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding.asInstanceOf[js.Any], id = id, last4 = last4)
+    __obj.updateDynamic("object")(`object`)
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (address_city != null) __obj.updateDynamic("address_city")(address_city)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)

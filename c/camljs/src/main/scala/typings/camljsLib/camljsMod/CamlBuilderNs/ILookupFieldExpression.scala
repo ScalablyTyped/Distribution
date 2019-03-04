@@ -30,13 +30,8 @@ object ILookupFieldExpression {
     ValueAsNumber: js.Function0[INumberFieldExpression],
     ValueAsText: js.Function0[ITextFieldExpression]
   ): ILookupFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("ValueAsBoolean")(ValueAsBoolean)
-    __obj.updateDynamic("ValueAsDate")(ValueAsDate)
-    __obj.updateDynamic("ValueAsDateTime")(ValueAsDateTime)
-    __obj.updateDynamic("ValueAsNumber")(ValueAsNumber)
-    __obj.updateDynamic("ValueAsText")(ValueAsText)
+    val __obj = js.Dynamic.literal(Id = Id, ValueAsBoolean = ValueAsBoolean, ValueAsDate = ValueAsDate, ValueAsDateTime = ValueAsDateTime, ValueAsNumber = ValueAsNumber, ValueAsText = ValueAsText)
+  
     __obj.asInstanceOf[ILookupFieldExpression]
   }
 }

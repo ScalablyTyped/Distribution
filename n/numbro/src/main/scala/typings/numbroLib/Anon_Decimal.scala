@@ -13,9 +13,8 @@ trait Anon_Decimal extends js.Object {
 object Anon_Decimal {
   @scala.inline
   def apply(decimal: java.lang.String, thousands: java.lang.String): Anon_Decimal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decimal")(decimal)
-    __obj.updateDynamic("thousands")(thousands)
+    val __obj = js.Dynamic.literal(decimal = decimal, thousands = thousands)
+  
     __obj.asInstanceOf[Anon_Decimal]
   }
 }

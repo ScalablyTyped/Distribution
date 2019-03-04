@@ -22,12 +22,8 @@ object Anon_Duration {
     tempFilePath: java.lang.String,
     width: scala.Double
   ): Anon_Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("tempFilePath")(tempFilePath)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(duration = duration, height = height, size = size, tempFilePath = tempFilePath, width = width)
+  
     __obj.asInstanceOf[Anon_Duration]
   }
 }

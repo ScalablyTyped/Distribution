@@ -22,12 +22,8 @@ object WikidataMainSnak {
     property: java.lang.String,
     snaktype: java.lang.String
   ): WikidataMainSnak = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datatype")(datatype)
-    __obj.updateDynamic("datavalue")(datavalue.asInstanceOf[js.Any])
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("snaktype")(snaktype)
+    val __obj = js.Dynamic.literal(datatype = datatype, datavalue = datavalue.asInstanceOf[js.Any], hash = hash, property = property, snaktype = snaktype)
+  
     __obj.asInstanceOf[WikidataMainSnak]
   }
 }

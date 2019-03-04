@@ -25,13 +25,8 @@ object CreateDiffOptions {
     strict: scala.Boolean,
     tolerance: scala.Double
   ): CreateDiffOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("diff")(diff)
-    __obj.updateDynamic("highlightColor")(highlightColor)
-    __obj.updateDynamic("reference")(reference)
-    __obj.updateDynamic("strict")(strict)
-    __obj.updateDynamic("tolerance")(tolerance)
+    val __obj = js.Dynamic.literal(current = current, diff = diff, highlightColor = highlightColor, reference = reference, strict = strict, tolerance = tolerance)
+  
     __obj.asInstanceOf[CreateDiffOptions]
   }
 }

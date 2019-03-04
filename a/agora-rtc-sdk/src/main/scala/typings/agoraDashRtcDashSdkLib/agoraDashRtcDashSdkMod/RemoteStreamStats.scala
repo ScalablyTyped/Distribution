@@ -40,16 +40,7 @@ object RemoteStreamStats {
     videoReceivedResolutionHeight: java.lang.String = null,
     videoReceivedResolutionWidth: java.lang.String = null
   ): RemoteStreamStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioReceiveBytes")(audioReceiveBytes)
-    __obj.updateDynamic("audioReceivePackets")(audioReceivePackets)
-    __obj.updateDynamic("audioReceivePacketsLost")(audioReceivePacketsLost)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("videoReceiveBytes")(videoReceiveBytes)
-    __obj.updateDynamic("videoReceivePackets")(videoReceivePackets)
-    __obj.updateDynamic("videoReceivePacketsLost")(videoReceivePacketsLost)
+    val __obj = js.Dynamic.literal(audioReceiveBytes = audioReceiveBytes, audioReceivePackets = audioReceivePackets, audioReceivePacketsLost = audioReceivePacketsLost, duration = duration, startTime = startTime, timestamp = timestamp, videoReceiveBytes = videoReceiveBytes, videoReceivePackets = videoReceivePackets, videoReceivePacketsLost = videoReceivePacketsLost)
     if (videoReceiveBandwidth != null) __obj.updateDynamic("videoReceiveBandwidth")(videoReceiveBandwidth)
     if (videoReceiveDecodeFrameRate != null) __obj.updateDynamic("videoReceiveDecodeFrameRate")(videoReceiveDecodeFrameRate)
     if (videoReceiveFrameRate != null) __obj.updateDynamic("videoReceiveFrameRate")(videoReceiveFrameRate)

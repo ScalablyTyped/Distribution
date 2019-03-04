@@ -32,17 +32,8 @@ object QuickLRU {
     size: scala.Double,
     values: js.Function0[stdLib.Iterable[V]]
   ): QuickLRU[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, has = has, iterator = iterator, keys = keys, peek = peek, set = set, size = size, values = values)
+  
     __obj.asInstanceOf[QuickLRU[K, V]]
   }
 }

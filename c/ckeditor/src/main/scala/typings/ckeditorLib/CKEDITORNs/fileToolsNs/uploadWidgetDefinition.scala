@@ -74,20 +74,7 @@ object uploadWidgetDefinition {
     upcastPriority: scala.Int | scala.Double = null,
     upcasts: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): uploadWidgetDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalRequestParameters")(additionalRequestParameters)
-    __obj.updateDynamic("fileToElement")(fileToElement)
-    __obj.updateDynamic("loadMethod")(loadMethod)
-    __obj.updateDynamic("loaderType")(loaderType)
-    __obj.updateDynamic("onAbort")(onAbort)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onLoaded")(onLoaded)
-    __obj.updateDynamic("onUploaded")(onUploaded)
-    __obj.updateDynamic("onUploading")(onUploading)
-    __obj.updateDynamic("replaceWith")(replaceWith)
-    __obj.updateDynamic("skipNotifications")(skipNotifications)
-    __obj.updateDynamic("supportedTypes")(supportedTypes)
-    __obj.updateDynamic("uploadUrl")(uploadUrl)
+    val __obj = js.Dynamic.literal(additionalRequestParameters = additionalRequestParameters, fileToElement = fileToElement, loadMethod = loadMethod, loaderType = loaderType, onAbort = onAbort, onError = onError, onLoaded = onLoaded, onUploaded = onUploaded, onUploading = onUploading, replaceWith = replaceWith, skipNotifications = skipNotifications, supportedTypes = supportedTypes, uploadUrl = uploadUrl)
     if (allowedContent != null) __obj.updateDynamic("allowedContent")(allowedContent.asInstanceOf[js.Any])
     if (button != null) __obj.updateDynamic("button")(button)
     if (contentForms != null) __obj.updateDynamic("contentForms")(contentForms)

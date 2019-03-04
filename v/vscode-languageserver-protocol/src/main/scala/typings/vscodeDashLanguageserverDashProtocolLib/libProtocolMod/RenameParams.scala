@@ -29,10 +29,8 @@ object RenameParams {
     position: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position,
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): RenameParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newName")(newName)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(newName = newName, position = position, textDocument = textDocument)
+  
     __obj.asInstanceOf[RenameParams]
   }
 }

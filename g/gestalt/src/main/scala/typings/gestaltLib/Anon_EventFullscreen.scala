@@ -16,9 +16,8 @@ object Anon_EventFullscreen {
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event],
     fullscreen: scala.Boolean
   ): Anon_EventFullscreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("fullscreen")(fullscreen)
+    val __obj = js.Dynamic.literal(event = event, fullscreen = fullscreen)
+  
     __obj.asInstanceOf[Anon_EventFullscreen]
   }
 }

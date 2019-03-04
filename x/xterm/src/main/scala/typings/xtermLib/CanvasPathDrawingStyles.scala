@@ -26,14 +26,8 @@ object CanvasPathDrawingStyles {
     miterLimit: scala.Double,
     setLineDash: js.Function1[js.Array[scala.Double], scala.Unit]
   ): CanvasPathDrawingStyles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLineDash")(getLineDash)
-    __obj.updateDynamic("lineCap")(lineCap)
-    __obj.updateDynamic("lineDashOffset")(lineDashOffset)
-    __obj.updateDynamic("lineJoin")(lineJoin)
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("miterLimit")(miterLimit)
-    __obj.updateDynamic("setLineDash")(setLineDash)
+    val __obj = js.Dynamic.literal(getLineDash = getLineDash, lineCap = lineCap, lineDashOffset = lineDashOffset, lineJoin = lineJoin, lineWidth = lineWidth, miterLimit = miterLimit, setLineDash = setLineDash)
+  
     __obj.asInstanceOf[CanvasPathDrawingStyles]
   }
 }

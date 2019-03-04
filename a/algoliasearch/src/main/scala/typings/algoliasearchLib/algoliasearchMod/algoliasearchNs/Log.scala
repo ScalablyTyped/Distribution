@@ -44,21 +44,7 @@ object Log {
     exhaustive_faceting: algoliasearchLib.algoliasearchLibNumbers.`false` = null,
     exhaustive_nb_hits: algoliasearchLib.algoliasearchLibNumbers.`false` = null
   ): Log = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("answer")(answer)
-    __obj.updateDynamic("answer_code")(answer_code)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("nb_api_calls")(nb_api_calls)
-    __obj.updateDynamic("processing_time_ms")(processing_time_ms)
-    __obj.updateDynamic("query_body")(query_body)
-    __obj.updateDynamic("query_headers")(query_headers)
-    __obj.updateDynamic("query_nb_hits")(query_nb_hits)
-    __obj.updateDynamic("query_params")(query_params)
-    __obj.updateDynamic("sha1")(sha1)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(answer = answer, answer_code = answer_code, index = index, ip = ip, method = method, nb_api_calls = nb_api_calls, processing_time_ms = processing_time_ms, query_body = query_body, query_headers = query_headers, query_nb_hits = query_nb_hits, query_params = query_params, sha1 = sha1, timestamp = timestamp, url = url)
     if (exhaustive_faceting != null) __obj.updateDynamic("exhaustive_faceting")(exhaustive_faceting)
     if (exhaustive_nb_hits != null) __obj.updateDynamic("exhaustive_nb_hits")(exhaustive_nb_hits)
     __obj.asInstanceOf[Log]

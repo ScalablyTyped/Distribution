@@ -38,20 +38,8 @@ object Collection {
     update: js.Function3[Query, js.Object, CbCallback, scala.Unit],
     user: APIUser
   ): Collection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("addColumn")(addColumn)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("deleteCollection")(deleteCollection)
-    __obj.updateDynamic("dropColumn")(dropColumn)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, addColumn = addColumn, columns = columns, count = count, create = create, deleteCollection = deleteCollection, dropColumn = dropColumn, fetch = fetch, remove = remove, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
     __obj.asInstanceOf[Collection]
   }
 }

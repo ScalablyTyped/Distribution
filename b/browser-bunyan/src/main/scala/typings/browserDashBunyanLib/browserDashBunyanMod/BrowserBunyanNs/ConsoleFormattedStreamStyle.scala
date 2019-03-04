@@ -20,10 +20,8 @@ object ConsoleFormattedStreamStyle {
     msg: java.lang.String,
     src: java.lang.String
   ): ConsoleFormattedStreamStyle = {
-    val __obj = js.Dynamic.literal(`def` = `def`)
-    __obj.updateDynamic("levels")(levels)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(levels = levels, msg = msg, src = src)
+    __obj.updateDynamic("def")(`def`)
     __obj.asInstanceOf[ConsoleFormattedStreamStyle]
   }
 }

@@ -30,10 +30,8 @@ object UrlLocation {
     parameter: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     parameters: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   ): UrlLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("parameter")(parameter)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(hash = hash, parameter = parameter, parameters = parameters)
+  
     __obj.asInstanceOf[UrlLocation]
   }
 }

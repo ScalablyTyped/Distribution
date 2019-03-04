@@ -22,12 +22,8 @@ object MessageObject {
     messageRaw: java.lang.String,
     prefix: java.lang.String
   ): MessageObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("messageRaw")(messageRaw)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(id = id, level = level, message = message, messageRaw = messageRaw, prefix = prefix)
+  
     __obj.asInstanceOf[MessageObject]
   }
 }

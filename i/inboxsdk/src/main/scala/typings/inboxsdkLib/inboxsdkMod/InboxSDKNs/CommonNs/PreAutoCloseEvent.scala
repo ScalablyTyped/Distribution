@@ -18,9 +18,8 @@ object PreAutoCloseEvent {
     cause: stdLib.Event,
     `type`: inboxsdkLib.inboxsdkLibStrings.outsideInteraction | inboxsdkLib.inboxsdkLibStrings.escape
   ): PreAutoCloseEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cause")(cause)
+    val __obj = js.Dynamic.literal(cancel = cancel, cause = cause)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreAutoCloseEvent]
   }
 }

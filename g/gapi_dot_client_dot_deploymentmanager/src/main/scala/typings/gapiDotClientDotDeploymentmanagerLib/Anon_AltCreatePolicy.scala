@@ -57,9 +57,7 @@ object Anon_AltCreatePolicy {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCreatePolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(deployment = deployment, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (createPolicy != null) __obj.updateDynamic("createPolicy")(createPolicy)
     if (deletePolicy != null) __obj.updateDynamic("deletePolicy")(deletePolicy)

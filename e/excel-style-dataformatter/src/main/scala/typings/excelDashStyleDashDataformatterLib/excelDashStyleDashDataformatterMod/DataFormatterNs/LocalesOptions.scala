@@ -28,15 +28,8 @@ object LocalesOptions {
     name: java.lang.String,
     thousandSeparator: java.lang.String
   ): LocalesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("daysShort")(daysShort)
-    __obj.updateDynamic("decimalSeparator")(decimalSeparator)
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("monthsShort")(monthsShort)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("thousandSeparator")(thousandSeparator)
+    val __obj = js.Dynamic.literal(days = days, daysShort = daysShort, decimalSeparator = decimalSeparator, formats = formats, months = months, monthsShort = monthsShort, name = name, thousandSeparator = thousandSeparator)
+  
     __obj.asInstanceOf[LocalesOptions]
   }
 }

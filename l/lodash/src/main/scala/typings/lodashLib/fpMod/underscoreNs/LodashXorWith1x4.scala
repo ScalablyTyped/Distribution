@@ -12,10 +12,7 @@ trait LodashXorWith1x4[T] extends js.Object {
     comparator: lodashLib.lodashMod.underscoreNs.Comparator[T],
     arrays: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply(comparator: lodashLib.lodashMod.underscoreNs.`__`): LodashXorWith1x6[T] = js.native
-  def apply(
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
-    arrays: lodashLib.lodashMod.underscoreNs.List[T]
-  ): LodashXorWith1x6[T] = js.native
+  def apply(comparator: lodashLib.lodashMod.underscoreNs.__): LodashXorWith1x6[T] = js.native
+  def apply(comparator: lodashLib.lodashMod.underscoreNs.__, arrays: lodashLib.lodashMod.underscoreNs.List[T]): LodashXorWith1x6[T] = js.native
 }
 

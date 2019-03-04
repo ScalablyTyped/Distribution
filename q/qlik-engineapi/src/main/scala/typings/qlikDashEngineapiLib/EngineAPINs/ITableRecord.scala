@@ -56,15 +56,8 @@ object ITableRecord {
     qNoOfRows: scala.Double,
     qPos: IPoint
   ): ITableRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qComment")(qComment)
-    __obj.updateDynamic("qFields")(qFields)
-    __obj.updateDynamic("qIsDirectDiscovery")(qIsDirectDiscovery)
-    __obj.updateDynamic("qIsSynthetic")(qIsSynthetic)
-    __obj.updateDynamic("qLoose")(qLoose)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qNoOfRows")(qNoOfRows)
-    __obj.updateDynamic("qPos")(qPos)
+    val __obj = js.Dynamic.literal(qComment = qComment, qFields = qFields, qIsDirectDiscovery = qIsDirectDiscovery, qIsSynthetic = qIsSynthetic, qLoose = qLoose, qName = qName, qNoOfRows = qNoOfRows, qPos = qPos)
+  
     __obj.asInstanceOf[ITableRecord]
   }
 }

@@ -32,17 +32,8 @@ object ConnectionStatusListener {
     onNoServerUrlAvailable: js.Function0[scala.Unit],
     onSuccessfulHandshake: js.Function1[js.Any, scala.Unit]
   ): ConnectionStatusListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onConnectionBroken")(onConnectionBroken)
-    __obj.updateDynamic("onConnectionClosed")(onConnectionClosed)
-    __obj.updateDynamic("onConnectionEstablished")(onConnectionEstablished)
-    __obj.updateDynamic("onConnectionToServerFail")(onConnectionToServerFail)
-    __obj.updateDynamic("onConnectionWillClose")(onConnectionWillClose)
-    __obj.updateDynamic("onFailedHandshake")(onFailedHandshake)
-    __obj.updateDynamic("onMessageLost")(onMessageLost)
-    __obj.updateDynamic("onNegotiationFailed")(onNegotiationFailed)
-    __obj.updateDynamic("onNoServerUrlAvailable")(onNoServerUrlAvailable)
-    __obj.updateDynamic("onSuccessfulHandshake")(onSuccessfulHandshake)
+    val __obj = js.Dynamic.literal(onConnectionBroken = onConnectionBroken, onConnectionClosed = onConnectionClosed, onConnectionEstablished = onConnectionEstablished, onConnectionToServerFail = onConnectionToServerFail, onConnectionWillClose = onConnectionWillClose, onFailedHandshake = onFailedHandshake, onMessageLost = onMessageLost, onNegotiationFailed = onNegotiationFailed, onNoServerUrlAvailable = onNoServerUrlAvailable, onSuccessfulHandshake = onSuccessfulHandshake)
+  
     __obj.asInstanceOf[ConnectionStatusListener]
   }
 }

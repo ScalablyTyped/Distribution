@@ -70,8 +70,36 @@ object IntrinsicElements {
     `blessed-textarea`: js.Any,
     `blessed-textbox`: js.Any
   ): IntrinsicElements = {
-    val __obj = js.Dynamic.literal(`blessed-bigtext` = `blessed-bigtext`, `blessed-box` = `blessed-box`, `blessed-button` = `blessed-button`, `blessed-checkbox` = `blessed-checkbox`, `blessed-escape` = `blessed-escape`, `blessed-filemanager` = `blessed-filemanager`, `blessed-form` = `blessed-form`, `blessed-input` = `blessed-input`, `blessed-layout` = `blessed-layout`, `blessed-line` = `blessed-line`, `blessed-list` = `blessed-list`, `blessed-listbar` = `blessed-listbar`, `blessed-listtable` = `blessed-listtable`, `blessed-loading` = `blessed-loading`, `blessed-log` = `blessed-log`, `blessed-message` = `blessed-message`, `blessed-program` = `blessed-program`, `blessed-progressbar` = `blessed-progressbar`, `blessed-prompt` = `blessed-prompt`, `blessed-question` = `blessed-question`, `blessed-radiobutton` = `blessed-radiobutton`, `blessed-radioset` = `blessed-radioset`, `blessed-scrollablebox` = `blessed-scrollablebox`, `blessed-scrollabletext` = `blessed-scrollabletext`, `blessed-table` = `blessed-table`, `blessed-terminal` = `blessed-terminal`, `blessed-text` = `blessed-text`, `blessed-textarea` = `blessed-textarea`, `blessed-textbox` = `blessed-textbox`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blessed-bigtext")(`blessed-bigtext`)
+    __obj.updateDynamic("blessed-box")(`blessed-box`)
+    __obj.updateDynamic("blessed-button")(`blessed-button`)
+    __obj.updateDynamic("blessed-checkbox")(`blessed-checkbox`)
+    __obj.updateDynamic("blessed-escape")(`blessed-escape`)
+    __obj.updateDynamic("blessed-filemanager")(`blessed-filemanager`)
+    __obj.updateDynamic("blessed-form")(`blessed-form`)
+    __obj.updateDynamic("blessed-input")(`blessed-input`)
+    __obj.updateDynamic("blessed-layout")(`blessed-layout`)
+    __obj.updateDynamic("blessed-line")(`blessed-line`)
+    __obj.updateDynamic("blessed-list")(`blessed-list`)
+    __obj.updateDynamic("blessed-listbar")(`blessed-listbar`)
+    __obj.updateDynamic("blessed-listtable")(`blessed-listtable`)
+    __obj.updateDynamic("blessed-loading")(`blessed-loading`)
+    __obj.updateDynamic("blessed-log")(`blessed-log`)
+    __obj.updateDynamic("blessed-message")(`blessed-message`)
+    __obj.updateDynamic("blessed-program")(`blessed-program`)
+    __obj.updateDynamic("blessed-progressbar")(`blessed-progressbar`)
+    __obj.updateDynamic("blessed-prompt")(`blessed-prompt`)
+    __obj.updateDynamic("blessed-question")(`blessed-question`)
+    __obj.updateDynamic("blessed-radiobutton")(`blessed-radiobutton`)
+    __obj.updateDynamic("blessed-radioset")(`blessed-radioset`)
+    __obj.updateDynamic("blessed-scrollablebox")(`blessed-scrollablebox`)
+    __obj.updateDynamic("blessed-scrollabletext")(`blessed-scrollabletext`)
+    __obj.updateDynamic("blessed-table")(`blessed-table`)
+    __obj.updateDynamic("blessed-terminal")(`blessed-terminal`)
+    __obj.updateDynamic("blessed-text")(`blessed-text`)
+    __obj.updateDynamic("blessed-textarea")(`blessed-textarea`)
+    __obj.updateDynamic("blessed-textbox")(`blessed-textbox`)
     __obj.asInstanceOf[IntrinsicElements]
   }
 }

@@ -24,13 +24,8 @@ object Anon_AutoCloudy {
     shadow: java.lang.String,
     sunny: java.lang.String
   ): Anon_AutoCloudy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auto")(auto)
-    __obj.updateDynamic("cloudy")(cloudy)
-    __obj.updateDynamic("fluorescent")(fluorescent)
-    __obj.updateDynamic("incandescent")(incandescent)
-    __obj.updateDynamic("shadow")(shadow)
-    __obj.updateDynamic("sunny")(sunny)
+    val __obj = js.Dynamic.literal(auto = auto, cloudy = cloudy, fluorescent = fluorescent, incandescent = incandescent, shadow = shadow, sunny = sunny)
+  
     __obj.asInstanceOf[Anon_AutoCloudy]
   }
 }

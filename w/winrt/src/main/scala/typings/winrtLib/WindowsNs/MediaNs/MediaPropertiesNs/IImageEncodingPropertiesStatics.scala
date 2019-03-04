@@ -18,10 +18,8 @@ object IImageEncodingPropertiesStatics {
     createJpegXR: js.Function0[ImageEncodingProperties],
     createPng: js.Function0[ImageEncodingProperties]
   ): IImageEncodingPropertiesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createJpeg")(createJpeg)
-    __obj.updateDynamic("createJpegXR")(createJpegXR)
-    __obj.updateDynamic("createPng")(createPng)
+    val __obj = js.Dynamic.literal(createJpeg = createJpeg, createJpegXR = createJpegXR, createPng = createPng)
+  
     __obj.asInstanceOf[IImageEncodingPropertiesStatics]
   }
 }

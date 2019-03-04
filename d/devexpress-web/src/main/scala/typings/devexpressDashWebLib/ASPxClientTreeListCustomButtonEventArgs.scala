@@ -29,10 +29,8 @@ trait ASPxClientTreeListCustomButtonEventArgs extends ASPxClientEventArgs {
 object ASPxClientTreeListCustomButtonEventArgs {
   @scala.inline
   def apply(buttonID: java.lang.String, buttonIndex: scala.Double, nodeKey: java.lang.String): ASPxClientTreeListCustomButtonEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonID")(buttonID)
-    __obj.updateDynamic("buttonIndex")(buttonIndex)
-    __obj.updateDynamic("nodeKey")(nodeKey)
+    val __obj = js.Dynamic.literal(buttonID = buttonID, buttonIndex = buttonIndex, nodeKey = nodeKey)
+  
     __obj.asInstanceOf[ASPxClientTreeListCustomButtonEventArgs]
   }
 }

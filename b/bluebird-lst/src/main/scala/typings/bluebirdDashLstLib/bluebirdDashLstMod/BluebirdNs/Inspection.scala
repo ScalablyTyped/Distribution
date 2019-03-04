@@ -46,13 +46,8 @@ object Inspection {
     reason: js.Function0[js.Any],
     value: js.Function0[R]
   ): Inspection[R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCancelled")(isCancelled)
-    __obj.updateDynamic("isFulfilled")(isFulfilled)
-    __obj.updateDynamic("isPending")(isPending)
-    __obj.updateDynamic("isRejected")(isRejected)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isCancelled = isCancelled, isFulfilled = isFulfilled, isPending = isPending, isRejected = isRejected, reason = reason, value = value)
+  
     __obj.asInstanceOf[Inspection[R]]
   }
 }

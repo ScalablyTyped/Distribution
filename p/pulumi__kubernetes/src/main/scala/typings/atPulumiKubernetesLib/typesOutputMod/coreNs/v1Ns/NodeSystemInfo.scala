@@ -70,17 +70,8 @@ object NodeSystemInfo {
     osImage: java.lang.String,
     systemUUID: java.lang.String
   ): NodeSystemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("architecture")(architecture)
-    __obj.updateDynamic("bootID")(bootID)
-    __obj.updateDynamic("containerRuntimeVersion")(containerRuntimeVersion)
-    __obj.updateDynamic("kernelVersion")(kernelVersion)
-    __obj.updateDynamic("kubeProxyVersion")(kubeProxyVersion)
-    __obj.updateDynamic("kubeletVersion")(kubeletVersion)
-    __obj.updateDynamic("machineID")(machineID)
-    __obj.updateDynamic("operatingSystem")(operatingSystem)
-    __obj.updateDynamic("osImage")(osImage)
-    __obj.updateDynamic("systemUUID")(systemUUID)
+    val __obj = js.Dynamic.literal(architecture = architecture, bootID = bootID, containerRuntimeVersion = containerRuntimeVersion, kernelVersion = kernelVersion, kubeProxyVersion = kubeProxyVersion, kubeletVersion = kubeletVersion, machineID = machineID, operatingSystem = operatingSystem, osImage = osImage, systemUUID = systemUUID)
+  
     __obj.asInstanceOf[NodeSystemInfo]
   }
 }

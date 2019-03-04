@@ -42,11 +42,8 @@ object OpenCommandArgument {
     Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): OpenCommandArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Priority")(Priority)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("Sink")(Sink)
+    val __obj = js.Dynamic.literal(Mode = Mode, Priority = Priority, Properties = Properties, Sink = Sink)
+  
     __obj.asInstanceOf[OpenCommandArgument]
   }
 }

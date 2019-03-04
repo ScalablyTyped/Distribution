@@ -83,9 +83,8 @@ object `type` {
     ],
     createRenderer: js.Function1[typeCreateRendererParams, arcgisDashJsDashApiLib.IPromise[typeRendererResult]]
   ): `type` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPCClassRenderer")(createPCClassRenderer)
-    __obj.updateDynamic("createRenderer")(createRenderer)
+    val __obj = js.Dynamic.literal(createPCClassRenderer = createPCClassRenderer, createRenderer = createRenderer)
+  
     __obj.asInstanceOf[`type`]
   }
 }

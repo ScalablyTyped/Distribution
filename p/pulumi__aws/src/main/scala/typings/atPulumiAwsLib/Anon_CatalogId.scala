@@ -24,12 +24,7 @@ object Anon_CatalogId {
     tableName: java.lang.String,
     versionId: java.lang.String = null
   ): Anon_CatalogId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("catalogId")(catalogId)
-    __obj.updateDynamic("databaseName")(databaseName)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(catalogId = catalogId, databaseName = databaseName, region = region, roleArn = roleArn, tableName = tableName)
     if (versionId != null) __obj.updateDynamic("versionId")(versionId)
     __obj.asInstanceOf[Anon_CatalogId]
   }

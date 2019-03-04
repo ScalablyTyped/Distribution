@@ -20,11 +20,8 @@ object Anon_DefaultSequence {
     items: Anon_KeystrokeSequence,
     obfuscation: scala.Double
   ): Anon_DefaultSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultSequence")(defaultSequence)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("obfuscation")(obfuscation)
+    val __obj = js.Dynamic.literal(defaultSequence = defaultSequence, enabled = enabled, items = items, obfuscation = obfuscation)
+  
     __obj.asInstanceOf[Anon_DefaultSequence]
   }
 }

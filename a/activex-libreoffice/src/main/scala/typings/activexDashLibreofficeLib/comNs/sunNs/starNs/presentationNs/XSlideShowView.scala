@@ -157,28 +157,8 @@ object XSlideShowView {
     removeTransformationChangedListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
     setMouseCursor: js.Function1[scala.Double, scala.Unit]
   ): XSlideShowView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Canvas")(Canvas)
-    __obj.updateDynamic("CanvasArea")(CanvasArea)
-    __obj.updateDynamic("Transformation")(Transformation)
-    __obj.updateDynamic("TranslationOffset")(TranslationOffset)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addMouseListener")(addMouseListener)
-    __obj.updateDynamic("addMouseMotionListener")(addMouseMotionListener)
-    __obj.updateDynamic("addPaintListener")(addPaintListener)
-    __obj.updateDynamic("addTransformationChangedListener")(addTransformationChangedListener)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getCanvas")(getCanvas)
-    __obj.updateDynamic("getCanvasArea")(getCanvasArea)
-    __obj.updateDynamic("getTransformation")(getTransformation)
-    __obj.updateDynamic("getTranslationOffset")(getTranslationOffset)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeMouseListener")(removeMouseListener)
-    __obj.updateDynamic("removeMouseMotionListener")(removeMouseMotionListener)
-    __obj.updateDynamic("removePaintListener")(removePaintListener)
-    __obj.updateDynamic("removeTransformationChangedListener")(removeTransformationChangedListener)
-    __obj.updateDynamic("setMouseCursor")(setMouseCursor)
+    val __obj = js.Dynamic.literal(Canvas = Canvas, CanvasArea = CanvasArea, Transformation = Transformation, TranslationOffset = TranslationOffset, acquire = acquire, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addTransformationChangedListener = addTransformationChangedListener, clear = clear, getCanvas = getCanvas, getCanvasArea = getCanvasArea, getTransformation = getTransformation, getTranslationOffset = getTranslationOffset, queryInterface = queryInterface, release = release, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeTransformationChangedListener = removeTransformationChangedListener, setMouseCursor = setMouseCursor)
+  
     __obj.asInstanceOf[XSlideShowView]
   }
 }

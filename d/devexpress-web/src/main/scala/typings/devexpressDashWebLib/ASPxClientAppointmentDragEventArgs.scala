@@ -33,10 +33,8 @@ object ASPxClientAppointmentDragEventArgs {
     dragInformation: js.Array[ASPxClientAppointmentDragInfo],
     mouseEvent: js.Object
   ): ASPxClientAppointmentDragEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allow")(allow)
-    __obj.updateDynamic("dragInformation")(dragInformation)
-    __obj.updateDynamic("mouseEvent")(mouseEvent)
+    val __obj = js.Dynamic.literal(allow = allow, dragInformation = dragInformation, mouseEvent = mouseEvent)
+  
     __obj.asInstanceOf[ASPxClientAppointmentDragEventArgs]
   }
 }

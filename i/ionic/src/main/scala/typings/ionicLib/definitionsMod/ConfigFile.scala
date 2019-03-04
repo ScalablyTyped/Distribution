@@ -50,10 +50,7 @@ object ConfigFile {
     `user.email`: java.lang.String = null,
     `user.id`: scala.Int | scala.Double = null
   ): ConfigFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("npmClient")(npmClient)
-    __obj.updateDynamic("telemetry")(telemetry)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(npmClient = npmClient, telemetry = telemetry, version = version)
     if (!js.isUndefined(`features.ssl-commands`)) __obj.updateDynamic("features.ssl-commands")(`features.ssl-commands`)
     if (`git.host` != null) __obj.updateDynamic("git.host")(`git.host`)
     if (`git.port` != null) __obj.updateDynamic("git.port")(`git.port`.asInstanceOf[js.Any])

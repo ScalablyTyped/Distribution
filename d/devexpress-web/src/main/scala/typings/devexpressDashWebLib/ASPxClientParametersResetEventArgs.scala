@@ -24,9 +24,8 @@ trait ASPxClientParametersResetEventArgs extends ASPxClientEventArgs {
 object ASPxClientParametersResetEventArgs {
   @scala.inline
   def apply(Parameters: js.Array[ASPxClientWebDocumentViewerParameter], ParametersViewModel: js.Object): ASPxClientParametersResetEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("ParametersViewModel")(ParametersViewModel)
+    val __obj = js.Dynamic.literal(Parameters = Parameters, ParametersViewModel = ParametersViewModel)
+  
     __obj.asInstanceOf[ASPxClientParametersResetEventArgs]
   }
 }

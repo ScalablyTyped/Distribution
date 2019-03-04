@@ -45,8 +45,7 @@ object Anon_AltConsistencyTokenFieldsKeyLanguageOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyLanguageOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playerId")(playerId)
+    val __obj = js.Dynamic.literal(playerId = playerId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

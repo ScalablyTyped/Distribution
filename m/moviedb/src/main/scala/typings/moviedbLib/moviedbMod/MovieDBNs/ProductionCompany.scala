@@ -13,9 +13,8 @@ trait ProductionCompany extends js.Object {
 object ProductionCompany {
   @scala.inline
   def apply(id: scala.Double, name: java.lang.String): ProductionCompany = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[ProductionCompany]
   }
 }

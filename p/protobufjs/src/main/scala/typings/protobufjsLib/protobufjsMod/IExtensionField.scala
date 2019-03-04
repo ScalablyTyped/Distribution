@@ -19,9 +19,8 @@ object IExtensionField {
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     rule: java.lang.String = null
   ): IExtensionField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(extend = extend, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     if (rule != null) __obj.updateDynamic("rule")(rule)
     __obj.asInstanceOf[IExtensionField]

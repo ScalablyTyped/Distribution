@@ -16,7 +16,8 @@ object Anon_Rationale {
     `type`: java.lang.String,
     rationale: reactDashNativeDashPermissionsLib.reactDashNativeDashPermissionsMod.Rationale = null
   ): Anon_Rationale = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (rationale != null) __obj.updateDynamic("rationale")(rationale)
     __obj.asInstanceOf[Anon_Rationale]
   }

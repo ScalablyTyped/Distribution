@@ -20,11 +20,8 @@ object WebhookResponse {
     status: slackDashNodeLib.slackDashNodeLibStrings.fail | slackDashNodeLib.slackDashNodeLibStrings.ok,
     statusCode: scala.Double
   ): WebhookResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(headers = headers, response = response, status = status.asInstanceOf[js.Any], statusCode = statusCode)
+  
     __obj.asInstanceOf[WebhookResponse]
   }
 }

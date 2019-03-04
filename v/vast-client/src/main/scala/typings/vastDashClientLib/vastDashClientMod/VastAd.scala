@@ -36,11 +36,7 @@ object VastAd {
     system: VastSystem | java.lang.String = null,
     title: java.lang.String = null
   ): VastAd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creatives")(creatives)
-    __obj.updateDynamic("errorURLTemplates")(errorURLTemplates)
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("impressionURLTemplates")(impressionURLTemplates)
+    val __obj = js.Dynamic.literal(creatives = creatives, errorURLTemplates = errorURLTemplates, extensions = extensions, impressionURLTemplates = impressionURLTemplates)
     if (advertiser != null) __obj.updateDynamic("advertiser")(advertiser)
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)

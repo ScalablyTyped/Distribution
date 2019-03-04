@@ -27,10 +27,8 @@ object ValueDefinition {
     endPoint: java.lang.String,
     resultTemplate: java.lang.String
   ): ValueDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("endPoint")(endPoint)
-    __obj.updateDynamic("resultTemplate")(resultTemplate)
+    val __obj = js.Dynamic.literal(dataSource = dataSource, endPoint = endPoint, resultTemplate = resultTemplate)
+  
     __obj.asInstanceOf[ValueDefinition]
   }
 }

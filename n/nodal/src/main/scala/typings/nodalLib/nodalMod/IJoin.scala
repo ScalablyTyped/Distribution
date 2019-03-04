@@ -44,9 +44,7 @@ object IJoin {
     prevAlias: java.lang.String = null,
     prevColumn: java.lang.String = null
   ): IJoin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("joinTable")(joinTable)
-    __obj.updateDynamic("prevTable")(prevTable)
+    val __obj = js.Dynamic.literal(joinTable = joinTable, prevTable = prevTable)
     if (cachedModel != null) __obj.updateDynamic("cachedModel")(cachedModel)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (columnsObject != null) __obj.updateDynamic("columnsObject")(columnsObject)

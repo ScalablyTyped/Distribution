@@ -30,12 +30,8 @@ object ASPxClientFixedValueErrorBars {
     positiveError: scala.Double,
     series: ASPxClientSeries
   ): ASPxClientFixedValueErrorBars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("negativeError")(negativeError)
-    __obj.updateDynamic("positiveError")(positiveError)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, negativeError = negativeError, positiveError = positiveError, series = series)
+  
     __obj.asInstanceOf[ASPxClientFixedValueErrorBars]
   }
 }

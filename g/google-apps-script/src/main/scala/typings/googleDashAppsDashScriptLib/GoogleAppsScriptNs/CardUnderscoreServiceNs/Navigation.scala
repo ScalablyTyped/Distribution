@@ -24,13 +24,8 @@ object Navigation {
     pushCard: js.Function1[Card, Navigation],
     updateCard: js.Function1[Card, Navigation]
   ): Navigation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("popCard")(popCard)
-    __obj.updateDynamic("popToNamedCard")(popToNamedCard)
-    __obj.updateDynamic("popToRoot")(popToRoot)
-    __obj.updateDynamic("printJson")(printJson)
-    __obj.updateDynamic("pushCard")(pushCard)
-    __obj.updateDynamic("updateCard")(updateCard)
+    val __obj = js.Dynamic.literal(popCard = popCard, popToNamedCard = popToNamedCard, popToRoot = popToRoot, printJson = printJson, pushCard = pushCard, updateCard = updateCard)
+  
     __obj.asInstanceOf[Navigation]
   }
 }

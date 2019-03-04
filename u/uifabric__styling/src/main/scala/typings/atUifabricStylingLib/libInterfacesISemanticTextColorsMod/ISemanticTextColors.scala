@@ -156,36 +156,8 @@ object ISemanticTextColors {
     primaryButtonTextPressed: java.lang.String,
     warningText: java.lang.String
   ): ISemanticTextColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accentButtonText")(accentButtonText)
-    __obj.updateDynamic("actionLink")(actionLink)
-    __obj.updateDynamic("actionLinkHovered")(actionLinkHovered)
-    __obj.updateDynamic("bodySubtext")(bodySubtext)
-    __obj.updateDynamic("bodyText")(bodyText)
-    __obj.updateDynamic("bodyTextChecked")(bodyTextChecked)
-    __obj.updateDynamic("buttonText")(buttonText)
-    __obj.updateDynamic("buttonTextChecked")(buttonTextChecked)
-    __obj.updateDynamic("buttonTextCheckedHovered")(buttonTextCheckedHovered)
-    __obj.updateDynamic("buttonTextDisabled")(buttonTextDisabled)
-    __obj.updateDynamic("buttonTextHovered")(buttonTextHovered)
-    __obj.updateDynamic("buttonTextPressed")(buttonTextPressed)
-    __obj.updateDynamic("disabledBodySubtext")(disabledBodySubtext)
-    __obj.updateDynamic("disabledBodyText")(disabledBodyText)
-    __obj.updateDynamic("disabledSubtext")(disabledSubtext)
-    __obj.updateDynamic("disabledText")(disabledText)
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("inputPlaceholderText")(inputPlaceholderText)
-    __obj.updateDynamic("inputText")(inputText)
-    __obj.updateDynamic("inputTextHovered")(inputTextHovered)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("linkHovered")(linkHovered)
-    __obj.updateDynamic("listText")(listText)
-    __obj.updateDynamic("listTextColor")(listTextColor)
-    __obj.updateDynamic("primaryButtonText")(primaryButtonText)
-    __obj.updateDynamic("primaryButtonTextDisabled")(primaryButtonTextDisabled)
-    __obj.updateDynamic("primaryButtonTextHovered")(primaryButtonTextHovered)
-    __obj.updateDynamic("primaryButtonTextPressed")(primaryButtonTextPressed)
-    __obj.updateDynamic("warningText")(warningText)
+    val __obj = js.Dynamic.literal(accentButtonText = accentButtonText, actionLink = actionLink, actionLinkHovered = actionLinkHovered, bodySubtext = bodySubtext, bodyText = bodyText, bodyTextChecked = bodyTextChecked, buttonText = buttonText, buttonTextChecked = buttonTextChecked, buttonTextCheckedHovered = buttonTextCheckedHovered, buttonTextDisabled = buttonTextDisabled, buttonTextHovered = buttonTextHovered, buttonTextPressed = buttonTextPressed, disabledBodySubtext = disabledBodySubtext, disabledBodyText = disabledBodyText, disabledSubtext = disabledSubtext, disabledText = disabledText, errorText = errorText, inputPlaceholderText = inputPlaceholderText, inputText = inputText, inputTextHovered = inputTextHovered, link = link, linkHovered = linkHovered, listText = listText, listTextColor = listTextColor, primaryButtonText = primaryButtonText, primaryButtonTextDisabled = primaryButtonTextDisabled, primaryButtonTextHovered = primaryButtonTextHovered, primaryButtonTextPressed = primaryButtonTextPressed, warningText = warningText)
+  
     __obj.asInstanceOf[ISemanticTextColors]
   }
 }

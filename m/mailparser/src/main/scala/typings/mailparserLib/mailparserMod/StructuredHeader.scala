@@ -32,9 +32,8 @@ trait StructuredHeader extends _HeaderValue {
 object StructuredHeader {
   @scala.inline
   def apply(params: org.scalablytyped.runtime.StringDictionary[java.lang.String], value: java.lang.String): StructuredHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(params = params, value = value)
+  
     __obj.asInstanceOf[StructuredHeader]
   }
 }

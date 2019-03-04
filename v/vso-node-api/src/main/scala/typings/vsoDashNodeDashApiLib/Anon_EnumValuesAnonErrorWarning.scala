@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonErrorWarning extends js.Object {
 object Anon_EnumValuesAnonErrorWarning {
   @scala.inline
   def apply(enumValues: Anon_ErrorWarning): Anon_EnumValuesAnonErrorWarning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonErrorWarning]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Array {
     map: js.Function2[js.Array[_], js.Function, js.Any],
     radians: js.Function1[scala.Double, scala.Double]
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("degrees")(degrees)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("filterSVGElements")(filterSVGElements)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("radians")(radians)
+    val __obj = js.Dynamic.literal(degrees = degrees, filter = filter, filterSVGElements = filterSVGElements, map = map, radians = radians)
+  
     __obj.asInstanceOf[Anon_Array]
   }
 }

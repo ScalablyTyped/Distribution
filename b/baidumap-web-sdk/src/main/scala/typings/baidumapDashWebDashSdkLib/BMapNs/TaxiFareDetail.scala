@@ -14,10 +14,8 @@ trait TaxiFareDetail extends js.Object {
 object TaxiFareDetail {
   @scala.inline
   def apply(initialFare: scala.Double, totalFare: scala.Double, unitFare: scala.Double): TaxiFareDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialFare")(initialFare)
-    __obj.updateDynamic("totalFare")(totalFare)
-    __obj.updateDynamic("unitFare")(unitFare)
+    val __obj = js.Dynamic.literal(initialFare = initialFare, totalFare = totalFare, unitFare = unitFare)
+  
     __obj.asInstanceOf[TaxiFareDetail]
   }
 }

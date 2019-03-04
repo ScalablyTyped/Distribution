@@ -42,8 +42,7 @@ object ReactScrollLinkProps {
     smooth: scala.Boolean | java.lang.String = null,
     spy: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactScrollLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
     if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
     if (containerId != null) __obj.updateDynamic("containerId")(containerId)

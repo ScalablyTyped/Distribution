@@ -42,12 +42,8 @@ object ASPxClientDashboardItemUnderlyingData {
     GetRowValue: js.Function2[scala.Double, java.lang.String, js.Object],
     IsDataReceived: js.Function0[scala.Boolean]
   ): ASPxClientDashboardItemUnderlyingData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDataMembers")(GetDataMembers)
-    __obj.updateDynamic("GetRequestDataError")(GetRequestDataError)
-    __obj.updateDynamic("GetRowCount")(GetRowCount)
-    __obj.updateDynamic("GetRowValue")(GetRowValue)
-    __obj.updateDynamic("IsDataReceived")(IsDataReceived)
+    val __obj = js.Dynamic.literal(GetDataMembers = GetDataMembers, GetRequestDataError = GetRequestDataError, GetRowCount = GetRowCount, GetRowValue = GetRowValue, IsDataReceived = IsDataReceived)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemUnderlyingData]
   }
 }

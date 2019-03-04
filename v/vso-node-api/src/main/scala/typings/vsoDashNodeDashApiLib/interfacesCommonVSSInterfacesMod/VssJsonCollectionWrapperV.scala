@@ -12,9 +12,8 @@ trait VssJsonCollectionWrapperV[T] extends VssJsonCollectionWrapperBase {
 object VssJsonCollectionWrapperV {
   @scala.inline
   def apply[T](count: scala.Double, value: T): VssJsonCollectionWrapperV[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[VssJsonCollectionWrapperV[T]]
   }
 }

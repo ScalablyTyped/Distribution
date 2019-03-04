@@ -18,8 +18,7 @@ object MapDataProvider {
     bounds: Bounds | BoundsLiteral | ArrayOfBounds | ArrayOfBoundsLiteral = null,
     link: java.lang.String = null
   ): MapDataProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (link != null) __obj.updateDynamic("link")(link)
     __obj.asInstanceOf[MapDataProvider]

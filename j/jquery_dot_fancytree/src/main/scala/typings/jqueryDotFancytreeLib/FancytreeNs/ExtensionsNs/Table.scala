@@ -38,10 +38,7 @@ object Table {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Table = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkboxColumnIdx")(checkboxColumnIdx)
-    __obj.updateDynamic("indentation")(indentation)
-    __obj.updateDynamic("nodeColumnIdx")(nodeColumnIdx)
+    val __obj = js.Dynamic.literal(checkboxColumnIdx = checkboxColumnIdx, indentation = indentation, nodeColumnIdx = nodeColumnIdx)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Table]
   }

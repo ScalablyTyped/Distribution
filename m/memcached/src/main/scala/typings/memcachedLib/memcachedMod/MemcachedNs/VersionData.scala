@@ -21,11 +21,7 @@ object VersionData {
     version: java.lang.String,
     server: java.lang.String = null
   ): VersionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bugfix")(bugfix)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(bugfix = bugfix, major = major, minor = minor, version = version)
     if (server != null) __obj.updateDynamic("server")(server)
     __obj.asInstanceOf[VersionData]
   }

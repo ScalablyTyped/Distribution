@@ -22,9 +22,7 @@ object FindChunks {
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     sanitize: js.Function1[/* text */ java.lang.String, java.lang.String] = null
   ): FindChunks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("searchWords")(searchWords)
-    __obj.updateDynamic("textToHighlight")(textToHighlight)
+    val __obj = js.Dynamic.literal(searchWords = searchWords, textToHighlight = textToHighlight)
     if (!js.isUndefined(autoEscape)) __obj.updateDynamic("autoEscape")(autoEscape)
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (sanitize != null) __obj.updateDynamic("sanitize")(sanitize)

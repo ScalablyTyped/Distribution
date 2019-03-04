@@ -18,10 +18,8 @@ object ValidationSet {
     RenderedContent: java.lang.String,
     ValidationErrors: js.Array[ValidationError]
   ): ValidationSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentIsValid")(ContentIsValid)
-    __obj.updateDynamic("RenderedContent")(RenderedContent)
-    __obj.updateDynamic("ValidationErrors")(ValidationErrors)
+    val __obj = js.Dynamic.literal(ContentIsValid = ContentIsValid, RenderedContent = RenderedContent, ValidationErrors = ValidationErrors)
+  
     __obj.asInstanceOf[ValidationSet]
   }
 }

@@ -102,20 +102,8 @@ object DurandalViewEngineModule {
     viewPlugin: java.lang.String,
     viewPluginParameters: java.lang.String
   ): DurandalViewEngineModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertViewIdToRequirePath")(convertViewIdToRequirePath)
-    __obj.updateDynamic("convertViewUrlToViewId")(convertViewUrlToViewId)
-    __obj.updateDynamic("createFallbackView")(createFallbackView)
-    __obj.updateDynamic("createView")(createView)
-    __obj.updateDynamic("ensureSingleElement")(ensureSingleElement)
-    __obj.updateDynamic("isViewUrl")(isViewUrl)
-    __obj.updateDynamic("parseMarkup")(parseMarkup)
-    __obj.updateDynamic("processMarkup")(processMarkup)
-    __obj.updateDynamic("putViewInCache")(putViewInCache)
-    __obj.updateDynamic("tryGetViewFromCache")(tryGetViewFromCache)
-    __obj.updateDynamic("viewExtension")(viewExtension)
-    __obj.updateDynamic("viewPlugin")(viewPlugin)
-    __obj.updateDynamic("viewPluginParameters")(viewPluginParameters)
+    val __obj = js.Dynamic.literal(convertViewIdToRequirePath = convertViewIdToRequirePath, convertViewUrlToViewId = convertViewUrlToViewId, createFallbackView = createFallbackView, createView = createView, ensureSingleElement = ensureSingleElement, isViewUrl = isViewUrl, parseMarkup = parseMarkup, processMarkup = processMarkup, putViewInCache = putViewInCache, tryGetViewFromCache = tryGetViewFromCache, viewExtension = viewExtension, viewPlugin = viewPlugin, viewPluginParameters = viewPluginParameters)
+  
     __obj.asInstanceOf[DurandalViewEngineModule]
   }
 }

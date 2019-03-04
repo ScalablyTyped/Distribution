@@ -47,12 +47,8 @@ object XPrimitive3D {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPrimitive3D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDecomposition")(getDecomposition)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDecomposition = getDecomposition, getRange = getRange, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPrimitive3D]
   }
 }

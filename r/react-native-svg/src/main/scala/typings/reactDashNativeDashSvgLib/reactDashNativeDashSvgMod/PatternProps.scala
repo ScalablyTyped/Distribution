@@ -32,8 +32,7 @@ object PatternProps {
     x: reactDashNativeDashSvgLib.NumberProp = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): PatternProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits)
     if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])

@@ -40,8 +40,10 @@ object SegmentsEdges {
     `segment-distances`: java.lang.String,
     `segment-weights`: java.lang.String
   ): SegmentsEdges = {
-    val __obj = js.Dynamic.literal(`edge-distances` = `edge-distances`.asInstanceOf[js.Any], `segment-distances` = `segment-distances`, `segment-weights` = `segment-weights`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("edge-distances")(`edge-distances`.asInstanceOf[js.Any])
+    __obj.updateDynamic("segment-distances")(`segment-distances`)
+    __obj.updateDynamic("segment-weights")(`segment-weights`)
     __obj.asInstanceOf[SegmentsEdges]
   }
 }

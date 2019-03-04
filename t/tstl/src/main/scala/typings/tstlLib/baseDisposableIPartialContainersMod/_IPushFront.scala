@@ -17,8 +17,8 @@ trait _IPushFront[T] extends js.Object {
 object _IPushFront {
   @scala.inline
   def apply[T](push_front: js.Function1[T, scala.Unit]): _IPushFront[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push_front")(push_front)
+    val __obj = js.Dynamic.literal(push_front = push_front)
+  
     __obj.asInstanceOf[_IPushFront[T]]
   }
 }

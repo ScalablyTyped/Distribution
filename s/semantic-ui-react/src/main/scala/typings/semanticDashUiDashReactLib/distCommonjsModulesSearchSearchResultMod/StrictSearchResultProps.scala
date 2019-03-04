@@ -67,8 +67,7 @@ object StrictSearchResultProps {
     price: java.lang.String = null,
     renderer: js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]] = null
   ): StrictSearchResultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (as != null) __obj.updateDynamic("as")(as)
     if (className != null) __obj.updateDynamic("className")(className)

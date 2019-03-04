@@ -22,9 +22,7 @@ object Anon_HostKey {
     serverTags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     serviceName: java.lang.String = null
   ): Anon_HostKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("tracer")(tracer)
+    val __obj = js.Dynamic.literal(port = port, tracer = tracer)
     if (host != null) __obj.updateDynamic("host")(host)
     if (serverTags != null) __obj.updateDynamic("serverTags")(serverTags)
     if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)

@@ -36,11 +36,7 @@ object VastCompanionAd {
     staticResource: java.lang.String = null,
     `type`: java.lang.String = null
   ): VastCompanionAd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("companionClickTrackingURLTemplates")(companionClickTrackingURLTemplates)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("trackingEvents")(trackingEvents)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(companionClickTrackingURLTemplates = companionClickTrackingURLTemplates, height = height, trackingEvents = trackingEvents, width = width)
     if (altText != null) __obj.updateDynamic("altText")(altText)
     if (companionClickThroughURLTemplate != null) __obj.updateDynamic("companionClickThroughURLTemplate")(companionClickThroughURLTemplate)
     if (companionClickTrackingURLTemplate != null) __obj.updateDynamic("companionClickTrackingURLTemplate")(companionClickTrackingURLTemplate)

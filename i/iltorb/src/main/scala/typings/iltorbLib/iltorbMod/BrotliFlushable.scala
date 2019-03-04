@@ -12,8 +12,8 @@ trait BrotliFlushable extends js.Object {
 object BrotliFlushable {
   @scala.inline
   def apply(flush: js.Function0[scala.Unit]): BrotliFlushable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
+    val __obj = js.Dynamic.literal(flush = flush)
+  
     __obj.asInstanceOf[BrotliFlushable]
   }
 }

@@ -24,13 +24,8 @@ object IEventHandlers {
     Item: js.Function1[scala.Double, IEventHandler],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IEventHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetIndexByGUID")(GetIndexByGUID)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, GetIndexByGUID = GetIndexByGUID, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[IEventHandlers]
   }
 }

@@ -66,8 +66,7 @@ object QuestionnaireResponseItem {
     subject: Reference = null,
     text: java.lang.String = null
   ): QuestionnaireResponseItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linkId")(linkId)
+    val __obj = js.Dynamic.literal(linkId = linkId)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

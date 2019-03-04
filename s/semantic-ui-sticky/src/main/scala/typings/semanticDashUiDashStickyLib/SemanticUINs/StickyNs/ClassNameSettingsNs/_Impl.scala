@@ -37,12 +37,8 @@ object _Impl {
     supported: java.lang.String,
     top: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("bound")(bound)
-    __obj.updateDynamic("fixed")(fixed)
-    __obj.updateDynamic("supported")(supported)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, bound = bound, fixed = fixed, supported = supported, top = top)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

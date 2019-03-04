@@ -12,8 +12,8 @@ trait WebGLRenderbuffer extends js.Object {
 object WebGLRenderbuffer {
   @scala.inline
   def apply(__WebGLRenderbuffer: scala.Unit): WebGLRenderbuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__WebGLRenderbuffer")(__WebGLRenderbuffer)
+    val __obj = js.Dynamic.literal(__WebGLRenderbuffer = __WebGLRenderbuffer)
+  
     __obj.asInstanceOf[WebGLRenderbuffer]
   }
 }

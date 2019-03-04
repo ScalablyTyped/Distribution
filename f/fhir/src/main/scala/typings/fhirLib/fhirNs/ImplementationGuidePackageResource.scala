@@ -81,8 +81,7 @@ object ImplementationGuidePackageResource {
     sourceReference: Reference = null,
     sourceUri: uri = null
   ): ImplementationGuidePackageResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("example")(example)
+    val __obj = js.Dynamic.literal(example = example)
     if (_acronym != null) __obj.updateDynamic("_acronym")(_acronym)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_example != null) __obj.updateDynamic("_example")(_example)

@@ -110,25 +110,8 @@ object RangeFacet {
     valueField: js.Function1[java.lang.String, RangeFacet],
     valueScript: js.Function1[java.lang.String, RangeFacet]
   ): RangeFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("addRange")(addRange)
-    __obj.updateDynamic("addUnboundedFrom")(addUnboundedFrom)
-    __obj.updateDynamic("addUnboundedTo")(addUnboundedTo)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("keyField")(keyField)
-    __obj.updateDynamic("keyScript")(keyScript)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("valueField")(valueField)
-    __obj.updateDynamic("valueScript")(valueScript)
+    val __obj = js.Dynamic.literal(_type = _type, addRange = addRange, addUnboundedFrom = addUnboundedFrom, addUnboundedTo = addUnboundedTo, cacheFilter = cacheFilter, facetFilter = facetFilter, field = field, global = global, keyField = keyField, keyScript = keyScript, lang = lang, mode = mode, nested = nested, params = params, scope = scope, toJSON = toJSON, valueField = valueField, valueScript = valueScript)
+  
     __obj.asInstanceOf[RangeFacet]
   }
 }

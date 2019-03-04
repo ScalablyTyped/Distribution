@@ -20,11 +20,8 @@ object Anon_CENTER {
     RIGHT: reactDashFoundationLib.enumsMod.HorizontalAlignments,
     SPACED: reactDashFoundationLib.enumsMod.HorizontalAlignments
   ): Anon_CENTER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("JUSTIFY")(JUSTIFY)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("SPACED")(SPACED)
+    val __obj = js.Dynamic.literal(CENTER = CENTER, JUSTIFY = JUSTIFY, RIGHT = RIGHT, SPACED = SPACED)
+  
     __obj.asInstanceOf[Anon_CENTER]
   }
 }

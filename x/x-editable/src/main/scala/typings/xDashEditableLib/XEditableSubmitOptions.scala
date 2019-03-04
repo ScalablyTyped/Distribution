@@ -22,9 +22,7 @@ object XEditableSubmitOptions {
     data: js.Any = null,
     url: js.Any = null
   ): XEditableSubmitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, success = success)
     if (ajaxOptions != null) __obj.updateDynamic("ajaxOptions")(ajaxOptions)
     if (data != null) __obj.updateDynamic("data")(data)
     if (url != null) __obj.updateDynamic("url")(url)

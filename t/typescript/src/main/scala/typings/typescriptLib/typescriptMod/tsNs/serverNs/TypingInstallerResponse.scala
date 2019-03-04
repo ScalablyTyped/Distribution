@@ -14,8 +14,8 @@ object TypingInstallerResponse {
   def apply(
     kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | ActionValueInspected | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed
   ): TypingInstallerResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TypingInstallerResponse]
   }
 }

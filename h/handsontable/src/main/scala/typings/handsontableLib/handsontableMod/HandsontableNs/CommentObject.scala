@@ -16,9 +16,7 @@ trait CommentObject extends js.Object {
 object CommentObject {
   @scala.inline
   def apply(col: scala.Double, row: scala.Double, comment: handsontableLib.Anon_ReadOnly = null): CommentObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(col = col, row = row)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     __obj.asInstanceOf[CommentObject]
   }

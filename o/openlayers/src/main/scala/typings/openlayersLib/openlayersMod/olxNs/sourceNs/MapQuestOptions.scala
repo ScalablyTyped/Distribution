@@ -22,8 +22,7 @@ object MapQuestOptions {
     tileLoadFunction: openlayersLib.openlayersMod.TileLoadFunctionType = null,
     url: java.lang.String = null
   ): MapQuestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
+    val __obj = js.Dynamic.literal(layer = layer)
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(tileLoadFunction)

@@ -46,14 +46,7 @@ object EventManager {
     ],
     context: js.Object = null
   ): EventManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("clearEvents")(clearEvents)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("extendEvent")(extendEvent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, clear = clear, clearEvents = clearEvents, destroy = destroy, extendEvent = extendEvent, fireEvent = fireEvent, removeEventListener = removeEventListener)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[EventManager]
   }

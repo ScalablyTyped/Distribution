@@ -19,10 +19,10 @@ trait LodashPartition extends js.Object {
     callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def apply[T](callback: lodashLib.lodashMod.underscoreNs.`__`): LodashPartition1x2[T] = js.native
-  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashPartition2x2[T] = js.native
+  def apply[T](callback: lodashLib.lodashMod.underscoreNs.__): LodashPartition1x2[T] = js.native
+  def apply[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashPartition2x2[T] = js.native
   def apply[T](
-    callback: lodashLib.lodashMod.underscoreNs.`__`,
+    callback: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashPartition1x2[T] = js.native
 }

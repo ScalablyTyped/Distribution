@@ -22,9 +22,7 @@ object Tab {
     responses: js.Array[java.lang.String] = null,
     variables: java.lang.String = null
   ): Tab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, query = query)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (responses != null) __obj.updateDynamic("responses")(responses)
     if (variables != null) __obj.updateDynamic("variables")(variables)

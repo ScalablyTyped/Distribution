@@ -18,8 +18,8 @@ trait CommandWithSimpleStateBase extends CommandBase {
 object CommandWithSimpleStateBase {
   @scala.inline
   def apply(getState: js.Function0[SimpleCommandState]): CommandWithSimpleStateBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(getState = getState)
+  
     __obj.asInstanceOf[CommandWithSimpleStateBase]
   }
 }

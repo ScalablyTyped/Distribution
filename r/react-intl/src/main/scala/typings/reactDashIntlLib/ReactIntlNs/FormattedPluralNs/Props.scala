@@ -31,8 +31,7 @@ object Props {
     two: js.Any = null,
     zero: js.Any = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (children != null) __obj.updateDynamic("children")(children)
     if (few != null) __obj.updateDynamic("few")(few)
     if (many != null) __obj.updateDynamic("many")(many)

@@ -26,14 +26,8 @@ object IPrintTask {
     properties: winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataPackagePropertySet,
     source: IPrintDocumentSource
   ): IPrintTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oncompleted")(oncompleted)
-    __obj.updateDynamic("onpreviewing")(onpreviewing)
-    __obj.updateDynamic("onprogressing")(onprogressing)
-    __obj.updateDynamic("onsubmitting")(onsubmitting)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(oncompleted = oncompleted, onpreviewing = onpreviewing, onprogressing = onprogressing, onsubmitting = onsubmitting, options = options, properties = properties, source = source)
+  
     __obj.asInstanceOf[IPrintTask]
   }
 }

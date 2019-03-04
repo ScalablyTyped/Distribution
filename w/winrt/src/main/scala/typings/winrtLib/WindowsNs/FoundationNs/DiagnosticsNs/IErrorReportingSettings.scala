@@ -16,9 +16,8 @@ object IErrorReportingSettings {
     getErrorOptions: js.Function0[ErrorOptions],
     setErrorOptions: js.Function1[ErrorOptions, scala.Unit]
   ): IErrorReportingSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getErrorOptions")(getErrorOptions)
-    __obj.updateDynamic("setErrorOptions")(setErrorOptions)
+    val __obj = js.Dynamic.literal(getErrorOptions = getErrorOptions, setErrorOptions = setErrorOptions)
+  
     __obj.asInstanceOf[IErrorReportingSettings]
   }
 }

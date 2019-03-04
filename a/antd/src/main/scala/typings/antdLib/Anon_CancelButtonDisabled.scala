@@ -28,15 +28,8 @@ object Anon_CancelButtonDisabled {
     visible: scala.Boolean,
     width: scala.Double
   ): Anon_CancelButtonDisabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelButtonDisabled")(cancelButtonDisabled)
-    __obj.updateDynamic("confirmLoading")(confirmLoading)
-    __obj.updateDynamic("maskTransitionName")(maskTransitionName)
-    __obj.updateDynamic("okButtonDisabled")(okButtonDisabled)
-    __obj.updateDynamic("okType")(okType.asInstanceOf[js.Any])
-    __obj.updateDynamic("transitionName")(transitionName)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(cancelButtonDisabled = cancelButtonDisabled, confirmLoading = confirmLoading, maskTransitionName = maskTransitionName, okButtonDisabled = okButtonDisabled, okType = okType.asInstanceOf[js.Any], transitionName = transitionName, visible = visible, width = width)
+  
     __obj.asInstanceOf[Anon_CancelButtonDisabled]
   }
 }

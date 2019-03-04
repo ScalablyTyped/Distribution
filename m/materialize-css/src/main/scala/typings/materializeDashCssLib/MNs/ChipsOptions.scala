@@ -60,15 +60,8 @@ object ChipsOptions {
     placeholder: java.lang.String,
     secondaryPlaceholder: java.lang.String
   ): ChipsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocompleteOptions")(autocompleteOptions)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("onChipAdd")(onChipAdd)
-    __obj.updateDynamic("onChipDelete")(onChipDelete)
-    __obj.updateDynamic("onChipSelect")(onChipSelect)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("secondaryPlaceholder")(secondaryPlaceholder)
+    val __obj = js.Dynamic.literal(autocompleteOptions = autocompleteOptions, data = data, limit = limit, onChipAdd = onChipAdd, onChipDelete = onChipDelete, onChipSelect = onChipSelect, placeholder = placeholder, secondaryPlaceholder = secondaryPlaceholder)
+  
     __obj.asInstanceOf[ChipsOptions]
   }
 }

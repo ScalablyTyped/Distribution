@@ -27,9 +27,8 @@ trait ScaleRangeLayer extends js.Object {
 object ScaleRangeLayer {
   @scala.inline
   def apply(maxScale: scala.Double, minScale: scala.Double): ScaleRangeLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxScale")(maxScale)
-    __obj.updateDynamic("minScale")(minScale)
+    val __obj = js.Dynamic.literal(maxScale = maxScale, minScale = minScale)
+  
     __obj.asInstanceOf[ScaleRangeLayer]
   }
 }

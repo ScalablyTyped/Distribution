@@ -46,10 +46,8 @@ object IServer {
     close: js.Function0[scala.Unit],
     open: js.Function1[scala.Double, scala.Unit]
   ): IServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClient")(addClient)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(addClient = addClient, close = close, open = open)
+  
     __obj.asInstanceOf[IServer]
   }
 }

@@ -50,26 +50,8 @@ object ComponentProps {
     TrComponent: reactLib.reactMod.ReactNs.ReactType[_],
     TrGroupComponent: reactLib.reactMod.ReactNs.ReactType[_]
   ): ComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AggregatedComponent")(AggregatedComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("ExpanderComponent")(ExpanderComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("FilterComponent")(FilterComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("LoadingComponent")(LoadingComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("NextComponent")(NextComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("NoDataComponent")(NoDataComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("PaginationComponent")(PaginationComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("PivotComponent")(PivotComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("PivotValueComponent")(PivotValueComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("PreviousComponent")(PreviousComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("ResizerComponent")(ResizerComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TableComponent")(TableComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TbodyComponent")(TbodyComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TdComponent")(TdComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TfootComponent")(TfootComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("ThComponent")(ThComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TheadComponent")(TheadComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TrComponent")(TrComponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("TrGroupComponent")(TrGroupComponent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AggregatedComponent = AggregatedComponent.asInstanceOf[js.Any], ExpanderComponent = ExpanderComponent.asInstanceOf[js.Any], FilterComponent = FilterComponent.asInstanceOf[js.Any], LoadingComponent = LoadingComponent.asInstanceOf[js.Any], NextComponent = NextComponent.asInstanceOf[js.Any], NoDataComponent = NoDataComponent.asInstanceOf[js.Any], PaginationComponent = PaginationComponent.asInstanceOf[js.Any], PivotComponent = PivotComponent.asInstanceOf[js.Any], PivotValueComponent = PivotValueComponent.asInstanceOf[js.Any], PreviousComponent = PreviousComponent.asInstanceOf[js.Any], ResizerComponent = ResizerComponent.asInstanceOf[js.Any], TableComponent = TableComponent.asInstanceOf[js.Any], TbodyComponent = TbodyComponent.asInstanceOf[js.Any], TdComponent = TdComponent.asInstanceOf[js.Any], TfootComponent = TfootComponent.asInstanceOf[js.Any], ThComponent = ThComponent.asInstanceOf[js.Any], TheadComponent = TheadComponent.asInstanceOf[js.Any], TrComponent = TrComponent.asInstanceOf[js.Any], TrGroupComponent = TrGroupComponent.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ComponentProps]
   }
 }

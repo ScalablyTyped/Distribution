@@ -32,9 +32,8 @@ object WhileStatement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): WhileStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

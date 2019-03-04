@@ -73,13 +73,7 @@ object PieLabelRenderProps {
     startAngle: scala.Int | scala.Double = null,
     valueKey: java.lang.String | scala.Double | (js.Function1[/* dataObject */ js.Any, scala.Double]) = null
   ): PieLabelRenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("textAnchor")(textAnchor)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any], name = name, stroke = stroke, textAnchor = textAnchor, x = x, y = y)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (activeShape != null) __obj.updateDynamic("activeShape")(activeShape.asInstanceOf[js.Any])

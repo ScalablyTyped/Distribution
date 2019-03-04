@@ -13,8 +13,8 @@ trait DatauriBoolean
 object DatauriBoolean {
   @scala.inline
   def apply(over32kb: scala.Boolean): DatauriBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("over32kb")(over32kb)
+    val __obj = js.Dynamic.literal(over32kb = over32kb)
+  
     __obj.asInstanceOf[DatauriBoolean]
   }
 }

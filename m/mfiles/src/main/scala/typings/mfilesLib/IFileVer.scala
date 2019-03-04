@@ -20,11 +20,8 @@ object IFileVer {
     ID: scala.Double,
     Version: scala.Double
   ): IFileVer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, ID = ID, Version = Version)
+  
     __obj.asInstanceOf[IFileVer]
   }
 }

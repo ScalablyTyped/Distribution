@@ -30,16 +30,8 @@ object ClientUserValue {
     sip: java.lang.String,
     title: java.lang.String
   ): ClientUserValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("department")(department)
-    __obj.updateDynamic("displayStr")(displayStr)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("jobTitle")(jobTitle)
-    __obj.updateDynamic("lookupId")(lookupId)
-    __obj.updateDynamic("lookupValue")(lookupValue)
-    __obj.updateDynamic("picture")(picture)
-    __obj.updateDynamic("sip")(sip)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(department = department, displayStr = displayStr, email = email, jobTitle = jobTitle, lookupId = lookupId, lookupValue = lookupValue, picture = picture, sip = sip, title = title)
+  
     __obj.asInstanceOf[ClientUserValue]
   }
 }

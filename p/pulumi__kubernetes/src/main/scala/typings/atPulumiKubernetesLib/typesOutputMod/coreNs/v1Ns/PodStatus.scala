@@ -103,18 +103,8 @@ object PodStatus {
     reason: java.lang.String,
     startTime: java.lang.String
   ): PodStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("containerStatuses")(containerStatuses)
-    __obj.updateDynamic("hostIP")(hostIP)
-    __obj.updateDynamic("initContainerStatuses")(initContainerStatuses)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("nominatedNodeName")(nominatedNodeName)
-    __obj.updateDynamic("phase")(phase)
-    __obj.updateDynamic("podIP")(podIP)
-    __obj.updateDynamic("qosClass")(qosClass)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(conditions = conditions, containerStatuses = containerStatuses, hostIP = hostIP, initContainerStatuses = initContainerStatuses, message = message, nominatedNodeName = nominatedNodeName, phase = phase, podIP = podIP, qosClass = qosClass, reason = reason, startTime = startTime)
+  
     __obj.asInstanceOf[PodStatus]
   }
 }

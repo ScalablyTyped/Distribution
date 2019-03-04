@@ -32,17 +32,8 @@ object TinderPhoto {
     ydistance_percent: scala.Double,
     yoffset_percent: scala.Double
   ): TinderPhoto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("processedFiles")(processedFiles)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("xdistance_percent")(xdistance_percent)
-    __obj.updateDynamic("xoffset_percent")(xoffset_percent)
-    __obj.updateDynamic("ydistance_percent")(ydistance_percent)
-    __obj.updateDynamic("yoffset_percent")(yoffset_percent)
+    val __obj = js.Dynamic.literal(extension = extension, fileName = fileName, id = id, main = main, processedFiles = processedFiles, url = url, xdistance_percent = xdistance_percent, xoffset_percent = xoffset_percent, ydistance_percent = ydistance_percent, yoffset_percent = yoffset_percent)
+  
     __obj.asInstanceOf[TinderPhoto]
   }
 }

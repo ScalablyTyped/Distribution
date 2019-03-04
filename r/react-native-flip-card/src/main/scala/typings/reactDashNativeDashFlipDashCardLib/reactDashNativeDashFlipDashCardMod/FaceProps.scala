@@ -12,8 +12,8 @@ trait FaceProps extends js.Object {
 object FaceProps {
   @scala.inline
   def apply(chilren: js.Array[reactLib.reactMod.Global.JSXNs.Element]): FaceProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chilren")(chilren)
+    val __obj = js.Dynamic.literal(chilren = chilren)
+  
     __obj.asInstanceOf[FaceProps]
   }
 }

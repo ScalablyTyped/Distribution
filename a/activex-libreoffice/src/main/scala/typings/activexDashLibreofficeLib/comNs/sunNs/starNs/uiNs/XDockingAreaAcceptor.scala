@@ -57,14 +57,8 @@ object XDockingAreaAcceptor {
     requestDockingAreaSpace: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Boolean],
     setDockingAreaSpace: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
   ): XDockingAreaAcceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContainerWindow")(ContainerWindow)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContainerWindow")(getContainerWindow)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("requestDockingAreaSpace")(requestDockingAreaSpace)
-    __obj.updateDynamic("setDockingAreaSpace")(setDockingAreaSpace)
+    val __obj = js.Dynamic.literal(ContainerWindow = ContainerWindow, acquire = acquire, getContainerWindow = getContainerWindow, queryInterface = queryInterface, release = release, requestDockingAreaSpace = requestDockingAreaSpace, setDockingAreaSpace = setDockingAreaSpace)
+  
     __obj.asInstanceOf[XDockingAreaAcceptor]
   }
 }

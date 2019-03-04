@@ -52,27 +52,8 @@ object Anon_DOCS {
     WEBCAM: java.lang.String,
     YOUTUBE: java.lang.String
   ): Anon_DOCS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOCS")(DOCS)
-    __obj.updateDynamic("DOCS_IMAGES")(DOCS_IMAGES)
-    __obj.updateDynamic("DOCS_IMAGES_AND_VIDEOS")(DOCS_IMAGES_AND_VIDEOS)
-    __obj.updateDynamic("DOCS_VIDEOS")(DOCS_VIDEOS)
-    __obj.updateDynamic("DOCUMENTS")(DOCUMENTS)
-    __obj.updateDynamic("DRAWINGS")(DRAWINGS)
-    __obj.updateDynamic("FOLDERS")(FOLDERS)
-    __obj.updateDynamic("FORMS")(FORMS)
-    __obj.updateDynamic("IMAGE_SEARCH")(IMAGE_SEARCH)
-    __obj.updateDynamic("MAPS")(MAPS)
-    __obj.updateDynamic("PDFS")(PDFS)
-    __obj.updateDynamic("PHOTOS")(PHOTOS)
-    __obj.updateDynamic("PHOTO_ALBUMS")(PHOTO_ALBUMS)
-    __obj.updateDynamic("PHOTO_UPLOAD")(PHOTO_UPLOAD)
-    __obj.updateDynamic("PRESENTATIONS")(PRESENTATIONS)
-    __obj.updateDynamic("RECENTLY_PICKED")(RECENTLY_PICKED)
-    __obj.updateDynamic("SPREADSHEETS")(SPREADSHEETS)
-    __obj.updateDynamic("VIDEO_SEARCH")(VIDEO_SEARCH)
-    __obj.updateDynamic("WEBCAM")(WEBCAM)
-    __obj.updateDynamic("YOUTUBE")(YOUTUBE)
+    val __obj = js.Dynamic.literal(DOCS = DOCS, DOCS_IMAGES = DOCS_IMAGES, DOCS_IMAGES_AND_VIDEOS = DOCS_IMAGES_AND_VIDEOS, DOCS_VIDEOS = DOCS_VIDEOS, DOCUMENTS = DOCUMENTS, DRAWINGS = DRAWINGS, FOLDERS = FOLDERS, FORMS = FORMS, IMAGE_SEARCH = IMAGE_SEARCH, MAPS = MAPS, PDFS = PDFS, PHOTOS = PHOTOS, PHOTO_ALBUMS = PHOTO_ALBUMS, PHOTO_UPLOAD = PHOTO_UPLOAD, PRESENTATIONS = PRESENTATIONS, RECENTLY_PICKED = RECENTLY_PICKED, SPREADSHEETS = SPREADSHEETS, VIDEO_SEARCH = VIDEO_SEARCH, WEBCAM = WEBCAM, YOUTUBE = YOUTUBE)
+  
     __obj.asInstanceOf[Anon_DOCS]
   }
 }

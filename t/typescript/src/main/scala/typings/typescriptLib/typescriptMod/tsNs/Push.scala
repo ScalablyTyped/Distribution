@@ -13,8 +13,8 @@ trait Push[T] extends js.Object {
 object Push {
   @scala.inline
   def apply[T](push: js.Function1[/* repeated */ T, scala.Unit]): Push[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(push = push)
+  
     __obj.asInstanceOf[Push[T]]
   }
 }

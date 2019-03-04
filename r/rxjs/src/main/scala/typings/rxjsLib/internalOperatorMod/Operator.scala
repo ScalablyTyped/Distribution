@@ -18,8 +18,8 @@ object Operator {
       rxjsLib.internalTypesMod.TeardownLogic
     ]
   ): Operator[T, R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("call")(call)
+    val __obj = js.Dynamic.literal(call = call)
+  
     __obj.asInstanceOf[Operator[T, R]]
   }
 }

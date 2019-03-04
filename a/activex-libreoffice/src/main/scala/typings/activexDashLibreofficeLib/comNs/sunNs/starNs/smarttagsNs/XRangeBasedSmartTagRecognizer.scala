@@ -41,12 +41,8 @@ object XRangeBasedSmartTagRecognizer {
     ],
     release: js.Function0[scala.Unit]
   ): XRangeBasedSmartTagRecognizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("recognizeTextRange")(recognizeTextRange)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, initialize = initialize, queryInterface = queryInterface, recognizeTextRange = recognizeTextRange, release = release)
+  
     __obj.asInstanceOf[XRangeBasedSmartTagRecognizer]
   }
 }

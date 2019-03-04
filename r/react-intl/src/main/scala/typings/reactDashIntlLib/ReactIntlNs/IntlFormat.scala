@@ -26,14 +26,8 @@ object IntlFormat {
     formatRelative: reactLib.reactMod.ReactNs.Requireable[_],
     formatTime: reactLib.reactMod.ReactNs.Requireable[_]
   ): IntlFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatDate")(formatDate)
-    __obj.updateDynamic("formatHTMLMessage")(formatHTMLMessage)
-    __obj.updateDynamic("formatMessage")(formatMessage)
-    __obj.updateDynamic("formatNumber")(formatNumber)
-    __obj.updateDynamic("formatPlural")(formatPlural)
-    __obj.updateDynamic("formatRelative")(formatRelative)
-    __obj.updateDynamic("formatTime")(formatTime)
+    val __obj = js.Dynamic.literal(formatDate = formatDate, formatHTMLMessage = formatHTMLMessage, formatMessage = formatMessage, formatNumber = formatNumber, formatPlural = formatPlural, formatRelative = formatRelative, formatTime = formatTime)
+  
     __obj.asInstanceOf[IntlFormat]
   }
 }

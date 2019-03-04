@@ -34,12 +34,8 @@ object LoginRequest {
     url: java.lang.String,
     version: java.lang.String
   ): LoginRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("interactive")(interactive)
-    __obj.updateDynamic("rememberLogin")(rememberLogin)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(agent = agent, interactive = interactive, rememberLogin = rememberLogin, url = url, version = version)
+  
     __obj.asInstanceOf[LoginRequest]
   }
 }

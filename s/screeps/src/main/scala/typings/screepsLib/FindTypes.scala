@@ -86,7 +86,30 @@ object FindTypes {
       RoomPosition | Creep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone
     ] = null
   ): FindTypes = {
-    val __obj = js.Dynamic.literal(`1` = `1`, `10` = `10`, `101` = `101`, `102` = `102`, `103` = `103`, `104` = `104`, `105` = `105`, `106` = `106`, `107` = `107`, `108` = `108`, `109` = `109`, `110` = `110`, `111` = `111`, `112` = `112`, `113` = `113`, `114` = `114`, `115` = `115`, `116` = `116`, `117` = `117`, `118` = `118`, `3` = `3`, `5` = `5`, `7` = `7`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("10")(`10`)
+    __obj.updateDynamic("101")(`101`)
+    __obj.updateDynamic("102")(`102`)
+    __obj.updateDynamic("103")(`103`)
+    __obj.updateDynamic("104")(`104`)
+    __obj.updateDynamic("105")(`105`)
+    __obj.updateDynamic("106")(`106`)
+    __obj.updateDynamic("107")(`107`)
+    __obj.updateDynamic("108")(`108`)
+    __obj.updateDynamic("109")(`109`)
+    __obj.updateDynamic("110")(`110`)
+    __obj.updateDynamic("111")(`111`)
+    __obj.updateDynamic("112")(`112`)
+    __obj.updateDynamic("113")(`113`)
+    __obj.updateDynamic("114")(`114`)
+    __obj.updateDynamic("115")(`115`)
+    __obj.updateDynamic("116")(`116`)
+    __obj.updateDynamic("117")(`117`)
+    __obj.updateDynamic("118")(`118`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("7")(`7`)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FindTypes]
   }

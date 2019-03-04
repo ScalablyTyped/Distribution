@@ -18,10 +18,8 @@ trait DatabaseChangesResponse extends js.Object {
 object DatabaseChangesResponse {
   @scala.inline
   def apply(last_seq: js.Any, pending: scala.Double, results: js.Array[DatabaseChangesResultItem]): DatabaseChangesResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("last_seq")(last_seq)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(last_seq = last_seq, pending = pending, results = results)
+  
     __obj.asInstanceOf[DatabaseChangesResponse]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Full {
     medium: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat,
     short: intlDashMessageformatLib.intlDashMessageformatMod.DateFormat
   ): Anon_Full = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("long")(long)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("short")(short)
+    val __obj = js.Dynamic.literal(full = full, long = long, medium = medium, short = short)
+  
     __obj.asInstanceOf[Anon_Full]
   }
 }

@@ -20,8 +20,8 @@ object SpreadProperty {
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.SpreadProperty
   ): SpreadProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SpreadProperty]
   }
 }

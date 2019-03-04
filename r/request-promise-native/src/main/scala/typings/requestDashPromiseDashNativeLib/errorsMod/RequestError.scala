@@ -22,11 +22,7 @@ object RequestError {
     response: requestDashPromiseDashNativeLib.requestDashPromiseDashNativeMod.requestPromiseNs.FullResponse,
     stack: java.lang.String = null
   ): RequestError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cause")(cause)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(cause = cause, error = error, options = options.asInstanceOf[js.Any], response = response)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[RequestError]
   }

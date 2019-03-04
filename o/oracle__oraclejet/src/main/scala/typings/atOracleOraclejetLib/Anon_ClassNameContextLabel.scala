@@ -56,9 +56,7 @@ object Anon_ClassNameContextLabel {
       java.lang.String | scala.Unit | scala.Null
     ]) | java.lang.String = null
   ): Anon_ClassNameContextLabel[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("resizable")(resizable)
+    val __obj = js.Dynamic.literal(label = label, resizable = resizable)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])

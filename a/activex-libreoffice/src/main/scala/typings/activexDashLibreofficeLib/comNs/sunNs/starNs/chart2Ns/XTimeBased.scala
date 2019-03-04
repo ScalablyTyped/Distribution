@@ -27,13 +27,8 @@ object XTimeBased {
     setToPointInTime: js.Function1[scala.Double, scala.Boolean],
     switchToNext: js.Function1[scala.Boolean, scala.Boolean]
   ): XTimeBased = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setRange")(setRange)
-    __obj.updateDynamic("setToPointInTime")(setToPointInTime)
-    __obj.updateDynamic("switchToNext")(switchToNext)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setRange = setRange, setToPointInTime = setToPointInTime, switchToNext = switchToNext)
+  
     __obj.asInstanceOf[XTimeBased]
   }
 }

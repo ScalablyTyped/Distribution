@@ -13,9 +13,8 @@ trait SlotOnloadEvent extends js.Object {
 object SlotOnloadEvent {
   @scala.inline
   def apply(serviceName: java.lang.String, slot: doubleclickDashGptLib.googletagNs.Slot): SlotOnloadEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("slot")(slot)
+    val __obj = js.Dynamic.literal(serviceName = serviceName, slot = slot)
+  
     __obj.asInstanceOf[SlotOnloadEvent]
   }
 }

@@ -34,13 +34,8 @@ object XActiveDataSink {
     release: js.Function0[scala.Unit],
     setInputStream: js.Function1[XInputStream, scala.Unit]
   ): XActiveDataSink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInputStream")(setInputStream)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, acquire = acquire, getInputStream = getInputStream, queryInterface = queryInterface, release = release, setInputStream = setInputStream)
+  
     __obj.asInstanceOf[XActiveDataSink]
   }
 }

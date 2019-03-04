@@ -139,35 +139,8 @@ object Text {
     removeTextContent: js.Function1[XTextContent, scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): Text = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("EndRedline")(EndRedline.asInstanceOf[js.Any])
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("StartRedline")(StartRedline.asInstanceOf[js.Any])
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareRegionEnds")(compareRegionEnds)
-    __obj.updateDynamic("compareRegionStarts")(compareRegionStarts)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("createTextCursor")(createTextCursor)
-    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
-    __obj.updateDynamic("insertString")(insertString)
-    __obj.updateDynamic("insertTextContent")(insertTextContent)
-    __obj.updateDynamic("insertTextContentAfter")(insertTextContentAfter)
-    __obj.updateDynamic("insertTextContentBefore")(insertTextContentBefore)
-    __obj.updateDynamic("moveTextRange")(moveTextRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTextContent")(removeTextContent)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, End = End, EndRedline = EndRedline.asInstanceOf[js.Any], Start = Start, StartRedline = StartRedline.asInstanceOf[js.Any], String = String, acquire = acquire, compareRegionEnds = compareRegionEnds, compareRegionStarts = compareRegionStarts, createEnumeration = createEnumeration, createTextCursor = createTextCursor, createTextCursorByRange = createTextCursorByRange, getElementType = getElementType, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, hasElements = hasElements, insertControlCharacter = insertControlCharacter, insertString = insertString, insertTextContent = insertTextContent, insertTextContentAfter = insertTextContentAfter, insertTextContentBefore = insertTextContentBefore, moveTextRange = moveTextRange, queryInterface = queryInterface, release = release, removeTextContent = removeTextContent, setString = setString)
+  
     __obj.asInstanceOf[Text]
   }
 }

@@ -37,10 +37,7 @@ object Edge {
     label: Message = null,
     properties: PropertyBag = null
   ): Edge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("sourceNodeId")(sourceNodeId)
-    __obj.updateDynamic("targetNodeId")(targetNodeId)
+    val __obj = js.Dynamic.literal(id = id, sourceNodeId = sourceNodeId, targetNodeId = targetNodeId)
     if (label != null) __obj.updateDynamic("label")(label)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Edge]

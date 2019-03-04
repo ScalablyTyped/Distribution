@@ -14,8 +14,7 @@ trait Anon_Padding extends js.Object {
 object Anon_Padding {
   @scala.inline
   def apply(points: js.Array[Anon_LatitudeLongitude], padding: js.Array[scala.Double] = null): Anon_Padding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     if (padding != null) __obj.updateDynamic("padding")(padding)
     __obj.asInstanceOf[Anon_Padding]
   }

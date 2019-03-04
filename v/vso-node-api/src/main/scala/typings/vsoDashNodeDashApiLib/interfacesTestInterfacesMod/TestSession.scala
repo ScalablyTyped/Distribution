@@ -87,22 +87,8 @@ object TestSession {
     title: java.lang.String,
     url: java.lang.String
   ): TestSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("propertyBag")(propertyBag)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(area = area, comment = comment, endDate = endDate, id = id, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, owner = owner, project = project, propertyBag = propertyBag, revision = revision, source = source, startDate = startDate, state = state, title = title, url = url)
+  
     __obj.asInstanceOf[TestSession]
   }
 }

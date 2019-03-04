@@ -27,10 +27,8 @@ object ResourceArgs {
     pathPart: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]
   ): ResourceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    __obj.updateDynamic("pathPart")(pathPart.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ResourceArgs]
   }
 }

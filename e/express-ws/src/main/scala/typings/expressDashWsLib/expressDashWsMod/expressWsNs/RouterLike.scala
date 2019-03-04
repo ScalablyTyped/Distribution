@@ -18,8 +18,7 @@ object RouterLike {
     NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): RouterLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[RouterLike]

@@ -19,9 +19,8 @@ object Anon_ImplicitGlobalVariable {
     parent: scala.Null,
     `type`: eslintLib.eslintLibStrings.ImplicitGlobalVariable
   ): Anon_ImplicitGlobalVariable = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(node = node, parent = parent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ImplicitGlobalVariable]
   }
 }

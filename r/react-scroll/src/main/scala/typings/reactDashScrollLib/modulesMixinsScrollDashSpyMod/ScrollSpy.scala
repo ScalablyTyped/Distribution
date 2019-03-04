@@ -36,19 +36,8 @@ object ScrollSpy {
     update: js.Function0[scala.Unit],
     updateStates: js.Function0[scala.Unit]
   ): ScrollSpy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addSpyHandler")(addSpyHandler)
-    __obj.updateDynamic("addStateHandler")(addStateHandler)
-    __obj.updateDynamic("currentPositionY")(currentPositionY)
-    __obj.updateDynamic("isMounted")(isMounted)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("scrollHandler")(scrollHandler)
-    __obj.updateDynamic("scrollSpyContainers")(scrollSpyContainers)
-    __obj.updateDynamic("spyCallbacks")(spyCallbacks)
-    __obj.updateDynamic("spySetState")(spySetState)
-    __obj.updateDynamic("unmount")(unmount)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateStates")(updateStates)
+    val __obj = js.Dynamic.literal(addSpyHandler = addSpyHandler, addStateHandler = addStateHandler, currentPositionY = currentPositionY, isMounted = isMounted, mount = mount, scrollHandler = scrollHandler, scrollSpyContainers = scrollSpyContainers, spyCallbacks = spyCallbacks, spySetState = spySetState, unmount = unmount, update = update, updateStates = updateStates)
+  
     __obj.asInstanceOf[ScrollSpy]
   }
 }

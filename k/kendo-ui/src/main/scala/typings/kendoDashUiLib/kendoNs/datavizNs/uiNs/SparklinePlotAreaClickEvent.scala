@@ -25,10 +25,7 @@ object SparklinePlotAreaClickEvent {
     x: js.Any = null,
     y: js.Any = null
   ): SparklinePlotAreaClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (category != null) __obj.updateDynamic("category")(category)
     if (element != null) __obj.updateDynamic("element")(element)
     if (value != null) __obj.updateDynamic("value")(value)

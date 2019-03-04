@@ -14,10 +14,8 @@ trait storage extends js.Object {
 object storage {
   @scala.inline
   def apply(cookie: cookie, local: local, session: session): storage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(cookie = cookie, local = local, session = session)
+  
     __obj.asInstanceOf[storage]
   }
 }

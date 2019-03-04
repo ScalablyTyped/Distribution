@@ -12,8 +12,8 @@ trait LambdaConfig extends js.Object {
 object LambdaConfig {
   @scala.inline
   def apply(allowNullInjection: scala.Boolean): LambdaConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowNullInjection")(allowNullInjection)
+    val __obj = js.Dynamic.literal(allowNullInjection = allowNullInjection)
+  
     __obj.asInstanceOf[LambdaConfig]
   }
 }

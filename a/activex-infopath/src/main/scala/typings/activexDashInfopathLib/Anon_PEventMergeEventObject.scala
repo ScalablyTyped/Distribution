@@ -12,8 +12,8 @@ trait Anon_PEventMergeEventObject extends js.Object {
 object Anon_PEventMergeEventObject {
   @scala.inline
   def apply(pEvent: activexDashInfopathLib.InfoPathNs.MergeEventObject): Anon_PEventMergeEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pEvent")(pEvent)
+    val __obj = js.Dynamic.literal(pEvent = pEvent)
+  
     __obj.asInstanceOf[Anon_PEventMergeEventObject]
   }
 }

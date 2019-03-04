@@ -16,9 +16,8 @@ object Anon_MediaTypeHeaderValue {
     mediaTypeHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpMediaTypeHeaderValue,
     returnValue: scala.Boolean
   ): Anon_MediaTypeHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mediaTypeHeaderValue")(mediaTypeHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(mediaTypeHeaderValue = mediaTypeHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_MediaTypeHeaderValue]
   }
 }

@@ -31,12 +31,8 @@ object XDrop {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDrop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("dropByIndex")(dropByIndex)
-    __obj.updateDynamic("dropByName")(dropByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, dropByIndex = dropByIndex, dropByName = dropByName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDrop]
   }
 }

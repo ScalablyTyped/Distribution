@@ -40,21 +40,8 @@ object Anon_Black {
     white: Anon_0,
     yellow: Anon_20
   ): Anon_Black = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("coolGray")(coolGray)
-    __obj.updateDynamic("cyan")(cyan)
-    __obj.updateDynamic("gray")(gray)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("magenta")(magenta)
-    __obj.updateDynamic("orange")(orange)
-    __obj.updateDynamic("purple")(purple)
-    __obj.updateDynamic("red")(red)
-    __obj.updateDynamic("teal")(teal)
-    __obj.updateDynamic("warmGray")(warmGray)
-    __obj.updateDynamic("white")(white)
-    __obj.updateDynamic("yellow")(yellow)
+    val __obj = js.Dynamic.literal(black = black, blue = blue, coolGray = coolGray, cyan = cyan, gray = gray, green = green, magenta = magenta, orange = orange, purple = purple, red = red, teal = teal, warmGray = warmGray, white = white, yellow = yellow)
+  
     __obj.asInstanceOf[Anon_Black]
   }
 }

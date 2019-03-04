@@ -20,8 +20,7 @@ object ThermometerOption {
     freq: scala.Int | scala.Double = null,
     toCelsius: js.Function1[/* val */ scala.Double, scala.Double] = null
   ): ThermometerOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller)
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])
     if (toCelsius != null) __obj.updateDynamic("toCelsius")(toCelsius)

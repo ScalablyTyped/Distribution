@@ -24,13 +24,8 @@ object DragDropManager {
     getMonitor: js.Function0[DragDropMonitor],
     getRegistry: js.Function0[HandlerRegistry]
   ): DragDropManager[Context] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("getActions")(getActions)
-    __obj.updateDynamic("getBackend")(getBackend)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("getMonitor")(getMonitor)
-    __obj.updateDynamic("getRegistry")(getRegistry)
+    val __obj = js.Dynamic.literal(dispatch = dispatch, getActions = getActions, getBackend = getBackend, getContext = getContext, getMonitor = getMonitor, getRegistry = getRegistry)
+  
     __obj.asInstanceOf[DragDropManager[Context]]
   }
 }

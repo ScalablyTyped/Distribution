@@ -28,9 +28,8 @@ object Anon_Add {
     ],
     get: js.Function1[scala.Double, js.Array[java.lang.String]]
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(get = get)
     __obj.updateDynamic("add")(add_id)
-    __obj.updateDynamic("get")(get)
     __obj.asInstanceOf[Anon_Add]
   }
 }

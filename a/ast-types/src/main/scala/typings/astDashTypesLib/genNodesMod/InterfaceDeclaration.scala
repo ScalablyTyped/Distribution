@@ -29,9 +29,9 @@ object InterfaceDeclaration {
     `type`: astDashTypesLib.astDashTypesLibStrings.InterfaceDeclaration,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): InterfaceDeclaration = {
-    val __obj = js.Dynamic.literal(`extends` = `extends`, `type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body, id = id)
+    __obj.updateDynamic("extends")(`extends`)
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[InterfaceDeclaration]
   }

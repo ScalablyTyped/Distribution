@@ -80,11 +80,7 @@ object ItemOptions {
     lat: scala.Int | scala.Double = null,
     long: scala.Int | scala.Double = null
   ): ItemOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], description = description, title = title, url = url)
     if (author != null) __obj.updateDynamic("author")(author)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (custom_elements != null) __obj.updateDynamic("custom_elements")(custom_elements)

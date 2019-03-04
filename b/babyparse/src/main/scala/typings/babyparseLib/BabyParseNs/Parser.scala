@@ -21,10 +21,8 @@ object Parser {
     getCharIndex: js.Function0[scala.Double],
     parse: js.Function1[java.lang.String, js.Any]
   ): Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("getCharIndex")(getCharIndex)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(abort = abort, getCharIndex = getCharIndex, parse = parse)
+  
     __obj.asInstanceOf[Parser]
   }
 }

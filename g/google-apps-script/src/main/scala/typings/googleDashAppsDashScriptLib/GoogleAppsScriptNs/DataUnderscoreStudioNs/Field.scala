@@ -54,28 +54,8 @@ object Field {
     setName: js.Function1[java.lang.String, Field],
     setType: js.Function1[FieldType, Field]
   ): Field = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAggregation")(getAggregation)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getGroup")(getGroup)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIsReaggregatable")(getIsReaggregatable)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isDimension")(isDimension)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("isMetric")(isMetric)
-    __obj.updateDynamic("setAggregation")(setAggregation)
-    __obj.updateDynamic("setDescription")(setDescription)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("setGroup")(setGroup)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setIsHidden")(setIsHidden)
-    __obj.updateDynamic("setIsReaggregatable")(setIsReaggregatable)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(getAggregation = getAggregation, getDescription = getDescription, getFormula = getFormula, getGroup = getGroup, getId = getId, getIsReaggregatable = getIsReaggregatable, getName = getName, getType = getType, isDefault = isDefault, isDimension = isDimension, isHidden = isHidden, isMetric = isMetric, setAggregation = setAggregation, setDescription = setDescription, setFormula = setFormula, setGroup = setGroup, setId = setId, setIsHidden = setIsHidden, setIsReaggregatable = setIsReaggregatable, setName = setName, setType = setType)
+  
     __obj.asInstanceOf[Field]
   }
 }

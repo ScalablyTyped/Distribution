@@ -12,8 +12,8 @@ trait TextMetrics extends js.Object {
 object TextMetrics {
   @scala.inline
   def apply(width: scala.Double): TextMetrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(width = width)
+  
     __obj.asInstanceOf[TextMetrics]
   }
 }

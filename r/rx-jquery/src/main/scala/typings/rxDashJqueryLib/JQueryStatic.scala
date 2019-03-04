@@ -43,12 +43,8 @@ object JQueryStatic {
       rxDashLiteDashAggregatesLib.RxNs.Observable[RxJQueryAjaxResult[js.Any]]
     ]
   ): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajaxAsObservable")(ajaxAsObservable)
-    __obj.updateDynamic("getAsObservable")(getAsObservable)
-    __obj.updateDynamic("getJSONAsObservable")(getJSONAsObservable)
-    __obj.updateDynamic("getScriptAsObservable")(getScriptAsObservable)
-    __obj.updateDynamic("postAsObservable")(postAsObservable)
+    val __obj = js.Dynamic.literal(ajaxAsObservable = ajaxAsObservable, getAsObservable = getAsObservable, getJSONAsObservable = getJSONAsObservable, getScriptAsObservable = getScriptAsObservable, postAsObservable = postAsObservable)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

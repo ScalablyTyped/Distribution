@@ -221,8 +221,7 @@ object AutocompleteProps {
     xThreshold: scala.Int | scala.Double = null,
     yThreshold: scala.Int | scala.Double = null
   ): AutocompleteProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
     if (!js.isUndefined(autocompleteWithLabel)) __obj.updateDynamic("autocompleteWithLabel")(autocompleteWithLabel)

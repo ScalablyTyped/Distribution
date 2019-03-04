@@ -13,7 +13,8 @@ trait ListMetadataQuery extends js.Object {
 object ListMetadataQuery {
   @scala.inline
   def apply(`type`: java.lang.String, folder: java.lang.String = null): ListMetadataQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (folder != null) __obj.updateDynamic("folder")(folder)
     __obj.asInstanceOf[ListMetadataQuery]
   }

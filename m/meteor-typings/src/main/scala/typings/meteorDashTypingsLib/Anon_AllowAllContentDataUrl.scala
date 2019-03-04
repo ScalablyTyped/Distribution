@@ -58,30 +58,8 @@ object Anon_AllowAllContentDataUrl {
     disallowInlineStyles: js.Function0[scala.Unit],
     disallowObject: js.Function0[scala.Unit]
   ): Anon_AllowAllContentDataUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowAllContentDataUrl")(allowAllContentDataUrl)
-    __obj.updateDynamic("allowAllContentOrigin")(allowAllContentOrigin)
-    __obj.updateDynamic("allowAllContentSameOrigin")(allowAllContentSameOrigin)
-    __obj.updateDynamic("allowContentTypeSniffing")(allowContentTypeSniffing)
-    __obj.updateDynamic("allowDataUrlForAll")(allowDataUrlForAll)
-    __obj.updateDynamic("allowEval")(allowEval)
-    __obj.updateDynamic("allowFontOrigin")(allowFontOrigin)
-    __obj.updateDynamic("allowFrameOrigin")(allowFrameOrigin)
-    __obj.updateDynamic("allowImageOrigin")(allowImageOrigin)
-    __obj.updateDynamic("allowInlineScripts")(allowInlineScripts)
-    __obj.updateDynamic("allowInlineStyles")(allowInlineStyles)
-    __obj.updateDynamic("allowMediaOrigin")(allowMediaOrigin)
-    __obj.updateDynamic("allowOriginForAll")(allowOriginForAll)
-    __obj.updateDynamic("allowSameOriginForAll")(allowSameOriginForAll)
-    __obj.updateDynamic("allowScriptOrigin")(allowScriptOrigin)
-    __obj.updateDynamic("allowStyleOrigin")(allowStyleOrigin)
-    __obj.updateDynamic("disallowAll")(disallowAll)
-    __obj.updateDynamic("disallowAllContent")(disallowAllContent)
-    __obj.updateDynamic("disallowEval")(disallowEval)
-    __obj.updateDynamic("disallowFont")(disallowFont)
-    __obj.updateDynamic("disallowInlineScripts")(disallowInlineScripts)
-    __obj.updateDynamic("disallowInlineStyles")(disallowInlineStyles)
-    __obj.updateDynamic("disallowObject")(disallowObject)
+    val __obj = js.Dynamic.literal(allowAllContentDataUrl = allowAllContentDataUrl, allowAllContentOrigin = allowAllContentOrigin, allowAllContentSameOrigin = allowAllContentSameOrigin, allowContentTypeSniffing = allowContentTypeSniffing, allowDataUrlForAll = allowDataUrlForAll, allowEval = allowEval, allowFontOrigin = allowFontOrigin, allowFrameOrigin = allowFrameOrigin, allowImageOrigin = allowImageOrigin, allowInlineScripts = allowInlineScripts, allowInlineStyles = allowInlineStyles, allowMediaOrigin = allowMediaOrigin, allowOriginForAll = allowOriginForAll, allowSameOriginForAll = allowSameOriginForAll, allowScriptOrigin = allowScriptOrigin, allowStyleOrigin = allowStyleOrigin, disallowAll = disallowAll, disallowAllContent = disallowAllContent, disallowEval = disallowEval, disallowFont = disallowFont, disallowInlineScripts = disallowInlineScripts, disallowInlineStyles = disallowInlineStyles, disallowObject = disallowObject)
+  
     __obj.asInstanceOf[Anon_AllowAllContentDataUrl]
   }
 }

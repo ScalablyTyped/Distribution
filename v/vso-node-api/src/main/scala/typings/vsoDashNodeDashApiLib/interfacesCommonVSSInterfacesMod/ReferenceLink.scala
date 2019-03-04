@@ -12,8 +12,8 @@ trait ReferenceLink extends js.Object {
 object ReferenceLink {
   @scala.inline
   def apply(href: java.lang.String): ReferenceLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
+  
     __obj.asInstanceOf[ReferenceLink]
   }
 }

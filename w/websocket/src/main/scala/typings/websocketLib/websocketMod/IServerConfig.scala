@@ -68,8 +68,7 @@ object IServerConfig {
     maxReceivedFrameSize: scala.Int | scala.Double = null,
     maxReceivedMessageSize: scala.Int | scala.Double = null
   ): IServerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpServer")(httpServer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(httpServer = httpServer.asInstanceOf[js.Any])
     if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments)
     if (!js.isUndefined(autoAcceptConnections)) __obj.updateDynamic("autoAcceptConnections")(autoAcceptConnections)
     if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])

@@ -78,9 +78,7 @@ object Step {
     title: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
     tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
   ): Step = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
     if (!js.isUndefined(disableBeacon)) __obj.updateDynamic("disableBeacon")(disableBeacon)
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)

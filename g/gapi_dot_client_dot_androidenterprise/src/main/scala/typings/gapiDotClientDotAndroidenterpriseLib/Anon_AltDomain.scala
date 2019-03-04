@@ -39,8 +39,7 @@ object Anon_AltDomain {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

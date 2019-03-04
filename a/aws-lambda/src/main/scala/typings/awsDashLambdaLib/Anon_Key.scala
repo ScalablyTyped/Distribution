@@ -16,8 +16,7 @@ object Anon_Key {
     ServiceToken: java.lang.String,
     StringDictionary: /* Key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ServiceToken")(ServiceToken)
+    val __obj = js.Dynamic.literal(ServiceToken = ServiceToken)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

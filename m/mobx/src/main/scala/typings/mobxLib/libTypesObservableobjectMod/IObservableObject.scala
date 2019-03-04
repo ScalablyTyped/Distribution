@@ -12,8 +12,8 @@ trait IObservableObject extends js.Object {
 object IObservableObject {
   @scala.inline
   def apply(`observable-object`: IObservableObject): IObservableObject = {
-    val __obj = js.Dynamic.literal(`observable-object` = `observable-object`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("observable-object")(`observable-object`)
     __obj.asInstanceOf[IObservableObject]
   }
 }

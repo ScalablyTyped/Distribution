@@ -14,8 +14,8 @@ object FileIconOptions {
   def apply(
     size: electronLib.electronLibStrings.small | electronLib.electronLibStrings.normal | electronLib.electronLibStrings.large
   ): FileIconOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FileIconOptions]
   }
 }

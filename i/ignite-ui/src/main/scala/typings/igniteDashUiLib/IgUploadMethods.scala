@@ -96,21 +96,8 @@ object IgUploadMethods {
     startUpload: js.Function1[scala.Double, scala.Unit],
     widget: js.Function0[scala.Unit]
   ): IgUploadMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDataField")(addDataField)
-    __obj.updateDynamic("addDataFields")(addDataFields)
-    __obj.updateDynamic("cancelAll")(cancelAll)
-    __obj.updateDynamic("cancelUpload")(cancelUpload)
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("clearAll")(clearAll)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getFileInfo")(getFileInfo)
-    __obj.updateDynamic("getFileInfoData")(getFileInfoData)
-    __obj.updateDynamic("startUpload")(startUpload)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(addDataField = addDataField, addDataFields = addDataFields, cancelAll = cancelAll, cancelUpload = cancelUpload, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, clearAll = clearAll, container = container, destroy = destroy, getFileInfo = getFileInfo, getFileInfoData = getFileInfoData, startUpload = startUpload, widget = widget)
+  
     __obj.asInstanceOf[IgUploadMethods]
   }
 }

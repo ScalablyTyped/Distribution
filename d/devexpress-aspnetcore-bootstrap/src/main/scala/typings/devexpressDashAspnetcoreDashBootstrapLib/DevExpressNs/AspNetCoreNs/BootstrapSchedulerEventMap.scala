@@ -57,30 +57,8 @@ object BootstrapSchedulerEventMap {
     shortcut: ShortcutEventArgs,
     visibleIntervalChanged: EventArgs
   ): BootstrapSchedulerEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeViewChanged")(activeViewChanged)
-    __obj.updateDynamic("activeViewChanging")(activeViewChanging)
-    __obj.updateDynamic("appointmentClick")(appointmentClick)
-    __obj.updateDynamic("appointmentDeleting")(appointmentDeleting)
-    __obj.updateDynamic("appointmentDoubleClick")(appointmentDoubleClick)
-    __obj.updateDynamic("appointmentDrag")(appointmentDrag)
-    __obj.updateDynamic("appointmentDrop")(appointmentDrop)
-    __obj.updateDynamic("appointmentResize")(appointmentResize)
-    __obj.updateDynamic("appointmentResizing")(appointmentResizing)
-    __obj.updateDynamic("appointmentToolTipShowing")(appointmentToolTipShowing)
-    __obj.updateDynamic("appointmentsSelectionChanged")(appointmentsSelectionChanged)
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("cellClick")(cellClick)
-    __obj.updateDynamic("cellDoubleClick")(cellDoubleClick)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("menuItemClicked")(menuItemClicked)
-    __obj.updateDynamic("moreButtonClicked")(moreButtonClicked)
-    __obj.updateDynamic("selectionChanged")(selectionChanged)
-    __obj.updateDynamic("selectionChanging")(selectionChanging)
-    __obj.updateDynamic("shortcut")(shortcut)
-    __obj.updateDynamic("visibleIntervalChanged")(visibleIntervalChanged)
+    val __obj = js.Dynamic.literal(activeViewChanged = activeViewChanged, activeViewChanging = activeViewChanging, appointmentClick = appointmentClick, appointmentDeleting = appointmentDeleting, appointmentDoubleClick = appointmentDoubleClick, appointmentDrag = appointmentDrag, appointmentDrop = appointmentDrop, appointmentResize = appointmentResize, appointmentResizing = appointmentResizing, appointmentToolTipShowing = appointmentToolTipShowing, appointmentsSelectionChanged = appointmentsSelectionChanged, beginCallback = beginCallback, callbackError = callbackError, cellClick = cellClick, cellDoubleClick = cellDoubleClick, endCallback = endCallback, init = init, menuItemClicked = menuItemClicked, moreButtonClicked = moreButtonClicked, selectionChanged = selectionChanged, selectionChanging = selectionChanging, shortcut = shortcut, visibleIntervalChanged = visibleIntervalChanged)
+  
     __obj.asInstanceOf[BootstrapSchedulerEventMap]
   }
 }

@@ -28,8 +28,7 @@ object NavigationPropertyOptions {
     nameOnServer: java.lang.String = null,
     validators: js.Array[Validator] = null
   ): NavigationPropertyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityTypeName")(entityTypeName)
+    val __obj = js.Dynamic.literal(entityTypeName = entityTypeName)
     if (associationName != null) __obj.updateDynamic("associationName")(associationName)
     if (foreignKeyNames != null) __obj.updateDynamic("foreignKeyNames")(foreignKeyNames)
     if (foreignKeyNamesOnServer != null) __obj.updateDynamic("foreignKeyNamesOnServer")(foreignKeyNamesOnServer)

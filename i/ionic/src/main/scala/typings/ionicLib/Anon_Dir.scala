@@ -14,9 +14,8 @@ trait Anon_Dir extends js.Object {
 object Anon_Dir {
   @scala.inline
   def apply(dir: java.lang.String, srcDir: java.lang.String, `type`: ionicLib.definitionsMod.ProjectType): Anon_Dir = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("srcDir")(srcDir)
+    val __obj = js.Dynamic.literal(dir = dir, srcDir = srcDir)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Dir]
   }
 }

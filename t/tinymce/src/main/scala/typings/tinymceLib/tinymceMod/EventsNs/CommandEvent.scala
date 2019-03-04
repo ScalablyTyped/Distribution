@@ -26,17 +26,8 @@ object CommandEvent {
     ui: scala.Boolean,
     value: java.lang.String
   ): CommandEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("ui")(ui)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(command = command, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, preventDefault = preventDefault, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target, ui = ui, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CommandEvent]
   }
 }

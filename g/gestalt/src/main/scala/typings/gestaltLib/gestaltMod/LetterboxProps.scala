@@ -20,10 +20,7 @@ object LetterboxProps {
     width: scala.Double,
     children: reactLib.reactMod.ReactNs.ReactNode = null
   ): LetterboxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentAspectRatio")(contentAspectRatio)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(contentAspectRatio = contentAspectRatio, height = height, width = width)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[LetterboxProps]
   }

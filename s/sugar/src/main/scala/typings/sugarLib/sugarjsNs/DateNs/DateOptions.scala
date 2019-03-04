@@ -12,8 +12,8 @@ trait DateOptions extends js.Object {
 object DateOptions {
   @scala.inline
   def apply(newDateInternal: js.Function): DateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newDateInternal")(newDateInternal)
+    val __obj = js.Dynamic.literal(newDateInternal = newDateInternal)
+  
     __obj.asInstanceOf[DateOptions]
   }
 }

@@ -35,14 +35,8 @@ object XInteractionRequest {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInteractionRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Continuations")(Continuations)
-    __obj.updateDynamic("Request")(Request)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContinuations")(getContinuations)
-    __obj.updateDynamic("getRequest")(getRequest)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Continuations = Continuations, Request = Request, acquire = acquire, getContinuations = getContinuations, getRequest = getRequest, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInteractionRequest]
   }
 }

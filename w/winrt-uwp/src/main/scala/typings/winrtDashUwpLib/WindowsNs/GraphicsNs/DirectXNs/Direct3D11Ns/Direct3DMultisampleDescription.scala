@@ -16,9 +16,8 @@ trait Direct3DMultisampleDescription extends js.Object {
 object Direct3DMultisampleDescription {
   @scala.inline
   def apply(count: scala.Double, quality: scala.Double): Direct3DMultisampleDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("quality")(quality)
+    val __obj = js.Dynamic.literal(count = count, quality = quality)
+  
     __obj.asInstanceOf[Direct3DMultisampleDescription]
   }
 }

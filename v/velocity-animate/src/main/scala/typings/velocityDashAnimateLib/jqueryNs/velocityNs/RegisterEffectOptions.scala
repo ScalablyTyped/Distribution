@@ -18,8 +18,7 @@ object RegisterEffectOptions {
     defaultDuration: scala.Int | scala.Double = null,
     reset: js.Object = null
   ): RegisterEffectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
+    val __obj = js.Dynamic.literal(calls = calls)
     if (defaultDuration != null) __obj.updateDynamic("defaultDuration")(defaultDuration.asInstanceOf[js.Any])
     if (reset != null) __obj.updateDynamic("reset")(reset)
     __obj.asInstanceOf[RegisterEffectOptions]

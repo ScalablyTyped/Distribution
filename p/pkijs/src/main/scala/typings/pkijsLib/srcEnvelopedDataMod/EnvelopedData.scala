@@ -76,17 +76,7 @@ object EnvelopedData {
     originatorInfo: pkijsLib.srcOriginatorInfoMod.default = null,
     unprotectedAttrs: js.Array[pkijsLib.srcAttributeMod.default] = null
   ): EnvelopedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRecipientByCertificate")(addRecipientByCertificate)
-    __obj.updateDynamic("addRecipientByPreDefinedData")(addRecipientByPreDefinedData)
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
-    __obj.updateDynamic("encryptedContentInfo")(encryptedContentInfo)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("recipientInfos")(recipientInfos)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(addRecipientByCertificate = addRecipientByCertificate, addRecipientByPreDefinedData = addRecipientByPreDefinedData, decrypt = decrypt, encrypt = encrypt, encryptedContentInfo = encryptedContentInfo, fromSchema = fromSchema, recipientInfos = recipientInfos, toJSON = toJSON, toSchema = toSchema, version = version)
     if (originatorInfo != null) __obj.updateDynamic("originatorInfo")(originatorInfo)
     if (unprotectedAttrs != null) __obj.updateDynamic("unprotectedAttrs")(unprotectedAttrs)
     __obj.asInstanceOf[EnvelopedData]

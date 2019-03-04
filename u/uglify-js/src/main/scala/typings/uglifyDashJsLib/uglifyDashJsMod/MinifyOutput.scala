@@ -20,9 +20,7 @@ object MinifyOutput {
     error: stdLib.Error = null,
     warnings: js.Array[java.lang.String] = null
   ): MinifyOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(code = code, map = map)
     if (error != null) __obj.updateDynamic("error")(error)
     if (warnings != null) __obj.updateDynamic("warnings")(warnings)
     __obj.asInstanceOf[MinifyOutput]

@@ -12,8 +12,8 @@ trait SetPositionOptions extends js.Object {
 object SetPositionOptions {
   @scala.inline
   def apply(withoutCallbacks: scala.Boolean): SetPositionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withoutCallbacks")(withoutCallbacks)
+    val __obj = js.Dynamic.literal(withoutCallbacks = withoutCallbacks)
+  
     __obj.asInstanceOf[SetPositionOptions]
   }
 }

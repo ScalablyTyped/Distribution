@@ -35,10 +35,7 @@ object CompletionEntry {
     replacementSpan: TextSpan = null,
     source: java.lang.String = null
   ): CompletionEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sortText")(sortText)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, sortText = sortText)
     if (hasAction != null) __obj.updateDynamic("hasAction")(hasAction)
     if (insertText != null) __obj.updateDynamic("insertText")(insertText)
     if (isRecommended != null) __obj.updateDynamic("isRecommended")(isRecommended)

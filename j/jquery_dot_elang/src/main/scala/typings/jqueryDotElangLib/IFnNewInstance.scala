@@ -15,8 +15,8 @@ object IFnNewInstance {
   def apply(
     createInstance: js.Function3[stdLib.HTMLElement, js.Any, java.lang.String, jqueryLib.JQuery[stdLib.HTMLElement]]
   ): IFnNewInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createInstance")(createInstance)
+    val __obj = js.Dynamic.literal(createInstance = createInstance)
+  
     __obj.asInstanceOf[IFnNewInstance]
   }
 }

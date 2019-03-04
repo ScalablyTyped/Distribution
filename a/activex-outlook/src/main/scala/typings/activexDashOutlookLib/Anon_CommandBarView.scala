@@ -16,9 +16,8 @@ object Anon_CommandBarView {
     CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     View: activexDashOutlookLib.OutlookNs.View
   ): Anon_CommandBarView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CommandBar")(CommandBar)
-    __obj.updateDynamic("View")(View)
+    val __obj = js.Dynamic.literal(CommandBar = CommandBar, View = View)
+  
     __obj.asInstanceOf[Anon_CommandBarView]
   }
 }

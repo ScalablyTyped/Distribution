@@ -64,33 +64,8 @@ object Element {
     zoomIn: js.Function0[Zoom],
     zoomOut: js.Function0[Zoom]
   ): Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("expandHorizontal")(expandHorizontal)
-    __obj.updateDynamic("expandVertical")(expandVertical)
-    __obj.updateDynamic("fade")(fade)
-    __obj.updateDynamic("fadeIn")(fadeIn)
-    __obj.updateDynamic("fadeOut")(fadeOut)
-    __obj.updateDynamic("flip")(flip)
-    __obj.updateDynamic("flipHorizontal")(flipHorizontal)
-    __obj.updateDynamic("flipVertical")(flipVertical)
-    __obj.updateDynamic("pageturn")(pageturn)
-    __obj.updateDynamic("pageturnHorizontal")(pageturnHorizontal)
-    __obj.updateDynamic("pageturnVertical")(pageturnVertical)
-    __obj.updateDynamic("slideIn")(slideIn)
-    __obj.updateDynamic("slideInDown")(slideInDown)
-    __obj.updateDynamic("slideInLeft")(slideInLeft)
-    __obj.updateDynamic("slideInRight")(slideInRight)
-    __obj.updateDynamic("slideInUp")(slideInUp)
-    __obj.updateDynamic("tile")(tile)
-    __obj.updateDynamic("tileDown")(tileDown)
-    __obj.updateDynamic("tileLeft")(tileLeft)
-    __obj.updateDynamic("tileRight")(tileRight)
-    __obj.updateDynamic("tileUp")(tileUp)
-    __obj.updateDynamic("transfer")(transfer)
-    __obj.updateDynamic("zoom")(zoom)
-    __obj.updateDynamic("zoomIn")(zoomIn)
-    __obj.updateDynamic("zoomOut")(zoomOut)
+    val __obj = js.Dynamic.literal(expand = expand, expandHorizontal = expandHorizontal, expandVertical = expandVertical, fade = fade, fadeIn = fadeIn, fadeOut = fadeOut, flip = flip, flipHorizontal = flipHorizontal, flipVertical = flipVertical, pageturn = pageturn, pageturnHorizontal = pageturnHorizontal, pageturnVertical = pageturnVertical, slideIn = slideIn, slideInDown = slideInDown, slideInLeft = slideInLeft, slideInRight = slideInRight, slideInUp = slideInUp, tile = tile, tileDown = tileDown, tileLeft = tileLeft, tileRight = tileRight, tileUp = tileUp, transfer = transfer, zoom = zoom, zoomIn = zoomIn, zoomOut = zoomOut)
+  
     __obj.asInstanceOf[Element]
   }
 }

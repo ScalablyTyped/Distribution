@@ -23,12 +23,8 @@ object XTextEmbeddedObjectsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextEmbeddedObjectsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EmbeddedObjects")(EmbeddedObjects)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEmbeddedObjects")(getEmbeddedObjects)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(EmbeddedObjects = EmbeddedObjects, acquire = acquire, getEmbeddedObjects = getEmbeddedObjects, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextEmbeddedObjectsSupplier]
   }
 }

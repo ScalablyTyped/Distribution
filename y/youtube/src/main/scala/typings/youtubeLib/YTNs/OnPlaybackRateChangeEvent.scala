@@ -15,9 +15,8 @@ trait OnPlaybackRateChangeEvent extends PlayerEvent {
 object OnPlaybackRateChangeEvent {
   @scala.inline
   def apply(data: scala.Double, target: Player): OnPlaybackRateChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(data = data, target = target)
+  
     __obj.asInstanceOf[OnPlaybackRateChangeEvent]
   }
 }

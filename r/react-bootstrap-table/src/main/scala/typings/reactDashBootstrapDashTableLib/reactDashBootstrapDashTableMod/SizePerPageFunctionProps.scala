@@ -42,13 +42,8 @@ object SizePerPageFunctionProps {
     sizePerPageList: SizePerPageList,
     toggleDropDown: js.Function0[scala.Unit]
   ): SizePerPageFunctionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeSizePerPage")(changeSizePerPage)
-    __obj.updateDynamic("currSizePerPage")(currSizePerPage)
-    __obj.updateDynamic("hideSizePerPage")(hideSizePerPage)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
-    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    val __obj = js.Dynamic.literal(changeSizePerPage = changeSizePerPage, currSizePerPage = currSizePerPage, hideSizePerPage = hideSizePerPage, open = open, sizePerPageList = sizePerPageList.asInstanceOf[js.Any], toggleDropDown = toggleDropDown)
+  
     __obj.asInstanceOf[SizePerPageFunctionProps]
   }
 }

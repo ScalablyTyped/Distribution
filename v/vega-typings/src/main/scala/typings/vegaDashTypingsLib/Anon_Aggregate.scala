@@ -21,10 +21,7 @@ object Anon_Aggregate {
     name: java.lang.String,
     aggregate: Anon_As = null
   ): Anon_Aggregate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data, groupby = groupby.asInstanceOf[js.Any], name = name)
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
     __obj.asInstanceOf[Anon_Aggregate]
   }

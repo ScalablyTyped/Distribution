@@ -54,8 +54,7 @@ object OptionDefinition {
     multiple: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: js.Function1[/* input */ java.lang.String, _] = null
   ): OptionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (!js.isUndefined(defaultOption)) __obj.updateDynamic("defaultOption")(defaultOption)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

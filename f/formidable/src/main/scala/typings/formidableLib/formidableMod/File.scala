@@ -26,11 +26,8 @@ object File {
     hash: java.lang.String = null,
     lastModifiedDate: stdLib.Date = null
   ): File = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(name = name, path = path, size = size, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
     __obj.asInstanceOf[File]

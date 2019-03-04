@@ -14,8 +14,8 @@ object ValidatorStatic {
   def apply(
     unobtrusive: jqueryDashValidationDashUnobtrusiveLib.MicrosoftJQueryUnobtrusiveValidationNs.Validator
   ): ValidatorStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unobtrusive")(unobtrusive)
+    val __obj = js.Dynamic.literal(unobtrusive = unobtrusive)
+  
     __obj.asInstanceOf[ValidatorStatic]
   }
 }

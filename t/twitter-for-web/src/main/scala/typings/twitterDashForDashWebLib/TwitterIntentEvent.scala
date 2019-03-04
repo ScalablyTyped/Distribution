@@ -35,10 +35,8 @@ object TwitterIntentEvent {
     target: stdLib.HTMLElement,
     `type`: java.lang.String
   ): TwitterIntentEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(data = data, region = region, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TwitterIntentEvent]
   }
 }

@@ -12,8 +12,8 @@ trait LegacySandbox extends js.Object {
 object LegacySandbox {
   @scala.inline
   def apply(sandbox: sinonLib.Anon_Config): LegacySandbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sandbox")(sandbox)
+    val __obj = js.Dynamic.literal(sandbox = sandbox)
+  
     __obj.asInstanceOf[LegacySandbox]
   }
 }

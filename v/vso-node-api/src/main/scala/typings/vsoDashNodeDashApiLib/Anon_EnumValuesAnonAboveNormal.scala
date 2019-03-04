@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonAboveNormal extends js.Object {
 object Anon_EnumValuesAnonAboveNormal {
   @scala.inline
   def apply(enumValues: Anon_AboveNormal): Anon_EnumValuesAnonAboveNormal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonAboveNormal]
   }
 }

@@ -15,11 +15,8 @@ trait Anon_Actual extends js.Object {
 object Anon_Actual {
   @scala.inline
   def apply(actual: js.Any, expected: js.Any, message: java.lang.String, result: scala.Boolean): Anon_Actual = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(actual = actual, expected = expected, message = message, result = result)
+  
     __obj.asInstanceOf[Anon_Actual]
   }
 }

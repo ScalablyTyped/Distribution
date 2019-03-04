@@ -22,12 +22,8 @@ object ObjectOrientedRenderer3 {
     createTextNode: js.Function1[java.lang.String, RText],
     querySelector: js.Function1[java.lang.String, RElement | scala.Null]
   ): ObjectOrientedRenderer3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createComment")(createComment)
-    __obj.updateDynamic("createElement")(createElement)
-    __obj.updateDynamic("createElementNS")(createElementNS)
-    __obj.updateDynamic("createTextNode")(createTextNode)
-    __obj.updateDynamic("querySelector")(querySelector)
+    val __obj = js.Dynamic.literal(createComment = createComment, createElement = createElement, createElementNS = createElementNS, createTextNode = createTextNode, querySelector = querySelector)
+  
     __obj.asInstanceOf[ObjectOrientedRenderer3]
   }
 }

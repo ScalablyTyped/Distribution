@@ -32,10 +32,7 @@ object PaneProps {
     minWidth: java.lang.String | scala.Double = null,
     style: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null
   ): PaneProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (isResizable != null) __obj.updateDynamic("isResizable")(isResizable)
     if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])

@@ -39,8 +39,7 @@ object WorksheetViewFrozen {
     xSplit: scala.Int | scala.Double = null,
     ySplit: scala.Int | scala.Double = null
   ): WorksheetViewFrozen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
     if (style != null) __obj.updateDynamic("style")(style)
     if (topLeftCell != null) __obj.updateDynamic("topLeftCell")(topLeftCell)
     if (xSplit != null) __obj.updateDynamic("xSplit")(xSplit.asInstanceOf[js.Any])

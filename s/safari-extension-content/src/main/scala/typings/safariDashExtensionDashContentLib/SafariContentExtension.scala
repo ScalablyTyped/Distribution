@@ -12,8 +12,8 @@ trait SafariContentExtension extends js.Object {
 object SafariContentExtension {
   @scala.inline
   def apply(baseURI: java.lang.String): SafariContentExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseURI")(baseURI)
+    val __obj = js.Dynamic.literal(baseURI = baseURI)
+  
     __obj.asInstanceOf[SafariContentExtension]
   }
 }

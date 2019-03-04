@@ -16,9 +16,8 @@ object Anon_Context {
     context: atAngularCompilerLib.srcOutputAbstractUnderscoreEmitterMod.EmitterVisitorContext,
     sourceText: java.lang.String
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("sourceText")(sourceText)
+    val __obj = js.Dynamic.literal(context = context, sourceText = sourceText)
+  
     __obj.asInstanceOf[Anon_Context]
   }
 }

@@ -18,10 +18,8 @@ object ResolvedStarterTemplate {
     `type`: ProjectType,
     description: java.lang.String = null
   ): ResolvedStarterTemplate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("archive")(archive)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(archive = archive, id = id, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ResolvedStarterTemplate]
   }

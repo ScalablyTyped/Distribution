@@ -70,12 +70,7 @@ object WMTSOptions {
     version: java.lang.String = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): WMTSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("matrixSet")(matrixSet)
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("tileGrid")(tileGrid)
+    val __obj = js.Dynamic.literal(layer = layer, matrixSet = matrixSet, projection = projection.asInstanceOf[js.Any], style = style, tileGrid = tileGrid)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)

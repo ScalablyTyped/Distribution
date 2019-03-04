@@ -20,11 +20,8 @@ object ArtifactFilter {
     eventType: java.lang.String,
     `type`: java.lang.String
   ): ArtifactFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("artifactId")(artifactId)
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("artifactUri")(artifactUri)
-    __obj.updateDynamic("eventType")(eventType)
+    val __obj = js.Dynamic.literal(artifactId = artifactId, artifactType = artifactType, artifactUri = artifactUri, eventType = eventType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArtifactFilter]
   }
 }

@@ -25,10 +25,8 @@ object HistoryManager {
     getProjects: js.Function0[js.Array[ProjectHistory]],
     onDidChangeProjects: js.Function1[js.Function1[/* args */ atomLib.Anon_Reloaded, scala.Unit], Disposable]
   ): HistoryManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearProjects")(clearProjects)
-    __obj.updateDynamic("getProjects")(getProjects)
-    __obj.updateDynamic("onDidChangeProjects")(onDidChangeProjects)
+    val __obj = js.Dynamic.literal(clearProjects = clearProjects, getProjects = getProjects, onDidChangeProjects = onDidChangeProjects)
+  
     __obj.asInstanceOf[HistoryManager]
   }
 }

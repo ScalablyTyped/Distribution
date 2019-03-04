@@ -32,9 +32,8 @@ object Instruction {
     property: js.Any = null,
     values: js.Any = null
   ): Instruction = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("object_type")(object_type)
+    val __obj = js.Dynamic.literal(identity = identity, object_type = object_type)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (list_index != null) __obj.updateDynamic("list_index")(list_index)
     if (new_identity != null) __obj.updateDynamic("new_identity")(new_identity)
     if (object_identity != null) __obj.updateDynamic("object_identity")(object_identity)

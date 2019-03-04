@@ -30,16 +30,8 @@ object CaptionOptions {
     windowColor: java.lang.String,
     windowOpacity: scala.Double
   ): CaptionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("backgroundOpacity")(backgroundOpacity)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("edgeStyle")(edgeStyle)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontOpacity")(fontOpacity)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("windowColor")(windowColor)
-    __obj.updateDynamic("windowOpacity")(windowOpacity)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, backgroundOpacity = backgroundOpacity, color = color, edgeStyle = edgeStyle, fontFamily = fontFamily, fontOpacity = fontOpacity, fontSize = fontSize, windowColor = windowColor, windowOpacity = windowOpacity)
+  
     __obj.asInstanceOf[CaptionOptions]
   }
 }

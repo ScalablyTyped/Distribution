@@ -22,8 +22,8 @@ object ExportSpecifier {
     exported: astDashTypesLib.genKindsMod.IdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ExportSpecifier
   ): ExportSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exported")(exported)
+    val __obj = js.Dynamic.literal(exported = exported)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExportSpecifier]
   }
 }

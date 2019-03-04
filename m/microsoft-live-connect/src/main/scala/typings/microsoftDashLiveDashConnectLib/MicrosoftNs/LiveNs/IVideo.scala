@@ -141,29 +141,8 @@ object IVideo {
     upload_location: java.lang.String,
     width: scala.Double
   ): IVideo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("comments_count")(comments_count)
-    __obj.updateDynamic("comments_enabled")(comments_enabled)
-    __obj.updateDynamic("created_time")(created_time)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_embeddable")(is_embeddable)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent_id")(parent_id)
-    __obj.updateDynamic("picture")(picture)
-    __obj.updateDynamic("shared_with")(shared_with)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("tags_count")(tags_count)
-    __obj.updateDynamic("tags_enabled")(tags_enabled)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("upload_location")(upload_location)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bitrate = bitrate, comments_count = comments_count, comments_enabled = comments_enabled, created_time = created_time, description = description, duration = duration, from = from, height = height, id = id, is_embeddable = is_embeddable, link = link, name = name, parent_id = parent_id, picture = picture, shared_with = shared_with, size = size, source = source, tags_count = tags_count, tags_enabled = tags_enabled, updated_time = updated_time, upload_location = upload_location, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IVideo]
   }
 }

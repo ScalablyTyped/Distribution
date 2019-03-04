@@ -22,12 +22,8 @@ object Paths {
     log: java.lang.String,
     temp: java.lang.String
   ): Paths = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("temp")(temp)
+    val __obj = js.Dynamic.literal(cache = cache, config = config, data = data, log = log, temp = temp)
+  
     __obj.asInstanceOf[Paths]
   }
 }

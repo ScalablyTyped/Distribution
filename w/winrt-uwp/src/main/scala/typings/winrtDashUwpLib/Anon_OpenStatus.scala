@@ -18,10 +18,8 @@ object Anon_OpenStatus {
     pin: winrtDashUwpLib.WindowsNs.DevicesNs.GpioNs.GpioPin,
     returnValue: scala.Boolean
   ): Anon_OpenStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openStatus")(openStatus)
-    __obj.updateDynamic("pin")(pin)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(openStatus = openStatus, pin = pin, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_OpenStatus]
   }
 }

@@ -41,24 +41,8 @@ object BrowseNode {
     release: js.Function0[scala.Unit],
     setValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): BrowseNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChildNodes")(ChildNodes)
-    __obj.updateDynamic("Introspection")(Introspection)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getChildNodes")(getChildNodes)
-    __obj.updateDynamic("getIntrospection")(getIntrospection)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasChildNodes")(hasChildNodes)
-    __obj.updateDynamic("hasMethod")(hasMethod)
-    __obj.updateDynamic("hasProperty")(hasProperty)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(ChildNodes = ChildNodes, Introspection = Introspection, Name = Name, Type = Type, acquire = acquire, getChildNodes = getChildNodes, getIntrospection = getIntrospection, getName = getName, getType = getType, getValue = getValue, hasChildNodes = hasChildNodes, hasMethod = hasMethod, hasProperty = hasProperty, invoke = invoke, queryInterface = queryInterface, release = release, setValue = setValue)
+  
     __obj.asInstanceOf[BrowseNode]
   }
 }

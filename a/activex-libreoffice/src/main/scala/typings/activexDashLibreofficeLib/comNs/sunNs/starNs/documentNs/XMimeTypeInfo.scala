@@ -26,13 +26,8 @@ object XMimeTypeInfo {
     release: js.Function0[scala.Unit],
     supportsMimeType: js.Function1[java.lang.String, scala.Boolean]
   ): XMimeTypeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedMimeTypeNames")(SupportedMimeTypeNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSupportedMimeTypeNames")(getSupportedMimeTypeNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("supportsMimeType")(supportsMimeType)
+    val __obj = js.Dynamic.literal(SupportedMimeTypeNames = SupportedMimeTypeNames, acquire = acquire, getSupportedMimeTypeNames = getSupportedMimeTypeNames, queryInterface = queryInterface, release = release, supportsMimeType = supportsMimeType)
+  
     __obj.asInstanceOf[XMimeTypeInfo]
   }
 }

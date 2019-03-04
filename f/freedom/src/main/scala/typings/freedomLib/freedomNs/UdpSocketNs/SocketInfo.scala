@@ -17,9 +17,8 @@ trait SocketInfo extends js.Object {
 object SocketInfo {
   @scala.inline
   def apply(localAddress: java.lang.String, localPort: scala.Double): SocketInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("localPort")(localPort)
+    val __obj = js.Dynamic.literal(localAddress = localAddress, localPort = localPort)
+  
     __obj.asInstanceOf[SocketInfo]
   }
 }

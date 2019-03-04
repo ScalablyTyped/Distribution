@@ -30,12 +30,8 @@ object ASPxClientBollingerBands {
     series: ASPxClientSeries,
     valueLevel: java.lang.String
   ): ASPxClientBollingerBands = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pointsCount")(pointsCount)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("valueLevel")(valueLevel)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, pointsCount = pointsCount, series = series, valueLevel = valueLevel)
+  
     __obj.asInstanceOf[ASPxClientBollingerBands]
   }
 }

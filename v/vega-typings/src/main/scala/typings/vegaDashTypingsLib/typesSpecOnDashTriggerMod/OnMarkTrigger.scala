@@ -18,8 +18,7 @@ object OnMarkTrigger {
     modify: vegaDashTypingsLib.typesSpecExprMod.Expr = null,
     values: vegaDashTypingsLib.typesSpecExprMod.Expr = null
   ): OnMarkTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(trigger = trigger)
     if (modify != null) __obj.updateDynamic("modify")(modify)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[OnMarkTrigger]

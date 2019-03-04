@@ -37,8 +37,7 @@ object StatusReport {
     previousDeploymentKey: java.lang.String = null,
     previousLabelOrAppVersion: java.lang.String = null
   ): StatusReport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
     if (`package` != null) __obj.updateDynamic("package")(`package`)
     if (previousDeploymentKey != null) __obj.updateDynamic("previousDeploymentKey")(previousDeploymentKey)

@@ -20,11 +20,8 @@ object IBUDDY_MESSAGE {
     isItMe: scala.Boolean,
     message: java.lang.String
   ): IBUDDY_MESSAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buddy")(buddy)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("isItMe")(isItMe)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(buddy = buddy, data = data, isItMe = isItMe, message = message)
+  
     __obj.asInstanceOf[IBUDDY_MESSAGE]
   }
 }

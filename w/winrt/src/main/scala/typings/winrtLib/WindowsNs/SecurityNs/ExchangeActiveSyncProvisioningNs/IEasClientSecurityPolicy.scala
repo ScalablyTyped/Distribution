@@ -32,17 +32,8 @@ object IEasClientSecurityPolicy {
     passwordHistory: scala.Double,
     requireEncryption: scala.Boolean
   ): IEasClientSecurityPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyAsync")(applyAsync)
-    __obj.updateDynamic("checkCompliance")(checkCompliance)
-    __obj.updateDynamic("disallowConvenienceLogon")(disallowConvenienceLogon)
-    __obj.updateDynamic("maxInactivityTimeLock")(maxInactivityTimeLock)
-    __obj.updateDynamic("maxPasswordFailedAttempts")(maxPasswordFailedAttempts)
-    __obj.updateDynamic("minPasswordComplexCharacters")(minPasswordComplexCharacters)
-    __obj.updateDynamic("minPasswordLength")(minPasswordLength)
-    __obj.updateDynamic("passwordExpiration")(passwordExpiration)
-    __obj.updateDynamic("passwordHistory")(passwordHistory)
-    __obj.updateDynamic("requireEncryption")(requireEncryption)
+    val __obj = js.Dynamic.literal(applyAsync = applyAsync, checkCompliance = checkCompliance, disallowConvenienceLogon = disallowConvenienceLogon, maxInactivityTimeLock = maxInactivityTimeLock, maxPasswordFailedAttempts = maxPasswordFailedAttempts, minPasswordComplexCharacters = minPasswordComplexCharacters, minPasswordLength = minPasswordLength, passwordExpiration = passwordExpiration, passwordHistory = passwordHistory, requireEncryption = requireEncryption)
+  
     __obj.asInstanceOf[IEasClientSecurityPolicy]
   }
 }

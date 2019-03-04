@@ -26,11 +26,8 @@ object Stats {
     res: requestDashStatsLib.Anon_BytesHeaders,
     time: scala.Double
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(ok = ok, req = req, res = res, time = time)
+  
     __obj.asInstanceOf[Stats]
   }
 }

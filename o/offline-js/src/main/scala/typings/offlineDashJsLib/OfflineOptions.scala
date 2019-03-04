@@ -26,8 +26,7 @@ object OfflineOptions {
     interceptRequests: js.UndefOr[scala.Boolean] = js.undefined,
     requests: js.UndefOr[scala.Boolean] = js.undefined
   ): OfflineOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reconnect")(reconnect)
+    val __obj = js.Dynamic.literal(reconnect = reconnect)
     if (!js.isUndefined(checkOnLoad)) __obj.updateDynamic("checkOnLoad")(checkOnLoad)
     if (checks != null) __obj.updateDynamic("checks")(checks)
     if (!js.isUndefined(game)) __obj.updateDynamic("game")(game)

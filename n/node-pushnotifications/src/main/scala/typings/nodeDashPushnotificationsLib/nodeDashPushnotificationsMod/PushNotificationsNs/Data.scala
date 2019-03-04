@@ -122,9 +122,7 @@ object Data {
     truncateAtWordEnd: js.UndefOr[scala.Boolean] = js.undefined,
     urlArgs: java.lang.String = null
   ): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(body = body, title = title)
     if (action != null) __obj.updateDynamic("action")(action)
     if (alert != null) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])

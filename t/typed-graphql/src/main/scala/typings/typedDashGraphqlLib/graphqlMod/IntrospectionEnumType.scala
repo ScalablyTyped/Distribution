@@ -20,10 +20,7 @@ object IntrospectionEnumType {
     name: java.lang.String,
     description: java.lang.String = null
   ): IntrospectionEnumType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(enumValues = enumValues, kind = kind, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionEnumType]
   }

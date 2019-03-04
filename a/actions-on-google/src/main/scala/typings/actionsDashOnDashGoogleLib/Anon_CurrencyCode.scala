@@ -17,9 +17,7 @@ trait Anon_CurrencyCode extends js.Object {
 object Anon_CurrencyCode {
   @scala.inline
   def apply(currencyCode: java.lang.String, units: scala.Double, nanos: scala.Int | scala.Double = null): Anon_CurrencyCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyCode")(currencyCode)
-    __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, units = units)
     if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CurrencyCode]
   }

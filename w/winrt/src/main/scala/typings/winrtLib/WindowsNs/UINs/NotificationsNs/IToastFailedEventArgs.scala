@@ -12,8 +12,8 @@ trait IToastFailedEventArgs extends js.Object {
 object IToastFailedEventArgs {
   @scala.inline
   def apply(errorCode: scala.Double): IToastFailedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(errorCode = errorCode)
+  
     __obj.asInstanceOf[IToastFailedEventArgs]
   }
 }

@@ -58,10 +58,7 @@ object Metadata {
     track: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     width: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachedImages")(attachedImages)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("rawTags")(rawTags)
+    val __obj = js.Dynamic.literal(attachedImages = attachedImages, mimeType = mimeType, rawTags = rawTags)
     if (album != null) __obj.updateDynamic("album")(album)
     if (artist != null) __obj.updateDynamic("artist")(artist)
     if (comment != null) __obj.updateDynamic("comment")(comment)

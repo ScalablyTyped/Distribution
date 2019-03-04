@@ -22,9 +22,8 @@ trait ICacheOnlyOptions extends js.Object {
 object ICacheOnlyOptions {
   @scala.inline
   def apply(cacheName: java.lang.String, plugins: js.Array[workboxDashSwLib.Plugin]): ICacheOnlyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, plugins = plugins)
+  
     __obj.asInstanceOf[ICacheOnlyOptions]
   }
 }

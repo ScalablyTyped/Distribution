@@ -12,8 +12,8 @@ trait ListData_InForm extends js.Object {
 object ListData_InForm {
   @scala.inline
   def apply(Items: js.Array[Item]): ListData_InForm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Items")(Items)
+    val __obj = js.Dynamic.literal(Items = Items)
+  
     __obj.asInstanceOf[ListData_InForm]
   }
 }

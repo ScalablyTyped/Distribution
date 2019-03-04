@@ -33,24 +33,8 @@ object ManualColumnFreeze {
     removeHook: js.Function1[java.lang.String, scala.Unit],
     unfreezeColumn: js.Function1[scala.Double, scala.Unit]
   ): ManualColumnFreeze = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("freezeColumn")(freezeColumn)
-    __obj.updateDynamic("frozenColumnsBasePositions")(frozenColumnsBasePositions)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("manualColumnMovePlugin")(manualColumnMovePlugin)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("unfreezeColumn")(unfreezeColumn)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, freezeColumn = freezeColumn, frozenColumnsBasePositions = frozenColumnsBasePositions, init = init, initialized = initialized, isPluginsReady = isPluginsReady, manualColumnMovePlugin = manualColumnMovePlugin, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, unfreezeColumn = unfreezeColumn)
+  
     __obj.asInstanceOf[ManualColumnFreeze]
   }
 }

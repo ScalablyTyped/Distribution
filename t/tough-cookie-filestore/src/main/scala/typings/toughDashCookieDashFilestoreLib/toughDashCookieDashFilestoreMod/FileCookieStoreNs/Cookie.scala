@@ -14,10 +14,8 @@ trait Cookie extends js.Object {
 object Cookie {
   @scala.inline
   def apply(domain: java.lang.String, key: java.lang.String, path: java.lang.String): Cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(domain = domain, key = key, path = path)
+  
     __obj.asInstanceOf[Cookie]
   }
 }

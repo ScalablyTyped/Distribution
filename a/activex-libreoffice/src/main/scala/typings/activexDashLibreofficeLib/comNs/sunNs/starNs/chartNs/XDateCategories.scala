@@ -36,10 +36,8 @@ object XDateCategories {
     getDateCategories: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
     setDateCategories: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XDateCategories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DateCategories")(DateCategories)
-    __obj.updateDynamic("getDateCategories")(getDateCategories)
-    __obj.updateDynamic("setDateCategories")(setDateCategories)
+    val __obj = js.Dynamic.literal(DateCategories = DateCategories, getDateCategories = getDateCategories, setDateCategories = setDateCategories)
+  
     __obj.asInstanceOf[XDateCategories]
   }
 }

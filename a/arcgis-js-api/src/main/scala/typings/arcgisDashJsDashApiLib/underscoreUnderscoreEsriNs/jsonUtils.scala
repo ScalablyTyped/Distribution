@@ -29,9 +29,8 @@ trait jsonUtils extends js.Object {
 object jsonUtils {
   @scala.inline
   def apply(fromJSON: js.Function1[js.Any, Geometry], getJsonType: js.Function1[Geometry, java.lang.String]): jsonUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("getJsonType")(getJsonType)
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, getJsonType = getJsonType)
+  
     __obj.asInstanceOf[jsonUtils]
   }
 }

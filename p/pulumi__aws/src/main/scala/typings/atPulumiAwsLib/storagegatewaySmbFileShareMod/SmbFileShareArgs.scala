@@ -81,10 +81,7 @@ object SmbFileShareArgs {
     requesterPays: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     validUserLists: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): SmbFileShareArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("locationArn")(locationArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], locationArn = locationArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
     if (defaultStorageClass != null) __obj.updateDynamic("defaultStorageClass")(defaultStorageClass.asInstanceOf[js.Any])
     if (guessMimeTypeEnabled != null) __obj.updateDynamic("guessMimeTypeEnabled")(guessMimeTypeEnabled.asInstanceOf[js.Any])

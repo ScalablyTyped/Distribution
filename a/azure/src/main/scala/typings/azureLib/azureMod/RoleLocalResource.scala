@@ -14,10 +14,8 @@ trait RoleLocalResource extends js.Object {
 object RoleLocalResource {
   @scala.inline
   def apply(maximumSizeInMegabytes: scala.Double, name: java.lang.String, path: java.lang.String): RoleLocalResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maximumSizeInMegabytes")(maximumSizeInMegabytes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(maximumSizeInMegabytes = maximumSizeInMegabytes, name = name, path = path)
+  
     __obj.asInstanceOf[RoleLocalResource]
   }
 }

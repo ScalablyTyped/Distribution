@@ -26,11 +26,8 @@ object DatabaseRegistrationEvent {
     OldLocation: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DatabaseRegistrationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NewLocation")(NewLocation)
-    __obj.updateDynamic("OldLocation")(OldLocation)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Name = Name, NewLocation = NewLocation, OldLocation = OldLocation, Source = Source)
+  
     __obj.asInstanceOf[DatabaseRegistrationEvent]
   }
 }

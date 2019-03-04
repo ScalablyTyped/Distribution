@@ -20,11 +20,8 @@ object Anon_AnnotatedLocation {
     getDeviceSerialNumber: js.Function1[js.Function1[/* serialNumber */ java.lang.String, scala.Unit], scala.Unit],
     getDirectoryDeviceId: js.Function1[js.Function1[/* deviceId */ java.lang.String, scala.Unit], scala.Unit]
   ): Anon_AnnotatedLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeviceAnnotatedLocation")(getDeviceAnnotatedLocation)
-    __obj.updateDynamic("getDeviceAssetId")(getDeviceAssetId)
-    __obj.updateDynamic("getDeviceSerialNumber")(getDeviceSerialNumber)
-    __obj.updateDynamic("getDirectoryDeviceId")(getDirectoryDeviceId)
+    val __obj = js.Dynamic.literal(getDeviceAnnotatedLocation = getDeviceAnnotatedLocation, getDeviceAssetId = getDeviceAssetId, getDeviceSerialNumber = getDeviceSerialNumber, getDirectoryDeviceId = getDirectoryDeviceId)
+  
     __obj.asInstanceOf[Anon_AnnotatedLocation]
   }
 }

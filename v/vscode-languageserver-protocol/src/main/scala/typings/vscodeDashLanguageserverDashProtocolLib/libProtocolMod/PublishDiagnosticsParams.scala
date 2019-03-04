@@ -31,9 +31,7 @@ object PublishDiagnosticsParams {
     uri: java.lang.String,
     version: scala.Int | scala.Double = null
   ): PublishDiagnosticsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagnostics")(diagnostics)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics, uri = uri)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishDiagnosticsParams]
   }

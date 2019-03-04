@@ -51,13 +51,8 @@ object ASPxClientDashboardItemDataDimension {
     Name: java.lang.String,
     TextGroupInterval: java.lang.String
   ): ASPxClientDashboardItemDataDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataMember")(DataMember)
-    __obj.updateDynamic("DateTimeGroupInterval")(DateTimeGroupInterval)
-    __obj.updateDynamic("Format")(Format)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("TextGroupInterval")(TextGroupInterval)
+    val __obj = js.Dynamic.literal(DataMember = DataMember, DateTimeGroupInterval = DateTimeGroupInterval, Format = Format, Id = Id, Name = Name, TextGroupInterval = TextGroupInterval)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimension]
   }
 }

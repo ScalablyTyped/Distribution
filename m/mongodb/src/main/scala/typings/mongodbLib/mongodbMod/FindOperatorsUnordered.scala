@@ -26,14 +26,8 @@ object FindOperatorsUnordered {
     updateOne: js.Function1[js.Object, UnorderedBulkOperation],
     upsert: js.Function0[FindOperatorsUnordered]
   ): FindOperatorsUnordered = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeOne")(removeOne)
-    __obj.updateDynamic("replaceOne")(replaceOne)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateOne")(updateOne)
-    __obj.updateDynamic("upsert")(upsert)
+    val __obj = js.Dynamic.literal(length = length, remove = remove, removeOne = removeOne, replaceOne = replaceOne, update = update, updateOne = updateOne, upsert = upsert)
+  
     __obj.asInstanceOf[FindOperatorsUnordered]
   }
 }

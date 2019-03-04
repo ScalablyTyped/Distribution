@@ -22,8 +22,7 @@ object Anon_Except {
     except: js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.angularNs.IPromise[_] = null,
     only: js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.angularNs.IPromise[_] = null
   ): Anon_Except = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(redirectTo = redirectTo.asInstanceOf[js.Any])
     if (except != null) __obj.updateDynamic("except")(except.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Except]

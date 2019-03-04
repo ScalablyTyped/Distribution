@@ -26,14 +26,8 @@ object Position {
     insertInlineImage: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource, InlineImage],
     insertText: js.Function1[java.lang.String, Text]
   ): Position = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("getOffset")(getOffset)
-    __obj.updateDynamic("getSurroundingText")(getSurroundingText)
-    __obj.updateDynamic("getSurroundingTextOffset")(getSurroundingTextOffset)
-    __obj.updateDynamic("insertBookmark")(insertBookmark)
-    __obj.updateDynamic("insertInlineImage")(insertInlineImage)
-    __obj.updateDynamic("insertText")(insertText)
+    val __obj = js.Dynamic.literal(getElement = getElement, getOffset = getOffset, getSurroundingText = getSurroundingText, getSurroundingTextOffset = getSurroundingTextOffset, insertBookmark = insertBookmark, insertInlineImage = insertInlineImage, insertText = insertText)
+  
     __obj.asInstanceOf[Position]
   }
 }

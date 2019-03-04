@@ -20,11 +20,8 @@ object session {
     put: js.Function2[java.lang.String, js.Any, scala.Unit],
     remove: js.Function1[java.lang.String, scala.Unit]
   ): session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, put = put, remove = remove)
+  
     __obj.asInstanceOf[session]
   }
 }

@@ -24,13 +24,8 @@ object Client {
     product: ProductResource,
     shop: ShopResource
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkout")(checkout)
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("fetchNextPage")(fetchNextPage)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("shop")(shop)
+    val __obj = js.Dynamic.literal(checkout = checkout, collection = collection, fetchNextPage = fetchNextPage, image = image, product = product, shop = shop)
+  
     __obj.asInstanceOf[Client]
   }
 }

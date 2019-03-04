@@ -25,9 +25,7 @@ object Step {
     messageType: atOracleOraclejetLib.atOracleOraclejetLibStrings.info | atOracleOraclejetLib.atOracleOraclejetLibStrings.error | atOracleOraclejetLib.atOracleOraclejetLibStrings.fatal | atOracleOraclejetLib.atOracleOraclejetLibStrings.warning = null,
     visited: js.UndefOr[scala.Boolean] = js.undefined
   ): Step = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(id = id, label = label)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (messageType != null) __obj.updateDynamic("messageType")(messageType.asInstanceOf[js.Any])
     if (!js.isUndefined(visited)) __obj.updateDynamic("visited")(visited)

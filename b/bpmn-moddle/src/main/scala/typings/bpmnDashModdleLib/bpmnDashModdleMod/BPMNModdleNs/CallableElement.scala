@@ -26,13 +26,7 @@ object CallableElement {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CallableElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ioBinding")(ioBinding)
-    __obj.updateDynamic("ioSpecification")(ioSpecification)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("supportedInterfaceRef")(supportedInterfaceRef)
+    val __obj = js.Dynamic.literal($type = $type, id = id, ioBinding = ioBinding, ioSpecification = ioSpecification, name = name, supportedInterfaceRef = supportedInterfaceRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

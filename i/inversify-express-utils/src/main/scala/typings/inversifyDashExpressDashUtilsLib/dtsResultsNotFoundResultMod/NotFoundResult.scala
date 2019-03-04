@@ -18,9 +18,8 @@ object NotFoundResult {
       js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
     ]
   ): NotFoundResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("executeAsync")(executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, executeAsync = executeAsync)
+  
     __obj.asInstanceOf[NotFoundResult]
   }
 }

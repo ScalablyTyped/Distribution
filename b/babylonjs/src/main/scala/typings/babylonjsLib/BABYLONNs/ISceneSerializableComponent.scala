@@ -40,15 +40,8 @@ object ISceneSerializableComponent {
     scene: Scene,
     serialize: js.Function1[js.Any, scala.Unit]
   ): ISceneSerializableComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFromContainer")(addFromContainer)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rebuild")(rebuild)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("removeFromContainer")(removeFromContainer)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(addFromContainer = addFromContainer, dispose = dispose, name = name, rebuild = rebuild, register = register, removeFromContainer = removeFromContainer, scene = scene, serialize = serialize)
+  
     __obj.asInstanceOf[ISceneSerializableComponent]
   }
 }

@@ -54,12 +54,7 @@ object Session {
   /* _ */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     maxAge: scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session = null
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("populated")(populated)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(inspect = inspect, length = length, populated = populated, save = save, toJSON = toJSON)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Session]

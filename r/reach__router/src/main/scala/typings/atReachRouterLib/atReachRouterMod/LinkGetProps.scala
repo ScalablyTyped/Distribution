@@ -20,11 +20,8 @@ object LinkGetProps {
     isPartiallyCurrent: scala.Boolean,
     location: WindowLocation
   ): LinkGetProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("isCurrent")(isCurrent)
-    __obj.updateDynamic("isPartiallyCurrent")(isPartiallyCurrent)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(href = href, isCurrent = isCurrent, isPartiallyCurrent = isPartiallyCurrent, location = location)
+  
     __obj.asInstanceOf[LinkGetProps]
   }
 }

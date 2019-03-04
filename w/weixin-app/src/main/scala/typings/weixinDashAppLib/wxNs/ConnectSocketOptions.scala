@@ -35,8 +35,7 @@ object ConnectSocketOptions {
     protocols: js.Array[java.lang.String] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): ConnectSocketOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (data != null) __obj.updateDynamic("data")(data)
     if (fail != null) __obj.updateDynamic("fail")(fail)

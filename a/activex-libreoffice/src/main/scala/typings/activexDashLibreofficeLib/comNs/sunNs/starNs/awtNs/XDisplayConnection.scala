@@ -56,16 +56,8 @@ object XDisplayConnection {
     removeErrorHandler: js.Function1[XEventHandler, scala.Unit],
     removeEventHandler: js.Function2[js.Any, XEventHandler, scala.Unit]
   ): XDisplayConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addErrorHandler")(addErrorHandler)
-    __obj.updateDynamic("addEventHandler")(addEventHandler)
-    __obj.updateDynamic("getIdentifier")(getIdentifier)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeErrorHandler")(removeErrorHandler)
-    __obj.updateDynamic("removeEventHandler")(removeEventHandler)
+    val __obj = js.Dynamic.literal(Identifier = Identifier, acquire = acquire, addErrorHandler = addErrorHandler, addEventHandler = addEventHandler, getIdentifier = getIdentifier, queryInterface = queryInterface, release = release, removeErrorHandler = removeErrorHandler, removeEventHandler = removeEventHandler)
+  
     __obj.asInstanceOf[XDisplayConnection]
   }
 }

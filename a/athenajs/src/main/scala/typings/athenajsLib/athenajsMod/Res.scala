@@ -14,9 +14,8 @@ trait Res extends js.Object {
 object Res {
   @scala.inline
   def apply(id: java.lang.String, src: java.lang.String, `type`: java.lang.String): Res = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(id = id, src = src)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Res]
   }
 }

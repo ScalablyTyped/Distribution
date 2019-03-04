@@ -96,25 +96,8 @@ object XIdlMethod {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIdlMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DeclaringClass")(DeclaringClass)
-    __obj.updateDynamic("ExceptionTypes")(ExceptionTypes)
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ParameterInfos")(ParameterInfos)
-    __obj.updateDynamic("ParameterTypes")(ParameterTypes)
-    __obj.updateDynamic("ReturnType")(ReturnType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDeclaringClass")(getDeclaringClass)
-    __obj.updateDynamic("getExceptionTypes")(getExceptionTypes)
-    __obj.updateDynamic("getMode")(getMode)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParameterInfos")(getParameterInfos)
-    __obj.updateDynamic("getParameterTypes")(getParameterTypes)
-    __obj.updateDynamic("getReturnType")(getReturnType)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass, ExceptionTypes = ExceptionTypes, Mode = Mode, Name = Name, ParameterInfos = ParameterInfos, ParameterTypes = ParameterTypes, ReturnType = ReturnType, acquire = acquire, getDeclaringClass = getDeclaringClass, getExceptionTypes = getExceptionTypes, getMode = getMode, getName = getName, getParameterInfos = getParameterInfos, getParameterTypes = getParameterTypes, getReturnType = getReturnType, invoke = invoke, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIdlMethod]
   }
 }

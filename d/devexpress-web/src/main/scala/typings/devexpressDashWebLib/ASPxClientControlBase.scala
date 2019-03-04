@@ -69,17 +69,8 @@ object ASPxClientControlBase {
     SetVisible: js.Function1[scala.Boolean, scala.Unit],
     name: java.lang.String
   ): ASPxClientControlBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(GetClientVisible = GetClientVisible, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetVisible = SetVisible, name = name)
+  
     __obj.asInstanceOf[ASPxClientControlBase]
   }
 }

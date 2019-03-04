@@ -24,13 +24,8 @@ object ItemModel {
     path: java.lang.String,
     url: java.lang.String
   ): ItemModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("contentMetadata")(contentMetadata)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isSymLink")(isSymLink)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, contentMetadata = contentMetadata, isFolder = isFolder, isSymLink = isSymLink, path = path, url = url)
+  
     __obj.asInstanceOf[ItemModel]
   }
 }

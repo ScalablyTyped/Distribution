@@ -28,15 +28,8 @@ object BusLine {
     name: java.lang.String,
     startTime: java.lang.String
   ): BusLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("company")(company)
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("getBusStation")(getBusStation)
-    __obj.updateDynamic("getNumBusStations")(getNumBusStations)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("getPolyline")(getPolyline)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(company = company, endTime = endTime, getBusStation = getBusStation, getNumBusStations = getNumBusStations, getPath = getPath, getPolyline = getPolyline, name = name, startTime = startTime)
+  
     __obj.asInstanceOf[BusLine]
   }
 }

@@ -24,9 +24,8 @@ trait ASPxDesignerElementEditorItem extends js.Object {
 object ASPxDesignerElementEditorItem {
   @scala.inline
   def apply(displayValue: java.lang.String, value: js.Object): ASPxDesignerElementEditorItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayValue")(displayValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(displayValue = displayValue, value = value)
+  
     __obj.asInstanceOf[ASPxDesignerElementEditorItem]
   }
 }

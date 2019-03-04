@@ -15,7 +15,7 @@ abstract class ExternalClientArray[T /* <: samchonLib.templatesExternalExternalS
   /**
     * @hidden
     */
-  var `server_base_`: js.Any = js.native
+  var server_base_ : js.Any = js.native
   /**
     * Add a newly connected remote client.
     *

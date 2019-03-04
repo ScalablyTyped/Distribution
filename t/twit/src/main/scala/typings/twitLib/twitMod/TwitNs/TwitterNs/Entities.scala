@@ -20,11 +20,8 @@ object Entities {
     urls: js.Array[UrlEntity],
     user_mentions: js.Array[UserMentionEntity]
   ): Entities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashtags")(hashtags)
-    __obj.updateDynamic("media")(media)
-    __obj.updateDynamic("urls")(urls)
-    __obj.updateDynamic("user_mentions")(user_mentions)
+    val __obj = js.Dynamic.literal(hashtags = hashtags, media = media, urls = urls, user_mentions = user_mentions)
+  
     __obj.asInstanceOf[Entities]
   }
 }

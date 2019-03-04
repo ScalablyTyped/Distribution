@@ -18,10 +18,8 @@ object ISmsDeviceStatics {
     getDefaultAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[SmsDevice]],
     getDeviceSelector: js.Function0[java.lang.String]
   ): ISmsDeviceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromIdAsync")(fromIdAsync)
-    __obj.updateDynamic("getDefaultAsync")(getDefaultAsync)
-    __obj.updateDynamic("getDeviceSelector")(getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromIdAsync = fromIdAsync, getDefaultAsync = getDefaultAsync, getDeviceSelector = getDeviceSelector)
+  
     __obj.asInstanceOf[ISmsDeviceStatics]
   }
 }

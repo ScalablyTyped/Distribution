@@ -22,8 +22,7 @@ object Anon_ArgumentCommentsLocTypeAnnotation {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_ArgumentCommentsLocTypeAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])

@@ -13,9 +13,8 @@ trait bufferAppendedData extends js.Object {
 object bufferAppendedData {
   @scala.inline
   def apply(pending: scala.Double, timeRanges: hlsDotJsLib.Anon_Audio): bufferAppendedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("timeRanges")(timeRanges)
+    val __obj = js.Dynamic.literal(pending = pending, timeRanges = timeRanges)
+  
     __obj.asInstanceOf[bufferAppendedData]
   }
 }

@@ -16,8 +16,7 @@ trait NullColoringStrategyGeneric[TStrategy, TColor] extends js.Object {
 object NullColoringStrategyGeneric {
   @scala.inline
   def apply[TStrategy, TColor](strategy: TStrategy, color: TColor = null): NullColoringStrategyGeneric[TStrategy, TColor] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[NullColoringStrategyGeneric[TStrategy, TColor]]
   }

@@ -21,12 +21,7 @@ object ErrorVar {
     dataPath: java.lang.String = null,
     schemaPath: java.lang.String = null
   ): ErrorVar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("subErrors")(subErrors)
+    val __obj = js.Dynamic.literal(code = code, message = message, params = params, stack = stack, subErrors = subErrors)
     if (dataPath != null) __obj.updateDynamic("dataPath")(dataPath)
     if (schemaPath != null) __obj.updateDynamic("schemaPath")(schemaPath)
     __obj.asInstanceOf[ErrorVar]

@@ -16,9 +16,8 @@ object Notyf {
     alert: js.Function1[java.lang.String, scala.Unit],
     confirm: js.Function1[java.lang.String, scala.Unit]
   ): Notyf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("confirm")(confirm)
+    val __obj = js.Dynamic.literal(alert = alert, confirm = confirm)
+  
     __obj.asInstanceOf[Notyf]
   }
 }

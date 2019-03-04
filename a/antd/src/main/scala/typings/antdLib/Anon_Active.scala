@@ -44,18 +44,8 @@ object Anon_Active {
     ],
     width: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   ): Anon_Active = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("gapDegree")(gapDegree)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("showInfo")(showInfo)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("strokeColor")(strokeColor)
-    __obj.updateDynamic("strokeLinecap")(strokeLinecap)
-    __obj.updateDynamic("strokeWidth")(strokeWidth)
-    __obj.updateDynamic("trailColor")(trailColor)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(default = default, format = format, gapDegree = gapDegree, percent = percent, showInfo = showInfo, status = status, strokeColor = strokeColor, strokeLinecap = strokeLinecap, strokeWidth = strokeWidth, trailColor = trailColor, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Active]
   }
 }

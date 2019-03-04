@@ -13,9 +13,8 @@ trait ExtraState extends js.Object {
 object ExtraState {
   @scala.inline
   def apply(isDragging: scala.Boolean, isHovering: scala.Boolean): ExtraState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDragging")(isDragging)
-    __obj.updateDynamic("isHovering")(isHovering)
+    val __obj = js.Dynamic.literal(isDragging = isDragging, isHovering = isHovering)
+  
     __obj.asInstanceOf[ExtraState]
   }
 }

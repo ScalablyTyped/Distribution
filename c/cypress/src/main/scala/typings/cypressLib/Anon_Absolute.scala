@@ -16,8 +16,7 @@ trait Anon_Absolute extends js.Object {
 object Anon_Absolute {
   @scala.inline
   def apply(name: java.lang.String, absolute: java.lang.String = null, relative: java.lang.String = null): Anon_Absolute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (absolute != null) __obj.updateDynamic("absolute")(absolute)
     if (relative != null) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[Anon_Absolute]

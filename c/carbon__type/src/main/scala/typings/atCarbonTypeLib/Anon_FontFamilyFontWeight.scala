@@ -22,10 +22,9 @@ object Anon_FontFamilyFontWeight {
     fontWeight: scala.Double,
     textRendering: java.lang.String
   ): Anon_FontFamilyFontWeight = {
-    val __obj = js.Dynamic.literal(`-moz-osx-font-smoothing` = `-moz-osx-font-smoothing`, `-webkit-font-smoothing` = `-webkit-font-smoothing`)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("textRendering")(textRendering)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontWeight = fontWeight, textRendering = textRendering)
+    __obj.updateDynamic("-moz-osx-font-smoothing")(`-moz-osx-font-smoothing`)
+    __obj.updateDynamic("-webkit-font-smoothing")(`-webkit-font-smoothing`)
     __obj.asInstanceOf[Anon_FontFamilyFontWeight]
   }
 }

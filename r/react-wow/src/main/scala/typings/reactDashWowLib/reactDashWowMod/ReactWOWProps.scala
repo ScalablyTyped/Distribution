@@ -79,9 +79,7 @@ object ReactWOWProps {
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     scroll: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactWOWProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animation")(animation)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(animation = animation, children = children)
     if (animateClass != null) __obj.updateDynamic("animateClass")(animateClass)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (delay != null) __obj.updateDynamic("delay")(delay)

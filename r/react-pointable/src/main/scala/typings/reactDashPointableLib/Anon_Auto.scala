@@ -16,9 +16,8 @@ object Anon_Auto {
     tagName: reactDashPointableLib.reactDashPointableLibStrings.div,
     touchAction: reactDashPointableLib.reactDashPointableLibStrings.auto
   ): Anon_Auto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tagName")(tagName)
-    __obj.updateDynamic("touchAction")(touchAction)
+    val __obj = js.Dynamic.literal(tagName = tagName, touchAction = touchAction)
+  
     __obj.asInstanceOf[Anon_Auto]
   }
 }

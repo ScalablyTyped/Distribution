@@ -47,11 +47,7 @@ object BitmapTextOptions {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): BitmapTextOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charHeight")(charHeight)
-    __obj.updateDynamic("charWidth")(charWidth)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("startY")(startY)
+    val __obj = js.Dynamic.literal(charHeight = charHeight, charWidth = charWidth, offsetX = offsetX, startY = startY)
     if (behavior != null) __obj.updateDynamic("behavior")(behavior)
     if (!js.isUndefined(canCollide)) __obj.updateDynamic("canCollide")(canCollide)
     if (!js.isUndefined(canCollideFriendBullet)) __obj.updateDynamic("canCollideFriendBullet")(canCollideFriendBullet)

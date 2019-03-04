@@ -414,8 +414,7 @@ object CommonBase {
       scala.Unit
     ] = null
   ): CommonBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("is")(is)
+    val __obj = js.Dynamic.literal(is = is)
     if ($ != null) __obj.updateDynamic("$")($)
     if ($$ != null) __obj.updateDynamic("$$")($$)
     if (arrayDelete != null) __obj.updateDynamic("arrayDelete")(arrayDelete)

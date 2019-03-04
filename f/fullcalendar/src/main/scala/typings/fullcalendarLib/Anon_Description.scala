@@ -26,14 +26,8 @@ object Anon_Description {
     title: js.Any,
     url: js.Any
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(description = description, end = end, id = id, location = location, start = start, title = title, url = url)
+  
     __obj.asInstanceOf[Anon_Description]
   }
 }

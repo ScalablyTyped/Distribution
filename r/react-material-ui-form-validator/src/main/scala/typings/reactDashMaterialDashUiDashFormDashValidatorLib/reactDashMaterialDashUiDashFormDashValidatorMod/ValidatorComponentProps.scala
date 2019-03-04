@@ -24,9 +24,7 @@ object ValidatorComponentProps {
     validators: js.Array[_] = null,
     withRequiredValidator: js.UndefOr[scala.Boolean] = js.undefined
   ): ValidatorComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages.asInstanceOf[js.Any])
     if (validatorListener != null) __obj.updateDynamic("validatorListener")(validatorListener)
     if (validators != null) __obj.updateDynamic("validators")(validators)

@@ -16,9 +16,8 @@ object Anon_LightMap {
     lightMap: threeLib.threeDashCoreMod.IUniform,
     lightMapIntensity: threeLib.threeDashCoreMod.IUniform
   ): Anon_LightMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lightMap")(lightMap)
-    __obj.updateDynamic("lightMapIntensity")(lightMapIntensity)
+    val __obj = js.Dynamic.literal(lightMap = lightMap, lightMapIntensity = lightMapIntensity)
+  
     __obj.asInstanceOf[Anon_LightMap]
   }
 }

@@ -13,9 +13,8 @@ trait FieldUpdate extends js.Object {
 object FieldUpdate {
   @scala.inline
   def apply(description: java.lang.String, id: java.lang.String): FieldUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(description = description, id = id)
+  
     __obj.asInstanceOf[FieldUpdate]
   }
 }

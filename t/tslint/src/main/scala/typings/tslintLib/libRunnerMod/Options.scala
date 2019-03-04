@@ -88,9 +88,7 @@ object Options {
     test: js.UndefOr[scala.Boolean] = js.undefined,
     typeCheck: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(exclude = exclude, files = files)
     if (config != null) __obj.updateDynamic("config")(config)
     if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix)
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)

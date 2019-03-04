@@ -20,11 +20,8 @@ object Options {
     path: java.lang.String,
     secure: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("secure")(secure)
+    val __obj = js.Dynamic.literal(domain = domain, expires = expires.asInstanceOf[js.Any], path = path, secure = secure)
+  
     __obj.asInstanceOf[Options]
   }
 }

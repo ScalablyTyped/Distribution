@@ -17,9 +17,8 @@ trait IgGridRowSelectorsMethods extends js.Object {
 object IgGridRowSelectorsMethods {
   @scala.inline
   def apply(changeLocale: js.Function0[scala.Unit], destroy: js.Function0[scala.Unit]): IgGridRowSelectorsMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
+    val __obj = js.Dynamic.literal(changeLocale = changeLocale, destroy = destroy)
+  
     __obj.asInstanceOf[IgGridRowSelectorsMethods]
   }
 }

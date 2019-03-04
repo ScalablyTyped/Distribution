@@ -36,12 +36,8 @@ object XMaterialHolder {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMaterialHolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Material")(Material)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMaterial")(getMaterial)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Material = Material, acquire = acquire, getMaterial = getMaterial, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMaterialHolder]
   }
 }

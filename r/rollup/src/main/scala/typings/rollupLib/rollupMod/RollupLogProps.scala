@@ -34,8 +34,7 @@ object RollupLogProps {
     pos: scala.Int | scala.Double = null,
     url: java.lang.String = null
   ): RollupLogProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (code != null) __obj.updateDynamic("code")(code)
     if (frame != null) __obj.updateDynamic("frame")(frame)
     if (hook != null) __obj.updateDynamic("hook")(hook)

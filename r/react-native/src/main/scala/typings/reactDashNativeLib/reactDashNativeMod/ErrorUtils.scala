@@ -16,9 +16,8 @@ object ErrorUtils {
     getGlobalHandler: js.Function0[reactDashNativeLib.ErrorHandlerCallback],
     setGlobalHandler: js.Function1[reactDashNativeLib.ErrorHandlerCallback, scala.Unit]
   ): ErrorUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getGlobalHandler")(getGlobalHandler)
-    __obj.updateDynamic("setGlobalHandler")(setGlobalHandler)
+    val __obj = js.Dynamic.literal(getGlobalHandler = getGlobalHandler, setGlobalHandler = setGlobalHandler)
+  
     __obj.asInstanceOf[ErrorUtils]
   }
 }

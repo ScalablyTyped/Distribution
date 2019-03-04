@@ -36,19 +36,8 @@ object SpinnerPopup {
     setVerticalOffset: js.Function1[scala.Double, scala.Unit],
     showPopup: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): SpinnerPopup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dismiss")(dismiss)
-    __obj.updateDynamic("getBackground")(getBackground)
-    __obj.updateDynamic("getHintText")(getHintText)
-    __obj.updateDynamic("getHorizontalOffset")(getHorizontalOffset)
-    __obj.updateDynamic("getVerticalOffset")(getVerticalOffset)
-    __obj.updateDynamic("isShowing")(isShowing)
-    __obj.updateDynamic("setAdapter")(setAdapter)
-    __obj.updateDynamic("setBackgroundDrawable")(setBackgroundDrawable)
-    __obj.updateDynamic("setHorizontalOffset")(setHorizontalOffset)
-    __obj.updateDynamic("setPromptText")(setPromptText)
-    __obj.updateDynamic("setVerticalOffset")(setVerticalOffset)
-    __obj.updateDynamic("showPopup")(showPopup)
+    val __obj = js.Dynamic.literal(dismiss = dismiss, getBackground = getBackground, getHintText = getHintText, getHorizontalOffset = getHorizontalOffset, getVerticalOffset = getVerticalOffset, isShowing = isShowing, setAdapter = setAdapter, setBackgroundDrawable = setBackgroundDrawable, setHorizontalOffset = setHorizontalOffset, setPromptText = setPromptText, setVerticalOffset = setVerticalOffset, showPopup = showPopup)
+  
     __obj.asInstanceOf[SpinnerPopup]
   }
 }

@@ -12,8 +12,8 @@ trait ChartOptions extends js.Object {
 object ChartOptions {
   @scala.inline
   def apply(get: js.Function1[java.lang.String, js.Object]): ChartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[ChartOptions]
   }
 }

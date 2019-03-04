@@ -13,9 +13,8 @@ trait fragLoadedData extends js.Object {
 object fragLoadedData {
   @scala.inline
   def apply(frag: Fragment, payload: js.Any): fragLoadedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frag")(frag)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(frag = frag, payload = payload)
+  
     __obj.asInstanceOf[fragLoadedData]
   }
 }

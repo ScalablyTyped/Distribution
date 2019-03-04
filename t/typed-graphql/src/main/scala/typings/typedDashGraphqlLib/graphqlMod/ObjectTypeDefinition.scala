@@ -24,10 +24,7 @@ object ObjectTypeDefinition {
     interfaces: js.Array[NamedType] = null,
     loc: Location = null
   ): ObjectTypeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name)
     if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[ObjectTypeDefinition]

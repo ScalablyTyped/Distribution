@@ -82,14 +82,8 @@ object XConnectionTools {
     ],
     getObjectNames: js.Function0[XObjectNames]
   ): XConnectionTools = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSourceMetaData")(DataSourceMetaData)
-    __obj.updateDynamic("ObjectNames")(ObjectNames)
-    __obj.updateDynamic("createTableName")(createTableName)
-    __obj.updateDynamic("getComposer")(getComposer)
-    __obj.updateDynamic("getDataSourceMetaData")(getDataSourceMetaData)
-    __obj.updateDynamic("getFieldsByCommandDescriptor")(getFieldsByCommandDescriptor)
-    __obj.updateDynamic("getObjectNames")(getObjectNames)
+    val __obj = js.Dynamic.literal(DataSourceMetaData = DataSourceMetaData, ObjectNames = ObjectNames, createTableName = createTableName, getComposer = getComposer, getDataSourceMetaData = getDataSourceMetaData, getFieldsByCommandDescriptor = getFieldsByCommandDescriptor, getObjectNames = getObjectNames)
+  
     __obj.asInstanceOf[XConnectionTools]
   }
 }

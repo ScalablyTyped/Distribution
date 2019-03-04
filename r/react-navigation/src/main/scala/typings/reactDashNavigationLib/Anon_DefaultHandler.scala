@@ -22,9 +22,8 @@ object Anon_DefaultHandler {
       reactDashNavigationLib.reactDashNavigationMod.NavigationParams
     ]
   ): Anon_DefaultHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultHandler")(defaultHandler)
-    __obj.updateDynamic("navigation")(navigation)
+    val __obj = js.Dynamic.literal(defaultHandler = defaultHandler, navigation = navigation)
+  
     __obj.asInstanceOf[Anon_DefaultHandler]
   }
 }

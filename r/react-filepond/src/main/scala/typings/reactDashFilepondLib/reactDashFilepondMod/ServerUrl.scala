@@ -44,8 +44,7 @@ object ServerUrl {
     timeout: scala.Int | scala.Double = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): ServerUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (ondata != null) __obj.updateDynamic("ondata")(ondata)

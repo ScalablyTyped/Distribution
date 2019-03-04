@@ -90,10 +90,7 @@ object OnClickData {
     srcUrl: java.lang.String = null,
     wasChecked: js.UndefOr[scala.Boolean] = js.undefined
   ): OnClickData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("menuItemId")(menuItemId.asInstanceOf[js.Any])
-    __obj.updateDynamic("pageUrl")(pageUrl)
+    val __obj = js.Dynamic.literal(editable = editable, menuItemId = menuItemId.asInstanceOf[js.Any], pageUrl = pageUrl)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
     if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)

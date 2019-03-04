@@ -28,15 +28,8 @@ object Anon_ColumnFilenameIsListLineno {
     nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node],
     preserve: scala.Boolean
   ): Anon_ColumnFilenameIsListLineno = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("isList")(isList)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("preserve")(preserve)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, isList = isList, lineno = lineno, map = map, nodes = nodes, preserve = preserve)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameIsListLineno]
   }
 }

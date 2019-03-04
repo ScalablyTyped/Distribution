@@ -14,10 +14,8 @@ trait FileChange extends js.Object {
 object FileChange {
   @scala.inline
   def apply(current: File, previous: File, state: FileChangeState): FileChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(current = current, previous = previous, state = state)
+  
     __obj.asInstanceOf[FileChange]
   }
 }

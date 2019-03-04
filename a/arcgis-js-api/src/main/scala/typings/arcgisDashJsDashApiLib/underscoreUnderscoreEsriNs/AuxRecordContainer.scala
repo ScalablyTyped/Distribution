@@ -44,14 +44,8 @@ object AuxRecordContainer {
     tableAlias: java.lang.String,
     tableName: java.lang.String
   ): AuxRecordContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("records")(records)
-    __obj.updateDynamic("relationshipType")(relationshipType)
-    __obj.updateDynamic("tableAlias")(tableAlias)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, records = records, relationshipType = relationshipType, tableAlias = tableAlias, tableName = tableName)
+  
     __obj.asInstanceOf[AuxRecordContainer]
   }
 }

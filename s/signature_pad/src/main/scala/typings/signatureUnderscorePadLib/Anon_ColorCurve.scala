@@ -16,9 +16,8 @@ object Anon_ColorCurve {
     color: java.lang.String,
     curve: signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Bezier
   ): Anon_ColorCurve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("curve")(curve)
+    val __obj = js.Dynamic.literal(color = color, curve = curve)
+  
     __obj.asInstanceOf[Anon_ColorCurve]
   }
 }

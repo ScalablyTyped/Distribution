@@ -12,8 +12,8 @@ trait Anon_Actions extends js.Object {
 object Anon_Actions {
   @scala.inline
   def apply(actions: js.Array[elasticsearchLib.elasticsearchMod.IndicesUpdateAliasesParamsAction]): Anon_Actions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
+    val __obj = js.Dynamic.literal(actions = actions)
+  
     __obj.asInstanceOf[Anon_Actions]
   }
 }

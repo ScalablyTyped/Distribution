@@ -12,6 +12,6 @@ trait LodashUpdateWith1x10[T] extends js.Object {
     customizer: lodashLib.lodashMod.underscoreNs.SetWithCustomizer[T],
     updater: js.Function1[/* oldValue */ js.Any, _]
   ): T = js.native
-  def apply(customizer: lodashLib.lodashMod.underscoreNs.`__`, updater: js.Function1[/* oldValue */ js.Any, _]): LodashUpdateWith1x14[T] = js.native
+  def apply(customizer: lodashLib.lodashMod.underscoreNs.__, updater: js.Function1[/* oldValue */ js.Any, _]): LodashUpdateWith1x14[T] = js.native
 }
 

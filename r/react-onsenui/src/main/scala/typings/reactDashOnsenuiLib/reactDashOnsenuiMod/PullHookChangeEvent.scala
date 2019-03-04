@@ -14,8 +14,8 @@ object PullHookChangeEvent {
   def apply(
     state: reactDashOnsenuiLib.reactDashOnsenuiLibStrings.initial | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.preaction | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.action
   ): PullHookChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PullHookChangeEvent]
   }
 }

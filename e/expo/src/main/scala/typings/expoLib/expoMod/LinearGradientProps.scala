@@ -24,8 +24,7 @@ object LinearGradientProps {
     start: js.Tuple2[scala.Double, scala.Double] = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): LinearGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(colors = colors)
     if (end != null) __obj.updateDynamic("end")(end)
     if (locations != null) __obj.updateDynamic("locations")(locations)
     if (start != null) __obj.updateDynamic("start")(start)

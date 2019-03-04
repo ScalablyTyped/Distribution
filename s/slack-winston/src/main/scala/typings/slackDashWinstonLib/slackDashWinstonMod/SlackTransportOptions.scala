@@ -36,11 +36,7 @@ object SlackTransportOptions {
     silent: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null
   ): SlackTransportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("webhook_url")(webhook_url)
+    val __obj = js.Dynamic.literal(channel = channel, domain = domain, token = token, webhook_url = webhook_url)
     if (close != null) __obj.updateDynamic("close")(close)
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(handleExceptions)) __obj.updateDynamic("handleExceptions")(handleExceptions)

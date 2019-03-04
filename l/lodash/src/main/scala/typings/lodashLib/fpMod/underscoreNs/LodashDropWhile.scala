@@ -12,7 +12,7 @@ trait LodashDropWhile extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     array: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashDropWhile1x2[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashDropWhile1x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__): LodashDropWhile1x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashDropWhile1x2[T] = js.native
 }
 

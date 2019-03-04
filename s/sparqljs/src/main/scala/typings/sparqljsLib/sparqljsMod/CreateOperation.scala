@@ -14,9 +14,8 @@ trait CreateOperation extends ManagementOperation {
 object CreateOperation {
   @scala.inline
   def apply(graph: java.lang.String, silent: scala.Boolean, `type`: sparqljsLib.sparqljsLibStrings.create): CreateOperation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(graph = graph, silent = silent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CreateOperation]
   }
 }

@@ -23,10 +23,8 @@ object IClient {
     make: js.Function2[HttpMethod, java.lang.String, js.Promise[ionicLib.Anon_Req]],
     paginate: js.Function1[PaginateArgs[js.Any], IPaginator[js.Any, PaginatorState]]
   ): IClient = {
-    val __obj = js.Dynamic.literal(`do` = `do`)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("make")(make)
-    __obj.updateDynamic("paginate")(paginate)
+    val __obj = js.Dynamic.literal(config = config, make = make, paginate = paginate)
+    __obj.updateDynamic("do")(`do`)
     __obj.asInstanceOf[IClient]
   }
 }

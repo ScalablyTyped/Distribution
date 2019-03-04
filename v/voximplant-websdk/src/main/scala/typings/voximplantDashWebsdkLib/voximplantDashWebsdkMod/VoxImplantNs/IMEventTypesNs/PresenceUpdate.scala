@@ -36,10 +36,7 @@ object PresenceUpdate {
     presence: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.UserStatuses,
     resource: java.lang.String = null
   ): PresenceUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("presence")(presence)
+    val __obj = js.Dynamic.literal(id = id, message = message, presence = presence)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[PresenceUpdate]
   }

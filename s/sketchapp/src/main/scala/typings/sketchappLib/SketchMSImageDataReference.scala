@@ -22,12 +22,8 @@ object SketchMSImageDataReference {
     data: Anon_Data,
     sha1: Anon_Data
   ): SketchMSImageDataReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("_ref")(_ref)
-    __obj.updateDynamic("_ref_class")(_ref_class)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("sha1")(sha1)
+    val __obj = js.Dynamic.literal(_class = _class, _ref = _ref, _ref_class = _ref_class, data = data, sha1 = sha1)
+  
     __obj.asInstanceOf[SketchMSImageDataReference]
   }
 }

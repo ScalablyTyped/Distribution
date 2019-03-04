@@ -20,11 +20,8 @@ object UrlEntity {
     indices: js.Tuple2[scala.Double, scala.Double],
     url: java.lang.String
   ): UrlEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display_url")(display_url)
-    __obj.updateDynamic("expanded_url")(expanded_url)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(display_url = display_url, expanded_url = expanded_url, indices = indices, url = url)
+  
     __obj.asInstanceOf[UrlEntity]
   }
 }

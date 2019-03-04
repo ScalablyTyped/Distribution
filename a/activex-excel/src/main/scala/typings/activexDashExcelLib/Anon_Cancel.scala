@@ -18,10 +18,8 @@ object Anon_Cancel {
     Pvw: activexDashExcelLib.ExcelNs.ProtectedViewWindow,
     Reason: activexDashExcelLib.ExcelNs.XlProtectedViewCloseReason
   ): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Pvw")(Pvw)
-    __obj.updateDynamic("Reason")(Reason)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Pvw = Pvw, Reason = Reason)
+  
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

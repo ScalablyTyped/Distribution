@@ -12,8 +12,8 @@ trait IPrintTaskConfigurationSaveRequestedEventArgs extends js.Object {
 object IPrintTaskConfigurationSaveRequestedEventArgs {
   @scala.inline
   def apply(request: PrintTaskConfigurationSaveRequest): IPrintTaskConfigurationSaveRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedEventArgs]
   }
 }

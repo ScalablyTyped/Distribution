@@ -46,13 +46,8 @@ object ChatRoomMessageRemoved {
     room: java.lang.String,
     timestamp: java.lang.String
   ): ChatRoomMessageRemoved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("private_message")(private_message)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(from = from, message_id = message_id, private_message = private_message, resource = resource, room = room, timestamp = timestamp)
+  
     __obj.asInstanceOf[ChatRoomMessageRemoved]
   }
 }

@@ -20,9 +20,7 @@ object Anon_ConnectionNameExclusions {
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     exclusions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_ConnectionNameExclusions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionName = connectionName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConnectionNameExclusions]
   }

@@ -22,12 +22,8 @@ object RowLegacy {
     _sRowStripe: java.lang.String,
     nTr: stdLib.Node
   ): RowLegacy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_aData")(_aData)
-    __obj.updateDynamic("_aSortData")(_aSortData)
-    __obj.updateDynamic("_anHidden")(_anHidden)
-    __obj.updateDynamic("_sRowStripe")(_sRowStripe)
-    __obj.updateDynamic("nTr")(nTr)
+    val __obj = js.Dynamic.literal(_aData = _aData, _aSortData = _aSortData, _anHidden = _anHidden, _sRowStripe = _sRowStripe, nTr = nTr)
+  
     __obj.asInstanceOf[RowLegacy]
   }
 }

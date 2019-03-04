@@ -34,14 +34,7 @@ object PrivateKeyInfo {
     attributes: js.Array[pkijsLib.srcAttributeMod.default] = null,
     parsedKey: pkijsLib.srcECPrivateKeyMod.default | pkijsLib.srcRSAPrivateKeyMod.default = null
   ): PrivateKeyInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("privateKeyAlgorithm")(privateKeyAlgorithm)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, privateKey = privateKey, privateKeyAlgorithm = privateKeyAlgorithm, toJSON = toJSON, toSchema = toSchema, version = version)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (parsedKey != null) __obj.updateDynamic("parsedKey")(parsedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateKeyInfo]

@@ -23,9 +23,8 @@ trait TextConversionResult extends js.Object {
 object TextConversionResult {
   @scala.inline
   def apply(Boundary: Boundary, Candidates: activexDashInteropLib.SafeArray[java.lang.String]): TextConversionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Boundary")(Boundary)
-    __obj.updateDynamic("Candidates")(Candidates)
+    val __obj = js.Dynamic.literal(Boundary = Boundary, Candidates = Candidates)
+  
     __obj.asInstanceOf[TextConversionResult]
   }
 }

@@ -43,12 +43,8 @@ object XEnhancedMouseClickBroadcaster {
       scala.Unit
     ]
   ): XEnhancedMouseClickBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEnhancedMouseClickHandler")(addEnhancedMouseClickHandler)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEnhancedMouseClickHandler")(removeEnhancedMouseClickHandler)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEnhancedMouseClickHandler = addEnhancedMouseClickHandler, queryInterface = queryInterface, release = release, removeEnhancedMouseClickHandler = removeEnhancedMouseClickHandler)
+  
     __obj.asInstanceOf[XEnhancedMouseClickBroadcaster]
   }
 }

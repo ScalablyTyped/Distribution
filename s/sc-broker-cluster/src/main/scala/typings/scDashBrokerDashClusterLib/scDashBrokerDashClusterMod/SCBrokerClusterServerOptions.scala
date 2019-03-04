@@ -36,9 +36,7 @@ object SCBrokerClusterServerOptions {
     processTermTimeout: scala.Int | scala.Double = null,
     secretKey: java.lang.String = null
   ): SCBrokerClusterServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brokers")(brokers)
-    __obj.updateDynamic("downgradeToUser")(downgradeToUser.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brokers = brokers, downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
     if (appBrokerControllerPath != null) __obj.updateDynamic("appBrokerControllerPath")(appBrokerControllerPath)
     if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

@@ -80,10 +80,7 @@ object INewEvent {
     reminder_time: scala.Int | scala.Double = null,
     visibility: java.lang.String = null
   ): INewEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("start_time")(start_time)
+    val __obj = js.Dynamic.literal(description = description, name = name, start_time = start_time)
     if (availability != null) __obj.updateDynamic("availability")(availability)
     if (end_time != null) __obj.updateDynamic("end_time")(end_time)
     if (!js.isUndefined(is_all_day_event)) __obj.updateDynamic("is_all_day_event")(is_all_day_event)

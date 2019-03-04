@@ -30,9 +30,7 @@ object Protocol {
     schemes: js.Array[java.lang.String],
     role: appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Editor | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Viewer | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.Shell | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.None = null
   ): Protocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schemes")(schemes)
+    val __obj = js.Dynamic.literal(name = name, schemes = schemes)
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protocol]
   }

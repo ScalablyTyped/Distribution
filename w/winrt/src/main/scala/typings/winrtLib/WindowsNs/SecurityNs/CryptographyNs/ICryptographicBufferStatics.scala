@@ -49,18 +49,8 @@ object ICryptographicBufferStatics {
     generateRandom: js.Function1[scala.Double, winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer],
     generateRandomNumber: js.Function0[scala.Double]
   ): ICryptographicBufferStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("convertBinaryToString")(convertBinaryToString)
-    __obj.updateDynamic("convertStringToBinary")(convertStringToBinary)
-    __obj.updateDynamic("copyToByteArray")(copyToByteArray)
-    __obj.updateDynamic("createFromByteArray")(createFromByteArray)
-    __obj.updateDynamic("decodeFromBase64String")(decodeFromBase64String)
-    __obj.updateDynamic("decodeFromHexString")(decodeFromHexString)
-    __obj.updateDynamic("encodeToBase64String")(encodeToBase64String)
-    __obj.updateDynamic("encodeToHexString")(encodeToHexString)
-    __obj.updateDynamic("generateRandom")(generateRandom)
-    __obj.updateDynamic("generateRandomNumber")(generateRandomNumber)
+    val __obj = js.Dynamic.literal(compare = compare, convertBinaryToString = convertBinaryToString, convertStringToBinary = convertStringToBinary, copyToByteArray = copyToByteArray, createFromByteArray = createFromByteArray, decodeFromBase64String = decodeFromBase64String, decodeFromHexString = decodeFromHexString, encodeToBase64String = encodeToBase64String, encodeToHexString = encodeToHexString, generateRandom = generateRandom, generateRandomNumber = generateRandomNumber)
+  
     __obj.asInstanceOf[ICryptographicBufferStatics]
   }
 }

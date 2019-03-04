@@ -12,8 +12,8 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(getActionType: js.Function1[java.lang.String, kosDashCoreLib.Anon_Namespace]): Util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActionType")(getActionType)
+    val __obj = js.Dynamic.literal(getActionType = getActionType)
+  
     __obj.asInstanceOf[Util]
   }
 }

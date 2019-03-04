@@ -22,12 +22,8 @@ object TouchZoomRotateHandler {
     enableRotation: js.Function0[scala.Unit],
     isEnabled: js.Function0[scala.Boolean]
   ): TouchZoomRotateHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("disableRotation")(disableRotation)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enableRotation")(enableRotation)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(disable = disable, disableRotation = disableRotation, enable = enable, enableRotation = enableRotation, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[TouchZoomRotateHandler]
   }
 }

@@ -24,8 +24,7 @@ object BodyParameters {
     refresh_token: java.lang.String = null,
     username: java.lang.String = null
   ): BodyParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grant_type")(grant_type)
+    val __obj = js.Dynamic.literal(grant_type = grant_type)
     if (code != null) __obj.updateDynamic("code")(code)
     if (password != null) __obj.updateDynamic("password")(password)
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)

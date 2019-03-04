@@ -26,14 +26,8 @@ object WzStep {
     wzData: js.Any,
     wzTitle: java.lang.String
   ): WzStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canenter")(canenter)
-    __obj.updateDynamic("canexit")(canexit)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("wzData")(wzData)
-    __obj.updateDynamic("wzTitle")(wzTitle)
+    val __obj = js.Dynamic.literal(canenter = canenter, canexit = canexit, description = description, selected = selected, title = title, wzData = wzData, wzTitle = wzTitle)
+  
     __obj.asInstanceOf[WzStep]
   }
 }

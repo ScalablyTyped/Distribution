@@ -46,9 +46,7 @@ object Anon_CreditCrs {
     tileWidth: scala.Int | scala.Double = null,
     tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null
   ): Anon_CreditCrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layers")(layers)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(layers = layers, url = url)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (crs != null) __obj.updateDynamic("crs")(crs)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)

@@ -18,8 +18,8 @@ object YAML {
     data: unistLib.unistMod.Data = null,
     position: unistLib.unistMod.Position = null
   ): YAML = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[YAML]

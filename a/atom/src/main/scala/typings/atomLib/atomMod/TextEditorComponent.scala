@@ -21,11 +21,8 @@ object TextEditorComponent {
     screenPositionForMouseEvent: js.Function1[atomLib.Anon_ClientX, Point],
     screenPositionForPixelPosition: js.Function1[PixelPosition, Point]
   ): TextEditorComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pixelPositionForMouseEvent")(pixelPositionForMouseEvent)
-    __obj.updateDynamic("pixelPositionForScreenPosition")(pixelPositionForScreenPosition)
-    __obj.updateDynamic("screenPositionForMouseEvent")(screenPositionForMouseEvent)
-    __obj.updateDynamic("screenPositionForPixelPosition")(screenPositionForPixelPosition)
+    val __obj = js.Dynamic.literal(pixelPositionForMouseEvent = pixelPositionForMouseEvent, pixelPositionForScreenPosition = pixelPositionForScreenPosition, screenPositionForMouseEvent = screenPositionForMouseEvent, screenPositionForPixelPosition = screenPositionForPixelPosition)
+  
     __obj.asInstanceOf[TextEditorComponent]
   }
 }

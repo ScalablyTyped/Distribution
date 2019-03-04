@@ -41,8 +41,7 @@ object BadgeProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dot = null
   ): BadgeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (badgeContent != null) __obj.updateDynamic("badgeContent")(badgeContent.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)

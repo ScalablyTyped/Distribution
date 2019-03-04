@@ -20,9 +20,7 @@ object Anon_CommentsLocTail {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsLocTail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tail")(tail)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(tail = tail, value = value)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsLocTail]

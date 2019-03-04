@@ -36,11 +36,8 @@ object FloodlightConfigurationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[FloodlightConfiguration]
     ]
   ): FloodlightConfigurationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[FloodlightConfigurationsResource]
   }
 }

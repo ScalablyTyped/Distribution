@@ -20,11 +20,8 @@ object IObjOrFileVer {
     IsFile: js.Function0[scala.Boolean],
     ObjVer: IObjVer
   ): IObjOrFileVer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FileVer")(FileVer)
-    __obj.updateDynamic("IsFile")(IsFile)
-    __obj.updateDynamic("ObjVer")(ObjVer)
+    val __obj = js.Dynamic.literal(Clone = Clone, FileVer = FileVer, IsFile = IsFile, ObjVer = ObjVer)
+  
     __obj.asInstanceOf[IObjOrFileVer]
   }
 }

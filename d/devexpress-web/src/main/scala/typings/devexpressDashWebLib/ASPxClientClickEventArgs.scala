@@ -81,18 +81,8 @@ object ASPxClientClickEventArgs {
     RowValueType: java.lang.String,
     Value: js.Object
   ): ASPxClientClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnFieldName")(ColumnFieldName)
-    __obj.updateDynamic("ColumnIndex")(ColumnIndex)
-    __obj.updateDynamic("ColumnValue")(ColumnValue)
-    __obj.updateDynamic("ColumnValueType")(ColumnValueType)
-    __obj.updateDynamic("DataIndex")(DataIndex)
-    __obj.updateDynamic("HtmlEvent")(HtmlEvent)
-    __obj.updateDynamic("RowFieldName")(RowFieldName)
-    __obj.updateDynamic("RowIndex")(RowIndex)
-    __obj.updateDynamic("RowValue")(RowValue)
-    __obj.updateDynamic("RowValueType")(RowValueType)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(ColumnFieldName = ColumnFieldName, ColumnIndex = ColumnIndex, ColumnValue = ColumnValue, ColumnValueType = ColumnValueType, DataIndex = DataIndex, HtmlEvent = HtmlEvent, RowFieldName = RowFieldName, RowIndex = RowIndex, RowValue = RowValue, RowValueType = RowValueType, Value = Value)
+  
     __obj.asInstanceOf[ASPxClientClickEventArgs]
   }
 }

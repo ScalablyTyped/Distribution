@@ -52,8 +52,7 @@ object CreateAccountOptions {
     timezone: java.lang.String = null,
     xhr: davLib.davMod.transportNs.Transport = null
   ): CreateAccountOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(server = server)
     if (accountType != null) __obj.updateDynamic("accountType")(accountType.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (!js.isUndefined(loadCollections)) __obj.updateDynamic("loadCollections")(loadCollections)

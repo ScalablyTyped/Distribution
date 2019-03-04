@@ -24,13 +24,8 @@ object ZipCode {
     state: java.lang.String,
     zip: java.lang.String
   ): ZipCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("zip")(zip)
+    val __obj = js.Dynamic.literal(city = city, country = country, latitude = latitude, longitude = longitude, state = state, zip = zip)
+  
     __obj.asInstanceOf[ZipCode]
   }
 }

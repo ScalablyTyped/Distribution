@@ -13,9 +13,8 @@ trait LoginAcceptedPayload extends js.Object {
 object LoginAcceptedPayload {
   @scala.inline
   def apply(sequenceNumber: scala.Double, username: java.lang.String): LoginAcceptedPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequenceNumber")(sequenceNumber)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(sequenceNumber = sequenceNumber, username = username)
+  
     __obj.asInstanceOf[LoginAcceptedPayload]
   }
 }

@@ -28,7 +28,7 @@ class Processor protected () extends js.Object {
   var hasError: js.Any = js.native
   var hasOutputFile: js.Any = js.native
   var hasValidCurrentObject: js.Any = js.native
-  var `isFirstRender_`: js.Any = js.native
+  var isFirstRender_ : js.Any = js.native
   var onchange: js.Any = js.native
   var options: js.Any = js.native
   var outputFileBlobUrl: js.Any = js.native

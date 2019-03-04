@@ -18,8 +18,7 @@ object DefaultLabelWidgetProps {
     className: java.lang.String = null,
     extraProps: js.Any = null
   ): DefaultLabelWidgetProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(model = model)
     if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
     if (className != null) __obj.updateDynamic("className")(className)
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps)

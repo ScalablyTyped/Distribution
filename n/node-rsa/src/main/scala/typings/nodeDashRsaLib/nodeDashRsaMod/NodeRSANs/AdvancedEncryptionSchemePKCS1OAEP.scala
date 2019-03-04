@@ -33,9 +33,7 @@ object AdvancedEncryptionSchemePKCS1OAEP {
       nodeLib.Buffer
     ] = null
   ): AdvancedEncryptionSchemePKCS1OAEP = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(hash = hash, scheme = scheme)
     if (mgf != null) __obj.updateDynamic("mgf")(mgf)
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }

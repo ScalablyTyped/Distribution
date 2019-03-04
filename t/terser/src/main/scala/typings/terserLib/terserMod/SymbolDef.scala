@@ -36,18 +36,7 @@ object SymbolDef {
     undeclared: scala.Boolean,
     mangled_name: java.lang.String = null
   ): SymbolDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eliminated")(eliminated)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("orig")(orig)
-    __obj.updateDynamic("references")(references)
-    __obj.updateDynamic("replaced")(replaced)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("undeclared")(undeclared)
+    val __obj = js.Dynamic.literal(eliminated = eliminated, export = export, global = global, id = id, init = init, name = name, orig = orig, references = references, replaced = replaced, scope = scope, undeclared = undeclared)
     if (mangled_name != null) __obj.updateDynamic("mangled_name")(mangled_name)
     __obj.asInstanceOf[SymbolDef]
   }

@@ -30,8 +30,7 @@ object Node {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (color != null) __obj.updateDynamic("color")(color)
     if (image != null) __obj.updateDynamic("image")(image)

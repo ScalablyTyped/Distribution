@@ -20,11 +20,8 @@ object MemeMetadata {
     meme_name: java.lang.String,
     top_text: java.lang.String
   ): MemeMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bg_image")(bg_image)
-    __obj.updateDynamic("bottom_text")(bottom_text)
-    __obj.updateDynamic("meme_name")(meme_name)
-    __obj.updateDynamic("top_text")(top_text)
+    val __obj = js.Dynamic.literal(bg_image = bg_image, bottom_text = bottom_text, meme_name = meme_name, top_text = top_text)
+  
     __obj.asInstanceOf[MemeMetadata]
   }
 }

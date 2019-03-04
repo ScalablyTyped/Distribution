@@ -21,9 +21,7 @@ object Event {
     value: java.lang.String | js.Array[java.lang.String] | scala.Double,
     checked: js.UndefOr[scala.Boolean] = js.undefined
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(element = element, value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     __obj.asInstanceOf[Event]
   }

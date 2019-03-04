@@ -13,10 +13,8 @@ trait OnKeyDownEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 object OnKeyDownEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](cell: scala.Double, grid: Grid[T], row: scala.Double): OnKeyDownEventArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cell = cell, grid = grid, row = row)
+  
     __obj.asInstanceOf[OnKeyDownEventArgs[T]]
   }
 }

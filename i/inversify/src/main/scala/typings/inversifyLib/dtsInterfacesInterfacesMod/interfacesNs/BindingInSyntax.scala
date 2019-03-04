@@ -18,10 +18,8 @@ object BindingInSyntax {
     inSingletonScope: js.Function0[BindingWhenOnSyntax[T]],
     inTransientScope: js.Function0[BindingWhenOnSyntax[T]]
   ): BindingInSyntax[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inRequestScope")(inRequestScope)
-    __obj.updateDynamic("inSingletonScope")(inSingletonScope)
-    __obj.updateDynamic("inTransientScope")(inTransientScope)
+    val __obj = js.Dynamic.literal(inRequestScope = inRequestScope, inSingletonScope = inSingletonScope, inTransientScope = inTransientScope)
+  
     __obj.asInstanceOf[BindingInSyntax[T]]
   }
 }

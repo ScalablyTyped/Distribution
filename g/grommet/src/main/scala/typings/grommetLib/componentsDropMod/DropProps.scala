@@ -32,8 +32,7 @@ object DropProps {
     restrictFocus: js.UndefOr[scala.Boolean] = js.undefined,
     stretch: js.UndefOr[scala.Boolean] = js.undefined
   ): DropProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (align != null) __obj.updateDynamic("align")(align)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(onClickOutside)

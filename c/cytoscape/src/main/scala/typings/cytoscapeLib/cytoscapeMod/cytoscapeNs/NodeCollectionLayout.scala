@@ -20,8 +20,8 @@ object NodeCollectionLayout {
   def apply(
     layoutPositions: js.Function3[java.lang.String, LayoutPositionOptions, ElementPositionFunction, scala.Unit]
   ): NodeCollectionLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layoutPositions")(layoutPositions)
+    val __obj = js.Dynamic.literal(layoutPositions = layoutPositions)
+  
     __obj.asInstanceOf[NodeCollectionLayout]
   }
 }

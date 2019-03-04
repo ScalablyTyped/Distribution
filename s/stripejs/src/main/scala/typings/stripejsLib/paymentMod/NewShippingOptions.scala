@@ -23,9 +23,8 @@ object NewShippingOptions {
     shippingOption: stripejsLib.shippingMod.ShippingOption,
     updateWith: js.Function1[UpdateOptions, scala.Unit]
   ): NewShippingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shippingOption")(shippingOption)
-    __obj.updateDynamic("updateWith")(updateWith)
+    val __obj = js.Dynamic.literal(shippingOption = shippingOption, updateWith = updateWith)
+  
     __obj.asInstanceOf[NewShippingOptions]
   }
 }

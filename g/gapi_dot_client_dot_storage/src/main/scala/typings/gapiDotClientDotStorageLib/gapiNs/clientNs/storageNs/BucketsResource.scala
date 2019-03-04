@@ -73,16 +73,8 @@ object BucketsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Bucket]
     ]
   ): BucketsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, update = update)
+  
     __obj.asInstanceOf[BucketsResource]
   }
 }

@@ -26,9 +26,7 @@ object APIGatewayProxyResult {
     isBase64Encoded: js.UndefOr[scala.Boolean] = js.undefined,
     multiValueHeaders: org.scalablytyped.runtime.StringDictionary[js.Array[scala.Boolean | scala.Double | java.lang.String]] = null
   ): APIGatewayProxyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, statusCode = statusCode)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(isBase64Encoded)) __obj.updateDynamic("isBase64Encoded")(isBase64Encoded)
     if (multiValueHeaders != null) __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)

@@ -20,11 +20,8 @@ object Anon_FogColor {
     fogFar: threeLib.threeDashCoreMod.IUniform,
     fogNear: threeLib.threeDashCoreMod.IUniform
   ): Anon_FogColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fogColor")(fogColor)
-    __obj.updateDynamic("fogDensity")(fogDensity)
-    __obj.updateDynamic("fogFar")(fogFar)
-    __obj.updateDynamic("fogNear")(fogNear)
+    val __obj = js.Dynamic.literal(fogColor = fogColor, fogDensity = fogDensity, fogFar = fogFar, fogNear = fogNear)
+  
     __obj.asInstanceOf[Anon_FogColor]
   }
 }

@@ -32,17 +32,8 @@ object ScenarioPayload {
     tags: js.Array[cucumberLib.cucumberMod.Tag],
     uri: java.lang.String
   ): ScenarioPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("exception")(exception)
-    __obj.updateDynamic("feature")(feature)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(description = description, exception = exception, feature = feature, keyword = keyword, line = line, lines = lines, name = name, steps = steps, tags = tags, uri = uri)
+  
     __obj.asInstanceOf[ScenarioPayload]
   }
 }

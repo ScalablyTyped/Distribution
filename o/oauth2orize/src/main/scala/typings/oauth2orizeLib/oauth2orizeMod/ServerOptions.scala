@@ -13,9 +13,8 @@ trait ServerOptions extends js.Object {
 object ServerOptions {
   @scala.inline
   def apply(loadTransaction: scala.Boolean, store: js.Any): ServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadTransaction")(loadTransaction)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(loadTransaction = loadTransaction, store = store)
+  
     __obj.asInstanceOf[ServerOptions]
   }
 }

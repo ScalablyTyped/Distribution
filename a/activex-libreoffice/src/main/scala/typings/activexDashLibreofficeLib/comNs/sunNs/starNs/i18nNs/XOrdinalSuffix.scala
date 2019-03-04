@@ -35,11 +35,8 @@ object XOrdinalSuffix {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XOrdinalSuffix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getOrdinalSuffix")(getOrdinalSuffix)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getOrdinalSuffix = getOrdinalSuffix, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XOrdinalSuffix]
   }
 }

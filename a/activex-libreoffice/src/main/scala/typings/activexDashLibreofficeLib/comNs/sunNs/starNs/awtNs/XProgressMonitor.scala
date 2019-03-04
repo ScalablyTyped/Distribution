@@ -34,19 +34,8 @@ object XProgressMonitor {
     setValue: js.Function1[scala.Double, scala.Unit],
     updateText: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Unit]
   ): XProgressMonitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addText")(addText)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeText")(removeText)
-    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
-    __obj.updateDynamic("setForegroundColor")(setForegroundColor)
-    __obj.updateDynamic("setRange")(setRange)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("updateText")(updateText)
+    val __obj = js.Dynamic.literal(Value = Value, acquire = acquire, addText = addText, getValue = getValue, queryInterface = queryInterface, release = release, removeText = removeText, setBackgroundColor = setBackgroundColor, setForegroundColor = setForegroundColor, setRange = setRange, setValue = setValue, updateText = updateText)
+  
     __obj.asInstanceOf[XProgressMonitor]
   }
 }

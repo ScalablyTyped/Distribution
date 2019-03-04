@@ -18,10 +18,8 @@ object ICrossSlidingEventArgs {
     pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
     position: winrtLib.WindowsNs.FoundationNs.Point
   ): ICrossSlidingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crossSlidingState")(crossSlidingState)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(crossSlidingState = crossSlidingState, pointerDeviceType = pointerDeviceType, position = position)
+  
     __obj.asInstanceOf[ICrossSlidingEventArgs]
   }
 }

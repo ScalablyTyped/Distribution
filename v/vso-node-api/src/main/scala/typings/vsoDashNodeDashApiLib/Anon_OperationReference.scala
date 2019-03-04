@@ -13,9 +13,8 @@ trait Anon_OperationReference extends js.Object {
 object Anon_OperationReference {
   @scala.inline
   def apply(OperationReference: Anon_Fields, OperationStatus: Anon_EnumValuesAnonCancelledFailedInProgress): Anon_OperationReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OperationReference")(OperationReference)
-    __obj.updateDynamic("OperationStatus")(OperationStatus)
+    val __obj = js.Dynamic.literal(OperationReference = OperationReference, OperationStatus = OperationStatus)
+  
     __obj.asInstanceOf[Anon_OperationReference]
   }
 }

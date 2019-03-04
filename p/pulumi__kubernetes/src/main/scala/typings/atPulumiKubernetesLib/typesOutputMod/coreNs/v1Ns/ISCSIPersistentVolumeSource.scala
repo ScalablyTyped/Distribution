@@ -78,18 +78,8 @@ object ISCSIPersistentVolumeSource {
     secretRef: SecretReference,
     targetPortal: java.lang.String
   ): ISCSIPersistentVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chapAuthDiscovery")(chapAuthDiscovery)
-    __obj.updateDynamic("chapAuthSession")(chapAuthSession)
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("initiatorName")(initiatorName)
-    __obj.updateDynamic("iqn")(iqn)
-    __obj.updateDynamic("iscsiInterface")(iscsiInterface)
-    __obj.updateDynamic("lun")(lun)
-    __obj.updateDynamic("portals")(portals)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretRef")(secretRef)
-    __obj.updateDynamic("targetPortal")(targetPortal)
+    val __obj = js.Dynamic.literal(chapAuthDiscovery = chapAuthDiscovery, chapAuthSession = chapAuthSession, fsType = fsType, initiatorName = initiatorName, iqn = iqn, iscsiInterface = iscsiInterface, lun = lun, portals = portals, readOnly = readOnly, secretRef = secretRef, targetPortal = targetPortal)
+  
     __obj.asInstanceOf[ISCSIPersistentVolumeSource]
   }
 }

@@ -29,8 +29,7 @@ object IType {
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     reserved: js.Array[js.Array[scala.Double]] = null
   ): IType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(fields = fields)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
     if (nested != null) __obj.updateDynamic("nested")(nested)

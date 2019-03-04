@@ -23,9 +23,8 @@ object DeclareModule {
     id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.LiteralKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.DeclareModule
   ): DeclareModule = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeclareModule]
   }
 }

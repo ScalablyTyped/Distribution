@@ -49,8 +49,7 @@ object IOverlayProps {
     transitionName: java.lang.String = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined
   ): IOverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName)
     if (backdropProps != null) __obj.updateDynamic("backdropProps")(backdropProps)

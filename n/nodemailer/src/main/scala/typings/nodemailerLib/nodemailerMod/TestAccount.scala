@@ -24,13 +24,8 @@ object TestAccount {
     user: java.lang.String,
     web: java.lang.String
   ): TestAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imap")(imap)
-    __obj.updateDynamic("pass")(pass)
-    __obj.updateDynamic("pop3")(pop3)
-    __obj.updateDynamic("smtp")(smtp)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("web")(web)
+    val __obj = js.Dynamic.literal(imap = imap, pass = pass, pop3 = pop3, smtp = smtp, user = user, web = web)
+  
     __obj.asInstanceOf[TestAccount]
   }
 }

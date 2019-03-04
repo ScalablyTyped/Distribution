@@ -12,8 +12,8 @@ trait JStorageOptions extends js.Object {
 object JStorageOptions {
   @scala.inline
   def apply(TTL: scala.Double): JStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TTL")(TTL)
+    val __obj = js.Dynamic.literal(TTL = TTL)
+  
     __obj.asInstanceOf[JStorageOptions]
   }
 }

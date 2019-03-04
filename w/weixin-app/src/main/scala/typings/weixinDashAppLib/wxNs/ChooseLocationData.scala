@@ -27,11 +27,8 @@ trait ChooseLocationData extends js.Object {
 object ChooseLocationData {
   @scala.inline
   def apply(address: java.lang.String, latitude: scala.Double, longitude: scala.Double, name: java.lang.String): ChooseLocationData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(address = address, latitude = latitude, longitude = longitude, name = name)
+  
     __obj.asInstanceOf[ChooseLocationData]
   }
 }

@@ -13,9 +13,8 @@ trait RuleOptions extends js.Object {
 object RuleOptions {
   @scala.inline
   def apply(className: java.lang.String, index: scala.Double): RuleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(className = className, index = index)
+  
     __obj.asInstanceOf[RuleOptions]
   }
 }

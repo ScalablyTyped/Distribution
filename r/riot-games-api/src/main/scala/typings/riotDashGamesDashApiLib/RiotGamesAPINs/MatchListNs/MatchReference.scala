@@ -30,16 +30,8 @@ object MatchReference {
     season: java.lang.String,
     timestamp: scala.Double
   ): MatchReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("champion")(champion)
-    __obj.updateDynamic("lane")(lane)
-    __obj.updateDynamic("matchId")(matchId)
-    __obj.updateDynamic("plateformId")(plateformId)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("season")(season)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(champion = champion, lane = lane, matchId = matchId, plateformId = plateformId, queue = queue, region = region, role = role, season = season, timestamp = timestamp)
+  
     __obj.asInstanceOf[MatchReference]
   }
 }

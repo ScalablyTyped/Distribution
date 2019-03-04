@@ -26,14 +26,8 @@ object ExtensionState {
     publisherName: java.lang.String,
     version: java.lang.String
   ): ExtensionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("installationIssues")(installationIssues)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
-    __obj.updateDynamic("lastVersionCheck")(lastVersionCheck)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(extensionName = extensionName, flags = flags, installationIssues = installationIssues, lastUpdated = lastUpdated, lastVersionCheck = lastVersionCheck, publisherName = publisherName, version = version)
+  
     __obj.asInstanceOf[ExtensionState]
   }
 }

@@ -14,10 +14,8 @@ trait Progress extends js.Object {
 object Progress {
   @scala.inline
   def apply(index: scala.Double, percentageComplete: scala.Double, step: Step): Progress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("percentageComplete")(percentageComplete)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(index = index, percentageComplete = percentageComplete, step = step)
+  
     __obj.asInstanceOf[Progress]
   }
 }

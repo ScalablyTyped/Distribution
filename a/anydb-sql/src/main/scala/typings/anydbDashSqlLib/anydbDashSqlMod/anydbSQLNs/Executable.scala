@@ -26,14 +26,8 @@ object Executable {
     getWithin: js.Function1[DatabaseConnection, bluebirdLib.bluebirdMod.namespaced[T]],
     toQuery: js.Function0[QueryLike]
   ): Executable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("allWithin")(allWithin)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("execWithin")(execWithin)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getWithin")(getWithin)
-    __obj.updateDynamic("toQuery")(toQuery)
+    val __obj = js.Dynamic.literal(all = all, allWithin = allWithin, exec = exec, execWithin = execWithin, get = get, getWithin = getWithin, toQuery = toQuery)
+  
     __obj.asInstanceOf[Executable[T]]
   }
 }

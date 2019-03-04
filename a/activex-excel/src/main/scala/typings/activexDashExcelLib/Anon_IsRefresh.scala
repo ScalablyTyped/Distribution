@@ -20,11 +20,8 @@ object Anon_IsRefresh {
     Result: activexDashExcelLib.ExcelNs.XlXmlImportResult,
     Wb: activexDashExcelLib.ExcelNs.Workbook
   ): Anon_IsRefresh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsRefresh")(IsRefresh)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Result")(Result)
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(IsRefresh = IsRefresh, Map = Map, Result = Result, Wb = Wb)
+  
     __obj.asInstanceOf[Anon_IsRefresh]
   }
 }

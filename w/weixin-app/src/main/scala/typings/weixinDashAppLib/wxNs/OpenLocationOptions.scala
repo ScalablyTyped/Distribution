@@ -32,9 +32,7 @@ object OpenLocationOptions {
     scale: scala.Int | scala.Double = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): OpenLocationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (address != null) __obj.updateDynamic("address")(address)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

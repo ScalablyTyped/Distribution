@@ -20,11 +20,8 @@ object LanguagePaginateSettings {
     next: java.lang.String,
     previous: java.lang.String
   ): LanguagePaginateSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("previous")(previous)
+    val __obj = js.Dynamic.literal(first = first, last = last, next = next, previous = previous)
+  
     __obj.asInstanceOf[LanguagePaginateSettings]
   }
 }

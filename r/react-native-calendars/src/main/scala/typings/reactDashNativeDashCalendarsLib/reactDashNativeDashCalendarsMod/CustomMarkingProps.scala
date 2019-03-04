@@ -16,9 +16,8 @@ object CustomMarkingProps {
     markedDates: org.scalablytyped.runtime.StringDictionary[CustomMarking],
     markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.custom
   ): CustomMarkingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markedDates")(markedDates)
-    __obj.updateDynamic("markingType")(markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+  
     __obj.asInstanceOf[CustomMarkingProps]
   }
 }

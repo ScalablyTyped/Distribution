@@ -49,20 +49,8 @@ object Transmission {
     state: sparkpostLib.sparkpostLibStrings.submitted | sparkpostLib.sparkpostLibStrings.Generating | sparkpostLib.sparkpostLibStrings.Success | sparkpostLib.sparkpostLibStrings.Canceled,
     substitution_data: js.Any
   ): Transmission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("campaign_id")(campaign_id)
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("num_failed_generation")(num_failed_generation)
-    __obj.updateDynamic("num_generated")(num_generated)
-    __obj.updateDynamic("num_invalid_recipients")(num_invalid_recipients)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("rcpt_list_chunk_size")(rcpt_list_chunk_size)
-    __obj.updateDynamic("rcpt_list_total_chunks")(rcpt_list_total_chunks)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("substitution_data")(substitution_data)
+    val __obj = js.Dynamic.literal(campaign_id = campaign_id, content = content.asInstanceOf[js.Any], description = description, id = id, metadata = metadata, num_failed_generation = num_failed_generation, num_generated = num_generated, num_invalid_recipients = num_invalid_recipients, options = options, rcpt_list_chunk_size = rcpt_list_chunk_size, rcpt_list_total_chunks = rcpt_list_total_chunks, state = state.asInstanceOf[js.Any], substitution_data = substitution_data)
+  
     __obj.asInstanceOf[Transmission]
   }
 }

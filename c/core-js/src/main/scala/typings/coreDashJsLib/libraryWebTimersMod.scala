@@ -28,7 +28,7 @@ object libraryWebTimersMod extends js.Object {
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: nodeLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
-  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): coreDashJsLib.`Anon_` = js.native
+  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): coreDashJsLib.Anon_ = js.native
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def delay(msec: scala.Double): js.Promise[scala.Unit] = js.native
   def getIterator[T](iterable: nodeLib.Iterable[T]): nodeLib.Iterator[T] = js.native

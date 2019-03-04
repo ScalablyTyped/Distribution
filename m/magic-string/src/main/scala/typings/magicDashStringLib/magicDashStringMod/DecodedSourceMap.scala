@@ -22,12 +22,8 @@ object DecodedSourceMap {
     sources: js.Array[java.lang.String],
     sourcesContent: js.Array[java.lang.String]
   ): DecodedSourceMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("sourcesContent")(sourcesContent)
+    val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, sourcesContent = sourcesContent)
+  
     __obj.asInstanceOf[DecodedSourceMap]
   }
 }

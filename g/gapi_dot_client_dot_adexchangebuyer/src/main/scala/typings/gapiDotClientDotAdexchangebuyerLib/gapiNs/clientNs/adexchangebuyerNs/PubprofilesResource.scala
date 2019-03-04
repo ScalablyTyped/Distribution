@@ -18,8 +18,8 @@ object PubprofilesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GetPublisherProfilesByAccountIdResponse]
     ]
   ): PubprofilesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[PubprofilesResource]
   }
 }

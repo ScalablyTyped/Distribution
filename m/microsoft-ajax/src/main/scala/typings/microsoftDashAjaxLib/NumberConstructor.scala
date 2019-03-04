@@ -22,9 +22,8 @@ object NumberConstructor {
     parseInvariant: js.Function1[java.lang.String, scala.Double],
     parseLocale: js.Function1[java.lang.String, scala.Double]
   ): NumberConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parseInvariant")(parseInvariant)
-    __obj.updateDynamic("parseLocale")(parseLocale)
+    val __obj = js.Dynamic.literal(parseInvariant = parseInvariant, parseLocale = parseLocale)
+  
     __obj.asInstanceOf[NumberConstructor]
   }
 }

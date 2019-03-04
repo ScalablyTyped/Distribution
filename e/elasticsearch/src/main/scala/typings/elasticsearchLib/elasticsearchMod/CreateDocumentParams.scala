@@ -44,8 +44,8 @@ object CreateDocumentParams {
     versionType: VersionType = null,
     waitForActiveShards: java.lang.String = null
   ): CreateDocumentParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

@@ -33,14 +33,8 @@ object ITextFieldExpression {
     IsNull: js.Function0[IExpression],
     NotEqualTo: js.Function1[java.lang.String, IExpression]
   ): ITextFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginsWith")(BeginsWith)
-    __obj.updateDynamic("Contains")(Contains)
-    __obj.updateDynamic("EqualTo")(EqualTo)
-    __obj.updateDynamic("In")(In)
-    __obj.updateDynamic("IsNotNull")(IsNotNull)
-    __obj.updateDynamic("IsNull")(IsNull)
-    __obj.updateDynamic("NotEqualTo")(NotEqualTo)
+    val __obj = js.Dynamic.literal(BeginsWith = BeginsWith, Contains = Contains, EqualTo = EqualTo, In = In, IsNotNull = IsNotNull, IsNull = IsNull, NotEqualTo = NotEqualTo)
+  
     __obj.asInstanceOf[ITextFieldExpression]
   }
 }

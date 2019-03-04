@@ -35,11 +35,8 @@ object TSDeclareFunction {
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.NoopKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSDeclareFunction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("declare")(declare)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(async = async, declare = declare, generator = generator, params = params)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)

@@ -12,9 +12,8 @@ trait UploadControlDropZoneLeaveEventArgs extends EventArgs {
 object UploadControlDropZoneLeaveEventArgs {
   @scala.inline
   def apply(dropZone: js.Any, sender: Control): UploadControlDropZoneLeaveEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropZone")(dropZone)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(dropZone = dropZone, sender = sender)
+  
     __obj.asInstanceOf[UploadControlDropZoneLeaveEventArgs]
   }
 }

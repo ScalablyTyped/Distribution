@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoundPlayerFactory[T] protected () extends js.Object {
   def this(fn: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactoryBuildFn, value: T) = this()
-  var `__brand__`: atAngularCoreLib.atAngularCoreLibStrings.`Brand for PlayerFactory that nothing will match` = js.native
+  var __brand__ : atAngularCoreLib.atAngularCoreLibStrings.`Brand for PlayerFactory that nothing will match` = js.native
   @JSName("fn")
   var fn_Original: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactoryBuildFn = js.native
   var value: T = js.native

@@ -26,14 +26,8 @@ object Anon_LinksOneHopDoesNotContain {
     linksRecursiveMustContain: scala.Double,
     workItems: scala.Double
   ): Anon_LinksOneHopDoesNotContain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linksOneHopDoesNotContain")(linksOneHopDoesNotContain)
-    __obj.updateDynamic("linksOneHopMayContain")(linksOneHopMayContain)
-    __obj.updateDynamic("linksOneHopMustContain")(linksOneHopMustContain)
-    __obj.updateDynamic("linksRecursiveDoesNotContain")(linksRecursiveDoesNotContain)
-    __obj.updateDynamic("linksRecursiveMayContain")(linksRecursiveMayContain)
-    __obj.updateDynamic("linksRecursiveMustContain")(linksRecursiveMustContain)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(linksOneHopDoesNotContain = linksOneHopDoesNotContain, linksOneHopMayContain = linksOneHopMayContain, linksOneHopMustContain = linksOneHopMustContain, linksRecursiveDoesNotContain = linksRecursiveDoesNotContain, linksRecursiveMayContain = linksRecursiveMayContain, linksRecursiveMustContain = linksRecursiveMustContain, workItems = workItems)
+  
     __obj.asInstanceOf[Anon_LinksOneHopDoesNotContain]
   }
 }

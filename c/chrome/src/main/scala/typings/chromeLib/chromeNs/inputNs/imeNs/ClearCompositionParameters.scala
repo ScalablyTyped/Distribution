@@ -13,8 +13,8 @@ trait ClearCompositionParameters extends js.Object {
 object ClearCompositionParameters {
   @scala.inline
   def apply(contextID: scala.Double): ClearCompositionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextID")(contextID)
+    val __obj = js.Dynamic.literal(contextID = contextID)
+  
     __obj.asInstanceOf[ClearCompositionParameters]
   }
 }

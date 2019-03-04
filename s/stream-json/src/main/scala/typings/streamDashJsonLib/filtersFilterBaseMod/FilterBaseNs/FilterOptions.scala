@@ -111,8 +111,7 @@ object FilterOptions {
       scala.Unit
     ] = null
   ): FilterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any])
     if (!js.isUndefined(allowEmptyReplacement)) __obj.updateDynamic("allowEmptyReplacement")(allowEmptyReplacement)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)

@@ -40,21 +40,8 @@ object MergedCellCoords {
     rowspan: scala.Double,
     shift: js.Function2[js.Array[scala.Double], scala.Double, scala.Boolean]
   ): MergedCellCoords = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("colspan")(colspan)
-    __obj.updateDynamic("getLastColumn")(getLastColumn)
-    __obj.updateDynamic("getLastRow")(getLastRow)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("includesHorizontally")(includesHorizontally)
-    __obj.updateDynamic("includesVertically")(includesVertically)
-    __obj.updateDynamic("isFarther")(isFarther)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("rowspan")(rowspan)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(col = col, colspan = colspan, getLastColumn = getLastColumn, getLastRow = getLastRow, getRange = getRange, includes = includes, includesHorizontally = includesHorizontally, includesVertically = includesVertically, isFarther = isFarther, normalize = normalize, removed = removed, row = row, rowspan = rowspan, shift = shift)
+  
     __obj.asInstanceOf[MergedCellCoords]
   }
 }

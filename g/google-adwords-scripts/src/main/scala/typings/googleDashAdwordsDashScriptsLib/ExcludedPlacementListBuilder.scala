@@ -15,9 +15,8 @@ object ExcludedPlacementListBuilder {
     build: js.Function0[AdWordsOperation[ExcludedPlacementList]],
     withName: js.Function1[java.lang.String, ExcludedPlacementListBuilder[ExcludedPlacementList]]
   ): ExcludedPlacementListBuilder[ExcludedPlacementList] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withName")(withName)
+    val __obj = js.Dynamic.literal(build = build, withName = withName)
+  
     __obj.asInstanceOf[ExcludedPlacementListBuilder[ExcludedPlacementList]]
   }
 }

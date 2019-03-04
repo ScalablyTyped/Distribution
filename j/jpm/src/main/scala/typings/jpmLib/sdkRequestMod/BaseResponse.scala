@@ -24,13 +24,8 @@ object BaseResponse {
     text: java.lang.String,
     url: java.lang.String
   ): BaseResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anonymous")(anonymous)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(anonymous = anonymous, headers = headers, status = status, statusText = statusText, text = text, url = url)
+  
     __obj.asInstanceOf[BaseResponse]
   }
 }

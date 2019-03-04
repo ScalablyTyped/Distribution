@@ -24,9 +24,8 @@ object ApisResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DirectoryList]
     ]
   ): ApisResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRest")(getRest)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(getRest = getRest, list = list)
+  
     __obj.asInstanceOf[ApisResource]
   }
 }

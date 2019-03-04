@@ -33,13 +33,8 @@ object XActiveDataSource {
     release: js.Function0[scala.Unit],
     setOutputStream: js.Function1[XOutputStream, scala.Unit]
   ): XActiveDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setOutputStream")(setOutputStream)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = acquire, getOutputStream = getOutputStream, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream)
+  
     __obj.asInstanceOf[XActiveDataSource]
   }
 }

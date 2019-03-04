@@ -14,8 +14,8 @@ object Anon_ColumnsDisabled {
   def apply(
     columns: atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
   ): Anon_ColumnsDisabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ColumnsDisabled]
   }
 }

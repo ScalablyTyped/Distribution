@@ -52,15 +52,8 @@ object ReviewReply {
     updatedDate: stdLib.Date,
     userId: java.lang.String
   ): ReviewReply = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("productVersion")(productVersion)
-    __obj.updateDynamic("replyText")(replyText)
-    __obj.updateDynamic("reviewId")(reviewId)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(id = id, isDeleted = isDeleted, productVersion = productVersion, replyText = replyText, reviewId = reviewId, title = title, updatedDate = updatedDate, userId = userId)
+  
     __obj.asInstanceOf[ReviewReply]
   }
 }

@@ -42,11 +42,8 @@ object TracksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Track]
     ]
   ): TracksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[TracksResource]
   }
 }

@@ -22,9 +22,8 @@ object ShareNotificationContext {
     message: java.lang.String,
     receivers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
   ): ShareNotificationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("receivers")(receivers)
+    val __obj = js.Dynamic.literal(message = message, receivers = receivers)
+  
     __obj.asInstanceOf[ShareNotificationContext]
   }
 }

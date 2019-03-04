@@ -23,10 +23,7 @@ object Recoverable {
     name: java.lang.String,
     stack: java.lang.String = null
   ): Recoverable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(err = err, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[Recoverable]
   }

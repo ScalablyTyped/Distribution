@@ -17,11 +17,8 @@ object InjectedAuthRouterProps {
     redirect: Redirect,
     redirectPath: java.lang.String
   ): InjectedAuthRouterProps[Redirect] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("isAuthenticating")(isAuthenticating)
-    __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    __obj.updateDynamic("redirectPath")(redirectPath)
+    val __obj = js.Dynamic.literal(isAuthenticated = isAuthenticated, isAuthenticating = isAuthenticating, redirect = redirect.asInstanceOf[js.Any], redirectPath = redirectPath)
+  
     __obj.asInstanceOf[InjectedAuthRouterProps[Redirect]]
   }
 }

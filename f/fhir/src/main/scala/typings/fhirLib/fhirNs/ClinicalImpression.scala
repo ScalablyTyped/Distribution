@@ -159,9 +159,7 @@ object ClinicalImpression {
     summary: java.lang.String = null,
     text: Narrative = null
   ): ClinicalImpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(status = status, subject = subject)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime)

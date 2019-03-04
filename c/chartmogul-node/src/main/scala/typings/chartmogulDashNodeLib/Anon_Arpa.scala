@@ -26,14 +26,8 @@ object Anon_Arpa {
     ltv: scala.Double,
     mrr: scala.Double
   ): Anon_Arpa = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arpa")(arpa)
-    __obj.updateDynamic("arr")(arr)
-    __obj.updateDynamic("asp")(asp)
-    __obj.updateDynamic("customers")(customers)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("ltv")(ltv)
-    __obj.updateDynamic("mrr")(mrr)
+    val __obj = js.Dynamic.literal(arpa = arpa, arr = arr, asp = asp, customers = customers, date = date, ltv = ltv, mrr = mrr)
+  
     __obj.asInstanceOf[Anon_Arpa]
   }
 }

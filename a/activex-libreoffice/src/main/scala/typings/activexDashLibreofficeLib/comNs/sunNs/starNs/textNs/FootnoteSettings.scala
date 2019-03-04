@@ -69,19 +69,8 @@ object FootnoteSettings {
     StartAt: scala.Double,
     Suffix: java.lang.String
   ): FootnoteSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AnchorCharStyleName")(AnchorCharStyleName)
-    __obj.updateDynamic("BeginNotice")(BeginNotice)
-    __obj.updateDynamic("CharStyleName")(CharStyleName)
-    __obj.updateDynamic("EndNotice")(EndNotice)
-    __obj.updateDynamic("FootnoteCounting")(FootnoteCounting)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("PageStyleName")(PageStyleName)
-    __obj.updateDynamic("ParaStyleName")(ParaStyleName)
-    __obj.updateDynamic("PositionEndOfDoc")(PositionEndOfDoc)
-    __obj.updateDynamic("Prefix")(Prefix)
-    __obj.updateDynamic("StartAt")(StartAt)
-    __obj.updateDynamic("Suffix")(Suffix)
+    val __obj = js.Dynamic.literal(AnchorCharStyleName = AnchorCharStyleName, BeginNotice = BeginNotice, CharStyleName = CharStyleName, EndNotice = EndNotice, FootnoteCounting = FootnoteCounting, NumberingType = NumberingType, PageStyleName = PageStyleName, ParaStyleName = ParaStyleName, PositionEndOfDoc = PositionEndOfDoc, Prefix = Prefix, StartAt = StartAt, Suffix = Suffix)
+  
     __obj.asInstanceOf[FootnoteSettings]
   }
 }

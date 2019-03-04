@@ -14,8 +14,8 @@ object SearchBoxOptions {
   def apply(
     bounds: googlemapsLib.googleNs.mapsNs.LatLngBounds | googlemapsLib.googleNs.mapsNs.LatLngBoundsLiteral
   ): SearchBoxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SearchBoxOptions]
   }
 }

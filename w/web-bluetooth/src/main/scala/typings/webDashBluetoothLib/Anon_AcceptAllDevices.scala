@@ -13,8 +13,7 @@ trait Anon_AcceptAllDevices extends RequestDeviceOptions {
 object Anon_AcceptAllDevices {
   @scala.inline
   def apply(acceptAllDevices: scala.Boolean, optionalServices: js.Array[BluetoothServiceUUID] = null): Anon_AcceptAllDevices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptAllDevices")(acceptAllDevices)
+    val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices)
     if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices)
     __obj.asInstanceOf[Anon_AcceptAllDevices]
   }

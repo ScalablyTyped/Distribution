@@ -12,8 +12,8 @@ trait RiskAnalysisResource extends js.Object {
 object RiskAnalysisResource {
   @scala.inline
   def apply(operations: OperationsResource): RiskAnalysisResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(operations = operations)
+  
     __obj.asInstanceOf[RiskAnalysisResource]
   }
 }

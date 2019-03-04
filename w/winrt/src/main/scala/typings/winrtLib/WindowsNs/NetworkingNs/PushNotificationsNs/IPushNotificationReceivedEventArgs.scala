@@ -24,13 +24,8 @@ object IPushNotificationReceivedEventArgs {
     tileNotification: winrtLib.WindowsNs.UINs.NotificationsNs.TileNotification,
     toastNotification: winrtLib.WindowsNs.UINs.NotificationsNs.ToastNotification
   ): IPushNotificationReceivedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badgeNotification")(badgeNotification)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("notificationType")(notificationType)
-    __obj.updateDynamic("rawNotification")(rawNotification)
-    __obj.updateDynamic("tileNotification")(tileNotification)
-    __obj.updateDynamic("toastNotification")(toastNotification)
+    val __obj = js.Dynamic.literal(badgeNotification = badgeNotification, cancel = cancel, notificationType = notificationType, rawNotification = rawNotification, tileNotification = tileNotification, toastNotification = toastNotification)
+  
     __obj.asInstanceOf[IPushNotificationReceivedEventArgs]
   }
 }

@@ -22,9 +22,7 @@ object SetStorageParams {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): SetStorageParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(data = data, key = key)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

@@ -16,9 +16,8 @@ object Transport {
     abort: js.Function0[scala.Unit],
     send: js.Function2[PlainObject[_], jqueryLib.JQueryNs.TransportNs.SuccessCallback, scala.Unit]
   ): Transport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(abort = abort, send = send)
+  
     __obj.asInstanceOf[Transport]
   }
 }

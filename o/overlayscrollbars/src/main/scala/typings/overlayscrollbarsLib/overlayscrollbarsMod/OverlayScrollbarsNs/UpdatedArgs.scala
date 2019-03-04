@@ -12,8 +12,8 @@ trait UpdatedArgs extends js.Object {
 object UpdatedArgs {
   @scala.inline
   def apply(forced: scala.Boolean): UpdatedArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forced")(forced)
+    val __obj = js.Dynamic.literal(forced = forced)
+  
     __obj.asInstanceOf[UpdatedArgs]
   }
 }

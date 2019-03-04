@@ -58,16 +58,8 @@ object JobQueryParameters {
     user: java.lang.String,
     where: java.lang.String
   ): JobQueryParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("tables")(tables)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(aliases = aliases, constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, orderBy = orderBy, propertyIsEnumerable = propertyIsEnumerable, tables = tables, user = user, where = where)
+  
     __obj.asInstanceOf[JobQueryParameters]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_RefreshAuthError extends js.Object {
 object Anon_RefreshAuthError {
   @scala.inline
   def apply(RefreshAuthError: Anon_Message): Anon_RefreshAuthError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RefreshAuthError")(RefreshAuthError)
+    val __obj = js.Dynamic.literal(RefreshAuthError = RefreshAuthError)
+  
     __obj.asInstanceOf[Anon_RefreshAuthError]
   }
 }

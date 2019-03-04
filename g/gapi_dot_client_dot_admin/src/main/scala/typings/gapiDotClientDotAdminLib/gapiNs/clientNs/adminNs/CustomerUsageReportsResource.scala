@@ -18,8 +18,8 @@ object CustomerUsageReportsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UsageReports]
     ]
   ): CustomerUsageReportsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[CustomerUsageReportsResource]
   }
 }

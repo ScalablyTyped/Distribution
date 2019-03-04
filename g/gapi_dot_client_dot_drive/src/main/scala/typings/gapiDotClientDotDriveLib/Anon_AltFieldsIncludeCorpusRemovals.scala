@@ -75,8 +75,7 @@ object Anon_AltFieldsIncludeCorpusRemovals {
     teamDriveId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIncludeCorpusRemovals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pageToken")(pageToken)
+    val __obj = js.Dynamic.literal(pageToken = pageToken)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeCorpusRemovals)) __obj.updateDynamic("includeCorpusRemovals")(includeCorpusRemovals)

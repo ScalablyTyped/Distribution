@@ -16,9 +16,8 @@ object QuerySerializer {
     parse: js.Function1[java.lang.String, js.Object],
     stringify: js.Function1[Params, java.lang.String]
   ): QuerySerializer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+  
     __obj.asInstanceOf[QuerySerializer]
   }
 }

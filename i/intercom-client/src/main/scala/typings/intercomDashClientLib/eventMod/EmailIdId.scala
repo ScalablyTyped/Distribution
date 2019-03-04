@@ -12,8 +12,8 @@ trait EmailIdId extends EventIdentifier {
 object EmailIdId {
   @scala.inline
   def apply(email: java.lang.String): EmailIdId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(email = email)
+  
     __obj.asInstanceOf[EmailIdId]
   }
 }

@@ -22,8 +22,8 @@ object DebugPromiseLike {
       scala.Nothing
     ]
   ): DebugPromiseLike = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[DebugPromiseLike]
   }
 }

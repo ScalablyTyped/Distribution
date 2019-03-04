@@ -48,19 +48,8 @@ object XXMLSecurityContext {
     release: js.Function0[scala.Unit],
     setDefaultSecurityEnvironmentIndex: js.Function1[scala.Double, scala.Unit]
   ): XXMLSecurityContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultSecurityEnvironmentIndex")(DefaultSecurityEnvironmentIndex)
-    __obj.updateDynamic("SecurityEnvironment")(SecurityEnvironment)
-    __obj.updateDynamic("SecurityEnvironmentNumber")(SecurityEnvironmentNumber)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSecurityEnvironment")(addSecurityEnvironment)
-    __obj.updateDynamic("getDefaultSecurityEnvironmentIndex")(getDefaultSecurityEnvironmentIndex)
-    __obj.updateDynamic("getSecurityEnvironment")(getSecurityEnvironment)
-    __obj.updateDynamic("getSecurityEnvironmentByIndex")(getSecurityEnvironmentByIndex)
-    __obj.updateDynamic("getSecurityEnvironmentNumber")(getSecurityEnvironmentNumber)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefaultSecurityEnvironmentIndex")(setDefaultSecurityEnvironmentIndex)
+    val __obj = js.Dynamic.literal(DefaultSecurityEnvironmentIndex = DefaultSecurityEnvironmentIndex, SecurityEnvironment = SecurityEnvironment, SecurityEnvironmentNumber = SecurityEnvironmentNumber, acquire = acquire, addSecurityEnvironment = addSecurityEnvironment, getDefaultSecurityEnvironmentIndex = getDefaultSecurityEnvironmentIndex, getSecurityEnvironment = getSecurityEnvironment, getSecurityEnvironmentByIndex = getSecurityEnvironmentByIndex, getSecurityEnvironmentNumber = getSecurityEnvironmentNumber, queryInterface = queryInterface, release = release, setDefaultSecurityEnvironmentIndex = setDefaultSecurityEnvironmentIndex)
+  
     __obj.asInstanceOf[XXMLSecurityContext]
   }
 }

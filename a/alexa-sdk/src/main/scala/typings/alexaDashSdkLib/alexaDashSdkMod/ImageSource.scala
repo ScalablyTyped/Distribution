@@ -28,8 +28,7 @@ object ImageSource {
     size: ImageSourceSize = null,
     widthPixels: scala.Int | scala.Double = null
   ): ImageSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size)
     if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])

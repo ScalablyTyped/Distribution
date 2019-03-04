@@ -20,9 +20,8 @@ object Semigroupoid2 {
       fpDashTsLib.libHKTMod.Type2[F, js.Any, js.Any]
     ]
   ): Semigroupoid2[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("compose")(compose)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compose = compose)
+  
     __obj.asInstanceOf[Semigroupoid2[F]]
   }
 }

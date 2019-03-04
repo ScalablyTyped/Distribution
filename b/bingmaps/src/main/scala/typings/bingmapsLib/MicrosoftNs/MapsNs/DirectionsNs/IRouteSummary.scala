@@ -33,13 +33,8 @@ object IRouteSummary {
     time: scala.Double,
     timeWithTraffic: scala.Double
   ): IRouteSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("monetaryCost")(monetaryCost)
-    __obj.updateDynamic("northEast")(northEast)
-    __obj.updateDynamic("southWest")(southWest)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("timeWithTraffic")(timeWithTraffic)
+    val __obj = js.Dynamic.literal(distance = distance, monetaryCost = monetaryCost, northEast = northEast, southWest = southWest, time = time, timeWithTraffic = timeWithTraffic)
+  
     __obj.asInstanceOf[IRouteSummary]
   }
 }

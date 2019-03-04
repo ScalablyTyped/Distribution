@@ -38,14 +38,8 @@ object INetworkInformationStatics {
     ],
     onnetworkstatuschanged: js.Any
   ): INetworkInformationStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConnectionProfiles")(getConnectionProfiles)
-    __obj.updateDynamic("getHostNames")(getHostNames)
-    __obj.updateDynamic("getInternetConnectionProfile")(getInternetConnectionProfile)
-    __obj.updateDynamic("getLanIdentifiers")(getLanIdentifiers)
-    __obj.updateDynamic("getProxyConfigurationAsync")(getProxyConfigurationAsync)
-    __obj.updateDynamic("getSortedEndpointPairs")(getSortedEndpointPairs)
-    __obj.updateDynamic("onnetworkstatuschanged")(onnetworkstatuschanged)
+    val __obj = js.Dynamic.literal(getConnectionProfiles = getConnectionProfiles, getHostNames = getHostNames, getInternetConnectionProfile = getInternetConnectionProfile, getLanIdentifiers = getLanIdentifiers, getProxyConfigurationAsync = getProxyConfigurationAsync, getSortedEndpointPairs = getSortedEndpointPairs, onnetworkstatuschanged = onnetworkstatuschanged)
+  
     __obj.asInstanceOf[INetworkInformationStatics]
   }
 }

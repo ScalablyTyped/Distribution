@@ -12,8 +12,8 @@ trait Anon_PEventSaveEventObject extends js.Object {
 object Anon_PEventSaveEventObject {
   @scala.inline
   def apply(pEvent: activexDashInfopathLib.InfoPathNs.SaveEventObject): Anon_PEventSaveEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pEvent")(pEvent)
+    val __obj = js.Dynamic.literal(pEvent = pEvent)
+  
     __obj.asInstanceOf[Anon_PEventSaveEventObject]
   }
 }

@@ -12,8 +12,8 @@ trait IPrintTaskConfigurationSaveRequestedDeferral extends js.Object {
 object IPrintTaskConfigurationSaveRequestedDeferral {
   @scala.inline
   def apply(complete: js.Function0[scala.Unit]): IPrintTaskConfigurationSaveRequestedDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IPrintTaskConfigurationSaveRequestedDeferral]
   }
 }

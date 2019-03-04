@@ -118,17 +118,8 @@ object IAppState {
     setState: js.Function4[IStateObject, java.lang.String, js.Any, java.lang.String, scala.Unit],
     setTreeState: js.Function2[java.lang.String, ITreeState, scala.Unit]
   ): IAppState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getGlobalState")(getGlobalState)
-    __obj.updateDynamic("getMenuState")(getMenuState)
-    __obj.updateDynamic("getSectionState")(getSectionState)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("getTreeState")(getTreeState)
-    __obj.updateDynamic("setGlobalState")(setGlobalState)
-    __obj.updateDynamic("setMenuState")(setMenuState)
-    __obj.updateDynamic("setSectionState")(setSectionState)
-    __obj.updateDynamic("setState")(setState)
-    __obj.updateDynamic("setTreeState")(setTreeState)
+    val __obj = js.Dynamic.literal(getGlobalState = getGlobalState, getMenuState = getMenuState, getSectionState = getSectionState, getState = getState, getTreeState = getTreeState, setGlobalState = setGlobalState, setMenuState = setMenuState, setSectionState = setSectionState, setState = setState, setTreeState = setTreeState)
+  
     __obj.asInstanceOf[IAppState]
   }
 }

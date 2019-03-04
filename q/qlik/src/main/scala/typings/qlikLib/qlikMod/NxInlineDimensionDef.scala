@@ -24,13 +24,8 @@ object NxInlineDimensionDef {
     qReverseSort: scala.Boolean,
     qSortCriteries: js.Array[SortCriteria]
   ): NxInlineDimensionDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qActiveField")(qActiveField)
-    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
-    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    __obj.updateDynamic("qNumberPresentations")(qNumberPresentations)
-    __obj.updateDynamic("qReverseSort")(qReverseSort)
-    __obj.updateDynamic("qSortCriteries")(qSortCriteries)
+    val __obj = js.Dynamic.literal(qActiveField = qActiveField, qFieldDefs = qFieldDefs, qGrouping = qGrouping.asInstanceOf[js.Any], qNumberPresentations = qNumberPresentations, qReverseSort = qReverseSort, qSortCriteries = qSortCriteries)
+  
     __obj.asInstanceOf[NxInlineDimensionDef]
   }
 }

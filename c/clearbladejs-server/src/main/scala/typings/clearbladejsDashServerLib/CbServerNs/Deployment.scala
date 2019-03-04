@@ -33,15 +33,8 @@ object Deployment {
     update: js.Function3[java.lang.String, DeploymentOptions, CbCallback, scala.Unit],
     user: APIUser
   ): Deployment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("readAll")(readAll)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, read = read, readAll = readAll, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
     __obj.asInstanceOf[Deployment]
   }
 }

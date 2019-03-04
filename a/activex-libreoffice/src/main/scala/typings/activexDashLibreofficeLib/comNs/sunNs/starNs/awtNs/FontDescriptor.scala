@@ -111,23 +111,8 @@ object FontDescriptor {
     Width: scala.Double,
     WordLineMode: scala.Boolean
   ): FontDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharSet")(CharSet)
-    __obj.updateDynamic("CharacterWidth")(CharacterWidth)
-    __obj.updateDynamic("Family")(Family)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Kerning")(Kerning)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("Pitch")(Pitch)
-    __obj.updateDynamic("Slant")(Slant)
-    __obj.updateDynamic("Strikeout")(Strikeout)
-    __obj.updateDynamic("StyleName")(StyleName)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Underline")(Underline)
-    __obj.updateDynamic("Weight")(Weight)
-    __obj.updateDynamic("Width")(Width)
-    __obj.updateDynamic("WordLineMode")(WordLineMode)
+    val __obj = js.Dynamic.literal(CharSet = CharSet, CharacterWidth = CharacterWidth, Family = Family, Height = Height, Kerning = Kerning, Name = Name, Orientation = Orientation, Pitch = Pitch, Slant = Slant, Strikeout = Strikeout, StyleName = StyleName, Type = Type, Underline = Underline, Weight = Weight, Width = Width, WordLineMode = WordLineMode)
+  
     __obj.asInstanceOf[FontDescriptor]
   }
 }

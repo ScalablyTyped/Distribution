@@ -20,11 +20,8 @@ object Events {
     on: js.Function3[reactLib.Element, java.lang.String, stdLib.EventListener, scala.Unit],
     once: js.Function3[reactLib.Element, java.lang.String, stdLib.EventListener, scala.Unit]
   ): Events = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isKeyboard")(isKeyboard)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
+    val __obj = js.Dynamic.literal(isKeyboard = isKeyboard, off = off, on = on, once = once)
+  
     __obj.asInstanceOf[Events]
   }
 }

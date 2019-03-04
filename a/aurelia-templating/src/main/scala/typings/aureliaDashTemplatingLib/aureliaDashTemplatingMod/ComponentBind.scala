@@ -18,8 +18,8 @@ trait ComponentBind extends js.Object {
 object ComponentBind {
   @scala.inline
   def apply(bind: js.Function2[js.Any, js.Any, scala.Unit]): ComponentBind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
+    val __obj = js.Dynamic.literal(bind = bind)
+  
     __obj.asInstanceOf[ComponentBind]
   }
 }

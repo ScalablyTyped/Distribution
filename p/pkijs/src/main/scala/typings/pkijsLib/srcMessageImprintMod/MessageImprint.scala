@@ -22,12 +22,8 @@ object MessageImprint {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): MessageImprint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("hashAlgorithm")(hashAlgorithm)
-    __obj.updateDynamic("hashedMessage")(hashedMessage)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, hashedMessage = hashedMessage, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[MessageImprint]
   }
 }

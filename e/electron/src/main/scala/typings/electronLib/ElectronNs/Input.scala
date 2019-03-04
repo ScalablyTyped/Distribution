@@ -52,14 +52,8 @@ object Input {
     shift: scala.Boolean,
     `type`: java.lang.String
   ): Input = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("isAutoRepeat")(isAutoRepeat)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(alt = alt, code = code, control = control, isAutoRepeat = isAutoRepeat, key = key, meta = meta, shift = shift)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Input]
   }
 }

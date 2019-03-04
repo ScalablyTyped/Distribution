@@ -52,27 +52,8 @@ object Anon_ADDRESSLINES {
     TYPE: java.lang.String,
     URL: java.lang.String
   ): Anon_ADDRESSLINES = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADDRESS_LINES")(ADDRESS_LINES)
-    __obj.updateDynamic("AUDIENCE")(AUDIENCE)
-    __obj.updateDynamic("DESCRIPTION")(DESCRIPTION)
-    __obj.updateDynamic("DURATION")(DURATION)
-    __obj.updateDynamic("EMBEDDABLE_URL")(EMBEDDABLE_URL)
-    __obj.updateDynamic("ICON_URL")(ICON_URL)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IS_NEW")(IS_NEW)
-    __obj.updateDynamic("LAST_EDITED_UTC")(LAST_EDITED_UTC)
-    __obj.updateDynamic("LATITUDE")(LATITUDE)
-    __obj.updateDynamic("LONGITUDE")(LONGITUDE)
-    __obj.updateDynamic("MIME_TYPE")(MIME_TYPE)
-    __obj.updateDynamic("NAME")(NAME)
-    __obj.updateDynamic("NUM_CHILDREN")(NUM_CHILDREN)
-    __obj.updateDynamic("PARENT_ID")(PARENT_ID)
-    __obj.updateDynamic("PHONE_NUMBERS")(PHONE_NUMBERS)
-    __obj.updateDynamic("SERVICE_ID")(SERVICE_ID)
-    __obj.updateDynamic("THUMBNAILS")(THUMBNAILS)
-    __obj.updateDynamic("TYPE")(TYPE)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(ADDRESS_LINES = ADDRESS_LINES, AUDIENCE = AUDIENCE, DESCRIPTION = DESCRIPTION, DURATION = DURATION, EMBEDDABLE_URL = EMBEDDABLE_URL, ICON_URL = ICON_URL, ID = ID, IS_NEW = IS_NEW, LAST_EDITED_UTC = LAST_EDITED_UTC, LATITUDE = LATITUDE, LONGITUDE = LONGITUDE, MIME_TYPE = MIME_TYPE, NAME = NAME, NUM_CHILDREN = NUM_CHILDREN, PARENT_ID = PARENT_ID, PHONE_NUMBERS = PHONE_NUMBERS, SERVICE_ID = SERVICE_ID, THUMBNAILS = THUMBNAILS, TYPE = TYPE, URL = URL)
+  
     __obj.asInstanceOf[Anon_ADDRESSLINES]
   }
 }

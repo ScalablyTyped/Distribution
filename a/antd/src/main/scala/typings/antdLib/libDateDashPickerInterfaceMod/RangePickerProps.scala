@@ -70,6 +70,7 @@ object RangePickerProps {
     inputPrefixCls: java.lang.String = null,
     locale: js.Any = null,
     mode: java.lang.String | js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
     onCalendarChange: js.Function2[
       /* dates */ RangePickerValue, 
       /* dateStrings */ js.Tuple2[java.lang.String, java.lang.String], 
@@ -115,6 +116,7 @@ object RangePickerProps {
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
     if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(onCalendarChange)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onOk != null) __obj.updateDynamic("onOk")(onOk)

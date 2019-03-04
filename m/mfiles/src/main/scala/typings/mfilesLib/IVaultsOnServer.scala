@@ -24,13 +24,8 @@ object IVaultsOnServer {
     GetVaultIndexByName: js.Function1[java.lang.String, scala.Double],
     Item: js.Function1[scala.Double, IVaultOnServer]
   ): IVaultsOnServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetVaultByGUID")(GetVaultByGUID)
-    __obj.updateDynamic("GetVaultByName")(GetVaultByName)
-    __obj.updateDynamic("GetVaultIndexByGUID")(GetVaultIndexByGUID)
-    __obj.updateDynamic("GetVaultIndexByName")(GetVaultIndexByName)
-    __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal(Count = Count, GetVaultByGUID = GetVaultByGUID, GetVaultByName = GetVaultByName, GetVaultIndexByGUID = GetVaultIndexByGUID, GetVaultIndexByName = GetVaultIndexByName, Item = Item)
+  
     __obj.asInstanceOf[IVaultsOnServer]
   }
 }

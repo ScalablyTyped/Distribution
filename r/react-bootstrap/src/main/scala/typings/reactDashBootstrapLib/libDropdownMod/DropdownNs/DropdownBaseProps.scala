@@ -34,8 +34,7 @@ object DropdownBaseProps {
     pullRight: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null
   ): DropdownBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

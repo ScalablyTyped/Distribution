@@ -21,10 +21,7 @@ object UploadErrorEvent {
     files: js.Array[_] = null,
     operation: java.lang.String = null
   ): UploadErrorEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
     if (files != null) __obj.updateDynamic("files")(files)
     if (operation != null) __obj.updateDynamic("operation")(operation)

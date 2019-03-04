@@ -22,12 +22,8 @@ object Hunk {
     oldLines: scala.Double,
     oldStart: scala.Double
   ): Hunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("newLines")(newLines)
-    __obj.updateDynamic("newStart")(newStart)
-    __obj.updateDynamic("oldLines")(oldLines)
-    __obj.updateDynamic("oldStart")(oldStart)
+    val __obj = js.Dynamic.literal(lines = lines, newLines = newLines, newStart = newStart, oldLines = oldLines, oldStart = oldStart)
+  
     __obj.asInstanceOf[Hunk]
   }
 }

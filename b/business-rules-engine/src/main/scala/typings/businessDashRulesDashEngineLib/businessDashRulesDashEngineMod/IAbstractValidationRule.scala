@@ -28,15 +28,8 @@ object IAbstractValidationRule {
     ValidationResult: IValidationResult,
     Validators: org.scalablytyped.runtime.StringDictionary[IValidator]
   ): IAbstractValidationRule[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Children")(Children)
-    __obj.updateDynamic("Rules")(Rules)
-    __obj.updateDynamic("Validate")(Validate)
-    __obj.updateDynamic("ValidateAll")(ValidateAll)
-    __obj.updateDynamic("ValidateAsync")(ValidateAsync)
-    __obj.updateDynamic("ValidateProperty")(ValidateProperty)
-    __obj.updateDynamic("ValidationResult")(ValidationResult)
-    __obj.updateDynamic("Validators")(Validators)
+    val __obj = js.Dynamic.literal(Children = Children, Rules = Rules, Validate = Validate, ValidateAll = ValidateAll, ValidateAsync = ValidateAsync, ValidateProperty = ValidateProperty, ValidationResult = ValidationResult, Validators = Validators)
+  
     __obj.asInstanceOf[IAbstractValidationRule[T]]
   }
 }

@@ -40,14 +40,8 @@ object IScheme {
     semanticColors: atUifabricStylingLib.libInterfacesISemanticColorsMod.ISemanticColors,
     spacing: atUifabricStylingLib.libInterfacesISpacingMod.ISpacing
   ): IScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableGlobalClassNames")(disableGlobalClassNames)
-    __obj.updateDynamic("effects")(effects)
-    __obj.updateDynamic("fonts")(fonts)
-    __obj.updateDynamic("isInverted")(isInverted)
-    __obj.updateDynamic("palette")(palette)
-    __obj.updateDynamic("semanticColors")(semanticColors)
-    __obj.updateDynamic("spacing")(spacing)
+    val __obj = js.Dynamic.literal(disableGlobalClassNames = disableGlobalClassNames, effects = effects, fonts = fonts, isInverted = isInverted, palette = palette, semanticColors = semanticColors, spacing = spacing)
+  
     __obj.asInstanceOf[IScheme]
   }
 }

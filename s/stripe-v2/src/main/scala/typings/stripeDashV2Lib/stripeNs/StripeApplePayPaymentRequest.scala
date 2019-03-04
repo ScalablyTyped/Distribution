@@ -32,11 +32,7 @@ object StripeApplePayPaymentRequest {
     shippingMethods: js.Array[StripeApplePayShippingMethod] = null,
     shippingType: js.Array[StripeApplePayShipping] = null
   ): StripeApplePayPaymentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("billingContact")(billingContact)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("currencyCode")(currencyCode)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(billingContact = billingContact, countryCode = countryCode, currencyCode = currencyCode, total = total)
     if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
     if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
     if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)

@@ -70,31 +70,8 @@ object SetElement {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setToDefaultAsProperty: js.Function0[scala.Unit]
   ): SetElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsProperty")(AsProperty)
-    __obj.updateDynamic("DefaultAsProperty")(DefaultAsProperty)
-    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("StateAsProperty")(StateAsProperty)
-    __obj.updateDynamic("TemplateName")(TemplateName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAsProperty")(getAsProperty)
-    __obj.updateDynamic("getDefaultAsProperty")(getDefaultAsProperty)
-    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getStateAsProperty")(getStateAsProperty)
-    __obj.updateDynamic("getTemplateName")(getTemplateName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setToDefaultAsProperty")(setToDefaultAsProperty)
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, DefaultAsProperty = DefaultAsProperty, HierarchicalName = HierarchicalName, Name = Name, Parent = Parent, StateAsProperty = StateAsProperty, TemplateName = TemplateName, acquire = acquire, addEventListener = addEventListener, composeHierarchicalName = composeHierarchicalName, dispose = dispose, getAsProperty = getAsProperty, getDefaultAsProperty = getDefaultAsProperty, getHierarchicalName = getHierarchicalName, getName = getName, getParent = getParent, getStateAsProperty = getStateAsProperty, getTemplateName = getTemplateName, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setName = setName, setParent = setParent, setToDefaultAsProperty = setToDefaultAsProperty)
+  
     __obj.asInstanceOf[SetElement]
   }
 }

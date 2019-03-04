@@ -20,11 +20,8 @@ object Ocr {
     regions: js.Array[projectDashOxfordLib.Anon_BoundingBoxLines],
     textAngle: scala.Double
   ): Ocr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("regions")(regions)
-    __obj.updateDynamic("textAngle")(textAngle)
+    val __obj = js.Dynamic.literal(language = language, orientation = orientation, regions = regions, textAngle = textAngle)
+  
     __obj.asInstanceOf[Ocr]
   }
 }

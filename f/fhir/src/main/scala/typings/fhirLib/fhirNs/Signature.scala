@@ -85,8 +85,8 @@ object Signature {
     whoReference: Reference = null,
     whoUri: uri = null
   ): Signature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("when")(when)
+    val __obj = js.Dynamic.literal(when = when)
+    __obj.updateDynamic("type")(`type`)
     if (_blob != null) __obj.updateDynamic("_blob")(_blob)
     if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

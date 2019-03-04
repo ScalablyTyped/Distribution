@@ -22,12 +22,8 @@ object WalkingRouteResult {
     getPlan: js.Function1[scala.Double, RoutePlan],
     getStart: js.Function0[LocalResultPoi]
   ): WalkingRouteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getNumPlans")(getNumPlans)
-    __obj.updateDynamic("getPlan")(getPlan)
-    __obj.updateDynamic("getStart")(getStart)
+    val __obj = js.Dynamic.literal(city = city, getEnd = getEnd, getNumPlans = getNumPlans, getPlan = getPlan, getStart = getStart)
+  
     __obj.asInstanceOf[WalkingRouteResult]
   }
 }

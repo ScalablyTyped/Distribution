@@ -16,9 +16,8 @@ object Group {
     group: js.Function2[js.Any, scala.Boolean, scala.Unit],
     ungroup: js.Function1[scala.Boolean, scala.Unit]
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("ungroup")(ungroup)
+    val __obj = js.Dynamic.literal(group = group, ungroup = ungroup)
+  
     __obj.asInstanceOf[Group]
   }
 }

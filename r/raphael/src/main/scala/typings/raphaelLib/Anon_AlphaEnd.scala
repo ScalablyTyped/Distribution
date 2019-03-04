@@ -26,14 +26,8 @@ object Anon_AlphaEnd {
     x: scala.Double,
     y: scala.Double
   ): Anon_AlphaEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(alpha = alpha, end = end, m = m, n = n, start = start, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_AlphaEnd]
   }
 }

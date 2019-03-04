@@ -29,12 +29,8 @@ object SwitchStatement {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): SwitchStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cases")(cases)
-    __obj.updateDynamic("discriminant")(discriminant)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(cases = cases, discriminant = discriminant, end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

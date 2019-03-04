@@ -36,10 +36,7 @@ object Payment {
     state: java.lang.String = null,
     update_time: java.lang.String = null
   ): Payment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("payer")(payer)
-    __obj.updateDynamic("transactions")(transactions)
+    val __obj = js.Dynamic.literal(intent = intent, payer = payer, transactions = transactions)
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)
     if (experience_profile_id != null) __obj.updateDynamic("experience_profile_id")(experience_profile_id)
     if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason)

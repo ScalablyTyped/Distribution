@@ -18,7 +18,8 @@ object Anon_CookieDurationEnabled {
     cookieDuration: scala.Int | scala.Double = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CookieDurationEnabled = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (cookieDuration != null) __obj.updateDynamic("cookieDuration")(cookieDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     __obj.asInstanceOf[Anon_CookieDurationEnabled]

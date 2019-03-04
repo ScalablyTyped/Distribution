@@ -22,8 +22,8 @@ object Anon_AmbiguousRoleResolutionIdentityProvider {
     ambiguousRoleResolution: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     mappingRules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_ClaimMatchType]]] = null
   ): Anon_AmbiguousRoleResolutionIdentityProvider = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("identityProvider")(identityProvider.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identityProvider = identityProvider.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (ambiguousRoleResolution != null) __obj.updateDynamic("ambiguousRoleResolution")(ambiguousRoleResolution.asInstanceOf[js.Any])
     if (mappingRules != null) __obj.updateDynamic("mappingRules")(mappingRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AmbiguousRoleResolutionIdentityProvider]

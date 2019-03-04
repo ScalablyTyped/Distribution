@@ -24,13 +24,8 @@ object INetworkAdapter {
     networkItem: NetworkItem,
     outboundMaxBitsPerSecond: scala.Double
   ): INetworkAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConnectedProfileAsync")(getConnectedProfileAsync)
-    __obj.updateDynamic("ianaInterfaceType")(ianaInterfaceType)
-    __obj.updateDynamic("inboundMaxBitsPerSecond")(inboundMaxBitsPerSecond)
-    __obj.updateDynamic("networkAdapterId")(networkAdapterId)
-    __obj.updateDynamic("networkItem")(networkItem)
-    __obj.updateDynamic("outboundMaxBitsPerSecond")(outboundMaxBitsPerSecond)
+    val __obj = js.Dynamic.literal(getConnectedProfileAsync = getConnectedProfileAsync, ianaInterfaceType = ianaInterfaceType, inboundMaxBitsPerSecond = inboundMaxBitsPerSecond, networkAdapterId = networkAdapterId, networkItem = networkItem, outboundMaxBitsPerSecond = outboundMaxBitsPerSecond)
+  
     __obj.asInstanceOf[INetworkAdapter]
   }
 }

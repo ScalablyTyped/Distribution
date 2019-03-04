@@ -12,8 +12,8 @@ trait ExecutorDeps extends js.Object {
 object ExecutorDeps {
   @scala.inline
   def apply(namespace: ionicLib.definitionsMod.INamespace): ExecutorDeps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(namespace = namespace)
+  
     __obj.asInstanceOf[ExecutorDeps]
   }
 }

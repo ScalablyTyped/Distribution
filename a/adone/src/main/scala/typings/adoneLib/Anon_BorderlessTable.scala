@@ -24,10 +24,8 @@ object Anon_BorderlessTable {
     INs: js.Any,
     Table: Anon_DefaultOptions
   ): Anon_BorderlessTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BorderlessTable")(BorderlessTable)
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("Table")(Table)
+    val __obj = js.Dynamic.literal(BorderlessTable = BorderlessTable, INs = INs, Table = Table)
+  
     __obj.asInstanceOf[Anon_BorderlessTable]
   }
 }

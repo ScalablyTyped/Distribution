@@ -16,9 +16,8 @@ object ConfigOptions {
     webpack: webpackLib.webpackMod.webpackNs.Configuration,
     webpackMiddleware: KarmaWebpackMiddlewareOptions
   ): ConfigOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("webpack")(webpack)
-    __obj.updateDynamic("webpackMiddleware")(webpackMiddleware)
+    val __obj = js.Dynamic.literal(webpack = webpack, webpackMiddleware = webpackMiddleware)
+  
     __obj.asInstanceOf[ConfigOptions]
   }
 }

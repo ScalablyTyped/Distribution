@@ -12,8 +12,8 @@ trait Anon_AutomaticallyAfterDaysInput extends js.Object {
 object Anon_AutomaticallyAfterDaysInput {
   @scala.inline
   def apply(automaticallyAfterDays: atPulumiPulumiLib.outputMod.Input[scala.Double]): Anon_AutomaticallyAfterDaysInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automaticallyAfterDays")(automaticallyAfterDays.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(automaticallyAfterDays = automaticallyAfterDays.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AutomaticallyAfterDaysInput]
   }
 }

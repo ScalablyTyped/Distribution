@@ -22,12 +22,8 @@ object BuildCoverage {
     modules: js.Array[ModuleCoverage],
     state: java.lang.String
   ): BuildCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codeCoverageFileUrl")(codeCoverageFileUrl)
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("lastError")(lastError)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(codeCoverageFileUrl = codeCoverageFileUrl, configuration = configuration, lastError = lastError, modules = modules, state = state)
+  
     __obj.asInstanceOf[BuildCoverage]
   }
 }

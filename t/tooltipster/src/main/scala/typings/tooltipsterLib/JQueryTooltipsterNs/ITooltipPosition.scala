@@ -38,12 +38,8 @@ object ITooltipPosition {
     size: tooltipsterLib.Anon_Height,
     target: scala.Double
   ): ITooltipPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coord")(coord)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("side")(side)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(coord = coord, distance = distance, side = side, size = size, target = target)
+  
     __obj.asInstanceOf[ITooltipPosition]
   }
 }

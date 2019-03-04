@@ -26,18 +26,8 @@ object ISyndicationCategory {
     scheme: java.lang.String,
     term: java.lang.String
   ): ISyndicationCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("term")(term)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, baseUri = baseUri, elementExtensions = elementExtensions, getXmlDocument = getXmlDocument, label = label, language = language, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, scheme = scheme, term = term)
+  
     __obj.asInstanceOf[ISyndicationCategory]
   }
 }

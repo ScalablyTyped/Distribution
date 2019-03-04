@@ -15,8 +15,7 @@ trait IChartOptions extends js.Object {
 object IChartOptions {
   @scala.inline
   def apply(element: js.Any, resize: js.UndefOr[scala.Boolean] = js.undefined): IChartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     __obj.asInstanceOf[IChartOptions]
   }

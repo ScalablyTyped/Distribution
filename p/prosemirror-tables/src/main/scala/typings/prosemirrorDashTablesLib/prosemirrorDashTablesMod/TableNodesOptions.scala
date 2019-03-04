@@ -18,9 +18,7 @@ object TableNodesOptions {
     cellContent: java.lang.String,
     tableGroup: java.lang.String = null
   ): TableNodesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellAttributes")(cellAttributes)
-    __obj.updateDynamic("cellContent")(cellContent)
+    val __obj = js.Dynamic.literal(cellAttributes = cellAttributes, cellContent = cellContent)
     if (tableGroup != null) __obj.updateDynamic("tableGroup")(tableGroup)
     __obj.asInstanceOf[TableNodesOptions]
   }

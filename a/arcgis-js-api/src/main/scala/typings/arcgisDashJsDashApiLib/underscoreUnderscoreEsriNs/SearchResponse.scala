@@ -51,15 +51,8 @@ object SearchResponse {
     results: js.Array[SearchResponseResults],
     searchTerm: java.lang.String
   ): SearchResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeSourceIndex")(activeSourceIndex)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("numResults")(numResults)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("searchTerm")(searchTerm)
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, constructor = constructor, errors = errors, hasOwnProperty = hasOwnProperty, numResults = numResults, propertyIsEnumerable = propertyIsEnumerable, results = results, searchTerm = searchTerm)
+  
     __obj.asInstanceOf[SearchResponse]
   }
 }

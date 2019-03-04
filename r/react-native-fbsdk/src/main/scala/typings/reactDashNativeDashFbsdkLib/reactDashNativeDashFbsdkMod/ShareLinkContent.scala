@@ -56,9 +56,7 @@ object ShareLinkContent {
     imageUrl: java.lang.String = null,
     quote: java.lang.String = null
   ): ShareLinkContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("contentUrl")(contentUrl)
+    val __obj = js.Dynamic.literal(contentType = contentType, contentUrl = contentUrl)
     if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
     if (contentDescription != null) __obj.updateDynamic("contentDescription")(contentDescription)
     if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle)

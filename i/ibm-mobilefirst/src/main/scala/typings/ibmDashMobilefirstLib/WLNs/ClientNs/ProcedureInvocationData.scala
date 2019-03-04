@@ -20,9 +20,7 @@ object ProcedureInvocationData {
     compressResponse: js.UndefOr[scala.Boolean] = js.undefined,
     parameters: js.Array[_] = null
   ): ProcedureInvocationData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
-    __obj.updateDynamic("procedure")(procedure)
+    val __obj = js.Dynamic.literal(adapter = adapter, procedure = procedure)
     if (!js.isUndefined(compressResponse)) __obj.updateDynamic("compressResponse")(compressResponse)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     __obj.asInstanceOf[ProcedureInvocationData]

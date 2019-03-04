@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(recurse: scala.Boolean): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recurse")(recurse)
+    val __obj = js.Dynamic.literal(recurse = recurse)
+  
     __obj.asInstanceOf[Options]
   }
 }

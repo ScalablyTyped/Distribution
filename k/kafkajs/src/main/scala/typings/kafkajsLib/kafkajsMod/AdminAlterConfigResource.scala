@@ -20,11 +20,8 @@ object AdminAlterConfigResource {
     resourceName: java.lang.String,
     resourceType: ResourceTypes
   ): AdminAlterConfigResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("resourceName")(resourceName)
-    __obj.updateDynamic("resourceType")(resourceType)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage, resourceName = resourceName, resourceType = resourceType)
+  
     __obj.asInstanceOf[AdminAlterConfigResource]
   }
 }

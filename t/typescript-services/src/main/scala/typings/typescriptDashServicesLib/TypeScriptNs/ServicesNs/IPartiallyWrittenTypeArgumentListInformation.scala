@@ -18,10 +18,8 @@ object IPartiallyWrittenTypeArgumentListInformation {
     genericIdentifer: typescriptDashServicesLib.TypeScriptNs.PositionedToken,
     lessThanToken: typescriptDashServicesLib.TypeScriptNs.PositionedToken
   ): IPartiallyWrittenTypeArgumentListInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argumentIndex")(argumentIndex)
-    __obj.updateDynamic("genericIdentifer")(genericIdentifer)
-    __obj.updateDynamic("lessThanToken")(lessThanToken)
+    val __obj = js.Dynamic.literal(argumentIndex = argumentIndex, genericIdentifer = genericIdentifer, lessThanToken = lessThanToken)
+  
     __obj.asInstanceOf[IPartiallyWrittenTypeArgumentListInformation]
   }
 }

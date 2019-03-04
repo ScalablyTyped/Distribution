@@ -32,13 +32,8 @@ object ContextualIdentity {
     iconUrl: java.lang.String,
     name: java.lang.String
   ): ContextualIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("colorCode")(colorCode)
-    __obj.updateDynamic("cookieStoreId")(cookieStoreId)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(color = color, colorCode = colorCode, cookieStoreId = cookieStoreId, icon = icon, iconUrl = iconUrl, name = name)
+  
     __obj.asInstanceOf[ContextualIdentity]
   }
 }

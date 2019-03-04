@@ -59,13 +59,8 @@ object XJavaVM {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XJavaVM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getJavaVM")(getJavaVM)
-    __obj.updateDynamic("isVMEnabled")(isVMEnabled)
-    __obj.updateDynamic("isVMStarted")(isVMStarted)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getJavaVM = getJavaVM, isVMEnabled = isVMEnabled, isVMStarted = isVMStarted, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XJavaVM]
   }
 }

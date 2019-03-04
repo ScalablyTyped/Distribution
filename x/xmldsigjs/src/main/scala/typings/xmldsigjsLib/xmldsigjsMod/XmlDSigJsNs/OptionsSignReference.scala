@@ -40,8 +40,7 @@ object OptionsSignReference {
     `type`: java.lang.String = null,
     uri: java.lang.String = null
   ): OptionsSignReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (transforms != null) __obj.updateDynamic("transforms")(transforms)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

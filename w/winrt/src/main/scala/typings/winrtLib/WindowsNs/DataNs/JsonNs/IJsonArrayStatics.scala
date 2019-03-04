@@ -16,9 +16,8 @@ object IJsonArrayStatics {
     parse: js.Function1[java.lang.String, JsonArray],
     tryParse: js.Function1[java.lang.String, winrtLib.Anon_Result]
   ): IJsonArrayStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("tryParse")(tryParse)
+    val __obj = js.Dynamic.literal(parse = parse, tryParse = tryParse)
+  
     __obj.asInstanceOf[IJsonArrayStatics]
   }
 }

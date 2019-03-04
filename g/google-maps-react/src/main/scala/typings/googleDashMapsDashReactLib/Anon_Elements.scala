@@ -124,17 +124,8 @@ object Anon_Elements {
       googlemapsLib.googleNs.mapsNs.DataNs.Polygon
     ]
   ): Anon_Elements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Feature")(Feature)
-    __obj.updateDynamic("Geometry")(Geometry)
-    __obj.updateDynamic("GeometryCollection")(GeometryCollection)
-    __obj.updateDynamic("LineString")(LineString)
-    __obj.updateDynamic("LinearRing")(LinearRing)
-    __obj.updateDynamic("MultiLineString")(MultiLineString)
-    __obj.updateDynamic("MultiPoint")(MultiPoint)
-    __obj.updateDynamic("MultiPolygon")(MultiPolygon)
-    __obj.updateDynamic("Point")(Point)
-    __obj.updateDynamic("Polygon")(Polygon)
+    val __obj = js.Dynamic.literal(Feature = Feature, Geometry = Geometry, GeometryCollection = GeometryCollection, LineString = LineString, LinearRing = LinearRing, MultiLineString = MultiLineString, MultiPoint = MultiPoint, MultiPolygon = MultiPolygon, Point = Point, Polygon = Polygon)
+  
     __obj.asInstanceOf[Anon_Elements]
   }
 }

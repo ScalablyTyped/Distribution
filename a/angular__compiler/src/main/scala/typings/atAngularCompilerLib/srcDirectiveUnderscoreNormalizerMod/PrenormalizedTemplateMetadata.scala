@@ -34,13 +34,7 @@ object PrenormalizedTemplateMetadata {
     template: java.lang.String = null,
     templateUrl: java.lang.String = null
   ): PrenormalizedTemplateMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animations")(animations)
-    __obj.updateDynamic("componentType")(componentType)
-    __obj.updateDynamic("moduleUrl")(moduleUrl)
-    __obj.updateDynamic("ngModuleType")(ngModuleType)
-    __obj.updateDynamic("styleUrls")(styleUrls)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(animations = animations, componentType = componentType, moduleUrl = moduleUrl, ngModuleType = ngModuleType, styleUrls = styleUrls, styles = styles)
     if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
     if (!js.isUndefined(preserveWhitespaces)) __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)

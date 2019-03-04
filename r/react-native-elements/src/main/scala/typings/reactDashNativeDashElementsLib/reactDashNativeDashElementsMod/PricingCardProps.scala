@@ -78,9 +78,7 @@ object PricingCardProps {
     titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     wrapperStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): PricingCardProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("price")(price)
+    val __obj = js.Dynamic.literal(button = button, price = price)
     if (color != null) __obj.updateDynamic("color")(color)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
     if (info != null) __obj.updateDynamic("info")(info)

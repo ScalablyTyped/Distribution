@@ -48,8 +48,7 @@ object Anon_AltFieldsKey {
     token: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(packageName = packageName)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

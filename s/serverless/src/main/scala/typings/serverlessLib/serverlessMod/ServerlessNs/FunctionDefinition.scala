@@ -26,9 +26,8 @@ object FunctionDefinition {
     runtime: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): FunctionDefinition = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(handler = handler, name = name)
+    __obj.updateDynamic("package")(`package`)
     if (environment != null) __obj.updateDynamic("environment")(environment)
     if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
     if (runtime != null) __obj.updateDynamic("runtime")(runtime)

@@ -43,13 +43,8 @@ object Table {
     table_rows: js.Array[TableRow],
     vertical_border_rows: js.Array[TableBorderRow]
   ): Table = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("horizontal_border_rows")(horizontal_border_rows)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("table_columns")(table_columns)
-    __obj.updateDynamic("table_rows")(table_rows)
-    __obj.updateDynamic("vertical_border_rows")(vertical_border_rows)
+    val __obj = js.Dynamic.literal(columns = columns, horizontal_border_rows = horizontal_border_rows, rows = rows, table_columns = table_columns, table_rows = table_rows, vertical_border_rows = vertical_border_rows)
+  
     __obj.asInstanceOf[Table]
   }
 }

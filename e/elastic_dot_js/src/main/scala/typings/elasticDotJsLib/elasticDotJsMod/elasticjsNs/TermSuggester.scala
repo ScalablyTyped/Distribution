@@ -112,23 +112,8 @@ object TermSuggester {
     text: js.Function1[java.lang.String, TermSuggester],
     toJSON: js.Function0[js.Any]
   ): TermSuggester = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("maxEdits")(maxEdits)
-    __obj.updateDynamic("maxInspections")(maxInspections)
-    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
-    __obj.updateDynamic("minDocFreq")(minDocFreq)
-    __obj.updateDynamic("minWordLen")(minWordLen)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("stringDistance")(stringDistance)
-    __obj.updateDynamic("suggestMode")(suggestMode)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, accuracy = accuracy, analyzer = analyzer, field = field, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, shardSize = shardSize, size = size, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode, text = text, toJSON = toJSON)
+  
     __obj.asInstanceOf[TermSuggester]
   }
 }

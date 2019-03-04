@@ -19,9 +19,8 @@ trait LicensingOverride extends js.Object {
 object LicensingOverride {
   @scala.inline
   def apply(behavior: ContributionLicensingBehaviorType, id: java.lang.String): LicensingOverride = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("behavior")(behavior)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(behavior = behavior, id = id)
+  
     __obj.asInstanceOf[LicensingOverride]
   }
 }

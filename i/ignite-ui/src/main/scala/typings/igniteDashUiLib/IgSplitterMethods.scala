@@ -83,19 +83,8 @@ object IgSplitterMethods {
     setSecondPanelSize: js.Function1[js.Object, scala.Unit],
     widget: js.Function0[js.Object]
   ): IgSplitterMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("collapseAt")(collapseAt)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("expandAt")(expandAt)
-    __obj.updateDynamic("firstPanel")(firstPanel)
-    __obj.updateDynamic("refreshLayout")(refreshLayout)
-    __obj.updateDynamic("secondPanel")(secondPanel)
-    __obj.updateDynamic("setFirstPanelSize")(setFirstPanelSize)
-    __obj.updateDynamic("setSecondPanelSize")(setSecondPanelSize)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, collapseAt = collapseAt, destroy = destroy, expandAt = expandAt, firstPanel = firstPanel, refreshLayout = refreshLayout, secondPanel = secondPanel, setFirstPanelSize = setFirstPanelSize, setSecondPanelSize = setSecondPanelSize, widget = widget)
+  
     __obj.asInstanceOf[IgSplitterMethods]
   }
 }

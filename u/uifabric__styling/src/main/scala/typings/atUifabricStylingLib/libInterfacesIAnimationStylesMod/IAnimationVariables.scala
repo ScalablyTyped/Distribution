@@ -24,13 +24,8 @@ object IAnimationVariables {
     easeFunction1: java.lang.String,
     easeFunction2: java.lang.String
   ): IAnimationVariables = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("durationValue1")(durationValue1)
-    __obj.updateDynamic("durationValue2")(durationValue2)
-    __obj.updateDynamic("durationValue3")(durationValue3)
-    __obj.updateDynamic("durationValue4")(durationValue4)
-    __obj.updateDynamic("easeFunction1")(easeFunction1)
-    __obj.updateDynamic("easeFunction2")(easeFunction2)
+    val __obj = js.Dynamic.literal(durationValue1 = durationValue1, durationValue2 = durationValue2, durationValue3 = durationValue3, durationValue4 = durationValue4, easeFunction1 = easeFunction1, easeFunction2 = easeFunction2)
+  
     __obj.asInstanceOf[IAnimationVariables]
   }
 }

@@ -33,10 +33,8 @@ object UsersResource {
     ],
     sshPublicKeys: SshPublicKeysResource
   ): UsersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLoginProfile")(getLoginProfile)
-    __obj.updateDynamic("importSshPublicKey")(importSshPublicKey)
-    __obj.updateDynamic("sshPublicKeys")(sshPublicKeys)
+    val __obj = js.Dynamic.literal(getLoginProfile = getLoginProfile, importSshPublicKey = importSshPublicKey, sshPublicKeys = sshPublicKeys)
+  
     __obj.asInstanceOf[UsersResource]
   }
 }

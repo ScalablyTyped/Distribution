@@ -18,10 +18,8 @@ object IOCROptions {
     PrimaryLanguage: mfilesLib.MFilesNs.MFOCRLanguage,
     SecondaryLanguage: mfilesLib.MFilesNs.MFOCRLanguage
   ): IOCROptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("PrimaryLanguage")(PrimaryLanguage)
-    __obj.updateDynamic("SecondaryLanguage")(SecondaryLanguage)
+    val __obj = js.Dynamic.literal(Clone = Clone, PrimaryLanguage = PrimaryLanguage, SecondaryLanguage = SecondaryLanguage)
+  
     __obj.asInstanceOf[IOCROptions]
   }
 }

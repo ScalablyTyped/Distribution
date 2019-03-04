@@ -12,8 +12,8 @@ trait IResourceLoader extends js.Object {
 object IResourceLoader {
   @scala.inline
   def apply(getString: js.Function1[java.lang.String, java.lang.String]): IResourceLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getString")(getString)
+    val __obj = js.Dynamic.literal(getString = getString)
+  
     __obj.asInstanceOf[IResourceLoader]
   }
 }

@@ -40,12 +40,8 @@ object ASPxClientToolTipController {
     showImage: scala.Boolean,
     showText: scala.Boolean
   ): ASPxClientToolTipController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("imagePosition")(imagePosition)
-    __obj.updateDynamic("openMode")(openMode)
-    __obj.updateDynamic("showImage")(showImage)
-    __obj.updateDynamic("showText")(showText)
+    val __obj = js.Dynamic.literal(chart = chart, imagePosition = imagePosition, openMode = openMode, showImage = showImage, showText = showText)
+  
     __obj.asInstanceOf[ASPxClientToolTipController]
   }
 }

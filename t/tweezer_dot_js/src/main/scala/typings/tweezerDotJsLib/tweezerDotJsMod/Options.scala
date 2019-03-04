@@ -34,9 +34,7 @@ object Options {
       scala.Double
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     __obj.asInstanceOf[Options]

@@ -22,8 +22,7 @@ object ColumnDefinition {
     table: java.lang.String = null,
     `type`: java.lang.String = null
   ): ColumnDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (column != null) __obj.updateDynamic("column")(column)
     if (database != null) __obj.updateDynamic("database")(database)
     if (table != null) __obj.updateDynamic("table")(table)

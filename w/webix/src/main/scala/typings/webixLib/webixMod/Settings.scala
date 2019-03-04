@@ -18,10 +18,8 @@ object Settings {
     define: js.Function2[java.lang.String, js.Any, scala.Unit],
     name: java.lang.String
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("define")(define)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(config = config, define = define, name = name)
+  
     __obj.asInstanceOf[Settings]
   }
 }

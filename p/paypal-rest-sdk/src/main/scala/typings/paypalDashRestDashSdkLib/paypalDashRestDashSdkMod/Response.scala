@@ -20,8 +20,7 @@ object Response {
     create_time: java.lang.String = null,
     total_count: scala.Int | scala.Double = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpStatusCode")(httpStatusCode)
+    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)
     if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])

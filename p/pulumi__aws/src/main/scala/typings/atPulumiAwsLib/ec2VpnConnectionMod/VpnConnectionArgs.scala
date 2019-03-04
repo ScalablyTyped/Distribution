@@ -91,8 +91,8 @@ object VpnConnectionArgs {
     ] = null,
     vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VpnConnectionArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("customerGatewayId")(customerGatewayId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customerGatewayId = customerGatewayId.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (customerGatewayConfiguration != null) __obj.updateDynamic("customerGatewayConfiguration")(customerGatewayConfiguration.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (staticRoutesOnly != null) __obj.updateDynamic("staticRoutesOnly")(staticRoutesOnly.asInstanceOf[js.Any])

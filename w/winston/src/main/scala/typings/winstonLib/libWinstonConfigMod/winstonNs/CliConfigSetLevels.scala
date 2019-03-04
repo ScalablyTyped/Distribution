@@ -32,17 +32,8 @@ object CliConfigSetLevels {
     verbose: scala.Double,
     warn: scala.Double
   ): CliConfigSetLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("prompt")(prompt)
-    __obj.updateDynamic("silly")(silly)
-    __obj.updateDynamic("verbose")(verbose)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(data = data, debug = debug, error = error, help = help, info = info, input = input, prompt = prompt, silly = silly, verbose = verbose, warn = warn)
+  
     __obj.asInstanceOf[CliConfigSetLevels]
   }
 }

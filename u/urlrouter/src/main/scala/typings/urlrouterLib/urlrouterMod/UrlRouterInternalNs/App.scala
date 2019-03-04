@@ -65,32 +65,8 @@ object App {
     unlock: js.Function2[java.lang.String, HttpHandler, scala.Unit],
     unsubscribe: js.Function2[java.lang.String, HttpHandler, scala.Unit]
   ): App = {
-    val __obj = js.Dynamic.literal(`m-search` = `m-search`)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("checkout")(checkout)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("mkactivity")(mkactivity)
-    __obj.updateDynamic("mkcol")(mkcol)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("notify")(notify)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("propfind")(propfind)
-    __obj.updateDynamic("proppatch")(proppatch)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("redirect")(redirect)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("trace")(trace)
-    __obj.updateDynamic("unlock")(unlock)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(all = all, checkout = checkout, copy = copy, delete = delete, get = get, head = head, lock = lock, merge = merge, mkactivity = mkactivity, mkcol = mkcol, move = move, notify = notify, options = options, patch = patch, post = post, propfind = propfind, proppatch = proppatch, put = put, redirect = redirect, report = report, search = search, subscribe = subscribe, trace = trace, unlock = unlock, unsubscribe = unsubscribe)
+    __obj.updateDynamic("m-search")(`m-search`)
     __obj.asInstanceOf[App]
   }
 }

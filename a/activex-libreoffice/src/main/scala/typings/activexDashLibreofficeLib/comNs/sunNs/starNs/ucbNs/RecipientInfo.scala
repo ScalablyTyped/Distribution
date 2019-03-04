@@ -73,20 +73,8 @@ object RecipientInfo {
     Username: java.lang.String,
     VIMPostOfficePath: java.lang.String
   ): RecipientInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BCC")(BCC)
-    __obj.updateDynamic("CC")(CC)
-    __obj.updateDynamic("Newsgroups")(Newsgroups)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("ProtocolErrorNumber")(ProtocolErrorNumber)
-    __obj.updateDynamic("ProtocolErrorString")(ProtocolErrorString)
-    __obj.updateDynamic("ProtocolType")(ProtocolType)
-    __obj.updateDynamic("SendTries")(SendTries)
-    __obj.updateDynamic("Server")(Server)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("To")(To)
-    __obj.updateDynamic("Username")(Username)
-    __obj.updateDynamic("VIMPostOfficePath")(VIMPostOfficePath)
+    val __obj = js.Dynamic.literal(BCC = BCC, CC = CC, Newsgroups = Newsgroups, Password = Password, ProtocolErrorNumber = ProtocolErrorNumber, ProtocolErrorString = ProtocolErrorString, ProtocolType = ProtocolType, SendTries = SendTries, Server = Server, State = State, To = To, Username = Username, VIMPostOfficePath = VIMPostOfficePath)
+  
     __obj.asInstanceOf[RecipientInfo]
   }
 }

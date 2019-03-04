@@ -14,9 +14,7 @@ trait Anon_HeightType extends js.Object {
 object Anon_HeightType {
   @scala.inline
   def apply(height: scala.Double, width: scala.Double, `type`: croppieLib.croppieMod.CroppieNs.CropType = null): Anon_HeightType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_HeightType]
   }

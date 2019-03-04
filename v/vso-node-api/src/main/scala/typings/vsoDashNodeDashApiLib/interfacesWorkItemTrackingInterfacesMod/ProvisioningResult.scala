@@ -15,8 +15,8 @@ trait ProvisioningResult extends js.Object {
 object ProvisioningResult {
   @scala.inline
   def apply(provisioningImportEvents: js.Array[java.lang.String]): ProvisioningResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provisioningImportEvents")(provisioningImportEvents)
+    val __obj = js.Dynamic.literal(provisioningImportEvents = provisioningImportEvents)
+  
     __obj.asInstanceOf[ProvisioningResult]
   }
 }

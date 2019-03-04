@@ -16,9 +16,8 @@ object Anon_I18nNodesByMsgIdLocale {
     i18nNodesByMsgId: org.scalablytyped.runtime.StringDictionary[js.Array[atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Node]],
     locale: java.lang.String
   ): Anon_I18nNodesByMsgIdLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i18nNodesByMsgId")(i18nNodesByMsgId)
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId, locale = locale)
+  
     __obj.asInstanceOf[Anon_I18nNodesByMsgIdLocale]
   }
 }

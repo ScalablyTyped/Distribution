@@ -22,12 +22,8 @@ object NetInterfacesData {
     ip6: java.lang.String,
     mac: java.lang.String
   ): NetInterfacesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iface")(iface)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("ip4")(ip4)
-    __obj.updateDynamic("ip6")(ip6)
-    __obj.updateDynamic("mac")(mac)
+    val __obj = js.Dynamic.literal(iface = iface, internal = internal, ip4 = ip4, ip6 = ip6, mac = mac)
+  
     __obj.asInstanceOf[NetInterfacesData]
   }
 }

@@ -21,10 +21,8 @@ object AdjustmentEvent {
     Type: AdjustmentType,
     Value: scala.Double
   ): AdjustmentEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Source = Source, Type = Type, Value = Value)
+  
     __obj.asInstanceOf[AdjustmentEvent]
   }
 }

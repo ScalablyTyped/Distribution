@@ -12,8 +12,8 @@ trait Anon_EventHTMLVideoElement extends js.Object {
 object Anon_EventHTMLVideoElement {
   @scala.inline
   def apply(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLVideoElement, reactLib.Event]): Anon_EventHTMLVideoElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[Anon_EventHTMLVideoElement]
   }
 }

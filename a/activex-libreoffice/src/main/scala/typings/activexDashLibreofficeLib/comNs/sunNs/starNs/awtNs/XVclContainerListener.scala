@@ -29,13 +29,8 @@ object XVclContainerListener {
     windowAdded: js.Function1[VclContainerEvent, scala.Unit],
     windowRemoved: js.Function1[VclContainerEvent, scala.Unit]
   ): XVclContainerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("windowAdded")(windowAdded)
-    __obj.updateDynamic("windowRemoved")(windowRemoved)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowAdded = windowAdded, windowRemoved = windowRemoved)
+  
     __obj.asInstanceOf[XVclContainerListener]
   }
 }

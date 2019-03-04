@@ -83,14 +83,8 @@ object NativeMethodsMixinStatic {
     refs: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.Component[_, _, _]],
     setNativeProps: js.Function1[js.Object, scala.Unit]
   ): NativeMethodsMixinStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("measure")(measure)
-    __obj.updateDynamic("measureInWindow")(measureInWindow)
-    __obj.updateDynamic("measureLayout")(measureLayout)
-    __obj.updateDynamic("refs")(refs)
-    __obj.updateDynamic("setNativeProps")(setNativeProps)
+    val __obj = js.Dynamic.literal(blur = blur, focus = focus, measure = measure, measureInWindow = measureInWindow, measureLayout = measureLayout, refs = refs, setNativeProps = setNativeProps)
+  
     __obj.asInstanceOf[NativeMethodsMixinStatic]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Context {
     context: winrtLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationContext,
     isValid: scala.Boolean
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(context = context, isValid = isValid)
+  
     __obj.asInstanceOf[Anon_Context]
   }
 }

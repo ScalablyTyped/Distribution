@@ -22,12 +22,8 @@ object QueryContext {
     queryOptions: QueryOptions,
     url: java.lang.String
   ): QueryContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataService")(dataService)
-    __obj.updateDynamic("entityManager")(entityManager)
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    __obj.updateDynamic("queryOptions")(queryOptions)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(dataService = dataService, entityManager = entityManager, query = query.asInstanceOf[js.Any], queryOptions = queryOptions, url = url)
+  
     __obj.asInstanceOf[QueryContext]
   }
 }

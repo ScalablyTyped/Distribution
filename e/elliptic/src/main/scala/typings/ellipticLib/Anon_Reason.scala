@@ -13,9 +13,8 @@ trait Anon_Reason extends js.Object {
 object Anon_Reason {
   @scala.inline
   def apply(reason: java.lang.String, result: scala.Boolean): Anon_Reason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(reason = reason, result = result)
+  
     __obj.asInstanceOf[Anon_Reason]
   }
 }

@@ -21,8 +21,7 @@ object TxDataPayable {
     to: java.lang.String = null,
     value: bignumberDotJsLib.bignumberDotJsMod.default = null
   ): TxDataPayable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
     if (data != null) __obj.updateDynamic("data")(data)
     if (gas != null) __obj.updateDynamic("gas")(gas.asInstanceOf[js.Any])
     if (gasPrice != null) __obj.updateDynamic("gasPrice")(gasPrice.asInstanceOf[js.Any])

@@ -34,18 +34,8 @@ object Application_EPostageInsertEx_Parameter {
     xaWidth: scala.Double,
     yaHeight: scala.Double
   ): Application_EPostageInsertEx_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("bstrPaperFeed")(bstrPaperFeed)
-    __obj.updateDynamic("bstrPrinterName")(bstrPrinterName)
-    __obj.updateDynamic("cpDeliveryAddrEnd")(cpDeliveryAddrEnd)
-    __obj.updateDynamic("cpDeliveryAddrStart")(cpDeliveryAddrStart)
-    __obj.updateDynamic("cpReturnAddrEnd")(cpReturnAddrEnd)
-    __obj.updateDynamic("cpReturnAddrStart")(cpReturnAddrStart)
-    __obj.updateDynamic("fCancel")(fCancel)
-    __obj.updateDynamic("fPrint")(fPrint)
-    __obj.updateDynamic("xaWidth")(xaWidth)
-    __obj.updateDynamic("yaHeight")(yaHeight)
+    val __obj = js.Dynamic.literal(Doc = Doc, bstrPaperFeed = bstrPaperFeed, bstrPrinterName = bstrPrinterName, cpDeliveryAddrEnd = cpDeliveryAddrEnd, cpDeliveryAddrStart = cpDeliveryAddrStart, cpReturnAddrEnd = cpReturnAddrEnd, cpReturnAddrStart = cpReturnAddrStart, fCancel = fCancel, fPrint = fPrint, xaWidth = xaWidth, yaHeight = yaHeight)
+  
     __obj.asInstanceOf[Application_EPostageInsertEx_Parameter]
   }
 }

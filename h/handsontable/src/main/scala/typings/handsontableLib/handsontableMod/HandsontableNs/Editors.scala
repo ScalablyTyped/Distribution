@@ -54,20 +54,8 @@ object Editors {
     getEditor: js.Function2[java.lang.String, handsontableLib.handsontableMod.Handsontable, js.Any],
     registerEditor: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Editors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutocompleteEditor")(AutocompleteEditor)
-    __obj.updateDynamic("BaseEditor")(BaseEditor)
-    __obj.updateDynamic("CheckboxEditor")(CheckboxEditor)
-    __obj.updateDynamic("DateEditor")(DateEditor)
-    __obj.updateDynamic("DropdownEditor")(DropdownEditor)
-    __obj.updateDynamic("HandsontableEditor")(HandsontableEditor)
-    __obj.updateDynamic("MobileEditor")(MobileEditor)
-    __obj.updateDynamic("NumericEditor")(NumericEditor)
-    __obj.updateDynamic("PasswordEditor")(PasswordEditor)
-    __obj.updateDynamic("SelectEditor")(SelectEditor)
-    __obj.updateDynamic("TextEditor")(TextEditor)
-    __obj.updateDynamic("getEditor")(getEditor)
-    __obj.updateDynamic("registerEditor")(registerEditor)
+    val __obj = js.Dynamic.literal(AutocompleteEditor = AutocompleteEditor, BaseEditor = BaseEditor, CheckboxEditor = CheckboxEditor, DateEditor = DateEditor, DropdownEditor = DropdownEditor, HandsontableEditor = HandsontableEditor, MobileEditor = MobileEditor, NumericEditor = NumericEditor, PasswordEditor = PasswordEditor, SelectEditor = SelectEditor, TextEditor = TextEditor, getEditor = getEditor, registerEditor = registerEditor)
+  
     __obj.asInstanceOf[Editors]
   }
 }

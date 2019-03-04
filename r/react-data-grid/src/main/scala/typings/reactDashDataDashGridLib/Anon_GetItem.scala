@@ -18,10 +18,8 @@ object Anon_GetItem {
     getPosition: js.Function0[js.Any],
     hideMenu: js.Function0[scala.Unit]
   ): Anon_GetItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("hideMenu")(hideMenu)
+    val __obj = js.Dynamic.literal(getItem = getItem, getPosition = getPosition, hideMenu = hideMenu)
+  
     __obj.asInstanceOf[Anon_GetItem]
   }
 }

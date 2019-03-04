@@ -12,8 +12,8 @@ trait Anon_MatchBare extends js.Object {
 object Anon_MatchBare {
   @scala.inline
   def apply(matchBare: scala.Boolean): Anon_MatchBare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchBare")(matchBare)
+    val __obj = js.Dynamic.literal(matchBare = matchBare)
+  
     __obj.asInstanceOf[Anon_MatchBare]
   }
 }

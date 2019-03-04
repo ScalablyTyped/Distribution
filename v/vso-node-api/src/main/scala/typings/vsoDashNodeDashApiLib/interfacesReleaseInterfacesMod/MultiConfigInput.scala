@@ -17,11 +17,8 @@ object MultiConfigInput {
     multipliers: java.lang.String,
     parallelExecutionType: ParallelExecutionTypes
   ): MultiConfigInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("maxNumberOfAgents")(maxNumberOfAgents)
-    __obj.updateDynamic("multipliers")(multipliers)
-    __obj.updateDynamic("parallelExecutionType")(parallelExecutionType)
+    val __obj = js.Dynamic.literal(continueOnError = continueOnError, maxNumberOfAgents = maxNumberOfAgents, multipliers = multipliers, parallelExecutionType = parallelExecutionType)
+  
     __obj.asInstanceOf[MultiConfigInput]
   }
 }

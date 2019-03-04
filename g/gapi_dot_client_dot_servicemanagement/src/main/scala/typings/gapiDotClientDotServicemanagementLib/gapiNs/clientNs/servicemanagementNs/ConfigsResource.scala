@@ -54,11 +54,8 @@ object ConfigsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ConfigsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("submit")(submit)
+    val __obj = js.Dynamic.literal(create = create, get = get, list = list, submit = submit)
+  
     __obj.asInstanceOf[ConfigsResource]
   }
 }

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait LodashProp extends js.Object {
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashProp5x1 = js.native
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath, `object`: js.Any): js.Any = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`): LodashProp5x2 = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Any): LodashProp6x2 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__): LodashProp5x2 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__, `object`: js.Any): LodashProp6x2 = js.native
   def apply(path: scala.Double): LodashProp3x1 = js.native
-  def apply[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`, `object`: TObject): LodashProp2x2[TObject] = js.native
+  def apply[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.__, `object`: TObject): LodashProp2x2[TObject] = js.native
   def apply[T](
-    path: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashProp4x2[T] = js.native
   def apply[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native

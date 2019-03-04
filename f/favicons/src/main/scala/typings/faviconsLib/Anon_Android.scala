@@ -36,15 +36,8 @@ object Anon_Android {
     windows: scala.Boolean | Anon_BackgroundString,
     yandex: scala.Boolean | Anon_BackgroundString
   ): Anon_Android = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("android")(android.asInstanceOf[js.Any])
-    __obj.updateDynamic("appleIcon")(appleIcon.asInstanceOf[js.Any])
-    __obj.updateDynamic("appleStartup")(appleStartup.asInstanceOf[js.Any])
-    __obj.updateDynamic("coast")(coast.asInstanceOf[js.Any])
-    __obj.updateDynamic("favicons")(favicons)
-    __obj.updateDynamic("firefox")(firefox.asInstanceOf[js.Any])
-    __obj.updateDynamic("windows")(windows.asInstanceOf[js.Any])
-    __obj.updateDynamic("yandex")(yandex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(android = android.asInstanceOf[js.Any], appleIcon = appleIcon.asInstanceOf[js.Any], appleStartup = appleStartup.asInstanceOf[js.Any], coast = coast.asInstanceOf[js.Any], favicons = favicons, firefox = firefox.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any], yandex = yandex.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Android]
   }
 }

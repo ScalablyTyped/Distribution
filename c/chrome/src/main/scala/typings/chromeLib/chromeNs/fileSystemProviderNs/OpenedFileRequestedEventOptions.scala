@@ -13,10 +13,8 @@ trait OpenedFileRequestedEventOptions extends RequestedEventOptions {
 object OpenedFileRequestedEventOptions {
   @scala.inline
   def apply(fileSystemId: java.lang.String, openRequestId: scala.Double, requestId: scala.Double): OpenedFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("openRequestId")(openRequestId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, openRequestId = openRequestId, requestId = requestId)
+  
     __obj.asInstanceOf[OpenedFileRequestedEventOptions]
   }
 }

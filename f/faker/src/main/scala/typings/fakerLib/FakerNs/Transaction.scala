@@ -24,12 +24,8 @@ object Transaction {
     name: java.lang.String,
     `type`: java.lang.String
   ): Transaction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("business")(business)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(account = account, amount = amount, business = business, date = date, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Transaction]
   }
 }

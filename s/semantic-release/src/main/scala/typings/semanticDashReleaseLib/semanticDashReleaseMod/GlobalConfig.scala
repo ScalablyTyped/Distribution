@@ -24,10 +24,7 @@ object GlobalConfig {
     tagFormat: java.lang.String,
     prepare: js.Any = null
   ): GlobalConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("repositoryUrl")(repositoryUrl)
-    __obj.updateDynamic("tagFormat")(tagFormat)
+    val __obj = js.Dynamic.literal(branch = branch, repositoryUrl = repositoryUrl, tagFormat = tagFormat)
     if (prepare != null) __obj.updateDynamic("prepare")(prepare)
     __obj.asInstanceOf[GlobalConfig]
   }

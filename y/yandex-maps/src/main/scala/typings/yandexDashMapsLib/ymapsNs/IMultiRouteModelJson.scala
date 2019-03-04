@@ -13,9 +13,8 @@ trait IMultiRouteModelJson extends js.Object {
 object IMultiRouteModelJson {
   @scala.inline
   def apply(params: IMultiRouteParams, referencePoints: js.Array[IMultiRouteReferencePoint]): IMultiRouteModelJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("referencePoints")(referencePoints)
+    val __obj = js.Dynamic.literal(params = params, referencePoints = referencePoints)
+  
     __obj.asInstanceOf[IMultiRouteModelJson]
   }
 }

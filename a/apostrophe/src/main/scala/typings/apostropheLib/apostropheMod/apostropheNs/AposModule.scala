@@ -16,9 +16,8 @@ object AposModule {
     emit: js.Function1[java.lang.String, scala.Unit],
     on: js.Function3[java.lang.String, js.Any, js.Function0[_], scala.Unit]
   ): AposModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(emit = emit, on = on)
+  
     __obj.asInstanceOf[AposModule]
   }
 }

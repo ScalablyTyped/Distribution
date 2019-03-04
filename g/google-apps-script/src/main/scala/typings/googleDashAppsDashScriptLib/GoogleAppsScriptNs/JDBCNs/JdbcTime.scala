@@ -32,17 +32,8 @@ object JdbcTime {
     setSeconds: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit],
     setTime: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
   ): JdbcTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("getHours")(getHours)
-    __obj.updateDynamic("getMinutes")(getMinutes)
-    __obj.updateDynamic("getSeconds")(getSeconds)
-    __obj.updateDynamic("getTime")(getTime)
-    __obj.updateDynamic("setHours")(setHours)
-    __obj.updateDynamic("setMinutes")(setMinutes)
-    __obj.updateDynamic("setSeconds")(setSeconds)
-    __obj.updateDynamic("setTime")(setTime)
+    val __obj = js.Dynamic.literal(after = after, before = before, getHours = getHours, getMinutes = getMinutes, getSeconds = getSeconds, getTime = getTime, setHours = setHours, setMinutes = setMinutes, setSeconds = setSeconds, setTime = setTime)
+  
     __obj.asInstanceOf[JdbcTime]
   }
 }

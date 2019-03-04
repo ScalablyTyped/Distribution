@@ -14,10 +14,8 @@ trait Anon_Iterations extends js.Object {
 object Anon_Iterations {
   @scala.inline
   def apply(iterations: scala.Double, message: java.lang.String, solution: Scalar | Vector): Anon_Iterations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("solution")(solution.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(iterations = iterations, message = message, solution = solution.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Iterations]
   }
 }

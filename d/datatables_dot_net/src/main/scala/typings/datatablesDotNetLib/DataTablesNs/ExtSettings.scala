@@ -67,31 +67,8 @@ object ExtSettings {
     selector: js.Object,
     `type`: ExtTypeSettings
   ): ExtSettings = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aTypes")(aTypes)
-    __obj.updateDynamic("afnFiltering")(afnFiltering)
-    __obj.updateDynamic("afnSortData")(afnSortData)
-    __obj.updateDynamic("aoFeatures")(aoFeatures)
-    __obj.updateDynamic("builder")(builder)
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("errMode")(errMode)
-    __obj.updateDynamic("feature")(feature)
-    __obj.updateDynamic("fnVersionCheck")(fnVersionCheck)
-    __obj.updateDynamic("iApiIndex")(iApiIndex)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("legacy")(legacy)
-    __obj.updateDynamic("oApi")(oApi)
-    __obj.updateDynamic("oJUIClasses")(oJUIClasses)
-    __obj.updateDynamic("oPagination")(oPagination)
-    __obj.updateDynamic("oSort")(oSort)
-    __obj.updateDynamic("oStdClasses")(oStdClasses)
-    __obj.updateDynamic("ofnSearch")(ofnSearch)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("pager")(pager)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("sVersion")(sVersion)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(aTypes = aTypes, afnFiltering = afnFiltering, afnSortData = afnSortData, aoFeatures = aoFeatures, builder = builder, classes = classes, errMode = errMode, feature = feature, fnVersionCheck = fnVersionCheck, iApiIndex = iApiIndex, internal = internal, legacy = legacy, oApi = oApi, oJUIClasses = oJUIClasses, oPagination = oPagination, oSort = oSort, oStdClasses = oStdClasses, ofnSearch = ofnSearch, order = order, pager = pager, renderer = renderer, sVersion = sVersion, search = search, selector = selector)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExtSettings]
   }
 }

@@ -20,8 +20,7 @@ object WrapperConfig {
     autoReset: js.UndefOr[scala.Boolean] = js.undefined,
     namespace: java.lang.String = null
   ): WrapperConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(model = model)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (!js.isUndefined(autoReset)) __obj.updateDynamic("autoReset")(autoReset)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)

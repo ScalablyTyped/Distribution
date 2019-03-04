@@ -108,22 +108,8 @@ object XUndoManagerListener {
     resetAll: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     undoActionAdded: js.Function1[UndoManagerEvent, scala.Unit]
   ): XUndoManagerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("actionRedone")(actionRedone)
-    __obj.updateDynamic("actionUndone")(actionUndone)
-    __obj.updateDynamic("allActionsCleared")(allActionsCleared)
-    __obj.updateDynamic("cancelledContext")(cancelledContext)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("enteredContext")(enteredContext)
-    __obj.updateDynamic("enteredHiddenContext")(enteredHiddenContext)
-    __obj.updateDynamic("leftContext")(leftContext)
-    __obj.updateDynamic("leftHiddenContext")(leftHiddenContext)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("redoActionsCleared")(redoActionsCleared)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resetAll")(resetAll)
-    __obj.updateDynamic("undoActionAdded")(undoActionAdded)
+    val __obj = js.Dynamic.literal(acquire = acquire, actionRedone = actionRedone, actionUndone = actionUndone, allActionsCleared = allActionsCleared, cancelledContext = cancelledContext, disposing = disposing, enteredContext = enteredContext, enteredHiddenContext = enteredHiddenContext, leftContext = leftContext, leftHiddenContext = leftHiddenContext, queryInterface = queryInterface, redoActionsCleared = redoActionsCleared, release = release, resetAll = resetAll, undoActionAdded = undoActionAdded)
+  
     __obj.asInstanceOf[XUndoManagerListener]
   }
 }

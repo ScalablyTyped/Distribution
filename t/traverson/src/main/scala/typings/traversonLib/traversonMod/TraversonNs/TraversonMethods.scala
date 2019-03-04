@@ -16,9 +16,8 @@ object TraversonMethods {
     from: js.Function1[java.lang.String, Builder],
     registerMediaType: js.Function2[java.lang.String, js.Any, TraversonMethods]
   ): TraversonMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("registerMediaType")(registerMediaType)
+    val __obj = js.Dynamic.literal(from = from, registerMediaType = registerMediaType)
+  
     __obj.asInstanceOf[TraversonMethods]
   }
 }

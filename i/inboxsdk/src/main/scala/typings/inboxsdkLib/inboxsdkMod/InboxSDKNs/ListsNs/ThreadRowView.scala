@@ -54,24 +54,8 @@ object ThreadRowView {
     replaceDate: js.Function1[ThreadRowDateDescriptor, scala.Unit],
     replaceDraftLabel: js.Function1[ThreadRowDraftLabelDescriptor, scala.Unit]
   ): ThreadRowView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addActionButton")(addActionButton)
-    __obj.updateDynamic("addAttachmentIcon")(addAttachmentIcon)
-    __obj.updateDynamic("addButton")(addButton)
-    __obj.updateDynamic("addImage")(addImage)
-    __obj.updateDynamic("addLabel")(addLabel)
-    __obj.updateDynamic("destroyed")(destroyed)
-    __obj.updateDynamic("getContacts")(getContacts)
-    __obj.updateDynamic("getDateString")(getDateString)
-    __obj.updateDynamic("getDraftID")(getDraftID)
-    __obj.updateDynamic("getSubject")(getSubject)
-    __obj.updateDynamic("getThreadIDAsync")(getThreadIDAsync)
-    __obj.updateDynamic("getThreadIDIfStableAsync")(getThreadIDIfStableAsync)
-    __obj.updateDynamic("getVisibleDraftCount")(getVisibleDraftCount)
-    __obj.updateDynamic("getVisibleMessageCount")(getVisibleMessageCount)
+    val __obj = js.Dynamic.literal(addActionButton = addActionButton, addAttachmentIcon = addAttachmentIcon, addButton = addButton, addImage = addImage, addLabel = addLabel, destroyed = destroyed, getContacts = getContacts, getDateString = getDateString, getDraftID = getDraftID, getSubject = getSubject, getThreadIDAsync = getThreadIDAsync, getThreadIDIfStableAsync = getThreadIDIfStableAsync, getVisibleDraftCount = getVisibleDraftCount, getVisibleMessageCount = getVisibleMessageCount, replaceDate = replaceDate, replaceDraftLabel = replaceDraftLabel)
     __obj.updateDynamic("on")(on_destroy)
-    __obj.updateDynamic("replaceDate")(replaceDate)
-    __obj.updateDynamic("replaceDraftLabel")(replaceDraftLabel)
     __obj.asInstanceOf[ThreadRowView]
   }
 }

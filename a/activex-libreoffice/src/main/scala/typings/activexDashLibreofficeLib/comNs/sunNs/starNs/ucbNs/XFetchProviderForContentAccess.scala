@@ -47,13 +47,8 @@ object XFetchProviderForContentAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFetchProviderForContentAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("fetchContentIdentifierStrings")(fetchContentIdentifierStrings)
-    __obj.updateDynamic("fetchContentIdentifiers")(fetchContentIdentifiers)
-    __obj.updateDynamic("fetchContents")(fetchContents)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, fetchContentIdentifierStrings = fetchContentIdentifierStrings, fetchContentIdentifiers = fetchContentIdentifiers, fetchContents = fetchContents, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFetchProviderForContentAccess]
   }
 }

@@ -16,9 +16,8 @@ object Anon_0 {
     height: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`0`,
     width: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`0`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

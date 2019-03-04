@@ -48,24 +48,8 @@ object Token {
     tag: java.lang.String,
     `type`: java.lang.String
   ): Token = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attrGet")(attrGet)
-    __obj.updateDynamic("attrIndex")(attrIndex)
-    __obj.updateDynamic("attrJoin")(attrJoin)
-    __obj.updateDynamic("attrPush")(attrPush)
-    __obj.updateDynamic("attrSet")(attrSet)
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("markup")(markup)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("nesting")(nesting)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(attrGet = attrGet, attrIndex = attrIndex, attrJoin = attrJoin, attrPush = attrPush, attrSet = attrSet, attrs = attrs, block = block, children = children, content = content, hidden = hidden, info = info, level = level, map = map, markup = markup, meta = meta, nesting = nesting, tag = tag)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Token]
   }
 }

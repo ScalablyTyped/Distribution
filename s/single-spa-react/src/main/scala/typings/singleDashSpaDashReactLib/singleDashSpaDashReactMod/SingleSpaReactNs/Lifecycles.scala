@@ -18,10 +18,8 @@ object Lifecycles {
     mount: js.Function1[js.Any, js.Promise[scala.Unit]],
     unmount: js.Function1[js.Any, js.Promise[scala.Unit]]
   ): Lifecycles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bootstrap")(bootstrap)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("unmount")(unmount)
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap, mount = mount, unmount = unmount)
+  
     __obj.asInstanceOf[Lifecycles]
   }
 }

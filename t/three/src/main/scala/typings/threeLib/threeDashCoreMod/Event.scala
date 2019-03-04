@@ -18,7 +18,8 @@ object Event {
     StringDictionary: /* attachment */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     target: js.Any = null
   ): Event = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[Event]

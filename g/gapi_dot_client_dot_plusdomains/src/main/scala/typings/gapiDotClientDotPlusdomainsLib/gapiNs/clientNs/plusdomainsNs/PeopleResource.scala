@@ -36,11 +36,8 @@ object PeopleResource {
       gapiDotClientLib.gapiNs.clientNs.Request[PeopleFeed]
     ]
   ): PeopleResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listByActivity")(listByActivity)
-    __obj.updateDynamic("listByCircle")(listByCircle)
+    val __obj = js.Dynamic.literal(get = get, list = list, listByActivity = listByActivity, listByCircle = listByCircle)
+  
     __obj.asInstanceOf[PeopleResource]
   }
 }

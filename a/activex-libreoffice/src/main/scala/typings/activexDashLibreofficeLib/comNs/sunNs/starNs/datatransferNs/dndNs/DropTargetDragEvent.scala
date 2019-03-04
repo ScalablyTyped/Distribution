@@ -47,14 +47,8 @@ object DropTargetDragEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     SourceActions: scala.Double
   ): DropTargetDragEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DropAction")(DropAction)
-    __obj.updateDynamic("Dummy")(Dummy)
-    __obj.updateDynamic("LocationX")(LocationX)
-    __obj.updateDynamic("LocationY")(LocationY)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("SourceActions")(SourceActions)
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions)
+  
     __obj.asInstanceOf[DropTargetDragEvent]
   }
 }

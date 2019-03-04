@@ -24,13 +24,8 @@ object Anon_BLOB {
     JSON: java.lang.String,
     TEXT: java.lang.String
   ): Anon_BLOB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BLOB")(BLOB)
-    __obj.updateDynamic("BUFFER")(BUFFER)
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("DOCUMENT")(DOCUMENT)
-    __obj.updateDynamic("JSON")(JSON)
-    __obj.updateDynamic("TEXT")(TEXT)
+    val __obj = js.Dynamic.literal(BLOB = BLOB, BUFFER = BUFFER, DEFAULT = DEFAULT, DOCUMENT = DOCUMENT, JSON = JSON, TEXT = TEXT)
+  
     __obj.asInstanceOf[Anon_BLOB]
   }
 }

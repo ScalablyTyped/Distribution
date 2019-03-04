@@ -16,9 +16,8 @@ object Anon_ClearTimeout {
     clearTimeout: js.Function1[scala.Double, scala.Unit],
     setTimeout: js.Function1[js.Function0[_], scala.Double]
   ): Anon_ClearTimeout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearTimeout")(clearTimeout)
-    __obj.updateDynamic("setTimeout")(setTimeout)
+    val __obj = js.Dynamic.literal(clearTimeout = clearTimeout, setTimeout = setTimeout)
+  
     __obj.asInstanceOf[Anon_ClearTimeout]
   }
 }

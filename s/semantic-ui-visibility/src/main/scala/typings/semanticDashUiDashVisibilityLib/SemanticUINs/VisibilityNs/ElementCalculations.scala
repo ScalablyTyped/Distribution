@@ -40,22 +40,7 @@ object ElementCalculations {
     width: scala.Double,
     margin: semanticDashUiDashVisibilityLib.Anon_Bottom = null
   ): ElementCalculations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("bottomPassed")(bottomPassed)
-    __obj.updateDynamic("bottomVisible")(bottomVisible)
-    __obj.updateDynamic("fits")(fits)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("offScreen")(offScreen)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("onScreen")(onScreen)
-    __obj.updateDynamic("passing")(passing)
-    __obj.updateDynamic("percentagePassed")(percentagePassed)
-    __obj.updateDynamic("pixelsPassed")(pixelsPassed)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("topPassed")(topPassed)
-    __obj.updateDynamic("topVisible")(topVisible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, bottomPassed = bottomPassed, bottomVisible = bottomVisible, fits = fits, height = height, offScreen = offScreen, offset = offset, onScreen = onScreen, passing = passing, percentagePassed = percentagePassed, pixelsPassed = pixelsPassed, top = top, topPassed = topPassed, topVisible = topVisible, width = width)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     __obj.asInstanceOf[ElementCalculations]
   }

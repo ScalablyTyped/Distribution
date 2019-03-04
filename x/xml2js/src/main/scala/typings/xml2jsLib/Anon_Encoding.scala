@@ -18,8 +18,7 @@ object Anon_Encoding {
     encoding: java.lang.String = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
     __obj.asInstanceOf[Anon_Encoding]

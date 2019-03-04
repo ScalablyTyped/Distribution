@@ -12,8 +12,8 @@ trait IAnnotation extends js.Object {
 object IAnnotation {
   @scala.inline
   def apply(annotationType: java.lang.String): IAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
+    val __obj = js.Dynamic.literal(annotationType = annotationType)
+  
     __obj.asInstanceOf[IAnnotation]
   }
 }

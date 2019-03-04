@@ -58,13 +58,9 @@ object ICollectionObserverSplice {
     `type`: aureliaDashBindingLib.aureliaDashBindingLibStrings.add | aureliaDashBindingLib.aureliaDashBindingLibStrings.delete | aureliaDashBindingLib.aureliaDashBindingLibStrings.update | aureliaDashBindingLib.aureliaDashBindingLibStrings.clear,
     value: T
   ): ICollectionObserverSplice[T, K] = {
-    val __obj = js.Dynamic.literal(`object` = `object`.asInstanceOf[js.Any], `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("addedCount")(addedCount)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, key = key.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], removed = removed, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollectionObserverSplice[T, K]]
   }
 }

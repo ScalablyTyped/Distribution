@@ -12,8 +12,8 @@ trait FlushableChannel[T] extends js.Object {
 object FlushableChannel {
   @scala.inline
   def apply[T](flush: js.Function1[js.Function1[/* items */ js.Array[T] | END, scala.Unit], scala.Unit]): FlushableChannel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flush")(flush)
+    val __obj = js.Dynamic.literal(flush = flush)
+  
     __obj.asInstanceOf[FlushableChannel[T]]
   }
 }

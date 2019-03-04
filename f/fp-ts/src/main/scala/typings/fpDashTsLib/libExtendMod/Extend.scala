@@ -25,10 +25,8 @@ object Extend {
       fpDashTsLib.libHKTMod.HKT[F, js.Any]
     ]
   ): Extend[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = extend, map = map)
+  
     __obj.asInstanceOf[Extend[F]]
   }
 }

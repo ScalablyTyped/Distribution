@@ -36,24 +36,8 @@ object TableChart {
     setName: js.Function1[java.lang.String, scala.Unit],
     setRanges: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress], scala.Unit]
   ): TableChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EmbeddedObject")(EmbeddedObject)
-    __obj.updateDynamic("HasColumnHeaders")(HasColumnHeaders)
-    __obj.updateDynamic("HasRowHeaders")(HasRowHeaders)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Ranges")(Ranges)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEmbeddedObject")(getEmbeddedObject)
-    __obj.updateDynamic("getHasColumnHeaders")(getHasColumnHeaders)
-    __obj.updateDynamic("getHasRowHeaders")(getHasRowHeaders)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setHasColumnHeaders")(setHasColumnHeaders)
-    __obj.updateDynamic("setHasRowHeaders")(setHasRowHeaders)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setRanges")(setRanges)
+    val __obj = js.Dynamic.literal(EmbeddedObject = EmbeddedObject, HasColumnHeaders = HasColumnHeaders, HasRowHeaders = HasRowHeaders, Name = Name, Ranges = Ranges, acquire = acquire, getEmbeddedObject = getEmbeddedObject, getHasColumnHeaders = getHasColumnHeaders, getHasRowHeaders = getHasRowHeaders, getName = getName, getRanges = getRanges, queryInterface = queryInterface, release = release, setHasColumnHeaders = setHasColumnHeaders, setHasRowHeaders = setHasRowHeaders, setName = setName, setRanges = setRanges)
+  
     __obj.asInstanceOf[TableChart]
   }
 }

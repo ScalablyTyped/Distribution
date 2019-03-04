@@ -26,8 +26,7 @@ object Message {
     unfurl_links: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji)

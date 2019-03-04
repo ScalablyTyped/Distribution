@@ -13,9 +13,8 @@ trait Anon_Secret extends js.Object {
 object Anon_Secret {
   @scala.inline
   def apply(secret: java.lang.String, serial: java.lang.String): Anon_Secret = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("serial")(serial)
+    val __obj = js.Dynamic.literal(secret = secret, serial = serial)
+  
     __obj.asInstanceOf[Anon_Secret]
   }
 }

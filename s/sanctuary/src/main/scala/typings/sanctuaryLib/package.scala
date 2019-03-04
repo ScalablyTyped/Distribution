@@ -8,14 +8,14 @@ package object sanctuaryLib {
   type FiniteNumber = scala.Double
   type Fn[A, B] = js.Function1[/* a */ A, B]
   type Fn2[A, B, C] = js.Function1[/* a */ A, js.Function1[/* b */ B, C]]
-  type `Fn2_`[A, B, C] = js.Function2[/* a */ A, /* b */ B, C]
+  type Fn2_[A, B, C] = js.Function2[/* a */ A, /* b */ B, C]
   type Fn3[A, B, C, D] = js.Function1[/* a */ A, js.Function1[/* b */ B, js.Function1[/* c */ C, D]]]
-  type `Fn3_`[A, B, C, D] = js.Function3[/* a */ A, /* b */ B, /* c */ C, D]
+  type Fn3_[A, B, C, D] = js.Function3[/* a */ A, /* b */ B, /* c */ C, D]
   type Fn4[A, B, C, D, E] = js.Function1[
     /* a */ A, 
     js.Function1[/* b */ B, js.Function1[/* c */ C, js.Function1[/* d */ D, E]]]
   ]
-  type `Fn4_`[A, B, C, D, E] = js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]
+  type Fn4_[A, B, C, D, E] = js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]
   type Fn5[A, B, C, D, E, F] = js.Function1[
     /* a */ A, 
     js.Function1[
@@ -23,7 +23,7 @@ package object sanctuaryLib {
       js.Function1[/* c */ C, js.Function1[/* d */ D, js.Function1[/* e */ E, F]]]
     ]
   ]
-  type `Fn5_`[A, B, C, D, E, F] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]
+  type Fn5_[A, B, C, D, E, F] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, F]
   type Integer = scala.Double
   type NonNegativeInteger = scala.Double
   type NonZeroFiniteNumber = scala.Double

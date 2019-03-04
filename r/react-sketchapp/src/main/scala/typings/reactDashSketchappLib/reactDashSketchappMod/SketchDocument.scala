@@ -20,11 +20,8 @@ object SketchDocument {
     documentData: js.Function0[SketchDocumentData],
     pages: js.Function0[js.Array[SketchPage]]
   ): SketchDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBlankPage")(addBlankPage)
-    __obj.updateDynamic("currentPage")(currentPage)
-    __obj.updateDynamic("documentData")(documentData)
-    __obj.updateDynamic("pages")(pages)
+    val __obj = js.Dynamic.literal(addBlankPage = addBlankPage, currentPage = currentPage, documentData = documentData, pages = pages)
+  
     __obj.asInstanceOf[SketchDocument]
   }
 }

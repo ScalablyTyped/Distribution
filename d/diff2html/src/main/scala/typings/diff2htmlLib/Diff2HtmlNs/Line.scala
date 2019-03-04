@@ -20,10 +20,8 @@ object Line {
     oldNumber: scala.Double,
     `type`: java.lang.String
   ): Line = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("newNumber")(newNumber)
-    __obj.updateDynamic("oldNumber")(oldNumber)
+    val __obj = js.Dynamic.literal(content = content, newNumber = newNumber, oldNumber = oldNumber)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Line]
   }
 }

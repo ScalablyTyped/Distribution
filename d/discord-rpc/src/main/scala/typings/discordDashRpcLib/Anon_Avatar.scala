@@ -20,11 +20,8 @@ object Anon_Avatar {
     id: java.lang.String,
     username: java.lang.String
   ): Anon_Avatar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("discriminator")(discriminator)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(avatar = avatar, discriminator = discriminator, id = id, username = username)
+  
     __obj.asInstanceOf[Anon_Avatar]
   }
 }

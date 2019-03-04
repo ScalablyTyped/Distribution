@@ -20,11 +20,8 @@ object Anon_BOTTOM {
     OVERLAP: reactDashMdLib.reactDashMdLibStrings.overlap,
     TOP: reactDashMdLib.reactDashMdLibStrings.top
   ): Anon_BOTTOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("OVERLAP")(OVERLAP)
-    __obj.updateDynamic("TOP")(TOP)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, CENTER = CENTER, OVERLAP = OVERLAP, TOP = TOP)
+  
     __obj.asInstanceOf[Anon_BOTTOM]
   }
 }

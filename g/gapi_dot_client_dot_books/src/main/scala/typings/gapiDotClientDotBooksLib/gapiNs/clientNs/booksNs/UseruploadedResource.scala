@@ -18,8 +18,8 @@ object UseruploadedResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
     ]
   ): UseruploadedResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[UseruploadedResource]
   }
 }

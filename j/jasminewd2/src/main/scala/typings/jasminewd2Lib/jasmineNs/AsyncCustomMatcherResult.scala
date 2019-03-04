@@ -13,8 +13,7 @@ trait AsyncCustomMatcherResult extends js.Object {
 object AsyncCustomMatcherResult {
   @scala.inline
   def apply(pass: scala.Boolean | js.Promise[scala.Boolean], message: java.lang.String = null): AsyncCustomMatcherResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pass")(pass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pass = pass.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[AsyncCustomMatcherResult]
   }

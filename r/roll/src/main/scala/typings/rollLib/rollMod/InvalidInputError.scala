@@ -18,9 +18,7 @@ object InvalidInputError {
     name: rollLib.rollLibStrings.InvalidInputError,
     stack: java.lang.String = null
   ): InvalidInputError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[InvalidInputError]
   }

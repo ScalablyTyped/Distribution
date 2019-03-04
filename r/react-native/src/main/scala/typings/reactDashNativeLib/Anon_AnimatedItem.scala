@@ -18,8 +18,7 @@ object Anon_AnimatedItem {
     animated: js.UndefOr[scala.Boolean] = js.undefined,
     viewPosition: scala.Int | scala.Double = null
   ): Anon_AnimatedItem[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (viewPosition != null) __obj.updateDynamic("viewPosition")(viewPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AnimatedItem[ItemT]]

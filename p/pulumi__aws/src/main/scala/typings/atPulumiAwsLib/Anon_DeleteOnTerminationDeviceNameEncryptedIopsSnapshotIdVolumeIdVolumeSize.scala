@@ -28,8 +28,7 @@ object Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeIdVolumeSi
     volumeSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     volumeType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeIdVolumeSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
     if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])

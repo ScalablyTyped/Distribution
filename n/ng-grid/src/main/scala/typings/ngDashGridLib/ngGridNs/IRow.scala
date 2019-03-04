@@ -50,26 +50,8 @@ object IRow {
     toggleSelected: js.Function1[js.Any, scala.Boolean],
     utils: js.Any
   ): IRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
-    __obj.updateDynamic("alternatingRowClass")(alternatingRowClass)
-    __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("continueSelection")(continueSelection)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("ensureEntity")(ensureEntity)
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("getProperty")(getProperty)
-    __obj.updateDynamic("offsetTop")(offsetTop)
-    __obj.updateDynamic("rowDisplayIndex")(rowDisplayIndex)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("selectionProvider")(selectionProvider)
-    __obj.updateDynamic("setSelection")(setSelection)
-    __obj.updateDynamic("setVars")(setVars)
-    __obj.updateDynamic("toggleSelected")(toggleSelected)
-    __obj.updateDynamic("utils")(utils)
+    val __obj = js.Dynamic.literal(afterSelectionChange = afterSelectionChange, alternatingRowClass = alternatingRowClass, beforeSelectionChange = beforeSelectionChange, config = config, continueSelection = continueSelection, copy = copy, cursor = cursor, ensureEntity = ensureEntity, entity = entity, getProperty = getProperty, offsetTop = offsetTop, rowDisplayIndex = rowDisplayIndex, rowIndex = rowIndex, selected = selected, selectionProvider = selectionProvider, setSelection = setSelection, setVars = setVars, toggleSelected = toggleSelected, utils = utils)
+  
     __obj.asInstanceOf[IRow]
   }
 }

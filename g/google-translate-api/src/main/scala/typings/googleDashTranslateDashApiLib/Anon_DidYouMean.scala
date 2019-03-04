@@ -13,9 +13,8 @@ trait Anon_DidYouMean extends js.Object {
 object Anon_DidYouMean {
   @scala.inline
   def apply(didYouMean: scala.Boolean, iso: java.lang.String): Anon_DidYouMean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("didYouMean")(didYouMean)
-    __obj.updateDynamic("iso")(iso)
+    val __obj = js.Dynamic.literal(didYouMean = didYouMean, iso = iso)
+  
     __obj.asInstanceOf[Anon_DidYouMean]
   }
 }

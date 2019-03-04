@@ -26,8 +26,7 @@ object culture {
     namtiveName: java.lang.String = null,
     numberFormat: formatSettings = null
   ): culture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRTL")(isRTL)
+    val __obj = js.Dynamic.literal(isRTL = isRTL)
     if (calendars != null) __obj.updateDynamic("calendars")(calendars)
     if (englishName != null) __obj.updateDynamic("englishName")(englishName)
     if (language != null) __obj.updateDynamic("language")(language)

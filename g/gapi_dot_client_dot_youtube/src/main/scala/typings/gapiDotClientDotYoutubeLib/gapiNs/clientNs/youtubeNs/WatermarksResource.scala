@@ -24,9 +24,8 @@ object WatermarksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): WatermarksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("unset")(unset)
+    val __obj = js.Dynamic.literal(set = set, unset = unset)
+  
     __obj.asInstanceOf[WatermarksResource]
   }
 }

@@ -32,10 +32,8 @@ object IPointerPointTransform {
     ],
     tryTransform: js.Function1[winrtDashUwpLib.WindowsNs.FoundationNs.Point, winrtDashUwpLib.Anon_OutPoint]
   ): IPointerPointTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("transformBounds")(transformBounds)
-    __obj.updateDynamic("tryTransform")(tryTransform)
+    val __obj = js.Dynamic.literal(inverse = inverse, transformBounds = transformBounds, tryTransform = tryTransform)
+  
     __obj.asInstanceOf[IPointerPointTransform]
   }
 }

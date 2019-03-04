@@ -25,7 +25,8 @@ object JSONSchemaObjectType {
     additionalProperties: JSONSchemaObjectType = null,
     properties: org.scalablytyped.runtime.StringDictionary[JSONSchemaBasicType | JSONSchemaRefType] = null
   ): JSONSchemaObjectType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[JSONSchemaObjectType]

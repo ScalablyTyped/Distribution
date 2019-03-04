@@ -42,13 +42,8 @@ object DashboardDataAxisNamesStatic {
     PivotRowAxis: java.lang.String,
     SparklineAxis: java.lang.String
   ): DashboardDataAxisNamesStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartArgumentAxis")(ChartArgumentAxis)
-    __obj.updateDynamic("ChartSeriesAxis")(ChartSeriesAxis)
-    __obj.updateDynamic("DefaultAxis")(DefaultAxis)
-    __obj.updateDynamic("PivotColumnAxis")(PivotColumnAxis)
-    __obj.updateDynamic("PivotRowAxis")(PivotRowAxis)
-    __obj.updateDynamic("SparklineAxis")(SparklineAxis)
+    val __obj = js.Dynamic.literal(ChartArgumentAxis = ChartArgumentAxis, ChartSeriesAxis = ChartSeriesAxis, DefaultAxis = DefaultAxis, PivotColumnAxis = PivotColumnAxis, PivotRowAxis = PivotRowAxis, SparklineAxis = SparklineAxis)
+  
     __obj.asInstanceOf[DashboardDataAxisNamesStatic]
   }
 }

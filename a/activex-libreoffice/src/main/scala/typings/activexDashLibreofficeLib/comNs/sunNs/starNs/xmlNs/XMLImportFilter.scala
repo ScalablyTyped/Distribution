@@ -44,25 +44,8 @@ object XMLImportFilter {
       scala.Unit
     ]
   ): XMLImportFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setTargetDocument")(setTargetDocument)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startElement")(startElement)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, cancel = cancel, characters = characters, endDocument = endDocument, endElement = endElement, filter = filter, getName = getName, ignorableWhitespace = ignorableWhitespace, initialize = initialize, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, setName = setName, setTargetDocument = setTargetDocument, startDocument = startDocument, startElement = startElement)
+  
     __obj.asInstanceOf[XMLImportFilter]
   }
 }

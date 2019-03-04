@@ -69,19 +69,8 @@ object Review {
     userDisplayName: java.lang.String,
     userId: java.lang.String
   ): Review = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminReply")(adminReply)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("isIgnored")(isIgnored)
-    __obj.updateDynamic("productVersion")(productVersion)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("reply")(reply)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updatedDate")(updatedDate)
-    __obj.updateDynamic("userDisplayName")(userDisplayName)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(adminReply = adminReply, id = id, isDeleted = isDeleted, isIgnored = isIgnored, productVersion = productVersion, rating = rating, reply = reply, text = text, title = title, updatedDate = updatedDate, userDisplayName = userDisplayName, userId = userId)
+  
     __obj.asInstanceOf[Review]
   }
 }

@@ -32,8 +32,8 @@ object CoveragebucketsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListCoverageBucketsResponse]
     ]
   ): CoveragebucketsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[CoveragebucketsResource]
   }
 }

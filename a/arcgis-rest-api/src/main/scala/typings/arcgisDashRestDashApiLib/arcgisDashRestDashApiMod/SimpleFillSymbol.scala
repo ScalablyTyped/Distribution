@@ -22,7 +22,8 @@ object SimpleFillSymbol {
     outline: SimpleLineSymbol = null,
     style: SimpleFillSymbolStyle = null
   ): SimpleFillSymbol = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (color != null) __obj.updateDynamic("color")(color)
     if (outline != null) __obj.updateDynamic("outline")(outline)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -27,8 +27,8 @@ object InputMediaVideo {
     supports_streaming: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): InputMediaVideo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("media")(media)
+    val __obj = js.Dynamic.literal(media = media)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

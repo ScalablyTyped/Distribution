@@ -58,17 +58,8 @@ object XView {
     setGraphics: js.Function1[XGraphics, scala.Boolean],
     setZoom: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Graphics")(Graphics)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("getGraphics")(getGraphics)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setGraphics")(setGraphics)
-    __obj.updateDynamic("setZoom")(setZoom)
+    val __obj = js.Dynamic.literal(Graphics = Graphics, Size = Size, acquire = acquire, draw = draw, getGraphics = getGraphics, getSize = getSize, queryInterface = queryInterface, release = release, setGraphics = setGraphics, setZoom = setZoom)
+  
     __obj.asInstanceOf[XView]
   }
 }

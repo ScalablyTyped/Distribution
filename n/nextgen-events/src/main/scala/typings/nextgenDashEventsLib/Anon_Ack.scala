@@ -14,10 +14,8 @@ trait Anon_Ack extends js.Object {
 object Anon_Ack {
   @scala.inline
   def apply(ack: scala.Boolean, emit: scala.Boolean, listen: scala.Boolean): Anon_Ack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ack")(ack)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("listen")(listen)
+    val __obj = js.Dynamic.literal(ack = ack, emit = emit, listen = listen)
+  
     __obj.asInstanceOf[Anon_Ack]
   }
 }

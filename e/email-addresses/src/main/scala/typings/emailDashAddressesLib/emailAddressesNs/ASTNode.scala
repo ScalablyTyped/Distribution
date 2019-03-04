@@ -20,11 +20,8 @@ object ASTNode {
     semantic: java.lang.String,
     tokens: java.lang.String
   ): ASTNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("semantic")(semantic)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(children = children, name = name, semantic = semantic, tokens = tokens)
+  
     __obj.asInstanceOf[ASTNode]
   }
 }

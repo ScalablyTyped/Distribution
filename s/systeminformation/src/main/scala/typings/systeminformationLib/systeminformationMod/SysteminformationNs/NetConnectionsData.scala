@@ -24,13 +24,8 @@ object NetConnectionsData {
     protocol: java.lang.String,
     state: java.lang.String
   ): NetConnectionsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localaddress")(localaddress)
-    __obj.updateDynamic("localport")(localport)
-    __obj.updateDynamic("peeraddress")(peeraddress)
-    __obj.updateDynamic("peerport")(peerport)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(localaddress = localaddress, localport = localport, peeraddress = peeraddress, peerport = peerport, protocol = protocol, state = state)
+  
     __obj.asInstanceOf[NetConnectionsData]
   }
 }

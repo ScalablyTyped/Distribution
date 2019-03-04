@@ -26,14 +26,8 @@ object Anon_IsBlockDevice {
     isSocket: js.Function0[scala.Boolean],
     isSymbolicLink: js.Function0[scala.Boolean]
   ): Anon_IsBlockDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isBlockDevice")(isBlockDevice)
-    __obj.updateDynamic("isCharacterDevice")(isCharacterDevice)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("isFIFO")(isFIFO)
-    __obj.updateDynamic("isFile")(isFile)
-    __obj.updateDynamic("isSocket")(isSocket)
-    __obj.updateDynamic("isSymbolicLink")(isSymbolicLink)
+    val __obj = js.Dynamic.literal(isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink)
+  
     __obj.asInstanceOf[Anon_IsBlockDevice]
   }
 }

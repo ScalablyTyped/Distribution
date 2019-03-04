@@ -28,8 +28,7 @@ object Anon_ArgName {
     fetcher: graphqlDashToolsLib.distStitchingMakeRemoteExecutableSchemaMod.Fetcher = null,
     link: apolloDashLinkLib.apolloDashLinkMod.ApolloLink = null
   ): Anon_ArgName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
     if (createResolver != null) __obj.updateDynamic("createResolver")(createResolver)
     if (fetcher != null) __obj.updateDynamic("fetcher")(fetcher)
     if (link != null) __obj.updateDynamic("link")(link)

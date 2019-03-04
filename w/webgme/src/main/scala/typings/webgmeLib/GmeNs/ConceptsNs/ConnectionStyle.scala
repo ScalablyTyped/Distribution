@@ -13,9 +13,8 @@ trait ConnectionStyle extends js.Object {
 object ConnectionStyle {
   @scala.inline
   def apply(endArrow: java.lang.String, startArrow: java.lang.String): ConnectionStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endArrow")(endArrow)
-    __obj.updateDynamic("startArrow")(startArrow)
+    val __obj = js.Dynamic.literal(endArrow = endArrow, startArrow = startArrow)
+  
     __obj.asInstanceOf[ConnectionStyle]
   }
 }

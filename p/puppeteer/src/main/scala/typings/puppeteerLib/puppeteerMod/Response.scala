@@ -54,20 +54,8 @@ object Response {
     text: js.Function0[js.Promise[java.lang.String]],
     url: js.Function0[java.lang.String]
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("frame")(frame)
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("fromServiceWorker")(fromServiceWorker)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(buffer = buffer, frame = frame, fromCache = fromCache, fromServiceWorker = fromServiceWorker, headers = headers, json = json, ok = ok, remoteAddress = remoteAddress, request = request, status = status, statusText = statusText, text = text, url = url)
+  
     __obj.asInstanceOf[Response]
   }
 }

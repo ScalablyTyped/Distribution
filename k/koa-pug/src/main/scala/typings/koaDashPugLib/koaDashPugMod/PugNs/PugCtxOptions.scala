@@ -23,8 +23,7 @@ object PugCtxOptions {
     pretty: js.UndefOr[scala.Boolean] = js.undefined,
     viewPath: java.lang.String = null
   ): PugCtxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromString")(fromString)
+    val __obj = js.Dynamic.literal(fromString = fromString)
     if (app != null) __obj.updateDynamic("app")(app)
     if (basedir != null) __obj.updateDynamic("basedir")(basedir)
     if (!js.isUndefined(compileDebug)) __obj.updateDynamic("compileDebug")(compileDebug)

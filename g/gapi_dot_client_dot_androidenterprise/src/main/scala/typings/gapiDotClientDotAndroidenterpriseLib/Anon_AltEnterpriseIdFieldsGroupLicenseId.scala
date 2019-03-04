@@ -42,9 +42,7 @@ object Anon_AltEnterpriseIdFieldsGroupLicenseId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEnterpriseIdFieldsGroupLicenseId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enterpriseId")(enterpriseId)
-    __obj.updateDynamic("groupLicenseId")(groupLicenseId)
+    val __obj = js.Dynamic.literal(enterpriseId = enterpriseId, groupLicenseId = groupLicenseId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

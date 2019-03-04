@@ -66,15 +66,8 @@ object XSpellChecker {
       XSpellAlternatives
     ]
   ): XSpellChecker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("spell")(spell)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, getLocales = getLocales, hasLocale = hasLocale, isValid = isValid, queryInterface = queryInterface, release = release, spell = spell)
+  
     __obj.asInstanceOf[XSpellChecker]
   }
 }

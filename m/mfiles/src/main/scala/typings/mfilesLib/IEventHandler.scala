@@ -26,14 +26,8 @@ object IEventHandler {
     GetID: js.Function0[scala.Double],
     VBScript: java.lang.String
   ): IEventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Active")(Active)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("EventType")(EventType)
-    __obj.updateDynamic("GUID")(GUID)
-    __obj.updateDynamic("GetID")(GetID)
-    __obj.updateDynamic("VBScript")(VBScript)
+    val __obj = js.Dynamic.literal(Active = Active, Clone = Clone, Description = Description, EventType = EventType, GUID = GUID, GetID = GetID, VBScript = VBScript)
+  
     __obj.asInstanceOf[IEventHandler]
   }
 }

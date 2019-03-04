@@ -13,9 +13,8 @@ trait DataCountWidgetHTML extends js.Object {
 object DataCountWidgetHTML {
   @scala.inline
   def apply(all: java.lang.String, some: java.lang.String): DataCountWidgetHTML = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("some")(some)
+    val __obj = js.Dynamic.literal(all = all, some = some)
+  
     __obj.asInstanceOf[DataCountWidgetHTML]
   }
 }

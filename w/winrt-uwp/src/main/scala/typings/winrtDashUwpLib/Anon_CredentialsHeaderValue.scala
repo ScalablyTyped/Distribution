@@ -16,9 +16,8 @@ object Anon_CredentialsHeaderValue {
     credentialsHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCredentialsHeaderValue,
     returnValue: scala.Boolean
   ): Anon_CredentialsHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credentialsHeaderValue")(credentialsHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_CredentialsHeaderValue]
   }
 }

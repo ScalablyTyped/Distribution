@@ -46,9 +46,7 @@ object ListrTask {
       scala.Boolean | js.Promise[scala.Boolean] | java.lang.String | scala.Unit
     ] = null
   ): ListrTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(task = task, title = title)
     if (enabled != null) __obj.updateDynamic("enabled")(enabled)
     if (output != null) __obj.updateDynamic("output")(output)
     if (skip != null) __obj.updateDynamic("skip")(skip)

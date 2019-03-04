@@ -43,22 +43,8 @@ object CellRangeListSource {
       scala.Unit
     ]
   ): CellRangeListSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllListEntries")(AllListEntries)
-    __obj.updateDynamic("CellRange")(CellRange)
-    __obj.updateDynamic("ListEntryCount")(ListEntryCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addListEntryListener")(addListEntryListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAllListEntries")(getAllListEntries)
-    __obj.updateDynamic("getListEntry")(getListEntry)
-    __obj.updateDynamic("getListEntryCount")(getListEntryCount)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeListEntryListener")(removeListEntryListener)
+    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, CellRange = CellRange, ListEntryCount = ListEntryCount, acquire = acquire, addEventListener = addEventListener, addListEntryListener = addListEntryListener, dispose = dispose, getAllListEntries = getAllListEntries, getListEntry = getListEntry, getListEntryCount = getListEntryCount, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeListEntryListener = removeListEntryListener)
+  
     __obj.asInstanceOf[CellRangeListSource]
   }
 }

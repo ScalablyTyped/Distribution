@@ -24,13 +24,8 @@ object PaginatedResult {
     items: js.Array[T],
     next: js.Function1[paginatedResultCallback[T], scala.Unit]
   ): PaginatedResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("isLast")(isLast)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(current = current, first = first, hasNext = hasNext, isLast = isLast, items = items, next = next)
+  
     __obj.asInstanceOf[PaginatedResult[T]]
   }
 }

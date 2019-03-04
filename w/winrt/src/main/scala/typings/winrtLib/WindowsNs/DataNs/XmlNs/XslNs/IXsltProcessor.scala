@@ -12,8 +12,8 @@ trait IXsltProcessor extends js.Object {
 object IXsltProcessor {
   @scala.inline
   def apply(transformToString: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.IXmlNode, java.lang.String]): IXsltProcessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transformToString")(transformToString)
+    val __obj = js.Dynamic.literal(transformToString = transformToString)
+  
     __obj.asInstanceOf[IXsltProcessor]
   }
 }

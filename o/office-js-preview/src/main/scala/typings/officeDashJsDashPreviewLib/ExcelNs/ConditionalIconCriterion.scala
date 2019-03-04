@@ -50,9 +50,8 @@ object ConditionalIconCriterion {
     `type`: ConditionalFormatIconRuleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Formula | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percentile,
     customIcon: Icon = null
   ): ConditionalIconCriterion = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("formula")(formula)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula = formula, operator = operator.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (customIcon != null) __obj.updateDynamic("customIcon")(customIcon)
     __obj.asInstanceOf[ConditionalIconCriterion]
   }

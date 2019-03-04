@@ -34,8 +34,7 @@ object InfiniteScrollerProps {
     showLoader: js.UndefOr[scala.Boolean] = js.undefined,
     threshold: scala.Int | scala.Double = null
   ): InfiniteScrollerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadMore")(loadMore)
+    val __obj = js.Dynamic.literal(loadMore = loadMore)
     if (children != null) __obj.updateDynamic("children")(children)
     if (containerHeight != null) __obj.updateDynamic("containerHeight")(containerHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(elementIsScrollable)) __obj.updateDynamic("elementIsScrollable")(elementIsScrollable)

@@ -15,8 +15,8 @@ trait ParentRequest extends js.Object {
 object ParentRequest {
   @scala.inline
   def apply(parent: java.lang.String): ParentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
+  
     __obj.asInstanceOf[ParentRequest]
   }
 }

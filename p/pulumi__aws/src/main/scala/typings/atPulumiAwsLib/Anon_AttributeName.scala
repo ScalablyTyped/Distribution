@@ -13,9 +13,8 @@ trait Anon_AttributeName extends js.Object {
 object Anon_AttributeName {
   @scala.inline
   def apply(attributeName: java.lang.String, enabled: scala.Boolean): Anon_AttributeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(attributeName = attributeName, enabled = enabled)
+  
     __obj.asInstanceOf[Anon_AttributeName]
   }
 }

@@ -12,13 +12,13 @@ class ValidationPath protected () extends js.Object {
     * @param {!Path} path Initial Path.
     * @param {string} errorPrefix_ Prefix for any error messages.
     */
-  def this(path: Path, `errorPrefix_`: java.lang.String) = this()
+  def this(path: Path, errorPrefix_ : java.lang.String) = this()
   /** @type {number} Initialize to number of '/' chars needed in path. */
-  var `byteLength_`: js.Any = js.native
-  var `checkValid_`: js.Any = js.native
-  var `errorPrefix_`: js.Any = js.native
+  var byteLength_ : js.Any = js.native
+  var checkValid_ : js.Any = js.native
+  var errorPrefix_ : js.Any = js.native
   /** @type {!Array<string>} */
-  var `parts_`: js.Any = js.native
+  var parts_ : js.Any = js.native
   def pop(): scala.Unit = js.native
   /** @param {string} child */
   def push(child: java.lang.String): scala.Unit = js.native

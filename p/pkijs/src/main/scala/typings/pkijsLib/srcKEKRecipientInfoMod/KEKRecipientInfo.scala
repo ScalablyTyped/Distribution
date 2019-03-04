@@ -28,15 +28,8 @@ object KEKRecipientInfo {
     toSchema: js.Function0[js.Any],
     version: scala.Double
   ): KEKRecipientInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptedKey")(encryptedKey)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("kekid")(kekid)
-    __obj.updateDynamic("keyEncryptionAlgorithm")(keyEncryptionAlgorithm)
-    __obj.updateDynamic("preDefinedKEK")(preDefinedKEK)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = fromSchema, kekid = kekid, keyEncryptionAlgorithm = keyEncryptionAlgorithm, preDefinedKEK = preDefinedKEK, toJSON = toJSON, toSchema = toSchema, version = version)
+  
     __obj.asInstanceOf[KEKRecipientInfo]
   }
 }

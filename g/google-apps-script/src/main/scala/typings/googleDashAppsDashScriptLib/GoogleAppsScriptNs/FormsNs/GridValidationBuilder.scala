@@ -12,8 +12,8 @@ trait GridValidationBuilder extends js.Object {
 object GridValidationBuilder {
   @scala.inline
   def apply(requireLimitOneResponsePerColumn: js.Function0[GridValidationBuilder]): GridValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireLimitOneResponsePerColumn")(requireLimitOneResponsePerColumn)
+    val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = requireLimitOneResponsePerColumn)
+  
     __obj.asInstanceOf[GridValidationBuilder]
   }
 }

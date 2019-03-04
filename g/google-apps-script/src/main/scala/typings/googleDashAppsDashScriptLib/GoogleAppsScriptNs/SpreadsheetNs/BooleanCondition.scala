@@ -28,15 +28,8 @@ object BooleanCondition {
     getStrikethrough: js.Function0[scala.Boolean],
     getUnderline: js.Function0[scala.Boolean]
   ): BooleanCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBackground")(getBackground)
-    __obj.updateDynamic("getBold")(getBold)
-    __obj.updateDynamic("getCriteriaType")(getCriteriaType)
-    __obj.updateDynamic("getCriteriaValues")(getCriteriaValues)
-    __obj.updateDynamic("getFontColor")(getFontColor)
-    __obj.updateDynamic("getItalic")(getItalic)
-    __obj.updateDynamic("getStrikethrough")(getStrikethrough)
-    __obj.updateDynamic("getUnderline")(getUnderline)
+    val __obj = js.Dynamic.literal(getBackground = getBackground, getBold = getBold, getCriteriaType = getCriteriaType, getCriteriaValues = getCriteriaValues, getFontColor = getFontColor, getItalic = getItalic, getStrikethrough = getStrikethrough, getUnderline = getUnderline)
+  
     __obj.asInstanceOf[BooleanCondition]
   }
 }

@@ -60,26 +60,8 @@ object NamedRange {
     setReferencePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
     setType: js.Function1[scala.Double, scala.Unit]
   ): NamedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("IsSharedFormula")(IsSharedFormula)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReferencePosition")(ReferencePosition)
-    __obj.updateDynamic("ReferredCells")(ReferredCells)
-    __obj.updateDynamic("TokenIndex")(TokenIndex)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getReferencePosition")(getReferencePosition)
-    __obj.updateDynamic("getReferredCells")(getReferredCells)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setReferencePosition")(setReferencePosition)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(Content = Content, IsSharedFormula = IsSharedFormula, Name = Name, ReferencePosition = ReferencePosition, ReferredCells = ReferredCells, TokenIndex = TokenIndex, Type = Type, acquire = acquire, getContent = getContent, getName = getName, getReferencePosition = getReferencePosition, getReferredCells = getReferredCells, getType = getType, queryInterface = queryInterface, release = release, setContent = setContent, setName = setName, setReferencePosition = setReferencePosition, setType = setType)
+  
     __obj.asInstanceOf[NamedRange]
   }
 }

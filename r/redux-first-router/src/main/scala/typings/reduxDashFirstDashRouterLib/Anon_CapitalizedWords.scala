@@ -50,8 +50,7 @@ object Anon_CapitalizedWords {
       java.lang.String
     ] = null
   ): Anon_CapitalizedWords[TState] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(capitalizedWords)) __obj.updateDynamic("capitalizedWords")(capitalizedWords)
     if (!js.isUndefined(coerceNumbers)) __obj.updateDynamic("coerceNumbers")(coerceNumbers)
     if (confirmLeave != null) __obj.updateDynamic("confirmLeave")(confirmLeave)

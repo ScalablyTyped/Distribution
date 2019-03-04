@@ -23,12 +23,8 @@ object Project {
     read: scala.Boolean,
     write: scala.Boolean
   ): Project = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branches")(branches)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(branches = branches, delete = delete, name = name, read = read, write = write)
+  
     __obj.asInstanceOf[Project]
   }
 }

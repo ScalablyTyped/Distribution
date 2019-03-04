@@ -22,12 +22,8 @@ object Transaction {
     sendBatch: js.Function1[MessageBatchPayload, js.Promise[scala.Unit]],
     sendOffsets: js.Function1[TransactionSendOffsets, js.Promise[scala.Unit]]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("sendBatch")(sendBatch)
-    __obj.updateDynamic("sendOffsets")(sendOffsets)
+    val __obj = js.Dynamic.literal(abort = abort, commit = commit, send = send, sendBatch = sendBatch, sendOffsets = sendOffsets)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

@@ -24,8 +24,7 @@ object LoginOptions {
     method: java.lang.String = null,
     session: OauthSession = null
   ): LoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     if (appId != null) __obj.updateDynamic("appId")(appId)
     if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie)
     if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)

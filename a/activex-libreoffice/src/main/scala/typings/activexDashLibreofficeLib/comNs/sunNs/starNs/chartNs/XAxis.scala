@@ -38,16 +38,8 @@ object XAxis {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AxisTitle")(AxisTitle)
-    __obj.updateDynamic("MajorGrid")(MajorGrid)
-    __obj.updateDynamic("MinorGrid")(MinorGrid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAxisTitle")(getAxisTitle)
-    __obj.updateDynamic("getMajorGrid")(getMajorGrid)
-    __obj.updateDynamic("getMinorGrid")(getMinorGrid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AxisTitle = AxisTitle, MajorGrid = MajorGrid, MinorGrid = MinorGrid, acquire = acquire, getAxisTitle = getAxisTitle, getMajorGrid = getMajorGrid, getMinorGrid = getMinorGrid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAxis]
   }
 }

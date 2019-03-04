@@ -46,24 +46,8 @@ object Anon_CanAddChildren {
     canTrash: scala.Boolean,
     canUntrash: scala.Boolean
   ): Anon_CanAddChildren = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canAddChildren")(canAddChildren)
-    __obj.updateDynamic("canChangeRestrictedDownload")(canChangeRestrictedDownload)
-    __obj.updateDynamic("canComment")(canComment)
-    __obj.updateDynamic("canCopy")(canCopy)
-    __obj.updateDynamic("canDelete")(canDelete)
-    __obj.updateDynamic("canDownload")(canDownload)
-    __obj.updateDynamic("canEdit")(canEdit)
-    __obj.updateDynamic("canListChildren")(canListChildren)
-    __obj.updateDynamic("canMoveItemIntoTeamDrive")(canMoveItemIntoTeamDrive)
-    __obj.updateDynamic("canMoveTeamDriveItem")(canMoveTeamDriveItem)
-    __obj.updateDynamic("canReadRevisions")(canReadRevisions)
-    __obj.updateDynamic("canReadTeamDrive")(canReadTeamDrive)
-    __obj.updateDynamic("canRemoveChildren")(canRemoveChildren)
-    __obj.updateDynamic("canRename")(canRename)
-    __obj.updateDynamic("canShare")(canShare)
-    __obj.updateDynamic("canTrash")(canTrash)
-    __obj.updateDynamic("canUntrash")(canUntrash)
+    val __obj = js.Dynamic.literal(canAddChildren = canAddChildren, canChangeRestrictedDownload = canChangeRestrictedDownload, canComment = canComment, canCopy = canCopy, canDelete = canDelete, canDownload = canDownload, canEdit = canEdit, canListChildren = canListChildren, canMoveItemIntoTeamDrive = canMoveItemIntoTeamDrive, canMoveTeamDriveItem = canMoveTeamDriveItem, canReadRevisions = canReadRevisions, canReadTeamDrive = canReadTeamDrive, canRemoveChildren = canRemoveChildren, canRename = canRename, canShare = canShare, canTrash = canTrash, canUntrash = canUntrash)
+  
     __obj.asInstanceOf[Anon_CanAddChildren]
   }
 }

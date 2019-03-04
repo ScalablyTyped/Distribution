@@ -24,9 +24,7 @@ object UriObject {
     password: java.lang.String = null,
     username: java.lang.String = null
   ): UriObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hosts")(hosts)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(hosts = hosts, scheme = scheme)
     if (database != null) __obj.updateDynamic("database")(database)
     if (options != null) __obj.updateDynamic("options")(options)
     if (password != null) __obj.updateDynamic("password")(password)

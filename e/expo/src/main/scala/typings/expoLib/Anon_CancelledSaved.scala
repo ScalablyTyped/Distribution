@@ -14,8 +14,8 @@ object Anon_CancelledSaved {
   def apply(
     status: expoLib.expoLibStrings.sent | expoLib.expoLibStrings.saved | expoLib.expoLibStrings.cancelled
   ): Anon_CancelledSaved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_CancelledSaved]
   }
 }

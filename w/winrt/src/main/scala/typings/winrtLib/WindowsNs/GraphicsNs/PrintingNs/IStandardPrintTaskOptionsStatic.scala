@@ -38,20 +38,8 @@ object IStandardPrintTaskOptionsStatic {
     printQuality: java.lang.String,
     staple: java.lang.String
   ): IStandardPrintTaskOptionsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binding")(binding)
-    __obj.updateDynamic("collation")(collation)
-    __obj.updateDynamic("colorMode")(colorMode)
-    __obj.updateDynamic("copies")(copies)
-    __obj.updateDynamic("duplex")(duplex)
-    __obj.updateDynamic("holePunch")(holePunch)
-    __obj.updateDynamic("inputBin")(inputBin)
-    __obj.updateDynamic("mediaSize")(mediaSize)
-    __obj.updateDynamic("mediaType")(mediaType)
-    __obj.updateDynamic("nUp")(nUp)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("printQuality")(printQuality)
-    __obj.updateDynamic("staple")(staple)
+    val __obj = js.Dynamic.literal(binding = binding, collation = collation, colorMode = colorMode, copies = copies, duplex = duplex, holePunch = holePunch, inputBin = inputBin, mediaSize = mediaSize, mediaType = mediaType, nUp = nUp, orientation = orientation, printQuality = printQuality, staple = staple)
+  
     __obj.asInstanceOf[IStandardPrintTaskOptionsStatic]
   }
 }

@@ -15,8 +15,8 @@ trait MessageAddedEventDataType extends js.Object {
 object MessageAddedEventDataType {
   @scala.inline
   def apply(message: ConsoleMessage): MessageAddedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[MessageAddedEventDataType]
   }
 }

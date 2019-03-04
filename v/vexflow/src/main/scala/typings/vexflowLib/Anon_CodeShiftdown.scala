@@ -22,12 +22,8 @@ object Anon_CodeShiftdown {
     shift_up: scala.Double,
     width: scala.Double
   ): Anon_CodeShiftdown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("shift_down")(shift_down)
-    __obj.updateDynamic("shift_right")(shift_right)
-    __obj.updateDynamic("shift_up")(shift_up)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(code = code, shift_down = shift_down, shift_right = shift_right, shift_up = shift_up, width = width)
+  
     __obj.asInstanceOf[Anon_CodeShiftdown]
   }
 }

@@ -12,8 +12,8 @@ trait TextData extends js.Object {
 object TextData {
   @scala.inline
   def apply(renderText: js.Any): TextData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderText")(renderText)
+    val __obj = js.Dynamic.literal(renderText = renderText)
+  
     __obj.asInstanceOf[TextData]
   }
 }

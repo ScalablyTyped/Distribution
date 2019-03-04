@@ -19,10 +19,8 @@ import scala.scalajs.js.annotation._
 object IForwardIterator {
   @scala.inline
   def apply[T, Iterator /* <: IForwardIterator[T, Iterator] */](equals: js.Function1[Iterator, scala.Boolean], next: js.Function0[Iterator], value: T): IForwardIterator[T, Iterator] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(equals = equals, next = next, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IForwardIterator[T, Iterator]]
   }
 }

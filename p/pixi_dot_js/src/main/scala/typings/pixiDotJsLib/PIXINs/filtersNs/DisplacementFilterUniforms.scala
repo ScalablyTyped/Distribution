@@ -18,10 +18,8 @@ object DisplacementFilterUniforms {
     mapSampler: pixiDotJsLib.PIXINs.Texture,
     scale: pixiDotJsLib.PIXINs.Point
   ): DisplacementFilterUniforms = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filterMatrix")(filterMatrix)
-    __obj.updateDynamic("mapSampler")(mapSampler)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(filterMatrix = filterMatrix, mapSampler = mapSampler, scale = scale)
+  
     __obj.asInstanceOf[DisplacementFilterUniforms]
   }
 }

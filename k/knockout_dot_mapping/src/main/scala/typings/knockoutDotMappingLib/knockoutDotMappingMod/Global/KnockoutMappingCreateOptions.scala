@@ -13,9 +13,8 @@ trait KnockoutMappingCreateOptions extends js.Object {
 object KnockoutMappingCreateOptions {
   @scala.inline
   def apply(data: js.Any, parent: js.Any): KnockoutMappingCreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(data = data, parent = parent)
+  
     __obj.asInstanceOf[KnockoutMappingCreateOptions]
   }
 }

@@ -16,9 +16,8 @@ object Anon_ContextGraphqlResponse {
     context: TContext,
     graphqlResponse: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse
   ): Anon_ContextGraphqlResponse[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("graphqlResponse")(graphqlResponse)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], graphqlResponse = graphqlResponse)
+  
     __obj.asInstanceOf[Anon_ContextGraphqlResponse[TContext]]
   }
 }

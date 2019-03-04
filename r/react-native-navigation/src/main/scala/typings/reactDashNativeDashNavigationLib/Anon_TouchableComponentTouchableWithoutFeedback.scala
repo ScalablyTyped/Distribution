@@ -14,8 +14,8 @@ object Anon_TouchableComponentTouchableWithoutFeedback {
   def apply(
     touchableComponent: org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback]
   ): Anon_TouchableComponentTouchableWithoutFeedback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("touchableComponent")(touchableComponent)
+    val __obj = js.Dynamic.literal(touchableComponent = touchableComponent)
+  
     __obj.asInstanceOf[Anon_TouchableComponentTouchableWithoutFeedback]
   }
 }

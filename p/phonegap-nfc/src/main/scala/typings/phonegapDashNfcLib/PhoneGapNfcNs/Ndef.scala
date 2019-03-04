@@ -224,37 +224,8 @@ object Ndef {
     uriHelper: UriHelper,
     uriRecord: js.Function2[java.lang.String, js.Array[scala.Double], NdefRecord]
   ): Ndef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RTD_ALTERNATIVE_CARRIER")(RTD_ALTERNATIVE_CARRIER)
-    __obj.updateDynamic("RTD_HANDOVER_CARRIER")(RTD_HANDOVER_CARRIER)
-    __obj.updateDynamic("RTD_HANDOVER_REQUEST")(RTD_HANDOVER_REQUEST)
-    __obj.updateDynamic("RTD_HANDOVER_SELECT")(RTD_HANDOVER_SELECT)
-    __obj.updateDynamic("RTD_SMART_POSTER")(RTD_SMART_POSTER)
-    __obj.updateDynamic("RTD_TEXT")(RTD_TEXT)
-    __obj.updateDynamic("RTD_URI")(RTD_URI)
-    __obj.updateDynamic("TNF_ABSOLUTE_URI")(TNF_ABSOLUTE_URI)
-    __obj.updateDynamic("TNF_EMPTY")(TNF_EMPTY)
-    __obj.updateDynamic("TNF_EXTERNAL_TYPE")(TNF_EXTERNAL_TYPE)
-    __obj.updateDynamic("TNF_MIME_MEDIA")(TNF_MIME_MEDIA)
-    __obj.updateDynamic("TNF_RESERVED")(TNF_RESERVED)
-    __obj.updateDynamic("TNF_UNCHANGED")(TNF_UNCHANGED)
-    __obj.updateDynamic("TNF_UNKNOWN")(TNF_UNKNOWN)
-    __obj.updateDynamic("TNF_WELL_KNOWN")(TNF_WELL_KNOWN)
-    __obj.updateDynamic("absoluteUriRecord")(absoluteUriRecord)
-    __obj.updateDynamic("androidApplicationRecord")(androidApplicationRecord)
-    __obj.updateDynamic("decodeMessage")(decodeMessage)
-    __obj.updateDynamic("decodeTnf")(decodeTnf)
-    __obj.updateDynamic("emptyRecord")(emptyRecord)
-    __obj.updateDynamic("encodeMessage")(encodeMessage)
-    __obj.updateDynamic("encodeTnf")(encodeTnf)
-    __obj.updateDynamic("mimeMediaRecord")(mimeMediaRecord)
-    __obj.updateDynamic("record")(record)
-    __obj.updateDynamic("smartPoster")(smartPoster)
-    __obj.updateDynamic("textHelper")(textHelper)
-    __obj.updateDynamic("textRecord")(textRecord)
-    __obj.updateDynamic("tnfToString")(tnfToString)
-    __obj.updateDynamic("uriHelper")(uriHelper)
-    __obj.updateDynamic("uriRecord")(uriRecord)
+    val __obj = js.Dynamic.literal(RTD_ALTERNATIVE_CARRIER = RTD_ALTERNATIVE_CARRIER, RTD_HANDOVER_CARRIER = RTD_HANDOVER_CARRIER, RTD_HANDOVER_REQUEST = RTD_HANDOVER_REQUEST, RTD_HANDOVER_SELECT = RTD_HANDOVER_SELECT, RTD_SMART_POSTER = RTD_SMART_POSTER, RTD_TEXT = RTD_TEXT, RTD_URI = RTD_URI, TNF_ABSOLUTE_URI = TNF_ABSOLUTE_URI, TNF_EMPTY = TNF_EMPTY, TNF_EXTERNAL_TYPE = TNF_EXTERNAL_TYPE, TNF_MIME_MEDIA = TNF_MIME_MEDIA, TNF_RESERVED = TNF_RESERVED, TNF_UNCHANGED = TNF_UNCHANGED, TNF_UNKNOWN = TNF_UNKNOWN, TNF_WELL_KNOWN = TNF_WELL_KNOWN, absoluteUriRecord = absoluteUriRecord, androidApplicationRecord = androidApplicationRecord, decodeMessage = decodeMessage, decodeTnf = decodeTnf, emptyRecord = emptyRecord, encodeMessage = encodeMessage, encodeTnf = encodeTnf, mimeMediaRecord = mimeMediaRecord, record = record, smartPoster = smartPoster, textHelper = textHelper, textRecord = textRecord, tnfToString = tnfToString, uriHelper = uriHelper, uriRecord = uriRecord)
+  
     __obj.asInstanceOf[Ndef]
   }
 }

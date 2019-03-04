@@ -28,12 +28,8 @@ object XAccessibleEventBroadcaster {
     release: js.Function0[scala.Unit],
     removeAccessibleEventListener: js.Function1[XAccessibleEventListener, scala.Unit]
   ): XAccessibleEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addAccessibleEventListener")(addAccessibleEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAccessibleEventListener")(removeAccessibleEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addAccessibleEventListener = addAccessibleEventListener, queryInterface = queryInterface, release = release, removeAccessibleEventListener = removeAccessibleEventListener)
+  
     __obj.asInstanceOf[XAccessibleEventBroadcaster]
   }
 }

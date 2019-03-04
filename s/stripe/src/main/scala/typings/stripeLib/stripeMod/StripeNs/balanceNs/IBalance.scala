@@ -30,10 +30,8 @@ object IBalance {
     `object`: java.lang.String,
     pending: js.Array[ISourceType]
   ): IBalance = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(available = available, livemode = livemode, pending = pending)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IBalance]
   }
 }

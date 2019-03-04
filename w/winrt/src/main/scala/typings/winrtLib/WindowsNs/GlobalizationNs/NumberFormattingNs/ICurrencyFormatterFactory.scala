@@ -25,9 +25,8 @@ object ICurrencyFormatterFactory {
       CurrencyFormatter
     ]
   ): ICurrencyFormatterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createCurrencyFormatterCode")(createCurrencyFormatterCode)
-    __obj.updateDynamic("createCurrencyFormatterCodeContext")(createCurrencyFormatterCodeContext)
+    val __obj = js.Dynamic.literal(createCurrencyFormatterCode = createCurrencyFormatterCode, createCurrencyFormatterCodeContext = createCurrencyFormatterCodeContext)
+  
     __obj.asInstanceOf[ICurrencyFormatterFactory]
   }
 }

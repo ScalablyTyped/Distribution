@@ -20,8 +20,7 @@ object DrawerSectionProps {
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerIconItem = null,
     title: java.lang.String = null
   ): DrawerSectionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

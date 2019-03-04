@@ -177,23 +177,8 @@ object XIntrospectionAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIntrospectionAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SuppliedMethodConcepts")(SuppliedMethodConcepts)
-    __obj.updateDynamic("SuppliedPropertyConcepts")(SuppliedPropertyConcepts)
-    __obj.updateDynamic("SupportedListeners")(SupportedListeners)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMethod")(getMethod)
-    __obj.updateDynamic("getMethods")(getMethods)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getProperty")(getProperty)
-    __obj.updateDynamic("getSuppliedMethodConcepts")(getSuppliedMethodConcepts)
-    __obj.updateDynamic("getSuppliedPropertyConcepts")(getSuppliedPropertyConcepts)
-    __obj.updateDynamic("getSupportedListeners")(getSupportedListeners)
-    __obj.updateDynamic("hasMethod")(hasMethod)
-    __obj.updateDynamic("hasProperty")(hasProperty)
-    __obj.updateDynamic("queryAdapter")(queryAdapter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SuppliedMethodConcepts = SuppliedMethodConcepts, SuppliedPropertyConcepts = SuppliedPropertyConcepts, SupportedListeners = SupportedListeners, acquire = acquire, getMethod = getMethod, getMethods = getMethods, getProperties = getProperties, getProperty = getProperty, getSuppliedMethodConcepts = getSuppliedMethodConcepts, getSuppliedPropertyConcepts = getSuppliedPropertyConcepts, getSupportedListeners = getSupportedListeners, hasMethod = hasMethod, hasProperty = hasProperty, queryAdapter = queryAdapter, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIntrospectionAccess]
   }
 }

@@ -20,10 +20,7 @@ object Anon_IdS3Schema {
     tableName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     id: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_IdS3Schema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_IdS3Schema]
   }

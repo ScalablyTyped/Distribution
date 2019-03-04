@@ -58,11 +58,8 @@ object TableSelectionChangedEventArgs {
     `type`: officeDashJsLib.officeDashJsLibStrings.TableSelectionChanged,
     worksheetId: java.lang.String
   ): TableSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("isInsideTable")(isInsideTable)
-    __obj.updateDynamic("tableId")(tableId)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(address = address, isInsideTable = isInsideTable, tableId = tableId, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableSelectionChangedEventArgs]
   }
 }

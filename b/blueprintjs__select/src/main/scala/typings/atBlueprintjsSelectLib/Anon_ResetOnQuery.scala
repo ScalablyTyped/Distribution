@@ -12,8 +12,8 @@ trait Anon_ResetOnQuery extends js.Object {
 object Anon_ResetOnQuery {
   @scala.inline
   def apply(resetOnQuery: scala.Boolean): Anon_ResetOnQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resetOnQuery")(resetOnQuery)
+    val __obj = js.Dynamic.literal(resetOnQuery = resetOnQuery)
+  
     __obj.asInstanceOf[Anon_ResetOnQuery]
   }
 }

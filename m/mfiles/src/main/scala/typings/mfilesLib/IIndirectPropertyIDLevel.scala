@@ -20,11 +20,8 @@ object IIndirectPropertyIDLevel {
     LevelType: mfilesLib.MFilesNs.MFIndirectPropertyIDLevelType,
     ToJSON: js.Function0[java.lang.String]
   ): IIndirectPropertyIDLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LevelType")(LevelType)
-    __obj.updateDynamic("ToJSON")(ToJSON)
+    val __obj = js.Dynamic.literal(Clone = Clone, ID = ID, LevelType = LevelType, ToJSON = ToJSON)
+  
     __obj.asInstanceOf[IIndirectPropertyIDLevel]
   }
 }

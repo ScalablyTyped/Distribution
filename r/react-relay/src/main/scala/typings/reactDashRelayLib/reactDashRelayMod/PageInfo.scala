@@ -20,9 +20,7 @@ object PageInfo {
     endCursor: java.lang.String = null,
     startCursor: java.lang.String = null
   ): PageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasNextPage")(hasNextPage)
-    __obj.updateDynamic("hasPreviousPage")(hasPreviousPage)
+    val __obj = js.Dynamic.literal(hasNextPage = hasNextPage, hasPreviousPage = hasPreviousPage)
     if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor)
     if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor)
     __obj.asInstanceOf[PageInfo]

@@ -30,7 +30,8 @@ object PathMark {
     transform: js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms] = null,
     zindex: scala.Int | scala.Double = null
   ): PathMark = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (encode != null) __obj.updateDynamic("encode")(encode)

@@ -14,10 +14,8 @@ trait Clock extends js.Object {
 object Clock {
   @scala.inline
   def apply(instant: js.Function0[Instant], millis: js.Function0[scala.Double], zone: js.Function0[js.Any]): Clock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instant")(instant)
-    __obj.updateDynamic("millis")(millis)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(instant = instant, millis = millis, zone = zone)
+  
     __obj.asInstanceOf[Clock]
   }
 }

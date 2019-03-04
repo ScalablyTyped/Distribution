@@ -13,9 +13,8 @@ trait Anon_AttrCharAttributes extends js.Object {
 object Anon_AttrCharAttributes {
   @scala.inline
   def apply(attr: terminalDashKitLib.screenbufferMod.ScreenBufferNs.Attributes, char: java.lang.String): Anon_AttrCharAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr)
-    __obj.updateDynamic("char")(char)
+    val __obj = js.Dynamic.literal(attr = attr, char = char)
+  
     __obj.asInstanceOf[Anon_AttrCharAttributes]
   }
 }

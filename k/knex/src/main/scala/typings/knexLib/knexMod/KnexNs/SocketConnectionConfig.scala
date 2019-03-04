@@ -22,11 +22,7 @@ object SocketConnectionConfig {
     user: java.lang.String,
     debug: js.UndefOr[scala.Boolean] = js.undefined
   ): SocketConnectionConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("socketPath")(socketPath)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(database = database, password = password, socketPath = socketPath, user = user)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     __obj.asInstanceOf[SocketConnectionConfig]
   }

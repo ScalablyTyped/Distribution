@@ -18,9 +18,7 @@ object Chunk {
     parents: js.Array[java.lang.String],
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Chunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("parents")(parents)
+    val __obj = js.Dynamic.literal(id = id, parents = parents)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Chunk]
   }

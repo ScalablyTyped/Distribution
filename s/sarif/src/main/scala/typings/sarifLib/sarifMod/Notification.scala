@@ -62,8 +62,7 @@ object Notification {
     threadId: scala.Int | scala.Double = null,
     timeUtc: java.lang.String = null
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (exception != null) __obj.updateDynamic("exception")(exception)
     if (id != null) __obj.updateDynamic("id")(id)
     if (level != null) __obj.updateDynamic("level")(level)

@@ -20,11 +20,8 @@ object CanvasTextDrawingStyles {
     textAlign: CanvasTextAlign,
     textBaseline: CanvasTextBaseline
   ): CanvasTextDrawingStyles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("textAlign")(textAlign)
-    __obj.updateDynamic("textBaseline")(textBaseline)
+    val __obj = js.Dynamic.literal(direction = direction, font = font, textAlign = textAlign, textBaseline = textBaseline)
+  
     __obj.asInstanceOf[CanvasTextDrawingStyles]
   }
 }

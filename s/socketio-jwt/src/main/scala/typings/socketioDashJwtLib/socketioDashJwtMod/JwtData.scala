@@ -14,9 +14,8 @@ trait JwtData extends js.Object {
 object JwtData {
   @scala.inline
   def apply(code: java.lang.String, message: java.lang.String, `type`: java.lang.String): JwtData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JwtData]
   }
 }

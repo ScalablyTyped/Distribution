@@ -13,9 +13,8 @@ trait CacheItem extends js.Object {
 object CacheItem {
   @scala.inline
   def apply(createdAt: stdLib.Date, value: js.Any): CacheItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(createdAt = createdAt, value = value)
+  
     __obj.asInstanceOf[CacheItem]
   }
 }

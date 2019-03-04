@@ -146,27 +146,8 @@ object XColumnUpdate {
     updateTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
     updateTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
   ): XColumnUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateBinaryStream")(updateBinaryStream)
-    __obj.updateDynamic("updateBoolean")(updateBoolean)
-    __obj.updateDynamic("updateByte")(updateByte)
-    __obj.updateDynamic("updateBytes")(updateBytes)
-    __obj.updateDynamic("updateCharacterStream")(updateCharacterStream)
-    __obj.updateDynamic("updateDate")(updateDate)
-    __obj.updateDynamic("updateDouble")(updateDouble)
-    __obj.updateDynamic("updateFloat")(updateFloat)
-    __obj.updateDynamic("updateInt")(updateInt)
-    __obj.updateDynamic("updateLong")(updateLong)
-    __obj.updateDynamic("updateNull")(updateNull)
-    __obj.updateDynamic("updateNumericObject")(updateNumericObject)
-    __obj.updateDynamic("updateObject")(updateObject)
-    __obj.updateDynamic("updateShort")(updateShort)
-    __obj.updateDynamic("updateString")(updateString)
-    __obj.updateDynamic("updateTime")(updateTime)
-    __obj.updateDynamic("updateTimestamp")(updateTimestamp)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateBinaryStream = updateBinaryStream, updateBoolean = updateBoolean, updateByte = updateByte, updateBytes = updateBytes, updateCharacterStream = updateCharacterStream, updateDate = updateDate, updateDouble = updateDouble, updateFloat = updateFloat, updateInt = updateInt, updateLong = updateLong, updateNull = updateNull, updateNumericObject = updateNumericObject, updateObject = updateObject, updateShort = updateShort, updateString = updateString, updateTime = updateTime, updateTimestamp = updateTimestamp)
+  
     __obj.asInstanceOf[XColumnUpdate]
   }
 }

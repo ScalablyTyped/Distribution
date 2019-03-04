@@ -52,10 +52,7 @@ object ISourceCreationOptions {
     account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
     routing_number: java.lang.String = null
   ): ISourceCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_number")(account_number)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(account_number = account_number, country = country, currency = currency)
     if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
     if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
     if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)

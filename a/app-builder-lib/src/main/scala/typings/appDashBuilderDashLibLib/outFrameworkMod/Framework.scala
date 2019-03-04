@@ -72,15 +72,7 @@ object Framework {
       java.lang.String | scala.Null
     ] = null
   ): Framework = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultAppIdPrefix")(defaultAppIdPrefix)
-    __obj.updateDynamic("distMacOsAppName")(distMacOsAppName)
-    __obj.updateDynamic("isCopyElevateHelper")(isCopyElevateHelper)
-    __obj.updateDynamic("isNpmRebuildRequired")(isNpmRebuildRequired)
-    __obj.updateDynamic("macOsDefaultTargets")(macOsDefaultTargets)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prepareApplicationStageDirectory")(prepareApplicationStageDirectory)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix, distMacOsAppName = distMacOsAppName, isCopyElevateHelper = isCopyElevateHelper, isNpmRebuildRequired = isNpmRebuildRequired, macOsDefaultTargets = macOsDefaultTargets, name = name, prepareApplicationStageDirectory = prepareApplicationStageDirectory, version = version)
     if (afterPack != null) __obj.updateDynamic("afterPack")(afterPack)
     if (beforeCopyExtraFiles != null) __obj.updateDynamic("beforeCopyExtraFiles")(beforeCopyExtraFiles)
     if (createTransformer != null) __obj.updateDynamic("createTransformer")(createTransformer)

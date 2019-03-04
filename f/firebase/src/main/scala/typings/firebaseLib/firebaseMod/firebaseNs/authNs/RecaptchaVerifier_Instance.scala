@@ -18,10 +18,8 @@ object RecaptchaVerifier_Instance {
     `type`: java.lang.String,
     verify: js.Function0[js.Promise[java.lang.String]]
   ): RecaptchaVerifier_Instance = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(clear = clear, render = render, verify = verify)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RecaptchaVerifier_Instance]
   }
 }

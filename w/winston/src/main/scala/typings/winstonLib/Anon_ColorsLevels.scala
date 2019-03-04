@@ -16,9 +16,8 @@ object Anon_ColorsLevels {
     colors: winstonLib.libWinstonConfigMod.winstonNs.NpmConfigSetColors,
     levels: winstonLib.libWinstonConfigMod.winstonNs.NpmConfigSetLevels
   ): Anon_ColorsLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("levels")(levels)
+    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+  
     __obj.asInstanceOf[Anon_ColorsLevels]
   }
 }

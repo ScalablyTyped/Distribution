@@ -647,7 +647,7 @@ class Application protected () extends js.Object {
   def RecordMacro(BasicCode: java.lang.String): scala.Unit = js.native
   /** This overload prevents recording */
   @JSName("RecordMacro")
-  def `RecordMacro_`(
+  def RecordMacro_(
     BasicCode: activexDashExcelLib.activexDashExcelLibStrings.Empty,
     XlmCode: activexDashExcelLib.activexDashExcelLibStrings.Empty
   ): scala.Unit = js.native

@@ -50,8 +50,7 @@ object DataRequirementDateFilter {
     valueDuration: Duration = null,
     valuePeriod: Period = null
   ): DataRequirementDateFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_path != null) __obj.updateDynamic("_path")(_path)

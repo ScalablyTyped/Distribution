@@ -16,9 +16,8 @@ object Anon_ColumnSortOrder {
     column: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     sortOrder: atPulumiPulumiLib.outputMod.Input[scala.Double]
   ): Anon_ColumnSortOrder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ColumnSortOrder]
   }
 }

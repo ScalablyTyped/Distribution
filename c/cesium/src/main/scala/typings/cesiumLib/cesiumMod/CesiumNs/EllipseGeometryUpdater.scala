@@ -36,30 +36,8 @@ object EllipseGeometryUpdater {
     readonlydistanceDisplayConditionProperty: Property,
     shadowsProperty: Property
   ): EllipseGeometryUpdater = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classificationTypeProperty")(classificationTypeProperty)
-    __obj.updateDynamic("createDynamicUpdater")(createDynamicUpdater)
-    __obj.updateDynamic("createFillGeometryInstance")(createFillGeometryInstance)
-    __obj.updateDynamic("createOutlineGeometryInstance")(createOutlineGeometryInstance)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("fillEnabled")(fillEnabled)
-    __obj.updateDynamic("fillMaterialProperty")(fillMaterialProperty)
-    __obj.updateDynamic("geometryChanged")(geometryChanged)
-    __obj.updateDynamic("hasConstantFill")(hasConstantFill)
-    __obj.updateDynamic("hasConstantOutline")(hasConstantOutline)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("isDynamic")(isDynamic)
-    __obj.updateDynamic("isFilled")(isFilled)
-    __obj.updateDynamic("isOutlineVisible")(isOutlineVisible)
-    __obj.updateDynamic("onTerrain")(onTerrain)
-    __obj.updateDynamic("outlineColorProperty")(outlineColorProperty)
-    __obj.updateDynamic("outlineEnabled")(outlineEnabled)
-    __obj.updateDynamic("outlineWidth")(outlineWidth)
-    __obj.updateDynamic("readonlydistanceDisplayConditionProperty")(readonlydistanceDisplayConditionProperty)
-    __obj.updateDynamic("shadowsProperty")(shadowsProperty)
+    val __obj = js.Dynamic.literal(classificationTypeProperty = classificationTypeProperty, createDynamicUpdater = createDynamicUpdater, createFillGeometryInstance = createFillGeometryInstance, createOutlineGeometryInstance = createOutlineGeometryInstance, destroy = destroy, entity = entity, fillEnabled = fillEnabled, fillMaterialProperty = fillMaterialProperty, geometryChanged = geometryChanged, hasConstantFill = hasConstantFill, hasConstantOutline = hasConstantOutline, id = id, isClosed = isClosed, isDestroyed = isDestroyed, isDynamic = isDynamic, isFilled = isFilled, isOutlineVisible = isOutlineVisible, onTerrain = onTerrain, outlineColorProperty = outlineColorProperty, outlineEnabled = outlineEnabled, outlineWidth = outlineWidth, readonlydistanceDisplayConditionProperty = readonlydistanceDisplayConditionProperty, shadowsProperty = shadowsProperty)
+  
     __obj.asInstanceOf[EllipseGeometryUpdater]
   }
 }

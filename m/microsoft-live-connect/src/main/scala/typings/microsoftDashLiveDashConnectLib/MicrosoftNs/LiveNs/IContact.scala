@@ -78,18 +78,8 @@ object IContact {
     updated_time: java.lang.String,
     user_id: java.lang.String
   ): IContact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("birth_day")(birth_day)
-    __obj.updateDynamic("birth_month")(birth_month)
-    __obj.updateDynamic("email_hashes")(email_hashes)
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_favorite")(is_favorite)
-    __obj.updateDynamic("is_friend")(is_friend)
-    __obj.updateDynamic("last_name")(last_name)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(birth_day = birth_day, birth_month = birth_month, email_hashes = email_hashes, first_name = first_name, id = id, is_favorite = is_favorite, is_friend = is_friend, last_name = last_name, name = name, updated_time = updated_time, user_id = user_id)
+  
     __obj.asInstanceOf[IContact]
   }
 }

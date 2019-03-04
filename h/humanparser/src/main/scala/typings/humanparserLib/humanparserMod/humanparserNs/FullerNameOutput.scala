@@ -12,8 +12,8 @@ trait FullerNameOutput extends js.Object {
 object FullerNameOutput {
   @scala.inline
   def apply(fullName: java.lang.String): FullerNameOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullName")(fullName)
+    val __obj = js.Dynamic.literal(fullName = fullName)
+  
     __obj.asInstanceOf[FullerNameOutput]
   }
 }

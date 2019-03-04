@@ -17,9 +17,8 @@ trait JsonpRequestHandle extends js.Object {
 object JsonpRequestHandle {
   @scala.inline
   def apply(cancel: js.Function0[scala.Unit], id: scala.Double): JsonpRequestHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(cancel = cancel, id = id)
+  
     __obj.asInstanceOf[JsonpRequestHandle]
   }
 }

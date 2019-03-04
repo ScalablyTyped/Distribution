@@ -12,8 +12,8 @@ trait EmitterPipe extends js.Object {
 object EmitterPipe {
   @scala.inline
   def apply(close: js.Function0[scala.Unit]): EmitterPipe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
+    val __obj = js.Dynamic.literal(close = close)
+  
     __obj.asInstanceOf[EmitterPipe]
   }
 }

@@ -13,8 +13,8 @@ trait IPromiseResult[T] extends js.Object {
 object IPromiseResult {
   @scala.inline
   def apply[T](`type`: PromiseResultType, value: T): IPromiseResult[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPromiseResult[T]]
   }
 }

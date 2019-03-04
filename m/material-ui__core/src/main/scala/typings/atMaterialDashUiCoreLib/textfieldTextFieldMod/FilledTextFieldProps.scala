@@ -53,8 +53,7 @@ object FilledTextFieldProps {
     `type`: java.lang.String = null,
     value: (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean = null
   ): FilledTextFieldProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("variant")(variant)
+    val __obj = js.Dynamic.literal(variant = variant)
     if (FormHelperTextProps != null) __obj.updateDynamic("FormHelperTextProps")(FormHelperTextProps)
     if (InputLabelProps != null) __obj.updateDynamic("InputLabelProps")(InputLabelProps)
     if (InputProps != null) __obj.updateDynamic("InputProps")(InputProps)

@@ -38,20 +38,8 @@ object Anon_Author {
     trendingWeekly: scala.Double,
     weightedRating: scala.Double
   ): Anon_Author = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("averageRating")(averageRating)
-    __obj.updateDynamic("installCount")(installCount)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("releaseDate")(releaseDate)
-    __obj.updateDynamic("relevance")(relevance)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("trendingDaily")(trendingDaily)
-    __obj.updateDynamic("trendingMonthly")(trendingMonthly)
-    __obj.updateDynamic("trendingWeekly")(trendingWeekly)
-    __obj.updateDynamic("weightedRating")(weightedRating)
+    val __obj = js.Dynamic.literal(author = author, averageRating = averageRating, installCount = installCount, lastUpdatedDate = lastUpdatedDate, publishedDate = publishedDate, publisher = publisher, releaseDate = releaseDate, relevance = relevance, title = title, trendingDaily = trendingDaily, trendingMonthly = trendingMonthly, trendingWeekly = trendingWeekly, weightedRating = weightedRating)
+  
     __obj.asInstanceOf[Anon_Author]
   }
 }

@@ -42,12 +42,8 @@ object ASPxClientDashboardItemDataAxis {
     GetPointsByDimension: js.Function1[java.lang.String, js.Array[ASPxClientDashboardItemDataAxisPoint]],
     GetRootPoint: js.Function0[ASPxClientDashboardItemDataAxisPoint]
   ): ASPxClientDashboardItemDataAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDimensions")(GetDimensions)
-    __obj.updateDynamic("GetPointByUniqueValues")(GetPointByUniqueValues)
-    __obj.updateDynamic("GetPoints")(GetPoints)
-    __obj.updateDynamic("GetPointsByDimension")(GetPointsByDimension)
-    __obj.updateDynamic("GetRootPoint")(GetRootPoint)
+    val __obj = js.Dynamic.literal(GetDimensions = GetDimensions, GetPointByUniqueValues = GetPointByUniqueValues, GetPoints = GetPoints, GetPointsByDimension = GetPointsByDimension, GetRootPoint = GetRootPoint)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDataAxis]
   }
 }

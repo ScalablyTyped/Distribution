@@ -15,11 +15,8 @@ trait QueueStats extends js.Object {
 object QueueStats {
   @scala.inline
   def apply(average: scala.Double, peak: scala.Double, successRate: scala.Double, total: scala.Double): QueueStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("average")(average)
-    __obj.updateDynamic("peak")(peak)
-    __obj.updateDynamic("successRate")(successRate)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(average = average, peak = peak, successRate = successRate, total = total)
+  
     __obj.asInstanceOf[QueueStats]
   }
 }

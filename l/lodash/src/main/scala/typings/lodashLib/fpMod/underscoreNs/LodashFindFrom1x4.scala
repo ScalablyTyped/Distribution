@@ -12,7 +12,7 @@ trait LodashFindFrom1x4[T] extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
   ): js.UndefOr[T] = js.native
-  def apply(predicate: lodashLib.lodashMod.underscoreNs.`__`, fromIndex: scala.Double): LodashFindFrom1x6[T] = js.native
+  def apply(predicate: lodashLib.lodashMod.underscoreNs.__, fromIndex: scala.Double): LodashFindFrom1x6[T] = js.native
   def apply[S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S]): LodashFindFrom1x5[S] = js.native
   def apply[S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
 }

@@ -35,9 +35,7 @@ object UserLoginProfileArgs {
     passwordLength: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     passwordResetRequired: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): UserLoginProfileArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pgpKey = pgpKey.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     if (passwordLength != null) __obj.updateDynamic("passwordLength")(passwordLength.asInstanceOf[js.Any])
     if (passwordResetRequired != null) __obj.updateDynamic("passwordResetRequired")(passwordResetRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserLoginProfileArgs]

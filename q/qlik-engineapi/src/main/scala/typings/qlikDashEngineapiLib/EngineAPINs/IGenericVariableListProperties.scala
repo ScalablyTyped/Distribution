@@ -15,9 +15,8 @@ trait IGenericVariableListProperties extends IGenericProperties {
 object IGenericVariableListProperties {
   @scala.inline
   def apply(qInfo: INxInfo, qVariableListDef: IVariableListDef): IGenericVariableListProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qVariableListDef")(qVariableListDef)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qVariableListDef = qVariableListDef)
+  
     __obj.asInstanceOf[IGenericVariableListProperties]
   }
 }

@@ -24,11 +24,8 @@ object ItemEvent {
     Selected: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ItemEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Highlighted")(Highlighted)
-    __obj.updateDynamic("ItemId")(ItemId)
-    __obj.updateDynamic("Selected")(Selected)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Highlighted = Highlighted, ItemId = ItemId, Selected = Selected, Source = Source)
+  
     __obj.asInstanceOf[ItemEvent]
   }
 }

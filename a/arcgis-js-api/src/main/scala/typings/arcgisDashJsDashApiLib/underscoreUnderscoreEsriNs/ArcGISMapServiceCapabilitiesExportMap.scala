@@ -44,14 +44,8 @@ object ArcGISMapServiceCapabilitiesExportMap {
     supportsSublayerVisibility: scala.Boolean,
     supportsSublayersChanges: scala.Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsDynamicLayers")(supportsDynamicLayers)
-    __obj.updateDynamic("supportsSublayerDefinitionExpression")(supportsSublayerDefinitionExpression)
-    __obj.updateDynamic("supportsSublayerVisibility")(supportsSublayerVisibility)
-    __obj.updateDynamic("supportsSublayersChanges")(supportsSublayersChanges)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsDynamicLayers = supportsDynamicLayers, supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression, supportsSublayerVisibility = supportsSublayerVisibility, supportsSublayersChanges = supportsSublayersChanges)
+  
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
 }

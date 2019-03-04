@@ -13,9 +13,8 @@ trait AntTreeNodeBaseEvent extends js.Object {
 object AntTreeNodeBaseEvent {
   @scala.inline
   def apply(nativeEvent: reactLib.MouseEvent, node: AntTreeNode): AntTreeNodeBaseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, node = node)
+  
     __obj.asInstanceOf[AntTreeNodeBaseEvent]
   }
 }

@@ -34,12 +34,8 @@ object XSimpleMailClient {
     release: js.Function0[scala.Unit],
     sendSimpleMailMessage: js.Function2[XSimpleMailMessage, scala.Double, scala.Unit]
   ): XSimpleMailClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createSimpleMailMessage")(createSimpleMailMessage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("sendSimpleMailMessage")(sendSimpleMailMessage)
+    val __obj = js.Dynamic.literal(acquire = acquire, createSimpleMailMessage = createSimpleMailMessage, queryInterface = queryInterface, release = release, sendSimpleMailMessage = sendSimpleMailMessage)
+  
     __obj.asInstanceOf[XSimpleMailClient]
   }
 }

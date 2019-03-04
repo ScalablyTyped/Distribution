@@ -34,10 +34,7 @@ object ElevationLayerCreateElevationSamplerOptions {
     demResolution: scala.Double | java.lang.String = null,
     noDataValue: scala.Int | scala.Double = null
   ): ElevationLayerCreateElevationSamplerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
     if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationLayerCreateElevationSamplerOptions]

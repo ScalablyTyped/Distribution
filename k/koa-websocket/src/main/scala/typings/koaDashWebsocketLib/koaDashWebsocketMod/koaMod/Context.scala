@@ -13,9 +13,8 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(path: java.lang.String, websocket: wsLib.wsMod.namespaced): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("websocket")(websocket)
+    val __obj = js.Dynamic.literal(path = path, websocket = websocket)
+  
     __obj.asInstanceOf[Context]
   }
 }

@@ -20,10 +20,7 @@ object CloudWatchLogsLogEvent {
     timestamp: scala.Double,
     extractedFields: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): CloudWatchLogsLogEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, message = message, timestamp = timestamp)
     if (extractedFields != null) __obj.updateDynamic("extractedFields")(extractedFields)
     __obj.asInstanceOf[CloudWatchLogsLogEvent]
   }

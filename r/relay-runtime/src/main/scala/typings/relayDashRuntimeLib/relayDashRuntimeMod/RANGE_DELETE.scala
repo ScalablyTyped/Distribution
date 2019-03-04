@@ -26,9 +26,8 @@ object RANGE_DELETE {
     parentID: java.lang.String = null,
     parentName: java.lang.String = null
   ): RANGE_DELETE = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("deletedIDFieldName")(deletedIDFieldName.asInstanceOf[js.Any])
-    __obj.updateDynamic("pathToConnection")(pathToConnection)
+    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection)
+    __obj.updateDynamic("type")(`type`)
     if (connectionKeys != null) __obj.updateDynamic("connectionKeys")(connectionKeys)
     if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
     if (parentID != null) __obj.updateDynamic("parentID")(parentID)

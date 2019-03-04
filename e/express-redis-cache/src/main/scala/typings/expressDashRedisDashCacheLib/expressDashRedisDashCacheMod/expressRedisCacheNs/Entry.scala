@@ -15,10 +15,8 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(body: java.lang.String, expire: scala.Double, touched: scala.Double, `type`: java.lang.String): Entry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("expire")(expire)
-    __obj.updateDynamic("touched")(touched)
+    val __obj = js.Dynamic.literal(body = body, expire = expire, touched = touched)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Entry]
   }
 }

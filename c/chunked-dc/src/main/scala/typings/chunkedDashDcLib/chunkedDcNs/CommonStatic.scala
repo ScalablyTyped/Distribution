@@ -13,8 +13,8 @@ trait CommonStatic extends js.Object {
 object CommonStatic {
   @scala.inline
   def apply(HEADER_LENGTH: scala.Double): CommonStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HEADER_LENGTH")(HEADER_LENGTH)
+    val __obj = js.Dynamic.literal(HEADER_LENGTH = HEADER_LENGTH)
+  
     __obj.asInstanceOf[CommonStatic]
   }
 }

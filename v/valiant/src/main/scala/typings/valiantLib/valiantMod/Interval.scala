@@ -40,21 +40,8 @@ object Interval {
     toComparator: js.Function2[Endpoint[T], Endpoint[T], scala.Double],
     unify: js.Function1[Interval[T], Interval[T]]
   ): Interval[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("contiguousWith")(contiguousWith)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("fromComparator")(fromComparator)
-    __obj.updateDynamic("hull")(hull)
-    __obj.updateDynamic("intersection")(intersection)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isSubsetOf")(isSubsetOf)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("toComparator")(toComparator)
-    __obj.updateDynamic("unify")(unify)
+    val __obj = js.Dynamic.literal(constructor = constructor, contains = contains, contiguousWith = contiguousWith, empty = empty, equalTo = equalTo, from = from, fromComparator = fromComparator, hull = hull, intersection = intersection, isEmpty = isEmpty, isSubsetOf = isSubsetOf, to = to, toComparator = toComparator, unify = unify)
+  
     __obj.asInstanceOf[Interval[T]]
   }
 }

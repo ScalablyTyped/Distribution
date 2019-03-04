@@ -18,10 +18,8 @@ object colors {
     gray: jsgraphLib.jsgraphLibNumbers.`1`,
     white: jsgraphLib.jsgraphLibNumbers.`0`
   ): colors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("black")(black)
-    __obj.updateDynamic("gray")(gray)
-    __obj.updateDynamic("white")(white)
+    val __obj = js.Dynamic.literal(black = black, gray = gray, white = white)
+  
     __obj.asInstanceOf[colors]
   }
 }

@@ -46,9 +46,8 @@ object TableFilteredEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableFiltered,
     worksheetId: java.lang.String
   ): TableFilteredEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("tableId")(tableId)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(tableId = tableId, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableFilteredEventArgs]
   }
 }

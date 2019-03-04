@@ -37,13 +37,8 @@ object AuxRecord {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     recordvalues: AuxRecordValue
   ): AuxRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("displayProperty")(displayProperty)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("recordvalues")(recordvalues)
+    val __obj = js.Dynamic.literal(constructor = constructor, displayProperty = displayProperty, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, recordvalues = recordvalues)
+  
     __obj.asInstanceOf[AuxRecord]
   }
 }

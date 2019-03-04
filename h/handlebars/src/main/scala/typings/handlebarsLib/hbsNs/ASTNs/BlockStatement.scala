@@ -30,16 +30,8 @@ object BlockStatement {
     program: Program,
     `type`: java.lang.String
   ): BlockStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("closeStrip")(closeStrip)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("inverseStrip")(inverseStrip)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("openStrip")(openStrip)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("program")(program)
+    val __obj = js.Dynamic.literal(closeStrip = closeStrip, hash = hash, inverse = inverse, inverseStrip = inverseStrip, loc = loc, openStrip = openStrip, params = params, path = path, program = program)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BlockStatement]
   }
 }

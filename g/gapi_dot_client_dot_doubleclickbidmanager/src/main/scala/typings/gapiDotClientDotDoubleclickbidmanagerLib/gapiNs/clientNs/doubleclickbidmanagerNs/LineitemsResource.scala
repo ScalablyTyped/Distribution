@@ -24,9 +24,8 @@ object LineitemsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
     ]
   ): LineitemsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downloadlineitems")(downloadlineitems)
-    __obj.updateDynamic("uploadlineitems")(uploadlineitems)
+    val __obj = js.Dynamic.literal(downloadlineitems = downloadlineitems, uploadlineitems = uploadlineitems)
+  
     __obj.asInstanceOf[LineitemsResource]
   }
 }

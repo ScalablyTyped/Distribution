@@ -30,11 +30,7 @@ object URLRecord {
     port: scala.Int | scala.Double = null,
     query: java.lang.String = null
   ): URLRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, path = path, scheme = scheme, username = username)
     if (!js.isUndefined(cannotBeABaseURL)) __obj.updateDynamic("cannotBeABaseURL")(cannotBeABaseURL)
     if (fragment != null) __obj.updateDynamic("fragment")(fragment)
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])

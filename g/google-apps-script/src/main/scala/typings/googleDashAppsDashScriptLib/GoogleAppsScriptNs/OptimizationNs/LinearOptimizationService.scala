@@ -18,10 +18,8 @@ object LinearOptimizationService {
     VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VariableType */ js.Any,
     createEngine: js.Function0[LinearOptimizationEngine]
   ): LinearOptimizationService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("VariableType")(VariableType)
-    __obj.updateDynamic("createEngine")(createEngine)
+    val __obj = js.Dynamic.literal(Status = Status, VariableType = VariableType, createEngine = createEngine)
+  
     __obj.asInstanceOf[LinearOptimizationService]
   }
 }

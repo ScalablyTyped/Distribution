@@ -57,16 +57,8 @@ object StatVFS {
     f_frsize: scala.Double,
     f_namemax: scala.Double
   ): StatVFS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("f_bavail")(f_bavail)
-    __obj.updateDynamic("f_bfree")(f_bfree)
-    __obj.updateDynamic("f_blocks")(f_blocks)
-    __obj.updateDynamic("f_bsize")(f_bsize)
-    __obj.updateDynamic("f_favail")(f_favail)
-    __obj.updateDynamic("f_ffree")(f_ffree)
-    __obj.updateDynamic("f_files")(f_files)
-    __obj.updateDynamic("f_frsize")(f_frsize)
-    __obj.updateDynamic("f_namemax")(f_namemax)
+    val __obj = js.Dynamic.literal(f_bavail = f_bavail, f_bfree = f_bfree, f_blocks = f_blocks, f_bsize = f_bsize, f_favail = f_favail, f_ffree = f_ffree, f_files = f_files, f_frsize = f_frsize, f_namemax = f_namemax)
+  
     __obj.asInstanceOf[StatVFS]
   }
 }

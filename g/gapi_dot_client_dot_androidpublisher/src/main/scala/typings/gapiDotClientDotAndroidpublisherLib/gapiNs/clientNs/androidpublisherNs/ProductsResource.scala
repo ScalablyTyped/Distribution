@@ -18,8 +18,8 @@ object ProductsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ProductPurchase]
     ]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[ProductsResource]
   }
 }

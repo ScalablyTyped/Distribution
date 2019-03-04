@@ -13,9 +13,8 @@ trait CollapseProps extends js.Object {
 object CollapseProps {
   @scala.inline
   def apply(children: js.Any, in: scala.Boolean): CollapseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("in")(in)
+    val __obj = js.Dynamic.literal(children = children, in = in)
+  
     __obj.asInstanceOf[CollapseProps]
   }
 }

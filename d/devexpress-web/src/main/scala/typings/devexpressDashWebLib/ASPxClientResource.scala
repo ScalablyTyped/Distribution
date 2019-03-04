@@ -48,13 +48,8 @@ object ASPxClientResource {
     color: java.lang.String,
     resourceId: java.lang.String
   ): ASPxClientResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCaption")(GetCaption)
-    __obj.updateDynamic("GetColor")(GetColor)
-    __obj.updateDynamic("GetId")(GetId)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("resourceId")(resourceId)
+    val __obj = js.Dynamic.literal(GetCaption = GetCaption, GetColor = GetColor, GetId = GetId, caption = caption, color = color, resourceId = resourceId)
+  
     __obj.asInstanceOf[ASPxClientResource]
   }
 }

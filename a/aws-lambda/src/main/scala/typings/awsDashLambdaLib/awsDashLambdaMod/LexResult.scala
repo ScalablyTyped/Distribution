@@ -16,8 +16,7 @@ object LexResult {
     dialogAction: LexDialogAction,
     sessionAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): LexResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dialogAction")(dialogAction)
+    val __obj = js.Dynamic.literal(dialogAction = dialogAction)
     if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes)
     __obj.asInstanceOf[LexResult]
   }

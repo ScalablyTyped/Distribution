@@ -18,8 +18,7 @@ object GeocodeServiceProviderOptions {
     maxResults: scala.Int | scala.Double = null,
     token: java.lang.String = null
   ): GeocodeServiceProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (label != null) __obj.updateDynamic("label")(label)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

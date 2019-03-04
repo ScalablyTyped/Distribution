@@ -13,9 +13,8 @@ trait Anon_ForceRender extends js.Object {
 object Anon_ForceRender {
   @scala.inline
   def apply(forceRender: scala.Boolean, visible: scala.Boolean): Anon_ForceRender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceRender")(forceRender)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(forceRender = forceRender, visible = visible)
+  
     __obj.asInstanceOf[Anon_ForceRender]
   }
 }

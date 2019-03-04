@@ -59,16 +59,8 @@ object VariableGroup {
     `type`: java.lang.String,
     variables: org.scalablytyped.runtime.StringDictionary[VariableValue]
   ): VariableGroup = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("providerData")(providerData)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(createdBy = createdBy, createdOn = createdOn, description = description, id = id, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, providerData = providerData, variables = variables)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VariableGroup]
   }
 }

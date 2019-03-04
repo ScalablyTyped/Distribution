@@ -18,9 +18,7 @@ object DocumentNode {
     kind: graphqlLib.graphqlLibStrings.Document,
     loc: Location = null
   ): DocumentNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitions")(definitions)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(definitions = definitions, kind = kind)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[DocumentNode]
   }

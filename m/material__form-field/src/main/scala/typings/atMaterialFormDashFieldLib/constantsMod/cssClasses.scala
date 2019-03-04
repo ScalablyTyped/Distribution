@@ -13,8 +13,8 @@ trait cssClasses
 object cssClasses {
   @scala.inline
   def apply(ROOT: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`mdc-form-field`): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

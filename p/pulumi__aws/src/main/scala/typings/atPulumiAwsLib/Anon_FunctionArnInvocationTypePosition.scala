@@ -20,9 +20,7 @@ object Anon_FunctionArnInvocationTypePosition {
     invocationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_FunctionArnInvocationTypePosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functionArn")(functionArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     if (invocationType != null) __obj.updateDynamic("invocationType")(invocationType.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FunctionArnInvocationTypePosition]

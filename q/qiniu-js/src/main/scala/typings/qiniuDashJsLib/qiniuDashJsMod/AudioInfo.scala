@@ -36,19 +36,8 @@ object AudioInfo {
     start_time: java.lang.String,
     tags: qiniuDashJsLib.Anon_Creationtime
   ): AudioInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bit_rate")(bit_rate)
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("codec_name")(codec_name)
-    __obj.updateDynamic("codec_type")(codec_type)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("nb_frames")(nb_frames)
-    __obj.updateDynamic("r_frame_rate")(r_frame_rate)
-    __obj.updateDynamic("sample_fmt")(sample_fmt)
-    __obj.updateDynamic("sample_rate")(sample_rate)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(bit_rate = bit_rate, channels = channels, codec_name = codec_name, codec_type = codec_type, duration = duration, index = index, nb_frames = nb_frames, r_frame_rate = r_frame_rate, sample_fmt = sample_fmt, sample_rate = sample_rate, start_time = start_time, tags = tags)
+  
     __obj.asInstanceOf[AudioInfo]
   }
 }

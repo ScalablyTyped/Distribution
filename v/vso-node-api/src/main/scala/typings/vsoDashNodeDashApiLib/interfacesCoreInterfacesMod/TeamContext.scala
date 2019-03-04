@@ -32,11 +32,8 @@ object TeamContext {
     team: java.lang.String,
     teamId: java.lang.String
   ): TeamContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("team")(team)
-    __obj.updateDynamic("teamId")(teamId)
+    val __obj = js.Dynamic.literal(project = project, projectId = projectId, team = team, teamId = teamId)
+  
     __obj.asInstanceOf[TeamContext]
   }
 }

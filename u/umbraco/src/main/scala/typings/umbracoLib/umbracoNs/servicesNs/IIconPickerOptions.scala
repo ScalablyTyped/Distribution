@@ -16,8 +16,8 @@ trait IIconPickerOptions extends js.Object {
 object IIconPickerOptions {
   @scala.inline
   def apply(callback: angularLib.angularMod.Global.Function): IIconPickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
+    val __obj = js.Dynamic.literal(callback = callback)
+  
     __obj.asInstanceOf[IIconPickerOptions]
   }
 }

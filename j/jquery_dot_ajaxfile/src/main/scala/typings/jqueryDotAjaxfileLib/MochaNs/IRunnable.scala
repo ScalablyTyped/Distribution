@@ -23,12 +23,8 @@ object IRunnable {
     timedOut: scala.Boolean,
     title: java.lang.String
   ): IRunnable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("fn")(fn)
-    __obj.updateDynamic("sync")(sync)
-    __obj.updateDynamic("timedOut")(timedOut)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(async = async, fn = fn, sync = sync, timedOut = timedOut, title = title)
+  
     __obj.asInstanceOf[IRunnable]
   }
 }

@@ -51,20 +51,8 @@ object Metrics {
     TaskDuration: scala.Double,
     Timestamp: scala.Double
   ): Metrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Documents")(Documents)
-    __obj.updateDynamic("Frames")(Frames)
-    __obj.updateDynamic("JSEventListeners")(JSEventListeners)
-    __obj.updateDynamic("JSHeapTotalSize")(JSHeapTotalSize)
-    __obj.updateDynamic("JSHeapUsedSize")(JSHeapUsedSize)
-    __obj.updateDynamic("LayoutCount")(LayoutCount)
-    __obj.updateDynamic("LayoutDuration")(LayoutDuration)
-    __obj.updateDynamic("Nodes")(Nodes)
-    __obj.updateDynamic("RecalcStyleCount")(RecalcStyleCount)
-    __obj.updateDynamic("RecalcStyleDuration")(RecalcStyleDuration)
-    __obj.updateDynamic("ScriptDuration")(ScriptDuration)
-    __obj.updateDynamic("TaskDuration")(TaskDuration)
-    __obj.updateDynamic("Timestamp")(Timestamp)
+    val __obj = js.Dynamic.literal(Documents = Documents, Frames = Frames, JSEventListeners = JSEventListeners, JSHeapTotalSize = JSHeapTotalSize, JSHeapUsedSize = JSHeapUsedSize, LayoutCount = LayoutCount, LayoutDuration = LayoutDuration, Nodes = Nodes, RecalcStyleCount = RecalcStyleCount, RecalcStyleDuration = RecalcStyleDuration, ScriptDuration = ScriptDuration, TaskDuration = TaskDuration, Timestamp = Timestamp)
+  
     __obj.asInstanceOf[Metrics]
   }
 }

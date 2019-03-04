@@ -26,13 +26,7 @@ object Anon_Buffer {
     toJSON: js.Function0[js.Array[T]],
     NumberDictionary: /* i */ org.scalablytyped.runtime.NumberDictionary[T] = null
   ): Anon_Buffer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(buffer = buffer, inspect = inspect, length = length, ref = ref, toArray = toArray, toJSON = toJSON)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_Buffer[T]]
   }

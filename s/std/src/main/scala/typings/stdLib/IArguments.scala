@@ -22,10 +22,7 @@ object IArguments {
     length: scala.Double,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null
   ): IArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callee")(callee)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(callee = callee, iterator = iterator, length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[IArguments]
   }

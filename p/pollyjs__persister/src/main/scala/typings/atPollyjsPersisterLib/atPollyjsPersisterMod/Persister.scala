@@ -12,8 +12,8 @@ trait Persister extends js.Object {
 object Persister {
   @scala.inline
   def apply(persist: js.Function0[js.Promise[scala.Unit]]): Persister = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("persist")(persist)
+    val __obj = js.Dynamic.literal(persist = persist)
+  
     __obj.asInstanceOf[Persister]
   }
 }

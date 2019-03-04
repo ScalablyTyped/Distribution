@@ -18,10 +18,8 @@ object Anon_Cancel {
     item: js.Function1[scala.Double, js.Promise[_]],
     list: js.Function0[js.Promise[_]]
   ): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(cancel = cancel, item = item, list = list)
+  
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

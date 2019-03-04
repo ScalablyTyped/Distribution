@@ -41,10 +41,7 @@ object NextContext {
     req: nodeLib.httpMod.IncomingMessage = null,
     res: nodeLib.httpMod.ServerResponse = null
   ): NextContext[Q] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asPath")(asPath)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asPath = asPath, pathname = pathname, query = query.asInstanceOf[js.Any])
     if (err != null) __obj.updateDynamic("err")(err)
     if (jsonPageRes != null) __obj.updateDynamic("jsonPageRes")(jsonPageRes)
     if (req != null) __obj.updateDynamic("req")(req)

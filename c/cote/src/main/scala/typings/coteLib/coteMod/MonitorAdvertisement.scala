@@ -20,8 +20,7 @@ object MonitorAdvertisement {
     namespace: java.lang.String = null,
     port: scala.Double | java.lang.String = null
   ): MonitorAdvertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (key != null) __obj.updateDynamic("key")(key)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

@@ -20,10 +20,7 @@ object Anon_EnabledInputFormatConfigurationOutputFormatConfiguration {
     schemaConfiguration: atPulumiPulumiLib.outputMod.Input[Anon_CatalogIdDatabaseName],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_EnabledInputFormatConfigurationOutputFormatConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputFormatConfiguration")(inputFormatConfiguration.asInstanceOf[js.Any])
-    __obj.updateDynamic("outputFormatConfiguration")(outputFormatConfiguration.asInstanceOf[js.Any])
-    __obj.updateDynamic("schemaConfiguration")(schemaConfiguration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputFormatConfiguration = inputFormatConfiguration.asInstanceOf[js.Any], outputFormatConfiguration = outputFormatConfiguration.asInstanceOf[js.Any], schemaConfiguration = schemaConfiguration.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnabledInputFormatConfigurationOutputFormatConfiguration]
   }

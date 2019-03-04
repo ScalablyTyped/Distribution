@@ -13,9 +13,8 @@ trait PathAction extends js.Object {
 object PathAction {
   @scala.inline
   def apply(action: PathActions, args: js.Any): PathAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(action = action, args = args)
+  
     __obj.asInstanceOf[PathAction]
   }
 }

@@ -34,9 +34,7 @@ object CustomProtocol {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     name: java.lang.String = null
   ): CustomProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(auth = auth, token = token)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[CustomProtocol]

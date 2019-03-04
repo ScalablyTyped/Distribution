@@ -12,8 +12,8 @@ trait ActiveXObjectNameMap extends js.Object {
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(`Microsoft.DiskQuota`: activexDashDiskquotaLib.DiskQuotaTypeLibraryNs.DiskQuotaControl): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`Microsoft.DiskQuota` = `Microsoft.DiskQuota`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Microsoft.DiskQuota")(`Microsoft.DiskQuota`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

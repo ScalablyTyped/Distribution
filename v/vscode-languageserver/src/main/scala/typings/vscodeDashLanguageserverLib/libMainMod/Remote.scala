@@ -45,11 +45,8 @@ object Remote {
       scala.Unit
     ]
   ): Remote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("fillServerCapabilities")(fillServerCapabilities)
-    __obj.updateDynamic("initialize")(initialize)
+    val __obj = js.Dynamic.literal(attach = attach, connection = connection, fillServerCapabilities = fillServerCapabilities, initialize = initialize)
+  
     __obj.asInstanceOf[Remote]
   }
 }

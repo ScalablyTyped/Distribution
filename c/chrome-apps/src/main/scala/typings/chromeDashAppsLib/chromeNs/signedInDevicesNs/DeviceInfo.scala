@@ -35,11 +35,8 @@ object DeviceInfo {
     os: OS,
     `type`: DeviceType
   ): DeviceInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chromeVersion")(chromeVersion)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("os")(os)
+    val __obj = js.Dynamic.literal(chromeVersion = chromeVersion, id = id, name = name, os = os)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeviceInfo]
   }
 }

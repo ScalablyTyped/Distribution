@@ -53,25 +53,8 @@ object UniversalContentBroker {
     releaseCommandIdentifier: js.Function1[scala.Double, scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): UniversalContentBroker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("compareContentIds")(compareContentIds)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createCommandIdentifier")(createCommandIdentifier)
-    __obj.updateDynamic("createContentIdentifier")(createContentIdentifier)
-    __obj.updateDynamic("deregisterContentProvider")(deregisterContentProvider)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryContent")(queryContent)
-    __obj.updateDynamic("queryContentProvider")(queryContentProvider)
-    __obj.updateDynamic("queryContentProviders")(queryContentProviders)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerContentProvider")(registerContentProvider)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseCommandIdentifier")(releaseCommandIdentifier)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(abort = abort, acquire = acquire, addEventListener = addEventListener, compareContentIds = compareContentIds, create = create, createCommandIdentifier = createCommandIdentifier, createContentIdentifier = createContentIdentifier, deregisterContentProvider = deregisterContentProvider, dispose = dispose, execute = execute, queryContent = queryContent, queryContentProvider = queryContentProvider, queryContentProviders = queryContentProviders, queryInterface = queryInterface, registerContentProvider = registerContentProvider, release = release, releaseCommandIdentifier = releaseCommandIdentifier, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[UniversalContentBroker]
   }
 }

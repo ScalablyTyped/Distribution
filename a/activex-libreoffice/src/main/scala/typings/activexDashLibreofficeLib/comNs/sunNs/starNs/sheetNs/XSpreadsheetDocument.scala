@@ -32,12 +32,8 @@ object XSpreadsheetDocument {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSpreadsheetDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Sheets")(Sheets)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSheets")(getSheets)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Sheets = Sheets, acquire = acquire, getSheets = getSheets, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSpreadsheetDocument]
   }
 }

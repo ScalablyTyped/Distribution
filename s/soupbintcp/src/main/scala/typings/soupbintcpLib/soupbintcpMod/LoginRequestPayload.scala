@@ -20,11 +20,8 @@ object LoginRequestPayload {
     requestedSession: java.lang.String,
     username: java.lang.String
   ): LoginRequestPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("requestedSequenceNumber")(requestedSequenceNumber)
-    __obj.updateDynamic("requestedSession")(requestedSession)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, requestedSequenceNumber = requestedSequenceNumber, requestedSession = requestedSession, username = username)
+  
     __obj.asInstanceOf[LoginRequestPayload]
   }
 }

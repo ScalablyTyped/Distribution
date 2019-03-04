@@ -21,9 +21,8 @@ object JQueryStatic {
     format: js.Function2[java.lang.String, /* repeated */ java.lang.String, java.lang.String],
     validator: jqueryDotValidationLib.JQueryValidationNs.ValidatorStatic
   ): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("validator")(validator)
+    val __obj = js.Dynamic.literal(format = format, validator = validator)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

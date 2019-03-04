@@ -20,11 +20,8 @@ object Event {
     text: java.lang.String,
     trigger: stdLib.Element
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("clearSelection")(clearSelection)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(action = action, clearSelection = clearSelection, text = text, trigger = trigger)
+  
     __obj.asInstanceOf[Event]
   }
 }

@@ -25,11 +25,8 @@ object CompassHeading {
     timestamp: scala.Double,
     trueHeading: scala.Double
   ): CompassHeading = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headingAccuracy")(headingAccuracy)
-    __obj.updateDynamic("magneticHeading")(magneticHeading)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("trueHeading")(trueHeading)
+    val __obj = js.Dynamic.literal(headingAccuracy = headingAccuracy, magneticHeading = magneticHeading, timestamp = timestamp, trueHeading = trueHeading)
+  
     __obj.asInstanceOf[CompassHeading]
   }
 }

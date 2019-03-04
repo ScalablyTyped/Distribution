@@ -17,10 +17,8 @@ trait ITreeNode extends js.Object {
 object ITreeNode {
   @scala.inline
   def apply(id: scala.Double | java.lang.String, nodes: js.Array[ITreeNode], title: java.lang.String): ITreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], nodes = nodes, title = title)
+  
     __obj.asInstanceOf[ITreeNode]
   }
 }

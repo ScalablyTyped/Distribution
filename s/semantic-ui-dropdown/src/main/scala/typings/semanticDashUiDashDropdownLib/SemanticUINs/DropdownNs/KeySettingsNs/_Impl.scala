@@ -67,18 +67,8 @@ object _Impl {
     rightArrow: scala.Double,
     upArrow: scala.Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backspace")(backspace)
-    __obj.updateDynamic("deleteKey")(deleteKey)
-    __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    __obj.updateDynamic("downArrow")(downArrow)
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("escape")(escape)
-    __obj.updateDynamic("leftArrow")(leftArrow)
-    __obj.updateDynamic("pageDown")(pageDown)
-    __obj.updateDynamic("pageUp")(pageUp)
-    __obj.updateDynamic("rightArrow")(rightArrow)
-    __obj.updateDynamic("upArrow")(upArrow)
+    val __obj = js.Dynamic.literal(backspace = backspace, deleteKey = deleteKey, delimiter = delimiter.asInstanceOf[js.Any], downArrow = downArrow, enter = enter, escape = escape, leftArrow = leftArrow, pageDown = pageDown, pageUp = pageUp, rightArrow = rightArrow, upArrow = upArrow)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

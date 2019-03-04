@@ -61,36 +61,8 @@ object FieldSchema_InForm_DateTime {
     UseMinWidth: scala.Boolean,
     WorkWeek: java.lang.String
   ): FieldSchema_InForm_DateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("CalendarType")(CalendarType)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("DisplayFormat")(DisplayFormat)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("FirstDayOfWeek")(FirstDayOfWeek)
-    __obj.updateDynamic("FirstWeekOfYear")(FirstWeekOfYear)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("HijriAdjustment")(HijriAdjustment)
-    __obj.updateDynamic("HoursMode24")(HoursMode24)
-    __obj.updateDynamic("HoursOptions")(HoursOptions)
-    __obj.updateDynamic("IMEMode")(IMEMode)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("LanguageId")(LanguageId)
-    __obj.updateDynamic("LocaleId")(LocaleId)
-    __obj.updateDynamic("MaxJDay")(MaxJDay)
-    __obj.updateDynamic("MinJDay")(MinJDay)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReadOnlyField")(ReadOnlyField)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("RestrictedMode")(RestrictedMode)
-    __obj.updateDynamic("ShowWeekNumber")(ShowWeekNumber)
-    __obj.updateDynamic("TimeSeparator")(TimeSeparator)
-    __obj.updateDynamic("TimeZoneDifference")(TimeZoneDifference)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseMinWidth")(UseMinWidth)
-    __obj.updateDynamic("WorkWeek")(WorkWeek)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, CalendarType = CalendarType, Description = Description, Direction = Direction, DisplayFormat = DisplayFormat, FieldType = FieldType, FirstDayOfWeek = FirstDayOfWeek, FirstWeekOfYear = FirstWeekOfYear, Hidden = Hidden, HijriAdjustment = HijriAdjustment, HoursMode24 = HoursMode24, HoursOptions = HoursOptions, IMEMode = IMEMode, Id = Id, LanguageId = LanguageId, LocaleId = LocaleId, MaxJDay = MaxJDay, MinJDay = MinJDay, Name = Name, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, ShowWeekNumber = ShowWeekNumber, TimeSeparator = TimeSeparator, TimeZoneDifference = TimeZoneDifference, Title = Title, Type = Type, UseMinWidth = UseMinWidth, WorkWeek = WorkWeek)
+  
     __obj.asInstanceOf[FieldSchema_InForm_DateTime]
   }
 }

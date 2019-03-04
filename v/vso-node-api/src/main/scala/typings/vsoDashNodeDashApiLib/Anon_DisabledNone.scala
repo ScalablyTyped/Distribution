@@ -22,12 +22,8 @@ object Anon_DisabledNone {
     unChanged: scala.Double,
     verified: scala.Double
   ): Anon_DisabledNone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("serviceFlags")(serviceFlags)
-    __obj.updateDynamic("unChanged")(unChanged)
-    __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(disabled = disabled, none = none, serviceFlags = serviceFlags, unChanged = unChanged, verified = verified)
+  
     __obj.asInstanceOf[Anon_DisabledNone]
   }
 }

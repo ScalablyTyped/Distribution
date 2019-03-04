@@ -20,10 +20,7 @@ object SketchMSRulerData {
     guides: js.Array[_],
     do_objectID: java.lang.String = null
   ): SketchMSRulerData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("guides")(guides)
+    val __obj = js.Dynamic.literal(_class = _class, base = base, guides = guides)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSRulerData]
   }

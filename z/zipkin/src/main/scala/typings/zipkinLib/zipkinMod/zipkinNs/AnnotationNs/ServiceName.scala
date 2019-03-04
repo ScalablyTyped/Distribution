@@ -13,9 +13,8 @@ trait ServiceName
 object ServiceName {
   @scala.inline
   def apply(annotationType: java.lang.String, serviceName: java.lang.String): ServiceName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
-    __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(annotationType = annotationType, serviceName = serviceName)
+  
     __obj.asInstanceOf[ServiceName]
   }
 }

@@ -17,10 +17,8 @@ trait Action[T] extends js.Object {
 object Action {
   @scala.inline
   def apply[T](cbArgs: stdLib.ArrayLike[_], returnValue: T, throwError: stdLib.Error): Action[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cbArgs")(cbArgs)
-    __obj.updateDynamic("returnValue")(returnValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("throwError")(throwError)
+    val __obj = js.Dynamic.literal(cbArgs = cbArgs, returnValue = returnValue.asInstanceOf[js.Any], throwError = throwError)
+  
     __obj.asInstanceOf[Action[T]]
   }
 }

@@ -22,12 +22,8 @@ object Status {
     modified_at: java.lang.String,
     text: java.lang.String
   ): Status = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("html_text")(html_text)
-    __obj.updateDynamic("modified_at")(modified_at)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(author = author, color = color, html_text = html_text, modified_at = modified_at, text = text)
+  
     __obj.asInstanceOf[Status]
   }
 }

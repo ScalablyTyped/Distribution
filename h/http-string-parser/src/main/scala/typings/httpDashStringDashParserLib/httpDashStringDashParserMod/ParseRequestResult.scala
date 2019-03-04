@@ -20,11 +20,8 @@ object ParseRequestResult {
     method: java.lang.String,
     uri: java.lang.String
   ): ParseRequestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, method = method, uri = uri)
+  
     __obj.asInstanceOf[ParseRequestResult]
   }
 }

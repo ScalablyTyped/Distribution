@@ -14,10 +14,8 @@ trait Anon_ColorDepthFlags extends js.Object {
 object Anon_ColorDepthFlags {
   @scala.inline
   def apply(color: js.Array[scala.Double], depth: scala.Double, flags: js.Any): Anon_ColorDepthFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("flags")(flags)
+    val __obj = js.Dynamic.literal(color = color, depth = depth, flags = flags)
+  
     __obj.asInstanceOf[Anon_ColorDepthFlags]
   }
 }

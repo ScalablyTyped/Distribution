@@ -48,10 +48,7 @@ object CellMeasurerProps {
     rowIndex: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CellMeasurerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(cache = cache, children = children.asInstanceOf[js.Any], parent = parent)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

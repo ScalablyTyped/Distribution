@@ -12,8 +12,8 @@ trait TokenCache extends js.Object {
 object TokenCache {
   @scala.inline
   def apply(reset: js.Function0[scala.Unit]): TokenCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(reset = reset)
+  
     __obj.asInstanceOf[TokenCache]
   }
 }

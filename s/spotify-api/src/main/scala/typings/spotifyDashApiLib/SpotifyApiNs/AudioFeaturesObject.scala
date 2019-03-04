@@ -52,24 +52,8 @@ object AudioFeaturesObject {
     uri: java.lang.String,
     valence: scala.Double
   ): AudioFeaturesObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("acousticness")(acousticness)
-    __obj.updateDynamic("analysis_url")(analysis_url)
-    __obj.updateDynamic("danceability")(danceability)
-    __obj.updateDynamic("duration_ms")(duration_ms)
-    __obj.updateDynamic("energy")(energy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("instrumentalness")(instrumentalness)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("liveness")(liveness)
-    __obj.updateDynamic("loudness")(loudness)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("speechiness")(speechiness)
-    __obj.updateDynamic("tempo")(tempo)
-    __obj.updateDynamic("time_signature")(time_signature)
-    __obj.updateDynamic("track_href")(track_href)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("valence")(valence)
+    val __obj = js.Dynamic.literal(acousticness = acousticness, analysis_url = analysis_url, danceability = danceability, duration_ms = duration_ms, energy = energy, id = id, instrumentalness = instrumentalness, key = key, liveness = liveness, loudness = loudness, mode = mode, speechiness = speechiness, tempo = tempo, time_signature = time_signature, track_href = track_href, uri = uri, valence = valence)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AudioFeaturesObject]
   }
 }

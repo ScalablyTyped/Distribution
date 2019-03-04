@@ -23,11 +23,8 @@ object IStickyStateProvider {
     enableDebug: js.Function1[scala.Boolean, scala.Boolean],
     registerStickyState: js.Function1[IStickyState, scala.Unit]
   ): IStickyStateProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("debugMode")(debugMode)
-    __obj.updateDynamic("enableDebug")(enableDebug)
-    __obj.updateDynamic("registerStickyState")(registerStickyState)
+    val __obj = js.Dynamic.literal($get = $get, debugMode = debugMode, enableDebug = enableDebug, registerStickyState = registerStickyState)
+  
     __obj.asInstanceOf[IStickyStateProvider]
   }
 }

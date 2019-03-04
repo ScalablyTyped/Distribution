@@ -27,10 +27,8 @@ object TestersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Testers]
     ]
   ): TestersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, patch = patch, update = update)
+  
     __obj.asInstanceOf[TestersResource]
   }
 }

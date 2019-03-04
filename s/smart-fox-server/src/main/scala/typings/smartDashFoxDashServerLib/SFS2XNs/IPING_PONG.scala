@@ -12,8 +12,8 @@ trait IPING_PONG extends js.Object {
 object IPING_PONG {
   @scala.inline
   def apply(lagValue: scala.Double): IPING_PONG = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lagValue")(lagValue)
+    val __obj = js.Dynamic.literal(lagValue = lagValue)
+  
     __obj.asInstanceOf[IPING_PONG]
   }
 }

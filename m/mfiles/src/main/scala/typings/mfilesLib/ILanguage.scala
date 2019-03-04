@@ -14,10 +14,8 @@ trait ILanguage extends js.Object {
 object ILanguage {
   @scala.inline
   def apply(ID: scala.Double, LanguageCode: java.lang.String, Name: java.lang.String): ILanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LanguageCode")(LanguageCode)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(ID = ID, LanguageCode = LanguageCode, Name = Name)
+  
     __obj.asInstanceOf[ILanguage]
   }
 }

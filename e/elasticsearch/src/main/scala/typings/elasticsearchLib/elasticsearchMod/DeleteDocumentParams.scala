@@ -38,9 +38,8 @@ object DeleteDocumentParams {
     versionType: VersionType = null,
     waitForActiveShards: java.lang.String = null
   ): DeleteDocumentParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(id = id, index = index)
+    __obj.updateDynamic("type")(`type`)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

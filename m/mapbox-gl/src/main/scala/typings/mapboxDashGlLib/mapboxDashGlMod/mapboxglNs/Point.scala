@@ -51,27 +51,8 @@ object Point {
     x: scala.Double,
     y: scala.Double
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("angleTo")(angleTo)
-    __obj.updateDynamic("angleWidth")(angleWidth)
-    __obj.updateDynamic("angleWithSep")(angleWithSep)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("dist")(dist)
-    __obj.updateDynamic("distSqr")(distSqr)
-    __obj.updateDynamic("div")(div)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("mag")(mag)
-    __obj.updateDynamic("matMult")(matMult)
-    __obj.updateDynamic("mult")(mult)
-    __obj.updateDynamic("perp")(perp)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("round")(round)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(add = add, angle = angle, angleTo = angleTo, angleWidth = angleWidth, angleWithSep = angleWithSep, clone = clone, dist = dist, distSqr = distSqr, div = div, equals = equals, mag = mag, matMult = matMult, mult = mult, perp = perp, rotate = rotate, round = round, sub = sub, unit = unit, x = x, y = y)
+  
     __obj.asInstanceOf[Point]
   }
 }

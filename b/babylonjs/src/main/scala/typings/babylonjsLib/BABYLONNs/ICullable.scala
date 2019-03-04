@@ -31,9 +31,8 @@ object ICullable {
     isCompletelyInFrustum: js.Function1[js.Array[Plane], scala.Boolean],
     isInFrustum: js.Function1[js.Array[Plane], scala.Boolean]
   ): ICullable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCompletelyInFrustum")(isCompletelyInFrustum)
-    __obj.updateDynamic("isInFrustum")(isInFrustum)
+    val __obj = js.Dynamic.literal(isCompletelyInFrustum = isCompletelyInFrustum, isInFrustum = isInFrustum)
+  
     __obj.asInstanceOf[ICullable]
   }
 }

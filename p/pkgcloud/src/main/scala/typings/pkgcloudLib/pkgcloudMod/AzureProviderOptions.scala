@@ -20,10 +20,7 @@ object AzureProviderOptions {
     storageAccount: java.lang.String,
     location: java.lang.String = null
   ): AzureProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("storageAccessKey")(storageAccessKey)
-    __obj.updateDynamic("storageAccount")(storageAccount)
+    val __obj = js.Dynamic.literal(provider = provider, storageAccessKey = storageAccessKey, storageAccount = storageAccount)
     if (location != null) __obj.updateDynamic("location")(location)
     __obj.asInstanceOf[AzureProviderOptions]
   }

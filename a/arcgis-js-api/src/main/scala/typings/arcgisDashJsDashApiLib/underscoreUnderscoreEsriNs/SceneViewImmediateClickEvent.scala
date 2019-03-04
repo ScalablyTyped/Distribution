@@ -30,15 +30,8 @@ object SceneViewImmediateClickEvent {
     x: scala.Double,
     y: scala.Double
   ): SceneViewImmediateClickEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("mapPoint")(mapPoint)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(button = button, buttons = buttons, mapPoint = mapPoint, native = native, stopPropagation = stopPropagation, timestamp = timestamp, x = x, y = y)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SceneViewImmediateClickEvent]
   }
 }

@@ -24,18 +24,8 @@ object Expect {
     toEqual: js.Function1[js.Any, scala.Unit],
     toMatch: js.Function1[js.Any, scala.Unit]
   ): Expect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("toBe")(toBe)
-    __obj.updateDynamic("toBeDefined")(toBeDefined)
-    __obj.updateDynamic("toBeFalsy")(toBeFalsy)
-    __obj.updateDynamic("toBeGreaterThan")(toBeGreaterThan)
-    __obj.updateDynamic("toBeLessThan")(toBeLessThan)
-    __obj.updateDynamic("toBeNull")(toBeNull)
-    __obj.updateDynamic("toBeTruthy")(toBeTruthy)
-    __obj.updateDynamic("toContain")(toContain)
-    __obj.updateDynamic("toEqual")(toEqual)
-    __obj.updateDynamic("toMatch")(toMatch)
+    val __obj = js.Dynamic.literal(not = not, toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toContain = toContain, toEqual = toEqual, toMatch = toMatch)
+  
     __obj.asInstanceOf[Expect]
   }
 }

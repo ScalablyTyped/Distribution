@@ -26,9 +26,8 @@ object RosterReceived {
     id: java.lang.String,
     roster: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItem]
   ): RosterReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("roster")(roster)
+    val __obj = js.Dynamic.literal(id = id, roster = roster)
+  
     __obj.asInstanceOf[RosterReceived]
   }
 }

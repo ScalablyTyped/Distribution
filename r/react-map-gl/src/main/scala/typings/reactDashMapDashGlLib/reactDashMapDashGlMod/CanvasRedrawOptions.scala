@@ -18,12 +18,8 @@ object CanvasRedrawOptions {
     unproject: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
     width: scala.Double
   ): CanvasRedrawOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctx")(ctx)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("unproject")(unproject)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(ctx = ctx, height = height, project = project, unproject = unproject, width = width)
+  
     __obj.asInstanceOf[CanvasRedrawOptions]
   }
 }

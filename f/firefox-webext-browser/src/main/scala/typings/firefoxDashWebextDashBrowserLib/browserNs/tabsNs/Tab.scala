@@ -114,12 +114,7 @@ object Tab {
     width: scala.Int | scala.Double = null,
     windowId: scala.Int | scala.Double = null
   ): Tab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("highlighted")(highlighted)
-    __obj.updateDynamic("incognito")(incognito)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("pinned")(pinned)
+    val __obj = js.Dynamic.literal(active = active, highlighted = highlighted, incognito = incognito, index = index, pinned = pinned)
     if (!js.isUndefined(attention)) __obj.updateDynamic("attention")(attention)
     if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
     if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)

@@ -16,9 +16,8 @@ object Anon_OptionsValue {
     options: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.FormValueOptions,
     value: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable
   ): Anon_OptionsValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(options = options, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_OptionsValue]
   }
 }

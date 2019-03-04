@@ -14,9 +14,8 @@ trait Anon_IsOpen extends js.Object {
 object Anon_IsOpen {
   @scala.inline
   def apply(isOpen: scala.Boolean, target: js.Any, `type`: java.lang.String): Anon_IsOpen = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(isOpen = isOpen, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_IsOpen]
   }
 }

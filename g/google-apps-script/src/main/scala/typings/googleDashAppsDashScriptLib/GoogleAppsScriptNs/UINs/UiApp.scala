@@ -26,14 +26,8 @@ object UiApp {
     getActiveApplication: js.Function0[UiInstance],
     getUserAgent: js.Function0[java.lang.String]
   ): UiApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DateTimeFormat")(DateTimeFormat)
-    __obj.updateDynamic("FileType")(FileType)
-    __obj.updateDynamic("HorizontalAlignment")(HorizontalAlignment)
-    __obj.updateDynamic("VerticalAlignment")(VerticalAlignment)
-    __obj.updateDynamic("createApplication")(createApplication)
-    __obj.updateDynamic("getActiveApplication")(getActiveApplication)
-    __obj.updateDynamic("getUserAgent")(getUserAgent)
+    val __obj = js.Dynamic.literal(DateTimeFormat = DateTimeFormat, FileType = FileType, HorizontalAlignment = HorizontalAlignment, VerticalAlignment = VerticalAlignment, createApplication = createApplication, getActiveApplication = getActiveApplication, getUserAgent = getUserAgent)
+  
     __obj.asInstanceOf[UiApp]
   }
 }

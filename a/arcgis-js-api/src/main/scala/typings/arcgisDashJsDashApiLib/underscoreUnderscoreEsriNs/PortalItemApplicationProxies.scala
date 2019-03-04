@@ -37,13 +37,8 @@ object PortalItemApplicationProxies {
     proxyUrl: java.lang.String,
     sourceUrl: java.lang.String
   ): PortalItemApplicationProxies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("proxyId")(proxyId)
-    __obj.updateDynamic("proxyUrl")(proxyUrl)
-    __obj.updateDynamic("sourceUrl")(sourceUrl)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, proxyId = proxyId, proxyUrl = proxyUrl, sourceUrl = sourceUrl)
+  
     __obj.asInstanceOf[PortalItemApplicationProxies]
   }
 }

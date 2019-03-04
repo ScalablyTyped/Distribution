@@ -22,12 +22,8 @@ object ILicenseInformation {
     onlicensechanged: js.Any,
     productLicenses: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ProductLicense]
   ): ILicenseInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isTrial")(isTrial)
-    __obj.updateDynamic("onlicensechanged")(onlicensechanged)
-    __obj.updateDynamic("productLicenses")(productLicenses)
+    val __obj = js.Dynamic.literal(expirationDate = expirationDate, isActive = isActive, isTrial = isTrial, onlicensechanged = onlicensechanged, productLicenses = productLicenses)
+  
     __obj.asInstanceOf[ILicenseInformation]
   }
 }

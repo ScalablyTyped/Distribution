@@ -13,9 +13,8 @@ trait TfIdfTerm extends js.Object {
 object TfIdfTerm {
   @scala.inline
   def apply(term: java.lang.String, tfidf: scala.Double): TfIdfTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("tfidf")(tfidf)
+    val __obj = js.Dynamic.literal(term = term, tfidf = tfidf)
+  
     __obj.asInstanceOf[TfIdfTerm]
   }
 }

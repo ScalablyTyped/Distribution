@@ -12,8 +12,8 @@ trait StaticFunctions extends js.Object {
 object StaticFunctions {
   @scala.inline
   def apply(FixedHeader: FixedHeaderStaticFunctions): StaticFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FixedHeader")(FixedHeader)
+    val __obj = js.Dynamic.literal(FixedHeader = FixedHeader)
+  
     __obj.asInstanceOf[StaticFunctions]
   }
 }

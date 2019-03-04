@@ -26,13 +26,7 @@ object SketchMSRect {
     y: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("constrainProportions")(constrainProportions)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(_class = _class, constrainProportions = constrainProportions, height = height, width = width, x = x, y = y)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSRect]
   }

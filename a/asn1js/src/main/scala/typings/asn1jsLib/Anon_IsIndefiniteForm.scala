@@ -18,8 +18,7 @@ object Anon_IsIndefiniteForm {
     isIndefiniteForm: js.UndefOr[scala.Boolean] = js.undefined,
     longFormUsed: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_IsIndefiniteForm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(length = length)
     if (!js.isUndefined(isIndefiniteForm)) __obj.updateDynamic("isIndefiniteForm")(isIndefiniteForm)
     if (!js.isUndefined(longFormUsed)) __obj.updateDynamic("longFormUsed")(longFormUsed)
     __obj.asInstanceOf[Anon_IsIndefiniteForm]

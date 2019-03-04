@@ -17,8 +17,8 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(progress: js.Function0[Progress]): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(progress = progress)
+  
     __obj.asInstanceOf[Request]
   }
 }

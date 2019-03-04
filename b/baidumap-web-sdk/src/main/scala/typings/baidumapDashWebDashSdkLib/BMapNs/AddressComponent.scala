@@ -22,12 +22,8 @@ object AddressComponent {
     street: java.lang.String,
     streetNumber: java.lang.String
   ): AddressComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("streetNumber")(streetNumber)
+    val __obj = js.Dynamic.literal(city = city, district = district, province = province, street = street, streetNumber = streetNumber)
+  
     __obj.asInstanceOf[AddressComponent]
   }
 }

@@ -12,8 +12,8 @@ trait CachingConfig extends js.Object {
 object CachingConfig {
   @scala.inline
   def apply(ttl: scala.Double): CachingConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(ttl = ttl)
+  
     __obj.asInstanceOf[CachingConfig]
   }
 }

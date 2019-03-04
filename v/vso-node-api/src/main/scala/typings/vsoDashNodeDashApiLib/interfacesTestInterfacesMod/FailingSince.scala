@@ -14,10 +14,8 @@ trait FailingSince extends js.Object {
 object FailingSince {
   @scala.inline
   def apply(build: BuildReference, date: stdLib.Date, release: ReleaseReference): FailingSince = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(build = build, date = date, release = release)
+  
     __obj.asInstanceOf[FailingSince]
   }
 }

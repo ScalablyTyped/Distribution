@@ -18,10 +18,8 @@ object UpsertResponse {
     rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId,
     updated: scala.Boolean
   ): UpsertResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rev")(rev)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(id = id, rev = rev, updated = updated)
+  
     __obj.asInstanceOf[UpsertResponse]
   }
 }

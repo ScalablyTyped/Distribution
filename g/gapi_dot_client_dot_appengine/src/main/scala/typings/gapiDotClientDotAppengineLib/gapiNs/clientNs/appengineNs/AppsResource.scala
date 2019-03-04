@@ -64,18 +64,8 @@ object AppsResource {
     ],
     services: ServicesResource
   ): AppsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizedCertificates")(authorizedCertificates)
-    __obj.updateDynamic("authorizedDomains")(authorizedDomains)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("domainMappings")(domainMappings)
-    __obj.updateDynamic("firewall")(firewall)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("repair")(repair)
-    __obj.updateDynamic("services")(services)
+    val __obj = js.Dynamic.literal(authorizedCertificates = authorizedCertificates, authorizedDomains = authorizedDomains, create = create, domainMappings = domainMappings, firewall = firewall, get = get, locations = locations, operations = operations, patch = patch, repair = repair, services = services)
+  
     __obj.asInstanceOf[AppsResource]
   }
 }

@@ -20,10 +20,8 @@ object Anon_AuthCode {
     authErrorScope: org.scalablytyped.runtime.StringDictionary[scala.Double],
     authSucessScope: js.Array[java.lang.String]
   ): Anon_AuthCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authCode")(authCode)
-    __obj.updateDynamic("authErrorScope")(authErrorScope)
-    __obj.updateDynamic("authSucessScope")(authSucessScope)
+    val __obj = js.Dynamic.literal(authCode = authCode, authErrorScope = authErrorScope, authSucessScope = authSucessScope)
+  
     __obj.asInstanceOf[Anon_AuthCode]
   }
 }

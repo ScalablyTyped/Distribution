@@ -39,13 +39,8 @@ object XElementStackKeeper {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): XElementStackKeeper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("retrieve")(retrieve)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, retrieve = retrieve, start = start, stop = stop)
+  
     __obj.asInstanceOf[XElementStackKeeper]
   }
 }

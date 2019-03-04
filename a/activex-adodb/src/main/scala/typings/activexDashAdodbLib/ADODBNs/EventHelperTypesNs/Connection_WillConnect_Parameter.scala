@@ -24,13 +24,8 @@ object Connection_WillConnect_Parameter {
     adStatus: activexDashAdodbLib.ADODBNs.EventStatusEnum,
     pConnection: activexDashAdodbLib.ADODBNs.Connection
   ): Connection_WillConnect_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectionString")(ConnectionString)
-    __obj.updateDynamic("Options")(Options)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("UserID")(UserID)
-    __obj.updateDynamic("adStatus")(adStatus)
-    __obj.updateDynamic("pConnection")(pConnection)
+    val __obj = js.Dynamic.literal(ConnectionString = ConnectionString, Options = Options, Password = Password, UserID = UserID, adStatus = adStatus, pConnection = pConnection)
+  
     __obj.asInstanceOf[Connection_WillConnect_Parameter]
   }
 }

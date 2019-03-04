@@ -37,15 +37,8 @@ object UnoControlDialogElement {
     Tag: java.lang.String,
     Width: scala.Double
   ): UnoControlDialogElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PositionX")(PositionX)
-    __obj.updateDynamic("PositionY")(PositionY)
-    __obj.updateDynamic("Step")(Step)
-    __obj.updateDynamic("TabIndex")(TabIndex)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Height = Height, Name = Name, PositionX = PositionX, PositionY = PositionY, Step = Step, TabIndex = TabIndex, Tag = Tag, Width = Width)
+  
     __obj.asInstanceOf[UnoControlDialogElement]
   }
 }

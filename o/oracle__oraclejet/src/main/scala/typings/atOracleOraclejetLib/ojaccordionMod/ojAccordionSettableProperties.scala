@@ -18,8 +18,7 @@ object ojAccordionSettableProperties {
     expanded: js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[atOracleOraclejetLib.Anon_Id] = null,
     translations: js.Object = null
   ): ojAccordionSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("multiple")(multiple)
+    val __obj = js.Dynamic.literal(multiple = multiple)
     if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[ojAccordionSettableProperties]

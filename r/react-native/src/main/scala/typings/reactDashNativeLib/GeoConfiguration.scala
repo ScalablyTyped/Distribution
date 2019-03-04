@@ -12,8 +12,8 @@ trait GeoConfiguration extends js.Object {
 object GeoConfiguration {
   @scala.inline
   def apply(skipPermissionRequests: scala.Boolean): GeoConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("skipPermissionRequests")(skipPermissionRequests)
+    val __obj = js.Dynamic.literal(skipPermissionRequests = skipPermissionRequests)
+  
     __obj.asInstanceOf[GeoConfiguration]
   }
 }

@@ -87,26 +87,8 @@ object frame {
     throwAwayPayload: js.Function1[IBufferList, scala.Boolean],
     toBuffer: js.Function1[scala.Boolean, nodeLib.Buffer]
   ): frame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addData")(addData)
-    __obj.updateDynamic("binaryPayload")(binaryPayload)
-    __obj.updateDynamic("closeStatus")(closeStatus)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("fin")(fin)
-    __obj.updateDynamic("frameHeader")(frameHeader)
-    __obj.updateDynamic("frameTooLarge")(frameTooLarge)
-    __obj.updateDynamic("invalidCloseFrameLength")(invalidCloseFrameLength)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("maskBytes")(maskBytes)
-    __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize)
-    __obj.updateDynamic("opcode")(opcode)
-    __obj.updateDynamic("protocolError")(protocolError)
-    __obj.updateDynamic("rsv1")(rsv1)
-    __obj.updateDynamic("rsv2")(rsv2)
-    __obj.updateDynamic("rsv3")(rsv3)
-    __obj.updateDynamic("throwAwayPayload")(throwAwayPayload)
-    __obj.updateDynamic("toBuffer")(toBuffer)
+    val __obj = js.Dynamic.literal(addData = addData, binaryPayload = binaryPayload, closeStatus = closeStatus, config = config, fin = fin, frameHeader = frameHeader, frameTooLarge = frameTooLarge, invalidCloseFrameLength = invalidCloseFrameLength, length = length, mask = mask, maskBytes = maskBytes, maxReceivedFrameSize = maxReceivedFrameSize, opcode = opcode, protocolError = protocolError, rsv1 = rsv1, rsv2 = rsv2, rsv3 = rsv3, throwAwayPayload = throwAwayPayload, toBuffer = toBuffer)
+  
     __obj.asInstanceOf[frame]
   }
 }

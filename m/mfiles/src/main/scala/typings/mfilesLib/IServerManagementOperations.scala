@@ -33,15 +33,8 @@ object IServerManagementOperations {
     RestoreMasterDB: js.Function2[java.lang.String, IImpersonation, scala.Unit],
     SetEventHandlers: js.Function1[IEventHandlers, scala.Unit]
   ): IServerManagementOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupMasterDB")(BackupMasterDB)
-    __obj.updateDynamic("ConfigureWebAccessToDefaultWebSite")(ConfigureWebAccessToDefaultWebSite)
-    __obj.updateDynamic("ConfigureWebAccessToExistingWebSite")(ConfigureWebAccessToExistingWebSite)
-    __obj.updateDynamic("ConfigureWebAccessToNewVirtualDirectory")(ConfigureWebAccessToNewVirtualDirectory)
-    __obj.updateDynamic("ConfigureWebAccessToNewWebSite")(ConfigureWebAccessToNewWebSite)
-    __obj.updateDynamic("GetEventHandlers")(GetEventHandlers)
-    __obj.updateDynamic("RestoreMasterDB")(RestoreMasterDB)
-    __obj.updateDynamic("SetEventHandlers")(SetEventHandlers)
+    val __obj = js.Dynamic.literal(BackupMasterDB = BackupMasterDB, ConfigureWebAccessToDefaultWebSite = ConfigureWebAccessToDefaultWebSite, ConfigureWebAccessToExistingWebSite = ConfigureWebAccessToExistingWebSite, ConfigureWebAccessToNewVirtualDirectory = ConfigureWebAccessToNewVirtualDirectory, ConfigureWebAccessToNewWebSite = ConfigureWebAccessToNewWebSite, GetEventHandlers = GetEventHandlers, RestoreMasterDB = RestoreMasterDB, SetEventHandlers = SetEventHandlers)
+  
     __obj.asInstanceOf[IServerManagementOperations]
   }
 }

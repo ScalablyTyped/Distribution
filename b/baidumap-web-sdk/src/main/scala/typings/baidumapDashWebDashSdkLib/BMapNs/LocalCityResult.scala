@@ -14,10 +14,8 @@ trait LocalCityResult extends js.Object {
 object LocalCityResult {
   @scala.inline
   def apply(center: Point, level: scala.Double, name: java.lang.String): LocalCityResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(center = center, level = level, name = name)
+  
     __obj.asInstanceOf[LocalCityResult]
   }
 }

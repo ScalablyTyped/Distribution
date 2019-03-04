@@ -24,13 +24,8 @@ object Pins {
     supportedModes: js.Array[PIN_MODE],
     value: PIN_STATE | scala.Double
   ): Pins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analogChannel")(analogChannel)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("supportedModes")(supportedModes)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(analogChannel = analogChannel, mode = mode, report = report, state = state.asInstanceOf[js.Any], supportedModes = supportedModes, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Pins]
   }
 }

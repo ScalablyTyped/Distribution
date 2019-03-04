@@ -12,8 +12,8 @@ trait Selection extends js.Object {
 object Selection {
   @scala.inline
   def apply(getCursor: js.Function0[Annotation]): Selection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCursor")(getCursor)
+    val __obj = js.Dynamic.literal(getCursor = getCursor)
+  
     __obj.asInstanceOf[Selection]
   }
 }

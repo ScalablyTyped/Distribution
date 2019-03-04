@@ -49,17 +49,8 @@ object XXMLSecurityTemplate {
       scala.Unit
     ]
   ): XXMLSecurityTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("Template")(Template)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("getTemplate")(getTemplate)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStatus")(setStatus)
-    __obj.updateDynamic("setTarget")(setTarget)
-    __obj.updateDynamic("setTemplate")(setTemplate)
+    val __obj = js.Dynamic.literal(Status = Status, Template = Template, acquire = acquire, getStatus = getStatus, getTemplate = getTemplate, queryInterface = queryInterface, release = release, setStatus = setStatus, setTarget = setTarget, setTemplate = setTemplate)
+  
     __obj.asInstanceOf[XXMLSecurityTemplate]
   }
 }

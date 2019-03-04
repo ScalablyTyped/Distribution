@@ -22,9 +22,7 @@ object Attachment {
     filename: java.lang.String = null,
     knownLength: scala.Int | scala.Double = null
   ): Attachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], getType = getType)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (knownLength != null) __obj.updateDynamic("knownLength")(knownLength.asInstanceOf[js.Any])

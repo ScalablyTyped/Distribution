@@ -32,14 +32,7 @@ object PublicKeyInfo {
     toSchema: js.Function0[js.Any],
     parsedKey: pkijsLib.srcECPublicKeyMod.default | pkijsLib.srcRSAPublicKeyMod.default = null
   ): PublicKeyInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("importKey")(importKey)
-    __obj.updateDynamic("subjectPublicKey")(subjectPublicKey)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, fromJSON = fromJSON, fromSchema = fromSchema, importKey = importKey, subjectPublicKey = subjectPublicKey, toJSON = toJSON, toSchema = toSchema)
     if (parsedKey != null) __obj.updateDynamic("parsedKey")(parsedKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyInfo]
   }

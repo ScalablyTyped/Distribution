@@ -41,11 +41,8 @@ object Anon_AreaName {
     ],
     sync: chromeDashAppsLib.chromeNs.storageNs.SyncStorageArea
   ): Anon_AreaName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("managed")(managed)
-    __obj.updateDynamic("onChanged")(onChanged)
-    __obj.updateDynamic("sync")(sync)
+    val __obj = js.Dynamic.literal(local = local, managed = managed, onChanged = onChanged, sync = sync)
+  
     __obj.asInstanceOf[Anon_AreaName]
   }
 }

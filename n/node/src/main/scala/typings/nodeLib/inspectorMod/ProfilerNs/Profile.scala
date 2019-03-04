@@ -41,10 +41,7 @@ object Profile {
     samples: js.Array[scala.Double] = null,
     timeDeltas: js.Array[scala.Double] = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(endTime = endTime, nodes = nodes, startTime = startTime)
     if (samples != null) __obj.updateDynamic("samples")(samples)
     if (timeDeltas != null) __obj.updateDynamic("timeDeltas")(timeDeltas)
     __obj.asInstanceOf[Profile]

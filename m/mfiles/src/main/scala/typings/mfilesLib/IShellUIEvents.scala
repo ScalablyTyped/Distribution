@@ -26,9 +26,7 @@ object IShellUIEvents {
     OnStarted: js.Function0[scala.Unit] = null,
     OnStop: js.Function0[scala.Unit] = null
   ): IShellUIEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnNewCommonDialogShellFrame != null) __obj.updateDynamic("OnNewCommonDialogShellFrame")(OnNewCommonDialogShellFrame)
     if (OnNewEmbeddedShellFrame != null) __obj.updateDynamic("OnNewEmbeddedShellFrame")(OnNewEmbeddedShellFrame)
     if (OnNewNormalShellFrame != null) __obj.updateDynamic("OnNewNormalShellFrame")(OnNewNormalShellFrame)

@@ -12,8 +12,8 @@ trait GLViewDOMState extends js.Object {
 object GLViewDOMState {
   @scala.inline
   def apply(error: stdLib.Error): GLViewDOMState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[GLViewDOMState]
   }
 }

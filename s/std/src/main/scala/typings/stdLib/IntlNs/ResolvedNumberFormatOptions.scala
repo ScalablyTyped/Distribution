@@ -34,14 +34,7 @@ object ResolvedNumberFormatOptions {
     maximumSignificantDigits: scala.Int | scala.Double = null,
     minimumSignificantDigits: scala.Int | scala.Double = null
   ): ResolvedNumberFormatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits)
-    __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits)
-    __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits)
-    __obj.updateDynamic("numberingSystem")(numberingSystem)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("useGrouping")(useGrouping)
+    val __obj = js.Dynamic.literal(locale = locale, maximumFractionDigits = maximumFractionDigits, minimumFractionDigits = minimumFractionDigits, minimumIntegerDigits = minimumIntegerDigits, numberingSystem = numberingSystem, style = style, useGrouping = useGrouping)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay)
     if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])

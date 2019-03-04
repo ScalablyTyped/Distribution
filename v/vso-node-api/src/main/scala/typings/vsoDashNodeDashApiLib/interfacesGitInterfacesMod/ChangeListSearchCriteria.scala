@@ -77,20 +77,8 @@ object ChangeListSearchCriteria {
     top: scala.Double,
     user: java.lang.String
   ): ChangeListSearchCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compareVersion")(compareVersion)
-    __obj.updateDynamic("excludeDeletes")(excludeDeletes)
-    __obj.updateDynamic("followRenames")(followRenames)
-    __obj.updateDynamic("fromDate")(fromDate)
-    __obj.updateDynamic("fromVersion")(fromVersion)
-    __obj.updateDynamic("itemPath")(itemPath)
-    __obj.updateDynamic("itemPaths")(itemPaths)
-    __obj.updateDynamic("itemVersion")(itemVersion)
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("toDate")(toDate)
-    __obj.updateDynamic("toVersion")(toVersion)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(compareVersion = compareVersion, excludeDeletes = excludeDeletes, followRenames = followRenames, fromDate = fromDate, fromVersion = fromVersion, itemPath = itemPath, itemPaths = itemPaths, itemVersion = itemVersion, skip = skip, toDate = toDate, toVersion = toVersion, top = top, user = user)
+  
     __obj.asInstanceOf[ChangeListSearchCriteria]
   }
 }

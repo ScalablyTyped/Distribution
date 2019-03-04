@@ -45,10 +45,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("releases")(releases)
-    __obj.updateDynamic("rulesets")(rulesets)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(releases = releases, rulesets = rulesets, test = test)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

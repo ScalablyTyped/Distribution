@@ -17,8 +17,7 @@ object ObservableLike {
     observable: js.Function0[zenDashObservableLib.zenDashObservableMod.Observable[T] | ObservableLike[T]],
     subscribe: Subscriber[T] = null
   ): ObservableLike[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("observable")(observable)
+    val __obj = js.Dynamic.literal(observable = observable)
     if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
     __obj.asInstanceOf[ObservableLike[T]]
   }

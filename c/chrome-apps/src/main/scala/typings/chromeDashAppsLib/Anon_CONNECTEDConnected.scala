@@ -28,15 +28,8 @@ object Anon_CONNECTEDConnected {
     RESUME: chromeDashAppsLib.chromeDashAppsLibStrings.resume,
     SUSPEND: chromeDashAppsLib.chromeDashAppsLibStrings.suspend
   ): Anon_CONNECTEDConnected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CONNECTED")(CONNECTED)
-    __obj.updateDynamic("DISCONNECTED")(DISCONNECTED)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("LINK_CHANGED")(LINK_CHANGED)
-    __obj.updateDynamic("LINK_DOWN")(LINK_DOWN)
-    __obj.updateDynamic("LINK_UP")(LINK_UP)
-    __obj.updateDynamic("RESUME")(RESUME)
-    __obj.updateDynamic("SUSPEND")(SUSPEND)
+    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED, DISCONNECTED = DISCONNECTED, ERROR = ERROR, LINK_CHANGED = LINK_CHANGED, LINK_DOWN = LINK_DOWN, LINK_UP = LINK_UP, RESUME = RESUME, SUSPEND = SUSPEND)
+  
     __obj.asInstanceOf[Anon_CONNECTEDConnected]
   }
 }

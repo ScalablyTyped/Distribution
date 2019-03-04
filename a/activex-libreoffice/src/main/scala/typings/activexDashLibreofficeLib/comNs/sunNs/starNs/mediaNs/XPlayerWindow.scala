@@ -62,36 +62,8 @@ object XPlayerWindow {
     setZoomLevel: js.Function1[ZoomLevel, scala.Boolean],
     update: js.Function0[scala.Unit]
   ): XPlayerWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PosSize")(PosSize)
-    __obj.updateDynamic("ZoomLevel")(ZoomLevel)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addFocusListener")(addFocusListener)
-    __obj.updateDynamic("addKeyListener")(addKeyListener)
-    __obj.updateDynamic("addMouseListener")(addMouseListener)
-    __obj.updateDynamic("addMouseMotionListener")(addMouseMotionListener)
-    __obj.updateDynamic("addPaintListener")(addPaintListener)
-    __obj.updateDynamic("addWindowListener")(addWindowListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getPosSize")(getPosSize)
-    __obj.updateDynamic("getZoomLevel")(getZoomLevel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeFocusListener")(removeFocusListener)
-    __obj.updateDynamic("removeKeyListener")(removeKeyListener)
-    __obj.updateDynamic("removeMouseListener")(removeMouseListener)
-    __obj.updateDynamic("removeMouseMotionListener")(removeMouseMotionListener)
-    __obj.updateDynamic("removePaintListener")(removePaintListener)
-    __obj.updateDynamic("removeWindowListener")(removeWindowListener)
-    __obj.updateDynamic("setEnable")(setEnable)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setPointerType")(setPointerType)
-    __obj.updateDynamic("setPosSize")(setPosSize)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setZoomLevel")(setZoomLevel)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(PosSize = PosSize, ZoomLevel = ZoomLevel, acquire = acquire, addEventListener = addEventListener, addFocusListener = addFocusListener, addKeyListener = addKeyListener, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addWindowListener = addWindowListener, dispose = dispose, getPosSize = getPosSize, getZoomLevel = getZoomLevel, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFocusListener = removeFocusListener, removeKeyListener = removeKeyListener, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeWindowListener = removeWindowListener, setEnable = setEnable, setFocus = setFocus, setPointerType = setPointerType, setPosSize = setPosSize, setVisible = setVisible, setZoomLevel = setZoomLevel, update = update)
+  
     __obj.asInstanceOf[XPlayerWindow]
   }
 }

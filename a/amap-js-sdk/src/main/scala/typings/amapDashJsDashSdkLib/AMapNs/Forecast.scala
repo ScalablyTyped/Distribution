@@ -32,17 +32,8 @@ object Forecast {
     nightWindPower: java.lang.String,
     week: java.lang.String
   ): Forecast = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dayTemp")(dayTemp)
-    __obj.updateDynamic("dayWeather")(dayWeather)
-    __obj.updateDynamic("dayWindDir")(dayWindDir)
-    __obj.updateDynamic("dayWindPower")(dayWindPower)
-    __obj.updateDynamic("nightTemp")(nightTemp)
-    __obj.updateDynamic("nightWeather")(nightWeather)
-    __obj.updateDynamic("nightWindDir")(nightWindDir)
-    __obj.updateDynamic("nightWindPower")(nightWindPower)
-    __obj.updateDynamic("week")(week)
+    val __obj = js.Dynamic.literal(date = date, dayTemp = dayTemp, dayWeather = dayWeather, dayWindDir = dayWindDir, dayWindPower = dayWindPower, nightTemp = nightTemp, nightWeather = nightWeather, nightWindDir = nightWindDir, nightWindPower = nightWindPower, week = week)
+  
     __obj.asInstanceOf[Forecast]
   }
 }

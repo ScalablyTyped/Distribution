@@ -151,7 +151,7 @@ object typesNs extends js.Object {
     		 * allow things that aren't types.Error to match it in case statements and
     		 * assignments.
     		 */
-    val `___SASS_ERROR___`: js.Symbol
+    val ___SASS_ERROR___ : js.Symbol
   }
   
   @js.native
@@ -205,7 +205,7 @@ object typesNs extends js.Object {
     		 * allow things that aren't types.Null to match it in case statements and
     		 * assignments.
     		 */
-    val `___NULL___`: js.Symbol
+    val ___NULL___ : js.Symbol
   }
   
   @js.native

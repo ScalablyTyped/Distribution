@@ -18,9 +18,8 @@ object FBSDKEvents {
     subscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit],
     unsubscribe: js.Function2[java.lang.String, js.Function1[/* fbResponseObject */ js.Object, _], scala.Unit]
   ): FBSDKEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(subscribe = subscribe, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[FBSDKEvents]
   }
 }

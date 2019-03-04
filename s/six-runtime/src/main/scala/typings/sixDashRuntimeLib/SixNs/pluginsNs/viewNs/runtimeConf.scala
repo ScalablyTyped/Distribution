@@ -14,10 +14,8 @@ trait runtimeConf extends js.Object {
 object runtimeConf {
   @scala.inline
   def apply(codeKey: java.lang.String, dataKey: java.lang.String, msgKey: java.lang.String): runtimeConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codeKey")(codeKey)
-    __obj.updateDynamic("dataKey")(dataKey)
-    __obj.updateDynamic("msgKey")(msgKey)
+    val __obj = js.Dynamic.literal(codeKey = codeKey, dataKey = dataKey, msgKey = msgKey)
+  
     __obj.asInstanceOf[runtimeConf]
   }
 }

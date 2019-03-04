@@ -42,10 +42,7 @@ object IOAuth2StrategyOption {
     userID: java.lang.String = null,
     userProfileURL: java.lang.String = null
   ): IOAuth2StrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
     if (accessType != null) __obj.updateDynamic("accessType")(accessType)
     if (approval_prompt != null) __obj.updateDynamic("approval_prompt")(approval_prompt)
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)

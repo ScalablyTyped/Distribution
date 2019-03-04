@@ -29,8 +29,7 @@ object ResponseInfo {
     statusCode: scala.Int | scala.Double = null,
     statusText: java.lang.String = null
   ): ResponseInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseAvailable")(responseAvailable)
+    val __obj = js.Dynamic.literal(responseAvailable = responseAvailable)
     if (allResponseHeaders != null) __obj.updateDynamic("allResponseHeaders")(allResponseHeaders)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)

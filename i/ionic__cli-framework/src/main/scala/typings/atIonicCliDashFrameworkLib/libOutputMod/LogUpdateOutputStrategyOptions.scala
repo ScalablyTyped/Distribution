@@ -18,8 +18,7 @@ object LogUpdateOutputStrategyOptions {
     colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = null,
     stream: nodeLib.NodeJSNs.WritableStream = null
   ): LogUpdateOutputStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LogUpdate")(LogUpdate)
+    val __obj = js.Dynamic.literal(LogUpdate = LogUpdate)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (stream != null) __obj.updateDynamic("stream")(stream)
     __obj.asInstanceOf[LogUpdateOutputStrategyOptions]

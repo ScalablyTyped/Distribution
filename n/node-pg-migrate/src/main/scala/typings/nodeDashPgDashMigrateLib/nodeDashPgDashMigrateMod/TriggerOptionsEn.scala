@@ -34,8 +34,7 @@ object TriggerOptionsEn {
     level: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.STATEMENT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.ROW = null,
     when: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.BEFORE | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.AFTER | (nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.`INSTEAD OF`) = null
   ): TriggerOptionsEn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (!js.isUndefined(constraint)) __obj.updateDynamic("constraint")(constraint)
     if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)

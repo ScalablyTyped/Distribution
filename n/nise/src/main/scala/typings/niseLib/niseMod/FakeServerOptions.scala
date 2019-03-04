@@ -38,11 +38,8 @@ object FakeServerOptions {
     fakeHTTPMethods: scala.Boolean,
     respondImmediately: scala.Boolean
   ): FakeServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoRespond")(autoRespond)
-    __obj.updateDynamic("autoRespondAfter")(autoRespondAfter)
-    __obj.updateDynamic("fakeHTTPMethods")(fakeHTTPMethods)
-    __obj.updateDynamic("respondImmediately")(respondImmediately)
+    val __obj = js.Dynamic.literal(autoRespond = autoRespond, autoRespondAfter = autoRespondAfter, fakeHTTPMethods = fakeHTTPMethods, respondImmediately = respondImmediately)
+  
     __obj.asInstanceOf[FakeServerOptions]
   }
 }

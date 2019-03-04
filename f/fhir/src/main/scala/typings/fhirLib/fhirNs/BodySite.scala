@@ -74,8 +74,7 @@ object BodySite {
     resourceType: code = null,
     text: Narrative = null
   ): BodySite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
+    val __obj = js.Dynamic.literal(patient = patient)
     if (_active != null) __obj.updateDynamic("_active")(_active)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)

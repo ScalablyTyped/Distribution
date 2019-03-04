@@ -12,8 +12,8 @@ trait Anon_Parenthesized extends js.Object {
 object Anon_Parenthesized {
   @scala.inline
   def apply(parenthesized: scala.Boolean): Anon_Parenthesized = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parenthesized")(parenthesized)
+    val __obj = js.Dynamic.literal(parenthesized = parenthesized)
+  
     __obj.asInstanceOf[Anon_Parenthesized]
   }
 }

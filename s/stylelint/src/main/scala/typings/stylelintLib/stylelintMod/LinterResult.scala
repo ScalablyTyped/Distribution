@@ -20,11 +20,8 @@ object LinterResult {
     postcssResults: js.Array[_],
     results: js.Array[LintResult]
   ): LinterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errored")(errored)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("postcssResults")(postcssResults)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(errored = errored, output = output, postcssResults = postcssResults, results = results)
+  
     __obj.asInstanceOf[LinterResult]
   }
 }

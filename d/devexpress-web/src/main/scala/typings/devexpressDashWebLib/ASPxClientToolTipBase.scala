@@ -61,15 +61,8 @@ object ASPxClientToolTipBase {
     ShowViewMenu: js.Function1[js.Object, scala.Unit],
     Update: js.Function1[ASPxClientSchedulerToolTipData, scala.Unit]
   ): ASPxClientToolTipBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CalculatePosition")(CalculatePosition)
-    __obj.updateDynamic("CanShowToolTip")(CanShowToolTip)
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("ConvertIntervalToString")(ConvertIntervalToString)
-    __obj.updateDynamic("FinalizeUpdate")(FinalizeUpdate)
-    __obj.updateDynamic("ShowAppointmentMenu")(ShowAppointmentMenu)
-    __obj.updateDynamic("ShowViewMenu")(ShowViewMenu)
-    __obj.updateDynamic("Update")(Update)
+    val __obj = js.Dynamic.literal(CalculatePosition = CalculatePosition, CanShowToolTip = CanShowToolTip, Close = Close, ConvertIntervalToString = ConvertIntervalToString, FinalizeUpdate = FinalizeUpdate, ShowAppointmentMenu = ShowAppointmentMenu, ShowViewMenu = ShowViewMenu, Update = Update)
+  
     __obj.asInstanceOf[ASPxClientToolTipBase]
   }
 }

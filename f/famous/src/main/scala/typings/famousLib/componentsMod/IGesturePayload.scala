@@ -28,15 +28,8 @@ object IGesturePayload {
     status: java.lang.String,
     time: scala.Double
   ): IGesturePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("centerDelta")(centerDelta)
-    __obj.updateDynamic("centerVelocity")(centerVelocity)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("pointers")(pointers)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(center = center, centerDelta = centerDelta, centerVelocity = centerVelocity, current = current, pointers = pointers, points = points, status = status, time = time)
+  
     __obj.asInstanceOf[IGesturePayload]
   }
 }

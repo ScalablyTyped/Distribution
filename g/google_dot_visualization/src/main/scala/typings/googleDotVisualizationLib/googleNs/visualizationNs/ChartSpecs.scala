@@ -30,8 +30,7 @@ object ChartSpecs {
     refreshInterval: scala.Int | scala.Double = null,
     view: js.Any = null
   ): ChartSpecs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chartType")(chartType)
+    val __obj = js.Dynamic.literal(chartType = chartType)
     if (container != null) __obj.updateDynamic("container")(container)
     if (containerId != null) __obj.updateDynamic("containerId")(containerId)
     if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)

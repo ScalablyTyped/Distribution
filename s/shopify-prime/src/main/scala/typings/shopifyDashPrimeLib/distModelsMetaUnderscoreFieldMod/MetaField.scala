@@ -60,13 +60,7 @@ object MetaField {
     owner_id: scala.Int | scala.Double = null,
     updated_at: java.lang.String = null
   ): MetaField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("owner_resource")(owner_resource)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description, key = key, namespace = namespace, owner_resource = owner_resource, value = value.asInstanceOf[js.Any], value_type = value_type.asInstanceOf[js.Any])
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

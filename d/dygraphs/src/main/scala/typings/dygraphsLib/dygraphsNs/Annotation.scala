@@ -124,8 +124,7 @@ object Annotation {
     x: scala.Double | java.lang.String = null,
     xval: scala.Int | scala.Double = null
   ): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(series = series)
     if (!js.isUndefined(attachAtBottom)) __obj.updateDynamic("attachAtBottom")(attachAtBottom)
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
     if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)

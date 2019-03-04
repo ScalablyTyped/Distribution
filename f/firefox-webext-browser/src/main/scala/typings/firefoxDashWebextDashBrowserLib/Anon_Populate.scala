@@ -26,8 +26,7 @@ object Anon_Populate {
     populate: js.UndefOr[scala.Boolean] = js.undefined,
     windowId: scala.Int | scala.Double = null
   ): Anon_Populate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabs")(tabs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
     if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate)
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Populate]

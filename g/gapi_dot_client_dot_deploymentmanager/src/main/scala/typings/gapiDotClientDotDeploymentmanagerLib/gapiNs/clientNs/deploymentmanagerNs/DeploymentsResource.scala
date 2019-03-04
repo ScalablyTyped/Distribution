@@ -78,18 +78,8 @@ object DeploymentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): DeploymentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelPreview")(cancelPreview)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(cancelPreview = cancelPreview, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, setIamPolicy = setIamPolicy, stop = stop, testIamPermissions = testIamPermissions, update = update)
+  
     __obj.asInstanceOf[DeploymentsResource]
   }
 }

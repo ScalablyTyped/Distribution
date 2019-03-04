@@ -35,18 +35,8 @@ object XStyle {
     setName: js.Function1[java.lang.String, scala.Unit],
     setParentStyle: js.Function1[java.lang.String, scala.Unit]
   ): XStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ParentStyle")(ParentStyle)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParentStyle")(getParentStyle)
-    __obj.updateDynamic("isInUse")(isInUse)
-    __obj.updateDynamic("isUserDefined")(isUserDefined)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParentStyle")(setParentStyle)
+    val __obj = js.Dynamic.literal(Name = Name, ParentStyle = ParentStyle, acquire = acquire, getName = getName, getParentStyle = getParentStyle, isInUse = isInUse, isUserDefined = isUserDefined, queryInterface = queryInterface, release = release, setName = setName, setParentStyle = setParentStyle)
+  
     __obj.asInstanceOf[XStyle]
   }
 }

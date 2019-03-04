@@ -24,9 +24,7 @@ object ojLabelSettableProperties {
     labelId: java.lang.String = null,
     showRequired: js.UndefOr[scala.Boolean] = js.undefined
   ): ojLabelSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(help = help, translations = translations)
     if (`for` != null) __obj.updateDynamic("for")(`for`)
     if (labelId != null) __obj.updateDynamic("labelId")(labelId)
     if (!js.isUndefined(showRequired)) __obj.updateDynamic("showRequired")(showRequired)

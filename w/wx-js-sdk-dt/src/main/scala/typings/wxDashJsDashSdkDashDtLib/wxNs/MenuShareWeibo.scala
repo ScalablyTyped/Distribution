@@ -25,10 +25,7 @@ object MenuShareWeibo {
     success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
     trigger: js.Function0[scala.Unit] = null
   ): MenuShareWeibo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(desc = desc, link = link, title = title)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

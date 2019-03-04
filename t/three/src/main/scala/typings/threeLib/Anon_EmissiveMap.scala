@@ -12,8 +12,8 @@ trait Anon_EmissiveMap extends js.Object {
 object Anon_EmissiveMap {
   @scala.inline
   def apply(emissiveMap: threeLib.threeDashCoreMod.IUniform): Anon_EmissiveMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emissiveMap")(emissiveMap)
+    val __obj = js.Dynamic.literal(emissiveMap = emissiveMap)
+  
     __obj.asInstanceOf[Anon_EmissiveMap]
   }
 }

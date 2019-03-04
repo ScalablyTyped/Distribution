@@ -20,10 +20,8 @@ object List {
     `type`: intercomDashClientLib.intercomDashClientLibStrings.userDOTlist,
     users: js.Array[User]
   ): List = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("total_count")(total_count)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(pages = pages, total_count = total_count, users = users)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[List]
   }
 }

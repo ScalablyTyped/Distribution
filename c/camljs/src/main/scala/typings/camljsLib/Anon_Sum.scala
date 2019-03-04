@@ -13,8 +13,8 @@ trait Anon_Sum
 object Anon_Sum {
   @scala.inline
   def apply(sum: java.lang.String): Anon_Sum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sum")(sum)
+    val __obj = js.Dynamic.literal(sum = sum)
+  
     __obj.asInstanceOf[Anon_Sum]
   }
 }

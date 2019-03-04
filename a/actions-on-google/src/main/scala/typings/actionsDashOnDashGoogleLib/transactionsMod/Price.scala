@@ -17,8 +17,8 @@ object Price {
     amount: actionsDashOnDashGoogleLib.Anon_CurrencyCode,
     `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
   ): Price = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
+    val __obj = js.Dynamic.literal(amount = amount)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Price]
   }
 }

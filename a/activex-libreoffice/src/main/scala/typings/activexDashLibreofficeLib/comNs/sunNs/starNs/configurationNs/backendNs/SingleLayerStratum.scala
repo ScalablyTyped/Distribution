@@ -25,18 +25,8 @@ object SingleLayerStratum {
     release: js.Function0[scala.Unit],
     supportsEntity: js.Function1[java.lang.String, scala.Boolean]
   ): SingleLayerStratum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdminEntity")(AdminEntity)
-    __obj.updateDynamic("OwnerEntity")(OwnerEntity)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAdminEntity")(getAdminEntity)
-    __obj.updateDynamic("getLayer")(getLayer)
-    __obj.updateDynamic("getOwnerEntity")(getOwnerEntity)
-    __obj.updateDynamic("getUpdatableLayer")(getUpdatableLayer)
-    __obj.updateDynamic("isEqualEntity")(isEqualEntity)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("supportsEntity")(supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getLayer = getLayer, getOwnerEntity = getOwnerEntity, getUpdatableLayer = getUpdatableLayer, isEqualEntity = isEqualEntity, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+  
     __obj.asInstanceOf[SingleLayerStratum]
   }
 }

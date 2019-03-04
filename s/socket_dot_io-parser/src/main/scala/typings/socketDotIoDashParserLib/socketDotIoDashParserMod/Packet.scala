@@ -14,9 +14,8 @@ trait Packet extends js.Object {
 object Packet {
   @scala.inline
   def apply(data: js.Any, id: scala.Double, `type`: scala.Double): Packet = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(data = data, id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Packet]
   }
 }

@@ -37,8 +37,8 @@ object ColumnMetaData {
     precision: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null
   ): ColumnMetaData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("colName")(colName)
+    val __obj = js.Dynamic.literal(colName = colName)
+    __obj.updateDynamic("type")(`type`)
     if (dataLength != null) __obj.updateDynamic("dataLength")(dataLength.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])

@@ -56,25 +56,8 @@ object ISCEService {
     trustAsResourceUrl: js.Function1[js.Any, js.Any],
     trustAsUrl: js.Function1[js.Any, js.Any]
   ): ISCEService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTrusted")(getTrusted)
-    __obj.updateDynamic("getTrustedCss")(getTrustedCss)
-    __obj.updateDynamic("getTrustedHtml")(getTrustedHtml)
-    __obj.updateDynamic("getTrustedJs")(getTrustedJs)
-    __obj.updateDynamic("getTrustedResourceUrl")(getTrustedResourceUrl)
-    __obj.updateDynamic("getTrustedUrl")(getTrustedUrl)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("parseAsCss")(parseAsCss)
-    __obj.updateDynamic("parseAsHtml")(parseAsHtml)
-    __obj.updateDynamic("parseAsJs")(parseAsJs)
-    __obj.updateDynamic("parseAsResourceUrl")(parseAsResourceUrl)
-    __obj.updateDynamic("parseAsUrl")(parseAsUrl)
-    __obj.updateDynamic("trustAs")(trustAs)
-    __obj.updateDynamic("trustAsHtml")(trustAsHtml)
-    __obj.updateDynamic("trustAsJs")(trustAsJs)
-    __obj.updateDynamic("trustAsResourceUrl")(trustAsResourceUrl)
-    __obj.updateDynamic("trustAsUrl")(trustAsUrl)
+    val __obj = js.Dynamic.literal(getTrusted = getTrusted, getTrustedCss = getTrustedCss, getTrustedHtml = getTrustedHtml, getTrustedJs = getTrustedJs, getTrustedResourceUrl = getTrustedResourceUrl, getTrustedUrl = getTrustedUrl, isEnabled = isEnabled, parse = parse, parseAsCss = parseAsCss, parseAsHtml = parseAsHtml, parseAsJs = parseAsJs, parseAsResourceUrl = parseAsResourceUrl, parseAsUrl = parseAsUrl, trustAs = trustAs, trustAsHtml = trustAsHtml, trustAsJs = trustAsJs, trustAsResourceUrl = trustAsResourceUrl, trustAsUrl = trustAsUrl)
+  
     __obj.asInstanceOf[ISCEService]
   }
 }

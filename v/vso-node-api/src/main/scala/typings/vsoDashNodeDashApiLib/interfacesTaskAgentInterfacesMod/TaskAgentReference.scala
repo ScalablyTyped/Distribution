@@ -39,13 +39,8 @@ object TaskAgentReference {
     status: TaskAgentStatus,
     version: java.lang.String
   ): TaskAgentReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(_links = _links, enabled = enabled, id = id, name = name, status = status, version = version)
+  
     __obj.asInstanceOf[TaskAgentReference]
   }
 }

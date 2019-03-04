@@ -21,8 +21,8 @@ object AnalyticsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListAnalyticsResponse]
     ]
   ): AnalyticsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[AnalyticsResource]
   }
 }

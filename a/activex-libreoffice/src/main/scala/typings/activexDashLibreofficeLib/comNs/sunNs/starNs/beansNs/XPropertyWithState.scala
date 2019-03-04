@@ -55,15 +55,8 @@ object XPropertyWithState {
     release: js.Function0[scala.Unit],
     setToDefaultAsProperty: js.Function0[scala.Unit]
   ): XPropertyWithState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultAsProperty")(DefaultAsProperty)
-    __obj.updateDynamic("StateAsProperty")(StateAsProperty)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultAsProperty")(getDefaultAsProperty)
-    __obj.updateDynamic("getStateAsProperty")(getStateAsProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setToDefaultAsProperty")(setToDefaultAsProperty)
+    val __obj = js.Dynamic.literal(DefaultAsProperty = DefaultAsProperty, StateAsProperty = StateAsProperty, acquire = acquire, getDefaultAsProperty = getDefaultAsProperty, getStateAsProperty = getStateAsProperty, queryInterface = queryInterface, release = release, setToDefaultAsProperty = setToDefaultAsProperty)
+  
     __obj.asInstanceOf[XPropertyWithState]
   }
 }

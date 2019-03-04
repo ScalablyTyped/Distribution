@@ -24,13 +24,8 @@ object IgEditorFilterMethods {
     setFocus: js.Function2[js.Object, js.Object, scala.Unit],
     validator: js.Function0[scala.Unit]
   ): IgEditorFilterMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exitEditMode")(exitEditMode)
-    __obj.updateDynamic("hasInvalidMessage")(hasInvalidMessage)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("validator")(validator)
+    val __obj = js.Dynamic.literal(destroy = destroy, exitEditMode = exitEditMode, hasInvalidMessage = hasInvalidMessage, remove = remove, setFocus = setFocus, validator = validator)
+  
     __obj.asInstanceOf[IgEditorFilterMethods]
   }
 }

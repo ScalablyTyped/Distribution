@@ -117,25 +117,8 @@ object Static {
     weekOfYear: TimePeriod,
     year: TimePeriod
   ): Static = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("dayOfWeek")(dayOfWeek)
-    __obj.updateDynamic("dayOfWeekCount")(dayOfWeekCount)
-    __obj.updateDynamic("dayOfYear")(dayOfYear)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("modifier")(modifier)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("setInterval")(setInterval)
-    __obj.updateDynamic("setTimeout")(setTimeout)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("weekOfMonth")(weekOfMonth)
-    __obj.updateDynamic("weekOfYear")(weekOfYear)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(date = date, day = day, dayOfWeek = dayOfWeek, dayOfWeekCount = dayOfWeekCount, dayOfYear = dayOfYear, hour = hour, minute = minute, modifier = modifier, month = month, parse = parse, schedule = schedule, second = second, setInterval = setInterval, setTimeout = setTimeout, time = time, weekOfMonth = weekOfMonth, weekOfYear = weekOfYear, year = year)
+  
     __obj.asInstanceOf[Static]
   }
 }

@@ -51,22 +51,8 @@ object SocketioP2PStatic {
     usePeerConnection: scala.Boolean,
     useSockets: scala.Boolean
   ): SocketioP2PStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binarySlice")(binarySlice)
-    __obj.updateDynamic("cb")(cb)
-    __obj.updateDynamic("decoder")(decoder)
-    __obj.updateDynamic("defaultOps")(defaultOps)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("numConnectedClients")(numConnectedClients)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("peerOpts")(peerOpts)
-    __obj.updateDynamic("setupPeerEvents")(setupPeerEvents)
-    __obj.updateDynamic("socket")(socket)
-    __obj.updateDynamic("upgrade")(upgrade)
-    __obj.updateDynamic("usePeerConnection")(usePeerConnection)
-    __obj.updateDynamic("useSockets")(useSockets)
+    val __obj = js.Dynamic.literal(binarySlice = binarySlice, cb = cb, decoder = decoder, defaultOps = defaultOps, disconnect = disconnect, emit = emit, numConnectedClients = numConnectedClients, on = on, opts = opts, peerOpts = peerOpts, setupPeerEvents = setupPeerEvents, socket = socket, upgrade = upgrade, usePeerConnection = usePeerConnection, useSockets = useSockets)
+  
     __obj.asInstanceOf[SocketioP2PStatic]
   }
 }

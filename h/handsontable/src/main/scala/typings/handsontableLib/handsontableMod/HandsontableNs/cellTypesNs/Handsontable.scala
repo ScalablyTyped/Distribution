@@ -16,9 +16,8 @@ object Handsontable {
     editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Handsontable,
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete
   ): Handsontable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(editor = editor, renderer = renderer)
+  
     __obj.asInstanceOf[Handsontable]
   }
 }

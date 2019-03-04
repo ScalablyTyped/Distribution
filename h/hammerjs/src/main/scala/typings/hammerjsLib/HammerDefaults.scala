@@ -34,14 +34,7 @@ object HammerDefaults {
     touchAction: java.lang.String,
     recognizers: js.Array[RecognizerTuple] = null
   ): HammerDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssProps")(cssProps)
-    __obj.updateDynamic("domEvents")(domEvents)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("inputClass")(inputClass)
-    __obj.updateDynamic("inputTarget")(inputTarget)
-    __obj.updateDynamic("preset")(preset)
-    __obj.updateDynamic("touchAction")(touchAction)
+    val __obj = js.Dynamic.literal(cssProps = cssProps, domEvents = domEvents, enable = enable, inputClass = inputClass, inputTarget = inputTarget, preset = preset, touchAction = touchAction)
     if (recognizers != null) __obj.updateDynamic("recognizers")(recognizers)
     __obj.asInstanceOf[HammerDefaults]
   }

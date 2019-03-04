@@ -24,8 +24,8 @@ trait Currency extends js.Object {
 object Currency {
   @scala.inline
   def apply(Value: scala.Double): Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Value = Value)
+  
     __obj.asInstanceOf[Currency]
   }
 }

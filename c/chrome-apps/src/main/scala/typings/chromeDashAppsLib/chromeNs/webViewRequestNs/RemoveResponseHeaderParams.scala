@@ -15,8 +15,7 @@ trait RemoveResponseHeaderParams extends js.Object {
 object RemoveResponseHeaderParams {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String = null): RemoveResponseHeaderParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[RemoveResponseHeaderParams]
   }

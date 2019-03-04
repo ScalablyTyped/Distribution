@@ -56,28 +56,8 @@ object HLJSStatic {
     UNDERSCORE_TITLE_MODE: IMode,
     inherit: js.Function2[js.Object, js.Object, js.Object]
   ): HLJSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("APOS_STRING_MODE")(APOS_STRING_MODE)
-    __obj.updateDynamic("BACKSLASH_ESCAPE")(BACKSLASH_ESCAPE)
-    __obj.updateDynamic("BINARY_NUMBER_MODE")(BINARY_NUMBER_MODE)
-    __obj.updateDynamic("BINARY_NUMBER_RE")(BINARY_NUMBER_RE)
-    __obj.updateDynamic("CSS_NUMBER_MODE")(CSS_NUMBER_MODE)
-    __obj.updateDynamic("C_BLOCK_COMMENT_MODE")(C_BLOCK_COMMENT_MODE)
-    __obj.updateDynamic("C_LINE_COMMENT_MODE")(C_LINE_COMMENT_MODE)
-    __obj.updateDynamic("C_NUMBER_MODE")(C_NUMBER_MODE)
-    __obj.updateDynamic("C_NUMBER_RE")(C_NUMBER_RE)
-    __obj.updateDynamic("HASH_COMMENT_MODE")(HASH_COMMENT_MODE)
-    __obj.updateDynamic("IDENT_RE")(IDENT_RE)
-    __obj.updateDynamic("NUMBER_MODE")(NUMBER_MODE)
-    __obj.updateDynamic("NUMBER_RE")(NUMBER_RE)
-    __obj.updateDynamic("PHRASAL_WORDS_MODE")(PHRASAL_WORDS_MODE)
-    __obj.updateDynamic("QUOTE_STRING_MODE")(QUOTE_STRING_MODE)
-    __obj.updateDynamic("REGEX_MODE")(REGEX_MODE)
-    __obj.updateDynamic("RE_STARTERS_RE")(RE_STARTERS_RE)
-    __obj.updateDynamic("TITLE_MODE")(TITLE_MODE)
-    __obj.updateDynamic("UNDERSCORE_IDENT_RE")(UNDERSCORE_IDENT_RE)
-    __obj.updateDynamic("UNDERSCORE_TITLE_MODE")(UNDERSCORE_TITLE_MODE)
-    __obj.updateDynamic("inherit")(inherit)
+    val __obj = js.Dynamic.literal(APOS_STRING_MODE = APOS_STRING_MODE, BACKSLASH_ESCAPE = BACKSLASH_ESCAPE, BINARY_NUMBER_MODE = BINARY_NUMBER_MODE, BINARY_NUMBER_RE = BINARY_NUMBER_RE, CSS_NUMBER_MODE = CSS_NUMBER_MODE, C_BLOCK_COMMENT_MODE = C_BLOCK_COMMENT_MODE, C_LINE_COMMENT_MODE = C_LINE_COMMENT_MODE, C_NUMBER_MODE = C_NUMBER_MODE, C_NUMBER_RE = C_NUMBER_RE, HASH_COMMENT_MODE = HASH_COMMENT_MODE, IDENT_RE = IDENT_RE, NUMBER_MODE = NUMBER_MODE, NUMBER_RE = NUMBER_RE, PHRASAL_WORDS_MODE = PHRASAL_WORDS_MODE, QUOTE_STRING_MODE = QUOTE_STRING_MODE, REGEX_MODE = REGEX_MODE, RE_STARTERS_RE = RE_STARTERS_RE, TITLE_MODE = TITLE_MODE, UNDERSCORE_IDENT_RE = UNDERSCORE_IDENT_RE, UNDERSCORE_TITLE_MODE = UNDERSCORE_TITLE_MODE, inherit = inherit)
+  
     __obj.asInstanceOf[HLJSStatic]
   }
 }

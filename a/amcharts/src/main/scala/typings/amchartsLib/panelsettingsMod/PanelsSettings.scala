@@ -174,32 +174,8 @@ object PanelsSettings {
     startEffect: java.lang.String,
     usePrefixes: scala.Boolean
   ): PanelsSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("columnSpacing")(columnSpacing)
-    __obj.updateDynamic("columnWidth")(columnWidth)
-    __obj.updateDynamic("depth3D")(depth3D)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("marginBottom")(marginBottom)
-    __obj.updateDynamic("marginLeft")(marginLeft)
-    __obj.updateDynamic("marginRight")(marginRight)
-    __obj.updateDynamic("marginTop")(marginTop)
-    __obj.updateDynamic("panEventsEnabled")(panEventsEnabled)
-    __obj.updateDynamic("panelSpacing")(panelSpacing)
-    __obj.updateDynamic("plotAreaBorderAlpha")(plotAreaBorderAlpha)
-    __obj.updateDynamic("plotAreaBorderColor")(plotAreaBorderColor)
-    __obj.updateDynamic("plotAreaFillAlphas")(plotAreaFillAlphas)
-    __obj.updateDynamic("plotAreaFillColors")(plotAreaFillColors)
-    __obj.updateDynamic("prefixesOfBigNumbers")(prefixesOfBigNumbers)
-    __obj.updateDynamic("prefixesOfSmallNumbers")(prefixesOfSmallNumbers)
-    __obj.updateDynamic("sequencedAnimation")(sequencedAnimation)
-    __obj.updateDynamic("startAlpha")(startAlpha)
-    __obj.updateDynamic("startDuration")(startDuration)
-    __obj.updateDynamic("startEffect")(startEffect)
-    __obj.updateDynamic("usePrefixes")(usePrefixes)
+    val __obj = js.Dynamic.literal(angle = angle, backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, columnSpacing = columnSpacing, columnWidth = columnWidth, depth3D = depth3D, fontFamily = fontFamily, fontSize = fontSize, marginBottom = marginBottom, marginLeft = marginLeft, marginRight = marginRight, marginTop = marginTop, panEventsEnabled = panEventsEnabled, panelSpacing = panelSpacing, plotAreaBorderAlpha = plotAreaBorderAlpha, plotAreaBorderColor = plotAreaBorderColor, plotAreaFillAlphas = plotAreaFillAlphas, plotAreaFillColors = plotAreaFillColors, prefixesOfBigNumbers = prefixesOfBigNumbers, prefixesOfSmallNumbers = prefixesOfSmallNumbers, sequencedAnimation = sequencedAnimation, startAlpha = startAlpha, startDuration = startDuration, startEffect = startEffect, usePrefixes = usePrefixes)
+  
     __obj.asInstanceOf[PanelsSettings]
   }
 }

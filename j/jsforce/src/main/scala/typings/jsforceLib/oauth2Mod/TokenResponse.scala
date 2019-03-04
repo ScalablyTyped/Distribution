@@ -13,9 +13,8 @@ trait TokenResponse extends js.Object {
 object TokenResponse {
   @scala.inline
   def apply(access_token: java.lang.String, refresh_token: java.lang.String): TokenResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("refresh_token")(refresh_token)
+    val __obj = js.Dynamic.literal(access_token = access_token, refresh_token = refresh_token)
+  
     __obj.asInstanceOf[TokenResponse]
   }
 }

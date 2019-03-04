@@ -26,10 +26,8 @@ trait ContextInformation extends js.Object {
 object ContextInformation {
   @scala.inline
   def apply(host: HostType, platform: PlatformType, version: java.lang.String): ContextInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(host = host, platform = platform, version = version)
+  
     __obj.asInstanceOf[ContextInformation]
   }
 }

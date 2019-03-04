@@ -18,10 +18,8 @@ trait IGameController extends js.Object {
 object IGameController {
   @scala.inline
   def apply(headset: Headset, isWireless: scala.Boolean, user: winrtDashUwpLib.WindowsNs.SystemNs.User): IGameController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headset")(headset)
-    __obj.updateDynamic("isWireless")(isWireless)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(headset = headset, isWireless = isWireless, user = user)
+  
     __obj.asInstanceOf[IGameController]
   }
 }

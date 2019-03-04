@@ -30,9 +30,7 @@ object IWallabyConfig {
     testFramework: java.lang.String = null,
     workers: IWallabyWorkers = null
   ): IWallabyConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    __obj.updateDynamic("tests")(tests.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
     if (compilers != null) __obj.updateDynamic("compilers")(compilers)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (env != null) __obj.updateDynamic("env")(env)

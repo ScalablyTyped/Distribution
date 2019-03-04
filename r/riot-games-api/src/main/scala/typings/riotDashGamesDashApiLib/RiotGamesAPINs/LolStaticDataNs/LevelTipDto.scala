@@ -13,9 +13,8 @@ trait LevelTipDto extends js.Object {
 object LevelTipDto {
   @scala.inline
   def apply(effect: js.Array[java.lang.String], label: js.Array[java.lang.String]): LevelTipDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(effect = effect, label = label)
+  
     __obj.asInstanceOf[LevelTipDto]
   }
 }

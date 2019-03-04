@@ -20,10 +20,7 @@ object ITimeLineAsset {
     media: java.lang.String,
     thumbnail: java.lang.String = null
   ): ITimeLineAsset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("credit")(credit)
-    __obj.updateDynamic("media")(media)
+    val __obj = js.Dynamic.literal(caption = caption, credit = credit, media = media)
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
     __obj.asInstanceOf[ITimeLineAsset]
   }

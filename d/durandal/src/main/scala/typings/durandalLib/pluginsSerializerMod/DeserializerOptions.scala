@@ -34,10 +34,8 @@ object DeserializerOptions {
     getTypeId: js.Function1[js.Any, java.lang.String],
     reviver: js.Function2[java.lang.String, js.Any, js.Any]
   ): DeserializerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConstructor")(getConstructor)
-    __obj.updateDynamic("getTypeId")(getTypeId)
-    __obj.updateDynamic("reviver")(reviver)
+    val __obj = js.Dynamic.literal(getConstructor = getConstructor, getTypeId = getTypeId, reviver = reviver)
+  
     __obj.asInstanceOf[DeserializerOptions]
   }
 }

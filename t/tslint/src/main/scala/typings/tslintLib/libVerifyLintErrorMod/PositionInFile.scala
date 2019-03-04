@@ -13,9 +13,8 @@ trait PositionInFile extends js.Object {
 object PositionInFile {
   @scala.inline
   def apply(col: scala.Double, line: scala.Double): PositionInFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(col = col, line = line)
+  
     __obj.asInstanceOf[PositionInFile]
   }
 }

@@ -13,8 +13,8 @@ trait ElementFinder extends js.Object {
 object ElementFinder {
   @scala.inline
   def apply($data: js.Function1[java.lang.String, ElementFinder]): ElementFinder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$data")($data)
+    val __obj = js.Dynamic.literal($data = $data)
+  
     __obj.asInstanceOf[ElementFinder]
   }
 }

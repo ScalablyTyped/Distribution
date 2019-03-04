@@ -20,11 +20,8 @@ object Anon_Billion {
     thousand: java.lang.String,
     trillion: java.lang.String
   ): Anon_Billion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("billion")(billion)
-    __obj.updateDynamic("million")(million)
-    __obj.updateDynamic("thousand")(thousand)
-    __obj.updateDynamic("trillion")(trillion)
+    val __obj = js.Dynamic.literal(billion = billion, million = million, thousand = thousand, trillion = trillion)
+  
     __obj.asInstanceOf[Anon_Billion]
   }
 }

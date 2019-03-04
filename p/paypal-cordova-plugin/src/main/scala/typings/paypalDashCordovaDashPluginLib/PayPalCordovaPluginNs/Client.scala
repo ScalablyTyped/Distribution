@@ -20,11 +20,8 @@ object Client {
     platform: java.lang.String,
     product_name: java.lang.String
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("paypal_sdk_version")(paypal_sdk_version)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("product_name")(product_name)
+    val __obj = js.Dynamic.literal(environment = environment, paypal_sdk_version = paypal_sdk_version, platform = platform, product_name = product_name)
+  
     __obj.asInstanceOf[Client]
   }
 }

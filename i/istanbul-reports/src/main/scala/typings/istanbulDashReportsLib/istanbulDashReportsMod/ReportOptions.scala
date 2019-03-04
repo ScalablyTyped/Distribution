@@ -36,16 +36,10 @@ object ReportOptions {
     `text-lcov`: Options,
     `text-summary`: Options
   ): ReportOptions = {
-    val __obj = js.Dynamic.literal(`json-summary` = `json-summary`, `text-lcov` = `text-lcov`, `text-summary` = `text-summary`)
-    __obj.updateDynamic("clover")(clover)
-    __obj.updateDynamic("cobertura")(cobertura)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("lcov")(lcov)
-    __obj.updateDynamic("lcovonly")(lcovonly)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("teamcity")(teamcity)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(clover = clover, cobertura = cobertura, html = html, json = json, lcov = lcov, lcovonly = lcovonly, none = none, teamcity = teamcity, text = text)
+    __obj.updateDynamic("json-summary")(`json-summary`)
+    __obj.updateDynamic("text-lcov")(`text-lcov`)
+    __obj.updateDynamic("text-summary")(`text-summary`)
     __obj.asInstanceOf[ReportOptions]
   }
 }

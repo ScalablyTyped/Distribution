@@ -18,10 +18,8 @@ object CloseFileRequestedEventOptions {
     openRequestId: chromeDashAppsLib.chromeNs.integer,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): CloseFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("openRequestId")(openRequestId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId, openRequestId = openRequestId, requestId = requestId)
+  
     __obj.asInstanceOf[CloseFileRequestedEventOptions]
   }
 }

@@ -19,10 +19,7 @@ object ScrollViewRefreshEvent {
     page: scala.Int | scala.Double = null,
     pageCount: scala.Int | scala.Double = null
   ): ScrollViewRefreshEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewRefreshEvent]

@@ -42,22 +42,8 @@ object DPlayer {
     video: stdLib.HTMLVideoElement,
     volume: js.Function3[scala.Double, scala.Boolean, scala.Boolean, scala.Unit]
   ): DPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("danmaku")(danmaku)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("fullScreen")(fullScreen)
-    __obj.updateDynamic("notice")(notice)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("switchQuality")(switchQuality)
-    __obj.updateDynamic("switchVideo")(switchVideo)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("video")(video)
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(danmaku = danmaku, destroy = destroy, events = events, fullScreen = fullScreen, notice = notice, on = on, pause = pause, play = play, seek = seek, speed = speed, switchQuality = switchQuality, switchVideo = switchVideo, toggle = toggle, video = video, volume = volume)
+  
     __obj.asInstanceOf[DPlayer]
   }
 }

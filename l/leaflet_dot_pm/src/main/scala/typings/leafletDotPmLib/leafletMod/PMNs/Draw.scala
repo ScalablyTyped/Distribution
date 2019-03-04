@@ -12,8 +12,8 @@ trait Draw extends js.Object {
 object Draw {
   @scala.inline
   def apply(getShapes: js.Function0[js.Array[java.lang.String]]): Draw = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getShapes")(getShapes)
+    val __obj = js.Dynamic.literal(getShapes = getShapes)
+  
     __obj.asInstanceOf[Draw]
   }
 }

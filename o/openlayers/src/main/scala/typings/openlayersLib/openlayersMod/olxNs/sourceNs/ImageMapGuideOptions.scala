@@ -32,8 +32,7 @@ object ImageMapGuideOptions {
     url: java.lang.String = null,
     useOverlay: js.UndefOr[scala.Boolean] = js.undefined
   ): ImageMapGuideOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (displayDpi != null) __obj.updateDynamic("displayDpi")(displayDpi.asInstanceOf[js.Any])
     if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
     if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)

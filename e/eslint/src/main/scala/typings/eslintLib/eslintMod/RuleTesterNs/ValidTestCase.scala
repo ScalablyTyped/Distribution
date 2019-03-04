@@ -26,8 +26,7 @@ object ValidTestCase {
     parserOptions: eslintLib.eslintMod.LinterNs.ParserOptions = null,
     settings: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ValidTestCase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (globals != null) __obj.updateDynamic("globals")(globals)
     if (options != null) __obj.updateDynamic("options")(options)

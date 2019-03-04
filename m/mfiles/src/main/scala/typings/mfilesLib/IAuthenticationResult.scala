@@ -18,10 +18,8 @@ object IAuthenticationResult {
     ServerFinal: IAuthenticationResultServerFinal,
     VaultFinal: IAuthenticationResultVaultFinal
   ): IAuthenticationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Intermediate")(Intermediate)
-    __obj.updateDynamic("ServerFinal")(ServerFinal)
-    __obj.updateDynamic("VaultFinal")(VaultFinal)
+    val __obj = js.Dynamic.literal(Intermediate = Intermediate, ServerFinal = ServerFinal, VaultFinal = VaultFinal)
+  
     __obj.asInstanceOf[IAuthenticationResult]
   }
 }

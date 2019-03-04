@@ -14,10 +14,8 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(batch: js.Array[Message], sentAt: stdLib.Date, timestamp: stdLib.Date): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batch")(batch)
-    __obj.updateDynamic("sentAt")(sentAt)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(batch = batch, sentAt = sentAt, timestamp = timestamp)
+  
     __obj.asInstanceOf[Data]
   }
 }

@@ -27,8 +27,7 @@ object SnapshotCopyGrantArgs {
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): SnapshotCopyGrantArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("snapshotCopyGrantName")(snapshotCopyGrantName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(snapshotCopyGrantName = snapshotCopyGrantName.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCopyGrantArgs]

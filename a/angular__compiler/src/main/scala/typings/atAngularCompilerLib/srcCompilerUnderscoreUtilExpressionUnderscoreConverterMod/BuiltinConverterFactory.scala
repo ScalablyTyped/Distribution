@@ -18,10 +18,8 @@ object BuiltinConverterFactory {
     createLiteralMapConverter: js.Function1[js.Array[atAngularCompilerLib.Anon_Key], BuiltinConverter],
     createPipeConverter: js.Function2[java.lang.String, scala.Double, BuiltinConverter]
   ): BuiltinConverterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createLiteralArrayConverter")(createLiteralArrayConverter)
-    __obj.updateDynamic("createLiteralMapConverter")(createLiteralMapConverter)
-    __obj.updateDynamic("createPipeConverter")(createPipeConverter)
+    val __obj = js.Dynamic.literal(createLiteralArrayConverter = createLiteralArrayConverter, createLiteralMapConverter = createLiteralMapConverter, createPipeConverter = createPipeConverter)
+  
     __obj.asInstanceOf[BuiltinConverterFactory]
   }
 }

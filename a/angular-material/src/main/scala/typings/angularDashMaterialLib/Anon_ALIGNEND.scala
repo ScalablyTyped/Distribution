@@ -22,12 +22,8 @@ object Anon_ALIGNEND {
     OFFSET_END: java.lang.String,
     OFFSET_START: java.lang.String
   ): Anon_ALIGNEND = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALIGN_END")(ALIGN_END)
-    __obj.updateDynamic("ALIGN_START")(ALIGN_START)
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("OFFSET_END")(OFFSET_END)
-    __obj.updateDynamic("OFFSET_START")(OFFSET_START)
+    val __obj = js.Dynamic.literal(ALIGN_END = ALIGN_END, ALIGN_START = ALIGN_START, CENTER = CENTER, OFFSET_END = OFFSET_END, OFFSET_START = OFFSET_START)
+  
     __obj.asInstanceOf[Anon_ALIGNEND]
   }
 }

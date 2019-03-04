@@ -22,12 +22,8 @@ object SlotInfo {
     manufacturerID: java.lang.String,
     slotDescription: java.lang.String
   ): SlotInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firmwareVersion")(firmwareVersion)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("hardwareVersion")(hardwareVersion)
-    __obj.updateDynamic("manufacturerID")(manufacturerID)
-    __obj.updateDynamic("slotDescription")(slotDescription)
+    val __obj = js.Dynamic.literal(firmwareVersion = firmwareVersion, flags = flags, hardwareVersion = hardwareVersion, manufacturerID = manufacturerID, slotDescription = slotDescription)
+  
     __obj.asInstanceOf[SlotInfo]
   }
 }

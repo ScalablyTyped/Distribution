@@ -13,9 +13,8 @@ trait SendJobResponse extends js.Object {
 object SendJobResponse {
   @scala.inline
   def apply(events: JobEventsConfig, variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]): SendJobResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(events = events, variables = variables)
+  
     __obj.asInstanceOf[SendJobResponse]
   }
 }

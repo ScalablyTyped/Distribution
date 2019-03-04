@@ -12,9 +12,8 @@ trait BlurOptions
 object BlurOptions {
   @scala.inline
   def apply(force: scala.Boolean, log: scala.Boolean): BlurOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("force")(force)
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(force = force, log = log)
+  
     __obj.asInstanceOf[BlurOptions]
   }
 }

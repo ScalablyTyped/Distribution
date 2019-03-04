@@ -20,10 +20,7 @@ object Params {
     user_id: scala.Double,
     email: java.lang.String = null
   ): Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expires_in = expires_in, user_id = user_id)
     if (email != null) __obj.updateDynamic("email")(email)
     __obj.asInstanceOf[Params]
   }

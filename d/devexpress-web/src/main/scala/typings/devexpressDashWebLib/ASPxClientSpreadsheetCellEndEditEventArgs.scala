@@ -27,14 +27,8 @@ object ASPxClientSpreadsheetCellEndEditEventArgs {
     sheetName: java.lang.String,
     value: java.lang.String
   ): ASPxClientSpreadsheetCellEndEditEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("editorText")(editorText)
-    __obj.updateDynamic("formula")(formula)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("sheetName")(sheetName)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(cancel = cancel, columnIndex = columnIndex, editorText = editorText, formula = formula, rowIndex = rowIndex, sheetName = sheetName, value = value)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetCellEndEditEventArgs]
   }
 }

@@ -68,8 +68,7 @@ object NodeData {
     unselectableIgnore: js.UndefOr[scala.Boolean] = js.undefined,
     unselectableStatus: js.UndefOr[scala.Boolean] = js.undefined
   ): NodeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (children != null) __obj.updateDynamic("children")(children)
     if (data != null) __obj.updateDynamic("data")(data)

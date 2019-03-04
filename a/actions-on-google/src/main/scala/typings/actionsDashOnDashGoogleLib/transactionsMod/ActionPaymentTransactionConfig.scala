@@ -23,9 +23,8 @@ object ActionPaymentTransactionConfig {
     `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType,
     customerInfoOptions: CustomerInfoOptions = null
   ): ActionPaymentTransactionConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("deliveryAddressRequired")(deliveryAddressRequired)
-    __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(deliveryAddressRequired = deliveryAddressRequired, displayName = displayName)
+    __obj.updateDynamic("type")(`type`)
     if (customerInfoOptions != null) __obj.updateDynamic("customerInfoOptions")(customerInfoOptions)
     __obj.asInstanceOf[ActionPaymentTransactionConfig]
   }

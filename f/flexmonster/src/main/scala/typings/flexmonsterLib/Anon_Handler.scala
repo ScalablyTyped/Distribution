@@ -13,8 +13,7 @@ trait Anon_Handler extends js.Object {
 object Anon_Handler {
   @scala.inline
   def apply(label: java.lang.String, handler: js.Function0[scala.Unit] = null): Anon_Handler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     __obj.asInstanceOf[Anon_Handler]
   }

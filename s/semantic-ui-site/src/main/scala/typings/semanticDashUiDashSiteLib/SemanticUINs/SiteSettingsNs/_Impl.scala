@@ -52,16 +52,8 @@ object _Impl {
     siteNamespace: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("namespaceStub")(namespaceStub.asInstanceOf[js.Any])
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("siteNamespace")(siteNamespace)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(debug = debug, modules = modules, name = name, namespace = namespace, namespaceStub = namespaceStub.asInstanceOf[js.Any], performance = performance, silent = silent, siteNamespace = siteNamespace, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

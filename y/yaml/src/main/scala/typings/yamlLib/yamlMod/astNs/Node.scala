@@ -43,8 +43,7 @@ object Node {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     tag: java.lang.String = null
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

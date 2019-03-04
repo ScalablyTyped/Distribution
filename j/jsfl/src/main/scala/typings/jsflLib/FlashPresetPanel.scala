@@ -38,20 +38,8 @@ object FlashPresetPanel {
     renameItem: js.Function0[js.Any],
     selectItem: js.Function0[js.Any]
   ): FlashPresetPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNewItem")(addNewItem)
-    __obj.updateDynamic("applyPreset")(applyPreset)
-    __obj.updateDynamic("deleteFolder")(deleteFolder)
-    __obj.updateDynamic("deleteItem")(deleteItem)
-    __obj.updateDynamic("expandFolder")(expandFolder)
-    __obj.updateDynamic("exportItem")(exportItem)
-    __obj.updateDynamic("findItemIndex")(findItemIndex)
-    __obj.updateDynamic("getSelectedItems")(getSelectedItems)
-    __obj.updateDynamic("importItem")(importItem)
-    __obj.updateDynamic("moveToFolder")(moveToFolder)
-    __obj.updateDynamic("newFolder")(newFolder)
-    __obj.updateDynamic("renameItem")(renameItem)
-    __obj.updateDynamic("selectItem")(selectItem)
+    val __obj = js.Dynamic.literal(addNewItem = addNewItem, applyPreset = applyPreset, deleteFolder = deleteFolder, deleteItem = deleteItem, expandFolder = expandFolder, exportItem = exportItem, findItemIndex = findItemIndex, getSelectedItems = getSelectedItems, importItem = importItem, moveToFolder = moveToFolder, newFolder = newFolder, renameItem = renameItem, selectItem = selectItem)
+  
     __obj.asInstanceOf[FlashPresetPanel]
   }
 }

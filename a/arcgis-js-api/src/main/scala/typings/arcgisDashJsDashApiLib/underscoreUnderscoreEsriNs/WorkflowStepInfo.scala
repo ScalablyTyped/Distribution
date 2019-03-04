@@ -30,12 +30,8 @@ object WorkflowStepInfo {
     name: java.lang.String,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): WorkflowStepInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[WorkflowStepInfo]
   }
 }

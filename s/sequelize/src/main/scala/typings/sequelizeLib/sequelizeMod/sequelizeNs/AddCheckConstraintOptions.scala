@@ -18,7 +18,8 @@ object AddCheckConstraintOptions {
     name: java.lang.String = null,
     where: AnyWhereOptions = null
   ): AddCheckConstraintOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
     if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[AddCheckConstraintOptions]

@@ -16,8 +16,7 @@ object Anon_LogDestinationRedactedFields {
     logDestination: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     redactedFields: atPulumiPulumiLib.outputMod.Input[Anon_FieldToMatchesAnonDataTypeInput] = null
   ): Anon_LogDestinationRedactedFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logDestination")(logDestination.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(logDestination = logDestination.asInstanceOf[js.Any])
     if (redactedFields != null) __obj.updateDynamic("redactedFields")(redactedFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LogDestinationRedactedFields]
   }

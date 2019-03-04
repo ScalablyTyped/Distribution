@@ -13,8 +13,7 @@ trait Anon_Logger extends js.Object {
 object Anon_Logger {
   @scala.inline
   def apply(logger: zipkinLib.zipkinMod.zipkinNs.Logger, timeout: scala.Int | scala.Double = null): Anon_Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(logger = logger)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Logger]
   }

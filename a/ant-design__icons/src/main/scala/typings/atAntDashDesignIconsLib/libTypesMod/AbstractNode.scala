@@ -18,9 +18,7 @@ object AbstractNode {
     tag: java.lang.String,
     children: js.Array[AbstractNode] = null
   ): AbstractNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(attrs = attrs, tag = tag)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[AbstractNode]
   }

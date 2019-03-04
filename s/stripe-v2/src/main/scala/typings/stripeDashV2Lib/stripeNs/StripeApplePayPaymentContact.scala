@@ -30,16 +30,8 @@ object StripeApplePayPaymentContact {
     phoneNumber: java.lang.String,
     postalCode: java.lang.String
   ): StripeApplePayPaymentContact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressLines")(addressLines)
-    __obj.updateDynamic("administrativeArea")(administrativeArea)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("postalCode")(postalCode)
+    val __obj = js.Dynamic.literal(addressLines = addressLines, administrativeArea = administrativeArea, countryCode = countryCode, emailAddress = emailAddress, familyName = familyName, givenName = givenName, locality = locality, phoneNumber = phoneNumber, postalCode = postalCode)
+  
     __obj.asInstanceOf[StripeApplePayPaymentContact]
   }
 }

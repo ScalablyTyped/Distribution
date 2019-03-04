@@ -13,9 +13,8 @@ trait canSetBidModifier extends js.Object {
 object canSetBidModifier {
   @scala.inline
   def apply(getBidModifier: js.Function0[scala.Double], setBidModifier: js.Function1[scala.Double, scala.Unit]): canSetBidModifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBidModifier")(getBidModifier)
-    __obj.updateDynamic("setBidModifier")(setBidModifier)
+    val __obj = js.Dynamic.literal(getBidModifier = getBidModifier, setBidModifier = setBidModifier)
+  
     __obj.asInstanceOf[canSetBidModifier]
   }
 }

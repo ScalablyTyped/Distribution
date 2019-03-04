@@ -38,13 +38,7 @@ object VastMediaFile {
     mimeType: java.lang.String = null,
     scalable: js.UndefOr[scala.Boolean] = js.undefined
   ): VastMediaFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("deliveryType")(deliveryType)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maxBitrate")(maxBitrate)
-    __obj.updateDynamic("minBitrate")(minBitrate)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bitrate = bitrate, deliveryType = deliveryType, height = height, maxBitrate = maxBitrate, minBitrate = minBitrate, width = width)
     if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
     if (codec != null) __obj.updateDynamic("codec")(codec)
     if (fileURL != null) __obj.updateDynamic("fileURL")(fileURL)

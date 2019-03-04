@@ -13,9 +13,8 @@ trait Anon_Endcursor extends js.Object {
 object Anon_Endcursor {
   @scala.inline
   def apply(end_cursor: java.lang.String, has_next_page: scala.Boolean): Anon_Endcursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end_cursor")(end_cursor)
-    __obj.updateDynamic("has_next_page")(has_next_page)
+    val __obj = js.Dynamic.literal(end_cursor = end_cursor, has_next_page = has_next_page)
+  
     __obj.asInstanceOf[Anon_Endcursor]
   }
 }

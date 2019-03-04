@@ -18,10 +18,8 @@ object DbJsStatic {
     delete: js.Function1[java.lang.String, js.Promise[scala.Unit]],
     open: js.Function1[OpenOptions, js.Promise[Server]]
   ): DbJsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmp")(cmp)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(cmp = cmp, delete = delete, open = open)
+  
     __obj.asInstanceOf[DbJsStatic]
   }
 }

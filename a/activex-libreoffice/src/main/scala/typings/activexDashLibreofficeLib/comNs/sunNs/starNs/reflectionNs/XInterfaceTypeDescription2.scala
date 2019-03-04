@@ -55,24 +55,8 @@ object XInterfaceTypeDescription2 {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInterfaceTypeDescription2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaseType")(BaseType)
-    __obj.updateDynamic("BaseTypes")(BaseTypes)
-    __obj.updateDynamic("Members")(Members)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OptionalBaseTypes")(OptionalBaseTypes)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("Uik")(Uik)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getBaseType")(getBaseType)
-    __obj.updateDynamic("getBaseTypes")(getBaseTypes)
-    __obj.updateDynamic("getMembers")(getMembers)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getOptionalBaseTypes")(getOptionalBaseTypes)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("getUik")(getUik)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, BaseTypes = BaseTypes, Members = Members, Name = Name, OptionalBaseTypes = OptionalBaseTypes, TypeClass = TypeClass, Uik = Uik, acquire = acquire, getBaseType = getBaseType, getBaseTypes = getBaseTypes, getMembers = getMembers, getName = getName, getOptionalBaseTypes = getOptionalBaseTypes, getTypeClass = getTypeClass, getUik = getUik, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInterfaceTypeDescription2]
   }
 }

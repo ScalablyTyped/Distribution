@@ -14,9 +14,7 @@ trait Anon_DurationLine extends js.Object {
 object Anon_DurationLine {
   @scala.inline
   def apply(duration: java.lang.String, text: java.lang.String, line: scala.Int | scala.Double = null): Anon_DurationLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(duration = duration, text = text)
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DurationLine]
   }

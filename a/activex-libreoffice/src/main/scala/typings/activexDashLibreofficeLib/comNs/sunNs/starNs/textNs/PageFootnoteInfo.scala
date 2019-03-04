@@ -38,14 +38,8 @@ object PageFootnoteInfo {
     FootnoteSeparatorLineWidthPercent: scala.Double,
     FootnoteTopDistance: scala.Double
   ): PageFootnoteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FootnoteBottomDistance")(FootnoteBottomDistance)
-    __obj.updateDynamic("FootnoteHeight")(FootnoteHeight)
-    __obj.updateDynamic("FootnoteSeparatorLineAdjust")(FootnoteSeparatorLineAdjust)
-    __obj.updateDynamic("FootnoteSeparatorLinePenWidth")(FootnoteSeparatorLinePenWidth)
-    __obj.updateDynamic("FootnoteSeparatorLineWidth")(FootnoteSeparatorLineWidth)
-    __obj.updateDynamic("FootnoteSeparatorLineWidthPercent")(FootnoteSeparatorLineWidthPercent)
-    __obj.updateDynamic("FootnoteTopDistance")(FootnoteTopDistance)
+    val __obj = js.Dynamic.literal(FootnoteBottomDistance = FootnoteBottomDistance, FootnoteHeight = FootnoteHeight, FootnoteSeparatorLineAdjust = FootnoteSeparatorLineAdjust, FootnoteSeparatorLinePenWidth = FootnoteSeparatorLinePenWidth, FootnoteSeparatorLineWidth = FootnoteSeparatorLineWidth, FootnoteSeparatorLineWidthPercent = FootnoteSeparatorLineWidthPercent, FootnoteTopDistance = FootnoteTopDistance)
+  
     __obj.asInstanceOf[PageFootnoteInfo]
   }
 }

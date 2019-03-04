@@ -30,11 +30,7 @@ object Anon_DocumentType {
     targetID: java.lang.String = null,
     value: java.lang.String = null
   ): Anon_DocumentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("documentType")(documentType)
-    __obj.updateDynamic("documentURL")(documentURL)
-    __obj.updateDynamic("isEditable")(isEditable)
-    __obj.updateDynamic("targetName")(targetName)
+    val __obj = js.Dynamic.literal(documentType = documentType, documentURL = documentURL, isEditable = isEditable, targetName = targetName)
     if (linkURL != null) __obj.updateDynamic("linkURL")(linkURL)
     if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
     if (srcURL != null) __obj.updateDynamic("srcURL")(srcURL)

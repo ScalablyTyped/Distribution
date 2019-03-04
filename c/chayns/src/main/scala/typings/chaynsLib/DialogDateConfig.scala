@@ -21,8 +21,7 @@ object DialogDateConfig {
     minDate: stdLib.Date = null,
     preSelect: stdLib.Date = null
   ): DialogDateConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateType")(dateType)
+    val __obj = js.Dynamic.literal(dateType = dateType)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
     if (preSelect != null) __obj.updateDynamic("preSelect")(preSelect)

@@ -16,9 +16,8 @@ object Anon_EnUS {
     enUS: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale,
     zhCN: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale
   ): Anon_EnUS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enUS")(enUS)
-    __obj.updateDynamic("zhCN")(zhCN)
+    val __obj = js.Dynamic.literal(enUS = enUS, zhCN = zhCN)
+  
     __obj.asInstanceOf[Anon_EnUS]
   }
 }

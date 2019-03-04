@@ -20,11 +20,8 @@ object Anon_NextNextYear {
     prev: java.lang.String,
     prevYear: java.lang.String
   ): Anon_NextNextYear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextYear")(nextYear)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("prevYear")(prevYear)
+    val __obj = js.Dynamic.literal(next = next, nextYear = nextYear, prev = prev, prevYear = prevYear)
+  
     __obj.asInstanceOf[Anon_NextNextYear]
   }
 }

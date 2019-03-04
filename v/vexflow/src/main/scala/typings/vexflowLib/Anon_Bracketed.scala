@@ -24,8 +24,7 @@ object Anon_Bracketed {
     num_notes: scala.Int | scala.Double = null,
     y_offset: scala.Int | scala.Double = null
   ): Anon_Bracketed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ratioed")(ratioed)
+    val __obj = js.Dynamic.literal(ratioed = ratioed)
     if (!js.isUndefined(bracketed)) __obj.updateDynamic("bracketed")(bracketed)
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (notes_occupied != null) __obj.updateDynamic("notes_occupied")(notes_occupied.asInstanceOf[js.Any])

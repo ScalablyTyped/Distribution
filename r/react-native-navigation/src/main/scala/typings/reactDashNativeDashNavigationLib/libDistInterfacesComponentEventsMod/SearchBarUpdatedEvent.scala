@@ -13,10 +13,8 @@ trait SearchBarUpdatedEvent extends ComponentEvent {
 object SearchBarUpdatedEvent {
   @scala.inline
   def apply(componentId: java.lang.String, isFocused: scala.Boolean, text: java.lang.String): SearchBarUpdatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentId")(componentId)
-    __obj.updateDynamic("isFocused")(isFocused)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(componentId = componentId, isFocused = isFocused, text = text)
+  
     __obj.asInstanceOf[SearchBarUpdatedEvent]
   }
 }

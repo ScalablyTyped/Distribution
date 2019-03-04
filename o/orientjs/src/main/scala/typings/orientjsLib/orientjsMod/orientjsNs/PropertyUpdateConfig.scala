@@ -38,8 +38,8 @@ object PropertyUpdateConfig {
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     regexp: stdLib.RegExp | java.lang.String = null
   ): PropertyUpdateConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (collate != null) __obj.updateDynamic("collate")(collate)
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (default != null) __obj.updateDynamic("default")(default)

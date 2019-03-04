@@ -24,13 +24,8 @@ object FilterManagerStackItem {
     sourceFrame: Rectangle,
     target: js.Any
   ): FilterManagerStackItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationFrame")(destinationFrame)
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("renderTarget")(renderTarget)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("sourceFrame")(sourceFrame)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(destinationFrame = destinationFrame, filters = filters, renderTarget = renderTarget, resolution = resolution, sourceFrame = sourceFrame, target = target)
+  
     __obj.asInstanceOf[FilterManagerStackItem]
   }
 }

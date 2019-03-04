@@ -75,8 +75,7 @@ object InitOptions {
     timeout: scala.Int | scala.Double = null,
     validateArguments: js.UndefOr[scala.Boolean] = js.undefined
   ): InitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGetCustomDeviceProvisioningProperties")(onGetCustomDeviceProvisioningProperties)
+    val __obj = js.Dynamic.literal(onGetCustomDeviceProvisioningProperties = onGetCustomDeviceProvisioningProperties)
     if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator)
     if (!js.isUndefined(autoHideSplash)) __obj.updateDynamic("autoHideSplash")(autoHideSplash)
     if (!js.isUndefined(connectOnStartup)) __obj.updateDynamic("connectOnStartup")(connectOnStartup)

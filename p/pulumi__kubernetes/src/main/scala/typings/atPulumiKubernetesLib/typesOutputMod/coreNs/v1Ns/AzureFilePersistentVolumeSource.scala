@@ -37,11 +37,8 @@ object AzureFilePersistentVolumeSource {
     secretNamespace: java.lang.String,
     shareName: java.lang.String
   ): AzureFilePersistentVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretName")(secretName)
-    __obj.updateDynamic("secretNamespace")(secretNamespace)
-    __obj.updateDynamic("shareName")(shareName)
+    val __obj = js.Dynamic.literal(readOnly = readOnly, secretName = secretName, secretNamespace = secretNamespace, shareName = shareName)
+  
     __obj.asInstanceOf[AzureFilePersistentVolumeSource]
   }
 }

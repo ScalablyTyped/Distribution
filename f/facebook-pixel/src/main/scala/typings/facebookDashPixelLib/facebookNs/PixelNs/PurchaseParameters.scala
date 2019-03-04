@@ -26,9 +26,7 @@ object PurchaseParameters {
     num_items: scala.Int | scala.Double = null,
     order_id: java.lang.String = null
   ): PurchaseParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(currency = currency, value = value)
     if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids)
     if (content_name != null) __obj.updateDynamic("content_name")(content_name)
     if (content_type != null) __obj.updateDynamic("content_type")(content_type)

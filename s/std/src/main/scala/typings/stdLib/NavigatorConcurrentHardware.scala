@@ -12,8 +12,8 @@ trait NavigatorConcurrentHardware extends js.Object {
 object NavigatorConcurrentHardware {
   @scala.inline
   def apply(hardwareConcurrency: scala.Double): NavigatorConcurrentHardware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hardwareConcurrency")(hardwareConcurrency)
+    val __obj = js.Dynamic.literal(hardwareConcurrency = hardwareConcurrency)
+  
     __obj.asInstanceOf[NavigatorConcurrentHardware]
   }
 }

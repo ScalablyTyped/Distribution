@@ -22,9 +22,8 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(columnKey: java.lang.String, filterTerm: java.lang.String): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnKey")(columnKey)
-    __obj.updateDynamic("filterTerm")(filterTerm)
+    val __obj = js.Dynamic.literal(columnKey = columnKey, filterTerm = filterTerm)
+  
     __obj.asInstanceOf[Filter]
   }
 }

@@ -14,10 +14,8 @@ trait ExchangeParams extends js.Object {
 object ExchangeParams {
   @scala.inline
   def apply(code: java.lang.String, redirectUri: java.lang.String, verifier: java.lang.String): ExchangeParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("redirectUri")(redirectUri)
-    __obj.updateDynamic("verifier")(verifier)
+    val __obj = js.Dynamic.literal(code = code, redirectUri = redirectUri, verifier = verifier)
+  
     __obj.asInstanceOf[ExchangeParams]
   }
 }

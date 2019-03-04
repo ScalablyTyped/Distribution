@@ -13,9 +13,8 @@ trait BestPath extends js.Object {
 object BestPath {
   @scala.inline
   def apply(componenets: js.Array[Change], newPos: scala.Double): BestPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componenets")(componenets)
-    __obj.updateDynamic("newPos")(newPos)
+    val __obj = js.Dynamic.literal(componenets = componenets, newPos = newPos)
+  
     __obj.asInstanceOf[BestPath]
   }
 }

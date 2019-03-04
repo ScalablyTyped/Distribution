@@ -14,7 +14,8 @@ trait OperationMessage extends js.Object {
 object OperationMessage {
   @scala.inline
   def apply(`type`: java.lang.String, id: java.lang.String = null, payload: OperationMessagePayload = null): OperationMessage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (payload != null) __obj.updateDynamic("payload")(payload)
     __obj.asInstanceOf[OperationMessage]

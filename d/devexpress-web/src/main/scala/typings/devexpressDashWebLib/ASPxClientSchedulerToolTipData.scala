@@ -30,10 +30,8 @@ object ASPxClientSchedulerToolTipData {
     GetInterval: js.Function0[ASPxClientTimeInterval],
     GetResources: js.Function0[js.Array[java.lang.String]]
   ): ASPxClientSchedulerToolTipData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAppointment")(GetAppointment)
-    __obj.updateDynamic("GetInterval")(GetInterval)
-    __obj.updateDynamic("GetResources")(GetResources)
+    val __obj = js.Dynamic.literal(GetAppointment = GetAppointment, GetInterval = GetInterval, GetResources = GetResources)
+  
     __obj.asInstanceOf[ASPxClientSchedulerToolTipData]
   }
 }

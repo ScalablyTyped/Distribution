@@ -23,9 +23,8 @@ object KnexMappers {
       java.lang.String
     ]
   ): KnexMappers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postProcessResponse")(postProcessResponse)
-    __obj.updateDynamic("wrapIdentifier")(wrapIdentifier)
+    val __obj = js.Dynamic.literal(postProcessResponse = postProcessResponse, wrapIdentifier = wrapIdentifier)
+  
     __obj.asInstanceOf[KnexMappers]
   }
 }

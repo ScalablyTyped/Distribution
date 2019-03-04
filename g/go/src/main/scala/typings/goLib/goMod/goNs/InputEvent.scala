@@ -108,35 +108,8 @@ object InputEvent {
     up: scala.Boolean,
     viewPoint: Point
   ): InputEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("clickCount")(clickCount)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("documentPoint")(documentPoint)
-    __obj.updateDynamic("down")(down)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("isMac")(isMac)
-    __obj.updateDynamic("isMultiTouch")(isMultiTouch)
-    __obj.updateDynamic("isTouchEvent")(isTouchEvent)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("middle")(middle)
-    __obj.updateDynamic("modifiers")(modifiers)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("targetDiagram")(targetDiagram)
-    __obj.updateDynamic("targetObject")(targetObject)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("up")(up)
-    __obj.updateDynamic("viewPoint")(viewPoint)
+    val __obj = js.Dynamic.literal(alt = alt, bubbles = bubbles, button = button, buttons = buttons, clickCount = clickCount, control = control, copy = copy, delta = delta, diagram = diagram, documentPoint = documentPoint, down = down, event = event, handled = handled, isMac = isMac, isMultiTouch = isMultiTouch, isTouchEvent = isTouchEvent, key = key, left = left, meta = meta, middle = middle, modifiers = modifiers, right = right, shift = shift, targetDiagram = targetDiagram, targetObject = targetObject, timestamp = timestamp, up = up, viewPoint = viewPoint)
+  
     __obj.asInstanceOf[InputEvent]
   }
 }

@@ -51,15 +51,8 @@ object PCContinuousRendererResult {
     renderer: PointCloudStretchRenderer,
     statistics: SummaryStatisticsResult
   ): PCContinuousRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("colorScheme")(colorScheme)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("statistics")(statistics)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, colorScheme = colorScheme, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, statistics = statistics)
+  
     __obj.asInstanceOf[PCContinuousRendererResult]
   }
 }

@@ -18,11 +18,8 @@ object MetadataRequestedEventOptions {
     requestId: scala.Double,
     thumbnail: scala.Boolean
   ): MetadataRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, requestId = requestId, thumbnail = thumbnail)
+  
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
 }

@@ -18,9 +18,7 @@ object Anon_DisableCheckIfAllPixelsAreTransparent {
     pixelsToCheck: js.Array[cesiumLib.cesiumMod.CesiumNs.Cartesian2],
     disableCheckIfAllPixelsAreTransparent: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DisableCheckIfAllPixelsAreTransparent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("missingImageUrl")(missingImageUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("pixelsToCheck")(pixelsToCheck)
+    val __obj = js.Dynamic.literal(missingImageUrl = missingImageUrl.asInstanceOf[js.Any], pixelsToCheck = pixelsToCheck)
     if (!js.isUndefined(disableCheckIfAllPixelsAreTransparent)) __obj.updateDynamic("disableCheckIfAllPixelsAreTransparent")(disableCheckIfAllPixelsAreTransparent)
     __obj.asInstanceOf[Anon_DisableCheckIfAllPixelsAreTransparent]
   }

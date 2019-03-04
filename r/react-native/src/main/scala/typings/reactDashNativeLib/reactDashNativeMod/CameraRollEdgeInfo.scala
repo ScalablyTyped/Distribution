@@ -12,8 +12,8 @@ trait CameraRollEdgeInfo extends js.Object {
 object CameraRollEdgeInfo {
   @scala.inline
   def apply(node: CameraRollNodeInfo): CameraRollEdgeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(node = node)
+  
     __obj.asInstanceOf[CameraRollEdgeInfo]
   }
 }

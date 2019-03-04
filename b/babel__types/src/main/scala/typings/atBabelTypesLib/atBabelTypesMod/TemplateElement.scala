@@ -27,9 +27,8 @@ object TemplateElement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TemplateElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("tail")(tail)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(tail = tail, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

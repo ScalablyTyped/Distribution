@@ -23,8 +23,7 @@ object Props {
     focusTrapOptions: focusDashTrapLib.focusDashTrapMod.Options = null,
     paused: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (focusTrapOptions != null) __obj.updateDynamic("focusTrapOptions")(focusTrapOptions)

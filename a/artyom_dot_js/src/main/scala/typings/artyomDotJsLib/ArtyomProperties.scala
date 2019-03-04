@@ -42,9 +42,7 @@ object ArtyomProperties {
     speed: scala.Int | scala.Double = null,
     volume: scala.Int | scala.Double = null
   ): ArtyomProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("listen")(listen)
+    val __obj = js.Dynamic.literal(lang = lang, listen = listen)
     if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (executionKeyword != null) __obj.updateDynamic("executionKeyword")(executionKeyword)

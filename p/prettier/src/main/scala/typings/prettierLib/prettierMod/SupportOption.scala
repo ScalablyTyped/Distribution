@@ -32,9 +32,8 @@ object SupportOption {
     redirect: SupportOptionRedirect = null,
     since: java.lang.String = null
   ): SupportOption = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
     if (choices != null) __obj.updateDynamic("choices")(choices)
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)

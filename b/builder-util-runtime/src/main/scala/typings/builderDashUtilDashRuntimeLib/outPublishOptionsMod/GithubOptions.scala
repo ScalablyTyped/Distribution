@@ -73,8 +73,7 @@ object GithubOptions {
     updaterCacheDirName: java.lang.String = null,
     vPrefixedTagName: js.UndefOr[scala.Boolean] = js.undefined
   ): GithubOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(provider = provider)
     if (host != null) __obj.updateDynamic("host")(host)
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)

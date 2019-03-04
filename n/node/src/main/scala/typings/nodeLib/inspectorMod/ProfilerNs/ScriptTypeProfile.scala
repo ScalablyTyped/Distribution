@@ -31,10 +31,8 @@ object ScriptTypeProfile {
     scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
     url: java.lang.String
   ): ScriptTypeProfile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("scriptId")(scriptId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(entries = entries, scriptId = scriptId, url = url)
+  
     __obj.asInstanceOf[ScriptTypeProfile]
   }
 }

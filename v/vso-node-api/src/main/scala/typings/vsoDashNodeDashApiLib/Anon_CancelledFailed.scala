@@ -28,15 +28,8 @@ object Anon_CancelledFailed {
     succeeded: scala.Double,
     timedOut: scala.Double
   ): Anon_CancelledFailed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("notFound")(notFound)
-    __obj.updateDynamic("notSet")(notSet)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("timedOut")(timedOut)
+    val __obj = js.Dynamic.literal(cancelled = cancelled, failed = failed, inProgress = inProgress, notFound = notFound, notSet = notSet, queued = queued, succeeded = succeeded, timedOut = timedOut)
+  
     __obj.asInstanceOf[Anon_CancelledFailed]
   }
 }

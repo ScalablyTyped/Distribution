@@ -26,9 +26,7 @@ object GraphQLSubscriptionConfig {
     onNext: js.Function1[/* response */ js.UndefOr[js.Object | scala.Null], scala.Unit] = null,
     updater: js.Function1[/* store */ RecordSourceSelectorProxy, scala.Unit] = null
   ): GraphQLSubscriptionConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any], variables = variables)
     if (configs != null) __obj.updateDynamic("configs")(configs)
     if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
     if (onError != null) __obj.updateDynamic("onError")(onError)

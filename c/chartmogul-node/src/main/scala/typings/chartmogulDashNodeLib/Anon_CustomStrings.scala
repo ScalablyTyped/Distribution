@@ -12,8 +12,8 @@ trait Anon_CustomStrings extends js.Object {
 object Anon_CustomStrings {
   @scala.inline
   def apply(custom: chartmogulDashNodeLib.commonMod.Strings): Anon_CustomStrings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custom")(custom)
+    val __obj = js.Dynamic.literal(custom = custom)
+  
     __obj.asInstanceOf[Anon_CustomStrings]
   }
 }

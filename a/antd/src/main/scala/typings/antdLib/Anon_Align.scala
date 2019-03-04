@@ -34,13 +34,8 @@ object Anon_Align {
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     `type`: propDashTypesLib.propDashTypesMod.Requireable[antdLib.antdLibStrings.flex]
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("gutter")(gutter)
-    __obj.updateDynamic("justify")(justify)
-    __obj.updateDynamic("prefixCls")(prefixCls)
+    val __obj = js.Dynamic.literal(align = align, children = children, className = className, gutter = gutter, justify = justify, prefixCls = prefixCls)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Align]
   }
 }

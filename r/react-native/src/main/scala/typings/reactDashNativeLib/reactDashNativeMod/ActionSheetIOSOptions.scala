@@ -24,8 +24,7 @@ object ActionSheetIOSOptions {
     tintColor: java.lang.String = null,
     title: java.lang.String = null
   ): ActionSheetIOSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (cancelButtonIndex != null) __obj.updateDynamic("cancelButtonIndex")(cancelButtonIndex.asInstanceOf[js.Any])
     if (destructiveButtonIndex != null) __obj.updateDynamic("destructiveButtonIndex")(destructiveButtonIndex.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)

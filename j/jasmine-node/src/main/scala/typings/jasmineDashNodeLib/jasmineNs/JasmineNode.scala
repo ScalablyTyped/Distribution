@@ -16,9 +16,8 @@ object JasmineNode {
     executeSpecsInFolder: js.Function1[ExecuteSpecsOptions, scala.Unit],
     loadHelpersInFolder: js.Function2[java.lang.String, stdLib.RegExp, scala.Unit]
   ): JasmineNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executeSpecsInFolder")(executeSpecsInFolder)
-    __obj.updateDynamic("loadHelpersInFolder")(loadHelpersInFolder)
+    val __obj = js.Dynamic.literal(executeSpecsInFolder = executeSpecsInFolder, loadHelpersInFolder = loadHelpersInFolder)
+  
     __obj.asInstanceOf[JasmineNode]
   }
 }

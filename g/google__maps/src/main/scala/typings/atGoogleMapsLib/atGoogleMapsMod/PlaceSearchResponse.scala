@@ -39,12 +39,8 @@ object PlaceSearchResponse {
     results: js.Array[PlaceSearchResult],
     status: SearchResponseStatus
   ): PlaceSearchResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error_message")(error_message)
-    __obj.updateDynamic("html_attributions")(html_attributions)
-    __obj.updateDynamic("next_page_token")(next_page_token)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(error_message = error_message, html_attributions = html_attributions, next_page_token = next_page_token, results = results, status = status)
+  
     __obj.asInstanceOf[PlaceSearchResponse]
   }
 }

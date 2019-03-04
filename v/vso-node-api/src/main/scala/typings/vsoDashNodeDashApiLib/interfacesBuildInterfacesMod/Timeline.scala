@@ -27,13 +27,8 @@ object Timeline {
     records: js.Array[TimelineRecord],
     url: java.lang.String
   ): Timeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeId")(changeId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastChangedBy")(lastChangedBy)
-    __obj.updateDynamic("lastChangedOn")(lastChangedOn)
-    __obj.updateDynamic("records")(records)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(changeId = changeId, id = id, lastChangedBy = lastChangedBy, lastChangedOn = lastChangedOn, records = records, url = url)
+  
     __obj.asInstanceOf[Timeline]
   }
 }

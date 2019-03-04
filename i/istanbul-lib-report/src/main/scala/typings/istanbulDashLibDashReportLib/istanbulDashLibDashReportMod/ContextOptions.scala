@@ -18,10 +18,8 @@ object ContextOptions {
     sourceFinder: js.Function1[java.lang.String, java.lang.String],
     watermarks: Watermarks
   ): ContextOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("sourceFinder")(sourceFinder)
-    __obj.updateDynamic("watermarks")(watermarks)
+    val __obj = js.Dynamic.literal(dir = dir, sourceFinder = sourceFinder, watermarks = watermarks)
+  
     __obj.asInstanceOf[ContextOptions]
   }
 }

@@ -21,11 +21,8 @@ object R3DelegatedFactoryMetadata {
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     deps: js.Array[R3DependencyMetadata] = null
   ): R3DelegatedFactoryMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("delegate")(delegate)
-    __obj.updateDynamic("delegateType")(delegateType)
-    __obj.updateDynamic("injectFn")(injectFn)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(delegate = delegate, delegateType = delegateType, injectFn = injectFn, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3DelegatedFactoryMetadata]
   }

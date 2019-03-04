@@ -107,12 +107,8 @@ object LaunchOptions {
     scene: SceneValues,
     shareTicket: java.lang.String
   ): LaunchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("referrerInfo")(referrerInfo)
-    __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
-    __obj.updateDynamic("shareTicket")(shareTicket)
+    val __obj = js.Dynamic.literal(path = path, query = query, referrerInfo = referrerInfo, scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket)
+  
     __obj.asInstanceOf[LaunchOptions]
   }
 }

@@ -22,8 +22,7 @@ object Anon_Message {
     `type`: java.lang.String = null,
     value: js.Any = null
   ): Anon_Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (path != null) __obj.updateDynamic("path")(path)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

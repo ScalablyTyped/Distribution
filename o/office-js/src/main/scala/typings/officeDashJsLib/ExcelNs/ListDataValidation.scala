@@ -31,9 +31,8 @@ trait ListDataValidation extends js.Object {
 object ListDataValidation {
   @scala.inline
   def apply(inCellDropDown: scala.Boolean, source: java.lang.String): ListDataValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inCellDropDown")(inCellDropDown)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(inCellDropDown = inCellDropDown, source = source)
+  
     __obj.asInstanceOf[ListDataValidation]
   }
 }

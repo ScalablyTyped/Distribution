@@ -24,13 +24,8 @@ object Popper {
     scheduleUpdate: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): Popper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disableEventListeners")(disableEventListeners)
-    __obj.updateDynamic("enableEventListeners")(enableEventListeners)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("scheduleUpdate")(scheduleUpdate)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, disableEventListeners = disableEventListeners, enableEventListeners = enableEventListeners, options = options, scheduleUpdate = scheduleUpdate, update = update)
+  
     __obj.asInstanceOf[Popper]
   }
 }

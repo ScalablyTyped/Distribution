@@ -26,12 +26,8 @@ object Anon_BorderDashes {
     useBorderWithImage: scala.Boolean,
     useImageSize: scala.Boolean
   ): Anon_BorderDashes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderDashes")(borderDashes.asInstanceOf[js.Any])
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("interpolation")(interpolation)
-    __obj.updateDynamic("useBorderWithImage")(useBorderWithImage)
-    __obj.updateDynamic("useImageSize")(useImageSize)
+    val __obj = js.Dynamic.literal(borderDashes = borderDashes.asInstanceOf[js.Any], borderRadius = borderRadius, interpolation = interpolation, useBorderWithImage = useBorderWithImage, useImageSize = useImageSize)
+  
     __obj.asInstanceOf[Anon_BorderDashes]
   }
 }

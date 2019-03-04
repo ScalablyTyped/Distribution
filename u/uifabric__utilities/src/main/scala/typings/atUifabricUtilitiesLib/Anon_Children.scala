@@ -16,8 +16,7 @@ object Anon_Children {
     children: js.Array[atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement],
     parent: atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Anon_Children]
   }

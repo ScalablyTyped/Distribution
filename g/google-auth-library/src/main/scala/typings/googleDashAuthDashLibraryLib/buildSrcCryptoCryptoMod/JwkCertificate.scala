@@ -24,12 +24,7 @@ object JwkCertificate {
     n: java.lang.String,
     use: java.lang.String = null
   ): JwkCertificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alg")(alg)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("kid")(kid)
-    __obj.updateDynamic("kty")(kty)
-    __obj.updateDynamic("n")(n)
+    val __obj = js.Dynamic.literal(alg = alg, e = e, kid = kid, kty = kty, n = n)
     if (use != null) __obj.updateDynamic("use")(use)
     __obj.asInstanceOf[JwkCertificate]
   }

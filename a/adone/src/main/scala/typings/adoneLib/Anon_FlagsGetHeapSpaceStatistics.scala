@@ -18,10 +18,8 @@ object Anon_FlagsGetHeapSpaceStatistics {
     getHeapStatistics: js.Function0[nodeLib.v8Mod.HeapInfo],
     setFlagsFromString: js.Function1[java.lang.String, scala.Unit]
   ): Anon_FlagsGetHeapSpaceStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHeapSpaceStatistics")(getHeapSpaceStatistics)
-    __obj.updateDynamic("getHeapStatistics")(getHeapStatistics)
-    __obj.updateDynamic("setFlagsFromString")(setFlagsFromString)
+    val __obj = js.Dynamic.literal(getHeapSpaceStatistics = getHeapSpaceStatistics, getHeapStatistics = getHeapStatistics, setFlagsFromString = setFlagsFromString)
+  
     __obj.asInstanceOf[Anon_FlagsGetHeapSpaceStatistics]
   }
 }

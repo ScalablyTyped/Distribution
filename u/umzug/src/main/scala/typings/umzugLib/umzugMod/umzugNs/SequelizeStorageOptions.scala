@@ -52,12 +52,7 @@ object SequelizeStorageOptions {
     sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize = null,
     tableName: java.lang.String = null
   ): SequelizeStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnName")(columnName)
-    __obj.updateDynamic("columnType")(columnType)
-    __obj.updateDynamic("executed")(executed)
-    __obj.updateDynamic("logMigration")(logMigration)
-    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    val __obj = js.Dynamic.literal(columnName = columnName, columnType = columnType, executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
     if (model != null) __obj.updateDynamic("model")(model)
     if (modelName != null) __obj.updateDynamic("modelName")(modelName)
     if (sequelize != null) __obj.updateDynamic("sequelize")(sequelize)

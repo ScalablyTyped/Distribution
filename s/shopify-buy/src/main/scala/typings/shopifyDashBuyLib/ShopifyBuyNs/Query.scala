@@ -31,9 +31,7 @@ object Query {
     last: java.lang.String = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined
   ): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("sortBy")(sortBy)
+    val __obj = js.Dynamic.literal(query = query, sortBy = sortBy)
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     if (first != null) __obj.updateDynamic("first")(first)

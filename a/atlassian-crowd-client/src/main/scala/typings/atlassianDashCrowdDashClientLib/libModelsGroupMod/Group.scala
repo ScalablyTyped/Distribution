@@ -22,11 +22,7 @@ object Group {
     toCrowd: js.Function0[GroupObj],
     attributes: js.Any = null
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("groupname")(groupname)
-    __obj.updateDynamic("toCrowd")(toCrowd)
+    val __obj = js.Dynamic.literal(active = active, description = description, groupname = groupname, toCrowd = toCrowd)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[Group]
   }

@@ -51,14 +51,8 @@ object ToastOptions {
     inDuration: scala.Double,
     outDuration: scala.Double
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activationPercent")(activationPercent)
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("completeCallback")(completeCallback)
-    __obj.updateDynamic("displayLength")(displayLength)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("outDuration")(outDuration)
+    val __obj = js.Dynamic.literal(activationPercent = activationPercent, classes = classes, completeCallback = completeCallback, displayLength = displayLength, html = html, inDuration = inDuration, outDuration = outDuration)
+  
     __obj.asInstanceOf[ToastOptions]
   }
 }

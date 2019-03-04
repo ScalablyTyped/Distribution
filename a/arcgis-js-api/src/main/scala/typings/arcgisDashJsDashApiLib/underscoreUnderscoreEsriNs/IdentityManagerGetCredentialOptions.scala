@@ -39,10 +39,7 @@ object IdentityManagerGetCredentialOptions {
     oAuthPopupConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
     token: java.lang.String = null
   ): IdentityManagerGetCredentialOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(oAuthPopupConfirmation)) __obj.updateDynamic("oAuthPopupConfirmation")(oAuthPopupConfirmation)
     if (token != null) __obj.updateDynamic("token")(token)

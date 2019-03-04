@@ -27,14 +27,8 @@ object TfvcChange {
     sourceServerItem: java.lang.String,
     url: java.lang.String
   ): TfvcChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("mergeSources")(mergeSources)
-    __obj.updateDynamic("newContent")(newContent)
-    __obj.updateDynamic("pendingVersion")(pendingVersion)
-    __obj.updateDynamic("sourceServerItem")(sourceServerItem)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(changeType = changeType, item = item, mergeSources = mergeSources, newContent = newContent, pendingVersion = pendingVersion, sourceServerItem = sourceServerItem, url = url)
+  
     __obj.asInstanceOf[TfvcChange]
   }
 }

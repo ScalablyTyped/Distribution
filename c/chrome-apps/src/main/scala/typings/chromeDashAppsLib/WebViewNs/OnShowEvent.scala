@@ -13,8 +13,8 @@ trait OnShowEvent extends js.Object {
 object OnShowEvent {
   @scala.inline
   def apply(preventDefault: js.Function0[scala.Unit]): OnShowEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preventDefault")(preventDefault)
+    val __obj = js.Dynamic.literal(preventDefault = preventDefault)
+  
     __obj.asInstanceOf[OnShowEvent]
   }
 }

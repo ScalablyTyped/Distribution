@@ -18,10 +18,8 @@ object Anon_Height {
     orientation: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.horizontal | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.landscape,
     width: scala.Double
   ): Anon_Height = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, orientation = orientation.asInstanceOf[js.Any], width = width)
+  
     __obj.asInstanceOf[Anon_Height]
   }
 }

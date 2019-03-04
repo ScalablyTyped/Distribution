@@ -17,9 +17,8 @@ trait AbstractView extends js.Object {
 object AbstractView {
   @scala.inline
   def apply(document: reactLib.Document, styleMedia: reactLib.StyleMedia): AbstractView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("styleMedia")(styleMedia)
+    val __obj = js.Dynamic.literal(document = document, styleMedia = styleMedia)
+  
     __obj.asInstanceOf[AbstractView]
   }
 }

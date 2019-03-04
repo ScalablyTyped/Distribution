@@ -21,11 +21,8 @@ object ITypeahead {
     show: js.Function0[scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): ITypeahead = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$promise")($promise)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal($promise = $promise, hide = hide, show = show, toggle = toggle)
+  
     __obj.asInstanceOf[ITypeahead]
   }
 }

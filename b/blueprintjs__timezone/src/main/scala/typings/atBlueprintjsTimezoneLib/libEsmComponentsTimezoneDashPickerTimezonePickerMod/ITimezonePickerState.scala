@@ -12,8 +12,8 @@ trait ITimezonePickerState extends js.Object {
 object ITimezonePickerState {
   @scala.inline
   def apply(query: java.lang.String): ITimezonePickerState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[ITimezonePickerState]
   }
 }

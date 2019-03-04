@@ -12,8 +12,8 @@ trait FormComponentProps extends js.Object {
 object FormComponentProps {
   @scala.inline
   def apply(form: WrappedFormUtils): FormComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("form")(form)
+    val __obj = js.Dynamic.literal(form = form)
+  
     __obj.asInstanceOf[FormComponentProps]
   }
 }

@@ -18,9 +18,7 @@ object Anon_PropNameView {
     viewModel: js.Object,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_PropNameView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("view")(view)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(view = view, viewModel = viewModel)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_PropNameView]
   }

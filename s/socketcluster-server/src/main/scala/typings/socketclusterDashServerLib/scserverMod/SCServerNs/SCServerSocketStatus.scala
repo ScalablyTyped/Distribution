@@ -13,9 +13,8 @@ trait SCServerSocketStatus extends js.Object {
 object SCServerSocketStatus {
   @scala.inline
   def apply(id: java.lang.String, pingTimeout: scala.Double): SCServerSocketStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pingTimeout")(pingTimeout)
+    val __obj = js.Dynamic.literal(id = id, pingTimeout = pingTimeout)
+  
     __obj.asInstanceOf[SCServerSocketStatus]
   }
 }

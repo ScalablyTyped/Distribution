@@ -15,9 +15,8 @@ trait INotification extends js.Object {
 object INotification {
   @scala.inline
   def apply(shouldIndicate: scala.Boolean, value: stdLib.ArrayBuffer): INotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shouldIndicate")(shouldIndicate)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(shouldIndicate = shouldIndicate, value = value)
+  
     __obj.asInstanceOf[INotification]
   }
 }

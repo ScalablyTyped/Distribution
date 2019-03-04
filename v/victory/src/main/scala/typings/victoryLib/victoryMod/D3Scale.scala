@@ -17,10 +17,8 @@ trait D3Scale extends js.Object {
 object D3Scale {
   @scala.inline
   def apply(copy: js.Function0[js.Any], domain: js.Function0[js.Any], range: js.Function0[js.Any]): D3Scale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(copy = copy, domain = domain, range = range)
+  
     __obj.asInstanceOf[D3Scale]
   }
 }

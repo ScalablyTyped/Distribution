@@ -13,8 +13,8 @@ trait Anon_Css
 object Anon_Css {
   @scala.inline
   def apply(css: java.lang.String): Anon_Css = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("css")(css)
+    val __obj = js.Dynamic.literal(css = css)
+  
     __obj.asInstanceOf[Anon_Css]
   }
 }

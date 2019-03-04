@@ -19,13 +19,8 @@ object PreventableExceptionThrownEvent {
     preventDefault: js.Function0[scala.Unit],
     url: java.lang.String
   ): PreventableExceptionThrownEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("originalError")(originalError)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(column = column, line = line, message = message, originalError = originalError, preventDefault = preventDefault, url = url)
+  
     __obj.asInstanceOf[PreventableExceptionThrownEvent]
   }
 }

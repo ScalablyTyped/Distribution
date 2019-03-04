@@ -14,8 +14,8 @@ object DoBootstrap {
   def apply(
     ngDoBootstrap: js.Function1[atAngularCoreLib.srcApplicationUnderscoreRefMod.ApplicationRef, scala.Unit]
   ): DoBootstrap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngDoBootstrap")(ngDoBootstrap)
+    val __obj = js.Dynamic.literal(ngDoBootstrap = ngDoBootstrap)
+  
     __obj.asInstanceOf[DoBootstrap]
   }
 }

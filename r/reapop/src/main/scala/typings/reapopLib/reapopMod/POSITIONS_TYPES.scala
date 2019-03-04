@@ -28,15 +28,8 @@ object POSITIONS_TYPES {
     topLeft: reapopLib.TOP_LEFT_POSITION,
     topRight: reapopLib.TOP_RIGHT_POSITION
   ): POSITIONS_TYPES = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("bottomCenter")(bottomCenter)
-    __obj.updateDynamic("bottomLeft")(bottomLeft)
-    __obj.updateDynamic("bottomRight")(bottomRight)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("topCenter")(topCenter)
-    __obj.updateDynamic("topLeft")(topLeft)
-    __obj.updateDynamic("topRight")(topRight)
+    val __obj = js.Dynamic.literal(bottom = bottom, bottomCenter = bottomCenter, bottomLeft = bottomLeft, bottomRight = bottomRight, top = top, topCenter = topCenter, topLeft = topLeft, topRight = topRight)
+  
     __obj.asInstanceOf[POSITIONS_TYPES]
   }
 }

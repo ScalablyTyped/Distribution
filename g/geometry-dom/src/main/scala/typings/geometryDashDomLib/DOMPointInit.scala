@@ -32,9 +32,7 @@ object DOMPointInit {
     w: scala.Int | scala.Double = null,
     z: scala.Int | scala.Double = null
   ): DOMPointInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
     if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMPointInit]

@@ -37,15 +37,8 @@ object Anon_Elementgroup {
     video: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.Video,
     word_art: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.WordArt
   ): Anon_Elementgroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element_group")(element_group)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("sheets_chart")(sheets_chart)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("video")(video)
-    __obj.updateDynamic("word_art")(word_art)
+    val __obj = js.Dynamic.literal(element_group = element_group, image = image, line = line, shape = shape, sheets_chart = sheets_chart, table = table, video = video, word_art = word_art)
+  
     __obj.asInstanceOf[Anon_Elementgroup]
   }
 }

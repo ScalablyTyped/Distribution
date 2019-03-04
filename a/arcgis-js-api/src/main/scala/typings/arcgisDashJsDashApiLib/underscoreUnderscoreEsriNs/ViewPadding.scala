@@ -44,10 +44,7 @@ object ViewPadding {
     right: scala.Int | scala.Double = null,
     top: scala.Int | scala.Double = null
   ): ViewPadding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])

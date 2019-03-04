@@ -36,10 +36,7 @@ object SpacesOptions {
     publisherName: js.Array[java.lang.String] = null,
     updaterCacheDirName: java.lang.String = null
   ): SpacesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(name = name, provider = provider, region = region)
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (path != null) __obj.updateDynamic("path")(path)

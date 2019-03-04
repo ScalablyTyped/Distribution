@@ -24,13 +24,8 @@ object Anon_Acquisition {
     sales: scala.Double,
     uninstall: scala.Double
   ): Anon_Acquisition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquisition")(acquisition)
-    __obj.updateDynamic("install")(install)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("review")(review)
-    __obj.updateDynamic("sales")(sales)
-    __obj.updateDynamic("uninstall")(uninstall)
+    val __obj = js.Dynamic.literal(acquisition = acquisition, install = install, other = other, review = review, sales = sales, uninstall = uninstall)
+  
     __obj.asInstanceOf[Anon_Acquisition]
   }
 }

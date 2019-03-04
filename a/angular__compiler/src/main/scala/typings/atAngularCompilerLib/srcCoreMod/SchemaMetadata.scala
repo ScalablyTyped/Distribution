@@ -12,8 +12,8 @@ trait SchemaMetadata extends js.Object {
 object SchemaMetadata {
   @scala.inline
   def apply(name: java.lang.String): SchemaMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[SchemaMetadata]
   }
 }

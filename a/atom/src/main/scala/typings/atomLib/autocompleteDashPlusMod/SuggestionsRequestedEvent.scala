@@ -27,12 +27,8 @@ object SuggestionsRequestedEvent {
     prefix: java.lang.String,
     scopeDescriptor: atomLib.atomMod.ScopeDescriptor
   ): SuggestionsRequestedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activatedManually")(activatedManually)
-    __obj.updateDynamic("bufferPosition")(bufferPosition)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
+    val __obj = js.Dynamic.literal(activatedManually = activatedManually, bufferPosition = bufferPosition, editor = editor, prefix = prefix, scopeDescriptor = scopeDescriptor)
+  
     __obj.asInstanceOf[SuggestionsRequestedEvent]
   }
 }

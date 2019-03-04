@@ -89,15 +89,7 @@ object ScriptParsedEventDataType {
     sourceMapURL: java.lang.String = null,
     stackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace = null
   ): ScriptParsedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endColumn")(endColumn)
-    __obj.updateDynamic("endLine")(endLine)
-    __obj.updateDynamic("executionContextId")(executionContextId)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("scriptId")(scriptId)
-    __obj.updateDynamic("startColumn")(startColumn)
-    __obj.updateDynamic("startLine")(startLine)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(endColumn = endColumn, endLine = endLine, executionContextId = executionContextId, hash = hash, scriptId = scriptId, startColumn = startColumn, startLine = startLine, url = url)
     if (executionContextAuxData != null) __obj.updateDynamic("executionContextAuxData")(executionContextAuxData)
     if (!js.isUndefined(hasSourceURL)) __obj.updateDynamic("hasSourceURL")(hasSourceURL)
     if (!js.isUndefined(isLiveEdit)) __obj.updateDynamic("isLiveEdit")(isLiveEdit)

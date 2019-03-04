@@ -22,12 +22,8 @@ object Geocode {
     level: java.lang.String,
     location: LngLat
   ): Geocode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("addressComponent")(addressComponent)
-    __obj.updateDynamic("formattedAddress")(formattedAddress)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(adcode = adcode, addressComponent = addressComponent, formattedAddress = formattedAddress, level = level, location = location)
+  
     __obj.asInstanceOf[Geocode]
   }
 }

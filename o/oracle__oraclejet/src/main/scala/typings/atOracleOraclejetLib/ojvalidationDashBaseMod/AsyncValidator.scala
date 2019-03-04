@@ -16,9 +16,8 @@ object AsyncValidator {
     hint: js.Promise[java.lang.String | scala.Null],
     validate: js.Function1[V, js.Promise[scala.Boolean]]
   ): AsyncValidator[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(hint = hint, validate = validate)
+  
     __obj.asInstanceOf[AsyncValidator[V]]
   }
 }

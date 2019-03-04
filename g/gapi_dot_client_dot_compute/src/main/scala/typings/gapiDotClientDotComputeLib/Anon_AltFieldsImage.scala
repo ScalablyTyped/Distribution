@@ -54,9 +54,7 @@ object Anon_AltFieldsImage {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(image = image, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

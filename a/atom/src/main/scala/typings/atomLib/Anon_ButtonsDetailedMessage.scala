@@ -18,8 +18,7 @@ object Anon_ButtonsDetailedMessage {
     buttons: org.scalablytyped.runtime.StringDictionary[js.Function0[scala.Unit]] = null,
     detailedMessage: java.lang.String = null
   ): Anon_ButtonsDetailedMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage)
     __obj.asInstanceOf[Anon_ButtonsDetailedMessage]

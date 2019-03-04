@@ -13,9 +13,8 @@ trait SubscribeState extends js.Object {
 object SubscribeState {
   @scala.inline
   def apply(previousRoute: router5Lib.typesTypesBaseMod.State, route: router5Lib.typesTypesBaseMod.State): SubscribeState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("previousRoute")(previousRoute)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(previousRoute = previousRoute, route = route)
+  
     __obj.asInstanceOf[SubscribeState]
   }
 }

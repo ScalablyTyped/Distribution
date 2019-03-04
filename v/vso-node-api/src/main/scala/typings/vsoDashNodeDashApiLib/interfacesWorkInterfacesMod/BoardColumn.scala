@@ -26,14 +26,8 @@ object BoardColumn {
     name: java.lang.String,
     stateMappings: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): BoardColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnType")(columnType)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isSplit")(isSplit)
-    __obj.updateDynamic("itemLimit")(itemLimit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stateMappings")(stateMappings)
+    val __obj = js.Dynamic.literal(columnType = columnType, description = description, id = id, isSplit = isSplit, itemLimit = itemLimit, name = name, stateMappings = stateMappings)
+  
     __obj.asInstanceOf[BoardColumn]
   }
 }

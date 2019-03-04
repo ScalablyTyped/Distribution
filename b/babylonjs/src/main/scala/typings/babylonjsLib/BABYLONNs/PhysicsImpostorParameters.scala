@@ -46,8 +46,7 @@ object PhysicsImpostorParameters {
     nativeOptions: js.Any = null,
     restitution: scala.Int | scala.Double = null
   ): PhysicsImpostorParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mass")(mass)
+    val __obj = js.Dynamic.literal(mass = mass)
     if (!js.isUndefined(disableBidirectionalTransformation)) __obj.updateDynamic("disableBidirectionalTransformation")(disableBidirectionalTransformation)
     if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreParent)) __obj.updateDynamic("ignoreParent")(ignoreParent)

@@ -23,7 +23,7 @@ object ListNs extends js.Object {
     /**
       * @hidden
       */
-    var `source_ptr_`: js.Any = js.native
+    var source_ptr_ : js.Any = js.native
   }
   
   /**

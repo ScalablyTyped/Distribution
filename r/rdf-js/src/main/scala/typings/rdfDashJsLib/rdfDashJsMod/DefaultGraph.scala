@@ -30,10 +30,8 @@ object DefaultGraph {
     termType: rdfDashJsLib.rdfDashJsLibStrings.DefaultGraph,
     value: rdfDashJsLib.rdfDashJsLibStrings.Empty
   ): DefaultGraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("termType")(termType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+  
     __obj.asInstanceOf[DefaultGraph]
   }
 }

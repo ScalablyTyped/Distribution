@@ -37,13 +37,8 @@ object WorkflowTaskMarkStepsAsDoneParams {
     stepIds: js.Array[scala.Double],
     user: java.lang.String
   ): WorkflowTaskMarkStepsAsDoneParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stepIds")(stepIds)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stepIds = stepIds, user = user)
+  
     __obj.asInstanceOf[WorkflowTaskMarkStepsAsDoneParams]
   }
 }

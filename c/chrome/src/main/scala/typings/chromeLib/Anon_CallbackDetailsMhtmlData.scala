@@ -21,8 +21,8 @@ object Anon_CallbackDetailsMhtmlData {
       scala.Unit
     ]
   ): Anon_CallbackDetailsMhtmlData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("saveAsMHTML")(saveAsMHTML)
+    val __obj = js.Dynamic.literal(saveAsMHTML = saveAsMHTML)
+  
     __obj.asInstanceOf[Anon_CallbackDetailsMhtmlData]
   }
 }

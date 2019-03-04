@@ -30,8 +30,7 @@ object PolicyStatement {
     Resource: java.lang.String | js.Array[java.lang.String] = null,
     Sid: java.lang.String = null
   ): PolicyStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Effect")(Effect.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Effect = Effect.asInstanceOf[js.Any])
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (Condition != null) __obj.updateDynamic("Condition")(Condition)
     if (NotAction != null) __obj.updateDynamic("NotAction")(NotAction.asInstanceOf[js.Any])

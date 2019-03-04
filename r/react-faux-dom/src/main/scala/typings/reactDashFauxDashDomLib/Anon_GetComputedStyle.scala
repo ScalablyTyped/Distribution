@@ -14,8 +14,8 @@ object Anon_GetComputedStyle {
   def apply(
     getComputedStyle: js.Function1[reactDashFauxDashDomLib.reactDashFauxDashDomMod.Element, Anon_GetPropertyValue]
   ): Anon_GetComputedStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getComputedStyle")(getComputedStyle)
+    val __obj = js.Dynamic.literal(getComputedStyle = getComputedStyle)
+  
     __obj.asInstanceOf[Anon_GetComputedStyle]
   }
 }

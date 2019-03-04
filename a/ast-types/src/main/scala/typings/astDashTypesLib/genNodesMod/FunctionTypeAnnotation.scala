@@ -28,9 +28,8 @@ object FunctionTypeAnnotation {
     rest: astDashTypesLib.genKindsMod.FunctionTypeParamKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): FunctionTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("returnType")(returnType)
+    val __obj = js.Dynamic.literal(params = params, returnType = returnType)
+    __obj.updateDynamic("type")(`type`)
     if (rest != null) __obj.updateDynamic("rest")(rest)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[FunctionTypeAnnotation]

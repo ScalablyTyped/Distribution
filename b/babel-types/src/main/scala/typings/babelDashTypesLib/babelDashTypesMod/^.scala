@@ -132,55 +132,55 @@ object ^ extends js.Object {
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    `extends_`: js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
+    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    `extends_`: js.UndefOr[scala.Nothing],
+    extends_ : js.UndefOr[scala.Nothing],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration,
-    `extends_`: scala.Null,
+    extends_ : scala.Null,
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    `extends_`: js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
+    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    `extends_`: js.UndefOr[scala.Nothing],
+    extends_ : js.UndefOr[scala.Nothing],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    `extends_`: scala.Null,
+    extends_ : scala.Null,
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: scala.Null,
-    `extends_`: js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
+    extends_ : js.Array[babelDashTypesLib.babelDashTypesMod.TSExpressionWithTypeArguments],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: scala.Null,
-    `extends_`: js.UndefOr[scala.Nothing],
+    extends_ : js.UndefOr[scala.Nothing],
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSInterfaceDeclaration(
     id: babelDashTypesLib.babelDashTypesMod.Identifier,
     typeParameters: scala.Null,
-    `extends_`: scala.Null,
+    extends_ : scala.Null,
     body: babelDashTypesLib.babelDashTypesMod.TSInterfaceBody
   ): babelDashTypesLib.babelDashTypesMod.TSInterfaceDeclaration = js.native
   def TSIntersectionType(types: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSIntersectionType = js.native
@@ -282,7 +282,7 @@ object ^ extends js.Object {
   def TSTypeParameter(constraint: babelDashTypesLib.babelDashTypesMod.TSType): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
   def TSTypeParameter(
     constraint: babelDashTypesLib.babelDashTypesMod.TSType,
-    `default_`: babelDashTypesLib.babelDashTypesMod.TSType
+    default_ : babelDashTypesLib.babelDashTypesMod.TSType
   ): babelDashTypesLib.babelDashTypesMod.TSTypeParameter = js.native
   def TSTypeParameterDeclaration(params: js.Array[babelDashTypesLib.babelDashTypesMod.TSTypeParameter]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterDeclaration = js.native
   def TSTypeParameterInstantiation(params: js.Array[babelDashTypesLib.babelDashTypesMod.TSType]): babelDashTypesLib.babelDashTypesMod.TSTypeParameterInstantiation = js.native
@@ -3611,7 +3611,7 @@ object ^ extends js.Object {
   def typeParameter(bound: babelDashTypesLib.babelDashTypesMod.TypeAnnotation): babelDashTypesLib.babelDashTypesMod.TypeParameter = js.native
   def typeParameter(
     bound: babelDashTypesLib.babelDashTypesMod.TypeAnnotation,
-    `default_`: babelDashTypesLib.babelDashTypesMod.Flow
+    default_ : babelDashTypesLib.babelDashTypesMod.Flow
   ): babelDashTypesLib.babelDashTypesMod.TypeParameter = js.native
   def typeParameterDeclaration(): babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration = js.native
   def typeParameterDeclaration(params: js.Array[babelDashTypesLib.babelDashTypesMod.Identifier]): babelDashTypesLib.babelDashTypesMod.TypeParameterDeclaration = js.native

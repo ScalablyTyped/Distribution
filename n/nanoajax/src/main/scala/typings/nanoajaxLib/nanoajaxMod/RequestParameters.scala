@@ -22,8 +22,7 @@ object RequestParameters {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     method: java.lang.String = null
   ): RequestParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors)
     if (headers != null) __obj.updateDynamic("headers")(headers)

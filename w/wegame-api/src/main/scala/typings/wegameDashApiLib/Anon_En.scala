@@ -41,8 +41,8 @@ object Anon_En {
     text: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_En = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
+    __obj.updateDynamic("type")(`type`)
     if (image != null) __obj.updateDynamic("image")(image)
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)

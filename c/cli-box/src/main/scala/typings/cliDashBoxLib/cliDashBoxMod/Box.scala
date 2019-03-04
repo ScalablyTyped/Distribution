@@ -18,10 +18,8 @@ object Box {
     settings: cliDashBoxLib.Anon_Height,
     stringify: js.Function0[java.lang.String]
   ): Box = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(options = options, settings = settings, stringify = stringify)
+  
     __obj.asInstanceOf[Box]
   }
 }

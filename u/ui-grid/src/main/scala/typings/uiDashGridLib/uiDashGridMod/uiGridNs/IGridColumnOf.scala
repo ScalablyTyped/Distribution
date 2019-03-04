@@ -140,22 +140,7 @@ object IGridColumnOf {
       scala.Double
     ] = null
   ): IGridColumnOf[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GridColumn")(GridColumn)
-    __obj.updateDynamic("colDef")(colDef)
-    __obj.updateDynamic("getAggregationText")(getAggregationText)
-    __obj.updateDynamic("getAggregationValue")(getAggregationValue)
-    __obj.updateDynamic("getColClass")(getColClass)
-    __obj.updateDynamic("getColClassDefinition")(getColClassDefinition)
-    __obj.updateDynamic("getRenderContainer")(getRenderContainer)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("hideColumn")(hideColumn)
-    __obj.updateDynamic("isPinnedLeft")(isPinnedLeft)
-    __obj.updateDynamic("isPinnedRight")(isPinnedRight)
-    __obj.updateDynamic("setPropertyOrDefault")(setPropertyOrDefault)
-    __obj.updateDynamic("showColumn")(showColumn)
-    __obj.updateDynamic("updateColumnDef")(updateColumnDef)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(GridColumn = GridColumn, colDef = colDef, getAggregationText = getAggregationText, getAggregationValue = getAggregationValue, getColClass = getColClass, getColClassDefinition = getColClassDefinition, getRenderContainer = getRenderContainer, grid = grid, hideColumn = hideColumn, isPinnedLeft = isPinnedLeft, isPinnedRight = isPinnedRight, setPropertyOrDefault = setPropertyOrDefault, showColumn = showColumn, updateColumnDef = updateColumnDef, width = width)
     if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (field != null) __obj.updateDynamic("field")(field)

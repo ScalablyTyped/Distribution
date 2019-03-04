@@ -20,12 +20,8 @@ object JobCompletedEvent {
     requestId: scala.Double,
     result: TaskResult
   ): JobCompletedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outputVariables")(outputVariables)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(jobId = jobId, name = name, outputVariables = outputVariables, requestId = requestId, result = result)
+  
     __obj.asInstanceOf[JobCompletedEvent]
   }
 }

@@ -21,11 +21,8 @@ object Actions {
     removeNotifications: js.Function0[reapopLib.Anon_Type],
     updateNotification: js.Function1[Notification, Notification]
   ): Actions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNotification")(addNotification)
-    __obj.updateDynamic("removeNotification")(removeNotification)
-    __obj.updateDynamic("removeNotifications")(removeNotifications)
-    __obj.updateDynamic("updateNotification")(updateNotification)
+    val __obj = js.Dynamic.literal(addNotification = addNotification, removeNotification = removeNotification, removeNotifications = removeNotifications, updateNotification = updateNotification)
+  
     __obj.asInstanceOf[Actions]
   }
 }

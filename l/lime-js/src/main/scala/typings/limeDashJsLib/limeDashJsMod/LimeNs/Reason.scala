@@ -13,8 +13,7 @@ trait Reason extends js.Object {
 object Reason {
   @scala.inline
   def apply(code: scala.Double, description: java.lang.String = null): Reason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[Reason]
   }

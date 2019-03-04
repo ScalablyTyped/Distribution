@@ -17,10 +17,8 @@ trait Long extends js.Object {
 object Long {
   @scala.inline
   def apply(high: scala.Double, low: scala.Double, unsigned: scala.Boolean): Long = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("unsigned")(unsigned)
+    val __obj = js.Dynamic.literal(high = high, low = low, unsigned = unsigned)
+  
     __obj.asInstanceOf[Long]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_DataKey[K, D] extends js.Object {
 object Anon_DataKey {
   @scala.inline
   def apply[K, D](data: D, key: K): Anon_DataKey[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DataKey[K, D]]
   }
 }

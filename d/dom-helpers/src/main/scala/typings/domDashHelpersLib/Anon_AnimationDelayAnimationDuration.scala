@@ -36,19 +36,8 @@ object Anon_AnimationDelayAnimationDuration {
     transitionProperty: java.lang.String,
     transitionTiming: java.lang.String
   ): Anon_AnimationDelayAnimationDuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationDelay")(animationDelay)
-    __obj.updateDynamic("animationDuration")(animationDuration)
-    __obj.updateDynamic("animationEnd")(animationEnd)
-    __obj.updateDynamic("animationName")(animationName)
-    __obj.updateDynamic("animationTiming")(animationTiming)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("transform")(transform)
-    __obj.updateDynamic("transitionDelay")(transitionDelay)
-    __obj.updateDynamic("transitionDuration")(transitionDuration)
-    __obj.updateDynamic("transitionEnd")(transitionEnd)
-    __obj.updateDynamic("transitionProperty")(transitionProperty)
-    __obj.updateDynamic("transitionTiming")(transitionTiming)
+    val __obj = js.Dynamic.literal(animationDelay = animationDelay, animationDuration = animationDuration, animationEnd = animationEnd, animationName = animationName, animationTiming = animationTiming, default = default, transform = transform, transitionDelay = transitionDelay, transitionDuration = transitionDuration, transitionEnd = transitionEnd, transitionProperty = transitionProperty, transitionTiming = transitionTiming)
+  
     __obj.asInstanceOf[Anon_AnimationDelayAnimationDuration]
   }
 }

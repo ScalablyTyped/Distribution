@@ -32,11 +32,8 @@ object GetDocumentResult {
     documentType: java.lang.String,
     id: java.lang.String
   ): GetDocumentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("documentType")(documentType)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(arn = arn, content = content, documentType = documentType, id = id)
+  
     __obj.asInstanceOf[GetDocumentResult]
   }
 }

@@ -34,18 +34,8 @@ object Anon_BuildCustom {
     tfvc: scala.Double,
     xamlBuild: scala.Double
   ): Anon_BuildCustom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("externalTfsBuild")(externalTfsBuild)
-    __obj.updateDynamic("fileShare")(fileShare)
-    __obj.updateDynamic("gitHub")(gitHub)
-    __obj.updateDynamic("jenkins")(jenkins)
-    __obj.updateDynamic("nuget")(nuget)
-    __obj.updateDynamic("tFGit")(tFGit)
-    __obj.updateDynamic("tfsOnPrem")(tfsOnPrem)
-    __obj.updateDynamic("tfvc")(tfvc)
-    __obj.updateDynamic("xamlBuild")(xamlBuild)
+    val __obj = js.Dynamic.literal(build = build, custom = custom, externalTfsBuild = externalTfsBuild, fileShare = fileShare, gitHub = gitHub, jenkins = jenkins, nuget = nuget, tFGit = tFGit, tfsOnPrem = tfsOnPrem, tfvc = tfvc, xamlBuild = xamlBuild)
+  
     __obj.asInstanceOf[Anon_BuildCustom]
   }
 }

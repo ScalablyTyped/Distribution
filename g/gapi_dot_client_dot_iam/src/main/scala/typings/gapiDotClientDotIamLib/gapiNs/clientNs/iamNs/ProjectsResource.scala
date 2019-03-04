@@ -13,9 +13,8 @@ trait ProjectsResource extends js.Object {
 object ProjectsResource {
   @scala.inline
   def apply(roles: RolesResource, serviceAccounts: ServiceAccountsResource): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roles")(roles)
-    __obj.updateDynamic("serviceAccounts")(serviceAccounts)
+    val __obj = js.Dynamic.literal(roles = roles, serviceAccounts = serviceAccounts)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

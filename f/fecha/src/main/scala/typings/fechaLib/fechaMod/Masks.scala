@@ -30,15 +30,7 @@ object Masks {
     shortTime: java.lang.String,
     StringDictionary: /* myMask */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Masks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("fullDate")(fullDate)
-    __obj.updateDynamic("longDate")(longDate)
-    __obj.updateDynamic("longTime")(longTime)
-    __obj.updateDynamic("mediumDate")(mediumDate)
-    __obj.updateDynamic("mediumTime")(mediumTime)
-    __obj.updateDynamic("shortDate")(shortDate)
-    __obj.updateDynamic("shortTime")(shortTime)
+    val __obj = js.Dynamic.literal(default = default, fullDate = fullDate, longDate = longDate, longTime = longTime, mediumDate = mediumDate, mediumTime = mediumTime, shortDate = shortDate, shortTime = shortTime)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Masks]
   }

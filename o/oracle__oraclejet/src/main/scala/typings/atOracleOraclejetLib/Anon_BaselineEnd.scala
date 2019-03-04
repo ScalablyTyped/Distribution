@@ -28,14 +28,7 @@ object Anon_BaselineEnd {
     value: java.lang.String,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_BaselineEnd[K2, D2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baselineEnd")(baselineEnd)
-    __obj.updateDynamic("baselineStart")(baselineStart)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("rowContext")(rowContext)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("taskContexts")(taskContexts)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(baselineEnd = baselineEnd, baselineStart = baselineStart, end = end, rowContext = rowContext, start = start, taskContexts = taskContexts, value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_BaselineEnd[K2, D2]]
   }

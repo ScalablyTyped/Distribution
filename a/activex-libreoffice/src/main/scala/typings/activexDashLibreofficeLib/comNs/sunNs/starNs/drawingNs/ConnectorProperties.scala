@@ -28,12 +28,8 @@ object ConnectorProperties {
     EdgeNode2HorzDist: scala.Double,
     EdgeNode2VertDist: scala.Double
   ): ConnectorProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EdgeKind")(EdgeKind)
-    __obj.updateDynamic("EdgeNode1HorzDist")(EdgeNode1HorzDist)
-    __obj.updateDynamic("EdgeNode1VertDist")(EdgeNode1VertDist)
-    __obj.updateDynamic("EdgeNode2HorzDist")(EdgeNode2HorzDist)
-    __obj.updateDynamic("EdgeNode2VertDist")(EdgeNode2VertDist)
+    val __obj = js.Dynamic.literal(EdgeKind = EdgeKind, EdgeNode1HorzDist = EdgeNode1HorzDist, EdgeNode1VertDist = EdgeNode1VertDist, EdgeNode2HorzDist = EdgeNode2HorzDist, EdgeNode2VertDist = EdgeNode2VertDist)
+  
     __obj.asInstanceOf[ConnectorProperties]
   }
 }

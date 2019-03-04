@@ -38,10 +38,8 @@ object SinkInfo {
       ]
     ]
   ): SinkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, name = name, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SinkInfo]
   }
 }

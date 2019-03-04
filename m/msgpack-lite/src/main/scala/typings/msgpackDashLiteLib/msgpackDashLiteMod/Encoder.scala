@@ -42,22 +42,8 @@ object Encoder {
     start: scala.Double,
     write: js.Function1[js.Any, scala.Unit]
   ): Encoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferish")(bufferish)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("maxBufferSize")(maxBufferSize)
-    __obj.updateDynamic("minBufferSize")(minBufferSize)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("pull")(pull)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("reserve")(reserve)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(bufferish = bufferish, encode = encode, end = end, fetch = fetch, flush = flush, maxBufferSize = maxBufferSize, minBufferSize = minBufferSize, offset = offset, pull = pull, push = push, read = read, reserve = reserve, send = send, start = start, write = write)
+  
     __obj.asInstanceOf[Encoder]
   }
 }

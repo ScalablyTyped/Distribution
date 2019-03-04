@@ -26,14 +26,8 @@ object Anon_HeightScale {
     tube: scala.Double,
     tubularSegments: scala.Double
   ): Anon_HeightScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("heightScale")(heightScale)
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("q")(q)
-    __obj.updateDynamic("radialSegments")(radialSegments)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("tube")(tube)
-    __obj.updateDynamic("tubularSegments")(tubularSegments)
+    val __obj = js.Dynamic.literal(heightScale = heightScale, p = p, q = q, radialSegments = radialSegments, radius = radius, tube = tube, tubularSegments = tubularSegments)
+  
     __obj.asInstanceOf[Anon_HeightScale]
   }
 }

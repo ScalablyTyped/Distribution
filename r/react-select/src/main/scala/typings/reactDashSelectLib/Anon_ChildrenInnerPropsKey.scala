@@ -18,9 +18,8 @@ object Anon_ChildrenInnerPropsKey {
     children: reactLib.reactMod.ReactNs.ReactNode,
     innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Anon_ChildrenInnerPropsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerProps")(innerProps)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerProps = innerProps)
+  
     __obj.asInstanceOf[Anon_ChildrenInnerPropsKey]
   }
 }

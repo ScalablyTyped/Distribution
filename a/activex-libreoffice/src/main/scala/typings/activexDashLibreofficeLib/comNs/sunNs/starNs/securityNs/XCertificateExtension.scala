@@ -30,13 +30,8 @@ object XCertificateExtension {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCertificateExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExtensionId")(ExtensionId)
-    __obj.updateDynamic("ExtensionValue")(ExtensionValue)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("isCritical")(isCritical)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ExtensionId = ExtensionId, ExtensionValue = ExtensionValue, acquire = acquire, isCritical = isCritical, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCertificateExtension]
   }
 }

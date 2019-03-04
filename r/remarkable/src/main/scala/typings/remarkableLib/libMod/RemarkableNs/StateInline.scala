@@ -53,22 +53,8 @@ object StateInline {
     src: java.lang.String,
     tokens: js.Array[ContentToken]
   ): StateInline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("isInLabel")(isInLabel)
-    __obj.updateDynamic("labelUnmatchedScopes")(labelUnmatchedScopes)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("linkContent")(linkContent)
-    __obj.updateDynamic("linkLevel")(linkLevel)
-    __obj.updateDynamic("parser")(parser)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("pendingLevel")(pendingLevel)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("posMax")(posMax)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("pushPending")(pushPending)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(env = env, isInLabel = isInLabel, labelUnmatchedScopes = labelUnmatchedScopes, level = level, linkContent = linkContent, linkLevel = linkLevel, parser = parser, pending = pending, pendingLevel = pendingLevel, pos = pos, posMax = posMax, push = push, pushPending = pushPending, src = src, tokens = tokens)
+  
     __obj.asInstanceOf[StateInline]
   }
 }

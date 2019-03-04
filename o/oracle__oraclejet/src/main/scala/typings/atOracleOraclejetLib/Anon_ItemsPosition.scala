@@ -20,10 +20,7 @@ object Anon_ItemsPosition {
     reference: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ItemsPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(items = items, position = position, reference = reference)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ItemsPosition]
   }

@@ -53,15 +53,7 @@ object ConstructionSite {
     structureType: T,
     room: Room = null
   ): ConstructionSite[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("my")(my)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("progressTotal")(progressTotal)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("structureType")(structureType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, my = my, owner = owner, pos = pos, progress = progress, progressTotal = progressTotal, remove = remove, structureType = structureType.asInstanceOf[js.Any])
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[ConstructionSite[T]]
   }

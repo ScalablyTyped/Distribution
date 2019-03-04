@@ -42,13 +42,8 @@ object GitTreeEntryRef {
     size: scala.Double,
     url: java.lang.String
   ): GitTreeEntryRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gitObjectType")(gitObjectType)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("relativePath")(relativePath)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(gitObjectType = gitObjectType, mode = mode, objectId = objectId, relativePath = relativePath, size = size, url = url)
+  
     __obj.asInstanceOf[GitTreeEntryRef]
   }
 }

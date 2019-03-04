@@ -66,7 +66,8 @@ object EligibilityResponseInsuranceBenefitBalanceFinancial {
     usedMoney: Money = null,
     usedUnsignedInt: js.UndefOr[unsignedInt] = js.undefined
   ): EligibilityResponseInsuranceBenefitBalanceFinancial = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_allowedString != null) __obj.updateDynamic("_allowedString")(_allowedString)
     if (_allowedUnsignedInt != null) __obj.updateDynamic("_allowedUnsignedInt")(_allowedUnsignedInt)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

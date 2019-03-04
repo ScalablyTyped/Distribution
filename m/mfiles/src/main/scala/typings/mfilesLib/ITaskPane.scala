@@ -30,16 +30,8 @@ object ITaskPane {
     SetTheme: js.Function1[ITheme, scala.Unit],
     Visible: scala.Boolean
   ): ITaskPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddCustomCommandToGroup")(AddCustomCommandToGroup)
-    __obj.updateDynamic("Available")(Available)
-    __obj.updateDynamic("CreateGroup")(CreateGroup)
-    __obj.updateDynamic("DeleteGroup")(DeleteGroup)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("RemoveCustomCommandFromGroup")(RemoveCustomCommandFromGroup)
-    __obj.updateDynamic("SetLogo")(SetLogo)
-    __obj.updateDynamic("SetTheme")(SetTheme)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(AddCustomCommandToGroup = AddCustomCommandToGroup, Available = Available, CreateGroup = CreateGroup, DeleteGroup = DeleteGroup, Events = Events, RemoveCustomCommandFromGroup = RemoveCustomCommandFromGroup, SetLogo = SetLogo, SetTheme = SetTheme, Visible = Visible)
+  
     __obj.asInstanceOf[ITaskPane]
   }
 }

@@ -12,8 +12,8 @@ trait AuthConnection extends js.Object {
 object AuthConnection {
   @scala.inline
   def apply(uuid: java.lang.String): AuthConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(uuid = uuid)
+  
     __obj.asInstanceOf[AuthConnection]
   }
 }

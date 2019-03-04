@@ -23,9 +23,8 @@ trait IConverter[T] extends js.Object {
 object IConverter {
   @scala.inline
   def apply[T](get: js.Function1[T, js.UndefOr[java.lang.String]], set: js.Function1[java.lang.String, T]): IConverter[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, set = set)
+  
     __obj.asInstanceOf[IConverter[T]]
   }
 }

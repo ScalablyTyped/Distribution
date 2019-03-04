@@ -16,8 +16,7 @@ object Anon_S3BucketNameS3KeyPrefix {
     s3BucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     s3KeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_S3BucketNameS3KeyPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
     if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_S3BucketNameS3KeyPrefix]
   }

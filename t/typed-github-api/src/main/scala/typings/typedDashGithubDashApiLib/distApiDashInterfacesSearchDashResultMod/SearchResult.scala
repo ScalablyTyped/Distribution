@@ -12,8 +12,8 @@ trait SearchResult extends js.Object {
 object SearchResult {
   @scala.inline
   def apply(score: scala.Double): SearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("score")(score)
+    val __obj = js.Dynamic.literal(score = score)
+  
     __obj.asInstanceOf[SearchResult]
   }
 }

@@ -18,8 +18,7 @@ object ProxyTarget {
     uri: java.lang.String,
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): ProxyTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[ProxyTarget]
   }

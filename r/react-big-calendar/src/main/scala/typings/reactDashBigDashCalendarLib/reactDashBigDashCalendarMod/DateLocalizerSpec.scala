@@ -20,10 +20,7 @@ object DateLocalizerSpec {
     formats: Formats,
     propType: propDashTypesLib.propDashTypesMod.Validator[_] = null
   ): DateLocalizerSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstOfWeek")(firstOfWeek)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("formats")(formats)
+    val __obj = js.Dynamic.literal(firstOfWeek = firstOfWeek, format = format, formats = formats)
     if (propType != null) __obj.updateDynamic("propType")(propType)
     __obj.asInstanceOf[DateLocalizerSpec]
   }

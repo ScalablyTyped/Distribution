@@ -23,8 +23,8 @@ object Serializable {
   def apply[T](
     serialize: js.Function0[T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[T]]
   ): Serializable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(serialize = serialize)
+  
     __obj.asInstanceOf[Serializable[T]]
   }
 }

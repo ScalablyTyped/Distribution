@@ -146,8 +146,7 @@ object Anon_AltAlwaysIncludeEmailCalendarIdFields {
     updatedMin: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAlwaysIncludeEmailCalendarIdFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
     if (fields != null) __obj.updateDynamic("fields")(fields)

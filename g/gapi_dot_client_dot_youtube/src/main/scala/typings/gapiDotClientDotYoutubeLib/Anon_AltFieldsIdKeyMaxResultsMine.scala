@@ -88,8 +88,7 @@ object Anon_AltFieldsIdKeyMaxResultsMine {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsIdKeyMaxResultsMine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (id != null) __obj.updateDynamic("id")(id)

@@ -32,11 +32,8 @@ object XRemoteContentProviderSupplier {
     ],
     release: js.Function0[scala.Unit]
   ): XRemoteContentProviderSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryRemoteContentProvider")(queryRemoteContentProvider)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryRemoteContentProvider = queryRemoteContentProvider, release = release)
+  
     __obj.asInstanceOf[XRemoteContentProviderSupplier]
   }
 }

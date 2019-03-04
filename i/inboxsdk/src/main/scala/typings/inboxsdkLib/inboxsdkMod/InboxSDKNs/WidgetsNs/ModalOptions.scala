@@ -24,8 +24,7 @@ object ModalOptions {
     showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(el = el)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
     if (!js.isUndefined(constrainTitleWidth)) __obj.updateDynamic("constrainTitleWidth")(constrainTitleWidth)

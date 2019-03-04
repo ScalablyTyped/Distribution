@@ -22,10 +22,7 @@ object Anon_Body {
     headers: js.Array[postmanDashCollectionLib.postmanDashCollectionMod.HeaderDefinition] = null,
     statusMessage: java.lang.String = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("elapsedTime")(elapsedTime)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], elapsedTime = elapsedTime, statusCode = statusCode)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
     __obj.asInstanceOf[Anon_Body]

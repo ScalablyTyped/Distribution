@@ -18,10 +18,8 @@ object Anon_CENTER {
     LEFT: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.left,
     RIGHT: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.right
   ): Anon_CENTER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("RIGHT")(RIGHT)
+    val __obj = js.Dynamic.literal(CENTER = CENTER, LEFT = LEFT, RIGHT = RIGHT)
+  
     __obj.asInstanceOf[Anon_CENTER]
   }
 }

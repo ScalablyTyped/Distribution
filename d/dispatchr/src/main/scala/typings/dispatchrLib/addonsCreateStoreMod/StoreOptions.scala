@@ -26,9 +26,7 @@ object StoreOptions {
     rehydrate: js.Function1[/* state */ js.Any, scala.Unit] = null,
     statics: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): StoreOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handlers")(handlers)
-    __obj.updateDynamic("storeName")(storeName)
+    val __obj = js.Dynamic.literal(handlers = handlers, storeName = storeName)
     if (dehydrate != null) __obj.updateDynamic("dehydrate")(dehydrate)
     if (initialize != null) __obj.updateDynamic("initialize")(initialize)
     if (mixins != null) __obj.updateDynamic("mixins")(mixins)

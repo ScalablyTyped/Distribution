@@ -20,11 +20,8 @@ object Anon_CustomerDnsIps {
     subnetIds: js.Array[java.lang.String],
     vpcId: java.lang.String
   ): Anon_CustomerDnsIps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customerDnsIps")(customerDnsIps)
-    __obj.updateDynamic("customerUsername")(customerUsername)
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(customerDnsIps = customerDnsIps, customerUsername = customerUsername, subnetIds = subnetIds, vpcId = vpcId)
+  
     __obj.asInstanceOf[Anon_CustomerDnsIps]
   }
 }

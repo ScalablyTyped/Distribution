@@ -23,10 +23,8 @@ trait ScanCodeData extends js.Object {
 object ScanCodeData {
   @scala.inline
   def apply(barCode: java.lang.String, code: java.lang.String, qrCode: java.lang.String): ScanCodeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("barCode")(barCode)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("qrCode")(qrCode)
+    val __obj = js.Dynamic.literal(barCode = barCode, code = code, qrCode = qrCode)
+  
     __obj.asInstanceOf[ScanCodeData]
   }
 }

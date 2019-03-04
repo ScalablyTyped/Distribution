@@ -18,8 +18,8 @@ object RevisionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RevisionCheckResponse]
     ]
   ): RevisionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
+    val __obj = js.Dynamic.literal(check = check)
+  
     __obj.asInstanceOf[RevisionsResource]
   }
 }

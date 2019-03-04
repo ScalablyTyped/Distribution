@@ -28,10 +28,8 @@ object Apply1 {
       fpDashTsLib.libHKTMod.Type[F, js.Any]
     ]
   ): Apply1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, map = map)
+  
     __obj.asInstanceOf[Apply1[F]]
   }
 }

@@ -60,15 +60,8 @@ object NetworksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): NetworksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPeering")(addPeering)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("removePeering")(removePeering)
-    __obj.updateDynamic("switchToCustomMode")(switchToCustomMode)
+    val __obj = js.Dynamic.literal(addPeering = addPeering, delete = delete, get = get, insert = insert, list = list, patch = patch, removePeering = removePeering, switchToCustomMode = switchToCustomMode)
+  
     __obj.asInstanceOf[NetworksResource]
   }
 }

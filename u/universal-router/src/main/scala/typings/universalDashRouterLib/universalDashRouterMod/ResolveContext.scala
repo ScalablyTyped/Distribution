@@ -12,8 +12,8 @@ trait ResolveContext extends Context {
 object ResolveContext {
   @scala.inline
   def apply(pathname: java.lang.String): ResolveContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathname")(pathname)
+    val __obj = js.Dynamic.literal(pathname = pathname)
+  
     __obj.asInstanceOf[ResolveContext]
   }
 }

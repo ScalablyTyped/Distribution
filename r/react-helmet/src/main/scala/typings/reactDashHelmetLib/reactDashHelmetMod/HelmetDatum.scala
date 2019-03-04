@@ -15,9 +15,8 @@ object HelmetDatum {
     toComponent: js.Function0[reactLib.reactMod.Component[_, js.Object, _]],
     toString: js.Function0[java.lang.String]
   ): HelmetDatum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toComponent")(toComponent)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toComponent = toComponent, toString = toString)
+  
     __obj.asInstanceOf[HelmetDatum]
   }
 }

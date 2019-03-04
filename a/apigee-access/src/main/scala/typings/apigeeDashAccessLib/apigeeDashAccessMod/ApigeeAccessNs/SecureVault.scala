@@ -20,9 +20,8 @@ object SecureVault {
     ],
     getKeys: js.Function1[js.Function2[/* err */ js.Any, /* data */ js.Any, scala.Unit], scala.Unit]
   ): SecureVault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getKeys")(getKeys)
+    val __obj = js.Dynamic.literal(get = get, getKeys = getKeys)
+  
     __obj.asInstanceOf[SecureVault]
   }
 }

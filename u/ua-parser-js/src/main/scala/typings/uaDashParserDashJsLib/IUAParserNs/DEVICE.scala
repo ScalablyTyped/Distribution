@@ -30,16 +30,8 @@ object DEVICE {
     VENDOR: java.lang.String,
     WEARABLE: java.lang.String
   ): DEVICE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CONSOLE")(CONSOLE)
-    __obj.updateDynamic("EMBEDDED")(EMBEDDED)
-    __obj.updateDynamic("MOBILE")(MOBILE)
-    __obj.updateDynamic("MODEL")(MODEL)
-    __obj.updateDynamic("SMARTTV")(SMARTTV)
-    __obj.updateDynamic("TABLET")(TABLET)
-    __obj.updateDynamic("TYPE")(TYPE)
-    __obj.updateDynamic("VENDOR")(VENDOR)
-    __obj.updateDynamic("WEARABLE")(WEARABLE)
+    val __obj = js.Dynamic.literal(CONSOLE = CONSOLE, EMBEDDED = EMBEDDED, MOBILE = MOBILE, MODEL = MODEL, SMARTTV = SMARTTV, TABLET = TABLET, TYPE = TYPE, VENDOR = VENDOR, WEARABLE = WEARABLE)
+  
     __obj.asInstanceOf[DEVICE]
   }
 }

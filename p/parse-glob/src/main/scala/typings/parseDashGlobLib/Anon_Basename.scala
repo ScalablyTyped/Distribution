@@ -37,12 +37,8 @@ object Anon_Basename {
     extname: java.lang.String,
     filename: java.lang.String
   ): Anon_Basename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basename")(basename)
-    __obj.updateDynamic("dirname")(dirname)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("extname")(extname)
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(basename = basename, dirname = dirname, ext = ext, extname = extname, filename = filename)
+  
     __obj.asInstanceOf[Anon_Basename]
   }
 }

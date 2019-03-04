@@ -42,13 +42,16 @@ object CharsOptions {
     `top-mid`: java.lang.String,
     `top-right`: java.lang.String
   ): CharsOptions = {
-    val __obj = js.Dynamic.literal(`bottom-left` = `bottom-left`, `bottom-mid` = `bottom-mid`, `bottom-right` = `bottom-right`, `left-mid` = `left-mid`, `mid-mid` = `mid-mid`, `right-mid` = `right-mid`, `top-left` = `top-left`, `top-mid` = `top-mid`, `top-right` = `top-right`)
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("mid")(mid)
-    __obj.updateDynamic("middle")(middle)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, left = left, mid = mid, middle = middle, right = right, top = top)
+    __obj.updateDynamic("bottom-left")(`bottom-left`)
+    __obj.updateDynamic("bottom-mid")(`bottom-mid`)
+    __obj.updateDynamic("bottom-right")(`bottom-right`)
+    __obj.updateDynamic("left-mid")(`left-mid`)
+    __obj.updateDynamic("mid-mid")(`mid-mid`)
+    __obj.updateDynamic("right-mid")(`right-mid`)
+    __obj.updateDynamic("top-left")(`top-left`)
+    __obj.updateDynamic("top-mid")(`top-mid`)
+    __obj.updateDynamic("top-right")(`top-right`)
     __obj.asInstanceOf[CharsOptions]
   }
 }

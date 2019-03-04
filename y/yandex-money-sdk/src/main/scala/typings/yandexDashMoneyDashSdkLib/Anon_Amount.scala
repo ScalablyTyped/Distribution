@@ -30,13 +30,7 @@ object Anon_Amount {
     pattern_id: java.lang.String = null,
     `type`: java.lang.String = null
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("operation_id")(operation_id)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(amount = amount, datetime = datetime, direction = direction, operation_id = operation_id, status = status, title = title)
     if (label != null) __obj.updateDynamic("label")(label)
     if (pattern_id != null) __obj.updateDynamic("pattern_id")(pattern_id)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

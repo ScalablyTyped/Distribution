@@ -74,17 +74,8 @@ object XProofreader {
     release: js.Function0[scala.Unit],
     resetIgnoreRules: js.Function0[scala.Unit]
   ): XProofreader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("doProofreading")(doProofreading)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("ignoreRule")(ignoreRule)
-    __obj.updateDynamic("isSpellChecker")(isSpellChecker)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resetIgnoreRules")(resetIgnoreRules)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, doProofreading = doProofreading, getLocales = getLocales, hasLocale = hasLocale, ignoreRule = ignoreRule, isSpellChecker = isSpellChecker, queryInterface = queryInterface, release = release, resetIgnoreRules = resetIgnoreRules)
+  
     __obj.asInstanceOf[XProofreader]
   }
 }

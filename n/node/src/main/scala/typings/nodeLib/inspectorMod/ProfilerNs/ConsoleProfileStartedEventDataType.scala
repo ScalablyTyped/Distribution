@@ -24,9 +24,7 @@ object ConsoleProfileStartedEventDataType {
     location: nodeLib.inspectorMod.DebuggerNs.Location,
     title: java.lang.String = null
   ): ConsoleProfileStartedEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(id = id, location = location)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ConsoleProfileStartedEventDataType]
   }

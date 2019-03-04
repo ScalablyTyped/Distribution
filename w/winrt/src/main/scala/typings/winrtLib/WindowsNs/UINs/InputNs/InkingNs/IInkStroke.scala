@@ -25,13 +25,8 @@ object IInkStroke {
     recognized: scala.Boolean,
     selected: scala.Boolean
   ): IInkStroke = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingRect")(boundingRect)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("drawingAttributes")(drawingAttributes)
-    __obj.updateDynamic("getRenderingSegments")(getRenderingSegments)
-    __obj.updateDynamic("recognized")(recognized)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect, clone = clone, drawingAttributes = drawingAttributes, getRenderingSegments = getRenderingSegments, recognized = recognized, selected = selected)
+  
     __obj.asInstanceOf[IInkStroke]
   }
 }

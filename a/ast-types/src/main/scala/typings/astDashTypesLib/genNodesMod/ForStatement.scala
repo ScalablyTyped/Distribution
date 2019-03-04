@@ -27,8 +27,8 @@ object ForStatement {
     test: astDashTypesLib.genKindsMod.ExpressionKind = null,
     update: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): ForStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (test != null) __obj.updateDynamic("test")(test)
     if (update != null) __obj.updateDynamic("update")(update)

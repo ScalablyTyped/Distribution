@@ -44,8 +44,7 @@ object Anon_CreditEllipsoidEnablePickFeatures {
     tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
     urlSchemeZeroPadding: js.Object = null
   ): Anon_CreditEllipsoidEnablePickFeatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (!js.isUndefined(enablePickFeatures)) __obj.updateDynamic("enablePickFeatures")(enablePickFeatures)

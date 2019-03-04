@@ -41,8 +41,8 @@ object XFastSAXSerializable {
       scala.Unit
     ]
   ): XFastSAXSerializable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fastSerialize")(fastSerialize)
+    val __obj = js.Dynamic.literal(fastSerialize = fastSerialize)
+  
     __obj.asInstanceOf[XFastSAXSerializable]
   }
 }

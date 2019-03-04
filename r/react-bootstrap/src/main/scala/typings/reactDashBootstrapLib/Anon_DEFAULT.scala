@@ -20,11 +20,8 @@ object Anon_DEFAULT {
     LINK: java.lang.String,
     PRIMARY: java.lang.String
   ): Anon_DEFAULT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("INVERSE")(INVERSE)
-    __obj.updateDynamic("LINK")(LINK)
-    __obj.updateDynamic("PRIMARY")(PRIMARY)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, INVERSE = INVERSE, LINK = LINK, PRIMARY = PRIMARY)
+  
     __obj.asInstanceOf[Anon_DEFAULT]
   }
 }

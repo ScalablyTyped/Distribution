@@ -18,10 +18,8 @@ object Commit {
     commitHash: webgmeLib.GmeCommonNs.MetadataHash,
     status: java.lang.String
   ): Commit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchName")(branchName)
-    __obj.updateDynamic("commitHash")(commitHash)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(branchName = branchName, commitHash = commitHash, status = status)
+  
     __obj.asInstanceOf[Commit]
   }
 }

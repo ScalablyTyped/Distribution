@@ -18,9 +18,7 @@ object AdminResetOffsetsOptions {
     topic: java.lang.String,
     earliest: js.UndefOr[scala.Boolean] = js.undefined
   ): AdminResetOffsetsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(groupId = groupId, topic = topic)
     if (!js.isUndefined(earliest)) __obj.updateDynamic("earliest")(earliest)
     __obj.asInstanceOf[AdminResetOffsetsOptions]
   }

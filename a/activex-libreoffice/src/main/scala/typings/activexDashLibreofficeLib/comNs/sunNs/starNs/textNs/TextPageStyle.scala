@@ -104,25 +104,8 @@ object TextPageStyle {
     RegisterParagraphStyle: java.lang.String,
     TextColumns: XTextColumns
   ): TextPageStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FooterText")(FooterText)
-    __obj.updateDynamic("FooterTextFirst")(FooterTextFirst)
-    __obj.updateDynamic("FooterTextLeft")(FooterTextLeft)
-    __obj.updateDynamic("FooterTextRight")(FooterTextRight)
-    __obj.updateDynamic("FootnoteHeight")(FootnoteHeight)
-    __obj.updateDynamic("FootnoteLineAdjust")(FootnoteLineAdjust)
-    __obj.updateDynamic("FootnoteLineColor")(FootnoteLineColor)
-    __obj.updateDynamic("FootnoteLineDistance")(FootnoteLineDistance)
-    __obj.updateDynamic("FootnoteLineRelativeWidth")(FootnoteLineRelativeWidth)
-    __obj.updateDynamic("FootnoteLineTextDistance")(FootnoteLineTextDistance)
-    __obj.updateDynamic("FootnoteLineWeight")(FootnoteLineWeight)
-    __obj.updateDynamic("HeaderText")(HeaderText)
-    __obj.updateDynamic("HeaderTextFirst")(HeaderTextFirst)
-    __obj.updateDynamic("HeaderTextLeft")(HeaderTextLeft)
-    __obj.updateDynamic("HeaderTextRight")(HeaderTextRight)
-    __obj.updateDynamic("RegisterModeActive")(RegisterModeActive)
-    __obj.updateDynamic("RegisterParagraphStyle")(RegisterParagraphStyle)
-    __obj.updateDynamic("TextColumns")(TextColumns)
+    val __obj = js.Dynamic.literal(FooterText = FooterText, FooterTextFirst = FooterTextFirst, FooterTextLeft = FooterTextLeft, FooterTextRight = FooterTextRight, FootnoteHeight = FootnoteHeight, FootnoteLineAdjust = FootnoteLineAdjust, FootnoteLineColor = FootnoteLineColor, FootnoteLineDistance = FootnoteLineDistance, FootnoteLineRelativeWidth = FootnoteLineRelativeWidth, FootnoteLineTextDistance = FootnoteLineTextDistance, FootnoteLineWeight = FootnoteLineWeight, HeaderText = HeaderText, HeaderTextFirst = HeaderTextFirst, HeaderTextLeft = HeaderTextLeft, HeaderTextRight = HeaderTextRight, RegisterModeActive = RegisterModeActive, RegisterParagraphStyle = RegisterParagraphStyle, TextColumns = TextColumns)
+  
     __obj.asInstanceOf[TextPageStyle]
   }
 }

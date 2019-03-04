@@ -19,8 +19,8 @@ trait Phrase extends js.Object {
 object Phrase {
   @scala.inline
   def apply(sequence: js.Array[_]): Phrase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(sequence = sequence)
+  
     __obj.asInstanceOf[Phrase]
   }
 }

@@ -20,10 +20,7 @@ object BeforeCopyExtraFilesOptions {
     platformName: java.lang.String,
     asarIntegrity: appDashBuilderDashLibLib.outAsarIntegrityMod.AsarIntegrity = null
   ): BeforeCopyExtraFilesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appOutDir")(appOutDir)
-    __obj.updateDynamic("packager")(packager)
-    __obj.updateDynamic("platformName")(platformName)
+    val __obj = js.Dynamic.literal(appOutDir = appOutDir, packager = packager, platformName = platformName)
     if (asarIntegrity != null) __obj.updateDynamic("asarIntegrity")(asarIntegrity)
     __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
   }

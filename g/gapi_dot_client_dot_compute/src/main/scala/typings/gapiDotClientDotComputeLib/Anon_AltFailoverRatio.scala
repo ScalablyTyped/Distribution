@@ -60,10 +60,7 @@ object Anon_AltFailoverRatio {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFailoverRatio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("targetPool")(targetPool)
+    val __obj = js.Dynamic.literal(project = project, region = region, targetPool = targetPool)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (failoverRatio != null) __obj.updateDynamic("failoverRatio")(failoverRatio.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields)

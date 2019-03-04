@@ -176,8 +176,7 @@ object ClaimItem {
     udi: js.Array[Reference] = null,
     unitPrice: Money = null
   ): ClaimItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(sequence = sequence)
     if (_careTeamLinkId != null) __obj.updateDynamic("_careTeamLinkId")(_careTeamLinkId)
     if (_diagnosisLinkId != null) __obj.updateDynamic("_diagnosisLinkId")(_diagnosisLinkId)
     if (_factor != null) __obj.updateDynamic("_factor")(_factor)

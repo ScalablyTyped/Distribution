@@ -36,9 +36,8 @@ object RTCInboundRTPStreamStats {
     ssrc: java.lang.String = null,
     transportId: java.lang.String = null
   ): RTCInboundRTPStreamStats = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId)
     if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
     if (codecId != null) __obj.updateDynamic("codecId")(codecId)

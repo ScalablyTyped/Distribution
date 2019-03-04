@@ -18,10 +18,8 @@ object Anon_Gamepad {
     imageview: wiiuLib.wiiuNs.ImageView,
     videoplayer: wiiuLib.wiiuNs.VideoPlayer
   ): Anon_Gamepad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gamepad")(gamepad)
-    __obj.updateDynamic("imageview")(imageview)
-    __obj.updateDynamic("videoplayer")(videoplayer)
+    val __obj = js.Dynamic.literal(gamepad = gamepad, imageview = imageview, videoplayer = videoplayer)
+  
     __obj.asInstanceOf[Anon_Gamepad]
   }
 }

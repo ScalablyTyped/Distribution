@@ -27,8 +27,7 @@ object IClientPublishOptions {
     dup: js.UndefOr[scala.Boolean] = js.undefined,
     retain: js.UndefOr[scala.Boolean] = js.undefined
   ): IClientPublishOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qos")(qos)
+    val __obj = js.Dynamic.literal(qos = qos)
     if (!js.isUndefined(dup)) __obj.updateDynamic("dup")(dup)
     if (!js.isUndefined(retain)) __obj.updateDynamic("retain")(retain)
     __obj.asInstanceOf[IClientPublishOptions]

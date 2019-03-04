@@ -17,10 +17,8 @@ trait DatabaseInfo extends js.Object {
 object DatabaseInfo {
   @scala.inline
   def apply(db_name: java.lang.String, doc_count: scala.Double, update_seq: scala.Double | java.lang.String): DatabaseInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db_name")(db_name)
-    __obj.updateDynamic("doc_count")(doc_count)
-    __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(db_name = db_name, doc_count = doc_count, update_seq = update_seq.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DatabaseInfo]
   }
 }

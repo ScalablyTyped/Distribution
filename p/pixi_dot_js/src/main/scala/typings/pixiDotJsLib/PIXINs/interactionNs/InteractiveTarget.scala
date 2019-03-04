@@ -27,14 +27,8 @@ object InteractiveTarget {
     interactiveChildren: scala.Boolean,
     trackedPointers: org.scalablytyped.runtime.NumberDictionary[InteractionTrackingData]
   ): InteractiveTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonMode")(buttonMode)
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("defaultCursor")(defaultCursor)
-    __obj.updateDynamic("hitArea")(hitArea.asInstanceOf[js.Any])
-    __obj.updateDynamic("interactive")(interactive)
-    __obj.updateDynamic("interactiveChildren")(interactiveChildren)
-    __obj.updateDynamic("trackedPointers")(trackedPointers)
+    val __obj = js.Dynamic.literal(buttonMode = buttonMode, cursor = cursor, defaultCursor = defaultCursor, hitArea = hitArea.asInstanceOf[js.Any], interactive = interactive, interactiveChildren = interactiveChildren, trackedPointers = trackedPointers)
+  
     __obj.asInstanceOf[InteractiveTarget]
   }
 }

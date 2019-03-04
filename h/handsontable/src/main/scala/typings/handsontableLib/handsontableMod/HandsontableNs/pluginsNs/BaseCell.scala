@@ -25,14 +25,8 @@ object BaseCell {
     toString: js.Function0[java.lang.String],
     translateTo: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): BaseCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnAbsolute")(columnAbsolute)
-    __obj.updateDynamic("columnOffset")(columnOffset)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("rowAbsolute")(rowAbsolute)
-    __obj.updateDynamic("rowOffset")(rowOffset)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("translateTo")(translateTo)
+    val __obj = js.Dynamic.literal(columnAbsolute = columnAbsolute, columnOffset = columnOffset, isEqual = isEqual, rowAbsolute = rowAbsolute, rowOffset = rowOffset, toString = toString, translateTo = translateTo)
+  
     __obj.asInstanceOf[BaseCell]
   }
 }

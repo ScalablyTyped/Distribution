@@ -65,8 +65,7 @@ object AjaxChainConfiguration {
     label: java.lang.String = null,
     transform: js.Function1[/* response */ js.Any, java.lang.String | js.Object | js.Array[js.Object]] = null
   ): AjaxChainConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings)
     if (appendToUrl != null) __obj.updateDynamic("appendToUrl")(appendToUrl)
     if (hasCache != null) __obj.updateDynamic("hasCache")(hasCache)
     if (hasErrors != null) __obj.updateDynamic("hasErrors")(hasErrors)

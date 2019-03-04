@@ -21,13 +21,8 @@ object plupload_error {
     responseHeaders: java.lang.String,
     status: scala.Double
   ): plupload_error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(code = code, file = file, message = message, response = response, responseHeaders = responseHeaders, status = status)
+  
     __obj.asInstanceOf[plupload_error]
   }
 }

@@ -42,11 +42,8 @@ object Printer {
     printList: js.Function3[ListFormat, NodeArray[js.Any], SourceFile, java.lang.String],
     printNode: js.Function3[EmitHint, Node, SourceFile, java.lang.String]
   ): Printer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printBundle")(printBundle)
-    __obj.updateDynamic("printFile")(printFile)
-    __obj.updateDynamic("printList")(printList)
-    __obj.updateDynamic("printNode")(printNode)
+    val __obj = js.Dynamic.literal(printBundle = printBundle, printFile = printFile, printList = printList, printNode = printNode)
+  
     __obj.asInstanceOf[Printer]
   }
 }

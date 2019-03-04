@@ -34,18 +34,8 @@ object ExtensionDraft {
     validationErrors: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString],
     validationWarnings: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString]
   ): ExtensionDraft = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assets")(assets)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("draftState")(draftState)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("validationErrors")(validationErrors)
-    __obj.updateDynamic("validationWarnings")(validationWarnings)
+    val __obj = js.Dynamic.literal(assets = assets, createdDate = createdDate, draftState = draftState, extensionName = extensionName, id = id, lastUpdated = lastUpdated, payload = payload, product = product, publisherName = publisherName, validationErrors = validationErrors, validationWarnings = validationWarnings)
+  
     __obj.asInstanceOf[ExtensionDraft]
   }
 }

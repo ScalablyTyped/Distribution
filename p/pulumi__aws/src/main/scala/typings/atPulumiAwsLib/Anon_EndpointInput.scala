@@ -12,8 +12,8 @@ trait Anon_EndpointInput extends js.Object {
 object Anon_EndpointInput {
   @scala.inline
   def apply(endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_EndpointInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EndpointInput]
   }
 }

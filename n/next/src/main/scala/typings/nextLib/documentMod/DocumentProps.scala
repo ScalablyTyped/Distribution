@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DocumentProps[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends js.Object {
-  var `__NEXT_DATA__`: nextLib.Anon_AssetPrefix[Q]
+  var __NEXT_DATA__ : nextLib.Anon_AssetPrefix[Q]
   var assetPrefix: java.lang.String
   var buildManifest: stdLib.Record[java.lang.String, _]
   var dev: scala.Boolean
@@ -20,7 +20,7 @@ trait DocumentProps[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends
 object DocumentProps {
   @scala.inline
   def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
-    `__NEXT_DATA__`: nextLib.Anon_AssetPrefix[Q],
+    __NEXT_DATA__ : nextLib.Anon_AssetPrefix[Q],
     assetPrefix: java.lang.String,
     buildManifest: stdLib.Record[java.lang.String, _],
     dev: scala.Boolean,
@@ -30,14 +30,7 @@ object DocumentProps {
     staticMarkup: scala.Boolean,
     dir: java.lang.String = null
   ): DocumentProps[Q] = {
-    val __obj = js.Dynamic.literal(`__NEXT_DATA__` = `__NEXT_DATA__`)
-    __obj.updateDynamic("assetPrefix")(assetPrefix)
-    __obj.updateDynamic("buildManifest")(buildManifest)
-    __obj.updateDynamic("dev")(dev)
-    __obj.updateDynamic("devFiles")(devFiles)
-    __obj.updateDynamic("dynamicImports")(dynamicImports)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("staticMarkup")(staticMarkup)
+    val __obj = js.Dynamic.literal(__NEXT_DATA__ = __NEXT_DATA__, assetPrefix = assetPrefix, buildManifest = buildManifest, dev = dev, devFiles = devFiles, dynamicImports = dynamicImports, files = files, staticMarkup = staticMarkup)
     if (dir != null) __obj.updateDynamic("dir")(dir)
     __obj.asInstanceOf[DocumentProps[Q]]
   }

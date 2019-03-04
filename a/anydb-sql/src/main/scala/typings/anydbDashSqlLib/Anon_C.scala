@@ -17,8 +17,8 @@ object Anon_C {
       anydbDashSqlLib.anydbDashSqlMod.anydbSQLNs.Column[java.lang.String]
     ]
   ): Anon_C = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOWER")(LOWER)
+    val __obj = js.Dynamic.literal(LOWER = LOWER)
+  
     __obj.asInstanceOf[Anon_C]
   }
 }

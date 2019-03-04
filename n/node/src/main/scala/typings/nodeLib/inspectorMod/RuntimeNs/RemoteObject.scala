@@ -62,7 +62,8 @@ object RemoteObject {
     unserializableValue: UnserializableValue = null,
     value: js.Any = null
   ): RemoteObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (className != null) __obj.updateDynamic("className")(className)
     if (customPreview != null) __obj.updateDynamic("customPreview")(customPreview)
     if (description != null) __obj.updateDynamic("description")(description)

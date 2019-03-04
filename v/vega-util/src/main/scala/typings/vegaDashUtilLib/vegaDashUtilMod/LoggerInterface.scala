@@ -20,11 +20,8 @@ object LoggerInterface {
     level: js.Function1[scala.Double, scala.Double | LoggerInterface],
     warn: js.Function1[/* repeated */ js.Any, LoggerInterface]
   ): LoggerInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, info = info, level = level, warn = warn)
+  
     __obj.asInstanceOf[LoggerInterface]
   }
 }

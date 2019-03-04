@@ -18,10 +18,8 @@ object Anon_BlockRuntime {
     runtime: scala.Boolean,
     test: adoneLib.adoneNs.shaniNs.INs.Test
   ): Anon_BlockRuntime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(block = block, runtime = runtime, test = test)
+  
     __obj.asInstanceOf[Anon_BlockRuntime]
   }
 }

@@ -52,26 +52,8 @@ object Poi {
     `type`: java.lang.String,
     website: java.lang.String
   ): Poi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("adname")(adname)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("cityname")(cityname)
-    __obj.updateDynamic("discount")(discount)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("entr_location")(entr_location)
-    __obj.updateDynamic("exit_location")(exit_location)
-    __obj.updateDynamic("groupbuy")(groupbuy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pcode")(pcode)
-    __obj.updateDynamic("pname")(pname)
-    __obj.updateDynamic("postcode")(postcode)
-    __obj.updateDynamic("tel")(tel)
-    __obj.updateDynamic("website")(website)
+    val __obj = js.Dynamic.literal(adcode = adcode, address = address, adname = adname, citycode = citycode, cityname = cityname, discount = discount, distance = distance, email = email, entr_location = entr_location, exit_location = exit_location, groupbuy = groupbuy, id = id, location = location, name = name, pcode = pcode, pname = pname, postcode = postcode, tel = tel, website = website)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Poi]
   }
 }

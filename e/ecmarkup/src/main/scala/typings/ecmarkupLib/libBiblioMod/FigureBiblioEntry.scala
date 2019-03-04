@@ -34,10 +34,8 @@ object FigureBiblioEntry {
     term: java.lang.String = null,
     title: java.lang.String = null
   ): FigureBiblioEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    __obj.updateDynamic("referencingIds")(referencingIds)
+    val __obj = js.Dynamic.literal(id = id, number = number.asInstanceOf[js.Any], referencingIds = referencingIds)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (aoid != null) __obj.updateDynamic("aoid")(aoid)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)

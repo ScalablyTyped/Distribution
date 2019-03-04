@@ -42,12 +42,8 @@ object TargetingTemplatesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TargetingTemplate]
     ]
   ): TargetingTemplatesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[TargetingTemplatesResource]
   }
 }

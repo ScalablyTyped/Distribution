@@ -21,11 +21,7 @@ object SharedNegativeKeyword {
     remove: js.Function0[scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): SharedNegativeKeyword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMatchType")(getMatchType)
-    __obj.updateDynamic("getNegativeKeywordList")(getNegativeKeywordList)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getMatchType = getMatchType, getNegativeKeywordList = getNegativeKeywordList, getText = getText, remove = remove)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[SharedNegativeKeyword]
   }

@@ -28,14 +28,8 @@ object ExtensionPayload {
     metadata: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString],
     `type`: ExtensionDeploymentTechnology
   ): ExtensionPayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("installationTargets")(installationTargets)
-    __obj.updateDynamic("isSignedByMicrosoft")(isSignedByMicrosoft)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(description = description, displayName = displayName, fileName = fileName, installationTargets = installationTargets, isSignedByMicrosoft = isSignedByMicrosoft, isValid = isValid, metadata = metadata)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExtensionPayload]
   }
 }

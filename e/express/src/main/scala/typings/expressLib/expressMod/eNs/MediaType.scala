@@ -16,10 +16,8 @@ object MediaType {
     `type`: java.lang.String,
     value: java.lang.String
   ): MediaType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("subtype")(subtype)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(quality = quality, subtype = subtype, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MediaType]
   }
 }

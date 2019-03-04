@@ -32,7 +32,8 @@ object CustomPropertyArray {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyArray = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (addTranslation != null) __obj.updateDynamic("addTranslation")(addTranslation)
     if (!js.isUndefined(allowAdd)) __obj.updateDynamic("allowAdd")(allowAdd)
     if (!js.isUndefined(allowMove)) __obj.updateDynamic("allowMove")(allowMove)

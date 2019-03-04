@@ -30,16 +30,8 @@ object ViewerTouchEvent {
     translationX: scala.Double,
     translationY: scala.Double
   ): ViewerTouchEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SVGViewer")(SVGViewer)
-    __obj.updateDynamic("changedPoints")(changedPoints)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("translationX")(translationX)
-    __obj.updateDynamic("translationY")(translationY)
+    val __obj = js.Dynamic.literal(SVGViewer = SVGViewer, changedPoints = changedPoints, originalEvent = originalEvent, points = points, preventDefault = preventDefault, scaleFactor = scaleFactor, stopPropagation = stopPropagation, translationX = translationX, translationY = translationY)
+  
     __obj.asInstanceOf[ViewerTouchEvent[T]]
   }
 }

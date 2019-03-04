@@ -25,12 +25,8 @@ object numbers {
     PADDING: atMaterialRippleLib.atMaterialRippleLibNumbers.`10`,
     TAP_DELAY_MS: atMaterialRippleLib.atMaterialRippleLibNumbers.`300`
   ): numbers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEACTIVATION_TIMEOUT_MS")(DEACTIVATION_TIMEOUT_MS)
-    __obj.updateDynamic("FG_DEACTIVATION_MS")(FG_DEACTIVATION_MS)
-    __obj.updateDynamic("INITIAL_ORIGIN_SCALE")(INITIAL_ORIGIN_SCALE)
-    __obj.updateDynamic("PADDING")(PADDING)
-    __obj.updateDynamic("TAP_DELAY_MS")(TAP_DELAY_MS)
+    val __obj = js.Dynamic.literal(DEACTIVATION_TIMEOUT_MS = DEACTIVATION_TIMEOUT_MS, FG_DEACTIVATION_MS = FG_DEACTIVATION_MS, INITIAL_ORIGIN_SCALE = INITIAL_ORIGIN_SCALE, PADDING = PADDING, TAP_DELAY_MS = TAP_DELAY_MS)
+  
     __obj.asInstanceOf[numbers]
   }
 }

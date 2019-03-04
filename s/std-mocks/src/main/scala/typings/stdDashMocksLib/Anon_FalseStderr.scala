@@ -12,8 +12,8 @@ trait Anon_FalseStderr extends js.Object {
 object Anon_FalseStderr {
   @scala.inline
   def apply(stderr: stdDashMocksLib.stdDashMocksLibNumbers.`false`): Anon_FalseStderr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stderr")(stderr)
+    val __obj = js.Dynamic.literal(stderr = stderr)
+  
     __obj.asInstanceOf[Anon_FalseStderr]
   }
 }

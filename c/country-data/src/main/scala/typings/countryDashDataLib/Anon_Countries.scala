@@ -18,10 +18,8 @@ object Anon_Countries {
     currencies: js.Function1[js.Any, js.Array[countryDashDataLib.countryDashDataMod.Currency]],
     languages: js.Function1[js.Any, js.Array[countryDashDataLib.countryDashDataMod.Language]]
   ): Anon_Countries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countries")(countries)
-    __obj.updateDynamic("currencies")(currencies)
-    __obj.updateDynamic("languages")(languages)
+    val __obj = js.Dynamic.literal(countries = countries, currencies = currencies, languages = languages)
+  
     __obj.asInstanceOf[Anon_Countries]
   }
 }

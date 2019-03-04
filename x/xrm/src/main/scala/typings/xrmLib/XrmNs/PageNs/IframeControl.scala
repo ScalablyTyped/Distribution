@@ -28,18 +28,8 @@ object IframeControl {
     setSrc: js.Function1[java.lang.String, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): IframeControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType)
-    __obj.updateDynamic("getInitialUrl")(getInitialUrl)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getSrc")(getSrc)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setSrc")(setSrc)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getInitialUrl = getInitialUrl, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getSrc = getSrc, getVisible = getVisible, setLabel = setLabel, setSrc = setSrc, setVisible = setVisible)
+  
     __obj.asInstanceOf[IframeControl]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_Compressed extends js.Object {
 object Anon_Compressed {
   @scala.inline
   def apply(compressed: scala.Boolean, maxDuration: scala.Double, sourceType: js.Array[java.lang.String]): Anon_Compressed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressed")(compressed)
-    __obj.updateDynamic("maxDuration")(maxDuration)
-    __obj.updateDynamic("sourceType")(sourceType)
+    val __obj = js.Dynamic.literal(compressed = compressed, maxDuration = maxDuration, sourceType = sourceType)
+  
     __obj.asInstanceOf[Anon_Compressed]
   }
 }

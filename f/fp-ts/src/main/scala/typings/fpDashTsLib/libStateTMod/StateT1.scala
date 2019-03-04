@@ -50,11 +50,8 @@ object StateT1 {
       js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[M, js.Tuple2[js.Any, js.Any]]]
     ]
   ): StateT1[M] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, chain = chain, map = map, of = of)
+  
     __obj.asInstanceOf[StateT1[M]]
   }
 }

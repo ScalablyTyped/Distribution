@@ -21,8 +21,8 @@ object DeclareModuleExports {
     `type`: astDashTypesLib.astDashTypesLibStrings.DeclareModuleExports,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
   ): DeclareModuleExports = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeclareModuleExports]
   }
 }

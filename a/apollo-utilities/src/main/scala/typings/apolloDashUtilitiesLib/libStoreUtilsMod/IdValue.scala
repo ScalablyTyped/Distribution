@@ -20,9 +20,8 @@ object IdValue {
     `type`: apolloDashUtilitiesLib.apolloDashUtilitiesLibStrings.id,
     typename: java.lang.String = null
   ): IdValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("generated")(generated)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(generated = generated, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (typename != null) __obj.updateDynamic("typename")(typename)
     __obj.asInstanceOf[IdValue]
   }

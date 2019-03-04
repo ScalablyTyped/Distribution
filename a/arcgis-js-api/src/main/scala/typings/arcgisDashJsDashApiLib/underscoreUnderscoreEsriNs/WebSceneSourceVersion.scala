@@ -30,12 +30,8 @@ object WebSceneSourceVersion {
     minor: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): WebSceneSourceVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, major = major, minor = minor, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[WebSceneSourceVersion]
   }
 }

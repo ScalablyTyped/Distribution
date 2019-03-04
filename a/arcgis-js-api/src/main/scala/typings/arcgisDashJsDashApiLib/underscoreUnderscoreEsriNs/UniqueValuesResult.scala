@@ -23,11 +23,8 @@ object UniqueValuesResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     uniqueValueInfos: js.Array[UniqueValuesResultUniqueValueInfos]
   ): UniqueValuesResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("uniqueValueInfos")(uniqueValueInfos)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, uniqueValueInfos = uniqueValueInfos)
+  
     __obj.asInstanceOf[UniqueValuesResult]
   }
 }

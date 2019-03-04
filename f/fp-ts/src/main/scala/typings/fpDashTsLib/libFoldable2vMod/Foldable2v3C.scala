@@ -42,13 +42,8 @@ object Foldable2v3C {
       js.Any
     ]
   ): Foldable2v3C[F, U, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("foldMap")(foldMap)
-    __obj.updateDynamic("foldr")(foldr)
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], foldMap = foldMap, foldr = foldr, reduce = reduce)
+  
     __obj.asInstanceOf[Foldable2v3C[F, U, L]]
   }
 }

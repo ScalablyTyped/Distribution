@@ -35,12 +35,8 @@ object XMenuBarMergingAcceptor {
       scala.Boolean
     ]
   ): XMenuBarMergingAcceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeMergedMenuBar")(removeMergedMenuBar)
-    __obj.updateDynamic("setMergedMenuBar")(setMergedMenuBar)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, removeMergedMenuBar = removeMergedMenuBar, setMergedMenuBar = setMergedMenuBar)
+  
     __obj.asInstanceOf[XMenuBarMergingAcceptor]
   }
 }

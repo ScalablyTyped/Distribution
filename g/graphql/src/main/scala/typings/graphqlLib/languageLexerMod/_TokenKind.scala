@@ -57,29 +57,8 @@ object _TokenKind {
     SPREAD: graphqlLib.graphqlLibStrings.DOTDOTDOT,
     STRING: graphqlLib.graphqlLibStrings.String
   ): _TokenKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AMP")(AMP)
-    __obj.updateDynamic("AT")(AT)
-    __obj.updateDynamic("BANG")(BANG)
-    __obj.updateDynamic("BLOCK_STRING")(BLOCK_STRING)
-    __obj.updateDynamic("BRACE_L")(BRACE_L)
-    __obj.updateDynamic("BRACE_R")(BRACE_R)
-    __obj.updateDynamic("BRACKET_L")(BRACKET_L)
-    __obj.updateDynamic("BRACKET_R")(BRACKET_R)
-    __obj.updateDynamic("COLON")(COLON)
-    __obj.updateDynamic("COMMENT")(COMMENT)
-    __obj.updateDynamic("DOLLAR")(DOLLAR)
-    __obj.updateDynamic("EOF")(EOF)
-    __obj.updateDynamic("EQUALS")(EQUALS)
-    __obj.updateDynamic("FLOAT")(FLOAT)
-    __obj.updateDynamic("INT")(INT)
-    __obj.updateDynamic("NAME")(NAME)
-    __obj.updateDynamic("PAREN_L")(PAREN_L)
-    __obj.updateDynamic("PAREN_R")(PAREN_R)
-    __obj.updateDynamic("PIPE")(PIPE)
-    __obj.updateDynamic("SOF")(SOF)
-    __obj.updateDynamic("SPREAD")(SPREAD)
-    __obj.updateDynamic("STRING")(STRING)
+    val __obj = js.Dynamic.literal(AMP = AMP, AT = AT, BANG = BANG, BLOCK_STRING = BLOCK_STRING, BRACE_L = BRACE_L, BRACE_R = BRACE_R, BRACKET_L = BRACKET_L, BRACKET_R = BRACKET_R, COLON = COLON, COMMENT = COMMENT, DOLLAR = DOLLAR, EOF = EOF, EQUALS = EQUALS, FLOAT = FLOAT, INT = INT, NAME = NAME, PAREN_L = PAREN_L, PAREN_R = PAREN_R, PIPE = PIPE, SOF = SOF, SPREAD = SPREAD, STRING = STRING)
+  
     __obj.asInstanceOf[_TokenKind]
   }
 }

@@ -23,16 +23,8 @@ object IPiePlotEntity {
     selection: plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_],
     strokeSelection: plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_]
   ): IPiePlotEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("datasetIndex")(datasetIndex)
-    __obj.updateDynamic("datum")(datum)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("strokeSelection")(strokeSelection)
+    val __obj = js.Dynamic.literal(bounds = bounds, component = component, dataset = dataset, datasetIndex = datasetIndex, datum = datum, index = index, position = position, selection = selection, strokeSelection = strokeSelection)
+  
     __obj.asInstanceOf[IPiePlotEntity]
   }
 }

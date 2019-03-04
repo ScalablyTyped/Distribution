@@ -10,8 +10,8 @@ trait Publication extends IPublication
 object Publication {
   @scala.inline
   def apply(id: scala.Double): Publication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[Publication]
   }
 }

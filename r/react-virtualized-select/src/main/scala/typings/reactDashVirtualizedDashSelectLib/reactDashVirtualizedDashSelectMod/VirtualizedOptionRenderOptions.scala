@@ -34,18 +34,8 @@ object VirtualizedOptionRenderOptions {
     style: stdLib.Record[java.lang.String, java.lang.String],
     valueArray: js.Array[T]
   ): VirtualizedOptionRenderOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focusOption")(focusOption)
-    __obj.updateDynamic("focusedOption")(focusedOption.asInstanceOf[js.Any])
-    __obj.updateDynamic("focusedOptionIndex")(focusedOptionIndex)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("labelKey")(labelKey)
-    __obj.updateDynamic("listProps")(listProps)
-    __obj.updateDynamic("option")(option.asInstanceOf[js.Any])
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("selectValue")(selectValue)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("valueArray")(valueArray)
+    val __obj = js.Dynamic.literal(focusOption = focusOption, focusedOption = focusedOption.asInstanceOf[js.Any], focusedOptionIndex = focusedOptionIndex, key = key, labelKey = labelKey, listProps = listProps, option = option.asInstanceOf[js.Any], options = options, selectValue = selectValue, style = style, valueArray = valueArray)
+  
     __obj.asInstanceOf[VirtualizedOptionRenderOptions[T]]
   }
 }

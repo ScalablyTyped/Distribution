@@ -24,8 +24,7 @@ object ServerConfig {
     useToken: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null
   ): ServerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(host = host)
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (servers != null) __obj.updateDynamic("servers")(servers)

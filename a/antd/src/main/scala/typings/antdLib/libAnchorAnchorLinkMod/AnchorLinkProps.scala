@@ -22,9 +22,7 @@ object AnchorLinkProps {
     className: java.lang.String = null,
     prefixCls: java.lang.String = null
   ): AnchorLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href, title = title.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

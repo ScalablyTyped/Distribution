@@ -18,10 +18,8 @@ object AutoText {
     getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     getRange: js.Function0[TextRange]
   ): AutoText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAutoTextType")(getAutoTextType)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getRange")(getRange)
+    val __obj = js.Dynamic.literal(getAutoTextType = getAutoTextType, getIndex = getIndex, getRange = getRange)
+  
     __obj.asInstanceOf[AutoText]
   }
 }

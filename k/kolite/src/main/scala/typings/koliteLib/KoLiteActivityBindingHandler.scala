@@ -41,8 +41,7 @@ object KoLiteActivityBindingHandler {
       scala.Unit
     ] = null
   ): KoLiteActivityBindingHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultOptions")(defaultOptions)
+    val __obj = js.Dynamic.literal(defaultOptions = defaultOptions)
     if (after != null) __obj.updateDynamic("after")(after)
     if (init != null) __obj.updateDynamic("init")(init)
     if (options != null) __obj.updateDynamic("options")(options)

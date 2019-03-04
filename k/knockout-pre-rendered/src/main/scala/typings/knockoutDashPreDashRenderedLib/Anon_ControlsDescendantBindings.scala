@@ -12,8 +12,8 @@ trait Anon_ControlsDescendantBindings extends js.Object {
 object Anon_ControlsDescendantBindings {
   @scala.inline
   def apply(controlsDescendantBindings: scala.Boolean): Anon_ControlsDescendantBindings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controlsDescendantBindings")(controlsDescendantBindings)
+    val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings)
+  
     __obj.asInstanceOf[Anon_ControlsDescendantBindings]
   }
 }

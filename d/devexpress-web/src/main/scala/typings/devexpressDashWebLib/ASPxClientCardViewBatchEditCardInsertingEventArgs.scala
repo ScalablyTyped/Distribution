@@ -19,9 +19,8 @@ trait ASPxClientCardViewBatchEditCardInsertingEventArgs extends ASPxClientCancel
 object ASPxClientCardViewBatchEditCardInsertingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, visibleIndex: scala.Double): ASPxClientCardViewBatchEditCardInsertingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientCardViewBatchEditCardInsertingEventArgs]
   }
 }

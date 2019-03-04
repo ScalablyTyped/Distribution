@@ -17,10 +17,8 @@ trait Source extends js.Object {
 object Source {
   @scala.inline
   def apply(filename: java.lang.String, line: scala.Double, path: java.lang.String): Source = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(filename = filename, line = line, path = path)
+  
     __obj.asInstanceOf[Source]
   }
 }

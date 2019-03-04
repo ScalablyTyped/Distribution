@@ -22,9 +22,7 @@ object Anon_ActionOverrideAction {
     overrideAction: Anon_TypeString = null,
     `type`: java.lang.String = null
   ): Anon_ActionOverrideAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("ruleId")(ruleId)
+    val __obj = js.Dynamic.literal(priority = priority, ruleId = ruleId)
     if (action != null) __obj.updateDynamic("action")(action)
     if (overrideAction != null) __obj.updateDynamic("overrideAction")(overrideAction)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

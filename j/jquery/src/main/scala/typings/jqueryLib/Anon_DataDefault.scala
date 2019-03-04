@@ -23,8 +23,8 @@ object Anon_DataDefault {
       scala.Unit | jqueryLib.jqueryLibNumbers.`false`
     ]
   ): Anon_DataDefault[TTarget, TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_default")(_default)
+    val __obj = js.Dynamic.literal(_default = _default)
+  
     __obj.asInstanceOf[Anon_DataDefault[TTarget, TData]]
   }
 }

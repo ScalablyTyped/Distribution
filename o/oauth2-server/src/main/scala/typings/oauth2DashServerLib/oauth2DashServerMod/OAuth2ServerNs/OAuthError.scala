@@ -29,10 +29,7 @@ object OAuthError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): OAuthError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[OAuthError]
   }

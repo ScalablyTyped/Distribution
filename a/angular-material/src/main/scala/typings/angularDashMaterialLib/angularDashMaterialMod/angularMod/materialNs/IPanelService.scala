@@ -32,17 +32,8 @@ object IPanelService {
     xPosition: angularDashMaterialLib.Anon_ALIGNEND,
     yPosition: angularDashMaterialLib.Anon_ABOVE
   ): IPanelService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absPosition")(absPosition)
-    __obj.updateDynamic("animation")(animation)
-    __obj.updateDynamic("closeReasons")(closeReasons)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("interceptorTypes")(interceptorTypes)
-    __obj.updateDynamic("newPanelAnimation")(newPanelAnimation)
-    __obj.updateDynamic("newPanelPosition")(newPanelPosition)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("xPosition")(xPosition)
-    __obj.updateDynamic("yPosition")(yPosition)
+    val __obj = js.Dynamic.literal(absPosition = absPosition, animation = animation, closeReasons = closeReasons, create = create, interceptorTypes = interceptorTypes, newPanelAnimation = newPanelAnimation, newPanelPosition = newPanelPosition, open = open, xPosition = xPosition, yPosition = yPosition)
+  
     __obj.asInstanceOf[IPanelService]
   }
 }

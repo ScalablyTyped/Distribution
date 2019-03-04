@@ -20,9 +20,8 @@ object ImageInfo {
     width: scala.Double,
     orientation: scala.Int | scala.Double = null
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
+    __obj.updateDynamic("type")(`type`)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageInfo]
   }

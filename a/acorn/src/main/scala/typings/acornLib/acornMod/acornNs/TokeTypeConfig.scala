@@ -28,8 +28,7 @@ object TokeTypeConfig {
     prefix: js.UndefOr[scala.Boolean] = js.undefined,
     startsExpr: js.UndefOr[scala.Boolean] = js.undefined
   ): TokeTypeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyword")(keyword)
+    val __obj = js.Dynamic.literal(keyword = keyword)
     if (!js.isUndefined(beforeExpr)) __obj.updateDynamic("beforeExpr")(beforeExpr)
     if (binop != null) __obj.updateDynamic("binop")(binop.asInstanceOf[js.Any])
     if (!js.isUndefined(isAssign)) __obj.updateDynamic("isAssign")(isAssign)

@@ -22,12 +22,8 @@ object IDefaults {
     allowedTags: js.Array[java.lang.String],
     selfClosing: js.Array[java.lang.String]
   ): IDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedAttributes")(allowedAttributes)
-    __obj.updateDynamic("allowedSchemes")(allowedSchemes)
-    __obj.updateDynamic("allowedSchemesByTag")(allowedSchemesByTag)
-    __obj.updateDynamic("allowedTags")(allowedTags)
-    __obj.updateDynamic("selfClosing")(selfClosing)
+    val __obj = js.Dynamic.literal(allowedAttributes = allowedAttributes, allowedSchemes = allowedSchemes, allowedSchemesByTag = allowedSchemesByTag, allowedTags = allowedTags, selfClosing = selfClosing)
+  
     __obj.asInstanceOf[IDefaults]
   }
 }

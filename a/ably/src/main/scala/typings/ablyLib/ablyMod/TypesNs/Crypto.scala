@@ -17,8 +17,8 @@ object Crypto {
       scala.Unit
     ]
   ): Crypto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateRandomKey")(generateRandomKey)
+    val __obj = js.Dynamic.literal(generateRandomKey = generateRandomKey)
+  
     __obj.asInstanceOf[Crypto]
   }
 }

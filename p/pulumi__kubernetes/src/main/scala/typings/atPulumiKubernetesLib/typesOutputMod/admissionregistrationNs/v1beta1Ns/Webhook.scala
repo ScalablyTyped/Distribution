@@ -95,13 +95,8 @@ object Webhook {
     rules: js.Array[RuleWithOperations],
     sideEffects: java.lang.String
   ): Webhook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientConfig")(clientConfig)
-    __obj.updateDynamic("failurePolicy")(failurePolicy)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespaceSelector")(namespaceSelector)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("sideEffects")(sideEffects)
+    val __obj = js.Dynamic.literal(clientConfig = clientConfig, failurePolicy = failurePolicy, name = name, namespaceSelector = namespaceSelector, rules = rules, sideEffects = sideEffects)
+  
     __obj.asInstanceOf[Webhook]
   }
 }

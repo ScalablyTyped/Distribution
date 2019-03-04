@@ -52,29 +52,8 @@ object XSelectionFunction {
     selectionChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     supportsService: js.Function1[java.lang.String, scala.Boolean]
   ): XSelectionFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ImplementationName")(ImplementationName)
-    __obj.updateDynamic("SupportedServiceNames")(SupportedServiceNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addStatusListener")(addStatusListener)
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("getImplementationName")(getImplementationName)
-    __obj.updateDynamic("getSupportedServiceNames")(getSupportedServiceNames)
-    __obj.updateDynamic("keyPressed")(keyPressed)
-    __obj.updateDynamic("keyReleased")(keyReleased)
-    __obj.updateDynamic("mouseDragged")(mouseDragged)
-    __obj.updateDynamic("mouseMoved")(mouseMoved)
-    __obj.updateDynamic("mousePressed")(mousePressed)
-    __obj.updateDynamic("mouseReleased")(mouseReleased)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeStatusListener")(removeStatusListener)
-    __obj.updateDynamic("selectionChanged")(selectionChanged)
-    __obj.updateDynamic("supportsService")(supportsService)
+    val __obj = js.Dynamic.literal(ImplementationName = ImplementationName, SupportedServiceNames = SupportedServiceNames, acquire = acquire, addEventListener = addEventListener, addStatusListener = addStatusListener, dispatch = dispatch, dispose = dispose, disposing = disposing, getImplementationName = getImplementationName, getSupportedServiceNames = getSupportedServiceNames, keyPressed = keyPressed, keyReleased = keyReleased, mouseDragged = mouseDragged, mouseMoved = mouseMoved, mousePressed = mousePressed, mouseReleased = mouseReleased, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeStatusListener = removeStatusListener, selectionChanged = selectionChanged, supportsService = supportsService)
+  
     __obj.asInstanceOf[XSelectionFunction]
   }
 }

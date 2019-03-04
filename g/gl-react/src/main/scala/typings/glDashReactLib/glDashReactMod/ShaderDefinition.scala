@@ -13,8 +13,7 @@ trait ShaderDefinition extends js.Object {
 object ShaderDefinition {
   @scala.inline
   def apply(frag: java.lang.String, vert: java.lang.String = null): ShaderDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frag")(frag)
+    val __obj = js.Dynamic.literal(frag = frag)
     if (vert != null) __obj.updateDynamic("vert")(vert)
     __obj.asInstanceOf[ShaderDefinition]
   }

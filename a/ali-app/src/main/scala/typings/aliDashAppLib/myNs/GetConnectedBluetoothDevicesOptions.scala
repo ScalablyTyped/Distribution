@@ -20,8 +20,7 @@ object GetConnectedBluetoothDevicesOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     services: js.Array[java.lang.String] = null
   ): GetConnectedBluetoothDevicesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (services != null) __obj.updateDynamic("services")(services)

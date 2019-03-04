@@ -50,8 +50,7 @@ object IUtilAnimationOptions {
     onComplete: js.Function = null,
     startValue: scala.Int | scala.Double = null
   ): IUtilAnimationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byValue")(byValue)
+    val __obj = js.Dynamic.literal(byValue = byValue)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait OnDismissListener extends js.Object {
 object OnDismissListener {
   @scala.inline
   def apply(onDismiss: js.Function1[androiduixLib.androidNs.contentNs.DialogInterface, scala.Unit]): OnDismissListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDismiss")(onDismiss)
+    val __obj = js.Dynamic.literal(onDismiss = onDismiss)
+  
     __obj.asInstanceOf[OnDismissListener]
   }
 }

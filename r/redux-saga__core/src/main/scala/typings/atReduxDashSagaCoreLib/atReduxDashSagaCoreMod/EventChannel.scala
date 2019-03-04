@@ -18,10 +18,8 @@ object EventChannel {
     flush: js.Function1[js.Function1[/* items */ js.Array[T] | END, scala.Unit], scala.Unit],
     take: js.Function1[js.Function1[/* message */ T | END, scala.Unit], scala.Unit]
   ): EventChannel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("take")(take)
+    val __obj = js.Dynamic.literal(close = close, flush = flush, take = take)
+  
     __obj.asInstanceOf[EventChannel[T]]
   }
 }

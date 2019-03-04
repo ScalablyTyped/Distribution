@@ -18,10 +18,8 @@ object AbstractIterator {
     end: js.Function1[ErrorCallback, scala.Unit],
     next: js.Function1[ErrorKeyValueCallback[K, V], AbstractIterator[K, V]]
   ): AbstractIterator[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(db = db, end = end, next = next)
+  
     __obj.asInstanceOf[AbstractIterator[K, V]]
   }
 }

@@ -82,18 +82,8 @@ object IDatabaseInfo {
     qQuoteSuffix: java.lang.String,
     qSpecialChars: java.lang.String
   ): IDatabaseInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDBFirst")(qDBFirst)
-    __obj.updateDynamic("qDBMSName")(qDBMSName)
-    __obj.updateDynamic("qDBSeparator")(qDBSeparator)
-    __obj.updateDynamic("qDBUsage")(qDBUsage)
-    __obj.updateDynamic("qDefaultDatabase")(qDefaultDatabase)
-    __obj.updateDynamic("qKeywords")(qKeywords)
-    __obj.updateDynamic("qOwnerSeparator")(qOwnerSeparator)
-    __obj.updateDynamic("qOwnerUsage")(qOwnerUsage)
-    __obj.updateDynamic("qQuotePreffix")(qQuotePreffix)
-    __obj.updateDynamic("qQuoteSuffix")(qQuoteSuffix)
-    __obj.updateDynamic("qSpecialChars")(qSpecialChars)
+    val __obj = js.Dynamic.literal(qDBFirst = qDBFirst, qDBMSName = qDBMSName, qDBSeparator = qDBSeparator, qDBUsage = qDBUsage, qDefaultDatabase = qDefaultDatabase, qKeywords = qKeywords, qOwnerSeparator = qOwnerSeparator, qOwnerUsage = qOwnerUsage, qQuotePreffix = qQuotePreffix, qQuoteSuffix = qQuoteSuffix, qSpecialChars = qSpecialChars)
+  
     __obj.asInstanceOf[IDatabaseInfo]
   }
 }

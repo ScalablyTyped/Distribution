@@ -19,8 +19,7 @@ object SmartClientOptions {
     resource: java.lang.String = null,
     transports: js.Array[_] = null
   ): SmartClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sandboxId")(sandboxId)
+    val __obj = js.Dynamic.literal(sandboxId = sandboxId)
     if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
     if (deployment != null) __obj.updateDynamic("deployment")(deployment)
     if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps)

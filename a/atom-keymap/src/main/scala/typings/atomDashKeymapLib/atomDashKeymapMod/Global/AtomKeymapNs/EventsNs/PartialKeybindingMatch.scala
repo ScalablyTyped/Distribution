@@ -21,10 +21,8 @@ object PartialKeybindingMatch {
     keystrokes: java.lang.String,
     partiallyMatchedBindings: js.Array[atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.KeyBinding]
   ): PartialKeybindingMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget)
-    __obj.updateDynamic("keystrokes")(keystrokes)
-    __obj.updateDynamic("partiallyMatchedBindings")(partiallyMatchedBindings)
+    val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget, keystrokes = keystrokes, partiallyMatchedBindings = partiallyMatchedBindings)
+  
     __obj.asInstanceOf[PartialKeybindingMatch]
   }
 }

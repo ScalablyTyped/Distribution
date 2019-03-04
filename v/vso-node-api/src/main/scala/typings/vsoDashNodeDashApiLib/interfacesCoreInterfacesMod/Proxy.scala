@@ -38,14 +38,8 @@ object Proxy {
     siteDefault: scala.Boolean,
     url: java.lang.String
   ): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorization")(authorization)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("globalDefault")(globalDefault)
-    __obj.updateDynamic("site")(site)
-    __obj.updateDynamic("siteDefault")(siteDefault)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(authorization = authorization, description = description, friendlyName = friendlyName, globalDefault = globalDefault, site = site, siteDefault = siteDefault, url = url)
+  
     __obj.asInstanceOf[Proxy]
   }
 }

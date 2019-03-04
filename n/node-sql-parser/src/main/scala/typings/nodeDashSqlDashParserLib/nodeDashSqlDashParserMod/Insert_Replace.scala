@@ -22,9 +22,8 @@ object Insert_Replace {
     columns: js.Array[java.lang.String] = null,
     db: java.lang.String = null
   ): Insert_Replace = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(table = table, values = values)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (db != null) __obj.updateDynamic("db")(db)
     __obj.asInstanceOf[Insert_Replace]

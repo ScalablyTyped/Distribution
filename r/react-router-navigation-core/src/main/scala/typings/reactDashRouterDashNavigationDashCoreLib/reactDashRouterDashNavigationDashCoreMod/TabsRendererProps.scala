@@ -20,11 +20,8 @@ object TabsRendererProps {
     onIndexChange: js.Function1[scala.Double, scala.Unit],
     tabs: js.Array[Tab]
   ): TabsRendererProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadedTabs")(loadedTabs)
-    __obj.updateDynamic("navigationState")(navigationState)
-    __obj.updateDynamic("onIndexChange")(onIndexChange)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(loadedTabs = loadedTabs, navigationState = navigationState, onIndexChange = onIndexChange, tabs = tabs)
+  
     __obj.asInstanceOf[TabsRendererProps]
   }
 }

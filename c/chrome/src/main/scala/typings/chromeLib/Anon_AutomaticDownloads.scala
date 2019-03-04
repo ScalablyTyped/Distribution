@@ -38,20 +38,8 @@ object Anon_AutomaticDownloads {
     popups: chromeLib.chromeNs.contentSettingsNs.PopupsContentSetting,
     unsandboxedPlugins: chromeLib.chromeNs.contentSettingsNs.PpapiBrokerContentSetting
   ): Anon_AutomaticDownloads = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automaticDownloads")(automaticDownloads)
-    __obj.updateDynamic("camera")(camera)
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("fullscreen")(fullscreen)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("javascript")(javascript)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("microphone")(microphone)
-    __obj.updateDynamic("mouselock")(mouselock)
-    __obj.updateDynamic("notifications")(notifications)
-    __obj.updateDynamic("plugins")(plugins)
-    __obj.updateDynamic("popups")(popups)
-    __obj.updateDynamic("unsandboxedPlugins")(unsandboxedPlugins)
+    val __obj = js.Dynamic.literal(automaticDownloads = automaticDownloads, camera = camera, cookies = cookies, fullscreen = fullscreen, images = images, javascript = javascript, location = location, microphone = microphone, mouselock = mouselock, notifications = notifications, plugins = plugins, popups = popups, unsandboxedPlugins = unsandboxedPlugins)
+  
     __obj.asInstanceOf[Anon_AutomaticDownloads]
   }
 }

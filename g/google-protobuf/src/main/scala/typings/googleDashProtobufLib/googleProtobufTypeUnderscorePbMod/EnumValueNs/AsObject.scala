@@ -18,10 +18,8 @@ object AsObject {
     number: scala.Double,
     optionsList: js.Array[googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.OptionNs.AsObject]
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("optionsList")(optionsList)
+    val __obj = js.Dynamic.literal(name = name, number = number, optionsList = optionsList)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

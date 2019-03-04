@@ -32,12 +32,8 @@ object TSModuleDeclaration {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSModuleDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end, id = id.asInstanceOf[js.Any], loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

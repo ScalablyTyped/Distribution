@@ -51,9 +51,7 @@ object Binary {
     resourceType: code = null,
     securityContext: Reference = null
   ): Binary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentType")(contentType)
+    val __obj = js.Dynamic.literal(content = content, contentType = contentType)
     if (_content != null) __obj.updateDynamic("_content")(_content)
     if (_contentType != null) __obj.updateDynamic("_contentType")(_contentType)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -12,8 +12,8 @@ trait BaseLayout extends Layout {
 object BaseLayout {
   @scala.inline
   def apply(`type`: log4jsLib.log4jsLibStrings.basic): BaseLayout = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BaseLayout]
   }
 }

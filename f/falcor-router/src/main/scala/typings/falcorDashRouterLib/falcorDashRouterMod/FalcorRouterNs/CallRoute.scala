@@ -17,9 +17,8 @@ object CallRoute {
     call: js.Function2[RoutePathSet, js.Array[_], CallRouteResult | js.Promise[CallRouteResult]],
     route: java.lang.String
   ): CallRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(call = call, route = route)
+  
     __obj.asInstanceOf[CallRoute]
   }
 }

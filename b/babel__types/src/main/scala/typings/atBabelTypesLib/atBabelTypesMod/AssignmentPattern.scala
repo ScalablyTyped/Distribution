@@ -34,9 +34,8 @@ object AssignmentPattern {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop = null
   ): AssignmentPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

@@ -14,9 +14,8 @@ trait RemoveOperation
 object RemoveOperation {
   @scala.inline
   def apply(op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.remove, path: java.lang.String): RemoveOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(op = op, path = path)
+  
     __obj.asInstanceOf[RemoveOperation]
   }
 }

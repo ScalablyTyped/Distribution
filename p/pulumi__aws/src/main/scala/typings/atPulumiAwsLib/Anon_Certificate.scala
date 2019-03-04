@@ -24,10 +24,8 @@ object Anon_Certificate {
     certificate: java.lang.String = null,
     privilegedMode: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Certificate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computeType")(computeType)
-    __obj.updateDynamic("environmentVariables")(environmentVariables)
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(computeType = computeType, environmentVariables = environmentVariables, image = image)
+    __obj.updateDynamic("type")(`type`)
     if (certificate != null) __obj.updateDynamic("certificate")(certificate)
     if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode)
     __obj.asInstanceOf[Anon_Certificate]

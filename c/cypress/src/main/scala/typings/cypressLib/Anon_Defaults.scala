@@ -12,8 +12,8 @@ trait Anon_Defaults extends js.Object {
 object Anon_Defaults {
   @scala.inline
   def apply(defaults: js.Function1[stdLib.Partial[cypressLib.CypressNs.ServerOptions], scala.Unit]): Anon_Defaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[Anon_Defaults]
   }
 }

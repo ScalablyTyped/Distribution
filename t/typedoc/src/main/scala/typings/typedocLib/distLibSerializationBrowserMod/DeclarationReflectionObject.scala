@@ -33,14 +33,7 @@ object DeclarationReflectionObject {
     setSignature: js.Array[SignatureReflectionObject] = null,
     signatures: js.Array[SignatureReflectionObject] = null
   ): DeclarationReflectionObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindString")(kindString)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(children = children, defaultValue = defaultValue, flags = flags, id = id, kind = kind, kindString = kindString, name = name)
     if (extendedBy != null) __obj.updateDynamic("extendedBy")(extendedBy)
     if (extendedTypes != null) __obj.updateDynamic("extendedTypes")(extendedTypes)
     if (getSignature != null) __obj.updateDynamic("getSignature")(getSignature)

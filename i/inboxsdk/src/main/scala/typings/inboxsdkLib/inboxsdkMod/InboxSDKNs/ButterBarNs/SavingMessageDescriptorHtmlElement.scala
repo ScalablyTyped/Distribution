@@ -25,8 +25,7 @@ object SavingMessageDescriptorHtmlElement {
     showConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
     time: scala.Int | scala.Double = null
   ): SavingMessageDescriptorHtmlElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(el = el)
     if (className != null) __obj.updateDynamic("className")(className)
     if (confirmationText != null) __obj.updateDynamic("confirmationText")(confirmationText)
     if (confirmationTime != null) __obj.updateDynamic("confirmationTime")(confirmationTime.asInstanceOf[js.Any])

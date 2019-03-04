@@ -30,16 +30,8 @@ object WalkContext {
     selector: SelectorList,
     stylesheet: StyleSheet
   ): WalkContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atrule")(atrule)
-    __obj.updateDynamic("atrulePrelude")(atrulePrelude)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("declaration")(declaration)
-    __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("rule")(rule)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("stylesheet")(stylesheet)
+    val __obj = js.Dynamic.literal(atrule = atrule, atrulePrelude = atrulePrelude, block = block, declaration = declaration, function = function.asInstanceOf[js.Any], root = root, rule = rule, selector = selector, stylesheet = stylesheet)
+  
     __obj.asInstanceOf[WalkContext]
   }
 }

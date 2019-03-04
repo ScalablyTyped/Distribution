@@ -34,11 +34,8 @@ trait Bookmark extends js.Object {
 object Bookmark {
   @scala.inline
   def apply(interval: Interval, length: scala.Double, name: java.lang.String, start: scala.Double): Bookmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(interval = interval, length = length, name = name, start = start)
+  
     __obj.asInstanceOf[Bookmark]
   }
 }

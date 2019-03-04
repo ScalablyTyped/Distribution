@@ -16,9 +16,7 @@ object ICommandsEvents {
     Unregister: js.Function1[scala.Double, scala.Unit],
     OnCustomCommand: js.Function1[/* commandID */ scala.Double, scala.Unit] = null
   ): ICommandsEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnCustomCommand != null) __obj.updateDynamic("OnCustomCommand")(OnCustomCommand)
     __obj.asInstanceOf[ICommandsEvents]
   }

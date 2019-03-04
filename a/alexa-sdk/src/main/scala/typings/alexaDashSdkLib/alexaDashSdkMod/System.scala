@@ -22,12 +22,8 @@ object System {
     device: js.Any,
     user: SessionUser
   ): System = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiAccessToken")(apiAccessToken)
-    __obj.updateDynamic("apiEndpoint")(apiEndpoint)
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(apiAccessToken = apiAccessToken, apiEndpoint = apiEndpoint, application = application, device = device, user = user)
+  
     __obj.asInstanceOf[System]
   }
 }

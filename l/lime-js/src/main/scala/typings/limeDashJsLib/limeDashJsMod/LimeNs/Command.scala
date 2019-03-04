@@ -29,8 +29,7 @@ object Command {
     `type`: java.lang.String = null,
     uri: java.lang.String = null
   ): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (from != null) __obj.updateDynamic("from")(from)
     if (id != null) __obj.updateDynamic("id")(id)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

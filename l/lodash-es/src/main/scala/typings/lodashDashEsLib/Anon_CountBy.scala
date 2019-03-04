@@ -68,35 +68,8 @@ object Anon_CountBy {
     some: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof some */ js.Any,
     sortBy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof sortBy */ js.Any
   ): Anon_CountBy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countBy")(countBy)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("eachRight")(eachRight)
-    __obj.updateDynamic("every")(every)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findLast")(findLast)
-    __obj.updateDynamic("flatMap")(flatMap)
-    __obj.updateDynamic("flatMapDeep")(flatMapDeep)
-    __obj.updateDynamic("flatMapDepth")(flatMapDepth)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("forEachRight")(forEachRight)
-    __obj.updateDynamic("groupBy")(groupBy)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("invokeMap")(invokeMap)
-    __obj.updateDynamic("keyBy")(keyBy)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("reduceRight")(reduceRight)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("sample")(sample)
-    __obj.updateDynamic("sampleSize")(sampleSize)
-    __obj.updateDynamic("shuffle")(shuffle)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("some")(some)
-    __obj.updateDynamic("sortBy")(sortBy)
+    val __obj = js.Dynamic.literal(countBy = countBy, each = each, eachRight = eachRight, every = every, filter = filter, find = find, findLast = findLast, flatMap = flatMap, flatMapDeep = flatMapDeep, flatMapDepth = flatMapDepth, forEach = forEach, forEachRight = forEachRight, groupBy = groupBy, includes = includes, invokeMap = invokeMap, keyBy = keyBy, map = map, orderBy = orderBy, partition = partition, reduce = reduce, reduceRight = reduceRight, reject = reject, sample = sample, sampleSize = sampleSize, shuffle = shuffle, size = size, some = some, sortBy = sortBy)
+  
     __obj.asInstanceOf[Anon_CountBy]
   }
 }

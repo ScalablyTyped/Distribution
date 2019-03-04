@@ -52,27 +52,8 @@ object Images {
     preview: giphyDashApiLib.Anon_Height,
     preview_gif: giphyDashApiLib.giphyDashApiMod.BaseImage with giphyDashApiLib.Anon_SizeString
   ): Images = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downsized")(downsized)
-    __obj.updateDynamic("downsized_large")(downsized_large)
-    __obj.updateDynamic("downsized_medium")(downsized_medium)
-    __obj.updateDynamic("downsized_small")(downsized_small)
-    __obj.updateDynamic("downsized_still")(downsized_still)
-    __obj.updateDynamic("fixed_height")(fixed_height)
-    __obj.updateDynamic("fixed_height_downsampled")(fixed_height_downsampled)
-    __obj.updateDynamic("fixed_height_small")(fixed_height_small)
-    __obj.updateDynamic("fixed_height_small_still")(fixed_height_small_still)
-    __obj.updateDynamic("fixed_height_still")(fixed_height_still)
-    __obj.updateDynamic("fixed_width")(fixed_width)
-    __obj.updateDynamic("fixed_width_downsampled")(fixed_width_downsampled)
-    __obj.updateDynamic("fixed_width_small")(fixed_width_small)
-    __obj.updateDynamic("fixed_width_small_still")(fixed_width_small_still)
-    __obj.updateDynamic("fixed_width_still")(fixed_width_still)
-    __obj.updateDynamic("looping")(looping)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("original_still")(original_still)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("preview_gif")(preview_gif)
+    val __obj = js.Dynamic.literal(downsized = downsized, downsized_large = downsized_large, downsized_medium = downsized_medium, downsized_small = downsized_small, downsized_still = downsized_still, fixed_height = fixed_height, fixed_height_downsampled = fixed_height_downsampled, fixed_height_small = fixed_height_small, fixed_height_small_still = fixed_height_small_still, fixed_height_still = fixed_height_still, fixed_width = fixed_width, fixed_width_downsampled = fixed_width_downsampled, fixed_width_small = fixed_width_small, fixed_width_small_still = fixed_width_small_still, fixed_width_still = fixed_width_still, looping = looping, original = original, original_still = original_still, preview = preview, preview_gif = preview_gif)
+  
     __obj.asInstanceOf[Images]
   }
 }

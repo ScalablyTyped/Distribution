@@ -126,8 +126,7 @@ object MemcachedLayerArgs {
     systemPackages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     useEbsOptimizedInstances: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): MemcachedLayerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
     if (allocatedMemory != null) __obj.updateDynamic("allocatedMemory")(allocatedMemory.asInstanceOf[js.Any])
     if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])
     if (autoAssignPublicIps != null) __obj.updateDynamic("autoAssignPublicIps")(autoAssignPublicIps.asInstanceOf[js.Any])

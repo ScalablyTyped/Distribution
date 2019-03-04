@@ -12,9 +12,8 @@ trait PopupWindowEventArgs extends EventArgs {
 object PopupWindowEventArgs {
   @scala.inline
   def apply(sender: Control, window: BootstrapPopupWindow): PopupWindowEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(sender = sender, window = window)
+  
     __obj.asInstanceOf[PopupWindowEventArgs]
   }
 }

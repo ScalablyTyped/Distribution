@@ -54,14 +54,8 @@ object ASPxClientRibbonTab {
     name: java.lang.String,
     ribbon: ASPxClientRibbon
   ): ASPxClientRibbonTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ribbon")(ribbon)
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetText = GetText, GetVisible = GetVisible, SetEnabled = SetEnabled, index = index, name = name, ribbon = ribbon)
+  
     __obj.asInstanceOf[ASPxClientRibbonTab]
   }
 }

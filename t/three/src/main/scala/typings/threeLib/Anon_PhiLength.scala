@@ -20,11 +20,8 @@ object Anon_PhiLength {
     points: js.Array[threeLib.threeDashCoreMod.Vector2],
     segments: scala.Double
   ): Anon_PhiLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("phiLength")(phiLength)
-    __obj.updateDynamic("phiStart")(phiStart)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(phiLength = phiLength, phiStart = phiStart, points = points, segments = segments)
+  
     __obj.asInstanceOf[Anon_PhiLength]
   }
 }

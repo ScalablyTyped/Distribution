@@ -24,14 +24,8 @@ object TaskLog {
     location: java.lang.String,
     path: java.lang.String
   ): TaskLog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("indexLocation")(indexLocation)
-    __obj.updateDynamic("lastChangedOn")(lastChangedOn)
-    __obj.updateDynamic("lineCount")(lineCount)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(createdOn = createdOn, id = id, indexLocation = indexLocation, lastChangedOn = lastChangedOn, lineCount = lineCount, location = location, path = path)
+  
     __obj.asInstanceOf[TaskLog]
   }
 }

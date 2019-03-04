@@ -28,13 +28,8 @@ object IVaultElectronicSignatureOperations {
     DisconnectSignatures: js.Function1[IObjVer, IObjectVersionAndProperties],
     DisconnectSignaturesEx: js.Function2[IObjVer, scala.Boolean, IObjectVersionAndProperties]
   ): IVaultElectronicSignatureOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddEmptySignature")(AddEmptySignature)
-    __obj.updateDynamic("AddEmptySignatures")(AddEmptySignatures)
-    __obj.updateDynamic("DisconnectSignature")(DisconnectSignature)
-    __obj.updateDynamic("DisconnectSignatureEx")(DisconnectSignatureEx)
-    __obj.updateDynamic("DisconnectSignatures")(DisconnectSignatures)
-    __obj.updateDynamic("DisconnectSignaturesEx")(DisconnectSignaturesEx)
+    val __obj = js.Dynamic.literal(AddEmptySignature = AddEmptySignature, AddEmptySignatures = AddEmptySignatures, DisconnectSignature = DisconnectSignature, DisconnectSignatureEx = DisconnectSignatureEx, DisconnectSignatures = DisconnectSignatures, DisconnectSignaturesEx = DisconnectSignaturesEx)
+  
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }
 }

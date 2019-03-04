@@ -31,9 +31,7 @@ object InputProps {
       scala.Unit
     ] = null
   ): InputProps[TSuggestion] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(onChange = onChange, value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     __obj.asInstanceOf[InputProps[TSuggestion]]

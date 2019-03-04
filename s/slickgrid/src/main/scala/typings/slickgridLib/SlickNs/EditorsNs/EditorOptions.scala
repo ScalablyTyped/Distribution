@@ -28,10 +28,7 @@ object EditorOptions {
     item: T = null,
     position: slickgridLib.SlickNs.CellPosition = null
   ): EditorOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("grid")(grid)
+    val __obj = js.Dynamic.literal(column = column, container = container, grid = grid)
     if (cancelChanges != null) __obj.updateDynamic("cancelChanges")(cancelChanges)
     if (commitChanges != null) __obj.updateDynamic("commitChanges")(commitChanges)
     if (gridPosition != null) __obj.updateDynamic("gridPosition")(gridPosition)

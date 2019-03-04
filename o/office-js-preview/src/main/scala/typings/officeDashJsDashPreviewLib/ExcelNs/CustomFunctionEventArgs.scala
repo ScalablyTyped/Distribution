@@ -17,9 +17,8 @@ trait CustomFunctionEventArgs extends js.Object {
 object CustomFunctionEventArgs {
   @scala.inline
   def apply(higherTicks: scala.Double, lowerTicks: scala.Double): CustomFunctionEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("higherTicks")(higherTicks)
-    __obj.updateDynamic("lowerTicks")(lowerTicks)
+    val __obj = js.Dynamic.literal(higherTicks = higherTicks, lowerTicks = lowerTicks)
+  
     __obj.asInstanceOf[CustomFunctionEventArgs]
   }
 }

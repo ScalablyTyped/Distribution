@@ -12,8 +12,8 @@ trait OptimisticAction extends js.Object {
 object OptimisticAction {
   @scala.inline
   def apply(meta: reduxDashOptimisticDashUiLib.Anon_Optimistic): OptimisticAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(meta = meta)
+  
     __obj.asInstanceOf[OptimisticAction]
   }
 }

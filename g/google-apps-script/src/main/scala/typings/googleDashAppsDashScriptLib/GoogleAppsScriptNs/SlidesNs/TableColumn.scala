@@ -24,13 +24,8 @@ object TableColumn {
     getWidth: js.Function0[stdLib.Number],
     remove: js.Function0[scala.Unit]
   ): TableColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCell")(getCell)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getNumCells")(getNumCells)
-    __obj.updateDynamic("getParentTable")(getParentTable)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getCell = getCell, getIndex = getIndex, getNumCells = getNumCells, getParentTable = getParentTable, getWidth = getWidth, remove = remove)
+  
     __obj.asInstanceOf[TableColumn]
   }
 }

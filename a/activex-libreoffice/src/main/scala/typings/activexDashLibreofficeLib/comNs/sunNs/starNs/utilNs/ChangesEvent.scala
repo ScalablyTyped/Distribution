@@ -33,10 +33,8 @@ object ChangesEvent {
     Changes: ChangesSet,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ChangesEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Base")(Base)
-    __obj.updateDynamic("Changes")(Changes.asInstanceOf[js.Any])
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Base = Base, Changes = Changes.asInstanceOf[js.Any], Source = Source)
+  
     __obj.asInstanceOf[ChangesEvent]
   }
 }

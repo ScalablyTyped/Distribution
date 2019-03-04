@@ -43,10 +43,8 @@ object Foldable2vComposition11 {
       js.Any
     ]
   ): Foldable2vComposition11[F, G] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foldMap")(foldMap)
-    __obj.updateDynamic("foldr")(foldr)
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(foldMap = foldMap, foldr = foldr, reduce = reduce)
+  
     __obj.asInstanceOf[Foldable2vComposition11[F, G]]
   }
 }

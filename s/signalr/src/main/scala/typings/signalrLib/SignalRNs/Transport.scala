@@ -37,15 +37,8 @@ object Transport {
     stop: js.Function1[Connection, scala.Unit],
     supportsKeepAlive: js.Function0[scala.Boolean]
   ): Transport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("lostConnection")(lostConnection)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("reconnect")(reconnect)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("supportsKeepAlive")(supportsKeepAlive)
+    val __obj = js.Dynamic.literal(abort = abort, lostConnection = lostConnection, name = name, reconnect = reconnect, send = send, start = start, stop = stop, supportsKeepAlive = supportsKeepAlive)
+  
     __obj.asInstanceOf[Transport]
   }
 }

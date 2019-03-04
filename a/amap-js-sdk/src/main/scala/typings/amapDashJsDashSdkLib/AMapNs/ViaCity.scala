@@ -20,11 +20,8 @@ object ViaCity {
     districts: js.Array[District],
     name: java.lang.String
   ): ViaCity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("districts")(districts)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(adcode = adcode, citycode = citycode, districts = districts, name = name)
+  
     __obj.asInstanceOf[ViaCity]
   }
 }

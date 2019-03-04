@@ -18,7 +18,8 @@ object Anon_PrepareDataFunction {
     prepareDataFunction: js.Function1[/* rawData */ js.Any, _] = null,
     slice: flexmonsterLib.flexmonsterMod.FlexmonsterNs.Slice = null
   ): Anon_PrepareDataFunction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (prepareDataFunction != null) __obj.updateDynamic("prepareDataFunction")(prepareDataFunction)
     if (slice != null) __obj.updateDynamic("slice")(slice)
     __obj.asInstanceOf[Anon_PrepareDataFunction]

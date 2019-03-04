@@ -27,8 +27,7 @@ object PaginateRawOptions {
       sequelizeLib.sequelizeMod.sequelizeNs.col | sequelizeLib.sequelizeMod.sequelizeNs.and | sequelizeLib.sequelizeMod.sequelizeNs.or | java.lang.String
     ]) = null
   ): PaginateRawOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(raw = raw)
     if (after != null) __obj.updateDynamic("after")(after)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (before != null) __obj.updateDynamic("before")(before)

@@ -21,8 +21,8 @@ object TSTupleType {
     elementTypes: js.Array[astDashTypesLib.genKindsMod.TSTypeKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTupleType
   ): TSTupleType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("elementTypes")(elementTypes)
+    val __obj = js.Dynamic.literal(elementTypes = elementTypes)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTupleType]
   }
 }

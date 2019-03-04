@@ -42,8 +42,7 @@ object Anon_City {
     postal_code: java.lang.String = null,
     state: java.lang.String = null
   ): Anon_City = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("line1")(line1)
+    val __obj = js.Dynamic.literal(line1 = line1)
     if (city != null) __obj.updateDynamic("city")(city)
     if (country != null) __obj.updateDynamic("country")(country)
     if (line2 != null) __obj.updateDynamic("line2")(line2)

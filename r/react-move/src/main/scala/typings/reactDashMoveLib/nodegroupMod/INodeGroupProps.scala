@@ -58,11 +58,7 @@ object INodeGroupProps {
       kapellmeisterLib.kapellmeisterMod.HashMap | js.Array[kapellmeisterLib.kapellmeisterMod.HashMap]
     ] = null
   ): INodeGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("keyAccessor")(keyAccessor)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(children = children, data = data, keyAccessor = keyAccessor, start = start)
     if (enter != null) __obj.updateDynamic("enter")(enter)
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
     if (leave != null) __obj.updateDynamic("leave")(leave)

@@ -23,12 +23,8 @@ object Tether {
     position: js.Function0[scala.Unit],
     setOptions: js.Function1[tetherLib.tetherMod.TetherNs.ITetherOptions, scala.Unit]
   ): Tether = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("setOptions")(setOptions)
+    val __obj = js.Dynamic.literal(destroy = destroy, disable = disable, enable = enable, position = position, setOptions = setOptions)
+  
     __obj.asInstanceOf[Tether]
   }
 }

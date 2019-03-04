@@ -14,10 +14,8 @@ trait BookmarkRemoveInfo extends js.Object {
 object BookmarkRemoveInfo {
   @scala.inline
   def apply(index: scala.Double, node: BookmarkTreeNode, parentId: java.lang.String): BookmarkRemoveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("parentId")(parentId)
+    val __obj = js.Dynamic.literal(index = index, node = node, parentId = parentId)
+  
     __obj.asInstanceOf[BookmarkRemoveInfo]
   }
 }

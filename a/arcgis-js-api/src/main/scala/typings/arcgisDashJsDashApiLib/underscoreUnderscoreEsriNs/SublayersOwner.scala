@@ -31,9 +31,8 @@ object SublayersOwner {
     createServiceSublayers: js.Function0[Collection[Sublayer]],
     findSublayerById: js.Function1[scala.Double, Sublayer]
   ): SublayersOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createServiceSublayers")(createServiceSublayers)
-    __obj.updateDynamic("findSublayerById")(findSublayerById)
+    val __obj = js.Dynamic.literal(createServiceSublayers = createServiceSublayers, findSublayerById = findSublayerById)
+  
     __obj.asInstanceOf[SublayersOwner]
   }
 }

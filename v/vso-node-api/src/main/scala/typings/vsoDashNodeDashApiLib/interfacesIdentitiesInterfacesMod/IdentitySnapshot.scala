@@ -22,12 +22,8 @@ object IdentitySnapshot {
     scopeId: java.lang.String,
     scopes: js.Array[IdentityScope]
   ): IdentitySnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("identityIds")(identityIds)
-    __obj.updateDynamic("memberships")(memberships)
-    __obj.updateDynamic("scopeId")(scopeId)
-    __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(groups = groups, identityIds = identityIds, memberships = memberships, scopeId = scopeId, scopes = scopes)
+  
     __obj.asInstanceOf[IdentitySnapshot]
   }
 }

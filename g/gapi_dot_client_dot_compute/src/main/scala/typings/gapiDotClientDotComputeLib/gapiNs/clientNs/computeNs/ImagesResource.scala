@@ -62,14 +62,8 @@ object ImagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deprecate")(deprecate)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getFromFamily")(getFromFamily)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setLabels")(setLabels)
+    val __obj = js.Dynamic.literal(delete = delete, deprecate = deprecate, get = get, getFromFamily = getFromFamily, insert = insert, list = list, setLabels = setLabels)
+  
     __obj.asInstanceOf[ImagesResource]
   }
 }

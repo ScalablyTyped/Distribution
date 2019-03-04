@@ -24,13 +24,8 @@ object Anon_F {
     message: java.lang.String,
     solution: Vector
   ): Anon_F = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("invHessian")(invHessian)
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("solution")(solution)
+    val __obj = js.Dynamic.literal(f = f, gradient = gradient, invHessian = invHessian, iterations = iterations, message = message, solution = solution)
+  
     __obj.asInstanceOf[Anon_F]
   }
 }

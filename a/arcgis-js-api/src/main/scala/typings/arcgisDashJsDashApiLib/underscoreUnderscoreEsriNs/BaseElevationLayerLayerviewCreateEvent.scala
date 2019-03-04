@@ -13,9 +13,8 @@ trait BaseElevationLayerLayerviewCreateEvent extends js.Object {
 object BaseElevationLayerLayerviewCreateEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): BaseElevationLayerLayerviewCreateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
     __obj.asInstanceOf[BaseElevationLayerLayerviewCreateEvent]
   }
 }

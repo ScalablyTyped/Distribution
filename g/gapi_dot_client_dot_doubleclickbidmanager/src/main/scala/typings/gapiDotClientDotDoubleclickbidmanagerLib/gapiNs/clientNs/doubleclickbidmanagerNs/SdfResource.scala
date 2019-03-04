@@ -18,8 +18,8 @@ object SdfResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DownloadResponse]
     ]
   ): SdfResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("download")(download)
+    val __obj = js.Dynamic.literal(download = download)
+  
     __obj.asInstanceOf[SdfResource]
   }
 }

@@ -32,17 +32,8 @@ object FlashSymbolItem {
     symbolType: java.lang.String,
     timeline: FlashTimeline
   ): FlashSymbolItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertToCompiledClip")(convertToCompiledClip)
-    __obj.updateDynamic("exportSWC")(exportSWC)
-    __obj.updateDynamic("exportSWF")(exportSWF)
-    __obj.updateDynamic("scalingGrid")(scalingGrid)
-    __obj.updateDynamic("scalingGridRect")(scalingGridRect)
-    __obj.updateDynamic("sourceAutoUpdate")(sourceAutoUpdate)
-    __obj.updateDynamic("sourceFilePath")(sourceFilePath)
-    __obj.updateDynamic("sourceLibraryName")(sourceLibraryName)
-    __obj.updateDynamic("symbolType")(symbolType)
-    __obj.updateDynamic("timeline")(timeline)
+    val __obj = js.Dynamic.literal(convertToCompiledClip = convertToCompiledClip, exportSWC = exportSWC, exportSWF = exportSWF, scalingGrid = scalingGrid, scalingGridRect = scalingGridRect, sourceAutoUpdate = sourceAutoUpdate, sourceFilePath = sourceFilePath, sourceLibraryName = sourceLibraryName, symbolType = symbolType, timeline = timeline)
+  
     __obj.asInstanceOf[FlashSymbolItem]
   }
 }

@@ -17,11 +17,8 @@ object ChainedLocator {
     seleniumLocator: js.Any,
     toString: js.Function0[java.lang.String]
   ): ChainedLocator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findElements")(findElements)
-    __obj.updateDynamic("locators")(locators)
-    __obj.updateDynamic("seleniumLocator")(seleniumLocator)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(findElements = findElements, locators = locators, seleniumLocator = seleniumLocator, toString = toString)
+  
     __obj.asInstanceOf[ChainedLocator]
   }
 }

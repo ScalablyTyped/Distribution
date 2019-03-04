@@ -14,10 +14,8 @@ trait ShippingOption extends js.Object {
 object ShippingOption {
   @scala.inline
   def apply(id: java.lang.String, prices: js.Array[LabeledPrice], title: java.lang.String): ShippingOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("prices")(prices)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, prices = prices, title = title)
+  
     __obj.asInstanceOf[ShippingOption]
   }
 }

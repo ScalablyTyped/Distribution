@@ -12,8 +12,8 @@ trait MutationPayload extends Payload {
 object MutationPayload {
   @scala.inline
   def apply(payload: js.Any, `type`: java.lang.String): MutationPayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MutationPayload]
   }
 }

@@ -52,24 +52,8 @@ object PublishedExtension {
     tags: js.Array[java.lang.String],
     versions: js.Array[ExtensionVersion]
   ): PublishedExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("deploymentType")(deploymentType)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("extensionId")(extensionId)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("installationTargets")(installationTargets)
-    __obj.updateDynamic("lastUpdated")(lastUpdated)
-    __obj.updateDynamic("longDescription")(longDescription)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("releaseDate")(releaseDate)
-    __obj.updateDynamic("sharedWith")(sharedWith)
-    __obj.updateDynamic("shortDescription")(shortDescription)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(categories = categories, deploymentType = deploymentType, displayName = displayName, extensionId = extensionId, extensionName = extensionName, flags = flags, installationTargets = installationTargets, lastUpdated = lastUpdated, longDescription = longDescription, publishedDate = publishedDate, publisher = publisher, releaseDate = releaseDate, sharedWith = sharedWith, shortDescription = shortDescription, statistics = statistics, tags = tags, versions = versions)
+  
     __obj.asInstanceOf[PublishedExtension]
   }
 }

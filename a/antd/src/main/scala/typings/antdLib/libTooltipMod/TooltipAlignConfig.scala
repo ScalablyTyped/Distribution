@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TooltipAlignConfig extends js.Object {
   var offset: js.UndefOr[js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String]] = js.undefined
-  var overflow: js.UndefOr[antdLib.Anon_AdjustX] = js.undefined
+  var overflow: js.UndefOr[antdLib.Anon_AdjustXAdjustY] = js.undefined
   var points: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var targetOffset: js.UndefOr[js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String]] = js.undefined
   var useCssBottom: js.UndefOr[scala.Boolean] = js.undefined
@@ -19,7 +19,7 @@ object TooltipAlignConfig {
   @scala.inline
   def apply(
     offset: js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String] = null,
-    overflow: antdLib.Anon_AdjustX = null,
+    overflow: antdLib.Anon_AdjustXAdjustY = null,
     points: js.Tuple2[java.lang.String, java.lang.String] = null,
     targetOffset: js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String] = null,
     useCssBottom: js.UndefOr[scala.Boolean] = js.undefined,

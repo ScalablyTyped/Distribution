@@ -52,27 +52,8 @@ object Anon_Aztec {
     upc_e: java.lang.String,
     upc_ean: java.lang.String
   ): Anon_Aztec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aztec")(aztec)
-    __obj.updateDynamic("codabar")(codabar)
-    __obj.updateDynamic("code128")(code128)
-    __obj.updateDynamic("code138")(code138)
-    __obj.updateDynamic("code39")(code39)
-    __obj.updateDynamic("code39mod43")(code39mod43)
-    __obj.updateDynamic("code93")(code93)
-    __obj.updateDynamic("datamatrix")(datamatrix)
-    __obj.updateDynamic("ean13")(ean13)
-    __obj.updateDynamic("ean8")(ean8)
-    __obj.updateDynamic("interleaved2of5")(interleaved2of5)
-    __obj.updateDynamic("itf14")(itf14)
-    __obj.updateDynamic("maxicode")(maxicode)
-    __obj.updateDynamic("pdf417")(pdf417)
-    __obj.updateDynamic("qr")(qr)
-    __obj.updateDynamic("rss14")(rss14)
-    __obj.updateDynamic("rssexpanded")(rssexpanded)
-    __obj.updateDynamic("upc_a")(upc_a)
-    __obj.updateDynamic("upc_e")(upc_e)
-    __obj.updateDynamic("upc_ean")(upc_ean)
+    val __obj = js.Dynamic.literal(aztec = aztec, codabar = codabar, code128 = code128, code138 = code138, code39 = code39, code39mod43 = code39mod43, code93 = code93, datamatrix = datamatrix, ean13 = ean13, ean8 = ean8, interleaved2of5 = interleaved2of5, itf14 = itf14, maxicode = maxicode, pdf417 = pdf417, qr = qr, rss14 = rss14, rssexpanded = rssexpanded, upc_a = upc_a, upc_e = upc_e, upc_ean = upc_ean)
+  
     __obj.asInstanceOf[Anon_Aztec]
   }
 }

@@ -30,16 +30,8 @@ object ArtistObjectFull {
     `type`: spotifyDashApiLib.spotifyDashApiLibStrings.artist,
     uri: java.lang.String
   ): ArtistObjectFull = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("followers")(followers)
-    __obj.updateDynamic("genres")(genres)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("popularity")(popularity)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(external_urls = external_urls, followers = followers, genres = genres, href = href, id = id, images = images, name = name, popularity = popularity, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArtistObjectFull]
   }
 }

@@ -20,8 +20,7 @@ object UploadTask {
     fileContent: nodeLib.Buffer = null,
     safeArtifactName: java.lang.String = null
   ): UploadTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
     if (arch != null) __obj.updateDynamic("arch")(arch)
     if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent)
     if (safeArtifactName != null) __obj.updateDynamic("safeArtifactName")(safeArtifactName)

@@ -45,13 +45,8 @@ object ParticipantInfo {
     resource: java.lang.String,
     role: scala.Double
   ): ParticipantInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affiliation")(affiliation)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(affiliation = affiliation, flags = flags, id = id, reason = reason, resource = resource, role = role)
+  
     __obj.asInstanceOf[ParticipantInfo]
   }
 }

@@ -29,11 +29,8 @@ object Compactable2C {
       ]
     ]
   ): Compactable2C[F, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], compact = compact, separate = separate)
+  
     __obj.asInstanceOf[Compactable2C[F, L]]
   }
 }

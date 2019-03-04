@@ -15,9 +15,8 @@ trait Thunk extends VTree {
 object Thunk {
   @scala.inline
   def apply(render: js.Function1[VTree, VTree], `type`: java.lang.String, vnode: VTree): Thunk = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("vnode")(vnode)
+    val __obj = js.Dynamic.literal(render = render, vnode = vnode)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Thunk]
   }
 }

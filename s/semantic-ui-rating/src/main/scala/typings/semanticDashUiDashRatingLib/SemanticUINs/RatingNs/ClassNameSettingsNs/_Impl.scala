@@ -23,10 +23,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(active: java.lang.String, hover: java.lang.String, loading: java.lang.String): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("hover")(hover)
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(active = active, hover = hover, loading = loading)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

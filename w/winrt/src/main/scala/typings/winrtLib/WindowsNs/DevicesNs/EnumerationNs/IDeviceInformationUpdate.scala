@@ -16,9 +16,8 @@ object IDeviceInformationUpdate {
     id: java.lang.String,
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _]
   ): IDeviceInformationUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(id = id, properties = properties)
+  
     __obj.asInstanceOf[IDeviceInformationUpdate]
   }
 }

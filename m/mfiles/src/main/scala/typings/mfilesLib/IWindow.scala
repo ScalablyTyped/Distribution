@@ -42,22 +42,8 @@ object IWindow {
     Title: java.lang.String,
     Width: scala.Double
   ): IWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("Focus")(Focus)
-    __obj.updateDynamic("Handle")(Handle)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("IsFocused")(IsFocused)
-    __obj.updateDynamic("Maximizable")(Maximizable)
-    __obj.updateDynamic("Maximize")(Maximize)
-    __obj.updateDynamic("Minimizable")(Minimizable)
-    __obj.updateDynamic("Minimize")(Minimize)
-    __obj.updateDynamic("Resizable")(Resizable)
-    __obj.updateDynamic("Restore")(Restore)
-    __obj.updateDynamic("SetDefaultSize")(SetDefaultSize)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Close = Close, Events = Events, Focus = Focus, Handle = Handle, Height = Height, IsFocused = IsFocused, Maximizable = Maximizable, Maximize = Maximize, Minimizable = Minimizable, Minimize = Minimize, Resizable = Resizable, Restore = Restore, SetDefaultSize = SetDefaultSize, Title = Title, Width = Width)
+  
     __obj.asInstanceOf[IWindow]
   }
 }

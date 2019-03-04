@@ -13,7 +13,8 @@ trait Anon_Resource extends js.Object {
 object Anon_Resource {
   @scala.inline
   def apply(`type`: java.lang.String, resource: java.lang.String = null): Anon_Resource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[Anon_Resource]
   }

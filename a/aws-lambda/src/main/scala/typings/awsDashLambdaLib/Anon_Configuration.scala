@@ -12,8 +12,8 @@ trait Anon_Configuration extends js.Object {
 object Anon_Configuration {
   @scala.inline
   def apply(configuration: Anon_FunctionName): Anon_Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configuration")(configuration)
+    val __obj = js.Dynamic.literal(configuration = configuration)
+  
     __obj.asInstanceOf[Anon_Configuration]
   }
 }

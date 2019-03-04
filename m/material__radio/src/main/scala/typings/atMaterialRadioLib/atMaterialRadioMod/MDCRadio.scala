@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControl because Inheritance from two classes */ @JSImport("@material/radio", "MDCRadio")
+- atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControl because Inheritance from two classes. Inlined ripple */ @JSImport("@material/radio", "MDCRadio")
 @js.native
 class MDCRadio ()
   extends atMaterialBaseLib.componentMod.default[

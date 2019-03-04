@@ -46,24 +46,8 @@ object Expect {
     toThrow: js.Function0[scala.Unit],
     toThrowError: js.Function1[js.Any, scala.Unit]
   ): Expect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("toBe")(toBe)
-    __obj.updateDynamic("toBeDefined")(toBeDefined)
-    __obj.updateDynamic("toBeFalsy")(toBeFalsy)
-    __obj.updateDynamic("toBeGreaterThan")(toBeGreaterThan)
-    __obj.updateDynamic("toBeLessThan")(toBeLessThan)
-    __obj.updateDynamic("toBeNull")(toBeNull)
-    __obj.updateDynamic("toBeTruthy")(toBeTruthy)
-    __obj.updateDynamic("toBeUndefined")(toBeUndefined)
-    __obj.updateDynamic("toContain")(toContain)
-    __obj.updateDynamic("toEqual")(toEqual)
-    __obj.updateDynamic("toHaveBeenCalled")(toHaveBeenCalled)
-    __obj.updateDynamic("toHaveBeenCalledTimes")(toHaveBeenCalledTimes)
-    __obj.updateDynamic("toHaveBeenCalledWith")(toHaveBeenCalledWith)
-    __obj.updateDynamic("toMatch")(toMatch)
-    __obj.updateDynamic("toThrow")(toThrow)
-    __obj.updateDynamic("toThrowError")(toThrowError)
+    val __obj = js.Dynamic.literal(not = not, toBe = toBe, toBeDefined = toBeDefined, toBeFalsy = toBeFalsy, toBeGreaterThan = toBeGreaterThan, toBeLessThan = toBeLessThan, toBeNull = toBeNull, toBeTruthy = toBeTruthy, toBeUndefined = toBeUndefined, toContain = toContain, toEqual = toEqual, toHaveBeenCalled = toHaveBeenCalled, toHaveBeenCalledTimes = toHaveBeenCalledTimes, toHaveBeenCalledWith = toHaveBeenCalledWith, toMatch = toMatch, toThrow = toThrow, toThrowError = toThrowError)
+  
     __obj.asInstanceOf[Expect]
   }
 }

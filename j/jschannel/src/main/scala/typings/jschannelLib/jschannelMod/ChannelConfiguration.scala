@@ -32,10 +32,7 @@ object ChannelConfiguration {
     reconnect: js.UndefOr[scala.Boolean] = js.undefined,
     remote: java.lang.String | js.Array[java.lang.String] = null
   ): ChannelConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(origin = origin, scope = scope, window = window)
     if (!js.isUndefined(debugOutput)) __obj.updateDynamic("debugOutput")(debugOutput)
     if (gotMessageObserver != null) __obj.updateDynamic("gotMessageObserver")(gotMessageObserver)
     if (onReady != null) __obj.updateDynamic("onReady")(onReady)

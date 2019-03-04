@@ -19,10 +19,7 @@ object GridGroupCollapseEvent {
     element: kendoDashUiLib.JQuery = null,
     group: js.Any = null
   ): GridGroupCollapseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     if (group != null) __obj.updateDynamic("group")(group)
     __obj.asInstanceOf[GridGroupCollapseEvent]

@@ -59,8 +59,7 @@ object Props {
     toolbarConfig: ToolbarConfig = null,
     toolbarStyle: js.Object = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
     if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(blockStyleFn)
     if (className != null) __obj.updateDynamic("className")(className)

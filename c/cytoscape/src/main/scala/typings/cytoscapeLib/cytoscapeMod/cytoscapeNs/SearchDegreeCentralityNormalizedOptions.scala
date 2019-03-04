@@ -33,8 +33,7 @@ object SearchDegreeCentralityNormalizedOptions {
     alpha: scala.Int | scala.Double = null,
     directed: js.UndefOr[scala.Boolean] = js.undefined
   ): SearchDegreeCentralityNormalizedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(weight = weight)
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedOptions]

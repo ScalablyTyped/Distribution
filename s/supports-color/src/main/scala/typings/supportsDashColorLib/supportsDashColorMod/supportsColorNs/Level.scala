@@ -15,11 +15,8 @@ trait Level extends js.Object {
 object Level {
   @scala.inline
   def apply(has16m: scala.Boolean, has256: scala.Boolean, hasBasic: scala.Boolean, level: scala.Double): Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has16m")(has16m)
-    __obj.updateDynamic("has256")(has256)
-    __obj.updateDynamic("hasBasic")(hasBasic)
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(has16m = has16m, has256 = has256, hasBasic = hasBasic, level = level)
+  
     __obj.asInstanceOf[Level]
   }
 }

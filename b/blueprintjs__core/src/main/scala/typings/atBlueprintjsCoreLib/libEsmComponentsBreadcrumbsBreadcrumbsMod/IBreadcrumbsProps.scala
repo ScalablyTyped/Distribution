@@ -83,8 +83,7 @@ object IBreadcrumbsProps {
     ] = null,
     popoverProps: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps = null
   ): IBreadcrumbsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (breadcrumbRenderer != null) __obj.updateDynamic("breadcrumbRenderer")(breadcrumbRenderer)
     if (className != null) __obj.updateDynamic("className")(className)
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)

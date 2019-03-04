@@ -27,12 +27,8 @@ object TransmissionSummary {
     id: java.lang.String,
     state: sparkpostLib.sparkpostLibStrings.submitted | sparkpostLib.sparkpostLibStrings.Generating | sparkpostLib.sparkpostLibStrings.Success | sparkpostLib.sparkpostLibStrings.Canceled
   ): TransmissionSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("campaign_id")(campaign_id)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(campaign_id = campaign_id, content = content, description = description, id = id, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TransmissionSummary]
   }
 }

@@ -20,11 +20,7 @@ object FailedAttemptError {
     retriesLeft: scala.Double,
     stack: java.lang.String = null
   ): FailedAttemptError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attemptNumber")(attemptNumber)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("retriesLeft")(retriesLeft)
+    val __obj = js.Dynamic.literal(attemptNumber = attemptNumber, message = message, name = name, retriesLeft = retriesLeft)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[FailedAttemptError]
   }

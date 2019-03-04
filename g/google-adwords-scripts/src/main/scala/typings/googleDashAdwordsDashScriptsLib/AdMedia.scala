@@ -21,11 +21,8 @@ object AdMedia {
     newMediaBundleBuilder: js.Function0[MediaBundleBuilder[Media]],
     newVideoBuilder: js.Function0[VideoBuilder[Media]]
   ): AdMedia = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("media")(media)
-    __obj.updateDynamic("newImageBuilder")(newImageBuilder)
-    __obj.updateDynamic("newMediaBundleBuilder")(newMediaBundleBuilder)
-    __obj.updateDynamic("newVideoBuilder")(newVideoBuilder)
+    val __obj = js.Dynamic.literal(media = media, newImageBuilder = newImageBuilder, newMediaBundleBuilder = newMediaBundleBuilder, newVideoBuilder = newVideoBuilder)
+  
     __obj.asInstanceOf[AdMedia]
   }
 }

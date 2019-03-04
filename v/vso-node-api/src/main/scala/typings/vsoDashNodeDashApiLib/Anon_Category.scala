@@ -46,23 +46,8 @@ object Anon_Category {
     tag: scala.Double,
     vsixMetadata: scala.Double
   ): Anon_Category = {
-    val __obj = js.Dynamic.literal(`private` = `private`)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("contributionType")(contributionType)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("excludeWithFlags")(excludeWithFlags)
-    __obj.updateDynamic("featured")(featured)
-    __obj.updateDynamic("featuredInCategory")(featuredInCategory)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("includeWithFlags")(includeWithFlags)
-    __obj.updateDynamic("installationTarget")(installationTarget)
-    __obj.updateDynamic("installationTargetVersion")(installationTargetVersion)
-    __obj.updateDynamic("installationTargetVersionRange")(installationTargetVersionRange)
-    __obj.updateDynamic("lcid")(lcid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("searchText")(searchText)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("vsixMetadata")(vsixMetadata)
+    val __obj = js.Dynamic.literal(category = category, contributionType = contributionType, displayName = displayName, excludeWithFlags = excludeWithFlags, featured = featured, featuredInCategory = featuredInCategory, id = id, includeWithFlags = includeWithFlags, installationTarget = installationTarget, installationTargetVersion = installationTargetVersion, installationTargetVersionRange = installationTargetVersionRange, lcid = lcid, name = name, searchText = searchText, tag = tag, vsixMetadata = vsixMetadata)
+    __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[Anon_Category]
   }
 }

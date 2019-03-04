@@ -62,21 +62,8 @@ object IVisualHost {
     telemetry: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.ITelemetryService,
     tooltipService: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.ITooltipService
   ): IVisualHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowInteractions")(allowInteractions)
-    __obj.updateDynamic("applyJsonFilter")(applyJsonFilter)
-    __obj.updateDynamic("authenticationService")(authenticationService)
-    __obj.updateDynamic("colorPalette")(colorPalette)
-    __obj.updateDynamic("createLocalizationManager")(createLocalizationManager)
-    __obj.updateDynamic("createSelectionIdBuilder")(createSelectionIdBuilder)
-    __obj.updateDynamic("createSelectionManager")(createSelectionManager)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("launchUrl")(launchUrl)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("persistProperties")(persistProperties)
-    __obj.updateDynamic("refreshHostData")(refreshHostData)
-    __obj.updateDynamic("telemetry")(telemetry)
-    __obj.updateDynamic("tooltipService")(tooltipService)
+    val __obj = js.Dynamic.literal(allowInteractions = allowInteractions, applyJsonFilter = applyJsonFilter, authenticationService = authenticationService, colorPalette = colorPalette, createLocalizationManager = createLocalizationManager, createSelectionIdBuilder = createSelectionIdBuilder, createSelectionManager = createSelectionManager, instanceId = instanceId, launchUrl = launchUrl, locale = locale, persistProperties = persistProperties, refreshHostData = refreshHostData, telemetry = telemetry, tooltipService = tooltipService)
+  
     __obj.asInstanceOf[IVisualHost]
   }
 }

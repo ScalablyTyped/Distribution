@@ -22,12 +22,8 @@ object Anon_Canceled {
     partiallySucceeded: scala.Double,
     succeeded: scala.Double
   ): Anon_Canceled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("partiallySucceeded")(partiallySucceeded)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(canceled = canceled, failed = failed, none = none, partiallySucceeded = partiallySucceeded, succeeded = succeeded)
+  
     __obj.asInstanceOf[Anon_Canceled]
   }
 }

@@ -85,38 +85,8 @@ object Scenario {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setScenarioComment: js.Function1[java.lang.String, scala.Unit]
   ): Scenario = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BorderColor")(BorderColor)
-    __obj.updateDynamic("CopyBack")(CopyBack)
-    __obj.updateDynamic("CopyFormulas")(CopyFormulas)
-    __obj.updateDynamic("CopyStyles")(CopyStyles)
-    __obj.updateDynamic("IsActive")(IsActive)
-    __obj.updateDynamic("IsScenario")(IsScenario)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PrintBorder")(PrintBorder)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Protected")(Protected)
-    __obj.updateDynamic("Ranges")(Ranges)
-    __obj.updateDynamic("ScenarioComment")(ScenarioComment)
-    __obj.updateDynamic("ShowBorder")(ShowBorder)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addRanges")(addRanges)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("getIsScenario")(getIsScenario)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("getScenarioComment")(getScenarioComment)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setScenarioComment")(setScenarioComment)
+    val __obj = js.Dynamic.literal(BorderColor = BorderColor, CopyBack = CopyBack, CopyFormulas = CopyFormulas, CopyStyles = CopyStyles, IsActive = IsActive, IsScenario = IsScenario, Name = Name, PrintBorder = PrintBorder, PropertySetInfo = PropertySetInfo, Protected = Protected, Ranges = Ranges, ScenarioComment = ScenarioComment, ShowBorder = ShowBorder, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addRanges = addRanges, addVetoableChangeListener = addVetoableChangeListener, apply = apply, getIsScenario = getIsScenario, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getRanges = getRanges, getScenarioComment = getScenarioComment, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue, setScenarioComment = setScenarioComment)
+  
     __obj.asInstanceOf[Scenario]
   }
 }

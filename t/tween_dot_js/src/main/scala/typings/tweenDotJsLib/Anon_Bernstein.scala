@@ -20,11 +20,8 @@ object Anon_Bernstein {
     Factorial: js.Function1[scala.Double, scala.Double],
     Linear: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
   ): Anon_Bernstein = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bernstein")(Bernstein)
-    __obj.updateDynamic("CatmullRom")(CatmullRom)
-    __obj.updateDynamic("Factorial")(Factorial)
-    __obj.updateDynamic("Linear")(Linear)
+    val __obj = js.Dynamic.literal(Bernstein = Bernstein, CatmullRom = CatmullRom, Factorial = Factorial, Linear = Linear)
+  
     __obj.asInstanceOf[Anon_Bernstein]
   }
 }

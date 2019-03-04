@@ -26,14 +26,8 @@ object IMediaDeviceStatics {
     ondefaultaudiocapturedevicechanged: js.Any,
     ondefaultaudiorenderdevicechanged: js.Any
   ): IMediaDeviceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAudioCaptureSelector")(getAudioCaptureSelector)
-    __obj.updateDynamic("getAudioRenderSelector")(getAudioRenderSelector)
-    __obj.updateDynamic("getDefaultAudioCaptureId")(getDefaultAudioCaptureId)
-    __obj.updateDynamic("getDefaultAudioRenderId")(getDefaultAudioRenderId)
-    __obj.updateDynamic("getVideoCaptureSelector")(getVideoCaptureSelector)
-    __obj.updateDynamic("ondefaultaudiocapturedevicechanged")(ondefaultaudiocapturedevicechanged)
-    __obj.updateDynamic("ondefaultaudiorenderdevicechanged")(ondefaultaudiorenderdevicechanged)
+    val __obj = js.Dynamic.literal(getAudioCaptureSelector = getAudioCaptureSelector, getAudioRenderSelector = getAudioRenderSelector, getDefaultAudioCaptureId = getDefaultAudioCaptureId, getDefaultAudioRenderId = getDefaultAudioRenderId, getVideoCaptureSelector = getVideoCaptureSelector, ondefaultaudiocapturedevicechanged = ondefaultaudiocapturedevicechanged, ondefaultaudiorenderdevicechanged = ondefaultaudiorenderdevicechanged)
+  
     __obj.asInstanceOf[IMediaDeviceStatics]
   }
 }

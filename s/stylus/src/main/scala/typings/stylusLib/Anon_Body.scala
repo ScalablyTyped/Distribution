@@ -26,14 +26,8 @@ object Anon_Body {
     name: java.lang.String,
     params: stylusLib.stylusMod.StylusNs.NodesNs.Params
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(__type = __type, body = body, column = column, filename = filename, lineno = lineno, name = name, params = params)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

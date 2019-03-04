@@ -50,26 +50,8 @@ object Config {
     testTimeout: scala.Double,
     urlConfig: js.Array[Anon_Id]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altertitle")(altertitle)
-    __obj.updateDynamic("autostart")(autostart)
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    __obj.updateDynamic("fixture")(fixture)
-    __obj.updateDynamic("hidepassed")(hidepassed)
-    __obj.updateDynamic("maxDepth")(maxDepth)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("moduleId")(moduleId)
-    __obj.updateDynamic("noglobals")(noglobals)
-    __obj.updateDynamic("notrycatch")(notrycatch)
-    __obj.updateDynamic("reorder")(reorder)
-    __obj.updateDynamic("requireExpects")(requireExpects)
-    __obj.updateDynamic("scrolltop")(scrolltop)
-    __obj.updateDynamic("seed")(seed)
-    __obj.updateDynamic("testId")(testId)
-    __obj.updateDynamic("testTimeout")(testTimeout)
-    __obj.updateDynamic("urlConfig")(urlConfig)
+    val __obj = js.Dynamic.literal(altertitle = altertitle, autostart = autostart, collapse = collapse, current = current, filter = filter.asInstanceOf[js.Any], fixture = fixture, hidepassed = hidepassed, maxDepth = maxDepth, module = module, moduleId = moduleId, noglobals = noglobals, notrycatch = notrycatch, reorder = reorder, requireExpects = requireExpects, scrolltop = scrolltop, seed = seed, testId = testId, testTimeout = testTimeout, urlConfig = urlConfig)
+  
     __obj.asInstanceOf[Config]
   }
 }

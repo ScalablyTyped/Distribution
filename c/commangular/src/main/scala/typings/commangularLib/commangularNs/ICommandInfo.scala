@@ -39,11 +39,8 @@ object ICommandInfo {
     dataPassed: js.Function1[java.lang.String, js.Any],
     resultKey: js.Function1[java.lang.String, js.Any]
   ): ICommandInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("commandExecuted")(commandExecuted)
-    __obj.updateDynamic("dataPassed")(dataPassed)
-    __obj.updateDynamic("resultKey")(resultKey)
+    val __obj = js.Dynamic.literal(canceled = canceled, commandExecuted = commandExecuted, dataPassed = dataPassed, resultKey = resultKey)
+  
     __obj.asInstanceOf[ICommandInfo]
   }
 }

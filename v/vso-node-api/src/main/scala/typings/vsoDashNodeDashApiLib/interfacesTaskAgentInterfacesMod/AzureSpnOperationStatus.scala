@@ -13,9 +13,8 @@ trait AzureSpnOperationStatus extends js.Object {
 object AzureSpnOperationStatus {
   @scala.inline
   def apply(state: java.lang.String, statusMessage: java.lang.String): AzureSpnOperationStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(state = state, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[AzureSpnOperationStatus]
   }
 }

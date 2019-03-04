@@ -30,17 +30,8 @@ object ComponentDefinitions {
     properties: ComponentProperties,
     ready: js.Function0[scala.Unit]
   ): ComponentDefinitions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attached")(attached)
-    __obj.updateDynamic("compute")(compute)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("detached")(detached)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("mixins")(mixins)
-    __obj.updateDynamic("moved")(moved)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(attached = attached, compute = compute, created = created, data = data, detached = detached, methods = methods, mixins = mixins, moved = moved, properties = properties, ready = ready)
+  
     __obj.asInstanceOf[ComponentDefinitions]
   }
 }

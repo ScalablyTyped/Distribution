@@ -18,10 +18,8 @@ object Events {
     reset: js.Function0[scala.Unit],
     send: js.Function2[EventUrl, T, js.Promise[scala.Unit]]
   ): Events[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(calls = calls, reset = reset, send = send)
+  
     __obj.asInstanceOf[Events[T]]
   }
 }

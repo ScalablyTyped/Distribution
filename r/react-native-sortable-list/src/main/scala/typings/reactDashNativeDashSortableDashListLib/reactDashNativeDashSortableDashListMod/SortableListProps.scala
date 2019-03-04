@@ -142,9 +142,7 @@ object SortableListProps {
     sortingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
   ): SortableListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("renderRow")(renderRow)
+    val __obj = js.Dynamic.literal(data = data, renderRow = renderRow)
     if (autoscrollAreaSize != null) __obj.updateDynamic("autoscrollAreaSize")(autoscrollAreaSize.asInstanceOf[js.Any])
     if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)

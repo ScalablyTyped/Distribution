@@ -64,8 +64,7 @@ object PassportLocalOptions {
     usernameLowerCase: js.UndefOr[scala.Boolean] = js.undefined,
     usernameUnique: js.UndefOr[scala.Boolean] = js.undefined
   ): PassportLocalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("usernameQueryFields")(usernameQueryFields)
+    val __obj = js.Dynamic.literal(usernameQueryFields = usernameQueryFields)
     if (attemptsField != null) __obj.updateDynamic("attemptsField")(attemptsField)
     if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

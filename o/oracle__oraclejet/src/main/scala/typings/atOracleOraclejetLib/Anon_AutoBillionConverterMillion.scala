@@ -22,12 +22,8 @@ object Anon_AutoBillionConverterMillion {
     scaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.thousand | atOracleOraclejetLib.atOracleOraclejetLibStrings.million | atOracleOraclejetLib.atOracleOraclejetLibStrings.billion | atOracleOraclejetLib.atOracleOraclejetLibStrings.trillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.quadrillion | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     style: js.Object
   ): Anon_AutoBillionConverterMillion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("converter")(converter)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(converter = converter, rendered = rendered.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaling = scaling.asInstanceOf[js.Any], style = style)
+  
     __obj.asInstanceOf[Anon_AutoBillionConverterMillion]
   }
 }

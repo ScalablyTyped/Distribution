@@ -26,8 +26,7 @@ object IndicesRecoveryParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): IndicesRecoveryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)

@@ -22,12 +22,8 @@ object IJwkRsa {
     kty: java.lang.String,
     n: java.lang.String
   ): IJwkRsa = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alg")(alg)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("kty")(kty)
-    __obj.updateDynamic("n")(n)
+    val __obj = js.Dynamic.literal(alg = alg, e = e, ext = ext, kty = kty, n = n)
+  
     __obj.asInstanceOf[IJwkRsa]
   }
 }

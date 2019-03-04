@@ -23,12 +23,8 @@ object AppToolbarButtonView {
     open: js.Function0[scala.Unit],
     remove: js.Function0[scala.Unit]
   ): AppToolbarButtonView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroyed")(destroyed)
+    val __obj = js.Dynamic.literal(close = close, destroyed = destroyed, open = open, remove = remove)
     __obj.updateDynamic("on")(on_destroy)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("remove")(remove)
     __obj.asInstanceOf[AppToolbarButtonView]
   }
 }

@@ -16,9 +16,8 @@ object NotificationReason {
     notificationReasonType: NotificationReasonType,
     targetIdentities: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
   ): NotificationReason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notificationReasonType")(notificationReasonType)
-    __obj.updateDynamic("targetIdentities")(targetIdentities)
+    val __obj = js.Dynamic.literal(notificationReasonType = notificationReasonType, targetIdentities = targetIdentities)
+  
     __obj.asInstanceOf[NotificationReason]
   }
 }

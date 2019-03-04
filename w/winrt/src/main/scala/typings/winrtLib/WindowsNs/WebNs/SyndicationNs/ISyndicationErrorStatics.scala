@@ -12,8 +12,8 @@ trait ISyndicationErrorStatics extends js.Object {
 object ISyndicationErrorStatics {
   @scala.inline
   def apply(getStatus: js.Function1[scala.Double, SyndicationErrorStatus]): ISyndicationErrorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  
     __obj.asInstanceOf[ISyndicationErrorStatics]
   }
 }

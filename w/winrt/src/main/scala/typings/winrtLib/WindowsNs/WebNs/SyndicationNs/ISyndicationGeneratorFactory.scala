@@ -12,8 +12,8 @@ trait ISyndicationGeneratorFactory extends js.Object {
 object ISyndicationGeneratorFactory {
   @scala.inline
   def apply(createSyndicationGenerator: js.Function1[java.lang.String, SyndicationGenerator]): ISyndicationGeneratorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationGenerator")(createSyndicationGenerator)
+    val __obj = js.Dynamic.literal(createSyndicationGenerator = createSyndicationGenerator)
+  
     __obj.asInstanceOf[ISyndicationGeneratorFactory]
   }
 }

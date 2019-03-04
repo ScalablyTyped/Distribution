@@ -16,9 +16,8 @@ object Request {
     file: multerLib.multerMod.Global.ExpressNs.MulterNs.File,
     files: org.scalablytyped.runtime.StringDictionary[js.Array[multerLib.multerMod.Global.ExpressNs.MulterNs.File]] | js.Array[multerLib.multerMod.Global.ExpressNs.MulterNs.File]
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(file = file, files = files.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Request]
   }
 }

@@ -36,11 +36,7 @@ object ReactCreditCardProps {
     placeholders: reactDashCreditDashCardsLib.Anon_Name = null,
     preview: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactCreditCardProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cvc")(cvc.asInstanceOf[js.Any])
-    __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cvc = cvc.asInstanceOf[js.Any], expiry = expiry.asInstanceOf[js.Any], name = name, number = number.asInstanceOf[js.Any])
     if (acceptedCards != null) __obj.updateDynamic("acceptedCards")(acceptedCards)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (focused != null) __obj.updateDynamic("focused")(focused)

@@ -52,15 +52,8 @@ object MissingFilter {
     nullValue: js.Function1[scala.Boolean, MissingFilter],
     toJSON: js.Function0[MissingFilter]
   ): MissingFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("existence")(existence)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nullValue")(nullValue)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, existence = existence, field = field, name = name, nullValue = nullValue, toJSON = toJSON)
+  
     __obj.asInstanceOf[MissingFilter]
   }
 }

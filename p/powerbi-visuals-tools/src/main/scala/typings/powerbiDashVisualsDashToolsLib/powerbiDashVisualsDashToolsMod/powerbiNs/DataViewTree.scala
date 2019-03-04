@@ -12,8 +12,8 @@ trait DataViewTree extends js.Object {
 object DataViewTree {
   @scala.inline
   def apply(root: DataViewTreeNode): DataViewTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(root = root)
+  
     __obj.asInstanceOf[DataViewTree]
   }
 }

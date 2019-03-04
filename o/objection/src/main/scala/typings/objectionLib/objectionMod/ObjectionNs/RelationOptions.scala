@@ -12,8 +12,8 @@ trait RelationOptions extends js.Object {
 object RelationOptions {
   @scala.inline
   def apply(alias: scala.Boolean | java.lang.String): RelationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RelationOptions]
   }
 }

@@ -18,10 +18,8 @@ object Mechanism {
     name: java.lang.String,
     response: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], java.lang.String]
   ): Mechanism = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(challenge = challenge, name = name, response = response)
+  
     __obj.asInstanceOf[Mechanism]
   }
 }

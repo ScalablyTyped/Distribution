@@ -14,8 +14,8 @@ object Anon_ContextRendererAnonInsertD {
   def apply[K, D](
     renderer: js.Function1[atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.RootNodeContext[K, D], Anon_Insert]
   ): Anon_ContextRendererAnonInsertD[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(renderer = renderer)
+  
     __obj.asInstanceOf[Anon_ContextRendererAnonInsertD[K, D]]
   }
 }

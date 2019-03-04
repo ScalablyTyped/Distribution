@@ -37,13 +37,8 @@ object FeatureLayerCapabilitiesQueryRelated {
     supportsOrderBy: scala.Boolean,
     supportsPagination: scala.Boolean
   ): FeatureLayerCapabilitiesQueryRelated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsCount")(supportsCount)
-    __obj.updateDynamic("supportsOrderBy")(supportsOrderBy)
-    __obj.updateDynamic("supportsPagination")(supportsPagination)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsCount = supportsCount, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination)
+  
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(key: java.lang.String, passphrase: java.lang.String): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("passphrase")(passphrase)
+    val __obj = js.Dynamic.literal(key = key, passphrase = passphrase)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

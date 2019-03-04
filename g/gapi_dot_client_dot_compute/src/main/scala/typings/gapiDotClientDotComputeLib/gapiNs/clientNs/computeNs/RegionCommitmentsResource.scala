@@ -36,11 +36,8 @@ object RegionCommitmentsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CommitmentList]
     ]
   ): RegionCommitmentsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, get = get, insert = insert, list = list)
+  
     __obj.asInstanceOf[RegionCommitmentsResource]
   }
 }

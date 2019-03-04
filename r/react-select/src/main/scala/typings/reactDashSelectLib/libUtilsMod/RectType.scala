@@ -22,12 +22,8 @@ object RectType {
     right: scala.Double,
     width: scala.Double
   ): RectType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, width = width)
+  
     __obj.asInstanceOf[RectType]
   }
 }

@@ -22,9 +22,8 @@ object ResourceAssociationArgs {
     resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     resourceShareArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): ResourceAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ResourceAssociationArgs]
   }
 }

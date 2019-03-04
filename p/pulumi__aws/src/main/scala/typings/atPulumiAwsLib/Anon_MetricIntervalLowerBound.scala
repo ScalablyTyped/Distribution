@@ -18,8 +18,7 @@ object Anon_MetricIntervalLowerBound {
     metricIntervalLowerBound: java.lang.String = null,
     metricIntervalUpperBound: java.lang.String = null
   ): Anon_MetricIntervalLowerBound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scalingAdjustment")(scalingAdjustment)
+    val __obj = js.Dynamic.literal(scalingAdjustment = scalingAdjustment)
     if (metricIntervalLowerBound != null) __obj.updateDynamic("metricIntervalLowerBound")(metricIntervalLowerBound)
     if (metricIntervalUpperBound != null) __obj.updateDynamic("metricIntervalUpperBound")(metricIntervalUpperBound)
     __obj.asInstanceOf[Anon_MetricIntervalLowerBound]

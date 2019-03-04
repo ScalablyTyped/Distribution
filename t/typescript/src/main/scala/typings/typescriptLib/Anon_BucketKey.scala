@@ -12,8 +12,8 @@ trait Anon_BucketKey extends js.Object {
 object Anon_BucketKey {
   @scala.inline
   def apply(__bucketKey: js.Any): Anon_BucketKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__bucketKey")(__bucketKey)
+    val __obj = js.Dynamic.literal(__bucketKey = __bucketKey)
+  
     __obj.asInstanceOf[Anon_BucketKey]
   }
 }

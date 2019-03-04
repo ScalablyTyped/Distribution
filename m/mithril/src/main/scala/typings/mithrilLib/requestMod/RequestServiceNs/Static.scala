@@ -16,9 +16,8 @@ object Static {
     jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any,
     request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
   ): Static = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonp")(jsonp)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(jsonp = jsonp, request = request)
+  
     __obj.asInstanceOf[Static]
   }
 }

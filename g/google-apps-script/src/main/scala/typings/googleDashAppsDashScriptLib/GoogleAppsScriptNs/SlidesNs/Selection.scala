@@ -24,13 +24,8 @@ object Selection {
     getTableCellRange: js.Function0[TableCellRange],
     getTextRange: js.Function0[TextRange]
   ): Selection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
-    __obj.updateDynamic("getPageElementRange")(getPageElementRange)
-    __obj.updateDynamic("getPageRange")(getPageRange)
-    __obj.updateDynamic("getSelectionType")(getSelectionType)
-    __obj.updateDynamic("getTableCellRange")(getTableCellRange)
-    __obj.updateDynamic("getTextRange")(getTextRange)
+    val __obj = js.Dynamic.literal(getCurrentPage = getCurrentPage, getPageElementRange = getPageElementRange, getPageRange = getPageRange, getSelectionType = getSelectionType, getTableCellRange = getTableCellRange, getTextRange = getTextRange)
+  
     __obj.asInstanceOf[Selection]
   }
 }

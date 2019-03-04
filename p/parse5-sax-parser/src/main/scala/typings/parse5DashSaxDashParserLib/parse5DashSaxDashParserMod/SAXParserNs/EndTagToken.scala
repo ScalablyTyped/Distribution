@@ -19,8 +19,7 @@ trait EndTagToken extends js.Object {
 object EndTagToken {
   @scala.inline
   def apply(tagName: java.lang.String, sourceCodeLocation: parse5Lib.parse5Mod.Location = null): EndTagToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(tagName = tagName)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[EndTagToken]
   }

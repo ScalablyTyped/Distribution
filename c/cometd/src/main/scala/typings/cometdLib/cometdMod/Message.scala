@@ -13,9 +13,8 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(data: js.Any, successful: scala.Boolean): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("successful")(successful)
+    val __obj = js.Dynamic.literal(data = data, successful = successful)
+  
     __obj.asInstanceOf[Message]
   }
 }

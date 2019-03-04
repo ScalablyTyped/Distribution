@@ -37,12 +37,8 @@ object ExtensionDailyStats {
     publisherName: java.lang.String,
     statCount: scala.Double
   ): ExtensionDailyStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dailyStats")(dailyStats)
-    __obj.updateDynamic("extensionId")(extensionId)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("statCount")(statCount)
+    val __obj = js.Dynamic.literal(dailyStats = dailyStats, extensionId = extensionId, extensionName = extensionName, publisherName = publisherName, statCount = statCount)
+  
     __obj.asInstanceOf[ExtensionDailyStats]
   }
 }

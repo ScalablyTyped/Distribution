@@ -20,11 +20,8 @@ object Service {
     slug: java.lang.String,
     status: java.lang.String
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("incidents")(incidents)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("slug")(slug)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(incidents = incidents, name = name, slug = slug, status = status)
+  
     __obj.asInstanceOf[Service]
   }
 }

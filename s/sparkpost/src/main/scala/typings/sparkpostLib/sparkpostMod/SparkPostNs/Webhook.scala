@@ -40,10 +40,7 @@ object Webhook {
     auth_token: java.lang.String = null,
     auth_type: java.lang.String = null
   ): Webhook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(events = events, name = name, target = target)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (auth_credentials != null) __obj.updateDynamic("auth_credentials")(auth_credentials)
     if (auth_request_details != null) __obj.updateDynamic("auth_request_details")(auth_request_details)

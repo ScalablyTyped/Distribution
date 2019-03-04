@@ -22,12 +22,8 @@ object Anon_CENTER {
     LEFT: reactDashMdLib.reactDashMdLibStrings.left,
     RIGHT: reactDashMdLib.reactDashMdLibStrings.right
   ): Anon_CENTER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("INNER_LEFT")(INNER_LEFT)
-    __obj.updateDynamic("INNER_RIGHT")(INNER_RIGHT)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("RIGHT")(RIGHT)
+    val __obj = js.Dynamic.literal(CENTER = CENTER, INNER_LEFT = INNER_LEFT, INNER_RIGHT = INNER_RIGHT, LEFT = LEFT, RIGHT = RIGHT)
+  
     __obj.asInstanceOf[Anon_CENTER]
   }
 }

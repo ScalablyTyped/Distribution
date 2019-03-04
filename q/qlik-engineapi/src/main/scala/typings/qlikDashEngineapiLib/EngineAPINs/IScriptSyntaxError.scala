@@ -45,13 +45,8 @@ object IScriptSyntaxError {
     qTabIx: scala.Double,
     qTextPos: scala.Double
   ): IScriptSyntaxError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qColInLine")(qColInLine)
-    __obj.updateDynamic("qErrLen")(qErrLen)
-    __obj.updateDynamic("qLineInTab")(qLineInTab)
-    __obj.updateDynamic("qSecondaryFailure")(qSecondaryFailure)
-    __obj.updateDynamic("qTabIx")(qTabIx)
-    __obj.updateDynamic("qTextPos")(qTextPos)
+    val __obj = js.Dynamic.literal(qColInLine = qColInLine, qErrLen = qErrLen, qLineInTab = qLineInTab, qSecondaryFailure = qSecondaryFailure, qTabIx = qTabIx, qTextPos = qTextPos)
+  
     __obj.asInstanceOf[IScriptSyntaxError]
   }
 }

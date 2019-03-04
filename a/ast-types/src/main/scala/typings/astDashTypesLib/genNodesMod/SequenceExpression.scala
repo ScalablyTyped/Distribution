@@ -22,8 +22,8 @@ object SequenceExpression {
     expressions: js.Array[astDashTypesLib.genKindsMod.ExpressionKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.SequenceExpression
   ): SequenceExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expressions")(expressions)
+    val __obj = js.Dynamic.literal(expressions = expressions)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SequenceExpression]
   }
 }

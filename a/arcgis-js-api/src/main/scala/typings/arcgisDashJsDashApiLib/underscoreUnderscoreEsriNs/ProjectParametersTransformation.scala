@@ -30,10 +30,7 @@ object ProjectParametersTransformation {
     wkid: scala.Int | scala.Double = null,
     wkt: java.lang.String = null
   ): ProjectParametersTransformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (wkid != null) __obj.updateDynamic("wkid")(wkid.asInstanceOf[js.Any])
     if (wkt != null) __obj.updateDynamic("wkt")(wkt)
     __obj.asInstanceOf[ProjectParametersTransformation]

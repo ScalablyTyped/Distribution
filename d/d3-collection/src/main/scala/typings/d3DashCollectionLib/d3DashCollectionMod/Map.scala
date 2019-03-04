@@ -90,18 +90,8 @@ object Map {
     size: js.Function0[scala.Double],
     values: js.Function0[js.Array[T]]
   ): Map[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(clear = clear, each = each, empty = empty, entries = entries, get = get, has = has, keys = keys, remove = remove, set = set, size = size, values = values)
+  
     __obj.asInstanceOf[Map[T]]
   }
 }

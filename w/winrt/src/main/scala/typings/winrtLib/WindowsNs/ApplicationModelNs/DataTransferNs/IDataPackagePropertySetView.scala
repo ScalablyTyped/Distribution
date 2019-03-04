@@ -34,18 +34,8 @@ object IDataPackagePropertySetView {
     thumbnail: winrtLib.WindowsNs.StorageNs.StreamsNs.RandomAccessStreamReference,
     title: java.lang.String
   ): IDataPackagePropertySetView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationListingUri")(applicationListingUri)
-    __obj.updateDynamic("applicationName")(applicationName)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("fileTypes")(fileTypes)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("split")(split)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(applicationListingUri = applicationListingUri, applicationName = applicationName, description = description, fileTypes = fileTypes, first = first, hasKey = hasKey, lookup = lookup, size = size, split = split, thumbnail = thumbnail, title = title)
+  
     __obj.asInstanceOf[IDataPackagePropertySetView]
   }
 }

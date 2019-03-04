@@ -19,9 +19,8 @@ object IntegerMapping {
     radix: scala.Double,
     `type`: envDashToDashObjectLib.envDashToDashObjectLibStrings.integer
   ): IntegerMapping = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("keypath")(keypath)
-    __obj.updateDynamic("radix")(radix)
+    val __obj = js.Dynamic.literal(keypath = keypath, radix = radix)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IntegerMapping]
   }
 }

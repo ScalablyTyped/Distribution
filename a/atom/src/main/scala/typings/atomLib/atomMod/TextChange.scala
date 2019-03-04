@@ -26,14 +26,8 @@ object TextChange {
     oldText: java.lang.String,
     start: Point
   ): TextChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newExtent")(newExtent)
-    __obj.updateDynamic("newRange")(newRange)
-    __obj.updateDynamic("newText")(newText)
-    __obj.updateDynamic("oldExtent")(oldExtent)
-    __obj.updateDynamic("oldRange")(oldRange)
-    __obj.updateDynamic("oldText")(oldText)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(newExtent = newExtent, newRange = newRange, newText = newText, oldExtent = oldExtent, oldRange = oldRange, oldText = oldText, start = start)
+  
     __obj.asInstanceOf[TextChange]
   }
 }

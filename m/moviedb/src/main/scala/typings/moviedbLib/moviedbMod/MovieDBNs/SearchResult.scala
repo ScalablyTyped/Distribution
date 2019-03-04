@@ -32,17 +32,8 @@ object SearchResult {
     vote_average: scala.Double,
     vote_count: scala.Double
   ): SearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adult")(adult)
-    __obj.updateDynamic("backdrop_path")(backdrop_path)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("original_title")(original_title)
-    __obj.updateDynamic("popularity")(popularity)
-    __obj.updateDynamic("poster_path")(poster_path)
-    __obj.updateDynamic("release_date")(release_date)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("vote_average")(vote_average)
-    __obj.updateDynamic("vote_count")(vote_count)
+    val __obj = js.Dynamic.literal(adult = adult, backdrop_path = backdrop_path, id = id, original_title = original_title, popularity = popularity, poster_path = poster_path, release_date = release_date, title = title, vote_average = vote_average, vote_count = vote_count)
+  
     __obj.asInstanceOf[SearchResult]
   }
 }

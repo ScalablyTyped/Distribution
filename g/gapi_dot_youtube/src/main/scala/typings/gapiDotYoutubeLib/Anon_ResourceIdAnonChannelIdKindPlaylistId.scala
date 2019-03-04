@@ -15,8 +15,8 @@ trait Anon_ResourceIdAnonChannelIdKindPlaylistId extends js.Object {
 object Anon_ResourceIdAnonChannelIdKindPlaylistId {
   @scala.inline
   def apply(resourceId: Anon_ChannelIdKindPlaylistId): Anon_ResourceIdAnonChannelIdKindPlaylistId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceId")(resourceId)
+    val __obj = js.Dynamic.literal(resourceId = resourceId)
+  
     __obj.asInstanceOf[Anon_ResourceIdAnonChannelIdKindPlaylistId]
   }
 }

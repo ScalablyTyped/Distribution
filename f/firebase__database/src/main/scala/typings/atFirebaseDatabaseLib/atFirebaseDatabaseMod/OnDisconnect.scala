@@ -13,6 +13,6 @@ class OnDisconnect protected ()
     * @param {!Repo} repo_
     * @param {!Path} path_
     */
-  def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, `path_`: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) = this()
+  def this(repo_ : atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path_ : atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) = this()
 }
 

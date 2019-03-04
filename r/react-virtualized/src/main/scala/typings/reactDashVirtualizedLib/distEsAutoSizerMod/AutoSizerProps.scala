@@ -71,8 +71,7 @@ object AutoSizerProps {
     onResize: js.Function1[/* info */ Size, _] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): AutoSizerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultHeight != null) __obj.updateDynamic("defaultHeight")(defaultHeight.asInstanceOf[js.Any])

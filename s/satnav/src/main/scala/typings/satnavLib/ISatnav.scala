@@ -23,11 +23,8 @@ object ISatnav {
     navigate: js.Function1[INavigationOptions, ISatnav],
     otherwise: js.Function1[java.lang.String, ISatnav]
   ): ISatnav = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("go")(go)
-    __obj.updateDynamic("navigate")(navigate)
-    __obj.updateDynamic("otherwise")(otherwise)
+    val __obj = js.Dynamic.literal(change = change, go = go, navigate = navigate, otherwise = otherwise)
+  
     __obj.asInstanceOf[ISatnav]
   }
 }

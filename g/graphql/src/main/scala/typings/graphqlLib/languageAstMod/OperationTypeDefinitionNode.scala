@@ -20,9 +20,8 @@ object OperationTypeDefinitionNode {
     `type`: NamedTypeNode,
     loc: Location = null
   ): OperationTypeDefinitionNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(kind = kind, operation = operation)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[OperationTypeDefinitionNode]
   }

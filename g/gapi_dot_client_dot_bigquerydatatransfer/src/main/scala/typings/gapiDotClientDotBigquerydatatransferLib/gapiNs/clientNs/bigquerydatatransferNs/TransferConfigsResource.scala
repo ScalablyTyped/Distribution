@@ -63,14 +63,8 @@ object TransferConfigsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ScheduleTransferRunsResponse]
     ]
   ): TransferConfigsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("scheduleRuns")(scheduleRuns)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, patch = patch, runs = runs, scheduleRuns = scheduleRuns)
+  
     __obj.asInstanceOf[TransferConfigsResource]
   }
 }

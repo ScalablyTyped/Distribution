@@ -40,20 +40,8 @@ object DiskLayoutData {
     `type`: java.lang.String,
     vendor: java.lang.String
   ): DiskLayoutData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bytesPerSector")(bytesPerSector)
-    __obj.updateDynamic("firmwareRevision")(firmwareRevision)
-    __obj.updateDynamic("interfaceType")(interfaceType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sectorsPerTrack")(sectorsPerTrack)
-    __obj.updateDynamic("serialNum")(serialNum)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("totalCylinders")(totalCylinders)
-    __obj.updateDynamic("totalHeads")(totalHeads)
-    __obj.updateDynamic("totalSectors")(totalSectors)
-    __obj.updateDynamic("totalTracks")(totalTracks)
-    __obj.updateDynamic("tracksPerCylinder")(tracksPerCylinder)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector, firmwareRevision = firmwareRevision, interfaceType = interfaceType, name = name, sectorsPerTrack = sectorsPerTrack, serialNum = serialNum, size = size, totalCylinders = totalCylinders, totalHeads = totalHeads, totalSectors = totalSectors, totalTracks = totalTracks, tracksPerCylinder = tracksPerCylinder, vendor = vendor)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DiskLayoutData]
   }
 }

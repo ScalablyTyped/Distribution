@@ -25,14 +25,8 @@ object IndexCreationQuery {
     using: js.Function1[java.lang.String, IndexCreationQuery],
     withParser: js.Function1[java.lang.String, IndexCreationQuery]
   ): IndexCreationQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fulltext")(fulltext)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("spatial")(spatial)
-    __obj.updateDynamic("toQuery")(toQuery)
-    __obj.updateDynamic("unique")(unique)
-    __obj.updateDynamic("using")(using)
-    __obj.updateDynamic("withParser")(withParser)
+    val __obj = js.Dynamic.literal(fulltext = fulltext, on = on, spatial = spatial, toQuery = toQuery, unique = unique, using = using, withParser = withParser)
+  
     __obj.asInstanceOf[IndexCreationQuery]
   }
 }

@@ -38,20 +38,8 @@ object Anon_Children {
     xs: propDashTypesLib.propDashTypesMod.Requireable[scala.Double | js.Object],
     xxl: propDashTypesLib.propDashTypesMod.Requireable[scala.Double | js.Object]
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("lg")(lg)
-    __obj.updateDynamic("md")(md)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("pull")(pull)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("sm")(sm)
-    __obj.updateDynamic("span")(span)
-    __obj.updateDynamic("xl")(xl)
-    __obj.updateDynamic("xs")(xs)
-    __obj.updateDynamic("xxl")(xxl)
+    val __obj = js.Dynamic.literal(children = children, className = className, lg = lg, md = md, offset = offset, order = order, pull = pull, push = push, sm = sm, span = span, xl = xl, xs = xs, xxl = xxl)
+  
     __obj.asInstanceOf[Anon_Children]
   }
 }

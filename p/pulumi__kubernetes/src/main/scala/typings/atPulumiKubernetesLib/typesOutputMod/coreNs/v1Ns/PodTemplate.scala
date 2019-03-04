@@ -43,11 +43,8 @@ object PodTemplate {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     template: PodTemplateSpec
   ): PodTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, template = template)
+  
     __obj.asInstanceOf[PodTemplate]
   }
 }

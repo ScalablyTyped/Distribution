@@ -26,14 +26,8 @@ object Measurements {
     totalTime: scala.Double,
     writes: NumericPerfContext
   ): Measurements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counts")(counts)
-    __obj.updateDynamic("displayNames")(displayNames)
-    __obj.updateDynamic("exclusive")(exclusive)
-    __obj.updateDynamic("inclusive")(inclusive)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("totalTime")(totalTime)
-    __obj.updateDynamic("writes")(writes)
+    val __obj = js.Dynamic.literal(counts = counts, displayNames = displayNames, exclusive = exclusive, inclusive = inclusive, render = render, totalTime = totalTime, writes = writes)
+  
     __obj.asInstanceOf[Measurements]
   }
 }

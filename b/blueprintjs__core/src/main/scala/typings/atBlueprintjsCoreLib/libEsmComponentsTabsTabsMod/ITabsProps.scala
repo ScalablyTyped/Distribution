@@ -79,8 +79,7 @@ object ITabsProps {
     selectedTabId: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId = null,
     vertical: js.UndefOr[scala.Boolean] = js.undefined
   ): ITabsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultSelectedTabId != null) __obj.updateDynamic("defaultSelectedTabId")(defaultSelectedTabId.asInstanceOf[js.Any])

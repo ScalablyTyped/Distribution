@@ -19,8 +19,8 @@ trait ASPxClientSchedulerStorageReminderAlertEventArgs extends ASPxClientEventAr
 object ASPxClientSchedulerStorageReminderAlertEventArgs {
   @scala.inline
   def apply(alertNotifications: js.Array[ASPxClientReminderAlertNotification]): ASPxClientSchedulerStorageReminderAlertEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alertNotifications")(alertNotifications)
+    val __obj = js.Dynamic.literal(alertNotifications = alertNotifications)
+  
     __obj.asInstanceOf[ASPxClientSchedulerStorageReminderAlertEventArgs]
   }
 }

@@ -12,8 +12,8 @@ trait IBackgroundTransferErrorStaticMethods extends js.Object {
 object IBackgroundTransferErrorStaticMethods {
   @scala.inline
   def apply(getStatus: js.Function1[scala.Double, winrtLib.WindowsNs.WebNs.WebErrorStatus]): IBackgroundTransferErrorStaticMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  
     __obj.asInstanceOf[IBackgroundTransferErrorStaticMethods]
   }
 }

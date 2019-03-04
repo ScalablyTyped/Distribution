@@ -16,9 +16,8 @@ object Anon_ErrorFailureResponseSuccess {
     failure: js.Function1[stdLib.Error, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiMqttInstallationResponse, js.Any]
   ): Anon_ErrorFailureResponseSuccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_ErrorFailureResponseSuccess]
   }
 }

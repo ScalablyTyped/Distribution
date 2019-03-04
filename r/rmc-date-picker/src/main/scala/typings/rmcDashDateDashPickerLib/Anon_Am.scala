@@ -26,14 +26,8 @@ object Anon_Am {
     pm: java.lang.String,
     year: java.lang.String
   ): Anon_Am = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("am")(am)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("pm")(pm)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(am = am, day = day, hour = hour, minute = minute, month = month, pm = pm, year = year)
+  
     __obj.asInstanceOf[Anon_Am]
   }
 }

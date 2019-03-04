@@ -19,8 +19,8 @@ trait IterableDiffer[V] extends js.Object {
 object IterableDiffer {
   @scala.inline
   def apply[V](diff: js.Function1[NgIterable[V], IterableChanges[V] | scala.Null]): IterableDiffer[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diff")(diff)
+    val __obj = js.Dynamic.literal(diff = diff)
+  
     __obj.asInstanceOf[IterableDiffer[V]]
   }
 }

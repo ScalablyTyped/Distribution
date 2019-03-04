@@ -22,8 +22,7 @@ object Anon_OperationOptimisticResponse {
     updater: relayDashRuntimeLib.relayDashRuntimeMod.SelectorStoreUpdater[_] = null,
     uploadables: relayDashRuntimeLib.relayDashRuntimeMod.UploadableMap = null
   ): Anon_OperationOptimisticResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(operation = operation)
     if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
     if (optimisticUpdater != null) __obj.updateDynamic("optimisticUpdater")(optimisticUpdater)
     if (updater != null) __obj.updateDynamic("updater")(updater)

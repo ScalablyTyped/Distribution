@@ -17,10 +17,7 @@ object ClusterWorker {
     startTime: scala.Double,
     setSize: scala.Int | scala.Double = null
   ): ClusterWorker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(id = id, pid = pid, startTime = startTime)
     if (setSize != null) __obj.updateDynamic("setSize")(setSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterWorker]
   }

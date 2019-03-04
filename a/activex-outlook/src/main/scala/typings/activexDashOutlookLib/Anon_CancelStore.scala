@@ -13,9 +13,8 @@ trait Anon_CancelStore extends js.Object {
 object Anon_CancelStore {
   @scala.inline
   def apply(Cancel: scala.Boolean, Store: activexDashOutlookLib.OutlookNs.Store): Anon_CancelStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Store")(Store)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Store = Store)
+  
     __obj.asInstanceOf[Anon_CancelStore]
   }
 }

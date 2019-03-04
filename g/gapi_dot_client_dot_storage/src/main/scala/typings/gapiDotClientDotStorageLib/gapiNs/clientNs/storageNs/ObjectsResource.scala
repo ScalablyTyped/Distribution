@@ -96,20 +96,8 @@ object ObjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): ObjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("watchAll")(watchAll)
+    val __obj = js.Dynamic.literal(compose = compose, copy = copy, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, patch = patch, rewrite = rewrite, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, update = update, watchAll = watchAll)
+  
     __obj.asInstanceOf[ObjectsResource]
   }
 }

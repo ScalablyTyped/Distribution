@@ -47,14 +47,8 @@ object Anon_Accuracy {
     speed: scala.Double,
     verticalAccuracy: scala.Double
   ): Anon_Accuracy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("horizontalAccuracy")(horizontalAccuracy)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("verticalAccuracy")(verticalAccuracy)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, altitude = altitude, horizontalAccuracy = horizontalAccuracy, latitude = latitude, longitude = longitude, speed = speed, verticalAccuracy = verticalAccuracy)
+  
     __obj.asInstanceOf[Anon_Accuracy]
   }
 }

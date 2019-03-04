@@ -14,9 +14,8 @@ trait Binary extends ReqlType {
 object Binary {
   @scala.inline
   def apply($reql_type$: rethinkdbLib.rethinkdbLibStrings.BINARY, data: java.lang.String): Binary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$reql_type$")($reql_type$)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal($reql_type$ = $reql_type$, data = data)
+  
     __obj.asInstanceOf[Binary]
   }
 }

@@ -14,9 +14,8 @@ trait FileFilter extends js.Object {
 object FileFilter {
   @scala.inline
   def apply(extensions: js.Array[java.lang.String], name: java.lang.String): FileFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(extensions = extensions, name = name)
+  
     __obj.asInstanceOf[FileFilter]
   }
 }

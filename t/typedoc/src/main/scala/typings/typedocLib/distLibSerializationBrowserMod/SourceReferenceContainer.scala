@@ -12,8 +12,8 @@ trait SourceReferenceContainer[T] extends js.Object {
 object SourceReferenceContainer {
   @scala.inline
   def apply[T](sources: js.Array[T]): SourceReferenceContainer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(sources = sources)
+  
     __obj.asInstanceOf[SourceReferenceContainer[T]]
   }
 }

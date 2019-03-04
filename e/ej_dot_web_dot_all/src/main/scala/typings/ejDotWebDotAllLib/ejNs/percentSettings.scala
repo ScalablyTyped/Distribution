@@ -20,11 +20,8 @@ object percentSettings {
     pattern: js.Array[java.lang.String],
     symbol: java.lang.String
   ): percentSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("groupSizes")(groupSizes)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(decimals = decimals, groupSizes = groupSizes, pattern = pattern, symbol = symbol)
+  
     __obj.asInstanceOf[percentSettings]
   }
 }

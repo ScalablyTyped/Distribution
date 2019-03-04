@@ -12,8 +12,8 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(Keyboard: cordovaDashIonicLib.IonicNs.Keyboard): CordovaPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Keyboard")(Keyboard)
+    val __obj = js.Dynamic.literal(Keyboard = Keyboard)
+  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

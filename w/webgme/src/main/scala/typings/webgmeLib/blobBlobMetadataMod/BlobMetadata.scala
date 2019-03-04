@@ -17,12 +17,8 @@ object BlobMetadata {
     name: java.lang.String,
     size: scala.Double
   ): BlobMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("mime")(mime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(contentType = contentType, context = context, mime = mime, name = name, size = size)
+  
     __obj.asInstanceOf[BlobMetadata]
   }
 }

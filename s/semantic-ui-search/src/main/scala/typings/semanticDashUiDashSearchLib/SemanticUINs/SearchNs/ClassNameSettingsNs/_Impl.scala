@@ -37,12 +37,8 @@ object _Impl {
     loading: java.lang.String,
     pressed: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("pressed")(pressed)
+    val __obj = js.Dynamic.literal(active = active, empty = empty, focus = focus, loading = loading, pressed = pressed)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

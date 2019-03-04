@@ -12,6 +12,6 @@ trait LodashZipObject extends js.Object {
     props: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.PropertyName],
     values: lodashLib.lodashMod.underscoreNs.List[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[T] = js.native
-  def apply[T](props: lodashLib.lodashMod.underscoreNs.`__`, values: lodashLib.lodashMod.underscoreNs.List[T]): LodashZipObject1x2[T] = js.native
+  def apply[T](props: lodashLib.lodashMod.underscoreNs.__, values: lodashLib.lodashMod.underscoreNs.List[T]): LodashZipObject1x2[T] = js.native
 }
 

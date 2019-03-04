@@ -23,9 +23,8 @@ trait ChangeFontFormattingCommand extends CommandBase {
 object ChangeFontFormattingCommand {
   @scala.inline
   def apply(execute: js.Function1[FontFormattingSettings, scala.Boolean], getState: js.Function0[js.Any]): ChangeFontFormattingCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ChangeFontFormattingCommand]
   }
 }

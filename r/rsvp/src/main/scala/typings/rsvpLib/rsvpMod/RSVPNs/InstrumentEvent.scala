@@ -29,13 +29,8 @@ object InstrumentEvent {
     label: java.lang.String,
     timeStamp: scala.Double
   ): InstrumentEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childGuid")(childGuid)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(childGuid = childGuid, detail = detail, eventName = eventName, guid = guid, label = label, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[InstrumentEvent]
   }
 }

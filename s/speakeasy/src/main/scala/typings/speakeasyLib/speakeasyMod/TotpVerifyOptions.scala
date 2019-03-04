@@ -60,9 +60,7 @@ object TotpVerifyOptions {
     time: scala.Int | scala.Double = null,
     window: scala.Int | scala.Double = null
   ): TotpVerifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(secret = secret, token = token)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (counter != null) __obj.updateDynamic("counter")(counter)
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])

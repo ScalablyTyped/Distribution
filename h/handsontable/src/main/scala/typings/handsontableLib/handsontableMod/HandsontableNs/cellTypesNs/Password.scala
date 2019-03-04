@@ -18,10 +18,8 @@ object Password {
     editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Password,
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Password
   ): Password = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyable")(copyable)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(copyable = copyable, editor = editor, renderer = renderer)
+  
     __obj.asInstanceOf[Password]
   }
 }

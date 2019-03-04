@@ -21,8 +21,7 @@ object Options {
     enableSubpixelRendering: js.UndefOr[scala.Boolean] = js.undefined,
     renderBaseBackground: js.Object = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
+    val __obj = js.Dynamic.literal(pixelRatio = pixelRatio)
     if (!js.isUndefined(enableSubpixelRendering)) __obj.updateDynamic("enableSubpixelRendering")(enableSubpixelRendering)
     if (renderBaseBackground != null) __obj.updateDynamic("renderBaseBackground")(renderBaseBackground)
     __obj.asInstanceOf[Options]

@@ -18,10 +18,8 @@ object IgProgressBarMethods {
     value: js.Function1[js.Object, scala.Unit],
     widget: js.Function0[scala.Unit]
   ): IgProgressBarMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(destroy = destroy, value = value, widget = widget)
+  
     __obj.asInstanceOf[IgProgressBarMethods]
   }
 }

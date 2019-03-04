@@ -16,8 +16,7 @@ object Currency {
     currencyCode: java.lang.String,
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyCode")(currencyCode)
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Currency]
   }

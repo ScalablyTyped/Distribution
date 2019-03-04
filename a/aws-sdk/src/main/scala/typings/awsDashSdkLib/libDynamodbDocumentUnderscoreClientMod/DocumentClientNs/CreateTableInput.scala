@@ -57,10 +57,7 @@ object CreateTableInput {
     SSESpecification: SSESpecification = null,
     StreamSpecification: StreamSpecification = null
   ): CreateTableInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions)
-    __obj.updateDynamic("KeySchema")(KeySchema)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(AttributeDefinitions = AttributeDefinitions, KeySchema = KeySchema, TableName = TableName)
     if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
     if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
     if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)

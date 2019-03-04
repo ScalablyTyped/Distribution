@@ -42,21 +42,7 @@ object Procedure {
     shimArgs: js.Array[java.lang.String],
     blockSize: scala.Int | scala.Double = null
   ): Procedure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argTypes")(argTypes)
-    __obj.updateDynamic("arrayArgs")(arrayArgs)
-    __obj.updateDynamic("arrayBlockIndices")(arrayBlockIndices)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("funcName")(funcName)
-    __obj.updateDynamic("indexArgs")(indexArgs)
-    __obj.updateDynamic("offsetArgIndex")(offsetArgIndex)
-    __obj.updateDynamic("offsetArgs")(offsetArgs)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("pre")(pre)
-    __obj.updateDynamic("scalarArgs")(scalarArgs)
-    __obj.updateDynamic("shapeArgs")(shapeArgs)
-    __obj.updateDynamic("shimArgs")(shimArgs)
+    val __obj = js.Dynamic.literal(argTypes = argTypes, arrayArgs = arrayArgs, arrayBlockIndices = arrayBlockIndices, body = body, debug = debug, funcName = funcName, indexArgs = indexArgs, offsetArgIndex = offsetArgIndex, offsetArgs = offsetArgs, post = post, pre = pre, scalarArgs = scalarArgs, shapeArgs = shapeArgs, shimArgs = shimArgs)
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Procedure]
   }

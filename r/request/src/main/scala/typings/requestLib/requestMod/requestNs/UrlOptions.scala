@@ -12,8 +12,8 @@ trait UrlOptions extends RequiredUriUrl {
 object UrlOptions {
   @scala.inline
   def apply(url: java.lang.String | nodeLib.urlMod.Url): UrlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[UrlOptions]
   }
 }

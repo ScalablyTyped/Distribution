@@ -39,10 +39,8 @@ object DictionaryEvent {
     nEvent: scala.Double,
     xDictionaryEntry: XDictionaryEntry
   ): DictionaryEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("nEvent")(nEvent)
-    __obj.updateDynamic("xDictionaryEntry")(xDictionaryEntry)
+    val __obj = js.Dynamic.literal(Source = Source, nEvent = nEvent, xDictionaryEntry = xDictionaryEntry)
+  
     __obj.asInstanceOf[DictionaryEvent]
   }
 }

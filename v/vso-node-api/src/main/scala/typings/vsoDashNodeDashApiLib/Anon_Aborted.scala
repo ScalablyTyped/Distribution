@@ -44,23 +44,8 @@ object Anon_Aborted {
     unspecified: scala.Double,
     warning: scala.Double
   ): Anon_Aborted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("blocked")(blocked)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("inconclusive")(inconclusive)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("notApplicable")(notApplicable)
-    __obj.updateDynamic("notExecuted")(notExecuted)
-    __obj.updateDynamic("notImpacted")(notImpacted)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("unspecified")(unspecified)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(aborted = aborted, blocked = blocked, error = error, failed = failed, inProgress = inProgress, inconclusive = inconclusive, maxValue = maxValue, none = none, notApplicable = notApplicable, notExecuted = notExecuted, notImpacted = notImpacted, passed = passed, paused = paused, timeout = timeout, unspecified = unspecified, warning = warning)
+  
     __obj.asInstanceOf[Anon_Aborted]
   }
 }

@@ -48,13 +48,8 @@ object CreativesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): CreativesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDeal")(addDeal)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listDeals")(listDeals)
-    __obj.updateDynamic("removeDeal")(removeDeal)
+    val __obj = js.Dynamic.literal(addDeal = addDeal, get = get, insert = insert, list = list, listDeals = listDeals, removeDeal = removeDeal)
+  
     __obj.asInstanceOf[CreativesResource]
   }
 }

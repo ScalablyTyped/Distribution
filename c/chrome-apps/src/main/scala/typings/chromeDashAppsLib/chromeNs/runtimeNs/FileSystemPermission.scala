@@ -22,8 +22,8 @@ object FileSystemPermission {
       chromeDashAppsLib.chromeDashAppsLibStrings.write | chromeDashAppsLib.chromeDashAppsLibStrings.retainEntries | chromeDashAppsLib.chromeDashAppsLibStrings.directory | chromeDashAppsLib.chromeDashAppsLibStrings.requestFileSystem
     ]
   ): FileSystemPermission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystem")(fileSystem)
+    val __obj = js.Dynamic.literal(fileSystem = fileSystem)
+  
     __obj.asInstanceOf[FileSystemPermission]
   }
 }

@@ -65,8 +65,7 @@ object Anon_AltDirectorySiteIds {
     sortOrder: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDirectorySiteIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (directorySiteIds != null) __obj.updateDynamic("directorySiteIds")(directorySiteIds)
     if (fields != null) __obj.updateDynamic("fields")(fields)

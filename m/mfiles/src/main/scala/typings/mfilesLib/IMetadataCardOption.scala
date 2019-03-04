@@ -26,14 +26,8 @@ object IMetadataCardOption {
     IsVisible: js.Function0[scala.Boolean],
     SetOptionValue: js.Function1[js.Any, scala.Unit]
   ): IMetadataCardOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("GetExplanation")(GetExplanation)
-    __obj.updateDynamic("GetName")(GetName)
-    __obj.updateDynamic("GetOptionValue")(GetOptionValue)
-    __obj.updateDynamic("IsEnabled")(IsEnabled)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("SetOptionValue")(SetOptionValue)
+    val __obj = js.Dynamic.literal(Events = Events, GetExplanation = GetExplanation, GetName = GetName, GetOptionValue = GetOptionValue, IsEnabled = IsEnabled, IsVisible = IsVisible, SetOptionValue = SetOptionValue)
+  
     __obj.asInstanceOf[IMetadataCardOption]
   }
 }

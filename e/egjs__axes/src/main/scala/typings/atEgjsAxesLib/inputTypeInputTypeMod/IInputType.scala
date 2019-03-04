@@ -32,13 +32,7 @@ object IInputType {
     hammer: js.Any = null,
     isEnable: js.Function0[scala.Boolean] = null
   ): IInputType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axes")(axes)
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("mapAxes")(mapAxes)
+    val __obj = js.Dynamic.literal(axes = axes, connect = connect, destroy = destroy, disconnect = disconnect, element = element, mapAxes = mapAxes)
     if (disable != null) __obj.updateDynamic("disable")(disable)
     if (enable != null) __obj.updateDynamic("enable")(enable)
     if (hammer != null) __obj.updateDynamic("hammer")(hammer)

@@ -29,12 +29,8 @@ object XBorderResizeListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBorderResizeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("borderWidthsChanged")(borderWidthsChanged)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, borderWidthsChanged = borderWidthsChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBorderResizeListener]
   }
 }

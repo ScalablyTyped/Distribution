@@ -13,9 +13,8 @@ trait BinaryUrl extends js.Object {
 object BinaryUrl {
   @scala.inline
   def apply(url: java.lang.String, version: java.lang.String): BinaryUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(url = url, version = version)
+  
     __obj.asInstanceOf[BinaryUrl]
   }
 }

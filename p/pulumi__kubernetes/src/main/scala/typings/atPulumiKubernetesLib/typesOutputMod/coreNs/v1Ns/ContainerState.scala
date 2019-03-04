@@ -31,10 +31,8 @@ object ContainerState {
     terminated: ContainerStateTerminated,
     waiting: ContainerStateWaiting
   ): ContainerState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("running")(running)
-    __obj.updateDynamic("terminated")(terminated)
-    __obj.updateDynamic("waiting")(waiting)
+    val __obj = js.Dynamic.literal(running = running, terminated = terminated, waiting = waiting)
+  
     __obj.asInstanceOf[ContainerState]
   }
 }

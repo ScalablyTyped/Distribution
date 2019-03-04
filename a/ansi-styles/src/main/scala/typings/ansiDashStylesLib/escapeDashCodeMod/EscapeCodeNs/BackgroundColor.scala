@@ -44,23 +44,8 @@ object BackgroundColor {
     bgYellow: CodePair,
     bgYellowBright: CodePair
   ): BackgroundColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bgBlack")(bgBlack)
-    __obj.updateDynamic("bgBlackBright")(bgBlackBright)
-    __obj.updateDynamic("bgBlue")(bgBlue)
-    __obj.updateDynamic("bgBlueBright")(bgBlueBright)
-    __obj.updateDynamic("bgCyan")(bgCyan)
-    __obj.updateDynamic("bgCyanBright")(bgCyanBright)
-    __obj.updateDynamic("bgGreen")(bgGreen)
-    __obj.updateDynamic("bgGreenBright")(bgGreenBright)
-    __obj.updateDynamic("bgMagenta")(bgMagenta)
-    __obj.updateDynamic("bgMagentaBright")(bgMagentaBright)
-    __obj.updateDynamic("bgRed")(bgRed)
-    __obj.updateDynamic("bgRedBright")(bgRedBright)
-    __obj.updateDynamic("bgWhite")(bgWhite)
-    __obj.updateDynamic("bgWhiteBright")(bgWhiteBright)
-    __obj.updateDynamic("bgYellow")(bgYellow)
-    __obj.updateDynamic("bgYellowBright")(bgYellowBright)
+    val __obj = js.Dynamic.literal(bgBlack = bgBlack, bgBlackBright = bgBlackBright, bgBlue = bgBlue, bgBlueBright = bgBlueBright, bgCyan = bgCyan, bgCyanBright = bgCyanBright, bgGreen = bgGreen, bgGreenBright = bgGreenBright, bgMagenta = bgMagenta, bgMagentaBright = bgMagentaBright, bgRed = bgRed, bgRedBright = bgRedBright, bgWhite = bgWhite, bgWhiteBright = bgWhiteBright, bgYellow = bgYellow, bgYellowBright = bgYellowBright)
+  
     __obj.asInstanceOf[BackgroundColor]
   }
 }

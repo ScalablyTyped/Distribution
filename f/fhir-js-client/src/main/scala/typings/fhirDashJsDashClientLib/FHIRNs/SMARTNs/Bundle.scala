@@ -18,8 +18,8 @@ trait Bundle extends js.Object {
 object Bundle {
   @scala.inline
   def apply(bundle: Resource): Bundle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bundle")(bundle)
+    val __obj = js.Dynamic.literal(bundle = bundle)
+  
     __obj.asInstanceOf[Bundle]
   }
 }

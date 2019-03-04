@@ -36,25 +36,8 @@ object Ident {
     toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoMixin],
     `val`: Node
   ): Ident = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("coerce")(coerce)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("mixin")(mixin)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("operate")(operate)
-    __obj.updateDynamic("shouldCoerce")(shouldCoerce)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("toBoolean")(toBoolean)
-    __obj.updateDynamic("toExpression")(toExpression)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, isEmpty = isEmpty, lineno = lineno, mixin = mixin, name = name, nodeName = nodeName, operate = operate, shouldCoerce = shouldCoerce, string = string, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Ident]
   }
 }

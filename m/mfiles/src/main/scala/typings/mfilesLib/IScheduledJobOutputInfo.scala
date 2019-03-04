@@ -14,10 +14,8 @@ trait IScheduledJobOutputInfo extends js.Object {
 object IScheduledJobOutputInfo {
   @scala.inline
   def apply(ID: scala.Double, JobType: mfilesLib.MFilesNs.MFScheduledJobType, Message: java.lang.String): IScheduledJobOutputInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("JobType")(JobType)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(ID = ID, JobType = JobType, Message = Message)
+  
     __obj.asInstanceOf[IScheduledJobOutputInfo]
   }
 }

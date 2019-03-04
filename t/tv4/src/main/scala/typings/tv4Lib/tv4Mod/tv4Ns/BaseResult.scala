@@ -13,9 +13,8 @@ trait BaseResult extends js.Object {
 object BaseResult {
   @scala.inline
   def apply(missing: js.Array[java.lang.String], valid: scala.Boolean): BaseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("missing")(missing)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(missing = missing, valid = valid)
+  
     __obj.asInstanceOf[BaseResult]
   }
 }

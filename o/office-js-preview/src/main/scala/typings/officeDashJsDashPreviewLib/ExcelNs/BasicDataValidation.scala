@@ -47,9 +47,7 @@ object BasicDataValidation {
     operator: DataValidationOperator | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Between | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotBetween | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThan | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GreaterThanOrEqualTo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LessThanOrEqualTo,
     formula2: java.lang.String | scala.Double | Range = null
   ): BasicDataValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formula1")(formula1.asInstanceOf[js.Any])
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula1 = formula1.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     if (formula2 != null) __obj.updateDynamic("formula2")(formula2.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasicDataValidation]
   }

@@ -42,11 +42,8 @@ object APIResourceList {
     kind: java.lang.String,
     resources: js.Array[APIResource]
   ): APIResourceList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("groupVersion")(groupVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, groupVersion = groupVersion, kind = kind, resources = resources)
+  
     __obj.asInstanceOf[APIResourceList]
   }
 }

@@ -32,9 +32,7 @@ object Anon_Accepttlschannelid {
     matches: js.Array[java.lang.String],
     accept_tls_channel_id: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Accepttlschannelid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(id = id, matches = matches)
     if (!js.isUndefined(accept_tls_channel_id)) __obj.updateDynamic("accept_tls_channel_id")(accept_tls_channel_id)
     __obj.asInstanceOf[Anon_Accepttlschannelid]
   }

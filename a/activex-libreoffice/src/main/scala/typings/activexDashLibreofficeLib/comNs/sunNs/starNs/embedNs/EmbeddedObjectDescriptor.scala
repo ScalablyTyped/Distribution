@@ -44,10 +44,8 @@ object EmbeddedObjectDescriptor {
     RecoveryStorage: XStorage,
     StoreVisualReplacement: scala.Boolean
   ): EmbeddedObjectDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutplaceDispatchInterceptor")(OutplaceDispatchInterceptor)
-    __obj.updateDynamic("RecoveryStorage")(RecoveryStorage)
-    __obj.updateDynamic("StoreVisualReplacement")(StoreVisualReplacement)
+    val __obj = js.Dynamic.literal(OutplaceDispatchInterceptor = OutplaceDispatchInterceptor, RecoveryStorage = RecoveryStorage, StoreVisualReplacement = StoreVisualReplacement)
+  
     __obj.asInstanceOf[EmbeddedObjectDescriptor]
   }
 }

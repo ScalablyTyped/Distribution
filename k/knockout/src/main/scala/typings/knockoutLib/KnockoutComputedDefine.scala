@@ -23,8 +23,7 @@ object KnockoutComputedDefine {
     pure: js.UndefOr[scala.Boolean] = js.undefined,
     write: js.Function1[T, scala.Unit] = null
   ): KnockoutComputedDefine[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(read = read)
     if (!js.isUndefined(deferEvaluation)) __obj.updateDynamic("deferEvaluation")(deferEvaluation)
     if (disposeWhen != null) __obj.updateDynamic("disposeWhen")(disposeWhen)
     if (disposeWhenNodeIsRemoved != null) __obj.updateDynamic("disposeWhenNodeIsRemoved")(disposeWhenNodeIsRemoved)

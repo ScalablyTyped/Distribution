@@ -13,9 +13,8 @@ trait Anon_PropertiesValue extends js.Object {
 object Anon_PropertiesValue {
   @scala.inline
   def apply(properties: Anon_ColorConeCos, value: js.Array[_]): Anon_PropertiesValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(properties = properties, value = value)
+  
     __obj.asInstanceOf[Anon_PropertiesValue]
   }
 }

@@ -36,19 +36,8 @@ object ContainerInfo {
     State: java.lang.String,
     Status: java.lang.String
   ): ContainerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Command")(Command)
-    __obj.updateDynamic("Created")(Created)
-    __obj.updateDynamic("HostConfig")(HostConfig)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("ImageID")(ImageID)
-    __obj.updateDynamic("Labels")(Labels)
-    __obj.updateDynamic("Names")(Names)
-    __obj.updateDynamic("NetworkSettings")(NetworkSettings)
-    __obj.updateDynamic("Ports")(Ports)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Status")(Status)
+    val __obj = js.Dynamic.literal(Command = Command, Created = Created, HostConfig = HostConfig, Id = Id, Image = Image, ImageID = ImageID, Labels = Labels, Names = Names, NetworkSettings = NetworkSettings, Ports = Ports, State = State, Status = Status)
+  
     __obj.asInstanceOf[ContainerInfo]
   }
 }

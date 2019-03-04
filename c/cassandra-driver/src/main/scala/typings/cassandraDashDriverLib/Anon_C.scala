@@ -18,10 +18,8 @@ object Anon_C {
     index: scala.Double,
     order: java.lang.String
   ): Anon_C = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(c = c, index = index, order = order)
+  
     __obj.asInstanceOf[Anon_C]
   }
 }

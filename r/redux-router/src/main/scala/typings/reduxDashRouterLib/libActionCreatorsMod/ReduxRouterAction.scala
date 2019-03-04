@@ -13,8 +13,8 @@ trait ReduxRouterAction extends js.Object {
 object ReduxRouterAction {
   @scala.inline
   def apply(payload: js.Any, `type`: java.lang.String): ReduxRouterAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReduxRouterAction]
   }
 }

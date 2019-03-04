@@ -41,11 +41,8 @@ object IFieldScores {
     qRowScore: scala.Double,
     qSymbolScore: scala.Double
   ): IFieldScores = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCardinalRatio")(qCardinalRatio)
-    __obj.updateDynamic("qFieldName")(qFieldName)
-    __obj.updateDynamic("qRowScore")(qRowScore)
-    __obj.updateDynamic("qSymbolScore")(qSymbolScore)
+    val __obj = js.Dynamic.literal(qCardinalRatio = qCardinalRatio, qFieldName = qFieldName, qRowScore = qRowScore, qSymbolScore = qSymbolScore)
+  
     __obj.asInstanceOf[IFieldScores]
   }
 }

@@ -24,10 +24,7 @@ object PolygonizeOptions {
     mask: RasterBand = null,
     useFloats: js.UndefOr[scala.Boolean] = js.undefined
   ): PolygonizeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst)
-    __obj.updateDynamic("pixValField")(pixValField)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(dst = dst, pixValField = pixValField, src = src)
     if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
     if (mask != null) __obj.updateDynamic("mask")(mask)
     if (!js.isUndefined(useFloats)) __obj.updateDynamic("useFloats")(useFloats)

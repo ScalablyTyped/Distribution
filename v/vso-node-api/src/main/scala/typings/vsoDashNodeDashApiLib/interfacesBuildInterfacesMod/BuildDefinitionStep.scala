@@ -56,17 +56,8 @@ object BuildDefinitionStep {
     task: TaskDefinitionReference,
     timeoutInMinutes: scala.Double
   ): BuildDefinitionStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRun")(alwaysRun)
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("refName")(refName)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, displayName = displayName, enabled = enabled, environment = environment, inputs = inputs, refName = refName, task = task, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[BuildDefinitionStep]
   }
 }

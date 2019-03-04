@@ -39,15 +39,7 @@ object Box {
     uidvalidity: scala.Double,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): Box = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newKeywords")(newKeywords)
-    __obj.updateDynamic("permFlags")(permFlags)
-    __obj.updateDynamic("persistentUIDs")(persistentUIDs)
-    __obj.updateDynamic("uidnext")(uidnext)
-    __obj.updateDynamic("uidvalidity")(uidvalidity)
+    val __obj = js.Dynamic.literal(flags = flags, messages = messages, name = name, newKeywords = newKeywords, permFlags = permFlags, persistentUIDs = persistentUIDs, uidnext = uidnext, uidvalidity = uidvalidity)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     __obj.asInstanceOf[Box]
   }

@@ -48,21 +48,7 @@ object NavigationTransition {
     targetRouterState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState = null,
     targetSnapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot = null
   ): NavigationTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentRawUrl")(currentRawUrl)
-    __obj.updateDynamic("currentRouterState")(currentRouterState)
-    __obj.updateDynamic("currentSnapshot")(currentSnapshot)
-    __obj.updateDynamic("currentUrlTree")(currentUrlTree)
-    __obj.updateDynamic("extractedUrl")(extractedUrl)
-    __obj.updateDynamic("extras")(extras)
-    __obj.updateDynamic("guards")(guards)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("promise")(promise)
-    __obj.updateDynamic("rawUrl")(rawUrl)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("urlAfterRedirects")(urlAfterRedirects)
+    val __obj = js.Dynamic.literal(currentRawUrl = currentRawUrl, currentRouterState = currentRouterState, currentSnapshot = currentSnapshot, currentUrlTree = currentUrlTree, extractedUrl = extractedUrl, extras = extras, guards = guards, id = id, promise = promise, rawUrl = rawUrl, reject = reject, resolve = resolve, source = source, urlAfterRedirects = urlAfterRedirects)
     if (guardsResult != null) __obj.updateDynamic("guardsResult")(guardsResult.asInstanceOf[js.Any])
     if (restoredState != null) __obj.updateDynamic("restoredState")(restoredState)
     if (targetRouterState != null) __obj.updateDynamic("targetRouterState")(targetRouterState)

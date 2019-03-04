@@ -16,9 +16,8 @@ object Anon_NameValuesArray {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     values: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ): Anon_NameValuesArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_NameValuesArray]
   }
 }

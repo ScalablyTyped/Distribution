@@ -12,6 +12,6 @@ trait NimbleEmojiIndex extends js.Object {
   var emoticons: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def search(query: java.lang.String): js.Array[EmojiData] | scala.Null = js.native
   @JSName("search")
-  def `search_`(query: emojiDashMartLib.emojiDashMartLibStrings.Empty): scala.Null = js.native
+  def search_(query: emojiDashMartLib.emojiDashMartLibStrings.Empty): scala.Null = js.native
 }
 

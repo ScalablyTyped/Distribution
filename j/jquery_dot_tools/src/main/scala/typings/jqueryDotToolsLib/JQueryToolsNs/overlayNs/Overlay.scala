@@ -33,14 +33,8 @@ object Overlay {
     isOpened: js.Function0[scala.Boolean],
     load: js.Function0[Overlay]
   ): Overlay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("getClosers")(getClosers)
-    __obj.updateDynamic("getConf")(getConf)
-    __obj.updateDynamic("getOverlay")(getOverlay)
-    __obj.updateDynamic("getTrigger")(getTrigger)
-    __obj.updateDynamic("isOpened")(isOpened)
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(close = close, getClosers = getClosers, getConf = getConf, getOverlay = getOverlay, getTrigger = getTrigger, isOpened = isOpened, load = load)
+  
     __obj.asInstanceOf[Overlay]
   }
 }

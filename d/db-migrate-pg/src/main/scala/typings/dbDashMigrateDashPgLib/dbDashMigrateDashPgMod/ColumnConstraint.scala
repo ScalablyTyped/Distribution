@@ -16,9 +16,8 @@ object ColumnConstraint {
     constraints: java.lang.String,
     foreignKey: js.Function1[dbDashMigrateDashBaseLib.dbDashMigrateDashBaseMod.CallbackFunction, scala.Unit]
   ): ColumnConstraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constraints")(constraints)
-    __obj.updateDynamic("foreignKey")(foreignKey)
+    val __obj = js.Dynamic.literal(constraints = constraints, foreignKey = foreignKey)
+  
     __obj.asInstanceOf[ColumnConstraint]
   }
 }

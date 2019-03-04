@@ -14,9 +14,7 @@ trait ReporterOptions extends js.Object {
 object ReporterOptions {
   @scala.inline
   def apply(log: Logger, state: scala.Boolean, stats: webpackLib.webpackMod.Stats = null): ReporterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(log = log, state = state)
     if (stats != null) __obj.updateDynamic("stats")(stats)
     __obj.asInstanceOf[ReporterOptions]
   }

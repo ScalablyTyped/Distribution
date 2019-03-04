@@ -22,12 +22,8 @@ object IFrameworkView {
     setWindow: js.Function1[winrtLib.WindowsNs.UINs.CoreNs.CoreWindow, scala.Unit],
     uninitialize: js.Function0[scala.Unit]
   ): IFrameworkView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("setWindow")(setWindow)
-    __obj.updateDynamic("uninitialize")(uninitialize)
+    val __obj = js.Dynamic.literal(initialize = initialize, load = load, run = run, setWindow = setWindow, uninitialize = uninitialize)
+  
     __obj.asInstanceOf[IFrameworkView]
   }
 }

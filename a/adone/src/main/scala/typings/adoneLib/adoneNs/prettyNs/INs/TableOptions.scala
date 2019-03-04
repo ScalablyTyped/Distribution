@@ -24,8 +24,7 @@ object TableOptions {
     style: TableStyle = null,
     width: scala.Double | java.lang.String = null
   ): TableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(model = model)
     if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless)
     if (!js.isUndefined(countAnsiEscapeCodes)) __obj.updateDynamic("countAnsiEscapeCodes")(countAnsiEscapeCodes)
     if (!js.isUndefined(noHeader)) __obj.updateDynamic("noHeader")(noHeader)

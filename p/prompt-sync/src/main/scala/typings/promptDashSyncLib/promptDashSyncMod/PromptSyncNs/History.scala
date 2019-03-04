@@ -30,16 +30,8 @@ object History {
     reset: js.Function0[scala.Unit],
     save: js.Function0[scala.Unit]
   ): History = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atEnd")(atEnd)
-    __obj.updateDynamic("atPenultimate")(atPenultimate)
-    __obj.updateDynamic("atStart")(atStart)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("pastEnd")(pastEnd)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(atEnd = atEnd, atPenultimate = atPenultimate, atStart = atStart, next = next, pastEnd = pastEnd, prev = prev, push = push, reset = reset, save = save)
+  
     __obj.asInstanceOf[History]
   }
 }

@@ -62,14 +62,8 @@ object XBitmap {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBitmap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getScaledBitmap")(getScaledBitmap)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("hasAlpha")(hasAlpha)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Size = Size, acquire = acquire, getScaledBitmap = getScaledBitmap, getSize = getSize, hasAlpha = hasAlpha, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBitmap]
   }
 }

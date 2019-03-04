@@ -18,10 +18,8 @@ object ChildProps {
     scrollToColumn: scala.Double,
     scrollToRow: scala.Double
   ): ChildProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSectionRendered")(onSectionRendered)
-    __obj.updateDynamic("scrollToColumn")(scrollToColumn)
-    __obj.updateDynamic("scrollToRow")(scrollToRow)
+    val __obj = js.Dynamic.literal(onSectionRendered = onSectionRendered, scrollToColumn = scrollToColumn, scrollToRow = scrollToRow)
+  
     __obj.asInstanceOf[ChildProps]
   }
 }

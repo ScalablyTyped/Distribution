@@ -22,12 +22,8 @@ object Anon_Description {
     serial: java.lang.String,
     udn: java.lang.String
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("udn")(udn)
+    val __obj = js.Dynamic.literal(description = description, name = name, number = number, serial = serial, udn = udn)
+  
     __obj.asInstanceOf[Anon_Description]
   }
 }

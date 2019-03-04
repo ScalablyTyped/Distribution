@@ -28,15 +28,8 @@ object TerrainMesh {
     stride: scala.Double,
     vertices: stdLib.Float32Array
   ): TerrainMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingSphere3D")(boundingSphere3D)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
-    __obj.updateDynamic("maximumHeight")(maximumHeight)
-    __obj.updateDynamic("minimumHeight")(minimumHeight)
-    __obj.updateDynamic("occludeePointInScaledSpace")(occludeePointInScaledSpace)
-    __obj.updateDynamic("stride")(stride)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(boundingSphere3D = boundingSphere3D, center = center, indices = indices.asInstanceOf[js.Any], maximumHeight = maximumHeight, minimumHeight = minimumHeight, occludeePointInScaledSpace = occludeePointInScaledSpace, stride = stride, vertices = vertices)
+  
     __obj.asInstanceOf[TerrainMesh]
   }
 }

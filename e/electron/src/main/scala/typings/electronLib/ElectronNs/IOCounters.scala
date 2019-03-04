@@ -43,13 +43,8 @@ object IOCounters {
     writeOperationCount: scala.Double,
     writeTransferCount: scala.Double
   ): IOCounters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("otherOperationCount")(otherOperationCount)
-    __obj.updateDynamic("otherTransferCount")(otherTransferCount)
-    __obj.updateDynamic("readOperationCount")(readOperationCount)
-    __obj.updateDynamic("readTransferCount")(readTransferCount)
-    __obj.updateDynamic("writeOperationCount")(writeOperationCount)
-    __obj.updateDynamic("writeTransferCount")(writeTransferCount)
+    val __obj = js.Dynamic.literal(otherOperationCount = otherOperationCount, otherTransferCount = otherTransferCount, readOperationCount = readOperationCount, readTransferCount = readTransferCount, writeOperationCount = writeOperationCount, writeTransferCount = writeTransferCount)
+  
     __obj.asInstanceOf[IOCounters]
   }
 }

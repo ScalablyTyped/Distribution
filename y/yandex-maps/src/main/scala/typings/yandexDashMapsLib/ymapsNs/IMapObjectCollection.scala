@@ -22,13 +22,8 @@ object IMapObjectCollection {
     options: IOptionManager,
     remove: js.Function1[js.Object, IMapObjectCollection]
   ): IMapObjectCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getIterator")(getIterator)
-    __obj.updateDynamic("getMap")(getMap)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, events = events, getIterator = getIterator, getMap = getMap, options = options, remove = remove)
+  
     __obj.asInstanceOf[IMapObjectCollection]
   }
 }

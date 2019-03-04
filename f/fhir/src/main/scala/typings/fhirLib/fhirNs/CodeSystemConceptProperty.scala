@@ -86,8 +86,7 @@ object CodeSystemConceptProperty {
     valueInteger: js.UndefOr[integer] = js.undefined,
     valueString: java.lang.String = null
   ): CodeSystemConceptProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

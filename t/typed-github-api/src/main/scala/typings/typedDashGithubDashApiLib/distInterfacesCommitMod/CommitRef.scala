@@ -20,11 +20,8 @@ object CommitRef {
     repository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.RepositoryRef,
     sha: java.lang.String
   ): CommitRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("loadGitAsync")(loadGitAsync)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("sha")(sha)
+    val __obj = js.Dynamic.literal(loadAsync = loadAsync, loadGitAsync = loadGitAsync, repository = repository, sha = sha)
+  
     __obj.asInstanceOf[CommitRef]
   }
 }

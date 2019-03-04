@@ -24,13 +24,8 @@ object Anon_Age {
     nickname: java.lang.String,
     profile_image: java.lang.String
   ): Anon_Age = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("age")(age)
-    __obj.updateDynamic("birthday")(birthday)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("profile_image")(profile_image)
+    val __obj = js.Dynamic.literal(age = age, birthday = birthday, email = email, id = id, nickname = nickname, profile_image = profile_image)
+  
     __obj.asInstanceOf[Anon_Age]
   }
 }

@@ -24,13 +24,8 @@ object IConfigurationOptions {
     trickleRate: scala.Double,
     trickleSpeed: scala.Double
   ): IConfigurationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ease")(ease)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("trickleRate")(trickleRate)
-    __obj.updateDynamic("trickleSpeed")(trickleSpeed)
+    val __obj = js.Dynamic.literal(ease = ease, minimum = minimum, speed = speed, template = template, trickleRate = trickleRate, trickleSpeed = trickleSpeed)
+  
     __obj.asInstanceOf[IConfigurationOptions]
   }
 }

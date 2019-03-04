@@ -130,9 +130,7 @@ object IChargeCreationOptions {
     statement_descriptor: java.lang.String = null,
     transfer_group: java.lang.String = null
   ): IChargeCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
     if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
     if (customer != null) __obj.updateDynamic("customer")(customer)

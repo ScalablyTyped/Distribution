@@ -31,19 +31,8 @@ object Command {
     respondTimeout: js.Function1[/* repeated */ js.Any, js.Any],
     `type`: java.lang.String
   ): Command = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("havePermission")(havePermission)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isFrom")(isFrom)
-    __obj.updateDynamic("mentions")(mentions)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("muted")(muted)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("respond")(respond)
-    __obj.updateDynamic("respondTimeout")(respondTimeout)
+    val __obj = js.Dynamic.literal(args = args, command = command, from = from, havePermission = havePermission, id = id, isFrom = isFrom, mentions = mentions, message = message, muted = muted, raw = raw, respond = respond, respondTimeout = respondTimeout)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Command]
   }
 }

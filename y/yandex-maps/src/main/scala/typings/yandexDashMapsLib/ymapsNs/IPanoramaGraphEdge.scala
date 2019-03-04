@@ -12,8 +12,8 @@ trait IPanoramaGraphEdge extends js.Object {
 object IPanoramaGraphEdge {
   @scala.inline
   def apply(getEndNodes: js.Function0[js.Array[IPanoramaGraphNode]]): IPanoramaGraphEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEndNodes")(getEndNodes)
+    val __obj = js.Dynamic.literal(getEndNodes = getEndNodes)
+  
     __obj.asInstanceOf[IPanoramaGraphEdge]
   }
 }

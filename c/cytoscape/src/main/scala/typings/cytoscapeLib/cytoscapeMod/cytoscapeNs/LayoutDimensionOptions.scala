@@ -16,8 +16,8 @@ trait LayoutDimensionOptions extends js.Object {
 object LayoutDimensionOptions {
   @scala.inline
   def apply(nodeDimensionsIncludeLabels: scala.Boolean): LayoutDimensionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
+    val __obj = js.Dynamic.literal(nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels)
+  
     __obj.asInstanceOf[LayoutDimensionOptions]
   }
 }

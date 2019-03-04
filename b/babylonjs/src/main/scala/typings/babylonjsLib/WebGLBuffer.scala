@@ -14,10 +14,8 @@ trait WebGLBuffer extends js.Object {
 object WebGLBuffer {
   @scala.inline
   def apply(capacity: scala.Double, is32Bits: scala.Boolean, references: scala.Double): WebGLBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("is32Bits")(is32Bits)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(capacity = capacity, is32Bits = is32Bits, references = references)
+  
     __obj.asInstanceOf[WebGLBuffer]
   }
 }

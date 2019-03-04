@@ -22,8 +22,7 @@ object Request {
     headers: Header = null,
     method: HttpMethods = null
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body)
     if (credential != null) __obj.updateDynamic("credential")(credential)
     if (headers != null) __obj.updateDynamic("headers")(headers)

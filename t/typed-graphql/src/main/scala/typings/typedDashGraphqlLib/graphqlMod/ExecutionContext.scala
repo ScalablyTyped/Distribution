@@ -25,13 +25,8 @@ object ExecutionContext {
     schema: GraphQLSchema,
     variableValues: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): ExecutionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("fragments")(fragments)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("rootValue")(rootValue)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("variableValues")(variableValues)
+    val __obj = js.Dynamic.literal(errors = errors, fragments = fragments, operation = operation, rootValue = rootValue, schema = schema, variableValues = variableValues)
+  
     __obj.asInstanceOf[ExecutionContext]
   }
 }

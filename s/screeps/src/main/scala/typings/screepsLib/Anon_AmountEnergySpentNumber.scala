@@ -14,9 +14,8 @@ trait Anon_AmountEnergySpentNumber extends js.Object {
 object Anon_AmountEnergySpentNumber {
   @scala.inline
   def apply(amount: scala.Double, energySpent: scala.Double): Anon_AmountEnergySpentNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("energySpent")(energySpent)
+    val __obj = js.Dynamic.literal(amount = amount, energySpent = energySpent)
+  
     __obj.asInstanceOf[Anon_AmountEnergySpentNumber]
   }
 }

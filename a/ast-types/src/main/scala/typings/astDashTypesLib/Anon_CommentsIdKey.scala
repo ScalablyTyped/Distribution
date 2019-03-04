@@ -26,10 +26,7 @@ object Anon_CommentsIdKey {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): Anon_CommentsIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, key = key, value = value)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])

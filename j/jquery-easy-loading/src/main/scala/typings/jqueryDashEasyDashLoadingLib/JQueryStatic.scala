@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(Loading: jqueryDashEasyDashLoadingLib.JQueryEasyLoadingNs.Static): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Loading")(Loading)
+    val __obj = js.Dynamic.literal(Loading = Loading)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

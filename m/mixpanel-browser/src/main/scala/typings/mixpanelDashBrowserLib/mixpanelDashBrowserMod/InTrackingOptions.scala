@@ -23,15 +23,8 @@ object InTrackingOptions {
     track_event_name: java.lang.String,
     track_event_properties: Dict
   ): InTrackingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie_expiration")(cookie_expiration)
-    __obj.updateDynamic("cookie_prefix")(cookie_prefix)
-    __obj.updateDynamic("cross_subdomain_cookie")(cross_subdomain_cookie)
-    __obj.updateDynamic("persistence_type")(persistence_type)
-    __obj.updateDynamic("secure_cookie")(secure_cookie)
-    __obj.updateDynamic("track")(track)
-    __obj.updateDynamic("track_event_name")(track_event_name)
-    __obj.updateDynamic("track_event_properties")(track_event_properties)
+    val __obj = js.Dynamic.literal(cookie_expiration = cookie_expiration, cookie_prefix = cookie_prefix, cross_subdomain_cookie = cross_subdomain_cookie, persistence_type = persistence_type, secure_cookie = secure_cookie, track = track, track_event_name = track_event_name, track_event_properties = track_event_properties)
+  
     __obj.asInstanceOf[InTrackingOptions]
   }
 }

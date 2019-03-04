@@ -16,8 +16,7 @@ trait BaseLayoutOptions extends LayoutOptions {
 object BaseLayoutOptions {
   @scala.inline
   def apply(name: java.lang.String, ready: LayoutHandler = null, stop: LayoutHandler = null): BaseLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (ready != null) __obj.updateDynamic("ready")(ready)
     if (stop != null) __obj.updateDynamic("stop")(stop)
     __obj.asInstanceOf[BaseLayoutOptions]

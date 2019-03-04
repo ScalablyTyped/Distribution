@@ -23,8 +23,7 @@ object GetOpenRevisions {
     fetch: pouchdbDashCoreLib.Fetch = null,
     revs: js.UndefOr[scala.Boolean] = js.undefined
   ): GetOpenRevisions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open_revs")(open_revs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(open_revs = open_revs.asInstanceOf[js.Any])
     if (fetch != null) __obj.updateDynamic("fetch")(fetch)
     if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
     __obj.asInstanceOf[GetOpenRevisions]

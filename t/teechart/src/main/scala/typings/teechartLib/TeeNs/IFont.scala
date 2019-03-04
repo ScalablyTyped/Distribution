@@ -32,17 +32,8 @@ object IFont {
     style: java.lang.String,
     textAlign: java.lang.String
   ): IFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseLine")(baseLine)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("shadow")(shadow)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("textAlign")(textAlign)
+    val __obj = js.Dynamic.literal(baseLine = baseLine, chart = chart, fill = fill, getSize = getSize, gradient = gradient, setSize = setSize, shadow = shadow, stroke = stroke, style = style, textAlign = textAlign)
+  
     __obj.asInstanceOf[IFont]
   }
 }

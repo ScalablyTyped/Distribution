@@ -48,22 +48,8 @@ object Identity {
     subjectDescriptor: java.lang.String,
     uniqueUserId: scala.Double
   ): Identity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customDisplayName")(customDisplayName)
-    __obj.updateDynamic("descriptor")(descriptor)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isContainer")(isContainer)
-    __obj.updateDynamic("masterId")(masterId)
-    __obj.updateDynamic("memberIds")(memberIds)
-    __obj.updateDynamic("memberOf")(memberOf)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("metaTypeId")(metaTypeId)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("providerDisplayName")(providerDisplayName)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("subjectDescriptor")(subjectDescriptor)
-    __obj.updateDynamic("uniqueUserId")(uniqueUserId)
+    val __obj = js.Dynamic.literal(customDisplayName = customDisplayName, descriptor = descriptor, id = id, isActive = isActive, isContainer = isContainer, masterId = masterId, memberIds = memberIds, memberOf = memberOf, members = members, metaTypeId = metaTypeId, properties = properties, providerDisplayName = providerDisplayName, resourceVersion = resourceVersion, subjectDescriptor = subjectDescriptor, uniqueUserId = uniqueUserId)
+  
     __obj.asInstanceOf[Identity]
   }
 }

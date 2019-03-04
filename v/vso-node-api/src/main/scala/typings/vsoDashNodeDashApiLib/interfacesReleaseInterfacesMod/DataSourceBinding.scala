@@ -26,14 +26,8 @@ object DataSourceBinding {
     resultTemplate: java.lang.String,
     target: java.lang.String
   ): DataSourceBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSourceName")(dataSourceName)
-    __obj.updateDynamic("endpointId")(endpointId)
-    __obj.updateDynamic("endpointUrl")(endpointUrl)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("resultSelector")(resultSelector)
-    __obj.updateDynamic("resultTemplate")(resultTemplate)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(dataSourceName = dataSourceName, endpointId = endpointId, endpointUrl = endpointUrl, parameters = parameters, resultSelector = resultSelector, resultTemplate = resultTemplate, target = target)
+  
     __obj.asInstanceOf[DataSourceBinding]
   }
 }

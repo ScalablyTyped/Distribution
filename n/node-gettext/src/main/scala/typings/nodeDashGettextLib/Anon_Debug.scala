@@ -12,8 +12,8 @@ trait Anon_Debug extends js.Object {
 object Anon_Debug {
   @scala.inline
   def apply(debug: scala.Boolean): Anon_Debug = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(debug = debug)
+  
     __obj.asInstanceOf[Anon_Debug]
   }
 }

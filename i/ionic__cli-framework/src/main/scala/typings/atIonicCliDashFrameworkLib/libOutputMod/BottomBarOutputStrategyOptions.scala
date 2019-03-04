@@ -20,8 +20,7 @@ object BottomBarOutputStrategyOptions {
     input: nodeLib.NodeJSNs.ReadableStream = null,
     output: nodeLib.NodeJSNs.WritableStream = null
   ): BottomBarOutputStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomBar")(BottomBar)
+    val __obj = js.Dynamic.literal(BottomBar = BottomBar)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (input != null) __obj.updateDynamic("input")(input)
     if (output != null) __obj.updateDynamic("output")(output)

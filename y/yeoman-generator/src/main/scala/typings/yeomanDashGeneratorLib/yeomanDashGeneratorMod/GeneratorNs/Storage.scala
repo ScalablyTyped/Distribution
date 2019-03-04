@@ -24,13 +24,8 @@ object Storage {
     save: js.Function0[scala.Unit],
     set: js.Function2[java.lang.String, js.Any, js.Any]
   ): Storage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(defaults = defaults, delete = delete, get = get, getAll = getAll, save = save, set = set)
+  
     __obj.asInstanceOf[Storage]
   }
 }

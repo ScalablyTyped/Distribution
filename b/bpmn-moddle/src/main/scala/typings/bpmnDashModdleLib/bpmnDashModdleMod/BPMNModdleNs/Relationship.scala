@@ -26,12 +26,8 @@ object Relationship {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): Relationship = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal($type = $type, direction = direction, id = id, source = source, target = target)
+    __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

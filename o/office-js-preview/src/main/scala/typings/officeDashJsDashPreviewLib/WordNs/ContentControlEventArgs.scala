@@ -37,9 +37,8 @@ object ContentControlEventArgs {
     contentControl: ContentControl,
     eventType: EventType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlSelectionChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlDataChanged | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ContentControlAdded
   ): ContentControlEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentControl")(contentControl)
-    __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentControl = contentControl, eventType = eventType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ContentControlEventArgs]
   }
 }

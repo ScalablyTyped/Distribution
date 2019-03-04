@@ -22,12 +22,8 @@ object Query {
     read: js.Any,
     selector: js.Any
   ): Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descendants")(descendants)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("isViewQuery")(isViewQuery)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(descendants = descendants, first = first, isViewQuery = isViewQuery, read = read, selector = selector)
+  
     __obj.asInstanceOf[Query]
   }
 }

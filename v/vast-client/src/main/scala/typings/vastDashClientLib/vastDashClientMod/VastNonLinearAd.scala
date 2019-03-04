@@ -44,16 +44,7 @@ object VastNonLinearAd {
     staticResource: java.lang.String = null,
     `type`: java.lang.String = null
   ): VastNonLinearAd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiFramework")(apiFramework)
-    __obj.updateDynamic("expandedHeight")(expandedHeight)
-    __obj.updateDynamic("expandedWidth")(expandedWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maintainAspectRatio")(maintainAspectRatio)
-    __obj.updateDynamic("minSuggestedDuration")(minSuggestedDuration)
-    __obj.updateDynamic("nonLinearClickTrackingURLTemplates")(nonLinearClickTrackingURLTemplates)
-    __obj.updateDynamic("scalable")(scalable)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(apiFramework = apiFramework, expandedHeight = expandedHeight, expandedWidth = expandedWidth, height = height, maintainAspectRatio = maintainAspectRatio, minSuggestedDuration = minSuggestedDuration, nonLinearClickTrackingURLTemplates = nonLinearClickTrackingURLTemplates, scalable = scalable, width = width)
     if (adParameters != null) __obj.updateDynamic("adParameters")(adParameters)
     if (htmlResource != null) __obj.updateDynamic("htmlResource")(htmlResource)
     if (id != null) __obj.updateDynamic("id")(id)

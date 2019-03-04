@@ -33,12 +33,8 @@ object XLayoutManagerEventBroadcaster {
     release: js.Function0[scala.Unit],
     removeLayoutManagerEventListener: js.Function1[XLayoutManagerListener, scala.Unit]
   ): XLayoutManagerEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addLayoutManagerEventListener")(addLayoutManagerEventListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeLayoutManagerEventListener")(removeLayoutManagerEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addLayoutManagerEventListener = addLayoutManagerEventListener, queryInterface = queryInterface, release = release, removeLayoutManagerEventListener = removeLayoutManagerEventListener)
+  
     __obj.asInstanceOf[XLayoutManagerEventBroadcaster]
   }
 }

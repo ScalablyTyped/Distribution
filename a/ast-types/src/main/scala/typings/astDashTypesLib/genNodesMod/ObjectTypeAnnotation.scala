@@ -36,12 +36,8 @@ object ObjectTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.ObjectTypeAnnotation,
     inexact: js.UndefOr[scala.Boolean] = js.undefined
   ): ObjectTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("callProperties")(callProperties)
-    __obj.updateDynamic("exact")(exact)
-    __obj.updateDynamic("indexers")(indexers)
-    __obj.updateDynamic("internalSlots")(internalSlots)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(callProperties = callProperties, exact = exact, indexers = indexers, internalSlots = internalSlots, properties = properties)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact)
     __obj.asInstanceOf[ObjectTypeAnnotation]
   }

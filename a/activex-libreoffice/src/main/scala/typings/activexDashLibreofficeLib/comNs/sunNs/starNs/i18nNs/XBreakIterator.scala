@@ -382,30 +382,8 @@ object XBreakIterator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBreakIterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("beginOfCharBlock")(beginOfCharBlock)
-    __obj.updateDynamic("beginOfScript")(beginOfScript)
-    __obj.updateDynamic("beginOfSentence")(beginOfSentence)
-    __obj.updateDynamic("endOfCharBlock")(endOfCharBlock)
-    __obj.updateDynamic("endOfScript")(endOfScript)
-    __obj.updateDynamic("endOfSentence")(endOfSentence)
-    __obj.updateDynamic("getLineBreak")(getLineBreak)
-    __obj.updateDynamic("getScriptType")(getScriptType)
-    __obj.updateDynamic("getWordBoundary")(getWordBoundary)
-    __obj.updateDynamic("getWordType")(getWordType)
-    __obj.updateDynamic("isBeginWord")(isBeginWord)
-    __obj.updateDynamic("isEndWord")(isEndWord)
-    __obj.updateDynamic("nextCharBlock")(nextCharBlock)
-    __obj.updateDynamic("nextCharacters")(nextCharacters)
-    __obj.updateDynamic("nextScript")(nextScript)
-    __obj.updateDynamic("nextWord")(nextWord)
-    __obj.updateDynamic("previousCharBlock")(previousCharBlock)
-    __obj.updateDynamic("previousCharacters")(previousCharacters)
-    __obj.updateDynamic("previousScript")(previousScript)
-    __obj.updateDynamic("previousWord")(previousWord)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCharBlock = beginOfCharBlock, beginOfScript = beginOfScript, beginOfSentence = beginOfSentence, endOfCharBlock = endOfCharBlock, endOfScript = endOfScript, endOfSentence = endOfSentence, getLineBreak = getLineBreak, getScriptType = getScriptType, getWordBoundary = getWordBoundary, getWordType = getWordType, isBeginWord = isBeginWord, isEndWord = isEndWord, nextCharBlock = nextCharBlock, nextCharacters = nextCharacters, nextScript = nextScript, nextWord = nextWord, previousCharBlock = previousCharBlock, previousCharacters = previousCharacters, previousScript = previousScript, previousWord = previousWord, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBreakIterator]
   }
 }

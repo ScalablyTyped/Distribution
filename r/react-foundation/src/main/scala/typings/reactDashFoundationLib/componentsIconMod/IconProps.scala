@@ -296,8 +296,7 @@ object IconProps {
     HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
     prefix: java.lang.String = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

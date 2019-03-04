@@ -25,14 +25,8 @@ object TransformationDescriptor {
     string: java.lang.String,
     toString: js.Function0[java.lang.String]
   ): TransformationDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diffMatrix")(diffMatrix)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("globalMatrix")(globalMatrix)
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("localMatrix")(localMatrix)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(diffMatrix = diffMatrix, global = global, globalMatrix = globalMatrix, local = local, localMatrix = localMatrix, string = string, toString = toString)
+  
     __obj.asInstanceOf[TransformationDescriptor]
   }
 }

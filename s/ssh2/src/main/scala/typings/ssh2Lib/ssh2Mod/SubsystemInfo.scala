@@ -13,8 +13,8 @@ trait SubsystemInfo extends js.Object {
 object SubsystemInfo {
   @scala.inline
   def apply(name: java.lang.String): SubsystemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[SubsystemInfo]
   }
 }

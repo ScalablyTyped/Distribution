@@ -53,14 +53,8 @@ object Rescore {
     toJSON: js.Function0[js.Any],
     windowSize: js.Function1[stdLib.Number, Rescore]
   ): Rescore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("queryWeight")(queryWeight)
-    __obj.updateDynamic("rescoreQuery")(rescoreQuery)
-    __obj.updateDynamic("rescoreQueryWeight")(rescoreQueryWeight)
-    __obj.updateDynamic("scoreMode")(scoreMode)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("windowSize")(windowSize)
+    val __obj = js.Dynamic.literal(_type = _type, queryWeight = queryWeight, rescoreQuery = rescoreQuery, rescoreQueryWeight = rescoreQueryWeight, scoreMode = scoreMode, toJSON = toJSON, windowSize = windowSize)
+  
     __obj.asInstanceOf[Rescore]
   }
 }

@@ -26,14 +26,8 @@ object Control_BeforeDragOver_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): Control_BeforeDragOver_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("DragState")(DragState)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Data = Data, DragState = DragState, Effect = Effect, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[Control_BeforeDragOver_Parameter]
   }
 }

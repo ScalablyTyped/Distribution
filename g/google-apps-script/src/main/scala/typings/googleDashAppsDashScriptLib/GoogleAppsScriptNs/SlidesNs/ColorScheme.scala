@@ -16,9 +16,8 @@ object ColorScheme {
     getConcreteColor: js.Function1[ThemeColorType, Color],
     getThemeColors: js.Function0[js.Array[ThemeColorType]]
   ): ColorScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConcreteColor")(getConcreteColor)
-    __obj.updateDynamic("getThemeColors")(getThemeColors)
+    val __obj = js.Dynamic.literal(getConcreteColor = getConcreteColor, getThemeColors = getThemeColors)
+  
     __obj.asInstanceOf[ColorScheme]
   }
 }

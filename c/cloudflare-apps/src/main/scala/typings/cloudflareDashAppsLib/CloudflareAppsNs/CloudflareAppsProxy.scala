@@ -14,10 +14,8 @@ trait CloudflareAppsProxy extends js.Object {
 object CloudflareAppsProxy {
   @scala.inline
   def apply(embedSiteId: java.lang.String, hasRocketEmbed: scala.Boolean, originalURL: OriginalURL): CloudflareAppsProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("embedSiteId")(embedSiteId)
-    __obj.updateDynamic("hasRocketEmbed")(hasRocketEmbed)
-    __obj.updateDynamic("originalURL")(originalURL)
+    val __obj = js.Dynamic.literal(embedSiteId = embedSiteId, hasRocketEmbed = hasRocketEmbed, originalURL = originalURL)
+  
     __obj.asInstanceOf[CloudflareAppsProxy]
   }
 }

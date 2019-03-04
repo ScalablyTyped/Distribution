@@ -19,9 +19,8 @@ trait ExtensionUrls extends js.Object {
 object ExtensionUrls {
   @scala.inline
   def apply(extensionIcon: java.lang.String, extensionPage: java.lang.String): ExtensionUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensionIcon")(extensionIcon)
-    __obj.updateDynamic("extensionPage")(extensionPage)
+    val __obj = js.Dynamic.literal(extensionIcon = extensionIcon, extensionPage = extensionPage)
+  
     __obj.asInstanceOf[ExtensionUrls]
   }
 }

@@ -30,13 +30,8 @@ object CacheStatisticsObject {
     sets: scala.Double,
     stales: scala.Double
   ): CacheStatisticsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("generates")(generates)
-    __obj.updateDynamic("gets")(gets)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("sets")(sets)
-    __obj.updateDynamic("stales")(stales)
+    val __obj = js.Dynamic.literal(errors = errors, generates = generates, gets = gets, hits = hits, sets = sets, stales = stales)
+  
     __obj.asInstanceOf[CacheStatisticsObject]
   }
 }

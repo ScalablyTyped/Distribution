@@ -26,9 +26,7 @@ object Anon_ClientAwareness {
     queryDeduplication: js.UndefOr[scala.Boolean] = js.undefined,
     ssrMode: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ClientAwareness[TStore] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(link = link, store = store)
     if (clientAwareness != null) __obj.updateDynamic("clientAwareness")(clientAwareness)
     if (localState != null) __obj.updateDynamic("localState")(localState)
     if (onBroadcast != null) __obj.updateDynamic("onBroadcast")(onBroadcast)

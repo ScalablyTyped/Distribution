@@ -17,9 +17,8 @@ object AxisTitleContext {
     axis: atOracleOraclejetLib.atOracleOraclejetLibStrings.xAxis | atOracleOraclejetLib.atOracleOraclejetLibStrings.yAxis | atOracleOraclejetLib.atOracleOraclejetLibStrings.y2Axis,
     subId: java.lang.String
   ): AxisTitleContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], subId = subId)
+  
     __obj.asInstanceOf[AxisTitleContext]
   }
 }

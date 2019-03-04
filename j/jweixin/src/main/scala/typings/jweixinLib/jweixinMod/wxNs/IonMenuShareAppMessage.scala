@@ -41,13 +41,7 @@ object IonMenuShareAppMessage {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     `type`: jweixinLib.jweixinLibStrings.music | jweixinLib.jweixinLibStrings.videoBACKSLASHu6216link | jweixinLib.jweixinLibStrings.link = null
   ): IonMenuShareAppMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("imgUrl")(imgUrl)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cancel = cancel, desc = desc, imgUrl = imgUrl, link = link, success = success, title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (dataUrl != null) __obj.updateDynamic("dataUrl")(dataUrl)
     if (fail != null) __obj.updateDynamic("fail")(fail)

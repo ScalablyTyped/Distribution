@@ -12,8 +12,8 @@ trait Anon_KeyVariablesString extends js.Object {
 object Anon_KeyVariablesString {
   @scala.inline
   def apply(variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Anon_KeyVariablesString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(variables = variables)
+  
     __obj.asInstanceOf[Anon_KeyVariablesString]
   }
 }

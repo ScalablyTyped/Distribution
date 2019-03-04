@@ -12,8 +12,8 @@ trait Anon_Dispatch[Ext1] extends js.Object {
 object Anon_Dispatch {
   @scala.inline
   def apply[Ext1](dispatch: Ext1): Anon_Dispatch[Ext1] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dispatch = dispatch.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Dispatch[Ext1]]
   }
 }

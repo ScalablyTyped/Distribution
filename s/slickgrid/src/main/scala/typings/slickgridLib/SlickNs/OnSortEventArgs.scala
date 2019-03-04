@@ -23,10 +23,7 @@ object OnSortEventArgs {
     sortCol: Column[T] = null,
     sortCols: js.Array[SortColumn[T]] = null
   ): OnSortEventArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("multiColumnSort")(multiColumnSort)
-    __obj.updateDynamic("sortAsc")(sortAsc)
+    val __obj = js.Dynamic.literal(grid = grid, multiColumnSort = multiColumnSort, sortAsc = sortAsc)
     if (sortCol != null) __obj.updateDynamic("sortCol")(sortCol)
     if (sortCols != null) __obj.updateDynamic("sortCols")(sortCols)
     __obj.asInstanceOf[OnSortEventArgs[T]]

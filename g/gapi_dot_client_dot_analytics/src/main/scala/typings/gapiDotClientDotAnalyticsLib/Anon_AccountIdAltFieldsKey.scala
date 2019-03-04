@@ -45,8 +45,7 @@ object Anon_AccountIdAltFieldsKey {
     `start-index`: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
+    val __obj = js.Dynamic.literal(accountId = accountId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

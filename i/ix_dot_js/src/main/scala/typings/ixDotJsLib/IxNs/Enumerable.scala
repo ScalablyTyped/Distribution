@@ -118,7 +118,7 @@ trait Enumerable[T] extends js.Object {
   def groupBy[TKey](
     keySelector: js.Function1[/* item */ T, TKey],
     `_`: scala.Boolean,
-    `__`: scala.Boolean,
+    __ : scala.Boolean,
     comparer: EqualityComparer[TKey, TKey]
   ): Enumerable[Grouping[TKey, T]] = js.native
   // if need to set resultSelector without elementSelector

@@ -24,10 +24,8 @@ object Anon_AddEventListener {
     fetch: js.Function0[js.Promise[scala.Boolean]],
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* result */ scala.Boolean, scala.Unit], scala.Unit]
   ): Anon_AddEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, fetch = fetch, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[Anon_AddEventListener]
   }
 }

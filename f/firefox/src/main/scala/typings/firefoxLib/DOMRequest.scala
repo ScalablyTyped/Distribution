@@ -23,12 +23,8 @@ object DOMRequest {
     readyState: java.lang.String,
     result: T
   ): DOMRequest[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("onerror")(onerror)
-    __obj.updateDynamic("onsuccess")(onsuccess)
-    __obj.updateDynamic("readyState")(readyState)
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error, onerror = onerror, onsuccess = onsuccess, readyState = readyState, result = result.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DOMRequest[T]]
   }
 }

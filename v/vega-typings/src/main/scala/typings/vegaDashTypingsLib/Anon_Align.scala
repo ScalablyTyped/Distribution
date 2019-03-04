@@ -26,14 +26,8 @@ object Anon_Align {
     fontSize: scala.Double,
     text: java.lang.String
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(align = align, angle = angle, baseline = baseline, fill = fill, font = font, fontSize = fontSize, text = text)
+  
     __obj.asInstanceOf[Anon_Align]
   }
 }

@@ -94,18 +94,8 @@ object XDataSinkEncrSupport {
     setDataStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit],
     setRawStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, scala.Unit]
   ): XDataSinkEncrSupport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataStream")(DataStream)
-    __obj.updateDynamic("PlainRawStream")(PlainRawStream)
-    __obj.updateDynamic("RawStream")(RawStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataStream")(getDataStream)
-    __obj.updateDynamic("getPlainRawStream")(getPlainRawStream)
-    __obj.updateDynamic("getRawStream")(getRawStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDataStream")(setDataStream)
-    __obj.updateDynamic("setRawStream")(setRawStream)
+    val __obj = js.Dynamic.literal(DataStream = DataStream, PlainRawStream = PlainRawStream, RawStream = RawStream, acquire = acquire, getDataStream = getDataStream, getPlainRawStream = getPlainRawStream, getRawStream = getRawStream, queryInterface = queryInterface, release = release, setDataStream = setDataStream, setRawStream = setRawStream)
+  
     __obj.asInstanceOf[XDataSinkEncrSupport]
   }
 }

@@ -22,12 +22,8 @@ object SummonerDto {
     revisionDate: scala.Double,
     summonerLevel: scala.Double
   ): SummonerDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("profileIconId")(profileIconId)
-    __obj.updateDynamic("revisionDate")(revisionDate)
-    __obj.updateDynamic("summonerLevel")(summonerLevel)
+    val __obj = js.Dynamic.literal(id = id, name = name, profileIconId = profileIconId, revisionDate = revisionDate, summonerLevel = summonerLevel)
+  
     __obj.asInstanceOf[SummonerDto]
   }
 }

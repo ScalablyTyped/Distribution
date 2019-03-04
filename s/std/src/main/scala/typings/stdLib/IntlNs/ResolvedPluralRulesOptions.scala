@@ -28,14 +28,8 @@ object ResolvedPluralRulesOptions {
     pluralCategories: js.Array[java.lang.String],
     `type`: stdLib.stdLibStrings.cardinal | stdLib.stdLibStrings.ordinal
   ): ResolvedPluralRulesOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits)
-    __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits)
-    __obj.updateDynamic("minimumFractionDigits")(minimumFractionDigits)
-    __obj.updateDynamic("minimumIntegerDigits")(minimumIntegerDigits)
-    __obj.updateDynamic("minimumSignificantDigits")(minimumSignificantDigits)
-    __obj.updateDynamic("pluralCategories")(pluralCategories)
+    val __obj = js.Dynamic.literal(locale = locale, maximumFractionDigits = maximumFractionDigits, maximumSignificantDigits = maximumSignificantDigits, minimumFractionDigits = minimumFractionDigits, minimumIntegerDigits = minimumIntegerDigits, minimumSignificantDigits = minimumSignificantDigits, pluralCategories = pluralCategories)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedPluralRulesOptions]
   }
 }

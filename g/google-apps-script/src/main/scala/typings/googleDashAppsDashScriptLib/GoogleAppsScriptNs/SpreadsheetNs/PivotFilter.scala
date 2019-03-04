@@ -22,12 +22,8 @@ object PivotFilter {
     remove: js.Function0[scala.Unit],
     setFilterCriteria: js.Function1[FilterCriteria, PivotFilter]
   ): PivotFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFilterCriteria")(getFilterCriteria)
-    __obj.updateDynamic("getPivotTable")(getPivotTable)
-    __obj.updateDynamic("getSourceDataColumn")(getSourceDataColumn)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setFilterCriteria")(setFilterCriteria)
+    val __obj = js.Dynamic.literal(getFilterCriteria = getFilterCriteria, getPivotTable = getPivotTable, getSourceDataColumn = getSourceDataColumn, remove = remove, setFilterCriteria = setFilterCriteria)
+  
     __obj.asInstanceOf[PivotFilter]
   }
 }

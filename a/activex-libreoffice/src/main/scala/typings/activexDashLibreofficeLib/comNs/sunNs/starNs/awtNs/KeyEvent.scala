@@ -35,12 +35,8 @@ object KeyEvent {
     Modifiers: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): KeyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KeyChar")(KeyChar)
-    __obj.updateDynamic("KeyCode")(KeyCode)
-    __obj.updateDynamic("KeyFunc")(KeyFunc)
-    __obj.updateDynamic("Modifiers")(Modifiers)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(KeyChar = KeyChar, KeyCode = KeyCode, KeyFunc = KeyFunc, Modifiers = Modifiers, Source = Source)
+  
     __obj.asInstanceOf[KeyEvent]
   }
 }

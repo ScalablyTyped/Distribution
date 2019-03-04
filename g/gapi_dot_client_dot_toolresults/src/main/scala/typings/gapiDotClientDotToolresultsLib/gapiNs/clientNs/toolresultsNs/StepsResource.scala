@@ -102,16 +102,8 @@ object StepsResource {
     ],
     thumbnails: ThumbnailsResource
   ): StepsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getPerfMetricsSummary")(getPerfMetricsSummary)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("perfMetricsSummary")(perfMetricsSummary)
-    __obj.updateDynamic("perfSampleSeries")(perfSampleSeries)
-    __obj.updateDynamic("publishXunitXmlFiles")(publishXunitXmlFiles)
-    __obj.updateDynamic("thumbnails")(thumbnails)
+    val __obj = js.Dynamic.literal(create = create, get = get, getPerfMetricsSummary = getPerfMetricsSummary, list = list, patch = patch, perfMetricsSummary = perfMetricsSummary, perfSampleSeries = perfSampleSeries, publishXunitXmlFiles = publishXunitXmlFiles, thumbnails = thumbnails)
+  
     __obj.asInstanceOf[StepsResource]
   }
 }

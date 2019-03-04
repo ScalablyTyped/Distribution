@@ -45,10 +45,7 @@ object Anon_AltClusterId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltClusterId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterId")(clusterId)
-    __obj.updateDynamic("enterpriseId")(enterpriseId)
-    __obj.updateDynamic("pageId")(pageId)
+    val __obj = js.Dynamic.literal(clusterId = clusterId, enterpriseId = enterpriseId, pageId = pageId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

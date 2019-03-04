@@ -65,26 +65,8 @@ object XTextComponent {
     setSelection: js.Function1[Selection, scala.Unit],
     setText: js.Function1[java.lang.String, scala.Unit]
   ): XTextComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MaxTextLen")(MaxTextLen)
-    __obj.updateDynamic("SelectedText")(SelectedText)
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTextListener")(addTextListener)
-    __obj.updateDynamic("getMaxTextLen")(getMaxTextLen)
-    __obj.updateDynamic("getSelectedText")(getSelectedText)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("insertText")(insertText)
-    __obj.updateDynamic("isEditable")(isEditable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTextListener")(removeTextListener)
-    __obj.updateDynamic("setEditable")(setEditable)
-    __obj.updateDynamic("setMaxTextLen")(setMaxTextLen)
-    __obj.updateDynamic("setSelection")(setSelection)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(MaxTextLen = MaxTextLen, SelectedText = SelectedText, Selection = Selection, Text = Text, acquire = acquire, addTextListener = addTextListener, getMaxTextLen = getMaxTextLen, getSelectedText = getSelectedText, getSelection = getSelection, getText = getText, insertText = insertText, isEditable = isEditable, queryInterface = queryInterface, release = release, removeTextListener = removeTextListener, setEditable = setEditable, setMaxTextLen = setMaxTextLen, setSelection = setSelection, setText = setText)
+  
     __obj.asInstanceOf[XTextComponent]
   }
 }

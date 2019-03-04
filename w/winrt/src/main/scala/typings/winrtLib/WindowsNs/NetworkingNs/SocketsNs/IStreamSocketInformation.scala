@@ -32,17 +32,8 @@ object IStreamSocketInformation {
     roundTripTimeStatistics: RoundTripTimeStatistics,
     sessionKey: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
   ): IStreamSocketInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bandwidthStatistics")(bandwidthStatistics)
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("localPort")(localPort)
-    __obj.updateDynamic("protectionLevel")(protectionLevel)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remoteHostName")(remoteHostName)
-    __obj.updateDynamic("remotePort")(remotePort)
-    __obj.updateDynamic("remoteServiceName")(remoteServiceName)
-    __obj.updateDynamic("roundTripTimeStatistics")(roundTripTimeStatistics)
-    __obj.updateDynamic("sessionKey")(sessionKey)
+    val __obj = js.Dynamic.literal(bandwidthStatistics = bandwidthStatistics, localAddress = localAddress, localPort = localPort, protectionLevel = protectionLevel, remoteAddress = remoteAddress, remoteHostName = remoteHostName, remotePort = remotePort, remoteServiceName = remoteServiceName, roundTripTimeStatistics = roundTripTimeStatistics, sessionKey = sessionKey)
+  
     __obj.asInstanceOf[IStreamSocketInformation]
   }
 }

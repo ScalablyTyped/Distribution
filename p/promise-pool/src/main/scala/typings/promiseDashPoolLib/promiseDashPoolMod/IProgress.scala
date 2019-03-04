@@ -28,15 +28,8 @@ object IProgress {
     success: scala.Boolean,
     total: scala.Double
   ): IProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fulfilled")(fulfilled)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("rejected")(rejected)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(error = error, fulfilled = fulfilled, index = index, pending = pending, rejected = rejected, retries = retries, success = success, total = total)
+  
     __obj.asInstanceOf[IProgress]
   }
 }

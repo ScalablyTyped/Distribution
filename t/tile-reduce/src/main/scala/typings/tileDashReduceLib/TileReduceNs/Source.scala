@@ -24,8 +24,7 @@ object Source {
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null
   ): Source = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (maxrate != null) __obj.updateDynamic("maxrate")(maxrate.asInstanceOf[js.Any])
     if (mbtiles != null) __obj.updateDynamic("mbtiles")(mbtiles)

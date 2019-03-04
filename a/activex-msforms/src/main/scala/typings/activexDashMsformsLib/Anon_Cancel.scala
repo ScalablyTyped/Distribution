@@ -12,8 +12,8 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
+    val __obj = js.Dynamic.literal(Cancel = Cancel)
+  
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

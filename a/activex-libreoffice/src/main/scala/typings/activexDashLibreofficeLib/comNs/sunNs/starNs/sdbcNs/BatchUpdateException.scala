@@ -27,13 +27,8 @@ object BatchUpdateException {
     SQLState: java.lang.String,
     UpdateCounts: activexDashInteropLib.SafeArray[scala.Double]
   ): BatchUpdateException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorCode")(ErrorCode)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("NextException")(NextException)
-    __obj.updateDynamic("SQLState")(SQLState)
-    __obj.updateDynamic("UpdateCounts")(UpdateCounts)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, Message = Message, NextException = NextException, SQLState = SQLState, UpdateCounts = UpdateCounts)
+  
     __obj.asInstanceOf[BatchUpdateException]
   }
 }

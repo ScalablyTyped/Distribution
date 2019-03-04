@@ -109,8 +109,7 @@ object AdalConfig {
     redirectUri: java.lang.String = null,
     tenant: java.lang.String = null
   ): AdalConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
+    val __obj = js.Dynamic.literal(clientId = clientId)
     if (anonymousEndpoints != null) __obj.updateDynamic("anonymousEndpoints")(anonymousEndpoints)
     if (cacheLocation != null) __obj.updateDynamic("cacheLocation")(cacheLocation.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)

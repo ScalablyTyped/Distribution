@@ -18,10 +18,8 @@ object ValdrValidationResult {
     validationResults: js.Array[ValdrViolation],
     violations: js.Array[ValdrViolation]
   ): ValdrValidationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("validationResults")(validationResults)
-    __obj.updateDynamic("violations")(violations)
+    val __obj = js.Dynamic.literal(valid = valid, validationResults = validationResults, violations = violations)
+  
     __obj.asInstanceOf[ValdrValidationResult]
   }
 }

@@ -51,8 +51,7 @@ object ExplanationOfBenefitProcedure {
     procedureCodeableConcept: CodeableConcept = null,
     procedureReference: Reference = null
   ): ExplanationOfBenefitProcedure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(sequence = sequence)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

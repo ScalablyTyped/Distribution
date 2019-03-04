@@ -48,25 +48,8 @@ object Anon_AddressU {
     volume: scala.Boolean,
     width: scala.Double
   ): Anon_AddressU = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressU")(addressU)
-    __obj.updateDynamic("addressV")(addressV)
-    __obj.updateDynamic("addressW")(addressW)
-    __obj.updateDynamic("anisotropy")(anisotropy)
-    __obj.updateDynamic("compareFunc")(compareFunc)
-    __obj.updateDynamic("compareOnRead")(compareOnRead)
-    __obj.updateDynamic("cubemap")(cubemap)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("fixCubemapSeams")(fixCubemapSeams)
-    __obj.updateDynamic("flipY")(flipY)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("magFilter")(magFilter)
-    __obj.updateDynamic("minFilter")(minFilter)
-    __obj.updateDynamic("mipmaps")(mipmaps)
-    __obj.updateDynamic("rgbm")(rgbm)
-    __obj.updateDynamic("volume")(volume)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(addressU = addressU, addressV = addressV, addressW = addressW, anisotropy = anisotropy, compareFunc = compareFunc, compareOnRead = compareOnRead, cubemap = cubemap, depth = depth, fixCubemapSeams = fixCubemapSeams, flipY = flipY, format = format, height = height, magFilter = magFilter, minFilter = minFilter, mipmaps = mipmaps, rgbm = rgbm, volume = volume, width = width)
+  
     __obj.asInstanceOf[Anon_AddressU]
   }
 }

@@ -43,10 +43,8 @@ object Utils {
     chop: js.Function1[java.lang.String, java.lang.String],
     contains: js.Function3[js.Array[js.Any], js.Any, scala.Double, scala.Boolean]
   ): Utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changecase")(changecase)
-    __obj.updateDynamic("chop")(chop)
-    __obj.updateDynamic("contains")(contains)
+    val __obj = js.Dynamic.literal(changecase = changecase, chop = chop, contains = contains)
+  
     __obj.asInstanceOf[Utils]
   }
 }

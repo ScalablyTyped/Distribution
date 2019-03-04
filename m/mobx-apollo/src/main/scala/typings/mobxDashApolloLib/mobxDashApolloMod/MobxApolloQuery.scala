@@ -20,9 +20,7 @@ object MobxApolloQuery {
     data: T = null,
     error: apolloDashClientLib.apolloDashClientMod.ApolloError = null
   ): MobxApolloQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(loading = loading, ref = ref)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[MobxApolloQuery[T]]

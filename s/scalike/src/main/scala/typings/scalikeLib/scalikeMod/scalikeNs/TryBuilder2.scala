@@ -22,12 +22,8 @@ object TryBuilder2 {
     oc: js.Any,
     run: js.Function1[js.Function3[/* a */ A, /* b */ B, /* c */ C, js.Any], Try[js.Any]]
   ): TryBuilder2[A, B, C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("oa")(oa)
-    __obj.updateDynamic("ob")(ob)
-    __obj.updateDynamic("oc")(oc)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, oc = oc, run = run)
+  
     __obj.asInstanceOf[TryBuilder2[A, B, C]]
   }
 }

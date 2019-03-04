@@ -27,8 +27,7 @@ object Anon_ColorTabId {
     tabId: scala.Int | scala.Double = null,
     windowId: scala.Int | scala.Double = null
   ): Anon_ColorTabId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
     if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ColorTabId]

@@ -87,14 +87,8 @@ object Form {
     ],
     updateModel: js.Function2[atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl, js.Any, scala.Unit]
   ): Form = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addControl")(addControl)
-    __obj.updateDynamic("addFormGroup")(addFormGroup)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getFormGroup")(getFormGroup)
-    __obj.updateDynamic("removeControl")(removeControl)
-    __obj.updateDynamic("removeFormGroup")(removeFormGroup)
-    __obj.updateDynamic("updateModel")(updateModel)
+    val __obj = js.Dynamic.literal(addControl = addControl, addFormGroup = addFormGroup, getControl = getControl, getFormGroup = getFormGroup, removeControl = removeControl, removeFormGroup = removeFormGroup, updateModel = updateModel)
+  
     __obj.asInstanceOf[Form]
   }
 }

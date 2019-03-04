@@ -24,13 +24,8 @@ object IEasClientDeviceInformation {
     systemProductName: java.lang.String,
     systemSku: java.lang.String
   ): IEasClientDeviceInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("operatingSystem")(operatingSystem)
-    __obj.updateDynamic("systemManufacturer")(systemManufacturer)
-    __obj.updateDynamic("systemProductName")(systemProductName)
-    __obj.updateDynamic("systemSku")(systemSku)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName, id = id, operatingSystem = operatingSystem, systemManufacturer = systemManufacturer, systemProductName = systemProductName, systemSku = systemSku)
+  
     __obj.asInstanceOf[IEasClientDeviceInformation]
   }
 }

@@ -27,8 +27,8 @@ object SelectionRangeProvider {
       js.Any
     ]
   ): SelectionRangeProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideSelectionRanges")(provideSelectionRanges)
+    val __obj = js.Dynamic.literal(provideSelectionRanges = provideSelectionRanges)
+  
     __obj.asInstanceOf[SelectionRangeProvider]
   }
 }

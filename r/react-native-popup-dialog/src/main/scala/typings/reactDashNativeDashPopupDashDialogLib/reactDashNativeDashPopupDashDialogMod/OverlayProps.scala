@@ -28,8 +28,7 @@ object OverlayProps {
     useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPress")(onPress)
+    val __obj = js.Dynamic.literal(onPress = onPress)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

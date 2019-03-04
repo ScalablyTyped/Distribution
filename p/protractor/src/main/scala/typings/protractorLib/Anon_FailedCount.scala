@@ -13,9 +13,8 @@ trait Anon_FailedCount extends js.Object {
 object Anon_FailedCount {
   @scala.inline
   def apply(failedCount: scala.Double, specResults: js.Array[protractorLib.builtPluginsMod.SpecResult]): Anon_FailedCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failedCount")(failedCount)
-    __obj.updateDynamic("specResults")(specResults)
+    val __obj = js.Dynamic.literal(failedCount = failedCount, specResults = specResults)
+  
     __obj.asInstanceOf[Anon_FailedCount]
   }
 }

@@ -11,8 +11,8 @@ class AuthTokenProvider protected () extends js.Object {
   /**
     * @param {!FirebaseApp} app_
     */
-  def this(`app_`: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
-  var `app_`: js.Any = js.native
+  def this(app_ : atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
+  var app_ : js.Any = js.native
   def addTokenChangeListener(listener: js.Function1[/* token */ java.lang.String | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
     * @param {boolean} forceRefresh

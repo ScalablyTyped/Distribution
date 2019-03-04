@@ -12,8 +12,8 @@ trait extractorExecOpts extends js.Object {
 object extractorExecOpts {
   @scala.inline
   def apply(exec: org.scalablytyped.runtime.StringDictionary[java.lang.String]): extractorExecOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
+    val __obj = js.Dynamic.literal(exec = exec)
+  
     __obj.asInstanceOf[extractorExecOpts]
   }
 }

@@ -14,10 +14,8 @@ trait IWall extends js.Object {
 object IWall {
   @scala.inline
   def apply(bounds: IRectangle, format: IFormat, visible: scala.Boolean): IWall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(bounds = bounds, format = format, visible = visible)
+  
     __obj.asInstanceOf[IWall]
   }
 }

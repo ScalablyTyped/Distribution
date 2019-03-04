@@ -27,14 +27,8 @@ object TimelineWall {
     refresh: js.Function0[scala.Unit],
     setLabel: js.Function1[java.lang.String, scala.Unit]
   ): TimelineWall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("setLabel")(setLabel)
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getLabel = getLabel, getName = getName, getParent = getParent, getVisible = getVisible, refresh = refresh, setLabel = setLabel)
+  
     __obj.asInstanceOf[TimelineWall]
   }
 }

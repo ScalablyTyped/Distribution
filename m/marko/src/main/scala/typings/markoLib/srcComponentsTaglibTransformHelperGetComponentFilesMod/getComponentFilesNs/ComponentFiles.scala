@@ -20,8 +20,7 @@ object ComponentFiles {
     file: java.lang.String = null,
     `package`: java.lang.String = null
   ): ComponentFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(styles = styles)
     if (browserFile != null) __obj.updateDynamic("browserFile")(browserFile)
     if (file != null) __obj.updateDynamic("file")(file)
     if (`package` != null) __obj.updateDynamic("package")(`package`)

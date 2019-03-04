@@ -22,12 +22,8 @@ object Database {
     tables: js.Function0[js.Array[Table]],
     version: js.Function0[scala.Double]
   ): Database = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pragma")(pragma)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("tables")(tables)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, pragma = pragma, table = table, tables = tables, version = version)
+  
     __obj.asInstanceOf[Database]
   }
 }

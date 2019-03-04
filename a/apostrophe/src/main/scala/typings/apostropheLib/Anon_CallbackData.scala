@@ -46,9 +46,8 @@ object Anon_CallbackData {
       scala.Unit
     ]
   ): Anon_CallbackData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("form")(form)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(form = form, string = string)
+  
     __obj.asInstanceOf[Anon_CallbackData]
   }
 }

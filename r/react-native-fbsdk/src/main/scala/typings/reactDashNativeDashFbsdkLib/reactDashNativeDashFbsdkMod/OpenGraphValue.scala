@@ -13,8 +13,8 @@ trait OpenGraphValue extends js.Object {
 object OpenGraphValue {
   @scala.inline
   def apply(`type`: OpenGraphValueType, value: js.Any): OpenGraphValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OpenGraphValue]
   }
 }

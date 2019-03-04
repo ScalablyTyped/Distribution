@@ -20,8 +20,8 @@ object ISlidingWindowSource {
   def apply(
     fetchMoreItems: js.Function5[js.Any, scala.Double, js.Array[_], scala.Double, scala.Double, scala.Double]
   ): ISlidingWindowSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fetchMoreItems")(fetchMoreItems)
+    val __obj = js.Dynamic.literal(fetchMoreItems = fetchMoreItems)
+  
     __obj.asInstanceOf[ISlidingWindowSource]
   }
 }

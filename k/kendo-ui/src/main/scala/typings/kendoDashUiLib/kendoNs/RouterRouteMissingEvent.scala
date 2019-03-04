@@ -18,12 +18,8 @@ object RouterRouteMissingEvent {
     sender: Router,
     url: java.lang.String
   ): RouterRouteMissingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, params = params, preventDefault = preventDefault, sender = sender, url = url)
+  
     __obj.asInstanceOf[RouterRouteMissingEvent]
   }
 }

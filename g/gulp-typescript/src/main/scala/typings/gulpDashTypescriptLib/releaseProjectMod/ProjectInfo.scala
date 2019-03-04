@@ -30,16 +30,8 @@ object ProjectInfo {
     singleOutput: scala.Boolean,
     typescript: gulpDashTypescriptLib.Anon_08
   ): ProjectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("projectReferences")(projectReferences)
-    __obj.updateDynamic("reporter")(reporter)
-    __obj.updateDynamic("singleOutput")(singleOutput)
-    __obj.updateDynamic("typescript")(typescript)
+    val __obj = js.Dynamic.literal(compiler = compiler, directory = directory, input = input, options = options, output = output, projectReferences = projectReferences, reporter = reporter, singleOutput = singleOutput, typescript = typescript)
+  
     __obj.asInstanceOf[ProjectInfo]
   }
 }

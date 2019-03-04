@@ -105,9 +105,7 @@ object KiiThingFields {
     _thingType: java.lang.String = null,
     _vendor: java.lang.String = null
   ): KiiThingFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_password")(_password)
-    __obj.updateDynamic("_vendorThingID")(_vendorThingID)
+    val __obj = js.Dynamic.literal(_password = _password, _vendorThingID = _vendorThingID)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (_firmwareVersion != null) __obj.updateDynamic("_firmwareVersion")(_firmwareVersion)
     if (_lot != null) __obj.updateDynamic("_lot")(_lot)

@@ -25,8 +25,8 @@ object Anon_ProfilingPlugin {
   def apply(
     ProfilingPlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.debugNs.ProfilingPlugin]
   ): Anon_ProfilingPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ProfilingPlugin")(ProfilingPlugin)
+    val __obj = js.Dynamic.literal(ProfilingPlugin = ProfilingPlugin)
+  
     __obj.asInstanceOf[Anon_ProfilingPlugin]
   }
 }

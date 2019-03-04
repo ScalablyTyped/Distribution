@@ -22,12 +22,8 @@ object Anon_IncludeEventTypeInformation {
     includeUserAndGroup: scala.Double,
     none: scala.Double
   ): Anon_IncludeEventTypeInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeEventTypeInformation")(includeEventTypeInformation)
-    __obj.updateDynamic("includeGroup")(includeGroup)
-    __obj.updateDynamic("includeUser")(includeUser)
-    __obj.updateDynamic("includeUserAndGroup")(includeUserAndGroup)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(includeEventTypeInformation = includeEventTypeInformation, includeGroup = includeGroup, includeUser = includeUser, includeUserAndGroup = includeUserAndGroup, none = none)
+  
     __obj.asInstanceOf[Anon_IncludeEventTypeInformation]
   }
 }

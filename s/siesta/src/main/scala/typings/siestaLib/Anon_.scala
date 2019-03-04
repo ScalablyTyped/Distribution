@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
    // = 46,
   var ` `: scala.Double
    // = 221,
@@ -206,7 +206,7 @@ trait `Anon_` extends js.Object {
   var _backtick: scala.Double
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     ` `: scala.Double,
@@ -307,75 +307,41 @@ object `Anon_` {
     `\t`: scala.Double,
     `]`: scala.Double,
     _backtick: scala.Double
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal(` ` = ` `, _quote = _quote, `,` = `,`, `-` = `-`, `.` = `.`, `/` = `/`, `0` = `0`, `1` = `1`, `2` = `2`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`, `9` = `9`, `;` = `;`, `=` = `=`, `NUM*` = `NUM*`, `NUM+` = `NUM+`, `NUM-LOCK` = `NUM-LOCK`, `PAGE-DOWN` = `PAGE-DOWN`, `PAGE-UP` = `PAGE-UP`, `PAUSE-BREAK` = `PAUSE-BREAK`, `SCROLL-LOCK` = `SCROLL-LOCK`, `[` = `[`, `\\` = `\\`, _backslash_b = _backslash_b, `\r` = `\r`, `\t` = `\t`, `]` = `]`, _backtick = _backtick)
-    __obj.updateDynamic("A")(A)
-    __obj.updateDynamic("ALT")(ALT)
-    __obj.updateDynamic("B")(B)
-    __obj.updateDynamic("BACKSPACE")(BACKSPACE)
-    __obj.updateDynamic("C")(C)
-    __obj.updateDynamic("CAPS")(CAPS)
-    __obj.updateDynamic("CTRL")(CTRL)
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("DELETE")(DELETE)
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("E")(E)
-    __obj.updateDynamic("END")(END)
-    __obj.updateDynamic("ENTER")(ENTER)
-    __obj.updateDynamic("ESCAPE")(ESCAPE)
-    __obj.updateDynamic("F")(F)
-    __obj.updateDynamic("F1")(F1)
-    __obj.updateDynamic("F10")(F10)
-    __obj.updateDynamic("F11")(F11)
-    __obj.updateDynamic("F12")(F12)
-    __obj.updateDynamic("F2")(F2)
-    __obj.updateDynamic("F3")(F3)
-    __obj.updateDynamic("F4")(F4)
-    __obj.updateDynamic("F5")(F5)
-    __obj.updateDynamic("F6")(F6)
-    __obj.updateDynamic("F7")(F7)
-    __obj.updateDynamic("F8")(F8)
-    __obj.updateDynamic("F9")(F9)
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("H")(H)
-    __obj.updateDynamic("HOME")(HOME)
-    __obj.updateDynamic("I")(I)
-    __obj.updateDynamic("INSERT")(INSERT)
-    __obj.updateDynamic("J")(J)
-    __obj.updateDynamic("K")(K)
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("M")(M)
-    __obj.updateDynamic("N")(N)
-    __obj.updateDynamic("NUM0")(NUM0)
-    __obj.updateDynamic("NUM1")(NUM1)
-    __obj.updateDynamic("NUM2")(NUM2)
-    __obj.updateDynamic("NUM3")(NUM3)
-    __obj.updateDynamic("NUM4")(NUM4)
-    __obj.updateDynamic("NUM5")(NUM5)
-    __obj.updateDynamic("NUM6")(NUM6)
-    __obj.updateDynamic("NUM7")(NUM7)
-    __obj.updateDynamic("NUM8")(NUM8)
-    __obj.updateDynamic("NUM9")(NUM9)
-    __obj.updateDynamic("O")(O)
-    __obj.updateDynamic("P")(P)
-    __obj.updateDynamic("PRINT")(PRINT)
-    __obj.updateDynamic("Q")(Q)
-    __obj.updateDynamic("R")(R)
-    __obj.updateDynamic("RETURN")(RETURN)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("S")(S)
-    __obj.updateDynamic("SHIFT")(SHIFT)
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("TAB")(TAB)
-    __obj.updateDynamic("U")(U)
-    __obj.updateDynamic("UP")(UP)
-    __obj.updateDynamic("V")(V)
-    __obj.updateDynamic("W")(W)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
-    __obj.updateDynamic("Z")(Z)
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal(A = A, ALT = ALT, B = B, BACKSPACE = BACKSPACE, C = C, CAPS = CAPS, CTRL = CTRL, D = D, DELETE = DELETE, DOWN = DOWN, E = E, END = END, ENTER = ENTER, ESCAPE = ESCAPE, F = F, F1 = F1, F10 = F10, F11 = F11, F12 = F12, F2 = F2, F3 = F3, F4 = F4, F5 = F5, F6 = F6, F7 = F7, F8 = F8, F9 = F9, G = G, H = H, HOME = HOME, I = I, INSERT = INSERT, J = J, K = K, L = L, LEFT = LEFT, M = M, N = N, NUM0 = NUM0, NUM1 = NUM1, NUM2 = NUM2, NUM3 = NUM3, NUM4 = NUM4, NUM5 = NUM5, NUM6 = NUM6, NUM7 = NUM7, NUM8 = NUM8, NUM9 = NUM9, O = O, P = P, PRINT = PRINT, Q = Q, R = R, RETURN = RETURN, RIGHT = RIGHT, S = S, SHIFT = SHIFT, T = T, TAB = TAB, U = U, UP = UP, V = V, W = W, X = X, Y = Y, Z = Z)
+    __obj.updateDynamic(" ")(` `)
+    __obj.updateDynamic("'")(_quote)
+    __obj.updateDynamic(",")(`,`)
+    __obj.updateDynamic("-")(`-`)
+    __obj.updateDynamic(".")(`.`)
+    __obj.updateDynamic("/")(`/`)
+    __obj.updateDynamic("0")(`0`)
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("6")(`6`)
+    __obj.updateDynamic("7")(`7`)
+    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("9")(`9`)
+    __obj.updateDynamic(";")(`;`)
+    __obj.updateDynamic("=")(`=`)
+    __obj.updateDynamic("NUM*")(`NUM*`)
+    __obj.updateDynamic("NUM+")(`NUM+`)
+    __obj.updateDynamic("NUM-LOCK")(`NUM-LOCK`)
+    __obj.updateDynamic("PAGE-DOWN")(`PAGE-DOWN`)
+    __obj.updateDynamic("PAGE-UP")(`PAGE-UP`)
+    __obj.updateDynamic("PAUSE-BREAK")(`PAUSE-BREAK`)
+    __obj.updateDynamic("SCROLL-LOCK")(`SCROLL-LOCK`)
+    __obj.updateDynamic("[")(`[`)
+    __obj.updateDynamic("\\")(`\\`)
+    __obj.updateDynamic("\b")(_backslash_b)
+    __obj.updateDynamic("\r")(`\r`)
+    __obj.updateDynamic("\t")(`\t`)
+    __obj.updateDynamic("]")(`]`)
+    __obj.updateDynamic("`")(_backtick)
+    __obj.asInstanceOf[Anon_]
   }
 }
 

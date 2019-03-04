@@ -12,8 +12,8 @@ trait Anon_AllowAutomaticSemicolonInsertion extends js.Object {
 object Anon_AllowAutomaticSemicolonInsertion {
   @scala.inline
   def apply(allowAutomaticSemicolonInsertion: scala.Boolean): Anon_AllowAutomaticSemicolonInsertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowAutomaticSemicolonInsertion")(allowAutomaticSemicolonInsertion)
+    val __obj = js.Dynamic.literal(allowAutomaticSemicolonInsertion = allowAutomaticSemicolonInsertion)
+  
     __obj.asInstanceOf[Anon_AllowAutomaticSemicolonInsertion]
   }
 }

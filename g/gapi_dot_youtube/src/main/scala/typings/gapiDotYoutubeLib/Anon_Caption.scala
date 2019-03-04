@@ -47,14 +47,8 @@ object Anon_Caption {
     licensedContent: scala.Boolean,
     regionRestriction: Anon_Allowed
   ): Anon_Caption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("contentRating")(contentRating)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("dimension")(dimension)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("licensedContent")(licensedContent)
-    __obj.updateDynamic("regionRestriction")(regionRestriction)
+    val __obj = js.Dynamic.literal(caption = caption, contentRating = contentRating, definition = definition, dimension = dimension, duration = duration, licensedContent = licensedContent, regionRestriction = regionRestriction)
+  
     __obj.asInstanceOf[Anon_Caption]
   }
 }

@@ -97,21 +97,8 @@ object ASPxClientSpreadsheetPopupMenuItem {
     text: java.lang.String,
     tooltip: java.lang.String
   ): ASPxClientSpreadsheetPopupMenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetItem")(GetItem)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetItemCount")(GetItemCount)
-    __obj.updateDynamic("GetSubItems")(GetSubItems)
-    __obj.updateDynamic("beginGroup")(beginGroup)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("imageClassName")(imageClassName)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("navigateUrl")(navigateUrl)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetSubItems = GetSubItems, beginGroup = beginGroup, enabled = enabled, imageClassName = imageClassName, imageUrl = imageUrl, name = name, navigateUrl = navigateUrl, parent = parent, target = target, text = text, tooltip = tooltip)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItem]
   }
 }

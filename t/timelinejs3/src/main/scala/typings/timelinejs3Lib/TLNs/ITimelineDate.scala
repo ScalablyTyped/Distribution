@@ -46,8 +46,7 @@ object ITimelineDate {
     month: scala.Int | scala.Double = null,
     second: scala.Int | scala.Double = null
   ): ITimelineDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(year = year)
     if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
     if (display_date != null) __obj.updateDynamic("display_date")(display_date)
     if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])

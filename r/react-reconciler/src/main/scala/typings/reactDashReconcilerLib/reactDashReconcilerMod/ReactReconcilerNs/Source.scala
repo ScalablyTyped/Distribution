@@ -14,9 +14,8 @@ trait Source extends js.Object {
 object Source {
   @scala.inline
   def apply(fileName: java.lang.String, lineNumber: scala.Double): Source = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("lineNumber")(lineNumber)
+    val __obj = js.Dynamic.literal(fileName = fileName, lineNumber = lineNumber)
+  
     __obj.asInstanceOf[Source]
   }
 }

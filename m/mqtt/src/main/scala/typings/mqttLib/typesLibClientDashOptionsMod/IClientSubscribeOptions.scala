@@ -15,8 +15,8 @@ trait IClientSubscribeOptions extends js.Object {
 object IClientSubscribeOptions {
   @scala.inline
   def apply(qos: mqttDashPacketLib.mqttDashPacketMod.QoS): IClientSubscribeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qos")(qos)
+    val __obj = js.Dynamic.literal(qos = qos)
+  
     __obj.asInstanceOf[IClientSubscribeOptions]
   }
 }

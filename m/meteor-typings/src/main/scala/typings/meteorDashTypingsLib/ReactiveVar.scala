@@ -13,9 +13,8 @@ trait ReactiveVar[T] extends js.Object {
 object ReactiveVar {
   @scala.inline
   def apply[T](get: js.Function0[T], set: js.Function1[T, scala.Unit]): ReactiveVar[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, set = set)
+  
     __obj.asInstanceOf[ReactiveVar[T]]
   }
 }

@@ -44,14 +44,8 @@ object TableRelationship {
     tableAlias: java.lang.String,
     tableName: java.lang.String
   ): TableRelationship = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardinality")(cardinality)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("linkField")(linkField)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("tableAlias")(tableAlias)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(cardinality = cardinality, constructor = constructor, hasOwnProperty = hasOwnProperty, linkField = linkField, propertyIsEnumerable = propertyIsEnumerable, tableAlias = tableAlias, tableName = tableName)
+  
     __obj.asInstanceOf[TableRelationship]
   }
 }

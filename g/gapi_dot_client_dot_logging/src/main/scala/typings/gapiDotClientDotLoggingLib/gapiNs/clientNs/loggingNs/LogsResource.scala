@@ -27,9 +27,8 @@ object LogsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListLogsResponse]
     ]
   ): LogsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(delete = delete, list = list)
+  
     __obj.asInstanceOf[LogsResource]
   }
 }

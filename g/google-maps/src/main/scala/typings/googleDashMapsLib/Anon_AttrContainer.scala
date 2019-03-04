@@ -40,12 +40,8 @@ object Anon_AttrContainer {
       googlemapsLib.googleNs.mapsNs.placesNs.SearchBox
     ]
   ): Anon_AttrContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Autocomplete")(Autocomplete)
-    __obj.updateDynamic("AutocompleteService")(AutocompleteService)
-    __obj.updateDynamic("AutocompleteSessionToken")(AutocompleteSessionToken)
-    __obj.updateDynamic("PlacesService")(PlacesService)
-    __obj.updateDynamic("SearchBox")(SearchBox)
+    val __obj = js.Dynamic.literal(Autocomplete = Autocomplete, AutocompleteService = AutocompleteService, AutocompleteSessionToken = AutocompleteSessionToken, PlacesService = PlacesService, SearchBox = SearchBox)
+  
     __obj.asInstanceOf[Anon_AttrContainer]
   }
 }

@@ -72,18 +72,8 @@ object Header {
     uid: scala.Double,
     uname: java.lang.String
   ): Header = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("devmajor")(devmajor)
-    __obj.updateDynamic("devminor")(devminor)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("gname")(gname)
-    __obj.updateDynamic("linkname")(linkname)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("uname")(uname)
+    val __obj = js.Dynamic.literal(devmajor = devmajor, devminor = devminor, gid = gid, gname = gname, linkname = linkname, mode = mode, mtime = mtime, name = name, size = size, uid = uid, uname = uname)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Header]
   }
 }

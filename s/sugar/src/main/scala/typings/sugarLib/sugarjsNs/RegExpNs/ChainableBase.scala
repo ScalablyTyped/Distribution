@@ -31,16 +31,8 @@ object ChainableBase {
     toString: js.Function0[java.lang.String],
     valueOf: js.Function0[RawValue]
   ): ChainableBase[RawValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFlags")(addFlags)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("getFlags")(getFlags)
-    __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("removeFlags")(removeFlags)
-    __obj.updateDynamic("setFlags")(setFlags)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(addFlags = addFlags, exec = exec, getFlags = getFlags, raw = raw.asInstanceOf[js.Any], removeFlags = removeFlags, setFlags = setFlags, test = test, toString = toString, valueOf = valueOf)
+  
     __obj.asInstanceOf[ChainableBase[RawValue]]
   }
 }

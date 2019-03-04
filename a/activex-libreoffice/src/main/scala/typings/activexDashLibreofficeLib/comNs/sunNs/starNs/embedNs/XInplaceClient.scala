@@ -144,26 +144,8 @@ object XInplaceClient {
       scala.Unit
     ]
   ): XInplaceClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClipRectangle")(ClipRectangle)
-    __obj.updateDynamic("InplaceDispatchProvider")(InplaceDispatchProvider)
-    __obj.updateDynamic("LayoutManager")(LayoutManager)
-    __obj.updateDynamic("Placement")(Placement)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activatingInplace")(activatingInplace)
-    __obj.updateDynamic("activatingUI")(activatingUI)
-    __obj.updateDynamic("canInplaceActivate")(canInplaceActivate)
-    __obj.updateDynamic("changedPlacement")(changedPlacement)
-    __obj.updateDynamic("deactivatedInplace")(deactivatedInplace)
-    __obj.updateDynamic("deactivatedUI")(deactivatedUI)
-    __obj.updateDynamic("getClipRectangle")(getClipRectangle)
-    __obj.updateDynamic("getInplaceDispatchProvider")(getInplaceDispatchProvider)
-    __obj.updateDynamic("getLayoutManager")(getLayoutManager)
-    __obj.updateDynamic("getPlacement")(getPlacement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("scrollObject")(scrollObject)
-    __obj.updateDynamic("translateAccelerators")(translateAccelerators)
+    val __obj = js.Dynamic.literal(ClipRectangle = ClipRectangle, InplaceDispatchProvider = InplaceDispatchProvider, LayoutManager = LayoutManager, Placement = Placement, acquire = acquire, activatingInplace = activatingInplace, activatingUI = activatingUI, canInplaceActivate = canInplaceActivate, changedPlacement = changedPlacement, deactivatedInplace = deactivatedInplace, deactivatedUI = deactivatedUI, getClipRectangle = getClipRectangle, getInplaceDispatchProvider = getInplaceDispatchProvider, getLayoutManager = getLayoutManager, getPlacement = getPlacement, queryInterface = queryInterface, release = release, scrollObject = scrollObject, translateAccelerators = translateAccelerators)
+  
     __obj.asInstanceOf[XInplaceClient]
   }
 }

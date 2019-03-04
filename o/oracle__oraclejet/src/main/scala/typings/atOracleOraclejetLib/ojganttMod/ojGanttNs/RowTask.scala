@@ -43,8 +43,7 @@ object RowTask {
     svgStyle: js.Object = null,
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.normal | atOracleOraclejetLib.atOracleOraclejetLibStrings.milestone | atOracleOraclejetLib.atOracleOraclejetLibStrings.summary | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = null
   ): RowTask[K2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline)
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
     if (end != null) __obj.updateDynamic("end")(end)

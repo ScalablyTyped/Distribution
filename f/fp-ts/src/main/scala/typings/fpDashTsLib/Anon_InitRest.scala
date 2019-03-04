@@ -13,9 +13,8 @@ trait Anon_InitRest[A] extends js.Object {
 object Anon_InitRest {
   @scala.inline
   def apply[A](init: fpDashTsLib.libArrayMod.Global.Array[A], rest: fpDashTsLib.libArrayMod.Global.Array[A]): Anon_InitRest[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("rest")(rest)
+    val __obj = js.Dynamic.literal(init = init, rest = rest)
+  
     __obj.asInstanceOf[Anon_InitRest[A]]
   }
 }

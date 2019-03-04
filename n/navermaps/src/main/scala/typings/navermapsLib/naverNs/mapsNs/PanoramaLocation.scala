@@ -22,12 +22,8 @@ object PanoramaLocation {
     photodate: java.lang.String,
     title: java.lang.String
   ): PanoramaLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("coord")(coord)
-    __obj.updateDynamic("panoId")(panoId)
-    __obj.updateDynamic("photodate")(photodate)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(address = address, coord = coord, panoId = panoId, photodate = photodate, title = title)
+  
     __obj.asInstanceOf[PanoramaLocation]
   }
 }

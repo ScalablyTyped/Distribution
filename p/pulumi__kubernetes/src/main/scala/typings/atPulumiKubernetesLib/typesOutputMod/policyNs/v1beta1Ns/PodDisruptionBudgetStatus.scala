@@ -57,13 +57,8 @@ object PodDisruptionBudgetStatus {
     expectedPods: scala.Double,
     observedGeneration: scala.Double
   ): PodDisruptionBudgetStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentHealthy")(currentHealthy)
-    __obj.updateDynamic("desiredHealthy")(desiredHealthy)
-    __obj.updateDynamic("disruptedPods")(disruptedPods)
-    __obj.updateDynamic("disruptionsAllowed")(disruptionsAllowed)
-    __obj.updateDynamic("expectedPods")(expectedPods)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
+    val __obj = js.Dynamic.literal(currentHealthy = currentHealthy, desiredHealthy = desiredHealthy, disruptedPods = disruptedPods, disruptionsAllowed = disruptionsAllowed, expectedPods = expectedPods, observedGeneration = observedGeneration)
+  
     __obj.asInstanceOf[PodDisruptionBudgetStatus]
   }
 }

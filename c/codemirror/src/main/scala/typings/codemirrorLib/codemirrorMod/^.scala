@@ -68,7 +68,7 @@ object ^ extends js.Object {
   /** Similarly, defineOption can be used to define new options for CodeMirror.
     The updateFunc will be called with the editor instance and the new value when an editor is initialized,
     and whenever the option is modified through setOption. */
-  def defineOption(name: java.lang.String, `default_`: js.Any, updateFunc: js.Function): scala.Unit = js.native
+  def defineOption(name: java.lang.String, default_ : js.Any, updateFunc: js.Function): scala.Unit = js.native
   /** Sometimes, it is useful to add or override mode object properties from external code.
     The CodeMirror.extendMode function can be used to add properties to mode objects produced for a specific mode.
     Its first argument is the name of the mode, its second an object that specifies the properties that should be added.

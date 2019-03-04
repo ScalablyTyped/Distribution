@@ -39,14 +39,8 @@ object XRowSetApproveListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRowSetApproveListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("approveCursorMove")(approveCursorMove)
-    __obj.updateDynamic("approveRowChange")(approveRowChange)
-    __obj.updateDynamic("approveRowSetChange")(approveRowSetChange)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, approveCursorMove = approveCursorMove, approveRowChange = approveRowChange, approveRowSetChange = approveRowSetChange, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRowSetApproveListener]
   }
 }

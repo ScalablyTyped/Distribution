@@ -32,8 +32,7 @@ object ButtonProps {
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerText = null,
     upperCase: js.UndefOr[scala.Boolean] = js.undefined
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

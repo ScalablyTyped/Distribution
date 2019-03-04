@@ -20,15 +20,8 @@ object RemoteAccessContentProvider {
     registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
     release: js.Function0[scala.Unit]
   ): RemoteAccessContentProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareContentIds")(compareContentIds)
-    __obj.updateDynamic("createContentIdentifier")(createContentIdentifier)
-    __obj.updateDynamic("deregisterInstance")(deregisterInstance)
-    __obj.updateDynamic("queryContent")(queryContent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerInstance")(registerInstance)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, compareContentIds = compareContentIds, createContentIdentifier = createContentIdentifier, deregisterInstance = deregisterInstance, queryContent = queryContent, queryInterface = queryInterface, registerInstance = registerInstance, release = release)
+  
     __obj.asInstanceOf[RemoteAccessContentProvider]
   }
 }

@@ -27,10 +27,8 @@ object Anon_Request {
     server: js.Array[java.lang.String],
     toolkit: js.Array[java.lang.String]
   ): Anon_Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("toolkit")(toolkit)
+    val __obj = js.Dynamic.literal(request = request, server = server, toolkit = toolkit)
+  
     __obj.asInstanceOf[Anon_Request]
   }
 }

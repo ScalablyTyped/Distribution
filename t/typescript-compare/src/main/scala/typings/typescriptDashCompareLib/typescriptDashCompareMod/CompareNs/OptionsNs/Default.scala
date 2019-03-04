@@ -25,11 +25,8 @@ object Default {
     equal: typescriptDashCompareLib.typescriptDashCompareLibStrings.equal,
     mismatch: typescriptDashCompareLib.typescriptDashCompareLibStrings.mismatch
   ): Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("broaderLeft")(broaderLeft)
-    __obj.updateDynamic("broaderRight")(broaderRight)
-    __obj.updateDynamic("equal")(equal)
-    __obj.updateDynamic("mismatch")(mismatch)
+    val __obj = js.Dynamic.literal(broaderLeft = broaderLeft, broaderRight = broaderRight, equal = equal, mismatch = mismatch)
+  
     __obj.asInstanceOf[Default]
   }
 }

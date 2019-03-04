@@ -37,11 +37,8 @@ object IEventDispatcher {
       scala.Unit
     ]
   ): IEventDispatcher[T, SourceT, IteratorT, ReverseT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispatchEvent")(dispatchEvent)
-    __obj.updateDynamic("hasEventListener")(hasEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, dispatchEvent = dispatchEvent, hasEventListener = hasEventListener, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[IEventDispatcher[T, SourceT, IteratorT, ReverseT]]
   }
 }

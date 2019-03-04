@@ -18,10 +18,8 @@ object IPrintTaskRequest {
     deadline: stdLib.Date,
     getDeferral: js.Function0[PrintTaskRequestedDeferral]
   ): IPrintTaskRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPrintTask")(createPrintTask)
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("getDeferral")(getDeferral)
+    val __obj = js.Dynamic.literal(createPrintTask = createPrintTask, deadline = deadline, getDeferral = getDeferral)
+  
     __obj.asInstanceOf[IPrintTaskRequest]
   }
 }

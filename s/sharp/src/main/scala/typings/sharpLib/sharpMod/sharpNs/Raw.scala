@@ -18,10 +18,8 @@ object Raw {
     height: scala.Double,
     width: scala.Double
   ): Raw = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], height = height, width = width)
+  
     __obj.asInstanceOf[Raw]
   }
 }

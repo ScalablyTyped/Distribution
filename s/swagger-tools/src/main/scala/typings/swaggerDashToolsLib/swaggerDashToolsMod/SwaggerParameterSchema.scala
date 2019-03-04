@@ -32,8 +32,8 @@ object SwaggerParameterSchema {
     paramType: java.lang.String = null,
     required: js.UndefOr[scala.Boolean] = js.undefined
   ): SwaggerParameterSchema = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
     if (description != null) __obj.updateDynamic("description")(description)
     if (format != null) __obj.updateDynamic("format")(format)

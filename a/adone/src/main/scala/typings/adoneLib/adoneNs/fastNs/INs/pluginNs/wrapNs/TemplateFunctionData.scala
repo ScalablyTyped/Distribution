@@ -26,9 +26,7 @@ object TemplateFunctionData {
     sourceURL: java.lang.String = null,
     variable: java.lang.String = null
   ): TemplateFunctionData[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contents = contents, file = file.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (escape != null) __obj.updateDynamic("escape")(escape)
     if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate)

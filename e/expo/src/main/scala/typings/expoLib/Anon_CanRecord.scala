@@ -14,9 +14,8 @@ trait Anon_CanRecord
 object Anon_CanRecord {
   @scala.inline
   def apply(canRecord: expoLib.expoLibNumbers.`false`, isDoneRecording: expoLib.expoLibNumbers.`false`): Anon_CanRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRecord")(canRecord)
-    __obj.updateDynamic("isDoneRecording")(isDoneRecording)
+    val __obj = js.Dynamic.literal(canRecord = canRecord, isDoneRecording = isDoneRecording)
+  
     __obj.asInstanceOf[Anon_CanRecord]
   }
 }

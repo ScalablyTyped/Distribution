@@ -16,9 +16,8 @@ object Scrollable {
     getScrollState: js.Function0[js.Any],
     scrollTo: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): Scrollable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getScrollState")(getScrollState)
-    __obj.updateDynamic("scrollTo")(scrollTo)
+    val __obj = js.Dynamic.literal(getScrollState = getScrollState, scrollTo = scrollTo)
+  
     __obj.asInstanceOf[Scrollable]
   }
 }

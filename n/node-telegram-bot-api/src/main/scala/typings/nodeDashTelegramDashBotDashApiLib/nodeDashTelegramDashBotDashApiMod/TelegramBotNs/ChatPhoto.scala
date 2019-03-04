@@ -13,9 +13,8 @@ trait ChatPhoto extends js.Object {
 object ChatPhoto {
   @scala.inline
   def apply(big_file_id: java.lang.String, small_file_id: java.lang.String): ChatPhoto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("big_file_id")(big_file_id)
-    __obj.updateDynamic("small_file_id")(small_file_id)
+    val __obj = js.Dynamic.literal(big_file_id = big_file_id, small_file_id = small_file_id)
+  
     __obj.asInstanceOf[ChatPhoto]
   }
 }

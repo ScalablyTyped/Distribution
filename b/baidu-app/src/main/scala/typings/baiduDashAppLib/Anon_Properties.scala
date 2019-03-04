@@ -13,9 +13,8 @@ trait Anon_Properties extends js.Object {
 object Anon_Properties {
   @scala.inline
   def apply(properties: js.Array[Anon_Indicate], uuid: java.lang.String): Anon_Properties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(properties = properties, uuid = uuid)
+  
     __obj.asInstanceOf[Anon_Properties]
   }
 }

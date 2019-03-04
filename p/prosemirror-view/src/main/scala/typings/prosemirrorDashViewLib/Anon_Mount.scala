@@ -12,8 +12,8 @@ trait Anon_Mount extends js.Object {
 object Anon_Mount {
   @scala.inline
   def apply(mount: stdLib.Node): Anon_Mount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mount")(mount)
+    val __obj = js.Dynamic.literal(mount = mount)
+  
     __obj.asInstanceOf[Anon_Mount]
   }
 }

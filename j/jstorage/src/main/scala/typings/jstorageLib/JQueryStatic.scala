@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(jStorage: JStorageStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jStorage")(jStorage)
+    val __obj = js.Dynamic.literal(jStorage = jStorage)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

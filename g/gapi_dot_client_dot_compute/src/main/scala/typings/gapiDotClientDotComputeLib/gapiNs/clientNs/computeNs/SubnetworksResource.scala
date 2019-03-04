@@ -62,14 +62,8 @@ object SubnetworksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): SubnetworksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("expandIpCidrRange")(expandIpCidrRange)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setPrivateIpGoogleAccess")(setPrivateIpGoogleAccess)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, expandIpCidrRange = expandIpCidrRange, get = get, insert = insert, list = list, setPrivateIpGoogleAccess = setPrivateIpGoogleAccess)
+  
     __obj.asInstanceOf[SubnetworksResource]
   }
 }

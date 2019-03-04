@@ -12,8 +12,8 @@ trait ICompassReadingChangedEventArgs extends js.Object {
 object ICompassReadingChangedEventArgs {
   @scala.inline
   def apply(reading: CompassReading): ICompassReadingChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reading")(reading)
+    val __obj = js.Dynamic.literal(reading = reading)
+  
     __obj.asInstanceOf[ICompassReadingChangedEventArgs]
   }
 }

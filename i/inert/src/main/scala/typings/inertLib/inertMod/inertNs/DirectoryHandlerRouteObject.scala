@@ -66,8 +66,7 @@ object DirectoryHandlerRouteObject {
     redirectToSlash: js.UndefOr[scala.Boolean] = js.undefined,
     showHidden: js.UndefOr[scala.Boolean] = js.undefined
   ): DirectoryHandlerRouteObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

@@ -79,15 +79,8 @@ object XAccessController {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("checkPermission")(checkPermission)
-    __obj.updateDynamic("doPrivileged")(doPrivileged)
-    __obj.updateDynamic("doRestricted")(doRestricted)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Context = Context, acquire = acquire, checkPermission = checkPermission, doPrivileged = doPrivileged, doRestricted = doRestricted, getContext = getContext, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessController]
   }
 }

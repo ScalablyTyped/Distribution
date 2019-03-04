@@ -79,8 +79,7 @@ object CollapseProps {
     springConfig: js.Object = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CollapseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapsed")(collapsed)
+    val __obj = js.Dynamic.literal(collapsed = collapsed)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (children != null) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)

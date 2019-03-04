@@ -27,13 +27,8 @@ object IEphemeralKey {
     `object`: stripeLib.stripeLibStrings.ephemeral_key,
     secret: java.lang.String
   ): IEphemeralKey = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("associated_objects")(associated_objects)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(associated_objects = associated_objects, created = created, expires = expires, id = id, livemode = livemode, secret = secret)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IEphemeralKey]
   }
 }

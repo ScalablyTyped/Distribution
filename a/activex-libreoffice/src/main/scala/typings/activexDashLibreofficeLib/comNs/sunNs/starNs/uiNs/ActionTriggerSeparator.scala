@@ -14,8 +14,8 @@ trait ActionTriggerSeparator extends js.Object {
 object ActionTriggerSeparator {
   @scala.inline
   def apply(SeparatorType: scala.Double): ActionTriggerSeparator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SeparatorType")(SeparatorType)
+    val __obj = js.Dynamic.literal(SeparatorType = SeparatorType)
+  
     __obj.asInstanceOf[ActionTriggerSeparator]
   }
 }

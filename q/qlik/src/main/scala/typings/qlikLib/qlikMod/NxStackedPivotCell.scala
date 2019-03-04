@@ -40,21 +40,8 @@ object NxStackedPivotCell {
     qUp: scala.Double,
     qValue: scala.Double
   ): NxStackedPivotCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttrDims")(qAttrDims)
-    __obj.updateDynamic("qAttrExps")(qAttrExps)
-    __obj.updateDynamic("qCanCollapse")(qCanCollapse)
-    __obj.updateDynamic("qCanExpand")(qCanExpand)
-    __obj.updateDynamic("qDown")(qDown)
-    __obj.updateDynamic("qElemNo")(qElemNo)
-    __obj.updateDynamic("qMaxPos")(qMaxPos)
-    __obj.updateDynamic("qMinNeg")(qMinNeg)
-    __obj.updateDynamic("qRow")(qRow)
-    __obj.updateDynamic("qSubNodes")(qSubNodes)
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])
-    __obj.updateDynamic("qUp")(qUp)
-    __obj.updateDynamic("qValue")(qValue)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qCanCollapse = qCanCollapse, qCanExpand = qCanExpand, qDown = qDown, qElemNo = qElemNo, qMaxPos = qMaxPos, qMinNeg = qMinNeg, qRow = qRow, qSubNodes = qSubNodes, qText = qText, qType = qType.asInstanceOf[js.Any], qUp = qUp, qValue = qValue)
+  
     __obj.asInstanceOf[NxStackedPivotCell]
   }
 }

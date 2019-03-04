@@ -48,8 +48,7 @@ object Anon_AltFieldsKeyLocale {
     startIndex: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("savedReportId")(savedReportId)
+    val __obj = js.Dynamic.literal(savedReportId = savedReportId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

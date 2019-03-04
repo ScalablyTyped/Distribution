@@ -18,9 +18,8 @@ object Anon_SegmentThreshold {
     threshold: scala.Double,
     `type`: arangodbLib.ArangoDBNs.ArangoSearchViewConsolidationType
   ): Anon_SegmentThreshold = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("segmentThreshold")(segmentThreshold)
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(segmentThreshold = segmentThreshold, threshold = threshold)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_SegmentThreshold]
   }
 }

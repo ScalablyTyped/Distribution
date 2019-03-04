@@ -18,10 +18,8 @@ object BranchRef {
     name: java.lang.String,
     repository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.RepositoryRef
   ): BranchRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(loadAsync = loadAsync, name = name, repository = repository)
+  
     __obj.asInstanceOf[BranchRef]
   }
 }

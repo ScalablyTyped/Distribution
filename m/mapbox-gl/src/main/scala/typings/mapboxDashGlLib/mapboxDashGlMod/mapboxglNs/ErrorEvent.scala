@@ -20,9 +20,8 @@ object ErrorEvent {
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.error,
     originalEvent: js.UndefOr[scala.Nothing] = js.undefined
   ): ErrorEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(error = error, target = target)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[ErrorEvent]
   }

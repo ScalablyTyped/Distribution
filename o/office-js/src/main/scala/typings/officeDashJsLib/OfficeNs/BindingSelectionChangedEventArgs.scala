@@ -72,12 +72,8 @@ object BindingSelectionChangedEventArgs {
     startRow: scala.Double,
     `type`: EventType
   ): BindingSelectionChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("binding")(binding)
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("startColumn")(startColumn)
-    __obj.updateDynamic("startRow")(startRow)
+    val __obj = js.Dynamic.literal(binding = binding, columnCount = columnCount, rowCount = rowCount, startColumn = startColumn, startRow = startRow)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BindingSelectionChangedEventArgs]
   }
 }

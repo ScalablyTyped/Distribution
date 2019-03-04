@@ -34,12 +34,8 @@ object AgentPoolQueue {
     pool: TaskAgentPoolReference,
     url: java.lang.String
   ): AgentPoolQueue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pool")(pool)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, id = id, name = name, pool = pool, url = url)
+  
     __obj.asInstanceOf[AgentPoolQueue]
   }
 }

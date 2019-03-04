@@ -37,11 +37,8 @@ object ISpawnedChild {
     once: js.Function0[scala.Unit],
     start: js.Function0[scala.Unit]
   ): ISpawnedChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forever")(forever)
-    __obj.updateDynamic("kill")(kill)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(forever = forever, kill = kill, once = once, start = start)
+  
     __obj.asInstanceOf[ISpawnedChild]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(children: js.Array[reactLib.reactMod.ReactNs.ReactNode]): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[Anon_Children]
   }
 }

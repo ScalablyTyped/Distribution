@@ -58,12 +58,8 @@ object Router {
     setDefaultHandler: js.Function1[workboxDashSwLib.HandlerCallback, scala.Unit],
     unregisterRoute: js.Function1[Route, scala.Unit]
   ): Router = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleRequest")(handleRequest)
-    __obj.updateDynamic("registerRoute")(registerRoute)
-    __obj.updateDynamic("setCatchHandler")(setCatchHandler)
-    __obj.updateDynamic("setDefaultHandler")(setDefaultHandler)
-    __obj.updateDynamic("unregisterRoute")(unregisterRoute)
+    val __obj = js.Dynamic.literal(handleRequest = handleRequest, registerRoute = registerRoute, setCatchHandler = setCatchHandler, setDefaultHandler = setDefaultHandler, unregisterRoute = unregisterRoute)
+  
     __obj.asInstanceOf[Router]
   }
 }

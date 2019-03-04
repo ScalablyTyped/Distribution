@@ -22,8 +22,7 @@ object LineOptions {
     position: java.lang.String = null,
     text: java.lang.String = null
   ): LineOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (position != null) __obj.updateDynamic("position")(position)

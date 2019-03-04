@@ -29,8 +29,7 @@ object Options {
     protocol: npmDashRegistryDashPackageDashInfoLib.npmDashRegistryDashPackageDashInfoLibStrings.http | npmDashRegistryDashPackageDashInfoLib.npmDashRegistryDashPackageDashInfoLibStrings.https = null,
     registry: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packages")(packages)
+    val __obj = js.Dynamic.literal(packages = packages)
     if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])

@@ -22,11 +22,7 @@ object MasonryCellProps {
     parent: reactDashVirtualizedLib.distEsCellMeasurerMod.MeasuredCellParent,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): MasonryCellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(index = index, isScrolling = isScrolling, key = key.asInstanceOf[js.Any], parent = parent)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[MasonryCellProps]
   }

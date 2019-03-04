@@ -70,15 +70,8 @@ object RoomsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RoomStatus]
     ]
   ): RoomsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("decline")(decline)
-    __obj.updateDynamic("dismiss")(dismiss)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("leave")(leave)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("reportStatus")(reportStatus)
+    val __obj = js.Dynamic.literal(create = create, decline = decline, dismiss = dismiss, get = get, join = join, leave = leave, list = list, reportStatus = reportStatus)
+  
     __obj.asInstanceOf[RoomsResource]
   }
 }

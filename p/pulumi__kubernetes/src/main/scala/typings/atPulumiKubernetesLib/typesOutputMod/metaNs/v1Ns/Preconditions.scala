@@ -18,8 +18,8 @@ trait Preconditions extends js.Object {
 object Preconditions {
   @scala.inline
   def apply(uid: java.lang.String): Preconditions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(uid = uid)
+  
     __obj.asInstanceOf[Preconditions]
   }
 }

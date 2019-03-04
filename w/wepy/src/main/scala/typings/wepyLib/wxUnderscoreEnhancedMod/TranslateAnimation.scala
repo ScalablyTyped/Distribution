@@ -22,12 +22,8 @@ object TranslateAnimation {
     translateY: js.Function1[scala.Double, Animation],
     translateZ: js.Function1[scala.Double, Animation]
   ): TranslateAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("translate")(translate)
-    __obj.updateDynamic("translate3d")(translate3d)
-    __obj.updateDynamic("translateX")(translateX)
-    __obj.updateDynamic("translateY")(translateY)
-    __obj.updateDynamic("translateZ")(translateZ)
+    val __obj = js.Dynamic.literal(translate = translate, translate3d = translate3d, translateX = translateX, translateY = translateY, translateZ = translateZ)
+  
     __obj.asInstanceOf[TranslateAnimation]
   }
 }

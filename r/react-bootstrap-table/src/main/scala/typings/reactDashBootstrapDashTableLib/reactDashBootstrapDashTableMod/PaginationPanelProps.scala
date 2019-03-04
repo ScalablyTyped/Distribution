@@ -54,15 +54,8 @@ object PaginationPanelProps {
     sizePerPageList: SizePerPageList,
     toggleDropDown: js.Function0[scala.Unit]
   ): PaginationPanelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changePage")(changePage)
-    __obj.updateDynamic("changeSizePerPage")(changeSizePerPage)
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("currPage")(currPage)
-    __obj.updateDynamic("pageStartIndex")(pageStartIndex)
-    __obj.updateDynamic("sizePerPage")(sizePerPage)
-    __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
-    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    val __obj = js.Dynamic.literal(changePage = changePage, changeSizePerPage = changeSizePerPage, components = components, currPage = currPage, pageStartIndex = pageStartIndex, sizePerPage = sizePerPage, sizePerPageList = sizePerPageList.asInstanceOf[js.Any], toggleDropDown = toggleDropDown)
+  
     __obj.asInstanceOf[PaginationPanelProps]
   }
 }

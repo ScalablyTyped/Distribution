@@ -12,8 +12,8 @@ trait Anon_Strict extends js.Object {
 object Anon_Strict {
   @scala.inline
   def apply(strict: scala.Boolean): Anon_Strict = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(strict = strict)
+  
     __obj.asInstanceOf[Anon_Strict]
   }
 }

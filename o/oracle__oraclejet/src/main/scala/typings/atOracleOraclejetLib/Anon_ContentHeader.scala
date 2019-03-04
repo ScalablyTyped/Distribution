@@ -18,9 +18,7 @@ object Anon_ContentHeader {
     header: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ContentHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(content = content, header = header)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ContentHeader]
   }

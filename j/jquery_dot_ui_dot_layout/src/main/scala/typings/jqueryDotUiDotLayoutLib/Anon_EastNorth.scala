@@ -20,11 +20,8 @@ object Anon_EastNorth {
     south: jqueryDotUiDotLayoutLib.JQueryUILayoutNs.PaneState,
     west: jqueryDotUiDotLayoutLib.JQueryUILayoutNs.PaneState
   ): Anon_EastNorth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("east")(east)
-    __obj.updateDynamic("north")(north)
-    __obj.updateDynamic("south")(south)
-    __obj.updateDynamic("west")(west)
+    val __obj = js.Dynamic.literal(east = east, north = north, south = south, west = west)
+  
     __obj.asInstanceOf[Anon_EastNorth]
   }
 }

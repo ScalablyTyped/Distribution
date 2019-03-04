@@ -13,9 +13,8 @@ trait TeamFieldValue extends js.Object {
 object TeamFieldValue {
   @scala.inline
   def apply(includeChildren: scala.Boolean, value: java.lang.String): TeamFieldValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeChildren")(includeChildren)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(includeChildren = includeChildren, value = value)
+  
     __obj.asInstanceOf[TeamFieldValue]
   }
 }

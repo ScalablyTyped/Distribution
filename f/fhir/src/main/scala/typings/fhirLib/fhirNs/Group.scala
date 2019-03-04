@@ -99,8 +99,8 @@ object Group {
     resourceType: code = null,
     text: Narrative = null
   ): Group = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("actual")(actual)
+    val __obj = js.Dynamic.literal(actual = actual)
+    __obj.updateDynamic("type")(`type`)
     if (_active != null) __obj.updateDynamic("_active")(_active)
     if (_actual != null) __obj.updateDynamic("_actual")(_actual)
     if (_id != null) __obj.updateDynamic("_id")(_id)

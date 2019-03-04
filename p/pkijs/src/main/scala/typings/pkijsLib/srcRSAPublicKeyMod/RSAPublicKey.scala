@@ -28,13 +28,8 @@ object RSAPublicKey {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): RSAPublicKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("modulus")(modulus)
-    __obj.updateDynamic("publicExponent")(publicExponent)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, modulus = modulus, publicExponent = publicExponent, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[RSAPublicKey]
   }
 }

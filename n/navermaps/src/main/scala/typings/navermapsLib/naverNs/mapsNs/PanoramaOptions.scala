@@ -42,22 +42,8 @@ object PanoramaOptions {
     zoomControl: scala.Boolean,
     zoomControlOptions: ZoomControlOptions
   ): PanoramaOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aroundControl")(aroundControl)
-    __obj.updateDynamic("aroundControlOptions")(aroundControlOptions)
-    __obj.updateDynamic("logoControl")(logoControl)
-    __obj.updateDynamic("logoControlOptions")(logoControlOptions)
-    __obj.updateDynamic("maxScale")(maxScale)
-    __obj.updateDynamic("maxZoom")(maxZoom)
-    __obj.updateDynamic("minScale")(minScale)
-    __obj.updateDynamic("minZoom")(minZoom)
-    __obj.updateDynamic("panoId")(panoId)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("pov")(pov)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("zoomControl")(zoomControl)
-    __obj.updateDynamic("zoomControlOptions")(zoomControlOptions)
+    val __obj = js.Dynamic.literal(aroundControl = aroundControl, aroundControlOptions = aroundControlOptions, logoControl = logoControl, logoControlOptions = logoControlOptions, maxScale = maxScale, maxZoom = maxZoom, minScale = minScale, minZoom = minZoom, panoId = panoId, position = position.asInstanceOf[js.Any], pov = pov, size = size.asInstanceOf[js.Any], visible = visible, zoomControl = zoomControl, zoomControlOptions = zoomControlOptions)
+  
     __obj.asInstanceOf[PanoramaOptions]
   }
 }

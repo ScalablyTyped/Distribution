@@ -18,10 +18,8 @@ object FavIconResponse {
     html: js.Array[java.lang.String],
     images: js.Array[faviconsLib.Anon_Contents]
   ): FavIconResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("images")(images)
+    val __obj = js.Dynamic.literal(files = files, html = html, images = images)
+  
     __obj.asInstanceOf[FavIconResponse]
   }
 }

@@ -14,10 +14,8 @@ trait CustomData extends js.Object {
 object CustomData {
   @scala.inline
   def apply(filter: java.lang.String, geotableId: scala.Double, tags: java.lang.String): CustomData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("geotableId")(geotableId)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(filter = filter, geotableId = geotableId, tags = tags)
+  
     __obj.asInstanceOf[CustomData]
   }
 }

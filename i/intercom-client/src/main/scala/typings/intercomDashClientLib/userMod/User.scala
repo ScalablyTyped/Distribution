@@ -60,20 +60,8 @@ object User {
     user_agent_data: java.lang.String = null,
     user_id: java.lang.String = null
   ): User = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("anonymous")(anonymous)
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("companies")(companies)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("custom_attributes")(custom_attributes)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location_data")(location_data.asInstanceOf[js.Any])
-    __obj.updateDynamic("segments")(segments)
-    __obj.updateDynamic("session_count")(session_count)
-    __obj.updateDynamic("social_profiles")(social_profiles)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("unsubscribed_from_emails")(unsubscribed_from_emails)
-    __obj.updateDynamic("updated_at")(updated_at)
+    val __obj = js.Dynamic.literal(anonymous = anonymous, avatar = avatar, companies = companies, created_at = created_at, custom_attributes = custom_attributes, id = id, location_data = location_data.asInstanceOf[js.Any], segments = segments, session_count = session_count, social_profiles = social_profiles, tags = tags, unsubscribed_from_emails = unsubscribed_from_emails, updated_at = updated_at)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (email != null) __obj.updateDynamic("email")(email)
     if (last_request_at != null) __obj.updateDynamic("last_request_at")(last_request_at.asInstanceOf[js.Any])

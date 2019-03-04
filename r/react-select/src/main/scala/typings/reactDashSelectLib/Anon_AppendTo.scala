@@ -23,12 +23,8 @@ object Anon_AppendTo {
     menuPlacement: reactDashSelectLib.libTypesMod.MenuPlacement,
     menuPosition: reactDashSelectLib.libTypesMod.MenuPosition
   ): Anon_AppendTo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendTo")(appendTo)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("controlElement")(controlElement)
-    __obj.updateDynamic("menuPlacement")(menuPlacement)
-    __obj.updateDynamic("menuPosition")(menuPosition)
+    val __obj = js.Dynamic.literal(appendTo = appendTo, children = children.asInstanceOf[js.Any], controlElement = controlElement, menuPlacement = menuPlacement, menuPosition = menuPosition)
+  
     __obj.asInstanceOf[Anon_AppendTo]
   }
 }

@@ -20,10 +20,8 @@ object CastParam {
     deviceName: java.lang.String,
     `type`: jwplayerLib.jwplayerLibStrings.cast
   ): CastParam = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("deviceName")(deviceName)
+    val __obj = js.Dynamic.literal(active = active, available = available, deviceName = deviceName)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CastParam]
   }
 }

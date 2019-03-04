@@ -14,10 +14,8 @@ trait PanoramaPov extends js.Object {
 object PanoramaPov {
   @scala.inline
   def apply(fov: scala.Double, pan: scala.Double, tilt: scala.Double): PanoramaPov = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fov")(fov)
-    __obj.updateDynamic("pan")(pan)
-    __obj.updateDynamic("tilt")(tilt)
+    val __obj = js.Dynamic.literal(fov = fov, pan = pan, tilt = tilt)
+  
     __obj.asInstanceOf[PanoramaPov]
   }
 }

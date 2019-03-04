@@ -14,8 +14,8 @@ object OnValueChangeListener {
   def apply(
     onValueChange: js.Function3[androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double, scala.Double, scala.Unit]
   ): OnValueChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onValueChange")(onValueChange)
+    val __obj = js.Dynamic.literal(onValueChange = onValueChange)
+  
     __obj.asInstanceOf[OnValueChangeListener]
   }
 }

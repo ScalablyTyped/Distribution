@@ -22,12 +22,8 @@ object IntrospectionSchema {
     subscriptionType: graphqlLib.tsutilsMaybeMod.Maybe[IntrospectionNamedTypeRef[IntrospectionObjectType]],
     types: js.Array[IntrospectionType]
   ): IntrospectionSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directives")(directives)
-    __obj.updateDynamic("mutationType")(mutationType.asInstanceOf[js.Any])
-    __obj.updateDynamic("queryType")(queryType)
-    __obj.updateDynamic("subscriptionType")(subscriptionType.asInstanceOf[js.Any])
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(directives = directives, mutationType = mutationType.asInstanceOf[js.Any], queryType = queryType, subscriptionType = subscriptionType.asInstanceOf[js.Any], types = types)
+  
     __obj.asInstanceOf[IntrospectionSchema]
   }
 }

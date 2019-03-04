@@ -14,10 +14,8 @@ trait Anon_CancelMapUrl extends js.Object {
 object Anon_CancelMapUrl {
   @scala.inline
   def apply(Cancel: scala.Boolean, Map: activexDashExcelLib.ExcelNs.XmlMap, Url: java.lang.String): Anon_CancelMapUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Map = Map, Url = Url)
+  
     __obj.asInstanceOf[Anon_CancelMapUrl]
   }
 }

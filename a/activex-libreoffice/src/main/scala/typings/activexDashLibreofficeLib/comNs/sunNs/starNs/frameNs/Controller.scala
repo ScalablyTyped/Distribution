@@ -79,39 +79,8 @@ object Controller {
     select: js.Function1[js.Any, scala.Boolean],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): Controller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("Transferable")(Transferable)
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addKeyHandler")(addKeyHandler)
-    __obj.updateDynamic("addMouseClickHandler")(addMouseClickHandler)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("attachFrame")(attachFrame)
-    __obj.updateDynamic("attachModel")(attachModel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getTransferable")(getTransferable)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("insertTransferable")(insertTransferable)
-    __obj.updateDynamic("queryDispatch")(queryDispatch)
-    __obj.updateDynamic("queryDispatches")(queryDispatches)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerContextMenuInterceptor")(registerContextMenuInterceptor)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseContextMenuInterceptor")(releaseContextMenuInterceptor)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeKeyHandler")(removeKeyHandler)
-    __obj.updateDynamic("removeMouseClickHandler")(removeMouseClickHandler)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("restoreViewData")(restoreViewData)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(Frame = Frame, Model = Model, Selection = Selection, Transferable = Transferable, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, addKeyHandler = addKeyHandler, addMouseClickHandler = addMouseClickHandler, addSelectionChangeListener = addSelectionChangeListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getSelection = getSelection, getTransferable = getTransferable, getViewData = getViewData, insertTransferable = insertTransferable, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, registerContextMenuInterceptor = registerContextMenuInterceptor, release = release, releaseContextMenuInterceptor = releaseContextMenuInterceptor, removeEventListener = removeEventListener, removeKeyHandler = removeKeyHandler, removeMouseClickHandler = removeMouseClickHandler, removeSelectionChangeListener = removeSelectionChangeListener, restoreViewData = restoreViewData, select = select, suspend = suspend)
+  
     __obj.asInstanceOf[Controller]
   }
 }

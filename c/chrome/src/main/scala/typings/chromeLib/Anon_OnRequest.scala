@@ -12,8 +12,8 @@ trait Anon_OnRequest extends js.Object {
 object Anon_OnRequest {
   @scala.inline
   def apply(onRequest: chromeLib.chromeNs.declarativeWebRequestNs.RequestedEvent): Anon_OnRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onRequest")(onRequest)
+    val __obj = js.Dynamic.literal(onRequest = onRequest)
+  
     __obj.asInstanceOf[Anon_OnRequest]
   }
 }

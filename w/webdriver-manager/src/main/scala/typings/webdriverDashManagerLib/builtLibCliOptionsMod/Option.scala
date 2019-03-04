@@ -20,6 +20,6 @@ class Option protected () extends js.Object {
   def getBoolean(): scala.Boolean = js.native
   def getNumber(): scala.Double = js.native
   def getString(): java.lang.String = js.native
-  def `getValue_`(): scala.Double | java.lang.String | scala.Boolean = js.native
+  def getValue_(): scala.Double | java.lang.String | scala.Boolean = js.native
 }
 

@@ -24,10 +24,8 @@ object Autolinker {
     link: js.Function1[java.lang.String, java.lang.String],
     parse: js.Function1[java.lang.String, js.Array[_]]
   ): Autolinker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTagBuilder")(getTagBuilder)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(getTagBuilder = getTagBuilder, link = link, parse = parse)
+  
     __obj.asInstanceOf[Autolinker]
   }
 }

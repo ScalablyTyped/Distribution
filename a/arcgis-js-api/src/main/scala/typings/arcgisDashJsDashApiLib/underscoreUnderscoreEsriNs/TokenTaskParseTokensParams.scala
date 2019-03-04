@@ -37,13 +37,8 @@ object TokenTaskParseTokensParams {
     stringToParse: java.lang.String,
     user: java.lang.String
   ): TokenTaskParseTokensParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stringToParse")(stringToParse)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, stringToParse = stringToParse, user = user)
+  
     __obj.asInstanceOf[TokenTaskParseTokensParams]
   }
 }

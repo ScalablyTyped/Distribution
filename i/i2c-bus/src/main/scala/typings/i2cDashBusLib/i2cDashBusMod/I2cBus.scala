@@ -404,35 +404,8 @@ object I2cBus {
     writeWord: js.Function4[scala.Double, scala.Double, scala.Double, i2cDashBusLib.CompletionCallback, scala.Unit],
     writeWordSync: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): I2cBus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("closeSync")(closeSync)
-    __obj.updateDynamic("i2cFuncs")(i2cFuncs)
-    __obj.updateDynamic("i2cFuncsSync")(i2cFuncsSync)
-    __obj.updateDynamic("i2cRead")(i2cRead)
-    __obj.updateDynamic("i2cReadSync")(i2cReadSync)
-    __obj.updateDynamic("i2cWrite")(i2cWrite)
-    __obj.updateDynamic("i2cWriteSync")(i2cWriteSync)
-    __obj.updateDynamic("readByte")(readByte)
-    __obj.updateDynamic("readByteSync")(readByteSync)
-    __obj.updateDynamic("readI2cBlock")(readI2cBlock)
-    __obj.updateDynamic("readI2cBlockSync")(readI2cBlockSync)
-    __obj.updateDynamic("readWord")(readWord)
-    __obj.updateDynamic("readWordSync")(readWordSync)
-    __obj.updateDynamic("receiveByte")(receiveByte)
-    __obj.updateDynamic("receiveByteSync")(receiveByteSync)
-    __obj.updateDynamic("scan")(scan)
-    __obj.updateDynamic("scanSync")(scanSync)
-    __obj.updateDynamic("sendByte")(sendByte)
-    __obj.updateDynamic("sendByteSync")(sendByteSync)
-    __obj.updateDynamic("writeByte")(writeByte)
-    __obj.updateDynamic("writeByteSync")(writeByteSync)
-    __obj.updateDynamic("writeI2cBlock")(writeI2cBlock)
-    __obj.updateDynamic("writeI2cBlockSync")(writeI2cBlockSync)
-    __obj.updateDynamic("writeQuick")(writeQuick)
-    __obj.updateDynamic("writeQuickSync")(writeQuickSync)
-    __obj.updateDynamic("writeWord")(writeWord)
-    __obj.updateDynamic("writeWordSync")(writeWordSync)
+    val __obj = js.Dynamic.literal(close = close, closeSync = closeSync, i2cFuncs = i2cFuncs, i2cFuncsSync = i2cFuncsSync, i2cRead = i2cRead, i2cReadSync = i2cReadSync, i2cWrite = i2cWrite, i2cWriteSync = i2cWriteSync, readByte = readByte, readByteSync = readByteSync, readI2cBlock = readI2cBlock, readI2cBlockSync = readI2cBlockSync, readWord = readWord, readWordSync = readWordSync, receiveByte = receiveByte, receiveByteSync = receiveByteSync, scan = scan, scanSync = scanSync, sendByte = sendByte, sendByteSync = sendByteSync, writeByte = writeByte, writeByteSync = writeByteSync, writeI2cBlock = writeI2cBlock, writeI2cBlockSync = writeI2cBlockSync, writeQuick = writeQuick, writeQuickSync = writeQuickSync, writeWord = writeWord, writeWordSync = writeWordSync)
+  
     __obj.asInstanceOf[I2cBus]
   }
 }

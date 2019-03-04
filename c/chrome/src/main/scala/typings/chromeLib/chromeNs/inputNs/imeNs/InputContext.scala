@@ -36,11 +36,8 @@ object InputContext {
     spellCheck: scala.Boolean,
     `type`: java.lang.String
   ): InputContext = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("autoComplete")(autoComplete)
-    __obj.updateDynamic("autoCorrect")(autoCorrect)
-    __obj.updateDynamic("contextID")(contextID)
-    __obj.updateDynamic("spellCheck")(spellCheck)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete, autoCorrect = autoCorrect, contextID = contextID, spellCheck = spellCheck)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InputContext]
   }
 }

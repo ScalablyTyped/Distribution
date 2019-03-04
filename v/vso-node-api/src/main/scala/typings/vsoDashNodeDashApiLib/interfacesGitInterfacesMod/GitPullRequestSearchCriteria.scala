@@ -52,15 +52,8 @@ object GitPullRequestSearchCriteria {
     status: PullRequestStatus,
     targetRefName: java.lang.String
   ): GitPullRequestSearchCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creatorId")(creatorId)
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("reviewerId")(reviewerId)
-    __obj.updateDynamic("sourceRefName")(sourceRefName)
-    __obj.updateDynamic("sourceRepositoryId")(sourceRepositoryId)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("targetRefName")(targetRefName)
+    val __obj = js.Dynamic.literal(creatorId = creatorId, includeLinks = includeLinks, repositoryId = repositoryId, reviewerId = reviewerId, sourceRefName = sourceRefName, sourceRepositoryId = sourceRepositoryId, status = status, targetRefName = targetRefName)
+  
     __obj.asInstanceOf[GitPullRequestSearchCriteria]
   }
 }

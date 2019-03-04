@@ -32,10 +32,7 @@ object StartTagToken {
     tagName: java.lang.String,
     sourceCodeLocation: parse5Lib.parse5Mod.StartTagLocation = null
   ): StartTagToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("selfClosing")(selfClosing)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(attrs = attrs, selfClosing = selfClosing, tagName = tagName)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[StartTagToken]
   }

@@ -44,16 +44,7 @@ object IMouseEventData {
     webkitMovementY: scala.Int | scala.Double = null,
     wheelDelta: scala.Int | scala.Double = null
   ): IMouseEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("clientX")(clientX)
-    __obj.updateDynamic("clientY")(clientY)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(button = button, clientX = clientX, clientY = clientY, currentTarget = currentTarget, pageX = pageX, pageY = pageY, preventDefault = preventDefault, returnValue = returnValue, target = target)
     if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
     if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])

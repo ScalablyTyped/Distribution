@@ -12,8 +12,8 @@ trait Anon_Rev extends js.Object {
 object Anon_Rev {
   @scala.inline
   def apply(rev: java.lang.String): Anon_Rev = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rev")(rev)
+    val __obj = js.Dynamic.literal(rev = rev)
+  
     __obj.asInstanceOf[Anon_Rev]
   }
 }

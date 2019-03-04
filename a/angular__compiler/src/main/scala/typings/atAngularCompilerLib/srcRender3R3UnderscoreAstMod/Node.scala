@@ -16,9 +16,8 @@ object Node {
     sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
     visit: js.Function1[Visitor[js.Any], js.Any]
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceSpan")(sourceSpan)
-    __obj.updateDynamic("visit")(visit)
+    val __obj = js.Dynamic.literal(sourceSpan = sourceSpan, visit = visit)
+  
     __obj.asInstanceOf[Node]
   }
 }

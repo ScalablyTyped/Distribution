@@ -22,9 +22,8 @@ object Anon_Element {
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
     ]
   ): Anon_Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(element = element, model = model)
+  
     __obj.asInstanceOf[Anon_Element]
   }
 }

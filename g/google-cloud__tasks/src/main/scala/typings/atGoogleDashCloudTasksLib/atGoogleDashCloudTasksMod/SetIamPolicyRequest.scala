@@ -12,8 +12,8 @@ trait SetIamPolicyRequest extends js.Object {
 object SetIamPolicyRequest {
   @scala.inline
   def apply(policy: stdLib.Partial[Policy]): SetIamPolicyRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal(policy = policy)
+  
     __obj.asInstanceOf[SetIamPolicyRequest]
   }
 }

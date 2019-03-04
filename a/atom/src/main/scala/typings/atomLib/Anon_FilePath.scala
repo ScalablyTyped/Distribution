@@ -13,8 +13,7 @@ trait Anon_FilePath extends js.Object {
 object Anon_FilePath {
   @scala.inline
   def apply(replacements: scala.Double, filePath: java.lang.String = null): Anon_FilePath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replacements")(replacements)
+    val __obj = js.Dynamic.literal(replacements = replacements)
     if (filePath != null) __obj.updateDynamic("filePath")(filePath)
     __obj.asInstanceOf[Anon_FilePath]
   }

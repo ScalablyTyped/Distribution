@@ -42,9 +42,7 @@ object Anon_AltFieldsFileIdKeyMimeType {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFileIdKeyMimeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(fileId = fileId, mimeType = mimeType)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

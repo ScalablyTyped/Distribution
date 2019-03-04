@@ -12,8 +12,8 @@ trait Consume extends js.Object {
 object Consume {
   @scala.inline
   def apply(consumerTag: java.lang.String): Consume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumerTag")(consumerTag)
+    val __obj = js.Dynamic.literal(consumerTag = consumerTag)
+  
     __obj.asInstanceOf[Consume]
   }
 }

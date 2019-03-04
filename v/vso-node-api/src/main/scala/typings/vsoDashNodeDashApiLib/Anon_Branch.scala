@@ -14,10 +14,8 @@ trait Anon_Branch extends js.Object {
 object Anon_Branch {
   @scala.inline
   def apply(branch: scala.Double, commit: scala.Double, tag: scala.Double): Anon_Branch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(branch = branch, commit = commit, tag = tag)
+  
     __obj.asInstanceOf[Anon_Branch]
   }
 }

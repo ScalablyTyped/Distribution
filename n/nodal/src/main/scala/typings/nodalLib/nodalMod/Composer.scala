@@ -27,23 +27,23 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def `__addJoinsToQuery__`(query: js.Any, queryInfo: js.Any): js.Any = js.native
-  /* private */ def `__addJoinsToQuery__`(query: js.Any, queryInfo: js.Any, includeColumns: js.Any): js.Any = js.native
+  /* private */ def __addJoinsToQuery__(query: js.Any, queryInfo: js.Any): js.Any = js.native
+  /* private */ def __addJoinsToQuery__(query: js.Any, queryInfo: js.Any, includeColumns: js.Any): js.Any = js.native
   /**
     * Collapses linked list of queries into an array (for .reduce, .map etc)
     * @return {Array}
     * @private
     */
-  /* private */ def `__collapse__`(): js.Any = js.native
-  /* private */ def `__filterHidden__`(modelConstructor: js.Any, comparisonsArray: js.Any): js.Any = js.native
+  /* private */ def __collapse__(): js.Any = js.native
+  /* private */ def __filterHidden__(modelConstructor: js.Any, comparisonsArray: js.Any): js.Any = js.native
   /**
     * Generate a SQL count query
     * @param {boolean} [useLimit=false] Generates COUNT using limit command as well
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def `__generateCountQuery__`(): js.Any = js.native
-  /* private */ def `__generateCountQuery__`(useLimit: js.Any): js.Any = js.native
+  /* private */ def __generateCountQuery__(): js.Any = js.native
+  /* private */ def __generateCountQuery__(useLimit: js.Any): js.Any = js.native
   /**
     * Generate a SQL query and its associated parameters from the current composer instance
     * @param {Array} [includeColumns=*] Which columns to include, includes all by default
@@ -51,28 +51,28 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def `__generateQuery__`(): js.Any = js.native
-  /* private */ def `__generateQuery__`(includeColumns: js.Any): js.Any = js.native
-  /* private */ def `__generateQuery__`(includeColumns: js.Any, disableJoins: js.Any): js.Any = js.native
+  /* private */ def __generateQuery__(): js.Any = js.native
+  /* private */ def __generateQuery__(includeColumns: js.Any): js.Any = js.native
+  /* private */ def __generateQuery__(includeColumns: js.Any, disableJoins: js.Any): js.Any = js.native
   /**
     * Gets last limit command from a collapsed array of composer commands
     * @param {Array} [composerArray] Array of composer commands
     * @return {Array}
     * @private
     */
-  /* private */ def `__getLastLimitCommand__`(composerArray: js.Any): js.Any = js.native
+  /* private */ def __getLastLimitCommand__(composerArray: js.Any): js.Any = js.native
   /**
     * Determines whether this composer query represents a grouped query or not
     * @return {Boolean}
     * @private
     */
-  /* private */ def `__isGrouped__`(): js.Any = js.native
+  /* private */ def __isGrouped__(): js.Any = js.native
   /**
     * Retrieve all joined column data for a given join
     * @param {string} joinName The name of the join relationship
     * @private
     */
-  /* private */ def `__joinedColumns__`(joinName: js.Any): js.Any = js.native
+  /* private */ def __joinedColumns__(joinName: js.Any): js.Any = js.native
   /**
     * When using Composer#where, format all provided comparisons
     * @param {Object} comparisons Comparisons object. {age__lte: 27}, for example.
@@ -80,8 +80,8 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Array}
     * @private
     */
-  /* private */ def `__parseComparisons__`(comparisons: js.Any): js.Any = js.native
-  /* private */ def `__parseComparisons__`(comparisons: js.Any, model: js.Any): js.Any = js.native
+  /* private */ def __parseComparisons__(comparisons: js.Any): js.Any = js.native
+  /* private */ def __parseComparisons__(comparisons: js.Any, model: js.Any): js.Any = js.native
   /**
     * Given rows with repeated data (due to joining in multiple children),
     * return only parent models (but include references to their children)
@@ -90,8 +90,8 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Nodal.ModelArray}
     * @private
     */
-  /* private */ def `__parseModelsFromRows__`(rows: js.Any): js.Any = js.native
-  /* private */ def `__parseModelsFromRows__`(rows: js.Any, grouped: js.Any): js.Any = js.native
+  /* private */ def __parseModelsFromRows__(rows: js.Any): js.Any = js.native
+  /* private */ def __parseModelsFromRows__(rows: js.Any, grouped: js.Any): js.Any = js.native
   /**
     * Reduces an array of commands from query informtion to a SQL query
     * @param {Array} [commandArray]
@@ -99,22 +99,22 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Looks like {sql: [], params: []}
     * @private
     */
-  /* private */ def `__reduceCommandsToQuery__`(commandArray: js.Any): js.Any = js.native
-  /* private */ def `__reduceCommandsToQuery__`(commandArray: js.Any, includeColumns: js.Any): js.Any = js.native
+  /* private */ def __reduceCommandsToQuery__(commandArray: js.Any): js.Any = js.native
+  /* private */ def __reduceCommandsToQuery__(commandArray: js.Any, includeColumns: js.Any): js.Any = js.native
   /**
     * Reduces an array of composer queries to a single query information object
     * @param {Array} [composerArray]
     * @return {Object} Looks like {commands: [], joins: []}
     * @private
     */
-  /* private */ def `__reduceToQueryInformation__`(composerArray: js.Any): js.Any = js.native
+  /* private */ def __reduceToQueryInformation__(composerArray: js.Any): js.Any = js.native
   /**
     * Removes last limit command from a collapsed array of composer commands
     * @param {Array} [composerArray] Array of composer commands
     * @return {Array}
     * @private
     */
-  /* private */ def `__removeLastLimitCommand__`(composerArray: js.Any): js.Any = js.native
+  /* private */ def __removeLastLimitCommand__(composerArray: js.Any): js.Any = js.native
   /**
     * Aggregates a field
     * @param {String} alias The alias for the new aggregate field

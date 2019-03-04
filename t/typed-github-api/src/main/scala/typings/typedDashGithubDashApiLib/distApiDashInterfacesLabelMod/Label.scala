@@ -22,12 +22,8 @@ object Label {
     name: java.lang.String,
     url: java.lang.String
   ): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(color = color, default = default, id = id, name = name, url = url)
+  
     __obj.asInstanceOf[Label]
   }
 }

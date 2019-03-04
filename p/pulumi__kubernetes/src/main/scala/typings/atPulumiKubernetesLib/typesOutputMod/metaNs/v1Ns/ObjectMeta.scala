@@ -174,23 +174,8 @@ object ObjectMeta {
     selfLink: java.lang.String,
     uid: java.lang.String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("clusterName")(clusterName)
-    __obj.updateDynamic("creationTimestamp")(creationTimestamp)
-    __obj.updateDynamic("deletionGracePeriodSeconds")(deletionGracePeriodSeconds)
-    __obj.updateDynamic("deletionTimestamp")(deletionTimestamp)
-    __obj.updateDynamic("finalizers")(finalizers)
-    __obj.updateDynamic("generateName")(generateName)
-    __obj.updateDynamic("generation")(generation)
-    __obj.updateDynamic("initializers")(initializers)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("ownerReferences")(ownerReferences)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
-    __obj.updateDynamic("selfLink")(selfLink)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, initializers = initializers, labels = labels, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
+  
     __obj.asInstanceOf[ObjectMeta]
   }
 }

@@ -15,8 +15,8 @@ trait ClientOptions extends js.Object {
 object ClientOptions {
   @scala.inline
   def apply(baseUrl: java.lang.String): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl)
+  
     __obj.asInstanceOf[ClientOptions]
   }
 }

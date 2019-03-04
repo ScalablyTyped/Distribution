@@ -13,8 +13,8 @@ trait FilterPattern extends Pattern {
 object FilterPattern {
   @scala.inline
   def apply(expression: Expression, `type`: sparqljsLib.sparqljsLibStrings.filter): FilterPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FilterPattern]
   }
 }

@@ -58,15 +58,8 @@ object HasParentQuery {
     scoreType: js.Function1[java.lang.String, HasParentQuery],
     toJSON: js.Function0[js.Any]
   ): HasParentQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("parentType")(parentType)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("scoreMode")(scoreMode)
-    __obj.updateDynamic("scoreType")(scoreType)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, parentType = parentType, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, toJSON = toJSON)
+  
     __obj.asInstanceOf[HasParentQuery]
   }
 }

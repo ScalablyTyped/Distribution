@@ -64,33 +64,8 @@ object Utils {
     serialize: js.Function1[js.Any, js.Any],
     unique: js.Function1[js.Array[_], js.Any]
   ): Utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("betterTypeOf")(betterTypeOf)
-    __obj.updateDynamic("dump")(dump)
-    __obj.updateDynamic("fileExt")(fileExt)
-    __obj.updateDynamic("fillBlanks")(fillBlanks)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("getPropertyPath")(getPropertyPath)
-    __obj.updateDynamic("inherits")(inherits)
-    __obj.updateDynamic("isArray")(isArray)
-    __obj.updateDynamic("isCasperObject")(isCasperObject)
-    __obj.updateDynamic("isClipRect")(isClipRect)
-    __obj.updateDynamic("isFalsy")(isFalsy)
-    __obj.updateDynamic("isFunction")(isFunction)
-    __obj.updateDynamic("isJsFile")(isJsFile)
-    __obj.updateDynamic("isNull")(isNull)
-    __obj.updateDynamic("isNumber")(isNumber)
-    __obj.updateDynamic("isObject")(isObject)
-    __obj.updateDynamic("isRegExp")(isRegExp)
-    __obj.updateDynamic("isString")(isString)
-    __obj.updateDynamic("isTruthy")(isTruthy)
-    __obj.updateDynamic("isType")(isType)
-    __obj.updateDynamic("isUndefined")(isUndefined)
-    __obj.updateDynamic("isWebPage")(isWebPage)
-    __obj.updateDynamic("mergeObjects")(mergeObjects)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("serialize")(serialize)
-    __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(betterTypeOf = betterTypeOf, dump = dump, fileExt = fileExt, fillBlanks = fillBlanks, format = format, getPropertyPath = getPropertyPath, inherits = inherits, isArray = isArray, isCasperObject = isCasperObject, isClipRect = isClipRect, isFalsy = isFalsy, isFunction = isFunction, isJsFile = isJsFile, isNull = isNull, isNumber = isNumber, isObject = isObject, isRegExp = isRegExp, isString = isString, isTruthy = isTruthy, isType = isType, isUndefined = isUndefined, isWebPage = isWebPage, mergeObjects = mergeObjects, node = node, serialize = serialize, unique = unique)
+  
     __obj.asInstanceOf[Utils]
   }
 }

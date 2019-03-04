@@ -12,8 +12,8 @@ trait Env extends js.Object {
 object Env {
   @scala.inline
   def apply(defaultTimeoutInterval: scala.Double): Env = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultTimeoutInterval")(defaultTimeoutInterval)
+    val __obj = js.Dynamic.literal(defaultTimeoutInterval = defaultTimeoutInterval)
+  
     __obj.asInstanceOf[Env]
   }
 }

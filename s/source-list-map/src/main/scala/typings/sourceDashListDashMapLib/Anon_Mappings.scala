@@ -22,10 +22,8 @@ object Anon_Mappings {
     ],
     sourcesContent: js.Array[java.lang.String]
   ): Anon_Mappings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("sourcesContent")(sourcesContent)
+    val __obj = js.Dynamic.literal(mappings = mappings, sources = sources, sourcesContent = sourcesContent)
+  
     __obj.asInstanceOf[Anon_Mappings]
   }
 }

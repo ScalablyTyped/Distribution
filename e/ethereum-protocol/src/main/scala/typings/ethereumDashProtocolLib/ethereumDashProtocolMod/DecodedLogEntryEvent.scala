@@ -24,14 +24,7 @@ object DecodedLogEntryEvent {
     logIndex: scala.Int | scala.Double = null,
     transactionIndex: scala.Int | scala.Double = null
   ): DecodedLogEntryEvent[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("topics")(topics)
-    __obj.updateDynamic("transactionHash")(transactionHash)
+    val __obj = js.Dynamic.literal(address = address, args = args.asInstanceOf[js.Any], data = data, event = event, removed = removed, topics = topics, transactionHash = transactionHash)
     if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
     if (logIndex != null) __obj.updateDynamic("logIndex")(logIndex.asInstanceOf[js.Any])

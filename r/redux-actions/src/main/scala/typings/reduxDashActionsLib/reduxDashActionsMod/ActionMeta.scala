@@ -17,8 +17,8 @@ object ActionMeta {
     error: js.UndefOr[scala.Boolean] = js.undefined,
     payload: Payload = null
   ): ActionMeta[Payload, Meta] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionMeta[Payload, Meta]]

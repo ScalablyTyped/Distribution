@@ -35,8 +35,7 @@ object PeeringConnectionOptionsArgs {
     accepter: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null,
     requester: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution] = null
   ): PeeringConnectionOptionsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(vpcPeeringConnectionId = vpcPeeringConnectionId.asInstanceOf[js.Any])
     if (accepter != null) __obj.updateDynamic("accepter")(accepter.asInstanceOf[js.Any])
     if (requester != null) __obj.updateDynamic("requester")(requester.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeeringConnectionOptionsArgs]

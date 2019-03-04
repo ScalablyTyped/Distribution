@@ -38,8 +38,7 @@ object RadioButtonGroupProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     valueSelected: js.Any = null
   ): RadioButtonGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (className != null) __obj.updateDynamic("className")(className)
     if (defaultSelected != null) __obj.updateDynamic("defaultSelected")(defaultSelected)
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])

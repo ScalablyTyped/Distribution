@@ -29,10 +29,8 @@ object MultiSortReturn {
     sortBy: js.Array[java.lang.String],
     sortDirection: SortDirectionMap
   ): MultiSortReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("sortBy")(sortBy)
-    __obj.updateDynamic("sortDirection")(sortDirection)
+    val __obj = js.Dynamic.literal(sort = sort, sortBy = sortBy, sortDirection = sortDirection)
+  
     __obj.asInstanceOf[MultiSortReturn]
   }
 }

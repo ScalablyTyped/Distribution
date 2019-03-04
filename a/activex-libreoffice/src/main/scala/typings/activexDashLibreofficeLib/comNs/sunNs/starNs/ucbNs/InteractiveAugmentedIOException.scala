@@ -24,12 +24,8 @@ object InteractiveAugmentedIOException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): InteractiveAugmentedIOException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arguments")(Arguments)
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Code")(Code)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Classification = Classification, Code = Code, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[InteractiveAugmentedIOException]
   }
 }

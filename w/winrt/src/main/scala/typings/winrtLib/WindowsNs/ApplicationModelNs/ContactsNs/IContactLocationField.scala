@@ -28,16 +28,8 @@ object IContactLocationField {
     unstructuredAddress: java.lang.String,
     value: java.lang.String
   ): IContactLocationField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("unstructuredAddress")(unstructuredAddress)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(category = category, city = city, country = country, name = name, postalCode = postalCode, region = region, street = street, unstructuredAddress = unstructuredAddress, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IContactLocationField]
   }
 }

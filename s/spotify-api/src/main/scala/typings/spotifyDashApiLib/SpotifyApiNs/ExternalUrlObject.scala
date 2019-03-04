@@ -18,8 +18,8 @@ trait ExternalUrlObject extends js.Object {
 object ExternalUrlObject {
   @scala.inline
   def apply(spotify: java.lang.String): ExternalUrlObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spotify")(spotify)
+    val __obj = js.Dynamic.literal(spotify = spotify)
+  
     __obj.asInstanceOf[ExternalUrlObject]
   }
 }

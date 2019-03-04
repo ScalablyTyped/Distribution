@@ -18,10 +18,8 @@ object Anon_FIXED {
     REMOVABLE: chromeDashAppsLib.chromeDashAppsLibStrings.removable,
     UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
   ): Anon_FIXED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FIXED")(FIXED)
-    __obj.updateDynamic("REMOVABLE")(REMOVABLE)
-    __obj.updateDynamic("UNKNOWN")(UNKNOWN)
+    val __obj = js.Dynamic.literal(FIXED = FIXED, REMOVABLE = REMOVABLE, UNKNOWN = UNKNOWN)
+  
     __obj.asInstanceOf[Anon_FIXED]
   }
 }

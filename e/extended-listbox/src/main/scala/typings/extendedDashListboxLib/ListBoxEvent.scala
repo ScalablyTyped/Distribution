@@ -17,10 +17,8 @@ trait ListBoxEvent extends js.Object {
 object ListBoxEvent {
   @scala.inline
   def apply(args: js.Any, eventName: java.lang.String, target: stdLib.Element): ListBoxEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(args = args, eventName = eventName, target = target)
+  
     __obj.asInstanceOf[ListBoxEvent]
   }
 }

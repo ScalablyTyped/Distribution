@@ -28,16 +28,8 @@ object XImplicitIDAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XImplicitIDAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("ImplicitIDs")(ImplicitIDs)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByImplicitID")(getByImplicitID)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getImplicitIDs")(getImplicitIDs)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, ImplicitIDs = ImplicitIDs, acquire = acquire, getByImplicitID = getByImplicitID, getElementType = getElementType, getImplicitIDs = getImplicitIDs, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XImplicitIDAccess]
   }
 }

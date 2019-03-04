@@ -39,9 +39,7 @@ object SyncConfiguration {
     ssl_trust_certificate_path: java.lang.String = null,
     validate_ssl: js.UndefOr[scala.Boolean] = js.undefined
   ): SyncConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(url = url, user = user)
     if (!js.isUndefined(_disableQueryBasedSyncUrlChecks)) __obj.updateDynamic("_disableQueryBasedSyncUrlChecks")(_disableQueryBasedSyncUrlChecks)
     if (customQueryBasedSyncIdentifier != null) __obj.updateDynamic("customQueryBasedSyncIdentifier")(customQueryBasedSyncIdentifier)
     if (custom_http_headers != null) __obj.updateDynamic("custom_http_headers")(custom_http_headers)

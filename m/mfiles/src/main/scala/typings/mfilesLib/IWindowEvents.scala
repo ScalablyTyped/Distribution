@@ -16,9 +16,7 @@ object IWindowEvents {
     Unregister: js.Function1[scala.Double, scala.Unit],
     OnCloseWindow: js.Function0[scala.Boolean] = null
   ): IWindowEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnCloseWindow != null) __obj.updateDynamic("OnCloseWindow")(OnCloseWindow)
     __obj.asInstanceOf[IWindowEvents]
   }

@@ -35,12 +35,8 @@ object XShapeGrouper {
     release: js.Function0[scala.Unit],
     ungroup: js.Function1[XShapeGroup, scala.Unit]
   ): XShapeGrouper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("ungroup")(ungroup)
+    val __obj = js.Dynamic.literal(acquire = acquire, group = group, queryInterface = queryInterface, release = release, ungroup = ungroup)
+  
     __obj.asInstanceOf[XShapeGrouper]
   }
 }

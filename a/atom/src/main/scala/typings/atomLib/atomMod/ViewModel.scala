@@ -12,8 +12,8 @@ trait ViewModel extends js.Object {
 object ViewModel {
   @scala.inline
   def apply(getTitle: js.Function0[java.lang.String]): ViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTitle")(getTitle)
+    val __obj = js.Dynamic.literal(getTitle = getTitle)
+  
     __obj.asInstanceOf[ViewModel]
   }
 }

@@ -44,12 +44,8 @@ object FCVolumeSource {
     targetWWNs: js.Array[java.lang.String],
     wwids: js.Array[java.lang.String]
   ): FCVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("lun")(lun)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("targetWWNs")(targetWWNs)
-    __obj.updateDynamic("wwids")(wwids)
+    val __obj = js.Dynamic.literal(fsType = fsType, lun = lun, readOnly = readOnly, targetWWNs = targetWWNs, wwids = wwids)
+  
     __obj.asInstanceOf[FCVolumeSource]
   }
 }

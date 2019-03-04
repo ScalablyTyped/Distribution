@@ -42,9 +42,7 @@ object DraftDecorator {
     ],
     props: js.Object = null
   ): DraftDecorator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("strategy")(strategy)
+    val __obj = js.Dynamic.literal(component = component, strategy = strategy)
     if (props != null) __obj.updateDynamic("props")(props)
     __obj.asInstanceOf[DraftDecorator]
   }

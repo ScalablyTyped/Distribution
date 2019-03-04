@@ -16,8 +16,7 @@ object CommentsRangeObject {
     from: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords,
     to: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellCoords = null
   ): CommentsRangeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
     if (to != null) __obj.updateDynamic("to")(to)
     __obj.asInstanceOf[CommentsRangeObject]
   }

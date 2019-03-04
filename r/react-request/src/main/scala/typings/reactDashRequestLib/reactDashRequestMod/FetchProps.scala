@@ -31,8 +31,7 @@ object FetchProps {
     signal: stdLib.AbortSignal = null,
     window: js.Any = null
   ): FetchProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (children != null) __obj.updateDynamic("children")(children)

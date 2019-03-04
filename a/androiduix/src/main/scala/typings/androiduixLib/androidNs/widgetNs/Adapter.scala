@@ -41,17 +41,8 @@ object Adapter {
     registerDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit],
     unregisterDataSetObserver: js.Function1[androiduixLib.androidNs.databaseNs.DataSetObserver, scala.Unit]
   ): Adapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getItemId")(getItemId)
-    __obj.updateDynamic("getItemViewType")(getItemViewType)
-    __obj.updateDynamic("getView")(getView)
-    __obj.updateDynamic("getViewTypeCount")(getViewTypeCount)
-    __obj.updateDynamic("hasStableIds")(hasStableIds)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("registerDataSetObserver")(registerDataSetObserver)
-    __obj.updateDynamic("unregisterDataSetObserver")(unregisterDataSetObserver)
+    val __obj = js.Dynamic.literal(getCount = getCount, getItem = getItem, getItemId = getItemId, getItemViewType = getItemViewType, getView = getView, getViewTypeCount = getViewTypeCount, hasStableIds = hasStableIds, isEmpty = isEmpty, registerDataSetObserver = registerDataSetObserver, unregisterDataSetObserver = unregisterDataSetObserver)
+  
     __obj.asInstanceOf[Adapter]
   }
 }

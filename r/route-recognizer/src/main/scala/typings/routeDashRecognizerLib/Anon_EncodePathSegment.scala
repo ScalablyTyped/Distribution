@@ -18,10 +18,8 @@ object Anon_EncodePathSegment {
     normalizePath: js.Function1[java.lang.String, java.lang.String],
     normalizeSegment: js.Function1[java.lang.String, java.lang.String]
   ): Anon_EncodePathSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encodePathSegment")(encodePathSegment)
-    __obj.updateDynamic("normalizePath")(normalizePath)
-    __obj.updateDynamic("normalizeSegment")(normalizeSegment)
+    val __obj = js.Dynamic.literal(encodePathSegment = encodePathSegment, normalizePath = normalizePath, normalizeSegment = normalizeSegment)
+  
     __obj.asInstanceOf[Anon_EncodePathSegment]
   }
 }

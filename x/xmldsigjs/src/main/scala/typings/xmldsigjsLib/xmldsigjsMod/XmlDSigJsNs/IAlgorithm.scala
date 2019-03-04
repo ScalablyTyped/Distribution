@@ -18,10 +18,8 @@ object IAlgorithm {
     getAlgorithmName: js.Function0[java.lang.String],
     namespaceURI: java.lang.String
   ): IAlgorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("getAlgorithmName")(getAlgorithmName)
-    __obj.updateDynamic("namespaceURI")(namespaceURI)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, getAlgorithmName = getAlgorithmName, namespaceURI = namespaceURI)
+  
     __obj.asInstanceOf[IAlgorithm]
   }
 }

@@ -13,8 +13,7 @@ trait AnimatedSpriteTextureTimeObject extends js.Object {
 object AnimatedSpriteTextureTimeObject {
   @scala.inline
   def apply(texture: pixiDotJsLib.PIXINs.Texture, time: scala.Int | scala.Double = null): AnimatedSpriteTextureTimeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("texture")(texture)
+    val __obj = js.Dynamic.literal(texture = texture)
     if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimatedSpriteTextureTimeObject]
   }

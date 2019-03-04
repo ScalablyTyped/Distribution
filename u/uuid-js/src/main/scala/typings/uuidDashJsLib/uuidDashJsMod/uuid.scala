@@ -28,12 +28,8 @@ object uuid {
     toString: js.Function0[java.lang.String],
     toURN: js.Function0[java.lang.String]
   ): uuid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("fromParts")(fromParts)
-    __obj.updateDynamic("toBytes")(toBytes)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toURN")(toURN)
+    val __obj = js.Dynamic.literal(equals = equals, fromParts = fromParts, toBytes = toBytes, toString = toString, toURN = toURN)
+  
     __obj.asInstanceOf[uuid]
   }
 }

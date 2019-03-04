@@ -23,11 +23,8 @@ object ConversationsInstance {
     registerMessageViewHandlerAll: js.Function1[js.Function1[/* messageView */ MessageView, scala.Unit], js.Function0[scala.Unit]],
     registerThreadViewHandler: js.Function1[js.Function1[/* threadView */ ThreadView, scala.Unit], js.Function0[scala.Unit]]
   ): ConversationsInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerFileAttachmentCardViewHandler")(registerFileAttachmentCardViewHandler)
-    __obj.updateDynamic("registerMessageViewHandler")(registerMessageViewHandler)
-    __obj.updateDynamic("registerMessageViewHandlerAll")(registerMessageViewHandlerAll)
-    __obj.updateDynamic("registerThreadViewHandler")(registerThreadViewHandler)
+    val __obj = js.Dynamic.literal(registerFileAttachmentCardViewHandler = registerFileAttachmentCardViewHandler, registerMessageViewHandler = registerMessageViewHandler, registerMessageViewHandlerAll = registerMessageViewHandlerAll, registerThreadViewHandler = registerThreadViewHandler)
+  
     __obj.asInstanceOf[ConversationsInstance]
   }
 }

@@ -27,8 +27,7 @@ object EventTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): EventTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (measurements != null) __obj.updateDynamic("measurements")(measurements)
     if (properties != null) __obj.updateDynamic("properties")(properties)

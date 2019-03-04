@@ -53,37 +53,8 @@ object LayeredDigraphVertex {
     x: scala.Double,
     y: scala.Double
   ): LayeredDigraphVertex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDestinationEdge")(addDestinationEdge)
-    __obj.updateDynamic("addSourceEdge")(addSourceEdge)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deleteDestinationEdge")(deleteDestinationEdge)
-    __obj.updateDynamic("deleteSourceEdge")(deleteSourceEdge)
-    __obj.updateDynamic("destinationEdges")(destinationEdges)
-    __obj.updateDynamic("destinationVertexes")(destinationVertexes)
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("edgesCount")(edgesCount)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("focusX")(focusX)
-    __obj.updateDynamic("focusY")(focusY)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("near")(near)
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("sourceEdges")(sourceEdges)
-    __obj.updateDynamic("sourceVertexes")(sourceVertexes)
-    __obj.updateDynamic("vertexes")(vertexes)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(addDestinationEdge = addDestinationEdge, addSourceEdge = addSourceEdge, bounds = bounds, centerX = centerX, centerY = centerY, column = column, commit = commit, component = component, data = data, deleteDestinationEdge = deleteDestinationEdge, deleteSourceEdge = deleteSourceEdge, destinationEdges = destinationEdges, destinationVertexes = destinationVertexes, edges = edges, edgesCount = edgesCount, focus = focus, focusX = focusX, focusY = focusY, height = height, index = index, layer = layer, near = near, network = network, node = node, sourceEdges = sourceEdges, sourceVertexes = sourceVertexes, vertexes = vertexes, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[LayeredDigraphVertex]
   }
 }

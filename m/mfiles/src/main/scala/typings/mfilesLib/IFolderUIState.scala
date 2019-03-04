@@ -30,16 +30,8 @@ object IFolderUIState {
     ShowBottomPaneBar: scala.Boolean,
     ShowRightPaneBar: scala.Boolean
   ): IFolderUIState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomPaneBarMinimized")(BottomPaneBarMinimized)
-    __obj.updateDynamic("HitHighlightingEnabled")(HitHighlightingEnabled)
-    __obj.updateDynamic("ListingUIState")(ListingUIState)
-    __obj.updateDynamic("MetadataEditorInRightPane")(MetadataEditorInRightPane)
-    __obj.updateDynamic("RelativeBottomPaneHeight")(RelativeBottomPaneHeight)
-    __obj.updateDynamic("RelativeRightPaneWidth")(RelativeRightPaneWidth)
-    __obj.updateDynamic("RightPaneBarMinimized")(RightPaneBarMinimized)
-    __obj.updateDynamic("ShowBottomPaneBar")(ShowBottomPaneBar)
-    __obj.updateDynamic("ShowRightPaneBar")(ShowRightPaneBar)
+    val __obj = js.Dynamic.literal(BottomPaneBarMinimized = BottomPaneBarMinimized, HitHighlightingEnabled = HitHighlightingEnabled, ListingUIState = ListingUIState, MetadataEditorInRightPane = MetadataEditorInRightPane, RelativeBottomPaneHeight = RelativeBottomPaneHeight, RelativeRightPaneWidth = RelativeRightPaneWidth, RightPaneBarMinimized = RightPaneBarMinimized, ShowBottomPaneBar = ShowBottomPaneBar, ShowRightPaneBar = ShowRightPaneBar)
+  
     __obj.asInstanceOf[IFolderUIState]
   }
 }

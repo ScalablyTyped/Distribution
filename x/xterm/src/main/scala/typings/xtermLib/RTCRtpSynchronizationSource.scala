@@ -17,9 +17,7 @@ object RTCRtpSynchronizationSource {
     audioLevel: scala.Int | scala.Double = null,
     voiceActivityFlag: js.UndefOr[scala.Boolean] = js.undefined
   ): RTCRtpSynchronizationSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(source = source, timestamp = timestamp)
     if (audioLevel != null) __obj.updateDynamic("audioLevel")(audioLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(voiceActivityFlag)) __obj.updateDynamic("voiceActivityFlag")(voiceActivityFlag)
     __obj.asInstanceOf[RTCRtpSynchronizationSource]

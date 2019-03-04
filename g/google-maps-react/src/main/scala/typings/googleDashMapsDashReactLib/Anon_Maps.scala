@@ -12,8 +12,8 @@ trait Anon_Maps extends js.Object {
 object Anon_Maps {
   @scala.inline
   def apply(mapsNs: Anon_Adsense): Anon_Maps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapsNs")(mapsNs)
+    val __obj = js.Dynamic.literal(mapsNs = mapsNs)
+  
     __obj.asInstanceOf[Anon_Maps]
   }
 }

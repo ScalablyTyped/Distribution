@@ -82,15 +82,8 @@ object IGenericVariable {
     setProperties: js.Function1[IGenericVariableProperties, js.Promise[scala.Unit]],
     setStringValue: js.Function1[java.lang.String, js.Promise[scala.Unit]]
   ): IGenericVariable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyPatches")(applyPatches)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getLayout")(getLayout)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("setDualValue")(setDualValue)
-    __obj.updateDynamic("setNumValue")(setNumValue)
-    __obj.updateDynamic("setProperties")(setProperties)
-    __obj.updateDynamic("setStringValue")(setStringValue)
+    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getInfo = getInfo, getLayout = getLayout, getProperties = getProperties, setDualValue = setDualValue, setNumValue = setNumValue, setProperties = setProperties, setStringValue = setStringValue)
+  
     __obj.asInstanceOf[IGenericVariable]
   }
 }

@@ -20,10 +20,8 @@ object ViewSelector {
     isVisible: js.Function0[scala.Boolean],
     setCurrentView: js.Function1[xrmLib.XrmNs.ControlsNs.ViewSelectorItem, scala.Unit]
   ): ViewSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentView")(getCurrentView)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("setCurrentView")(setCurrentView)
+    val __obj = js.Dynamic.literal(getCurrentView = getCurrentView, isVisible = isVisible, setCurrentView = setCurrentView)
+  
     __obj.asInstanceOf[ViewSelector]
   }
 }

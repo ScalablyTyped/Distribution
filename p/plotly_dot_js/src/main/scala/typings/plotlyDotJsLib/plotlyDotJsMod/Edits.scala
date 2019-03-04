@@ -32,17 +32,8 @@ object Edits {
     shapePosition: scala.Boolean,
     titleText: scala.Boolean
   ): Edits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationPosition")(annotationPosition)
-    __obj.updateDynamic("annotationTail")(annotationTail)
-    __obj.updateDynamic("annotationText")(annotationText)
-    __obj.updateDynamic("axisTitleText")(axisTitleText)
-    __obj.updateDynamic("colorbarPosition")(colorbarPosition)
-    __obj.updateDynamic("colorbarTitleText")(colorbarTitleText)
-    __obj.updateDynamic("legendPosition")(legendPosition)
-    __obj.updateDynamic("legendText")(legendText)
-    __obj.updateDynamic("shapePosition")(shapePosition)
-    __obj.updateDynamic("titleText")(titleText)
+    val __obj = js.Dynamic.literal(annotationPosition = annotationPosition, annotationTail = annotationTail, annotationText = annotationText, axisTitleText = axisTitleText, colorbarPosition = colorbarPosition, colorbarTitleText = colorbarTitleText, legendPosition = legendPosition, legendText = legendText, shapePosition = shapePosition, titleText = titleText)
+  
     __obj.asInstanceOf[Edits]
   }
 }

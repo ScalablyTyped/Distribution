@@ -32,11 +32,8 @@ object TranslationTable {
     moreData: java.lang.String,
     noData: java.lang.String
   ): TranslationTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadError")(loadError)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("moreData")(moreData)
-    __obj.updateDynamic("noData")(noData)
+    val __obj = js.Dynamic.literal(loadError = loadError, loading = loading, moreData = moreData, noData = noData)
+  
     __obj.asInstanceOf[TranslationTable]
   }
 }

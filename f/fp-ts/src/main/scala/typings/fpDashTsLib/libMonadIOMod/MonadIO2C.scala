@@ -33,14 +33,8 @@ object MonadIO2C {
     ],
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type2[M, L, js.Any]]
   ): MonadIO2C[M, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("fromIO")(fromIO)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], ap = ap, chain = chain, fromIO = fromIO, map = map, of = of)
+  
     __obj.asInstanceOf[MonadIO2C[M, L]]
   }
 }

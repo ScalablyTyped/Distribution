@@ -38,11 +38,8 @@ object TSMethodSignature {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSMethodSignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(computed = computed, key = key, optional = optional, parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSMethodSignature]

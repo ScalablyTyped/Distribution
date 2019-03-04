@@ -32,9 +32,7 @@ object HotpOptions {
     key: java.lang.String = null,
     length: scala.Int | scala.Double = null
   ): HotpOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counter")(counter)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(counter = counter, secret = secret)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (digest != null) __obj.updateDynamic("digest")(digest)
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])

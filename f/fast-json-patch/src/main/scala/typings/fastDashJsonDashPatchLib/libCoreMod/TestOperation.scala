@@ -17,10 +17,8 @@ object TestOperation {
     path: java.lang.String,
     value: T
   ): TestOperation[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(op = op, path = path, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TestOperation[T]]
   }
 }

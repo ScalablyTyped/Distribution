@@ -18,8 +18,7 @@ object TrafficLayerOptions {
     overlayMap: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): TrafficLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
+    val __obj = js.Dynamic.literal(interval = interval)
     if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficLayerOptions]

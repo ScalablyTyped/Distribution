@@ -19,8 +19,7 @@ object GetPolyfillStringOptions {
     minify: js.UndefOr[scala.Boolean] = js.undefined,
     unknown: Unknown = null
   ): GetPolyfillStringOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uaString")(uaString)
+    val __obj = js.Dynamic.literal(uaString = uaString)
     if (excludes != null) __obj.updateDynamic("excludes")(excludes)
     if (features != null) __obj.updateDynamic("features")(features)
     if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify)

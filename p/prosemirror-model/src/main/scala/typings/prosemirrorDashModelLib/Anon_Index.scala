@@ -18,9 +18,7 @@ object Anon_Index {
     offset: scala.Double,
     node: prosemirrorDashModelLib.prosemirrorDashModelMod.ProsemirrorNode[S] = null
   ): Anon_Index[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(index = index, offset = offset)
     if (node != null) __obj.updateDynamic("node")(node)
     __obj.asInstanceOf[Anon_Index[S]]
   }

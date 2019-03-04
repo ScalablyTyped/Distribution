@@ -22,9 +22,7 @@ object Anon_EventsFilterPrefixFilterSuffixIdQueueArn {
     filterSuffix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     id: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EventsFilterPrefixFilterSuffixIdQueueArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    __obj.updateDynamic("queueArn")(queueArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], queueArn = queueArn.asInstanceOf[js.Any])
     if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix.asInstanceOf[js.Any])
     if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

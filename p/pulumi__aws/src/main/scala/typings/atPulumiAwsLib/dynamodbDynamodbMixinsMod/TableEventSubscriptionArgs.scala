@@ -22,8 +22,7 @@ object TableEventSubscriptionArgs {
     startingPosition: atPulumiAwsLib.atPulumiAwsLibStrings.TRIM_HORIZON | atPulumiAwsLib.atPulumiAwsLibStrings.LATEST,
     batchSize: scala.Int | scala.Double = null
   ): TableEventSubscriptionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(startingPosition = startingPosition.asInstanceOf[js.Any])
     if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableEventSubscriptionArgs]
   }

@@ -32,9 +32,7 @@ object TimelineGroup {
     title: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): TimelineGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups)
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])

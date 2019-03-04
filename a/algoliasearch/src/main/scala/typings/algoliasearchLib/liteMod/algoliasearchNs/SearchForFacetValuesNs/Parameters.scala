@@ -77,9 +77,7 @@ object Parameters {
     typoTolerance: js.UndefOr[scala.Boolean] = js.undefined,
     userData: java.lang.String | js.Object = null
   ): Parameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("facetName")(facetName)
-    __obj.updateDynamic("facetQuery")(facetQuery)
+    val __obj = js.Dynamic.literal(facetName = facetName, facetQuery = facetQuery)
     if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax)
     if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens)
     if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact)

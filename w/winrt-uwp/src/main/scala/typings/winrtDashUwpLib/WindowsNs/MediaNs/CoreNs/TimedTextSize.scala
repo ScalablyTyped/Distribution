@@ -18,10 +18,8 @@ trait TimedTextSize extends js.Object {
 object TimedTextSize {
   @scala.inline
   def apply(height: scala.Double, unit: TimedTextUnit, width: scala.Double): TimedTextSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, unit = unit, width = width)
+  
     __obj.asInstanceOf[TimedTextSize]
   }
 }

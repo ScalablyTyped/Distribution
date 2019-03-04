@@ -29,9 +29,7 @@ object IRouterParamContext {
     _matchedRoute: java.lang.String | stdLib.RegExp = null,
     _matchedRouteName: java.lang.String = null
   ): IRouterParamContext[StateT, CustomT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("router")(router)
+    val __obj = js.Dynamic.literal(params = params, router = router)
     if (_matchedRoute != null) __obj.updateDynamic("_matchedRoute")(_matchedRoute.asInstanceOf[js.Any])
     if (_matchedRouteName != null) __obj.updateDynamic("_matchedRouteName")(_matchedRouteName)
     __obj.asInstanceOf[IRouterParamContext[StateT, CustomT]]

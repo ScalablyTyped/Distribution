@@ -18,10 +18,8 @@ object MappingEngine {
     getSites: js.Function0[js.Array[java.lang.String]],
     setSites: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): MappingEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findSite")(findSite)
-    __obj.updateDynamic("getSites")(getSites)
-    __obj.updateDynamic("setSites")(setSites)
+    val __obj = js.Dynamic.literal(findSite = findSite, getSites = getSites, setSites = setSites)
+  
     __obj.asInstanceOf[MappingEngine]
   }
 }

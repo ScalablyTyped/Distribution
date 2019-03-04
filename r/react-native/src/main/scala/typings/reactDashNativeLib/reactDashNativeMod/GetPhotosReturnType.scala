@@ -16,9 +16,8 @@ object GetPhotosReturnType {
     edges: js.Array[reactDashNativeLib.Anon_Node],
     page_info: reactDashNativeLib.Anon_EndcursorHasnextpage
   ): GetPhotosReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("page_info")(page_info)
+    val __obj = js.Dynamic.literal(edges = edges, page_info = page_info)
+  
     __obj.asInstanceOf[GetPhotosReturnType]
   }
 }

@@ -20,11 +20,8 @@ object Record {
     status: java.lang.String,
     unicode: scala.Double
   ): Record = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keysym")(keysym)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("unicode")(unicode)
+    val __obj = js.Dynamic.literal(keysym = keysym, names = names, status = status, unicode = unicode)
+  
     __obj.asInstanceOf[Record]
   }
 }

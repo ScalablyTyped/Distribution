@@ -32,11 +32,8 @@ object Anon_CharacteristicIdDeviceId {
     serviceId: java.lang.String,
     value: stdLib.ArrayBuffer
   ): Anon_CharacteristicIdDeviceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("characteristicId")(characteristicId)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("serviceId")(serviceId)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId, deviceId = deviceId, serviceId = serviceId, value = value)
+  
     __obj.asInstanceOf[Anon_CharacteristicIdDeviceId]
   }
 }

@@ -20,10 +20,7 @@ object SparkPostError {
     statusCode: scala.Double,
     stack: java.lang.String = null
   ): SparkPostError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], name = name, statusCode = statusCode)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[SparkPostError]
   }

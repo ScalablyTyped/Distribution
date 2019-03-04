@@ -24,8 +24,7 @@ object RPCLoginOptions {
     scopes: js.Array[java.lang.String] = null,
     tokenEndpoint: java.lang.String = null
   ): RPCLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
+    val __obj = js.Dynamic.literal(clientId = clientId)
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
     if (rpcToken != null) __obj.updateDynamic("rpcToken")(rpcToken)

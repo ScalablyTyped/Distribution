@@ -20,9 +20,7 @@ object RefsQueryResult {
     refs: js.Array[ternLib.Anon_End],
     `type`: ternLib.ternLibStrings.global | ternLib.ternLibStrings.local = null
   ): RefsQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("refs")(refs)
+    val __obj = js.Dynamic.literal(name = name, refs = refs)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefsQueryResult]
   }

@@ -39,13 +39,8 @@ object MDCLineRippleAdapter {
     removeClass: js.Function1[java.lang.String, scala.Unit],
     setStyle: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): MDCLineRippleAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterEventHandler")(deregisterEventHandler)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("registerEventHandler")(registerEventHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setStyle")(setStyle)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterEventHandler = deregisterEventHandler, hasClass = hasClass, registerEventHandler = registerEventHandler, removeClass = removeClass, setStyle = setStyle)
+  
     __obj.asInstanceOf[MDCLineRippleAdapter]
   }
 }

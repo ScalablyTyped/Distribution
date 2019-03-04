@@ -19,8 +19,7 @@ object OptionsAll {
     path: java.lang.String = null,
     pathExt: java.lang.String = null
   ): OptionsAll = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
+    val __obj = js.Dynamic.literal(all = all)
     if (colon != null) __obj.updateDynamic("colon")(colon)
     if (!js.isUndefined(nothrow)) __obj.updateDynamic("nothrow")(nothrow)
     if (path != null) __obj.updateDynamic("path")(path)

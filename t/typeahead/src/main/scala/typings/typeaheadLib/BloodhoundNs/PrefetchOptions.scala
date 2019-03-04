@@ -73,8 +73,7 @@ object PrefetchOptions {
     transform: js.Function1[/* response */ T, T] = null,
     ttl: scala.Int | scala.Double = null
   ): PrefetchOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (cacheKey != null) __obj.updateDynamic("cacheKey")(cacheKey)
     if (prepare != null) __obj.updateDynamic("prepare")(prepare)

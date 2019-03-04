@@ -38,9 +38,7 @@ object Request {
     method: java.lang.String = null,
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("is")(is)
+    val __obj = js.Dynamic.literal(get = get, is = is)
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

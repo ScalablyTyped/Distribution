@@ -12,8 +12,8 @@ trait Anon_NativeEvent extends js.Object {
 object Anon_NativeEvent {
   @scala.inline
   def apply(nativeEvent: Anon_LayoutAnonHeightWidth): Anon_NativeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
     __obj.asInstanceOf[Anon_NativeEvent]
   }
 }

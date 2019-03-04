@@ -14,10 +14,8 @@ trait RangeSelectInfo extends js.Object {
 object RangeSelectInfo {
   @scala.inline
   def apply(qMeasure: java.lang.String, qRangeHi: scala.Double, qRangeLo: scala.Double): RangeSelectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qMeasure")(qMeasure)
-    __obj.updateDynamic("qRangeHi")(qRangeHi)
-    __obj.updateDynamic("qRangeLo")(qRangeLo)
+    val __obj = js.Dynamic.literal(qMeasure = qMeasure, qRangeHi = qRangeHi, qRangeLo = qRangeLo)
+  
     __obj.asInstanceOf[RangeSelectInfo]
   }
 }

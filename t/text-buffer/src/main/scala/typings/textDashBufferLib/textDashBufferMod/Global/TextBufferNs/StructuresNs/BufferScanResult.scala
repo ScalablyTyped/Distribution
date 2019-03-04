@@ -28,14 +28,8 @@ object BufferScanResult {
     stop: js.Function0[scala.Unit],
     stopped: scala.Boolean
   ): BufferScanResult = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("lineText")(lineText)
-    __obj.updateDynamic("matchText")(matchText)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopped")(stopped)
+    val __obj = js.Dynamic.literal(buffer = buffer, lineText = lineText, matchText = matchText, range = range, replace = replace, stop = stop, stopped = stopped)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[BufferScanResult]
   }
 }

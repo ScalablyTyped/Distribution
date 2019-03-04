@@ -18,9 +18,8 @@ object UnnestSqlTokenType {
     tuples: js.Array[js.Array[PrimitiveValueExpressionType]],
     `type`: js.Symbol
   ): UnnestSqlTokenType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("columnTypes")(columnTypes)
-    __obj.updateDynamic("tuples")(tuples)
+    val __obj = js.Dynamic.literal(columnTypes = columnTypes, tuples = tuples)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UnnestSqlTokenType]
   }
 }

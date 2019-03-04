@@ -44,23 +44,8 @@ object XMLDocumentWrapper {
     removeCurrentElement: js.Function0[scala.Unit],
     setCurrentElement: js.Function1[XXMLElementWrapper, scala.Unit]
   ): XMLDocumentWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentElement")(CurrentElement)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearUselessData")(clearUselessData)
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("generateSAXEvents")(generateSAXEvents)
-    __obj.updateDynamic("getCurrentElement")(getCurrentElement)
-    __obj.updateDynamic("getNodeName")(getNodeName)
-    __obj.updateDynamic("getTree")(getTree)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isCurrent")(isCurrent)
-    __obj.updateDynamic("isCurrentElementEmpty")(isCurrentElementEmpty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rebuildIDLink")(rebuildIDLink)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeCurrentElement")(removeCurrentElement)
-    __obj.updateDynamic("setCurrentElement")(setCurrentElement)
+    val __obj = js.Dynamic.literal(CurrentElement = CurrentElement, acquire = acquire, clearUselessData = clearUselessData, collapse = collapse, generateSAXEvents = generateSAXEvents, getCurrentElement = getCurrentElement, getNodeName = getNodeName, getTree = getTree, initialize = initialize, isCurrent = isCurrent, isCurrentElementEmpty = isCurrentElementEmpty, queryInterface = queryInterface, rebuildIDLink = rebuildIDLink, release = release, removeCurrentElement = removeCurrentElement, setCurrentElement = setCurrentElement)
+  
     __obj.asInstanceOf[XMLDocumentWrapper]
   }
 }

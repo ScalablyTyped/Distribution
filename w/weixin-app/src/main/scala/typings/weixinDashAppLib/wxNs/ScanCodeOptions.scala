@@ -31,8 +31,7 @@ object ScanCodeOptions {
     onlyFromCamera: js.UndefOr[scala.Boolean] = js.undefined,
     scanType: js.Array[java.lang.String] = null
   ): ScanCodeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera)

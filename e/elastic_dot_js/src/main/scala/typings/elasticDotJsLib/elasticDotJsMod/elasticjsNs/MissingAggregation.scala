@@ -43,12 +43,8 @@ object MissingAggregation {
     field: js.Function1[java.lang.String, MissingAggregation],
     toJSON: js.Function0[js.Any]
   ): MissingAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, field = field, toJSON = toJSON)
+  
     __obj.asInstanceOf[MissingAggregation]
   }
 }

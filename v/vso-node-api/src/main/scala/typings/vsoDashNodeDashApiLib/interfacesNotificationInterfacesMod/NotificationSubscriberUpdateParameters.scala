@@ -22,9 +22,8 @@ object NotificationSubscriberUpdateParameters {
     deliveryPreference: NotificationSubscriberDeliveryPreference,
     preferredEmailAddress: java.lang.String
   ): NotificationSubscriberUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryPreference")(deliveryPreference)
-    __obj.updateDynamic("preferredEmailAddress")(preferredEmailAddress)
+    val __obj = js.Dynamic.literal(deliveryPreference = deliveryPreference, preferredEmailAddress = preferredEmailAddress)
+  
     __obj.asInstanceOf[NotificationSubscriberUpdateParameters]
   }
 }

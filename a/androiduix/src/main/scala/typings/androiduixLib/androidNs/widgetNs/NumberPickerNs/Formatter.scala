@@ -12,8 +12,8 @@ trait Formatter extends js.Object {
 object Formatter {
   @scala.inline
   def apply(format: js.Function1[scala.Double, java.lang.String]): Formatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+  
     __obj.asInstanceOf[Formatter]
   }
 }

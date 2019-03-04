@@ -12,8 +12,8 @@ trait ReleaseDefinitionGate extends js.Object {
 object ReleaseDefinitionGate {
   @scala.inline
   def apply(tasks: js.Array[WorkflowTask]): ReleaseDefinitionGate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tasks")(tasks)
+    val __obj = js.Dynamic.literal(tasks = tasks)
+  
     __obj.asInstanceOf[ReleaseDefinitionGate]
   }
 }

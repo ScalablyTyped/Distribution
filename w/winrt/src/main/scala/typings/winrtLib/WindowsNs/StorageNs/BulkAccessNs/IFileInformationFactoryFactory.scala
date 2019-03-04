@@ -60,11 +60,8 @@ object IFileInformationFactoryFactory {
       FileInformationFactory
     ]
   ): IFileInformationFactoryFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWithMode")(createWithMode)
-    __obj.updateDynamic("createWithModeAndSize")(createWithModeAndSize)
-    __obj.updateDynamic("createWithModeAndSizeAndOptions")(createWithModeAndSizeAndOptions)
-    __obj.updateDynamic("createWithModeAndSizeAndOptionsAndFlags")(createWithModeAndSizeAndOptionsAndFlags)
+    val __obj = js.Dynamic.literal(createWithMode = createWithMode, createWithModeAndSize = createWithModeAndSize, createWithModeAndSizeAndOptions = createWithModeAndSizeAndOptions, createWithModeAndSizeAndOptionsAndFlags = createWithModeAndSizeAndOptionsAndFlags)
+  
     __obj.asInstanceOf[IFileInformationFactoryFactory]
   }
 }

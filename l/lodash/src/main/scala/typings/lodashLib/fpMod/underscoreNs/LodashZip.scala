@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashZip extends js.Object {
   def apply[T1](arrays1: lodashLib.lodashMod.underscoreNs.List[T1]): LodashZip1x1[T1] = js.native
-  def apply[T2](arrays1: lodashLib.lodashMod.underscoreNs.`__`, arrays2: lodashLib.lodashMod.underscoreNs.List[T2]): LodashZip1x2[T2] = js.native
+  def apply[T2](arrays1: lodashLib.lodashMod.underscoreNs.__, arrays2: lodashLib.lodashMod.underscoreNs.List[T2]): LodashZip1x2[T2] = js.native
   def apply[T1, T2](
     arrays1: lodashLib.lodashMod.underscoreNs.List[T1],
     arrays2: lodashLib.lodashMod.underscoreNs.List[T2]

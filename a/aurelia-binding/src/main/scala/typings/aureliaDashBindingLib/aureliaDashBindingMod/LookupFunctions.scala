@@ -16,9 +16,8 @@ object LookupFunctions {
     bindingBehaviors: js.Function1[java.lang.String, js.Any],
     valueConverters: js.Function1[java.lang.String, js.Any]
   ): LookupFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingBehaviors")(bindingBehaviors)
-    __obj.updateDynamic("valueConverters")(valueConverters)
+    val __obj = js.Dynamic.literal(bindingBehaviors = bindingBehaviors, valueConverters = valueConverters)
+  
     __obj.asInstanceOf[LookupFunctions]
   }
 }

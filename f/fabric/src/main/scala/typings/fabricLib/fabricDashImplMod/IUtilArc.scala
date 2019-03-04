@@ -89,10 +89,8 @@ object IUtilArc {
       js.Array[Point]
     ]
   ): IUtilArc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawArc")(drawArc)
-    __obj.updateDynamic("getBoundsOfArc")(getBoundsOfArc)
-    __obj.updateDynamic("getBoundsOfCurve")(getBoundsOfCurve)
+    val __obj = js.Dynamic.literal(drawArc = drawArc, getBoundsOfArc = getBoundsOfArc, getBoundsOfCurve = getBoundsOfCurve)
+  
     __obj.asInstanceOf[IUtilArc]
   }
 }

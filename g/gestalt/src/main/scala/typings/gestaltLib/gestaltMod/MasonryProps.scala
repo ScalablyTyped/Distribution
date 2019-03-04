@@ -36,9 +36,7 @@ object MasonryProps {
     scrollContainer: js.Function0[reactLib.HTMLElement] = null,
     virtualize: js.UndefOr[scala.Boolean] = js.undefined
   ): MasonryProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comp")(comp.asInstanceOf[js.Any])
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(comp = comp.asInstanceOf[js.Any], items = items)
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(flexible)) __obj.updateDynamic("flexible")(flexible)
     if (gutterWidth != null) __obj.updateDynamic("gutterWidth")(gutterWidth.asInstanceOf[js.Any])

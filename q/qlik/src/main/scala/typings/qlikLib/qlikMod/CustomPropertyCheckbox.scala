@@ -22,7 +22,8 @@ object CustomPropertyCheckbox {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyCheckbox = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue)
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)

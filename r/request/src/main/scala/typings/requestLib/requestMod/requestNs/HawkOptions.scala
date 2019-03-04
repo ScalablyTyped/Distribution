@@ -12,8 +12,8 @@ trait HawkOptions extends js.Object {
 object HawkOptions {
   @scala.inline
   def apply(credentials: js.Any): HawkOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credentials")(credentials)
+    val __obj = js.Dynamic.literal(credentials = credentials)
+  
     __obj.asInstanceOf[HawkOptions]
   }
 }

@@ -14,8 +14,8 @@ object IToastNotificationFactory {
   def apply(
     createToastNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, ToastNotification]
   ): IToastNotificationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createToastNotification")(createToastNotification)
+    val __obj = js.Dynamic.literal(createToastNotification = createToastNotification)
+  
     __obj.asInstanceOf[IToastNotificationFactory]
   }
 }

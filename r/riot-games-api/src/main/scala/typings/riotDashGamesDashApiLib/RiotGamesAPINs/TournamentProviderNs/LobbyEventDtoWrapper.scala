@@ -12,8 +12,8 @@ trait LobbyEventDtoWrapper extends js.Object {
 object LobbyEventDtoWrapper {
   @scala.inline
   def apply(eventList: js.Array[LobbyEventDto]): LobbyEventDtoWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventList")(eventList)
+    val __obj = js.Dynamic.literal(eventList = eventList)
+  
     __obj.asInstanceOf[LobbyEventDtoWrapper]
   }
 }

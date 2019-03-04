@@ -26,14 +26,8 @@ object AsObject {
     responseTypeUrl: java.lang.String,
     syntax: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionsList")(optionsList)
-    __obj.updateDynamic("requestStreaming")(requestStreaming)
-    __obj.updateDynamic("requestTypeUrl")(requestTypeUrl)
-    __obj.updateDynamic("responseStreaming")(responseStreaming)
-    __obj.updateDynamic("responseTypeUrl")(responseTypeUrl)
-    __obj.updateDynamic("syntax")(syntax)
+    val __obj = js.Dynamic.literal(name = name, optionsList = optionsList, requestStreaming = requestStreaming, requestTypeUrl = requestTypeUrl, responseStreaming = responseStreaming, responseTypeUrl = responseTypeUrl, syntax = syntax)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

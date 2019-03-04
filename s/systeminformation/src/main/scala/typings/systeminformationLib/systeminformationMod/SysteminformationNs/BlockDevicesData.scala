@@ -36,18 +36,8 @@ object BlockDevicesData {
     `type`: java.lang.String,
     uuid: java.lang.String
   ): BlockDevicesData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fstype")(fstype)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("physical")(physical)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("removable")(removable)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(fstype = fstype, label = label, model = model, mount = mount, name = name, physical = physical, protocol = protocol, removable = removable, serial = serial, size = size, uuid = uuid)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BlockDevicesData]
   }
 }

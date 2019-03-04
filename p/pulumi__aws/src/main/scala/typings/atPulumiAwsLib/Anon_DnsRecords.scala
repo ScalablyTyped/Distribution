@@ -18,9 +18,7 @@ object Anon_DnsRecords {
     namespaceId: java.lang.String,
     routingPolicy: java.lang.String = null
   ): Anon_DnsRecords = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsRecords")(dnsRecords)
-    __obj.updateDynamic("namespaceId")(namespaceId)
+    val __obj = js.Dynamic.literal(dnsRecords = dnsRecords, namespaceId = namespaceId)
     if (routingPolicy != null) __obj.updateDynamic("routingPolicy")(routingPolicy)
     __obj.asInstanceOf[Anon_DnsRecords]
   }

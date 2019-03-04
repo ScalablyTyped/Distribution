@@ -36,18 +36,8 @@ object MDCCheckboxAdapter {
     removeNativeControlAttr: js.Function1[java.lang.String, scala.Unit],
     setNativeControlAttr: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): MDCCheckboxAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("deregisterAnimationEndHandler")(deregisterAnimationEndHandler)
-    __obj.updateDynamic("deregisterChangeHandler")(deregisterChangeHandler)
-    __obj.updateDynamic("forceLayout")(forceLayout)
-    __obj.updateDynamic("getNativeControl")(getNativeControl)
-    __obj.updateDynamic("isAttachedToDOM")(isAttachedToDOM)
-    __obj.updateDynamic("registerAnimationEndHandler")(registerAnimationEndHandler)
-    __obj.updateDynamic("registerChangeHandler")(registerChangeHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("removeNativeControlAttr")(removeNativeControlAttr)
-    __obj.updateDynamic("setNativeControlAttr")(setNativeControlAttr)
+    val __obj = js.Dynamic.literal(addClass = addClass, deregisterAnimationEndHandler = deregisterAnimationEndHandler, deregisterChangeHandler = deregisterChangeHandler, forceLayout = forceLayout, getNativeControl = getNativeControl, isAttachedToDOM = isAttachedToDOM, registerAnimationEndHandler = registerAnimationEndHandler, registerChangeHandler = registerChangeHandler, removeClass = removeClass, removeNativeControlAttr = removeNativeControlAttr, setNativeControlAttr = setNativeControlAttr)
+  
     __obj.asInstanceOf[MDCCheckboxAdapter]
   }
 }

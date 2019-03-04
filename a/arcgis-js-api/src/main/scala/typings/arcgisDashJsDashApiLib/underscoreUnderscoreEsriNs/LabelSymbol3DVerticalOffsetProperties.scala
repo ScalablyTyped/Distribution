@@ -37,10 +37,7 @@ object LabelSymbol3DVerticalOffsetProperties {
     minWorldLength: scala.Int | scala.Double = null,
     screenLength: scala.Int | scala.Double = null
   ): LabelSymbol3DVerticalOffsetProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (maxWorldLength != null) __obj.updateDynamic("maxWorldLength")(maxWorldLength.asInstanceOf[js.Any])
     if (minWorldLength != null) __obj.updateDynamic("minWorldLength")(minWorldLength.asInstanceOf[js.Any])
     if (screenLength != null) __obj.updateDynamic("screenLength")(screenLength.asInstanceOf[js.Any])

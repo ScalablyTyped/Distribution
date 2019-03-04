@@ -29,12 +29,8 @@ object XStyleFamiliesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XStyleFamiliesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StyleFamilies")(StyleFamilies)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStyleFamilies")(getStyleFamilies)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(StyleFamilies = StyleFamilies, acquire = acquire, getStyleFamilies = getStyleFamilies, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XStyleFamiliesSupplier]
   }
 }

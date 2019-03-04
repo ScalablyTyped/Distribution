@@ -12,9 +12,8 @@ trait MessageOpensResult extends PaginatedResult {
 object MessageOpensResult {
   @scala.inline
   def apply(Opens: js.Array[MessageOpens], TotalCount: scala.Double): MessageOpensResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Opens")(Opens)
-    __obj.updateDynamic("TotalCount")(TotalCount)
+    val __obj = js.Dynamic.literal(Opens = Opens, TotalCount = TotalCount)
+  
     __obj.asInstanceOf[MessageOpensResult]
   }
 }

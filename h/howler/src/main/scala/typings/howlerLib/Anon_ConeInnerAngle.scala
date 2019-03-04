@@ -28,12 +28,7 @@ object Anon_ConeInnerAngle {
     coneOuterAngle: scala.Int | scala.Double = null,
     coneOuterGain: scala.Int | scala.Double = null
   ): Anon_ConeInnerAngle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distanceModel")(distanceModel.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxDistance")(maxDistance)
-    __obj.updateDynamic("panningModel")(panningModel.asInstanceOf[js.Any])
-    __obj.updateDynamic("refDistance")(refDistance)
-    __obj.updateDynamic("rolloffFactor")(rolloffFactor)
+    val __obj = js.Dynamic.literal(distanceModel = distanceModel.asInstanceOf[js.Any], maxDistance = maxDistance, panningModel = panningModel.asInstanceOf[js.Any], refDistance = refDistance, rolloffFactor = rolloffFactor)
     if (coneInnerAngle != null) __obj.updateDynamic("coneInnerAngle")(coneInnerAngle.asInstanceOf[js.Any])
     if (coneOuterAngle != null) __obj.updateDynamic("coneOuterAngle")(coneOuterAngle.asInstanceOf[js.Any])
     if (coneOuterGain != null) __obj.updateDynamic("coneOuterGain")(coneOuterGain.asInstanceOf[js.Any])

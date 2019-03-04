@@ -53,9 +53,7 @@ object ModalOptions {
     showCancel: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Function1[/* res */ baiduDashAppLib.Anon_Cancel, scala.Unit] = null
   ): ModalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(content = content, title = title)
     if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
     if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
     if (complete != null) __obj.updateDynamic("complete")(complete)

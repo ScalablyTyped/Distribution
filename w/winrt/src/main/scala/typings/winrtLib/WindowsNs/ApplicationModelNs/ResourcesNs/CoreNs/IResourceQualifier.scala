@@ -22,12 +22,8 @@ object IResourceQualifier {
     qualifierValue: java.lang.String,
     score: scala.Double
   ): IResourceQualifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isMatch")(isMatch)
-    __obj.updateDynamic("qualifierName")(qualifierName)
-    __obj.updateDynamic("qualifierValue")(qualifierValue)
-    __obj.updateDynamic("score")(score)
+    val __obj = js.Dynamic.literal(isDefault = isDefault, isMatch = isMatch, qualifierName = qualifierName, qualifierValue = qualifierValue, score = score)
+  
     __obj.asInstanceOf[IResourceQualifier]
   }
 }

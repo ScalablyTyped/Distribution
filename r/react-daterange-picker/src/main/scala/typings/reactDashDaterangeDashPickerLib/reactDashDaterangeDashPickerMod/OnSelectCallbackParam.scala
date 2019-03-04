@@ -13,9 +13,8 @@ trait OnSelectCallbackParam extends js.Object {
 object OnSelectCallbackParam {
   @scala.inline
   def apply(end: momentLib.momentMod.momentNs.Moment, start: momentLib.momentMod.momentNs.Moment): OnSelectCallbackParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[OnSelectCallbackParam]
   }
 }

@@ -20,11 +20,8 @@ object Anon_FAILURE {
     NO_SUCH_DEVICE: chromeDashAppsLib.chromeDashAppsLibStrings.no_such_device,
     SUCCESS: chromeDashAppsLib.chromeDashAppsLibStrings.success
   ): Anon_FAILURE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FAILURE")(FAILURE)
-    __obj.updateDynamic("IN_USE")(IN_USE)
-    __obj.updateDynamic("NO_SUCH_DEVICE")(NO_SUCH_DEVICE)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    val __obj = js.Dynamic.literal(FAILURE = FAILURE, IN_USE = IN_USE, NO_SUCH_DEVICE = NO_SUCH_DEVICE, SUCCESS = SUCCESS)
+  
     __obj.asInstanceOf[Anon_FAILURE]
   }
 }

@@ -34,11 +34,7 @@ object Anon_Alert {
     sat: scala.Int | scala.Double = null,
     xy: js.Tuple2[scala.Double, scala.Double] = null
   ): Anon_Alert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("bri")(bri)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("reachable")(reachable)
+    val __obj = js.Dynamic.literal(alert = alert, bri = bri, on = on, reachable = reachable)
     if (colormode != null) __obj.updateDynamic("colormode")(colormode)
     if (ct != null) __obj.updateDynamic("ct")(ct.asInstanceOf[js.Any])
     if (effect != null) __obj.updateDynamic("effect")(effect)

@@ -14,8 +14,8 @@ object ISyndicationClientFactory {
   def apply(
     createSyndicationClient: js.Function1[winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential, SyndicationClient]
   ): ISyndicationClientFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationClient")(createSyndicationClient)
+    val __obj = js.Dynamic.literal(createSyndicationClient = createSyndicationClient)
+  
     __obj.asInstanceOf[ISyndicationClientFactory]
   }
 }

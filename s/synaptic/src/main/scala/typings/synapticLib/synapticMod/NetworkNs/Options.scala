@@ -18,10 +18,8 @@ object Options {
     input: synapticLib.synapticMod.Layer,
     output: synapticLib.synapticMod.Layer
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(hidden = hidden, input = input, output = output)
+  
     __obj.asInstanceOf[Options]
   }
 }

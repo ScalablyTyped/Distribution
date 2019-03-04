@@ -22,12 +22,8 @@ object ObjModel {
     vertexNormals: js.Array[Vertex],
     vertices: js.Array[Vertex]
   ): ObjModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faces")(faces)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("textureCoords")(textureCoords)
-    __obj.updateDynamic("vertexNormals")(vertexNormals)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(faces = faces, name = name, textureCoords = textureCoords, vertexNormals = vertexNormals, vertices = vertices)
+  
     __obj.asInstanceOf[ObjModel]
   }
 }

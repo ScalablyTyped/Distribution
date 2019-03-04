@@ -17,8 +17,7 @@ object MessageBatchPayload {
     compression: CompressionTypes = null,
     timeout: scala.Int | scala.Double = null
   ): MessageBatchPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topicMessages")(topicMessages)
+    val __obj = js.Dynamic.literal(topicMessages = topicMessages)
     if (acks != null) __obj.updateDynamic("acks")(acks)
     if (compression != null) __obj.updateDynamic("compression")(compression)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

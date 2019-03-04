@@ -23,8 +23,7 @@ object ListContainersOptions {
     prefix: java.lang.String = null,
     timeoutIntervalInMs: scala.Int | scala.Double = null
   ): ListContainersOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(marker = marker)
     if (include != null) __obj.updateDynamic("include")(include)
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])

@@ -26,14 +26,8 @@ object Portal {
     update: js.Function2[js.Object, CbCallback, scala.Unit],
     user: APIUser
   ): Portal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, fetch = fetch, name = name, systemKey = systemKey, systemSecret = systemSecret, update = update, user = user)
+  
     __obj.asInstanceOf[Portal]
   }
 }

@@ -24,13 +24,8 @@ object BandwidthStatistics {
     outboundBitsPerSecond: scala.Double,
     outboundBitsPerSecondInstability: scala.Double
   ): BandwidthStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inboundBandwidthPeaked")(inboundBandwidthPeaked)
-    __obj.updateDynamic("inboundBitsPerSecond")(inboundBitsPerSecond)
-    __obj.updateDynamic("inboundBitsPerSecondInstability")(inboundBitsPerSecondInstability)
-    __obj.updateDynamic("outboundBandwidthPeaked")(outboundBandwidthPeaked)
-    __obj.updateDynamic("outboundBitsPerSecond")(outboundBitsPerSecond)
-    __obj.updateDynamic("outboundBitsPerSecondInstability")(outboundBitsPerSecondInstability)
+    val __obj = js.Dynamic.literal(inboundBandwidthPeaked = inboundBandwidthPeaked, inboundBitsPerSecond = inboundBitsPerSecond, inboundBitsPerSecondInstability = inboundBitsPerSecondInstability, outboundBandwidthPeaked = outboundBandwidthPeaked, outboundBitsPerSecond = outboundBitsPerSecond, outboundBitsPerSecondInstability = outboundBitsPerSecondInstability)
+  
     __obj.asInstanceOf[BandwidthStatistics]
   }
 }

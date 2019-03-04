@@ -22,12 +22,8 @@ object CollectionChangeSet {
     newModifications: js.Array[scala.Double],
     oldModifications: js.Array[scala.Double]
   ): CollectionChangeSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deletions")(deletions)
-    __obj.updateDynamic("insertions")(insertions)
-    __obj.updateDynamic("modifications")(modifications)
-    __obj.updateDynamic("newModifications")(newModifications)
-    __obj.updateDynamic("oldModifications")(oldModifications)
+    val __obj = js.Dynamic.literal(deletions = deletions, insertions = insertions, modifications = modifications, newModifications = newModifications, oldModifications = oldModifications)
+  
     __obj.asInstanceOf[CollectionChangeSet]
   }
 }

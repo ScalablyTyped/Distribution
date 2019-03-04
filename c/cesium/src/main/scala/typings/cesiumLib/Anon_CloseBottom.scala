@@ -32,8 +32,7 @@ object Anon_CloseBottom {
     stRotation: scala.Int | scala.Double = null,
     vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
   ): Anon_CloseBottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(positions = positions)
     if (!js.isUndefined(closeBottom)) __obj.updateDynamic("closeBottom")(closeBottom)
     if (!js.isUndefined(closeTop)) __obj.updateDynamic("closeTop")(closeTop)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)

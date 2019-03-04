@@ -24,8 +24,7 @@ object GetParameters {
     supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
     updateViewedDate: js.UndefOr[scala.Boolean] = js.undefined
   ): GetParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (!js.isUndefined(acknowledgeAbuse)) __obj.updateDynamic("acknowledgeAbuse")(acknowledgeAbuse)
     if (projection != null) __obj.updateDynamic("projection")(projection)
     if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)

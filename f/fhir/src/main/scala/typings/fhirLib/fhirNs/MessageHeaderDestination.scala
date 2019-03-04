@@ -46,8 +46,7 @@ object MessageHeaderDestination {
     name: java.lang.String = null,
     target: Reference = null
   ): MessageHeaderDestination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (_endpoint != null) __obj.updateDynamic("_endpoint")(_endpoint)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

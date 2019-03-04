@@ -50,11 +50,8 @@ object DataValidationErrorAlert {
     style: DataValidationAlertStyle | officeDashJsLib.officeDashJsLibStrings.Stop | officeDashJsLib.officeDashJsLibStrings.Warning | officeDashJsLib.officeDashJsLibStrings.Information,
     title: java.lang.String
   ): DataValidationErrorAlert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("showAlert")(showAlert)
-    __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(message = message, showAlert = showAlert, style = style.asInstanceOf[js.Any], title = title)
+  
     __obj.asInstanceOf[DataValidationErrorAlert]
   }
 }

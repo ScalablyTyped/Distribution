@@ -26,14 +26,8 @@ object Currency {
     symbol: java.lang.String,
     symbol_native: java.lang.String
   ): Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("decimal_digits")(decimal_digits)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("name_plural")(name_plural)
-    __obj.updateDynamic("rounding")(rounding)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("symbol_native")(symbol_native)
+    val __obj = js.Dynamic.literal(code = code, decimal_digits = decimal_digits, name = name, name_plural = name_plural, rounding = rounding, symbol = symbol, symbol_native = symbol_native)
+  
     __obj.asInstanceOf[Currency]
   }
 }

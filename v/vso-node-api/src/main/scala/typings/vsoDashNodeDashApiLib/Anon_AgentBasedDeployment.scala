@@ -20,11 +20,8 @@ object Anon_AgentBasedDeployment {
     runOnServer: scala.Double,
     undefined: scala.Double
   ): Anon_AgentBasedDeployment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agentBasedDeployment")(agentBasedDeployment)
-    __obj.updateDynamic("machineGroupBasedDeployment")(machineGroupBasedDeployment)
-    __obj.updateDynamic("runOnServer")(runOnServer)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(agentBasedDeployment = agentBasedDeployment, machineGroupBasedDeployment = machineGroupBasedDeployment, runOnServer = runOnServer, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_AgentBasedDeployment]
   }
 }

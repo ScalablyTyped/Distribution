@@ -28,15 +28,8 @@ object Anon_Fragment {
     query: java.lang.String,
     username: java.lang.String
   ): Anon_Fragment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(fragment = fragment, hostname = hostname, password = password, path = path, port = port, protocol = protocol, query = query, username = username)
+  
     __obj.asInstanceOf[Anon_Fragment]
   }
 }

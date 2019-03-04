@@ -13,8 +13,8 @@ trait Anon_PayloadType extends js.Object {
 object Anon_PayloadType {
   @scala.inline
   def apply(payload: js.Any, `type`: ActionTypes): Anon_PayloadType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PayloadType]
   }
 }

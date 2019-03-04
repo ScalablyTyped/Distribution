@@ -12,8 +12,8 @@ trait StatisticComponent extends js.Object {
 object StatisticComponent {
   @scala.inline
   def apply(Countdown: antdLib.Anon_DefaultPropsCountdownProps): StatisticComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Countdown")(Countdown)
+    val __obj = js.Dynamic.literal(Countdown = Countdown)
+  
     __obj.asInstanceOf[StatisticComponent]
   }
 }

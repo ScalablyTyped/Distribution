@@ -20,11 +20,8 @@ object Anon_NewZoomFactor {
     tabId: scala.Double,
     zoomSettings: firefoxDashWebextDashBrowserLib.browserNs.tabsNs.ZoomSettings
   ): Anon_NewZoomFactor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newZoomFactor")(newZoomFactor)
-    __obj.updateDynamic("oldZoomFactor")(oldZoomFactor)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("zoomSettings")(zoomSettings)
+    val __obj = js.Dynamic.literal(newZoomFactor = newZoomFactor, oldZoomFactor = oldZoomFactor, tabId = tabId, zoomSettings = zoomSettings)
+  
     __obj.asInstanceOf[Anon_NewZoomFactor]
   }
 }

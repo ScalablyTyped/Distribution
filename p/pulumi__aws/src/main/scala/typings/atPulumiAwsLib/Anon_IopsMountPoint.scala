@@ -24,10 +24,7 @@ object Anon_IopsMountPoint {
     raidLevel: java.lang.String = null,
     `type`: java.lang.String = null
   ): Anon_IopsMountPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mountPoint")(mountPoint)
-    __obj.updateDynamic("numberOfDisks")(numberOfDisks)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(mountPoint = mountPoint, numberOfDisks = numberOfDisks, size = size)
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (raidLevel != null) __obj.updateDynamic("raidLevel")(raidLevel)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

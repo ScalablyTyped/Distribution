@@ -41,8 +41,7 @@ object ASyncConstructorOptions {
       scala.Unit
     ] = null
   ): ASyncConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
+    val __obj = js.Dynamic.literal(async = async)
     if (getFile != null) __obj.updateDynamic("getFile")(getFile)
     __obj.asInstanceOf[ASyncConstructorOptions]
   }

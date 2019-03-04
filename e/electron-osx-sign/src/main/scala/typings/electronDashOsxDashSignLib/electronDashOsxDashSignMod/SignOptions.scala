@@ -40,8 +40,7 @@ object SignOptions {
     `type`: java.lang.String = null,
     version: java.lang.String = null
   ): SignOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (binaries != null) __obj.updateDynamic("binaries")(binaries)
     if (entitlements != null) __obj.updateDynamic("entitlements")(entitlements)
     if (`entitlements-inherit` != null) __obj.updateDynamic("entitlements-inherit")(`entitlements-inherit`)

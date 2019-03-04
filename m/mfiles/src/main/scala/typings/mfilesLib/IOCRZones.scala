@@ -22,12 +22,8 @@ object IOCRZones {
     Item: js.Function1[scala.Double, IOCRZone],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IOCRZones = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, Item = Item, Remove = Remove)
+  
     __obj.asInstanceOf[IOCRZones]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Name extends js.Object {
 object Anon_Name {
   @scala.inline
   def apply(value: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double]): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[Anon_Name]
   }
 }

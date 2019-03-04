@@ -12,8 +12,8 @@ trait IntrospectionQuery extends js.Object {
 object IntrospectionQuery {
   @scala.inline
   def apply(__schema: IntrospectionSchema): IntrospectionQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__schema")(__schema)
+    val __obj = js.Dynamic.literal(__schema = __schema)
+  
     __obj.asInstanceOf[IntrospectionQuery]
   }
 }

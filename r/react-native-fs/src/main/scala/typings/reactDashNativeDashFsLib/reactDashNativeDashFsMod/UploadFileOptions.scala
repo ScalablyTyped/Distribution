@@ -31,9 +31,7 @@ object UploadFileOptions {
     method: java.lang.String = null,
     progress: UploadCallbackProgress = null
   ): UploadFileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("toUrl")(toUrl)
+    val __obj = js.Dynamic.literal(files = files, toUrl = toUrl)
     if (begin != null) __obj.updateDynamic("begin")(begin)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (headers != null) __obj.updateDynamic("headers")(headers)

@@ -22,9 +22,8 @@ trait ObjectFieldSelector extends js.Object {
 object ObjectFieldSelector {
   @scala.inline
   def apply(apiVersion: java.lang.String, fieldPath: java.lang.String): ObjectFieldSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("fieldPath")(fieldPath)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, fieldPath = fieldPath)
+  
     __obj.asInstanceOf[ObjectFieldSelector]
   }
 }

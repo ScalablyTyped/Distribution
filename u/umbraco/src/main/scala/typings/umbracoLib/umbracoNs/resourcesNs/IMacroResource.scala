@@ -46,9 +46,8 @@ object IMacroResource {
     getMacroParameters: js.Function1[scala.Double, js.Any],
     getMacroResultAsHtmlForEditor: js.Function3[scala.Double, scala.Double, js.Array[_], js.Any]
   ): IMacroResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMacroParameters")(getMacroParameters)
-    __obj.updateDynamic("getMacroResultAsHtmlForEditor")(getMacroResultAsHtmlForEditor)
+    val __obj = js.Dynamic.literal(getMacroParameters = getMacroParameters, getMacroResultAsHtmlForEditor = getMacroResultAsHtmlForEditor)
+  
     __obj.asInstanceOf[IMacroResource]
   }
 }

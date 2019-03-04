@@ -18,10 +18,8 @@ object IStringData {
     Clone: js.Function0[IStringData],
     StringDataType: mfilesLib.MFilesNs.MFStringDataType
   ): IStringData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsString")(AsString)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("StringDataType")(StringDataType)
+    val __obj = js.Dynamic.literal(AsString = AsString, Clone = Clone, StringDataType = StringDataType)
+  
     __obj.asInstanceOf[IStringData]
   }
 }

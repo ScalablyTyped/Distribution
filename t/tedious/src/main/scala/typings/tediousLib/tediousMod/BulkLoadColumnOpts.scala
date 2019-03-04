@@ -21,8 +21,7 @@ object BulkLoadColumnOpts {
     precision: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null
   ): BulkLoadColumnOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nullable")(nullable)
+    val __obj = js.Dynamic.literal(nullable = nullable)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (objName != null) __obj.updateDynamic("objName")(objName)
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])

@@ -26,12 +26,8 @@ object Anon_Col {
     visualRow: scala.Double,
     dateFormat: java.lang.String = null
   ): Anon_Col = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("visualCol")(visualCol)
-    __obj.updateDynamic("visualRow")(visualRow)
+    val __obj = js.Dynamic.literal(col = col, instance = instance, row = row, visualCol = visualCol, visualRow = visualRow)
+    __obj.updateDynamic("type")(`type`)
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     __obj.asInstanceOf[Anon_Col]
   }

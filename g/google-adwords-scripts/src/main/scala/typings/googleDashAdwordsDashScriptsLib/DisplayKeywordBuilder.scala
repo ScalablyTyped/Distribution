@@ -18,12 +18,8 @@ object DisplayKeywordBuilder {
     withCpm: js.Function1[scala.Double, DisplayKeywordBuilder[DisplayKeyword]],
     withText: js.Function1[java.lang.String, DisplayKeywordBuilder[DisplayKeyword]]
   ): DisplayKeywordBuilder[DisplayKeyword] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("withCpc")(withCpc)
-    __obj.updateDynamic("withCpm")(withCpm)
-    __obj.updateDynamic("withText")(withText)
+    val __obj = js.Dynamic.literal(build = build, exclude = exclude, withCpc = withCpc, withCpm = withCpm, withText = withText)
+  
     __obj.asInstanceOf[DisplayKeywordBuilder[DisplayKeyword]]
   }
 }

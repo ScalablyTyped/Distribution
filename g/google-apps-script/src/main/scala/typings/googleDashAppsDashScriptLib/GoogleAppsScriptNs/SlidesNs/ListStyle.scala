@@ -24,13 +24,8 @@ object ListStyle {
     isInList: js.Function0[scala.Boolean],
     removeFromList: js.Function0[ListStyle]
   ): ListStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyListPreset")(applyListPreset)
-    __obj.updateDynamic("getGlyph")(getGlyph)
-    __obj.updateDynamic("getList")(getList)
-    __obj.updateDynamic("getNestingLevel")(getNestingLevel)
-    __obj.updateDynamic("isInList")(isInList)
-    __obj.updateDynamic("removeFromList")(removeFromList)
+    val __obj = js.Dynamic.literal(applyListPreset = applyListPreset, getGlyph = getGlyph, getList = getList, getNestingLevel = getNestingLevel, isInList = isInList, removeFromList = removeFromList)
+  
     __obj.asInstanceOf[ListStyle]
   }
 }

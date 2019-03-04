@@ -19,9 +19,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(active: java.lang.String, scrolling: java.lang.String): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("scrolling")(scrolling)
+    val __obj = js.Dynamic.literal(active = active, scrolling = scrolling)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -33,12 +33,7 @@ object HTTPError {
     stack: java.lang.String = null,
     url: java.lang.String = null
   ): HTTPError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers, name = name, statusCode = statusCode, statusMessage = statusMessage)
     if (code != null) __obj.updateDynamic("code")(code)
     if (host != null) __obj.updateDynamic("host")(host)
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)

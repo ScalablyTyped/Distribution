@@ -35,8 +35,7 @@ object VideoTextureSettings {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     poster: java.lang.String = null
   ): VideoTextureSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoUpdateTexture")(autoUpdateTexture)
+    val __obj = js.Dynamic.literal(autoUpdateTexture = autoUpdateTexture)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (poster != null) __obj.updateDynamic("poster")(poster)

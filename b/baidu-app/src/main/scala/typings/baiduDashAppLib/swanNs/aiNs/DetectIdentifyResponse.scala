@@ -14,9 +14,8 @@ trait DetectIdentifyResponse extends js.Object {
 object DetectIdentifyResponse {
   @scala.inline
   def apply(log_id: scala.Double, result: baiduDashAppLib.Anon_Height): DetectIdentifyResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log_id")(log_id)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result)
+  
     __obj.asInstanceOf[DetectIdentifyResponse]
   }
 }

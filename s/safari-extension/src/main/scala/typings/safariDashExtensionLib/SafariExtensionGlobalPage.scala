@@ -12,8 +12,8 @@ trait SafariExtensionGlobalPage extends js.Object {
 object SafariExtensionGlobalPage {
   @scala.inline
   def apply(contentWindow: Window): SafariExtensionGlobalPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentWindow")(contentWindow)
+    val __obj = js.Dynamic.literal(contentWindow = contentWindow)
+  
     __obj.asInstanceOf[SafariExtensionGlobalPage]
   }
 }

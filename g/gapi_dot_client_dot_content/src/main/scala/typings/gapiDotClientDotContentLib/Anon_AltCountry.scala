@@ -52,9 +52,7 @@ object Anon_AltCountry {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCountry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datafeedId")(datafeedId)
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(datafeedId = datafeedId, merchantId = merchantId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (country != null) __obj.updateDynamic("country")(country)
     if (fields != null) __obj.updateDynamic("fields")(fields)

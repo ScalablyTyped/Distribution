@@ -22,12 +22,8 @@ object Metric {
     sumOfSquares: scala.Double,
     total: scala.Double
   ): Metric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("sumOfSquares")(sumOfSquares)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(count = count, max = max, min = min, sumOfSquares = sumOfSquares, total = total)
+  
     __obj.asInstanceOf[Metric]
   }
 }

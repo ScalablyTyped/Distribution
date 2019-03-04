@@ -13,9 +13,8 @@ trait SheetManagerTheme extends js.Object {
 object SheetManagerTheme {
   @scala.inline
   def apply(refs: scala.Double, sheet: jssLib.jssMod.StyleSheet[_]): SheetManagerTheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("refs")(refs)
-    __obj.updateDynamic("sheet")(sheet)
+    val __obj = js.Dynamic.literal(refs = refs, sheet = sheet)
+  
     __obj.asInstanceOf[SheetManagerTheme]
   }
 }

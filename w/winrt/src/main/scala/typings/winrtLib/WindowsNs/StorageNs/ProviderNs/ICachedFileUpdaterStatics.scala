@@ -27,8 +27,8 @@ object ICachedFileUpdaterStatics {
       scala.Unit
     ]
   ): ICachedFileUpdaterStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setUpdateInformation")(setUpdateInformation)
+    val __obj = js.Dynamic.literal(setUpdateInformation = setUpdateInformation)
+  
     __obj.asInstanceOf[ICachedFileUpdaterStatics]
   }
 }

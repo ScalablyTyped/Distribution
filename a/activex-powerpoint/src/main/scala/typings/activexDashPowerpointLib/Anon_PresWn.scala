@@ -16,9 +16,8 @@ object Anon_PresWn {
     Pres: activexDashPowerpointLib.PowerPointNs.Presentation,
     Wn: activexDashPowerpointLib.PowerPointNs.DocumentWindow
   ): Anon_PresWn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Pres")(Pres)
-    __obj.updateDynamic("Wn")(Wn)
+    val __obj = js.Dynamic.literal(Pres = Pres, Wn = Wn)
+  
     __obj.asInstanceOf[Anon_PresWn]
   }
 }

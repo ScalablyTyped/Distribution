@@ -24,16 +24,8 @@ object IEditControlGridContext {
     parentNode: stdLib.HTMLElement,
     styleManager: IStyleManager
   ): IEditControlGridContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OnActivateActor")(OnActivateActor)
-    __obj.updateDynamic("OnDeactivateActor")(OnDeactivateActor)
-    __obj.updateDynamic("OnKeyDown")(OnKeyDown)
-    __obj.updateDynamic("RTL")(RTL)
-    __obj.updateDynamic("bLightFocus")(bLightFocus)
-    __obj.updateDynamic("emptyValue")(emptyValue)
-    __obj.updateDynamic("jsGridObj")(jsGridObj)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("styleManager")(styleManager)
+    val __obj = js.Dynamic.literal(OnActivateActor = OnActivateActor, OnDeactivateActor = OnDeactivateActor, OnKeyDown = OnKeyDown, RTL = RTL, bLightFocus = bLightFocus, emptyValue = emptyValue, jsGridObj = jsGridObj, parentNode = parentNode, styleManager = styleManager)
+  
     __obj.asInstanceOf[IEditControlGridContext]
   }
 }

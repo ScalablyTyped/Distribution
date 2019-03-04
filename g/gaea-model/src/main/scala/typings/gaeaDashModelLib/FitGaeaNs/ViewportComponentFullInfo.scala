@@ -21,10 +21,8 @@ object ViewportComponentFullInfo {
     componentInfo: ViewportComponentInfo,
     mapUniqueKey: java.lang.String
   ): ViewportComponentFullInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childs")(childs)
-    __obj.updateDynamic("componentInfo")(componentInfo)
-    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    val __obj = js.Dynamic.literal(childs = childs, componentInfo = componentInfo, mapUniqueKey = mapUniqueKey)
+  
     __obj.asInstanceOf[ViewportComponentFullInfo]
   }
 }

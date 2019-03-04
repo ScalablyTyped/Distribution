@@ -29,12 +29,8 @@ object XDrawPageSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDrawPageSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DrawPage")(DrawPage)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDrawPage")(getDrawPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DrawPage = DrawPage, acquire = acquire, getDrawPage = getDrawPage, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDrawPageSupplier]
   }
 }

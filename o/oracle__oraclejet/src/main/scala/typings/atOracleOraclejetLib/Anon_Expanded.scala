@@ -22,12 +22,8 @@ object Anon_Expanded {
     selected: scala.Boolean,
     zoom: scala.Double
   ): Anon_Expanded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("hovered")(hovered)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(expanded = expanded, focused = focused, hovered = hovered, selected = selected, zoom = zoom)
+  
     __obj.asInstanceOf[Anon_Expanded]
   }
 }

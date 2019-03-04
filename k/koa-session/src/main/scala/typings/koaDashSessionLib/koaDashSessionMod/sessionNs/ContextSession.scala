@@ -45,17 +45,8 @@ object ContextSession {
     set: js.Function1[js.Any, scala.Unit],
     store: stores
   ): ContextSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("ctx")(ctx)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("initFromExternal")(initFromExternal)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("prevHash")(prevHash)
-    __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(app = app, commit = commit, ctx = ctx, get = get, initFromExternal = initFromExternal, opts = opts, prevHash = prevHash, session = session.asInstanceOf[js.Any], set = set, store = store)
+  
     __obj.asInstanceOf[ContextSession]
   }
 }

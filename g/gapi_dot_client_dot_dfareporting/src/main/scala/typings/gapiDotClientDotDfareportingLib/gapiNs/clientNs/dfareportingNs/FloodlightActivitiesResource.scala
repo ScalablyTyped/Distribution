@@ -54,14 +54,8 @@ object FloodlightActivitiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
     ]
   ): FloodlightActivitiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("generatetag")(generatetag)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, generatetag = generatetag, get = get, insert = insert, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[FloodlightActivitiesResource]
   }
 }

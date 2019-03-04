@@ -53,14 +53,8 @@ object XBridgeFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBridgeFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExistingBridges")(ExistingBridges)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createBridge")(createBridge)
-    __obj.updateDynamic("getBridge")(getBridge)
-    __obj.updateDynamic("getExistingBridges")(getExistingBridges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = acquire, createBridge = createBridge, getBridge = getBridge, getExistingBridges = getExistingBridges, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBridgeFactory]
   }
 }

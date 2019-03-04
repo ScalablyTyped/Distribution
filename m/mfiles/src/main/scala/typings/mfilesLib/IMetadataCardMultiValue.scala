@@ -15,11 +15,8 @@ trait IMetadataCardMultiValue extends js.Object {
 object IMetadataCardMultiValue {
   @scala.inline
   def apply(ID: java.lang.String, IsMultiValue: scala.Boolean, State: js.Any, ValueParts: js.Any): IMetadataCardMultiValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IsMultiValue")(IsMultiValue)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("ValueParts")(ValueParts)
+    val __obj = js.Dynamic.literal(ID = ID, IsMultiValue = IsMultiValue, State = State, ValueParts = ValueParts)
+  
     __obj.asInstanceOf[IMetadataCardMultiValue]
   }
 }

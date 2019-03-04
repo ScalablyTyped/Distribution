@@ -21,8 +21,8 @@ object IPermilleFormatterFactory {
       PermilleFormatter
     ]
   ): IPermilleFormatterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPermilleFormatter")(createPermilleFormatter)
+    val __obj = js.Dynamic.literal(createPermilleFormatter = createPermilleFormatter)
+  
     __obj.asInstanceOf[IPermilleFormatterFactory]
   }
 }

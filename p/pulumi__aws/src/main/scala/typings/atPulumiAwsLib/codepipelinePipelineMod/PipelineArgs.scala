@@ -30,10 +30,7 @@ object PipelineArgs {
     stages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionsName]]],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): PipelineArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactStore")(artifactStore.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("stages")(stages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(artifactStore = artifactStore.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stages = stages.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineArgs]
   }

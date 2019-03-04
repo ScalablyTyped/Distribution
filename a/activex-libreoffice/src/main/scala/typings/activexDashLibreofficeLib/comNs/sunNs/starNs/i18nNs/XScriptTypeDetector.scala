@@ -42,16 +42,8 @@ object XScriptTypeDetector {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XScriptTypeDetector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("beginOfCTLScriptType")(beginOfCTLScriptType)
-    __obj.updateDynamic("beginOfScriptDirection")(beginOfScriptDirection)
-    __obj.updateDynamic("endOfCTLScriptType")(endOfCTLScriptType)
-    __obj.updateDynamic("endOfScriptDirection")(endOfScriptDirection)
-    __obj.updateDynamic("getCTLScriptType")(getCTLScriptType)
-    __obj.updateDynamic("getScriptDirection")(getScriptDirection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, beginOfCTLScriptType = beginOfCTLScriptType, beginOfScriptDirection = beginOfScriptDirection, endOfCTLScriptType = endOfCTLScriptType, endOfScriptDirection = endOfScriptDirection, getCTLScriptType = getCTLScriptType, getScriptDirection = getScriptDirection, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XScriptTypeDetector]
   }
 }

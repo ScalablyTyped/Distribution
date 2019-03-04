@@ -12,10 +12,8 @@ trait IUserInfo extends IWorkflowInfo {
 object IUserInfo {
   @scala.inline
   def apply(displayName: java.lang.String, id: java.lang.String, roleId: java.lang.String): IUserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("roleId")(roleId)
+    val __obj = js.Dynamic.literal(displayName = displayName, id = id, roleId = roleId)
+  
     __obj.asInstanceOf[IUserInfo]
   }
 }

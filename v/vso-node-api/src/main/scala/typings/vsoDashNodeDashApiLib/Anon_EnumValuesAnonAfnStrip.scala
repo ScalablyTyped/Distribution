@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonAfnStrip extends js.Object {
 object Anon_EnumValuesAnonAfnStrip {
   @scala.inline
   def apply(enumValues: Anon_AfnStrip): Anon_EnumValuesAnonAfnStrip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonAfnStrip]
   }
 }

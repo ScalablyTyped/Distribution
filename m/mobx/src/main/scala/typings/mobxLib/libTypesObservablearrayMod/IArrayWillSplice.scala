@@ -22,10 +22,9 @@ object IArrayWillSplice {
     removedCount: scala.Double,
     `type`: mobxLib.mobxLibStrings.splice
   ): IArrayWillSplice[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("removedCount")(removedCount)
+    val __obj = js.Dynamic.literal(added = added, index = index, removedCount = removedCount)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IArrayWillSplice[T]]
   }
 }

@@ -54,8 +54,7 @@ object Anon_AltFetchUserInfo {
     userIp: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AltFetchUserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(fetchUserInfo)) __obj.updateDynamic("fetchUserInfo")(fetchUserInfo)
     if (fields != null) __obj.updateDynamic("fields")(fields)

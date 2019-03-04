@@ -28,15 +28,8 @@ object PayPalAccountDetails {
     phone: java.lang.String,
     shippingAddress: PayPalShippingAddress
   ): PayPalAccountDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("billingAddress")(billingAddress)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("lastName")(lastName)
-    __obj.updateDynamic("payerId")(payerId)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("shippingAddress")(shippingAddress)
+    val __obj = js.Dynamic.literal(billingAddress = billingAddress, countryCode = countryCode, email = email, firstName = firstName, lastName = lastName, payerId = payerId, phone = phone, shippingAddress = shippingAddress)
+  
     __obj.asInstanceOf[PayPalAccountDetails]
   }
 }

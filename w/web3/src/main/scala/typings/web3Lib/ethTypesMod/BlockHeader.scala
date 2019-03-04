@@ -40,21 +40,8 @@ object BlockHeader {
     timestamp: scala.Double,
     transactionRoot: java.lang.String
   ): BlockHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extraData")(extraData)
-    __obj.updateDynamic("gasLimit")(gasLimit)
-    __obj.updateDynamic("gasUsed")(gasUsed)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("logsBloom")(logsBloom)
-    __obj.updateDynamic("miner")(miner)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("parentHash")(parentHash)
-    __obj.updateDynamic("receiptRoot")(receiptRoot)
-    __obj.updateDynamic("sha3Uncles")(sha3Uncles)
-    __obj.updateDynamic("stateRoot")(stateRoot)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("transactionRoot")(transactionRoot)
+    val __obj = js.Dynamic.literal(extraData = extraData, gasLimit = gasLimit, gasUsed = gasUsed, hash = hash, logsBloom = logsBloom, miner = miner, nonce = nonce, number = number, parentHash = parentHash, receiptRoot = receiptRoot, sha3Uncles = sha3Uncles, stateRoot = stateRoot, timestamp = timestamp, transactionRoot = transactionRoot)
+  
     __obj.asInstanceOf[BlockHeader]
   }
 }

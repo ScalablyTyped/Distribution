@@ -42,13 +42,8 @@ object Anon_Accept {
     right: js.Array[scala.Double],
     up: js.Array[scala.Double]
   ): Anon_Accept = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("down")(down)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(accept = accept, cancel = cancel, down = down, left = left, right = right, up = up)
+  
     __obj.asInstanceOf[Anon_Accept]
   }
 }

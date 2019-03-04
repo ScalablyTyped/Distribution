@@ -29,10 +29,8 @@ trait ASPxClientFileManagerFilesUploadingEventArgs extends ASPxClientEventArgs {
 object ASPxClientFileManagerFilesUploadingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, fileNames: js.Array[java.lang.String], folder: java.lang.String): ASPxClientFileManagerFilesUploadingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("fileNames")(fileNames)
-    __obj.updateDynamic("folder")(folder)
+    val __obj = js.Dynamic.literal(cancel = cancel, fileNames = fileNames, folder = folder)
+  
     __obj.asInstanceOf[ASPxClientFileManagerFilesUploadingEventArgs]
   }
 }

@@ -16,9 +16,8 @@ object Errors {
     Exception: js.Function1[java.lang.String, scala.Unit],
     InvalidStateException: js.Function1[java.lang.String, scala.Unit]
   ): Errors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Exception")(Exception)
-    __obj.updateDynamic("InvalidStateException")(InvalidStateException)
+    val __obj = js.Dynamic.literal(Exception = Exception, InvalidStateException = InvalidStateException)
+  
     __obj.asInstanceOf[Errors]
   }
 }

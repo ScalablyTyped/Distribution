@@ -22,9 +22,7 @@ object Node {
     index: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

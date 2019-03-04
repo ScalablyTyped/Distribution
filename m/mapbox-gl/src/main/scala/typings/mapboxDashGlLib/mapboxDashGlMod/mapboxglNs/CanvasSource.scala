@@ -26,13 +26,8 @@ object CanvasSource {
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.canvas,
     animate: js.UndefOr[scala.Boolean] = js.undefined
   ): CanvasSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("getCanvas")(getCanvas)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("setCoordinates")(setCoordinates)
+    val __obj = js.Dynamic.literal(canvas = canvas.asInstanceOf[js.Any], coordinates = coordinates, getCanvas = getCanvas, pause = pause, play = play, setCoordinates = setCoordinates)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     __obj.asInstanceOf[CanvasSource]
   }

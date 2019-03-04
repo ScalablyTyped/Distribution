@@ -24,13 +24,8 @@ object SpyProxy {
     returnValue: js.Function1[js.Any, scala.Unit],
     spyProxy: mochaccinoLib.mochaccinoLibNumbers.`true`
   ): SpyProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("callFake")(callFake)
-    __obj.updateDynamic("callThrough")(callThrough)
-    __obj.updateDynamic("getSubject")(getSubject)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("spyProxy")(spyProxy)
+    val __obj = js.Dynamic.literal(and = and, callFake = callFake, callThrough = callThrough, getSubject = getSubject, returnValue = returnValue, spyProxy = spyProxy)
+  
     __obj.asInstanceOf[SpyProxy]
   }
 }

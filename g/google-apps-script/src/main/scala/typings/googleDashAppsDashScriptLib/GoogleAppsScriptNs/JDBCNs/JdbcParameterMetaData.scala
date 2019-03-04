@@ -45,16 +45,8 @@ object JdbcParameterMetaData {
     ],
     isSigned: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean]
   ): JdbcParameterMetaData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getParameterClassName")(getParameterClassName)
-    __obj.updateDynamic("getParameterCount")(getParameterCount)
-    __obj.updateDynamic("getParameterMode")(getParameterMode)
-    __obj.updateDynamic("getParameterType")(getParameterType)
-    __obj.updateDynamic("getParameterTypeName")(getParameterTypeName)
-    __obj.updateDynamic("getPrecision")(getPrecision)
-    __obj.updateDynamic("getScale")(getScale)
-    __obj.updateDynamic("isNullable")(isNullable)
-    __obj.updateDynamic("isSigned")(isSigned)
+    val __obj = js.Dynamic.literal(getParameterClassName = getParameterClassName, getParameterCount = getParameterCount, getParameterMode = getParameterMode, getParameterType = getParameterType, getParameterTypeName = getParameterTypeName, getPrecision = getPrecision, getScale = getScale, isNullable = isNullable, isSigned = isSigned)
+  
     __obj.asInstanceOf[JdbcParameterMetaData]
   }
 }

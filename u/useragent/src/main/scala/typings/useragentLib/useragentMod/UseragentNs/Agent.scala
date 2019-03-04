@@ -42,18 +42,8 @@ object Agent {
     toString: js.Function0[java.lang.String],
     toVersion: js.Function0[java.lang.String]
   ): Agent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device")(device)
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("toAgent")(toAgent)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toVersion")(toVersion)
+    val __obj = js.Dynamic.literal(device = device, family = family, major = major, minor = minor, os = os, patch = patch, source = source, toAgent = toAgent, toJSON = toJSON, toString = toString, toVersion = toVersion)
+  
     __obj.asInstanceOf[Agent]
   }
 }

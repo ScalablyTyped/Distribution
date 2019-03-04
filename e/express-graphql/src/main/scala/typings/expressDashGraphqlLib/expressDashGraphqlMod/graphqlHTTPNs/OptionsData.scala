@@ -64,8 +64,7 @@ object OptionsData {
     rootValue: js.Any = null,
     validationRules: js.Array[_] = null
   ): OptionsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (context != null) __obj.updateDynamic("context")(context)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (formatError != null) __obj.updateDynamic("formatError")(formatError)

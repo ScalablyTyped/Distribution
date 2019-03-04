@@ -16,12 +16,8 @@ trait AxisLabelFormatterOptions extends js.Object {
 object AxisLabelFormatterOptions {
   @scala.inline
   def apply(axis: AxisObject, chart: ChartObject, isFirst: scala.Double, isLast: scala.Double, value: js.Any): AxisLabelFormatterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("isFirst")(isFirst)
-    __obj.updateDynamic("isLast")(isLast)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, isFirst = isFirst, isLast = isLast, value = value)
+  
     __obj.asInstanceOf[AxisLabelFormatterOptions]
   }
 }

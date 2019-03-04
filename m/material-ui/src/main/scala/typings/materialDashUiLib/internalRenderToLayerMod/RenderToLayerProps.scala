@@ -24,9 +24,7 @@ object RenderToLayerProps {
     ref: reactLib.reactMod.ReactNs.LegacyRef[RenderToLayer] = null,
     useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined
   ): RenderToLayerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(open = open, render = render)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (componentClickAway != null) __obj.updateDynamic("componentClickAway")(componentClickAway)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

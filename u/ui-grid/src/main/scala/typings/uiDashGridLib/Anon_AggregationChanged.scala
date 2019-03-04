@@ -40,9 +40,8 @@ object Anon_AggregationChanged {
       scala.Unit
     ]
   ): Anon_AggregationChanged[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregationChanged")(aggregationChanged)
-    __obj.updateDynamic("groupingChanged")(groupingChanged)
+    val __obj = js.Dynamic.literal(aggregationChanged = aggregationChanged, groupingChanged = groupingChanged)
+  
     __obj.asInstanceOf[Anon_AggregationChanged[TEntity]]
   }
 }

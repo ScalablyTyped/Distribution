@@ -23,10 +23,7 @@ object UploadUploadEvent {
     files: js.Array[_] = null,
     formData: js.Any = null
   ): UploadUploadEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
     if (data != null) __obj.updateDynamic("data")(data)
     if (files != null) __obj.updateDynamic("files")(files)

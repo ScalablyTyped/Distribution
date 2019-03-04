@@ -20,8 +20,8 @@ object Anon_ApplicationttmlxmlApplicationxsubrip {
     language: java.lang.String = null,
     title: java.lang.String = null
   ): Anon_ApplicationttmlxmlApplicationxsubrip = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[Anon_ApplicationttmlxmlApplicationxsubrip]

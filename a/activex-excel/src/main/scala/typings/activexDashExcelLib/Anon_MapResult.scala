@@ -18,10 +18,8 @@ object Anon_MapResult {
     Result: activexDashExcelLib.ExcelNs.XlXmlExportResult,
     Url: java.lang.String
   ): Anon_MapResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Result")(Result)
-    __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(Map = Map, Result = Result, Url = Url)
+  
     __obj.asInstanceOf[Anon_MapResult]
   }
 }

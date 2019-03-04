@@ -20,8 +20,7 @@ object Anon_BaseUrl {
     crumbIssuer: js.UndefOr[scala.Boolean] = js.undefined,
     headers: js.Any = null
   ): Anon_BaseUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promisify")(promisify)
+    val __obj = js.Dynamic.literal(promisify = promisify)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (!js.isUndefined(crumbIssuer)) __obj.updateDynamic("crumbIssuer")(crumbIssuer)
     if (headers != null) __obj.updateDynamic("headers")(headers)

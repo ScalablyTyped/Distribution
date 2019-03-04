@@ -22,12 +22,8 @@ object GeoJSONEvent {
     target: js.Any,
     `type`: java.lang.String
   ): GeoJSONEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geometryType")(geometryType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(geometryType = geometryType, id = id, layer = layer, properties = properties, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GeoJSONEvent]
   }
 }

@@ -13,9 +13,8 @@ trait IndexRange extends js.Object {
 object IndexRange {
   @scala.inline
   def apply(startIndex: scala.Double, stopIndex: scala.Double): IndexRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startIndex")(startIndex)
-    __obj.updateDynamic("stopIndex")(stopIndex)
+    val __obj = js.Dynamic.literal(startIndex = startIndex, stopIndex = stopIndex)
+  
     __obj.asInstanceOf[IndexRange]
   }
 }

@@ -32,15 +32,8 @@ object IFileClass {
     LoadByFileClass: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     SetFileClassInfo: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit]
   ): IFileClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DisplayName")(DisplayName)
-    __obj.updateDynamic("DotAndExtension")(DotAndExtension)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("FileClass")(FileClass)
-    __obj.updateDynamic("LoadByExtension")(LoadByExtension)
-    __obj.updateDynamic("LoadByFileClass")(LoadByFileClass)
-    __obj.updateDynamic("SetFileClassInfo")(SetFileClassInfo)
+    val __obj = js.Dynamic.literal(Clone = Clone, DisplayName = DisplayName, DotAndExtension = DotAndExtension, Extension = Extension, FileClass = FileClass, LoadByExtension = LoadByExtension, LoadByFileClass = LoadByFileClass, SetFileClassInfo = SetFileClassInfo)
+  
     __obj.asInstanceOf[IFileClass]
   }
 }

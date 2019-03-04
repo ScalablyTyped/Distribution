@@ -23,10 +23,8 @@ trait Currency extends js.Object {
 object Currency {
   @scala.inline
   def apply(id: java.lang.String, min_size: java.lang.String, name: java.lang.String): Currency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("min_size")(min_size)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, min_size = min_size, name = name)
+  
     __obj.asInstanceOf[Currency]
   }
 }

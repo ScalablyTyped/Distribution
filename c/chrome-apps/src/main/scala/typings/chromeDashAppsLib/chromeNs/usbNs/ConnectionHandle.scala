@@ -27,10 +27,8 @@ object ConnectionHandle {
     productId: chromeDashAppsLib.chromeNs.integer,
     vendorId: chromeDashAppsLib.chromeNs.integer
   ): ConnectionHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(handle = handle, productId = productId, vendorId = vendorId)
+  
     __obj.asInstanceOf[ConnectionHandle]
   }
 }

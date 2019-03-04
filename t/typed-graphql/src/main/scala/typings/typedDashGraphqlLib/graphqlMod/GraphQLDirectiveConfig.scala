@@ -24,8 +24,7 @@ object GraphQLDirectiveConfig {
     onFragment: js.UndefOr[scala.Boolean] = js.undefined,
     onOperation: js.UndefOr[scala.Boolean] = js.undefined
   ): GraphQLDirectiveConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (args != null) __obj.updateDynamic("args")(args)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(onField)) __obj.updateDynamic("onField")(onField)

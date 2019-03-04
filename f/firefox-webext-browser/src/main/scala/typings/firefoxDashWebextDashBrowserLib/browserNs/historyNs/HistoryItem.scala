@@ -31,8 +31,7 @@ object HistoryItem {
     url: java.lang.String = null,
     visitCount: scala.Int | scala.Double = null
   ): HistoryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (lastVisitTime != null) __obj.updateDynamic("lastVisitTime")(lastVisitTime.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (typedCount != null) __obj.updateDynamic("typedCount")(typedCount.asInstanceOf[js.Any])

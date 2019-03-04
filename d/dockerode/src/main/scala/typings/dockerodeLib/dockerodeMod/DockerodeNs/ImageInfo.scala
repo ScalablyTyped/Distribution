@@ -28,14 +28,7 @@ object ImageInfo {
     VirtualSize: scala.Double,
     RepoDigests: js.Array[java.lang.String] = null
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Created")(Created)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Labels")(Labels)
-    __obj.updateDynamic("ParentId")(ParentId)
-    __obj.updateDynamic("RepoTags")(RepoTags)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("VirtualSize")(VirtualSize)
+    val __obj = js.Dynamic.literal(Created = Created, Id = Id, Labels = Labels, ParentId = ParentId, RepoTags = RepoTags, Size = Size, VirtualSize = VirtualSize)
     if (RepoDigests != null) __obj.updateDynamic("RepoDigests")(RepoDigests)
     __obj.asInstanceOf[ImageInfo]
   }

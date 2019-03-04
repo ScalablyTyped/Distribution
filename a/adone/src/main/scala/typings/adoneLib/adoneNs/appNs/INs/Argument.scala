@@ -12,8 +12,8 @@ trait Argument extends js.Object {
 object Argument {
   @scala.inline
   def apply(names: js.Array[java.lang.String]): Argument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(names = names)
+  
     __obj.asInstanceOf[Argument]
   }
 }

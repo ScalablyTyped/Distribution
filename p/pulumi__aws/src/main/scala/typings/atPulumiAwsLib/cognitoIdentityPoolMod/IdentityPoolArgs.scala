@@ -64,8 +64,7 @@ object IdentityPoolArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): IdentityPoolArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identityPoolName")(identityPoolName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identityPoolName = identityPoolName.asInstanceOf[js.Any])
     if (allowUnauthenticatedIdentities != null) __obj.updateDynamic("allowUnauthenticatedIdentities")(allowUnauthenticatedIdentities.asInstanceOf[js.Any])
     if (cognitoIdentityProviders != null) __obj.updateDynamic("cognitoIdentityProviders")(cognitoIdentityProviders.asInstanceOf[js.Any])
     if (developerProviderName != null) __obj.updateDynamic("developerProviderName")(developerProviderName.asInstanceOf[js.Any])

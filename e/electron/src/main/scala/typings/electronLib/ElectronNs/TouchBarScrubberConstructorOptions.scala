@@ -52,15 +52,8 @@ object TouchBarScrubberConstructorOptions {
     selectedStyle: java.lang.String,
     showArrowButtons: scala.Boolean
   ): TouchBarScrubberConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continuous")(continuous)
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("overlayStyle")(overlayStyle)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("selectedStyle")(selectedStyle)
-    __obj.updateDynamic("showArrowButtons")(showArrowButtons)
+    val __obj = js.Dynamic.literal(continuous = continuous, highlight = highlight, items = items, mode = mode, overlayStyle = overlayStyle, select = select, selectedStyle = selectedStyle, showArrowButtons = showArrowButtons)
+  
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }
 }

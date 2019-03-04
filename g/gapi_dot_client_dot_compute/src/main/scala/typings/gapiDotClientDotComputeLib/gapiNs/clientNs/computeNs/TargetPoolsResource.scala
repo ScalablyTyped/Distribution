@@ -92,18 +92,8 @@ object TargetPoolsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): TargetPoolsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHealthCheck")(addHealthCheck)
-    __obj.updateDynamic("addInstance")(addInstance)
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getHealth")(getHealth)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("removeHealthCheck")(removeHealthCheck)
-    __obj.updateDynamic("removeInstance")(removeInstance)
-    __obj.updateDynamic("setBackup")(setBackup)
+    val __obj = js.Dynamic.literal(addHealthCheck = addHealthCheck, addInstance = addInstance, aggregatedList = aggregatedList, delete = delete, get = get, getHealth = getHealth, insert = insert, list = list, removeHealthCheck = removeHealthCheck, removeInstance = removeInstance, setBackup = setBackup)
+  
     __obj.asInstanceOf[TargetPoolsResource]
   }
 }

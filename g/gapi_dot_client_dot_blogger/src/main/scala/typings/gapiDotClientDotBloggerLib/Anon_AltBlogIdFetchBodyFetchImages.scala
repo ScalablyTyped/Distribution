@@ -48,8 +48,7 @@ object Anon_AltBlogIdFetchBodyFetchImages {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBlogIdFetchBodyFetchImages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
+    val __obj = js.Dynamic.literal(blogId = blogId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(fetchBody)) __obj.updateDynamic("fetchBody")(fetchBody)
     if (!js.isUndefined(fetchImages)) __obj.updateDynamic("fetchImages")(fetchImages)

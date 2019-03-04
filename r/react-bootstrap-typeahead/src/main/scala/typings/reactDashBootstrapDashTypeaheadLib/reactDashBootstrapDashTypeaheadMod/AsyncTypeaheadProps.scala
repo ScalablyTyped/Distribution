@@ -93,10 +93,7 @@ object AsyncTypeaheadProps {
     selected: js.Array[T] = null,
     useCache: js.UndefOr[scala.Boolean] = js.undefined
   ): AsyncTypeaheadProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLoading")(isLoading)
-    __obj.updateDynamic("onSearch")(onSearch)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(isLoading = isLoading, onSearch = onSearch, options = options)
     if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(a11yNumResults)
     if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(a11yNumSelected)
     if (align != null) __obj.updateDynamic("align")(align)

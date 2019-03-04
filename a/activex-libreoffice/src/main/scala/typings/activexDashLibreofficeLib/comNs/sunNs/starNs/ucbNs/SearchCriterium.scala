@@ -14,8 +14,8 @@ trait SearchCriterium extends js.Object {
 object SearchCriterium {
   @scala.inline
   def apply(Terms: activexDashInteropLib.SafeArray[RuleTerm]): SearchCriterium = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Terms")(Terms)
+    val __obj = js.Dynamic.literal(Terms = Terms)
+  
     __obj.asInstanceOf[SearchCriterium]
   }
 }

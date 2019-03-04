@@ -13,9 +13,8 @@ trait Timestamp[T] extends js.Object {
 object Timestamp {
   @scala.inline
   def apply[T](timestamp: scala.Double, value: T): Timestamp[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timestamp = timestamp, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Timestamp[T]]
   }
 }

@@ -20,11 +20,8 @@ object SelectData {
     selected: scala.Boolean,
     selectedNodes: js.Array[InternalTreeNode]
   ): SelectData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("selectedNodes")(selectedNodes)
+    val __obj = js.Dynamic.literal(event = event, node = node, selected = selected, selectedNodes = selectedNodes)
+  
     __obj.asInstanceOf[SelectData]
   }
 }

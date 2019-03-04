@@ -14,9 +14,8 @@ trait Member extends js.Object {
 object Member {
   @scala.inline
   def apply(ref: scala.Double, role: java.lang.String, `type`: java.lang.String): Member = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(ref = ref, role = role)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Member]
   }
 }

@@ -26,14 +26,8 @@ object MemoryStat {
     size: java.lang.String,
     text: java.lang.String
   ): MemoryStat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dt")(dt)
-    __obj.updateDynamic("lib")(lib)
-    __obj.updateDynamic("resident")(resident)
-    __obj.updateDynamic("share")(share)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(data = data, dt = dt, lib = lib, resident = resident, share = share, size = size, text = text)
+  
     __obj.asInstanceOf[MemoryStat]
   }
 }

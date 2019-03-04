@@ -24,13 +24,8 @@ object Anon_AllowClear {
     popupPlacement: java.lang.String,
     transitionName: java.lang.String
   ): Anon_AllowClear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowClear")(allowClear)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("popupPlacement")(popupPlacement)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(allowClear = allowClear, disabled = disabled, options = options, placeholder = placeholder, popupPlacement = popupPlacement, transitionName = transitionName)
+  
     __obj.asInstanceOf[Anon_AllowClear]
   }
 }

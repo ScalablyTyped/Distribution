@@ -101,17 +101,8 @@ object XMultiPropertySet {
       scala.Unit
     ]
   ): XMultiPropertySet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, firePropertiesChangeEvent = firePropertiesChangeEvent, getPropertySetInfo = getPropertySetInfo, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[XMultiPropertySet]
   }
 }

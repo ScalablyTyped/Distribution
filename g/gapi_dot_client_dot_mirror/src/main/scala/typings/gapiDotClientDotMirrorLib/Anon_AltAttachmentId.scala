@@ -42,9 +42,7 @@ object Anon_AltAttachmentId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAttachmentId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentId")(attachmentId)
-    __obj.updateDynamic("itemId")(itemId)
+    val __obj = js.Dynamic.literal(attachmentId = attachmentId, itemId = itemId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

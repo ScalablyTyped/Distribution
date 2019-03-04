@@ -19,9 +19,8 @@ trait AttributeDefinition extends js.Object {
 object AttributeDefinition {
   @scala.inline
   def apply(AttributeName: KeySchemaAttributeName, AttributeType: ScalarAttributeType): AttributeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttributeName")(AttributeName)
-    __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AttributeName = AttributeName, AttributeType = AttributeType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AttributeDefinition]
   }
 }

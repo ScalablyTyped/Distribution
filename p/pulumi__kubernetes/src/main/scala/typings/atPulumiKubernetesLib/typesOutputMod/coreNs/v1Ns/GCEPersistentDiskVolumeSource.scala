@@ -47,11 +47,8 @@ object GCEPersistentDiskVolumeSource {
     pdName: java.lang.String,
     readOnly: scala.Boolean
   ): GCEPersistentDiskVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("pdName")(pdName)
-    __obj.updateDynamic("readOnly")(readOnly)
+    val __obj = js.Dynamic.literal(fsType = fsType, partition = partition, pdName = pdName, readOnly = readOnly)
+  
     __obj.asInstanceOf[GCEPersistentDiskVolumeSource]
   }
 }

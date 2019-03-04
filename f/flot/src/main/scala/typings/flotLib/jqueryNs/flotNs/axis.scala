@@ -43,10 +43,7 @@ object axis {
     transform: js.Function1[/* v */ scala.Double, scala.Double] = null,
     twelveHourClock: js.UndefOr[scala.Boolean] = js.undefined
   ): axis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c2p")(c2p)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("p2c")(p2c)
+    val __obj = js.Dynamic.literal(c2p = c2p, options = options, p2c = p2c)
     if (alignTicksWithAxis != null) __obj.updateDynamic("alignTicksWithAxis")(alignTicksWithAxis.asInstanceOf[js.Any])
     if (autoscaleMargin != null) __obj.updateDynamic("autoscaleMargin")(autoscaleMargin.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)

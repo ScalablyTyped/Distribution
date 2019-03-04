@@ -14,10 +14,8 @@ trait Resolution extends js.Object {
 object Resolution {
   @scala.inline
   def apply(authority: java.lang.String, status: ResolutionStatus, values: js.Array[ResolutionValueContainer]): Resolution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authority")(authority)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(authority = authority, status = status, values = values)
+  
     __obj.asInstanceOf[Resolution]
   }
 }

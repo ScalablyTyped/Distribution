@@ -22,12 +22,8 @@ object ToggleButtonState {
     id: java.lang.String,
     label: java.lang.String
   ): ToggleButtonState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badge")(badge)
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(badge = badge, checked = checked, disabled = disabled, id = id, label = label)
+  
     __obj.asInstanceOf[ToggleButtonState]
   }
 }

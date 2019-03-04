@@ -22,8 +22,7 @@ object SafeJwtStorageOptions {
     ttl: scala.Int | scala.Double = null,
     verify: js.UndefOr[scala.Boolean] = js.undefined
   ): SafeJwtStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(secret = secret)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (maxExp != null) __obj.updateDynamic("maxExp")(maxExp.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])

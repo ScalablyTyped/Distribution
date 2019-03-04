@@ -34,9 +34,7 @@ object syncDocOptions {
     onFailure: js.Function0[scala.Unit] = null,
     `then`: js.Function0[scala.Unit] = null
   ): syncDocOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(context = context, state = state)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (`then` != null) __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[syncDocOptions]

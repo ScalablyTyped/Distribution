@@ -26,9 +26,8 @@ trait VerificationResult extends js.Object {
 object VerificationResult {
   @scala.inline
   def apply(debug_errors: js.Array[java.lang.String], trusted: scala.Boolean): VerificationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug_errors")(debug_errors)
-    __obj.updateDynamic("trusted")(trusted)
+    val __obj = js.Dynamic.literal(debug_errors = debug_errors, trusted = trusted)
+  
     __obj.asInstanceOf[VerificationResult]
   }
 }

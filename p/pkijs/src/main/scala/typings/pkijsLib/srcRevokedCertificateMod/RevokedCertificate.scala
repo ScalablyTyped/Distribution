@@ -24,13 +24,8 @@ object RevokedCertificate {
     toSchema: js.Function0[js.Any],
     userCertificate: asn1jsLib.asn1jsMod.Integer
   ): RevokedCertificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crlEntryExtensions")(crlEntryExtensions)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("revocationDate")(revocationDate)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("userCertificate")(userCertificate)
+    val __obj = js.Dynamic.literal(crlEntryExtensions = crlEntryExtensions, fromSchema = fromSchema, revocationDate = revocationDate, toJSON = toJSON, toSchema = toSchema, userCertificate = userCertificate)
+  
     __obj.asInstanceOf[RevokedCertificate]
   }
 }

@@ -18,8 +18,7 @@ object DeclarationHierarchy {
     isTarget: js.UndefOr[scala.Boolean] = js.undefined,
     next: DeclarationHierarchy = null
   ): DeclarationHierarchy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(types = types)
     if (!js.isUndefined(isTarget)) __obj.updateDynamic("isTarget")(isTarget)
     if (next != null) __obj.updateDynamic("next")(next)
     __obj.asInstanceOf[DeclarationHierarchy]

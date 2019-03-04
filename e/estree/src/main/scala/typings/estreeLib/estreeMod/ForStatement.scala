@@ -29,8 +29,8 @@ object ForStatement {
     trailingComments: js.Array[Comment] = null,
     update: estreeLib.Expression = null
   ): ForStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

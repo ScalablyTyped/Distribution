@@ -17,7 +17,7 @@ class SharedWorkerClientDriver protected ()
   /**
     * @hidden
     */
-  var `listening_`: js.Any = js.native
+  var listening_ : js.Any = js.native
   /**
     * @inheritdoc
     */

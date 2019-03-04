@@ -24,8 +24,7 @@ object TargetConfiguration {
     target: java.lang.String,
     arch: js.Array[builderDashUtilLib.outArchMod.ArchType] | builderDashUtilLib.outArchMod.ArchType = null
   ): TargetConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetConfiguration]
   }

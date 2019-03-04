@@ -33,10 +33,7 @@ object DefaultTreeCommentNode {
     parentNode: DefaultTreeParentNode,
     sourceCodeLocation: Location = null
   ): DefaultTreeCommentNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("parentNode")(parentNode)
+    val __obj = js.Dynamic.literal(data = data, nodeName = nodeName, parentNode = parentNode)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[DefaultTreeCommentNode]
   }

@@ -16,7 +16,8 @@ object Anon_0 {
     `0`: java.lang.String,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal(`0` = `0`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_0]
   }

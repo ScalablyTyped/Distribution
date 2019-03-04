@@ -24,10 +24,8 @@ trait ASPxClientCardViewBatchEditEndEditingEventArgs extends ASPxClientCancelEve
 object ASPxClientCardViewBatchEditEndEditingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, cardValues: js.Object, visibleIndex: scala.Double): ASPxClientCardViewBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cardValues")(cardValues)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, cardValues = cardValues, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientCardViewBatchEditEndEditingEventArgs]
   }
 }

@@ -60,31 +60,8 @@ object Anon_Collections {
     scaleFactor: scala.Double,
     write: js.Function1[java.lang.String, js.Any]
   ): Anon_Collections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collections")(collections)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("f2")(f2)
-    __obj.updateDynamic("getCoordinateString")(getCoordinateString)
-    __obj.updateDynamic("getCurrentPageInfo")(getCurrentPageInfo)
-    __obj.updateDynamic("getFont")(getFont)
-    __obj.updateDynamic("getFontSize")(getFontSize)
-    __obj.updateDynamic("getLineHeight")(getLineHeight)
-    __obj.updateDynamic("getNumberOfPages")(getNumberOfPages)
-    __obj.updateDynamic("getPageInfo")(getPageInfo)
-    __obj.updateDynamic("getStyle")(getStyle)
-    __obj.updateDynamic("getVerticalCoordinateString")(getVerticalCoordinateString)
-    __obj.updateDynamic("newAdditionalObject")(newAdditionalObject)
-    __obj.updateDynamic("newObject")(newObject)
-    __obj.updateDynamic("newObjectDeferred")(newObjectDeferred)
-    __obj.updateDynamic("newObjectDeferredBegin")(newObjectDeferredBegin)
-    __obj.updateDynamic("out")(out)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("pageSize")(pageSize)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("pdfEscape")(pdfEscape)
-    __obj.updateDynamic("putStream")(putStream)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(collections = collections, events = events, f2 = f2, getCoordinateString = getCoordinateString, getCurrentPageInfo = getCurrentPageInfo, getFont = getFont, getFontSize = getFontSize, getLineHeight = getLineHeight, getNumberOfPages = getNumberOfPages, getPageInfo = getPageInfo, getStyle = getStyle, getVerticalCoordinateString = getVerticalCoordinateString, newAdditionalObject = newAdditionalObject, newObject = newObject, newObjectDeferred = newObjectDeferred, newObjectDeferredBegin = newObjectDeferredBegin, out = out, output = output, pageSize = pageSize, pages = pages, pdfEscape = pdfEscape, putStream = putStream, scaleFactor = scaleFactor, write = write)
+  
     __obj.asInstanceOf[Anon_Collections]
   }
 }

@@ -211,8 +211,7 @@ object ITagInputProps {
       atBlueprintjsCoreLib.libEsmComponentsTagTagMod.ITagProps
     ]) = null
   ): ITagInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur)
     if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste)
     if (className != null) __obj.updateDynamic("className")(className)

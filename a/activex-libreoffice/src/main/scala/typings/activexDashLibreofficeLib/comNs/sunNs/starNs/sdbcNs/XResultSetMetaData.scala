@@ -193,32 +193,8 @@ object XResultSetMetaData {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XResultSetMetaData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCatalogName")(getCatalogName)
-    __obj.updateDynamic("getColumnCount")(getColumnCount)
-    __obj.updateDynamic("getColumnDisplaySize")(getColumnDisplaySize)
-    __obj.updateDynamic("getColumnLabel")(getColumnLabel)
-    __obj.updateDynamic("getColumnName")(getColumnName)
-    __obj.updateDynamic("getColumnServiceName")(getColumnServiceName)
-    __obj.updateDynamic("getColumnType")(getColumnType)
-    __obj.updateDynamic("getColumnTypeName")(getColumnTypeName)
-    __obj.updateDynamic("getPrecision")(getPrecision)
-    __obj.updateDynamic("getScale")(getScale)
-    __obj.updateDynamic("getSchemaName")(getSchemaName)
-    __obj.updateDynamic("getTableName")(getTableName)
-    __obj.updateDynamic("isAutoIncrement")(isAutoIncrement)
-    __obj.updateDynamic("isCaseSensitive")(isCaseSensitive)
-    __obj.updateDynamic("isCurrency")(isCurrency)
-    __obj.updateDynamic("isDefinitelyWritable")(isDefinitelyWritable)
-    __obj.updateDynamic("isNullable")(isNullable)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isSearchable")(isSearchable)
-    __obj.updateDynamic("isSigned")(isSigned)
-    __obj.updateDynamic("isWritable")(isWritable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, acquire = acquire, getCatalogName = getCatalogName, getColumnCount = getColumnCount, getColumnDisplaySize = getColumnDisplaySize, getColumnLabel = getColumnLabel, getColumnName = getColumnName, getColumnServiceName = getColumnServiceName, getColumnType = getColumnType, getColumnTypeName = getColumnTypeName, getPrecision = getPrecision, getScale = getScale, getSchemaName = getSchemaName, getTableName = getTableName, isAutoIncrement = isAutoIncrement, isCaseSensitive = isCaseSensitive, isCurrency = isCurrency, isDefinitelyWritable = isDefinitelyWritable, isNullable = isNullable, isReadOnly = isReadOnly, isSearchable = isSearchable, isSigned = isSigned, isWritable = isWritable, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XResultSetMetaData]
   }
 }

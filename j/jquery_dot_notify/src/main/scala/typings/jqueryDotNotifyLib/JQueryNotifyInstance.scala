@@ -22,12 +22,8 @@ object JQueryNotifyInstance {
     open: js.Function0[scala.Unit],
     options: JQueryNotifyOptions
   ): JQueryNotifyInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(close = close, element = element, isOpen = isOpen, open = open, options = options)
+  
     __obj.asInstanceOf[JQueryNotifyInstance]
   }
 }

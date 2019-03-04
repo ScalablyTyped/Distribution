@@ -20,9 +20,7 @@ object RedirectRequest {
     session: Session = null,
     uploadData: UploadData = null
   ): RedirectRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
     if (session != null) __obj.updateDynamic("session")(session)
     if (uploadData != null) __obj.updateDynamic("uploadData")(uploadData)
     __obj.asInstanceOf[RedirectRequest]

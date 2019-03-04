@@ -30,8 +30,7 @@ object WMSParams {
     version: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): WMSParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layers")(layers)
+    val __obj = js.Dynamic.literal(layers = layers)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request)

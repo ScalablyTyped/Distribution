@@ -60,21 +60,8 @@ object IInkStrokeContainer {
       scala.Unit
     ]
   ): IInkStrokeContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStroke")(addStroke)
-    __obj.updateDynamic("boundingRect")(boundingRect)
-    __obj.updateDynamic("canPasteFromClipboard")(canPasteFromClipboard)
-    __obj.updateDynamic("copySelectedToClipboard")(copySelectedToClipboard)
-    __obj.updateDynamic("deleteSelected")(deleteSelected)
-    __obj.updateDynamic("getRecognitionResults")(getRecognitionResults)
-    __obj.updateDynamic("getStrokes")(getStrokes)
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("moveSelected")(moveSelected)
-    __obj.updateDynamic("pasteFromClipboard")(pasteFromClipboard)
-    __obj.updateDynamic("saveAsync")(saveAsync)
-    __obj.updateDynamic("selectWithLine")(selectWithLine)
-    __obj.updateDynamic("selectWithPolyLine")(selectWithPolyLine)
-    __obj.updateDynamic("updateRecognitionResults")(updateRecognitionResults)
+    val __obj = js.Dynamic.literal(addStroke = addStroke, boundingRect = boundingRect, canPasteFromClipboard = canPasteFromClipboard, copySelectedToClipboard = copySelectedToClipboard, deleteSelected = deleteSelected, getRecognitionResults = getRecognitionResults, getStrokes = getStrokes, loadAsync = loadAsync, moveSelected = moveSelected, pasteFromClipboard = pasteFromClipboard, saveAsync = saveAsync, selectWithLine = selectWithLine, selectWithPolyLine = selectWithPolyLine, updateRecognitionResults = updateRecognitionResults)
+  
     __obj.asInstanceOf[IInkStrokeContainer]
   }
 }

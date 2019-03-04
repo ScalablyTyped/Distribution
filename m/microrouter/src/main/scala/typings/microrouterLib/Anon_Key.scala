@@ -16,9 +16,8 @@ object Anon_Key {
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(params = params, query = query)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

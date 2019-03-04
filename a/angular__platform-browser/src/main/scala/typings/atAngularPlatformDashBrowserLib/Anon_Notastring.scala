@@ -12,8 +12,8 @@ trait Anon_Notastring extends js.Object {
 object Anon_Notastring {
   @scala.inline
   def apply(__not_a_string: scala.Nothing): Anon_Notastring = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__not_a_string")(__not_a_string)
+    val __obj = js.Dynamic.literal(__not_a_string = __not_a_string)
+  
     __obj.asInstanceOf[Anon_Notastring]
   }
 }

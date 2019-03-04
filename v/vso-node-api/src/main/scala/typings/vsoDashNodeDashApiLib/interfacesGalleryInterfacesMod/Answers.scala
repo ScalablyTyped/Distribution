@@ -19,9 +19,8 @@ trait Answers extends js.Object {
 object Answers {
   @scala.inline
   def apply(vSMarketplaceExtensionName: java.lang.String, vSMarketplacePublisherName: java.lang.String): Answers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vSMarketplaceExtensionName")(vSMarketplaceExtensionName)
-    __obj.updateDynamic("vSMarketplacePublisherName")(vSMarketplacePublisherName)
+    val __obj = js.Dynamic.literal(vSMarketplaceExtensionName = vSMarketplaceExtensionName, vSMarketplacePublisherName = vSMarketplacePublisherName)
+  
     __obj.asInstanceOf[Answers]
   }
 }

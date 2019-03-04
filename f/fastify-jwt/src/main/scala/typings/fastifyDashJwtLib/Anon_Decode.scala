@@ -27,10 +27,8 @@ object Anon_Decode {
     sign: jsonwebtokenLib.jsonwebtokenMod.SignOptions,
     verify: jsonwebtokenLib.jsonwebtokenMod.VerifyOptions
   ): Anon_Decode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("sign")(sign)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(decode = decode, sign = sign, verify = verify)
+  
     __obj.asInstanceOf[Anon_Decode]
   }
 }

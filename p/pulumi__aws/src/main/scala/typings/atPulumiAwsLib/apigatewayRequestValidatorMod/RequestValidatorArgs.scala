@@ -32,8 +32,7 @@ object RequestValidatorArgs {
     validateRequestBody: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     validateRequestParameters: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): RequestValidatorArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(restApi = restApi.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (validateRequestBody != null) __obj.updateDynamic("validateRequestBody")(validateRequestBody.asInstanceOf[js.Any])
     if (validateRequestParameters != null) __obj.updateDynamic("validateRequestParameters")(validateRequestParameters.asInstanceOf[js.Any])

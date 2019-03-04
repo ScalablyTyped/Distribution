@@ -16,9 +16,8 @@ trait INodeArgs extends js.Object {
 object INodeArgs {
   @scala.inline
   def apply(node: js.Any, section: js.Any): INodeArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("section")(section)
+    val __obj = js.Dynamic.literal(node = node, section = section)
+  
     __obj.asInstanceOf[INodeArgs]
   }
 }

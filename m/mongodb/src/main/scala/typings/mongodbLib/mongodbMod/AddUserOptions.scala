@@ -22,8 +22,7 @@ object AddUserOptions {
     w: scala.Double | mongodbLib.mongodbLibStrings.majority | java.lang.String = null,
     wtimeout: scala.Int | scala.Double = null
   ): AddUserOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsync")(fsync)
+    val __obj = js.Dynamic.literal(fsync = fsync)
     if (customData != null) __obj.updateDynamic("customData")(customData)
     if (!js.isUndefined(j)) __obj.updateDynamic("j")(j)
     if (roles != null) __obj.updateDynamic("roles")(roles)

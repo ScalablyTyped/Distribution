@@ -84,19 +84,8 @@ object StockEvent {
     url: java.lang.String,
     urlTarget: java.lang.String
   ): StockEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderAlpha")(borderAlpha)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("rollOverColor")(rollOverColor)
-    __obj.updateDynamic("showOnAxis")(showOnAxis)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("urlTarget")(urlTarget)
+    val __obj = js.Dynamic.literal(backgroundAlpha = backgroundAlpha, backgroundColor = backgroundColor, borderAlpha = borderAlpha, borderColor = borderColor, color = color, date = date, graph = graph, rollOverColor = rollOverColor, showOnAxis = showOnAxis, text = text, url = url, urlTarget = urlTarget)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[StockEvent]
   }
 }

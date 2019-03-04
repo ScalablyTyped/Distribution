@@ -44,23 +44,8 @@ object ImageInspectInfo {
     Size: scala.Double,
     VirtualSize: scala.Double
   ): ImageInspectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Architecture")(Architecture)
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("Comment")(Comment)
-    __obj.updateDynamic("Config")(Config)
-    __obj.updateDynamic("Container")(Container)
-    __obj.updateDynamic("ContainerConfig")(ContainerConfig)
-    __obj.updateDynamic("Created")(Created)
-    __obj.updateDynamic("DockerVersion")(DockerVersion)
-    __obj.updateDynamic("GraphDriver")(GraphDriver)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Os")(Os)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("RepoDigests")(RepoDigests)
-    __obj.updateDynamic("RepoTags")(RepoTags)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("VirtualSize")(VirtualSize)
+    val __obj = js.Dynamic.literal(Architecture = Architecture, Author = Author, Comment = Comment, Config = Config, Container = Container, ContainerConfig = ContainerConfig, Created = Created, DockerVersion = DockerVersion, GraphDriver = GraphDriver, Id = Id, Os = Os, Parent = Parent, RepoDigests = RepoDigests, RepoTags = RepoTags, Size = Size, VirtualSize = VirtualSize)
+  
     __obj.asInstanceOf[ImageInspectInfo]
   }
 }

@@ -22,9 +22,8 @@ object PatchGroupArgs {
     baselineId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     patchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): PatchGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baselineId")(baselineId.asInstanceOf[js.Any])
-    __obj.updateDynamic("patchGroup")(patchGroup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baselineId = baselineId.asInstanceOf[js.Any], patchGroup = patchGroup.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PatchGroupArgs]
   }
 }

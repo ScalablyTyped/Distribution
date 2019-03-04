@@ -22,12 +22,8 @@ object InvocationEvent {
     shake: java.lang.String,
     twoFingersSwipe: java.lang.String
   ): InvocationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("floatingButton")(floatingButton)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("screenshot")(screenshot)
-    __obj.updateDynamic("shake")(shake)
-    __obj.updateDynamic("twoFingersSwipe")(twoFingersSwipe)
+    val __obj = js.Dynamic.literal(floatingButton = floatingButton, none = none, screenshot = screenshot, shake = shake, twoFingersSwipe = twoFingersSwipe)
+  
     __obj.asInstanceOf[InvocationEvent]
   }
 }

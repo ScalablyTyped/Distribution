@@ -14,10 +14,8 @@ trait Anon_AggressiveMergingPluginAggressiveSplittingPlugin extends js.Object {
 object Anon_AggressiveMergingPluginAggressiveSplittingPlugin {
   @scala.inline
   def apply(AggressiveMergingPluginNs: js.Any, AggressiveSplittingPluginNs: js.Any, UglifyJsPluginNs: js.Any): Anon_AggressiveMergingPluginAggressiveSplittingPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AggressiveMergingPluginNs")(AggressiveMergingPluginNs)
-    __obj.updateDynamic("AggressiveSplittingPluginNs")(AggressiveSplittingPluginNs)
-    __obj.updateDynamic("UglifyJsPluginNs")(UglifyJsPluginNs)
+    val __obj = js.Dynamic.literal(AggressiveMergingPluginNs = AggressiveMergingPluginNs, AggressiveSplittingPluginNs = AggressiveSplittingPluginNs, UglifyJsPluginNs = UglifyJsPluginNs)
+  
     __obj.asInstanceOf[Anon_AggressiveMergingPluginAggressiveSplittingPlugin]
   }
 }

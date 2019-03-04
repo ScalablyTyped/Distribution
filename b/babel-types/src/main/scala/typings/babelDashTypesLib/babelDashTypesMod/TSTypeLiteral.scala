@@ -25,11 +25,8 @@ object TSTypeLiteral {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSTypeLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, members = members, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

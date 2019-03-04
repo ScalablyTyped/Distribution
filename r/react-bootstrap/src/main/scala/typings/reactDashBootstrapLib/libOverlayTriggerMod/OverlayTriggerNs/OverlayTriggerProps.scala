@@ -55,8 +55,7 @@ object OverlayTriggerProps {
     rootClose: js.UndefOr[scala.Boolean] = js.undefined,
     trigger: java.lang.String | js.Array[java.lang.String] = null
   ): OverlayTriggerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overlay")(overlay)
+    val __obj = js.Dynamic.literal(overlay = overlay)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container)

@@ -82,22 +82,8 @@ object Shape {
     TextEffect: AnimationEffect,
     Verb: scala.Double
   ): Shape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bookmark")(Bookmark)
-    __obj.updateDynamic("DimColor")(DimColor)
-    __obj.updateDynamic("DimHide")(DimHide)
-    __obj.updateDynamic("DimPrevious")(DimPrevious)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("IsEmptyPresentationObject")(IsEmptyPresentationObject)
-    __obj.updateDynamic("IsPresentationObject")(IsPresentationObject)
-    __obj.updateDynamic("OnClick")(OnClick)
-    __obj.updateDynamic("PlayFull")(PlayFull)
-    __obj.updateDynamic("PresentationOrder")(PresentationOrder)
-    __obj.updateDynamic("Sound")(Sound)
-    __obj.updateDynamic("SoundOn")(SoundOn)
-    __obj.updateDynamic("Speed")(Speed)
-    __obj.updateDynamic("TextEffect")(TextEffect)
-    __obj.updateDynamic("Verb")(Verb)
+    val __obj = js.Dynamic.literal(Bookmark = Bookmark, DimColor = DimColor, DimHide = DimHide, DimPrevious = DimPrevious, Effect = Effect, IsEmptyPresentationObject = IsEmptyPresentationObject, IsPresentationObject = IsPresentationObject, OnClick = OnClick, PlayFull = PlayFull, PresentationOrder = PresentationOrder, Sound = Sound, SoundOn = SoundOn, Speed = Speed, TextEffect = TextEffect, Verb = Verb)
+  
     __obj.asInstanceOf[Shape]
   }
 }

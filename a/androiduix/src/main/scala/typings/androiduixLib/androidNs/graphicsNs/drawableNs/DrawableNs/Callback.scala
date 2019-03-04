@@ -38,10 +38,7 @@ object Callback {
     ],
     drawableSizeChange: js.Function1[/* who */ androiduixLib.androidNs.graphicsNs.drawableNs.Drawable, scala.Unit] = null
   ): Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invalidateDrawable")(invalidateDrawable)
-    __obj.updateDynamic("scheduleDrawable")(scheduleDrawable)
-    __obj.updateDynamic("unscheduleDrawable")(unscheduleDrawable)
+    val __obj = js.Dynamic.literal(invalidateDrawable = invalidateDrawable, scheduleDrawable = scheduleDrawable, unscheduleDrawable = unscheduleDrawable)
     if (drawableSizeChange != null) __obj.updateDynamic("drawableSizeChange")(drawableSizeChange)
     __obj.asInstanceOf[Callback]
   }

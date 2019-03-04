@@ -13,9 +13,8 @@ trait DurandalNavigationOptions extends js.Object {
 object DurandalNavigationOptions {
   @scala.inline
   def apply(replace: scala.Boolean, trigger: scala.Boolean): DurandalNavigationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(replace = replace, trigger = trigger)
+  
     __obj.asInstanceOf[DurandalNavigationOptions]
   }
 }

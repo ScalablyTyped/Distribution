@@ -20,11 +20,8 @@ object Anon_DataKinesisSchemaVersion {
     partitionKey: java.lang.String,
     sequenceNumber: java.lang.String
   ): Anon_DataKinesisSchemaVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("kinesisSchemaVersion")(kinesisSchemaVersion)
-    __obj.updateDynamic("partitionKey")(partitionKey)
-    __obj.updateDynamic("sequenceNumber")(sequenceNumber)
+    val __obj = js.Dynamic.literal(data = data, kinesisSchemaVersion = kinesisSchemaVersion, partitionKey = partitionKey, sequenceNumber = sequenceNumber)
+  
     __obj.asInstanceOf[Anon_DataKinesisSchemaVersion]
   }
 }

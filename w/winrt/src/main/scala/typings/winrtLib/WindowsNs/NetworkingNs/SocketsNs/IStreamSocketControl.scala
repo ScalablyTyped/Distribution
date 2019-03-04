@@ -22,12 +22,8 @@ object IStreamSocketControl {
     outboundUnicastHopLimit: scala.Double,
     qualityOfService: SocketQualityOfService
   ): IStreamSocketControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keepAlive")(keepAlive)
-    __obj.updateDynamic("noDelay")(noDelay)
-    __obj.updateDynamic("outboundBufferSizeInBytes")(outboundBufferSizeInBytes)
-    __obj.updateDynamic("outboundUnicastHopLimit")(outboundUnicastHopLimit)
-    __obj.updateDynamic("qualityOfService")(qualityOfService)
+    val __obj = js.Dynamic.literal(keepAlive = keepAlive, noDelay = noDelay, outboundBufferSizeInBytes = outboundBufferSizeInBytes, outboundUnicastHopLimit = outboundUnicastHopLimit, qualityOfService = qualityOfService)
+  
     __obj.asInstanceOf[IStreamSocketControl]
   }
 }

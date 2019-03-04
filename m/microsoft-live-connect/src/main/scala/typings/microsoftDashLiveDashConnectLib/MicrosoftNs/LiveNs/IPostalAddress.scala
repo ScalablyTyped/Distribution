@@ -46,13 +46,8 @@ object IPostalAddress {
     street: java.lang.String,
     street_2: java.lang.String
   ): IPostalAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("postal_code")(postal_code)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("street_2")(street_2)
+    val __obj = js.Dynamic.literal(city = city, postal_code = postal_code, region = region, state = state, street = street, street_2 = street_2)
+  
     __obj.asInstanceOf[IPostalAddress]
   }
 }

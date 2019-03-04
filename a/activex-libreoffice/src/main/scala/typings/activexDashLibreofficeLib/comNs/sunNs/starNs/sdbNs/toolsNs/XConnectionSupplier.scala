@@ -25,12 +25,8 @@ object XConnectionSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XConnectionSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection, acquire = acquire, initialize = initialize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XConnectionSupplier]
   }
 }

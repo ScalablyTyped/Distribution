@@ -24,11 +24,7 @@ object KEKIdentifier {
     date: asn1jsLib.asn1jsMod.GeneralizedTime = null,
     other: pkijsLib.srcOtherKeyAttributeMod.default = null
   ): KEKIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyIdentifier")(keyIdentifier)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, keyIdentifier = keyIdentifier, toJSON = toJSON, toSchema = toSchema)
     if (date != null) __obj.updateDynamic("date")(date)
     if (other != null) __obj.updateDynamic("other")(other)
     __obj.asInstanceOf[KEKIdentifier]

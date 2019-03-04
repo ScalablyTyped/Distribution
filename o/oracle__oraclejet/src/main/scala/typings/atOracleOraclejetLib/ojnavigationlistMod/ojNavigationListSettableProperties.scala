@@ -40,18 +40,7 @@ object ojNavigationListSettableProperties {
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
     rootLabel: java.lang.String = null
   ): ojNavigationListSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("hierarchyMenuThreshold")(hierarchyMenuThreshold)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], drillMode = drillMode.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], expanded = expanded, hierarchyMenuThreshold = hierarchyMenuThreshold, item = item, overflow = overflow.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], translations = translations)
     if (data != null) __obj.updateDynamic("data")(data)
     if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel)
     __obj.asInstanceOf[ojNavigationListSettableProperties[K, D]]

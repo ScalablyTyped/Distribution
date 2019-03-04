@@ -14,9 +14,7 @@ trait FrameEvent extends js.Object {
 object FrameEvent {
   @scala.inline
   def apply(origin: java.lang.String, source: Frame, data: js.Any = null): FrameEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(origin = origin, source = source)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[FrameEvent]
   }

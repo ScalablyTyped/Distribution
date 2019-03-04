@@ -29,10 +29,8 @@ object IPathBezierSeed {
     layer: java.lang.String = null,
     parentRange: IBezierRange = null
   ): IPathBezierSeed = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(controls = controls, end = end, origin = origin)
+    __obj.updateDynamic("type")(`type`)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (parentRange != null) __obj.updateDynamic("parentRange")(parentRange)
     __obj.asInstanceOf[IPathBezierSeed]

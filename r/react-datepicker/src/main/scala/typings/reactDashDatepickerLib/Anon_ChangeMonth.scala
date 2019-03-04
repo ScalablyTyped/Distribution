@@ -26,14 +26,8 @@ object Anon_ChangeMonth {
     nextMonthButtonDisabled: scala.Boolean,
     prevMonthButtonDisabled: scala.Boolean
   ): Anon_ChangeMonth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeMonth")(changeMonth)
-    __obj.updateDynamic("changeYear")(changeYear)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("decreaseMonth")(decreaseMonth)
-    __obj.updateDynamic("increaseMonth")(increaseMonth)
-    __obj.updateDynamic("nextMonthButtonDisabled")(nextMonthButtonDisabled)
-    __obj.updateDynamic("prevMonthButtonDisabled")(prevMonthButtonDisabled)
+    val __obj = js.Dynamic.literal(changeMonth = changeMonth, changeYear = changeYear, date = date, decreaseMonth = decreaseMonth, increaseMonth = increaseMonth, nextMonthButtonDisabled = nextMonthButtonDisabled, prevMonthButtonDisabled = prevMonthButtonDisabled)
+  
     __obj.asInstanceOf[Anon_ChangeMonth]
   }
 }

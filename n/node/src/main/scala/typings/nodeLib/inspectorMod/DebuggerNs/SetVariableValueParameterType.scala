@@ -33,11 +33,8 @@ object SetVariableValueParameterType {
     scopeNumber: scala.Double,
     variableName: java.lang.String
   ): SetVariableValueParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFrameId")(callFrameId)
-    __obj.updateDynamic("newValue")(newValue)
-    __obj.updateDynamic("scopeNumber")(scopeNumber)
-    __obj.updateDynamic("variableName")(variableName)
+    val __obj = js.Dynamic.literal(callFrameId = callFrameId, newValue = newValue, scopeNumber = scopeNumber, variableName = variableName)
+  
     __obj.asInstanceOf[SetVariableValueParameterType]
   }
 }

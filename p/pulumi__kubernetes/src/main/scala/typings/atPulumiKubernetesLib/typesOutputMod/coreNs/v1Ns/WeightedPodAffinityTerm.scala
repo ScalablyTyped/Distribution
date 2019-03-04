@@ -23,9 +23,8 @@ trait WeightedPodAffinityTerm extends js.Object {
 object WeightedPodAffinityTerm {
   @scala.inline
   def apply(podAffinityTerm: PodAffinityTerm, weight: scala.Double): WeightedPodAffinityTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("podAffinityTerm")(podAffinityTerm)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(podAffinityTerm = podAffinityTerm, weight = weight)
+  
     __obj.asInstanceOf[WeightedPodAffinityTerm]
   }
 }

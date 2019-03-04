@@ -53,22 +53,8 @@ object XDiagram {
     setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
     setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XDiagram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DiagramType")(DiagramType)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("ShapeType")(ShapeType)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataPointProperties")(getDataPointProperties)
-    __obj.updateDynamic("getDataRowProperties")(getDataRowProperties)
-    __obj.updateDynamic("getDiagramType")(getDiagramType)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getShapeType")(getShapeType)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setSize")(setSize)
+    val __obj = js.Dynamic.literal(DiagramType = DiagramType, Position = Position, ShapeType = ShapeType, Size = Size, acquire = acquire, getDataPointProperties = getDataPointProperties, getDataRowProperties = getDataRowProperties, getDiagramType = getDiagramType, getPosition = getPosition, getShapeType = getShapeType, getSize = getSize, queryInterface = queryInterface, release = release, setPosition = setPosition, setSize = setSize)
+  
     __obj.asInstanceOf[XDiagram]
   }
 }

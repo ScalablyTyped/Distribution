@@ -13,9 +13,8 @@ trait TooltipHideOptions extends js.Object {
 object TooltipHideOptions {
   @scala.inline
   def apply(immediately: scala.Boolean, isTouchEvent: scala.Boolean): TooltipHideOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("immediately")(immediately)
-    __obj.updateDynamic("isTouchEvent")(isTouchEvent)
+    val __obj = js.Dynamic.literal(immediately = immediately, isTouchEvent = isTouchEvent)
+  
     __obj.asInstanceOf[TooltipHideOptions]
   }
 }

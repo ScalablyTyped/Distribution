@@ -82,21 +82,8 @@ object OffsetEvent {
     weeksToMonth: scala.Double,
     years: scala.Double
   ): OffsetEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("daysToMonth")(daysToMonth)
-    __obj.updateDynamic("daysToWeek")(daysToWeek)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("totalDays")(totalDays)
-    __obj.updateDynamic("totalHours")(totalHours)
-    __obj.updateDynamic("totalMinutes")(totalMinutes)
-    __obj.updateDynamic("totalSeconds")(totalSeconds)
-    __obj.updateDynamic("weeks")(weeks)
-    __obj.updateDynamic("weeksToMonth")(weeksToMonth)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(days = days, daysToMonth = daysToMonth, daysToWeek = daysToWeek, hours = hours, minutes = minutes, months = months, seconds = seconds, totalDays = totalDays, totalHours = totalHours, totalMinutes = totalMinutes, totalSeconds = totalSeconds, weeks = weeks, weeksToMonth = weeksToMonth, years = years)
+  
     __obj.asInstanceOf[OffsetEvent]
   }
 }

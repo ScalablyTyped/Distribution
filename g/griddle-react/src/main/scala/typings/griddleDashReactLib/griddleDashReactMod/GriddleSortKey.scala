@@ -13,9 +13,8 @@ trait GriddleSortKey extends js.Object {
 object GriddleSortKey {
   @scala.inline
   def apply(id: java.lang.String, sortAscending: scala.Boolean): GriddleSortKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("sortAscending")(sortAscending)
+    val __obj = js.Dynamic.literal(id = id, sortAscending = sortAscending)
+  
     __obj.asInstanceOf[GriddleSortKey]
   }
 }

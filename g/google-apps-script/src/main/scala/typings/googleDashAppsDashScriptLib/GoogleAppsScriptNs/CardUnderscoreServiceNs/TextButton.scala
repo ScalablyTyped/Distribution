@@ -30,16 +30,8 @@ object TextButton {
     setText: js.Function1[java.lang.String, TextButton],
     setTextButtonStyle: js.Function1[TextButtonStyle, TextButton]
   ): TextButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setDisabled")(setDisabled)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setTextButtonStyle")(setTextButtonStyle)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setBackgroundColor = setBackgroundColor, setComposeAction = setComposeAction, setDisabled = setDisabled, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setText = setText, setTextButtonStyle = setTextButtonStyle)
+  
     __obj.asInstanceOf[TextButton]
   }
 }

@@ -65,19 +65,8 @@ object ServiceEndpoint {
     `type`: java.lang.String,
     url: java.lang.String
   ): ServiceEndpoint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("administratorsGroup")(administratorsGroup)
-    __obj.updateDynamic("authorization")(authorization)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("groupScopeId")(groupScopeId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("operationStatus")(operationStatus)
-    __obj.updateDynamic("readersGroup")(readersGroup)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(administratorsGroup = administratorsGroup, authorization = authorization, createdBy = createdBy, data = data, description = description, groupScopeId = groupScopeId, id = id, isReady = isReady, name = name, operationStatus = operationStatus, readersGroup = readersGroup, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ServiceEndpoint]
   }
 }

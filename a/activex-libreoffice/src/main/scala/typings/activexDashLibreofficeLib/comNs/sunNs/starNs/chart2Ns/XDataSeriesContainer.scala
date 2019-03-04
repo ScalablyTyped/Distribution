@@ -34,15 +34,8 @@ object XDataSeriesContainer {
     removeDataSeries: js.Function1[XDataSeries, scala.Unit],
     setDataSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries], scala.Unit]
   ): XDataSeriesContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSeries")(DataSeries)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDataSeries")(addDataSeries)
-    __obj.updateDynamic("getDataSeries")(getDataSeries)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDataSeries")(removeDataSeries)
-    __obj.updateDynamic("setDataSeries")(setDataSeries)
+    val __obj = js.Dynamic.literal(DataSeries = DataSeries, acquire = acquire, addDataSeries = addDataSeries, getDataSeries = getDataSeries, queryInterface = queryInterface, release = release, removeDataSeries = removeDataSeries, setDataSeries = setDataSeries)
+  
     __obj.asInstanceOf[XDataSeriesContainer]
   }
 }

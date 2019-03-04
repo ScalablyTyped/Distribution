@@ -12,8 +12,8 @@ trait Anon_Flash extends js.Object {
 object Anon_Flash {
   @scala.inline
   def apply(flash: expressDashFlashDash2Lib.expressDashFlashDash2Mod.Global.ExpressNs.Flash): Anon_Flash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flash")(flash)
+    val __obj = js.Dynamic.literal(flash = flash)
+  
     __obj.asInstanceOf[Anon_Flash]
   }
 }

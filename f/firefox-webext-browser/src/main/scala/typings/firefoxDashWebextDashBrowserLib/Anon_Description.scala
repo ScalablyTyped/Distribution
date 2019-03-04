@@ -20,8 +20,7 @@ object Anon_Description {
     description: java.lang.String = null,
     shortcut: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.KeyName = null
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (shortcut != null) __obj.updateDynamic("shortcut")(shortcut)
     __obj.asInstanceOf[Anon_Description]

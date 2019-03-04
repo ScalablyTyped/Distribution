@@ -18,10 +18,8 @@ object IDraggingEventArgs {
     pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
     position: winrtLib.WindowsNs.FoundationNs.Point
   ): IDraggingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("draggingState")(draggingState)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(draggingState = draggingState, pointerDeviceType = pointerDeviceType, position = position)
+  
     __obj.asInstanceOf[IDraggingEventArgs]
   }
 }

@@ -20,10 +20,8 @@ object ContextChangeEventObject {
     ContextName: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ContextChangeEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApplicationName")(ApplicationName)
-    __obj.updateDynamic("ContextName")(ContextName)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName, ContextName = ContextName, Source = Source)
+  
     __obj.asInstanceOf[ContextChangeEventObject]
   }
 }

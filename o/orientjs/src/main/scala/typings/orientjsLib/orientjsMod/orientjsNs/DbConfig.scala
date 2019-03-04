@@ -22,8 +22,7 @@ object DbConfig {
     `type`: java.lang.String = null,
     username: java.lang.String = null
   ): DbConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (password != null) __obj.updateDynamic("password")(password)
     if (storage != null) __obj.updateDynamic("storage")(storage)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

@@ -28,9 +28,8 @@ object Anon_All {
       atAngularCompilerLib.srcUtilMod.SyncAsync[js.Any]
     ]
   ): Anon_All = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("assertSync")(assertSync)
+    val __obj = js.Dynamic.literal(all = all, assertSync = assertSync)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[Anon_All]
   }
 }

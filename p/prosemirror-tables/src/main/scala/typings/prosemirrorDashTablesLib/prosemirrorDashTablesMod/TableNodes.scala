@@ -20,11 +20,8 @@ object TableNodes {
     table_header: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec,
     table_row: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec
   ): TableNodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("table_cell")(table_cell)
-    __obj.updateDynamic("table_header")(table_header)
-    __obj.updateDynamic("table_row")(table_row)
+    val __obj = js.Dynamic.literal(table = table, table_cell = table_cell, table_header = table_header, table_row = table_row)
+  
     __obj.asInstanceOf[TableNodes]
   }
 }

@@ -37,8 +37,7 @@ object UserGroupArgs {
     precedence: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): UserGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (precedence != null) __obj.updateDynamic("precedence")(precedence.asInstanceOf[js.Any])

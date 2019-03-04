@@ -18,10 +18,8 @@ object Response {
     facetHits: js.Array[algoliasearchLib.Anon_Count],
     processingTimeMS: scala.Double
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exhaustiveFacetsCount")(exhaustiveFacetsCount)
-    __obj.updateDynamic("facetHits")(facetHits)
-    __obj.updateDynamic("processingTimeMS")(processingTimeMS)
+    val __obj = js.Dynamic.literal(exhaustiveFacetsCount = exhaustiveFacetsCount, facetHits = facetHits, processingTimeMS = processingTimeMS)
+  
     __obj.asInstanceOf[Response]
   }
 }

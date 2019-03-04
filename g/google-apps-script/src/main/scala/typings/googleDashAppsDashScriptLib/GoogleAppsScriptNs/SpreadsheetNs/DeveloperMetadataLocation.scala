@@ -22,12 +22,8 @@ object DeveloperMetadataLocation {
     getSheet: js.Function0[Sheet],
     getSpreadsheet: js.Function0[Spreadsheet]
   ): DeveloperMetadataLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColumn")(getColumn)
-    __obj.updateDynamic("getLocationType")(getLocationType)
-    __obj.updateDynamic("getRow")(getRow)
-    __obj.updateDynamic("getSheet")(getSheet)
-    __obj.updateDynamic("getSpreadsheet")(getSpreadsheet)
+    val __obj = js.Dynamic.literal(getColumn = getColumn, getLocationType = getLocationType, getRow = getRow, getSheet = getSheet, getSpreadsheet = getSpreadsheet)
+  
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
 }

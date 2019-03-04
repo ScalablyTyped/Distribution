@@ -20,8 +20,7 @@ object IShepherdTourButton {
     classes: java.lang.String = null,
     events: IShepherdTourButtonEventHash = null
   ): IShepherdTourButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (action != null) __obj.updateDynamic("action")(action)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (events != null) __obj.updateDynamic("events")(events)

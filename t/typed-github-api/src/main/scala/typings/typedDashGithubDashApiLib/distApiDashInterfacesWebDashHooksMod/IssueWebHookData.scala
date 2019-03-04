@@ -21,10 +21,7 @@ object IssueWebHookData {
     organization: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.OrganizationSummary = null,
     repository: typedDashGithubDashApiLib.distApiDashInterfacesRepositoryMod.Repository = null
   ): IssueWebHookData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue, sender = sender)
     if (organization != null) __obj.updateDynamic("organization")(organization)
     if (repository != null) __obj.updateDynamic("repository")(repository)
     __obj.asInstanceOf[IssueWebHookData]

@@ -66,34 +66,8 @@ object ITextCharacterFormat {
     underline: UnderlineType,
     weight: scala.Double
   ): ITextCharacterFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allCaps")(allCaps)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("fontStretch")(fontStretch)
-    __obj.updateDynamic("fontStyle")(fontStyle)
-    __obj.updateDynamic("foregroundColor")(foregroundColor)
-    __obj.updateDynamic("getClone")(getClone)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("kerning")(kerning)
-    __obj.updateDynamic("languageTag")(languageTag)
-    __obj.updateDynamic("linkType")(linkType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("protectedText")(protectedText)
-    __obj.updateDynamic("setClone")(setClone)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("smallCaps")(smallCaps)
-    __obj.updateDynamic("spacing")(spacing)
-    __obj.updateDynamic("strikethrough")(strikethrough)
-    __obj.updateDynamic("subscript")(subscript)
-    __obj.updateDynamic("superscript")(superscript)
-    __obj.updateDynamic("textScript")(textScript)
-    __obj.updateDynamic("underline")(underline)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(allCaps = allCaps, backgroundColor = backgroundColor, bold = bold, fontStretch = fontStretch, fontStyle = fontStyle, foregroundColor = foregroundColor, getClone = getClone, hidden = hidden, isEqual = isEqual, italic = italic, kerning = kerning, languageTag = languageTag, linkType = linkType, name = name, outline = outline, position = position, protectedText = protectedText, setClone = setClone, size = size, smallCaps = smallCaps, spacing = spacing, strikethrough = strikethrough, subscript = subscript, superscript = superscript, textScript = textScript, underline = underline, weight = weight)
+  
     __obj.asInstanceOf[ITextCharacterFormat]
   }
 }

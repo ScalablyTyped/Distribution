@@ -28,8 +28,7 @@ object OpenDocumentOptions {
     fileType: baiduDashAppLib.baiduDashAppLibStrings.doc | baiduDashAppLib.baiduDashAppLibStrings.xls | baiduDashAppLib.baiduDashAppLibStrings.ppt | baiduDashAppLib.baiduDashAppLibStrings.pdf | baiduDashAppLib.baiduDashAppLibStrings.docx | baiduDashAppLib.baiduDashAppLibStrings.xlsx | baiduDashAppLib.baiduDashAppLibStrings.pptx = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): OpenDocumentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
+    val __obj = js.Dynamic.literal(filePath = filePath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])

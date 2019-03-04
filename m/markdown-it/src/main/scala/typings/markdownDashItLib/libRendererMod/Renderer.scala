@@ -27,12 +27,8 @@ object Renderer {
     ],
     rules: org.scalablytyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender]
   ): Renderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("renderAttrs")(renderAttrs)
-    __obj.updateDynamic("renderInline")(renderInline)
-    __obj.updateDynamic("renderToken")(renderToken)
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(render = render, renderAttrs = renderAttrs, renderInline = renderInline, renderToken = renderToken, rules = rules)
+  
     __obj.asInstanceOf[Renderer]
   }
 }

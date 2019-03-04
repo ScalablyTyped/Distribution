@@ -15,8 +15,7 @@ trait FontDetails extends js.Object {
 object FontDetails {
   @scala.inline
   def apply(genericFamily: java.lang.String, script: java.lang.String = null): FontDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("genericFamily")(genericFamily)
+    val __obj = js.Dynamic.literal(genericFamily = genericFamily)
     if (script != null) __obj.updateDynamic("script")(script)
     __obj.asInstanceOf[FontDetails]
   }

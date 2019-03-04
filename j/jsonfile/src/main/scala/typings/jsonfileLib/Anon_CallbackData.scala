@@ -41,9 +41,9 @@ trait Anon_CallbackData extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'w'` is used.
     */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: scala.Double, data: js.Any): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: scala.Double, data: js.Any, options: nodeLib.fsMod.WriteFileOptions): js.Promise[scala.Unit] = js.native
 }
 

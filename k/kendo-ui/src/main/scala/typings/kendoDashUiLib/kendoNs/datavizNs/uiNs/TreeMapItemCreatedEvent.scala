@@ -17,10 +17,7 @@ object TreeMapItemCreatedEvent {
     sender: TreeMap,
     element: kendoDashUiLib.JQuery | stdLib.Element = null
   ): TreeMapItemCreatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeMapItemCreatedEvent]
   }

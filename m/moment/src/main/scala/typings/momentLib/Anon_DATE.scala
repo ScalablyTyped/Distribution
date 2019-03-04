@@ -30,16 +30,8 @@ object Anon_DATE {
     TIME_SECONDS: java.lang.String,
     WEEK: java.lang.String
   ): Anon_DATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DATE")(DATE)
-    __obj.updateDynamic("DATETIME_LOCAL")(DATETIME_LOCAL)
-    __obj.updateDynamic("DATETIME_LOCAL_MS")(DATETIME_LOCAL_MS)
-    __obj.updateDynamic("DATETIME_LOCAL_SECONDS")(DATETIME_LOCAL_SECONDS)
-    __obj.updateDynamic("MONTH")(MONTH)
-    __obj.updateDynamic("TIME")(TIME)
-    __obj.updateDynamic("TIME_MS")(TIME_MS)
-    __obj.updateDynamic("TIME_SECONDS")(TIME_SECONDS)
-    __obj.updateDynamic("WEEK")(WEEK)
+    val __obj = js.Dynamic.literal(DATE = DATE, DATETIME_LOCAL = DATETIME_LOCAL, DATETIME_LOCAL_MS = DATETIME_LOCAL_MS, DATETIME_LOCAL_SECONDS = DATETIME_LOCAL_SECONDS, MONTH = MONTH, TIME = TIME, TIME_MS = TIME_MS, TIME_SECONDS = TIME_SECONDS, WEEK = WEEK)
+  
     __obj.asInstanceOf[Anon_DATE]
   }
 }

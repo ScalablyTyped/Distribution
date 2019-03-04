@@ -22,12 +22,8 @@ object IPrintTaskOptionDetails {
     onoptionchanged: js.Any,
     options: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, IPrintOptionDetails]
   ): IPrintTaskOptionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createItemListOption")(createItemListOption)
-    __obj.updateDynamic("createTextOption")(createTextOption)
-    __obj.updateDynamic("onbeginvalidation")(onbeginvalidation)
-    __obj.updateDynamic("onoptionchanged")(onoptionchanged)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(createItemListOption = createItemListOption, createTextOption = createTextOption, onbeginvalidation = onbeginvalidation, onoptionchanged = onoptionchanged, options = options)
+  
     __obj.asInstanceOf[IPrintTaskOptionDetails]
   }
 }

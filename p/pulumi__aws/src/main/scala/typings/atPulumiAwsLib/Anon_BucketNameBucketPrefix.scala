@@ -22,11 +22,7 @@ object Anon_BucketNameBucketPrefix {
     sourceEngineVersion: java.lang.String,
     bucketPrefix: java.lang.String = null
   ): Anon_BucketNameBucketPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName)
-    __obj.updateDynamic("ingestionRole")(ingestionRole)
-    __obj.updateDynamic("sourceEngine")(sourceEngine)
-    __obj.updateDynamic("sourceEngineVersion")(sourceEngineVersion)
+    val __obj = js.Dynamic.literal(bucketName = bucketName, ingestionRole = ingestionRole, sourceEngine = sourceEngine, sourceEngineVersion = sourceEngineVersion)
     if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix)
     __obj.asInstanceOf[Anon_BucketNameBucketPrefix]
   }

@@ -36,11 +36,8 @@ object InputSource {
     sPublicId: java.lang.String,
     sSystemId: java.lang.String
   ): InputSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aInputStream")(aInputStream)
-    __obj.updateDynamic("sEncoding")(sEncoding)
-    __obj.updateDynamic("sPublicId")(sPublicId)
-    __obj.updateDynamic("sSystemId")(sSystemId)
+    val __obj = js.Dynamic.literal(aInputStream = aInputStream, sEncoding = sEncoding, sPublicId = sPublicId, sSystemId = sSystemId)
+  
     __obj.asInstanceOf[InputSource]
   }
 }

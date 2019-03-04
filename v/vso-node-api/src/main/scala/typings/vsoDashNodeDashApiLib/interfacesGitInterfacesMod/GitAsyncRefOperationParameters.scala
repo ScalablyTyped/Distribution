@@ -32,11 +32,8 @@ object GitAsyncRefOperationParameters {
     repository: GitRepository,
     source: GitAsyncRefOperationSource
   ): GitAsyncRefOperationParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generatedRefName")(generatedRefName)
-    __obj.updateDynamic("ontoRefName")(ontoRefName)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(generatedRefName = generatedRefName, ontoRefName = ontoRefName, repository = repository, source = source)
+  
     __obj.asInstanceOf[GitAsyncRefOperationParameters]
   }
 }

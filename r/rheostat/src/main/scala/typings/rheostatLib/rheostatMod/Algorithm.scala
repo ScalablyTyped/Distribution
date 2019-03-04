@@ -16,9 +16,8 @@ object Algorithm {
     getPosition: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
     getValue: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
   ): Algorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getValue")(getValue)
+    val __obj = js.Dynamic.literal(getPosition = getPosition, getValue = getValue)
+  
     __obj.asInstanceOf[Algorithm]
   }
 }

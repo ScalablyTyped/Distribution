@@ -18,8 +18,8 @@ trait PodReadinessGate extends js.Object {
 object PodReadinessGate {
   @scala.inline
   def apply(conditionType: java.lang.String): PodReadinessGate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditionType")(conditionType)
+    val __obj = js.Dynamic.literal(conditionType = conditionType)
+  
     __obj.asInstanceOf[PodReadinessGate]
   }
 }

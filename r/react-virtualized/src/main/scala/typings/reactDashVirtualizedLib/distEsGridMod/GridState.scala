@@ -22,12 +22,8 @@ object GridState {
     scrollLeft: scala.Double,
     scrollTop: scala.Double
   ): GridState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("scrollDirectionHorizontal")(scrollDirectionHorizontal)
-    __obj.updateDynamic("scrollDirectionVertical")(scrollDirectionVertical)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
+    val __obj = js.Dynamic.literal(isScrolling = isScrolling, scrollDirectionHorizontal = scrollDirectionHorizontal, scrollDirectionVertical = scrollDirectionVertical, scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
     __obj.asInstanceOf[GridState]
   }
 }

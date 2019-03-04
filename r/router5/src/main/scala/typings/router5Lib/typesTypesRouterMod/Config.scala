@@ -20,11 +20,8 @@ object Config {
     encoders: stdLib.Record[java.lang.String, _],
     forwardMap: stdLib.Record[java.lang.String, _]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decoders")(decoders)
-    __obj.updateDynamic("defaultParams")(defaultParams)
-    __obj.updateDynamic("encoders")(encoders)
-    __obj.updateDynamic("forwardMap")(forwardMap)
+    val __obj = js.Dynamic.literal(decoders = decoders, defaultParams = defaultParams, encoders = encoders, forwardMap = forwardMap)
+  
     __obj.asInstanceOf[Config]
   }
 }

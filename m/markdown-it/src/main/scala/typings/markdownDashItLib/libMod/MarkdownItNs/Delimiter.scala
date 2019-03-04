@@ -28,15 +28,8 @@ object Delimiter {
     open: scala.Boolean,
     token: scala.Double
   ): Delimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("jump")(jump)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("marker")(marker)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(close = close, end = end, jump = jump, length = length, level = level, marker = marker, open = open, token = token)
+  
     __obj.asInstanceOf[Delimiter]
   }
 }

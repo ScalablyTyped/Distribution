@@ -23,12 +23,8 @@ object XRedlinesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRedlinesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Redlines")(Redlines)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRedlines")(getRedlines)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Redlines = Redlines, acquire = acquire, getRedlines = getRedlines, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRedlinesSupplier]
   }
 }

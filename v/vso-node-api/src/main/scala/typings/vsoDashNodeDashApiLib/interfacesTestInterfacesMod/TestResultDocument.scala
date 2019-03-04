@@ -13,9 +13,8 @@ trait TestResultDocument extends js.Object {
 object TestResultDocument {
   @scala.inline
   def apply(operationReference: TestOperationReference, payload: TestResultPayload): TestResultDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operationReference")(operationReference)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(operationReference = operationReference, payload = payload)
+  
     __obj.asInstanceOf[TestResultDocument]
   }
 }

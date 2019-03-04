@@ -22,12 +22,8 @@ object NumeralJSOptions {
     scalePercentBy100: scala.Boolean,
     zeroFormat: java.lang.String
   ): NumeralJSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentLocale")(currentLocale)
-    __obj.updateDynamic("defaultFormat")(defaultFormat)
-    __obj.updateDynamic("nullFormat")(nullFormat)
-    __obj.updateDynamic("scalePercentBy100")(scalePercentBy100)
-    __obj.updateDynamic("zeroFormat")(zeroFormat)
+    val __obj = js.Dynamic.literal(currentLocale = currentLocale, defaultFormat = defaultFormat, nullFormat = nullFormat, scalePercentBy100 = scalePercentBy100, zeroFormat = zeroFormat)
+  
     __obj.asInstanceOf[NumeralJSOptions]
   }
 }

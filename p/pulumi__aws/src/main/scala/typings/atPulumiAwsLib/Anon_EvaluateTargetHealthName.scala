@@ -18,10 +18,8 @@ object Anon_EvaluateTargetHealthName {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_EvaluateTargetHealthName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluateTargetHealth")(evaluateTargetHealth.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(evaluateTargetHealth = evaluateTargetHealth.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EvaluateTargetHealthName]
   }
 }

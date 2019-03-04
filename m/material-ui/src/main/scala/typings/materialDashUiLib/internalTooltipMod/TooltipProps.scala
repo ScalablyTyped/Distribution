@@ -30,8 +30,7 @@ object TooltipProps {
     touch: js.UndefOr[scala.Boolean] = js.undefined,
     verticalPosition: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.vertical = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (horizontalPosition != null) __obj.updateDynamic("horizontalPosition")(horizontalPosition)

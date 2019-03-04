@@ -152,34 +152,8 @@ object Guide {
     value: scala.Double,
     valueAxis: amchartsLib.valueaxisMod.default
   ): Guide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("above")(above)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("balloonColor")(balloonColor)
-    __obj.updateDynamic("balloonText")(balloonText)
-    __obj.updateDynamic("boldLabel")(boldLabel)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("dashLength")(dashLength)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("fillAlpha")(fillAlpha)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inside")(inside)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelRotation")(labelRotation)
-    __obj.updateDynamic("lineAlpha")(lineAlpha)
-    __obj.updateDynamic("lineColor")(lineColor)
-    __obj.updateDynamic("lineThickness")(lineThickness)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("tickLength")(tickLength)
-    __obj.updateDynamic("toAngle")(toAngle)
-    __obj.updateDynamic("toCategory")(toCategory)
-    __obj.updateDynamic("toDate")(toDate)
-    __obj.updateDynamic("toValue")(toValue)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("valueAxis")(valueAxis)
+    val __obj = js.Dynamic.literal(above = above, angle = angle, balloonColor = balloonColor, balloonText = balloonText, boldLabel = boldLabel, category = category, dashLength = dashLength, date = date, expand = expand, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, id = id, inside = inside, label = label, labelRotation = labelRotation, lineAlpha = lineAlpha, lineColor = lineColor, lineThickness = lineThickness, position = position, tickLength = tickLength, toAngle = toAngle, toCategory = toCategory, toDate = toDate, toValue = toValue, value = value, valueAxis = valueAxis)
+  
     __obj.asInstanceOf[Guide]
   }
 }

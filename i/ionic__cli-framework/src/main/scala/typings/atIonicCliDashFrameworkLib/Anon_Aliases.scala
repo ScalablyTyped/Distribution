@@ -20,11 +20,8 @@ object Anon_Aliases {
     namespace: N,
     path: js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandPathItem[C, N, M, I, O]]
   ): Anon_Aliases[I, N, O, M, C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(aliases = aliases, command = command.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], path = path)
+  
     __obj.asInstanceOf[Anon_Aliases[I, N, O, M, C]]
   }
 }

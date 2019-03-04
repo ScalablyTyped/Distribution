@@ -117,14 +117,13 @@ object TextCursor {
     ],
     TextRange: TextRange = null
   ): TextCursor = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(getPropertyStates = getPropertyStates)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDocumentInsertable)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XMultiPropertyStates)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParagraphCursor)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSentenceCursor)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSortable)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XWordCursor)
-    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
     js.Dynamic.global.Object.assign(__obj, TextRange)
     __obj.asInstanceOf[TextCursor]
   }

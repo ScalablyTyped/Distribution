@@ -18,8 +18,8 @@ object OnGenericMotionListener {
       js.Any
     ]
   ): OnGenericMotionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGenericMotion")(onGenericMotion)
+    val __obj = js.Dynamic.literal(onGenericMotion = onGenericMotion)
+  
     __obj.asInstanceOf[OnGenericMotionListener]
   }
 }

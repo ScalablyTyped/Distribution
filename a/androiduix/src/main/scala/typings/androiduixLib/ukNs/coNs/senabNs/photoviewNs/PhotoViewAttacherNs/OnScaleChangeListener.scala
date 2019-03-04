@@ -12,8 +12,8 @@ trait OnScaleChangeListener extends js.Object {
 object OnScaleChangeListener {
   @scala.inline
   def apply(onScaleChange: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]): OnScaleChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onScaleChange")(onScaleChange)
+    val __obj = js.Dynamic.literal(onScaleChange = onScaleChange)
+  
     __obj.asInstanceOf[OnScaleChangeListener]
   }
 }

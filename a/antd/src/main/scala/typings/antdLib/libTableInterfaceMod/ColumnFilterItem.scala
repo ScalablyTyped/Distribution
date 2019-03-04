@@ -11,22 +11,20 @@ trait ColumnFilterItem extends js.Object {
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias antd.antd/lib/table/interface.ColumnFilterItem */ js.Object
     ]
   ] = js.undefined
-  var text: java.lang.String
+  var text: reactLib.reactMod.ReactNs.ReactNode
   var value: java.lang.String
 }
 
 object ColumnFilterItem {
   @scala.inline
   def apply(
-    text: java.lang.String,
+    text: reactLib.reactMod.ReactNs.ReactNode,
     value: java.lang.String,
     children: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias antd.antd/lib/table/interface.ColumnFilterItem */ js.Object
     ] = null
   ): ColumnFilterItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[ColumnFilterItem]
   }

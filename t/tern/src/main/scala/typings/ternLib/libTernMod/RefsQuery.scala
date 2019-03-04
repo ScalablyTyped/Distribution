@@ -25,9 +25,8 @@ object RefsQuery {
     lineCharPositions: js.UndefOr[scala.Boolean] = js.undefined,
     start: scala.Double | Position = null
   ): RefsQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file)
+    __obj.updateDynamic("type")(`type`)
     if (docFormat != null) __obj.updateDynamic("docFormat")(docFormat)
     if (!js.isUndefined(lineCharPositions)) __obj.updateDynamic("lineCharPositions")(lineCharPositions)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

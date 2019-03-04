@@ -13,9 +13,8 @@ trait Anon_False[TValue] extends js.Object {
 object Anon_False {
   @scala.inline
   def apply[TValue](hasError: formstateLib.formstateLibNumbers.`false`, value: TValue): Anon_False[TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasError = hasError, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_False[TValue]]
   }
 }

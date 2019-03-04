@@ -22,9 +22,8 @@ object ToolBarProps {
     components: ButtonGroupProps with reactDashBootstrapDashTableLib.Anon_BtnGroup,
     event: reactDashBootstrapDashTableLib.Anon_CloseInsertModal
   ): ToolBarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(components = components, event = event)
+  
     __obj.asInstanceOf[ToolBarProps]
   }
 }

@@ -20,8 +20,8 @@ object IPageButton {
     current: js.UndefOr[scala.Boolean] = js.undefined,
     number: scala.Int | scala.Double = null
   ): IPageButton = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal(active = active)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(current)) __obj.updateDynamic("current")(current)
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPageButton]

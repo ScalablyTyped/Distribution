@@ -18,10 +18,8 @@ object Anon_CancelProtViewWindow {
     ProtViewWindow: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindow,
     ProtectedViewCloseReason: activexDashPowerpointLib.PowerPointNs.PpProtectedViewCloseReason
   ): Anon_CancelProtViewWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("ProtViewWindow")(ProtViewWindow)
-    __obj.updateDynamic("ProtectedViewCloseReason")(ProtectedViewCloseReason)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, ProtViewWindow = ProtViewWindow, ProtectedViewCloseReason = ProtectedViewCloseReason)
+  
     __obj.asInstanceOf[Anon_CancelProtViewWindow]
   }
 }

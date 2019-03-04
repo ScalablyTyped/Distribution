@@ -26,14 +26,8 @@ object TableEventRecord {
     eventVersion: java.lang.String,
     userIdentity: atPulumiAwsLib.Anon_PrincipalId
   ): TableEventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRegion")(awsRegion)
-    __obj.updateDynamic("dynamodb")(dynamodb)
-    __obj.updateDynamic("eventID")(eventID)
-    __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    __obj.updateDynamic("eventSource")(eventSource)
-    __obj.updateDynamic("eventVersion")(eventVersion)
-    __obj.updateDynamic("userIdentity")(userIdentity)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion, dynamodb = dynamodb, eventID = eventID, eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource, eventVersion = eventVersion, userIdentity = userIdentity)
+  
     __obj.asInstanceOf[TableEventRecord]
   }
 }

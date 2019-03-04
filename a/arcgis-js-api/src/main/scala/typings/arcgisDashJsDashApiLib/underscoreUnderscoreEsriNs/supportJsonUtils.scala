@@ -20,8 +20,8 @@ trait supportJsonUtils extends js.Object {
 object supportJsonUtils {
   @scala.inline
   def apply(fromJSON: js.Function1[js.Any, Renderer]): supportJsonUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromJSON")(fromJSON)
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON)
+  
     __obj.asInstanceOf[supportJsonUtils]
   }
 }

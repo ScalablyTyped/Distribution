@@ -22,9 +22,7 @@ object StringValueNode {
     block: js.UndefOr[scala.Boolean] = js.undefined,
     loc: Location = null
   ): StringValueNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(kind = kind, value = value)
     if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[StringValueNode]

@@ -20,11 +20,8 @@ object Anon_DocFromState {
     Handled: scala.Boolean,
     ToState: scala.Double
   ): Anon_DocFromState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("FromState")(FromState)
-    __obj.updateDynamic("Handled")(Handled)
-    __obj.updateDynamic("ToState")(ToState)
+    val __obj = js.Dynamic.literal(Doc = Doc, FromState = FromState, Handled = Handled, ToState = ToState)
+  
     __obj.asInstanceOf[Anon_DocFromState]
   }
 }

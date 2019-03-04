@@ -20,11 +20,8 @@ object Sql {
     options: js.Any,
     sql: java.lang.String
   ): Sql = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("sql")(sql)
+    val __obj = js.Dynamic.literal(bindings = bindings, method = method, options = options, sql = sql)
+  
     __obj.asInstanceOf[Sql]
   }
 }

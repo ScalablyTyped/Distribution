@@ -12,8 +12,8 @@ trait Anon_PostalCode extends js.Object {
 object Anon_PostalCode {
   @scala.inline
   def apply(postalCode: java.lang.String | scala.Double): Anon_PostalCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(postalCode = postalCode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PostalCode]
   }
 }

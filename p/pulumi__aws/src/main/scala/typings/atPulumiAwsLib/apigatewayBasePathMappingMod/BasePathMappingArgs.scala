@@ -32,9 +32,7 @@ object BasePathMappingArgs {
     basePath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     stageName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): BasePathMappingArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
     if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePathMappingArgs]

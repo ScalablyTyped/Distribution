@@ -41,12 +41,8 @@ object ASPxClientPivotMenuItemClickEventArgs {
     MenuItemName: java.lang.String,
     MenuType: java.lang.String
   ): ASPxClientPivotMenuItemClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Area")(Area)
-    __obj.updateDynamic("FieldID")(FieldID)
-    __obj.updateDynamic("FieldValueIndex")(FieldValueIndex)
-    __obj.updateDynamic("MenuItemName")(MenuItemName)
-    __obj.updateDynamic("MenuType")(MenuType)
+    val __obj = js.Dynamic.literal(Area = Area, FieldID = FieldID, FieldValueIndex = FieldValueIndex, MenuItemName = MenuItemName, MenuType = MenuType)
+  
     __obj.asInstanceOf[ASPxClientPivotMenuItemClickEventArgs]
   }
 }

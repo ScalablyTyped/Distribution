@@ -14,10 +14,8 @@ trait OutputFile extends js.Object {
 object OutputFile {
   @scala.inline
   def apply(name: java.lang.String, text: java.lang.String, writeByteOrderMark: scala.Boolean): OutputFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("writeByteOrderMark")(writeByteOrderMark)
+    val __obj = js.Dynamic.literal(name = name, text = text, writeByteOrderMark = writeByteOrderMark)
+  
     __obj.asInstanceOf[OutputFile]
   }
 }

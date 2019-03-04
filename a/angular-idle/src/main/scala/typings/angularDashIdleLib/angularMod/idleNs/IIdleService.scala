@@ -71,17 +71,8 @@ object IIdleService {
     unwatch: js.Function0[scala.Unit],
     watch: js.Function0[scala.Unit]
   ): IIdleService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIdle")(getIdle)
-    __obj.updateDynamic("getTimeout")(getTimeout)
-    __obj.updateDynamic("idling")(idling)
-    __obj.updateDynamic("interrupt")(interrupt)
-    __obj.updateDynamic("isExpired")(isExpired)
-    __obj.updateDynamic("running")(running)
-    __obj.updateDynamic("setIdle")(setIdle)
-    __obj.updateDynamic("setTimeout")(setTimeout)
-    __obj.updateDynamic("unwatch")(unwatch)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(getIdle = getIdle, getTimeout = getTimeout, idling = idling, interrupt = interrupt, isExpired = isExpired, running = running, setIdle = setIdle, setTimeout = setTimeout, unwatch = unwatch, watch = watch)
+  
     __obj.asInstanceOf[IIdleService]
   }
 }

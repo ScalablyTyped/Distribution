@@ -13,9 +13,8 @@ trait SceneViewLayerviewDestroyEvent extends js.Object {
 object SceneViewLayerviewDestroyEvent {
   @scala.inline
   def apply(layer: Layer, layerView: LayerView): SceneViewLayerviewDestroyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("layerView")(layerView)
+    val __obj = js.Dynamic.literal(layer = layer, layerView = layerView)
+  
     __obj.asInstanceOf[SceneViewLayerviewDestroyEvent]
   }
 }

@@ -12,8 +12,8 @@ trait PrettyOptions extends js.Object {
 object PrettyOptions {
   @scala.inline
   def apply(ocd: scala.Boolean): PrettyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ocd")(ocd)
+    val __obj = js.Dynamic.literal(ocd = ocd)
+  
     __obj.asInstanceOf[PrettyOptions]
   }
 }

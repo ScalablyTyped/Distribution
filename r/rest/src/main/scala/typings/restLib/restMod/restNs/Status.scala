@@ -13,8 +13,7 @@ trait Status extends js.Object {
 object Status {
   @scala.inline
   def apply(code: scala.Double, text: java.lang.String = null): Status = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Status]
   }

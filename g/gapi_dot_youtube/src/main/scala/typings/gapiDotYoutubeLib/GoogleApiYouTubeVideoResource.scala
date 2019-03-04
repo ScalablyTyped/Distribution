@@ -78,20 +78,8 @@ object GoogleApiYouTubeVideoResource {
     suggestions: Anon_EditorSuggestions,
     topicDetails: Anon_TopicIds
   ): GoogleApiYouTubeVideoResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentDetails")(contentDetails)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("fileDetails")(fileDetails)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("player")(player)
-    __obj.updateDynamic("processingDetails")(processingDetails)
-    __obj.updateDynamic("recordingDetails")(recordingDetails)
-    __obj.updateDynamic("snippet")(snippet)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("suggestions")(suggestions)
-    __obj.updateDynamic("topicDetails")(topicDetails)
+    val __obj = js.Dynamic.literal(contentDetails = contentDetails, etag = etag, fileDetails = fileDetails, id = id, kind = kind, player = player, processingDetails = processingDetails, recordingDetails = recordingDetails, snippet = snippet, statistics = statistics, status = status, suggestions = suggestions, topicDetails = topicDetails)
+  
     __obj.asInstanceOf[GoogleApiYouTubeVideoResource]
   }
 }

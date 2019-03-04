@@ -24,13 +24,8 @@ object IDataPlanStatus {
     nextBillingCycle: stdLib.Date,
     outboundBitsPerSecond: scala.Double
   ): IDataPlanStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataLimitInMegabytes")(dataLimitInMegabytes)
-    __obj.updateDynamic("dataPlanUsage")(dataPlanUsage)
-    __obj.updateDynamic("inboundBitsPerSecond")(inboundBitsPerSecond)
-    __obj.updateDynamic("maxTransferSizeInMegabytes")(maxTransferSizeInMegabytes)
-    __obj.updateDynamic("nextBillingCycle")(nextBillingCycle)
-    __obj.updateDynamic("outboundBitsPerSecond")(outboundBitsPerSecond)
+    val __obj = js.Dynamic.literal(dataLimitInMegabytes = dataLimitInMegabytes, dataPlanUsage = dataPlanUsage, inboundBitsPerSecond = inboundBitsPerSecond, maxTransferSizeInMegabytes = maxTransferSizeInMegabytes, nextBillingCycle = nextBillingCycle, outboundBitsPerSecond = outboundBitsPerSecond)
+  
     __obj.asInstanceOf[IDataPlanStatus]
   }
 }

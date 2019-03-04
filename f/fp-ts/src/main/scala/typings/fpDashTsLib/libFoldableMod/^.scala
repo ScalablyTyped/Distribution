@@ -215,27 +215,27 @@ object ^ extends js.Object {
   def product[F, A](F: fpDashTsLib.libFoldableMod.Foldable[F], S: fpDashTsLib.libSemiringMod.Semiring[A]): js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[F, A], A] = js.native
   def product[F /* <: fpDashTsLib.libHKTMod.URIS2 */, A, L](F: fpDashTsLib.libFoldableMod.Foldable2C[F, L], S: fpDashTsLib.libSemiringMod.Semiring[A]): js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type2[F, L, A], A] = js.native
   def product[F /* <: fpDashTsLib.libHKTMod.URIS3 */, A, U, L](F: fpDashTsLib.libFoldableMod.Foldable3C[F, U, L], S: fpDashTsLib.libSemiringMod.Semiring[A]): js.Function1[/* fa */ fpDashTsLib.libHKTMod.Type3[F, U, L, A], A] = js.native
-  def `sequence_`[M /* <: fpDashTsLib.libHKTMod.URIS */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative1[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
+  def sequence_[M /* <: fpDashTsLib.libHKTMod.URIS */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative1[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[M, _]], 
     fpDashTsLib.libHKTMod.Type[M, scala.Unit]
   ] = js.native
-  def `sequence_`[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative2[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
+  def sequence_[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative2[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[M, _, _]], 
     fpDashTsLib.libHKTMod.Type2[M, _, scala.Unit]
   ] = js.native
-  def `sequence_`[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative3[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
+  def sequence_[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative3[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type3[M, _, _, _]], 
     fpDashTsLib.libHKTMod.Type3[M, _, _, scala.Unit]
   ] = js.native
-  def `sequence_`[M, F](M: fpDashTsLib.libApplicativeMod.Applicative[M], F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function1[
+  def sequence_[M, F](M: fpDashTsLib.libApplicativeMod.Applicative[M], F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[M, _]], 
     fpDashTsLib.libHKTMod.HKT[M, scala.Unit]
   ] = js.native
-  def `sequence_`[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */, L](M: fpDashTsLib.libApplicativeMod.Applicative2C[M, L], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
+  def sequence_[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */, L](M: fpDashTsLib.libApplicativeMod.Applicative2C[M, L], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function1[
     /* fa */ fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[M, L, _]], 
     fpDashTsLib.libHKTMod.Type2[M, L, scala.Unit]
   ] = js.native
-  def `sequence_`[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */, U, L](
+  def sequence_[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */, U, L](
     M: fpDashTsLib.libApplicativeMod.Applicative3C[M, U, L],
     F: fpDashTsLib.libFoldableMod.Foldable1[F]
   ): js.Function1[
@@ -299,32 +299,32 @@ object ^ extends js.Object {
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type3[M, U, L, _]], 
     fpDashTsLib.libHKTMod.Type3[M, U, L, scala.Unit]
   ] = js.native
-  def `traverse_`[M /* <: fpDashTsLib.libHKTMod.URIS */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative1[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
+  def traverse_[M /* <: fpDashTsLib.libHKTMod.URIS */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative1[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[M, _]], 
     /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
     fpDashTsLib.libHKTMod.Type[M, scala.Unit]
   ] = js.native
-  def `traverse_`[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative2[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
+  def traverse_[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative2[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type2[M, _, _]], 
     /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
     fpDashTsLib.libHKTMod.Type2[M, _, scala.Unit]
   ] = js.native
-  def `traverse_`[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative3[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
+  def traverse_[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libApplicativeMod.Applicative3[M], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type3[M, _, _, _]], 
     /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
     fpDashTsLib.libHKTMod.Type3[M, _, _, scala.Unit]
   ] = js.native
-  def `traverse_`[M, F](M: fpDashTsLib.libApplicativeMod.Applicative[M], F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function2[
+  def traverse_[M, F](M: fpDashTsLib.libApplicativeMod.Applicative[M], F: fpDashTsLib.libFoldableMod.Foldable[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[M, _]], 
     /* fa */ fpDashTsLib.libHKTMod.HKT[F, _], 
     fpDashTsLib.libHKTMod.HKT[M, scala.Unit]
   ] = js.native
-  def `traverse_`[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */, L](M: fpDashTsLib.libApplicativeMod.Applicative2C[M, L], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
+  def traverse_[M /* <: fpDashTsLib.libHKTMod.URIS2 */, F /* <: fpDashTsLib.libHKTMod.URIS */, L](M: fpDashTsLib.libApplicativeMod.Applicative2C[M, L], F: fpDashTsLib.libFoldableMod.Foldable1[F]): js.Function2[
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type2[M, L, _]], 
     /* fa */ fpDashTsLib.libHKTMod.Type[F, _], 
     fpDashTsLib.libHKTMod.Type2[M, L, scala.Unit]
   ] = js.native
-  def `traverse_`[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */, U, L](
+  def traverse_[M /* <: fpDashTsLib.libHKTMod.URIS3 */, F /* <: fpDashTsLib.libHKTMod.URIS */, U, L](
     M: fpDashTsLib.libApplicativeMod.Applicative3C[M, U, L],
     F: fpDashTsLib.libFoldableMod.Foldable1[F]
   ): js.Function2[

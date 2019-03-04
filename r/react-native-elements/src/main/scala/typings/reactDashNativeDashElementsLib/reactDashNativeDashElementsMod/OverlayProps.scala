@@ -105,9 +105,7 @@ object OverlayProps {
     width: scala.Double | java.lang.String = null,
     windowBackgroundColor: java.lang.String = null
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("isVisible")(isVisible)
+    val __obj = js.Dynamic.literal(children = children, isVisible = isVisible)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])

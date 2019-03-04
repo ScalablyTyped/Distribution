@@ -81,32 +81,8 @@ object ASPxClientFilterControl {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientFilterControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("Applied")(Applied)
-    __obj.updateDynamic("Apply")(Apply)
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("GetAppliedFilterExpression")(GetAppliedFilterExpression)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetEditor")(GetEditor)
-    __obj.updateDynamic("GetFilterExpression")(GetFilterExpression)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("IsFilterExpressionValid")(IsFilterExpressionValid)
-    __obj.updateDynamic("Reset")(Reset)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, Applied = Applied, Apply = Apply, BeginCallback = BeginCallback, CallbackError = CallbackError, EndCallback = EndCallback, GetAppliedFilterExpression = GetAppliedFilterExpression, GetClientVisible = GetClientVisible, GetEditor = GetEditor, GetFilterExpression = GetFilterExpression, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, IsFilterExpressionValid = IsFilterExpressionValid, Reset = Reset, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientFilterControl]
   }
 }

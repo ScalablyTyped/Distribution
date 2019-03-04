@@ -16,9 +16,8 @@ object AdWordsReportColumnHeader {
     getBulkUploadColumnName: js.Function0[java.lang.String],
     getReportColumnName: js.Function0[java.lang.String]
   ): AdWordsReportColumnHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBulkUploadColumnName")(getBulkUploadColumnName)
-    __obj.updateDynamic("getReportColumnName")(getReportColumnName)
+    val __obj = js.Dynamic.literal(getBulkUploadColumnName = getBulkUploadColumnName, getReportColumnName = getReportColumnName)
+  
     __obj.asInstanceOf[AdWordsReportColumnHeader]
   }
 }

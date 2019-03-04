@@ -30,13 +30,7 @@ object Route {
     name: java.lang.String = null,
     redirectedFrom: java.lang.String = null
   ): Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullPath")(fullPath)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("matched")(matched)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(fullPath = fullPath, hash = hash, matched = matched, params = params, path = path, query = query)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (name != null) __obj.updateDynamic("name")(name)
     if (redirectedFrom != null) __obj.updateDynamic("redirectedFrom")(redirectedFrom)

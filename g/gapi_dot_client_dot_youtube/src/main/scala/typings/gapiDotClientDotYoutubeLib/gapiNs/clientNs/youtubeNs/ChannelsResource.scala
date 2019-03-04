@@ -27,9 +27,8 @@ object ChannelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): ChannelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(list = list, update = update)
+  
     __obj.asInstanceOf[ChannelsResource]
   }
 }

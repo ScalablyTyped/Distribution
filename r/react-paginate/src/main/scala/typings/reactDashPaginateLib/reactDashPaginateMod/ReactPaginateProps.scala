@@ -132,10 +132,7 @@ object ReactPaginateProps {
     previousLabel: reactLib.reactMod.ReactNs.ReactNode = null,
     previousLinkClassName: java.lang.String = null
   ): ReactPaginateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marginPagesDisplayed")(marginPagesDisplayed)
-    __obj.updateDynamic("pageCount")(pageCount)
-    __obj.updateDynamic("pageRangeDisplayed")(pageRangeDisplayed)
+    val __obj = js.Dynamic.literal(marginPagesDisplayed = marginPagesDisplayed, pageCount = pageCount, pageRangeDisplayed = pageRangeDisplayed)
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName)
     if (activeLinkClassName != null) __obj.updateDynamic("activeLinkClassName")(activeLinkClassName)
     if (breakClassName != null) __obj.updateDynamic("breakClassName")(breakClassName)

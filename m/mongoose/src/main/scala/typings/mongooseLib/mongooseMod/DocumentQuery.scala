@@ -28,9 +28,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * @param js javascript string or function
     */
   @JSName("$where")
-  def $where(`js_`: java.lang.String): this.type = js.native
+  def $where(js_ : java.lang.String): this.type = js.native
   @JSName("$where")
-  def $where(`js_`: js.Function): this.type = js.native
+  def $where(js_ : js.Function): this.type = js.native
   def all(path: java.lang.String, `val`: scala.Double): this.type = js.native
   /**
     * Specifies an $all query condition.

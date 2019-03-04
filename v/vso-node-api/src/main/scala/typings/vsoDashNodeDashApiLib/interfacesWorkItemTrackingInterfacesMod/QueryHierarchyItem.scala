@@ -139,34 +139,8 @@ object QueryHierarchyItem {
     url: java.lang.String,
     wiql: java.lang.String
   ): QueryHierarchyItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("clauses")(clauses)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("filterOptions")(filterOptions)
-    __obj.updateDynamic("hasChildren")(hasChildren)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isInvalidSyntax")(isInvalidSyntax)
-    __obj.updateDynamic("isPublic")(isPublic)
-    __obj.updateDynamic("lastExecutedBy")(lastExecutedBy)
-    __obj.updateDynamic("lastExecutedDate")(lastExecutedDate)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    __obj.updateDynamic("linkClauses")(linkClauses)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("queryRecursionOption")(queryRecursionOption)
-    __obj.updateDynamic("queryType")(queryType)
-    __obj.updateDynamic("sortColumns")(sortColumns)
-    __obj.updateDynamic("sourceClauses")(sourceClauses)
-    __obj.updateDynamic("targetClauses")(targetClauses)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("wiql")(wiql)
+    val __obj = js.Dynamic.literal(_links = _links, children = children, clauses = clauses, columns = columns, createdBy = createdBy, createdDate = createdDate, filterOptions = filterOptions, hasChildren = hasChildren, id = id, isDeleted = isDeleted, isFolder = isFolder, isInvalidSyntax = isInvalidSyntax, isPublic = isPublic, lastExecutedBy = lastExecutedBy, lastExecutedDate = lastExecutedDate, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, linkClauses = linkClauses, name = name, path = path, queryRecursionOption = queryRecursionOption, queryType = queryType, sortColumns = sortColumns, sourceClauses = sourceClauses, targetClauses = targetClauses, url = url, wiql = wiql)
+  
     __obj.asInstanceOf[QueryHierarchyItem]
   }
 }

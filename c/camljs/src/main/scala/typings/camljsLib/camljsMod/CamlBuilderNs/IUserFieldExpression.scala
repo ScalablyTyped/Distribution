@@ -39,16 +39,8 @@ object IUserFieldExpression {
     Membership: IMembership,
     ValueAsText: js.Function0[ITextFieldExpression]
   ): IUserFieldExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EqualToCurrentUser")(EqualToCurrentUser)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("IsInCurrentUserGroups")(IsInCurrentUserGroups)
-    __obj.updateDynamic("IsInSPGroup")(IsInSPGroup)
-    __obj.updateDynamic("IsInSPWebAllUsers")(IsInSPWebAllUsers)
-    __obj.updateDynamic("IsInSPWebGroups")(IsInSPWebGroups)
-    __obj.updateDynamic("IsInSPWebUsers")(IsInSPWebUsers)
-    __obj.updateDynamic("Membership")(Membership)
-    __obj.updateDynamic("ValueAsText")(ValueAsText)
+    val __obj = js.Dynamic.literal(EqualToCurrentUser = EqualToCurrentUser, Id = Id, IsInCurrentUserGroups = IsInCurrentUserGroups, IsInSPGroup = IsInSPGroup, IsInSPWebAllUsers = IsInSPWebAllUsers, IsInSPWebGroups = IsInSPWebGroups, IsInSPWebUsers = IsInSPWebUsers, Membership = Membership, ValueAsText = ValueAsText)
+  
     __obj.asInstanceOf[IUserFieldExpression]
   }
 }

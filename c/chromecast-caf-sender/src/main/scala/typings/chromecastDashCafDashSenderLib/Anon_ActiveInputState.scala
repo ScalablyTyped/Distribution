@@ -128,23 +128,8 @@ object Anon_ActiveInputState {
     ],
     setLoggerLevel: js.Function1[chromecastDashCafDashSenderLib.castNs.frameworkNs.LoggerLevel, scala.Unit]
   ): Anon_ActiveInputState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveInputStateEventData")(ActiveInputStateEventData)
-    __obj.updateDynamic("ApplicationMetadata")(ApplicationMetadata)
-    __obj.updateDynamic("ApplicationMetadataEventData")(ApplicationMetadataEventData)
-    __obj.updateDynamic("ApplicationStatusEventData")(ApplicationStatusEventData)
-    __obj.updateDynamic("CastContext")(CastContext)
-    __obj.updateDynamic("CastSession")(CastSession)
-    __obj.updateDynamic("CastStateEventData")(CastStateEventData)
-    __obj.updateDynamic("EventData")(EventData)
-    __obj.updateDynamic("MediaSessionEventData")(MediaSessionEventData)
-    __obj.updateDynamic("RemotePlayer")(RemotePlayer)
-    __obj.updateDynamic("RemotePlayerChangedEvent")(RemotePlayerChangedEvent)
-    __obj.updateDynamic("RemotePlayerController")(RemotePlayerController)
-    __obj.updateDynamic("SessionStateEventData")(SessionStateEventData)
-    __obj.updateDynamic("VERSION")(VERSION)
-    __obj.updateDynamic("VolumeEventData")(VolumeEventData)
-    __obj.updateDynamic("setLoggerLevel")(setLoggerLevel)
+    val __obj = js.Dynamic.literal(ActiveInputStateEventData = ActiveInputStateEventData, ApplicationMetadata = ApplicationMetadata, ApplicationMetadataEventData = ApplicationMetadataEventData, ApplicationStatusEventData = ApplicationStatusEventData, CastContext = CastContext, CastSession = CastSession, CastStateEventData = CastStateEventData, EventData = EventData, MediaSessionEventData = MediaSessionEventData, RemotePlayer = RemotePlayer, RemotePlayerChangedEvent = RemotePlayerChangedEvent, RemotePlayerController = RemotePlayerController, SessionStateEventData = SessionStateEventData, VERSION = VERSION, VolumeEventData = VolumeEventData, setLoggerLevel = setLoggerLevel)
+  
     __obj.asInstanceOf[Anon_ActiveInputState]
   }
 }

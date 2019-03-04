@@ -34,18 +34,8 @@ object Anon_Created {
     Title: java.lang.String,
     ViewSelector: java.lang.String
   ): Anon_Created = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Created")(Created)
-    __obj.updateDynamic("DefaultViewUrl")(DefaultViewUrl)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("EnableSyndication")(EnableSyndication)
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("LinkTitle")(LinkTitle)
-    __obj.updateDynamic("MajorVersionLimit")(MajorVersionLimit)
-    __obj.updateDynamic("MajorWithMinorVersionsLimit")(MajorWithMinorVersionsLimit)
-    __obj.updateDynamic("RelativeFolderPath")(RelativeFolderPath)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("ViewSelector")(ViewSelector)
+    val __obj = js.Dynamic.literal(Created = Created, DefaultViewUrl = DefaultViewUrl, Description = Description, EnableSyndication = EnableSyndication, ItemCount = ItemCount, LinkTitle = LinkTitle, MajorVersionLimit = MajorVersionLimit, MajorWithMinorVersionsLimit = MajorWithMinorVersionsLimit, RelativeFolderPath = RelativeFolderPath, Title = Title, ViewSelector = ViewSelector)
+  
     __obj.asInstanceOf[Anon_Created]
   }
 }

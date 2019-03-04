@@ -24,8 +24,7 @@ object Options {
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     test: Filter | js.Array[Filter] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("banner")(banner)
+    val __obj = js.Dynamic.literal(banner = banner)
     if (!js.isUndefined(entryOnly)) __obj.updateDynamic("entryOnly")(entryOnly)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])

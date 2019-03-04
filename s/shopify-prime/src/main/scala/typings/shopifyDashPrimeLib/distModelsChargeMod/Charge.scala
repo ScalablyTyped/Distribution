@@ -57,8 +57,7 @@ object Charge {
     test: js.UndefOr[scala.Boolean] = js.undefined,
     updated_at: java.lang.String = null
   ): Charge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url)
     if (created_at != null) __obj.updateDynamic("created_at")(created_at)

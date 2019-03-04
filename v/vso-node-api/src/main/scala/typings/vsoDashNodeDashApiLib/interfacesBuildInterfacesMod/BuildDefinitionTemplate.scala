@@ -49,15 +49,8 @@ object BuildDefinitionTemplate {
     name: java.lang.String,
     template: BuildDefinition
   ): BuildDefinitionTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canDelete")(canDelete)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("iconTaskId")(iconTaskId)
-    __obj.updateDynamic("icons")(icons)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(canDelete = canDelete, category = category, description = description, iconTaskId = iconTaskId, icons = icons, id = id, name = name, template = template)
+  
     __obj.asInstanceOf[BuildDefinitionTemplate]
   }
 }

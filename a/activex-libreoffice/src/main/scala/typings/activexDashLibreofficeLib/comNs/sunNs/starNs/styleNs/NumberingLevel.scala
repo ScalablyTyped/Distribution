@@ -47,16 +47,8 @@ object NumberingLevel {
     StartWith: scala.Double,
     Suffix: java.lang.String
   ): NumberingLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BulletFontName")(BulletFontName)
-    __obj.updateDynamic("BulletId")(BulletId)
-    __obj.updateDynamic("CharStyleName")(CharStyleName)
-    __obj.updateDynamic("GraphicURL")(GraphicURL)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
-    __obj.updateDynamic("Prefix")(Prefix)
-    __obj.updateDynamic("StartWith")(StartWith)
-    __obj.updateDynamic("Suffix")(Suffix)
+    val __obj = js.Dynamic.literal(BulletFontName = BulletFontName, BulletId = BulletId, CharStyleName = CharStyleName, GraphicURL = GraphicURL, NumberingType = NumberingType, ParentNumbering = ParentNumbering, Prefix = Prefix, StartWith = StartWith, Suffix = Suffix)
+  
     __obj.asInstanceOf[NumberingLevel]
   }
 }

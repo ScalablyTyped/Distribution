@@ -20,8 +20,7 @@ object CrossOriginLoginOptions {
     realm: java.lang.String = null,
     username: java.lang.String = null
   ): CrossOriginLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(password = password)
     if (email != null) __obj.updateDynamic("email")(email)
     if (realm != null) __obj.updateDynamic("realm")(realm)
     if (username != null) __obj.updateDynamic("username")(username)

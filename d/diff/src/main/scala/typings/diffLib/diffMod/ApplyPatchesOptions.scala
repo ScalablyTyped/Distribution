@@ -33,10 +33,7 @@ object ApplyPatchesOptions {
     ] = null,
     fuzzFactor: scala.Int | scala.Double = null
   ): ApplyPatchesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("loadFile")(loadFile)
-    __obj.updateDynamic("patched")(patched)
+    val __obj = js.Dynamic.literal(complete = complete, loadFile = loadFile, patched = patched)
     if (compareLine != null) __obj.updateDynamic("compareLine")(compareLine)
     if (fuzzFactor != null) __obj.updateDynamic("fuzzFactor")(fuzzFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyPatchesOptions]

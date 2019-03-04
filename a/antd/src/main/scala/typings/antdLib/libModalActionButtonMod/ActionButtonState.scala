@@ -12,8 +12,8 @@ trait ActionButtonState extends js.Object {
 object ActionButtonState {
   @scala.inline
   def apply(loading: scala.Boolean): ActionButtonState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(loading = loading)
+  
     __obj.asInstanceOf[ActionButtonState]
   }
 }

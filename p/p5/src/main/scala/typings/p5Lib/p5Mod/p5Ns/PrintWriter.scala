@@ -38,11 +38,8 @@ object PrintWriter {
     print: js.Function1[js.Array[_], scala.Unit],
     write: js.Function1[js.Array[_], scala.Unit]
   ): PrintWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("print")(print)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(clear = clear, close = close, print = print, write = write)
+  
     __obj.asInstanceOf[PrintWriter]
   }
 }

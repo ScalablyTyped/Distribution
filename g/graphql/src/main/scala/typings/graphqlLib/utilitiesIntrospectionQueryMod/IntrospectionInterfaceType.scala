@@ -24,11 +24,7 @@ object IntrospectionInterfaceType {
     possibleTypes: js.Array[IntrospectionNamedTypeRef[IntrospectionObjectType]],
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
   ): IntrospectionInterfaceType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("possibleTypes")(possibleTypes)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind, name = name, possibleTypes = possibleTypes)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionInterfaceType]
   }

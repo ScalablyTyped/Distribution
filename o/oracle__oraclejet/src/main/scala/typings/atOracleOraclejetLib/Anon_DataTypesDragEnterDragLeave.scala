@@ -24,13 +24,8 @@ object Anon_DataTypesDragEnterDragLeave {
     drop: js.Function2[stdLib.Event, js.Object, scala.Unit],
     selector: java.lang.String
   ): Anon_DataTypesDragEnterDragLeave = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataTypes")(dataTypes.asInstanceOf[js.Any])
-    __obj.updateDynamic("dragEnter")(dragEnter)
-    __obj.updateDynamic("dragLeave")(dragLeave)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("drop")(drop)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(dataTypes = dataTypes.asInstanceOf[js.Any], dragEnter = dragEnter, dragLeave = dragLeave, dragOver = dragOver, drop = drop, selector = selector)
+  
     __obj.asInstanceOf[Anon_DataTypesDragEnterDragLeave]
   }
 }

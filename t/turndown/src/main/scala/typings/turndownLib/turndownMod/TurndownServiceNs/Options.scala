@@ -26,7 +26,7 @@ trait Options extends js.Object {
   var linkStyle: js.UndefOr[
     turndownLib.turndownLibStrings.inlined | turndownLib.turndownLibStrings.referenced
   ] = js.undefined
-  var strongDelimiter: js.UndefOr[turndownLib.turndownLibStrings.`__` | turndownLib.turndownLibStrings.`**`] = js.undefined
+  var strongDelimiter: js.UndefOr[turndownLib.turndownLibStrings.__ | turndownLib.turndownLibStrings.`**`] = js.undefined
 }
 
 object Options {
@@ -44,7 +44,7 @@ object Options {
     keepReplacement: ReplacementFunction = null,
     linkReferenceStyle: turndownLib.turndownLibStrings.full | turndownLib.turndownLibStrings.collapsed | turndownLib.turndownLibStrings.shortcut = null,
     linkStyle: turndownLib.turndownLibStrings.inlined | turndownLib.turndownLibStrings.referenced = null,
-    strongDelimiter: turndownLib.turndownLibStrings.`__` | turndownLib.turndownLibStrings.`**` = null
+    strongDelimiter: turndownLib.turndownLibStrings.__ | turndownLib.turndownLibStrings.`**` = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (blankReplacement != null) __obj.updateDynamic("blankReplacement")(blankReplacement)

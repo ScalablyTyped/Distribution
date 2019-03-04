@@ -28,10 +28,7 @@ object ContentPanelDescriptor {
     id: java.lang.String = null,
     orderHint: scala.Int | scala.Double = null
   ): ContentPanelDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(el = el, iconUrl = iconUrl, title = title)
     if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl)
     if (appName != null) __obj.updateDynamic("appName")(appName)
     if (!js.isUndefined(hideTitleBar)) __obj.updateDynamic("hideTitleBar")(hideTitleBar)

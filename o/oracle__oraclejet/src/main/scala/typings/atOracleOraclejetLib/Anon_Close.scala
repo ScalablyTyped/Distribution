@@ -46,24 +46,8 @@ object Anon_Close {
     y2: Anon_AutoBillion,
     z: Anon_AutoBillion
   ): Anon_Close = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("q1")(q1)
-    __obj.updateDynamic("q2")(q2)
-    __obj.updateDynamic("q3")(q3)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("targetValue")(targetValue)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("volume")(volume)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("y2")(y2)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(close = close, group = group, high = high, label = label, low = low, open = open, q1 = q1, q2 = q2, q3 = q3, series = series, targetValue = targetValue, value = value, volume = volume, x = x, y = y, y2 = y2, z = z)
+  
     __obj.asInstanceOf[Anon_Close]
   }
 }

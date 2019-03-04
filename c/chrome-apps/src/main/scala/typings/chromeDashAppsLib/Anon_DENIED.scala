@@ -16,9 +16,8 @@ object Anon_DENIED {
     DENIED: chromeDashAppsLib.chromeDashAppsLibStrings.denied,
     GRANTED: chromeDashAppsLib.chromeDashAppsLibStrings.granted
   ): Anon_DENIED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DENIED")(DENIED)
-    __obj.updateDynamic("GRANTED")(GRANTED)
+    val __obj = js.Dynamic.literal(DENIED = DENIED, GRANTED = GRANTED)
+  
     __obj.asInstanceOf[Anon_DENIED]
   }
 }

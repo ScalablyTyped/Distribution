@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var axisIntention: subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.x | subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.y | subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.Empty
   var deltaX: scala.Double
   var deltaY: scala.Double
@@ -13,7 +13,7 @@ trait `Anon_` extends js.Object {
   var startY: scala.Double
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     axisIntention: subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.x | subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.y | subscribeDashUiDashEventLib.subscribeDashUiDashEventLibStrings.Empty,
@@ -21,14 +21,10 @@ object `Anon_` {
     deltaY: scala.Double,
     startX: scala.Double,
     startY: scala.Double
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisIntention")(axisIntention.asInstanceOf[js.Any])
-    __obj.updateDynamic("deltaX")(deltaX)
-    __obj.updateDynamic("deltaY")(deltaY)
-    __obj.updateDynamic("startX")(startX)
-    __obj.updateDynamic("startY")(startY)
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal(axisIntention = axisIntention.asInstanceOf[js.Any], deltaX = deltaX, deltaY = deltaY, startX = startX, startY = startY)
+  
+    __obj.asInstanceOf[Anon_]
   }
 }
 

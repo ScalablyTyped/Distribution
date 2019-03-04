@@ -22,10 +22,8 @@ object ICacheFirstOptions {
     fetchOptions: stdLib.RequestInit,
     plugins: js.Array[workboxDashSwLib.Plugin]
   ): ICacheFirstOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("fetchOptions")(fetchOptions)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, fetchOptions = fetchOptions, plugins = plugins)
+  
     __obj.asInstanceOf[ICacheFirstOptions]
   }
 }

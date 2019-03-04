@@ -41,10 +41,7 @@ object MobileStepperProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.text | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dots | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.progress = null
   ): MobileStepperProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backButton")(backButton)
-    __obj.updateDynamic("nextButton")(nextButton)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(backButton = backButton, nextButton = nextButton, steps = steps)
     if (LinearProgressProps != null) __obj.updateDynamic("LinearProgressProps")(LinearProgressProps)
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

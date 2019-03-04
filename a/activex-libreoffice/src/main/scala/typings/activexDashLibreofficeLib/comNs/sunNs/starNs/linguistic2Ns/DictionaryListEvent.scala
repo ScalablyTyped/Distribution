@@ -42,10 +42,8 @@ object DictionaryListEvent {
     aDictionaryEvents: activexDashInteropLib.SafeArray[DictionaryEvent],
     nCondensedEvent: scala.Double
   ): DictionaryListEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("aDictionaryEvents")(aDictionaryEvents)
-    __obj.updateDynamic("nCondensedEvent")(nCondensedEvent)
+    val __obj = js.Dynamic.literal(Source = Source, aDictionaryEvents = aDictionaryEvents, nCondensedEvent = nCondensedEvent)
+  
     __obj.asInstanceOf[DictionaryListEvent]
   }
 }

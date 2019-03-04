@@ -20,11 +20,8 @@ object Window {
     WebComponents: webcomponentsDotJsLib.webcomponentsDotJsMod.Polyfill,
     customElements: CustomElementRegistry
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CustomElements")(CustomElements)
-    __obj.updateDynamic("HTMLImports")(HTMLImports)
-    __obj.updateDynamic("WebComponents")(WebComponents)
-    __obj.updateDynamic("customElements")(customElements)
+    val __obj = js.Dynamic.literal(CustomElements = CustomElements, HTMLImports = HTMLImports, WebComponents = WebComponents, customElements = customElements)
+  
     __obj.asInstanceOf[Window]
   }
 }

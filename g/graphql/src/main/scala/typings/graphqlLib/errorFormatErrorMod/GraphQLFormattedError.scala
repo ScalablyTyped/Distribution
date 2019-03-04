@@ -20,8 +20,7 @@ object GraphQLFormattedError {
     locations: js.Array[graphqlLib.languageLocationMod.SourceLocation] = null,
     path: js.Array[java.lang.String | scala.Double] = null
   ): GraphQLFormattedError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (locations != null) __obj.updateDynamic("locations")(locations)
     if (path != null) __obj.updateDynamic("path")(path)

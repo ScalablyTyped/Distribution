@@ -22,12 +22,8 @@ object Anon_CNames {
     rgszNames: scala.Double,
     riid: activexDashStdoleLib.stdoleNs.GUID
   ): Anon_CNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cNames")(cNames)
-    __obj.updateDynamic("lcid")(lcid)
-    __obj.updateDynamic("rgdispid")(rgdispid)
-    __obj.updateDynamic("rgszNames")(rgszNames)
-    __obj.updateDynamic("riid")(riid)
+    val __obj = js.Dynamic.literal(cNames = cNames, lcid = lcid, rgdispid = rgdispid, rgszNames = rgszNames, riid = riid)
+  
     __obj.asInstanceOf[Anon_CNames]
   }
 }

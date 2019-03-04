@@ -49,16 +49,8 @@ object WorkItemClassificationNode {
     structureType: TreeNodeStructureType,
     url: java.lang.String
   ): WorkItemClassificationNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("hasChildren")(hasChildren)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("structureType")(structureType)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, attributes = attributes, children = children, hasChildren = hasChildren, id = id, identifier = identifier, name = name, structureType = structureType, url = url)
+  
     __obj.asInstanceOf[WorkItemClassificationNode]
   }
 }

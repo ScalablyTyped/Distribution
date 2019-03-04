@@ -12,8 +12,8 @@ trait Anon_DayPopoverFormat extends js.Object {
 object Anon_DayPopoverFormat {
   @scala.inline
   def apply(dayPopoverFormat: java.lang.String): Anon_DayPopoverFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayPopoverFormat")(dayPopoverFormat)
+    val __obj = js.Dynamic.literal(dayPopoverFormat = dayPopoverFormat)
+  
     __obj.asInstanceOf[Anon_DayPopoverFormat]
   }
 }

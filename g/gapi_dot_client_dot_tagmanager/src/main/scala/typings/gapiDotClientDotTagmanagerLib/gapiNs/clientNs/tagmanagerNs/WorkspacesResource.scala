@@ -99,25 +99,8 @@ object WorkspacesResource {
     ],
     variables: VariablesResource
   ): WorkspacesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("built_in_variables")(built_in_variables)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("create_version")(create_version)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("folders")(folders)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getProposal")(getProposal)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("proposal")(proposal)
-    __obj.updateDynamic("quick_preview")(quick_preview)
-    __obj.updateDynamic("resolve_conflict")(resolve_conflict)
-    __obj.updateDynamic("sync")(sync)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("triggers")(triggers)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateProposal")(updateProposal)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(built_in_variables = built_in_variables, create = create, create_version = create_version, delete = delete, folders = folders, get = get, getProposal = getProposal, getStatus = getStatus, list = list, proposal = proposal, quick_preview = quick_preview, resolve_conflict = resolve_conflict, sync = sync, tags = tags, triggers = triggers, update = update, updateProposal = updateProposal, variables = variables)
+  
     __obj.asInstanceOf[WorkspacesResource]
   }
 }

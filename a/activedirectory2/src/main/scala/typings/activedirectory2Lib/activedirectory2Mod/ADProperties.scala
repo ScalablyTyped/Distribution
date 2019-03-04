@@ -40,11 +40,7 @@ object ADProperties {
     pageSize: activedirectory2Lib.activedirectory2LibNumbers.`1000` = null,
     referrals: activedirectory2Lib.Anon_Enabled = null
   ): ADProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseDN")(baseDN)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(baseDN = baseDN, password = password, url = url, username = username)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (entryParser != null) __obj.updateDynamic("entryParser")(entryParser)
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)

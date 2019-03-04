@@ -30,11 +30,7 @@ object UIAddPosition {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     position: java.lang.String = null
   ): UIAddPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, index = index, propertyIsEnumerable = propertyIsEnumerable)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[UIAddPosition]
   }

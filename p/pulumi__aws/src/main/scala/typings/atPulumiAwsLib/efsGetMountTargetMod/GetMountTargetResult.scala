@@ -52,15 +52,8 @@ object GetMountTargetResult {
     securityGroups: js.Array[java.lang.String],
     subnetId: java.lang.String
   ): GetMountTargetResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsName")(dnsName)
-    __obj.updateDynamic("fileSystemArn")(fileSystemArn)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ipAddress")(ipAddress)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("subnetId")(subnetId)
+    val __obj = js.Dynamic.literal(dnsName = dnsName, fileSystemArn = fileSystemArn, fileSystemId = fileSystemId, id = id, ipAddress = ipAddress, networkInterfaceId = networkInterfaceId, securityGroups = securityGroups, subnetId = subnetId)
+  
     __obj.asInstanceOf[GetMountTargetResult]
   }
 }

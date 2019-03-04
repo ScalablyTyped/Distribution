@@ -28,17 +28,8 @@ object SSEConnect {
     updateSubscriberUrl: java.lang.String,
     userId: java.lang.String
   ): SSEConnect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("heartbeatIntervalMs")(heartbeatIntervalMs)
-    __obj.updateDynamic("heartbeatUrl")(heartbeatUrl)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("idleTimeoutMs")(idleTimeoutMs)
-    __obj.updateDynamic("profileUrl")(profileUrl)
-    __obj.updateDynamic("unRegisterUrl")(unRegisterUrl)
-    __obj.updateDynamic("updateSubscriberUrl")(updateSubscriberUrl)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(channels = channels, displayName = displayName, heartbeatIntervalMs = heartbeatIntervalMs, heartbeatUrl = heartbeatUrl, id = id, idleTimeoutMs = idleTimeoutMs, profileUrl = profileUrl, unRegisterUrl = unRegisterUrl, updateSubscriberUrl = updateSubscriberUrl, userId = userId)
+  
     __obj.asInstanceOf[SSEConnect]
   }
 }

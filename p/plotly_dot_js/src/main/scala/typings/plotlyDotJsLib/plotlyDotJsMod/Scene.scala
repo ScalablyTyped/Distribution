@@ -36,19 +36,8 @@ object Scene {
     yaxis: stdLib.Partial[SceneAxis],
     zaxis: stdLib.Partial[SceneAxis]
   ): Scene = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    __obj.updateDynamic("aspectmode")(aspectmode.asInstanceOf[js.Any])
-    __obj.updateDynamic("aspectratio")(aspectratio)
-    __obj.updateDynamic("bgcolor")(bgcolor)
-    __obj.updateDynamic("camera")(camera)
-    __obj.updateDynamic("captureevents")(captureevents)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("dragmode")(dragmode.asInstanceOf[js.Any])
-    __obj.updateDynamic("hovermode")(hovermode.asInstanceOf[js.Any])
-    __obj.updateDynamic("xaxis")(xaxis)
-    __obj.updateDynamic("yaxis")(yaxis)
-    __obj.updateDynamic("zaxis")(zaxis)
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], aspectmode = aspectmode.asInstanceOf[js.Any], aspectratio = aspectratio, bgcolor = bgcolor, camera = camera, captureevents = captureevents, domain = domain, dragmode = dragmode.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], xaxis = xaxis, yaxis = yaxis, zaxis = zaxis)
+  
     __obj.asInstanceOf[Scene]
   }
 }

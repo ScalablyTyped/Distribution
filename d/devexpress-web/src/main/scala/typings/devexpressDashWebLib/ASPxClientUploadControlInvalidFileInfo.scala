@@ -33,10 +33,8 @@ object ASPxClientUploadControlInvalidFileInfo {
     fileName: java.lang.String,
     fileSize: scala.Double
   ): ASPxClientUploadControlInvalidFileInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorType")(errorType)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("fileSize")(fileSize)
+    val __obj = js.Dynamic.literal(errorType = errorType, fileName = fileName, fileSize = fileSize)
+  
     __obj.asInstanceOf[ASPxClientUploadControlInvalidFileInfo]
   }
 }

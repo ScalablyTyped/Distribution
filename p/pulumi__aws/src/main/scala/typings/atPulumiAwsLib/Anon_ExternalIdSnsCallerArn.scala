@@ -16,9 +16,8 @@ object Anon_ExternalIdSnsCallerArn {
     externalId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     snsCallerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ExternalIdSnsCallerArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    __obj.updateDynamic("snsCallerArn")(snsCallerArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(externalId = externalId.asInstanceOf[js.Any], snsCallerArn = snsCallerArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ExternalIdSnsCallerArn]
   }
 }

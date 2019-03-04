@@ -20,10 +20,8 @@ object OAuth2Authentication {
     test: (js.Function2[/* z */ Z, /* bundle */ Bundle[InputData], scala.Boolean | js.Promise[scala.Boolean]]) | zapierDashPlatformDashCoreLib.Anon_Url,
     `type`: zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreLibStrings.oauth2
   ): OAuth2Authentication[InputData] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("connectionLabel")(connectionLabel)
-    __obj.updateDynamic("oauth2Config")(oauth2Config)
-    __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(connectionLabel = connectionLabel, oauth2Config = oauth2Config, test = test.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OAuth2Authentication[InputData]]
   }
 }

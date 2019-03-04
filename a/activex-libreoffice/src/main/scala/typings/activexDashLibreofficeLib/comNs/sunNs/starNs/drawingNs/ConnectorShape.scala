@@ -64,21 +64,12 @@ object ConnectorShape {
     StartShape: XShape,
     Text: Text = null
   ): ConnectorShape = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(EdgeLine1Delta = EdgeLine1Delta, EdgeLine2Delta = EdgeLine2Delta, EdgeLine3Delta = EdgeLine3Delta, EndGluePointIndex = EndGluePointIndex, EndPosition = EndPosition, EndShape = EndShape, StartGluePointIndex = StartGluePointIndex, StartPosition = StartPosition, StartShape = StartShape)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ConnectorProperties)
-    __obj.updateDynamic("EdgeLine1Delta")(EdgeLine1Delta)
-    __obj.updateDynamic("EdgeLine2Delta")(EdgeLine2Delta)
-    __obj.updateDynamic("EdgeLine3Delta")(EdgeLine3Delta)
-    __obj.updateDynamic("EndGluePointIndex")(EndGluePointIndex)
-    __obj.updateDynamic("EndPosition")(EndPosition)
-    __obj.updateDynamic("EndShape")(EndShape)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
-    __obj.updateDynamic("StartGluePointIndex")(StartGluePointIndex)
-    __obj.updateDynamic("StartPosition")(StartPosition)
-    __obj.updateDynamic("StartShape")(StartShape)
     js.Dynamic.global.Object.assign(__obj, Text)
     __obj.asInstanceOf[ConnectorShape]
   }

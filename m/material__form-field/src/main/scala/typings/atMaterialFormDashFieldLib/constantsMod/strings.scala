@@ -15,8 +15,8 @@ object strings {
   def apply(
     LABEL_SELECTOR: atMaterialFormDashFieldLib.atMaterialFormDashFieldLibStrings.`DOTmdc-form-field > label`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LABEL_SELECTOR")(LABEL_SELECTOR)
+    val __obj = js.Dynamic.literal(LABEL_SELECTOR = LABEL_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

@@ -30,11 +30,8 @@ object Chain1 {
       fpDashTsLib.libHKTMod.Type[F, js.Any]
     ]
   ): Chain1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = ap, chain = chain, map = map)
+  
     __obj.asInstanceOf[Chain1[F]]
   }
 }

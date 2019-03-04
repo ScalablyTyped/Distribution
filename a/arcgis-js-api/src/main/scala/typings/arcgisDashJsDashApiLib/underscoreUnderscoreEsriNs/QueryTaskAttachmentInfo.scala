@@ -58,16 +58,8 @@ object QueryTaskAttachmentInfo {
     size: scala.Double,
     url: java.lang.String
   ): QueryTaskAttachmentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentObjectId")(parentObjectId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(constructor = constructor, contentType = contentType, hasOwnProperty = hasOwnProperty, id = id, name = name, parentObjectId = parentObjectId, propertyIsEnumerable = propertyIsEnumerable, size = size, url = url)
+  
     __obj.asInstanceOf[QueryTaskAttachmentInfo]
   }
 }

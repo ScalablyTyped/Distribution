@@ -40,17 +40,7 @@ object NxCurrentSelectionItem {
     qOneAndOnlyOne: js.UndefOr[scala.Boolean] = js.undefined,
     qTextSearch: java.lang.String = null
   ): NxCurrentSelectionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qField")(qField)
-    __obj.updateDynamic("qNotSelectedFieldSelectionInfo")(qNotSelectedFieldSelectionInfo)
-    __obj.updateDynamic("qRangeInfo")(qRangeInfo)
-    __obj.updateDynamic("qSelected")(qSelected)
-    __obj.updateDynamic("qSelectedCount")(qSelectedCount)
-    __obj.updateDynamic("qSelectedFieldSelectionInfo")(qSelectedFieldSelectionInfo)
-    __obj.updateDynamic("qSelectionThreshold")(qSelectionThreshold)
-    __obj.updateDynamic("qSortIndex")(qSortIndex)
-    __obj.updateDynamic("qStateCounts")(qStateCounts)
-    __obj.updateDynamic("qTotal")(qTotal)
+    val __obj = js.Dynamic.literal(qField = qField, qNotSelectedFieldSelectionInfo = qNotSelectedFieldSelectionInfo, qRangeInfo = qRangeInfo, qSelected = qSelected, qSelectedCount = qSelectedCount, qSelectedFieldSelectionInfo = qSelectedFieldSelectionInfo, qSelectionThreshold = qSelectionThreshold, qSortIndex = qSortIndex, qStateCounts = qStateCounts, qTotal = qTotal)
     if (!js.isUndefined(qIsNum)) __obj.updateDynamic("qIsNum")(qIsNum)
     if (!js.isUndefined(qLocked)) __obj.updateDynamic("qLocked")(qLocked)
     if (!js.isUndefined(qOneAndOnlyOne)) __obj.updateDynamic("qOneAndOnlyOne")(qOneAndOnlyOne)

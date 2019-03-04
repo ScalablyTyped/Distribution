@@ -37,10 +37,7 @@ object FeatureLayerApplyEditsEdits {
     deleteFeatures: js.Array[Graphic] | js.Array[_] = null,
     updateFeatures: js.Array[Graphic] = null
   ): FeatureLayerApplyEditsEdits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures)
     if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures.asInstanceOf[js.Any])
     if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures)

@@ -20,11 +20,8 @@ object ServerAddr {
     port: scala.Double,
     serviceName: java.lang.String
   ): ServerAddr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(annotationType = annotationType, host = host, port = port, serviceName = serviceName)
+  
     __obj.asInstanceOf[ServerAddr]
   }
 }

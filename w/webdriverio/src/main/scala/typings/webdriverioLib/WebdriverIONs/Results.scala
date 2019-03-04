@@ -14,10 +14,8 @@ trait Results extends js.Object {
 object Results {
   @scala.inline
   def apply(failed: scala.Double, finished: scala.Double, passed: scala.Double): Results = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("finished")(finished)
-    __obj.updateDynamic("passed")(passed)
+    val __obj = js.Dynamic.literal(failed = failed, finished = finished, passed = passed)
+  
     __obj.asInstanceOf[Results]
   }
 }

@@ -22,8 +22,7 @@ object Anon_Callback {
     size: scala.Int | scala.Double = null,
     version: java.lang.String = null
   ): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (description != null) __obj.updateDynamic("description")(description)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

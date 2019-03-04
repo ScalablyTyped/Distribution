@@ -63,24 +63,8 @@ object StructureNuker {
     room: Room,
     structureType: STRUCTURE_NUKER
   ): StructureNuker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cooldown")(cooldown)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("energy")(energy)
-    __obj.updateDynamic("energyCapacity")(energyCapacity)
-    __obj.updateDynamic("ghodium")(ghodium)
-    __obj.updateDynamic("ghodiumCapacity")(ghodiumCapacity)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("launchNuke")(launchNuke)
-    __obj.updateDynamic("my")(my)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType)
+    val __obj = js.Dynamic.literal(cooldown = cooldown, destroy = destroy, energy = energy, energyCapacity = energyCapacity, ghodium = ghodium, ghodiumCapacity = ghodiumCapacity, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, launchNuke = launchNuke, my = my, notifyWhenAttacked = notifyWhenAttacked, owner = owner, pos = pos, room = room, structureType = structureType)
+  
     __obj.asInstanceOf[StructureNuker]
   }
 }

@@ -52,27 +52,8 @@ object IconCollections {
     threeTrafficLights2: ThreeTrafficLights2Set,
     threeTriangles: ThreeTrianglesSet
   ): IconCollections = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fiveArrows")(fiveArrows)
-    __obj.updateDynamic("fiveArrowsGray")(fiveArrowsGray)
-    __obj.updateDynamic("fiveBoxes")(fiveBoxes)
-    __obj.updateDynamic("fiveQuarters")(fiveQuarters)
-    __obj.updateDynamic("fiveRating")(fiveRating)
-    __obj.updateDynamic("fourArrows")(fourArrows)
-    __obj.updateDynamic("fourArrowsGray")(fourArrowsGray)
-    __obj.updateDynamic("fourRating")(fourRating)
-    __obj.updateDynamic("fourRedToBlack")(fourRedToBlack)
-    __obj.updateDynamic("fourTrafficLights")(fourTrafficLights)
-    __obj.updateDynamic("threeArrows")(threeArrows)
-    __obj.updateDynamic("threeArrowsGray")(threeArrowsGray)
-    __obj.updateDynamic("threeFlags")(threeFlags)
-    __obj.updateDynamic("threeSigns")(threeSigns)
-    __obj.updateDynamic("threeStars")(threeStars)
-    __obj.updateDynamic("threeSymbols")(threeSymbols)
-    __obj.updateDynamic("threeSymbols2")(threeSymbols2)
-    __obj.updateDynamic("threeTrafficLights1")(threeTrafficLights1)
-    __obj.updateDynamic("threeTrafficLights2")(threeTrafficLights2)
-    __obj.updateDynamic("threeTriangles")(threeTriangles)
+    val __obj = js.Dynamic.literal(fiveArrows = fiveArrows, fiveArrowsGray = fiveArrowsGray, fiveBoxes = fiveBoxes, fiveQuarters = fiveQuarters, fiveRating = fiveRating, fourArrows = fourArrows, fourArrowsGray = fourArrowsGray, fourRating = fourRating, fourRedToBlack = fourRedToBlack, fourTrafficLights = fourTrafficLights, threeArrows = threeArrows, threeArrowsGray = threeArrowsGray, threeFlags = threeFlags, threeSigns = threeSigns, threeStars = threeStars, threeSymbols = threeSymbols, threeSymbols2 = threeSymbols2, threeTrafficLights1 = threeTrafficLights1, threeTrafficLights2 = threeTrafficLights2, threeTriangles = threeTriangles)
+  
     __obj.asInstanceOf[IconCollections]
   }
 }

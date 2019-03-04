@@ -16,9 +16,8 @@ object Anon_CommandBarStore {
     CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
     Store: activexDashOutlookLib.OutlookNs.Store
   ): Anon_CommandBarStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CommandBar")(CommandBar)
-    __obj.updateDynamic("Store")(Store)
+    val __obj = js.Dynamic.literal(CommandBar = CommandBar, Store = Store)
+  
     __obj.asInstanceOf[Anon_CommandBarStore]
   }
 }

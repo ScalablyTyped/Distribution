@@ -25,13 +25,8 @@ object strings {
     DATA_TOGGLE_OFF: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`data-toggle-off`,
     DATA_TOGGLE_ON: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`data-toggle-on`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARIA_DISABLED")(ARIA_DISABLED)
-    __obj.updateDynamic("ARIA_LABEL")(ARIA_LABEL)
-    __obj.updateDynamic("ARIA_PRESSED")(ARIA_PRESSED)
-    __obj.updateDynamic("CHANGE_EVENT")(CHANGE_EVENT)
-    __obj.updateDynamic("DATA_TOGGLE_OFF")(DATA_TOGGLE_OFF)
-    __obj.updateDynamic("DATA_TOGGLE_ON")(DATA_TOGGLE_ON)
+    val __obj = js.Dynamic.literal(ARIA_DISABLED = ARIA_DISABLED, ARIA_LABEL = ARIA_LABEL, ARIA_PRESSED = ARIA_PRESSED, CHANGE_EVENT = CHANGE_EVENT, DATA_TOGGLE_OFF = DATA_TOGGLE_OFF, DATA_TOGGLE_ON = DATA_TOGGLE_ON)
+  
     __obj.asInstanceOf[strings]
   }
 }

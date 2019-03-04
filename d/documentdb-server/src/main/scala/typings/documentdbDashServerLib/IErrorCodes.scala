@@ -39,15 +39,8 @@ object IErrorCodes {
     RequestEntityTooLarge: scala.Double,
     RetryWith: scala.Double
   ): IErrorCodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BadRequest")(BadRequest)
-    __obj.updateDynamic("Conflict")(Conflict)
-    __obj.updateDynamic("Forbidden")(Forbidden)
-    __obj.updateDynamic("InternalServerError")(InternalServerError)
-    __obj.updateDynamic("NotFound")(NotFound)
-    __obj.updateDynamic("PreconditionFailed")(PreconditionFailed)
-    __obj.updateDynamic("RequestEntityTooLarge")(RequestEntityTooLarge)
-    __obj.updateDynamic("RetryWith")(RetryWith)
+    val __obj = js.Dynamic.literal(BadRequest = BadRequest, Conflict = Conflict, Forbidden = Forbidden, InternalServerError = InternalServerError, NotFound = NotFound, PreconditionFailed = PreconditionFailed, RequestEntityTooLarge = RequestEntityTooLarge, RetryWith = RetryWith)
+  
     __obj.asInstanceOf[IErrorCodes]
   }
 }

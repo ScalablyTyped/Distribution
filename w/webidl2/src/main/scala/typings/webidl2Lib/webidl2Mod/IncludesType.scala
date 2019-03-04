@@ -23,10 +23,8 @@ object IncludesType {
     target: java.lang.String,
     `type`: webidl2Lib.webidl2LibStrings.includes
   ): IncludesType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, includes = includes, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IncludesType]
   }
 }

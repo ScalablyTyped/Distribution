@@ -15,8 +15,7 @@ trait ojMasonryLayoutSettableProperties
 object ojMasonryLayoutSettableProperties {
   @scala.inline
   def apply(translations: atOracleOraclejetLib.Anon_LabelCut, reorderHandle: java.lang.String = null): ojMasonryLayoutSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(translations = translations)
     if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle)
     __obj.asInstanceOf[ojMasonryLayoutSettableProperties]
   }

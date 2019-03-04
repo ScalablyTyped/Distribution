@@ -13,8 +13,9 @@ trait cast extends js.Object {
 object cast {
   @scala.inline
   def apply(`type`: java.lang.String, `val`: js.Any): cast = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `val` = `val`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[cast]
   }
 }

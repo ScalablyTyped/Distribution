@@ -22,9 +22,8 @@ object Instance {
     from: js.Function1[java.lang.String, scala.Double],
     to: js.Function1[scala.Double, java.lang.String]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
     __obj.asInstanceOf[Instance]
   }
 }

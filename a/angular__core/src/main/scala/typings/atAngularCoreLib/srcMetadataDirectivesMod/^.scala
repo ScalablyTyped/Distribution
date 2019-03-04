@@ -15,17 +15,17 @@ object ^ extends js.Object {
   val Input: atAngularCoreLib.srcMetadataDirectivesMod.InputDecorator = js.native
   val Output: atAngularCoreLib.srcMetadataDirectivesMod.OutputDecorator = js.native
   val Pipe: atAngularCoreLib.srcMetadataDirectivesMod.PipeDecorator = js.native
-  val `SWITCH_COMPILE_COMPONENT__POST_R3__`: js.Function2[
+  val SWITCH_COMPILE_COMPONENT__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* metadata */ atAngularCoreLib.srcMetadataDirectivesMod.Component, 
     scala.Unit
   ] = js.native
-  val `SWITCH_COMPILE_DIRECTIVE__POST_R3__`: js.Function2[
+  val SWITCH_COMPILE_DIRECTIVE__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* directive */ atAngularCoreLib.srcMetadataDirectivesMod.Directive, 
     scala.Unit
   ] = js.native
-  val `SWITCH_COMPILE_PIPE__POST_R3__`: js.Function2[
+  val SWITCH_COMPILE_PIPE__POST_R3__ : js.Function2[
     /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
     /* meta */ atAngularCoreLib.srcMetadataDirectivesMod.Pipe, 
     scala.Unit

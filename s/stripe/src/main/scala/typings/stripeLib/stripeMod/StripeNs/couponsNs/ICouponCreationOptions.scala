@@ -62,8 +62,7 @@ object ICouponCreationOptions {
     percent_off: scala.Int | scala.Double = null,
     redeem_by: scala.Int | scala.Double = null
   ): ICouponCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     if (amount_off != null) __obj.updateDynamic("amount_off")(amount_off.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (duration_in_months != null) __obj.updateDynamic("duration_in_months")(duration_in_months.asInstanceOf[js.Any])

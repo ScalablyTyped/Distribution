@@ -24,11 +24,8 @@ object ResourceParameter {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ResourceParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($type = $type, id = id, isRequired = isRequired, name = name)
+    __obj.updateDynamic("type")(`type`)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

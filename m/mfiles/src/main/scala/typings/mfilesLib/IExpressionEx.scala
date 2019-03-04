@@ -32,17 +32,8 @@ object IExpressionEx {
     ShowNULLFolder: scala.Boolean,
     ShowNULLFolderContentsOnThisLevel: scala.Boolean
   ): IExpressionEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Conditions")(Conditions)
-    __obj.updateDynamic("Expression")(Expression)
-    __obj.updateDynamic("FolderListingAlgorithm")(FolderListingAlgorithm)
-    __obj.updateDynamic("NULLFolderName")(NULLFolderName)
-    __obj.updateDynamic("ShowContentsAsJITFolders")(ShowContentsAsJITFolders)
-    __obj.updateDynamic("ShowEmptyFolders")(ShowEmptyFolders)
-    __obj.updateDynamic("ShowMatchingObjectsOnThisLevel")(ShowMatchingObjectsOnThisLevel)
-    __obj.updateDynamic("ShowNULLFolder")(ShowNULLFolder)
-    __obj.updateDynamic("ShowNULLFolderContentsOnThisLevel")(ShowNULLFolderContentsOnThisLevel)
+    val __obj = js.Dynamic.literal(Clone = Clone, Conditions = Conditions, Expression = Expression, FolderListingAlgorithm = FolderListingAlgorithm, NULLFolderName = NULLFolderName, ShowContentsAsJITFolders = ShowContentsAsJITFolders, ShowEmptyFolders = ShowEmptyFolders, ShowMatchingObjectsOnThisLevel = ShowMatchingObjectsOnThisLevel, ShowNULLFolder = ShowNULLFolder, ShowNULLFolderContentsOnThisLevel = ShowNULLFolderContentsOnThisLevel)
+  
     __obj.asInstanceOf[IExpressionEx]
   }
 }

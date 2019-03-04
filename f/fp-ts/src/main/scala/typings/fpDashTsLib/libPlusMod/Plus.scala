@@ -26,11 +26,8 @@ object Plus {
     ],
     zero: js.Function0[fpDashTsLib.libHKTMod.HKT[F, js.Any]]
   ): Plus[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("zero")(zero)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], alt = alt, map = map, zero = zero)
+  
     __obj.asInstanceOf[Plus[F]]
   }
 }

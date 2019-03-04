@@ -33,9 +33,8 @@ object DeclareModule {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): DeclareModule = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])

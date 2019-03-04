@@ -19,8 +19,7 @@ trait Anon_SourceMap extends js.Object {
 object Anon_SourceMap {
   @scala.inline
   def apply(styles: java.lang.String, sourceMap: java.lang.String = null): Anon_SourceMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(styles = styles)
     if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
     __obj.asInstanceOf[Anon_SourceMap]
   }

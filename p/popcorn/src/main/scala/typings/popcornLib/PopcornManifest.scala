@@ -13,9 +13,8 @@ trait PopcornManifest extends js.Object {
 object PopcornManifest {
   @scala.inline
   def apply(about: PopcornManifestAbout, options: PopcornManifestOptions): PopcornManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("about")(about)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(about = about, options = options)
+  
     __obj.asInstanceOf[PopcornManifest]
   }
 }

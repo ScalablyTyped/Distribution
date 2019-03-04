@@ -14,9 +14,8 @@ trait MentionItem extends js.Object {
 object MentionItem {
   @scala.inline
   def apply(display: java.lang.String, id: java.lang.String, `type`: scala.Null): MentionItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("display")(display)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(display = display, id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MentionItem]
   }
 }

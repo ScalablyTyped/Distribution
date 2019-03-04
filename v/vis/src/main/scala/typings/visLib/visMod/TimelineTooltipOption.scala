@@ -13,9 +13,8 @@ trait TimelineTooltipOption extends js.Object {
 object TimelineTooltipOption {
   @scala.inline
   def apply(followMouse: scala.Boolean, overflowMethod: visLib.visLibStrings.cap | visLib.visLibStrings.flip): TimelineTooltipOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("followMouse")(followMouse)
-    __obj.updateDynamic("overflowMethod")(overflowMethod.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(followMouse = followMouse, overflowMethod = overflowMethod.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TimelineTooltipOption]
   }
 }

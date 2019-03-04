@@ -17,10 +17,7 @@ object GridSortEvent {
     sender: Grid,
     sort: js.Any = null
   ): GridSortEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (sort != null) __obj.updateDynamic("sort")(sort)
     __obj.asInstanceOf[GridSortEvent]
   }

@@ -83,18 +83,8 @@ object MessagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Message]
     ]
   ): MessagesResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("batchDelete")(batchDelete)
-    __obj.updateDynamic("batchModify")(batchModify)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("modify")(modify)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("trash")(trash)
-    __obj.updateDynamic("untrash")(untrash)
+    val __obj = js.Dynamic.literal(attachments = attachments, batchDelete = batchDelete, batchModify = batchModify, delete = delete, get = get, insert = insert, list = list, modify = modify, send = send, trash = trash, untrash = untrash)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[MessagesResource]
   }
 }

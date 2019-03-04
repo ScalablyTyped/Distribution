@@ -13,8 +13,8 @@ trait SjclCiphers extends js.Object {
 object SjclCiphers {
   @scala.inline
   def apply(aes: SjclCipherStatic): SjclCiphers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aes")(aes)
+    val __obj = js.Dynamic.literal(aes = aes)
+  
     __obj.asInstanceOf[SjclCiphers]
   }
 }

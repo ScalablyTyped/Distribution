@@ -59,8 +59,7 @@ object LayerVersionArgs {
     s3ObjectVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sourceCodeHash: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): LayerVersionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(layerName = layerName.asInstanceOf[js.Any])
     if (compatibleRuntimes != null) __obj.updateDynamic("compatibleRuntimes")(compatibleRuntimes.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])

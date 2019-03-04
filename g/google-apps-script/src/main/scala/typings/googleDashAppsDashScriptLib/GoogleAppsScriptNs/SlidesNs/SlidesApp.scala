@@ -80,41 +80,8 @@ object SlidesApp {
     openById: js.Function1[java.lang.String, Presentation],
     openByUrl: js.Function1[java.lang.String, Presentation]
   ): SlidesApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AlignmentPosition")(AlignmentPosition)
-    __obj.updateDynamic("ArrowStyle")(ArrowStyle)
-    __obj.updateDynamic("AutoTextType")(AutoTextType)
-    __obj.updateDynamic("CellMergeState")(CellMergeState)
-    __obj.updateDynamic("ColorType")(ColorType)
-    __obj.updateDynamic("ContentAlignment")(ContentAlignment)
-    __obj.updateDynamic("DashStyle")(DashStyle)
-    __obj.updateDynamic("FillType")(FillType)
-    __obj.updateDynamic("LineCategory")(LineCategory)
-    __obj.updateDynamic("LineFillType")(LineFillType)
-    __obj.updateDynamic("LineType")(LineType)
-    __obj.updateDynamic("LinkType")(LinkType)
-    __obj.updateDynamic("ListPreset")(ListPreset)
-    __obj.updateDynamic("PageBackgroundType")(PageBackgroundType)
-    __obj.updateDynamic("PageElementType")(PageElementType)
-    __obj.updateDynamic("PageType")(PageType)
-    __obj.updateDynamic("ParagraphAlignment")(ParagraphAlignment)
-    __obj.updateDynamic("PlaceholderType")(PlaceholderType)
-    __obj.updateDynamic("PredefinedLayout")(PredefinedLayout)
-    __obj.updateDynamic("SelectionType")(SelectionType)
-    __obj.updateDynamic("ShapeType")(ShapeType)
-    __obj.updateDynamic("SheetsChartEmbedType")(SheetsChartEmbedType)
-    __obj.updateDynamic("SlidePosition")(SlidePosition)
-    __obj.updateDynamic("SpacingMode")(SpacingMode)
-    __obj.updateDynamic("TextBaselineOffset")(TextBaselineOffset)
-    __obj.updateDynamic("TextDirection")(TextDirection)
-    __obj.updateDynamic("ThemeColorType")(ThemeColorType)
-    __obj.updateDynamic("VideoSourceType")(VideoSourceType)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getActivePresentation")(getActivePresentation)
-    __obj.updateDynamic("getUi")(getUi)
-    __obj.updateDynamic("newAffineTransformBuilder")(newAffineTransformBuilder)
-    __obj.updateDynamic("openById")(openById)
-    __obj.updateDynamic("openByUrl")(openByUrl)
+    val __obj = js.Dynamic.literal(AlignmentPosition = AlignmentPosition, ArrowStyle = ArrowStyle, AutoTextType = AutoTextType, CellMergeState = CellMergeState, ColorType = ColorType, ContentAlignment = ContentAlignment, DashStyle = DashStyle, FillType = FillType, LineCategory = LineCategory, LineFillType = LineFillType, LineType = LineType, LinkType = LinkType, ListPreset = ListPreset, PageBackgroundType = PageBackgroundType, PageElementType = PageElementType, PageType = PageType, ParagraphAlignment = ParagraphAlignment, PlaceholderType = PlaceholderType, PredefinedLayout = PredefinedLayout, SelectionType = SelectionType, ShapeType = ShapeType, SheetsChartEmbedType = SheetsChartEmbedType, SlidePosition = SlidePosition, SpacingMode = SpacingMode, TextBaselineOffset = TextBaselineOffset, TextDirection = TextDirection, ThemeColorType = ThemeColorType, VideoSourceType = VideoSourceType, create = create, getActivePresentation = getActivePresentation, getUi = getUi, newAffineTransformBuilder = newAffineTransformBuilder, openById = openById, openByUrl = openByUrl)
+  
     __obj.asInstanceOf[SlidesApp]
   }
 }

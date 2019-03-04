@@ -32,17 +32,8 @@ object Anon_AsyncOperationNotFound {
     targetBranchDeleted: scala.Double,
     writePermissionRequired: scala.Double
   ): Anon_AsyncOperationNotFound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncOperationNotFound")(asyncOperationNotFound)
-    __obj.updateDynamic("createBranchPermissionRequired")(createBranchPermissionRequired)
-    __obj.updateDynamic("gitObjectTooLarge")(gitObjectTooLarge)
-    __obj.updateDynamic("invalidRefName")(invalidRefName)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("operationIndentityNotFound")(operationIndentityNotFound)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("refNameConflict")(refNameConflict)
-    __obj.updateDynamic("targetBranchDeleted")(targetBranchDeleted)
-    __obj.updateDynamic("writePermissionRequired")(writePermissionRequired)
+    val __obj = js.Dynamic.literal(asyncOperationNotFound = asyncOperationNotFound, createBranchPermissionRequired = createBranchPermissionRequired, gitObjectTooLarge = gitObjectTooLarge, invalidRefName = invalidRefName, none = none, operationIndentityNotFound = operationIndentityNotFound, other = other, refNameConflict = refNameConflict, targetBranchDeleted = targetBranchDeleted, writePermissionRequired = writePermissionRequired)
+  
     __obj.asInstanceOf[Anon_AsyncOperationNotFound]
   }
 }

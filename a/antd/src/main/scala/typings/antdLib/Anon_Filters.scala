@@ -16,8 +16,7 @@ object Anon_Filters {
     filters: antdLib.libTableInterfaceMod.TableStateFilters,
     sortOrder: antdLib.libTableInterfaceMod.SortOrder = null
   ): Anon_Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filters = filters)
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
     __obj.asInstanceOf[Anon_Filters]
   }

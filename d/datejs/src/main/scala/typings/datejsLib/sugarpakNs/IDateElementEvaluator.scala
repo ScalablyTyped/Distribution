@@ -20,11 +20,8 @@ object IDateElementEvaluator {
     before: js.Function0[datejsLib.Date],
     fromNow: js.Function0[datejsLib.Date]
   ): IDateElementEvaluator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("ago")(ago)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("fromNow")(fromNow)
+    val __obj = js.Dynamic.literal(after = after, ago = ago, before = before, fromNow = fromNow)
+  
     __obj.asInstanceOf[IDateElementEvaluator]
   }
 }

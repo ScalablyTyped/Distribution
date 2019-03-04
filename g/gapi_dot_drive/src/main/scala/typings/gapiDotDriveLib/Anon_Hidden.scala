@@ -24,13 +24,8 @@ object Anon_Hidden {
     trashed: scala.Boolean,
     viewed: scala.Boolean
   ): Anon_Hidden = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("modified")(modified)
-    __obj.updateDynamic("restricted")(restricted)
-    __obj.updateDynamic("starred")(starred)
-    __obj.updateDynamic("trashed")(trashed)
-    __obj.updateDynamic("viewed")(viewed)
+    val __obj = js.Dynamic.literal(hidden = hidden, modified = modified, restricted = restricted, starred = starred, trashed = trashed, viewed = viewed)
+  
     __obj.asInstanceOf[Anon_Hidden]
   }
 }

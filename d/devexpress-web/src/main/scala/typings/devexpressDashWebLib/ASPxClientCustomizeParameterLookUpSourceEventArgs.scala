@@ -33,10 +33,8 @@ object ASPxClientCustomizeParameterLookUpSourceEventArgs {
     items: js.Array[ASPxDesignerElementEditorItem],
     parameter: ASPxDesignerElementParameterDescriptor
   ): ASPxClientCustomizeParameterLookUpSourceEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("parameter")(parameter)
+    val __obj = js.Dynamic.literal(dataSource = dataSource, items = items, parameter = parameter)
+  
     __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
   }
 }

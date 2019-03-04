@@ -116,8 +116,7 @@ object LoadBalancerArgs {
     subnets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): LoadBalancerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
     if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
     if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
     if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])

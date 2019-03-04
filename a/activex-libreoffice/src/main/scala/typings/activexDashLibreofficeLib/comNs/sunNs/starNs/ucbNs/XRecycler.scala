@@ -28,11 +28,8 @@ object XRecycler {
     release: js.Function0[scala.Unit],
     trashContent: js.Function2[XCommandProcessor, XContentIdentifier, scala.Unit]
   ): XRecycler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("trashContent")(trashContent)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, trashContent = trashContent)
+  
     __obj.asInstanceOf[XRecycler]
   }
 }

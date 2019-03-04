@@ -13,9 +13,8 @@ trait ParsedResult extends js.Object {
 object ParsedResult {
   @scala.inline
   def apply(addresses: js.Array[ParsedMailbox | ParsedGroup], ast: ASTNode): ParsedResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("ast")(ast)
+    val __obj = js.Dynamic.literal(addresses = addresses, ast = ast)
+  
     __obj.asInstanceOf[ParsedResult]
   }
 }

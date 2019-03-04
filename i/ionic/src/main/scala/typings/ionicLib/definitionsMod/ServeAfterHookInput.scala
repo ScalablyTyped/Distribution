@@ -16,9 +16,8 @@ object ServeAfterHookInput {
     name: ionicLib.ionicLibStrings.`serve:after`,
     serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) with ServeDetails
   ): ServeAfterHookInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("serve")(serve.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, serve = serve.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ServeAfterHookInput]
   }
 }

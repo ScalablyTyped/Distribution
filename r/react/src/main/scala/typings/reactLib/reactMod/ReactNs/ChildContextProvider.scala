@@ -12,8 +12,8 @@ trait ChildContextProvider[CC] extends js.Object {
 object ChildContextProvider {
   @scala.inline
   def apply[CC](getChildContext: js.Function0[CC]): ChildContextProvider[CC] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChildContext")(getChildContext)
+    val __obj = js.Dynamic.literal(getChildContext = getChildContext)
+  
     __obj.asInstanceOf[ChildContextProvider[CC]]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Pending extends js.Object {
 object Anon_Pending {
   @scala.inline
   def apply(pending: scala.Boolean): Anon_Pending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pending")(pending)
+    val __obj = js.Dynamic.literal(pending = pending)
+  
     __obj.asInstanceOf[Anon_Pending]
   }
 }

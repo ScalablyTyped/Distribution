@@ -27,10 +27,8 @@ object DocumentationPartArgs {
     properties: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     restApiId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): DocumentationPartArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DocumentationPartArgs]
   }
 }

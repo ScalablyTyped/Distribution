@@ -16,8 +16,9 @@ object ActiveXObjectNameMap {
     `Word.Application`: activexDashWordLib.WordNs.Application,
     `Word.Document`: activexDashWordLib.WordNs.Document
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`Word.Application` = `Word.Application`, `Word.Document` = `Word.Document`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Word.Application")(`Word.Application`)
+    __obj.updateDynamic("Word.Document")(`Word.Document`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

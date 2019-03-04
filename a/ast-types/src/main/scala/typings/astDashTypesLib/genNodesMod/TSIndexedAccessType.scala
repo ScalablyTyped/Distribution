@@ -23,9 +23,8 @@ object TSIndexedAccessType {
     objectType: astDashTypesLib.genKindsMod.TSTypeKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSIndexedAccessType
   ): TSIndexedAccessType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("indexType")(indexType)
-    __obj.updateDynamic("objectType")(objectType)
+    val __obj = js.Dynamic.literal(indexType = indexType, objectType = objectType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSIndexedAccessType]
   }
 }

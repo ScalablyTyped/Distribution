@@ -40,16 +40,8 @@ object MenuMultipleChange {
     ItemText: java.lang.String,
     PreItemID: scala.Double
   ): MenuMultipleChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GroupID")(GroupID)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("IsActive")(IsActive)
-    __obj.updateDynamic("IsCheckable")(IsCheckable)
-    __obj.updateDynamic("IsChecked")(IsChecked)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("ItemText")(ItemText)
-    __obj.updateDynamic("PreItemID")(PreItemID)
+    val __obj = js.Dynamic.literal(GroupID = GroupID, ID = ID, Image = Image, IsActive = IsActive, IsCheckable = IsCheckable, IsChecked = IsChecked, IsVisible = IsVisible, ItemText = ItemText, PreItemID = PreItemID)
+  
     __obj.asInstanceOf[MenuMultipleChange]
   }
 }

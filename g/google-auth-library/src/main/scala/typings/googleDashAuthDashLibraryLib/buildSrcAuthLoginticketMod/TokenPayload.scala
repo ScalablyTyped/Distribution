@@ -131,12 +131,7 @@ object TokenPayload {
     picture: java.lang.String = null,
     profile: java.lang.String = null
   ): TokenPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aud")(aud)
-    __obj.updateDynamic("exp")(exp)
-    __obj.updateDynamic("iat")(iat)
-    __obj.updateDynamic("iss")(iss)
-    __obj.updateDynamic("sub")(sub)
+    val __obj = js.Dynamic.literal(aud = aud, exp = exp, iat = iat, iss = iss, sub = sub)
     if (at_hash != null) __obj.updateDynamic("at_hash")(at_hash)
     if (azp != null) __obj.updateDynamic("azp")(azp)
     if (email != null) __obj.updateDynamic("email")(email)

@@ -22,12 +22,8 @@ object Anon_Headers {
     remotePort: scala.Double,
     url: java.lang.String
   ): Anon_Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remotePort")(remotePort)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(headers = headers, method = method, remoteAddress = remoteAddress, remotePort = remotePort, url = url)
+  
     __obj.asInstanceOf[Anon_Headers]
   }
 }

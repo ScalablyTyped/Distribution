@@ -34,18 +34,8 @@ object URI2HKT {
     Tree: fpDashTsLib.libTreeMod.Tree[A],
     Zipper: fpDashTsLib.libZipperMod.Zipper[A]
   ): URI2HKT[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Array")(Array)
-    __obj.updateDynamic("FreeGroup")(FreeGroup)
-    __obj.updateDynamic("IO")(IO)
-    __obj.updateDynamic("Identity")(Identity)
-    __obj.updateDynamic("NonEmptyArray")(NonEmptyArray)
-    __obj.updateDynamic("Option")(Option)
-    __obj.updateDynamic("Pair")(Pair)
-    __obj.updateDynamic("StrMap")(StrMap)
-    __obj.updateDynamic("Task")(Task)
-    __obj.updateDynamic("Tree")(Tree)
-    __obj.updateDynamic("Zipper")(Zipper)
+    val __obj = js.Dynamic.literal(Array = Array, FreeGroup = FreeGroup, IO = IO, Identity = Identity, NonEmptyArray = NonEmptyArray, Option = Option, Pair = Pair, StrMap = StrMap, Task = Task, Tree = Tree, Zipper = Zipper)
+  
     __obj.asInstanceOf[URI2HKT[A]]
   }
 }

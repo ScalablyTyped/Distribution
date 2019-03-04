@@ -12,6 +12,6 @@ object ^ extends js.Object {
   val SOURCE: /* __source */ java.lang.String = js.native
   val THROW_IF_NOT_FOUND: js.Object = js.native
   val USE_VALUE: java.lang.String = js.native
-  def `SWITCH_INJECTOR_FACTORY__POST_R3__`(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
+  def SWITCH_INJECTOR_FACTORY__POST_R3__(): atAngularCoreLib.srcRender3DiMod.NodeInjector = js.native
 }
 

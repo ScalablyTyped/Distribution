@@ -40,12 +40,8 @@ object CallFrame {
     scriptId: ScriptId,
     url: java.lang.String
   ): CallFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnNumber")(columnNumber)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("scriptId")(scriptId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(columnNumber = columnNumber, functionName = functionName, lineNumber = lineNumber, scriptId = scriptId, url = url)
+  
     __obj.asInstanceOf[CallFrame]
   }
 }

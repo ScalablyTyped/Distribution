@@ -93,17 +93,8 @@ object LZStringStatic {
     decompressFromUTF16: js.Function1[java.lang.String, java.lang.String],
     decompressFromUint8Array: js.Function1[stdLib.Uint8Array, java.lang.String]
   ): LZStringStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compress")(compress)
-    __obj.updateDynamic("compressToBase64")(compressToBase64)
-    __obj.updateDynamic("compressToEncodedURIComponent")(compressToEncodedURIComponent)
-    __obj.updateDynamic("compressToUTF16")(compressToUTF16)
-    __obj.updateDynamic("compressToUint8Array")(compressToUint8Array)
-    __obj.updateDynamic("decompress")(decompress)
-    __obj.updateDynamic("decompressFromBase64")(decompressFromBase64)
-    __obj.updateDynamic("decompressFromEncodedURIComponent")(decompressFromEncodedURIComponent)
-    __obj.updateDynamic("decompressFromUTF16")(decompressFromUTF16)
-    __obj.updateDynamic("decompressFromUint8Array")(decompressFromUint8Array)
+    val __obj = js.Dynamic.literal(compress = compress, compressToBase64 = compressToBase64, compressToEncodedURIComponent = compressToEncodedURIComponent, compressToUTF16 = compressToUTF16, compressToUint8Array = compressToUint8Array, decompress = decompress, decompressFromBase64 = decompressFromBase64, decompressFromEncodedURIComponent = decompressFromEncodedURIComponent, decompressFromUTF16 = decompressFromUTF16, decompressFromUint8Array = decompressFromUint8Array)
+  
     __obj.asInstanceOf[LZStringStatic]
   }
 }

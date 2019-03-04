@@ -18,10 +18,8 @@ object IDeviceOrientationService {
     getCurrentHeading: js.Function0[angularLib.angularMod.angularNs.IPromise[IDeviceOrientationHeading]],
     watchHeading: js.Function1[IDeviceOrientationWatchOptions, IDeviceOrientationWatchPromise]
   ): IDeviceOrientationService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearWatch")(clearWatch)
-    __obj.updateDynamic("getCurrentHeading")(getCurrentHeading)
-    __obj.updateDynamic("watchHeading")(watchHeading)
+    val __obj = js.Dynamic.literal(clearWatch = clearWatch, getCurrentHeading = getCurrentHeading, watchHeading = watchHeading)
+  
     __obj.asInstanceOf[IDeviceOrientationService]
   }
 }

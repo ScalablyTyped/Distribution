@@ -16,8 +16,8 @@ object Anon_Next {
     next: prosemirrorDashModelLib.prosemirrorDashModelMod.ContentMatch[_],
     `type`: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[_]
   ): Anon_Next = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Next]
   }
 }

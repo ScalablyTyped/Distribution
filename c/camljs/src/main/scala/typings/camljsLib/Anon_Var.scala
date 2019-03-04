@@ -13,8 +13,8 @@ trait Anon_Var
 object Anon_Var {
   @scala.inline
   def apply(`var`: java.lang.String): Anon_Var = {
-    val __obj = js.Dynamic.literal(`var` = `var`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("var")(`var`)
     __obj.asInstanceOf[Anon_Var]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Subtype extends js.Object {
 object Anon_Subtype {
   @scala.inline
   def apply(subtype: sequelizeLib.sequelizeMod.sequelizeNs.DataTypeAbstract): Anon_Subtype = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subtype")(subtype)
+    val __obj = js.Dynamic.literal(subtype = subtype)
+  
     __obj.asInstanceOf[Anon_Subtype]
   }
 }

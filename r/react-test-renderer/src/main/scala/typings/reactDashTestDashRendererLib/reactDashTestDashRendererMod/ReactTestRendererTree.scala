@@ -21,10 +21,8 @@ object ReactTestRendererTree {
     children: js.Array[ReactTestRendererJSON] = null,
     rendered: ReactTestRendererTree = null
   ): ReactTestRendererTree = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(instance = instance, nodeType = nodeType.asInstanceOf[js.Any], props = props)
+    __obj.updateDynamic("type")(`type`)
     if (children != null) __obj.updateDynamic("children")(children)
     if (rendered != null) __obj.updateDynamic("rendered")(rendered)
     __obj.asInstanceOf[ReactTestRendererTree]

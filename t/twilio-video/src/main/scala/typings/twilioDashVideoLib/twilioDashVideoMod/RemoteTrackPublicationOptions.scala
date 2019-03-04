@@ -12,8 +12,8 @@ trait RemoteTrackPublicationOptions extends js.Object {
 object RemoteTrackPublicationOptions {
   @scala.inline
   def apply(logLevel: LogLevel | LogLevels): RemoteTrackPublicationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RemoteTrackPublicationOptions]
   }
 }

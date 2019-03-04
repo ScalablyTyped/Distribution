@@ -27,10 +27,8 @@ object ClientContributionNode {
     contribution: ClientContribution,
     parents: js.Array[java.lang.String]
   ): ClientContributionNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("contribution")(contribution)
-    __obj.updateDynamic("parents")(parents)
+    val __obj = js.Dynamic.literal(children = children, contribution = contribution, parents = parents)
+  
     __obj.asInstanceOf[ClientContributionNode]
   }
 }

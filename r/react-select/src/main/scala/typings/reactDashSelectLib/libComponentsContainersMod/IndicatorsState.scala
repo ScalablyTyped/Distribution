@@ -13,8 +13,8 @@ trait IndicatorsState extends js.Object {
 object IndicatorsState {
   @scala.inline
   def apply(isRtl: scala.Boolean): IndicatorsState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRtl")(isRtl)
+    val __obj = js.Dynamic.literal(isRtl = isRtl)
+  
     __obj.asInstanceOf[IndicatorsState]
   }
 }

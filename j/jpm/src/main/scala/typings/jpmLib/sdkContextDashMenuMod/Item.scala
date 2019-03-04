@@ -28,12 +28,7 @@ object Item {
     contentScriptFile: java.lang.String | js.Array[java.lang.String] = null,
     parentMenu: Menu = null
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(context = context, data = data, destroy = destroy, image = image.asInstanceOf[js.Any], label = label)
     if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
     if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
     if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)

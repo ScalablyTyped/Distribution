@@ -113,8 +113,7 @@ object BottomNavigationProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: scala.Int | scala.Double = null
   ): BottomNavigationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("links")(links)
+    val __obj = js.Dynamic.literal(links = links)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)

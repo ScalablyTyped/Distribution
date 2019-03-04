@@ -12,8 +12,8 @@ trait IContactRemovedEventArgs extends js.Object {
 object IContactRemovedEventArgs {
   @scala.inline
   def apply(id: java.lang.String): IContactRemovedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[IContactRemovedEventArgs]
   }
 }

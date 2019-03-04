@@ -13,9 +13,8 @@ trait HapiRouterArgs extends js.Object {
 object HapiRouterArgs {
   @scala.inline
   def apply(request: reduxDashLittleDashRouterLib.Anon_Path, routes: Routes): HapiRouterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(request = request, routes = routes)
+  
     __obj.asInstanceOf[HapiRouterArgs]
   }
 }

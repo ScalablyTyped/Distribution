@@ -18,9 +18,8 @@ trait ILogService extends js.Object {
 object ILogService {
   @scala.inline
   def apply(assertEmpty: js.Function0[scala.Unit], reset: js.Function0[scala.Unit]): ILogService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assertEmpty")(assertEmpty)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(assertEmpty = assertEmpty, reset = reset)
+  
     __obj.asInstanceOf[ILogService]
   }
 }

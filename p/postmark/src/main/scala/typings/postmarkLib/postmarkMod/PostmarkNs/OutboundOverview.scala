@@ -47,24 +47,8 @@ object OutboundOverview {
     WithPlatformRecorded: scala.Double,
     WithReadTimeRecorded: scala.Double
   ): OutboundOverview = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BounceRate")(BounceRate)
-    __obj.updateDynamic("Bounced")(Bounced)
-    __obj.updateDynamic("Opens")(Opens)
-    __obj.updateDynamic("SMTPApiErrors")(SMTPApiErrors)
-    __obj.updateDynamic("Sent")(Sent)
-    __obj.updateDynamic("SpamComplaints")(SpamComplaints)
-    __obj.updateDynamic("SpamComplaintsRate")(SpamComplaintsRate)
-    __obj.updateDynamic("TotalClicks")(TotalClicks)
-    __obj.updateDynamic("TotalTrackedLinksSent")(TotalTrackedLinksSent)
-    __obj.updateDynamic("Tracked")(Tracked)
-    __obj.updateDynamic("UniqueLinksClicked")(UniqueLinksClicked)
-    __obj.updateDynamic("UniqueOpens")(UniqueOpens)
-    __obj.updateDynamic("WithClientRecorded")(WithClientRecorded)
-    __obj.updateDynamic("WithLinkTracking")(WithLinkTracking)
-    __obj.updateDynamic("WithOpenTracking")(WithOpenTracking)
-    __obj.updateDynamic("WithPlatformRecorded")(WithPlatformRecorded)
-    __obj.updateDynamic("WithReadTimeRecorded")(WithReadTimeRecorded)
+    val __obj = js.Dynamic.literal(BounceRate = BounceRate, Bounced = Bounced, Opens = Opens, SMTPApiErrors = SMTPApiErrors, Sent = Sent, SpamComplaints = SpamComplaints, SpamComplaintsRate = SpamComplaintsRate, TotalClicks = TotalClicks, TotalTrackedLinksSent = TotalTrackedLinksSent, Tracked = Tracked, UniqueLinksClicked = UniqueLinksClicked, UniqueOpens = UniqueOpens, WithClientRecorded = WithClientRecorded, WithLinkTracking = WithLinkTracking, WithOpenTracking = WithOpenTracking, WithPlatformRecorded = WithPlatformRecorded, WithReadTimeRecorded = WithReadTimeRecorded)
+  
     __obj.asInstanceOf[OutboundOverview]
   }
 }

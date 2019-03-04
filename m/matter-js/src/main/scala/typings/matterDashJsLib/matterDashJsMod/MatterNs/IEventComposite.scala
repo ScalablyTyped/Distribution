@@ -15,9 +15,8 @@ trait IEventComposite[T] extends IEvent[T] {
 object IEventComposite {
   @scala.inline
   def apply[T](name: java.lang.String, `object`: js.Any, source: T): IEventComposite[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IEventComposite[T]]
   }
 }

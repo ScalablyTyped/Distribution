@@ -18,10 +18,8 @@ object HttpClient {
     recordRequest: js.Function3[js.Any, java.lang.String, java.lang.String, js.Any],
     recordResponse: js.Function2[zipkinLib.zipkinMod.zipkinNs.TraceId, java.lang.String, scala.Unit]
   ): HttpClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordError")(recordError)
-    __obj.updateDynamic("recordRequest")(recordRequest)
-    __obj.updateDynamic("recordResponse")(recordResponse)
+    val __obj = js.Dynamic.literal(recordError = recordError, recordRequest = recordRequest, recordResponse = recordResponse)
+  
     __obj.asInstanceOf[HttpClient]
   }
 }

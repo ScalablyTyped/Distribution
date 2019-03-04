@@ -28,15 +28,8 @@ object TextInput {
     setTitle: js.Function1[java.lang.String, TextInput],
     setValue: js.Function1[java.lang.String, TextInput]
   ): TextInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFieldName")(setFieldName)
-    __obj.updateDynamic("setHint")(setHint)
-    __obj.updateDynamic("setMultiline")(setMultiline)
-    __obj.updateDynamic("setOnChangeAction")(setOnChangeAction)
-    __obj.updateDynamic("setSuggestions")(setSuggestions)
-    __obj.updateDynamic("setSuggestionsAction")(setSuggestionsAction)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(setFieldName = setFieldName, setHint = setHint, setMultiline = setMultiline, setOnChangeAction = setOnChangeAction, setSuggestions = setSuggestions, setSuggestionsAction = setSuggestionsAction, setTitle = setTitle, setValue = setValue)
+  
     __obj.asInstanceOf[TextInput]
   }
 }

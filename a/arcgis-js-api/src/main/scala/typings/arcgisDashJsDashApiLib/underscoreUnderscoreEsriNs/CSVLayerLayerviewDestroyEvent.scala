@@ -13,9 +13,8 @@ trait CSVLayerLayerviewDestroyEvent extends js.Object {
 object CSVLayerLayerviewDestroyEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): CSVLayerLayerviewDestroyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
     __obj.asInstanceOf[CSVLayerLayerviewDestroyEvent]
   }
 }

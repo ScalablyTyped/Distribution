@@ -13,8 +13,7 @@ trait XMLError
 object XMLError {
   @scala.inline
   def apply(name: atXmppXmlLib.atXmppXmlLibStrings.XMLError, stack: java.lang.String = null): XMLError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[XMLError]
   }

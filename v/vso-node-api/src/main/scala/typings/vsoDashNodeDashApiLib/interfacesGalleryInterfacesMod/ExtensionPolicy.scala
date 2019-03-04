@@ -19,9 +19,8 @@ trait ExtensionPolicy extends js.Object {
 object ExtensionPolicy {
   @scala.inline
   def apply(install: ExtensionPolicyFlags, request: ExtensionPolicyFlags): ExtensionPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("install")(install)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(install = install, request = request)
+  
     __obj.asInstanceOf[ExtensionPolicy]
   }
 }

@@ -13,9 +13,8 @@ trait CodeChangeTrendItem extends js.Object {
 object CodeChangeTrendItem {
   @scala.inline
   def apply(time: stdLib.Date, value: scala.Double): CodeChangeTrendItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(time = time, value = value)
+  
     __obj.asInstanceOf[CodeChangeTrendItem]
   }
 }

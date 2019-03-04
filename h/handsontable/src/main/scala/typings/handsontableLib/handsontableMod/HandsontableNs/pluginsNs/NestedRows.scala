@@ -35,25 +35,8 @@ object NestedRows {
     sourceData: js.Object | scala.Unit,
     trimRowsPlugin: TrimRows | scala.Unit
   ): NestedRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("bindRowsWithHeadersPlugin")(bindRowsWithHeadersPlugin.asInstanceOf[js.Any])
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("dataManager")(dataManager.asInstanceOf[js.Any])
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("headersUI")(headersUI.asInstanceOf[js.Any])
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("sourceData")(sourceData.asInstanceOf[js.Any])
-    __obj.updateDynamic("trimRowsPlugin")(trimRowsPlugin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addHook = addHook, bindRowsWithHeadersPlugin = bindRowsWithHeadersPlugin.asInstanceOf[js.Any], callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, dataManager = dataManager.asInstanceOf[js.Any], destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, headersUI = headersUI.asInstanceOf[js.Any], init = init, initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, sourceData = sourceData.asInstanceOf[js.Any], trimRowsPlugin = trimRowsPlugin.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NestedRows]
   }
 }

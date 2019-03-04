@@ -16,9 +16,8 @@ object Anon_AttributeNameEnabled {
     attributeName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
   ): Anon_AttributeNameEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AttributeNameEnabled]
   }
 }

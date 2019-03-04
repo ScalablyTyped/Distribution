@@ -16,9 +16,8 @@ object Anon_Compiler {
     compiler: atAngularCompilerLib.srcAotCompilerMod.AotCompiler,
     reflector: atAngularCompilerLib.srcAotStaticUnderscoreReflectorMod.StaticReflector
   ): Anon_Compiler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("reflector")(reflector)
+    val __obj = js.Dynamic.literal(compiler = compiler, reflector = reflector)
+  
     __obj.asInstanceOf[Anon_Compiler]
   }
 }

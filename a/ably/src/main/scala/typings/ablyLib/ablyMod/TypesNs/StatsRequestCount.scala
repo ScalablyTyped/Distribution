@@ -14,10 +14,8 @@ trait StatsRequestCount extends js.Object {
 object StatsRequestCount {
   @scala.inline
   def apply(failed: scala.Double, refused: scala.Double, succeeded: scala.Double): StatsRequestCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("refused")(refused)
-    __obj.updateDynamic("succeeded")(succeeded)
+    val __obj = js.Dynamic.literal(failed = failed, refused = refused, succeeded = succeeded)
+  
     __obj.asInstanceOf[StatsRequestCount]
   }
 }

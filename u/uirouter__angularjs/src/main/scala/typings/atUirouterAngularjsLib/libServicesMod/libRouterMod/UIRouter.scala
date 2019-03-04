@@ -18,9 +18,8 @@ object UIRouter {
     stateProvider: atUirouterAngularjsLib.libStateProviderMod.StateProvider,
     urlRouterProvider: atUirouterAngularjsLib.libUrlRouterProviderMod.UrlRouterProvider
   ): UIRouter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stateProvider")(stateProvider)
-    __obj.updateDynamic("urlRouterProvider")(urlRouterProvider)
+    val __obj = js.Dynamic.literal(stateProvider = stateProvider, urlRouterProvider = urlRouterProvider)
+  
     __obj.asInstanceOf[UIRouter]
   }
 }

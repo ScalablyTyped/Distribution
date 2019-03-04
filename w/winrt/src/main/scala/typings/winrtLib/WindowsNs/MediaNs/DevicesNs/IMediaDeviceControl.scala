@@ -22,12 +22,8 @@ object IMediaDeviceControl {
     trySetAuto: js.Function1[scala.Boolean, scala.Boolean],
     trySetValue: js.Function1[scala.Double, scala.Boolean]
   ): IMediaDeviceControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("tryGetAuto")(tryGetAuto)
-    __obj.updateDynamic("tryGetValue")(tryGetValue)
-    __obj.updateDynamic("trySetAuto")(trySetAuto)
-    __obj.updateDynamic("trySetValue")(trySetValue)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, tryGetAuto = tryGetAuto, tryGetValue = tryGetValue, trySetAuto = trySetAuto, trySetValue = trySetValue)
+  
     __obj.asInstanceOf[IMediaDeviceControl]
   }
 }

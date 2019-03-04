@@ -71,10 +71,7 @@ object InfiniteLoaderProps {
     rowCount: scala.Int | scala.Double = null,
     threshold: scala.Int | scala.Double = null
   ): InfiniteLoaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("isRowLoaded")(isRowLoaded)
-    __obj.updateDynamic("loadMoreRows")(loadMoreRows)
+    val __obj = js.Dynamic.literal(children = children, isRowLoaded = isRowLoaded, loadMoreRows = loadMoreRows)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (minimumBatchSize != null) __obj.updateDynamic("minimumBatchSize")(minimumBatchSize.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])

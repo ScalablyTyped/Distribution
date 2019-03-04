@@ -16,9 +16,8 @@ object IHtmlFormatHelperStatics {
     createHtmlFormat: js.Function1[java.lang.String, java.lang.String],
     getStaticFragment: js.Function1[java.lang.String, java.lang.String]
   ): IHtmlFormatHelperStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createHtmlFormat")(createHtmlFormat)
-    __obj.updateDynamic("getStaticFragment")(getStaticFragment)
+    val __obj = js.Dynamic.literal(createHtmlFormat = createHtmlFormat, getStaticFragment = getStaticFragment)
+  
     __obj.asInstanceOf[IHtmlFormatHelperStatics]
   }
 }

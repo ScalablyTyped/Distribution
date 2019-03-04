@@ -24,8 +24,7 @@ object Anon_CommentsExtra {
     raw: java.lang.String = null,
     regex: Anon_Flags = null
   ): Anon_CommentsExtra = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (loc != null) __obj.updateDynamic("loc")(loc)

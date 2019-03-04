@@ -24,10 +24,8 @@ trait UploadData extends js.Object {
 object UploadData {
   @scala.inline
   def apply(blobUUID: java.lang.String, bytes: nodeLib.Buffer, file: java.lang.String): UploadData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blobUUID")(blobUUID)
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(blobUUID = blobUUID, bytes = bytes, file = file)
+  
     __obj.asInstanceOf[UploadData]
   }
 }

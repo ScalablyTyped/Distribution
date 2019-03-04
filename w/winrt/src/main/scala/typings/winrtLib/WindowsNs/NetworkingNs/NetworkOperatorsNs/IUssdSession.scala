@@ -16,9 +16,8 @@ object IUssdSession {
     close: js.Function0[scala.Unit],
     sendMessageAndGetReplyAsync: js.Function1[UssdMessage, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[UssdReply]]
   ): IUssdSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("sendMessageAndGetReplyAsync")(sendMessageAndGetReplyAsync)
+    val __obj = js.Dynamic.literal(close = close, sendMessageAndGetReplyAsync = sendMessageAndGetReplyAsync)
+  
     __obj.asInstanceOf[IUssdSession]
   }
 }

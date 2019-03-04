@@ -42,13 +42,8 @@ object WorkspaceMapping {
     serverItem: java.lang.String,
     workspaceId: scala.Double
   ): WorkspaceMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionUri")(definitionUri)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("localItem")(localItem)
-    __obj.updateDynamic("mappingType")(mappingType)
-    __obj.updateDynamic("serverItem")(serverItem)
-    __obj.updateDynamic("workspaceId")(workspaceId)
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri, depth = depth, localItem = localItem, mappingType = mappingType, serverItem = serverItem, workspaceId = workspaceId)
+  
     __obj.asInstanceOf[WorkspaceMapping]
   }
 }

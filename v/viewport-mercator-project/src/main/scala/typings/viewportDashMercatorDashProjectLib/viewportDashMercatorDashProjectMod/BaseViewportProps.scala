@@ -22,12 +22,8 @@ object BaseViewportProps {
     width: scala.Double,
     zoom: scala.Double
   ): BaseViewportProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(height = height, latitude = latitude, longitude = longitude, width = width, zoom = zoom)
+  
     __obj.asInstanceOf[BaseViewportProps]
   }
 }

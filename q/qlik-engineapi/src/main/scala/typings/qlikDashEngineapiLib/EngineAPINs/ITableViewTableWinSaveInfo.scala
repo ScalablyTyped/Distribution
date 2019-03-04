@@ -22,9 +22,8 @@ trait ITableViewTableWinSaveInfo extends js.Object {
 object ITableViewTableWinSaveInfo {
   @scala.inline
   def apply(qCaption: java.lang.String, qPos: IRect): ITableViewTableWinSaveInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCaption")(qCaption)
-    __obj.updateDynamic("qPos")(qPos)
+    val __obj = js.Dynamic.literal(qCaption = qCaption, qPos = qPos)
+  
     __obj.asInstanceOf[ITableViewTableWinSaveInfo]
   }
 }

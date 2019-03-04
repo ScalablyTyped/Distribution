@@ -32,11 +32,8 @@ object ClientContributionProviderDetails {
     properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     version: java.lang.String
   ): ClientContributionProviderDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name, properties = properties, version = version)
+  
     __obj.asInstanceOf[ClientContributionProviderDetails]
   }
 }

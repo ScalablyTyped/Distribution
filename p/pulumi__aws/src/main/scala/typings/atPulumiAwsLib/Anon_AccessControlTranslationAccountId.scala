@@ -22,8 +22,7 @@ object Anon_AccessControlTranslationAccountId {
     replicaKmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     storageClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AccessControlTranslationAccountId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (accessControlTranslation != null) __obj.updateDynamic("accessControlTranslation")(accessControlTranslation.asInstanceOf[js.Any])
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (replicaKmsKeyId != null) __obj.updateDynamic("replicaKmsKeyId")(replicaKmsKeyId.asInstanceOf[js.Any])

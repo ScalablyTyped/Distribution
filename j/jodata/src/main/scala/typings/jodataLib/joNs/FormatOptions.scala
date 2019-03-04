@@ -20,11 +20,8 @@ object FormatOptions {
     json: js.Function0[jodataLib.jo],
     xml: js.Function0[jodataLib.jo]
   ): FormatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atom")(atom)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("xml")(xml)
+    val __obj = js.Dynamic.literal(atom = atom, custom = custom, json = json, xml = xml)
+  
     __obj.asInstanceOf[FormatOptions]
   }
 }

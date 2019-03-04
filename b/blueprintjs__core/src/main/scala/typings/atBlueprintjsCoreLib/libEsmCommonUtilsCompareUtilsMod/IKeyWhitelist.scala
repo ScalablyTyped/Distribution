@@ -12,8 +12,8 @@ trait IKeyWhitelist[T] extends js.Object {
 object IKeyWhitelist {
   @scala.inline
   def apply[T](include: js.Array[java.lang.String]): IKeyWhitelist[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(include = include)
+  
     __obj.asInstanceOf[IKeyWhitelist[T]]
   }
 }

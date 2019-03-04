@@ -12,8 +12,8 @@ trait IObjectComparer extends js.Object {
 object IObjectComparer {
   @scala.inline
   def apply(Compare: js.Function2[IObjectVersion, IObjectVersion, scala.Double]): IObjectComparer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Compare")(Compare)
+    val __obj = js.Dynamic.literal(Compare = Compare)
+  
     __obj.asInstanceOf[IObjectComparer]
   }
 }

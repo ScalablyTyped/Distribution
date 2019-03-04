@@ -32,11 +32,8 @@ object GetAliasResult {
     targetKeyArn: java.lang.String,
     targetKeyId: java.lang.String
   ): GetAliasResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("targetKeyArn")(targetKeyArn)
-    __obj.updateDynamic("targetKeyId")(targetKeyId)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, targetKeyArn = targetKeyArn, targetKeyId = targetKeyId)
+  
     __obj.asInstanceOf[GetAliasResult]
   }
 }

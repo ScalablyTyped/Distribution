@@ -29,8 +29,7 @@ object SearchResultProps {
     price: java.lang.String = null,
     renderer: js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]] = null
   ): SearchResultProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (as != null) __obj.updateDynamic("as")(as)

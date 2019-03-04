@@ -38,11 +38,7 @@ object AnimationParam {
     ] = null,
     startTime: scala.Int | scala.Double = null
   ): AnimationParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("depaPos")(depaPos)
-    __obj.updateDynamic("destPos")(destPos)
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(delta = delta, depaPos = depaPos, destPos = destPos, duration = duration)
     if (done != null) __obj.updateDynamic("done")(done)
     if (inputEvent != null) __obj.updateDynamic("inputEvent")(inputEvent)
     if (setTo != null) __obj.updateDynamic("setTo")(setTo)

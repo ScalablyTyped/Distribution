@@ -15,8 +15,8 @@ trait DescribeContinuousBackupsInput extends js.Object {
 object DescribeContinuousBackupsInput {
   @scala.inline
   def apply(TableName: TableName): DescribeContinuousBackupsInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(TableName = TableName)
+  
     __obj.asInstanceOf[DescribeContinuousBackupsInput]
   }
 }

@@ -24,13 +24,8 @@ object ListUploadsResult {
     res: NormalSuccessResponse,
     uploads: js.Array[Upload]
   ): ListUploadsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("isTruncated")(isTruncated)
-    __obj.updateDynamic("nextKeyMarker")(nextKeyMarker)
-    __obj.updateDynamic("nextUploadIdMarker")(nextUploadIdMarker)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("uploads")(uploads)
+    val __obj = js.Dynamic.literal(bucket = bucket, isTruncated = isTruncated, nextKeyMarker = nextKeyMarker, nextUploadIdMarker = nextUploadIdMarker, res = res, uploads = uploads)
+  
     __obj.asInstanceOf[ListUploadsResult]
   }
 }

@@ -12,8 +12,8 @@ trait RelayNetworkLayer extends js.Object {
 object RelayNetworkLayer {
   @scala.inline
   def apply(supports: js.Function1[/* repeated */ java.lang.String, scala.Boolean]): RelayNetworkLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("supports")(supports)
+    val __obj = js.Dynamic.literal(supports = supports)
+  
     __obj.asInstanceOf[RelayNetworkLayer]
   }
 }

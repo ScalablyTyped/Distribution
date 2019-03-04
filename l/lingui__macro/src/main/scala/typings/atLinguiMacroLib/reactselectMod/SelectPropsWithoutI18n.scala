@@ -24,9 +24,7 @@ object SelectPropsWithoutI18n {
     id: java.lang.String = null,
     render: reactLib.reactMod.ReactNs.ReactNode = null
   ): SelectPropsWithoutI18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (description != null) __obj.updateDynamic("description")(description)

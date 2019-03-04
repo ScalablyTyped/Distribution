@@ -35,9 +35,8 @@ object TSEnumDeclaration {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TSEnumDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(id = id, members = members)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(const)) __obj.updateDynamic("const")(const)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

@@ -142,22 +142,8 @@ object XFlatParagraph {
     isModified: js.Function0[scala.Boolean],
     setChecked: js.Function2[scala.Double, scala.Boolean, scala.Unit]
   ): XFlatParagraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LanguagePortions")(LanguagePortions)
-    __obj.updateDynamic("MarkupInfoContainer")(MarkupInfoContainer)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("changeAttributes")(changeAttributes)
-    __obj.updateDynamic("changeText")(changeText)
-    __obj.updateDynamic("commitStringMarkup")(commitStringMarkup)
-    __obj.updateDynamic("commitTextRangeMarkup")(commitTextRangeMarkup)
-    __obj.updateDynamic("getLanguageOfText")(getLanguageOfText)
-    __obj.updateDynamic("getLanguagePortions")(getLanguagePortions)
-    __obj.updateDynamic("getMarkupInfoContainer")(getMarkupInfoContainer)
-    __obj.updateDynamic("getPrimaryLanguageOfText")(getPrimaryLanguageOfText)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("isChecked")(isChecked)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("setChecked")(setChecked)
+    val __obj = js.Dynamic.literal(LanguagePortions = LanguagePortions, MarkupInfoContainer = MarkupInfoContainer, Text = Text, changeAttributes = changeAttributes, changeText = changeText, commitStringMarkup = commitStringMarkup, commitTextRangeMarkup = commitTextRangeMarkup, getLanguageOfText = getLanguageOfText, getLanguagePortions = getLanguagePortions, getMarkupInfoContainer = getMarkupInfoContainer, getPrimaryLanguageOfText = getPrimaryLanguageOfText, getText = getText, isChecked = isChecked, isModified = isModified, setChecked = setChecked)
+  
     __obj.asInstanceOf[XFlatParagraph]
   }
 }

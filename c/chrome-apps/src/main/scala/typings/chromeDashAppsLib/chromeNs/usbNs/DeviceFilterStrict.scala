@@ -27,8 +27,7 @@ object DeviceFilterStrict {
     interfaceSubclass: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     productId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): DeviceFilterStrict = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(vendorId = vendorId)
     if (!js.isUndefined(interfaceClass)) __obj.updateDynamic("interfaceClass")(interfaceClass)
     if (!js.isUndefined(interfaceProtocol)) __obj.updateDynamic("interfaceProtocol")(interfaceProtocol)
     if (!js.isUndefined(interfaceSubclass)) __obj.updateDynamic("interfaceSubclass")(interfaceSubclass)

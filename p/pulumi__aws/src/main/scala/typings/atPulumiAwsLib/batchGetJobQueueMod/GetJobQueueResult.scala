@@ -52,14 +52,8 @@ object GetJobQueueResult {
     status: java.lang.String,
     statusReason: java.lang.String
   ): GetJobQueueResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("computeEnvironmentOrders")(computeEnvironmentOrders)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusReason")(statusReason)
+    val __obj = js.Dynamic.literal(arn = arn, computeEnvironmentOrders = computeEnvironmentOrders, id = id, priority = priority, state = state, status = status, statusReason = statusReason)
+  
     __obj.asInstanceOf[GetJobQueueResult]
   }
 }

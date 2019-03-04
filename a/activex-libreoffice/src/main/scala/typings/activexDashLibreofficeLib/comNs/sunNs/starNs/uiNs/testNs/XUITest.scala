@@ -18,10 +18,8 @@ object XUITest {
     executeCommand: js.Function1[java.lang.String, scala.Unit],
     getTopFocusWindow: js.Function0[XUIObject]
   ): XUITest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TopFocusWindow")(TopFocusWindow)
-    __obj.updateDynamic("executeCommand")(executeCommand)
-    __obj.updateDynamic("getTopFocusWindow")(getTopFocusWindow)
+    val __obj = js.Dynamic.literal(TopFocusWindow = TopFocusWindow, executeCommand = executeCommand, getTopFocusWindow = getTopFocusWindow)
+  
     __obj.asInstanceOf[XUITest]
   }
 }

@@ -14,8 +14,8 @@ trait Anon_Payload extends js.Object {
 object Anon_Payload {
   @scala.inline
   def apply(payload: scala.Double, `type`: java.lang.String, subtype: java.lang.String = null): Anon_Payload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     if (subtype != null) __obj.updateDynamic("subtype")(subtype)
     __obj.asInstanceOf[Anon_Payload]
   }

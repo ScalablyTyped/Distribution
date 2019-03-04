@@ -22,8 +22,11 @@ object EventMap {
     `compiler-warning`: webpackDashServeLib.Anon_CompilerStatsAny,
     listening: webpackDashServeLib.Anon_Options
   ): EventMap = {
-    val __obj = js.Dynamic.literal(`build-finished` = `build-finished`, `build-started` = `build-started`, `compiler-error` = `compiler-error`, `compiler-warning` = `compiler-warning`)
-    __obj.updateDynamic("listening")(listening)
+    val __obj = js.Dynamic.literal(listening = listening)
+    __obj.updateDynamic("build-finished")(`build-finished`)
+    __obj.updateDynamic("build-started")(`build-started`)
+    __obj.updateDynamic("compiler-error")(`compiler-error`)
+    __obj.updateDynamic("compiler-warning")(`compiler-warning`)
     __obj.asInstanceOf[EventMap]
   }
 }

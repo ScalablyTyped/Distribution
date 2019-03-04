@@ -16,9 +16,8 @@ object Anon_Args {
     makeRequest: js.Function1[/* repeated */ js.Any, js.UndefOr[nodeLib.streamMod.Transform]],
     stream: nodeLib.streamMod.Transform
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("makeRequest")(makeRequest)
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(makeRequest = makeRequest, stream = stream)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

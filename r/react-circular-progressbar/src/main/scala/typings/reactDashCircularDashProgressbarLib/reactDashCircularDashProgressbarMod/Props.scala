@@ -32,8 +32,7 @@ object Props {
     styles: ProgressbarStyles = null,
     text: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("percentage")(percentage)
+    val __obj = js.Dynamic.literal(percentage = percentage)
     if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
     if (backgroundPadding != null) __obj.updateDynamic("backgroundPadding")(backgroundPadding.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

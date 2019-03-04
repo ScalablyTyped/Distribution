@@ -28,15 +28,8 @@ object RenderedSection {
     rowStartIndex: scala.Double,
     rowStopIndex: scala.Double
   ): RenderedSection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnOverscanStartIndex")(columnOverscanStartIndex)
-    __obj.updateDynamic("columnOverscanStopIndex")(columnOverscanStopIndex)
-    __obj.updateDynamic("columnStartIndex")(columnStartIndex)
-    __obj.updateDynamic("columnStopIndex")(columnStopIndex)
-    __obj.updateDynamic("rowOverscanStartIndex")(rowOverscanStartIndex)
-    __obj.updateDynamic("rowOverscanStopIndex")(rowOverscanStopIndex)
-    __obj.updateDynamic("rowStartIndex")(rowStartIndex)
-    __obj.updateDynamic("rowStopIndex")(rowStopIndex)
+    val __obj = js.Dynamic.literal(columnOverscanStartIndex = columnOverscanStartIndex, columnOverscanStopIndex = columnOverscanStopIndex, columnStartIndex = columnStartIndex, columnStopIndex = columnStopIndex, rowOverscanStartIndex = rowOverscanStartIndex, rowOverscanStopIndex = rowOverscanStopIndex, rowStartIndex = rowStartIndex, rowStopIndex = rowStopIndex)
+  
     __obj.asInstanceOf[RenderedSection]
   }
 }

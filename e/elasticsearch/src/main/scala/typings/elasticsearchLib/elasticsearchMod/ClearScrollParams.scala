@@ -20,8 +20,7 @@ object ClearScrollParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): ClearScrollParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scrollId")(scrollId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scrollId = scrollId.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

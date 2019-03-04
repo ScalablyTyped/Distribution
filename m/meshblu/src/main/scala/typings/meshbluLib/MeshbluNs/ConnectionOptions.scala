@@ -16,9 +16,8 @@ trait ConnectionOptions extends js.Object {
 object ConnectionOptions {
   @scala.inline
   def apply(token: java.lang.String, uuid: java.lang.String): ConnectionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(token = token, uuid = uuid)
+  
     __obj.asInstanceOf[ConnectionOptions]
   }
 }

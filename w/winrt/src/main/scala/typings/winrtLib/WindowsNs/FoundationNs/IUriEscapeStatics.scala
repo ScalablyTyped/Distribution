@@ -16,9 +16,8 @@ object IUriEscapeStatics {
     escapeComponent: js.Function1[java.lang.String, java.lang.String],
     unescapeComponent: js.Function1[java.lang.String, java.lang.String]
   ): IUriEscapeStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("escapeComponent")(escapeComponent)
-    __obj.updateDynamic("unescapeComponent")(unescapeComponent)
+    val __obj = js.Dynamic.literal(escapeComponent = escapeComponent, unescapeComponent = unescapeComponent)
+  
     __obj.asInstanceOf[IUriEscapeStatics]
   }
 }

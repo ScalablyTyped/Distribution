@@ -22,12 +22,8 @@ object Invoice {
     title: java.lang.String,
     total_amount: scala.Double
   ): Invoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("start_parameter")(start_parameter)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("total_amount")(total_amount)
+    val __obj = js.Dynamic.literal(currency = currency, description = description, start_parameter = start_parameter, title = title, total_amount = total_amount)
+  
     __obj.asInstanceOf[Invoice]
   }
 }

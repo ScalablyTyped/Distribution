@@ -35,17 +35,8 @@ object ExportFilter {
     setName: js.Function1[java.lang.String, scala.Unit],
     setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit]
   ): ExportFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setSourceDocument")(setSourceDocument)
+    val __obj = js.Dynamic.literal(Name = Name, acquire = acquire, cancel = cancel, filter = filter, getName = getName, initialize = initialize, queryInterface = queryInterface, release = release, setName = setName, setSourceDocument = setSourceDocument)
+  
     __obj.asInstanceOf[ExportFilter]
   }
 }

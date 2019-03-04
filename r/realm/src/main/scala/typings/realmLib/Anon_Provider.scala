@@ -14,10 +14,8 @@ trait Anon_Provider extends js.Object {
 object Anon_Provider {
   @scala.inline
   def apply(provider: java.lang.String, providerToken: java.lang.String, userInfo: js.Any): Anon_Provider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("providerToken")(providerToken)
-    __obj.updateDynamic("userInfo")(userInfo)
+    val __obj = js.Dynamic.literal(provider = provider, providerToken = providerToken, userInfo = userInfo)
+  
     __obj.asInstanceOf[Anon_Provider]
   }
 }

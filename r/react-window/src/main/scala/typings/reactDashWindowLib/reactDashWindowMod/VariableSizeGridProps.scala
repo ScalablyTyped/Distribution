@@ -61,14 +61,7 @@ object VariableSizeGridProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): VariableSizeGridProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("columnWidth")(columnWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = columnWidth, height = height, rowCount = rowCount, rowHeight = rowHeight, width = width)
     if (className != null) __obj.updateDynamic("className")(className)
     if (estimatedColumnWidth != null) __obj.updateDynamic("estimatedColumnWidth")(estimatedColumnWidth.asInstanceOf[js.Any])
     if (estimatedRowHeight != null) __obj.updateDynamic("estimatedRowHeight")(estimatedRowHeight.asInstanceOf[js.Any])

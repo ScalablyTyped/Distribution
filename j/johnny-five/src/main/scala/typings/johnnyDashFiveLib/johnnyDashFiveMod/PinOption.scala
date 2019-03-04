@@ -18,8 +18,7 @@ object PinOption {
     id: scala.Double | java.lang.String = null,
     `type`: java.lang.String = null
   ): PinOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PinOption]

@@ -16,8 +16,7 @@ object RequestErrorCls {
     name: cacheableDashRequestLib.cacheableDashRequestLibStrings.RequestError,
     stack: java.lang.String = null
   ): RequestErrorCls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[RequestErrorCls]
   }

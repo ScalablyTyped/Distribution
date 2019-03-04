@@ -18,8 +18,7 @@ object JQueryRowGridJSOptions {
     maxMargin: scala.Int | scala.Double = null,
     minMargin: scala.Int | scala.Double = null
   ): JQueryRowGridJSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemSelector")(itemSelector)
+    val __obj = js.Dynamic.literal(itemSelector = itemSelector)
     if (maxMargin != null) __obj.updateDynamic("maxMargin")(maxMargin.asInstanceOf[js.Any])
     if (minMargin != null) __obj.updateDynamic("minMargin")(minMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryRowGridJSOptions]

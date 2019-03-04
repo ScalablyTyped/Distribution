@@ -20,11 +20,8 @@ object IOwnerPropertyDef {
     IndexForAutomaticFilling: scala.Double,
     IsRelationFiltering: scala.Boolean
   ): IOwnerPropertyDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DependencyRelation")(DependencyRelation)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IndexForAutomaticFilling")(IndexForAutomaticFilling)
-    __obj.updateDynamic("IsRelationFiltering")(IsRelationFiltering)
+    val __obj = js.Dynamic.literal(DependencyRelation = DependencyRelation, ID = ID, IndexForAutomaticFilling = IndexForAutomaticFilling, IsRelationFiltering = IsRelationFiltering)
+  
     __obj.asInstanceOf[IOwnerPropertyDef]
   }
 }

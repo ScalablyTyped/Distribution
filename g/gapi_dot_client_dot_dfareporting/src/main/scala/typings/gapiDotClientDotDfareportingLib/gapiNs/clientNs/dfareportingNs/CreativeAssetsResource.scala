@@ -18,8 +18,8 @@ object CreativeAssetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CreativeAssetMetadata]
     ]
   ): CreativeAssetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[CreativeAssetsResource]
   }
 }

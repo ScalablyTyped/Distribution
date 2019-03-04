@@ -23,10 +23,8 @@ trait RibbonSubgroup extends js.Object {
 object RibbonSubgroup {
   @scala.inline
   def apply(endAngle: scala.Double, radius: scala.Double, startAngle: scala.Double): RibbonSubgroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endAngle")(endAngle)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("startAngle")(startAngle)
+    val __obj = js.Dynamic.literal(endAngle = endAngle, radius = radius, startAngle = startAngle)
+  
     __obj.asInstanceOf[RibbonSubgroup]
   }
 }

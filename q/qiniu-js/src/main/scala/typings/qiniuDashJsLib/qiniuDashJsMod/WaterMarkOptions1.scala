@@ -29,13 +29,8 @@ object WaterMarkOptions1 {
     image: java.lang.String,
     mode: qiniuDashJsLib.qiniuDashJsLibNumbers.`1`
   ): WaterMarkOptions1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dissolve")(dissolve)
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
-    __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(dissolve = dissolve, dx = dx, dy = dy, gravity = gravity.asInstanceOf[js.Any], image = image, mode = mode)
+  
     __obj.asInstanceOf[WaterMarkOptions1]
   }
 }

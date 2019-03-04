@@ -30,15 +30,8 @@ object EventObject {
     stopPropagation: js.Function0[scala.Unit],
     `type`: java.lang.String
   ): EventObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("detachHandler")(detachHandler)
-    __obj.updateDynamic("detached")(detached)
-    __obj.updateDynamic("eventId")(eventId)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("prevented")(prevented)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    val __obj = js.Dynamic.literal(cancelled = cancelled, detachHandler = detachHandler, detached = detached, eventId = eventId, preventDefault = preventDefault, prevented = prevented, sender = sender, stopPropagation = stopPropagation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EventObject]
   }
 }

@@ -15,8 +15,8 @@ trait FancyBoxAjaxOption extends js.Object {
 object FancyBoxAjaxOption {
   @scala.inline
   def apply(settings: jqueryLib.JQueryAjaxSettings): FancyBoxAjaxOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(settings = settings)
+  
     __obj.asInstanceOf[FancyBoxAjaxOption]
   }
 }

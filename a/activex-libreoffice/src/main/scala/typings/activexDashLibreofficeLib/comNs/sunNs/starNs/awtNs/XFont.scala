@@ -86,19 +86,8 @@ object XFont {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
-    __obj.updateDynamic("FontMetric")(FontMetric)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCharWidth")(getCharWidth)
-    __obj.updateDynamic("getCharWidths")(getCharWidths)
-    __obj.updateDynamic("getFontDescriptor")(getFontDescriptor)
-    __obj.updateDynamic("getFontMetric")(getFontMetric)
-    __obj.updateDynamic("getKernPairs")(getKernPairs)
-    __obj.updateDynamic("getStringWidth")(getStringWidth)
-    __obj.updateDynamic("getStringWidthArray")(getStringWidthArray)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(FontDescriptor = FontDescriptor, FontMetric = FontMetric, acquire = acquire, getCharWidth = getCharWidth, getCharWidths = getCharWidths, getFontDescriptor = getFontDescriptor, getFontMetric = getFontMetric, getKernPairs = getKernPairs, getStringWidth = getStringWidth, getStringWidthArray = getStringWidthArray, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFont]
   }
 }

@@ -30,12 +30,8 @@ object Anon_AVG {
     MIN: java.lang.String,
     SUM: java.lang.String
   ): Anon_AVG = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AVG")(AVG)
-    __obj.updateDynamic("COUNT")(COUNT)
-    __obj.updateDynamic("MAX")(MAX)
-    __obj.updateDynamic("MIN")(MIN)
-    __obj.updateDynamic("SUM")(SUM)
+    val __obj = js.Dynamic.literal(AVG = AVG, COUNT = COUNT, MAX = MAX, MIN = MIN, SUM = SUM)
+  
     __obj.asInstanceOf[Anon_AVG]
   }
 }
@@ -43,12 +39,8 @@ object Anon_AVG {
 object Anon_Avg {
   @scala.inline
   def apply(avg: scala.Double, count: scala.Double, max: scala.Double, min: scala.Double, sum: scala.Double): Anon_Avg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avg")(avg)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("sum")(sum)
+    val __obj = js.Dynamic.literal(avg = avg, count = count, max = max, min = min, sum = sum)
+  
     __obj.asInstanceOf[Anon_Avg]
   }
 }

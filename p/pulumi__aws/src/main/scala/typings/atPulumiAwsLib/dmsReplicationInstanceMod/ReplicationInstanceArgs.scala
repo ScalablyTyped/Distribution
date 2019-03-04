@@ -84,9 +84,7 @@ object ReplicationInstanceArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): ReplicationInstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicationInstanceClass")(replicationInstanceClass.asInstanceOf[js.Any])
-    __obj.updateDynamic("replicationInstanceId")(replicationInstanceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(replicationInstanceClass = replicationInstanceClass.asInstanceOf[js.Any], replicationInstanceId = replicationInstanceId.asInstanceOf[js.Any])
     if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])

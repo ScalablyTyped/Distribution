@@ -18,8 +18,8 @@ trait Resolver extends js.Object {
 object Resolver {
   @scala.inline
   def apply(get: js.Function2[Container, js.Any, js.Any]): Resolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[Resolver]
   }
 }

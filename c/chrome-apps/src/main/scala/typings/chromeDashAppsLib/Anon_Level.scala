@@ -49,10 +49,8 @@ object Anon_Level {
       scala.Unit
     ]
   ): Anon_Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Level")(Level)
-    __obj.updateDynamic("releaseKeepAwake")(releaseKeepAwake)
-    __obj.updateDynamic("requestKeepAwake")(requestKeepAwake)
+    val __obj = js.Dynamic.literal(Level = Level, releaseKeepAwake = releaseKeepAwake, requestKeepAwake = requestKeepAwake)
+  
     __obj.asInstanceOf[Anon_Level]
   }
 }

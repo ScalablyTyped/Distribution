@@ -42,17 +42,8 @@ object SSF$Date {
     u: scala.Double,
     y: scala.Double
   ): SSF$Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("H")(H)
-    __obj.updateDynamic("M")(M)
-    __obj.updateDynamic("S")(S)
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("q")(q)
-    __obj.updateDynamic("u")(u)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(D = D, H = H, M = M, S = S, T = T, d = d, m = m, q = q, u = u, y = y)
+  
     __obj.asInstanceOf[SSF$Date]
   }
 }

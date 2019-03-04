@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LodashAssignAllWith extends js.Object {
   def apply(customizer: lodashLib.lodashMod.underscoreNs.AssignCustomizer): LodashAssignAllWith1x1 = js.native
   def apply(customizer: lodashLib.lodashMod.underscoreNs.AssignCustomizer, args: js.Array[_]): js.Any = js.native
-  def apply(customizer: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_]): LodashAssignAllWith1x2 = js.native
+  def apply(customizer: lodashLib.lodashMod.underscoreNs.__, args: js.Array[_]): LodashAssignAllWith1x2 = js.native
 }
 

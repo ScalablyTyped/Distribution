@@ -14,8 +14,7 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(teardown: js.Function0[scala.Unit], update: js.Function1[/* repeated */ js.Any, scala.Unit] = null): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("teardown")(teardown)
+    val __obj = js.Dynamic.literal(teardown = teardown)
     if (update != null) __obj.updateDynamic("update")(update)
     __obj.asInstanceOf[Anon_Args]
   }

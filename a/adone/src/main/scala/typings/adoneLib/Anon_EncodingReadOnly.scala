@@ -12,8 +12,8 @@ trait Anon_EncodingReadOnly extends js.Object {
 object Anon_EncodingReadOnly {
   @scala.inline
   def apply(encodingNs: js.Any): Anon_EncodingReadOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encodingNs")(encodingNs)
+    val __obj = js.Dynamic.literal(encodingNs = encodingNs)
+  
     __obj.asInstanceOf[Anon_EncodingReadOnly]
   }
 }

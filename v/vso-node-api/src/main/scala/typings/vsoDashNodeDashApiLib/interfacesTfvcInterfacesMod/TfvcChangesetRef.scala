@@ -52,15 +52,8 @@ object TfvcChangesetRef {
     createdDate: stdLib.Date,
     url: java.lang.String
   ): TfvcChangesetRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("changesetId")(changesetId)
-    __obj.updateDynamic("checkedInBy")(checkedInBy)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, author = author, changesetId = changesetId, checkedInBy = checkedInBy, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, url = url)
+  
     __obj.asInstanceOf[TfvcChangesetRef]
   }
 }

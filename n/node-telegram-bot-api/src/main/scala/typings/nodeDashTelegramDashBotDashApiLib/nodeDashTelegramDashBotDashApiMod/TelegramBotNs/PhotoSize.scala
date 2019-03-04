@@ -18,10 +18,7 @@ object PhotoSize {
     width: scala.Double,
     file_size: scala.Int | scala.Double = null
   ): PhotoSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file_id")(file_id)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(file_id = file_id, height = height, width = width)
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotoSize]
   }

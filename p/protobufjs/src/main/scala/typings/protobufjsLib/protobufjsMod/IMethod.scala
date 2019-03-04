@@ -30,9 +30,7 @@ object IMethod {
     responseStream: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null
   ): IMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestType")(requestType)
-    __obj.updateDynamic("responseType")(responseType)
+    val __obj = js.Dynamic.literal(requestType = requestType, responseType = responseType)
     if (options != null) __obj.updateDynamic("options")(options)
     if (!js.isUndefined(requestStream)) __obj.updateDynamic("requestStream")(requestStream)
     if (!js.isUndefined(responseStream)) __obj.updateDynamic("responseStream")(responseStream)

@@ -33,9 +33,8 @@ object SailsHook {
     initialize: js.Function1[js.Function0[_], scala.Unit],
     routes: swaggerDashSailsDashHookLib.Anon_After
   ): SailsHook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(initialize = initialize, routes = routes)
+  
     __obj.asInstanceOf[SailsHook]
   }
 }

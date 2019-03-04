@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(directory: java.lang.String): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
+    val __obj = js.Dynamic.literal(directory = directory)
+  
     __obj.asInstanceOf[Options]
   }
 }

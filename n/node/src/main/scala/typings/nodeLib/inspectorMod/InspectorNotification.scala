@@ -13,9 +13,8 @@ trait InspectorNotification[T] extends js.Object {
 object InspectorNotification {
   @scala.inline
   def apply[T](method: java.lang.String, params: T): InspectorNotification[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(method = method, params = params.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[InspectorNotification[T]]
   }
 }

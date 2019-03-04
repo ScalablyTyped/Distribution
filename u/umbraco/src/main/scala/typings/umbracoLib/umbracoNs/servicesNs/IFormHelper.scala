@@ -77,11 +77,8 @@ object IFormHelper {
     resetForm: js.Function1[/* repeated */ js.Any, scala.Unit],
     submitForm: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): IFormHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleError")(handleError)
-    __obj.updateDynamic("handleServerValidation")(handleServerValidation)
-    __obj.updateDynamic("resetForm")(resetForm)
-    __obj.updateDynamic("submitForm")(submitForm)
+    val __obj = js.Dynamic.literal(handleError = handleError, handleServerValidation = handleServerValidation, resetForm = resetForm, submitForm = submitForm)
+  
     __obj.asInstanceOf[IFormHelper]
   }
 }

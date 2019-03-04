@@ -29,10 +29,7 @@ object Dependency {
     svgStyle: js.Object = null,
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart = null
   ): Dependency[K1, K2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("predecessorTaskId")(predecessorTaskId.asInstanceOf[js.Any])
-    __obj.updateDynamic("successorTaskId")(successorTaskId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], predecessorTaskId = predecessorTaskId.asInstanceOf[js.Any], successorTaskId = successorTaskId.asInstanceOf[js.Any])
     if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
     if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName)
     if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle)

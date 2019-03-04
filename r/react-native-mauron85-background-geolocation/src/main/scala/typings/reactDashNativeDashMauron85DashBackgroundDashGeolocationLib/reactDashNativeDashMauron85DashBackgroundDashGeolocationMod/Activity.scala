@@ -15,8 +15,8 @@ trait Activity extends js.Object {
 object Activity {
   @scala.inline
   def apply(confidence: scala.Double, `type`: ActivityType): Activity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("confidence")(confidence)
+    val __obj = js.Dynamic.literal(confidence = confidence)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Activity]
   }
 }

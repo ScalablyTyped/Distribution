@@ -14,9 +14,7 @@ trait CSSProperty extends js.Object {
 object CSSProperty {
   @scala.inline
   def apply(property: java.lang.String, value: js.Any, parsed: webdriverioLib.Anon_Alpha = null): CSSProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(property = property, value = value)
     if (parsed != null) __obj.updateDynamic("parsed")(parsed)
     __obj.asInstanceOf[CSSProperty]
   }

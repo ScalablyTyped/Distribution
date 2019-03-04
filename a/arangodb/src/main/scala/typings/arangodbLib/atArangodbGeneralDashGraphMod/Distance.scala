@@ -14,10 +14,8 @@ trait Distance extends js.Object {
 object Distance {
   @scala.inline
   def apply(distance: scala.Double, startVertex: java.lang.String, vertex: java.lang.String): Distance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("startVertex")(startVertex)
-    __obj.updateDynamic("vertex")(vertex)
+    val __obj = js.Dynamic.literal(distance = distance, startVertex = startVertex, vertex = vertex)
+  
     __obj.asInstanceOf[Distance]
   }
 }

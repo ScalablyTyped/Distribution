@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/view/refs", "ViewRef_")
 @js.native
-class `ViewRef_` protected ()
+class ViewRef_ protected ()
   extends atAngularCoreLib.srcLinkerViewUnderscoreRefMod.EmbeddedViewRef[js.Any]
      with atAngularCoreLib.srcLinkerViewUnderscoreRefMod.InternalViewRef {
   def this(_view: atAngularCoreLib.srcViewTypesMod.ViewData) = this()

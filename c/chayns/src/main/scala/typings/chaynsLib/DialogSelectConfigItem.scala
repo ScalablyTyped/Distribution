@@ -20,8 +20,7 @@ object DialogSelectConfigItem {
     isSelected: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String = null
   ): DialogSelectConfigItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (image != null) __obj.updateDynamic("image")(image)
     if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
     if (value != null) __obj.updateDynamic("value")(value)

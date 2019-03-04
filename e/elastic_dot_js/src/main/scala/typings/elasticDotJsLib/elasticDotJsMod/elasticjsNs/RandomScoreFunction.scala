@@ -33,11 +33,8 @@ object RandomScoreFunction {
     seed: js.Function1[scala.Double, RandomScoreFunction],
     toJSON: js.Function0[js.Any]
   ): RandomScoreFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("seed")(seed)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, filter = filter, seed = seed, toJSON = toJSON)
+  
     __obj.asInstanceOf[RandomScoreFunction]
   }
 }

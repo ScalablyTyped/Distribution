@@ -18,8 +18,8 @@ trait MultipleArtistsResponse extends js.Object {
 object MultipleArtistsResponse {
   @scala.inline
   def apply(artists: js.Array[ArtistObjectFull]): MultipleArtistsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artists")(artists)
+    val __obj = js.Dynamic.literal(artists = artists)
+  
     __obj.asInstanceOf[MultipleArtistsResponse]
   }
 }

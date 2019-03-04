@@ -24,12 +24,7 @@ object FiveQuartersSet {
     whiteCircleAllWhiteQuarters: Icon,
     NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
   ): FiveQuartersSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blackCircle")(blackCircle)
-    __obj.updateDynamic("circleWithOneWhiteQuarter")(circleWithOneWhiteQuarter)
-    __obj.updateDynamic("circleWithThreeWhiteQuarters")(circleWithThreeWhiteQuarters)
-    __obj.updateDynamic("circleWithTwoWhiteQuarters")(circleWithTwoWhiteQuarters)
-    __obj.updateDynamic("whiteCircleAllWhiteQuarters")(whiteCircleAllWhiteQuarters)
+    val __obj = js.Dynamic.literal(blackCircle = blackCircle, circleWithOneWhiteQuarter = circleWithOneWhiteQuarter, circleWithThreeWhiteQuarters = circleWithThreeWhiteQuarters, circleWithTwoWhiteQuarters = circleWithTwoWhiteQuarters, whiteCircleAllWhiteQuarters = whiteCircleAllWhiteQuarters)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[FiveQuartersSet]
   }

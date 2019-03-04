@@ -26,14 +26,8 @@ object Result {
     nodes: js.Array[NodeResult],
     tags: js.Array[TagValue]
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpUrl")(helpUrl)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("impact")(impact)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(description = description, help = help, helpUrl = helpUrl, id = id, impact = impact, nodes = nodes, tags = tags)
+  
     __obj.asInstanceOf[Result]
   }
 }

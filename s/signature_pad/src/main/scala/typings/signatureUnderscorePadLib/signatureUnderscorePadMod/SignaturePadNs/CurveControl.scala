@@ -13,9 +13,8 @@ trait CurveControl extends js.Object {
 object CurveControl {
   @scala.inline
   def apply(c1: Point, c2: Point): CurveControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c1")(c1)
-    __obj.updateDynamic("c2")(c2)
+    val __obj = js.Dynamic.literal(c1 = c1, c2 = c2)
+  
     __obj.asInstanceOf[CurveControl]
   }
 }

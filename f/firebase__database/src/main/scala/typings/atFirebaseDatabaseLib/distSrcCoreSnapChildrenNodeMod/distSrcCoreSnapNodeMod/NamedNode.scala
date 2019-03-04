@@ -13,9 +13,8 @@ trait NamedNode extends js.Object {
 object NamedNode {
   @scala.inline
   def apply(MAX: NamedNode, MIN: NamedNode): NamedNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MAX")(MAX)
-    __obj.updateDynamic("MIN")(MIN)
+    val __obj = js.Dynamic.literal(MAX = MAX, MIN = MIN)
+  
     __obj.asInstanceOf[NamedNode]
   }
 }

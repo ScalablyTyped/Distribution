@@ -19,8 +19,8 @@ trait QueriesFunctions extends js.Object {
 object QueriesFunctions {
   @scala.inline
   def apply(search: js.Function2[js.Any, java.lang.String, scala.Boolean]): QueriesFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
+  
     __obj.asInstanceOf[QueriesFunctions]
   }
 }

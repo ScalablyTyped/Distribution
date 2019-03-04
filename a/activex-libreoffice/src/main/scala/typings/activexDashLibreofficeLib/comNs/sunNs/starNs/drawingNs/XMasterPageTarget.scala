@@ -32,13 +32,8 @@ object XMasterPageTarget {
     release: js.Function0[scala.Unit],
     setMasterPage: js.Function1[XDrawPage, scala.Unit]
   ): XMasterPageTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MasterPage")(MasterPage)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMasterPage")(getMasterPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setMasterPage")(setMasterPage)
+    val __obj = js.Dynamic.literal(MasterPage = MasterPage, acquire = acquire, getMasterPage = getMasterPage, queryInterface = queryInterface, release = release, setMasterPage = setMasterPage)
+  
     __obj.asInstanceOf[XMasterPageTarget]
   }
 }

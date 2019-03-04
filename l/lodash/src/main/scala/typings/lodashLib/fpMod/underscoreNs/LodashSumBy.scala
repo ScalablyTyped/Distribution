@@ -14,9 +14,9 @@ trait LodashSumBy extends js.Object {
     iteratee: js.Function1[/* value */ T, scala.Double],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): scala.Double = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashSumBy1x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashSumBy1x2[T] = js.native
   def apply[T](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashSumBy1x2[T] = js.native
 }

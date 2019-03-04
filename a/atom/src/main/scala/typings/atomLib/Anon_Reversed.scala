@@ -12,8 +12,8 @@ trait Anon_Reversed extends js.Object {
 object Anon_Reversed {
   @scala.inline
   def apply(reversed: scala.Boolean): Anon_Reversed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reversed")(reversed)
+    val __obj = js.Dynamic.literal(reversed = reversed)
+  
     __obj.asInstanceOf[Anon_Reversed]
   }
 }

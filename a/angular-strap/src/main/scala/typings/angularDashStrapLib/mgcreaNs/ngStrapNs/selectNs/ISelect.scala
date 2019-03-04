@@ -22,12 +22,8 @@ object ISelect {
     show: js.Function0[scala.Unit],
     update: js.Function1[js.Any, scala.Unit]
   ): ISelect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(active = active, hide = hide, select = select, show = show, update = update)
+  
     __obj.asInstanceOf[ISelect]
   }
 }

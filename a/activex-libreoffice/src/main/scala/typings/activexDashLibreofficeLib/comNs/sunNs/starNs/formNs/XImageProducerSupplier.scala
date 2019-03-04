@@ -32,12 +32,8 @@ object XImageProducerSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XImageProducerSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ImageProducer")(ImageProducer)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getImageProducer")(getImageProducer)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ImageProducer = ImageProducer, acquire = acquire, getImageProducer = getImageProducer, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XImageProducerSupplier]
   }
 }

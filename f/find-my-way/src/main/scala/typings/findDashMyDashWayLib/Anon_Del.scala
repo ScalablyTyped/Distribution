@@ -27,11 +27,8 @@ object Anon_Del {
       scala.Unit
     ]
   ): Anon_Del[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(del = del, empty = empty, get = get, set = set)
+  
     __obj.asInstanceOf[Anon_Del[V]]
   }
 }

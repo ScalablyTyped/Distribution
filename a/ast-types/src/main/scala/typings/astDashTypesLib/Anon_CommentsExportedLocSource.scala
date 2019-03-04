@@ -20,8 +20,7 @@ object Anon_CommentsExportedLocSource {
     exported: astDashTypesLib.genKindsMod.IdentifierKind = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsExportedLocSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (exported != null) __obj.updateDynamic("exported")(exported)
     if (loc != null) __obj.updateDynamic("loc")(loc)

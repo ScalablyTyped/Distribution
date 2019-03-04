@@ -58,8 +58,7 @@ object GutterOptions {
     `type`: atomLib.atomLibStrings.decorated | atomLib.atomLibStrings.`line-number` = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): GutterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (labelFn != null) __obj.updateDynamic("labelFn")(labelFn)
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)

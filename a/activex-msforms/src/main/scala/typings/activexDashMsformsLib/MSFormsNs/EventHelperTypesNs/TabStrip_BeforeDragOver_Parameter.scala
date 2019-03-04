@@ -28,15 +28,8 @@ object TabStrip_BeforeDragOver_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): TabStrip_BeforeDragOver_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("DragState")(DragState)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Data = Data, DragState = DragState, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[TabStrip_BeforeDragOver_Parameter]
   }
 }

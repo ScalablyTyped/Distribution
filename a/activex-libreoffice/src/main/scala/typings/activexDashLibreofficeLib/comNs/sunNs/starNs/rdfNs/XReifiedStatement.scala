@@ -17,9 +17,8 @@ trait XReifiedStatement extends XNode {
 object XReifiedStatement {
   @scala.inline
   def apply(Statement: Statement, StringValue: java.lang.String): XReifiedStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Statement")(Statement)
-    __obj.updateDynamic("StringValue")(StringValue)
+    val __obj = js.Dynamic.literal(Statement = Statement, StringValue = StringValue)
+  
     __obj.asInstanceOf[XReifiedStatement]
   }
 }

@@ -49,18 +49,8 @@ object XTextRange {
     release: js.Function0[scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XTextRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, queryInterface = queryInterface, release = release, setString = setString)
+  
     __obj.asInstanceOf[XTextRange]
   }
 }

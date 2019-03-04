@@ -22,9 +22,10 @@ object IToken {
     `type`: java.lang.String,
     `val`: js.Any
   ): IToken = {
-    val __obj = js.Dynamic.literal(`match` = `match`, `type` = `type`, `val` = `val`)
-    __obj.updateDynamic("otherVal")(otherVal)
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(otherVal = otherVal, regex = regex)
+    __obj.updateDynamic("match")(`match`)
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[IToken]
   }
 }

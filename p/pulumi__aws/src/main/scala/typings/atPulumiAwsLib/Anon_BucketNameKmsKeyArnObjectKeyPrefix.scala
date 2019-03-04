@@ -22,9 +22,7 @@ object Anon_BucketNameKmsKeyArnObjectKeyPrefix {
     objectKeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BucketNameKmsKeyArnObjectKeyPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     if (objectKeyPrefix != null) __obj.updateDynamic("objectKeyPrefix")(objectKeyPrefix.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])

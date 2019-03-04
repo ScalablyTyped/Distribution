@@ -12,8 +12,8 @@ trait Anon_Object extends js.Object {
 object Anon_Object {
   @scala.inline
   def apply(`object`: xml2jsonLib.xml2jsonLibNumbers.`true`): Anon_Object = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Object]
   }
 }

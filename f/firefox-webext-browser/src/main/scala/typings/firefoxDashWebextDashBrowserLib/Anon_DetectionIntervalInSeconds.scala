@@ -48,10 +48,8 @@ object Anon_DetectionIntervalInSeconds {
     ],
     setDetectionInterval: js.Function1[scala.Double, scala.Unit]
   ): Anon_DetectionIntervalInSeconds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onStateChanged")(onStateChanged)
-    __obj.updateDynamic("queryState")(queryState)
-    __obj.updateDynamic("setDetectionInterval")(setDetectionInterval)
+    val __obj = js.Dynamic.literal(onStateChanged = onStateChanged, queryState = queryState, setDetectionInterval = setDetectionInterval)
+  
     __obj.asInstanceOf[Anon_DetectionIntervalInSeconds]
   }
 }

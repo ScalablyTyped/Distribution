@@ -37,12 +37,8 @@ object _Impl {
     position: java.lang.String,
     visible: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("popup")(popup)
-    __obj.updateDynamic("popupVisible")(popupVisible)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(loading = loading, popup = popup, popupVisible = popupVisible, position = position, visible = visible)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

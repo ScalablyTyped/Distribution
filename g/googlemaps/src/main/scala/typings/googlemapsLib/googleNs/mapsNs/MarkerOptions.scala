@@ -105,8 +105,7 @@ object MarkerOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): MarkerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
     if (animation != null) __obj.updateDynamic("animation")(animation)
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)

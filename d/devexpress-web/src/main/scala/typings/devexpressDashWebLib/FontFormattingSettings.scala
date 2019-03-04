@@ -93,20 +93,8 @@ object FontFormattingSettings {
     underlineColor: java.lang.String,
     underlineWordsOnly: scala.Boolean
   ): FontFormattingSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allCaps")(allCaps)
-    __obj.updateDynamic("backColor")(backColor)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("fontName")(fontName)
-    __obj.updateDynamic("foreColor")(foreColor)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("italic")(italic)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("strikeout")(strikeout)
-    __obj.updateDynamic("underline")(underline)
-    __obj.updateDynamic("underlineColor")(underlineColor)
-    __obj.updateDynamic("underlineWordsOnly")(underlineWordsOnly)
+    val __obj = js.Dynamic.literal(allCaps = allCaps, backColor = backColor, bold = bold, fontName = fontName, foreColor = foreColor, hidden = hidden, italic = italic, script = script, size = size, strikeout = strikeout, underline = underline, underlineColor = underlineColor, underlineWordsOnly = underlineWordsOnly)
+  
     __obj.asInstanceOf[FontFormattingSettings]
   }
 }

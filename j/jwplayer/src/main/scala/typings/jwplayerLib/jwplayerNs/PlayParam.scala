@@ -16,9 +16,8 @@ object PlayParam {
     oldstate: jwplayerLib.jwplayerLibStrings.buffering | jwplayerLib.jwplayerLibStrings.playing,
     viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
   ): PlayParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldstate")(oldstate.asInstanceOf[js.Any])
-    __obj.updateDynamic("viewable")(viewable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(oldstate = oldstate.asInstanceOf[js.Any], viewable = viewable.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PlayParam]
   }
 }

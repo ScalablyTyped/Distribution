@@ -24,9 +24,8 @@ trait ASPxClientDashboardActionAvailabilityChangedEventArgs extends ASPxClientEv
 object ASPxClientDashboardActionAvailabilityChangedEventArgs {
   @scala.inline
   def apply(IsReloadDataAvailable: scala.Boolean, ItemActions: js.Array[ASPxClientDashboardItemAction]): ASPxClientDashboardActionAvailabilityChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsReloadDataAvailable")(IsReloadDataAvailable)
-    __obj.updateDynamic("ItemActions")(ItemActions)
+    val __obj = js.Dynamic.literal(IsReloadDataAvailable = IsReloadDataAvailable, ItemActions = ItemActions)
+  
     __obj.asInstanceOf[ASPxClientDashboardActionAvailabilityChangedEventArgs]
   }
 }

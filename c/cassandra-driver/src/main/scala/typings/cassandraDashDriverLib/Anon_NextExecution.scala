@@ -12,8 +12,8 @@ trait Anon_NextExecution extends js.Object {
 object Anon_NextExecution {
   @scala.inline
   def apply(nextExecution: js.Function0[scala.Double]): Anon_NextExecution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nextExecution")(nextExecution)
+    val __obj = js.Dynamic.literal(nextExecution = nextExecution)
+  
     __obj.asInstanceOf[Anon_NextExecution]
   }
 }

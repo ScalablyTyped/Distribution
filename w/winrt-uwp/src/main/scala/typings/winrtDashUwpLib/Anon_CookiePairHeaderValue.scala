@@ -16,9 +16,8 @@ object Anon_CookiePairHeaderValue {
     cookiePairHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCookiePairHeaderValue,
     returnValue: scala.Boolean
   ): Anon_CookiePairHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookiePairHeaderValue")(cookiePairHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(cookiePairHeaderValue = cookiePairHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_CookiePairHeaderValue]
   }
 }

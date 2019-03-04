@@ -16,8 +16,8 @@ object Anon_Socialprofilelist {
     social_profiles: js.Array[intercomDashClientLib.userMod.SocialProfile],
     `type`: intercomDashClientLib.intercomDashClientLibStrings.social_profileDOTlist
   ): Anon_Socialprofilelist = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("social_profiles")(social_profiles)
+    val __obj = js.Dynamic.literal(social_profiles = social_profiles)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Socialprofilelist]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_PanelToggle extends js.Object {
 object Anon_PanelToggle {
   @scala.inline
   def apply(PanelToggleNs: js.Any): Anon_PanelToggle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PanelToggleNs")(PanelToggleNs)
+    val __obj = js.Dynamic.literal(PanelToggleNs = PanelToggleNs)
+  
     __obj.asInstanceOf[Anon_PanelToggle]
   }
 }

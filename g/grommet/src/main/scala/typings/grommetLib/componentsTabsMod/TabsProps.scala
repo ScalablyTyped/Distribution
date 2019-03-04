@@ -40,8 +40,7 @@ object TabsProps {
     messages: grommetLib.Anon_TabContents = null,
     onActive: js.Function1[/* repeated */ js.Any, _] = null
   ): TabsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])

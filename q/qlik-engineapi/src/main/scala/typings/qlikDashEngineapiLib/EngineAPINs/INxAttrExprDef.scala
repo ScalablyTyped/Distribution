@@ -18,14 +18,14 @@ trait INxAttrExprDef extends js.Object {
     * Definition of the attribute expression stored in the library..
     * Example: "MyGenericMeasure"
     */
-  var `qLibraryId_`: java.lang.String
+  var qLibraryId_ : java.lang.String
 }
 
 object INxAttrExprDef {
   @scala.inline
-  def apply(qExpression: java.lang.String, `qLibraryId_`: java.lang.String): INxAttrExprDef = {
-    val __obj = js.Dynamic.literal(`qLibraryId_` = `qLibraryId_`)
-    __obj.updateDynamic("qExpression")(qExpression)
+  def apply(qExpression: java.lang.String, qLibraryId_ : java.lang.String): INxAttrExprDef = {
+    val __obj = js.Dynamic.literal(qExpression = qExpression, qLibraryId_ = qLibraryId_)
+  
     __obj.asInstanceOf[INxAttrExprDef]
   }
 }

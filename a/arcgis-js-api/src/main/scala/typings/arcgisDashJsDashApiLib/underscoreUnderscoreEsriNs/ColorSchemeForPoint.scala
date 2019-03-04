@@ -81,18 +81,8 @@ object ColorSchemeForPoint {
     size: scala.Double,
     theme: java.lang.String
   ): ColorSchemeForPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("colorsForClassBreaks")(colorsForClassBreaks)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("outline")(outline)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(colors = colors, colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, outline = outline, propertyIsEnumerable = propertyIsEnumerable, size = size, theme = theme)
+  
     __obj.asInstanceOf[ColorSchemeForPoint]
   }
 }

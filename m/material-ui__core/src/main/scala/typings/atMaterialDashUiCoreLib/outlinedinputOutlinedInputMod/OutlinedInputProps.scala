@@ -25,8 +25,7 @@ object OutlinedInputProps {
     notched: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): OutlinedInputProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelWidth")(labelWidth)
+    val __obj = js.Dynamic.literal(labelWidth = labelWidth)
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

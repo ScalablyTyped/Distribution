@@ -27,10 +27,8 @@ object _Impl {
     transition: java.lang.String,
     variation: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("variation")(variation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration, transition = transition, variation = variation.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[_Impl]
   }
 }

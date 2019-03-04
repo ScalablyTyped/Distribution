@@ -55,28 +55,8 @@ object FilterControl {
     setDesignMode: js.Function1[scala.Boolean, scala.Unit],
     setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, scala.Boolean]
   ): FilterControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("Peer")(Peer)
-    __obj.updateDynamic("View")(View)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createPeer")(createPeer)
-    __obj.updateDynamic("createWithFormat")(createWithFormat)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getPeer")(getPeer)
-    __obj.updateDynamic("getView")(getView)
-    __obj.updateDynamic("isDesignMode")(isDesignMode)
-    __obj.updateDynamic("isTransparent")(isTransparent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setContext")(setContext)
-    __obj.updateDynamic("setDesignMode")(setDesignMode)
-    __obj.updateDynamic("setModel")(setModel)
+    val __obj = js.Dynamic.literal(Context = Context, Model = Model, Peer = Peer, View = View, acquire = acquire, addEventListener = addEventListener, createPeer = createPeer, createWithFormat = createWithFormat, dispose = dispose, getContext = getContext, getModel = getModel, getPeer = getPeer, getView = getView, isDesignMode = isDesignMode, isTransparent = isTransparent, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setContext = setContext, setDesignMode = setDesignMode, setModel = setModel)
+  
     __obj.asInstanceOf[FilterControl]
   }
 }

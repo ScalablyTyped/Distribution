@@ -12,8 +12,8 @@ trait ResultTransformationDetails extends js.Object {
 object ResultTransformationDetails {
   @scala.inline
   def apply(resultTemplate: java.lang.String): ResultTransformationDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resultTemplate")(resultTemplate)
+    val __obj = js.Dynamic.literal(resultTemplate = resultTemplate)
+  
     __obj.asInstanceOf[ResultTransformationDetails]
   }
 }

@@ -61,9 +61,7 @@ object Anon_AltAlwaysIncludeEmail {
     timeZone: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltAlwaysIncludeEmail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("eventId")(eventId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, eventId = eventId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(alwaysIncludeEmail)) __obj.updateDynamic("alwaysIncludeEmail")(alwaysIncludeEmail)
     if (fields != null) __obj.updateDynamic("fields")(fields)

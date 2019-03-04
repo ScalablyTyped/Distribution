@@ -38,8 +38,7 @@ object PresetLayoutOptions {
     stop: LayoutHandler = null,
     zoom: scala.Int | scala.Double = null
   ): PresetLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

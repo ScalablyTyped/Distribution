@@ -28,8 +28,7 @@ object PMDMessage {
     timestamp: scala.Int | scala.Double = null,
     version: java.lang.String = null
   ): PMDMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(messageType = messageType)
     if (instrument != null) __obj.updateDynamic("instrument")(instrument)
     if (orderNumber != null) __obj.updateDynamic("orderNumber")(orderNumber.asInstanceOf[js.Any])
     if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])

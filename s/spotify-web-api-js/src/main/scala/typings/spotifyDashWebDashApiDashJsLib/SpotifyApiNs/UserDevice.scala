@@ -24,10 +24,8 @@ object UserDevice {
     id: java.lang.String = null,
     volume_percent: scala.Int | scala.Double = null
   ): UserDevice = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("is_active")(is_active)
-    __obj.updateDynamic("is_restricted")(is_restricted)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(is_active = is_active, is_restricted = is_restricted, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (volume_percent != null) __obj.updateDynamic("volume_percent")(volume_percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDevice]

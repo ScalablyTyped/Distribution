@@ -36,12 +36,8 @@ object XPropertySetRegistry {
     release: js.Function0[scala.Unit],
     removePropertySet: js.Function1[java.lang.String, scala.Unit]
   ): XPropertySetRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("openPropertySet")(openPropertySet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertySet")(removePropertySet)
+    val __obj = js.Dynamic.literal(acquire = acquire, openPropertySet = openPropertySet, queryInterface = queryInterface, release = release, removePropertySet = removePropertySet)
+  
     __obj.asInstanceOf[XPropertySetRegistry]
   }
 }

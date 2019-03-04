@@ -26,9 +26,7 @@ object Cookie {
     isSecure: js.UndefOr[scala.Boolean] = js.undefined,
     path: java.lang.String = null
   ): Cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
     if (!js.isUndefined(isHttpOnly)) __obj.updateDynamic("isHttpOnly")(isHttpOnly)

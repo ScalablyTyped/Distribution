@@ -30,16 +30,8 @@ object BaseLayerPickerViewModel {
     terrainProviderViewModels: js.Array[ProviderViewModel],
     toggleDropDown: Command
   ): BaseLayerPickerViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonImageUrl")(buttonImageUrl)
-    __obj.updateDynamic("buttonTooltip")(buttonTooltip)
-    __obj.updateDynamic("dropDownVisible")(dropDownVisible)
-    __obj.updateDynamic("globe")(globe)
-    __obj.updateDynamic("imageryProviderViewModels")(imageryProviderViewModels)
-    __obj.updateDynamic("selectedImagery")(selectedImagery)
-    __obj.updateDynamic("selectedTerrain")(selectedTerrain)
-    __obj.updateDynamic("terrainProviderViewModels")(terrainProviderViewModels)
-    __obj.updateDynamic("toggleDropDown")(toggleDropDown)
+    val __obj = js.Dynamic.literal(buttonImageUrl = buttonImageUrl, buttonTooltip = buttonTooltip, dropDownVisible = dropDownVisible, globe = globe, imageryProviderViewModels = imageryProviderViewModels, selectedImagery = selectedImagery, selectedTerrain = selectedTerrain, terrainProviderViewModels = terrainProviderViewModels, toggleDropDown = toggleDropDown)
+  
     __obj.asInstanceOf[BaseLayerPickerViewModel]
   }
 }

@@ -13,9 +13,8 @@ trait Plane extends js.Object {
 object Plane {
   @scala.inline
   def apply(distance: scala.Double, normal: Cartesian3): Plane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("normal")(normal)
+    val __obj = js.Dynamic.literal(distance = distance, normal = normal)
+  
     __obj.asInstanceOf[Plane]
   }
 }

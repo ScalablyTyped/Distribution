@@ -28,12 +28,7 @@ object StateCore {
     StringDictionary: /** Return any for a yet untyped property */
   /* undocumented */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): StateCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("md")(md)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(env = env, level = level, md = md, src = src, tokens = tokens)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[StateCore]
   }

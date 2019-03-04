@@ -23,10 +23,8 @@ object TransformationMethod2 {
     ],
     setLengthChangesAllowed: js.Function1[scala.Boolean, scala.Unit]
   ): TransformationMethod2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTransformation")(getTransformation)
-    __obj.updateDynamic("onFocusChanged")(onFocusChanged)
-    __obj.updateDynamic("setLengthChangesAllowed")(setLengthChangesAllowed)
+    val __obj = js.Dynamic.literal(getTransformation = getTransformation, onFocusChanged = onFocusChanged, setLengthChangesAllowed = setLengthChangesAllowed)
+  
     __obj.asInstanceOf[TransformationMethod2]
   }
 }

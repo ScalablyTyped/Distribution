@@ -12,8 +12,8 @@ trait Anon_TableName extends js.Object {
 object Anon_TableName {
   @scala.inline
   def apply(TableName: java.lang.String): Anon_TableName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(TableName = TableName)
+  
     __obj.asInstanceOf[Anon_TableName]
   }
 }

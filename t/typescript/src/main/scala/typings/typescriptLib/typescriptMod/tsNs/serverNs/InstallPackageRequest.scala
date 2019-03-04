@@ -21,12 +21,8 @@ object InstallPackageRequest {
     projectName: java.lang.String,
     projectRootPath: typescriptLib.typescriptMod.tsNs.Path
   ): InstallPackageRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("packageName")(packageName)
-    __obj.updateDynamic("projectName")(projectName)
-    __obj.updateDynamic("projectRootPath")(projectRootPath)
+    val __obj = js.Dynamic.literal(fileName = fileName, kind = kind, packageName = packageName, projectName = projectName, projectRootPath = projectRootPath)
+  
     __obj.asInstanceOf[InstallPackageRequest]
   }
 }

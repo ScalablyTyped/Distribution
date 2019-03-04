@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueCharacterGrouping {
     items: winrtDashUwpLib.WindowsNs.GlobalizationNs.CollationNs.CharacterGrouping,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueCharacterGrouping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueCharacterGrouping]
   }
 }

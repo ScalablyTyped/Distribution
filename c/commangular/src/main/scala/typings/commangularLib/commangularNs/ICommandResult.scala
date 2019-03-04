@@ -20,8 +20,8 @@ trait ICommandResult extends js.Object {
 object ICommandResult {
   @scala.inline
   def apply(lastResult: js.Any): ICommandResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastResult")(lastResult)
+    val __obj = js.Dynamic.literal(lastResult = lastResult)
+  
     __obj.asInstanceOf[ICommandResult]
   }
 }

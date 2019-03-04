@@ -37,12 +37,8 @@ object INDStreamParser {
     notifier: NDStreamParserNotifier,
     parseData: js.Function1[js.Array[scala.Double], scala.Unit]
   ): INDStreamParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginOfStream")(beginOfStream)
-    __obj.updateDynamic("endOfStream")(endOfStream)
-    __obj.updateDynamic("getStreamInformation")(getStreamInformation)
-    __obj.updateDynamic("notifier")(notifier)
-    __obj.updateDynamic("parseData")(parseData)
+    val __obj = js.Dynamic.literal(beginOfStream = beginOfStream, endOfStream = endOfStream, getStreamInformation = getStreamInformation, notifier = notifier, parseData = parseData)
+  
     __obj.asInstanceOf[INDStreamParser]
   }
 }

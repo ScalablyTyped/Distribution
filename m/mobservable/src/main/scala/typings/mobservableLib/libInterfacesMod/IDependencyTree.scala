@@ -20,10 +20,7 @@ object IDependencyTree {
     name: java.lang.String,
     dependencies: js.Array[IDependencyTree] = null
   ): IDependencyTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(context = context, id = id, name = name)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     __obj.asInstanceOf[IDependencyTree]
   }

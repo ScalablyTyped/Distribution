@@ -13,9 +13,8 @@ trait Anon_RenderedEl extends js.Object {
 object Anon_RenderedEl {
   @scala.inline
   def apply(renderedEl: js.Any, renderedText: js.Any): Anon_RenderedEl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderedEl")(renderedEl)
-    __obj.updateDynamic("renderedText")(renderedText)
+    val __obj = js.Dynamic.literal(renderedEl = renderedEl, renderedText = renderedText)
+  
     __obj.asInstanceOf[Anon_RenderedEl]
   }
 }

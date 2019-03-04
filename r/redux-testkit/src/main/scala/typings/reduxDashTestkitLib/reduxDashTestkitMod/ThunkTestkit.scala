@@ -12,8 +12,8 @@ trait ThunkTestkit extends js.Object {
 object ThunkTestkit {
   @scala.inline
   def apply(execute: js.Function1[/* repeated */ js.Any, js.Any]): ThunkTestkit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[ThunkTestkit]
   }
 }

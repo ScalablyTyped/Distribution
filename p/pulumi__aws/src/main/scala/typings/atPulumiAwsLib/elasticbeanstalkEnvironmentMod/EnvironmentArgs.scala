@@ -101,8 +101,7 @@ object EnvironmentArgs {
     version: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = null,
     waitForReadyTimeout: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EnvironmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     if (cnamePrefix != null) __obj.updateDynamic("cnamePrefix")(cnamePrefix.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

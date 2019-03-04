@@ -56,28 +56,7 @@ object ContainerInspectInfo {
     State: dockerodeLib.Anon_Dead,
     ExecIDs: js.Any = null
   ): ContainerInspectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AppArmorProfile")(AppArmorProfile)
-    __obj.updateDynamic("Args")(Args)
-    __obj.updateDynamic("Config")(Config)
-    __obj.updateDynamic("Created")(Created)
-    __obj.updateDynamic("Driver")(Driver)
-    __obj.updateDynamic("GraphDriver")(GraphDriver)
-    __obj.updateDynamic("HostConfig")(HostConfig)
-    __obj.updateDynamic("HostnamePath")(HostnamePath)
-    __obj.updateDynamic("HostsPath")(HostsPath)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Image")(Image)
-    __obj.updateDynamic("LogPath")(LogPath)
-    __obj.updateDynamic("MountLabel")(MountLabel)
-    __obj.updateDynamic("Mounts")(Mounts)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NetworkSettings")(NetworkSettings)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("ProcessLabel")(ProcessLabel)
-    __obj.updateDynamic("ResolvConfPath")(ResolvConfPath)
-    __obj.updateDynamic("RestartCount")(RestartCount)
-    __obj.updateDynamic("State")(State)
+    val __obj = js.Dynamic.literal(AppArmorProfile = AppArmorProfile, Args = Args, Config = Config, Created = Created, Driver = Driver, GraphDriver = GraphDriver, HostConfig = HostConfig, HostnamePath = HostnamePath, HostsPath = HostsPath, Id = Id, Image = Image, LogPath = LogPath, MountLabel = MountLabel, Mounts = Mounts, Name = Name, NetworkSettings = NetworkSettings, Path = Path, ProcessLabel = ProcessLabel, ResolvConfPath = ResolvConfPath, RestartCount = RestartCount, State = State)
     if (ExecIDs != null) __obj.updateDynamic("ExecIDs")(ExecIDs)
     __obj.asInstanceOf[ContainerInspectInfo]
   }

@@ -24,13 +24,8 @@ object MUIDataTableMeta {
     tableData: js.Array[MUIDataTableData],
     tableState: MUIDataTableState
   ): MUIDataTableMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnData")(columnData)
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("rowData")(rowData)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("tableData")(tableData)
-    __obj.updateDynamic("tableState")(tableState)
+    val __obj = js.Dynamic.literal(columnData = columnData, columnIndex = columnIndex, rowData = rowData, rowIndex = rowIndex, tableData = tableData, tableState = tableState)
+  
     __obj.asInstanceOf[MUIDataTableMeta]
   }
 }

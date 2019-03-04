@@ -73,16 +73,8 @@ object XConnection {
     release: js.Function0[scala.Unit],
     write: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(Description = Description, acquire = acquire, close = close, flush = flush, getDescription = getDescription, queryInterface = queryInterface, read = read, release = release, write = write)
+  
     __obj.asInstanceOf[XConnection]
   }
 }

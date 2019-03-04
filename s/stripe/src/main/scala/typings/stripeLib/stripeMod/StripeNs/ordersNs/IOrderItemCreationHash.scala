@@ -45,8 +45,7 @@ object IOrderItemCreationHash {
     quantity: scala.Int | scala.Double = null,
     `type`: stripeLib.stripeLibStrings.sku | stripeLib.stripeLibStrings.tax | stripeLib.stripeLibStrings.shipping | stripeLib.stripeLibStrings.discount = null
   ): IOrderItemCreationHash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (description != null) __obj.updateDynamic("description")(description)

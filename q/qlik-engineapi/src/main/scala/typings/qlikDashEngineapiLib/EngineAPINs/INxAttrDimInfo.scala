@@ -46,12 +46,8 @@ object INxAttrDimInfo {
     qLocked: scala.Boolean,
     qSize: scala.Double
   ): INxAttrDimInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qError")(qError)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qLocked")(qLocked)
-    __obj.updateDynamic("qSize")(qSize)
+    val __obj = js.Dynamic.literal(qCardinal = qCardinal, qError = qError, qFallbackTitle = qFallbackTitle, qLocked = qLocked, qSize = qSize)
+  
     __obj.asInstanceOf[INxAttrDimInfo]
   }
 }

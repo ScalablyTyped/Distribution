@@ -31,9 +31,8 @@ object INotifyDisposing {
     add_disposing: js.Function1[js.Function, scala.Unit],
     remove_disposing: js.Function1[js.Function, scala.Unit]
   ): INotifyDisposing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add_disposing")(add_disposing)
-    __obj.updateDynamic("remove_disposing")(remove_disposing)
+    val __obj = js.Dynamic.literal(add_disposing = add_disposing, remove_disposing = remove_disposing)
+  
     __obj.asInstanceOf[INotifyDisposing]
   }
 }

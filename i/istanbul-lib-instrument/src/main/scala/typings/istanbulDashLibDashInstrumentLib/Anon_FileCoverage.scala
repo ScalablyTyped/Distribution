@@ -16,9 +16,8 @@ object Anon_FileCoverage {
     fileCoverage: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.FileCoverage,
     sourceMappingURL: java.lang.String
   ): Anon_FileCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileCoverage")(fileCoverage)
-    __obj.updateDynamic("sourceMappingURL")(sourceMappingURL)
+    val __obj = js.Dynamic.literal(fileCoverage = fileCoverage, sourceMappingURL = sourceMappingURL)
+  
     __obj.asInstanceOf[Anon_FileCoverage]
   }
 }

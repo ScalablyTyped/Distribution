@@ -28,15 +28,8 @@ object TinderMessage {
     timestamp: scala.Double,
     to: java.lang.String
   ): TinderMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("created_date")(created_date)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("match_id")(match_id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sent_date")(sent_date)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(_id = _id, created_date = created_date, from = from, match_id = match_id, message = message, sent_date = sent_date, timestamp = timestamp, to = to)
+  
     __obj.asInstanceOf[TinderMessage]
   }
 }

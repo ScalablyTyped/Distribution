@@ -47,14 +47,8 @@ object WorkItemQueryClause {
     operator: WorkItemFieldOperation,
     value: java.lang.String
   ): WorkItemQueryClause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clauses")(clauses)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("fieldValue")(fieldValue)
-    __obj.updateDynamic("isFieldValue")(isFieldValue)
-    __obj.updateDynamic("logicalOperator")(logicalOperator)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(clauses = clauses, field = field, fieldValue = fieldValue, isFieldValue = isFieldValue, logicalOperator = logicalOperator, operator = operator, value = value)
+  
     __obj.asInstanceOf[WorkItemQueryClause]
   }
 }

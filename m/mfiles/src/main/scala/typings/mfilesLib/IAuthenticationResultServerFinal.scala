@@ -12,8 +12,8 @@ trait IAuthenticationResultServerFinal extends js.Object {
 object IAuthenticationResultServerFinal {
   @scala.inline
   def apply(ServerConnection: mfilesLib.MFilesNs.MFServerConnection): IAuthenticationResultServerFinal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ServerConnection")(ServerConnection)
+    val __obj = js.Dynamic.literal(ServerConnection = ServerConnection)
+  
     __obj.asInstanceOf[IAuthenticationResultServerFinal]
   }
 }

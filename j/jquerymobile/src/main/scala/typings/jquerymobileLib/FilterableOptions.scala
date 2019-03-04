@@ -30,8 +30,7 @@ object FilterableOptions {
     filterReveal: js.UndefOr[scala.Boolean] = js.undefined,
     filterTheme: java.lang.String = null
   ): FilterableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(defaults)) __obj.updateDynamic("defaults")(defaults)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

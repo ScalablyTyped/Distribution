@@ -154,9 +154,7 @@ object ImagingStudy {
     started: dateTime = null,
     text: Narrative = null
   ): ImagingStudy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(patient = patient, uid = uid)
     if (_availability != null) __obj.updateDynamic("_availability")(_availability)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -29,12 +29,8 @@ object XAutoStylesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAutoStylesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoStyles")(AutoStyles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAutoStyles")(getAutoStyles)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(AutoStyles = AutoStyles, acquire = acquire, getAutoStyles = getAutoStyles, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAutoStylesSupplier]
   }
 }

@@ -18,10 +18,8 @@ object MasteryTreeDto {
     Offense: js.Array[MasteryTreeListDto],
     Utility: js.Array[MasteryTreeListDto]
   ): MasteryTreeDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Defense")(Defense)
-    __obj.updateDynamic("Offense")(Offense)
-    __obj.updateDynamic("Utility")(Utility)
+    val __obj = js.Dynamic.literal(Defense = Defense, Offense = Offense, Utility = Utility)
+  
     __obj.asInstanceOf[MasteryTreeDto]
   }
 }

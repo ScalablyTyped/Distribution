@@ -19,12 +19,8 @@ object AdBuilder {
     withMobileFinalUrl: js.Function1[java.lang.String, T],
     withTrackingTemplate: js.Function1[java.lang.String, T]
   ): AdBuilder[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withFinalUrl")(withFinalUrl)
-    __obj.updateDynamic("withMobileFinalUrl")(withMobileFinalUrl)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(build = build, withCustomParameters = withCustomParameters, withFinalUrl = withFinalUrl, withMobileFinalUrl = withMobileFinalUrl, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[AdBuilder[T]]
   }
 }

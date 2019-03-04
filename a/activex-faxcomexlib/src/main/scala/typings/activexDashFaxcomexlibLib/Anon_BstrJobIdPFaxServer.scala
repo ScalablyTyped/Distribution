@@ -13,9 +13,8 @@ trait Anon_BstrJobIdPFaxServer extends js.Object {
 object Anon_BstrJobIdPFaxServer {
   @scala.inline
   def apply(bstrJobId: java.lang.String, pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer): Anon_BstrJobIdPFaxServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrJobId")(bstrJobId)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
+    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId, pFaxServer = pFaxServer)
+  
     __obj.asInstanceOf[Anon_BstrJobIdPFaxServer]
   }
 }

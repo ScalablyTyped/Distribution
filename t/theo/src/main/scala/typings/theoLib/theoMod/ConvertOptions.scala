@@ -20,9 +20,7 @@ object ConvertOptions {
     resolveAliases: js.UndefOr[scala.Boolean] = js.undefined,
     resolveMetaAliases: js.UndefOr[scala.Boolean] = js.undefined
   ): ConvertOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(format = format, transform = transform)
     if (!js.isUndefined(resolveAliases)) __obj.updateDynamic("resolveAliases")(resolveAliases)
     if (!js.isUndefined(resolveMetaAliases)) __obj.updateDynamic("resolveMetaAliases")(resolveMetaAliases)
     __obj.asInstanceOf[ConvertOptions]

@@ -31,15 +31,8 @@ object BuildVersion {
     sourceRepositoryType: java.lang.String,
     sourceVersion: java.lang.String
   ): BuildVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitMessage")(commitMessage)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sourceBranch")(sourceBranch)
-    __obj.updateDynamic("sourcePullRequestId")(sourcePullRequestId)
-    __obj.updateDynamic("sourceRepositoryId")(sourceRepositoryId)
-    __obj.updateDynamic("sourceRepositoryType")(sourceRepositoryType)
-    __obj.updateDynamic("sourceVersion")(sourceVersion)
+    val __obj = js.Dynamic.literal(commitMessage = commitMessage, id = id, name = name, sourceBranch = sourceBranch, sourcePullRequestId = sourcePullRequestId, sourceRepositoryId = sourceRepositoryId, sourceRepositoryType = sourceRepositoryType, sourceVersion = sourceVersion)
+  
     __obj.asInstanceOf[BuildVersion]
   }
 }

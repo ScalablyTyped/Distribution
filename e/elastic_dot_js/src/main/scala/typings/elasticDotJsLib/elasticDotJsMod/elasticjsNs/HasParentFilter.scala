@@ -58,16 +58,8 @@ object HasParentFilter {
     scope: js.Function1[java.lang.String, HasParentFilter],
     toJSON: js.Function0[HasParentFilter]
   ): HasParentFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentType")(parentType)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, parentType = parentType, query = query, scope = scope, toJSON = toJSON)
+  
     __obj.asInstanceOf[HasParentFilter]
   }
 }

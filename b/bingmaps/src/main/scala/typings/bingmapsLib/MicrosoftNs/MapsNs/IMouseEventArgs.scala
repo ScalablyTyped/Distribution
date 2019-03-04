@@ -58,21 +58,8 @@ object IMouseEventArgs {
     targetType: java.lang.String,
     wheelDelta: scala.Double
   ): IMouseEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("getX")(getX)
-    __obj.updateDynamic("getY")(getY)
-    __obj.updateDynamic("isPrimary")(isPrimary)
-    __obj.updateDynamic("isSecondary")(isSecondary)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("primitive")(primitive)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetType")(targetType)
-    __obj.updateDynamic("wheelDelta")(wheelDelta)
+    val __obj = js.Dynamic.literal(eventName = eventName, getX = getX, getY = getY, isPrimary = isPrimary, isSecondary = isSecondary, layer = layer, location = location, pageX = pageX, pageY = pageY, point = point, primitive = primitive, target = target.asInstanceOf[js.Any], targetType = targetType, wheelDelta = wheelDelta)
+  
     __obj.asInstanceOf[IMouseEventArgs]
   }
 }

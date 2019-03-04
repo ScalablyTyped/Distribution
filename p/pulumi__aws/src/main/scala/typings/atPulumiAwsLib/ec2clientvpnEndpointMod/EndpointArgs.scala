@@ -49,11 +49,7 @@ object EndpointArgs {
     dnsServers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     transportProtocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EndpointArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticationOptions")(authenticationOptions.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientCidrBlock")(clientCidrBlock.asInstanceOf[js.Any])
-    __obj.updateDynamic("connectionLogOptions")(connectionLogOptions.asInstanceOf[js.Any])
-    __obj.updateDynamic("serverCertificateArn")(serverCertificateArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authenticationOptions = authenticationOptions.asInstanceOf[js.Any], clientCidrBlock = clientCidrBlock.asInstanceOf[js.Any], connectionLogOptions = connectionLogOptions.asInstanceOf[js.Any], serverCertificateArn = serverCertificateArn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
     if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])

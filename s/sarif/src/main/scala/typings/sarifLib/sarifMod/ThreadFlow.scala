@@ -33,8 +33,7 @@ object ThreadFlow {
     message: Message = null,
     properties: PropertyBag = null
   ): ThreadFlow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locations")(locations)
+    val __obj = js.Dynamic.literal(locations = locations)
     if (id != null) __obj.updateDynamic("id")(id)
     if (message != null) __obj.updateDynamic("message")(message)
     if (properties != null) __obj.updateDynamic("properties")(properties)

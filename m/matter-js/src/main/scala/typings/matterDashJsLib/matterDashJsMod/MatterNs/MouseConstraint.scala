@@ -57,11 +57,8 @@ object MouseConstraint {
     mouse: Mouse,
     `type`: java.lang.String
   ): MouseConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("collisionFilter")(collisionFilter)
-    __obj.updateDynamic("constraint")(constraint)
-    __obj.updateDynamic("mouse")(mouse)
+    val __obj = js.Dynamic.literal(body = body, collisionFilter = collisionFilter, constraint = constraint, mouse = mouse)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MouseConstraint]
   }
 }

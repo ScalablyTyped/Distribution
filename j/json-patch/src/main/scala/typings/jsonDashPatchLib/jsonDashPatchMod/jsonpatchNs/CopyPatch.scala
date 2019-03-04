@@ -15,10 +15,8 @@ trait CopyPatch
 object CopyPatch {
   @scala.inline
   def apply(from: java.lang.String, op: jsonDashPatchLib.jsonDashPatchLibStrings.copy, path: java.lang.String): CopyPatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(from = from, op = op, path = path)
+  
     __obj.asInstanceOf[CopyPatch]
   }
 }

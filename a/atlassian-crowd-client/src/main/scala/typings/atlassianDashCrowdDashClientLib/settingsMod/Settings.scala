@@ -26,9 +26,7 @@ object Settings {
     nesting: js.UndefOr[scala.Boolean] = js.undefined,
     sessionTimeout: scala.Int | scala.Double = null
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("baseUrl")(baseUrl)
+    val __obj = js.Dynamic.literal(application = application, baseUrl = baseUrl)
     if (attributesEncoder != null) __obj.updateDynamic("attributesEncoder")(attributesEncoder)
     if (attributesParser != null) __obj.updateDynamic("attributesParser")(attributesParser)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)

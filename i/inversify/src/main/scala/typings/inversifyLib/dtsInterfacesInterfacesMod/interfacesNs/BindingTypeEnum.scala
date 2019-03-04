@@ -28,15 +28,8 @@ object BindingTypeEnum {
     Invalid: BindingType,
     Provider: BindingType
   ): BindingTypeEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConstantValue")(ConstantValue)
-    __obj.updateDynamic("Constructor")(Constructor)
-    __obj.updateDynamic("DynamicValue")(DynamicValue)
-    __obj.updateDynamic("Factory")(Factory)
-    __obj.updateDynamic("Function")(Function)
-    __obj.updateDynamic("Instance")(Instance)
-    __obj.updateDynamic("Invalid")(Invalid)
-    __obj.updateDynamic("Provider")(Provider)
+    val __obj = js.Dynamic.literal(ConstantValue = ConstantValue, Constructor = Constructor, DynamicValue = DynamicValue, Factory = Factory, Function = Function, Instance = Instance, Invalid = Invalid, Provider = Provider)
+  
     __obj.asInstanceOf[BindingTypeEnum]
   }
 }

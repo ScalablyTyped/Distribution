@@ -51,13 +51,8 @@ object ASPxClientWeekOfMonth {
     Second: scala.Double,
     Third: scala.Double
   ): ASPxClientWeekOfMonth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("First")(First)
-    __obj.updateDynamic("Fourth")(Fourth)
-    __obj.updateDynamic("Last")(Last)
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("Second")(Second)
-    __obj.updateDynamic("Third")(Third)
+    val __obj = js.Dynamic.literal(First = First, Fourth = Fourth, Last = Last, None = None, Second = Second, Third = Third)
+  
     __obj.asInstanceOf[ASPxClientWeekOfMonth]
   }
 }

@@ -24,13 +24,8 @@ object ScatterLine {
     smoothing: scala.Double,
     width: scala.Double
   ): ScatterLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.updateDynamic("dash")(dash)
-    __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    __obj.updateDynamic("simplify")(simplify)
-    __obj.updateDynamic("smoothing")(smoothing)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], dash = dash, shape = shape.asInstanceOf[js.Any], simplify = simplify, smoothing = smoothing, width = width)
+  
     __obj.asInstanceOf[ScatterLine]
   }
 }

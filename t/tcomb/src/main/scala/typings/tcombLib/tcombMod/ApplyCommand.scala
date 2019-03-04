@@ -13,8 +13,8 @@ trait ApplyCommand extends js.Object {
 object ApplyCommand {
   @scala.inline
   def apply($apply: js.Function): ApplyCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$apply")($apply)
+    val __obj = js.Dynamic.literal($apply = $apply)
+  
     __obj.asInstanceOf[ApplyCommand]
   }
 }

@@ -24,10 +24,8 @@ trait ASPxClientTreeListBatchEditEndEditingEventArgs extends ASPxClientCancelEve
 object ASPxClientTreeListBatchEditEndEditingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, nodeKey: java.lang.String, nodeValues: js.Object): ASPxClientTreeListBatchEditEndEditingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("nodeKey")(nodeKey)
-    __obj.updateDynamic("nodeValues")(nodeValues)
+    val __obj = js.Dynamic.literal(cancel = cancel, nodeKey = nodeKey, nodeValues = nodeValues)
+  
     __obj.asInstanceOf[ASPxClientTreeListBatchEditEndEditingEventArgs]
   }
 }

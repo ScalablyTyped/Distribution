@@ -37,9 +37,8 @@ object symbologyType {
     cloneScheme: js.Function1[TypeScheme, TypeScheme],
     getSchemes: js.Function1[typeGetSchemesParams, TypeSchemes]
   ): symbologyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneScheme")(cloneScheme)
-    __obj.updateDynamic("getSchemes")(getSchemes)
+    val __obj = js.Dynamic.literal(cloneScheme = cloneScheme, getSchemes = getSchemes)
+  
     __obj.asInstanceOf[symbologyType]
   }
 }

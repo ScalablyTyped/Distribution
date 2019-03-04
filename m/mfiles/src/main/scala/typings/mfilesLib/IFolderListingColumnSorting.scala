@@ -20,11 +20,8 @@ object IFolderListingColumnSorting {
     Index: scala.Double,
     SortAscending: scala.Boolean
   ): IFolderListingColumnSorting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("SortAscending")(SortAscending)
+    val __obj = js.Dynamic.literal(Clone = Clone, ID = ID, Index = Index, SortAscending = SortAscending)
+  
     __obj.asInstanceOf[IFolderListingColumnSorting]
   }
 }

@@ -33,9 +33,8 @@ object NanoEvents {
       js.Function0[scala.Unit]
     ]
   ): NanoEvents[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(emit = emit, on = on)
+  
     __obj.asInstanceOf[NanoEvents[T]]
   }
 }

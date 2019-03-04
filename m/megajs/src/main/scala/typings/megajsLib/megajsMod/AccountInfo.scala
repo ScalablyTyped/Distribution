@@ -26,13 +26,8 @@ object AccountInfo {
     spaceUsed: scala.Double,
     `type`: java.lang.String
   ): AccountInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("downloadBandwidthTotal")(downloadBandwidthTotal)
-    __obj.updateDynamic("downloadBandwidthUsed")(downloadBandwidthUsed)
-    __obj.updateDynamic("sharedBandwidthLimit")(sharedBandwidthLimit)
-    __obj.updateDynamic("sharedBandwidthUsed")(sharedBandwidthUsed)
-    __obj.updateDynamic("spaceTotal")(spaceTotal)
-    __obj.updateDynamic("spaceUsed")(spaceUsed)
+    val __obj = js.Dynamic.literal(downloadBandwidthTotal = downloadBandwidthTotal, downloadBandwidthUsed = downloadBandwidthUsed, sharedBandwidthLimit = sharedBandwidthLimit, sharedBandwidthUsed = sharedBandwidthUsed, spaceTotal = spaceTotal, spaceUsed = spaceUsed)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AccountInfo]
   }
 }

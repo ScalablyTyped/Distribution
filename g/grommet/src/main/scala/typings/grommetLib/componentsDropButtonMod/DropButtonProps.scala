@@ -38,8 +38,7 @@ object DropButtonProps {
     onOpen: js.Function1[/* repeated */ js.Any, _] = null,
     open: js.UndefOr[scala.Boolean] = js.undefined
   ): DropButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropContent")(dropContent)
+    val __obj = js.Dynamic.literal(dropContent = dropContent)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

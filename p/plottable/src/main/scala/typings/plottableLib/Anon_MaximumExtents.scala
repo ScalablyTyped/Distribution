@@ -28,9 +28,8 @@ object Anon_MaximumExtents {
       plottableLib.buildSrcUtilsStackingUtilsMod.StackExtent[D]
     ]
   ): Anon_MaximumExtents[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maximumExtents")(maximumExtents)
-    __obj.updateDynamic("minimumExtents")(minimumExtents)
+    val __obj = js.Dynamic.literal(maximumExtents = maximumExtents, minimumExtents = minimumExtents)
+  
     __obj.asInstanceOf[Anon_MaximumExtents[D]]
   }
 }

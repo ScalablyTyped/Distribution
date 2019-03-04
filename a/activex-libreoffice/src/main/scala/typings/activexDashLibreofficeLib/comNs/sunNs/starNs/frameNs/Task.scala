@@ -56,39 +56,8 @@ object Task {
     setName: js.Function1[java.lang.String, scala.Unit],
     tileWindows: js.Function0[scala.Unit]
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComponentWindow")(ComponentWindow)
-    __obj.updateDynamic("ContainerWindow")(ContainerWindow)
-    __obj.updateDynamic("Controller")(Controller)
-    __obj.updateDynamic("Creator")(Creator)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addFrameActionListener")(addFrameActionListener)
-    __obj.updateDynamic("arrangeWindowsHorizontal")(arrangeWindowsHorizontal)
-    __obj.updateDynamic("arrangeWindowsVertical")(arrangeWindowsVertical)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("contextChanged")(contextChanged)
-    __obj.updateDynamic("deactivate")(deactivate)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("findFrame")(findFrame)
-    __obj.updateDynamic("getComponentWindow")(getComponentWindow)
-    __obj.updateDynamic("getContainerWindow")(getContainerWindow)
-    __obj.updateDynamic("getController")(getController)
-    __obj.updateDynamic("getCreator")(getCreator)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isTop")(isTop)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeFrameActionListener")(removeFrameActionListener)
-    __obj.updateDynamic("setComponent")(setComponent)
-    __obj.updateDynamic("setCreator")(setCreator)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("tileWindows")(tileWindows)
+    val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow, ContainerWindow = ContainerWindow, Controller = Controller, Creator = Creator, Name = Name, acquire = acquire, activate = activate, addEventListener = addEventListener, addFrameActionListener = addFrameActionListener, arrangeWindowsHorizontal = arrangeWindowsHorizontal, arrangeWindowsVertical = arrangeWindowsVertical, close = close, contextChanged = contextChanged, deactivate = deactivate, dispose = dispose, findFrame = findFrame, getComponentWindow = getComponentWindow, getContainerWindow = getContainerWindow, getController = getController, getCreator = getCreator, getName = getName, initialize = initialize, isActive = isActive, isTop = isTop, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFrameActionListener = removeFrameActionListener, setComponent = setComponent, setCreator = setCreator, setName = setName, tileWindows = tileWindows)
+  
     __obj.asInstanceOf[Task]
   }
 }

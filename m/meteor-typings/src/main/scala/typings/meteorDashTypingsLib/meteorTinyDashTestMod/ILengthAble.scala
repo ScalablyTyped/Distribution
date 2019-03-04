@@ -12,8 +12,8 @@ trait ILengthAble extends js.Object {
 object ILengthAble {
   @scala.inline
   def apply(length: scala.Double): ILengthAble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(length = length)
+  
     __obj.asInstanceOf[ILengthAble]
   }
 }

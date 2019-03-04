@@ -12,8 +12,8 @@ trait Plugin extends js.Object {
 object Plugin {
   @scala.inline
   def apply(hooks: org.scalablytyped.runtime.StringDictionary[js.Promise[_]]): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hooks")(hooks)
+    val __obj = js.Dynamic.literal(hooks = hooks)
+  
     __obj.asInstanceOf[Plugin]
   }
 }

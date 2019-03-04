@@ -42,16 +42,8 @@ object GetNatGatewayResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetNatGatewayResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocationId")(allocationId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId)
-    __obj.updateDynamic("privateIp")(privateIp)
-    __obj.updateDynamic("publicIp")(publicIp)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("subnetId")(subnetId)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(allocationId = allocationId, id = id, networkInterfaceId = networkInterfaceId, privateIp = privateIp, publicIp = publicIp, state = state, subnetId = subnetId, tags = tags, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetNatGatewayResult]
   }
 }

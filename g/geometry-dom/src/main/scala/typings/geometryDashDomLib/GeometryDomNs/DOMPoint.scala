@@ -16,12 +16,8 @@ object DOMPoint {
     y: scala.Double,
     z: scala.Double
   ): DOMPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matrixTransform")(matrixTransform)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(matrixTransform = matrixTransform, w = w, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[DOMPoint]
   }
 }

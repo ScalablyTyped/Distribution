@@ -26,9 +26,8 @@ object TracesResource {
     ],
     spans: SpansResource
   ): TracesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchWrite")(batchWrite)
-    __obj.updateDynamic("spans")(spans)
+    val __obj = js.Dynamic.literal(batchWrite = batchWrite, spans = spans)
+  
     __obj.asInstanceOf[TracesResource]
   }
 }

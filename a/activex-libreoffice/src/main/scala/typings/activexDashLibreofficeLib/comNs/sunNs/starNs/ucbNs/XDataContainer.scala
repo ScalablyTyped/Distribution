@@ -87,28 +87,8 @@ object XDataContainer {
     setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
     setDataURL: js.Function1[java.lang.String, scala.Unit]
   ): XDataContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("DataURL")(DataURL)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getDataURL")(getDataURL)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByIndex")(insertByIndex)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
-    __obj.updateDynamic("setContentType")(setContentType)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("setDataURL")(setDataURL)
+    val __obj = js.Dynamic.literal(ContentType = ContentType, Count = Count, Data = Data, DataURL = DataURL, ElementType = ElementType, acquire = acquire, getByIndex = getByIndex, getContentType = getContentType, getCount = getCount, getData = getData, getDataURL = getDataURL, getElementType = getElementType, hasElements = hasElements, insertByIndex = insertByIndex, queryInterface = queryInterface, release = release, removeByIndex = removeByIndex, replaceByIndex = replaceByIndex, setContentType = setContentType, setData = setData, setDataURL = setDataURL)
+  
     __obj.asInstanceOf[XDataContainer]
   }
 }

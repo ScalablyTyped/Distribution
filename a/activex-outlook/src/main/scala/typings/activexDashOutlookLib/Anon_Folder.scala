@@ -12,8 +12,8 @@ trait Anon_Folder extends js.Object {
 object Anon_Folder {
   @scala.inline
   def apply(Folder: activexDashOutlookLib.OutlookNs.Folder): Anon_Folder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Folder")(Folder)
+    val __obj = js.Dynamic.literal(Folder = Folder)
+  
     __obj.asInstanceOf[Anon_Folder]
   }
 }

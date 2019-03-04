@@ -23,11 +23,8 @@ object XDrawPageSummarizer {
     release: js.Function0[scala.Unit],
     summarize: js.Function1[XDrawPages, XDrawPage]
   ): XDrawPageSummarizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("summarize")(summarize)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, summarize = summarize)
+  
     __obj.asInstanceOf[XDrawPageSummarizer]
   }
 }

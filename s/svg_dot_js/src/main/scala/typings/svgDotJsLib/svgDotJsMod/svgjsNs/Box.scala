@@ -37,19 +37,8 @@ object Box {
     y: scala.Double,
     y2: scala.Double
   ): Box = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cx")(cx)
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("transform")(transform)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(cx = cx, cy = cy, h = h, height = height, merge = merge, transform = transform, w = w, width = width, x = x, x2 = x2, y = y, y2 = y2)
+  
     __obj.asInstanceOf[Box]
   }
 }

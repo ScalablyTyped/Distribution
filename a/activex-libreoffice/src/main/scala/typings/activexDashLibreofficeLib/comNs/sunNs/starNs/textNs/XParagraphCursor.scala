@@ -62,32 +62,8 @@ object XParagraphCursor {
     release: js.Function0[scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XParagraphCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("Start")(Start)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("collapseToEnd")(collapseToEnd)
-    __obj.updateDynamic("collapseToStart")(collapseToStart)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("goLeft")(goLeft)
-    __obj.updateDynamic("goRight")(goRight)
-    __obj.updateDynamic("gotoEnd")(gotoEnd)
-    __obj.updateDynamic("gotoEndOfParagraph")(gotoEndOfParagraph)
-    __obj.updateDynamic("gotoNextParagraph")(gotoNextParagraph)
-    __obj.updateDynamic("gotoPreviousParagraph")(gotoPreviousParagraph)
-    __obj.updateDynamic("gotoRange")(gotoRange)
-    __obj.updateDynamic("gotoStart")(gotoStart)
-    __obj.updateDynamic("gotoStartOfParagraph")(gotoStartOfParagraph)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
-    __obj.updateDynamic("isEndOfParagraph")(isEndOfParagraph)
-    __obj.updateDynamic("isStartOfParagraph")(isStartOfParagraph)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(End = End, Start = Start, String = String, acquire = acquire, collapseToEnd = collapseToEnd, collapseToStart = collapseToStart, getEnd = getEnd, getStart = getStart, getString = getString, getText = getText, goLeft = goLeft, goRight = goRight, gotoEnd = gotoEnd, gotoEndOfParagraph = gotoEndOfParagraph, gotoNextParagraph = gotoNextParagraph, gotoPreviousParagraph = gotoPreviousParagraph, gotoRange = gotoRange, gotoStart = gotoStart, gotoStartOfParagraph = gotoStartOfParagraph, isCollapsed = isCollapsed, isEndOfParagraph = isEndOfParagraph, isStartOfParagraph = isStartOfParagraph, queryInterface = queryInterface, release = release, setString = setString)
+  
     __obj.asInstanceOf[XParagraphCursor]
   }
 }

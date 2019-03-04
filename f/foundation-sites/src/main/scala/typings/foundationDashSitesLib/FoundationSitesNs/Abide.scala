@@ -39,20 +39,8 @@ object Abide {
     validateRadio: js.Function1[java.lang.String, scala.Boolean],
     validateText: js.Function2[foundationDashSitesLib.JQuery, java.lang.String, scala.Boolean]
   ): Abide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addErrorClasses")(addErrorClasses)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("findFormError")(findFormError)
-    __obj.updateDynamic("findLabel")(findLabel)
-    __obj.updateDynamic("matchValidation")(matchValidation)
-    __obj.updateDynamic("removeErrorClasses")(removeErrorClasses)
-    __obj.updateDynamic("removeRadioErrorClasses")(removeRadioErrorClasses)
-    __obj.updateDynamic("requiredChecked")(requiredChecked)
-    __obj.updateDynamic("resetForm")(resetForm)
-    __obj.updateDynamic("validateForm")(validateForm)
-    __obj.updateDynamic("validateInput")(validateInput)
-    __obj.updateDynamic("validateRadio")(validateRadio)
-    __obj.updateDynamic("validateText")(validateText)
+    val __obj = js.Dynamic.literal(addErrorClasses = addErrorClasses, destroy = destroy, findFormError = findFormError, findLabel = findLabel, matchValidation = matchValidation, removeErrorClasses = removeErrorClasses, removeRadioErrorClasses = removeRadioErrorClasses, requiredChecked = requiredChecked, resetForm = resetForm, validateForm = validateForm, validateInput = validateInput, validateRadio = validateRadio, validateText = validateText)
+  
     __obj.asInstanceOf[Abide]
   }
 }

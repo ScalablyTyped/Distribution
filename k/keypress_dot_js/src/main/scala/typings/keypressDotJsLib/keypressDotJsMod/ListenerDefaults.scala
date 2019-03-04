@@ -28,15 +28,8 @@ object ListenerDefaults {
     prevent_default: scala.Boolean,
     prevent_repeat: scala.Boolean
   ): ListenerDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("is_counting")(is_counting)
-    __obj.updateDynamic("is_exclusive")(is_exclusive)
-    __obj.updateDynamic("is_sequence")(is_sequence)
-    __obj.updateDynamic("is_solitary")(is_solitary)
-    __obj.updateDynamic("is_unordered")(is_unordered)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("prevent_default")(prevent_default)
-    __obj.updateDynamic("prevent_repeat")(prevent_repeat)
+    val __obj = js.Dynamic.literal(is_counting = is_counting, is_exclusive = is_exclusive, is_sequence = is_sequence, is_solitary = is_solitary, is_unordered = is_unordered, keys = keys, prevent_default = prevent_default, prevent_repeat = prevent_repeat)
+  
     __obj.asInstanceOf[ListenerDefaults]
   }
 }

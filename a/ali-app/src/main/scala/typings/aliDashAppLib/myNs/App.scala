@@ -21,9 +21,7 @@ object App {
     getCurrentPage: js.Function0[Page],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
+    val __obj = js.Dynamic.literal(data = data, getCurrentPage = getCurrentPage)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[App]
   }

@@ -46,9 +46,7 @@ object Diagnostic {
     severity: DiagnosticSeverity = null,
     source: java.lang.String = null
   ): Diagnostic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(message = message, range = range)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (relatedInformation != null) __obj.updateDynamic("relatedInformation")(relatedInformation)
     if (severity != null) __obj.updateDynamic("severity")(severity)

@@ -26,11 +26,7 @@ trait Resource[T /* <: ResourceConstant */] extends RoomObject {
 object Resource {
   @scala.inline
   def apply[T /* <: ResourceConstant */](amount: scala.Double, id: java.lang.String, pos: RoomPosition, resourceType: T, room: Room = null): Resource[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, id = id, pos = pos, resourceType = resourceType.asInstanceOf[js.Any])
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Resource[T]]
   }

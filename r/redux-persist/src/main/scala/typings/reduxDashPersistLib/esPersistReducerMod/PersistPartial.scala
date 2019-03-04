@@ -12,8 +12,8 @@ trait PersistPartial extends js.Object {
 object PersistPartial {
   @scala.inline
   def apply(_persist: reduxDashPersistLib.esTypesMod.PersistState): PersistPartial = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_persist")(_persist)
+    val __obj = js.Dynamic.literal(_persist = _persist)
+  
     __obj.asInstanceOf[PersistPartial]
   }
 }

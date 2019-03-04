@@ -16,9 +16,8 @@ object CompileEntryComponentMetadata {
     componentFactory: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | js.Object,
     componentType: js.Any
   ): CompileEntryComponentMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentFactory")(componentFactory.asInstanceOf[js.Any])
-    __obj.updateDynamic("componentType")(componentType)
+    val __obj = js.Dynamic.literal(componentFactory = componentFactory.asInstanceOf[js.Any], componentType = componentType)
+  
     __obj.asInstanceOf[CompileEntryComponentMetadata]
   }
 }

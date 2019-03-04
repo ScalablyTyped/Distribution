@@ -12,8 +12,8 @@ trait MKRadioButtonGroup extends js.Object {
 object MKRadioButtonGroup {
   @scala.inline
   def apply(buttons: js.Array[_]): MKRadioButtonGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
+    val __obj = js.Dynamic.literal(buttons = buttons)
+  
     __obj.asInstanceOf[MKRadioButtonGroup]
   }
 }

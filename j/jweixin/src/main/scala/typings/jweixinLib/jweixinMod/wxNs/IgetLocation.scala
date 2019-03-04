@@ -20,8 +20,8 @@ object IgetLocation {
     complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IgetLocation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[IgetLocation]

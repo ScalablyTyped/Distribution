@@ -15,9 +15,8 @@ trait ItemOptions extends js.Object {
 object ItemOptions {
   @scala.inline
   def apply(message: java.lang.String, title: java.lang.String): ItemOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(message = message, title = title)
+  
     __obj.asInstanceOf[ItemOptions]
   }
 }

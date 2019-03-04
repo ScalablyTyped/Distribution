@@ -18,9 +18,7 @@ object ReductionContext {
     prime: MPrime,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ReductionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("prime")(prime)
+    val __obj = js.Dynamic.literal(m = m, prime = prime)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ReductionContext]
   }

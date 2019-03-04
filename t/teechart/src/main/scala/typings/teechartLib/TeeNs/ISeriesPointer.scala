@@ -26,14 +26,8 @@ object ISeriesPointer {
     visible: scala.Boolean,
     width: scala.Double
   ): ISeriesPointer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("colorEach")(colorEach)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(chart = chart, colorEach = colorEach, format = format, height = height, style = style, visible = visible, width = width)
+  
     __obj.asInstanceOf[ISeriesPointer]
   }
 }

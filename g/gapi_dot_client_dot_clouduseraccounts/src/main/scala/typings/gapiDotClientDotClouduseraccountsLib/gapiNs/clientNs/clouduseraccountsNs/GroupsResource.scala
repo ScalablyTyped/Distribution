@@ -66,16 +66,8 @@ object GroupsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
     ]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addMember")(addMember)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("removeMember")(removeMember)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(addMember = addMember, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, removeMember = removeMember, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[GroupsResource]
   }
 }

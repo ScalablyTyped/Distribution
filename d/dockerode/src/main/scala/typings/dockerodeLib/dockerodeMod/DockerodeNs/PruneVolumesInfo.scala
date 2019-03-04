@@ -13,9 +13,8 @@ trait PruneVolumesInfo extends js.Object {
 object PruneVolumesInfo {
   @scala.inline
   def apply(SpaceReclaimed: scala.Double, VolumesDeleted: js.Array[java.lang.String]): PruneVolumesInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SpaceReclaimed")(SpaceReclaimed)
-    __obj.updateDynamic("VolumesDeleted")(VolumesDeleted)
+    val __obj = js.Dynamic.literal(SpaceReclaimed = SpaceReclaimed, VolumesDeleted = VolumesDeleted)
+  
     __obj.asInstanceOf[PruneVolumesInfo]
   }
 }

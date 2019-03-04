@@ -29,18 +29,8 @@ object PlaylistObjectSimplified {
     `type`: spotifyDashApiLib.spotifyDashApiLibStrings.playlist,
     uri: java.lang.String
   ): PlaylistObjectSimplified = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("collaborative")(collaborative)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("snapshot_id")(snapshot_id)
-    __obj.updateDynamic("tracks")(tracks)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(collaborative = collaborative, external_urls = external_urls, href = href, id = id, images = images, name = name, owner = owner, public = public, snapshot_id = snapshot_id, tracks = tracks, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PlaylistObjectSimplified]
   }
 }

@@ -43,10 +43,7 @@ object MapViewGoToOptions {
     duration: scala.Int | scala.Double = null,
     easing: java.lang.String | js.Function = null
   ): MapViewGoToOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])

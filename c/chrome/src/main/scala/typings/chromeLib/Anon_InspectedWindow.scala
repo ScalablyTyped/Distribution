@@ -39,10 +39,8 @@ object Anon_InspectedWindow {
     networkNs: Anon_CallbackGetHAR,
     panelsNs: Anon_CallbackCreate
   ): Anon_InspectedWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inspectedWindowNs")(inspectedWindowNs)
-    __obj.updateDynamic("networkNs")(networkNs)
-    __obj.updateDynamic("panelsNs")(panelsNs)
+    val __obj = js.Dynamic.literal(inspectedWindowNs = inspectedWindowNs, networkNs = networkNs, panelsNs = panelsNs)
+  
     __obj.asInstanceOf[Anon_InspectedWindow]
   }
 }

@@ -30,11 +30,8 @@ object RevisionTag {
     Identifier: java.lang.String,
     TimeStamp: DateTime
   ): RevisionTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("Comment")(Comment)
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("TimeStamp")(TimeStamp)
+    val __obj = js.Dynamic.literal(Author = Author, Comment = Comment, Identifier = Identifier, TimeStamp = TimeStamp)
+  
     __obj.asInstanceOf[RevisionTag]
   }
 }

@@ -25,10 +25,8 @@ object KnockoutComputedContext {
     isInitial: js.Function0[scala.Boolean],
     isSleeping: scala.Boolean
   ): KnockoutComputedContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDependenciesCount")(getDependenciesCount)
-    __obj.updateDynamic("isInitial")(isInitial)
-    __obj.updateDynamic("isSleeping")(isSleeping)
+    val __obj = js.Dynamic.literal(getDependenciesCount = getDependenciesCount, isInitial = isInitial, isSleeping = isSleeping)
+  
     __obj.asInstanceOf[KnockoutComputedContext]
   }
 }

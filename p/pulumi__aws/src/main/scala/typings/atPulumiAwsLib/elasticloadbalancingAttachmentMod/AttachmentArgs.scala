@@ -22,9 +22,8 @@ object AttachmentArgs {
     elb: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     instance: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): AttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
-    __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(elb = elb.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AttachmentArgs]
   }
 }

@@ -24,9 +24,8 @@ object DetectionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DetectionsListResponse]
     ]
   ): DetectionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detect")(detect)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(detect = detect, list = list)
+  
     __obj.asInstanceOf[DetectionsResource]
   }
 }

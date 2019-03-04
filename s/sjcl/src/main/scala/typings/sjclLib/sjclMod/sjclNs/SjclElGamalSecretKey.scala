@@ -17,10 +17,8 @@ object SjclElGamalSecretKey {
     get: js.Function0[BitArray],
     unkem: js.Function1[BitArray, BitArray]
   ): SjclElGamalSecretKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dh")(dh)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("unkem")(unkem)
+    val __obj = js.Dynamic.literal(dh = dh, get = get, unkem = unkem)
+  
     __obj.asInstanceOf[SjclElGamalSecretKey]
   }
 }

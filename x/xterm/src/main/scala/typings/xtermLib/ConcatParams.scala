@@ -25,11 +25,7 @@ object ConcatParams {
     privateInfo: stdLib.Uint8Array = null,
     publicInfo: stdLib.Uint8Array = null
   ): ConcatParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmId")(algorithmId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("partyUInfo")(partyUInfo)
-    __obj.updateDynamic("partyVInfo")(partyVInfo)
+    val __obj = js.Dynamic.literal(algorithmId = algorithmId, name = name, partyUInfo = partyUInfo, partyVInfo = partyVInfo)
     if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
     if (privateInfo != null) __obj.updateDynamic("privateInfo")(privateInfo)
     if (publicInfo != null) __obj.updateDynamic("publicInfo")(publicInfo)

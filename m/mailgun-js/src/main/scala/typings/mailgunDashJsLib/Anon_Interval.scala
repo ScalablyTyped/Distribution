@@ -13,9 +13,8 @@ trait Anon_Interval extends js.Object {
 object Anon_Interval {
   @scala.inline
   def apply(interval: scala.Double, times: scala.Double): Anon_Interval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("times")(times)
+    val __obj = js.Dynamic.literal(interval = interval, times = times)
+  
     __obj.asInstanceOf[Anon_Interval]
   }
 }

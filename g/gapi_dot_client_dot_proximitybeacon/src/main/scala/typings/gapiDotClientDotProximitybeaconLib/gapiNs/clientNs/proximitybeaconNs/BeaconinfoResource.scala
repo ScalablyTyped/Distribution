@@ -23,8 +23,8 @@ object BeaconinfoResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
     ]
   ): BeaconinfoResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getforobserved")(getforobserved)
+    val __obj = js.Dynamic.literal(getforobserved = getforobserved)
+  
     __obj.asInstanceOf[BeaconinfoResource]
   }
 }

@@ -20,11 +20,8 @@ object AltStore {
     listen: js.Function1[js.Function1[/* state */ S, _], js.Function0[scala.Unit]],
     unlisten: js.Function1[js.Function1[/* state */ S, _], scala.Unit]
   ): AltStore[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emitChange")(emitChange)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("unlisten")(unlisten)
+    val __obj = js.Dynamic.literal(emitChange = emitChange, getState = getState, listen = listen, unlisten = unlisten)
+  
     __obj.asInstanceOf[AltStore[S]]
   }
 }

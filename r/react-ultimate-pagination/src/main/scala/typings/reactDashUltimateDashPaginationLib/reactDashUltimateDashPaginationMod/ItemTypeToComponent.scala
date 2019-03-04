@@ -42,13 +42,8 @@ object ItemTypeToComponent {
     PAGE: reactLib.reactMod.ReactNs.ComponentType[PaginationComponentProps],
     PREVIOUS_PAGE_LINK: reactLib.reactMod.ReactNs.ComponentType[PaginationComponentProps]
   ): ItemTypeToComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ELLIPSIS")(ELLIPSIS.asInstanceOf[js.Any])
-    __obj.updateDynamic("FIRST_PAGE_LINK")(FIRST_PAGE_LINK.asInstanceOf[js.Any])
-    __obj.updateDynamic("LAST_PAGE_LINK")(LAST_PAGE_LINK.asInstanceOf[js.Any])
-    __obj.updateDynamic("NEXT_PAGE_LINK")(NEXT_PAGE_LINK.asInstanceOf[js.Any])
-    __obj.updateDynamic("PAGE")(PAGE.asInstanceOf[js.Any])
-    __obj.updateDynamic("PREVIOUS_PAGE_LINK")(PREVIOUS_PAGE_LINK.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ELLIPSIS = ELLIPSIS.asInstanceOf[js.Any], FIRST_PAGE_LINK = FIRST_PAGE_LINK.asInstanceOf[js.Any], LAST_PAGE_LINK = LAST_PAGE_LINK.asInstanceOf[js.Any], NEXT_PAGE_LINK = NEXT_PAGE_LINK.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], PREVIOUS_PAGE_LINK = PREVIOUS_PAGE_LINK.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ItemTypeToComponent]
   }
 }

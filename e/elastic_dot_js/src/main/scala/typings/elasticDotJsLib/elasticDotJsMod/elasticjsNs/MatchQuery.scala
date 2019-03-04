@@ -142,24 +142,8 @@ object MatchQuery {
     `type`: js.Function1[java.lang.String, MatchQuery],
     zeroTermsQuery: js.Function1[java.lang.String, MatchQuery]
   ): MatchQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("cutoffFrequency")(cutoffFrequency)
-    __obj.updateDynamic("fuzziness")(fuzziness)
-    __obj.updateDynamic("fuzzyRewrite")(fuzzyRewrite)
-    __obj.updateDynamic("fuzzyTranspositions")(fuzzyTranspositions)
-    __obj.updateDynamic("lenient")(lenient)
-    __obj.updateDynamic("maxExpansions")(maxExpansions)
-    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("prefixLength")(prefixLength)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("slop")(slop)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("zeroTermsQuery")(zeroTermsQuery)
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, cutoffFrequency = cutoffFrequency, fuzziness = fuzziness, fuzzyRewrite = fuzzyRewrite, fuzzyTranspositions = fuzzyTranspositions, lenient = lenient, maxExpansions = maxExpansions, minimumShouldMatch = minimumShouldMatch, operator = operator, prefixLength = prefixLength, query = query, rewrite = rewrite, slop = slop, toJSON = toJSON, zeroTermsQuery = zeroTermsQuery)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MatchQuery]
   }
 }

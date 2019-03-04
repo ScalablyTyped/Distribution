@@ -56,24 +56,8 @@ object User {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("DependentTextFields")(DependentTextFields)
-    __obj.updateDynamic("InstanceName")(InstanceName)
-    __obj.updateDynamic("IsExpression")(IsExpression)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Content = Content, DependentTextFields = DependentTextFields, InstanceName = InstanceName, IsExpression = IsExpression, Name = Name, PropertySetInfo = PropertySetInfo, Value = Value, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[User]
   }
 }

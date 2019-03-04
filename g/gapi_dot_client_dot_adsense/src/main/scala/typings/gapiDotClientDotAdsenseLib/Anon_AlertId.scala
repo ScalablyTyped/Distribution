@@ -39,8 +39,7 @@ object Anon_AlertId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AlertId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alertId")(alertId)
+    val __obj = js.Dynamic.literal(alertId = alertId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

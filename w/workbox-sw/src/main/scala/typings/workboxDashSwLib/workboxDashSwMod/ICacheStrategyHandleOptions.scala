@@ -17,8 +17,8 @@ object ICacheStrategyHandleOptions {
   def apply(
     event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ): ICacheStrategyHandleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[ICacheStrategyHandleOptions]
   }
 }

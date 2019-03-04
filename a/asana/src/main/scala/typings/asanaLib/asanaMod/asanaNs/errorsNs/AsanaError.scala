@@ -20,11 +20,7 @@ object AsanaError {
     value: js.Any,
     stack: java.lang.String = null
   ): AsanaError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(code = code, message = message, name = name, value = value)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[AsanaError]
   }

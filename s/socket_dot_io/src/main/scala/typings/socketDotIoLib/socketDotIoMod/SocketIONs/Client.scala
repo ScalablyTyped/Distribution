@@ -48,13 +48,8 @@ object Client {
     server: Server,
     sockets: org.scalablytyped.runtime.StringDictionary[Socket]
   ): Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conn")(conn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("nsps")(nsps)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("sockets")(sockets)
+    val __obj = js.Dynamic.literal(conn = conn, id = id, nsps = nsps, request = request, server = server, sockets = sockets)
+  
     __obj.asInstanceOf[Client]
   }
 }

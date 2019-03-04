@@ -45,18 +45,8 @@ object DatabaseGetResponse {
     sizes: nanoLib.Anon_Active,
     update_seq: scala.Double
   ): DatabaseGetResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compact_running")(compact_running)
-    __obj.updateDynamic("data_size")(data_size)
-    __obj.updateDynamic("db_name")(db_name)
-    __obj.updateDynamic("disk_format_version")(disk_format_version)
-    __obj.updateDynamic("disk_size")(disk_size)
-    __obj.updateDynamic("doc_count")(doc_count)
-    __obj.updateDynamic("doc_del_count")(doc_del_count)
-    __obj.updateDynamic("instance_start_time")(instance_start_time)
-    __obj.updateDynamic("purge_seq")(purge_seq)
-    __obj.updateDynamic("sizes")(sizes)
-    __obj.updateDynamic("update_seq")(update_seq)
+    val __obj = js.Dynamic.literal(compact_running = compact_running, data_size = data_size, db_name = db_name, disk_format_version = disk_format_version, disk_size = disk_size, doc_count = doc_count, doc_del_count = doc_del_count, instance_start_time = instance_start_time, purge_seq = purge_seq, sizes = sizes, update_seq = update_seq)
+  
     __obj.asInstanceOf[DatabaseGetResponse]
   }
 }

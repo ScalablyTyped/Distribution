@@ -30,15 +30,7 @@ object Anon_Client {
     Version: java.lang.String,
     GroupingKey: java.lang.String = null
   ): Anon_Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Client")(Client)
-    __obj.updateDynamic("Environment")(Environment)
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("Request")(Request)
-    __obj.updateDynamic("Tags")(Tags)
-    __obj.updateDynamic("User")(User)
-    __obj.updateDynamic("UserCustomData")(UserCustomData)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Client = Client, Environment = Environment, Error = Error, Request = Request, Tags = Tags, User = User, UserCustomData = UserCustomData, Version = Version)
     if (GroupingKey != null) __obj.updateDynamic("GroupingKey")(GroupingKey)
     __obj.asInstanceOf[Anon_Client]
   }

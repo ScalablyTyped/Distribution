@@ -28,10 +28,8 @@ trait INxGetObjectOptions extends js.Object {
 object INxGetObjectOptions {
   @scala.inline
   def apply(qData: js.Any, qIncludeSessionObjects: scala.Boolean, qTypes: js.Array[java.lang.String]): INxGetObjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qData")(qData)
-    __obj.updateDynamic("qIncludeSessionObjects")(qIncludeSessionObjects)
-    __obj.updateDynamic("qTypes")(qTypes)
+    val __obj = js.Dynamic.literal(qData = qData, qIncludeSessionObjects = qIncludeSessionObjects, qTypes = qTypes)
+  
     __obj.asInstanceOf[INxGetObjectOptions]
   }
 }

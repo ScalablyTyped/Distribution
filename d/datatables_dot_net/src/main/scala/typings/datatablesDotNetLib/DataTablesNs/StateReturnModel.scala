@@ -24,13 +24,8 @@ object StateReturnModel {
     start: scala.Double,
     time: scala.Double
   ): StateReturnModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(columns = columns, length = length, order = order, search = search, start = start, time = time)
+  
     __obj.asInstanceOf[StateReturnModel]
   }
 }

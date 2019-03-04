@@ -20,10 +20,7 @@ object DebugInfo {
     uuid: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): DebugInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("millis")(millis)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(millis = millis, operation = operation, uuid = uuid)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[DebugInfo]
   }

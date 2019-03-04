@@ -38,9 +38,8 @@ object RelayProfiler {
       scala.Unit
     ]
   ): RelayProfiler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachAggregateHandler")(attachAggregateHandler)
-    __obj.updateDynamic("attachProfileHandler")(attachProfileHandler)
+    val __obj = js.Dynamic.literal(attachAggregateHandler = attachAggregateHandler, attachProfileHandler = attachProfileHandler)
+  
     __obj.asInstanceOf[RelayProfiler]
   }
 }

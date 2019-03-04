@@ -20,11 +20,8 @@ object ArtifactInstanceData {
     tfsUrl: java.lang.String,
     version: java.lang.String
   ): ArtifactInstanceData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountName")(accountName)
-    __obj.updateDynamic("authenticationToken")(authenticationToken)
-    __obj.updateDynamic("tfsUrl")(tfsUrl)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(accountName = accountName, authenticationToken = authenticationToken, tfsUrl = tfsUrl, version = version)
+  
     __obj.asInstanceOf[ArtifactInstanceData]
   }
 }

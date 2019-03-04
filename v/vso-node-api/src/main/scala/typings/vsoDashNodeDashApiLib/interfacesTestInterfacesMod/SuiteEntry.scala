@@ -32,11 +32,8 @@ object SuiteEntry {
     suiteId: scala.Double,
     testCaseId: scala.Double
   ): SuiteEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childSuiteId")(childSuiteId)
-    __obj.updateDynamic("sequenceNumber")(sequenceNumber)
-    __obj.updateDynamic("suiteId")(suiteId)
-    __obj.updateDynamic("testCaseId")(testCaseId)
+    val __obj = js.Dynamic.literal(childSuiteId = childSuiteId, sequenceNumber = sequenceNumber, suiteId = suiteId, testCaseId = testCaseId)
+  
     __obj.asInstanceOf[SuiteEntry]
   }
 }

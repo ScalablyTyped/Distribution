@@ -133,8 +133,7 @@ object IAlertProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: scala.Int | scala.Double = null
   ): IAlertProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (!js.isUndefined(canEscapeKeyCancel)) __obj.updateDynamic("canEscapeKeyCancel")(canEscapeKeyCancel)
     if (!js.isUndefined(canOutsideClickCancel)) __obj.updateDynamic("canOutsideClickCancel")(canOutsideClickCancel)
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)

@@ -23,12 +23,8 @@ object CollectionSessionStorage {
     prune: js.Function0[js.Array[java.lang.String]],
     save: js.Function1[Session, Session]
   ): CollectionSessionStorage = {
-    val __obj = js.Dynamic.literal(`new` = `new`)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("forClient")(forClient)
-    __obj.updateDynamic("fromClient")(fromClient)
-    __obj.updateDynamic("prune")(prune)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(clear = clear, forClient = forClient, fromClient = fromClient, prune = prune, save = save)
+    __obj.updateDynamic("new")(`new`)
     __obj.asInstanceOf[CollectionSessionStorage]
   }
 }

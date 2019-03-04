@@ -36,22 +36,7 @@ object SubChoreography {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): SubChoreography = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("correlationKeys")(correlationKeys)
-    __obj.updateDynamic("flowElements")(flowElements)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incoming")(incoming)
-    __obj.updateDynamic("initiatingParticipantRef")(initiatingParticipantRef)
-    __obj.updateDynamic("laneSets")(laneSets)
-    __obj.updateDynamic("lanes")(lanes)
-    __obj.updateDynamic("loopType")(loopType)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("outgoing")(outgoing)
-    __obj.updateDynamic("participantRef")(participantRef)
+    val __obj = js.Dynamic.literal($type = $type, artifacts = artifacts, auditing = auditing, categoryValueRef = categoryValueRef, correlationKeys = correlationKeys, flowElements = flowElements, id = id, incoming = incoming, initiatingParticipantRef = initiatingParticipantRef, laneSets = laneSets, lanes = lanes, loopType = loopType, monitoring = monitoring, outgoing = outgoing, participantRef = participantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

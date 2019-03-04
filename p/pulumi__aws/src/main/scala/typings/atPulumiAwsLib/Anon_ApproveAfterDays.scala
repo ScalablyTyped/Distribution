@@ -20,9 +20,7 @@ object Anon_ApproveAfterDays {
     complianceLevel: java.lang.String = null,
     enableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ApproveAfterDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approveAfterDays")(approveAfterDays)
-    __obj.updateDynamic("patchFilters")(patchFilters)
+    val __obj = js.Dynamic.literal(approveAfterDays = approveAfterDays, patchFilters = patchFilters)
     if (complianceLevel != null) __obj.updateDynamic("complianceLevel")(complianceLevel)
     if (!js.isUndefined(enableNonSecurity)) __obj.updateDynamic("enableNonSecurity")(enableNonSecurity)
     __obj.asInstanceOf[Anon_ApproveAfterDays]

@@ -20,9 +20,8 @@ trait StorageEngine extends js.Object {
 object StorageEngine {
   @scala.inline
   def apply(load: js.Function0[js.Thenable[_]], save: js.Function1[js.Any, js.Thenable[_]]): StorageEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(load = load, save = save)
+  
     __obj.asInstanceOf[StorageEngine]
   }
 }

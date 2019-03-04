@@ -40,21 +40,8 @@ object LocalResult {
     radius: scala.Double,
     suggestions: js.Array[java.lang.String]
   ): LocalResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("getCityList")(getCityList)
-    __obj.updateDynamic("getCurrentNumPois")(getCurrentNumPois)
-    __obj.updateDynamic("getNumPages")(getNumPages)
-    __obj.updateDynamic("getNumPois")(getNumPois)
-    __obj.updateDynamic("getPageIndex")(getPageIndex)
-    __obj.updateDynamic("getPoi")(getPoi)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("moreResultsUrl")(moreResultsUrl)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("suggestions")(suggestions)
+    val __obj = js.Dynamic.literal(bounds = bounds, center = center, city = city, getCityList = getCityList, getCurrentNumPois = getCurrentNumPois, getNumPages = getNumPages, getNumPois = getNumPois, getPageIndex = getPageIndex, getPoi = getPoi, keyword = keyword, moreResultsUrl = moreResultsUrl, province = province, radius = radius, suggestions = suggestions)
+  
     __obj.asInstanceOf[LocalResult]
   }
 }

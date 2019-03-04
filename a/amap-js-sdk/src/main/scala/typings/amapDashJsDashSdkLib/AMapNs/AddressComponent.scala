@@ -38,20 +38,8 @@ object AddressComponent {
     streetNumber: java.lang.String,
     township: java.lang.String
   ): AddressComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("building")(building)
-    __obj.updateDynamic("buildingType")(buildingType)
-    __obj.updateDynamic("businessAreas")(businessAreas)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("neighborhood")(neighborhood)
-    __obj.updateDynamic("neighborhoodType")(neighborhoodType)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("streetNumber")(streetNumber)
-    __obj.updateDynamic("township")(township)
+    val __obj = js.Dynamic.literal(adcode = adcode, building = building, buildingType = buildingType, businessAreas = businessAreas, city = city, citycode = citycode, district = district, neighborhood = neighborhood, neighborhoodType = neighborhoodType, province = province, street = street, streetNumber = streetNumber, township = township)
+  
     __obj.asInstanceOf[AddressComponent]
   }
 }

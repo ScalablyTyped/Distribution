@@ -22,11 +22,7 @@ object CloudFormationCustomResourceResponseCommon {
     StackId: java.lang.String,
     Data: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): CloudFormationCustomResourceResponseCommon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LogicalResourceId")(LogicalResourceId)
-    __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId)
-    __obj.updateDynamic("RequestId")(RequestId)
-    __obj.updateDynamic("StackId")(StackId)
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, RequestId = RequestId, StackId = StackId)
     if (Data != null) __obj.updateDynamic("Data")(Data)
     __obj.asInstanceOf[CloudFormationCustomResourceResponseCommon]
   }

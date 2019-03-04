@@ -15,11 +15,8 @@ trait QualifiedName extends js.Object {
 object QualifiedName {
   @scala.inline
   def apply(local: java.lang.String, name: java.lang.String, prefix: java.lang.String, uri: java.lang.String): QualifiedName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(local = local, name = name, prefix = prefix, uri = uri)
+  
     __obj.asInstanceOf[QualifiedName]
   }
 }

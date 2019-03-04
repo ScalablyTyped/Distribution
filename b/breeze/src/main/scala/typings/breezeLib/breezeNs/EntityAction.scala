@@ -41,23 +41,8 @@ object EntityAction {
     getNames: js.Function0[js.Array[java.lang.String]],
     getSymbols: js.Function0[js.Array[breezeLib.breezeNs.coreNs.EnumSymbol]]
   ): EntityAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AcceptChanges")(AcceptChanges)
-    __obj.updateDynamic("Attach")(Attach)
-    __obj.updateDynamic("AttachOnImport")(AttachOnImport)
-    __obj.updateDynamic("AttachOnQuery")(AttachOnQuery)
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("Detach")(Detach)
-    __obj.updateDynamic("EntityStateChange")(EntityStateChange)
-    __obj.updateDynamic("MergeOnImport")(MergeOnImport)
-    __obj.updateDynamic("MergeOnQuery")(MergeOnQuery)
-    __obj.updateDynamic("MergeOnSave")(MergeOnSave)
-    __obj.updateDynamic("PropertyChange")(PropertyChange)
-    __obj.updateDynamic("RejectChanges")(RejectChanges)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("fromName")(fromName)
-    __obj.updateDynamic("getNames")(getNames)
-    __obj.updateDynamic("getSymbols")(getSymbols)
+    val __obj = js.Dynamic.literal(AcceptChanges = AcceptChanges, Attach = Attach, AttachOnImport = AttachOnImport, AttachOnQuery = AttachOnQuery, Clear = Clear, Detach = Detach, EntityStateChange = EntityStateChange, MergeOnImport = MergeOnImport, MergeOnQuery = MergeOnQuery, MergeOnSave = MergeOnSave, PropertyChange = PropertyChange, RejectChanges = RejectChanges, contains = contains, fromName = fromName, getNames = getNames, getSymbols = getSymbols)
+  
     __obj.asInstanceOf[EntityAction]
   }
 }

@@ -16,9 +16,8 @@ object Anon_READ {
     READ: chromeDashAppsLib.chromeDashAppsLibStrings.READ,
     WRITE: chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
   ): Anon_READ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("READ")(READ)
-    __obj.updateDynamic("WRITE")(WRITE)
+    val __obj = js.Dynamic.literal(READ = READ, WRITE = WRITE)
+  
     __obj.asInstanceOf[Anon_READ]
   }
 }

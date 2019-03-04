@@ -27,12 +27,8 @@ object LineBreakUserOptions {
     forbiddenBeginCharacters: java.lang.String,
     forbiddenEndCharacters: java.lang.String
   ): LineBreakUserOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowHyphenateEnglish")(allowHyphenateEnglish)
-    __obj.updateDynamic("allowPunctuationOutsideMargin")(allowPunctuationOutsideMargin)
-    __obj.updateDynamic("applyForbiddenRules")(applyForbiddenRules)
-    __obj.updateDynamic("forbiddenBeginCharacters")(forbiddenBeginCharacters)
-    __obj.updateDynamic("forbiddenEndCharacters")(forbiddenEndCharacters)
+    val __obj = js.Dynamic.literal(allowHyphenateEnglish = allowHyphenateEnglish, allowPunctuationOutsideMargin = allowPunctuationOutsideMargin, applyForbiddenRules = applyForbiddenRules, forbiddenBeginCharacters = forbiddenBeginCharacters, forbiddenEndCharacters = forbiddenEndCharacters)
+  
     __obj.asInstanceOf[LineBreakUserOptions]
   }
 }

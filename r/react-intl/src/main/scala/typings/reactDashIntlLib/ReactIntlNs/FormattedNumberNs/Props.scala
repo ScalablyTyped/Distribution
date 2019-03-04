@@ -29,8 +29,7 @@ object Props {
     style: java.lang.String = null,
     useGrouping: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (children != null) __obj.updateDynamic("children")(children)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay)

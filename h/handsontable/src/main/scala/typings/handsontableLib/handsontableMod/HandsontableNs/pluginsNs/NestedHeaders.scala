@@ -55,35 +55,8 @@ object NestedHeaders {
     settings: js.Array[_],
     setupColspanArray: js.Function0[scala.Unit]
   ): NestedHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("checkForFixedColumnsCollision")(checkForFixedColumnsCollision)
-    __obj.updateDynamic("checkForOverlappingHeaders")(checkForOverlappingHeaders)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("colspanArray")(colspanArray)
-    __obj.updateDynamic("columnHeaderLevelCount")(columnHeaderLevelCount)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("fillColspanArrayWithDummies")(fillColspanArrayWithDummies)
-    __obj.updateDynamic("fillTheRemainingColspans")(fillTheRemainingColspans)
-    __obj.updateDynamic("getChildHeaders")(getChildHeaders)
-    __obj.updateDynamic("getColspan")(getColspan)
-    __obj.updateDynamic("getNestedParent")(getNestedParent)
-    __obj.updateDynamic("ghostTable")(ghostTable)
-    __obj.updateDynamic("headerRendererFactory")(headerRendererFactory)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("levelToRowCoords")(levelToRowCoords)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("rowCoordsToLevel")(rowCoordsToLevel)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("setupColspanArray")(setupColspanArray)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, checkForFixedColumnsCollision = checkForFixedColumnsCollision, checkForOverlappingHeaders = checkForOverlappingHeaders, clearHooks = clearHooks, colspanArray = colspanArray, columnHeaderLevelCount = columnHeaderLevelCount, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, fillColspanArrayWithDummies = fillColspanArrayWithDummies, fillTheRemainingColspans = fillTheRemainingColspans, getChildHeaders = getChildHeaders, getColspan = getColspan, getNestedParent = getNestedParent, ghostTable = ghostTable, headerRendererFactory = headerRendererFactory, init = init, initialized = initialized, isPluginsReady = isPluginsReady, levelToRowCoords = levelToRowCoords, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, rowCoordsToLevel = rowCoordsToLevel, settings = settings, setupColspanArray = setupColspanArray)
+  
     __obj.asInstanceOf[NestedHeaders]
   }
 }

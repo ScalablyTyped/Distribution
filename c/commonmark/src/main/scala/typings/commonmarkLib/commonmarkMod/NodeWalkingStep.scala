@@ -19,9 +19,8 @@ trait NodeWalkingStep extends js.Object {
 object NodeWalkingStep {
   @scala.inline
   def apply(entering: scala.Boolean, node: Node): NodeWalkingStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entering")(entering)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(entering = entering, node = node)
+  
     __obj.asInstanceOf[NodeWalkingStep]
   }
 }

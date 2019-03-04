@@ -79,19 +79,8 @@ object XTextInputStream {
     setEncoding: js.Function1[java.lang.String, scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): XTextInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("isEOF")(isEOF)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readLine")(readLine)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("readString")(readString)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEncoding")(setEncoding)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, isEOF = isEOF, queryInterface = queryInterface, readBytes = readBytes, readLine = readLine, readSomeBytes = readSomeBytes, readString = readString, release = release, setEncoding = setEncoding, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[XTextInputStream]
   }
 }

@@ -32,8 +32,7 @@ object Middleware {
     partialsPath: js.Array[java.lang.String] | java.lang.String = null,
     templateOptions: js.Object = null
   ): Middleware = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("viewPath")(viewPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(viewPath = viewPath.asInstanceOf[js.Any])
     if (blockHelperName != null) __obj.updateDynamic("blockHelperName")(blockHelperName)
     if (contentHelperName != null) __obj.updateDynamic("contentHelperName")(contentHelperName)
     if (defaultLayout != null) __obj.updateDynamic("defaultLayout")(defaultLayout)

@@ -68,22 +68,8 @@ object XSheetCellRanges {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSheetCellRanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cells")(Cells)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("RangeAddresses")(RangeAddresses)
-    __obj.updateDynamic("RangeAddressesAsString")(RangeAddressesAsString)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCells")(getCells)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getRangeAddresses")(getRangeAddresses)
-    __obj.updateDynamic("getRangeAddressesAsString")(getRangeAddressesAsString)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Cells = Cells, Count = Count, ElementType = ElementType, RangeAddresses = RangeAddresses, RangeAddressesAsString = RangeAddressesAsString, acquire = acquire, getByIndex = getByIndex, getCells = getCells, getCount = getCount, getElementType = getElementType, getRangeAddresses = getRangeAddresses, getRangeAddressesAsString = getRangeAddressesAsString, hasElements = hasElements, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSheetCellRanges]
   }
 }

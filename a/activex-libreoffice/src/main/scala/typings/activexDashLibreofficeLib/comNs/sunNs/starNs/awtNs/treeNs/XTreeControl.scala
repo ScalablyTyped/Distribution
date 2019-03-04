@@ -191,41 +191,8 @@ object XTreeControl {
     startEditingAtNode: js.Function1[XTreeNode, scala.Unit],
     stopEditing: js.Function0[scala.Boolean]
   ): XTreeControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultCollapsedGraphicURL")(DefaultCollapsedGraphicURL)
-    __obj.updateDynamic("DefaultExpandedGraphicURL")(DefaultExpandedGraphicURL)
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("SelectionCount")(SelectionCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelection")(addSelection)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("addTreeEditListener")(addTreeEditListener)
-    __obj.updateDynamic("addTreeExpansionListener")(addTreeExpansionListener)
-    __obj.updateDynamic("cancelEditing")(cancelEditing)
-    __obj.updateDynamic("clearSelection")(clearSelection)
-    __obj.updateDynamic("collapseNode")(collapseNode)
-    __obj.updateDynamic("createReverseSelectionEnumeration")(createReverseSelectionEnumeration)
-    __obj.updateDynamic("createSelectionEnumeration")(createSelectionEnumeration)
-    __obj.updateDynamic("expandNode")(expandNode)
-    __obj.updateDynamic("getClosestNodeForLocation")(getClosestNodeForLocation)
-    __obj.updateDynamic("getNodeForLocation")(getNodeForLocation)
-    __obj.updateDynamic("getNodeRect")(getNodeRect)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("getSelectionCount")(getSelectionCount)
-    __obj.updateDynamic("isEditing")(isEditing)
-    __obj.updateDynamic("isNodeCollapsed")(isNodeCollapsed)
-    __obj.updateDynamic("isNodeExpanded")(isNodeExpanded)
-    __obj.updateDynamic("isNodeVisible")(isNodeVisible)
-    __obj.updateDynamic("makeNodeVisible")(makeNodeVisible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelection")(removeSelection)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("removeTreeEditListener")(removeTreeEditListener)
-    __obj.updateDynamic("removeTreeExpansionListener")(removeTreeExpansionListener)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("startEditingAtNode")(startEditingAtNode)
-    __obj.updateDynamic("stopEditing")(stopEditing)
+    val __obj = js.Dynamic.literal(DefaultCollapsedGraphicURL = DefaultCollapsedGraphicURL, DefaultExpandedGraphicURL = DefaultExpandedGraphicURL, Selection = Selection, SelectionCount = SelectionCount, acquire = acquire, addSelection = addSelection, addSelectionChangeListener = addSelectionChangeListener, addTreeEditListener = addTreeEditListener, addTreeExpansionListener = addTreeExpansionListener, cancelEditing = cancelEditing, clearSelection = clearSelection, collapseNode = collapseNode, createReverseSelectionEnumeration = createReverseSelectionEnumeration, createSelectionEnumeration = createSelectionEnumeration, expandNode = expandNode, getClosestNodeForLocation = getClosestNodeForLocation, getNodeForLocation = getNodeForLocation, getNodeRect = getNodeRect, getSelection = getSelection, getSelectionCount = getSelectionCount, isEditing = isEditing, isNodeCollapsed = isNodeCollapsed, isNodeExpanded = isNodeExpanded, isNodeVisible = isNodeVisible, makeNodeVisible = makeNodeVisible, queryInterface = queryInterface, release = release, removeSelection = removeSelection, removeSelectionChangeListener = removeSelectionChangeListener, removeTreeEditListener = removeTreeEditListener, removeTreeExpansionListener = removeTreeExpansionListener, select = select, startEditingAtNode = startEditingAtNode, stopEditing = stopEditing)
+  
     __obj.asInstanceOf[XTreeControl]
   }
 }

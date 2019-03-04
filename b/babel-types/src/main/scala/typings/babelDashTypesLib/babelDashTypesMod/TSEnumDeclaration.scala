@@ -34,12 +34,8 @@ object TSEnumDeclaration {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TSEnumDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, id = id, loc = loc, members = members, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(const)) __obj.updateDynamic("const")(const)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)

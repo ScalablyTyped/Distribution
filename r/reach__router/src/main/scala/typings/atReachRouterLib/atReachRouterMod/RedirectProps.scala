@@ -22,8 +22,7 @@ object RedirectProps {
     replace: js.UndefOr[scala.Boolean] = js.undefined,
     state: TState = null
   ): RedirectProps[TState] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
     if (from != null) __obj.updateDynamic("from")(from)
     if (!js.isUndefined(noThrow)) __obj.updateDynamic("noThrow")(noThrow)
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace)

@@ -139,37 +139,8 @@ object VirtualTimeScheduler {
     toDateTimeOffset: js.Function1[TAbsolute, scala.Double],
     toRelative: js.Function1[scala.Double, TRelative]
   ): VirtualTimeScheduler[TAbsolute, TRelative] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("advanceBy")(advanceBy)
-    __obj.updateDynamic("advanceTo")(advanceTo)
-    __obj.updateDynamic("getNext")(getNext)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isScheduler")(isScheduler)
-    __obj.updateDynamic("now")(now)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("scheduleAbsolute")(scheduleAbsolute)
-    __obj.updateDynamic("scheduleAbsoluteWithState")(scheduleAbsoluteWithState)
-    __obj.updateDynamic("schedulePeriodic")(schedulePeriodic)
-    __obj.updateDynamic("schedulePeriodicWithState")(schedulePeriodicWithState)
-    __obj.updateDynamic("scheduleRecursive")(scheduleRecursive)
-    __obj.updateDynamic("scheduleRecursiveWithAbsolute")(scheduleRecursiveWithAbsolute)
-    __obj.updateDynamic("scheduleRecursiveWithAbsoluteAndState")(scheduleRecursiveWithAbsoluteAndState)
-    __obj.updateDynamic("scheduleRecursiveWithRelative")(scheduleRecursiveWithRelative)
-    __obj.updateDynamic("scheduleRecursiveWithRelativeAndState")(scheduleRecursiveWithRelativeAndState)
-    __obj.updateDynamic("scheduleRecursiveWithState")(scheduleRecursiveWithState)
-    __obj.updateDynamic("scheduleRelative")(scheduleRelative)
-    __obj.updateDynamic("scheduleRelativeWithState")(scheduleRelativeWithState)
-    __obj.updateDynamic("scheduleWithAbsolute")(scheduleWithAbsolute)
-    __obj.updateDynamic("scheduleWithAbsoluteAndState")(scheduleWithAbsoluteAndState)
-    __obj.updateDynamic("scheduleWithRelative")(scheduleWithRelative)
-    __obj.updateDynamic("scheduleWithRelativeAndState")(scheduleWithRelativeAndState)
-    __obj.updateDynamic("scheduleWithState")(scheduleWithState)
-    __obj.updateDynamic("sleep")(sleep)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("toDateTimeOffset")(toDateTimeOffset)
-    __obj.updateDynamic("toRelative")(toRelative)
+    val __obj = js.Dynamic.literal(add = add, advanceBy = advanceBy, advanceTo = advanceTo, getNext = getNext, isEnabled = isEnabled, isScheduler = isScheduler, now = now, schedule = schedule, scheduleAbsolute = scheduleAbsolute, scheduleAbsoluteWithState = scheduleAbsoluteWithState, schedulePeriodic = schedulePeriodic, schedulePeriodicWithState = schedulePeriodicWithState, scheduleRecursive = scheduleRecursive, scheduleRecursiveWithAbsolute = scheduleRecursiveWithAbsolute, scheduleRecursiveWithAbsoluteAndState = scheduleRecursiveWithAbsoluteAndState, scheduleRecursiveWithRelative = scheduleRecursiveWithRelative, scheduleRecursiveWithRelativeAndState = scheduleRecursiveWithRelativeAndState, scheduleRecursiveWithState = scheduleRecursiveWithState, scheduleRelative = scheduleRelative, scheduleRelativeWithState = scheduleRelativeWithState, scheduleWithAbsolute = scheduleWithAbsolute, scheduleWithAbsoluteAndState = scheduleWithAbsoluteAndState, scheduleWithRelative = scheduleWithRelative, scheduleWithRelativeAndState = scheduleWithRelativeAndState, scheduleWithState = scheduleWithState, sleep = sleep, start = start, stop = stop, toDateTimeOffset = toDateTimeOffset, toRelative = toRelative)
+  
     __obj.asInstanceOf[VirtualTimeScheduler[TAbsolute, TRelative]]
   }
 }

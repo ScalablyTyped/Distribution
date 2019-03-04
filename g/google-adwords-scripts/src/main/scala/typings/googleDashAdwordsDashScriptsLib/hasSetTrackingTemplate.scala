@@ -16,9 +16,8 @@ object hasSetTrackingTemplate {
     setCustomParameters: js.Function1[js.Object, scala.Unit],
     setTrackingTemplate: js.Function1[java.lang.String, scala.Unit]
   ): hasSetTrackingTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
-    __obj.updateDynamic("setTrackingTemplate")(setTrackingTemplate)
+    val __obj = js.Dynamic.literal(setCustomParameters = setCustomParameters, setTrackingTemplate = setTrackingTemplate)
+  
     __obj.asInstanceOf[hasSetTrackingTemplate]
   }
 }

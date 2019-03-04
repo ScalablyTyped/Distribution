@@ -13,9 +13,8 @@ trait Anon_NoneValidated extends js.Object {
 object Anon_NoneValidated {
   @scala.inline
   def apply(none: scala.Double, validated: scala.Double): Anon_NoneValidated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("validated")(validated)
+    val __obj = js.Dynamic.literal(none = none, validated = validated)
+  
     __obj.asInstanceOf[Anon_NoneValidated]
   }
 }

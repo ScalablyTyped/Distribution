@@ -34,10 +34,8 @@ object Storage {
     logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
     unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]]
   ): Storage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executed")(executed)
-    __obj.updateDynamic("logMigration")(logMigration)
-    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    val __obj = js.Dynamic.literal(executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
+  
     __obj.asInstanceOf[Storage]
   }
 }

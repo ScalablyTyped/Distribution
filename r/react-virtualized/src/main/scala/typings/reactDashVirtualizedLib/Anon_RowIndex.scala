@@ -12,8 +12,8 @@ trait Anon_RowIndex extends js.Object {
 object Anon_RowIndex {
   @scala.inline
   def apply(rowIndex: scala.Double): Anon_RowIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(rowIndex = rowIndex)
+  
     __obj.asInstanceOf[Anon_RowIndex]
   }
 }

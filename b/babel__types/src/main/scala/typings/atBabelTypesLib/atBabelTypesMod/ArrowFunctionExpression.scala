@@ -43,11 +43,8 @@ object ArrowFunctionExpression {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): ArrowFunctionExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(async = async, body = body.asInstanceOf[js.Any], generator = generator, params = params)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (!js.isUndefined(expression)) __obj.updateDynamic("expression")(expression)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

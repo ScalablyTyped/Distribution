@@ -20,8 +20,7 @@ object Anon_EmailPassword {
     profile: js.Object = null,
     username: java.lang.String = null
   ): Anon_EmailPassword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(password = password)
     if (email != null) __obj.updateDynamic("email")(email)
     if (profile != null) __obj.updateDynamic("profile")(profile)
     if (username != null) __obj.updateDynamic("username")(username)

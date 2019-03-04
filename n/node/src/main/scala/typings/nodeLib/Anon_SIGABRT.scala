@@ -80,41 +80,8 @@ object Anon_SIGABRT {
     SIGXCPU: scala.Double,
     SIGXFSZ: scala.Double
   ): Anon_SIGABRT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SIGABRT")(SIGABRT)
-    __obj.updateDynamic("SIGALRM")(SIGALRM)
-    __obj.updateDynamic("SIGBUS")(SIGBUS)
-    __obj.updateDynamic("SIGCHLD")(SIGCHLD)
-    __obj.updateDynamic("SIGCONT")(SIGCONT)
-    __obj.updateDynamic("SIGFPE")(SIGFPE)
-    __obj.updateDynamic("SIGHUP")(SIGHUP)
-    __obj.updateDynamic("SIGILL")(SIGILL)
-    __obj.updateDynamic("SIGINT")(SIGINT)
-    __obj.updateDynamic("SIGIO")(SIGIO)
-    __obj.updateDynamic("SIGIOT")(SIGIOT)
-    __obj.updateDynamic("SIGKILL")(SIGKILL)
-    __obj.updateDynamic("SIGPIPE")(SIGPIPE)
-    __obj.updateDynamic("SIGPOLL")(SIGPOLL)
-    __obj.updateDynamic("SIGPROF")(SIGPROF)
-    __obj.updateDynamic("SIGPWR")(SIGPWR)
-    __obj.updateDynamic("SIGQUIT")(SIGQUIT)
-    __obj.updateDynamic("SIGSEGV")(SIGSEGV)
-    __obj.updateDynamic("SIGSTKFLT")(SIGSTKFLT)
-    __obj.updateDynamic("SIGSTOP")(SIGSTOP)
-    __obj.updateDynamic("SIGSYS")(SIGSYS)
-    __obj.updateDynamic("SIGTERM")(SIGTERM)
-    __obj.updateDynamic("SIGTRAP")(SIGTRAP)
-    __obj.updateDynamic("SIGTSTP")(SIGTSTP)
-    __obj.updateDynamic("SIGTTIN")(SIGTTIN)
-    __obj.updateDynamic("SIGTTOU")(SIGTTOU)
-    __obj.updateDynamic("SIGUNUSED")(SIGUNUSED)
-    __obj.updateDynamic("SIGURG")(SIGURG)
-    __obj.updateDynamic("SIGUSR1")(SIGUSR1)
-    __obj.updateDynamic("SIGUSR2")(SIGUSR2)
-    __obj.updateDynamic("SIGVTALRM")(SIGVTALRM)
-    __obj.updateDynamic("SIGWINCH")(SIGWINCH)
-    __obj.updateDynamic("SIGXCPU")(SIGXCPU)
-    __obj.updateDynamic("SIGXFSZ")(SIGXFSZ)
+    val __obj = js.Dynamic.literal(SIGABRT = SIGABRT, SIGALRM = SIGALRM, SIGBUS = SIGBUS, SIGCHLD = SIGCHLD, SIGCONT = SIGCONT, SIGFPE = SIGFPE, SIGHUP = SIGHUP, SIGILL = SIGILL, SIGINT = SIGINT, SIGIO = SIGIO, SIGIOT = SIGIOT, SIGKILL = SIGKILL, SIGPIPE = SIGPIPE, SIGPOLL = SIGPOLL, SIGPROF = SIGPROF, SIGPWR = SIGPWR, SIGQUIT = SIGQUIT, SIGSEGV = SIGSEGV, SIGSTKFLT = SIGSTKFLT, SIGSTOP = SIGSTOP, SIGSYS = SIGSYS, SIGTERM = SIGTERM, SIGTRAP = SIGTRAP, SIGTSTP = SIGTSTP, SIGTTIN = SIGTTIN, SIGTTOU = SIGTTOU, SIGUNUSED = SIGUNUSED, SIGURG = SIGURG, SIGUSR1 = SIGUSR1, SIGUSR2 = SIGUSR2, SIGVTALRM = SIGVTALRM, SIGWINCH = SIGWINCH, SIGXCPU = SIGXCPU, SIGXFSZ = SIGXFSZ)
+  
     __obj.asInstanceOf[Anon_SIGABRT]
   }
 }

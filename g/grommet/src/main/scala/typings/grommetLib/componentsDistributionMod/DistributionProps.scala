@@ -34,8 +34,7 @@ object DistributionProps {
     gridArea: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null
   ): DistributionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)

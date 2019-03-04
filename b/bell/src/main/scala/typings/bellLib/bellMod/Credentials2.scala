@@ -20,10 +20,7 @@ object Credentials2 {
     profile: js.Object = null,
     refreshToken: java.lang.String = null
   ): Credentials2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], query = query, token = token)
     if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
     if (profile != null) __obj.updateDynamic("profile")(profile)
     if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)

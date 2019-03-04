@@ -26,12 +26,8 @@ object TextSortDescriptor2 {
     MaxSortFieldsCount: scala.Double,
     SortFields: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField]
   ): TextSortDescriptor2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Delimiter")(Delimiter)
-    __obj.updateDynamic("IsSortColumns")(IsSortColumns)
-    __obj.updateDynamic("IsSortInTable")(IsSortInTable)
-    __obj.updateDynamic("MaxSortFieldsCount")(MaxSortFieldsCount)
-    __obj.updateDynamic("SortFields")(SortFields)
+    val __obj = js.Dynamic.literal(Delimiter = Delimiter, IsSortColumns = IsSortColumns, IsSortInTable = IsSortInTable, MaxSortFieldsCount = MaxSortFieldsCount, SortFields = SortFields)
+  
     __obj.asInstanceOf[TextSortDescriptor2]
   }
 }

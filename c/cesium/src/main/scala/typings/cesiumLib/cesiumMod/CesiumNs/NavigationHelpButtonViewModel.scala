@@ -22,12 +22,8 @@ object NavigationHelpButtonViewModel {
     showTouch: Command,
     tooltip: java.lang.String
   ): NavigationHelpButtonViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("showClick")(showClick)
-    __obj.updateDynamic("showInstructions")(showInstructions)
-    __obj.updateDynamic("showTouch")(showTouch)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(command = command, showClick = showClick, showInstructions = showInstructions, showTouch = showTouch, tooltip = tooltip)
+  
     __obj.asInstanceOf[NavigationHelpButtonViewModel]
   }
 }

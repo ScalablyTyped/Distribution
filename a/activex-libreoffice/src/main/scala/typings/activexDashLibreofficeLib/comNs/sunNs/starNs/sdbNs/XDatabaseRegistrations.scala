@@ -76,17 +76,8 @@ object XDatabaseRegistrations {
     removeDatabaseRegistrationsListener: js.Function1[XDatabaseRegistrationsListener, scala.Unit],
     revokeDatabaseLocation: js.Function1[java.lang.String, scala.Unit]
   ): XDatabaseRegistrations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegistrationNames")(RegistrationNames)
-    __obj.updateDynamic("addDatabaseRegistrationsListener")(addDatabaseRegistrationsListener)
-    __obj.updateDynamic("changeDatabaseLocation")(changeDatabaseLocation)
-    __obj.updateDynamic("getDatabaseLocation")(getDatabaseLocation)
-    __obj.updateDynamic("getRegistrationNames")(getRegistrationNames)
-    __obj.updateDynamic("hasRegisteredDatabase")(hasRegisteredDatabase)
-    __obj.updateDynamic("isDatabaseRegistrationReadOnly")(isDatabaseRegistrationReadOnly)
-    __obj.updateDynamic("registerDatabaseLocation")(registerDatabaseLocation)
-    __obj.updateDynamic("removeDatabaseRegistrationsListener")(removeDatabaseRegistrationsListener)
-    __obj.updateDynamic("revokeDatabaseLocation")(revokeDatabaseLocation)
+    val __obj = js.Dynamic.literal(RegistrationNames = RegistrationNames, addDatabaseRegistrationsListener = addDatabaseRegistrationsListener, changeDatabaseLocation = changeDatabaseLocation, getDatabaseLocation = getDatabaseLocation, getRegistrationNames = getRegistrationNames, hasRegisteredDatabase = hasRegisteredDatabase, isDatabaseRegistrationReadOnly = isDatabaseRegistrationReadOnly, registerDatabaseLocation = registerDatabaseLocation, removeDatabaseRegistrationsListener = removeDatabaseRegistrationsListener, revokeDatabaseLocation = revokeDatabaseLocation)
+  
     __obj.asInstanceOf[XDatabaseRegistrations]
   }
 }

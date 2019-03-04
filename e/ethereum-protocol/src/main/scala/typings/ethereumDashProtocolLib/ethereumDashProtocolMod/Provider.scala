@@ -12,8 +12,8 @@ trait Provider extends js.Object {
 object Provider {
   @scala.inline
   def apply(sendAsync: js.Function2[JSONRPCRequestPayload, JSONRPCErrorCallback, scala.Unit]): Provider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sendAsync")(sendAsync)
+    val __obj = js.Dynamic.literal(sendAsync = sendAsync)
+  
     __obj.asInstanceOf[Provider]
   }
 }

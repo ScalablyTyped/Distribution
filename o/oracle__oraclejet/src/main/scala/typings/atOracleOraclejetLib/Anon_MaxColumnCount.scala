@@ -13,9 +13,8 @@ trait Anon_MaxColumnCount extends js.Object {
 object Anon_MaxColumnCount {
   @scala.inline
   def apply(maxColumnCount: scala.Double, maxRowCount: scala.Double): Anon_MaxColumnCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxColumnCount")(maxColumnCount)
-    __obj.updateDynamic("maxRowCount")(maxRowCount)
+    val __obj = js.Dynamic.literal(maxColumnCount = maxColumnCount, maxRowCount = maxRowCount)
+  
     __obj.asInstanceOf[Anon_MaxColumnCount]
   }
 }

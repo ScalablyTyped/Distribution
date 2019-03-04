@@ -35,10 +35,7 @@ object IScriptSnapshot {
     getText: js.Function2[scala.Double, scala.Double, java.lang.String],
     dispose: js.Function0[scala.Unit] = null
   ): IScriptSnapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChangeRange")(getChangeRange)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getText")(getText)
+    val __obj = js.Dynamic.literal(getChangeRange = getChangeRange, getLength = getLength, getText = getText)
     if (dispose != null) __obj.updateDynamic("dispose")(dispose)
     __obj.asInstanceOf[IScriptSnapshot]
   }

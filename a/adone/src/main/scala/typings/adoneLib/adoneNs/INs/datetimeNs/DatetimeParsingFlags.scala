@@ -36,17 +36,7 @@ object DatetimeParsingFlags {
     invalidMonth: java.lang.String = null,
     meridiem: java.lang.String = null
   ): DatetimeParsingFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charsLeftOver")(charsLeftOver)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("invalidFormat")(invalidFormat)
-    __obj.updateDynamic("iso")(iso)
-    __obj.updateDynamic("nullInput")(nullInput)
-    __obj.updateDynamic("overflow")(overflow)
-    __obj.updateDynamic("parsedDateParts")(parsedDateParts)
-    __obj.updateDynamic("unusedInput")(unusedInput)
-    __obj.updateDynamic("unusedTokens")(unusedTokens)
-    __obj.updateDynamic("userInvalidated")(userInvalidated)
+    val __obj = js.Dynamic.literal(charsLeftOver = charsLeftOver, empty = empty, invalidFormat = invalidFormat, iso = iso, nullInput = nullInput, overflow = overflow, parsedDateParts = parsedDateParts, unusedInput = unusedInput, unusedTokens = unusedTokens, userInvalidated = userInvalidated)
     if (invalidMonth != null) __obj.updateDynamic("invalidMonth")(invalidMonth)
     if (meridiem != null) __obj.updateDynamic("meridiem")(meridiem)
     __obj.asInstanceOf[DatetimeParsingFlags]

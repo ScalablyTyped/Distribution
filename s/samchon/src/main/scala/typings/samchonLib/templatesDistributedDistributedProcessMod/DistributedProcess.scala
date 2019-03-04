@@ -27,11 +27,11 @@ abstract class DistributedProcess protected ()
   /**
     * @hidden
     */
-  var `enforced_`: js.Any = js.native
+  var enforced_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `history_list_`: js.Any = js.native
+  var history_list_ : js.Any = js.native
   /**
     * A name, represents and identifies this {@link DistributedProcess process}.
     *
@@ -43,7 +43,7 @@ abstract class DistributedProcess protected ()
   /**
     * @hidden
     */
-  var `progress_list_`: js.Any = js.native
+  var progress_list_ : js.Any = js.native
   /**
     * @hidden
     */
@@ -51,7 +51,7 @@ abstract class DistributedProcess protected ()
   /**
     * @hidden
     */
-  var `system_array_`: js.Any = js.native
+  var system_array_ : js.Any = js.native
   /**
     * Enforce resource index.
     *

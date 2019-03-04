@@ -20,14 +20,14 @@ trait LodashOmitBy extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[T],
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): lodashLib.lodashMod.underscoreNs.NumericDictionary[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashOmitBy1x2[T] = js.native
-  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashOmitBy3x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__): LodashOmitBy1x2[T] = js.native
+  def apply[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashOmitBy3x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
   ): LodashOmitBy1x2[T] = js.native
   def apply[T](
-    predicate: lodashLib.lodashMod.underscoreNs.`__`,
+    predicate: lodashLib.lodashMod.underscoreNs.__,
     `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashOmitBy2x2[T] = js.native
 }

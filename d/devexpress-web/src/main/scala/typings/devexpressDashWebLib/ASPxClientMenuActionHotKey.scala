@@ -24,9 +24,8 @@ trait ASPxClientMenuActionHotKey extends js.Object {
 object ASPxClientMenuActionHotKey {
   @scala.inline
   def apply(ctrlKey: scala.Boolean, keyCode: scala.Double): ASPxClientMenuActionHotKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("keyCode")(keyCode)
+    val __obj = js.Dynamic.literal(ctrlKey = ctrlKey, keyCode = keyCode)
+  
     __obj.asInstanceOf[ASPxClientMenuActionHotKey]
   }
 }

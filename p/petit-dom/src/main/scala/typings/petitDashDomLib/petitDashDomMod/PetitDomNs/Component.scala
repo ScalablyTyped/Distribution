@@ -24,10 +24,8 @@ object Component {
     patch: js.Function5[stdLib.Element, P, P, js.Array[VNode], js.Array[VNode], stdLib.Element],
     unmount: js.Function1[stdLib.Element, scala.Unit]
   ): Component[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("unmount")(unmount)
+    val __obj = js.Dynamic.literal(mount = mount, patch = patch, unmount = unmount)
+  
     __obj.asInstanceOf[Component[P]]
   }
 }

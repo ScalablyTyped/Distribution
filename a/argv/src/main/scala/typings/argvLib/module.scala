@@ -18,10 +18,8 @@ object module {
     mod: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[helpOption]
   ): module = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("mod")(mod)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(description = description, mod = mod, options = options)
+  
     __obj.asInstanceOf[module]
   }
 }

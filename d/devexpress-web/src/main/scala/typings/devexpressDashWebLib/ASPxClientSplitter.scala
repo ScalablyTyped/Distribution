@@ -98,35 +98,8 @@ object ASPxClientSplitter {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientSplitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetLayoutData")(GetLayoutData)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetPane")(GetPane)
-    __obj.updateDynamic("GetPaneByName")(GetPaneByName)
-    __obj.updateDynamic("GetPaneCount")(GetPaneCount)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("PaneCollapsed")(PaneCollapsed)
-    __obj.updateDynamic("PaneCollapsing")(PaneCollapsing)
-    __obj.updateDynamic("PaneContentUrlLoaded")(PaneContentUrlLoaded)
-    __obj.updateDynamic("PaneExpanded")(PaneExpanded)
-    __obj.updateDynamic("PaneExpanding")(PaneExpanding)
-    __obj.updateDynamic("PaneResizeCompleted")(PaneResizeCompleted)
-    __obj.updateDynamic("PaneResized")(PaneResized)
-    __obj.updateDynamic("PaneResizing")(PaneResizing)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetAllowResize")(SetAllowResize)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetLayoutData = GetLayoutData, GetMainElement = GetMainElement, GetPane = GetPane, GetPaneByName = GetPaneByName, GetPaneCount = GetPaneCount, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, PaneCollapsed = PaneCollapsed, PaneCollapsing = PaneCollapsing, PaneContentUrlLoaded = PaneContentUrlLoaded, PaneExpanded = PaneExpanded, PaneExpanding = PaneExpanding, PaneResizeCompleted = PaneResizeCompleted, PaneResized = PaneResized, PaneResizing = PaneResizing, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetAllowResize = SetAllowResize, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientSplitter]
   }
 }

@@ -13,8 +13,8 @@ trait pushAction[T /* <: historyLib.historyMod.Path | historyLib.historyMod.Loca
 object pushAction {
   @scala.inline
   def apply[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](payload: T, `type`: reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/PUSH`): pushAction[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[pushAction[T]]
   }
 }

@@ -49,8 +49,7 @@ object VersionControlDetails {
     revisionId: java.lang.String = null,
     revisionTag: java.lang.String = null
   ): VersionControlDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repositoryUri")(repositoryUri)
+    val __obj = js.Dynamic.literal(repositoryUri = repositoryUri)
     if (asOfTimeUtc != null) __obj.updateDynamic("asOfTimeUtc")(asOfTimeUtc)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (mappedTo != null) __obj.updateDynamic("mappedTo")(mappedTo)

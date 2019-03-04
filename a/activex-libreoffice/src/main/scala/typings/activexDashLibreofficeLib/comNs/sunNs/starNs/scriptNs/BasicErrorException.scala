@@ -25,11 +25,8 @@ object BasicErrorException {
     ErrorMessageArgument: java.lang.String,
     Message: java.lang.String
   ): BasicErrorException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorCode")(ErrorCode)
-    __obj.updateDynamic("ErrorMessageArgument")(ErrorMessageArgument)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorCode = ErrorCode, ErrorMessageArgument = ErrorMessageArgument, Message = Message)
+  
     __obj.asInstanceOf[BasicErrorException]
   }
 }

@@ -38,11 +38,8 @@ object XSortableGridData {
     removeColumnSort: js.Function0[scala.Unit],
     sortByColumn: js.Function2[scala.Double, scala.Boolean, scala.Unit]
   ): XSortableGridData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentSortOrder")(CurrentSortOrder)
-    __obj.updateDynamic("getCurrentSortOrder")(getCurrentSortOrder)
-    __obj.updateDynamic("removeColumnSort")(removeColumnSort)
-    __obj.updateDynamic("sortByColumn")(sortByColumn)
+    val __obj = js.Dynamic.literal(CurrentSortOrder = CurrentSortOrder, getCurrentSortOrder = getCurrentSortOrder, removeColumnSort = removeColumnSort, sortByColumn = sortByColumn)
+  
     __obj.asInstanceOf[XSortableGridData]
   }
 }

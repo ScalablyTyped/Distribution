@@ -12,8 +12,8 @@ trait Anon_Path extends js.Object {
 object Anon_Path {
   @scala.inline
   def apply(path: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.StrOrRegex): Anon_Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Path]
   }
 }

@@ -33,8 +33,7 @@ object ArtifactLocation {
     properties: PropertyBag = null,
     uriBaseId: java.lang.String = null
   ): ArtifactLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (uriBaseId != null) __obj.updateDynamic("uriBaseId")(uriBaseId)

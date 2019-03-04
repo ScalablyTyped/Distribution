@@ -20,10 +20,7 @@ object Anon_ArgsId {
     nodeType: java.lang.String,
     lineNumber: scala.Int | scala.Double = null
   ): Anon_ArgsId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("nodeType")(nodeType)
+    val __obj = js.Dynamic.literal(args = args, id = id, nodeType = nodeType)
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgsId]
   }

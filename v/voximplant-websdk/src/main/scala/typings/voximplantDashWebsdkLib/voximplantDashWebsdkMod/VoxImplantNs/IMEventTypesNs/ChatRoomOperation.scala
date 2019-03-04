@@ -31,10 +31,8 @@ object ChatRoomOperation {
     result: scala.Boolean,
     room: java.lang.String
   ): ChatRoomOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(operation = operation, result = result, room = room)
+  
     __obj.asInstanceOf[ChatRoomOperation]
   }
 }

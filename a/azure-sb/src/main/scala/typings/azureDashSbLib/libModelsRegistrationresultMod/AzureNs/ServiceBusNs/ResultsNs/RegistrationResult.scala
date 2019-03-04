@@ -16,9 +16,8 @@ object RegistrationResult {
     parse: js.Function1[js.Object, js.Object | js.Array[js.Object]],
     serialize: js.Function3[java.lang.String, js.Object, js.Array[java.lang.String], java.lang.String]
   ): RegistrationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+  
     __obj.asInstanceOf[RegistrationResult]
   }
 }

@@ -25,13 +25,8 @@ object AutocompleteResultPoi {
     street: java.lang.String,
     streetNumber: java.lang.String
   ): AutocompleteResultPoi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("City")(City)
-    __obj.updateDynamic("business")(business)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("street")(street)
-    __obj.updateDynamic("streetNumber")(streetNumber)
+    val __obj = js.Dynamic.literal(City = City, business = business, district = district, province = province, street = street, streetNumber = streetNumber)
+  
     __obj.asInstanceOf[AutocompleteResultPoi]
   }
 }

@@ -20,11 +20,8 @@ object TopicRecord {
     EventVersion: java.lang.String,
     Sns: SNSItem
   ): TopicRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventSource")(EventSource)
-    __obj.updateDynamic("EventSubscriptionArn")(EventSubscriptionArn)
-    __obj.updateDynamic("EventVersion")(EventVersion)
-    __obj.updateDynamic("Sns")(Sns)
+    val __obj = js.Dynamic.literal(EventSource = EventSource, EventSubscriptionArn = EventSubscriptionArn, EventVersion = EventVersion, Sns = Sns)
+  
     __obj.asInstanceOf[TopicRecord]
   }
 }

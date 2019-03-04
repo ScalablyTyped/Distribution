@@ -21,8 +21,8 @@ object MediaResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Media]
     ]
   ): MediaResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[MediaResource]
   }
 }

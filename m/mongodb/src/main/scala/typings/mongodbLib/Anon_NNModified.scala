@@ -14,10 +14,8 @@ trait Anon_NNModified extends js.Object {
 object Anon_NNModified {
   @scala.inline
   def apply(n: scala.Double, nModified: scala.Double, ok: scala.Double): Anon_NNModified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("nModified")(nModified)
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(n = n, nModified = nModified, ok = ok)
+  
     __obj.asInstanceOf[Anon_NNModified]
   }
 }

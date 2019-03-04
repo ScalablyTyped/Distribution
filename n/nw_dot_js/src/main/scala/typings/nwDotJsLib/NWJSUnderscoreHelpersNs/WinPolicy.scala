@@ -47,13 +47,8 @@ object WinPolicy {
     ignore: js.Function0[scala.Unit],
     setNewWindowManifest: js.Function1[WindowOption, scala.Unit]
   ): WinPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceCurrent")(forceCurrent)
-    __obj.updateDynamic("forceDownload")(forceDownload)
-    __obj.updateDynamic("forceNewPopup")(forceNewPopup)
-    __obj.updateDynamic("forceNewWindow")(forceNewWindow)
-    __obj.updateDynamic("ignore")(ignore)
-    __obj.updateDynamic("setNewWindowManifest")(setNewWindowManifest)
+    val __obj = js.Dynamic.literal(forceCurrent = forceCurrent, forceDownload = forceDownload, forceNewPopup = forceNewPopup, forceNewWindow = forceNewWindow, ignore = ignore, setNewWindowManifest = setNewWindowManifest)
+  
     __obj.asInstanceOf[WinPolicy]
   }
 }

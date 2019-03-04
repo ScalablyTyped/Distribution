@@ -14,10 +14,8 @@ trait TodoComment extends js.Object {
 object TodoComment {
   @scala.inline
   def apply(descriptor: TodoCommentDescriptor, message: java.lang.String, position: scala.Double): TodoComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descriptor")(descriptor)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(descriptor = descriptor, message = message, position = position)
+  
     __obj.asInstanceOf[TodoComment]
   }
 }

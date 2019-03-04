@@ -13,8 +13,8 @@ trait RecipientWithAddress extends js.Object {
 object RecipientWithAddress {
   @scala.inline
   def apply(address: Address | java.lang.String): RecipientWithAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RecipientWithAddress]
   }
 }

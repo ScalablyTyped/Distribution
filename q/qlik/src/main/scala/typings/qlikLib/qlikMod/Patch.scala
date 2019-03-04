@@ -18,10 +18,8 @@ object Patch {
     qPath: java.lang.String,
     qValue: java.lang.String
   ): Patch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qOp")(qOp.asInstanceOf[js.Any])
-    __obj.updateDynamic("qPath")(qPath)
-    __obj.updateDynamic("qValue")(qValue)
+    val __obj = js.Dynamic.literal(qOp = qOp.asInstanceOf[js.Any], qPath = qPath, qValue = qValue)
+  
     __obj.asInstanceOf[Patch]
   }
 }

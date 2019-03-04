@@ -22,12 +22,8 @@ object Anon_ContainerItemStatus {
     FileContainer: js.Any,
     FileContainerItem: js.Any
   ): Anon_ContainerItemStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContainerItemStatus")(ContainerItemStatus)
-    __obj.updateDynamic("ContainerItemType")(ContainerItemType)
-    __obj.updateDynamic("ContainerOptions")(ContainerOptions)
-    __obj.updateDynamic("FileContainer")(FileContainer)
-    __obj.updateDynamic("FileContainerItem")(FileContainerItem)
+    val __obj = js.Dynamic.literal(ContainerItemStatus = ContainerItemStatus, ContainerItemType = ContainerItemType, ContainerOptions = ContainerOptions, FileContainer = FileContainer, FileContainerItem = FileContainerItem)
+  
     __obj.asInstanceOf[Anon_ContainerItemStatus]
   }
 }

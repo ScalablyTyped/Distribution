@@ -16,7 +16,7 @@ abstract class SlaveSystem ()
   /**
     * @hidden
     */
-  var `communicator_`: samchonLib.protocolCommunicatorICommunicatorMod.ICommunicator = js.native
+  var communicator_ : samchonLib.protocolCommunicatorICommunicatorMod.ICommunicator = js.native
   /**
     * @hidden
     */

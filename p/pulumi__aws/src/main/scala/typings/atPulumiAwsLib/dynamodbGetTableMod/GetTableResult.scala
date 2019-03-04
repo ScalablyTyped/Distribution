@@ -51,25 +51,8 @@ object GetTableResult {
     ttl: atPulumiAwsLib.Anon_AttributeName,
     writeCapacity: scala.Double
   ): GetTableResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("billingMode")(billingMode)
-    __obj.updateDynamic("globalSecondaryIndexes")(globalSecondaryIndexes)
-    __obj.updateDynamic("hashKey")(hashKey)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("localSecondaryIndexes")(localSecondaryIndexes)
-    __obj.updateDynamic("pointInTimeRecovery")(pointInTimeRecovery)
-    __obj.updateDynamic("rangeKey")(rangeKey)
-    __obj.updateDynamic("readCapacity")(readCapacity)
-    __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
-    __obj.updateDynamic("streamArn")(streamArn)
-    __obj.updateDynamic("streamEnabled")(streamEnabled)
-    __obj.updateDynamic("streamLabel")(streamLabel)
-    __obj.updateDynamic("streamViewType")(streamViewType)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("ttl")(ttl)
-    __obj.updateDynamic("writeCapacity")(writeCapacity)
+    val __obj = js.Dynamic.literal(arn = arn, attributes = attributes, billingMode = billingMode, globalSecondaryIndexes = globalSecondaryIndexes, hashKey = hashKey, id = id, localSecondaryIndexes = localSecondaryIndexes, pointInTimeRecovery = pointInTimeRecovery, rangeKey = rangeKey, readCapacity = readCapacity, serverSideEncryption = serverSideEncryption, streamArn = streamArn, streamEnabled = streamEnabled, streamLabel = streamLabel, streamViewType = streamViewType, tags = tags, ttl = ttl, writeCapacity = writeCapacity)
+  
     __obj.asInstanceOf[GetTableResult]
   }
 }

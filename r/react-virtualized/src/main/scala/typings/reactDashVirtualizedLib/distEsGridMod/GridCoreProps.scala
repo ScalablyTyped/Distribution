@@ -223,11 +223,7 @@ object GridCoreProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null
   ): GridCoreProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, rowCount = rowCount, rowHeight = rowHeight.asInstanceOf[js.Any], width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)

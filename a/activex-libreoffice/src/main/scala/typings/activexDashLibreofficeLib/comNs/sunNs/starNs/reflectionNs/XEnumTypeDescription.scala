@@ -56,20 +56,8 @@ object XEnumTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XEnumTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultEnumValue")(DefaultEnumValue)
-    __obj.updateDynamic("EnumNames")(EnumNames)
-    __obj.updateDynamic("EnumValues")(EnumValues)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultEnumValue")(getDefaultEnumValue)
-    __obj.updateDynamic("getEnumNames")(getEnumNames)
-    __obj.updateDynamic("getEnumValues")(getEnumValues)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DefaultEnumValue = DefaultEnumValue, EnumNames = EnumNames, EnumValues = EnumValues, Name = Name, TypeClass = TypeClass, acquire = acquire, getDefaultEnumValue = getDefaultEnumValue, getEnumNames = getEnumNames, getEnumValues = getEnumValues, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XEnumTypeDescription]
   }
 }

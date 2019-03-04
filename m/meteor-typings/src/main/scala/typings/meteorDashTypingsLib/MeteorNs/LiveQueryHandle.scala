@@ -12,8 +12,8 @@ trait LiveQueryHandle extends js.Object {
 object LiveQueryHandle {
   @scala.inline
   def apply(stop: js.Function0[scala.Unit]): LiveQueryHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(stop = stop)
+  
     __obj.asInstanceOf[LiveQueryHandle]
   }
 }

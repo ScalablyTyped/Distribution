@@ -13,9 +13,8 @@ trait Anon_CancelPvWindow extends js.Object {
 object Anon_CancelPvWindow {
   @scala.inline
   def apply(Cancel: scala.Boolean, PvWindow: activexDashWordLib.WordNs.ProtectedViewWindow): Anon_CancelPvWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("PvWindow")(PvWindow)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, PvWindow = PvWindow)
+  
     __obj.asInstanceOf[Anon_CancelPvWindow]
   }
 }

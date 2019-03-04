@@ -24,22 +24,22 @@ trait Env extends js.Object {
   def beforeEach(beforeEachFunction: jasmineLib.ImplementationCallback): scala.Unit = js.native
   def beforeEach(beforeEachFunction: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   def clearReporters(): scala.Unit = js.native
-  def `compareObjects_`(
+  def compareObjects_(
     a: js.Any,
     b: js.Any,
     mismatchKeys: js.Array[java.lang.String],
     mismatchValues: js.Array[java.lang.String]
   ): scala.Boolean = js.native
-  def `compareRegExps_`(
+  def compareRegExps_(
     a: stdLib.RegExp,
     b: stdLib.RegExp,
     mismatchKeys: js.Array[java.lang.String],
     mismatchValues: js.Array[java.lang.String]
   ): scala.Boolean = js.native
-  def `contains_`(haystack: js.Any, needle: js.Any): scala.Boolean = js.native
+  def contains_(haystack: js.Any, needle: js.Any): scala.Boolean = js.native
   def currentRunner(): Runner = js.native
   def describe(description: java.lang.String, specDefinitions: js.Function0[scala.Unit]): Suite = js.native
-  def `equals_`(
+  def equals_(
     a: js.Any,
     b: js.Any,
     mismatchKeys: js.Array[java.lang.String],

@@ -22,15 +22,8 @@ object ServerJobRequestMessage {
     taskInstance: TaskInstance,
     timeline: TimelineReference
   ): ServerJobRequestMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("jobName")(jobName)
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("taskDefinition")(taskDefinition)
-    __obj.updateDynamic("taskInstance")(taskInstance)
-    __obj.updateDynamic("timeline")(timeline)
+    val __obj = js.Dynamic.literal(environment = environment, jobId = jobId, jobName = jobName, messageType = messageType, plan = plan, taskDefinition = taskDefinition, taskInstance = taskInstance, timeline = timeline)
+  
     __obj.asInstanceOf[ServerJobRequestMessage]
   }
 }

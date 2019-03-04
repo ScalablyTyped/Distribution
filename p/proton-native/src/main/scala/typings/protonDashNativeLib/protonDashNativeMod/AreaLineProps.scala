@@ -48,11 +48,7 @@ object AreaLineProps {
     strokeWidth: scala.Int | scala.Double = null,
     transform: java.lang.String = null
   ): AreaLineProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
-    __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
-    __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)

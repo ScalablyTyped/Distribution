@@ -37,29 +37,8 @@ object SenderSignature {
     SafeToRemoveRevokedKeyFromDNS: scala.Boolean,
     WeakDKIM: scala.Boolean
   ): SenderSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Confirmed")(Confirmed)
-    __obj.updateDynamic("DKIMHost")(DKIMHost)
-    __obj.updateDynamic("DKIMPendingHost")(DKIMPendingHost)
-    __obj.updateDynamic("DKIMPendingTextValue")(DKIMPendingTextValue)
-    __obj.updateDynamic("DKIMRevokedHost")(DKIMRevokedHost)
-    __obj.updateDynamic("DKIMRevokedTextValue")(DKIMRevokedTextValue)
-    __obj.updateDynamic("DKIMTextValue")(DKIMTextValue)
-    __obj.updateDynamic("DKIMUpdateStatus")(DKIMUpdateStatus)
-    __obj.updateDynamic("DKIMVerified")(DKIMVerified)
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("EmailAddress")(EmailAddress)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReplyToEmailAddress")(ReplyToEmailAddress)
-    __obj.updateDynamic("ReturnPathDomain")(ReturnPathDomain)
-    __obj.updateDynamic("ReturnPathDomainCNAMEValue")(ReturnPathDomainCNAMEValue)
-    __obj.updateDynamic("ReturnPathDomainVerified")(ReturnPathDomainVerified)
-    __obj.updateDynamic("SPFHost")(SPFHost)
-    __obj.updateDynamic("SPFTextValue")(SPFTextValue)
-    __obj.updateDynamic("SPFVerified")(SPFVerified)
-    __obj.updateDynamic("SafeToRemoveRevokedKeyFromDNS")(SafeToRemoveRevokedKeyFromDNS)
-    __obj.updateDynamic("WeakDKIM")(WeakDKIM)
+    val __obj = js.Dynamic.literal(Confirmed = Confirmed, DKIMHost = DKIMHost, DKIMPendingHost = DKIMPendingHost, DKIMPendingTextValue = DKIMPendingTextValue, DKIMRevokedHost = DKIMRevokedHost, DKIMRevokedTextValue = DKIMRevokedTextValue, DKIMTextValue = DKIMTextValue, DKIMUpdateStatus = DKIMUpdateStatus, DKIMVerified = DKIMVerified, Domain = Domain, EmailAddress = EmailAddress, ID = ID, Name = Name, ReplyToEmailAddress = ReplyToEmailAddress, ReturnPathDomain = ReturnPathDomain, ReturnPathDomainCNAMEValue = ReturnPathDomainCNAMEValue, ReturnPathDomainVerified = ReturnPathDomainVerified, SPFHost = SPFHost, SPFTextValue = SPFTextValue, SPFVerified = SPFVerified, SafeToRemoveRevokedKeyFromDNS = SafeToRemoveRevokedKeyFromDNS, WeakDKIM = WeakDKIM)
+  
     __obj.asInstanceOf[SenderSignature]
   }
 }

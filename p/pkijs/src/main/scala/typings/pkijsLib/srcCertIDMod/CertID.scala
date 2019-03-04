@@ -45,16 +45,8 @@ object CertID {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): CertID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createForCertificate")(createForCertificate)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("hashAlgorithm")(hashAlgorithm)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("issuerKeyHash")(issuerKeyHash)
-    __obj.updateDynamic("issuerNameHash")(issuerNameHash)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(createForCertificate = createForCertificate, fromSchema = fromSchema, hashAlgorithm = hashAlgorithm, isEqual = isEqual, issuerKeyHash = issuerKeyHash, issuerNameHash = issuerNameHash, serialNumber = serialNumber, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[CertID]
   }
 }

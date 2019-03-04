@@ -41,7 +41,8 @@ object MessageText {
     text: java.lang.String = null,
     textAsHtml: java.lang.String = null
   ): MessageText = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)
     if (textAsHtml != null) __obj.updateDynamic("textAsHtml")(textAsHtml)

@@ -18,9 +18,7 @@ object Anon_DataHeader {
     statusCode: scala.Double,
     header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Anon_DataHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(data = data, statusCode = statusCode)
     if (header != null) __obj.updateDynamic("header")(header)
     __obj.asInstanceOf[Anon_DataHeader]
   }

@@ -30,8 +30,7 @@ object CreateRecipientList {
     name: java.lang.String = null,
     num_rcpt_errors: scala.Int | scala.Double = null
   ): CreateRecipientList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipients")(recipients)
+    val __obj = js.Dynamic.literal(recipients = recipients)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (description != null) __obj.updateDynamic("description")(description)
     if (id != null) __obj.updateDynamic("id")(id)

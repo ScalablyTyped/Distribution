@@ -13,9 +13,8 @@ trait Anon_Appenders extends js.Object {
 object Anon_Appenders {
   @scala.inline
   def apply(appenders: js.Array[java.lang.String], level: java.lang.String): Anon_Appenders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appenders")(appenders)
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(appenders = appenders, level = level)
+  
     __obj.asInstanceOf[Anon_Appenders]
   }
 }

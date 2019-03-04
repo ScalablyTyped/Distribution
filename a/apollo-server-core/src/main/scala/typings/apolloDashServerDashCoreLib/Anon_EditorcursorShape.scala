@@ -28,8 +28,15 @@ object Anon_EditorcursorShape {
     `request.credentials`: java.lang.String,
     `tracing.hideTracingResponse`: scala.Boolean
   ): Anon_EditorcursorShape = {
-    val __obj = js.Dynamic.literal(`editor.cursorShape` = `editor.cursorShape`, `editor.fontFamily` = `editor.fontFamily`, `editor.fontSize` = `editor.fontSize`, `editor.reuseHeaders` = `editor.reuseHeaders`, `editor.theme` = `editor.theme`, `general.betaUpdates` = `general.betaUpdates`, `request.credentials` = `request.credentials`, `tracing.hideTracingResponse` = `tracing.hideTracingResponse`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`)
+    __obj.updateDynamic("editor.fontFamily")(`editor.fontFamily`)
+    __obj.updateDynamic("editor.fontSize")(`editor.fontSize`)
+    __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
+    __obj.updateDynamic("editor.theme")(`editor.theme`)
+    __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
+    __obj.updateDynamic("request.credentials")(`request.credentials`)
+    __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
     __obj.asInstanceOf[Anon_EditorcursorShape]
   }
 }

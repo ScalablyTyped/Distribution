@@ -12,8 +12,8 @@ trait Anon_Light extends js.Object {
 object Anon_Light {
   @scala.inline
   def apply(light: scala.Double): Anon_Light = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("light")(light)
+    val __obj = js.Dynamic.literal(light = light)
+  
     __obj.asInstanceOf[Anon_Light]
   }
 }

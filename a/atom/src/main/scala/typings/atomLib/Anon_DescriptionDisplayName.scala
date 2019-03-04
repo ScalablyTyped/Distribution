@@ -20,9 +20,7 @@ object Anon_DescriptionDisplayName {
     description: java.lang.String = null,
     tags: js.Array[java.lang.String] = null
   ): Anon_DescriptionDisplayName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayName = displayName, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[Anon_DescriptionDisplayName]

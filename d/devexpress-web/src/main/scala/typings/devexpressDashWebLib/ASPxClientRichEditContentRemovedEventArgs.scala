@@ -24,9 +24,8 @@ trait ASPxClientRichEditContentRemovedEventArgs extends ASPxClientEventArgs {
 object ASPxClientRichEditContentRemovedEventArgs {
   @scala.inline
   def apply(interval: Interval, subDocumentId: scala.Double): ASPxClientRichEditContentRemovedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("subDocumentId")(subDocumentId)
+    val __obj = js.Dynamic.literal(interval = interval, subDocumentId = subDocumentId)
+  
     __obj.asInstanceOf[ASPxClientRichEditContentRemovedEventArgs]
   }
 }

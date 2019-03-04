@@ -38,8 +38,7 @@ object TableColumn {
     width: java.lang.String | scala.Double = null,
     wordwrap: adoneLib.adoneLibStrings.soft | adoneLib.adoneLibStrings.hard | adoneLib.adoneNs.textNs.INs.WordWrapOptions = null
   ): TableColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (handle != null) __obj.updateDynamic("handle")(handle)

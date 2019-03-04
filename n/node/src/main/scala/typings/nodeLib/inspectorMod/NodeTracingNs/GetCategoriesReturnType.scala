@@ -15,8 +15,8 @@ trait GetCategoriesReturnType extends js.Object {
 object GetCategoriesReturnType {
   @scala.inline
   def apply(categories: js.Array[java.lang.String]): GetCategoriesReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(categories = categories)
+  
     __obj.asInstanceOf[GetCategoriesReturnType]
   }
 }

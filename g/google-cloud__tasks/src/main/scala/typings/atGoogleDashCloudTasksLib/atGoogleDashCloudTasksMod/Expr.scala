@@ -20,11 +20,8 @@ object Expr {
     location: java.lang.String,
     title: java.lang.String
   ): Expr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(description = description, expression = expression, location = location, title = title)
+  
     __obj.asInstanceOf[Expr]
   }
 }

@@ -24,10 +24,8 @@ object OnStateChangeData {
     selected: scala.Boolean,
     state: imagemapsterLib.imagemapsterLibStrings.highlight | imagemapsterLib.imagemapsterLibStrings.select
   ): OnStateChangeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, selected = selected, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OnStateChangeData]
   }
 }

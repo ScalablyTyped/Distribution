@@ -22,8 +22,7 @@ object TextRun {
     url: java.lang.String = null,
     valueExpr: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr = null
   ): TextRun = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
     if (url != null) __obj.updateDynamic("url")(url)
     if (valueExpr != null) __obj.updateDynamic("valueExpr")(valueExpr)

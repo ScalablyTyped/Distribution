@@ -24,13 +24,8 @@ object WebBrowser_V1_BeforeNavigate_Parameter {
     TargetFrameName: java.lang.String,
     URL: java.lang.String
   ): WebBrowser_V1_BeforeNavigate_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Headers")(Headers)
-    __obj.updateDynamic("PostData")(PostData)
-    __obj.updateDynamic("TargetFrameName")(TargetFrameName)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Flags = Flags, Headers = Headers, PostData = PostData, TargetFrameName = TargetFrameName, URL = URL)
+  
     __obj.asInstanceOf[WebBrowser_V1_BeforeNavigate_Parameter]
   }
 }

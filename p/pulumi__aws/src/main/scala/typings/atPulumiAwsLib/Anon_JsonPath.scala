@@ -13,9 +13,8 @@ trait Anon_JsonPath extends js.Object {
 object Anon_JsonPath {
   @scala.inline
   def apply(jsonPath: java.lang.String, matchEquals: java.lang.String): Anon_JsonPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonPath")(jsonPath)
-    __obj.updateDynamic("matchEquals")(matchEquals)
+    val __obj = js.Dynamic.literal(jsonPath = jsonPath, matchEquals = matchEquals)
+  
     __obj.asInstanceOf[Anon_JsonPath]
   }
 }

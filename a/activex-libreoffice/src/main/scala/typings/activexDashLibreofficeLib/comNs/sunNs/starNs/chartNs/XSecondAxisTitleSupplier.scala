@@ -24,14 +24,8 @@ object XSecondAxisTitleSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSecondAxisTitleSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SecondXAxisTitle")(SecondXAxisTitle)
-    __obj.updateDynamic("SecondYAxisTitle")(SecondYAxisTitle)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSecondXAxisTitle")(getSecondXAxisTitle)
-    __obj.updateDynamic("getSecondYAxisTitle")(getSecondYAxisTitle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SecondXAxisTitle = SecondXAxisTitle, SecondYAxisTitle = SecondYAxisTitle, acquire = acquire, getSecondXAxisTitle = getSecondXAxisTitle, getSecondYAxisTitle = getSecondYAxisTitle, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSecondAxisTitleSupplier]
   }
 }

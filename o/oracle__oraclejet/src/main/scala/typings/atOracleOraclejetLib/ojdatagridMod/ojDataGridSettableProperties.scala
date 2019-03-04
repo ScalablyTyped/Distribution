@@ -42,19 +42,7 @@ object ojDataGridSettableProperties {
     currentCell: atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.CurrentCell[K] = null,
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): ojDataGridSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bandingInterval")(bandingInterval)
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("dnd")(dnd)
-    __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("gridlines")(gridlines)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("scrollPolicy")(scrollPolicy.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrollPolicyOptions")(scrollPolicyOptions)
-    __obj.updateDynamic("scrollPosition")(scrollPosition)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("selectionMode")(selectionMode)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(bandingInterval = bandingInterval, cell = cell, dnd = dnd, editMode = editMode.asInstanceOf[js.Any], gridlines = gridlines, header = header, scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode, translations = translations)
     if (currentCell != null) __obj.updateDynamic("currentCell")(currentCell)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[ojDataGridSettableProperties[K, D]]

@@ -20,8 +20,7 @@ object NavigationBarButton {
     handler: js.Function0[scala.Unit] = null,
     style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
   ): NavigationBarButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (handler != null) __obj.updateDynamic("handler")(handler)
     if (style != null) __obj.updateDynamic("style")(style)

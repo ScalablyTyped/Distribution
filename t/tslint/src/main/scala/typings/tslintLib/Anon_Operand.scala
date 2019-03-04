@@ -12,8 +12,8 @@ trait Anon_Operand extends js.Object {
 object Anon_Operand {
   @scala.inline
   def apply(operand: typescriptLib.typescriptMod.tsNs.NumericLiteral): Anon_Operand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operand")(operand)
+    val __obj = js.Dynamic.literal(operand = operand)
+  
     __obj.asInstanceOf[Anon_Operand]
   }
 }

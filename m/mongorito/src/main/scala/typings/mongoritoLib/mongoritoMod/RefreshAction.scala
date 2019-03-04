@@ -12,8 +12,8 @@ trait RefreshAction extends Action {
 object RefreshAction {
   @scala.inline
   def apply(`type`: ActionTypes): RefreshAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RefreshAction]
   }
 }

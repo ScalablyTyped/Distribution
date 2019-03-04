@@ -24,9 +24,8 @@ object ActivitiesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): ActivitiesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(list = list, watch = watch)
+  
     __obj.asInstanceOf[ActivitiesResource]
   }
 }

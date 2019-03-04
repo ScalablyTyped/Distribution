@@ -19,9 +19,8 @@ trait ITransformUsage extends js.Object {
 object ITransformUsage {
   @scala.inline
   def apply(divide_by: scala.Double, round: stripeLib.stripeLibStrings.up | stripeLib.stripeLibStrings.down): ITransformUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("divide_by")(divide_by)
-    __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(divide_by = divide_by, round = round.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ITransformUsage]
   }
 }

@@ -42,22 +42,8 @@ object FieldArrayFieldsProps {
     swap: js.Function2[scala.Double, scala.Double, scala.Unit],
     unshift: js.Function1[FieldValue, scala.Unit]
   ): FieldArrayFieldsProps[FieldValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("swap")(swap)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(forEach = forEach, get = get, getAll = getAll, insert = insert, length = length, map = map, move = move, name = name, pop = pop, push = push, remove = remove, removeAll = removeAll, shift = shift, swap = swap, unshift = unshift)
+  
     __obj.asInstanceOf[FieldArrayFieldsProps[FieldValue]]
   }
 }

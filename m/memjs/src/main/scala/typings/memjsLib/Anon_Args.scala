@@ -12,8 +12,8 @@ trait Anon_Args extends js.Object {
 object Anon_Args {
   @scala.inline
   def apply(log: js.Function1[/* repeated */ js.Any, scala.Unit]): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

@@ -52,9 +52,8 @@ object ActionSheetIOSStatic {
       scala.Unit
     ]
   ): ActionSheetIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("showActionSheetWithOptions")(showActionSheetWithOptions)
-    __obj.updateDynamic("showShareActionSheetWithOptions")(showShareActionSheetWithOptions)
+    val __obj = js.Dynamic.literal(showActionSheetWithOptions = showActionSheetWithOptions, showShareActionSheetWithOptions = showShareActionSheetWithOptions)
+  
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }
 }

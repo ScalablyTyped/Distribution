@@ -39,10 +39,7 @@ object workersOpenOptions {
     client: js.Any = null,
     strategy: js.Any = null
   ): workersOpenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (client != null) __obj.updateDynamic("client")(client)
     if (strategy != null) __obj.updateDynamic("strategy")(strategy)
     __obj.asInstanceOf[workersOpenOptions]

@@ -18,10 +18,8 @@ object MediaDevices {
     getSupportedConstraints: js.Function0[MediaTrackSupportedConstraints],
     getUserMedia: js.Function1[MediaStreamConstraints, js.Promise[MediaStream]]
   ): MediaDevices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumerateDevices")(enumerateDevices)
-    __obj.updateDynamic("getSupportedConstraints")(getSupportedConstraints)
-    __obj.updateDynamic("getUserMedia")(getUserMedia)
+    val __obj = js.Dynamic.literal(enumerateDevices = enumerateDevices, getSupportedConstraints = getSupportedConstraints, getUserMedia = getUserMedia)
+  
     __obj.asInstanceOf[MediaDevices]
   }
 }

@@ -23,9 +23,8 @@ object TemplateLiteral {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): TemplateLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expressions")(expressions)
-    __obj.updateDynamic("quasis")(quasis)
+    val __obj = js.Dynamic.literal(expressions = expressions, quasis = quasis)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

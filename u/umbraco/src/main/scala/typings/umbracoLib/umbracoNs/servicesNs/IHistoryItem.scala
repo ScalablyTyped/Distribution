@@ -20,10 +20,8 @@ trait IHistoryItem extends js.Object {
 object IHistoryItem {
   @scala.inline
   def apply(icon: java.lang.String, link: java.lang.String, name: java.lang.String): IHistoryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(icon = icon, link = link, name = name)
+  
     __obj.asInstanceOf[IHistoryItem]
   }
 }

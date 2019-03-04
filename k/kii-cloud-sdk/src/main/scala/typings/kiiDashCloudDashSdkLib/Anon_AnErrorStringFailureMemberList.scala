@@ -23,9 +23,8 @@ object Anon_AnErrorStringFailureMemberList {
       js.Any
     ]
   ): Anon_AnErrorStringFailureMemberList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureMemberList]
   }
 }

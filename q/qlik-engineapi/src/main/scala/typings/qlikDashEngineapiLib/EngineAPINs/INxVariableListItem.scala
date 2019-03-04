@@ -73,13 +73,7 @@ object INxVariableListItem {
     qIsReserved: js.UndefOr[scala.Boolean] = js.undefined,
     qMeta: INxMeta = null
   ): INxVariableListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qData")(qData)
-    __obj.updateDynamic("qDefinition")(qDefinition)
-    __obj.updateDynamic("qDescription")(qDescription)
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qIsScriptCreated")(qIsScriptCreated)
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qData = qData, qDefinition = qDefinition, qDescription = qDescription, qInfo = qInfo, qIsScriptCreated = qIsScriptCreated, qName = qName)
     if (!js.isUndefined(qIsConfig)) __obj.updateDynamic("qIsConfig")(qIsConfig)
     if (!js.isUndefined(qIsReserved)) __obj.updateDynamic("qIsReserved")(qIsReserved)
     if (qMeta != null) __obj.updateDynamic("qMeta")(qMeta)

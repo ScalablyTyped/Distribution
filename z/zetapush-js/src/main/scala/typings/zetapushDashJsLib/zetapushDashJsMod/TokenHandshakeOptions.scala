@@ -14,10 +14,8 @@ trait TokenHandshakeOptions extends js.Object {
 object TokenHandshakeOptions {
   @scala.inline
   def apply(authType: java.lang.String, deploymentId: java.lang.String, token: java.lang.String): TokenHandshakeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authType")(authType)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(authType = authType, deploymentId = deploymentId, token = token)
+  
     __obj.asInstanceOf[TokenHandshakeOptions]
   }
 }

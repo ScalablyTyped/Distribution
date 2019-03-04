@@ -31,12 +31,8 @@ object XStatusListener {
     release: js.Function0[scala.Unit],
     statusChanged: js.Function1[FeatureStateEvent, scala.Unit]
   ): XStatusListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("statusChanged")(statusChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, statusChanged = statusChanged)
+  
     __obj.asInstanceOf[XStatusListener]
   }
 }

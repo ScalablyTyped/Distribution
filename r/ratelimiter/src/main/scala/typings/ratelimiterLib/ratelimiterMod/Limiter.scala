@@ -16,9 +16,8 @@ object Limiter {
     get: js.Function1[js.Function2[/* err */ js.Any, /* info */ LimiterInfo, scala.Unit], scala.Unit],
     inspect: js.Function0[java.lang.String]
   ): Limiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("inspect")(inspect)
+    val __obj = js.Dynamic.literal(get = get, inspect = inspect)
+  
     __obj.asInstanceOf[Limiter]
   }
 }

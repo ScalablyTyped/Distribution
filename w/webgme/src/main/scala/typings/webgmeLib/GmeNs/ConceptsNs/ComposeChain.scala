@@ -13,8 +13,7 @@ trait ComposeChain extends js.Object {
 object ComposeChain {
   @scala.inline
   def apply(objId: java.lang.String, subCompId: java.lang.String = null): ComposeChain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objId")(objId)
+    val __obj = js.Dynamic.literal(objId = objId)
     if (subCompId != null) __obj.updateDynamic("subCompId")(subCompId)
     __obj.asInstanceOf[ComposeChain]
   }

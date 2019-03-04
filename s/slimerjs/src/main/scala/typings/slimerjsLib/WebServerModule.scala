@@ -12,8 +12,8 @@ trait WebServerModule extends js.Object {
 object WebServerModule {
   @scala.inline
   def apply(create: js.Function0[WebServer]): WebServerModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[WebServerModule]
   }
 }

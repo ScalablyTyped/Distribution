@@ -34,11 +34,8 @@ object ParcelBundler {
       ]
     ]
   ): ParcelBundler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAssetType")(addAssetType)
-    __obj.updateDynamic("addPackager")(addPackager)
-    __obj.updateDynamic("bundle")(bundle)
-    __obj.updateDynamic("middleware")(middleware)
+    val __obj = js.Dynamic.literal(addAssetType = addAssetType, addPackager = addPackager, bundle = bundle, middleware = middleware)
+  
     __obj.asInstanceOf[ParcelBundler]
   }
 }

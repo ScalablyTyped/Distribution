@@ -28,15 +28,8 @@ object RadarPoint {
     x: scala.Double,
     y: scala.Double
   ): RadarPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("cx")(cx)
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(angle = angle, cx = cx, cy = cy, payload = payload, radius = radius, value = value, x = x, y = y)
+  
     __obj.asInstanceOf[RadarPoint]
   }
 }

@@ -12,8 +12,8 @@ trait EvictionResult extends js.Object {
 object EvictionResult {
   @scala.inline
   def apply(success: scala.Boolean): EvictionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
+  
     __obj.asInstanceOf[EvictionResult]
   }
 }

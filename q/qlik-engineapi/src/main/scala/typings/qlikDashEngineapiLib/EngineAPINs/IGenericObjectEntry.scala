@@ -30,10 +30,8 @@ object IGenericObjectEntry {
     qEmbeddedSnapshotRef: IGenericBookmarkEntry,
     qProperty: IGenericObjectProperties
   ): IGenericObjectEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qChildren")(qChildren)
-    __obj.updateDynamic("qEmbeddedSnapshotRef")(qEmbeddedSnapshotRef)
-    __obj.updateDynamic("qProperty")(qProperty)
+    val __obj = js.Dynamic.literal(qChildren = qChildren, qEmbeddedSnapshotRef = qEmbeddedSnapshotRef, qProperty = qProperty)
+  
     __obj.asInstanceOf[IGenericObjectEntry]
   }
 }

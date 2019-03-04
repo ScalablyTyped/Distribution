@@ -20,8 +20,7 @@ object Anon_Background {
     handle: js.UndefOr[scala.Boolean] = js.undefined,
     listClass: java.lang.String = null
   ): Anon_Background = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (background != null) __obj.updateDynamic("background")(background)
     if (!js.isUndefined(handle)) __obj.updateDynamic("handle")(handle)
     if (listClass != null) __obj.updateDynamic("listClass")(listClass)

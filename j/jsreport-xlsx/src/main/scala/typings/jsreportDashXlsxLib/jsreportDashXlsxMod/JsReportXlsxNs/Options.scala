@@ -14,10 +14,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(addBufferSize: scala.Double, escapeAmp: scala.Boolean, numberOfParsedAddIterations: scala.Double): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBufferSize")(addBufferSize)
-    __obj.updateDynamic("escapeAmp")(escapeAmp)
-    __obj.updateDynamic("numberOfParsedAddIterations")(numberOfParsedAddIterations)
+    val __obj = js.Dynamic.literal(addBufferSize = addBufferSize, escapeAmp = escapeAmp, numberOfParsedAddIterations = numberOfParsedAddIterations)
+  
     __obj.asInstanceOf[Options]
   }
 }

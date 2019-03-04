@@ -43,11 +43,8 @@ object Setting {
     ],
     set: js.Function1[firefoxDashWebextDashBrowserLib.Anon_Scope, js.Promise[scala.Unit]]
   ): Setting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, onChange = onChange, set = set)
+  
     __obj.asInstanceOf[Setting]
   }
 }

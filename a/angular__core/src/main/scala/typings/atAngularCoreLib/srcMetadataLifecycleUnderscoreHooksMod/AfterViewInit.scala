@@ -18,8 +18,8 @@ trait AfterViewInit extends js.Object {
 object AfterViewInit {
   @scala.inline
   def apply(ngAfterViewInit: js.Function0[scala.Unit]): AfterViewInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngAfterViewInit")(ngAfterViewInit)
+    val __obj = js.Dynamic.literal(ngAfterViewInit = ngAfterViewInit)
+  
     __obj.asInstanceOf[AfterViewInit]
   }
 }

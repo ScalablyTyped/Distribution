@@ -22,12 +22,8 @@ object ProgressData {
     src: java.lang.String,
     written: scala.Double
   ): ProgressData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dest")(dest)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("written")(written)
+    val __obj = js.Dynamic.literal(dest = dest, percent = percent, size = size, src = src, written = written)
+  
     __obj.asInstanceOf[ProgressData]
   }
 }

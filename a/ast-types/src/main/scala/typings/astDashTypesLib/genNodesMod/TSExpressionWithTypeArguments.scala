@@ -24,8 +24,8 @@ object TSExpressionWithTypeArguments {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSExpressionWithTypeArguments,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
   ): TSExpressionWithTypeArguments = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSExpressionWithTypeArguments]
   }

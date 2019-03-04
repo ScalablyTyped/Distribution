@@ -32,11 +32,8 @@ object Anon_BytesHeaders {
     raw: nodeLib.httpMod.ServerResponse,
     status: scala.Double
   ): Anon_BytesHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, raw = raw, status = status)
+  
     __obj.asInstanceOf[Anon_BytesHeaders]
   }
 }

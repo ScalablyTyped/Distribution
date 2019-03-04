@@ -36,9 +36,7 @@ object LoadBalancerCookieStickinessPolicyArgs {
     cookieExpirationPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): LoadBalancerCookieStickinessPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lbPort = lbPort.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
     if (cookieExpirationPeriod != null) __obj.updateDynamic("cookieExpirationPeriod")(cookieExpirationPeriod.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerCookieStickinessPolicyArgs]

@@ -39,12 +39,7 @@ object WebExtensionLangpackManifest {
     short_name: java.lang.String = null,
     sources: org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.Anon_Basepath] = null
   ): WebExtensionLangpackManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("langpack_id")(langpack_id)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("manifest_version")(manifest_version)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(langpack_id = langpack_id, languages = languages, manifest_version = manifest_version, name = name, version = version)
     if (applications != null) __obj.updateDynamic("applications")(applications)
     if (author != null) __obj.updateDynamic("author")(author)
     if (browser_specific_settings != null) __obj.updateDynamic("browser_specific_settings")(browser_specific_settings)

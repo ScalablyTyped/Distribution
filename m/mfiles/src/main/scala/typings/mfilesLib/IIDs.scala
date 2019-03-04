@@ -26,14 +26,8 @@ object IIDs {
     Remove: js.Function1[scala.Double, scala.Unit],
     RemoveAll: js.Function1[scala.Double, scala.Double]
   ): IIDs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("IndexOf")(IndexOf)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Remove")(Remove)
-    __obj.updateDynamic("RemoveAll")(RemoveAll)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, Count = Count, IndexOf = IndexOf, Item = Item, Remove = Remove, RemoveAll = RemoveAll)
+  
     __obj.asInstanceOf[IIDs]
   }
 }

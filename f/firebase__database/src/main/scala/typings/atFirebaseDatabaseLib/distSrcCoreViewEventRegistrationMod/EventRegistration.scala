@@ -68,13 +68,8 @@ object EventRegistration {
     matches: js.Function1[EventRegistration, scala.Boolean],
     respondsTo: js.Function1[java.lang.String, scala.Boolean]
   ): EventRegistration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createCancelEvent")(createCancelEvent)
-    __obj.updateDynamic("createEvent")(createEvent)
-    __obj.updateDynamic("getEventRunner")(getEventRunner)
-    __obj.updateDynamic("hasAnyCallback")(hasAnyCallback)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("respondsTo")(respondsTo)
+    val __obj = js.Dynamic.literal(createCancelEvent = createCancelEvent, createEvent = createEvent, getEventRunner = getEventRunner, hasAnyCallback = hasAnyCallback, matches = matches, respondsTo = respondsTo)
+  
     __obj.asInstanceOf[EventRegistration]
   }
 }

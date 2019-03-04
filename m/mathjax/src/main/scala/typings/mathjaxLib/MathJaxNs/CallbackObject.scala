@@ -33,12 +33,8 @@ object CallbackObject {
     `object`: js.Any,
     reset: js.Function0[scala.Unit]
   ): CallbackObject = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("autoReset")(autoReset)
-    __obj.updateDynamic("called")(called)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("hook")(hook)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(autoReset = autoReset, called = called, data = data, hook = hook, reset = reset)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[CallbackObject]
   }
 }

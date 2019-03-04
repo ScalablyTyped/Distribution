@@ -26,8 +26,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Iam protected () extends js.Object {
   def this(bucket: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket) = this()
-  var `request_`: js.Any = js.native
-  var `resourceId_`: js.Any = js.native
+  var request_ : js.Any = js.native
+  var resourceId_ : js.Any = js.native
   def getPolicy(): js.Promise[GetPolicyResponse] = js.native
   def getPolicy(callback: GetPolicyCallback): scala.Unit = js.native
   def getPolicy(options: GetPolicyOptions): js.Promise[GetPolicyResponse] = js.native

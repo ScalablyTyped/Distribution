@@ -18,9 +18,7 @@ object SketchMSImageCollection {
     images: js.Array[_],
     do_objectID: java.lang.String = null
   ): SketchMSImageCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("images")(images)
+    val __obj = js.Dynamic.literal(_class = _class, images = images)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSImageCollection]
   }

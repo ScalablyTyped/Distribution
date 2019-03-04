@@ -20,11 +20,8 @@ object IAffix {
     destroy: js.Function0[scala.Unit],
     init: js.Function0[scala.Unit]
   ): IAffix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkPosition")(checkPosition)
-    __obj.updateDynamic("checkPositionWithEventLoop")(checkPositionWithEventLoop)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(checkPosition = checkPosition, checkPositionWithEventLoop = checkPositionWithEventLoop, destroy = destroy, init = init)
+  
     __obj.asInstanceOf[IAffix]
   }
 }

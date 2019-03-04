@@ -33,15 +33,15 @@ abstract class ParallelSystem protected ()
   /**
     * @hidden
     */
-  var `enforced_`: js.Any = js.native
+  var enforced_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `exclude_`: js.Any = js.native
+  var exclude_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `history_list_`: js.Any = js.native
+  var history_list_ : js.Any = js.native
   /**
     * @hidden
     */
@@ -49,7 +49,7 @@ abstract class ParallelSystem protected ()
   /**
     * @hidden
     */
-  var `progress_list_`: js.Any = js.native
+  var progress_list_ : js.Any = js.native
   /**
     * @hidden
     */

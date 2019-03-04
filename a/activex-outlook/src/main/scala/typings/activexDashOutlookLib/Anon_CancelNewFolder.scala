@@ -13,9 +13,8 @@ trait Anon_CancelNewFolder extends js.Object {
 object Anon_CancelNewFolder {
   @scala.inline
   def apply(Cancel: scala.Boolean, NewFolder: js.Any): Anon_CancelNewFolder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("NewFolder")(NewFolder)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, NewFolder = NewFolder)
+  
     __obj.asInstanceOf[Anon_CancelNewFolder]
   }
 }

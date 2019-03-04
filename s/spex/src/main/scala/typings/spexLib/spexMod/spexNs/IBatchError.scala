@@ -30,15 +30,8 @@ object IBatchError {
     stat: IBatchStat,
     toString: js.Function0[java.lang.String]
   ): IBatchError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("getErrors")(getErrors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("stat")(stat)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(data = data, first = first, getErrors = getErrors, message = message, name = name, stack = stack, stat = stat, toString = toString)
+  
     __obj.asInstanceOf[IBatchError]
   }
 }

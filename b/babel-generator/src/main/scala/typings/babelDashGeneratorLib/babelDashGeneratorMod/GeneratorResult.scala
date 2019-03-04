@@ -12,8 +12,8 @@ trait GeneratorResult extends js.Object {
 object GeneratorResult {
   @scala.inline
   def apply(code: java.lang.String): GeneratorResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
+  
     __obj.asInstanceOf[GeneratorResult]
   }
 }

@@ -44,23 +44,8 @@ object TypeDescriptionManager {
     remove: js.Function1[js.Any, scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): TypeDescriptionManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("createTypeDescriptionEnumeration")(createTypeDescriptionEnumeration)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, createEnumeration = createEnumeration, createTypeDescriptionEnumeration = createTypeDescriptionEnumeration, dispose = dispose, getByHierarchicalName = getByHierarchicalName, getElementType = getElementType, has = has, hasByHierarchicalName = hasByHierarchicalName, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, remove = remove, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[TypeDescriptionManager]
   }
 }

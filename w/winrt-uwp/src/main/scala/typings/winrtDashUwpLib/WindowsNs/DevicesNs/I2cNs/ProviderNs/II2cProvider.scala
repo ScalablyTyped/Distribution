@@ -13,8 +13,8 @@ trait II2cProvider extends js.Object {
 object II2cProvider {
   @scala.inline
   def apply(getControllersAsync: js.Any): II2cProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControllersAsync")(getControllersAsync)
+    val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync)
+  
     __obj.asInstanceOf[II2cProvider]
   }
 }

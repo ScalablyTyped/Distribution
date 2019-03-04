@@ -32,17 +32,8 @@ object InjectedArrayProps {
     swap: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
     unshift: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): InjectedArrayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("splice")(splice)
-    __obj.updateDynamic("swap")(swap)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(insert = insert, move = move, pop = pop, push = push, remove = remove, removeAll = removeAll, shift = shift, splice = splice, swap = swap, unshift = unshift)
+  
     __obj.asInstanceOf[InjectedArrayProps]
   }
 }

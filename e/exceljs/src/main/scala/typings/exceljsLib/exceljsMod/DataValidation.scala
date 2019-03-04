@@ -34,8 +34,8 @@ object DataValidation {
     showErrorMessage: js.UndefOr[scala.Boolean] = js.undefined,
     showInputMessage: js.UndefOr[scala.Boolean] = js.undefined
   ): DataValidation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("formulae")(formulae)
+    val __obj = js.Dynamic.literal(formulae = formulae)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowBlank)) __obj.updateDynamic("allowBlank")(allowBlank)
     if (error != null) __obj.updateDynamic("error")(error)
     if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle)

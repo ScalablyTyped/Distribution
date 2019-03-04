@@ -26,8 +26,7 @@ object Anon_EndTime {
     maxResults: scala.Int | scala.Double = null,
     startTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null
   ): Anon_EndTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])

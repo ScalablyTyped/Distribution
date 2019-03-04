@@ -14,10 +14,8 @@ trait RuleActionModel extends js.Object {
 object RuleActionModel {
   @scala.inline
   def apply(actionType: java.lang.String, targetField: java.lang.String, value: java.lang.String): RuleActionModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionType")(actionType)
-    __obj.updateDynamic("targetField")(targetField)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(actionType = actionType, targetField = targetField, value = value)
+  
     __obj.asInstanceOf[RuleActionModel]
   }
 }

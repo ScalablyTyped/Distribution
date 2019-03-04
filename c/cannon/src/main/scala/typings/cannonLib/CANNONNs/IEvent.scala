@@ -12,8 +12,8 @@ trait IEvent extends js.Object {
 object IEvent {
   @scala.inline
   def apply(`type`: java.lang.String): IEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IEvent]
   }
 }

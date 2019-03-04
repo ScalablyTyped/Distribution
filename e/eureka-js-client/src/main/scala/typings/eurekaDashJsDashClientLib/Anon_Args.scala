@@ -20,11 +20,8 @@ object Anon_Args {
     info: js.Function1[/* repeated */ js.Any, scala.Unit],
     warn: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, warn = warn)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

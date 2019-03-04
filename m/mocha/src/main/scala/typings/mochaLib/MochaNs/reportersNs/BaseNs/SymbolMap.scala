@@ -29,12 +29,7 @@ object SymbolMap {
     ok: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): SymbolMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bang")(bang)
-    __obj.updateDynamic("comma")(comma)
-    __obj.updateDynamic("dot")(dot)
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("ok")(ok)
+    val __obj = js.Dynamic.literal(bang = bang, comma = comma, dot = dot, err = err, ok = ok)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SymbolMap]
   }

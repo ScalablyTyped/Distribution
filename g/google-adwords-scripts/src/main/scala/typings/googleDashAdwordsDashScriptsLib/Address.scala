@@ -26,14 +26,8 @@ object Address {
     getStreetAddress: js.Function0[java.lang.String],
     getStreetAddress2: js.Function0[java.lang.String]
   ): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCityName")(getCityName)
-    __obj.updateDynamic("getCountryCode")(getCountryCode)
-    __obj.updateDynamic("getPostalCode")(getPostalCode)
-    __obj.updateDynamic("getProvinceCode")(getProvinceCode)
-    __obj.updateDynamic("getProvinceName")(getProvinceName)
-    __obj.updateDynamic("getStreetAddress")(getStreetAddress)
-    __obj.updateDynamic("getStreetAddress2")(getStreetAddress2)
+    val __obj = js.Dynamic.literal(getCityName = getCityName, getCountryCode = getCountryCode, getPostalCode = getPostalCode, getProvinceCode = getProvinceCode, getProvinceName = getProvinceName, getStreetAddress = getStreetAddress, getStreetAddress2 = getStreetAddress2)
+  
     __obj.asInstanceOf[Address]
   }
 }

@@ -30,22 +30,8 @@ object Atrule {
     toJSON: js.Function0[stylusLib.Anon_BlockColumnFilenameLinenoSegments],
     `type`: java.lang.String
   ): Atrule = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("coerce")(coerce)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hasOnlyProperties")(hasOnlyProperties)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("operate")(operate)
-    __obj.updateDynamic("shouldCoerce")(shouldCoerce)
-    __obj.updateDynamic("toBoolean")(toBoolean)
-    __obj.updateDynamic("toExpression")(toExpression)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hasOnlyProperties = hasOnlyProperties, hash = hash, lineno = lineno, nodeName = nodeName, operate = operate, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Atrule]
   }
 }

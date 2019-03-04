@@ -26,14 +26,8 @@ object Anon_MedianSvgClassName {
     whiskerSvgClassName: java.lang.String,
     whiskerSvgStyle: js.Object
   ): Anon_MedianSvgClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("medianSvgClassName")(medianSvgClassName)
-    __obj.updateDynamic("medianSvgStyle")(medianSvgStyle)
-    __obj.updateDynamic("whiskerEndLength")(whiskerEndLength)
-    __obj.updateDynamic("whiskerEndSvgClassName")(whiskerEndSvgClassName)
-    __obj.updateDynamic("whiskerEndSvgStyle")(whiskerEndSvgStyle)
-    __obj.updateDynamic("whiskerSvgClassName")(whiskerSvgClassName)
-    __obj.updateDynamic("whiskerSvgStyle")(whiskerSvgStyle)
+    val __obj = js.Dynamic.literal(medianSvgClassName = medianSvgClassName, medianSvgStyle = medianSvgStyle, whiskerEndLength = whiskerEndLength, whiskerEndSvgClassName = whiskerEndSvgClassName, whiskerEndSvgStyle = whiskerEndSvgStyle, whiskerSvgClassName = whiskerSvgClassName, whiskerSvgStyle = whiskerSvgStyle)
+  
     __obj.asInstanceOf[Anon_MedianSvgClassName]
   }
 }

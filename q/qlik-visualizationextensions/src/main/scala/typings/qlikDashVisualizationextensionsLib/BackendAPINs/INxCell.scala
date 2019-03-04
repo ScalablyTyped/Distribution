@@ -98,17 +98,7 @@ object INxCell {
     qNum: scala.Int | scala.Double = null,
     qText: java.lang.String = null
   ): INxCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttrDims")(qAttrDims)
-    __obj.updateDynamic("qAttrExps")(qAttrExps)
-    __obj.updateDynamic("qElemNumber")(qElemNumber)
-    __obj.updateDynamic("qFrequency")(qFrequency)
-    __obj.updateDynamic("qHighlightRanges")(qHighlightRanges)
-    __obj.updateDynamic("qIsEmpty")(qIsEmpty)
-    __obj.updateDynamic("qIsNull")(qIsNull)
-    __obj.updateDynamic("qIsOtherCell")(qIsOtherCell)
-    __obj.updateDynamic("qIsTotalCell")(qIsTotalCell)
-    __obj.updateDynamic("qState")(qState)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qElemNumber = qElemNumber, qFrequency = qFrequency, qHighlightRanges = qHighlightRanges, qIsEmpty = qIsEmpty, qIsNull = qIsNull, qIsOtherCell = qIsOtherCell, qIsTotalCell = qIsTotalCell, qState = qState)
     if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
     if (qText != null) __obj.updateDynamic("qText")(qText)
     __obj.asInstanceOf[INxCell]

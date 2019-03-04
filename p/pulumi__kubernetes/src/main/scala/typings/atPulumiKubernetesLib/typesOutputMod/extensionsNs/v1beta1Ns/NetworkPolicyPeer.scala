@@ -42,10 +42,8 @@ object NetworkPolicyPeer {
     namespaceSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
     podSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
   ): NetworkPolicyPeer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipBlock")(ipBlock)
-    __obj.updateDynamic("namespaceSelector")(namespaceSelector)
-    __obj.updateDynamic("podSelector")(podSelector)
+    val __obj = js.Dynamic.literal(ipBlock = ipBlock, namespaceSelector = namespaceSelector, podSelector = podSelector)
+  
     __obj.asInstanceOf[NetworkPolicyPeer]
   }
 }

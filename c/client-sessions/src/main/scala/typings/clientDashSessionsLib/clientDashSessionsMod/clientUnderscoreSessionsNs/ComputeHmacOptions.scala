@@ -13,9 +13,8 @@ trait ComputeHmacOptions extends js.Object {
 object ComputeHmacOptions {
   @scala.inline
   def apply(signatureAlgorithm: java.lang.String, signatureKey: nodeLib.Buffer): ComputeHmacOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
-    __obj.updateDynamic("signatureKey")(signatureKey)
+    val __obj = js.Dynamic.literal(signatureAlgorithm = signatureAlgorithm, signatureKey = signatureKey)
+  
     __obj.asInstanceOf[ComputeHmacOptions]
   }
 }

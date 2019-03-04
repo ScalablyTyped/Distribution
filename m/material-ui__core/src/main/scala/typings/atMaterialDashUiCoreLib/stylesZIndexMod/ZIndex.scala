@@ -24,13 +24,8 @@ object ZIndex {
     snackbar: scala.Double,
     tooltip: scala.Double
   ): ZIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appBar")(appBar)
-    __obj.updateDynamic("drawer")(drawer)
-    __obj.updateDynamic("mobileStepper")(mobileStepper)
-    __obj.updateDynamic("modal")(modal)
-    __obj.updateDynamic("snackbar")(snackbar)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(appBar = appBar, drawer = drawer, mobileStepper = mobileStepper, modal = modal, snackbar = snackbar, tooltip = tooltip)
+  
     __obj.asInstanceOf[ZIndex]
   }
 }

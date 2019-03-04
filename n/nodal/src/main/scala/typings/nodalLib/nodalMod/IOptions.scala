@@ -15,11 +15,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(as: java.lang.String, multiple: scala.Boolean, name: java.lang.String, via: java.lang.String): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("multiple")(multiple)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("via")(via)
+    val __obj = js.Dynamic.literal(as = as, multiple = multiple, name = name, via = via)
+  
     __obj.asInstanceOf[IOptions]
   }
 }

@@ -41,11 +41,8 @@ object TokenReviewStatus {
     error: java.lang.String,
     user: UserInfo
   ): TokenReviewStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audiences")(audiences)
-    __obj.updateDynamic("authenticated")(authenticated)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(audiences = audiences, authenticated = authenticated, error = error, user = user)
+  
     __obj.asInstanceOf[TokenReviewStatus]
   }
 }

@@ -16,9 +16,8 @@ object Anon_GlParent {
     glParent: glDashReactLib.glDashReactMod.Surface[_] | glDashReactLib.glDashReactMod.Node,
     glSurface: glDashReactLib.glDashReactMod.Surface[_]
   ): Anon_GlParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("glParent")(glParent.asInstanceOf[js.Any])
-    __obj.updateDynamic("glSurface")(glSurface)
+    val __obj = js.Dynamic.literal(glParent = glParent.asInstanceOf[js.Any], glSurface = glSurface)
+  
     __obj.asInstanceOf[Anon_GlParent]
   }
 }

@@ -19,10 +19,8 @@ object WebCLDevice {
     getInfo: js.Function1[DeviceInfo, js.Any],
     getSupportedExtensions: js.Function0[js.Array[java.lang.String]]
   ): WebCLDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enableExtension")(enableExtension)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getSupportedExtensions")(getSupportedExtensions)
+    val __obj = js.Dynamic.literal(enableExtension = enableExtension, getInfo = getInfo, getSupportedExtensions = getSupportedExtensions)
+  
     __obj.asInstanceOf[WebCLDevice]
   }
 }

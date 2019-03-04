@@ -26,12 +26,8 @@ object SketchMSStyleBlur {
     `type`: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleBlur = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("motionAngle")(motionAngle)
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(_class = _class, center = center, isEnabled = isEnabled, motionAngle = motionAngle, radius = radius)
+    __obj.updateDynamic("type")(`type`)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleBlur]
   }

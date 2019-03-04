@@ -12,8 +12,8 @@ trait WindowLocalStorage extends js.Object {
 object WindowLocalStorage {
   @scala.inline
   def apply(localStorage: Storage): WindowLocalStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localStorage")(localStorage)
+    val __obj = js.Dynamic.literal(localStorage = localStorage)
+  
     __obj.asInstanceOf[WindowLocalStorage]
   }
 }

@@ -35,9 +35,7 @@ object ShortMove {
     to: Square,
     promotion: chessDotJsLib.chessDotJsLibStrings.n | chessDotJsLib.chessDotJsLibStrings.b | chessDotJsLib.chessDotJsLibStrings.r | chessDotJsLib.chessDotJsLibStrings.q = null
   ): ShortMove = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, to = to)
     if (promotion != null) __obj.updateDynamic("promotion")(promotion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortMove]
   }

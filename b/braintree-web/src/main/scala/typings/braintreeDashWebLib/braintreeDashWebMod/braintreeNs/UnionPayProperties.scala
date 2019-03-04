@@ -20,9 +20,8 @@ trait UnionPayProperties extends js.Object {
 object UnionPayProperties {
   @scala.inline
   def apply(isSupported: scala.Boolean, supportsTwoStepAuthAndCapture: scala.Boolean): UnionPayProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSupported")(isSupported)
-    __obj.updateDynamic("supportsTwoStepAuthAndCapture")(supportsTwoStepAuthAndCapture)
+    val __obj = js.Dynamic.literal(isSupported = isSupported, supportsTwoStepAuthAndCapture = supportsTwoStepAuthAndCapture)
+  
     __obj.asInstanceOf[UnionPayProperties]
   }
 }

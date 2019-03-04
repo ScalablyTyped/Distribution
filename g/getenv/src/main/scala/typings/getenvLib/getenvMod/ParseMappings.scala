@@ -24,13 +24,8 @@ object ParseMappings {
     string: java.lang.String,
     url: nodeLib.urlMod.UrlWithStringQuery
   ): ParseMappings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bool")(bool)
-    __obj.updateDynamic("boolish")(boolish)
-    __obj.updateDynamic("float")(float)
-    __obj.updateDynamic("int")(int)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bool = bool, boolish = boolish, float = float, int = int, string = string, url = url)
+  
     __obj.asInstanceOf[ParseMappings]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_CenterPoint extends js.Object {
 object Anon_CenterPoint {
   @scala.inline
   def apply(centerPoint: scala.Double, zoomAmount: scala.Double): Anon_CenterPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("centerPoint")(centerPoint)
-    __obj.updateDynamic("zoomAmount")(zoomAmount)
+    val __obj = js.Dynamic.literal(centerPoint = centerPoint, zoomAmount = zoomAmount)
+  
     __obj.asInstanceOf[Anon_CenterPoint]
   }
 }

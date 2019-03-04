@@ -22,10 +22,7 @@ object PaginatorDeps {
     max: scala.Int | scala.Double = null,
     state: stdLib.Partial[S] = null
   ): PaginatorDeps[T, S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("guard")(guard)
-    __obj.updateDynamic("reqgen")(reqgen)
+    val __obj = js.Dynamic.literal(client = client, guard = guard, reqgen = reqgen)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[PaginatorDeps[T, S]]

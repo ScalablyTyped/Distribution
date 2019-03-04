@@ -52,16 +52,8 @@ object DefaultFormComponentInspectorModel {
     ],
     getPropertyOrderIndex: js.Function1[java.lang.String, scala.Double]
   ): DefaultFormComponentInspectorModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HandlerFactories")(HandlerFactories)
-    __obj.updateDynamic("HasHelpSection")(HasHelpSection)
-    __obj.updateDynamic("IsReadOnly")(IsReadOnly)
-    __obj.updateDynamic("MaxHelpTextLines")(MaxHelpTextLines)
-    __obj.updateDynamic("MinHelpTextLines")(MinHelpTextLines)
-    __obj.updateDynamic("createDefault")(createDefault)
-    __obj.updateDynamic("createWithHelpSection")(createWithHelpSection)
-    __obj.updateDynamic("describeCategories")(describeCategories)
-    __obj.updateDynamic("getPropertyOrderIndex")(getPropertyOrderIndex)
+    val __obj = js.Dynamic.literal(HandlerFactories = HandlerFactories, HasHelpSection = HasHelpSection, IsReadOnly = IsReadOnly, MaxHelpTextLines = MaxHelpTextLines, MinHelpTextLines = MinHelpTextLines, createDefault = createDefault, createWithHelpSection = createWithHelpSection, describeCategories = describeCategories, getPropertyOrderIndex = getPropertyOrderIndex)
+  
     __obj.asInstanceOf[DefaultFormComponentInspectorModel]
   }
 }

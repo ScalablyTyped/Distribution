@@ -18,9 +18,7 @@ object Anon_Format {
     variant: java.lang.String,
     version: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Format = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("variant")(variant)
+    val __obj = js.Dynamic.literal(format = format, variant = variant)
     if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[Anon_Format]
   }

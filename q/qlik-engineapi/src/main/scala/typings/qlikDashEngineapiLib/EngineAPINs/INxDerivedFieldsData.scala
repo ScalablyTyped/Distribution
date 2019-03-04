@@ -35,11 +35,8 @@ object INxDerivedFieldsData {
     qGroupDefs: js.Array[INxDerivedGroup],
     qTags: js.Array[java.lang.String]
   ): INxDerivedFieldsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDerivedDefinitionName")(qDerivedDefinitionName)
-    __obj.updateDynamic("qFieldDefs")(qFieldDefs)
-    __obj.updateDynamic("qGroupDefs")(qGroupDefs)
-    __obj.updateDynamic("qTags")(qTags)
+    val __obj = js.Dynamic.literal(qDerivedDefinitionName = qDerivedDefinitionName, qFieldDefs = qFieldDefs, qGroupDefs = qGroupDefs, qTags = qTags)
+  
     __obj.asInstanceOf[INxDerivedFieldsData]
   }
 }

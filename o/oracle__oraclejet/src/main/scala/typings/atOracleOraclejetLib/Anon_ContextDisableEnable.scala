@@ -24,8 +24,7 @@ object Anon_ContextDisableEnable {
       java.lang.String
     ]) | java.lang.String = null
   ): Anon_ContextDisableEnable[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ContextDisableEnable[K, D]]
   }

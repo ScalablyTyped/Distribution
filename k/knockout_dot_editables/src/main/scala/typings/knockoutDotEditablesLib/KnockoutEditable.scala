@@ -23,12 +23,8 @@ object KnockoutEditable {
     hasChanges: js.Function0[scala.Boolean],
     rollback: js.Function0[scala.Unit]
   ): KnockoutEditable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEditable")(addEditable)
-    __obj.updateDynamic("beginEdit")(beginEdit)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("hasChanges")(hasChanges)
-    __obj.updateDynamic("rollback")(rollback)
+    val __obj = js.Dynamic.literal(addEditable = addEditable, beginEdit = beginEdit, commit = commit, hasChanges = hasChanges, rollback = rollback)
+  
     __obj.asInstanceOf[KnockoutEditable]
   }
 }

@@ -33,17 +33,8 @@ object NestedResults {
     totalCount: scala.Double,
     `type`: java.lang.String
   ): NestedResults = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addResult")(addResult)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("failedCount")(failedCount)
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("passed")(passed)
-    __obj.updateDynamic("passedCount")(passedCount)
-    __obj.updateDynamic("rollupCounts")(rollupCounts)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("totalCount")(totalCount)
+    val __obj = js.Dynamic.literal(addResult = addResult, description = description, failedCount = failedCount, getItems = getItems, log = log, passed = passed, passedCount = passedCount, rollupCounts = rollupCounts, skipped = skipped, totalCount = totalCount)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NestedResults]
   }
 }

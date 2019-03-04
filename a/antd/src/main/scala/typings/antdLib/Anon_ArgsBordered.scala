@@ -38,20 +38,8 @@ object Anon_ArgsBordered {
     sortDirections: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
     useFixedHeader: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   ): Anon_ArgsBordered = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bordered")(bordered)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("rowSelection")(rowSelection)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sortDirections")(sortDirections)
-    __obj.updateDynamic("useFixedHeader")(useFixedHeader)
+    val __obj = js.Dynamic.literal(bordered = bordered, className = className, columns = columns, dataSource = dataSource, dropdownPrefixCls = dropdownPrefixCls, loading = loading, locale = locale, onChange = onChange, prefixCls = prefixCls, rowSelection = rowSelection, size = size, sortDirections = sortDirections, useFixedHeader = useFixedHeader)
+  
     __obj.asInstanceOf[Anon_ArgsBordered]
   }
 }

@@ -33,16 +33,7 @@ object HeaderContext {
     parentElement: stdLib.Element,
     datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): HeaderContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("extent")(extent)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement, data = data.asInstanceOf[js.Any], depth = depth, extent = extent, index = index, key = key.asInstanceOf[js.Any], level = level, parentElement = parentElement)
     if (datasource != null) __obj.updateDynamic("datasource")(datasource)
     __obj.asInstanceOf[HeaderContext[K, D]]
   }

@@ -14,8 +14,8 @@ object OnScrollListener {
   def apply(
     onScrollStateChange: js.Function2[androiduixLib.androidNs.widgetNs.NumberPicker, scala.Double, scala.Unit]
   ): OnScrollListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onScrollStateChange")(onScrollStateChange)
+    val __obj = js.Dynamic.literal(onScrollStateChange = onScrollStateChange)
+  
     __obj.asInstanceOf[OnScrollListener]
   }
 }

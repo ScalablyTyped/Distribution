@@ -100,37 +100,8 @@ object StorageStream {
     setEncryptionPassword: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): StorageStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("IsCompressed")(IsCompressed)
-    __obj.updateDynamic("IsEncrypted")(IsEncrypted)
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("MediaType")(MediaType)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("UseCommonStoragePasswordEncryption")(UseCommonStoragePasswordEncryption)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getInputStream")(getInputStream)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryption")(removeEncryption)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("setEncryptionPassword")(setEncryptionPassword)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(InputStream = InputStream, IsCompressed = IsCompressed, IsEncrypted = IsEncrypted, Length = Length, MediaType = MediaType, OutputStream = OutputStream, Position = Position, PropertySetInfo = PropertySetInfo, Size = Size, UseCommonStoragePasswordEncryption = UseCommonStoragePasswordEncryption, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getInputStream = getInputStream, getLength = getLength, getOutputStream = getOutputStream, getPosition = getPosition, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, seek = seek, setEncryptionPassword = setEncryptionPassword, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[StorageStream]
   }
 }

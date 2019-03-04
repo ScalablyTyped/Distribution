@@ -35,18 +35,8 @@ object Typography {
     textLightWhite: java.lang.String,
     textMinBlack: java.lang.String
   ): Typography = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontStyleButtonFontSize")(fontStyleButtonFontSize)
-    __obj.updateDynamic("fontWeightLight")(fontWeightLight)
-    __obj.updateDynamic("fontWeightMedium")(fontWeightMedium)
-    __obj.updateDynamic("fontWeightNormal")(fontWeightNormal)
-    __obj.updateDynamic("textDarkBlack")(textDarkBlack)
-    __obj.updateDynamic("textDarkWhite")(textDarkWhite)
-    __obj.updateDynamic("textFullBlack")(textFullBlack)
-    __obj.updateDynamic("textFullWhite")(textFullWhite)
-    __obj.updateDynamic("textLightBlack")(textLightBlack)
-    __obj.updateDynamic("textLightWhite")(textLightWhite)
-    __obj.updateDynamic("textMinBlack")(textMinBlack)
+    val __obj = js.Dynamic.literal(fontStyleButtonFontSize = fontStyleButtonFontSize, fontWeightLight = fontWeightLight, fontWeightMedium = fontWeightMedium, fontWeightNormal = fontWeightNormal, textDarkBlack = textDarkBlack, textDarkWhite = textDarkWhite, textFullBlack = textFullBlack, textFullWhite = textFullWhite, textLightBlack = textLightBlack, textLightWhite = textLightWhite, textMinBlack = textMinBlack)
+  
     __obj.asInstanceOf[Typography]
   }
 }

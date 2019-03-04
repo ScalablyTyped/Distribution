@@ -19,10 +19,8 @@ object IRegisterNavigationRouteOptions {
     cacheName: java.lang.String,
     whitelist: js.Array[stdLib.RegExp]
   ): IRegisterNavigationRouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blacklist")(blacklist)
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("whitelist")(whitelist)
+    val __obj = js.Dynamic.literal(blacklist = blacklist, cacheName = cacheName, whitelist = whitelist)
+  
     __obj.asInstanceOf[IRegisterNavigationRouteOptions]
   }
 }

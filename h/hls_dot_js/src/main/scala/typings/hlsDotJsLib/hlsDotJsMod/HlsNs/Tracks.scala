@@ -22,12 +22,8 @@ object Tracks {
     levelCodec: js.Any,
     metadata: js.Any
   ): Tracks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codec")(codec)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("initSegment")(initSegment)
-    __obj.updateDynamic("levelCodec")(levelCodec)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(codec = codec, container = container, initSegment = initSegment, levelCodec = levelCodec, metadata = metadata)
+  
     __obj.asInstanceOf[Tracks]
   }
 }

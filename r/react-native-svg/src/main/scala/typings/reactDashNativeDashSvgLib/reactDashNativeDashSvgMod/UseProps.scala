@@ -111,8 +111,7 @@ object UseProps {
     xlinkHref: java.lang.String = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): UseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

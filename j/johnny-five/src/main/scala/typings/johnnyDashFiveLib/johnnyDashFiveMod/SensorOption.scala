@@ -20,8 +20,7 @@ object SensorOption {
     freq: js.UndefOr[scala.Boolean] = js.undefined,
     threshold: scala.Int | scala.Double = null
   ): SensorOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (!js.isUndefined(freq)) __obj.updateDynamic("freq")(freq)
     if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])

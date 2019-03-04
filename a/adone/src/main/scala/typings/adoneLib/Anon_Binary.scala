@@ -52,23 +52,8 @@ object Anon_Binary {
     ],
     jsNs: Anon_ArgsFunction
   ): Anon_Binary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Binary")(Binary)
-    __obj.updateDynamic("Bool")(Bool)
-    __obj.updateDynamic("Float")(Float)
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("Int")(Int)
-    __obj.updateDynamic("Map")(Map)
-    __obj.updateDynamic("Merge")(Merge)
-    __obj.updateDynamic("Null")(Null)
-    __obj.updateDynamic("Omap")(Omap)
-    __obj.updateDynamic("Pairs")(Pairs)
-    __obj.updateDynamic("Seq")(Seq)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("Str")(Str)
-    __obj.updateDynamic("Timestamp")(Timestamp)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("jsNs")(jsNs)
+    val __obj = js.Dynamic.literal(Binary = Binary, Bool = Bool, Float = Float, INs = INs, Int = Int, Map = Map, Merge = Merge, Null = Null, Omap = Omap, Pairs = Pairs, Seq = Seq, Set = Set, Str = Str, Timestamp = Timestamp, Type = Type, jsNs = jsNs)
+  
     __obj.asInstanceOf[Anon_Binary]
   }
 }

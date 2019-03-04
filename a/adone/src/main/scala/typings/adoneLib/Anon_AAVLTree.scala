@@ -275,27 +275,8 @@ object Anon_AAVLTree {
       adoneLib.adoneNs.collectionNs.TimeMap[js.Object, js.Object]
     ]
   ): Anon_AAVLTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AVLTree")(AVLTree)
-    __obj.updateDynamic("ArraySet")(ArraySet)
-    __obj.updateDynamic("AsyncQueue")(AsyncQueue)
-    __obj.updateDynamic("BinarySearchTree")(BinarySearchTree)
-    __obj.updateDynamic("BufferList")(BufferList)
-    __obj.updateDynamic("ByteArray")(ByteArray)
-    __obj.updateDynamic("DefaultMap")(DefaultMap)
-    __obj.updateDynamic("FastLRU")(FastLRU)
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("LRU")(LRU)
-    __obj.updateDynamic("LinkedList")(LinkedList)
-    __obj.updateDynamic("MapCache")(MapCache)
-    __obj.updateDynamic("NSCache")(NSCache)
-    __obj.updateDynamic("PriorityQueue")(PriorityQueue)
-    __obj.updateDynamic("Queue")(Queue)
-    __obj.updateDynamic("RedBlackTree")(RedBlackTree)
-    __obj.updateDynamic("RefcountedCache")(RefcountedCache)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("Stack")(Stack)
-    __obj.updateDynamic("TimeMap")(TimeMap)
+    val __obj = js.Dynamic.literal(AVLTree = AVLTree, ArraySet = ArraySet, AsyncQueue = AsyncQueue, BinarySearchTree = BinarySearchTree, BufferList = BufferList, ByteArray = ByteArray, DefaultMap = DefaultMap, FastLRU = FastLRU, INs = INs, LRU = LRU, LinkedList = LinkedList, MapCache = MapCache, NSCache = NSCache, PriorityQueue = PriorityQueue, Queue = Queue, RedBlackTree = RedBlackTree, RefcountedCache = RefcountedCache, Set = Set, Stack = Stack, TimeMap = TimeMap)
+  
     __obj.asInstanceOf[Anon_AAVLTree]
   }
 }

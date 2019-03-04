@@ -12,8 +12,8 @@ trait Anon_RoughnessMap extends js.Object {
 object Anon_RoughnessMap {
   @scala.inline
   def apply(roughnessMap: threeLib.threeDashCoreMod.IUniform): Anon_RoughnessMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roughnessMap")(roughnessMap)
+    val __obj = js.Dynamic.literal(roughnessMap = roughnessMap)
+  
     __obj.asInstanceOf[Anon_RoughnessMap]
   }
 }

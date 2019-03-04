@@ -35,8 +35,8 @@ object OnLayoutChangeListener {
       scala.Unit
     ]
   ): OnLayoutChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onLayoutChange")(onLayoutChange)
+    val __obj = js.Dynamic.literal(onLayoutChange = onLayoutChange)
+  
     __obj.asInstanceOf[OnLayoutChangeListener]
   }
 }

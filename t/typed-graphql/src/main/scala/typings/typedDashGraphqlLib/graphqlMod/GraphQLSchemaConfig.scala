@@ -22,8 +22,7 @@ object GraphQLSchemaConfig {
     subscription: GraphQLObjectType = null,
     types: js.Array[GraphQLNamedType] = null
   ): GraphQLSchemaConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (mutation != null) __obj.updateDynamic("mutation")(mutation)
     if (subscription != null) __obj.updateDynamic("subscription")(subscription)

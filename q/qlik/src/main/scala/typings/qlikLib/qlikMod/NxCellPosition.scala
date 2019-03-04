@@ -13,9 +13,8 @@ trait NxCellPosition extends js.Object {
 object NxCellPosition {
   @scala.inline
   def apply(qx: scala.Double, qy: scala.Double): NxCellPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qx")(qx)
-    __obj.updateDynamic("qy")(qy)
+    val __obj = js.Dynamic.literal(qx = qx, qy = qy)
+  
     __obj.asInstanceOf[NxCellPosition]
   }
 }

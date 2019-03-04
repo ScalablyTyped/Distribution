@@ -12,8 +12,8 @@ trait Element extends js.Object {
 object Element {
   @scala.inline
   def apply(winControl: js.Any): Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("winControl")(winControl)
+    val __obj = js.Dynamic.literal(winControl = winControl)
+  
     __obj.asInstanceOf[Element]
   }
 }

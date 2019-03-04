@@ -40,21 +40,8 @@ object TeamDto {
     teamStatDetails: js.Array[TeamStatDetailDto],
     thirdLastJoinDate: scala.Double
   ): TeamDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createDate")(createDate)
-    __obj.updateDynamic("fullId")(fullId)
-    __obj.updateDynamic("lastGameDate")(lastGameDate)
-    __obj.updateDynamic("lastJoinDate")(lastJoinDate)
-    __obj.updateDynamic("lastJoinedRankedTeamQueueDate")(lastJoinedRankedTeamQueueDate)
-    __obj.updateDynamic("matchHistory")(matchHistory)
-    __obj.updateDynamic("modifyDate")(modifyDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("roster")(roster)
-    __obj.updateDynamic("secondLastJoinDate")(secondLastJoinDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("teamStatDetails")(teamStatDetails)
-    __obj.updateDynamic("thirdLastJoinDate")(thirdLastJoinDate)
+    val __obj = js.Dynamic.literal(createDate = createDate, fullId = fullId, lastGameDate = lastGameDate, lastJoinDate = lastJoinDate, lastJoinedRankedTeamQueueDate = lastJoinedRankedTeamQueueDate, matchHistory = matchHistory, modifyDate = modifyDate, name = name, roster = roster, secondLastJoinDate = secondLastJoinDate, status = status, tag = tag, teamStatDetails = teamStatDetails, thirdLastJoinDate = thirdLastJoinDate)
+  
     __obj.asInstanceOf[TeamDto]
   }
 }

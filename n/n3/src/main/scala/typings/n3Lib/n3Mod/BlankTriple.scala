@@ -16,8 +16,8 @@ object BlankTriple {
     `object`: /* import warning: ImportType.apply Failed type conversion: Q['object'] */ js.Any,
     predicate: /* import warning: ImportType.apply Failed type conversion: Q['predicate'] */ js.Any
   ): BlankTriple[Q] = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("predicate")(predicate)
+    val __obj = js.Dynamic.literal(predicate = predicate)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[BlankTriple[Q]]
   }
 }

@@ -37,12 +37,8 @@ object RasterDataSource {
     `type`: java.lang.String,
     workspaceId: java.lang.String
   ): RasterDataSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataSourceName")(dataSourceName)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("workspaceId")(workspaceId)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataSourceName = dataSourceName, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, workspaceId = workspaceId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RasterDataSource]
   }
 }

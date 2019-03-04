@@ -21,8 +21,8 @@ object FeatureCollectionWithFilename {
     bbox: geojsonLib.geojsonMod.BBox = null,
     fileName: java.lang.String = null
   ): FeatureCollectionWithFilename = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(features = features)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(type_FeatureCollection)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)

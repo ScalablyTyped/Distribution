@@ -16,9 +16,8 @@ object Anon_ContentCodingWithQualityHeaderValue {
     contentCodingWithQualityHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentCodingWithQualityHeaderValue,
     returnValue: scala.Boolean
   ): Anon_ContentCodingWithQualityHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentCodingWithQualityHeaderValue")(contentCodingWithQualityHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(contentCodingWithQualityHeaderValue = contentCodingWithQualityHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ContentCodingWithQualityHeaderValue]
   }
 }

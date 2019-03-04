@@ -43,14 +43,8 @@ object Canvas {
     showCanvas: js.Function0[scala.Unit],
     toggleCanvas: js.Function0[scala.Unit]
   ): Canvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearCanvas")(clearCanvas)
-    __obj.updateDynamic("getCanvas")(getCanvas)
-    __obj.updateDynamic("hideCanvas")(hideCanvas)
-    __obj.updateDynamic("renderText")(renderText)
-    __obj.updateDynamic("renderTextAt")(renderTextAt)
-    __obj.updateDynamic("showCanvas")(showCanvas)
-    __obj.updateDynamic("toggleCanvas")(toggleCanvas)
+    val __obj = js.Dynamic.literal(clearCanvas = clearCanvas, getCanvas = getCanvas, hideCanvas = hideCanvas, renderText = renderText, renderTextAt = renderTextAt, showCanvas = showCanvas, toggleCanvas = toggleCanvas)
+  
     __obj.asInstanceOf[Canvas]
   }
 }

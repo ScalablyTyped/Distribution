@@ -13,9 +13,8 @@ trait Presets extends js.Object {
 object Presets {
   @scala.inline
   def apply(components: org.scalablytyped.runtime.StringDictionary[remarkableLib.Anon_Rules], options: Options): Presets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(components = components, options = options)
+  
     __obj.asInstanceOf[Presets]
   }
 }

@@ -16,8 +16,7 @@ object Anon_CurrentTarget {
     currentTarget: js.Any,
     StringDictionary: /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CurrentTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentTarget")(currentTarget)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CurrentTarget]
   }

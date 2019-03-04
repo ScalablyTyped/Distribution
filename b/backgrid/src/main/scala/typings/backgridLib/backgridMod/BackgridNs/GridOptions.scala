@@ -24,9 +24,7 @@ object GridOptions {
     header: Header = null,
     row: Row = null
   ): GridOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(collection = collection, columns = columns)
     if (body != null) __obj.updateDynamic("body")(body)
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (header != null) __obj.updateDynamic("header")(header)

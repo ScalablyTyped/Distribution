@@ -18,8 +18,8 @@ object LicensesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[License]
     ]
   ): LicensesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[LicensesResource]
   }
 }

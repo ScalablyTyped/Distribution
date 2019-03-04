@@ -32,17 +32,8 @@ object Anon_AdditionalData {
     State: java.lang.String,
     Street: java.lang.String
   ): Anon_AdditionalData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdditionalData")(AdditionalData)
-    __obj.updateDynamic("City")(City)
-    __obj.updateDynamic("Country")(Country)
-    __obj.updateDynamic("County")(County)
-    __obj.updateDynamic("District")(District)
-    __obj.updateDynamic("HouseNumber")(HouseNumber)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("PostalCode")(PostalCode)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Street")(Street)
+    val __obj = js.Dynamic.literal(AdditionalData = AdditionalData, City = City, Country = Country, County = County, District = District, HouseNumber = HouseNumber, Label = Label, PostalCode = PostalCode, State = State, Street = Street)
+  
     __obj.asInstanceOf[Anon_AdditionalData]
   }
 }

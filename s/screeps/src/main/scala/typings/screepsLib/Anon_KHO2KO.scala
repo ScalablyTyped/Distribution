@@ -14,10 +14,8 @@ trait Anon_KHO2KO extends js.Object {
 object Anon_KHO2KO {
   @scala.inline
   def apply(KHO2: Anon_3RangedAttack, KO: Anon_2RangedAttack, XKHO2: Anon_4RangedAttack): Anon_KHO2KO = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KHO2")(KHO2)
-    __obj.updateDynamic("KO")(KO)
-    __obj.updateDynamic("XKHO2")(XKHO2)
+    val __obj = js.Dynamic.literal(KHO2 = KHO2, KO = KO, XKHO2 = XKHO2)
+  
     __obj.asInstanceOf[Anon_KHO2KO]
   }
 }

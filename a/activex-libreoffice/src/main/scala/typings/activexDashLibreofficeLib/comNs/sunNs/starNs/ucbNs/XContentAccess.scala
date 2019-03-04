@@ -47,13 +47,8 @@ object XContentAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContentAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryContent")(queryContent)
-    __obj.updateDynamic("queryContentIdentifier")(queryContentIdentifier)
-    __obj.updateDynamic("queryContentIdentifierString")(queryContentIdentifierString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryContent = queryContent, queryContentIdentifier = queryContentIdentifier, queryContentIdentifierString = queryContentIdentifierString, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContentAccess]
   }
 }

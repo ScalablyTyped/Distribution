@@ -20,10 +20,7 @@ object Role {
     validateRole: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
     validationFunction: RoleValidationFunction = null
   ): Role = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("permissionNames")(permissionNames)
-    __obj.updateDynamic("roleName")(roleName)
-    __obj.updateDynamic("validateRole")(validateRole)
+    val __obj = js.Dynamic.literal(permissionNames = permissionNames, roleName = roleName, validateRole = validateRole)
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(validationFunction)
     __obj.asInstanceOf[Role]
   }

@@ -18,10 +18,8 @@ object Anon_ClassName {
     Message: java.lang.String,
     StackTrace: js.Array[raygun4jsLib.raygun4jsMod.RaygunStackTrace]
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClassName")(ClassName)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("StackTrace")(StackTrace)
+    val __obj = js.Dynamic.literal(ClassName = ClassName, Message = Message, StackTrace = StackTrace)
+  
     __obj.asInstanceOf[Anon_ClassName]
   }
 }

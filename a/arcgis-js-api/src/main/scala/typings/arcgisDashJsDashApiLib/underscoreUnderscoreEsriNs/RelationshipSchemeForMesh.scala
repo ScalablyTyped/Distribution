@@ -45,14 +45,8 @@ object RelationshipSchemeForMesh {
     opacity: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): RelationshipSchemeForMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorsForClassBreaks")(colorsForClassBreaks)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(colorsForClassBreaks = colorsForClassBreaks, constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[RelationshipSchemeForMesh]
   }
 }

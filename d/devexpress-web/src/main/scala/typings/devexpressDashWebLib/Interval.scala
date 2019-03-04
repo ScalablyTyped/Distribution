@@ -24,9 +24,8 @@ trait Interval extends js.Object {
 object Interval {
   @scala.inline
   def apply(length: scala.Double, start: scala.Double): Interval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(length = length, start = start)
+  
     __obj.asInstanceOf[Interval]
   }
 }

@@ -30,19 +30,19 @@ class TimedSemaphore protected ()
   /**
     * @hidden
     */
-  var `hold_count_`: js.Any = js.native
+  var hold_count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `locked_count_`: js.Any = js.native
+  var locked_count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `resolvers_`: js.Any = js.native
+  var resolvers_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `size_`: js.Any = js.native
+  var size_ : js.Any = js.native
   /**
     * Try lock sections until timeout.
     *

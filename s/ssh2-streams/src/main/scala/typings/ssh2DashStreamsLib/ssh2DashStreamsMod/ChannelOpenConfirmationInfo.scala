@@ -15,11 +15,8 @@ trait ChannelOpenConfirmationInfo extends js.Object {
 object ChannelOpenConfirmationInfo {
   @scala.inline
   def apply(packetSize: scala.Double, recipient: scala.Double, sender: scala.Double, window: scala.Double): ChannelOpenConfirmationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packetSize")(packetSize)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(packetSize = packetSize, recipient = recipient, sender = sender, window = window)
+  
     __obj.asInstanceOf[ChannelOpenConfirmationInfo]
   }
 }

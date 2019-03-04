@@ -18,9 +18,7 @@ object IndentInfo {
     indent: java.lang.String,
     `type`: detectDashIndentLib.detectDashIndentLibStrings.tab | detectDashIndentLib.detectDashIndentLibStrings.space = null
   ): IndentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("indent")(indent)
+    val __obj = js.Dynamic.literal(amount = amount, indent = indent)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndentInfo]
   }

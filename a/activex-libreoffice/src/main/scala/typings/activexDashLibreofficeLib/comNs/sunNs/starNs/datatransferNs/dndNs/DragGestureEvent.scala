@@ -47,13 +47,8 @@ object DragGestureEvent {
     Event: js.Any,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DragGestureEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DragAction")(DragAction)
-    __obj.updateDynamic("DragOriginX")(DragOriginX)
-    __obj.updateDynamic("DragOriginY")(DragOriginY)
-    __obj.updateDynamic("DragSource")(DragSource)
-    __obj.updateDynamic("Event")(Event)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(DragAction = DragAction, DragOriginX = DragOriginX, DragOriginY = DragOriginY, DragSource = DragSource, Event = Event, Source = Source)
+  
     __obj.asInstanceOf[DragGestureEvent]
   }
 }

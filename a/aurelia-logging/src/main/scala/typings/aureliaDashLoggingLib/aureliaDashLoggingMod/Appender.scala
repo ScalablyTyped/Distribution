@@ -44,11 +44,8 @@ object Appender {
     info: js.Function2[Logger, /* repeated */ js.Any, scala.Unit],
     warn: js.Function2[Logger, /* repeated */ js.Any, scala.Unit]
   ): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, warn = warn)
+  
     __obj.asInstanceOf[Appender]
   }
 }

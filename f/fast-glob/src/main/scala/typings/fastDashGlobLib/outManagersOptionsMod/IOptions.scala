@@ -120,26 +120,8 @@ object IOptions {
     unique: scala.Boolean,
     transform: TransformFunction[T] = null
   ): IOptions[T] = {
-    val __obj = js.Dynamic.literal(`case` = `case`)
-    __obj.updateDynamic("absolute")(absolute)
-    __obj.updateDynamic("brace")(brace)
-    __obj.updateDynamic("cwd")(cwd)
-    __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
-    __obj.updateDynamic("dot")(dot)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("followSymlinkedDirectories")(followSymlinkedDirectories)
-    __obj.updateDynamic("globstar")(globstar)
-    __obj.updateDynamic("ignore")(ignore)
-    __obj.updateDynamic("markDirectories")(markDirectories)
-    __obj.updateDynamic("matchBase")(matchBase)
-    __obj.updateDynamic("nobrace")(nobrace)
-    __obj.updateDynamic("nocase")(nocase)
-    __obj.updateDynamic("noext")(noext)
-    __obj.updateDynamic("noglobstar")(noglobstar)
-    __obj.updateDynamic("onlyDirectories")(onlyDirectories)
-    __obj.updateDynamic("onlyFiles")(onlyFiles)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(absolute = absolute, brace = brace, cwd = cwd, deep = deep.asInstanceOf[js.Any], dot = dot, extension = extension, followSymlinkedDirectories = followSymlinkedDirectories, globstar = globstar, ignore = ignore, markDirectories = markDirectories, matchBase = matchBase, nobrace = nobrace, nocase = nocase, noext = noext, noglobstar = noglobstar, onlyDirectories = onlyDirectories, onlyFiles = onlyFiles, stats = stats, unique = unique)
+    __obj.updateDynamic("case")(`case`)
     if (transform != null) __obj.updateDynamic("transform")(transform)
     __obj.asInstanceOf[IOptions[T]]
   }

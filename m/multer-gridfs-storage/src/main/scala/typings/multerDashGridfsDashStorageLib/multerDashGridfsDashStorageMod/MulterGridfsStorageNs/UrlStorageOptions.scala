@@ -24,8 +24,7 @@ object UrlStorageOptions {
     ] = null,
     options: js.Any = null
   ): UrlStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (options != null) __obj.updateDynamic("options")(options)

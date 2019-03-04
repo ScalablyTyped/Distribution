@@ -25,12 +25,8 @@ object DefaultLayers {
     terrain: MapType,
     venues: heremapsLib.HNs.mapNs.layerNs.TileLayer
   ): DefaultLayers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("incidents")(incidents)
-    __obj.updateDynamic("normal")(normal)
-    __obj.updateDynamic("satellite")(satellite)
-    __obj.updateDynamic("terrain")(terrain)
-    __obj.updateDynamic("venues")(venues)
+    val __obj = js.Dynamic.literal(incidents = incidents, normal = normal, satellite = satellite, terrain = terrain, venues = venues)
+  
     __obj.asInstanceOf[DefaultLayers]
   }
 }

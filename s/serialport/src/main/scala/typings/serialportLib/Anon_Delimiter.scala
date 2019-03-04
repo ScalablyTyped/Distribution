@@ -16,8 +16,7 @@ object Anon_Delimiter {
     delimiter: java.lang.String | nodeLib.Buffer | js.Array[scala.Double],
     includeDelimiter: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Delimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     if (!js.isUndefined(includeDelimiter)) __obj.updateDynamic("includeDelimiter")(includeDelimiter)
     __obj.asInstanceOf[Anon_Delimiter]
   }

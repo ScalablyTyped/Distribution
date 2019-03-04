@@ -18,10 +18,8 @@ object Anon_Delay {
     duration: scala.Double | java.lang.String,
     easing: java.lang.String
   ): Anon_Delay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    __obj.updateDynamic("easing")(easing)
+    val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing)
+  
     __obj.asInstanceOf[Anon_Delay]
   }
 }

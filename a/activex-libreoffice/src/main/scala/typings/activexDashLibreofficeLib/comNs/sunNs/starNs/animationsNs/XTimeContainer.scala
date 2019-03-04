@@ -49,33 +49,8 @@ object XTimeContainer {
     replaceChild: js.Function2[XAnimationNode, XAnimationNode, XAnimationNode],
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XTimeContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Acceleration")(Acceleration)
-    __obj.updateDynamic("AutoReverse")(AutoReverse)
-    __obj.updateDynamic("Begin")(Begin)
-    __obj.updateDynamic("Decelerate")(Decelerate)
-    __obj.updateDynamic("Duration")(Duration)
-    __obj.updateDynamic("End")(End)
-    __obj.updateDynamic("EndSync")(EndSync)
-    __obj.updateDynamic("Fill")(Fill)
-    __obj.updateDynamic("FillDefault")(FillDefault)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("RepeatCount")(RepeatCount)
-    __obj.updateDynamic("RepeatDuration")(RepeatDuration)
-    __obj.updateDynamic("Restart")(Restart)
-    __obj.updateDynamic("RestartDefault")(RestartDefault)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UserData")(UserData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("insertAfter")(insertAfter)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChild")(removeChild)
-    __obj.updateDynamic("replaceChild")(replaceChild)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(Acceleration = Acceleration, AutoReverse = AutoReverse, Begin = Begin, Decelerate = Decelerate, Duration = Duration, End = End, EndSync = EndSync, Fill = Fill, FillDefault = FillDefault, Parent = Parent, RepeatCount = RepeatCount, RepeatDuration = RepeatDuration, Restart = Restart, RestartDefault = RestartDefault, Type = Type, UserData = UserData, acquire = acquire, appendChild = appendChild, getParent = getParent, insertAfter = insertAfter, insertBefore = insertBefore, queryInterface = queryInterface, release = release, removeChild = removeChild, replaceChild = replaceChild, setParent = setParent)
+  
     __obj.asInstanceOf[XTimeContainer]
   }
 }

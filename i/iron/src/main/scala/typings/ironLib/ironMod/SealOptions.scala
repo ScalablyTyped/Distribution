@@ -37,12 +37,8 @@ object SealOptions {
     timestampSkewSec: scala.Double,
     ttl: scala.Double
   ): SealOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryption")(encryption)
-    __obj.updateDynamic("integrity")(integrity)
-    __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec)
-    __obj.updateDynamic("timestampSkewSec")(timestampSkewSec)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(encryption = encryption, integrity = integrity, localtimeOffsetMsec = localtimeOffsetMsec, timestampSkewSec = timestampSkewSec, ttl = ttl)
+  
     __obj.asInstanceOf[SealOptions]
   }
 }

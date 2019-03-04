@@ -18,10 +18,9 @@ object DomElements {
     SVGElementTagNameMap: stdLib.SVGElementTagNameMap = null,
     main: stdLib.HTMLMainElement
   ): DomElements = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(main = main)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, HTMLElementTagNameMap)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, SVGElementTagNameMap)
-    __obj.updateDynamic("main")(main)
     __obj.asInstanceOf[DomElements]
   }
 }

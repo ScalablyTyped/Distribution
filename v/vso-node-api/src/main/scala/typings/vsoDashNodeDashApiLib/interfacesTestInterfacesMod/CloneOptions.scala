@@ -42,13 +42,8 @@ object CloneOptions {
     overrideParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     relatedLinkComment: java.lang.String
   ): CloneOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneRequirements")(cloneRequirements)
-    __obj.updateDynamic("copyAllSuites")(copyAllSuites)
-    __obj.updateDynamic("copyAncestorHierarchy")(copyAncestorHierarchy)
-    __obj.updateDynamic("destinationWorkItemType")(destinationWorkItemType)
-    __obj.updateDynamic("overrideParameters")(overrideParameters)
-    __obj.updateDynamic("relatedLinkComment")(relatedLinkComment)
+    val __obj = js.Dynamic.literal(cloneRequirements = cloneRequirements, copyAllSuites = copyAllSuites, copyAncestorHierarchy = copyAncestorHierarchy, destinationWorkItemType = destinationWorkItemType, overrideParameters = overrideParameters, relatedLinkComment = relatedLinkComment)
+  
     __obj.asInstanceOf[CloneOptions]
   }
 }

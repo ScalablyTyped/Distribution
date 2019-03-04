@@ -20,9 +20,7 @@ object Anon_Cookies {
     headers: js.Array[java.lang.String] = null,
     queryStringCacheKeys: js.Array[java.lang.String] = null
   ): Anon_Cookies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("queryString")(queryString)
+    val __obj = js.Dynamic.literal(cookies = cookies, queryString = queryString)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (queryStringCacheKeys != null) __obj.updateDynamic("queryStringCacheKeys")(queryStringCacheKeys)
     __obj.asInstanceOf[Anon_Cookies]

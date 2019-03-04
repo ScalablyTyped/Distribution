@@ -48,12 +48,8 @@ object Anon_Clear {
     resolve: js.Function1[reactDashSketchappLib.reactDashSketchappMod.TextStyle, js.Any],
     styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[reactDashSketchappLib.reactDashSketchappMod.TextStyle]]
   ): Anon_Clear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(clear = clear, create = create, get = get, resolve = resolve, styles = styles)
+  
     __obj.asInstanceOf[Anon_Clear]
   }
 }

@@ -13,9 +13,8 @@ trait NamedLayoutInfo extends js.Object {
 object NamedLayoutInfo {
   @scala.inline
   def apply(name: java.lang.String, urls: stdLib.Record[java.lang.String, java.lang.String]): NamedLayoutInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(name = name, urls = urls)
+  
     __obj.asInstanceOf[NamedLayoutInfo]
   }
 }

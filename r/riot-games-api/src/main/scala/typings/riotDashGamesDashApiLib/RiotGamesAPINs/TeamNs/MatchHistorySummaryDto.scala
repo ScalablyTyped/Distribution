@@ -34,18 +34,8 @@ object MatchHistorySummaryDto {
     opposingTeamName: java.lang.String,
     win: scala.Boolean
   ): MatchHistorySummaryDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assists")(assists)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("deaths")(deaths)
-    __obj.updateDynamic("gameId")(gameId)
-    __obj.updateDynamic("gameMode")(gameMode)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("kills")(kills)
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("opposingTeamKills")(opposingTeamKills)
-    __obj.updateDynamic("opposingTeamName")(opposingTeamName)
-    __obj.updateDynamic("win")(win)
+    val __obj = js.Dynamic.literal(assists = assists, date = date, deaths = deaths, gameId = gameId, gameMode = gameMode, invalid = invalid, kills = kills, mapId = mapId, opposingTeamKills = opposingTeamKills, opposingTeamName = opposingTeamName, win = win)
+  
     __obj.asInstanceOf[MatchHistorySummaryDto]
   }
 }

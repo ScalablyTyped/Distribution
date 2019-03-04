@@ -209,11 +209,7 @@ object ProcedureRequest {
     supportingInfo: js.Array[Reference] = null,
     text: Narrative = null
   ): ProcedureRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(code = code, intent = intent, status = status, subject = subject)
     if (_asNeededBoolean != null) __obj.updateDynamic("_asNeededBoolean")(_asNeededBoolean)
     if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
     if (_doNotPerform != null) __obj.updateDynamic("_doNotPerform")(_doNotPerform)

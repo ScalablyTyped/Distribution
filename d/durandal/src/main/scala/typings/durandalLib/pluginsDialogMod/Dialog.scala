@@ -24,13 +24,8 @@ object Dialog {
     owner: js.Any,
     settings: durandalLib.compositionMod.CompositionContext
   ): Dialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activator")(activator)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(activator = activator, close = close, context = context, host = host, owner = owner, settings = settings)
+  
     __obj.asInstanceOf[Dialog]
   }
 }

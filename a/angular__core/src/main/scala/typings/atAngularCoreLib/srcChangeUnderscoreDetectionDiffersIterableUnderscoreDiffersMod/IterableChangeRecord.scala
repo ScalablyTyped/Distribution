@@ -24,9 +24,7 @@ object IterableChangeRecord {
     currentIndex: scala.Int | scala.Double = null,
     previousIndex: scala.Int | scala.Double = null
   ): IterableChangeRecord[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("trackById")(trackById)
+    val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById)
     if (currentIndex != null) __obj.updateDynamic("currentIndex")(currentIndex.asInstanceOf[js.Any])
     if (previousIndex != null) __obj.updateDynamic("previousIndex")(previousIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterableChangeRecord[V]]

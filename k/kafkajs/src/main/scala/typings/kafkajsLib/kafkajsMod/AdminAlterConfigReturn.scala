@@ -13,9 +13,8 @@ trait AdminAlterConfigReturn extends js.Object {
 object AdminAlterConfigReturn {
   @scala.inline
   def apply(resources: js.Array[AdminAlterConfigResource], throttleTime: scala.Double): AdminAlterConfigReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("throttleTime")(throttleTime)
+    val __obj = js.Dynamic.literal(resources = resources, throttleTime = throttleTime)
+  
     __obj.asInstanceOf[AdminAlterConfigReturn]
   }
 }

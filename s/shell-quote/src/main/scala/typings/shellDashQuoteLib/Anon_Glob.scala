@@ -14,9 +14,8 @@ trait Anon_Glob
 object Anon_Glob {
   @scala.inline
   def apply(op: shellDashQuoteLib.shellDashQuoteLibStrings.glob, pattern: java.lang.String): Anon_Glob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(op = op, pattern = pattern)
+  
     __obj.asInstanceOf[Anon_Glob]
   }
 }

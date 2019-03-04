@@ -25,9 +25,7 @@ object GraphQLUnionTypeConfig {
     description: java.lang.String = null,
     resolveType: GraphQLTypeResolveFn = null
   ): GraphQLUnionTypeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(name = name, types = types)
     if (description != null) __obj.updateDynamic("description")(description)
     if (resolveType != null) __obj.updateDynamic("resolveType")(resolveType)
     __obj.asInstanceOf[GraphQLUnionTypeConfig]

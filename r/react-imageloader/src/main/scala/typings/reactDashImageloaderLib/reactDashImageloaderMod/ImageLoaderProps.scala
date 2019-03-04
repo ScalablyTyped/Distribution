@@ -40,8 +40,7 @@ object ImageLoaderProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     wrapper: js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactElement[_]] = null
   ): ImageLoaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (imgProps != null) __obj.updateDynamic("imgProps")(imgProps)

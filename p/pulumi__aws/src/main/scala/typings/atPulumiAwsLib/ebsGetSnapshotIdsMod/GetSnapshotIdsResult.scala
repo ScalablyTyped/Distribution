@@ -16,9 +16,8 @@ trait GetSnapshotIdsResult extends js.Object {
 object GetSnapshotIdsResult {
   @scala.inline
   def apply(id: java.lang.String, ids: js.Array[java.lang.String]): GetSnapshotIdsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ids")(ids)
+    val __obj = js.Dynamic.literal(id = id, ids = ids)
+  
     __obj.asInstanceOf[GetSnapshotIdsResult]
   }
 }

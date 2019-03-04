@@ -100,16 +100,8 @@ object BaseLayerView2D {
     tilesChanged: js.Function2[js.Array[Tile], js.Array[Tile], scala.Unit],
     view: MapView
   ): BaseLayerView2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("hitTest")(hitTest)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("requestRender")(requestRender)
-    __obj.updateDynamic("tiles")(tiles)
-    __obj.updateDynamic("tilesChanged")(tilesChanged)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(attach = attach, detach = detach, hitTest = hitTest, layer = layer, render = render, requestRender = requestRender, tiles = tiles, tilesChanged = tilesChanged, view = view)
+  
     __obj.asInstanceOf[BaseLayerView2D]
   }
 }

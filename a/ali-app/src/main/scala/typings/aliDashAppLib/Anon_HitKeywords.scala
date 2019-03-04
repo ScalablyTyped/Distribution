@@ -27,7 +27,8 @@ object Anon_HitKeywords {
     hitKeywords: js.Array[java.lang.String] = null,
     score: java.lang.String = null
   ): Anon_HitKeywords = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (hitKeywords != null) __obj.updateDynamic("hitKeywords")(hitKeywords)
     if (score != null) __obj.updateDynamic("score")(score)
     __obj.asInstanceOf[Anon_HitKeywords]

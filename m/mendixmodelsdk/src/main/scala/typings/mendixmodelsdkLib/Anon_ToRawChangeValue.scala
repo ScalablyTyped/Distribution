@@ -12,8 +12,8 @@ trait Anon_ToRawChangeValue[P] extends js.Object {
 object Anon_ToRawChangeValue {
   @scala.inline
   def apply[P](toRawChangeValue: js.Function1[P, js.Any]): Anon_ToRawChangeValue[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toRawChangeValue")(toRawChangeValue)
+    val __obj = js.Dynamic.literal(toRawChangeValue = toRawChangeValue)
+  
     __obj.asInstanceOf[Anon_ToRawChangeValue[P]]
   }
 }

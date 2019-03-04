@@ -13,9 +13,8 @@ trait IPerfData extends js.Object {
 object IPerfData {
   @scala.inline
   def apply(duration: scala.Double, timeStamp: scala.Double): IPerfData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(duration = duration, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[IPerfData]
   }
 }

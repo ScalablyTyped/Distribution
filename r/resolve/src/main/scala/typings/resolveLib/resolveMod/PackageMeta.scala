@@ -18,9 +18,7 @@ object PackageMeta {
     version: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): PackageMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, version = version)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[PackageMeta]
   }

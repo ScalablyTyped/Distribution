@@ -23,11 +23,8 @@ object WatcherRequestedEventOptions {
     recursive: scala.Boolean,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): WatcherRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("recursive")(recursive)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(entryPath = entryPath, fileSystemId = fileSystemId, recursive = recursive, requestId = requestId)
+  
     __obj.asInstanceOf[WatcherRequestedEventOptions]
   }
 }

@@ -13,8 +13,8 @@ trait VariableUsage extends js.Object {
 object VariableUsage {
   @scala.inline
   def apply(node: Variable, `type`: GraphQLInputType): VariableUsage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(node = node)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VariableUsage]
   }
 }

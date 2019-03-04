@@ -26,10 +26,7 @@ object ScheduleLocalNotificationDetails {
     soundName: java.lang.String = null,
     userInfo: js.Object = null
   ): ScheduleLocalNotificationDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alertAction")(alertAction)
-    __obj.updateDynamic("alertBody")(alertBody)
-    __obj.updateDynamic("fireDate")(fireDate)
+    val __obj = js.Dynamic.literal(alertAction = alertAction, alertBody = alertBody, fireDate = fireDate)
     if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
     if (category != null) __obj.updateDynamic("category")(category)
     if (soundName != null) __obj.updateDynamic("soundName")(soundName)

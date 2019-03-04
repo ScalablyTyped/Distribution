@@ -13,8 +13,8 @@ trait ExpoWebGLRenderingContext
 object ExpoWebGLRenderingContext {
   @scala.inline
   def apply(endFrameEXP: js.Function0[scala.Unit]): ExpoWebGLRenderingContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endFrameEXP")(endFrameEXP)
+    val __obj = js.Dynamic.literal(endFrameEXP = endFrameEXP)
+  
     __obj.asInstanceOf[ExpoWebGLRenderingContext]
   }
 }

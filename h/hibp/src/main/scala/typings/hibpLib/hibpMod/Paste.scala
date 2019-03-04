@@ -22,12 +22,8 @@ object Paste {
     Source: java.lang.String,
     Title: java.lang.String
   ): Paste = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("EmailCount")(EmailCount)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Title")(Title)
+    val __obj = js.Dynamic.literal(Date = Date, EmailCount = EmailCount, Id = Id, Source = Source, Title = Title)
+  
     __obj.asInstanceOf[Paste]
   }
 }

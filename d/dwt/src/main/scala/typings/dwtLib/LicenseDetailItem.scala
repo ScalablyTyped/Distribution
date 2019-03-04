@@ -29,14 +29,8 @@ object LicenseDetailItem {
     Trial: java.lang.String,
     Version: java.lang.String
   ): LicenseDetailItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Browser")(Browser)
-    __obj.updateDynamic("EnumLicenseType")(EnumLicenseType)
-    __obj.updateDynamic("ExpireDate")(ExpireDate)
-    __obj.updateDynamic("LicenseType")(LicenseType)
-    __obj.updateDynamic("OS")(OS)
-    __obj.updateDynamic("Trial")(Trial)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Browser = Browser, EnumLicenseType = EnumLicenseType, ExpireDate = ExpireDate, LicenseType = LicenseType, OS = OS, Trial = Trial, Version = Version)
+  
     __obj.asInstanceOf[LicenseDetailItem]
   }
 }

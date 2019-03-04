@@ -31,8 +31,8 @@ object Plugin {
       scala.Boolean
     ]
   ): Plugin = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Plugin]
   }
 }

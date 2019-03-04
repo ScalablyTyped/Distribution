@@ -12,8 +12,8 @@ trait PersistorGateState extends js.Object {
 object PersistorGateState {
   @scala.inline
   def apply(bootstrapped: scala.Boolean): PersistorGateState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bootstrapped")(bootstrapped)
+    val __obj = js.Dynamic.literal(bootstrapped = bootstrapped)
+  
     __obj.asInstanceOf[PersistorGateState]
   }
 }

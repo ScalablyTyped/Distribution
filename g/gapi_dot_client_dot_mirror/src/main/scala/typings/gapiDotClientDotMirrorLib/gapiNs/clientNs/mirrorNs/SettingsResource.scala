@@ -18,8 +18,8 @@ object SettingsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Setting]
     ]
   ): SettingsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[SettingsResource]
   }
 }

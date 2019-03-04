@@ -14,10 +14,8 @@ trait SearchDefinition extends js.Object {
 object SearchDefinition {
   @scala.inline
   def apply(fields: js.Array[java.lang.String], term: java.lang.String, where: AnyObject[_]): SearchDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(fields = fields, term = term, where = where)
+  
     __obj.asInstanceOf[SearchDefinition]
   }
 }

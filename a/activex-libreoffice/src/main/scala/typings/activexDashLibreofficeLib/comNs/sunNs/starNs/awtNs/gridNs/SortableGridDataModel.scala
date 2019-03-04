@@ -100,39 +100,8 @@ object SortableGridDataModel {
     updateRowHeading: js.Function2[scala.Double, js.Any, scala.Unit],
     updateRowToolTip: js.Function2[scala.Double, js.Any, scala.Unit]
   ): SortableGridDataModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("CurrentSortOrder")(CurrentSortOrder)
-    __obj.updateDynamic("RowCount")(RowCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addGridDataListener")(addGridDataListener)
-    __obj.updateDynamic("addRow")(addRow)
-    __obj.updateDynamic("addRows")(addRows)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("createWithCollator")(createWithCollator)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getCellData")(getCellData)
-    __obj.updateDynamic("getCellToolTip")(getCellToolTip)
-    __obj.updateDynamic("getCurrentSortOrder")(getCurrentSortOrder)
-    __obj.updateDynamic("getRowData")(getRowData)
-    __obj.updateDynamic("getRowHeading")(getRowHeading)
-    __obj.updateDynamic("insertRow")(insertRow)
-    __obj.updateDynamic("insertRows")(insertRows)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAllRows")(removeAllRows)
-    __obj.updateDynamic("removeColumnSort")(removeColumnSort)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeGridDataListener")(removeGridDataListener)
-    __obj.updateDynamic("removeRow")(removeRow)
-    __obj.updateDynamic("sortByColumn")(sortByColumn)
-    __obj.updateDynamic("updateCellData")(updateCellData)
-    __obj.updateDynamic("updateCellToolTip")(updateCellToolTip)
-    __obj.updateDynamic("updateRowData")(updateRowData)
-    __obj.updateDynamic("updateRowHeading")(updateRowHeading)
-    __obj.updateDynamic("updateRowToolTip")(updateRowToolTip)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, CurrentSortOrder = CurrentSortOrder, RowCount = RowCount, acquire = acquire, addEventListener = addEventListener, addGridDataListener = addGridDataListener, addRow = addRow, addRows = addRows, create = create, createClone = createClone, createWithCollator = createWithCollator, dispose = dispose, getCellData = getCellData, getCellToolTip = getCellToolTip, getCurrentSortOrder = getCurrentSortOrder, getRowData = getRowData, getRowHeading = getRowHeading, insertRow = insertRow, insertRows = insertRows, queryInterface = queryInterface, release = release, removeAllRows = removeAllRows, removeColumnSort = removeColumnSort, removeEventListener = removeEventListener, removeGridDataListener = removeGridDataListener, removeRow = removeRow, sortByColumn = sortByColumn, updateCellData = updateCellData, updateCellToolTip = updateCellToolTip, updateRowData = updateRowData, updateRowHeading = updateRowHeading, updateRowToolTip = updateRowToolTip)
+  
     __obj.asInstanceOf[SortableGridDataModel]
   }
 }

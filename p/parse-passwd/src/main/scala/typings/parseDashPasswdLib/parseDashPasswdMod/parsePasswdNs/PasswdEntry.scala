@@ -26,14 +26,8 @@ object PasswdEntry {
     uid: java.lang.String,
     username: java.lang.String
   ): PasswdEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gecos")(gecos)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("homedir")(homedir)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("shell")(shell)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(gecos = gecos, gid = gid, homedir = homedir, password = password, shell = shell, uid = uid, username = username)
+  
     __obj.asInstanceOf[PasswdEntry]
   }
 }

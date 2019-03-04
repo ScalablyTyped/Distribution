@@ -48,25 +48,8 @@ object SensorManager {
     stopStepCounter: js.Function0[scala.Unit],
     stopThermometer: js.Function0[scala.Unit]
   ): SensorManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("startAccelerometer")(startAccelerometer)
-    __obj.updateDynamic("startGyroscope")(startGyroscope)
-    __obj.updateDynamic("startLightSensor")(startLightSensor)
-    __obj.updateDynamic("startMagnetometer")(startMagnetometer)
-    __obj.updateDynamic("startMotionValue")(startMotionValue)
-    __obj.updateDynamic("startOrientation")(startOrientation)
-    __obj.updateDynamic("startProximity")(startProximity)
-    __obj.updateDynamic("startStepCounter")(startStepCounter)
-    __obj.updateDynamic("startThermometer")(startThermometer)
-    __obj.updateDynamic("stopAccelerometer")(stopAccelerometer)
-    __obj.updateDynamic("stopGyroscope")(stopGyroscope)
-    __obj.updateDynamic("stopLightSensor")(stopLightSensor)
-    __obj.updateDynamic("stopMagnetometer")(stopMagnetometer)
-    __obj.updateDynamic("stopMotionValue")(stopMotionValue)
-    __obj.updateDynamic("stopOrientation")(stopOrientation)
-    __obj.updateDynamic("stopProximity")(stopProximity)
-    __obj.updateDynamic("stopStepCounter")(stopStepCounter)
-    __obj.updateDynamic("stopThermometer")(stopThermometer)
+    val __obj = js.Dynamic.literal(startAccelerometer = startAccelerometer, startGyroscope = startGyroscope, startLightSensor = startLightSensor, startMagnetometer = startMagnetometer, startMotionValue = startMotionValue, startOrientation = startOrientation, startProximity = startProximity, startStepCounter = startStepCounter, startThermometer = startThermometer, stopAccelerometer = stopAccelerometer, stopGyroscope = stopGyroscope, stopLightSensor = stopLightSensor, stopMagnetometer = stopMagnetometer, stopMotionValue = stopMotionValue, stopOrientation = stopOrientation, stopProximity = stopProximity, stopStepCounter = stopStepCounter, stopThermometer = stopThermometer)
+  
     __obj.asInstanceOf[SensorManager]
   }
 }

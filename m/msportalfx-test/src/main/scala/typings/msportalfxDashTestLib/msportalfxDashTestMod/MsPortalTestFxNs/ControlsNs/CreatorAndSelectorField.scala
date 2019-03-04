@@ -33,22 +33,8 @@ object CreatorAndSelectorField {
     rightClick: js.Function0[qLib.qMod.QNs.Promise[scala.Unit]],
     sendKeys: js.Function1[/* repeated */ java.lang.String, qLib.qMod.QNs.Promise[scala.Unit]]
   ): CreatorAndSelectorField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseLocator")(baseLocator)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("clickCreateNew")(clickCreateNew)
-    __obj.updateDynamic("enterNewValue")(enterNewValue)
-    __obj.updateDynamic("getAttribute")(getAttribute)
-    __obj.updateDynamic("getLocator")(getLocator)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("isDisplayed")(isDisplayed)
-    __obj.updateDynamic("isElementPresent")(isElementPresent)
-    __obj.updateDynamic("isPresent")(isPresent)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("openPicker")(openPicker)
-    __obj.updateDynamic("parentLocator")(parentLocator)
-    __obj.updateDynamic("rightClick")(rightClick)
-    __obj.updateDynamic("sendKeys")(sendKeys)
+    val __obj = js.Dynamic.literal(baseLocator = baseLocator, click = click, clickCreateNew = clickCreateNew, enterNewValue = enterNewValue, getAttribute = getAttribute, getLocator = getLocator, getText = getText, isDisplayed = isDisplayed, isElementPresent = isElementPresent, isPresent = isPresent, label = label, openPicker = openPicker, parentLocator = parentLocator, rightClick = rightClick, sendKeys = sendKeys)
+  
     __obj.asInstanceOf[CreatorAndSelectorField]
   }
 }

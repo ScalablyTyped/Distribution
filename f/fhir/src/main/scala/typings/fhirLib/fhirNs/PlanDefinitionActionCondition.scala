@@ -61,8 +61,7 @@ object PlanDefinitionActionCondition {
     language: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): PlanDefinitionActionCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

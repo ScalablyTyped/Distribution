@@ -39,13 +39,8 @@ object ICreateUnitTreeDelta {
     unitId: java.lang.String,
     unitTree: IStructureJSON
   ): ICreateUnitTreeDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerId")(containerId)
-    __obj.updateDynamic("containmentName")(containmentName)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("deltaType")(deltaType)
-    __obj.updateDynamic("unitId")(unitId)
-    __obj.updateDynamic("unitTree")(unitTree)
+    val __obj = js.Dynamic.literal(containerId = containerId, containmentName = containmentName, contentType = contentType, deltaType = deltaType, unitId = unitId, unitTree = unitTree)
+  
     __obj.asInstanceOf[ICreateUnitTreeDelta]
   }
 }

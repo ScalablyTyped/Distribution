@@ -33,11 +33,8 @@ object SuggestContextMixin {
     shardSize: js.Function1[scala.Double, SuggestContextMixin],
     size: js.Function1[scala.Double, SuggestContextMixin]
   ): SuggestContextMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(analyzer = analyzer, field = field, shardSize = shardSize, size = size)
+  
     __obj.asInstanceOf[SuggestContextMixin]
   }
 }

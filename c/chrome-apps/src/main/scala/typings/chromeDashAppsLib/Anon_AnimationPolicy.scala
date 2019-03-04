@@ -83,20 +83,8 @@ object Anon_AnimationPolicy {
     switchAccess: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting,
     virtualKeyboard: chromeDashAppsLib.chromeNs.accessibilityFeaturesNs.AccessibilityFeaturesSetting
   ): Anon_AnimationPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationPolicy")(animationPolicy)
-    __obj.updateDynamic("autoclick")(autoclick)
-    __obj.updateDynamic("caretHighlight")(caretHighlight)
-    __obj.updateDynamic("cursorHighlight")(cursorHighlight)
-    __obj.updateDynamic("focusHighlight")(focusHighlight)
-    __obj.updateDynamic("highContrast")(highContrast)
-    __obj.updateDynamic("largeCursor")(largeCursor)
-    __obj.updateDynamic("screenMagnifier")(screenMagnifier)
-    __obj.updateDynamic("selectToSpeak")(selectToSpeak)
-    __obj.updateDynamic("spokenFeedback")(spokenFeedback)
-    __obj.updateDynamic("stickyKeys")(stickyKeys)
-    __obj.updateDynamic("switchAccess")(switchAccess)
-    __obj.updateDynamic("virtualKeyboard")(virtualKeyboard)
+    val __obj = js.Dynamic.literal(animationPolicy = animationPolicy, autoclick = autoclick, caretHighlight = caretHighlight, cursorHighlight = cursorHighlight, focusHighlight = focusHighlight, highContrast = highContrast, largeCursor = largeCursor, screenMagnifier = screenMagnifier, selectToSpeak = selectToSpeak, spokenFeedback = spokenFeedback, stickyKeys = stickyKeys, switchAccess = switchAccess, virtualKeyboard = virtualKeyboard)
+  
     __obj.asInstanceOf[Anon_AnimationPolicy]
   }
 }

@@ -20,11 +20,8 @@ object AuthResponse {
     signedRequest: java.lang.String,
     userID: java.lang.String
   ): AuthResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("expiresIn")(expiresIn)
-    __obj.updateDynamic("signedRequest")(signedRequest)
-    __obj.updateDynamic("userID")(userID)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, signedRequest = signedRequest, userID = userID)
+  
     __obj.asInstanceOf[AuthResponse]
   }
 }

@@ -53,8 +53,7 @@ object bindCollectionOptions {
     withIds: js.UndefOr[scala.Boolean] = js.undefined,
     withRefs: js.UndefOr[scala.Boolean] = js.undefined
   ): bindCollectionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (query != null) __obj.updateDynamic("query")(query)
     if (state != null) __obj.updateDynamic("state")(state)

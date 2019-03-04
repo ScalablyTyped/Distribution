@@ -12,8 +12,8 @@ trait DefaultErrorIProps extends js.Object {
 object DefaultErrorIProps {
   @scala.inline
   def apply(statusCode: scala.Double): DefaultErrorIProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(statusCode = statusCode)
+  
     __obj.asInstanceOf[DefaultErrorIProps]
   }
 }

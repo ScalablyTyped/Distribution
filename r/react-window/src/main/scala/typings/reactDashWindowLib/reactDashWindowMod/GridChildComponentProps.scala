@@ -22,11 +22,7 @@ object GridChildComponentProps {
     style: reactLib.reactMod.ReactNs.CSSProperties,
     isScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): GridChildComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, data = data, rowIndex = rowIndex, style = style)
     if (!js.isUndefined(isScrolling)) __obj.updateDynamic("isScrolling")(isScrolling)
     __obj.asInstanceOf[GridChildComponentProps]
   }

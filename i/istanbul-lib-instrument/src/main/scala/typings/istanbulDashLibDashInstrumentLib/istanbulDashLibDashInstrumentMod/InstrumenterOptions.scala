@@ -28,15 +28,8 @@ object InstrumenterOptions {
     produceSourceMap: scala.Boolean,
     sourceMapUrlCallback: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): InstrumenterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoWrap")(autoWrap)
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("coverageVariable")(coverageVariable)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("esModules")(esModules)
-    __obj.updateDynamic("preserveComments")(preserveComments)
-    __obj.updateDynamic("produceSourceMap")(produceSourceMap)
-    __obj.updateDynamic("sourceMapUrlCallback")(sourceMapUrlCallback)
+    val __obj = js.Dynamic.literal(autoWrap = autoWrap, compact = compact, coverageVariable = coverageVariable, debug = debug, esModules = esModules, preserveComments = preserveComments, produceSourceMap = produceSourceMap, sourceMapUrlCallback = sourceMapUrlCallback)
+  
     __obj.asInstanceOf[InstrumenterOptions]
   }
 }

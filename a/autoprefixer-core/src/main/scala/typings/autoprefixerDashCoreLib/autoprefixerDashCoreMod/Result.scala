@@ -14,10 +14,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(css: java.lang.String, map: java.lang.String, opts: Options): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("opts")(opts)
+    val __obj = js.Dynamic.literal(css = css, map = map, opts = opts)
+  
     __obj.asInstanceOf[Result]
   }
 }

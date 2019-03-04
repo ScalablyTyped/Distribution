@@ -47,12 +47,7 @@ object ListItemObject {
     href: java.lang.String = null,
     status: ListItemObjectStatus = null
   ): ListItemObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdTime")(createdTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("updatedTime")(updatedTime)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(createdTime = createdTime, id = id, updatedTime = updatedTime, value = value, version = version)
     if (href != null) __obj.updateDynamic("href")(href)
     if (status != null) __obj.updateDynamic("status")(status)
     __obj.asInstanceOf[ListItemObject]

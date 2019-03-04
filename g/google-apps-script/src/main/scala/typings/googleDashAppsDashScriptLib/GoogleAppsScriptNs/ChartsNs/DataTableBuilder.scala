@@ -29,11 +29,8 @@ object DataTableBuilder {
       DataTableBuilder
     ]
   ): DataTableBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addColumn")(addColumn)
-    __obj.updateDynamic("addRow")(addRow)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(addColumn = addColumn, addRow = addRow, build = build, setValue = setValue)
+  
     __obj.asInstanceOf[DataTableBuilder]
   }
 }

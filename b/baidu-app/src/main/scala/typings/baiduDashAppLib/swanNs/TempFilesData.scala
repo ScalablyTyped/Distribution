@@ -18,9 +18,8 @@ trait TempFilesData extends js.Object {
 object TempFilesData {
   @scala.inline
   def apply(tempFilePaths: java.lang.String, tempFiles: js.Array[TempFile]): TempFilesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tempFilePaths")(tempFilePaths)
-    __obj.updateDynamic("tempFiles")(tempFiles)
+    val __obj = js.Dynamic.literal(tempFilePaths = tempFilePaths, tempFiles = tempFiles)
+  
     __obj.asInstanceOf[TempFilesData]
   }
 }

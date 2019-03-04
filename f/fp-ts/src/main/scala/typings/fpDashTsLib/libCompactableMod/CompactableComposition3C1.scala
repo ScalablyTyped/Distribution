@@ -43,10 +43,8 @@ object CompactableComposition3C1 {
       ]
     ]
   ): CompactableComposition3C1[F, G, UF, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(compact = compact, map = map, separate = separate)
+  
     __obj.asInstanceOf[CompactableComposition3C1[F, G, UF, LF]]
   }
 }

@@ -57,16 +57,8 @@ object _Impl {
     transition: java.lang.String,
     visible: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animating")(animating)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("inward")(inward)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("looping")(looping)
-    __obj.updateDynamic("outward")(outward)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(animating = animating, disabled = disabled, hidden = hidden, inward = inward, loading = loading, looping = looping, outward = outward, transition = transition, visible = visible)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

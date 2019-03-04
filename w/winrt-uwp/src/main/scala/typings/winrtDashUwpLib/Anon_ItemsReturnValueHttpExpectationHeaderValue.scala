@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueHttpExpectationHeaderValue {
     items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpExpectationHeaderValue,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueHttpExpectationHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueHttpExpectationHeaderValue]
   }
 }

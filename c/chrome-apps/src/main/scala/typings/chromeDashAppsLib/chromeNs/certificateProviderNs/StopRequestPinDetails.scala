@@ -41,8 +41,7 @@ object StopRequestPinDetails {
       ]
     ] = null
   ): StopRequestPinDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signRequestId")(signRequestId)
+    val __obj = js.Dynamic.literal(signRequestId = signRequestId)
     if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRequestPinDetails]
   }

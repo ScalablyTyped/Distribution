@@ -44,8 +44,7 @@ object ActionSheetOptions {
     success: js.Function1[/* res */ aliDashAppLib.Anon_Index, scala.Unit] = null,
     title: java.lang.String = null
   ): ActionSheetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (badges != null) __obj.updateDynamic("badges")(badges)
     if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
     if (complete != null) __obj.updateDynamic("complete")(complete)

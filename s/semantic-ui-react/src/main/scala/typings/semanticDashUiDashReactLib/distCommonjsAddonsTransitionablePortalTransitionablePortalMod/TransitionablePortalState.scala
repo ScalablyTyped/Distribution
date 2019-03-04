@@ -13,9 +13,8 @@ trait TransitionablePortalState extends js.Object {
 object TransitionablePortalState {
   @scala.inline
   def apply(portalOpen: scala.Boolean, transitionVisible: scala.Boolean): TransitionablePortalState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("portalOpen")(portalOpen)
-    __obj.updateDynamic("transitionVisible")(transitionVisible)
+    val __obj = js.Dynamic.literal(portalOpen = portalOpen, transitionVisible = transitionVisible)
+  
     __obj.asInstanceOf[TransitionablePortalState]
   }
 }

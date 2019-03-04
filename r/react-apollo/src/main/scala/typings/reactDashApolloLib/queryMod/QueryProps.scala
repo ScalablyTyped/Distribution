@@ -36,9 +36,7 @@ object QueryProps {
     ssr: js.UndefOr[scala.Boolean] = js.undefined,
     variables: TVariables = null
   ): QueryProps[TData, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(children = children, query = query)
     if (client != null) __obj.updateDynamic("client")(client)
     if (context != null) __obj.updateDynamic("context")(context)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)

@@ -28,13 +28,7 @@ object AsObject {
     version: java.lang.String,
     sourceContext: googleDashProtobufLib.googleProtobufSourceUnderscoreContextUnderscorePbMod.SourceContextNs.AsObject = null
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("methodsList")(methodsList)
-    __obj.updateDynamic("mixinsList")(mixinsList)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionsList")(optionsList)
-    __obj.updateDynamic("syntax")(syntax)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(methodsList = methodsList, mixinsList = mixinsList, name = name, optionsList = optionsList, syntax = syntax, version = version)
     if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
     __obj.asInstanceOf[AsObject]
   }

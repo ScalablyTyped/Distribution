@@ -43,13 +43,8 @@ object FeatureStateEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     State: js.Any
   ): FeatureStateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FeatureDescriptor")(FeatureDescriptor)
-    __obj.updateDynamic("FeatureURL")(FeatureURL)
-    __obj.updateDynamic("IsEnabled")(IsEnabled)
-    __obj.updateDynamic("Requery")(Requery)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("State")(State)
+    val __obj = js.Dynamic.literal(FeatureDescriptor = FeatureDescriptor, FeatureURL = FeatureURL, IsEnabled = IsEnabled, Requery = Requery, Source = Source, State = State)
+  
     __obj.asInstanceOf[FeatureStateEvent]
   }
 }

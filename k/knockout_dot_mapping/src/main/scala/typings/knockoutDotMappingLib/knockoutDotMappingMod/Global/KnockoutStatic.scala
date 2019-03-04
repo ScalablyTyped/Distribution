@@ -12,8 +12,8 @@ trait KnockoutStatic extends js.Object {
 object KnockoutStatic {
   @scala.inline
   def apply(mapping: KnockoutMapping): KnockoutStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapping")(mapping)
+    val __obj = js.Dynamic.literal(mapping = mapping)
+  
     __obj.asInstanceOf[KnockoutStatic]
   }
 }

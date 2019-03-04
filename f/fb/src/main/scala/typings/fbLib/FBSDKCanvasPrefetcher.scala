@@ -18,9 +18,8 @@ object FBSDKCanvasPrefetcher {
     addStaticResource: js.Function1[java.lang.String, scala.Unit],
     setCollectionMode: js.Function1[java.lang.String, scala.Unit]
   ): FBSDKCanvasPrefetcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStaticResource")(addStaticResource)
-    __obj.updateDynamic("setCollectionMode")(setCollectionMode)
+    val __obj = js.Dynamic.literal(addStaticResource = addStaticResource, setCollectionMode = setCollectionMode)
+  
     __obj.asInstanceOf[FBSDKCanvasPrefetcher]
   }
 }

@@ -42,16 +42,8 @@ object Device {
     uuid: java.lang.String,
     version: java.lang.String
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("cordova")(cordova)
-    __obj.updateDynamic("isVirtual")(isVirtual)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(available = available, cordova = cordova, isVirtual = isVirtual, manufacturer = manufacturer, model = model, platform = platform, serial = serial, uuid = uuid, version = version)
+  
     __obj.asInstanceOf[Device]
   }
 }

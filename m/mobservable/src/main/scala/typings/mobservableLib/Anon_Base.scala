@@ -16,9 +16,8 @@ object Anon_Base {
     isComputingView: js.Function0[scala.Boolean],
     quickDiff: js.Function2[js.Array[js.Any], js.Array[js.Any], js.Tuple2[js.Array[js.Any], js.Array[js.Any]]]
   ): Anon_Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isComputingView")(isComputingView)
-    __obj.updateDynamic("quickDiff")(quickDiff)
+    val __obj = js.Dynamic.literal(isComputingView = isComputingView, quickDiff = quickDiff)
+  
     __obj.asInstanceOf[Anon_Base]
   }
 }

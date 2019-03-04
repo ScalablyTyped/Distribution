@@ -27,10 +27,8 @@ object GitPullRequestCommentThreadContext {
     iterationContext: CommentIterationContext,
     trackingCriteria: CommentTrackingCriteria
   ): GitPullRequestCommentThreadContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeTrackingId")(changeTrackingId)
-    __obj.updateDynamic("iterationContext")(iterationContext)
-    __obj.updateDynamic("trackingCriteria")(trackingCriteria)
+    val __obj = js.Dynamic.literal(changeTrackingId = changeTrackingId, iterationContext = iterationContext, trackingCriteria = trackingCriteria)
+  
     __obj.asInstanceOf[GitPullRequestCommentThreadContext]
   }
 }

@@ -12,8 +12,8 @@ trait Indices extends js.Object {
 object Indices {
   @scala.inline
   def apply(indices: js.Tuple2[scala.Double, scala.Double]): Indices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indices")(indices)
+    val __obj = js.Dynamic.literal(indices = indices)
+  
     __obj.asInstanceOf[Indices]
   }
 }

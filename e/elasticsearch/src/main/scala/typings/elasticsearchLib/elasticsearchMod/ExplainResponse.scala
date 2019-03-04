@@ -22,12 +22,8 @@ object ExplainResponse {
     explanation: ExplainResponseDetails,
     matched: scala.Boolean
   ): ExplainResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_index")(_index)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("explanation")(explanation)
-    __obj.updateDynamic("matched")(matched)
+    val __obj = js.Dynamic.literal(_id = _id, _index = _index, _type = _type, explanation = explanation, matched = matched)
+  
     __obj.asInstanceOf[ExplainResponse]
   }
 }

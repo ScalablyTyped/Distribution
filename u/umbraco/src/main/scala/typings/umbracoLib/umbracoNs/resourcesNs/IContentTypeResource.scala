@@ -51,9 +51,8 @@ object IContentTypeResource {
     getAllPropertyTypeAliases: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
     getAllowedTypes: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
   ): IContentTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllPropertyTypeAliases")(getAllPropertyTypeAliases)
-    __obj.updateDynamic("getAllowedTypes")(getAllowedTypes)
+    val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = getAllPropertyTypeAliases, getAllowedTypes = getAllowedTypes)
+  
     __obj.asInstanceOf[IContentTypeResource]
   }
 }

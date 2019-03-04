@@ -20,11 +20,8 @@ object Anon_ConnectOptions {
     JsonPatchOperation: js.Any,
     Operation: Anon_EnumValuesAnonAddCopy
   ): Anon_ConnectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConnectOptions")(ConnectOptions)
-    __obj.updateDynamic("JWTAlgorithm")(JWTAlgorithm)
-    __obj.updateDynamic("JsonPatchOperation")(JsonPatchOperation)
-    __obj.updateDynamic("Operation")(Operation)
+    val __obj = js.Dynamic.literal(ConnectOptions = ConnectOptions, JWTAlgorithm = JWTAlgorithm, JsonPatchOperation = JsonPatchOperation, Operation = Operation)
+  
     __obj.asInstanceOf[Anon_ConnectOptions]
   }
 }

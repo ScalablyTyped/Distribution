@@ -20,9 +20,7 @@ object Anon_Handler {
     method: swDashPrecacheLib.swDashPrecacheMod.Method = null,
     options: swDashToolboxLib.swDashToolboxMod.Options = null
   ): Anon_Handler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("urlPattern")(urlPattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Anon_Handler]

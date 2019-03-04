@@ -26,7 +26,8 @@ object PathCommand {
     y1: scala.Int | scala.Double = null,
     y2: scala.Int | scala.Double = null
   ): PathCommand = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
     if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])

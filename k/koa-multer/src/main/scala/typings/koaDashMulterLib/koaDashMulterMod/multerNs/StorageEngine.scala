@@ -34,9 +34,8 @@ object StorageEngine {
       scala.Unit
     ]
   ): StorageEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_handleFile")(_handleFile)
-    __obj.updateDynamic("_removeFile")(_removeFile)
+    val __obj = js.Dynamic.literal(_handleFile = _handleFile, _removeFile = _removeFile)
+  
     __obj.asInstanceOf[StorageEngine]
   }
 }

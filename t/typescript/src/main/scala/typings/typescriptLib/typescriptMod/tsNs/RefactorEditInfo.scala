@@ -24,8 +24,7 @@ object RefactorEditInfo {
     renameFilename: java.lang.String = null,
     renameLocation: scala.Int | scala.Double = null
   ): RefactorEditInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edits")(edits)
+    val __obj = js.Dynamic.literal(edits = edits)
     if (commands != null) __obj.updateDynamic("commands")(commands)
     if (renameFilename != null) __obj.updateDynamic("renameFilename")(renameFilename)
     if (renameLocation != null) __obj.updateDynamic("renameLocation")(renameLocation.asInstanceOf[js.Any])

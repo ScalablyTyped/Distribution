@@ -62,13 +62,8 @@ object XExternalSheetCache {
     getCellValue: js.Function2[scala.Double, scala.Double, js.Any],
     setCellValue: js.Function3[scala.Double, scala.Double, js.Any, scala.Unit]
   ): XExternalSheetCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllRows")(AllRows)
-    __obj.updateDynamic("TokenIndex")(TokenIndex)
-    __obj.updateDynamic("getAllColumns")(getAllColumns)
-    __obj.updateDynamic("getAllRows")(getAllRows)
-    __obj.updateDynamic("getCellValue")(getCellValue)
-    __obj.updateDynamic("setCellValue")(setCellValue)
+    val __obj = js.Dynamic.literal(AllRows = AllRows, TokenIndex = TokenIndex, getAllColumns = getAllColumns, getAllRows = getAllRows, getCellValue = getCellValue, setCellValue = setCellValue)
+  
     __obj.asInstanceOf[XExternalSheetCache]
   }
 }

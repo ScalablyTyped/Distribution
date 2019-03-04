@@ -14,10 +14,8 @@ trait CellMetaSettings extends js.Object {
 object CellMetaSettings {
   @scala.inline
   def apply(col: scala.Double, row: scala.Double, settings: Settings): CellMetaSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(col = col, row = row, settings = settings)
+  
     __obj.asInstanceOf[CellMetaSettings]
   }
 }

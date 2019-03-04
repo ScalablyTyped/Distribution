@@ -12,8 +12,8 @@ trait Delta extends js.Object {
 object Delta {
   @scala.inline
   def apply(delta: scala.Double): Delta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
+    val __obj = js.Dynamic.literal(delta = delta)
+  
     __obj.asInstanceOf[Delta]
   }
 }

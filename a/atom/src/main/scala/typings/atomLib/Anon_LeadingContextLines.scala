@@ -24,13 +24,8 @@ object Anon_LeadingContextLines {
     range: js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]],
     trailingContextLines: js.Array[java.lang.String]
   ): Anon_LeadingContextLines = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leadingContextLines")(leadingContextLines)
-    __obj.updateDynamic("lineText")(lineText)
-    __obj.updateDynamic("lineTextOffset")(lineTextOffset)
-    __obj.updateDynamic("matchText")(matchText)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("trailingContextLines")(trailingContextLines)
+    val __obj = js.Dynamic.literal(leadingContextLines = leadingContextLines, lineText = lineText, lineTextOffset = lineTextOffset, matchText = matchText, range = range, trailingContextLines = trailingContextLines)
+  
     __obj.asInstanceOf[Anon_LeadingContextLines]
   }
 }

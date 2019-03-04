@@ -53,13 +53,8 @@ object TextEditChange {
     insert: js.Function2[Position, java.lang.String, scala.Unit],
     replace: js.Function2[Range, java.lang.String, scala.Unit]
   ): TextEditChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("replace")(replace)
+    val __obj = js.Dynamic.literal(add = add, all = all, clear = clear, delete = delete, insert = insert, replace = replace)
+  
     __obj.asInstanceOf[TextEditChange]
   }
 }

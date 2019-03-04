@@ -24,11 +24,8 @@ object ASPxClientSingleLevelIndicator {
     series: ASPxClientSeries,
     valueLevel: java.lang.String
   ): ASPxClientSingleLevelIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("valueLevel")(valueLevel)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, series = series, valueLevel = valueLevel)
+  
     __obj.asInstanceOf[ASPxClientSingleLevelIndicator]
   }
 }

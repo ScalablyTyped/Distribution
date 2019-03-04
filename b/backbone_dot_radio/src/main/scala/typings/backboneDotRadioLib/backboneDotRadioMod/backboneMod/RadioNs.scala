@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object RadioNs extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes */ @js.native
+  - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes. Inlined request, reply, reply, reply, reply, replyOnce, replyOnce, replyOnce, replyOnce, stopReplying, stopReplying, stopReplying, stopReplying */ @js.native
   class Channel ()
     extends Commands
        with backboneLib.backboneMod.BackboneNs.EventsMixin

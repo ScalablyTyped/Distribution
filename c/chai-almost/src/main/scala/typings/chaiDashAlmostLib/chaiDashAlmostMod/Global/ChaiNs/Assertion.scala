@@ -12,8 +12,8 @@ trait Assertion extends js.Object {
 object Assertion {
   @scala.inline
   def apply(almost: chaiDashAlmostLib.chaiDashAlmostMod.Global.ChaiNs.ChaiAlmostNs.Almost): Assertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("almost")(almost)
+    val __obj = js.Dynamic.literal(almost = almost)
+  
     __obj.asInstanceOf[Assertion]
   }
 }

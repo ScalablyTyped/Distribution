@@ -31,9 +31,7 @@ object IOleDbProvider {
     qName: java.lang.String,
     qBit32: js.UndefOr[scala.Boolean] = js.undefined
   ): IOleDbProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDescription")(qDescription)
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qDescription = qDescription, qName = qName)
     if (!js.isUndefined(qBit32)) __obj.updateDynamic("qBit32")(qBit32)
     __obj.asInstanceOf[IOleDbProvider]
   }

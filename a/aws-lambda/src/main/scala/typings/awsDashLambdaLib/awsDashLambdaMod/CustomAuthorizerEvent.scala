@@ -44,8 +44,8 @@ object CustomAuthorizerEvent {
     resource: java.lang.String = null,
     stageVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): CustomAuthorizerEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("methodArn")(methodArn)
+    val __obj = js.Dynamic.literal(methodArn = methodArn)
+    __obj.updateDynamic("type")(`type`)
     if (apiId != null) __obj.updateDynamic("apiId")(apiId)
     if (authorizationToken != null) __obj.updateDynamic("authorizationToken")(authorizationToken)
     if (domainName != null) __obj.updateDynamic("domainName")(domainName)

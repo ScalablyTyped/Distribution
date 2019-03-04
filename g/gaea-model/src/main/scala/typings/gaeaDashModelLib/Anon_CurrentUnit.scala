@@ -30,9 +30,7 @@ object Anon_CurrentUnit {
     speed: scala.Int | scala.Double = null,
     step: scala.Int | scala.Double = null
   ): Anon_CurrentUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentUnit")(currentUnit)
-    __obj.updateDynamic("units")(units)
+    val __obj = js.Dynamic.literal(currentUnit = currentUnit, units = units)
     if (inputRange != null) __obj.updateDynamic("inputRange")(inputRange)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

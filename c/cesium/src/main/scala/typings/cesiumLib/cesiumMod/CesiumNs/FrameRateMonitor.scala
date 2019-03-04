@@ -38,20 +38,8 @@ object FrameRateMonitor {
     unpause: js.Function0[scala.Unit],
     warmupPeriod: scala.Double
   ): FrameRateMonitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("lastFramesPerSecond")(lastFramesPerSecond)
-    __obj.updateDynamic("lowFrameRate")(lowFrameRate)
-    __obj.updateDynamic("minimumFrameRateAfterWarmup")(minimumFrameRateAfterWarmup)
-    __obj.updateDynamic("minimumFrameRateDuringWarmup")(minimumFrameRateDuringWarmup)
-    __obj.updateDynamic("nominalFrameRate")(nominalFrameRate)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("quietPeriod")(quietPeriod)
-    __obj.updateDynamic("samplingWindow")(samplingWindow)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("unpause")(unpause)
-    __obj.updateDynamic("warmupPeriod")(warmupPeriod)
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, lastFramesPerSecond = lastFramesPerSecond, lowFrameRate = lowFrameRate, minimumFrameRateAfterWarmup = minimumFrameRateAfterWarmup, minimumFrameRateDuringWarmup = minimumFrameRateDuringWarmup, nominalFrameRate = nominalFrameRate, pause = pause, quietPeriod = quietPeriod, samplingWindow = samplingWindow, scene = scene, unpause = unpause, warmupPeriod = warmupPeriod)
+  
     __obj.asInstanceOf[FrameRateMonitor]
   }
 }

@@ -24,13 +24,8 @@ object IResourceResponse {
     status: scala.Double,
     statusText: java.lang.String
   ): IResourceResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(config = config, data = data, headers = headers, resource = resource, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[IResourceResponse]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Filter {
     pageNumber: scala.Double,
     pageSize: scala.Double
   ): Anon_Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("orderDirection")(orderDirection)
-    __obj.updateDynamic("pageNumber")(pageNumber)
-    __obj.updateDynamic("pageSize")(pageSize)
+    val __obj = js.Dynamic.literal(filter = filter, orderBy = orderBy, orderDirection = orderDirection, pageNumber = pageNumber, pageSize = pageSize)
+  
     __obj.asInstanceOf[Anon_Filter]
   }
 }

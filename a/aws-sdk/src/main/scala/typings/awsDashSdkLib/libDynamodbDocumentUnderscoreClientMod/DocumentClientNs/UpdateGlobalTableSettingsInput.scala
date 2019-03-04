@@ -42,8 +42,7 @@ object UpdateGlobalTableSettingsInput {
     GlobalTableProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined,
     ReplicaSettingsUpdate: ReplicaSettingsUpdateList = null
   ): UpdateGlobalTableSettingsInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName)
     if (GlobalTableBillingMode != null) __obj.updateDynamic("GlobalTableBillingMode")(GlobalTableBillingMode.asInstanceOf[js.Any])
     if (GlobalTableGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("GlobalTableGlobalSecondaryIndexSettingsUpdate")(GlobalTableGlobalSecondaryIndexSettingsUpdate)
     if (GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate")(GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate)

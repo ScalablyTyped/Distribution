@@ -22,9 +22,7 @@ object Anon_AllowedHeaders {
     exposeHeaders: js.Array[java.lang.String] = null,
     maxAgeSeconds: scala.Int | scala.Double = null
   ): Anon_AllowedHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedMethods")(allowedMethods)
-    __obj.updateDynamic("allowedOrigins")(allowedOrigins)
+    val __obj = js.Dynamic.literal(allowedMethods = allowedMethods, allowedOrigins = allowedOrigins)
     if (allowedHeaders != null) __obj.updateDynamic("allowedHeaders")(allowedHeaders)
     if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders)
     if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])

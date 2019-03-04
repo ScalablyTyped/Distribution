@@ -31,12 +31,8 @@ object Anon_ChildrenData {
     label: java.lang.String,
     `type`: reactDashSelectLib.reactDashSelectLibStrings.option
   ): Anon_ChildrenData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], data = data, innerProps = innerProps, innerRef = innerRef.asInstanceOf[js.Any], label = label)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ChildrenData]
   }
 }

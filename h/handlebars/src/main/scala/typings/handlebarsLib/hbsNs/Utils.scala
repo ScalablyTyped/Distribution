@@ -28,15 +28,8 @@ object Utils {
     isFunction: js.Function1[js.Any, scala.Boolean],
     toString: js.Function1[js.Any, java.lang.String]
   ): Utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockParams")(blockParams)
-    __obj.updateDynamic("createFrame")(createFrame)
-    __obj.updateDynamic("escapeExpression")(escapeExpression)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("isArray")(isArray)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isFunction")(isFunction)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(blockParams = blockParams, createFrame = createFrame, escapeExpression = escapeExpression, extend = extend, isArray = isArray, isEmpty = isEmpty, isFunction = isFunction, toString = toString)
+  
     __obj.asInstanceOf[Utils]
   }
 }

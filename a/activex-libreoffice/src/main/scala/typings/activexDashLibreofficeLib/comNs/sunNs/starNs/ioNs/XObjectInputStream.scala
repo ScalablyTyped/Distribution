@@ -44,25 +44,8 @@ object XObjectInputStream {
     release: js.Function0[scala.Unit],
     skipBytes: js.Function1[scala.Double, scala.Unit]
   ): XObjectInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBoolean")(readBoolean)
-    __obj.updateDynamic("readByte")(readByte)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readChar")(readChar)
-    __obj.updateDynamic("readDouble")(readDouble)
-    __obj.updateDynamic("readFloat")(readFloat)
-    __obj.updateDynamic("readHyper")(readHyper)
-    __obj.updateDynamic("readLong")(readLong)
-    __obj.updateDynamic("readObject")(readObject)
-    __obj.updateDynamic("readShort")(readShort)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("readUTF")(readUTF)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("skipBytes")(skipBytes)
+    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, queryInterface = queryInterface, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readChar = readChar, readDouble = readDouble, readFloat = readFloat, readHyper = readHyper, readLong = readLong, readObject = readObject, readShort = readShort, readSomeBytes = readSomeBytes, readUTF = readUTF, release = release, skipBytes = skipBytes)
+  
     __obj.asInstanceOf[XObjectInputStream]
   }
 }

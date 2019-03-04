@@ -30,12 +30,8 @@ object ElevationQueryResultSampleInfo {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     source: ElevationLayer
   ): ElevationQueryResultSampleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("demResolution")(demResolution)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(constructor = constructor, demResolution = demResolution, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, source = source)
+  
     __obj.asInstanceOf[ElevationQueryResultSampleInfo]
   }
 }

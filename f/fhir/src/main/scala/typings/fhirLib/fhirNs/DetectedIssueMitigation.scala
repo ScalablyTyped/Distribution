@@ -41,8 +41,7 @@ object DetectedIssueMitigation {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): DetectedIssueMitigation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

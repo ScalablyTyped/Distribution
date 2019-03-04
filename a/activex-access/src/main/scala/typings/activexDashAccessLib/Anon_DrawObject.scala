@@ -12,8 +12,8 @@ trait Anon_DrawObject extends js.Object {
 object Anon_DrawObject {
   @scala.inline
   def apply(drawObject: js.Any): Anon_DrawObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawObject")(drawObject)
+    val __obj = js.Dynamic.literal(drawObject = drawObject)
+  
     __obj.asInstanceOf[Anon_DrawObject]
   }
 }

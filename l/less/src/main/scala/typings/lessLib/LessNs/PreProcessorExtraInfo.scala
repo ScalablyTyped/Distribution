@@ -18,10 +18,8 @@ object PreProcessorExtraInfo {
     fileInfo: RootFileInfo,
     imports: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): PreProcessorExtraInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("fileInfo")(fileInfo)
-    __obj.updateDynamic("imports")(imports)
+    val __obj = js.Dynamic.literal(context = context, fileInfo = fileInfo, imports = imports)
+  
     __obj.asInstanceOf[PreProcessorExtraInfo]
   }
 }

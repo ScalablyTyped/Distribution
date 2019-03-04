@@ -55,13 +55,8 @@ object INumberRounder {
     roundUInt32: js.Function1[scala.Double, scala.Double],
     roundUInt64: js.Function1[scala.Double, scala.Double]
   ): INumberRounder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roundDouble")(roundDouble)
-    __obj.updateDynamic("roundInt32")(roundInt32)
-    __obj.updateDynamic("roundInt64")(roundInt64)
-    __obj.updateDynamic("roundSingle")(roundSingle)
-    __obj.updateDynamic("roundUInt32")(roundUInt32)
-    __obj.updateDynamic("roundUInt64")(roundUInt64)
+    val __obj = js.Dynamic.literal(roundDouble = roundDouble, roundInt32 = roundInt32, roundInt64 = roundInt64, roundSingle = roundSingle, roundUInt32 = roundUInt32, roundUInt64 = roundUInt64)
+  
     __obj.asInstanceOf[INumberRounder]
   }
 }

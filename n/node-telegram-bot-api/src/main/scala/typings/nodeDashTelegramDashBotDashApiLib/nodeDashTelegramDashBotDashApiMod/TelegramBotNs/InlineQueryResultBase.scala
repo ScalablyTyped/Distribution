@@ -13,8 +13,7 @@ trait InlineQueryResultBase extends js.Object {
 object InlineQueryResultBase {
   @scala.inline
   def apply(id: java.lang.String, reply_markup: InlineKeyboardMarkup = null): InlineQueryResultBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
     __obj.asInstanceOf[InlineQueryResultBase]
   }

@@ -12,8 +12,8 @@ trait ITouchSpinConfigProvider extends js.Object {
 object ITouchSpinConfigProvider {
   @scala.inline
   def apply(defaults: js.Function1[ITouchSpinOptions, scala.Unit]): ITouchSpinConfigProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[ITouchSpinConfigProvider]
   }
 }

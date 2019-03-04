@@ -20,11 +20,8 @@ object Lang {
     pickers: js.Array[java.lang.String],
     placeholder: vue2DashDatepickerLib.Anon_Date
   ): Lang = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("pickers")(pickers)
-    __obj.updateDynamic("placeholder")(placeholder)
+    val __obj = js.Dynamic.literal(days = days, months = months, pickers = pickers, placeholder = placeholder)
+  
     __obj.asInstanceOf[Lang]
   }
 }

@@ -77,16 +77,8 @@ object InstanceGroupsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): InstanceGroupsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addInstances")(addInstances)
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listInstances")(listInstances)
-    __obj.updateDynamic("removeInstances")(removeInstances)
-    __obj.updateDynamic("setNamedPorts")(setNamedPorts)
+    val __obj = js.Dynamic.literal(addInstances = addInstances, aggregatedList = aggregatedList, delete = delete, get = get, insert = insert, list = list, listInstances = listInstances, removeInstances = removeInstances, setNamedPorts = setNamedPorts)
+  
     __obj.asInstanceOf[InstanceGroupsResource]
   }
 }

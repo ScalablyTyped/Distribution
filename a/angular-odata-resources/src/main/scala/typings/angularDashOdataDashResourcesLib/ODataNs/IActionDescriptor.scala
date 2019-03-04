@@ -23,8 +23,7 @@ object IActionDescriptor {
     params: js.Any = null,
     url: java.lang.String = null
   ): IActionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
     if (params != null) __obj.updateDynamic("params")(params)

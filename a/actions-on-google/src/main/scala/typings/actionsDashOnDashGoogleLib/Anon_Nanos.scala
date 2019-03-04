@@ -13,9 +13,8 @@ trait Anon_Nanos extends js.Object {
 object Anon_Nanos {
   @scala.inline
   def apply(nanos: scala.Double, seconds: java.lang.String): Anon_Nanos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nanos")(nanos)
-    __obj.updateDynamic("seconds")(seconds)
+    val __obj = js.Dynamic.literal(nanos = nanos, seconds = seconds)
+  
     __obj.asInstanceOf[Anon_Nanos]
   }
 }

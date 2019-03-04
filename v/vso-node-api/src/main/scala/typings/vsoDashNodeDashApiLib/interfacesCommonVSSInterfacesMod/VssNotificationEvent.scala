@@ -37,12 +37,8 @@ object VssNotificationEvent {
     eventType: java.lang.String,
     scopes: js.Array[EventScope]
   ): VssNotificationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actors")(actors)
-    __obj.updateDynamic("artifactUris")(artifactUris)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(actors = actors, artifactUris = artifactUris, data = data, eventType = eventType, scopes = scopes)
+  
     __obj.asInstanceOf[VssNotificationEvent]
   }
 }

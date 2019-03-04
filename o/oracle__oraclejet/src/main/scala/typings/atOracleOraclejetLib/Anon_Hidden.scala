@@ -16,9 +16,8 @@ object Anon_Hidden {
     horizontal: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden,
     vertical: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden
   ): Anon_Hidden = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Hidden]
   }
 }

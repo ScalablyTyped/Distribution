@@ -46,8 +46,7 @@ object MedicationDispenseSubstitution {
     responsibleParty: js.Array[Reference] = null,
     `type`: CodeableConcept = null
   ): MedicationDispenseSubstitution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("wasSubstituted")(wasSubstituted)
+    val __obj = js.Dynamic.literal(wasSubstituted = wasSubstituted)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_wasSubstituted != null) __obj.updateDynamic("_wasSubstituted")(_wasSubstituted)

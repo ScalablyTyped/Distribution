@@ -22,11 +22,7 @@ object ReadMoreProps {
     renderTruncatedFooter: js.Function1[js.Function0[scala.Unit], reactLib.reactMod.ReactNs.ReactNode],
     onReady: js.Function0[scala.Unit] = null
   ): ReadMoreProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("numberOfLines")(numberOfLines)
-    __obj.updateDynamic("renderRevealedFooter")(renderRevealedFooter)
-    __obj.updateDynamic("renderTruncatedFooter")(renderTruncatedFooter)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], numberOfLines = numberOfLines, renderRevealedFooter = renderRevealedFooter, renderTruncatedFooter = renderTruncatedFooter)
     if (onReady != null) __obj.updateDynamic("onReady")(onReady)
     __obj.asInstanceOf[ReadMoreProps]
   }

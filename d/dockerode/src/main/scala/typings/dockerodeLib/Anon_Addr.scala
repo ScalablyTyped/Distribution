@@ -26,14 +26,8 @@ object Anon_Addr {
     Memory: scala.Double,
     Name: java.lang.String
   ): Anon_Addr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Addr")(Addr)
-    __obj.updateDynamic("Cpus")(Cpus)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("IP")(IP)
-    __obj.updateDynamic("Labels")(Labels)
-    __obj.updateDynamic("Memory")(Memory)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Addr = Addr, Cpus = Cpus, ID = ID, IP = IP, Labels = Labels, Memory = Memory, Name = Name)
+  
     __obj.asInstanceOf[Anon_Addr]
   }
 }

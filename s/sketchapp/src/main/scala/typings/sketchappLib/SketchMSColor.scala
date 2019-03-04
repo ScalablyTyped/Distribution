@@ -30,13 +30,7 @@ object SketchMSColor {
     value: java.lang.String,
     do_objectID: java.lang.String = null
   ): SketchMSColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("blue")(blue)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("red")(red)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_class = _class, alpha = alpha, blue = blue, green = green, red = red, value = value)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSColor]
   }

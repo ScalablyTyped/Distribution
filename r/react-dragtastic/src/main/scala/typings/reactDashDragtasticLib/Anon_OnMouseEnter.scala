@@ -18,10 +18,8 @@ object Anon_OnMouseEnter {
     onMouseLeave: js.Function0[scala.Unit],
     onMouseUp: js.Function0[scala.Unit]
   ): Anon_OnMouseEnter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onMouseEnter")(onMouseEnter)
-    __obj.updateDynamic("onMouseLeave")(onMouseLeave)
-    __obj.updateDynamic("onMouseUp")(onMouseUp)
+    val __obj = js.Dynamic.literal(onMouseEnter = onMouseEnter, onMouseLeave = onMouseLeave, onMouseUp = onMouseUp)
+  
     __obj.asInstanceOf[Anon_OnMouseEnter]
   }
 }

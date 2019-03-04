@@ -20,11 +20,8 @@ object Moment {
     stripZone: js.Function0[js.Any],
     time: js.Function0[fullcalendarLib.srcMomentDashExtMod.MomentExtDuration]
   ): Moment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasTime")(hasTime)
-    __obj.updateDynamic("stripTime")(stripTime)
-    __obj.updateDynamic("stripZone")(stripZone)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(hasTime = hasTime, stripTime = stripTime, stripZone = stripZone, time = time)
+  
     __obj.asInstanceOf[Moment]
   }
 }

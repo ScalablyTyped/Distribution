@@ -54,11 +54,7 @@ object Anon_AltCpksverFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCpksverFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpksver")(cpksver)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(cpksver = cpksver, nonce = nonce, source = source, volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

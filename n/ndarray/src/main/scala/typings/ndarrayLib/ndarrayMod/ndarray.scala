@@ -48,25 +48,8 @@ object ndarray {
     stride: js.Array[scala.Double],
     transpose: js.Function1[/* repeated */ scala.Double, ndarray[T]]
   ): ndarray[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("dimension")(dimension)
-    __obj.updateDynamic("dtype")(dtype)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("hi")(hi)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("lo")(lo)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("pick")(pick)
-    __obj.updateDynamic("reshape")(reshape)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("stride")(stride)
-    __obj.updateDynamic("transpose")(transpose)
+    val __obj = js.Dynamic.literal(T = T, data = data.asInstanceOf[js.Any], dimension = dimension, dtype = dtype, get = get, hi = hi, index = index, lo = lo, offset = offset, order = order, pick = pick, reshape = reshape, set = set, shape = shape, size = size, step = step, stride = stride, transpose = transpose)
+  
     __obj.asInstanceOf[ndarray[T]]
   }
 }

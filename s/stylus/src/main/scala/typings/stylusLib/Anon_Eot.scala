@@ -28,8 +28,15 @@ object Anon_Eot {
     `.ttf`: java.lang.String,
     `.woff`: java.lang.String
   ): Anon_Eot = {
-    val __obj = js.Dynamic.literal(`.eot` = `.eot`, `.gif` = `.gif`, `.jpeg` = `.jpeg`, `.jpg` = `.jpg`, `.png` = `.png`, `.svg` = `.svg`, `.ttf` = `.ttf`, `.woff` = `.woff`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic(".eot")(`.eot`)
+    __obj.updateDynamic(".gif")(`.gif`)
+    __obj.updateDynamic(".jpeg")(`.jpeg`)
+    __obj.updateDynamic(".jpg")(`.jpg`)
+    __obj.updateDynamic(".png")(`.png`)
+    __obj.updateDynamic(".svg")(`.svg`)
+    __obj.updateDynamic(".ttf")(`.ttf`)
+    __obj.updateDynamic(".woff")(`.woff`)
     __obj.asInstanceOf[Anon_Eot]
   }
 }

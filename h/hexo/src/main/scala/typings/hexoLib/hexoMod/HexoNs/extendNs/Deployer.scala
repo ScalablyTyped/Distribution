@@ -21,8 +21,8 @@ object Deployer {
       scala.Unit
     ]
   ): Deployer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(register = register)
+  
     __obj.asInstanceOf[Deployer]
   }
 }

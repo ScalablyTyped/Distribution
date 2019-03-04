@@ -28,8 +28,7 @@ object Anon_Culture {
     tileDiscardPolicy: cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy = null,
     tileProtocol: java.lang.String = null
   ): Anon_Culture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (culture != null) __obj.updateDynamic("culture")(culture)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -39,11 +39,8 @@ object ASPxDesignerElementEditor {
     extendedOptions: js.Object,
     header: java.lang.String
   ): ASPxDesignerElementEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("editorType")(editorType)
-    __obj.updateDynamic("extendedOptions")(extendedOptions)
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(content = content, editorType = editorType, extendedOptions = extendedOptions, header = header)
+  
     __obj.asInstanceOf[ASPxDesignerElementEditor]
   }
 }

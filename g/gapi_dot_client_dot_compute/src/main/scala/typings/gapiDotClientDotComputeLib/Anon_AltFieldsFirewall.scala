@@ -54,9 +54,7 @@ object Anon_AltFieldsFirewall {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFirewall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firewall")(firewall)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(firewall = firewall, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

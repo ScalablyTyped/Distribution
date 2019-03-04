@@ -12,8 +12,8 @@ trait Anon_Paged extends js.Object {
 object Anon_Paged {
   @scala.inline
   def apply(paged: js.Any): Anon_Paged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paged")(paged)
+    val __obj = js.Dynamic.literal(paged = paged)
+  
     __obj.asInstanceOf[Anon_Paged]
   }
 }

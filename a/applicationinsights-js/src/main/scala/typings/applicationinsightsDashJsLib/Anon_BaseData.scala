@@ -16,9 +16,8 @@ object Anon_BaseData {
     baseData: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     baseType: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_BaseData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseData")(baseData)
-    __obj.updateDynamic("baseType")(baseType)
+    val __obj = js.Dynamic.literal(baseData = baseData, baseType = baseType)
+  
     __obj.asInstanceOf[Anon_BaseData]
   }
 }

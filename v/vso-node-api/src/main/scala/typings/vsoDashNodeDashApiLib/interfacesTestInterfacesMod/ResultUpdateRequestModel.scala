@@ -22,12 +22,8 @@ object ResultUpdateRequestModel {
     parameters: js.Array[TestResultParameterModel],
     testCaseResult: TestCaseResultUpdateModel
   ): ResultUpdateRequestModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionResultDeletes")(actionResultDeletes)
-    __obj.updateDynamic("actionResults")(actionResults)
-    __obj.updateDynamic("parameterDeletes")(parameterDeletes)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("testCaseResult")(testCaseResult)
+    val __obj = js.Dynamic.literal(actionResultDeletes = actionResultDeletes, actionResults = actionResults, parameterDeletes = parameterDeletes, parameters = parameters, testCaseResult = testCaseResult)
+  
     __obj.asInstanceOf[ResultUpdateRequestModel]
   }
 }

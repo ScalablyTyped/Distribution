@@ -20,9 +20,7 @@ object IntrospectionEnumValue {
     deprecationReason: java.lang.String = null,
     description: java.lang.String = null
   ): IntrospectionEnumValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDeprecated")(isDeprecated)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(isDeprecated = isDeprecated, name = name)
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionEnumValue]

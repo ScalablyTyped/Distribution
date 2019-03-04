@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueAccessListEntry {
     items: js.Array[winrtLib.WindowsNs.StorageNs.AccessCacheNs.AccessListEntry],
     returnValue: scala.Double
   ): Anon_ItemsReturnValueAccessListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueAccessListEntry]
   }
 }

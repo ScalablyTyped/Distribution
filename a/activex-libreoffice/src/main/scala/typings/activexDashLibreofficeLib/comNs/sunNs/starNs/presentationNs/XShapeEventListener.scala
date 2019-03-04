@@ -37,12 +37,8 @@ object XShapeEventListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XShapeEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, click = click, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XShapeEventListener]
   }
 }

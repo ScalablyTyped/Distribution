@@ -44,14 +44,8 @@ object ArcGISMapServiceCapabilitiesOperations {
     supportsQuery: scala.Boolean,
     supportsTileMap: scala.Boolean
   ): ArcGISMapServiceCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsExportMap")(supportsExportMap)
-    __obj.updateDynamic("supportsExportTiles")(supportsExportTiles)
-    __obj.updateDynamic("supportsQuery")(supportsQuery)
-    __obj.updateDynamic("supportsTileMap")(supportsTileMap)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsExportMap = supportsExportMap, supportsExportTiles = supportsExportTiles, supportsQuery = supportsQuery, supportsTileMap = supportsTileMap)
+  
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesOperations]
   }
 }

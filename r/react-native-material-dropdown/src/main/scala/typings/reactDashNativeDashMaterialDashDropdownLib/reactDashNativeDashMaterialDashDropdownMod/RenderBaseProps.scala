@@ -95,9 +95,7 @@ object RenderBaseProps {
     value: java.lang.String | scala.Double = null,
     valueExtractor: js.Function2[/* item */ DropDownData, /* index */ scala.Double, java.lang.String] = null
   ): RenderBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(data = data, title = title)
     if (!js.isUndefined(absoluteRTLLayout)) __obj.updateDynamic("absoluteRTLLayout")(absoluteRTLLayout)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

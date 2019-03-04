@@ -26,8 +26,7 @@ object Anon_CommentsLocParameters {
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_CommentsLocParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)

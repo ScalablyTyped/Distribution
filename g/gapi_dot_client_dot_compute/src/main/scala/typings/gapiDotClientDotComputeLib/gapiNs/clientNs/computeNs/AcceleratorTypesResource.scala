@@ -30,10 +30,8 @@ object AcceleratorTypesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AcceleratorTypeList]
     ]
   ): AcceleratorTypesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, get = get, list = list)
+  
     __obj.asInstanceOf[AcceleratorTypesResource]
   }
 }

@@ -30,16 +30,8 @@ object IAccessControlEntryContainer {
     IsEmpty: scala.Boolean,
     Remove: js.Function1[IAccessControlEntryKey, scala.Unit]
   ): IAccessControlEntryContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("At")(At)
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GetKeys")(GetKeys)
-    __obj.updateDynamic("GetKeysWithPseudoUserDefinitions")(GetKeysWithPseudoUserDefinitions)
-    __obj.updateDynamic("HasKey")(HasKey)
-    __obj.updateDynamic("IsEmpty")(IsEmpty)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, At = At, Clear = Clear, Clone = Clone, GetKeys = GetKeys, GetKeysWithPseudoUserDefinitions = GetKeysWithPseudoUserDefinitions, HasKey = HasKey, IsEmpty = IsEmpty, Remove = Remove)
+  
     __obj.asInstanceOf[IAccessControlEntryContainer]
   }
 }

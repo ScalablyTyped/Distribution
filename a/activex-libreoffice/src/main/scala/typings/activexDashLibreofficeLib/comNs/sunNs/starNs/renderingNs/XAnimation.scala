@@ -57,13 +57,8 @@ object XAnimation {
     release: js.Function0[scala.Unit],
     render: js.Function3[XCanvas, ViewState, scala.Double, scala.Unit]
   ): XAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AnimationAttributes")(AnimationAttributes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAnimationAttributes")(getAnimationAttributes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(AnimationAttributes = AnimationAttributes, acquire = acquire, getAnimationAttributes = getAnimationAttributes, queryInterface = queryInterface, release = release, render = render)
+  
     __obj.asInstanceOf[XAnimation]
   }
 }

@@ -36,12 +36,7 @@ object ImageProps {
     size: java.lang.String = null,
     srcSet: java.lang.String = null
   ): ImageProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alt")(alt)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("naturalHeight")(naturalHeight)
-    __obj.updateDynamic("naturalWidth")(naturalWidth)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(alt = alt, color = color, naturalHeight = naturalHeight, naturalWidth = naturalWidth, src = src)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError)

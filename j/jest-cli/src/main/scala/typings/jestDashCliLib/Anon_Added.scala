@@ -26,14 +26,8 @@ object Anon_Added {
     unmatched: scala.Double,
     updated: scala.Double
   ): Anon_Added = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("fileDeleted")(fileDeleted)
-    __obj.updateDynamic("matched")(matched)
-    __obj.updateDynamic("unchecked")(unchecked)
-    __obj.updateDynamic("uncheckedKeys")(uncheckedKeys)
-    __obj.updateDynamic("unmatched")(unmatched)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(added = added, fileDeleted = fileDeleted, matched = matched, unchecked = unchecked, uncheckedKeys = uncheckedKeys, unmatched = unmatched, updated = updated)
+  
     __obj.asInstanceOf[Anon_Added]
   }
 }

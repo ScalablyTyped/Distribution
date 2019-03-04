@@ -14,10 +14,8 @@ trait Coin extends js.Object {
 object Coin {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String, symbol: java.lang.String): Coin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(id = id, name = name, symbol = symbol)
+  
     __obj.asInstanceOf[Coin]
   }
 }

@@ -24,8 +24,7 @@ object Credentials {
     token: java.lang.String = null,
     username: java.lang.String = null
   ): Credentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(scope = scope)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (email != null) __obj.updateDynamic("email")(email)
     if (password != null) __obj.updateDynamic("password")(password)

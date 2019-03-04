@@ -14,10 +14,8 @@ trait Anon_PickSourceAction extends js.Object {
 object Anon_PickSourceAction {
   @scala.inline
   def apply(pickSourceAction: scala.Double, pickTargetAction: scala.Double, undecided: scala.Double): Anon_PickSourceAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pickSourceAction")(pickSourceAction)
-    __obj.updateDynamic("pickTargetAction")(pickTargetAction)
-    __obj.updateDynamic("undecided")(undecided)
+    val __obj = js.Dynamic.literal(pickSourceAction = pickSourceAction, pickTargetAction = pickTargetAction, undecided = undecided)
+  
     __obj.asInstanceOf[Anon_PickSourceAction]
   }
 }

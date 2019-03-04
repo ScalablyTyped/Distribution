@@ -35,17 +35,8 @@ object AccountInfo {
     serializedPath: java.lang.String,
     xpub: java.lang.String
   ): AccountInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("addressIndex")(addressIndex)
-    __obj.updateDynamic("addressPath")(addressPath)
-    __obj.updateDynamic("addressSerializedPath")(addressSerializedPath)
-    __obj.updateDynamic("balance")(balance)
-    __obj.updateDynamic("confirmed")(confirmed)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("serializedPath")(serializedPath)
-    __obj.updateDynamic("xpub")(xpub)
+    val __obj = js.Dynamic.literal(address = address, addressIndex = addressIndex, addressPath = addressPath, addressSerializedPath = addressSerializedPath, balance = balance, confirmed = confirmed, id = id, path = path, serializedPath = serializedPath, xpub = xpub)
+  
     __obj.asInstanceOf[AccountInfo]
   }
 }

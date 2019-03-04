@@ -22,8 +22,7 @@ object Anon_AccesstokenExpiresin {
     scope: js.Array[java.lang.String] = null,
     token_type: java.lang.String = null
   ): Anon_AccesstokenExpiresin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
+    val __obj = js.Dynamic.literal(access_token = access_token)
     if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
     if (local_expiry != null) __obj.updateDynamic("local_expiry")(local_expiry.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope)

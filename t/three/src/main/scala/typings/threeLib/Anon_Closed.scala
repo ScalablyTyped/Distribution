@@ -22,12 +22,8 @@ object Anon_Closed {
     radius: scala.Double,
     tubularSegments: scala.Double
   ): Anon_Closed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("radialSegments")(radialSegments)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("tubularSegments")(tubularSegments)
+    val __obj = js.Dynamic.literal(closed = closed, path = path, radialSegments = radialSegments, radius = radius, tubularSegments = tubularSegments)
+  
     __obj.asInstanceOf[Anon_Closed]
   }
 }

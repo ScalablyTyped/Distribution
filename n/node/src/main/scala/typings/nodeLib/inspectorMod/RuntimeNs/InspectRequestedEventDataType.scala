@@ -12,8 +12,8 @@ trait InspectRequestedEventDataType extends js.Object {
 object InspectRequestedEventDataType {
   @scala.inline
   def apply(`object`: RemoteObject): InspectRequestedEventDataType = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[InspectRequestedEventDataType]
   }
 }

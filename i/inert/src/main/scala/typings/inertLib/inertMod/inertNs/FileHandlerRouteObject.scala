@@ -25,8 +25,7 @@ object FileHandlerRouteObject {
     mode: inertLib.inertLibNumbers.`false` | inertLib.inertLibStrings.attachment | inertLib.inertLibStrings.`inline` = null,
     start: scala.Int | scala.Double = null
   ): FileHandlerRouteObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])

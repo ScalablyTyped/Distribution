@@ -28,12 +28,8 @@ object ResourceLayoutInfo {
     namedResourceCount: scala.Double,
     resourceSubtreeCount: scala.Double
   ): ResourceLayoutInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checksum")(checksum)
-    __obj.updateDynamic("majorVersion")(majorVersion)
-    __obj.updateDynamic("minorVersion")(minorVersion)
-    __obj.updateDynamic("namedResourceCount")(namedResourceCount)
-    __obj.updateDynamic("resourceSubtreeCount")(resourceSubtreeCount)
+    val __obj = js.Dynamic.literal(checksum = checksum, majorVersion = majorVersion, minorVersion = minorVersion, namedResourceCount = namedResourceCount, resourceSubtreeCount = resourceSubtreeCount)
+  
     __obj.asInstanceOf[ResourceLayoutInfo]
   }
 }

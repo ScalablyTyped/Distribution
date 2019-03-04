@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 object DirectiveLiteral {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.DirectiveLiteral, value: java.lang.String): DirectiveLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DirectiveLiteral]
   }
 }

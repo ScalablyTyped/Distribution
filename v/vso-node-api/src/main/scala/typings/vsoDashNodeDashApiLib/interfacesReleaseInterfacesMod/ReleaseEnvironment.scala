@@ -176,41 +176,8 @@ object ReleaseEnvironment {
     variables: org.scalablytyped.runtime.StringDictionary[ConfigurationVariableValue],
     workflowTasks: js.Array[WorkflowTask]
   ): ReleaseEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("definitionEnvironmentId")(definitionEnvironmentId)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("deployPhasesSnapshot")(deployPhasesSnapshot)
-    __obj.updateDynamic("deploySteps")(deploySteps)
-    __obj.updateDynamic("environmentOptions")(environmentOptions)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nextScheduledUtcTime")(nextScheduledUtcTime)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("postApprovalsSnapshot")(postApprovalsSnapshot)
-    __obj.updateDynamic("postDeployApprovals")(postDeployApprovals)
-    __obj.updateDynamic("postDeploymentGatesSnapshot")(postDeploymentGatesSnapshot)
-    __obj.updateDynamic("preApprovalsSnapshot")(preApprovalsSnapshot)
-    __obj.updateDynamic("preDeployApprovals")(preDeployApprovals)
-    __obj.updateDynamic("preDeploymentGatesSnapshot")(preDeploymentGatesSnapshot)
-    __obj.updateDynamic("processParameters")(processParameters)
-    __obj.updateDynamic("queueId")(queueId)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseCreatedBy")(releaseCreatedBy)
-    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
-    __obj.updateDynamic("releaseDescription")(releaseDescription)
-    __obj.updateDynamic("releaseId")(releaseId)
-    __obj.updateDynamic("scheduledDeploymentTime")(scheduledDeploymentTime)
-    __obj.updateDynamic("schedules")(schedules)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timeToDeploy")(timeToDeploy)
-    __obj.updateDynamic("triggerReason")(triggerReason)
-    __obj.updateDynamic("variableGroups")(variableGroups)
-    __obj.updateDynamic("variables")(variables)
-    __obj.updateDynamic("workflowTasks")(workflowTasks)
+    val __obj = js.Dynamic.literal(conditions = conditions, createdOn = createdOn, definitionEnvironmentId = definitionEnvironmentId, demands = demands, deployPhasesSnapshot = deployPhasesSnapshot, deploySteps = deploySteps, environmentOptions = environmentOptions, id = id, modifiedOn = modifiedOn, name = name, nextScheduledUtcTime = nextScheduledUtcTime, owner = owner, postApprovalsSnapshot = postApprovalsSnapshot, postDeployApprovals = postDeployApprovals, postDeploymentGatesSnapshot = postDeploymentGatesSnapshot, preApprovalsSnapshot = preApprovalsSnapshot, preDeployApprovals = preDeployApprovals, preDeploymentGatesSnapshot = preDeploymentGatesSnapshot, processParameters = processParameters, queueId = queueId, rank = rank, release = release, releaseCreatedBy = releaseCreatedBy, releaseDefinition = releaseDefinition, releaseDescription = releaseDescription, releaseId = releaseId, scheduledDeploymentTime = scheduledDeploymentTime, schedules = schedules, status = status, timeToDeploy = timeToDeploy, triggerReason = triggerReason, variableGroups = variableGroups, variables = variables, workflowTasks = workflowTasks)
+  
     __obj.asInstanceOf[ReleaseEnvironment]
   }
 }

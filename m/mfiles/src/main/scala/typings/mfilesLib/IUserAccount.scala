@@ -34,18 +34,8 @@ object IUserAccount {
     VaultLanguage: scala.Double,
     VaultRoles: mfilesLib.MFilesNs.MFUserAccountVaultRole
   ): IUserAccount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("AddVaultRoles")(AddVaultRoles)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("InternalUser")(InternalUser)
-    __obj.updateDynamic("LoginName")(LoginName)
-    __obj.updateDynamic("RemoveVaultRoles")(RemoveVaultRoles)
-    __obj.updateDynamic("VaultLanguage")(VaultLanguage)
-    __obj.updateDynamic("VaultRoles")(VaultRoles)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, AddVaultRoles = AddVaultRoles, Clone = Clone, CloneFrom = CloneFrom, Enabled = Enabled, ID = ID, InternalUser = InternalUser, LoginName = LoginName, RemoveVaultRoles = RemoveVaultRoles, VaultLanguage = VaultLanguage, VaultRoles = VaultRoles)
+  
     __obj.asInstanceOf[IUserAccount]
   }
 }

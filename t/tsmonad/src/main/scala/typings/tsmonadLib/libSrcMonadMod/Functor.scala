@@ -18,10 +18,8 @@ object Functor {
     lift: js.Function1[js.Function1[/* t */ T, js.Any], Functor[js.Any]],
     map: js.Function1[js.Function1[/* t */ T, js.Any], Functor[js.Any]]
   ): Functor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fmap")(fmap)
-    __obj.updateDynamic("lift")(lift)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(fmap = fmap, lift = lift, map = map)
+  
     __obj.asInstanceOf[Functor[T]]
   }
 }

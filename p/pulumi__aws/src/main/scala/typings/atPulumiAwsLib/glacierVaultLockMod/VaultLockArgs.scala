@@ -32,10 +32,7 @@ object VaultLockArgs {
     vaultName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     ignoreDeletionError: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): VaultLockArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completeLock")(completeLock.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    __obj.updateDynamic("vaultName")(vaultName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completeLock = completeLock.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     if (ignoreDeletionError != null) __obj.updateDynamic("ignoreDeletionError")(ignoreDeletionError.asInstanceOf[js.Any])
     __obj.asInstanceOf[VaultLockArgs]
   }

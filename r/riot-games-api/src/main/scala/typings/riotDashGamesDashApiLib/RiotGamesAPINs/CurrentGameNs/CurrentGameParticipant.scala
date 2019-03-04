@@ -32,17 +32,8 @@ object CurrentGameParticipant {
     summonerName: java.lang.String,
     teamId: scala.Double
   ): CurrentGameParticipant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bot")(bot)
-    __obj.updateDynamic("championId")(championId)
-    __obj.updateDynamic("masteries")(masteries)
-    __obj.updateDynamic("profileIconId")(profileIconId)
-    __obj.updateDynamic("runes")(runes)
-    __obj.updateDynamic("spell1Id")(spell1Id)
-    __obj.updateDynamic("spell2Id")(spell2Id)
-    __obj.updateDynamic("summonerId")(summonerId)
-    __obj.updateDynamic("summonerName")(summonerName)
-    __obj.updateDynamic("teamId")(teamId)
+    val __obj = js.Dynamic.literal(bot = bot, championId = championId, masteries = masteries, profileIconId = profileIconId, runes = runes, spell1Id = spell1Id, spell2Id = spell2Id, summonerId = summonerId, summonerName = summonerName, teamId = teamId)
+  
     __obj.asInstanceOf[CurrentGameParticipant]
   }
 }

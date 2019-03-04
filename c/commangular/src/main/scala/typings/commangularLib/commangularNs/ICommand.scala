@@ -20,8 +20,8 @@ trait ICommand extends js.Object {
 object ICommand {
   @scala.inline
   def apply(execute: js.Function0[js.Any]): ICommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[ICommand]
   }
 }

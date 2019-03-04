@@ -37,9 +37,7 @@ object ModelArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     schema: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ModelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])

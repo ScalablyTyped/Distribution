@@ -18,12 +18,8 @@ object IStreamWebSocketControl {
     serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
     supportedProtocols: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
   ): IStreamWebSocketControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("noDelay")(noDelay)
-    __obj.updateDynamic("outboundBufferSizeInBytes")(outboundBufferSizeInBytes)
-    __obj.updateDynamic("proxyCredential")(proxyCredential)
-    __obj.updateDynamic("serverCredential")(serverCredential)
-    __obj.updateDynamic("supportedProtocols")(supportedProtocols)
+    val __obj = js.Dynamic.literal(noDelay = noDelay, outboundBufferSizeInBytes = outboundBufferSizeInBytes, proxyCredential = proxyCredential, serverCredential = serverCredential, supportedProtocols = supportedProtocols)
+  
     __obj.asInstanceOf[IStreamWebSocketControl]
   }
 }

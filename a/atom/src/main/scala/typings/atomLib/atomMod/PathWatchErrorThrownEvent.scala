@@ -18,9 +18,8 @@ trait PathWatchErrorThrownEvent extends js.Object {
 object PathWatchErrorThrownEvent {
   @scala.inline
   def apply(error: nodeLib.Error, handle: js.Function0[scala.Unit]): PathWatchErrorThrownEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(error = error, handle = handle)
+  
     __obj.asInstanceOf[PathWatchErrorThrownEvent]
   }
 }

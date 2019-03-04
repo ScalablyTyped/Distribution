@@ -81,9 +81,9 @@ object Anon_Alt {
     `start-index`: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal(`end-date` = `end-date`, `start-date` = `start-date`)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("metrics")(metrics)
+    val __obj = js.Dynamic.literal(ids = ids, metrics = metrics)
+    __obj.updateDynamic("end-date")(`end-date`)
+    __obj.updateDynamic("start-date")(`start-date`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (fields != null) __obj.updateDynamic("fields")(fields)

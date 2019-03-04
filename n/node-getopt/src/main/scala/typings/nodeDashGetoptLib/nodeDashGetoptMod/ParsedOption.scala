@@ -17,10 +17,8 @@ trait ParsedOption extends js.Object {
 object ParsedOption {
   @scala.inline
   def apply(argv: js.Array[java.lang.String], empty: js.Function0[scala.Boolean], options: OptionMap): ParsedOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argv")(argv)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(argv = argv, empty = empty, options = options)
+  
     __obj.asInstanceOf[ParsedOption]
   }
 }

@@ -25,10 +25,8 @@ trait CommandInfo extends js.Object {
 object CommandInfo {
   @scala.inline
   def apply(ArgType: activexDashLibreofficeLib.`type`, Handle: scala.Double, Name: java.lang.String): CommandInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArgType")(ArgType)
-    __obj.updateDynamic("Handle")(Handle)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(ArgType = ArgType, Handle = Handle, Name = Name)
+  
     __obj.asInstanceOf[CommandInfo]
   }
 }

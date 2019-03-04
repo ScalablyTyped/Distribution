@@ -37,12 +37,8 @@ object _Impl {
     results: java.lang.String,
     searchButton: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("prompt")(prompt)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("searchButton")(searchButton)
+    val __obj = js.Dynamic.literal(category = category, prompt = prompt, result = result, results = results, searchButton = searchButton)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

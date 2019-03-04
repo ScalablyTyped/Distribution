@@ -12,8 +12,8 @@ trait Array[T] extends js.Object {
 object Array {
   @scala.inline
   def apply[T](abbrev: js.Function0[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): Array[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbrev")(abbrev)
+    val __obj = js.Dynamic.literal(abbrev = abbrev)
+  
     __obj.asInstanceOf[Array[T]]
   }
 }

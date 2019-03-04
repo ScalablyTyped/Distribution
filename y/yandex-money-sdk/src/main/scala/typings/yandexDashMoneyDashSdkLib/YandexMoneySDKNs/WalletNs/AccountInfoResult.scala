@@ -28,12 +28,7 @@ object AccountInfoResult {
     balance_details: yandexDashMoneyDashSdkLib.Anon_Available = null,
     cards_linked: js.Array[yandexDashMoneyDashSdkLib.Anon_Panfragment] = null
   ): AccountInfoResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("account_status")(account_status)
-    __obj.updateDynamic("account_type")(account_type)
-    __obj.updateDynamic("balance")(balance)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(account = account, account_status = account_status, account_type = account_type, balance = balance, currency = currency)
     if (avatar != null) __obj.updateDynamic("avatar")(avatar)
     if (balance_details != null) __obj.updateDynamic("balance_details")(balance_details)
     if (cards_linked != null) __obj.updateDynamic("cards_linked")(cards_linked)

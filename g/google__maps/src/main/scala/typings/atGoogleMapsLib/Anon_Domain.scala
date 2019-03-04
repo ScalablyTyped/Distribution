@@ -18,10 +18,8 @@ object Anon_Domain {
     message: java.lang.String,
     reason: atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   ): Anon_Domain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(domain = domain, message = message, reason = reason)
+  
     __obj.asInstanceOf[Anon_Domain]
   }
 }

@@ -18,9 +18,7 @@ object Anon_Method {
     path: java.lang.String,
     regex: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Method = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(method = method, path = path)
     if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
     __obj.asInstanceOf[Anon_Method]
   }

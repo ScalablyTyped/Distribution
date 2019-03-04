@@ -62,13 +62,8 @@ object XGraphicProvider {
       scala.Unit
     ]
   ): XGraphicProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryGraphic")(queryGraphic)
-    __obj.updateDynamic("queryGraphicDescriptor")(queryGraphicDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("storeGraphic")(storeGraphic)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryGraphic = queryGraphic, queryGraphicDescriptor = queryGraphicDescriptor, queryInterface = queryInterface, release = release, storeGraphic = storeGraphic)
+  
     __obj.asInstanceOf[XGraphicProvider]
   }
 }

@@ -19,13 +19,8 @@ object RotationalSpring {
     restAngle: scala.Double,
     stiffness: scala.Double
   ): RotationalSpring = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyForce")(applyForce)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("damping")(damping)
-    __obj.updateDynamic("restAngle")(restAngle)
-    __obj.updateDynamic("stiffness")(stiffness)
+    val __obj = js.Dynamic.literal(applyForce = applyForce, bodyA = bodyA, bodyB = bodyB, damping = damping, restAngle = restAngle, stiffness = stiffness)
+  
     __obj.asInstanceOf[RotationalSpring]
   }
 }

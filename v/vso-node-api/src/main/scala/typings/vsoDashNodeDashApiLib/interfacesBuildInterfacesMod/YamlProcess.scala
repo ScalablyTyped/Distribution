@@ -25,10 +25,8 @@ object YamlProcess {
     `type`: scala.Double,
     yamlFilename: java.lang.String
   ): YamlProcess = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("yamlFilename")(yamlFilename)
+    val __obj = js.Dynamic.literal(errors = errors, resources = resources, yamlFilename = yamlFilename)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[YamlProcess]
   }
 }

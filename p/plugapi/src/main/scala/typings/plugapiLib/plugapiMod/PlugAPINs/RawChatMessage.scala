@@ -22,12 +22,8 @@ object RawChatMessage {
     uid: scala.Double,
     un: java.lang.String
   ): RawChatMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cid")(cid)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("un")(un)
+    val __obj = js.Dynamic.literal(cid = cid, message = message, sub = sub, uid = uid, un = un)
+  
     __obj.asInstanceOf[RawChatMessage]
   }
 }

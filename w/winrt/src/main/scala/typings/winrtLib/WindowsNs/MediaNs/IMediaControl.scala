@@ -46,24 +46,8 @@ object IMediaControl {
     soundLevel: SoundLevel,
     trackName: java.lang.String
   ): IMediaControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("albumArt")(albumArt)
-    __obj.updateDynamic("artistName")(artistName)
-    __obj.updateDynamic("isPlaying")(isPlaying)
-    __obj.updateDynamic("onchanneldownpressed")(onchanneldownpressed)
-    __obj.updateDynamic("onchanneluppressed")(onchanneluppressed)
-    __obj.updateDynamic("onfastforwardpressed")(onfastforwardpressed)
-    __obj.updateDynamic("onnexttrackpressed")(onnexttrackpressed)
-    __obj.updateDynamic("onpausepressed")(onpausepressed)
-    __obj.updateDynamic("onplaypausetogglepressed")(onplaypausetogglepressed)
-    __obj.updateDynamic("onplaypressed")(onplaypressed)
-    __obj.updateDynamic("onprevioustrackpressed")(onprevioustrackpressed)
-    __obj.updateDynamic("onrecordpressed")(onrecordpressed)
-    __obj.updateDynamic("onrewindpressed")(onrewindpressed)
-    __obj.updateDynamic("onsoundlevelchanged")(onsoundlevelchanged)
-    __obj.updateDynamic("onstoppressed")(onstoppressed)
-    __obj.updateDynamic("soundLevel")(soundLevel)
-    __obj.updateDynamic("trackName")(trackName)
+    val __obj = js.Dynamic.literal(albumArt = albumArt, artistName = artistName, isPlaying = isPlaying, onchanneldownpressed = onchanneldownpressed, onchanneluppressed = onchanneluppressed, onfastforwardpressed = onfastforwardpressed, onnexttrackpressed = onnexttrackpressed, onpausepressed = onpausepressed, onplaypausetogglepressed = onplaypausetogglepressed, onplaypressed = onplaypressed, onprevioustrackpressed = onprevioustrackpressed, onrecordpressed = onrecordpressed, onrewindpressed = onrewindpressed, onsoundlevelchanged = onsoundlevelchanged, onstoppressed = onstoppressed, soundLevel = soundLevel, trackName = trackName)
+  
     __obj.asInstanceOf[IMediaControl]
   }
 }

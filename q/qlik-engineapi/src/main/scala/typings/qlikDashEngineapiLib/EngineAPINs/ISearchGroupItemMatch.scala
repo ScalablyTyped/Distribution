@@ -43,10 +43,8 @@ object ISearchGroupItemMatch {
     qRanges: js.Array[ISearchCharRange],
     qText: java.lang.String
   ): ISearchGroupItemMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttributes")(qAttributes)
-    __obj.updateDynamic("qRanges")(qRanges)
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qAttributes = qAttributes, qRanges = qRanges, qText = qText)
+  
     __obj.asInstanceOf[ISearchGroupItemMatch]
   }
 }

@@ -18,10 +18,8 @@ object WEBGL_color_buffer_float {
     RGBA32F_EXT: GLenum,
     UNSIGNED_NORMALIZED_EXT: GLenum
   ): WEBGL_color_buffer_float = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT")(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT)
-    __obj.updateDynamic("RGBA32F_EXT")(RGBA32F_EXT)
-    __obj.updateDynamic("UNSIGNED_NORMALIZED_EXT")(UNSIGNED_NORMALIZED_EXT)
+    val __obj = js.Dynamic.literal(FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT = FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT, RGBA32F_EXT = RGBA32F_EXT, UNSIGNED_NORMALIZED_EXT = UNSIGNED_NORMALIZED_EXT)
+  
     __obj.asInstanceOf[WEBGL_color_buffer_float]
   }
 }

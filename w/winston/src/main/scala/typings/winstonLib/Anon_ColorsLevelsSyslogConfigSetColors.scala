@@ -16,9 +16,8 @@ object Anon_ColorsLevelsSyslogConfigSetColors {
     colors: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetColors,
     levels: winstonLib.libWinstonConfigMod.winstonNs.SyslogConfigSetLevels
   ): Anon_ColorsLevelsSyslogConfigSetColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("levels")(levels)
+    val __obj = js.Dynamic.literal(colors = colors, levels = levels)
+  
     __obj.asInstanceOf[Anon_ColorsLevelsSyslogConfigSetColors]
   }
 }

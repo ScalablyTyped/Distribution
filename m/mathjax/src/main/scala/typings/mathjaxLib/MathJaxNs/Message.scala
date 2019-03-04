@@ -45,13 +45,8 @@ object Message {
     Set: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Double],
     filterText: js.Function2[java.lang.String, scala.Double, java.lang.String]
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("File")(File)
-    __obj.updateDynamic("Log")(Log)
-    __obj.updateDynamic("Remove")(Remove)
-    __obj.updateDynamic("Set")(Set)
-    __obj.updateDynamic("filterText")(filterText)
+    val __obj = js.Dynamic.literal(Clear = Clear, File = File, Log = Log, Remove = Remove, Set = Set, filterText = filterText)
+  
     __obj.asInstanceOf[Message]
   }
 }

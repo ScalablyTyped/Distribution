@@ -24,13 +24,8 @@ object ISymbol {
     visible: scala.Boolean,
     width: scala.Double
   ): ISymbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(chart = chart, format = format, height = height, padding = padding, visible = visible, width = width)
+  
     __obj.asInstanceOf[ISymbol]
   }
 }

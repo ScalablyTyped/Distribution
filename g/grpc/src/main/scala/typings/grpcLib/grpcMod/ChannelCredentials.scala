@@ -32,10 +32,8 @@ object ChannelCredentials {
     getCallCredentials: js.Function0[CallCredentials],
     getSecureContext: js.Function0[nodeLib.tlsMod.SecureContext | scala.Null]
   ): ChannelCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("getCallCredentials")(getCallCredentials)
-    __obj.updateDynamic("getSecureContext")(getSecureContext)
+    val __obj = js.Dynamic.literal(compose = compose, getCallCredentials = getCallCredentials, getSecureContext = getSecureContext)
+  
     __obj.asInstanceOf[ChannelCredentials]
   }
 }

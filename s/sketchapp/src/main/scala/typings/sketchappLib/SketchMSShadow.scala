@@ -28,15 +28,8 @@ object SketchMSShadow {
     offsetY: scala.Double,
     spread: scala.Double
   ): SketchMSShadow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class.asInstanceOf[js.Any])
-    __obj.updateDynamic("blurRadius")(blurRadius)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("contextSettings")(contextSettings)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("spread")(spread)
+    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], blurRadius = blurRadius, color = color, contextSettings = contextSettings, isEnabled = isEnabled, offsetX = offsetX, offsetY = offsetY, spread = spread)
+  
     __obj.asInstanceOf[SketchMSShadow]
   }
 }

@@ -14,10 +14,8 @@ trait QueuedReleaseData extends js.Object {
 object QueuedReleaseData {
   @scala.inline
   def apply(projectId: java.lang.String, queuePosition: scala.Double, releaseId: scala.Double): QueuedReleaseData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("queuePosition")(queuePosition)
-    __obj.updateDynamic("releaseId")(releaseId)
+    val __obj = js.Dynamic.literal(projectId = projectId, queuePosition = queuePosition, releaseId = releaseId)
+  
     __obj.asInstanceOf[QueuedReleaseData]
   }
 }

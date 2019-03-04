@@ -18,10 +18,8 @@ object Anon_Array {
     item: js.Function1[scala.Double, js.Any],
     length: scala.Double
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_array")(_array)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(_array = _array, item = item, length = length)
+  
     __obj.asInstanceOf[Anon_Array]
   }
 }

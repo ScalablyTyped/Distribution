@@ -27,10 +27,8 @@ object TSMappedType {
     typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind = null
   ): TSMappedType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("typeParameter")(typeParameter)
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], typeParameter = typeParameter)
+    __obj.updateDynamic("type")(`type`)
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
     __obj.asInstanceOf[TSMappedType]
   }

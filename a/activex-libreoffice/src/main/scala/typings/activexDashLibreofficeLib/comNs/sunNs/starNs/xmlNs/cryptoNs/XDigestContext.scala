@@ -32,12 +32,8 @@ object XDigestContext {
     release: js.Function0[scala.Unit],
     updateDigest: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XDigestContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("finalizeDigestAndDispose")(finalizeDigestAndDispose)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateDigest")(updateDigest)
+    val __obj = js.Dynamic.literal(acquire = acquire, finalizeDigestAndDispose = finalizeDigestAndDispose, queryInterface = queryInterface, release = release, updateDigest = updateDigest)
+  
     __obj.asInstanceOf[XDigestContext]
   }
 }

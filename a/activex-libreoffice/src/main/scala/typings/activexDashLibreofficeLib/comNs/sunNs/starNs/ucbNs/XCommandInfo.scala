@@ -63,16 +63,8 @@ object XCommandInfo {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCommandInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Commands")(Commands)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCommandInfoByHandle")(getCommandInfoByHandle)
-    __obj.updateDynamic("getCommandInfoByName")(getCommandInfoByName)
-    __obj.updateDynamic("getCommands")(getCommands)
-    __obj.updateDynamic("hasCommandByHandle")(hasCommandByHandle)
-    __obj.updateDynamic("hasCommandByName")(hasCommandByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Commands = Commands, acquire = acquire, getCommandInfoByHandle = getCommandInfoByHandle, getCommandInfoByName = getCommandInfoByName, getCommands = getCommands, hasCommandByHandle = hasCommandByHandle, hasCommandByName = hasCommandByName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCommandInfo]
   }
 }

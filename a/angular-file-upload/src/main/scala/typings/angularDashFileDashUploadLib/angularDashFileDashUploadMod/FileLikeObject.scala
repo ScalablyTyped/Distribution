@@ -27,10 +27,8 @@ trait FileLikeObject extends js.Object {
 object FileLikeObject {
   @scala.inline
   def apply(lastModifiedDate: js.Any, name: java.lang.String, size: scala.Double, `type`: java.lang.String): FileLikeObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(lastModifiedDate = lastModifiedDate, name = name, size = size)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FileLikeObject]
   }
 }

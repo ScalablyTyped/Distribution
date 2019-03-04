@@ -13,9 +13,8 @@ trait BaseResponse extends js.Object {
 object BaseResponse {
   @scala.inline
   def apply(meta: giphyDashApiLib.Anon_Msg, pagination: giphyDashApiLib.Anon_Count): BaseResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("pagination")(pagination)
+    val __obj = js.Dynamic.literal(meta = meta, pagination = pagination)
+  
     __obj.asInstanceOf[BaseResponse]
   }
 }

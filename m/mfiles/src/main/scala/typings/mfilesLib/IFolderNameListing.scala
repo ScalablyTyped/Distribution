@@ -20,11 +20,8 @@ object IFolderNameListing {
     MoreValues: scala.Boolean,
     SortWithExpression: js.Function2[IExpression, scala.Double, scala.Unit]
   ): IFolderNameListing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("MoreValues")(MoreValues)
-    __obj.updateDynamic("SortWithExpression")(SortWithExpression)
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item, MoreValues = MoreValues, SortWithExpression = SortWithExpression)
+  
     __obj.asInstanceOf[IFolderNameListing]
   }
 }

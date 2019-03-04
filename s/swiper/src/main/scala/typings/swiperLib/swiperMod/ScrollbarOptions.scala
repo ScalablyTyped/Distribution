@@ -59,8 +59,7 @@ object ScrollbarOptions {
     lockClass: java.lang.String = null,
     snapOnRelease: js.UndefOr[scala.Boolean] = js.undefined
   ): ScrollbarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass)
     if (dragSize != null) __obj.updateDynamic("dragSize")(dragSize.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

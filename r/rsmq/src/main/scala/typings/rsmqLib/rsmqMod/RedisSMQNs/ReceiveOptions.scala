@@ -12,8 +12,7 @@ trait ReceiveOptions extends QueueIdentifier {
 object ReceiveOptions {
   @scala.inline
   def apply(qname: java.lang.String, vt: scala.Int | scala.Double = null): ReceiveOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qname")(qname)
+    val __obj = js.Dynamic.literal(qname = qname)
     if (vt != null) __obj.updateDynamic("vt")(vt.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiveOptions]
   }

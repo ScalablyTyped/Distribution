@@ -30,16 +30,8 @@ object BufferList {
     tail: Entry[D],
     unshift: js.Function1[D, scala.Unit]
   ): BufferList[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("concat")(concat)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("shift")(shift)
-    __obj.updateDynamic("tail")(tail)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(clear = clear, concat = concat, head = head, join = join, length = length, push = push, shift = shift, tail = tail, unshift = unshift)
+  
     __obj.asInstanceOf[BufferList[D]]
   }
 }

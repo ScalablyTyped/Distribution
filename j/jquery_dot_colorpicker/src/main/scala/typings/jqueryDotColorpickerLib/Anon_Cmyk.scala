@@ -22,12 +22,8 @@ object Anon_Cmyk {
     lab: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.LAB,
     rgb: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.RGB
   ): Anon_Cmyk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmyk")(cmyk)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("hsv")(hsv)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(cmyk = cmyk, hsl = hsl, hsv = hsv, lab = lab, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_Cmyk]
   }
 }

@@ -13,9 +13,8 @@ trait Cases extends js.Object {
 object Cases {
   @scala.inline
   def apply(cases: js.Array[Case], length: scala.Double): Cases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cases")(cases)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(cases = cases, length = length)
+  
     __obj.asInstanceOf[Cases]
   }
 }

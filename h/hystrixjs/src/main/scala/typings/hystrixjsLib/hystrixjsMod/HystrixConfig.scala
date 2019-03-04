@@ -42,22 +42,8 @@ object HystrixConfig {
     requestVolumeRejectionThreshold: js.Function0[scala.Double],
     resetProperties: js.Function0[scala.Unit]
   ): HystrixConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage)
-    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed)
-    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThresholdForceOverride")(circuitBreakerRequestVolumeThresholdForceOverride)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThresholdOverride")(circuitBreakerRequestVolumeThresholdOverride)
-    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds)
-    __obj.updateDynamic("executionTimeoutInMilliseconds")(executionTimeoutInMilliseconds)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("metricsPercentileWindowBuckets")(metricsPercentileWindowBuckets)
-    __obj.updateDynamic("metricsPercentileWindowInMilliseconds")(metricsPercentileWindowInMilliseconds)
-    __obj.updateDynamic("metricsStatisticalWindowBuckets")(metricsStatisticalWindowBuckets)
-    __obj.updateDynamic("metricsStatisticalWindowInMilliseconds")(metricsStatisticalWindowInMilliseconds)
-    __obj.updateDynamic("requestVolumeRejectionThreshold")(requestVolumeRejectionThreshold)
-    __obj.updateDynamic("resetProperties")(resetProperties)
+    val __obj = js.Dynamic.literal(circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerRequestVolumeThresholdForceOverride = circuitBreakerRequestVolumeThresholdForceOverride, circuitBreakerRequestVolumeThresholdOverride = circuitBreakerRequestVolumeThresholdOverride, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, executionTimeoutInMilliseconds = executionTimeoutInMilliseconds, init = init, metricsPercentileWindowBuckets = metricsPercentileWindowBuckets, metricsPercentileWindowInMilliseconds = metricsPercentileWindowInMilliseconds, metricsStatisticalWindowBuckets = metricsStatisticalWindowBuckets, metricsStatisticalWindowInMilliseconds = metricsStatisticalWindowInMilliseconds, requestVolumeRejectionThreshold = requestVolumeRejectionThreshold, resetProperties = resetProperties)
+  
     __obj.asInstanceOf[HystrixConfig]
   }
 }

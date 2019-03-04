@@ -13,32 +13,32 @@ class Repo protected () extends js.Object {
     * @param {boolean} forceRestClient
     * @param {!FirebaseApp} app
     */
-  def this(`repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
+  def this(repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
   var __database: js.Any = js.native
-  var `abortTransactions_`: js.Any = js.native
+  var abortTransactions_ : js.Any = js.native
   var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var dataUpdateCount: scala.Double = js.native
   val database: atFirebaseDatabaseLib.distSrcApiDatabaseMod.Database = js.native
-  var `eventQueue_`: js.Any = js.native
+  var eventQueue_ : js.Any = js.native
   /**
     * @return {!number}
     * @private
     */
-  var `getNextWriteId_`: js.Any = js.native
-  var `infoData_`: js.Any = js.native
-  var `infoSyncTree_`: js.Any = js.native
-  var `interceptServerDataCallback_`: js.Any = js.native
+  var getNextWriteId_ : js.Any = js.native
+  var infoData_ : js.Any = js.native
+  var infoSyncTree_ : js.Any = js.native
+  var interceptServerDataCallback_ : js.Any = js.native
   /**
     * @param {...*} var_args
     * @private
     */
-  var `log_`: js.Any = js.native
-  var `nextWriteId_`: js.Any = js.native
+  var log_ : js.Any = js.native
+  var nextWriteId_ : js.Any = js.native
   /**
     * @param {!boolean} connectStatus
     * @private
     */
-  var `onConnectStatus_`: js.Any = js.native
+  var onConnectStatus_ : js.Any = js.native
   /**
     * Called by realtime when we get new messages from the server.
     *
@@ -48,38 +48,38 @@ class Repo protected () extends js.Object {
     * @param {boolean} isMerge
     * @param {?number} tag
     */
-  var `onDataUpdate_`: js.Any = js.native
-  var `onDisconnect_`: js.Any = js.native
+  var onDataUpdate_ : js.Any = js.native
+  var onDisconnect_ : js.Any = js.native
   /**
     * @param {!Object} updates
     * @private
     */
-  var `onServerInfoUpdate_`: js.Any = js.native
+  var onServerInfoUpdate_ : js.Any = js.native
   /**
     * TODO: This should be @private but it's used by test_access.js and internal.js
     * @type {?PersistentConnection}
     */
-  var `persistentConnection_`: atFirebaseDatabaseLib.distSrcCorePersistentConnectionMod.PersistentConnection | scala.Null = js.native
-  var `repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo = js.native
-  var `rerunTransactions_`: js.Any = js.native
+  var persistentConnection_ : atFirebaseDatabaseLib.distSrcCorePersistentConnectionMod.PersistentConnection | scala.Null = js.native
+  var repoInfo_ : atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo = js.native
+  var rerunTransactions_ : js.Any = js.native
   /**
     * Applies all of the changes stored up in the onDisconnect_ tree.
     * @private
     */
-  var `runOnDisconnectEvents_`: js.Any = js.native
-  var `serverSyncTree_`: js.Any = js.native
-  var `server_`: js.Any = js.native
-  var `statsListener_`: js.Any = js.native
-  var `statsReporter_`: js.Any = js.native
-  var `stats_`: js.Any = js.native
-  var `transactions_init_`: js.Any = js.native
+  var runOnDisconnectEvents_ : js.Any = js.native
+  var serverSyncTree_ : js.Any = js.native
+  var server_ : js.Any = js.native
+  var statsListener_ : js.Any = js.native
+  var statsReporter_ : js.Any = js.native
+  var stats_ : js.Any = js.native
+  var transactions_init_ : js.Any = js.native
   /**
     *
     * @param {!string} pathString
     * @param {*} value
     * @private
     */
-  var `updateInfo_`: js.Any = js.native
+  var updateInfo_ : js.Any = js.native
   /**
     * @param {!Query} query
     * @param {!EventRegistration} eventRegistration
@@ -117,13 +117,13 @@ class Repo protected () extends js.Object {
     * @return {!Object}
     */
   def generateServerValues(): js.Object = js.native
-  def `interceptServerData_`(): scala.Unit = js.native
+  def interceptServerData_(): scala.Unit = js.native
   /**
     * TODO: This should be @private but it's used by test_access.js and internal.js
     * @param {?function(!string, *):*} callback
     * @private
     */
-  def `interceptServerData_`(callback: js.Function2[/* a */ java.lang.String, /* b */ js.Any, _]): scala.Unit = js.native
+  def interceptServerData_(callback: js.Function2[/* a */ java.lang.String, /* b */ js.Any, _]): scala.Unit = js.native
   def interrupt(): scala.Unit = js.native
   /**
     * @return {!string} The namespace represented by the repo.

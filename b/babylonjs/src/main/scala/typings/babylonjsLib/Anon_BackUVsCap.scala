@@ -34,9 +34,7 @@ object Anon_BackUVsCap {
     sideOrientation: scala.Int | scala.Double = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BackUVsCap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("shape")(shape)
+    val __obj = js.Dynamic.literal(path = path, shape = shape)
     if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs)
     if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
     if (frontUVs != null) __obj.updateDynamic("frontUVs")(frontUVs)

@@ -51,13 +51,8 @@ object ASPxClientSpreadsheetSelection {
     rightColumnIndex: scala.Double,
     topRowIndex: scala.Double
   ): ASPxClientSpreadsheetSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeCellColumnIndex")(activeCellColumnIndex)
-    __obj.updateDynamic("activeCellRowIndex")(activeCellRowIndex)
-    __obj.updateDynamic("bottomRowIndex")(bottomRowIndex)
-    __obj.updateDynamic("leftColumnIndex")(leftColumnIndex)
-    __obj.updateDynamic("rightColumnIndex")(rightColumnIndex)
-    __obj.updateDynamic("topRowIndex")(topRowIndex)
+    val __obj = js.Dynamic.literal(activeCellColumnIndex = activeCellColumnIndex, activeCellRowIndex = activeCellRowIndex, bottomRowIndex = bottomRowIndex, leftColumnIndex = leftColumnIndex, rightColumnIndex = rightColumnIndex, topRowIndex = topRowIndex)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetSelection]
   }
 }

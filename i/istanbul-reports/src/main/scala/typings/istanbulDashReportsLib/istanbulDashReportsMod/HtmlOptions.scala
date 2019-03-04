@@ -14,10 +14,8 @@ trait HtmlOptions extends js.Object {
 object HtmlOptions {
   @scala.inline
   def apply(linkMapper: LinkMapper, subdir: java.lang.String, verbose: scala.Boolean): HtmlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linkMapper")(linkMapper)
-    __obj.updateDynamic("subdir")(subdir)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(linkMapper = linkMapper, subdir = subdir, verbose = verbose)
+  
     __obj.asInstanceOf[HtmlOptions]
   }
 }

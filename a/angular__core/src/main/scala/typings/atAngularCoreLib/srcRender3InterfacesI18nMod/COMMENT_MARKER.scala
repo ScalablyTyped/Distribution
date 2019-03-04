@@ -12,8 +12,8 @@ trait COMMENT_MARKER extends js.Object {
 object COMMENT_MARKER {
   @scala.inline
   def apply(marker: atAngularCoreLib.atAngularCoreLibStrings.comment): COMMENT_MARKER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(marker = marker)
+  
     __obj.asInstanceOf[COMMENT_MARKER]
   }
 }

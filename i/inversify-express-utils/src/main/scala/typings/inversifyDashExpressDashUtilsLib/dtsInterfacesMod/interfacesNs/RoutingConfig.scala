@@ -12,8 +12,8 @@ trait RoutingConfig extends js.Object {
 object RoutingConfig {
   @scala.inline
   def apply(rootPath: java.lang.String): RoutingConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rootPath")(rootPath)
+    val __obj = js.Dynamic.literal(rootPath = rootPath)
+  
     __obj.asInstanceOf[RoutingConfig]
   }
 }

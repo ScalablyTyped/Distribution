@@ -20,11 +20,8 @@ object Anon_CHECKBOX {
     RADIO: chromeDashAppsLib.chromeDashAppsLibStrings.radio,
     SEPARATOR: chromeDashAppsLib.chromeDashAppsLibStrings.separator
   ): Anon_CHECKBOX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHECKBOX")(CHECKBOX)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("RADIO")(RADIO)
-    __obj.updateDynamic("SEPARATOR")(SEPARATOR)
+    val __obj = js.Dynamic.literal(CHECKBOX = CHECKBOX, NORMAL = NORMAL, RADIO = RADIO, SEPARATOR = SEPARATOR)
+  
     __obj.asInstanceOf[Anon_CHECKBOX]
   }
 }

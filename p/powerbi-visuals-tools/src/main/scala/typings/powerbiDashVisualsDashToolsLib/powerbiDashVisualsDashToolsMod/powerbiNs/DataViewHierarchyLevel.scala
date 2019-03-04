@@ -16,8 +16,8 @@ trait DataViewHierarchyLevel extends js.Object {
 object DataViewHierarchyLevel {
   @scala.inline
   def apply(sources: js.Array[DataViewMetadataColumn]): DataViewHierarchyLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sources")(sources)
+    val __obj = js.Dynamic.literal(sources = sources)
+  
     __obj.asInstanceOf[DataViewHierarchyLevel]
   }
 }

@@ -18,10 +18,8 @@ object ListOnScrollProps {
     scrollOffset: scala.Double,
     scrollUpdateWasRequested: scala.Boolean
   ): ListOnScrollProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scrollDirection")(scrollDirection)
-    __obj.updateDynamic("scrollOffset")(scrollOffset)
-    __obj.updateDynamic("scrollUpdateWasRequested")(scrollUpdateWasRequested)
+    val __obj = js.Dynamic.literal(scrollDirection = scrollDirection, scrollOffset = scrollOffset, scrollUpdateWasRequested = scrollUpdateWasRequested)
+  
     __obj.asInstanceOf[ListOnScrollProps]
   }
 }

@@ -20,8 +20,7 @@ object AsyncOptions {
     promiseSuffix: java.lang.String = null,
     promisify: Promisify = null
   ): AsyncOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("syncSuffix")(syncSuffix)
+    val __obj = js.Dynamic.literal(syncSuffix = syncSuffix)
     if (asyncSuffix != null) __obj.updateDynamic("asyncSuffix")(asyncSuffix)
     if (promiseSuffix != null) __obj.updateDynamic("promiseSuffix")(promiseSuffix)
     if (promisify != null) __obj.updateDynamic("promisify")(promisify)

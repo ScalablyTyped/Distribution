@@ -12,8 +12,8 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(handle: js.Function2[js.Any, js.Function, scala.Unit]): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(handle)
+    val __obj = js.Dynamic.literal(handle = handle)
+  
     __obj.asInstanceOf[Filter]
   }
 }

@@ -68,9 +68,7 @@ object AddConfig {
     xAmzHeadersAtUpload: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     xAmzHeadersCommon: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): AddConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(file = file, name = name)
     if (beforeSigner != null) __obj.updateDynamic("beforeSigner")(beforeSigner)
     if (cancelled != null) __obj.updateDynamic("cancelled")(cancelled)
     if (complete != null) __obj.updateDynamic("complete")(complete)

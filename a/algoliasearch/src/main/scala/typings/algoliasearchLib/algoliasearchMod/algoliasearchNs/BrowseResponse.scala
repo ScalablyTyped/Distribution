@@ -22,11 +22,7 @@ object BrowseResponse {
     query: java.lang.String,
     cursor: java.lang.String = null
   ): BrowseResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("processingTimeMS")(processingTimeMS)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(hits = hits, params = params, processingTimeMS = processingTimeMS, query = query)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     __obj.asInstanceOf[BrowseResponse]
   }

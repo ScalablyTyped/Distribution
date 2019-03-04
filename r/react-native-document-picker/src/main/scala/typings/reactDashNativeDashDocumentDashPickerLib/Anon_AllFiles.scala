@@ -24,13 +24,8 @@ object Anon_AllFiles {
     plainText: js.Function0[java.lang.String],
     video: js.Function0[java.lang.String]
   ): Anon_AllFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allFiles")(allFiles)
-    __obj.updateDynamic("audio")(audio)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("pdf")(pdf)
-    __obj.updateDynamic("plainText")(plainText)
-    __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(allFiles = allFiles, audio = audio, images = images, pdf = pdf, plainText = plainText, video = video)
+  
     __obj.asInstanceOf[Anon_AllFiles]
   }
 }

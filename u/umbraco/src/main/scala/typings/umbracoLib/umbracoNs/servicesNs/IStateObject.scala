@@ -17,10 +17,8 @@ trait IStateObject extends js.Object {
 object IStateObject {
   @scala.inline
   def apply(id: scala.Double, name: java.lang.String, parentId: scala.Double): IStateObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentId")(parentId)
+    val __obj = js.Dynamic.literal(id = id, name = name, parentId = parentId)
+  
     __obj.asInstanceOf[IStateObject]
   }
 }

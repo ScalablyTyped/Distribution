@@ -36,12 +36,8 @@ object CropProperties {
     right_offset: scala.Double,
     top_offset: scala.Double
   ): CropProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("bottom_offset")(bottom_offset)
-    __obj.updateDynamic("left_offset")(left_offset)
-    __obj.updateDynamic("right_offset")(right_offset)
-    __obj.updateDynamic("top_offset")(top_offset)
+    val __obj = js.Dynamic.literal(angle = angle, bottom_offset = bottom_offset, left_offset = left_offset, right_offset = right_offset, top_offset = top_offset)
+  
     __obj.asInstanceOf[CropProperties]
   }
 }

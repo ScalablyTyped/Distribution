@@ -20,11 +20,8 @@ object IProjection {
     isCycled: js.Function0[js.Array[scala.Boolean]],
     toGlobalPixels: js.Function2[js.Array[scala.Double], scala.Double, js.Array[scala.Double]]
   ): IProjection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromGlobalPixels")(fromGlobalPixels)
-    __obj.updateDynamic("getCoordSystem")(getCoordSystem)
-    __obj.updateDynamic("isCycled")(isCycled)
-    __obj.updateDynamic("toGlobalPixels")(toGlobalPixels)
+    val __obj = js.Dynamic.literal(fromGlobalPixels = fromGlobalPixels, getCoordSystem = getCoordSystem, isCycled = isCycled, toGlobalPixels = toGlobalPixels)
+  
     __obj.asInstanceOf[IProjection]
   }
 }

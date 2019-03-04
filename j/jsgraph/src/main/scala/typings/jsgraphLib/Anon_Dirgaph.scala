@@ -12,8 +12,8 @@ trait Anon_Dirgaph extends js.Object {
 object Anon_Dirgaph {
   @scala.inline
   def apply(dirgaph: jsgraphLib.jsgraphMod.jsgraphNs.DirectedGraph): Anon_Dirgaph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirgaph")(dirgaph)
+    val __obj = js.Dynamic.literal(dirgaph = dirgaph)
+  
     __obj.asInstanceOf[Anon_Dirgaph]
   }
 }

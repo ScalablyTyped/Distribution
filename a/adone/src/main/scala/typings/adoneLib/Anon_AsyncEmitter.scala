@@ -24,10 +24,8 @@ object Anon_AsyncEmitter {
     Emitter: Anon_DefaultMaxListenersDest,
     INs: js.Any
   ): Anon_AsyncEmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsyncEmitter")(AsyncEmitter)
-    __obj.updateDynamic("Emitter")(Emitter)
-    __obj.updateDynamic("INs")(INs)
+    val __obj = js.Dynamic.literal(AsyncEmitter = AsyncEmitter, Emitter = Emitter, INs = INs)
+  
     __obj.asInstanceOf[Anon_AsyncEmitter]
   }
 }

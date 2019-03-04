@@ -22,10 +22,8 @@ object BrokenPackageRequest {
     Message: java.lang.String,
     aName: java.lang.String
   ): BrokenPackageRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("aName")(aName)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, aName = aName)
+  
     __obj.asInstanceOf[BrokenPackageRequest]
   }
 }

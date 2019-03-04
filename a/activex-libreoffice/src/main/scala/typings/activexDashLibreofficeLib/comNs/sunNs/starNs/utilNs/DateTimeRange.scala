@@ -61,22 +61,8 @@ object DateTimeRange {
     StartSeconds: scala.Double,
     StartYear: scala.Double
   ): DateTimeRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndDay")(EndDay)
-    __obj.updateDynamic("EndHours")(EndHours)
-    __obj.updateDynamic("EndMinutes")(EndMinutes)
-    __obj.updateDynamic("EndMonth")(EndMonth)
-    __obj.updateDynamic("EndNanoSeconds")(EndNanoSeconds)
-    __obj.updateDynamic("EndSeconds")(EndSeconds)
-    __obj.updateDynamic("EndYear")(EndYear)
-    __obj.updateDynamic("IsUTC")(IsUTC)
-    __obj.updateDynamic("StartDay")(StartDay)
-    __obj.updateDynamic("StartHours")(StartHours)
-    __obj.updateDynamic("StartMinutes")(StartMinutes)
-    __obj.updateDynamic("StartMonth")(StartMonth)
-    __obj.updateDynamic("StartNanoSeconds")(StartNanoSeconds)
-    __obj.updateDynamic("StartSeconds")(StartSeconds)
-    __obj.updateDynamic("StartYear")(StartYear)
+    val __obj = js.Dynamic.literal(EndDay = EndDay, EndHours = EndHours, EndMinutes = EndMinutes, EndMonth = EndMonth, EndNanoSeconds = EndNanoSeconds, EndSeconds = EndSeconds, EndYear = EndYear, IsUTC = IsUTC, StartDay = StartDay, StartHours = StartHours, StartMinutes = StartMinutes, StartMonth = StartMonth, StartNanoSeconds = StartNanoSeconds, StartSeconds = StartSeconds, StartYear = StartYear)
+  
     __obj.asInstanceOf[DateTimeRange]
   }
 }

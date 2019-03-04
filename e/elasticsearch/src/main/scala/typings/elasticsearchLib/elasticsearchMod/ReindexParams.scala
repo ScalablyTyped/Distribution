@@ -32,8 +32,7 @@ object ReindexParams {
     waitForActiveShards: java.lang.String = null,
     waitForCompletion: js.UndefOr[scala.Boolean] = js.undefined
   ): ReindexParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])

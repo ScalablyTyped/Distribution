@@ -22,11 +22,7 @@ object MessageFlowAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): MessageFlowAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("innerMessageFlowRef")(innerMessageFlowRef)
-    __obj.updateDynamic("outerMessageFlowRef")(outerMessageFlowRef)
+    val __obj = js.Dynamic.literal($type = $type, id = id, innerMessageFlowRef = innerMessageFlowRef, outerMessageFlowRef = outerMessageFlowRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

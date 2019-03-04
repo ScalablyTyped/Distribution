@@ -24,8 +24,7 @@ object ServerRegisterPluginObject {
     options: T = null,
     routes: hapiLib.Anon_PrefixVhost = null
   ): ServerRegisterPluginObject[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(plugin = plugin)
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (routes != null) __obj.updateDynamic("routes")(routes)

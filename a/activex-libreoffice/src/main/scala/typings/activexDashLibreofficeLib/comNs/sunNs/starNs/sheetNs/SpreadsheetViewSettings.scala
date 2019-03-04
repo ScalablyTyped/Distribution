@@ -113,38 +113,8 @@ object SpreadsheetViewSettings {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SpreadsheetViewSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GridColor")(GridColor)
-    __obj.updateDynamic("HasColumnRowHeaders")(HasColumnRowHeaders)
-    __obj.updateDynamic("HasHorizontalScrollBar")(HasHorizontalScrollBar)
-    __obj.updateDynamic("HasSheetTabs")(HasSheetTabs)
-    __obj.updateDynamic("HasVerticalScrollBar")(HasVerticalScrollBar)
-    __obj.updateDynamic("HideSpellMarks")(HideSpellMarks)
-    __obj.updateDynamic("IsOutlineSymbolsSet")(IsOutlineSymbolsSet)
-    __obj.updateDynamic("IsValueHighlightingEnabled")(IsValueHighlightingEnabled)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ShowAnchor")(ShowAnchor)
-    __obj.updateDynamic("ShowCharts")(ShowCharts)
-    __obj.updateDynamic("ShowDrawing")(ShowDrawing)
-    __obj.updateDynamic("ShowFormulas")(ShowFormulas)
-    __obj.updateDynamic("ShowGrid")(ShowGrid)
-    __obj.updateDynamic("ShowHelpLines")(ShowHelpLines)
-    __obj.updateDynamic("ShowNotes")(ShowNotes)
-    __obj.updateDynamic("ShowObjects")(ShowObjects)
-    __obj.updateDynamic("ShowPageBreaks")(ShowPageBreaks)
-    __obj.updateDynamic("ShowZeroValues")(ShowZeroValues)
-    __obj.updateDynamic("ZoomType")(ZoomType)
-    __obj.updateDynamic("ZoomValue")(ZoomValue)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(GridColor = GridColor, HasColumnRowHeaders = HasColumnRowHeaders, HasHorizontalScrollBar = HasHorizontalScrollBar, HasSheetTabs = HasSheetTabs, HasVerticalScrollBar = HasVerticalScrollBar, HideSpellMarks = HideSpellMarks, IsOutlineSymbolsSet = IsOutlineSymbolsSet, IsValueHighlightingEnabled = IsValueHighlightingEnabled, PropertySetInfo = PropertySetInfo, ShowAnchor = ShowAnchor, ShowCharts = ShowCharts, ShowDrawing = ShowDrawing, ShowFormulas = ShowFormulas, ShowGrid = ShowGrid, ShowHelpLines = ShowHelpLines, ShowNotes = ShowNotes, ShowObjects = ShowObjects, ShowPageBreaks = ShowPageBreaks, ShowZeroValues = ShowZeroValues, ZoomType = ZoomType, ZoomValue = ZoomValue, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SpreadsheetViewSettings]
   }
 }

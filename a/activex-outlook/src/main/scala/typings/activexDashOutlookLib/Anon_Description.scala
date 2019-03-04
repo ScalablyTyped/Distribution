@@ -20,11 +20,8 @@ object Anon_Description {
     State: activexDashOutlookLib.OutlookNs.OlSyncState,
     Value: scala.Double
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Description = Description, Max = Max, State = State, Value = Value)
+  
     __obj.asInstanceOf[Anon_Description]
   }
 }

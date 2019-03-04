@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropDownProps extends js.Object {
-  var align: js.UndefOr[js.Object] = js.undefined
+  var align: js.UndefOr[Align] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
@@ -33,7 +33,7 @@ object DropDownProps {
   @scala.inline
   def apply(
     overlay: reactLib.reactMod.ReactNs.ReactNode | OverlayFunc,
-    align: js.Object = null,
+    align: Align = null,
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,8 +52,7 @@ object DropDownProps {
     ] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): DropDownProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

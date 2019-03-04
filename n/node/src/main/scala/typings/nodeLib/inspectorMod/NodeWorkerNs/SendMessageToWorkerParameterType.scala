@@ -16,9 +16,8 @@ trait SendMessageToWorkerParameterType extends js.Object {
 object SendMessageToWorkerParameterType {
   @scala.inline
   def apply(message: java.lang.String, sessionId: SessionID): SendMessageToWorkerParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sessionId")(sessionId)
+    val __obj = js.Dynamic.literal(message = message, sessionId = sessionId)
+  
     __obj.asInstanceOf[SendMessageToWorkerParameterType]
   }
 }

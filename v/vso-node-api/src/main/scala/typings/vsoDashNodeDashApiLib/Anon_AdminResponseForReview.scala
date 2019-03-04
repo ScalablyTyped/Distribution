@@ -24,13 +24,8 @@ object Anon_AdminResponseForReview {
     replyToReview: scala.Double,
     updateReview: scala.Double
   ): Anon_AdminResponseForReview = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminResponseForReview")(adminResponseForReview)
-    __obj.updateDynamic("deleteAdminReply")(deleteAdminReply)
-    __obj.updateDynamic("deletePublisherReply")(deletePublisherReply)
-    __obj.updateDynamic("flagReview")(flagReview)
-    __obj.updateDynamic("replyToReview")(replyToReview)
-    __obj.updateDynamic("updateReview")(updateReview)
+    val __obj = js.Dynamic.literal(adminResponseForReview = adminResponseForReview, deleteAdminReply = deleteAdminReply, deletePublisherReply = deletePublisherReply, flagReview = flagReview, replyToReview = replyToReview, updateReview = updateReview)
+  
     __obj.asInstanceOf[Anon_AdminResponseForReview]
   }
 }

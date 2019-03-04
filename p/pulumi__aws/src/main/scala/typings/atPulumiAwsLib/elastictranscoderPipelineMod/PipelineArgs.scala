@@ -66,9 +66,7 @@ object PipelineArgs {
     thumbnailConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketStorageClassInput] = null,
     thumbnailConfigPermissions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccessesGrantee]]] = null
   ): PipelineArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputBucket")(inputBucket.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inputBucket = inputBucket.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     if (awsKmsKeyArn != null) __obj.updateDynamic("awsKmsKeyArn")(awsKmsKeyArn.asInstanceOf[js.Any])
     if (contentConfig != null) __obj.updateDynamic("contentConfig")(contentConfig.asInstanceOf[js.Any])
     if (contentConfigPermissions != null) __obj.updateDynamic("contentConfigPermissions")(contentConfigPermissions.asInstanceOf[js.Any])

@@ -29,11 +29,8 @@ object Hatch {
     Distance: scala.Double,
     Style: HatchStyle
   ): Hatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Angle")(Angle)
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("Style")(Style)
+    val __obj = js.Dynamic.literal(Angle = Angle, Color = Color, Distance = Distance, Style = Style)
+  
     __obj.asInstanceOf[Hatch]
   }
 }

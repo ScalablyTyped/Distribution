@@ -54,9 +54,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdUrlMap {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdUrlMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("urlMap")(urlMap)
+    val __obj = js.Dynamic.literal(project = project, urlMap = urlMap)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

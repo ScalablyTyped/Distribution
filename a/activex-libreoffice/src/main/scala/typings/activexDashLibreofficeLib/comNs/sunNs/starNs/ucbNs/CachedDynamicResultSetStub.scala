@@ -31,20 +31,8 @@ object CachedDynamicResultSetStub {
     setListener: js.Function1[XDynamicResultSetListener, scala.Unit],
     setSource: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): CachedDynamicResultSetStub = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Capabilities")(Capabilities)
-    __obj.updateDynamic("StaticResultSet")(StaticResultSet)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("connectToCache")(connectToCache)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getCapabilities")(getCapabilities)
-    __obj.updateDynamic("getStaticResultSet")(getStaticResultSet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setListener")(setListener)
-    __obj.updateDynamic("setSource")(setSource)
+    val __obj = js.Dynamic.literal(Capabilities = Capabilities, StaticResultSet = StaticResultSet, acquire = acquire, addEventListener = addEventListener, connectToCache = connectToCache, dispose = dispose, getCapabilities = getCapabilities, getStaticResultSet = getStaticResultSet, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setListener = setListener, setSource = setSource)
+  
     __obj.asInstanceOf[CachedDynamicResultSetStub]
   }
 }

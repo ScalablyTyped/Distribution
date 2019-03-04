@@ -32,12 +32,7 @@ object RowDescriptor {
     routeID: java.lang.String = null,
     routeParams: js.Array[java.lang.String] = null
   ): RowDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("isRead")(isRead)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("shortDetailText")(shortDetailText)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(body = body, isRead = isRead, labels = labels, shortDetailText = shortDetailText, title = title)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

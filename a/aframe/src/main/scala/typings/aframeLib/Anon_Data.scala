@@ -16,9 +16,8 @@ object Anon_Data {
     parse: js.Function1[java.lang.String, js.Object],
     stringify: js.Function1[js.Object, java.lang.String]
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(parse = parse, stringify = stringify)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

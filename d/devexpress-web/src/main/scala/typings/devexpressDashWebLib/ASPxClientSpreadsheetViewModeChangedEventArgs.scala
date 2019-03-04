@@ -19,8 +19,8 @@ trait ASPxClientSpreadsheetViewModeChangedEventArgs extends ASPxClientEventArgs 
 object ASPxClientSpreadsheetViewModeChangedEventArgs {
   @scala.inline
   def apply(oldViewMode: js.Any): ASPxClientSpreadsheetViewModeChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldViewMode")(oldViewMode)
+    val __obj = js.Dynamic.literal(oldViewMode = oldViewMode)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetViewModeChangedEventArgs]
   }
 }

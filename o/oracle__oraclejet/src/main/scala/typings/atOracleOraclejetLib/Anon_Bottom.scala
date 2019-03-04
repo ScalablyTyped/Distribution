@@ -22,12 +22,8 @@ object Anon_Bottom {
     valign: atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.middle,
     width: scala.Double
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
-    __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(halign = halign.asInstanceOf[js.Any], height = height, rendered = rendered.asInstanceOf[js.Any], valign = valign.asInstanceOf[js.Any], width = width)
+  
     __obj.asInstanceOf[Anon_Bottom]
   }
 }

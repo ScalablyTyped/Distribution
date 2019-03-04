@@ -15,8 +15,8 @@ trait RegistrationEventResponse extends _EventResponse {
 object RegistrationEventResponse {
   @scala.inline
   def apply(registrationId: java.lang.String): RegistrationEventResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registrationId")(registrationId)
+    val __obj = js.Dynamic.literal(registrationId = registrationId)
+  
     __obj.asInstanceOf[RegistrationEventResponse]
   }
 }

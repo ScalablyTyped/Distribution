@@ -140,26 +140,8 @@ object XSimpleFileAccess {
     ],
     setReadOnly: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): XSimpleFileAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("createFolder")(createFolder)
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getDateTimeModified")(getDateTimeModified)
-    __obj.updateDynamic("getFolderContents")(getFolderContents)
-    __obj.updateDynamic("getSize")(getSize)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("kill")(kill)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("openFileRead")(openFileRead)
-    __obj.updateDynamic("openFileReadWrite")(openFileReadWrite)
-    __obj.updateDynamic("openFileWrite")(openFileWrite)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setInteractionHandler")(setInteractionHandler)
-    __obj.updateDynamic("setReadOnly")(setReadOnly)
+    val __obj = js.Dynamic.literal(acquire = acquire, copy = copy, createFolder = createFolder, exists = exists, getContentType = getContentType, getDateTimeModified = getDateTimeModified, getFolderContents = getFolderContents, getSize = getSize, isFolder = isFolder, isReadOnly = isReadOnly, kill = kill, move = move, openFileRead = openFileRead, openFileReadWrite = openFileReadWrite, openFileWrite = openFileWrite, queryInterface = queryInterface, release = release, setInteractionHandler = setInteractionHandler, setReadOnly = setReadOnly)
+  
     __obj.asInstanceOf[XSimpleFileAccess]
   }
 }

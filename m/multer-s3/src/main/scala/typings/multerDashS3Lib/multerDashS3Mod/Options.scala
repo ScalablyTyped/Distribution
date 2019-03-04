@@ -128,9 +128,7 @@ object Options {
       scala.Unit
     ]) | java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    __obj.updateDynamic("s3")(s3)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], s3 = s3)
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)

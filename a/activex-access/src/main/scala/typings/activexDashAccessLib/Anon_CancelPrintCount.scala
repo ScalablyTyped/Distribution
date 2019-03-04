@@ -13,9 +13,8 @@ trait Anon_CancelPrintCount extends js.Object {
 object Anon_CancelPrintCount {
   @scala.inline
   def apply(Cancel: scala.Double, PrintCount: scala.Double): Anon_CancelPrintCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("PrintCount")(PrintCount)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, PrintCount = PrintCount)
+  
     __obj.asInstanceOf[Anon_CancelPrintCount]
   }
 }

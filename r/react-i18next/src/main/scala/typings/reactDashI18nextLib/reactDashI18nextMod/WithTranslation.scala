@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 object WithTranslation {
   @scala.inline
   def apply(i18n: i18nextLib.i18nextMod.i18nextNs.i18n): WithTranslation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i18n")(i18n)
+    val __obj = js.Dynamic.literal(i18n = i18n)
+  
     __obj.asInstanceOf[WithTranslation]
   }
 }

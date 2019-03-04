@@ -23,12 +23,8 @@ object XPresentationSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPresentationSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Presentation")(Presentation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPresentation")(getPresentation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Presentation = Presentation, acquire = acquire, getPresentation = getPresentation, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPresentationSupplier]
   }
 }

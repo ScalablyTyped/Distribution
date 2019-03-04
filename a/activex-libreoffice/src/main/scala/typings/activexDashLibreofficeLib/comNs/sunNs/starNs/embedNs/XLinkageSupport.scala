@@ -66,17 +66,8 @@ object XLinkageSupport {
     ],
     storeOwn: js.Function0[scala.Unit]
   ): XLinkageSupport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LinkURL")(LinkURL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("breakLink")(breakLink)
-    __obj.updateDynamic("getLinkURL")(getLinkURL)
-    __obj.updateDynamic("isLink")(isLink)
-    __obj.updateDynamic("isReadonly")(isReadonly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("storeOwn")(storeOwn)
+    val __obj = js.Dynamic.literal(LinkURL = LinkURL, acquire = acquire, breakLink = breakLink, getLinkURL = getLinkURL, isLink = isLink, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, storeOwn = storeOwn)
+  
     __obj.asInstanceOf[XLinkageSupport]
   }
 }

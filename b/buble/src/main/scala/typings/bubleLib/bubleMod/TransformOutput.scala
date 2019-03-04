@@ -13,9 +13,8 @@ trait TransformOutput extends js.Object {
 object TransformOutput {
   @scala.inline
   def apply(code: java.lang.String, map: magicDashStringLib.magicDashStringMod.SourceMap): TransformOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(code = code, map = map)
+  
     __obj.asInstanceOf[TransformOutput]
   }
 }

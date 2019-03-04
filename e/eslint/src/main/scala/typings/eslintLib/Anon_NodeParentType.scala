@@ -19,9 +19,8 @@ object Anon_NodeParentType {
     parent: estreeLib.estreeMod.VariableDeclaration,
     `type`: eslintLib.eslintLibStrings.Variable
   ): Anon_NodeParentType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(node = node, parent = parent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_NodeParentType]
   }
 }

@@ -26,14 +26,8 @@ object Anon_CanvasIdDestHeight {
     x: scala.Double,
     y: scala.Double
   ): Anon_CanvasIdDestHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasId")(canvasId)
-    __obj.updateDynamic("destHeight")(destHeight)
-    __obj.updateDynamic("destWidth")(destWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId, destHeight = destHeight, destWidth = destWidth, height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_CanvasIdDestHeight]
   }
 }

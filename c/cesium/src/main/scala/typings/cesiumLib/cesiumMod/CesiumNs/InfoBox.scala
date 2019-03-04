@@ -22,12 +22,8 @@ object InfoBox {
     isDestroyed: js.Function0[scala.Boolean],
     viewModel: InfoBoxViewModel
   ): InfoBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("frame")(frame)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(container = container, destroy = destroy, frame = frame, isDestroyed = isDestroyed, viewModel = viewModel)
+  
     __obj.asInstanceOf[InfoBox]
   }
 }

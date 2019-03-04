@@ -26,10 +26,8 @@ object UnsupportedOpenModeException {
     Message: java.lang.String,
     Mode: scala.Double
   ): UnsupportedOpenModeException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Mode")(Mode)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Mode = Mode)
+  
     __obj.asInstanceOf[UnsupportedOpenModeException]
   }
 }

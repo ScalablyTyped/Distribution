@@ -30,11 +30,8 @@ object XInteractionRequestStringResolver {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInteractionRequestStringResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStringFromInformationalRequest")(getStringFromInformationalRequest)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getStringFromInformationalRequest = getStringFromInformationalRequest, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInteractionRequestStringResolver]
   }
 }

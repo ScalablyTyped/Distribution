@@ -16,8 +16,7 @@ object ResponsesObject {
     default: Response,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[Response | js.Any] = null
   ): ResponsesObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(default = default)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResponsesObject]
   }

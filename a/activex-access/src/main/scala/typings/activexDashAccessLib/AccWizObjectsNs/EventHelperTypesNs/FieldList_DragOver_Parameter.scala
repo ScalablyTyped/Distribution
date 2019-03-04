@@ -24,13 +24,8 @@ object FieldList_DragOver_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): FieldList_DragOver_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SourceCtlName")(SourceCtlName)
-    __obj.updateDynamic("SourceFieldList")(SourceFieldList)
-    __obj.updateDynamic("SourceRow")(SourceRow)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(SourceCtlName = SourceCtlName, SourceFieldList = SourceFieldList, SourceRow = SourceRow, State = State, X = X, Y = Y)
+  
     __obj.asInstanceOf[FieldList_DragOver_Parameter]
   }
 }

@@ -22,9 +22,7 @@ object DraggableCallbackArgument {
     translateX: scala.Int | scala.Double = null,
     translateY: scala.Int | scala.Double = null
   ): DraggableCallbackArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dx")(dx)
-    __obj.updateDynamic("dy")(dy)
+    val __obj = js.Dynamic.literal(dx = dx, dy = dy)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])

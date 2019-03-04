@@ -36,9 +36,7 @@ object DropdownButtonBaseProps {
     pullRight: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null
   ): DropdownButtonBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
     if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
     if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)

@@ -50,8 +50,7 @@ object KnownOption {
       scala.Boolean
     ] = null
   ): KnownOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("longName")(longName)
+    val __obj = js.Dynamic.literal(longName = longName)
     if (aliasFor != null) __obj.updateDynamic("aliasFor")(aliasFor)
     if (convert != null) __obj.updateDynamic("convert")(convert)
     if (description != null) __obj.updateDynamic("description")(description)

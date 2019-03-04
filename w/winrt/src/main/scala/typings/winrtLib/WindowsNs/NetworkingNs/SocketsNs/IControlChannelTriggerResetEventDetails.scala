@@ -18,10 +18,8 @@ object IControlChannelTriggerResetEventDetails {
     resetReason: ControlChannelTriggerResetReason,
     softwareSlotReset: scala.Boolean
   ): IControlChannelTriggerResetEventDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hardwareSlotReset")(hardwareSlotReset)
-    __obj.updateDynamic("resetReason")(resetReason)
-    __obj.updateDynamic("softwareSlotReset")(softwareSlotReset)
+    val __obj = js.Dynamic.literal(hardwareSlotReset = hardwareSlotReset, resetReason = resetReason, softwareSlotReset = softwareSlotReset)
+  
     __obj.asInstanceOf[IControlChannelTriggerResetEventDetails]
   }
 }

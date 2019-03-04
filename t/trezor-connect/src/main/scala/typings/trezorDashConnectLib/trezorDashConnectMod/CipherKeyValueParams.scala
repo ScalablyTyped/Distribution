@@ -26,8 +26,7 @@ object CipherKeyValueParams {
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String = null
   ): CipherKeyValueParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (askOnDecrypt != null) __obj.updateDynamic("askOnDecrypt")(askOnDecrypt)
     if (askOnEncrypt != null) __obj.updateDynamic("askOnEncrypt")(askOnEncrypt)

@@ -24,13 +24,8 @@ object Transaction {
     id: scala.Double,
     update: js.Function1[Record, Transaction]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(commit = commit, create = create, db = db, delete = delete, id = id, update = update)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

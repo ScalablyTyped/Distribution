@@ -66,23 +66,10 @@ object GraphicObjectShape {
     Transparency: scala.Double,
     Text: Text = null
   ): GraphicObjectShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustBlue")(AdjustBlue)
-    __obj.updateDynamic("AdjustContrast")(AdjustContrast)
-    __obj.updateDynamic("AdjustGreen")(AdjustGreen)
-    __obj.updateDynamic("AdjustLuminance")(AdjustLuminance)
-    __obj.updateDynamic("AdjustRed")(AdjustRed)
-    __obj.updateDynamic("Gamma")(Gamma)
-    __obj.updateDynamic("Graphic")(Graphic)
-    __obj.updateDynamic("GraphicColorMode")(GraphicColorMode)
-    __obj.updateDynamic("GraphicObjectFillBitmap")(GraphicObjectFillBitmap)
-    __obj.updateDynamic("GraphicStreamURL")(GraphicStreamURL)
-    __obj.updateDynamic("GraphicURL")(GraphicURL)
-    __obj.updateDynamic("ImageMap")(ImageMap)
+    val __obj = js.Dynamic.literal(AdjustBlue = AdjustBlue, AdjustContrast = AdjustContrast, AdjustGreen = AdjustGreen, AdjustLuminance = AdjustLuminance, AdjustRed = AdjustRed, Gamma = Gamma, Graphic = Graphic, GraphicColorMode = GraphicColorMode, GraphicObjectFillBitmap = GraphicObjectFillBitmap, GraphicStreamURL = GraphicStreamURL, GraphicURL = GraphicURL, ImageMap = ImageMap, Transparency = Transparency)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
-    __obj.updateDynamic("Transparency")(Transparency)
     js.Dynamic.global.Object.assign(__obj, Text)
     __obj.asInstanceOf[GraphicObjectShape]
   }

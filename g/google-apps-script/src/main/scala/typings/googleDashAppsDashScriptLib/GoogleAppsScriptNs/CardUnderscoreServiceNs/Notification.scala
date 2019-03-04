@@ -16,9 +16,8 @@ object Notification {
     setText: js.Function1[java.lang.String, Notification],
     setType: js.Function1[NotificationType, Notification]
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(setText = setText, setType = setType)
+  
     __obj.asInstanceOf[Notification]
   }
 }

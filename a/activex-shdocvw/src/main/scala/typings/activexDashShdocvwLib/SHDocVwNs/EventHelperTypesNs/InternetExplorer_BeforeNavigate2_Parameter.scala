@@ -26,14 +26,8 @@ object InternetExplorer_BeforeNavigate2_Parameter {
     URL: js.Any,
     pDisp: js.Any
   ): InternetExplorer_BeforeNavigate2_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Headers")(Headers)
-    __obj.updateDynamic("PostData")(PostData)
-    __obj.updateDynamic("TargetFrameName")(TargetFrameName)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("pDisp")(pDisp)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Flags = Flags, Headers = Headers, PostData = PostData, TargetFrameName = TargetFrameName, URL = URL, pDisp = pDisp)
+  
     __obj.asInstanceOf[InternetExplorer_BeforeNavigate2_Parameter]
   }
 }

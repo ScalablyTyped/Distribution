@@ -25,13 +25,8 @@ object strings {
     VAR_LEFT: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-left`,
     VAR_TOP: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-top`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VAR_FG_SCALE")(VAR_FG_SCALE)
-    __obj.updateDynamic("VAR_FG_SIZE")(VAR_FG_SIZE)
-    __obj.updateDynamic("VAR_FG_TRANSLATE_END")(VAR_FG_TRANSLATE_END)
-    __obj.updateDynamic("VAR_FG_TRANSLATE_START")(VAR_FG_TRANSLATE_START)
-    __obj.updateDynamic("VAR_LEFT")(VAR_LEFT)
-    __obj.updateDynamic("VAR_TOP")(VAR_TOP)
+    val __obj = js.Dynamic.literal(VAR_FG_SCALE = VAR_FG_SCALE, VAR_FG_SIZE = VAR_FG_SIZE, VAR_FG_TRANSLATE_END = VAR_FG_TRANSLATE_END, VAR_FG_TRANSLATE_START = VAR_FG_TRANSLATE_START, VAR_LEFT = VAR_LEFT, VAR_TOP = VAR_TOP)
+  
     __obj.asInstanceOf[strings]
   }
 }

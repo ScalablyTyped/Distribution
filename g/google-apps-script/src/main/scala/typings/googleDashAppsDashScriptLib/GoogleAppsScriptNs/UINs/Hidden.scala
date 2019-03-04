@@ -63,29 +63,8 @@ object Hidden {
     setVisible: js.Function1[scala.Boolean, Hidden],
     setWidth: js.Function1[java.lang.String, Hidden]
   ): Hidden = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setDefaultValue")(setDefaultValue)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setID")(setID)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setLayoutData")(setLayoutData)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setDefaultValue = setDefaultValue, setHeight = setHeight, setID = setID, setId = setId, setLayoutData = setLayoutData, setName = setName, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setTitle = setTitle, setValue = setValue, setVisible = setVisible, setWidth = setWidth)
+  
     __obj.asInstanceOf[Hidden]
   }
 }

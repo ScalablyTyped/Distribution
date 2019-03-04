@@ -24,10 +24,8 @@ object PublicKeyCredential {
     response: AuthenticatorAttestationResponse | AuthenticatorAssertionResponse,
     `type`: PublicKeyCredentialType
   ): PublicKeyCredential = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rawId")(rawId)
-    __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, rawId = rawId, response = response.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PublicKeyCredential]
   }
 }

@@ -15,11 +15,8 @@ trait IResourceError extends js.Object {
 object IResourceError {
   @scala.inline
   def apply(errorCode: scala.Double, errorString: java.lang.String, id: scala.Double, url: java.lang.String): IResourceError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorString")(errorString)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorString = errorString, id = id, url = url)
+  
     __obj.asInstanceOf[IResourceError]
   }
 }

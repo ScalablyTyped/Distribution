@@ -14,10 +14,8 @@ trait FileEntry extends js.Object {
 object FileEntry {
   @scala.inline
   def apply(attrs: Attributes, filename: java.lang.String, longname: java.lang.String): FileEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("longname")(longname)
+    val __obj = js.Dynamic.literal(attrs = attrs, filename = filename, longname = longname)
+  
     __obj.asInstanceOf[FileEntry]
   }
 }

@@ -37,12 +37,8 @@ object ASPxClientPopupControlResizeStateStatic {
     Resized: scala.Double,
     RestoredAfterMaximized: scala.Double
   ): ASPxClientPopupControlResizeStateStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Collapsed")(Collapsed)
-    __obj.updateDynamic("Expanded")(Expanded)
-    __obj.updateDynamic("Maximized")(Maximized)
-    __obj.updateDynamic("Resized")(Resized)
-    __obj.updateDynamic("RestoredAfterMaximized")(RestoredAfterMaximized)
+    val __obj = js.Dynamic.literal(Collapsed = Collapsed, Expanded = Expanded, Maximized = Maximized, Resized = Resized, RestoredAfterMaximized = RestoredAfterMaximized)
+  
     __obj.asInstanceOf[ASPxClientPopupControlResizeStateStatic]
   }
 }

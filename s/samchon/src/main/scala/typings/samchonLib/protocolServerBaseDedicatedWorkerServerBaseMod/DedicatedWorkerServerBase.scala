@@ -18,6 +18,6 @@ class DedicatedWorkerServerBase protected ()
   /**
     * @hidden
     */
-  var `hooker_`: js.Any = js.native
+  var hooker_ : js.Any = js.native
 }
 

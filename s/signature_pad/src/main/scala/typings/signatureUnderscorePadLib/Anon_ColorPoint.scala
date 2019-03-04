@@ -16,9 +16,8 @@ object Anon_ColorPoint {
     color: java.lang.String,
     point: signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point
   ): Anon_ColorPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(color = color, point = point)
+  
     __obj.asInstanceOf[Anon_ColorPoint]
   }
 }

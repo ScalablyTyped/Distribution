@@ -87,12 +87,8 @@ object IAngularHelper {
       scala.Unit
     ]
   ): IAngularHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentForm")(getCurrentForm)
-    __obj.updateDynamic("getNullForm")(getNullForm)
-    __obj.updateDynamic("getRequiredCurrentForm")(getRequiredCurrentForm)
-    __obj.updateDynamic("rejectedPromise")(rejectedPromise)
-    __obj.updateDynamic("safeApply")(safeApply)
+    val __obj = js.Dynamic.literal(getCurrentForm = getCurrentForm, getNullForm = getNullForm, getRequiredCurrentForm = getRequiredCurrentForm, rejectedPromise = rejectedPromise, safeApply = safeApply)
+  
     __obj.asInstanceOf[IAngularHelper]
   }
 }

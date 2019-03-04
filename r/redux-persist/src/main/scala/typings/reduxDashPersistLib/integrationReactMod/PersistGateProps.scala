@@ -20,8 +20,7 @@ object PersistGateProps {
     loading: reactLib.reactMod.ReactNs.ReactNode = null,
     onBeforeLift: js.Function = null
   ): PersistGateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("persistor")(persistor)
+    val __obj = js.Dynamic.literal(persistor = persistor)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onBeforeLift != null) __obj.updateDynamic("onBeforeLift")(onBeforeLift)

@@ -25,10 +25,8 @@ trait SnappedPoint extends js.Object {
 object SnappedPoint {
   @scala.inline
   def apply(location: LatLngLiteralVerbose, originalIndex: scala.Double, placeId: java.lang.String): SnappedPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("originalIndex")(originalIndex)
-    __obj.updateDynamic("placeId")(placeId)
+    val __obj = js.Dynamic.literal(location = location, originalIndex = originalIndex, placeId = placeId)
+  
     __obj.asInstanceOf[SnappedPoint]
   }
 }

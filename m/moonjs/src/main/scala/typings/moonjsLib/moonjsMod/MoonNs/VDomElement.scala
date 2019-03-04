@@ -22,10 +22,9 @@ object VDomElement {
     `type`: java.lang.String,
     `val`: java.lang.String
   ): VDomElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `val` = `val`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(children = children, meta = meta, props = props)
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[VDomElement]
   }
 }

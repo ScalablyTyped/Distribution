@@ -29,8 +29,7 @@ object ResponseMessage {
     id: scala.Double | java.lang.String = null,
     result: js.Any = null
   ): ResponseMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonrpc")(jsonrpc)
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc)
     if (error != null) __obj.updateDynamic("error")(error)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result)

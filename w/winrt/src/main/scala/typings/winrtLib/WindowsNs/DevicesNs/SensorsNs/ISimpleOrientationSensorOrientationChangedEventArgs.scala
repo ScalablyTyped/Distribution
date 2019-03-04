@@ -13,9 +13,8 @@ trait ISimpleOrientationSensorOrientationChangedEventArgs extends js.Object {
 object ISimpleOrientationSensorOrientationChangedEventArgs {
   @scala.inline
   def apply(orientation: SimpleOrientation, timestamp: stdLib.Date): ISimpleOrientationSensorOrientationChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(orientation = orientation, timestamp = timestamp)
+  
     __obj.asInstanceOf[ISimpleOrientationSensorOrientationChangedEventArgs]
   }
 }

@@ -17,7 +17,7 @@ class Pair[A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: Pair[js.Function1[/* b */ B, C]], fb: Pair[B]): Pair[C] = js.native
+  def ap_[B, C](`this`: Pair[js.Function1[/* b */ B, C]], fb: Pair[B]): Pair[C] = js.native
   def extend[B](f: js.Function1[/* fb */ Pair[A], B]): Pair[B] = js.native
   def extract(): A = js.native
   /** Map a function over the first field of a pair */

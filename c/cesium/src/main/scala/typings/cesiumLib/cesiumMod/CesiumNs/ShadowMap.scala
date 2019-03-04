@@ -24,13 +24,8 @@ object ShadowMap {
     size: scala.Double,
     softShadows: scala.Boolean
   ): ShadowMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("darkness")(darkness)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("maximumDistance")(maximumDistance)
-    __obj.updateDynamic("normalOffset")(normalOffset)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("softShadows")(softShadows)
+    val __obj = js.Dynamic.literal(darkness = darkness, enabled = enabled, maximumDistance = maximumDistance, normalOffset = normalOffset, size = size, softShadows = softShadows)
+  
     __obj.asInstanceOf[ShadowMap]
   }
 }

@@ -24,13 +24,8 @@ object Island {
     sleep: js.Function0[scala.Boolean],
     wantsToSleep: js.Function0[scala.Boolean]
   ): Island = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodies")(bodies)
-    __obj.updateDynamic("equations")(equations)
-    __obj.updateDynamic("getBodies")(getBodies)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("sleep")(sleep)
-    __obj.updateDynamic("wantsToSleep")(wantsToSleep)
+    val __obj = js.Dynamic.literal(bodies = bodies, equations = equations, getBodies = getBodies, reset = reset, sleep = sleep, wantsToSleep = wantsToSleep)
+  
     __obj.asInstanceOf[Island]
   }
 }

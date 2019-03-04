@@ -53,13 +53,8 @@ object WindowDescriptor {
     WindowAttributes: scala.Double,
     WindowServiceName: java.lang.String
   ): WindowDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bounds")(Bounds)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("ParentIndex")(ParentIndex)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("WindowAttributes")(WindowAttributes)
-    __obj.updateDynamic("WindowServiceName")(WindowServiceName)
+    val __obj = js.Dynamic.literal(Bounds = Bounds, Parent = Parent, ParentIndex = ParentIndex, Type = Type, WindowAttributes = WindowAttributes, WindowServiceName = WindowServiceName)
+  
     __obj.asInstanceOf[WindowDescriptor]
   }
 }

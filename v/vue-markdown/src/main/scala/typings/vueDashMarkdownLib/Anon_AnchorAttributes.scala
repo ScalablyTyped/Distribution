@@ -66,34 +66,8 @@ object Anon_AnchorAttributes {
     watches: Anon_Default,
     xhtmlOut: Anon_DefaultType
   ): Anon_AnchorAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchorAttributes")(anchorAttributes)
-    __obj.updateDynamic("breaks")(breaks)
-    __obj.updateDynamic("emoji")(emoji)
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("langPrefix")(langPrefix)
-    __obj.updateDynamic("linkify")(linkify)
-    __obj.updateDynamic("postrender")(postrender)
-    __obj.updateDynamic("prerender")(prerender)
-    __obj.updateDynamic("quotes")(quotes)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("tableClass")(tableClass)
-    __obj.updateDynamic("taskLists")(taskLists)
-    __obj.updateDynamic("toc")(toc)
-    __obj.updateDynamic("tocAnchorClass")(tocAnchorClass)
-    __obj.updateDynamic("tocAnchorLink")(tocAnchorLink)
-    __obj.updateDynamic("tocAnchorLinkClass")(tocAnchorLinkClass)
-    __obj.updateDynamic("tocAnchorLinkSpace")(tocAnchorLinkSpace)
-    __obj.updateDynamic("tocAnchorLinkSymbol")(tocAnchorLinkSymbol)
-    __obj.updateDynamic("tocClass")(tocClass)
-    __obj.updateDynamic("tocFirstLevel")(tocFirstLevel)
-    __obj.updateDynamic("tocId")(tocId)
-    __obj.updateDynamic("tocLastLevel")(tocLastLevel)
-    __obj.updateDynamic("typographer")(typographer)
-    __obj.updateDynamic("watches")(watches)
-    __obj.updateDynamic("xhtmlOut")(xhtmlOut)
+    val __obj = js.Dynamic.literal(anchorAttributes = anchorAttributes, breaks = breaks, emoji = emoji, highlight = highlight, html = html, langPrefix = langPrefix, linkify = linkify, postrender = postrender, prerender = prerender, quotes = quotes, show = show, source = source, tableClass = tableClass, taskLists = taskLists, toc = toc, tocAnchorClass = tocAnchorClass, tocAnchorLink = tocAnchorLink, tocAnchorLinkClass = tocAnchorLinkClass, tocAnchorLinkSpace = tocAnchorLinkSpace, tocAnchorLinkSymbol = tocAnchorLinkSymbol, tocClass = tocClass, tocFirstLevel = tocFirstLevel, tocId = tocId, tocLastLevel = tocLastLevel, typographer = typographer, watches = watches, xhtmlOut = xhtmlOut)
+  
     __obj.asInstanceOf[Anon_AnchorAttributes]
   }
 }

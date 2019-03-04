@@ -13,9 +13,8 @@ trait Anon_RowCount[T] extends js.Object {
 object Anon_RowCount {
   @scala.inline
   def apply[T](rowCount: scala.Double, rows: js.Array[T]): Anon_RowCount[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(rowCount = rowCount, rows = rows)
+  
     __obj.asInstanceOf[Anon_RowCount[T]]
   }
 }

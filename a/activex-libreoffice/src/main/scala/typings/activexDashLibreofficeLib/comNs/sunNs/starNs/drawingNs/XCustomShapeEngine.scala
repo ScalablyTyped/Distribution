@@ -38,17 +38,8 @@ object XCustomShapeEngine {
     release: js.Function0[scala.Unit],
     render: js.Function0[XShape]
   ): XCustomShapeEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Interaction")(Interaction)
-    __obj.updateDynamic("LineGeometry")(LineGeometry)
-    __obj.updateDynamic("TextBounds")(TextBounds)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getInteraction")(getInteraction)
-    __obj.updateDynamic("getLineGeometry")(getLineGeometry)
-    __obj.updateDynamic("getTextBounds")(getTextBounds)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(Interaction = Interaction, LineGeometry = LineGeometry, TextBounds = TextBounds, acquire = acquire, getInteraction = getInteraction, getLineGeometry = getLineGeometry, getTextBounds = getTextBounds, queryInterface = queryInterface, release = release, render = render)
+  
     __obj.asInstanceOf[XCustomShapeEngine]
   }
 }

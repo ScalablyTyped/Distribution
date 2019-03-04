@@ -18,8 +18,8 @@ trait JSMath2jaxPreprocessor extends js.Object {
 object JSMath2jaxPreprocessor {
   @scala.inline
   def apply(preview: js.Any): JSMath2jaxPreprocessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preview")(preview)
+    val __obj = js.Dynamic.literal(preview = preview)
+  
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
 }

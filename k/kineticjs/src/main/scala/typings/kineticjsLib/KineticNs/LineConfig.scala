@@ -42,8 +42,7 @@ object LineConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): LineConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     if (dash != null) __obj.updateDynamic("dash")(dash)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)

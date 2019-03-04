@@ -59,13 +59,7 @@ object IGridData {
     UnfilteredHierarchy: js.Any = null,
     ViewDepKeys: js.Array[_] = null
   ): IGridData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("Fields")(Fields)
-    __obj.updateDynamic("LocalizedTable")(LocalizedTable)
-    __obj.updateDynamic("MetaData")(MetaData)
-    __obj.updateDynamic("UnlocalizedTable")(UnlocalizedTable)
-    __obj.updateDynamic("ViewInfo")(ViewInfo)
+    val __obj = js.Dynamic.literal(Columns = Columns, Fields = Fields, LocalizedTable = LocalizedTable, MetaData = MetaData, UnlocalizedTable = UnlocalizedTable, ViewInfo = ViewInfo)
     if (AdditionalParams != null) __obj.updateDynamic("AdditionalParams")(AdditionalParams)
     if (AutoFilterEntries != null) __obj.updateDynamic("AutoFilterEntries")(AutoFilterEntries)
     if (AutoFilterState != null) __obj.updateDynamic("AutoFilterState")(AutoFilterState)

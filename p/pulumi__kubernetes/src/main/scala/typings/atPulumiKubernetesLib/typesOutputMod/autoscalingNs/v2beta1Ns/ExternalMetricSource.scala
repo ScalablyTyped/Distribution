@@ -39,11 +39,8 @@ object ExternalMetricSource {
     targetAverageValue: java.lang.String,
     targetValue: java.lang.String
   ): ExternalMetricSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName)
-    __obj.updateDynamic("metricSelector")(metricSelector)
-    __obj.updateDynamic("targetAverageValue")(targetAverageValue)
-    __obj.updateDynamic("targetValue")(targetValue)
+    val __obj = js.Dynamic.literal(metricName = metricName, metricSelector = metricSelector, targetAverageValue = targetAverageValue, targetValue = targetValue)
+  
     __obj.asInstanceOf[ExternalMetricSource]
   }
 }

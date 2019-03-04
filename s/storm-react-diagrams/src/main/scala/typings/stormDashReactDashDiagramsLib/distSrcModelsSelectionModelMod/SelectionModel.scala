@@ -24,10 +24,8 @@ object SelectionModel {
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
     ]
   ): SelectionModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initialX")(initialX)
-    __obj.updateDynamic("initialY")(initialY)
-    __obj.updateDynamic("model")(model)
+    val __obj = js.Dynamic.literal(initialX = initialX, initialY = initialY, model = model)
+  
     __obj.asInstanceOf[SelectionModel]
   }
 }

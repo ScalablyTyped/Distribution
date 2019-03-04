@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashPartial extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: lodashLib.lodashMod.underscoreNs.`__` = js.native
+  var placeholder_Original: lodashLib.lodashMod.underscoreNs.__ = js.native
   def apply(func: js.Function1[/* repeated */ js.Any, _]): LodashPartial27x1 = js.native
   def apply(func: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(func: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_]): LodashPartial27x2 = js.native
+  def apply(func: lodashLib.lodashMod.underscoreNs.__, args: js.Array[_]): LodashPartial27x2 = js.native
   def apply[T2](
-    func: lodashLib.lodashMod.underscoreNs.`__`,
-    plc1: js.Tuple2[lodashLib.lodashMod.underscoreNs.`__`, T2]
+    func: lodashLib.lodashMod.underscoreNs.__,
+    plc1: js.Tuple2[lodashLib.lodashMod.underscoreNs.__, T2]
   ): LodashPartial3x2[T2] = js.native
   def apply[T3](
-    func: lodashLib.lodashMod.underscoreNs.`__`,
-    plc1: js.Tuple3[lodashLib.lodashMod.underscoreNs.`__`, lodashLib.lodashMod.underscoreNs.`__`, T3]
+    func: lodashLib.lodashMod.underscoreNs.__,
+    plc1: js.Tuple3[lodashLib.lodashMod.underscoreNs.__, lodashLib.lodashMod.underscoreNs.__, T3]
   ): LodashPartial8x2[T3] = js.native
   def apply[T4](
-    func: lodashLib.lodashMod.underscoreNs.`__`,
+    func: lodashLib.lodashMod.underscoreNs.__,
     plc1: js.Tuple4[
-      lodashLib.lodashMod.underscoreNs.`__`, 
-      lodashLib.lodashMod.underscoreNs.`__`, 
-      lodashLib.lodashMod.underscoreNs.`__`, 
+      lodashLib.lodashMod.underscoreNs.__, 
+      lodashLib.lodashMod.underscoreNs.__, 
+      lodashLib.lodashMod.underscoreNs.__, 
       T4
     ]
   ): LodashPartial19x2[T4] = js.native
@@ -37,7 +37,7 @@ trait LodashPartial extends js.Object {
   def apply[T1, T2, T3, R](func: lodashLib.lodashMod.underscoreNs.Function3[T1, T2, T3, R], arg1: js.Tuple3[T1, T2, T3]): lodashLib.lodashMod.underscoreNs.Function0[R] = js.native
   def apply[T1, T2, T3, R](
     func: lodashLib.lodashMod.underscoreNs.Function3[T1, T2, T3, R],
-    plc1: js.Tuple2[lodashLib.lodashMod.underscoreNs.`__`, T2]
+    plc1: js.Tuple2[lodashLib.lodashMod.underscoreNs.__, T2]
   ): lodashLib.lodashMod.underscoreNs.Function2[T1, T3, R] = js.native
   def apply[T1, T2, T3, T4, R](func: lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, R]): LodashPartial12x1[T1, T2, T3, T4, R] = js.native
   def apply[T1, T2, T3, T4, R](func: lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, R], arg1: js.Array[T1]): lodashLib.lodashMod.underscoreNs.Function3[T2, T3, T4, R] = js.native
@@ -45,8 +45,8 @@ trait LodashPartial extends js.Object {
   def apply[T1, T2, T3, T4, R](
     func: lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, R],
     arg1: js.Tuple3[
-      T1 | lodashLib.lodashMod.underscoreNs.`__`, 
-      T2 | lodashLib.lodashMod.underscoreNs.`__`, 
+      T1 | lodashLib.lodashMod.underscoreNs.__, 
+      T2 | lodashLib.lodashMod.underscoreNs.__, 
       T3
     ]
   ): lodashLib.lodashMod.underscoreNs.Function2[T2, T4, R] = js.native

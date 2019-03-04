@@ -18,9 +18,8 @@ object Anon_Name {
     pure: scala.Boolean,
     `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata
   ): Anon_Name = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pure")(pure)
+    val __obj = js.Dynamic.literal(name = name, pure = pure)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Name]
   }
 }

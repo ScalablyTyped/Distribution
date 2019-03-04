@@ -34,18 +34,8 @@ object Anon_DESIGNPARAMTYPES {
     TAGGED_PROP: /* inversify:tagged_props */ java.lang.String,
     UNMANAGED_TAG: /* unmanaged */ java.lang.String
   ): Anon_DESIGNPARAMTYPES = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DESIGN_PARAM_TYPES")(DESIGN_PARAM_TYPES)
-    __obj.updateDynamic("INJECT_TAG")(INJECT_TAG)
-    __obj.updateDynamic("MULTI_INJECT_TAG")(MULTI_INJECT_TAG)
-    __obj.updateDynamic("NAMED_TAG")(NAMED_TAG)
-    __obj.updateDynamic("NAME_TAG")(NAME_TAG)
-    __obj.updateDynamic("OPTIONAL_TAG")(OPTIONAL_TAG)
-    __obj.updateDynamic("PARAM_TYPES")(PARAM_TYPES)
-    __obj.updateDynamic("POST_CONSTRUCT")(POST_CONSTRUCT)
-    __obj.updateDynamic("TAGGED")(TAGGED)
-    __obj.updateDynamic("TAGGED_PROP")(TAGGED_PROP)
-    __obj.updateDynamic("UNMANAGED_TAG")(UNMANAGED_TAG)
+    val __obj = js.Dynamic.literal(DESIGN_PARAM_TYPES = DESIGN_PARAM_TYPES, INJECT_TAG = INJECT_TAG, MULTI_INJECT_TAG = MULTI_INJECT_TAG, NAMED_TAG = NAMED_TAG, NAME_TAG = NAME_TAG, OPTIONAL_TAG = OPTIONAL_TAG, PARAM_TYPES = PARAM_TYPES, POST_CONSTRUCT = POST_CONSTRUCT, TAGGED = TAGGED, TAGGED_PROP = TAGGED_PROP, UNMANAGED_TAG = UNMANAGED_TAG)
+  
     __obj.asInstanceOf[Anon_DESIGNPARAMTYPES]
   }
 }

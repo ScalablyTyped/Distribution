@@ -21,11 +21,8 @@ object ModuleAppendPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): ModuleAppendPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appending")(appending)
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(appending = appending, apply = apply, source = source, target = target)
+  
     __obj.asInstanceOf[ModuleAppendPlugin]
   }
 }

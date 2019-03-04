@@ -15,8 +15,8 @@ trait SetBreakpointOnFunctionCallReturnType extends js.Object {
 object SetBreakpointOnFunctionCallReturnType {
   @scala.inline
   def apply(breakpointId: BreakpointId): SetBreakpointOnFunctionCallReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpointId")(breakpointId)
+    val __obj = js.Dynamic.literal(breakpointId = breakpointId)
+  
     __obj.asInstanceOf[SetBreakpointOnFunctionCallReturnType]
   }
 }

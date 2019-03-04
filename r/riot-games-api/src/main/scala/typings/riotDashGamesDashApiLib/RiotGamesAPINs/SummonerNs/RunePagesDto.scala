@@ -13,9 +13,8 @@ trait RunePagesDto extends js.Object {
 object RunePagesDto {
   @scala.inline
   def apply(pages: js.Array[RunePageDto], summonerId: scala.Double): RunePagesDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("summonerId")(summonerId)
+    val __obj = js.Dynamic.literal(pages = pages, summonerId = summonerId)
+  
     __obj.asInstanceOf[RunePagesDto]
   }
 }

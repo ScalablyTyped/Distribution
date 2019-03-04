@@ -109,9 +109,7 @@ object DocumentManifest {
     text: Narrative = null,
     `type`: CodeableConcept = null
   ): DocumentManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(content = content, status = status)
     if (_created != null) __obj.updateDynamic("_created")(_created)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -13,8 +13,7 @@ trait FetchByKeysParameters[K] extends js.Object {
 object FetchByKeysParameters {
   @scala.inline
   def apply[K](keys: stdLib.Set[K], attributes: js.Array[java.lang.String | FetchAttribute] = null): FetchByKeysParameters[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(keys = keys)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[FetchByKeysParameters[K]]
   }

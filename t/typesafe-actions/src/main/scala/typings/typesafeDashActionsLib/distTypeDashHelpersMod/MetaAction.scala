@@ -13,8 +13,8 @@ trait MetaAction[T /* <: StringType */, M] extends js.Object {
 object MetaAction {
   @scala.inline
   def apply[T /* <: StringType */, M](meta: M, `type`: T): MetaAction[T, M] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaAction[T, M]]
   }
 }

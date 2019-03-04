@@ -32,15 +32,8 @@ object Shop {
     refundPolicy: js.Any,
     termsOfService: js.Any
   ): Shop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("moneyFormat")(moneyFormat)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("paymentSettings")(paymentSettings)
-    __obj.updateDynamic("primaryDomain")(primaryDomain)
-    __obj.updateDynamic("privacyPolicy")(privacyPolicy)
-    __obj.updateDynamic("refundPolicy")(refundPolicy)
-    __obj.updateDynamic("termsOfService")(termsOfService)
+    val __obj = js.Dynamic.literal(description = description, moneyFormat = moneyFormat, name = name, paymentSettings = paymentSettings, primaryDomain = primaryDomain, privacyPolicy = privacyPolicy, refundPolicy = refundPolicy, termsOfService = termsOfService)
+  
     __obj.asInstanceOf[Shop]
   }
 }

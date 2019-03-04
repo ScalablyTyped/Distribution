@@ -25,9 +25,8 @@ object ICompressorFactory {
       Compressor
     ]
   ): ICompressorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createCompressor")(createCompressor)
-    __obj.updateDynamic("createCompressorEx")(createCompressorEx)
+    val __obj = js.Dynamic.literal(createCompressor = createCompressor, createCompressorEx = createCompressorEx)
+  
     __obj.asInstanceOf[ICompressorFactory]
   }
 }

@@ -40,57 +40,57 @@ class LLRBNode[K, V] protected () extends js.Object {
     * @private
     * @return {boolean} True if all is well.
     */
-  var `checkMaxDepth_`: js.Any = js.native
+  var checkMaxDepth_ : js.Any = js.native
   var color: scala.Boolean = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree, after colorFlip.
     */
-  var `colorFlip_`: js.Any = js.native
+  var colorFlip_ : js.Any = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree after performing any needed rotations.
     */
-  var `fixUp_`: js.Any = js.native
+  var fixUp_ : js.Any = js.native
   var key: K = js.native
   var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
   /**
     * @return {!Object} The minimum node in the tree.
     * @private
     */
-  var `min_`: js.Any = js.native
+  var min_ : js.Any = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree, after moveRedLeft.
     */
-  var `moveRedLeft_`: js.Any = js.native
+  var moveRedLeft_ : js.Any = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree, after moveRedRight.
     */
-  var `moveRedRight_`: js.Any = js.native
+  var moveRedRight_ : js.Any = js.native
   /**
     * @private
     * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
     */
-  var `removeMin_`: js.Any = js.native
+  var removeMin_ : js.Any = js.native
   var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree, after rotateLeft.
     */
-  var `rotateLeft_`: js.Any = js.native
+  var rotateLeft_ : js.Any = js.native
   /**
     * @private
     * @return {!LLRBNode} New tree, after rotateRight.
     */
-  var `rotateRight_`: js.Any = js.native
+  var rotateRight_ : js.Any = js.native
   var value: V = js.native
   /**
     * @private
     * @return {number} Not sure what this returns exactly. :-).
     */
-  def `check_`(): scala.Double = js.native
+  def check_(): scala.Double = js.native
   /**
     * Returns a copy of the current node, optionally replacing pieces of it.
     *
@@ -143,7 +143,7 @@ class LLRBNode[K, V] protected () extends js.Object {
     * @private
     * @return {boolean} Whether this is a RED node.
     */
-  def `isRed_`(): scala.Boolean = js.native
+  def isRed_(): scala.Boolean = js.native
   /**
     * @return {!K} The maximum key in the tree.
     */

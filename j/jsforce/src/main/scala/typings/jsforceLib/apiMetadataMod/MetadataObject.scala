@@ -24,13 +24,8 @@ object MetadataObject {
     suffix: java.lang.String,
     xmlName: java.lang.String
   ): MetadataObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childXmlNames")(childXmlNames)
-    __obj.updateDynamic("directoryName")(directoryName)
-    __obj.updateDynamic("inFolder")(inFolder)
-    __obj.updateDynamic("metaFile")(metaFile)
-    __obj.updateDynamic("suffix")(suffix)
-    __obj.updateDynamic("xmlName")(xmlName)
+    val __obj = js.Dynamic.literal(childXmlNames = childXmlNames, directoryName = directoryName, inFolder = inFolder, metaFile = metaFile, suffix = suffix, xmlName = xmlName)
+  
     __obj.asInstanceOf[MetadataObject]
   }
 }

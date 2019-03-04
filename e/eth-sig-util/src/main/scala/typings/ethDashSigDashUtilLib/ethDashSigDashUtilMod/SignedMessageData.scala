@@ -12,9 +12,8 @@ trait SignedMessageData[T] extends MessageData[T] {
 object SignedMessageData {
   @scala.inline
   def apply[T](data: T, sig: java.lang.String): SignedMessageData[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("sig")(sig)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], sig = sig)
+  
     __obj.asInstanceOf[SignedMessageData[T]]
   }
 }

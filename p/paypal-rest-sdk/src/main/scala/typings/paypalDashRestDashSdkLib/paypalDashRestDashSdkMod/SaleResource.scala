@@ -40,9 +40,7 @@ object SaleResource {
     transaction_fee: Currency = null,
     update_time: java.lang.String = null
   ): SaleResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(amount = amount, id = id)
     if (billing_agreement_id != null) __obj.updateDynamic("billing_agreement_id")(billing_agreement_id)
     if (clearing_time != null) __obj.updateDynamic("clearing_time")(clearing_time)
     if (create_time != null) __obj.updateDynamic("create_time")(create_time)

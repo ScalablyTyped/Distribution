@@ -13,9 +13,8 @@ trait AdminSetOffsetsSeekEntry extends js.Object {
 object AdminSetOffsetsSeekEntry {
   @scala.inline
   def apply(offset: java.lang.String, partition: scala.Double): AdminSetOffsetsSeekEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("partition")(partition)
+    val __obj = js.Dynamic.literal(offset = offset, partition = partition)
+  
     __obj.asInstanceOf[AdminSetOffsetsSeekEntry]
   }
 }

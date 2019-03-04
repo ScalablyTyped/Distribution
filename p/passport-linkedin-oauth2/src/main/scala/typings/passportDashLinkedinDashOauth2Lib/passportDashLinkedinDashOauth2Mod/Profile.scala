@@ -30,15 +30,7 @@ object Profile {
     provider: java.lang.String,
     username: java.lang.String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_json")(_json)
-    __obj.updateDynamic("_raw")(_raw)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emails")(emails)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("photos")(photos)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(_json = _json, _raw = _raw, displayName = displayName, emails = emails, id = id, name = name, photos = photos, provider = provider)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[Profile]
   }

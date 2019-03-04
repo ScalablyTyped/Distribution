@@ -26,8 +26,7 @@ object LayersControlProps {
     onoverlayremove: js.Function1[/* event */ leafletLib.leafletMod.LayersControlEvent, scala.Unit] = null,
     position: leafletLib.leafletMod.ControlPosition = null
   ): LayersControlProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (!js.isUndefined(hideSingleBase)) __obj.updateDynamic("hideSingleBase")(hideSingleBase)

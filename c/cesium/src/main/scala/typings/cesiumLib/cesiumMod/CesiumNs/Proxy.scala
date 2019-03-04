@@ -12,8 +12,8 @@ trait Proxy extends js.Object {
 object Proxy {
   @scala.inline
   def apply(getURL: js.Function1[java.lang.String, java.lang.String]): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getURL")(getURL)
+    val __obj = js.Dynamic.literal(getURL = getURL)
+  
     __obj.asInstanceOf[Proxy]
   }
 }

@@ -55,8 +55,7 @@ object ElementDefinitionSlicing {
     id: java.lang.String = null,
     ordered: js.UndefOr[scala.Boolean] = js.undefined
   ): ElementDefinitionSlicing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(rules = rules)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

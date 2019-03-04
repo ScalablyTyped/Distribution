@@ -22,9 +22,8 @@ trait IBezierRange extends js.Object {
 object IBezierRange {
   @scala.inline
   def apply(endT: scala.Double, startT: scala.Double): IBezierRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endT")(endT)
-    __obj.updateDynamic("startT")(startT)
+    val __obj = js.Dynamic.literal(endT = endT, startT = startT)
+  
     __obj.asInstanceOf[IBezierRange]
   }
 }

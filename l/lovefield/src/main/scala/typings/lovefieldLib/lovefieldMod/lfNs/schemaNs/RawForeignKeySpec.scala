@@ -20,9 +20,7 @@ object RawForeignKeySpec {
     action: lovefieldLib.lovefieldMod.lfNs.ConstraintAction = null,
     timing: lovefieldLib.lovefieldMod.lfNs.ConstraintTiming = null
   ): RawForeignKeySpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(local = local, ref = ref)
     if (action != null) __obj.updateDynamic("action")(action)
     if (timing != null) __obj.updateDynamic("timing")(timing)
     __obj.asInstanceOf[RawForeignKeySpec]

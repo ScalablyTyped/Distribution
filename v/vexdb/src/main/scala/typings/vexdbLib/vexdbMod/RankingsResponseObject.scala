@@ -42,22 +42,8 @@ object RankingsResponseObject {
     wins: scala.Double,
     wp: scala.Double
   ): RankingsResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("ccwm")(ccwm)
-    __obj.updateDynamic("division")(division)
-    __obj.updateDynamic("dpr")(dpr)
-    __obj.updateDynamic("losses")(losses)
-    __obj.updateDynamic("max_score")(max_score)
-    __obj.updateDynamic("opr")(opr)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("sku")(sku)
-    __obj.updateDynamic("sp")(sp)
-    __obj.updateDynamic("team")(team)
-    __obj.updateDynamic("ties")(ties)
-    __obj.updateDynamic("trsp")(trsp)
-    __obj.updateDynamic("wins")(wins)
-    __obj.updateDynamic("wp")(wp)
+    val __obj = js.Dynamic.literal(ap = ap, ccwm = ccwm, division = division, dpr = dpr, losses = losses, max_score = max_score, opr = opr, rank = rank, sku = sku, sp = sp, team = team, ties = ties, trsp = trsp, wins = wins, wp = wp)
+  
     __obj.asInstanceOf[RankingsResponseObject]
   }
 }

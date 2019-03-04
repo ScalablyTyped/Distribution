@@ -43,13 +43,8 @@ object TimeZoneResponse {
     timeZoneId: java.lang.String,
     timeZoneName: java.lang.String
   ): TimeZoneResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dstOffset")(dstOffset)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("rawOffset")(rawOffset)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timeZoneId")(timeZoneId)
-    __obj.updateDynamic("timeZoneName")(timeZoneName)
+    val __obj = js.Dynamic.literal(dstOffset = dstOffset, errorMessage = errorMessage, rawOffset = rawOffset, status = status, timeZoneId = timeZoneId, timeZoneName = timeZoneName)
+  
     __obj.asInstanceOf[TimeZoneResponse]
   }
 }

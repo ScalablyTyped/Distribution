@@ -21,12 +21,8 @@ object connectCompleteArgs {
     meta: js.Any,
     timestamp: stdLib.Date
   ): connectCompleteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("isReconnect")(isReconnect)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(client = client, clientId = clientId, isReconnect = isReconnect, meta = meta, timestamp = timestamp)
+  
     __obj.asInstanceOf[connectCompleteArgs]
   }
 }

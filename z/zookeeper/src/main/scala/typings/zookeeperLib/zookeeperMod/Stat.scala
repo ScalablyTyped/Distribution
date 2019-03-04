@@ -34,18 +34,8 @@ object Stat {
     pzxid: scala.Double,
     version: scala.Double
   ): Stat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aversion")(aversion)
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("cversion")(cversion)
-    __obj.updateDynamic("czxid")(czxid)
-    __obj.updateDynamic("dataLength")(dataLength)
-    __obj.updateDynamic("ephemeralOwner")(ephemeralOwner)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("mzxid")(mzxid)
-    __obj.updateDynamic("numChildren")(numChildren)
-    __obj.updateDynamic("pzxid")(pzxid)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(aversion = aversion, ctime = ctime, cversion = cversion, czxid = czxid, dataLength = dataLength, ephemeralOwner = ephemeralOwner, mtime = mtime, mzxid = mzxid, numChildren = numChildren, pzxid = pzxid, version = version)
+  
     __obj.asInstanceOf[Stat]
   }
 }

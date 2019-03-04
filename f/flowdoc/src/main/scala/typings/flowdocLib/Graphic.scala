@@ -21,12 +21,8 @@ object Graphic {
     source: flowdocLib.FlowNs.FileAsset | flowdocLib.FlowNs.URLAsset,
     `type`: NodeType
   ): Graphic = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, name = name, position = position, size = size, source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Graphic]
   }
 }

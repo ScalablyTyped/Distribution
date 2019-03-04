@@ -22,8 +22,8 @@ object ClassPropertyDefinition {
     definition: astDashTypesLib.genKindsMod.MethodDefinitionKind | astDashTypesLib.genKindsMod.VariableDeclaratorKind | astDashTypesLib.genKindsMod.ClassPropertyDefinitionKind | astDashTypesLib.genKindsMod.ClassPropertyKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ClassPropertyDefinition
   ): ClassPropertyDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ClassPropertyDefinition]
   }
 }

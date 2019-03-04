@@ -18,8 +18,8 @@ object CardPaymentMethod {
     `type`: googlepayLib.googlepayLibStrings.CARD,
     tokenizationSpecification: PaymentMethodTokenizationSpecification = null
   ): CardPaymentMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification)
     __obj.asInstanceOf[CardPaymentMethod]
   }

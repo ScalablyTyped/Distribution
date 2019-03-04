@@ -20,11 +20,8 @@ object PeripheralData {
     name: java.lang.String,
     rssi: scala.Double
   ): PeripheralData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advertising")(advertising.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rssi")(rssi)
+    val __obj = js.Dynamic.literal(advertising = advertising.asInstanceOf[js.Any], id = id, name = name, rssi = rssi)
+  
     __obj.asInstanceOf[PeripheralData]
   }
 }

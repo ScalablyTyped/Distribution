@@ -24,13 +24,8 @@ object Match {
     text: java.lang.String,
     url: java.lang.String
   ): Match = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("lastIndex")(lastIndex)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(index = index, lastIndex = lastIndex, raw = raw, schema = schema, text = text, url = url)
+  
     __obj.asInstanceOf[Match]
   }
 }

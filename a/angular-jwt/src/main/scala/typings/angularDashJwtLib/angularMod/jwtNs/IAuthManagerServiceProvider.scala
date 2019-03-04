@@ -20,11 +20,8 @@ object IAuthManagerServiceProvider {
     redirectWhenUnauthenticated: js.Function0[scala.Unit],
     unauthenticate: js.Function0[scala.Unit]
   ): IAuthManagerServiceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticate")(authenticate)
-    __obj.updateDynamic("checkAuthOnRefresh")(checkAuthOnRefresh)
-    __obj.updateDynamic("redirectWhenUnauthenticated")(redirectWhenUnauthenticated)
-    __obj.updateDynamic("unauthenticate")(unauthenticate)
+    val __obj = js.Dynamic.literal(authenticate = authenticate, checkAuthOnRefresh = checkAuthOnRefresh, redirectWhenUnauthenticated = redirectWhenUnauthenticated, unauthenticate = unauthenticate)
+  
     __obj.asInstanceOf[IAuthManagerServiceProvider]
   }
 }

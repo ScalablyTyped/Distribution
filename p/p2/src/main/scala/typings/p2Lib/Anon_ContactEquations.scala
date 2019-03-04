@@ -18,9 +18,8 @@ object Anon_ContactEquations {
     frictionEquations: js.Array[p2Lib.p2Mod.p2Ns.FrictionEquation],
     `type`: java.lang.String
   ): Anon_ContactEquations = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("contactEquations")(contactEquations)
-    __obj.updateDynamic("frictionEquations")(frictionEquations)
+    val __obj = js.Dynamic.literal(contactEquations = contactEquations, frictionEquations = frictionEquations)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ContactEquations]
   }
 }

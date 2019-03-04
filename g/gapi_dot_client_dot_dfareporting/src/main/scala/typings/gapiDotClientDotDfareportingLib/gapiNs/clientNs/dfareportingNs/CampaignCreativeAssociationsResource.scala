@@ -27,9 +27,8 @@ object CampaignCreativeAssociationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociationsListResponse]
     ]
   ): CampaignCreativeAssociationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(insert = insert, list = list)
+  
     __obj.asInstanceOf[CampaignCreativeAssociationsResource]
   }
 }

@@ -26,9 +26,8 @@ object Anon_ItemsReturnValueArrayIKeyValuePair {
     ],
     returnValue: scala.Double
   ): Anon_ItemsReturnValueArrayIKeyValuePair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayIKeyValuePair]
   }
 }

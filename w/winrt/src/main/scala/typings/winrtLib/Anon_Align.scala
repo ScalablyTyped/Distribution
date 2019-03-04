@@ -18,10 +18,8 @@ object Anon_Align {
     leader: winrtLib.WindowsNs.UINs.TextNs.TabLeader,
     position: scala.Double
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("leader")(leader)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(align = align, leader = leader, position = position)
+  
     __obj.asInstanceOf[Anon_Align]
   }
 }

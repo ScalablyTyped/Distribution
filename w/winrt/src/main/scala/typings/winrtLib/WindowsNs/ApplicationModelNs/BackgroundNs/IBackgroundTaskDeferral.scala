@@ -12,8 +12,8 @@ trait IBackgroundTaskDeferral extends js.Object {
 object IBackgroundTaskDeferral {
   @scala.inline
   def apply(complete: js.Function0[scala.Unit]): IBackgroundTaskDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
+  
     __obj.asInstanceOf[IBackgroundTaskDeferral]
   }
 }

@@ -20,11 +20,8 @@ object ISortedQuery {
     ToCamlQuery: js.Function0[js.Any],
     ToString: js.Function0[java.lang.String]
   ): ISortedQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ThenBy")(ThenBy)
-    __obj.updateDynamic("ThenByDesc")(ThenByDesc)
-    __obj.updateDynamic("ToCamlQuery")(ToCamlQuery)
-    __obj.updateDynamic("ToString")(ToString)
+    val __obj = js.Dynamic.literal(ThenBy = ThenBy, ThenByDesc = ThenByDesc, ToCamlQuery = ToCamlQuery, ToString = ToString)
+  
     __obj.asInstanceOf[ISortedQuery]
   }
 }

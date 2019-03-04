@@ -25,11 +25,8 @@ object InlineQueryResultLocation {
     thumb_url: java.lang.String = null,
     thumb_width: scala.Int | scala.Double = null
   ): InlineQueryResultLocation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, latitude = latitude, longitude = longitude, title = title)
+    __obj.updateDynamic("type")(`type`)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
     if (thumb_height != null) __obj.updateDynamic("thumb_height")(thumb_height.asInstanceOf[js.Any])

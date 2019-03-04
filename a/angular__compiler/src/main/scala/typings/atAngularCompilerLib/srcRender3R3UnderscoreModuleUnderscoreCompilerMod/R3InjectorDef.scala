@@ -18,9 +18,8 @@ object R3InjectorDef {
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type
   ): R3InjectorDef = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(expression = expression, statements = statements)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[R3InjectorDef]
   }
 }

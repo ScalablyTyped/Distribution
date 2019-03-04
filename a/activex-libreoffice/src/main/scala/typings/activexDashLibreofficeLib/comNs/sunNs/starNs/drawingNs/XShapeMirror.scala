@@ -26,12 +26,8 @@ object XShapeMirror {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XShapeMirror = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("mirror")(mirror)
-    __obj.updateDynamic("mirrorAtAxis")(mirrorAtAxis)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, mirror = mirror, mirrorAtAxis = mirrorAtAxis, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XShapeMirror]
   }
 }

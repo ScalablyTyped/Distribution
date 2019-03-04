@@ -13,9 +13,8 @@ trait XMLNodeIterator extends js.Object {
 object XMLNodeIterator {
   @scala.inline
   def apply(hasNext: js.Function0[scala.Boolean], next: js.Function0[XMLNode]): XMLNodeIterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(hasNext = hasNext, next = next)
+  
     __obj.asInstanceOf[XMLNodeIterator]
   }
 }

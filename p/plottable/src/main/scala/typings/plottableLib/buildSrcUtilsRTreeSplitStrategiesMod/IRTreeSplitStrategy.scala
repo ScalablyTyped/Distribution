@@ -18,8 +18,8 @@ object IRTreeSplitStrategy {
       scala.Unit
     ]
   ): IRTreeSplitStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("split")(split)
+    val __obj = js.Dynamic.literal(split = split)
+  
     __obj.asInstanceOf[IRTreeSplitStrategy]
   }
 }

@@ -24,13 +24,8 @@ object OnScrollParams {
     scrollTop: scala.Double,
     scrollWidth: scala.Double
   ): OnScrollParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHeight")(clientHeight)
-    __obj.updateDynamic("clientWidth")(clientWidth)
-    __obj.updateDynamic("scrollHeight")(scrollHeight)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("scrollWidth")(scrollWidth)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, scrollHeight = scrollHeight, scrollLeft = scrollLeft, scrollTop = scrollTop, scrollWidth = scrollWidth)
+  
     __obj.asInstanceOf[OnScrollParams]
   }
 }

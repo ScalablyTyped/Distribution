@@ -12,8 +12,8 @@ trait Anon_CheckTrue extends js.Object {
 object Anon_CheckTrue {
   @scala.inline
   def apply(check: adoneLib.adoneLibNumbers.`true`): Anon_CheckTrue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("check")(check)
+    val __obj = js.Dynamic.literal(check = check)
+  
     __obj.asInstanceOf[Anon_CheckTrue]
   }
 }

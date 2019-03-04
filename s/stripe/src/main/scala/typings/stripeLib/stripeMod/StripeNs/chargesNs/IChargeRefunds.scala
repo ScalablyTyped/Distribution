@@ -129,10 +129,8 @@ object IChargeRefunds {
       js.Promise[stripeLib.stripeMod.StripeNs.refundsNs.IRefund]
     ]) = null
   ): IChargeRefunds = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("has_more")(has_more)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(data = data, has_more = has_more, url = url)
+    __obj.updateDynamic("object")(`object`)
     if (create != null) __obj.updateDynamic("create")(create)
     if (list != null) __obj.updateDynamic("list")(list)
     if (retrieve != null) __obj.updateDynamic("retrieve")(retrieve)

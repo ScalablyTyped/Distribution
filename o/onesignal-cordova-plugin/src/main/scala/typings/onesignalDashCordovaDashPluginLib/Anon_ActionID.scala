@@ -16,7 +16,8 @@ object Anon_ActionID {
     `type`: onesignalDashCordovaDashPluginLib.OneSignalCordovaPluginNs.OSActionType,
     actionID: java.lang.String = null
   ): Anon_ActionID = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (actionID != null) __obj.updateDynamic("actionID")(actionID)
     __obj.asInstanceOf[Anon_ActionID]
   }

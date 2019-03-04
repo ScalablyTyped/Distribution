@@ -13,9 +13,8 @@ trait CompassDirection extends js.Object {
 object CompassDirection {
   @scala.inline
   def apply(exact: java.lang.String, rough: java.lang.String): CompassDirection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exact")(exact)
-    __obj.updateDynamic("rough")(rough)
+    val __obj = js.Dynamic.literal(exact = exact, rough = rough)
+  
     __obj.asInstanceOf[CompassDirection]
   }
 }

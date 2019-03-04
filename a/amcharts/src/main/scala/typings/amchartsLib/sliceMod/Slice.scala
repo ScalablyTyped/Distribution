@@ -67,18 +67,8 @@ object Slice {
     value: scala.Double,
     visibleInLegend: scala.Boolean
   ): Slice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dataContext")(dataContext)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("percents")(percents)
-    __obj.updateDynamic("pulled")(pulled)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("visibleInLegend")(visibleInLegend)
+    val __obj = js.Dynamic.literal(alpha = alpha, color = color, dataContext = dataContext, description = description, hidden = hidden, percents = percents, pulled = pulled, title = title, url = url, value = value, visibleInLegend = visibleInLegend)
+  
     __obj.asInstanceOf[Slice]
   }
 }

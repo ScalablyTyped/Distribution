@@ -31,14 +31,8 @@ object Device {
     toString: js.Function0[java.lang.String],
     toVersion: js.Function0[java.lang.String]
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toVersion")(toVersion)
+    val __obj = js.Dynamic.literal(family = family, major = major, minor = minor, patch = patch, toJSON = toJSON, toString = toString, toVersion = toVersion)
+  
     __obj.asInstanceOf[Device]
   }
 }

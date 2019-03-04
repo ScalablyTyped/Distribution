@@ -21,8 +21,7 @@ object FileConfig {
     mtime: stdLib.Date = null,
     uid: scala.Int | scala.Double = null
   ): FileConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (atime != null) __obj.updateDynamic("atime")(atime)
     if (birthtime != null) __obj.updateDynamic("birthtime")(birthtime)
     if (ctime != null) __obj.updateDynamic("ctime")(ctime)

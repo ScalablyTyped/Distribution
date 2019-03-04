@@ -28,15 +28,8 @@ object Unity {
     removeAction: js.Function1[java.lang.String, js.Any],
     removeActions: js.Function0[js.Any]
   ): Unity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Launcher")(Launcher)
-    __obj.updateDynamic("MediaPlayer")(MediaPlayer)
-    __obj.updateDynamic("MessagingIndicator")(MessagingIndicator)
-    __obj.updateDynamic("Notification")(Notification)
-    __obj.updateDynamic("addAction")(addAction)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("removeAction")(removeAction)
-    __obj.updateDynamic("removeActions")(removeActions)
+    val __obj = js.Dynamic.literal(Launcher = Launcher, MediaPlayer = MediaPlayer, MessagingIndicator = MessagingIndicator, Notification = Notification, addAction = addAction, init = init, removeAction = removeAction, removeActions = removeActions)
+  
     __obj.asInstanceOf[Unity]
   }
 }

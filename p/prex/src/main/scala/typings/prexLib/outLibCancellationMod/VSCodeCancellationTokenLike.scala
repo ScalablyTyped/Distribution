@@ -16,9 +16,8 @@ object VSCodeCancellationTokenLike {
     isCancellationRequested: scala.Boolean,
     onCancellationRequested: js.Function1[js.Function0[_], prexLib.Anon_Dispose]
   ): VSCodeCancellationTokenLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCancellationRequested")(isCancellationRequested)
-    __obj.updateDynamic("onCancellationRequested")(onCancellationRequested)
+    val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested, onCancellationRequested = onCancellationRequested)
+  
     __obj.asInstanceOf[VSCodeCancellationTokenLike]
   }
 }

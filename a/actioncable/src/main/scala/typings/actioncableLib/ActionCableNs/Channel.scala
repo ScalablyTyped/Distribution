@@ -18,10 +18,8 @@ object Channel {
     send: js.Function1[js.Any, scala.Boolean],
     unsubscribe: js.Function0[scala.Unit]
   ): Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("perform")(perform)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(perform = perform, send = send, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[Channel]
   }
 }

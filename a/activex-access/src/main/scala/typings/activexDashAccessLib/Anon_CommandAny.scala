@@ -12,8 +12,8 @@ trait Anon_CommandAny extends js.Object {
 object Anon_CommandAny {
   @scala.inline
   def apply(Command: js.Any): Anon_CommandAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Command")(Command)
+    val __obj = js.Dynamic.literal(Command = Command)
+  
     __obj.asInstanceOf[Anon_CommandAny]
   }
 }

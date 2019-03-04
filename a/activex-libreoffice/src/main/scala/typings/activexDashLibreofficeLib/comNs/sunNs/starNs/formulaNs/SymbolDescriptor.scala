@@ -58,17 +58,8 @@ object SymbolDescriptor {
     sName: java.lang.String,
     sSymbolSet: java.lang.String
   ): SymbolDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nCharSet")(nCharSet)
-    __obj.updateDynamic("nCharacter")(nCharacter)
-    __obj.updateDynamic("nFamily")(nFamily)
-    __obj.updateDynamic("nItalic")(nItalic)
-    __obj.updateDynamic("nPitch")(nPitch)
-    __obj.updateDynamic("nWeight")(nWeight)
-    __obj.updateDynamic("sExportName")(sExportName)
-    __obj.updateDynamic("sFontName")(sFontName)
-    __obj.updateDynamic("sName")(sName)
-    __obj.updateDynamic("sSymbolSet")(sSymbolSet)
+    val __obj = js.Dynamic.literal(nCharSet = nCharSet, nCharacter = nCharacter, nFamily = nFamily, nItalic = nItalic, nPitch = nPitch, nWeight = nWeight, sExportName = sExportName, sFontName = sFontName, sName = sName, sSymbolSet = sSymbolSet)
+  
     __obj.asInstanceOf[SymbolDescriptor]
   }
 }

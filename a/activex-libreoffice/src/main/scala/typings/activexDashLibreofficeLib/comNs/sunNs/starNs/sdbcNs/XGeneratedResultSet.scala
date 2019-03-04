@@ -39,12 +39,8 @@ object XGeneratedResultSet {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XGeneratedResultSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GeneratedValues")(GeneratedValues)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGeneratedValues")(getGeneratedValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(GeneratedValues = GeneratedValues, acquire = acquire, getGeneratedValues = getGeneratedValues, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XGeneratedResultSet]
   }
 }

@@ -64,12 +64,8 @@ object AccessibilityInfoStatic {
     ],
     setAccessibilityFocus: js.Function1[scala.Double, scala.Unit]
   ): AccessibilityInfoStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("announceForAccessibility")(announceForAccessibility)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setAccessibilityFocus")(setAccessibilityFocus)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, announceForAccessibility = announceForAccessibility, fetch = fetch, removeEventListener = removeEventListener, setAccessibilityFocus = setAccessibilityFocus)
+  
     __obj.asInstanceOf[AccessibilityInfoStatic]
   }
 }

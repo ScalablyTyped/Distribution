@@ -22,11 +22,7 @@ object Anon_CopyTags {
     retainRule: Anon_Count,
     tagsToAdd: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CopyTags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyTags")(copyTags)
-    __obj.updateDynamic("createRule")(createRule)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("retainRule")(retainRule)
+    val __obj = js.Dynamic.literal(copyTags = copyTags, createRule = createRule, name = name, retainRule = retainRule)
     if (tagsToAdd != null) __obj.updateDynamic("tagsToAdd")(tagsToAdd)
     __obj.asInstanceOf[Anon_CopyTags]
   }

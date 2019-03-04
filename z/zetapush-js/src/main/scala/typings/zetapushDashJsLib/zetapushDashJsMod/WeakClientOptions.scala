@@ -19,8 +19,7 @@ object WeakClientOptions {
     resource: java.lang.String = null,
     transports: js.Array[_] = null
   ): WeakClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sandboxId")(sandboxId)
+    val __obj = js.Dynamic.literal(sandboxId = sandboxId)
     if (apiUrl != null) __obj.updateDynamic("apiUrl")(apiUrl)
     if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId)
     if (!js.isUndefined(forceHttps)) __obj.updateDynamic("forceHttps")(forceHttps)

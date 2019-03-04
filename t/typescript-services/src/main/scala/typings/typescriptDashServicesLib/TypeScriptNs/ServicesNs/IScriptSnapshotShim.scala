@@ -20,11 +20,8 @@ object IScriptSnapshotShim {
     getText: js.Function2[scala.Double, scala.Double, java.lang.String],
     getTextChangeRangeSinceVersion: js.Function1[scala.Double, java.lang.String]
   ): IScriptSnapshotShim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getLineStartPositions")(getLineStartPositions)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getTextChangeRangeSinceVersion")(getTextChangeRangeSinceVersion)
+    val __obj = js.Dynamic.literal(getLength = getLength, getLineStartPositions = getLineStartPositions, getText = getText, getTextChangeRangeSinceVersion = getTextChangeRangeSinceVersion)
+  
     __obj.asInstanceOf[IScriptSnapshotShim]
   }
 }

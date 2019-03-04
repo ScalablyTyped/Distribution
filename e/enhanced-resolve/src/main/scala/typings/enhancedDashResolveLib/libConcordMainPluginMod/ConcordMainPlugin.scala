@@ -21,11 +21,8 @@ object ConcordMainPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): ConcordMainPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, options = options, source = source, target = target)
+  
     __obj.asInstanceOf[ConcordMainPlugin]
   }
 }

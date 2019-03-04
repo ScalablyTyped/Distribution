@@ -22,10 +22,7 @@ object IPostgresData {
     error: stdLib.Error = null,
     result: IPostgresResult = null
   ): IPostgresData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(database = database, duration = duration, query = query)
     if (error != null) __obj.updateDynamic("error")(error)
     if (result != null) __obj.updateDynamic("result")(result)
     __obj.asInstanceOf[IPostgresData]

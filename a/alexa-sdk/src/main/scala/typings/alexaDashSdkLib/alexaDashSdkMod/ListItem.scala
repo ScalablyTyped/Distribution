@@ -14,8 +14,7 @@ trait ListItem extends js.Object {
 object ListItem {
   @scala.inline
   def apply(token: java.lang.String, image: Image = null, textContent: TextContent = null): ListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
     if (image != null) __obj.updateDynamic("image")(image)
     if (textContent != null) __obj.updateDynamic("textContent")(textContent)
     __obj.asInstanceOf[ListItem]

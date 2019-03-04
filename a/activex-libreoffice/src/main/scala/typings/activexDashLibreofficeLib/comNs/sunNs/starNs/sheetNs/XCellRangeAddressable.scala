@@ -31,12 +31,8 @@ object XCellRangeAddressable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCellRangeAddressable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangeAddress")(RangeAddress)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRangeAddress")(getRangeAddress)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RangeAddress = RangeAddress, acquire = acquire, getRangeAddress = getRangeAddress, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCellRangeAddressable]
   }
 }

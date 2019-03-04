@@ -22,9 +22,7 @@ object FederatedCredentialData {
     name: java.lang.String = null,
     protocol: java.lang.String = null
   ): FederatedCredentialData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(id = id, provider = provider)
     if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL)
     if (name != null) __obj.updateDynamic("name")(name)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol)

@@ -20,11 +20,8 @@ object Anon_ApproximateFirstReceiveTimestamp {
     SenderId: java.lang.String,
     SentTimestamp: java.lang.String
   ): Anon_ApproximateFirstReceiveTimestamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApproximateFirstReceiveTimestamp")(ApproximateFirstReceiveTimestamp)
-    __obj.updateDynamic("ApproximateReceiveCount")(ApproximateReceiveCount)
-    __obj.updateDynamic("SenderId")(SenderId)
-    __obj.updateDynamic("SentTimestamp")(SentTimestamp)
+    val __obj = js.Dynamic.literal(ApproximateFirstReceiveTimestamp = ApproximateFirstReceiveTimestamp, ApproximateReceiveCount = ApproximateReceiveCount, SenderId = SenderId, SentTimestamp = SentTimestamp)
+  
     __obj.asInstanceOf[Anon_ApproximateFirstReceiveTimestamp]
   }
 }

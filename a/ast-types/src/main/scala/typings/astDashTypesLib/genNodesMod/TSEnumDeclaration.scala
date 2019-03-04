@@ -30,11 +30,8 @@ object TSEnumDeclaration {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumDeclaration,
     initializer: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): TSEnumDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("const")(const)
-    __obj.updateDynamic("declare")(declare)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(const = const, declare = declare, id = id, members = members)
+    __obj.updateDynamic("type")(`type`)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)
     __obj.asInstanceOf[TSEnumDeclaration]
   }

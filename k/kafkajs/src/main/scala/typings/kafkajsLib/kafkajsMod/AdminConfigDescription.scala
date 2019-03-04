@@ -13,9 +13,8 @@ trait AdminConfigDescription extends js.Object {
 object AdminConfigDescription {
   @scala.inline
   def apply(resources: js.Array[AdminConfigDescriptionResource], throttleTime: scala.Double): AdminConfigDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("throttleTime")(throttleTime)
+    val __obj = js.Dynamic.literal(resources = resources, throttleTime = throttleTime)
+  
     __obj.asInstanceOf[AdminConfigDescription]
   }
 }

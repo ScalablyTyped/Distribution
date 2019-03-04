@@ -35,8 +35,7 @@ object ServerOptions {
     requireClientAuthentication: js.Object = null,
     scope: java.lang.String | js.Array[java.lang.String] = null
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
     if (!js.isUndefined(addAcceptedScopesHeader)) __obj.updateDynamic("addAcceptedScopesHeader")(addAcceptedScopesHeader)
     if (!js.isUndefined(addAuthorizedScopesHeader)) __obj.updateDynamic("addAuthorizedScopesHeader")(addAuthorizedScopesHeader)

@@ -24,11 +24,8 @@ object WiFi {
     secure: scala.Boolean,
     signalStrength: scala.Double
   ): WiFi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BSSID")(BSSID)
-    __obj.updateDynamic("SSID")(SSID)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("signalStrength")(signalStrength)
+    val __obj = js.Dynamic.literal(BSSID = BSSID, SSID = SSID, secure = secure, signalStrength = signalStrength)
+  
     __obj.asInstanceOf[WiFi]
   }
 }

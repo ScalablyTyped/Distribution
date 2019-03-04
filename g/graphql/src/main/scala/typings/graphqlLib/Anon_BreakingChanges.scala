@@ -16,9 +16,8 @@ object Anon_BreakingChanges {
     breakingChanges: js.Array[graphqlLib.utilitiesFindBreakingChangesMod.BreakingChange],
     dangerousChanges: js.Array[graphqlLib.utilitiesFindBreakingChangesMod.DangerousChange]
   ): Anon_BreakingChanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakingChanges")(breakingChanges)
-    __obj.updateDynamic("dangerousChanges")(dangerousChanges)
+    val __obj = js.Dynamic.literal(breakingChanges = breakingChanges, dangerousChanges = dangerousChanges)
+  
     __obj.asInstanceOf[Anon_BreakingChanges]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Blurred extends js.Object {
 object Anon_Blurred {
   @scala.inline
   def apply(blurred: babylonjsLib.BABYLONNs.PostProcess, weight: scala.Double): Anon_Blurred = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blurred")(blurred)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(blurred = blurred, weight = weight)
+  
     __obj.asInstanceOf[Anon_Blurred]
   }
 }

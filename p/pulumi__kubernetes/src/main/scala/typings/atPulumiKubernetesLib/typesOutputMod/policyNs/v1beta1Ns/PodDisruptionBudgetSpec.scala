@@ -35,10 +35,8 @@ object PodDisruptionBudgetSpec {
     minAvailable: scala.Double | java.lang.String,
     selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
   ): PodDisruptionBudgetSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
-    __obj.updateDynamic("minAvailable")(minAvailable.asInstanceOf[js.Any])
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(maxUnavailable = maxUnavailable.asInstanceOf[js.Any], minAvailable = minAvailable.asInstanceOf[js.Any], selector = selector)
+  
     __obj.asInstanceOf[PodDisruptionBudgetSpec]
   }
 }

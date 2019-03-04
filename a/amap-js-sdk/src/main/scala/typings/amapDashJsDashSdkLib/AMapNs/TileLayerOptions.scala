@@ -30,16 +30,8 @@ object TileLayerOptions {
     zIndex: scala.Double,
     zooms: js.Array[scala.Double]
   ): TileLayerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectRetina")(detectRetina)
-    __obj.updateDynamic("errorUrl")(errorUrl)
-    __obj.updateDynamic("getTileUrl")(getTileUrl)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("tileSize")(tileSize)
-    __obj.updateDynamic("tileUrl")(tileUrl)
-    __obj.updateDynamic("zIndex")(zIndex)
-    __obj.updateDynamic("zooms")(zooms)
+    val __obj = js.Dynamic.literal(detectRetina = detectRetina, errorUrl = errorUrl, getTileUrl = getTileUrl, map = map, opacity = opacity, tileSize = tileSize, tileUrl = tileUrl, zIndex = zIndex, zooms = zooms)
+  
     __obj.asInstanceOf[TileLayerOptions]
   }
 }

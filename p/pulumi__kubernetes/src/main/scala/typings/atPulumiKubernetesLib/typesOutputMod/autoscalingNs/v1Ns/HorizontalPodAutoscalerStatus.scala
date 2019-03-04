@@ -42,12 +42,8 @@ object HorizontalPodAutoscalerStatus {
     lastScaleTime: java.lang.String,
     observedGeneration: scala.Double
   ): HorizontalPodAutoscalerStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentCPUUtilizationPercentage")(currentCPUUtilizationPercentage)
-    __obj.updateDynamic("currentReplicas")(currentReplicas)
-    __obj.updateDynamic("desiredReplicas")(desiredReplicas)
-    __obj.updateDynamic("lastScaleTime")(lastScaleTime)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
+    val __obj = js.Dynamic.literal(currentCPUUtilizationPercentage = currentCPUUtilizationPercentage, currentReplicas = currentReplicas, desiredReplicas = desiredReplicas, lastScaleTime = lastScaleTime, observedGeneration = observedGeneration)
+  
     __obj.asInstanceOf[HorizontalPodAutoscalerStatus]
   }
 }

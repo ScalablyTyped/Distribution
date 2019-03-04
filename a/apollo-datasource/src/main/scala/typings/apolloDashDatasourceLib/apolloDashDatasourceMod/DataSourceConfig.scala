@@ -16,9 +16,8 @@ object DataSourceConfig {
     cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String],
     context: TContext
   ): DataSourceConfig[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache, context = context.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DataSourceConfig[TContext]]
   }
 }

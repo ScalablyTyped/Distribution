@@ -13,8 +13,8 @@ trait SetCommand extends js.Object {
 object SetCommand {
   @scala.inline
   def apply($set: js.Any): SetCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$set")($set)
+    val __obj = js.Dynamic.literal($set = $set)
+  
     __obj.asInstanceOf[SetCommand]
   }
 }

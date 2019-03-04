@@ -91,17 +91,7 @@ object Tween {
     unit: java.lang.String,
     pos: scala.Int | scala.Double = null
   ): Tween[TElement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cur")(cur)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("elem")(elem.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("now")(now)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("prop")(prop)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(cur = cur, easing = easing, elem = elem.asInstanceOf[js.Any], end = end, now = now, options = options, prop = prop, run = run, start = start, unit = unit)
     if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tween[TElement]]
   }

@@ -28,9 +28,8 @@ object RedisStorageConfig {
     socket_keepalive: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null
   ): RedisStorageConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
+    __obj.updateDynamic("type")(`type`)
     if (db != null) __obj.updateDynamic("db")(db)
     if (password != null) __obj.updateDynamic("password")(password)
     if (path != null) __obj.updateDynamic("path")(path)

@@ -110,18 +110,8 @@ object DatabasesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): DatabasesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("dropDatabase")(dropDatabase)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getDdl")(getDdl)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("sessions")(sessions)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("updateDdl")(updateDdl)
+    val __obj = js.Dynamic.literal(create = create, dropDatabase = dropDatabase, get = get, getDdl = getDdl, getIamPolicy = getIamPolicy, list = list, operations = operations, sessions = sessions, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, updateDdl = updateDdl)
+  
     __obj.asInstanceOf[DatabasesResource]
   }
 }

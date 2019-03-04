@@ -34,8 +34,7 @@ object StrictPortalInnerProps {
     onMount: js.Function2[/* nothing */ scala.Null, /* data */ PortalInnerProps, scala.Unit] = null,
     onUnmount: js.Function2[/* nothing */ scala.Null, /* data */ PortalInnerProps, scala.Unit] = null
   ): StrictPortalInnerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
     if (onMount != null) __obj.updateDynamic("onMount")(onMount)
     if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)

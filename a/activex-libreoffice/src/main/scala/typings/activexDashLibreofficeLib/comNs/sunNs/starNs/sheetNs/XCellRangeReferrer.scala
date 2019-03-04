@@ -28,12 +28,8 @@ object XCellRangeReferrer {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCellRangeReferrer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ReferredCells")(ReferredCells)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getReferredCells")(getReferredCells)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ReferredCells = ReferredCells, acquire = acquire, getReferredCells = getReferredCells, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCellRangeReferrer]
   }
 }

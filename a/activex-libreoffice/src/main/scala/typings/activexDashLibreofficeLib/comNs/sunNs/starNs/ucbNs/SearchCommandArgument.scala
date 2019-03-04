@@ -22,9 +22,8 @@ object SearchCommandArgument {
     Info: SearchInfo,
     Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
   ): SearchCommandArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Info")(Info)
-    __obj.updateDynamic("Properties")(Properties)
+    val __obj = js.Dynamic.literal(Info = Info, Properties = Properties)
+  
     __obj.asInstanceOf[SearchCommandArgument]
   }
 }

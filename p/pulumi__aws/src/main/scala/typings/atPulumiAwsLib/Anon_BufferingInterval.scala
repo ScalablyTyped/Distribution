@@ -34,11 +34,7 @@ object Anon_BufferingInterval {
     s3BackupMode: java.lang.String = null,
     typeName: java.lang.String = null
   ): Anon_BufferingInterval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
-    __obj.updateDynamic("domainArn")(domainArn)
-    __obj.updateDynamic("indexName")(indexName)
-    __obj.updateDynamic("roleArn")(roleArn)
+    val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions, domainArn = domainArn, indexName = indexName, roleArn = roleArn)
     if (bufferingInterval != null) __obj.updateDynamic("bufferingInterval")(bufferingInterval.asInstanceOf[js.Any])
     if (bufferingSize != null) __obj.updateDynamic("bufferingSize")(bufferingSize.asInstanceOf[js.Any])
     if (indexRotationPeriod != null) __obj.updateDynamic("indexRotationPeriod")(indexRotationPeriod)

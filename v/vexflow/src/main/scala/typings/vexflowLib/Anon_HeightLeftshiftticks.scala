@@ -20,11 +20,8 @@ object Anon_HeightLeftshiftticks {
     right_shift_ticks: scala.Double,
     y_shift: scala.Double
   ): Anon_HeightLeftshiftticks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left_shift_ticks")(left_shift_ticks)
-    __obj.updateDynamic("right_shift_ticks")(right_shift_ticks)
-    __obj.updateDynamic("y_shift")(y_shift)
+    val __obj = js.Dynamic.literal(height = height, left_shift_ticks = left_shift_ticks, right_shift_ticks = right_shift_ticks, y_shift = y_shift)
+  
     __obj.asInstanceOf[Anon_HeightLeftshiftticks]
   }
 }

@@ -95,18 +95,8 @@ object INavigation {
     setMode: js.Function1[java.lang.String, NavigationResult],
     switchMode: js.Function1[NavigationModeType, NavigationResult]
   ): INavigation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("analysis")(analysis)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("getCurrentSheetId")(getCurrentSheetId)
-    __obj.updateDynamic("getMode")(getMode)
-    __obj.updateDynamic("gotoSheet")(gotoSheet)
-    __obj.updateDynamic("gotoStory")(gotoStory)
-    __obj.updateDynamic("isModeAllowed")(isModeAllowed)
-    __obj.updateDynamic("nextSheet")(nextSheet)
-    __obj.updateDynamic("prevSheet")(prevSheet)
-    __obj.updateDynamic("setMode")(setMode)
-    __obj.updateDynamic("switchMode")(switchMode)
+    val __obj = js.Dynamic.literal(analysis = analysis, edit = edit, getCurrentSheetId = getCurrentSheetId, getMode = getMode, gotoSheet = gotoSheet, gotoStory = gotoStory, isModeAllowed = isModeAllowed, nextSheet = nextSheet, prevSheet = prevSheet, setMode = setMode, switchMode = switchMode)
+  
     __obj.asInstanceOf[INavigation]
   }
 }

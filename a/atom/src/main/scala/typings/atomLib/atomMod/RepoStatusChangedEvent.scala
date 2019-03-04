@@ -17,9 +17,8 @@ trait RepoStatusChangedEvent extends js.Object {
 object RepoStatusChangedEvent {
   @scala.inline
   def apply(path: java.lang.String, pathStatus: scala.Double): RepoStatusChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pathStatus")(pathStatus)
+    val __obj = js.Dynamic.literal(path = path, pathStatus = pathStatus)
+  
     __obj.asInstanceOf[RepoStatusChangedEvent]
   }
 }

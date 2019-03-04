@@ -46,18 +46,8 @@ object XTopWindowListener {
     windowNormalized: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     windowOpened: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XTopWindowListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("windowActivated")(windowActivated)
-    __obj.updateDynamic("windowClosed")(windowClosed)
-    __obj.updateDynamic("windowClosing")(windowClosing)
-    __obj.updateDynamic("windowDeactivated")(windowDeactivated)
-    __obj.updateDynamic("windowMinimized")(windowMinimized)
-    __obj.updateDynamic("windowNormalized")(windowNormalized)
-    __obj.updateDynamic("windowOpened")(windowOpened)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, windowActivated = windowActivated, windowClosed = windowClosed, windowClosing = windowClosing, windowDeactivated = windowDeactivated, windowMinimized = windowMinimized, windowNormalized = windowNormalized, windowOpened = windowOpened)
+  
     __obj.asInstanceOf[XTopWindowListener]
   }
 }

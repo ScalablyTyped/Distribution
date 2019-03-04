@@ -22,10 +22,10 @@ class InsertIterator[Container /* <: tstlLib.baseDisposableIPartialContainersMod
   /**
     * @hidden
     */
-  var `container_`: js.Any = js.native
+  var container_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `it_`: js.Any = js.native
+  var it_ : js.Any = js.native
 }
 

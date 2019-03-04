@@ -19,8 +19,8 @@ trait ASPxClientDashboardStateChangedEventArgs extends ASPxClientEventArgs {
 object ASPxClientDashboardStateChangedEventArgs {
   @scala.inline
   def apply(DashboardState: java.lang.String): ASPxClientDashboardStateChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DashboardState")(DashboardState)
+    val __obj = js.Dynamic.literal(DashboardState = DashboardState)
+  
     __obj.asInstanceOf[ASPxClientDashboardStateChangedEventArgs]
   }
 }

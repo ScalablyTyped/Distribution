@@ -55,9 +55,7 @@ object ServerCertificateArgs {
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ServerCertificateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certificateBody = certificateBody.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

@@ -140,8 +140,7 @@ object Options {
     verbose: js.UndefOr[scala.Boolean] = js.undefined,
     version: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("out")(out)
+    val __obj = js.Dynamic.literal(out = out)
     if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
     if (!js.isUndefined(excludeExternals)) __obj.updateDynamic("excludeExternals")(excludeExternals)

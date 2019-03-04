@@ -24,13 +24,8 @@ object Anon_ALERTINFO {
     SUCCESS: reactDashFoundationLib.enumsMod.ProgressColors,
     WARNING: reactDashFoundationLib.enumsMod.ProgressColors
   ): Anon_ALERTINFO = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALERT")(ALERT)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("PRIMARY")(PRIMARY)
-    __obj.updateDynamic("SECONDARY")(SECONDARY)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(ALERT = ALERT, INFO = INFO, PRIMARY = PRIMARY, SECONDARY = SECONDARY, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_ALERTINFO]
   }
 }

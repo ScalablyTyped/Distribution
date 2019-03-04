@@ -6,7 +6,7 @@
 [info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(Verifier)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsTypeParam() / TsTypeQuery())] 
 [warn ] ResolveTypeQueries.scala:126 Couldn't resolve typeof Strategy [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsExport() / TsExporteeTree() / TsDeclInterface(FeathersAuthenticationOAuth2Options) / TsMemberProperty(Strategy) / TsTypeUnion() / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:138 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(self)))) [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(feathersAuthenticationOAuth2) / TsTypeIntersect() / TsTypeQuery())] 
-[info ] ExpandCallables.scala:51 Expanded default into 1 methods [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded default into 1 methods [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeObject())] 
 [error] TsTreeScope.scala:213 Circular tree detected [id => @feathersjs/authentication-oauth2, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@feathersjs/authentication-oauth2) / TsDeclVar(default) / TsTypeIntersect() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeConstructor() / TsTypeFunction() / TsFunSig() / TsTypeParam() / TsTypeRef())] com.olvind.logging.Logger$LoggedException: Circular tree detected
 	at com.olvind.logging.Logger$LoggingOps$.fatal$extension(Logger.scala:171)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.<init>(TsTreeScope.scala:213)
@@ -136,8 +136,8 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile(TreeTransformation.scala:333)
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:329)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$44(Phase1ReadTypescript.scala:190)
-	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$49(Phase1ReadTypescript.scala:201)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$45(Phase1ReadTypescript.scala:190)
+	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$50(Phase1ReadTypescript.scala:201)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
 	at scala.collection.immutable.List.foldLeft(List.scala:89)

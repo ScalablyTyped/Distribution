@@ -24,18 +24,8 @@ object ReindexOrByQueryResponseSlice {
     updated: scala.Double,
     version_conflicts: scala.Double
   ): ReindexOrByQueryResponseSlice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batches")(batches)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("noops")(noops)
-    __obj.updateDynamic("requests_per_second")(requests_per_second)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("slice_id")(slice_id)
-    __obj.updateDynamic("throttled_millis")(throttled_millis)
-    __obj.updateDynamic("throttled_until_millis")(throttled_until_millis)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("updated")(updated)
-    __obj.updateDynamic("version_conflicts")(version_conflicts)
+    val __obj = js.Dynamic.literal(batches = batches, deleted = deleted, noops = noops, requests_per_second = requests_per_second, retries = retries, slice_id = slice_id, throttled_millis = throttled_millis, throttled_until_millis = throttled_until_millis, total = total, updated = updated, version_conflicts = version_conflicts)
+  
     __obj.asInstanceOf[ReindexOrByQueryResponseSlice]
   }
 }

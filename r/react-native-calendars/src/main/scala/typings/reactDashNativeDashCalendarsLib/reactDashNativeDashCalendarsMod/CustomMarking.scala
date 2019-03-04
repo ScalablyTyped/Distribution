@@ -12,8 +12,8 @@ trait CustomMarking extends Marking {
 object CustomMarking {
   @scala.inline
   def apply(customStyles: MarkedDateCustomStyles): CustomMarking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customStyles")(customStyles)
+    val __obj = js.Dynamic.literal(customStyles = customStyles)
+  
     __obj.asInstanceOf[CustomMarking]
   }
 }

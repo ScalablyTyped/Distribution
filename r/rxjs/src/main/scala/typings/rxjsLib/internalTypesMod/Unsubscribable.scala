@@ -12,8 +12,8 @@ trait Unsubscribable extends js.Object {
 object Unsubscribable {
   @scala.inline
   def apply(unsubscribe: js.Function0[scala.Unit]): Unsubscribable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[Unsubscribable]
   }
 }

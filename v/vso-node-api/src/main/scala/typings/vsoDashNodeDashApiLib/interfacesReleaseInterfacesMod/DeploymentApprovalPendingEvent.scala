@@ -30,16 +30,8 @@ object DeploymentApprovalPendingEvent {
     project: ProjectReference,
     release: Release
   ): DeploymentApprovalPendingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approval")(approval)
-    __obj.updateDynamic("approvalOptions")(approvalOptions)
-    __obj.updateDynamic("completedApprovals")(completedApprovals)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("isMultipleRankApproval")(isMultipleRankApproval)
-    __obj.updateDynamic("pendingApprovals")(pendingApprovals)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(approval = approval, approvalOptions = approvalOptions, completedApprovals = completedApprovals, data = data, deployment = deployment, isMultipleRankApproval = isMultipleRankApproval, pendingApprovals = pendingApprovals, project = project, release = release)
+  
     __obj.asInstanceOf[DeploymentApprovalPendingEvent]
   }
 }

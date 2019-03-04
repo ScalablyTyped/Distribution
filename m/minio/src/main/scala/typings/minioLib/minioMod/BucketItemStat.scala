@@ -20,11 +20,8 @@ object BucketItemStat {
     metaData: ItemBucketMetadata,
     size: scala.Double
   ): BucketItemStat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("metaData")(metaData)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(etag = etag, lastModified = lastModified, metaData = metaData, size = size)
+  
     __obj.asInstanceOf[BucketItemStat]
   }
 }

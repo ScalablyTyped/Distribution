@@ -13,9 +13,8 @@ trait IDatepickerDateRange extends js.Object {
 object IDatepickerDateRange {
   @scala.inline
   def apply(end: stdLib.Date, start: stdLib.Date): IDatepickerDateRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[IDatepickerDateRange]
   }
 }

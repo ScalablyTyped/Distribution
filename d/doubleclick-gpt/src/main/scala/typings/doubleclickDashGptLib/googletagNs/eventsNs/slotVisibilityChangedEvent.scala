@@ -18,10 +18,8 @@ object slotVisibilityChangedEvent {
     serviceName: java.lang.String,
     slot: doubleclickDashGptLib.googletagNs.Slot
   ): slotVisibilityChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inViewPercentage")(inViewPercentage)
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("slot")(slot)
+    val __obj = js.Dynamic.literal(inViewPercentage = inViewPercentage, serviceName = serviceName, slot = slot)
+  
     __obj.asInstanceOf[slotVisibilityChangedEvent]
   }
 }

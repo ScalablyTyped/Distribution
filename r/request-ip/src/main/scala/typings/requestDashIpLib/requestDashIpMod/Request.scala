@@ -20,9 +20,7 @@ object Request {
     info: requestDashIpLib.Anon_RemoteAddress = null,
     socket: requestDashIpLib.Anon_RemoteAddress = null
   ): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(connection = connection, headers = headers)
     if (info != null) __obj.updateDynamic("info")(info)
     if (socket != null) __obj.updateDynamic("socket")(socket)
     __obj.asInstanceOf[Request]

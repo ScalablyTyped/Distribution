@@ -18,10 +18,8 @@ object AdProgressParam {
     creativetype: java.lang.String,
     tag: java.lang.String
   ): AdProgressParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    __obj.updateDynamic("creativetype")(creativetype)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype, tag = tag)
+  
     __obj.asInstanceOf[AdProgressParam]
   }
 }

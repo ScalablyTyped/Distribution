@@ -42,16 +42,8 @@ object Panel {
     show: js.Function0[scala.Unit],
     visible: scala.Boolean
   ): Panel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getPriority")(getPriority)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("onDidChangeVisible")(onDidChangeVisible)
-    __obj.updateDynamic("onDidDestroy")(onDidDestroy)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(destroy = destroy, getItem = getItem, getPriority = getPriority, hide = hide, isVisible = isVisible, onDidChangeVisible = onDidChangeVisible, onDidDestroy = onDidDestroy, show = show, visible = visible)
+  
     __obj.asInstanceOf[Panel[T]]
   }
 }

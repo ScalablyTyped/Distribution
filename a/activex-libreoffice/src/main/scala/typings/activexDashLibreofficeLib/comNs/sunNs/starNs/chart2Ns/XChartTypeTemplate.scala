@@ -112,20 +112,8 @@ object XChartTypeTemplate {
     resetStyles: js.Function1[XDiagram, scala.Unit],
     supportsCategories: js.Function0[scala.Boolean]
   ): XChartTypeTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataInterpreter")(DataInterpreter)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applyStyle")(applyStyle)
-    __obj.updateDynamic("changeDiagram")(changeDiagram)
-    __obj.updateDynamic("changeDiagramData")(changeDiagramData)
-    __obj.updateDynamic("createDiagramByDataSource")(createDiagramByDataSource)
-    __obj.updateDynamic("getChartTypeForNewSeries")(getChartTypeForNewSeries)
-    __obj.updateDynamic("getDataInterpreter")(getDataInterpreter)
-    __obj.updateDynamic("matchesTemplate")(matchesTemplate)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resetStyles")(resetStyles)
-    __obj.updateDynamic("supportsCategories")(supportsCategories)
+    val __obj = js.Dynamic.literal(DataInterpreter = DataInterpreter, acquire = acquire, applyStyle = applyStyle, changeDiagram = changeDiagram, changeDiagramData = changeDiagramData, createDiagramByDataSource = createDiagramByDataSource, getChartTypeForNewSeries = getChartTypeForNewSeries, getDataInterpreter = getDataInterpreter, matchesTemplate = matchesTemplate, queryInterface = queryInterface, release = release, resetStyles = resetStyles, supportsCategories = supportsCategories)
+  
     __obj.asInstanceOf[XChartTypeTemplate]
   }
 }

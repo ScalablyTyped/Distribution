@@ -12,8 +12,8 @@ trait isCampaignChild extends js.Object {
 object isCampaignChild {
   @scala.inline
   def apply(getCampaign: js.Function0[Campaign]): isCampaignChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCampaign")(getCampaign)
+    val __obj = js.Dynamic.literal(getCampaign = getCampaign)
+  
     __obj.asInstanceOf[isCampaignChild]
   }
 }

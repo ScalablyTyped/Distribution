@@ -17,10 +17,8 @@ object IBaseGeometry {
     getBounds: js.Function0[js.Array[js.Array[scala.Double]] | scala.Null],
     getType: js.Function0[java.lang.String]
   ): IBaseGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(events = events, getBounds = getBounds, getType = getType)
+  
     __obj.asInstanceOf[IBaseGeometry]
   }
 }

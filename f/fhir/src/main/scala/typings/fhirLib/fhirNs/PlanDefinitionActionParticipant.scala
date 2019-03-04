@@ -36,7 +36,8 @@ object PlanDefinitionActionParticipant {
     modifierExtension: js.Array[Extension] = null,
     role: CodeableConcept = null
   ): PlanDefinitionActionParticipant = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_type != null) __obj.updateDynamic("_type")(_type)

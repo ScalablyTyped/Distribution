@@ -26,8 +26,8 @@ trait XNode extends js.Object {
 object XNode {
   @scala.inline
   def apply(StringValue: java.lang.String): XNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StringValue")(StringValue)
+    val __obj = js.Dynamic.literal(StringValue = StringValue)
+  
     __obj.asInstanceOf[XNode]
   }
 }

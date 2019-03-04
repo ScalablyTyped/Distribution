@@ -12,8 +12,8 @@ trait ServerExecutionDefinition extends js.Object {
 object ServerExecutionDefinition {
   @scala.inline
   def apply(events: JobEventsConfig): ServerExecutionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(events = events)
+  
     __obj.asInstanceOf[ServerExecutionDefinition]
   }
 }

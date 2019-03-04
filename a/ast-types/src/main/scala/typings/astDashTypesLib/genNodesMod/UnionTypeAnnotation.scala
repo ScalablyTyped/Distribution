@@ -22,8 +22,8 @@ object UnionTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.UnionTypeAnnotation,
     types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
   ): UnionTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(types = types)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UnionTypeAnnotation]
   }
 }

@@ -20,11 +20,8 @@ object Anon_AutoThreshold {
     shortcut: js.Array[Anon_Code],
     threshold: scala.Double
   ): Anon_AutoThreshold = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoThreshold")(autoThreshold)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("shortcut")(shortcut)
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(autoThreshold = autoThreshold, delay = delay, shortcut = shortcut, threshold = threshold)
+  
     __obj.asInstanceOf[Anon_AutoThreshold]
   }
 }

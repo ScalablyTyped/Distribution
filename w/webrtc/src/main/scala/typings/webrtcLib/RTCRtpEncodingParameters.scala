@@ -25,8 +25,7 @@ object RTCRtpEncodingParameters {
     dtx: stdLib.RTCDtxStatus = null,
     scaleResolutionDownBy: scala.Int | scala.Double = null
   ): RTCRtpEncodingParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rid")(rid)
+    val __obj = js.Dynamic.literal(rid = rid)
     if (dtx != null) __obj.updateDynamic("dtx")(dtx)
     if (scaleResolutionDownBy != null) __obj.updateDynamic("scaleResolutionDownBy")(scaleResolutionDownBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpEncodingParameters]

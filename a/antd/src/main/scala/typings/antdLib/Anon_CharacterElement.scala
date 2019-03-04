@@ -12,8 +12,8 @@ trait Anon_CharacterElement extends js.Object {
 object Anon_CharacterElement {
   @scala.inline
   def apply(character: reactLib.reactMod.Global.JSXNs.Element): Anon_CharacterElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
+    val __obj = js.Dynamic.literal(character = character)
+  
     __obj.asInstanceOf[Anon_CharacterElement]
   }
 }

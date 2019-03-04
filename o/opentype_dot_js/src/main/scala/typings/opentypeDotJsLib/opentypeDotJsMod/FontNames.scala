@@ -40,21 +40,8 @@ object FontNames {
     trademark: LocalizedName,
     version: LocalizedName
   ): FontNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("designer")(designer)
-    __obj.updateDynamic("designerURL")(designerURL)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSubfamily")(fontSubfamily)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("license")(license)
-    __obj.updateDynamic("licenseURL")(licenseURL)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("manufacturerURL")(manufacturerURL)
-    __obj.updateDynamic("postScriptName")(postScriptName)
-    __obj.updateDynamic("trademark")(trademark)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(copyright = copyright, description = description, designer = designer, designerURL = designerURL, fontFamily = fontFamily, fontSubfamily = fontSubfamily, fullName = fullName, license = license, licenseURL = licenseURL, manufacturer = manufacturer, manufacturerURL = manufacturerURL, postScriptName = postScriptName, trademark = trademark, version = version)
+  
     __obj.asInstanceOf[FontNames]
   }
 }

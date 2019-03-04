@@ -18,10 +18,8 @@ object User {
     identify: js.Function1[java.lang.String, scala.Unit],
     profile: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("identify")(identify)
-    __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(clear = clear, identify = identify, profile = profile)
+  
     __obj.asInstanceOf[User]
   }
 }

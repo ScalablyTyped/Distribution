@@ -18,7 +18,7 @@ class ReaderTaskEither[E, L, A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: ReaderTaskEither[E, L, js.Function1[/* b */ B, C]], fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, C] = js.native
+  def ap_[B, C](`this`: ReaderTaskEither[E, L, js.Function1[/* b */ B, C]], fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, C] = js.native
   /**
     * Combine two effectful actions, keeping only the result of the first
     */

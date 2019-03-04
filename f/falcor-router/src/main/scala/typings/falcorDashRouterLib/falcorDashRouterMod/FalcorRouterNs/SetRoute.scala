@@ -20,9 +20,8 @@ object SetRoute {
       RouteResult | js.Promise[RouteResult]
     ]
   ): SetRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(route = route, set = set)
+  
     __obj.asInstanceOf[SetRoute]
   }
 }

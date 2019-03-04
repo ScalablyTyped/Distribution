@@ -31,13 +31,8 @@ object BootstrapClientTabControlTabClickEventArgs {
     reloadContentOnCallback: scala.Boolean,
     tab: BootstrapClientTab
   ): BootstrapClientTabControlTabClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("reloadContentOnCallback")(reloadContentOnCallback)
-    __obj.updateDynamic("tab")(tab)
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer, reloadContentOnCallback = reloadContentOnCallback, tab = tab)
+  
     __obj.asInstanceOf[BootstrapClientTabControlTabClickEventArgs]
   }
 }

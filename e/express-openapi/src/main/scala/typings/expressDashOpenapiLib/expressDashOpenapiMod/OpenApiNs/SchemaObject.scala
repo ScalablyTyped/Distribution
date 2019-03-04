@@ -59,9 +59,7 @@ object SchemaObject {
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined,
     xml: XMLObject = null
   ): SchemaObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("example")(example)
-    __obj.updateDynamic("externalDocs")(externalDocs)
+    val __obj = js.Dynamic.literal(example = example, externalDocs = externalDocs)
     if ($schema != null) __obj.updateDynamic("$schema")($schema)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems.asInstanceOf[js.Any])

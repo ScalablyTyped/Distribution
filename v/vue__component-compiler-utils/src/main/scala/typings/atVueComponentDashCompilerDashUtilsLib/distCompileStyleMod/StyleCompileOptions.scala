@@ -32,10 +32,7 @@ object StyleCompileOptions {
     scoped: js.UndefOr[scala.Boolean] = js.undefined,
     trim: js.UndefOr[scala.Boolean] = js.undefined
   ): StyleCompileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(filename = filename, id = id, source = source)
     if (map != null) __obj.updateDynamic("map")(map)
     if (postcssOptions != null) __obj.updateDynamic("postcssOptions")(postcssOptions)
     if (postcssPlugins != null) __obj.updateDynamic("postcssPlugins")(postcssPlugins)

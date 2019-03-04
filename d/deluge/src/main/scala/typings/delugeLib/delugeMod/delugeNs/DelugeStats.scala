@@ -34,18 +34,8 @@ object DelugeStats {
     upload_protocol_rate: scala.Double,
     upload_rate: scala.Double
   ): DelugeStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dht_nodes")(dht_nodes)
-    __obj.updateDynamic("download_protocol_rate")(download_protocol_rate)
-    __obj.updateDynamic("download_rate")(download_rate)
-    __obj.updateDynamic("free_space")(free_space)
-    __obj.updateDynamic("has_incoming_connections")(has_incoming_connections)
-    __obj.updateDynamic("max_download")(max_download)
-    __obj.updateDynamic("max_num_connections")(max_num_connections)
-    __obj.updateDynamic("max_upload")(max_upload)
-    __obj.updateDynamic("num_connections")(num_connections)
-    __obj.updateDynamic("upload_protocol_rate")(upload_protocol_rate)
-    __obj.updateDynamic("upload_rate")(upload_rate)
+    val __obj = js.Dynamic.literal(dht_nodes = dht_nodes, download_protocol_rate = download_protocol_rate, download_rate = download_rate, free_space = free_space, has_incoming_connections = has_incoming_connections, max_download = max_download, max_num_connections = max_num_connections, max_upload = max_upload, num_connections = num_connections, upload_protocol_rate = upload_protocol_rate, upload_rate = upload_rate)
+  
     __obj.asInstanceOf[DelugeStats]
   }
 }

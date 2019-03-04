@@ -30,10 +30,7 @@ object StreamLayerViewUpdateFilterFilter {
     geometry: Extent = null,
     where: java.lang.String = null
   ): StreamLayerViewUpdateFilterFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (geometry != null) __obj.updateDynamic("geometry")(geometry)
     if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[StreamLayerViewUpdateFilterFilter]

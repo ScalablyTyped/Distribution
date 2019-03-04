@@ -28,8 +28,7 @@ object ReadLineOptions {
     removeHistoryDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
     terminal: js.UndefOr[scala.Boolean] = js.undefined
   ): ReadLineOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
     if (crlfDelay != null) __obj.updateDynamic("crlfDelay")(crlfDelay.asInstanceOf[js.Any])
     if (historySize != null) __obj.updateDynamic("historySize")(historySize.asInstanceOf[js.Any])

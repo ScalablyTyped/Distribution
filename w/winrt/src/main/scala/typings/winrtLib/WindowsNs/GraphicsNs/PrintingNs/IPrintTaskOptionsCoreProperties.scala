@@ -38,20 +38,8 @@ object IPrintTaskOptionsCoreProperties {
     printQuality: PrintQuality,
     staple: PrintStaple
   ): IPrintTaskOptionsCoreProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binding")(binding)
-    __obj.updateDynamic("collation")(collation)
-    __obj.updateDynamic("colorMode")(colorMode)
-    __obj.updateDynamic("duplex")(duplex)
-    __obj.updateDynamic("holePunch")(holePunch)
-    __obj.updateDynamic("maxCopies")(maxCopies)
-    __obj.updateDynamic("mediaSize")(mediaSize)
-    __obj.updateDynamic("mediaType")(mediaType)
-    __obj.updateDynamic("minCopies")(minCopies)
-    __obj.updateDynamic("numberOfCopies")(numberOfCopies)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("printQuality")(printQuality)
-    __obj.updateDynamic("staple")(staple)
+    val __obj = js.Dynamic.literal(binding = binding, collation = collation, colorMode = colorMode, duplex = duplex, holePunch = holePunch, maxCopies = maxCopies, mediaSize = mediaSize, mediaType = mediaType, minCopies = minCopies, numberOfCopies = numberOfCopies, orientation = orientation, printQuality = printQuality, staple = staple)
+  
     __obj.asInstanceOf[IPrintTaskOptionsCoreProperties]
   }
 }

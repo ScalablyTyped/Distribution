@@ -15,9 +15,8 @@ trait Match extends js.Object {
 object Match {
   @scala.inline
   def apply(captureIndices: js.Array[CaptureIndex], index: scala.Double): Match = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("captureIndices")(captureIndices)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(captureIndices = captureIndices, index = index)
+  
     __obj.asInstanceOf[Match]
   }
 }

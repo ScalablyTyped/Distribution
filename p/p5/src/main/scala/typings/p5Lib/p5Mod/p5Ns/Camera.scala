@@ -80,15 +80,8 @@ object Camera {
     setPosition: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
     tilt: js.Function1[scala.Double, scala.Unit]
   ): Camera = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("camera")(camera)
-    __obj.updateDynamic("lookAt")(lookAt)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("ortho")(ortho)
-    __obj.updateDynamic("pan")(pan)
-    __obj.updateDynamic("perspective")(perspective)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("tilt")(tilt)
+    val __obj = js.Dynamic.literal(camera = camera, lookAt = lookAt, move = move, ortho = ortho, pan = pan, perspective = perspective, setPosition = setPosition, tilt = tilt)
+  
     __obj.asInstanceOf[Camera]
   }
 }

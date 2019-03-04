@@ -44,11 +44,8 @@ object GeographicTransformationStep {
     wkid: scala.Double,
     wkt: java.lang.String
   ): GeographicTransformationStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInverse")(getInverse)
-    __obj.updateDynamic("isInverse")(isInverse)
-    __obj.updateDynamic("wkid")(wkid)
-    __obj.updateDynamic("wkt")(wkt)
+    val __obj = js.Dynamic.literal(getInverse = getInverse, isInverse = isInverse, wkid = wkid, wkt = wkt)
+  
     __obj.asInstanceOf[GeographicTransformationStep]
   }
 }

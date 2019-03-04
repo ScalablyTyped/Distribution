@@ -37,13 +37,8 @@ object AuxRecordDescription {
     recordId: scala.Double,
     tableName: java.lang.String
   ): AuxRecordDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("recordId")(recordId)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, properties = properties, propertyIsEnumerable = propertyIsEnumerable, recordId = recordId, tableName = tableName)
+  
     __obj.asInstanceOf[AuxRecordDescription]
   }
 }

@@ -12,8 +12,8 @@ trait Deprecatable[T] extends js.Object {
 object Deprecatable {
   @scala.inline
   def apply[T](isDeprecated: js.Function1[java.lang.String, reactLib.reactMod.ReactNs.Validator[T]]): Deprecatable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDeprecated")(isDeprecated)
+    val __obj = js.Dynamic.literal(isDeprecated = isDeprecated)
+  
     __obj.asInstanceOf[Deprecatable[T]]
   }
 }

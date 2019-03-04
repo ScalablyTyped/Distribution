@@ -12,8 +12,8 @@ trait PropagateEventsEnder extends js.Object {
 object PropagateEventsEnder {
   @scala.inline
   def apply(end: js.Function0[scala.Unit]): PropagateEventsEnder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
+    val __obj = js.Dynamic.literal(end = end)
+  
     __obj.asInstanceOf[PropagateEventsEnder]
   }
 }

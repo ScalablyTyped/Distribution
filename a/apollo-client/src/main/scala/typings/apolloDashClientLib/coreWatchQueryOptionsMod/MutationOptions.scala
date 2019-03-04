@@ -28,8 +28,7 @@ object MutationOptions {
     updateQueries: apolloDashClientLib.coreTypesMod.MutationQueryReducersMap[T] = null,
     variables: TVariables = null
   ): MutationOptions[T, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mutation")(mutation)
+    val __obj = js.Dynamic.literal(mutation = mutation)
     if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
     if (context != null) __obj.updateDynamic("context")(context)
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)

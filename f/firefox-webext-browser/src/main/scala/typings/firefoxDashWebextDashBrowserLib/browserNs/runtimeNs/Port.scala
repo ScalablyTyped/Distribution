@@ -27,12 +27,7 @@ object Port {
     postMessage: js.Function1[js.Object, scala.Unit],
     sender: MessageSender = null
   ): Port = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onDisconnect")(onDisconnect)
-    __obj.updateDynamic("onMessage")(onMessage)
-    __obj.updateDynamic("postMessage")(postMessage)
+    val __obj = js.Dynamic.literal(disconnect = disconnect, name = name, onDisconnect = onDisconnect, onMessage = onMessage, postMessage = postMessage)
     if (sender != null) __obj.updateDynamic("sender")(sender)
     __obj.asInstanceOf[Port]
   }

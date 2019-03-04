@@ -13,9 +13,8 @@ trait Results[Item, Result] extends js.Object {
 object Results {
   @scala.inline
   def apply[Item, Result](safe: scala.Boolean, values: stdLib.Map[Item, Result]): Results[Item, Result] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("safe")(safe)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(safe = safe, values = values)
+  
     __obj.asInstanceOf[Results[Item, Result]]
   }
 }

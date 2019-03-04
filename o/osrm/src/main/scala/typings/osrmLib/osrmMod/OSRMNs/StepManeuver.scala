@@ -42,11 +42,8 @@ object StepManeuver {
     modifier: Indication,
     `type`: StepManeuverTypes
   ): StepManeuver = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bearing_after")(bearing_after)
-    __obj.updateDynamic("bearing_before")(bearing_before)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("modifier")(modifier)
+    val __obj = js.Dynamic.literal(bearing_after = bearing_after, bearing_before = bearing_before, location = location, modifier = modifier)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[StepManeuver]
   }
 }

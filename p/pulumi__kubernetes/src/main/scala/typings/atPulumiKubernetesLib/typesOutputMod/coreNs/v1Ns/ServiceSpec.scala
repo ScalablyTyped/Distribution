@@ -124,19 +124,8 @@ object ServiceSpec {
     sessionAffinityConfig: SessionAffinityConfig,
     `type`: java.lang.String
   ): ServiceSpec = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clusterIP")(clusterIP)
-    __obj.updateDynamic("externalIPs")(externalIPs)
-    __obj.updateDynamic("externalName")(externalName)
-    __obj.updateDynamic("externalTrafficPolicy")(externalTrafficPolicy)
-    __obj.updateDynamic("healthCheckNodePort")(healthCheckNodePort)
-    __obj.updateDynamic("loadBalancerIP")(loadBalancerIP)
-    __obj.updateDynamic("loadBalancerSourceRanges")(loadBalancerSourceRanges)
-    __obj.updateDynamic("ports")(ports)
-    __obj.updateDynamic("publishNotReadyAddresses")(publishNotReadyAddresses)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("sessionAffinity")(sessionAffinity)
-    __obj.updateDynamic("sessionAffinityConfig")(sessionAffinityConfig)
+    val __obj = js.Dynamic.literal(clusterIP = clusterIP, externalIPs = externalIPs, externalName = externalName, externalTrafficPolicy = externalTrafficPolicy, healthCheckNodePort = healthCheckNodePort, loadBalancerIP = loadBalancerIP, loadBalancerSourceRanges = loadBalancerSourceRanges, ports = ports, publishNotReadyAddresses = publishNotReadyAddresses, selector = selector, sessionAffinity = sessionAffinity, sessionAffinityConfig = sessionAffinityConfig)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ServiceSpec]
   }
 }

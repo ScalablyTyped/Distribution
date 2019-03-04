@@ -28,15 +28,8 @@ object QTable {
     rows: js.Array[QRow],
     totals: js.Array[QMeasureCell]
   ): QTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colCount")(colCount)
-    __obj.updateDynamic("exportData")(exportData)
-    __obj.updateDynamic("getColByName")(getColByName)
-    __obj.updateDynamic("getMoreData")(getMoreData)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("totals")(totals)
+    val __obj = js.Dynamic.literal(colCount = colCount, exportData = exportData, getColByName = getColByName, getMoreData = getMoreData, headers = headers, rowCount = rowCount, rows = rows, totals = totals)
+  
     __obj.asInstanceOf[QTable]
   }
 }

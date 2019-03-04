@@ -18,8 +18,7 @@ object VisualObjectInstanceEnumerationObject {
     instances: js.Array[VisualObjectInstance],
     containers: js.Array[VisualObjectInstanceContainer] = null
   ): VisualObjectInstanceEnumerationObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instances")(instances)
+    val __obj = js.Dynamic.literal(instances = instances)
     if (containers != null) __obj.updateDynamic("containers")(containers)
     __obj.asInstanceOf[VisualObjectInstanceEnumerationObject]
   }

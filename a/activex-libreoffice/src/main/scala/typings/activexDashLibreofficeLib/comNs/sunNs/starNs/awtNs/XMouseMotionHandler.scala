@@ -33,13 +33,8 @@ object XMouseMotionHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMouseMotionHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("mouseDragged")(mouseDragged)
-    __obj.updateDynamic("mouseMoved")(mouseMoved)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, mouseDragged = mouseDragged, mouseMoved = mouseMoved, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMouseMotionHandler]
   }
 }

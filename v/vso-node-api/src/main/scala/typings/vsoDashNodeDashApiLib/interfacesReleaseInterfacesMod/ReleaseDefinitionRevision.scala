@@ -52,15 +52,8 @@ object ReleaseDefinitionRevision {
     definitionUrl: java.lang.String,
     revision: scala.Double
   ): ReleaseDefinitionRevision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("changedBy")(changedBy)
-    __obj.updateDynamic("changedDate")(changedDate)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("definitionUrl")(definitionUrl)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, changeType = changeType, changedBy = changedBy, changedDate = changedDate, comment = comment, definitionId = definitionId, definitionUrl = definitionUrl, revision = revision)
+  
     __obj.asInstanceOf[ReleaseDefinitionRevision]
   }
 }

@@ -38,20 +38,8 @@ object ChUIEventInterface {
     swipeup: java.lang.String,
     tap: java.lang.String
   ): ChUIEventInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doubletap")(doubletap)
-    __obj.updateDynamic("eventCancel")(eventCancel)
-    __obj.updateDynamic("eventEnd")(eventEnd)
-    __obj.updateDynamic("eventMove")(eventMove)
-    __obj.updateDynamic("eventStart")(eventStart)
-    __obj.updateDynamic("longtap")(longtap)
-    __obj.updateDynamic("singletap")(singletap)
-    __obj.updateDynamic("swipe")(swipe)
-    __obj.updateDynamic("swipedown")(swipedown)
-    __obj.updateDynamic("swipeleft")(swipeleft)
-    __obj.updateDynamic("swiperight")(swiperight)
-    __obj.updateDynamic("swipeup")(swipeup)
-    __obj.updateDynamic("tap")(tap)
+    val __obj = js.Dynamic.literal(doubletap = doubletap, eventCancel = eventCancel, eventEnd = eventEnd, eventMove = eventMove, eventStart = eventStart, longtap = longtap, singletap = singletap, swipe = swipe, swipedown = swipedown, swipeleft = swipeleft, swiperight = swiperight, swipeup = swipeup, tap = tap)
+  
     __obj.asInstanceOf[ChUIEventInterface]
   }
 }

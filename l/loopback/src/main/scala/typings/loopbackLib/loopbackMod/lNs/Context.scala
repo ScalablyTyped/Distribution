@@ -49,15 +49,8 @@ object Context {
     principals: js.Array[Principal],
     property: java.lang.String
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accesType")(accesType)
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("modelId")(modelId)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("principals")(principals)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(accesType = accesType, accessToken = accessToken, method = method, model = model, modelId = modelId, modelName = modelName, principals = principals, property = property)
+  
     __obj.asInstanceOf[Context]
   }
 }

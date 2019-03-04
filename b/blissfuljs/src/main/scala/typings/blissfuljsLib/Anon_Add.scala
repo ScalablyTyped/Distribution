@@ -16,9 +16,8 @@ object Anon_Add {
     add: js.Function2[java.lang.String, js.Function, scala.Unit],
     run: js.Function2[java.lang.String, js.Object, scala.Unit]
   ): Anon_Add = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(add = add, run = run)
+  
     __obj.asInstanceOf[Anon_Add]
   }
 }

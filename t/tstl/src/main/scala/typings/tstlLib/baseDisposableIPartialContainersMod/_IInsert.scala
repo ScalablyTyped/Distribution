@@ -14,8 +14,8 @@ object _IInsert {
   def apply[Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator] */](
     insert: js.Function2[Iterator, tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]
   ): _IInsert[Iterator] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[_IInsert[Iterator]]
   }
 }

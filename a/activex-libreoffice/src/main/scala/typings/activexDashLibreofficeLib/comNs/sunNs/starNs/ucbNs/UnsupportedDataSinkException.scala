@@ -26,10 +26,8 @@ object UnsupportedDataSinkException {
     Message: java.lang.String,
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): UnsupportedDataSinkException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Sink")(Sink)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Sink = Sink)
+  
     __obj.asInstanceOf[UnsupportedDataSinkException]
   }
 }

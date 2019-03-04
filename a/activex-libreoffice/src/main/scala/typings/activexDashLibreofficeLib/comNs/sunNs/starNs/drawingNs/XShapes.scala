@@ -40,18 +40,8 @@ object XShapes {
     release: js.Function0[scala.Unit],
     remove: js.Function1[XShape, scala.Unit]
   ): XShapes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, add = add, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, hasElements = hasElements, queryInterface = queryInterface, release = release, remove = remove)
+  
     __obj.asInstanceOf[XShapes]
   }
 }

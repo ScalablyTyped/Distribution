@@ -22,10 +22,7 @@ object PluginDefinition {
     deferInit: js.UndefOr[scala.Boolean] = js.undefined,
     staticProps: js.Object = null
   ): PluginDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(instance = instance, name = name, params = params)
     if (!js.isUndefined(deferInit)) __obj.updateDynamic("deferInit")(deferInit)
     if (staticProps != null) __obj.updateDynamic("staticProps")(staticProps)
     __obj.asInstanceOf[PluginDefinition]

@@ -67,18 +67,8 @@ object GetStackResult {
     templateBody: java.lang.String,
     timeoutInMinutes: scala.Double
   ): GetStackResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("disableRollback")(disableRollback)
-    __obj.updateDynamic("iamRoleArn")(iamRoleArn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("notificationArns")(notificationArns)
-    __obj.updateDynamic("outputs")(outputs)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("templateBody")(templateBody)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, description = description, disableRollback = disableRollback, iamRoleArn = iamRoleArn, id = id, notificationArns = notificationArns, outputs = outputs, parameters = parameters, tags = tags, templateBody = templateBody, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[GetStackResult]
   }
 }

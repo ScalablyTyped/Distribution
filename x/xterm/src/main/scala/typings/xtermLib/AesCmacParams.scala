@@ -12,9 +12,8 @@ trait AesCmacParams extends Algorithm {
 object AesCmacParams {
   @scala.inline
   def apply(length: scala.Double, name: java.lang.String): AesCmacParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(length = length, name = name)
+  
     __obj.asInstanceOf[AesCmacParams]
   }
 }

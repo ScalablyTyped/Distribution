@@ -45,12 +45,8 @@ object ASPxClientGridViewColumn {
     name: java.lang.String,
     visible: scala.Boolean
   ): ASPxClientGridViewColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(fieldName = fieldName, id = id, index = index, name = name, visible = visible)
+  
     __obj.asInstanceOf[ASPxClientGridViewColumn]
   }
 }

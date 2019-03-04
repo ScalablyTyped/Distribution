@@ -39,16 +39,8 @@ object File {
     path: java.lang.String,
     size: scala.Double
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("fieldname")(fieldname)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("mimetype")(mimetype)
-    __obj.updateDynamic("originalname")(originalname)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(buffer = buffer, destination = destination, encoding = encoding, fieldname = fieldname, filename = filename, mimetype = mimetype, originalname = originalname, path = path, size = size)
+  
     __obj.asInstanceOf[File]
   }
 }

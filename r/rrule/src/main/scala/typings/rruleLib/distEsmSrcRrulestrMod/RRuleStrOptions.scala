@@ -24,11 +24,7 @@ object RRuleStrOptions {
     dtstart: stdLib.Date = null,
     tzid: java.lang.String = null
   ): RRuleStrOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("compatible")(compatible)
-    __obj.updateDynamic("forceset")(forceset)
-    __obj.updateDynamic("unfold")(unfold)
+    val __obj = js.Dynamic.literal(cache = cache, compatible = compatible, forceset = forceset, unfold = unfold)
     if (dtstart != null) __obj.updateDynamic("dtstart")(dtstart)
     if (tzid != null) __obj.updateDynamic("tzid")(tzid)
     __obj.asInstanceOf[RRuleStrOptions]

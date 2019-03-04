@@ -13,9 +13,8 @@ trait Anon_ArgsMsgBoolean extends js.Object {
 object Anon_ArgsMsgBoolean {
   @scala.inline
   def apply(args: scala.Boolean, msg: java.lang.String): Anon_ArgsMsgBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(args = args, msg = msg)
+  
     __obj.asInstanceOf[Anon_ArgsMsgBoolean]
   }
 }

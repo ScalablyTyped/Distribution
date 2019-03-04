@@ -21,11 +21,8 @@ object BitbucketServerRepoAssociation {
     id: scala.Double,
     `type`: ionicLib.ionicLibStrings.bitbucket_server
   ): BitbucketServerRepoAssociation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clone_url")(clone_url)
-    __obj.updateDynamic("full_name")(full_name)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(clone_url = clone_url, full_name = full_name, html_url = html_url, id = id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BitbucketServerRepoAssociation]
   }
 }

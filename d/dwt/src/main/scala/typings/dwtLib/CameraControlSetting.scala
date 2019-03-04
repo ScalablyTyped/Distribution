@@ -13,9 +13,8 @@ trait CameraControlSetting extends js.Object {
 object CameraControlSetting {
   @scala.inline
   def apply(GetIfAuto: js.Function0[scala.Boolean], GetValue: js.Function0[scala.Double]): CameraControlSetting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetIfAuto")(GetIfAuto)
-    __obj.updateDynamic("GetValue")(GetValue)
+    val __obj = js.Dynamic.literal(GetIfAuto = GetIfAuto, GetValue = GetValue)
+  
     __obj.asInstanceOf[CameraControlSetting]
   }
 }

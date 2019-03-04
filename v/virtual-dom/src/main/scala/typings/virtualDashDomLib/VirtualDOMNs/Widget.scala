@@ -21,10 +21,8 @@ object Widget {
     `type`: java.lang.String,
     update: js.Function2[Widget, stdLib.Element, scala.Unit]
   ): Widget = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, init = init, update = update)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Widget]
   }
 }

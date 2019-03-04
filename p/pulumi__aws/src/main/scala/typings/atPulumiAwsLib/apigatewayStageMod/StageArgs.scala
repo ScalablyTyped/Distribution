@@ -73,10 +73,7 @@ object StageArgs {
     variables: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     xrayTracingEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): StageArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deployment = deployment.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     if (accessLogSettings != null) __obj.updateDynamic("accessLogSettings")(accessLogSettings.asInstanceOf[js.Any])
     if (cacheClusterEnabled != null) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.asInstanceOf[js.Any])
     if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])

@@ -38,20 +38,8 @@ object TimelineHeaderLabelFormat {
     yearLong: java.lang.String,
     yearShort: java.lang.String
   ): TimelineHeaderLabelFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayLong")(dayLong)
-    __obj.updateDynamic("dayShort")(dayShort)
-    __obj.updateDynamic("hourLong")(hourLong)
-    __obj.updateDynamic("hourMedium")(hourMedium)
-    __obj.updateDynamic("hourMediumLong")(hourMediumLong)
-    __obj.updateDynamic("hourShort")(hourShort)
-    __obj.updateDynamic("monthLong")(monthLong)
-    __obj.updateDynamic("monthMedium")(monthMedium)
-    __obj.updateDynamic("monthMediumLong")(monthMediumLong)
-    __obj.updateDynamic("monthShort")(monthShort)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("yearLong")(yearLong)
-    __obj.updateDynamic("yearShort")(yearShort)
+    val __obj = js.Dynamic.literal(dayLong = dayLong, dayShort = dayShort, hourLong = hourLong, hourMedium = hourMedium, hourMediumLong = hourMediumLong, hourShort = hourShort, monthLong = monthLong, monthMedium = monthMedium, monthMediumLong = monthMediumLong, monthShort = monthShort, time = time, yearLong = yearLong, yearShort = yearShort)
+  
     __obj.asInstanceOf[TimelineHeaderLabelFormat]
   }
 }

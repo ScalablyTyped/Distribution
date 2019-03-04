@@ -13,9 +13,8 @@ trait VisitorOptions extends js.Object {
 object VisitorOptions {
   @scala.inline
   def apply(coverageVariable: java.lang.String, inputSourceMap: sourceDashMapLib.sourceDashMapMod.RawSourceMap): VisitorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coverageVariable")(coverageVariable)
-    __obj.updateDynamic("inputSourceMap")(inputSourceMap)
+    val __obj = js.Dynamic.literal(coverageVariable = coverageVariable, inputSourceMap = inputSourceMap)
+  
     __obj.asInstanceOf[VisitorOptions]
   }
 }

@@ -24,13 +24,8 @@ object IMediaDeviceControlCapabilities {
     step: scala.Double,
     supported: scala.Boolean
   ): IMediaDeviceControlCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoModeSupported")(autoModeSupported)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("supported")(supported)
+    val __obj = js.Dynamic.literal(autoModeSupported = autoModeSupported, default = default, max = max, min = min, step = step, supported = supported)
+  
     __obj.asInstanceOf[IMediaDeviceControlCapabilities]
   }
 }

@@ -22,9 +22,8 @@ trait IDoReloadExResult extends js.Object {
 object IDoReloadExResult {
   @scala.inline
   def apply(qScriptLogFile: java.lang.String, qSuccess: scala.Boolean): IDoReloadExResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qScriptLogFile")(qScriptLogFile)
-    __obj.updateDynamic("qSuccess")(qSuccess)
+    val __obj = js.Dynamic.literal(qScriptLogFile = qScriptLogFile, qSuccess = qSuccess)
+  
     __obj.asInstanceOf[IDoReloadExResult]
   }
 }

@@ -84,31 +84,8 @@ object InnerAudioContext {
     startTime: scala.Double,
     stop: js.Function0[scala.Unit]
   ): InnerAudioContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoplay")(autoplay)
-    __obj.updateDynamic("buffered")(buffered)
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("obeyMuteSwitch")(obeyMuteSwitch)
-    __obj.updateDynamic("onCanplay")(onCanplay)
-    __obj.updateDynamic("onEnded")(onEnded)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onPause")(onPause)
-    __obj.updateDynamic("onPlay")(onPlay)
-    __obj.updateDynamic("onSeeked")(onSeeked)
-    __obj.updateDynamic("onSeeking")(onSeeking)
-    __obj.updateDynamic("onStop")(onStop)
-    __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
-    __obj.updateDynamic("onWaiting")(onWaiting)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(autoplay = autoplay, buffered = buffered, currentTime = currentTime, destroy = destroy, duration = duration, loop = loop, obeyMuteSwitch = obeyMuteSwitch, onCanplay = onCanplay, onEnded = onEnded, onError = onError, onPause = onPause, onPlay = onPlay, onSeeked = onSeeked, onSeeking = onSeeking, onStop = onStop, onTimeUpdate = onTimeUpdate, onWaiting = onWaiting, pause = pause, paused = paused, play = play, seek = seek, src = src, startTime = startTime, stop = stop)
+  
     __obj.asInstanceOf[InnerAudioContext]
   }
 }

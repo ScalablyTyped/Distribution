@@ -28,10 +28,7 @@ object Sticker {
     set_name: java.lang.String = null,
     thumb: PhotoSize = null
   ): Sticker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file_id")(file_id)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(file_id = file_id, height = height, width = width)
     if (emoji != null) __obj.updateDynamic("emoji")(emoji)
     if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
     if (mask_position != null) __obj.updateDynamic("mask_position")(mask_position)

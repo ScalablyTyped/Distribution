@@ -24,13 +24,8 @@ object Anon_ColumnFilenameLinenoNodes {
     nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node],
     scope: scala.Boolean
   ): Anon_ColumnFilenameLinenoNodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, nodes = nodes, scope = scope)
+  
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoNodes]
   }
 }

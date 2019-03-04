@@ -21,8 +21,8 @@ object SpreadPropertyPattern {
     argument: astDashTypesLib.genKindsMod.PatternKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.SpreadPropertyPattern
   ): SpreadPropertyPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("argument")(argument)
+    val __obj = js.Dynamic.literal(argument = argument)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SpreadPropertyPattern]
   }
 }

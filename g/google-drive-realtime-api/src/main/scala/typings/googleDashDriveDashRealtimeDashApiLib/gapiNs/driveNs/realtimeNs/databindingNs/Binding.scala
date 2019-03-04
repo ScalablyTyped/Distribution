@@ -22,10 +22,8 @@ object Binding {
     domElement: stdLib.Element,
     unbind: js.Function0[scala.Unit]
   ): Binding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collaborativeObject")(collaborativeObject)
-    __obj.updateDynamic("domElement")(domElement)
-    __obj.updateDynamic("unbind")(unbind)
+    val __obj = js.Dynamic.literal(collaborativeObject = collaborativeObject, domElement = domElement, unbind = unbind)
+  
     __obj.asInstanceOf[Binding]
   }
 }

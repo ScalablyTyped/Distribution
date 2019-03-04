@@ -35,11 +35,8 @@ object BluetoothDevice {
     deviceId: java.lang.String,
     name: java.lang.String
   ): BluetoothDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RSSI")(RSSI)
-    __obj.updateDynamic("advertisData")(advertisData)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(RSSI = RSSI, advertisData = advertisData, deviceId = deviceId, name = name)
+  
     __obj.asInstanceOf[BluetoothDevice]
   }
 }

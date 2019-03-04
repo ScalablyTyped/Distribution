@@ -12,8 +12,8 @@ trait DynaTreeCookieOptions extends js.Object {
 object DynaTreeCookieOptions {
   @scala.inline
   def apply(expires: js.Any): DynaTreeCookieOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expires")(expires)
+    val __obj = js.Dynamic.literal(expires = expires)
+  
     __obj.asInstanceOf[DynaTreeCookieOptions]
   }
 }

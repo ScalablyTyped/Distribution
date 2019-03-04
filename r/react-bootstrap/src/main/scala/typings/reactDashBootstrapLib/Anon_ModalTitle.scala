@@ -12,8 +12,8 @@ trait Anon_ModalTitle extends js.Object {
 object Anon_ModalTitle {
   @scala.inline
   def apply(ModalTitleNs: js.Any): Anon_ModalTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ModalTitleNs")(ModalTitleNs)
+    val __obj = js.Dynamic.literal(ModalTitleNs = ModalTitleNs)
+  
     __obj.asInstanceOf[Anon_ModalTitle]
   }
 }

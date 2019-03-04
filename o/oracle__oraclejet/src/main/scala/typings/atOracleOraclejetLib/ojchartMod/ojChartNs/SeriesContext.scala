@@ -14,9 +14,8 @@ trait SeriesContext extends js.Object {
 object SeriesContext {
   @scala.inline
   def apply(itemIndex: scala.Double, subId: java.lang.String): SeriesContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemIndex")(itemIndex)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex, subId = subId)
+  
     __obj.asInstanceOf[SeriesContext]
   }
 }

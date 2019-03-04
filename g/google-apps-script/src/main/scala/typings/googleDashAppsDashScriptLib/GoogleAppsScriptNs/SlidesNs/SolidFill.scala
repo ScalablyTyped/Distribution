@@ -13,9 +13,8 @@ trait SolidFill extends js.Object {
 object SolidFill {
   @scala.inline
   def apply(getAlpha: js.Function0[stdLib.Number], getColor: js.Function0[Color]): SolidFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAlpha")(getAlpha)
-    __obj.updateDynamic("getColor")(getColor)
+    val __obj = js.Dynamic.literal(getAlpha = getAlpha, getColor = getColor)
+  
     __obj.asInstanceOf[SolidFill]
   }
 }

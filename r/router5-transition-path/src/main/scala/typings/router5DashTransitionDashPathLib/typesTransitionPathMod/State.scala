@@ -20,8 +20,7 @@ object State {
     meta: router5DashTransitionDashPathLib.Anon_Key = null,
     params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (params != null) __obj.updateDynamic("params")(params)

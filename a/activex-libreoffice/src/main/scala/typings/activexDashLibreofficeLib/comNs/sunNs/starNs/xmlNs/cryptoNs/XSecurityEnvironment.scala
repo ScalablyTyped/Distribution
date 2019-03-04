@@ -86,20 +86,8 @@ object XSecurityEnvironment {
       scala.Double
     ]
   ): XSecurityEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PersonalCertificates")(PersonalCertificates)
-    __obj.updateDynamic("SecurityEnvironmentInformation")(SecurityEnvironmentInformation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("buildCertificatePath")(buildCertificatePath)
-    __obj.updateDynamic("createCertificateFromAscii")(createCertificateFromAscii)
-    __obj.updateDynamic("createCertificateFromRaw")(createCertificateFromRaw)
-    __obj.updateDynamic("getCertificate")(getCertificate)
-    __obj.updateDynamic("getCertificateCharacters")(getCertificateCharacters)
-    __obj.updateDynamic("getPersonalCertificates")(getPersonalCertificates)
-    __obj.updateDynamic("getSecurityEnvironmentInformation")(getSecurityEnvironmentInformation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("verifyCertificate")(verifyCertificate)
+    val __obj = js.Dynamic.literal(PersonalCertificates = PersonalCertificates, SecurityEnvironmentInformation = SecurityEnvironmentInformation, acquire = acquire, buildCertificatePath = buildCertificatePath, createCertificateFromAscii = createCertificateFromAscii, createCertificateFromRaw = createCertificateFromRaw, getCertificate = getCertificate, getCertificateCharacters = getCertificateCharacters, getPersonalCertificates = getPersonalCertificates, getSecurityEnvironmentInformation = getSecurityEnvironmentInformation, queryInterface = queryInterface, release = release, verifyCertificate = verifyCertificate)
+  
     __obj.asInstanceOf[XSecurityEnvironment]
   }
 }

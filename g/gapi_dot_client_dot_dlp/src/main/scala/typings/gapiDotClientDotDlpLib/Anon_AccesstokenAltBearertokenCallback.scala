@@ -62,8 +62,7 @@ object Anon_AccesstokenAltBearertokenCallback {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(category = category)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

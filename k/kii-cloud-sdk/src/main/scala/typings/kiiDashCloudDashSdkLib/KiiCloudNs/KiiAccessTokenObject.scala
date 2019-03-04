@@ -13,9 +13,8 @@ trait KiiAccessTokenObject extends js.Object {
 object KiiAccessTokenObject {
   @scala.inline
   def apply(access_token: java.lang.String, expires_at: stdLib.Date): KiiAccessTokenObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expires_at")(expires_at)
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_at = expires_at)
+  
     __obj.asInstanceOf[KiiAccessTokenObject]
   }
 }

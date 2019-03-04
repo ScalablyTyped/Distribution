@@ -13,9 +13,8 @@ trait Anon_Automation extends js.Object {
 object Anon_Automation {
   @scala.inline
   def apply(automation: scala.Double, deployment: scala.Double): Anon_Automation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automation")(automation)
-    __obj.updateDynamic("deployment")(deployment)
+    val __obj = js.Dynamic.literal(automation = automation, deployment = deployment)
+  
     __obj.asInstanceOf[Anon_Automation]
   }
 }

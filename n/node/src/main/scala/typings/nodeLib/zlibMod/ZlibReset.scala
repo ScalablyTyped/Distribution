@@ -12,8 +12,8 @@ trait ZlibReset extends js.Object {
 object ZlibReset {
   @scala.inline
   def apply(reset: js.Function0[scala.Unit]): ZlibReset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(reset = reset)
+  
     __obj.asInstanceOf[ZlibReset]
   }
 }

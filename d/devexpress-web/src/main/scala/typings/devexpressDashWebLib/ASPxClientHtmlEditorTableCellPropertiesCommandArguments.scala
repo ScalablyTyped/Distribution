@@ -28,10 +28,8 @@ object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
     selectedElement: js.Object,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorTableCellPropertiesCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyForAll")(applyForAll)
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("styleSettings")(styleSettings)
+    val __obj = js.Dynamic.literal(applyForAll = applyForAll, selectedElement = selectedElement, styleSettings = styleSettings)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
   }
 }

@@ -38,20 +38,8 @@ object FlashTools {
     snapPoint: js.Function0[js.Any],
     toolObjs: js.Any
   ): FlashTools = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTool")(activeTool)
-    __obj.updateDynamic("altIsDown")(altIsDown)
-    __obj.updateDynamic("constraintPoint")(constraintPoint)
-    __obj.updateDynamic("ctlIsDown")(ctlIsDown)
-    __obj.updateDynamic("getKeyDown")(getKeyDown)
-    __obj.updateDynamic("mouseIsDown")(mouseIsDown)
-    __obj.updateDynamic("penDownLoc")(penDownLoc)
-    __obj.updateDynamic("penLoc")(penLoc)
-    __obj.updateDynamic("setCreatingBbox")(setCreatingBbox)
-    __obj.updateDynamic("setCursor")(setCursor)
-    __obj.updateDynamic("shiftIsDown")(shiftIsDown)
-    __obj.updateDynamic("snapPoint")(snapPoint)
-    __obj.updateDynamic("toolObjs")(toolObjs)
+    val __obj = js.Dynamic.literal(activeTool = activeTool, altIsDown = altIsDown, constraintPoint = constraintPoint, ctlIsDown = ctlIsDown, getKeyDown = getKeyDown, mouseIsDown = mouseIsDown, penDownLoc = penDownLoc, penLoc = penLoc, setCreatingBbox = setCreatingBbox, setCursor = setCursor, shiftIsDown = shiftIsDown, snapPoint = snapPoint, toolObjs = toolObjs)
+  
     __obj.asInstanceOf[FlashTools]
   }
 }

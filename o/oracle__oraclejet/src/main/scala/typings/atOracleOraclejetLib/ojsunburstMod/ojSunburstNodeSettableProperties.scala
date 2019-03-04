@@ -59,8 +59,7 @@ object ojSunburstNodeSettableProperties {
     svgClassName: java.lang.String = null,
     svgStyle: js.Object = null
   ): ojSunburstNodeSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (categories != null) __obj.updateDynamic("categories")(categories)

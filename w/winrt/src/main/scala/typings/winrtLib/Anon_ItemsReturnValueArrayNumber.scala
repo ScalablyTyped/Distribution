@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueArrayNumber {
     items: js.Array[winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceQualifier],
     returnValue: scala.Double
   ): Anon_ItemsReturnValueArrayNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueArrayNumber]
   }
 }

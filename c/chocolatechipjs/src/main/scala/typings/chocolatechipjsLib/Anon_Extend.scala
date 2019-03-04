@@ -18,8 +18,8 @@ trait Anon_Extend extends js.Object {
 object Anon_Extend {
   @scala.inline
   def apply(extend: js.Function1[js.Object, js.Array[stdLib.HTMLElement]]): Anon_Extend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extend")(extend)
+    val __obj = js.Dynamic.literal(extend = extend)
+  
     __obj.asInstanceOf[Anon_Extend]
   }
 }

@@ -26,14 +26,8 @@ object Anon_ClearButtonImage {
     label: java.lang.String,
     root: java.lang.String
   ): Anon_ClearButtonImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearButton")(clearButton)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("itemControl")(itemControl)
-    __obj.updateDynamic("itemText")(itemText)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(clearButton = clearButton, image = image, item = item, itemControl = itemControl, itemText = itemText, label = label, root = root)
+  
     __obj.asInstanceOf[Anon_ClearButtonImage]
   }
 }

@@ -31,17 +31,8 @@ object QueueAttributes {
     totalsent: scala.Double,
     vt: scala.Double
   ): QueueAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("hiddenmsgs")(hiddenmsgs)
-    __obj.updateDynamic("maxsize")(maxsize)
-    __obj.updateDynamic("modified")(modified)
-    __obj.updateDynamic("msgs")(msgs)
-    __obj.updateDynamic("qname")(qname)
-    __obj.updateDynamic("totalrecv")(totalrecv)
-    __obj.updateDynamic("totalsent")(totalsent)
-    __obj.updateDynamic("vt")(vt)
+    val __obj = js.Dynamic.literal(created = created, delay = delay, hiddenmsgs = hiddenmsgs, maxsize = maxsize, modified = modified, msgs = msgs, qname = qname, totalrecv = totalrecv, totalsent = totalsent, vt = vt)
+  
     __obj.asInstanceOf[QueueAttributes]
   }
 }

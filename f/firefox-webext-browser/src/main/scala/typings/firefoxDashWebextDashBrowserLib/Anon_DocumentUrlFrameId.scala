@@ -52,14 +52,8 @@ object Anon_DocumentUrlFrameId {
     originUrl: java.lang.String = null,
     requestBody: Anon_ErrorFormData = null
   ): Anon_DocumentUrlFrameId = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, method = method, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)
     if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody)

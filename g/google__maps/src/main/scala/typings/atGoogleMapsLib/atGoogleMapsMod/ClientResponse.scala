@@ -21,10 +21,8 @@ object ClientResponse {
     json: T,
     status: scala.Double
   ): ClientResponse[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(headers = headers, json = json.asInstanceOf[js.Any], status = status)
+  
     __obj.asInstanceOf[ClientResponse[T]]
   }
 }

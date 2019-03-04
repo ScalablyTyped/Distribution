@@ -20,11 +20,8 @@ object Watermarks {
     lines: js.Array[scala.Double],
     statements: js.Array[scala.Double]
   ): Watermarks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branches")(branches)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(branches = branches, functions = functions, lines = lines, statements = statements)
+  
     __obj.asInstanceOf[Watermarks]
   }
 }

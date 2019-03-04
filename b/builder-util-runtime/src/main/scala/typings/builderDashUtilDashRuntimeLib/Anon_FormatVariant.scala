@@ -14,10 +14,8 @@ trait Anon_FormatVariant extends js.Object {
 object Anon_FormatVariant {
   @scala.inline
   def apply(format: java.lang.String, variant: java.lang.String, version: scala.Double): Anon_FormatVariant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("variant")(variant)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(format = format, variant = variant, version = version)
+  
     __obj.asInstanceOf[Anon_FormatVariant]
   }
 }

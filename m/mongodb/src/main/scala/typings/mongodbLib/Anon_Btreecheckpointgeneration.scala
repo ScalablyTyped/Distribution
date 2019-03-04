@@ -48,8 +48,25 @@ object Anon_Btreecheckpointgeneration {
     `row-store internal pages`: scala.Double,
     `row-store leaf pages`: scala.Double
   ): Anon_Btreecheckpointgeneration = {
-    val __obj = js.Dynamic.literal(`btree checkpoint generation` = `btree checkpoint generation`, `column-store fixed-size leaf pages` = `column-store fixed-size leaf pages`, `column-store internal pages` = `column-store internal pages`, `column-store variable-size RLE encoded values` = `column-store variable-size RLE encoded values`, `column-store variable-size deleted values` = `column-store variable-size deleted values`, `column-store variable-size leaf pages` = `column-store variable-size leaf pages`, `fixed-record size` = `fixed-record size`, `maximum internal page key size` = `maximum internal page key size`, `maximum internal page size` = `maximum internal page size`, `maximum leaf page key size` = `maximum leaf page key size`, `maximum leaf page size` = `maximum leaf page size`, `maximum leaf page value size` = `maximum leaf page value size`, `maximum tree depth` = `maximum tree depth`, `number of key/value pairs` = `number of key/value pairs`, `overflow pages` = `overflow pages`, `pages rewritten by compaction` = `pages rewritten by compaction`, `row-store internal pages` = `row-store internal pages`, `row-store leaf pages` = `row-store leaf pages`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("btree checkpoint generation")(`btree checkpoint generation`)
+    __obj.updateDynamic("column-store fixed-size leaf pages")(`column-store fixed-size leaf pages`)
+    __obj.updateDynamic("column-store internal pages")(`column-store internal pages`)
+    __obj.updateDynamic("column-store variable-size RLE encoded values")(`column-store variable-size RLE encoded values`)
+    __obj.updateDynamic("column-store variable-size deleted values")(`column-store variable-size deleted values`)
+    __obj.updateDynamic("column-store variable-size leaf pages")(`column-store variable-size leaf pages`)
+    __obj.updateDynamic("fixed-record size")(`fixed-record size`)
+    __obj.updateDynamic("maximum internal page key size")(`maximum internal page key size`)
+    __obj.updateDynamic("maximum internal page size")(`maximum internal page size`)
+    __obj.updateDynamic("maximum leaf page key size")(`maximum leaf page key size`)
+    __obj.updateDynamic("maximum leaf page size")(`maximum leaf page size`)
+    __obj.updateDynamic("maximum leaf page value size")(`maximum leaf page value size`)
+    __obj.updateDynamic("maximum tree depth")(`maximum tree depth`)
+    __obj.updateDynamic("number of key/value pairs")(`number of key/value pairs`)
+    __obj.updateDynamic("overflow pages")(`overflow pages`)
+    __obj.updateDynamic("pages rewritten by compaction")(`pages rewritten by compaction`)
+    __obj.updateDynamic("row-store internal pages")(`row-store internal pages`)
+    __obj.updateDynamic("row-store leaf pages")(`row-store leaf pages`)
     __obj.asInstanceOf[Anon_Btreecheckpointgeneration]
   }
 }

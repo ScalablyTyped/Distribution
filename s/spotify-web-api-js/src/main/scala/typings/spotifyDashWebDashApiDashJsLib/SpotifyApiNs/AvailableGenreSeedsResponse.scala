@@ -18,8 +18,8 @@ trait AvailableGenreSeedsResponse extends js.Object {
 object AvailableGenreSeedsResponse {
   @scala.inline
   def apply(genres: js.Array[java.lang.String]): AvailableGenreSeedsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("genres")(genres)
+    val __obj = js.Dynamic.literal(genres = genres)
+  
     __obj.asInstanceOf[AvailableGenreSeedsResponse]
   }
 }

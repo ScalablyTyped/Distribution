@@ -22,8 +22,7 @@ object BatchResultInfo {
     jobId: java.lang.String = null,
     success: js.UndefOr[scala.Boolean] = js.undefined
   ): BatchResultInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (batchId != null) __obj.updateDynamic("batchId")(batchId)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     if (jobId != null) __obj.updateDynamic("jobId")(jobId)

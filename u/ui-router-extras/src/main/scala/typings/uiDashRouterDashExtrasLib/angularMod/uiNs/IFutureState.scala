@@ -34,9 +34,8 @@ object IFutureState {
     url: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IFutureState = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("stateName")(stateName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(stateName = stateName, url = url)
+    __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IFutureState]
   }

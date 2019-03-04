@@ -20,11 +20,8 @@ object Anon_Content {
     name: java.lang.String,
     readonly: scala.Boolean
   ): Anon_Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(content = content, disabled = disabled, name = name, readonly = readonly)
+  
     __obj.asInstanceOf[Anon_Content]
   }
 }

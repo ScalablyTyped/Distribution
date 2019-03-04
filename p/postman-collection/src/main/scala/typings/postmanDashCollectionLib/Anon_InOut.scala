@@ -13,9 +13,8 @@ trait Anon_InOut extends js.Object {
 object Anon_InOut {
   @scala.inline
   def apply(in: js.Function1[js.Any, js.Any], out: js.Function1[js.Any, js.Any]): Anon_InOut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("out")(out)
+    val __obj = js.Dynamic.literal(in = in, out = out)
+  
     __obj.asInstanceOf[Anon_InOut]
   }
 }

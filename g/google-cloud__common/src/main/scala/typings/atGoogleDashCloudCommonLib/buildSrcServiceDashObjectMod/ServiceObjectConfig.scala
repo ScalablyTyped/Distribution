@@ -54,8 +54,7 @@ object ServiceObjectConfig {
       requestLib.requestMod.requestNs.RequiredUriUrl
     ]) = null
   ): ServiceObjectConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (createMethod != null) __obj.updateDynamic("createMethod")(createMethod)
     if (id != null) __obj.updateDynamic("id")(id)

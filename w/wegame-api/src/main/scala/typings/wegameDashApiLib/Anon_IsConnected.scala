@@ -19,9 +19,8 @@ trait Anon_IsConnected extends js.Object {
 object Anon_IsConnected {
   @scala.inline
   def apply(isConnected: scala.Boolean, networkType: wegameDashApiLib.wxNs.typesNs.NetworkType): Anon_IsConnected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("networkType")(networkType)
+    val __obj = js.Dynamic.literal(isConnected = isConnected, networkType = networkType)
+  
     __obj.asInstanceOf[Anon_IsConnected]
   }
 }

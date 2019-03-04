@@ -105,15 +105,8 @@ object UtilColor {
     rgb: js.Function1[java.lang.String, js.Any],
     scale: js.Function0[ColorScale]
   ): UtilColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HSVtoRGB")(HSVtoRGB)
-    __obj.updateDynamic("RGBtoHSV")(RGBtoHSV)
-    __obj.updateDynamic("darken")(darken)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("lighten")(lighten)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(HSVtoRGB = HSVtoRGB, RGBtoHSV = RGBtoHSV, darken = darken, format = format, lighten = lighten, map = map, rgb = rgb, scale = scale)
+  
     __obj.asInstanceOf[UtilColor]
   }
 }

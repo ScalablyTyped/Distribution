@@ -18,10 +18,8 @@ object Anon_Paths {
     scopes: js.Array[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIChildScope],
     script: firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentURL
   ): Anon_Paths = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paths")(paths)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("script")(script)
+    val __obj = js.Dynamic.literal(paths = paths, scopes = scopes, script = script)
+  
     __obj.asInstanceOf[Anon_Paths]
   }
 }

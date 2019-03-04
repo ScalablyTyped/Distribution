@@ -24,10 +24,8 @@ object FrameActionEvent {
     Frame: XFrame,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): FrameActionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Action = Action, Frame = Frame, Source = Source)
+  
     __obj.asInstanceOf[FrameActionEvent]
   }
 }

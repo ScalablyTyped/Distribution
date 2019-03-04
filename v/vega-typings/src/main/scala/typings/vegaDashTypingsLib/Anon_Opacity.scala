@@ -22,12 +22,8 @@ object Anon_Opacity {
     x2: scala.Double,
     y2: scala.Double
   ): Anon_Opacity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("strokeWidth")(strokeWidth)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(opacity = opacity, stroke = stroke, strokeWidth = strokeWidth, x2 = x2, y2 = y2)
+  
     __obj.asInstanceOf[Anon_Opacity]
   }
 }

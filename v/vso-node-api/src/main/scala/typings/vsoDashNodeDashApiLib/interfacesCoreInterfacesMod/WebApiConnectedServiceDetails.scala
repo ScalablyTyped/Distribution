@@ -29,12 +29,8 @@ object WebApiConnectedServiceDetails {
     id: java.lang.String,
     url: java.lang.String
   ): WebApiConnectedServiceDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectedServiceMetaData")(connectedServiceMetaData)
-    __obj.updateDynamic("credentialsXml")(credentialsXml)
-    __obj.updateDynamic("endPoint")(endPoint)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(connectedServiceMetaData = connectedServiceMetaData, credentialsXml = credentialsXml, endPoint = endPoint, id = id, url = url)
+  
     __obj.asInstanceOf[WebApiConnectedServiceDetails]
   }
 }

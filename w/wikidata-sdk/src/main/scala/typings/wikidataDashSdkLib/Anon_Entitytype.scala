@@ -13,8 +13,9 @@ trait Anon_Entitytype extends js.Object {
 object Anon_Entitytype {
   @scala.inline
   def apply(`entity-type`: java.lang.String, `numeric-id`: scala.Double): Anon_Entitytype = {
-    val __obj = js.Dynamic.literal(`entity-type` = `entity-type`, `numeric-id` = `numeric-id`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entity-type")(`entity-type`)
+    __obj.updateDynamic("numeric-id")(`numeric-id`)
     __obj.asInstanceOf[Anon_Entitytype]
   }
 }

@@ -20,8 +20,7 @@ object Anon_CustomCname {
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     s3BucketName: java.lang.String = null
   ): Anon_CustomCname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expirationInDays")(expirationInDays)
+    val __obj = js.Dynamic.literal(expirationInDays = expirationInDays)
     if (customCname != null) __obj.updateDynamic("customCname")(customCname)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName)

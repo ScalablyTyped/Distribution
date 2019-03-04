@@ -28,9 +28,7 @@ object Anon_Bottom {
     placement: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.top | antdLib.antdLibStrings.bottom | antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.leftTop | antdLib.antdLibStrings.leftBottom | antdLib.antdLibStrings.rightTop | antdLib.antdLibStrings.rightBottom = null,
     trigger: antdLib.antdLibStrings.click | antdLib.antdLibStrings.focus | antdLib.antdLibStrings.contextMenu | antdLib.antdLibStrings.hover = null
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(icon = icon, transitionName = transitionName)
     if (okType != null) __obj.updateDynamic("okType")(okType.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

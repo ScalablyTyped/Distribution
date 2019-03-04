@@ -14,10 +14,8 @@ trait Metrics extends js.Object {
 object Metrics {
   @scala.inline
   def apply(errorCount: scala.Double, errorPercentage: scala.Double, totalCount: scala.Double): Metrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCount")(errorCount)
-    __obj.updateDynamic("errorPercentage")(errorPercentage)
-    __obj.updateDynamic("totalCount")(totalCount)
+    val __obj = js.Dynamic.literal(errorCount = errorCount, errorPercentage = errorPercentage, totalCount = totalCount)
+  
     __obj.asInstanceOf[Metrics]
   }
 }

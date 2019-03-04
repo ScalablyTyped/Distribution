@@ -30,12 +30,8 @@ object ReportTaskGetReportContentUrlParams {
     reportId: scala.Double,
     user: scala.Double
   ): ReportTaskGetReportContentUrlParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("reportId")(reportId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, reportId = reportId, user = user)
+  
     __obj.asInstanceOf[ReportTaskGetReportContentUrlParams]
   }
 }

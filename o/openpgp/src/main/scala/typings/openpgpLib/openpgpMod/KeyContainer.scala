@@ -12,8 +12,8 @@ trait KeyContainer extends js.Object {
 object KeyContainer {
   @scala.inline
   def apply(key: openpgpLib.openpgpMod.keyNs.Key): KeyContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+  
     __obj.asInstanceOf[KeyContainer]
   }
 }

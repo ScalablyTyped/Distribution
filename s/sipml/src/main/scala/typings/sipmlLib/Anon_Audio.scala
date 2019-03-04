@@ -13,9 +13,8 @@ trait Anon_Audio extends js.Object {
 object Anon_Audio {
   @scala.inline
   def apply(audio: scala.Double, video: scala.Double): Anon_Audio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audio")(audio)
-    __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(audio = audio, video = video)
+  
     __obj.asInstanceOf[Anon_Audio]
   }
 }

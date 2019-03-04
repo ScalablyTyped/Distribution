@@ -16,10 +16,8 @@ object ElementStylesheetCSS {
     json: js.Function0[js.Any],
     selector: java.lang.String
   ): ElementStylesheetCSS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], json = json, selector = selector)
+  
     __obj.asInstanceOf[ElementStylesheetCSS]
   }
 }

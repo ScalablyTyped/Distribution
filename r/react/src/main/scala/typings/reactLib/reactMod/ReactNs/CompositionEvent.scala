@@ -30,22 +30,8 @@ object CompositionEvent {
     timeStamp: scala.Double,
     `type`: java.lang.String
   ): CompositionEvent[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancelable")(cancelable)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("eventPhase")(eventPhase)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("isTrusted")(isTrusted)
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("persist")(persist)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, currentTarget = currentTarget, data = data, defaultPrevented = defaultPrevented, eventPhase = eventPhase, isDefaultPrevented = isDefaultPrevented, isPropagationStopped = isPropagationStopped, isTrusted = isTrusted, nativeEvent = nativeEvent, persist = persist, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CompositionEvent[T]]
   }
 }

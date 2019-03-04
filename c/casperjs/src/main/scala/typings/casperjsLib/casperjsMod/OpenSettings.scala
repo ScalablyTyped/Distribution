@@ -14,10 +14,8 @@ trait OpenSettings extends js.Object {
 object OpenSettings {
   @scala.inline
   def apply(data: js.Any, headers: js.Any, method: java.lang.String): OpenSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(data = data, headers = headers, method = method)
+  
     __obj.asInstanceOf[OpenSettings]
   }
 }

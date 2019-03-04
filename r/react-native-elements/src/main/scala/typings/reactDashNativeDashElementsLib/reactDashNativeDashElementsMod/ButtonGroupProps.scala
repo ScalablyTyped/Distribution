@@ -171,10 +171,7 @@ object ButtonGroupProps {
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     underlayColor: java.lang.String = null
   ): ButtonGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    __obj.updateDynamic("onPress")(onPress)
-    __obj.updateDynamic("selectedIndex")(selectedIndex)
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], onPress = onPress, selectedIndex = selectedIndex)
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])

@@ -42,13 +42,8 @@ object IgHtmlEditorPopoverMethods {
     hide: js.Function0[scala.Unit],
     show: js.Function1[js.Object, scala.Unit]
   ): IgHtmlEditorPopoverMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, hide = hide, show = show)
+  
     __obj.asInstanceOf[IgHtmlEditorPopoverMethods]
   }
 }

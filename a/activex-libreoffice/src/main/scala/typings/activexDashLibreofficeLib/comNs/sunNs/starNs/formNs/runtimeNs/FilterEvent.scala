@@ -28,11 +28,8 @@ object FilterEvent {
     PredicateExpression: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): FilterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DisjunctiveTerm")(DisjunctiveTerm)
-    __obj.updateDynamic("FilterComponent")(FilterComponent)
-    __obj.updateDynamic("PredicateExpression")(PredicateExpression)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(DisjunctiveTerm = DisjunctiveTerm, FilterComponent = FilterComponent, PredicateExpression = PredicateExpression, Source = Source)
+  
     __obj.asInstanceOf[FilterEvent]
   }
 }

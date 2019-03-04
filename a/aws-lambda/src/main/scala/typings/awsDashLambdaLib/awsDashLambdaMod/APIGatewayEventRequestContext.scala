@@ -52,17 +52,7 @@ object APIGatewayEventRequestContext {
     requestTime: java.lang.String = null,
     routeKey: java.lang.String = null
   ): APIGatewayEventRequestContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("apiId")(apiId)
-    __obj.updateDynamic("httpMethod")(httpMethod)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("requestTimeEpoch")(requestTimeEpoch)
-    __obj.updateDynamic("resourceId")(resourceId)
-    __obj.updateDynamic("resourcePath")(resourcePath)
-    __obj.updateDynamic("stage")(stage)
+    val __obj = js.Dynamic.literal(accountId = accountId, apiId = apiId, httpMethod = httpMethod, identity = identity, path = path, requestId = requestId, requestTimeEpoch = requestTimeEpoch, resourceId = resourceId, resourcePath = resourcePath, stage = stage)
     if (authorizer != null) __obj.updateDynamic("authorizer")(authorizer)
     if (connectedAt != null) __obj.updateDynamic("connectedAt")(connectedAt.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId)

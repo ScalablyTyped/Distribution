@@ -13,9 +13,8 @@ trait ISchema extends js.Object {
 object ISchema {
   @scala.inline
   def apply(columns: js.Array[IColumn], table: java.lang.String): ISchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(columns = columns, table = table)
+  
     __obj.asInstanceOf[ISchema]
   }
 }

@@ -20,10 +20,7 @@ object StackFrame {
     methodName: java.lang.String,
     column: scala.Int | scala.Double = null
   ): StackFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("methodName")(methodName)
+    val __obj = js.Dynamic.literal(file = file, lineNumber = lineNumber, methodName = methodName)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackFrame]
   }

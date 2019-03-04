@@ -14,9 +14,8 @@ trait Anon_Spots extends js.Object {
 object Anon_Spots {
   @scala.inline
   def apply(spots: baidumapDashWebDashSdkLib.BMapNs.HotspotOptions, target: js.Any, `type`: java.lang.String): Anon_Spots = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("spots")(spots)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(spots = spots, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Spots]
   }
 }

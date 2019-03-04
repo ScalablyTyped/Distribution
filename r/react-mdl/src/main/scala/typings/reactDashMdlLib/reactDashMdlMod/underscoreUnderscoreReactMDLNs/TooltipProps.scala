@@ -26,8 +26,7 @@ object TooltipProps {
     position: java.lang.String = null,
     title: java.lang.String = null
   ): TooltipProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)

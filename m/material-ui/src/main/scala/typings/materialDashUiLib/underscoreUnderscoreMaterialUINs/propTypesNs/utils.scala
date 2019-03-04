@@ -28,15 +28,8 @@ object utils {
     monthDiff: js.Function2[stdLib.Date, stdLib.Date, scala.Double],
     setYear: js.Function2[stdLib.Date, scala.Double, stdLib.Date]
   ): utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDays")(addDays)
-    __obj.updateDynamic("addMonths")(addMonths)
-    __obj.updateDynamic("addYears")(addYears)
-    __obj.updateDynamic("getFirstDayOfMonth")(getFirstDayOfMonth)
-    __obj.updateDynamic("getWeekArray")(getWeekArray)
-    __obj.updateDynamic("getYear")(getYear)
-    __obj.updateDynamic("monthDiff")(monthDiff)
-    __obj.updateDynamic("setYear")(setYear)
+    val __obj = js.Dynamic.literal(addDays = addDays, addMonths = addMonths, addYears = addYears, getFirstDayOfMonth = getFirstDayOfMonth, getWeekArray = getWeekArray, getYear = getYear, monthDiff = monthDiff, setYear = setYear)
+  
     __obj.asInstanceOf[utils]
   }
 }

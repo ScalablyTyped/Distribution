@@ -30,16 +30,8 @@ object ICalendarCell {
     isWeekend: scala.Boolean,
     label: scala.Double
   ): ICalendarCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badgeTotal")(badgeTotal)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("inMonth")(inMonth)
-    __obj.updateDynamic("isFuture")(isFuture)
-    __obj.updateDynamic("isPast")(isPast)
-    __obj.updateDynamic("isToday")(isToday)
-    __obj.updateDynamic("isWeekend")(isWeekend)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(badgeTotal = badgeTotal, date = date, events = events, inMonth = inMonth, isFuture = isFuture, isPast = isPast, isToday = isToday, isWeekend = isWeekend, label = label)
+  
     __obj.asInstanceOf[ICalendarCell]
   }
 }

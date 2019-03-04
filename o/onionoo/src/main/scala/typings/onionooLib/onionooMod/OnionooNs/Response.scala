@@ -64,12 +64,7 @@ object Response {
     relays_skipped: scala.Int | scala.Double = null,
     relays_truncated: scala.Int | scala.Double = null
   ): Response[TRelay, TBridge] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bridges")(bridges)
-    __obj.updateDynamic("bridges_published")(bridges_published)
-    __obj.updateDynamic("relays")(relays)
-    __obj.updateDynamic("relays_published")(relays_published)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(bridges = bridges, bridges_published = bridges_published, relays = relays, relays_published = relays_published, version = version)
     if (bridges_skipped != null) __obj.updateDynamic("bridges_skipped")(bridges_skipped.asInstanceOf[js.Any])
     if (bridges_truncated != null) __obj.updateDynamic("bridges_truncated")(bridges_truncated.asInstanceOf[js.Any])
     if (build_revision != null) __obj.updateDynamic("build_revision")(build_revision)

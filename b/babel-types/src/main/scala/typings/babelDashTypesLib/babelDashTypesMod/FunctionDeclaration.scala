@@ -43,15 +43,8 @@ object FunctionDeclaration {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration = null
   ): FunctionDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(async = async, body = body, end = end, generator = generator, id = id, loc = loc, params = params, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (returnType != null) __obj.updateDynamic("returnType")(returnType)

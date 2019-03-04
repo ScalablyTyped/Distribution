@@ -20,9 +20,7 @@ object Cursors {
     after: java.lang.String = null,
     before: java.lang.String = null
   ): Cursors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("hasPrevious")(hasPrevious)
+    val __obj = js.Dynamic.literal(hasNext = hasNext, hasPrevious = hasPrevious)
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     __obj.asInstanceOf[Cursors]

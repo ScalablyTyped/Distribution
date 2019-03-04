@@ -33,15 +33,8 @@ object DDPStatic {
       meteorDashTypingsLib.MeteorNs.SubscriptionHandle
     ]
   ): DDPStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("call")(call)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("methods")(methods)
-    __obj.updateDynamic("onReconnect")(onReconnect)
-    __obj.updateDynamic("reconnect")(reconnect)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(apply = apply, call = call, disconnect = disconnect, methods = methods, onReconnect = onReconnect, reconnect = reconnect, status = status, subscribe = subscribe)
+  
     __obj.asInstanceOf[DDPStatic]
   }
 }

@@ -37,12 +37,8 @@ object Anon_BeginningOfLine {
     hide: js.Function0[scala.Unit],
     show: js.Function0[scala.Unit]
   ): Anon_BeginningOfLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CR")(CR)
-    __obj.updateDynamic("beginningOfLine")(beginningOfLine)
-    __obj.updateDynamic("deleteLine")(deleteLine)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(CR = CR, beginningOfLine = beginningOfLine, deleteLine = deleteLine, hide = hide, show = show)
+  
     __obj.asInstanceOf[Anon_BeginningOfLine]
   }
 }

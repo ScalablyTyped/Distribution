@@ -21,9 +21,7 @@ object Point {
     spatialReference: SpatialReference = null,
     z: scala.Int | scala.Double = null
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
     if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])

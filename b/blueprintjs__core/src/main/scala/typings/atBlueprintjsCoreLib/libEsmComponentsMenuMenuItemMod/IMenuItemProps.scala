@@ -92,8 +92,7 @@ object IMenuItemProps {
     target: java.lang.String = null,
     textClassName: java.lang.String = null
   ): IMenuItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

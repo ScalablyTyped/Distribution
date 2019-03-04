@@ -15,11 +15,8 @@ trait ResizeParams extends js.Object {
 object ResizeParams {
   @scala.inline
   def apply(height: scala.Double, scrollHeight: scala.Double, scrollWidth: scala.Double, width: scala.Double): ResizeParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("scrollHeight")(scrollHeight)
-    __obj.updateDynamic("scrollWidth")(scrollWidth)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, scrollHeight = scrollHeight, scrollWidth = scrollWidth, width = width)
+  
     __obj.asInstanceOf[ResizeParams]
   }
 }

@@ -32,8 +32,7 @@ object PortalWithStateProps {
     openByClickOn: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
   ): PortalWithStateProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc)
     if (!js.isUndefined(closeOnOutsideClick)) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick)
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)

@@ -14,10 +14,8 @@ trait JoinEvent extends js.Object {
 object JoinEvent {
   @scala.inline
   def apply(channel: java.lang.String, hostmask: java.lang.String, nick: java.lang.String): JoinEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("hostmask")(hostmask)
-    __obj.updateDynamic("nick")(nick)
+    val __obj = js.Dynamic.literal(channel = channel, hostmask = hostmask, nick = nick)
+  
     __obj.asInstanceOf[JoinEvent]
   }
 }

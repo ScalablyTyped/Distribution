@@ -21,10 +21,8 @@ object FullKeybindingMatch {
     keyboardEventTarget: stdLib.Element,
     keystrokes: java.lang.String
   ): FullKeybindingMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("binding")(binding)
-    __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget)
-    __obj.updateDynamic("keystrokes")(keystrokes)
+    val __obj = js.Dynamic.literal(binding = binding, keyboardEventTarget = keyboardEventTarget, keystrokes = keystrokes)
+  
     __obj.asInstanceOf[FullKeybindingMatch]
   }
 }

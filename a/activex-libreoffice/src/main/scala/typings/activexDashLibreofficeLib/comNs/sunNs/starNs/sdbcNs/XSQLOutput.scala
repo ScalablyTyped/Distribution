@@ -172,30 +172,8 @@ object XSQLOutput {
     writeTime: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
     writeTimestamp: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, scala.Unit]
   ): XSQLOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("writeArray")(writeArray)
-    __obj.updateDynamic("writeBinaryStream")(writeBinaryStream)
-    __obj.updateDynamic("writeBlob")(writeBlob)
-    __obj.updateDynamic("writeBoolean")(writeBoolean)
-    __obj.updateDynamic("writeByte")(writeByte)
-    __obj.updateDynamic("writeBytes")(writeBytes)
-    __obj.updateDynamic("writeCharacterStream")(writeCharacterStream)
-    __obj.updateDynamic("writeClob")(writeClob)
-    __obj.updateDynamic("writeDate")(writeDate)
-    __obj.updateDynamic("writeDouble")(writeDouble)
-    __obj.updateDynamic("writeFloat")(writeFloat)
-    __obj.updateDynamic("writeInt")(writeInt)
-    __obj.updateDynamic("writeLong")(writeLong)
-    __obj.updateDynamic("writeObject")(writeObject)
-    __obj.updateDynamic("writeRef")(writeRef)
-    __obj.updateDynamic("writeShort")(writeShort)
-    __obj.updateDynamic("writeString")(writeString)
-    __obj.updateDynamic("writeStruct")(writeStruct)
-    __obj.updateDynamic("writeTime")(writeTime)
-    __obj.updateDynamic("writeTimestamp")(writeTimestamp)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, writeArray = writeArray, writeBinaryStream = writeBinaryStream, writeBlob = writeBlob, writeBoolean = writeBoolean, writeByte = writeByte, writeBytes = writeBytes, writeCharacterStream = writeCharacterStream, writeClob = writeClob, writeDate = writeDate, writeDouble = writeDouble, writeFloat = writeFloat, writeInt = writeInt, writeLong = writeLong, writeObject = writeObject, writeRef = writeRef, writeShort = writeShort, writeString = writeString, writeStruct = writeStruct, writeTime = writeTime, writeTimestamp = writeTimestamp)
+  
     __obj.asInstanceOf[XSQLOutput]
   }
 }

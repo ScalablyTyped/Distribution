@@ -45,26 +45,8 @@ object XGlobalEventBroadcaster {
     ],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener, scala.Unit]
   ): XGlobalEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDocumentEventListener")(addDocumentEventListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("documentEventOccured")(documentEventOccured)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getEvents")(getEvents)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("notifyDocumentEvent")(notifyDocumentEvent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeDocumentEventListener")(removeDocumentEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Events = Events, acquire = acquire, addDocumentEventListener = addDocumentEventListener, addEventListener = addEventListener, createEnumeration = createEnumeration, disposing = disposing, documentEventOccured = documentEventOccured, getElementType = getElementType, getEvents = getEvents, has = has, hasElements = hasElements, insert = insert, notifyDocumentEvent = notifyDocumentEvent, queryInterface = queryInterface, release = release, remove = remove, removeDocumentEventListener = removeDocumentEventListener, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XGlobalEventBroadcaster]
   }
 }

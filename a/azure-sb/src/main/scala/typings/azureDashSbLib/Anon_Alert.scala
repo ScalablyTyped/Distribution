@@ -24,13 +24,8 @@ object Anon_Alert {
     payload: js.Object,
     sound: java.lang.String
   ): Anon_Alert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("aps")(aps)
-    __obj.updateDynamic("badge")(badge)
-    __obj.updateDynamic("expiry")(expiry)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("sound")(sound)
+    val __obj = js.Dynamic.literal(alert = alert, aps = aps, badge = badge, expiry = expiry, payload = payload, sound = sound)
+  
     __obj.asInstanceOf[Anon_Alert]
   }
 }

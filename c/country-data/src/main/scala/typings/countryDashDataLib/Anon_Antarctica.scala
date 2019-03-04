@@ -58,30 +58,8 @@ object Anon_Antarctica {
     westernAsia: countryDashDataLib.countryDashDataMod.Region,
     westernEurope: countryDashDataLib.countryDashDataMod.Region
   ): Anon_Antarctica = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antarctica")(antarctica)
-    __obj.updateDynamic("australia")(australia)
-    __obj.updateDynamic("caribbean")(caribbean)
-    __obj.updateDynamic("centralAfrica")(centralAfrica)
-    __obj.updateDynamic("centralAmerica")(centralAmerica)
-    __obj.updateDynamic("centralAsia")(centralAsia)
-    __obj.updateDynamic("eastAfrica")(eastAfrica)
-    __obj.updateDynamic("eastAsia")(eastAsia)
-    __obj.updateDynamic("easternEurope")(easternEurope)
-    __obj.updateDynamic("melanesia")(melanesia)
-    __obj.updateDynamic("micronesia")(micronesia)
-    __obj.updateDynamic("northAfrica")(northAfrica)
-    __obj.updateDynamic("northernAmerica")(northernAmerica)
-    __obj.updateDynamic("northernEurope")(northernEurope)
-    __obj.updateDynamic("polynesia")(polynesia)
-    __obj.updateDynamic("southAmerica")(southAmerica)
-    __obj.updateDynamic("southeastAsia")(southeastAsia)
-    __obj.updateDynamic("southernAfrica")(southernAfrica)
-    __obj.updateDynamic("southernAsia")(southernAsia)
-    __obj.updateDynamic("southernEurope")(southernEurope)
-    __obj.updateDynamic("westAfrica")(westAfrica)
-    __obj.updateDynamic("westernAsia")(westernAsia)
-    __obj.updateDynamic("westernEurope")(westernEurope)
+    val __obj = js.Dynamic.literal(antarctica = antarctica, australia = australia, caribbean = caribbean, centralAfrica = centralAfrica, centralAmerica = centralAmerica, centralAsia = centralAsia, eastAfrica = eastAfrica, eastAsia = eastAsia, easternEurope = easternEurope, melanesia = melanesia, micronesia = micronesia, northAfrica = northAfrica, northernAmerica = northernAmerica, northernEurope = northernEurope, polynesia = polynesia, southAmerica = southAmerica, southeastAsia = southeastAsia, southernAfrica = southernAfrica, southernAsia = southernAsia, southernEurope = southernEurope, westAfrica = westAfrica, westernAsia = westernAsia, westernEurope = westernEurope)
+  
     __obj.asInstanceOf[Anon_Antarctica]
   }
 }

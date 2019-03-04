@@ -26,8 +26,7 @@ object DragAndDropOptions {
     source: openlayersLib.openlayersMod.sourceNs.Vector = null,
     target: stdLib.Element = null
   ): DragAndDropOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (formatConstructors != null) __obj.updateDynamic("formatConstructors")(formatConstructors)
     if (source != null) __obj.updateDynamic("source")(source)
     if (target != null) __obj.updateDynamic("target")(target)

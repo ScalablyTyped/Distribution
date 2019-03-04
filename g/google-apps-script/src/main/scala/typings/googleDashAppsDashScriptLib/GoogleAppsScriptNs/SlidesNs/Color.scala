@@ -18,10 +18,8 @@ object Color {
     asThemeColor: js.Function0[ThemeColor],
     getColorType: js.Function0[ColorType]
   ): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asRgbColor")(asRgbColor)
-    __obj.updateDynamic("asThemeColor")(asThemeColor)
-    __obj.updateDynamic("getColorType")(getColorType)
+    val __obj = js.Dynamic.literal(asRgbColor = asRgbColor, asThemeColor = asThemeColor, getColorType = getColorType)
+  
     __obj.asInstanceOf[Color]
   }
 }

@@ -15,8 +15,8 @@ trait InputValuesError extends js.Object {
 object InputValuesError {
   @scala.inline
   def apply(message: java.lang.String): InputValuesError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[InputValuesError]
   }
 }

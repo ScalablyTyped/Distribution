@@ -45,9 +45,8 @@ object IMetaParameter {
     min: scala.Int | scala.Double = null,
     step: scala.Int | scala.Double = null
   ): IMetaParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(title = title, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])

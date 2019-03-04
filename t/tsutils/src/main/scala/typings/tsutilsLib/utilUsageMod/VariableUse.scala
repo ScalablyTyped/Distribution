@@ -13,9 +13,8 @@ trait VariableUse extends js.Object {
 object VariableUse {
   @scala.inline
   def apply(domain: UsageDomain, location: typescriptLib.typescriptMod.tsNs.Identifier): VariableUse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(domain = domain, location = location)
+  
     __obj.asInstanceOf[VariableUse]
   }
 }

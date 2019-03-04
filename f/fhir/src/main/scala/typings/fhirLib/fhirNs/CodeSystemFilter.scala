@@ -61,10 +61,7 @@ object CodeSystemFilter {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CodeSystemFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(code = code, operator = operator, value = value)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

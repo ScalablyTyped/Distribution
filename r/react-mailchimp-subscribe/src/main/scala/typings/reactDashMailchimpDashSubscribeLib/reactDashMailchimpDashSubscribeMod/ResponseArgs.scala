@@ -16,9 +16,8 @@ object ResponseArgs {
     message: java.lang.String,
     status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.success | reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.error
   ): ResponseArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ResponseArgs]
   }
 }

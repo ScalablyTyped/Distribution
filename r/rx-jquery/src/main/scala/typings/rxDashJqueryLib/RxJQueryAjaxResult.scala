@@ -14,10 +14,8 @@ trait RxJQueryAjaxResult[T] extends js.Object {
 object RxJQueryAjaxResult {
   @scala.inline
   def apply[T](data: T, jqXHR: jqueryLib.JQueryXHR, textStatus: java.lang.String): RxJQueryAjaxResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("jqXHR")(jqXHR)
-    __obj.updateDynamic("textStatus")(textStatus)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], jqXHR = jqXHR, textStatus = textStatus)
+  
     __obj.asInstanceOf[RxJQueryAjaxResult[T]]
   }
 }

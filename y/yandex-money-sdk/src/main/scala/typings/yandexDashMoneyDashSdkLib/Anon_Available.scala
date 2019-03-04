@@ -24,9 +24,7 @@ object Anon_Available {
     deposition_pending: scala.Int | scala.Double = null,
     hold: scala.Int | scala.Double = null
   ): Anon_Available = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(available = available, total = total)
     if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
     if (debt != null) __obj.updateDynamic("debt")(debt.asInstanceOf[js.Any])
     if (deposition_pending != null) __obj.updateDynamic("deposition_pending")(deposition_pending.asInstanceOf[js.Any])

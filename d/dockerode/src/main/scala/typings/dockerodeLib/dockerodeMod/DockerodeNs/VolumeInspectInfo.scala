@@ -30,12 +30,7 @@ object VolumeInspectInfo {
     Status: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     UsageData: dockerodeLib.Anon_RefCount = null
   ): VolumeInspectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Driver")(Driver)
-    __obj.updateDynamic("Labels")(Labels)
-    __obj.updateDynamic("Mountpoint")(Mountpoint)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Driver = Driver, Labels = Labels, Mountpoint = Mountpoint, Name = Name, Scope = Scope.asInstanceOf[js.Any])
     if (Options != null) __obj.updateDynamic("Options")(Options)
     if (Status != null) __obj.updateDynamic("Status")(Status)
     if (UsageData != null) __obj.updateDynamic("UsageData")(UsageData)

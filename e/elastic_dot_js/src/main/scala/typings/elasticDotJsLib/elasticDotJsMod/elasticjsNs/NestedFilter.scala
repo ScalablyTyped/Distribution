@@ -69,18 +69,8 @@ object NestedFilter {
     scope: js.Function1[java.lang.String, NestedFilter],
     toJSON: js.Function0[NestedFilter]
   ): NestedFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, cache = cache, cacheKey = cacheKey, filter = filter, join = join, name = name, path = path, query = query, scope = scope, toJSON = toJSON)
+  
     __obj.asInstanceOf[NestedFilter]
   }
 }

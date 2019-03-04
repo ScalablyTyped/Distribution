@@ -18,9 +18,7 @@ object MemberAssignmentOptions {
     version: scala.Double,
     userData: nodeLib.Buffer = null
   ): MemberAssignmentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignment")(assignment)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(assignment = assignment, version = version)
     if (userData != null) __obj.updateDynamic("userData")(userData)
     __obj.asInstanceOf[MemberAssignmentOptions]
   }

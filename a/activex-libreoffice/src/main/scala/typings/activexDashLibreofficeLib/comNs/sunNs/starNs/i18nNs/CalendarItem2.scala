@@ -24,11 +24,8 @@ object CalendarItem2 {
     ID: java.lang.String,
     NarrowName: java.lang.String
   ): CalendarItem2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AbbrevName")(AbbrevName)
-    __obj.updateDynamic("FullName")(FullName)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("NarrowName")(NarrowName)
+    val __obj = js.Dynamic.literal(AbbrevName = AbbrevName, FullName = FullName, ID = ID, NarrowName = NarrowName)
+  
     __obj.asInstanceOf[CalendarItem2]
   }
 }

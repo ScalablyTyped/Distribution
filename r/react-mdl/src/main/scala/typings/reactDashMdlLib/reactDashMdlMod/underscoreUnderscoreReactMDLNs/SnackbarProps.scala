@@ -23,9 +23,7 @@ object SnackbarProps {
     onActionClick: reactLib.reactMod.ReactNs.MouseEventHandler[Snackbar] = null,
     timeout: scala.Int | scala.Double = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("onTimeout")(onTimeout)
+    val __obj = js.Dynamic.literal(active = active, onTimeout = onTimeout)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     if (action != null) __obj.updateDynamic("action")(action)
     if (onActionClick != null) __obj.updateDynamic("onActionClick")(onActionClick)

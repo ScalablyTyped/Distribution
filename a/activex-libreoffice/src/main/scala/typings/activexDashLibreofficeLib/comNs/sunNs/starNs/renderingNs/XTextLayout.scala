@@ -237,31 +237,8 @@ object XTextLayout {
     queryVisualHighlighting: js.Function2[scala.Double, scala.Double, XPolyPolygon2D],
     release: js.Function0[scala.Unit]
   ): XTextLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaselineOffset")(BaselineOffset)
-    __obj.updateDynamic("Font")(Font)
-    __obj.updateDynamic("MainTextDirection")(MainTextDirection)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applyLogicalAdvancements")(applyLogicalAdvancements)
-    __obj.updateDynamic("combinedJustify")(combinedJustify)
-    __obj.updateDynamic("getBaselineOffset")(getBaselineOffset)
-    __obj.updateDynamic("getCaret")(getCaret)
-    __obj.updateDynamic("getFont")(getFont)
-    __obj.updateDynamic("getMainTextDirection")(getMainTextDirection)
-    __obj.updateDynamic("getNextInsertionIndex")(getNextInsertionIndex)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getTextHit")(getTextHit)
-    __obj.updateDynamic("justify")(justify)
-    __obj.updateDynamic("queryInkMeasures")(queryInkMeasures)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryLogicalAdvancements")(queryLogicalAdvancements)
-    __obj.updateDynamic("queryLogicalHighlighting")(queryLogicalHighlighting)
-    __obj.updateDynamic("queryMeasures")(queryMeasures)
-    __obj.updateDynamic("queryTextBounds")(queryTextBounds)
-    __obj.updateDynamic("queryTextShapes")(queryTextShapes)
-    __obj.updateDynamic("queryVisualHighlighting")(queryVisualHighlighting)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(BaselineOffset = BaselineOffset, Font = Font, MainTextDirection = MainTextDirection, Text = Text, acquire = acquire, applyLogicalAdvancements = applyLogicalAdvancements, combinedJustify = combinedJustify, getBaselineOffset = getBaselineOffset, getCaret = getCaret, getFont = getFont, getMainTextDirection = getMainTextDirection, getNextInsertionIndex = getNextInsertionIndex, getText = getText, getTextHit = getTextHit, justify = justify, queryInkMeasures = queryInkMeasures, queryInterface = queryInterface, queryLogicalAdvancements = queryLogicalAdvancements, queryLogicalHighlighting = queryLogicalHighlighting, queryMeasures = queryMeasures, queryTextBounds = queryTextBounds, queryTextShapes = queryTextShapes, queryVisualHighlighting = queryVisualHighlighting, release = release)
+  
     __obj.asInstanceOf[XTextLayout]
   }
 }

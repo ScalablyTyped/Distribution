@@ -20,8 +20,7 @@ object ConfigurationDefinition {
     description: java.lang.String = null,
     `type`: ConfigurationType = null
   ): ConfigurationDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(required = required)
     if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

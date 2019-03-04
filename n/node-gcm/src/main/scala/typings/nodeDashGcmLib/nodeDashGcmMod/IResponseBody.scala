@@ -22,10 +22,7 @@ object IResponseBody {
     multicast_id: scala.Int | scala.Double = null,
     results: js.Array[nodeDashGcmLib.Anon_Error] = null
   ): IResponseBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canonical_ids")(canonical_ids)
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(canonical_ids = canonical_ids, failure = failure, success = success)
     if (multicast_id != null) __obj.updateDynamic("multicast_id")(multicast_id.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results)
     __obj.asInstanceOf[IResponseBody]

@@ -24,12 +24,8 @@ object IHostName {
     rawName: java.lang.String,
     `type`: HostNameType
   ): IHostName = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("canonicalName")(canonicalName)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("iPInformation")(iPInformation)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("rawName")(rawName)
+    val __obj = js.Dynamic.literal(canonicalName = canonicalName, displayName = displayName, iPInformation = iPInformation, isEqual = isEqual, rawName = rawName)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IHostName]
   }
 }

@@ -50,8 +50,7 @@ object ChartProps {
     thickness: grommetLib.grommetLibStrings.hair | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.none | java.lang.String = null,
     `type`: grommetLib.grommetLibStrings.bar | grommetLib.grommetLibStrings.line | grommetLib.grommetLibStrings.area = null
   ): ChartProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)

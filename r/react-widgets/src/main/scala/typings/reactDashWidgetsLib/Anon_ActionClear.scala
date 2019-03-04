@@ -18,8 +18,7 @@ object Anon_ActionClear {
     lastSearchTerm: java.lang.String = null,
     originalEvent: js.Any = null
   ): Anon_ActionClear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     if (lastSearchTerm != null) __obj.updateDynamic("lastSearchTerm")(lastSearchTerm)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[Anon_ActionClear]

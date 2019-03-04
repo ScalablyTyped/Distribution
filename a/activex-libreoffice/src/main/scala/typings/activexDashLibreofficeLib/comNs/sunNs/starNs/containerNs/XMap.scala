@@ -100,21 +100,8 @@ object XMap {
     release: js.Function0[scala.Unit],
     remove: js.Function1[js.Any, js.Any]
   ): XMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("KeyType")(KeyType)
-    __obj.updateDynamic("ValueType")(ValueType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("containsKey")(containsKey)
-    __obj.updateDynamic("containsValue")(containsValue)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, KeyType = KeyType, ValueType = ValueType, acquire = acquire, clear = clear, containsKey = containsKey, containsValue = containsValue, get = get, getElementType = getElementType, hasElements = hasElements, put = put, queryInterface = queryInterface, release = release, remove = remove)
+  
     __obj.asInstanceOf[XMap]
   }
 }

@@ -24,8 +24,8 @@ object AsObject {
       ]
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldsMap")(fieldsMap)
+    val __obj = js.Dynamic.literal(fieldsMap = fieldsMap)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

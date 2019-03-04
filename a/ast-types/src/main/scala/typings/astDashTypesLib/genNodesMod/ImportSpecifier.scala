@@ -22,8 +22,8 @@ object ImportSpecifier {
     imported: astDashTypesLib.genKindsMod.IdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ImportSpecifier
   ): ImportSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("imported")(imported)
+    val __obj = js.Dynamic.literal(imported = imported)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ImportSpecifier]
   }
 }

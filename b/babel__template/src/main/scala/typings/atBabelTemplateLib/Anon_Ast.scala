@@ -24,13 +24,8 @@ object Anon_Ast {
     statement: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof statement */ js.Any,
     statements: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof statements */ js.Any
   ): Anon_Ast = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("smart")(smart)
-    __obj.updateDynamic("statement")(statement)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(ast = ast, expression = expression, program = program, smart = smart, statement = statement, statements = statements)
+  
     __obj.asInstanceOf[Anon_Ast]
   }
 }

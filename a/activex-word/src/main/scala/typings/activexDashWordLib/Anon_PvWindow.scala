@@ -12,8 +12,8 @@ trait Anon_PvWindow extends js.Object {
 object Anon_PvWindow {
   @scala.inline
   def apply(PvWindow: activexDashWordLib.WordNs.ProtectedViewWindow): Anon_PvWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PvWindow")(PvWindow)
+    val __obj = js.Dynamic.literal(PvWindow = PvWindow)
+  
     __obj.asInstanceOf[Anon_PvWindow]
   }
 }

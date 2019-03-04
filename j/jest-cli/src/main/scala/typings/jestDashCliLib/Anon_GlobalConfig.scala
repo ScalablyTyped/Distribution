@@ -16,9 +16,8 @@ object Anon_GlobalConfig {
     globalConfig: jestDashCliLib.jestDashCliMod.GlobalConfig,
     results: jestDashCliLib.jestDashCliMod.AggregatedResult
   ): Anon_GlobalConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("globalConfig")(globalConfig)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(globalConfig = globalConfig, results = results)
+  
     __obj.asInstanceOf[Anon_GlobalConfig]
   }
 }

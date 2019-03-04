@@ -14,10 +14,8 @@ trait Anon_Encoding extends js.Object {
 object Anon_Encoding {
   @scala.inline
   def apply(encoding: Anon_DecodePath, poly: Anon_ContainsLocation, spherical: Anon_ComputeArea): Anon_Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("poly")(poly)
-    __obj.updateDynamic("spherical")(spherical)
+    val __obj = js.Dynamic.literal(encoding = encoding, poly = poly, spherical = spherical)
+  
     __obj.asInstanceOf[Anon_Encoding]
   }
 }

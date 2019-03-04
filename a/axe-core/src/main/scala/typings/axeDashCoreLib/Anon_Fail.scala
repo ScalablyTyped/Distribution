@@ -18,10 +18,8 @@ object Anon_Fail {
     incomplete: java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String],
     pass: java.lang.String
   ): Anon_Fail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fail")(fail)
-    __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
-    __obj.updateDynamic("pass")(pass)
+    val __obj = js.Dynamic.literal(fail = fail, incomplete = incomplete.asInstanceOf[js.Any], pass = pass)
+  
     __obj.asInstanceOf[Anon_Fail]
   }
 }

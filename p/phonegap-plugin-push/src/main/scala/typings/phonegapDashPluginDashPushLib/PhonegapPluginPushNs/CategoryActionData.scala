@@ -20,11 +20,8 @@ object CategoryActionData {
     foreground: scala.Boolean,
     title: java.lang.String
   ): CategoryActionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("destructive")(destructive)
-    __obj.updateDynamic("foreground")(foreground)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(callback = callback, destructive = destructive, foreground = foreground, title = title)
+  
     __obj.asInstanceOf[CategoryActionData]
   }
 }

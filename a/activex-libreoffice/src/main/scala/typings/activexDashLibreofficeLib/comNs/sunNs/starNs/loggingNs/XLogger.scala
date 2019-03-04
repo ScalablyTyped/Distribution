@@ -82,14 +82,8 @@ object XLogger {
     logp: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     removeLogHandler: js.Function1[XLogHandler, scala.Unit]
   ): XLogger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Level")(Level)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("addLogHandler")(addLogHandler)
-    __obj.updateDynamic("isLoggable")(isLoggable)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("logp")(logp)
-    __obj.updateDynamic("removeLogHandler")(removeLogHandler)
+    val __obj = js.Dynamic.literal(Level = Level, Name = Name, addLogHandler = addLogHandler, isLoggable = isLoggable, log = log, logp = logp, removeLogHandler = removeLogHandler)
+  
     __obj.asInstanceOf[XLogger]
   }
 }

@@ -18,9 +18,7 @@ trait MultiplexConfig extends js.Object {
 object MultiplexConfig {
   @scala.inline
   def apply(id: java.lang.String, url: java.lang.String, secret: java.lang.String = null): MultiplexConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, url = url)
     if (secret != null) __obj.updateDynamic("secret")(secret)
     __obj.asInstanceOf[MultiplexConfig]
   }

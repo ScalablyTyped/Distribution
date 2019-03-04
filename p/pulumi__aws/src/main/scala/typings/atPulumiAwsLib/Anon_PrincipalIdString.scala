@@ -12,8 +12,8 @@ trait Anon_PrincipalIdString extends js.Object {
 object Anon_PrincipalIdString {
   @scala.inline
   def apply(principalId: java.lang.String): Anon_PrincipalIdString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("principalId")(principalId)
+    val __obj = js.Dynamic.literal(principalId = principalId)
+  
     __obj.asInstanceOf[Anon_PrincipalIdString]
   }
 }

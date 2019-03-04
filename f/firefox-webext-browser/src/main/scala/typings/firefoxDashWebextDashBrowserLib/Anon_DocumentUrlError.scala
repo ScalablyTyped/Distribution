@@ -63,16 +63,8 @@ object Anon_DocumentUrlError {
     ip: java.lang.String = null,
     originUrl: java.lang.String = null
   ): Anon_DocumentUrlError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(error = error, frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, requestId = requestId, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
     if (ip != null) __obj.updateDynamic("ip")(ip)
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)

@@ -59,12 +59,7 @@ object ApplePayPaymentRequest {
     shippingMethods: js.Any = null,
     shippingType: js.Any = null
   ): ApplePayPaymentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("currencyCode")(currencyCode)
-    __obj.updateDynamic("merchantCapabilities")(merchantCapabilities)
-    __obj.updateDynamic("supportedNetworks")(supportedNetworks)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(countryCode = countryCode, currencyCode = currencyCode, merchantCapabilities = merchantCapabilities, supportedNetworks = supportedNetworks, total = total)
     if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
     if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
     if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)

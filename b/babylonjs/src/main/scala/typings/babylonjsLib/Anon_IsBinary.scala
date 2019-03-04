@@ -12,8 +12,8 @@ trait Anon_IsBinary extends js.Object {
 object Anon_IsBinary {
   @scala.inline
   def apply(isBinary: scala.Boolean): Anon_IsBinary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isBinary")(isBinary)
+    val __obj = js.Dynamic.literal(isBinary = isBinary)
+  
     __obj.asInstanceOf[Anon_IsBinary]
   }
 }

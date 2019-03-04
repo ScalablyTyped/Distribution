@@ -30,9 +30,8 @@ trait ExternalLinkInfo extends js.Object {
 object ExternalLinkInfo {
   @scala.inline
   def apply(Data: js.Any, Type: scala.Double): ExternalLinkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Data = Data, Type = Type)
+  
     __obj.asInstanceOf[ExternalLinkInfo]
   }
 }

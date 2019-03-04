@@ -24,13 +24,8 @@ object ShardStatus {
     services: js.Array[Service],
     slug: java.lang.String
   ): ShardStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("region_tag")(region_tag)
-    __obj.updateDynamic("services")(services)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(hostname = hostname, locales = locales, name = name, region_tag = region_tag, services = services, slug = slug)
+  
     __obj.asInstanceOf[ShardStatus]
   }
 }

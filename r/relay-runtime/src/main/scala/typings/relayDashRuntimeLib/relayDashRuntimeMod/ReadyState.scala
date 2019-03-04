@@ -24,12 +24,7 @@ object ReadyState {
     stale: scala.Boolean,
     error: stdLib.Error = null
   ): ReadyState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("stale")(stale)
+    val __obj = js.Dynamic.literal(aborted = aborted, done = done, events = events, ready = ready, stale = stale)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[ReadyState]
   }

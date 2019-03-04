@@ -27,10 +27,7 @@ object TreeViewDragEvent {
     sourceNode: stdLib.Element = null,
     statusClass: java.lang.String = null
   ): TreeViewDragEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (pageX != null) __obj.updateDynamic("pageX")(pageX.asInstanceOf[js.Any])
     if (pageY != null) __obj.updateDynamic("pageY")(pageY.asInstanceOf[js.Any])

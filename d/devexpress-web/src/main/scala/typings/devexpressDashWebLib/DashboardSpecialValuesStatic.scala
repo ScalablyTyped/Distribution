@@ -56,15 +56,8 @@ object DashboardSpecialValuesStatic {
     OlapNullValue: java.lang.String,
     OthersValue: java.lang.String
   ): DashboardSpecialValuesStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ErrorValue")(ErrorValue)
-    __obj.updateDynamic("IsErrorValue")(IsErrorValue)
-    __obj.updateDynamic("IsNullValue")(IsNullValue)
-    __obj.updateDynamic("IsOlapNullValue")(IsOlapNullValue)
-    __obj.updateDynamic("IsOthersValue")(IsOthersValue)
-    __obj.updateDynamic("NullValue")(NullValue)
-    __obj.updateDynamic("OlapNullValue")(OlapNullValue)
-    __obj.updateDynamic("OthersValue")(OthersValue)
+    val __obj = js.Dynamic.literal(ErrorValue = ErrorValue, IsErrorValue = IsErrorValue, IsNullValue = IsNullValue, IsOlapNullValue = IsOlapNullValue, IsOthersValue = IsOthersValue, NullValue = NullValue, OlapNullValue = OlapNullValue, OthersValue = OthersValue)
+  
     __obj.asInstanceOf[DashboardSpecialValuesStatic]
   }
 }

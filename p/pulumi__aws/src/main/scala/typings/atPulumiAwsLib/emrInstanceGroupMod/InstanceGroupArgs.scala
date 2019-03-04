@@ -44,9 +44,7 @@ object InstanceGroupArgs {
     instanceCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): InstanceGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     if (ebsConfigs != null) __obj.updateDynamic("ebsConfigs")(ebsConfigs.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
     if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])

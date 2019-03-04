@@ -19,8 +19,7 @@ object PolygonWithCurves {
     hasZ: js.UndefOr[scala.Boolean] = js.undefined,
     spatialReference: SpatialReference = null
   ): PolygonWithCurves = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("curveRings")(curveRings)
+    val __obj = js.Dynamic.literal(curveRings = curveRings)
     if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
     if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

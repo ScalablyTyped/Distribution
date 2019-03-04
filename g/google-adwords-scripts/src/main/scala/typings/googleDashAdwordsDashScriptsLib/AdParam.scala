@@ -26,13 +26,7 @@ object AdParam {
     setInsertionText: js.Function1[java.lang.String, scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): AdParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getInde")(getInde)
-    __obj.updateDynamic("getInsertionText")(getInsertionText)
-    __obj.updateDynamic("getKeyword")(getKeyword)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setInsertionText")(setInsertionText)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getInde = getInde, getInsertionText = getInsertionText, getKeyword = getKeyword, remove = remove, setInsertionText = setInsertionText)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[AdParam]
   }

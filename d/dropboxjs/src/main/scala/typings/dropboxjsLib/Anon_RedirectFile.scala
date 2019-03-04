@@ -20,11 +20,8 @@ object Anon_RedirectFile {
     rememberUser: scala.Boolean,
     scope: java.lang.String
   ): Anon_RedirectFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redirectFile")(redirectFile)
-    __obj.updateDynamic("redirectUrl")(redirectUrl)
-    __obj.updateDynamic("rememberUser")(rememberUser)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(redirectFile = redirectFile, redirectUrl = redirectUrl, rememberUser = rememberUser, scope = scope)
+  
     __obj.asInstanceOf[Anon_RedirectFile]
   }
 }

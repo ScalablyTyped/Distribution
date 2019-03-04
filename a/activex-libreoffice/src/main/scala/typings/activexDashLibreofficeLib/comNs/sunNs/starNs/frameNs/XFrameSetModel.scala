@@ -26,13 +26,8 @@ object XFrameSetModel {
     release: js.Function0[scala.Unit],
     setSource: js.Function1[java.lang.String, scala.Unit]
   ): XFrameSetModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSource")(getSource)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setSource")(setSource)
+    val __obj = js.Dynamic.literal(Source = Source, acquire = acquire, getSource = getSource, queryInterface = queryInterface, release = release, setSource = setSource)
+  
     __obj.asInstanceOf[XFrameSetModel]
   }
 }

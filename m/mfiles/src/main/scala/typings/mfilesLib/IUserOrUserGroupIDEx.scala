@@ -30,16 +30,8 @@ object IUserOrUserGroupIDEx {
     UserOrGroupType: mfilesLib.MFilesNs.MFUserOrUserGroupType,
     WorkflowState: scala.Double
   ): IUserOrUserGroupIDEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("IndirectProperty")(IndirectProperty)
-    __obj.updateDynamic("SetIndirectPropertyPseudoUser")(SetIndirectPropertyPseudoUser)
-    __obj.updateDynamic("SetUserAccount")(SetUserAccount)
-    __obj.updateDynamic("SetUserGroup")(SetUserGroup)
-    __obj.updateDynamic("SetWorkflowStatePseudoUser")(SetWorkflowStatePseudoUser)
-    __obj.updateDynamic("UserOrGroupID")(UserOrGroupID)
-    __obj.updateDynamic("UserOrGroupType")(UserOrGroupType)
-    __obj.updateDynamic("WorkflowState")(WorkflowState)
+    val __obj = js.Dynamic.literal(Clone = Clone, IndirectProperty = IndirectProperty, SetIndirectPropertyPseudoUser = SetIndirectPropertyPseudoUser, SetUserAccount = SetUserAccount, SetUserGroup = SetUserGroup, SetWorkflowStatePseudoUser = SetWorkflowStatePseudoUser, UserOrGroupID = UserOrGroupID, UserOrGroupType = UserOrGroupType, WorkflowState = WorkflowState)
+  
     __obj.asInstanceOf[IUserOrUserGroupIDEx]
   }
 }

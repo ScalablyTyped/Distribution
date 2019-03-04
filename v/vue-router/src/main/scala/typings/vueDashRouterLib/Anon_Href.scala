@@ -23,12 +23,8 @@ object Anon_Href {
     resolved: vueDashRouterLib.typesRouterMod.Route,
     route: vueDashRouterLib.typesRouterMod.Route
   ): Anon_Href = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("normalizedTo")(normalizedTo)
-    __obj.updateDynamic("resolved")(resolved)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(href = href, location = location, normalizedTo = normalizedTo, resolved = resolved, route = route)
+  
     __obj.asInstanceOf[Anon_Href]
   }
 }

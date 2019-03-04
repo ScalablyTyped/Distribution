@@ -27,12 +27,8 @@ object Frustum {
     near: scala.Double,
     projectionMatrix: Matrix4
   ): Frustum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeCullingVolume")(computeCullingVolume)
-    __obj.updateDynamic("far")(far)
-    __obj.updateDynamic("getPixelDimensions")(getPixelDimensions)
-    __obj.updateDynamic("near")(near)
-    __obj.updateDynamic("projectionMatrix")(projectionMatrix)
+    val __obj = js.Dynamic.literal(computeCullingVolume = computeCullingVolume, far = far, getPixelDimensions = getPixelDimensions, near = near, projectionMatrix = projectionMatrix)
+  
     __obj.asInstanceOf[Frustum]
   }
 }

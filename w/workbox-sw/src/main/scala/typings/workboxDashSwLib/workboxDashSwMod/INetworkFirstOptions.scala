@@ -20,11 +20,8 @@ object INetworkFirstOptions {
     networkTimeoutSeconds: scala.Double,
     plugins: js.Array[workboxDashSwLib.Plugin]
   ): INetworkFirstOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("fetchOptions")(fetchOptions)
-    __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, fetchOptions = fetchOptions, networkTimeoutSeconds = networkTimeoutSeconds, plugins = plugins)
+  
     __obj.asInstanceOf[INetworkFirstOptions]
   }
 }

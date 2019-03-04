@@ -52,18 +52,8 @@ object GetRoleResult {
     roleId: java.lang.String,
     uniqueId: java.lang.String
   ): GetRoleResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("assumeRolePolicy")(assumeRolePolicy)
-    __obj.updateDynamic("assumeRolePolicyDocument")(assumeRolePolicyDocument)
-    __obj.updateDynamic("createDate")(createDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maxSessionDuration")(maxSessionDuration)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("permissionsBoundary")(permissionsBoundary)
-    __obj.updateDynamic("roleId")(roleId)
-    __obj.updateDynamic("uniqueId")(uniqueId)
+    val __obj = js.Dynamic.literal(arn = arn, assumeRolePolicy = assumeRolePolicy, assumeRolePolicyDocument = assumeRolePolicyDocument, createDate = createDate, description = description, id = id, maxSessionDuration = maxSessionDuration, path = path, permissionsBoundary = permissionsBoundary, roleId = roleId, uniqueId = uniqueId)
+  
     __obj.asInstanceOf[GetRoleResult]
   }
 }

@@ -20,11 +20,8 @@ object BackProps {
     flipVertical: scala.Boolean,
     perspective: scala.Double
   ): BackProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chilren")(chilren)
-    __obj.updateDynamic("flipHorizontal")(flipHorizontal)
-    __obj.updateDynamic("flipVertical")(flipVertical)
-    __obj.updateDynamic("perspective")(perspective)
+    val __obj = js.Dynamic.literal(chilren = chilren, flipHorizontal = flipHorizontal, flipVertical = flipVertical, perspective = perspective)
+  
     __obj.asInstanceOf[BackProps]
   }
 }

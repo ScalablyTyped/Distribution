@@ -27,10 +27,8 @@ object WorkItemTypeColor {
     secondaryColor: java.lang.String,
     workItemTypeName: java.lang.String
   ): WorkItemTypeColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("primaryColor")(primaryColor)
-    __obj.updateDynamic("secondaryColor")(secondaryColor)
-    __obj.updateDynamic("workItemTypeName")(workItemTypeName)
+    val __obj = js.Dynamic.literal(primaryColor = primaryColor, secondaryColor = secondaryColor, workItemTypeName = workItemTypeName)
+  
     __obj.asInstanceOf[WorkItemTypeColor]
   }
 }

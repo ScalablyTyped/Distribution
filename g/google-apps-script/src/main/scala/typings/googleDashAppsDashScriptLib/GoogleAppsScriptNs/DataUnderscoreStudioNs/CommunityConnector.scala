@@ -28,15 +28,8 @@ object CommunityConnector {
     newDebugError: js.Function0[DebugError],
     newUserError: js.Function0[UserError]
   ): CommunityConnector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AggregationType")(AggregationType)
-    __obj.updateDynamic("AuthType")(AuthType)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("getConfig")(getConfig)
-    __obj.updateDynamic("getFields")(getFields)
-    __obj.updateDynamic("newAuthTypeResponse")(newAuthTypeResponse)
-    __obj.updateDynamic("newDebugError")(newDebugError)
-    __obj.updateDynamic("newUserError")(newUserError)
+    val __obj = js.Dynamic.literal(AggregationType = AggregationType, AuthType = AuthType, FieldType = FieldType, getConfig = getConfig, getFields = getFields, newAuthTypeResponse = newAuthTypeResponse, newDebugError = newDebugError, newUserError = newUserError)
+  
     __obj.asInstanceOf[CommunityConnector]
   }
 }

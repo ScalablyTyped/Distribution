@@ -50,14 +50,8 @@ object DataPoint {
     stdDev: scala.Double,
     value: scala.Double
   ): DataPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stdDev")(stdDev)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(count = count, kind = kind, max = max, min = min, name = name, stdDev = stdDev, value = value)
+  
     __obj.asInstanceOf[DataPoint]
   }
 }

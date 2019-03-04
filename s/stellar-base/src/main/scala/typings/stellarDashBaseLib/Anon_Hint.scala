@@ -16,9 +16,8 @@ object Anon_Hint {
     hint: stellarDashBaseLib.stellarDashBaseMod.xdrNs.SignatureHint,
     signature: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature
   ): Anon_Hint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(hint = hint, signature = signature)
+  
     __obj.asInstanceOf[Anon_Hint]
   }
 }

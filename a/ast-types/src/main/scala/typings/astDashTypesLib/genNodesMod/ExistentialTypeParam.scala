@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object ExistentialTypeParam {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.ExistentialTypeParam): ExistentialTypeParam = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ExistentialTypeParam]
   }
 }

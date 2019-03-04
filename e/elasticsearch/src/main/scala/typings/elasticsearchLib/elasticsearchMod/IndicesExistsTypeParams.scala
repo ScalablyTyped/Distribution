@@ -25,8 +25,8 @@ object IndicesExistsTypeParams {
     method: java.lang.String = null,
     requestTimeout: scala.Int | scala.Double = null
   ): IndicesExistsTypeParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices)
     if (body != null) __obj.updateDynamic("body")(body)
     if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards)

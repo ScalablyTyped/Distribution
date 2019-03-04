@@ -72,11 +72,7 @@ object uniqueValuesUniqueValuesParams {
     valueExpression: java.lang.String = null,
     view: View = null
   ): uniqueValuesUniqueValuesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
     if (features != null) __obj.updateDynamic("features")(features)
     if (field != null) __obj.updateDynamic("field")(field)
     if (!js.isUndefined(returnAllCodedValues)) __obj.updateDynamic("returnAllCodedValues")(returnAllCodedValues)

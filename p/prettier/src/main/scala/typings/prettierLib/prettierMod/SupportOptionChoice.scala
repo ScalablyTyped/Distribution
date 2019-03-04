@@ -22,8 +22,7 @@ object SupportOptionChoice {
     redirect: SupportOptionValue = null,
     since: java.lang.String = null
   ): SupportOptionChoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
     if (description != null) __obj.updateDynamic("description")(description)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])

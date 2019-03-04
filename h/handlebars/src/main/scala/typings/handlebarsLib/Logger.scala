@@ -26,14 +26,8 @@ object Logger {
     log: js.Function2[scala.Double, java.lang.String, scala.Unit],
     methodMap: org.scalablytyped.runtime.NumberDictionary[java.lang.String]
   ): Logger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEBUG")(DEBUG)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("WARN")(WARN)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("methodMap")(methodMap)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, WARN = WARN, level = level, log = log, methodMap = methodMap)
+  
     __obj.asInstanceOf[Logger]
   }
 }

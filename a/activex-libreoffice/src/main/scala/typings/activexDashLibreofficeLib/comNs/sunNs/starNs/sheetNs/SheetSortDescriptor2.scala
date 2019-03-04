@@ -51,16 +51,8 @@ object SheetSortDescriptor2 {
     SortFields: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.TableSortField],
     UserListIndex: scala.Double
   ): SheetSortDescriptor2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BindFormatsToContent")(BindFormatsToContent)
-    __obj.updateDynamic("ContainsHeader")(ContainsHeader)
-    __obj.updateDynamic("CopyOutputData")(CopyOutputData)
-    __obj.updateDynamic("IsSortColumns")(IsSortColumns)
-    __obj.updateDynamic("IsUserListEnabled")(IsUserListEnabled)
-    __obj.updateDynamic("MaxSortFieldsCount")(MaxSortFieldsCount)
-    __obj.updateDynamic("OutputPosition")(OutputPosition)
-    __obj.updateDynamic("SortFields")(SortFields)
-    __obj.updateDynamic("UserListIndex")(UserListIndex)
+    val __obj = js.Dynamic.literal(BindFormatsToContent = BindFormatsToContent, ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, IsSortColumns = IsSortColumns, IsUserListEnabled = IsUserListEnabled, MaxSortFieldsCount = MaxSortFieldsCount, OutputPosition = OutputPosition, SortFields = SortFields, UserListIndex = UserListIndex)
+  
     __obj.asInstanceOf[SheetSortDescriptor2]
   }
 }

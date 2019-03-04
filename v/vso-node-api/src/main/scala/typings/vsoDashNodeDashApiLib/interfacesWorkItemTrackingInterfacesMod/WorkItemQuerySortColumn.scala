@@ -19,9 +19,8 @@ trait WorkItemQuerySortColumn extends js.Object {
 object WorkItemQuerySortColumn {
   @scala.inline
   def apply(descending: scala.Boolean, field: WorkItemFieldReference): WorkItemQuerySortColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descending")(descending)
-    __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(descending = descending, field = field)
+  
     __obj.asInstanceOf[WorkItemQuerySortColumn]
   }
 }

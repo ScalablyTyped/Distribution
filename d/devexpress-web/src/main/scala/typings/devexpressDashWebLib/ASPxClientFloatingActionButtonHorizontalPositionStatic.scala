@@ -20,11 +20,8 @@ object ASPxClientFloatingActionButtonHorizontalPositionStatic {
     LeftEdge: java.lang.String,
     Right: java.lang.String
   ): ASPxClientFloatingActionButtonHorizontalPositionStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Center")(Center)
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("LeftEdge")(LeftEdge)
-    __obj.updateDynamic("Right")(Right)
+    val __obj = js.Dynamic.literal(Center = Center, Left = Left, LeftEdge = LeftEdge, Right = Right)
+  
     __obj.asInstanceOf[ASPxClientFloatingActionButtonHorizontalPositionStatic]
   }
 }

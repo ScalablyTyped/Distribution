@@ -25,9 +25,8 @@ trait RefactorActionInfo extends js.Object {
 object RefactorActionInfo {
   @scala.inline
   def apply(description: java.lang.String, name: java.lang.String): RefactorActionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, name = name)
+  
     __obj.asInstanceOf[RefactorActionInfo]
   }
 }

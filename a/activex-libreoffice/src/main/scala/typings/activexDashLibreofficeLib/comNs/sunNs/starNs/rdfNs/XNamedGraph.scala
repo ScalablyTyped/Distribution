@@ -100,16 +100,8 @@ object XNamedGraph {
     ],
     removeStatements: js.Function3[XResource, XURI, XNode, scala.Unit]
   ): XNamedGraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LocalName")(LocalName)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Namespace")(Namespace)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("addStatement")(addStatement)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getStatements")(getStatements)
-    __obj.updateDynamic("removeStatements")(removeStatements)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Name = Name, Namespace = Namespace, StringValue = StringValue, addStatement = addStatement, clear = clear, getName = getName, getStatements = getStatements, removeStatements = removeStatements)
+  
     __obj.asInstanceOf[XNamedGraph]
   }
 }

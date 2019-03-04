@@ -38,9 +38,7 @@ object IShippingInformation {
     phone: java.lang.String = null,
     tracking_number: java.lang.String = null
   ): IShippingInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(address = address, name = name)
     if (carrier != null) __obj.updateDynamic("carrier")(carrier)
     if (phone != null) __obj.updateDynamic("phone")(phone)
     if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number)

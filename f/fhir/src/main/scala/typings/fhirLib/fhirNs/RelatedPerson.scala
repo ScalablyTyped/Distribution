@@ -99,8 +99,7 @@ object RelatedPerson {
     telecom: js.Array[ContactPoint] = null,
     text: Narrative = null
   ): RelatedPerson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
+    val __obj = js.Dynamic.literal(patient = patient)
     if (_active != null) __obj.updateDynamic("_active")(_active)
     if (_birthDate != null) __obj.updateDynamic("_birthDate")(_birthDate)
     if (_gender != null) __obj.updateDynamic("_gender")(_gender)

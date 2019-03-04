@@ -14,10 +14,8 @@ trait KeyMapping extends js.Object {
 object KeyMapping {
   @scala.inline
   def apply(entityTypeName: java.lang.String, realValue: js.Any, tempValue: js.Any): KeyMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityTypeName")(entityTypeName)
-    __obj.updateDynamic("realValue")(realValue)
-    __obj.updateDynamic("tempValue")(tempValue)
+    val __obj = js.Dynamic.literal(entityTypeName = entityTypeName, realValue = realValue, tempValue = tempValue)
+  
     __obj.asInstanceOf[KeyMapping]
   }
 }

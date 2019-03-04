@@ -14,9 +14,7 @@ trait AxiosProxyConfig extends js.Object {
 object AxiosProxyConfig {
   @scala.inline
   def apply(host: java.lang.String, port: scala.Double, auth: axiosLib.Anon_Password = null): AxiosProxyConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     __obj.asInstanceOf[AxiosProxyConfig]
   }

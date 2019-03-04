@@ -47,14 +47,8 @@ object Ticker {
     Time: scala.Double,
     Volume: scala.Double
   ): Ticker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Buy")(Buy)
-    __obj.updateDynamic("High")(High)
-    __obj.updateDynamic("Last")(Last)
-    __obj.updateDynamic("Low")(Low)
-    __obj.updateDynamic("Sell")(Sell)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("Volume")(Volume)
+    val __obj = js.Dynamic.literal(Buy = Buy, High = High, Last = Last, Low = Low, Sell = Sell, Time = Time, Volume = Volume)
+  
     __obj.asInstanceOf[Ticker]
   }
 }

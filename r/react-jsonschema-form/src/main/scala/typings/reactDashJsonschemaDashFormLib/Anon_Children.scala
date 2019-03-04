@@ -34,18 +34,8 @@ object Anon_Children {
     onReorderClick: js.Function2[scala.Double, scala.Double, js.Function1[/* event */ js.Any, scala.Unit]],
     readonly: scala.Boolean
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("hasMoveDown")(hasMoveDown)
-    __obj.updateDynamic("hasMoveUp")(hasMoveUp)
-    __obj.updateDynamic("hasRemove")(hasRemove)
-    __obj.updateDynamic("hasToolbar")(hasToolbar)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("onDropIndexClick")(onDropIndexClick)
-    __obj.updateDynamic("onReorderClick")(onReorderClick)
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(children = children, className = className, disabled = disabled, hasMoveDown = hasMoveDown, hasMoveUp = hasMoveUp, hasRemove = hasRemove, hasToolbar = hasToolbar, index = index, onDropIndexClick = onDropIndexClick, onReorderClick = onReorderClick, readonly = readonly)
+  
     __obj.asInstanceOf[Anon_Children]
   }
 }

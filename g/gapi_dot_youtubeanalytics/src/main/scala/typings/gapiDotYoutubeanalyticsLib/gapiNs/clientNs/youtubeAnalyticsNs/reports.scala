@@ -17,8 +17,8 @@ object reports {
   def apply(
     query: js.Function1[gapiDotYoutubeanalyticsLib.Anon_Dimensions, gapiLib.gapiNs.clientNs.HttpRequest[_]]
   ): reports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[reports]
   }
 }

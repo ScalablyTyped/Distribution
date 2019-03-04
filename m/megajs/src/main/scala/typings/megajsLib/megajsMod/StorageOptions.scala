@@ -22,9 +22,7 @@ object StorageOptions {
     autologin: js.UndefOr[scala.Boolean] = js.undefined,
     keepalive: js.UndefOr[scala.Boolean] = js.undefined
   ): StorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(email = email, password = password)
     if (!js.isUndefined(autoload)) __obj.updateDynamic("autoload")(autoload)
     if (!js.isUndefined(autologin)) __obj.updateDynamic("autologin")(autologin)
     if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)

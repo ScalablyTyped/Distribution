@@ -14,8 +14,7 @@ trait Anon_ApplyExtendTrue extends js.Object {
 object Anon_ApplyExtendTrue {
   @scala.inline
   def apply(apply: hapiLib.hapiLibNumbers.`true`, extend: js.UndefOr[scala.Boolean] = js.undefined): Anon_ApplyExtendTrue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
+    val __obj = js.Dynamic.literal(apply = apply)
     if (!js.isUndefined(extend)) __obj.updateDynamic("extend")(extend)
     __obj.asInstanceOf[Anon_ApplyExtendTrue]
   }

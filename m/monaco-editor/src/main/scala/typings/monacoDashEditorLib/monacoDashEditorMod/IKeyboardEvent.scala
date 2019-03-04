@@ -34,18 +34,8 @@ object IKeyboardEvent {
     stopPropagation: js.Function0[scala.Unit],
     target: stdLib.HTMLElement
   ): IKeyboardEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altKey")(altKey)
-    __obj.updateDynamic("browserEvent")(browserEvent)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("ctrlKey")(ctrlKey)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("keyCode")(keyCode)
-    __obj.updateDynamic("metaKey")(metaKey)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("shiftKey")(shiftKey)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = equals, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target)
+  
     __obj.asInstanceOf[IKeyboardEvent]
   }
 }

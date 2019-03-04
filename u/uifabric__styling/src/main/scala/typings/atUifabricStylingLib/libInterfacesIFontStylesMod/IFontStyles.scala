@@ -34,18 +34,8 @@ object IFontStyles {
     xSmall: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
     xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   ): IFontStyles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("large")(large)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("mediumPlus")(mediumPlus)
-    __obj.updateDynamic("mega")(mega)
-    __obj.updateDynamic("small")(small)
-    __obj.updateDynamic("smallPlus")(smallPlus)
-    __obj.updateDynamic("superLarge")(superLarge)
-    __obj.updateDynamic("tiny")(tiny)
-    __obj.updateDynamic("xLarge")(xLarge)
-    __obj.updateDynamic("xSmall")(xSmall)
-    __obj.updateDynamic("xxLarge")(xxLarge)
+    val __obj = js.Dynamic.literal(large = large, medium = medium, mediumPlus = mediumPlus, mega = mega, small = small, smallPlus = smallPlus, superLarge = superLarge, tiny = tiny, xLarge = xLarge, xSmall = xSmall, xxLarge = xxLarge)
+  
     __obj.asInstanceOf[IFontStyles]
   }
 }

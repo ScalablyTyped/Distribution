@@ -15,11 +15,8 @@ trait SignDefinition extends js.Object {
 object SignDefinition {
   @scala.inline
   def apply(datetime: stdLib.Date, text: java.lang.String, time: scala.Double, username: java.lang.String): SignDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(datetime = datetime, text = text, time = time, username = username)
+  
     __obj.asInstanceOf[SignDefinition]
   }
 }

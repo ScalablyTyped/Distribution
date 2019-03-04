@@ -27,15 +27,15 @@ class DSInvokeHistory protected ()
   /**
     * @hidden
     */
-  var `process_`: js.Any = js.native
+  var process_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `system_`: js.Any = js.native
+  var system_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `weight_`: js.Any = js.native
+  var weight_ : js.Any = js.native
   /**
     * Get the related {@link DistributedProcess} object.
     */

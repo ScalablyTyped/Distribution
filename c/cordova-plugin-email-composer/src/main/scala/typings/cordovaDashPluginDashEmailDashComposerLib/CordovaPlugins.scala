@@ -12,8 +12,8 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(email: CordovaPluginEmailComposer): CordovaPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(email = email)
+  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

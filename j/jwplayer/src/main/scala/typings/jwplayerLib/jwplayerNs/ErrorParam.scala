@@ -12,8 +12,8 @@ trait ErrorParam extends js.Object {
 object ErrorParam {
   @scala.inline
   def apply(message: java.lang.String): ErrorParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[ErrorParam]
   }
 }

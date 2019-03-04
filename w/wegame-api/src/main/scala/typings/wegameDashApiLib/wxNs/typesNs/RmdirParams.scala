@@ -22,8 +22,7 @@ object RmdirParams {
     recursive: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Function0[scala.Unit] = null
   ): RmdirParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirPath")(dirPath)
+    val __obj = js.Dynamic.literal(dirPath = dirPath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive)

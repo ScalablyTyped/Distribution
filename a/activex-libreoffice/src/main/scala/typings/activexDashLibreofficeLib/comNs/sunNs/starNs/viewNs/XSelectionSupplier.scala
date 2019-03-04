@@ -35,15 +35,8 @@ object XSelectionSupplier {
     removeSelectionChangeListener: js.Function1[XSelectionChangeListener, scala.Unit],
     select: js.Function1[js.Any, scala.Boolean]
   ): XSelectionSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Selection")(Selection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addSelectionChangeListener")(addSelectionChangeListener)
-    __obj.updateDynamic("getSelection")(getSelection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSelectionChangeListener")(removeSelectionChangeListener)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(Selection = Selection, acquire = acquire, addSelectionChangeListener = addSelectionChangeListener, getSelection = getSelection, queryInterface = queryInterface, release = release, removeSelectionChangeListener = removeSelectionChangeListener, select = select)
+  
     __obj.asInstanceOf[XSelectionSupplier]
   }
 }

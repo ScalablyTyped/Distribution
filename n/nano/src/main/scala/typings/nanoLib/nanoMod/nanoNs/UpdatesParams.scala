@@ -21,11 +21,8 @@ object UpdatesParams {
     since: java.lang.String,
     timeout: scala.Double
   ): UpdatesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("feed")(feed.asInstanceOf[js.Any])
-    __obj.updateDynamic("heartbeat")(heartbeat)
-    __obj.updateDynamic("since")(since)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(feed = feed.asInstanceOf[js.Any], heartbeat = heartbeat, since = since, timeout = timeout)
+  
     __obj.asInstanceOf[UpdatesParams]
   }
 }

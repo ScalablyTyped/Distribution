@@ -22,12 +22,8 @@ object BaseContollerOptions {
     model: js.Any,
     resource: Resource
   ): BaseContollerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("include")(include)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(app = app, endpoint = endpoint, include = include, model = model, resource = resource)
+  
     __obj.asInstanceOf[BaseContollerOptions]
   }
 }

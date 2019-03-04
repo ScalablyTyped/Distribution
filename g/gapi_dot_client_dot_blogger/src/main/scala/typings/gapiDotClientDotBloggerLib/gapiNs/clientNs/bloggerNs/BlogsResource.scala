@@ -30,10 +30,8 @@ object BlogsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BlogList]
     ]
   ): BlogsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getByUrl")(getByUrl)
-    __obj.updateDynamic("listByUser")(listByUser)
+    val __obj = js.Dynamic.literal(get = get, getByUrl = getByUrl, listByUser = listByUser)
+  
     __obj.asInstanceOf[BlogsResource]
   }
 }

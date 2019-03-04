@@ -28,14 +28,7 @@ object WebfontFamily {
     version: java.lang.String,
     category: java.lang.String = null
   ): WebfontFamily = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("subsets")(subsets)
-    __obj.updateDynamic("variants")(variants)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(family = family, files = files, kind = kind, lastModified = lastModified, subsets = subsets, variants = variants, version = version)
     if (category != null) __obj.updateDynamic("category")(category)
     __obj.asInstanceOf[WebfontFamily]
   }

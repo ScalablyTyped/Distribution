@@ -14,10 +14,8 @@ trait Camera extends js.Object {
 object Camera {
   @scala.inline
   def apply(center: stdLib.Partial[Point], eye: stdLib.Partial[Point], up: stdLib.Partial[Point]): Camera = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("eye")(eye)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(center = center, eye = eye, up = up)
+  
     __obj.asInstanceOf[Camera]
   }
 }

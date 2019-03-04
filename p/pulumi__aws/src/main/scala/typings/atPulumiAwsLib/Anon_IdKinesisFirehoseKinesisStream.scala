@@ -24,10 +24,7 @@ object Anon_IdKinesisFirehoseKinesisStream {
     kinesisStream: Anon_ResourceArn = null,
     lambda: Anon_ResourceArn = null
   ): Anon_IdKinesisFirehoseKinesisStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(id = id, name = name, schema = schema)
     if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose)
     if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream)
     if (lambda != null) __obj.updateDynamic("lambda")(lambda)

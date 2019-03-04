@@ -20,8 +20,7 @@ object BlobEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     timecode: scala.Int | scala.Double = null
   ): BlobEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

@@ -102,11 +102,7 @@ object Event {
       js.Promise[scala.Unit]
     ] = null
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("hasListener")(hasListener)
-    __obj.updateDynamic("hasListeners")(hasListeners)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(addListener = addListener, hasListener = hasListener, hasListeners = hasListeners, removeListener = removeListener)
     if (addRules != null) __obj.updateDynamic("addRules")(addRules)
     if (getRules != null) __obj.updateDynamic("getRules")(getRules)
     if (removeRules != null) __obj.updateDynamic("removeRules")(removeRules)

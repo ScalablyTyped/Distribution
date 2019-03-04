@@ -18,10 +18,8 @@ object ProjectsResource {
     locations: LocationsResource,
     transferConfigs: TransferConfigsResource
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSources")(dataSources)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("transferConfigs")(transferConfigs)
+    val __obj = js.Dynamic.literal(dataSources = dataSources, locations = locations, transferConfigs = transferConfigs)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

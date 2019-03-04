@@ -47,14 +47,8 @@ object SecurityRole {
     name: java.lang.String,
     scope: java.lang.String
   ): SecurityRole = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPermissions")(allowPermissions)
-    __obj.updateDynamic("denyPermissions")(denyPermissions)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(allowPermissions = allowPermissions, denyPermissions = denyPermissions, description = description, displayName = displayName, identifier = identifier, name = name, scope = scope)
+  
     __obj.asInstanceOf[SecurityRole]
   }
 }

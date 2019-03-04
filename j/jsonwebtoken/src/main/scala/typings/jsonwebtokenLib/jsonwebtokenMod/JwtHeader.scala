@@ -24,8 +24,7 @@ object JwtHeader {
     x5t: java.lang.String = null,
     x5u: java.lang.String = null
   ): JwtHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alg")(alg)
+    val __obj = js.Dynamic.literal(alg = alg)
     if (jku != null) __obj.updateDynamic("jku")(jku)
     if (kid != null) __obj.updateDynamic("kid")(kid)
     if (typ != null) __obj.updateDynamic("typ")(typ)

@@ -158,8 +158,7 @@ object BigCalendarProps {
     view: View = null,
     views: Views = null
   ): BigCalendarProps[TEvent, TResource] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localizer")(localizer)
+    val __obj = js.Dynamic.literal(localizer = localizer)
     if (allDayAccessor != null) __obj.updateDynamic("allDayAccessor")(allDayAccessor)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

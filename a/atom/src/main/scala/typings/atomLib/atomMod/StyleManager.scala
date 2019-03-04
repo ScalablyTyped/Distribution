@@ -33,13 +33,8 @@ object StyleManager {
     onDidRemoveStyleElement: js.Function1[js.Function1[/* styleElement */ stdLib.HTMLStyleElement, scala.Unit], Disposable],
     onDidUpdateStyleElement: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable]
   ): StyleManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStyleElements")(getStyleElements)
-    __obj.updateDynamic("getUserStyleSheetPath")(getUserStyleSheetPath)
-    __obj.updateDynamic("observeStyleElements")(observeStyleElements)
-    __obj.updateDynamic("onDidAddStyleElement")(onDidAddStyleElement)
-    __obj.updateDynamic("onDidRemoveStyleElement")(onDidRemoveStyleElement)
-    __obj.updateDynamic("onDidUpdateStyleElement")(onDidUpdateStyleElement)
+    val __obj = js.Dynamic.literal(getStyleElements = getStyleElements, getUserStyleSheetPath = getUserStyleSheetPath, observeStyleElements = observeStyleElements, onDidAddStyleElement = onDidAddStyleElement, onDidRemoveStyleElement = onDidRemoveStyleElement, onDidUpdateStyleElement = onDidUpdateStyleElement)
+  
     __obj.asInstanceOf[StyleManager]
   }
 }

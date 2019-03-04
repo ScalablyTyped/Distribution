@@ -18,12 +18,8 @@ object QueryResult {
     rowCount: scala.Double,
     rows: js.Array[_]
   ): QueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("oid")(oid)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(command = command, fields = fields, oid = oid, rowCount = rowCount, rows = rows)
+  
     __obj.asInstanceOf[QueryResult]
   }
 }

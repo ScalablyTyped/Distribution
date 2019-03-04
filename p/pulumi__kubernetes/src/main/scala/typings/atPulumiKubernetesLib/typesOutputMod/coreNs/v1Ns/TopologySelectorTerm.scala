@@ -20,8 +20,8 @@ trait TopologySelectorTerm extends js.Object {
 object TopologySelectorTerm {
   @scala.inline
   def apply(matchLabelExpressions: js.Array[TopologySelectorLabelRequirement]): TopologySelectorTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchLabelExpressions")(matchLabelExpressions)
+    val __obj = js.Dynamic.literal(matchLabelExpressions = matchLabelExpressions)
+  
     __obj.asInstanceOf[TopologySelectorTerm]
   }
 }

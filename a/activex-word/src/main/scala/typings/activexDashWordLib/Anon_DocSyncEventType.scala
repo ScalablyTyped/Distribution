@@ -16,9 +16,8 @@ object Anon_DocSyncEventType {
     Doc: activexDashWordLib.WordNs.Document,
     SyncEventType: activexDashOfficeLib.OfficeNs.MsoSyncEventType
   ): Anon_DocSyncEventType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("SyncEventType")(SyncEventType)
+    val __obj = js.Dynamic.literal(Doc = Doc, SyncEventType = SyncEventType)
+  
     __obj.asInstanceOf[Anon_DocSyncEventType]
   }
 }

@@ -35,11 +35,8 @@ object Register {
     PreProcessor: js.Function1[js.Any, scala.Unit],
     StartupHook: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Register = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LoadHook")(LoadHook)
-    __obj.updateDynamic("MessageHook")(MessageHook)
-    __obj.updateDynamic("PreProcessor")(PreProcessor)
-    __obj.updateDynamic("StartupHook")(StartupHook)
+    val __obj = js.Dynamic.literal(LoadHook = LoadHook, MessageHook = MessageHook, PreProcessor = PreProcessor, StartupHook = StartupHook)
+  
     __obj.asInstanceOf[Register]
   }
 }

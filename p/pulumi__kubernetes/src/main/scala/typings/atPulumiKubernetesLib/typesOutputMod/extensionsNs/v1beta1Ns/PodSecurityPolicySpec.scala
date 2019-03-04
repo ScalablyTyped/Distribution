@@ -157,29 +157,8 @@ object PodSecurityPolicySpec {
     supplementalGroups: SupplementalGroupsStrategyOptions,
     volumes: js.Array[java.lang.String]
   ): PodSecurityPolicySpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPrivilegeEscalation")(allowPrivilegeEscalation)
-    __obj.updateDynamic("allowedCapabilities")(allowedCapabilities)
-    __obj.updateDynamic("allowedFlexVolumes")(allowedFlexVolumes)
-    __obj.updateDynamic("allowedHostPaths")(allowedHostPaths)
-    __obj.updateDynamic("allowedProcMountTypes")(allowedProcMountTypes)
-    __obj.updateDynamic("allowedUnsafeSysctls")(allowedUnsafeSysctls)
-    __obj.updateDynamic("defaultAddCapabilities")(defaultAddCapabilities)
-    __obj.updateDynamic("defaultAllowPrivilegeEscalation")(defaultAllowPrivilegeEscalation)
-    __obj.updateDynamic("forbiddenSysctls")(forbiddenSysctls)
-    __obj.updateDynamic("fsGroup")(fsGroup)
-    __obj.updateDynamic("hostIPC")(hostIPC)
-    __obj.updateDynamic("hostNetwork")(hostNetwork)
-    __obj.updateDynamic("hostPID")(hostPID)
-    __obj.updateDynamic("hostPorts")(hostPorts)
-    __obj.updateDynamic("privileged")(privileged)
-    __obj.updateDynamic("readOnlyRootFilesystem")(readOnlyRootFilesystem)
-    __obj.updateDynamic("requiredDropCapabilities")(requiredDropCapabilities)
-    __obj.updateDynamic("runAsGroup")(runAsGroup)
-    __obj.updateDynamic("runAsUser")(runAsUser)
-    __obj.updateDynamic("seLinux")(seLinux)
-    __obj.updateDynamic("supplementalGroups")(supplementalGroups)
-    __obj.updateDynamic("volumes")(volumes)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
+  
     __obj.asInstanceOf[PodSecurityPolicySpec]
   }
 }

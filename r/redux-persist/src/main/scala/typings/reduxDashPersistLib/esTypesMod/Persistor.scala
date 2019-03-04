@@ -26,14 +26,8 @@ object Persistor {
     purge: js.Function0[js.Promise[_]],
     subscribe: js.Function1[PersistorSubscribeCallback, js.Function0[_]]
   ): Persistor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispatch")(dispatch)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("persist")(persist)
-    __obj.updateDynamic("purge")(purge)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(dispatch = dispatch, flush = flush, getState = getState, pause = pause, persist = persist, purge = purge, subscribe = subscribe)
+  
     __obj.asInstanceOf[Persistor]
   }
 }

@@ -76,9 +76,7 @@ object OperationOutcomeIssue {
     location: js.Array[java.lang.String] = null,
     modifierExtension: js.Array[Extension] = null
   ): OperationOutcomeIssue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(code = code, severity = severity)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_diagnostics != null) __obj.updateDynamic("_diagnostics")(_diagnostics)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)

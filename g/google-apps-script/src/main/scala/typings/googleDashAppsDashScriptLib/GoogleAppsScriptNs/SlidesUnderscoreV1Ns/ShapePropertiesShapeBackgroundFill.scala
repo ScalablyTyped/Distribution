@@ -21,9 +21,8 @@ trait ShapePropertiesShapeBackgroundFill extends js.Object {
 object ShapePropertiesShapeBackgroundFill {
   @scala.inline
   def apply(kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill, property_state: PropertyState): ShapePropertiesShapeBackgroundFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("property_state")(property_state)
+    val __obj = js.Dynamic.literal(kind = kind, property_state = property_state)
+  
     __obj.asInstanceOf[ShapePropertiesShapeBackgroundFill]
   }
 }

@@ -22,12 +22,8 @@ object Anon_AnimationEnd {
     duration: scala.Double,
     markerId: scala.Double
   ): Anon_AnimationEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationEnd")(animationEnd)
-    __obj.updateDynamic("autoRotate")(autoRotate)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("markerId")(markerId)
+    val __obj = js.Dynamic.literal(animationEnd = animationEnd, autoRotate = autoRotate, destination = destination, duration = duration, markerId = markerId)
+  
     __obj.asInstanceOf[Anon_AnimationEnd]
   }
 }

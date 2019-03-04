@@ -12,8 +12,8 @@ trait Anon_Readonly[T] extends js.Object {
 object Anon_Readonly {
   @scala.inline
   def apply[T](readonly: js.Any): Anon_Readonly[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readonly")(readonly)
+    val __obj = js.Dynamic.literal(readonly = readonly)
+  
     __obj.asInstanceOf[Anon_Readonly[T]]
   }
 }

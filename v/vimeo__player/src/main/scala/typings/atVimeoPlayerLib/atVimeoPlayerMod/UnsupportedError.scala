@@ -17,10 +17,8 @@ object UnsupportedError {
     method: java.lang.String,
     name: atVimeoPlayerLib.atVimeoPlayerLibStrings.UnsupportedError
   ): UnsupportedError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(message = message, method = method, name = name)
+  
     __obj.asInstanceOf[UnsupportedError]
   }
 }

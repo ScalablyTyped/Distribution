@@ -51,15 +51,8 @@ object DirectionsViewModelLastRoute {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     routeResults: RouteResult
   ): DirectionsViewModelLastRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("barriers")(barriers)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("polygonBarriers")(polygonBarriers)
-    __obj.updateDynamic("polylineBarriers")(polylineBarriers)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("routeResults")(routeResults)
+    val __obj = js.Dynamic.literal(barriers = barriers, constructor = constructor, hasOwnProperty = hasOwnProperty, messages = messages, polygonBarriers = polygonBarriers, polylineBarriers = polylineBarriers, propertyIsEnumerable = propertyIsEnumerable, routeResults = routeResults)
+  
     __obj.asInstanceOf[DirectionsViewModelLastRoute]
   }
 }

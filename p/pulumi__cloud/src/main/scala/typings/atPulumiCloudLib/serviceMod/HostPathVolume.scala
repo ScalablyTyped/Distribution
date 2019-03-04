@@ -12,9 +12,8 @@ trait HostPathVolume extends Volume {
 object HostPathVolume {
   @scala.inline
   def apply(kind: VolumeKind, path: java.lang.String): HostPathVolume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(kind = kind, path = path)
+  
     __obj.asInstanceOf[HostPathVolume]
   }
 }

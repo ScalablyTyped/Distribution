@@ -12,8 +12,8 @@ trait Object extends js.Object {
 object Object {
   @scala.inline
   def apply(getOwnPropertyDescriptors: js.Function1[js.Any, stdLib.PropertyDescriptorMap]): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getOwnPropertyDescriptors")(getOwnPropertyDescriptors)
+    val __obj = js.Dynamic.literal(getOwnPropertyDescriptors = getOwnPropertyDescriptors)
+  
     __obj.asInstanceOf[Object]
   }
 }

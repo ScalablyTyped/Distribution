@@ -32,11 +32,8 @@ object Settings {
     hitTolerance: scala.Double,
     insertItems: scala.Boolean
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyMatrix")(applyMatrix)
-    __obj.updateDynamic("handleSize")(handleSize)
-    __obj.updateDynamic("hitTolerance")(hitTolerance)
-    __obj.updateDynamic("insertItems")(insertItems)
+    val __obj = js.Dynamic.literal(applyMatrix = applyMatrix, handleSize = handleSize, hitTolerance = hitTolerance, insertItems = insertItems)
+  
     __obj.asInstanceOf[Settings]
   }
 }

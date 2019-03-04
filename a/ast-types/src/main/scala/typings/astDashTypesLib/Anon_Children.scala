@@ -28,9 +28,7 @@ object Anon_Children {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closingElement")(closingElement)
-    __obj.updateDynamic("openingElement")(openingElement)
+    val __obj = js.Dynamic.literal(closingElement = closingElement, openingElement = openingElement)
     if (children != null) __obj.updateDynamic("children")(children)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

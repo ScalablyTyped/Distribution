@@ -12,8 +12,8 @@ trait Anon_WeekComponents extends js.Object {
 object Anon_WeekComponents {
   @scala.inline
   def apply(weekComponents: js.Array[reactLib.reactMod.ReactNs.ReactNode]): Anon_WeekComponents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weekComponents")(weekComponents)
+    val __obj = js.Dynamic.literal(weekComponents = weekComponents)
+  
     __obj.asInstanceOf[Anon_WeekComponents]
   }
 }

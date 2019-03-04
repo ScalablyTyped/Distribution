@@ -16,9 +16,8 @@ object openssh_AuthAgentChannelRequest {
     recipient: scala.Double,
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`auth-agent-req@opensshDOTcom`
   ): openssh_AuthAgentChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request)
+  
     __obj.asInstanceOf[openssh_AuthAgentChannelRequest]
   }
 }

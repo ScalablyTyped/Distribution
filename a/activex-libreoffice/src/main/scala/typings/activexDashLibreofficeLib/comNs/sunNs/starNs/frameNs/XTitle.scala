@@ -35,13 +35,8 @@ object XTitle {
     release: js.Function0[scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(Title = Title, acquire = acquire, getTitle = getTitle, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
     __obj.asInstanceOf[XTitle]
   }
 }

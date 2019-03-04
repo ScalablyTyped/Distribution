@@ -41,11 +41,8 @@ object RendererType2 {
     id: java.lang.String,
     styles: js.Array[java.lang.String | js.Array[_]]
   ): RendererType2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("encapsulation")(encapsulation)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(data = data, encapsulation = encapsulation, id = id, styles = styles)
+  
     __obj.asInstanceOf[RendererType2]
   }
 }

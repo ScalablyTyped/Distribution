@@ -39,9 +39,8 @@ object IRelation {
     remoteKey: java.lang.String = null,
     serialize: js.Array[java.lang.String] = null
   ): IRelation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("relatedModel")(relatedModel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, relatedModel = relatedModel.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (collectionType != null) __obj.updateDynamic("collectionType")(collectionType.asInstanceOf[js.Any])
     if (!js.isUndefined(isTransient)) __obj.updateDynamic("isTransient")(isTransient)
     if (map != null) __obj.updateDynamic("map")(map)

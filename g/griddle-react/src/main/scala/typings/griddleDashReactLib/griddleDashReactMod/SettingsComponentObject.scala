@@ -13,8 +13,7 @@ trait SettingsComponentObject extends js.Object {
 object SettingsComponentObject {
   @scala.inline
   def apply(order: scala.Double, component: griddleDashReactLib.GriddleComponent[_] = null): SettingsComponentObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(order = order)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsComponentObject]
   }

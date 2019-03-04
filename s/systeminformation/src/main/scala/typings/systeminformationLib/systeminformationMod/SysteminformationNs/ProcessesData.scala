@@ -22,12 +22,8 @@ object ProcessesData {
     running: scala.Double,
     sleeping: scala.Double
   ): ProcessesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("blocked")(blocked)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("running")(running)
-    __obj.updateDynamic("sleeping")(sleeping)
+    val __obj = js.Dynamic.literal(all = all, blocked = blocked, list = list, running = running, sleeping = sleeping)
+  
     __obj.asInstanceOf[ProcessesData]
   }
 }

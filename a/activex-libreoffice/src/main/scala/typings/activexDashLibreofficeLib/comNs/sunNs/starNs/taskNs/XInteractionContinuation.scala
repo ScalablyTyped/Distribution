@@ -27,11 +27,8 @@ object XInteractionContinuation {
     release: js.Function0[scala.Unit],
     select: js.Function0[scala.Unit]
   ): XInteractionContinuation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, select = select)
+  
     __obj.asInstanceOf[XInteractionContinuation]
   }
 }

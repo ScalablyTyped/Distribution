@@ -14,9 +14,8 @@ trait Anon_Events extends js.Object {
 object Anon_Events {
   @scala.inline
   def apply(events: Anon_Event, isActive: scala.Boolean): Anon_Events = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("isActive")(isActive)
+    val __obj = js.Dynamic.literal(events = events, isActive = isActive)
+  
     __obj.asInstanceOf[Anon_Events]
   }
 }

@@ -19,9 +19,8 @@ trait GitForkSyncRequestParameters extends js.Object {
 object GitForkSyncRequestParameters {
   @scala.inline
   def apply(source: GlobalGitRepositoryKey, sourceToTargetRefs: js.Array[SourceToTargetRef]): GitForkSyncRequestParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceToTargetRefs")(sourceToTargetRefs)
+    val __obj = js.Dynamic.literal(source = source, sourceToTargetRefs = sourceToTargetRefs)
+  
     __obj.asInstanceOf[GitForkSyncRequestParameters]
   }
 }

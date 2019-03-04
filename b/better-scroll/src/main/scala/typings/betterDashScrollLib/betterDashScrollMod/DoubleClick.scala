@@ -12,8 +12,8 @@ trait DoubleClick extends js.Object {
 object DoubleClick {
   @scala.inline
   def apply(delay: scala.Double): DoubleClick = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
+    val __obj = js.Dynamic.literal(delay = delay)
+  
     __obj.asInstanceOf[DoubleClick]
   }
 }

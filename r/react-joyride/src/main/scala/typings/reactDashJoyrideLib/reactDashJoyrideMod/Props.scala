@@ -67,8 +67,7 @@ object Props {
     styles: StepStyles = null,
     tooltipComponent: reactLib.reactMod.ReactNs.ReactNode = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(steps = steps)
     if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)

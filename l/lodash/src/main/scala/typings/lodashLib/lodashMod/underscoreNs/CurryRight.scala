@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CurryRight extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: `__` = js.native
+  var placeholder_Original: __ = js.native
   /**
     * This method is like _.curry except that arguments are applied to func in the manner of _.partialRight
     * instead of _.partial.

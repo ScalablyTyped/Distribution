@@ -34,13 +34,8 @@ object XActiveDataStreamer {
     release: js.Function0[scala.Unit],
     setStream: js.Function1[XStream, scala.Unit]
   ): XActiveDataStreamer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Stream")(Stream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStream")(getStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStream")(setStream)
+    val __obj = js.Dynamic.literal(Stream = Stream, acquire = acquire, getStream = getStream, queryInterface = queryInterface, release = release, setStream = setStream)
+  
     __obj.asInstanceOf[XActiveDataStreamer]
   }
 }

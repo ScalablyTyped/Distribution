@@ -13,8 +13,8 @@ trait MasterProperties extends js.Object {
 object MasterProperties {
   @scala.inline
   def apply(display_name: java.lang.String): MasterProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display_name")(display_name)
+    val __obj = js.Dynamic.literal(display_name = display_name)
+  
     __obj.asInstanceOf[MasterProperties]
   }
 }

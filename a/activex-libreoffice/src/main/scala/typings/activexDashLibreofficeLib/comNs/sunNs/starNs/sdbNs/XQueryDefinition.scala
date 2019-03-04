@@ -57,27 +57,8 @@ object XQueryDefinition {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XQueryDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContentEventListener")(addContentEventListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getIdentifier")(getIdentifier)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContentEventListener")(removeContentEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ContentType = ContentType, Identifier = Identifier, PropertySetInfo = PropertySetInfo, acquire = acquire, addContentEventListener = addContentEventListener, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getContentType = getContentType, getIdentifier = getIdentifier, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeContentEventListener = removeContentEventListener, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XQueryDefinition]
   }
 }

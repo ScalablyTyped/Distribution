@@ -16,9 +16,8 @@ object StaticOptions {
     dir: java.lang.String | js.Array[java.lang.String],
     route: java.lang.String | js.Array[java.lang.String]
   ): StaticOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[StaticOptions]
   }
 }

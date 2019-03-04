@@ -12,8 +12,8 @@ trait JQueryFileUploadFilesObject extends js.Object {
 object JQueryFileUploadFilesObject {
   @scala.inline
   def apply(files: js.Array[stdLib.File]): JQueryFileUploadFilesObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(files = files)
+  
     __obj.asInstanceOf[JQueryFileUploadFilesObject]
   }
 }

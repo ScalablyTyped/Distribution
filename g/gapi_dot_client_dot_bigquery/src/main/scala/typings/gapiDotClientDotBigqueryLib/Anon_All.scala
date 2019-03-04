@@ -54,8 +54,7 @@ object Anon_All {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_All = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(projectId = projectId)
     if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

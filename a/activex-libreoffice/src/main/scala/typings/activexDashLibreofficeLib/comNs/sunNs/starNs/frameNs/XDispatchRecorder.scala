@@ -86,16 +86,8 @@ object XDispatchRecorder {
     release: js.Function0[scala.Unit],
     startRecording: js.Function1[XFrame, scala.Unit]
   ): XDispatchRecorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RecordedMacro")(RecordedMacro)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("endRecording")(endRecording)
-    __obj.updateDynamic("getRecordedMacro")(getRecordedMacro)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("recordDispatch")(recordDispatch)
-    __obj.updateDynamic("recordDispatchAsComment")(recordDispatchAsComment)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startRecording")(startRecording)
+    val __obj = js.Dynamic.literal(RecordedMacro = RecordedMacro, acquire = acquire, endRecording = endRecording, getRecordedMacro = getRecordedMacro, queryInterface = queryInterface, recordDispatch = recordDispatch, recordDispatchAsComment = recordDispatchAsComment, release = release, startRecording = startRecording)
+  
     __obj.asInstanceOf[XDispatchRecorder]
   }
 }

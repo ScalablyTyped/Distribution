@@ -24,11 +24,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobs")(jobs)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("templates")(templates)
-    __obj.updateDynamic("workerMessages")(workerMessages)
+    val __obj = js.Dynamic.literal(jobs = jobs, locations = locations, templates = templates, workerMessages = workerMessages)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

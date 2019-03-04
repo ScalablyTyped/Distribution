@@ -81,10 +81,7 @@ object Anon_AltContentVersion {
     userIp: java.lang.String = null,
     volumeAnnotationsVersion: java.lang.String = null
   ): Anon_AltContentVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentVersion")(contentVersion)
-    __obj.updateDynamic("layerId")(layerId)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(contentVersion = contentVersion, layerId = layerId, volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset)
     if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)

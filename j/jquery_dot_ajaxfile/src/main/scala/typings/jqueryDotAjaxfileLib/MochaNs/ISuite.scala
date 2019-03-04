@@ -15,10 +15,8 @@ trait ISuite extends js.Object {
 object ISuite {
   @scala.inline
   def apply(fullTitle: js.Function0[java.lang.String], parent: ISuite, title: java.lang.String): ISuite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullTitle")(fullTitle)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(fullTitle = fullTitle, parent = parent, title = title)
+  
     __obj.asInstanceOf[ISuite]
   }
 }

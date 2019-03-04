@@ -13,9 +13,8 @@ trait TestResultHistoryDetailsForGroup extends js.Object {
 object TestResultHistoryDetailsForGroup {
   @scala.inline
   def apply(groupByValue: js.Any, latestResult: TestCaseResult): TestResultHistoryDetailsForGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupByValue")(groupByValue)
-    __obj.updateDynamic("latestResult")(latestResult)
+    val __obj = js.Dynamic.literal(groupByValue = groupByValue, latestResult = latestResult)
+  
     __obj.asInstanceOf[TestResultHistoryDetailsForGroup]
   }
 }

@@ -28,15 +28,8 @@ object MasteryDto {
     ranks: scala.Double,
     sanitizedDescription: js.Array[java.lang.String]
   ): MasteryDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("masteryTree")(masteryTree)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prereq")(prereq)
-    __obj.updateDynamic("ranks")(ranks)
-    __obj.updateDynamic("sanitizedDescription")(sanitizedDescription)
+    val __obj = js.Dynamic.literal(description = description, id = id, image = image, masteryTree = masteryTree, name = name, prereq = prereq, ranks = ranks, sanitizedDescription = sanitizedDescription)
+  
     __obj.asInstanceOf[MasteryDto]
   }
 }

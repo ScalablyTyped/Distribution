@@ -19,10 +19,7 @@ object SurfaceMouseleaveEvent {
     element: kendoDashUiLib.kendoNs.drawingNs.Element = null,
     originalEvent: js.Any = null
   ): SurfaceMouseleaveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (element != null) __obj.updateDynamic("element")(element)
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[SurfaceMouseleaveEvent]

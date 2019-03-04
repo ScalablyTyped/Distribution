@@ -24,13 +24,8 @@ object IIdentifyResult {
     height: scala.Double,
     width: scala.Double
   ): IIdentifyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("exif")(exif)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(density = density, depth = depth, exif = exif, format = format, height = height, width = width)
+  
     __obj.asInstanceOf[IIdentifyResult]
   }
 }

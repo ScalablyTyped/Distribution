@@ -42,12 +42,8 @@ object ISearchAssociationResult {
     qSearchTermsMatched: js.Array[ISearchMatchCombinations],
     qTotalSearchResults: scala.Double
   ): ISearchAssociationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFieldDictionaries")(qFieldDictionaries)
-    __obj.updateDynamic("qFieldNames")(qFieldNames)
-    __obj.updateDynamic("qSearchTerms")(qSearchTerms)
-    __obj.updateDynamic("qSearchTermsMatched")(qSearchTermsMatched)
-    __obj.updateDynamic("qTotalSearchResults")(qTotalSearchResults)
+    val __obj = js.Dynamic.literal(qFieldDictionaries = qFieldDictionaries, qFieldNames = qFieldNames, qSearchTerms = qSearchTerms, qSearchTermsMatched = qSearchTermsMatched, qTotalSearchResults = qTotalSearchResults)
+  
     __obj.asInstanceOf[ISearchAssociationResult]
   }
 }

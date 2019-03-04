@@ -12,8 +12,8 @@ trait Anon_String extends js.Object {
 object Anon_String {
   @scala.inline
   def apply(`type`: waterlineLib.waterlineLibStrings.string): Anon_String = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_String]
   }
 }

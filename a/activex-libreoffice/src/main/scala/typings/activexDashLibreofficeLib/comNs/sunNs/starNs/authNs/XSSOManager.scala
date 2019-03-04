@@ -48,14 +48,8 @@ object XSSOManager {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSSOManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mechanism")(Mechanism)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createAcceptorContext")(createAcceptorContext)
-    __obj.updateDynamic("createInitiatorContext")(createInitiatorContext)
-    __obj.updateDynamic("getMechanism")(getMechanism)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, acquire = acquire, createAcceptorContext = createAcceptorContext, createInitiatorContext = createInitiatorContext, getMechanism = getMechanism, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSSOManager]
   }
 }

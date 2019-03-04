@@ -72,13 +72,8 @@ object PeopleResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Person]
     ]
   ): PeopleResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connections")(connections)
-    __obj.updateDynamic("createContact")(createContact)
-    __obj.updateDynamic("deleteContact")(deleteContact)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getBatchGet")(getBatchGet)
-    __obj.updateDynamic("updateContact")(updateContact)
+    val __obj = js.Dynamic.literal(connections = connections, createContact = createContact, deleteContact = deleteContact, get = get, getBatchGet = getBatchGet, updateContact = updateContact)
+  
     __obj.asInstanceOf[PeopleResource]
   }
 }

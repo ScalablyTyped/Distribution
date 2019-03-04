@@ -18,10 +18,8 @@ object BabelFileMetadata {
     modules: BabelFileModulesMetadata,
     usedHelpers: js.Array[java.lang.String]
   ): BabelFileMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("marked")(marked)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("usedHelpers")(usedHelpers)
+    val __obj = js.Dynamic.literal(marked = marked, modules = modules, usedHelpers = usedHelpers)
+  
     __obj.asInstanceOf[BabelFileMetadata]
   }
 }

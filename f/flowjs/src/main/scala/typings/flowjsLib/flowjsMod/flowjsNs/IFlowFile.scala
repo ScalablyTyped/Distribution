@@ -58,30 +58,8 @@ object IFlowFile {
     timeRemaining: js.Function0[scala.Double],
     uniqueIdentifier: java.lang.String
   ): IFlowFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("averageSpeed")(averageSpeed)
-    __obj.updateDynamic("bootstrap")(bootstrap)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("chunks")(chunks)
-    __obj.updateDynamic("currentSpeed")(currentSpeed)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("flowObj")(flowObj)
-    __obj.updateDynamic("getExtension")(getExtension)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isComplete")(isComplete)
-    __obj.updateDynamic("isUploading")(isUploading)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("relativePath")(relativePath)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sizeUploaded")(sizeUploaded)
-    __obj.updateDynamic("timeRemaining")(timeRemaining)
-    __obj.updateDynamic("uniqueIdentifier")(uniqueIdentifier)
+    val __obj = js.Dynamic.literal(averageSpeed = averageSpeed, bootstrap = bootstrap, cancel = cancel, chunks = chunks, currentSpeed = currentSpeed, error = error, file = file, flowObj = flowObj, getExtension = getExtension, getType = getType, isComplete = isComplete, isUploading = isUploading, name = name, pause = pause, paused = paused, progress = progress, relativePath = relativePath, resume = resume, retry = retry, size = size, sizeUploaded = sizeUploaded, timeRemaining = timeRemaining, uniqueIdentifier = uniqueIdentifier)
+  
     __obj.asInstanceOf[IFlowFile]
   }
 }

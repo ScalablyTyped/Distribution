@@ -14,10 +14,8 @@ trait CSelector[TNode] extends js.Object {
 object CSelector {
   @scala.inline
   def apply[TNode](dataID: DataID, node: TNode, variables: Variables): CSelector[TNode] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataID")(dataID)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(dataID = dataID, node = node.asInstanceOf[js.Any], variables = variables)
+  
     __obj.asInstanceOf[CSelector[TNode]]
   }
 }

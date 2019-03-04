@@ -16,9 +16,8 @@ object Anon_ExpressionSelectorString {
     expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     selector: java.lang.String
   ): Anon_ExpressionSelectorString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(expression = expression, selector = selector)
+  
     __obj.asInstanceOf[Anon_ExpressionSelectorString]
   }
 }

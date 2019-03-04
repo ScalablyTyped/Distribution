@@ -40,23 +40,8 @@ object XObjectOutputStream {
     writeShort: js.Function1[scala.Double, scala.Unit],
     writeUTF: js.Function1[java.lang.String, scala.Unit]
   ): XObjectOutputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("closeOutput")(closeOutput)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("writeBoolean")(writeBoolean)
-    __obj.updateDynamic("writeByte")(writeByte)
-    __obj.updateDynamic("writeBytes")(writeBytes)
-    __obj.updateDynamic("writeChar")(writeChar)
-    __obj.updateDynamic("writeDouble")(writeDouble)
-    __obj.updateDynamic("writeFloat")(writeFloat)
-    __obj.updateDynamic("writeHyper")(writeHyper)
-    __obj.updateDynamic("writeLong")(writeLong)
-    __obj.updateDynamic("writeObject")(writeObject)
-    __obj.updateDynamic("writeShort")(writeShort)
-    __obj.updateDynamic("writeUTF")(writeUTF)
+    val __obj = js.Dynamic.literal(acquire = acquire, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, release = release, writeBoolean = writeBoolean, writeByte = writeByte, writeBytes = writeBytes, writeChar = writeChar, writeDouble = writeDouble, writeFloat = writeFloat, writeHyper = writeHyper, writeLong = writeLong, writeObject = writeObject, writeShort = writeShort, writeUTF = writeUTF)
+  
     __obj.asInstanceOf[XObjectOutputStream]
   }
 }

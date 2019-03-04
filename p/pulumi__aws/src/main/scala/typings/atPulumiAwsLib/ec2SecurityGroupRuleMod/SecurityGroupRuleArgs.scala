@@ -77,11 +77,8 @@ object SecurityGroupRuleArgs {
     self: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     sourceSecurityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): SecurityGroupRuleArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
-    __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks.asInstanceOf[js.Any])

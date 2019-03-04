@@ -33,8 +33,7 @@ object HTTPInjectOptions {
     simulate: fastifyLib.Anon_Close = null,
     validate: js.UndefOr[scala.Boolean] = js.undefined
   ): HTTPInjectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (authority != null) __obj.updateDynamic("authority")(authority)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (method != null) __obj.updateDynamic("method")(method)

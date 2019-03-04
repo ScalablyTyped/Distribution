@@ -18,10 +18,8 @@ object Anon_010 {
     rowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
     threshold: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`15`
   ): Anon_010 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minimumBatchSize")(minimumBatchSize)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("threshold")(threshold)
+    val __obj = js.Dynamic.literal(minimumBatchSize = minimumBatchSize, rowCount = rowCount, threshold = threshold)
+  
     __obj.asInstanceOf[Anon_010]
   }
 }

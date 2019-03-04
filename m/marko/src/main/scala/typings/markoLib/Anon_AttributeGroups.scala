@@ -12,8 +12,8 @@ trait Anon_AttributeGroups extends js.Object {
 object Anon_AttributeGroups {
   @scala.inline
   def apply(attributeGroups: js.Any): Anon_AttributeGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeGroups")(attributeGroups)
+    val __obj = js.Dynamic.literal(attributeGroups = attributeGroups)
+  
     __obj.asInstanceOf[Anon_AttributeGroups]
   }
 }

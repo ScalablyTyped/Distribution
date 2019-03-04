@@ -23,11 +23,8 @@ object XDefaultSizeTransmitter {
     release: js.Function0[scala.Unit],
     setDefaultSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
   ): XDefaultSizeTransmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefaultSize")(setDefaultSize)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setDefaultSize = setDefaultSize)
+  
     __obj.asInstanceOf[XDefaultSizeTransmitter]
   }
 }

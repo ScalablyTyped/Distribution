@@ -19,9 +19,8 @@ trait IPeriod extends js.Object {
 object IPeriod {
   @scala.inline
   def apply(end: scala.Double, start: scala.Double): IPeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[IPeriod]
   }
 }

@@ -12,8 +12,8 @@ trait RequestOptions extends js.Object {
 object RequestOptions {
   @scala.inline
   def apply(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
+  
     __obj.asInstanceOf[RequestOptions]
   }
 }

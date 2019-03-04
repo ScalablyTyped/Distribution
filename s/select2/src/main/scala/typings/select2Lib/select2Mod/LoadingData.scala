@@ -20,9 +20,7 @@ object LoadingData {
     element: js.UndefOr[scala.Nothing] = js.undefined,
     id: js.UndefOr[scala.Nothing] = js.undefined
   ): LoadingData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(loading = loading, text = text)
     if (!js.isUndefined(element)) __obj.updateDynamic("element")(element)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[LoadingData]

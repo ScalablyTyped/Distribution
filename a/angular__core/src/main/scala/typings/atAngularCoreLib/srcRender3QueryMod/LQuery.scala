@@ -41,10 +41,7 @@ object LQuery {
     containerValues: js.Array[_] = null,
     next: LQuery[_] = null
   ): LQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("predicate")(predicate)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(list = list, predicate = predicate, values = values)
     if (containerValues != null) __obj.updateDynamic("containerValues")(containerValues)
     if (next != null) __obj.updateDynamic("next")(next)
     __obj.asInstanceOf[LQuery[T]]

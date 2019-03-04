@@ -18,8 +18,7 @@ object Anon_CaptionHeader {
     captionHeader: java.lang.String = null,
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null
   ): Anon_CaptionHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("captionText")(captionText)
+    val __obj = js.Dynamic.literal(captionText = captionText)
     if (captionHeader != null) __obj.updateDynamic("captionHeader")(captionHeader)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     __obj.asInstanceOf[Anon_CaptionHeader]

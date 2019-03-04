@@ -13,8 +13,8 @@ trait FileSaved extends js.Object {
 object FileSaved {
   @scala.inline
   def apply(path: java.lang.String): FileSaved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+  
     __obj.asInstanceOf[FileSaved]
   }
 }

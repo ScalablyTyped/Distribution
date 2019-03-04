@@ -26,11 +26,8 @@ object ILockScreenStatics {
       winrtLib.WindowsNs.FoundationNs.IAsyncAction
     ]
   ): ILockScreenStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getImageStream")(getImageStream)
-    __obj.updateDynamic("originalImageFile")(originalImageFile)
-    __obj.updateDynamic("setImageFileAsync")(setImageFileAsync)
-    __obj.updateDynamic("setImageStreamAsync")(setImageStreamAsync)
+    val __obj = js.Dynamic.literal(getImageStream = getImageStream, originalImageFile = originalImageFile, setImageFileAsync = setImageFileAsync, setImageStreamAsync = setImageStreamAsync)
+  
     __obj.asInstanceOf[ILockScreenStatics]
   }
 }

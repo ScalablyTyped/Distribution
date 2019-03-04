@@ -20,8 +20,8 @@ object APIResponseErrorError {
     details: js.Array[APIResponseErrorDetails] = null,
     link: java.lang.String = null
   ): APIResponseErrorError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+    __obj.updateDynamic("type")(`type`)
     if (details != null) __obj.updateDynamic("details")(details)
     if (link != null) __obj.updateDynamic("link")(link)
     __obj.asInstanceOf[APIResponseErrorError]

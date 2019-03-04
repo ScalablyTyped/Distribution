@@ -17,10 +17,7 @@ object StrategyOptionsWithRequest {
     passReqToCallback: passportDashBnetLib.passportDashBnetLibNumbers.`true`,
     region: java.lang.String = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (region != null) __obj.updateDynamic("region")(region)
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }

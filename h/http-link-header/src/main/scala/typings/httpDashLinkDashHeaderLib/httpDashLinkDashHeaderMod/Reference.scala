@@ -18,9 +18,7 @@ object Reference {
     uri: java.lang.String,
     StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Reference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(rel = rel, uri = uri)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Reference]
   }

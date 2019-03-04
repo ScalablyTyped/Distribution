@@ -22,12 +22,8 @@ object CameraPopoverArrowDirectionObject {
     ARROW_RIGHT: scala.Double,
     ARROW_UP: scala.Double
   ): CameraPopoverArrowDirectionObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARROW_ANY")(ARROW_ANY)
-    __obj.updateDynamic("ARROW_DOWN")(ARROW_DOWN)
-    __obj.updateDynamic("ARROW_LEFT")(ARROW_LEFT)
-    __obj.updateDynamic("ARROW_RIGHT")(ARROW_RIGHT)
-    __obj.updateDynamic("ARROW_UP")(ARROW_UP)
+    val __obj = js.Dynamic.literal(ARROW_ANY = ARROW_ANY, ARROW_DOWN = ARROW_DOWN, ARROW_LEFT = ARROW_LEFT, ARROW_RIGHT = ARROW_RIGHT, ARROW_UP = ARROW_UP)
+  
     __obj.asInstanceOf[CameraPopoverArrowDirectionObject]
   }
 }

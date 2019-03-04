@@ -32,15 +32,7 @@ object editableValueSettableProperties {
     describedBy: java.lang.String = null,
     translations: js.Object = null
   ): editableValueSettableProperties[V, SV, RV] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelHint = labelHint, messagesCustom = messagesCustom, valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (translations != null) __obj.updateDynamic("translations")(translations)
     __obj.asInstanceOf[editableValueSettableProperties[V, SV, RV]]

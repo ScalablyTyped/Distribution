@@ -16,9 +16,8 @@ object PluralRules {
     resolvedOptions: js.Function0[ResolvedPluralRulesOptions],
     select: js.Function1[scala.Double, java.lang.String]
   ): PluralRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolvedOptions")(resolvedOptions)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(resolvedOptions = resolvedOptions, select = select)
+  
     __obj.asInstanceOf[PluralRules]
   }
 }

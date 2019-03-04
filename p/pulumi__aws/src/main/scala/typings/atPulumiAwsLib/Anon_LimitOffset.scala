@@ -18,9 +18,7 @@ object Anon_LimitOffset {
     period: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     offset: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_LimitOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LimitOffset]
   }

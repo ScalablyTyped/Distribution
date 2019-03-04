@@ -28,10 +28,7 @@ object WebHookOptions {
     https: nodeLib.httpsMod.ServerOptions = null,
     port: scala.Int | scala.Double = null
   ): WebHookOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cert")(cert)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("pfx")(pfx)
+    val __obj = js.Dynamic.literal(cert = cert, key = key, pfx = pfx)
     if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
     if (healthEndpoint != null) __obj.updateDynamic("healthEndpoint")(healthEndpoint)
     if (host != null) __obj.updateDynamic("host")(host)

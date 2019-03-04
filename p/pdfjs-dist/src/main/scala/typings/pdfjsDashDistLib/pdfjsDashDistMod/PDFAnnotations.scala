@@ -29,14 +29,8 @@ object PDFAnnotations {
     isViewable: js.Function0[scala.Boolean],
     loadResources: js.Function1[js.Any, PDFPromise[_]]
   ): PDFAnnotations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getEmptyContainer")(getEmptyContainer)
-    __obj.updateDynamic("getHtmlElement")(getHtmlElement)
-    __obj.updateDynamic("getOperatorList")(getOperatorList)
-    __obj.updateDynamic("hasHtml")(hasHtml)
-    __obj.updateDynamic("isViewable")(isViewable)
-    __obj.updateDynamic("loadResources")(loadResources)
+    val __obj = js.Dynamic.literal(getData = getData, getEmptyContainer = getEmptyContainer, getHtmlElement = getHtmlElement, getOperatorList = getOperatorList, hasHtml = hasHtml, isViewable = isViewable, loadResources = loadResources)
+  
     __obj.asInstanceOf[PDFAnnotations]
   }
 }

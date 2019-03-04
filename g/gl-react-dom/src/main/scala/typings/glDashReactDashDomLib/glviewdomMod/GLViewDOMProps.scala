@@ -32,9 +32,7 @@ object GLViewDOMProps {
     style: js.Any = null,
     webglContextAttributes: stdLib.WebGLContextAttributes = null
   ): GLViewDOMProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(onContextCreate)
     if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(onContextFailure)

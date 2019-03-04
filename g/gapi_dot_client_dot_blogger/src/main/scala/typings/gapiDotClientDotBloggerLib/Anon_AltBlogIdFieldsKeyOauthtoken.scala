@@ -44,9 +44,7 @@ object Anon_AltBlogIdFieldsKeyOauthtoken {
     userIp: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AltBlogIdFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
-    __obj.updateDynamic("pageId")(pageId)
+    val __obj = js.Dynamic.literal(blogId = blogId, pageId = pageId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

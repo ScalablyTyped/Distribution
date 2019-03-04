@@ -19,8 +19,8 @@ trait Anon_CornerPosition extends js.Object {
 object Anon_CornerPosition {
   @scala.inline
   def apply(cornerPosition: java.lang.String, `type`: java.lang.String): Anon_CornerPosition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cornerPosition")(cornerPosition)
+    val __obj = js.Dynamic.literal(cornerPosition = cornerPosition)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_CornerPosition]
   }
 }

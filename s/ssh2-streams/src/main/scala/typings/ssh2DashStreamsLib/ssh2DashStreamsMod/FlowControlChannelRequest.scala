@@ -18,10 +18,8 @@ object FlowControlChannelRequest {
     recipient: scala.Double,
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`xon-xoff`
   ): FlowControlChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientControl")(clientControl)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(clientControl = clientControl, recipient = recipient, request = request)
+  
     __obj.asInstanceOf[FlowControlChannelRequest]
   }
 }

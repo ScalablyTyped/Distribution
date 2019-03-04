@@ -16,9 +16,8 @@ object Anon_JsonPathMatchEquals {
     jsonPath: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     matchEquals: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_JsonPathMatchEquals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonPath")(jsonPath.asInstanceOf[js.Any])
-    __obj.updateDynamic("matchEquals")(matchEquals.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jsonPath = jsonPath.asInstanceOf[js.Any], matchEquals = matchEquals.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_JsonPathMatchEquals]
   }
 }

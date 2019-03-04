@@ -34,10 +34,8 @@ object R3InjectableMetadata {
     useValue: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     userDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null
   ): R3InjectableMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("providedIn")(providedIn)
-    __obj.updateDynamic("typeArgumentCount")(typeArgumentCount)
+    val __obj = js.Dynamic.literal(name = name, providedIn = providedIn, typeArgumentCount = typeArgumentCount)
+    __obj.updateDynamic("type")(`type`)
     if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps)
     if (useClass != null) __obj.updateDynamic("useClass")(useClass)
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)

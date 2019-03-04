@@ -34,8 +34,7 @@ object PluginBase {
     once: js.UndefOr[scala.Boolean] = js.undefined,
     requirements: hapiLib.Anon_Hapi = null
   ): PluginBase[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(register = register)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)

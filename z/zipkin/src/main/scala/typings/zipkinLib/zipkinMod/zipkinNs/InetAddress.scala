@@ -13,9 +13,8 @@ trait InetAddress extends js.Object {
 object InetAddress {
   @scala.inline
   def apply(ipv4: js.Function0[java.lang.String], toInt: js.Function0[scala.Double]): InetAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipv4")(ipv4)
-    __obj.updateDynamic("toInt")(toInt)
+    val __obj = js.Dynamic.literal(ipv4 = ipv4, toInt = toInt)
+  
     __obj.asInstanceOf[InetAddress]
   }
 }

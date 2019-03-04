@@ -51,25 +51,8 @@ object ConfigurableUIElement {
     update: js.Function0[scala.Unit],
     updateSettings: js.Function0[scala.Unit]
   ): ConfigurableUIElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConfigurationSource")(ConfigurationSource)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Persistent")(Persistent)
-    __obj.updateDynamic("RealInterface")(RealInterface)
-    __obj.updateDynamic("ResourceURL")(ResourceURL)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getRealInterface")(getRealInterface)
-    __obj.updateDynamic("getSettings")(getSettings)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setSettings")(setSettings)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateSettings")(updateSettings)
+    val __obj = js.Dynamic.literal(ConfigurationSource = ConfigurationSource, Frame = Frame, Persistent = Persistent, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getRealInterface = getRealInterface, getSettings = getSettings, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setSettings = setSettings, update = update, updateSettings = updateSettings)
+  
     __obj.asInstanceOf[ConfigurableUIElement]
   }
 }

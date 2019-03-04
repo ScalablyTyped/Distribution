@@ -18,10 +18,8 @@ trait DropCapFormat extends js.Object {
 object DropCapFormat {
   @scala.inline
   def apply(Count: scala.Double, Distance: scala.Double, Lines: scala.Double): DropCapFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("Lines")(Lines)
+    val __obj = js.Dynamic.literal(Count = Count, Distance = Distance, Lines = Lines)
+  
     __obj.asInstanceOf[DropCapFormat]
   }
 }

@@ -12,8 +12,8 @@ trait PlaylistParam extends js.Object {
 object PlaylistParam {
   @scala.inline
   def apply(playlist: js.Array[_]): PlaylistParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playlist")(playlist)
+    val __obj = js.Dynamic.literal(playlist = playlist)
+  
     __obj.asInstanceOf[PlaylistParam]
   }
 }

@@ -20,7 +20,10 @@ object NodeExtensions {
     `.node`: js.Function2[NodeModule, java.lang.String, js.Any],
     StringDictionary: /* ext */ org.scalablytyped.runtime.StringDictionary[js.Function2[/* m */ NodeModule, /* filename */ java.lang.String, _]] = null
   ): NodeExtensions = {
-    val __obj = js.Dynamic.literal(`.js` = `.js`, `.json` = `.json`, `.node` = `.node`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic(".js")(`.js`)
+    __obj.updateDynamic(".json")(`.json`)
+    __obj.updateDynamic(".node")(`.node`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[NodeExtensions]
   }

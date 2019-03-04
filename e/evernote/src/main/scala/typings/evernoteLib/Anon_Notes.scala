@@ -24,10 +24,7 @@ object Anon_Notes {
     stoppedWords: js.Array[java.lang.String] = null,
     updateCount: scala.Int | scala.Double = null
   ): Anon_Notes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notes")(notes)
-    __obj.updateDynamic("startIndex")(startIndex)
-    __obj.updateDynamic("totalNotes")(totalNotes)
+    val __obj = js.Dynamic.literal(notes = notes, startIndex = startIndex, totalNotes = totalNotes)
     if (searchedWords != null) __obj.updateDynamic("searchedWords")(searchedWords)
     if (stoppedWords != null) __obj.updateDynamic("stoppedWords")(stoppedWords)
     if (updateCount != null) __obj.updateDynamic("updateCount")(updateCount.asInstanceOf[js.Any])

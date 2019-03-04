@@ -32,12 +32,8 @@ object XBrowseHistoryRegistry {
     release: js.Function0[scala.Unit],
     updateViewData: js.Function1[js.Any, scala.Unit]
   ): XBrowseHistoryRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createNewEntry")(createNewEntry)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateViewData")(updateViewData)
+    val __obj = js.Dynamic.literal(acquire = acquire, createNewEntry = createNewEntry, queryInterface = queryInterface, release = release, updateViewData = updateViewData)
+  
     __obj.asInstanceOf[XBrowseHistoryRegistry]
   }
 }

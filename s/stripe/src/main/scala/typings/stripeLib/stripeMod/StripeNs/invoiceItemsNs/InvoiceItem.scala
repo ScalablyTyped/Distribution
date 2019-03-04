@@ -66,21 +66,8 @@ object InvoiceItem {
     subscription: java.lang.String | stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription,
     invoice: java.lang.String = null
   ): InvoiceItem = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("customer")(customer)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("discountable")(discountable)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("period")(period)
-    __obj.updateDynamic("plan")(plan)
-    __obj.updateDynamic("proration")(proration)
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer, date = date, description = description, discountable = discountable, id = id, livemode = livemode, metadata = metadata, period = period, plan = plan, proration = proration, quantity = quantity, subscription = subscription.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     if (invoice != null) __obj.updateDynamic("invoice")(invoice)
     __obj.asInstanceOf[InvoiceItem]
   }

@@ -40,21 +40,8 @@ object Uri {
     user: java.lang.String,
     userInfo: java.lang.String
   ): Uri = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("authority")(authority)
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("relative")(relative)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("userInfo")(userInfo)
+    val __obj = js.Dynamic.literal(anchor = anchor, authority = authority, directory = directory, file = file, host = host, password = password, path = path, port = port, protocol = protocol, query = query, relative = relative, source = source, user = user, userInfo = userInfo)
+  
     __obj.asInstanceOf[Uri]
   }
 }

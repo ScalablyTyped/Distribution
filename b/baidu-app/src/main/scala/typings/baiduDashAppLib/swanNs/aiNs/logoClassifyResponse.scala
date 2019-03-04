@@ -20,10 +20,8 @@ object logoClassifyResponse {
     result: js.Array[baiduDashAppLib.Anon_LocationName],
     result_num: scala.Double
   ): logoClassifyResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log_id")(log_id)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("result_num")(result_num)
+    val __obj = js.Dynamic.literal(log_id = log_id, result = result, result_num = result_num)
+  
     __obj.asInstanceOf[logoClassifyResponse]
   }
 }

@@ -35,10 +35,7 @@ object StageConfig {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): StageConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(container = container, height = height, width = width)
     if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(dragBoundFunc)
     if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds)
     if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint)

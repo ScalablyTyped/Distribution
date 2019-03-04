@@ -52,15 +52,8 @@ object NotificationSubscriptionUpdateParameters {
     statusMessage: java.lang.String,
     userSettings: SubscriptionUserSettings
   ): NotificationSubscriptionUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminSettings")(adminSettings)
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("userSettings")(userSettings)
+    val __obj = js.Dynamic.literal(adminSettings = adminSettings, channel = channel, description = description, filter = filter, scope = scope, status = status, statusMessage = statusMessage, userSettings = userSettings)
+  
     __obj.asInstanceOf[NotificationSubscriptionUpdateParameters]
   }
 }

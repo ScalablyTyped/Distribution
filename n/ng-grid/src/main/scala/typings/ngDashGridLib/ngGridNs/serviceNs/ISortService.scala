@@ -42,20 +42,8 @@ object ISortService {
     sortNumber: js.Function2[scala.Double, scala.Double, scala.Double],
     sortNumberStr: js.Function2[java.lang.String, java.lang.String, scala.Double]
   ): ISortService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Sort")(Sort)
-    __obj.updateDynamic("basicSort")(basicSort)
-    __obj.updateDynamic("colSortFnCache")(colSortFnCache)
-    __obj.updateDynamic("getSortFn")(getSortFn)
-    __obj.updateDynamic("guessSortFn")(guessSortFn)
-    __obj.updateDynamic("isCustomSort")(isCustomSort)
-    __obj.updateDynamic("isSorting")(isSorting)
-    __obj.updateDynamic("sortAlpha")(sortAlpha)
-    __obj.updateDynamic("sortBool")(sortBool)
-    __obj.updateDynamic("sortData")(sortData)
-    __obj.updateDynamic("sortDate")(sortDate)
-    __obj.updateDynamic("sortNumber")(sortNumber)
-    __obj.updateDynamic("sortNumberStr")(sortNumberStr)
+    val __obj = js.Dynamic.literal(Sort = Sort, basicSort = basicSort, colSortFnCache = colSortFnCache, getSortFn = getSortFn, guessSortFn = guessSortFn, isCustomSort = isCustomSort, isSorting = isSorting, sortAlpha = sortAlpha, sortBool = sortBool, sortData = sortData, sortDate = sortDate, sortNumber = sortNumber, sortNumberStr = sortNumberStr)
+  
     __obj.asInstanceOf[ISortService]
   }
 }

@@ -57,9 +57,7 @@ object S3Options {
     storageClass: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.STANDARD | builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.REDUCED_REDUNDANCY | builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.STANDARD_IA = null,
     updaterCacheDirName: java.lang.String = null
   ): S3Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(bucket = bucket, provider = provider)
     if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])

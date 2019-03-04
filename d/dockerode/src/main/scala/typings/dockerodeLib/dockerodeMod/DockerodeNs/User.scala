@@ -13,9 +13,8 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(GID: scala.Double, UID: scala.Double): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GID")(GID)
-    __obj.updateDynamic("UID")(UID)
+    val __obj = js.Dynamic.literal(GID = GID, UID = UID)
+  
     __obj.asInstanceOf[User]
   }
 }

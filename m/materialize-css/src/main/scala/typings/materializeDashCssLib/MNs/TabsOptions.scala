@@ -38,11 +38,8 @@ object TabsOptions {
     responsiveThreshold: scala.Double,
     swipeable: scala.Boolean
   ): TabsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("responsiveThreshold")(responsiveThreshold)
-    __obj.updateDynamic("swipeable")(swipeable)
+    val __obj = js.Dynamic.literal(duration = duration, onShow = onShow, responsiveThreshold = responsiveThreshold, swipeable = swipeable)
+  
     __obj.asInstanceOf[TabsOptions]
   }
 }

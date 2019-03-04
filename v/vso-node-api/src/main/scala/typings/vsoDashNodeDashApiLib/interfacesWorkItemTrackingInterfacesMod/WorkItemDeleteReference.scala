@@ -57,15 +57,8 @@ object WorkItemDeleteReference {
     `type`: java.lang.String,
     url: java.lang.String
   ): WorkItemDeleteReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("deletedBy")(deletedBy)
-    __obj.updateDynamic("deletedDate")(deletedDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(code = code, deletedBy = deletedBy, deletedDate = deletedDate, id = id, message = message, name = name, project = project, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorkItemDeleteReference]
   }
 }

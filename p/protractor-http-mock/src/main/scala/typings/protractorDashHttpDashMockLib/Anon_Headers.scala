@@ -28,9 +28,7 @@ object Anon_Headers {
     queryString: js.Object = null,
     regex: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(method = method, path = path)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (!js.isUndefined(interceptedAnonymousRequest)) __obj.updateDynamic("interceptedAnonymousRequest")(interceptedAnonymousRequest)
     if (!js.isUndefined(interceptedRequest)) __obj.updateDynamic("interceptedRequest")(interceptedRequest)

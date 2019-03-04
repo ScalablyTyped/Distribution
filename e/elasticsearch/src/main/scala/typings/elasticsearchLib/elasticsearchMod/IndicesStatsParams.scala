@@ -38,8 +38,7 @@ object IndicesStatsParams {
     requestTimeout: scala.Int | scala.Double = null,
     types: NameList = null
   ): IndicesStatsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (completionFields != null) __obj.updateDynamic("completionFields")(completionFields.asInstanceOf[js.Any])
     if (fielddataFields != null) __obj.updateDynamic("fielddataFields")(fielddataFields.asInstanceOf[js.Any])

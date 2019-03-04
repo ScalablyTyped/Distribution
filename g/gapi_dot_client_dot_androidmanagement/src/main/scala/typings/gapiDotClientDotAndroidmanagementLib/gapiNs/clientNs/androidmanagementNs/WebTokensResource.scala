@@ -18,8 +18,8 @@ object WebTokensResource {
       gapiDotClientLib.gapiNs.clientNs.Request[WebToken]
     ]
   ): WebTokensResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[WebTokensResource]
   }
 }

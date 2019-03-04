@@ -14,9 +14,8 @@ trait DateFormatI18n extends js.Object {
 object DateFormatI18n {
   @scala.inline
   def apply(dayNames: js.Array[java.lang.String], monthNames: js.Array[java.lang.String]): DateFormatI18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("monthNames")(monthNames)
+    val __obj = js.Dynamic.literal(dayNames = dayNames, monthNames = monthNames)
+  
     __obj.asInstanceOf[DateFormatI18n]
   }
 }

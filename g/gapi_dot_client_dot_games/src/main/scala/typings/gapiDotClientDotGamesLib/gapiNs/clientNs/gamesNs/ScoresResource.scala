@@ -46,12 +46,8 @@ object ScoresResource {
       gapiDotClientLib.gapiNs.clientNs.Request[PlayerScoreListResponse]
     ]
   ): ScoresResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listWindow")(listWindow)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("submitMultiple")(submitMultiple)
+    val __obj = js.Dynamic.literal(get = get, list = list, listWindow = listWindow, submit = submit, submitMultiple = submitMultiple)
+  
     __obj.asInstanceOf[ScoresResource]
   }
 }

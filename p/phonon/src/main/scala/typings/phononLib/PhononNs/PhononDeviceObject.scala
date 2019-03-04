@@ -20,11 +20,8 @@ object PhononDeviceObject {
     os: java.lang.String,
     osVersion: java.lang.String
   ): PhononDeviceObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANDROID")(ANDROID)
-    __obj.updateDynamic("IOS")(IOS)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("osVersion")(osVersion)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID, IOS = IOS, os = os, osVersion = osVersion)
+  
     __obj.asInstanceOf[PhononDeviceObject]
   }
 }

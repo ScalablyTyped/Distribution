@@ -22,12 +22,8 @@ object GraphicsControllerInfo {
     vram: scala.Double,
     vramDynamic: scala.Boolean
   ): GraphicsControllerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bus")(bus)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("vendor")(vendor)
-    __obj.updateDynamic("vram")(vram)
-    __obj.updateDynamic("vramDynamic")(vramDynamic)
+    val __obj = js.Dynamic.literal(bus = bus, model = model, vendor = vendor, vram = vram, vramDynamic = vramDynamic)
+  
     __obj.asInstanceOf[GraphicsControllerInfo]
   }
 }

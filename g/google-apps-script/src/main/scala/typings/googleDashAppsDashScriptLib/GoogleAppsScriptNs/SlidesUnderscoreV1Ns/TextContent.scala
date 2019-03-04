@@ -16,9 +16,8 @@ trait TextContent extends js.Object {
 object TextContent {
   @scala.inline
   def apply(lists: js.Array[java.lang.String], text_elements: js.Array[TextElement]): TextContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lists")(lists)
-    __obj.updateDynamic("text_elements")(text_elements)
+    val __obj = js.Dynamic.literal(lists = lists, text_elements = text_elements)
+  
     __obj.asInstanceOf[TextContent]
   }
 }

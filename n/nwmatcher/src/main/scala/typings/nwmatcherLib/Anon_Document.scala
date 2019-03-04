@@ -12,8 +12,8 @@ trait Anon_Document extends js.Object {
 object Anon_Document {
   @scala.inline
   def apply(document: stdLib.Document): Anon_Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
+    val __obj = js.Dynamic.literal(document = document)
+  
     __obj.asInstanceOf[Anon_Document]
   }
 }

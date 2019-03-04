@@ -26,14 +26,8 @@ object Anon_AddressLines {
     recipients: java.lang.String,
     regionCode: java.lang.String
   ): Anon_AddressLines = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressLines")(addressLines)
-    __obj.updateDynamic("administrativeArea")(administrativeArea)
-    __obj.updateDynamic("languageCode")(languageCode)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("postalCode")(postalCode)
-    __obj.updateDynamic("recipients")(recipients)
-    __obj.updateDynamic("regionCode")(regionCode)
+    val __obj = js.Dynamic.literal(addressLines = addressLines, administrativeArea = administrativeArea, languageCode = languageCode, locality = locality, postalCode = postalCode, recipients = recipients, regionCode = regionCode)
+  
     __obj.asInstanceOf[Anon_AddressLines]
   }
 }

@@ -24,13 +24,8 @@ object IState {
     Selectable: scala.Boolean,
     SelectableFlagAffectedByPseudoUsers: scala.Boolean
   ): IState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAsLookup")(GetAsLookup)
-    __obj.updateDynamic("GetAsTypedValue")(GetAsTypedValue)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Selectable")(Selectable)
-    __obj.updateDynamic("SelectableFlagAffectedByPseudoUsers")(SelectableFlagAffectedByPseudoUsers)
+    val __obj = js.Dynamic.literal(GetAsLookup = GetAsLookup, GetAsTypedValue = GetAsTypedValue, ID = ID, Name = Name, Selectable = Selectable, SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers)
+  
     __obj.asInstanceOf[IState]
   }
 }

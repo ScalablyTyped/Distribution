@@ -22,12 +22,8 @@ object Shard {
     region_tag: java.lang.String,
     slug: java.lang.String
   ): Shard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("region_tag")(region_tag)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(hostname = hostname, locales = locales, name = name, region_tag = region_tag, slug = slug)
+  
     __obj.asInstanceOf[Shard]
   }
 }

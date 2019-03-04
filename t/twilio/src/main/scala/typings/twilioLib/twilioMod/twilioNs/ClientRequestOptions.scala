@@ -14,8 +14,7 @@ trait ClientRequestOptions extends js.Object {
 object ClientRequestOptions {
   @scala.inline
   def apply(url: java.lang.String, form: js.Any = null, method: java.lang.String = null): ClientRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (form != null) __obj.updateDynamic("form")(form)
     if (method != null) __obj.updateDynamic("method")(method)
     __obj.asInstanceOf[ClientRequestOptions]

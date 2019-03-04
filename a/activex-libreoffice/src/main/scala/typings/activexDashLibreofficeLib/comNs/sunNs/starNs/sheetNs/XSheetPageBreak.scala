@@ -59,15 +59,8 @@ object XSheetPageBreak {
     release: js.Function0[scala.Unit],
     removeAllManualPageBreaks: js.Function0[scala.Unit]
   ): XSheetPageBreak = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnPageBreaks")(ColumnPageBreaks)
-    __obj.updateDynamic("RowPageBreaks")(RowPageBreaks)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnPageBreaks")(getColumnPageBreaks)
-    __obj.updateDynamic("getRowPageBreaks")(getRowPageBreaks)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAllManualPageBreaks")(removeAllManualPageBreaks)
+    val __obj = js.Dynamic.literal(ColumnPageBreaks = ColumnPageBreaks, RowPageBreaks = RowPageBreaks, acquire = acquire, getColumnPageBreaks = getColumnPageBreaks, getRowPageBreaks = getRowPageBreaks, queryInterface = queryInterface, release = release, removeAllManualPageBreaks = removeAllManualPageBreaks)
+  
     __obj.asInstanceOf[XSheetPageBreak]
   }
 }

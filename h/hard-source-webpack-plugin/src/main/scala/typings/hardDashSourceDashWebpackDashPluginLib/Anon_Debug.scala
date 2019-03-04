@@ -16,9 +16,8 @@ object Anon_Debug {
     level: hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.debug | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.log | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.info | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.warn | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.error,
     mode: hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.none | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.test
   ): Anon_Debug = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Debug]
   }
 }

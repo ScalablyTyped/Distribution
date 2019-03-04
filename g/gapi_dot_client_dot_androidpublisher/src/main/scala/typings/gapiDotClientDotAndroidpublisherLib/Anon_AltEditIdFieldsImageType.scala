@@ -50,11 +50,7 @@ object Anon_AltEditIdFieldsImageType {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltEditIdFieldsImageType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editId")(editId)
-    __obj.updateDynamic("imageType")(imageType)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(editId = editId, imageType = imageType, language = language, packageName = packageName)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

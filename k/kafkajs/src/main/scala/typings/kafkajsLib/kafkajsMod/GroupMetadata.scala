@@ -24,13 +24,8 @@ object GroupMetadata {
     protocolType: java.lang.String,
     state: java.lang.String
   ): GroupMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("members")(members)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("protocolType")(protocolType)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, groupId = groupId, members = members, protocol = protocol, protocolType = protocolType, state = state)
+  
     __obj.asInstanceOf[GroupMetadata]
   }
 }

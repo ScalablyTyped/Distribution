@@ -12,8 +12,8 @@ trait CanceledMessageEvent extends MessageEvent {
 object CanceledMessageEvent {
   @scala.inline
   def apply(event: hellosignDashEmbeddedLib.hellosignDashEmbeddedLibStrings.signature_request_canceled): CanceledMessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[CanceledMessageEvent]
   }
 }

@@ -16,10 +16,8 @@ object KnockstrapCarouselDefaultsControlsTemplate {
     name: java.lang.String,
     templateEngine: KnockstrapStringTemplateEngine
   ): KnockstrapCarouselDefaultsControlsTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataConverter")(dataConverter)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("templateEngine")(templateEngine)
+    val __obj = js.Dynamic.literal(dataConverter = dataConverter, name = name, templateEngine = templateEngine)
+  
     __obj.asInstanceOf[KnockstrapCarouselDefaultsControlsTemplate]
   }
 }

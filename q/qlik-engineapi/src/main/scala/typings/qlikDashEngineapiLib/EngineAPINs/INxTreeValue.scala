@@ -33,9 +33,7 @@ object INxTreeValue {
     qAttrDims: INxAttributeDimValues = null,
     qAttrExps: INxAttributeExpressionValues = null
   ): INxTreeValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("qValue")(qValue)
+    val __obj = js.Dynamic.literal(qText = qText, qValue = qValue)
     if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims)
     if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps)
     __obj.asInstanceOf[INxTreeValue]

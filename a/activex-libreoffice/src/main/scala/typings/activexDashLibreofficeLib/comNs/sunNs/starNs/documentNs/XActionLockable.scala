@@ -44,15 +44,8 @@ object XActionLockable {
     resetActionLocks: js.Function0[scala.Double],
     setActionLocks: js.Function1[scala.Double, scala.Unit]
   ): XActionLockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActionLock")(addActionLock)
-    __obj.updateDynamic("isActionLocked")(isActionLocked)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActionLock")(removeActionLock)
-    __obj.updateDynamic("resetActionLocks")(resetActionLocks)
-    __obj.updateDynamic("setActionLocks")(setActionLocks)
+    val __obj = js.Dynamic.literal(acquire = acquire, addActionLock = addActionLock, isActionLocked = isActionLocked, queryInterface = queryInterface, release = release, removeActionLock = removeActionLock, resetActionLocks = resetActionLocks, setActionLocks = setActionLocks)
+  
     __obj.asInstanceOf[XActionLockable]
   }
 }

@@ -26,14 +26,8 @@ object AccountWorkWorkItemModel {
     title: java.lang.String,
     workItemType: java.lang.String
   ): AccountWorkWorkItemModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("changedDate")(changedDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("teamProject")(teamProject)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("workItemType")(workItemType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, changedDate = changedDate, id = id, state = state, teamProject = teamProject, title = title, workItemType = workItemType)
+  
     __obj.asInstanceOf[AccountWorkWorkItemModel]
   }
 }

@@ -66,8 +66,7 @@ object AdverseEventSuspectEntity {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): AdverseEventSuspectEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(instance = instance)
     if (_causality != null) __obj.updateDynamic("_causality")(_causality)
     if (_causalityProductRelatedness != null) __obj.updateDynamic("_causalityProductRelatedness")(_causalityProductRelatedness)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

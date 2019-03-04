@@ -32,12 +32,8 @@ object IGenericVariableLayout {
     qNum: scala.Double,
     qText: java.lang.String
   ): IGenericVariableLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qIsScriptCreated")(qIsScriptCreated)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qNum")(qNum)
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qIsScriptCreated = qIsScriptCreated, qMeta = qMeta, qNum = qNum, qText = qText)
+  
     __obj.asInstanceOf[IGenericVariableLayout]
   }
 }

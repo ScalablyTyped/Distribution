@@ -13,9 +13,8 @@ trait MasonryState extends js.Object {
 object MasonryState {
   @scala.inline
   def apply(isScrolling: scala.Boolean, scrollTop: scala.Double): MasonryState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("scrollTop")(scrollTop)
+    val __obj = js.Dynamic.literal(isScrolling = isScrolling, scrollTop = scrollTop)
+  
     __obj.asInstanceOf[MasonryState]
   }
 }

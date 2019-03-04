@@ -18,8 +18,7 @@ object LCDI2COption {
     cols: scala.Int | scala.Double = null,
     rows: scala.Int | scala.Double = null
   ): LCDI2COption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(controller = controller)
     if (backlight != null) __obj.updateDynamic("backlight")(backlight.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])

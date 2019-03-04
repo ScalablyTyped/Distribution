@@ -21,8 +21,8 @@ object ThreatListUpdatesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[FetchThreatListUpdatesResponse]
     ]
   ): ThreatListUpdatesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fetch")(fetch)
+    val __obj = js.Dynamic.literal(fetch = fetch)
+  
     __obj.asInstanceOf[ThreatListUpdatesResource]
   }
 }

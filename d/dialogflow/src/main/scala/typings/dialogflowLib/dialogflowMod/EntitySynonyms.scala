@@ -13,9 +13,8 @@ trait EntitySynonyms extends js.Object {
 object EntitySynonyms {
   @scala.inline
   def apply(synonyms: js.Array[java.lang.String], value: java.lang.String): EntitySynonyms = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("synonyms")(synonyms)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(synonyms = synonyms, value = value)
+  
     __obj.asInstanceOf[EntitySynonyms]
   }
 }

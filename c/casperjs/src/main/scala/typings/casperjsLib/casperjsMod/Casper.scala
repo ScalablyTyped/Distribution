@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Casper protected () extends js.Object {
   def this(options: CasperOptions) = this()
   // Properties
-  var `__utils__`: ClientUtils = js.native
+  var __utils__ : ClientUtils = js.native
   var options: CasperOptions = js.native
   var test: Tester = js.native
   // Methods

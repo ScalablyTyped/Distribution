@@ -14,9 +14,11 @@ object ^ extends js.Object {
   val Empty: reactLib.reactMod.ReactNs.SFC[antdLib.libEmptyMod.EmptyProps] = js.native
   val Icon: antdLib.libIconMod.IconComponent[antdLib.libIconMod.IconProps] = js.native
   val Layout: (reactLib.reactMod.ReactNs.ComponentClass[antdLib.libLayoutLayoutMod.BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Content = js.native
+  val PageHeader: reactLib.reactMod.ReactNs.SFC[antdLib.libPageDashHeaderMod.PageHeaderProps] = js.native
   val Statistic: reactLib.reactMod.ReactNs.FunctionComponent[antdLib.libStatisticStatisticMod.StatisticProps] with antdLib.libStatisticStatisticMod.StatisticComponent = js.native
+  val Typography: antdLib.libTypographyMod.TypographyProps = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
-  var version: antdLib.antdLibStrings.`3DOT13DOT6` = js.native
+  var version: antdLib.antdLibStrings.`3DOT14DOT0` = js.native
 }
 

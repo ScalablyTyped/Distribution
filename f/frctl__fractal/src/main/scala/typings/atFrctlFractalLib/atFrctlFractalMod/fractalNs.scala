@@ -658,9 +658,20 @@ object fractalNs extends js.Object {
         * Combined EventEmitter and Configurable mixins
         */
       /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-      - atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes */ @js.native
+      - atFrctlFractalLib.atFrctlFractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes. Inlined config, config, set, set, get, get */ @js.native
       abstract class ConfigurableEmitter[T] ()
-        extends nodeLib.eventsMod.EventEmitter
+        extends nodeLib.eventsMod.EventEmitter {
+        def config(): T = js.native
+        def config(config: T): this.type = js.native
+        def get[K /* <: java.lang.String */, V](path: K): js.UndefOr[
+                (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | scala.Null
+              ] = js.native
+        def get[K /* <: java.lang.String */, V](path: K, defaultValue: V): js.UndefOr[
+                (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | scala.Null
+              ] = js.native
+        def set[K /* <: java.lang.String */](path: K): this.type = js.native
+        def set[K /* <: java.lang.String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
+      }
       
       @js.native
       abstract class Entity () extends js.Object {

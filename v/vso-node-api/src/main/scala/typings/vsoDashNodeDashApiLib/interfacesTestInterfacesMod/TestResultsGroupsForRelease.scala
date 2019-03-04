@@ -23,10 +23,8 @@ trait TestResultsGroupsForRelease extends js.Object {
 object TestResultsGroupsForRelease {
   @scala.inline
   def apply(fields: js.Array[FieldDetailsForTestResults], releaseEnvId: scala.Double, releaseId: scala.Double): TestResultsGroupsForRelease = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("releaseEnvId")(releaseEnvId)
-    __obj.updateDynamic("releaseId")(releaseId)
+    val __obj = js.Dynamic.literal(fields = fields, releaseEnvId = releaseEnvId, releaseId = releaseId)
+  
     __obj.asInstanceOf[TestResultsGroupsForRelease]
   }
 }

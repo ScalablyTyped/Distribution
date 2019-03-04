@@ -14,9 +14,8 @@ trait Anon_DataId extends js.Object {
 object Anon_DataId {
   @scala.inline
   def apply(dataId: java.lang.String, negated: scala.Boolean, `type`: java.lang.String): Anon_DataId = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dataId")(dataId)
-    __obj.updateDynamic("negated")(negated)
+    val __obj = js.Dynamic.literal(dataId = dataId, negated = negated)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_DataId]
   }
 }

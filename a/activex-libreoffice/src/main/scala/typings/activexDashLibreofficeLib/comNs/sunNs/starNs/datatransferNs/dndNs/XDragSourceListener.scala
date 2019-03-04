@@ -56,16 +56,8 @@ object XDragSourceListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDragSourceListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("dragDropEnd")(dragDropEnd)
-    __obj.updateDynamic("dragEnter")(dragEnter)
-    __obj.updateDynamic("dragExit")(dragExit)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("dropActionChanged")(dropActionChanged)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, dragDropEnd = dragDropEnd, dragEnter = dragEnter, dragExit = dragExit, dragOver = dragOver, dropActionChanged = dropActionChanged, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDragSourceListener]
   }
 }

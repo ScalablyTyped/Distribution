@@ -40,10 +40,8 @@ object AccessRequest {
     isAllowed: js.Function0[scala.Boolean],
     isWildcard: js.Function0[scala.Boolean]
   ): AccessRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exactlyMatches")(exactlyMatches)
-    __obj.updateDynamic("isAllowed")(isAllowed)
-    __obj.updateDynamic("isWildcard")(isWildcard)
+    val __obj = js.Dynamic.literal(exactlyMatches = exactlyMatches, isAllowed = isAllowed, isWildcard = isWildcard)
+  
     __obj.asInstanceOf[AccessRequest]
   }
 }

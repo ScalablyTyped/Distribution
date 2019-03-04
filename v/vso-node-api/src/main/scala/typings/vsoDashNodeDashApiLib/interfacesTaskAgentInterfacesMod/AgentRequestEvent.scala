@@ -24,13 +24,8 @@ object AgentRequestEvent {
     result: TaskResult,
     timeStamp: stdLib.Date
   ): AgentRequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("poolId")(poolId)
-    __obj.updateDynamic("reservedAgentId")(reservedAgentId)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(eventType = eventType, planId = planId, poolId = poolId, reservedAgentId = reservedAgentId, result = result, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[AgentRequestEvent]
   }
 }

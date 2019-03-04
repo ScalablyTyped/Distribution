@@ -17,9 +17,7 @@ trait GcmError extends js.Object {
 object GcmError {
   @scala.inline
   def apply(detail: js.Object, errorMessage: java.lang.String, messageId: java.lang.String = null): GcmError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("errorMessage")(errorMessage)
+    val __obj = js.Dynamic.literal(detail = detail, errorMessage = errorMessage)
     if (messageId != null) __obj.updateDynamic("messageId")(messageId)
     __obj.asInstanceOf[GcmError]
   }

@@ -24,10 +24,7 @@ object User {
     last_name: java.lang.String = null,
     username: java.lang.String = null
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_bot")(is_bot)
+    val __obj = js.Dynamic.literal(first_name = first_name, id = id, is_bot = is_bot)
     if (language_code != null) __obj.updateDynamic("language_code")(language_code)
     if (last_name != null) __obj.updateDynamic("last_name")(last_name)
     if (username != null) __obj.updateDynamic("username")(username)

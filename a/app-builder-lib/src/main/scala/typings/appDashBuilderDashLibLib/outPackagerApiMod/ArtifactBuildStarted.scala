@@ -18,9 +18,7 @@ object ArtifactBuildStarted {
     targetPresentableName: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch = null
   ): ArtifactBuildStarted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("targetPresentableName")(targetPresentableName)
+    val __obj = js.Dynamic.literal(file = file, targetPresentableName = targetPresentableName)
     if (arch != null) __obj.updateDynamic("arch")(arch)
     __obj.asInstanceOf[ArtifactBuildStarted]
   }

@@ -32,14 +32,8 @@ object XVclContainer {
     release: js.Function0[scala.Unit],
     removeVclContainerListener: js.Function1[XVclContainerListener, scala.Unit]
   ): XVclContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Windows")(Windows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addVclContainerListener")(addVclContainerListener)
-    __obj.updateDynamic("getWindows")(getWindows)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeVclContainerListener")(removeVclContainerListener)
+    val __obj = js.Dynamic.literal(Windows = Windows, acquire = acquire, addVclContainerListener = addVclContainerListener, getWindows = getWindows, queryInterface = queryInterface, release = release, removeVclContainerListener = removeVclContainerListener)
+  
     __obj.asInstanceOf[XVclContainer]
   }
 }

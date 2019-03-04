@@ -45,12 +45,8 @@ object MyconfigResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
     ]
   ): MyconfigResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUserSettings")(getUserSettings)
-    __obj.updateDynamic("releaseDownloadAccess")(releaseDownloadAccess)
-    __obj.updateDynamic("requestAccess")(requestAccess)
-    __obj.updateDynamic("syncVolumeLicenses")(syncVolumeLicenses)
-    __obj.updateDynamic("updateUserSettings")(updateUserSettings)
+    val __obj = js.Dynamic.literal(getUserSettings = getUserSettings, releaseDownloadAccess = releaseDownloadAccess, requestAccess = requestAccess, syncVolumeLicenses = syncVolumeLicenses, updateUserSettings = updateUserSettings)
+  
     __obj.asInstanceOf[MyconfigResource]
   }
 }

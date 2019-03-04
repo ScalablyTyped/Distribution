@@ -24,9 +24,8 @@ object LiveChatBansResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LiveChatBan]
     ]
   ): LiveChatBansResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert)
+  
     __obj.asInstanceOf[LiveChatBansResource]
   }
 }

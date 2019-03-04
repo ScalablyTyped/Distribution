@@ -13,8 +13,8 @@ trait IPCMessage extends js.Object {
 object IPCMessage {
   @scala.inline
   def apply(data: ionicLib.Anon_Args, `type`: ionicLib.ionicLibStrings.telemetry): IPCMessage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPCMessage]
   }
 }

@@ -33,15 +33,8 @@ object IContactInformation {
       winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField]
     ]
   ): IContactInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customFields")(customFields)
-    __obj.updateDynamic("emails")(emails)
-    __obj.updateDynamic("getThumbnailAsync")(getThumbnailAsync)
-    __obj.updateDynamic("instantMessages")(instantMessages)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phoneNumbers")(phoneNumbers)
-    __obj.updateDynamic("queryCustomFields")(queryCustomFields)
+    val __obj = js.Dynamic.literal(customFields = customFields, emails = emails, getThumbnailAsync = getThumbnailAsync, instantMessages = instantMessages, locations = locations, name = name, phoneNumbers = phoneNumbers, queryCustomFields = queryCustomFields)
+  
     __obj.asInstanceOf[IContactInformation]
   }
 }

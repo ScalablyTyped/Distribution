@@ -20,11 +20,8 @@ object Anon_CountDotOverflowCount {
     overflowCount: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
     showZero: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   ): Anon_CountDotOverflowCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("dot")(dot)
-    __obj.updateDynamic("overflowCount")(overflowCount)
-    __obj.updateDynamic("showZero")(showZero)
+    val __obj = js.Dynamic.literal(count = count, dot = dot, overflowCount = overflowCount, showZero = showZero)
+  
     __obj.asInstanceOf[Anon_CountDotOverflowCount]
   }
 }

@@ -63,15 +63,8 @@ object XUntitledNumbers {
     releaseNumber: js.Function1[scala.Double, scala.Unit],
     releaseNumberForComponent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XUntitledNumbers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UntitledPrefix")(UntitledPrefix)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getUntitledPrefix")(getUntitledPrefix)
-    __obj.updateDynamic("leaseNumber")(leaseNumber)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseNumber")(releaseNumber)
-    __obj.updateDynamic("releaseNumberForComponent")(releaseNumberForComponent)
+    val __obj = js.Dynamic.literal(UntitledPrefix = UntitledPrefix, acquire = acquire, getUntitledPrefix = getUntitledPrefix, leaseNumber = leaseNumber, queryInterface = queryInterface, release = release, releaseNumber = releaseNumber, releaseNumberForComponent = releaseNumberForComponent)
+  
     __obj.asInstanceOf[XUntitledNumbers]
   }
 }

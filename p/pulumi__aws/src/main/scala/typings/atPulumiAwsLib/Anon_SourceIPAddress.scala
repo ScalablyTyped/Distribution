@@ -12,8 +12,8 @@ trait Anon_SourceIPAddress extends js.Object {
 object Anon_SourceIPAddress {
   @scala.inline
   def apply(sourceIPAddress: java.lang.String): Anon_SourceIPAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceIPAddress")(sourceIPAddress)
+    val __obj = js.Dynamic.literal(sourceIPAddress = sourceIPAddress)
+  
     __obj.asInstanceOf[Anon_SourceIPAddress]
   }
 }

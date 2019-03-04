@@ -29,10 +29,8 @@ trait ASPxClientFileManagerActionEventArgsBase extends ASPxClientEventArgs {
 object ASPxClientFileManagerActionEventArgsBase {
   @scala.inline
   def apply(fullName: java.lang.String, isFolder: scala.Boolean, name: java.lang.String): ASPxClientFileManagerActionEventArgsBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("isFolder")(isFolder)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fullName = fullName, isFolder = isFolder, name = name)
+  
     __obj.asInstanceOf[ASPxClientFileManagerActionEventArgsBase]
   }
 }

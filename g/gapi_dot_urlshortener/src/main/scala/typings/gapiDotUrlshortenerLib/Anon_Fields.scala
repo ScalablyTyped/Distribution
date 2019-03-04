@@ -23,8 +23,7 @@ trait Anon_Fields extends js.Object {
 object Anon_Fields {
   @scala.inline
   def apply(shortUrl: java.lang.String, fields: java.lang.String = null, projection: java.lang.String = null): Anon_Fields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shortUrl")(shortUrl)
+    val __obj = js.Dynamic.literal(shortUrl = shortUrl)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (projection != null) __obj.updateDynamic("projection")(projection)
     __obj.asInstanceOf[Anon_Fields]

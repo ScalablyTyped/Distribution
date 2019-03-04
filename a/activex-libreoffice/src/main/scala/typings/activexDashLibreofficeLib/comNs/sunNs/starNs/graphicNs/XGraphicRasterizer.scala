@@ -76,12 +76,8 @@ object XGraphicRasterizer {
     ],
     release: js.Function0[scala.Unit]
   ): XGraphicRasterizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initializeData")(initializeData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rasterize")(rasterize)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, initializeData = initializeData, queryInterface = queryInterface, rasterize = rasterize, release = release)
+  
     __obj.asInstanceOf[XGraphicRasterizer]
   }
 }

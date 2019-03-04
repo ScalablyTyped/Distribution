@@ -56,9 +56,7 @@ object JQueryCLEditorButtonDefinition {
     popupName: java.lang.String = null,
     stripIndex: scala.Int | scala.Double = null
   ): JQueryCLEditorButtonDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(name = name, title = title)
     if (buttonClick != null) __obj.updateDynamic("buttonClick")(buttonClick)
     if (command != null) __obj.updateDynamic("command")(command)
     if (css != null) __obj.updateDynamic("css")(css)

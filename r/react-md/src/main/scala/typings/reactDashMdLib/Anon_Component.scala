@@ -32,8 +32,7 @@ object Anon_Component {
     iconChildren: reactLib.reactMod.ReactNs.ReactNode = null,
     iconClassName: java.lang.String = null
   ): Anon_Component = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon)

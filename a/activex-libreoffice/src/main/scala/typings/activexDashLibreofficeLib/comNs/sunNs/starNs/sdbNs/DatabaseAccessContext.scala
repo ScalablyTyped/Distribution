@@ -75,29 +75,8 @@ object DatabaseAccessContext {
     ],
     unbindAliases: js.Function1[java.lang.String, scala.Unit]
   ): DatabaseAccessContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("bindAlias")(bindAlias)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("listAliases")(listAliases)
-    __obj.updateDynamic("lookupAlias")(lookupAlias)
-    __obj.updateDynamic("lookupProgrammatic")(lookupProgrammatic)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rebindAliases")(rebindAliases)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("renameAlias")(renameAlias)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("unbindAlias")(unbindAlias)
-    __obj.updateDynamic("unbindAliases")(unbindAliases)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Locale = Locale, acquire = acquire, bindAlias = bindAlias, createEnumeration = createEnumeration, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getLocale = getLocale, hasByName = hasByName, hasElements = hasElements, listAliases = listAliases, lookupAlias = lookupAlias, lookupProgrammatic = lookupProgrammatic, queryInterface = queryInterface, rebindAliases = rebindAliases, release = release, renameAlias = renameAlias, setLocale = setLocale, unbindAlias = unbindAlias, unbindAliases = unbindAliases)
+  
     __obj.asInstanceOf[DatabaseAccessContext]
   }
 }

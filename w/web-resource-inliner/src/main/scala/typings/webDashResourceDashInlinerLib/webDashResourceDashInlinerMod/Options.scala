@@ -144,8 +144,7 @@ object Options {
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     svgs: scala.Boolean | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileContent")(fileContent)
+    val __obj = js.Dynamic.literal(fileContent = fileContent)
     if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
     if (inlineAttribute != null) __obj.updateDynamic("inlineAttribute")(inlineAttribute)
     if (linkTransform != null) __obj.updateDynamic("linkTransform")(linkTransform)

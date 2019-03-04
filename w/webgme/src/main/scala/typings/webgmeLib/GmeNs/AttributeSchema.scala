@@ -15,8 +15,8 @@ trait AttributeSchema extends js.Object {
 object AttributeSchema {
   @scala.inline
   def apply(enum: js.Array[java.lang.String], `type`: java.lang.String): AttributeSchema = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("enum")(enum)
+    val __obj = js.Dynamic.literal(enum = enum)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AttributeSchema]
   }
 }

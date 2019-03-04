@@ -213,28 +213,8 @@ object XSlideShow {
     stopShapeActivity: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Boolean],
     update: js.Function1[js.Array[scala.Double], scala.Boolean]
   ): XSlideShow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentSlide")(CurrentSlide)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addShapeEventListener")(addShapeEventListener)
-    __obj.updateDynamic("addSlideShowListener")(addSlideShowListener)
-    __obj.updateDynamic("addView")(addView)
-    __obj.updateDynamic("displaySlide")(displaySlide)
-    __obj.updateDynamic("getCurrentSlide")(getCurrentSlide)
-    __obj.updateDynamic("nextEffect")(nextEffect)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("previousEffect")(previousEffect)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerUserPaintPolygons")(registerUserPaintPolygons)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeShapeEventListener")(removeShapeEventListener)
-    __obj.updateDynamic("removeSlideShowListener")(removeSlideShowListener)
-    __obj.updateDynamic("removeView")(removeView)
-    __obj.updateDynamic("setProperty")(setProperty)
-    __obj.updateDynamic("setShapeCursor")(setShapeCursor)
-    __obj.updateDynamic("startShapeActivity")(startShapeActivity)
-    __obj.updateDynamic("stopShapeActivity")(stopShapeActivity)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(CurrentSlide = CurrentSlide, acquire = acquire, addShapeEventListener = addShapeEventListener, addSlideShowListener = addSlideShowListener, addView = addView, displaySlide = displaySlide, getCurrentSlide = getCurrentSlide, nextEffect = nextEffect, pause = pause, previousEffect = previousEffect, queryInterface = queryInterface, registerUserPaintPolygons = registerUserPaintPolygons, release = release, removeShapeEventListener = removeShapeEventListener, removeSlideShowListener = removeSlideShowListener, removeView = removeView, setProperty = setProperty, setShapeCursor = setShapeCursor, startShapeActivity = startShapeActivity, stopShapeActivity = stopShapeActivity, update = update)
+  
     __obj.asInstanceOf[XSlideShow]
   }
 }

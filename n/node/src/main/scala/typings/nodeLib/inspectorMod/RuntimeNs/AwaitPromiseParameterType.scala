@@ -27,8 +27,7 @@ object AwaitPromiseParameterType {
     generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
     returnByValue: js.UndefOr[scala.Boolean] = js.undefined
   ): AwaitPromiseParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promiseObjectId")(promiseObjectId)
+    val __obj = js.Dynamic.literal(promiseObjectId = promiseObjectId)
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
     __obj.asInstanceOf[AwaitPromiseParameterType]

@@ -20,11 +20,8 @@ object Anon_ComparisonOperatorFieldToMatch {
     size: atPulumiPulumiLib.outputMod.Input[scala.Double],
     textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ComparisonOperatorFieldToMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
-    __obj.updateDynamic("fieldToMatch")(fieldToMatch.asInstanceOf[js.Any])
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("textTransformation")(textTransformation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], fieldToMatch = fieldToMatch.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ComparisonOperatorFieldToMatch]
   }
 }

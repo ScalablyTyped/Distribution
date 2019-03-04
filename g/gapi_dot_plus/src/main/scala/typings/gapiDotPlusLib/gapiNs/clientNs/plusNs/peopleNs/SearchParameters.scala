@@ -20,8 +20,7 @@ object SearchParameters {
     maxResults: scala.Int | scala.Double = null,
     pageToken: java.lang.String = null
   ): SearchParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (language != null) __obj.updateDynamic("language")(language)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)

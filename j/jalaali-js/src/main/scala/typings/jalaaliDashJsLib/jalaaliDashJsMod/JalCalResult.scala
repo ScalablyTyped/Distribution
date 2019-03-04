@@ -17,10 +17,8 @@ trait JalCalResult extends js.Object {
 object JalCalResult {
   @scala.inline
   def apply(gy: scala.Double, leap: scala.Double, march: scala.Double): JalCalResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gy")(gy)
-    __obj.updateDynamic("leap")(leap)
-    __obj.updateDynamic("march")(march)
+    val __obj = js.Dynamic.literal(gy = gy, leap = leap, march = march)
+  
     __obj.asInstanceOf[JalCalResult]
   }
 }

@@ -16,8 +16,8 @@ trait DirectTokenizationSpecification
 object DirectTokenizationSpecification {
   @scala.inline
   def apply(parameters: googlepayLib.Anon_ProtocolVersion, `type`: googlepayLib.googlepayLibStrings.DIRECT): DirectTokenizationSpecification = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DirectTokenizationSpecification]
   }
 }

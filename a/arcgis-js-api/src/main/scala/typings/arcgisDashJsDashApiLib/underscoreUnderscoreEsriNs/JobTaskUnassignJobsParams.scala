@@ -30,12 +30,8 @@ object JobTaskUnassignJobsParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     user: java.lang.String
   ): JobTaskUnassignJobsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobIds")(jobIds)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobIds = jobIds, propertyIsEnumerable = propertyIsEnumerable, user = user)
+  
     __obj.asInstanceOf[JobTaskUnassignJobsParams]
   }
 }

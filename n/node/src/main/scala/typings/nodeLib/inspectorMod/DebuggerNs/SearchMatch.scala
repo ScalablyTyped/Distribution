@@ -22,9 +22,8 @@ trait SearchMatch extends js.Object {
 object SearchMatch {
   @scala.inline
   def apply(lineContent: java.lang.String, lineNumber: scala.Double): SearchMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineContent")(lineContent)
-    __obj.updateDynamic("lineNumber")(lineNumber)
+    val __obj = js.Dynamic.literal(lineContent = lineContent, lineNumber = lineNumber)
+  
     __obj.asInstanceOf[SearchMatch]
   }
 }

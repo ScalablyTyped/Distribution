@@ -18,10 +18,8 @@ object Anon_Message {
     partitionMetadata: js.Array[kafkajsLib.kafkajsMod.PartitionMetadata],
     topic: java.lang.String
   ): Anon_Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("partitionMetadata")(partitionMetadata)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(message = message, partitionMetadata = partitionMetadata, topic = topic)
+  
     __obj.asInstanceOf[Anon_Message]
   }
 }

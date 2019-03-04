@@ -14,9 +14,8 @@ trait AnyMxRecord
 object AnyMxRecord {
   @scala.inline
   def apply(exchange: java.lang.String, priority: scala.Double, `type`: nodeLib.nodeLibStrings.MX): AnyMxRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exchange")(exchange)
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(exchange = exchange, priority = priority)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnyMxRecord]
   }
 }

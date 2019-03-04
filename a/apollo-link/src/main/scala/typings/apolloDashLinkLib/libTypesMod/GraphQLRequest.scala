@@ -22,8 +22,7 @@ object GraphQLRequest {
     operationName: java.lang.String = null,
     variables: stdLib.Record[java.lang.String, _] = null
   ): GraphQLRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (context != null) __obj.updateDynamic("context")(context)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (operationName != null) __obj.updateDynamic("operationName")(operationName)

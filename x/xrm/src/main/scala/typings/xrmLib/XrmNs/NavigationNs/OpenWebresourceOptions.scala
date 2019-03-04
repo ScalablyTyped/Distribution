@@ -15,10 +15,8 @@ trait OpenWebresourceOptions extends DialogSizeOptions {
 object OpenWebresourceOptions {
   @scala.inline
   def apply(height: scala.Double, openInNewWindow: scala.Boolean, width: scala.Double): OpenWebresourceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("openInNewWindow")(openInNewWindow)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, openInNewWindow = openInNewWindow, width = width)
+  
     __obj.asInstanceOf[OpenWebresourceOptions]
   }
 }

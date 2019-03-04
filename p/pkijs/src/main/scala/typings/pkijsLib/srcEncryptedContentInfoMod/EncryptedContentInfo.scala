@@ -24,13 +24,8 @@ object EncryptedContentInfo {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): EncryptedContentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentEncryptionAlgorithm")(contentEncryptionAlgorithm)
-    __obj.updateDynamic("eContentType")(eContentType)
-    __obj.updateDynamic("encryptedContent")(encryptedContent)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(contentEncryptionAlgorithm = contentEncryptionAlgorithm, eContentType = eContentType, encryptedContent = encryptedContent, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[EncryptedContentInfo]
   }
 }

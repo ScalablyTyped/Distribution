@@ -32,11 +32,8 @@ object _Impl {
     pusher: java.lang.String,
     sidebar: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fixed")(fixed)
-    __obj.updateDynamic("omitted")(omitted)
-    __obj.updateDynamic("pusher")(pusher)
-    __obj.updateDynamic("sidebar")(sidebar)
+    val __obj = js.Dynamic.literal(fixed = fixed, omitted = omitted, pusher = pusher, sidebar = sidebar)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

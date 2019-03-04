@@ -30,8 +30,7 @@ object AutocompletionRequest {
     sessionToken: AutocompleteSessionToken = null,
     types: js.Array[java.lang.String] = null
   ): AutocompletionRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (componentRestrictions != null) __obj.updateDynamic("componentRestrictions")(componentRestrictions)
     if (location != null) __obj.updateDynamic("location")(location)

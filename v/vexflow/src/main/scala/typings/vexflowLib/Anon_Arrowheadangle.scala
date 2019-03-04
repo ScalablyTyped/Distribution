@@ -36,19 +36,8 @@ object Anon_Arrowheadangle {
     text_justification: vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification,
     text_position_vertical: vexflowLib.VexNs.FlowNs.StaveLineNs.TextVerticalPosition
   ): Anon_Arrowheadangle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowhead_angle")(arrowhead_angle)
-    __obj.updateDynamic("arrowhead_length")(arrowhead_length)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("draw_end_arrow")(draw_end_arrow)
-    __obj.updateDynamic("draw_start_arrow")(draw_start_arrow)
-    __obj.updateDynamic("line_dash")(line_dash)
-    __obj.updateDynamic("line_width")(line_width)
-    __obj.updateDynamic("padding_left")(padding_left)
-    __obj.updateDynamic("padding_right")(padding_right)
-    __obj.updateDynamic("rounded_end")(rounded_end)
-    __obj.updateDynamic("text_justification")(text_justification)
-    __obj.updateDynamic("text_position_vertical")(text_position_vertical)
+    val __obj = js.Dynamic.literal(arrowhead_angle = arrowhead_angle, arrowhead_length = arrowhead_length, color = color, draw_end_arrow = draw_end_arrow, draw_start_arrow = draw_start_arrow, line_dash = line_dash, line_width = line_width, padding_left = padding_left, padding_right = padding_right, rounded_end = rounded_end, text_justification = text_justification, text_position_vertical = text_position_vertical)
+  
     __obj.asInstanceOf[Anon_Arrowheadangle]
   }
 }

@@ -15,8 +15,8 @@ trait Anon_VideoId extends js.Object {
 object Anon_VideoId {
   @scala.inline
   def apply(videoId: java.lang.String): Anon_VideoId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(videoId = videoId)
+  
     __obj.asInstanceOf[Anon_VideoId]
   }
 }

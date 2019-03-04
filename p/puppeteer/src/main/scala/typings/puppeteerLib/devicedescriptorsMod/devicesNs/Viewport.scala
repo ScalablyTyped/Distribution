@@ -24,13 +24,8 @@ object Viewport {
     isMobile: scala.Boolean,
     width: scala.Double
   ): Viewport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceScaleFactor")(deviceScaleFactor)
-    __obj.updateDynamic("hasTouch")(hasTouch)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("isLandscape")(isLandscape)
-    __obj.updateDynamic("isMobile")(isMobile)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor, hasTouch = hasTouch, height = height, isLandscape = isLandscape, isMobile = isMobile, width = width)
+  
     __obj.asInstanceOf[Viewport]
   }
 }

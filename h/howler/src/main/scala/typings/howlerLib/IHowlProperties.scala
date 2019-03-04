@@ -60,8 +60,7 @@ object IHowlProperties {
     volume: scala.Int | scala.Double = null,
     xhrWithCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): IHowlProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5)

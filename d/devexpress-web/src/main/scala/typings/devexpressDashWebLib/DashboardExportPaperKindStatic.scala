@@ -42,13 +42,8 @@ object DashboardExportPaperKindStatic {
     Legal: java.lang.String,
     Letter: java.lang.String
   ): DashboardExportPaperKindStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("A3")(A3)
-    __obj.updateDynamic("A4")(A4)
-    __obj.updateDynamic("A5")(A5)
-    __obj.updateDynamic("Executive")(Executive)
-    __obj.updateDynamic("Legal")(Legal)
-    __obj.updateDynamic("Letter")(Letter)
+    val __obj = js.Dynamic.literal(A3 = A3, A4 = A4, A5 = A5, Executive = Executive, Legal = Legal, Letter = Letter)
+  
     __obj.asInstanceOf[DashboardExportPaperKindStatic]
   }
 }

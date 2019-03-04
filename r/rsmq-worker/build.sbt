@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rsmq-worker"
-version := "0.3.5-dt-20180214Z-453969"
+version := "0.3.5-dt-20180214Z-39c5a3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20181221Z-f2a61e",
-  "org.scalablytyped" %%% "rsmq" % "0.3.16-dt-20180214Z-4b2262",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20181221Z-39f447",
+  "org.scalablytyped" %%% "rsmq" % "0.3.16-dt-20180214Z-e90424",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -40,8 +40,8 @@ object PropertyPreview {
     value: java.lang.String = null,
     valuePreview: ObjectPreview = null
   ): PropertyPreview = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (subtype != null) __obj.updateDynamic("subtype")(subtype)
     if (value != null) __obj.updateDynamic("value")(value)
     if (valuePreview != null) __obj.updateDynamic("valuePreview")(valuePreview)

@@ -15,9 +15,8 @@ trait CommitTextParameters extends js.Object {
 object CommitTextParameters {
   @scala.inline
   def apply(contextID: scala.Double, text: java.lang.String): CommitTextParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextID")(contextID)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(contextID = contextID, text = text)
+  
     __obj.asInstanceOf[CommitTextParameters]
   }
 }

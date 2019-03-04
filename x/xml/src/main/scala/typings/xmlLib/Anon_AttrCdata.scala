@@ -16,9 +16,8 @@ object Anon_AttrCdata {
     _attr: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify XmlAttrs */ js.Any,
     _cdata: java.lang.String
   ): Anon_AttrCdata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_attr")(_attr)
-    __obj.updateDynamic("_cdata")(_cdata)
+    val __obj = js.Dynamic.literal(_attr = _attr, _cdata = _cdata)
+  
     __obj.asInstanceOf[Anon_AttrCdata]
   }
 }

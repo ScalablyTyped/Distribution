@@ -22,12 +22,8 @@ object SelectionChangedEvent {
     oldScreenRange: Range,
     selection: Selection
   ): SelectionChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newBufferRange")(newBufferRange)
-    __obj.updateDynamic("newScreenRange")(newScreenRange)
-    __obj.updateDynamic("oldBufferRange")(oldBufferRange)
-    __obj.updateDynamic("oldScreenRange")(oldScreenRange)
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal(newBufferRange = newBufferRange, newScreenRange = newScreenRange, oldBufferRange = oldBufferRange, oldScreenRange = oldScreenRange, selection = selection)
+  
     __obj.asInstanceOf[SelectionChangedEvent]
   }
 }

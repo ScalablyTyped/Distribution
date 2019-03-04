@@ -27,11 +27,8 @@ trait IViewBox extends js.Object {
 object IViewBox {
   @scala.inline
   def apply(height: scala.Double, width: scala.Double, x: scala.Double, y: scala.Double): IViewBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[IViewBox]
   }
 }

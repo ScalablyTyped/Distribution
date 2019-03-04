@@ -22,10 +22,7 @@ object Options {
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     ports: autoDashSniLib.Anon_Http = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agreeTos")(agreeTos)
-    __obj.updateDynamic("domains")(domains)
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(agreeTos = agreeTos, domains = domains, email = email)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (ports != null) __obj.updateDynamic("ports")(ports)
     __obj.asInstanceOf[Options]

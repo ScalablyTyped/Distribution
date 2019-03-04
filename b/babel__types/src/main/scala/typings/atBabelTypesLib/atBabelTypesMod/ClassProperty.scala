@@ -46,9 +46,8 @@ object ClassProperty {
     typeAnnotation: TypeAnnotation | TSTypeAnnotation | Noop = null,
     value: Expression = null
   ): ClassProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

@@ -46,9 +46,7 @@ object ProfileNode {
     hitCount: scala.Int | scala.Double = null,
     positionTicks: js.Array[PositionTickInfo] = null
   ): ProfileNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFrame")(callFrame)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(callFrame = callFrame, id = id)
     if (children != null) __obj.updateDynamic("children")(children)
     if (deoptReason != null) __obj.updateDynamic("deoptReason")(deoptReason)
     if (hitCount != null) __obj.updateDynamic("hitCount")(hitCount.asInstanceOf[js.Any])

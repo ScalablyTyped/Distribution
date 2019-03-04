@@ -139,8 +139,7 @@ object RiskAssessment {
     subject: Reference = null,
     text: Narrative = null
   ): RiskAssessment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

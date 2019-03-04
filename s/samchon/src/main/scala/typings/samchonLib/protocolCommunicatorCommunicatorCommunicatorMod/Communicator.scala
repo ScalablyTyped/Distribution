@@ -32,23 +32,23 @@ abstract class Communicator ()
   /**
     * @hidden
     */
-  var `data_`: js.Any = js.native
+  var data_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `data_index_`: js.Any = js.native
+  var data_index_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `header_bytes_`: js.Any = js.native
+  var header_bytes_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `listening_`: js.Any = js.native
+  var listening_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `socket_`: js.Any = js.native
+  var socket_ : js.Any = js.native
   /**
     * @hidden
     */

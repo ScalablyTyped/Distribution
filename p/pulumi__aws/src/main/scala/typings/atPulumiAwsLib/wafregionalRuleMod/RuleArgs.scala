@@ -29,8 +29,7 @@ object RuleArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     predicates: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]] = null
   ): RuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (predicates != null) __obj.updateDynamic("predicates")(predicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleArgs]

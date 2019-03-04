@@ -17,9 +17,8 @@ object VerifiedMessage {
     data: stdLib.Uint8Array | java.lang.String | stdLib.ReadableStream[_],
     signatures: js.Array[Signature]
   ): VerifiedMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("signatures")(signatures)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signatures = signatures)
+  
     __obj.asInstanceOf[VerifiedMessage]
   }
 }

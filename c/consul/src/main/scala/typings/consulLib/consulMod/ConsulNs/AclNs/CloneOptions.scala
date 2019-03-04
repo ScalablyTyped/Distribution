@@ -23,8 +23,7 @@ object CloneOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): CloneOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent)
     if (ctx != null) __obj.updateDynamic("ctx")(ctx)
     if (dc != null) __obj.updateDynamic("dc")(dc)

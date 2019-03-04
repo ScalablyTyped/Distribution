@@ -60,8 +60,7 @@ object Anon_Cairo {
     xml: java.lang.String = null,
     zlib: java.lang.String = null
   ): Anon_Cairo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vips")(vips)
+    val __obj = js.Dynamic.literal(vips = vips)
     if (cairo != null) __obj.updateDynamic("cairo")(cairo)
     if (croco != null) __obj.updateDynamic("croco")(croco)
     if (exif != null) __obj.updateDynamic("exif")(exif)

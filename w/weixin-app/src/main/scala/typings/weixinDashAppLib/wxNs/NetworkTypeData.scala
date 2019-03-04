@@ -13,8 +13,8 @@ trait NetworkTypeData extends js.Object {
 object NetworkTypeData {
   @scala.inline
   def apply(networkType: networkType): NetworkTypeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkType")(networkType)
+    val __obj = js.Dynamic.literal(networkType = networkType)
+  
     __obj.asInstanceOf[NetworkTypeData]
   }
 }

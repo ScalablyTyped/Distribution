@@ -34,8 +34,7 @@ object Anon_CascadesEnabled {
     size: scala.Int | scala.Double = null,
     softShadows: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CascadesEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lightCamera")(lightCamera)
+    val __obj = js.Dynamic.literal(lightCamera = lightCamera)
     if (!js.isUndefined(cascadesEnabled)) __obj.updateDynamic("cascadesEnabled")(cascadesEnabled)
     if (darkness != null) __obj.updateDynamic("darkness")(darkness.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)

@@ -156,8 +156,8 @@ object CapabilityStatementRestResource {
     updateCreate: js.UndefOr[scala.Boolean] = js.undefined,
     versioning: code = null
   ): CapabilityStatementRestResource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("interaction")(interaction)
+    val __obj = js.Dynamic.literal(interaction = interaction)
+    __obj.updateDynamic("type")(`type`)
     if (_conditionalCreate != null) __obj.updateDynamic("_conditionalCreate")(_conditionalCreate)
     if (_conditionalDelete != null) __obj.updateDynamic("_conditionalDelete")(_conditionalDelete)
     if (_conditionalRead != null) __obj.updateDynamic("_conditionalRead")(_conditionalRead)

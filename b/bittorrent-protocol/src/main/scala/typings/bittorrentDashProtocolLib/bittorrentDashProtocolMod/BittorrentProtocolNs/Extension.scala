@@ -34,8 +34,7 @@ object Extension {
     ] = null,
     onMessage: js.Function1[/* buf */ nodeLib.Buffer, scala.Unit] = null
   ): Extension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (onExtendedHandshake != null) __obj.updateDynamic("onExtendedHandshake")(onExtendedHandshake)
     if (onHandshake != null) __obj.updateDynamic("onHandshake")(onHandshake)
     if (onMessage != null) __obj.updateDynamic("onMessage")(onMessage)

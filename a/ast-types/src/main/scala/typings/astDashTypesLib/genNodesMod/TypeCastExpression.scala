@@ -24,9 +24,8 @@ object TypeCastExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.TypeCastExpression,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind
   ): TypeCastExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(expression = expression, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeCastExpression]
   }
 }

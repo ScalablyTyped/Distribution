@@ -52,11 +52,7 @@ object CognitoAuthOptions {
     TokenScopesArray: js.Array[java.lang.String] = null,
     UserPoolId: java.lang.String = null
   ): CognitoAuthOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AppWebDomain")(AppWebDomain)
-    __obj.updateDynamic("ClientId")(ClientId)
-    __obj.updateDynamic("RedirectUriSignIn")(RedirectUriSignIn)
-    __obj.updateDynamic("RedirectUriSignOut")(RedirectUriSignOut)
+    val __obj = js.Dynamic.literal(AppWebDomain = AppWebDomain, ClientId = ClientId, RedirectUriSignIn = RedirectUriSignIn, RedirectUriSignOut = RedirectUriSignOut)
     if (!js.isUndefined(AdvancedSecurityDataCollectionFlag)) __obj.updateDynamic("AdvancedSecurityDataCollectionFlag")(AdvancedSecurityDataCollectionFlag)
     if (IdentityProvider != null) __obj.updateDynamic("IdentityProvider")(IdentityProvider)
     if (TokenScopesArray != null) __obj.updateDynamic("TokenScopesArray")(TokenScopesArray)

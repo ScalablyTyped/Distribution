@@ -58,16 +58,8 @@ object univariateColorSizeContinuousRendererResult {
     size: ContinuousRendererResultSize,
     statistics: SummaryStatisticsResult
   ): univariateColorSizeContinuousRendererResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("statistics")(statistics)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, color = color, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, renderer = renderer, size = size, statistics = statistics)
+  
     __obj.asInstanceOf[univariateColorSizeContinuousRendererResult]
   }
 }

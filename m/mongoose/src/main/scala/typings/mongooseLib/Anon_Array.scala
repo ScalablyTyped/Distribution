@@ -88,18 +88,8 @@ object Anon_Array {
     ObjectId: Anon_KeyOptionsSchemaNameAnyObjectId,
     String: Anon_Key
   ): Anon_Array = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Array")(Array)
-    __obj.updateDynamic("Boolean")(Boolean)
-    __obj.updateDynamic("Buffer")(Buffer)
-    __obj.updateDynamic("Date")(Date)
-    __obj.updateDynamic("Decimal128")(Decimal128)
-    __obj.updateDynamic("DocumentArray")(DocumentArray)
-    __obj.updateDynamic("Embedded")(Embedded)
-    __obj.updateDynamic("Mixed")(Mixed)
-    __obj.updateDynamic("Number")(Number)
-    __obj.updateDynamic("ObjectId")(ObjectId)
-    __obj.updateDynamic("String")(String)
+    val __obj = js.Dynamic.literal(Array = Array, Boolean = Boolean, Buffer = Buffer, Date = Date, Decimal128 = Decimal128, DocumentArray = DocumentArray, Embedded = Embedded, Mixed = Mixed, Number = Number, ObjectId = ObjectId, String = String)
+  
     __obj.asInstanceOf[Anon_Array]
   }
 }

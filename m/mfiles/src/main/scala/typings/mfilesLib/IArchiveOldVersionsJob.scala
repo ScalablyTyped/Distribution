@@ -36,19 +36,8 @@ object IArchiveOldVersionsJob {
     UseAtLeastNVersionsOlder: scala.Boolean,
     UseCheckedInBefore: scala.Boolean
   ): IArchiveOldVersionsJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AtLeastNDaysOlder")(AtLeastNDaysOlder)
-    __obj.updateDynamic("AtLeastNVersionsOlder")(AtLeastNVersionsOlder)
-    __obj.updateDynamic("CheckedInBefore")(CheckedInBefore)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Impersonation")(Impersonation)
-    __obj.updateDynamic("MarkedForArchiving")(MarkedForArchiving)
-    __obj.updateDynamic("NoVersionTag")(NoVersionTag)
-    __obj.updateDynamic("TargetLocation")(TargetLocation)
-    __obj.updateDynamic("UseAtLeastNDaysOlder")(UseAtLeastNDaysOlder)
-    __obj.updateDynamic("UseAtLeastNVersionsOlder")(UseAtLeastNVersionsOlder)
-    __obj.updateDynamic("UseCheckedInBefore")(UseCheckedInBefore)
+    val __obj = js.Dynamic.literal(AtLeastNDaysOlder = AtLeastNDaysOlder, AtLeastNVersionsOlder = AtLeastNVersionsOlder, CheckedInBefore = CheckedInBefore, Clone = Clone, Flags = Flags, Impersonation = Impersonation, MarkedForArchiving = MarkedForArchiving, NoVersionTag = NoVersionTag, TargetLocation = TargetLocation, UseAtLeastNDaysOlder = UseAtLeastNDaysOlder, UseAtLeastNVersionsOlder = UseAtLeastNVersionsOlder, UseCheckedInBefore = UseCheckedInBefore)
+  
     __obj.asInstanceOf[IArchiveOldVersionsJob]
   }
 }

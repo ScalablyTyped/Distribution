@@ -19,10 +19,8 @@ trait ASPxClientHtmlEditorCustomDialogClosedEventArgs extends ASPxClientHtmlEdit
 object ASPxClientHtmlEditorCustomDialogClosedEventArgs {
   @scala.inline
   def apply(data: js.Object, name: java.lang.String, status: js.Object): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(data = data, name = name, status = status)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosedEventArgs]
   }
 }

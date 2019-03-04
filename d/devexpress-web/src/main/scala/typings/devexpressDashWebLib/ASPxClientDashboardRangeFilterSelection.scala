@@ -24,9 +24,8 @@ trait ASPxClientDashboardRangeFilterSelection extends js.Object {
 object ASPxClientDashboardRangeFilterSelection {
   @scala.inline
   def apply(Maximum: js.Object, Minimum: js.Object): ASPxClientDashboardRangeFilterSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Maximum")(Maximum)
-    __obj.updateDynamic("Minimum")(Minimum)
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Minimum = Minimum)
+  
     __obj.asInstanceOf[ASPxClientDashboardRangeFilterSelection]
   }
 }

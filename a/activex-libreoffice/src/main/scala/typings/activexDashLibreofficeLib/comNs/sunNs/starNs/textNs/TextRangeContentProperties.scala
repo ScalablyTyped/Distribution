@@ -50,17 +50,8 @@ object TextRangeContentProperties {
     TextSection: XTextSection,
     TextTable: XTextTable
   ): TextRangeContentProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cell")(Cell)
-    __obj.updateDynamic("DocumentIndex")(DocumentIndex)
-    __obj.updateDynamic("DocumentIndexMark")(DocumentIndexMark)
-    __obj.updateDynamic("Endnote")(Endnote)
-    __obj.updateDynamic("Footnote")(Footnote)
-    __obj.updateDynamic("NestedTextContent")(NestedTextContent)
-    __obj.updateDynamic("ReferenceMark")(ReferenceMark)
-    __obj.updateDynamic("TextFrame")(TextFrame)
-    __obj.updateDynamic("TextSection")(TextSection)
-    __obj.updateDynamic("TextTable")(TextTable)
+    val __obj = js.Dynamic.literal(Cell = Cell, DocumentIndex = DocumentIndex, DocumentIndexMark = DocumentIndexMark, Endnote = Endnote, Footnote = Footnote, NestedTextContent = NestedTextContent, ReferenceMark = ReferenceMark, TextFrame = TextFrame, TextSection = TextSection, TextTable = TextTable)
+  
     __obj.asInstanceOf[TextRangeContentProperties]
   }
 }

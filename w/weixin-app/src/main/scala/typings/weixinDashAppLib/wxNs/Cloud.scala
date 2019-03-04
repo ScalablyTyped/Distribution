@@ -29,10 +29,8 @@ object Cloud {
     database: js.Function1[weixinDashAppLib.Anon_Env, js.Object],
     init: js.Function1[InitCloudOptions, scala.Unit]
   ): Cloud = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(collection = collection, database = database, init = init)
+  
     __obj.asInstanceOf[Cloud]
   }
 }

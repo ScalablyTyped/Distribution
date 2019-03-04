@@ -24,13 +24,8 @@ object Subsume {
     prefix: java.lang.String,
     regex: stdLib.RegExp
   ): Subsume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compose")(compose)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("postfix")(postfix)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(compose = compose, id = id, parse = parse, postfix = postfix, prefix = prefix, regex = regex)
+  
     __obj.asInstanceOf[Subsume]
   }
 }

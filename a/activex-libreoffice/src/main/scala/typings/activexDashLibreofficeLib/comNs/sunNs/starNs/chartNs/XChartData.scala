@@ -53,15 +53,8 @@ object XChartData {
     release: js.Function0[scala.Unit],
     removeChartDataChangeEventListener: js.Function1[XChartDataChangeEventListener, scala.Unit]
   ): XChartData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NotANumber")(NotANumber)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChartDataChangeEventListener")(addChartDataChangeEventListener)
-    __obj.updateDynamic("getNotANumber")(getNotANumber)
-    __obj.updateDynamic("isNotANumber")(isNotANumber)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChartDataChangeEventListener")(removeChartDataChangeEventListener)
+    val __obj = js.Dynamic.literal(NotANumber = NotANumber, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, getNotANumber = getNotANumber, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener)
+  
     __obj.asInstanceOf[XChartData]
   }
 }

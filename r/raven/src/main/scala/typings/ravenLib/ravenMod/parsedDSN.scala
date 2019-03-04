@@ -26,14 +26,8 @@ object parsedDSN {
     protocol: java.lang.String,
     public_key: java.lang.String
   ): parsedDSN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("private_key")(private_key)
-    __obj.updateDynamic("project_id")(project_id)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("public_key")(public_key)
+    val __obj = js.Dynamic.literal(host = host, path = path, port = port, private_key = private_key, project_id = project_id, protocol = protocol, public_key = public_key)
+  
     __obj.asInstanceOf[parsedDSN]
   }
 }

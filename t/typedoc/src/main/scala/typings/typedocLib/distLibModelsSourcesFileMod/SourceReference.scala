@@ -22,10 +22,7 @@ object SourceReference {
     file: SourceFile = null,
     url: java.lang.String = null
   ): SourceReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(character = character, fileName = fileName, line = line)
     if (file != null) __obj.updateDynamic("file")(file)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[SourceReference]

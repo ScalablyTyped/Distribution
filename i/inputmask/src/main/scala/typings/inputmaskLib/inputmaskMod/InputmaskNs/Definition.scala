@@ -22,8 +22,7 @@ object Definition {
     definitionSymbol: java.lang.String = null,
     placeholder: java.lang.String = null
   ): Definition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(validator = validator.asInstanceOf[js.Any])
     if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality.asInstanceOf[js.Any])
     if (casing != null) __obj.updateDynamic("casing")(casing)
     if (definitionSymbol != null) __obj.updateDynamic("definitionSymbol")(definitionSymbol)

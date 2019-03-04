@@ -16,9 +16,8 @@ object Anon_NEffect {
     Wn: activexDashPowerpointLib.PowerPointNs.SlideShowWindow,
     nEffect: activexDashPowerpointLib.PowerPointNs.Effect
   ): Anon_NEffect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Wn")(Wn)
-    __obj.updateDynamic("nEffect")(nEffect)
+    val __obj = js.Dynamic.literal(Wn = Wn, nEffect = nEffect)
+  
     __obj.asInstanceOf[Anon_NEffect]
   }
 }

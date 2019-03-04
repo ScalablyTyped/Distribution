@@ -15,9 +15,8 @@ trait IPointLike extends js.Object {
 object IPointLike {
   @scala.inline
   def apply(x: scala.Double, y: scala.Double): IPointLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[IPointLike]
   }
 }

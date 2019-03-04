@@ -22,12 +22,8 @@ object Button {
     setOnClickOpenLinkAction: js.Function1[Action, Button],
     setOpenLink: js.Function1[OpenLink, Button]
   ): Button = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setComposeAction = setComposeAction, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink)
+  
     __obj.asInstanceOf[Button]
   }
 }

@@ -62,17 +62,8 @@ object Card {
     three_d_secure: stripeDashV3Lib.stripeDashV3LibStrings.required | stripeDashV3Lib.stripeDashV3LibStrings.recommended | stripeDashV3Lib.stripeDashV3LibStrings.optional | stripeDashV3Lib.stripeDashV3LibStrings.not_supported = null,
     tokenization_method: tokenizationType = null
   ): Card = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("dynamic_last4")(dynamic_last4)
-    __obj.updateDynamic("exp_month")(exp_month)
-    __obj.updateDynamic("exp_year")(exp_year)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("funding")(funding)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last4")(last4)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(brand = brand, country = country, dynamic_last4 = dynamic_last4, exp_month = exp_month, exp_year = exp_year, fingerprint = fingerprint, funding = funding, id = id, last4 = last4, metadata = metadata)
+    __obj.updateDynamic("object")(`object`)
     if (address_city != null) __obj.updateDynamic("address_city")(address_city)
     if (address_country != null) __obj.updateDynamic("address_country")(address_country)
     if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)

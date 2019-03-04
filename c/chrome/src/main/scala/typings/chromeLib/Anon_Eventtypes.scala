@@ -20,8 +20,7 @@ object Anon_Eventtypes {
     gender: java.lang.String = null,
     lang: java.lang.String = null
   ): Anon_Eventtypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("voice_name")(voice_name)
+    val __obj = js.Dynamic.literal(voice_name = voice_name)
     if (event_types != null) __obj.updateDynamic("event_types")(event_types)
     if (gender != null) __obj.updateDynamic("gender")(gender)
     if (lang != null) __obj.updateDynamic("lang")(lang)

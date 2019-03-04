@@ -16,8 +16,7 @@ object IEventRecordList {
     count: scala.Double,
     StringDictionary: /* id */ org.scalablytyped.runtime.StringDictionary[js.Array[IEventRecord] | scala.Double] = null
   ): IEventRecordList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(count = count)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IEventRecordList]
   }

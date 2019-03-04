@@ -14,10 +14,8 @@ trait ShortcutOption extends js.Object {
 object ShortcutOption {
   @scala.inline
   def apply(active: js.Function, failed: js.Function, key: java.lang.String): ShortcutOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(active = active, failed = failed, key = key)
+  
     __obj.asInstanceOf[ShortcutOption]
   }
 }

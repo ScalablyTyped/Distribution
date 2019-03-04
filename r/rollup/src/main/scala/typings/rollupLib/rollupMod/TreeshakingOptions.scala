@@ -18,10 +18,8 @@ object TreeshakingOptions {
     propertyReadSideEffects: scala.Boolean,
     pureExternalModules: scala.Boolean
   ): TreeshakingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("propertyReadSideEffects")(propertyReadSideEffects)
-    __obj.updateDynamic("pureExternalModules")(pureExternalModules)
+    val __obj = js.Dynamic.literal(annotations = annotations, propertyReadSideEffects = propertyReadSideEffects, pureExternalModules = pureExternalModules)
+  
     __obj.asInstanceOf[TreeshakingOptions]
   }
 }

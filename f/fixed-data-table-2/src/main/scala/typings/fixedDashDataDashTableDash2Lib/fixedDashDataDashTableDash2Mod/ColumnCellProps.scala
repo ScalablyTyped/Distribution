@@ -18,10 +18,7 @@ object ColumnCellProps {
     width: scala.Double,
     columnKey: java.lang.String = null
   ): ColumnCellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, rowIndex = rowIndex, width = width)
     if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
     __obj.asInstanceOf[ColumnCellProps]
   }

@@ -26,14 +26,8 @@ object DiLiteStatic {
     utils: Utils,
     version: java.lang.String
   ): DiLiteStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createContext")(createContext)
-    __obj.updateDynamic("dependencyExpression")(dependencyExpression)
-    __obj.updateDynamic("entry")(entry)
-    __obj.updateDynamic("factory")(factory)
-    __obj.updateDynamic("strategy")(strategy)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(createContext = createContext, dependencyExpression = dependencyExpression, entry = entry, factory = factory, strategy = strategy, utils = utils, version = version)
+  
     __obj.asInstanceOf[DiLiteStatic]
   }
 }

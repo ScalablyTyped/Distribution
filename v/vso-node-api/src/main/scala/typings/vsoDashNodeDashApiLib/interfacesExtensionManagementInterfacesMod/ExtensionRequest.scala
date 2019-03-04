@@ -47,14 +47,8 @@ object ExtensionRequest {
     resolveDate: stdLib.Date,
     resolvedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): ExtensionRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rejectMessage")(rejectMessage)
-    __obj.updateDynamic("requestDate")(requestDate)
-    __obj.updateDynamic("requestMessage")(requestMessage)
-    __obj.updateDynamic("requestState")(requestState)
-    __obj.updateDynamic("requestedBy")(requestedBy)
-    __obj.updateDynamic("resolveDate")(resolveDate)
-    __obj.updateDynamic("resolvedBy")(resolvedBy)
+    val __obj = js.Dynamic.literal(rejectMessage = rejectMessage, requestDate = requestDate, requestMessage = requestMessage, requestState = requestState, requestedBy = requestedBy, resolveDate = resolveDate, resolvedBy = resolvedBy)
+  
     __obj.asInstanceOf[ExtensionRequest]
   }
 }

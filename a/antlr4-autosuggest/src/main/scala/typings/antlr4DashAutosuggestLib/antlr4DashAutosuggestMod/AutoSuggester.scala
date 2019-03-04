@@ -12,8 +12,8 @@ trait AutoSuggester extends js.Object {
 object AutoSuggester {
   @scala.inline
   def apply(autosuggest: js.Function1[java.lang.String, js.Array[java.lang.String]]): AutoSuggester = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autosuggest")(autosuggest)
+    val __obj = js.Dynamic.literal(autosuggest = autosuggest)
+  
     __obj.asInstanceOf[AutoSuggester]
   }
 }

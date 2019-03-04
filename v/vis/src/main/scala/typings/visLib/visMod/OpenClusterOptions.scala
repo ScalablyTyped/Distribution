@@ -33,8 +33,8 @@ object OpenClusterOptions {
       org.scalablytyped.runtime.StringDictionary[Position]
     ]
   ): OpenClusterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("releaseFunction")(releaseFunction)
+    val __obj = js.Dynamic.literal(releaseFunction = releaseFunction)
+  
     __obj.asInstanceOf[OpenClusterOptions]
   }
 }

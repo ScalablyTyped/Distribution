@@ -20,12 +20,8 @@ object ExcludedDisplayKeyword {
     getText: js.Function0[java.lang.String],
     remove: js.Function0[scala.Unit]
   ): ExcludedDisplayKeyword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getId = getId, getText = getText, remove = remove)
+  
     __obj.asInstanceOf[ExcludedDisplayKeyword]
   }
 }

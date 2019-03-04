@@ -51,8 +51,7 @@ object HTTPOptions {
     params: js.Any = null,
     success: js.Function1[/* response */ js.Any, scala.Unit] = null
   ): HTTPOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)

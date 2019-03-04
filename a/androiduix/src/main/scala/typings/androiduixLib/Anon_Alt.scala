@@ -13,9 +13,8 @@ trait Anon_Alt extends js.Object {
 object Anon_Alt {
   @scala.inline
   def apply(noMeta: Anon_186, shift: Anon_186): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("noMeta")(noMeta)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(noMeta = noMeta, shift = shift)
+  
     __obj.asInstanceOf[Anon_Alt]
   }
 }

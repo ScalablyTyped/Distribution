@@ -20,10 +20,8 @@ object IThumbnailProperties {
     returnedSmallerCachedSize: scala.Boolean,
     `type`: ThumbnailType
   ): IThumbnailProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("originalHeight")(originalHeight)
-    __obj.updateDynamic("originalWidth")(originalWidth)
-    __obj.updateDynamic("returnedSmallerCachedSize")(returnedSmallerCachedSize)
+    val __obj = js.Dynamic.literal(originalHeight = originalHeight, originalWidth = originalWidth, returnedSmallerCachedSize = returnedSmallerCachedSize)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IThumbnailProperties]
   }
 }

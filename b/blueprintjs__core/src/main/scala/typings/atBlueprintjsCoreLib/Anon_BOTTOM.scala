@@ -36,19 +36,8 @@ object Anon_BOTTOM {
     TOP_LEFT: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`top-left`,
     TOP_RIGHT: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`top-right`
   ): Anon_BOTTOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("BOTTOM_LEFT")(BOTTOM_LEFT)
-    __obj.updateDynamic("BOTTOM_RIGHT")(BOTTOM_RIGHT)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("LEFT_BOTTOM")(LEFT_BOTTOM)
-    __obj.updateDynamic("LEFT_TOP")(LEFT_TOP)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("RIGHT_BOTTOM")(RIGHT_BOTTOM)
-    __obj.updateDynamic("RIGHT_TOP")(RIGHT_TOP)
-    __obj.updateDynamic("TOP")(TOP)
-    __obj.updateDynamic("TOP_LEFT")(TOP_LEFT)
-    __obj.updateDynamic("TOP_RIGHT")(TOP_RIGHT)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, BOTTOM_LEFT = BOTTOM_LEFT, BOTTOM_RIGHT = BOTTOM_RIGHT, LEFT = LEFT, LEFT_BOTTOM = LEFT_BOTTOM, LEFT_TOP = LEFT_TOP, RIGHT = RIGHT, RIGHT_BOTTOM = RIGHT_BOTTOM, RIGHT_TOP = RIGHT_TOP, TOP = TOP, TOP_LEFT = TOP_LEFT, TOP_RIGHT = TOP_RIGHT)
+  
     __obj.asInstanceOf[Anon_BOTTOM]
   }
 }

@@ -26,14 +26,8 @@ object Anon_Condition {
     predicates: js.Any,
     value: js.Any
   ): Anon_Condition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("ignoreCase")(ignoreCase)
-    __obj.updateDynamic("isComplex")(isComplex)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("predicates")(predicates)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(condition = condition, field = field, ignoreCase = ignoreCase, isComplex = isComplex, operator = operator, predicates = predicates, value = value)
+  
     __obj.asInstanceOf[Anon_Condition]
   }
 }

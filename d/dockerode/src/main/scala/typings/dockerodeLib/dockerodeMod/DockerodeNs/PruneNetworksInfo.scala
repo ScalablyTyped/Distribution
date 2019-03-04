@@ -12,8 +12,8 @@ trait PruneNetworksInfo extends js.Object {
 object PruneNetworksInfo {
   @scala.inline
   def apply(NetworksDeleted: js.Array[java.lang.String]): PruneNetworksInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NetworksDeleted")(NetworksDeleted)
+    val __obj = js.Dynamic.literal(NetworksDeleted = NetworksDeleted)
+  
     __obj.asInstanceOf[PruneNetworksInfo]
   }
 }

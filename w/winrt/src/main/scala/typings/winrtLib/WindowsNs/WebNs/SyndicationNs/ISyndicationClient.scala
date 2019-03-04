@@ -29,14 +29,8 @@ object ISyndicationClient {
     setRequestHeader: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     timeout: scala.Double
   ): ISyndicationClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bypassCacheOnRetrieve")(bypassCacheOnRetrieve)
-    __obj.updateDynamic("maxResponseBufferSize")(maxResponseBufferSize)
-    __obj.updateDynamic("proxyCredential")(proxyCredential)
-    __obj.updateDynamic("retrieveFeedAsync")(retrieveFeedAsync)
-    __obj.updateDynamic("serverCredential")(serverCredential)
-    __obj.updateDynamic("setRequestHeader")(setRequestHeader)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(bypassCacheOnRetrieve = bypassCacheOnRetrieve, maxResponseBufferSize = maxResponseBufferSize, proxyCredential = proxyCredential, retrieveFeedAsync = retrieveFeedAsync, serverCredential = serverCredential, setRequestHeader = setRequestHeader, timeout = timeout)
+  
     __obj.asInstanceOf[ISyndicationClient]
   }
 }

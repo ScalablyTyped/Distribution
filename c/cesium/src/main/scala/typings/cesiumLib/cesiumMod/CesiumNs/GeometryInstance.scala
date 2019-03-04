@@ -15,11 +15,8 @@ trait GeometryInstance extends js.Object {
 object GeometryInstance {
   @scala.inline
   def apply(attributes: js.Any, geometry: Geometry, id: js.Any, modelMatrix: Matrix4): GeometryInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modelMatrix")(modelMatrix)
+    val __obj = js.Dynamic.literal(attributes = attributes, geometry = geometry, id = id, modelMatrix = modelMatrix)
+  
     __obj.asInstanceOf[GeometryInstance]
   }
 }

@@ -12,10 +12,7 @@ trait LodashUnionWith1x4[T] extends js.Object {
     comparator: lodashLib.lodashMod.underscoreNs.Comparator[T],
     arrays: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply(comparator: lodashLib.lodashMod.underscoreNs.`__`): LodashUnionWith1x6[T] = js.native
-  def apply(
-    comparator: lodashLib.lodashMod.underscoreNs.`__`,
-    arrays: lodashLib.lodashMod.underscoreNs.List[T]
-  ): LodashUnionWith1x6[T] = js.native
+  def apply(comparator: lodashLib.lodashMod.underscoreNs.__): LodashUnionWith1x6[T] = js.native
+  def apply(comparator: lodashLib.lodashMod.underscoreNs.__, arrays: lodashLib.lodashMod.underscoreNs.List[T]): LodashUnionWith1x6[T] = js.native
 }
 

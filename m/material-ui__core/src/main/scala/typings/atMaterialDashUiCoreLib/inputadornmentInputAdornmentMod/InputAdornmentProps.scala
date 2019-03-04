@@ -33,8 +33,7 @@ object InputAdornmentProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled = null
   ): InputAdornmentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])

@@ -20,10 +20,7 @@ object CreateMixin {
     received: js.Function1[js.Any, scala.Unit],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Function] = null
   ): CreateMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("disconnected")(disconnected)
-    __obj.updateDynamic("received")(received)
+    val __obj = js.Dynamic.literal(connected = connected, disconnected = disconnected, received = received)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CreateMixin]
   }

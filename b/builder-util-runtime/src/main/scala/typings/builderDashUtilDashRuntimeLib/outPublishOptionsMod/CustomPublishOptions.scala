@@ -19,8 +19,7 @@ object CustomPublishOptions {
     publisherName: js.Array[java.lang.String] = null,
     updaterCacheDirName: java.lang.String = null
   ): CustomPublishOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(provider = provider)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)

@@ -35,16 +35,7 @@ object JenkinsEnv {
     pr: java.lang.String = null,
     prBranch: java.lang.String = null
   ): JenkinsEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildUrl")(buildUrl)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("isPr")(isPr)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(branch = branch, build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, name = name, root = root, service = service)
     if (pr != null) __obj.updateDynamic("pr")(pr)
     if (prBranch != null) __obj.updateDynamic("prBranch")(prBranch)
     __obj.asInstanceOf[JenkinsEnv]

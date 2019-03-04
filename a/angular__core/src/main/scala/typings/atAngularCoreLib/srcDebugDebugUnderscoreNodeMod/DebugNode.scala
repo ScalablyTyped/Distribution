@@ -28,14 +28,7 @@ object DebugNode {
     references: org.scalablytyped.runtime.StringDictionary[js.Any],
     parent: DebugElement = null
   ): DebugNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentInstance")(componentInstance)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("injector")(injector)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("nativeNode")(nativeNode)
-    __obj.updateDynamic("providerTokens")(providerTokens)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(componentInstance = componentInstance, context = context, injector = injector, listeners = listeners, nativeNode = nativeNode, providerTokens = providerTokens, references = references)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[DebugNode]
   }

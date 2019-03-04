@@ -82,10 +82,7 @@ object SumoLoggerOptions {
     sourceCategory: java.lang.String = null,
     sourceName: java.lang.String = null
   ): SumoLoggerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onSuccess")(onSuccess)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, onError = onError, onSuccess = onSuccess)
     if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
     if (!js.isUndefined(graphite)) __obj.updateDynamic("graphite")(graphite)
     if (hostName != null) __obj.updateDynamic("hostName")(hostName)

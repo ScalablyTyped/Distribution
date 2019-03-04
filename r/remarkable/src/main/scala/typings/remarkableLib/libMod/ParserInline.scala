@@ -31,11 +31,8 @@ object ParserInline {
     tokenize: js.Function1[remarkableLib.libMod.RemarkableNs.StateInline, scala.Unit],
     validateLink: js.Function1[java.lang.String, scala.Boolean]
   ): ParserInline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("skipToken")(skipToken)
-    __obj.updateDynamic("tokenize")(tokenize)
-    __obj.updateDynamic("validateLink")(validateLink)
+    val __obj = js.Dynamic.literal(parse = parse, skipToken = skipToken, tokenize = tokenize, validateLink = validateLink)
+  
     __obj.asInstanceOf[ParserInline]
   }
 }

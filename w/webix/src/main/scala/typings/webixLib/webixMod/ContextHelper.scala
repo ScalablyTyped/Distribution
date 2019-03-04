@@ -18,10 +18,8 @@ object ContextHelper {
     getContext: js.Function0[js.Any],
     setContext: js.Function1[js.Any, scala.Unit]
   ): ContextHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachTo")(attachTo)
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("setContext")(setContext)
+    val __obj = js.Dynamic.literal(attachTo = attachTo, getContext = getContext, setContext = setContext)
+  
     __obj.asInstanceOf[ContextHelper]
   }
 }

@@ -13,9 +13,8 @@ trait MidiPermissionDescriptor extends PermissionDescriptor {
 object MidiPermissionDescriptor {
   @scala.inline
   def apply(name: java.lang.String, sysex: scala.Boolean): MidiPermissionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sysex")(sysex)
+    val __obj = js.Dynamic.literal(name = name, sysex = sysex)
+  
     __obj.asInstanceOf[MidiPermissionDescriptor]
   }
 }

@@ -12,8 +12,8 @@ trait Base extends js.Object {
 object Base {
   @scala.inline
   def apply(create: js.Function0[js.Any]): Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[Base]
   }
 }

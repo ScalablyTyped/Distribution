@@ -19,8 +19,8 @@ trait ASPxClientRibbonTabEventArgs extends ASPxClientEventArgs {
 object ASPxClientRibbonTabEventArgs {
   @scala.inline
   def apply(tab: ASPxClientRibbonTab): ASPxClientRibbonTabEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tab")(tab)
+    val __obj = js.Dynamic.literal(tab = tab)
+  
     __obj.asInstanceOf[ASPxClientRibbonTabEventArgs]
   }
 }

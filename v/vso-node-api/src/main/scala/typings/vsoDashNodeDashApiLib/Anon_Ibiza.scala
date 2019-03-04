@@ -22,12 +22,8 @@ object Anon_Ibiza {
     undefined: scala.Double,
     userInterface: scala.Double
   ): Anon_Ibiza = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ibiza")(ibiza)
-    __obj.updateDynamic("portalExtensionApi")(portalExtensionApi)
-    __obj.updateDynamic("restApi")(restApi)
-    __obj.updateDynamic("undefined")(undefined)
-    __obj.updateDynamic("userInterface")(userInterface)
+    val __obj = js.Dynamic.literal(ibiza = ibiza, portalExtensionApi = portalExtensionApi, restApi = restApi, undefined = undefined, userInterface = userInterface)
+  
     __obj.asInstanceOf[Anon_Ibiza]
   }
 }

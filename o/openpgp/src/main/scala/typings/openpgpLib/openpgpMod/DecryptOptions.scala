@@ -32,8 +32,7 @@ object DecryptOptions {
     signature: Signature = null,
     streaming: openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false` = null
   ): DecryptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (date != null) __obj.updateDynamic("date")(date)
     if (format != null) __obj.updateDynamic("format")(format)
     if (passwords != null) __obj.updateDynamic("passwords")(passwords.asInstanceOf[js.Any])

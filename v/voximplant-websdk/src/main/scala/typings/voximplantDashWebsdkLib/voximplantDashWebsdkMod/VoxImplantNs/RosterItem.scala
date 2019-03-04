@@ -40,12 +40,8 @@ object RosterItem {
     resources: js.Array[java.lang.String],
     subscription_type: scala.Double
   ): RosterItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("subscription_type")(subscription_type)
+    val __obj = js.Dynamic.literal(groups = groups, id = id, name = name, resources = resources, subscription_type = subscription_type)
+  
     __obj.asInstanceOf[RosterItem]
   }
 }

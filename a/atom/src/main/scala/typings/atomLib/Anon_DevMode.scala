@@ -20,8 +20,7 @@ object Anon_DevMode {
     newWindow: js.UndefOr[scala.Boolean] = js.undefined,
     safeMode: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DevMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathsToOpen")(pathsToOpen)
+    val __obj = js.Dynamic.literal(pathsToOpen = pathsToOpen)
     if (!js.isUndefined(devMode)) __obj.updateDynamic("devMode")(devMode)
     if (!js.isUndefined(newWindow)) __obj.updateDynamic("newWindow")(newWindow)
     if (!js.isUndefined(safeMode)) __obj.updateDynamic("safeMode")(safeMode)

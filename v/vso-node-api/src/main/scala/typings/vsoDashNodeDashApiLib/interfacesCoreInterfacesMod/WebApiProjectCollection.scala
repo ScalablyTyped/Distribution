@@ -26,13 +26,8 @@ object WebApiProjectCollection {
     state: java.lang.String,
     url: java.lang.String
   ): WebApiProjectCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collectionUrl")(collectionUrl)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(collectionUrl = collectionUrl, description = description, id = id, name = name, state = state, url = url)
+  
     __obj.asInstanceOf[WebApiProjectCollection]
   }
 }

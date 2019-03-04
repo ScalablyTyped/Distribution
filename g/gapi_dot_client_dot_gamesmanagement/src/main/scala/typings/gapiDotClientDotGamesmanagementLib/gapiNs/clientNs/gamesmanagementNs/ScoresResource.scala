@@ -54,12 +54,8 @@ object ScoresResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): ScoresResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("resetAll")(resetAll)
-    __obj.updateDynamic("resetAllForAllPlayers")(resetAllForAllPlayers)
-    __obj.updateDynamic("resetForAllPlayers")(resetForAllPlayers)
-    __obj.updateDynamic("resetMultipleForAllPlayers")(resetMultipleForAllPlayers)
+    val __obj = js.Dynamic.literal(reset = reset, resetAll = resetAll, resetAllForAllPlayers = resetAllForAllPlayers, resetForAllPlayers = resetForAllPlayers, resetMultipleForAllPlayers = resetMultipleForAllPlayers)
+  
     __obj.asInstanceOf[ScoresResource]
   }
 }

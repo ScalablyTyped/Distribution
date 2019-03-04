@@ -52,11 +52,7 @@ object KosModel {
     ] = null,
     setup: js.Function2[/* dispatch */ KosDispatch, /* getState */ GetKosState[T], scala.Unit] = null
   ): KosModel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asyncs")(asyncs)
-    __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("reducers")(reducers)
+    val __obj = js.Dynamic.literal(asyncs = asyncs, initial = initial.asInstanceOf[js.Any], namespace = namespace, reducers = reducers)
     if (getAsync != null) __obj.updateDynamic("getAsync")(getAsync)
     if (setup != null) __obj.updateDynamic("setup")(setup)
     __obj.asInstanceOf[KosModel[T]]

@@ -20,9 +20,7 @@ object RTCRtpCodecCapability {
     channels: scala.Int | scala.Double = null,
     sdpFmtpLine: java.lang.String = null
   ): RTCRtpCodecCapability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clockRate")(clockRate)
-    __obj.updateDynamic("mimeType")(mimeType)
+    val __obj = js.Dynamic.literal(clockRate = clockRate, mimeType = mimeType)
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (sdpFmtpLine != null) __obj.updateDynamic("sdpFmtpLine")(sdpFmtpLine)
     __obj.asInstanceOf[RTCRtpCodecCapability]

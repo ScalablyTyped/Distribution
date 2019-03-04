@@ -45,12 +45,8 @@ object ScaleEventInfo {
     xScale: scala.Double,
     yScale: scala.Double
   ): ScaleEventInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("xScale")(xScale)
-    __obj.updateDynamic("yScale")(yScale)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, xScale = xScale, yScale = yScale)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ScaleEventInfo]
   }
 }

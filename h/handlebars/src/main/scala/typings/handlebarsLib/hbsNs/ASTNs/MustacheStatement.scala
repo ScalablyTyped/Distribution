@@ -24,13 +24,8 @@ object MustacheStatement {
     strip: StripFlags,
     `type`: java.lang.String
   ): MustacheStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("escaped")(escaped)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    __obj.updateDynamic("strip")(strip)
+    val __obj = js.Dynamic.literal(escaped = escaped, hash = hash, loc = loc, params = params, path = path.asInstanceOf[js.Any], strip = strip)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MustacheStatement]
   }
 }

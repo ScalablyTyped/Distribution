@@ -22,10 +22,8 @@ object ZonesResource {
     ],
     operations: OperationsResource
   ): ZonesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusters")(clusters)
-    __obj.updateDynamic("getServerconfig")(getServerconfig)
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(clusters = clusters, getServerconfig = getServerconfig, operations = operations)
+  
     __obj.asInstanceOf[ZonesResource]
   }
 }

@@ -27,10 +27,8 @@ object GetInvocationResult {
     result: java.lang.String,
     resultMap: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): GetInvocationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("resultMap")(resultMap)
+    val __obj = js.Dynamic.literal(id = id, result = result, resultMap = resultMap)
+  
     __obj.asInstanceOf[GetInvocationResult]
   }
 }

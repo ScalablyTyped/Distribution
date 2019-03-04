@@ -13,7 +13,7 @@ class Database protected ()
     * The constructor should not be called by users of our public API.
     * @param {!Repo} repo_
     */
-  def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
+  def this(repo_ : atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
 }
 
 /* static members */

@@ -24,12 +24,8 @@ object Image {
     url: java.lang.String,
     width: scala.Double
   ): Image = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("thumbnail")(thumbnail)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, size = size, thumbnail = thumbnail, url = url, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Image]
   }
 }

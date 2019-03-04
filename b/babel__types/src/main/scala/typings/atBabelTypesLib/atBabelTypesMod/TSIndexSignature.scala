@@ -30,8 +30,8 @@ object TSIndexSignature {
     trailingComments: js.Array[Comment] = null,
     typeAnnotation: TSTypeAnnotation = null
   ): TSIndexSignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

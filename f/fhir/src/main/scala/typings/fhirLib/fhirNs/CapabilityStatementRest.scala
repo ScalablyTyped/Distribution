@@ -76,8 +76,7 @@ object CapabilityStatementRest {
     searchParam: js.Array[CapabilityStatementRestResourceSearchParam] = null,
     security: CapabilityStatementRestSecurity = null
   ): CapabilityStatementRest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (_compartment != null) __obj.updateDynamic("_compartment")(_compartment)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

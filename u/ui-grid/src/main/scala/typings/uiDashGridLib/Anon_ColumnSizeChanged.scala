@@ -26,8 +26,8 @@ object Anon_ColumnSizeChanged {
       scala.Unit
     ]
   ): Anon_ColumnSizeChanged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnSizeChanged")(columnSizeChanged)
+    val __obj = js.Dynamic.literal(columnSizeChanged = columnSizeChanged)
+  
     __obj.asInstanceOf[Anon_ColumnSizeChanged]
   }
 }

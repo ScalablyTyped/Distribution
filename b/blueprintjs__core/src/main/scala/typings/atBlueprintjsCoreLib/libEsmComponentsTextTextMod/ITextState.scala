@@ -13,9 +13,8 @@ trait ITextState extends js.Object {
 object ITextState {
   @scala.inline
   def apply(isContentOverflowing: scala.Boolean, textContent: java.lang.String): ITextState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isContentOverflowing")(isContentOverflowing)
-    __obj.updateDynamic("textContent")(textContent)
+    val __obj = js.Dynamic.literal(isContentOverflowing = isContentOverflowing, textContent = textContent)
+  
     __obj.asInstanceOf[ITextState]
   }
 }

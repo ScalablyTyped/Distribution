@@ -56,15 +56,8 @@ object BackgroundTokenizer {
     states: js.Array[_],
     stop: js.Function0[scala.Unit]
   ): BackgroundTokenizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fireUpdateEvent")(fireUpdateEvent)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("getTokens")(getTokens)
-    __obj.updateDynamic("setDocument")(setDocument)
-    __obj.updateDynamic("setTokenizer")(setTokenizer)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("states")(states)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(fireUpdateEvent = fireUpdateEvent, getState = getState, getTokens = getTokens, setDocument = setDocument, setTokenizer = setTokenizer, start = start, states = states, stop = stop)
+  
     __obj.asInstanceOf[BackgroundTokenizer]
   }
 }

@@ -74,38 +74,8 @@ object ITextParagraphFormat {
     tabCount: scala.Double,
     widowControl: FormatEffect
   ): ITextParagraphFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTab")(addTab)
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("clearAllTabs")(clearAllTabs)
-    __obj.updateDynamic("deleteTab")(deleteTab)
-    __obj.updateDynamic("firstLineIndent")(firstLineIndent)
-    __obj.updateDynamic("getClone")(getClone)
-    __obj.updateDynamic("getTab")(getTab)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("keepTogether")(keepTogether)
-    __obj.updateDynamic("keepWithNext")(keepWithNext)
-    __obj.updateDynamic("leftIndent")(leftIndent)
-    __obj.updateDynamic("lineSpacing")(lineSpacing)
-    __obj.updateDynamic("lineSpacingRule")(lineSpacingRule)
-    __obj.updateDynamic("listAlignment")(listAlignment)
-    __obj.updateDynamic("listLevelIndex")(listLevelIndex)
-    __obj.updateDynamic("listStart")(listStart)
-    __obj.updateDynamic("listStyle")(listStyle)
-    __obj.updateDynamic("listTab")(listTab)
-    __obj.updateDynamic("listType")(listType)
-    __obj.updateDynamic("noLineNumber")(noLineNumber)
-    __obj.updateDynamic("pageBreakBefore")(pageBreakBefore)
-    __obj.updateDynamic("rightIndent")(rightIndent)
-    __obj.updateDynamic("rightToLeft")(rightToLeft)
-    __obj.updateDynamic("setClone")(setClone)
-    __obj.updateDynamic("setIndents")(setIndents)
-    __obj.updateDynamic("setLineSpacing")(setLineSpacing)
-    __obj.updateDynamic("spaceAfter")(spaceAfter)
-    __obj.updateDynamic("spaceBefore")(spaceBefore)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("tabCount")(tabCount)
-    __obj.updateDynamic("widowControl")(widowControl)
+    val __obj = js.Dynamic.literal(addTab = addTab, alignment = alignment, clearAllTabs = clearAllTabs, deleteTab = deleteTab, firstLineIndent = firstLineIndent, getClone = getClone, getTab = getTab, isEqual = isEqual, keepTogether = keepTogether, keepWithNext = keepWithNext, leftIndent = leftIndent, lineSpacing = lineSpacing, lineSpacingRule = lineSpacingRule, listAlignment = listAlignment, listLevelIndex = listLevelIndex, listStart = listStart, listStyle = listStyle, listTab = listTab, listType = listType, noLineNumber = noLineNumber, pageBreakBefore = pageBreakBefore, rightIndent = rightIndent, rightToLeft = rightToLeft, setClone = setClone, setIndents = setIndents, setLineSpacing = setLineSpacing, spaceAfter = spaceAfter, spaceBefore = spaceBefore, style = style, tabCount = tabCount, widowControl = widowControl)
+  
     __obj.asInstanceOf[ITextParagraphFormat]
   }
 }

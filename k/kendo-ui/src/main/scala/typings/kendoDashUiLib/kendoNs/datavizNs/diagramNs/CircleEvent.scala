@@ -14,10 +14,8 @@ trait CircleEvent extends js.Object {
 object CircleEvent {
   @scala.inline
   def apply(isDefaultPrevented: js.Function0[scala.Boolean], preventDefault: js.Function, sender: Circle): CircleEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
+  
     __obj.asInstanceOf[CircleEvent]
   }
 }

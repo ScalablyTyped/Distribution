@@ -22,12 +22,8 @@ object Context {
     serial: scala.Boolean,
     status: js.Any
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(nice = nice, ready = ready, scopes = scopes, serial = serial, status = status)
+  
     __obj.asInstanceOf[Context]
   }
 }

@@ -36,12 +36,7 @@ object Anon_CategoryConfiguration {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     runOrder: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_CategoryConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts.asInstanceOf[js.Any])
     if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts.asInstanceOf[js.Any])

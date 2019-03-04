@@ -69,15 +69,8 @@ object ExtensionInfo {
     updateUrl: java.lang.String = null,
     versionName: java.lang.String = null
   ): ExtensionInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("installType")(installType)
-    __obj.updateDynamic("mayDisable")(mayDisable)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optionsUrl")(optionsUrl)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(description = description, enabled = enabled, id = id, installType = installType, mayDisable = mayDisable, name = name, optionsUrl = optionsUrl, version = version)
+    __obj.updateDynamic("type")(`type`)
     if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
     if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
     if (hostPermissions != null) __obj.updateDynamic("hostPermissions")(hostPermissions)

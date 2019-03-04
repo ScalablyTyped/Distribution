@@ -19,10 +19,7 @@ object WriteOptions {
     result: TResult,
     variables: TVariables = null
   ): WriteOptions[TResult, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataId")(dataId)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataId = dataId, query = query, result = result.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions[TResult, TVariables]]
   }

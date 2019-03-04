@@ -37,13 +37,8 @@ object ColorSliderValues {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     value: scala.Double
   ): ColorSliderValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, label = label, propertyIsEnumerable = propertyIsEnumerable, value = value)
+  
     __obj.asInstanceOf[ColorSliderValues]
   }
 }

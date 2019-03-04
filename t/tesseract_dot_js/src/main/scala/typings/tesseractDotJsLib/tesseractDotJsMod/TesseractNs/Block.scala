@@ -34,18 +34,8 @@ object Block {
     text: java.lang.String,
     words: js.Array[Word]
   ): Block = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("blocktype")(blocktype)
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("paragraphs")(paragraphs)
-    __obj.updateDynamic("polygon")(polygon)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(baseline = baseline, bbox = bbox, blocktype = blocktype, confidence = confidence, lines = lines, page = page, paragraphs = paragraphs, polygon = polygon, symbols = symbols, text = text, words = words)
+  
     __obj.asInstanceOf[Block]
   }
 }

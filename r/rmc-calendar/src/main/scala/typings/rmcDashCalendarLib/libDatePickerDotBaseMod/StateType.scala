@@ -12,8 +12,8 @@ trait StateType extends js.Object {
 object StateType {
   @scala.inline
   def apply(months: js.Array[rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.MonthData]): StateType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("months")(months)
+    val __obj = js.Dynamic.literal(months = months)
+  
     __obj.asInstanceOf[StateType]
   }
 }

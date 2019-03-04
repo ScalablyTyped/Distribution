@@ -22,12 +22,8 @@ object FeaturesResultPayload {
     strict: scala.Boolean,
     success: scala.Boolean
   ): FeaturesResultPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("scenarioResults")(scenarioResults)
-    __obj.updateDynamic("stepsResults")(stepsResults)
-    __obj.updateDynamic("strict")(strict)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(duration = duration, scenarioResults = scenarioResults, stepsResults = stepsResults, strict = strict, success = success)
+  
     __obj.asInstanceOf[FeaturesResultPayload]
   }
 }

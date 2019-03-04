@@ -24,9 +24,8 @@ trait MetricIdentifier extends js.Object {
 object MetricIdentifier {
   @scala.inline
   def apply(name: java.lang.String, selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector): MetricIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(name = name, selector = selector)
+  
     __obj.asInstanceOf[MetricIdentifier]
   }
 }

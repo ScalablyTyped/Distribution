@@ -20,10 +20,8 @@ object Network {
     webRTCMultipleRoutesEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
     webRTCNonProxiedUdpEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
   ): Network = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkPredictionEnabled")(networkPredictionEnabled)
-    __obj.updateDynamic("webRTCMultipleRoutesEnabled")(webRTCMultipleRoutesEnabled)
-    __obj.updateDynamic("webRTCNonProxiedUdpEnabled")(webRTCNonProxiedUdpEnabled)
+    val __obj = js.Dynamic.literal(networkPredictionEnabled = networkPredictionEnabled, webRTCMultipleRoutesEnabled = webRTCMultipleRoutesEnabled, webRTCNonProxiedUdpEnabled = webRTCNonProxiedUdpEnabled)
+  
     __obj.asInstanceOf[Network]
   }
 }

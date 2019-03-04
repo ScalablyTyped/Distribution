@@ -47,22 +47,8 @@ object XAutoTextGroup {
     removeByName: js.Function1[java.lang.String, scala.Unit],
     renameByName: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit]
   ): XAutoTextGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Titles")(Titles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getTitles")(getTitles)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertNewByName")(insertNewByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("renameByName")(renameByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, Titles = Titles, acquire = acquire, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, getTitles = getTitles, hasByName = hasByName, hasElements = hasElements, insertNewByName = insertNewByName, queryInterface = queryInterface, release = release, removeByName = removeByName, renameByName = renameByName)
+  
     __obj.asInstanceOf[XAutoTextGroup]
   }
 }

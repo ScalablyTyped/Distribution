@@ -18,9 +18,7 @@ object Arguments {
     key: nodeLib.Buffer,
     progress_hook: js.Function1[/* progress */ Progress, scala.Unit] = null
   ): Arguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(data = data, key = key)
     if (progress_hook != null) __obj.updateDynamic("progress_hook")(progress_hook)
     __obj.asInstanceOf[Arguments]
   }

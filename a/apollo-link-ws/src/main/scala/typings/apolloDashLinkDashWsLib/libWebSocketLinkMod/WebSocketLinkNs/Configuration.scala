@@ -18,8 +18,7 @@ object Configuration {
     options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions = null,
     webSocketImpl: js.Any = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
     if (options != null) __obj.updateDynamic("options")(options)
     if (webSocketImpl != null) __obj.updateDynamic("webSocketImpl")(webSocketImpl)
     __obj.asInstanceOf[Configuration]

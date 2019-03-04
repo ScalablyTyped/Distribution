@@ -22,9 +22,7 @@ object Anon_Icons {
     id: java.lang.String = null,
     selected: scala.Int | scala.Double = null
   ): Anon_Icons = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(labels = labels, tabs = tabs)
     if (icons != null) __obj.updateDynamic("icons")(icons)
     if (id != null) __obj.updateDynamic("id")(id)
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])

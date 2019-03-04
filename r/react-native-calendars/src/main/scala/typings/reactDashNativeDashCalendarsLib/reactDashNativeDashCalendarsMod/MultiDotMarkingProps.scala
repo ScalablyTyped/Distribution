@@ -16,9 +16,8 @@ object MultiDotMarkingProps {
     markedDates: org.scalablytyped.runtime.StringDictionary[MultiDotMarking],
     markingType: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.`multi-dot`
   ): MultiDotMarkingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("markedDates")(markedDates)
-    __obj.updateDynamic("markingType")(markingType)
+    val __obj = js.Dynamic.literal(markedDates = markedDates, markingType = markingType)
+  
     __obj.asInstanceOf[MultiDotMarkingProps]
   }
 }

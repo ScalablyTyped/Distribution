@@ -39,15 +39,8 @@ object AutofillCalculations {
       js.Array[scala.Double]
     ]
   ): AutofillCalculations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("correctSelectionAreaSize")(correctSelectionAreaSize)
-    __obj.updateDynamic("currentFillData")(currentFillData)
-    __obj.updateDynamic("dragAreaOverlapsCollections")(dragAreaOverlapsCollections)
-    __obj.updateDynamic("getDirection")(getDirection)
-    __obj.updateDynamic("mergedCellsCollection")(mergedCellsCollection)
-    __obj.updateDynamic("plugin")(plugin)
-    __obj.updateDynamic("recreateAfterDataPopulation")(recreateAfterDataPopulation)
-    __obj.updateDynamic("snapDragArea")(snapDragArea)
+    val __obj = js.Dynamic.literal(correctSelectionAreaSize = correctSelectionAreaSize, currentFillData = currentFillData, dragAreaOverlapsCollections = dragAreaOverlapsCollections, getDirection = getDirection, mergedCellsCollection = mergedCellsCollection, plugin = plugin, recreateAfterDataPopulation = recreateAfterDataPopulation, snapDragArea = snapDragArea)
+  
     __obj.asInstanceOf[AutofillCalculations]
   }
 }

@@ -27,8 +27,7 @@ object ValidatorOptions {
     min: java.lang.String = null,
     translationKey: java.lang.String = null
   ): ValidatorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("converter")(converter)
+    val __obj = js.Dynamic.literal(converter = converter)
     if (hint != null) __obj.updateDynamic("hint")(hint)
     if (max != null) __obj.updateDynamic("max")(max)
     if (messageDetail != null) __obj.updateDynamic("messageDetail")(messageDetail)

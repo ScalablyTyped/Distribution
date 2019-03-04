@@ -12,7 +12,7 @@ trait LodashUniqWith extends js.Object {
     comparator: lodashLib.lodashMod.underscoreNs.Comparator[T],
     array: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[T] = js.native
-  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.`__`): LodashUniqWith1x2[T] = js.native
-  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashUniqWith1x2[T] = js.native
+  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.__): LodashUniqWith1x2[T] = js.native
+  def apply[T](comparator: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashUniqWith1x2[T] = js.native
 }
 

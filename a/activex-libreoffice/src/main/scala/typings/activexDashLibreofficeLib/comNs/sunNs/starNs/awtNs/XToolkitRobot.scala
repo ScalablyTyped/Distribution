@@ -26,12 +26,8 @@ object XToolkitRobot {
     mousePress: js.Function1[MouseEvent, scala.Unit],
     mouseRelease: js.Function1[MouseEvent, scala.Unit]
   ): XToolkitRobot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyPress")(keyPress)
-    __obj.updateDynamic("keyRelease")(keyRelease)
-    __obj.updateDynamic("mouseMove")(mouseMove)
-    __obj.updateDynamic("mousePress")(mousePress)
-    __obj.updateDynamic("mouseRelease")(mouseRelease)
+    val __obj = js.Dynamic.literal(keyPress = keyPress, keyRelease = keyRelease, mouseMove = mouseMove, mousePress = mousePress, mouseRelease = mouseRelease)
+  
     __obj.asInstanceOf[XToolkitRobot]
   }
 }

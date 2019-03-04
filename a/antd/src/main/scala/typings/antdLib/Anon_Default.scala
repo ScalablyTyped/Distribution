@@ -18,10 +18,8 @@ object Anon_Default {
     spinning: scala.Boolean,
     wrapperClassName: java.lang.String
   ): Anon_Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("spinning")(spinning)
-    __obj.updateDynamic("wrapperClassName")(wrapperClassName)
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], spinning = spinning, wrapperClassName = wrapperClassName)
+  
     __obj.asInstanceOf[Anon_Default]
   }
 }

@@ -32,11 +32,8 @@ object Feature {
     scopedCSS: scala.Boolean,
     shadowDOM: scala.Boolean
   ): Feature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlTemplateElement")(htmlTemplateElement)
-    __obj.updateDynamic("mutationObserver")(mutationObserver)
-    __obj.updateDynamic("scopedCSS")(scopedCSS)
-    __obj.updateDynamic("shadowDOM")(shadowDOM)
+    val __obj = js.Dynamic.literal(htmlTemplateElement = htmlTemplateElement, mutationObserver = mutationObserver, scopedCSS = scopedCSS, shadowDOM = shadowDOM)
+  
     __obj.asInstanceOf[Feature]
   }
 }

@@ -31,16 +31,8 @@ object RawRules {
     orderByDesc: java.lang.String,
     table: java.lang.String
   ): RawRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("groupBy")(groupBy)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("limitEnd")(limitEnd)
-    __obj.updateDynamic("limitStart")(limitStart)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("orderByDesc")(orderByDesc)
-    __obj.updateDynamic("table")(table)
+    val __obj = js.Dynamic.literal(begin = begin, end = end, groupBy = groupBy, limit = limit, limitEnd = limitEnd, limitStart = limitStart, orderBy = orderBy, orderByDesc = orderByDesc, table = table)
+  
     __obj.asInstanceOf[RawRules]
   }
 }

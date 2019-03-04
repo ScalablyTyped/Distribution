@@ -26,8 +26,8 @@ object Anon_CallbackGetNetworkInterfaces {
       scala.Unit
     ]
   ): Anon_CallbackGetNetworkInterfaces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getNetworkInterfaces")(getNetworkInterfaces)
+    val __obj = js.Dynamic.literal(getNetworkInterfaces = getNetworkInterfaces)
+  
     __obj.asInstanceOf[Anon_CallbackGetNetworkInterfaces]
   }
 }

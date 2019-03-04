@@ -36,8 +36,7 @@ object Anon_Canvas {
     shadows: js.UndefOr[scala.Boolean] = js.undefined,
     terrainExaggeration: scala.Int | scala.Double = null
   ): Anon_Canvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvas")(canvas)
+    val __obj = js.Dynamic.literal(canvas = canvas)
     if (contextOptions != null) __obj.updateDynamic("contextOptions")(contextOptions)
     if (creditContainer != null) __obj.updateDynamic("creditContainer")(creditContainer)
     if (creditViewport != null) __obj.updateDynamic("creditViewport")(creditViewport)

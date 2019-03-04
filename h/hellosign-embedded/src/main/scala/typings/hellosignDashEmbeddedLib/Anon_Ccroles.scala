@@ -20,11 +20,8 @@ object Anon_Ccroles {
     signer_roles: js.Array[Anon_Name],
     title: java.lang.String
   ): Anon_Ccroles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cc_roles")(cc_roles)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("signer_roles")(signer_roles)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cc_roles = cc_roles, message = message, signer_roles = signer_roles, title = title)
+  
     __obj.asInstanceOf[Anon_Ccroles]
   }
 }

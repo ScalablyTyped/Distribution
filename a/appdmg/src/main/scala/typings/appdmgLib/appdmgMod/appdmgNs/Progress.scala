@@ -22,11 +22,8 @@ object Progress {
     total: scala.Double,
     `type`: appdmgLib.appdmgLibStrings.`step-begin` | appdmgLib.appdmgLibStrings.`step-end`
   ): Progress = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(current = current, status = status.asInstanceOf[js.Any], title = title, total = total)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
 }

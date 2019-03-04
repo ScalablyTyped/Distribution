@@ -18,10 +18,8 @@ object IAilmentRegistry {
     get: js.Function1[java.lang.String, js.UndefOr[IAilment]],
     register: js.Function1[IAilment, scala.Unit]
   ): IAilmentRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ailments")(ailments)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(ailments = ailments, get = get, register = register)
+  
     __obj.asInstanceOf[IAilmentRegistry]
   }
 }

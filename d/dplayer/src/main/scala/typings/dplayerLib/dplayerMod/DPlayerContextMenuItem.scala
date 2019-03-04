@@ -14,8 +14,7 @@ trait DPlayerContextMenuItem extends js.Object {
 object DPlayerContextMenuItem {
   @scala.inline
   def apply(text: java.lang.String, click: js.Function0[scala.Unit] = null, link: java.lang.String = null): DPlayerContextMenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (click != null) __obj.updateDynamic("click")(click)
     if (link != null) __obj.updateDynamic("link")(link)
     __obj.asInstanceOf[DPlayerContextMenuItem]

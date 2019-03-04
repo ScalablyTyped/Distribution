@@ -36,8 +36,8 @@ object WebThemeOptions {
     styles: js.Array[java.lang.String] = null,
     version: java.lang.String = null
   ): WebThemeOptions = {
-    val __obj = js.Dynamic.literal(`static.mount` = `static.mount`)
-    __obj.updateDynamic("rtl")(rtl)
+    val __obj = js.Dynamic.literal(rtl = rtl)
+    __obj.updateDynamic("static.mount")(`static.mount`)
     if (favicon != null) __obj.updateDynamic("favicon")(favicon)
     if (format != null) __obj.updateDynamic("format")(format)
     if (lang != null) __obj.updateDynamic("lang")(lang)

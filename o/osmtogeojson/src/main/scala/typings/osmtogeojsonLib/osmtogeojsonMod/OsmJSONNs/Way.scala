@@ -22,9 +22,8 @@ object Way {
     user: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): Way = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(id = id, nodes = nodes)
+    __obj.updateDynamic("type")(`type`)
     if (changeset != null) __obj.updateDynamic("changeset")(changeset.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

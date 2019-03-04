@@ -142,25 +142,8 @@ object XItemList {
     setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
     setItemTextAndImage: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit]
   ): XItemList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllItems")(AllItems)
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("addItemListListener")(addItemListListener)
-    __obj.updateDynamic("getAllItems")(getAllItems)
-    __obj.updateDynamic("getItemData")(getItemData)
-    __obj.updateDynamic("getItemImage")(getItemImage)
-    __obj.updateDynamic("getItemText")(getItemText)
-    __obj.updateDynamic("getItemTextAndImage")(getItemTextAndImage)
-    __obj.updateDynamic("insertItem")(insertItem)
-    __obj.updateDynamic("insertItemImage")(insertItemImage)
-    __obj.updateDynamic("insertItemText")(insertItemText)
-    __obj.updateDynamic("removeAllItems")(removeAllItems)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("removeItemListListener")(removeItemListListener)
-    __obj.updateDynamic("setItemData")(setItemData)
-    __obj.updateDynamic("setItemImage")(setItemImage)
-    __obj.updateDynamic("setItemText")(setItemText)
-    __obj.updateDynamic("setItemTextAndImage")(setItemTextAndImage)
+    val __obj = js.Dynamic.literal(AllItems = AllItems, ItemCount = ItemCount, addItemListListener = addItemListListener, getAllItems = getAllItems, getItemData = getItemData, getItemImage = getItemImage, getItemText = getItemText, getItemTextAndImage = getItemTextAndImage, insertItem = insertItem, insertItemImage = insertItemImage, insertItemText = insertItemText, removeAllItems = removeAllItems, removeItem = removeItem, removeItemListListener = removeItemListListener, setItemData = setItemData, setItemImage = setItemImage, setItemText = setItemText, setItemTextAndImage = setItemTextAndImage)
+  
     __obj.asInstanceOf[XItemList]
   }
 }

@@ -20,11 +20,8 @@ object PrintPageDescription {
     imageableRect: winrtLib.WindowsNs.FoundationNs.Rect,
     pageSize: winrtLib.WindowsNs.FoundationNs.Size
   ): PrintPageDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dpiX")(dpiX)
-    __obj.updateDynamic("dpiY")(dpiY)
-    __obj.updateDynamic("imageableRect")(imageableRect)
-    __obj.updateDynamic("pageSize")(pageSize)
+    val __obj = js.Dynamic.literal(dpiX = dpiX, dpiY = dpiY, imageableRect = imageableRect, pageSize = pageSize)
+  
     __obj.asInstanceOf[PrintPageDescription]
   }
 }

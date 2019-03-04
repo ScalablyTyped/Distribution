@@ -32,17 +32,8 @@ object IScroller {
     throttle: scala.Double,
     upDistance: scala.Double
   ): IScroller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysCallback")(alwaysCallback)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("downDistance")(downDistance)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("fromRoot")(fromRoot)
-    __obj.updateDynamic("horizontal")(horizontal)
-    __obj.updateDynamic("scrollContainer")(scrollContainer.asInstanceOf[js.Any])
-    __obj.updateDynamic("scrollWindow")(scrollWindow)
-    __obj.updateDynamic("throttle")(throttle)
-    __obj.updateDynamic("upDistance")(upDistance)
+    val __obj = js.Dynamic.literal(alwaysCallback = alwaysCallback, disable = disable, downDistance = downDistance, element = element, fromRoot = fromRoot, horizontal = horizontal, scrollContainer = scrollContainer.asInstanceOf[js.Any], scrollWindow = scrollWindow, throttle = throttle, upDistance = upDistance)
+  
     __obj.asInstanceOf[IScroller]
   }
 }

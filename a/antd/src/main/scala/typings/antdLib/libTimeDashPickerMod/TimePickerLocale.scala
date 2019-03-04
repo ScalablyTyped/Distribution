@@ -12,8 +12,8 @@ trait TimePickerLocale extends js.Object {
 object TimePickerLocale {
   @scala.inline
   def apply(placeholder: java.lang.String): TimePickerLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placeholder")(placeholder)
+    val __obj = js.Dynamic.literal(placeholder = placeholder)
+  
     __obj.asInstanceOf[TimePickerLocale]
   }
 }

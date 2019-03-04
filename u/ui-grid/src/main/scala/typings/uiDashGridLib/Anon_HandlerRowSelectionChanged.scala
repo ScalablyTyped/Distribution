@@ -42,9 +42,8 @@ object Anon_HandlerRowSelectionChanged {
       scala.Unit
     ]
   ): Anon_HandlerRowSelectionChanged[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowSelectionChanged")(rowSelectionChanged)
-    __obj.updateDynamic("rowSelectionChangedBatch")(rowSelectionChangedBatch)
+    val __obj = js.Dynamic.literal(rowSelectionChanged = rowSelectionChanged, rowSelectionChangedBatch = rowSelectionChangedBatch)
+  
     __obj.asInstanceOf[Anon_HandlerRowSelectionChanged[TEntity]]
   }
 }

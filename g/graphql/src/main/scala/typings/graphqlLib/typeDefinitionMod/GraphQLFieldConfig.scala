@@ -26,7 +26,8 @@ object GraphQLFieldConfig {
     resolve: GraphQLFieldResolver[TSource, TContext, TArgs] = null,
     subscribe: GraphQLFieldResolver[TSource, TContext, TArgs] = null
   ): GraphQLFieldConfig[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])

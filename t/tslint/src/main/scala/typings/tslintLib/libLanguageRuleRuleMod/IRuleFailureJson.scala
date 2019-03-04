@@ -26,13 +26,7 @@ object IRuleFailureJson {
     startPosition: IRuleFailurePositionJson,
     fix: FixJson = null
   ): IRuleFailureJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endPosition")(endPosition)
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ruleName")(ruleName)
-    __obj.updateDynamic("ruleSeverity")(ruleSeverity)
-    __obj.updateDynamic("startPosition")(startPosition)
+    val __obj = js.Dynamic.literal(endPosition = endPosition, failure = failure, name = name, ruleName = ruleName, ruleSeverity = ruleSeverity, startPosition = startPosition)
     if (fix != null) __obj.updateDynamic("fix")(fix.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRuleFailureJson]
   }

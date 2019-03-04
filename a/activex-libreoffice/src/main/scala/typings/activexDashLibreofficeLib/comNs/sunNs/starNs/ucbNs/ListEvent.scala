@@ -21,9 +21,8 @@ object ListEvent {
     Changes: activexDashInteropLib.SafeArray[ListAction],
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ListEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Changes")(Changes)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Changes = Changes, Source = Source)
+  
     __obj.asInstanceOf[ListEvent]
   }
 }

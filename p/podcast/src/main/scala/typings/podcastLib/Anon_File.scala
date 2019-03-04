@@ -20,8 +20,7 @@ object Anon_File {
     mime: java.lang.String = null,
     size: scala.Int | scala.Double = null
   ): Anon_File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (file != null) __obj.updateDynamic("file")(file)
     if (mime != null) __obj.updateDynamic("mime")(mime)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

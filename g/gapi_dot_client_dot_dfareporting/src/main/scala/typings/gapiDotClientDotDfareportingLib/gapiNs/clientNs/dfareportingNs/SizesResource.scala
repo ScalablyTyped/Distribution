@@ -30,10 +30,8 @@ object SizesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SizesListResponse]
     ]
   ): SizesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, insert = insert, list = list)
+  
     __obj.asInstanceOf[SizesResource]
   }
 }

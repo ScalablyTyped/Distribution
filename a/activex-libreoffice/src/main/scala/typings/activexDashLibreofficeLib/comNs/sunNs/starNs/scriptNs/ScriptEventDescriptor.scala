@@ -32,12 +32,8 @@ object ScriptEventDescriptor {
     ScriptCode: java.lang.String,
     ScriptType: java.lang.String
   ): ScriptEventDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddListenerParam")(AddListenerParam)
-    __obj.updateDynamic("EventMethod")(EventMethod)
-    __obj.updateDynamic("ListenerType")(ListenerType)
-    __obj.updateDynamic("ScriptCode")(ScriptCode)
-    __obj.updateDynamic("ScriptType")(ScriptType)
+    val __obj = js.Dynamic.literal(AddListenerParam = AddListenerParam, EventMethod = EventMethod, ListenerType = ListenerType, ScriptCode = ScriptCode, ScriptType = ScriptType)
+  
     __obj.asInstanceOf[ScriptEventDescriptor]
   }
 }

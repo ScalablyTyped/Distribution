@@ -56,24 +56,8 @@ object BootstrapClientAccordionGroup {
     name: java.lang.String,
     navBar: BootstrapClientAccordion
   ): BootstrapClientAccordionGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetExpanded")(GetExpanded)
-    __obj.updateDynamic("GetHeaderBadgeIconCssClass")(GetHeaderBadgeIconCssClass)
-    __obj.updateDynamic("GetHeaderBadgeText")(GetHeaderBadgeText)
-    __obj.updateDynamic("GetItem")(GetItem)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetItemCount")(GetItemCount)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetExpanded")(SetExpanded)
-    __obj.updateDynamic("SetHeaderBadgeIconCssClass")(SetHeaderBadgeIconCssClass)
-    __obj.updateDynamic("SetHeaderBadgeText")(SetHeaderBadgeText)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("navBar")(navBar)
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetHeaderBadgeIconCssClass = GetHeaderBadgeIconCssClass, GetHeaderBadgeText = GetHeaderBadgeText, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetText = GetText, GetVisible = GetVisible, SetExpanded = SetExpanded, SetHeaderBadgeIconCssClass = SetHeaderBadgeIconCssClass, SetHeaderBadgeText = SetHeaderBadgeText, SetText = SetText, SetVisible = SetVisible, index = index, name = name, navBar = navBar)
+  
     __obj.asInstanceOf[BootstrapClientAccordionGroup]
   }
 }

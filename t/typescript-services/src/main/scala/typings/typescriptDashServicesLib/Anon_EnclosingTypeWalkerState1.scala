@@ -16,9 +16,8 @@ object Anon_EnclosingTypeWalkerState1 {
     enclosingTypeWalkerState1: typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState,
     enclosingTypeWalkerState2: typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState
   ): Anon_EnclosingTypeWalkerState1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enclosingTypeWalkerState1")(enclosingTypeWalkerState1)
-    __obj.updateDynamic("enclosingTypeWalkerState2")(enclosingTypeWalkerState2)
+    val __obj = js.Dynamic.literal(enclosingTypeWalkerState1 = enclosingTypeWalkerState1, enclosingTypeWalkerState2 = enclosingTypeWalkerState2)
+  
     __obj.asInstanceOf[Anon_EnclosingTypeWalkerState1]
   }
 }

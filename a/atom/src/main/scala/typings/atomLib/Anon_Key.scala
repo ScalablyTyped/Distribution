@@ -16,8 +16,7 @@ object Anon_Key {
     newValue: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]],
     oldValue: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(newValue = newValue)
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
     __obj.asInstanceOf[Anon_Key]
   }

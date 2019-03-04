@@ -22,10 +22,8 @@ object Anon_Index {
     `type`: js.Function0[mssqlLib.mssqlMod.ISqlType] | mssqlLib.mssqlMod.ISqlType,
     udt: js.Any = null
   ): Anon_Index = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(index = index, length = length, name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (udt != null) __obj.updateDynamic("udt")(udt)
     __obj.asInstanceOf[Anon_Index]
   }

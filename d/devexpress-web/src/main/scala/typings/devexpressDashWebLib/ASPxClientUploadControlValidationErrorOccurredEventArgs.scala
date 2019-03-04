@@ -39,11 +39,8 @@ object ASPxClientUploadControlValidationErrorOccurredEventArgs {
     showAlert: scala.Boolean,
     validationSettings: ASPxClientUploadControlValidationSettings
   ): ASPxClientUploadControlValidationErrorOccurredEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("invalidFiles")(invalidFiles)
-    __obj.updateDynamic("showAlert")(showAlert)
-    __obj.updateDynamic("validationSettings")(validationSettings)
+    val __obj = js.Dynamic.literal(errorText = errorText, invalidFiles = invalidFiles, showAlert = showAlert, validationSettings = validationSettings)
+  
     __obj.asInstanceOf[ASPxClientUploadControlValidationErrorOccurredEventArgs]
   }
 }

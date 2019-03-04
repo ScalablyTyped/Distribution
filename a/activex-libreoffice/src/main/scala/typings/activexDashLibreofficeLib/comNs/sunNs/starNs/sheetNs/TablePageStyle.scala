@@ -114,27 +114,7 @@ object TablePageStyle {
     ScaleToPagesY: scala.Double,
     PageStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.PageStyle = null
   ): TablePageStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CenterHorizontally")(CenterHorizontally)
-    __obj.updateDynamic("CenterVertically")(CenterVertically)
-    __obj.updateDynamic("FirstPageNumber")(FirstPageNumber)
-    __obj.updateDynamic("LeftPageFooterContent")(LeftPageFooterContent)
-    __obj.updateDynamic("LeftPageHeaderContent")(LeftPageHeaderContent)
-    __obj.updateDynamic("PageScale")(PageScale)
-    __obj.updateDynamic("PrintAnnotations")(PrintAnnotations)
-    __obj.updateDynamic("PrintCharts")(PrintCharts)
-    __obj.updateDynamic("PrintDownFirst")(PrintDownFirst)
-    __obj.updateDynamic("PrintDrawing")(PrintDrawing)
-    __obj.updateDynamic("PrintFormulas")(PrintFormulas)
-    __obj.updateDynamic("PrintGrid")(PrintGrid)
-    __obj.updateDynamic("PrintHeaders")(PrintHeaders)
-    __obj.updateDynamic("PrintObjects")(PrintObjects)
-    __obj.updateDynamic("PrintZeroValues")(PrintZeroValues)
-    __obj.updateDynamic("RightPageFooterContent")(RightPageFooterContent)
-    __obj.updateDynamic("RightPageHeaderContent")(RightPageHeaderContent)
-    __obj.updateDynamic("ScaleToPages")(ScaleToPages)
-    __obj.updateDynamic("ScaleToPagesX")(ScaleToPagesX)
-    __obj.updateDynamic("ScaleToPagesY")(ScaleToPagesY)
+    val __obj = js.Dynamic.literal(CenterHorizontally = CenterHorizontally, CenterVertically = CenterVertically, FirstPageNumber = FirstPageNumber, LeftPageFooterContent = LeftPageFooterContent, LeftPageHeaderContent = LeftPageHeaderContent, PageScale = PageScale, PrintAnnotations = PrintAnnotations, PrintCharts = PrintCharts, PrintDownFirst = PrintDownFirst, PrintDrawing = PrintDrawing, PrintFormulas = PrintFormulas, PrintGrid = PrintGrid, PrintHeaders = PrintHeaders, PrintObjects = PrintObjects, PrintZeroValues = PrintZeroValues, RightPageFooterContent = RightPageFooterContent, RightPageHeaderContent = RightPageHeaderContent, ScaleToPages = ScaleToPages, ScaleToPagesX = ScaleToPagesX, ScaleToPagesY = ScaleToPagesY)
     js.Dynamic.global.Object.assign(__obj, PageStyle)
     __obj.asInstanceOf[TablePageStyle]
   }

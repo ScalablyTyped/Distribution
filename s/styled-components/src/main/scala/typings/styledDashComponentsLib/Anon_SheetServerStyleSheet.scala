@@ -12,8 +12,8 @@ trait Anon_SheetServerStyleSheet extends js.Object {
 object Anon_SheetServerStyleSheet {
   @scala.inline
   def apply(sheet: styledDashComponentsLib.styledDashComponentsMod.ServerStyleSheet): Anon_SheetServerStyleSheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sheet")(sheet)
+    val __obj = js.Dynamic.literal(sheet = sheet)
+  
     __obj.asInstanceOf[Anon_SheetServerStyleSheet]
   }
 }

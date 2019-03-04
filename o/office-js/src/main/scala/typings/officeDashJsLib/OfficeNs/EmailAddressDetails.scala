@@ -45,11 +45,8 @@ object EmailAddressDetails {
     emailAddress: java.lang.String,
     recipientType: officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
   ): EmailAddressDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointmentResponse")(appointmentResponse)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("recipientType")(recipientType)
+    val __obj = js.Dynamic.literal(appointmentResponse = appointmentResponse, displayName = displayName, emailAddress = emailAddress, recipientType = recipientType)
+  
     __obj.asInstanceOf[EmailAddressDetails]
   }
 }

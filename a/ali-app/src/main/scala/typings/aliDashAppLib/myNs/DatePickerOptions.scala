@@ -42,13 +42,7 @@ object DatePickerOptions {
     success: js.Function1[aliDashAppLib.Anon_Date, scala.Unit],
     complete: js.Function1[/* res */ js.Any, scala.Unit] = null
   ): DatePickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentDate")(currentDate)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("fail")(fail)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(currentDate = currentDate, endDate = endDate, fail = fail, format = format.asInstanceOf[js.Any], startDate = startDate, success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     __obj.asInstanceOf[DatePickerOptions]
   }

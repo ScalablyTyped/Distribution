@@ -30,9 +30,8 @@ object ProgressItem {
       scala.Unit
     ]
   ): ProgressItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[ProgressItem]
   }
 }

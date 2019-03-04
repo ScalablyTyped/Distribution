@@ -33,10 +33,7 @@ object RenameFile {
     oldUri: java.lang.String,
     options: RenameFileOptions = null
   ): RenameFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("newUri")(newUri)
-    __obj.updateDynamic("oldUri")(oldUri)
+    val __obj = js.Dynamic.literal(kind = kind, newUri = newUri, oldUri = oldUri)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[RenameFile]
   }

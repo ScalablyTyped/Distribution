@@ -20,11 +20,8 @@ object RenderTagProps {
     onRemove: js.Function1[scala.Double, scala.Unit],
     tag: reactDashTagsinputLib.Tag
   ): RenderTagProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("getTagDisplayValue")(getTagDisplayValue)
-    __obj.updateDynamic("onRemove")(onRemove)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(disabled = disabled, getTagDisplayValue = getTagDisplayValue, onRemove = onRemove, tag = tag)
+  
     __obj.asInstanceOf[RenderTagProps]
   }
 }

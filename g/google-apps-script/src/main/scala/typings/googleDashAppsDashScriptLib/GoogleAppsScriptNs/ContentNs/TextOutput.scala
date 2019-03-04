@@ -28,15 +28,8 @@ object TextOutput {
     setContent: js.Function1[java.lang.String, TextOutput],
     setMimeType: js.Function1[MimeType, TextOutput]
   ): TextOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("downloadAsFile")(downloadAsFile)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getFileName")(getFileName)
-    __obj.updateDynamic("getMimeType")(getMimeType)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setMimeType")(setMimeType)
+    val __obj = js.Dynamic.literal(append = append, clear = clear, downloadAsFile = downloadAsFile, getContent = getContent, getFileName = getFileName, getMimeType = getMimeType, setContent = setContent, setMimeType = setMimeType)
+  
     __obj.asInstanceOf[TextOutput]
   }
 }

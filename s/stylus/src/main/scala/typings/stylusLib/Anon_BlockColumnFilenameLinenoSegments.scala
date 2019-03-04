@@ -26,12 +26,8 @@ object Anon_BlockColumnFilenameLinenoSegments {
     `type`: java.lang.String,
     block: stylusLib.stylusMod.StylusNs.NodesNs.Block = null
   ): Anon_BlockColumnFilenameLinenoSegments = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, segments = segments)
+    __obj.updateDynamic("type")(`type`)
     if (block != null) __obj.updateDynamic("block")(block)
     __obj.asInstanceOf[Anon_BlockColumnFilenameLinenoSegments]
   }

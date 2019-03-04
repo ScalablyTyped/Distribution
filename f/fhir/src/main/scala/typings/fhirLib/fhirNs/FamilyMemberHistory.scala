@@ -219,10 +219,7 @@ object FamilyMemberHistory {
     resourceType: code = null,
     text: Narrative = null
   ): FamilyMemberHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("relationship")(relationship)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(patient = patient, relationship = relationship, status = status)
     if (_ageString != null) __obj.updateDynamic("_ageString")(_ageString)
     if (_bornDate != null) __obj.updateDynamic("_bornDate")(_bornDate)
     if (_bornString != null) __obj.updateDynamic("_bornString")(_bornString)

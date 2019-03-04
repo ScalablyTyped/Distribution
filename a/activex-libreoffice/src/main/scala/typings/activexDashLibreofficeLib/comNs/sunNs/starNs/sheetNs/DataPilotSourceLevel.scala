@@ -73,28 +73,8 @@ object DataPilotSourceLevel {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DataPilotSourceLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Members")(Members)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Results")(Results)
-    __obj.updateDynamic("ShowEmpty")(ShowEmpty)
-    __obj.updateDynamic("SubTotals")(SubTotals)
-    __obj.updateDynamic("SubTotals2")(SubTotals2)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getMembers")(getMembers)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getResults")(getResults)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Members = Members, Name = Name, PropertySetInfo = PropertySetInfo, Results = Results, ShowEmpty = ShowEmpty, SubTotals = SubTotals, SubTotals2 = SubTotals2, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getMembers = getMembers, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getResults = getResults, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DataPilotSourceLevel]
   }
 }

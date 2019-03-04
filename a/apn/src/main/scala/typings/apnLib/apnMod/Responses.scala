@@ -13,9 +13,8 @@ trait Responses extends js.Object {
 object Responses {
   @scala.inline
   def apply(failed: js.Array[ResponseFailure], sent: js.Array[ResponseSent]): Responses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("sent")(sent)
+    val __obj = js.Dynamic.literal(failed = failed, sent = sent)
+  
     __obj.asInstanceOf[Responses]
   }
 }

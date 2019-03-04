@@ -57,9 +57,7 @@ object EventDestinationArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     snsDestination: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TopicArnInput] = null
   ): EventDestinationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurationSetName")(configurationSetName.asInstanceOf[js.Any])
-    __obj.updateDynamic("matchingTypes")(matchingTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(configurationSetName = configurationSetName.asInstanceOf[js.Any], matchingTypes = matchingTypes.asInstanceOf[js.Any])
     if (cloudwatchDestinations != null) __obj.updateDynamic("cloudwatchDestinations")(cloudwatchDestinations.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (kinesisDestination != null) __obj.updateDynamic("kinesisDestination")(kinesisDestination.asInstanceOf[js.Any])

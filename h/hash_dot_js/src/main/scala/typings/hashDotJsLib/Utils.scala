@@ -17,9 +17,8 @@ object Utils {
     toArray_hex: js.Function2[js.Any, hashDotJsLib.hashDotJsLibStrings.hex, js.Array[scala.Double]],
     toHex: js.Function1[js.Any, java.lang.String]
   ): Utils = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(toHex = toHex)
     __obj.updateDynamic("toArray")(toArray_hex)
-    __obj.updateDynamic("toHex")(toHex)
     __obj.asInstanceOf[Utils]
   }
 }

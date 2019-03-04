@@ -44,13 +44,7 @@ object ClassBreaksRendererClassBreakInfos {
     symbol: Symbol,
     label: java.lang.String = null
   ): ClassBreaksRendererClassBreakInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[ClassBreaksRendererClassBreakInfos]
   }

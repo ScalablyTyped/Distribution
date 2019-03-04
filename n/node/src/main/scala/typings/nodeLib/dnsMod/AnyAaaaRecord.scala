@@ -15,9 +15,8 @@ trait AnyAaaaRecord
 object AnyAaaaRecord {
   @scala.inline
   def apply(address: java.lang.String, ttl: scala.Double, `type`: nodeLib.nodeLibStrings.AAAA): AnyAaaaRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(address = address, ttl = ttl)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnyAaaaRecord]
   }
 }

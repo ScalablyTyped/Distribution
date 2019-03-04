@@ -19,9 +19,8 @@ trait GetServiceAccountResult extends js.Object {
 object GetServiceAccountResult {
   @scala.inline
   def apply(arn: java.lang.String, id: java.lang.String): GetServiceAccountResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(arn = arn, id = id)
+  
     __obj.asInstanceOf[GetServiceAccountResult]
   }
 }

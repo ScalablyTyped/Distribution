@@ -49,15 +49,8 @@ object XSessionManagerListener {
     release: js.Function0[scala.Unit],
     shutdownCanceled: js.Function0[scala.Unit]
   ): XSessionManagerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("approveInteraction")(approveInteraction)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("doRestore")(doRestore)
-    __obj.updateDynamic("doSave")(doSave)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("shutdownCanceled")(shutdownCanceled)
+    val __obj = js.Dynamic.literal(acquire = acquire, approveInteraction = approveInteraction, disposing = disposing, doRestore = doRestore, doSave = doSave, queryInterface = queryInterface, release = release, shutdownCanceled = shutdownCanceled)
+  
     __obj.asInstanceOf[XSessionManagerListener]
   }
 }

@@ -66,8 +66,7 @@ object ClientOptions {
     socketOptions: cassandraDashDriverLib.Anon_CoalescingThreshold = null,
     sslOptions: nodeLib.tlsMod.ConnectionOptions = null
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contactPoints")(contactPoints)
+    val __obj = js.Dynamic.literal(contactPoints = contactPoints)
     if (authProvider != null) __obj.updateDynamic("authProvider")(authProvider)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (!js.isUndefined(isMetadataSyncEnabled)) __obj.updateDynamic("isMetadataSyncEnabled")(isMetadataSyncEnabled)

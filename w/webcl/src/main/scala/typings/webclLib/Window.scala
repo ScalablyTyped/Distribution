@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(webcl: webclLib.WEBCLNs.WebCL): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("webcl")(webcl)
+    val __obj = js.Dynamic.literal(webcl = webcl)
+  
     __obj.asInstanceOf[Window]
   }
 }

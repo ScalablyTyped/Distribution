@@ -12,8 +12,8 @@ trait ISelectState extends js.Object {
 object ISelectState {
   @scala.inline
   def apply(isOpen: scala.Boolean): ISelectState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
+  
     __obj.asInstanceOf[ISelectState]
   }
 }

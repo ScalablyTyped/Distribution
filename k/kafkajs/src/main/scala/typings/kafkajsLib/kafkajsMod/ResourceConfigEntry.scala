@@ -13,9 +13,8 @@ trait ResourceConfigEntry extends js.Object {
 object ResourceConfigEntry {
   @scala.inline
   def apply(name: java.lang.String, value: java.lang.String): ResourceConfigEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
     __obj.asInstanceOf[ResourceConfigEntry]
   }
 }

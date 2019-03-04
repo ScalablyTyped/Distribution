@@ -13,9 +13,8 @@ trait Anon_AccidentalNote extends js.Object {
 object Anon_AccidentalNote {
   @scala.inline
   def apply(accidental: java.lang.String, note: java.lang.String): Anon_AccidentalNote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accidental")(accidental)
-    __obj.updateDynamic("note")(note)
+    val __obj = js.Dynamic.literal(accidental = accidental, note = note)
+  
     __obj.asInstanceOf[Anon_AccidentalNote]
   }
 }

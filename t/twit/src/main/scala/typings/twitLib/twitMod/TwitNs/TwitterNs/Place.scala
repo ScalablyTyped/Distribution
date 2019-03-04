@@ -34,18 +34,8 @@ object Place {
     place_type: java.lang.String,
     url: java.lang.String
   ): Place = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("bounding_box")(bounding_box)
-    __obj.updateDynamic("contained_within")(contained_within)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("country_code")(country_code)
-    __obj.updateDynamic("full_name")(full_name)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("place_type")(place_type)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(attributes = attributes, bounding_box = bounding_box, contained_within = contained_within, country = country, country_code = country_code, full_name = full_name, geometry = geometry, id = id, name = name, place_type = place_type, url = url)
+  
     __obj.asInstanceOf[Place]
   }
 }

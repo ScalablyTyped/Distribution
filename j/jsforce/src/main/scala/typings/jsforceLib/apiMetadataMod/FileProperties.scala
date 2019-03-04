@@ -36,16 +36,8 @@ object FileProperties {
     manageableState: java.lang.String = null,
     namespacePrefix: java.lang.String = null
   ): FileProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("createdById")(createdById)
-    __obj.updateDynamic("createdByName")(createdByName)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModifiedById")(lastModifiedById)
-    __obj.updateDynamic("lastModifiedByName")(lastModifiedByName)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
+    val __obj = js.Dynamic.literal(createdById = createdById, createdByName = createdByName, createdDate = createdDate, fileName = fileName, fullName = fullName, id = id, lastModifiedById = lastModifiedById, lastModifiedByName = lastModifiedByName, lastModifiedDate = lastModifiedDate)
+    __obj.updateDynamic("type")(`type`)
     if (manageableState != null) __obj.updateDynamic("manageableState")(manageableState)
     if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix)
     __obj.asInstanceOf[FileProperties]

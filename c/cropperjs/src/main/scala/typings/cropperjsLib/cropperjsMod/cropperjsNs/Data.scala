@@ -47,14 +47,8 @@ object Data {
     x: scala.Double,
     y: scala.Double
   ): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, rotate = rotate, scaleX = scaleX, scaleY = scaleY, width = width, x = x, y = y)
+  
     __obj.asInstanceOf[Data]
   }
 }

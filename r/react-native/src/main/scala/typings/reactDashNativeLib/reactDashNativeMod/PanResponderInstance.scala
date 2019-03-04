@@ -12,8 +12,8 @@ trait PanResponderInstance extends js.Object {
 object PanResponderInstance {
   @scala.inline
   def apply(panHandlers: GestureResponderHandlers): PanResponderInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("panHandlers")(panHandlers)
+    val __obj = js.Dynamic.literal(panHandlers = panHandlers)
+  
     __obj.asInstanceOf[PanResponderInstance]
   }
 }

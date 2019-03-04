@@ -13,9 +13,8 @@ trait Anon_Pages extends js.Object {
 object Anon_Pages {
   @scala.inline
   def apply(pages: js.Array[java.lang.String], window: wepyLib.pageMod.PageConfig): Anon_Pages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(pages = pages, window = window)
+  
     __obj.asInstanceOf[Anon_Pages]
   }
 }

@@ -24,13 +24,8 @@ object ITool {
     mousedown: js.Function1[js.Any, scala.Boolean],
     mousemove: js.Function1[js.Any, scala.Boolean]
   ): ITool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mousemove")(mousemove)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, draw = draw, mousedown = mousedown, mousemove = mousemove)
+  
     __obj.asInstanceOf[ITool]
   }
 }

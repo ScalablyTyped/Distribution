@@ -21,10 +21,7 @@ object RequestPayloadObject {
     error: SerializerError = null,
     result: js.Any = null
   ): RequestPayloadObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(id = id, method = method, params = params)
     if (error != null) __obj.updateDynamic("error")(error)
     if (result != null) __obj.updateDynamic("result")(result)
     __obj.asInstanceOf[RequestPayloadObject]

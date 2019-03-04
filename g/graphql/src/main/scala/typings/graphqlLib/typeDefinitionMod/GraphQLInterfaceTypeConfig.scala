@@ -33,9 +33,7 @@ object GraphQLInterfaceTypeConfig {
     extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.InterfaceTypeExtensionNode]] = null,
     resolveType: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[TSource, TContext, TArgs]] = null
   ): GraphQLInterfaceTypeConfig[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

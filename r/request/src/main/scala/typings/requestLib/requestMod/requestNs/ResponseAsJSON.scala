@@ -15,11 +15,8 @@ trait ResponseAsJSON extends js.Object {
 object ResponseAsJSON {
   @scala.inline
   def apply(body: js.Any, headers: Headers, request: RequestAsJSON, statusCode: scala.Double): ResponseAsJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, request = request, statusCode = statusCode)
+  
     __obj.asInstanceOf[ResponseAsJSON]
   }
 }

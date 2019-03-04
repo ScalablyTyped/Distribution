@@ -37,12 +37,8 @@ object QRCode {
     segments: js.Array[QRCodeSegment],
     version: scala.Double
   ): QRCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
-    __obj.updateDynamic("maskPattern")(maskPattern)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("segments")(segments)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(errorCorrectionLevel = errorCorrectionLevel, maskPattern = maskPattern, modules = modules, segments = segments, version = version)
+  
     __obj.asInstanceOf[QRCode]
   }
 }

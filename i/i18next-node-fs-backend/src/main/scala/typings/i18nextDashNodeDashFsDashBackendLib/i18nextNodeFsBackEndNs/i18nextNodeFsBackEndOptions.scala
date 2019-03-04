@@ -40,10 +40,7 @@ object i18nextNodeFsBackEndOptions {
     loadPath: java.lang.String,
     parse: js.Function1[/* data */ js.Any, _] = null
   ): i18nextNodeFsBackEndOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPath")(addPath)
-    __obj.updateDynamic("jsonIndent")(jsonIndent)
-    __obj.updateDynamic("loadPath")(loadPath)
+    val __obj = js.Dynamic.literal(addPath = addPath, jsonIndent = jsonIndent, loadPath = loadPath)
     if (parse != null) __obj.updateDynamic("parse")(parse)
     __obj.asInstanceOf[i18nextNodeFsBackEndOptions]
   }

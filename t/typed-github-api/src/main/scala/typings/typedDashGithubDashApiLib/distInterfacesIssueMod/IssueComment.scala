@@ -24,13 +24,8 @@ object IssueComment {
     id: scala.Double,
     updatedAt: momentLib.momentMod.momentNs.Moment
   ): IssueComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("htmlUri")(htmlUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("updatedAt")(updatedAt)
+    val __obj = js.Dynamic.literal(body = body, createdAt = createdAt, createdBy = createdBy, htmlUri = htmlUri, id = id, updatedAt = updatedAt)
+  
     __obj.asInstanceOf[IssueComment]
   }
 }

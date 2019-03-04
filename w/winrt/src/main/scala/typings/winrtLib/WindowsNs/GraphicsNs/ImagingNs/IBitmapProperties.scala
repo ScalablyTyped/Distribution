@@ -27,9 +27,8 @@ object IBitmapProperties {
       winrtLib.WindowsNs.FoundationNs.IAsyncAction
     ]
   ): IBitmapProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPropertiesAsync")(getPropertiesAsync)
-    __obj.updateDynamic("setPropertiesAsync")(setPropertiesAsync)
+    val __obj = js.Dynamic.literal(getPropertiesAsync = getPropertiesAsync, setPropertiesAsync = setPropertiesAsync)
+  
     __obj.asInstanceOf[IBitmapProperties]
   }
 }

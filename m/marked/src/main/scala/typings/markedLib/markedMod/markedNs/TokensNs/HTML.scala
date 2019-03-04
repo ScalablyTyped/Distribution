@@ -15,9 +15,8 @@ trait HTML
 object HTML {
   @scala.inline
   def apply(pre: scala.Boolean, text: java.lang.String, `type`: markedLib.markedLibStrings.html): HTML = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pre")(pre)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(pre = pre, text = text)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HTML]
   }
 }

@@ -18,8 +18,7 @@ object i18nState {
     fallback: java.lang.String = null,
     locale: java.lang.String = null
   ): i18nState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(translations = translations)
     if (fallback != null) __obj.updateDynamic("fallback")(fallback)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     __obj.asInstanceOf[i18nState]

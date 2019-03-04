@@ -28,13 +28,8 @@ object IContactPickerUI {
     removeContact: js.Function1[java.lang.String, scala.Unit],
     selectionMode: winrtLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactSelectionMode
   ): IContactPickerUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addContact")(addContact)
-    __obj.updateDynamic("containsContact")(containsContact)
-    __obj.updateDynamic("desiredFields")(desiredFields)
-    __obj.updateDynamic("oncontactremoved")(oncontactremoved)
-    __obj.updateDynamic("removeContact")(removeContact)
-    __obj.updateDynamic("selectionMode")(selectionMode)
+    val __obj = js.Dynamic.literal(addContact = addContact, containsContact = containsContact, desiredFields = desiredFields, oncontactremoved = oncontactremoved, removeContact = removeContact, selectionMode = selectionMode)
+  
     __obj.asInstanceOf[IContactPickerUI]
   }
 }

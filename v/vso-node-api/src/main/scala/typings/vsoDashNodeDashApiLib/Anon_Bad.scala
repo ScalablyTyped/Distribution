@@ -28,15 +28,8 @@ object Anon_Bad {
     tag: scala.Double,
     tree: scala.Double
   ): Anon_Bad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bad")(bad)
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("ext2")(ext2)
-    __obj.updateDynamic("ofsDelta")(ofsDelta)
-    __obj.updateDynamic("refDelta")(refDelta)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("tree")(tree)
+    val __obj = js.Dynamic.literal(bad = bad, blob = blob, commit = commit, ext2 = ext2, ofsDelta = ofsDelta, refDelta = refDelta, tag = tag, tree = tree)
+  
     __obj.asInstanceOf[Anon_Bad]
   }
 }

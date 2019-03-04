@@ -22,12 +22,8 @@ object IConfigstore {
     path: java.lang.String,
     set: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): IConfigstore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(all = all, del = del, get = get, path = path, set = set)
+  
     __obj.asInstanceOf[IConfigstore]
   }
 }

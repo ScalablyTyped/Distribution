@@ -27,19 +27,8 @@ object MachineGroupDeploymentInput {
     tags: js.Array[java.lang.String],
     timeoutInMinutes: scala.Double
   ): MachineGroupDeploymentInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactsDownloadInput")(artifactsDownloadInput)
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("deploymentHealthOption")(deploymentHealthOption)
-    __obj.updateDynamic("enableAccessToken")(enableAccessToken)
-    __obj.updateDynamic("healthPercent")(healthPercent)
-    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
-    __obj.updateDynamic("overrideInputs")(overrideInputs)
-    __obj.updateDynamic("queueId")(queueId)
-    __obj.updateDynamic("skipArtifactsDownload")(skipArtifactsDownload)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(artifactsDownloadInput = artifactsDownloadInput, condition = condition, demands = demands, deploymentHealthOption = deploymentHealthOption, enableAccessToken = enableAccessToken, healthPercent = healthPercent, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, queueId = queueId, skipArtifactsDownload = skipArtifactsDownload, tags = tags, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[MachineGroupDeploymentInput]
   }
 }

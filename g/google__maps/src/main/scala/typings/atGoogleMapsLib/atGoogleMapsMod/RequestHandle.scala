@@ -33,9 +33,8 @@ object RequestHandle {
     cancel: js.Function0[scala.Unit],
     `finally`: js.Function1[js.Function0[scala.Unit], RequestHandle[T]]
   ): RequestHandle[T] = {
-    val __obj = js.Dynamic.literal(`finally` = `finally`)
-    __obj.updateDynamic("asPromise")(asPromise)
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(asPromise = asPromise, cancel = cancel)
+    __obj.updateDynamic("finally")(`finally`)
     __obj.asInstanceOf[RequestHandle[T]]
   }
 }

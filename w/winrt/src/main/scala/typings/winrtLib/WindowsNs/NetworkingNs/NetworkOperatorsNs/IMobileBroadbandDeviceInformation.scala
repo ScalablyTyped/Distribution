@@ -40,21 +40,8 @@ object IMobileBroadbandDeviceInformation {
     subscriberId: java.lang.String,
     telephoneNumbers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]
   ): IMobileBroadbandDeviceInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellularClass")(cellularClass)
-    __obj.updateDynamic("currentRadioState")(currentRadioState)
-    __obj.updateDynamic("customDataClass")(customDataClass)
-    __obj.updateDynamic("dataClasses")(dataClasses)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("deviceType")(deviceType)
-    __obj.updateDynamic("firmwareInformation")(firmwareInformation)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("mobileEquipmentId")(mobileEquipmentId)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("networkDeviceStatus")(networkDeviceStatus)
-    __obj.updateDynamic("simIccId")(simIccId)
-    __obj.updateDynamic("subscriberId")(subscriberId)
-    __obj.updateDynamic("telephoneNumbers")(telephoneNumbers)
+    val __obj = js.Dynamic.literal(cellularClass = cellularClass, currentRadioState = currentRadioState, customDataClass = customDataClass, dataClasses = dataClasses, deviceId = deviceId, deviceType = deviceType, firmwareInformation = firmwareInformation, manufacturer = manufacturer, mobileEquipmentId = mobileEquipmentId, model = model, networkDeviceStatus = networkDeviceStatus, simIccId = simIccId, subscriberId = subscriberId, telephoneNumbers = telephoneNumbers)
+  
     __obj.asInstanceOf[IMobileBroadbandDeviceInformation]
   }
 }

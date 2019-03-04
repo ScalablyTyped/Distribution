@@ -35,25 +35,8 @@ object TableConditionalEntry {
     setSourcePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit],
     setStyleName: js.Function1[java.lang.String, scala.Unit]
   ): TableConditionalEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Formula1")(Formula1)
-    __obj.updateDynamic("Formula2")(Formula2)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("SourcePosition")(SourcePosition)
-    __obj.updateDynamic("StyleName")(StyleName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFormula1")(getFormula1)
-    __obj.updateDynamic("getFormula2")(getFormula2)
-    __obj.updateDynamic("getOperator")(getOperator)
-    __obj.updateDynamic("getSourcePosition")(getSourcePosition)
-    __obj.updateDynamic("getStyleName")(getStyleName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFormula1")(setFormula1)
-    __obj.updateDynamic("setFormula2")(setFormula2)
-    __obj.updateDynamic("setOperator")(setOperator)
-    __obj.updateDynamic("setSourcePosition")(setSourcePosition)
-    __obj.updateDynamic("setStyleName")(setStyleName)
+    val __obj = js.Dynamic.literal(Formula1 = Formula1, Formula2 = Formula2, Operator = Operator, SourcePosition = SourcePosition, StyleName = StyleName, acquire = acquire, getFormula1 = getFormula1, getFormula2 = getFormula2, getOperator = getOperator, getSourcePosition = getSourcePosition, getStyleName = getStyleName, queryInterface = queryInterface, release = release, setFormula1 = setFormula1, setFormula2 = setFormula2, setOperator = setOperator, setSourcePosition = setSourcePosition, setStyleName = setStyleName)
+  
     __obj.asInstanceOf[TableConditionalEntry]
   }
 }

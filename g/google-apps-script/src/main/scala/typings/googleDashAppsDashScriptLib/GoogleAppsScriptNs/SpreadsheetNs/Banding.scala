@@ -52,27 +52,8 @@ object Banding {
     setSecondColumnColor: js.Function1[java.lang.String, Banding],
     setSecondRowColor: js.Function1[java.lang.String, Banding]
   ): Banding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyTo")(copyTo)
-    __obj.updateDynamic("getFirstColumnColor")(getFirstColumnColor)
-    __obj.updateDynamic("getFirstRowColor")(getFirstRowColor)
-    __obj.updateDynamic("getFooterColumnColor")(getFooterColumnColor)
-    __obj.updateDynamic("getFooterRowColor")(getFooterRowColor)
-    __obj.updateDynamic("getHeaderColumnColor")(getHeaderColumnColor)
-    __obj.updateDynamic("getHeaderRowColor")(getHeaderRowColor)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("getSecondColumnColor")(getSecondColumnColor)
-    __obj.updateDynamic("getSecondRowColor")(getSecondRowColor)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setFirstColumnColor")(setFirstColumnColor)
-    __obj.updateDynamic("setFirstRowColor")(setFirstRowColor)
-    __obj.updateDynamic("setFooterColumnColor")(setFooterColumnColor)
-    __obj.updateDynamic("setFooterRowColor")(setFooterRowColor)
-    __obj.updateDynamic("setHeaderColumnColor")(setHeaderColumnColor)
-    __obj.updateDynamic("setHeaderRowColor")(setHeaderRowColor)
-    __obj.updateDynamic("setRange")(setRange)
-    __obj.updateDynamic("setSecondColumnColor")(setSecondColumnColor)
-    __obj.updateDynamic("setSecondRowColor")(setSecondRowColor)
+    val __obj = js.Dynamic.literal(copyTo = copyTo, getFirstColumnColor = getFirstColumnColor, getFirstRowColor = getFirstRowColor, getFooterColumnColor = getFooterColumnColor, getFooterRowColor = getFooterRowColor, getHeaderColumnColor = getHeaderColumnColor, getHeaderRowColor = getHeaderRowColor, getRange = getRange, getSecondColumnColor = getSecondColumnColor, getSecondRowColor = getSecondRowColor, remove = remove, setFirstColumnColor = setFirstColumnColor, setFirstRowColor = setFirstRowColor, setFooterColumnColor = setFooterColumnColor, setFooterRowColor = setFooterRowColor, setHeaderColumnColor = setHeaderColumnColor, setHeaderRowColor = setHeaderRowColor, setRange = setRange, setSecondColumnColor = setSecondColumnColor, setSecondRowColor = setSecondRowColor)
+  
     __obj.asInstanceOf[Banding]
   }
 }

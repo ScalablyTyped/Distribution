@@ -31,8 +31,7 @@ object ToastOptions {
     success: js.Function1[js.Any, scala.Unit] = null,
     `type`: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.success | aliDashAppLib.aliDashAppLibStrings.fail | aliDashAppLib.aliDashAppLibStrings.exception | java.lang.String = null
   ): ToastOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

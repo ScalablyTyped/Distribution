@@ -16,9 +16,8 @@ object Anon_Key {
     params: org.scalablytyped.runtime.StringDictionary[js.Any],
     state: java.lang.String | atUirouterCoreLib.libStateInterfaceMod.StateDeclaration
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(params = params, state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

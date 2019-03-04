@@ -40,21 +40,8 @@ object UITreeBase {
     removeNodes: js.Function0[scala.Unit],
     updateNode: js.Function2[java.lang.String, js.Any, UITreeNode]
   ): UITreeBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendNode")(appendNode)
-    __obj.updateDynamic("foldNode")(foldNode)
-    __obj.updateDynamic("foldNodeAll")(foldNodeAll)
-    __obj.updateDynamic("getNode")(getNode)
-    __obj.updateDynamic("getNodeAll")(getNodeAll)
-    __obj.updateDynamic("getNodeParent")(getNodeParent)
-    __obj.updateDynamic("getRoot")(getRoot)
-    __obj.updateDynamic("insertNode")(insertNode)
-    __obj.updateDynamic("moveNode")(moveNode)
-    __obj.updateDynamic("openNode")(openNode)
-    __obj.updateDynamic("openNodeAll")(openNodeAll)
-    __obj.updateDynamic("removeNode")(removeNode)
-    __obj.updateDynamic("removeNodes")(removeNodes)
-    __obj.updateDynamic("updateNode")(updateNode)
+    val __obj = js.Dynamic.literal(appendNode = appendNode, foldNode = foldNode, foldNodeAll = foldNodeAll, getNode = getNode, getNodeAll = getNodeAll, getNodeParent = getNodeParent, getRoot = getRoot, insertNode = insertNode, moveNode = moveNode, openNode = openNode, openNodeAll = openNodeAll, removeNode = removeNode, removeNodes = removeNodes, updateNode = updateNode)
+  
     __obj.asInstanceOf[UITreeBase]
   }
 }

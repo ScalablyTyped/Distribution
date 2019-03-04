@@ -16,9 +16,8 @@ object Anon_Ptr {
     ptr: webgmeLib.GmeCommonNs.MetaCardRule with Anon_1,
     set: webgmeLib.GmeCommonNs.MetaCardRule with Anon_Max
   ): Anon_Ptr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ptr")(ptr)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(ptr = ptr, set = set)
+  
     __obj.asInstanceOf[Anon_Ptr]
   }
 }

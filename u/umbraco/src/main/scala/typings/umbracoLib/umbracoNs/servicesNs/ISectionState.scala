@@ -17,9 +17,8 @@ trait ISectionState extends js.Object {
 object ISectionState {
   @scala.inline
   def apply(currentSection: js.Any, showSearchResults: scala.Boolean): ISectionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentSection")(currentSection)
-    __obj.updateDynamic("showSearchResults")(showSearchResults)
+    val __obj = js.Dynamic.literal(currentSection = currentSection, showSearchResults = showSearchResults)
+  
     __obj.asInstanceOf[ISectionState]
   }
 }

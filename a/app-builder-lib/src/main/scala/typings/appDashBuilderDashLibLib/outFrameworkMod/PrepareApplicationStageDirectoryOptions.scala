@@ -25,12 +25,8 @@ object PrepareApplicationStageDirectoryOptions {
     platformName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ElectronPlatformName */ js.Any,
     version: java.lang.String
   ): PrepareApplicationStageDirectoryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appOutDir")(appOutDir)
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("packager")(packager)
-    __obj.updateDynamic("platformName")(platformName)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(appOutDir = appOutDir, arch = arch, packager = packager, platformName = platformName, version = version)
+  
     __obj.asInstanceOf[PrepareApplicationStageDirectoryOptions]
   }
 }

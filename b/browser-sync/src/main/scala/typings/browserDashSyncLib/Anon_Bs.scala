@@ -20,8 +20,7 @@ object Anon_Bs {
     ],
     `plugin:name`: java.lang.String = null
   ): Anon_Bs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(plugin = plugin)
     if (`plugin:name` != null) __obj.updateDynamic("plugin:name")(`plugin:name`)
     __obj.asInstanceOf[Anon_Bs]
   }

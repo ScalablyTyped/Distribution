@@ -13,9 +13,8 @@ trait WebpackMessages extends js.Object {
 object WebpackMessages {
   @scala.inline
   def apply(errors: js.Array[java.lang.String], warnings: js.Array[java.lang.String]): WebpackMessages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(errors = errors, warnings = warnings)
+  
     __obj.asInstanceOf[WebpackMessages]
   }
 }

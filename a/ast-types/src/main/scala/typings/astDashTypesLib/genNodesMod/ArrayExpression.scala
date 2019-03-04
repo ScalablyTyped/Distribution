@@ -26,8 +26,8 @@ object ArrayExpression {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.ArrayExpression
   ): ArrayExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("elements")(elements)
+    val __obj = js.Dynamic.literal(elements = elements)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArrayExpression]
   }
 }

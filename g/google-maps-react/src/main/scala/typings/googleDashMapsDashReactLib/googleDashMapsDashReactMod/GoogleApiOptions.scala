@@ -28,8 +28,7 @@ object GoogleApiOptions {
     url: java.lang.String = null,
     version: java.lang.String = null
   ): GoogleApiOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
+    val __obj = js.Dynamic.literal(apiKey = apiKey)
     if (LoadingContainer != null) __obj.updateDynamic("LoadingContainer")(LoadingContainer)
     if (client != null) __obj.updateDynamic("client")(client)
     if (language != null) __obj.updateDynamic("language")(language)

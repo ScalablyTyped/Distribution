@@ -32,11 +32,8 @@ object ProxyAuthorization {
     identity: vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.IdentityDescriptor,
     publicKey: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.PublicKey
   ): ProxyAuthorization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationUrl")(authorizationUrl)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl, clientId = clientId, identity = identity, publicKey = publicKey)
+  
     __obj.asInstanceOf[ProxyAuthorization]
   }
 }

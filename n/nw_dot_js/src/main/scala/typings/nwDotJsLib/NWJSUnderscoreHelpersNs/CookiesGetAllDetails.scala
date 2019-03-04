@@ -50,8 +50,7 @@ object CookiesGetAllDetails {
     storeId: java.lang.String = null,
     url: java.lang.String = null
   ): CookiesGetAllDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(session = session)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)

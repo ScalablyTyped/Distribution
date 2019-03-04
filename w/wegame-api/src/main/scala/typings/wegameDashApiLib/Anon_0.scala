@@ -107,10 +107,7 @@ object Anon_0 {
     success: js.Function0[scala.Unit] = null,
     zoneId: java.lang.String = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyType")(currencyType)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("offerId")(offerId)
+    val __obj = js.Dynamic.literal(currencyType = currencyType, mode = mode, offerId = offerId)
     if (buyQuantity != null) __obj.updateDynamic("buyQuantity")(buyQuantity.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])

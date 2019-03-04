@@ -46,8 +46,7 @@ object IBackgroundUploadProperties {
     overwrite: java.lang.String = null,
     stream_input: winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream = null
   ): IBackgroundUploadProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (file_input != null) __obj.updateDynamic("file_input")(file_input)
     if (file_name != null) __obj.updateDynamic("file_name")(file_name)
     if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite)

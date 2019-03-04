@@ -45,16 +45,8 @@ object FramedControl {
     setLabel: js.Function1[java.lang.String, scala.Unit],
     setSrc: js.Function1[java.lang.String, scala.Unit]
   ): FramedControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getSrc")(getSrc)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setSrc")(setSrc)
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getSrc = getSrc, getVisible = getVisible, setLabel = setLabel, setSrc = setSrc)
+  
     __obj.asInstanceOf[FramedControl]
   }
 }

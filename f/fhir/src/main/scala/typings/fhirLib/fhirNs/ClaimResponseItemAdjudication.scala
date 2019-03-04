@@ -46,8 +46,7 @@ object ClaimResponseItemAdjudication {
     reason: CodeableConcept = null,
     value: js.UndefOr[decimal] = js.undefined
   ): ClaimResponseItemAdjudication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(category = category)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_value != null) __obj.updateDynamic("_value")(_value)

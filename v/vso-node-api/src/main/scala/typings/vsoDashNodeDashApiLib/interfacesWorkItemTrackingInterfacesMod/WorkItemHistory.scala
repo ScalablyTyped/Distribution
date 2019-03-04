@@ -22,13 +22,8 @@ object WorkItemHistory {
     url: java.lang.String,
     value: java.lang.String
   ): WorkItemHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("rev")(rev)
-    __obj.updateDynamic("revisedBy")(revisedBy)
-    __obj.updateDynamic("revisedDate")(revisedDate)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_links = _links, rev = rev, revisedBy = revisedBy, revisedDate = revisedDate, url = url, value = value)
+  
     __obj.asInstanceOf[WorkItemHistory]
   }
 }

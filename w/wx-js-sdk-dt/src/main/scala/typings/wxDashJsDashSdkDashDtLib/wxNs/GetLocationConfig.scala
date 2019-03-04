@@ -23,8 +23,7 @@ object GetLocationConfig {
     fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
     `type`: java.lang.String = null
   ): GetLocationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

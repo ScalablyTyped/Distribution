@@ -34,13 +34,8 @@ object Pattern {
     toString: js.Function0[java.lang.String],
     toSvg: js.Function0[java.lang.String]
   ): Pattern = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("toBase64")(toBase64)
-    __obj.updateDynamic("toDataUri")(toDataUri)
-    __obj.updateDynamic("toDataUrl")(toDataUrl)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toSvg")(toSvg)
+    val __obj = js.Dynamic.literal(color = color, toBase64 = toBase64, toDataUri = toDataUri, toDataUrl = toDataUrl, toString = toString, toSvg = toSvg)
+  
     __obj.asInstanceOf[Pattern]
   }
 }

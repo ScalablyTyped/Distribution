@@ -24,13 +24,8 @@ object ILogger {
     log: js.Function1[java.lang.String, scala.Unit],
     warning: js.Function0[scala.Boolean]
   ): ILogger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fatal")(fatal)
-    __obj.updateDynamic("information")(information)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, fatal = fatal, information = information, log = log, warning = warning)
+  
     __obj.asInstanceOf[ILogger]
   }
 }

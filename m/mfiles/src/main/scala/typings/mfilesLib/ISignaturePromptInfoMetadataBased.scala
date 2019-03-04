@@ -22,12 +22,8 @@ object ISignaturePromptInfoMetadataBased {
     PromptInfoLookupPropertyID: scala.Double,
     ReasonPropertyID: scala.Double
   ): ISignaturePromptInfoMetadataBased = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("IsReferencedBySignatureObject")(IsReferencedBySignatureObject)
-    __obj.updateDynamic("MeaningPropertyID")(MeaningPropertyID)
-    __obj.updateDynamic("PromptInfoLookupPropertyID")(PromptInfoLookupPropertyID)
-    __obj.updateDynamic("ReasonPropertyID")(ReasonPropertyID)
+    val __obj = js.Dynamic.literal(Clone = Clone, IsReferencedBySignatureObject = IsReferencedBySignatureObject, MeaningPropertyID = MeaningPropertyID, PromptInfoLookupPropertyID = PromptInfoLookupPropertyID, ReasonPropertyID = ReasonPropertyID)
+  
     __obj.asInstanceOf[ISignaturePromptInfoMetadataBased]
   }
 }

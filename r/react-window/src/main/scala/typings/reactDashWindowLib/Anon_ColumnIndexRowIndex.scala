@@ -18,9 +18,7 @@ object Anon_ColumnIndexRowIndex {
     rowIndex: scala.Double,
     shouldForceUpdate: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ColumnIndexRowIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("rowIndex")(rowIndex)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, rowIndex = rowIndex)
     if (!js.isUndefined(shouldForceUpdate)) __obj.updateDynamic("shouldForceUpdate")(shouldForceUpdate)
     __obj.asInstanceOf[Anon_ColumnIndexRowIndex]
   }

@@ -12,8 +12,8 @@ trait ReverseGeocodeResponse extends js.Object {
 object ReverseGeocodeResponse {
   @scala.inline
   def apply(result: navermapsLib.Anon_ItemsTotal): ReverseGeocodeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[ReverseGeocodeResponse]
   }
 }

@@ -194,10 +194,7 @@ object DrawerLayoutProperties {
     testID: java.lang.String = null,
     useNativeAnimations: js.UndefOr[scala.Boolean] = js.undefined
   ): DrawerLayoutProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawerPosition")(drawerPosition.asInstanceOf[js.Any])
-    __obj.updateDynamic("drawerWidth")(drawerWidth)
-    __obj.updateDynamic("renderNavigationView")(renderNavigationView.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth, renderNavigationView = renderNavigationView.asInstanceOf[js.Any])
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

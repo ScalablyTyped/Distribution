@@ -28,12 +28,8 @@ object AccessMapping {
     serviceOwner: java.lang.String,
     virtualDirectory: java.lang.String
   ): AccessMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessPoint")(accessPoint)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("moniker")(moniker)
-    __obj.updateDynamic("serviceOwner")(serviceOwner)
-    __obj.updateDynamic("virtualDirectory")(virtualDirectory)
+    val __obj = js.Dynamic.literal(accessPoint = accessPoint, displayName = displayName, moniker = moniker, serviceOwner = serviceOwner, virtualDirectory = virtualDirectory)
+  
     __obj.asInstanceOf[AccessMapping]
   }
 }

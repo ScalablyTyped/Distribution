@@ -24,14 +24,8 @@ object GlobalTransferCommandArgument2 {
     SourceURL: java.lang.String,
     TargetURL: java.lang.String
   ): GlobalTransferCommandArgument2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DocumentId")(DocumentId)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("NameClash")(NameClash)
-    __obj.updateDynamic("NewTitle")(NewTitle)
-    __obj.updateDynamic("Operation")(Operation)
-    __obj.updateDynamic("SourceURL")(SourceURL)
-    __obj.updateDynamic("TargetURL")(TargetURL)
+    val __obj = js.Dynamic.literal(DocumentId = DocumentId, MimeType = MimeType, NameClash = NameClash, NewTitle = NewTitle, Operation = Operation, SourceURL = SourceURL, TargetURL = TargetURL)
+  
     __obj.asInstanceOf[GlobalTransferCommandArgument2]
   }
 }

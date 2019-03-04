@@ -24,8 +24,7 @@ object Anon_EllipsoidExtrudedHeightGranularityHeight {
     height: scala.Int | scala.Double = null,
     perPositionHeight: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EllipsoidExtrudedHeightGranularityHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions)
+    val __obj = js.Dynamic.literal(positions = positions)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])

@@ -108,25 +108,8 @@ object ContextMenuParams {
     x: scala.Double,
     y: scala.Double
   ): ContextMenuParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editFlags")(editFlags)
-    __obj.updateDynamic("frameCharset")(frameCharset)
-    __obj.updateDynamic("frameURL")(frameURL)
-    __obj.updateDynamic("hasImageContents")(hasImageContents)
-    __obj.updateDynamic("inputFieldType")(inputFieldType)
-    __obj.updateDynamic("isEditable")(isEditable)
-    __obj.updateDynamic("linkText")(linkText)
-    __obj.updateDynamic("linkURL")(linkURL)
-    __obj.updateDynamic("mediaFlags")(mediaFlags)
-    __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
-    __obj.updateDynamic("menuSourceType")(menuSourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("misspelledWord")(misspelledWord)
-    __obj.updateDynamic("pageURL")(pageURL)
-    __obj.updateDynamic("selectionText")(selectionText)
-    __obj.updateDynamic("srcURL")(srcURL)
-    __obj.updateDynamic("titleText")(titleText)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(editFlags = editFlags, frameCharset = frameCharset, frameURL = frameURL, hasImageContents = hasImageContents, inputFieldType = inputFieldType, isEditable = isEditable, linkText = linkText, linkURL = linkURL, mediaFlags = mediaFlags, mediaType = mediaType.asInstanceOf[js.Any], menuSourceType = menuSourceType.asInstanceOf[js.Any], misspelledWord = misspelledWord, pageURL = pageURL, selectionText = selectionText, srcURL = srcURL, titleText = titleText, x = x, y = y)
+  
     __obj.asInstanceOf[ContextMenuParams]
   }
 }

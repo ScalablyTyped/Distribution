@@ -22,8 +22,7 @@ object DefaultValueDefinition {
       powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQConstantExpr
     ] = null
   ): DefaultValueDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (identityFieldsValues != null) __obj.updateDynamic("identityFieldsValues")(identityFieldsValues)
     __obj.asInstanceOf[DefaultValueDefinition]
   }

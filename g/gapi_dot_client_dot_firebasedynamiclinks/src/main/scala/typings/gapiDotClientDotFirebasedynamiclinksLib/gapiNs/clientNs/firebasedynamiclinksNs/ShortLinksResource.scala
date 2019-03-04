@@ -28,8 +28,8 @@ object ShortLinksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CreateShortDynamicLinkResponse]
     ]
   ): ShortLinksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[ShortLinksResource]
   }
 }

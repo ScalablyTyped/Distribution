@@ -42,15 +42,8 @@ object IAddress {
     locality: java.lang.String,
     postalCode: java.lang.String
   ): IAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressLine")(addressLine)
-    __obj.updateDynamic("adminDistrict")(adminDistrict)
-    __obj.updateDynamic("countryRegion")(countryRegion)
-    __obj.updateDynamic("countryRegionISO2")(countryRegionISO2)
-    __obj.updateDynamic("district")(district)
-    __obj.updateDynamic("formattedAddress")(formattedAddress)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("postalCode")(postalCode)
+    val __obj = js.Dynamic.literal(addressLine = addressLine, adminDistrict = adminDistrict, countryRegion = countryRegion, countryRegionISO2 = countryRegionISO2, district = district, formattedAddress = formattedAddress, locality = locality, postalCode = postalCode)
+  
     __obj.asInstanceOf[IAddress]
   }
 }

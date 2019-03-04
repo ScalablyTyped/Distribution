@@ -18,9 +18,8 @@ object Anon_Errorlist {
     request_id: java.lang.String,
     `type`: intercomDashClientLib.intercomDashClientLibStrings.errorDOTlist
   ): Anon_Errorlist = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("request_id")(request_id)
+    val __obj = js.Dynamic.literal(errors = errors, request_id = request_id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Errorlist]
   }
 }

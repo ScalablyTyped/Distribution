@@ -13,8 +13,7 @@ trait ProcessedResult[Result] extends js.Object {
 object ProcessedResult {
   @scala.inline
   def apply[Result](results: js.Array[Result], pagination: select2Lib.Anon_More = null): ProcessedResult[Result] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(results = results)
     if (pagination != null) __obj.updateDynamic("pagination")(pagination)
     __obj.asInstanceOf[ProcessedResult[Result]]
   }

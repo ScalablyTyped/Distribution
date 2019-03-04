@@ -32,17 +32,8 @@ object IResponse {
     time: stdLib.Date,
     url: java.lang.String
   ): IResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodySize")(bodySize)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("redirectURL")(redirectURL)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bodySize = bodySize, contentType = contentType, headers = headers, id = id, redirectURL = redirectURL, stage = stage, status = status, statusText = statusText, time = time, url = url)
+  
     __obj.asInstanceOf[IResponse]
   }
 }

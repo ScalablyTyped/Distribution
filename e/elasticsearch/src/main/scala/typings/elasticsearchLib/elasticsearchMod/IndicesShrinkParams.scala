@@ -28,9 +28,7 @@ object IndicesShrinkParams {
     timeout: TimeSpan = null,
     waitForActiveShards: java.lang.String | scala.Double = null
   ): IndicesShrinkParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(index = index, target = target)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

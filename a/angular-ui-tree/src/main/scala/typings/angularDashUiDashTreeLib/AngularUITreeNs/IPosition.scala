@@ -48,25 +48,8 @@ object IPosition {
     startX: scala.Double,
     startY: scala.Double
   ): IPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirAx")(dirAx)
-    __obj.updateDynamic("dirX")(dirX)
-    __obj.updateDynamic("dirY")(dirY)
-    __obj.updateDynamic("distAxX")(distAxX)
-    __obj.updateDynamic("distAxY")(distAxY)
-    __obj.updateDynamic("distX")(distX)
-    __obj.updateDynamic("distY")(distY)
-    __obj.updateDynamic("lastDirX")(lastDirX)
-    __obj.updateDynamic("lastDirY")(lastDirY)
-    __obj.updateDynamic("lastX")(lastX)
-    __obj.updateDynamic("lastY")(lastY)
-    __obj.updateDynamic("moving")(moving)
-    __obj.updateDynamic("nowX")(nowX)
-    __obj.updateDynamic("nowY")(nowY)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("startX")(startX)
-    __obj.updateDynamic("startY")(startY)
+    val __obj = js.Dynamic.literal(dirAx = dirAx, dirX = dirX, dirY = dirY, distAxX = distAxX, distAxY = distAxY, distX = distX, distY = distY, lastDirX = lastDirX, lastDirY = lastDirY, lastX = lastX, lastY = lastY, moving = moving, nowX = nowX, nowY = nowY, offsetX = offsetX, offsetY = offsetY, startX = startX, startY = startY)
+  
     __obj.asInstanceOf[IPosition]
   }
 }

@@ -26,14 +26,8 @@ object DeveloperMetadataFinder {
     withValue: js.Function1[java.lang.String, DeveloperMetadataFinder],
     withVisibility: js.Function1[DeveloperMetadataVisibility, DeveloperMetadataFinder]
   ): DeveloperMetadataFinder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("onIntersectingLocations")(onIntersectingLocations)
-    __obj.updateDynamic("withId")(withId)
-    __obj.updateDynamic("withKey")(withKey)
-    __obj.updateDynamic("withLocationType")(withLocationType)
-    __obj.updateDynamic("withValue")(withValue)
-    __obj.updateDynamic("withVisibility")(withVisibility)
+    val __obj = js.Dynamic.literal(find = find, onIntersectingLocations = onIntersectingLocations, withId = withId, withKey = withKey, withLocationType = withLocationType, withValue = withValue, withVisibility = withVisibility)
+  
     __obj.asInstanceOf[DeveloperMetadataFinder]
   }
 }

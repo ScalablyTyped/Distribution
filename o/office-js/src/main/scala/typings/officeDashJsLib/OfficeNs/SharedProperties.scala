@@ -40,10 +40,8 @@ object SharedProperties {
     owner: java.lang.String,
     restUrl: java.lang.String
   ): SharedProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delegatePermissions")(delegatePermissions)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("restUrl")(restUrl)
+    val __obj = js.Dynamic.literal(delegatePermissions = delegatePermissions, owner = owner, restUrl = restUrl)
+  
     __obj.asInstanceOf[SharedProperties]
   }
 }

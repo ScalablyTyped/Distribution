@@ -22,12 +22,8 @@ object RecipientEncryptedKey {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): RecipientEncryptedKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptedKey")(encryptedKey)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("rid")(rid)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = fromSchema, rid = rid, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[RecipientEncryptedKey]
   }
 }

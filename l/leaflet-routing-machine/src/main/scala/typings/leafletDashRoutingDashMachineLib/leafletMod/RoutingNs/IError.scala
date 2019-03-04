@@ -14,9 +14,8 @@ trait IError extends js.Object {
 object IError {
   @scala.inline
   def apply(message: java.lang.String, status: java.lang.String | scala.Double): IError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message, status = status.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IError]
   }
 }

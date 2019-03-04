@@ -34,14 +34,14 @@ class Logger protected () extends js.Object {
     * @param logLevel The log level of the message.
     * @param msgs The messages to be logged
     */
-  def `log_`(logLevel: LogLevel, msgs: js.Array[_]): scala.Unit = js.native
+  def log_(logLevel: LogLevel, msgs: js.Array[_]): scala.Unit = js.native
   /**
     * Format with timestamp, log level, identifier, and message and log to
     * specified medium (console, file, both, none).
     * @param logLevel The log level of the message.
     * @param msgs The messages to be logged.
     */
-  def `print_`(logLevel: LogLevel, msgs: js.Array[_]): scala.Unit = js.native
+  def print_(logLevel: LogLevel, msgs: js.Array[_]): scala.Unit = js.native
   /**
     * Log WARN
     * @param ...msgs multiple arguments to be logged.
@@ -65,7 +65,7 @@ object Logger extends js.Object {
     * @param writeTo The enum for where to write the logs.
     * @return The string of the formatted id
     */
-  def `id_`(
+  def id_(
     logLevel: webdriverDashManagerLib.builtLibCliLoggerMod.LogLevel,
     id: java.lang.String,
     writeTo: webdriverDashManagerLib.builtLibCliLoggerMod.WriteTo
@@ -76,7 +76,7 @@ object Logger extends js.Object {
     * @param writeTo The enum for where to write the logs.
     * @return The string of the formatted log level
     */
-  def `level_`(
+  def level_(
     logLevel: webdriverDashManagerLib.builtLibCliLoggerMod.LogLevel,
     id: java.lang.String,
     writeTo: webdriverDashManagerLib.builtLibCliLoggerMod.WriteTo
@@ -86,7 +86,7 @@ object Logger extends js.Object {
     * @param msgs The list of messages.
     * @return The string of the formatted messages
     */
-  def `msgToFile_`(msgs: js.Array[_]): java.lang.String = js.native
+  def msgToFile_(msgs: js.Array[_]): java.lang.String = js.native
   /**
     * Set up the write location. If writing to a file, get the file descriptor.
     * @param writeTo The enum for where to write the logs.
@@ -99,6 +99,6 @@ object Logger extends js.Object {
     * @param writeTo The enum for where to write the logs.
     * @return The string of the formatted timestamp
     */
-  def `timestamp_`(writeTo: webdriverDashManagerLib.builtLibCliLoggerMod.WriteTo): java.lang.String = js.native
+  def timestamp_(writeTo: webdriverDashManagerLib.builtLibCliLoggerMod.WriteTo): java.lang.String = js.native
 }
 

@@ -45,18 +45,7 @@ object EventWrapperProps {
     selected: scala.Boolean,
     style: reactLib.reactMod.ReactNs.CSSProperties with reactDashBigDashCalendarLib.Anon_XOffset = null
   ): EventWrapperProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessors")(accessors)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("continuesEarlier")(continuesEarlier)
-    __obj.updateDynamic("continuesLater")(continuesLater)
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    __obj.updateDynamic("getters")(getters)
-    __obj.updateDynamic("isRtl")(isRtl)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(accessors = accessors, className = className, continuesEarlier = continuesEarlier, continuesLater = continuesLater, event = event.asInstanceOf[js.Any], getters = getters, isRtl = isRtl, label = label, onClick = onClick, onDoubleClick = onDoubleClick, selected = selected)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[EventWrapperProps[T]]
   }

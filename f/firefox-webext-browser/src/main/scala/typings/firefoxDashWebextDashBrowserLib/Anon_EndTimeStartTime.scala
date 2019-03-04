@@ -18,9 +18,8 @@ object Anon_EndTimeStartTime {
     endTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date,
     startTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date
   ): Anon_EndTimeStartTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EndTimeStartTime]
   }
 }

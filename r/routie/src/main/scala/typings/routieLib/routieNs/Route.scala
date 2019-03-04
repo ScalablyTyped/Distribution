@@ -22,11 +22,8 @@ object Route {
     run: js.Function1[js.Any, scala.Unit],
     toURL: js.Function1[js.Any, java.lang.String]
   ): Route = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("addHandler")(addHandler)
-    __obj.updateDynamic("removeHandler")(removeHandler)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("toURL")(toURL)
+    val __obj = js.Dynamic.literal(addHandler = addHandler, removeHandler = removeHandler, run = run, toURL = toURL)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Route]
   }
 }

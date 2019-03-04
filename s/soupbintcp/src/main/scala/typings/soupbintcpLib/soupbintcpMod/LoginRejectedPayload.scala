@@ -12,8 +12,8 @@ trait LoginRejectedPayload extends js.Object {
 object LoginRejectedPayload {
   @scala.inline
   def apply(rejectReasonCode: java.lang.String): LoginRejectedPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rejectReasonCode")(rejectReasonCode)
+    val __obj = js.Dynamic.literal(rejectReasonCode = rejectReasonCode)
+  
     __obj.asInstanceOf[LoginRejectedPayload]
   }
 }

@@ -12,8 +12,8 @@ trait WithTheme extends js.Object {
 object WithTheme {
   @scala.inline
   def apply(theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme): WithTheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(theme = theme)
+  
     __obj.asInstanceOf[WithTheme]
   }
 }

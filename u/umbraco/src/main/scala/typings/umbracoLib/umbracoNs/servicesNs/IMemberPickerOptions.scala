@@ -18,9 +18,8 @@ trait IMemberPickerOptions extends js.Object {
 object IMemberPickerOptions {
   @scala.inline
   def apply(callback: angularLib.angularMod.Global.Function, multiPicker: scala.Boolean): IMemberPickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("multiPicker")(multiPicker)
+    val __obj = js.Dynamic.literal(callback = callback, multiPicker = multiPicker)
+  
     __obj.asInstanceOf[IMemberPickerOptions]
   }
 }

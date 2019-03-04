@@ -30,10 +30,7 @@ object GroundNavigationConstraintProperties {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     `type`: java.lang.String = null
   ): GroundNavigationConstraintProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GroundNavigationConstraintProperties]
   }

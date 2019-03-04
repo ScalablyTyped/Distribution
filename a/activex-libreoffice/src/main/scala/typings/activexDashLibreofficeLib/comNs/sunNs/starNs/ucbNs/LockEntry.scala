@@ -16,9 +16,8 @@ trait LockEntry extends js.Object {
 object LockEntry {
   @scala.inline
   def apply(Scope: LockScope, Type: LockType): LockEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Scope")(Scope)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Scope = Scope, Type = Type)
+  
     __obj.asInstanceOf[LockEntry]
   }
 }

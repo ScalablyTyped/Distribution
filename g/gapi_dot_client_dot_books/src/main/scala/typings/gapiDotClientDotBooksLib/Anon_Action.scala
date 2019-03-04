@@ -57,10 +57,7 @@ object Anon_Action {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(position = position, timestamp = timestamp, volumeId = volumeId)
     if (action != null) __obj.updateDynamic("action")(action)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (contentVersion != null) __obj.updateDynamic("contentVersion")(contentVersion)

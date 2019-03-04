@@ -46,8 +46,7 @@ object RequestInfo {
     success: js.Function1[/* response */ ResponseInfo, scala.Unit] = null,
     timeout: scala.Int | scala.Double = null
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(binaryStringRequestBody)) __obj.updateDynamic("binaryStringRequestBody")(binaryStringRequestBody)
     if (!js.isUndefined(binaryStringResponseBody)) __obj.updateDynamic("binaryStringResponseBody")(binaryStringResponseBody)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])

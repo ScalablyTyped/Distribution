@@ -20,8 +20,7 @@ object Anon_Filename {
     hash: java.lang.String = null,
     size: scala.Int | scala.Double = null
   ): Anon_Filename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

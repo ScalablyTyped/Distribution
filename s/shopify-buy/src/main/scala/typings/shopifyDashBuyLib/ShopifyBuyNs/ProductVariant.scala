@@ -82,20 +82,7 @@ object ProductVariant {
     attrs: js.Any = null,
     onlineStoreUrl: java.lang.String = null
   ): ProductVariant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("checkoutUrl")(checkoutUrl)
-    __obj.updateDynamic("compareAtPrice")(compareAtPrice)
-    __obj.updateDynamic("formattedPrice")(formattedPrice)
-    __obj.updateDynamic("grams")(grams)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("imageVariant")(imageVariant)
-    __obj.updateDynamic("optionValues")(optionValues)
-    __obj.updateDynamic("price")(price)
-    __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    __obj.updateDynamic("productTitle")(productTitle)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(available = available, checkoutUrl = checkoutUrl, compareAtPrice = compareAtPrice, formattedPrice = formattedPrice, grams = grams, id = id.asInstanceOf[js.Any], image = image, imageVariant = imageVariant, optionValues = optionValues, price = price, productId = productId.asInstanceOf[js.Any], productTitle = productTitle, title = title)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
     __obj.asInstanceOf[ProductVariant]

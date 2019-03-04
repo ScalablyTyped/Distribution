@@ -30,8 +30,7 @@ object FetchRequestProps {
     signal: stdLib.AbortSignal = null,
     window: js.Any = null
   ): FetchRequestProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (credentials != null) __obj.updateDynamic("credentials")(credentials)

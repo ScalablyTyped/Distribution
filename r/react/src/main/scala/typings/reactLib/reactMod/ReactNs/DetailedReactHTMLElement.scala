@@ -15,9 +15,8 @@ object DetailedReactHTMLElement {
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
     key: Key = null
   ): DetailedReactHTMLElement[P, T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedReactHTMLElement[P, T]]
   }

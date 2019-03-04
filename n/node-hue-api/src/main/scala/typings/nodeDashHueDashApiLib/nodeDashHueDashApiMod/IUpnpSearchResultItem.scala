@@ -13,9 +13,8 @@ trait IUpnpSearchResultItem extends js.Object {
 object IUpnpSearchResultItem {
   @scala.inline
   def apply(id: java.lang.String, ipaddress: java.lang.String): IUpnpSearchResultItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ipaddress")(ipaddress)
+    val __obj = js.Dynamic.literal(id = id, ipaddress = ipaddress)
+  
     __obj.asInstanceOf[IUpnpSearchResultItem]
   }
 }

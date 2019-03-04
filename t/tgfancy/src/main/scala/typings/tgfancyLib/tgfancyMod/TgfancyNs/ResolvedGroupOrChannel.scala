@@ -18,11 +18,8 @@ object ResolvedGroupOrChannel {
     username: java.lang.String,
     when: java.lang.String
   ): ResolvedGroupOrChannel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("username")(username)
-    __obj.updateDynamic("when")(when)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title, username = username, when = when)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ResolvedGroupOrChannel]
   }
 }

@@ -21,12 +21,8 @@ object GlideServletRequest {
     toString: js.Function0[java.lang.String],
     writeOutput: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): GlideServletRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getHeader")(getHeader)
-    __obj.updateDynamic("getParameter")(getParameter)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("writeOutput")(writeOutput)
+    val __obj = js.Dynamic.literal(getContentType = getContentType, getHeader = getHeader, getParameter = getParameter, toString = toString, writeOutput = writeOutput)
+  
     __obj.asInstanceOf[GlideServletRequest]
   }
 }

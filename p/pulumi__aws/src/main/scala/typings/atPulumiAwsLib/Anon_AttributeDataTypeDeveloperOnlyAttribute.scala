@@ -26,9 +26,7 @@ object Anon_AttributeDataTypeDeveloperOnlyAttribute {
     required: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     stringAttributeConstraints: atPulumiPulumiLib.outputMod.Input[Anon_MaxLengthMinLength] = null
   ): Anon_AttributeDataTypeDeveloperOnlyAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeDataType")(attributeDataType.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributeDataType = attributeDataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (developerOnlyAttribute != null) __obj.updateDynamic("developerOnlyAttribute")(developerOnlyAttribute.asInstanceOf[js.Any])
     if (mutable != null) __obj.updateDynamic("mutable")(mutable.asInstanceOf[js.Any])
     if (numberAttributeConstraints != null) __obj.updateDynamic("numberAttributeConstraints")(numberAttributeConstraints.asInstanceOf[js.Any])

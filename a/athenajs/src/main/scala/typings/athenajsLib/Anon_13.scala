@@ -28,15 +28,8 @@ object Anon_13 {
     SPACE: athenajsLib.athenajsLibNumbers.`32`,
     UP: athenajsLib.athenajsLibNumbers.`38`
   ): Anon_13 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CTRL")(CTRL)
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("ENTER")(ENTER)
-    __obj.updateDynamic("ESCAPE")(ESCAPE)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("SPACE")(SPACE)
-    __obj.updateDynamic("UP")(UP)
+    val __obj = js.Dynamic.literal(CTRL = CTRL, DOWN = DOWN, ENTER = ENTER, ESCAPE = ESCAPE, LEFT = LEFT, RIGHT = RIGHT, SPACE = SPACE, UP = UP)
+  
     __obj.asInstanceOf[Anon_13]
   }
 }

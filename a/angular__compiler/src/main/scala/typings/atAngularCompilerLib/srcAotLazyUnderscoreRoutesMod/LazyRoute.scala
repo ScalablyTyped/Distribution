@@ -18,10 +18,8 @@ object LazyRoute {
     referencedModule: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol,
     route: java.lang.String
   ): LazyRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("referencedModule")(referencedModule)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(module = module, referencedModule = referencedModule, route = route)
+  
     __obj.asInstanceOf[LazyRoute]
   }
 }

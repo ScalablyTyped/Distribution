@@ -15,8 +15,9 @@ trait Anon_NameObjectRemove
 object Anon_NameObjectRemove {
   @scala.inline
   def apply(name: java.lang.String, `object`: js.Any, `type`: mobxLib.mobxLibStrings.remove): Anon_NameObjectRemove = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_NameObjectRemove]
   }
 }

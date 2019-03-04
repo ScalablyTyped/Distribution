@@ -22,8 +22,10 @@ object TesseractJob {
     `then`: js.Function1[js.Function1[/* result */ Page, scala.Unit], TesseractJob],
     error: js.Function1[/* error */ nodeLib.Error, TesseractJob] = null
   ): TesseractJob = {
-    val __obj = js.Dynamic.literal(`catch` = `catch`, `finally` = `finally`, `then` = `then`)
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(progress = progress)
+    __obj.updateDynamic("catch")(`catch`)
+    __obj.updateDynamic("finally")(`finally`)
+    __obj.updateDynamic("then")(`then`)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[TesseractJob]
   }

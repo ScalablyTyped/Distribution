@@ -20,11 +20,8 @@ object Monad {
     of: js.Function1[js.Any, Monad[js.Any]],
     unit: js.Function1[js.Any, Monad[js.Any]]
   ): Monad[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("of")(of)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(bind = bind, chain = chain, of = of, unit = unit)
+  
     __obj.asInstanceOf[Monad[T]]
   }
 }

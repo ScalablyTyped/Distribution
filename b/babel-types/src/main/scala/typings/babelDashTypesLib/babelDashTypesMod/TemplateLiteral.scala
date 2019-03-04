@@ -28,12 +28,8 @@ object TemplateLiteral {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TemplateLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("expressions")(expressions)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("quasis")(quasis)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, expressions = expressions, loc = loc, quasis = quasis, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

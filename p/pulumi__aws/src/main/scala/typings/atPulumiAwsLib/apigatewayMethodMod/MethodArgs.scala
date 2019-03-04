@@ -88,11 +88,7 @@ object MethodArgs {
     requestParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     requestValidatorId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): MethodArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
-    __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
     if (apiKeyRequired != null) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])
     if (authorizationScopes != null) __obj.updateDynamic("authorizationScopes")(authorizationScopes.asInstanceOf[js.Any])
     if (authorizerId != null) __obj.updateDynamic("authorizerId")(authorizerId.asInstanceOf[js.Any])

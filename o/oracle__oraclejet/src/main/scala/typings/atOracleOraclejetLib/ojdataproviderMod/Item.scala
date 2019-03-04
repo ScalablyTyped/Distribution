@@ -13,9 +13,8 @@ trait Item[K, D] extends js.Object {
 object Item {
   @scala.inline
   def apply[K, D](data: D, metadata: ItemMetadata[K]): Item[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata)
+  
     __obj.asInstanceOf[Item[K, D]]
   }
 }

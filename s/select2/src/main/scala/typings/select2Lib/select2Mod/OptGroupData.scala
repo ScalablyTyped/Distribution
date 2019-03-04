@@ -26,13 +26,7 @@ object OptGroupData {
     title: java.lang.String,
     loading: js.UndefOr[scala.Nothing] = js.undefined
   ): OptGroupData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(children = children, disabled = disabled, element = element, selected = selected, text = text, title = title)
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     __obj.asInstanceOf[OptGroupData]
   }

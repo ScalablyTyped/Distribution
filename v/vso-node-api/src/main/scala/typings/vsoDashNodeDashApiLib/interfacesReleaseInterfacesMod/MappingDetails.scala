@@ -14,8 +14,8 @@ object MappingDetails {
   def apply(
     mappings: org.scalablytyped.runtime.StringDictionary[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputValue]
   ): MappingDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mappings")(mappings)
+    val __obj = js.Dynamic.literal(mappings = mappings)
+  
     __obj.asInstanceOf[MappingDetails]
   }
 }

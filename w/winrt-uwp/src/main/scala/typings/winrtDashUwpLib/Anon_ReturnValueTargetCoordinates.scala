@@ -16,9 +16,8 @@ object Anon_ReturnValueTargetCoordinates {
     returnValue: winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction,
     targetCoordinates: winrtDashUwpLib.WindowsNs.FoundationNs.Point
   ): Anon_ReturnValueTargetCoordinates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("targetCoordinates")(targetCoordinates)
+    val __obj = js.Dynamic.literal(returnValue = returnValue, targetCoordinates = targetCoordinates)
+  
     __obj.asInstanceOf[Anon_ReturnValueTargetCoordinates]
   }
 }

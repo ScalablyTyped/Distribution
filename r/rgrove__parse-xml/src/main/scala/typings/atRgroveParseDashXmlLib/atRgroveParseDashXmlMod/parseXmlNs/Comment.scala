@@ -20,8 +20,8 @@ object Comment {
     `type`: atRgroveParseDashXmlLib.atRgroveParseDashXmlLibStrings.comment,
     parent: NodeBase = null
   ): Comment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+    __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[Comment]
   }

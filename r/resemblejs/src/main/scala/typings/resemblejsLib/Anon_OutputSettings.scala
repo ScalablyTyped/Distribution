@@ -20,8 +20,8 @@ object Anon_OutputSettings {
       /* import warning: ImportType.apply Failed type conversion: typeof Resemble */ js.Any
     ]
   ): Anon_OutputSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outputSettings")(outputSettings)
+    val __obj = js.Dynamic.literal(outputSettings = outputSettings)
+  
     __obj.asInstanceOf[Anon_OutputSettings]
   }
 }

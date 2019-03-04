@@ -26,14 +26,8 @@ object Configurable {
     set: js.Function2[java.lang.String, js.Any, T with Configurable[T]],
     settings: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Configurable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(disable = disable, disabled = disabled, enable = enable, enabled = enabled, get = get, set = set, settings = settings)
+  
     __obj.asInstanceOf[Configurable[T]]
   }
 }

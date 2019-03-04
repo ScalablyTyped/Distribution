@@ -28,15 +28,8 @@ object Anon_Aniamtion {
     itemHeight: scala.Double,
     mapKeys: Anon_Label
   ): Anon_Aniamtion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aniamtion")(aniamtion)
-    __obj.updateDynamic("defaultIndex")(defaultIndex)
-    __obj.updateDynamic("groupIndex")(groupIndex)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("indicatorHeight")(indicatorHeight)
-    __obj.updateDynamic("indicatorTop")(indicatorTop)
-    __obj.updateDynamic("itemHeight")(itemHeight)
-    __obj.updateDynamic("mapKeys")(mapKeys)
+    val __obj = js.Dynamic.literal(aniamtion = aniamtion, defaultIndex = defaultIndex, groupIndex = groupIndex, height = height, indicatorHeight = indicatorHeight, indicatorTop = indicatorTop, itemHeight = itemHeight, mapKeys = mapKeys)
+  
     __obj.asInstanceOf[Anon_Aniamtion]
   }
 }

@@ -20,11 +20,8 @@ object MUIDataTableTextLabelsPagination {
     previous: java.lang.String,
     rowsPerPage: java.lang.String
   ): MUIDataTableTextLabelsPagination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayRows")(displayRows)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("rowsPerPage")(rowsPerPage)
+    val __obj = js.Dynamic.literal(displayRows = displayRows, next = next, previous = previous, rowsPerPage = rowsPerPage)
+  
     __obj.asInstanceOf[MUIDataTableTextLabelsPagination]
   }
 }

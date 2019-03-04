@@ -48,9 +48,7 @@ object Anon_AltCalendarIdFieldsKeyOauthtoken {
     sendNotifications: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltCalendarIdFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, text = text)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

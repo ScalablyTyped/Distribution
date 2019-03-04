@@ -15,42 +15,42 @@ class Sha1 ()
     * @type {!Array<number>}
     * @private
     */
-  var `W_`: js.Any = js.native
+  var W_ : js.Any = js.native
   /**
     * A buffer holding the partially computed hash result.
     * @type {!Array<number>}
     * @private
     */
-  var `buf_`: js.Any = js.native
+  var buf_ : js.Any = js.native
   /**
     * Holds the previous values of accumulated variables a-e in the compress_
     * function.
     * @type {!Array<number>}
     * @private
     */
-  var `chain_`: js.Any = js.native
+  var chain_ : js.Any = js.native
   /**
     * @private {number}
     */
-  var `inbuf_`: js.Any = js.native
+  var inbuf_ : js.Any = js.native
   /**
     * Contains data needed to pad messages less than 64 bytes.
     * @type {!Array<number>}
     * @private
     */
-  var `pad_`: js.Any = js.native
+  var pad_ : js.Any = js.native
   /**
     * @private {number}
     */
-  var `total_`: js.Any = js.native
+  var total_ : js.Any = js.native
   /**
     * Internal compress helper function.
     * @param {!Array<number>|!Uint8Array|string} buf Block to compress.
     * @param {number=} opt_offset Offset of the block in the buffer.
     * @private
     */
-  def `compress_`(buf: js.Any): scala.Unit = js.native
-  def `compress_`(buf: js.Any, opt_offset: js.Any): scala.Unit = js.native
+  def compress_(buf: js.Any): scala.Unit = js.native
+  def compress_(buf: js.Any, opt_offset: js.Any): scala.Unit = js.native
   /** @override */
   def digest(): js.Array[_] = js.native
   def reset(): scala.Unit = js.native

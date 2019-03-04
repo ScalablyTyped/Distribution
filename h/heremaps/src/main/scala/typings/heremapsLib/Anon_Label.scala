@@ -30,15 +30,8 @@ object Anon_Label {
     spot: scala.Double,
     `type`: java.lang.String
   ): Anon_Label = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("linkId")(linkId)
-    __obj.updateDynamic("mappedPosition")(mappedPosition)
-    __obj.updateDynamic("mappedRoadName")(mappedRoadName)
-    __obj.updateDynamic("originalPosition")(originalPosition)
-    __obj.updateDynamic("shapeIndex")(shapeIndex)
-    __obj.updateDynamic("sideOfStreet")(sideOfStreet)
-    __obj.updateDynamic("spot")(spot)
+    val __obj = js.Dynamic.literal(label = label, linkId = linkId, mappedPosition = mappedPosition, mappedRoadName = mappedRoadName, originalPosition = originalPosition, shapeIndex = shapeIndex, sideOfStreet = sideOfStreet, spot = spot)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Label]
   }
 }

@@ -18,8 +18,8 @@ object ReactTestRendererJSON {
     `type`: java.lang.String,
     children: js.Array[ReactTestRendererJSON] = null
   ): ReactTestRendererJSON = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(props = props)
+    __obj.updateDynamic("type")(`type`)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[ReactTestRendererJSON]
   }

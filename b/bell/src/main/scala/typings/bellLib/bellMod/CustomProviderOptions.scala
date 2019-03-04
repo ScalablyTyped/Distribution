@@ -34,11 +34,7 @@ object CustomProviderOptions {
     skipProfile: js.UndefOr[scala.Boolean] = js.undefined,
     ttl: scala.Int | scala.Double = null
   ): CustomProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, password = password, provider = provider.asInstanceOf[js.Any])
     if (allowRuntimeProviderParams != null) __obj.updateDynamic("allowRuntimeProviderParams")(allowRuntimeProviderParams.asInstanceOf[js.Any])
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)

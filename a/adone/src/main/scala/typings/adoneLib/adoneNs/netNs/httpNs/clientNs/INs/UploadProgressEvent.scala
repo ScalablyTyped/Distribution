@@ -14,10 +14,8 @@ trait UploadProgressEvent extends js.Object {
 object UploadProgressEvent {
   @scala.inline
   def apply(lengthComputable: scala.Boolean, loaded: scala.Double, total: scala.Double): UploadProgressEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lengthComputable")(lengthComputable)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(lengthComputable = lengthComputable, loaded = loaded, total = total)
+  
     __obj.asInstanceOf[UploadProgressEvent]
   }
 }

@@ -22,8 +22,7 @@ object IPathRoutes {
     rescue: js.Function = null,
     root: java.lang.String = null
   ): IPathRoutes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defined")(defined)
+    val __obj = js.Dynamic.literal(defined = defined)
     if (current != null) __obj.updateDynamic("current")(current)
     if (previous != null) __obj.updateDynamic("previous")(previous)
     if (rescue != null) __obj.updateDynamic("rescue")(rescue)

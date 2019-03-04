@@ -37,13 +37,8 @@ object HistogramResult {
     minValue: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): HistogramResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bins")(bins)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(bins = bins, constructor = constructor, hasOwnProperty = hasOwnProperty, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[HistogramResult]
   }
 }

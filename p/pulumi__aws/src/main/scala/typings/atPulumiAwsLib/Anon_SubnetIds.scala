@@ -13,9 +13,8 @@ trait Anon_SubnetIds extends js.Object {
 object Anon_SubnetIds {
   @scala.inline
   def apply(subnetIds: js.Array[java.lang.String], vpcId: java.lang.String): Anon_SubnetIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(subnetIds = subnetIds, vpcId = vpcId)
+  
     __obj.asInstanceOf[Anon_SubnetIds]
   }
 }

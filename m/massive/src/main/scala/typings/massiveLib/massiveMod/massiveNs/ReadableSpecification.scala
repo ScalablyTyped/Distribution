@@ -24,10 +24,7 @@ object ReadableSpecification {
     schema: java.lang.String,
     is_matview: js.UndefOr[scala.Boolean] = js.undefined
   ): ReadableSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(db = db, name = name, schema = schema)
     if (!js.isUndefined(is_matview)) __obj.updateDynamic("is_matview")(is_matview)
     __obj.asInstanceOf[ReadableSpecification]
   }

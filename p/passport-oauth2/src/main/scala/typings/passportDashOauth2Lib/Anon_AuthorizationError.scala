@@ -50,10 +50,8 @@ object Anon_AuthorizationError {
       passportDashOauth2Lib.passportDashOauth2Mod.OAuth2StrategyNs.TokenError
     ]
   ): Anon_AuthorizationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AuthorizationError")(AuthorizationError)
-    __obj.updateDynamic("InternalOAuthError")(InternalOAuthError)
-    __obj.updateDynamic("TokenError")(TokenError)
+    val __obj = js.Dynamic.literal(AuthorizationError = AuthorizationError, InternalOAuthError = InternalOAuthError, TokenError = TokenError)
+  
     __obj.asInstanceOf[Anon_AuthorizationError]
   }
 }

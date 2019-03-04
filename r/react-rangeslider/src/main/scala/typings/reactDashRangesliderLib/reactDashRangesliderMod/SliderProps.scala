@@ -42,8 +42,7 @@ object SliderProps {
     step: scala.Int | scala.Double = null,
     tooltip: js.UndefOr[scala.Boolean] = js.undefined
   ): SliderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(handleLabel)) __obj.updateDynamic("handleLabel")(handleLabel)

@@ -24,8 +24,7 @@ object AsObject {
     outputType: java.lang.String = null,
     serverStreaming: js.UndefOr[scala.Boolean] = js.undefined
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (!js.isUndefined(clientStreaming)) __obj.updateDynamic("clientStreaming")(clientStreaming)
     if (inputType != null) __obj.updateDynamic("inputType")(inputType)
     if (name != null) __obj.updateDynamic("name")(name)

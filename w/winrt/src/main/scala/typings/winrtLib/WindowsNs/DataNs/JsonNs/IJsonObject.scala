@@ -33,21 +33,8 @@ object IJsonObject {
     stringify: js.Function0[java.lang.String],
     valueType: JsonValueType
   ): IJsonObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getBoolean")(getBoolean)
-    __obj.updateDynamic("getNamedArray")(getNamedArray)
-    __obj.updateDynamic("getNamedBoolean")(getNamedBoolean)
-    __obj.updateDynamic("getNamedNumber")(getNamedNumber)
-    __obj.updateDynamic("getNamedObject")(getNamedObject)
-    __obj.updateDynamic("getNamedString")(getNamedString)
-    __obj.updateDynamic("getNamedValue")(getNamedValue)
-    __obj.updateDynamic("getNumber")(getNumber)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("setNamedValue")(setNamedValue)
-    __obj.updateDynamic("stringify")(stringify)
-    __obj.updateDynamic("valueType")(valueType)
+    val __obj = js.Dynamic.literal(getArray = getArray, getBoolean = getBoolean, getNamedArray = getNamedArray, getNamedBoolean = getNamedBoolean, getNamedNumber = getNamedNumber, getNamedObject = getNamedObject, getNamedString = getNamedString, getNamedValue = getNamedValue, getNumber = getNumber, getObject = getObject, getString = getString, setNamedValue = setNamedValue, stringify = stringify, valueType = valueType)
+  
     __obj.asInstanceOf[IJsonObject]
   }
 }

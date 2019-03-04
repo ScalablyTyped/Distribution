@@ -42,12 +42,8 @@ object ASPxClientDashboardItemElementCustomColorEventArgs {
     ItemName: java.lang.String,
     SetColor: js.Function1[java.lang.String, scala.Unit]
   ): ASPxClientDashboardItemElementCustomColorEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetColor")(GetColor)
-    __obj.updateDynamic("GetMeasures")(GetMeasures)
-    __obj.updateDynamic("GetTargetElement")(GetTargetElement)
-    __obj.updateDynamic("ItemName")(ItemName)
-    __obj.updateDynamic("SetColor")(SetColor)
+    val __obj = js.Dynamic.literal(GetColor = GetColor, GetMeasures = GetMeasures, GetTargetElement = GetTargetElement, ItemName = ItemName, SetColor = SetColor)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemElementCustomColorEventArgs]
   }
 }

@@ -22,11 +22,8 @@ object Case {
     `type`: java.lang.String,
     values: CaseValues
   ): Case = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("standard")(standard)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(file = file, standard = standard, success = success, values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Case]
   }
 }

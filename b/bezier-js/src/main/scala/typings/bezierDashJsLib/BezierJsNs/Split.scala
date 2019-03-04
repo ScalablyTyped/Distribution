@@ -20,10 +20,7 @@ object Split {
     _t1: scala.Int | scala.Double = null,
     _t2: scala.Int | scala.Double = null
   ): Split = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("span")(span)
+    val __obj = js.Dynamic.literal(left = left, right = right, span = span)
     if (_t1 != null) __obj.updateDynamic("_t1")(_t1.asInstanceOf[js.Any])
     if (_t2 != null) __obj.updateDynamic("_t2")(_t2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Split]

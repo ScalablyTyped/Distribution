@@ -22,12 +22,8 @@ object LanguageStatistics {
     languagePercentage: scala.Double,
     name: java.lang.String
   ): LanguageStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("filesPercentage")(filesPercentage)
-    __obj.updateDynamic("languagePercentage")(languagePercentage)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(bytes = bytes, files = files, filesPercentage = filesPercentage, languagePercentage = languagePercentage, name = name)
+  
     __obj.asInstanceOf[LanguageStatistics]
   }
 }

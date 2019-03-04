@@ -36,10 +36,8 @@ object BraintreeError {
     message: java.lang.String,
     `type`: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeErrorNs.Types
   ): BraintreeError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, details = details, message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BraintreeError]
   }
 }

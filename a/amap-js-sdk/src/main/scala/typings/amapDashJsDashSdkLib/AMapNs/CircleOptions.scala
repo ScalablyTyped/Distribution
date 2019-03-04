@@ -34,9 +34,7 @@ object CircleOptions {
     strokeStyle: java.lang.String = null,
     zIndex: scala.Int | scala.Double = null
   ): CircleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(center = center, map = map)
     if (extData != null) __obj.updateDynamic("extData")(extData)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity)

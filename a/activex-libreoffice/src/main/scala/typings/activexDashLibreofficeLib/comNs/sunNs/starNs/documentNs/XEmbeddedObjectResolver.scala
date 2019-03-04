@@ -20,11 +20,8 @@ object XEmbeddedObjectResolver {
     release: js.Function0[scala.Unit],
     resolveEmbeddedObjectURL: js.Function1[java.lang.String, java.lang.String]
   ): XEmbeddedObjectResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("resolveEmbeddedObjectURL")(resolveEmbeddedObjectURL)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, resolveEmbeddedObjectURL = resolveEmbeddedObjectURL)
+  
     __obj.asInstanceOf[XEmbeddedObjectResolver]
   }
 }

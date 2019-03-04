@@ -44,14 +44,8 @@ object JobTaskListFieldValuesParams {
     tableName: java.lang.String,
     user: java.lang.String
   ): JobTaskListFieldValuesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("tableName")(tableName)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, tableName = tableName, user = user)
+  
     __obj.asInstanceOf[JobTaskListFieldValuesParams]
   }
 }

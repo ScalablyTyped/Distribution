@@ -26,14 +26,8 @@ object Constants {
     TRANSITION_SUCCESS: java.lang.String,
     UNKNOWN_ROUTE: java.lang.String
   ): Constants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ROUTER_START")(ROUTER_START)
-    __obj.updateDynamic("ROUTER_STOP")(ROUTER_STOP)
-    __obj.updateDynamic("TRANSITION_CANCEL")(TRANSITION_CANCEL)
-    __obj.updateDynamic("TRANSITION_ERROR")(TRANSITION_ERROR)
-    __obj.updateDynamic("TRANSITION_START")(TRANSITION_START)
-    __obj.updateDynamic("TRANSITION_SUCCESS")(TRANSITION_SUCCESS)
-    __obj.updateDynamic("UNKNOWN_ROUTE")(UNKNOWN_ROUTE)
+    val __obj = js.Dynamic.literal(ROUTER_START = ROUTER_START, ROUTER_STOP = ROUTER_STOP, TRANSITION_CANCEL = TRANSITION_CANCEL, TRANSITION_ERROR = TRANSITION_ERROR, TRANSITION_START = TRANSITION_START, TRANSITION_SUCCESS = TRANSITION_SUCCESS, UNKNOWN_ROUTE = UNKNOWN_ROUTE)
+  
     __obj.asInstanceOf[Constants]
   }
 }

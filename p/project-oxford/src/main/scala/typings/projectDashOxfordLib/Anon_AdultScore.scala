@@ -20,11 +20,8 @@ object Anon_AdultScore {
     isRacyContent: scala.Boolean,
     racyScore: scala.Double
   ): Anon_AdultScore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adultScore")(adultScore)
-    __obj.updateDynamic("isAdultContent")(isAdultContent)
-    __obj.updateDynamic("isRacyContent")(isRacyContent)
-    __obj.updateDynamic("racyScore")(racyScore)
+    val __obj = js.Dynamic.literal(adultScore = adultScore, isAdultContent = isAdultContent, isRacyContent = isRacyContent, racyScore = racyScore)
+  
     __obj.asInstanceOf[Anon_AdultScore]
   }
 }

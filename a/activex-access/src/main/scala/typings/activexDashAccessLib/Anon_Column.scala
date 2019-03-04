@@ -12,8 +12,8 @@ trait Anon_Column extends js.Object {
 object Anon_Column {
   @scala.inline
   def apply(Column: scala.Double): Anon_Column = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Column")(Column)
+    val __obj = js.Dynamic.literal(Column = Column)
+  
     __obj.asInstanceOf[Anon_Column]
   }
 }

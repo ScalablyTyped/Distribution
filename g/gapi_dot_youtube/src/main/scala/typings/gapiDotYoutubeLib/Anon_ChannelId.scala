@@ -57,8 +57,7 @@ object Anon_ChannelId {
     publishedBefore: java.lang.String = null,
     regionCode: java.lang.String = null
   ): Anon_ChannelId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (!js.isUndefined(home)) __obj.updateDynamic("home")(home)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

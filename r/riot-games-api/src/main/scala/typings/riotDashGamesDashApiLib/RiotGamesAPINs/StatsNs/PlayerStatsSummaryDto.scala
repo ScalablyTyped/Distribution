@@ -22,12 +22,8 @@ object PlayerStatsSummaryDto {
     playerStatSummaryType: java.lang.String,
     wins: scala.Double
   ): PlayerStatsSummaryDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedStats")(aggregatedStats)
-    __obj.updateDynamic("losses")(losses)
-    __obj.updateDynamic("modifyDate")(modifyDate)
-    __obj.updateDynamic("playerStatSummaryType")(playerStatSummaryType)
-    __obj.updateDynamic("wins")(wins)
+    val __obj = js.Dynamic.literal(aggregatedStats = aggregatedStats, losses = losses, modifyDate = modifyDate, playerStatSummaryType = playerStatSummaryType, wins = wins)
+  
     __obj.asInstanceOf[PlayerStatsSummaryDto]
   }
 }

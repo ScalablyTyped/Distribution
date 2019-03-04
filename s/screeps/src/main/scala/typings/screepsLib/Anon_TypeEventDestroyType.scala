@@ -13,8 +13,8 @@ trait Anon_TypeEventDestroyType extends js.Object {
 object Anon_TypeEventDestroyType {
   @scala.inline
   def apply(`type`: EventDestroyType): Anon_TypeEventDestroyType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_TypeEventDestroyType]
   }
 }

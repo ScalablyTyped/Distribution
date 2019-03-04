@@ -30,11 +30,7 @@ object CompositionParameters {
     selectionEnd: scala.Int | scala.Double = null,
     selectionStart: scala.Int | scala.Double = null
   ): CompositionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextID")(contextID)
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("segments")(segments)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(contextID = contextID, cursor = cursor, segments = segments, text = text)
     if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
     if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompositionParameters]

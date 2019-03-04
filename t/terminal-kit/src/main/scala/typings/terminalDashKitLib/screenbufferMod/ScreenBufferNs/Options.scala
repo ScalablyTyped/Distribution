@@ -28,8 +28,7 @@ object Options {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any])
     if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(noFill)) __obj.updateDynamic("noFill")(noFill)

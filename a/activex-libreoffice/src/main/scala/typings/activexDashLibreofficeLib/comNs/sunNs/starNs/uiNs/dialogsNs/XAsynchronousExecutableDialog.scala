@@ -29,12 +29,8 @@ object XAsynchronousExecutableDialog {
     setDialogTitle: js.Function1[java.lang.String, scala.Unit],
     startExecuteModal: js.Function1[XDialogClosedListener, scala.Unit]
   ): XAsynchronousExecutableDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDialogTitle")(setDialogTitle)
-    __obj.updateDynamic("startExecuteModal")(startExecuteModal)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setDialogTitle = setDialogTitle, startExecuteModal = startExecuteModal)
+  
     __obj.asInstanceOf[XAsynchronousExecutableDialog]
   }
 }

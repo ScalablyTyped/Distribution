@@ -53,12 +53,8 @@ object GeolocationPositioning {
     scale: scala.Double,
     view: MapView | SceneView
   ): GeolocationPositioning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geolocationOptions")(geolocationOptions)
-    __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled)
-    __obj.updateDynamic("graphic")(graphic)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(geolocationOptions = geolocationOptions, goToLocationEnabled = goToLocationEnabled, graphic = graphic, scale = scale, view = view.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GeolocationPositioning]
   }
 }

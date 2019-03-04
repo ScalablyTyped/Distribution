@@ -30,14 +30,8 @@ object XTerminateListener2 {
     queryTermination: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XTerminateListener2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancelTermination")(cancelTermination)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("notifyTermination")(notifyTermination)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryTermination")(queryTermination)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, cancelTermination = cancelTermination, disposing = disposing, notifyTermination = notifyTermination, queryInterface = queryInterface, queryTermination = queryTermination, release = release)
+  
     __obj.asInstanceOf[XTerminateListener2]
   }
 }

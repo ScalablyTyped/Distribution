@@ -12,8 +12,8 @@ trait Anon_Pathname extends js.Object {
 object Anon_Pathname {
   @scala.inline
   def apply(pathname: historyLib.historyMod.Pathname): Anon_Pathname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathname")(pathname)
+    val __obj = js.Dynamic.literal(pathname = pathname)
+  
     __obj.asInstanceOf[Anon_Pathname]
   }
 }

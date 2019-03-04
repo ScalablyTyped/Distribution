@@ -29,9 +29,7 @@ object Transaction {
     params: js.Object = null,
     waitForSync: js.UndefOr[scala.Boolean] = js.undefined
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("collections")(collections.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action, collections = collections.asInstanceOf[js.Any])
     if (intermediateCommitCount != null) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.asInstanceOf[js.Any])
     if (intermediateCommitSize != null) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.asInstanceOf[js.Any])
     if (lockTimeout != null) __obj.updateDynamic("lockTimeout")(lockTimeout.asInstanceOf[js.Any])

@@ -76,39 +76,8 @@ object TaskDefinition {
     version: TaskVersion,
     visibility: js.Array[java.lang.String]
   ): TaskDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agentExecution")(agentExecution)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("contentsUploaded")(contentsUploaded)
-    __obj.updateDynamic("contributionIdentifier")(contributionIdentifier)
-    __obj.updateDynamic("contributionVersion")(contributionVersion)
-    __obj.updateDynamic("dataSourceBindings")(dataSourceBindings)
-    __obj.updateDynamic("definitionType")(definitionType)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("execution")(execution)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("helpMarkDown")(helpMarkDown)
-    __obj.updateDynamic("hostType")(hostType)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("instanceNameFormat")(instanceNameFormat)
-    __obj.updateDynamic("minimumAgentVersion")(minimumAgentVersion)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("packageLocation")(packageLocation)
-    __obj.updateDynamic("packageType")(packageType)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("releaseNotes")(releaseNotes)
-    __obj.updateDynamic("runsOn")(runsOn)
-    __obj.updateDynamic("serverOwned")(serverOwned)
-    __obj.updateDynamic("sourceDefinitions")(sourceDefinitions)
-    __obj.updateDynamic("sourceLocation")(sourceLocation)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(agentExecution = agentExecution, author = author, category = category, contentsUploaded = contentsUploaded, contributionIdentifier = contributionIdentifier, contributionVersion = contributionVersion, dataSourceBindings = dataSourceBindings, definitionType = definitionType, demands = demands, description = description, disabled = disabled, execution = execution, friendlyName = friendlyName, groups = groups, helpMarkDown = helpMarkDown, hostType = hostType, iconUrl = iconUrl, id = id, inputs = inputs, instanceNameFormat = instanceNameFormat, minimumAgentVersion = minimumAgentVersion, name = name, packageLocation = packageLocation, packageType = packageType, preview = preview, releaseNotes = releaseNotes, runsOn = runsOn, serverOwned = serverOwned, sourceDefinitions = sourceDefinitions, sourceLocation = sourceLocation, version = version, visibility = visibility)
+  
     __obj.asInstanceOf[TaskDefinition]
   }
 }

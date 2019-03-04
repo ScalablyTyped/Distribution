@@ -34,18 +34,8 @@ object Decoder {
     reserve: js.Function1[scala.Double, scala.Double],
     write: js.Function1[js.Any, scala.Unit]
   ): Decoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferish")(bufferish)
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("pull")(pull)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("reserve")(reserve)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(bufferish = bufferish, decode = decode, end = end, fetch = fetch, flush = flush, offset = offset, pull = pull, push = push, read = read, reserve = reserve, write = write)
+  
     __obj.asInstanceOf[Decoder]
   }
 }

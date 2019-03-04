@@ -22,12 +22,8 @@ object Anon_Body {
     method: java.lang.String,
     url: java.lang.String
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("cookies")(cookies)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, cookies = cookies, headers = headers, method = method, url = url)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

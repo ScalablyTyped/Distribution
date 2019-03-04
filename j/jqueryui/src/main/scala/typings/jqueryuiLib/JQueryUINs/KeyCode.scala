@@ -56,29 +56,8 @@ object KeyCode {
     TAB: scala.Double,
     UP: scala.Double
   ): KeyCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BACKSPACE")(BACKSPACE)
-    __obj.updateDynamic("COMMA")(COMMA)
-    __obj.updateDynamic("DELETE")(DELETE)
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("END")(END)
-    __obj.updateDynamic("ENTER")(ENTER)
-    __obj.updateDynamic("ESCAPE")(ESCAPE)
-    __obj.updateDynamic("HOME")(HOME)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("NUMPAD_ADD")(NUMPAD_ADD)
-    __obj.updateDynamic("NUMPAD_DECIMAL")(NUMPAD_DECIMAL)
-    __obj.updateDynamic("NUMPAD_DIVIDE")(NUMPAD_DIVIDE)
-    __obj.updateDynamic("NUMPAD_ENTER")(NUMPAD_ENTER)
-    __obj.updateDynamic("NUMPAD_MULTIPLY")(NUMPAD_MULTIPLY)
-    __obj.updateDynamic("NUMPAD_SUBTRACT")(NUMPAD_SUBTRACT)
-    __obj.updateDynamic("PAGE_DOWN")(PAGE_DOWN)
-    __obj.updateDynamic("PAGE_UP")(PAGE_UP)
-    __obj.updateDynamic("PERIOD")(PERIOD)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("SPACE")(SPACE)
-    __obj.updateDynamic("TAB")(TAB)
-    __obj.updateDynamic("UP")(UP)
+    val __obj = js.Dynamic.literal(BACKSPACE = BACKSPACE, COMMA = COMMA, DELETE = DELETE, DOWN = DOWN, END = END, ENTER = ENTER, ESCAPE = ESCAPE, HOME = HOME, LEFT = LEFT, NUMPAD_ADD = NUMPAD_ADD, NUMPAD_DECIMAL = NUMPAD_DECIMAL, NUMPAD_DIVIDE = NUMPAD_DIVIDE, NUMPAD_ENTER = NUMPAD_ENTER, NUMPAD_MULTIPLY = NUMPAD_MULTIPLY, NUMPAD_SUBTRACT = NUMPAD_SUBTRACT, PAGE_DOWN = PAGE_DOWN, PAGE_UP = PAGE_UP, PERIOD = PERIOD, RIGHT = RIGHT, SPACE = SPACE, TAB = TAB, UP = UP)
+  
     __obj.asInstanceOf[KeyCode]
   }
 }

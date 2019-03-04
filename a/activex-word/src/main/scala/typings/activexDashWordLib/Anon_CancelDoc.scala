@@ -14,10 +14,8 @@ trait Anon_CancelDoc extends js.Object {
 object Anon_CancelDoc {
   @scala.inline
   def apply(Cancel: scala.Boolean, Doc: activexDashWordLib.WordNs.Document, SaveAsUI: scala.Boolean): Anon_CancelDoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("SaveAsUI")(SaveAsUI)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Doc = Doc, SaveAsUI = SaveAsUI)
+  
     __obj.asInstanceOf[Anon_CancelDoc]
   }
 }

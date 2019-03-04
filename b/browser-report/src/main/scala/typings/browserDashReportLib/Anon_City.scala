@@ -24,13 +24,8 @@ object Anon_City {
     name: java.lang.String,
     timezone: java.lang.String
   ): Anon_City = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("timezone")(timezone)
+    val __obj = js.Dynamic.literal(city = city, code = code, latitude = latitude, longitude = longitude, name = name, timezone = timezone)
+  
     __obj.asInstanceOf[Anon_City]
   }
 }

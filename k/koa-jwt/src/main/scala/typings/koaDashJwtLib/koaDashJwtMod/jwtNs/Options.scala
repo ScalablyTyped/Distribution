@@ -52,8 +52,7 @@ object Options {
     passthrough: js.UndefOr[scala.Boolean] = js.undefined,
     tokenKey: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (cookie != null) __obj.updateDynamic("cookie")(cookie)

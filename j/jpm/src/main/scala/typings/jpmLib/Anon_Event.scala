@@ -26,8 +26,7 @@ object Anon_Event {
     onMessage: js.Function1[/* message */ jpmLib.FFAddonSDKNs.FrameEvent, _] = null,
     onReady: js.Function1[/* event */ jpmLib.FFAddonSDKNs.FrameEvent, _] = null
   ): Anon_Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (name != null) __obj.updateDynamic("name")(name)
     if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
     if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)

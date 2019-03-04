@@ -33,8 +33,7 @@ object Update {
     pre_checkout_query: PreCheckoutQuery = null,
     shipping_query: ShippingQuery = null
   ): Update = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("update_id")(update_id)
+    val __obj = js.Dynamic.literal(update_id = update_id)
     if (callback_query != null) __obj.updateDynamic("callback_query")(callback_query)
     if (channel_post != null) __obj.updateDynamic("channel_post")(channel_post)
     if (chosen_inline_result != null) __obj.updateDynamic("chosen_inline_result")(chosen_inline_result)

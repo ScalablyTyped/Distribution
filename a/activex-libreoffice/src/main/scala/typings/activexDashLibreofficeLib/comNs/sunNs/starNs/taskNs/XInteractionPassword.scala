@@ -38,14 +38,8 @@ object XInteractionPassword {
     select: js.Function0[scala.Unit],
     setPassword: js.Function1[java.lang.String, scala.Unit]
   ): XInteractionPassword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPassword")(getPassword)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setPassword")(setPassword)
+    val __obj = js.Dynamic.literal(Password = Password, acquire = acquire, getPassword = getPassword, queryInterface = queryInterface, release = release, select = select, setPassword = setPassword)
+  
     __obj.asInstanceOf[XInteractionPassword]
   }
 }

@@ -21,8 +21,8 @@ object IAdcProvider {
       winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IAdcControllerProvider]
     ]
   ): IAdcProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControllers")(getControllers)
+    val __obj = js.Dynamic.literal(getControllers = getControllers)
+  
     __obj.asInstanceOf[IAdcProvider]
   }
 }

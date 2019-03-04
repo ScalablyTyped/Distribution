@@ -24,13 +24,8 @@ object TableRow {
     getParentTable: js.Function0[Table],
     remove: js.Function0[scala.Unit]
   ): TableRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCell")(getCell)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getMinimumHeight")(getMinimumHeight)
-    __obj.updateDynamic("getNumCells")(getNumCells)
-    __obj.updateDynamic("getParentTable")(getParentTable)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getCell = getCell, getIndex = getIndex, getMinimumHeight = getMinimumHeight, getNumCells = getNumCells, getParentTable = getParentTable, remove = remove)
+  
     __obj.asInstanceOf[TableRow]
   }
 }

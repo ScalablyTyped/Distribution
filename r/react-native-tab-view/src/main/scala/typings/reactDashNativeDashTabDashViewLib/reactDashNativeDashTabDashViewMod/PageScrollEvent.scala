@@ -12,8 +12,8 @@ trait PageScrollEvent extends js.Object {
 object PageScrollEvent {
   @scala.inline
   def apply(nativeEvent: reactDashNativeDashTabDashViewLib.Anon_Offset): PageScrollEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
     __obj.asInstanceOf[PageScrollEvent]
   }
 }

@@ -30,13 +30,8 @@ object ParagraphTextValidationBuilder {
     ],
     requireTextMatchesPattern: js.Function1[java.lang.String, ParagraphTextValidationBuilder]
   ): ParagraphTextValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireTextContainsPattern")(requireTextContainsPattern)
-    __obj.updateDynamic("requireTextDoesNotContainPattern")(requireTextDoesNotContainPattern)
-    __obj.updateDynamic("requireTextDoesNotMatchPattern")(requireTextDoesNotMatchPattern)
-    __obj.updateDynamic("requireTextLengthGreaterThanOrEqualTo")(requireTextLengthGreaterThanOrEqualTo)
-    __obj.updateDynamic("requireTextLengthLessThanOrEqualTo")(requireTextLengthLessThanOrEqualTo)
-    __obj.updateDynamic("requireTextMatchesPattern")(requireTextMatchesPattern)
+    val __obj = js.Dynamic.literal(requireTextContainsPattern = requireTextContainsPattern, requireTextDoesNotContainPattern = requireTextDoesNotContainPattern, requireTextDoesNotMatchPattern = requireTextDoesNotMatchPattern, requireTextLengthGreaterThanOrEqualTo = requireTextLengthGreaterThanOrEqualTo, requireTextLengthLessThanOrEqualTo = requireTextLengthLessThanOrEqualTo, requireTextMatchesPattern = requireTextMatchesPattern)
+  
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }
 }

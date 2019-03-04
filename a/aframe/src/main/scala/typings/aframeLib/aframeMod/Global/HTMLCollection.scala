@@ -33,11 +33,8 @@ object HTMLCollection {
       ]) | scala.Null
     ]
   ): HTMLCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("namedItem")(namedItem)
+    val __obj = js.Dynamic.literal(item = item, iterator = iterator, length = length, namedItem = namedItem)
+  
     __obj.asInstanceOf[HTMLCollection]
   }
 }

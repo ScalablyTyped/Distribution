@@ -51,14 +51,8 @@ object IGenericDerivedFields {
     getListData: js.Function0[js.Promise[_]],
     getProperties: js.Function0[js.Promise[IGenericDerivedFieldProperties]]
   ): IGenericDerivedFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDerivedField")(getDerivedField)
-    __obj.updateDynamic("getDerivedFieldData")(getDerivedFieldData)
-    __obj.updateDynamic("getDerivedFields")(getDerivedFields)
-    __obj.updateDynamic("getDerivedGroups")(getDerivedGroups)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getListData")(getListData)
-    __obj.updateDynamic("getProperties")(getProperties)
+    val __obj = js.Dynamic.literal(getDerivedField = getDerivedField, getDerivedFieldData = getDerivedFieldData, getDerivedFields = getDerivedFields, getDerivedGroups = getDerivedGroups, getInfo = getInfo, getListData = getListData, getProperties = getProperties)
+  
     __obj.asInstanceOf[IGenericDerivedFields]
   }
 }

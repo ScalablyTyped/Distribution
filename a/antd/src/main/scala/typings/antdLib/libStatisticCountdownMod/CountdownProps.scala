@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait CountdownProps
   extends antdLib.libStatisticStatisticMod.StatisticProps {
   var format: js.UndefOr[java.lang.String] = js.undefined
+  var onFinish: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   @JSName("value")
   var value_CountdownProps: js.UndefOr[antdLib.libStatisticUtilsMod.countdownValueType] = js.undefined
 }
@@ -20,6 +21,7 @@ object CountdownProps {
     format: java.lang.String = null,
     formatter: antdLib.libStatisticUtilsMod.Formatter = null,
     groupSeparator: java.lang.String = null,
+    onFinish: js.Function0[scala.Unit] = null,
     precision: scala.Int | scala.Double = null,
     prefix: reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
@@ -39,6 +41,7 @@ object CountdownProps {
     if (format != null) __obj.updateDynamic("format")(format)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

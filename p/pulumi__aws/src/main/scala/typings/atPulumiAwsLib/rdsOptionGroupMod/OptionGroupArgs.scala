@@ -57,9 +57,7 @@ object OptionGroupArgs {
     ] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): OptionGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
-    __obj.updateDynamic("majorEngineVersion")(majorEngineVersion.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(engineName = engineName.asInstanceOf[js.Any], majorEngineVersion = majorEngineVersion.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (optionGroupDescription != null) __obj.updateDynamic("optionGroupDescription")(optionGroupDescription.asInstanceOf[js.Any])

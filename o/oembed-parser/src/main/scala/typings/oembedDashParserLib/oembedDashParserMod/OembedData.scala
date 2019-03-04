@@ -22,11 +22,8 @@ object OembedData {
     `type`: java.lang.String,
     version: java.lang.String
   ): OembedData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("provider_name")(provider_name)
-    __obj.updateDynamic("provider_url")(provider_url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(html = html, provider_name = provider_name, provider_url = provider_url, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OembedData]
   }
 }

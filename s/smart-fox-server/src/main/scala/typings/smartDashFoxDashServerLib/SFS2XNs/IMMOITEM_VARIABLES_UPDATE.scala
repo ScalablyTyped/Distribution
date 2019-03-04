@@ -18,10 +18,8 @@ object IMMOITEM_VARIABLES_UPDATE {
     mmoItem: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.MMOItem,
     room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.MMORoom
   ): IMMOITEM_VARIABLES_UPDATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedVars")(changedVars)
-    __obj.updateDynamic("mmoItem")(mmoItem)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(changedVars = changedVars, mmoItem = mmoItem, room = room)
+  
     __obj.asInstanceOf[IMMOITEM_VARIABLES_UPDATE]
   }
 }

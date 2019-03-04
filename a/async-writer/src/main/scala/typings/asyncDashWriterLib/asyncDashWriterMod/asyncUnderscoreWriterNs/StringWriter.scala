@@ -17,10 +17,8 @@ object StringWriter {
     toString: js.Function0[java.lang.String],
     write: js.Function1[java.lang.String, StringWriter]
   ): StringWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(end = end, toString = toString, write = write)
+  
     __obj.asInstanceOf[StringWriter]
   }
 }

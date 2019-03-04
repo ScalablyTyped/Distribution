@@ -21,8 +21,7 @@ object IconToggleProps {
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): IconToggleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, RippleComponent)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)

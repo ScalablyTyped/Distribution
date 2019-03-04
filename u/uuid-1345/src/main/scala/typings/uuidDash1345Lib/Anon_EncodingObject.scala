@@ -12,8 +12,8 @@ trait Anon_EncodingObject extends js.Object {
 object Anon_EncodingObject {
   @scala.inline
   def apply(encoding: uuidDash1345Lib.uuidDash1345LibStrings.`object`): Anon_EncodingObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
+  
     __obj.asInstanceOf[Anon_EncodingObject]
   }
 }

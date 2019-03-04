@@ -34,13 +34,8 @@ object Map {
     value: java.lang.String = null,
     valueRange: Range = null
   ): Map = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(hasComment = hasComment, hasProps = hasProps, items = items, jsonLike = jsonLike, props = props, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (context != null) __obj.updateDynamic("context")(context)

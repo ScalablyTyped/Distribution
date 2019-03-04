@@ -13,9 +13,8 @@ trait Anon_Ip extends js.Object {
 object Anon_Ip {
   @scala.inline
   def apply(ip: java.lang.String, version: scala.Double): Anon_Ip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(ip = ip, version = version)
+  
     __obj.asInstanceOf[Anon_Ip]
   }
 }

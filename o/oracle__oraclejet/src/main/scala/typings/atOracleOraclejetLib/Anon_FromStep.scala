@@ -18,9 +18,7 @@ object Anon_FromStep {
     toStep: java.lang.String,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_FromStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromStep")(fromStep)
-    __obj.updateDynamic("toStep")(toStep)
+    val __obj = js.Dynamic.literal(fromStep = fromStep, toStep = toStep)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromStep]
   }

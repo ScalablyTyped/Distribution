@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 	 */
 @js.native
 trait Component extends EventedMixin {
-  var `children_`: js.Array[Component] = js.native
-  var `options_`: ComponentOptions = js.native
-  var `player_`: Player = js.native
+  var children_ : js.Array[Component] = js.native
+  var options_ : ComponentOptions = js.native
+  var player_ : Player = js.native
   /**
   		 * Find a single DOM element matching a `selector`. This can be within the `Component`s
   		 * `contentEl()` or another custom context.

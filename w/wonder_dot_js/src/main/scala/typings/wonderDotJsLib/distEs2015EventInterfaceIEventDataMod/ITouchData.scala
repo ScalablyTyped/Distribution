@@ -36,19 +36,8 @@ object ITouchData {
     screenY: scala.Double,
     target: stdLib.HTMLElement
   ): ITouchData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientX")(clientX)
-    __obj.updateDynamic("clientY")(clientY)
-    __obj.updateDynamic("force")(force)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
-    __obj.updateDynamic("radiusX")(radiusX)
-    __obj.updateDynamic("radiusY")(radiusY)
-    __obj.updateDynamic("rotationAngle")(rotationAngle)
-    __obj.updateDynamic("screenX")(screenX)
-    __obj.updateDynamic("screenY")(screenY)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(clientX = clientX, clientY = clientY, force = force, identifier = identifier, pageX = pageX, pageY = pageY, radiusX = radiusX, radiusY = radiusY, rotationAngle = rotationAngle, screenX = screenX, screenY = screenY, target = target)
+  
     __obj.asInstanceOf[ITouchData]
   }
 }

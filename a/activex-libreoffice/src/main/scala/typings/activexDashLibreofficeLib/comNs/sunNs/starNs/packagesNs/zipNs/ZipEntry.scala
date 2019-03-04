@@ -53,19 +53,8 @@ object ZipEntry {
     sComment: java.lang.String,
     sName: java.lang.String
   ): ZipEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("nCompressedSize")(nCompressedSize)
-    __obj.updateDynamic("nCrc")(nCrc)
-    __obj.updateDynamic("nDiskNumber")(nDiskNumber)
-    __obj.updateDynamic("nFlag")(nFlag)
-    __obj.updateDynamic("nMethod")(nMethod)
-    __obj.updateDynamic("nOffset")(nOffset)
-    __obj.updateDynamic("nSize")(nSize)
-    __obj.updateDynamic("nTime")(nTime)
-    __obj.updateDynamic("nVersion")(nVersion)
-    __obj.updateDynamic("sComment")(sComment)
-    __obj.updateDynamic("sName")(sName)
+    val __obj = js.Dynamic.literal(extra = extra, nCompressedSize = nCompressedSize, nCrc = nCrc, nDiskNumber = nDiskNumber, nFlag = nFlag, nMethod = nMethod, nOffset = nOffset, nSize = nSize, nTime = nTime, nVersion = nVersion, sComment = sComment, sName = sName)
+  
     __obj.asInstanceOf[ZipEntry]
   }
 }

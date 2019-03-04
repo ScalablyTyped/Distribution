@@ -14,10 +14,8 @@ trait Profile extends js.Object {
 object Profile {
   @scala.inline
   def apply(getStats: js.Function0[webpackbarLib.Anon_Ext], name: java.lang.String, requests: js.Array[_]): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStats")(getStats)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("requests")(requests)
+    val __obj = js.Dynamic.literal(getStats = getStats, name = name, requests = requests)
+  
     __obj.asInstanceOf[Profile]
   }
 }

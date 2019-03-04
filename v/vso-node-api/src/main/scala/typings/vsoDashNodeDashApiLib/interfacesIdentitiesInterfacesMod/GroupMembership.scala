@@ -20,11 +20,8 @@ object GroupMembership {
     id: java.lang.String,
     queriedId: java.lang.String
   ): GroupMembership = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("descriptor")(descriptor)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("queriedId")(queriedId)
+    val __obj = js.Dynamic.literal(active = active, descriptor = descriptor, id = id, queriedId = queriedId)
+  
     __obj.asInstanceOf[GroupMembership]
   }
 }

@@ -56,28 +56,8 @@ object ASPxClientHtmlEditorImageDialog {
     GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit],
     GetWrapTextCheckBox: js.Function0[ASPxClientCheckBox]
   ): ASPxClientHtmlEditorImageDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetCreateThumbnailCheckBox")(GetCreateThumbnailCheckBox)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetDescriptionTextBox")(GetDescriptionTextBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHeightSpinEdit")(GetHeightSpinEdit)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetMediaFileSelector")(GetMediaFileSelector)
-    __obj.updateDynamic("GetMoreOptionsCheckBox")(GetMoreOptionsCheckBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetPositionComboBox")(GetPositionComboBox)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetSizeComboBox")(GetSizeComboBox)
-    __obj.updateDynamic("GetThumbnailNameTextBox")(GetThumbnailNameTextBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
-    __obj.updateDynamic("GetWidthSpinEdit")(GetWidthSpinEdit)
-    __obj.updateDynamic("GetWrapTextCheckBox")(GetWrapTextCheckBox)
+    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCreateThumbnailCheckBox = GetCreateThumbnailCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetDescriptionTextBox = GetDescriptionTextBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetSizeComboBox = GetSizeComboBox, GetThumbnailNameTextBox = GetThumbnailNameTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit, GetWrapTextCheckBox = GetWrapTextCheckBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorImageDialog]
   }
 }

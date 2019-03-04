@@ -32,11 +32,8 @@ object SubscriptionEvaluationResult {
     id: java.lang.String,
     notifications: NotificationsEvaluationResult
   ): SubscriptionEvaluationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluationJobStatus")(evaluationJobStatus)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("notifications")(notifications)
+    val __obj = js.Dynamic.literal(evaluationJobStatus = evaluationJobStatus, events = events, id = id, notifications = notifications)
+  
     __obj.asInstanceOf[SubscriptionEvaluationResult]
   }
 }

@@ -18,10 +18,8 @@ object Anon_LocationPath {
     path: java.lang.String,
     req: expressLib.expressMod.eNs.Request
   ): Anon_LocationPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("req")(req)
+    val __obj = js.Dynamic.literal(location = location, path = path, req = req)
+  
     __obj.asInstanceOf[Anon_LocationPath]
   }
 }

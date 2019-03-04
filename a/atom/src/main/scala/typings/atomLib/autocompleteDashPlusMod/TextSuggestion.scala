@@ -29,8 +29,7 @@ object TextSuggestion {
     rightLabelHTML: java.lang.String = null,
     `type`: java.lang.String = null
   ): TextSuggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (className != null) __obj.updateDynamic("className")(className)
     if (description != null) __obj.updateDynamic("description")(description)
     if (descriptionMarkdown != null) __obj.updateDynamic("descriptionMarkdown")(descriptionMarkdown)

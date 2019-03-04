@@ -24,13 +24,8 @@ object Account {
     reputation: scala.Double,
     url: java.lang.String
   ): Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bio")(bio)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pro_expiration")(pro_expiration)
-    __obj.updateDynamic("reputation")(reputation)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bio = bio, created = created, id = id, pro_expiration = pro_expiration, reputation = reputation, url = url)
+  
     __obj.asInstanceOf[Account]
   }
 }

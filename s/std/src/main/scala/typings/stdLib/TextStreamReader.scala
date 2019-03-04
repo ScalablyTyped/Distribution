@@ -58,17 +58,8 @@ object TextStreamReader {
     Skip: js.Function1[scala.Double, scala.Unit],
     SkipLine: js.Function0[scala.Unit]
   ): TextStreamReader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AtEndOfLine")(AtEndOfLine)
-    __obj.updateDynamic("AtEndOfStream")(AtEndOfStream)
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("Column")(Column)
-    __obj.updateDynamic("Line")(Line)
-    __obj.updateDynamic("Read")(Read)
-    __obj.updateDynamic("ReadAll")(ReadAll)
-    __obj.updateDynamic("ReadLine")(ReadLine)
-    __obj.updateDynamic("Skip")(Skip)
-    __obj.updateDynamic("SkipLine")(SkipLine)
+    val __obj = js.Dynamic.literal(AtEndOfLine = AtEndOfLine, AtEndOfStream = AtEndOfStream, Close = Close, Column = Column, Line = Line, Read = Read, ReadAll = ReadAll, ReadLine = ReadLine, Skip = Skip, SkipLine = SkipLine)
+  
     __obj.asInstanceOf[TextStreamReader]
   }
 }

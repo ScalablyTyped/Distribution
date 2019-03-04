@@ -14,9 +14,8 @@ trait GetRoute
 object GetRoute {
   @scala.inline
   def apply(get: js.Function1[RoutePathSet, RouteResult | js.Promise[RouteResult]], route: java.lang.String): GetRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(get = get, route = route)
+  
     __obj.asInstanceOf[GetRoute]
   }
 }

@@ -16,8 +16,7 @@ object Anon_EnabledKmsKeyIdBoolean {
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EnabledKmsKeyIdBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnabledKmsKeyIdBoolean]
   }

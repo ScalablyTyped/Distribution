@@ -24,9 +24,8 @@ object Figure {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Layout */ _
     ]
   ): Figure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("layout")(layout)
+    val __obj = js.Dynamic.literal(data = data, layout = layout)
+  
     __obj.asInstanceOf[Figure]
   }
 }

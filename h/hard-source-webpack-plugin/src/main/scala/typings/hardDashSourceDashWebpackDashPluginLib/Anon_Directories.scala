@@ -14,10 +14,8 @@ trait Anon_Directories extends js.Object {
 object Anon_Directories {
   @scala.inline
   def apply(directories: js.Array[java.lang.String], files: js.Array[java.lang.String], root: java.lang.String): Anon_Directories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directories")(directories)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(directories = directories, files = files, root = root)
+  
     __obj.asInstanceOf[Anon_Directories]
   }
 }

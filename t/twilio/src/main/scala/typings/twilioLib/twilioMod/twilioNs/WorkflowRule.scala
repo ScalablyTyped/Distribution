@@ -20,11 +20,8 @@ object WorkflowRule {
     friendly_name: java.lang.String,
     targets: js.Array[WorkflowRuleTarget]
   ): WorkflowRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("friendly_name")(friendly_name)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(expression = expression, friendlyName = friendlyName, friendly_name = friendly_name, targets = targets)
+  
     __obj.asInstanceOf[WorkflowRule]
   }
 }

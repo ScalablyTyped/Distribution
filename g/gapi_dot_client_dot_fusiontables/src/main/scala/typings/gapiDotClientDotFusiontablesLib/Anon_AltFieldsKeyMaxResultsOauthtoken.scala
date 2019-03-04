@@ -48,8 +48,7 @@ object Anon_AltFieldsKeyMaxResultsOauthtoken {
     startIndex: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyMaxResultsOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tableId")(tableId)
+    val __obj = js.Dynamic.literal(tableId = tableId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

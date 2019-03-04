@@ -23,12 +23,8 @@ object ValdrViolation {
     validator: java.lang.String,
     value: java.lang.String
   ): ValdrViolation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("validator")(validator)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(field = field, message = message, valid = valid, validator = validator, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ValdrViolation]
   }
 }

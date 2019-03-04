@@ -30,13 +30,8 @@ object ILight {
     id: java.lang.String = null,
     pointsymbol: nodeDashHueDashApiLib.Anon_1 = null
   ): ILight = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("manufacturername")(manufacturername)
-    __obj.updateDynamic("modelid")(modelid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("swversion")(swversion)
-    __obj.updateDynamic("uniqueid")(uniqueid)
+    val __obj = js.Dynamic.literal(manufacturername = manufacturername, modelid = modelid, name = name, state = state, swversion = swversion, uniqueid = uniqueid)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (pointsymbol != null) __obj.updateDynamic("pointsymbol")(pointsymbol)
     __obj.asInstanceOf[ILight]

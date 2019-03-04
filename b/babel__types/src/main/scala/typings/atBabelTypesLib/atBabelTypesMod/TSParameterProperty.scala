@@ -30,8 +30,8 @@ object TSParameterProperty {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): TSParameterProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

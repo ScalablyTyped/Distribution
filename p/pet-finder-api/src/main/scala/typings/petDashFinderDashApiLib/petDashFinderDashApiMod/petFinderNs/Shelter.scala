@@ -38,20 +38,8 @@ object Shelter {
     state: java.lang.String,
     zip: java.lang.String
   ): Shelter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address1")(address1)
-    __obj.updateDynamic("address2")(address2)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("fax")(fax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("zip")(zip)
+    val __obj = js.Dynamic.literal(address1 = address1, address2 = address2, city = city, country = country, email = email, fax = fax, id = id, latitude = latitude, longitude = longitude, name = name, phone = phone, state = state, zip = zip)
+  
     __obj.asInstanceOf[Shelter]
   }
 }

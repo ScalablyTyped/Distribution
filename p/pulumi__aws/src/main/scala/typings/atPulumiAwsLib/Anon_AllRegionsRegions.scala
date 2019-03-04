@@ -20,8 +20,7 @@ object Anon_AllRegionsRegions {
     allRegions: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     regions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_AllRegionsRegions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any])
     if (allRegions != null) __obj.updateDynamic("allRegions")(allRegions.asInstanceOf[js.Any])
     if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AllRegionsRegions]

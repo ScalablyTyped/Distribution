@@ -20,11 +20,8 @@ object SearchResults {
     total_Pages: scala.Double,
     total_results: scala.Double
   ): SearchResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("total_Pages")(total_Pages)
-    __obj.updateDynamic("total_results")(total_results)
+    val __obj = js.Dynamic.literal(page = page, results = results, total_Pages = total_Pages, total_results = total_results)
+  
     __obj.asInstanceOf[SearchResults]
   }
 }

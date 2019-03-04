@@ -19,8 +19,8 @@ trait ASPxClientFileManagerToolbarUpdatingEventArgs extends ASPxClientEventArgs 
 object ASPxClientFileManagerToolbarUpdatingEventArgs {
   @scala.inline
   def apply(activeAreaName: java.lang.String): ASPxClientFileManagerToolbarUpdatingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeAreaName")(activeAreaName)
+    val __obj = js.Dynamic.literal(activeAreaName = activeAreaName)
+  
     __obj.asInstanceOf[ASPxClientFileManagerToolbarUpdatingEventArgs]
   }
 }

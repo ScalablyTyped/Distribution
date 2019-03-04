@@ -95,8 +95,7 @@ object DisplayPropertiesInfo {
     overscan: Insets = null,
     rotation: chromeLib.chromeLibNumbers.`0` | chromeLib.chromeLibNumbers.`90` | chromeLib.chromeLibNumbers.`180` | chromeLib.chromeLibNumbers.`270` = null
   ): DisplayPropertiesInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundsOriginY")(boundsOriginY)
+    val __obj = js.Dynamic.literal(boundsOriginY = boundsOriginY)
     if (boundsOriginX != null) __obj.updateDynamic("boundsOriginX")(boundsOriginX.asInstanceOf[js.Any])
     if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
     if (displayZoomFactor != null) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor.asInstanceOf[js.Any])

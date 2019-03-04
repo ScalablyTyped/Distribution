@@ -13,9 +13,8 @@ trait IInputPaneVisibilityEventArgs extends js.Object {
 object IInputPaneVisibilityEventArgs {
   @scala.inline
   def apply(ensuredFocusedElementInView: scala.Boolean, occludedRect: winrtLib.WindowsNs.FoundationNs.Rect): IInputPaneVisibilityEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ensuredFocusedElementInView")(ensuredFocusedElementInView)
-    __obj.updateDynamic("occludedRect")(occludedRect)
+    val __obj = js.Dynamic.literal(ensuredFocusedElementInView = ensuredFocusedElementInView, occludedRect = occludedRect)
+  
     __obj.asInstanceOf[IInputPaneVisibilityEventArgs]
   }
 }

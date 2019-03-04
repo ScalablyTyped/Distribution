@@ -26,14 +26,8 @@ object PresenceMessage {
     id: java.lang.String,
     timestamp: scala.Double
   ): PresenceMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("connectionId")(connectionId)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], clientId = clientId, connectionId = connectionId, data = data, encoding = encoding, id = id, timestamp = timestamp)
+  
     __obj.asInstanceOf[PresenceMessage]
   }
 }

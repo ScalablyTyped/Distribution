@@ -26,14 +26,8 @@ object Anon_All {
     off: java.lang.String,
     warn: java.lang.String
   ): Anon_All = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, all = all, debug = debug, error = error, info = info, off = off, warn = warn)
+  
     __obj.asInstanceOf[Anon_All]
   }
 }

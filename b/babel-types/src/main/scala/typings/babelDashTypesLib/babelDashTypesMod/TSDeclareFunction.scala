@@ -38,13 +38,8 @@ object TSDeclareFunction {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | Noop = null
   ): TSDeclareFunction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(async = async, end = end, generator = generator, loc = loc, params = params, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (id != null) __obj.updateDynamic("id")(id)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

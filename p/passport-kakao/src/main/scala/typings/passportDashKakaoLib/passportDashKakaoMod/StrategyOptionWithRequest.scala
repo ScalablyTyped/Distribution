@@ -19,11 +19,7 @@ object StrategyOptionWithRequest {
     customHeaders: java.lang.String = null,
     scopeSeparator: java.lang.String = null
   ): StrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
     if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator)
     __obj.asInstanceOf[StrategyOptionWithRequest]

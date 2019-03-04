@@ -30,14 +30,8 @@ object PagingObject {
     previous: java.lang.String,
     total: scala.Double
   ): PagingObject[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(href = href, items = items, limit = limit, next = next, offset = offset, previous = previous, total = total)
+  
     __obj.asInstanceOf[PagingObject[T]]
   }
 }

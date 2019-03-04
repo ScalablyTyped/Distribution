@@ -26,10 +26,7 @@ object Response {
     status: scala.Int | scala.Double = null,
     statusText: java.lang.String = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(config = config, headers = headers, request = request)
     if (code != null) __obj.updateDynamic("code")(code)
     if (data != null) __obj.updateDynamic("data")(data)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

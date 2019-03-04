@@ -82,8 +82,7 @@ object SelectProps {
     valueKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
     valueLabel: reactLib.reactMod.ReactNs.ReactNode = null
   ): SelectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)

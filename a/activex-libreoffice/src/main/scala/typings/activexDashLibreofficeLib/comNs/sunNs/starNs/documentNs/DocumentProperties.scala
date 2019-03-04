@@ -67,36 +67,8 @@ object DocumentProperties {
       scala.Unit
     ]
   ): DocumentProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Author")(Author)
-    __obj.updateDynamic("AutoloadSecs")(AutoloadSecs)
-    __obj.updateDynamic("AutoloadURL")(AutoloadURL)
-    __obj.updateDynamic("CreationDate")(CreationDate)
-    __obj.updateDynamic("DefaultTarget")(DefaultTarget)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("DocumentStatistics")(DocumentStatistics)
-    __obj.updateDynamic("EditingCycles")(EditingCycles)
-    __obj.updateDynamic("EditingDuration")(EditingDuration)
-    __obj.updateDynamic("Generator")(Generator)
-    __obj.updateDynamic("Keywords")(Keywords)
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("ModificationDate")(ModificationDate)
-    __obj.updateDynamic("ModifiedBy")(ModifiedBy)
-    __obj.updateDynamic("PrintDate")(PrintDate)
-    __obj.updateDynamic("PrintedBy")(PrintedBy)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("TemplateDate")(TemplateDate)
-    __obj.updateDynamic("TemplateName")(TemplateName)
-    __obj.updateDynamic("TemplateURL")(TemplateURL)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("UserDefinedProperties")(UserDefinedProperties)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("getUserDefinedProperties")(getUserDefinedProperties)
-    __obj.updateDynamic("loadFromMedium")(loadFromMedium)
-    __obj.updateDynamic("loadFromStorage")(loadFromStorage)
-    __obj.updateDynamic("resetUserData")(resetUserData)
-    __obj.updateDynamic("storeToMedium")(storeToMedium)
-    __obj.updateDynamic("storeToStorage")(storeToStorage)
+    val __obj = js.Dynamic.literal(Author = Author, AutoloadSecs = AutoloadSecs, AutoloadURL = AutoloadURL, CreationDate = CreationDate, DefaultTarget = DefaultTarget, Description = Description, DocumentStatistics = DocumentStatistics, EditingCycles = EditingCycles, EditingDuration = EditingDuration, Generator = Generator, Keywords = Keywords, Language = Language, ModificationDate = ModificationDate, ModifiedBy = ModifiedBy, PrintDate = PrintDate, PrintedBy = PrintedBy, Subject = Subject, TemplateDate = TemplateDate, TemplateName = TemplateName, TemplateURL = TemplateURL, Title = Title, UserDefinedProperties = UserDefinedProperties, create = create, getUserDefinedProperties = getUserDefinedProperties, loadFromMedium = loadFromMedium, loadFromStorage = loadFromStorage, resetUserData = resetUserData, storeToMedium = storeToMedium, storeToStorage = storeToStorage)
+  
     __obj.asInstanceOf[DocumentProperties]
   }
 }

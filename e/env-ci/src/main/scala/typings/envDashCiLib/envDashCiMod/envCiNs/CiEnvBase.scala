@@ -12,8 +12,8 @@ trait CiEnvBase extends js.Object {
 object CiEnvBase {
   @scala.inline
   def apply(isCi: envDashCiLib.envDashCiLibNumbers.`true`): CiEnvBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCi")(isCi)
+    val __obj = js.Dynamic.literal(isCi = isCi)
+  
     __obj.asInstanceOf[CiEnvBase]
   }
 }

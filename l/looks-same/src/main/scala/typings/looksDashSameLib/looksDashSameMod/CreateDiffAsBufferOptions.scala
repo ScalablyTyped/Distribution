@@ -41,12 +41,8 @@ object CreateDiffAsBufferOptions {
     strict: scala.Boolean,
     tolerance: scala.Double
   ): CreateDiffAsBufferOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("highlightColor")(highlightColor)
-    __obj.updateDynamic("reference")(reference)
-    __obj.updateDynamic("strict")(strict)
-    __obj.updateDynamic("tolerance")(tolerance)
+    val __obj = js.Dynamic.literal(current = current, highlightColor = highlightColor, reference = reference, strict = strict, tolerance = tolerance)
+  
     __obj.asInstanceOf[CreateDiffAsBufferOptions]
   }
 }

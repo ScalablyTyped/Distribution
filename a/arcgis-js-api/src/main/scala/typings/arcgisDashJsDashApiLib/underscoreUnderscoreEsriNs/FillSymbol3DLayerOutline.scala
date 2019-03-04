@@ -37,12 +37,7 @@ object FillSymbol3DLayerOutline {
       WatchHandle
     ] = null
   ): FillSymbol3DLayerOutline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, size = size)
     if (get != null) __obj.updateDynamic("get")(get)
     if (set != null) __obj.updateDynamic("set")(set)
     if (watch != null) __obj.updateDynamic("watch")(watch)

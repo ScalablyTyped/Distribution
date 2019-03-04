@@ -39,11 +39,8 @@ object FloatingObjectRelativePositionSettings {
     verticalPositionType: js.Any,
     verticalRelativePosition: scala.Double
   ): FloatingObjectRelativePositionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("horizontalPositionType")(horizontalPositionType)
-    __obj.updateDynamic("horizontalRelativePosition")(horizontalRelativePosition)
-    __obj.updateDynamic("verticalPositionType")(verticalPositionType)
-    __obj.updateDynamic("verticalRelativePosition")(verticalRelativePosition)
+    val __obj = js.Dynamic.literal(horizontalPositionType = horizontalPositionType, horizontalRelativePosition = horizontalRelativePosition, verticalPositionType = verticalPositionType, verticalRelativePosition = verticalRelativePosition)
+  
     __obj.asInstanceOf[FloatingObjectRelativePositionSettings]
   }
 }

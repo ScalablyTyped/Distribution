@@ -34,8 +34,8 @@ object WorksheetActivatedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetActivated,
     worksheetId: java.lang.String
   ): WorksheetActivatedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorksheetActivatedEventArgs]
   }
 }

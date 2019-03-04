@@ -36,18 +36,7 @@ object Profile {
     name: passportLib.Anon_FamilyName = null,
     photos: js.Array[passportLib.Anon_Value] = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_json")(_json)
-    __obj.updateDynamic("_raw")(_raw)
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("discriminator")(discriminator)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("profileUrl")(profileUrl)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("username")(username)
-    __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(_json = _json, _raw = _raw, avatar = avatar, discriminator = discriminator, displayName = displayName, email = email, id = id, profileUrl = profileUrl, provider = provider, username = username, verified = verified)
     if (emails != null) __obj.updateDynamic("emails")(emails)
     if (name != null) __obj.updateDynamic("name")(name)
     if (photos != null) __obj.updateDynamic("photos")(photos)

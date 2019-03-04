@@ -12,9 +12,8 @@ trait IAutomationProviderRequestedEventArgs extends ICoreWindowEventArgs {
 object IAutomationProviderRequestedEventArgs {
   @scala.inline
   def apply(automationProvider: js.Any, handled: scala.Boolean): IAutomationProviderRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automationProvider")(automationProvider)
-    __obj.updateDynamic("handled")(handled)
+    val __obj = js.Dynamic.literal(automationProvider = automationProvider, handled = handled)
+  
     __obj.asInstanceOf[IAutomationProviderRequestedEventArgs]
   }
 }

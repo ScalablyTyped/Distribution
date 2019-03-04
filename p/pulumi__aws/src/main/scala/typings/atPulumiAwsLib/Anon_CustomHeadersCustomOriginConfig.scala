@@ -26,9 +26,7 @@ object Anon_CustomHeadersCustomOriginConfig {
     originPath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3OriginConfig: atPulumiPulumiLib.outputMod.Input[Anon_OriginAccessIdentityInput] = null
   ): Anon_CustomHeadersCustomOriginConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    __obj.updateDynamic("originId")(originId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], originId = originId.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (customOriginConfig != null) __obj.updateDynamic("customOriginConfig")(customOriginConfig.asInstanceOf[js.Any])
     if (originPath != null) __obj.updateDynamic("originPath")(originPath.asInstanceOf[js.Any])

@@ -51,12 +51,9 @@ object IOrderItem {
     quantity: scala.Double,
     `type`: stripeLib.stripeLibStrings.sku | stripeLib.stripeLibStrings.tax | stripeLib.stripeLibStrings.shipping | stripeLib.stripeLibStrings.discount
   ): IOrderItem = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("quantity")(quantity)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, description = description, parent = parent.asInstanceOf[js.Any], quantity = quantity)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrderItem]
   }
 }

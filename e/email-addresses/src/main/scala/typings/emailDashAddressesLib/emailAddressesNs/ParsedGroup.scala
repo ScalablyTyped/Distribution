@@ -22,10 +22,8 @@ object ParsedGroup {
     `type`: java.lang.String,
     node: ASTNode = null
   ): ParsedGroup = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parts")(parts)
+    val __obj = js.Dynamic.literal(addresses = addresses, name = name, parts = parts)
+    __obj.updateDynamic("type")(`type`)
     if (node != null) __obj.updateDynamic("node")(node)
     __obj.asInstanceOf[ParsedGroup]
   }

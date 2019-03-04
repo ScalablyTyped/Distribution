@@ -45,18 +45,8 @@ object XLocator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLocator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnNumber")(ColumnNumber)
-    __obj.updateDynamic("LineNumber")(LineNumber)
-    __obj.updateDynamic("PublicId")(PublicId)
-    __obj.updateDynamic("SystemId")(SystemId)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnNumber")(getColumnNumber)
-    __obj.updateDynamic("getLineNumber")(getLineNumber)
-    __obj.updateDynamic("getPublicId")(getPublicId)
-    __obj.updateDynamic("getSystemId")(getSystemId)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber, LineNumber = LineNumber, PublicId = PublicId, SystemId = SystemId, acquire = acquire, getColumnNumber = getColumnNumber, getLineNumber = getLineNumber, getPublicId = getPublicId, getSystemId = getSystemId, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLocator]
   }
 }

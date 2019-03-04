@@ -32,17 +32,8 @@ object Expander {
     isExpanded: js.Function0[scala.Boolean],
     toggle: js.Function0[scala.Unit]
   ): Expander = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("collapseOnClickOut")(collapseOnClickOut)
-    __obj.updateDynamic("collapseOnFocusOut")(collapseOnFocusOut)
-    __obj.updateDynamic("collapseOnMouseOut")(collapseOnMouseOut)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("expandOnClick")(expandOnClick)
-    __obj.updateDynamic("expandOnFocus")(expandOnFocus)
-    __obj.updateDynamic("expandOnHover")(expandOnHover)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(collapse = collapse, collapseOnClickOut = collapseOnClickOut, collapseOnFocusOut = collapseOnFocusOut, collapseOnMouseOut = collapseOnMouseOut, expand = expand, expandOnClick = expandOnClick, expandOnFocus = expandOnFocus, expandOnHover = expandOnHover, isExpanded = isExpanded, toggle = toggle)
+  
     __obj.asInstanceOf[Expander]
   }
 }

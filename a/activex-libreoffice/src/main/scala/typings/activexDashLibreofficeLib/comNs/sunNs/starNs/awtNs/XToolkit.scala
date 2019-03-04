@@ -54,18 +54,8 @@ object XToolkit {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XToolkit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DesktopWindow")(DesktopWindow)
-    __obj.updateDynamic("WorkArea")(WorkArea)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createRegion")(createRegion)
-    __obj.updateDynamic("createScreenCompatibleDevice")(createScreenCompatibleDevice)
-    __obj.updateDynamic("createWindow")(createWindow)
-    __obj.updateDynamic("createWindows")(createWindows)
-    __obj.updateDynamic("getDesktopWindow")(getDesktopWindow)
-    __obj.updateDynamic("getWorkArea")(getWorkArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DesktopWindow = DesktopWindow, WorkArea = WorkArea, acquire = acquire, createRegion = createRegion, createScreenCompatibleDevice = createScreenCompatibleDevice, createWindow = createWindow, createWindows = createWindows, getDesktopWindow = getDesktopWindow, getWorkArea = getWorkArea, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XToolkit]
   }
 }

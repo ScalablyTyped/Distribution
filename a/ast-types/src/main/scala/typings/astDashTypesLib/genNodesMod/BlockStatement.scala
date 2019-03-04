@@ -23,9 +23,8 @@ object BlockStatement {
     directives: js.Array[astDashTypesLib.genKindsMod.DirectiveKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.BlockStatement
   ): BlockStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("directives")(directives)
+    val __obj = js.Dynamic.literal(body = body, directives = directives)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BlockStatement]
   }
 }

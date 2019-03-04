@@ -15,11 +15,8 @@ trait COperationSelector[TNode, TOperation] extends js.Object {
 object COperationSelector {
   @scala.inline
   def apply[TNode, TOperation](fragment: CSelector[TNode], node: TOperation, root: CSelector[TNode], variables: Variables): COperationSelector[TNode, TOperation] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragment")(fragment)
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(fragment = fragment, node = node.asInstanceOf[js.Any], root = root, variables = variables)
+  
     __obj.asInstanceOf[COperationSelector[TNode, TOperation]]
   }
 }

@@ -20,11 +20,8 @@ object Player {
     summonerId: scala.Double,
     summonerName: java.lang.String
   ): Player = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchHistoryUri")(matchHistoryUri)
-    __obj.updateDynamic("profileIcon")(profileIcon)
-    __obj.updateDynamic("summonerId")(summonerId)
-    __obj.updateDynamic("summonerName")(summonerName)
+    val __obj = js.Dynamic.literal(matchHistoryUri = matchHistoryUri, profileIcon = profileIcon, summonerId = summonerId, summonerName = summonerName)
+  
     __obj.asInstanceOf[Player]
   }
 }

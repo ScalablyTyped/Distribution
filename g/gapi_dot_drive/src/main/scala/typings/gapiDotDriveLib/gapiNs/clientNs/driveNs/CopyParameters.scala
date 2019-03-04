@@ -32,8 +32,7 @@ object CopyParameters {
     timedTextTrackName: java.lang.String = null,
     visibility: java.lang.String = null
   ): CopyParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
     if (!js.isUndefined(ocr)) __obj.updateDynamic("ocr")(ocr)
     if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage)

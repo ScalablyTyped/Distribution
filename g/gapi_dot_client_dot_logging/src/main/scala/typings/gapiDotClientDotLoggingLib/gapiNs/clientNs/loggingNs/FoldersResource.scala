@@ -14,10 +14,8 @@ trait FoldersResource extends js.Object {
 object FoldersResource {
   @scala.inline
   def apply(exclusions: ExclusionsResource, logs: LogsResource, sinks: SinksResource): FoldersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclusions")(exclusions)
-    __obj.updateDynamic("logs")(logs)
-    __obj.updateDynamic("sinks")(sinks)
+    val __obj = js.Dynamic.literal(exclusions = exclusions, logs = logs, sinks = sinks)
+  
     __obj.asInstanceOf[FoldersResource]
   }
 }

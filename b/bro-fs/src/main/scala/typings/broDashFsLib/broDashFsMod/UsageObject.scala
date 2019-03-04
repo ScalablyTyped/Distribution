@@ -13,9 +13,8 @@ trait UsageObject extends js.Object {
 object UsageObject {
   @scala.inline
   def apply(grantedBytes: scala.Double, usedBytes: scala.Double): UsageObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grantedBytes")(grantedBytes)
-    __obj.updateDynamic("usedBytes")(usedBytes)
+    val __obj = js.Dynamic.literal(grantedBytes = grantedBytes, usedBytes = usedBytes)
+  
     __obj.asInstanceOf[UsageObject]
   }
 }

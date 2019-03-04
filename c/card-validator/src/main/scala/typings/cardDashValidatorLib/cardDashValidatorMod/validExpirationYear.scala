@@ -12,10 +12,8 @@ trait validExpirationYear extends valid {
 object validExpirationYear {
   @scala.inline
   def apply(isCurrentYear: scala.Boolean, isPotentiallyValid: scala.Boolean, isValid: scala.Boolean): validExpirationYear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCurrentYear")(isCurrentYear)
-    __obj.updateDynamic("isPotentiallyValid")(isPotentiallyValid)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(isCurrentYear = isCurrentYear, isPotentiallyValid = isPotentiallyValid, isValid = isValid)
+  
     __obj.asInstanceOf[validExpirationYear]
   }
 }

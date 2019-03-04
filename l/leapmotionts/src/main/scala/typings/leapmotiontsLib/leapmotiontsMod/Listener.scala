@@ -22,12 +22,8 @@ object Listener {
     onFrame: js.Function2[Controller, Frame, scala.Unit],
     onInit: js.Function1[Controller, scala.Unit]
   ): Listener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onConnect")(onConnect)
-    __obj.updateDynamic("onDisconnect")(onDisconnect)
-    __obj.updateDynamic("onExit")(onExit)
-    __obj.updateDynamic("onFrame")(onFrame)
-    __obj.updateDynamic("onInit")(onInit)
+    val __obj = js.Dynamic.literal(onConnect = onConnect, onDisconnect = onDisconnect, onExit = onExit, onFrame = onFrame, onInit = onInit)
+  
     __obj.asInstanceOf[Listener]
   }
 }

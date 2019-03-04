@@ -24,13 +24,8 @@ object Anon_DEBUG {
     TRACE: scala.Double,
     WARN: scala.Double
   ): Anon_DEBUG = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEBUG")(DEBUG)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("FATAL")(FATAL)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("TRACE")(TRACE)
-    __obj.updateDynamic("WARN")(WARN)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, FATAL = FATAL, INFO = INFO, TRACE = TRACE, WARN = WARN)
+  
     __obj.asInstanceOf[Anon_DEBUG]
   }
 }

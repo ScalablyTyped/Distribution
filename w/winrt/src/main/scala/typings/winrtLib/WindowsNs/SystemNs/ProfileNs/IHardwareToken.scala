@@ -18,10 +18,8 @@ object IHardwareToken {
     id: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     signature: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
   ): IHardwareToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(certificate = certificate, id = id, signature = signature)
+  
     __obj.asInstanceOf[IHardwareToken]
   }
 }

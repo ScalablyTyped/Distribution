@@ -61,9 +61,7 @@ object GraphDefinitionLinkTargetCompartment {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): GraphDefinitionLinkTargetCompartment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(code = code, rule = rule)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)

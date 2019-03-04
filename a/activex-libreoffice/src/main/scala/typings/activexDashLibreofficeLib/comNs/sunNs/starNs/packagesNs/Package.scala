@@ -38,19 +38,8 @@ object Package {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): Package = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PendingChanges")(PendingChanges.asInstanceOf[js.Any])
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("commitChanges")(commitChanges)
-    __obj.updateDynamic("createInstance")(createInstance)
-    __obj.updateDynamic("createInstanceWithArguments")(createInstanceWithArguments)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("getPendingChanges")(getPendingChanges)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("hasPendingChanges")(hasPendingChanges)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = acquire, commitChanges = commitChanges, createInstance = createInstance, createInstanceWithArguments = createInstanceWithArguments, getByHierarchicalName = getByHierarchicalName, getPendingChanges = getPendingChanges, hasByHierarchicalName = hasByHierarchicalName, hasPendingChanges = hasPendingChanges, initialize = initialize, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[Package]
   }
 }

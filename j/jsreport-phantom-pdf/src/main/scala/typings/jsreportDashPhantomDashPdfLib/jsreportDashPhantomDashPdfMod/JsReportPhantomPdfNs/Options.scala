@@ -25,11 +25,8 @@ object Options {
     strategy: jsreportDashPhantomDashPdfLib.jsreportDashPhantomDashPdfLibStrings.`dedicated-process` | jsreportDashPhantomDashPdfLib.jsreportDashPhantomDashPdfLibStrings.`phantom-server`,
     timeout: scala.Double
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowLocalFilesAccess")(allowLocalFilesAccess)
-    __obj.updateDynamic("defaultPhantomjsVersion")(defaultPhantomjsVersion)
-    __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(allowLocalFilesAccess = allowLocalFilesAccess, defaultPhantomjsVersion = defaultPhantomjsVersion, strategy = strategy.asInstanceOf[js.Any], timeout = timeout)
+  
     __obj.asInstanceOf[Options]
   }
 }

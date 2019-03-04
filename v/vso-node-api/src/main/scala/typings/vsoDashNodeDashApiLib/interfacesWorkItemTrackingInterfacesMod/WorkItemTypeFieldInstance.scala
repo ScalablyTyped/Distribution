@@ -35,14 +35,8 @@ object WorkItemTypeFieldInstance {
     referenceName: java.lang.String,
     url: java.lang.String
   ): WorkItemTypeFieldInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedValues")(allowedValues)
-    __obj.updateDynamic("alwaysRequired")(alwaysRequired)
-    __obj.updateDynamic("dependentFields")(dependentFields)
-    __obj.updateDynamic("helpText")(helpText)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(allowedValues = allowedValues, alwaysRequired = alwaysRequired, dependentFields = dependentFields, helpText = helpText, name = name, referenceName = referenceName, url = url)
+  
     __obj.asInstanceOf[WorkItemTypeFieldInstance]
   }
 }

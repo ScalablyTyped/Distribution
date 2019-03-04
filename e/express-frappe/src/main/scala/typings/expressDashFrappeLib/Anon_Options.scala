@@ -16,8 +16,7 @@ object Anon_Options {
     root: java.lang.String,
     options: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(root = root)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Anon_Options]
   }

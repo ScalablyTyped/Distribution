@@ -66,8 +66,7 @@ object MiddlewareOptions {
     max: scala.Int | scala.Double = null,
     `throw`: js.UndefOr[scala.Boolean] = js.undefined
   ): MiddlewareOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(db = db)
     if (!js.isUndefined(disableHeader)) __obj.updateDynamic("disableHeader")(disableHeader)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)

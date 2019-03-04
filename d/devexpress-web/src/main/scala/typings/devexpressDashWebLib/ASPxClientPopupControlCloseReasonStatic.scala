@@ -37,12 +37,8 @@ object ASPxClientPopupControlCloseReasonStatic {
     MouseOut: java.lang.String,
     OuterMouseClick: java.lang.String
   ): ASPxClientPopupControlCloseReasonStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("API")(API)
-    __obj.updateDynamic("CloseButton")(CloseButton)
-    __obj.updateDynamic("Escape")(Escape)
-    __obj.updateDynamic("MouseOut")(MouseOut)
-    __obj.updateDynamic("OuterMouseClick")(OuterMouseClick)
+    val __obj = js.Dynamic.literal(API = API, CloseButton = CloseButton, Escape = Escape, MouseOut = MouseOut, OuterMouseClick = OuterMouseClick)
+  
     __obj.asInstanceOf[ASPxClientPopupControlCloseReasonStatic]
   }
 }

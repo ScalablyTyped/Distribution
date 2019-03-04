@@ -16,8 +16,8 @@ object BlockPattern {
     patterns: js.Array[Pattern],
     `type`: sparqljsLib.sparqljsLibStrings.optional | sparqljsLib.sparqljsLibStrings.union | sparqljsLib.sparqljsLibStrings.group | sparqljsLib.sparqljsLibStrings.minus | sparqljsLib.sparqljsLibStrings.graph | sparqljsLib.sparqljsLibStrings.service
   ): BlockPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("patterns")(patterns)
+    val __obj = js.Dynamic.literal(patterns = patterns)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockPattern]
   }
 }

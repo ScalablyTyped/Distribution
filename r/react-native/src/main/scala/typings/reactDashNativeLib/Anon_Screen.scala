@@ -16,9 +16,8 @@ object Anon_Screen {
     screen: reactDashNativeLib.reactDashNativeMod.ScaledSize,
     window: reactDashNativeLib.reactDashNativeMod.ScaledSize
   ): Anon_Screen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(screen = screen, window = window)
+  
     __obj.asInstanceOf[Anon_Screen]
   }
 }

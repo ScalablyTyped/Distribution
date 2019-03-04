@@ -42,11 +42,8 @@ object LeaseList {
     kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LeaseList,
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
   ): LeaseList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, items = items, kind = kind, metadata = metadata)
+  
     __obj.asInstanceOf[LeaseList]
   }
 }

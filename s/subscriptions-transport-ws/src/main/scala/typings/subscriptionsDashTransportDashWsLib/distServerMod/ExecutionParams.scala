@@ -28,11 +28,7 @@ object ExecutionParams {
     formatResponse: js.Function = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null
   ): ExecutionParams[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("operationName")(operationName)
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], operationName = operationName, query = query.asInstanceOf[js.Any], variables = variables)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (formatError != null) __obj.updateDynamic("formatError")(formatError)
     if (formatResponse != null) __obj.updateDynamic("formatResponse")(formatResponse)

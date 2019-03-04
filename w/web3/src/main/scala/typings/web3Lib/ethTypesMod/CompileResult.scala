@@ -20,11 +20,8 @@ object CompileResult {
     info: web3Lib.Anon_AbiDefinition,
     userDoc: web3Lib.Anon_Methods
   ): CompileResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("developerDoc")(developerDoc)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("userDoc")(userDoc)
+    val __obj = js.Dynamic.literal(code = code, developerDoc = developerDoc, info = info, userDoc = userDoc)
+  
     __obj.asInstanceOf[CompileResult]
   }
 }

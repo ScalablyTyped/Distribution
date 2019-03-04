@@ -58,13 +58,7 @@ object Anon_BehindSecureProxy {
     timeout: scala.Double,
     handle: Anon_Fd = null
   ): Anon_BehindSecureProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("behindSecureProxy")(behindSecureProxy)
-    __obj.updateDynamic("extlibExcludes")(extlibExcludes)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("maxWorkers")(maxWorkers)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(behindSecureProxy = behindSecureProxy, extlibExcludes = extlibExcludes, log = log, maxWorkers = maxWorkers, port = port, timeout = timeout)
     if (handle != null) __obj.updateDynamic("handle")(handle)
     __obj.asInstanceOf[Anon_BehindSecureProxy]
   }

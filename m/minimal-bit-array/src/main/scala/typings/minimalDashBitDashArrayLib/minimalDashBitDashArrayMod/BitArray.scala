@@ -22,12 +22,8 @@ object BitArray {
     set: js.Function2[scala.Double, js.Any, scala.Boolean],
     toJSON: js.Function0[minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON]
   ): BitArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bits")(bits)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(bits = bits, get = get, length = length, set = set, toJSON = toJSON)
+  
     __obj.asInstanceOf[BitArray]
   }
 }

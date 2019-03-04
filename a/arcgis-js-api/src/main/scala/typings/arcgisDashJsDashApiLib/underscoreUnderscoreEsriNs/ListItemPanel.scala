@@ -67,14 +67,8 @@ object ListItemPanel {
     title: java.lang.String,
     visible: scala.Boolean
   ): ListItemPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("listItem")(listItem)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(className = className, content = content.asInstanceOf[js.Any], image = image, listItem = listItem, open = open, title = title, visible = visible)
+  
     __obj.asInstanceOf[ListItemPanel]
   }
 }

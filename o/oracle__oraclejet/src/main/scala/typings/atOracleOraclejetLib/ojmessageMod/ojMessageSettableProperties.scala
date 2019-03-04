@@ -19,10 +19,8 @@ object ojMessageSettableProperties {
     message: atOracleOraclejetLib.ojmessageMod.ojMessageNs.Message,
     translations: atOracleOraclejetLib.Anon_Categories
   ): ojMessageSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(displayOptions = displayOptions, message = message, translations = translations)
+  
     __obj.asInstanceOf[ojMessageSettableProperties]
   }
 }

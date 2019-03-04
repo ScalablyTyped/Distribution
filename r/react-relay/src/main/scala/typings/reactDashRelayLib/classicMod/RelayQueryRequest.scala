@@ -24,13 +24,8 @@ object RelayQueryRequest {
     reject: js.Function1[js.Any, js.Any],
     resolve: js.Function1[RelayQueryRequestResolve, js.Any]
   ): RelayQueryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDebugName")(getDebugName)
-    __obj.updateDynamic("getID")(getID)
-    __obj.updateDynamic("getQueryString")(getQueryString)
-    __obj.updateDynamic("getVariables")(getVariables)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(getDebugName = getDebugName, getID = getID, getQueryString = getQueryString, getVariables = getVariables, reject = reject, resolve = resolve)
+  
     __obj.asInstanceOf[RelayQueryRequest]
   }
 }

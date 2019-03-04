@@ -12,8 +12,8 @@ trait PopulatedContext extends js.Object {
 object PopulatedContext {
   @scala.inline
   def apply(helmet: reactDashHelmetLib.reactDashHelmetMod.HelmetData): PopulatedContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helmet")(helmet)
+    val __obj = js.Dynamic.literal(helmet = helmet)
+  
     __obj.asInstanceOf[PopulatedContext]
   }
 }

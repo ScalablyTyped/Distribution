@@ -29,14 +29,8 @@ object WebNavigationTransitionCallbackDetails {
     transitionType: java.lang.String,
     url: java.lang.String
   ): WebNavigationTransitionCallbackDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("processId")(processId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("transitionQualifiers")(transitionQualifiers)
-    __obj.updateDynamic("transitionType")(transitionType)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, processId = processId, tabId = tabId, timeStamp = timeStamp, transitionQualifiers = transitionQualifiers, transitionType = transitionType, url = url)
+  
     __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
   }
 }

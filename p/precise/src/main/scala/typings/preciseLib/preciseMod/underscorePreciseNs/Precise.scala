@@ -23,10 +23,8 @@ trait Precise extends js.Object {
 object Precise {
   @scala.inline
   def apply(diff: js.Function0[scala.Double], start: js.Function0[Precise], stop: js.Function0[Precise]): Precise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diff")(diff)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(diff = diff, start = start, stop = stop)
+  
     __obj.asInstanceOf[Precise]
   }
 }

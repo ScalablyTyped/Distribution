@@ -70,15 +70,8 @@ object XSlidePreviewCache {
     setPreviewSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.IntegerSize2D, scala.Unit],
     setVisibleRange: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XSlidePreviewCache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPreviewCreationNotifyListener")(addPreviewCreationNotifyListener)
-    __obj.updateDynamic("getSlidePreview")(getSlidePreview)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("removePreviewCreationNotifyListener")(removePreviewCreationNotifyListener)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("setDocumentSlides")(setDocumentSlides)
-    __obj.updateDynamic("setPreviewSize")(setPreviewSize)
-    __obj.updateDynamic("setVisibleRange")(setVisibleRange)
+    val __obj = js.Dynamic.literal(addPreviewCreationNotifyListener = addPreviewCreationNotifyListener, getSlidePreview = getSlidePreview, pause = pause, removePreviewCreationNotifyListener = removePreviewCreationNotifyListener, resume = resume, setDocumentSlides = setDocumentSlides, setPreviewSize = setPreviewSize, setVisibleRange = setVisibleRange)
+  
     __obj.asInstanceOf[XSlidePreviewCache]
   }
 }

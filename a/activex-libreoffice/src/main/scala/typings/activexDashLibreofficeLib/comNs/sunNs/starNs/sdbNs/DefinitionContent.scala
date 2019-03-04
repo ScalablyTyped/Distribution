@@ -86,39 +86,8 @@ object DefinitionContent {
     ],
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): DefinitionContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
-    __obj.updateDynamic("Identifier")(Identifier)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addCommandInfoChangeListener")(addCommandInfoChangeListener)
-    __obj.updateDynamic("addContentEventListener")(addContentEventListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertySetInfoChangeListener")(addPropertySetInfoChangeListener)
-    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
-    __obj.updateDynamic("createCommandIdentifier")(createCommandIdentifier)
-    __obj.updateDynamic("createNewContent")(createNewContent)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getContentType")(getContentType)
-    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
-    __obj.updateDynamic("getIdentifier")(getIdentifier)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("queryCreatableContentsInfo")(queryCreatableContentsInfo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseCommandIdentifier")(releaseCommandIdentifier)
-    __obj.updateDynamic("removeCommandInfoChangeListener")(removeCommandInfoChangeListener)
-    __obj.updateDynamic("removeContentEventListener")(removeContentEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("removeProperty")(removeProperty)
-    __obj.updateDynamic("removePropertySetInfoChangeListener")(removePropertySetInfoChangeListener)
-    __obj.updateDynamic("setParent")(setParent)
+    val __obj = js.Dynamic.literal(ContentType = ContentType, HierarchicalName = HierarchicalName, Identifier = Identifier, Parent = Parent, abort = abort, acquire = acquire, addCommandInfoChangeListener = addCommandInfoChangeListener, addContentEventListener = addContentEventListener, addEventListener = addEventListener, addPropertiesChangeListener = addPropertiesChangeListener, addProperty = addProperty, addPropertySetInfoChangeListener = addPropertySetInfoChangeListener, composeHierarchicalName = composeHierarchicalName, createCommandIdentifier = createCommandIdentifier, createNewContent = createNewContent, dispose = dispose, execute = execute, getContentType = getContentType, getHierarchicalName = getHierarchicalName, getIdentifier = getIdentifier, getParent = getParent, queryCreatableContentsInfo = queryCreatableContentsInfo, queryInterface = queryInterface, release = release, releaseCommandIdentifier = releaseCommandIdentifier, removeCommandInfoChangeListener = removeCommandInfoChangeListener, removeContentEventListener = removeContentEventListener, removeEventListener = removeEventListener, removePropertiesChangeListener = removePropertiesChangeListener, removeProperty = removeProperty, removePropertySetInfoChangeListener = removePropertySetInfoChangeListener, setParent = setParent)
+  
     __obj.asInstanceOf[DefinitionContent]
   }
 }

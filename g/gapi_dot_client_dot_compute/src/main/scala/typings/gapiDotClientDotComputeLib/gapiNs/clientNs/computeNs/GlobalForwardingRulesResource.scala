@@ -42,12 +42,8 @@ object GlobalForwardingRulesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): GlobalForwardingRulesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("setTarget")(setTarget)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, setTarget = setTarget)
+  
     __obj.asInstanceOf[GlobalForwardingRulesResource]
   }
 }

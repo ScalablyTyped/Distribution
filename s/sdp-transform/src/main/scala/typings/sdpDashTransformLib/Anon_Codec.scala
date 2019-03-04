@@ -20,9 +20,7 @@ object Anon_Codec {
     encoding: scala.Int | scala.Double = null,
     rate: scala.Int | scala.Double = null
   ): Anon_Codec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codec")(codec)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(codec = codec, payload = payload)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Codec]

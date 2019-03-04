@@ -28,15 +28,8 @@ object EntityCluster {
     minimumClusterSize: scala.Double,
     pixelRange: scala.Double
   ): EntityCluster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterBillboards")(clusterBillboards)
-    __obj.updateDynamic("clusterEvent")(clusterEvent)
-    __obj.updateDynamic("clusterLabels")(clusterLabels)
-    __obj.updateDynamic("clusterPoints")(clusterPoints)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("minimumClusterSize")(minimumClusterSize)
-    __obj.updateDynamic("pixelRange")(pixelRange)
+    val __obj = js.Dynamic.literal(clusterBillboards = clusterBillboards, clusterEvent = clusterEvent, clusterLabels = clusterLabels, clusterPoints = clusterPoints, destroy = destroy, enabled = enabled, minimumClusterSize = minimumClusterSize, pixelRange = pixelRange)
+  
     __obj.asInstanceOf[EntityCluster]
   }
 }

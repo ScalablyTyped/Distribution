@@ -18,9 +18,8 @@ trait InsertLineBreakCommand extends CommandWithSimpleStateBase {
 object InsertLineBreakCommand {
   @scala.inline
   def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertLineBreakCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[InsertLineBreakCommand]
   }
 }

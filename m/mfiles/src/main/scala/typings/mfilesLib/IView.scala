@@ -50,26 +50,8 @@ object IView {
     ViewType: mfilesLib.MFilesNs.MFViewType,
     Visible: scala.Boolean
   ): IView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Common")(Common)
-    __obj.updateDynamic("GUID")(GUID)
-    __obj.updateDynamic("HasParent")(HasParent)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Levels")(Levels)
-    __obj.updateDynamic("LookInAllVersions")(LookInAllVersions)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("ReturnLatestVisibleVersion")(ReturnLatestVisibleVersion)
-    __obj.updateDynamic("SearchConditions")(SearchConditions)
-    __obj.updateDynamic("SearchDef")(SearchDef)
-    __obj.updateDynamic("SearchFlags")(SearchFlags)
-    __obj.updateDynamic("ViewFlags")(ViewFlags)
-    __obj.updateDynamic("ViewLocation")(ViewLocation)
-    __obj.updateDynamic("ViewType")(ViewType)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, CloneFrom = CloneFrom, Common = Common, GUID = GUID, HasParent = HasParent, ID = ID, Levels = Levels, LookInAllVersions = LookInAllVersions, Name = Name, Parent = Parent, ReturnLatestVisibleVersion = ReturnLatestVisibleVersion, SearchConditions = SearchConditions, SearchDef = SearchDef, SearchFlags = SearchFlags, ViewFlags = ViewFlags, ViewLocation = ViewLocation, ViewType = ViewType, Visible = Visible)
+  
     __obj.asInstanceOf[IView]
   }
 }

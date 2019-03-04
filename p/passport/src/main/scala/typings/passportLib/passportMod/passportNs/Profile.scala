@@ -26,10 +26,7 @@ object Profile {
     photos: js.Array[passportLib.Anon_Value] = null,
     username: java.lang.String = null
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(displayName = displayName, id = id, provider = provider)
     if (emails != null) __obj.updateDynamic("emails")(emails)
     if (name != null) __obj.updateDynamic("name")(name)
     if (photos != null) __obj.updateDynamic("photos")(photos)

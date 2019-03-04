@@ -16,9 +16,8 @@ object Anon_Map {
     map: istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageMap,
     sourceFinder: js.Function1[java.lang.String, java.lang.String]
   ): Anon_Map = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("sourceFinder")(sourceFinder)
+    val __obj = js.Dynamic.literal(map = map, sourceFinder = sourceFinder)
+  
     __obj.asInstanceOf[Anon_Map]
   }
 }

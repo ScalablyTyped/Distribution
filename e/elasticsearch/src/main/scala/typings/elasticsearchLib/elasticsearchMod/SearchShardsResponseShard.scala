@@ -26,14 +26,8 @@ object SearchShardsResponseShard {
     share: scala.Double,
     state: java.lang.String
   ): SearchShardsResponseShard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocation_id")(allocation_id)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("primary")(primary)
-    __obj.updateDynamic("relocating_node")(relocating_node)
-    __obj.updateDynamic("share")(share)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(allocation_id = allocation_id, index = index, node = node, primary = primary, relocating_node = relocating_node, share = share, state = state)
+  
     __obj.asInstanceOf[SearchShardsResponseShard]
   }
 }

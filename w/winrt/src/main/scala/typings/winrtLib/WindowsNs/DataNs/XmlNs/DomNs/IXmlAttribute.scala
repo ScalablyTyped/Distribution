@@ -45,37 +45,8 @@ object IXmlAttribute {
     specified: scala.Boolean,
     value: java.lang.String
   ): IXmlAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("cloneNode")(cloneNode)
-    __obj.updateDynamic("firstChild")(firstChild)
-    __obj.updateDynamic("getXml")(getXml)
-    __obj.updateDynamic("hasChildNodes")(hasChildNodes)
-    __obj.updateDynamic("innerText")(innerText)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("lastChild")(lastChild)
-    __obj.updateDynamic("localName")(localName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespaceUri")(namespaceUri)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("ownerDocument")(ownerDocument)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("previousSibling")(previousSibling)
-    __obj.updateDynamic("removeChild")(removeChild)
-    __obj.updateDynamic("replaceChild")(replaceChild)
-    __obj.updateDynamic("selectNodes")(selectNodes)
-    __obj.updateDynamic("selectNodesNS")(selectNodesNS)
-    __obj.updateDynamic("selectSingleNode")(selectSingleNode)
-    __obj.updateDynamic("selectSingleNodeNS")(selectSingleNodeNS)
-    __obj.updateDynamic("specified")(specified)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(appendChild = appendChild, attributes = attributes, childNodes = childNodes, cloneNode = cloneNode, firstChild = firstChild, getXml = getXml, hasChildNodes = hasChildNodes, innerText = innerText, insertBefore = insertBefore, lastChild = lastChild, localName = localName, name = name, namespaceUri = namespaceUri, nextSibling = nextSibling, nodeName = nodeName, nodeType = nodeType, nodeValue = nodeValue, normalize = normalize, ownerDocument = ownerDocument, parentNode = parentNode, prefix = prefix, previousSibling = previousSibling, removeChild = removeChild, replaceChild = replaceChild, selectNodes = selectNodes, selectNodesNS = selectNodesNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS, specified = specified, value = value)
+  
     __obj.asInstanceOf[IXmlAttribute]
   }
 }

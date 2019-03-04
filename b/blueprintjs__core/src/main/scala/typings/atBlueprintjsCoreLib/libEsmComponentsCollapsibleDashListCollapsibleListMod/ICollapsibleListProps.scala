@@ -51,9 +51,7 @@ object ICollapsibleListProps {
     visibleItemClassName: java.lang.String = null,
     visibleItemCount: scala.Int | scala.Double = null
   ): ICollapsibleListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropdownTarget")(dropdownTarget)
-    __obj.updateDynamic("visibleItemRenderer")(visibleItemRenderer)
+    val __obj = js.Dynamic.literal(dropdownTarget = dropdownTarget, visibleItemRenderer = visibleItemRenderer)
     if (className != null) __obj.updateDynamic("className")(className)
     if (collapseFrom != null) __obj.updateDynamic("collapseFrom")(collapseFrom)
     if (dropdownProps != null) __obj.updateDynamic("dropdownProps")(dropdownProps)

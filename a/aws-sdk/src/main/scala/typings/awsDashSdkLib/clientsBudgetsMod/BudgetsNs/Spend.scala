@@ -19,9 +19,8 @@ trait Spend extends js.Object {
 object Spend {
   @scala.inline
   def apply(Amount: NumericValue, Unit: UnitValue): Spend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Amount")(Amount)
-    __obj.updateDynamic("Unit")(Unit)
+    val __obj = js.Dynamic.literal(Amount = Amount, Unit = Unit)
+  
     __obj.asInstanceOf[Spend]
   }
 }

@@ -14,10 +14,8 @@ trait Anon_Ascending extends js.Object {
 object Anon_Ascending {
   @scala.inline
   def apply(ascending: scala.Double, default: scala.Double, descending: scala.Double): Anon_Ascending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascending")(ascending)
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("descending")(descending)
+    val __obj = js.Dynamic.literal(ascending = ascending, default = default, descending = descending)
+  
     __obj.asInstanceOf[Anon_Ascending]
   }
 }

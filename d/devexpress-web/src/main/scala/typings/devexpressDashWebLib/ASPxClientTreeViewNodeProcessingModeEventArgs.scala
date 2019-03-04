@@ -19,9 +19,8 @@ trait ASPxClientTreeViewNodeProcessingModeEventArgs extends ASPxClientProcessing
 object ASPxClientTreeViewNodeProcessingModeEventArgs {
   @scala.inline
   def apply(node: ASPxClientTreeViewNode, processOnServer: scala.Boolean): ASPxClientTreeViewNodeProcessingModeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(node = node, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientTreeViewNodeProcessingModeEventArgs]
   }
 }

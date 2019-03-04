@@ -18,10 +18,8 @@ object PerfectScrollbar {
     reach: perfectDashScrollbarLib.Anon_End,
     update: js.Function0[scala.Unit]
   ): PerfectScrollbar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("reach")(reach)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, reach = reach, update = update)
+  
     __obj.asInstanceOf[PerfectScrollbar]
   }
 }

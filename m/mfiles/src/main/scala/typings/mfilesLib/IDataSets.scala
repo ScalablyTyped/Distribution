@@ -14,10 +14,8 @@ trait IDataSets extends js.Object {
 object IDataSets {
   @scala.inline
   def apply(Clone: js.Function0[IDataSets], Count: scala.Double, Item: js.Function1[scala.Double, IDataSet]): IDataSets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal(Clone = Clone, Count = Count, Item = Item)
+  
     __obj.asInstanceOf[IDataSets]
   }
 }

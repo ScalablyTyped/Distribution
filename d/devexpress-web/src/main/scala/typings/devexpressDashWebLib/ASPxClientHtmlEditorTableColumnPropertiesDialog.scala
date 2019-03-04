@@ -36,16 +36,8 @@ object ASPxClientHtmlEditorTableColumnPropertiesDialog {
     GetWidthValueSpinEdit: js.Function0[ASPxClientSpinEdit],
     GetWidthValueTypeComboBox: js.Function0[ASPxClientComboBox]
   ): ASPxClientHtmlEditorTableColumnPropertiesDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBackgroundColorColorEdit")(GetBackgroundColorColorEdit)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHorizontalAlignmentComboBox")(GetHorizontalAlignmentComboBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetVerticalAlignmentComboBox")(GetVerticalAlignmentComboBox)
-    __obj.updateDynamic("GetWidthTypeComboBox")(GetWidthTypeComboBox)
-    __obj.updateDynamic("GetWidthValueSpinEdit")(GetWidthValueSpinEdit)
-    __obj.updateDynamic("GetWidthValueTypeComboBox")(GetWidthValueTypeComboBox)
+    val __obj = js.Dynamic.literal(GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox, GetWidthTypeComboBox = GetWidthTypeComboBox, GetWidthValueSpinEdit = GetWidthValueSpinEdit, GetWidthValueTypeComboBox = GetWidthValueTypeComboBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTableColumnPropertiesDialog]
   }
 }

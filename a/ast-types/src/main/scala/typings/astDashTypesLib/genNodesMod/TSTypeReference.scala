@@ -24,8 +24,8 @@ object TSTypeReference {
     typeName: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
   ): TSTypeReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeName")(typeName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSTypeReference]
   }

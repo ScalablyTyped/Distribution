@@ -20,10 +20,7 @@ object Anon_FieldToMatchPositionalConstraint {
     textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     targetString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_FieldToMatchPositionalConstraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldToMatch")(fieldToMatch.asInstanceOf[js.Any])
-    __obj.updateDynamic("positionalConstraint")(positionalConstraint.asInstanceOf[js.Any])
-    __obj.updateDynamic("textTransformation")(textTransformation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch.asInstanceOf[js.Any], positionalConstraint = positionalConstraint.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
     if (targetString != null) __obj.updateDynamic("targetString")(targetString.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FieldToMatchPositionalConstraint]
   }

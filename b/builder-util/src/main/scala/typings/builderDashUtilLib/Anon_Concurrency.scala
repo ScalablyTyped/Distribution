@@ -12,8 +12,8 @@ trait Anon_Concurrency extends js.Object {
 object Anon_Concurrency {
   @scala.inline
   def apply(concurrency: scala.Double): Anon_Concurrency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concurrency")(concurrency)
+    val __obj = js.Dynamic.literal(concurrency = concurrency)
+  
     __obj.asInstanceOf[Anon_Concurrency]
   }
 }

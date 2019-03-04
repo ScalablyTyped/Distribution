@@ -16,9 +16,8 @@ object Anon_CacheHint {
     cacheHint: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint,
     setCacheHint: js.Function1[apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheHint, scala.Unit]
   ): Anon_CacheHint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheHint")(cacheHint)
-    __obj.updateDynamic("setCacheHint")(setCacheHint)
+    val __obj = js.Dynamic.literal(cacheHint = cacheHint, setCacheHint = setCacheHint)
+  
     __obj.asInstanceOf[Anon_CacheHint]
   }
 }

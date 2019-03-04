@@ -24,13 +24,8 @@ object ContainerStats {
     precpu_stats: CPUStats,
     read: java.lang.String
   ): ContainerStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpu_stats")(cpu_stats)
-    __obj.updateDynamic("memory_stats")(memory_stats)
-    __obj.updateDynamic("networks")(networks)
-    __obj.updateDynamic("pid_stats")(pid_stats)
-    __obj.updateDynamic("precpu_stats")(precpu_stats)
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(cpu_stats = cpu_stats, memory_stats = memory_stats, networks = networks, pid_stats = pid_stats, precpu_stats = precpu_stats, read = read)
+  
     __obj.asInstanceOf[ContainerStats]
   }
 }

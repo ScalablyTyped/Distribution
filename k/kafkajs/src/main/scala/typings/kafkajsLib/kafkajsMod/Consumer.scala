@@ -39,17 +39,8 @@ object Consumer {
     seek: js.Function1[ConsumerSeekOptions, scala.Unit],
     subscribe: js.Function1[ConsumerSubscribeOptions, js.Promise[scala.Unit]]
   ): Consumer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("describeGroup")(describeGroup)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("seek")(seek)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(connect = connect, describeGroup = describeGroup, disconnect = disconnect, events = events, on = on, pause = pause, resume = resume, run = run, seek = seek, subscribe = subscribe)
+  
     __obj.asInstanceOf[Consumer]
   }
 }

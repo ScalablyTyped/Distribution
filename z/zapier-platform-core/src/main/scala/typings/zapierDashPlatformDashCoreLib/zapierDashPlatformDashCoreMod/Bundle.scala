@@ -13,9 +13,8 @@ trait Bundle[InputData] extends js.Object {
 object Bundle {
   @scala.inline
   def apply[InputData](authData: AuthData, inputData: InputData): Bundle[InputData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authData")(authData)
-    __obj.updateDynamic("inputData")(inputData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authData = authData, inputData = inputData.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Bundle[InputData]]
   }
 }

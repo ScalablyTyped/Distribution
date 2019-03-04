@@ -27,14 +27,8 @@ object FileTypes {
     styl: wiredepLib.Anon_BlockDetectReplaceAnonCssStyl,
     yaml: wiredepLib.Anon_BlockDetect
   ): FileTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileExtension")(fileExtension)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("jade")(jade)
-    __obj.updateDynamic("less")(less)
-    __obj.updateDynamic("scss")(scss)
-    __obj.updateDynamic("styl")(styl)
-    __obj.updateDynamic("yaml")(yaml)
+    val __obj = js.Dynamic.literal(fileExtension = fileExtension, html = html, jade = jade, less = less, scss = scss, styl = styl, yaml = yaml)
+  
     __obj.asInstanceOf[FileTypes]
   }
 }

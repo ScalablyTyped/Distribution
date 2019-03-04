@@ -30,15 +30,7 @@ object PublisherMessage {
     t: scala.Double,
     commPort: scala.Int | scala.Double = null
   ): PublisherMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nspace")(nspace)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(host = host, id = id, ip = ip, name = name, nspace = nspace, path = path, port = port, t = t)
     if (commPort != null) __obj.updateDynamic("commPort")(commPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherMessage]
   }

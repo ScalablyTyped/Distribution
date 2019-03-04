@@ -25,8 +25,7 @@ object ResponsiveOnUpdateData {
       scala.Unit
     ] = null
   ): ResponsiveOnUpdateData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(width = width)
     if (as != null) __obj.updateDynamic("as")(as)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(fireOnMount)) __obj.updateDynamic("fireOnMount")(fireOnMount)

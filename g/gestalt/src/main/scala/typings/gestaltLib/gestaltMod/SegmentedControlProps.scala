@@ -20,10 +20,7 @@ object SegmentedControlProps {
     selectedItemIndex: scala.Double,
     size: gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
   ): SegmentedControlProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("selectedItemIndex")(selectedItemIndex)
+    val __obj = js.Dynamic.literal(items = items, onChange = onChange, selectedItemIndex = selectedItemIndex)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentedControlProps]
   }

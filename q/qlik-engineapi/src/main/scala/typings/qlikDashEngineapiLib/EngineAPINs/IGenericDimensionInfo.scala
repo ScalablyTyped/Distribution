@@ -42,12 +42,8 @@ object IGenericDimensionInfo {
     qIsSemantic: scala.Boolean,
     qTags: js.Array[java.lang.String]
   ): IGenericDimensionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAndMode")(qAndMode)
-    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qIsSemantic")(qIsSemantic)
-    __obj.updateDynamic("qTags")(qTags)
+    val __obj = js.Dynamic.literal(qAndMode = qAndMode, qApprMaxGlyphCount = qApprMaxGlyphCount, qCardinal = qCardinal, qIsSemantic = qIsSemantic, qTags = qTags)
+  
     __obj.asInstanceOf[IGenericDimensionInfo]
   }
 }

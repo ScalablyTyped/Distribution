@@ -32,11 +32,8 @@ object ExtensionAuditLogEntry {
     comment: java.lang.String,
     updatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): ExtensionAuditLogEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auditAction")(auditAction)
-    __obj.updateDynamic("auditDate")(auditDate)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("updatedBy")(updatedBy)
+    val __obj = js.Dynamic.literal(auditAction = auditAction, auditDate = auditDate, comment = comment, updatedBy = updatedBy)
+  
     __obj.asInstanceOf[ExtensionAuditLogEntry]
   }
 }

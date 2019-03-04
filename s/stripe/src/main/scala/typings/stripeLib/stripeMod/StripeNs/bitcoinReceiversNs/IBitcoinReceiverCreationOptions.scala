@@ -38,10 +38,7 @@ object IBitcoinReceiverCreationOptions {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     refund_mispayments: js.UndefOr[scala.Boolean] = js.undefined
   ): IBitcoinReceiverCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, email = email)
     if (description != null) __obj.updateDynamic("description")(description)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

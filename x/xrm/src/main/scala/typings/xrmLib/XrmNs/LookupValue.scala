@@ -26,9 +26,7 @@ trait LookupValue extends js.Object {
 object LookupValue {
   @scala.inline
   def apply(entityType: java.lang.String, id: java.lang.String, name: java.lang.String = null): LookupValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityType")(entityType)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(entityType = entityType, id = id)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[LookupValue]
   }

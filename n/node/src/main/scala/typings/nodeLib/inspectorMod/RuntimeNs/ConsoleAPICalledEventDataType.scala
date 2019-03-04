@@ -45,10 +45,8 @@ object ConsoleAPICalledEventDataType {
     context: java.lang.String = null,
     stackTrace: StackTrace = null
   ): ConsoleAPICalledEventDataType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("executionContextId")(executionContextId)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(args = args, executionContextId = executionContextId, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (context != null) __obj.updateDynamic("context")(context)
     if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
     __obj.asInstanceOf[ConsoleAPICalledEventDataType]

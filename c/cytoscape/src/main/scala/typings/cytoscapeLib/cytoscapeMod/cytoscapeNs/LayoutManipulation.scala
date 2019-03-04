@@ -32,10 +32,8 @@ object LayoutManipulation {
     start: js.Function0[LayoutManipulation],
     stop: js.Function0[LayoutManipulation]
   ): LayoutManipulation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(run = run, start = start, stop = stop)
+  
     __obj.asInstanceOf[LayoutManipulation]
   }
 }

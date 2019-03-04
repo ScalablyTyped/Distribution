@@ -32,10 +32,8 @@ trait IngressSpec extends js.Object {
 object IngressSpec {
   @scala.inline
   def apply(backend: IngressBackend, rules: js.Array[IngressRule], tls: js.Array[IngressTLS]): IngressSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backend")(backend)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("tls")(tls)
+    val __obj = js.Dynamic.literal(backend = backend, rules = rules, tls = tls)
+  
     __obj.asInstanceOf[IngressSpec]
   }
 }

@@ -11,7 +11,7 @@ trait PageletData extends js.Object {
   var html: java.lang.String
   var id: java.lang.String
   @JSName("js")
-  var `js_`: js.Array[java.lang.String]
+  var js_ : js.Array[java.lang.String]
   var reqID: java.lang.String
   var scripts: js.Array[java.lang.String]
   var styles: js.Array[java.lang.String]
@@ -24,19 +24,13 @@ object PageletData {
     css: js.Array[java.lang.String],
     html: java.lang.String,
     id: java.lang.String,
-    `js_`: js.Array[java.lang.String],
+    js_ : js.Array[java.lang.String],
     reqID: java.lang.String,
     scripts: js.Array[java.lang.String],
     styles: js.Array[java.lang.String]
   ): PageletData = {
-    val __obj = js.Dynamic.literal(`js_` = `js_`)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("reqID")(reqID)
-    __obj.updateDynamic("scripts")(scripts)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(container = container, css = css, html = html, id = id, reqID = reqID, scripts = scripts, styles = styles)
+    __obj.updateDynamic("js")(js_)
     __obj.asInstanceOf[PageletData]
   }
 }

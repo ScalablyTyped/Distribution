@@ -29,13 +29,8 @@ object XSheetFilterDescriptor {
     release: js.Function0[scala.Unit],
     setFilterFields: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TableFilterField], scala.Unit]
   ): XSheetFilterDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FilterFields")(FilterFields)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFilterFields")(getFilterFields)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFilterFields")(setFilterFields)
+    val __obj = js.Dynamic.literal(FilterFields = FilterFields, acquire = acquire, getFilterFields = getFilterFields, queryInterface = queryInterface, release = release, setFilterFields = setFilterFields)
+  
     __obj.asInstanceOf[XSheetFilterDescriptor]
   }
 }

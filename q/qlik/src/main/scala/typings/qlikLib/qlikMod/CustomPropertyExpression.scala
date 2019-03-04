@@ -26,9 +26,7 @@ object CustomPropertyExpression {
     show: scala.Boolean | ShowFunction = null,
     `type`: js.UndefOr[scala.Nothing] = js.undefined
   ): CustomPropertyExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("expressionType")(expressionType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component, expressionType = expressionType.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)

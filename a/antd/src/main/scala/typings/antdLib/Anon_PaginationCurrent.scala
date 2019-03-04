@@ -12,8 +12,8 @@ trait Anon_PaginationCurrent extends js.Object {
 object Anon_PaginationCurrent {
   @scala.inline
   def apply(paginationCurrent: scala.Double): Anon_PaginationCurrent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("paginationCurrent")(paginationCurrent)
+    val __obj = js.Dynamic.literal(paginationCurrent = paginationCurrent)
+  
     __obj.asInstanceOf[Anon_PaginationCurrent]
   }
 }

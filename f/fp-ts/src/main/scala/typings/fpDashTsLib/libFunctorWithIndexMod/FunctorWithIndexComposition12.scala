@@ -27,9 +27,8 @@ object FunctorWithIndexComposition12 {
       fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, js.Any, js.Any]]
     ]
   ): FunctorWithIndexComposition12[F, FI, G, GI] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mapWithIndex")(mapWithIndex)
+    val __obj = js.Dynamic.literal(map = map, mapWithIndex = mapWithIndex)
+  
     __obj.asInstanceOf[FunctorWithIndexComposition12[F, FI, G, GI]]
   }
 }

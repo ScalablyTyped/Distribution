@@ -12,8 +12,8 @@ trait ISoapFault12 extends ISoapFault {
 object ISoapFault12 {
   @scala.inline
   def apply(Fault: soapLib.Anon_Code): ISoapFault12 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Fault")(Fault)
+    val __obj = js.Dynamic.literal(Fault = Fault)
+  
     __obj.asInstanceOf[ISoapFault12]
   }
 }

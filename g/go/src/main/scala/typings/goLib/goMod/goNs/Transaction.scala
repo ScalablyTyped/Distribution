@@ -50,15 +50,8 @@ object Transaction {
     redo: js.Function0[scala.Unit],
     undo: js.Function0[scala.Unit]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canRedo")(canRedo)
-    __obj.updateDynamic("canUndo")(canUndo)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("isComplete")(isComplete)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("redo")(redo)
-    __obj.updateDynamic("undo")(undo)
+    val __obj = js.Dynamic.literal(canRedo = canRedo, canUndo = canUndo, changes = changes, clear = clear, isComplete = isComplete, name = name, redo = redo, undo = undo)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

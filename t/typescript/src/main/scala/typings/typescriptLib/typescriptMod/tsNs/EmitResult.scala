@@ -19,9 +19,7 @@ object EmitResult {
     emitSkipped: scala.Boolean,
     emittedFiles: js.Array[java.lang.String] = null
   ): EmitResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diagnostics")(diagnostics)
-    __obj.updateDynamic("emitSkipped")(emitSkipped)
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics, emitSkipped = emitSkipped)
     if (emittedFiles != null) __obj.updateDynamic("emittedFiles")(emittedFiles)
     __obj.asInstanceOf[EmitResult]
   }

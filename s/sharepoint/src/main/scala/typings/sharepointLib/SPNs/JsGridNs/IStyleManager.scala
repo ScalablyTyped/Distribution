@@ -54,26 +54,8 @@ object IStyleManager {
     widgetDockPressedStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget,
     widgetDockStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget
   ): IStyleManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetCellStyle")(GetCellStyle)
-    __obj.updateDynamic("RegisterCellStyle")(RegisterCellStyle)
-    __obj.updateDynamic("UpdateDefaultCellStyleFromCss")(UpdateDefaultCellStyleFromCss)
-    __obj.updateDynamic("UpdateGridPaneStyleFromCss")(UpdateGridPaneStyleFromCss)
-    __obj.updateDynamic("UpdateGroupStylesFromCss")(UpdateGroupStylesFromCss)
-    __obj.updateDynamic("UpdateHeaderStyleFromCss")(UpdateHeaderStyleFromCss)
-    __obj.updateDynamic("UpdateSplitterStyleFromCss")(UpdateSplitterStyleFromCss)
-    __obj.updateDynamic("columnHeaderStyleCollection")(columnHeaderStyleCollection)
-    __obj.updateDynamic("defaultCellStyle")(defaultCellStyle)
-    __obj.updateDynamic("gridPaneStyle")(gridPaneStyle)
-    __obj.updateDynamic("groupingStyles")(groupingStyles)
-    __obj.updateDynamic("readOnlyCellStyle")(readOnlyCellStyle)
-    __obj.updateDynamic("readOnlyFocusedCellStyle")(readOnlyFocusedCellStyle)
-    __obj.updateDynamic("rowHeaderStyleCollection")(rowHeaderStyleCollection)
-    __obj.updateDynamic("splitterStyleCollection")(splitterStyleCollection)
-    __obj.updateDynamic("timescaleTierStyle")(timescaleTierStyle)
-    __obj.updateDynamic("widgetDockHoverStyle")(widgetDockHoverStyle)
-    __obj.updateDynamic("widgetDockPressedStyle")(widgetDockPressedStyle)
-    __obj.updateDynamic("widgetDockStyle")(widgetDockStyle)
+    val __obj = js.Dynamic.literal(GetCellStyle = GetCellStyle, RegisterCellStyle = RegisterCellStyle, UpdateDefaultCellStyleFromCss = UpdateDefaultCellStyleFromCss, UpdateGridPaneStyleFromCss = UpdateGridPaneStyleFromCss, UpdateGroupStylesFromCss = UpdateGroupStylesFromCss, UpdateHeaderStyleFromCss = UpdateHeaderStyleFromCss, UpdateSplitterStyleFromCss = UpdateSplitterStyleFromCss, columnHeaderStyleCollection = columnHeaderStyleCollection, defaultCellStyle = defaultCellStyle, gridPaneStyle = gridPaneStyle, groupingStyles = groupingStyles, readOnlyCellStyle = readOnlyCellStyle, readOnlyFocusedCellStyle = readOnlyFocusedCellStyle, rowHeaderStyleCollection = rowHeaderStyleCollection, splitterStyleCollection = splitterStyleCollection, timescaleTierStyle = timescaleTierStyle, widgetDockHoverStyle = widgetDockHoverStyle, widgetDockPressedStyle = widgetDockPressedStyle, widgetDockStyle = widgetDockStyle)
+  
     __obj.asInstanceOf[IStyleManager]
   }
 }

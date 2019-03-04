@@ -12,8 +12,8 @@ trait ORMId extends js.Object {
 object ORMId {
   @scala.inline
   def apply(id: java.lang.String): ORMId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[ORMId]
   }
 }

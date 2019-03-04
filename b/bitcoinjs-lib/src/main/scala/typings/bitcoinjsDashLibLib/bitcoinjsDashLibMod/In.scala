@@ -22,12 +22,8 @@ object In {
     sequence: scala.Double,
     witness: js.Array[nodeLib.Buffer]
   ): In = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("witness")(witness)
+    val __obj = js.Dynamic.literal(hash = hash, index = index, script = script, sequence = sequence, witness = witness)
+  
     __obj.asInstanceOf[In]
   }
 }

@@ -61,28 +61,8 @@ object StateBlock {
     tight: scala.Boolean,
     tokens: js.Array[ContentToken]
   ): StateBlock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bMarks")(bMarks)
-    __obj.updateDynamic("blkIndent")(blkIndent)
-    __obj.updateDynamic("ddIndent")(ddIndent)
-    __obj.updateDynamic("eMarks")(eMarks)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("getLines")(getLines)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("lineMax")(lineMax)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parentType")(parentType.asInstanceOf[js.Any])
-    __obj.updateDynamic("parser")(parser)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("skipChars")(skipChars)
-    __obj.updateDynamic("skipEmptyLines")(skipEmptyLines)
-    __obj.updateDynamic("skipSpaces")(skipSpaces)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("tShift")(tShift)
-    __obj.updateDynamic("tight")(tight)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(bMarks = bMarks, blkIndent = blkIndent, ddIndent = ddIndent, eMarks = eMarks, env = env, getLines = getLines, isEmpty = isEmpty, level = level, line = line, lineMax = lineMax, options = options, parentType = parentType.asInstanceOf[js.Any], parser = parser, result = result, skipChars = skipChars, skipEmptyLines = skipEmptyLines, skipSpaces = skipSpaces, src = src, tShift = tShift, tight = tight, tokens = tokens)
+  
     __obj.asInstanceOf[StateBlock]
   }
 }

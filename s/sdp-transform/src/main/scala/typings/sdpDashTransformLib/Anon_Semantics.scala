@@ -13,9 +13,8 @@ trait Anon_Semantics extends js.Object {
 object Anon_Semantics {
   @scala.inline
   def apply(semantics: java.lang.String, ssrcs: java.lang.String): Anon_Semantics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("semantics")(semantics)
-    __obj.updateDynamic("ssrcs")(ssrcs)
+    val __obj = js.Dynamic.literal(semantics = semantics, ssrcs = ssrcs)
+  
     __obj.asInstanceOf[Anon_Semantics]
   }
 }

@@ -18,9 +18,7 @@ object SessionStorage {
     fromClient: js.Function1[java.lang.String, Session | scala.Null],
     `new`: js.Function0[Session] = null
   ): SessionStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forClient")(forClient)
-    __obj.updateDynamic("fromClient")(fromClient)
+    val __obj = js.Dynamic.literal(forClient = forClient, fromClient = fromClient)
     if (`new` != null) __obj.updateDynamic("new")(`new`)
     __obj.asInstanceOf[SessionStorage]
   }

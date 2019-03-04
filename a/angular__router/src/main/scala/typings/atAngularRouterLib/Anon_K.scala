@@ -16,8 +16,7 @@ object Anon_K {
     navigationId: scala.Double,
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_K = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigationId")(navigationId)
+    val __obj = js.Dynamic.literal(navigationId = navigationId)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_K]
   }

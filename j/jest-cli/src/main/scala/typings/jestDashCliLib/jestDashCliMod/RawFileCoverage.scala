@@ -30,15 +30,7 @@ object RawFileCoverage {
     statementMap: org.scalablytyped.runtime.NumberDictionary[js.Any],
     inputSourceMap: js.Object = null
   ): RawFileCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("branchMap")(branchMap)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("fnMap")(fnMap)
-    __obj.updateDynamic("l")(l)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("statementMap")(statementMap)
+    val __obj = js.Dynamic.literal(b = b, branchMap = branchMap, f = f, fnMap = fnMap, l = l, path = path, s = s, statementMap = statementMap)
     if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap)
     __obj.asInstanceOf[RawFileCoverage]
   }

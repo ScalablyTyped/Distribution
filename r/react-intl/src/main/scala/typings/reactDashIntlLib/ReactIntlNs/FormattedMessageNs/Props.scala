@@ -35,8 +35,7 @@ object Props {
       reactDashIntlLib.ReactIntlNs.MessageValue | reactLib.reactMod.Global.JSXNs.Element
     ] = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (children != null) __obj.updateDynamic("children")(children)
     if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage)
     if (description != null) __obj.updateDynamic("description")(description)

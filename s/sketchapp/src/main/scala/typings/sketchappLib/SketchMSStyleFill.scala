@@ -34,17 +34,7 @@ object SketchMSStyleFill {
     patternTileScale: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSStyleFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("contextSettings")(contextSettings)
-    __obj.updateDynamic("fillType")(fillType)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("noiseIndex")(noiseIndex)
-    __obj.updateDynamic("noiseIntensity")(noiseIntensity)
-    __obj.updateDynamic("patternFillType")(patternFillType)
-    __obj.updateDynamic("patternTileScale")(patternTileScale)
+    val __obj = js.Dynamic.literal(_class = _class, color = color, contextSettings = contextSettings, fillType = fillType, gradient = gradient, isEnabled = isEnabled, noiseIndex = noiseIndex, noiseIntensity = noiseIntensity, patternFillType = patternFillType, patternTileScale = patternTileScale)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyleFill]
   }

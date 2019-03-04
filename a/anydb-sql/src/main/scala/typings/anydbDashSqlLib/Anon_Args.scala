@@ -16,9 +16,8 @@ object Anon_Args {
     emit: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
     on: js.Function2[java.lang.String, js.Function, scala.Unit]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(emit = emit, on = on)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

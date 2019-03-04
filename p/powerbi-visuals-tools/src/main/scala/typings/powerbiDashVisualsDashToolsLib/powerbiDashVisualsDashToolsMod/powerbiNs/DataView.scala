@@ -27,8 +27,7 @@ object DataView {
     table: DataViewTable = null,
     tree: DataViewTree = null
   ): DataView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(metadata = metadata)
     if (categorical != null) __obj.updateDynamic("categorical")(categorical)
     if (matrix != null) __obj.updateDynamic("matrix")(matrix)
     if (scriptResult != null) __obj.updateDynamic("scriptResult")(scriptResult)

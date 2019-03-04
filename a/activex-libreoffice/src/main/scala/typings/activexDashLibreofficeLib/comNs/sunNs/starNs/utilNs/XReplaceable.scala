@@ -45,16 +45,8 @@ object XReplaceable {
     release: js.Function0[scala.Unit],
     replaceAll: js.Function1[XSearchDescriptor, scala.Double]
   ): XReplaceable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createReplaceDescriptor")(createReplaceDescriptor)
-    __obj.updateDynamic("createSearchDescriptor")(createSearchDescriptor)
-    __obj.updateDynamic("findAll")(findAll)
-    __obj.updateDynamic("findFirst")(findFirst)
-    __obj.updateDynamic("findNext")(findNext)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("replaceAll")(replaceAll)
+    val __obj = js.Dynamic.literal(acquire = acquire, createReplaceDescriptor = createReplaceDescriptor, createSearchDescriptor = createSearchDescriptor, findAll = findAll, findFirst = findFirst, findNext = findNext, queryInterface = queryInterface, release = release, replaceAll = replaceAll)
+  
     __obj.asInstanceOf[XReplaceable]
   }
 }

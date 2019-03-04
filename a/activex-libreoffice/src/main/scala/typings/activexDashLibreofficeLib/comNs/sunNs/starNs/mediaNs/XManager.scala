@@ -17,8 +17,8 @@ trait XManager extends js.Object {
 object XManager {
   @scala.inline
   def apply(createPlayer: js.Function1[java.lang.String, XPlayer]): XManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPlayer")(createPlayer)
+    val __obj = js.Dynamic.literal(createPlayer = createPlayer)
+  
     __obj.asInstanceOf[XManager]
   }
 }

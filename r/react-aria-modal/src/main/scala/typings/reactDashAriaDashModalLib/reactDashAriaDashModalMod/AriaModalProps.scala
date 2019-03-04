@@ -169,8 +169,7 @@ object AriaModalProps {
     underlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     verticallyCenter: js.UndefOr[scala.Boolean] = js.undefined
   ): AriaModalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onExit")(onExit)
+    val __obj = js.Dynamic.literal(onExit = onExit)
     if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert)
     if (applicationNode != null) __obj.updateDynamic("applicationNode")(applicationNode.asInstanceOf[js.Any])
     if (dialogClass != null) __obj.updateDynamic("dialogClass")(dialogClass)

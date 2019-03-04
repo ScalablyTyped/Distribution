@@ -31,11 +31,8 @@ object ASPxClientIndicatorPoint {
     series: ASPxClientSeries,
     values: js.Array[js.Object]
   ): ASPxClientIndicatorPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argument")(argument)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(argument = argument, chart = chart, series = series, values = values)
+  
     __obj.asInstanceOf[ASPxClientIndicatorPoint]
   }
 }

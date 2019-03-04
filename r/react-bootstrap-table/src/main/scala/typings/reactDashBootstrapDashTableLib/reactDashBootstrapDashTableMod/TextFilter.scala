@@ -42,7 +42,8 @@ object TextFilter {
     placeholder: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TextFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

@@ -34,8 +34,7 @@ object AssetmentRisks {
     `tas.config_update`: AssesmentRisk = null,
     `total.risk.generic`: AssesmentRisk = null
   ): AssetmentRisks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("device_key")(device_key)
+    val __obj = js.Dynamic.literal(device_key = device_key)
     if (`malware.any` != null) __obj.updateDynamic("malware.any")(`malware.any`)
     if (`network.wifi` != null) __obj.updateDynamic("network.wifi")(`network.wifi`)
     if (`os.rooted` != null) __obj.updateDynamic("os.rooted")(`os.rooted`)

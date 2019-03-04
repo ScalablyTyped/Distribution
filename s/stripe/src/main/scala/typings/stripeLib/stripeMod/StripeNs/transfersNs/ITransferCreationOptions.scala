@@ -52,10 +52,7 @@ object ITransferCreationOptions {
     source_transaction: java.lang.String = null,
     transfer_group: java.lang.String = null
   ): ITransferCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("destination")(destination)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, destination = destination)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

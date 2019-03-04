@@ -36,12 +36,8 @@ object XDataExporter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataExporter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("exportData")(exportData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, cancel = cancel, exportData = exportData, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataExporter]
   }
 }

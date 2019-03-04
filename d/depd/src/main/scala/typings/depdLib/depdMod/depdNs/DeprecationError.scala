@@ -20,10 +20,8 @@ object DeprecationError {
     namespace: java.lang.String,
     stack: java.lang.String
   ): DeprecationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, stack = stack)
+  
     __obj.asInstanceOf[DeprecationError]
   }
 }

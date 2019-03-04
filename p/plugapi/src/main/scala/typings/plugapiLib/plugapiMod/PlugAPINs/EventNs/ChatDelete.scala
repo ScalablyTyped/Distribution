@@ -13,9 +13,8 @@ trait ChatDelete extends js.Object {
 object ChatDelete {
   @scala.inline
   def apply(chatID: java.lang.String, mi: scala.Double): ChatDelete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chatID")(chatID)
-    __obj.updateDynamic("mi")(mi)
+    val __obj = js.Dynamic.literal(chatID = chatID, mi = mi)
+  
     __obj.asInstanceOf[ChatDelete]
   }
 }

@@ -22,15 +22,8 @@ object SystemIntegration {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): SystemIntegration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getOwnUpdateHandler")(getOwnUpdateHandler)
-    __obj.updateDynamic("getUpdateHandler")(getUpdateHandler)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("listLayers")(listLayers)
-    __obj.updateDynamic("listOwnLayers")(listOwnLayers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getOwnUpdateHandler = getOwnUpdateHandler, getUpdateHandler = getUpdateHandler, initialize = initialize, listLayers = listLayers, listOwnLayers = listOwnLayers, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[SystemIntegration]
   }
 }

@@ -18,9 +18,7 @@ object ServerOptions {
     verifier: java.lang.String,
     length: jsrpLib.jsrpLibNumbers.`2048` | jsrpLib.jsrpLibNumbers.`4096` = null
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("salt")(salt)
-    __obj.updateDynamic("verifier")(verifier)
+    val __obj = js.Dynamic.literal(salt = salt, verifier = verifier)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }

@@ -24,13 +24,8 @@ object Anon_ControlLabelItem {
     other: java.lang.String,
     root: java.lang.String
   ): Anon_ControlLabelItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controlLabel")(controlLabel)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("itemControl")(itemControl)
-    __obj.updateDynamic("materialDecorator")(materialDecorator)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(controlLabel = controlLabel, item = item, itemControl = itemControl, materialDecorator = materialDecorator, other = other, root = root)
+  
     __obj.asInstanceOf[Anon_ControlLabelItem]
   }
 }

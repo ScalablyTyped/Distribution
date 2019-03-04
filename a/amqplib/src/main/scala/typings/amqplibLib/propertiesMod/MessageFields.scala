@@ -20,11 +20,7 @@ object MessageFields {
     consumerTag: java.lang.String = null,
     messageCount: scala.Int | scala.Double = null
   ): MessageFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryTag")(deliveryTag)
-    __obj.updateDynamic("exchange")(exchange)
-    __obj.updateDynamic("redelivered")(redelivered)
-    __obj.updateDynamic("routingKey")(routingKey)
+    val __obj = js.Dynamic.literal(deliveryTag = deliveryTag, exchange = exchange, redelivered = redelivered, routingKey = routingKey)
     if (consumerTag != null) __obj.updateDynamic("consumerTag")(consumerTag)
     if (messageCount != null) __obj.updateDynamic("messageCount")(messageCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageFields]

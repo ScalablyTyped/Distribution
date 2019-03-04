@@ -46,24 +46,8 @@ object GridItem {
     setTitle: js.Function1[java.lang.String, GridItem],
     setValidation: js.Function1[GridValidation, GridItem]
   ): GridItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearValidation")(clearValidation)
-    __obj.updateDynamic("createResponse")(createResponse)
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("setColumns")(setColumns)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setRequired")(setRequired)
-    __obj.updateDynamic("setRows")(setRows)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setValidation")(setValidation)
+    val __obj = js.Dynamic.literal(clearValidation = clearValidation, createResponse = createResponse, duplicate = duplicate, getColumns = getColumns, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getRows = getRows, getTitle = getTitle, getType = getType, isRequired = isRequired, setColumns = setColumns, setHelpText = setHelpText, setRequired = setRequired, setRows = setRows, setTitle = setTitle, setValidation = setValidation)
+  
     __obj.asInstanceOf[GridItem]
   }
 }

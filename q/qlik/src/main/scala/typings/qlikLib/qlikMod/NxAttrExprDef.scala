@@ -13,9 +13,8 @@ trait NxAttrExprDef extends js.Object {
 object NxAttrExprDef {
   @scala.inline
   def apply(qExpression: java.lang.String, qLibraryId: java.lang.String): NxAttrExprDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExpression")(qExpression)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
+    val __obj = js.Dynamic.literal(qExpression = qExpression, qLibraryId = qLibraryId)
+  
     __obj.asInstanceOf[NxAttrExprDef]
   }
 }

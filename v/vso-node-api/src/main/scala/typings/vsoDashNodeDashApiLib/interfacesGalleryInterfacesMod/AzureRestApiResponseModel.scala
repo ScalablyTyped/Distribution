@@ -26,16 +26,8 @@ object AzureRestApiResponseModel {
     publisherId: java.lang.String,
     `type`: java.lang.String
   ): AzureRestApiResponseModel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("assetDetails")(assetDetails)
-    __obj.updateDynamic("assetId")(assetId)
-    __obj.updateDynamic("assetVersion")(assetVersion)
-    __obj.updateDynamic("customerSupportEmail")(customerSupportEmail)
-    __obj.updateDynamic("integrationContactEmail")(integrationContactEmail)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("operationStatus")(operationStatus)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("publisherId")(publisherId)
+    val __obj = js.Dynamic.literal(assetDetails = assetDetails, assetId = assetId, assetVersion = assetVersion, customerSupportEmail = customerSupportEmail, integrationContactEmail = integrationContactEmail, operation = operation, operationStatus = operationStatus, planId = planId, publisherId = publisherId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AzureRestApiResponseModel]
   }
 }

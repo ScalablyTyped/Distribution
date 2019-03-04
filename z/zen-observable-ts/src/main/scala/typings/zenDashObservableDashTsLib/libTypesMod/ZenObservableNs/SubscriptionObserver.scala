@@ -20,11 +20,8 @@ object SubscriptionObserver {
     error: js.Function1[js.Any, scala.Unit],
     next: js.Function1[T, scala.Unit]
   ): SubscriptionObserver[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(closed = closed, complete = complete, error = error, next = next)
+  
     __obj.asInstanceOf[SubscriptionObserver[T]]
   }
 }

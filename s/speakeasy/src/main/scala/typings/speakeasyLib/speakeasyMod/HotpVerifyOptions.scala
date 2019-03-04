@@ -44,10 +44,7 @@ object HotpVerifyOptions {
     encoding: Encoding = null,
     window: scala.Int | scala.Double = null
   ): HotpVerifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("counter")(counter)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(counter = counter, secret = secret, token = token)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

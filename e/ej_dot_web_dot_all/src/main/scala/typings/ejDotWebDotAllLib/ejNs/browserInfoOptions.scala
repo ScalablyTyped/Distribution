@@ -20,11 +20,8 @@ object browserInfoOptions {
     name: java.lang.String,
     version: java.lang.String
   ): browserInfoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("culture")(culture)
-    __obj.updateDynamic("isMSPointerEnabled")(isMSPointerEnabled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(culture = culture, isMSPointerEnabled = isMSPointerEnabled, name = name, version = version)
+  
     __obj.asInstanceOf[browserInfoOptions]
   }
 }

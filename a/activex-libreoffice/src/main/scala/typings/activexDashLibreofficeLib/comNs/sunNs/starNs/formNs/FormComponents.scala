@@ -82,40 +82,8 @@ object FormComponents {
     revokeScriptEvent: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     revokeScriptEvents: js.Function1[scala.Double, scala.Unit]
   ): FormComponents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("addScriptListener")(addScriptListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getScriptEvents")(getScriptEvents)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertByIndex")(insertByIndex)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("insertEntry")(insertEntry)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerScriptEvent")(registerScriptEvent)
-    __obj.updateDynamic("registerScriptEvents")(registerScriptEvents)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIndex")(removeByIndex)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("removeEntry")(removeEntry)
-    __obj.updateDynamic("removeScriptListener")(removeScriptListener)
-    __obj.updateDynamic("replaceByIndex")(replaceByIndex)
-    __obj.updateDynamic("replaceByName")(replaceByName)
-    __obj.updateDynamic("revokeScriptEvent")(revokeScriptEvent)
-    __obj.updateDynamic("revokeScriptEvents")(revokeScriptEvents)
+    val __obj = js.Dynamic.literal(Count = Count, ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addContainerListener = addContainerListener, addScriptListener = addScriptListener, attach = attach, createEnumeration = createEnumeration, detach = detach, getByIndex = getByIndex, getByName = getByName, getCount = getCount, getElementNames = getElementNames, getElementType = getElementType, getScriptEvents = getScriptEvents, hasByName = hasByName, hasElements = hasElements, insertByIndex = insertByIndex, insertByName = insertByName, insertEntry = insertEntry, queryInterface = queryInterface, registerScriptEvent = registerScriptEvent, registerScriptEvents = registerScriptEvents, release = release, removeByIndex = removeByIndex, removeByName = removeByName, removeContainerListener = removeContainerListener, removeEntry = removeEntry, removeScriptListener = removeScriptListener, replaceByIndex = replaceByIndex, replaceByName = replaceByName, revokeScriptEvent = revokeScriptEvent, revokeScriptEvents = revokeScriptEvents)
+  
     __obj.asInstanceOf[FormComponents]
   }
 }

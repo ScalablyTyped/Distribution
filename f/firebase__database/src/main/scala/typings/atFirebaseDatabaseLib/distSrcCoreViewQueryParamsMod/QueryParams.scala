@@ -12,19 +12,19 @@ class QueryParams () extends js.Object {
     * @return {!QueryParams}
     * @private
     */
-  var `copy_`: js.Any = js.native
-  var `endNameSet_`: js.Any = js.native
-  var `endSet_`: js.Any = js.native
-  var `indexEndName_`: js.Any = js.native
-  var `indexEndValue_`: js.Any = js.native
-  var `indexStartName_`: js.Any = js.native
-  var `indexStartValue_`: js.Any = js.native
-  var `index_`: js.Any = js.native
-  var `limitSet_`: js.Any = js.native
-  var `limit_`: js.Any = js.native
-  var `startNameSet_`: js.Any = js.native
-  var `startSet_`: js.Any = js.native
-  var `viewFrom_`: js.Any = js.native
+  var copy_ : js.Any = js.native
+  var endNameSet_ : js.Any = js.native
+  var endSet_ : js.Any = js.native
+  var indexEndName_ : js.Any = js.native
+  var indexEndValue_ : js.Any = js.native
+  var indexStartName_ : js.Any = js.native
+  var indexStartValue_ : js.Any = js.native
+  var index_ : js.Any = js.native
+  var limitSet_ : js.Any = js.native
+  var limit_ : js.Any = js.native
+  var startNameSet_ : js.Any = js.native
+  var startSet_ : js.Any = js.native
+  var viewFrom_ : js.Any = js.native
   /**
     * @param {*} indexValue
     * @param {?string=} key
@@ -150,13 +150,13 @@ object QueryParams extends js.Object {
     * @enum {string}
     * @private
     */
-  val `REST_QUERY_CONSTANTS_`: js.Any = js.native
+  val REST_QUERY_CONSTANTS_ : js.Any = js.native
   /**
     * Wire Protocol Constants
     * @const
     * @enum {string}
     * @private
     */
-  val `WIRE_PROTOCOL_CONSTANTS_`: js.Any = js.native
+  val WIRE_PROTOCOL_CONSTANTS_ : js.Any = js.native
 }
 

@@ -32,8 +32,8 @@ object XVndSunStarExpandUrl {
       java.lang.String
     ]
   ): XVndSunStarExpandUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expand")(expand)
+    val __obj = js.Dynamic.literal(expand = expand)
+  
     __obj.asInstanceOf[XVndSunStarExpandUrl]
   }
 }

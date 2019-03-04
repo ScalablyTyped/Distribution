@@ -12,8 +12,8 @@ trait Anon_JsonPathString extends js.Object {
 object Anon_JsonPathString {
   @scala.inline
   def apply(jsonPath: java.lang.String): Anon_JsonPathString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jsonPath")(jsonPath)
+    val __obj = js.Dynamic.literal(jsonPath = jsonPath)
+  
     __obj.asInstanceOf[Anon_JsonPathString]
   }
 }

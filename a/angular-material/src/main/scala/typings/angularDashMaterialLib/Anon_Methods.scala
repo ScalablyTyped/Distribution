@@ -18,8 +18,7 @@ object Anon_Methods {
     ],
     methods: js.Array[java.lang.String] = null
   ): Anon_Methods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (methods != null) __obj.updateDynamic("methods")(methods)
     __obj.asInstanceOf[Anon_Methods]
   }

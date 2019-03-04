@@ -48,8 +48,7 @@ object CellObject {
     w: java.lang.String = null,
     z: NumberFormat = null
   ): CellObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(t = t)
     if (F != null) __obj.updateDynamic("F")(F)
     if (c != null) __obj.updateDynamic("c")(c)
     if (f != null) __obj.updateDynamic("f")(f)

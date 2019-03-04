@@ -18,9 +18,7 @@ object Anon_EventTypeIncludeBody {
     lambdaArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     includeBody: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_EventTypeIncludeBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    __obj.updateDynamic("lambdaArn")(lambdaArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], lambdaArn = lambdaArn.asInstanceOf[js.Any])
     if (includeBody != null) __obj.updateDynamic("includeBody")(includeBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EventTypeIncludeBody]
   }

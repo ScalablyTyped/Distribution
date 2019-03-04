@@ -22,12 +22,8 @@ object OverlapKeeperRecord {
     shapeA: Shape,
     shapeB: Shape
   ): OverlapKeeperRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("shapeA")(shapeA)
-    __obj.updateDynamic("shapeB")(shapeB)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, set = set, shapeA = shapeA, shapeB = shapeB)
+  
     __obj.asInstanceOf[OverlapKeeperRecord]
   }
 }

@@ -85,20 +85,8 @@ object RowSet {
     XParameters: XParameters = null,
     XRowSet: XRowSet = null
   ): RowSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Command")(Command)
-    __obj.updateDynamic("DataSourceName")(DataSourceName)
-    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
-    __obj.updateDynamic("MaxFieldSize")(MaxFieldSize)
-    __obj.updateDynamic("MaxRows")(MaxRows)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("QueryTimeOut")(QueryTimeOut)
+    val __obj = js.Dynamic.literal(Command = Command, DataSourceName = DataSourceName, EscapeProcessing = EscapeProcessing, MaxFieldSize = MaxFieldSize, MaxRows = MaxRows, Password = Password, QueryTimeOut = QueryTimeOut, ResultSetType = ResultSetType, TransactionIsolation = TransactionIsolation, TypeMap = TypeMap, URL = URL, User = User)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ResultSet)
-    __obj.updateDynamic("ResultSetType")(ResultSetType)
-    __obj.updateDynamic("TransactionIsolation")(TransactionIsolation)
-    __obj.updateDynamic("TypeMap")(TypeMap)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("User")(User)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParameters)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XRowSet)
     __obj.asInstanceOf[RowSet]

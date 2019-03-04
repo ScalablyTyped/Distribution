@@ -22,12 +22,8 @@ object Anon_ButtonButtonCollapsed {
     root: java.lang.String,
     title: java.lang.String
   ): Anon_ButtonButtonCollapsed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttonCollapsed")(buttonCollapsed)
-    __obj.updateDynamic("buttonExpanded")(buttonExpanded)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(button = button, buttonCollapsed = buttonCollapsed, buttonExpanded = buttonExpanded, root = root, title = title)
+  
     __obj.asInstanceOf[Anon_ButtonButtonCollapsed]
   }
 }

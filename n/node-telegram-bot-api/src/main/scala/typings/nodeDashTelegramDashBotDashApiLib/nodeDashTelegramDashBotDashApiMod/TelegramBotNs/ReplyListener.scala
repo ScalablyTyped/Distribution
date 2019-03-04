@@ -20,11 +20,8 @@ object ReplyListener {
     id: scala.Double,
     messageId: scala.Double | java.lang.String
   ): ReplyListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("chatId")(chatId.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = callback, chatId = chatId.asInstanceOf[js.Any], id = id, messageId = messageId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReplyListener]
   }
 }

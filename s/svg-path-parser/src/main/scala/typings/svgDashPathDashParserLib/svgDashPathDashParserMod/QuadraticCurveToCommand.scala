@@ -26,13 +26,7 @@ object QuadraticCurveToCommand {
     y1: scala.Double,
     relative: js.UndefOr[scala.Boolean] = js.undefined
   ): QuadraticCurveToCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("x1")(x1)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("y1")(y1)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command, x = x, x1 = x1, y = y, y1 = y1)
     if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[QuadraticCurveToCommand]
   }

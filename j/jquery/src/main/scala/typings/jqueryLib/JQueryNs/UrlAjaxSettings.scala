@@ -56,8 +56,7 @@ object UrlAjaxSettings {
     xhr: js.Function0[stdLib.XMLHttpRequest] = null,
     xhrFields: jqueryLib.JQueryNs.AjaxNs.XHRFields = null
   ): UrlAjaxSettings[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (accepts != null) __obj.updateDynamic("accepts")(accepts)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)

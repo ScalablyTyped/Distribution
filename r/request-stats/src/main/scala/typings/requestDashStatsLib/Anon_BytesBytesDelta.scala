@@ -37,12 +37,8 @@ object Anon_BytesBytesDelta {
     speed: scala.Double,
     timeLeft: scala.Double
   ): Anon_BytesBytesDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("bytesDelta")(bytesDelta)
-    __obj.updateDynamic("bytesLeft")(bytesLeft)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("timeLeft")(timeLeft)
+    val __obj = js.Dynamic.literal(bytes = bytes, bytesDelta = bytesDelta, bytesLeft = bytesLeft, speed = speed, timeLeft = timeLeft)
+  
     __obj.asInstanceOf[Anon_BytesBytesDelta]
   }
 }

@@ -84,17 +84,8 @@ object XInvocation {
     release: js.Function0[scala.Unit],
     setValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XInvocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Introspection")(Introspection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getIntrospection")(getIntrospection)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasMethod")(hasMethod)
-    __obj.updateDynamic("hasProperty")(hasProperty)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(Introspection = Introspection, acquire = acquire, getIntrospection = getIntrospection, getValue = getValue, hasMethod = hasMethod, hasProperty = hasProperty, invoke = invoke, queryInterface = queryInterface, release = release, setValue = setValue)
+  
     __obj.asInstanceOf[XInvocation]
   }
 }

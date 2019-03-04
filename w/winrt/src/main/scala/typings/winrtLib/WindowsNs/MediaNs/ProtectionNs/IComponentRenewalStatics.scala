@@ -17,8 +17,8 @@ object IComponentRenewalStatics {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[RenewalStatus, scala.Double]
     ]
   ): IComponentRenewalStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renewSystemComponentsAsync")(renewSystemComponentsAsync)
+    val __obj = js.Dynamic.literal(renewSystemComponentsAsync = renewSystemComponentsAsync)
+  
     __obj.asInstanceOf[IComponentRenewalStatics]
   }
 }

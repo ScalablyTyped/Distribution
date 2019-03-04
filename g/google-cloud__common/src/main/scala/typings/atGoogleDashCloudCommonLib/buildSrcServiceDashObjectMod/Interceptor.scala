@@ -17,8 +17,8 @@ object Interceptor {
       atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions
     ]
   ): Interceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[Interceptor]
   }
 }

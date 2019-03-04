@@ -20,9 +20,8 @@ object Anon_Components {
     `type`: scala.Double,
     normalize: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Components = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("semantic")(semantic)
+    val __obj = js.Dynamic.literal(components = components, semantic = semantic)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize)
     __obj.asInstanceOf[Anon_Components]
   }

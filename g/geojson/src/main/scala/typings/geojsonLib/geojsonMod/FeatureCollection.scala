@@ -18,8 +18,8 @@ object FeatureCollection {
     `type`: geojsonLib.geojsonLibStrings.FeatureCollection,
     bbox: BBox = null
   ): FeatureCollection[G, P] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(features = features)
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureCollection[G, P]]
   }

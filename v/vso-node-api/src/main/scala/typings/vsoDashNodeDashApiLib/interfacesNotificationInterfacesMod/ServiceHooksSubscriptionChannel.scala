@@ -12,8 +12,8 @@ trait ServiceHooksSubscriptionChannel extends js.Object {
 object ServiceHooksSubscriptionChannel {
   @scala.inline
   def apply(`type`: java.lang.String): ServiceHooksSubscriptionChannel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ServiceHooksSubscriptionChannel]
   }
 }

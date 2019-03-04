@@ -158,24 +158,7 @@ object IHyperCubeDef {
     qSuppressZero: scala.Boolean,
     qCalcCond: IValueExpr = null
   ): IHyperCubeDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAlwaysFullyExpanded")(qAlwaysFullyExpanded)
-    __obj.updateDynamic("qDimensions")(qDimensions)
-    __obj.updateDynamic("qIndentMode")(qIndentMode)
-    __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch)
-    __obj.updateDynamic("qInterColumnSortOrder")(qInterColumnSortOrder)
-    __obj.updateDynamic("qMaxStackedCells")(qMaxStackedCells)
-    __obj.updateDynamic("qMeasures")(qMeasures)
-    __obj.updateDynamic("qMode")(qMode)
-    __obj.updateDynamic("qNoOfLeftDims")(qNoOfLeftDims)
-    __obj.updateDynamic("qPopulateMissing")(qPopulateMissing)
-    __obj.updateDynamic("qPseudoDimPos")(qPseudoDimPos)
-    __obj.updateDynamic("qReductionMode")(qReductionMode)
-    __obj.updateDynamic("qShowTotalsAbove")(qShowTotalsAbove)
-    __obj.updateDynamic("qSortbyYValue")(qSortbyYValue)
-    __obj.updateDynamic("qStateName")(qStateName)
-    __obj.updateDynamic("qSuppressMissing")(qSuppressMissing)
-    __obj.updateDynamic("qSuppressZero")(qSuppressZero)
+    val __obj = js.Dynamic.literal(qAlwaysFullyExpanded = qAlwaysFullyExpanded, qDimensions = qDimensions, qIndentMode = qIndentMode, qInitialDataFetch = qInitialDataFetch, qInterColumnSortOrder = qInterColumnSortOrder, qMaxStackedCells = qMaxStackedCells, qMeasures = qMeasures, qMode = qMode, qNoOfLeftDims = qNoOfLeftDims, qPopulateMissing = qPopulateMissing, qPseudoDimPos = qPseudoDimPos, qReductionMode = qReductionMode, qShowTotalsAbove = qShowTotalsAbove, qSortbyYValue = qSortbyYValue, qStateName = qStateName, qSuppressMissing = qSuppressMissing, qSuppressZero = qSuppressZero)
     if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
     __obj.asInstanceOf[IHyperCubeDef]
   }

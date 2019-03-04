@@ -20,8 +20,7 @@ object Anon_Body {
     headers: js.Any = null,
     tags: js.Array[java.lang.String] = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (expiry != null) __obj.updateDynamic("expiry")(expiry)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (tags != null) __obj.updateDynamic("tags")(tags)

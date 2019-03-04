@@ -13,8 +13,7 @@ trait DomainResponse extends Response {
 object DomainResponse {
   @scala.inline
   def apply(domain: java.lang.String, ip_address: java.lang.String = null): DomainResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
     if (ip_address != null) __obj.updateDynamic("ip_address")(ip_address)
     __obj.asInstanceOf[DomainResponse]
   }

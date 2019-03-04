@@ -13,9 +13,8 @@ trait BoardRow extends js.Object {
 object BoardRow {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String): BoardRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[BoardRow]
   }
 }

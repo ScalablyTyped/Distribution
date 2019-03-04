@@ -15,11 +15,8 @@ trait Anon_AzureSubscription extends js.Object {
 object Anon_AzureSubscription {
   @scala.inline
   def apply(azureSubscription: scala.Double, chef: scala.Double, custom: scala.Double, generic: scala.Double): Anon_AzureSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("azureSubscription")(azureSubscription)
-    __obj.updateDynamic("chef")(chef)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("generic")(generic)
+    val __obj = js.Dynamic.literal(azureSubscription = azureSubscription, chef = chef, custom = custom, generic = generic)
+  
     __obj.asInstanceOf[Anon_AzureSubscription]
   }
 }

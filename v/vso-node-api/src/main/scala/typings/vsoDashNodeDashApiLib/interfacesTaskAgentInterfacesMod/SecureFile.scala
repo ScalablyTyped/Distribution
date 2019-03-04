@@ -28,15 +28,8 @@ object SecureFile {
     properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     ticket: java.lang.String
   ): SecureFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("ticket")(ticket)
+    val __obj = js.Dynamic.literal(createdBy = createdBy, createdOn = createdOn, id = id, modifiedBy = modifiedBy, modifiedOn = modifiedOn, name = name, properties = properties, ticket = ticket)
+  
     __obj.asInstanceOf[SecureFile]
   }
 }

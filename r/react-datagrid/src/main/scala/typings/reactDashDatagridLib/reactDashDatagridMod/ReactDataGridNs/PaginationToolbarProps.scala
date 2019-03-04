@@ -31,12 +31,8 @@ object PaginationToolbarProps {
     showPageSize: scala.Boolean,
     showRefreshIcon: scala.Boolean
   ): PaginationToolbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconProps")(iconProps)
-    __obj.updateDynamic("iconSize")(iconSize)
-    __obj.updateDynamic("pageSizes")(pageSizes)
-    __obj.updateDynamic("showPageSize")(showPageSize)
-    __obj.updateDynamic("showRefreshIcon")(showRefreshIcon)
+    val __obj = js.Dynamic.literal(iconProps = iconProps, iconSize = iconSize, pageSizes = pageSizes, showPageSize = showPageSize, showRefreshIcon = showRefreshIcon)
+  
     __obj.asInstanceOf[PaginationToolbarProps]
   }
 }

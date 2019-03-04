@@ -18,10 +18,8 @@ object Broadcast {
     subscribe: js.Function1[js.Function0[scala.Unit], SubscriptionId],
     unsubscribe: js.Function1[SubscriptionId, scala.Unit]
   ): Broadcast[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("subscribe")(subscribe)
-    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    val __obj = js.Dynamic.literal(getState = getState, subscribe = subscribe, unsubscribe = unsubscribe)
+  
     __obj.asInstanceOf[Broadcast[T]]
   }
 }

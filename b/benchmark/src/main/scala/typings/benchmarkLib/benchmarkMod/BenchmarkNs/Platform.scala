@@ -29,16 +29,8 @@ object Platform {
     toString: js.Function0[java.lang.String],
     version: java.lang.String
   ): Platform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("prerelease")(prerelease)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(description = description, layout = layout, manufacturer = manufacturer, name = name, os = os, prerelease = prerelease, product = product, toString = toString, version = version)
+  
     __obj.asInstanceOf[Platform]
   }
 }

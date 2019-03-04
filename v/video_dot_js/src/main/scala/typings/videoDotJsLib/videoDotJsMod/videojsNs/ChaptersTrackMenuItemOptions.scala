@@ -21,9 +21,7 @@ object ChaptersTrackMenuItemOptions {
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.UndefOr[scala.Boolean] = js.undefined
   ): ChaptersTrackMenuItemOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cue")(cue)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(cue = cue, track = track)
     if (children != null) __obj.updateDynamic("children")(children)
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable)

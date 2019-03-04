@@ -24,9 +24,8 @@ trait ASPxClientImageGalleryFullscreenViewerEventArgs extends ASPxClientEventArg
 object ASPxClientImageGalleryFullscreenViewerEventArgs {
   @scala.inline
   def apply(index: scala.Double, name: java.lang.String): ASPxClientImageGalleryFullscreenViewerEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(index = index, name = name)
+  
     __obj.asInstanceOf[ASPxClientImageGalleryFullscreenViewerEventArgs]
   }
 }

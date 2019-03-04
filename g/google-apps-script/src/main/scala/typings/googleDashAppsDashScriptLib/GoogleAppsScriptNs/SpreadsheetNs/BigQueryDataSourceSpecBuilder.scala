@@ -34,18 +34,8 @@ object BigQueryDataSourceSpecBuilder {
     setProjectId: js.Function1[java.lang.String, BigQueryDataSourceSpecBuilder],
     setRawQuery: js.Function1[java.lang.String, BigQueryDataSourceSpecBuilder]
   ): BigQueryDataSourceSpecBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("getProjectId")(getProjectId)
-    __obj.updateDynamic("getRawQuery")(getRawQuery)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("removeAllParameters")(removeAllParameters)
-    __obj.updateDynamic("removeParameter")(removeParameter)
-    __obj.updateDynamic("setParameterFromCell")(setParameterFromCell)
-    __obj.updateDynamic("setProjectId")(setProjectId)
-    __obj.updateDynamic("setRawQuery")(setRawQuery)
+    val __obj = js.Dynamic.literal(build = build, copy = copy, getParameters = getParameters, getProjectId = getProjectId, getRawQuery = getRawQuery, getType = getType, removeAllParameters = removeAllParameters, removeParameter = removeParameter, setParameterFromCell = setParameterFromCell, setProjectId = setProjectId, setRawQuery = setRawQuery)
+  
     __obj.asInstanceOf[BigQueryDataSourceSpecBuilder]
   }
 }

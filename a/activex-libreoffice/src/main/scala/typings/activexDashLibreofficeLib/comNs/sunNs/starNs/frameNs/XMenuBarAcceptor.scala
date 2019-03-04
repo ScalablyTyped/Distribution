@@ -28,11 +28,8 @@ object XMenuBarAcceptor {
     release: js.Function0[scala.Unit],
     updateMenuBar: js.Function1[js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XMenuBar], scala.Unit]
   ): XMenuBarAcceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateMenuBar")(updateMenuBar)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateMenuBar = updateMenuBar)
+  
     __obj.asInstanceOf[XMenuBarAcceptor]
   }
 }

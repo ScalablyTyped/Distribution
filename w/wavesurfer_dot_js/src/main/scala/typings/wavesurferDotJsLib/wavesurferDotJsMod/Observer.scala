@@ -30,12 +30,8 @@ object Observer {
     un: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit],
     unAll: js.Function0[scala.Unit]
   ): Observer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("un")(un)
-    __obj.updateDynamic("unAll")(unAll)
+    val __obj = js.Dynamic.literal(fireEvent = fireEvent, on = on, once = once, un = un, unAll = unAll)
+  
     __obj.asInstanceOf[Observer]
   }
 }

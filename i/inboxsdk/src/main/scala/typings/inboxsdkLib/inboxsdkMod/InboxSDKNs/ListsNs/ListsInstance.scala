@@ -14,8 +14,8 @@ object ListsInstance {
   def apply(
     registerThreadRowViewHandler: js.Function1[js.Function1[/* threadRowView */ ThreadRowView, _], js.Function0[scala.Unit]]
   ): ListsInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerThreadRowViewHandler")(registerThreadRowViewHandler)
+    val __obj = js.Dynamic.literal(registerThreadRowViewHandler = registerThreadRowViewHandler)
+  
     __obj.asInstanceOf[ListsInstance]
   }
 }

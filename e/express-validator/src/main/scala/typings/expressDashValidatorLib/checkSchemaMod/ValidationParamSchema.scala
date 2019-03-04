@@ -102,8 +102,7 @@ object ValidationParamSchema {
     unescape: expressDashValidatorLib.expressDashValidatorLibNumbers.`true` = null,
     whitelist: expressDashValidatorLib.expressDashValidatorLibNumbers.`true` | SanitizerSchemaOptions[_] = null
   ): ValidationParamSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
     if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
     if (contains != null) __obj.updateDynamic("contains")(contains)
     if (custom != null) __obj.updateDynamic("custom")(custom)

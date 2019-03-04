@@ -35,9 +35,7 @@ object Anon_0 {
     strategy: scala.Int | scala.Double = null,
     windowBits: scala.Int | scala.Double = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], memLevel = memLevel.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary)
     if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])

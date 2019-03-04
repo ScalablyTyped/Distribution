@@ -29,12 +29,8 @@ object XChartDataChangeEventListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XChartDataChangeEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("chartDataChanged")(chartDataChanged)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, chartDataChanged = chartDataChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XChartDataChangeEventListener]
   }
 }

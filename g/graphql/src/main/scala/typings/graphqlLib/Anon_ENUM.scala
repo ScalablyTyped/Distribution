@@ -28,15 +28,8 @@ object Anon_ENUM {
     SCALAR: graphqlLib.graphqlLibStrings.SCALAR,
     UNION: graphqlLib.graphqlLibStrings.UNION
   ): Anon_ENUM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ENUM")(ENUM)
-    __obj.updateDynamic("INPUT_OBJECT")(INPUT_OBJECT)
-    __obj.updateDynamic("INTERFACE")(INTERFACE)
-    __obj.updateDynamic("LIST")(LIST)
-    __obj.updateDynamic("NON_NULL")(NON_NULL)
-    __obj.updateDynamic("OBJECT")(OBJECT)
-    __obj.updateDynamic("SCALAR")(SCALAR)
-    __obj.updateDynamic("UNION")(UNION)
+    val __obj = js.Dynamic.literal(ENUM = ENUM, INPUT_OBJECT = INPUT_OBJECT, INTERFACE = INTERFACE, LIST = LIST, NON_NULL = NON_NULL, OBJECT = OBJECT, SCALAR = SCALAR, UNION = UNION)
+  
     __obj.asInstanceOf[Anon_ENUM]
   }
 }

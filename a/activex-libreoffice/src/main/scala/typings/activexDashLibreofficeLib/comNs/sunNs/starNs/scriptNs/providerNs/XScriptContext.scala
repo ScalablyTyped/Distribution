@@ -82,18 +82,8 @@ object XScriptContext {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XScriptContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComponentContext")(ComponentContext)
-    __obj.updateDynamic("Desktop")(Desktop)
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("InvocationContext")(InvocationContext)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getComponentContext")(getComponentContext)
-    __obj.updateDynamic("getDesktop")(getDesktop)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("getInvocationContext")(getInvocationContext)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ComponentContext = ComponentContext, Desktop = Desktop, Document = Document, InvocationContext = InvocationContext, acquire = acquire, getComponentContext = getComponentContext, getDesktop = getDesktop, getDocument = getDocument, getInvocationContext = getInvocationContext, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XScriptContext]
   }
 }

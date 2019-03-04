@@ -57,9 +57,7 @@ object UltimatePaginationProps {
     onChange: js.Function1[/* newPage */ scala.Double, scala.Unit] = null,
     siblingPagesRange: scala.Int | scala.Double = null
   ): UltimatePaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentPage")(currentPage)
-    __obj.updateDynamic("totalPages")(totalPages)
+    val __obj = js.Dynamic.literal(currentPage = currentPage, totalPages = totalPages)
     if (boundaryPagesRange != null) __obj.updateDynamic("boundaryPagesRange")(boundaryPagesRange.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(hideEllipsis)) __obj.updateDynamic("hideEllipsis")(hideEllipsis)

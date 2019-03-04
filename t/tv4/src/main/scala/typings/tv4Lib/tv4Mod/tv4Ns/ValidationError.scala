@@ -22,9 +22,7 @@ object ValidationError {
     schemaPath: java.lang.String = null,
     subErrors: js.Array[ValidationError] = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(code = code, message = message)
     if (dataPath != null) __obj.updateDynamic("dataPath")(dataPath)
     if (schemaPath != null) __obj.updateDynamic("schemaPath")(schemaPath)
     if (subErrors != null) __obj.updateDynamic("subErrors")(subErrors)

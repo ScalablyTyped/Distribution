@@ -26,14 +26,8 @@ object Analyze {
     metadata: projectDashOxfordLib.Anon_Format,
     requestId: java.lang.String
   ): Analyze = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adult")(adult)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("faces")(faces)
-    __obj.updateDynamic("imageType")(imageType)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(adult = adult, categories = categories, color = color, faces = faces, imageType = imageType, metadata = metadata, requestId = requestId)
+  
     __obj.asInstanceOf[Analyze]
   }
 }

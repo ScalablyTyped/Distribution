@@ -45,9 +45,7 @@ object Anon_AltBucketFieldsKey {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("permissions")(permissions)
+    val __obj = js.Dynamic.literal(bucket = bucket, permissions = permissions)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

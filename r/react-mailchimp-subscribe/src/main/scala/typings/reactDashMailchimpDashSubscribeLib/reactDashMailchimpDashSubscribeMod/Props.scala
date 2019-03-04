@@ -18,8 +18,7 @@ object Props {
     url: java.lang.String,
     render: js.Function1[/* hooks */ FormHooks[FormFields], reactLib.reactMod.ReactNs.ReactNode] = null
   ): Props[FormFields] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (render != null) __obj.updateDynamic("render")(render)
     __obj.asInstanceOf[Props[FormFields]]
   }

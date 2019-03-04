@@ -94,23 +94,8 @@ object GitQueryCommitsCriteria {
     toDate: java.lang.String,
     user: java.lang.String
   ): GitQueryCommitsCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$skip")($skip)
-    __obj.updateDynamic("$top")($top)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("compareVersion")(compareVersion)
-    __obj.updateDynamic("excludeDeletes")(excludeDeletes)
-    __obj.updateDynamic("fromCommitId")(fromCommitId)
-    __obj.updateDynamic("fromDate")(fromDate)
-    __obj.updateDynamic("historyMode")(historyMode)
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("includeWorkItems")(includeWorkItems)
-    __obj.updateDynamic("itemPath")(itemPath)
-    __obj.updateDynamic("itemVersion")(itemVersion)
-    __obj.updateDynamic("toCommitId")(toCommitId)
-    __obj.updateDynamic("toDate")(toDate)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal($skip = $skip, $top = $top, author = author, compareVersion = compareVersion, excludeDeletes = excludeDeletes, fromCommitId = fromCommitId, fromDate = fromDate, historyMode = historyMode, ids = ids, includeLinks = includeLinks, includeWorkItems = includeWorkItems, itemPath = itemPath, itemVersion = itemVersion, toCommitId = toCommitId, toDate = toDate, user = user)
+  
     __obj.asInstanceOf[GitQueryCommitsCriteria]
   }
 }

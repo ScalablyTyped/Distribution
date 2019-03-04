@@ -35,7 +35,8 @@ object IInventory {
     quantity: scala.Int | scala.Double = null,
     value: stripeLib.stripeLibStrings.in_stock | stripeLib.stripeLibStrings.limited | stripeLib.stripeLibStrings.out_of_stock = null
   ): IInventory = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IInventory]

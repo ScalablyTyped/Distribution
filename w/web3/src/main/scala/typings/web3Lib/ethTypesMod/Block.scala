@@ -36,26 +36,8 @@ object Block {
     transactions: js.Array[Transaction],
     uncles: js.Array[java.lang.String]
   ): Block = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("difficulty")(difficulty)
-    __obj.updateDynamic("extraData")(extraData)
-    __obj.updateDynamic("gasLimit")(gasLimit)
-    __obj.updateDynamic("gasUsed")(gasUsed)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("logsBloom")(logsBloom)
-    __obj.updateDynamic("miner")(miner)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("parentHash")(parentHash)
-    __obj.updateDynamic("receiptRoot")(receiptRoot)
-    __obj.updateDynamic("sha3Uncles")(sha3Uncles)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("stateRoot")(stateRoot)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("totalDifficulty")(totalDifficulty)
-    __obj.updateDynamic("transactionRoot")(transactionRoot)
-    __obj.updateDynamic("transactions")(transactions)
-    __obj.updateDynamic("uncles")(uncles)
+    val __obj = js.Dynamic.literal(difficulty = difficulty, extraData = extraData, gasLimit = gasLimit, gasUsed = gasUsed, hash = hash, logsBloom = logsBloom, miner = miner, nonce = nonce, number = number, parentHash = parentHash, receiptRoot = receiptRoot, sha3Uncles = sha3Uncles, size = size, stateRoot = stateRoot, timestamp = timestamp, totalDifficulty = totalDifficulty, transactionRoot = transactionRoot, transactions = transactions, uncles = uncles)
+  
     __obj.asInstanceOf[Block]
   }
 }

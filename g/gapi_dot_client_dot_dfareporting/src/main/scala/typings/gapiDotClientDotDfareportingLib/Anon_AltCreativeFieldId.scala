@@ -45,10 +45,7 @@ object Anon_AltCreativeFieldId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCreativeFieldId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creativeFieldId")(creativeFieldId)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(creativeFieldId = creativeFieldId, id = id, profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

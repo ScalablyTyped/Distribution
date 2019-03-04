@@ -24,9 +24,8 @@ object VolumeAnnotationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Volumeannotations]
     ]
   ): VolumeAnnotationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, list = list)
+  
     __obj.asInstanceOf[VolumeAnnotationsResource]
   }
 }

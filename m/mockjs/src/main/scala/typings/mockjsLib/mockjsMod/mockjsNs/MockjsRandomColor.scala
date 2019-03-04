@@ -29,12 +29,8 @@ object MockjsRandomColor {
     rgb: js.Function0[S],
     rgba: js.Function0[S]
   ): MockjsRandomColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("rgb")(rgb)
-    __obj.updateDynamic("rgba")(rgba)
+    val __obj = js.Dynamic.literal(color = color, hex = hex, hsl = hsl, rgb = rgb, rgba = rgba)
+  
     __obj.asInstanceOf[MockjsRandomColor]
   }
 }

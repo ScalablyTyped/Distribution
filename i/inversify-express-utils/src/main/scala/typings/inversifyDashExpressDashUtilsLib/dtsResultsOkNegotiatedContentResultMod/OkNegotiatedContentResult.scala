@@ -20,10 +20,8 @@ object OkNegotiatedContentResult {
       js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
     ]
   ): OkNegotiatedContentResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("executeAsync")(executeAsync)
+    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = executeAsync)
+  
     __obj.asInstanceOf[OkNegotiatedContentResult[T]]
   }
 }

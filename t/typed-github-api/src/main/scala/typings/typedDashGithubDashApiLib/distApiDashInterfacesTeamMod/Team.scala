@@ -30,16 +30,8 @@ object Team {
     slug: java.lang.String,
     url: java.lang.String
   ): Team = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("members_url")(members_url)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("permission")(permission)
-    __obj.updateDynamic("privacy")(privacy)
-    __obj.updateDynamic("repositories_url")(repositories_url)
-    __obj.updateDynamic("slug")(slug)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(description = description, id = id, members_url = members_url, name = name, permission = permission, privacy = privacy, repositories_url = repositories_url, slug = slug, url = url)
+  
     __obj.asInstanceOf[Team]
   }
 }

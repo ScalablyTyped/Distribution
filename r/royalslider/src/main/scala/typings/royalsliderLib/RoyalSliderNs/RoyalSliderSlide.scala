@@ -92,23 +92,8 @@ object RoyalSliderSlide {
     sizeReady: scala.Boolean,
     thumbnail: java.lang.String
   ): RoyalSliderSlide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendOnLoaded")(appendOnLoaded)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("contentAdded")(contentAdded)
-    __obj.updateDynamic("holder")(holder)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("isAdded")(isAdded)
-    __obj.updateDynamic("isAppended")(isAppended)
-    __obj.updateDynamic("isBig")(isBig)
-    __obj.updateDynamic("isLoaded")(isLoaded)
-    __obj.updateDynamic("isLoading")(isLoading)
-    __obj.updateDynamic("isRendered")(isRendered)
-    __obj.updateDynamic("loadedTriggered")(loadedTriggered)
-    __obj.updateDynamic("positionSet")(positionSet)
-    __obj.updateDynamic("sizeReady")(sizeReady)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(appendOnLoaded = appendOnLoaded, content = content, contentAdded = contentAdded, holder = holder, id = id, images = images, isAdded = isAdded, isAppended = isAppended, isBig = isBig, isLoaded = isLoaded, isLoading = isLoading, isRendered = isRendered, loadedTriggered = loadedTriggered, positionSet = positionSet, sizeReady = sizeReady, thumbnail = thumbnail)
+  
     __obj.asInstanceOf[RoyalSliderSlide]
   }
 }

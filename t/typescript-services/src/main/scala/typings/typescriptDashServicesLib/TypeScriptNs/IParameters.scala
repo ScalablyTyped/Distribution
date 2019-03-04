@@ -28,15 +28,8 @@ object IParameters {
     length: scala.Double,
     typeAt: js.Function1[scala.Double, AST]
   ): IParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast)
-    __obj.updateDynamic("astAt")(astAt)
-    __obj.updateDynamic("identifierAt")(identifierAt)
-    __obj.updateDynamic("initializerAt")(initializerAt)
-    __obj.updateDynamic("isOptionalAt")(isOptionalAt)
-    __obj.updateDynamic("lastParameterIsRest")(lastParameterIsRest)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("typeAt")(typeAt)
+    val __obj = js.Dynamic.literal(ast = ast, astAt = astAt, identifierAt = identifierAt, initializerAt = initializerAt, isOptionalAt = isOptionalAt, lastParameterIsRest = lastParameterIsRest, length = length, typeAt = typeAt)
+  
     __obj.asInstanceOf[IParameters]
   }
 }

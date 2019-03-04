@@ -21,9 +21,7 @@ object VisualObjectRepetition {
     selector: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.Selector,
     containerName: java.lang.String = null
   ): VisualObjectRepetition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(objects = objects, selector = selector)
     if (containerName != null) __obj.updateDynamic("containerName")(containerName)
     __obj.asInstanceOf[VisualObjectRepetition]
   }

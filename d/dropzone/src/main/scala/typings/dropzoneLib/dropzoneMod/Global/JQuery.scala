@@ -17,8 +17,8 @@ object JQuery {
       dropzoneLib.dropzoneMod.Dropzone
     ]
   ): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropzone")(dropzone)
+    val __obj = js.Dynamic.literal(dropzone = dropzone)
+  
     __obj.asInstanceOf[JQuery]
   }
 }

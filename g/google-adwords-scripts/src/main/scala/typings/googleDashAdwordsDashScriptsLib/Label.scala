@@ -38,19 +38,7 @@ object Label {
     setName: js.Function1[java.lang.String, scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adGroups")(adGroups)
-    __obj.updateDynamic("ads")(ads)
-    __obj.updateDynamic("campaigns")(campaigns)
-    __obj.updateDynamic("getColor")(getColor)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setColor")(setColor)
-    __obj.updateDynamic("setDescription")(setDescription)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(adGroups = adGroups, ads = ads, campaigns = campaigns, getColor = getColor, getDescription = getDescription, getId = getId, getName = getName, keywords = keywords, remove = remove, setColor = setColor, setDescription = setDescription, setName = setName)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[Label]
   }

@@ -72,19 +72,8 @@ object GetTransitGatewayResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpnEcmpSupport: java.lang.String
   ): GetTransitGatewayResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amazonSideAsn")(amazonSideAsn)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("associationDefaultRouteTableId")(associationDefaultRouteTableId)
-    __obj.updateDynamic("autoAcceptSharedAttachments")(autoAcceptSharedAttachments)
-    __obj.updateDynamic("defaultRouteTableAssociation")(defaultRouteTableAssociation)
-    __obj.updateDynamic("defaultRouteTablePropagation")(defaultRouteTablePropagation)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("dnsSupport")(dnsSupport)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("propagationDefaultRouteTableId")(propagationDefaultRouteTableId)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("vpnEcmpSupport")(vpnEcmpSupport)
+    val __obj = js.Dynamic.literal(amazonSideAsn = amazonSideAsn, arn = arn, associationDefaultRouteTableId = associationDefaultRouteTableId, autoAcceptSharedAttachments = autoAcceptSharedAttachments, defaultRouteTableAssociation = defaultRouteTableAssociation, defaultRouteTablePropagation = defaultRouteTablePropagation, description = description, dnsSupport = dnsSupport, ownerId = ownerId, propagationDefaultRouteTableId = propagationDefaultRouteTableId, tags = tags, vpnEcmpSupport = vpnEcmpSupport)
+  
     __obj.asInstanceOf[GetTransitGatewayResult]
   }
 }

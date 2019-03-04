@@ -32,12 +32,8 @@ object ITimedLockable {
     try_lock_until: js.Function1[stdLib.Date, js.Promise[scala.Boolean]],
     unlock: js.Function0[js.Promise[scala.Unit]]
   ): ITimedLockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("try_lock")(try_lock)
-    __obj.updateDynamic("try_lock_for")(try_lock_for)
-    __obj.updateDynamic("try_lock_until")(try_lock_until)
-    __obj.updateDynamic("unlock")(unlock)
+    val __obj = js.Dynamic.literal(lock = lock, try_lock = try_lock, try_lock_for = try_lock_for, try_lock_until = try_lock_until, unlock = unlock)
+  
     __obj.asInstanceOf[ITimedLockable]
   }
 }

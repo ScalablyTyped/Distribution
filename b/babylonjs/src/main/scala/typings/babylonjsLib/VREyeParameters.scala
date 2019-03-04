@@ -21,11 +21,8 @@ object VREyeParameters {
     renderHeight: scala.Double,
     renderWidth: scala.Double
   ): VREyeParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldOfView")(fieldOfView)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("renderHeight")(renderHeight)
-    __obj.updateDynamic("renderWidth")(renderWidth)
+    val __obj = js.Dynamic.literal(fieldOfView = fieldOfView, offset = offset, renderHeight = renderHeight, renderWidth = renderWidth)
+  
     __obj.asInstanceOf[VREyeParameters]
   }
 }

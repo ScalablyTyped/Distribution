@@ -40,11 +40,8 @@ object VolumeAttachmentStatus {
     attachmentMetadata: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     detachError: VolumeError
   ): VolumeAttachmentStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachError")(attachError)
-    __obj.updateDynamic("attached")(attached)
-    __obj.updateDynamic("attachmentMetadata")(attachmentMetadata)
-    __obj.updateDynamic("detachError")(detachError)
+    val __obj = js.Dynamic.literal(attachError = attachError, attached = attached, attachmentMetadata = attachmentMetadata, detachError = detachError)
+  
     __obj.asInstanceOf[VolumeAttachmentStatus]
   }
 }

@@ -64,15 +64,8 @@ object ICluster {
     getWeight: js.Function0[scala.Double],
     isCluster: js.Function0[scala.Boolean]
   ): ICluster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEachDataPoint")(forEachDataPoint)
-    __obj.updateDynamic("forEachEntry")(forEachEntry)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getMaxZoom")(getMaxZoom)
-    __obj.updateDynamic("getMinZoom")(getMinZoom)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("getWeight")(getWeight)
-    __obj.updateDynamic("isCluster")(isCluster)
+    val __obj = js.Dynamic.literal(forEachDataPoint = forEachDataPoint, forEachEntry = forEachEntry, getBounds = getBounds, getMaxZoom = getMaxZoom, getMinZoom = getMinZoom, getPosition = getPosition, getWeight = getWeight, isCluster = isCluster)
+  
     __obj.asInstanceOf[ICluster]
   }
 }

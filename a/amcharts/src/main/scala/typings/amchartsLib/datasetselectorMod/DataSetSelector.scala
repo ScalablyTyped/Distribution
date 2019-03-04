@@ -46,13 +46,8 @@ object DataSetSelector {
     selectText: java.lang.String,
     width: scala.Double
   ): DataSetSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comboBoxSelectText")(comboBoxSelectText)
-    __obj.updateDynamic("compareText")(compareText)
-    __obj.updateDynamic("listHeight")(listHeight)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("selectText")(selectText)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(comboBoxSelectText = comboBoxSelectText, compareText = compareText, listHeight = listHeight, position = position, selectText = selectText, width = width)
+  
     __obj.asInstanceOf[DataSetSelector]
   }
 }

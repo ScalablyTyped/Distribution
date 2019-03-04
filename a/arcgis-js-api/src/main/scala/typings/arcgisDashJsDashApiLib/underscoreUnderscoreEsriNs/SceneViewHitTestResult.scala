@@ -23,11 +23,8 @@ object SceneViewHitTestResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     results: js.Array[SceneViewHitTestResultResults]
   ): SceneViewHitTestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, results = results)
+  
     __obj.asInstanceOf[SceneViewHitTestResult]
   }
 }

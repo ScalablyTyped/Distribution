@@ -16,9 +16,8 @@ object Ord {
     compare: js.Function2[A, A, fpDashTsLib.libOrderingMod.Ordering],
     equals: js.Function2[A, A, scala.Boolean]
   ): Ord[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("equals")(equals)
+    val __obj = js.Dynamic.literal(compare = compare, equals = equals)
+  
     __obj.asInstanceOf[Ord[A]]
   }
 }

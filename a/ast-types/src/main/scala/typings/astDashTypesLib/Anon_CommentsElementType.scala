@@ -18,8 +18,7 @@ object Anon_CommentsElementType {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsElementType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elementType")(elementType)
+    val __obj = js.Dynamic.literal(elementType = elementType)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsElementType]

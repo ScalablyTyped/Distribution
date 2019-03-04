@@ -39,8 +39,7 @@ object Options {
     stale: js.UndefOr[scala.Boolean] = js.undefined,
     updateAgeOnGet: js.UndefOr[scala.Boolean] = js.undefined
   ): Options[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(load = load)
     if (dispose != null) __obj.updateDynamic("dispose")(dispose)
     if (length != null) __obj.updateDynamic("length")(length)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

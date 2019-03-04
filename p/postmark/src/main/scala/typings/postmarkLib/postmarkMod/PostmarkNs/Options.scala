@@ -31,10 +31,8 @@ object Options {
     requestHost: java.lang.String,
     ssl: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestFactory")(requestFactory)
-    __obj.updateDynamic("requestHost")(requestHost)
-    __obj.updateDynamic("ssl")(ssl)
+    val __obj = js.Dynamic.literal(requestFactory = requestFactory, requestHost = requestHost, ssl = ssl)
+  
     __obj.asInstanceOf[Options]
   }
 }

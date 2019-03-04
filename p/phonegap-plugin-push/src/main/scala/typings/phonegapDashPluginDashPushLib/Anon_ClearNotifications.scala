@@ -53,8 +53,7 @@ object Anon_ClearNotifications {
     topics: js.Array[java.lang.String] = null,
     vibrate: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ClearNotifications = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("senderID")(senderID)
+    val __obj = js.Dynamic.literal(senderID = senderID)
     if (!js.isUndefined(clearNotifications)) __obj.updateDynamic("clearNotifications")(clearNotifications)
     if (!js.isUndefined(forceShow)) __obj.updateDynamic("forceShow")(forceShow)
     if (icon != null) __obj.updateDynamic("icon")(icon)

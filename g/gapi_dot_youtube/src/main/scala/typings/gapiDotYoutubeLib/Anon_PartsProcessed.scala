@@ -23,10 +23,8 @@ trait Anon_PartsProcessed extends js.Object {
 object Anon_PartsProcessed {
   @scala.inline
   def apply(partsProcessed: scala.Double, partsTotal: scala.Double, timeLeftMs: scala.Double): Anon_PartsProcessed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partsProcessed")(partsProcessed)
-    __obj.updateDynamic("partsTotal")(partsTotal)
-    __obj.updateDynamic("timeLeftMs")(timeLeftMs)
+    val __obj = js.Dynamic.literal(partsProcessed = partsProcessed, partsTotal = partsTotal, timeLeftMs = timeLeftMs)
+  
     __obj.asInstanceOf[Anon_PartsProcessed]
   }
 }

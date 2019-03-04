@@ -22,8 +22,7 @@ object Anon_ClassName {
     style: js.Any = null,
     `type`: js.Any = null
   ): Anon_ClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (onPress != null) __obj.updateDynamic("onPress")(onPress)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -14,10 +14,8 @@ trait Coordinate extends js.Object {
 object Coordinate {
   @scala.inline
   def apply(canonical: CanonicalCoordinate, key: scala.Double, wrap: scala.Double): Coordinate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canonical")(canonical)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("wrap")(wrap)
+    val __obj = js.Dynamic.literal(canonical = canonical, key = key, wrap = wrap)
+  
     __obj.asInstanceOf[Coordinate]
   }
 }

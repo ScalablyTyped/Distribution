@@ -12,8 +12,8 @@ trait Anon_WorkspaceString extends js.Object {
 object Anon_WorkspaceString {
   @scala.inline
   def apply(workspace: java.lang.String): Anon_WorkspaceString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("workspace")(workspace)
+    val __obj = js.Dynamic.literal(workspace = workspace)
+  
     __obj.asInstanceOf[Anon_WorkspaceString]
   }
 }

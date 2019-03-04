@@ -14,8 +14,7 @@ trait Anon_Host extends js.Object {
 object Anon_Host {
   @scala.inline
   def apply(host: java.lang.String, redirectUri: java.lang.String = null, state: java.lang.String = null): Anon_Host = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(host = host)
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[Anon_Host]

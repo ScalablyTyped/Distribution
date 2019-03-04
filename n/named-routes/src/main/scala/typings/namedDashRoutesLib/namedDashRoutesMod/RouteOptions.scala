@@ -20,11 +20,8 @@ object RouteOptions {
     recursiveWildcard: scala.Boolean,
     wildcardInPairs: scala.Boolean
   ): RouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caseSensitive")(caseSensitive)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recursiveWildcard")(recursiveWildcard)
-    __obj.updateDynamic("wildcardInPairs")(wildcardInPairs)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, name = name, recursiveWildcard = recursiveWildcard, wildcardInPairs = wildcardInPairs)
+  
     __obj.asInstanceOf[RouteOptions]
   }
 }

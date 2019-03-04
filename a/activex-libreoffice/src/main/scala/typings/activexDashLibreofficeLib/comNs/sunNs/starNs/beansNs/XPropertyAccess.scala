@@ -37,13 +37,8 @@ object XPropertyAccess {
     release: js.Function0[scala.Unit],
     setPropertyValues: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[PropertyValue], scala.Unit]
   ): XPropertyAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[XPropertyAccess]
   }
 }

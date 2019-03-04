@@ -33,10 +33,8 @@ object Variable {
     termType: rdfDashJsLib.rdfDashJsLibStrings.Variable,
     value: java.lang.String
   ): Variable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("termType")(termType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+  
     __obj.asInstanceOf[Variable]
   }
 }

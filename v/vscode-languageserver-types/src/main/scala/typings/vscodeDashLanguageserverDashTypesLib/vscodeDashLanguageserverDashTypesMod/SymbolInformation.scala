@@ -48,10 +48,7 @@ object SymbolInformation {
     containerName: java.lang.String = null,
     deprecated: js.UndefOr[scala.Boolean] = js.undefined
   ): SymbolInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, location = location, name = name)
     if (containerName != null) __obj.updateDynamic("containerName")(containerName)
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
     __obj.asInstanceOf[SymbolInformation]

@@ -20,10 +20,7 @@ object ImpersonateSettingOptions {
     token: java.lang.String,
     clientId: java.lang.String = null
   ): ImpersonateSettingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("impersonator_id")(impersonator_id)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(impersonator_id = impersonator_id, protocol = protocol, token = token)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     __obj.asInstanceOf[ImpersonateSettingOptions]
   }

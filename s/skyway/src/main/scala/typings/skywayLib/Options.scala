@@ -22,8 +22,7 @@ object Options {
     debug: scala.Int | scala.Double = null,
     turn: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (config != null) __obj.updateDynamic("config")(config)
     if (credential != null) __obj.updateDynamic("credential")(credential)
     if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])

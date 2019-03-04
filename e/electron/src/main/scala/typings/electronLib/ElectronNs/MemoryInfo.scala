@@ -41,12 +41,8 @@ object MemoryInfo {
     sharedBytes: scala.Double,
     workingSetSize: scala.Double
   ): MemoryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("peakWorkingSetSize")(peakWorkingSetSize)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("privateBytes")(privateBytes)
-    __obj.updateDynamic("sharedBytes")(sharedBytes)
-    __obj.updateDynamic("workingSetSize")(workingSetSize)
+    val __obj = js.Dynamic.literal(peakWorkingSetSize = peakWorkingSetSize, pid = pid, privateBytes = privateBytes, sharedBytes = sharedBytes, workingSetSize = workingSetSize)
+  
     __obj.asInstanceOf[MemoryInfo]
   }
 }

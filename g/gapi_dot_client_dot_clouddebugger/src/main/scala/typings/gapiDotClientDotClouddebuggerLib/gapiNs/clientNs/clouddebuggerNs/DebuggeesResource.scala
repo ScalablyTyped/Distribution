@@ -37,10 +37,8 @@ object DebuggeesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
     ]
   ): DebuggeesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakpoints")(breakpoints)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(breakpoints = breakpoints, list = list, register = register)
+  
     __obj.asInstanceOf[DebuggeesResource]
   }
 }

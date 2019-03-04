@@ -32,13 +32,8 @@ object DialogProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): DialogProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createDialog")(createDialog)
-    __obj.updateDynamic("createWithModel")(createWithModel)
-    __obj.updateDynamic("createWithModelAndScripting")(createWithModelAndScripting)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createDialog = createDialog, createWithModel = createWithModel, createWithModelAndScripting = createWithModelAndScripting, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[DialogProvider]
   }
 }

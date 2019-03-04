@@ -30,11 +30,8 @@ object IGeoDataPrimitive {
     Shape: java.lang.String,
     SourceID: java.lang.String
   ): IGeoDataPrimitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NumPoints")(NumPoints)
-    __obj.updateDynamic("PrimitiveID")(PrimitiveID)
-    __obj.updateDynamic("Shape")(Shape)
-    __obj.updateDynamic("SourceID")(SourceID)
+    val __obj = js.Dynamic.literal(NumPoints = NumPoints, PrimitiveID = PrimitiveID, Shape = Shape, SourceID = SourceID)
+  
     __obj.asInstanceOf[IGeoDataPrimitive]
   }
 }

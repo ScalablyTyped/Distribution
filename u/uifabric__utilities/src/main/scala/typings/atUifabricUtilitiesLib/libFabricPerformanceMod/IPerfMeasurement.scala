@@ -14,10 +14,8 @@ trait IPerfMeasurement extends js.Object {
 object IPerfMeasurement {
   @scala.inline
   def apply(all: js.Array[IPerfData], count: scala.Double, totalDuration: scala.Double): IPerfMeasurement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("totalDuration")(totalDuration)
+    val __obj = js.Dynamic.literal(all = all, count = count, totalDuration = totalDuration)
+  
     __obj.asInstanceOf[IPerfMeasurement]
   }
 }

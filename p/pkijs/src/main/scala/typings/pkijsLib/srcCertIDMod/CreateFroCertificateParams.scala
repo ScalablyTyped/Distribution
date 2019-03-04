@@ -13,9 +13,8 @@ trait CreateFroCertificateParams extends js.Object {
 object CreateFroCertificateParams {
   @scala.inline
   def apply(hashAlgorithm: java.lang.String, issuerCertificate: pkijsLib.srcCertificateMod.default): CreateFroCertificateParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashAlgorithm")(hashAlgorithm)
-    __obj.updateDynamic("issuerCertificate")(issuerCertificate)
+    val __obj = js.Dynamic.literal(hashAlgorithm = hashAlgorithm, issuerCertificate = issuerCertificate)
+  
     __obj.asInstanceOf[CreateFroCertificateParams]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_B extends js.Object {
 object Anon_B {
   @scala.inline
   def apply(removeEventListener: js.Function3[java.lang.String, js.Function, scala.Boolean, scala.Unit]): Anon_B = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[Anon_B]
   }
 }

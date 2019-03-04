@@ -79,31 +79,8 @@ object ASPxClientSpellChecker {
     WordChanged: ASPxClientEvent[ASPxClientWordChangedEventHandler[ASPxClientSpellChecker]],
     name: java.lang.String
   ): ASPxClientSpellChecker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("AfterCheck")(AfterCheck)
-    __obj.updateDynamic("BeforeCheck")(BeforeCheck)
-    __obj.updateDynamic("Check")(Check)
-    __obj.updateDynamic("CheckCompleteFormShowing")(CheckCompleteFormShowing)
-    __obj.updateDynamic("CheckElement")(CheckElement)
-    __obj.updateDynamic("CheckElementById")(CheckElementById)
-    __obj.updateDynamic("CheckElementsInContainer")(CheckElementsInContainer)
-    __obj.updateDynamic("CheckElementsInContainerById")(CheckElementsInContainerById)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("WordChanged")(WordChanged)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, AfterCheck = AfterCheck, BeforeCheck = BeforeCheck, Check = Check, CheckCompleteFormShowing = CheckCompleteFormShowing, CheckElement = CheckElement, CheckElementById = CheckElementById, CheckElementsInContainer = CheckElementsInContainer, CheckElementsInContainerById = CheckElementsInContainerById, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetVisible = SetVisible, SetWidth = SetWidth, WordChanged = WordChanged, name = name)
+  
     __obj.asInstanceOf[ASPxClientSpellChecker]
   }
 }

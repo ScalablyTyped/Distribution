@@ -25,14 +25,8 @@ object EventTask {
     data: TaskData = null,
     scheduleFn: js.Function1[/* task */ Task, scala.Unit] = null
   ): EventTask = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("cancelScheduleRequest")(cancelScheduleRequest)
-    __obj.updateDynamic("invoke")(invoke)
-    __obj.updateDynamic("runCount")(runCount)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(callback = callback, cancelScheduleRequest = cancelScheduleRequest, invoke = invoke, runCount = runCount, source = source, state = state, zone = zone)
+    __obj.updateDynamic("type")(`type`)
     if (cancelFn != null) __obj.updateDynamic("cancelFn")(cancelFn)
     if (data != null) __obj.updateDynamic("data")(data)
     if (scheduleFn != null) __obj.updateDynamic("scheduleFn")(scheduleFn)

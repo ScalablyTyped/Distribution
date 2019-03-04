@@ -218,24 +218,7 @@ object IDialogService {
     ysodDialog: js.Function1[js.Any, scala.Unit],
     dialogs: js.Array[_] = null
   ): IDialogService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("closeAll")(closeAll)
-    __obj.updateDynamic("closeDialog")(closeDialog)
-    __obj.updateDynamic("contentPicker")(contentPicker)
-    __obj.updateDynamic("embedDialog")(embedDialog)
-    __obj.updateDynamic("iconPicker")(iconPicker)
-    __obj.updateDynamic("linkPicker")(linkPicker)
-    __obj.updateDynamic("macroPicker")(macroPicker)
-    __obj.updateDynamic("mediaPicker")(mediaPicker)
-    __obj.updateDynamic("memberGroupPicker")(memberGroupPicker)
-    __obj.updateDynamic("memberPicker")(memberPicker)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("openDialog")(openDialog)
-    __obj.updateDynamic("propertyDialog")(propertyDialog)
-    __obj.updateDynamic("removeAllDialogs")(removeAllDialogs)
-    __obj.updateDynamic("treePicker")(treePicker)
-    __obj.updateDynamic("ysodDialog")(ysodDialog)
+    val __obj = js.Dynamic.literal(close = close, closeAll = closeAll, closeDialog = closeDialog, contentPicker = contentPicker, embedDialog = embedDialog, iconPicker = iconPicker, linkPicker = linkPicker, macroPicker = macroPicker, mediaPicker = mediaPicker, memberGroupPicker = memberGroupPicker, memberPicker = memberPicker, open = open, openDialog = openDialog, propertyDialog = propertyDialog, removeAllDialogs = removeAllDialogs, treePicker = treePicker, ysodDialog = ysodDialog)
     if (dialogs != null) __obj.updateDynamic("dialogs")(dialogs)
     __obj.asInstanceOf[IDialogService]
   }

@@ -30,16 +30,8 @@ object Anon_Day {
     week: java.lang.String,
     year: java.lang.String
   ): Anon_Day = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextYear")(nextYear)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("prevYear")(prevYear)
-    __obj.updateDynamic("today")(today)
-    __obj.updateDynamic("week")(week)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(day = day, month = month, next = next, nextYear = nextYear, prev = prev, prevYear = prevYear, today = today, week = week, year = year)
+  
     __obj.asInstanceOf[Anon_Day]
   }
 }

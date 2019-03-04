@@ -14,9 +14,7 @@ trait ReportHeapSnapshotProgressEventDataType extends js.Object {
 object ReportHeapSnapshotProgressEventDataType {
   @scala.inline
   def apply(done: scala.Double, total: scala.Double, finished: js.UndefOr[scala.Boolean] = js.undefined): ReportHeapSnapshotProgressEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(done = done, total = total)
     if (!js.isUndefined(finished)) __obj.updateDynamic("finished")(finished)
     __obj.asInstanceOf[ReportHeapSnapshotProgressEventDataType]
   }

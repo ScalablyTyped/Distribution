@@ -13,10 +13,8 @@ trait DataTypeAbstractNumber[T] extends DataTypeAbstract {
 object DataTypeAbstractNumber {
   @scala.inline
   def apply[T](UNSIGNED: T, ZEROFILL: T, dialectTypes: java.lang.String): DataTypeAbstractNumber[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UNSIGNED")(UNSIGNED.asInstanceOf[js.Any])
-    __obj.updateDynamic("ZEROFILL")(ZEROFILL.asInstanceOf[js.Any])
-    __obj.updateDynamic("dialectTypes")(dialectTypes)
+    val __obj = js.Dynamic.literal(UNSIGNED = UNSIGNED.asInstanceOf[js.Any], ZEROFILL = ZEROFILL.asInstanceOf[js.Any], dialectTypes = dialectTypes)
+  
     __obj.asInstanceOf[DataTypeAbstractNumber[T]]
   }
 }

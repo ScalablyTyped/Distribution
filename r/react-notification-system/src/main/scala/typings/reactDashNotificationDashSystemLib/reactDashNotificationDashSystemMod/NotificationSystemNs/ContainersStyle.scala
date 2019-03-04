@@ -26,8 +26,7 @@ object ContainersStyle {
     tl: reactLib.reactMod.ReactNs.CSSProperties = null,
     tr: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ContainersStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultStyle")(DefaultStyle)
+    val __obj = js.Dynamic.literal(DefaultStyle = DefaultStyle)
     if (bc != null) __obj.updateDynamic("bc")(bc)
     if (bl != null) __obj.updateDynamic("bl")(bl)
     if (br != null) __obj.updateDynamic("br")(br)

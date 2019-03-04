@@ -46,15 +46,8 @@ object TransitDetails {
     line: TransitLine,
     num_stops: scala.Double
   ): TransitDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrival_stop")(arrival_stop)
-    __obj.updateDynamic("arrival_time")(arrival_time)
-    __obj.updateDynamic("departure_stop")(departure_stop)
-    __obj.updateDynamic("departure_time")(departure_time)
-    __obj.updateDynamic("headsign")(headsign)
-    __obj.updateDynamic("headway")(headway)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("num_stops")(num_stops)
+    val __obj = js.Dynamic.literal(arrival_stop = arrival_stop, arrival_time = arrival_time, departure_stop = departure_stop, departure_time = departure_time, headsign = headsign, headway = headway, line = line, num_stops = num_stops)
+  
     __obj.asInstanceOf[TransitDetails]
   }
 }

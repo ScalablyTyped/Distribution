@@ -57,16 +57,8 @@ object GetVpcDhcpOptionsResult {
     ownerId: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetVpcDhcpOptionsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId)
-    __obj.updateDynamic("domainName")(domainName)
-    __obj.updateDynamic("domainNameServers")(domainNameServers)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("netbiosNameServers")(netbiosNameServers)
-    __obj.updateDynamic("netbiosNodeType")(netbiosNodeType)
-    __obj.updateDynamic("ntpServers")(ntpServers)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(dhcpOptionsId = dhcpOptionsId, domainName = domainName, domainNameServers = domainNameServers, id = id, netbiosNameServers = netbiosNameServers, netbiosNodeType = netbiosNodeType, ntpServers = ntpServers, ownerId = ownerId, tags = tags)
+  
     __obj.asInstanceOf[GetVpcDhcpOptionsResult]
   }
 }

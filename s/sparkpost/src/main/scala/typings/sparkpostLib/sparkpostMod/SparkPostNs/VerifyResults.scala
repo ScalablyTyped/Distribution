@@ -22,15 +22,7 @@ object VerifyResults {
     spf_status: sparkpostLib.sparkpostLibStrings.valid | sparkpostLib.sparkpostLibStrings.invalid | sparkpostLib.sparkpostLibStrings.unverified | sparkpostLib.sparkpostLibStrings.pending,
     dns: sparkpostLib.Anon_Dkimrecord = null
   ): VerifyResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abuse_at_status")(abuse_at_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("cname_status")(cname_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("compliance_status")(compliance_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("dkim_status")(dkim_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("mx_status")(mx_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("ownership_verified")(ownership_verified)
-    __obj.updateDynamic("postmaster_at_status")(postmaster_at_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("spf_status")(spf_status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(abuse_at_status = abuse_at_status.asInstanceOf[js.Any], cname_status = cname_status.asInstanceOf[js.Any], compliance_status = compliance_status.asInstanceOf[js.Any], dkim_status = dkim_status.asInstanceOf[js.Any], mx_status = mx_status.asInstanceOf[js.Any], ownership_verified = ownership_verified, postmaster_at_status = postmaster_at_status.asInstanceOf[js.Any], spf_status = spf_status.asInstanceOf[js.Any])
     if (dns != null) __obj.updateDynamic("dns")(dns)
     __obj.asInstanceOf[VerifyResults]
   }

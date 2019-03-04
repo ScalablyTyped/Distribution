@@ -36,14 +36,7 @@ object APIGatewayProxyEvent {
     queryStringParameters: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     stageVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): APIGatewayProxyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpMethod")(httpMethod)
-    __obj.updateDynamic("isBase64Encoded")(isBase64Encoded)
-    __obj.updateDynamic("multiValueHeaders")(multiValueHeaders)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("requestContext")(requestContext)
-    __obj.updateDynamic("resource")(resource)
+    val __obj = js.Dynamic.literal(headers = headers, httpMethod = httpMethod, isBase64Encoded = isBase64Encoded, multiValueHeaders = multiValueHeaders, path = path, requestContext = requestContext, resource = resource)
     if (body != null) __obj.updateDynamic("body")(body)
     if (multiValueQueryStringParameters != null) __obj.updateDynamic("multiValueQueryStringParameters")(multiValueQueryStringParameters)
     if (pathParameters != null) __obj.updateDynamic("pathParameters")(pathParameters)

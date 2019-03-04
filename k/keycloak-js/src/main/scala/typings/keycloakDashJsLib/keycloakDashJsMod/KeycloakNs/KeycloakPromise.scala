@@ -22,9 +22,8 @@ object KeycloakPromise {
     error: js.Function1[KeycloakPromiseCallback[TError], KeycloakPromise[TSuccess, TError]],
     success: js.Function1[KeycloakPromiseCallback[TSuccess], KeycloakPromise[TSuccess, TError]]
   ): KeycloakPromise[TSuccess, TError] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(error = error, success = success)
+  
     __obj.asInstanceOf[KeycloakPromise[TSuccess, TError]]
   }
 }

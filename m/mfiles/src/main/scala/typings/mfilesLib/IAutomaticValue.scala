@@ -24,13 +24,8 @@ object IAutomaticValue {
     CalculationOrderNumber: scala.Double,
     Clone: js.Function0[IAutomaticValue]
   ): IAutomaticValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANSIncrement")(ANSIncrement)
-    __obj.updateDynamic("ANVCode")(ANVCode)
-    __obj.updateDynamic("CVSExpression")(CVSExpression)
-    __obj.updateDynamic("CVVCode")(CVVCode)
-    __obj.updateDynamic("CalculationOrderNumber")(CalculationOrderNumber)
-    __obj.updateDynamic("Clone")(Clone)
+    val __obj = js.Dynamic.literal(ANSIncrement = ANSIncrement, ANVCode = ANVCode, CVSExpression = CVSExpression, CVVCode = CVVCode, CalculationOrderNumber = CalculationOrderNumber, Clone = Clone)
+  
     __obj.asInstanceOf[IAutomaticValue]
   }
 }

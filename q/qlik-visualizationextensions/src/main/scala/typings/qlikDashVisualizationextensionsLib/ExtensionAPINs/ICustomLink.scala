@@ -20,10 +20,8 @@ object ICustomLink {
     `type`: java.lang.String,
     url: java.lang.String
   ): ICustomLink = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(component = component, label = label, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomLink]
   }
 }

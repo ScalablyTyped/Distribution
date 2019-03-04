@@ -14,10 +14,8 @@ trait BarcodeScanResult extends js.Object {
 object BarcodeScanResult {
   @scala.inline
   def apply(cancelled: scala.Boolean, format: java.lang.String, text: java.lang.String): BarcodeScanResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelled")(cancelled)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(cancelled = cancelled, format = format, text = text)
+  
     __obj.asInstanceOf[BarcodeScanResult]
   }
 }

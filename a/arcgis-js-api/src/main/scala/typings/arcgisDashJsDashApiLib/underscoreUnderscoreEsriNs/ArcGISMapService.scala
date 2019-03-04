@@ -63,14 +63,8 @@ object ArcGISMapService {
     token: java.lang.String,
     version: scala.Double
   ): ArcGISMapService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("copyright")(copyright)
-    __obj.updateDynamic("fullExtent")(fullExtent)
-    __obj.updateDynamic("legendEnabled")(legendEnabled)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("token")(token)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, copyright = copyright, fullExtent = fullExtent, legendEnabled = legendEnabled, spatialReference = spatialReference, token = token, version = version)
+  
     __obj.asInstanceOf[ArcGISMapService]
   }
 }

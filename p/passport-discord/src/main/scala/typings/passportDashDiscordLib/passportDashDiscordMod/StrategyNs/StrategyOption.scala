@@ -20,10 +20,7 @@ object StrategyOption {
     clientSecret: java.lang.String,
     scope: js.Array[java.lang.String] = null
   ): StrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[StrategyOption]
   }

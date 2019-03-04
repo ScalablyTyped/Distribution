@@ -37,8 +37,7 @@ object TwitchExtFeatures {
       scala.Unit
     ]
   ): TwitchExtFeatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isChatEnabled")(isChatEnabled)
+    val __obj = js.Dynamic.literal(isChatEnabled = isChatEnabled)
     __obj.updateDynamic("onChanged")(onChanged_isChatEnabled)
     __obj.asInstanceOf[TwitchExtFeatures]
   }

@@ -20,11 +20,8 @@ object Anon_EnvVars {
     taskArgs: js.Array[java.lang.String],
     taskNames: js.Array[java.lang.String]
   ): Anon_EnvVars = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("envVars")(envVars)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("taskArgs")(taskArgs)
-    __obj.updateDynamic("taskNames")(taskNames)
+    val __obj = js.Dynamic.literal(envVars = envVars, opts = opts, taskArgs = taskArgs, taskNames = taskNames)
+  
     __obj.asInstanceOf[Anon_EnvVars]
   }
 }

@@ -91,9 +91,7 @@ object CrawlerArgs {
     securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tablePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): CrawlerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     if (classifiers != null) __obj.updateDynamic("classifiers")(classifiers.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

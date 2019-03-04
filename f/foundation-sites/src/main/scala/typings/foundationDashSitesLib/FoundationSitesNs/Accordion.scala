@@ -21,11 +21,8 @@ object Accordion {
     toggle: js.Function1[foundationDashSitesLib.JQuery, scala.Unit],
     up: js.Function1[foundationDashSitesLib.JQuery, scala.Unit]
   ): Accordion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("down")(down)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("up")(up)
+    val __obj = js.Dynamic.literal(destroy = destroy, down = down, toggle = toggle, up = up)
+  
     __obj.asInstanceOf[Accordion]
   }
 }

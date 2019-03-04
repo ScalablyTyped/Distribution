@@ -14,8 +14,8 @@ object Anon_FieldToMatchesAnonDataTypeInput {
   def apply(
     fieldToMatches: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_DataTypeInput]]]
   ): Anon_FieldToMatchesAnonDataTypeInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldToMatches")(fieldToMatches.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fieldToMatches = fieldToMatches.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FieldToMatchesAnonDataTypeInput]
   }
 }

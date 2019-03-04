@@ -12,8 +12,8 @@ trait Anon_Client extends js.Object {
 object Anon_Client {
   @scala.inline
   def apply(clientNs: Anon_ArgsCancel): Anon_Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientNs")(clientNs)
+    val __obj = js.Dynamic.literal(clientNs = clientNs)
+  
     __obj.asInstanceOf[Anon_Client]
   }
 }

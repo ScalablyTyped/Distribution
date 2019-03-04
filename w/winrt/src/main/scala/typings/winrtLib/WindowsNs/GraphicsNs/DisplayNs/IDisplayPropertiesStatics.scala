@@ -38,19 +38,8 @@ object IDisplayPropertiesStatics {
     resolutionScale: ResolutionScale,
     stereoEnabled: scala.Boolean
   ): IDisplayPropertiesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoRotationPreferences")(autoRotationPreferences)
-    __obj.updateDynamic("currentOrientation")(currentOrientation)
-    __obj.updateDynamic("getColorProfileAsync")(getColorProfileAsync)
-    __obj.updateDynamic("logicalDpi")(logicalDpi)
-    __obj.updateDynamic("nativeOrientation")(nativeOrientation)
-    __obj.updateDynamic("oncolorprofilechanged")(oncolorprofilechanged)
-    __obj.updateDynamic("ondisplaycontentsinvalidated")(ondisplaycontentsinvalidated)
-    __obj.updateDynamic("onlogicaldpichanged")(onlogicaldpichanged)
-    __obj.updateDynamic("onorientationchanged")(onorientationchanged)
-    __obj.updateDynamic("onstereoenabledchanged")(onstereoenabledchanged)
-    __obj.updateDynamic("resolutionScale")(resolutionScale)
-    __obj.updateDynamic("stereoEnabled")(stereoEnabled)
+    val __obj = js.Dynamic.literal(autoRotationPreferences = autoRotationPreferences, currentOrientation = currentOrientation, getColorProfileAsync = getColorProfileAsync, logicalDpi = logicalDpi, nativeOrientation = nativeOrientation, oncolorprofilechanged = oncolorprofilechanged, ondisplaycontentsinvalidated = ondisplaycontentsinvalidated, onlogicaldpichanged = onlogicaldpichanged, onorientationchanged = onorientationchanged, onstereoenabledchanged = onstereoenabledchanged, resolutionScale = resolutionScale, stereoEnabled = stereoEnabled)
+  
     __obj.asInstanceOf[IDisplayPropertiesStatics]
   }
 }

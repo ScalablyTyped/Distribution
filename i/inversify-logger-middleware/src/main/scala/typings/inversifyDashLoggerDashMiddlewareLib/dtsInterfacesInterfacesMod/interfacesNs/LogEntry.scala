@@ -28,15 +28,8 @@ object LogEntry {
     serviceIdentifier: js.Any,
     time: java.lang.String
   ): LogEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("exception")(exception)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("multiInject")(multiInject)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("rootRequest")(rootRequest)
-    __obj.updateDynamic("serviceIdentifier")(serviceIdentifier)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(error = error, exception = exception, guid = guid, multiInject = multiInject, results = results, rootRequest = rootRequest, serviceIdentifier = serviceIdentifier, time = time)
+  
     __obj.asInstanceOf[LogEntry]
   }
 }

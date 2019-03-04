@@ -12,8 +12,8 @@ trait UI extends js.Object {
 object UI {
   @scala.inline
   def apply(fancytree: jqueryDotFancytreeLib.FancytreeNs.FancytreeStatic): UI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fancytree")(fancytree)
+    val __obj = js.Dynamic.literal(fancytree = fancytree)
+  
     __obj.asInstanceOf[UI]
   }
 }

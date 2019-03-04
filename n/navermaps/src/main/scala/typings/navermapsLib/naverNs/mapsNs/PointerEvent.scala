@@ -16,12 +16,8 @@ trait PointerEvent extends js.Object {
 object PointerEvent {
   @scala.inline
   def apply(coord: Coord, feature: Feature, offset: Point, point: Point, pointerEvent: DOMEvent): PointerEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coord")(coord)
-    __obj.updateDynamic("feature")(feature)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("pointerEvent")(pointerEvent)
+    val __obj = js.Dynamic.literal(coord = coord, feature = feature, offset = offset, point = point, pointerEvent = pointerEvent)
+  
     __obj.asInstanceOf[PointerEvent]
   }
 }

@@ -26,14 +26,8 @@ object IGeographicRegion {
     displayName: java.lang.String,
     nativeName: java.lang.String
   ): IGeographicRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("codeThreeDigit")(codeThreeDigit)
-    __obj.updateDynamic("codeThreeLetter")(codeThreeLetter)
-    __obj.updateDynamic("codeTwoLetter")(codeTwoLetter)
-    __obj.updateDynamic("currenciesInUse")(currenciesInUse)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("nativeName")(nativeName)
+    val __obj = js.Dynamic.literal(code = code, codeThreeDigit = codeThreeDigit, codeThreeLetter = codeThreeLetter, codeTwoLetter = codeTwoLetter, currenciesInUse = currenciesInUse, displayName = displayName, nativeName = nativeName)
+  
     __obj.asInstanceOf[IGeographicRegion]
   }
 }

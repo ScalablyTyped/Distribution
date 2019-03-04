@@ -23,8 +23,7 @@ object Anon_BrowserstyleDefaulticonDefaultpanel {
     default_title: java.lang.String = null,
     open_at_install: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BrowserstyleDefaulticonDefaultpanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default_panel")(default_panel)
+    val __obj = js.Dynamic.literal(default_panel = default_panel)
     if (!js.isUndefined(browser_style)) __obj.updateDynamic("browser_style")(browser_style)
     if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon.asInstanceOf[js.Any])
     if (default_title != null) __obj.updateDynamic("default_title")(default_title)

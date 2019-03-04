@@ -37,10 +37,8 @@ object PodAffinityTerm {
     namespaces: js.Array[java.lang.String],
     topologyKey: java.lang.String
   ): PodAffinityTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelSelector")(labelSelector)
-    __obj.updateDynamic("namespaces")(namespaces)
-    __obj.updateDynamic("topologyKey")(topologyKey)
+    val __obj = js.Dynamic.literal(labelSelector = labelSelector, namespaces = namespaces, topologyKey = topologyKey)
+  
     __obj.asInstanceOf[PodAffinityTerm]
   }
 }

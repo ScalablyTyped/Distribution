@@ -27,11 +27,8 @@ trait BuildMetric extends js.Object {
 object BuildMetric {
   @scala.inline
   def apply(date: stdLib.Date, intValue: scala.Double, name: java.lang.String, scope: java.lang.String): BuildMetric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("intValue")(intValue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(date = date, intValue = intValue, name = name, scope = scope)
+  
     __obj.asInstanceOf[BuildMetric]
   }
 }

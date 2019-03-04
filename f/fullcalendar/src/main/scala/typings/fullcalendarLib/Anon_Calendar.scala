@@ -18,10 +18,8 @@ object Anon_Calendar {
     registerClass: js.Function1[js.Any, scala.Unit],
     sourceClasses: js.Array[_]
   ): Anon_Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("registerClass")(registerClass)
-    __obj.updateDynamic("sourceClasses")(sourceClasses)
+    val __obj = js.Dynamic.literal(parse = parse, registerClass = registerClass, sourceClasses = sourceClasses)
+  
     __obj.asInstanceOf[Anon_Calendar]
   }
 }

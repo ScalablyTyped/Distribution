@@ -21,8 +21,7 @@ trait SourcesOptions extends js.Object {
 object SourcesOptions {
   @scala.inline
   def apply(types: js.Array[java.lang.String], thumbnailSize: Size = null): SourcesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(types = types)
     if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize)
     __obj.asInstanceOf[SourcesOptions]
   }

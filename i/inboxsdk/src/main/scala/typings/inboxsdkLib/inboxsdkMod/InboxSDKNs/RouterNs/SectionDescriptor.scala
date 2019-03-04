@@ -32,8 +32,7 @@ object SectionDescriptor {
     tableRows: js.Array[RowDescriptor] = null,
     titleLinkText: java.lang.String = null
   ): SectionDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement)
     if (footerLinkText != null) __obj.updateDynamic("footerLinkText")(footerLinkText)
     if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)

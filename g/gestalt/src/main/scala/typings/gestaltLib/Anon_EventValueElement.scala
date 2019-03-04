@@ -16,9 +16,8 @@ object Anon_EventValueElement {
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.reactMod.ReactNs.FocusEvent[reactLib.Element], reactLib.Event],
     value: java.lang.String
   ): Anon_EventValueElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(event = event, value = value)
+  
     __obj.asInstanceOf[Anon_EventValueElement]
   }
 }

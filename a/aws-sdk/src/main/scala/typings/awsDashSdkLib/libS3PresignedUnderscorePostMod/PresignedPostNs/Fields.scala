@@ -37,8 +37,8 @@ object Fields {
     */
   /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Fields = {
-    val __obj = js.Dynamic.literal(`X-Amz-Signature` = `X-Amz-Signature`)
-    __obj.updateDynamic("Policy")(Policy)
+    val __obj = js.Dynamic.literal(Policy = Policy)
+    __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Fields]
   }

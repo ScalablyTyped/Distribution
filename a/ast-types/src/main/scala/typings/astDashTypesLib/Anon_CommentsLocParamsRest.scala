@@ -24,9 +24,7 @@ object Anon_CommentsLocParamsRest {
     rest: astDashTypesLib.genKindsMod.FunctionTypeParamKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): Anon_CommentsLocParamsRest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("returnType")(returnType)
+    val __obj = js.Dynamic.literal(params = params, returnType = returnType)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (rest != null) __obj.updateDynamic("rest")(rest)

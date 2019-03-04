@@ -13,8 +13,8 @@ trait IStyleUrl extends js.Object {
 object IStyleUrl {
   @scala.inline
   def apply(styleURLs: js.Array[java.lang.String]): IStyleUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styleURLs")(styleURLs)
+    val __obj = js.Dynamic.literal(styleURLs = styleURLs)
+  
     __obj.asInstanceOf[IStyleUrl]
   }
 }

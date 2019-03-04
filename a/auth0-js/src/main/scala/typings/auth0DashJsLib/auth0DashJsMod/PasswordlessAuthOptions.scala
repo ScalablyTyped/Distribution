@@ -20,11 +20,8 @@ object PasswordlessAuthOptions {
     phoneNumber: java.lang.String,
     verificationCode: java.lang.String
   ): PasswordlessAuthOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("verificationCode")(verificationCode)
+    val __obj = js.Dynamic.literal(connection = connection, email = email, phoneNumber = phoneNumber, verificationCode = verificationCode)
+  
     __obj.asInstanceOf[PasswordlessAuthOptions]
   }
 }

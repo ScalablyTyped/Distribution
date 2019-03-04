@@ -46,11 +46,7 @@ object Anon_FrameIdProcessId {
     transitionQualifiers: js.Array[firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionQualifier] = null,
     transitionType: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType = null
   ): Anon_FrameIdProcessId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId, timeStamp = timeStamp, url = url)
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     if (transitionQualifiers != null) __obj.updateDynamic("transitionQualifiers")(transitionQualifiers)
     if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType)

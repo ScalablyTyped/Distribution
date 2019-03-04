@@ -39,27 +39,8 @@ object ContextMenu {
     pluginsInitializedCallback: js.Array[_],
     removeHook: js.Function1[java.lang.String, scala.Unit]
   ): ContextMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("commandExecutor")(commandExecutor)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("executeCommand")(executeCommand)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("itemsFactory")(itemsFactory.asInstanceOf[js.Any])
-    __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, close = close, commandExecutor = commandExecutor, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, executeCommand = executeCommand, init = init, initialized = initialized, isPluginsReady = isPluginsReady, itemsFactory = itemsFactory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], open = open, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook)
+  
     __obj.asInstanceOf[ContextMenu]
   }
 }

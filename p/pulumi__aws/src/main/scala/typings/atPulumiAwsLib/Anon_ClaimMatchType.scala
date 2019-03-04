@@ -20,11 +20,8 @@ object Anon_ClaimMatchType {
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ClaimMatchType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claim")(claim.asInstanceOf[js.Any])
-    __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(claim = claim.asInstanceOf[js.Any], matchType = matchType.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ClaimMatchType]
   }
 }

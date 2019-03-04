@@ -41,18 +41,8 @@ object XPipe {
     skipBytes: js.Function1[scala.Double, scala.Unit],
     writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XPipe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("closeInput")(closeInput)
-    __obj.updateDynamic("closeOutput")(closeOutput)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readSomeBytes")(readSomeBytes)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("skipBytes")(skipBytes)
-    __obj.updateDynamic("writeBytes")(writeBytes)
+    val __obj = js.Dynamic.literal(acquire = acquire, available = available, closeInput = closeInput, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, readBytes = readBytes, readSomeBytes = readSomeBytes, release = release, skipBytes = skipBytes, writeBytes = writeBytes)
+  
     __obj.asInstanceOf[XPipe]
   }
 }

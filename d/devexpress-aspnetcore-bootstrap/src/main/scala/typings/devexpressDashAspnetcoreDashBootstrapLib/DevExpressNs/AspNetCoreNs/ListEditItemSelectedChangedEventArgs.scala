@@ -13,11 +13,8 @@ trait ListEditItemSelectedChangedEventArgs extends ProcessingModeEventArgs {
 object ListEditItemSelectedChangedEventArgs {
   @scala.inline
   def apply(index: scala.Double, isSelected: scala.Boolean, processOnServer: scala.Boolean, sender: Control): ListEditItemSelectedChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isSelected")(isSelected)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(index = index, isSelected = isSelected, processOnServer = processOnServer, sender = sender)
+  
     __obj.asInstanceOf[ListEditItemSelectedChangedEventArgs]
   }
 }

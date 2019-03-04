@@ -13,8 +13,7 @@ trait GraphQLRequestContext extends js.Object {
 object GraphQLRequestContext {
   @scala.inline
   def apply(query: java.lang.String, variables: Variables = null): GraphQLRequestContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (variables != null) __obj.updateDynamic("variables")(variables)
     __obj.asInstanceOf[GraphQLRequestContext]
   }

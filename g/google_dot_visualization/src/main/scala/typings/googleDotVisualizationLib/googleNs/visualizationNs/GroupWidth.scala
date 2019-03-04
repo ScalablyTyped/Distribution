@@ -12,8 +12,8 @@ trait GroupWidth extends js.Object {
 object GroupWidth {
   @scala.inline
   def apply(groupWidth: js.Any): GroupWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupWidth")(groupWidth)
+    val __obj = js.Dynamic.literal(groupWidth = groupWidth)
+  
     __obj.asInstanceOf[GroupWidth]
   }
 }

@@ -12,8 +12,8 @@ trait TaskOrchestrationItem extends js.Object {
 object TaskOrchestrationItem {
   @scala.inline
   def apply(itemType: TaskOrchestrationItemType): TaskOrchestrationItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemType")(itemType)
+    val __obj = js.Dynamic.literal(itemType = itemType)
+  
     __obj.asInstanceOf[TaskOrchestrationItem]
   }
 }

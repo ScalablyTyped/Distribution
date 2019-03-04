@@ -203,7 +203,7 @@ object esDashFeatureDashDetectionLibStrings {
     extends esDashFeatureDashDetectionLib.esDashFeatureDashDetectionMod.ES2015Builtins
   
   @js.native
-  sealed trait `ObjectDOTprototypeDOT__proto__`
+  sealed trait ObjectDOTprototypeDOT__proto__
     extends esDashFeatureDashDetectionLib.esDashFeatureDashDetectionMod.ES2015Builtins
   
   @js.native
@@ -478,7 +478,7 @@ object esDashFeatureDashDetectionLibStrings {
   @scala.inline
   def ObjectDOTis: ObjectDOTis = "Object.is".asInstanceOf[ObjectDOTis]
   @scala.inline
-  def `ObjectDOTprototypeDOT__proto__`: `ObjectDOTprototypeDOT__proto__` = "Object.prototype.__proto__".asInstanceOf[`ObjectDOTprototypeDOT__proto__`]
+  def ObjectDOTprototypeDOT__proto__ : ObjectDOTprototypeDOT__proto__ = "Object.prototype.__proto__".asInstanceOf[ObjectDOTprototypeDOT__proto__]
   @scala.inline
   def ObjectDOTsetPrototypeOf: ObjectDOTsetPrototypeOf = "Object.setPrototypeOf".asInstanceOf[ObjectDOTsetPrototypeOf]
   @scala.inline

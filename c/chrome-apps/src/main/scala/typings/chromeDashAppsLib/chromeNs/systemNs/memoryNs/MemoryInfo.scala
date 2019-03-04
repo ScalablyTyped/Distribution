@@ -15,9 +15,8 @@ trait MemoryInfo extends js.Object {
 object MemoryInfo {
   @scala.inline
   def apply(availableCapacity: chromeDashAppsLib.chromeNs.double, capacity: chromeDashAppsLib.chromeNs.double): MemoryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availableCapacity")(availableCapacity)
-    __obj.updateDynamic("capacity")(capacity)
+    val __obj = js.Dynamic.literal(availableCapacity = availableCapacity, capacity = capacity)
+  
     __obj.asInstanceOf[MemoryInfo]
   }
 }

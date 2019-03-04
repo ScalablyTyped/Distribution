@@ -44,11 +44,7 @@ object TwitterLoginProps {
     tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
     text: java.lang.String = null
   ): TwitterLoginProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loginUrl")(loginUrl)
-    __obj.updateDynamic("onFailure")(onFailure)
-    __obj.updateDynamic("onSuccess")(onSuccess)
-    __obj.updateDynamic("requestTokenUrl")(requestTokenUrl)
+    val __obj = js.Dynamic.literal(loginUrl = loginUrl, onFailure = onFailure, onSuccess = onSuccess, requestTokenUrl = requestTokenUrl)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])

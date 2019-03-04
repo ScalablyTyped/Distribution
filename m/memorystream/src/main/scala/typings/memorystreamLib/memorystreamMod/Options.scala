@@ -22,12 +22,8 @@ object Options {
     readable: scala.Boolean,
     writeable: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufoverflow")(bufoverflow)
-    __obj.updateDynamic("frequence")(frequence)
-    __obj.updateDynamic("maxbufsize")(maxbufsize)
-    __obj.updateDynamic("readable")(readable)
-    __obj.updateDynamic("writeable")(writeable)
+    val __obj = js.Dynamic.literal(bufoverflow = bufoverflow, frequence = frequence, maxbufsize = maxbufsize, readable = readable, writeable = writeable)
+  
     __obj.asInstanceOf[Options]
   }
 }

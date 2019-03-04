@@ -24,8 +24,7 @@ object GetAddressParams {
     showOnTrezor: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): GetAddressParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (coin != null) __obj.updateDynamic("coin")(coin)
     if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain)

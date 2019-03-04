@@ -15,11 +15,8 @@ trait ServicesData extends js.Object {
 object ServicesData {
   @scala.inline
   def apply(name: java.lang.String, pcpu: scala.Double, pmem: scala.Double, running: scala.Boolean): ServicesData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pcpu")(pcpu)
-    __obj.updateDynamic("pmem")(pmem)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(name = name, pcpu = pcpu, pmem = pmem, running = running)
+  
     __obj.asInstanceOf[ServicesData]
   }
 }

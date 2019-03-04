@@ -49,12 +49,8 @@ object ClusterRole {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     rules: js.Array[PolicyRule]
   ): ClusterRole = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregationRule")(aggregationRule)
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(aggregationRule = aggregationRule, apiVersion = apiVersion, kind = kind, metadata = metadata, rules = rules)
+  
     __obj.asInstanceOf[ClusterRole]
   }
 }

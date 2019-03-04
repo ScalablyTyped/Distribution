@@ -20,11 +20,8 @@ object Anon_CamelName {
     error: js.Function1[java.lang.String, scala.Unit],
     generateId: js.Function0[java.lang.String]
   ): Anon_CamelName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("camelName")(camelName)
-    __obj.updateDynamic("capitalizeFirst")(capitalizeFirst)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("generateId")(generateId)
+    val __obj = js.Dynamic.literal(camelName = camelName, capitalizeFirst = capitalizeFirst, error = error, generateId = generateId)
+  
     __obj.asInstanceOf[Anon_CamelName]
   }
 }

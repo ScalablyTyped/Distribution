@@ -12,8 +12,8 @@ trait Anon_KeyBits extends js.Object {
 object Anon_KeyBits {
   @scala.inline
   def apply(keyBits: scala.Double): Anon_KeyBits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyBits")(keyBits)
+    val __obj = js.Dynamic.literal(keyBits = keyBits)
+  
     __obj.asInstanceOf[Anon_KeyBits]
   }
 }

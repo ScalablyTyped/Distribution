@@ -13,9 +13,8 @@ trait IModalStackedMapKeyValuePair extends js.Object {
 object IModalStackedMapKeyValuePair {
   @scala.inline
   def apply(key: IModalInstanceService, value: js.Any): IModalStackedMapKeyValuePair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key, value = value)
+  
     __obj.asInstanceOf[IModalStackedMapKeyValuePair]
   }
 }

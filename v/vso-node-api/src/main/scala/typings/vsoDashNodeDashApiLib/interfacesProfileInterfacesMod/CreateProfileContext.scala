@@ -28,15 +28,8 @@ object CreateProfileContext {
     language: java.lang.String,
     phoneNumber: java.lang.String
   ): CreateProfileContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cIData")(cIData)
-    __obj.updateDynamic("contactWithOffers")(contactWithOffers)
-    __obj.updateDynamic("countryName")(countryName)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("hasAccount")(hasAccount)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(cIData = cIData, contactWithOffers = contactWithOffers, countryName = countryName, displayName = displayName, emailAddress = emailAddress, hasAccount = hasAccount, language = language, phoneNumber = phoneNumber)
+  
     __obj.asInstanceOf[CreateProfileContext]
   }
 }

@@ -75,19 +75,8 @@ object UserSettings {
     userId: java.lang.String,
     userName: java.lang.String
   ): UserSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateFormattingInfo")(dateFormattingInfo)
-    __obj.updateDynamic("defaultDashboardId")(defaultDashboardId)
-    __obj.updateDynamic("getTimeZoneOffsetMinutes")(getTimeZoneOffsetMinutes)
-    __obj.updateDynamic("isGuidedHelpEnabled")(isGuidedHelpEnabled)
-    __obj.updateDynamic("isHighContrastEnabled")(isHighContrastEnabled)
-    __obj.updateDynamic("isRTL")(isRTL)
-    __obj.updateDynamic("languageId")(languageId)
-    __obj.updateDynamic("securityRolePrivileges")(securityRolePrivileges)
-    __obj.updateDynamic("securityRoles")(securityRoles)
-    __obj.updateDynamic("transactionCurrencyId")(transactionCurrencyId)
-    __obj.updateDynamic("userId")(userId)
-    __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(dateFormattingInfo = dateFormattingInfo, defaultDashboardId = defaultDashboardId, getTimeZoneOffsetMinutes = getTimeZoneOffsetMinutes, isGuidedHelpEnabled = isGuidedHelpEnabled, isHighContrastEnabled = isHighContrastEnabled, isRTL = isRTL, languageId = languageId, securityRolePrivileges = securityRolePrivileges, securityRoles = securityRoles, transactionCurrencyId = transactionCurrencyId, userId = userId, userName = userName)
+  
     __obj.asInstanceOf[UserSettings]
   }
 }

@@ -27,13 +27,8 @@ object Anon_ActionOrderId {
     orderDate: Anon_Nanos,
     paymentInfo: js.Object
   ): Anon_ActionOrderId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionOrderId")(actionOrderId)
-    __obj.updateDynamic("customerInfo")(customerInfo)
-    __obj.updateDynamic("finalOrder")(finalOrder)
-    __obj.updateDynamic("googleOrderId")(googleOrderId)
-    __obj.updateDynamic("orderDate")(orderDate)
-    __obj.updateDynamic("paymentInfo")(paymentInfo)
+    val __obj = js.Dynamic.literal(actionOrderId = actionOrderId, customerInfo = customerInfo, finalOrder = finalOrder, googleOrderId = googleOrderId, orderDate = orderDate, paymentInfo = paymentInfo)
+  
     __obj.asInstanceOf[Anon_ActionOrderId]
   }
 }

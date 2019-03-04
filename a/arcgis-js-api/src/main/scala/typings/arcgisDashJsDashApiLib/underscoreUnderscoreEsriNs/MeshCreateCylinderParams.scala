@@ -44,10 +44,7 @@ object MeshCreateCylinderParams {
     material: MeshCreateCylinderParamsMaterial = null,
     size: scala.Double | MeshCreateCylinderParamsSize = null
   ): MeshCreateCylinderParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (densificationFactor != null) __obj.updateDynamic("densificationFactor")(densificationFactor.asInstanceOf[js.Any])
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (material != null) __obj.updateDynamic("material")(material)

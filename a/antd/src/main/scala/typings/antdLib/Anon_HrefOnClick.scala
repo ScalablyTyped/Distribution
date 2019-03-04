@@ -18,8 +18,7 @@ object Anon_HrefOnClick {
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement] = null,
     target: java.lang.String = null
   ): Anon_HrefOnClick = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
+    val __obj = js.Dynamic.literal(href = href)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[Anon_HrefOnClick]

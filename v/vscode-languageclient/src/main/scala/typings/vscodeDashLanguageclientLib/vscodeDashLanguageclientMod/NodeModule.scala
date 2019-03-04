@@ -22,8 +22,7 @@ object NodeModule {
     runtime: java.lang.String = null,
     transport: Transport = null
   ): NodeModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
+    val __obj = js.Dynamic.literal(module = module)
     if (args != null) __obj.updateDynamic("args")(args)
     if (options != null) __obj.updateDynamic("options")(options)
     if (runtime != null) __obj.updateDynamic("runtime")(runtime)

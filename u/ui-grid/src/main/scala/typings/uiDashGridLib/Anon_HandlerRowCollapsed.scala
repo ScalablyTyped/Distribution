@@ -45,9 +45,8 @@ object Anon_HandlerRowCollapsed {
       scala.Unit
     ]
   ): Anon_HandlerRowCollapsed[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowCollapsed")(rowCollapsed)
-    __obj.updateDynamic("rowExpanded")(rowExpanded)
+    val __obj = js.Dynamic.literal(rowCollapsed = rowCollapsed, rowExpanded = rowExpanded)
+  
     __obj.asInstanceOf[Anon_HandlerRowCollapsed[TEntity]]
   }
 }

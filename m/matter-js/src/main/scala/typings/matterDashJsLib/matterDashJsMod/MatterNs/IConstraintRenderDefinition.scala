@@ -37,10 +37,8 @@ trait IConstraintRenderDefinition extends js.Object {
 object IConstraintRenderDefinition {
   @scala.inline
   def apply(lineWidth: scala.Double, strokeStyle: java.lang.String, visible: scala.Boolean): IConstraintRenderDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("strokeStyle")(strokeStyle)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(lineWidth = lineWidth, strokeStyle = strokeStyle, visible = visible)
+  
     __obj.asInstanceOf[IConstraintRenderDefinition]
   }
 }

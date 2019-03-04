@@ -14,9 +14,8 @@ trait Anon_Text extends js.Object {
 object Anon_Text {
   @scala.inline
   def apply(text: java.lang.String, `type`: scala.Double, width: scala.Double): Anon_Text = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(text = text, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Text]
   }
 }

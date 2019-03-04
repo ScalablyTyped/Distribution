@@ -12,8 +12,8 @@ trait IItemRemovedEventArgs extends js.Object {
 object IItemRemovedEventArgs {
   @scala.inline
   def apply(removedEntry: AccessListEntry): IItemRemovedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removedEntry")(removedEntry)
+    val __obj = js.Dynamic.literal(removedEntry = removedEntry)
+  
     __obj.asInstanceOf[IItemRemovedEventArgs]
   }
 }

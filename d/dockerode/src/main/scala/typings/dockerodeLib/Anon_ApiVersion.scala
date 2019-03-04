@@ -28,15 +28,8 @@ object Anon_ApiVersion {
     KernelVersion: java.lang.String,
     Os: java.lang.String
   ): Anon_ApiVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApiVersion")(ApiVersion)
-    __obj.updateDynamic("Arch")(Arch)
-    __obj.updateDynamic("BuildTime")(BuildTime)
-    __obj.updateDynamic("Experimental")(Experimental)
-    __obj.updateDynamic("GitCommit")(GitCommit)
-    __obj.updateDynamic("GoVersion")(GoVersion)
-    __obj.updateDynamic("KernelVersion")(KernelVersion)
-    __obj.updateDynamic("Os")(Os)
+    val __obj = js.Dynamic.literal(ApiVersion = ApiVersion, Arch = Arch, BuildTime = BuildTime, Experimental = Experimental, GitCommit = GitCommit, GoVersion = GoVersion, KernelVersion = KernelVersion, Os = Os)
+  
     __obj.asInstanceOf[Anon_ApiVersion]
   }
 }

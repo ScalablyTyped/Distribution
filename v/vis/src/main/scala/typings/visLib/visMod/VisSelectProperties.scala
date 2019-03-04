@@ -12,8 +12,8 @@ trait VisSelectProperties extends js.Object {
 object VisSelectProperties {
   @scala.inline
   def apply(items: js.Array[scala.Double]): VisSelectProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+  
     __obj.asInstanceOf[VisSelectProperties]
   }
 }

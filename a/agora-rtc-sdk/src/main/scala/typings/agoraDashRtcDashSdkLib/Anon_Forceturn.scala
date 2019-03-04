@@ -24,13 +24,8 @@ object Anon_Forceturn {
     udpport: java.lang.String,
     username: java.lang.String
   ): Anon_Forceturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceturn")(forceturn)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("tcpport")(tcpport)
-    __obj.updateDynamic("turnServerURL")(turnServerURL)
-    __obj.updateDynamic("udpport")(udpport)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(forceturn = forceturn, password = password, tcpport = tcpport, turnServerURL = turnServerURL, udpport = udpport, username = username)
+  
     __obj.asInstanceOf[Anon_Forceturn]
   }
 }

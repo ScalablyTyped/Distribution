@@ -28,15 +28,8 @@ object JQueryCLEditorButtonDefinitionEventData {
     useCSS: scala.Boolean,
     value: js.Any
   ): JQueryCLEditorButtonDefinitionEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttonName")(buttonName)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("popup")(popup)
-    __obj.updateDynamic("popupName")(popupName)
-    __obj.updateDynamic("useCSS")(useCSS)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(button = button, buttonName = buttonName, command = command, editor = editor, popup = popup, popupName = popupName, useCSS = useCSS, value = value)
+  
     __obj.asInstanceOf[JQueryCLEditorButtonDefinitionEventData]
   }
 }

@@ -56,11 +56,7 @@ object IFeedOptions {
     ttl: scala.Int | scala.Double = null,
     webMaster: java.lang.String = null
   ): IFeedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("feed_url")(feed_url)
-    __obj.updateDynamic("site_url")(site_url)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(author = author, feed_url = feed_url, site_url = site_url, title = title)
     if (categories != null) __obj.updateDynamic("categories")(categories)
     if (copyright != null) __obj.updateDynamic("copyright")(copyright)
     if (description != null) __obj.updateDynamic("description")(description)

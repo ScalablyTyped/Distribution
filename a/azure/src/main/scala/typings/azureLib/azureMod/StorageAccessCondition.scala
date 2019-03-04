@@ -20,8 +20,11 @@ object StorageAccessCondition {
     `If-None-Match`: java.lang.String,
     `If-Unmodified-Since`: stdLib.Date
   ): StorageAccessCondition = {
-    val __obj = js.Dynamic.literal(`If-Match` = `If-Match`, `If-Modified-Since` = `If-Modified-Since`, `If-None-Match` = `If-None-Match`, `If-Unmodified-Since` = `If-Unmodified-Since`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("If-Match")(`If-Match`)
+    __obj.updateDynamic("If-Modified-Since")(`If-Modified-Since`)
+    __obj.updateDynamic("If-None-Match")(`If-None-Match`)
+    __obj.updateDynamic("If-Unmodified-Since")(`If-Unmodified-Since`)
     __obj.asInstanceOf[StorageAccessCondition]
   }
 }

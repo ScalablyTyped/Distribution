@@ -14,10 +14,8 @@ trait Anon_A extends js.Object {
 object Anon_A {
   @scala.inline
   def apply(A: Matrix, I: Matrix, P: Vector): Anon_A = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("A")(A)
-    __obj.updateDynamic("I")(I)
-    __obj.updateDynamic("P")(P)
+    val __obj = js.Dynamic.literal(A = A, I = I, P = P)
+  
     __obj.asInstanceOf[Anon_A]
   }
 }

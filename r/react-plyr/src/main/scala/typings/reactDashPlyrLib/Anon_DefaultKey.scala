@@ -24,8 +24,7 @@ object Anon_DefaultKey {
     label: java.lang.String = null,
     srclang: java.lang.String = null
   ): Anon_DefaultKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
     if (key != null) __obj.updateDynamic("key")(key)
     if (kind != null) __obj.updateDynamic("kind")(kind)

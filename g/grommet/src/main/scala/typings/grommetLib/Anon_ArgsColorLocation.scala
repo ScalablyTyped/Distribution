@@ -22,8 +22,7 @@ object Anon_ArgsColorLocation {
     onClick: js.Function1[/* repeated */ js.Any, _] = null,
     onHover: js.Function1[/* repeated */ js.Any, _] = null
   ): Anon_ArgsColorLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

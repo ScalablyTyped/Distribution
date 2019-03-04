@@ -26,9 +26,7 @@ object ICreateWorkingCopyParameters {
     teamServerBaseBranch: java.lang.String = null,
     teamServerBaseRevision: scala.Int | scala.Double = null
   ): ICreateWorkingCopyParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(name = name, template = template)
     if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(longLived)) __obj.updateDynamic("longLived")(longLived)

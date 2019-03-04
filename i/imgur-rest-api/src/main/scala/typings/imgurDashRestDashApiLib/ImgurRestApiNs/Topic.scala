@@ -14,10 +14,8 @@ trait Topic extends js.Object {
 object Topic {
   @scala.inline
   def apply(description: java.lang.String, id: scala.Double, name: java.lang.String): Topic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name)
+  
     __obj.asInstanceOf[Topic]
   }
 }

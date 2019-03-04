@@ -22,11 +22,8 @@ object FunctionCoverage {
     sourceFile: java.lang.String,
     statistics: CoverageStatistics
   ): FunctionCoverage = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("sourceFile")(sourceFile)
-    __obj.updateDynamic("statistics")(statistics)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace, sourceFile = sourceFile, statistics = statistics)
+    __obj.updateDynamic("class")(`class`)
     __obj.asInstanceOf[FunctionCoverage]
   }
 }

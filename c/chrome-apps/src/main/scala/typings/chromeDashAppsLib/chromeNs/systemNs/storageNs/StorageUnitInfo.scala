@@ -48,10 +48,8 @@ object StorageUnitInfo {
       ]
     ]
   ): StorageUnitInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(capacity = capacity, id = id, name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageUnitInfo]
   }
 }

@@ -22,9 +22,8 @@ object PolicyAttachmentArgs {
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iotMod.Policy],
     target: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
   ): PolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PolicyAttachmentArgs]
   }
 }

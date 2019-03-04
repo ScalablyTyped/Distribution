@@ -46,14 +46,8 @@ object Transaction {
     transactionIdentifier: java.lang.String,
     transactionState: electronLib.electronLibStrings.purchasing | electronLib.electronLibStrings.purchased | electronLib.electronLibStrings.failed | electronLib.electronLibStrings.restored | electronLib.electronLibStrings.deferred
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("originalTransactionIdentifier")(originalTransactionIdentifier)
-    __obj.updateDynamic("payment")(payment)
-    __obj.updateDynamic("transactionDate")(transactionDate)
-    __obj.updateDynamic("transactionIdentifier")(transactionIdentifier)
-    __obj.updateDynamic("transactionState")(transactionState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage, originalTransactionIdentifier = originalTransactionIdentifier, payment = payment, transactionDate = transactionDate, transactionIdentifier = transactionIdentifier, transactionState = transactionState.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Transaction]
   }
 }

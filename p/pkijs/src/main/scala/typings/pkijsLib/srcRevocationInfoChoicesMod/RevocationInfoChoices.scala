@@ -22,12 +22,8 @@ object RevocationInfoChoices {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): RevocationInfoChoices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crls")(crls)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("otherRevocationInfos")(otherRevocationInfos)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(crls = crls, fromSchema = fromSchema, otherRevocationInfos = otherRevocationInfos, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[RevocationInfoChoices]
   }
 }

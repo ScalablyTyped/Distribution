@@ -52,14 +52,8 @@ object GetComputeEnvironmentResult {
     statusReason: java.lang.String,
     `type`: java.lang.String
   ): GetComputeEnvironmentResult = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("ecsClusterArn")(ecsClusterArn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("serviceRole")(serviceRole)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusReason")(statusReason)
+    val __obj = js.Dynamic.literal(arn = arn, ecsClusterArn = ecsClusterArn, id = id, serviceRole = serviceRole, state = state, status = status, statusReason = statusReason)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GetComputeEnvironmentResult]
   }
 }

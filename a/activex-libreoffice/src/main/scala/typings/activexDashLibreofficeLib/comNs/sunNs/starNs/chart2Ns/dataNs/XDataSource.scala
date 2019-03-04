@@ -36,12 +36,8 @@ object XDataSource {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSequences")(DataSequences)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataSequences")(getDataSequences)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DataSequences = DataSequences, acquire = acquire, getDataSequences = getDataSequences, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataSource]
   }
 }

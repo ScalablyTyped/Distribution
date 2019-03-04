@@ -58,30 +58,8 @@ object Anon_After {
     unary: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unary */ js.Any,
     wrap: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof wrap */ js.Any
   ): Anon_After = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("ary")(ary)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("bindKey")(bindKey)
-    __obj.updateDynamic("curry")(curry)
-    __obj.updateDynamic("curryRight")(curryRight)
-    __obj.updateDynamic("debounce")(debounce)
-    __obj.updateDynamic("defer")(defer)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("flip")(flip)
-    __obj.updateDynamic("memoize")(memoize)
-    __obj.updateDynamic("negate")(negate)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("overArgs")(overArgs)
-    __obj.updateDynamic("partial")(partial)
-    __obj.updateDynamic("partialRight")(partialRight)
-    __obj.updateDynamic("rearg")(rearg)
-    __obj.updateDynamic("rest")(rest)
-    __obj.updateDynamic("spread")(spread)
-    __obj.updateDynamic("throttle")(throttle)
-    __obj.updateDynamic("unary")(unary)
-    __obj.updateDynamic("wrap")(wrap)
+    val __obj = js.Dynamic.literal(after = after, ary = ary, before = before, bind = bind, bindKey = bindKey, curry = curry, curryRight = curryRight, debounce = debounce, defer = defer, delay = delay, flip = flip, memoize = memoize, negate = negate, once = once, overArgs = overArgs, partial = partial, partialRight = partialRight, rearg = rearg, rest = rest, spread = spread, throttle = throttle, unary = unary, wrap = wrap)
+  
     __obj.asInstanceOf[Anon_After]
   }
 }

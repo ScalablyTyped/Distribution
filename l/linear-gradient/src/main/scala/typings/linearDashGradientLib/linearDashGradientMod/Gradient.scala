@@ -22,9 +22,8 @@ object Gradient {
     calcArray: js.Function1[scala.Double, linearDashGradientLib.Color],
     calcHex: js.Function1[scala.Double, java.lang.String]
   ): Gradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calcArray")(calcArray)
-    __obj.updateDynamic("calcHex")(calcHex)
+    val __obj = js.Dynamic.literal(calcArray = calcArray, calcHex = calcHex)
+  
     __obj.asInstanceOf[Gradient]
   }
 }

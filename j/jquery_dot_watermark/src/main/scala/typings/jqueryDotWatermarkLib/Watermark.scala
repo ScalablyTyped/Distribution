@@ -22,12 +22,8 @@ object Watermark {
     show: js.Function1[java.lang.String, scala.Unit],
     showAll: js.Function0[scala.Unit]
   ): Watermark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("hideAll")(hideAll)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("showAll")(showAll)
+    val __obj = js.Dynamic.literal(hide = hide, hideAll = hideAll, options = options, show = show, showAll = showAll)
+  
     __obj.asInstanceOf[Watermark]
   }
 }

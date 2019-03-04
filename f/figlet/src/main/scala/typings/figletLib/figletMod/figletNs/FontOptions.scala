@@ -32,15 +32,7 @@ object FontOptions {
     codeTagCount: scala.Int | scala.Double = null,
     fullLayout: scala.Int | scala.Double = null
   ): FontOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseline")(baseline)
-    __obj.updateDynamic("fittingRules")(fittingRules)
-    __obj.updateDynamic("hardBlank")(hardBlank)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("numCommentLines")(numCommentLines)
-    __obj.updateDynamic("oldLayout")(oldLayout)
-    __obj.updateDynamic("printDirection")(printDirection)
+    val __obj = js.Dynamic.literal(baseline = baseline, fittingRules = fittingRules, hardBlank = hardBlank, height = height, maxLength = maxLength, numCommentLines = numCommentLines, oldLayout = oldLayout, printDirection = printDirection)
     if (codeTagCount != null) __obj.updateDynamic("codeTagCount")(codeTagCount.asInstanceOf[js.Any])
     if (fullLayout != null) __obj.updateDynamic("fullLayout")(fullLayout.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontOptions]

@@ -28,14 +28,7 @@ object AccessTokenMap {
     userID: java.lang.String,
     accessTokenSource: java.lang.String = null
   ): AccessTokenMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("applicationID")(applicationID)
-    __obj.updateDynamic("declinedPermissions")(declinedPermissions)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("lastRefreshTime")(lastRefreshTime)
-    __obj.updateDynamic("permissions")(permissions)
-    __obj.updateDynamic("userID")(userID)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, applicationID = applicationID, declinedPermissions = declinedPermissions, expirationTime = expirationTime, lastRefreshTime = lastRefreshTime, permissions = permissions, userID = userID)
     if (accessTokenSource != null) __obj.updateDynamic("accessTokenSource")(accessTokenSource)
     __obj.asInstanceOf[AccessTokenMap]
   }

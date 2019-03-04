@@ -18,9 +18,7 @@ object Anon_CidrSecurityGroupName {
     securityGroupOwnerId: java.lang.String,
     cidr: java.lang.String = null
   ): Anon_CidrSecurityGroupName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("securityGroupName")(securityGroupName)
-    __obj.updateDynamic("securityGroupOwnerId")(securityGroupOwnerId)
+    val __obj = js.Dynamic.literal(securityGroupName = securityGroupName, securityGroupOwnerId = securityGroupOwnerId)
     if (cidr != null) __obj.updateDynamic("cidr")(cidr)
     __obj.asInstanceOf[Anon_CidrSecurityGroupName]
   }

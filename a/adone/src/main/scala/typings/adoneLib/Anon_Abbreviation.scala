@@ -24,13 +24,8 @@ object Anon_Abbreviation {
     phrase: js.Function0[java.lang.String],
     verb: js.Function0[java.lang.String]
   ): Anon_Abbreviation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviation")(abbreviation)
-    __obj.updateDynamic("adjective")(adjective)
-    __obj.updateDynamic("ingverb")(ingverb)
-    __obj.updateDynamic("noun")(noun)
-    __obj.updateDynamic("phrase")(phrase)
-    __obj.updateDynamic("verb")(verb)
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation, adjective = adjective, ingverb = ingverb, noun = noun, phrase = phrase, verb = verb)
+  
     __obj.asInstanceOf[Anon_Abbreviation]
   }
 }

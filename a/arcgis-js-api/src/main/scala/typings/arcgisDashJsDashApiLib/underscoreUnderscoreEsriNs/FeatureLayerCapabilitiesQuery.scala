@@ -121,25 +121,8 @@ object FeatureLayerCapabilitiesQuery {
     supportsStandardizedQueriesOnly: scala.Boolean,
     supportsStatistics: scala.Boolean
   ): FeatureLayerCapabilitiesQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsCentroid")(supportsCentroid)
-    __obj.updateDynamic("supportsDistance")(supportsDistance)
-    __obj.updateDynamic("supportsDistinct")(supportsDistinct)
-    __obj.updateDynamic("supportsExtent")(supportsExtent)
-    __obj.updateDynamic("supportsGeometryProperties")(supportsGeometryProperties)
-    __obj.updateDynamic("supportsHavingClause")(supportsHavingClause)
-    __obj.updateDynamic("supportsHistoricMoment")(supportsHistoricMoment)
-    __obj.updateDynamic("supportsOrderBy")(supportsOrderBy)
-    __obj.updateDynamic("supportsPagination")(supportsPagination)
-    __obj.updateDynamic("supportsQuantization")(supportsQuantization)
-    __obj.updateDynamic("supportsQuantizationEditMode")(supportsQuantizationEditMode)
-    __obj.updateDynamic("supportsResultType")(supportsResultType)
-    __obj.updateDynamic("supportsSqlExpression")(supportsSqlExpression)
-    __obj.updateDynamic("supportsStandardizedQueriesOnly")(supportsStandardizedQueriesOnly)
-    __obj.updateDynamic("supportsStatistics")(supportsStatistics)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsCentroid = supportsCentroid, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
+  
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }
 }

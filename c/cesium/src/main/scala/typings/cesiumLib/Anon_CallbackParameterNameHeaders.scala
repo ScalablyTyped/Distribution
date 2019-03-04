@@ -30,8 +30,7 @@ object Anon_CallbackParameterNameHeaders {
     retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null
   ): Anon_CallbackParameterNameHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (callbackParameterName != null) __obj.updateDynamic("callbackParameterName")(callbackParameterName)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)

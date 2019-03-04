@@ -27,9 +27,7 @@ object Instance {
     refresh: js.Function0[scala.Unit],
     popUp: js.Function0[scala.Unit] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(destroy = destroy, refresh = refresh)
     if (popUp != null) __obj.updateDynamic("popUp")(popUp)
     __obj.asInstanceOf[Instance]
   }

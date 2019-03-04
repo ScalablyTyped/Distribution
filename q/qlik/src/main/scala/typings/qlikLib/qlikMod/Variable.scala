@@ -12,8 +12,8 @@ trait Variable extends js.Object {
 object Variable {
   @scala.inline
   def apply(qContent: qlikLib.Anon_QIsNum): Variable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qContent")(qContent)
+    val __obj = js.Dynamic.literal(qContent = qContent)
+  
     __obj.asInstanceOf[Variable]
   }
 }

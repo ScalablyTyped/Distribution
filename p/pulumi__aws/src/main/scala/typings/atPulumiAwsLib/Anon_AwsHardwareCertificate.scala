@@ -22,12 +22,8 @@ object Anon_AwsHardwareCertificate {
     hsmCertificate: java.lang.String,
     manufacturerHardwareCertificate: java.lang.String
   ): Anon_AwsHardwareCertificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsHardwareCertificate")(awsHardwareCertificate)
-    __obj.updateDynamic("clusterCertificate")(clusterCertificate)
-    __obj.updateDynamic("clusterCsr")(clusterCsr)
-    __obj.updateDynamic("hsmCertificate")(hsmCertificate)
-    __obj.updateDynamic("manufacturerHardwareCertificate")(manufacturerHardwareCertificate)
+    val __obj = js.Dynamic.literal(awsHardwareCertificate = awsHardwareCertificate, clusterCertificate = clusterCertificate, clusterCsr = clusterCsr, hsmCertificate = hsmCertificate, manufacturerHardwareCertificate = manufacturerHardwareCertificate)
+  
     __obj.asInstanceOf[Anon_AwsHardwareCertificate]
   }
 }

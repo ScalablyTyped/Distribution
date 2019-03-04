@@ -28,10 +28,7 @@ object TableDefinition {
     foreignKeys: nodeDashSqlDash2Lib.Anon_CascadeColumns[Row] = null,
     isTemporary: js.UndefOr[scala.Boolean] = js.undefined
   ): TableDefinition[Name, Row] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(columns = columns, name = name.asInstanceOf[js.Any], schema = schema)
     if (dialect != null) __obj.updateDynamic("dialect")(dialect)
     if (foreignKeys != null) __obj.updateDynamic("foreignKeys")(foreignKeys)
     if (!js.isUndefined(isTemporary)) __obj.updateDynamic("isTemporary")(isTemporary)

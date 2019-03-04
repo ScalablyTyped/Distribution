@@ -27,9 +27,8 @@ object ASPxClientCustomizeElementsEventArgs {
     Elements: js.Array[ASPxReportUIElement],
     GetById: js.Function1[java.lang.String, js.Array[ASPxReportUIElement]]
   ): ASPxClientCustomizeElementsEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Elements")(Elements)
-    __obj.updateDynamic("GetById")(GetById)
+    val __obj = js.Dynamic.literal(Elements = Elements, GetById = GetById)
+  
     __obj.asInstanceOf[ASPxClientCustomizeElementsEventArgs]
   }
 }

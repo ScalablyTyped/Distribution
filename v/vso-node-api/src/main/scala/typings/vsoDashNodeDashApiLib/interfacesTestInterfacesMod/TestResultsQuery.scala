@@ -18,10 +18,8 @@ object TestResultsQuery {
     results: js.Array[TestCaseResult],
     resultsFilter: ResultsFilter
   ): TestResultsQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("resultsFilter")(resultsFilter)
+    val __obj = js.Dynamic.literal(fields = fields, results = results, resultsFilter = resultsFilter)
+  
     __obj.asInstanceOf[TestResultsQuery]
   }
 }

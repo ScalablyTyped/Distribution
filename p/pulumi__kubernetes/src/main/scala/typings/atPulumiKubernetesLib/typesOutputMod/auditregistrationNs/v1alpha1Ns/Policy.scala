@@ -23,9 +23,8 @@ trait Policy extends js.Object {
 object Policy {
   @scala.inline
   def apply(level: java.lang.String, stages: js.Array[java.lang.String]): Policy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("stages")(stages)
+    val __obj = js.Dynamic.literal(level = level, stages = stages)
+  
     __obj.asInstanceOf[Policy]
   }
 }

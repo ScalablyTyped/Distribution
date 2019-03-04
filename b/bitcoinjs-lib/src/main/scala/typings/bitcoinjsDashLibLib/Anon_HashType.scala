@@ -13,9 +13,8 @@ trait Anon_HashType extends js.Object {
 object Anon_HashType {
   @scala.inline
   def apply(hashType: scala.Double, signature: nodeLib.Buffer): Anon_HashType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashType")(hashType)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(hashType = hashType, signature = signature)
+  
     __obj.asInstanceOf[Anon_HashType]
   }
 }

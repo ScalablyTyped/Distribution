@@ -30,10 +30,7 @@ object DrawCreateDrawOptions {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     mode: java.lang.String = null
   ): DrawCreateDrawOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     __obj.asInstanceOf[DrawCreateDrawOptions]
   }

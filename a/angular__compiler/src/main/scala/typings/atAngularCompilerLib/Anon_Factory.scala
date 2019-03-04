@@ -16,9 +16,8 @@ object Anon_Factory {
     factory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
   ): Anon_Factory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("factory")(factory)
-    __obj.updateDynamic("statements")(statements)
+    val __obj = js.Dynamic.literal(factory = factory, statements = statements)
+  
     __obj.asInstanceOf[Anon_Factory]
   }
 }

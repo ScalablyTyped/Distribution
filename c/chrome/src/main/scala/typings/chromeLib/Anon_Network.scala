@@ -18,10 +18,8 @@ object Anon_Network {
     services: chromeLib.chromeNs.privacyNs.Services,
     websites: chromeLib.chromeNs.privacyNs.Websites
   ): Anon_Network = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("services")(services)
-    __obj.updateDynamic("websites")(websites)
+    val __obj = js.Dynamic.literal(network = network, services = services, websites = websites)
+  
     __obj.asInstanceOf[Anon_Network]
   }
 }

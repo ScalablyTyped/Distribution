@@ -17,8 +17,8 @@ object EncodedFullHashesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
     ]
   ): EncodedFullHashesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[EncodedFullHashesResource]
   }
 }

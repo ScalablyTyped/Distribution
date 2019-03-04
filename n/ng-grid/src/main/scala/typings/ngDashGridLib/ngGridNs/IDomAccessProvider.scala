@@ -22,12 +22,8 @@ object IDomAccessProvider {
     previousColumn: IColumn,
     selectionHandlers: js.Function2[IGridScope, angularLib.angularMod.angularNs.IAugmentedJQuery, scala.Unit]
   ): IDomAccessProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeUserSelect")(changeUserSelect)
-    __obj.updateDynamic("focusCellElement")(focusCellElement)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("previousColumn")(previousColumn)
-    __obj.updateDynamic("selectionHandlers")(selectionHandlers)
+    val __obj = js.Dynamic.literal(changeUserSelect = changeUserSelect, focusCellElement = focusCellElement, grid = grid, previousColumn = previousColumn, selectionHandlers = selectionHandlers)
+  
     __obj.asInstanceOf[IDomAccessProvider]
   }
 }

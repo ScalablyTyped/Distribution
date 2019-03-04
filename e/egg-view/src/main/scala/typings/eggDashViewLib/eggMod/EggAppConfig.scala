@@ -12,8 +12,8 @@ trait EggAppConfig extends js.Object {
 object EggAppConfig {
   @scala.inline
   def apply(view: eggDashViewLib.Anon_Cache): EggAppConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(view = view)
+  
     __obj.asInstanceOf[EggAppConfig]
   }
 }

@@ -21,13 +21,8 @@ object TemporaryDataCreatedDTO {
     url: java.lang.String,
     value: js.Any
   ): TemporaryDataCreatedDTO = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("expirationSeconds")(expirationSeconds)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(expirationDate = expirationDate, expirationSeconds = expirationSeconds, id = id, origin = origin, url = url, value = value)
+  
     __obj.asInstanceOf[TemporaryDataCreatedDTO]
   }
 }

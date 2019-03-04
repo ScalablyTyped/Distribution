@@ -36,18 +36,8 @@ object LocalResultPoi {
     `type`: PoiType,
     url: java.lang.String
   ): LocalResultPoi = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("detailUrl")(detailUrl)
-    __obj.updateDynamic("isAccurate")(isAccurate)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("postcode")(postcode)
-    __obj.updateDynamic("province")(province)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(address = address, city = city, detailUrl = detailUrl, isAccurate = isAccurate, phoneNumber = phoneNumber, point = point, postcode = postcode, province = province, tags = tags, title = title, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LocalResultPoi]
   }
 }

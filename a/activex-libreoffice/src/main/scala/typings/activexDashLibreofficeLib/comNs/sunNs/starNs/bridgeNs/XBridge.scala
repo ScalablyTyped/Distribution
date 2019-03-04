@@ -38,15 +38,8 @@ object XBridge {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XBridge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getInstance")(getInstance)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, acquire = acquire, getDescription = getDescription, getInstance = getInstance, getName = getName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XBridge]
   }
 }

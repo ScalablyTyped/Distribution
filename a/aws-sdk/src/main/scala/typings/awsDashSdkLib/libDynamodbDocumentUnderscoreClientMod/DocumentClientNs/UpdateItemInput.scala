@@ -69,9 +69,7 @@ object UpdateItemInput {
     ReturnValues: ReturnValue = null,
     UpdateExpression: UpdateExpression = null
   ): UpdateItemInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(Key = Key, TableName = TableName)
     if (AttributeUpdates != null) __obj.updateDynamic("AttributeUpdates")(AttributeUpdates)
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
     if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])

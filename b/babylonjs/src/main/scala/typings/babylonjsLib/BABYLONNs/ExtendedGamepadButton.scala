@@ -15,10 +15,8 @@ trait ExtendedGamepadButton
 object ExtendedGamepadButton {
   @scala.inline
   def apply(pressed: scala.Boolean, touched: scala.Boolean, value: scala.Double): ExtendedGamepadButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pressed")(pressed)
-    __obj.updateDynamic("touched")(touched)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(pressed = pressed, touched = touched, value = value)
+  
     __obj.asInstanceOf[ExtendedGamepadButton]
   }
 }

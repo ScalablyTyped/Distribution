@@ -38,19 +38,7 @@ object Tooltip {
     toggleEnabled: js.Function0[scala.Unit],
     hoverState: atomLib.atomLibStrings.in | atomLib.atomLibStrings.out = null
   ): Tooltip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("getArrowElement")(getArrowElement)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getTooltipElement")(getTooltipElement)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("recalculatePosition")(recalculatePosition)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("toggleEnabled")(toggleEnabled)
+    val __obj = js.Dynamic.literal(disable = disable, element = element, enable = enable, enabled = enabled, getArrowElement = getArrowElement, getTitle = getTitle, getTooltipElement = getTooltipElement, options = options, recalculatePosition = recalculatePosition, timeout = timeout, toggle = toggle, toggleEnabled = toggleEnabled)
     if (hoverState != null) __obj.updateDynamic("hoverState")(hoverState.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }

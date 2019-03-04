@@ -35,16 +35,8 @@ object XModeSelector {
     setMode: js.Function1[java.lang.String, scala.Unit],
     supportsMode: js.Function1[java.lang.String, scala.Boolean]
   ): XModeSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("SupportedModes")(SupportedModes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMode")(getMode)
-    __obj.updateDynamic("getSupportedModes")(getSupportedModes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setMode")(setMode)
-    __obj.updateDynamic("supportsMode")(supportsMode)
+    val __obj = js.Dynamic.literal(Mode = Mode, SupportedModes = SupportedModes, acquire = acquire, getMode = getMode, getSupportedModes = getSupportedModes, queryInterface = queryInterface, release = release, setMode = setMode, supportsMode = supportsMode)
+  
     __obj.asInstanceOf[XModeSelector]
   }
 }

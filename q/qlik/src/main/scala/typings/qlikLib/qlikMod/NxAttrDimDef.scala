@@ -14,10 +14,8 @@ trait NxAttrDimDef extends js.Object {
 object NxAttrDimDef {
   @scala.inline
   def apply(qDef: java.lang.String, qLibraryId: java.lang.String, qSortBy: SortCriteria): NxAttrDimDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qSortBy")(qSortBy)
+    val __obj = js.Dynamic.literal(qDef = qDef, qLibraryId = qLibraryId, qSortBy = qSortBy)
+  
     __obj.asInstanceOf[NxAttrDimDef]
   }
 }

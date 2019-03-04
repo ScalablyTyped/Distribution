@@ -24,8 +24,8 @@ object Anon_ValueSetArrayCodeActionKind {
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind
     ]
   ): Anon_ValueSetArrayCodeActionKind = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("valueSet")(valueSet)
+    val __obj = js.Dynamic.literal(valueSet = valueSet)
+  
     __obj.asInstanceOf[Anon_ValueSetArrayCodeActionKind]
   }
 }

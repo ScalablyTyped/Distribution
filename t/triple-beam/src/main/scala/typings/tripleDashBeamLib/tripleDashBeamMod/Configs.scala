@@ -14,10 +14,8 @@ trait Configs extends js.Object {
 object Configs {
   @scala.inline
   def apply(cli: Config, npm: Config, syslog: Config): Configs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cli")(cli)
-    __obj.updateDynamic("npm")(npm)
-    __obj.updateDynamic("syslog")(syslog)
+    val __obj = js.Dynamic.literal(cli = cli, npm = npm, syslog = syslog)
+  
     __obj.asInstanceOf[Configs]
   }
 }

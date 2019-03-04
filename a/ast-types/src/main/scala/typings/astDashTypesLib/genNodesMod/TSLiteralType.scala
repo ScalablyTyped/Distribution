@@ -21,8 +21,8 @@ object TSLiteralType {
     literal: astDashTypesLib.genKindsMod.NumericLiteralKind | astDashTypesLib.genKindsMod.StringLiteralKind | astDashTypesLib.genKindsMod.BooleanLiteralKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSLiteralType
   ): TSLiteralType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("literal")(literal.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSLiteralType]
   }
 }

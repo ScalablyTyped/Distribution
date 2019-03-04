@@ -19,9 +19,8 @@ trait ISubscriptionGrant extends js.Object {
 object ISubscriptionGrant {
   @scala.inline
   def apply(qos: mqttDashPacketLib.mqttDashPacketMod.QoS | scala.Double, topic: java.lang.String): ISubscriptionGrant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(qos = qos.asInstanceOf[js.Any], topic = topic)
+  
     __obj.asInstanceOf[ISubscriptionGrant]
   }
 }

@@ -25,12 +25,7 @@ object LabelContext {
     parentElement: stdLib.Element,
     datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): LabelContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], componentElement = componentElement, key = key.asInstanceOf[js.Any], level = level, parentElement = parentElement)
     if (datasource != null) __obj.updateDynamic("datasource")(datasource)
     __obj.asInstanceOf[LabelContext[K, D]]
   }

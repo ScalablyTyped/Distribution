@@ -38,20 +38,8 @@ object SocketTypes {
     xreq: scala.Double,
     xsub: scala.Double
   ): SocketTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dealer")(dealer)
-    __obj.updateDynamic("pair")(pair)
-    __obj.updateDynamic("pub")(pub)
-    __obj.updateDynamic("pull")(pull)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("rep")(rep)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("router")(router)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("xpub")(xpub)
-    __obj.updateDynamic("xrep")(xrep)
-    __obj.updateDynamic("xreq")(xreq)
-    __obj.updateDynamic("xsub")(xsub)
+    val __obj = js.Dynamic.literal(dealer = dealer, pair = pair, pub = pub, pull = pull, push = push, rep = rep, req = req, router = router, sub = sub, xpub = xpub, xrep = xrep, xreq = xreq, xsub = xsub)
+  
     __obj.asInstanceOf[SocketTypes]
   }
 }

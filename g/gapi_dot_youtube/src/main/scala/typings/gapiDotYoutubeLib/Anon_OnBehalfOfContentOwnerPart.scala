@@ -27,8 +27,7 @@ object Anon_OnBehalfOfContentOwnerPart {
     RequestBody: java.lang.String = null,
     onBehalfOfContentOwner: java.lang.String = null
   ): Anon_OnBehalfOfContentOwnerPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
     __obj.asInstanceOf[Anon_OnBehalfOfContentOwnerPart]

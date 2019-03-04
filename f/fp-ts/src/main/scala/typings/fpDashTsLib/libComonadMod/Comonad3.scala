@@ -26,11 +26,8 @@ object Comonad3 {
       fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
     ]
   ): Comonad3[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("extract")(extract)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], extend = extend, extract = extract, map = map)
+  
     __obj.asInstanceOf[Comonad3[F]]
   }
 }

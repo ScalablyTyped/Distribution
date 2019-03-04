@@ -116,9 +116,7 @@ object Options {
     step: scala.Int | scala.Double = null,
     tooltips: scala.Boolean | js.Object | (js.Function1[/* repeated */ js.Any, _]) = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(range = range, start = start.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (behaviour != null) __obj.updateDynamic("behaviour")(behaviour)

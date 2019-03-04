@@ -141,9 +141,8 @@ object SelectionControlProps {
     uncheckedRadioIconClassName: java.lang.String = null,
     value: scala.Double | java.lang.String = null
   ): SelectionControlProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)

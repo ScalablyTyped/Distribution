@@ -34,13 +34,7 @@ object IopenLocation {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IopenLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("infoUrl")(infoUrl)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(address = address, infoUrl = infoUrl, latitude = latitude, longitude = longitude, name = name, scale = scale)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

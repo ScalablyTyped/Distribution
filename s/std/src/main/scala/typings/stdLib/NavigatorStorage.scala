@@ -12,8 +12,8 @@ trait NavigatorStorage extends js.Object {
 object NavigatorStorage {
   @scala.inline
   def apply(storage: StorageManager): NavigatorStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storage")(storage)
+    val __obj = js.Dynamic.literal(storage = storage)
+  
     __obj.asInstanceOf[NavigatorStorage]
   }
 }

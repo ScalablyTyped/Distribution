@@ -61,17 +61,8 @@ object XEncryptionProtectedStorage {
     ],
     setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
   ): XEncryptionProtectedStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EncryptionAlgorithms")(EncryptionAlgorithms)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEncryptionAlgorithms")(getEncryptionAlgorithms)
-    __obj.updateDynamic("hasEncryptionData")(hasEncryptionData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryption")(removeEncryption)
-    __obj.updateDynamic("setEncryptionAlgorithms")(setEncryptionAlgorithms)
-    __obj.updateDynamic("setEncryptionData")(setEncryptionData)
-    __obj.updateDynamic("setEncryptionPassword")(setEncryptionPassword)
+    val __obj = js.Dynamic.literal(EncryptionAlgorithms = EncryptionAlgorithms, acquire = acquire, getEncryptionAlgorithms = getEncryptionAlgorithms, hasEncryptionData = hasEncryptionData, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionAlgorithms = setEncryptionAlgorithms, setEncryptionData = setEncryptionData, setEncryptionPassword = setEncryptionPassword)
+  
     __obj.asInstanceOf[XEncryptionProtectedStorage]
   }
 }

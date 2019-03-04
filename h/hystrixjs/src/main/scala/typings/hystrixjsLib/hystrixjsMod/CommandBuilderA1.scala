@@ -47,23 +47,8 @@ object CommandBuilderA1 {
     statisticalWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA1[R, T]],
     timeout: js.Function1[scala.Double, CommandBuilderA1[R, T]]
   ): CommandBuilderA1[R, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage)
-    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed)
-    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold)
-    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("errorHandler")(errorHandler)
-    __obj.updateDynamic("fallbackTo")(fallbackTo)
-    __obj.updateDynamic("percentileWindowLength")(percentileWindowLength)
-    __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets)
-    __obj.updateDynamic("requestVolumeRejectionThreshold")(requestVolumeRejectionThreshold)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("statisticalWindowLength")(statisticalWindowLength)
-    __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(build = build, circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage, circuitBreakerForceClosed = circuitBreakerForceClosed, circuitBreakerForceOpened = circuitBreakerForceOpened, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds, context = context, errorHandler = errorHandler, fallbackTo = fallbackTo, percentileWindowLength = percentileWindowLength, percentileWindowNumberOfBuckets = percentileWindowNumberOfBuckets, requestVolumeRejectionThreshold = requestVolumeRejectionThreshold, run = run, statisticalWindowLength = statisticalWindowLength, statisticalWindowNumberOfBuckets = statisticalWindowNumberOfBuckets, timeout = timeout)
+  
     __obj.asInstanceOf[CommandBuilderA1[R, T]]
   }
 }

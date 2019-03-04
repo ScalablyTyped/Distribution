@@ -38,16 +38,8 @@ object XEmbeddedObjectSupplier2 {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XEmbeddedObjectSupplier2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Aspect")(Aspect)
-    __obj.updateDynamic("EmbeddedObject")(EmbeddedObject)
-    __obj.updateDynamic("ExtendedControlOverEmbeddedObject")(ExtendedControlOverEmbeddedObject)
-    __obj.updateDynamic("ReplacementGraphic")(ReplacementGraphic)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEmbeddedObject")(getEmbeddedObject)
-    __obj.updateDynamic("getExtendedControlOverEmbeddedObject")(getExtendedControlOverEmbeddedObject)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Aspect = Aspect, EmbeddedObject = EmbeddedObject, ExtendedControlOverEmbeddedObject = ExtendedControlOverEmbeddedObject, ReplacementGraphic = ReplacementGraphic, acquire = acquire, getEmbeddedObject = getEmbeddedObject, getExtendedControlOverEmbeddedObject = getExtendedControlOverEmbeddedObject, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XEmbeddedObjectSupplier2]
   }
 }

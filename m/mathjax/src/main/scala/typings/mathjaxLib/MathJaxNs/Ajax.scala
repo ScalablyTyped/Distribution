@@ -89,20 +89,7 @@ object Ajax {
     loading: scala.Boolean,
     timeout: scala.Int | scala.Double = null
   ): Ajax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Load")(Load)
-    __obj.updateDynamic("LoadHook")(LoadHook)
-    __obj.updateDynamic("Preloading")(Preloading)
-    __obj.updateDynamic("Require")(Require)
-    __obj.updateDynamic("STATUS")(STATUS)
-    __obj.updateDynamic("Styles")(Styles)
-    __obj.updateDynamic("fileURL")(fileURL)
-    __obj.updateDynamic("loadComplete")(loadComplete)
-    __obj.updateDynamic("loadError")(loadError)
-    __obj.updateDynamic("loadHooks")(loadHooks)
-    __obj.updateDynamic("loadTimeout")(loadTimeout)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(Load = Load, LoadHook = LoadHook, Preloading = Preloading, Require = Require, STATUS = STATUS, Styles = Styles, fileURL = fileURL, loadComplete = loadComplete, loadError = loadError, loadHooks = loadHooks, loadTimeout = loadTimeout, loaded = loaded, loading = loading)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ajax]
   }

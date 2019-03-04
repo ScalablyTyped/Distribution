@@ -78,17 +78,8 @@ object EventsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Channel]
     ]
   ): EventsResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("quickAdd")(quickAdd)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, instances = instances, list = list, move = move, patch = patch, quickAdd = quickAdd, update = update, watch = watch)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[EventsResource]
   }
 }

@@ -16,9 +16,8 @@ object IKeyDerivationAlgorithmProvider {
     algorithmName: java.lang.String,
     createKey: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, CryptographicKey]
   ): IKeyDerivationAlgorithmProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithmName")(algorithmName)
-    __obj.updateDynamic("createKey")(createKey)
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName, createKey = createKey)
+  
     __obj.asInstanceOf[IKeyDerivationAlgorithmProvider]
   }
 }

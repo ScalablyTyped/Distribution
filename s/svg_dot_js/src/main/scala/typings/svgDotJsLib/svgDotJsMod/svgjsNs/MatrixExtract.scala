@@ -45,23 +45,8 @@ object MatrixExtract {
     x: scala.Double,
     y: scala.Double
   ): MatrixExtract = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("matrix")(matrix)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("skewX")(skewX)
-    __obj.updateDynamic("skewY")(skewY)
-    __obj.updateDynamic("transformedX")(transformedX)
-    __obj.updateDynamic("transformedY")(transformedY)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(a = a, b = b, c = c, d = d, e = e, f = f, matrix = matrix, rotation = rotation, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, transformedX = transformedX, transformedY = transformedY, x = x, y = y)
+  
     __obj.asInstanceOf[MatrixExtract]
   }
 }

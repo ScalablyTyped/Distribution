@@ -97,33 +97,8 @@ object DataPilotSourceDimension {
     setName: js.Function1[java.lang.String, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DataPilotSourceDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Filter")(Filter)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Function")(Function)
-    __obj.updateDynamic("Function2")(Function2)
-    __obj.updateDynamic("Hierarchies")(Hierarchies)
-    __obj.updateDynamic("IsDataLayoutDimension")(IsDataLayoutDimension)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("Original")(Original)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("UsedHierarchy")(UsedHierarchy)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("getHierarchies")(getHierarchies)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Filter = Filter, Flags = Flags, Function = Function, Function2 = Function2, Hierarchies = Hierarchies, IsDataLayoutDimension = IsDataLayoutDimension, Name = Name, Orientation = Orientation, Original = Original, Position = Position, PropertySetInfo = PropertySetInfo, UsedHierarchy = UsedHierarchy, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createClone = createClone, getHierarchies = getHierarchies, getName = getName, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setName = setName, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DataPilotSourceDimension]
   }
 }

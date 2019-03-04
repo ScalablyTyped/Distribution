@@ -48,31 +48,8 @@ object NxDimensionInfo {
     qStateCounts: NxStateCounts,
     qTags: js.Array[java.lang.String]
   ): NxDimensionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
-    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
-    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qContinuousAxes")(qContinuousAxes)
-    __obj.updateDynamic("qDerivedField")(qDerivedField)
-    __obj.updateDynamic("qDimensionType")(qDimensionType.asInstanceOf[js.Any])
-    __obj.updateDynamic("qError")(qError)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qGroupFallbackTitles")(qGroupFallbackTitles)
-    __obj.updateDynamic("qGroupFieldDefs")(qGroupFieldDefs)
-    __obj.updateDynamic("qGroupPos")(qGroupPos)
-    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
-    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
-    __obj.updateDynamic("qIsCyclic")(qIsCyclic)
-    __obj.updateDynamic("qIsSemantic")(qIsSemantic)
-    __obj.updateDynamic("qLocker")(qLocker)
-    __obj.updateDynamic("qMax")(qMax)
-    __obj.updateDynamic("qMin")(qMin)
-    __obj.updateDynamic("qNumFormat")(qNumFormat)
-    __obj.updateDynamic("qReverseSort")(qReverseSort)
-    __obj.updateDynamic("qSortIndicator")(qSortIndicator.asInstanceOf[js.Any])
-    __obj.updateDynamic("qStateCounts")(qStateCounts)
-    __obj.updateDynamic("qTags")(qTags)
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qContinuousAxes = qContinuousAxes, qDerivedField = qDerivedField, qDimensionType = qDimensionType.asInstanceOf[js.Any], qError = qError, qFallbackTitle = qFallbackTitle, qGroupFallbackTitles = qGroupFallbackTitles, qGroupFieldDefs = qGroupFieldDefs, qGroupPos = qGroupPos, qGrouping = qGrouping.asInstanceOf[js.Any], qIsAutoFormat = qIsAutoFormat, qIsCyclic = qIsCyclic, qIsSemantic = qIsSemantic, qLocker = qLocker, qMax = qMax, qMin = qMin, qNumFormat = qNumFormat, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], qStateCounts = qStateCounts, qTags = qTags)
+  
     __obj.asInstanceOf[NxDimensionInfo]
   }
 }

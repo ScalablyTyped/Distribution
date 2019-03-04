@@ -205,8 +205,7 @@ object ListItemProps {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     waitForInkTransition: js.UndefOr[scala.Boolean] = js.undefined
   ): ListItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(primaryText = primaryText.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (actionButtonIcon != null) __obj.updateDynamic("actionButtonIcon")(actionButtonIcon)
     if (actionButtonOnClick != null) __obj.updateDynamic("actionButtonOnClick")(actionButtonOnClick)

@@ -17,8 +17,7 @@ object ArrayLike {
     length: scala.Double,
     NumberDictionary: /* n */ org.scalablytyped.runtime.NumberDictionary[T] = null
   ): ArrayLike[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ArrayLike[T]]
   }

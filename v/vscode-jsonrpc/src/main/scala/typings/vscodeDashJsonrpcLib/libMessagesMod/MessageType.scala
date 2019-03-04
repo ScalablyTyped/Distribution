@@ -13,9 +13,8 @@ trait MessageType extends js.Object {
 object MessageType {
   @scala.inline
   def apply(method: java.lang.String, numberOfParams: scala.Double): MessageType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("numberOfParams")(numberOfParams)
+    val __obj = js.Dynamic.literal(method = method, numberOfParams = numberOfParams)
+  
     __obj.asInstanceOf[MessageType]
   }
 }

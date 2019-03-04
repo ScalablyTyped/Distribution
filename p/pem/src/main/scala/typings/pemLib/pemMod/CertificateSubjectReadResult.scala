@@ -26,14 +26,8 @@ object CertificateSubjectReadResult {
     organizationUnit: java.lang.String,
     state: java.lang.String
   ): CertificateSubjectReadResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commonName")(commonName)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("organization")(organization)
-    __obj.updateDynamic("organizationUnit")(organizationUnit)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(commonName = commonName, country = country, emailAddress = emailAddress, locality = locality, organization = organization, organizationUnit = organizationUnit, state = state)
+  
     __obj.asInstanceOf[CertificateSubjectReadResult]
   }
 }

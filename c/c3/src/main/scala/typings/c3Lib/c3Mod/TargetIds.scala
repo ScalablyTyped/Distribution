@@ -12,8 +12,8 @@ trait TargetIds extends js.Object {
 object TargetIds {
   @scala.inline
   def apply(ids: ArrayOrString): TargetIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TargetIds]
   }
 }

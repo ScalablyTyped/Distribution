@@ -24,13 +24,8 @@ object IStandardDataFormatsStatics {
     text: java.lang.String,
     uri: java.lang.String
   ): IStandardDataFormatsStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitmap")(bitmap)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("rtf")(rtf)
-    __obj.updateDynamic("storageItems")(storageItems)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(bitmap = bitmap, html = html, rtf = rtf, storageItems = storageItems, text = text, uri = uri)
+  
     __obj.asInstanceOf[IStandardDataFormatsStatics]
   }
 }

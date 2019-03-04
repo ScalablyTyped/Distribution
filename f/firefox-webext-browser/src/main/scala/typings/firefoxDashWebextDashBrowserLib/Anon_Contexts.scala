@@ -38,10 +38,7 @@ object Anon_Contexts {
     targetElementId: scala.Int | scala.Double = null,
     viewType: firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType = null
   ): Anon_Contexts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contexts")(contexts)
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("menuIds")(menuIds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contexts = contexts, editable = editable, menuIds = menuIds.asInstanceOf[js.Any])
     if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
     if (linkText != null) __obj.updateDynamic("linkText")(linkText)
     if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)

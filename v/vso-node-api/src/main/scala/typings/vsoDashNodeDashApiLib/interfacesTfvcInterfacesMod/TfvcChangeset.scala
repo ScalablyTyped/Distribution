@@ -60,23 +60,8 @@ object TfvcChangeset {
     url: java.lang.String,
     workItems: js.Array[AssociatedWorkItem]
   ): TfvcChangeset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("changesetId")(changesetId)
-    __obj.updateDynamic("checkedInBy")(checkedInBy)
-    __obj.updateDynamic("checkinNotes")(checkinNotes)
-    __obj.updateDynamic("collectionId")(collectionId)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("hasMoreChanges")(hasMoreChanges)
-    __obj.updateDynamic("policyOverride")(policyOverride)
-    __obj.updateDynamic("teamProjectIds")(teamProjectIds)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(_links = _links, accountId = accountId, author = author, changes = changes, changesetId = changesetId, checkedInBy = checkedInBy, checkinNotes = checkinNotes, collectionId = collectionId, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, hasMoreChanges = hasMoreChanges, policyOverride = policyOverride, teamProjectIds = teamProjectIds, url = url, workItems = workItems)
+  
     __obj.asInstanceOf[TfvcChangeset]
   }
 }

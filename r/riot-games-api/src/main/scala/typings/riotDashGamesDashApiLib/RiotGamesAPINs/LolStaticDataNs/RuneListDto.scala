@@ -20,10 +20,8 @@ object RuneListDto {
     `type`: java.lang.String,
     version: java.lang.String
   ): RuneListDto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("basic")(basic)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(basic = basic, data = data, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RuneListDto]
   }
 }

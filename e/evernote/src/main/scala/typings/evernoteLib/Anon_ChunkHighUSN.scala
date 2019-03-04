@@ -40,9 +40,7 @@ object Anon_ChunkHighUSN {
     searches: js.Array[evernoteLib.evernoteMod.EvernoteNs.SavedSearch] = null,
     tags: js.Array[evernoteLib.evernoteMod.EvernoteNs.Tag] = null
   ): Anon_ChunkHighUSN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("updateCount")(updateCount)
+    val __obj = js.Dynamic.literal(currentTime = currentTime, updateCount = updateCount)
     if (chunkHighUSN != null) __obj.updateDynamic("chunkHighUSN")(chunkHighUSN.asInstanceOf[js.Any])
     if (expungedLinkedNotebooks != null) __obj.updateDynamic("expungedLinkedNotebooks")(expungedLinkedNotebooks)
     if (expungedNotebooks != null) __obj.updateDynamic("expungedNotebooks")(expungedNotebooks)

@@ -15,11 +15,8 @@ trait OnCommandEventArgs[T /* <: SlickData */] extends js.Object {
 object OnCommandEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](button: HeaderButton, column: Column[T], command: java.lang.String, grid: Grid[T]): OnCommandEventArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("grid")(grid)
+    val __obj = js.Dynamic.literal(button = button, column = column, command = command, grid = grid)
+  
     __obj.asInstanceOf[OnCommandEventArgs[T]]
   }
 }

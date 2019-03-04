@@ -26,10 +26,8 @@ object ObjectTypeProperty {
     value: astDashTypesLib.genKindsMod.FlowTypeKind,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): ObjectTypeProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], optional = optional, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectTypeProperty]
   }

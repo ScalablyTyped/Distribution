@@ -94,13 +94,7 @@ object BrokerArgs {
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): BrokerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brokerName")(brokerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("engineType")(engineType.asInstanceOf[js.Any])
-    __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    __obj.updateDynamic("hostInstanceType")(hostInstanceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brokerName = brokerName.asInstanceOf[js.Any], engineType = engineType.asInstanceOf[js.Any], engineVersion = engineVersion.asInstanceOf[js.Any], hostInstanceType = hostInstanceType.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])

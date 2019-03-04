@@ -23,11 +23,8 @@ object Field {
     `type`: Type[T],
     defaultFn: js.Function = null
   ): Field[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(getValue = getValue, hidden = hidden, name = name, toString = toString)
+    __obj.updateDynamic("type")(`type`)
     if (defaultFn != null) __obj.updateDynamic("defaultFn")(defaultFn)
     __obj.asInstanceOf[Field[T]]
   }

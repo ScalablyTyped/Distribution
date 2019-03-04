@@ -46,9 +46,7 @@ object ReactSoundProps {
     position: scala.Int | scala.Double = null,
     volume: scala.Int | scala.Double = null
   ): ReactSoundProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playStatus")(playStatus)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(playStatus = playStatus, url = url)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (onBufferChange != null) __obj.updateDynamic("onBufferChange")(onBufferChange)

@@ -14,10 +14,8 @@ trait Anon_DebugCollision extends js.Object {
 object Anon_DebugCollision {
   @scala.inline
   def apply(debugCollision: scala.Boolean, isTest: scala.Boolean, showDebugPanel: scala.Boolean): Anon_DebugCollision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debugCollision")(debugCollision)
-    __obj.updateDynamic("isTest")(isTest)
-    __obj.updateDynamic("showDebugPanel")(showDebugPanel)
+    val __obj = js.Dynamic.literal(debugCollision = debugCollision, isTest = isTest, showDebugPanel = showDebugPanel)
+  
     __obj.asInstanceOf[Anon_DebugCollision]
   }
 }

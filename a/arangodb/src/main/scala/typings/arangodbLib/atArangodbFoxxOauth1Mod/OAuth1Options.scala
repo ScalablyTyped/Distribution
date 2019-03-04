@@ -28,12 +28,7 @@ object OAuth1Options {
     activeUserEndpoint: java.lang.String = null,
     signatureMethod: arangodbLib.arangodbLibStrings.`HMAC-SHA1` | arangodbLib.arangodbLibStrings.PLAINTEXT = null
   ): OAuth1Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessTokenEndpoint")(accessTokenEndpoint)
-    __obj.updateDynamic("authEndpoint")(authEndpoint)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("requestTokenEndpoint")(requestTokenEndpoint)
+    val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint, authEndpoint = authEndpoint, clientId = clientId, clientSecret = clientSecret, requestTokenEndpoint = requestTokenEndpoint)
     if (activeUserEndpoint != null) __obj.updateDynamic("activeUserEndpoint")(activeUserEndpoint)
     if (signatureMethod != null) __obj.updateDynamic("signatureMethod")(signatureMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth1Options]

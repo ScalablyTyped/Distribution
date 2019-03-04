@@ -22,11 +22,7 @@ object LogLevels {
     warn: lambdaDashLogLib.lambdaDashLogLibStrings.warn,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): LogLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error, info = info, warn = warn)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LogLevels]
   }

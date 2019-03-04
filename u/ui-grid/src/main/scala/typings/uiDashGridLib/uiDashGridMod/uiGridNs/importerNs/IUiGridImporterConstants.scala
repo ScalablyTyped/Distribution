@@ -12,8 +12,8 @@ trait IUiGridImporterConstants extends js.Object {
 object IUiGridImporterConstants {
   @scala.inline
   def apply(featureName: java.lang.String): IUiGridImporterConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("featureName")(featureName)
+    val __obj = js.Dynamic.literal(featureName = featureName)
+  
     __obj.asInstanceOf[IUiGridImporterConstants]
   }
 }

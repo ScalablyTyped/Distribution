@@ -51,23 +51,8 @@ object IVideoDeviceController {
     whiteBalance: MediaDeviceControl,
     zoom: MediaDeviceControl
   ): IVideoDeviceController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backlightCompensation")(backlightCompensation)
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("exposure")(exposure)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("getAvailableMediaStreamProperties")(getAvailableMediaStreamProperties)
-    __obj.updateDynamic("getMediaStreamProperties")(getMediaStreamProperties)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("pan")(pan)
-    __obj.updateDynamic("roll")(roll)
-    __obj.updateDynamic("setMediaStreamPropertiesAsync")(setMediaStreamPropertiesAsync)
-    __obj.updateDynamic("tilt")(tilt)
-    __obj.updateDynamic("tryGetPowerlineFrequency")(tryGetPowerlineFrequency)
-    __obj.updateDynamic("trySetPowerlineFrequency")(trySetPowerlineFrequency)
-    __obj.updateDynamic("whiteBalance")(whiteBalance)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(backlightCompensation = backlightCompensation, brightness = brightness, contrast = contrast, exposure = exposure, focus = focus, getAvailableMediaStreamProperties = getAvailableMediaStreamProperties, getMediaStreamProperties = getMediaStreamProperties, hue = hue, pan = pan, roll = roll, setMediaStreamPropertiesAsync = setMediaStreamPropertiesAsync, tilt = tilt, tryGetPowerlineFrequency = tryGetPowerlineFrequency, trySetPowerlineFrequency = trySetPowerlineFrequency, whiteBalance = whiteBalance, zoom = zoom)
+  
     __obj.asInstanceOf[IVideoDeviceController]
   }
 }

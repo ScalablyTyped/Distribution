@@ -19,8 +19,7 @@ object StorageAclOptions {
     maximumExecutionTimeInMs: scala.Int | scala.Double = null,
     timeoutIntervalInMs: scala.Int | scala.Double = null
   ): StorageAclOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signedIdentifiers")(signedIdentifiers)
+    val __obj = js.Dynamic.literal(signedIdentifiers = signedIdentifiers)
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId)
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)
     if (maximumExecutionTimeInMs != null) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.asInstanceOf[js.Any])

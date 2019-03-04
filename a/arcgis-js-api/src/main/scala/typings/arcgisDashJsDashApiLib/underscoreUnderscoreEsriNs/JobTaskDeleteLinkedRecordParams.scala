@@ -44,14 +44,8 @@ object JobTaskDeleteLinkedRecordParams {
     tableName: java.lang.String,
     user: java.lang.String
   ): JobTaskDeleteLinkedRecordParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("recordId")(recordId)
-    __obj.updateDynamic("tableName")(tableName)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, recordId = recordId, tableName = tableName, user = user)
+  
     __obj.asInstanceOf[JobTaskDeleteLinkedRecordParams]
   }
 }

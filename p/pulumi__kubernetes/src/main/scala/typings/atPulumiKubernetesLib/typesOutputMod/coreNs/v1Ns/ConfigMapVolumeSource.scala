@@ -49,11 +49,8 @@ object ConfigMapVolumeSource {
     name: java.lang.String,
     optional: scala.Boolean
   ): ConfigMapVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultMode")(defaultMode)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(defaultMode = defaultMode, items = items, name = name, optional = optional)
+  
     __obj.asInstanceOf[ConfigMapVolumeSource]
   }
 }

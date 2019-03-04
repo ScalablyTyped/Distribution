@@ -55,13 +55,7 @@ object SvgRadialGradientProps {
     x: scala.Double | java.lang.String = null,
     y: scala.Double | java.lang.String = null
   ): SvgRadialGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
-    __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
-    __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
-    __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], fx = fx.asInstanceOf[js.Any], fy = fy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
     if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
     if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])

@@ -96,25 +96,8 @@ object FileContainerItem {
     status: ContainerItemStatus,
     ticket: java.lang.String
   ): FileContainerItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerId")(containerId)
-    __obj.updateDynamic("contentId")(contentId)
-    __obj.updateDynamic("contentLocation")(contentLocation)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("dateCreated")(dateCreated)
-    __obj.updateDynamic("dateLastModified")(dateLastModified)
-    __obj.updateDynamic("fileEncoding")(fileEncoding)
-    __obj.updateDynamic("fileHash")(fileHash)
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("fileLength")(fileLength)
-    __obj.updateDynamic("fileType")(fileType)
-    __obj.updateDynamic("itemLocation")(itemLocation)
-    __obj.updateDynamic("itemType")(itemType)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("ticket")(ticket)
+    val __obj = js.Dynamic.literal(containerId = containerId, contentId = contentId, contentLocation = contentLocation, createdBy = createdBy, dateCreated = dateCreated, dateLastModified = dateLastModified, fileEncoding = fileEncoding, fileHash = fileHash, fileId = fileId, fileLength = fileLength, fileType = fileType, itemLocation = itemLocation, itemType = itemType, lastModifiedBy = lastModifiedBy, path = path, scopeIdentifier = scopeIdentifier, status = status, ticket = ticket)
+  
     __obj.asInstanceOf[FileContainerItem]
   }
 }

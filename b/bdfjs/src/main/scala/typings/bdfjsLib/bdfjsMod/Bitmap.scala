@@ -18,9 +18,7 @@ object Bitmap {
     width: scala.Double,
     NumberDictionary: /* row */ org.scalablytyped.runtime.NumberDictionary[js.Array[scala.Double]] = null
   ): Bitmap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Bitmap]
   }

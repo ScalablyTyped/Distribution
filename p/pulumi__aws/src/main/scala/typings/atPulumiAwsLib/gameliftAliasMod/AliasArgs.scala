@@ -27,8 +27,7 @@ object AliasArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): AliasArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routingStrategy")(routingStrategy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(routingStrategy = routingStrategy.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasArgs]

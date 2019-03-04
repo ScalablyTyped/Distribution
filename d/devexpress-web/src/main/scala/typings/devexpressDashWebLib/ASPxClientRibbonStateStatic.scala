@@ -23,10 +23,8 @@ trait ASPxClientRibbonStateStatic extends js.Object {
 object ASPxClientRibbonStateStatic {
   @scala.inline
   def apply(Minimized: scala.Double, Normal: scala.Double, TemporaryShown: scala.Double): ASPxClientRibbonStateStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Minimized")(Minimized)
-    __obj.updateDynamic("Normal")(Normal)
-    __obj.updateDynamic("TemporaryShown")(TemporaryShown)
+    val __obj = js.Dynamic.literal(Minimized = Minimized, Normal = Normal, TemporaryShown = TemporaryShown)
+  
     __obj.asInstanceOf[ASPxClientRibbonStateStatic]
   }
 }

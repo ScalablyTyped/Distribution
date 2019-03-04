@@ -53,15 +53,8 @@ object WhenMock {
     mockReturnValue: js.Function1[T, WhenMock[T, Y]],
     mockReturnValueOnce: js.Function1[T, WhenMock[T, Y]]
   ): WhenMock[T, Y] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calledWith")(calledWith)
-    __obj.updateDynamic("expectCalledWith")(expectCalledWith)
-    __obj.updateDynamic("mockRejectedValue")(mockRejectedValue)
-    __obj.updateDynamic("mockRejectedValueOnce")(mockRejectedValueOnce)
-    __obj.updateDynamic("mockResolvedValue")(mockResolvedValue)
-    __obj.updateDynamic("mockResolvedValueOnce")(mockResolvedValueOnce)
-    __obj.updateDynamic("mockReturnValue")(mockReturnValue)
-    __obj.updateDynamic("mockReturnValueOnce")(mockReturnValueOnce)
+    val __obj = js.Dynamic.literal(calledWith = calledWith, expectCalledWith = expectCalledWith, mockRejectedValue = mockRejectedValue, mockRejectedValueOnce = mockRejectedValueOnce, mockResolvedValue = mockResolvedValue, mockResolvedValueOnce = mockResolvedValueOnce, mockReturnValue = mockReturnValue, mockReturnValueOnce = mockReturnValueOnce)
+  
     __obj.asInstanceOf[WhenMock[T, Y]]
   }
 }

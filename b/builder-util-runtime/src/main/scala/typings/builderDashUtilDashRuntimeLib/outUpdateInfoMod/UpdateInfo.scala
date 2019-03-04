@@ -45,12 +45,7 @@ object UpdateInfo {
     releaseNotes: java.lang.String | js.Array[ReleaseNoteInfo] = null,
     stagingPercentage: scala.Int | scala.Double = null
   ): UpdateInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("releaseDate")(releaseDate)
-    __obj.updateDynamic("sha512")(sha512)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(files = files, path = path, releaseDate = releaseDate, sha512 = sha512, version = version)
     if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName)
     if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
     if (stagingPercentage != null) __obj.updateDynamic("stagingPercentage")(stagingPercentage.asInstanceOf[js.Any])

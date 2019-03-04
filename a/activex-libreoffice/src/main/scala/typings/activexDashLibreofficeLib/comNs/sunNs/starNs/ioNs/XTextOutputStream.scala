@@ -41,15 +41,8 @@ object XTextOutputStream {
     writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
     writeString: js.Function1[java.lang.String, scala.Unit]
   ): XTextOutputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("closeOutput")(closeOutput)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEncoding")(setEncoding)
-    __obj.updateDynamic("writeBytes")(writeBytes)
-    __obj.updateDynamic("writeString")(writeString)
+    val __obj = js.Dynamic.literal(acquire = acquire, closeOutput = closeOutput, flush = flush, queryInterface = queryInterface, release = release, setEncoding = setEncoding, writeBytes = writeBytes, writeString = writeString)
+  
     __obj.asInstanceOf[XTextOutputStream]
   }
 }

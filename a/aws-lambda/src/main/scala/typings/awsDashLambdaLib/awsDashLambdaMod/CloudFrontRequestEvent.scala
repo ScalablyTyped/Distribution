@@ -12,8 +12,8 @@ trait CloudFrontRequestEvent extends js.Object {
 object CloudFrontRequestEvent {
   @scala.inline
   def apply(Records: js.Array[awsDashLambdaLib.Anon_CfAnonRequestCloudFrontRequest]): CloudFrontRequestEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Records")(Records)
+    val __obj = js.Dynamic.literal(Records = Records)
+  
     __obj.asInstanceOf[CloudFrontRequestEvent]
   }
 }

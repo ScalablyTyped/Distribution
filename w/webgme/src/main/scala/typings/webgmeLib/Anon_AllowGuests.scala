@@ -58,16 +58,8 @@ object Anon_AllowGuests {
     logOutUrl: java.lang.String,
     salts: scala.Double
   ): Anon_AllowGuests = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowGuests")(allowGuests)
-    __obj.updateDynamic("allowUserRegistration")(allowUserRegistration)
-    __obj.updateDynamic("authorizer")(authorizer)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("guestAccount")(guestAccount)
-    __obj.updateDynamic("jwt")(jwt)
-    __obj.updateDynamic("logInUrl")(logInUrl)
-    __obj.updateDynamic("logOutUrl")(logOutUrl)
-    __obj.updateDynamic("salts")(salts)
+    val __obj = js.Dynamic.literal(allowGuests = allowGuests, allowUserRegistration = allowUserRegistration, authorizer = authorizer, enable = enable, guestAccount = guestAccount, jwt = jwt, logInUrl = logInUrl, logOutUrl = logOutUrl, salts = salts)
+  
     __obj.asInstanceOf[Anon_AllowGuests]
   }
 }

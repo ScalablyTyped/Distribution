@@ -30,16 +30,8 @@ object AdGroupDevices {
     setMobileBidModifier: js.Function1[scala.Double, scala.Unit],
     setTabletBidModifier: js.Function1[scala.Double, scala.Unit]
   ): AdGroupDevices = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearDesktopBidModifier")(clearDesktopBidModifier)
-    __obj.updateDynamic("clearMobileBidModifier")(clearMobileBidModifier)
-    __obj.updateDynamic("clearTabletBidModifier")(clearTabletBidModifier)
-    __obj.updateDynamic("getDesktopBidModifier")(getDesktopBidModifier)
-    __obj.updateDynamic("getMobileBidModifier")(getMobileBidModifier)
-    __obj.updateDynamic("getTabletBidModifier")(getTabletBidModifier)
-    __obj.updateDynamic("setDesktopBidModifier")(setDesktopBidModifier)
-    __obj.updateDynamic("setMobileBidModifier")(setMobileBidModifier)
-    __obj.updateDynamic("setTabletBidModifier")(setTabletBidModifier)
+    val __obj = js.Dynamic.literal(clearDesktopBidModifier = clearDesktopBidModifier, clearMobileBidModifier = clearMobileBidModifier, clearTabletBidModifier = clearTabletBidModifier, getDesktopBidModifier = getDesktopBidModifier, getMobileBidModifier = getMobileBidModifier, getTabletBidModifier = getTabletBidModifier, setDesktopBidModifier = setDesktopBidModifier, setMobileBidModifier = setMobileBidModifier, setTabletBidModifier = setTabletBidModifier)
+  
     __obj.asInstanceOf[AdGroupDevices]
   }
 }

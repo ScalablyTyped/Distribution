@@ -28,12 +28,8 @@ object OwnLockOnDocumentRequest {
     Message: java.lang.String,
     TimeInfo: java.lang.String
   ): OwnLockOnDocumentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DocumentURL")(DocumentURL)
-    __obj.updateDynamic("IsStoring")(IsStoring)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("TimeInfo")(TimeInfo)
+    val __obj = js.Dynamic.literal(Context = Context, DocumentURL = DocumentURL, IsStoring = IsStoring, Message = Message, TimeInfo = TimeInfo)
+  
     __obj.asInstanceOf[OwnLockOnDocumentRequest]
   }
 }

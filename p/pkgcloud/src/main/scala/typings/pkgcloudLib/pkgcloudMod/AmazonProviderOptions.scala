@@ -20,10 +20,7 @@ object AmazonProviderOptions {
     provider: pkgcloudLib.pkgcloudLibStrings.amazon,
     region: java.lang.String = null
   ): AmazonProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyId")(keyId)
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(key = key, keyId = keyId, provider = provider)
     if (region != null) __obj.updateDynamic("region")(region)
     __obj.asInstanceOf[AmazonProviderOptions]
   }

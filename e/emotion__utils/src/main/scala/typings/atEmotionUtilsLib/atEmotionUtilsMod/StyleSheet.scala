@@ -24,12 +24,7 @@ object StyleSheet {
     tags: js.Array[stdLib.HTMLStyleElement],
     nonce: java.lang.String = null
   ): StyleSheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(container = container, flush = flush, insert = insert, key = key, tags = tags)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[StyleSheet]
   }

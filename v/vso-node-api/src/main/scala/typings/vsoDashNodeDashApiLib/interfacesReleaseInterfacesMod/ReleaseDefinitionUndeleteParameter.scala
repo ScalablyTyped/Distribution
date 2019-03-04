@@ -15,8 +15,8 @@ trait ReleaseDefinitionUndeleteParameter extends js.Object {
 object ReleaseDefinitionUndeleteParameter {
   @scala.inline
   def apply(comment: java.lang.String): ReleaseDefinitionUndeleteParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(comment = comment)
+  
     __obj.asInstanceOf[ReleaseDefinitionUndeleteParameter]
   }
 }

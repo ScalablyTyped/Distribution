@@ -32,8 +32,7 @@ object Options {
     hitArea: heremapsLib.HNs.mapNs.HitArea = null,
     size: heremapsLib.HNs.mathNs.ISize | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crossOrigin")(crossOrigin)
+    val __obj = js.Dynamic.literal(crossOrigin = crossOrigin)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (asCanvas != null) __obj.updateDynamic("asCanvas")(asCanvas)
     if (hitArea != null) __obj.updateDynamic("hitArea")(hitArea)

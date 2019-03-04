@@ -13,9 +13,8 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(key: sjclLib.sjclMod.sjclNs.BitArray, salt: sjclLib.sjclMod.sjclNs.BitArray): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("salt")(salt)
+    val __obj = js.Dynamic.literal(key = key, salt = salt)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

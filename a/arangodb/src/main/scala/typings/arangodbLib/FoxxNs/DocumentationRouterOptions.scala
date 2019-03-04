@@ -20,11 +20,8 @@ object DocumentationRouterOptions {
     mount: java.lang.String,
     swaggerRoot: java.lang.String
   ): DocumentationRouterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("indexFile")(indexFile)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("swaggerRoot")(swaggerRoot)
+    val __obj = js.Dynamic.literal(before = before, indexFile = indexFile, mount = mount, swaggerRoot = swaggerRoot)
+  
     __obj.asInstanceOf[DocumentationRouterOptions]
   }
 }

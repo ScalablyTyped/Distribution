@@ -28,15 +28,8 @@ object EditorBaseProps {
     rowMetaData: js.Any,
     value: js.Any
   ): EditorBaseProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("onBlur")(onBlur)
-    __obj.updateDynamic("onCommit")(onCommit)
-    __obj.updateDynamic("onCommitCancel")(onCommitCancel)
-    __obj.updateDynamic("rowData")(rowData)
-    __obj.updateDynamic("rowMetaData")(rowMetaData)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(column = column, height = height, onBlur = onBlur, onCommit = onCommit, onCommitCancel = onCommitCancel, rowData = rowData, rowMetaData = rowMetaData, value = value)
+  
     __obj.asInstanceOf[EditorBaseProps]
   }
 }

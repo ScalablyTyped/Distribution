@@ -20,11 +20,8 @@ object Anon_Key {
     sourceLayer: java.lang.String,
     state: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceLayer")(sourceLayer)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(layer = layer, source = source, sourceLayer = sourceLayer, state = state)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

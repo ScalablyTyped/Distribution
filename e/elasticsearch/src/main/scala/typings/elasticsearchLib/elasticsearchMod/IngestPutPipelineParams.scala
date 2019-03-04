@@ -24,9 +24,7 @@ object IngestPutPipelineParams {
     requestTimeout: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null
   ): IngestPutPipelineParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(body = body, id = id)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])

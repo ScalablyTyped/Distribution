@@ -36,19 +36,8 @@ object IBrowser {
     PHANTOM_JS: java.lang.String,
     SAFARI: java.lang.String
   ): IBrowser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANDROID")(ANDROID)
-    __obj.updateDynamic("CHROME")(CHROME)
-    __obj.updateDynamic("EDGE")(EDGE)
-    __obj.updateDynamic("FIREFOX")(FIREFOX)
-    __obj.updateDynamic("HTMLUNIT")(HTMLUNIT)
-    __obj.updateDynamic("IE")(IE)
-    __obj.updateDynamic("INTERNET_EXPLORER")(INTERNET_EXPLORER)
-    __obj.updateDynamic("IPAD")(IPAD)
-    __obj.updateDynamic("IPHONE")(IPHONE)
-    __obj.updateDynamic("OPERA")(OPERA)
-    __obj.updateDynamic("PHANTOM_JS")(PHANTOM_JS)
-    __obj.updateDynamic("SAFARI")(SAFARI)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID, CHROME = CHROME, EDGE = EDGE, FIREFOX = FIREFOX, HTMLUNIT = HTMLUNIT, IE = IE, INTERNET_EXPLORER = INTERNET_EXPLORER, IPAD = IPAD, IPHONE = IPHONE, OPERA = OPERA, PHANTOM_JS = PHANTOM_JS, SAFARI = SAFARI)
+  
     __obj.asInstanceOf[IBrowser]
   }
 }

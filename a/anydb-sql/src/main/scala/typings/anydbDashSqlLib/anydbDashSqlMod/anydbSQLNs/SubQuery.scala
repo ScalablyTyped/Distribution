@@ -26,14 +26,8 @@ object SubQuery {
     select: js.Function1[Column[T], SubQuery[T]],
     where: js.Function1[/* repeated */ js.Any, SubQuery[T]]
   ): SubQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("notExists")(notExists)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(exists = exists, from = from, group = group, notExists = notExists, order = order, select = select, where = where)
+  
     __obj.asInstanceOf[SubQuery[T]]
   }
 }

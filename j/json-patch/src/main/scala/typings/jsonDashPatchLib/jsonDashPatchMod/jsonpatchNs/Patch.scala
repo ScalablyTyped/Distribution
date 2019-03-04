@@ -12,8 +12,8 @@ trait Patch extends js.Object {
 object Patch {
   @scala.inline
   def apply(path: java.lang.String): Patch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+  
     __obj.asInstanceOf[Patch]
   }
 }

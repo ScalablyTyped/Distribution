@@ -95,10 +95,8 @@ object IAssetsService {
       angularLib.angularMod.angularNs.IPromise[_]
     ]
   ): IAssetsService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadCss")(loadCss)
-    __obj.updateDynamic("loadJs")(loadJs)
+    val __obj = js.Dynamic.literal(load = load, loadCss = loadCss, loadJs = loadJs)
+  
     __obj.asInstanceOf[IAssetsService]
   }
 }

@@ -47,8 +47,7 @@ object PopupProps {
     position: leafletLib.leafletMod.LatLngExpression = null,
     zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
   ): PopupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan)
     if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])

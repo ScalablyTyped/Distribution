@@ -24,13 +24,8 @@ object Anon_Archive {
     sourcemapsNs: js.Any,
     wrapNs: js.Any
   ): Anon_Archive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("archiveNs")(archiveNs)
-    __obj.updateDynamic("chmodNs")(chmodNs)
-    __obj.updateDynamic("compressorNs")(compressorNs)
-    __obj.updateDynamic("notifyNs")(notifyNs)
-    __obj.updateDynamic("sourcemapsNs")(sourcemapsNs)
-    __obj.updateDynamic("wrapNs")(wrapNs)
+    val __obj = js.Dynamic.literal(archiveNs = archiveNs, chmodNs = chmodNs, compressorNs = compressorNs, notifyNs = notifyNs, sourcemapsNs = sourcemapsNs, wrapNs = wrapNs)
+  
     __obj.asInstanceOf[Anon_Archive]
   }
 }

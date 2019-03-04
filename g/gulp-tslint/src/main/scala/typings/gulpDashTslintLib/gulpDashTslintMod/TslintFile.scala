@@ -24,13 +24,8 @@ object TslintFile {
     relative: java.lang.String,
     tslint: js.Any
   ): TslintFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    __obj.updateDynamic("isNull")(isNull)
-    __obj.updateDynamic("isStream")(isStream)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("relative")(relative)
-    __obj.updateDynamic("tslint")(tslint)
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], isNull = isNull, isStream = isStream, path = path, relative = relative, tslint = tslint)
+  
     __obj.asInstanceOf[TslintFile]
   }
 }

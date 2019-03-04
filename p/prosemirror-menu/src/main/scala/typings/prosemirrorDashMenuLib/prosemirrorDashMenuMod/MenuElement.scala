@@ -23,8 +23,8 @@ object MenuElement {
       prosemirrorDashMenuLib.Anon_Dom[S]
     ]
   ): MenuElement[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(render = render)
+  
     __obj.asInstanceOf[MenuElement[S]]
   }
 }

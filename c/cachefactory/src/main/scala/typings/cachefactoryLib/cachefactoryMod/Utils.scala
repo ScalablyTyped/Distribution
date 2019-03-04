@@ -26,13 +26,7 @@ object Utils {
     isString: js.Function1[js.Any, scala.Boolean],
     Promise: stdLib.PromiseConstructor = null
   ): Utils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("fromJson")(fromJson)
-    __obj.updateDynamic("isFunction")(isFunction)
-    __obj.updateDynamic("isNumber")(isNumber)
-    __obj.updateDynamic("isObject")(isObject)
-    __obj.updateDynamic("isString")(isString)
+    val __obj = js.Dynamic.literal(equals = equals, fromJson = fromJson, isFunction = isFunction, isNumber = isNumber, isObject = isObject, isString = isString)
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
     __obj.asInstanceOf[Utils]
   }

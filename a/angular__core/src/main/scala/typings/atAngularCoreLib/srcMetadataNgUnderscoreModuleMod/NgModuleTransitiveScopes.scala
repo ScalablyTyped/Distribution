@@ -13,9 +13,8 @@ trait NgModuleTransitiveScopes extends js.Object {
 object NgModuleTransitiveScopes {
   @scala.inline
   def apply(compilation: atAngularCoreLib.Anon_Directives, exported: atAngularCoreLib.Anon_Directives): NgModuleTransitiveScopes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compilation")(compilation)
-    __obj.updateDynamic("exported")(exported)
+    val __obj = js.Dynamic.literal(compilation = compilation, exported = exported)
+  
     __obj.asInstanceOf[NgModuleTransitiveScopes]
   }
 }

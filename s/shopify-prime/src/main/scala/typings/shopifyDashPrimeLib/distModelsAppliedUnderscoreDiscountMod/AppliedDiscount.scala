@@ -39,11 +39,7 @@ object AppliedDiscount {
     value_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount,
     amount: scala.Int | scala.Double = null
   ): AppliedDiscount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("value_type")(value_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description, title = title, value = value, value_type = value_type.asInstanceOf[js.Any])
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppliedDiscount]
   }

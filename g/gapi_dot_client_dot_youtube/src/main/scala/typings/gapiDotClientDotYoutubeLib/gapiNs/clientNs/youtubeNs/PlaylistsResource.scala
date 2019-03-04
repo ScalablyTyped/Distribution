@@ -39,11 +39,8 @@ object PlaylistsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Playlist]
     ]
   ): PlaylistsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, insert = insert, list = list, update = update)
+  
     __obj.asInstanceOf[PlaylistsResource]
   }
 }

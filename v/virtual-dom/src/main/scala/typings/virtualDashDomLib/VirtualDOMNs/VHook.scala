@@ -16,9 +16,8 @@ object VHook {
     hook: js.Function2[stdLib.Element, java.lang.String, scala.Unit],
     unhook: js.Function2[stdLib.Element, java.lang.String, scala.Unit]
   ): VHook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hook")(hook)
-    __obj.updateDynamic("unhook")(unhook)
+    val __obj = js.Dynamic.literal(hook = hook, unhook = unhook)
+  
     __obj.asInstanceOf[VHook]
   }
 }

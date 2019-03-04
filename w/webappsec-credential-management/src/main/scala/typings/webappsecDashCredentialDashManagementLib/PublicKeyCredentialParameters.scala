@@ -16,8 +16,8 @@ trait PublicKeyCredentialParameters extends js.Object {
 object PublicKeyCredentialParameters {
   @scala.inline
   def apply(alg: scala.Double, `type`: PublicKeyCredentialType): PublicKeyCredentialParameters = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alg")(alg)
+    val __obj = js.Dynamic.literal(alg = alg)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PublicKeyCredentialParameters]
   }
 }

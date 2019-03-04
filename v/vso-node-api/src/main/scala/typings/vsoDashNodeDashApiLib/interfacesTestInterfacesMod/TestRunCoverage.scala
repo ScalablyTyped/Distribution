@@ -20,11 +20,8 @@ object TestRunCoverage {
     state: java.lang.String,
     testRun: ShallowReference
   ): TestRunCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastError")(lastError)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("testRun")(testRun)
+    val __obj = js.Dynamic.literal(lastError = lastError, modules = modules, state = state, testRun = testRun)
+  
     __obj.asInstanceOf[TestRunCoverage]
   }
 }

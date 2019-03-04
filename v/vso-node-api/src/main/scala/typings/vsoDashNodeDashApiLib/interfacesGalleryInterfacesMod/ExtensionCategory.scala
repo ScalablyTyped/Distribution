@@ -39,13 +39,8 @@ object ExtensionCategory {
     languageTitles: js.Array[CategoryLanguageTitle],
     parentCategoryName: java.lang.String
   ): ExtensionCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("associatedProducts")(associatedProducts)
-    __obj.updateDynamic("categoryId")(categoryId)
-    __obj.updateDynamic("categoryName")(categoryName)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("languageTitles")(languageTitles)
-    __obj.updateDynamic("parentCategoryName")(parentCategoryName)
+    val __obj = js.Dynamic.literal(associatedProducts = associatedProducts, categoryId = categoryId, categoryName = categoryName, language = language, languageTitles = languageTitles, parentCategoryName = parentCategoryName)
+  
     __obj.asInstanceOf[ExtensionCategory]
   }
 }

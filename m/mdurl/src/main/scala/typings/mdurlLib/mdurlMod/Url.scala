@@ -28,15 +28,8 @@ object Url {
     search: java.lang.String,
     slashes: java.lang.String
   ): Url = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("slashes")(slashes)
+    val __obj = js.Dynamic.literal(auth = auth, hash = hash, hostname = hostname, pathname = pathname, port = port, protocol = protocol, search = search, slashes = slashes)
+  
     __obj.asInstanceOf[Url]
   }
 }

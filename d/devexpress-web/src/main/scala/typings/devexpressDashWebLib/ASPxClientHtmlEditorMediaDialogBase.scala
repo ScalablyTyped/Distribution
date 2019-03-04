@@ -51,23 +51,8 @@ object ASPxClientHtmlEditorMediaDialogBase {
     GetTopMarginTextBox: js.Function0[ASPxClientTextBox],
     GetWidthSpinEdit: js.Function0[ASPxClientSpinEdit]
   ): ASPxClientHtmlEditorMediaDialogBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHeightSpinEdit")(GetHeightSpinEdit)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetMediaFileSelector")(GetMediaFileSelector)
-    __obj.updateDynamic("GetMoreOptionsCheckBox")(GetMoreOptionsCheckBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetPositionComboBox")(GetPositionComboBox)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
-    __obj.updateDynamic("GetWidthSpinEdit")(GetWidthSpinEdit)
+    val __obj = js.Dynamic.literal(GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCssClassNameComboBox = GetCssClassNameComboBox, GetFormLayout = GetFormLayout, GetHeightSpinEdit = GetHeightSpinEdit, GetLeftMarginTextBox = GetLeftMarginTextBox, GetMediaFileSelector = GetMediaFileSelector, GetMoreOptionsCheckBox = GetMoreOptionsCheckBox, GetOkButton = GetOkButton, GetPositionComboBox = GetPositionComboBox, GetRightMarginTextBox = GetRightMarginTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetWidthSpinEdit = GetWidthSpinEdit)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorMediaDialogBase]
   }
 }

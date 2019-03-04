@@ -23,12 +23,8 @@ object XTitleChangeBroadcaster {
     release: js.Function0[scala.Unit],
     removeTitleChangeListener: js.Function1[XTitleChangeListener, scala.Unit]
   ): XTitleChangeBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addTitleChangeListener")(addTitleChangeListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTitleChangeListener")(removeTitleChangeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addTitleChangeListener = addTitleChangeListener, queryInterface = queryInterface, release = release, removeTitleChangeListener = removeTitleChangeListener)
+  
     __obj.asInstanceOf[XTitleChangeBroadcaster]
   }
 }

@@ -32,17 +32,8 @@ object Config {
     printJson: js.Function0[java.lang.String],
     setDateRangeRequired: js.Function1[scala.Boolean, Config]
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("newCheckbox")(newCheckbox)
-    __obj.updateDynamic("newInfo")(newInfo)
-    __obj.updateDynamic("newOptionBuilder")(newOptionBuilder)
-    __obj.updateDynamic("newSelectMultiple")(newSelectMultiple)
-    __obj.updateDynamic("newSelectSingle")(newSelectSingle)
-    __obj.updateDynamic("newTextArea")(newTextArea)
-    __obj.updateDynamic("newTextInput")(newTextInput)
-    __obj.updateDynamic("printJson")(printJson)
-    __obj.updateDynamic("setDateRangeRequired")(setDateRangeRequired)
+    val __obj = js.Dynamic.literal(build = build, newCheckbox = newCheckbox, newInfo = newInfo, newOptionBuilder = newOptionBuilder, newSelectMultiple = newSelectMultiple, newSelectSingle = newSelectSingle, newTextArea = newTextArea, newTextInput = newTextInput, printJson = printJson, setDateRangeRequired = setDateRangeRequired)
+  
     __obj.asInstanceOf[Config]
   }
 }

@@ -14,10 +14,8 @@ trait JSONEditorError extends js.Object {
 object JSONEditorError {
   @scala.inline
   def apply(message: java.lang.String, path: java.lang.String, property: java.lang.String): JSONEditorError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(message = message, path = path, property = property)
+  
     __obj.asInstanceOf[JSONEditorError]
   }
 }

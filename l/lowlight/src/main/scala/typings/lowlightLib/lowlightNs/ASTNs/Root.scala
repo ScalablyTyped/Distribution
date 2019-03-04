@@ -20,8 +20,8 @@ object Root {
     data: lowlightLib.lowlightNs.ASTNs.UnistNs.Data = null,
     position: lowlightLib.lowlightNs.ASTNs.UnistNs.Location = null
   ): Root = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     __obj.asInstanceOf[Root]

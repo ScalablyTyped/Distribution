@@ -39,8 +39,7 @@ object CommentProps {
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): CommentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
     if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])

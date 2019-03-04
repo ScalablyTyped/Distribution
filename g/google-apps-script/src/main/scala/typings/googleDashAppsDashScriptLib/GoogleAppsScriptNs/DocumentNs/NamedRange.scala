@@ -20,11 +20,8 @@ object NamedRange {
     getRange: js.Function0[Range],
     remove: js.Function0[scala.Unit]
   ): NamedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getId = getId, getName = getName, getRange = getRange, remove = remove)
+  
     __obj.asInstanceOf[NamedRange]
   }
 }

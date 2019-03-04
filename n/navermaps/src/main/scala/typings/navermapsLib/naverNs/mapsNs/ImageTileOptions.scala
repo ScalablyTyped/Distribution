@@ -30,8 +30,7 @@ object ImageTileOptions {
     transition: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): ImageTileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(urls = urls)
     if (imgonerror != null) __obj.updateDynamic("imgonerror")(imgonerror)
     if (imgonload != null) __obj.updateDynamic("imgonload")(imgonload)
     if (offset != null) __obj.updateDynamic("offset")(offset)

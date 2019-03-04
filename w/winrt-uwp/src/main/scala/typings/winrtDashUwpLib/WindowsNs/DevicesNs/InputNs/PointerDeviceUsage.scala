@@ -37,15 +37,8 @@ object PointerDeviceUsage {
     usage: scala.Double,
     usagePage: scala.Double
   ): PointerDeviceUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxLogical")(maxLogical)
-    __obj.updateDynamic("maxPhysical")(maxPhysical)
-    __obj.updateDynamic("minLogical")(minLogical)
-    __obj.updateDynamic("minPhysical")(minPhysical)
-    __obj.updateDynamic("physicalMultiplier")(physicalMultiplier)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("usage")(usage)
-    __obj.updateDynamic("usagePage")(usagePage)
+    val __obj = js.Dynamic.literal(maxLogical = maxLogical, maxPhysical = maxPhysical, minLogical = minLogical, minPhysical = minPhysical, physicalMultiplier = physicalMultiplier, unit = unit, usage = usage, usagePage = usagePage)
+  
     __obj.asInstanceOf[PointerDeviceUsage]
   }
 }

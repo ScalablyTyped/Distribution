@@ -12,8 +12,8 @@ trait TransitionProps extends js.Object {
 object TransitionProps {
   @scala.inline
   def apply(progress: scala.Double): TransitionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("progress")(progress)
+    val __obj = js.Dynamic.literal(progress = progress)
+  
     __obj.asInstanceOf[TransitionProps]
   }
 }

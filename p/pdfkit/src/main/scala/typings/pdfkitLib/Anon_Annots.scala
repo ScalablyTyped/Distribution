@@ -22,9 +22,7 @@ object Anon_Annots {
     Font: js.Any = null,
     XObject: js.Any = null
   ): Anon_Annots = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Annots")(Annots)
-    __obj.updateDynamic("Pattern")(Pattern)
+    val __obj = js.Dynamic.literal(Annots = Annots, Pattern = Pattern)
     if (ExtGState != null) __obj.updateDynamic("ExtGState")(ExtGState)
     if (Font != null) __obj.updateDynamic("Font")(Font)
     if (XObject != null) __obj.updateDynamic("XObject")(XObject)

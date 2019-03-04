@@ -20,11 +20,8 @@ object Anon_DataHeaders {
     status: scala.Double,
     statusText: java.lang.String
   ): Anon_DataHeaders[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(data = data, headers = headers, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[Anon_DataHeaders[T]]
   }
 }

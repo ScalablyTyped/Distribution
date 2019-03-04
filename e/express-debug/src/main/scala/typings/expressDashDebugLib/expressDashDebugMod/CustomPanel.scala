@@ -31,10 +31,7 @@ object CustomPanel {
     pre_render: js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit] = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined
   ): CustomPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("process")(process)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(name = name, process = process, template = template)
     if (finalize != null) __obj.updateDynamic("finalize")(finalize)
     if (initialize != null) __obj.updateDynamic("initialize")(initialize)
     if (options != null) __obj.updateDynamic("options")(options)

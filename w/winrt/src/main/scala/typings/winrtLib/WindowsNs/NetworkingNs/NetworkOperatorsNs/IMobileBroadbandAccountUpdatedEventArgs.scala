@@ -18,10 +18,8 @@ object IMobileBroadbandAccountUpdatedEventArgs {
     hasNetworkChanged: scala.Boolean,
     networkAccountId: java.lang.String
   ): IMobileBroadbandAccountUpdatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasDeviceInformationChanged")(hasDeviceInformationChanged)
-    __obj.updateDynamic("hasNetworkChanged")(hasNetworkChanged)
-    __obj.updateDynamic("networkAccountId")(networkAccountId)
+    val __obj = js.Dynamic.literal(hasDeviceInformationChanged = hasDeviceInformationChanged, hasNetworkChanged = hasNetworkChanged, networkAccountId = networkAccountId)
+  
     __obj.asInstanceOf[IMobileBroadbandAccountUpdatedEventArgs]
   }
 }

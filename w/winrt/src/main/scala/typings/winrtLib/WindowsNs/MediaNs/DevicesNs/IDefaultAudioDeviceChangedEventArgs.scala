@@ -13,9 +13,8 @@ trait IDefaultAudioDeviceChangedEventArgs extends js.Object {
 object IDefaultAudioDeviceChangedEventArgs {
   @scala.inline
   def apply(id: java.lang.String, role: AudioDeviceRole): IDefaultAudioDeviceChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(id = id, role = role)
+  
     __obj.asInstanceOf[IDefaultAudioDeviceChangedEventArgs]
   }
 }

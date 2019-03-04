@@ -14,9 +14,8 @@ trait IToastyConfigProvider extends js.Object {
 object IToastyConfigProvider {
   @scala.inline
   def apply($get: js.Function0[IGlobalConfig], setConfig: js.Function1[IGlobalConfig, scala.Unit]): IToastyConfigProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("setConfig")(setConfig)
+    val __obj = js.Dynamic.literal($get = $get, setConfig = setConfig)
+  
     __obj.asInstanceOf[IToastyConfigProvider]
   }
 }

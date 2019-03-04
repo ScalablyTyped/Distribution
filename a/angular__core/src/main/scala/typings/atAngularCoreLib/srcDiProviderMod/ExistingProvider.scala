@@ -24,9 +24,7 @@ trait ExistingProvider
 object ExistingProvider {
   @scala.inline
   def apply(provide: js.Any, useExisting: js.Any, multi: js.UndefOr[scala.Boolean] = js.undefined): ExistingProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provide")(provide)
-    __obj.updateDynamic("useExisting")(useExisting)
+    val __obj = js.Dynamic.literal(provide = provide, useExisting = useExisting)
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
     __obj.asInstanceOf[ExistingProvider]
   }

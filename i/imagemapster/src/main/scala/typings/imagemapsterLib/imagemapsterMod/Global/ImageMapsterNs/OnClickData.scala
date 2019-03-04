@@ -26,10 +26,7 @@ object OnClickData {
     selected: scala.Boolean,
     listTarget: imagemapsterLib.imagemapsterMod.Global.JQuery = null
   ): OnClickData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(e = e, key = key, selected = selected)
     if (listTarget != null) __obj.updateDynamic("listTarget")(listTarget)
     __obj.asInstanceOf[OnClickData]
   }

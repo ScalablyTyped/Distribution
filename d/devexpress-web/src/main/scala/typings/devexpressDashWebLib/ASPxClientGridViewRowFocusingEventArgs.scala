@@ -19,10 +19,8 @@ trait ASPxClientGridViewRowFocusingEventArgs extends ASPxClientGridViewRowCancel
 object ASPxClientGridViewRowFocusingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, htmlEvent: js.Object, visibleIndex: scala.Double): ASPxClientGridViewRowFocusingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientGridViewRowFocusingEventArgs]
   }
 }

@@ -23,9 +23,7 @@ trait Anon_IdOnBehalfOfContentOwnerRating extends js.Object {
 object Anon_IdOnBehalfOfContentOwnerRating {
   @scala.inline
   def apply(id: java.lang.String, rating: java.lang.String, onBehalfOfContentOwner: java.lang.String = null): Anon_IdOnBehalfOfContentOwnerRating = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("rating")(rating)
+    val __obj = js.Dynamic.literal(id = id, rating = rating)
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
     __obj.asInstanceOf[Anon_IdOnBehalfOfContentOwnerRating]
   }

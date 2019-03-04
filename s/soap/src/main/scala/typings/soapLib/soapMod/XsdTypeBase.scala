@@ -20,10 +20,7 @@ object XsdTypeBase {
     xmlKey: java.lang.String,
     xmlns: WsdlXmlns = null
   ): XsdTypeBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal(ignoredNamespaces = ignoredNamespaces, valueKey = valueKey, xmlKey = xmlKey)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[XsdTypeBase]
   }

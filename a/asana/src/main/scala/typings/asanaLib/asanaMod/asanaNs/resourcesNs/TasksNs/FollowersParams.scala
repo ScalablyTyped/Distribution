@@ -12,8 +12,8 @@ trait FollowersParams extends js.Object {
 object FollowersParams {
   @scala.inline
   def apply(followers: js.Array[scala.Double | java.lang.String]): FollowersParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("followers")(followers)
+    val __obj = js.Dynamic.literal(followers = followers)
+  
     __obj.asInstanceOf[FollowersParams]
   }
 }

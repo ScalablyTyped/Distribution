@@ -22,12 +22,8 @@ object Full {
     regionCode: java.lang.String,
     `type`: java.lang.String
   ): Full = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("countryCode")(countryCode)
-    __obj.updateDynamic("countryName")(countryName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("regionCode")(regionCode)
+    val __obj = js.Dynamic.literal(code = code, countryCode = countryCode, countryName = countryName, name = name, regionCode = regionCode)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Full]
   }
 }

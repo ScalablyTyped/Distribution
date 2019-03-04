@@ -22,8 +22,7 @@ object Anon_Body {
     interpreter: astDashTypesLib.genKindsMod.InterpreterDirectiveKind = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (interpreter != null) __obj.updateDynamic("interpreter")(interpreter)

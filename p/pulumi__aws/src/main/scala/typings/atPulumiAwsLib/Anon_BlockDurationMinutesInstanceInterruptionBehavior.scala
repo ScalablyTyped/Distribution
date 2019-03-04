@@ -22,8 +22,7 @@ object Anon_BlockDurationMinutesInstanceInterruptionBehavior {
     maxPrice: java.lang.String = null,
     spotInstanceType: java.lang.String = null
   ): Anon_BlockDurationMinutesInstanceInterruptionBehavior = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validUntil")(validUntil)
+    val __obj = js.Dynamic.literal(validUntil = validUntil)
     if (blockDurationMinutes != null) __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes.asInstanceOf[js.Any])
     if (instanceInterruptionBehavior != null) __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior)
     if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice)

@@ -15,9 +15,8 @@ trait SourcePosition extends js.Object {
 object SourcePosition {
   @scala.inline
   def apply(column: scala.Double, line: scala.Double): SourcePosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(column = column, line = line)
+  
     __obj.asInstanceOf[SourcePosition]
   }
 }

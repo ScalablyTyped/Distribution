@@ -12,8 +12,8 @@ trait InputValidationRequest extends js.Object {
 object InputValidationRequest {
   @scala.inline
   def apply(inputs: org.scalablytyped.runtime.StringDictionary[InputValidationItem]): InputValidationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputs")(inputs)
+    val __obj = js.Dynamic.literal(inputs = inputs)
+  
     __obj.asInstanceOf[InputValidationRequest]
   }
 }

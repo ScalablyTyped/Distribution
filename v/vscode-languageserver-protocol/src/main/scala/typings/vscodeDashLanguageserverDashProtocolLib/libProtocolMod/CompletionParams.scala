@@ -20,9 +20,7 @@ object CompletionParams {
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier,
     context: CompletionContext = null
   ): CompletionParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(position = position, textDocument = textDocument)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[CompletionParams]
   }

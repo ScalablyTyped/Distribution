@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: `data_`, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMap", "HashMap")
+- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMap", "HashMap")
 @js.native
 /**
   * Default Constructor.
@@ -78,7 +78,7 @@ class HashMap[Key, T] ()
   /**
     * @hidden
     */
-  var `buckets_`: js.Any = js.native
+  var buckets_ : js.Any = js.native
   /**
     * @inheritDoc
     */

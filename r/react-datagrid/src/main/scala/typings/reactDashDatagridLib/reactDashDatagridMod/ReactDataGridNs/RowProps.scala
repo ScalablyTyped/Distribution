@@ -32,11 +32,8 @@ object RowProps {
     overClassName: java.lang.String,
     selectedClassName: java.lang.String
   ): RowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("overClassName")(overClassName)
-    __obj.updateDynamic("selectedClassName")(selectedClassName)
+    val __obj = js.Dynamic.literal(className = className, index = index, overClassName = overClassName, selectedClassName = selectedClassName)
+  
     __obj.asInstanceOf[RowProps]
   }
 }

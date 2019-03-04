@@ -36,8 +36,7 @@ object GetPropertiesParameterType {
     generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
     ownProperties: js.UndefOr[scala.Boolean] = js.undefined
   ): GetPropertiesParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectId")(objectId)
+    val __obj = js.Dynamic.literal(objectId = objectId)
     if (!js.isUndefined(accessorPropertiesOnly)) __obj.updateDynamic("accessorPropertiesOnly")(accessorPropertiesOnly)
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (!js.isUndefined(ownProperties)) __obj.updateDynamic("ownProperties")(ownProperties)

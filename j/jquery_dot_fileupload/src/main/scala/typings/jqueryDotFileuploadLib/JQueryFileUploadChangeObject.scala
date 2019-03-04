@@ -22,9 +22,7 @@ object JQueryFileUploadChangeObject {
     fileInputClone: JQuery = null,
     form: JQuery = null
   ): JQueryFileUploadChangeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("originalFiles")(originalFiles)
+    val __obj = js.Dynamic.literal(files = files, originalFiles = originalFiles)
     if (fileInput != null) __obj.updateDynamic("fileInput")(fileInput)
     if (fileInputClone != null) __obj.updateDynamic("fileInputClone")(fileInputClone)
     if (form != null) __obj.updateDynamic("form")(form)

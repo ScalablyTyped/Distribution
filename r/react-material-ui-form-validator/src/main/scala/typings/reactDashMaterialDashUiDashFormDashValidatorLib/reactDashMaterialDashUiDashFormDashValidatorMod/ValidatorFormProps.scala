@@ -22,8 +22,7 @@ object ValidatorFormProps {
     instantValidate: js.UndefOr[scala.Boolean] = js.undefined,
     onError: js.Function1[/* errors */ js.Array[_], scala.Unit] = null
   ): ValidatorFormProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSubmit")(onSubmit)
+    val __obj = js.Dynamic.literal(onSubmit = onSubmit)
     if (className != null) __obj.updateDynamic("className")(className)
     if (debounceTime != null) __obj.updateDynamic("debounceTime")(debounceTime.asInstanceOf[js.Any])
     if (!js.isUndefined(instantValidate)) __obj.updateDynamic("instantValidate")(instantValidate)

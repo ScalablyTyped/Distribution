@@ -33,11 +33,7 @@ object TranslateMarkerOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): TranslateMarkerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoRotate")(autoRotate)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("markerId")(markerId)
-    __obj.updateDynamic("rotate")(rotate)
+    val __obj = js.Dynamic.literal(autoRotate = autoRotate, destination = destination, markerId = markerId, rotate = rotate)
     if (animationEnd != null) __obj.updateDynamic("animationEnd")(animationEnd)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])

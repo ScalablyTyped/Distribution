@@ -89,9 +89,7 @@ object AppointmentResponse {
     start: instant = null,
     text: Narrative = null
   ): AppointmentResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointment")(appointment)
-    __obj.updateDynamic("participantStatus")(participantStatus)
+    val __obj = js.Dynamic.literal(appointment = appointment, participantStatus = participantStatus)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_end != null) __obj.updateDynamic("_end")(_end)
     if (_id != null) __obj.updateDynamic("_id")(_id)

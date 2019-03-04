@@ -16,7 +16,7 @@ class State[S, A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: State[S, js.Function1[/* b */ B, C]], fb: State[S, B]): State[S, C] = js.native
+  def ap_[B, C](`this`: State[S, js.Function1[/* b */ B, C]], fb: State[S, B]): State[S, C] = js.native
   /**
     * Combine two effectful actions, keeping only the result of the first
     * @since 1.7.0

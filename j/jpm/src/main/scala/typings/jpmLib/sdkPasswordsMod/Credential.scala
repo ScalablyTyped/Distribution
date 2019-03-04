@@ -26,9 +26,7 @@ object Credential {
     url: java.lang.String = null,
     usernameField: java.lang.String = null
   ): Credential = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, username = username)
     if (formSubmitURL != null) __obj.updateDynamic("formSubmitURL")(formSubmitURL)
     if (passwordField != null) __obj.updateDynamic("passwordField")(passwordField)
     if (realm != null) __obj.updateDynamic("realm")(realm)

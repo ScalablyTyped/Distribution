@@ -18,8 +18,7 @@ object Anon_DeviceNameNoDeviceVirtualName {
     noDevice: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     virtualName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_DeviceNameNoDeviceVirtualName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
     if (noDevice != null) __obj.updateDynamic("noDevice")(noDevice.asInstanceOf[js.Any])
     if (virtualName != null) __obj.updateDynamic("virtualName")(virtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DeviceNameNoDeviceVirtualName]

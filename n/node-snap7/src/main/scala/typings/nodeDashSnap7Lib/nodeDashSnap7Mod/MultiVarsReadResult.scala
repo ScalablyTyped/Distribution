@@ -14,9 +14,8 @@ trait MultiVarsReadResult extends js.Object {
 object MultiVarsReadResult {
   @scala.inline
   def apply(Data: nodeLib.Buffer, Result: scala.Double): MultiVarsReadResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Result")(Result)
+    val __obj = js.Dynamic.literal(Data = Data, Result = Result)
+  
     __obj.asInstanceOf[MultiVarsReadResult]
   }
 }

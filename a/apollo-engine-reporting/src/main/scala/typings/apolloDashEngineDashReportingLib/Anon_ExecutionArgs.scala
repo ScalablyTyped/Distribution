@@ -12,8 +12,8 @@ trait Anon_ExecutionArgs extends js.Object {
 object Anon_ExecutionArgs {
   @scala.inline
   def apply(executionArgs: graphqlLib.executionExecuteMod.ExecutionArgs): Anon_ExecutionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executionArgs")(executionArgs)
+    val __obj = js.Dynamic.literal(executionArgs = executionArgs)
+  
     __obj.asInstanceOf[Anon_ExecutionArgs]
   }
 }

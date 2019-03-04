@@ -32,8 +32,7 @@ object SourceTileOptions {
     tilePixelRatio: scala.Int | scala.Double = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): SourceTileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)

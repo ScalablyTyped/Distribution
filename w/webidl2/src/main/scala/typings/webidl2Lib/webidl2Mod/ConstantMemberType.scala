@@ -29,12 +29,8 @@ object ConstantMemberType {
     `type`: webidl2Lib.webidl2LibStrings.const,
     value: ValueDescription
   ): ConstantMemberType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("idlType")(idlType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nullable")(nullable)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, idlType = idlType, name = name, nullable = nullable, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConstantMemberType]
   }
 }

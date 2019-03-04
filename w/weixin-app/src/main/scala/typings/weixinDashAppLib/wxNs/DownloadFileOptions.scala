@@ -28,8 +28,7 @@ object DownloadFileOptions {
     success: js.Function1[/* res */ TempFileResponse, scala.Unit] = null,
     `type`: java.lang.String = null
   ): DownloadFileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (header != null) __obj.updateDynamic("header")(header)

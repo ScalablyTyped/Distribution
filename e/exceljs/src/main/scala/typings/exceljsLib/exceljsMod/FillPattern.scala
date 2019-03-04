@@ -20,8 +20,8 @@ object FillPattern {
     bgColor: Color = null,
     fgColor: Color = null
   ): FillPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(pattern = pattern)
+    __obj.updateDynamic("type")(`type`)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
     if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor)
     __obj.asInstanceOf[FillPattern]

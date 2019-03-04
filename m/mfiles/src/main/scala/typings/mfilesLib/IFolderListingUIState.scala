@@ -22,12 +22,8 @@ object IFolderListingUIState {
     IconSize: scala.Double,
     ViewMode: mfilesLib.MFilesNs.MFFolderListingViewMode
   ): IFolderListingUIState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnSortings")(ColumnSortings)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("GroupingMode")(GroupingMode)
-    __obj.updateDynamic("IconSize")(IconSize)
-    __obj.updateDynamic("ViewMode")(ViewMode)
+    val __obj = js.Dynamic.literal(ColumnSortings = ColumnSortings, Columns = Columns, GroupingMode = GroupingMode, IconSize = IconSize, ViewMode = ViewMode)
+  
     __obj.asInstanceOf[IFolderListingUIState]
   }
 }

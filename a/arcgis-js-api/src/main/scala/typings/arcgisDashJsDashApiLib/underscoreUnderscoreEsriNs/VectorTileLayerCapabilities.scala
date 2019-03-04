@@ -32,13 +32,8 @@ object VectorTileLayerCapabilities {
     operations: VectorTileLayerCapabilitiesOperations,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): VectorTileLayerCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("exportMap")(exportMap)
-    __obj.updateDynamic("exportTiles")(exportTiles)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, exportMap = exportMap, exportTiles = exportTiles, hasOwnProperty = hasOwnProperty, operations = operations, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }
 }

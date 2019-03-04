@@ -42,13 +42,8 @@ object Anon_CloseInsertModal {
     search: js.Function0[scala.Unit],
     showOnlyToogle: js.Function0[scala.Unit]
   ): Anon_CloseInsertModal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeInsertModal")(closeInsertModal)
-    __obj.updateDynamic("dropRow")(dropRow)
-    __obj.updateDynamic("exportCSV")(exportCSV)
-    __obj.updateDynamic("openInsertModal")(openInsertModal)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("showOnlyToogle")(showOnlyToogle)
+    val __obj = js.Dynamic.literal(closeInsertModal = closeInsertModal, dropRow = dropRow, exportCSV = exportCSV, openInsertModal = openInsertModal, search = search, showOnlyToogle = showOnlyToogle)
+  
     __obj.asInstanceOf[Anon_CloseInsertModal]
   }
 }

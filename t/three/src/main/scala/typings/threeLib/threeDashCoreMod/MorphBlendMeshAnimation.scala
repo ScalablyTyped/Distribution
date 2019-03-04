@@ -38,20 +38,8 @@ object MorphBlendMeshAnimation {
     time: scala.Double,
     weight: scala.Double
   ): MorphBlendMeshAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("currentFrame")(currentFrame)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("directionBackwards")(directionBackwards)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("fps")(fps)
-    __obj.updateDynamic("lastFrame")(lastFrame)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("mirroredLoop")(mirroredLoop)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(active = active, currentFrame = currentFrame, direction = direction, directionBackwards = directionBackwards, duration = duration, end = end, fps = fps, lastFrame = lastFrame, length = length, mirroredLoop = mirroredLoop, start = start, time = time, weight = weight)
+  
     __obj.asInstanceOf[MorphBlendMeshAnimation]
   }
 }

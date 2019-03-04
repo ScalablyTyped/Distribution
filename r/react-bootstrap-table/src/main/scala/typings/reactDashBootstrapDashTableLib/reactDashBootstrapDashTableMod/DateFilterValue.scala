@@ -13,9 +13,8 @@ trait DateFilterValue extends _FilterValueData {
 object DateFilterValue {
   @scala.inline
   def apply(comparator: FilterComparator, date: stdLib.Date | java.lang.String): DateFilterValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparator")(comparator)
-    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comparator = comparator, date = date.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DateFilterValue]
   }
 }

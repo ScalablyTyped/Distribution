@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait LodashPropOr4x1 extends js.Object {
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashPropOr4x3 = js.native
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath, `object`: js.Any): js.Any = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Any): LodashPropOr4x5 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__, `object`: js.Any): LodashPropOr4x5 = js.native
 }
 

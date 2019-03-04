@@ -22,9 +22,8 @@ object AddForeignKeyConstraintOptions {
     name: java.lang.String = null,
     references: sequelizeLib.Anon_Field = null
   ): AddForeignKeyConstraintOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("onDelete")(onDelete)
-    __obj.updateDynamic("onUpdate")(onUpdate)
+    val __obj = js.Dynamic.literal(onDelete = onDelete, onUpdate = onUpdate)
+    __obj.updateDynamic("type")(`type`)
     if (name != null) __obj.updateDynamic("name")(name)
     if (references != null) __obj.updateDynamic("references")(references)
     __obj.asInstanceOf[AddForeignKeyConstraintOptions]

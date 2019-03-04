@@ -37,14 +37,8 @@ object SingleReference {
     Row: scala.Double,
     Sheet: scala.Double
   ): SingleReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Column")(Column)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("RelativeColumn")(RelativeColumn)
-    __obj.updateDynamic("RelativeRow")(RelativeRow)
-    __obj.updateDynamic("RelativeSheet")(RelativeSheet)
-    __obj.updateDynamic("Row")(Row)
-    __obj.updateDynamic("Sheet")(Sheet)
+    val __obj = js.Dynamic.literal(Column = Column, Flags = Flags, RelativeColumn = RelativeColumn, RelativeRow = RelativeRow, RelativeSheet = RelativeSheet, Row = Row, Sheet = Sheet)
+  
     __obj.asInstanceOf[SingleReference]
   }
 }

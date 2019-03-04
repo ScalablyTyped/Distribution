@@ -20,11 +20,8 @@ object _Impl {
     message: js.Function2[java.lang.String, java.lang.String, java.lang.String],
     standard: js.Function1[js.Any, java.lang.String]
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("escape")(escape)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("standard")(standard)
+    val __obj = js.Dynamic.literal(category = category, escape = escape, message = message, standard = standard)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

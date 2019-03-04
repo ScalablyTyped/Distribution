@@ -19,12 +19,8 @@ object InlineCountSettings {
     reset: js.Function0[scala.Unit],
     toString: js.Function0[java.lang.String]
   ): InlineCountSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultInlineCount")(DefaultInlineCount)
-    __obj.updateDynamic("InlineCount")(InlineCount)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(DefaultInlineCount = DefaultInlineCount, InlineCount = InlineCount, isSet = isSet, reset = reset, toString = toString)
+  
     __obj.asInstanceOf[InlineCountSettings]
   }
 }

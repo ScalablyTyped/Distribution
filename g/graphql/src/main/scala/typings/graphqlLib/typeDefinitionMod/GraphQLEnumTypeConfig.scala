@@ -26,9 +26,7 @@ object GraphQLEnumTypeConfig {
     description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
     extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.EnumTypeExtensionNode]] = null
   ): GraphQLEnumTypeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(name = name, values = values)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

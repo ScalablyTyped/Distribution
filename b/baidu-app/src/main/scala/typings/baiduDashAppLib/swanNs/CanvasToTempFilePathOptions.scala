@@ -41,8 +41,7 @@ object CanvasToTempFilePathOptions {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): CanvasToTempFilePathOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasId")(canvasId)
+    val __obj = js.Dynamic.literal(canvasId = canvasId)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (destHeight != null) __obj.updateDynamic("destHeight")(destHeight.asInstanceOf[js.Any])
     if (destWidth != null) __obj.updateDynamic("destWidth")(destWidth.asInstanceOf[js.Any])

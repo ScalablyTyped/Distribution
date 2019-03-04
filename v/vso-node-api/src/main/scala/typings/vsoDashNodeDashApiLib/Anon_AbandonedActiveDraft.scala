@@ -15,11 +15,8 @@ trait Anon_AbandonedActiveDraft extends js.Object {
 object Anon_AbandonedActiveDraft {
   @scala.inline
   def apply(abandoned: scala.Double, active: scala.Double, draft: scala.Double, undefined: scala.Double): Anon_AbandonedActiveDraft = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandoned")(abandoned)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("draft")(draft)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(abandoned = abandoned, active = active, draft = draft, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_AbandonedActiveDraft]
   }
 }

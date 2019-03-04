@@ -13,9 +13,8 @@ trait Anon_MessageStack extends js.Object {
 object Anon_MessageStack {
   @scala.inline
   def apply(message: java.lang.String, stack: java.lang.String): Anon_MessageStack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message, stack = stack)
+  
     __obj.asInstanceOf[Anon_MessageStack]
   }
 }

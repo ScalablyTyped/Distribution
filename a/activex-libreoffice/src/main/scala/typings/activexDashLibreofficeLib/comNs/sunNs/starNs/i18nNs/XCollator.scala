@@ -119,17 +119,8 @@ object XCollator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCollator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareString")(compareString)
-    __obj.updateDynamic("compareSubstring")(compareSubstring)
-    __obj.updateDynamic("listCollatorAlgorithms")(listCollatorAlgorithms)
-    __obj.updateDynamic("listCollatorOptions")(listCollatorOptions)
-    __obj.updateDynamic("loadCollatorAlgorithm")(loadCollatorAlgorithm)
-    __obj.updateDynamic("loadCollatorAlgorithmWithEndUserOption")(loadCollatorAlgorithmWithEndUserOption)
-    __obj.updateDynamic("loadDefaultCollator")(loadDefaultCollator)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, compareString = compareString, compareSubstring = compareSubstring, listCollatorAlgorithms = listCollatorAlgorithms, listCollatorOptions = listCollatorOptions, loadCollatorAlgorithm = loadCollatorAlgorithm, loadCollatorAlgorithmWithEndUserOption = loadCollatorAlgorithmWithEndUserOption, loadDefaultCollator = loadDefaultCollator, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCollator]
   }
 }

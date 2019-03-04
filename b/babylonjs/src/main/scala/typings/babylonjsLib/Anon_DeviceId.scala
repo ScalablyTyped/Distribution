@@ -22,12 +22,8 @@ object Anon_DeviceId {
     minHeight: scala.Double,
     minWidth: scala.Double
   ): Anon_DeviceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("maxWidth")(maxWidth)
-    __obj.updateDynamic("minHeight")(minHeight)
-    __obj.updateDynamic("minWidth")(minWidth)
+    val __obj = js.Dynamic.literal(deviceId = deviceId, maxHeight = maxHeight, maxWidth = maxWidth, minHeight = minHeight, minWidth = minWidth)
+  
     __obj.asInstanceOf[Anon_DeviceId]
   }
 }

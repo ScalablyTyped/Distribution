@@ -13,9 +13,8 @@ trait CreateListParams extends js.Object {
 object CreateListParams {
   @scala.inline
   def apply(name: java.lang.String, state: alexaDashSdkLib.alexaDashSdkLibStrings.active): CreateListParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(name = name, state = state)
+  
     __obj.asInstanceOf[CreateListParams]
   }
 }

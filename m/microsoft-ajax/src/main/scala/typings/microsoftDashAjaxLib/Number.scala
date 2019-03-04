@@ -27,9 +27,8 @@ object Number {
     format: js.Function1[java.lang.String, java.lang.String],
     localeFormat: js.Function1[java.lang.String, java.lang.String]
   ): Number = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("localeFormat")(localeFormat)
+    val __obj = js.Dynamic.literal(format = format, localeFormat = localeFormat)
+  
     __obj.asInstanceOf[Number]
   }
 }

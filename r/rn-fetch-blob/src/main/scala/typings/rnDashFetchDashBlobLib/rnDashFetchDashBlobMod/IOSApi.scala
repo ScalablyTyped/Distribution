@@ -25,9 +25,8 @@ object IOSApi {
     openDocument: js.Function1[java.lang.String, scala.Unit],
     previewDocument: js.Function1[java.lang.String, scala.Unit]
   ): IOSApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openDocument")(openDocument)
-    __obj.updateDynamic("previewDocument")(previewDocument)
+    val __obj = js.Dynamic.literal(openDocument = openDocument, previewDocument = previewDocument)
+  
     __obj.asInstanceOf[IOSApi]
   }
 }

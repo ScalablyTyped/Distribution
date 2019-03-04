@@ -12,8 +12,8 @@ trait ICustomizerContext extends js.Object {
 object ICustomizerContext {
   @scala.inline
   def apply(customizations: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ICustomizations): ICustomizerContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customizations")(customizations)
+    val __obj = js.Dynamic.literal(customizations = customizations)
+  
     __obj.asInstanceOf[ICustomizerContext]
   }
 }

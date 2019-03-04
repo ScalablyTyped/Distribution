@@ -30,13 +30,7 @@ object Conversation {
     messages: js.Array[Message] = null,
     page: scala.Int | scala.Double = null
   ): Conversation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last_message_preview")(last_message_preview)
-    __obj.updateDynamic("message_count")(message_count)
-    __obj.updateDynamic("with_account")(with_account)
-    __obj.updateDynamic("with_account_id")(with_account_id)
+    val __obj = js.Dynamic.literal(datetime = datetime, id = id, last_message_preview = last_message_preview, message_count = message_count, with_account = with_account, with_account_id = with_account_id)
     if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
     if (messages != null) __obj.updateDynamic("messages")(messages)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])

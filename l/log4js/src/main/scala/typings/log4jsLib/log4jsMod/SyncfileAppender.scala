@@ -26,8 +26,8 @@ object SyncfileAppender {
     layout: Layout = null,
     maxLogSize: scala.Double | java.lang.String = null
   ): SyncfileAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(filename = filename)
+    __obj.updateDynamic("type")(`type`)
     if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])

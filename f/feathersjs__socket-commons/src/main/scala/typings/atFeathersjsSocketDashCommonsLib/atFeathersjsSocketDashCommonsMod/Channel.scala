@@ -20,11 +20,8 @@ object Channel {
     leave: js.Function1[/* repeated */ Connection, Channel],
     send: js.Function1[js.Any, Channel]
   ): Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("leave")(leave)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(filter = filter, join = join, leave = leave, send = send)
+  
     __obj.asInstanceOf[Channel]
   }
 }

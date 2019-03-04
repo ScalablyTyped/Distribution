@@ -30,9 +30,7 @@ object DotMapOptions {
     strokeLineJoin: navermapsLib.naverNs.mapsNs.strokeLineJoinType = null,
     strokeWeight: scala.Int | scala.Double = null
   ): DotMapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

@@ -31,8 +31,8 @@ object ServerExtEventsObject {
     `type`: ServerExtType,
     options: ServerExtOptions = null
   ): ServerExtEventsObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[ServerExtEventsObject]
   }

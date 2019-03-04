@@ -22,8 +22,7 @@ object GetUsersDataPaged {
     search_engine: java.lang.String = null,
     sort: java.lang.String = null
   ): GetUsersDataPaged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("include_totals")(include_totals)
+    val __obj = js.Dynamic.literal(include_totals = include_totals)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(include_fields)) __obj.updateDynamic("include_fields")(include_fields)

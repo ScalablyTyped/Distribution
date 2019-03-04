@@ -153,8 +153,7 @@ object Result {
     suppressionStates: js.Array[sarifLib.sarifMod.ResultNs.suppressionStates] = null,
     workItemUris: js.Array[java.lang.String] = null
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (analysisTarget != null) __obj.updateDynamic("analysisTarget")(analysisTarget)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (baselineState != null) __obj.updateDynamic("baselineState")(baselineState)

@@ -18,8 +18,7 @@ object IEnum {
     values: org.scalablytyped.runtime.StringDictionary[scala.Double],
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IEnum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[IEnum]
   }

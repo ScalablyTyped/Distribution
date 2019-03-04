@@ -24,13 +24,8 @@ object MinaAnimation {
     status: js.Function0[scala.Double],
     stop: js.Function0[scala.Unit]
   ): MinaAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing, id = id, speed = speed, status = status, stop = stop)
+  
     __obj.asInstanceOf[MinaAnimation]
   }
 }

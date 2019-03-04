@@ -14,9 +14,8 @@ trait RTCSctpTransport extends js.Object {
 object RTCSctpTransport {
   @scala.inline
   def apply(maxMessageSize: scala.Double, transport: RTCDtlsTransport): RTCSctpTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxMessageSize")(maxMessageSize)
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(maxMessageSize = maxMessageSize, transport = transport)
+  
     __obj.asInstanceOf[RTCSctpTransport]
   }
 }

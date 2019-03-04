@@ -22,12 +22,8 @@ object CalendarDay {
     events: js.Array[_],
     properties: CalendarDayProperties
   ): CalendarDay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(classes = classes, date = date, day = day, events = events, properties = properties)
+  
     __obj.asInstanceOf[CalendarDay]
   }
 }

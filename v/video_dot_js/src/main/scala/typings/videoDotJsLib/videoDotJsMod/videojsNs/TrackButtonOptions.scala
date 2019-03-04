@@ -17,8 +17,7 @@ object TrackButtonOptions {
     iniChildren: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): TrackButtonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(track = track)
     if (children != null) __obj.updateDynamic("children")(children)
     if (!js.isUndefined(iniChildren)) __obj.updateDynamic("iniChildren")(iniChildren)
     if (title != null) __obj.updateDynamic("title")(title)

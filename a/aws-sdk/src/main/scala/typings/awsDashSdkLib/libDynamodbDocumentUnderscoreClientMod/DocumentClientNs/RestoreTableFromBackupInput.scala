@@ -19,9 +19,8 @@ trait RestoreTableFromBackupInput extends js.Object {
 object RestoreTableFromBackupInput {
   @scala.inline
   def apply(BackupArn: BackupArn, TargetTableName: TableName): RestoreTableFromBackupInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupArn")(BackupArn)
-    __obj.updateDynamic("TargetTableName")(TargetTableName)
+    val __obj = js.Dynamic.literal(BackupArn = BackupArn, TargetTableName = TargetTableName)
+  
     __obj.asInstanceOf[RestoreTableFromBackupInput]
   }
 }

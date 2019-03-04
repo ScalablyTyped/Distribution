@@ -64,15 +64,8 @@ object DeploymentSpec {
     strategy: DeploymentStrategy,
     template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
   ): DeploymentSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minReadySeconds")(minReadySeconds)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("progressDeadlineSeconds")(progressDeadlineSeconds)
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("strategy")(strategy)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, paused = paused, progressDeadlineSeconds = progressDeadlineSeconds, replicas = replicas, revisionHistoryLimit = revisionHistoryLimit, selector = selector, strategy = strategy, template = template)
+  
     __obj.asInstanceOf[DeploymentSpec]
   }
 }

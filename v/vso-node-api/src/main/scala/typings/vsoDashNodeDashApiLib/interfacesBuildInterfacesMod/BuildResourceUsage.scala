@@ -32,11 +32,8 @@ object BuildResourceUsage {
     totalUsage: scala.Double,
     xamlControllers: scala.Double
   ): BuildResourceUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distributedTaskAgents")(distributedTaskAgents)
-    __obj.updateDynamic("paidPrivateAgentSlots")(paidPrivateAgentSlots)
-    __obj.updateDynamic("totalUsage")(totalUsage)
-    __obj.updateDynamic("xamlControllers")(xamlControllers)
+    val __obj = js.Dynamic.literal(distributedTaskAgents = distributedTaskAgents, paidPrivateAgentSlots = paidPrivateAgentSlots, totalUsage = totalUsage, xamlControllers = xamlControllers)
+  
     __obj.asInstanceOf[BuildResourceUsage]
   }
 }

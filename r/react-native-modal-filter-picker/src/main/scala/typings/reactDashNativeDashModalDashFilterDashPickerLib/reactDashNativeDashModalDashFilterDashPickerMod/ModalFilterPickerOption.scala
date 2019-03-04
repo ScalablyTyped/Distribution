@@ -13,9 +13,8 @@ trait ModalFilterPickerOption extends js.Object {
 object ModalFilterPickerOption {
   @scala.inline
   def apply(key: java.lang.String, label: java.lang.String): ModalFilterPickerOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(key = key, label = label)
+  
     __obj.asInstanceOf[ModalFilterPickerOption]
   }
 }

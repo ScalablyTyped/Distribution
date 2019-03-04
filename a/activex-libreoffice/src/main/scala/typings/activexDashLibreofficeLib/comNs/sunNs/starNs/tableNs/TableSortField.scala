@@ -50,13 +50,8 @@ object TableSortField {
     IsAscending: scala.Boolean,
     IsCaseSensitive: scala.Boolean
   ): TableSortField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
-    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
-    __obj.updateDynamic("Field")(Field)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("IsAscending")(IsAscending)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
+    val __obj = js.Dynamic.literal(CollatorAlgorithm = CollatorAlgorithm, CollatorLocale = CollatorLocale, Field = Field, FieldType = FieldType, IsAscending = IsAscending, IsCaseSensitive = IsCaseSensitive)
+  
     __obj.asInstanceOf[TableSortField]
   }
 }

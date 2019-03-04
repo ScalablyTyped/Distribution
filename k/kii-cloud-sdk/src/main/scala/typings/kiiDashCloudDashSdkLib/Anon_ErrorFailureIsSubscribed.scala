@@ -20,9 +20,8 @@ object Anon_ErrorFailureIsSubscribed {
     failure: js.Function1[stdLib.Error, js.Any],
     success: js.Function3[kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, T, scala.Boolean, js.Any]
   ): Anon_ErrorFailureIsSubscribed[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_ErrorFailureIsSubscribed[T]]
   }
 }

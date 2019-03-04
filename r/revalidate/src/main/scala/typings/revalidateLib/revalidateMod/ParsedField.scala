@@ -14,10 +14,8 @@ trait ParsedField extends js.Object {
 object ParsedField {
   @scala.inline
   def apply(baseName: java.lang.String, fullName: java.lang.String, isArray: scala.Boolean): ParsedField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseName")(baseName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("isArray")(isArray)
+    val __obj = js.Dynamic.literal(baseName = baseName, fullName = fullName, isArray = isArray)
+  
     __obj.asInstanceOf[ParsedField]
   }
 }

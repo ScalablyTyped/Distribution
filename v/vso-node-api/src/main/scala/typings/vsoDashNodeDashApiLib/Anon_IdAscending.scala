@@ -20,11 +20,8 @@ object Anon_IdAscending {
     nameAscending: scala.Double,
     nameDescending: scala.Double
   ): Anon_IdAscending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idAscending")(idAscending)
-    __obj.updateDynamic("idDescending")(idDescending)
-    __obj.updateDynamic("nameAscending")(nameAscending)
-    __obj.updateDynamic("nameDescending")(nameDescending)
+    val __obj = js.Dynamic.literal(idAscending = idAscending, idDescending = idDescending, nameAscending = nameAscending, nameDescending = nameDescending)
+  
     __obj.asInstanceOf[Anon_IdAscending]
   }
 }

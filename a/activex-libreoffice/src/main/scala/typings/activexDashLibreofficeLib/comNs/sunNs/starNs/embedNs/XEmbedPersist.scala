@@ -142,20 +142,8 @@ object XEmbedPersist {
       scala.Unit
     ]
   ): XEmbedPersist = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EntryName")(EntryName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getEntryName")(getEntryName)
-    __obj.updateDynamic("hasEntry")(hasEntry)
-    __obj.updateDynamic("isReadonly")(isReadonly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("saveCompleted")(saveCompleted)
-    __obj.updateDynamic("setPersistentEntry")(setPersistentEntry)
-    __obj.updateDynamic("storeAsEntry")(storeAsEntry)
-    __obj.updateDynamic("storeOwn")(storeOwn)
-    __obj.updateDynamic("storeToEntry")(storeToEntry)
+    val __obj = js.Dynamic.literal(EntryName = EntryName, acquire = acquire, getEntryName = getEntryName, hasEntry = hasEntry, isReadonly = isReadonly, queryInterface = queryInterface, release = release, reload = reload, saveCompleted = saveCompleted, setPersistentEntry = setPersistentEntry, storeAsEntry = storeAsEntry, storeOwn = storeOwn, storeToEntry = storeToEntry)
+  
     __obj.asInstanceOf[XEmbedPersist]
   }
 }

@@ -20,10 +20,7 @@ object MemberCreateData {
     subscribed: scala.Boolean,
     vars: js.Object = null
   ): MemberCreateData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subscribed")(subscribed)
+    val __obj = js.Dynamic.literal(address = address, name = name, subscribed = subscribed)
     if (vars != null) __obj.updateDynamic("vars")(vars)
     __obj.asInstanceOf[MemberCreateData]
   }

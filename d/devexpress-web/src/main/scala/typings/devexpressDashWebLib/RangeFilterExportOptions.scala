@@ -24,9 +24,8 @@ trait RangeFilterExportOptions extends js.Object {
 object RangeFilterExportOptions {
   @scala.inline
   def apply(AutomaticPageLayout: scala.Boolean, SizeMode: java.lang.String): RangeFilterExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticPageLayout")(AutomaticPageLayout)
-    __obj.updateDynamic("SizeMode")(SizeMode)
+    val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout, SizeMode = SizeMode)
+  
     __obj.asInstanceOf[RangeFilterExportOptions]
   }
 }

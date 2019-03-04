@@ -14,10 +14,8 @@ trait ExportFontInfo extends js.Object {
 object ExportFontInfo {
   @scala.inline
   def apply(GdiCharSet: js.Any, Name: java.lang.String, UseCustomFontInfo: scala.Boolean): ExportFontInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GdiCharSet")(GdiCharSet)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("UseCustomFontInfo")(UseCustomFontInfo)
+    val __obj = js.Dynamic.literal(GdiCharSet = GdiCharSet, Name = Name, UseCustomFontInfo = UseCustomFontInfo)
+  
     __obj.asInstanceOf[ExportFontInfo]
   }
 }

@@ -22,8 +22,11 @@ object IThemeGrayScalePalette {
     `4`: java.lang.String,
     name: java.lang.String
   ): IThemeGrayScalePalette = {
-    val __obj = js.Dynamic.literal(`1` = `1`, `2` = `2`, `3` = `3`, `4` = `4`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
     __obj.asInstanceOf[IThemeGrayScalePalette]
   }
 }

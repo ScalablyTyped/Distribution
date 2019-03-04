@@ -16,9 +16,8 @@ object DataViewDefinitionBuilder {
     build: js.Function0[DataViewDefinition],
     setColumns: js.Function1[js.Array[js.Object], DataViewDefinitionBuilder]
   ): DataViewDefinitionBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setColumns")(setColumns)
+    val __obj = js.Dynamic.literal(build = build, setColumns = setColumns)
+  
     __obj.asInstanceOf[DataViewDefinitionBuilder]
   }
 }

@@ -14,10 +14,8 @@ trait UnionPayFetchCapabilitiesPayload extends js.Object {
 object UnionPayFetchCapabilitiesPayload {
   @scala.inline
   def apply(isDebit: scala.Boolean, isUnionPay: scala.Boolean, unionPay: UnionPayProperties): UnionPayFetchCapabilitiesPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDebit")(isDebit)
-    __obj.updateDynamic("isUnionPay")(isUnionPay)
-    __obj.updateDynamic("unionPay")(unionPay)
+    val __obj = js.Dynamic.literal(isDebit = isDebit, isUnionPay = isUnionPay, unionPay = unionPay)
+  
     __obj.asInstanceOf[UnionPayFetchCapabilitiesPayload]
   }
 }

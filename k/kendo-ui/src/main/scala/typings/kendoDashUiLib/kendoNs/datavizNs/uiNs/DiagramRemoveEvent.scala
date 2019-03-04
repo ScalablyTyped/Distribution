@@ -19,10 +19,7 @@ object DiagramRemoveEvent {
     connection: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Connection = null,
     shape: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Shape = null
   ): DiagramRemoveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (shape != null) __obj.updateDynamic("shape")(shape)
     __obj.asInstanceOf[DiagramRemoveEvent]

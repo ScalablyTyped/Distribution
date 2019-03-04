@@ -43,8 +43,7 @@ object IInvoiceCreationOptions {
     subscription: java.lang.String = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoiceCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customer")(customer)
+    val __obj = js.Dynamic.literal(customer = customer)
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (expand != null) __obj.updateDynamic("expand")(expand)

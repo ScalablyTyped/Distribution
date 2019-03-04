@@ -30,16 +30,8 @@ object IRoute {
     put: js.Function1[/* repeated */ RequestHandler, IRoute],
     stack: js.Any
   ): IRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(all = all, delete = delete, get = get, options = options, patch = patch, path = path, post = post, put = put, stack = stack)
+  
     __obj.asInstanceOf[IRoute]
   }
 }

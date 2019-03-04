@@ -153,24 +153,8 @@ object XUIConfigurationManager {
     ],
     reset: js.Function0[scala.Unit]
   ): XUIConfigurationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EventsManager")(EventsManager)
-    __obj.updateDynamic("ImageManager")(ImageManager)
-    __obj.updateDynamic("ShortCutManager")(ShortCutManager)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createSettings")(createSettings)
-    __obj.updateDynamic("getEventsManager")(getEventsManager)
-    __obj.updateDynamic("getImageManager")(getImageManager)
-    __obj.updateDynamic("getSettings")(getSettings)
-    __obj.updateDynamic("getShortCutManager")(getShortCutManager)
-    __obj.updateDynamic("getUIElementsInfo")(getUIElementsInfo)
-    __obj.updateDynamic("hasSettings")(hasSettings)
-    __obj.updateDynamic("insertSettings")(insertSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSettings")(removeSettings)
-    __obj.updateDynamic("replaceSettings")(replaceSettings)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(EventsManager = EventsManager, ImageManager = ImageManager, ShortCutManager = ShortCutManager, acquire = acquire, createSettings = createSettings, getEventsManager = getEventsManager, getImageManager = getImageManager, getSettings = getSettings, getShortCutManager = getShortCutManager, getUIElementsInfo = getUIElementsInfo, hasSettings = hasSettings, insertSettings = insertSettings, queryInterface = queryInterface, release = release, removeSettings = removeSettings, replaceSettings = replaceSettings, reset = reset)
+  
     __obj.asInstanceOf[XUIConfigurationManager]
   }
 }

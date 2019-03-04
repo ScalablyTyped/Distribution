@@ -33,16 +33,8 @@ object RTCIceTransport {
     onselectedcandidatepairchange: IceTransportEventHandler,
     onstatechange: IceTransportEventHandler
   ): RTCIceTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatheringState")(gatheringState)
-    __obj.updateDynamic("getLocalCandidates")(getLocalCandidates)
-    __obj.updateDynamic("getLocalParameters")(getLocalParameters)
-    __obj.updateDynamic("getRemoteCandidates")(getRemoteCandidates)
-    __obj.updateDynamic("getRemoteParameters")(getRemoteParameters)
-    __obj.updateDynamic("getSelectedCandidatePair")(getSelectedCandidatePair)
-    __obj.updateDynamic("ongatheringstatechange")(ongatheringstatechange.asInstanceOf[js.Any])
-    __obj.updateDynamic("onselectedcandidatepairchange")(onselectedcandidatepairchange.asInstanceOf[js.Any])
-    __obj.updateDynamic("onstatechange")(onstatechange.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gatheringState = gatheringState, getLocalCandidates = getLocalCandidates, getLocalParameters = getLocalParameters, getRemoteCandidates = getRemoteCandidates, getRemoteParameters = getRemoteParameters, getSelectedCandidatePair = getSelectedCandidatePair, ongatheringstatechange = ongatheringstatechange.asInstanceOf[js.Any], onselectedcandidatepairchange = onselectedcandidatepairchange.asInstanceOf[js.Any], onstatechange = onstatechange.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RTCIceTransport]
   }
 }

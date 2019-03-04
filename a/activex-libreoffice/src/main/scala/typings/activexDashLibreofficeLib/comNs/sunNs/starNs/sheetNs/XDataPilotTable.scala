@@ -29,13 +29,8 @@ object XDataPilotTable {
     refresh: js.Function0[scala.Unit],
     release: js.Function0[scala.Unit]
   ): XDataPilotTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputRange")(OutputRange)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getOutputRange")(getOutputRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(OutputRange = OutputRange, acquire = acquire, getOutputRange = getOutputRange, queryInterface = queryInterface, refresh = refresh, release = release)
+  
     __obj.asInstanceOf[XDataPilotTable]
   }
 }

@@ -91,18 +91,8 @@ object ILayout2 {
     setupAnimations: js.Function0[scala.Unit],
     uninitialize: js.Function0[scala.Unit]
   ): ILayout2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dragLeave")(dragLeave)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("executeAnimations")(executeAnimations)
-    __obj.updateDynamic("getAdjacent")(getAdjacent)
-    __obj.updateDynamic("hitTest")(hitTest)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("itemsFromRange")(itemsFromRange)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("setupAnimations")(setupAnimations)
-    __obj.updateDynamic("uninitialize")(uninitialize)
+    val __obj = js.Dynamic.literal(dragLeave = dragLeave, dragOver = dragOver, executeAnimations = executeAnimations, getAdjacent = getAdjacent, hitTest = hitTest, initialize = initialize, itemsFromRange = itemsFromRange, layout = layout, orientation = orientation, setupAnimations = setupAnimations, uninitialize = uninitialize)
+  
     __obj.asInstanceOf[ILayout2]
   }
 }

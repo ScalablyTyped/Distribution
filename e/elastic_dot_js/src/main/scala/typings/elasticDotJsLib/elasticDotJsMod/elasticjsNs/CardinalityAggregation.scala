@@ -60,15 +60,8 @@ object CardinalityAggregation {
     script: js.Function1[java.lang.String, CardinalityAggregation],
     toJSON: js.Function0[js.Any]
   ): CardinalityAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("precisionThreshold")(precisionThreshold)
-    __obj.updateDynamic("rehash")(rehash)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, field = field, lang = lang, params = params, precisionThreshold = precisionThreshold, rehash = rehash, script = script, toJSON = toJSON)
+  
     __obj.asInstanceOf[CardinalityAggregation]
   }
 }

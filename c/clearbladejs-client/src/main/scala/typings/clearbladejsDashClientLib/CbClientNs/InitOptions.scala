@@ -42,9 +42,7 @@ object InitOptions {
     registerUser: js.UndefOr[scala.Boolean] = js.undefined,
     useUser: APIUser = null
   ): InitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
+    val __obj = js.Dynamic.literal(systemKey = systemKey, systemSecret = systemSecret)
     if (URI != null) __obj.updateDynamic("URI")(URI)
     if (callTimeout != null) __obj.updateDynamic("callTimeout")(callTimeout.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)

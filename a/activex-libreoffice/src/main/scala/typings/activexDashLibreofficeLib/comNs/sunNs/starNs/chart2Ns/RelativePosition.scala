@@ -44,10 +44,8 @@ object RelativePosition {
     Primary: scala.Double,
     Secondary: scala.Double
   ): RelativePosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("Primary")(Primary)
-    __obj.updateDynamic("Secondary")(Secondary)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, Primary = Primary, Secondary = Secondary)
+  
     __obj.asInstanceOf[RelativePosition]
   }
 }

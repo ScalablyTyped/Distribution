@@ -36,30 +36,8 @@ object IModuleReferenceSyntax {
     withLeadingTrivia: js.Function1[ISyntaxTriviaList, ISyntaxNodeOrToken],
     withTrailingTrivia: js.Function1[ISyntaxTriviaList, ISyntaxNodeOrToken]
   ): IModuleReferenceSyntax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("childAt")(childAt)
-    __obj.updateDynamic("childCount")(childCount)
-    __obj.updateDynamic("collectTextElements")(collectTextElements)
-    __obj.updateDynamic("firstToken")(firstToken)
-    __obj.updateDynamic("fullText")(fullText)
-    __obj.updateDynamic("fullWidth")(fullWidth)
-    __obj.updateDynamic("isIncrementallyUnusable")(isIncrementallyUnusable)
-    __obj.updateDynamic("isList")(isList)
-    __obj.updateDynamic("isModuleReference")(isModuleReference)
-    __obj.updateDynamic("isNode")(isNode)
-    __obj.updateDynamic("isSeparatedList")(isSeparatedList)
-    __obj.updateDynamic("isToken")(isToken)
-    __obj.updateDynamic("isTypeScriptSpecific")(isTypeScriptSpecific)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("lastToken")(lastToken)
-    __obj.updateDynamic("leadingTrivia")(leadingTrivia)
-    __obj.updateDynamic("leadingTriviaWidth")(leadingTriviaWidth)
-    __obj.updateDynamic("trailingTrivia")(trailingTrivia)
-    __obj.updateDynamic("trailingTriviaWidth")(trailingTriviaWidth)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("withLeadingTrivia")(withLeadingTrivia)
-    __obj.updateDynamic("withTrailingTrivia")(withTrailingTrivia)
+    val __obj = js.Dynamic.literal(accept = accept, childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isModuleReference = isModuleReference, isNode = isNode, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width, withLeadingTrivia = withLeadingTrivia, withTrailingTrivia = withTrailingTrivia)
+  
     __obj.asInstanceOf[IModuleReferenceSyntax]
   }
 }

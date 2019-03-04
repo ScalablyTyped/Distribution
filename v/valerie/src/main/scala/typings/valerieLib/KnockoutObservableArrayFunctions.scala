@@ -22,8 +22,8 @@ trait KnockoutObservableArrayFunctions[T] extends js.Object {
 object KnockoutObservableArrayFunctions {
   @scala.inline
   def apply[T](validateAsModel: js.Function0[valerieLib.ValerieNs.ValidatableModel[KnockoutObservableArray[T]]]): KnockoutObservableArrayFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validateAsModel")(validateAsModel)
+    val __obj = js.Dynamic.literal(validateAsModel = validateAsModel)
+  
     __obj.asInstanceOf[KnockoutObservableArrayFunctions[T]]
   }
 }

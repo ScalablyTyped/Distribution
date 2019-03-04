@@ -41,17 +41,8 @@ object WaveSurferUtil {
       stdLib.HTMLElement
     ]
   ): WaveSurferUtil = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Observer")(Observer)
-    __obj.updateDynamic("ajax")(ajax)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("frame")(frame)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("preventClick")(preventClick)
-    __obj.updateDynamic("requestAnimationFrame")(requestAnimationFrame)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(Observer = Observer, ajax = ajax, extend = extend, frame = frame, getId = getId, max = max, min = min, preventClick = preventClick, requestAnimationFrame = requestAnimationFrame, style = style)
+  
     __obj.asInstanceOf[WaveSurferUtil]
   }
 }

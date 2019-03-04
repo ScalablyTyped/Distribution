@@ -29,9 +29,7 @@ object CreateConnection {
     options: js.Any = null,
     realms: js.Array[java.lang.String] = null
   ): CreateConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("strategy")(strategy)
+    val __obj = js.Dynamic.literal(name = name, strategy = strategy)
     if (enabled_clients != null) __obj.updateDynamic("enabled_clients")(enabled_clients)
     if (!js.isUndefined(is_domain_connection)) __obj.updateDynamic("is_domain_connection")(is_domain_connection)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

@@ -27,10 +27,8 @@ object CustomPartitionAssignmentProtocol {
     name: java.lang.String,
     version: scala.Double
   ): CustomPartitionAssignmentProtocol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assign")(assign)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(assign = assign, name = name, version = version)
+  
     __obj.asInstanceOf[CustomPartitionAssignmentProtocol]
   }
 }

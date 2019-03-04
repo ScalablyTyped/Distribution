@@ -99,25 +99,8 @@ object GetSnapshotResult {
     storageType: java.lang.String,
     vpcId: java.lang.String
   ): GetSnapshotResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocatedStorage")(allocatedStorage)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("dbSnapshotArn")(dbSnapshotArn)
-    __obj.updateDynamic("encrypted")(encrypted)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("engineVersion")(engineVersion)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    __obj.updateDynamic("licenseModel")(licenseModel)
-    __obj.updateDynamic("optionGroupName")(optionGroupName)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("snapshotCreateTime")(snapshotCreateTime)
-    __obj.updateDynamic("sourceDbSnapshotIdentifier")(sourceDbSnapshotIdentifier)
-    __obj.updateDynamic("sourceRegion")(sourceRegion)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("storageType")(storageType)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(allocatedStorage = allocatedStorage, availabilityZone = availabilityZone, dbSnapshotArn = dbSnapshotArn, encrypted = encrypted, engine = engine, engineVersion = engineVersion, id = id, iops = iops, kmsKeyId = kmsKeyId, licenseModel = licenseModel, optionGroupName = optionGroupName, port = port, snapshotCreateTime = snapshotCreateTime, sourceDbSnapshotIdentifier = sourceDbSnapshotIdentifier, sourceRegion = sourceRegion, status = status, storageType = storageType, vpcId = vpcId)
+  
     __obj.asInstanceOf[GetSnapshotResult]
   }
 }

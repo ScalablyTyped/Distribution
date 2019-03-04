@@ -20,10 +20,7 @@ object Observer {
     next: js.Function1[T, scala.Unit],
     closed: js.UndefOr[scala.Boolean] = js.undefined
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(complete = complete, error = error, next = next)
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     __obj.asInstanceOf[Observer[T]]
   }

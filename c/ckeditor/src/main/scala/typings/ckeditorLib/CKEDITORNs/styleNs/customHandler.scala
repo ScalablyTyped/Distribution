@@ -18,7 +18,8 @@ object customHandler {
     assignedTo: scala.Int | scala.Double = null,
     setup: js.Function1[/* style */ definition, scala.Unit] = null
   ): customHandler = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
     if (setup != null) __obj.updateDynamic("setup")(setup)
     __obj.asInstanceOf[customHandler]

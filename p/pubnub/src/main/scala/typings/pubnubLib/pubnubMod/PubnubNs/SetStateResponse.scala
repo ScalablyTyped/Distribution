@@ -12,8 +12,8 @@ trait SetStateResponse extends js.Object {
 object SetStateResponse {
   @scala.inline
   def apply(state: js.Any): SetStateResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
+  
     __obj.asInstanceOf[SetStateResponse]
   }
 }

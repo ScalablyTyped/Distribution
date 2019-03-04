@@ -37,16 +37,8 @@ object Directive {
     value: java.lang.String = null,
     valueRange: Range = null
   ): Directive = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(anchor = anchor, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, name = name, parameters = parameters, props = props, tag = tag, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (context != null) __obj.updateDynamic("context")(context)
     if (error != null) __obj.updateDynamic("error")(error)

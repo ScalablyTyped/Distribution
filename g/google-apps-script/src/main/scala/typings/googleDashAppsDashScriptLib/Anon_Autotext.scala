@@ -33,10 +33,8 @@ object Anon_Autotext {
     paragraph_marker: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.ParagraphMarker,
     text_run: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.TextRun
   ): Anon_Autotext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auto_text")(auto_text)
-    __obj.updateDynamic("paragraph_marker")(paragraph_marker)
-    __obj.updateDynamic("text_run")(text_run)
+    val __obj = js.Dynamic.literal(auto_text = auto_text, paragraph_marker = paragraph_marker, text_run = text_run)
+  
     __obj.asInstanceOf[Anon_Autotext]
   }
 }

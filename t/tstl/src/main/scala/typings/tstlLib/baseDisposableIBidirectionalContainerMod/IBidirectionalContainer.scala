@@ -43,11 +43,8 @@ object IBidirectionalContainer {
     rbegin: js.Function0[ReverseIteratorT],
     rend: js.Function0[ReverseIteratorT]
   ): IBidirectionalContainer[IteratorT, ReverseIteratorT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("rbegin")(rbegin)
-    __obj.updateDynamic("rend")(rend)
+    val __obj = js.Dynamic.literal(begin = begin, end = end, rbegin = rbegin, rend = rend)
+  
     __obj.asInstanceOf[IBidirectionalContainer[IteratorT, ReverseIteratorT]]
   }
 }

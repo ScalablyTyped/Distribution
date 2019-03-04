@@ -12,8 +12,8 @@ trait Anon_Faces extends js.Object {
 object Anon_Faces {
   @scala.inline
   def apply(faces: js.Array[expoLib.expoMod.TrackedFaceFeature]): Anon_Faces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faces")(faces)
+    val __obj = js.Dynamic.literal(faces = faces)
+  
     __obj.asInstanceOf[Anon_Faces]
   }
 }

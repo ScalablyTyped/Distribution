@@ -41,8 +41,7 @@ object ProjectionOptions {
     units: openlayersLib.openlayersMod.projNs.Units | java.lang.String = null,
     worldExtent: openlayersLib.openlayersMod.Extent = null
   ): ProjectionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (axisOrientation != null) __obj.updateDynamic("axisOrientation")(axisOrientation)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (getPointResolution != null) __obj.updateDynamic("getPointResolution")(getPointResolution)

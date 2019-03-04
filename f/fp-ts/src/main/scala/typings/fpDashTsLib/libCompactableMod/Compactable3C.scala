@@ -31,12 +31,8 @@ object Compactable3C {
       ]
     ]
   ): Compactable3C[F, U, L] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _L = _L.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compact = compact, separate = separate)
+  
     __obj.asInstanceOf[Compactable3C[F, U, L]]
   }
 }

@@ -26,8 +26,7 @@ object OverlayProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(show = show)
     if (!js.isUndefined(autoLockScrolling)) __obj.updateDynamic("autoLockScrolling")(autoLockScrolling)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

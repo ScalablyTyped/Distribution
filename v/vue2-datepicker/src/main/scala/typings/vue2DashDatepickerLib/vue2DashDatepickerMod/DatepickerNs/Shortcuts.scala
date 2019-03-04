@@ -14,10 +14,8 @@ trait Shortcuts extends js.Object {
 object Shortcuts {
   @scala.inline
   def apply(end: stdLib.Date, start: stdLib.Date, text: java.lang.String): Shortcuts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(end = end, start = start, text = text)
+  
     __obj.asInstanceOf[Shortcuts]
   }
 }

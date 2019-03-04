@@ -72,17 +72,8 @@ object IDocListEntry {
     qThumbnail: IStaticContentUrl,
     qTitle: java.lang.String
   ): IDocListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qConnectedUsers")(qConnectedUsers)
-    __obj.updateDynamic("qDocId")(qDocId)
-    __obj.updateDynamic("qDocName")(qDocName)
-    __obj.updateDynamic("qFileSize")(qFileSize)
-    __obj.updateDynamic("qFileTime")(qFileTime)
-    __obj.updateDynamic("qLastReloadTime")(qLastReloadTime)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qReadOnly")(qReadOnly)
-    __obj.updateDynamic("qThumbnail")(qThumbnail)
-    __obj.updateDynamic("qTitle")(qTitle)
+    val __obj = js.Dynamic.literal(qConnectedUsers = qConnectedUsers, qDocId = qDocId, qDocName = qDocName, qFileSize = qFileSize, qFileTime = qFileTime, qLastReloadTime = qLastReloadTime, qMeta = qMeta, qReadOnly = qReadOnly, qThumbnail = qThumbnail, qTitle = qTitle)
+  
     __obj.asInstanceOf[IDocListEntry]
   }
 }

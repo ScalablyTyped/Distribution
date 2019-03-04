@@ -24,8 +24,7 @@ object IStackframe {
     lineNumber: scala.Int | scala.Double = null,
     method: java.lang.String = null
   ): IStackframe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
+    val __obj = js.Dynamic.literal(file = file)
     if (code != null) __obj.updateDynamic("code")(code)
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (!js.isUndefined(inProject)) __obj.updateDynamic("inProject")(inProject)

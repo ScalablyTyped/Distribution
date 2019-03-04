@@ -30,15 +30,8 @@ object MapTouchEvent {
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.touchstart | mapboxDashGlLib.mapboxDashGlLibStrings.touchend | mapboxDashGlLib.mapboxDashGlLibStrings.touchcancel
   ): MapTouchEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("lngLat")(lngLat)
-    __obj.updateDynamic("lngLats")(lngLats)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented, lngLat = lngLat, lngLats = lngLats, originalEvent = originalEvent, point = point, points = points, preventDefault = preventDefault, target = target)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTouchEvent]
   }
 }

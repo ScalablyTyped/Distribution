@@ -16,9 +16,8 @@ object DOMEventTarget {
     addEventListener: js.Function3[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Boolean, scala.Unit],
     removeEventListener: js.Function3[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Boolean, scala.Unit]
   ): DOMEventTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[DOMEventTarget]
   }
 }

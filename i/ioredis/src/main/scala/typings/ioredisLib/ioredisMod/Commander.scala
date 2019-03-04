@@ -20,11 +20,8 @@ object Commander {
     getBuiltinCommands: js.Function0[js.Array[java.lang.String]],
     sendCommand: js.Function0[scala.Unit]
   ): Commander = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBuiltinCommand")(createBuiltinCommand)
-    __obj.updateDynamic("defineCommand")(defineCommand)
-    __obj.updateDynamic("getBuiltinCommands")(getBuiltinCommands)
-    __obj.updateDynamic("sendCommand")(sendCommand)
+    val __obj = js.Dynamic.literal(createBuiltinCommand = createBuiltinCommand, defineCommand = defineCommand, getBuiltinCommands = getBuiltinCommands, sendCommand = sendCommand)
+  
     __obj.asInstanceOf[Commander]
   }
 }

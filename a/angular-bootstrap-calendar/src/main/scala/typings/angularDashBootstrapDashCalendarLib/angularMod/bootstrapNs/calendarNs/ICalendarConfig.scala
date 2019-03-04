@@ -30,16 +30,8 @@ object ICalendarConfig {
     templates: angularDashBootstrapDashCalendarLib.Anon_CalendarDayView,
     titleFormats: ITitleFormats
   ): ICalendarConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allDateFormats")(allDateFormats)
-    __obj.updateDynamic("dateFormats")(dateFormats)
-    __obj.updateDynamic("dateFormatter")(dateFormatter)
-    __obj.updateDynamic("displayAllMonthEvents")(displayAllMonthEvents)
-    __obj.updateDynamic("displayEventEndTimes")(displayEventEndTimes)
-    __obj.updateDynamic("i18nStrings")(i18nStrings)
-    __obj.updateDynamic("showTimesOnWeekView")(showTimesOnWeekView)
-    __obj.updateDynamic("templates")(templates)
-    __obj.updateDynamic("titleFormats")(titleFormats)
+    val __obj = js.Dynamic.literal(allDateFormats = allDateFormats, dateFormats = dateFormats, dateFormatter = dateFormatter, displayAllMonthEvents = displayAllMonthEvents, displayEventEndTimes = displayEventEndTimes, i18nStrings = i18nStrings, showTimesOnWeekView = showTimesOnWeekView, templates = templates, titleFormats = titleFormats)
+  
     __obj.asInstanceOf[ICalendarConfig]
   }
 }

@@ -36,8 +36,7 @@ object beginDigitizeOptions {
     styledGeometry: styledGeometry = null,
     suppressNodeAdd: js.UndefOr[scala.Boolean] = js.undefined
   ): beginDigitizeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shapeType")(shapeType)
+    val __obj = js.Dynamic.literal(shapeType = shapeType)
     if (circleEndAction != null) __obj.updateDynamic("circleEndAction")(circleEndAction)
     if (envelopeEndAction != null) __obj.updateDynamic("envelopeEndAction")(envelopeEndAction)
     if (geometryStyle != null) __obj.updateDynamic("geometryStyle")(geometryStyle)

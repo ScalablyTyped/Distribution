@@ -38,8 +38,7 @@ object Headers {
     uid: scala.Int | scala.Double = null,
     uname: java.lang.String = null
   ): Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (devmajor != null) __obj.updateDynamic("devmajor")(devmajor.asInstanceOf[js.Any])
     if (devminor != null) __obj.updateDynamic("devminor")(devminor.asInstanceOf[js.Any])
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])

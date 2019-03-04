@@ -15,11 +15,8 @@ trait algs extends js.Object {
 object algs {
   @scala.inline
   def apply(curves: curves, hashAlgs: hashAlgs, info: algInfo, privInfo: algPrivInfo): algs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("curves")(curves)
-    __obj.updateDynamic("hashAlgs")(hashAlgs)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("privInfo")(privInfo)
+    val __obj = js.Dynamic.literal(curves = curves, hashAlgs = hashAlgs, info = info, privInfo = privInfo)
+  
     __obj.asInstanceOf[algs]
   }
 }

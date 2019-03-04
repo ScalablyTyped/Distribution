@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueDnssdServiceInstance {
     items: winrtDashUwpLib.WindowsNs.NetworkingNs.ServiceDiscoveryNs.DnssdNs.DnssdServiceInstance,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueDnssdServiceInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueDnssdServiceInstance]
   }
 }

@@ -28,15 +28,8 @@ object ResultsFilter {
     testResultsContext: TestResultsContext,
     trendDays: scala.Double
   ): ResultsFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automatedTestName")(automatedTestName)
-    __obj.updateDynamic("branch")(branch)
-    __obj.updateDynamic("groupBy")(groupBy)
-    __obj.updateDynamic("maxCompleteDate")(maxCompleteDate)
-    __obj.updateDynamic("resultsCount")(resultsCount)
-    __obj.updateDynamic("testCaseReferenceIds")(testCaseReferenceIds)
-    __obj.updateDynamic("testResultsContext")(testResultsContext)
-    __obj.updateDynamic("trendDays")(trendDays)
+    val __obj = js.Dynamic.literal(automatedTestName = automatedTestName, branch = branch, groupBy = groupBy, maxCompleteDate = maxCompleteDate, resultsCount = resultsCount, testCaseReferenceIds = testCaseReferenceIds, testResultsContext = testResultsContext, trendDays = trendDays)
+  
     __obj.asInstanceOf[ResultsFilter]
   }
 }

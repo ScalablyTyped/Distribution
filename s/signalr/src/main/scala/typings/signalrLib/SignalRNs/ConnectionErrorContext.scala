@@ -20,11 +20,8 @@ object ConnectionErrorContext {
     status: scala.Double,
     statusText: java.lang.String
   ): ConnectionErrorContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readyState")(readyState)
-    __obj.updateDynamic("responseText")(responseText)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(readyState = readyState, responseText = responseText, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[ConnectionErrorContext]
   }
 }

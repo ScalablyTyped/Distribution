@@ -18,8 +18,8 @@ object ProvisioningResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
     ]
   ): ProvisioningResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAccountTicket")(createAccountTicket)
+    val __obj = js.Dynamic.literal(createAccountTicket = createAccountTicket)
+  
     __obj.asInstanceOf[ProvisioningResource]
   }
 }

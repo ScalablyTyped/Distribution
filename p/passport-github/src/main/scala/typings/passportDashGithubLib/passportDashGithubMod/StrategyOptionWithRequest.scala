@@ -25,11 +25,7 @@ object StrategyOptionWithRequest {
     userAgent: java.lang.String = null,
     userProfileURL: java.lang.String = null
   ): StrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
     if (scope != null) __obj.updateDynamic("scope")(scope)

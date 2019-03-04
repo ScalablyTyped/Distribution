@@ -16,9 +16,8 @@ trait Selection extends js.Object {
 object Selection {
   @scala.inline
   def apply(Max: scala.Double, Min: scala.Double): Selection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("Min")(Min)
+    val __obj = js.Dynamic.literal(Max = Max, Min = Min)
+  
     __obj.asInstanceOf[Selection]
   }
 }

@@ -55,16 +55,8 @@ object IgGridCellMergingMethods {
     unmergeColumn: js.Function1[js.Object, java.lang.String],
     unmergeRow: js.Function2[js.Object, js.Object, scala.Unit]
   ): IgGridCellMergingMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isMerged")(isMerged)
-    __obj.updateDynamic("mergeColumn")(mergeColumn)
-    __obj.updateDynamic("mergeRow")(mergeRow)
-    __obj.updateDynamic("unmergeColumn")(unmergeColumn)
-    __obj.updateDynamic("unmergeRow")(unmergeRow)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, isMerged = isMerged, mergeColumn = mergeColumn, mergeRow = mergeRow, unmergeColumn = unmergeColumn, unmergeRow = unmergeRow)
+  
     __obj.asInstanceOf[IgGridCellMergingMethods]
   }
 }

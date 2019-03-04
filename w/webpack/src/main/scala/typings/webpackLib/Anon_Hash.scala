@@ -13,9 +13,8 @@ trait Anon_Hash extends js.Object {
 object Anon_Hash {
   @scala.inline
   def apply(hash: js.Any, name: js.Any): Anon_Hash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(hash = hash, name = name)
+  
     __obj.asInstanceOf[Anon_Hash]
   }
 }

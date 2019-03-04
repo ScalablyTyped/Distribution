@@ -13,9 +13,8 @@ trait BaseTileLayerLayerviewDestroyEvent extends js.Object {
 object BaseTileLayerLayerviewDestroyEvent {
   @scala.inline
   def apply(layerView: LayerView, view: View): BaseTileLayerLayerviewDestroyEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layerView")(layerView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(layerView = layerView, view = view)
+  
     __obj.asInstanceOf[BaseTileLayerLayerviewDestroyEvent]
   }
 }

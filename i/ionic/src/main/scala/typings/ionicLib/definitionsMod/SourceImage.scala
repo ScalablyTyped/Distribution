@@ -30,14 +30,7 @@ object SourceImage {
     cachedId: java.lang.String = null,
     imageId: java.lang.String = null
   ): SourceImage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("resType")(resType)
-    __obj.updateDynamic("vector")(vector)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(ext = ext, height = height, path = path, platform = platform, resType = resType, vector = vector, width = width)
     if (cachedId != null) __obj.updateDynamic("cachedId")(cachedId)
     if (imageId != null) __obj.updateDynamic("imageId")(imageId)
     __obj.asInstanceOf[SourceImage]

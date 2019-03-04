@@ -18,10 +18,8 @@ object Mute {
     MEDIUM: plugapiLib.plugapiLibStrings.m,
     SHORT: plugapiLib.plugapiLibStrings.s
   ): Mute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LONG")(LONG)
-    __obj.updateDynamic("MEDIUM")(MEDIUM)
-    __obj.updateDynamic("SHORT")(SHORT)
+    val __obj = js.Dynamic.literal(LONG = LONG, MEDIUM = MEDIUM, SHORT = SHORT)
+  
     __obj.asInstanceOf[Mute]
   }
 }

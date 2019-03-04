@@ -12,8 +12,8 @@ trait URI2HKT[A] extends js.Object {
 object URI2HKT {
   @scala.inline
   def apply[A](FreeGroup: fpDashTsLib.libFreeGroupMod.FreeGroup[A]): URI2HKT[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FreeGroup")(FreeGroup)
+    val __obj = js.Dynamic.literal(FreeGroup = FreeGroup)
+  
     __obj.asInstanceOf[URI2HKT[A]]
   }
 }

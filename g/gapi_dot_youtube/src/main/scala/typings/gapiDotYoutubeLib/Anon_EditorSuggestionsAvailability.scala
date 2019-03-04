@@ -49,15 +49,8 @@ object Anon_EditorSuggestionsAvailability {
     tagSuggestionsAvailability: java.lang.String,
     thumbnailsAvailability: java.lang.String
   ): Anon_EditorSuggestionsAvailability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editorSuggestionsAvailability")(editorSuggestionsAvailability)
-    __obj.updateDynamic("fileDetailsAvailability")(fileDetailsAvailability)
-    __obj.updateDynamic("processingFailureReason")(processingFailureReason)
-    __obj.updateDynamic("processingIssuesAvailability")(processingIssuesAvailability)
-    __obj.updateDynamic("processingProgress")(processingProgress)
-    __obj.updateDynamic("processingStatus")(processingStatus)
-    __obj.updateDynamic("tagSuggestionsAvailability")(tagSuggestionsAvailability)
-    __obj.updateDynamic("thumbnailsAvailability")(thumbnailsAvailability)
+    val __obj = js.Dynamic.literal(editorSuggestionsAvailability = editorSuggestionsAvailability, fileDetailsAvailability = fileDetailsAvailability, processingFailureReason = processingFailureReason, processingIssuesAvailability = processingIssuesAvailability, processingProgress = processingProgress, processingStatus = processingStatus, tagSuggestionsAvailability = tagSuggestionsAvailability, thumbnailsAvailability = thumbnailsAvailability)
+  
     __obj.asInstanceOf[Anon_EditorSuggestionsAvailability]
   }
 }

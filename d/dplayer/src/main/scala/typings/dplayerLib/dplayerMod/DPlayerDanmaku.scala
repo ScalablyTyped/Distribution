@@ -28,9 +28,7 @@ object DPlayerDanmaku {
     unlimited: js.UndefOr[scala.Boolean] = js.undefined,
     user: java.lang.String = null
   ): DPlayerDanmaku = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(api = api, id = id)
     if (addition != null) __obj.updateDynamic("addition")(addition)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom)
     if (maximum != null) __obj.updateDynamic("maximum")(maximum)

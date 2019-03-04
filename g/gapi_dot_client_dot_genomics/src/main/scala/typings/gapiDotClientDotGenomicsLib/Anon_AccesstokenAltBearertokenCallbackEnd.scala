@@ -98,8 +98,7 @@ object Anon_AccesstokenAltBearertokenCallbackEnd {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readGroupSetId")(readGroupSetId)
+    val __obj = js.Dynamic.literal(readGroupSetId = readGroupSetId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

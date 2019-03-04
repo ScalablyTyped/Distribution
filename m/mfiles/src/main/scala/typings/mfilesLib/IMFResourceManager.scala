@@ -18,10 +18,8 @@ object IMFResourceManager {
     GetUICultures: js.Function0[IStrings],
     LoadResourceString: js.Function2[scala.Double, scala.Double, java.lang.String]
   ): IMFResourceManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetLocaleSpecificDateFormat")(GetLocaleSpecificDateFormat)
-    __obj.updateDynamic("GetUICultures")(GetUICultures)
-    __obj.updateDynamic("LoadResourceString")(LoadResourceString)
+    val __obj = js.Dynamic.literal(GetLocaleSpecificDateFormat = GetLocaleSpecificDateFormat, GetUICultures = GetUICultures, LoadResourceString = LoadResourceString)
+  
     __obj.asInstanceOf[IMFResourceManager]
   }
 }

@@ -20,9 +20,7 @@ object RouteSpec {
     name: java.lang.String = null,
     versions: js.Array[java.lang.String] = null
   ): RouteSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(method = method, path = path.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (versions != null) __obj.updateDynamic("versions")(versions)
     __obj.asInstanceOf[RouteSpec]

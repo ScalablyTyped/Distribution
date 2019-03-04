@@ -44,11 +44,7 @@ object PurchasedItem {
     originalPurchaseDate: java.lang.String = null,
     originalTransactionId: java.lang.String = null
   ): PurchasedItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("purchaseDate")(purchaseDate.asInstanceOf[js.Any])
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("transactionId")(transactionId)
+    val __obj = js.Dynamic.literal(productId = productId, purchaseDate = purchaseDate.asInstanceOf[js.Any], quantity = quantity, transactionId = transactionId)
     if (appItemId != null) __obj.updateDynamic("appItemId")(appItemId)
     if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
     if (cancellationDate != null) __obj.updateDynamic("cancellationDate")(cancellationDate.asInstanceOf[js.Any])

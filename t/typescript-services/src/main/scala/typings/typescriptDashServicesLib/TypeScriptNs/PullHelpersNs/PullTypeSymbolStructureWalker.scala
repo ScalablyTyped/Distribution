@@ -24,13 +24,8 @@ object PullTypeSymbolStructureWalker {
     signatureParameterWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullSymbol, scala.Boolean],
     signatureReturnTypeWalk: js.Function1[typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol, scala.Boolean]
   ): PullTypeSymbolStructureWalker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callSignatureWalk")(callSignatureWalk)
-    __obj.updateDynamic("constructSignatureWalk")(constructSignatureWalk)
-    __obj.updateDynamic("indexSignatureWalk")(indexSignatureWalk)
-    __obj.updateDynamic("memberSymbolWalk")(memberSymbolWalk)
-    __obj.updateDynamic("signatureParameterWalk")(signatureParameterWalk)
-    __obj.updateDynamic("signatureReturnTypeWalk")(signatureReturnTypeWalk)
+    val __obj = js.Dynamic.literal(callSignatureWalk = callSignatureWalk, constructSignatureWalk = constructSignatureWalk, indexSignatureWalk = indexSignatureWalk, memberSymbolWalk = memberSymbolWalk, signatureParameterWalk = signatureParameterWalk, signatureReturnTypeWalk = signatureReturnTypeWalk)
+  
     __obj.asInstanceOf[PullTypeSymbolStructureWalker]
   }
 }

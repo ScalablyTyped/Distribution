@@ -26,8 +26,7 @@ object Features {
     window: WindowFeature[PWindow] = null,
     workspace: WorkspaceFeature[PWorkspace] = null
   ): Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__brand")(__brand)
+    val __obj = js.Dynamic.literal(__brand = __brand)
     if (client != null) __obj.updateDynamic("client")(client)
     if (console != null) __obj.updateDynamic("console")(console)
     if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry)

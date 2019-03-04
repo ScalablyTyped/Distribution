@@ -20,11 +20,8 @@ object Anon_BOTTOM {
     RIGHT: chromeDashAppsLib.chromeDashAppsLibStrings.right,
     TOP: chromeDashAppsLib.chromeDashAppsLibStrings.top
   ): Anon_BOTTOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("TOP")(TOP)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, LEFT = LEFT, RIGHT = RIGHT, TOP = TOP)
+  
     __obj.asInstanceOf[Anon_BOTTOM]
   }
 }

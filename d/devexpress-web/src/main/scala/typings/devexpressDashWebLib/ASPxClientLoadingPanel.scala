@@ -70,29 +70,8 @@ object ASPxClientLoadingPanel {
     ShowInElementByID: js.Function1[java.lang.String, scala.Unit],
     name: java.lang.String
   ): ASPxClientLoadingPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("Hide")(Hide)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("Show")(Show)
-    __obj.updateDynamic("ShowAtPos")(ShowAtPos)
-    __obj.updateDynamic("ShowInElement")(ShowInElement)
-    __obj.updateDynamic("ShowInElementByID")(ShowInElementByID)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetHeight = GetHeight, GetMainElement = GetMainElement, GetParentControl = GetParentControl, GetText = GetText, GetVisible = GetVisible, GetWidth = GetWidth, Hide = Hide, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetHeight = SetHeight, SetText = SetText, SetVisible = SetVisible, SetWidth = SetWidth, Show = Show, ShowAtPos = ShowAtPos, ShowInElement = ShowInElement, ShowInElementByID = ShowInElementByID, name = name)
+  
     __obj.asInstanceOf[ASPxClientLoadingPanel]
   }
 }

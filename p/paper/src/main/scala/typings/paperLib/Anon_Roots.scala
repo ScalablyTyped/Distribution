@@ -13,8 +13,8 @@ trait Anon_Roots extends js.Object {
 object Anon_Roots {
   @scala.inline
   def apply(roots: js.Array[scala.Double], `type`: java.lang.String): Anon_Roots = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("roots")(roots)
+    val __obj = js.Dynamic.literal(roots = roots)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Roots]
   }
 }

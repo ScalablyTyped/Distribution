@@ -20,11 +20,8 @@ object IPUBLIC_MESSAGE {
     room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
     sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
   ): IPUBLIC_MESSAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(data = data, message = message, room = room, sender = sender)
+  
     __obj.asInstanceOf[IPUBLIC_MESSAGE]
   }
 }

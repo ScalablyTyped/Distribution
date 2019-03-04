@@ -32,17 +32,8 @@ object VueConfiguration {
     silent: scala.Boolean,
     warnHandler: js.Function3[java.lang.String, Vue, java.lang.String, scala.Unit]
   ): VueConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("devtools")(devtools)
-    __obj.updateDynamic("errorHandler")(errorHandler)
-    __obj.updateDynamic("ignoredElements")(ignoredElements)
-    __obj.updateDynamic("keyCodes")(keyCodes)
-    __obj.updateDynamic("optionMergeStrategies")(optionMergeStrategies)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("productionTip")(productionTip)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("warnHandler")(warnHandler)
+    val __obj = js.Dynamic.literal(async = async, devtools = devtools, errorHandler = errorHandler, ignoredElements = ignoredElements, keyCodes = keyCodes, optionMergeStrategies = optionMergeStrategies, performance = performance, productionTip = productionTip, silent = silent, warnHandler = warnHandler)
+  
     __obj.asInstanceOf[VueConfiguration]
   }
 }

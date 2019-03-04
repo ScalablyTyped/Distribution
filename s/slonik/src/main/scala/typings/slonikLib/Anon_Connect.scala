@@ -16,9 +16,8 @@ object Anon_Connect {
     connect: js.Function1[slonikLib.slonikMod.ConnectionRoutineType, js.Promise[_]],
     transaction: js.Function1[slonikLib.slonikMod.TransactionFunctionType, js.Promise[_]]
   ): Anon_Connect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("transaction")(transaction)
+    val __obj = js.Dynamic.literal(connect = connect, transaction = transaction)
+  
     __obj.asInstanceOf[Anon_Connect]
   }
 }

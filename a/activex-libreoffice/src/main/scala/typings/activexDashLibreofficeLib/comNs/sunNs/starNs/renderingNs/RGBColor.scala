@@ -14,10 +14,8 @@ trait RGBColor extends js.Object {
 object RGBColor {
   @scala.inline
   def apply(Blue: ColorComponent, Green: ColorComponent, Red: ColorComponent): RGBColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Blue")(Blue)
-    __obj.updateDynamic("Green")(Green)
-    __obj.updateDynamic("Red")(Red)
+    val __obj = js.Dynamic.literal(Blue = Blue, Green = Green, Red = Red)
+  
     __obj.asInstanceOf[RGBColor]
   }
 }

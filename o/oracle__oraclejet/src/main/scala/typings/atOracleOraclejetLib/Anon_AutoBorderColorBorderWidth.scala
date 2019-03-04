@@ -32,17 +32,8 @@ object Anon_AutoBorderColorBorderWidth {
     selectedOuterColor: java.lang.String,
     showDisclosure: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off
   ): Anon_AutoBorderColorBorderWidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("hoverColor")(hoverColor)
-    __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelHalign")(labelHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelMinLength")(labelMinLength)
-    __obj.updateDynamic("labelStyle")(labelStyle)
-    __obj.updateDynamic("selectedInnerColor")(selectedInnerColor)
-    __obj.updateDynamic("selectedOuterColor")(selectedOuterColor)
-    __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(borderColor = borderColor, borderWidth = borderWidth, hoverColor = hoverColor, labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHalign = labelHalign.asInstanceOf[js.Any], labelMinLength = labelMinLength, labelStyle = labelStyle, selectedInnerColor = selectedInnerColor, selectedOuterColor = selectedOuterColor, showDisclosure = showDisclosure.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AutoBorderColorBorderWidth]
   }
 }

@@ -24,10 +24,7 @@ object Anon_Bounds {
     offset: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Coordinates = null,
     padding: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.Padding = null
   ): Anon_Bounds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bounds = bounds, height = height, width = width)
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bounds]

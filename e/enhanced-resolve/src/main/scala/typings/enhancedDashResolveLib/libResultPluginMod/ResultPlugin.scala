@@ -17,9 +17,8 @@ object ResultPlugin {
     apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
     source: java.lang.String
   ): ResultPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(apply = apply, source = source)
+  
     __obj.asInstanceOf[ResultPlugin]
   }
 }

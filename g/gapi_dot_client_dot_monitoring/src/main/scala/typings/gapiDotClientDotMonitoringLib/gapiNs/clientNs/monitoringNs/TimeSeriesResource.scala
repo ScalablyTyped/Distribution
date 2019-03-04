@@ -27,9 +27,8 @@ object TimeSeriesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListTimeSeriesResponse]
     ]
   ): TimeSeriesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(create = create, list = list)
+  
     __obj.asInstanceOf[TimeSeriesResource]
   }
 }

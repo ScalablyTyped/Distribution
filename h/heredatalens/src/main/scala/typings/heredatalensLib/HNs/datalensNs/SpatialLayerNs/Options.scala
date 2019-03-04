@@ -49,12 +49,7 @@ object Options {
       js.Array[Row]
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultStyle")(defaultStyle)
-    __obj.updateDynamic("featureToSpatialId")(featureToSpatialId)
-    __obj.updateDynamic("rowToSpatialId")(rowToSpatialId)
-    __obj.updateDynamic("rowToStyle")(rowToStyle)
-    __obj.updateDynamic("transformFeature")(transformFeature)
+    val __obj = js.Dynamic.literal(defaultStyle = defaultStyle, featureToSpatialId = featureToSpatialId, rowToSpatialId = rowToSpatialId, rowToStyle = rowToStyle, transformFeature = transformFeature)
     if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
     __obj.asInstanceOf[Options]
   }

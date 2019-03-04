@@ -42,9 +42,7 @@ object Delete {
     ExpressionAttributeValues: ExpressionAttributeValueMap = null,
     ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
   ): Delete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(Key = Key, TableName = TableName)
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
     if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)

@@ -70,14 +70,8 @@ object ProductsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): ProductsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approve")(approve)
-    __obj.updateDynamic("generateApprovalUrl")(generateApprovalUrl)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAppRestrictionsSchema")(getAppRestrictionsSchema)
-    __obj.updateDynamic("getPermissions")(getPermissions)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("unapprove")(unapprove)
+    val __obj = js.Dynamic.literal(approve = approve, generateApprovalUrl = generateApprovalUrl, get = get, getAppRestrictionsSchema = getAppRestrictionsSchema, getPermissions = getPermissions, list = list, unapprove = unapprove)
+  
     __obj.asInstanceOf[ProductsResource]
   }
 }

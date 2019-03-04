@@ -18,10 +18,8 @@ object IssueAssignedEvent {
     assignee: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary,
     issue: typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.Issue
   ): IssueAssignedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("assignee")(assignee)
-    __obj.updateDynamic("issue")(issue)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], assignee = assignee, issue = issue)
+  
     __obj.asInstanceOf[IssueAssignedEvent]
   }
 }

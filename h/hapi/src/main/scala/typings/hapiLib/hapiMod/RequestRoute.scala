@@ -32,13 +32,7 @@ object RequestRoute {
     settings: RouteOptions,
     vhost: java.lang.String | js.Array[java.lang.String] = null
   ): RequestRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("realm")(realm)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(auth = auth, fingerprint = fingerprint, method = method, path = path, realm = realm, settings = settings)
     if (vhost != null) __obj.updateDynamic("vhost")(vhost.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestRoute]
   }

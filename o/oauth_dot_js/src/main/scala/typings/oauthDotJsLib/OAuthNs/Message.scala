@@ -18,10 +18,8 @@ trait Message extends js.Object {
 object Message {
   @scala.inline
   def apply(action: java.lang.String, method: java.lang.String, parameters: ParameterListOrMap): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(action = action, method = method, parameters = parameters.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Message]
   }
 }

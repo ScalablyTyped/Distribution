@@ -36,19 +36,8 @@ object queue {
     saturated: js.Function0[scala.Unit],
     unshift: js.Function2[js.Any, done, scala.Unit]
   ): queue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concurrency")(concurrency)
-    __obj.updateDynamic("drain")(drain)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("idle")(idle)
-    __obj.updateDynamic("kill")(kill)
-    __obj.updateDynamic("killAndDrain")(killAndDrain)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("saturated")(saturated)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(concurrency = concurrency, drain = drain, empty = empty, idle = idle, kill = kill, killAndDrain = killAndDrain, length = length, pause = pause, push = push, resume = resume, saturated = saturated, unshift = unshift)
+  
     __obj.asInstanceOf[queue]
   }
 }

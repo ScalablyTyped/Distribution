@@ -12,8 +12,8 @@ trait ILocalizationManager extends js.Object {
 object ILocalizationManager {
   @scala.inline
   def apply(getDisplayName: js.Function1[java.lang.String, java.lang.String]): ILocalizationManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayName")(getDisplayName)
+    val __obj = js.Dynamic.literal(getDisplayName = getDisplayName)
+  
     __obj.asInstanceOf[ILocalizationManager]
   }
 }

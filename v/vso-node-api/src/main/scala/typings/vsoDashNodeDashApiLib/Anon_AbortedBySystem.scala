@@ -30,16 +30,8 @@ object Anon_AbortedBySystem {
     runningTests: scala.Double,
     timedOut: scala.Double
   ): Anon_AbortedBySystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abortedBySystem")(abortedBySystem)
-    __obj.updateDynamic("analyzed")(analyzed)
-    __obj.updateDynamic("canceledByUser")(canceledByUser)
-    __obj.updateDynamic("cancellationInProgress")(cancellationInProgress)
-    __obj.updateDynamic("creatingEnvironment")(creatingEnvironment)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("pendingAnalysis")(pendingAnalysis)
-    __obj.updateDynamic("runningTests")(runningTests)
-    __obj.updateDynamic("timedOut")(timedOut)
+    val __obj = js.Dynamic.literal(abortedBySystem = abortedBySystem, analyzed = analyzed, canceledByUser = canceledByUser, cancellationInProgress = cancellationInProgress, creatingEnvironment = creatingEnvironment, none = none, pendingAnalysis = pendingAnalysis, runningTests = runningTests, timedOut = timedOut)
+  
     __obj.asInstanceOf[Anon_AbortedBySystem]
   }
 }

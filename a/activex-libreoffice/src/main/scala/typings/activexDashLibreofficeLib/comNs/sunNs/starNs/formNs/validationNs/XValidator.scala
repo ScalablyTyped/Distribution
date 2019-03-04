@@ -57,14 +57,8 @@ object XValidator {
     release: js.Function0[scala.Unit],
     removeValidityConstraintListener: js.Function1[XValidityConstraintListener, scala.Unit]
   ): XValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addValidityConstraintListener")(addValidityConstraintListener)
-    __obj.updateDynamic("explainInvalid")(explainInvalid)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeValidityConstraintListener")(removeValidityConstraintListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addValidityConstraintListener = addValidityConstraintListener, explainInvalid = explainInvalid, isValid = isValid, queryInterface = queryInterface, release = release, removeValidityConstraintListener = removeValidityConstraintListener)
+  
     __obj.asInstanceOf[XValidator]
   }
 }

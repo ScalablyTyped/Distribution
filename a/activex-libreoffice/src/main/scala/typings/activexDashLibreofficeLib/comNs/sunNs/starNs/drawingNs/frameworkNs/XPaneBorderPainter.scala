@@ -114,12 +114,8 @@ object XPaneBorderPainter {
       activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
     ]
   ): XPaneBorderPainter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBorder")(addBorder)
-    __obj.updateDynamic("getCalloutOffset")(getCalloutOffset)
-    __obj.updateDynamic("paintBorder")(paintBorder)
-    __obj.updateDynamic("paintBorderWithCallout")(paintBorderWithCallout)
-    __obj.updateDynamic("removeBorder")(removeBorder)
+    val __obj = js.Dynamic.literal(addBorder = addBorder, getCalloutOffset = getCalloutOffset, paintBorder = paintBorder, paintBorderWithCallout = paintBorderWithCallout, removeBorder = removeBorder)
+  
     __obj.asInstanceOf[XPaneBorderPainter]
   }
 }

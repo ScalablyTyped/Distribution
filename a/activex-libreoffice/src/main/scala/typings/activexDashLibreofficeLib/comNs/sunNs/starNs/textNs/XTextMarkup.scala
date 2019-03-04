@@ -64,11 +64,8 @@ object XTextMarkup {
     ],
     getMarkupInfoContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap]
   ): XTextMarkup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MarkupInfoContainer")(MarkupInfoContainer)
-    __obj.updateDynamic("commitStringMarkup")(commitStringMarkup)
-    __obj.updateDynamic("commitTextRangeMarkup")(commitTextRangeMarkup)
-    __obj.updateDynamic("getMarkupInfoContainer")(getMarkupInfoContainer)
+    val __obj = js.Dynamic.literal(MarkupInfoContainer = MarkupInfoContainer, commitStringMarkup = commitStringMarkup, commitTextRangeMarkup = commitTextRangeMarkup, getMarkupInfoContainer = getMarkupInfoContainer)
+  
     __obj.asInstanceOf[XTextMarkup]
   }
 }

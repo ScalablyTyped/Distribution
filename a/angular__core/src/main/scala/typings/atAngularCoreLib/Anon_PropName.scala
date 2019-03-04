@@ -13,9 +13,8 @@ trait Anon_PropName extends js.Object {
 object Anon_PropName {
   @scala.inline
   def apply(propName: java.lang.String, templateName: java.lang.String): Anon_PropName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("propName")(propName)
-    __obj.updateDynamic("templateName")(templateName)
+    val __obj = js.Dynamic.literal(propName = propName, templateName = templateName)
+  
     __obj.asInstanceOf[Anon_PropName]
   }
 }

@@ -16,11 +16,11 @@ object CaretType extends js.Object {
     extends winrtLib.WindowsNs.UINs.TextNs.CaretType
   
   @js.native
-  sealed trait `null_`
+  sealed trait null_
     extends winrtLib.WindowsNs.UINs.TextNs.CaretType
   
   val normal: normal with java.lang.String = js.native
-  val `null_`: `null_` with java.lang.String = js.native
+  val null_ : null_ with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[winrtLib.WindowsNs.UINs.TextNs.CaretType with java.lang.String] = js.native
 }

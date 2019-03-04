@@ -12,8 +12,8 @@ trait GuidOptions extends js.Object {
 object GuidOptions {
   @scala.inline
   def apply(version: js.Array[GuidVersions] | GuidVersions): GuidOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GuidOptions]
   }
 }

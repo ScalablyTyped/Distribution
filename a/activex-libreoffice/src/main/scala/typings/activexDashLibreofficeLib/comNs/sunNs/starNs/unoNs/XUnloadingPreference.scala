@@ -21,11 +21,8 @@ object XUnloadingPreference {
     release: js.Function0[scala.Unit],
     releaseOnNotification: js.Function0[scala.Boolean]
   ): XUnloadingPreference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseOnNotification")(releaseOnNotification)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, releaseOnNotification = releaseOnNotification)
+  
     __obj.asInstanceOf[XUnloadingPreference]
   }
 }

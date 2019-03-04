@@ -21,8 +21,7 @@ object Notification {
     reason: Reason = null,
     to: java.lang.String = null
   ): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
     if (from != null) __obj.updateDynamic("from")(from)
     if (id != null) __obj.updateDynamic("id")(id)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

@@ -40,13 +40,8 @@ object InvocationInfo {
     aType: activexDashLibreofficeLib.`type`,
     eMemberType: MemberType
   ): InvocationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertyAttribute")(PropertyAttribute)
-    __obj.updateDynamic("aName")(aName)
-    __obj.updateDynamic("aParamModes")(aParamModes)
-    __obj.updateDynamic("aParamTypes")(aParamTypes)
-    __obj.updateDynamic("aType")(aType)
-    __obj.updateDynamic("eMemberType")(eMemberType)
+    val __obj = js.Dynamic.literal(PropertyAttribute = PropertyAttribute, aName = aName, aParamModes = aParamModes, aParamTypes = aParamTypes, aType = aType, eMemberType = eMemberType)
+  
     __obj.asInstanceOf[InvocationInfo]
   }
 }

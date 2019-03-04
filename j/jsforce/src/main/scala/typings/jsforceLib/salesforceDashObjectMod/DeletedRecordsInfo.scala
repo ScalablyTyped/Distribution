@@ -18,10 +18,8 @@ object DeletedRecordsInfo {
     earliestDateAvailable: java.lang.String,
     latestDateCovered: java.lang.String
   ): DeletedRecordsInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deletedRecords")(deletedRecords)
-    __obj.updateDynamic("earliestDateAvailable")(earliestDateAvailable)
-    __obj.updateDynamic("latestDateCovered")(latestDateCovered)
+    val __obj = js.Dynamic.literal(deletedRecords = deletedRecords, earliestDateAvailable = earliestDateAvailable, latestDateCovered = latestDateCovered)
+  
     __obj.asInstanceOf[DeletedRecordsInfo]
   }
 }

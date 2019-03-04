@@ -22,9 +22,8 @@ object Controller {
       ]
     ]
   ): Controller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, routes = routes)
+  
     __obj.asInstanceOf[Controller]
   }
 }

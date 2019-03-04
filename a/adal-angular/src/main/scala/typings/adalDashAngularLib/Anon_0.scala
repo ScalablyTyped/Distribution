@@ -20,11 +20,8 @@ object Anon_0 {
     VERBOSE: adalDashAngularLib.adalDashAngularLibNumbers.`3`,
     WARN: adalDashAngularLib.adalDashAngularLibNumbers.`1`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("VERBOSE")(VERBOSE)
-    __obj.updateDynamic("WARN")(WARN)
+    val __obj = js.Dynamic.literal(ERROR = ERROR, INFO = INFO, VERBOSE = VERBOSE, WARN = WARN)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

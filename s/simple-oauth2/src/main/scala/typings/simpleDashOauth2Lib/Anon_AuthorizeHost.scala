@@ -27,8 +27,7 @@ object Anon_AuthorizeHost {
     revokePath: java.lang.String = null,
     tokenPath: java.lang.String = null
   ): Anon_AuthorizeHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tokenHost")(tokenHost)
+    val __obj = js.Dynamic.literal(tokenHost = tokenHost)
     if (authorizeHost != null) __obj.updateDynamic("authorizeHost")(authorizeHost)
     if (authorizePath != null) __obj.updateDynamic("authorizePath")(authorizePath)
     if (revokePath != null) __obj.updateDynamic("revokePath")(revokePath)

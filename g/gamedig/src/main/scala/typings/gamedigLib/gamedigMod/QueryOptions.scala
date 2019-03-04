@@ -26,8 +26,8 @@ object QueryOptions {
     port: scala.Int | scala.Double = null,
     socketTimeout: scala.Int | scala.Double = null
   ): QueryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(host = host)
+    __obj.updateDynamic("type")(`type`)
     if (attemptTimeout != null) __obj.updateDynamic("attemptTimeout")(attemptTimeout.asInstanceOf[js.Any])
     if (maxAttempts != null) __obj.updateDynamic("maxAttempts")(maxAttempts.asInstanceOf[js.Any])
     if (notes != null) __obj.updateDynamic("notes")(notes)

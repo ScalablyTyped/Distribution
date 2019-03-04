@@ -34,12 +34,8 @@ object GitTreeRef {
     treeEntries: js.Array[GitTreeEntryRef],
     url: java.lang.String
   ): GitTreeRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("treeEntries")(treeEntries)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, objectId = objectId, size = size, treeEntries = treeEntries, url = url)
+  
     __obj.asInstanceOf[GitTreeRef]
   }
 }

@@ -23,11 +23,8 @@ object Radio {
     tuneIn: js.Function1[java.lang.String, Radio],
     tuneOut: js.Function1[java.lang.String, Radio]
   ): Radio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("tuneIn")(tuneIn)
-    __obj.updateDynamic("tuneOut")(tuneOut)
+    val __obj = js.Dynamic.literal(channel = channel, log = log, tuneIn = tuneIn, tuneOut = tuneOut)
+  
     __obj.asInstanceOf[Radio]
   }
 }

@@ -93,8 +93,7 @@ object Anon_AltCategoryId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCategoryId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

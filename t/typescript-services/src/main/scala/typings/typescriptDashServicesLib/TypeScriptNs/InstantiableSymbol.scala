@@ -18,10 +18,8 @@ object InstantiableSymbol {
     getIsSpecialized: js.Function0[scala.Boolean],
     getTypeParameterArgumentMap: js.Function0[TypeArgumentMap]
   ): InstantiableSymbol = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllowedToReferenceTypeParameters")(getAllowedToReferenceTypeParameters)
-    __obj.updateDynamic("getIsSpecialized")(getIsSpecialized)
-    __obj.updateDynamic("getTypeParameterArgumentMap")(getTypeParameterArgumentMap)
+    val __obj = js.Dynamic.literal(getAllowedToReferenceTypeParameters = getAllowedToReferenceTypeParameters, getIsSpecialized = getIsSpecialized, getTypeParameterArgumentMap = getTypeParameterArgumentMap)
+  
     __obj.asInstanceOf[InstantiableSymbol]
   }
 }

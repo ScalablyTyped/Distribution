@@ -21,9 +21,7 @@ object AllowTrust {
     authorize: js.UndefOr[scala.Boolean] = js.undefined,
     source: java.lang.String = null
   ): AllowTrust = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assetCode")(assetCode)
-    __obj.updateDynamic("trustor")(trustor)
+    val __obj = js.Dynamic.literal(assetCode = assetCode, trustor = trustor)
     if (!js.isUndefined(authorize)) __obj.updateDynamic("authorize")(authorize)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[AllowTrust]

@@ -25,12 +25,8 @@ object CannotConvertException {
     Message: java.lang.String,
     Reason: scala.Double
   ): CannotConvertException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ArgumentIndex")(ArgumentIndex)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DestinationTypeClass")(DestinationTypeClass)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Reason")(Reason)
+    val __obj = js.Dynamic.literal(ArgumentIndex = ArgumentIndex, Context = Context, DestinationTypeClass = DestinationTypeClass, Message = Message, Reason = Reason)
+  
     __obj.asInstanceOf[CannotConvertException]
   }
 }

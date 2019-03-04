@@ -189,10 +189,7 @@ object DataGridProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     withColumnMenu: js.UndefOr[scala.Boolean] = js.undefined
   ): DataGridProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    __obj.updateDynamic("idProperty")(idProperty)
+    val __obj = js.Dynamic.literal(columns = columns, dataSource = dataSource.asInstanceOf[js.Any], idProperty = idProperty)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (dataSourceCount != null) __obj.updateDynamic("dataSourceCount")(dataSourceCount.asInstanceOf[js.Any])
     if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage.asInstanceOf[js.Any])

@@ -57,21 +57,8 @@ object PlatformReflectionCapabilities {
     resourceUri: js.Function1[atAngularCoreLib.srcTypeMod.Type[_], java.lang.String],
     setter: js.Function1[java.lang.String, atAngularCoreLib.srcReflectionTypesMod.SetterFn]
   ): PlatformReflectionCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(annotations)
-    __obj.updateDynamic("factory")(factory)
-    __obj.updateDynamic("getter")(getter)
-    __obj.updateDynamic("guards")(guards)
-    __obj.updateDynamic("hasLifecycleHook")(hasLifecycleHook)
-    __obj.updateDynamic("importUri")(importUri)
-    __obj.updateDynamic("isReflectionEnabled")(isReflectionEnabled)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("propMetadata")(propMetadata)
-    __obj.updateDynamic("resolveEnum")(resolveEnum)
-    __obj.updateDynamic("resolveIdentifier")(resolveIdentifier)
-    __obj.updateDynamic("resourceUri")(resourceUri)
-    __obj.updateDynamic("setter")(setter)
+    val __obj = js.Dynamic.literal(annotations = annotations, factory = factory, getter = getter, guards = guards, hasLifecycleHook = hasLifecycleHook, importUri = importUri, isReflectionEnabled = isReflectionEnabled, method = method, parameters = parameters, propMetadata = propMetadata, resolveEnum = resolveEnum, resolveIdentifier = resolveIdentifier, resourceUri = resourceUri, setter = setter)
+  
     __obj.asInstanceOf[PlatformReflectionCapabilities]
   }
 }

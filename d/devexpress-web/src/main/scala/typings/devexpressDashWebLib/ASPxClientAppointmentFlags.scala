@@ -63,15 +63,8 @@ object ASPxClientAppointmentFlags {
     allowInplaceEditor: scala.Boolean,
     allowResize: scala.Boolean
   ): ASPxClientAppointmentFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowConflicts")(allowConflicts)
-    __obj.updateDynamic("allowCopy")(allowCopy)
-    __obj.updateDynamic("allowDelete")(allowDelete)
-    __obj.updateDynamic("allowDrag")(allowDrag)
-    __obj.updateDynamic("allowDragBetweenResources")(allowDragBetweenResources)
-    __obj.updateDynamic("allowEdit")(allowEdit)
-    __obj.updateDynamic("allowInplaceEditor")(allowInplaceEditor)
-    __obj.updateDynamic("allowResize")(allowResize)
+    val __obj = js.Dynamic.literal(allowConflicts = allowConflicts, allowCopy = allowCopy, allowDelete = allowDelete, allowDrag = allowDrag, allowDragBetweenResources = allowDragBetweenResources, allowEdit = allowEdit, allowInplaceEditor = allowInplaceEditor, allowResize = allowResize)
+  
     __obj.asInstanceOf[ASPxClientAppointmentFlags]
   }
 }

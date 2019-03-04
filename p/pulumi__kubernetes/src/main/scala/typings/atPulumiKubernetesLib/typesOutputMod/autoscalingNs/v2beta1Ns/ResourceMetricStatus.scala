@@ -39,10 +39,8 @@ object ResourceMetricStatus {
     currentAverageValue: java.lang.String,
     name: java.lang.String
   ): ResourceMetricStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentAverageUtilization")(currentAverageUtilization)
-    __obj.updateDynamic("currentAverageValue")(currentAverageValue)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(currentAverageUtilization = currentAverageUtilization, currentAverageValue = currentAverageValue, name = name)
+  
     __obj.asInstanceOf[ResourceMetricStatus]
   }
 }

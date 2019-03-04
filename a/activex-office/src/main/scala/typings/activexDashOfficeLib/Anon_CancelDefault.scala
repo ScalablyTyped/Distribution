@@ -13,9 +13,8 @@ trait Anon_CancelDefault extends js.Object {
 object Anon_CancelDefault {
   @scala.inline
   def apply(CancelDefault: scala.Boolean, Ctrl: activexDashOfficeLib.OfficeNs.CommandBarButton): Anon_CancelDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CancelDefault")(CancelDefault)
-    __obj.updateDynamic("Ctrl")(Ctrl)
+    val __obj = js.Dynamic.literal(CancelDefault = CancelDefault, Ctrl = Ctrl)
+  
     __obj.asInstanceOf[Anon_CancelDefault]
   }
 }

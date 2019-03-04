@@ -36,13 +36,8 @@ object INotificationItem {
     url: java.lang.String,
     view: java.lang.String
   ): INotificationItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("headline")(headline)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sticky")(sticky)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(actions = actions, headline = headline, message = message, sticky = sticky, url = url, view = view)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[INotificationItem]
   }
 }

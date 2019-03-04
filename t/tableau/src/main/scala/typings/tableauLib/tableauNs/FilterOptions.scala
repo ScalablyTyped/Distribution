@@ -19,8 +19,8 @@ trait FilterOptions extends js.Object {
 object FilterOptions {
   @scala.inline
   def apply(isExcludeMode: scala.Boolean): FilterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isExcludeMode")(isExcludeMode)
+    val __obj = js.Dynamic.literal(isExcludeMode = isExcludeMode)
+  
     __obj.asInstanceOf[FilterOptions]
   }
 }

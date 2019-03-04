@@ -22,12 +22,8 @@ object Anon_AllocationIdAssociationId {
     publicDnsName: java.lang.String,
     publicIp: java.lang.String
   ): Anon_AllocationIdAssociationId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocationId")(allocationId)
-    __obj.updateDynamic("associationId")(associationId)
-    __obj.updateDynamic("ipOwnerId")(ipOwnerId)
-    __obj.updateDynamic("publicDnsName")(publicDnsName)
-    __obj.updateDynamic("publicIp")(publicIp)
+    val __obj = js.Dynamic.literal(allocationId = allocationId, associationId = associationId, ipOwnerId = ipOwnerId, publicDnsName = publicDnsName, publicIp = publicIp)
+  
     __obj.asInstanceOf[Anon_AllocationIdAssociationId]
   }
 }

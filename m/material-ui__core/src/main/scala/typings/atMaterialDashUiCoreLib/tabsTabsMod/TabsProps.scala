@@ -69,8 +69,7 @@ object TabsProps {
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.scrollable | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth = null,
     width: java.lang.String = null
   ): TabsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (ScrollButtonComponent != null) __obj.updateDynamic("ScrollButtonComponent")(ScrollButtonComponent.asInstanceOf[js.Any])
     if (TabIndicatorProps != null) __obj.updateDynamic("TabIndicatorProps")(TabIndicatorProps)
     if (action != null) __obj.updateDynamic("action")(action)

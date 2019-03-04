@@ -13,9 +13,8 @@ trait Anon_CanAddRow extends js.Object {
 object Anon_CanAddRow {
   @scala.inline
   def apply(canAddRow: scala.Boolean, question: surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion): Anon_CanAddRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canAddRow")(canAddRow)
-    __obj.updateDynamic("question")(question)
+    val __obj = js.Dynamic.literal(canAddRow = canAddRow, question = question)
+  
     __obj.asInstanceOf[Anon_CanAddRow]
   }
 }

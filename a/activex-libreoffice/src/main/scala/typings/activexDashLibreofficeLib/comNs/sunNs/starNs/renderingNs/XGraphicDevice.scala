@@ -168,28 +168,8 @@ object XGraphicDevice {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XGraphicDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BufferController")(BufferController)
-    __obj.updateDynamic("DeviceColorSpace")(DeviceColorSpace)
-    __obj.updateDynamic("ParametricPolyPolygonFactory")(ParametricPolyPolygonFactory)
-    __obj.updateDynamic("PhysicalResolution")(PhysicalResolution)
-    __obj.updateDynamic("PhysicalSize")(PhysicalSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createCompatibleAlphaBitmap")(createCompatibleAlphaBitmap)
-    __obj.updateDynamic("createCompatibleBezierPolyPolygon")(createCompatibleBezierPolyPolygon)
-    __obj.updateDynamic("createCompatibleBitmap")(createCompatibleBitmap)
-    __obj.updateDynamic("createCompatibleLinePolyPolygon")(createCompatibleLinePolyPolygon)
-    __obj.updateDynamic("createVolatileAlphaBitmap")(createVolatileAlphaBitmap)
-    __obj.updateDynamic("createVolatileBitmap")(createVolatileBitmap)
-    __obj.updateDynamic("enterFullScreenMode")(enterFullScreenMode)
-    __obj.updateDynamic("getBufferController")(getBufferController)
-    __obj.updateDynamic("getDeviceColorSpace")(getDeviceColorSpace)
-    __obj.updateDynamic("getParametricPolyPolygonFactory")(getParametricPolyPolygonFactory)
-    __obj.updateDynamic("getPhysicalResolution")(getPhysicalResolution)
-    __obj.updateDynamic("getPhysicalSize")(getPhysicalSize)
-    __obj.updateDynamic("hasFullScreenMode")(hasFullScreenMode)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(BufferController = BufferController, DeviceColorSpace = DeviceColorSpace, ParametricPolyPolygonFactory = ParametricPolyPolygonFactory, PhysicalResolution = PhysicalResolution, PhysicalSize = PhysicalSize, acquire = acquire, createCompatibleAlphaBitmap = createCompatibleAlphaBitmap, createCompatibleBezierPolyPolygon = createCompatibleBezierPolyPolygon, createCompatibleBitmap = createCompatibleBitmap, createCompatibleLinePolyPolygon = createCompatibleLinePolyPolygon, createVolatileAlphaBitmap = createVolatileAlphaBitmap, createVolatileBitmap = createVolatileBitmap, enterFullScreenMode = enterFullScreenMode, getBufferController = getBufferController, getDeviceColorSpace = getDeviceColorSpace, getParametricPolyPolygonFactory = getParametricPolyPolygonFactory, getPhysicalResolution = getPhysicalResolution, getPhysicalSize = getPhysicalSize, hasFullScreenMode = hasFullScreenMode, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XGraphicDevice]
   }
 }

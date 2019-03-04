@@ -13,9 +13,8 @@ trait ServerInfo extends js.Object {
 object ServerInfo {
   @scala.inline
   def apply(redis_version: java.lang.String, versions: js.Array[scala.Double]): ServerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redis_version")(redis_version)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(redis_version = redis_version, versions = versions)
+  
     __obj.asInstanceOf[ServerInfo]
   }
 }

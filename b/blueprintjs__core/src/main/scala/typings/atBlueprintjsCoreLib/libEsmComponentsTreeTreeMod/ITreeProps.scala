@@ -56,8 +56,7 @@ object ITreeProps {
     onNodeMouseEnter: TreeEventHandler[T] = null,
     onNodeMouseLeave: TreeEventHandler[T] = null
   ): ITreeProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents)
+    val __obj = js.Dynamic.literal(contents = contents)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onNodeClick != null) __obj.updateDynamic("onNodeClick")(onNodeClick)
     if (onNodeCollapse != null) __obj.updateDynamic("onNodeCollapse")(onNodeCollapse)

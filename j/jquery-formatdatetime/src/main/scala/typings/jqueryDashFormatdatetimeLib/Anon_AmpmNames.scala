@@ -57,16 +57,8 @@ object Anon_AmpmNames {
     monthNamesShort: js.Array[java.lang.String],
     utc: scala.Boolean
   ): Anon_AmpmNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ampmNames")(ampmNames)
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("dayNames")(dayNames)
-    __obj.updateDynamic("dayNamesShort")(dayNamesShort)
-    __obj.updateDynamic("formatAttribute")(formatAttribute)
-    __obj.updateDynamic("getSuffix")(getSuffix)
-    __obj.updateDynamic("monthNames")(monthNames)
-    __obj.updateDynamic("monthNamesShort")(monthNamesShort)
-    __obj.updateDynamic("utc")(utc)
+    val __obj = js.Dynamic.literal(ampmNames = ampmNames, attribute = attribute, dayNames = dayNames, dayNamesShort = dayNamesShort, formatAttribute = formatAttribute, getSuffix = getSuffix, monthNames = monthNames, monthNamesShort = monthNamesShort, utc = utc)
+  
     __obj.asInstanceOf[Anon_AmpmNames]
   }
 }

@@ -27,17 +27,8 @@ object CloudFormationCustomResourceUpdateEvent {
     ServiceToken: java.lang.String,
     StackId: java.lang.String
   ): CloudFormationCustomResourceUpdateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LogicalResourceId")(LogicalResourceId)
-    __obj.updateDynamic("OldResourceProperties")(OldResourceProperties)
-    __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId)
-    __obj.updateDynamic("RequestId")(RequestId)
-    __obj.updateDynamic("RequestType")(RequestType)
-    __obj.updateDynamic("ResourceProperties")(ResourceProperties)
-    __obj.updateDynamic("ResourceType")(ResourceType)
-    __obj.updateDynamic("ResponseURL")(ResponseURL)
-    __obj.updateDynamic("ServiceToken")(ServiceToken)
-    __obj.updateDynamic("StackId")(StackId)
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, OldResourceProperties = OldResourceProperties, PhysicalResourceId = PhysicalResourceId, RequestId = RequestId, RequestType = RequestType, ResourceProperties = ResourceProperties, ResourceType = ResourceType, ResponseURL = ResponseURL, ServiceToken = ServiceToken, StackId = StackId)
+  
     __obj.asInstanceOf[CloudFormationCustomResourceUpdateEvent]
   }
 }

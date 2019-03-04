@@ -24,13 +24,8 @@ object Anon_Directory {
     WatcherNs: js.Any,
     WhichNs: js.Any
   ): Anon_Directory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DirectoryNs")(DirectoryNs)
-    __obj.updateDynamic("GlobNs")(GlobNs)
-    __obj.updateDynamic("RandomAccessFileNs")(RandomAccessFileNs)
-    __obj.updateDynamic("TailWatcherNs")(TailWatcherNs)
-    __obj.updateDynamic("WatcherNs")(WatcherNs)
-    __obj.updateDynamic("WhichNs")(WhichNs)
+    val __obj = js.Dynamic.literal(DirectoryNs = DirectoryNs, GlobNs = GlobNs, RandomAccessFileNs = RandomAccessFileNs, TailWatcherNs = TailWatcherNs, WatcherNs = WatcherNs, WhichNs = WhichNs)
+  
     __obj.asInstanceOf[Anon_Directory]
   }
 }

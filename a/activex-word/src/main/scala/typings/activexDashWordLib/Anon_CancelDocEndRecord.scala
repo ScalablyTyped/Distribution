@@ -20,11 +20,8 @@ object Anon_CancelDocEndRecord {
     EndRecord: scala.Double,
     StartRecord: scala.Double
   ): Anon_CancelDocEndRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Doc")(Doc)
-    __obj.updateDynamic("EndRecord")(EndRecord)
-    __obj.updateDynamic("StartRecord")(StartRecord)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Doc = Doc, EndRecord = EndRecord, StartRecord = StartRecord)
+  
     __obj.asInstanceOf[Anon_CancelDocEndRecord]
   }
 }

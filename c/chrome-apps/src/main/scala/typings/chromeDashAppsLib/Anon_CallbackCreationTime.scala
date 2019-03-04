@@ -75,13 +75,8 @@ object Anon_CallbackCreationTime {
     ],
     onTokenRefresh: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
   ): Anon_CallbackCreationTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteID")(deleteID)
-    __obj.updateDynamic("deleteToken")(deleteToken)
-    __obj.updateDynamic("getCreationTime")(getCreationTime)
-    __obj.updateDynamic("getID")(getID)
-    __obj.updateDynamic("getToken")(getToken)
-    __obj.updateDynamic("onTokenRefresh")(onTokenRefresh)
+    val __obj = js.Dynamic.literal(deleteID = deleteID, deleteToken = deleteToken, getCreationTime = getCreationTime, getID = getID, getToken = getToken, onTokenRefresh = onTokenRefresh)
+  
     __obj.asInstanceOf[Anon_CallbackCreationTime]
   }
 }

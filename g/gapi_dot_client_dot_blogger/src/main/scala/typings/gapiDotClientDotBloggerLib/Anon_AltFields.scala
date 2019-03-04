@@ -42,8 +42,7 @@ object Anon_AltFields {
     userIp: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AltFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

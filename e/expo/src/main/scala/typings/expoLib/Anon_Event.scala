@@ -19,9 +19,8 @@ object Anon_Event {
     params: expoLib.expoMod.HashMap,
     `type`: expoLib.expoLibStrings.success
   ): Anon_Event = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(event = event, params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Event]
   }
 }

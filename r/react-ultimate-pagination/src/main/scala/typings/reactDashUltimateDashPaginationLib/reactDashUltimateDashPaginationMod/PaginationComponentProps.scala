@@ -32,11 +32,8 @@ object PaginationComponentProps {
     onClick: js.Function0[scala.Unit],
     value: scala.Double
   ): PaginationComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isActive = isActive, isDisabled = isDisabled, onClick = onClick, value = value)
+  
     __obj.asInstanceOf[PaginationComponentProps]
   }
 }

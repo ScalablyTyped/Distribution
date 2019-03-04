@@ -62,8 +62,7 @@ object GetRouteArgs {
     transitGatewayId: java.lang.String = null,
     vpcPeeringConnectionId: java.lang.String = null
   ): GetRouteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeTableId")(routeTableId)
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId)
     if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock)
     if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock)
     if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId)

@@ -34,11 +34,7 @@ object ICreateWorkingCopyFromTeamServerParameters {
     markAsChanged: js.UndefOr[scala.Boolean] = js.undefined,
     setAsDefault: js.UndefOr[scala.Boolean] = js.undefined
   ): ICreateWorkingCopyFromTeamServerParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("teamServerBaseBranch")(teamServerBaseBranch)
-    __obj.updateDynamic("teamServerBaseRevision")(teamServerBaseRevision)
+    val __obj = js.Dynamic.literal(name = name, projectId = projectId, teamServerBaseBranch = teamServerBaseBranch, teamServerBaseRevision = teamServerBaseRevision)
     if (avatarUrl != null) __obj.updateDynamic("avatarUrl")(avatarUrl)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(isCollaboration)) __obj.updateDynamic("isCollaboration")(isCollaboration)

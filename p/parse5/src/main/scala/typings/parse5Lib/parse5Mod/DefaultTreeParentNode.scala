@@ -15,8 +15,8 @@ trait DefaultTreeParentNode extends js.Object {
 object DefaultTreeParentNode {
   @scala.inline
   def apply(childNodes: js.Array[DefaultTreeNode]): DefaultTreeParentNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childNodes")(childNodes)
+    val __obj = js.Dynamic.literal(childNodes = childNodes)
+  
     __obj.asInstanceOf[DefaultTreeParentNode]
   }
 }

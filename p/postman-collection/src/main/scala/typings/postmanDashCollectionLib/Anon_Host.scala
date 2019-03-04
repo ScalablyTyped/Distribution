@@ -14,10 +14,8 @@ trait Anon_Host extends js.Object {
 object Anon_Host {
   @scala.inline
   def apply(host: java.lang.String, path: stdLib.RegExp, protocols: js.Array[java.lang.String]): Anon_Host = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("protocols")(protocols)
+    val __obj = js.Dynamic.literal(host = host, path = path, protocols = protocols)
+  
     __obj.asInstanceOf[Anon_Host]
   }
 }

@@ -32,17 +32,8 @@ object ParticipantFrame {
     totalGold: scala.Double,
     xp: scala.Double
   ): ParticipantFrame = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentGold")(currentGold)
-    __obj.updateDynamic("dominionScore")(dominionScore)
-    __obj.updateDynamic("jungleMinionsKilled")(jungleMinionsKilled)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("minionsKilled")(minionsKilled)
-    __obj.updateDynamic("participantId")(participantId)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("teamScore")(teamScore)
-    __obj.updateDynamic("totalGold")(totalGold)
-    __obj.updateDynamic("xp")(xp)
+    val __obj = js.Dynamic.literal(currentGold = currentGold, dominionScore = dominionScore, jungleMinionsKilled = jungleMinionsKilled, level = level, minionsKilled = minionsKilled, participantId = participantId, position = position, teamScore = teamScore, totalGold = totalGold, xp = xp)
+  
     __obj.asInstanceOf[ParticipantFrame]
   }
 }

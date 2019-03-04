@@ -20,8 +20,7 @@ object Anon_AccessToken {
     apiKey: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): Anon_AccessToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(host = host)
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

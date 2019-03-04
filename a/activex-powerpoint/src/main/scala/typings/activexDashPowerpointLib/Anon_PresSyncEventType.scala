@@ -16,9 +16,8 @@ object Anon_PresSyncEventType {
     Pres: activexDashPowerpointLib.PowerPointNs.Presentation,
     SyncEventType: activexDashOfficeLib.OfficeNs.MsoSyncEventType
   ): Anon_PresSyncEventType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Pres")(Pres)
-    __obj.updateDynamic("SyncEventType")(SyncEventType)
+    val __obj = js.Dynamic.literal(Pres = Pres, SyncEventType = SyncEventType)
+  
     __obj.asInstanceOf[Anon_PresSyncEventType]
   }
 }

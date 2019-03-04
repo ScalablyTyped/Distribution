@@ -13,8 +13,8 @@ trait Suggestion extends js.Object {
 object Suggestion {
   @scala.inline
   def apply(description: java.lang.String): Suggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
+  
     __obj.asInstanceOf[Suggestion]
   }
 }

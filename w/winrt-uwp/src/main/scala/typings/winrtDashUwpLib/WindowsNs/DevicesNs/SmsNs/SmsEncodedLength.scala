@@ -28,12 +28,8 @@ object SmsEncodedLength {
     charactersPerSegment: scala.Double,
     segmentCount: scala.Double
   ): SmsEncodedLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byteCountLastSegment")(byteCountLastSegment)
-    __obj.updateDynamic("bytesPerSegment")(bytesPerSegment)
-    __obj.updateDynamic("characterCountLastSegment")(characterCountLastSegment)
-    __obj.updateDynamic("charactersPerSegment")(charactersPerSegment)
-    __obj.updateDynamic("segmentCount")(segmentCount)
+    val __obj = js.Dynamic.literal(byteCountLastSegment = byteCountLastSegment, bytesPerSegment = bytesPerSegment, characterCountLastSegment = characterCountLastSegment, charactersPerSegment = charactersPerSegment, segmentCount = segmentCount)
+  
     __obj.asInstanceOf[SmsEncodedLength]
   }
 }

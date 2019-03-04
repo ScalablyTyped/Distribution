@@ -24,10 +24,7 @@ object MethodThisType {
     connection: Connection = null,
     userId: java.lang.String = null
   ): MethodThisType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSimulation")(isSimulation)
-    __obj.updateDynamic("setUserId")(setUserId)
-    __obj.updateDynamic("unblock")(unblock)
+    val __obj = js.Dynamic.literal(isSimulation = isSimulation, setUserId = setUserId, unblock = unblock)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (userId != null) __obj.updateDynamic("userId")(userId)
     __obj.asInstanceOf[MethodThisType]

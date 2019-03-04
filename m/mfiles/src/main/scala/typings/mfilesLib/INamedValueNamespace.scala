@@ -18,10 +18,8 @@ object INamedValueNamespace {
     NamedValues: INamedValues,
     NamespaceName: java.lang.String
   ): INamedValueNamespace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("NamedValues")(NamedValues)
-    __obj.updateDynamic("NamespaceName")(NamespaceName)
+    val __obj = js.Dynamic.literal(Clone = Clone, NamedValues = NamedValues, NamespaceName = NamespaceName)
+  
     __obj.asInstanceOf[INamedValueNamespace]
   }
 }

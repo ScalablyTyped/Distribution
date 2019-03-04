@@ -39,8 +39,7 @@ object GlobalClusterArgs {
     engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     storageEncrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): GlobalClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("globalClusterIdentifier")(globalClusterIdentifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(globalClusterIdentifier = globalClusterIdentifier.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])

@@ -15,8 +15,8 @@ trait BacklogFields extends js.Object {
 object BacklogFields {
   @scala.inline
   def apply(typeFields: org.scalablytyped.runtime.StringDictionary[java.lang.String]): BacklogFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeFields")(typeFields)
+    val __obj = js.Dynamic.literal(typeFields = typeFields)
+  
     __obj.asInstanceOf[BacklogFields]
   }
 }

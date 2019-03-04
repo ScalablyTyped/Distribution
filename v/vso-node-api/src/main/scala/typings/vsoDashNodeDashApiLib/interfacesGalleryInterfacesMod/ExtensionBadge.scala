@@ -14,10 +14,8 @@ trait ExtensionBadge extends js.Object {
 object ExtensionBadge {
   @scala.inline
   def apply(description: java.lang.String, imgUri: java.lang.String, link: java.lang.String): ExtensionBadge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("imgUri")(imgUri)
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(description = description, imgUri = imgUri, link = link)
+  
     __obj.asInstanceOf[ExtensionBadge]
   }
 }

@@ -273,8 +273,7 @@ object WindowOptions {
     y: scala.Int | scala.Double = null,
     z: scala.Int | scala.Double = null
   ): WindowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (afterCascade != null) __obj.updateDynamic("afterCascade")(afterCascade)
     if (afterDrag != null) __obj.updateDynamic("afterDrag")(afterDrag)
     if (afterMaximize != null) __obj.updateDynamic("afterMaximize")(afterMaximize)

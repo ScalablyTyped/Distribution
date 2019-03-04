@@ -32,16 +32,8 @@ object Options {
     singleProcess: scala.Boolean,
     width: scala.Double
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
-    __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
-    __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("singleProcess")(singleProcess)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, density = density, height = height, outputFormat = outputFormat.asInstanceOf[js.Any], outputType = outputType.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], quality = quality, singleProcess = singleProcess, width = width)
+  
     __obj.asInstanceOf[Options]
   }
 }

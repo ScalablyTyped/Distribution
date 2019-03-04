@@ -52,15 +52,8 @@ object XUIElement {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XUIElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("RealInterface")(RealInterface)
-    __obj.updateDynamic("ResourceURL")(ResourceURL)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRealInterface")(getRealInterface)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Frame = Frame, RealInterface = RealInterface, ResourceURL = ResourceURL, Type = Type, acquire = acquire, getRealInterface = getRealInterface, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XUIElement]
   }
 }

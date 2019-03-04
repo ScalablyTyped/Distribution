@@ -25,10 +25,7 @@ object InfoWindowProps {
     mapCenter: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): InfoWindowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("google")(google)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("marker")(marker)
+    val __obj = js.Dynamic.literal(google = google, map = map, marker = marker)
     if (mapCenter != null) __obj.updateDynamic("mapCenter")(mapCenter.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     __obj.asInstanceOf[InfoWindowProps]

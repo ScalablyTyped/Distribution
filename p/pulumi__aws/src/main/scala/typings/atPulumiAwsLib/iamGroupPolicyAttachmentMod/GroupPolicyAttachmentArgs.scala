@@ -22,9 +22,8 @@ object GroupPolicyAttachmentArgs {
     group: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamGroupMod.Group],
     policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
   ): GroupPolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], policyArn = policyArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GroupPolicyAttachmentArgs]
   }
 }

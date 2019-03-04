@@ -17,9 +17,8 @@ object ValidationResultStatic {
     createFailedResult: js.Function1[java.lang.String, ValidationResult],
     passedInstance: ValidationResult
   ): ValidationResultStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFailedResult")(createFailedResult)
-    __obj.updateDynamic("passedInstance")(passedInstance)
+    val __obj = js.Dynamic.literal(createFailedResult = createFailedResult, passedInstance = passedInstance)
+  
     __obj.asInstanceOf[ValidationResultStatic]
   }
 }

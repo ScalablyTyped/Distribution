@@ -18,10 +18,8 @@ object Anon_BstrJobIdPFaxServerPJobStatus {
     pFaxServer: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer,
     pJobStatus: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxJobStatus
   ): Anon_BstrJobIdPFaxServerPJobStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrJobId")(bstrJobId)
-    __obj.updateDynamic("pFaxServer")(pFaxServer)
-    __obj.updateDynamic("pJobStatus")(pJobStatus)
+    val __obj = js.Dynamic.literal(bstrJobId = bstrJobId, pFaxServer = pFaxServer, pJobStatus = pJobStatus)
+  
     __obj.asInstanceOf[Anon_BstrJobIdPFaxServerPJobStatus]
   }
 }

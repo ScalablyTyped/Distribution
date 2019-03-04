@@ -24,10 +24,8 @@ object FunctionTypeParam {
     `type`: astDashTypesLib.astDashTypesLibStrings.FunctionTypeParam,
     typeAnnotation: astDashTypesLib.genKindsMod.FlowTypeKind
   ): FunctionTypeParam = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(name = name, optional = optional, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FunctionTypeParam]
   }
 }

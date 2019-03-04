@@ -48,11 +48,7 @@ object Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintProfileId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("profileId")(profileId)
-    __obj.updateDynamic("unsampledReportId")(unsampledReportId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, profileId = profileId, unsampledReportId = unsampledReportId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

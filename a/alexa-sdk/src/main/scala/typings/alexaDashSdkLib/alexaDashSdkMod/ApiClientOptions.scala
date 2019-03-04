@@ -24,13 +24,8 @@ object ApiClientOptions {
     port: java.lang.String,
     protocol: java.lang.String
   ): ApiClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(headers = headers, hostname = hostname, method = method, path = path, port = port, protocol = protocol)
+  
     __obj.asInstanceOf[ApiClientOptions]
   }
 }

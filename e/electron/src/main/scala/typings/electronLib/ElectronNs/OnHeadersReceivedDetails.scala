@@ -30,15 +30,7 @@ object OnHeadersReceivedDetails {
     url: java.lang.String,
     webContentsId: scala.Int | scala.Double = null
   ): OnHeadersReceivedDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("resourceType")(resourceType)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, method = method, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, statusLine = statusLine, timestamp = timestamp, url = url)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnHeadersReceivedDetails]
   }

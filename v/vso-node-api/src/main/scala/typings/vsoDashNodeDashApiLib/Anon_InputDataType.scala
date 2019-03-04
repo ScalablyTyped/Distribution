@@ -34,18 +34,8 @@ object Anon_InputDataType {
     InputValuesError: Anon_Fields,
     InputValuesQuery: Anon_Fields
   ): Anon_InputDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InputDataType")(InputDataType)
-    __obj.updateDynamic("InputDescriptor")(InputDescriptor)
-    __obj.updateDynamic("InputFilter")(InputFilter)
-    __obj.updateDynamic("InputFilterCondition")(InputFilterCondition)
-    __obj.updateDynamic("InputFilterOperator")(InputFilterOperator)
-    __obj.updateDynamic("InputMode")(InputMode)
-    __obj.updateDynamic("InputValidation")(InputValidation)
-    __obj.updateDynamic("InputValue")(InputValue)
-    __obj.updateDynamic("InputValues")(InputValues)
-    __obj.updateDynamic("InputValuesError")(InputValuesError)
-    __obj.updateDynamic("InputValuesQuery")(InputValuesQuery)
+    val __obj = js.Dynamic.literal(InputDataType = InputDataType, InputDescriptor = InputDescriptor, InputFilter = InputFilter, InputFilterCondition = InputFilterCondition, InputFilterOperator = InputFilterOperator, InputMode = InputMode, InputValidation = InputValidation, InputValue = InputValue, InputValues = InputValues, InputValuesError = InputValuesError, InputValuesQuery = InputValuesQuery)
+  
     __obj.asInstanceOf[Anon_InputDataType]
   }
 }

@@ -20,10 +20,7 @@ object SuggestedWarpOutputOptions {
     t_srs: SpatialReference,
     maxError: scala.Int | scala.Double = null
   ): SuggestedWarpOutputOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s_srs")(s_srs)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("t_srs")(t_srs)
+    val __obj = js.Dynamic.literal(s_srs = s_srs, src = src, t_srs = t_srs)
     if (maxError != null) __obj.updateDynamic("maxError")(maxError.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggestedWarpOutputOptions]
   }

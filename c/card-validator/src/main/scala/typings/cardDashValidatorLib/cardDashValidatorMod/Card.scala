@@ -26,13 +26,8 @@ object Card {
     pattern: java.lang.String,
     `type`: java.lang.String
   ): Card = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("gaps")(gaps)
-    __obj.updateDynamic("isAmex")(isAmex)
-    __obj.updateDynamic("lengths")(lengths)
-    __obj.updateDynamic("niceType")(niceType)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(code = code, gaps = gaps, isAmex = isAmex, lengths = lengths, niceType = niceType, pattern = pattern)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Card]
   }
 }

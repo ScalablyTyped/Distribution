@@ -22,12 +22,8 @@ object RegisterStreamProtocolRequest {
     uploadData: js.Array[UploadData],
     url: java.lang.String
   ): RegisterStreamProtocolRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("referrer")(referrer)
-    __obj.updateDynamic("uploadData")(uploadData)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(headers = headers, method = method, referrer = referrer, uploadData = uploadData, url = url)
+  
     __obj.asInstanceOf[RegisterStreamProtocolRequest]
   }
 }

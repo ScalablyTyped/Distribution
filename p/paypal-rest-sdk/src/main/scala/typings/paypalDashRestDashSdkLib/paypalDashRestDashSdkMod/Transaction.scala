@@ -40,8 +40,7 @@ object Transaction {
     related_resources: js.Array[RelatedResources] = null,
     soft_descriptor: java.lang.String = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
+    val __obj = js.Dynamic.literal(amount = amount)
     if (custom != null) __obj.updateDynamic("custom")(custom)
     if (description != null) __obj.updateDynamic("description")(description)
     if (invoice_number != null) __obj.updateDynamic("invoice_number")(invoice_number)

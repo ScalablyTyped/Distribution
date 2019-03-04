@@ -22,11 +22,7 @@ object Anon_HeightIsStored {
     width: scala.Double,
     isStored: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_HeightIsStored = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("playableDuration")(playableDuration)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, playableDuration = playableDuration, uri = uri, width = width)
     if (!js.isUndefined(isStored)) __obj.updateDynamic("isStored")(isStored)
     __obj.asInstanceOf[Anon_HeightIsStored]
   }

@@ -22,10 +22,7 @@ object PutSecretOptions {
     digest: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): PutSecretOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(context = context, name = name, secret = secret)
     if (digest != null) __obj.updateDynamic("digest")(digest)
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSecretOptions]

@@ -19,8 +19,7 @@ object Anon_EolRange {
     range: js.UndefOr[scala.Nothing] = js.undefined,
     text: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_EolRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eol")(eol)
+    val __obj = js.Dynamic.literal(eol = eol)
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
     if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Anon_EolRange]

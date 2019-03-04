@@ -51,18 +51,8 @@ object LineNumberingProperties {
     SeparatorInterval: scala.Double,
     SeparatorText: java.lang.String
   ): LineNumberingProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharStyleName")(CharStyleName)
-    __obj.updateDynamic("CountEmptyLines")(CountEmptyLines)
-    __obj.updateDynamic("CountLinesInFrames")(CountLinesInFrames)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("Interval")(Interval)
-    __obj.updateDynamic("IsOn")(IsOn)
-    __obj.updateDynamic("NumberPosition")(NumberPosition)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("RestartAtEachPage")(RestartAtEachPage)
-    __obj.updateDynamic("SeparatorInterval")(SeparatorInterval)
-    __obj.updateDynamic("SeparatorText")(SeparatorText)
+    val __obj = js.Dynamic.literal(CharStyleName = CharStyleName, CountEmptyLines = CountEmptyLines, CountLinesInFrames = CountLinesInFrames, Distance = Distance, Interval = Interval, IsOn = IsOn, NumberPosition = NumberPosition, NumberingType = NumberingType, RestartAtEachPage = RestartAtEachPage, SeparatorInterval = SeparatorInterval, SeparatorText = SeparatorText)
+  
     __obj.asInstanceOf[LineNumberingProperties]
   }
 }

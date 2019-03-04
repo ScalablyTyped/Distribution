@@ -12,14 +12,14 @@ trait LodashInvokeArgs extends js.Object {
   def apply(path: lodashLib.lodashMod.underscoreNs.PropertyPath, args: js.Array[_], `object`: js.Any): js.Any = js.native
   def apply(
     path: lodashLib.lodashMod.underscoreNs.PropertyPath,
-    args: lodashLib.lodashMod.underscoreNs.`__`,
+    args: lodashLib.lodashMod.underscoreNs.__,
     `object`: js.Any
   ): LodashInvokeArgs1x5 = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_]): LodashInvokeArgs1x2 = js.native
-  def apply(path: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_], `object`: js.Any): LodashInvokeArgs1x6 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__, args: js.Array[_]): LodashInvokeArgs1x2 = js.native
+  def apply(path: lodashLib.lodashMod.underscoreNs.__, args: js.Array[_], `object`: js.Any): LodashInvokeArgs1x6 = js.native
   def apply(
-    path: lodashLib.lodashMod.underscoreNs.`__`,
-    args: lodashLib.lodashMod.underscoreNs.`__`,
+    path: lodashLib.lodashMod.underscoreNs.__,
+    args: lodashLib.lodashMod.underscoreNs.__,
     `object`: js.Any
   ): LodashInvokeArgs1x4 = js.native
 }

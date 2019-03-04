@@ -12,8 +12,8 @@ trait Anon_Instance extends js.Object {
 object Anon_Instance {
   @scala.inline
   def apply(instance: angularLib.angularMod.angularNs.IController): Anon_Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(instance = instance)
+  
     __obj.asInstanceOf[Anon_Instance]
   }
 }

@@ -18,9 +18,7 @@ object Anon_Owner {
     sourceIdentifier: java.lang.String,
     sourceDetails: js.Array[Anon_EventSource] = null
   ): Anon_Owner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("sourceIdentifier")(sourceIdentifier)
+    val __obj = js.Dynamic.literal(owner = owner, sourceIdentifier = sourceIdentifier)
     if (sourceDetails != null) __obj.updateDynamic("sourceDetails")(sourceDetails)
     __obj.asInstanceOf[Anon_Owner]
   }

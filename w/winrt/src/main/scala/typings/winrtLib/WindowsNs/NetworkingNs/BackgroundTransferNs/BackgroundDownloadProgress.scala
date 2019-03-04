@@ -22,12 +22,8 @@ object BackgroundDownloadProgress {
     status: BackgroundTransferStatus,
     totalBytesToReceive: scala.Double
   ): BackgroundDownloadProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesReceived")(bytesReceived)
-    __obj.updateDynamic("hasResponseChanged")(hasResponseChanged)
-    __obj.updateDynamic("hasRestarted")(hasRestarted)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("totalBytesToReceive")(totalBytesToReceive)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, hasResponseChanged = hasResponseChanged, hasRestarted = hasRestarted, status = status, totalBytesToReceive = totalBytesToReceive)
+  
     __obj.asInstanceOf[BackgroundDownloadProgress]
   }
 }

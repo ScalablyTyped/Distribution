@@ -20,11 +20,11 @@ class ArrayIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.Array
   /**
     * @hidden
     */
-  var `index_`: js.Any = js.native
+  var index_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `source_`: js.Any = js.native
+  var source_ : js.Any = js.native
   /**
     * Reference of the value.
     */

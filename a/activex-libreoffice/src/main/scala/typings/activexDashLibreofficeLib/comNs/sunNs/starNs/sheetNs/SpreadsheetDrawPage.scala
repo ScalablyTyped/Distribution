@@ -37,20 +37,8 @@ object SpreadsheetDrawPage {
     remove: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, scala.Unit],
     ungroup: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShapeGroup, scala.Unit]
   ): SpreadsheetDrawPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("ungroup")(ungroup)
+    val __obj = js.Dynamic.literal(Count = Count, ElementType = ElementType, acquire = acquire, add = add, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, group = group, hasElements = hasElements, queryInterface = queryInterface, release = release, remove = remove, ungroup = ungroup)
+  
     __obj.asInstanceOf[SpreadsheetDrawPage]
   }
 }

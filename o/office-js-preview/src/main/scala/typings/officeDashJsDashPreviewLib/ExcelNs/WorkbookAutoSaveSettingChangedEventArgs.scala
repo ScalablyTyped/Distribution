@@ -28,8 +28,8 @@ object WorkbookAutoSaveSettingChangedEventArgs {
   def apply(
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorkbookAutoSaveSettingChanged
   ): WorkbookAutoSaveSettingChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorkbookAutoSaveSettingChangedEventArgs]
   }
 }

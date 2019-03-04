@@ -21,11 +21,8 @@ object CollidePayload {
     excludedMeshUniqueId: Nullable[scala.Double],
     maximumRetry: scala.Double
   ): CollidePayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collider")(collider)
-    __obj.updateDynamic("collisionId")(collisionId)
-    __obj.updateDynamic("excludedMeshUniqueId")(excludedMeshUniqueId.asInstanceOf[js.Any])
-    __obj.updateDynamic("maximumRetry")(maximumRetry)
+    val __obj = js.Dynamic.literal(collider = collider, collisionId = collisionId, excludedMeshUniqueId = excludedMeshUniqueId.asInstanceOf[js.Any], maximumRetry = maximumRetry)
+  
     __obj.asInstanceOf[CollidePayload]
   }
 }

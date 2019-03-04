@@ -30,9 +30,7 @@ object Response {
     status: scala.Int | scala.Double = null,
     statusText: java.lang.String = null
   ): Response[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, result = result.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (statusText != null) __obj.updateDynamic("statusText")(statusText)

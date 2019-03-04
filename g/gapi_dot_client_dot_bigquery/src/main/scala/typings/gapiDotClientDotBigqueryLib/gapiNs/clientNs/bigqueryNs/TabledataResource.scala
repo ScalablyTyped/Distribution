@@ -24,9 +24,8 @@ object TabledataResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TableDataList]
     ]
   ): TabledataResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertAll")(insertAll)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(insertAll = insertAll, list = list)
+  
     __obj.asInstanceOf[TabledataResource]
   }
 }

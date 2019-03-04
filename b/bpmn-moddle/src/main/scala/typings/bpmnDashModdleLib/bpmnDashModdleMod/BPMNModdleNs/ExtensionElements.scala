@@ -22,11 +22,7 @@ object ExtensionElements {
     values: js.Array[BaseElement],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ExtensionElements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("extensionAttributeDefinition")(extensionAttributeDefinition)
-    __obj.updateDynamic("valueRef")(valueRef)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal($type = $type, extensionAttributeDefinition = extensionAttributeDefinition, valueRef = valueRef, values = values)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtensionElements]
   }

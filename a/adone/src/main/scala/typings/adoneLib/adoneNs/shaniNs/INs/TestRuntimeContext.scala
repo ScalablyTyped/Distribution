@@ -24,9 +24,7 @@ object TestRuntimeContext {
     timeout: js.Function1[scala.Double, scala.Unit],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): TestRuntimeContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("skip")(skip)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(skip = skip, timeout = timeout)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[TestRuntimeContext]
   }

@@ -20,8 +20,8 @@ trait Path extends js.Object {
 object Path {
   @scala.inline
   def apply(getValueFrom: js.Function2[js.Any, js.Any, js.Any]): Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getValueFrom")(getValueFrom)
+    val __obj = js.Dynamic.literal(getValueFrom = getValueFrom)
+  
     __obj.asInstanceOf[Path]
   }
 }

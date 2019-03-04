@@ -19,9 +19,8 @@ object IMapField {
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     rule: java.lang.String = null
   ): IMapField = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("keyType")(keyType)
+    val __obj = js.Dynamic.literal(id = id, keyType = keyType)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     if (rule != null) __obj.updateDynamic("rule")(rule)
     __obj.asInstanceOf[IMapField]

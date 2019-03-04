@@ -20,12 +20,8 @@ object IssueWebHookData {
     issue: typedDashGithubDashApiLib.distInterfacesIssueMod.Issue,
     sender: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
   ): IssueWebHookData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], event = event, id = id, issue = issue, sender = sender)
+  
     __obj.asInstanceOf[IssueWebHookData]
   }
 }

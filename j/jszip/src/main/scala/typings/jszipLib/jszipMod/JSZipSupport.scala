@@ -20,11 +20,8 @@ object JSZipSupport {
     nodebuffer: scala.Boolean,
     uint8array: scala.Boolean
   ): JSZipSupport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arraybuffer")(arraybuffer)
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("nodebuffer")(nodebuffer)
-    __obj.updateDynamic("uint8array")(uint8array)
+    val __obj = js.Dynamic.literal(arraybuffer = arraybuffer, blob = blob, nodebuffer = nodebuffer, uint8array = uint8array)
+  
     __obj.asInstanceOf[JSZipSupport]
   }
 }

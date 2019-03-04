@@ -32,10 +32,7 @@ object MongoDBStorageOptions {
     collectionName: java.lang.String = null,
     connection: mongodbLib.mongodbMod.Db = null
   ): MongoDBStorageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executed")(executed)
-    __obj.updateDynamic("logMigration")(logMigration)
-    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    val __obj = js.Dynamic.literal(executed = executed, logMigration = logMigration, unlogMigration = unlogMigration)
     if (collection != null) __obj.updateDynamic("collection")(collection)
     if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
     if (connection != null) __obj.updateDynamic("connection")(connection)

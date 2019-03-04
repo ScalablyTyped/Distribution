@@ -32,16 +32,7 @@ object HttpResponse {
     url: java.lang.String,
     redirectURL: java.lang.String = null
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(contentType = contentType, data = data, headers = headers, id = id, stage = stage, status = status, statusText = statusText, time = time, url = url)
     if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL)
     __obj.asInstanceOf[HttpResponse]
   }

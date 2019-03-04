@@ -37,9 +37,7 @@ object NodeHttpRequestTelemetry {
     tagOverrides: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     time: stdLib.Date = null
   ): NodeHttpRequestTelemetry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
     if (contextObjects != null) __obj.updateDynamic("contextObjects")(contextObjects)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)

@@ -18,9 +18,7 @@ object Anon_EventType {
     lambdaArn: java.lang.String,
     includeBody: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EventType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("lambdaArn")(lambdaArn)
+    val __obj = js.Dynamic.literal(eventType = eventType, lambdaArn = lambdaArn)
     if (!js.isUndefined(includeBody)) __obj.updateDynamic("includeBody")(includeBody)
     __obj.asInstanceOf[Anon_EventType]
   }

@@ -12,9 +12,8 @@ trait IControlParent extends IParentOnMap {
 object IControlParent {
   @scala.inline
   def apply(getChildElement: js.Function1[IControl, js.Promise[stdLib.HTMLElement]], getMap: js.Function0[Map]): IControlParent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChildElement")(getChildElement)
-    __obj.updateDynamic("getMap")(getMap)
+    val __obj = js.Dynamic.literal(getChildElement = getChildElement, getMap = getMap)
+  
     __obj.asInstanceOf[IControlParent]
   }
 }

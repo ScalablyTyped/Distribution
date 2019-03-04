@@ -20,8 +20,8 @@ object Anon_AmbiguousRoleResolution {
     ambiguousRoleResolution: java.lang.String = null,
     mappingRules: js.Array[Anon_Claim] = null
   ): Anon_AmbiguousRoleResolution = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("identityProvider")(identityProvider)
+    val __obj = js.Dynamic.literal(identityProvider = identityProvider)
+    __obj.updateDynamic("type")(`type`)
     if (ambiguousRoleResolution != null) __obj.updateDynamic("ambiguousRoleResolution")(ambiguousRoleResolution)
     if (mappingRules != null) __obj.updateDynamic("mappingRules")(mappingRules)
     __obj.asInstanceOf[Anon_AmbiguousRoleResolution]

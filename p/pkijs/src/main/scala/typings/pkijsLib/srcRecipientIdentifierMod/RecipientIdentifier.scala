@@ -22,12 +22,8 @@ object RecipientIdentifier {
     value: js.Any,
     variant: scala.Double
   ): RecipientIdentifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("variant")(variant)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, value = value, variant = variant)
+  
     __obj.asInstanceOf[RecipientIdentifier]
   }
 }

@@ -14,8 +14,7 @@ trait GoogleAnalyticsOptions extends js.Object {
 object GoogleAnalyticsOptions {
   @scala.inline
   def apply(trackingId: java.lang.String, pageViewOnLoad: js.UndefOr[scala.Boolean] = js.undefined): GoogleAnalyticsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trackingId")(trackingId)
+    val __obj = js.Dynamic.literal(trackingId = trackingId)
     if (!js.isUndefined(pageViewOnLoad)) __obj.updateDynamic("pageViewOnLoad")(pageViewOnLoad)
     __obj.asInstanceOf[GoogleAnalyticsOptions]
   }

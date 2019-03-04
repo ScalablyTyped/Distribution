@@ -28,14 +28,8 @@ object WiredTigerData {
     cursor: mongodbLib.Anon_Bulkloadedcursorinsertcalls,
     reconciliation: mongodbLib.Anon_Dictionarymatches
   ): WiredTigerData = {
-    val __obj = js.Dynamic.literal(`block-manager` = `block-manager`)
-    __obj.updateDynamic("LSM")(LSM)
-    __obj.updateDynamic("btree")(btree)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cache_walk")(cache_walk)
-    __obj.updateDynamic("compression")(compression)
-    __obj.updateDynamic("cursor")(cursor)
-    __obj.updateDynamic("reconciliation")(reconciliation)
+    val __obj = js.Dynamic.literal(LSM = LSM, btree = btree, cache = cache, cache_walk = cache_walk, compression = compression, cursor = cursor, reconciliation = reconciliation)
+    __obj.updateDynamic("block-manager")(`block-manager`)
     __obj.asInstanceOf[WiredTigerData]
   }
 }

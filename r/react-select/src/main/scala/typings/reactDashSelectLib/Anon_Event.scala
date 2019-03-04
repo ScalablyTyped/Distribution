@@ -17,8 +17,8 @@ object Anon_Event {
       scala.Unit
     ]
   ): Anon_Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onMouseDown")(onMouseDown)
+    val __obj = js.Dynamic.literal(onMouseDown = onMouseDown)
+  
     __obj.asInstanceOf[Anon_Event]
   }
 }

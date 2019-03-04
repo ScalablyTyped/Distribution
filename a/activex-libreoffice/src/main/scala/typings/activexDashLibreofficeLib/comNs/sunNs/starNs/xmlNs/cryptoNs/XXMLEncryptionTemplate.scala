@@ -60,19 +60,8 @@ object XXMLEncryptionTemplate {
       scala.Unit
     ]
   ): XXMLEncryptionTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Status")(Status)
-    __obj.updateDynamic("Target")(Target)
-    __obj.updateDynamic("Template")(Template)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("getTarget")(getTarget)
-    __obj.updateDynamic("getTemplate")(getTemplate)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStatus")(setStatus)
-    __obj.updateDynamic("setTarget")(setTarget)
-    __obj.updateDynamic("setTemplate")(setTemplate)
+    val __obj = js.Dynamic.literal(Status = Status, Target = Target, Template = Template, acquire = acquire, getStatus = getStatus, getTarget = getTarget, getTemplate = getTemplate, queryInterface = queryInterface, release = release, setStatus = setStatus, setTarget = setTarget, setTemplate = setTemplate)
+  
     __obj.asInstanceOf[XXMLEncryptionTemplate]
   }
 }

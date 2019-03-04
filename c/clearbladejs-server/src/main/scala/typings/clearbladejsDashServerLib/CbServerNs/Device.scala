@@ -26,14 +26,8 @@ object Device {
     systemSecret: java.lang.String,
     update: js.Function3[Query, js.Object, CbCallback, scala.Unit]
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(URI = URI, create = create, delete = delete, fetch = fetch, systemKey = systemKey, systemSecret = systemSecret, update = update)
+  
     __obj.asInstanceOf[Device]
   }
 }

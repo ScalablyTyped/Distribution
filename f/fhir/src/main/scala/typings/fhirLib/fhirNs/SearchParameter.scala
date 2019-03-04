@@ -249,13 +249,8 @@ object SearchParameter {
     xpath: java.lang.String = null,
     xpathUsage: code = null
   ): SearchParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(base = base, code = code, description = description, name = name, status = status, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (_base != null) __obj.updateDynamic("_base")(_base)
     if (_chain != null) __obj.updateDynamic("_chain")(_chain)
     if (_code != null) __obj.updateDynamic("_code")(_code)

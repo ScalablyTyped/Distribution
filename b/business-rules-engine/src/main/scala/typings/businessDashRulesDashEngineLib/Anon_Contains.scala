@@ -54,28 +54,8 @@ object Anon_Contains {
     step: java.lang.String,
     url: java.lang.String
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("creditcard")(creditcard)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dateISO")(dateISO)
-    __obj.updateDynamic("digits")(digits)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxlength")(maxlength)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("minlength")(minlength)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("rangelength")(rangelength)
-    __obj.updateDynamic("remote")(remote)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("signedDigits")(signedDigits)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(contains = contains, creditcard = creditcard, custom = custom, date = date, dateISO = dateISO, digits = digits, email = email, equalTo = equalTo, mask = mask, max = max, maxlength = maxlength, min = min, minlength = minlength, number = number, range = range, rangelength = rangelength, remote = remote, required = required, signedDigits = signedDigits, step = step, url = url)
+  
     __obj.asInstanceOf[Anon_Contains]
   }
 }

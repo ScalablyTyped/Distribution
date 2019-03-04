@@ -16,9 +16,8 @@ object ConnectionSite {
     getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     getPageElement: js.Function0[PageElement]
   ): ConnectionSite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getPageElement")(getPageElement)
+    val __obj = js.Dynamic.literal(getIndex = getIndex, getPageElement = getPageElement)
+  
     __obj.asInstanceOf[ConnectionSite]
   }
 }

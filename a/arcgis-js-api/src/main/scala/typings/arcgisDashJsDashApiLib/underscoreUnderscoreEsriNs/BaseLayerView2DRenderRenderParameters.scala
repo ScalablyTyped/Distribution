@@ -37,13 +37,8 @@ object BaseLayerView2DRenderRenderParameters {
     state: ViewState,
     stationary: scala.Boolean
   ): BaseLayerView2DRenderRenderParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("stationary")(stationary)
+    val __obj = js.Dynamic.literal(constructor = constructor, context = context, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, state = state, stationary = stationary)
+  
     __obj.asInstanceOf[BaseLayerView2DRenderRenderParameters]
   }
 }

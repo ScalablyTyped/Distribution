@@ -64,17 +64,8 @@ object Email {
     text: java.lang.String,
     to: java.lang.String
   ): Email = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterRemote")(afterRemote)
-    __obj.updateDynamic("afterRemoteError")(afterRemoteError)
-    __obj.updateDynamic("beforeRemote")(beforeRemote)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(afterRemote = afterRemote, afterRemoteError = afterRemoteError, beforeRemote = beforeRemote, from = from, html = html, send = send, settings = settings, subject = subject, text = text, to = to)
+  
     __obj.asInstanceOf[Email]
   }
 }

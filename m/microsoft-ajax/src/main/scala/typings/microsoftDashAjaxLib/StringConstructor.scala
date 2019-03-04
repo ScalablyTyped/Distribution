@@ -29,9 +29,8 @@ object StringConstructor {
     format: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String],
     localeFormat: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): StringConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("localeFormat")(localeFormat)
+    val __obj = js.Dynamic.literal(format = format, localeFormat = localeFormat)
+  
     __obj.asInstanceOf[StringConstructor]
   }
 }

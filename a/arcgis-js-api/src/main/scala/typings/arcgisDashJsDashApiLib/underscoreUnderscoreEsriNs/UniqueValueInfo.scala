@@ -44,14 +44,8 @@ object UniqueValueInfo {
     symbol: Symbol,
     value: java.lang.String | scala.Double
   ): UniqueValueInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("symbol")(symbol)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, label = label, propertyIsEnumerable = propertyIsEnumerable, symbol = symbol, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[UniqueValueInfo]
   }
 }

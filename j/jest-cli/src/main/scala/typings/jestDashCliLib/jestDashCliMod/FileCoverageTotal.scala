@@ -15,11 +15,8 @@ trait FileCoverageTotal extends js.Object {
 object FileCoverageTotal {
   @scala.inline
   def apply(covered: scala.Double, pct: scala.Double, skipped: scala.Double, total: scala.Double): FileCoverageTotal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("covered")(covered)
-    __obj.updateDynamic("pct")(pct)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(covered = covered, pct = pct, skipped = skipped, total = total)
+  
     __obj.asInstanceOf[FileCoverageTotal]
   }
 }

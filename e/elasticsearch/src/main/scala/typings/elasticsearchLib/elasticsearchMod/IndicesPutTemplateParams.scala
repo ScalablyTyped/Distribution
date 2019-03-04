@@ -30,9 +30,7 @@ object IndicesPutTemplateParams {
     requestTimeout: scala.Int | scala.Double = null,
     timeout: TimeSpan = null
   ): IndicesPutTemplateParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(body = body, name = name)
     if (!js.isUndefined(create)) __obj.updateDynamic("create")(create)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (!js.isUndefined(flatSettings)) __obj.updateDynamic("flatSettings")(flatSettings)

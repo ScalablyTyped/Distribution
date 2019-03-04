@@ -14,9 +14,7 @@ trait Anon_Alt extends js.Object {
 object Anon_Alt {
   @scala.inline
   def apply(lat: scala.Double, lng: scala.Double, alt: scala.Int | scala.Double = null): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng)
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Alt]
   }

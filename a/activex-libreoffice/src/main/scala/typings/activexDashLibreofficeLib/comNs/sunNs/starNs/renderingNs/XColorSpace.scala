@@ -190,22 +190,8 @@ object XColorSpace {
     getRenderingIntent: js.Function0[scala.Double],
     getType: js.Function0[scala.Double]
   ): XColorSpace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ComponentTags")(ComponentTags)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("RenderingIntent")(RenderingIntent)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("convertColorSpace")(convertColorSpace)
-    __obj.updateDynamic("convertFromARGB")(convertFromARGB)
-    __obj.updateDynamic("convertFromPARGB")(convertFromPARGB)
-    __obj.updateDynamic("convertFromRGB")(convertFromRGB)
-    __obj.updateDynamic("convertToARGB")(convertToARGB)
-    __obj.updateDynamic("convertToPARGB")(convertToPARGB)
-    __obj.updateDynamic("convertToRGB")(convertToRGB)
-    __obj.updateDynamic("getComponentTags")(getComponentTags)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getRenderingIntent")(getRenderingIntent)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(ComponentTags = ComponentTags, Properties = Properties, RenderingIntent = RenderingIntent, Type = Type, convertColorSpace = convertColorSpace, convertFromARGB = convertFromARGB, convertFromPARGB = convertFromPARGB, convertFromRGB = convertFromRGB, convertToARGB = convertToARGB, convertToPARGB = convertToPARGB, convertToRGB = convertToRGB, getComponentTags = getComponentTags, getProperties = getProperties, getRenderingIntent = getRenderingIntent, getType = getType)
+  
     __obj.asInstanceOf[XColorSpace]
   }
 }

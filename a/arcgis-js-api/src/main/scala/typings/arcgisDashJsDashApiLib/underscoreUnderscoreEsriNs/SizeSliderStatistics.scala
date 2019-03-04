@@ -37,12 +37,7 @@ object SizeSliderStatistics {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     avg: scala.Int | scala.Double = null
   ): SizeSliderStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable)
     if (avg != null) __obj.updateDynamic("avg")(avg.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeSliderStatistics]
   }

@@ -26,8 +26,7 @@ object DelegationOptions {
     scope: java.lang.String = null,
     target: java.lang.String = null
   ): DelegationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("grant_type")(grant_type)
+    val __obj = js.Dynamic.literal(grant_type = grant_type)
     if (api_type != null) __obj.updateDynamic("api_type")(api_type)
     if (client_id != null) __obj.updateDynamic("client_id")(client_id)
     if (id_token != null) __obj.updateDynamic("id_token")(id_token)

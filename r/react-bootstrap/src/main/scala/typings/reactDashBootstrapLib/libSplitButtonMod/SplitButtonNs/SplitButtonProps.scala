@@ -28,9 +28,7 @@ object SplitButtonProps {
     dropup: js.UndefOr[scala.Boolean] = js.undefined,
     pullRight: js.UndefOr[scala.Boolean] = js.undefined
   ): SplitButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id, title = title.asInstanceOf[js.Any])
     if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
     if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
     if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle)

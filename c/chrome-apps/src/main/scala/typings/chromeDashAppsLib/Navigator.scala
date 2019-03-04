@@ -17,8 +17,8 @@ trait Navigator extends js.Object {
 object Navigator {
   @scala.inline
   def apply(geolocation: stdLib.Geolocation): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geolocation")(geolocation)
+    val __obj = js.Dynamic.literal(geolocation = geolocation)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

@@ -13,9 +13,8 @@ trait TeamFieldValuesPatch extends js.Object {
 object TeamFieldValuesPatch {
   @scala.inline
   def apply(defaultValue: java.lang.String, values: js.Array[TeamFieldValue]): TeamFieldValuesPatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, values = values)
+  
     __obj.asInstanceOf[TeamFieldValuesPatch]
   }
 }

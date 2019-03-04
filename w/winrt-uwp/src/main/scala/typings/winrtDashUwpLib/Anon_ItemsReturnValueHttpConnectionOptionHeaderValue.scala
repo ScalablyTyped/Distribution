@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueHttpConnectionOptionHeaderValue {
     items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpConnectionOptionHeaderValue,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueHttpConnectionOptionHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueHttpConnectionOptionHeaderValue]
   }
 }

@@ -21,12 +21,8 @@ object GetAllFrameResultDetails {
     processId: scala.Double,
     url: java.lang.String
   ): GetAllFrameResultDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorOccurred")(errorOccurred)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("processId")(processId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(errorOccurred = errorOccurred, frameId = frameId, parentFrameId = parentFrameId, processId = processId, url = url)
+  
     __obj.asInstanceOf[GetAllFrameResultDetails]
   }
 }

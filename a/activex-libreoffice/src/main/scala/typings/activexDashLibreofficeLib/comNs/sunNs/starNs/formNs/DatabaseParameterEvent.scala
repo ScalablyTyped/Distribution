@@ -26,9 +26,8 @@ object DatabaseParameterEvent {
     Parameters: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DatabaseParameterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Parameters")(Parameters)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Parameters = Parameters, Source = Source)
+  
     __obj.asInstanceOf[DatabaseParameterEvent]
   }
 }

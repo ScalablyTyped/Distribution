@@ -29,9 +29,7 @@ object Options {
     useCIT: js.UndefOr[scala.Boolean] = js.undefined,
     useHTTPS: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app_code")(app_code)
-    __obj.updateDynamic("app_id")(app_id)
+    val __obj = js.Dynamic.literal(app_code = app_code, app_id = app_id)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT)
     if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS)

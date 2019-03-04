@@ -26,10 +26,8 @@ object InlineQueryResultCachedVoice {
     input_message_content: InputMessageContent = null,
     reply_markup: InlineKeyboardMarkup = null
   ): InlineQueryResultCachedVoice = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("voice_file_id")(voice_file_id)
+    val __obj = js.Dynamic.literal(id = id, title = title, voice_file_id = voice_file_id)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)

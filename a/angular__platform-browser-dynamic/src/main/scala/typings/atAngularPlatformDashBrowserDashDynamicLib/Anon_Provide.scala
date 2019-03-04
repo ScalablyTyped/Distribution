@@ -16,9 +16,8 @@ object Anon_Provide {
     provide: atAngularCoreLib.atAngularCoreMod.InjectionToken[java.lang.String],
     useValue: java.lang.String
   ): Anon_Provide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provide")(provide)
-    __obj.updateDynamic("useValue")(useValue)
+    val __obj = js.Dynamic.literal(provide = provide, useValue = useValue)
+  
     __obj.asInstanceOf[Anon_Provide]
   }
 }

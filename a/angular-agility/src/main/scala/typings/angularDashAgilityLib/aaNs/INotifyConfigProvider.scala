@@ -24,13 +24,8 @@ object INotifyConfigProvider {
     notifyConfigs: js.Any,
     optionsTransformer: js.Function2[INotifyOptions, angularLib.angularMod.angularNs.ISCEService, scala.Unit]
   ): INotifyConfigProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("addOrUpdateNotifyConfig")(addOrUpdateNotifyConfig)
-    __obj.updateDynamic("defaultNotifyConfig")(defaultNotifyConfig)
-    __obj.updateDynamic("defaultTargetContainerName")(defaultTargetContainerName)
-    __obj.updateDynamic("notifyConfigs")(notifyConfigs)
-    __obj.updateDynamic("optionsTransformer")(optionsTransformer)
+    val __obj = js.Dynamic.literal($get = $get, addOrUpdateNotifyConfig = addOrUpdateNotifyConfig, defaultNotifyConfig = defaultNotifyConfig, defaultTargetContainerName = defaultTargetContainerName, notifyConfigs = notifyConfigs, optionsTransformer = optionsTransformer)
+  
     __obj.asInstanceOf[INotifyConfigProvider]
   }
 }

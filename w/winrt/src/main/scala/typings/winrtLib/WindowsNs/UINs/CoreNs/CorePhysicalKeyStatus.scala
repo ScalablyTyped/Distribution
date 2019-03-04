@@ -24,13 +24,8 @@ object CorePhysicalKeyStatus {
     scanCode: scala.Double,
     wasKeyDown: scala.Boolean
   ): CorePhysicalKeyStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isExtendedKey")(isExtendedKey)
-    __obj.updateDynamic("isKeyReleased")(isKeyReleased)
-    __obj.updateDynamic("isMenuKeyDown")(isMenuKeyDown)
-    __obj.updateDynamic("repeatCount")(repeatCount)
-    __obj.updateDynamic("scanCode")(scanCode)
-    __obj.updateDynamic("wasKeyDown")(wasKeyDown)
+    val __obj = js.Dynamic.literal(isExtendedKey = isExtendedKey, isKeyReleased = isKeyReleased, isMenuKeyDown = isMenuKeyDown, repeatCount = repeatCount, scanCode = scanCode, wasKeyDown = wasKeyDown)
+  
     __obj.asInstanceOf[CorePhysicalKeyStatus]
   }
 }

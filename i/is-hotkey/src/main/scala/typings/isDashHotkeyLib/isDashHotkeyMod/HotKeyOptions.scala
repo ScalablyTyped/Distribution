@@ -12,8 +12,8 @@ trait HotKeyOptions extends js.Object {
 object HotKeyOptions {
   @scala.inline
   def apply(byKey: scala.Boolean): HotKeyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byKey")(byKey)
+    val __obj = js.Dynamic.literal(byKey = byKey)
+  
     __obj.asInstanceOf[HotKeyOptions]
   }
 }

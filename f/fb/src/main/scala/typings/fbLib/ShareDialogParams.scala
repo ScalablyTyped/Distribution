@@ -14,9 +14,8 @@ trait ShareDialogParams extends js.Object {
 object ShareDialogParams {
   @scala.inline
   def apply(href: java.lang.String, method: java.lang.String): ShareDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(href = href, method = method)
+  
     __obj.asInstanceOf[ShareDialogParams]
   }
 }

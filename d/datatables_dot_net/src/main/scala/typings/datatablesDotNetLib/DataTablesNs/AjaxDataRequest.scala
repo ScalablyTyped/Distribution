@@ -27,14 +27,8 @@ object AjaxDataRequest {
     search: AjaxDataRequestSearch,
     start: scala.Double
   ): AjaxDataRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(columns = columns, data = data, draw = draw, length = length, order = order, search = search, start = start)
+  
     __obj.asInstanceOf[AjaxDataRequest]
   }
 }

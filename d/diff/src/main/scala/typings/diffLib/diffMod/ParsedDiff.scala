@@ -24,8 +24,7 @@ object ParsedDiff {
     oldFileName: java.lang.String = null,
     oldHeader: java.lang.String = null
   ): ParsedDiff = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hunks")(hunks)
+    val __obj = js.Dynamic.literal(hunks = hunks)
     if (index != null) __obj.updateDynamic("index")(index)
     if (newFileName != null) __obj.updateDynamic("newFileName")(newFileName)
     if (newHeader != null) __obj.updateDynamic("newHeader")(newHeader)

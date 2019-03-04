@@ -30,16 +30,8 @@ object Anon_ContentType {
     SessionId: java.lang.String,
     To: java.lang.String
   ): Anon_ContentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ContentType")(ContentType)
-    __obj.updateDynamic("CorrelationId")(CorrelationId)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("ReplyTo")(ReplyTo)
-    __obj.updateDynamic("ReplyToSessionId")(ReplyToSessionId)
-    __obj.updateDynamic("RequiresPreprocessing")(RequiresPreprocessing)
-    __obj.updateDynamic("SessionId")(SessionId)
-    __obj.updateDynamic("To")(To)
+    val __obj = js.Dynamic.literal(ContentType = ContentType, CorrelationId = CorrelationId, Label = Label, Properties = Properties, ReplyTo = ReplyTo, ReplyToSessionId = ReplyToSessionId, RequiresPreprocessing = RequiresPreprocessing, SessionId = SessionId, To = To)
+  
     __obj.asInstanceOf[Anon_ContentType]
   }
 }

@@ -19,10 +19,8 @@ object AllDocsResponse {
     rows: js.Array[pouchdbDashCoreLib.Anon_Doc[Content]],
     total_rows: scala.Double
   ): AllDocsResponse[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("total_rows")(total_rows)
+    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows)
+  
     __obj.asInstanceOf[AllDocsResponse[Content]]
   }
 }

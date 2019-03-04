@@ -13,8 +13,8 @@ trait MetaRule extends js.Object {
 object MetaRule {
   @scala.inline
   def apply(enum: js.Array[java.lang.String], `type`: java.lang.String | scala.Double | scala.Boolean): MetaRule = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("enum")(enum)
+    val __obj = js.Dynamic.literal(enum = enum)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaRule]
   }
 }

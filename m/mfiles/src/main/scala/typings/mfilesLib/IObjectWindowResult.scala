@@ -26,14 +26,8 @@ object IObjectWindowResult {
     UseAsDefaults: scala.Boolean,
     Visible: scala.Boolean
   ): IObjectWindowResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("ObjVer")(ObjVer)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("Result")(Result)
-    __obj.updateDynamic("SelectedFileClass")(SelectedFileClass)
-    __obj.updateDynamic("UseAsDefaults")(UseAsDefaults)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, ObjVer = ObjVer, Properties = Properties, Result = Result, SelectedFileClass = SelectedFileClass, UseAsDefaults = UseAsDefaults, Visible = Visible)
+  
     __obj.asInstanceOf[IObjectWindowResult]
   }
 }

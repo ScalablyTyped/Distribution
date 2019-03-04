@@ -24,13 +24,8 @@ object MDCLinearProgressAdapter {
     removeClass: js.Function1[java.lang.String, scala.Unit],
     setStyle: js.Function3[stdLib.Element, java.lang.String, scala.Double, scala.Unit]
   ): MDCLinearProgressAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("getBuffer")(getBuffer)
-    __obj.updateDynamic("getPrimaryBar")(getPrimaryBar)
-    __obj.updateDynamic("hasClass")(hasClass)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("setStyle")(setStyle)
+    val __obj = js.Dynamic.literal(addClass = addClass, getBuffer = getBuffer, getPrimaryBar = getPrimaryBar, hasClass = hasClass, removeClass = removeClass, setStyle = setStyle)
+  
     __obj.asInstanceOf[MDCLinearProgressAdapter]
   }
 }

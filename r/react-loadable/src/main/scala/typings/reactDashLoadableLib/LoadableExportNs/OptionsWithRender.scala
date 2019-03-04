@@ -41,10 +41,7 @@ object OptionsWithRender {
     timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
     webpack: js.Function0[js.Array[scala.Double]] = null
   ): OptionsWithRender[Props, Exports] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loader")(loader)
-    __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(loader = loader, loading = loading.asInstanceOf[js.Any], render = render)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (modules != null) __obj.updateDynamic("modules")(modules)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

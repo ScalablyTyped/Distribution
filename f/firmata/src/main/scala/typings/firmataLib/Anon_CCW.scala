@@ -16,9 +16,8 @@ object Anon_CCW {
     CCW: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION,
     CW: firmataLib.firmataMod.BoardNs.STEPPER_DIRECTION
   ): Anon_CCW = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CCW")(CCW)
-    __obj.updateDynamic("CW")(CW)
+    val __obj = js.Dynamic.literal(CCW = CCW, CW = CW)
+  
     __obj.asInstanceOf[Anon_CCW]
   }
 }

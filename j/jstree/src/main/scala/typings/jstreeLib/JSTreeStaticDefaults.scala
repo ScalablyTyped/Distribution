@@ -91,9 +91,7 @@ object JSTreeStaticDefaults {
     types: js.Any = null,
     unique: JSTreeStaticDefaultsUnique = null
   ): JSTreeStaticDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("core")(core)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(core = core, plugins = plugins)
     if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
     if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
     if (dnd != null) __obj.updateDynamic("dnd")(dnd)

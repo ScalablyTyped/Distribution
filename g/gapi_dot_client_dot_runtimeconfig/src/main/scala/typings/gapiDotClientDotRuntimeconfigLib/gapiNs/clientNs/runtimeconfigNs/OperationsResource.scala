@@ -57,10 +57,8 @@ object OperationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
     ]
   ): OperationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(cancel = cancel, delete = delete, list = list)
+  
     __obj.asInstanceOf[OperationsResource]
   }
 }

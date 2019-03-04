@@ -27,13 +27,8 @@ object Filter {
     setColumnFilterCriteria: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, FilterCriteria, Filter],
     sort: js.Function2[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean, Filter]
   ): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getColumnFilterCriteria")(getColumnFilterCriteria)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeColumnFilterCriteria")(removeColumnFilterCriteria)
-    __obj.updateDynamic("setColumnFilterCriteria")(setColumnFilterCriteria)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(getColumnFilterCriteria = getColumnFilterCriteria, getRange = getRange, remove = remove, removeColumnFilterCriteria = removeColumnFilterCriteria, setColumnFilterCriteria = setColumnFilterCriteria, sort = sort)
+  
     __obj.asInstanceOf[Filter]
   }
 }

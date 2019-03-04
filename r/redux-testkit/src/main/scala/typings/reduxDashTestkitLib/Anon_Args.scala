@@ -16,9 +16,8 @@ object Anon_Args {
     execute: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
     expect: js.Function2[js.Any, /* repeated */ js.Any, Anon_ExpectedToReturn]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("expect")(expect)
+    val __obj = js.Dynamic.literal(execute = execute, expect = expect)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

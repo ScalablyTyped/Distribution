@@ -36,15 +36,8 @@ object StatResult {
     path: java.lang.String,
     size: java.lang.String
   ): StatResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("isFile")(isFile)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(ctime = ctime, isDirectory = isDirectory, isFile = isFile, mode = mode, mtime = mtime, name = name, path = path, size = size)
+  
     __obj.asInstanceOf[StatResult]
   }
 }

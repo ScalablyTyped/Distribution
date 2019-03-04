@@ -22,12 +22,8 @@ object Anon_AddressesBalance {
     latestAddress: java.lang.String,
     transfers: js.Array[java.lang.String]
   ): Anon_AddressesBalance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("balance")(balance)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("latestAddress")(latestAddress)
-    __obj.updateDynamic("transfers")(transfers)
+    val __obj = js.Dynamic.literal(addresses = addresses, balance = balance, inputs = inputs, latestAddress = latestAddress, transfers = transfers)
+  
     __obj.asInstanceOf[Anon_AddressesBalance]
   }
 }

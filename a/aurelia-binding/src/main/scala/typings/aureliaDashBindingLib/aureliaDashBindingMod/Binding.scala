@@ -57,11 +57,7 @@ object Binding {
     updateSource: js.Function1[/* value */ js.Any, scala.Unit] = null,
     updateTarget: js.Function1[/* value */ js.Any, scala.Unit] = null
   ): Binding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("isBound")(isBound)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("unbind")(unbind)
+    val __obj = js.Dynamic.literal(bind = bind, isBound = isBound, source = source, unbind = unbind)
     if (callSource != null) __obj.updateDynamic("callSource")(callSource)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (sourceExpression != null) __obj.updateDynamic("sourceExpression")(sourceExpression)

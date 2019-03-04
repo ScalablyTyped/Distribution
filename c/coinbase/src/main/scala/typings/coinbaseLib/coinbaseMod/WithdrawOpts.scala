@@ -32,9 +32,7 @@ object WithdrawOpts {
     commit: js.UndefOr[scala.Boolean] = js.undefined,
     payment_method: java.lang.String = null
   ): WithdrawOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency)
     if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
     if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method)
     __obj.asInstanceOf[WithdrawOpts]

@@ -13,8 +13,8 @@ trait Hr
 object Hr {
   @scala.inline
   def apply(`type`: markedLib.markedLibStrings.hr): Hr = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Hr]
   }
 }

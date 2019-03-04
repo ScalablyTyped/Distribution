@@ -20,11 +20,8 @@ object ICoreApplicationView {
     isMain: scala.Boolean,
     onactivated: js.Any
   ): ICoreApplicationView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coreWindow")(coreWindow)
-    __obj.updateDynamic("isHosted")(isHosted)
-    __obj.updateDynamic("isMain")(isMain)
-    __obj.updateDynamic("onactivated")(onactivated)
+    val __obj = js.Dynamic.literal(coreWindow = coreWindow, isHosted = isHosted, isMain = isMain, onactivated = onactivated)
+  
     __obj.asInstanceOf[ICoreApplicationView]
   }
 }

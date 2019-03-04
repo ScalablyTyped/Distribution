@@ -20,11 +20,8 @@ object ToolbarAction {
     text: java.lang.String,
     title: java.lang.String
   ): ToolbarAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(callback = callback, context = context, text = text, title = title)
+  
     __obj.asInstanceOf[ToolbarAction]
   }
 }

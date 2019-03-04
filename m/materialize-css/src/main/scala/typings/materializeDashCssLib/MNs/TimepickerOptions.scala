@@ -94,21 +94,8 @@ object TimepickerOptions {
     twelveHour: scala.Boolean,
     vibrate: scala.Boolean
   ): TimepickerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoClose")(autoClose)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("defaultTime")(defaultTime)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("fromNow")(fromNow)
-    __obj.updateDynamic("i18n")(i18n)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("onSelect")(onSelect)
-    __obj.updateDynamic("showClearBtn")(showClearBtn)
-    __obj.updateDynamic("twelveHour")(twelveHour)
-    __obj.updateDynamic("vibrate")(vibrate)
+    val __obj = js.Dynamic.literal(autoClose = autoClose, container = container, defaultTime = defaultTime, duration = duration, fromNow = fromNow, i18n = i18n, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, onSelect = onSelect, showClearBtn = showClearBtn, twelveHour = twelveHour, vibrate = vibrate)
+  
     __obj.asInstanceOf[TimepickerOptions]
   }
 }

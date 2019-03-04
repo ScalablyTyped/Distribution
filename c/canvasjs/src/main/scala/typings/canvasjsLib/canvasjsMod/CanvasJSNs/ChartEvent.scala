@@ -47,14 +47,8 @@ object ChartEvent {
     x: js.Any,
     y: scala.Double
   ): ChartEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dataPoint")(dataPoint)
-    __obj.updateDynamic("dataPointIndex")(dataPointIndex)
-    __obj.updateDynamic("dataSeries")(dataSeries)
-    __obj.updateDynamic("dataSeriesIndex")(dataSeriesIndex)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(chart = chart, dataPoint = dataPoint, dataPointIndex = dataPointIndex, dataSeries = dataSeries, dataSeriesIndex = dataSeriesIndex, x = x, y = y)
+  
     __obj.asInstanceOf[ChartEvent]
   }
 }

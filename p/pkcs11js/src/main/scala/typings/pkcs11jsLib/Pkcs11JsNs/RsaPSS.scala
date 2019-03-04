@@ -14,10 +14,8 @@ trait RsaPSS extends IParams {
 object RsaPSS {
   @scala.inline
   def apply(hashAlg: scala.Double, mgf: scala.Double, saltLen: scala.Double, `type`: scala.Double): RsaPSS = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("hashAlg")(hashAlg)
-    __obj.updateDynamic("mgf")(mgf)
-    __obj.updateDynamic("saltLen")(saltLen)
+    val __obj = js.Dynamic.literal(hashAlg = hashAlg, mgf = mgf, saltLen = saltLen)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RsaPSS]
   }
 }

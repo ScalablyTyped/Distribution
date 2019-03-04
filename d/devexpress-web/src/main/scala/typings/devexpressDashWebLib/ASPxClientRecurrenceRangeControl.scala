@@ -63,28 +63,8 @@ object ASPxClientRecurrenceRangeControl {
     SetWidth: js.Function1[scala.Double, scala.Unit],
     name: java.lang.String
   ): ASPxClientRecurrenceRangeControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustControl")(AdjustControl)
-    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
-    __obj.updateDynamic("GetEndDate")(GetEndDate)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetMainElement")(GetMainElement)
-    __obj.updateDynamic("GetOccurrenceCount")(GetOccurrenceCount)
-    __obj.updateDynamic("GetParentControl")(GetParentControl)
-    __obj.updateDynamic("GetRange")(GetRange)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("GetWidth")(GetWidth)
-    __obj.updateDynamic("InCallback")(InCallback)
-    __obj.updateDynamic("Init")(Init)
-    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
-    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
-    __obj.updateDynamic("SetEndDate")(SetEndDate)
-    __obj.updateDynamic("SetHeight")(SetHeight)
-    __obj.updateDynamic("SetOccurrenceCount")(SetOccurrenceCount)
-    __obj.updateDynamic("SetRange")(SetRange)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("SetWidth")(SetWidth)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl, GetClientVisible = GetClientVisible, GetEndDate = GetEndDate, GetHeight = GetHeight, GetMainElement = GetMainElement, GetOccurrenceCount = GetOccurrenceCount, GetParentControl = GetParentControl, GetRange = GetRange, GetVisible = GetVisible, GetWidth = GetWidth, InCallback = InCallback, Init = Init, SendMessageToAssistiveTechnology = SendMessageToAssistiveTechnology, SetClientVisible = SetClientVisible, SetEndDate = SetEndDate, SetHeight = SetHeight, SetOccurrenceCount = SetOccurrenceCount, SetRange = SetRange, SetVisible = SetVisible, SetWidth = SetWidth, name = name)
+  
     __obj.asInstanceOf[ASPxClientRecurrenceRangeControl]
   }
 }

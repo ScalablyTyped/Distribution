@@ -17,10 +17,7 @@ object SpreadsheetSelectEvent {
     sender: Spreadsheet,
     range: kendoDashUiLib.kendoNs.spreadsheetNs.Range = null
   ): SpreadsheetSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[SpreadsheetSelectEvent]
   }

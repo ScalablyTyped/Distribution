@@ -34,12 +34,8 @@ object VersionException {
     NewDisplayName: java.lang.String,
     NewVersion: java.lang.String
   ): VersionException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Deployed")(Deployed)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("NewDisplayName")(NewDisplayName)
-    __obj.updateDynamic("NewVersion")(NewVersion)
+    val __obj = js.Dynamic.literal(Context = Context, Deployed = Deployed, Message = Message, NewDisplayName = NewDisplayName, NewVersion = NewVersion)
+  
     __obj.asInstanceOf[VersionException]
   }
 }

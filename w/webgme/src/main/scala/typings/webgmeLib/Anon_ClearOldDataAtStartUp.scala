@@ -51,12 +51,7 @@ object Anon_ClearOldDataAtStartUp {
     workerRefreshInterval: scala.Double,
     nonce: java.lang.String = null
   ): Anon_ClearOldDataAtStartUp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearOldDataAtStartUp")(clearOldDataAtStartUp)
-    __obj.updateDynamic("clearOutputTimeout")(clearOutputTimeout)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("labelJobs")(labelJobs)
-    __obj.updateDynamic("workerRefreshInterval")(workerRefreshInterval)
+    val __obj = js.Dynamic.literal(clearOldDataAtStartUp = clearOldDataAtStartUp, clearOutputTimeout = clearOutputTimeout, enable = enable, labelJobs = labelJobs, workerRefreshInterval = workerRefreshInterval)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     __obj.asInstanceOf[Anon_ClearOldDataAtStartUp]
   }

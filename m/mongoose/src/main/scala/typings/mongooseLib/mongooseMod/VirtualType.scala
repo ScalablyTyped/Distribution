@@ -28,11 +28,8 @@ object VirtualType {
     get: js.Function1[js.Function, VirtualType],
     set: js.Function1[js.Function, VirtualType]
   ): VirtualType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyGetters")(applyGetters)
-    __obj.updateDynamic("applySetters")(applySetters)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(applyGetters = applyGetters, applySetters = applySetters, get = get, set = set)
+  
     __obj.asInstanceOf[VirtualType]
   }
 }

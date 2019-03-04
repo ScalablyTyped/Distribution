@@ -13,9 +13,8 @@ trait IKeyDerivationParameters extends js.Object {
 object IKeyDerivationParameters {
   @scala.inline
   def apply(iterationCount: scala.Double, kdfGenericBinary: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): IKeyDerivationParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iterationCount")(iterationCount)
-    __obj.updateDynamic("kdfGenericBinary")(kdfGenericBinary)
+    val __obj = js.Dynamic.literal(iterationCount = iterationCount, kdfGenericBinary = kdfGenericBinary)
+  
     __obj.asInstanceOf[IKeyDerivationParameters]
   }
 }

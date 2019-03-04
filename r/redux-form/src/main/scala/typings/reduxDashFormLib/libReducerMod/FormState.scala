@@ -28,8 +28,7 @@ object FormState {
     submitting: js.UndefOr[scala.Boolean] = js.undefined,
     values: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): FormState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registeredFields")(registeredFields)
+    val __obj = js.Dynamic.literal(registeredFields = registeredFields)
     if (active != null) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(anyTouched)) __obj.updateDynamic("anyTouched")(anyTouched)
     if (fields != null) __obj.updateDynamic("fields")(fields)

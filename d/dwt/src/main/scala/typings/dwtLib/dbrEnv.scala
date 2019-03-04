@@ -24,13 +24,8 @@ object dbrEnv {
     productKey: java.lang.String,
     resourcesPath: java.lang.String
   ): dbrEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bAutoConnectService")(bAutoConnectService)
-    __obj.updateDynamic("logLevel")(logLevel)
-    __obj.updateDynamic("onAutoConnectServiceError")(onAutoConnectServiceError)
-    __obj.updateDynamic("onAutoConnectServiceSuccess")(onAutoConnectServiceSuccess)
-    __obj.updateDynamic("productKey")(productKey)
-    __obj.updateDynamic("resourcesPath")(resourcesPath)
+    val __obj = js.Dynamic.literal(bAutoConnectService = bAutoConnectService, logLevel = logLevel, onAutoConnectServiceError = onAutoConnectServiceError, onAutoConnectServiceSuccess = onAutoConnectServiceSuccess, productKey = productKey, resourcesPath = resourcesPath)
+  
     __obj.asInstanceOf[dbrEnv]
   }
 }

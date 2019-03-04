@@ -14,10 +14,8 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply(address: java.lang.String, path: js.Array[scala.Double], serializedPath: java.lang.String): Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("serializedPath")(serializedPath)
+    val __obj = js.Dynamic.literal(address = address, path = path, serializedPath = serializedPath)
+  
     __obj.asInstanceOf[Address]
   }
 }

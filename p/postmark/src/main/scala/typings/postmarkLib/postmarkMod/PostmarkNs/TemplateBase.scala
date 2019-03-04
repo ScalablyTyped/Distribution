@@ -15,10 +15,8 @@ trait TemplateBase extends js.Object {
 object TemplateBase {
   @scala.inline
   def apply(Active: scala.Boolean, Name: java.lang.String, TemplateId: scala.Double): TemplateBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Active")(Active)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("TemplateId")(TemplateId)
+    val __obj = js.Dynamic.literal(Active = Active, Name = Name, TemplateId = TemplateId)
+  
     __obj.asInstanceOf[TemplateBase]
   }
 }

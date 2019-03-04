@@ -25,11 +25,8 @@ object PostCommandArgument2 {
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream
   ): PostCommandArgument2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MediaType")(MediaType)
-    __obj.updateDynamic("Referer")(Referer)
-    __obj.updateDynamic("Sink")(Sink)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(MediaType = MediaType, Referer = Referer, Sink = Sink, Source = Source)
+  
     __obj.asInstanceOf[PostCommandArgument2]
   }
 }

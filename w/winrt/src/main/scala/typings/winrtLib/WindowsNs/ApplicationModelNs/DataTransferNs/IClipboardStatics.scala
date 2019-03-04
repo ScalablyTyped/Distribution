@@ -22,12 +22,8 @@ object IClipboardStatics {
     oncontentchanged: js.Any,
     setContent: js.Function1[DataPackage, scala.Unit]
   ): IClipboardStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("oncontentchanged")(oncontentchanged)
-    __obj.updateDynamic("setContent")(setContent)
+    val __obj = js.Dynamic.literal(clear = clear, flush = flush, getContent = getContent, oncontentchanged = oncontentchanged, setContent = setContent)
+  
     __obj.asInstanceOf[IClipboardStatics]
   }
 }

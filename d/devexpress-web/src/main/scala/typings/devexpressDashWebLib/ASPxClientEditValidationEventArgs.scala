@@ -29,10 +29,8 @@ trait ASPxClientEditValidationEventArgs extends ASPxClientEventArgs {
 object ASPxClientEditValidationEventArgs {
   @scala.inline
   def apply(errorText: java.lang.String, isValid: scala.Boolean, value: java.lang.String): ASPxClientEditValidationEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(errorText = errorText, isValid = isValid, value = value)
+  
     __obj.asInstanceOf[ASPxClientEditValidationEventArgs]
   }
 }

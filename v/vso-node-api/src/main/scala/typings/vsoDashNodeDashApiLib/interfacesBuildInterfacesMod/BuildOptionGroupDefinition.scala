@@ -23,10 +23,8 @@ trait BuildOptionGroupDefinition extends js.Object {
 object BuildOptionGroupDefinition {
   @scala.inline
   def apply(displayName: java.lang.String, isExpanded: scala.Boolean, name: java.lang.String): BuildOptionGroupDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("isExpanded")(isExpanded)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayName = displayName, isExpanded = isExpanded, name = name)
+  
     __obj.asInstanceOf[BuildOptionGroupDefinition]
   }
 }

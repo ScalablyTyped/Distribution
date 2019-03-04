@@ -13,9 +13,8 @@ trait Anon_Cancel extends js.Object {
 object Anon_Cancel {
   @scala.inline
   def apply(Cancel: scala.Boolean, FolderToShare: activexDashOutlookLib.OutlookNs.Folder): Anon_Cancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("FolderToShare")(FolderToShare)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, FolderToShare = FolderToShare)
+  
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

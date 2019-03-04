@@ -23,9 +23,8 @@ trait TaskPackageMetadata extends js.Object {
 object TaskPackageMetadata {
   @scala.inline
   def apply(`type`: java.lang.String, url: java.lang.String, version: java.lang.String): TaskPackageMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(url = url, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TaskPackageMetadata]
   }
 }

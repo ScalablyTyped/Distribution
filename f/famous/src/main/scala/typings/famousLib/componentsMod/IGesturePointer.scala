@@ -14,10 +14,8 @@ trait IGesturePointer extends js.Object {
 object IGesturePointer {
   @scala.inline
   def apply(delta: famousLib.mathMod.Vec2, position: famousLib.mathMod.Vec2, velocity: famousLib.mathMod.Vec2): IGesturePointer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("velocity")(velocity)
+    val __obj = js.Dynamic.literal(delta = delta, position = position, velocity = velocity)
+  
     __obj.asInstanceOf[IGesturePointer]
   }
 }

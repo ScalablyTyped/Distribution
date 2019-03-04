@@ -79,8 +79,7 @@ object Anon_AdvertiserGroupIds {
     subaccountId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdvertiserGroupIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (advertiserGroupIds != null) __obj.updateDynamic("advertiserGroupIds")(advertiserGroupIds)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

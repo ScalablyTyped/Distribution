@@ -12,8 +12,8 @@ trait IKeyBlacklist[T] extends js.Object {
 object IKeyBlacklist {
   @scala.inline
   def apply[T](exclude: js.Array[java.lang.String]): IKeyBlacklist[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclude")(exclude)
+    val __obj = js.Dynamic.literal(exclude = exclude)
+  
     __obj.asInstanceOf[IKeyBlacklist[T]]
   }
 }

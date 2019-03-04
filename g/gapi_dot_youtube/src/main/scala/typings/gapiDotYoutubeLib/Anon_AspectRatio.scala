@@ -52,15 +52,8 @@ object Anon_AspectRatio {
     vender: java.lang.String,
     widthPixels: scala.Double
   ): Anon_AspectRatio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspectRatio")(aspectRatio)
-    __obj.updateDynamic("bitrateBps")(bitrateBps)
-    __obj.updateDynamic("codec")(codec)
-    __obj.updateDynamic("frameRateFps")(frameRateFps)
-    __obj.updateDynamic("heightPixels")(heightPixels)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("vender")(vender)
-    __obj.updateDynamic("widthPixels")(widthPixels)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, bitrateBps = bitrateBps, codec = codec, frameRateFps = frameRateFps, heightPixels = heightPixels, rotation = rotation, vender = vender, widthPixels = widthPixels)
+  
     __obj.asInstanceOf[Anon_AspectRatio]
   }
 }

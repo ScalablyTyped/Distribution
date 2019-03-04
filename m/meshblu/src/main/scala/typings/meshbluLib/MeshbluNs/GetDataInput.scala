@@ -15,11 +15,8 @@ trait GetDataInput extends js.Object {
 object GetDataInput {
   @scala.inline
   def apply(finish: java.lang.String, limit: scala.Double, start: java.lang.String, uuid: java.lang.String): GetDataInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(finish = finish, limit = limit, start = start, uuid = uuid)
+  
     __obj.asInstanceOf[GetDataInput]
   }
 }

@@ -35,12 +35,8 @@ object DragSourceDragEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     UserAction: scala.Double
   ): DragSourceDragEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DragSource")(DragSource)
-    __obj.updateDynamic("DragSourceContext")(DragSourceContext)
-    __obj.updateDynamic("DropAction")(DropAction)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("UserAction")(UserAction)
+    val __obj = js.Dynamic.literal(DragSource = DragSource, DragSourceContext = DragSourceContext, DropAction = DropAction, Source = Source, UserAction = UserAction)
+  
     __obj.asInstanceOf[DragSourceDragEvent]
   }
 }

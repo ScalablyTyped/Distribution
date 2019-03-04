@@ -37,9 +37,8 @@ object ComputeEnvironmentArgs {
     computeResources: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus] = null,
     state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ComputeEnvironmentArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentArgs]

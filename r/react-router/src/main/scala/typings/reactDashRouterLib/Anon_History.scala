@@ -20,9 +20,8 @@ object Anon_History {
     history: historyLib.historyMod.History[historyLib.historyMod.LocationState],
     route: Anon_Location[Params]
   ): Anon_History[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(history = history, route = route)
+  
     __obj.asInstanceOf[Anon_History[Params]]
   }
 }

@@ -36,9 +36,7 @@ object DeclarationOption {
     short: java.lang.String = null,
     `type`: ParameterType = null
   ): DeclarationOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(help = help, name = name)
     if (component != null) __obj.updateDynamic("component")(component)
     if (convert != null) __obj.updateDynamic("convert")(convert)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)

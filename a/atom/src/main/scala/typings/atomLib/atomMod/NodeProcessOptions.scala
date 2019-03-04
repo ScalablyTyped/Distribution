@@ -36,8 +36,7 @@ object NodeProcessOptions {
     stderr: js.Function1[/* data */ java.lang.String, scala.Unit] = null,
     stdout: js.Function1[/* data */ java.lang.String, scala.Unit] = null
   ): NodeProcessOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(command = command)
     if (args != null) __obj.updateDynamic("args")(args)
     if (exit != null) __obj.updateDynamic("exit")(exit)
     if (options != null) __obj.updateDynamic("options")(options)

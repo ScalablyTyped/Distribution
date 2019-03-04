@@ -12,8 +12,8 @@ trait IMacAlgorithmProviderStatics extends js.Object {
 object IMacAlgorithmProviderStatics {
   @scala.inline
   def apply(openAlgorithm: js.Function1[java.lang.String, MacAlgorithmProvider]): IMacAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openAlgorithm")(openAlgorithm)
+    val __obj = js.Dynamic.literal(openAlgorithm = openAlgorithm)
+  
     __obj.asInstanceOf[IMacAlgorithmProviderStatics]
   }
 }

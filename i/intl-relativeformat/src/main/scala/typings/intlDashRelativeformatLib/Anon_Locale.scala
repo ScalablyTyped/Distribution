@@ -12,8 +12,8 @@ trait Anon_Locale extends js.Object {
 object Anon_Locale {
   @scala.inline
   def apply(locale: java.lang.String): Anon_Locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(locale = locale)
+  
     __obj.asInstanceOf[Anon_Locale]
   }
 }

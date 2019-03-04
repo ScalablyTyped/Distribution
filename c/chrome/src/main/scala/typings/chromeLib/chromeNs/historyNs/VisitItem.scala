@@ -27,11 +27,7 @@ object VisitItem {
     visitId: java.lang.String,
     visitTime: scala.Int | scala.Double = null
   ): VisitItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("referringVisitId")(referringVisitId)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("visitId")(visitId)
+    val __obj = js.Dynamic.literal(id = id, referringVisitId = referringVisitId, transition = transition, visitId = visitId)
     if (visitTime != null) __obj.updateDynamic("visitTime")(visitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisitItem]
   }

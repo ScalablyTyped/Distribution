@@ -37,12 +37,8 @@ object GetPolicyResult {
     path: java.lang.String,
     policy: java.lang.String
   ): GetPolicyResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, path = path, policy = policy)
+  
     __obj.asInstanceOf[GetPolicyResult]
   }
 }

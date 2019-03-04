@@ -14,8 +14,8 @@ object Anon_ListenerArnsArray {
   def apply(
     listenerArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ): Anon_ListenerArnsArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listenerArns")(listenerArns.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(listenerArns = listenerArns.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ListenerArnsArray]
   }
 }

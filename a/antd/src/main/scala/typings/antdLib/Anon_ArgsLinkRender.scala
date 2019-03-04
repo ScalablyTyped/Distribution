@@ -24,13 +24,8 @@ object Anon_ArgsLinkRender {
     routes: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
     separator: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   ): Anon_ArgsLinkRender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("linkRender")(linkRender)
-    __obj.updateDynamic("nameRender")(nameRender)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("separator")(separator)
+    val __obj = js.Dynamic.literal(linkRender = linkRender, nameRender = nameRender, params = params, prefixCls = prefixCls, routes = routes, separator = separator)
+  
     __obj.asInstanceOf[Anon_ArgsLinkRender]
   }
 }

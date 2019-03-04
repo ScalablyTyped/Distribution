@@ -18,9 +18,8 @@ object FormSelector {
     getCurrentItem: js.Function0[xrmLib.XrmNs.ControlsNs.FormItem],
     items: xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.FormItem]
   ): FormSelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentItem")(getCurrentItem)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(getCurrentItem = getCurrentItem, items = items)
+  
     __obj.asInstanceOf[FormSelector]
   }
 }

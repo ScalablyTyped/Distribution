@@ -22,12 +22,8 @@ object Anon_Codomain {
     kind: java.lang.String,
     name: java.lang.String
   ): Anon_Codomain[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codomain")(codomain.asInstanceOf[js.Any])
-    __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(codomain = codomain.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], identity = identity, kind = kind, name = name)
+  
     __obj.asInstanceOf[Anon_Codomain[T]]
   }
 }

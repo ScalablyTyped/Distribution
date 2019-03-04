@@ -19,10 +19,7 @@ object SpreadsheetExcelImportEvent {
     file: stdLib.Blob | stdLib.File = null,
     progress: kendoDashUiLib.JQueryPromise[_] = null
   ): SpreadsheetExcelImportEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress)
     __obj.asInstanceOf[SpreadsheetExcelImportEvent]

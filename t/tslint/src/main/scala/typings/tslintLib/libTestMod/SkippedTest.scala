@@ -13,9 +13,8 @@ trait SkippedTest extends js.Object {
 object SkippedTest {
   @scala.inline
   def apply(requirement: java.lang.String, skipped: tslintLib.tslintLibNumbers.`true`): SkippedTest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requirement")(requirement)
-    __obj.updateDynamic("skipped")(skipped)
+    val __obj = js.Dynamic.literal(requirement = requirement, skipped = skipped)
+  
     __obj.asInstanceOf[SkippedTest]
   }
 }

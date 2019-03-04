@@ -40,8 +40,7 @@ object BridgeClients {
       ]
     ] = null
   ): BridgeClients = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
     if (average_clients != null) __obj.updateDynamic("average_clients")(average_clients)
     __obj.asInstanceOf[BridgeClients]
   }

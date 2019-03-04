@@ -46,9 +46,7 @@ object Point {
     yval_plus: scala.Int | scala.Double = null,
     yval_stacked: scala.Int | scala.Double = null
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idx")(idx)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(idx = idx, name = name)
     if (annotation != null) __obj.updateDynamic("annotation")(annotation)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (xval != null) __obj.updateDynamic("xval")(xval.asInstanceOf[js.Any])

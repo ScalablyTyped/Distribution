@@ -16,8 +16,7 @@ object Anon_Field {
     format: java.lang.String,
     test: js.Function1[/* field */ slonikLib.slonikMod.FieldType, scala.Boolean] = null
   ): Anon_Field = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
     if (test != null) __obj.updateDynamic("test")(test)
     __obj.asInstanceOf[Anon_Field]
   }

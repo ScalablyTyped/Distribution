@@ -22,10 +22,7 @@ object Anon_EntityManager {
     message: java.lang.String = null,
     stack: java.lang.String = null
   ): Anon_EntityManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityManager")(entityManager)
-    __obj.updateDynamic("httpResponse")(httpResponse)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(entityManager = entityManager, httpResponse = httpResponse, query = query)
     if (message != null) __obj.updateDynamic("message")(message)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[Anon_EntityManager]

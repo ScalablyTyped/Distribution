@@ -160,30 +160,8 @@ object InstancesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAccessConfig")(addAccessConfig)
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("attachDisk")(attachDisk)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("deleteAccessConfig")(deleteAccessConfig)
-    __obj.updateDynamic("detachDisk")(detachDisk)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getSerialPortOutput")(getSerialPortOutput)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setDiskAutoDelete")(setDiskAutoDelete)
-    __obj.updateDynamic("setLabels")(setLabels)
-    __obj.updateDynamic("setMachineResources")(setMachineResources)
-    __obj.updateDynamic("setMachineType")(setMachineType)
-    __obj.updateDynamic("setMetadata")(setMetadata)
-    __obj.updateDynamic("setMinCpuPlatform")(setMinCpuPlatform)
-    __obj.updateDynamic("setScheduling")(setScheduling)
-    __obj.updateDynamic("setServiceAccount")(setServiceAccount)
-    __obj.updateDynamic("setTags")(setTags)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startWithEncryptionKey")(startWithEncryptionKey)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(addAccessConfig = addAccessConfig, aggregatedList = aggregatedList, attachDisk = attachDisk, delete = delete, deleteAccessConfig = deleteAccessConfig, detachDisk = detachDisk, get = get, getSerialPortOutput = getSerialPortOutput, insert = insert, list = list, reset = reset, setDiskAutoDelete = setDiskAutoDelete, setLabels = setLabels, setMachineResources = setMachineResources, setMachineType = setMachineType, setMetadata = setMetadata, setMinCpuPlatform = setMinCpuPlatform, setScheduling = setScheduling, setServiceAccount = setServiceAccount, setTags = setTags, start = start, startWithEncryptionKey = startWithEncryptionKey, stop = stop)
+  
     __obj.asInstanceOf[InstancesResource]
   }
 }

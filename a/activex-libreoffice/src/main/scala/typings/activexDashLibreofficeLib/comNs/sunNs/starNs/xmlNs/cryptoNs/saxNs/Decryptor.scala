@@ -28,17 +28,8 @@ object Decryptor {
     setBlockerId: js.Function1[scala.Double, scala.Unit],
     setKeyId: js.Function1[scala.Double, scala.Unit]
   ): Decryptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDecryptionResultListener")(addDecryptionResultListener)
-    __obj.updateDynamic("endMission")(endMission)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("referenceResolved")(referenceResolved)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDecryptionResultListener")(removeDecryptionResultListener)
-    __obj.updateDynamic("setBlockerId")(setBlockerId)
-    __obj.updateDynamic("setKeyId")(setKeyId)
+    val __obj = js.Dynamic.literal(acquire = acquire, addDecryptionResultListener = addDecryptionResultListener, endMission = endMission, initialize = initialize, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release, removeDecryptionResultListener = removeDecryptionResultListener, setBlockerId = setBlockerId, setKeyId = setKeyId)
+  
     __obj.asInstanceOf[Decryptor]
   }
 }

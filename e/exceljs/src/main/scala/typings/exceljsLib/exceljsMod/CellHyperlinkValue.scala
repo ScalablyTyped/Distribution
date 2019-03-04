@@ -13,9 +13,8 @@ trait CellHyperlinkValue extends _CellValue {
 object CellHyperlinkValue {
   @scala.inline
   def apply(hyperlink: java.lang.String, text: java.lang.String): CellHyperlinkValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hyperlink")(hyperlink)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(hyperlink = hyperlink, text = text)
+  
     __obj.asInstanceOf[CellHyperlinkValue]
   }
 }

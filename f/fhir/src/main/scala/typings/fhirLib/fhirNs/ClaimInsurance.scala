@@ -71,10 +71,7 @@ object ClaimInsurance {
     modifierExtension: js.Array[Extension] = null,
     preAuthRef: js.Array[java.lang.String] = null
   ): ClaimInsurance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coverage")(coverage)
-    __obj.updateDynamic("focal")(focal)
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(coverage = coverage, focal = focal, sequence = sequence)
     if (_businessArrangement != null) __obj.updateDynamic("_businessArrangement")(_businessArrangement)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_focal != null) __obj.updateDynamic("_focal")(_focal)

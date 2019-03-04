@@ -13,9 +13,8 @@ trait FlashComponentsPanel extends js.Object {
 object FlashComponentsPanel {
   @scala.inline
   def apply(addItemToDocument: js.Function0[js.Any], reload: js.Function0[js.Any]): FlashComponentsPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItemToDocument")(addItemToDocument)
-    __obj.updateDynamic("reload")(reload)
+    val __obj = js.Dynamic.literal(addItemToDocument = addItemToDocument, reload = reload)
+  
     __obj.asInstanceOf[FlashComponentsPanel]
   }
 }

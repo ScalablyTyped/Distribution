@@ -47,14 +47,8 @@ object TestVariable {
     url: java.lang.String,
     values: js.Array[java.lang.String]
   ): TestVariable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, project = project, revision = revision, url = url, values = values)
+  
     __obj.asInstanceOf[TestVariable]
   }
 }

@@ -57,11 +57,8 @@ object Anon_CallbackCertificateDetails {
       scala.Unit
     ]
   ): Anon_CallbackCertificateDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getKeyPair")(getKeyPair)
-    __obj.updateDynamic("selectClientCertificates")(selectClientCertificates)
-    __obj.updateDynamic("subtleCrypto")(subtleCrypto)
-    __obj.updateDynamic("verifyTLSServerCertificate")(verifyTLSServerCertificate)
+    val __obj = js.Dynamic.literal(getKeyPair = getKeyPair, selectClientCertificates = selectClientCertificates, subtleCrypto = subtleCrypto, verifyTLSServerCertificate = verifyTLSServerCertificate)
+  
     __obj.asInstanceOf[Anon_CallbackCertificateDetails]
   }
 }

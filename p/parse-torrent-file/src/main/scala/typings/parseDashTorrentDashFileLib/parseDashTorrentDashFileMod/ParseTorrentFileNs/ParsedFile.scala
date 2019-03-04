@@ -15,11 +15,8 @@ trait ParsedFile extends js.Object {
 object ParsedFile {
   @scala.inline
   def apply(length: scala.Double, name: java.lang.String, offset: scala.Double, path: java.lang.String): ParsedFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(length = length, name = name, offset = offset, path = path)
+  
     __obj.asInstanceOf[ParsedFile]
   }
 }

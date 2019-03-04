@@ -60,16 +60,8 @@ object Brush {
     startRadius: scala.Double,
     `type`: EnumValue
   ): Brush = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addColorStop")(addColorStop)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("colorStops")(colorStops)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endRadius")(endRadius)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startRadius")(startRadius)
+    val __obj = js.Dynamic.literal(addColorStop = addColorStop, color = color, colorStops = colorStops, copy = copy, end = end, endRadius = endRadius, pattern = pattern, start = start, startRadius = startRadius)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Brush]
   }
 }

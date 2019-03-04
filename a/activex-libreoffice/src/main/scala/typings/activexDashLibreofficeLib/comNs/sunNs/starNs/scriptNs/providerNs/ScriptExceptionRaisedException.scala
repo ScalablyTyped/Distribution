@@ -21,13 +21,8 @@ object ScriptExceptionRaisedException {
     lineNum: scala.Double,
     scriptName: java.lang.String
   ): ScriptExceptionRaisedException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("exceptionType")(exceptionType)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("lineNum")(lineNum)
-    __obj.updateDynamic("scriptName")(scriptName)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, exceptionType = exceptionType, language = language, lineNum = lineNum, scriptName = scriptName)
+  
     __obj.asInstanceOf[ScriptExceptionRaisedException]
   }
 }

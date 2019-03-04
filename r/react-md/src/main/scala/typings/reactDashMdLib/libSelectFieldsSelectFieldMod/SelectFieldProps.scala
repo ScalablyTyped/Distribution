@@ -230,8 +230,7 @@ object SelectFieldProps {
     xThreshold: scala.Int | scala.Double = null,
     yThreshold: scala.Int | scala.Double = null
   ): SelectFieldProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (!js.isUndefined(adjustMinWidth)) __obj.updateDynamic("adjustMinWidth")(adjustMinWidth)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)

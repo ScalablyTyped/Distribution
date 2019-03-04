@@ -476,7 +476,7 @@ class File protected ()
     *
     * @private
     */
-  def `startResumableUpload_`(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
+  def startResumableUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
   /**
     * Takes a readable stream and pipes it to a remote file. Unlike
     * `startResumableUpload_`, which uses the resumable upload technique, this
@@ -487,7 +487,7 @@ class File protected ()
     *
     * @private
     */
-  def `startSimpleUpload_`(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify): scala.Unit = js.native
-  def `startSimpleUpload_`(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
+  def startSimpleUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify): scala.Unit = js.native
+  def startSimpleUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
 }
 

@@ -20,11 +20,8 @@ object ClickAnnotationEvent {
     fullAnnotation: Annotations,
     index: scala.Double
   ): ClickAnnotationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotation")(annotation)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("fullAnnotation")(fullAnnotation)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(annotation = annotation, event = event, fullAnnotation = fullAnnotation, index = index)
+  
     __obj.asInstanceOf[ClickAnnotationEvent]
   }
 }

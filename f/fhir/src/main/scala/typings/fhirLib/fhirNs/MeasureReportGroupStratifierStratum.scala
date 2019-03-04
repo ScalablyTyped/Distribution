@@ -46,8 +46,7 @@ object MeasureReportGroupStratifierStratum {
     modifierExtension: js.Array[Extension] = null,
     population: js.Array[MeasureReportGroupStratifierStratumPopulation] = null
   ): MeasureReportGroupStratifierStratum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_measureScore != null) __obj.updateDynamic("_measureScore")(_measureScore)

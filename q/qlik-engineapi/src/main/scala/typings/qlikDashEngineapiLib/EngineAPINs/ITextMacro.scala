@@ -47,13 +47,8 @@ object ITextMacro {
     qSetSeqNo: scala.Double,
     qTag: java.lang.String
   ): ITextMacro = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDisplayString")(qDisplayString)
-    __obj.updateDynamic("qIsReserved")(qIsReserved)
-    __obj.updateDynamic("qIsSystem")(qIsSystem)
-    __obj.updateDynamic("qRefSeqNo")(qRefSeqNo)
-    __obj.updateDynamic("qSetSeqNo")(qSetSeqNo)
-    __obj.updateDynamic("qTag")(qTag)
+    val __obj = js.Dynamic.literal(qDisplayString = qDisplayString, qIsReserved = qIsReserved, qIsSystem = qIsSystem, qRefSeqNo = qRefSeqNo, qSetSeqNo = qSetSeqNo, qTag = qTag)
+  
     __obj.asInstanceOf[ITextMacro]
   }
 }

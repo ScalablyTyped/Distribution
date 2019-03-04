@@ -24,10 +24,7 @@ object FullFontDetails {
     levelOfControl: java.lang.String,
     script: java.lang.String = null
   ): FullFontDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontId")(fontId)
-    __obj.updateDynamic("genericFamily")(genericFamily)
-    __obj.updateDynamic("levelOfControl")(levelOfControl)
+    val __obj = js.Dynamic.literal(fontId = fontId, genericFamily = genericFamily, levelOfControl = levelOfControl)
     if (script != null) __obj.updateDynamic("script")(script)
     __obj.asInstanceOf[FullFontDetails]
   }

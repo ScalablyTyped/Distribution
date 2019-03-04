@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var children: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var colon: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
@@ -25,7 +25,7 @@ trait `Anon_` extends js.Object {
   var wrapperCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     children: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
@@ -45,20 +45,10 @@ object `Anon_` {
       antdLib.antdLibStrings.Empty | antdLib.antdLibStrings.error | antdLib.antdLibStrings.success | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.validating
     ],
     wrapperCol: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("colon")(colon)
-    __obj.updateDynamic("hasFeedback")(hasFeedback)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelCol")(labelCol)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("validateStatus")(validateStatus)
-    __obj.updateDynamic("wrapperCol")(wrapperCol)
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal(children = children, className = className, colon = colon, hasFeedback = hasFeedback, help = help, id = id, label = label, labelCol = labelCol, prefixCls = prefixCls, validateStatus = validateStatus, wrapperCol = wrapperCol)
+  
+    __obj.asInstanceOf[Anon_]
   }
 }
 

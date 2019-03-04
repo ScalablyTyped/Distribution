@@ -146,32 +146,8 @@ object Anon_ActiveTrackIds {
     ],
     timeoutNs: Anon_EditTracksInfo
   ): Anon_ActiveTrackIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT_MEDIA_RECEIVER_APP_ID")(DEFAULT_MEDIA_RECEIVER_APP_ID)
-    __obj.updateDynamic("EditTracksInfoRequest")(EditTracksInfoRequest)
-    __obj.updateDynamic("GenericMediaMetadata")(GenericMediaMetadata)
-    __obj.updateDynamic("GetStatusRequest")(GetStatusRequest)
-    __obj.updateDynamic("LoadRequest")(LoadRequest)
-    __obj.updateDynamic("Media")(Media)
-    __obj.updateDynamic("MediaInfo")(MediaInfo)
-    __obj.updateDynamic("MovieMediaMetadata")(MovieMediaMetadata)
-    __obj.updateDynamic("MusicTrackMediaMetadata")(MusicTrackMediaMetadata)
-    __obj.updateDynamic("PauseRequest")(PauseRequest)
-    __obj.updateDynamic("PhotoMediaMetadata")(PhotoMediaMetadata)
-    __obj.updateDynamic("PlayRequest")(PlayRequest)
-    __obj.updateDynamic("QueueInsertItemsRequest")(QueueInsertItemsRequest)
-    __obj.updateDynamic("QueueItem")(QueueItem)
-    __obj.updateDynamic("QueueLoadRequest")(QueueLoadRequest)
-    __obj.updateDynamic("QueueRemoveItemsRequest")(QueueRemoveItemsRequest)
-    __obj.updateDynamic("QueueReorderItemsRequest")(QueueReorderItemsRequest)
-    __obj.updateDynamic("QueueUpdateItemsRequest")(QueueUpdateItemsRequest)
-    __obj.updateDynamic("SeekRequest")(SeekRequest)
-    __obj.updateDynamic("StopRequest")(StopRequest)
-    __obj.updateDynamic("TextTrackStyle")(TextTrackStyle)
-    __obj.updateDynamic("Track")(Track)
-    __obj.updateDynamic("TvShowMediaMetadata")(TvShowMediaMetadata)
-    __obj.updateDynamic("VolumeRequest")(VolumeRequest)
-    __obj.updateDynamic("timeoutNs")(timeoutNs)
+    val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID, EditTracksInfoRequest = EditTracksInfoRequest, GenericMediaMetadata = GenericMediaMetadata, GetStatusRequest = GetStatusRequest, LoadRequest = LoadRequest, Media = Media, MediaInfo = MediaInfo, MovieMediaMetadata = MovieMediaMetadata, MusicTrackMediaMetadata = MusicTrackMediaMetadata, PauseRequest = PauseRequest, PhotoMediaMetadata = PhotoMediaMetadata, PlayRequest = PlayRequest, QueueInsertItemsRequest = QueueInsertItemsRequest, QueueItem = QueueItem, QueueLoadRequest = QueueLoadRequest, QueueRemoveItemsRequest = QueueRemoveItemsRequest, QueueReorderItemsRequest = QueueReorderItemsRequest, QueueUpdateItemsRequest = QueueUpdateItemsRequest, SeekRequest = SeekRequest, StopRequest = StopRequest, TextTrackStyle = TextTrackStyle, Track = Track, TvShowMediaMetadata = TvShowMediaMetadata, VolumeRequest = VolumeRequest, timeoutNs = timeoutNs)
+  
     __obj.asInstanceOf[Anon_ActiveTrackIds]
   }
 }

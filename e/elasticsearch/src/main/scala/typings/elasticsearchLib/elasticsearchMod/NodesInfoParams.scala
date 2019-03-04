@@ -28,8 +28,7 @@ object NodesInfoParams {
     requestTimeout: scala.Int | scala.Double = null,
     timeout: TimeSpan = null
   ): NodesInfoParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (!js.isUndefined(flatSettings)) __obj.updateDynamic("flatSettings")(flatSettings)

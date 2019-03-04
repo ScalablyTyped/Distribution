@@ -112,14 +112,8 @@ object Attributes {
     script: js.Any,
     territory: js.Any
   ): Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("languageId")(languageId)
-    __obj.updateDynamic("maxLanguageId")(maxLanguageId)
-    __obj.updateDynamic("minLanguageId")(minLanguageId)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("territory")(territory)
+    val __obj = js.Dynamic.literal(language = language, languageId = languageId, maxLanguageId = maxLanguageId, minLanguageId = minLanguageId, region = region, script = script, territory = territory)
+  
     __obj.asInstanceOf[Attributes]
   }
 }

@@ -13,9 +13,8 @@ trait RetrievalProgress extends js.Object {
 object RetrievalProgress {
   @scala.inline
   def apply(bytesRetrieved: scala.Double, totalBytesToRetrieve: scala.Double): RetrievalProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesRetrieved")(bytesRetrieved)
-    __obj.updateDynamic("totalBytesToRetrieve")(totalBytesToRetrieve)
+    val __obj = js.Dynamic.literal(bytesRetrieved = bytesRetrieved, totalBytesToRetrieve = totalBytesToRetrieve)
+  
     __obj.asInstanceOf[RetrievalProgress]
   }
 }

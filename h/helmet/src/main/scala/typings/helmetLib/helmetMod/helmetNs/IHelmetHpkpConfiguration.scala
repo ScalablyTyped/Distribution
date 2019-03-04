@@ -24,9 +24,7 @@ object IHelmetHpkpConfiguration {
     reportUri: java.lang.String = null,
     setIf: IHelmetSetIfFunction = null
   ): IHelmetHpkpConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxAge")(maxAge)
-    __obj.updateDynamic("sha256s")(sha256s)
+    val __obj = js.Dynamic.literal(maxAge = maxAge, sha256s = sha256s)
     if (!js.isUndefined(includeSubdomains)) __obj.updateDynamic("includeSubdomains")(includeSubdomains)
     if (!js.isUndefined(reportOnly)) __obj.updateDynamic("reportOnly")(reportOnly)
     if (reportUri != null) __obj.updateDynamic("reportUri")(reportUri)

@@ -56,15 +56,8 @@ object XClassifiedObject {
       scala.Unit
     ]
   ): XClassifiedObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ClassID")(ClassID)
-    __obj.updateDynamic("ClassName")(ClassName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getClassID")(getClassID)
-    __obj.updateDynamic("getClassName")(getClassName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setClassInfo")(setClassInfo)
+    val __obj = js.Dynamic.literal(ClassID = ClassID, ClassName = ClassName, acquire = acquire, getClassID = getClassID, getClassName = getClassName, queryInterface = queryInterface, release = release, setClassInfo = setClassInfo)
+  
     __obj.asInstanceOf[XClassifiedObject]
   }
 }

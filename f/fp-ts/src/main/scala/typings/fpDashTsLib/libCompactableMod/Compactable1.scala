@@ -24,10 +24,8 @@ object Compactable1 {
       Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
     ]
   ): Compactable1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = compact, separate = separate)
+  
     __obj.asInstanceOf[Compactable1[F]]
   }
 }

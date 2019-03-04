@@ -20,10 +20,7 @@ object TimingArgs {
     variable: java.lang.String,
     label: java.lang.String = null
   ): TimingArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("variable")(variable)
+    val __obj = js.Dynamic.literal(category = category, value = value, variable = variable)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[TimingArgs]
   }

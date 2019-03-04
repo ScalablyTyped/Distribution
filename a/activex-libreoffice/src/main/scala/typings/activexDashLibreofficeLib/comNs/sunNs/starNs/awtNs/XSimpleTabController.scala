@@ -89,19 +89,8 @@ object XSimpleTabController {
       scala.Unit
     ]
   ): XSimpleTabController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveTabID")(ActiveTabID)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activateTab")(activateTab)
-    __obj.updateDynamic("addTabListener")(addTabListener)
-    __obj.updateDynamic("getActiveTabID")(getActiveTabID)
-    __obj.updateDynamic("getTabProps")(getTabProps)
-    __obj.updateDynamic("insertTab")(insertTab)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeTab")(removeTab)
-    __obj.updateDynamic("removeTabListener")(removeTabListener)
-    __obj.updateDynamic("setTabProps")(setTabProps)
+    val __obj = js.Dynamic.literal(ActiveTabID = ActiveTabID, acquire = acquire, activateTab = activateTab, addTabListener = addTabListener, getActiveTabID = getActiveTabID, getTabProps = getTabProps, insertTab = insertTab, queryInterface = queryInterface, release = release, removeTab = removeTab, removeTabListener = removeTabListener, setTabProps = setTabProps)
+  
     __obj.asInstanceOf[XSimpleTabController]
   }
 }

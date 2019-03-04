@@ -12,8 +12,8 @@ trait SocketHost extends Host {
 object SocketHost {
   @scala.inline
   def apply(ipc: java.lang.String): SocketHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipc")(ipc)
+    val __obj = js.Dynamic.literal(ipc = ipc)
+  
     __obj.asInstanceOf[SocketHost]
   }
 }

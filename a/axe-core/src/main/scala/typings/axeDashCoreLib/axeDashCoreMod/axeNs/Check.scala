@@ -24,9 +24,7 @@ object Check {
     matches: java.lang.String = null,
     options: js.Any = null
   ): Check = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("evaluate")(evaluate.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(evaluate = evaluate.asInstanceOf[js.Any], id = id)
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (matches != null) __obj.updateDynamic("matches")(matches)

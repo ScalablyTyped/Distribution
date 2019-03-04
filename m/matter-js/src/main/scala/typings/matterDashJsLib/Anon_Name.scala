@@ -14,9 +14,8 @@ trait Anon_Name
 object Anon_Name {
   @scala.inline
   def apply(name: java.lang.String, range: java.lang.String): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(name = name, range = range)
+  
     __obj.asInstanceOf[Anon_Name]
   }
 }

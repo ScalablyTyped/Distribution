@@ -24,8 +24,8 @@ object TSInterfaceBody {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSInterfaceBody
   ): TSInterfaceBody = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSInterfaceBody]
   }
 }

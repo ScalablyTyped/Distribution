@@ -20,8 +20,7 @@ object Group {
     groups: js.Array[Group] = null,
     leaves: js.Array[Node] = null
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("padding")(padding)
+    val __obj = js.Dynamic.literal(padding = padding)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (groups != null) __obj.updateDynamic("groups")(groups)
     if (leaves != null) __obj.updateDynamic("leaves")(leaves)

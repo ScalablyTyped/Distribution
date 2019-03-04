@@ -11,8 +11,8 @@ trait Chained[Parent]
 object Chained {
   @scala.inline
   def apply[Parent](end: js.Function0[Parent]): Chained[Parent] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
+    val __obj = js.Dynamic.literal(end = end)
+  
     __obj.asInstanceOf[Chained[Parent]]
   }
 }

@@ -91,8 +91,7 @@ object Anon_AccesstokenActionvalue {
     upload_protocol: java.lang.String = null,
     waitToken: java.lang.String = null
   ): Anon_AccesstokenActionvalue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debuggeeId")(debuggeeId)
+    val __obj = js.Dynamic.literal(debuggeeId = debuggeeId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (`action.value` != null) __obj.updateDynamic("action.value")(`action.value`)

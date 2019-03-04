@@ -24,13 +24,8 @@ object SuiteUpdateModel {
     parent: ShallowReference,
     queryString: java.lang.String
   ): SuiteUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultConfigurations")(defaultConfigurations)
-    __obj.updateDynamic("defaultTesters")(defaultTesters)
-    __obj.updateDynamic("inheritDefaultConfigurations")(inheritDefaultConfigurations)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("queryString")(queryString)
+    val __obj = js.Dynamic.literal(defaultConfigurations = defaultConfigurations, defaultTesters = defaultTesters, inheritDefaultConfigurations = inheritDefaultConfigurations, name = name, parent = parent, queryString = queryString)
+  
     __obj.asInstanceOf[SuiteUpdateModel]
   }
 }

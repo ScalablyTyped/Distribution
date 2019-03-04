@@ -22,10 +22,8 @@ object XAnnotationAccess {
     createAnnotationEnumeration: js.Function0[XAnnotationEnumeration],
     removeAnnotation: js.Function1[XAnnotation, scala.Unit]
   ): XAnnotationAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAndInsertAnnotation")(createAndInsertAnnotation)
-    __obj.updateDynamic("createAnnotationEnumeration")(createAnnotationEnumeration)
-    __obj.updateDynamic("removeAnnotation")(removeAnnotation)
+    val __obj = js.Dynamic.literal(createAndInsertAnnotation = createAndInsertAnnotation, createAnnotationEnumeration = createAnnotationEnumeration, removeAnnotation = removeAnnotation)
+  
     __obj.asInstanceOf[XAnnotationAccess]
   }
 }

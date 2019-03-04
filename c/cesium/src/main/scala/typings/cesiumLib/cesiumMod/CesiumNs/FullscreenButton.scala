@@ -20,11 +20,8 @@ object FullscreenButton {
     isDestroyed: js.Function0[scala.Boolean],
     viewModel: FullscreenButtonViewModel
   ): FullscreenButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(container = container, destroy = destroy, isDestroyed = isDestroyed, viewModel = viewModel)
+  
     __obj.asInstanceOf[FullscreenButton]
   }
 }

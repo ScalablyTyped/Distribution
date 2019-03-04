@@ -33,8 +33,7 @@ object BootboxDialogOptions {
     size: bootboxLib.bootboxLibStrings.small | bootboxLib.bootboxLibStrings.large = null,
     title: java.lang.String | stdLib.Element = null
   ): BootboxDialogOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)

@@ -21,10 +21,8 @@ trait XMessageBox extends js.Object {
 object XMessageBox {
   @scala.inline
   def apply(CaptionText: java.lang.String, MessageText: java.lang.String, execute: js.Function0[scala.Double]): XMessageBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CaptionText")(CaptionText)
-    __obj.updateDynamic("MessageText")(MessageText)
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(CaptionText = CaptionText, MessageText = MessageText, execute = execute)
+  
     __obj.asInstanceOf[XMessageBox]
   }
 }

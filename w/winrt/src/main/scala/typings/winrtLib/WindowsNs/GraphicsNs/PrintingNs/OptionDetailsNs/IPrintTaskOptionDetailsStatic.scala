@@ -14,8 +14,8 @@ object IPrintTaskOptionDetailsStatic {
   def apply(
     getFromPrintTaskOptions: js.Function1[winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintTaskOptions, PrintTaskOptionDetails]
   ): IPrintTaskOptionDetailsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFromPrintTaskOptions")(getFromPrintTaskOptions)
+    val __obj = js.Dynamic.literal(getFromPrintTaskOptions = getFromPrintTaskOptions)
+  
     __obj.asInstanceOf[IPrintTaskOptionDetailsStatic]
   }
 }

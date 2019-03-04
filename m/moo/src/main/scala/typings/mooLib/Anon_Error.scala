@@ -12,8 +12,8 @@ trait Anon_Error extends js.Object {
 object Anon_Error {
   @scala.inline
   def apply(error: mooLib.mooLibNumbers.`true`): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

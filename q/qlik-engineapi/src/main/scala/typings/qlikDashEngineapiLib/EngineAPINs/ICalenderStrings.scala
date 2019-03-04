@@ -35,11 +35,8 @@ object ICalenderStrings {
     qLongMonthNames: js.Array[java.lang.String],
     qMonthNames: js.Array[java.lang.String]
   ): ICalenderStrings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDayNames")(qDayNames)
-    __obj.updateDynamic("qLongDayNames")(qLongDayNames)
-    __obj.updateDynamic("qLongMonthNames")(qLongMonthNames)
-    __obj.updateDynamic("qMonthNames")(qMonthNames)
+    val __obj = js.Dynamic.literal(qDayNames = qDayNames, qLongDayNames = qLongDayNames, qLongMonthNames = qLongMonthNames, qMonthNames = qMonthNames)
+  
     __obj.asInstanceOf[ICalenderStrings]
   }
 }

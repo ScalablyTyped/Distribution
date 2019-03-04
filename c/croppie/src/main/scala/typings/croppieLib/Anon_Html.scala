@@ -12,8 +12,8 @@ trait Anon_Html extends js.Object {
 object Anon_Html {
   @scala.inline
   def apply(`type`: croppieLib.croppieLibStrings.html): Anon_Html = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Html]
   }
 }

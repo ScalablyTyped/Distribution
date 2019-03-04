@@ -51,11 +51,7 @@ object Anon_AltFieldsKeyName {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("objectId")(objectId)
-    __obj.updateDynamic("objectType")(objectType)
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(name = name, objectId = objectId, objectType = objectType, profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

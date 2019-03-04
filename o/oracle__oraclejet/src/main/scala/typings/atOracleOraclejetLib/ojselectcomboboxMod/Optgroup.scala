@@ -18,9 +18,7 @@ object Optgroup {
     label: java.lang.String,
     disabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Optgroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(children = children, label = label)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     __obj.asInstanceOf[Optgroup]
   }

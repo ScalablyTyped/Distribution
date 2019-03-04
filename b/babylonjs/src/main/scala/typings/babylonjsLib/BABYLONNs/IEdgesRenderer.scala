@@ -32,11 +32,8 @@ object IEdgesRenderer {
     isReady: js.Function0[scala.Boolean],
     render: js.Function0[scala.Unit]
   ): IEdgesRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(dispose = dispose, isEnabled = isEnabled, isReady = isReady, render = render)
+  
     __obj.asInstanceOf[IEdgesRenderer]
   }
 }

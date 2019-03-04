@@ -12,8 +12,8 @@ trait ICheckboxState extends js.Object {
 object ICheckboxState {
   @scala.inline
   def apply(indeterminate: scala.Boolean): ICheckboxState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indeterminate")(indeterminate)
+    val __obj = js.Dynamic.literal(indeterminate = indeterminate)
+  
     __obj.asInstanceOf[ICheckboxState]
   }
 }

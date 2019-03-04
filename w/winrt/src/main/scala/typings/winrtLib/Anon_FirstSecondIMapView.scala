@@ -28,9 +28,8 @@ object Anon_FirstSecondIMapView {
       winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.NamedResource
     ]
   ): Anon_FirstSecondIMapView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("second")(second)
+    val __obj = js.Dynamic.literal(first = first, second = second)
+  
     __obj.asInstanceOf[Anon_FirstSecondIMapView]
   }
 }

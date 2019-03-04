@@ -45,10 +45,7 @@ object Anon_AltApkVersionCode {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltApkVersionCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apkVersionCode")(apkVersionCode)
-    __obj.updateDynamic("editId")(editId)
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(apkVersionCode = apkVersionCode, editId = editId, packageName = packageName)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

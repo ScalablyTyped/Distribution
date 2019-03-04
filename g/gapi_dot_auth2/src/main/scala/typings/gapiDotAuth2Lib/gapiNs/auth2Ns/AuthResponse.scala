@@ -29,14 +29,8 @@ object AuthResponse {
     login_hint: java.lang.String,
     scope: java.lang.String
   ): AuthResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expires_at")(expires_at)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("first_issued_at")(first_issued_at)
-    __obj.updateDynamic("id_token")(id_token)
-    __obj.updateDynamic("login_hint")(login_hint)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(access_token = access_token, expires_at = expires_at, expires_in = expires_in, first_issued_at = first_issued_at, id_token = id_token, login_hint = login_hint, scope = scope)
+  
     __obj.asInstanceOf[AuthResponse]
   }
 }

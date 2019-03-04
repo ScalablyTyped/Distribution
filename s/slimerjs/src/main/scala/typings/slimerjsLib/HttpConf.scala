@@ -14,10 +14,8 @@ trait HttpConf extends js.Object {
 object HttpConf {
   @scala.inline
   def apply(data: js.Any, headers: js.Any, operation: java.lang.String): HttpConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(data = data, headers = headers, operation = operation)
+  
     __obj.asInstanceOf[HttpConf]
   }
 }

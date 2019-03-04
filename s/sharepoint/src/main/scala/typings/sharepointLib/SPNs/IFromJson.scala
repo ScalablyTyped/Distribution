@@ -14,9 +14,8 @@ trait IFromJson extends js.Object {
 object IFromJson {
   @scala.inline
   def apply(customFromJson: js.Function1[js.Any, scala.Boolean], fromJson: js.Function1[js.Any, scala.Unit]): IFromJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customFromJson")(customFromJson)
-    __obj.updateDynamic("fromJson")(fromJson)
+    val __obj = js.Dynamic.literal(customFromJson = customFromJson, fromJson = fromJson)
+  
     __obj.asInstanceOf[IFromJson]
   }
 }

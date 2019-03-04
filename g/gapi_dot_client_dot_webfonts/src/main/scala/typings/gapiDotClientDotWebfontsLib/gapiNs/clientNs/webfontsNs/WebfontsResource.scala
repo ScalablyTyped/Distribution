@@ -18,8 +18,8 @@ object WebfontsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
     ]
   ): WebfontsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[WebfontsResource]
   }
 }

@@ -20,9 +20,8 @@ object RootCategoriesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListRootCategoriesResponse]
     ]
   ): RootCategoriesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("infoTypes")(infoTypes)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(infoTypes = infoTypes, list = list)
+  
     __obj.asInstanceOf[RootCategoriesResource]
   }
 }

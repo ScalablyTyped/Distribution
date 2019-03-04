@@ -41,12 +41,7 @@ object ConfigItem {
     regexMessage: java.lang.String = null,
     valueItems: js.Array[java.lang.String] = null
   ): ConfigItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("valueType")(valueType)
+    val __obj = js.Dynamic.literal(description = description, displayName = displayName, name = name, value = value, valueType = valueType)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (regex != null) __obj.updateDynamic("regex")(regex)
     if (regexMessage != null) __obj.updateDynamic("regexMessage")(regexMessage)

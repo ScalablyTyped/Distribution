@@ -18,8 +18,8 @@ object DimensionValuesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DimensionValueList]
     ]
   ): DimensionValuesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[DimensionValuesResource]
   }
 }

@@ -40,9 +40,7 @@ object ICompiledMode {
     terminator_end: java.lang.String = null,
     variants: js.Array[IMode] = null
   ): ICompiledMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiled")(compiled)
-    __obj.updateDynamic("terminators")(terminators)
+    val __obj = js.Dynamic.literal(compiled = compiled, terminators = terminators)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
     if (beginKeyword != null) __obj.updateDynamic("beginKeyword")(beginKeyword)

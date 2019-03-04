@@ -37,12 +37,8 @@ object GetUserResult {
     permissionsBoundary: java.lang.String,
     userId: java.lang.String
   ): GetUserResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("permissionsBoundary")(permissionsBoundary)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, path = path, permissionsBoundary = permissionsBoundary, userId = userId)
+  
     __obj.asInstanceOf[GetUserResult]
   }
 }

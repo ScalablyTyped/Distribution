@@ -22,12 +22,8 @@ object Anon_EndOffset {
     startOffset: scala.Double,
     startTextNodePos: scala.Double
   ): Anon_EndOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endOffset")(endOffset)
-    __obj.updateDynamic("endTextNodePos")(endTextNodePos)
-    __obj.updateDynamic("framePos")(framePos)
-    __obj.updateDynamic("startOffset")(startOffset)
-    __obj.updateDynamic("startTextNodePos")(startTextNodePos)
+    val __obj = js.Dynamic.literal(endOffset = endOffset, endTextNodePos = endTextNodePos, framePos = framePos, startOffset = startOffset, startTextNodePos = startTextNodePos)
+  
     __obj.asInstanceOf[Anon_EndOffset]
   }
 }

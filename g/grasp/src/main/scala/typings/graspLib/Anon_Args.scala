@@ -37,8 +37,7 @@ object Anon_Args {
     stdin: nodeLib.NodeJSNs.ReadStream = null,
     textFormat: Anon_M with cliDashColorLib.cliDashColorMod.mNs.Format = null
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (console != null) __obj.updateDynamic("console")(console)
     if (error != null) __obj.updateDynamic("error")(error)

@@ -78,21 +78,7 @@ object BaseFiberRootProperties {
     pendingContext: js.Object = null,
     pingCache: (stdLib.WeakMap[Thenable, stdLib.Set[ExpirationTime]]) | (stdLib.Map[Thenable, stdLib.Set[ExpirationTime]]) = null
   ): BaseFiberRootProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerInfo")(containerInfo)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("didError")(didError)
-    __obj.updateDynamic("earliestPendingTime")(earliestPendingTime)
-    __obj.updateDynamic("earliestSuspendedTime")(earliestSuspendedTime)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("hydrate")(hydrate)
-    __obj.updateDynamic("latestPendingTime")(latestPendingTime)
-    __obj.updateDynamic("latestPingedTime")(latestPingedTime)
-    __obj.updateDynamic("latestSuspendedTime")(latestSuspendedTime)
-    __obj.updateDynamic("nextExpirationTimeToWorkOn")(nextExpirationTimeToWorkOn)
-    __obj.updateDynamic("pendingChildren")(pendingChildren)
-    __obj.updateDynamic("pendingCommitExpirationTime")(pendingCommitExpirationTime)
-    __obj.updateDynamic("timeoutHandle")(timeoutHandle)
+    val __obj = js.Dynamic.literal(containerInfo = containerInfo, current = current, didError = didError, earliestPendingTime = earliestPendingTime, earliestSuspendedTime = earliestSuspendedTime, expirationTime = expirationTime, hydrate = hydrate, latestPendingTime = latestPendingTime, latestPingedTime = latestPingedTime, latestSuspendedTime = latestSuspendedTime, nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn, pendingChildren = pendingChildren, pendingCommitExpirationTime = pendingCommitExpirationTime, timeoutHandle = timeoutHandle)
     if (context != null) __obj.updateDynamic("context")(context)
     if (finishedWork != null) __obj.updateDynamic("finishedWork")(finishedWork)
     if (firstBatch != null) __obj.updateDynamic("firstBatch")(firstBatch)

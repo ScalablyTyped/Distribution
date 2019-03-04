@@ -20,11 +20,8 @@ object Anon_FULLSCREEN {
     MINIMIZED: chromeDashAppsLib.chromeDashAppsLibStrings.minimized,
     NORMAL: chromeDashAppsLib.chromeDashAppsLibStrings.normal
   ): Anon_FULLSCREEN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FULLSCREEN")(FULLSCREEN)
-    __obj.updateDynamic("MAXIMIZED")(MAXIMIZED)
-    __obj.updateDynamic("MINIMIZED")(MINIMIZED)
-    __obj.updateDynamic("NORMAL")(NORMAL)
+    val __obj = js.Dynamic.literal(FULLSCREEN = FULLSCREEN, MAXIMIZED = MAXIMIZED, MINIMIZED = MINIMIZED, NORMAL = NORMAL)
+  
     __obj.asInstanceOf[Anon_FULLSCREEN]
   }
 }

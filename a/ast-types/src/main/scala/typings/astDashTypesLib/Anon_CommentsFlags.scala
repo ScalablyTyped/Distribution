@@ -24,9 +24,7 @@ object Anon_CommentsFlags {
     regex: Anon_Flags = null,
     value: stdLib.RegExp = null
   ): Anon_CommentsFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(flags = flags, pattern = pattern)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (regex != null) __obj.updateDynamic("regex")(regex)

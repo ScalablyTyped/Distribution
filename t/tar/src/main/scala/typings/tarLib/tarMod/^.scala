@@ -19,7 +19,7 @@ object ^ extends js.Object {
   val numeric: tarLib.Anon_Atime = js.native
   val r: tarLib.Anon_CallbackErrFileListOptions = js.native
   val t: tarLib.Anon_CallbackErrFileList = js.native
-  val types: tarLib.`Anon_` = js.native
+  val types: tarLib.Anon_ = js.native
   val u: tarLib.Anon_CallbackErrFileListOptions = js.native
   val x: tarLib.Anon_CallbackErr = js.native
   def Extract(opts: java.lang.String): tarLib.tarMod.ParseStream = js.native

@@ -54,15 +54,8 @@ object Store {
       scala.Unit
     ]
   ): Store[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("deleteTask")(deleteTask)
-    __obj.updateDynamic("getLock")(getLock)
-    __obj.updateDynamic("getTask")(getTask)
-    __obj.updateDynamic("putTask")(putTask)
-    __obj.updateDynamic("releaseLock")(releaseLock)
-    __obj.updateDynamic("takeFirstN")(takeFirstN)
-    __obj.updateDynamic("takeLastN")(takeLastN)
+    val __obj = js.Dynamic.literal(connect = connect, deleteTask = deleteTask, getLock = getLock, getTask = getTask, putTask = putTask, releaseLock = releaseLock, takeFirstN = takeFirstN, takeLastN = takeLastN)
+  
     __obj.asInstanceOf[Store[T]]
   }
 }

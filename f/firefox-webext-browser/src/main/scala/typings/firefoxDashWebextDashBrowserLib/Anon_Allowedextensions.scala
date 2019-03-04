@@ -23,11 +23,8 @@ object Anon_Allowedextensions {
     path: java.lang.String,
     `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.pkcs11 | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.stdio
   ): Anon_Allowedextensions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("allowed_extensions")(allowed_extensions)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(allowed_extensions = allowed_extensions, description = description, name = name, path = path)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Allowedextensions]
   }
 }

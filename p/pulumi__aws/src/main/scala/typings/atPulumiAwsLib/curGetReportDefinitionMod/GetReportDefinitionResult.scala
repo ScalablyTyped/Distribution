@@ -57,16 +57,8 @@ object GetReportDefinitionResult {
     s3Region: java.lang.String,
     timeUnit: java.lang.String
   ): GetReportDefinitionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalArtifacts")(additionalArtifacts)
-    __obj.updateDynamic("additionalSchemaElements")(additionalSchemaElements)
-    __obj.updateDynamic("compression")(compression)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("s3Bucket")(s3Bucket)
-    __obj.updateDynamic("s3Prefix")(s3Prefix)
-    __obj.updateDynamic("s3Region")(s3Region)
-    __obj.updateDynamic("timeUnit")(timeUnit)
+    val __obj = js.Dynamic.literal(additionalArtifacts = additionalArtifacts, additionalSchemaElements = additionalSchemaElements, compression = compression, format = format, id = id, s3Bucket = s3Bucket, s3Prefix = s3Prefix, s3Region = s3Region, timeUnit = timeUnit)
+  
     __obj.asInstanceOf[GetReportDefinitionResult]
   }
 }

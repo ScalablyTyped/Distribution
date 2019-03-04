@@ -20,10 +20,7 @@ object Anon_EnabledIdentityPoolId {
     userPoolId: java.lang.String,
     enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_EnabledIdentityPoolId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identityPoolId")(identityPoolId)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("userPoolId")(userPoolId)
+    val __obj = js.Dynamic.literal(identityPoolId = identityPoolId, roleArn = roleArn, userPoolId = userPoolId)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     __obj.asInstanceOf[Anon_EnabledIdentityPoolId]
   }

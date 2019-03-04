@@ -15,8 +15,8 @@ object NavigationUriAction {
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/URI`,
     uri: java.lang.String
   ): NavigationUriAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NavigationUriAction]
   }
 }

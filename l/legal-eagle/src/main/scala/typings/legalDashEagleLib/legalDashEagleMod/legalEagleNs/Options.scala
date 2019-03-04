@@ -18,8 +18,7 @@ object Options {
     omitPermissive: js.UndefOr[scala.Boolean] = js.undefined,
     overrides: LicenseLookup = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (!js.isUndefined(omitPermissive)) __obj.updateDynamic("omitPermissive")(omitPermissive)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)
     __obj.asInstanceOf[Options]

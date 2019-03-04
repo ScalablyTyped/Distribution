@@ -18,9 +18,7 @@ object Anon_CloudwatchLogGroupArn {
     logType: java.lang.String,
     enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CloudwatchLogGroupArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn)
-    __obj.updateDynamic("logType")(logType)
+    val __obj = js.Dynamic.literal(cloudwatchLogGroupArn = cloudwatchLogGroupArn, logType = logType)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     __obj.asInstanceOf[Anon_CloudwatchLogGroupArn]
   }

@@ -27,20 +27,8 @@ object User {
     sub: scala.Double,
     username: java.lang.String
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatarID")(avatarID)
-    __obj.updateDynamic("badge")(badge)
-    __obj.updateDynamic("gRole")(gRole)
-    __obj.updateDynamic("guest")(guest)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("joined")(joined)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("silver")(silver)
-    __obj.updateDynamic("slug")(slug)
-    __obj.updateDynamic("sub")(sub)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(avatarID = avatarID, badge = badge, gRole = gRole, guest = guest, id = id, joined = joined, language = language, level = level, role = role, silver = silver, slug = slug, sub = sub, username = username)
+  
     __obj.asInstanceOf[User]
   }
 }

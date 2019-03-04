@@ -26,8 +26,7 @@ object Anon_FormatLanguages {
     props: wikidataDashSdkLib.defTypePropertyMod.WikidataProperty | js.Array[wikidataDashSdkLib.defTypePropertyMod.WikidataProperty] = null,
     sites: wikidataDashSdkLib.defTypeSiteMod.WikidataSite = null
   ): Anon_FormatLanguages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("titles")(titles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(titles = titles.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
     if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])

@@ -31,18 +31,8 @@ object Board {
     rows: js.Array[BoardRow],
     url: java.lang.String
   ): Board = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("allowedMappings")(allowedMappings)
-    __obj.updateDynamic("canEdit")(canEdit)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, allowedMappings = allowedMappings, canEdit = canEdit, columns = columns, fields = fields, id = id, isValid = isValid, name = name, revision = revision, rows = rows, url = url)
+  
     __obj.asInstanceOf[Board]
   }
 }

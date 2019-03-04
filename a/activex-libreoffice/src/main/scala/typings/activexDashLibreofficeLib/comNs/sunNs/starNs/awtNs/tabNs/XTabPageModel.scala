@@ -31,12 +31,8 @@ object XTabPageModel {
     Title: java.lang.String,
     ToolTip: java.lang.String
   ): XTabPageModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("ImageURL")(ImageURL)
-    __obj.updateDynamic("TabPageID")(TabPageID)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("ToolTip")(ToolTip)
+    val __obj = js.Dynamic.literal(Enabled = Enabled, ImageURL = ImageURL, TabPageID = TabPageID, Title = Title, ToolTip = ToolTip)
+  
     __obj.asInstanceOf[XTabPageModel]
   }
 }

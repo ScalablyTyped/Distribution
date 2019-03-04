@@ -24,8 +24,8 @@ object Anon_Composite {
       threeLib.threeMod.PropertyBindingNs.Composite
     ]
   ): Anon_Composite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Composite")(Composite)
+    val __obj = js.Dynamic.literal(Composite = Composite)
+  
     __obj.asInstanceOf[Anon_Composite]
   }
 }

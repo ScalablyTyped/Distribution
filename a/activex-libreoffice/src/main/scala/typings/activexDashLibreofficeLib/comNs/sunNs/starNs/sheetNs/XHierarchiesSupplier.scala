@@ -33,12 +33,8 @@ object XHierarchiesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHierarchiesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hierarchies")(Hierarchies)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getHierarchies")(getHierarchies)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Hierarchies = Hierarchies, acquire = acquire, getHierarchies = getHierarchies, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHierarchiesSupplier]
   }
 }

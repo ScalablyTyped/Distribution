@@ -22,9 +22,8 @@ object VpcEndpointServiceAllowedPrincipleArgs {
     principalArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     vpcEndpointServiceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): VpcEndpointServiceAllowedPrincipleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("principalArn")(principalArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcEndpointServiceId")(vpcEndpointServiceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(principalArn = principalArn.asInstanceOf[js.Any], vpcEndpointServiceId = vpcEndpointServiceId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[VpcEndpointServiceAllowedPrincipleArgs]
   }
 }

@@ -13,9 +13,8 @@ trait NavigationState[T /* <: Key */] extends js.Object {
 object NavigationState {
   @scala.inline
   def apply[T /* <: Key */](index: scala.Double, routes: js.Array[T]): NavigationState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(index = index, routes = routes)
+  
     __obj.asInstanceOf[NavigationState[T]]
   }
 }

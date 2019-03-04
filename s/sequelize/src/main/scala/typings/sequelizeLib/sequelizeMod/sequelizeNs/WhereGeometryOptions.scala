@@ -16,8 +16,8 @@ trait WhereGeometryOptions extends js.Object {
 object WhereGeometryOptions {
   @scala.inline
   def apply(coordinates: js.Array[js.Array[scala.Double] | scala.Double], `type`: java.lang.String): WhereGeometryOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("coordinates")(coordinates)
+    val __obj = js.Dynamic.literal(coordinates = coordinates)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WhereGeometryOptions]
   }
 }

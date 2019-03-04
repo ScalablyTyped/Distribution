@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/debug/debug_node", "DebugNode__PRE_R3__")
 @js.native
-class `DebugNode__PRE_R3__` protected () extends js.Object {
+class DebugNode__PRE_R3__ protected () extends js.Object {
   def this(nativeNode: js.Any, parent: DebugNode, _debugContext: atAngularCoreLib.srcViewMod.DebugContext) = this()
   def this(nativeNode: js.Any, parent: scala.Null, _debugContext: atAngularCoreLib.srcViewMod.DebugContext) = this()
   val _debugContext: js.Any = js.native

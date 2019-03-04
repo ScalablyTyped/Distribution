@@ -15,8 +15,8 @@ object CountingSampler {
       zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean]
     ]
   ): CountingSampler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shouldSample")(shouldSample)
+    val __obj = js.Dynamic.literal(shouldSample = shouldSample)
+  
     __obj.asInstanceOf[CountingSampler]
   }
 }

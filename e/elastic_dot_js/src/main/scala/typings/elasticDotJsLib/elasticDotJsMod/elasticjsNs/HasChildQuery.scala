@@ -67,15 +67,8 @@ object HasChildQuery {
     toJSON: js.Function0[js.Any],
     `type`: js.Function1[java.lang.String, HasChildQuery]
   ): HasChildQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("scoreMode")(scoreMode)
-    __obj.updateDynamic("scoreType")(scoreType)
-    __obj.updateDynamic("shortCircuitCutoff")(shortCircuitCutoff)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, query = query, scope = scope, scoreMode = scoreMode, scoreType = scoreType, shortCircuitCutoff = shortCircuitCutoff, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HasChildQuery]
   }
 }

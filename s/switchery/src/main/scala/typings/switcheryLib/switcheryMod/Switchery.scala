@@ -37,11 +37,8 @@ object Switchery {
     enable: js.Function0[scala.Unit],
     isDisabled: js.Function0[scala.Boolean]
   ): Switchery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isDisabled")(isDisabled)
+    val __obj = js.Dynamic.literal(destroy = destroy, disable = disable, enable = enable, isDisabled = isDisabled)
+  
     __obj.asInstanceOf[Switchery]
   }
 }

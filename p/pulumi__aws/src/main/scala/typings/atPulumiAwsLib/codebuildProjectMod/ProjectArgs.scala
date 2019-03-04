@@ -102,11 +102,7 @@ object ProjectArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnets] = null
   ): ProjectArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     if (badgeEnabled != null) __obj.updateDynamic("badgeEnabled")(badgeEnabled.asInstanceOf[js.Any])
     if (buildTimeout != null) __obj.updateDynamic("buildTimeout")(buildTimeout.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

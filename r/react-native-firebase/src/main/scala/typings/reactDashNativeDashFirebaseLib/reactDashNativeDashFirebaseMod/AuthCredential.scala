@@ -14,10 +14,8 @@ trait AuthCredential extends js.Object {
 object AuthCredential {
   @scala.inline
   def apply(providerId: java.lang.String, secret: java.lang.String, token: java.lang.String): AuthCredential = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providerId")(providerId)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(providerId = providerId, secret = secret, token = token)
+  
     __obj.asInstanceOf[AuthCredential]
   }
 }

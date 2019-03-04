@@ -29,9 +29,7 @@ object ListenerPolicyArgs {
     loadBalancerPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
     policyNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): ListenerPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
-    __obj.updateDynamic("loadBalancerPort")(loadBalancerPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(loadBalancerName = loadBalancerName.asInstanceOf[js.Any], loadBalancerPort = loadBalancerPort.asInstanceOf[js.Any])
     if (policyNames != null) __obj.updateDynamic("policyNames")(policyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerPolicyArgs]
   }

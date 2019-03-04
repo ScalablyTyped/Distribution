@@ -12,8 +12,8 @@ trait OAuthLogin extends js.Object {
 object OAuthLogin {
   @scala.inline
   def apply(redirect_url: java.lang.String): OAuthLogin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redirect_url")(redirect_url)
+    val __obj = js.Dynamic.literal(redirect_url = redirect_url)
+  
     __obj.asInstanceOf[OAuthLogin]
   }
 }

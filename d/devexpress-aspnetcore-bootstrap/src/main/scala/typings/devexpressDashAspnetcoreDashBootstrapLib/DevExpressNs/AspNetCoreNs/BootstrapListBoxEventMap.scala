@@ -37,22 +37,8 @@ object BootstrapListBoxEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapListBoxEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("customHighlighting")(customHighlighting)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("itemDoubleClick")(itemDoubleClick)
-    __obj.updateDynamic("itemFiltering")(itemFiltering)
-    __obj.updateDynamic("keyDown")(keyDown)
-    __obj.updateDynamic("keyPress")(keyPress)
-    __obj.updateDynamic("keyUp")(keyUp)
-    __obj.updateDynamic("lostFocus")(lostFocus)
-    __obj.updateDynamic("selectedIndexChanged")(selectedIndexChanged)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, callbackError = callbackError, customHighlighting = customHighlighting, endCallback = endCallback, gotFocus = gotFocus, init = init, itemDoubleClick = itemDoubleClick, itemFiltering = itemFiltering, keyDown = keyDown, keyPress = keyPress, keyUp = keyUp, lostFocus = lostFocus, selectedIndexChanged = selectedIndexChanged, validation = validation, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[BootstrapListBoxEventMap]
   }
 }

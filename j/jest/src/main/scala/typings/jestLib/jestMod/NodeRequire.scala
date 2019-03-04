@@ -28,9 +28,8 @@ object NodeRequire {
     requireActual: js.Function1[java.lang.String, js.Any],
     requireMock: js.Function1[java.lang.String, js.Any]
   ): NodeRequire = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireActual")(requireActual)
-    __obj.updateDynamic("requireMock")(requireMock)
+    val __obj = js.Dynamic.literal(requireActual = requireActual, requireMock = requireMock)
+  
     __obj.asInstanceOf[NodeRequire]
   }
 }

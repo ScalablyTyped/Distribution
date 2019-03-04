@@ -42,8 +42,7 @@ object textToAudioOptions {
     success: js.Function1[/* res */ textToAudioResponse, scala.Unit] = null,
     vol: java.lang.String = null
   ): textToAudioOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tex")(tex)
+    val __obj = js.Dynamic.literal(tex = tex)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (ctp != null) __obj.updateDynamic("ctp")(ctp.asInstanceOf[js.Any])
     if (fail != null) __obj.updateDynamic("fail")(fail)

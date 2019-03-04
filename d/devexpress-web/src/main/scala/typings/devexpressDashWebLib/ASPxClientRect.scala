@@ -45,13 +45,8 @@ object ASPxClientRect {
     GetTop: js.Function0[scala.Double],
     GetWidth: js.Function0[scala.Double]
   ): ASPxClientRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBottom")(GetBottom)
-    __obj.updateDynamic("GetHeight")(GetHeight)
-    __obj.updateDynamic("GetLeft")(GetLeft)
-    __obj.updateDynamic("GetRight")(GetRight)
-    __obj.updateDynamic("GetTop")(GetTop)
-    __obj.updateDynamic("GetWidth")(GetWidth)
+    val __obj = js.Dynamic.literal(GetBottom = GetBottom, GetHeight = GetHeight, GetLeft = GetLeft, GetRight = GetRight, GetTop = GetTop, GetWidth = GetWidth)
+  
     __obj.asInstanceOf[ASPxClientRect]
   }
 }

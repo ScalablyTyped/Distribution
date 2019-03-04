@@ -44,12 +44,8 @@ object ImageResizeModeStatic {
     repeat: ImageResizeMode,
     stretch: ImageResizeMode
   ): ImageResizeModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("contain")(contain)
-    __obj.updateDynamic("cover")(cover)
-    __obj.updateDynamic("repeat")(repeat)
-    __obj.updateDynamic("stretch")(stretch)
+    val __obj = js.Dynamic.literal(center = center, contain = contain, cover = cover, repeat = repeat, stretch = stretch)
+  
     __obj.asInstanceOf[ImageResizeModeStatic]
   }
 }

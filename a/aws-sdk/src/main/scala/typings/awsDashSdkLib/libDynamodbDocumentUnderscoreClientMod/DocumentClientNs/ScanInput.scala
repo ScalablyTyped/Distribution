@@ -89,8 +89,7 @@ object ScanInput {
     Select: Select = null,
     TotalSegments: js.UndefOr[ScanTotalSegments] = js.undefined
   ): ScanInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(TableName = TableName)
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
     if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
     if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)

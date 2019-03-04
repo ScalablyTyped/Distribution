@@ -14,10 +14,8 @@ trait Anon_Columns extends js.Object {
 object Anon_Columns {
   @scala.inline
   def apply(columns: scala.Double, margin: java.lang.String, width: java.lang.String): Anon_Columns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("margin")(margin)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(columns = columns, margin = margin, width = width)
+  
     __obj.asInstanceOf[Anon_Columns]
   }
 }

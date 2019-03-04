@@ -20,9 +20,7 @@ object Binding {
     args: js.Object = null,
     routingPattern: java.lang.String = null
   ): Binding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], source = source)
     if (args != null) __obj.updateDynamic("args")(args)
     if (routingPattern != null) __obj.updateDynamic("routingPattern")(routingPattern)
     __obj.asInstanceOf[Binding]

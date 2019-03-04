@@ -32,11 +32,8 @@ object _Impl {
     title: java.lang.String,
     trigger: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accordion")(accordion)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(accordion = accordion, content = content, title = title, trigger = trigger)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

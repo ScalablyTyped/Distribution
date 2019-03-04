@@ -14,10 +14,8 @@ trait Anon_Query extends js.Object {
 object Anon_Query {
   @scala.inline
   def apply(query: js.Any, scene: java.lang.String, shareTicket: java.lang.String): Anon_Query = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("shareTicket")(shareTicket)
+    val __obj = js.Dynamic.literal(query = query, scene = scene, shareTicket = shareTicket)
+  
     __obj.asInstanceOf[Anon_Query]
   }
 }

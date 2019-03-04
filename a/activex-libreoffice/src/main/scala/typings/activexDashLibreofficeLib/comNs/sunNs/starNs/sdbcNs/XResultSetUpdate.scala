@@ -63,16 +63,8 @@ object XResultSetUpdate {
     release: js.Function0[scala.Unit],
     updateRow: js.Function0[scala.Unit]
   ): XResultSetUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancelRowUpdates")(cancelRowUpdates)
-    __obj.updateDynamic("deleteRow")(deleteRow)
-    __obj.updateDynamic("insertRow")(insertRow)
-    __obj.updateDynamic("moveToCurrentRow")(moveToCurrentRow)
-    __obj.updateDynamic("moveToInsertRow")(moveToInsertRow)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateRow")(updateRow)
+    val __obj = js.Dynamic.literal(acquire = acquire, cancelRowUpdates = cancelRowUpdates, deleteRow = deleteRow, insertRow = insertRow, moveToCurrentRow = moveToCurrentRow, moveToInsertRow = moveToInsertRow, queryInterface = queryInterface, release = release, updateRow = updateRow)
+  
     __obj.asInstanceOf[XResultSetUpdate]
   }
 }

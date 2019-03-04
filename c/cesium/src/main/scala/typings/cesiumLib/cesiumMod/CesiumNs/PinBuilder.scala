@@ -30,11 +30,8 @@ object PinBuilder {
       stdLib.HTMLCanvasElement | js.Promise[stdLib.HTMLCanvasElement]
     ]
   ): PinBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromColor")(fromColor)
-    __obj.updateDynamic("fromMakiIconId")(fromMakiIconId)
-    __obj.updateDynamic("fromText")(fromText)
-    __obj.updateDynamic("fromUrl")(fromUrl)
+    val __obj = js.Dynamic.literal(fromColor = fromColor, fromMakiIconId = fromMakiIconId, fromText = fromText, fromUrl = fromUrl)
+  
     __obj.asInstanceOf[PinBuilder]
   }
 }

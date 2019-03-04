@@ -19,11 +19,8 @@ object Equation {
     solveFor: js.Function1[java.lang.String, Fraction | js.Array[Fraction] | js.Array[scala.Double]],
     toString: js.Function0[java.lang.String]
   ): Equation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lhs")(lhs)
-    __obj.updateDynamic("rhs")(rhs)
-    __obj.updateDynamic("solveFor")(solveFor)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(lhs = lhs, rhs = rhs, solveFor = solveFor, toString = toString)
+  
     __obj.asInstanceOf[Equation]
   }
 }

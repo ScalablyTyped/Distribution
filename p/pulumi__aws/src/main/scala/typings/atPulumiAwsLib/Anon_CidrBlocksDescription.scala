@@ -38,10 +38,7 @@ object Anon_CidrBlocksDescription {
     securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     self: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_CidrBlocksDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
     if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks.asInstanceOf[js.Any])

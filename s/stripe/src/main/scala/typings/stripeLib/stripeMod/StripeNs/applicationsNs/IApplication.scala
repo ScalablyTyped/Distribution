@@ -21,9 +21,8 @@ trait IApplication
 object IApplication {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String, `object`: stripeLib.stripeLibStrings.application): IApplication = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IApplication]
   }
 }

@@ -22,12 +22,8 @@ object SelectSingle {
     setId: js.Function1[java.lang.String, SelectSingle],
     setName: js.Function1[java.lang.String, SelectSingle]
   ): SelectSingle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOption")(addOption)
-    __obj.updateDynamic("setAllowOverride")(setAllowOverride)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addOption = addOption, setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName)
+  
     __obj.asInstanceOf[SelectSingle]
   }
 }

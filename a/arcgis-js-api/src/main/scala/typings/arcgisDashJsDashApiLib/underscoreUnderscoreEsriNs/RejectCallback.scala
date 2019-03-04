@@ -23,10 +23,7 @@ object RejectCallback {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     error: js.Any = null
   ): RejectCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[RejectCallback]
   }

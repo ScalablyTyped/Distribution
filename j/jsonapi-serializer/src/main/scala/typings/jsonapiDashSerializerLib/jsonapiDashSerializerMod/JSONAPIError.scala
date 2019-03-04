@@ -12,8 +12,8 @@ trait JSONAPIError extends js.Object {
 object JSONAPIError {
   @scala.inline
   def apply(errors: js.Array[_]): JSONAPIError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(errors = errors)
+  
     __obj.asInstanceOf[JSONAPIError]
   }
 }

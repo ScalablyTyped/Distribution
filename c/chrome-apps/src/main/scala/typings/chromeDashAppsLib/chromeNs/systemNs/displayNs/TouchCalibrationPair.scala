@@ -18,9 +18,8 @@ trait TouchCalibrationPair extends js.Object {
 object TouchCalibrationPair {
   @scala.inline
   def apply(displayPoint: Point, touchPoint: Point): TouchCalibrationPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayPoint")(displayPoint)
-    __obj.updateDynamic("touchPoint")(touchPoint)
+    val __obj = js.Dynamic.literal(displayPoint = displayPoint, touchPoint = touchPoint)
+  
     __obj.asInstanceOf[TouchCalibrationPair]
   }
 }

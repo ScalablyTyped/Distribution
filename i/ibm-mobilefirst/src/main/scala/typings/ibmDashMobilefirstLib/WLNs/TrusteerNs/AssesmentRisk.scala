@@ -20,11 +20,8 @@ object AssesmentRisk {
     name: java.lang.String,
     value: scala.Double
   ): AssesmentRisk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalData")(additionalData)
-    __obj.updateDynamic("lastCalculated")(lastCalculated)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(additionalData = additionalData, lastCalculated = lastCalculated, name = name, value = value)
+  
     __obj.asInstanceOf[AssesmentRisk]
   }
 }

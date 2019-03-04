@@ -37,16 +37,8 @@ object ILookupPropertyType {
     ID: java.lang.String,
     LocalizedToData: js.Function1[java.lang.String, js.Any]
   ): ILookupPropertyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginValidateNormalizeConvert")(BeginValidateNormalizeConvert)
-    __obj.updateDynamic("DataToLocalized")(DataToLocalized)
-    __obj.updateDynamic("GetImageSource")(GetImageSource)
-    __obj.updateDynamic("GetIsLimitedToList")(GetIsLimitedToList)
-    __obj.updateDynamic("GetItems")(GetItems)
-    __obj.updateDynamic("GetSerializableLookupPropType")(GetSerializableLookupPropType)
-    __obj.updateDynamic("GetStyleId")(GetStyleId)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LocalizedToData")(LocalizedToData)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, DataToLocalized = DataToLocalized, GetImageSource = GetImageSource, GetIsLimitedToList = GetIsLimitedToList, GetItems = GetItems, GetSerializableLookupPropType = GetSerializableLookupPropType, GetStyleId = GetStyleId, ID = ID, LocalizedToData = LocalizedToData)
+  
     __obj.asInstanceOf[ILookupPropertyType]
   }
 }

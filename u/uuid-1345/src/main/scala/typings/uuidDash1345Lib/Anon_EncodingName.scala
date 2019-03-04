@@ -18,10 +18,8 @@ object Anon_EncodingName {
     name: java.lang.String,
     namespace: UuidTypes
   ): Anon_EncodingName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding, name = name, namespace = namespace.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EncodingName]
   }
 }

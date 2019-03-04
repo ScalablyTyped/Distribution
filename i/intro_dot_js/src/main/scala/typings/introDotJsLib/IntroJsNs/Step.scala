@@ -30,8 +30,7 @@ object Step {
     scrollTo: introDotJsLib.introDotJsLibStrings.off | introDotJsLib.introDotJsLibStrings.tooltip | introDotJsLib.introDotJsLibStrings.element = null,
     tooltipClass: java.lang.String = null
   ): Step = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intro")(intro)
+    val __obj = js.Dynamic.literal(intro = intro)
     if (!js.isUndefined(disableInteraction)) __obj.updateDynamic("disableInteraction")(disableInteraction)
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (highlightClass != null) __obj.updateDynamic("highlightClass")(highlightClass)

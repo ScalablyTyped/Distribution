@@ -27,12 +27,8 @@ object QuickActionDescribeInfo {
     targetRecordTypeId: java.lang.String,
     targetSobjectType: java.lang.String
   ): QuickActionDescribeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextSobjectType")(contextSobjectType)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("targetParentField")(targetParentField)
-    __obj.updateDynamic("targetRecordTypeId")(targetRecordTypeId)
-    __obj.updateDynamic("targetSobjectType")(targetSobjectType)
+    val __obj = js.Dynamic.literal(contextSobjectType = contextSobjectType, layout = layout, targetParentField = targetParentField, targetRecordTypeId = targetRecordTypeId, targetSobjectType = targetSobjectType)
+  
     __obj.asInstanceOf[QuickActionDescribeInfo]
   }
 }

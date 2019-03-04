@@ -24,8 +24,7 @@ object LinearComponentProps {
     `type`: chartDotJsLib.chartDotJsMod.ChartNs.ChartType = null,
     width: scala.Int | scala.Double = null
   ): LinearComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (datasetKeyProvider != null) __obj.updateDynamic("datasetKeyProvider")(datasetKeyProvider)
     if (getDatasetAtEvent != null) __obj.updateDynamic("getDatasetAtEvent")(getDatasetAtEvent)
     if (getElementAtEvent != null) __obj.updateDynamic("getElementAtEvent")(getElementAtEvent)

@@ -101,16 +101,8 @@ object MovementMethod {
       scala.Boolean
     ]
   ): MovementMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canSelectArbitrarily")(canSelectArbitrarily)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("onGenericMotionEvent")(onGenericMotionEvent)
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
-    __obj.updateDynamic("onKeyOther")(onKeyOther)
-    __obj.updateDynamic("onKeyUp")(onKeyUp)
-    __obj.updateDynamic("onTakeFocus")(onTakeFocus)
-    __obj.updateDynamic("onTouchEvent")(onTouchEvent)
-    __obj.updateDynamic("onTrackballEvent")(onTrackballEvent)
+    val __obj = js.Dynamic.literal(canSelectArbitrarily = canSelectArbitrarily, initialize = initialize, onGenericMotionEvent = onGenericMotionEvent, onKeyDown = onKeyDown, onKeyOther = onKeyOther, onKeyUp = onKeyUp, onTakeFocus = onTakeFocus, onTouchEvent = onTouchEvent, onTrackballEvent = onTrackballEvent)
+  
     __obj.asInstanceOf[MovementMethod]
   }
 }

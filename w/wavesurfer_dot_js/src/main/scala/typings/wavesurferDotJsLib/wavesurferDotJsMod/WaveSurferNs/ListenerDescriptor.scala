@@ -18,10 +18,8 @@ object ListenerDescriptor {
     name: java.lang.String,
     un: js.Function0[scala.Unit]
   ): ListenerDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("un")(un)
+    val __obj = js.Dynamic.literal(callback = callback, name = name, un = un)
+  
     __obj.asInstanceOf[ListenerDescriptor]
   }
 }

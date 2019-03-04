@@ -14,9 +14,8 @@ trait Anon_ApplyExtend extends js.Object {
 object Anon_ApplyExtend {
   @scala.inline
   def apply(apply: hapiLib.hapiLibNumbers.`true`, extend: hapiLib.hapiLibNumbers.`true`): Anon_ApplyExtend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("extend")(extend)
+    val __obj = js.Dynamic.literal(apply = apply, extend = extend)
+  
     __obj.asInstanceOf[Anon_ApplyExtend]
   }
 }

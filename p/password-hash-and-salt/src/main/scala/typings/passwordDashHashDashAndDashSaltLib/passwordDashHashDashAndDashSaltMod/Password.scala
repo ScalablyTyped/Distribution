@@ -26,9 +26,8 @@ object Password {
       scala.Unit
     ]
   ): Password = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("verifyAgainst")(verifyAgainst)
+    val __obj = js.Dynamic.literal(hash = hash, verifyAgainst = verifyAgainst)
+  
     __obj.asInstanceOf[Password]
   }
 }

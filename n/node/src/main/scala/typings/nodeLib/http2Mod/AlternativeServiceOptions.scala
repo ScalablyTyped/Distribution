@@ -12,8 +12,8 @@ trait AlternativeServiceOptions extends js.Object {
 object AlternativeServiceOptions {
   @scala.inline
   def apply(origin: scala.Double | java.lang.String | nodeLib.urlMod.URL): AlternativeServiceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AlternativeServiceOptions]
   }
 }

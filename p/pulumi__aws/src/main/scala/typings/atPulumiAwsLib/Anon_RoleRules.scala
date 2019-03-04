@@ -16,9 +16,8 @@ object Anon_RoleRules {
     role: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_DestinationFilter]]]
   ): Anon_RoleRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_RoleRules]
   }
 }

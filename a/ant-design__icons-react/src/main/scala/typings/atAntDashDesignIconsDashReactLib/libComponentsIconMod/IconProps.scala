@@ -24,7 +24,8 @@ object IconProps {
     secondaryColor: java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)

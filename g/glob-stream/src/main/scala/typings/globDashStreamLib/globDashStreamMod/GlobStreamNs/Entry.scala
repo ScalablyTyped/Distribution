@@ -14,10 +14,8 @@ trait Entry extends js.Object {
 object Entry {
   @scala.inline
   def apply(base: java.lang.String, cwd: java.lang.String, path: java.lang.String): Entry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("cwd")(cwd)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(base = base, cwd = cwd, path = path)
+  
     __obj.asInstanceOf[Entry]
   }
 }

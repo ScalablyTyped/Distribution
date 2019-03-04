@@ -24,13 +24,8 @@ object Results {
     missing: js.Array[java.lang.String],
     using: js.Array[java.lang.String]
   ): Results = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencies")(dependencies)
-    __obj.updateDynamic("devDependencies")(devDependencies)
-    __obj.updateDynamic("invalidDirs")(invalidDirs)
-    __obj.updateDynamic("invalidFiles")(invalidFiles)
-    __obj.updateDynamic("missing")(missing)
-    __obj.updateDynamic("using")(using)
+    val __obj = js.Dynamic.literal(dependencies = dependencies, devDependencies = devDependencies, invalidDirs = invalidDirs, invalidFiles = invalidFiles, missing = missing, using = using)
+  
     __obj.asInstanceOf[Results]
   }
 }

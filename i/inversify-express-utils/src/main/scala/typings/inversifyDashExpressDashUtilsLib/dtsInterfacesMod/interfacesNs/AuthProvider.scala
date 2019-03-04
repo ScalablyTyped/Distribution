@@ -23,8 +23,8 @@ object AuthProvider {
       js.Promise[Principal]
     ]
   ): AuthProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUser")(getUser)
+    val __obj = js.Dynamic.literal(getUser = getUser)
+  
     __obj.asInstanceOf[AuthProvider]
   }
 }

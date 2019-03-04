@@ -32,13 +32,8 @@ object Info {
     schemes: org.scalablytyped.runtime.StringDictionary[js.Any],
     tiletypes: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formats")(formats)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("maps")(maps)
-    __obj.updateDynamic("resolutions")(resolutions)
-    __obj.updateDynamic("schemes")(schemes)
-    __obj.updateDynamic("tiletypes")(tiletypes)
+    val __obj = js.Dynamic.literal(formats = formats, languages = languages, maps = maps, resolutions = resolutions, schemes = schemes, tiletypes = tiletypes)
+  
     __obj.asInstanceOf[Info]
   }
 }

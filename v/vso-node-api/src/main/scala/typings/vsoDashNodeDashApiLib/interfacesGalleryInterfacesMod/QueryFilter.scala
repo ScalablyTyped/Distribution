@@ -47,14 +47,8 @@ object QueryFilter {
     sortBy: scala.Double,
     sortOrder: scala.Double
   ): QueryFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("criteria")(criteria)
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("pageNumber")(pageNumber)
-    __obj.updateDynamic("pageSize")(pageSize)
-    __obj.updateDynamic("pagingToken")(pagingToken)
-    __obj.updateDynamic("sortBy")(sortBy)
-    __obj.updateDynamic("sortOrder")(sortOrder)
+    val __obj = js.Dynamic.literal(criteria = criteria, direction = direction, pageNumber = pageNumber, pageSize = pageSize, pagingToken = pagingToken, sortBy = sortBy, sortOrder = sortOrder)
+  
     __obj.asInstanceOf[QueryFilter]
   }
 }

@@ -113,11 +113,8 @@ object EndpointDescriptor {
       ]
     ] = null
   ): EndpointDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("extra_data")(extra_data)
-    __obj.updateDynamic("maximumPacketSize")(maximumPacketSize)
+    val __obj = js.Dynamic.literal(address = address, direction = direction.asInstanceOf[js.Any], extra_data = extra_data, maximumPacketSize = maximumPacketSize)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(pollingInterval)) __obj.updateDynamic("pollingInterval")(pollingInterval)
     if (synchronization != null) __obj.updateDynamic("synchronization")(synchronization.asInstanceOf[js.Any])
     if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])

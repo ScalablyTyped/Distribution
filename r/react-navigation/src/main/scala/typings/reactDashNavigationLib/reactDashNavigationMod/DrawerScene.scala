@@ -20,10 +20,7 @@ object DrawerScene {
     route: NavigationRoute[NavigationParams],
     tintColor: java.lang.String = null
   ): DrawerScene = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(focused = focused, index = index, route = route.asInstanceOf[js.Any])
     if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor)
     __obj.asInstanceOf[DrawerScene]
   }

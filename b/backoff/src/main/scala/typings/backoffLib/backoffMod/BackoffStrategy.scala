@@ -22,11 +22,11 @@ abstract class BackoffStrategy () extends js.Object {
     * Computes and returns the next backoff delay.
     */
   def next(): scala.Double = js.native
-  /* protected */ def `next_`(): scala.Double = js.native
+  /* protected */ def next_(): scala.Double = js.native
   /**
     * Resets the backoff delay to its initial value.
     */
   def reset(): scala.Unit = js.native
-  /* protected */ def `reset_`(): scala.Unit = js.native
+  /* protected */ def reset_(): scala.Unit = js.native
 }
 

@@ -50,10 +50,7 @@ object Runner {
     */
   /* functionName */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, scala.Unit]] = null
   ): Runner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withFailureHandler")(withFailureHandler)
-    __obj.updateDynamic("withSuccessHandler")(withSuccessHandler)
-    __obj.updateDynamic("withUserObject")(withUserObject)
+    val __obj = js.Dynamic.literal(withFailureHandler = withFailureHandler, withSuccessHandler = withSuccessHandler, withUserObject = withUserObject)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Runner]
   }

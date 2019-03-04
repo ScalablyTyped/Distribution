@@ -18,10 +18,8 @@ object Anon_DeletedRange {
     InUndoRedo: scala.Boolean,
     OldXMLNode: activexDashWordLib.WordNs.XMLNode
   ): Anon_DeletedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DeletedRange")(DeletedRange)
-    __obj.updateDynamic("InUndoRedo")(InUndoRedo)
-    __obj.updateDynamic("OldXMLNode")(OldXMLNode)
+    val __obj = js.Dynamic.literal(DeletedRange = DeletedRange, InUndoRedo = InUndoRedo, OldXMLNode = OldXMLNode)
+  
     __obj.asInstanceOf[Anon_DeletedRange]
   }
 }

@@ -30,13 +30,8 @@ object ContributionType {
     properties: org.scalablytyped.runtime.StringDictionary[ContributionPropertyDescription],
     visibleTo: js.Array[java.lang.String]
   ): ContributionType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("indexed")(indexed)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("visibleTo")(visibleTo)
+    val __obj = js.Dynamic.literal(description = description, id = id, indexed = indexed, name = name, properties = properties, visibleTo = visibleTo)
+  
     __obj.asInstanceOf[ContributionType]
   }
 }

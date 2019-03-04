@@ -24,8 +24,7 @@ object Anon_HostPathPort {
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     query: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_HostPathPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

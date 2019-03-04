@@ -79,21 +79,8 @@ object CloneOperationInformation {
     state: CloneOperationState,
     url: java.lang.String
   ): CloneOperationInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloneStatistics")(cloneStatistics)
-    __obj.updateDynamic("completionDate")(completionDate)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("destinationObject")(destinationObject)
-    __obj.updateDynamic("destinationPlan")(destinationPlan)
-    __obj.updateDynamic("destinationProject")(destinationProject)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("opId")(opId)
-    __obj.updateDynamic("resultObjectType")(resultObjectType)
-    __obj.updateDynamic("sourceObject")(sourceObject)
-    __obj.updateDynamic("sourcePlan")(sourcePlan)
-    __obj.updateDynamic("sourceProject")(sourceProject)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(cloneStatistics = cloneStatistics, completionDate = completionDate, creationDate = creationDate, destinationObject = destinationObject, destinationPlan = destinationPlan, destinationProject = destinationProject, message = message, opId = opId, resultObjectType = resultObjectType, sourceObject = sourceObject, sourcePlan = sourcePlan, sourceProject = sourceProject, state = state, url = url)
+  
     __obj.asInstanceOf[CloneOperationInformation]
   }
 }

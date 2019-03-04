@@ -13,8 +13,8 @@ trait Anon_Comment
 object Anon_Comment {
   @scala.inline
   def apply(comment: java.lang.String): Anon_Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
+    val __obj = js.Dynamic.literal(comment = comment)
+  
     __obj.asInstanceOf[Anon_Comment]
   }
 }

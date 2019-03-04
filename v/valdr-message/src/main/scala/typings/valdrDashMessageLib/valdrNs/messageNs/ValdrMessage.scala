@@ -48,13 +48,8 @@ object ValdrMessage {
     templateUrl: java.lang.String,
     translateAvailable: scala.Boolean
   ): ValdrMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addMessages")(addMessages)
-    __obj.updateDynamic("angularMessagesEnabled")(angularMessagesEnabled)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("setTemplate")(setTemplate)
-    __obj.updateDynamic("templateUrl")(templateUrl)
-    __obj.updateDynamic("translateAvailable")(translateAvailable)
+    val __obj = js.Dynamic.literal(addMessages = addMessages, angularMessagesEnabled = angularMessagesEnabled, getMessage = getMessage, setTemplate = setTemplate, templateUrl = templateUrl, translateAvailable = translateAvailable)
+  
     __obj.asInstanceOf[ValdrMessage]
   }
 }

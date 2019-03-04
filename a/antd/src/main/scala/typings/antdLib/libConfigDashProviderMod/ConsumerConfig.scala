@@ -12,8 +12,8 @@ trait ConsumerConfig extends js.Object {
 object ConsumerConfig {
   @scala.inline
   def apply(prefixCls: java.lang.String): ConsumerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prefixCls")(prefixCls)
+    val __obj = js.Dynamic.literal(prefixCls = prefixCls)
+  
     __obj.asInstanceOf[ConsumerConfig]
   }
 }

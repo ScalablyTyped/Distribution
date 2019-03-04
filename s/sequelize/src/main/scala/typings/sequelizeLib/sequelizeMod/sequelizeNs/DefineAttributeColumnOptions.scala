@@ -101,7 +101,8 @@ object DefineAttributeColumnOptions {
     validate: DefineValidateOptions = null,
     values: js.Array[java.lang.String] = null
   ): DefineAttributeColumnOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull)
     if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
     if (comment != null) __obj.updateDynamic("comment")(comment)

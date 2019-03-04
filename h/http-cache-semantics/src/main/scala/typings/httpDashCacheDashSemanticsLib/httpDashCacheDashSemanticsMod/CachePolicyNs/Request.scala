@@ -14,8 +14,7 @@ trait Request extends js.Object {
 object Request {
   @scala.inline
   def apply(headers: Headers, method: java.lang.String = null, url: java.lang.String = null): Request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
     if (method != null) __obj.updateDynamic("method")(method)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[Request]

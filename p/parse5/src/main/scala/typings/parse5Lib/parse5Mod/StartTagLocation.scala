@@ -23,14 +23,8 @@ object StartTagLocation {
     startLine: scala.Double,
     startOffset: scala.Double
   ): StartTagLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("endCol")(endCol)
-    __obj.updateDynamic("endLine")(endLine)
-    __obj.updateDynamic("endOffset")(endOffset)
-    __obj.updateDynamic("startCol")(startCol)
-    __obj.updateDynamic("startLine")(startLine)
-    __obj.updateDynamic("startOffset")(startOffset)
+    val __obj = js.Dynamic.literal(attrs = attrs, endCol = endCol, endLine = endLine, endOffset = endOffset, startCol = startCol, startLine = startLine, startOffset = startOffset)
+  
     __obj.asInstanceOf[StartTagLocation]
   }
 }

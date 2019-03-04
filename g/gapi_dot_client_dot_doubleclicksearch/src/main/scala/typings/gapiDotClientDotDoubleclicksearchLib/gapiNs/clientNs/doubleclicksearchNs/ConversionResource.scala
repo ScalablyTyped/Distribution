@@ -42,12 +42,8 @@ object ConversionResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UpdateAvailabilityResponse]
     ]
   ): ConversionResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateAvailability")(updateAvailability)
+    val __obj = js.Dynamic.literal(get = get, insert = insert, patch = patch, update = update, updateAvailability = updateAvailability)
+  
     __obj.asInstanceOf[ConversionResource]
   }
 }

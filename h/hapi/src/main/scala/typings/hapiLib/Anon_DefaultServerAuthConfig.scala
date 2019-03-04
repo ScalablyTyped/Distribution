@@ -12,8 +12,8 @@ trait Anon_DefaultServerAuthConfig extends js.Object {
 object Anon_DefaultServerAuthConfig {
   @scala.inline
   def apply(default: hapiLib.hapiMod.ServerAuthConfig): Anon_DefaultServerAuthConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(default = default)
+  
     __obj.asInstanceOf[Anon_DefaultServerAuthConfig]
   }
 }

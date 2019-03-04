@@ -30,11 +30,8 @@ object SignRequest {
     hash: Hash,
     signRequestId: chromeDashAppsLib.chromeNs.integer
   ): SignRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("signRequestId")(signRequestId)
+    val __obj = js.Dynamic.literal(certificate = certificate, digest = digest, hash = hash, signRequestId = signRequestId)
+  
     __obj.asInstanceOf[SignRequest]
   }
 }

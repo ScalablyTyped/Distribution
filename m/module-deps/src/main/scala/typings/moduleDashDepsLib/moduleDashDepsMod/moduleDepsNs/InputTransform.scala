@@ -18,9 +18,7 @@ object InputTransform {
     transform: java.lang.String | js.Function0[_],
     global: js.UndefOr[scala.Boolean] = js.undefined
   ): InputTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(options = options, transform = transform.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     __obj.asInstanceOf[InputTransform]
   }

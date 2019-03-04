@@ -37,7 +37,7 @@ abstract class ExternalSystem protected ()
   /**
     * @hidden
     */
-  var `communicator_`: js.Any = js.native
+  var communicator_ : js.Any = js.native
   /**
     * The name represents external system have connected.
     */
@@ -45,7 +45,7 @@ abstract class ExternalSystem protected ()
   /**
     * @hidden
     */
-  var `system_array_`: js.Any = js.native
+  var system_array_ : js.Any = js.native
   /**
     * Iterator to the first element.
     *

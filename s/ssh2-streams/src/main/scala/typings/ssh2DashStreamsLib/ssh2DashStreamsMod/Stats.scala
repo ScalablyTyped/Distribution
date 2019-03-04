@@ -32,20 +32,8 @@ object Stats {
     size: scala.Double,
     uid: scala.Double
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("isBlockDevice")(isBlockDevice)
-    __obj.updateDynamic("isCharacterDevice")(isCharacterDevice)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("isFIFO")(isFIFO)
-    __obj.updateDynamic("isFile")(isFile)
-    __obj.updateDynamic("isSocket")(isSocket)
-    __obj.updateDynamic("isSymbolicLink")(isSymbolicLink)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(atime = atime, gid = gid, isBlockDevice = isBlockDevice, isCharacterDevice = isCharacterDevice, isDirectory = isDirectory, isFIFO = isFIFO, isFile = isFile, isSocket = isSocket, isSymbolicLink = isSymbolicLink, mode = mode, mtime = mtime, size = size, uid = uid)
+  
     __obj.asInstanceOf[Stats]
   }
 }

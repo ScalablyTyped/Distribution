@@ -15,9 +15,8 @@ trait PredictionTerm extends js.Object {
 object PredictionTerm {
   @scala.inline
   def apply(offset: scala.Double, value: java.lang.String): PredictionTerm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(offset = offset, value = value)
+  
     __obj.asInstanceOf[PredictionTerm]
   }
 }

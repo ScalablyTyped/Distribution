@@ -12,8 +12,8 @@ trait EventListenerObject extends js.Object {
 object EventListenerObject {
   @scala.inline
   def apply(handleEvent: js.Function1[Event, scala.Unit]): EventListenerObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleEvent")(handleEvent)
+    val __obj = js.Dynamic.literal(handleEvent = handleEvent)
+  
     __obj.asInstanceOf[EventListenerObject]
   }
 }

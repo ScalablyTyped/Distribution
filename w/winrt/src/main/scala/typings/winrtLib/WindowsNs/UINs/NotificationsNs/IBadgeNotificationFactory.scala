@@ -14,8 +14,8 @@ object IBadgeNotificationFactory {
   def apply(
     createBadgeNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, BadgeNotification]
   ): IBadgeNotificationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBadgeNotification")(createBadgeNotification)
+    val __obj = js.Dynamic.literal(createBadgeNotification = createBadgeNotification)
+  
     __obj.asInstanceOf[IBadgeNotificationFactory]
   }
 }

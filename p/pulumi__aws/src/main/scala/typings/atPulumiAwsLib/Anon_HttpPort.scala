@@ -24,11 +24,7 @@ object Anon_HttpPort {
     originKeepaliveTimeout: scala.Int | scala.Double = null,
     originReadTimeout: scala.Int | scala.Double = null
   ): Anon_HttpPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpPort")(httpPort)
-    __obj.updateDynamic("httpsPort")(httpsPort)
-    __obj.updateDynamic("originProtocolPolicy")(originProtocolPolicy)
-    __obj.updateDynamic("originSslProtocols")(originSslProtocols)
+    val __obj = js.Dynamic.literal(httpPort = httpPort, httpsPort = httpsPort, originProtocolPolicy = originProtocolPolicy, originSslProtocols = originSslProtocols)
     if (originKeepaliveTimeout != null) __obj.updateDynamic("originKeepaliveTimeout")(originKeepaliveTimeout.asInstanceOf[js.Any])
     if (originReadTimeout != null) __obj.updateDynamic("originReadTimeout")(originReadTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HttpPort]

@@ -19,9 +19,8 @@ object RuleResult {
       java.lang.String
     ]
   ): RuleResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(parse = parse, serialize = serialize)
+  
     __obj.asInstanceOf[RuleResult]
   }
 }

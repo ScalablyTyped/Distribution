@@ -64,21 +64,8 @@ object TableBorder2 {
     TopLine: BorderLine2,
     VerticalLine: BorderLine2
   ): TableBorder2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BottomLine")(BottomLine)
-    __obj.updateDynamic("Distance")(Distance)
-    __obj.updateDynamic("HorizontalLine")(HorizontalLine)
-    __obj.updateDynamic("IsBottomLineValid")(IsBottomLineValid)
-    __obj.updateDynamic("IsDistanceValid")(IsDistanceValid)
-    __obj.updateDynamic("IsHorizontalLineValid")(IsHorizontalLineValid)
-    __obj.updateDynamic("IsLeftLineValid")(IsLeftLineValid)
-    __obj.updateDynamic("IsRightLineValid")(IsRightLineValid)
-    __obj.updateDynamic("IsTopLineValid")(IsTopLineValid)
-    __obj.updateDynamic("IsVerticalLineValid")(IsVerticalLineValid)
-    __obj.updateDynamic("LeftLine")(LeftLine)
-    __obj.updateDynamic("RightLine")(RightLine)
-    __obj.updateDynamic("TopLine")(TopLine)
-    __obj.updateDynamic("VerticalLine")(VerticalLine)
+    val __obj = js.Dynamic.literal(BottomLine = BottomLine, Distance = Distance, HorizontalLine = HorizontalLine, IsBottomLineValid = IsBottomLineValid, IsDistanceValid = IsDistanceValid, IsHorizontalLineValid = IsHorizontalLineValid, IsLeftLineValid = IsLeftLineValid, IsRightLineValid = IsRightLineValid, IsTopLineValid = IsTopLineValid, IsVerticalLineValid = IsVerticalLineValid, LeftLine = LeftLine, RightLine = RightLine, TopLine = TopLine, VerticalLine = VerticalLine)
+  
     __obj.asInstanceOf[TableBorder2]
   }
 }

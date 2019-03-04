@@ -24,7 +24,7 @@ class DedicatedWorkerServerConnector protected ()
   /**
     * @hidden
     */
-  var `worker_`: js.Any = js.native
+  var worker_ : js.Any = js.native
   /**
     * Connect to a server.
     *

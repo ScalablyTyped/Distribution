@@ -34,18 +34,8 @@ object Data {
     placement: Placement,
     styles: stdLib.CSSStyleDeclaration
   ): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowElement")(arrowElement)
-    __obj.updateDynamic("arrowStyles")(arrowStyles)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("boundaries")(boundaries)
-    __obj.updateDynamic("flipped")(flipped)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("offsets")(offsets)
-    __obj.updateDynamic("originalPlacement")(originalPlacement)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(arrowElement = arrowElement, arrowStyles = arrowStyles, attributes = attributes, boundaries = boundaries, flipped = flipped, hide = hide, instance = instance, offsets = offsets, originalPlacement = originalPlacement, placement = placement, styles = styles)
+  
     __obj.asInstanceOf[Data]
   }
 }

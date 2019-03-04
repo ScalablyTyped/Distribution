@@ -35,18 +35,8 @@ object SerializedMesh {
     uniqueId: scala.Double,
     worldMatrixFromCache: js.Any
   ): SerializedMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boxMaximum")(boxMaximum)
-    __obj.updateDynamic("boxMinimum")(boxMinimum)
-    __obj.updateDynamic("checkCollisions")(checkCollisions)
-    __obj.updateDynamic("geometryId")(geometryId.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sphereCenter")(sphereCenter)
-    __obj.updateDynamic("sphereRadius")(sphereRadius)
-    __obj.updateDynamic("subMeshes")(subMeshes)
-    __obj.updateDynamic("uniqueId")(uniqueId)
-    __obj.updateDynamic("worldMatrixFromCache")(worldMatrixFromCache)
+    val __obj = js.Dynamic.literal(boxMaximum = boxMaximum, boxMinimum = boxMinimum, checkCollisions = checkCollisions, geometryId = geometryId.asInstanceOf[js.Any], id = id, name = name, sphereCenter = sphereCenter, sphereRadius = sphereRadius, subMeshes = subMeshes, uniqueId = uniqueId, worldMatrixFromCache = worldMatrixFromCache)
+  
     __obj.asInstanceOf[SerializedMesh]
   }
 }

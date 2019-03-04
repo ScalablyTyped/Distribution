@@ -22,8 +22,7 @@ object AnswerCallbackQueryOptions {
     text: java.lang.String = null,
     url: java.lang.String = null
   ): AnswerCallbackQueryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback_query_id")(callback_query_id)
+    val __obj = js.Dynamic.literal(callback_query_id = callback_query_id)
     if (cache_time != null) __obj.updateDynamic("cache_time")(cache_time.asInstanceOf[js.Any])
     if (!js.isUndefined(show_alert)) __obj.updateDynamic("show_alert")(show_alert)
     if (text != null) __obj.updateDynamic("text")(text)

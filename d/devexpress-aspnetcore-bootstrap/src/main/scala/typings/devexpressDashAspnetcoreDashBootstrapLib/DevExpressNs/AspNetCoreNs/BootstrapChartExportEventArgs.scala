@@ -23,14 +23,8 @@ object BootstrapChartExportEventArgs {
     format: java.lang.String,
     sender: Control
   ): BootstrapChartExportEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, component = component, data = data, element = element, fileName = fileName, format = format, sender = sender)
+  
     __obj.asInstanceOf[BootstrapChartExportEventArgs]
   }
 }

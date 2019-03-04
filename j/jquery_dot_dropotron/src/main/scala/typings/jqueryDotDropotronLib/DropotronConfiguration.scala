@@ -138,28 +138,8 @@ object DropotronConfiguration {
     speed: java.lang.String,
     submenuClassPrefix: java.lang.String
   ): DropotronConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IEOffsetX")(IEOffsetX)
-    __obj.updateDynamic("IEOffsetY")(IEOffsetY)
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("baseZIndex")(baseZIndex)
-    __obj.updateDynamic("cloneOnDetach")(cloneOnDetach)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("expandMode")(expandMode)
-    __obj.updateDynamic("globalOffsetY")(globalOffsetY)
-    __obj.updateDynamic("hideDelay")(hideDelay)
-    __obj.updateDynamic("hoverDelay")(hoverDelay)
-    __obj.updateDynamic("menuClass")(menuClass)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("noOpenerFade")(noOpenerFade)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("openerActiveClass")(openerActiveClass)
-    __obj.updateDynamic("openerClass")(openerClass)
-    __obj.updateDynamic("selectorParent")(selectorParent)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("submenuClassPrefix")(submenuClassPrefix)
+    val __obj = js.Dynamic.literal(IEOffsetX = IEOffsetX, IEOffsetY = IEOffsetY, alignment = alignment, baseZIndex = baseZIndex, cloneOnDetach = cloneOnDetach, detach = detach, easing = easing, expandMode = expandMode, globalOffsetY = globalOffsetY, hideDelay = hideDelay, hoverDelay = hoverDelay, menuClass = menuClass, mode = mode, noOpenerFade = noOpenerFade, offsetX = offsetX, offsetY = offsetY, openerActiveClass = openerActiveClass, openerClass = openerClass, selectorParent = selectorParent, speed = speed, submenuClassPrefix = submenuClassPrefix)
+  
     __obj.asInstanceOf[DropotronConfiguration]
   }
 }

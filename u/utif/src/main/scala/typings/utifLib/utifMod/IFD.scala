@@ -20,10 +20,7 @@ object IFD {
     width: scala.Double,
     StringDictionary: /* property */ org.scalablytyped.runtime.StringDictionary[TiffTag | scala.Double | stdLib.Uint8Array] = null
   ): IFD = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(data = data, height = height, width = width)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IFD]
   }

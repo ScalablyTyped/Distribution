@@ -28,8 +28,7 @@ object KafkaOptions {
     sasl: SASLOptions = null,
     ssl: nodeLib.tlsMod.ConnectionOptions = null
   ): KafkaOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brokers")(brokers)
+    val __obj = js.Dynamic.literal(brokers = brokers)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)

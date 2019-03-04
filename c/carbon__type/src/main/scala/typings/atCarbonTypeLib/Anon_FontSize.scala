@@ -12,8 +12,8 @@ trait Anon_FontSize extends js.Object {
 object Anon_FontSize {
   @scala.inline
   def apply(fontSize: java.lang.String): Anon_FontSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontSize")(fontSize)
+    val __obj = js.Dynamic.literal(fontSize = fontSize)
+  
     __obj.asInstanceOf[Anon_FontSize]
   }
 }

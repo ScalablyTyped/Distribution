@@ -14,9 +14,7 @@ trait PaymentCurrencyAmount extends js.Object {
 object PaymentCurrencyAmount {
   @scala.inline
   def apply(currency: java.lang.String, value: java.lang.String, currencySystem: java.lang.String = null): PaymentCurrencyAmount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(currency = currency, value = value)
     if (currencySystem != null) __obj.updateDynamic("currencySystem")(currencySystem)
     __obj.asInstanceOf[PaymentCurrencyAmount]
   }

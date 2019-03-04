@@ -36,8 +36,7 @@ object CatTasksParams {
     requestTimeout: scala.Int | scala.Double = null,
     v: js.UndefOr[scala.Boolean] = js.undefined
   ): CatTasksParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed)

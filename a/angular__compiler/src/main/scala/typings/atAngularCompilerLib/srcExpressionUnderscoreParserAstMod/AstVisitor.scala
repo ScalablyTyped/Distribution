@@ -54,27 +54,7 @@ object AstVisitor {
     visitSafePropertyRead: js.Function2[SafePropertyRead, js.Any, js.Any],
     visit: js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], _] = null
   ): AstVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitBinary")(visitBinary)
-    __obj.updateDynamic("visitChain")(visitChain)
-    __obj.updateDynamic("visitConditional")(visitConditional)
-    __obj.updateDynamic("visitFunctionCall")(visitFunctionCall)
-    __obj.updateDynamic("visitImplicitReceiver")(visitImplicitReceiver)
-    __obj.updateDynamic("visitInterpolation")(visitInterpolation)
-    __obj.updateDynamic("visitKeyedRead")(visitKeyedRead)
-    __obj.updateDynamic("visitKeyedWrite")(visitKeyedWrite)
-    __obj.updateDynamic("visitLiteralArray")(visitLiteralArray)
-    __obj.updateDynamic("visitLiteralMap")(visitLiteralMap)
-    __obj.updateDynamic("visitLiteralPrimitive")(visitLiteralPrimitive)
-    __obj.updateDynamic("visitMethodCall")(visitMethodCall)
-    __obj.updateDynamic("visitNonNullAssert")(visitNonNullAssert)
-    __obj.updateDynamic("visitPipe")(visitPipe)
-    __obj.updateDynamic("visitPrefixNot")(visitPrefixNot)
-    __obj.updateDynamic("visitPropertyRead")(visitPropertyRead)
-    __obj.updateDynamic("visitPropertyWrite")(visitPropertyWrite)
-    __obj.updateDynamic("visitQuote")(visitQuote)
-    __obj.updateDynamic("visitSafeMethodCall")(visitSafeMethodCall)
-    __obj.updateDynamic("visitSafePropertyRead")(visitSafePropertyRead)
+    val __obj = js.Dynamic.literal(visitBinary = visitBinary, visitChain = visitChain, visitConditional = visitConditional, visitFunctionCall = visitFunctionCall, visitImplicitReceiver = visitImplicitReceiver, visitInterpolation = visitInterpolation, visitKeyedRead = visitKeyedRead, visitKeyedWrite = visitKeyedWrite, visitLiteralArray = visitLiteralArray, visitLiteralMap = visitLiteralMap, visitLiteralPrimitive = visitLiteralPrimitive, visitMethodCall = visitMethodCall, visitNonNullAssert = visitNonNullAssert, visitPipe = visitPipe, visitPrefixNot = visitPrefixNot, visitPropertyRead = visitPropertyRead, visitPropertyWrite = visitPropertyWrite, visitQuote = visitQuote, visitSafeMethodCall = visitSafeMethodCall, visitSafePropertyRead = visitSafePropertyRead)
     if (visit != null) __obj.updateDynamic("visit")(visit)
     __obj.asInstanceOf[AstVisitor]
   }

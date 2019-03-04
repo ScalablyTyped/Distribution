@@ -81,14 +81,8 @@ object FilterableComposition2C1 {
       ]
     ]
   ): FilterableComposition2C1[F, G, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("filterMap")(filterMap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("partitionMap")(partitionMap)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(compact = compact, filter = filter, filterMap = filterMap, map = map, partition = partition, partitionMap = partitionMap, separate = separate)
+  
     __obj.asInstanceOf[FilterableComposition2C1[F, G, LF]]
   }
 }

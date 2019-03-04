@@ -22,9 +22,7 @@ object Metadata {
     footnotes: js.Array[Footnote] = null,
     groups: js.Array[java.lang.String] = null
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(name = name, summary = summary)
     if (description != null) __obj.updateDynamic("description")(description)
     if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)
     if (groups != null) __obj.updateDynamic("groups")(groups)

@@ -13,8 +13,9 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(`false`: java.lang.String, `true`: java.lang.String): Anon_False = {
-    val __obj = js.Dynamic.literal(`false` = `false`, `true` = `true`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("false")(`false`)
+    __obj.updateDynamic("true")(`true`)
     __obj.asInstanceOf[Anon_False]
   }
 }

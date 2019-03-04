@@ -42,19 +42,8 @@ object XSSOAcceptorContext {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSSOAcceptorContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mechanism")(Mechanism)
-    __obj.updateDynamic("Mutual")(Mutual)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Target")(Target)
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getMechanism")(getMechanism)
-    __obj.updateDynamic("getMutual")(getMutual)
-    __obj.updateDynamic("getSource")(getSource)
-    __obj.updateDynamic("getTarget")(getTarget)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Mechanism = Mechanism, Mutual = Mutual, Source = Source, Target = Target, accept = accept, acquire = acquire, getMechanism = getMechanism, getMutual = getMutual, getSource = getSource, getTarget = getTarget, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSSOAcceptorContext]
   }
 }

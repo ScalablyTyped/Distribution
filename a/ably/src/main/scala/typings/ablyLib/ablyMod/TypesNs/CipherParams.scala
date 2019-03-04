@@ -15,11 +15,8 @@ trait CipherParams extends js.Object {
 object CipherParams {
   @scala.inline
   def apply(algorithm: java.lang.String, key: js.Any, keyLength: scala.Double, mode: java.lang.String): CipherParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyLength")(keyLength)
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, key = key, keyLength = keyLength, mode = mode)
+  
     __obj.asInstanceOf[CipherParams]
   }
 }

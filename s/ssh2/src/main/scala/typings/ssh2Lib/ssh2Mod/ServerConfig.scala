@@ -36,8 +36,7 @@ object ServerConfig {
     ident: java.lang.String = null,
     maxPacketSize: scala.Int | scala.Double = null
   ): ServerConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostKeys")(hostKeys)
+    val __obj = js.Dynamic.literal(hostKeys = hostKeys)
     if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
     if (banner != null) __obj.updateDynamic("banner")(banner)
     if (debug != null) __obj.updateDynamic("debug")(debug)

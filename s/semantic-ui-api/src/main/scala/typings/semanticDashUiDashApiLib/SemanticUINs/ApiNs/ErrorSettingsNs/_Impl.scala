@@ -77,20 +77,8 @@ object _Impl {
     statusMessage: java.lang.String,
     timeout: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("JSONParse")(JSONParse)
-    __obj.updateDynamic("beforeSend")(beforeSend)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("exitConditions")(exitConditions)
-    __obj.updateDynamic("legacyParameters")(legacyParameters)
-    __obj.updateDynamic("missingAction")(missingAction)
-    __obj.updateDynamic("missingSerialize")(missingSerialize)
-    __obj.updateDynamic("missingURL")(missingURL)
-    __obj.updateDynamic("noReturnedValue")(noReturnedValue)
-    __obj.updateDynamic("parseError")(parseError)
-    __obj.updateDynamic("requiredParameter")(requiredParameter)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(JSONParse = JSONParse, beforeSend = beforeSend, error = error, exitConditions = exitConditions, legacyParameters = legacyParameters, missingAction = missingAction, missingSerialize = missingSerialize, missingURL = missingURL, noReturnedValue = noReturnedValue, parseError = parseError, requiredParameter = requiredParameter, statusMessage = statusMessage, timeout = timeout)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

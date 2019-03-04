@@ -33,8 +33,7 @@ object FeatureSet {
     objectIdFieldName: java.lang.String = null,
     spatialReference: SpatialReference = null
   ): FeatureSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(features = features)
     if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)

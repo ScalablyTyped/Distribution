@@ -25,8 +25,7 @@ object GenerateSecretWithOtpAuthUrlOptions {
     qr_codes: js.UndefOr[scala.Boolean] = js.undefined,
     symbols: js.UndefOr[scala.Boolean] = js.undefined
   ): GenerateSecretWithOtpAuthUrlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("otpauth_url")(otpauth_url)
+    val __obj = js.Dynamic.literal(otpauth_url = otpauth_url)
     if (!js.isUndefined(google_auth_qr)) __obj.updateDynamic("google_auth_qr")(google_auth_qr)
     if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

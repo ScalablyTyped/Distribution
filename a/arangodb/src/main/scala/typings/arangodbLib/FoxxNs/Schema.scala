@@ -13,9 +13,8 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(isJoi: scala.Boolean, validate: js.Function1[js.Any, ValidationResult[js.Any]]): Schema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isJoi")(isJoi)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(isJoi = isJoi, validate = validate)
+  
     __obj.asInstanceOf[Schema]
   }
 }

@@ -34,21 +34,8 @@ object ProcessEvent {
     target: java.lang.String,
     `type`: java.lang.String
   ): ProcessEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("forced_root_block")(forced_root_block)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("get_inner")(get_inner)
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(content = content, forced_root_block = forced_root_block, format = format, get = get, get_inner = get_inner, isDefaultPrevented = isDefaultPrevented, isImmediatePropagationStopped = isImmediatePropagationStopped, isPropagationStopped = isPropagationStopped, node = node, preventDefault = preventDefault, selection = selection, stopImmediatePropagation = stopImmediatePropagation, stopPropagation = stopPropagation, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ProcessEvent]
   }
 }

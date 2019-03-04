@@ -31,8 +31,8 @@ object Anon_Bandwidth {
     x: java.lang.String | vegaDashTypingsLib.typesSpecTransformMod.TransformField = null,
     y: java.lang.String | vegaDashTypingsLib.typesSpecTransformMod.TransformField = null
   ): Anon_Bandwidth = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
     if (cellSize != null) __obj.updateDynamic("cellSize")(cellSize.asInstanceOf[js.Any])
     if (signal != null) __obj.updateDynamic("signal")(signal)

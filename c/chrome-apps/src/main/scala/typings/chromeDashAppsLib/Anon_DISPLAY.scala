@@ -16,9 +16,8 @@ object Anon_DISPLAY {
     DISPLAY: chromeDashAppsLib.chromeDashAppsLibStrings.display,
     SYSTEM: chromeDashAppsLib.chromeDashAppsLibStrings.system
   ): Anon_DISPLAY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DISPLAY")(DISPLAY)
-    __obj.updateDynamic("SYSTEM")(SYSTEM)
+    val __obj = js.Dynamic.literal(DISPLAY = DISPLAY, SYSTEM = SYSTEM)
+  
     __obj.asInstanceOf[Anon_DISPLAY]
   }
 }

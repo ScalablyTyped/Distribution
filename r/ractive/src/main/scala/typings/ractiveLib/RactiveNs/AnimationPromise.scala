@@ -18,11 +18,8 @@ object AnimationPromise {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     stop: js.Function0[scala.Unit]
   ): AnimationPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, stop = stop)
+  
     __obj.asInstanceOf[AnimationPromise]
   }
 }

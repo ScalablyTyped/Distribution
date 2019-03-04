@@ -28,9 +28,8 @@ object Anon_EnableManager {
     enable: scala.Boolean,
     manager: webgmeLib.webgmeLibStrings.memory | webgmeLib.webgmeLibStrings.redis
   ): Anon_EnableManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enable = enable, manager = manager.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EnableManager]
   }
 }

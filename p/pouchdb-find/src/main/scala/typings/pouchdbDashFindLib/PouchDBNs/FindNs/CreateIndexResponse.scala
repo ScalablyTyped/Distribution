@@ -12,8 +12,8 @@ trait CreateIndexResponse[Content /* <: js.Object */] extends js.Object {
 object CreateIndexResponse {
   @scala.inline
   def apply[Content /* <: js.Object */](result: java.lang.String): CreateIndexResponse[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[CreateIndexResponse[Content]]
   }
 }

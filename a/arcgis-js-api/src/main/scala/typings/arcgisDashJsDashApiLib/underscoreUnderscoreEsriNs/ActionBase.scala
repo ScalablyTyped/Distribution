@@ -69,13 +69,8 @@ object ActionBase {
     `type`: java.lang.String,
     visible: scala.Boolean
   ): ActionBase = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, className = className, disabled = disabled, id = id, title = title, visible = visible)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ActionBase]
   }
 }

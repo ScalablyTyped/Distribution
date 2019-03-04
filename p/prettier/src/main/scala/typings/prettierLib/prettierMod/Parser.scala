@@ -35,11 +35,7 @@ object Parser {
     hasPragma: js.Function1[/* text */ java.lang.String, scala.Boolean] = null,
     preprocess: js.Function2[/* text */ java.lang.String, /* options */ ParserOptions, java.lang.String] = null
   ): Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("astFormat")(astFormat)
-    __obj.updateDynamic("locEnd")(locEnd)
-    __obj.updateDynamic("locStart")(locStart)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(astFormat = astFormat, locEnd = locEnd, locStart = locStart, parse = parse)
     if (hasPragma != null) __obj.updateDynamic("hasPragma")(hasPragma)
     if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)
     __obj.asInstanceOf[Parser]

@@ -22,9 +22,7 @@ object Anon_CommentsComputedKey {
     computed: js.UndefOr[scala.Boolean] = js.undefined,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsComputedKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("pattern")(pattern)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], pattern = pattern)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (loc != null) __obj.updateDynamic("loc")(loc)

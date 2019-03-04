@@ -32,8 +32,7 @@ object Anon_AllowPickingAsynchronous {
     scale: scala.Int | scala.Double = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AllowPickingAsynchronous = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(allowPicking)) __obj.updateDynamic("allowPicking")(allowPicking)
     if (!js.isUndefined(asynchronous)) __obj.updateDynamic("asynchronous")(asynchronous)
     if (!js.isUndefined(debugShowBoundingVolume)) __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)

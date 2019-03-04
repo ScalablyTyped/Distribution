@@ -16,9 +16,8 @@ object IDeltaChange {
     delta: mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta,
     reversedDelta: mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta
   ): IDeltaChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("reversedDelta")(reversedDelta)
+    val __obj = js.Dynamic.literal(delta = delta, reversedDelta = reversedDelta)
+  
     __obj.asInstanceOf[IDeltaChange]
   }
 }

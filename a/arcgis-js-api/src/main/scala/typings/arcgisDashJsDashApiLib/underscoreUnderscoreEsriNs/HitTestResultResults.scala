@@ -30,12 +30,8 @@ object HitTestResultResults {
     mapPoint: Point,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): HitTestResultResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("graphic")(graphic)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("mapPoint")(mapPoint)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, graphic = graphic, hasOwnProperty = hasOwnProperty, mapPoint = mapPoint, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[HitTestResultResults]
   }
 }

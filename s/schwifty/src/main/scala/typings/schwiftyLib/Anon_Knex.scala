@@ -18,10 +18,8 @@ object Anon_Knex {
     migrationsDir: java.lang.String,
     models: js.Array[schwiftyLib.schwiftyMod.ModelClass]
   ): Anon_Knex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("knex")(knex.asInstanceOf[js.Any])
-    __obj.updateDynamic("migrationsDir")(migrationsDir)
-    __obj.updateDynamic("models")(models)
+    val __obj = js.Dynamic.literal(knex = knex.asInstanceOf[js.Any], migrationsDir = migrationsDir, models = models)
+  
     __obj.asInstanceOf[Anon_Knex]
   }
 }

@@ -13,9 +13,8 @@ trait ParseResponse extends js.Object {
 object ParseResponse {
   @scala.inline
   def apply(parsed: js.Array[java.lang.String], unparseable: js.Array[java.lang.String]): ParseResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parsed")(parsed)
-    __obj.updateDynamic("unparseable")(unparseable)
+    val __obj = js.Dynamic.literal(parsed = parsed, unparseable = unparseable)
+  
     __obj.asInstanceOf[ParseResponse]
   }
 }

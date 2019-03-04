@@ -22,12 +22,8 @@ object Anon_ConstExisting {
     path: atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node],
     scope: atBabelTraverseLib.atBabelTraverseMod.Scope
   ): Anon_ConstExisting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("existing")(existing)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(existing = existing, identifier = identifier, kind = kind.asInstanceOf[js.Any], path = path, scope = scope)
+  
     __obj.asInstanceOf[Anon_ConstExisting]
   }
 }

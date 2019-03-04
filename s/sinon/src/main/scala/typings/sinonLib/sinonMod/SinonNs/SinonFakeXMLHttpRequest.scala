@@ -106,27 +106,8 @@ object SinonFakeXMLHttpRequest {
     username: java.lang.String,
     withCredentials: scala.Boolean
   ): SinonFakeXMLHttpRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("autoRespond")(autoRespond)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("getAllResponseHeaders")(getAllResponseHeaders)
-    __obj.updateDynamic("getResponseHeader")(getResponseHeader)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("onerror")(onerror)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("requestBody")(requestBody)
-    __obj.updateDynamic("requestHeaders")(requestHeaders)
-    __obj.updateDynamic("respond")(respond)
-    __obj.updateDynamic("responseXML")(responseXML)
-    __obj.updateDynamic("setResponseBody")(setResponseBody)
-    __obj.updateDynamic("setResponseHeaders")(setResponseHeaders)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
-    __obj.updateDynamic("upload")(upload)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("username")(username)
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(async = async, autoRespond = autoRespond, error = error, getAllResponseHeaders = getAllResponseHeaders, getResponseHeader = getResponseHeader, method = method, onerror = onerror, password = password, requestBody = requestBody, requestHeaders = requestHeaders, respond = respond, responseXML = responseXML, setResponseBody = setResponseBody, setResponseHeaders = setResponseHeaders, status = status, statusText = statusText, upload = upload, url = url, username = username, withCredentials = withCredentials)
+  
     __obj.asInstanceOf[SinonFakeXMLHttpRequest]
   }
 }

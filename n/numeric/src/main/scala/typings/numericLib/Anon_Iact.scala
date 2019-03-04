@@ -24,13 +24,8 @@ object Anon_Iact {
     unconstrained_solution: Vector,
     value: Vector
   ): Anon_Iact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iact")(iact)
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("solution")(solution)
-    __obj.updateDynamic("unconstrained_solution")(unconstrained_solution)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(iact = iact, iterations = iterations, message = message, solution = solution, unconstrained_solution = unconstrained_solution, value = value)
+  
     __obj.asInstanceOf[Anon_Iact]
   }
 }

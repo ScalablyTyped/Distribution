@@ -18,9 +18,8 @@ object MapContextEvent {
     target: Map,
     `type`: mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextlost | mapboxDashGlLib.mapboxDashGlLibStrings.webglcontextrestored
   ): MapContextEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent, target = target)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextEvent]
   }
 }

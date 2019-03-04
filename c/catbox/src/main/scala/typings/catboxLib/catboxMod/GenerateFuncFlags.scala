@@ -12,8 +12,8 @@ trait GenerateFuncFlags extends js.Object {
 object GenerateFuncFlags {
   @scala.inline
   def apply(ttl: scala.Double): GenerateFuncFlags = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(ttl = ttl)
+  
     __obj.asInstanceOf[GenerateFuncFlags]
   }
 }

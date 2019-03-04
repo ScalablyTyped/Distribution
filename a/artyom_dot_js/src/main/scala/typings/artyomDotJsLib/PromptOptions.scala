@@ -26,9 +26,7 @@ object PromptOptions {
     onStartPrompt: js.Function = null,
     smart: js.UndefOr[scala.Boolean] = js.undefined
   ): PromptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("question")(question)
+    val __obj = js.Dynamic.literal(options = options, question = question)
     if (beforePrompt != null) __obj.updateDynamic("beforePrompt")(beforePrompt)
     if (onEndPrompt != null) __obj.updateDynamic("onEndPrompt")(onEndPrompt)
     if (onMatch != null) __obj.updateDynamic("onMatch")(onMatch)

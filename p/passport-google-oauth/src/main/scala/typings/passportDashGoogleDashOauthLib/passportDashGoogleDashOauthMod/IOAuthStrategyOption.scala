@@ -26,10 +26,7 @@ object IOAuthStrategyOption {
     sessionKey: java.lang.String = null,
     userAuthorizationURL: java.lang.String = null
   ): IOAuthStrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("consumerKey")(consumerKey)
-    __obj.updateDynamic("consumerSecret")(consumerSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, consumerKey = consumerKey, consumerSecret = consumerSecret)
     if (accessTokenURL != null) __obj.updateDynamic("accessTokenURL")(accessTokenURL)
     if (requestTokenURL != null) __obj.updateDynamic("requestTokenURL")(requestTokenURL)
     if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey)

@@ -105,22 +105,8 @@ object OrdersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[OrdersUpdateShipmentResponse]
     ]
   ): OrdersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acknowledge")(acknowledge)
-    __obj.updateDynamic("advancetestorder")(advancetestorder)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cancellineitem")(cancellineitem)
-    __obj.updateDynamic("createtestorder")(createtestorder)
-    __obj.updateDynamic("custombatch")(custombatch)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getbymerchantorderid")(getbymerchantorderid)
-    __obj.updateDynamic("gettestordertemplate")(gettestordertemplate)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("refund")(refund)
-    __obj.updateDynamic("returnlineitem")(returnlineitem)
-    __obj.updateDynamic("shiplineitems")(shiplineitems)
-    __obj.updateDynamic("updatemerchantorderid")(updatemerchantorderid)
-    __obj.updateDynamic("updateshipment")(updateshipment)
+    val __obj = js.Dynamic.literal(acknowledge = acknowledge, advancetestorder = advancetestorder, cancel = cancel, cancellineitem = cancellineitem, createtestorder = createtestorder, custombatch = custombatch, get = get, getbymerchantorderid = getbymerchantorderid, gettestordertemplate = gettestordertemplate, list = list, refund = refund, returnlineitem = returnlineitem, shiplineitems = shiplineitems, updatemerchantorderid = updatemerchantorderid, updateshipment = updateshipment)
+  
     __obj.asInstanceOf[OrdersResource]
   }
 }

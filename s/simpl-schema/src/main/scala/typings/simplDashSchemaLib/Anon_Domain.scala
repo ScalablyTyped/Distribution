@@ -34,18 +34,8 @@ object Anon_Domain {
     WeakDomain: stdLib.RegExp,
     ZipCode: stdLib.RegExp
   ): Anon_Domain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("Email")(Email)
-    __obj.updateDynamic("EmailWithTLD")(EmailWithTLD)
-    __obj.updateDynamic("IP")(IP)
-    __obj.updateDynamic("IPv4")(IPv4)
-    __obj.updateDynamic("IPv6")(IPv6)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Phone")(Phone)
-    __obj.updateDynamic("Url")(Url)
-    __obj.updateDynamic("WeakDomain")(WeakDomain)
-    __obj.updateDynamic("ZipCode")(ZipCode)
+    val __obj = js.Dynamic.literal(Domain = Domain, Email = Email, EmailWithTLD = EmailWithTLD, IP = IP, IPv4 = IPv4, IPv6 = IPv6, Id = Id, Phone = Phone, Url = Url, WeakDomain = WeakDomain, ZipCode = ZipCode)
+  
     __obj.asInstanceOf[Anon_Domain]
   }
 }

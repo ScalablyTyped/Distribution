@@ -13,9 +13,8 @@ trait DialogInputResult extends js.Object {
 object DialogInputResult {
   @scala.inline
   def apply(buttonType: chaynsLib.chaynsNs.dialogNs.buttonType, text: java.lang.String): DialogInputResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonType")(buttonType)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(buttonType = buttonType, text = text)
+  
     __obj.asInstanceOf[DialogInputResult]
   }
 }

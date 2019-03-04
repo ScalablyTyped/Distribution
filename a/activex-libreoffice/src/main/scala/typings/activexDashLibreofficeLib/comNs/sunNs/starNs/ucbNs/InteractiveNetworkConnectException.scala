@@ -20,11 +20,8 @@ object InteractiveNetworkConnectException {
     Message: java.lang.String,
     Server: java.lang.String
   ): InteractiveNetworkConnectException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Server")(Server)
+    val __obj = js.Dynamic.literal(Classification = Classification, Context = Context, Message = Message, Server = Server)
+  
     __obj.asInstanceOf[InteractiveNetworkConnectException]
   }
 }

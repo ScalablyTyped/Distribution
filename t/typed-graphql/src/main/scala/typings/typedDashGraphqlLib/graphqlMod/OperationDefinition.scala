@@ -30,10 +30,7 @@ object OperationDefinition {
     name: Name = null,
     variableDefinitions: js.Array[VariableDefinition] = null
   ): OperationDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("selectionSet")(selectionSet)
+    val __obj = js.Dynamic.literal(kind = kind, operation = operation, selectionSet = selectionSet)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (name != null) __obj.updateDynamic("name")(name)

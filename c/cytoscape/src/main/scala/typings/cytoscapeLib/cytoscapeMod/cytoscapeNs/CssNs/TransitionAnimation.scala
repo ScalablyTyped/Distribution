@@ -35,8 +35,11 @@ object TransitionAnimation {
     `transition-property`: java.lang.String,
     `transition-timing-function`: TransitionTimingFunction
   ): TransitionAnimation = {
-    val __obj = js.Dynamic.literal(`transition-delay` = `transition-delay`, `transition-duration` = `transition-duration`, `transition-property` = `transition-property`, `transition-timing-function` = `transition-timing-function`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transition-delay")(`transition-delay`)
+    __obj.updateDynamic("transition-duration")(`transition-duration`)
+    __obj.updateDynamic("transition-property")(`transition-property`)
+    __obj.updateDynamic("transition-timing-function")(`transition-timing-function`)
     __obj.asInstanceOf[TransitionAnimation]
   }
 }

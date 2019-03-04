@@ -19,9 +19,8 @@ trait LoaderError extends js.Object {
 object LoaderError {
   @scala.inline
   def apply(code: scala.Double, text: java.lang.String): LoaderError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(code = code, text = text)
+  
     __obj.asInstanceOf[LoaderError]
   }
 }

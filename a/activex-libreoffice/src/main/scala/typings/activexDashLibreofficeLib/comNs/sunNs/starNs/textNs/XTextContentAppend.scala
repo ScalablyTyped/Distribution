@@ -53,12 +53,8 @@ object XTextContentAppend {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextContentAppend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("appendTextContent")(appendTextContent)
-    __obj.updateDynamic("insertTextContentWithProperties")(insertTextContentWithProperties)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, appendTextContent = appendTextContent, insertTextContentWithProperties = insertTextContentWithProperties, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextContentAppend]
   }
 }

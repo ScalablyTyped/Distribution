@@ -30,15 +30,8 @@ object CodePipelineCloudWatchPipelineEvent {
     time: java.lang.String,
     version: java.lang.String
   ): CodePipelineCloudWatchPipelineEvent = {
-    val __obj = js.Dynamic.literal(`detail-type` = `detail-type`)
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(account = account, detail = detail, id = id, region = region, resources = resources, source = source, time = time, version = version)
+    __obj.updateDynamic("detail-type")(`detail-type`)
     __obj.asInstanceOf[CodePipelineCloudWatchPipelineEvent]
   }
 }

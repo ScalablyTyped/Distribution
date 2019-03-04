@@ -16,9 +16,8 @@ object CustomComponents {
     FooterComponent: js.Function1[storybookDashReadmeLib.Anon_Children, reactLib.reactMod.Global.JSXNs.Element],
     PreviewComponent: js.Function1[storybookDashReadmeLib.Anon_Children, reactLib.reactMod.Global.JSXNs.Element]
   ): CustomComponents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FooterComponent")(FooterComponent)
-    __obj.updateDynamic("PreviewComponent")(PreviewComponent)
+    val __obj = js.Dynamic.literal(FooterComponent = FooterComponent, PreviewComponent = PreviewComponent)
+  
     __obj.asInstanceOf[CustomComponents]
   }
 }

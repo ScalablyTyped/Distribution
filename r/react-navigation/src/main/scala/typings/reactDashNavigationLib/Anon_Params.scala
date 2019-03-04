@@ -16,8 +16,7 @@ object Anon_Params {
     path: java.lang.String,
     params: reactDashNavigationLib.reactDashNavigationMod.NavigationParams = null
   ): Anon_Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[Anon_Params]
   }

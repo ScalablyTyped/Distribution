@@ -28,15 +28,8 @@ object Anon_BOX {
     PLANE: scala.Double,
     SPHERE: scala.Double
   ): Anon_BOX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOX")(BOX)
-    __obj.updateDynamic("COMPOUND")(COMPOUND)
-    __obj.updateDynamic("CONVEXPOLYHEDRON")(CONVEXPOLYHEDRON)
-    __obj.updateDynamic("CYLINDER")(CYLINDER)
-    __obj.updateDynamic("HEIGHTFIELD")(HEIGHTFIELD)
-    __obj.updateDynamic("PARTICLE")(PARTICLE)
-    __obj.updateDynamic("PLANE")(PLANE)
-    __obj.updateDynamic("SPHERE")(SPHERE)
+    val __obj = js.Dynamic.literal(BOX = BOX, COMPOUND = COMPOUND, CONVEXPOLYHEDRON = CONVEXPOLYHEDRON, CYLINDER = CYLINDER, HEIGHTFIELD = HEIGHTFIELD, PARTICLE = PARTICLE, PLANE = PLANE, SPHERE = SPHERE)
+  
     __obj.asInstanceOf[Anon_BOX]
   }
 }

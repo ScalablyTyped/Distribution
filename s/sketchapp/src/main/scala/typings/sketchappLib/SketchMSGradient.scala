@@ -28,14 +28,7 @@ object SketchMSGradient {
     to: Anon_X,
     do_objectID: java.lang.String = null
   ): SketchMSGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("elipseLength")(elipseLength)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("gradientType")(gradientType)
-    __obj.updateDynamic("shouldSmoothenOpacity")(shouldSmoothenOpacity)
-    __obj.updateDynamic("stops")(stops)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(_class = _class, elipseLength = elipseLength, from = from, gradientType = gradientType, shouldSmoothenOpacity = shouldSmoothenOpacity, stops = stops, to = to)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSGradient]
   }

@@ -13,8 +13,8 @@ trait IInfiniteScrollAction extends js.Object {
 object IInfiniteScrollAction {
   @scala.inline
   def apply(payload: InfiniteScrollEvent, `type`: java.lang.String): IInfiniteScrollAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IInfiniteScrollAction]
   }
 }

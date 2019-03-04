@@ -41,9 +41,7 @@ object Anon_AltFieldsKeyOauthtokenPackageName {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPackageName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageName")(packageName)
-    __obj.updateDynamic("sku")(sku)
+    val __obj = js.Dynamic.literal(packageName = packageName, sku = sku)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

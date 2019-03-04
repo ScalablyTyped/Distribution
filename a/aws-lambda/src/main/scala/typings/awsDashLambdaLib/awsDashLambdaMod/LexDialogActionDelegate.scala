@@ -16,8 +16,8 @@ object LexDialogActionDelegate {
     slots: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null],
     `type`: awsDashLambdaLib.awsDashLambdaLibStrings.Delegate
   ): LexDialogActionDelegate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("slots")(slots)
+    val __obj = js.Dynamic.literal(slots = slots)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LexDialogActionDelegate]
   }
 }

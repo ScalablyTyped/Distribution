@@ -13,8 +13,8 @@ trait TransitInfo extends js.Object {
 object TransitInfo {
   @scala.inline
   def apply(updatedTime: java.lang.String): TransitInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("updatedTime")(updatedTime)
+    val __obj = js.Dynamic.literal(updatedTime = updatedTime)
+  
     __obj.asInstanceOf[TransitInfo]
   }
 }

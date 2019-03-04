@@ -12,8 +12,8 @@ trait Anon_Pick[T /* <: colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
 object Anon_Pick {
   @scala.inline
   def apply[T /* <: colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette */](pick: js.Array[T]): Anon_Pick[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pick")(pick)
+    val __obj = js.Dynamic.literal(pick = pick)
+  
     __obj.asInstanceOf[Anon_Pick[T]]
   }
 }

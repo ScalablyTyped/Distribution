@@ -18,9 +18,8 @@ object Proxy {
     thenReturn: js.Function1[js.Any, Proxy[T]],
     thenThrow: js.Function1[stdLib.Error, Proxy[T]]
   ): Proxy[T] = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("thenReturn")(thenReturn)
-    __obj.updateDynamic("thenThrow")(thenThrow)
+    val __obj = js.Dynamic.literal(thenReturn = thenReturn, thenThrow = thenThrow)
+    __obj.updateDynamic("then")(`then`)
     __obj.asInstanceOf[Proxy[T]]
   }
 }

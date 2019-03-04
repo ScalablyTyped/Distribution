@@ -84,8 +84,7 @@ object ITimezonePickerProps {
     value: java.lang.String = null,
     valueDisplayFormat: atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneDisplayFormatMod.TimezoneDisplayFormat = null
   ): ITimezonePickerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(onChange = onChange)
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (date != null) __obj.updateDynamic("date")(date)

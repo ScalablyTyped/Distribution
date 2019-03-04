@@ -18,9 +18,7 @@ object VerifyIdTokenOptions {
     idToken: java.lang.String,
     maxExpiry: scala.Int | scala.Double = null
   ): VerifyIdTokenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
-    __obj.updateDynamic("idToken")(idToken)
+    val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], idToken = idToken)
     if (maxExpiry != null) __obj.updateDynamic("maxExpiry")(maxExpiry.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyIdTokenOptions]
   }

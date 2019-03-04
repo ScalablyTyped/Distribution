@@ -14,8 +14,8 @@ trait SimpleSchemaValidationContextStaticKeys extends js.Object {
 object SimpleSchemaValidationContextStaticKeys {
   @scala.inline
   def apply(name: java.lang.String, `type`: java.lang.String, value: js.Any = null): SimpleSchemaValidationContextStaticKeys = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[SimpleSchemaValidationContextStaticKeys]
   }

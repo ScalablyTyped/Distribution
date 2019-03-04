@@ -27,10 +27,8 @@ object TypeParameter {
     name: java.lang.String = null,
     trailingComments: js.Array[Comment] = null
   ): TypeParameter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (bound != null) __obj.updateDynamic("bound")(bound)
     if (default != null) __obj.updateDynamic("default")(default)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

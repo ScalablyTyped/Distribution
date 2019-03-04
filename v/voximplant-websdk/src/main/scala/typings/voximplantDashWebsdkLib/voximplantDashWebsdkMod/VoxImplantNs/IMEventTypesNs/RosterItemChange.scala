@@ -41,10 +41,8 @@ object RosterItemChange {
     `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItemEvent,
     resource: java.lang.String = null
   ): RosterItemChange = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(displayName = displayName, groups = groups, id = id)
+    __obj.updateDynamic("type")(`type`)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[RosterItemChange]
   }

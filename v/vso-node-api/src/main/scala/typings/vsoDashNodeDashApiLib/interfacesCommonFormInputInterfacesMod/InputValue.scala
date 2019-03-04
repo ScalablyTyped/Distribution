@@ -27,10 +27,8 @@ object InputValue {
     displayValue: java.lang.String,
     value: java.lang.String
   ): InputValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("displayValue")(displayValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(data = data, displayValue = displayValue, value = value)
+  
     __obj.asInstanceOf[InputValue]
   }
 }

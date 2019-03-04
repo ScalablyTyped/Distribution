@@ -19,9 +19,8 @@ object KeenTracking {
       js.Promise[org.scalablytyped.runtime.StringDictionary[js.Array[scala.Boolean]]]
     ]
   ): KeenTracking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordEvent")(recordEvent)
-    __obj.updateDynamic("recordEvents")(recordEvents)
+    val __obj = js.Dynamic.literal(recordEvent = recordEvent, recordEvents = recordEvents)
+  
     __obj.asInstanceOf[KeenTracking]
   }
 }

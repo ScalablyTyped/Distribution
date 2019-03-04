@@ -74,7 +74,8 @@ object IStripeError {
     message: java.lang.String = null,
     param: java.lang.String = null
   ): IStripeError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (code != null) __obj.updateDynamic("code")(code)
     if (message != null) __obj.updateDynamic("message")(message)
     if (param != null) __obj.updateDynamic("param")(param)

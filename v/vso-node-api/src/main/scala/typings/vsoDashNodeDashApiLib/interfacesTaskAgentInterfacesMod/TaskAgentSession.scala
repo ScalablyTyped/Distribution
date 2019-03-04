@@ -34,12 +34,8 @@ object TaskAgentSession {
     sessionId: java.lang.String,
     systemCapabilities: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): TaskAgentSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("encryptionKey")(encryptionKey)
-    __obj.updateDynamic("ownerName")(ownerName)
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("systemCapabilities")(systemCapabilities)
+    val __obj = js.Dynamic.literal(agent = agent, encryptionKey = encryptionKey, ownerName = ownerName, sessionId = sessionId, systemCapabilities = systemCapabilities)
+  
     __obj.asInstanceOf[TaskAgentSession]
   }
 }

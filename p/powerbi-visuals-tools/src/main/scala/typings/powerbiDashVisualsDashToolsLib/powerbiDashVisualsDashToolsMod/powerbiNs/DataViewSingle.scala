@@ -12,8 +12,8 @@ trait DataViewSingle extends js.Object {
 object DataViewSingle {
   @scala.inline
   def apply(value: PrimitiveValue): DataViewSingle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DataViewSingle]
   }
 }

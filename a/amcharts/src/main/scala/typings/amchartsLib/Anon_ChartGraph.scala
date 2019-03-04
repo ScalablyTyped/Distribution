@@ -22,11 +22,8 @@ object Anon_ChartGraph {
     item: amchartsLib.graphdataitemMod.default,
     `type`: java.lang.String
   ): Anon_ChartGraph = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(chart = chart, graph = graph, index = index, item = item)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ChartGraph]
   }
 }

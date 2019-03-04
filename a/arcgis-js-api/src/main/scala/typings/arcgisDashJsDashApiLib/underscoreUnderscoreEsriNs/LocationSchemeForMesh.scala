@@ -31,12 +31,8 @@ object LocationSchemeForMesh {
     opacity: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): LocationSchemeForMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[LocationSchemeForMesh]
   }
 }

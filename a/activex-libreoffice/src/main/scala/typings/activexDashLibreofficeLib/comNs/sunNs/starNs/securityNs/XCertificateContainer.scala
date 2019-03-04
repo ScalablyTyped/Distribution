@@ -34,9 +34,8 @@ object XCertificateContainer {
     addCertificate: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Boolean],
     hasCertificate: js.Function2[java.lang.String, java.lang.String, CertificateContainerStatus]
   ): XCertificateContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCertificate")(addCertificate)
-    __obj.updateDynamic("hasCertificate")(hasCertificate)
+    val __obj = js.Dynamic.literal(addCertificate = addCertificate, hasCertificate = hasCertificate)
+  
     __obj.asInstanceOf[XCertificateContainer]
   }
 }

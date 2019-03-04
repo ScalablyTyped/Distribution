@@ -26,8 +26,8 @@ trait ICropperHelper extends js.Object {
 object ICropperHelper {
   @scala.inline
   def apply(configuration: js.Function1[java.lang.String, js.Any]): ICropperHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configuration")(configuration)
+    val __obj = js.Dynamic.literal(configuration = configuration)
+  
     __obj.asInstanceOf[ICropperHelper]
   }
 }

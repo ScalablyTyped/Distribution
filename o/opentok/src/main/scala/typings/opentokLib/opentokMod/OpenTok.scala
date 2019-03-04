@@ -109,14 +109,8 @@ object OpenTok {
       scala.Unit
     ]
   ): OpenTok = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSession")(createSession)
-    __obj.updateDynamic("deleteArchive")(deleteArchive)
-    __obj.updateDynamic("generateToken")(generateToken)
-    __obj.updateDynamic("getArchive")(getArchive)
-    __obj.updateDynamic("listArchives")(listArchives)
-    __obj.updateDynamic("startArchive")(startArchive)
-    __obj.updateDynamic("stopArchive")(stopArchive)
+    val __obj = js.Dynamic.literal(createSession = createSession, deleteArchive = deleteArchive, generateToken = generateToken, getArchive = getArchive, listArchives = listArchives, startArchive = startArchive, stopArchive = stopArchive)
+  
     __obj.asInstanceOf[OpenTok]
   }
 }

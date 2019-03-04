@@ -20,11 +20,8 @@ object ParsableModelInterface {
     applyProps: js.Function1[js.Any, js.Any],
     isStandardProp: js.Function1[js.Any, js.Any]
   ): ParsableModelInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyManualStandardProps")(applyManualStandardProps)
-    __obj.updateDynamic("applyMiscProps")(applyMiscProps)
-    __obj.updateDynamic("applyProps")(applyProps)
-    __obj.updateDynamic("isStandardProp")(isStandardProp)
+    val __obj = js.Dynamic.literal(applyManualStandardProps = applyManualStandardProps, applyMiscProps = applyMiscProps, applyProps = applyProps, isStandardProp = isStandardProp)
+  
     __obj.asInstanceOf[ParsableModelInterface]
   }
 }

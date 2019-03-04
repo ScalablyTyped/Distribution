@@ -12,8 +12,8 @@ trait TrainAgentRequest extends js.Object {
 object TrainAgentRequest {
   @scala.inline
   def apply(parent: java.lang.String): TrainAgentRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
+  
     __obj.asInstanceOf[TrainAgentRequest]
   }
 }

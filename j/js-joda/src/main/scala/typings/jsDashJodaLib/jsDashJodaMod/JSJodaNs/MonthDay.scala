@@ -48,26 +48,8 @@ object MonthDay {
     withDayOfMonth: js.Function1[scala.Double, MonthDay],
     withMonth: js.Function1[scala.Double, MonthDay]
   ): MonthDay = {
-    val __obj = js.Dynamic.literal(`with` = `with`)
-    __obj.updateDynamic("adjustInto")(adjustInto)
-    __obj.updateDynamic("atYear")(atYear)
-    __obj.updateDynamic("compareTo")(compareTo)
-    __obj.updateDynamic("dayOfMonth")(dayOfMonth)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getLong")(getLong)
-    __obj.updateDynamic("isAfter")(isAfter)
-    __obj.updateDynamic("isBefore")(isBefore)
-    __obj.updateDynamic("isSupported")(isSupported)
-    __obj.updateDynamic("isValidYear")(isValidYear)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("monthValue")(monthValue)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("withDayOfMonth")(withDayOfMonth)
-    __obj.updateDynamic("withMonth")(withMonth)
+    val __obj = js.Dynamic.literal(adjustInto = adjustInto, atYear = atYear, compareTo = compareTo, dayOfMonth = dayOfMonth, equals = equals, format = format, get = get, getLong = getLong, isAfter = isAfter, isBefore = isBefore, isSupported = isSupported, isValidYear = isValidYear, month = month, monthValue = monthValue, query = query, range = range, toString = toString, withDayOfMonth = withDayOfMonth, withMonth = withMonth)
+    __obj.updateDynamic("with")(`with`)
     __obj.asInstanceOf[MonthDay]
   }
 }

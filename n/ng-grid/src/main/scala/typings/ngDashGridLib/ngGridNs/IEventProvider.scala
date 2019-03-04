@@ -34,18 +34,8 @@ object IEventProvider {
     onHeaderMouseDown: js.Function1[js.Any, scala.Unit],
     setDraggables: js.Function0[scala.Unit]
   ): IEventProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignEvents")(assignEvents)
-    __obj.updateDynamic("assignGridEventHandlers")(assignGridEventHandlers)
-    __obj.updateDynamic("colToMove")(colToMove)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("dragStart")(dragStart)
-    __obj.updateDynamic("groupToMove")(groupToMove)
-    __obj.updateDynamic("onGroupDrop")(onGroupDrop)
-    __obj.updateDynamic("onGroupMouseDown")(onGroupMouseDown)
-    __obj.updateDynamic("onHeaderDrop")(onHeaderDrop)
-    __obj.updateDynamic("onHeaderMouseDown")(onHeaderMouseDown)
-    __obj.updateDynamic("setDraggables")(setDraggables)
+    val __obj = js.Dynamic.literal(assignEvents = assignEvents, assignGridEventHandlers = assignGridEventHandlers, colToMove = colToMove, dragOver = dragOver, dragStart = dragStart, groupToMove = groupToMove, onGroupDrop = onGroupDrop, onGroupMouseDown = onGroupMouseDown, onHeaderDrop = onHeaderDrop, onHeaderMouseDown = onHeaderMouseDown, setDraggables = setDraggables)
+  
     __obj.asInstanceOf[IEventProvider]
   }
 }

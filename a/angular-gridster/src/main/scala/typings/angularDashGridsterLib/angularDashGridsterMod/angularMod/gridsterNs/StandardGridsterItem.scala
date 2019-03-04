@@ -19,11 +19,8 @@ trait StandardGridsterItem extends js.Object {
 object StandardGridsterItem {
   @scala.inline
   def apply(col: scala.Double, row: scala.Double, sizeX: scala.Double, sizeY: scala.Double): StandardGridsterItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("sizeX")(sizeX)
-    __obj.updateDynamic("sizeY")(sizeY)
+    val __obj = js.Dynamic.literal(col = col, row = row, sizeX = sizeX, sizeY = sizeY)
+  
     __obj.asInstanceOf[StandardGridsterItem]
   }
 }

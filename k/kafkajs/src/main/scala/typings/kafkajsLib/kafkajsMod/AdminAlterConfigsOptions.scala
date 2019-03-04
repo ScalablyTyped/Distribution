@@ -13,9 +13,8 @@ trait AdminAlterConfigsOptions extends js.Object {
 object AdminAlterConfigsOptions {
   @scala.inline
   def apply(resources: js.Array[ResourceConfigQuery], validateOnly: scala.Boolean): AdminAlterConfigsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("validateOnly")(validateOnly)
+    val __obj = js.Dynamic.literal(resources = resources, validateOnly = validateOnly)
+  
     __obj.asInstanceOf[AdminAlterConfigsOptions]
   }
 }

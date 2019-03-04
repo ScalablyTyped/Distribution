@@ -44,12 +44,8 @@ object QuobyteVolumeSource {
     user: java.lang.String,
     volume: java.lang.String
   ): QuobyteVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("registry")(registry)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(group = group, readOnly = readOnly, registry = registry, user = user, volume = volume)
+  
     __obj.asInstanceOf[QuobyteVolumeSource]
   }
 }

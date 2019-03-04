@@ -24,8 +24,7 @@ object MousePositionOptions {
     target: stdLib.Element = null,
     undefinedHTML: java.lang.String = null
   ): MousePositionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(coordinateFormat)
     if (render != null) __obj.updateDynamic("render")(render)

@@ -30,16 +30,8 @@ object Camera {
     x: scala.Double,
     y: scala.Double
   ): Camera = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("cameraPosition")(cameraPosition)
-    __obj.updateDynamic("goTo")(goTo)
-    __obj.updateDynamic("graphPosition")(graphPosition)
-    __obj.updateDynamic("ratio")(ratio)
-    __obj.updateDynamic("readPrefix")(readPrefix)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(angle = angle, cameraPosition = cameraPosition, goTo = goTo, graphPosition = graphPosition, ratio = ratio, readPrefix = readPrefix, settings = settings, x = x, y = y)
+  
     __obj.asInstanceOf[Camera]
   }
 }

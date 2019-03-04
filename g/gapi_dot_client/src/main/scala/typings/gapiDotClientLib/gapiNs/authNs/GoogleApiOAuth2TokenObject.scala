@@ -35,11 +35,8 @@ object GoogleApiOAuth2TokenObject {
     expires_in: java.lang.String,
     state: java.lang.String
   ): GoogleApiOAuth2TokenObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(access_token = access_token, error = error, expires_in = expires_in, state = state)
+  
     __obj.asInstanceOf[GoogleApiOAuth2TokenObject]
   }
 }

@@ -22,10 +22,8 @@ object Anon_EventName {
     run: js.Function0[js.Any],
     stop: js.Function0[js.Any]
   ): Anon_EventName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(on = on, run = run, stop = stop)
+  
     __obj.asInstanceOf[Anon_EventName]
   }
 }

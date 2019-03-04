@@ -27,8 +27,8 @@ object ExportNamedDeclaration {
     source: Literal = null,
     trailingComments: js.Array[Comment] = null
   ): ExportNamedDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("specifiers")(specifiers)
+    val __obj = js.Dynamic.literal(specifiers = specifiers)
+    __obj.updateDynamic("type")(`type`)
     if (declaration != null) __obj.updateDynamic("declaration")(declaration)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

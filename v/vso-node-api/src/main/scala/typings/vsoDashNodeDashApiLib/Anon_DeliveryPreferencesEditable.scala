@@ -28,15 +28,8 @@ object Anon_DeliveryPreferencesEditable {
     supportsNoDelivery: scala.Double,
     supportsPreferredEmailAddressDelivery: scala.Double
   ): Anon_DeliveryPreferencesEditable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deliveryPreferencesEditable")(deliveryPreferencesEditable)
-    __obj.updateDynamic("isGroup")(isGroup)
-    __obj.updateDynamic("isTeam")(isTeam)
-    __obj.updateDynamic("isUser")(isUser)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("supportsEachMemberDelivery")(supportsEachMemberDelivery)
-    __obj.updateDynamic("supportsNoDelivery")(supportsNoDelivery)
-    __obj.updateDynamic("supportsPreferredEmailAddressDelivery")(supportsPreferredEmailAddressDelivery)
+    val __obj = js.Dynamic.literal(deliveryPreferencesEditable = deliveryPreferencesEditable, isGroup = isGroup, isTeam = isTeam, isUser = isUser, none = none, supportsEachMemberDelivery = supportsEachMemberDelivery, supportsNoDelivery = supportsNoDelivery, supportsPreferredEmailAddressDelivery = supportsPreferredEmailAddressDelivery)
+  
     __obj.asInstanceOf[Anon_DeliveryPreferencesEditable]
   }
 }

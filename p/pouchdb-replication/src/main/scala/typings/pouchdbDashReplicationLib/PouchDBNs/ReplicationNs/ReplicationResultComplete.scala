@@ -24,17 +24,8 @@ object ReplicationResultComplete {
     start_time: stdLib.Date,
     status: java.lang.String
   ): ReplicationResultComplete[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("doc_write_failures")(doc_write_failures)
-    __obj.updateDynamic("docs")(docs)
-    __obj.updateDynamic("docs_read")(docs_read)
-    __obj.updateDynamic("docs_written")(docs_written)
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("last_seq")(last_seq)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(doc_write_failures = doc_write_failures, docs = docs, docs_read = docs_read, docs_written = docs_written, end_time = end_time, errors = errors, last_seq = last_seq, ok = ok, start_time = start_time, status = status)
+  
     __obj.asInstanceOf[ReplicationResultComplete[Content]]
   }
 }

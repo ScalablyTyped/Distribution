@@ -14,10 +14,8 @@ trait Anon_Count extends js.Object {
 object Anon_Count {
   @scala.inline
   def apply(count: scala.Double, highlighted: java.lang.String, value: java.lang.String): Anon_Count = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("highlighted")(highlighted)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(count = count, highlighted = highlighted, value = value)
+  
     __obj.asInstanceOf[Anon_Count]
   }
 }

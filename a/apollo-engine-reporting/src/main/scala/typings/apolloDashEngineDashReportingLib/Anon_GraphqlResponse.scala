@@ -14,8 +14,8 @@ object Anon_GraphqlResponse {
   def apply(
     graphqlResponse: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLResponse */ js.Any
   ): Anon_GraphqlResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graphqlResponse")(graphqlResponse)
+    val __obj = js.Dynamic.literal(graphqlResponse = graphqlResponse)
+  
     __obj.asInstanceOf[Anon_GraphqlResponse]
   }
 }

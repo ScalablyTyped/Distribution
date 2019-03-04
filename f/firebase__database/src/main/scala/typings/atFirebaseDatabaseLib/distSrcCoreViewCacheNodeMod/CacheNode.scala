@@ -13,10 +13,10 @@ class CacheNode protected () extends js.Object {
     * @param {boolean} fullyInitialized_
     * @param {boolean} filtered_
     */
-  def this(`node_`: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, `fullyInitialized_`: scala.Boolean, `filtered_`: scala.Boolean) = this()
-  var `filtered_`: js.Any = js.native
-  var `fullyInitialized_`: js.Any = js.native
-  var `node_`: js.Any = js.native
+  def this(node_ : atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, fullyInitialized_ : scala.Boolean, filtered_ : scala.Boolean) = this()
+  var filtered_ : js.Any = js.native
+  var fullyInitialized_ : js.Any = js.native
+  var node_ : js.Any = js.native
   /**
     * @return {!Node}
     */

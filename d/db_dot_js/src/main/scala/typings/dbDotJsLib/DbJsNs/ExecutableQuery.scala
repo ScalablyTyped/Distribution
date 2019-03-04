@@ -13,8 +13,8 @@ trait ExecutableQuery[T] extends js.Object {
 object ExecutableQuery {
   @scala.inline
   def apply[T](execute: js.Function0[js.Promise[js.Array[T]]]): ExecutableQuery[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[ExecutableQuery[T]]
   }
 }

@@ -12,8 +12,8 @@ trait Date extends js.Object {
 object Date {
   @scala.inline
   def apply(getVarDate: js.Function0[VarDate]): Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getVarDate")(getVarDate)
+    val __obj = js.Dynamic.literal(getVarDate = getVarDate)
+  
     __obj.asInstanceOf[Date]
   }
 }

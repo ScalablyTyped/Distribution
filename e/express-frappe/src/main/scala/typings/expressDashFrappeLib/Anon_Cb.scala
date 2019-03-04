@@ -59,10 +59,7 @@ object Anon_Cb {
       ]
     ] = null
   ): Anon_Cb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onConnect")(onConnect)
-    __obj.updateDynamic("onDisconnect")(onDisconnect)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(onConnect = onConnect, onDisconnect = onDisconnect, use = use)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Cb]
   }

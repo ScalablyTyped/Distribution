@@ -57,13 +57,8 @@ object ASPxDesignerToolboxItem {
     toolboxIndex: scala.Double,
     `type`: js.Any
   ): ASPxDesignerToolboxItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultVal")(defaultVal)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("isToolboxItem")(isToolboxItem)
-    __obj.updateDynamic("popularProperties")(popularProperties)
-    __obj.updateDynamic("surfaceType")(surfaceType)
-    __obj.updateDynamic("toolboxIndex")(toolboxIndex)
+    val __obj = js.Dynamic.literal(defaultVal = defaultVal, info = info, isToolboxItem = isToolboxItem, popularProperties = popularProperties, surfaceType = surfaceType, toolboxIndex = toolboxIndex)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ASPxDesignerToolboxItem]
   }
 }

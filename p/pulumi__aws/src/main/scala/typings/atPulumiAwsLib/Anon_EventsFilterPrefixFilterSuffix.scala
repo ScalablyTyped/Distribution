@@ -22,10 +22,7 @@ object Anon_EventsFilterPrefixFilterSuffix {
     filterPrefix: java.lang.String = null,
     filterSuffix: java.lang.String = null
   ): Anon_EventsFilterPrefixFilterSuffix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("queueArn")(queueArn)
+    val __obj = js.Dynamic.literal(events = events, id = id, queueArn = queueArn)
     if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix)
     if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix)
     __obj.asInstanceOf[Anon_EventsFilterPrefixFilterSuffix]

@@ -21,10 +21,7 @@ object Payment {
     destination: java.lang.String,
     source: java.lang.String = null
   ): Payment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("asset")(asset)
-    __obj.updateDynamic("destination")(destination)
+    val __obj = js.Dynamic.literal(amount = amount, asset = asset, destination = destination)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[Payment]
   }

@@ -19,8 +19,8 @@ trait IOwnerToken extends js.Object {
 object IOwnerToken {
   @scala.inline
   def apply(cancelAll: js.Function0[scala.Unit]): IOwnerToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelAll")(cancelAll)
+    val __obj = js.Dynamic.literal(cancelAll = cancelAll)
+  
     __obj.asInstanceOf[IOwnerToken]
   }
 }

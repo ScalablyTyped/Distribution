@@ -15,11 +15,8 @@ trait Footnote extends js.Object {
 object Footnote {
   @scala.inline
   def apply(end: scala.Double, start: scala.Double, target: java.lang.String, text: java.lang.String): Footnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(end = end, start = start, target = target, text = text)
+  
     __obj.asInstanceOf[Footnote]
   }
 }

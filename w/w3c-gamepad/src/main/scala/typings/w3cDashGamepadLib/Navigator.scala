@@ -20,9 +20,8 @@ object Navigator {
     getGamepads: js.Function0[js.Array[w3cDashGamepadLib.GamepadNs.Gamepad]],
     webkitGetGamepads: js.Function0[w3cDashGamepadLib.GamepadNs.GamepadList]
   ): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getGamepads")(getGamepads)
-    __obj.updateDynamic("webkitGetGamepads")(webkitGetGamepads)
+    val __obj = js.Dynamic.literal(getGamepads = getGamepads, webkitGetGamepads = webkitGetGamepads)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

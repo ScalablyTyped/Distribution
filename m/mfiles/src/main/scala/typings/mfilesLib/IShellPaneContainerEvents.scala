@@ -32,9 +32,7 @@ object IShellPaneContainerEvents {
     OnTabSelected: js.Function0[scala.Unit] = null,
     OnTabUnselected: js.Function0[scala.Unit] = null
   ): IShellPaneContainerEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnHidePane != null) __obj.updateDynamic("OnHidePane")(OnHidePane)
     if (OnMinimizedStateChanged != null) __obj.updateDynamic("OnMinimizedStateChanged")(OnMinimizedStateChanged)
     if (OnNewTab != null) __obj.updateDynamic("OnNewTab")(OnNewTab)

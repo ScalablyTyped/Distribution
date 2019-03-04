@@ -27,9 +27,7 @@ object Envelope {
     size: scala.Int | scala.Double = null,
     use8BitMime: js.UndefOr[scala.Boolean] = js.undefined
   ): Envelope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (dsn != null) __obj.updateDynamic("dsn")(dsn)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (!js.isUndefined(use8BitMime)) __obj.updateDynamic("use8BitMime")(use8BitMime)

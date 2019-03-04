@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 object Noop {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.Noop): Noop = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Noop]
   }
 }

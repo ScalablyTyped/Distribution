@@ -24,13 +24,8 @@ object Anon_Exceptions {
     severityLevel: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_Exceptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exceptions")(exceptions)
-    __obj.updateDynamic("handledAt")(handledAt)
-    __obj.updateDynamic("measurements")(measurements)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("severityLevel")(severityLevel)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(exceptions = exceptions, handledAt = handledAt, measurements = measurements, properties = properties, severityLevel = severityLevel, ver = ver)
+  
     __obj.asInstanceOf[Anon_Exceptions]
   }
 }

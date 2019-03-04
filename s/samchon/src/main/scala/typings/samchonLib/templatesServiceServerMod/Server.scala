@@ -20,11 +20,11 @@ abstract class Server ()
   /**
     * @hidden
     */
-  var `account_map_`: js.Any = js.native
+  var account_map_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `session_map_`: js.Any = js.native
+  var session_map_ : js.Any = js.native
   /**
     * Factory method creating {@link User} object.
     *

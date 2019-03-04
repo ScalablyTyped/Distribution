@@ -45,9 +45,7 @@ object PopperProps {
     popperOptions: js.Object = null,
     transition: js.UndefOr[scala.Boolean] = js.undefined
   ): PopperProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], open = open)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

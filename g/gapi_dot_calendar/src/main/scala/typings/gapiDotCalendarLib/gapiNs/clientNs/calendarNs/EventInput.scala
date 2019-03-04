@@ -58,9 +58,7 @@ object EventInput {
     transparency: EventTransparency = null,
     visibility: EventVisibility = null
   ): EventInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
     if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (attendees != null) __obj.updateDynamic("attendees")(attendees)

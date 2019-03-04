@@ -32,17 +32,8 @@ object ArtifactContributionDefinition {
     name: java.lang.String,
     uniqueSourceIdentifier: java.lang.String
   ): ArtifactContributionDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("artifactTypeStreamMapping")(artifactTypeStreamMapping)
-    __obj.updateDynamic("browsableArtifactTypeMapping")(browsableArtifactTypeMapping)
-    __obj.updateDynamic("dataSourceBindings")(dataSourceBindings)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("downloadTaskId")(downloadTaskId)
-    __obj.updateDynamic("endpointTypeId")(endpointTypeId)
-    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uniqueSourceIdentifier")(uniqueSourceIdentifier)
+    val __obj = js.Dynamic.literal(artifactType = artifactType, artifactTypeStreamMapping = artifactTypeStreamMapping, browsableArtifactTypeMapping = browsableArtifactTypeMapping, dataSourceBindings = dataSourceBindings, displayName = displayName, downloadTaskId = downloadTaskId, endpointTypeId = endpointTypeId, inputDescriptors = inputDescriptors, name = name, uniqueSourceIdentifier = uniqueSourceIdentifier)
+  
     __obj.asInstanceOf[ArtifactContributionDefinition]
   }
 }

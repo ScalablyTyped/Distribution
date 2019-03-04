@@ -33,11 +33,7 @@ object PublicKeyCredentialCreationOptions {
     extensions: js.Any = null,
     timeout: scala.Int | scala.Double = null
   ): PublicKeyCredentialCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("pubKeyCredParams")(pubKeyCredParams)
-    __obj.updateDynamic("rp")(rp)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(challenge = challenge, pubKeyCredParams = pubKeyCredParams, rp = rp, user = user)
     if (attestation != null) __obj.updateDynamic("attestation")(attestation)
     if (authenticatorSelection != null) __obj.updateDynamic("authenticatorSelection")(authenticatorSelection)
     if (excludeCredentials != null) __obj.updateDynamic("excludeCredentials")(excludeCredentials)

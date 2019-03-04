@@ -14,8 +14,7 @@ trait Record extends js.Object {
 object Record {
   @scala.inline
   def apply(account_id: java.lang.String, memo: java.lang.String = null, memo_type: java.lang.String = null): Record = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_id")(account_id)
+    val __obj = js.Dynamic.literal(account_id = account_id)
     if (memo != null) __obj.updateDynamic("memo")(memo)
     if (memo_type != null) __obj.updateDynamic("memo_type")(memo_type)
     __obj.asInstanceOf[Record]

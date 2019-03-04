@@ -18,8 +18,8 @@ object PhononDialogComponent {
       PhononDialogComponent
     ]
   ): PhononDialogComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
+  
     __obj.asInstanceOf[PhononDialogComponent]
   }
 }

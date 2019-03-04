@@ -15,8 +15,8 @@ object Anon_Color {
   def apply(
     color: vegaDashTypingsLib.typesSpecEncodeMod.ColorRGB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHSL | vegaDashTypingsLib.typesSpecEncodeMod.ColorLAB | vegaDashTypingsLib.typesSpecEncodeMod.ColorHCL
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Color]
   }
 }

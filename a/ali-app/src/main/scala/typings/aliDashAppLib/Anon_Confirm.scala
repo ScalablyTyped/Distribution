@@ -12,8 +12,8 @@ trait Anon_Confirm extends js.Object {
 object Anon_Confirm {
   @scala.inline
   def apply(confirm: scala.Boolean): Anon_Confirm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirm")(confirm)
+    val __obj = js.Dynamic.literal(confirm = confirm)
+  
     __obj.asInstanceOf[Anon_Confirm]
   }
 }

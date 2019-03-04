@@ -33,18 +33,8 @@ object RightProjection {
     toOptional: js.Function0[Optional[B]],
     toString: js.Function0[java.lang.String]
   ): RightProjection[A, B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("flatMap")(flatMap)
-    __obj.updateDynamic("forall")(forall)
-    __obj.updateDynamic("foreach")(foreach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getOrElse")(getOrElse)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("self")(self)
-    __obj.updateDynamic("toOptional")(toOptional)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(exists = exists, filter = filter, flatMap = flatMap, forall = forall, foreach = foreach, get = get, getOrElse = getOrElse, map = map, self = self, toOptional = toOptional, toString = toString)
+  
     __obj.asInstanceOf[RightProjection[A, B]]
   }
 }

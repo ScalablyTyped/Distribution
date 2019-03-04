@@ -102,9 +102,7 @@ object Options {
     prevClass: java.lang.String = null,
     wrapClass: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxVisible")(maxVisible)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(maxVisible = maxVisible, total = total)
     if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
     if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass)
     if (first != null) __obj.updateDynamic("first")(first)

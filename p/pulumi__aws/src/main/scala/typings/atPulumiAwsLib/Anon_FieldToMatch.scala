@@ -20,10 +20,7 @@ object Anon_FieldToMatch {
     textTransformation: java.lang.String,
     targetString: java.lang.String = null
   ): Anon_FieldToMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldToMatch")(fieldToMatch)
-    __obj.updateDynamic("positionalConstraint")(positionalConstraint)
-    __obj.updateDynamic("textTransformation")(textTransformation)
+    val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch, positionalConstraint = positionalConstraint, textTransformation = textTransformation)
     if (targetString != null) __obj.updateDynamic("targetString")(targetString)
     __obj.asInstanceOf[Anon_FieldToMatch]
   }

@@ -22,9 +22,7 @@ object Anon_CreditEllipsoidMetadata {
     ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
     tileDiscardPolicy: cesiumLib.cesiumMod.CesiumNs.TileDiscardPolicy = null
   ): Anon_CreditEllipsoidMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metadata = metadata, url = url.asInstanceOf[js.Any])
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (tileDiscardPolicy != null) __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)

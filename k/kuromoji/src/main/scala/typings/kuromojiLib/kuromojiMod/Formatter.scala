@@ -26,9 +26,8 @@ object Formatter {
     formatEntry: js.Function4[scala.Double, scala.Double, java.lang.String, js.Array[java.lang.String], T],
     formatUnknownEntry: js.Function4[scala.Double, scala.Double, java.lang.String, js.Array[java.lang.String], T]
   ): Formatter[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatEntry")(formatEntry)
-    __obj.updateDynamic("formatUnknownEntry")(formatUnknownEntry)
+    val __obj = js.Dynamic.literal(formatEntry = formatEntry, formatUnknownEntry = formatUnknownEntry)
+  
     __obj.asInstanceOf[Formatter[T]]
   }
 }

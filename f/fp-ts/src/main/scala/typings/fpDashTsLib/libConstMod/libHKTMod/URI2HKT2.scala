@@ -12,8 +12,8 @@ trait URI2HKT2[L, A] extends js.Object {
 object URI2HKT2 {
   @scala.inline
   def apply[L, A](Const: fpDashTsLib.libConstMod.Const[L, A]): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Const")(Const)
+    val __obj = js.Dynamic.literal(Const = Const)
+  
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }
 }

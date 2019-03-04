@@ -67,11 +67,7 @@ object NetworkAclRuleArgs {
     ipv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     toPort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): NetworkAclRuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkAclId")(networkAclId.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("ruleAction")(ruleAction.asInstanceOf[js.Any])
-    __obj.updateDynamic("ruleNumber")(ruleNumber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(networkAclId = networkAclId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], ruleAction = ruleAction.asInstanceOf[js.Any], ruleNumber = ruleNumber.asInstanceOf[js.Any])
     if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
     if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
     if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])

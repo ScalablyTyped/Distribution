@@ -13,9 +13,8 @@ trait Anon_Free extends js.Object {
 object Anon_Free {
   @scala.inline
   def apply(free: scala.Double, total: scala.Double): Anon_Free = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("free")(free)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(free = free, total = total)
+  
     __obj.asInstanceOf[Anon_Free]
   }
 }

@@ -42,8 +42,7 @@ object Anon_AltDryRunFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDryRunFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
+    val __obj = js.Dynamic.literal(merchantId = merchantId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
     if (fields != null) __obj.updateDynamic("fields")(fields)

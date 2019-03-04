@@ -95,8 +95,7 @@ object Anon_AccesstokenAccountIdAltBearertokenCallbackCountries {
     videoId: java.lang.String = null,
     videoIds: java.lang.String = null
   ): Anon_AccesstokenAccountIdAltBearertokenCallbackCountries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
+    val __obj = js.Dynamic.literal(accountId = accountId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

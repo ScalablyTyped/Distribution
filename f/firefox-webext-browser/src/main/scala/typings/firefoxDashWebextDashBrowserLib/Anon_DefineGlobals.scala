@@ -30,11 +30,8 @@ object Anon_DefineGlobals {
     global: js.Any,
     metadata: js.Any
   ): Anon_DefineGlobals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defineGlobals")(defineGlobals)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(defineGlobals = defineGlobals, export = export, global = global, metadata = metadata)
+  
     __obj.asInstanceOf[Anon_DefineGlobals]
   }
 }

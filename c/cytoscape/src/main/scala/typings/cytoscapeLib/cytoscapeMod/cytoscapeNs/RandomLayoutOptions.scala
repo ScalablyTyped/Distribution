@@ -35,9 +35,7 @@ object RandomLayoutOptions {
     ready: LayoutHandler = null,
     stop: LayoutHandler = null
   ): RandomLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fit = fit, name = name)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

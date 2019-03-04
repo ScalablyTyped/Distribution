@@ -22,12 +22,8 @@ object SpecificationOptions {
     iconSize: scala.Double,
     title: java.lang.String
   ): SpecificationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("iconSize")(iconSize)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(app = app, background = background, icon = icon, iconSize = iconSize, title = title)
+  
     __obj.asInstanceOf[SpecificationOptions]
   }
 }

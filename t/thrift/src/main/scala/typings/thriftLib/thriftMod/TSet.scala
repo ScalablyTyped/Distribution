@@ -13,9 +13,8 @@ trait TSet extends js.Object {
 object TSet {
   @scala.inline
   def apply(etype: thriftLib.thriftMod.ThriftNs.Type, size: scala.Double): TSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etype")(etype)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(etype = etype, size = size)
+  
     __obj.asInstanceOf[TSet]
   }
 }

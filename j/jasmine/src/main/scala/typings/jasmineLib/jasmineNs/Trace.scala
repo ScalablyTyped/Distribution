@@ -14,10 +14,8 @@ trait Trace extends js.Object {
 object Trace {
   @scala.inline
   def apply(message: java.lang.String, name: java.lang.String, stack: js.Any): Trace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stack")(stack)
+    val __obj = js.Dynamic.literal(message = message, name = name, stack = stack)
+  
     __obj.asInstanceOf[Trace]
   }
 }

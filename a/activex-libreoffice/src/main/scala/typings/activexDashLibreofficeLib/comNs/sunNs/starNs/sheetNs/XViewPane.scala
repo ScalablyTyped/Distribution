@@ -44,18 +44,8 @@ object XViewPane {
     setFirstVisibleColumn: js.Function1[scala.Double, scala.Unit],
     setFirstVisibleRow: js.Function1[scala.Double, scala.Unit]
   ): XViewPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FirstVisibleColumn")(FirstVisibleColumn)
-    __obj.updateDynamic("FirstVisibleRow")(FirstVisibleRow)
-    __obj.updateDynamic("VisibleRange")(VisibleRange)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFirstVisibleColumn")(getFirstVisibleColumn)
-    __obj.updateDynamic("getFirstVisibleRow")(getFirstVisibleRow)
-    __obj.updateDynamic("getVisibleRange")(getVisibleRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFirstVisibleColumn")(setFirstVisibleColumn)
-    __obj.updateDynamic("setFirstVisibleRow")(setFirstVisibleRow)
+    val __obj = js.Dynamic.literal(FirstVisibleColumn = FirstVisibleColumn, FirstVisibleRow = FirstVisibleRow, VisibleRange = VisibleRange, acquire = acquire, getFirstVisibleColumn = getFirstVisibleColumn, getFirstVisibleRow = getFirstVisibleRow, getVisibleRange = getVisibleRange, queryInterface = queryInterface, release = release, setFirstVisibleColumn = setFirstVisibleColumn, setFirstVisibleRow = setFirstVisibleRow)
+  
     __obj.asInstanceOf[XViewPane]
   }
 }

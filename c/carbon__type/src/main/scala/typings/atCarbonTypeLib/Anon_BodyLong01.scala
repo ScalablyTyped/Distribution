@@ -58,30 +58,8 @@ object Anon_BodyLong01 {
     quotation01: Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66rem,
     quotation02: Anon_FontFamilyFontSizeFontWeightLetterSpacingLineHeightMediaminwidth42remMediaminwidth66remMediaminwidth82rem
   ): Anon_BodyLong01 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bodyLong01")(bodyLong01)
-    __obj.updateDynamic("bodyLong02")(bodyLong02)
-    __obj.updateDynamic("bodyShort01")(bodyShort01)
-    __obj.updateDynamic("bodyShort02")(bodyShort02)
-    __obj.updateDynamic("caption01")(caption01)
-    __obj.updateDynamic("code01")(code01)
-    __obj.updateDynamic("code02")(code02)
-    __obj.updateDynamic("display01")(display01)
-    __obj.updateDynamic("display02")(display02)
-    __obj.updateDynamic("display03")(display03)
-    __obj.updateDynamic("display04")(display04)
-    __obj.updateDynamic("expressiveHeading04")(expressiveHeading04)
-    __obj.updateDynamic("expressiveHeading05")(expressiveHeading05)
-    __obj.updateDynamic("expressiveParagraph01")(expressiveParagraph01)
-    __obj.updateDynamic("heading01")(heading01)
-    __obj.updateDynamic("heading02")(heading02)
-    __obj.updateDynamic("heading03")(heading03)
-    __obj.updateDynamic("helperText01")(helperText01)
-    __obj.updateDynamic("label01")(label01)
-    __obj.updateDynamic("productiveHeading04")(productiveHeading04)
-    __obj.updateDynamic("productiveHeading05")(productiveHeading05)
-    __obj.updateDynamic("quotation01")(quotation01)
-    __obj.updateDynamic("quotation02")(quotation02)
+    val __obj = js.Dynamic.literal(bodyLong01 = bodyLong01, bodyLong02 = bodyLong02, bodyShort01 = bodyShort01, bodyShort02 = bodyShort02, caption01 = caption01, code01 = code01, code02 = code02, display01 = display01, display02 = display02, display03 = display03, display04 = display04, expressiveHeading04 = expressiveHeading04, expressiveHeading05 = expressiveHeading05, expressiveParagraph01 = expressiveParagraph01, heading01 = heading01, heading02 = heading02, heading03 = heading03, helperText01 = helperText01, label01 = label01, productiveHeading04 = productiveHeading04, productiveHeading05 = productiveHeading05, quotation01 = quotation01, quotation02 = quotation02)
+  
     __obj.asInstanceOf[Anon_BodyLong01]
   }
 }

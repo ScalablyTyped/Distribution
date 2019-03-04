@@ -19,10 +19,8 @@ object ojAvatarSettableProperties {
     size: atOracleOraclejetLib.atOracleOraclejetLibStrings.xxs | atOracleOraclejetLib.atOracleOraclejetLibStrings.xs | atOracleOraclejetLib.atOracleOraclejetLibStrings.sm | atOracleOraclejetLib.atOracleOraclejetLibStrings.md | atOracleOraclejetLib.atOracleOraclejetLibStrings.lg | atOracleOraclejetLib.atOracleOraclejetLibStrings.xl | atOracleOraclejetLib.atOracleOraclejetLibStrings.xxl,
     src: java.lang.String
   ): ojAvatarSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("initials")(initials)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(initials = initials, size = size.asInstanceOf[js.Any], src = src)
+  
     __obj.asInstanceOf[ojAvatarSettableProperties]
   }
 }

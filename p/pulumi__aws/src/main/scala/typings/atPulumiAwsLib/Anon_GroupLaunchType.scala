@@ -24,8 +24,7 @@ object Anon_GroupLaunchType {
     platformVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     taskCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_GroupLaunchType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(taskDefinitionArn = taskDefinitionArn.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])

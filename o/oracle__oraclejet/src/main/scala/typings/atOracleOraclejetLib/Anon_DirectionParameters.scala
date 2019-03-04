@@ -18,10 +18,8 @@ object Anon_DirectionParameters {
     parameters: js.Object,
     parentRouter: atOracleOraclejetLib.ojrouterMod.Router
   ): Anon_DirectionParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("parentRouter")(parentRouter)
+    val __obj = js.Dynamic.literal(direction = direction, parameters = parameters, parentRouter = parentRouter)
+  
     __obj.asInstanceOf[Anon_DirectionParameters]
   }
 }

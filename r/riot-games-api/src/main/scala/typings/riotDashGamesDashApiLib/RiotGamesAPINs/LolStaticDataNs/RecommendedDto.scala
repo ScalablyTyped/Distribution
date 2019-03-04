@@ -26,13 +26,8 @@ object RecommendedDto {
     title: java.lang.String,
     `type`: java.lang.String
   ): RecommendedDto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("champion")(champion)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(block = block, champion = champion, map = map, mode = mode, priority = priority, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RecommendedDto]
   }
 }

@@ -16,9 +16,8 @@ object NavigationScreenConfigProps {
     navigation: NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams],
     screenProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): NavigationScreenConfigProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigation")(navigation)
-    __obj.updateDynamic("screenProps")(screenProps)
+    val __obj = js.Dynamic.literal(navigation = navigation, screenProps = screenProps)
+  
     __obj.asInstanceOf[NavigationScreenConfigProps]
   }
 }

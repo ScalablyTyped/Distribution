@@ -60,23 +60,8 @@ object DatasourceAdministrationDialog {
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): DatasourceAdministrationDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ParentWindow")(ParentWindow)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(ParentWindow = ParentWindow, PropertySetInfo = PropertySetInfo, Title = Title, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, execute = execute, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, initialize = initialize, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue, setTitle = setTitle)
+  
     __obj.asInstanceOf[DatasourceAdministrationDialog]
   }
 }

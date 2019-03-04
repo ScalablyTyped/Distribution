@@ -36,12 +36,8 @@ object XAcceptor {
     release: js.Function0[scala.Unit],
     stopAccepting: js.Function0[scala.Unit]
   ): XAcceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("stopAccepting")(stopAccepting)
+    val __obj = js.Dynamic.literal(accept = accept, acquire = acquire, queryInterface = queryInterface, release = release, stopAccepting = stopAccepting)
+  
     __obj.asInstanceOf[XAcceptor]
   }
 }

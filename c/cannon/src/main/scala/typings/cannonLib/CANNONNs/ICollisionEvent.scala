@@ -12,9 +12,8 @@ trait ICollisionEvent extends IBodyEvent {
 object ICollisionEvent {
   @scala.inline
   def apply(body: Body, contact: js.Any, `type`: java.lang.String): ICollisionEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("contact")(contact)
+    val __obj = js.Dynamic.literal(body = body, contact = contact)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICollisionEvent]
   }
 }

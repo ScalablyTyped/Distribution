@@ -27,10 +27,8 @@ trait EventSeries extends js.Object {
 object EventSeries {
   @scala.inline
   def apply(count: scala.Double, lastObservedTime: java.lang.String, state: java.lang.String): EventSeries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("lastObservedTime")(lastObservedTime)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(count = count, lastObservedTime = lastObservedTime, state = state)
+  
     __obj.asInstanceOf[EventSeries]
   }
 }

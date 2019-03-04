@@ -72,8 +72,7 @@ object Props {
     inputRef: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLInputElement] = null,
     maskChar: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(mask = mask)
     js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
     if (!js.isUndefined(alwaysShowMask)) __obj.updateDynamic("alwaysShowMask")(alwaysShowMask)
     if (beforeMaskedValueChange != null) __obj.updateDynamic("beforeMaskedValueChange")(beforeMaskedValueChange)

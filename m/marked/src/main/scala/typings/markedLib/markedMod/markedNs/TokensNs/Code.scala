@@ -15,8 +15,8 @@ trait Code
 object Code {
   @scala.inline
   def apply(text: java.lang.String, `type`: markedLib.markedLibStrings.code, lang: java.lang.String = null): Code = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
+    __obj.updateDynamic("type")(`type`)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     __obj.asInstanceOf[Code]
   }

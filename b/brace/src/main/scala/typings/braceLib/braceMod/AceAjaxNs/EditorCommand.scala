@@ -20,10 +20,7 @@ object EditorCommand {
     name: java.lang.String,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): EditorCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindKey")(bindKey)
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(bindKey = bindKey, exec = exec, name = name)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     __obj.asInstanceOf[EditorCommand]
   }

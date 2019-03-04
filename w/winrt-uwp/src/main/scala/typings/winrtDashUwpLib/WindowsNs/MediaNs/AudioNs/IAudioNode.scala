@@ -48,17 +48,8 @@ object IAudioNode {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): IAudioNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("consumeInput")(consumeInput)
-    __obj.updateDynamic("disableEffectsByDefinition")(disableEffectsByDefinition)
-    __obj.updateDynamic("effectDefinitions")(effectDefinitions)
-    __obj.updateDynamic("enableEffectsByDefinition")(enableEffectsByDefinition)
-    __obj.updateDynamic("encodingProperties")(encodingProperties)
-    __obj.updateDynamic("outgoingGain")(outgoingGain)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(close = close, consumeInput = consumeInput, disableEffectsByDefinition = disableEffectsByDefinition, effectDefinitions = effectDefinitions, enableEffectsByDefinition = enableEffectsByDefinition, encodingProperties = encodingProperties, outgoingGain = outgoingGain, reset = reset, start = start, stop = stop)
+  
     __obj.asInstanceOf[IAudioNode]
   }
 }

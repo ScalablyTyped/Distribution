@@ -22,11 +22,8 @@ object SignatureMethod {
     key: java.lang.String,
     sign: js.Function1[Message, java.lang.String]
   ): SignatureMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSignature")(getSignature)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("sign")(sign)
+    val __obj = js.Dynamic.literal(getSignature = getSignature, initialize = initialize, key = key, sign = sign)
+  
     __obj.asInstanceOf[SignatureMethod]
   }
 }

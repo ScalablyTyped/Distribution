@@ -13,8 +13,8 @@ trait BooleanMapping extends Mapping {
 object BooleanMapping {
   @scala.inline
   def apply(strict: scala.Boolean, `type`: envDashToDashObjectLib.envDashToDashObjectLibStrings.boolean): BooleanMapping = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(strict = strict)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BooleanMapping]
   }
 }

@@ -126,24 +126,8 @@ object XConversionDictionary {
     removeEntry: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     setActive: js.Function1[scala.Boolean, scala.Unit]
   ): XConversionDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConversionType")(ConversionType)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEntry")(addEntry)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getConversionEntries")(getConversionEntries)
-    __obj.updateDynamic("getConversionType")(getConversionType)
-    __obj.updateDynamic("getConversions")(getConversions)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMaxCharCount")(getMaxCharCount)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEntry")(removeEntry)
-    __obj.updateDynamic("setActive")(setActive)
+    val __obj = js.Dynamic.literal(ConversionType = ConversionType, Locale = Locale, Name = Name, acquire = acquire, addEntry = addEntry, clear = clear, getConversionEntries = getConversionEntries, getConversionType = getConversionType, getConversions = getConversions, getLocale = getLocale, getMaxCharCount = getMaxCharCount, getName = getName, isActive = isActive, queryInterface = queryInterface, release = release, removeEntry = removeEntry, setActive = setActive)
+  
     __obj.asInstanceOf[XConversionDictionary]
   }
 }

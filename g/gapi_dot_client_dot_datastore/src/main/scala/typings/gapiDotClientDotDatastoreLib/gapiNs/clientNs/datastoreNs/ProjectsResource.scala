@@ -56,14 +56,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allocateIds")(allocateIds)
-    __obj.updateDynamic("beginTransaction")(beginTransaction)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("operations")(operations)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("runQuery")(runQuery)
+    val __obj = js.Dynamic.literal(allocateIds = allocateIds, beginTransaction = beginTransaction, commit = commit, lookup = lookup, operations = operations, rollback = rollback, runQuery = runQuery)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

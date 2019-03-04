@@ -13,9 +13,8 @@ trait BoundedJoinSemilattice[A]
 object BoundedJoinSemilattice {
   @scala.inline
   def apply[A](join: js.Function2[A, A, A], zero: A): BoundedJoinSemilattice[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(join = join, zero = zero.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BoundedJoinSemilattice[A]]
   }
 }

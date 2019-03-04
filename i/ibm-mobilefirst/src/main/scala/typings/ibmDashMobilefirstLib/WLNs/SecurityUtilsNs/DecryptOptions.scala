@@ -22,12 +22,8 @@ object DecryptOptions {
     src: java.lang.String,
     v: java.lang.String
   ): DecryptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ct")(ct)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("lv")(lv)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(ct = ct, key = key, lv = lv, src = src, v = v)
+  
     __obj.asInstanceOf[DecryptOptions]
   }
 }

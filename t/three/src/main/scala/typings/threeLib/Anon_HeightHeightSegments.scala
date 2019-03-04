@@ -28,15 +28,8 @@ object Anon_HeightHeightSegments {
     thetaLength: scala.Double,
     thetaStart: scala.Double
   ): Anon_HeightHeightSegments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightSegments")(heightSegments)
-    __obj.updateDynamic("openEnded")(openEnded)
-    __obj.updateDynamic("radialSegments")(radialSegments)
-    __obj.updateDynamic("radiusBottom")(radiusBottom)
-    __obj.updateDynamic("radiusTop")(radiusTop)
-    __obj.updateDynamic("thetaLength")(thetaLength)
-    __obj.updateDynamic("thetaStart")(thetaStart)
+    val __obj = js.Dynamic.literal(height = height, heightSegments = heightSegments, openEnded = openEnded, radialSegments = radialSegments, radiusBottom = radiusBottom, radiusTop = radiusTop, thetaLength = thetaLength, thetaStart = thetaStart)
+  
     __obj.asInstanceOf[Anon_HeightHeightSegments]
   }
 }

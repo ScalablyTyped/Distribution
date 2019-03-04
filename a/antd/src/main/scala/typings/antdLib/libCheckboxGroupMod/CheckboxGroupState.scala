@@ -12,8 +12,8 @@ trait CheckboxGroupState extends js.Object {
 object CheckboxGroupState {
   @scala.inline
   def apply(value: js.Any): CheckboxGroupState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[CheckboxGroupState]
   }
 }

@@ -24,11 +24,7 @@ object File {
     gulp: gulpDashTypescriptLib.releaseTypesMod.VinylFile = null,
     ts: typescriptLib.typescriptMod.tsNs.SourceFile = null
   ): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("fileNameNormalized")(fileNameNormalized)
-    __obj.updateDynamic("fileNameOriginal")(fileNameOriginal)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(content = content, fileNameNormalized = fileNameNormalized, fileNameOriginal = fileNameOriginal, kind = kind)
     if (gulp != null) __obj.updateDynamic("gulp")(gulp)
     if (ts != null) __obj.updateDynamic("ts")(ts)
     __obj.asInstanceOf[File]

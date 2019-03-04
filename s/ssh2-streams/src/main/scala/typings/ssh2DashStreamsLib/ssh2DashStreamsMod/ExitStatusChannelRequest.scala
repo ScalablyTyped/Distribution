@@ -18,10 +18,8 @@ object ExitStatusChannelRequest {
     recipient: scala.Double,
     request: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`exit-status`
   ): ExitStatusChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(code = code, recipient = recipient, request = request)
+  
     __obj.asInstanceOf[ExitStatusChannelRequest]
   }
 }

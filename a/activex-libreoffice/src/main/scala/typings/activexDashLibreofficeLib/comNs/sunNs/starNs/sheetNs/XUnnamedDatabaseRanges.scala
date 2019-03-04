@@ -26,13 +26,8 @@ object XUnnamedDatabaseRanges {
     release: js.Function0[scala.Unit],
     setByTable: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
   ): XUnnamedDatabaseRanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByTable")(getByTable)
-    __obj.updateDynamic("hasByTable")(hasByTable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setByTable")(setByTable)
+    val __obj = js.Dynamic.literal(acquire = acquire, getByTable = getByTable, hasByTable = hasByTable, queryInterface = queryInterface, release = release, setByTable = setByTable)
+  
     __obj.asInstanceOf[XUnnamedDatabaseRanges]
   }
 }

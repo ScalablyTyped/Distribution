@@ -63,28 +63,8 @@ object Future {
     zip: js.Function1[Future[js.Any], Future[js.Tuple2[A, js.Any]]],
     zipWith: js.Function2[Future[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Future[js.Any]]
   ): Future[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("andThen")(andThen)
-    __obj.updateDynamic("apply1")(apply1)
-    __obj.updateDynamic("apply2")(apply2)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("fallbackTo")(fallbackTo)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("flatMap")(flatMap)
-    __obj.updateDynamic("foreach")(foreach)
-    __obj.updateDynamic("getPromise")(getPromise)
-    __obj.updateDynamic("isCompleted")(isCompleted)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("recover")(recover)
-    __obj.updateDynamic("recoverWith")(recoverWith)
-    __obj.updateDynamic("transform")(transform)
-    __obj.updateDynamic("transform1")(transform1)
-    __obj.updateDynamic("transformWith")(transformWith)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("zip")(zip)
-    __obj.updateDynamic("zipWith")(zipWith)
+    val __obj = js.Dynamic.literal(andThen = andThen, apply1 = apply1, apply2 = apply2, chain = chain, failed = failed, fallbackTo = fallbackTo, filter = filter, flatMap = flatMap, foreach = foreach, getPromise = getPromise, isCompleted = isCompleted, map = map, onComplete = onComplete, recover = recover, recoverWith = recoverWith, transform = transform, transform1 = transform1, transformWith = transformWith, value = value, zip = zip, zipWith = zipWith)
+  
     __obj.asInstanceOf[Future[A]]
   }
 }

@@ -43,8 +43,7 @@ object NetTcpConnectOptions {
     unknownCommand: js.Function0[scala.Unit] = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): NetTcpConnectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (commandHandlers != null) __obj.updateDynamic("commandHandlers")(commandHandlers)
     if (connect != null) __obj.updateDynamic("connect")(connect)

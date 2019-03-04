@@ -43,14 +43,8 @@ object IApplicationFeeRefund {
     metadata: stripeLib.stripeMod.StripeNs.IMetadata,
     `object`: java.lang.String
   ): IApplicationFeeRefund = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("fee")(fee.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(amount = amount, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, fee = fee.asInstanceOf[js.Any], id = id, metadata = metadata)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IApplicationFeeRefund]
   }
 }

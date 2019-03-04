@@ -14,10 +14,8 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(merge: scala.Boolean, name: java.lang.String, schema: js.Array[yamlLib.yamlMod.Tag]): Schema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(merge = merge, name = name, schema = schema)
+  
     __obj.asInstanceOf[Schema]
   }
 }

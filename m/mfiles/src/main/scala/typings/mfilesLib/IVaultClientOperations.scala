@@ -24,13 +24,8 @@ object IVaultClientOperations {
     SetVaultToOffline: js.Function1[scala.Double, mfilesLib.MFilesNs.MFOfflineTransitionResultFlags],
     SetVaultToOnline: js.Function1[scala.Double, mfilesLib.MFilesNs.MFOnlineTransitionResultFlags]
   ): IVaultClientOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DisableCheckInReminderForCallingProcess")(DisableCheckInReminderForCallingProcess)
-    __obj.updateDynamic("EnableCheckInReminderForCallingProcess")(EnableCheckInReminderForCallingProcess)
-    __obj.updateDynamic("IsOffline")(IsOffline)
-    __obj.updateDynamic("IsOnline")(IsOnline)
-    __obj.updateDynamic("SetVaultToOffline")(SetVaultToOffline)
-    __obj.updateDynamic("SetVaultToOnline")(SetVaultToOnline)
+    val __obj = js.Dynamic.literal(DisableCheckInReminderForCallingProcess = DisableCheckInReminderForCallingProcess, EnableCheckInReminderForCallingProcess = EnableCheckInReminderForCallingProcess, IsOffline = IsOffline, IsOnline = IsOnline, SetVaultToOffline = SetVaultToOffline, SetVaultToOnline = SetVaultToOnline)
+  
     __obj.asInstanceOf[IVaultClientOperations]
   }
 }

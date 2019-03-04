@@ -157,28 +157,8 @@ object IgDoughnutChartMethods {
     setItem: js.Function2[scala.Double, js.Object, js.Object],
     updateSeries: js.Function1[js.Object, scala.Unit]
   ): IgDoughnutChartMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("addSeries")(addSeries)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dataBind")(dataBind)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exportVisualData")(exportVisualData)
-    __obj.updateDynamic("findIndexOfItem")(findIndexOfItem)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getCenterCoordinates")(getCenterCoordinates)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getDataItem")(getDataItem)
-    __obj.updateDynamic("getHoleRadius")(getHoleRadius)
-    __obj.updateDynamic("insertItem")(insertItem)
-    __obj.updateDynamic("notifyClearItems")(notifyClearItems)
-    __obj.updateDynamic("notifyInsertItem")(notifyInsertItem)
-    __obj.updateDynamic("notifyRemoveItem")(notifyRemoveItem)
-    __obj.updateDynamic("notifySetItem")(notifySetItem)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("removeSeries")(removeSeries)
-    __obj.updateDynamic("setItem")(setItem)
-    __obj.updateDynamic("updateSeries")(updateSeries)
+    val __obj = js.Dynamic.literal(addItem = addItem, addSeries = addSeries, chart = chart, dataBind = dataBind, destroy = destroy, exportVisualData = exportVisualData, findIndexOfItem = findIndexOfItem, flush = flush, getCenterCoordinates = getCenterCoordinates, getData = getData, getDataItem = getDataItem, getHoleRadius = getHoleRadius, insertItem = insertItem, notifyClearItems = notifyClearItems, notifyInsertItem = notifyInsertItem, notifyRemoveItem = notifyRemoveItem, notifySetItem = notifySetItem, removeItem = removeItem, removeSeries = removeSeries, setItem = setItem, updateSeries = updateSeries)
+  
     __obj.asInstanceOf[IgDoughnutChartMethods]
   }
 }

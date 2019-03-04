@@ -36,12 +36,8 @@ object XConsolidatable {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XConsolidatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("consolidate")(consolidate)
-    __obj.updateDynamic("createConsolidationDescriptor")(createConsolidationDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, consolidate = consolidate, createConsolidationDescriptor = createConsolidationDescriptor, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XConsolidatable]
   }
 }

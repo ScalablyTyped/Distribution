@@ -18,10 +18,8 @@ object IAccessControlListComponentKey {
     ItemID: scala.Double,
     PropertyDefID: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double
   ): IAccessControlListComponentKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ItemID")(ItemID)
-    __obj.updateDynamic("PropertyDefID")(PropertyDefID.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Clone = Clone, ItemID = ItemID, PropertyDefID = PropertyDefID.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IAccessControlListComponentKey]
   }
 }

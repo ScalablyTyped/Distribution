@@ -31,21 +31,7 @@ object BlockWithTransactionData {
     nonce: java.lang.String = null,
     number: scala.Int | scala.Double = null
   ): BlockWithTransactionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("difficulty")(difficulty)
-    __obj.updateDynamic("extraData")(extraData)
-    __obj.updateDynamic("gasLimit")(gasLimit)
-    __obj.updateDynamic("gasUsed")(gasUsed)
-    __obj.updateDynamic("miner")(miner)
-    __obj.updateDynamic("parentHash")(parentHash)
-    __obj.updateDynamic("sha3Uncles")(sha3Uncles)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("stateRoot")(stateRoot)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("totalDifficulty")(totalDifficulty)
-    __obj.updateDynamic("transactions")(transactions)
-    __obj.updateDynamic("transactionsRoot")(transactionsRoot)
-    __obj.updateDynamic("uncles")(uncles)
+    val __obj = js.Dynamic.literal(difficulty = difficulty, extraData = extraData, gasLimit = gasLimit, gasUsed = gasUsed, miner = miner, parentHash = parentHash, sha3Uncles = sha3Uncles, size = size, stateRoot = stateRoot, timestamp = timestamp, totalDifficulty = totalDifficulty, transactions = transactions, transactionsRoot = transactionsRoot, uncles = uncles)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (logsBloom != null) __obj.updateDynamic("logsBloom")(logsBloom)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)

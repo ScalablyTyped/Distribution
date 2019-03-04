@@ -13,9 +13,8 @@ trait NoOf extends js.Object {
 object NoOf {
   @scala.inline
   def apply(no: scala.Double, of: scala.Double): NoOf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("no")(no)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(no = no, of = of)
+  
     __obj.asInstanceOf[NoOf]
   }
 }

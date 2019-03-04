@@ -12,7 +12,7 @@ object ColorNs extends js.Object {
     color1: js.Tuple3[scala.Double, scala.Double, scala.Double],
     colors2: (js.Tuple3[scala.Double, scala.Double, scala.Double])*
   ): js.Tuple3[scala.Double, scala.Double, scala.Double] = js.native
-  def `add_`(
+  def add_(
     color1: js.Tuple3[scala.Double, scala.Double, scala.Double],
     colors2: (js.Tuple3[scala.Double, scala.Double, scala.Double])*
   ): js.Tuple3[scala.Double, scala.Double, scala.Double] = js.native
@@ -32,7 +32,7 @@ object ColorNs extends js.Object {
     color1: js.Tuple3[scala.Double, scala.Double, scala.Double],
     colors2: (js.Tuple3[scala.Double, scala.Double, scala.Double])*
   ): js.Tuple3[scala.Double, scala.Double, scala.Double] = js.native
-  def `multiply_`(
+  def multiply_(
     color1: js.Tuple3[scala.Double, scala.Double, scala.Double],
     colors2: (js.Tuple3[scala.Double, scala.Double, scala.Double])*
   ): js.Tuple3[scala.Double, scala.Double, scala.Double] = js.native

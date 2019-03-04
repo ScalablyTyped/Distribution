@@ -16,9 +16,7 @@ object WrapSwitchProps {
     routes: js.Array[RouteConfiguration],
     getKey: GetKeyFunction[Params] = null
   ): WrapSwitchProps[Params] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(location = location, routes = routes)
     if (getKey != null) __obj.updateDynamic("getKey")(getKey)
     __obj.asInstanceOf[WrapSwitchProps[Params]]
   }

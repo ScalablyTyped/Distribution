@@ -21,15 +21,15 @@ class WebClientDriver protected ()
   /**
     * @hidden
     */
-  var `listening_`: js.Any = js.native
+  var listening_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `path_`: js.Any = js.native
+  var path_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `session_id_`: js.Any = js.native
+  var session_id_ : js.Any = js.native
   /**
     * Get requested path.
     */

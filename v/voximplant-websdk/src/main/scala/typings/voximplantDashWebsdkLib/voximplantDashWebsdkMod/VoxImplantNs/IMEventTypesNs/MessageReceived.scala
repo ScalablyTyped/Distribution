@@ -41,11 +41,7 @@ object MessageReceived {
     to: java.lang.String,
     resource: java.lang.String = null
   ): MessageReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(content = content, id = id, message_id = message_id, to = to)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[MessageReceived]
   }

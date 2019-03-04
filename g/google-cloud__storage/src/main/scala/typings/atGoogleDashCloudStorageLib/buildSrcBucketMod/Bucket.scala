@@ -308,10 +308,10 @@ class Bucket protected ()
   def lock(metageneration: java.lang.String, callback: BucketLockCallback): scala.Unit = js.native
   def lock(metageneration: scala.Double): js.Promise[BucketLockResponse] = js.native
   def lock(metageneration: scala.Double, callback: BucketLockCallback): scala.Unit = js.native
-  def `makeAllFilesPublicPrivate_`(): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
-  def `makeAllFilesPublicPrivate_`(callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
-  def `makeAllFilesPublicPrivate_`(options: MakeAllFilesPublicPrivateOptions): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
-  def `makeAllFilesPublicPrivate_`(options: MakeAllFilesPublicPrivateOptions, callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
+  def makeAllFilesPublicPrivate_(): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
+  def makeAllFilesPublicPrivate_(callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
+  def makeAllFilesPublicPrivate_(options: MakeAllFilesPublicPrivateOptions): js.Promise[MakeAllFilesPublicPrivateResponse] = js.native
+  def makeAllFilesPublicPrivate_(options: MakeAllFilesPublicPrivateOptions, callback: MakeAllFilesPublicPrivateCallback): scala.Unit = js.native
   def makePrivate(): js.Promise[MakeBucketPrivateResponse] = js.native
   def makePrivate(callback: MakeBucketPrivateCallback): scala.Unit = js.native
   def makePrivate(options: MakeBucketPrivateOptions): js.Promise[MakeBucketPrivateResponse] = js.native

@@ -12,8 +12,8 @@ trait Anon_Encoding extends js.Object {
 object Anon_Encoding {
   @scala.inline
   def apply(encoding: rawDashBodyLib.rawDashBodyMod.getRawBodyNs.Encoding): Anon_Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Encoding]
   }
 }

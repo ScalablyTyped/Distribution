@@ -12,8 +12,8 @@ trait Anon_Annotated extends js.Object {
 object Anon_Annotated {
   @scala.inline
   def apply(output: hapiLib.hapiMod.PayloadOutput | hapiLib.hapiLibStrings.annotated): Anon_Annotated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Annotated]
   }
 }

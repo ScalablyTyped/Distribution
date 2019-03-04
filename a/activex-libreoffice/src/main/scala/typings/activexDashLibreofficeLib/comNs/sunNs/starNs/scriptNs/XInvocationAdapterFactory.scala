@@ -34,11 +34,8 @@ object XInvocationAdapterFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XInvocationAdapterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createAdapter")(createAdapter)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createAdapter = createAdapter, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XInvocationAdapterFactory]
   }
 }

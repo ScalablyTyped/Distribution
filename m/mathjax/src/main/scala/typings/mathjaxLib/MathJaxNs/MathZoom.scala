@@ -16,8 +16,8 @@ trait MathZoom extends js.Object {
 object MathZoom {
   @scala.inline
   def apply(styles: js.Any): MathZoom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(styles = styles)
+  
     __obj.asInstanceOf[MathZoom]
   }
 }

@@ -12,8 +12,8 @@ trait IDBEnvironment extends js.Object {
 object IDBEnvironment {
   @scala.inline
   def apply(indexedDB: IDBFactory): IDBEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexedDB")(indexedDB)
+    val __obj = js.Dynamic.literal(indexedDB = indexedDB)
+  
     __obj.asInstanceOf[IDBEnvironment]
   }
 }

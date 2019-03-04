@@ -25,13 +25,8 @@ object XNodeList {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNodeList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, item = item, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNodeList]
   }
 }

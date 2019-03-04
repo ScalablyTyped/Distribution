@@ -22,12 +22,8 @@ object Anon_DANGER {
     SUCCESS: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.success,
     WARNING: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.warning
   ): Anon_DANGER = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DANGER")(DANGER)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("PRIMARY")(PRIMARY)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(DANGER = DANGER, NONE = NONE, PRIMARY = PRIMARY, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_DANGER]
   }
 }

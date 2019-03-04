@@ -20,9 +20,8 @@ object SeriesResource {
     ],
     membership: MembershipResource
   ): SeriesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("membership")(membership)
+    val __obj = js.Dynamic.literal(get = get, membership = membership)
+  
     __obj.asInstanceOf[SeriesResource]
   }
 }

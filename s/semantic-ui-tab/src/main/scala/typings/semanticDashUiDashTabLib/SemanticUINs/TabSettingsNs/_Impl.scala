@@ -221,37 +221,8 @@ object _Impl {
     templates: semanticDashUiDashTabLib.SemanticUINs.TabNs.TemplatesSettings,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRefresh")(alwaysRefresh)
-    __obj.updateDynamic("apiSettings")(apiSettings.asInstanceOf[js.Any])
-    __obj.updateDynamic("auto")(auto)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheType")(cacheType.asInstanceOf[js.Any])
-    __obj.updateDynamic("childrenOnly")(childrenOnly)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("deactivate")(deactivate.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluateScripts")(evaluateScripts.asInstanceOf[js.Any])
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("historyType")(historyType.asInstanceOf[js.Any])
-    __obj.updateDynamic("ignoreFirstLoad")(ignoreFirstLoad)
-    __obj.updateDynamic("loadOnce")(loadOnce)
-    __obj.updateDynamic("maxDepth")(maxDepth)
-    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("onFirstLoad")(onFirstLoad)
-    __obj.updateDynamic("onLoad")(onLoad)
-    __obj.updateDynamic("onRequest")(onRequest)
-    __obj.updateDynamic("onVisible")(onVisible)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("templates")(templates)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(alwaysRefresh = alwaysRefresh, apiSettings = apiSettings.asInstanceOf[js.Any], auto = auto, cache = cache, cacheType = cacheType.asInstanceOf[js.Any], childrenOnly = childrenOnly, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], deactivate = deactivate.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], evaluateScripts = evaluateScripts.asInstanceOf[js.Any], history = history, historyType = historyType.asInstanceOf[js.Any], ignoreFirstLoad = ignoreFirstLoad, loadOnce = loadOnce, maxDepth = maxDepth, metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onFirstLoad = onFirstLoad, onLoad = onLoad, onRequest = onRequest, onVisible = onVisible, path = path.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

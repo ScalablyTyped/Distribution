@@ -28,9 +28,7 @@ object GLViewHeadlessProps {
     pixelRatio: scala.Int | scala.Double = null,
     webglContextAttributes: stdLib.WebGLContextAttributes = null
   ): GLViewHeadlessProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(onContextCreate)
     if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(onContextFailure)
     if (onContextLost != null) __obj.updateDynamic("onContextLost")(onContextLost)

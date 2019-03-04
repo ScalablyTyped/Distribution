@@ -24,13 +24,8 @@ object ID3PieChart {
     redraw: js.Function0[scala.Unit],
     updateProp: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ID3PieChart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeSegment")(closeSegment)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getOpenSegment")(getOpenSegment)
-    __obj.updateDynamic("openSegment")(openSegment)
-    __obj.updateDynamic("redraw")(redraw)
-    __obj.updateDynamic("updateProp")(updateProp)
+    val __obj = js.Dynamic.literal(closeSegment = closeSegment, destroy = destroy, getOpenSegment = getOpenSegment, openSegment = openSegment, redraw = redraw, updateProp = updateProp)
+  
     __obj.asInstanceOf[ID3PieChart]
   }
 }

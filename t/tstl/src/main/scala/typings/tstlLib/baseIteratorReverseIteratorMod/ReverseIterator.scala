@@ -18,7 +18,7 @@ abstract class ReverseIterator[T /* <: Elem */, Source /* <: tstlLib.baseContain
   /**
     * @hidden
     */
-  var `base_`: Base = js.native
+  var base_ : Base = js.native
   /**
     * @inheritDoc
     */

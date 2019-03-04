@@ -24,11 +24,8 @@ object Anon_Args {
     ],
     removeMatchingSelector: js.Function2[S, /* repeated */ js.Any, scala.Unit]
   ): Anon_Args[S, R, C, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("clearCache")(clearCache)
-    __obj.updateDynamic("getMatchingSelector")(getMatchingSelector)
-    __obj.updateDynamic("removeMatchingSelector")(removeMatchingSelector)
+    val __obj = js.Dynamic.literal(cache = cache, clearCache = clearCache, getMatchingSelector = getMatchingSelector, removeMatchingSelector = removeMatchingSelector)
+  
     __obj.asInstanceOf[Anon_Args[S, R, C, D]]
   }
 }

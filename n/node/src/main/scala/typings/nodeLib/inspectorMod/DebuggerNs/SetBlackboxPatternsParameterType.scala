@@ -15,8 +15,8 @@ trait SetBlackboxPatternsParameterType extends js.Object {
 object SetBlackboxPatternsParameterType {
   @scala.inline
   def apply(patterns: js.Array[java.lang.String]): SetBlackboxPatternsParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patterns")(patterns)
+    val __obj = js.Dynamic.literal(patterns = patterns)
+  
     __obj.asInstanceOf[SetBlackboxPatternsParameterType]
   }
 }

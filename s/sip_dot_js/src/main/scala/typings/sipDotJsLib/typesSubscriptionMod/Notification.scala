@@ -12,8 +12,8 @@ trait Notification extends js.Object {
 object Notification {
   @scala.inline
   def apply(request: js.Any): Notification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[Notification]
   }
 }

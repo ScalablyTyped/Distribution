@@ -38,20 +38,8 @@ object CheapRuler {
     offset: js.Function3[Point, scala.Double, scala.Double, Point],
     pointOnLine: js.Function2[Line, Point, cheapDashRulerLib.Anon_Index]
   ): CheapRuler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("along")(along)
-    __obj.updateDynamic("area")(area)
-    __obj.updateDynamic("bearing")(bearing)
-    __obj.updateDynamic("bufferBBox")(bufferBBox)
-    __obj.updateDynamic("bufferPoint")(bufferPoint)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("insideBBox")(insideBBox)
-    __obj.updateDynamic("lineDistance")(lineDistance)
-    __obj.updateDynamic("lineSlice")(lineSlice)
-    __obj.updateDynamic("lineSliceAlong")(lineSliceAlong)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("pointOnLine")(pointOnLine)
+    val __obj = js.Dynamic.literal(along = along, area = area, bearing = bearing, bufferBBox = bufferBBox, bufferPoint = bufferPoint, destination = destination, distance = distance, insideBBox = insideBBox, lineDistance = lineDistance, lineSlice = lineSlice, lineSliceAlong = lineSliceAlong, offset = offset, pointOnLine = pointOnLine)
+  
     __obj.asInstanceOf[CheapRuler]
   }
 }

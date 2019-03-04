@@ -29,10 +29,8 @@ trait ASPxClientRichEditAutoCorrectEventArgs extends ASPxClientEventArgs {
 object ASPxClientRichEditAutoCorrectEventArgs {
   @scala.inline
   def apply(handled: scala.Boolean, interval: Interval, text: java.lang.String): ASPxClientRichEditAutoCorrectEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(handled = handled, interval = interval, text = text)
+  
     __obj.asInstanceOf[ASPxClientRichEditAutoCorrectEventArgs]
   }
 }

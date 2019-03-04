@@ -13,8 +13,8 @@ trait OpReturnOutput extends Output {
 object OpReturnOutput {
   @scala.inline
   def apply(dataHex: java.lang.String, `type`: trezorDashConnectLib.trezorDashConnectLibStrings.opreturn): OpReturnOutput = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dataHex")(dataHex)
+    val __obj = js.Dynamic.literal(dataHex = dataHex)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OpReturnOutput]
   }
 }

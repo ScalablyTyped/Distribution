@@ -69,9 +69,7 @@ object FleetArgs {
       atPulumiAwsLib.Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations
     ] = null
   ): FleetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId.asInstanceOf[js.Any])
-    __obj.updateDynamic("ec2InstanceType")(ec2InstanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], ec2InstanceType = ec2InstanceType.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ec2InboundPermissions != null) __obj.updateDynamic("ec2InboundPermissions")(ec2InboundPermissions.asInstanceOf[js.Any])
     if (metricGroups != null) __obj.updateDynamic("metricGroups")(metricGroups.asInstanceOf[js.Any])

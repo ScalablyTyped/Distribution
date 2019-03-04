@@ -42,13 +42,8 @@ object BuildDefinitionSourceProvider {
     name: java.lang.String,
     supportedTriggerTypes: DefinitionTriggerType
   ): BuildDefinitionSourceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionUri")(definitionUri)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("supportedTriggerTypes")(supportedTriggerTypes)
+    val __obj = js.Dynamic.literal(definitionUri = definitionUri, fields = fields, id = id, lastModified = lastModified, name = name, supportedTriggerTypes = supportedTriggerTypes)
+  
     __obj.asInstanceOf[BuildDefinitionSourceProvider]
   }
 }

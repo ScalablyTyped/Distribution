@@ -12,8 +12,8 @@ trait HTMLVideoElement extends js.Object {
 object HTMLVideoElement {
   @scala.inline
   def apply(mozSrcObject: js.Any): HTMLVideoElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mozSrcObject")(mozSrcObject)
+    val __obj = js.Dynamic.literal(mozSrcObject = mozSrcObject)
+  
     __obj.asInstanceOf[HTMLVideoElement]
   }
 }

@@ -14,10 +14,8 @@ trait ElementContentEditable extends js.Object {
 object ElementContentEditable {
   @scala.inline
   def apply(contentEditable: java.lang.String, inputMode: java.lang.String, isContentEditable: scala.Boolean): ElementContentEditable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentEditable")(contentEditable)
-    __obj.updateDynamic("inputMode")(inputMode)
-    __obj.updateDynamic("isContentEditable")(isContentEditable)
+    val __obj = js.Dynamic.literal(contentEditable = contentEditable, inputMode = inputMode, isContentEditable = isContentEditable)
+  
     __obj.asInstanceOf[ElementContentEditable]
   }
 }

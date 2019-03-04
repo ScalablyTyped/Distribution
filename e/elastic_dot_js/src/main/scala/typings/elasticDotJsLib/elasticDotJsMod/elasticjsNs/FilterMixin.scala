@@ -37,12 +37,8 @@ object FilterMixin {
     name: js.Function1[java.lang.String, FilterMixin],
     toJSON: js.Function0[FilterMixin]
   ): FilterMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON)
+  
     __obj.asInstanceOf[FilterMixin]
   }
 }

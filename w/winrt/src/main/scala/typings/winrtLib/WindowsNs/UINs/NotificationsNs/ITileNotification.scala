@@ -18,10 +18,8 @@ object ITileNotification {
     expirationTime: stdLib.Date,
     tag: java.lang.String
   ): ITileNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(content = content, expirationTime = expirationTime, tag = tag)
+  
     __obj.asInstanceOf[ITileNotification]
   }
 }

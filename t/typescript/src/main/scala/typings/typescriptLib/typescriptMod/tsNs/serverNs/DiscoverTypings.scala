@@ -27,14 +27,7 @@ object DiscoverTypings {
     unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String],
     cachePath: java.lang.String = null
   ): DiscoverTypings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compilerOptions")(compilerOptions)
-    __obj.updateDynamic("fileNames")(fileNames)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("projectName")(projectName)
-    __obj.updateDynamic("projectRootPath")(projectRootPath)
-    __obj.updateDynamic("typeAcquisition")(typeAcquisition)
-    __obj.updateDynamic("unresolvedImports")(unresolvedImports)
+    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions, fileNames = fileNames, kind = kind, projectName = projectName, projectRootPath = projectRootPath, typeAcquisition = typeAcquisition, unresolvedImports = unresolvedImports)
     if (cachePath != null) __obj.updateDynamic("cachePath")(cachePath)
     __obj.asInstanceOf[DiscoverTypings]
   }

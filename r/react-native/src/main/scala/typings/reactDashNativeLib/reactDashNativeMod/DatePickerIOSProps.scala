@@ -108,9 +108,7 @@ object DatePickerIOSProps {
     testID: java.lang.String = null,
     timeZoneOffsetInMinutes: scala.Int | scala.Double = null
   ): DatePickerIOSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("onDateChange")(onDateChange)
+    val __obj = js.Dynamic.literal(date = date, onDateChange = onDateChange)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

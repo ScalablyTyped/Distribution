@@ -42,9 +42,7 @@ object TranslationsResource {
     model: java.lang.String = null,
     translatedText: java.lang.String = null
   ): TranslationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("translate")(translate)
+    val __obj = js.Dynamic.literal(list = list, translate = translate)
     if (detectedSourceLanguage != null) __obj.updateDynamic("detectedSourceLanguage")(detectedSourceLanguage)
     if (model != null) __obj.updateDynamic("model")(model)
     if (translatedText != null) __obj.updateDynamic("translatedText")(translatedText)

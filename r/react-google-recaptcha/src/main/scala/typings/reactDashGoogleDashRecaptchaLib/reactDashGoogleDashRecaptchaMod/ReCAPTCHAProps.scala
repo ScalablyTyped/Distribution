@@ -65,8 +65,7 @@ object ReCAPTCHAProps {
     theme: reactDashGoogleDashRecaptchaLib.Theme = null,
     `type`: reactDashGoogleDashRecaptchaLib.Type = null
   ): ReCAPTCHAProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sitekey")(sitekey)
+    val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onExpired != null) __obj.updateDynamic("onExpired")(onExpired)

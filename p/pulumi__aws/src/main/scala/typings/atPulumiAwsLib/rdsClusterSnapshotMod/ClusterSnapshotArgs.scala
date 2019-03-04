@@ -22,9 +22,8 @@ object ClusterSnapshotArgs {
     dbClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     dbClusterSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): ClusterSnapshotArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("dbClusterSnapshotIdentifier")(dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dbClusterIdentifier = dbClusterIdentifier.asInstanceOf[js.Any], dbClusterSnapshotIdentifier = dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ClusterSnapshotArgs]
   }
 }

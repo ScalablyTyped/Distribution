@@ -127,17 +127,8 @@ object XNumberFormats {
     release: js.Function0[scala.Unit],
     removeByKey: js.Function1[scala.Double, scala.Unit]
   ): XNumberFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addNew")(addNew)
-    __obj.updateDynamic("addNewConverted")(addNewConverted)
-    __obj.updateDynamic("generateFormat")(generateFormat)
-    __obj.updateDynamic("getByKey")(getByKey)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryKey")(queryKey)
-    __obj.updateDynamic("queryKeys")(queryKeys)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByKey")(removeByKey)
+    val __obj = js.Dynamic.literal(acquire = acquire, addNew = addNew, addNewConverted = addNewConverted, generateFormat = generateFormat, getByKey = getByKey, queryInterface = queryInterface, queryKey = queryKey, queryKeys = queryKeys, release = release, removeByKey = removeByKey)
+  
     __obj.asInstanceOf[XNumberFormats]
   }
 }

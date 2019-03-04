@@ -20,10 +20,8 @@ object Grid {
     getSelectedRows: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[xrmLib.XrmNs.ControlsNs.GridNs.GridRow]],
     getTotalRecordCount: js.Function0[scala.Double]
   ): Grid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("getSelectedRows")(getSelectedRows)
-    __obj.updateDynamic("getTotalRecordCount")(getTotalRecordCount)
+    val __obj = js.Dynamic.literal(getRows = getRows, getSelectedRows = getSelectedRows, getTotalRecordCount = getTotalRecordCount)
+  
     __obj.asInstanceOf[Grid]
   }
 }

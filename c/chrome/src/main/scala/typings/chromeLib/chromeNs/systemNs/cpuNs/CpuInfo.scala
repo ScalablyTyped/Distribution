@@ -30,12 +30,8 @@ object CpuInfo {
     numOfProcessors: scala.Double,
     processors: js.Array[ProcessorInfo]
   ): CpuInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("archName")(archName)
-    __obj.updateDynamic("features")(features)
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("numOfProcessors")(numOfProcessors)
-    __obj.updateDynamic("processors")(processors)
+    val __obj = js.Dynamic.literal(archName = archName, features = features, modelName = modelName, numOfProcessors = numOfProcessors, processors = processors)
+  
     __obj.asInstanceOf[CpuInfo]
   }
 }

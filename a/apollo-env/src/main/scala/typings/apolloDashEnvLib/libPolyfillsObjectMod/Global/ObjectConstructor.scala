@@ -17,8 +17,8 @@ object ObjectConstructor {
       stdLib.Record[js.Any, js.Any]
     ]
   ): ObjectConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromEntries")(fromEntries)
+    val __obj = js.Dynamic.literal(fromEntries = fromEntries)
+  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

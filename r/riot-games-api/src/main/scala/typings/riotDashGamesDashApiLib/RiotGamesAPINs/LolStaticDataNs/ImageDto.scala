@@ -26,14 +26,8 @@ object ImageDto {
     x: scala.Double,
     y: scala.Double
   ): ImageDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("sprite")(sprite)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(full = full, group = group, h = h, sprite = sprite, w = w, x = x, y = y)
+  
     __obj.asInstanceOf[ImageDto]
   }
 }

@@ -16,9 +16,8 @@ object Anon_PANEL {
     PANEL: chromeDashAppsLib.chromeDashAppsLibStrings.panel,
     SHELL: chromeDashAppsLib.chromeDashAppsLibStrings.shell
   ): Anon_PANEL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PANEL")(PANEL)
-    __obj.updateDynamic("SHELL")(SHELL)
+    val __obj = js.Dynamic.literal(PANEL = PANEL, SHELL = SHELL)
+  
     __obj.asInstanceOf[Anon_PANEL]
   }
 }

@@ -12,8 +12,8 @@ trait RadioButtonsItemProps extends js.Object {
 object RadioButtonsItemProps {
   @scala.inline
   def apply(children: java.lang.String): RadioButtonsItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[RadioButtonsItemProps]
   }
 }

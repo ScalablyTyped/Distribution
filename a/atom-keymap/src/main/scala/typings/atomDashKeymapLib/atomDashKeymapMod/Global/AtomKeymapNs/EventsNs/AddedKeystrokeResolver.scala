@@ -34,11 +34,8 @@ object AddedKeystrokeResolver {
     keystroke: java.lang.String,
     layoutName: java.lang.String
   ): AddedKeystrokeResolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("keymap")(keymap)
-    __obj.updateDynamic("keystroke")(keystroke)
-    __obj.updateDynamic("layoutName")(layoutName)
+    val __obj = js.Dynamic.literal(event = event, keymap = keymap, keystroke = keystroke, layoutName = layoutName)
+  
     __obj.asInstanceOf[AddedKeystrokeResolver]
   }
 }

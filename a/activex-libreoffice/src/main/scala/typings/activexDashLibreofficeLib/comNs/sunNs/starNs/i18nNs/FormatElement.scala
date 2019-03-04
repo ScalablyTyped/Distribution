@@ -39,14 +39,8 @@ object FormatElement {
     formatUsage: java.lang.String,
     isDefault: scala.Boolean
   ): FormatElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatCode")(formatCode)
-    __obj.updateDynamic("formatIndex")(formatIndex)
-    __obj.updateDynamic("formatKey")(formatKey)
-    __obj.updateDynamic("formatName")(formatName)
-    __obj.updateDynamic("formatType")(formatType)
-    __obj.updateDynamic("formatUsage")(formatUsage)
-    __obj.updateDynamic("isDefault")(isDefault)
+    val __obj = js.Dynamic.literal(formatCode = formatCode, formatIndex = formatIndex, formatKey = formatKey, formatName = formatName, formatType = formatType, formatUsage = formatUsage, isDefault = isDefault)
+  
     __obj.asInstanceOf[FormatElement]
   }
 }

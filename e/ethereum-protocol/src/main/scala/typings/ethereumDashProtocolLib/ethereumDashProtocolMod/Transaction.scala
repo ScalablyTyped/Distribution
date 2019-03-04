@@ -34,14 +34,7 @@ object Transaction {
     to: java.lang.String = null,
     transactionIndex: scala.Int | scala.Double = null
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("gas")(gas)
-    __obj.updateDynamic("gasPrice")(gasPrice)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(from = from, gas = gas, gasPrice = gasPrice, hash = hash, input = input, nonce = nonce, value = value)
     if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash)
     if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to)

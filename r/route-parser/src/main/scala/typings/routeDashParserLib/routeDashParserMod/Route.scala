@@ -39,8 +39,8 @@ object Route {
       java.lang.String | routeDashParserLib.routeDashParserLibNumbers.`false`
     ]
   ): Route = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("reverse")(reverse)
+    val __obj = js.Dynamic.literal(reverse = reverse)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Route]
   }
 }

@@ -20,9 +20,7 @@ object Options {
     nonce: java.lang.String = null,
     speedy: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(container = container, key = key)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (!js.isUndefined(speedy)) __obj.updateDynamic("speedy")(speedy)
     __obj.asInstanceOf[Options]

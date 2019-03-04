@@ -12,9 +12,8 @@ trait SjclElGamalPublicKey extends SjclECCPublicKey {
 object SjclElGamalPublicKey {
   @scala.inline
   def apply(get: js.Function0[SjclECCPublicKeyData], kem: js.Function1[scala.Double, sjclLib.Anon_KeyTag]): SjclElGamalPublicKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("kem")(kem)
+    val __obj = js.Dynamic.literal(get = get, kem = kem)
+  
     __obj.asInstanceOf[SjclElGamalPublicKey]
   }
 }

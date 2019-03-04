@@ -45,13 +45,8 @@ object XDispatchInformationProvider {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDispatchInformationProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedCommandGroups")(SupportedCommandGroups)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getConfigurableDispatchInformation")(getConfigurableDispatchInformation)
-    __obj.updateDynamic("getSupportedCommandGroups")(getSupportedCommandGroups)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SupportedCommandGroups = SupportedCommandGroups, acquire = acquire, getConfigurableDispatchInformation = getConfigurableDispatchInformation, getSupportedCommandGroups = getSupportedCommandGroups, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDispatchInformationProvider]
   }
 }

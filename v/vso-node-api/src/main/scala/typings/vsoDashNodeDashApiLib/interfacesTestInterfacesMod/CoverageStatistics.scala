@@ -22,12 +22,8 @@ object CoverageStatistics {
     linesNotCovered: scala.Double,
     linesPartiallyCovered: scala.Double
   ): CoverageStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocksCovered")(blocksCovered)
-    __obj.updateDynamic("blocksNotCovered")(blocksNotCovered)
-    __obj.updateDynamic("linesCovered")(linesCovered)
-    __obj.updateDynamic("linesNotCovered")(linesNotCovered)
-    __obj.updateDynamic("linesPartiallyCovered")(linesPartiallyCovered)
+    val __obj = js.Dynamic.literal(blocksCovered = blocksCovered, blocksNotCovered = blocksNotCovered, linesCovered = linesCovered, linesNotCovered = linesNotCovered, linesPartiallyCovered = linesPartiallyCovered)
+  
     __obj.asInstanceOf[CoverageStatistics]
   }
 }

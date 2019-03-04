@@ -16,9 +16,8 @@ object Anon_Qk {
     qk: js.Array[qlikDashEngineapiLib.EngineAPINs.ISourceKeyRecord],
     qtr: js.Array[qlikDashEngineapiLib.EngineAPINs.ITableRecord]
   ): Anon_Qk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qk")(qk)
-    __obj.updateDynamic("qtr")(qtr)
+    val __obj = js.Dynamic.literal(qk = qk, qtr = qtr)
+  
     __obj.asInstanceOf[Anon_Qk]
   }
 }

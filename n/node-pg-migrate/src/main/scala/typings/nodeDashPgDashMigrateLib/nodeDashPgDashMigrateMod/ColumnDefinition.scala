@@ -37,7 +37,8 @@ object ColumnDefinition {
     referencesConstraintName: java.lang.String = null,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): ColumnDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (check != null) __obj.updateDynamic("check")(check)
     if (collation != null) __obj.updateDynamic("collation")(collation)
     if (comment != null) __obj.updateDynamic("comment")(comment)

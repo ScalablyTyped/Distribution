@@ -26,10 +26,8 @@ object DispatcherInterface {
       scala.Unit
     ]
   ): DispatcherInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("getStore")(getStore.asInstanceOf[js.Any])
-    __obj.updateDynamic("waitFor")(waitFor)
+    val __obj = js.Dynamic.literal(getContext = getContext, getStore = getStore.asInstanceOf[js.Any], waitFor = waitFor)
+  
     __obj.asInstanceOf[DispatcherInterface]
   }
 }

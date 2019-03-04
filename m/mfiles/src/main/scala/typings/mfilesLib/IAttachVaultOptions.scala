@@ -32,17 +32,8 @@ object IAttachVaultOptions {
     Flags: mfilesLib.MFilesNs.MFAttachVaultOptionsFlag,
     UpdateAttachmentGUID: scala.Boolean
   ): IAttachVaultOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DisableAll")(DisableAll)
-    __obj.updateDynamic("DisableEventHandlers")(DisableEventHandlers)
-    __obj.updateDynamic("DisableExportImportJobs")(DisableExportImportJobs)
-    __obj.updateDynamic("DisableExportedDataSets")(DisableExportedDataSets)
-    __obj.updateDynamic("DisableExternalObjectTypes")(DisableExternalObjectTypes)
-    __obj.updateDynamic("DisableExternalSources")(DisableExternalSources)
-    __obj.updateDynamic("DisableExternalUserGroups")(DisableExternalUserGroups)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("UpdateAttachmentGUID")(UpdateAttachmentGUID)
+    val __obj = js.Dynamic.literal(Clone = Clone, DisableAll = DisableAll, DisableEventHandlers = DisableEventHandlers, DisableExportImportJobs = DisableExportImportJobs, DisableExportedDataSets = DisableExportedDataSets, DisableExternalObjectTypes = DisableExternalObjectTypes, DisableExternalSources = DisableExternalSources, DisableExternalUserGroups = DisableExternalUserGroups, Flags = Flags, UpdateAttachmentGUID = UpdateAttachmentGUID)
+  
     __obj.asInstanceOf[IAttachVaultOptions]
   }
 }

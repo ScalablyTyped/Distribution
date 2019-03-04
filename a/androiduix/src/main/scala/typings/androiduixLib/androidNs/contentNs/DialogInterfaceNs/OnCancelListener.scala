@@ -12,8 +12,8 @@ trait OnCancelListener extends js.Object {
 object OnCancelListener {
   @scala.inline
   def apply(onCancel: js.Function1[androiduixLib.androidNs.contentNs.DialogInterface, scala.Unit]): OnCancelListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCancel")(onCancel)
+    val __obj = js.Dynamic.literal(onCancel = onCancel)
+  
     __obj.asInstanceOf[OnCancelListener]
   }
 }

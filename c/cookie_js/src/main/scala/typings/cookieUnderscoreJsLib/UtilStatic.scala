@@ -26,14 +26,8 @@ object UtilStatic {
     retrieve: js.Function2[java.lang.String, java.lang.String, java.lang.String],
     toArray: js.Function1[/* repeated */ js.Any, js.Array[_]]
   ): UtilStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("getKeys")(getKeys)
-    __obj.updateDynamic("isArray")(isArray)
-    __obj.updateDynamic("isObject")(isObject)
-    __obj.updateDynamic("retrieve")(retrieve)
-    __obj.updateDynamic("toArray")(toArray)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, getKeys = getKeys, isArray = isArray, isObject = isObject, retrieve = retrieve, toArray = toArray)
+  
     __obj.asInstanceOf[UtilStatic]
   }
 }

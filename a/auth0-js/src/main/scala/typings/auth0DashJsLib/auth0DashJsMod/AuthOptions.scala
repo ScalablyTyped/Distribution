@@ -36,9 +36,7 @@ object AuthOptions {
     responseType: java.lang.String = null,
     scope: java.lang.String = null
   ): AuthOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(clientID = clientID, domain = domain)
     if (!js.isUndefined(_disableDeprecationWarnings)) __obj.updateDynamic("_disableDeprecationWarnings")(_disableDeprecationWarnings)
     if (!js.isUndefined(_sendTelemetry)) __obj.updateDynamic("_sendTelemetry")(_sendTelemetry)
     if (_telemetryInfo != null) __obj.updateDynamic("_telemetryInfo")(_telemetryInfo)

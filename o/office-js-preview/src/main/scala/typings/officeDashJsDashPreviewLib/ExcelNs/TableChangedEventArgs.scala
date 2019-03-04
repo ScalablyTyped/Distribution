@@ -90,15 +90,8 @@ object TableChangedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableChanged,
     worksheetId: java.lang.String
   ): TableChangedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("getRangeOrNullObject")(getRangeOrNullObject)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableId")(tableId)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(address = address, changeType = changeType.asInstanceOf[js.Any], details = details, getRange = getRange, getRangeOrNullObject = getRangeOrNullObject, source = source.asInstanceOf[js.Any], tableId = tableId, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableChangedEventArgs]
   }
 }

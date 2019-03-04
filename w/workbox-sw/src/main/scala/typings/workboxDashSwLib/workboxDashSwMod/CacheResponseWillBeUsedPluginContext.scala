@@ -20,11 +20,8 @@ object CacheResponseWillBeUsedPluginContext {
     matchOptions: js.Any,
     request: stdLib.Request
   ): CacheResponseWillBeUsedPluginContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("cachedResponse")(cachedResponse)
-    __obj.updateDynamic("matchOptions")(matchOptions)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, cachedResponse = cachedResponse, matchOptions = matchOptions, request = request)
+  
     __obj.asInstanceOf[CacheResponseWillBeUsedPluginContext]
   }
 }

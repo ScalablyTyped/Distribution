@@ -26,14 +26,8 @@ object Review {
     state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED,
     user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
   ): Review = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("commit_id")(commit_id)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pull_request_url")(pull_request_url)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(body = body, commit_id = commit_id, html_url = html_url, id = id, pull_request_url = pull_request_url, state = state.asInstanceOf[js.Any], user = user)
+  
     __obj.asInstanceOf[Review]
   }
 }

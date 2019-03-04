@@ -28,10 +28,8 @@ object IBANTokenData {
     account_holder_type: stripejsLib.stripejsLibStrings.individual | stripejsLib.stripejsLibStrings.company,
     currency: java.lang.String
   ): IBANTokenData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account_holder_name")(account_holder_name)
-    __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(account_holder_name = account_holder_name, account_holder_type = account_holder_type.asInstanceOf[js.Any], currency = currency)
+  
     __obj.asInstanceOf[IBANTokenData]
   }
 }

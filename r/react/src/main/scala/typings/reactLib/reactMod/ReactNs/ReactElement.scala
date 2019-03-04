@@ -18,8 +18,8 @@ object ReactElement {
     `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any,
     key: Key = null
   ): ReactElement[P] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactElement[P]]
   }

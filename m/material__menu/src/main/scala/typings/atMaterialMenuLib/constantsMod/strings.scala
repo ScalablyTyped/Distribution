@@ -21,11 +21,8 @@ object strings {
     ITEMS_SELECTOR: atMaterialMenuLib.atMaterialMenuLibStrings.`DOTmdc-menu__items`,
     SELECTED_EVENT: atMaterialMenuLib.atMaterialMenuLibStrings.`MDCMenu:selected`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARIA_DISABLED_ATTR")(ARIA_DISABLED_ATTR)
-    __obj.updateDynamic("CANCEL_EVENT")(CANCEL_EVENT)
-    __obj.updateDynamic("ITEMS_SELECTOR")(ITEMS_SELECTOR)
-    __obj.updateDynamic("SELECTED_EVENT")(SELECTED_EVENT)
+    val __obj = js.Dynamic.literal(ARIA_DISABLED_ATTR = ARIA_DISABLED_ATTR, CANCEL_EVENT = CANCEL_EVENT, ITEMS_SELECTOR = ITEMS_SELECTOR, SELECTED_EVENT = SELECTED_EVENT)
+  
     __obj.asInstanceOf[strings]
   }
 }

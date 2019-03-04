@@ -12,8 +12,8 @@ trait ScaleControlOptions extends js.Object {
 object ScaleControlOptions {
   @scala.inline
   def apply(position: Position): ScaleControlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
+  
     __obj.asInstanceOf[ScaleControlOptions]
   }
 }

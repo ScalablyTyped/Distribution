@@ -12,8 +12,8 @@ trait ILightbox extends js.Object {
 object ILightbox {
   @scala.inline
   def apply(openModal: js.Function2[js.Array[ILightboxImageInfo], scala.Double, scala.Unit]): ILightbox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openModal")(openModal)
+    val __obj = js.Dynamic.literal(openModal = openModal)
+  
     __obj.asInstanceOf[ILightbox]
   }
 }

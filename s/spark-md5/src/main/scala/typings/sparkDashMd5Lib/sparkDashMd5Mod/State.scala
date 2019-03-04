@@ -14,10 +14,8 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(buff: stdLib.Uint8Array, hash: js.Array[scala.Double], length: scala.Double): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buff")(buff)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(buff = buff, hash = hash, length = length)
+  
     __obj.asInstanceOf[State]
   }
 }

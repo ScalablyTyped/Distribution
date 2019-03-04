@@ -13,9 +13,8 @@ trait Anon_ComputeEnvironment extends js.Object {
 object Anon_ComputeEnvironment {
   @scala.inline
   def apply(computeEnvironment: java.lang.String, order: scala.Double): Anon_ComputeEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeEnvironment")(computeEnvironment)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment, order = order)
+  
     __obj.asInstanceOf[Anon_ComputeEnvironment]
   }
 }

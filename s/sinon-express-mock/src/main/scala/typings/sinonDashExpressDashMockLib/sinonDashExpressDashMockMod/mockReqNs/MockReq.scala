@@ -34,18 +34,8 @@ object MockReq {
     query: js.Object,
     session: js.Object
   ): MockReq = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accepts")(accepts)
-    __obj.updateDynamic("acceptsCharsets")(acceptsCharsets)
-    __obj.updateDynamic("acceptsEncodings")(acceptsEncodings)
-    __obj.updateDynamic("acceptsLanguages")(acceptsLanguages)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("flash")(flash)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(accepts = accepts, acceptsCharsets = acceptsCharsets, acceptsEncodings = acceptsEncodings, acceptsLanguages = acceptsLanguages, body = body, flash = flash, get = get, is = is, params = params, query = query, session = session)
+  
     __obj.asInstanceOf[MockReq]
   }
 }

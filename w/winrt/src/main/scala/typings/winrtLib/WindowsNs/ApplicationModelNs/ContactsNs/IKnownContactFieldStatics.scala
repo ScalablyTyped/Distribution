@@ -24,13 +24,8 @@ object IKnownContactFieldStatics {
     location: java.lang.String,
     phoneNumber: java.lang.String
   ): IKnownContactFieldStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertNameToType")(convertNameToType)
-    __obj.updateDynamic("convertTypeToName")(convertTypeToName)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("instantMessage")(instantMessage)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(convertNameToType = convertNameToType, convertTypeToName = convertTypeToName, email = email, instantMessage = instantMessage, location = location, phoneNumber = phoneNumber)
+  
     __obj.asInstanceOf[IKnownContactFieldStatics]
   }
 }

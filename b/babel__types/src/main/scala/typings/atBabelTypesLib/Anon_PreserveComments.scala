@@ -12,8 +12,8 @@ trait Anon_PreserveComments extends js.Object {
 object Anon_PreserveComments {
   @scala.inline
   def apply(preserveComments: scala.Boolean): Anon_PreserveComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("preserveComments")(preserveComments)
+    val __obj = js.Dynamic.literal(preserveComments = preserveComments)
+  
     __obj.asInstanceOf[Anon_PreserveComments]
   }
 }

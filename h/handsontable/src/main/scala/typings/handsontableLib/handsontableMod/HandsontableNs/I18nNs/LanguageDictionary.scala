@@ -16,8 +16,7 @@ object LanguageDictionary {
     languageCode: java.lang.String,
     StringDictionary: /* phraseKey */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null
   ): LanguageDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languageCode")(languageCode)
+    val __obj = js.Dynamic.literal(languageCode = languageCode)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LanguageDictionary]
   }

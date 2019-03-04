@@ -20,8 +20,8 @@ object ResponseToolkit {
       js.Promise[hapiLib.hapiMod.ResponseObject]
     ]
   ): ResponseToolkit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("proxy")(proxy)
+    val __obj = js.Dynamic.literal(proxy = proxy)
+  
     __obj.asInstanceOf[ResponseToolkit]
   }
 }

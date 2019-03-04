@@ -20,10 +20,7 @@ object PendingMacrotask {
     source: java.lang.String,
     runCount: scala.Int | scala.Double = null
   ): PendingMacrotask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creationLocation")(creationLocation)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(creationLocation = creationLocation, data = data, source = source)
     if (runCount != null) __obj.updateDynamic("runCount")(runCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingMacrotask]
   }

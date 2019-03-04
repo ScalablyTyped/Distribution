@@ -72,19 +72,8 @@ object GetReplicationGroupResult {
     snapshotRetentionLimit: scala.Double,
     snapshotWindow: java.lang.String
   ): GetReplicationGroupResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authTokenEnabled")(authTokenEnabled)
-    __obj.updateDynamic("automaticFailoverEnabled")(automaticFailoverEnabled)
-    __obj.updateDynamic("configurationEndpointAddress")(configurationEndpointAddress)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("memberClusters")(memberClusters)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("numberCacheClusters")(numberCacheClusters)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("primaryEndpointAddress")(primaryEndpointAddress)
-    __obj.updateDynamic("replicationGroupDescription")(replicationGroupDescription)
-    __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit)
-    __obj.updateDynamic("snapshotWindow")(snapshotWindow)
+    val __obj = js.Dynamic.literal(authTokenEnabled = authTokenEnabled, automaticFailoverEnabled = automaticFailoverEnabled, configurationEndpointAddress = configurationEndpointAddress, id = id, memberClusters = memberClusters, nodeType = nodeType, numberCacheClusters = numberCacheClusters, port = port, primaryEndpointAddress = primaryEndpointAddress, replicationGroupDescription = replicationGroupDescription, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow)
+  
     __obj.asInstanceOf[GetReplicationGroupResult]
   }
 }

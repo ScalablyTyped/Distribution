@@ -18,10 +18,8 @@ object Anon_Compiler {
     components: js.Any,
     transform: js.Array[_]
   ): Anon_Compiler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(compiler = compiler, components = components, transform = transform)
+  
     __obj.asInstanceOf[Anon_Compiler]
   }
 }

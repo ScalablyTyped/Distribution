@@ -16,9 +16,8 @@ object Printers {
     filter: js.Function1[js.Any, java.lang.String],
     filters: js.Function1[js.Array[_], java.lang.String]
   ): Printers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filter = filter, filters = filters)
+  
     __obj.asInstanceOf[Printers]
   }
 }

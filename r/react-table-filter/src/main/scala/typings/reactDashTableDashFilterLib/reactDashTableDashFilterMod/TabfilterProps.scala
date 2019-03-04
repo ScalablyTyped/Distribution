@@ -22,9 +22,7 @@ object TabfilterProps {
     initialFilters: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
     rowClass: java.lang.String = null
   ): TabfilterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onFilterUpdate")(onFilterUpdate)
-    __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onFilterUpdate = onFilterUpdate, rows = rows.asInstanceOf[js.Any])
     if (initialFilters != null) __obj.updateDynamic("initialFilters")(initialFilters.asInstanceOf[js.Any])
     if (rowClass != null) __obj.updateDynamic("rowClass")(rowClass)
     __obj.asInstanceOf[TabfilterProps]

@@ -17,11 +17,8 @@ object IContactPickerActivatedEventArgs {
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
   ): IContactPickerActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contactPickerUI")(contactPickerUI)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
+    val __obj = js.Dynamic.literal(contactPickerUI = contactPickerUI, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen)
+  
     __obj.asInstanceOf[IContactPickerActivatedEventArgs]
   }
 }

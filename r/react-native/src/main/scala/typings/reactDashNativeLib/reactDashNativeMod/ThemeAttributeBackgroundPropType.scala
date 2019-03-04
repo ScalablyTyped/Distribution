@@ -14,8 +14,8 @@ trait ThemeAttributeBackgroundPropType extends BaseBackgroundPropType {
 object ThemeAttributeBackgroundPropType {
   @scala.inline
   def apply(attribute: java.lang.String, `type`: reactDashNativeLib.reactDashNativeLibStrings.ThemeAttrAndroid): ThemeAttributeBackgroundPropType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attribute")(attribute)
+    val __obj = js.Dynamic.literal(attribute = attribute)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ThemeAttributeBackgroundPropType]
   }
 }

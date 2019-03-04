@@ -13,9 +13,8 @@ trait IOCRPageResult extends js.Object {
 object IOCRPageResult {
   @scala.inline
   def apply(OCRZoneResults: IOCRZoneResults, PageNum: scala.Double): IOCRPageResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OCRZoneResults")(OCRZoneResults)
-    __obj.updateDynamic("PageNum")(PageNum)
+    val __obj = js.Dynamic.literal(OCRZoneResults = OCRZoneResults, PageNum = PageNum)
+  
     __obj.asInstanceOf[IOCRPageResult]
   }
 }

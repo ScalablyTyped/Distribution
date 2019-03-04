@@ -16,9 +16,8 @@ trait TimedTextDouble extends js.Object {
 object TimedTextDouble {
   @scala.inline
   def apply(unit: TimedTextUnit, value: scala.Double): TimedTextDouble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(unit = unit, value = value)
+  
     __obj.asInstanceOf[TimedTextDouble]
   }
 }

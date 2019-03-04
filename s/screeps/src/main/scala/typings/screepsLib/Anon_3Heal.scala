@@ -13,9 +13,8 @@ trait Anon_3Heal extends js.Object {
 object Anon_3Heal {
   @scala.inline
   def apply(heal: screepsLib.screepsLibNumbers.`3`, rangedHeal: screepsLib.screepsLibNumbers.`3`): Anon_3Heal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("heal")(heal)
-    __obj.updateDynamic("rangedHeal")(rangedHeal)
+    val __obj = js.Dynamic.literal(heal = heal, rangedHeal = rangedHeal)
+  
     __obj.asInstanceOf[Anon_3Heal]
   }
 }

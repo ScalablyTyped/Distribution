@@ -50,13 +50,8 @@ object PriorityQueue {
     peek: js.Function0[T],
     size: js.Function0[scala.Double]
   ): PriorityQueue[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deq")(deq)
-    __obj.updateDynamic("enq")(enq)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(deq = deq, enq = enq, forEach = forEach, isEmpty = isEmpty, peek = peek, size = size)
+  
     __obj.asInstanceOf[PriorityQueue[T]]
   }
 }

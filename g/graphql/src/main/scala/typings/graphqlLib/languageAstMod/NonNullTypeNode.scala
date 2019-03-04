@@ -20,8 +20,8 @@ object NonNullTypeNode {
     `type`: NamedTypeNode | ListTypeNode,
     loc: Location = null
   ): NonNullTypeNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[NonNullTypeNode]
   }

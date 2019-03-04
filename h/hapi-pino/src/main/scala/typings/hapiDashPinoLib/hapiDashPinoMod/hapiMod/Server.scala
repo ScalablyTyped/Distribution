@@ -12,8 +12,8 @@ trait Server extends js.Object {
 object Server {
   @scala.inline
   def apply(logger: js.Function0[pinoLib.pinoMod.PNs.Logger]): Server = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(logger = logger)
+  
     __obj.asInstanceOf[Server]
   }
 }

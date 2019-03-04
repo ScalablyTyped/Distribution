@@ -25,12 +25,8 @@ object Element {
     matches: js.Function1[java.lang.String, scala.Boolean],
     prepend: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
   ): Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("closest")(closest)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("prepend")(prepend)
+    val __obj = js.Dynamic.literal(append = append, children = children, closest = closest, matches = matches, prepend = prepend)
+  
     __obj.asInstanceOf[Element]
   }
 }

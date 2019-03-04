@@ -28,14 +28,7 @@ object Dopri {
     ymid: numericLib.Vector,
     events: scala.Boolean | numericLib.VectorBoolean = null
   ): Dopri = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("ymid")(ymid)
+    val __obj = js.Dynamic.literal(at = at, f = f, iterations = iterations, msg = msg, x = x, y = y, ymid = ymid)
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dopri]
   }

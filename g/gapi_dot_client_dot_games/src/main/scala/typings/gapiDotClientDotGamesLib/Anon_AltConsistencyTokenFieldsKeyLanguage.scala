@@ -45,8 +45,7 @@ object Anon_AltConsistencyTokenFieldsKeyLanguage {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltConsistencyTokenFieldsKeyLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leaderboardId")(leaderboardId)
+    val __obj = js.Dynamic.literal(leaderboardId = leaderboardId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

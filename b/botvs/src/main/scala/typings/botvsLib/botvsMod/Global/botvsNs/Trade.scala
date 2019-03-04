@@ -40,12 +40,8 @@ object Trade {
     Time: scala.Double,
     Type: VOrderType
   ): Trade = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Amount")(Amount)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Price")(Price)
-    __obj.updateDynamic("Time")(Time)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Amount = Amount, Id = Id, Price = Price, Time = Time, Type = Type)
+  
     __obj.asInstanceOf[Trade]
   }
 }

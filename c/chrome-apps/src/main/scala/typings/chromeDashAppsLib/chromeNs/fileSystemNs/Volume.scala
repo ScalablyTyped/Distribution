@@ -21,8 +21,7 @@ trait Volume extends js.Object {
 object Volume {
   @scala.inline
   def apply(volumeId: java.lang.String, writable: js.UndefOr[scala.Boolean] = js.undefined): Volume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(volumeId = volumeId)
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
     __obj.asInstanceOf[Volume]
   }

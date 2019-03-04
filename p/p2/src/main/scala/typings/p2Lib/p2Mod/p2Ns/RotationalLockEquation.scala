@@ -44,31 +44,8 @@ object RotationalLockEquation {
     timeStep: scala.Double,
     update: js.Function0[scala.Unit]
   ): RotationalLockEquation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("addToWlambda")(addToWlambda)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("computeB")(computeB)
-    __obj.updateDynamic("computeGW")(computeGW)
-    __obj.updateDynamic("computeGWlambda")(computeGWlambda)
-    __obj.updateDynamic("computeGiMGt")(computeGiMGt)
-    __obj.updateDynamic("computeGiMf")(computeGiMf)
-    __obj.updateDynamic("computeGq")(computeGq)
-    __obj.updateDynamic("computeInvC")(computeInvC)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("epsilon")(epsilon)
-    __obj.updateDynamic("gmult")(gmult)
-    __obj.updateDynamic("maxForce")(maxForce)
-    __obj.updateDynamic("minForce")(minForce)
-    __obj.updateDynamic("multiplier")(multiplier)
-    __obj.updateDynamic("needsUpdate")(needsUpdate)
-    __obj.updateDynamic("relativeVelocity")(relativeVelocity)
-    __obj.updateDynamic("relaxation")(relaxation)
-    __obj.updateDynamic("stiffness")(stiffness)
-    __obj.updateDynamic("timeStep")(timeStep)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(G = G, addToWlambda = addToWlambda, angle = angle, bodyA = bodyA, bodyB = bodyB, computeB = computeB, computeGW = computeGW, computeGWlambda = computeGWlambda, computeGiMGt = computeGiMGt, computeGiMf = computeGiMf, computeGq = computeGq, computeInvC = computeInvC, enabled = enabled, epsilon = epsilon, gmult = gmult, maxForce = maxForce, minForce = minForce, multiplier = multiplier, needsUpdate = needsUpdate, relativeVelocity = relativeVelocity, relaxation = relaxation, stiffness = stiffness, timeStep = timeStep, update = update)
+  
     __obj.asInstanceOf[RotationalLockEquation]
   }
 }

@@ -12,8 +12,8 @@ trait SuiteInfo extends js.Object {
 object SuiteInfo {
   @scala.inline
   def apply(totalSpecsDefined: scala.Double): SuiteInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("totalSpecsDefined")(totalSpecsDefined)
+    val __obj = js.Dynamic.literal(totalSpecsDefined = totalSpecsDefined)
+  
     __obj.asInstanceOf[SuiteInfo]
   }
 }

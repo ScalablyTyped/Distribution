@@ -36,9 +36,7 @@ object TestScriptOrigin {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): TestScriptOrigin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("profile")(profile)
+    val __obj = js.Dynamic.literal(index = index, profile = profile)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_index != null) __obj.updateDynamic("_index")(_index)

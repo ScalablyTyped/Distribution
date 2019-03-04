@@ -26,9 +26,8 @@ object TextHelper {
     decodePayload: js.Function1[js.Any, java.lang.String],
     encodePayload: js.Function3[java.lang.String, java.lang.String, java.lang.String, js.Array[scala.Double]]
   ): TextHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decodePayload")(decodePayload)
-    __obj.updateDynamic("encodePayload")(encodePayload)
+    val __obj = js.Dynamic.literal(decodePayload = decodePayload, encodePayload = encodePayload)
+  
     __obj.asInstanceOf[TextHelper]
   }
 }

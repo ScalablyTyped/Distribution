@@ -24,13 +24,8 @@ object PrivateKey {
     toBuffer: js.Function2[java.lang.String, js.Any, nodeLib.Buffer],
     toPublic: js.Function0[Key]
   ): PrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSign")(createSign)
-    __obj.updateDynamic("createVerify")(createVerify)
-    __obj.updateDynamic("derive")(derive)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("toBuffer")(toBuffer)
-    __obj.updateDynamic("toPublic")(toPublic)
+    val __obj = js.Dynamic.literal(createSign = createSign, createVerify = createVerify, derive = derive, hash = hash, toBuffer = toBuffer, toPublic = toPublic)
+  
     __obj.asInstanceOf[PrivateKey]
   }
 }

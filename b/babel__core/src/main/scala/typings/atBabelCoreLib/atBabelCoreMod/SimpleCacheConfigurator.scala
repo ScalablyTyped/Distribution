@@ -44,11 +44,8 @@ object SimpleCacheConfigurator {
     never: js.Function0[scala.Unit],
     using: js.Function1[SimpleCacheCallback[js.Any], js.Any]
   ): SimpleCacheConfigurator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forever")(forever)
-    __obj.updateDynamic("invalidate")(invalidate)
-    __obj.updateDynamic("never")(never)
-    __obj.updateDynamic("using")(using)
+    val __obj = js.Dynamic.literal(forever = forever, invalidate = invalidate, never = never, using = using)
+  
     __obj.asInstanceOf[SimpleCacheConfigurator]
   }
 }

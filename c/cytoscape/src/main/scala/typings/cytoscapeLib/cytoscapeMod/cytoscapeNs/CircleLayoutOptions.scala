@@ -43,11 +43,7 @@ object CircleLayoutOptions {
     stop: LayoutHandler = null,
     sweep: scala.Int | scala.Double = null
   ): CircleLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
-    __obj.updateDynamic("startAngle")(startAngle)
+    val __obj = js.Dynamic.literal(fit = fit, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels, startAngle = startAngle)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

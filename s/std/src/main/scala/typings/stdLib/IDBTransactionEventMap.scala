@@ -14,10 +14,8 @@ trait IDBTransactionEventMap extends js.Object {
 object IDBTransactionEventMap {
   @scala.inline
   def apply(abort: Event, complete: Event, error: Event): IDBTransactionEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(abort = abort, complete = complete, error = error)
+  
     __obj.asInstanceOf[IDBTransactionEventMap]
   }
 }

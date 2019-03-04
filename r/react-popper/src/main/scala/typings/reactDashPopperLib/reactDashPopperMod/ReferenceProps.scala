@@ -16,8 +16,7 @@ object ReferenceProps {
     children: js.Function1[ReferenceChildrenProps, reactLib.reactMod.ReactNs.ReactNode],
     innerRef: reactDashPopperLib.RefHandler = null
   ): ReferenceProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
     __obj.asInstanceOf[ReferenceProps]
   }

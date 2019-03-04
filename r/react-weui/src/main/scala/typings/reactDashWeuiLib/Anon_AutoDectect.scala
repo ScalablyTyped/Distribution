@@ -22,11 +22,8 @@ object Anon_AutoDectect {
     title: java.lang.String,
     `type`: java.lang.String
   ): Anon_AutoDectect = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("autoDectect")(autoDectect)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(autoDectect = autoDectect, buttons = buttons, show = show, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AutoDectect]
   }
 }

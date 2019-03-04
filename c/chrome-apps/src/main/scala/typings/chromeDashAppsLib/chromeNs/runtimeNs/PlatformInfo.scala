@@ -76,10 +76,8 @@ object PlatformInfo {
       ]
     ]
   ): PlatformInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    __obj.updateDynamic("nacl_arch")(nacl_arch.asInstanceOf[js.Any])
-    __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], nacl_arch = nacl_arch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PlatformInfo]
   }
 }

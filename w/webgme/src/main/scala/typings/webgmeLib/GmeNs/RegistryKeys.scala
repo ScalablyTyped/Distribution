@@ -12,8 +12,8 @@ trait RegistryKeys extends js.Object {
 object RegistryKeys {
   @scala.inline
   def apply(POSITION: java.lang.String): RegistryKeys = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("POSITION")(POSITION)
+    val __obj = js.Dynamic.literal(POSITION = POSITION)
+  
     __obj.asInstanceOf[RegistryKeys]
   }
 }

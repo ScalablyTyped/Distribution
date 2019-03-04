@@ -26,8 +26,7 @@ object LoadingOptions {
     mask: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Function1[js.Any, scala.Unit] = null
   ): LoadingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)

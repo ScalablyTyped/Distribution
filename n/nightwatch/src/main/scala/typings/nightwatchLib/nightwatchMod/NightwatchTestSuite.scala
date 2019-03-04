@@ -15,11 +15,8 @@ trait NightwatchTestSuite extends js.Object {
 object NightwatchTestSuite {
   @scala.inline
   def apply(group: java.lang.String, module: java.lang.String, name: java.lang.String, results: js.Any): NightwatchTestSuite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(group = group, module = module, name = name, results = results)
+  
     __obj.asInstanceOf[NightwatchTestSuite]
   }
 }

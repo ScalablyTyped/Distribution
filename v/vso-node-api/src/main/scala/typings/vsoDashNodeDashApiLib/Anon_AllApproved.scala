@@ -52,27 +52,8 @@ object Anon_AllApproved {
     scheduled: scala.Double,
     undefined: scala.Double
   ): Anon_AllApproved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("approved")(approved)
-    __obj.updateDynamic("canceled")(canceled)
-    __obj.updateDynamic("cancelling")(cancelling)
-    __obj.updateDynamic("deferred")(deferred)
-    __obj.updateDynamic("evaluatingGates")(evaluatingGates)
-    __obj.updateDynamic("gateFailed")(gateFailed)
-    __obj.updateDynamic("manualInterventionPending")(manualInterventionPending)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("phaseCanceled")(phaseCanceled)
-    __obj.updateDynamic("phaseFailed")(phaseFailed)
-    __obj.updateDynamic("phaseInProgress")(phaseInProgress)
-    __obj.updateDynamic("phasePartiallySucceeded")(phasePartiallySucceeded)
-    __obj.updateDynamic("phaseSucceeded")(phaseSucceeded)
-    __obj.updateDynamic("queued")(queued)
-    __obj.updateDynamic("queuedForAgent")(queuedForAgent)
-    __obj.updateDynamic("queuedForPipeline")(queuedForPipeline)
-    __obj.updateDynamic("rejected")(rejected)
-    __obj.updateDynamic("scheduled")(scheduled)
-    __obj.updateDynamic("undefined")(undefined)
+    val __obj = js.Dynamic.literal(all = all, approved = approved, canceled = canceled, cancelling = cancelling, deferred = deferred, evaluatingGates = evaluatingGates, gateFailed = gateFailed, manualInterventionPending = manualInterventionPending, pending = pending, phaseCanceled = phaseCanceled, phaseFailed = phaseFailed, phaseInProgress = phaseInProgress, phasePartiallySucceeded = phasePartiallySucceeded, phaseSucceeded = phaseSucceeded, queued = queued, queuedForAgent = queuedForAgent, queuedForPipeline = queuedForPipeline, rejected = rejected, scheduled = scheduled, undefined = undefined)
+  
     __obj.asInstanceOf[Anon_AllApproved]
   }
 }

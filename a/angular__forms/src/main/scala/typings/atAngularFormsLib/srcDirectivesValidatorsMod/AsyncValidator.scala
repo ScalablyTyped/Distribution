@@ -16,8 +16,7 @@ object AsyncValidator {
     ],
     registerOnValidatorChange: js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit] = null
   ): AsyncValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(validate = validate)
     if (registerOnValidatorChange != null) __obj.updateDynamic("registerOnValidatorChange")(registerOnValidatorChange)
     __obj.asInstanceOf[AsyncValidator]
   }

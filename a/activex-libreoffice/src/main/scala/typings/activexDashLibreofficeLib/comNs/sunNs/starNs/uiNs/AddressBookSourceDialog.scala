@@ -37,13 +37,8 @@ object AddressBookSourceDialog {
     release: js.Function0[scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): AddressBookSourceDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createWithDataSource")(createWithDataSource)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(acquire = acquire, createWithDataSource = createWithDataSource, execute = execute, queryInterface = queryInterface, release = release, setTitle = setTitle)
+  
     __obj.asInstanceOf[AddressBookSourceDialog]
   }
 }

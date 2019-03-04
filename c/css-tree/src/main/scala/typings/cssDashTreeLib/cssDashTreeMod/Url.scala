@@ -17,8 +17,8 @@ trait Url
 object Url {
   @scala.inline
   def apply(`type`: cssDashTreeLib.cssDashTreeLibStrings.Url, value: StringNode | Raw, loc: CssLocation = null): Url = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Url]
   }

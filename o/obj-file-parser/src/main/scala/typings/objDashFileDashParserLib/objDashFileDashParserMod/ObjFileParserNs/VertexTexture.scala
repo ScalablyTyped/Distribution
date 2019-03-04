@@ -14,10 +14,8 @@ trait VertexTexture extends js.Object {
 object VertexTexture {
   @scala.inline
   def apply(u: scala.Double, v: scala.Double, w: scala.Double): VertexTexture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("u")(u)
-    __obj.updateDynamic("v")(v)
-    __obj.updateDynamic("w")(w)
+    val __obj = js.Dynamic.literal(u = u, v = v, w = w)
+  
     __obj.asInstanceOf[VertexTexture]
   }
 }

@@ -20,10 +20,8 @@ object UpdateInfo {
     name: java.lang.String,
     `type`: java.lang.String
   ): UpdateInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("latest")(latest)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(current = current, latest = latest, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UpdateInfo]
   }
 }

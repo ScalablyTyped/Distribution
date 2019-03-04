@@ -16,9 +16,8 @@ object ConverterResult {
     errors: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
     project: typedocLib.distLibModelsMod.ProjectReflection
   ): ConverterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(errors = errors, project = project)
+  
     __obj.asInstanceOf[ConverterResult]
   }
 }

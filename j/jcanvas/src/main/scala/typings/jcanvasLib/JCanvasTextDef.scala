@@ -28,15 +28,8 @@ object JCanvasTextDef {
     x: scala.Double,
     y: scala.Double
   ): JCanvasTextDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fillStyle")(fillStyle)
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("strokeStyle")(strokeStyle)
-    __obj.updateDynamic("strokeWidth")(strokeWidth)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(fillStyle = fillStyle, fontFamily = fontFamily, fontSize = fontSize, strokeStyle = strokeStyle, strokeWidth = strokeWidth, text = text, x = x, y = y)
+  
     __obj.asInstanceOf[JCanvasTextDef]
   }
 }

@@ -22,9 +22,8 @@ trait INxCellPosition extends js.Object {
 object INxCellPosition {
   @scala.inline
   def apply(qx: scala.Double, qy: scala.Double): INxCellPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qx")(qx)
-    __obj.updateDynamic("qy")(qy)
+    val __obj = js.Dynamic.literal(qx = qx, qy = qy)
+  
     __obj.asInstanceOf[INxCellPosition]
   }
 }

@@ -14,9 +14,8 @@ trait IColumn extends js.Object {
 object IColumn {
   @scala.inline
   def apply(name: java.lang.String, properties: IColumnProperties, `type`: DataType): IColumn = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(name = name, properties = properties)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IColumn]
   }
 }

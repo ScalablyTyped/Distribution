@@ -26,14 +26,8 @@ object FileContentMetadata {
     isImage: scala.Boolean,
     vsLink: java.lang.String
   ): FileContentMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("isBinary")(isBinary)
-    __obj.updateDynamic("isImage")(isImage)
-    __obj.updateDynamic("vsLink")(vsLink)
+    val __obj = js.Dynamic.literal(contentType = contentType, encoding = encoding, extension = extension, fileName = fileName, isBinary = isBinary, isImage = isImage, vsLink = vsLink)
+  
     __obj.asInstanceOf[FileContentMetadata]
   }
 }

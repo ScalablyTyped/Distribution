@@ -27,13 +27,8 @@ object JobEnvironment {
     systemConnection: ServiceEndpoint,
     variables: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): JobEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("secureFiles")(secureFiles)
-    __obj.updateDynamic("systemConnection")(systemConnection)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(endpoints = endpoints, mask = mask, options = options, secureFiles = secureFiles, systemConnection = systemConnection, variables = variables)
+  
     __obj.asInstanceOf[JobEnvironment]
   }
 }

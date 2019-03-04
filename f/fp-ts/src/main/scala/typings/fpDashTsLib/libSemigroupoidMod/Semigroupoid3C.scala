@@ -22,10 +22,8 @@ object Semigroupoid3C {
       fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
     ]
   ): Semigroupoid3C[F, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("compose")(compose)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], compose = compose)
+  
     __obj.asInstanceOf[Semigroupoid3C[F, U]]
   }
 }

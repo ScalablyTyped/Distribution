@@ -30,16 +30,8 @@ object Anon_Accidental {
     shift_right: scala.Double,
     stroke: scala.Double
   ): Anon_Accidental = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accidental")(accidental)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("displaced")(displaced)
-    __obj.updateDynamic("int_value")(int_value)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("octave")(octave)
-    __obj.updateDynamic("shift_right")(shift_right)
-    __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(accidental = accidental, code = code, displaced = displaced, int_value = int_value, key = key, line = line, octave = octave, shift_right = shift_right, stroke = stroke)
+  
     __obj.asInstanceOf[Anon_Accidental]
   }
 }

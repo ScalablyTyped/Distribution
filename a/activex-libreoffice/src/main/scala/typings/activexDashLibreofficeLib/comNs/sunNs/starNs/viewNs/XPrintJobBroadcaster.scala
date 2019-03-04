@@ -30,12 +30,8 @@ object XPrintJobBroadcaster {
     release: js.Function0[scala.Unit],
     removePrintJobListener: js.Function1[XPrintJobListener, scala.Unit]
   ): XPrintJobBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPrintJobListener")(addPrintJobListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePrintJobListener")(removePrintJobListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addPrintJobListener = addPrintJobListener, queryInterface = queryInterface, release = release, removePrintJobListener = removePrintJobListener)
+  
     __obj.asInstanceOf[XPrintJobBroadcaster]
   }
 }

@@ -28,8 +28,7 @@ object RectangleShape {
     Shape: Shape = null,
     Text: Text = null
   ): RectangleShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CornerRadius")(CornerRadius)
+    val __obj = js.Dynamic.literal(CornerRadius = CornerRadius)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)

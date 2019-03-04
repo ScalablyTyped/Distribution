@@ -20,11 +20,8 @@ object Anon_Capture {
     key: java.lang.String,
     targets: js.Array[java.lang.String]
   ): Anon_Capture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capture")(capture)
-    __obj.updateDynamic("captureConstraint")(captureConstraint)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(capture = capture, captureConstraint = captureConstraint, key = key, targets = targets)
+  
     __obj.asInstanceOf[Anon_Capture]
   }
 }

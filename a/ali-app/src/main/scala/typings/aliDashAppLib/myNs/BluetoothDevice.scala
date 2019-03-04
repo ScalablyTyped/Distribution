@@ -50,14 +50,8 @@ object BluetoothDevice {
     manufacturerData: stdLib.ArrayBuffer,
     name: java.lang.String
   ): BluetoothDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RSSI")(RSSI)
-    __obj.updateDynamic("advertisData")(advertisData)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("localName")(localName)
-    __obj.updateDynamic("manufacturerData")(manufacturerData)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(RSSI = RSSI, advertisData = advertisData, deviceId = deviceId, deviceName = deviceName, localName = localName, manufacturerData = manufacturerData, name = name)
+  
     __obj.asInstanceOf[BluetoothDevice]
   }
 }

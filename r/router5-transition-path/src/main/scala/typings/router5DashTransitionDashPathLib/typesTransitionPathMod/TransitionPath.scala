@@ -18,10 +18,8 @@ object TransitionPath {
     toActivate: js.Array[java.lang.String],
     toDeactivate: js.Array[java.lang.String]
   ): TransitionPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intersection")(intersection)
-    __obj.updateDynamic("toActivate")(toActivate)
-    __obj.updateDynamic("toDeactivate")(toDeactivate)
+    val __obj = js.Dynamic.literal(intersection = intersection, toActivate = toActivate, toDeactivate = toDeactivate)
+  
     __obj.asInstanceOf[TransitionPath]
   }
 }

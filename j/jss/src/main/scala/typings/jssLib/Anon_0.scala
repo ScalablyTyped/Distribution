@@ -53,13 +53,8 @@ object Anon_0 {
       ]
     ])
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachment")(attachment)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    __obj.updateDynamic("repeat")(repeat)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attachment = attachment, color = color, image = image, position = position.asInstanceOf[js.Any], repeat = repeat, size = size.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

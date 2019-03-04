@@ -18,9 +18,7 @@ object FindPlaceFromPhoneNumberRequest {
     phoneNumber: java.lang.String,
     locationBias: LocationBias = null
   ): FindPlaceFromPhoneNumberRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
+    val __obj = js.Dynamic.literal(fields = fields, phoneNumber = phoneNumber)
     if (locationBias != null) __obj.updateDynamic("locationBias")(locationBias.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindPlaceFromPhoneNumberRequest]
   }

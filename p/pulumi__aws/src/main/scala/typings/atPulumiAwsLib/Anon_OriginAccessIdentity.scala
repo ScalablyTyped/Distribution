@@ -12,8 +12,8 @@ trait Anon_OriginAccessIdentity extends js.Object {
 object Anon_OriginAccessIdentity {
   @scala.inline
   def apply(originAccessIdentity: java.lang.String): Anon_OriginAccessIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("originAccessIdentity")(originAccessIdentity)
+    val __obj = js.Dynamic.literal(originAccessIdentity = originAccessIdentity)
+  
     __obj.asInstanceOf[Anon_OriginAccessIdentity]
   }
 }

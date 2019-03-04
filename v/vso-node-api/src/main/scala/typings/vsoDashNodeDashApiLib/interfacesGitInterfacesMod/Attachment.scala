@@ -57,16 +57,8 @@ object Attachment {
     properties: js.Any,
     url: java.lang.String
   ): Attachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("contentHash")(contentHash)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, author = author, contentHash = contentHash, createdDate = createdDate, description = description, displayName = displayName, id = id, properties = properties, url = url)
+  
     __obj.asInstanceOf[Attachment]
   }
 }

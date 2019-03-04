@@ -13,9 +13,8 @@ trait Choice extends js.Object {
 object Choice {
   @scala.inline
   def apply(confidence: scala.Double, text: java.lang.String): Choice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(confidence = confidence, text = text)
+  
     __obj.asInstanceOf[Choice]
   }
 }

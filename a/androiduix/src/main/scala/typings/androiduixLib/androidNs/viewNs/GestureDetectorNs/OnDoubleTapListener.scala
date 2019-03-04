@@ -18,10 +18,8 @@ object OnDoubleTapListener {
     onDoubleTapEvent: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean],
     onSingleTapConfirmed: js.Function1[androiduixLib.androidNs.viewNs.MotionEvent, scala.Boolean]
   ): OnDoubleTapListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDoubleTap")(onDoubleTap)
-    __obj.updateDynamic("onDoubleTapEvent")(onDoubleTapEvent)
-    __obj.updateDynamic("onSingleTapConfirmed")(onSingleTapConfirmed)
+    val __obj = js.Dynamic.literal(onDoubleTap = onDoubleTap, onDoubleTapEvent = onDoubleTapEvent, onSingleTapConfirmed = onSingleTapConfirmed)
+  
     __obj.asInstanceOf[OnDoubleTapListener]
   }
 }

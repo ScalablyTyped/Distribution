@@ -22,12 +22,8 @@ object App {
     pid: java.lang.String,
     state: java.lang.String
   ): App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowStop")(allowStop)
-    __obj.updateDynamic("launch")(launch)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(allowStop = allowStop, launch = launch, name = name, pid = pid, state = state)
+  
     __obj.asInstanceOf[App]
   }
 }

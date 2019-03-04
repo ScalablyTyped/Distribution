@@ -60,31 +60,8 @@ object ChartistEasingStatic {
     easeOutQuint: IChartistEasingDefinition,
     easeOutSine: IChartistEasingDefinition
   ): ChartistEasingStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("easeInBack")(easeInBack)
-    __obj.updateDynamic("easeInCirc")(easeInCirc)
-    __obj.updateDynamic("easeInCubic")(easeInCubic)
-    __obj.updateDynamic("easeInExpo")(easeInExpo)
-    __obj.updateDynamic("easeInOutBack")(easeInOutBack)
-    __obj.updateDynamic("easeInOutCirc")(easeInOutCirc)
-    __obj.updateDynamic("easeInOutCubic")(easeInOutCubic)
-    __obj.updateDynamic("easeInOutExpo")(easeInOutExpo)
-    __obj.updateDynamic("easeInOutQuad")(easeInOutQuad)
-    __obj.updateDynamic("easeInOutQuart")(easeInOutQuart)
-    __obj.updateDynamic("easeInOutQuint")(easeInOutQuint)
-    __obj.updateDynamic("easeInOutSine")(easeInOutSine)
-    __obj.updateDynamic("easeInQuad")(easeInQuad)
-    __obj.updateDynamic("easeInQuart")(easeInQuart)
-    __obj.updateDynamic("easeInQuint")(easeInQuint)
-    __obj.updateDynamic("easeInSine")(easeInSine)
-    __obj.updateDynamic("easeOutBack")(easeOutBack)
-    __obj.updateDynamic("easeOutCirc")(easeOutCirc)
-    __obj.updateDynamic("easeOutCubic")(easeOutCubic)
-    __obj.updateDynamic("easeOutExpo")(easeOutExpo)
-    __obj.updateDynamic("easeOutQuad")(easeOutQuad)
-    __obj.updateDynamic("easeOutQuart")(easeOutQuart)
-    __obj.updateDynamic("easeOutQuint")(easeOutQuint)
-    __obj.updateDynamic("easeOutSine")(easeOutSine)
+    val __obj = js.Dynamic.literal(easeInBack = easeInBack, easeInCirc = easeInCirc, easeInCubic = easeInCubic, easeInExpo = easeInExpo, easeInOutBack = easeInOutBack, easeInOutCirc = easeInOutCirc, easeInOutCubic = easeInOutCubic, easeInOutExpo = easeInOutExpo, easeInOutQuad = easeInOutQuad, easeInOutQuart = easeInOutQuart, easeInOutQuint = easeInOutQuint, easeInOutSine = easeInOutSine, easeInQuad = easeInQuad, easeInQuart = easeInQuart, easeInQuint = easeInQuint, easeInSine = easeInSine, easeOutBack = easeOutBack, easeOutCirc = easeOutCirc, easeOutCubic = easeOutCubic, easeOutExpo = easeOutExpo, easeOutQuad = easeOutQuad, easeOutQuart = easeOutQuart, easeOutQuint = easeOutQuint, easeOutSine = easeOutSine)
+  
     __obj.asInstanceOf[ChartistEasingStatic]
   }
 }

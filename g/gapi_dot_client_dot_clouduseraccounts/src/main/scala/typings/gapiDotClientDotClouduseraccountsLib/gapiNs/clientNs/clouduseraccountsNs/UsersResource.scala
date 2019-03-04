@@ -66,16 +66,8 @@ object UsersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestPermissionsResponse]
     ]
   ): UsersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPublicKey")(addPublicKey)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("removePublicKey")(removePublicKey)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(addPublicKey = addPublicKey, delete = delete, get = get, getIamPolicy = getIamPolicy, insert = insert, list = list, removePublicKey = removePublicKey, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[UsersResource]
   }
 }

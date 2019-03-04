@@ -12,8 +12,8 @@ trait JQuerySupport extends js.Object {
 object JQuerySupport {
   @scala.inline
   def apply(transition: scala.Boolean | TransitionEventNames): JQuerySupport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[JQuerySupport]
   }
 }

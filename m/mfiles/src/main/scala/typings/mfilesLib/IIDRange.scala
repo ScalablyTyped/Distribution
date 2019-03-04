@@ -26,14 +26,8 @@ object IIDRange {
     SetIDs: js.Function2[scala.Double, scala.Double, scala.Unit],
     SetIDs_32bit: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): IIDRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("MaxID")(MaxID)
-    __obj.updateDynamic("MaxID_32bit")(MaxID_32bit)
-    __obj.updateDynamic("MinID")(MinID)
-    __obj.updateDynamic("MinID_32bit")(MinID_32bit)
-    __obj.updateDynamic("SetIDs")(SetIDs)
-    __obj.updateDynamic("SetIDs_32bit")(SetIDs_32bit)
+    val __obj = js.Dynamic.literal(Clone = Clone, MaxID = MaxID, MaxID_32bit = MaxID_32bit, MinID = MinID, MinID_32bit = MinID_32bit, SetIDs = SetIDs, SetIDs_32bit = SetIDs_32bit)
+  
     __obj.asInstanceOf[IIDRange]
   }
 }

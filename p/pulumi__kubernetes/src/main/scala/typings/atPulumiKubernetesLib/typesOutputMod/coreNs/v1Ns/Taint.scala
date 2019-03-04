@@ -38,11 +38,8 @@ object Taint {
     timeAdded: java.lang.String,
     value: java.lang.String
   ): Taint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("timeAdded")(timeAdded)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(effect = effect, key = key, timeAdded = timeAdded, value = value)
+  
     __obj.asInstanceOf[Taint]
   }
 }

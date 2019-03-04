@@ -21,12 +21,8 @@ object ReleaseDefinitionApprovalStep {
     isNotificationOn: scala.Boolean,
     rank: scala.Double
   ): ReleaseDefinitionApprovalStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approver")(approver)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isAutomated")(isAutomated)
-    __obj.updateDynamic("isNotificationOn")(isNotificationOn)
-    __obj.updateDynamic("rank")(rank)
+    val __obj = js.Dynamic.literal(approver = approver, id = id, isAutomated = isAutomated, isNotificationOn = isNotificationOn, rank = rank)
+  
     __obj.asInstanceOf[ReleaseDefinitionApprovalStep]
   }
 }

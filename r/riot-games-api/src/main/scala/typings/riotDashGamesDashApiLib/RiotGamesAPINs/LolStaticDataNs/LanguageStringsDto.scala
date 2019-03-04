@@ -18,9 +18,8 @@ object LanguageStringsDto {
     `type`: java.lang.String,
     version: java.lang.String
   ): LanguageStringsDto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(data = data, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LanguageStringsDto]
   }
 }

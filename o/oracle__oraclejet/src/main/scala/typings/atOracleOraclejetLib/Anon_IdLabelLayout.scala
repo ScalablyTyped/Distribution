@@ -20,11 +20,8 @@ object Anon_IdLabelLayout {
     x: scala.Double,
     y: scala.Double
   ): Anon_IdLabelLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("labelLayout")(labelLayout)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(id = id, labelLayout = labelLayout, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_IdLabelLayout]
   }
 }

@@ -18,10 +18,8 @@ object IInkRecognitionResult {
     getStrokes: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStroke]],
     getTextCandidates: js.Function0[winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]]
   ): IInkRecognitionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingRect")(boundingRect)
-    __obj.updateDynamic("getStrokes")(getStrokes)
-    __obj.updateDynamic("getTextCandidates")(getTextCandidates)
+    val __obj = js.Dynamic.literal(boundingRect = boundingRect, getStrokes = getStrokes, getTextCandidates = getTextCandidates)
+  
     __obj.asInstanceOf[IInkRecognitionResult]
   }
 }

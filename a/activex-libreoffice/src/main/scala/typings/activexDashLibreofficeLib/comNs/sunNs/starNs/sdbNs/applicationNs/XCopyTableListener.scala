@@ -45,14 +45,8 @@ object XCopyTableListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XCopyTableListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copiedRow")(copiedRow)
-    __obj.updateDynamic("copyRowError")(copyRowError)
-    __obj.updateDynamic("copyingRow")(copyingRow)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, copiedRow = copiedRow, copyRowError = copyRowError, copyingRow = copyingRow, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XCopyTableListener]
   }
 }

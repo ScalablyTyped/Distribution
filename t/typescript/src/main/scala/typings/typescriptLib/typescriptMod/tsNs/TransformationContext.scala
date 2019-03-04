@@ -84,22 +84,8 @@ object TransformationContext {
     startLexicalEnvironment: js.Function0[scala.Unit],
     suspendLexicalEnvironment: js.Function0[scala.Unit]
   ): TransformationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enableEmitNotification")(enableEmitNotification)
-    __obj.updateDynamic("enableSubstitution")(enableSubstitution)
-    __obj.updateDynamic("endLexicalEnvironment")(endLexicalEnvironment)
-    __obj.updateDynamic("getCompilerOptions")(getCompilerOptions)
-    __obj.updateDynamic("hoistFunctionDeclaration")(hoistFunctionDeclaration)
-    __obj.updateDynamic("hoistVariableDeclaration")(hoistVariableDeclaration)
-    __obj.updateDynamic("isEmitNotificationEnabled")(isEmitNotificationEnabled)
-    __obj.updateDynamic("isSubstitutionEnabled")(isSubstitutionEnabled)
-    __obj.updateDynamic("onEmitNode")(onEmitNode)
-    __obj.updateDynamic("onSubstituteNode")(onSubstituteNode)
-    __obj.updateDynamic("readEmitHelpers")(readEmitHelpers)
-    __obj.updateDynamic("requestEmitHelper")(requestEmitHelper)
-    __obj.updateDynamic("resumeLexicalEnvironment")(resumeLexicalEnvironment)
-    __obj.updateDynamic("startLexicalEnvironment")(startLexicalEnvironment)
-    __obj.updateDynamic("suspendLexicalEnvironment")(suspendLexicalEnvironment)
+    val __obj = js.Dynamic.literal(enableEmitNotification = enableEmitNotification, enableSubstitution = enableSubstitution, endLexicalEnvironment = endLexicalEnvironment, getCompilerOptions = getCompilerOptions, hoistFunctionDeclaration = hoistFunctionDeclaration, hoistVariableDeclaration = hoistVariableDeclaration, isEmitNotificationEnabled = isEmitNotificationEnabled, isSubstitutionEnabled = isSubstitutionEnabled, onEmitNode = onEmitNode, onSubstituteNode = onSubstituteNode, readEmitHelpers = readEmitHelpers, requestEmitHelper = requestEmitHelper, resumeLexicalEnvironment = resumeLexicalEnvironment, startLexicalEnvironment = startLexicalEnvironment, suspendLexicalEnvironment = suspendLexicalEnvironment)
+  
     __obj.asInstanceOf[TransformationContext]
   }
 }

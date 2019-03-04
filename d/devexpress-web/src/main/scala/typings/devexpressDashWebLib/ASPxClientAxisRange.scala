@@ -46,13 +46,8 @@ object ASPxClientAxisRange {
     minValue: js.Object,
     minValueInternal: scala.Double
   ): ASPxClientAxisRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("maxValueInternal")(maxValueInternal)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("minValueInternal")(minValueInternal)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, maxValue = maxValue, maxValueInternal = maxValueInternal, minValue = minValue, minValueInternal = minValueInternal)
+  
     __obj.asInstanceOf[ASPxClientAxisRange]
   }
 }

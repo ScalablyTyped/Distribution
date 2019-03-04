@@ -26,14 +26,8 @@ object Anon_App {
     variant: java.lang.String,
     version: scala.Double
   ): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("compatibilityVersion")(compatibilityVersion)
-    __obj.updateDynamic("variant")(variant)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(app = app, appVersion = appVersion, build = build, commit = commit, compatibilityVersion = compatibilityVersion, variant = variant, version = version)
+  
     __obj.asInstanceOf[Anon_App]
   }
 }

@@ -20,11 +20,8 @@ object TooltipShowOptions {
     ],
     isTouchEvent: scala.Boolean
   ): TooltipShowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coordinates")(coordinates)
-    __obj.updateDynamic("dataItems")(dataItems)
-    __obj.updateDynamic("identities")(identities)
-    __obj.updateDynamic("isTouchEvent")(isTouchEvent)
+    val __obj = js.Dynamic.literal(coordinates = coordinates, dataItems = dataItems, identities = identities, isTouchEvent = isTouchEvent)
+  
     __obj.asInstanceOf[TooltipShowOptions]
   }
 }

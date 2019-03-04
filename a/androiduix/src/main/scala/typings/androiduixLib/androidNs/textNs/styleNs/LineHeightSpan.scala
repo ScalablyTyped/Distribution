@@ -29,8 +29,8 @@ object LineHeightSpan {
       scala.Unit
     ]
   ): LineHeightSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chooseHeight")(chooseHeight)
+    val __obj = js.Dynamic.literal(chooseHeight = chooseHeight)
+  
     __obj.asInstanceOf[LineHeightSpan]
   }
 }

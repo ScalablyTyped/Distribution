@@ -16,9 +16,8 @@ trait ISmsMessage extends js.Object {
 object ISmsMessage {
   @scala.inline
   def apply(id: scala.Double, messageClass: SmsMessageClass): ISmsMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("messageClass")(messageClass)
+    val __obj = js.Dynamic.literal(id = id, messageClass = messageClass)
+  
     __obj.asInstanceOf[ISmsMessage]
   }
 }

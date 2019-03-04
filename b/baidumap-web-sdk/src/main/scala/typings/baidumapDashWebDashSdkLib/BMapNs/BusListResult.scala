@@ -22,12 +22,8 @@ object BusListResult {
     keyword: java.lang.String,
     moreResultsUrl: java.lang.String
   ): BusListResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("getBusListItem")(getBusListItem)
-    __obj.updateDynamic("getNumBusList")(getNumBusList)
-    __obj.updateDynamic("keyword")(keyword)
-    __obj.updateDynamic("moreResultsUrl")(moreResultsUrl)
+    val __obj = js.Dynamic.literal(city = city, getBusListItem = getBusListItem, getNumBusList = getNumBusList, keyword = keyword, moreResultsUrl = moreResultsUrl)
+  
     __obj.asInstanceOf[BusListResult]
   }
 }

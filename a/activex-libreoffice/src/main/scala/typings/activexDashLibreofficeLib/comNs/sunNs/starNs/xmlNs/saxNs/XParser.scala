@@ -52,16 +52,8 @@ object XParser {
     setErrorHandler: js.Function1[XErrorHandler, scala.Unit],
     setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
   ): XParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("parseStream")(parseStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDTDHandler")(setDTDHandler)
-    __obj.updateDynamic("setDocumentHandler")(setDocumentHandler)
-    __obj.updateDynamic("setEntityResolver")(setEntityResolver)
-    __obj.updateDynamic("setErrorHandler")(setErrorHandler)
-    __obj.updateDynamic("setLocale")(setLocale)
+    val __obj = js.Dynamic.literal(acquire = acquire, parseStream = parseStream, queryInterface = queryInterface, release = release, setDTDHandler = setDTDHandler, setDocumentHandler = setDocumentHandler, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler, setLocale = setLocale)
+  
     __obj.asInstanceOf[XParser]
   }
 }

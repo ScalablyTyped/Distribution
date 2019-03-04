@@ -28,14 +28,7 @@ object Anon_Data {
     seriesData: js.Object,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("groupData")(groupData)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("itemData")(itemData)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("seriesData")(seriesData)
+    val __obj = js.Dynamic.literal(data = data, group = group, groupData = groupData, id = id, itemData = itemData, series = series, seriesData = seriesData)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Data]
   }

@@ -12,8 +12,8 @@ trait Anon_MaxRanking extends js.Object {
 object Anon_MaxRanking {
   @scala.inline
   def apply(maxRanking: scala.Double): Anon_MaxRanking = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxRanking")(maxRanking)
+    val __obj = js.Dynamic.literal(maxRanking = maxRanking)
+  
     __obj.asInstanceOf[Anon_MaxRanking]
   }
 }

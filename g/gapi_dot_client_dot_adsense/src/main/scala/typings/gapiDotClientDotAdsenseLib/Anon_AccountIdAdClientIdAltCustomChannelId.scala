@@ -57,10 +57,7 @@ object Anon_AccountIdAdClientIdAltCustomChannelId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAdClientIdAltCustomChannelId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("adClientId")(adClientId)
-    __obj.updateDynamic("customChannelId")(customChannelId)
+    val __obj = js.Dynamic.literal(accountId = accountId, adClientId = adClientId, customChannelId = customChannelId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)

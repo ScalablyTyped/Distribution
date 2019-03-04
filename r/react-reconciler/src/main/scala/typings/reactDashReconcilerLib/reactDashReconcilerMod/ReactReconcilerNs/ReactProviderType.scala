@@ -14,9 +14,8 @@ trait ReactProviderType[T] extends js.Object {
 object ReactProviderType {
   @scala.inline
   def apply[T]($$typeof: js.Symbol | scala.Double, _context: ReactContext[T]): ReactProviderType[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$$typeof")($$typeof.asInstanceOf[js.Any])
-    __obj.updateDynamic("_context")(_context)
+    val __obj = js.Dynamic.literal($$typeof = $$typeof.asInstanceOf[js.Any], _context = _context)
+  
     __obj.asInstanceOf[ReactProviderType[T]]
   }
 }

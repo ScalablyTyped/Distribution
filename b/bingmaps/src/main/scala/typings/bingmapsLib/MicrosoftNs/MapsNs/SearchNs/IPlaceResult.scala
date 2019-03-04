@@ -36,15 +36,8 @@ object IPlaceResult {
     matchConfidence: java.lang.String | MatchConfidence,
     name: java.lang.String
   ): IPlaceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("bestView")(bestView)
-    __obj.updateDynamic("entityType")(entityType)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("matchCode")(matchCode.asInstanceOf[js.Any])
-    __obj.updateDynamic("matchConfidence")(matchConfidence.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(address = address, bestView = bestView, entityType = entityType, location = location, locations = locations, matchCode = matchCode.asInstanceOf[js.Any], matchConfidence = matchConfidence.asInstanceOf[js.Any], name = name)
+  
     __obj.asInstanceOf[IPlaceResult]
   }
 }

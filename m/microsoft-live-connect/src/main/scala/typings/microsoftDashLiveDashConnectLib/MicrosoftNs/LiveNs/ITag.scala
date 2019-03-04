@@ -49,12 +49,8 @@ object ITag {
     x: scala.Double,
     y: scala.Double
   ): ITag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_time")(created_time)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("user")(user)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(created_time = created_time, id = id, user = user, x = x, y = y)
+  
     __obj.asInstanceOf[ITag]
   }
 }

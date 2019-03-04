@@ -14,10 +14,8 @@ trait StackExtent[D] extends js.Object {
 object StackExtent {
   @scala.inline
   def apply[D](axisValue: D, extent: scala.Double, stackedDatum: GenericStackedDatum[D]): StackExtent[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisValue")(axisValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("extent")(extent)
-    __obj.updateDynamic("stackedDatum")(stackedDatum)
+    val __obj = js.Dynamic.literal(axisValue = axisValue.asInstanceOf[js.Any], extent = extent, stackedDatum = stackedDatum)
+  
     __obj.asInstanceOf[StackExtent[D]]
   }
 }

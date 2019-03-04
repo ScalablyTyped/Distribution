@@ -59,15 +59,8 @@ object XClipboard {
       scala.Unit
     ]
   ): XClipboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Contents")(Contents)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getContents")(getContents)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setContents")(setContents)
+    val __obj = js.Dynamic.literal(Contents = Contents, Name = Name, acquire = acquire, getContents = getContents, getName = getName, queryInterface = queryInterface, release = release, setContents = setContents)
+  
     __obj.asInstanceOf[XClipboard]
   }
 }

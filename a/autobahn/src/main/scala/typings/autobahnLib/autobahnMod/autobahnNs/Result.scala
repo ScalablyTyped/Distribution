@@ -10,9 +10,8 @@ trait Result extends IResult
 object Result {
   @scala.inline
   def apply(args: js.Array[_], kwargs: js.Any): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("kwargs")(kwargs)
+    val __obj = js.Dynamic.literal(args = args, kwargs = kwargs)
+  
     __obj.asInstanceOf[Result]
   }
 }

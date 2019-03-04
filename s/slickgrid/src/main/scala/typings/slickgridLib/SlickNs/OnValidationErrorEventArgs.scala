@@ -25,14 +25,8 @@ object OnValidationErrorEventArgs {
     row: scala.Double,
     validationResults: ValidateResults
   ): OnValidationErrorEventArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("cellNode")(cellNode)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("validationResults")(validationResults)
+    val __obj = js.Dynamic.literal(cell = cell, cellNode = cellNode, column = column, editor = editor, grid = grid, row = row, validationResults = validationResults)
+  
     __obj.asInstanceOf[OnValidationErrorEventArgs[T]]
   }
 }

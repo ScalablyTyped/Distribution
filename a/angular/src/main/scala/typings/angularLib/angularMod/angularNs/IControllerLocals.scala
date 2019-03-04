@@ -23,9 +23,8 @@ trait IControllerLocals extends js.Object {
 object IControllerLocals {
   @scala.inline
   def apply($element: angularLib.JQuery, $scope: IScope): IControllerLocals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$element")($element)
-    __obj.updateDynamic("$scope")($scope)
+    val __obj = js.Dynamic.literal($element = $element, $scope = $scope)
+  
     __obj.asInstanceOf[IControllerLocals]
   }
 }

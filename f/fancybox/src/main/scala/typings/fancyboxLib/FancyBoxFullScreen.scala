@@ -22,12 +22,8 @@ object FancyBoxFullScreen {
     request: js.Function1[stdLib.HTMLElement, scala.Unit],
     toggle: js.Function1[stdLib.HTMLElement, scala.Unit]
   ): FancyBoxFullScreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("exit")(exit)
-    __obj.updateDynamic("isFullscreen")(isFullscreen)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(enabled = enabled, exit = exit, isFullscreen = isFullscreen, request = request, toggle = toggle)
+  
     __obj.asInstanceOf[FancyBoxFullScreen]
   }
 }

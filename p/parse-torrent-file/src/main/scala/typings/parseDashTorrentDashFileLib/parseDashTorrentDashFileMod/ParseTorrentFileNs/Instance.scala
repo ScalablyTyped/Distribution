@@ -46,10 +46,7 @@ object Instance {
     `private`: js.UndefOr[scala.Boolean] = js.undefined,
     urlList: js.Array[java.lang.String] = null
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (announce != null) __obj.updateDynamic("announce")(announce)
     if (created != null) __obj.updateDynamic("created")(created)
     if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)

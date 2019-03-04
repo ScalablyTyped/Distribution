@@ -34,8 +34,7 @@ object POEMessage {
     side: java.lang.String = null,
     timestamp: scala.Int | scala.Double = null
   ): POEMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messageType")(messageType)
+    val __obj = js.Dynamic.literal(messageType = messageType)
     if (canceledQuantity != null) __obj.updateDynamic("canceledQuantity")(canceledQuantity.asInstanceOf[js.Any])
     if (instrument != null) __obj.updateDynamic("instrument")(instrument)
     if (liquidityFlag != null) __obj.updateDynamic("liquidityFlag")(liquidityFlag)

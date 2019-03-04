@@ -22,12 +22,8 @@ object Anon_MouseEnterDelay {
     transitionName: java.lang.String,
     trigger: antdLib.libTooltipMod.TooltipTrigger
   ): Anon_MouseEnterDelay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay)
-    __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("transitionName")(transitionName)
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(mouseEnterDelay = mouseEnterDelay, mouseLeaveDelay = mouseLeaveDelay, placement = placement, transitionName = transitionName, trigger = trigger)
+  
     __obj.asInstanceOf[Anon_MouseEnterDelay]
   }
 }

@@ -50,26 +50,8 @@ object ISymmetricAlgorithmNamesStatics {
     tripleDesEcb: java.lang.String,
     tripleDesEcbPkcs7: java.lang.String
   ): ISymmetricAlgorithmNamesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aesCbc")(aesCbc)
-    __obj.updateDynamic("aesCbcPkcs7")(aesCbcPkcs7)
-    __obj.updateDynamic("aesCcm")(aesCcm)
-    __obj.updateDynamic("aesEcb")(aesEcb)
-    __obj.updateDynamic("aesEcbPkcs7")(aesEcbPkcs7)
-    __obj.updateDynamic("aesGcm")(aesGcm)
-    __obj.updateDynamic("desCbc")(desCbc)
-    __obj.updateDynamic("desCbcPkcs7")(desCbcPkcs7)
-    __obj.updateDynamic("desEcb")(desEcb)
-    __obj.updateDynamic("desEcbPkcs7")(desEcbPkcs7)
-    __obj.updateDynamic("rc2Cbc")(rc2Cbc)
-    __obj.updateDynamic("rc2CbcPkcs7")(rc2CbcPkcs7)
-    __obj.updateDynamic("rc2Ecb")(rc2Ecb)
-    __obj.updateDynamic("rc2EcbPkcs7")(rc2EcbPkcs7)
-    __obj.updateDynamic("rc4")(rc4)
-    __obj.updateDynamic("tripleDesCbc")(tripleDesCbc)
-    __obj.updateDynamic("tripleDesCbcPkcs7")(tripleDesCbcPkcs7)
-    __obj.updateDynamic("tripleDesEcb")(tripleDesEcb)
-    __obj.updateDynamic("tripleDesEcbPkcs7")(tripleDesEcbPkcs7)
+    val __obj = js.Dynamic.literal(aesCbc = aesCbc, aesCbcPkcs7 = aesCbcPkcs7, aesCcm = aesCcm, aesEcb = aesEcb, aesEcbPkcs7 = aesEcbPkcs7, aesGcm = aesGcm, desCbc = desCbc, desCbcPkcs7 = desCbcPkcs7, desEcb = desEcb, desEcbPkcs7 = desEcbPkcs7, rc2Cbc = rc2Cbc, rc2CbcPkcs7 = rc2CbcPkcs7, rc2Ecb = rc2Ecb, rc2EcbPkcs7 = rc2EcbPkcs7, rc4 = rc4, tripleDesCbc = tripleDesCbc, tripleDesCbcPkcs7 = tripleDesCbcPkcs7, tripleDesEcb = tripleDesEcb, tripleDesEcbPkcs7 = tripleDesEcbPkcs7)
+  
     __obj.asInstanceOf[ISymmetricAlgorithmNamesStatics]
   }
 }

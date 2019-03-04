@@ -32,11 +32,8 @@ object FieldsToEvaluate {
     fields: js.Array[java.lang.String],
     rulesFrom: js.Array[java.lang.String]
   ): FieldsToEvaluate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldUpdates")(fieldUpdates)
-    __obj.updateDynamic("fieldValues")(fieldValues)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("rulesFrom")(rulesFrom)
+    val __obj = js.Dynamic.literal(fieldUpdates = fieldUpdates, fieldValues = fieldValues, fields = fields, rulesFrom = rulesFrom)
+  
     __obj.asInstanceOf[FieldsToEvaluate]
   }
 }

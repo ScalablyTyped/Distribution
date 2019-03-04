@@ -60,31 +60,8 @@ object Item {
     setHelpText: js.Function1[java.lang.String, Item],
     setTitle: js.Function1[java.lang.String, Item]
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asCheckboxGridItem")(asCheckboxGridItem)
-    __obj.updateDynamic("asCheckboxItem")(asCheckboxItem)
-    __obj.updateDynamic("asDateItem")(asDateItem)
-    __obj.updateDynamic("asDateTimeItem")(asDateTimeItem)
-    __obj.updateDynamic("asDurationItem")(asDurationItem)
-    __obj.updateDynamic("asGridItem")(asGridItem)
-    __obj.updateDynamic("asImageItem")(asImageItem)
-    __obj.updateDynamic("asListItem")(asListItem)
-    __obj.updateDynamic("asMultipleChoiceItem")(asMultipleChoiceItem)
-    __obj.updateDynamic("asPageBreakItem")(asPageBreakItem)
-    __obj.updateDynamic("asParagraphTextItem")(asParagraphTextItem)
-    __obj.updateDynamic("asScaleItem")(asScaleItem)
-    __obj.updateDynamic("asSectionHeaderItem")(asSectionHeaderItem)
-    __obj.updateDynamic("asTextItem")(asTextItem)
-    __obj.updateDynamic("asTimeItem")(asTimeItem)
-    __obj.updateDynamic("asVideoItem")(asVideoItem)
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(asCheckboxGridItem = asCheckboxGridItem, asCheckboxItem = asCheckboxItem, asDateItem = asDateItem, asDateTimeItem = asDateTimeItem, asDurationItem = asDurationItem, asGridItem = asGridItem, asImageItem = asImageItem, asListItem = asListItem, asMultipleChoiceItem = asMultipleChoiceItem, asPageBreakItem = asPageBreakItem, asParagraphTextItem = asParagraphTextItem, asScaleItem = asScaleItem, asSectionHeaderItem = asSectionHeaderItem, asTextItem = asTextItem, asTimeItem = asTimeItem, asVideoItem = asVideoItem, duplicate = duplicate, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getTitle = getTitle, getType = getType, setHelpText = setHelpText, setTitle = setTitle)
+  
     __obj.asInstanceOf[Item]
   }
 }

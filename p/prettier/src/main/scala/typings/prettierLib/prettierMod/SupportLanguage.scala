@@ -38,16 +38,7 @@ object SupportLanguage {
     group: java.lang.String = null,
     since: java.lang.String = null
   ): SupportLanguage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aceMode")(aceMode)
-    __obj.updateDynamic("codemirrorMimeType")(codemirrorMimeType)
-    __obj.updateDynamic("codemirrorMode")(codemirrorMode)
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("linguistLanguageId")(linguistLanguageId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parsers")(parsers.asInstanceOf[js.Any])
-    __obj.updateDynamic("tmScope")(tmScope)
-    __obj.updateDynamic("vscodeLanguageIds")(vscodeLanguageIds)
+    val __obj = js.Dynamic.literal(aceMode = aceMode, codemirrorMimeType = codemirrorMimeType, codemirrorMode = codemirrorMode, extensions = extensions, linguistLanguageId = linguistLanguageId, name = name, parsers = parsers.asInstanceOf[js.Any], tmScope = tmScope, vscodeLanguageIds = vscodeLanguageIds)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (filenames != null) __obj.updateDynamic("filenames")(filenames)
     if (group != null) __obj.updateDynamic("group")(group)

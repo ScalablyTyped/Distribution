@@ -24,13 +24,8 @@ object Anon_Avatarurl {
     twitter: java.lang.String,
     username: java.lang.String
   ): Anon_Avatarurl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatar_url")(avatar_url)
-    __obj.updateDynamic("banner_url")(banner_url)
-    __obj.updateDynamic("display_name")(display_name)
-    __obj.updateDynamic("profile_url")(profile_url)
-    __obj.updateDynamic("twitter")(twitter)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(avatar_url = avatar_url, banner_url = banner_url, display_name = display_name, profile_url = profile_url, twitter = twitter, username = username)
+  
     __obj.asInstanceOf[Anon_Avatarurl]
   }
 }

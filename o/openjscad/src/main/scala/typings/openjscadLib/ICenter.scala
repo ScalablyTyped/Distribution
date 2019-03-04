@@ -12,8 +12,8 @@ trait ICenter extends js.Object {
 object ICenter {
   @scala.inline
   def apply(center: js.Function1[js.Array[java.lang.String], CxG]): ICenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
+    val __obj = js.Dynamic.literal(center = center)
+  
     __obj.asInstanceOf[ICenter]
   }
 }

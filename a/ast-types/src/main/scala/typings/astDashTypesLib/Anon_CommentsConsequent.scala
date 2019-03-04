@@ -20,8 +20,7 @@ object Anon_CommentsConsequent {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     test: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): Anon_CommentsConsequent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consequent")(consequent)
+    val __obj = js.Dynamic.literal(consequent = consequent)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (test != null) __obj.updateDynamic("test")(test)

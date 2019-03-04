@@ -49,11 +49,8 @@ object IContainer {
     getComponents: js.Function0[js.Array[Component]],
     removeComponent: js.Function1[Component, scala.Unit]
   ): IContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addComponent")(addComponent)
-    __obj.updateDynamic("findComponent")(findComponent)
-    __obj.updateDynamic("getComponents")(getComponents)
-    __obj.updateDynamic("removeComponent")(removeComponent)
+    val __obj = js.Dynamic.literal(addComponent = addComponent, findComponent = findComponent, getComponents = getComponents, removeComponent = removeComponent)
+  
     __obj.asInstanceOf[IContainer]
   }
 }

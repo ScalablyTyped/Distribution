@@ -15,11 +15,8 @@ trait StatsLike extends js.Object {
 object StatsLike {
   @scala.inline
   def apply(ctime: stdLib.Date, ino: scala.Double, mtime: stdLib.Date, size: scala.Double): StatsLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("ino")(ino)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(ctime = ctime, ino = ino, mtime = mtime, size = size)
+  
     __obj.asInstanceOf[StatsLike]
   }
 }

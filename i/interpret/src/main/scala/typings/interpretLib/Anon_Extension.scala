@@ -16,8 +16,7 @@ object Anon_Extension {
     extension: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Extension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
+    val __obj = js.Dynamic.literal(extension = extension)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Extension]
   }

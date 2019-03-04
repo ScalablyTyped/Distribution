@@ -18,10 +18,8 @@ object Anon_Items {
     total: scala.Double,
     userquery: js.Any
   ): Anon_Items = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("userquery")(userquery)
+    val __obj = js.Dynamic.literal(items = items, total = total, userquery = userquery)
+  
     __obj.asInstanceOf[Anon_Items]
   }
 }

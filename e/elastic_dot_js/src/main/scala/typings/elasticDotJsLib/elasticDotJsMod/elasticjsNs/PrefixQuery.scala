@@ -59,13 +59,8 @@ object PrefixQuery {
     toJSON: js.Function0[js.Any],
     value: js.Function1[java.lang.String, PrefixQuery]
   ): PrefixQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, rewrite = rewrite, toJSON = toJSON, value = value)
+  
     __obj.asInstanceOf[PrefixQuery]
   }
 }

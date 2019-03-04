@@ -13,9 +13,8 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(nanos: scala.Double, seconds: scala.Double): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nanos")(nanos)
-    __obj.updateDynamic("seconds")(seconds)
+    val __obj = js.Dynamic.literal(nanos = nanos, seconds = seconds)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

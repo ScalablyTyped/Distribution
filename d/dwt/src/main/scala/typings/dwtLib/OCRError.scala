@@ -13,9 +13,8 @@ trait OCRError extends js.Object {
 object OCRError {
   @scala.inline
   def apply(errorString: java.lang.String, responseText: java.lang.String): OCRError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorString")(errorString)
-    __obj.updateDynamic("responseText")(responseText)
+    val __obj = js.Dynamic.literal(errorString = errorString, responseText = responseText)
+  
     __obj.asInstanceOf[OCRError]
   }
 }

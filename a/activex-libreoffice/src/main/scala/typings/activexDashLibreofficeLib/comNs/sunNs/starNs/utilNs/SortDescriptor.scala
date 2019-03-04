@@ -77,23 +77,8 @@ object SortDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SortDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
-    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("SortColumns")(SortColumns)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(CollatorAlgorithm = CollatorAlgorithm, CollatorLocale = CollatorLocale, IsCaseSensitive = IsCaseSensitive, PropertySetInfo = PropertySetInfo, SortAscending = SortAscending, SortColumns = SortColumns, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SortDescriptor]
   }
 }

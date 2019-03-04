@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait WsdlXmlns
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Unit] {
-  var `__tns__`: js.UndefOr[java.lang.String] = js.undefined
+  var __tns__ : js.UndefOr[java.lang.String] = js.undefined
   var soap: js.UndefOr[java.lang.String] = js.undefined
   var tns: js.UndefOr[java.lang.String] = js.undefined
   var wsam: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object WsdlXmlns {
   @scala.inline
   def apply(
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Unit] = null,
-    `__tns__`: java.lang.String = null,
+    __tns__ : java.lang.String = null,
     soap: java.lang.String = null,
     tns: java.lang.String = null,
     wsam: java.lang.String = null,
@@ -30,7 +30,7 @@ object WsdlXmlns {
   ): WsdlXmlns = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`__tns__` != null) __obj.updateDynamic("__tns__")(`__tns__`)
+    if (__tns__ != null) __obj.updateDynamic("__tns__")(__tns__)
     if (soap != null) __obj.updateDynamic("soap")(soap)
     if (tns != null) __obj.updateDynamic("tns")(tns)
     if (wsam != null) __obj.updateDynamic("wsam")(wsam)

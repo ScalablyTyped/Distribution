@@ -23,9 +23,8 @@ object Conditional {
     loc: Location = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): Conditional = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("falseExpression")(falseExpression)
-    __obj.updateDynamic("trueExpression")(trueExpression)
+    val __obj = js.Dynamic.literal(falseExpression = falseExpression, trueExpression = trueExpression)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[Conditional]

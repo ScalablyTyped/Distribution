@@ -15,8 +15,8 @@ trait DeleteReplicaAction extends js.Object {
 object DeleteReplicaAction {
   @scala.inline
   def apply(RegionName: RegionName): DeleteReplicaAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RegionName")(RegionName)
+    val __obj = js.Dynamic.literal(RegionName = RegionName)
+  
     __obj.asInstanceOf[DeleteReplicaAction]
   }
 }

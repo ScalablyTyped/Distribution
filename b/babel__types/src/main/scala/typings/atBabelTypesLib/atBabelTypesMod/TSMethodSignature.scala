@@ -36,8 +36,8 @@ object TSMethodSignature {
     typeAnnotation: TSTypeAnnotation = null,
     typeParameters: TSTypeParameterDeclaration = null
   ): TSMethodSignature = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

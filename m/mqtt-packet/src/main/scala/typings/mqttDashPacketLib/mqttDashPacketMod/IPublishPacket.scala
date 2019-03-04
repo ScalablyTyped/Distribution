@@ -29,13 +29,7 @@ object IPublishPacket {
     length: scala.Int | scala.Double = null,
     messageId: scala.Int | scala.Double = null
   ): IPublishPacket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("dup")(dup)
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("qos")(qos)
-    __obj.updateDynamic("retain")(retain)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(cmd = cmd, dup = dup, payload = payload.asInstanceOf[js.Any], qos = qos, retain = retain, topic = topic)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublishPacket]

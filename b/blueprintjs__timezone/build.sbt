@@ -1,31 +1,31 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__timezone"
-version := "3.3.0-e942c6"
+version := "3.3.0-ae0837"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "blueprintjs__core" % "3.14.0-cb10b9",
-  "org.scalablytyped" %%% "blueprintjs__icons" % "3.6.0-5e0c2a",
-  "org.scalablytyped" %%% "blueprintjs__select" % "3.7.0-329e16",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-2b6900",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-2cc11d",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-481742",
-  "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-c738b3",
-  "org.scalablytyped" %%% "moment" % "2.24.0-737009",
-  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20181231Z-a200af",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-f5729c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-66c044",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-9e9d73",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-4ff3b1",
-  "org.scalablytyped" %%% "react-popper" % "1.3.3-e01cb1",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-f660b8",
-  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-c52a23",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3",
-  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-80eb49")
+  "org.scalablytyped" %%% "blueprintjs__core" % "3.14.0-ec2ca7",
+  "org.scalablytyped" %%% "blueprintjs__icons" % "3.6.0-87bff5",
+  "org.scalablytyped" %%% "blueprintjs__select" % "3.7.0-cff1be",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-3f1c68",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-d5b461",
+  "org.scalablytyped" %%% "csstype" % "2.6.2-49af40",
+  "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-0a5cd1",
+  "org.scalablytyped" %%% "moment" % "2.24.0-77c476",
+  "org.scalablytyped" %%% "moment-timezone" % "0.5-dt-20181231Z-15640a",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-5852bc",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-7328c8",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-1a5d56",
+  "org.scalablytyped" %%% "react-popper" % "1.3.3-97ee7f",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-cdbeab",
+  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-361c07",
+  "org.scalablytyped" %%% "std" % "3.3-05be79",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21",
+  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-d21fb1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

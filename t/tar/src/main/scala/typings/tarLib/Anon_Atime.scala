@@ -38,20 +38,8 @@ object Anon_Atime {
     size: scala.Boolean,
     uid: scala.Boolean
   ): Anon_Atime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("cksum")(cksum)
-    __obj.updateDynamic("ctime")(ctime)
-    __obj.updateDynamic("dev")(dev)
-    __obj.updateDynamic("devmaj")(devmaj)
-    __obj.updateDynamic("devmin")(devmin)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("ino")(ino)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("nlink")(nlink)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(atime = atime, cksum = cksum, ctime = ctime, dev = dev, devmaj = devmaj, devmin = devmin, gid = gid, ino = ino, mode = mode, mtime = mtime, nlink = nlink, size = size, uid = uid)
+  
     __obj.asInstanceOf[Anon_Atime]
   }
 }

@@ -13,8 +13,7 @@ trait MountPoint extends js.Object {
 object MountPoint {
   @scala.inline
   def apply(path: java.lang.String, label: java.lang.String = null): MountPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[MountPoint]
   }

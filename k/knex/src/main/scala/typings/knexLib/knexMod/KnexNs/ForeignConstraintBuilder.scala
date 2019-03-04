@@ -12,8 +12,8 @@ trait ForeignConstraintBuilder extends js.Object {
 object ForeignConstraintBuilder {
   @scala.inline
   def apply(references: js.Function1[java.lang.String, ReferencingColumnBuilder]): ForeignConstraintBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(references = references)
+  
     __obj.asInstanceOf[ForeignConstraintBuilder]
   }
 }

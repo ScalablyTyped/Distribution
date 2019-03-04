@@ -12,8 +12,8 @@ trait NgAnalyzeModulesHost extends js.Object {
 object NgAnalyzeModulesHost {
   @scala.inline
   def apply(isSourceFile: js.Function1[java.lang.String, scala.Boolean]): NgAnalyzeModulesHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSourceFile")(isSourceFile)
+    val __obj = js.Dynamic.literal(isSourceFile = isSourceFile)
+  
     __obj.asInstanceOf[NgAnalyzeModulesHost]
   }
 }

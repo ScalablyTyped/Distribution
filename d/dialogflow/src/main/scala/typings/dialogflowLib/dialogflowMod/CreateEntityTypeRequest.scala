@@ -13,9 +13,8 @@ trait CreateEntityTypeRequest extends js.Object {
 object CreateEntityTypeRequest {
   @scala.inline
   def apply(entityType: EntityType, parent: java.lang.String): CreateEntityTypeRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityType")(entityType)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(entityType = entityType, parent = parent)
+  
     __obj.asInstanceOf[CreateEntityTypeRequest]
   }
 }

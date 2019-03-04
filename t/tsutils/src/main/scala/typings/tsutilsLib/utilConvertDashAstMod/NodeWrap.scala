@@ -24,10 +24,7 @@ object NodeWrap {
     parent: NodeWrap = null,
     skip: NodeWrap = null
   ): NodeWrap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(children = children, kind = kind, node = node)
     if (next != null) __obj.updateDynamic("next")(next)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (skip != null) __obj.updateDynamic("skip")(skip)

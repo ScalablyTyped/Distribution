@@ -33,11 +33,8 @@ object NestedHooks {
     before: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit],
     beforeEach: js.Function1[js.Function1[/* assert */ Assert, scala.Unit], scala.Unit]
   ): NestedHooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("afterEach")(afterEach)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("beforeEach")(beforeEach)
+    val __obj = js.Dynamic.literal(after = after, afterEach = afterEach, before = before, beforeEach = beforeEach)
+  
     __obj.asInstanceOf[NestedHooks]
   }
 }

@@ -35,9 +35,8 @@ object XResourceFactory {
     createResource: js.Function1[XResourceId, XResource],
     releaseResource: js.Function1[XResource, scala.Unit]
   ): XResourceFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createResource")(createResource)
-    __obj.updateDynamic("releaseResource")(releaseResource)
+    val __obj = js.Dynamic.literal(createResource = createResource, releaseResource = releaseResource)
+  
     __obj.asInstanceOf[XResourceFactory]
   }
 }

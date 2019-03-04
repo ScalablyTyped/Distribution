@@ -16,9 +16,8 @@ object Anon_State {
     state: js.Array[js.Tuple2[java.lang.String, scala.Double]],
     tracker_host: js.Array[js.Tuple2[java.lang.String, scala.Double]]
   ): Anon_State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("tracker_host")(tracker_host)
+    val __obj = js.Dynamic.literal(state = state, tracker_host = tracker_host)
+  
     __obj.asInstanceOf[Anon_State]
   }
 }

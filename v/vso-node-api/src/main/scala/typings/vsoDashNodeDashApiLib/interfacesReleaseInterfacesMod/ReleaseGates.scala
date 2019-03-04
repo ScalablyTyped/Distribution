@@ -26,14 +26,8 @@ object ReleaseGates {
     startedOn: stdLib.Date,
     status: GateStatus
   ): ReleaseGates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deploymentJobs")(deploymentJobs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastModifiedOn")(lastModifiedOn)
-    __obj.updateDynamic("runPlanId")(runPlanId)
-    __obj.updateDynamic("stabilizationCompletedOn")(stabilizationCompletedOn)
-    __obj.updateDynamic("startedOn")(startedOn)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(deploymentJobs = deploymentJobs, id = id, lastModifiedOn = lastModifiedOn, runPlanId = runPlanId, stabilizationCompletedOn = stabilizationCompletedOn, startedOn = startedOn, status = status)
+  
     __obj.asInstanceOf[ReleaseGates]
   }
 }

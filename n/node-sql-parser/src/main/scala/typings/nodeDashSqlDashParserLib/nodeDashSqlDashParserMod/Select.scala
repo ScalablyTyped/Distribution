@@ -34,9 +34,8 @@ object Select {
     orderby: js.Array[OrderBy] = null,
     `with`: With = null
   ): Select = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where)
+    __obj.updateDynamic("type")(`type`)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct)
     if (from != null) __obj.updateDynamic("from")(from)
     if (groupby != null) __obj.updateDynamic("groupby")(groupby)

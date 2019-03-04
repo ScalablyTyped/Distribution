@@ -26,7 +26,8 @@ object Anon_EncryptionDisabled {
     packaging: java.lang.String = null,
     path: java.lang.String = null
   ): Anon_EncryptionDisabled = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled)
     if (location != null) __obj.updateDynamic("location")(location)
     if (name != null) __obj.updateDynamic("name")(name)

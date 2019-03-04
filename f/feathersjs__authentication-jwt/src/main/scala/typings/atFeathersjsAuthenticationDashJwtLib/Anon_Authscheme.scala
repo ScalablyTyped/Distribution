@@ -51,14 +51,8 @@ object Anon_Authscheme {
       atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.JwtFromRequestFunction
     ]
   ): Anon_Authscheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromAuthHeader")(fromAuthHeader)
-    __obj.updateDynamic("fromAuthHeaderAsBearerToken")(fromAuthHeaderAsBearerToken)
-    __obj.updateDynamic("fromAuthHeaderWithScheme")(fromAuthHeaderWithScheme)
-    __obj.updateDynamic("fromBodyField")(fromBodyField)
-    __obj.updateDynamic("fromExtractors")(fromExtractors)
-    __obj.updateDynamic("fromHeader")(fromHeader)
-    __obj.updateDynamic("fromUrlQueryParameter")(fromUrlQueryParameter)
+    val __obj = js.Dynamic.literal(fromAuthHeader = fromAuthHeader, fromAuthHeaderAsBearerToken = fromAuthHeaderAsBearerToken, fromAuthHeaderWithScheme = fromAuthHeaderWithScheme, fromBodyField = fromBodyField, fromExtractors = fromExtractors, fromHeader = fromHeader, fromUrlQueryParameter = fromUrlQueryParameter)
+  
     __obj.asInstanceOf[Anon_Authscheme]
   }
 }

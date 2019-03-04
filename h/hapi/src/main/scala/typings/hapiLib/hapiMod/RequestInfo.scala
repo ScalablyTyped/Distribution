@@ -45,18 +45,8 @@ object RequestInfo {
     remotePort: java.lang.String,
     responded: scala.Double
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptEncoding")(acceptEncoding)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("cors")(cors)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("received")(received)
-    __obj.updateDynamic("referrer")(referrer)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remotePort")(remotePort)
-    __obj.updateDynamic("responded")(responded)
+    val __obj = js.Dynamic.literal(acceptEncoding = acceptEncoding, completed = completed, cors = cors, host = host, hostname = hostname, id = id, received = received, referrer = referrer, remoteAddress = remoteAddress, remotePort = remotePort, responded = responded)
+  
     __obj.asInstanceOf[RequestInfo]
   }
 }

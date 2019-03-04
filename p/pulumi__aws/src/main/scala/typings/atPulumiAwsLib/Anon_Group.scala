@@ -24,8 +24,7 @@ object Anon_Group {
     platformVersion: java.lang.String = null,
     taskCount: scala.Int | scala.Double = null
   ): Anon_Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn)
+    val __obj = js.Dynamic.literal(taskDefinitionArn = taskDefinitionArn)
     if (group != null) __obj.updateDynamic("group")(group)
     if (launchType != null) __obj.updateDynamic("launchType")(launchType)
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration)

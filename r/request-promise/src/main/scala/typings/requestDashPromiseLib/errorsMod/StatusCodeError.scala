@@ -22,11 +22,7 @@ object StatusCodeError {
     statusCode: scala.Double,
     stack: java.lang.String = null
   ): StatusCodeError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(error = error, options = options.asInstanceOf[js.Any], response = response, statusCode = statusCode)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[StatusCodeError]
   }

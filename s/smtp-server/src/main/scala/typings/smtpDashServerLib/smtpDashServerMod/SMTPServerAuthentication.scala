@@ -38,9 +38,7 @@ object SMTPServerAuthentication {
     password: java.lang.String = null,
     username: java.lang.String = null
   ): SMTPServerAuthentication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("validatePassword")(validatePassword)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], validatePassword = validatePassword)
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (password != null) __obj.updateDynamic("password")(password)
     if (username != null) __obj.updateDynamic("username")(username)

@@ -116,9 +116,7 @@ object ToBufferOptions {
     textyoffset: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): ToBufferOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bcid")(bcid)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(bcid = bcid, text = text)
     if (addontextfont != null) __obj.updateDynamic("addontextfont")(addontextfont)
     if (addontextsize != null) __obj.updateDynamic("addontextsize")(addontextsize.asInstanceOf[js.Any])
     if (addontextxoffset != null) __obj.updateDynamic("addontextxoffset")(addontextxoffset.asInstanceOf[js.Any])

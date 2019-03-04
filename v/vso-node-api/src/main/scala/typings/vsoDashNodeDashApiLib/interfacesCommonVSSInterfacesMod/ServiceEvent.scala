@@ -37,12 +37,8 @@ object ServiceEvent {
     resourceContainers: org.scalablytyped.runtime.StringDictionary[js.Any],
     resourceVersion: java.lang.String
   ): ServiceEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("resourceContainers")(resourceContainers)
-    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    val __obj = js.Dynamic.literal(eventType = eventType, publisher = publisher, resource = resource, resourceContainers = resourceContainers, resourceVersion = resourceVersion)
+  
     __obj.asInstanceOf[ServiceEvent]
   }
 }

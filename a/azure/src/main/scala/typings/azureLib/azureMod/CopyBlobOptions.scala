@@ -23,8 +23,7 @@ object CopyBlobOptions {
     sourceLeaseId: java.lang.String = null,
     timeoutIntervalInMs: scala.Int | scala.Double = null
   ): CopyBlobOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceAccessConditions")(sourceAccessConditions)
+    val __obj = js.Dynamic.literal(sourceAccessConditions = sourceAccessConditions)
     if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions)
     if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId)
     if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode)

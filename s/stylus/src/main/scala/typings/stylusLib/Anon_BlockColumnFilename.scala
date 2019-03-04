@@ -26,14 +26,8 @@ object Anon_BlockColumnFilename {
     prefix: java.lang.String,
     segments: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
   ): Anon_BlockColumnFilename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("segments")(segments)
+    val __obj = js.Dynamic.literal(__type = __type, block = block, column = column, filename = filename, lineno = lineno, prefix = prefix, segments = segments)
+  
     __obj.asInstanceOf[Anon_BlockColumnFilename]
   }
 }

@@ -18,9 +18,7 @@ object NamespaceHelpFormatterDeps {
     namespace: N,
     colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = null
   ): NamespaceHelpFormatterDeps[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(location = location, namespace = namespace.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)
     __obj.asInstanceOf[NamespaceHelpFormatterDeps[C, N, M, I, O]]
   }

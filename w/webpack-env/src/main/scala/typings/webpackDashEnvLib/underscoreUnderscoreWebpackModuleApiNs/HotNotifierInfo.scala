@@ -55,8 +55,8 @@ object HotNotifierInfo {
     outdatedModules: js.Array[scala.Double] = null,
     parentId: scala.Int | scala.Double = null
   ): HotNotifierInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("moduleId")(moduleId)
+    val __obj = js.Dynamic.literal(moduleId = moduleId)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (chain != null) __obj.updateDynamic("chain")(chain)
     if (dependencyId != null) __obj.updateDynamic("dependencyId")(dependencyId.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)

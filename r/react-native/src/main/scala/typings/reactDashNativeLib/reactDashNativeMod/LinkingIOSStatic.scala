@@ -61,12 +61,8 @@ object LinkingIOSStatic {
       scala.Unit
     ]
   ): LinkingIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("canOpenURL")(canOpenURL)
-    __obj.updateDynamic("openURL")(openURL)
-    __obj.updateDynamic("popInitialURL")(popInitialURL)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, canOpenURL = canOpenURL, openURL = openURL, popInitialURL = popInitialURL, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[LinkingIOSStatic]
   }
 }

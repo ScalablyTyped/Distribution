@@ -12,9 +12,8 @@ trait SenderSignaturesResults extends PaginatedResult {
 object SenderSignaturesResults {
   @scala.inline
   def apply(SenderSignatures: js.Array[SenderSignatureBase], TotalCount: scala.Double): SenderSignaturesResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SenderSignatures")(SenderSignatures)
-    __obj.updateDynamic("TotalCount")(TotalCount)
+    val __obj = js.Dynamic.literal(SenderSignatures = SenderSignatures, TotalCount = TotalCount)
+  
     __obj.asInstanceOf[SenderSignaturesResults]
   }
 }

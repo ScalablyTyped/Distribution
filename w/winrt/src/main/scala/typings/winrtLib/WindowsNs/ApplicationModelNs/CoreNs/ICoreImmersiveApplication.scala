@@ -18,10 +18,8 @@ object ICoreImmersiveApplication {
     mainView: CoreApplicationView,
     views: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[CoreApplicationView]
   ): ICoreImmersiveApplication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createNewView")(createNewView)
-    __obj.updateDynamic("mainView")(mainView)
-    __obj.updateDynamic("views")(views)
+    val __obj = js.Dynamic.literal(createNewView = createNewView, mainView = mainView, views = views)
+  
     __obj.asInstanceOf[ICoreImmersiveApplication]
   }
 }

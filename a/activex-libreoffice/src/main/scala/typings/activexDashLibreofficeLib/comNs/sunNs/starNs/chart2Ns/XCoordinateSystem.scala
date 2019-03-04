@@ -51,19 +51,8 @@ object XCoordinateSystem {
     release: js.Function0[scala.Unit],
     setAxisByDimension: js.Function3[scala.Double, XAxis, scala.Double, scala.Unit]
   ): XCoordinateSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CoordinateSystemType")(CoordinateSystemType)
-    __obj.updateDynamic("Dimension")(Dimension)
-    __obj.updateDynamic("ViewServiceName")(ViewServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAxisByDimension")(getAxisByDimension)
-    __obj.updateDynamic("getCoordinateSystemType")(getCoordinateSystemType)
-    __obj.updateDynamic("getDimension")(getDimension)
-    __obj.updateDynamic("getMaximumAxisIndexByDimension")(getMaximumAxisIndexByDimension)
-    __obj.updateDynamic("getViewServiceName")(getViewServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAxisByDimension")(setAxisByDimension)
+    val __obj = js.Dynamic.literal(CoordinateSystemType = CoordinateSystemType, Dimension = Dimension, ViewServiceName = ViewServiceName, acquire = acquire, getAxisByDimension = getAxisByDimension, getCoordinateSystemType = getCoordinateSystemType, getDimension = getDimension, getMaximumAxisIndexByDimension = getMaximumAxisIndexByDimension, getViewServiceName = getViewServiceName, queryInterface = queryInterface, release = release, setAxisByDimension = setAxisByDimension)
+  
     __obj.asInstanceOf[XCoordinateSystem]
   }
 }

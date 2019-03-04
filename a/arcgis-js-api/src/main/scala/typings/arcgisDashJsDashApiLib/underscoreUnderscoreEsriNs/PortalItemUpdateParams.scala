@@ -23,11 +23,8 @@ object PortalItemUpdateParams {
     hasOwnProperty: js.Function1[stdLib.PropertyKey, scala.Boolean],
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): PortalItemUpdateParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, data = data.asInstanceOf[js.Any], hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[PortalItemUpdateParams]
   }
 }

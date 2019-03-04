@@ -13,9 +13,8 @@ trait Anon_Metadata extends js.Object {
 object Anon_Metadata {
   @scala.inline
   def apply(metadata: nodeLib.Buffer, name: java.lang.String): Anon_Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(metadata = metadata, name = name)
+  
     __obj.asInstanceOf[Anon_Metadata]
   }
 }

@@ -16,8 +16,7 @@ object OptionsParsed {
     argv: noptLib.Anon_Cooked,
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): OptionsParsed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argv")(argv)
+    val __obj = js.Dynamic.literal(argv = argv)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[OptionsParsed]
   }

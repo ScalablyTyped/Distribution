@@ -47,16 +47,8 @@ object TProjectionNode {
     stylingTemplate: atAngularCoreLib.srcRender3InterfacesStylingMod.StylingContext = null,
     tagName: java.lang.String = null
   ): TProjectionNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("directiveEnd")(directiveEnd)
-    __obj.updateDynamic("directiveStart")(directiveStart)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("injectorIndex")(injectorIndex)
-    __obj.updateDynamic("projection")(projection)
-    __obj.updateDynamic("providerIndexes")(providerIndexes)
-    __obj.updateDynamic("tViews")(tViews)
+    val __obj = js.Dynamic.literal(child = child, directiveEnd = directiveEnd, directiveStart = directiveStart, flags = flags, index = index, injectorIndex = injectorIndex, projection = projection, providerIndexes = providerIndexes, tViews = tViews)
+    __obj.updateDynamic("type")(`type`)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
     if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs)

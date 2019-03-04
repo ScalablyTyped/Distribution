@@ -28,11 +28,8 @@ object Anon_Amount {
     description: java.lang.String,
     `type`: java.lang.String
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("application")(application)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(amount = amount, application = application, currency = currency, description = description)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Amount]
   }
 }

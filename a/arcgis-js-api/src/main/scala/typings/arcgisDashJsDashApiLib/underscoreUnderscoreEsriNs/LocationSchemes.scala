@@ -37,13 +37,8 @@ object LocationSchemes {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     secondarySchemes: js.Array[LocationScheme]
   ): LocationSchemes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("primaryScheme")(primaryScheme)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("secondarySchemes")(secondarySchemes)
+    val __obj = js.Dynamic.literal(basemapId = basemapId, constructor = constructor, hasOwnProperty = hasOwnProperty, primaryScheme = primaryScheme, propertyIsEnumerable = propertyIsEnumerable, secondarySchemes = secondarySchemes)
+  
     __obj.asInstanceOf[LocationSchemes]
   }
 }

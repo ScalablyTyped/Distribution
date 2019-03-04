@@ -14,10 +14,8 @@ trait CacheResult extends js.Object {
 object CacheResult {
   @scala.inline
   def apply(files: sharpLib.Anon_CurrentMax, items: sharpLib.Anon_CurrentMax, memory: sharpLib.Anon_Current): CacheResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("memory")(memory)
+    val __obj = js.Dynamic.literal(files = files, items = items, memory = memory)
+  
     __obj.asInstanceOf[CacheResult]
   }
 }

@@ -28,8 +28,7 @@ object Options {
     skip: js.Array[java.lang.String] = null,
     userProperty: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(credentialsRequired)) __obj.updateDynamic("credentialsRequired")(credentialsRequired)
     if (getToken != null) __obj.updateDynamic("getToken")(getToken)

@@ -32,15 +32,8 @@ object GitChange {
     sourceServerItem: java.lang.String,
     url: java.lang.String
   ): GitChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeId")(changeId)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("newContent")(newContent)
-    __obj.updateDynamic("newContentTemplate")(newContentTemplate)
-    __obj.updateDynamic("originalPath")(originalPath)
-    __obj.updateDynamic("sourceServerItem")(sourceServerItem)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(changeId = changeId, changeType = changeType, item = item, newContent = newContent, newContentTemplate = newContentTemplate, originalPath = originalPath, sourceServerItem = sourceServerItem, url = url)
+  
     __obj.asInstanceOf[GitChange]
   }
 }

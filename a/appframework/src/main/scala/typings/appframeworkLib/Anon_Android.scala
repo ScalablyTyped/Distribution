@@ -48,25 +48,8 @@ object Anon_Android {
     webkit: scala.Boolean,
     webos: scala.Boolean
   ): Anon_Android = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("android")(android)
-    __obj.updateDynamic("androidICS")(androidICS)
-    __obj.updateDynamic("blackberry")(blackberry)
-    __obj.updateDynamic("blackberry10")(blackberry10)
-    __obj.updateDynamic("chrome")(chrome)
-    __obj.updateDynamic("fennec")(fennec)
-    __obj.updateDynamic("ie")(ie)
-    __obj.updateDynamic("ieTouch")(ieTouch)
-    __obj.updateDynamic("ios")(ios)
-    __obj.updateDynamic("ios7")(ios7)
-    __obj.updateDynamic("ipad")(ipad)
-    __obj.updateDynamic("iphone")(iphone)
-    __obj.updateDynamic("opera")(opera)
-    __obj.updateDynamic("playbook")(playbook)
-    __obj.updateDynamic("supportsTouch")(supportsTouch)
-    __obj.updateDynamic("touchpad")(touchpad)
-    __obj.updateDynamic("webkit")(webkit)
-    __obj.updateDynamic("webos")(webos)
+    val __obj = js.Dynamic.literal(android = android, androidICS = androidICS, blackberry = blackberry, blackberry10 = blackberry10, chrome = chrome, fennec = fennec, ie = ie, ieTouch = ieTouch, ios = ios, ios7 = ios7, ipad = ipad, iphone = iphone, opera = opera, playbook = playbook, supportsTouch = supportsTouch, touchpad = touchpad, webkit = webkit, webos = webos)
+  
     __obj.asInstanceOf[Anon_Android]
   }
 }

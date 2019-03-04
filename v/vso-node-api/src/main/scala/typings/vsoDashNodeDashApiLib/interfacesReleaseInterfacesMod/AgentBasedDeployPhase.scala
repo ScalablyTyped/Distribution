@@ -18,12 +18,8 @@ object AgentBasedDeployPhase {
     rank: scala.Double,
     workflowTasks: js.Array[WorkflowTask]
   ): AgentBasedDeployPhase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deploymentInput")(deploymentInput)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phaseType")(phaseType)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("workflowTasks")(workflowTasks)
+    val __obj = js.Dynamic.literal(deploymentInput = deploymentInput, name = name, phaseType = phaseType, rank = rank, workflowTasks = workflowTasks)
+  
     __obj.asInstanceOf[AgentBasedDeployPhase]
   }
 }

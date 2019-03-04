@@ -18,8 +18,8 @@ trait ScaleSpec extends js.Object {
 object ScaleSpec {
   @scala.inline
   def apply(replicas: scala.Double): ScaleSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicas")(replicas)
+    val __obj = js.Dynamic.literal(replicas = replicas)
+  
     __obj.asInstanceOf[ScaleSpec]
   }
 }

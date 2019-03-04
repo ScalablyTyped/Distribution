@@ -12,8 +12,8 @@ trait Anon_PaginationEllipsis extends js.Object {
 object Anon_PaginationEllipsis {
   @scala.inline
   def apply(PaginationEllipsisNs: js.Any): Anon_PaginationEllipsis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PaginationEllipsisNs")(PaginationEllipsisNs)
+    val __obj = js.Dynamic.literal(PaginationEllipsisNs = PaginationEllipsisNs)
+  
     __obj.asInstanceOf[Anon_PaginationEllipsis]
   }
 }

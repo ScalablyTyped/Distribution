@@ -121,10 +121,7 @@ object ControlValueAccessor {
     writeValue: js.Function1[js.Any, scala.Unit],
     setDisabledState: js.Function1[/* isDisabled */ scala.Boolean, scala.Unit] = null
   ): ControlValueAccessor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerOnChange")(registerOnChange)
-    __obj.updateDynamic("registerOnTouched")(registerOnTouched)
-    __obj.updateDynamic("writeValue")(writeValue)
+    val __obj = js.Dynamic.literal(registerOnChange = registerOnChange, registerOnTouched = registerOnTouched, writeValue = writeValue)
     if (setDisabledState != null) __obj.updateDynamic("setDisabledState")(setDisabledState)
     __obj.asInstanceOf[ControlValueAccessor]
   }

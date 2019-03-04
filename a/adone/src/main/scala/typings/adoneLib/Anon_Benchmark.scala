@@ -26,11 +26,8 @@ object Anon_Benchmark {
     Event: org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, adoneLib.benchmarkMod.BenchmarkNs.Event],
     Suite: Anon_OptionsAnonName
   ): Anon_Benchmark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BenchmarkNs")(BenchmarkNs)
-    __obj.updateDynamic("Deferred")(Deferred)
-    __obj.updateDynamic("Event")(Event)
-    __obj.updateDynamic("Suite")(Suite)
+    val __obj = js.Dynamic.literal(BenchmarkNs = BenchmarkNs, Deferred = Deferred, Event = Event, Suite = Suite)
+  
     __obj.asInstanceOf[Anon_Benchmark]
   }
 }

@@ -42,12 +42,8 @@ object ICellNavApi {
     rowColSelectIndex: js.Function1[IRowCol[TEntity], scala.Double],
     scrollToFocus: js.Function2[TEntity, IColumnDef, angularLib.angularMod.angularNs.IPromise[_]]
   ): ICellNavApi[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentSelection")(getCurrentSelection)
-    __obj.updateDynamic("getFocusedCell")(getFocusedCell)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("rowColSelectIndex")(rowColSelectIndex)
-    __obj.updateDynamic("scrollToFocus")(scrollToFocus)
+    val __obj = js.Dynamic.literal(getCurrentSelection = getCurrentSelection, getFocusedCell = getFocusedCell, on = on, rowColSelectIndex = rowColSelectIndex, scrollToFocus = scrollToFocus)
+  
     __obj.asInstanceOf[ICellNavApi[TEntity]]
   }
 }

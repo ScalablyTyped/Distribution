@@ -18,8 +18,8 @@ object Anon_Constant {
     value: scala.Double,
     valueminus: scala.Int | scala.Double = null
   ): Anon_Constant = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (valueminus != null) __obj.updateDynamic("valueminus")(valueminus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Constant]
   }

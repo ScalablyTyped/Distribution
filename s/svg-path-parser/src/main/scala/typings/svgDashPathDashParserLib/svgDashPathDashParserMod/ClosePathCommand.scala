@@ -18,9 +18,7 @@ object ClosePathCommand {
     command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.closepath,
     relative: js.UndefOr[scala.Boolean] = js.undefined
   ): ClosePathCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command)
     if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[ClosePathCommand]
   }

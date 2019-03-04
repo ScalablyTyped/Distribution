@@ -22,8 +22,7 @@ object DrawerOptions {
     composeView: inboxsdkLib.inboxsdkMod.InboxSDKNs.ComposeNs.ComposeView = null,
     title: java.lang.String = null
   ): DrawerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el)
+    val __obj = js.Dynamic.literal(el = el)
     if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
     if (!js.isUndefined(closeWithCompose)) __obj.updateDynamic("closeWithCompose")(closeWithCompose)
     if (composeView != null) __obj.updateDynamic("composeView")(composeView)

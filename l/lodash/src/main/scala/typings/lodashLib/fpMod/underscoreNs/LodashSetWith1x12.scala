@@ -13,7 +13,7 @@ trait LodashSetWith1x12[T] extends js.Object {
     path: lodashLib.lodashMod.underscoreNs.PropertyPath
   ): T = js.native
   def apply(
-    customizer: lodashLib.lodashMod.underscoreNs.`__`,
+    customizer: lodashLib.lodashMod.underscoreNs.__,
     path: lodashLib.lodashMod.underscoreNs.PropertyPath
   ): LodashSetWith1x14[T] = js.native
 }

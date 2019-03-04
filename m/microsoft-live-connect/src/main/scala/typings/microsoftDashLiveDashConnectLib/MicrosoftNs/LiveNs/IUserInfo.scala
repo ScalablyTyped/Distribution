@@ -23,9 +23,8 @@ trait IUserInfo extends js.Object {
 object IUserInfo {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String): IUserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, name = name)
+  
     __obj.asInstanceOf[IUserInfo]
   }
 }

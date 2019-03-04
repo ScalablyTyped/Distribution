@@ -28,9 +28,7 @@ object KnockoutBindingProvider {
       org.scalablytyped.runtime.StringDictionary[java.lang.String]
     ] = null
   ): KnockoutBindingProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBindings")(getBindings)
-    __obj.updateDynamic("nodeHasBindings")(nodeHasBindings)
+    val __obj = js.Dynamic.literal(getBindings = getBindings, nodeHasBindings = nodeHasBindings)
     if (getBindingAccessors != null) __obj.updateDynamic("getBindingAccessors")(getBindingAccessors)
     __obj.asInstanceOf[KnockoutBindingProvider]
   }

@@ -15,8 +15,8 @@ trait GetSecretsArgs extends js.Object {
 object GetSecretsArgs {
   @scala.inline
   def apply(secrets: js.Array[atPulumiAwsLib.Anon_Context]): GetSecretsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secrets")(secrets)
+    val __obj = js.Dynamic.literal(secrets = secrets)
+  
     __obj.asInstanceOf[GetSecretsArgs]
   }
 }

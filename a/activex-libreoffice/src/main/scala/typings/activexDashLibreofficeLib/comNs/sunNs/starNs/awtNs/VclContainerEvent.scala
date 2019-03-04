@@ -23,9 +23,8 @@ object VclContainerEvent {
     Child: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): VclContainerEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Child")(Child)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Child = Child, Source = Source)
+  
     __obj.asInstanceOf[VclContainerEvent]
   }
 }

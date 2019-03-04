@@ -30,16 +30,8 @@ object IOCRZoneResult {
     Top: scala.Double,
     Width: scala.Double
   ): IOCRZoneResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Confidence")(Confidence)
-    __obj.updateDynamic("DimensionUnit")(DimensionUnit)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Left")(Left)
-    __obj.updateDynamic("RecognizedOnPage")(RecognizedOnPage)
-    __obj.updateDynamic("ResultValue")(ResultValue)
-    __obj.updateDynamic("Top")(Top)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Confidence = Confidence, DimensionUnit = DimensionUnit, Height = Height, ID = ID, Left = Left, RecognizedOnPage = RecognizedOnPage, ResultValue = ResultValue, Top = Top, Width = Width)
+  
     __obj.asInstanceOf[IOCRZoneResult]
   }
 }

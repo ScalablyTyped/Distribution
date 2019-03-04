@@ -12,8 +12,8 @@ trait Object extends js.Object {
 object Object {
   @scala.inline
   def apply(removeListener: js.Function2[java.lang.String, js.Any, js.Any]): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(removeListener = removeListener)
+  
     __obj.asInstanceOf[Object]
   }
 }

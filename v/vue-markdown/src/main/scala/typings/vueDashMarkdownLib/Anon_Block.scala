@@ -52,26 +52,8 @@ object Anon_Block {
     utils: Anon_ArrayReplaceAt,
     validateLink: js.Any
   ): Anon_Block = {
-    val __obj = js.Dynamic.literal(`inline` = `inline`)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("configure")(configure)
-    __obj.updateDynamic("core")(core)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("helpers")(helpers)
-    __obj.updateDynamic("linkify")(linkify)
-    __obj.updateDynamic("normalizeLink")(normalizeLink)
-    __obj.updateDynamic("normalizeLinkText")(normalizeLinkText)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("parseInline")(parseInline)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("renderInline")(renderInline)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("use")(use)
-    __obj.updateDynamic("utils")(utils)
-    __obj.updateDynamic("validateLink")(validateLink)
+    val __obj = js.Dynamic.literal(block = block, configure = configure, core = core, disable = disable, enable = enable, helpers = helpers, linkify = linkify, normalizeLink = normalizeLink, normalizeLinkText = normalizeLinkText, options = options, parse = parse, parseInline = parseInline, render = render, renderInline = renderInline, renderer = renderer, set = set, use = use, utils = utils, validateLink = validateLink)
+    __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[Anon_Block]
   }
 }

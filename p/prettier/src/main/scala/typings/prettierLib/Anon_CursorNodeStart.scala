@@ -18,8 +18,7 @@ object Anon_CursorNodeStart {
     cursorNodeStart: scala.Int | scala.Double = null,
     cursorNodeText: java.lang.String = null
   ): Anon_CursorNodeStart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatted")(formatted)
+    val __obj = js.Dynamic.literal(formatted = formatted)
     if (cursorNodeStart != null) __obj.updateDynamic("cursorNodeStart")(cursorNodeStart.asInstanceOf[js.Any])
     if (cursorNodeText != null) __obj.updateDynamic("cursorNodeText")(cursorNodeText)
     __obj.asInstanceOf[Anon_CursorNodeStart]

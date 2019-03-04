@@ -24,13 +24,8 @@ object IGlobalizationPreferencesStatics {
     languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
     weekStartsOn: winrtLib.WindowsNs.GlobalizationNs.DayOfWeek
   ): IGlobalizationPreferencesStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendars")(calendars)
-    __obj.updateDynamic("clocks")(clocks)
-    __obj.updateDynamic("currencies")(currencies)
-    __obj.updateDynamic("homeGeographicRegion")(homeGeographicRegion)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("weekStartsOn")(weekStartsOn)
+    val __obj = js.Dynamic.literal(calendars = calendars, clocks = clocks, currencies = currencies, homeGeographicRegion = homeGeographicRegion, languages = languages, weekStartsOn = weekStartsOn)
+  
     __obj.asInstanceOf[IGlobalizationPreferencesStatics]
   }
 }

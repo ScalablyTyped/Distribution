@@ -52,27 +52,8 @@ object HtmlOutput {
     setWidth: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, HtmlOutput],
     setXFrameOptionsMode: js.Function1[XFrameOptionsMode, HtmlOutput]
   ): HtmlOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addMetaTag")(addMetaTag)
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("appendUntrusted")(appendUntrusted)
-    __obj.updateDynamic("asTemplate")(asTemplate)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("getFaviconUrl")(getFaviconUrl)
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getMetaTags")(getMetaTags)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setFaviconUrl")(setFaviconUrl)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setSandboxMode")(setSandboxMode)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setWidth")(setWidth)
-    __obj.updateDynamic("setXFrameOptionsMode")(setXFrameOptionsMode)
+    val __obj = js.Dynamic.literal(addMetaTag = addMetaTag, append = append, appendUntrusted = appendUntrusted, asTemplate = asTemplate, clear = clear, getAs = getAs, getBlob = getBlob, getContent = getContent, getFaviconUrl = getFaviconUrl, getHeight = getHeight, getMetaTags = getMetaTags, getTitle = getTitle, getWidth = getWidth, setContent = setContent, setFaviconUrl = setFaviconUrl, setHeight = setHeight, setSandboxMode = setSandboxMode, setTitle = setTitle, setWidth = setWidth, setXFrameOptionsMode = setXFrameOptionsMode)
+  
     __obj.asInstanceOf[HtmlOutput]
   }
 }

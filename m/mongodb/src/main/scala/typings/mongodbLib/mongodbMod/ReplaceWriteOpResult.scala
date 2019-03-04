@@ -20,14 +20,8 @@ object ReplaceWriteOpResult {
     upsertedCount: scala.Double,
     upsertedId: mongodbLib.Anon_IdObjectID
   ): ReplaceWriteOpResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("matchedCount")(matchedCount)
-    __obj.updateDynamic("modifiedCount")(modifiedCount)
-    __obj.updateDynamic("ops")(ops)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("upsertedCount")(upsertedCount)
-    __obj.updateDynamic("upsertedId")(upsertedId)
+    val __obj = js.Dynamic.literal(connection = connection, matchedCount = matchedCount, modifiedCount = modifiedCount, ops = ops, result = result, upsertedCount = upsertedCount, upsertedId = upsertedId)
+  
     __obj.asInstanceOf[ReplaceWriteOpResult]
   }
 }

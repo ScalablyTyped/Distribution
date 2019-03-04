@@ -75,10 +75,7 @@ object Device {
     vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     vendorIdSource: DeviceVendorIdSource = null
   ): Device = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("inquiryRssi")(inquiryRssi)
-    __obj.updateDynamic("inquiryTxPower")(inquiryTxPower)
+    val __obj = js.Dynamic.literal(address = address, inquiryRssi = inquiryRssi, inquiryTxPower = inquiryTxPower)
     if (!js.isUndefined(connectable)) __obj.updateDynamic("connectable")(connectable)
     if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected)
     if (!js.isUndefined(connecting)) __obj.updateDynamic("connecting")(connecting)

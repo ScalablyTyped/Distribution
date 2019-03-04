@@ -36,11 +36,8 @@ object ListEntryEvent {
     Position: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ListEntryEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Entries")(Entries)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Count = Count, Entries = Entries, Position = Position, Source = Source)
+  
     __obj.asInstanceOf[ListEntryEvent]
   }
 }

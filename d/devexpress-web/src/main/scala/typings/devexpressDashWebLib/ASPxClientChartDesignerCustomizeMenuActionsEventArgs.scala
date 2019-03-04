@@ -19,8 +19,8 @@ trait ASPxClientChartDesignerCustomizeMenuActionsEventArgs extends ASPxClientEve
 object ASPxClientChartDesignerCustomizeMenuActionsEventArgs {
   @scala.inline
   def apply(actions: js.Array[ASPxClientChartDesignerMenuAction]): ASPxClientChartDesignerCustomizeMenuActionsEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
+    val __obj = js.Dynamic.literal(actions = actions)
+  
     __obj.asInstanceOf[ASPxClientChartDesignerCustomizeMenuActionsEventArgs]
   }
 }

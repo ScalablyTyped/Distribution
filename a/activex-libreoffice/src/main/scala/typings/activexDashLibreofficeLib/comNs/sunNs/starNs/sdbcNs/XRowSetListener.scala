@@ -38,14 +38,8 @@ object XRowSetListener {
     rowChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
     rowSetChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XRowSetListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cursorMoved")(cursorMoved)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("rowChanged")(rowChanged)
-    __obj.updateDynamic("rowSetChanged")(rowSetChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, cursorMoved = cursorMoved, disposing = disposing, queryInterface = queryInterface, release = release, rowChanged = rowChanged, rowSetChanged = rowSetChanged)
+  
     __obj.asInstanceOf[XRowSetListener]
   }
 }

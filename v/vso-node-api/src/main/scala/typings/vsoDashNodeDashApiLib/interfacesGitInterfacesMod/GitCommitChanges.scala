@@ -13,9 +13,8 @@ trait GitCommitChanges extends js.Object {
 object GitCommitChanges {
   @scala.inline
   def apply(changeCounts: ChangeCountDictionary, changes: js.Array[GitChange]): GitCommitChanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeCounts")(changeCounts)
-    __obj.updateDynamic("changes")(changes)
+    val __obj = js.Dynamic.literal(changeCounts = changeCounts, changes = changes)
+  
     __obj.asInstanceOf[GitCommitChanges]
   }
 }

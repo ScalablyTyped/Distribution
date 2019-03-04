@@ -20,10 +20,7 @@ object RealmListenerConfiguration {
     serverUrl: java.lang.String,
     sslConfiguration: SSLConfiguration = null
   ): RealmListenerConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminUser")(adminUser)
-    __obj.updateDynamic("filterRegex")(filterRegex)
-    __obj.updateDynamic("serverUrl")(serverUrl)
+    val __obj = js.Dynamic.literal(adminUser = adminUser, filterRegex = filterRegex, serverUrl = serverUrl)
     if (sslConfiguration != null) __obj.updateDynamic("sslConfiguration")(sslConfiguration)
     __obj.asInstanceOf[RealmListenerConfiguration]
   }

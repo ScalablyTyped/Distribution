@@ -13,9 +13,8 @@ trait ShaderInfo extends js.Object {
 object ShaderInfo {
   @scala.inline
   def apply(frag: java.lang.String, vert: java.lang.String): ShaderInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frag")(frag)
-    __obj.updateDynamic("vert")(vert)
+    val __obj = js.Dynamic.literal(frag = frag, vert = vert)
+  
     __obj.asInstanceOf[ShaderInfo]
   }
 }

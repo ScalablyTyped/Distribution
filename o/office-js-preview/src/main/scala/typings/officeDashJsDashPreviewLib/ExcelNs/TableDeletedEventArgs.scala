@@ -64,11 +64,8 @@ object TableDeletedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableDeleted,
     worksheetId: java.lang.String
   ): TableDeletedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("tableId")(tableId)
-    __obj.updateDynamic("tableName")(tableName)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId, tableName = tableName, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableDeletedEventArgs]
   }
 }

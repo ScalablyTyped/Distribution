@@ -43,18 +43,7 @@ object FancyThumbs {
     $grid: JQuery = null,
     $list: JQuery = null
   ): FancyThumbs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, focus = focus, hide = hide, init = init, instance = instance, isActive = isActive, isVisible = isVisible, opts = opts, show = show, toggle = toggle, update = update)
     if ($button != null) __obj.updateDynamic("$button")($button)
     if ($grid != null) __obj.updateDynamic("$grid")($grid)
     if ($list != null) __obj.updateDynamic("$list")($list)

@@ -21,11 +21,8 @@ object SimpleModalDialog {
     iframe: jqueryDotSimplemodalLib.JQuery,
     overlay: jqueryDotSimplemodalLib.JQuery
   ): SimpleModalDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("iframe")(iframe)
-    __obj.updateDynamic("overlay")(overlay)
+    val __obj = js.Dynamic.literal(container = container, data = data, iframe = iframe, overlay = overlay)
+  
     __obj.asInstanceOf[SimpleModalDialog]
   }
 }

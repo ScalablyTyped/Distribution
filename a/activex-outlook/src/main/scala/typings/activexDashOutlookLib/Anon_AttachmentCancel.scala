@@ -13,9 +13,8 @@ trait Anon_AttachmentCancel extends js.Object {
 object Anon_AttachmentCancel {
   @scala.inline
   def apply(Attachment: activexDashOutlookLib.OutlookNs.Attachment, Cancel: scala.Boolean): Anon_AttachmentCancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachment")(Attachment)
-    __obj.updateDynamic("Cancel")(Cancel)
+    val __obj = js.Dynamic.literal(Attachment = Attachment, Cancel = Cancel)
+  
     __obj.asInstanceOf[Anon_AttachmentCancel]
   }
 }

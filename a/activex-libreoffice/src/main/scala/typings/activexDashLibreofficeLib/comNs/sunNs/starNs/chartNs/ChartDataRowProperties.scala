@@ -54,13 +54,9 @@ object ChartDataRowProperties {
     DataMeanValueProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
     DataRegressionProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
   ): ChartDataRowProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Axis")(Axis)
+    val __obj = js.Dynamic.literal(Axis = Axis, DataErrorProperties = DataErrorProperties, DataMeanValueProperties = DataMeanValueProperties, DataRegressionProperties = DataRegressionProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ChartDataPointProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ChartStatistics)
-    __obj.updateDynamic("DataErrorProperties")(DataErrorProperties)
-    __obj.updateDynamic("DataMeanValueProperties")(DataMeanValueProperties)
-    __obj.updateDynamic("DataRegressionProperties")(DataRegressionProperties)
     __obj.asInstanceOf[ChartDataRowProperties]
   }
 }

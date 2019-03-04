@@ -57,9 +57,7 @@ object Anon_AltFieldsJobIdKey {
     timeoutMs: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsJobIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(jobId = jobId, projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

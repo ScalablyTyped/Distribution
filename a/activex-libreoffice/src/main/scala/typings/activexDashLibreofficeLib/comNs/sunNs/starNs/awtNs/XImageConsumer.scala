@@ -104,15 +104,8 @@ object XImageConsumer {
       scala.Unit
     ]
   ): XImageConsumer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setColorModel")(setColorModel)
-    __obj.updateDynamic("setPixelsByBytes")(setPixelsByBytes)
-    __obj.updateDynamic("setPixelsByLongs")(setPixelsByLongs)
+    val __obj = js.Dynamic.literal(acquire = acquire, complete = complete, init = init, queryInterface = queryInterface, release = release, setColorModel = setColorModel, setPixelsByBytes = setPixelsByBytes, setPixelsByLongs = setPixelsByLongs)
+  
     __obj.asInstanceOf[XImageConsumer]
   }
 }

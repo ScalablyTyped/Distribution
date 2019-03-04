@@ -39,18 +39,9 @@ object editors {
     select: java.lang.String,
     text: java.lang.String
   ): editors = {
-    val __obj = js.Dynamic.literal(`inline-checkbox` = `inline-checkbox`, `inline-text` = `inline-text`)
-    __obj.updateDynamic("$popup")($popup)
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("combo")(combo)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("multiselect")(multiselect)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("popup")(popup)
-    __obj.updateDynamic("richselect")(richselect)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal($popup = $popup, checkbox = checkbox, color = color, combo = combo, date = date, multiselect = multiselect, password = password, popup = popup, richselect = richselect, select = select, text = text)
+    __obj.updateDynamic("inline-checkbox")(`inline-checkbox`)
+    __obj.updateDynamic("inline-text")(`inline-text`)
     __obj.asInstanceOf[editors]
   }
 }

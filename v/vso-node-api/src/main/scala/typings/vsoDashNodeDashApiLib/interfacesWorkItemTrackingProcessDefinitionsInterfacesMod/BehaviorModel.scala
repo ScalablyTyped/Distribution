@@ -57,15 +57,8 @@ object BehaviorModel {
     rank: scala.Double,
     url: java.lang.String
   ): BehaviorModel = {
-    val __obj = js.Dynamic.literal(`abstract` = `abstract`)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherits")(inherits)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overridden")(overridden)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(color = color, description = description, id = id, inherits = inherits, name = name, overridden = overridden, rank = rank, url = url)
+    __obj.updateDynamic("abstract")(`abstract`)
     __obj.asInstanceOf[BehaviorModel]
   }
 }

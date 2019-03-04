@@ -14,10 +14,8 @@ trait Anon_Buffer extends js.Object {
 object Anon_Buffer {
   @scala.inline
   def apply(buffer: scala.Boolean, file: scala.Boolean, stream: scala.Boolean): Anon_Buffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(buffer = buffer, file = file, stream = stream)
+  
     __obj.asInstanceOf[Anon_Buffer]
   }
 }

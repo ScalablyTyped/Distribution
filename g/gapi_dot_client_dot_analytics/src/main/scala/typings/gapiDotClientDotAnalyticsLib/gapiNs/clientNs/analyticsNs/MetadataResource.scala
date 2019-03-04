@@ -12,8 +12,8 @@ trait MetadataResource extends js.Object {
 object MetadataResource {
   @scala.inline
   def apply(columns: ColumnsResource): MetadataResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(columns = columns)
+  
     __obj.asInstanceOf[MetadataResource]
   }
 }

@@ -102,11 +102,7 @@ object IPlanCreationOptions {
     trial_period_days: scala.Int | scala.Double = null,
     usage_type: stripeLib.stripeLibStrings.metered | stripeLib.stripeLibStrings.licensed = null
   ): IPlanCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, interval = interval, product = product.asInstanceOf[js.Any])
     if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
     if (billing_scheme != null) __obj.updateDynamic("billing_scheme")(billing_scheme.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)

@@ -18,10 +18,8 @@ object SVG {
     labels: org.scalablytyped.runtime.StringDictionary[SVGObject[Node]],
     nodes: org.scalablytyped.runtime.StringDictionary[SVGObject[Node]]
   ): SVG = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(edges = edges, labels = labels, nodes = nodes)
+  
     __obj.asInstanceOf[SVG]
   }
 }

@@ -26,14 +26,8 @@ object SoaRecord {
     retry: scala.Double,
     serial: scala.Double
   ): SoaRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expire")(expire)
-    __obj.updateDynamic("hostmaster")(hostmaster)
-    __obj.updateDynamic("minttl")(minttl)
-    __obj.updateDynamic("nsname")(nsname)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("serial")(serial)
+    val __obj = js.Dynamic.literal(expire = expire, hostmaster = hostmaster, minttl = minttl, nsname = nsname, refresh = refresh, retry = retry, serial = serial)
+  
     __obj.asInstanceOf[SoaRecord]
   }
 }

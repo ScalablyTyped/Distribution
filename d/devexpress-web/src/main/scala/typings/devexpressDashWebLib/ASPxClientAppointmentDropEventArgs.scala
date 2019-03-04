@@ -33,10 +33,8 @@ object ASPxClientAppointmentDropEventArgs {
     handled: scala.Boolean,
     operation: ASPxClientAppointmentOperation
   ): ASPxClientAppointmentDropEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dragInformation")(dragInformation)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(dragInformation = dragInformation, handled = handled, operation = operation)
+  
     __obj.asInstanceOf[ASPxClientAppointmentDropEventArgs]
   }
 }

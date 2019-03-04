@@ -24,9 +24,7 @@ object EventArgs {
     transport: java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): EventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(action = action, category = category)
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(nonInteraction)) __obj.updateDynamic("nonInteraction")(nonInteraction)
     if (transport != null) __obj.updateDynamic("transport")(transport)

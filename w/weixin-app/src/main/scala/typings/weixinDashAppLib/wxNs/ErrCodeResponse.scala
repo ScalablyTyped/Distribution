@@ -12,8 +12,8 @@ trait ErrCodeResponse extends js.Object {
 object ErrCodeResponse {
   @scala.inline
   def apply(errCode: scala.Double): ErrCodeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errCode")(errCode)
+    val __obj = js.Dynamic.literal(errCode = errCode)
+  
     __obj.asInstanceOf[ErrCodeResponse]
   }
 }

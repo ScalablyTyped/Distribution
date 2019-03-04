@@ -30,8 +30,7 @@ object NotificationAlertOptions {
     `title-loc-args`: js.Array[java.lang.String] = null,
     `title-loc-key`: java.lang.String = null
   ): NotificationAlertOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (`action-loc-key` != null) __obj.updateDynamic("action-loc-key")(`action-loc-key`)
     if (`launch-image` != null) __obj.updateDynamic("launch-image")(`launch-image`)
     if (`loc-args` != null) __obj.updateDynamic("loc-args")(`loc-args`)

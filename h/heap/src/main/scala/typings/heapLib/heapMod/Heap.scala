@@ -54,22 +54,8 @@ object Heap {
     top: js.Function0[T],
     updateItem: js.Function1[T, scala.Unit]
   ): Heap[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("front")(front)
-    __obj.updateDynamic("heapify")(heapify)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("peek")(peek)
-    __obj.updateDynamic("pop")(pop)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("pushpop")(pushpop)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("updateItem")(updateItem)
+    val __obj = js.Dynamic.literal(clone = clone, copy = copy, empty = empty, front = front, heapify = heapify, insert = insert, peek = peek, pop = pop, push = push, pushpop = pushpop, replace = replace, size = size, toArray = toArray, top = top, updateItem = updateItem)
+  
     __obj.asInstanceOf[Heap[T]]
   }
 }

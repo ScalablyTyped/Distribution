@@ -24,13 +24,8 @@ object ExecutionProfileOptions {
     retry: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy,
     serialConsistency: scala.Double
   ): ExecutionProfileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consistency")(consistency)
-    __obj.updateDynamic("loadBalancing")(loadBalancing)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("readTimeout")(readTimeout)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("serialConsistency")(serialConsistency)
+    val __obj = js.Dynamic.literal(consistency = consistency, loadBalancing = loadBalancing, name = name, readTimeout = readTimeout, retry = retry, serialConsistency = serialConsistency)
+  
     __obj.asInstanceOf[ExecutionProfileOptions]
   }
 }

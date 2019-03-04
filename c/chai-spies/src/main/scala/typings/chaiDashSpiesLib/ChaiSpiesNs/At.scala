@@ -36,9 +36,8 @@ object At {
     least: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion],
     most: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion]
   ): At = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("least")(least)
-    __obj.updateDynamic("most")(most)
+    val __obj = js.Dynamic.literal(least = least, most = most)
+  
     __obj.asInstanceOf[At]
   }
 }

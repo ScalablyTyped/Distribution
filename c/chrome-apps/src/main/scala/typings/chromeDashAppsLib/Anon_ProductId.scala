@@ -13,9 +13,8 @@ trait Anon_ProductId extends js.Object {
 object Anon_ProductId {
   @scala.inline
   def apply(productId: chromeDashAppsLib.chromeNs.integer, vendorId: chromeDashAppsLib.chromeNs.integer): Anon_ProductId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("vendorId")(vendorId)
+    val __obj = js.Dynamic.literal(productId = productId, vendorId = vendorId)
+  
     __obj.asInstanceOf[Anon_ProductId]
   }
 }

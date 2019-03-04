@@ -54,8 +54,7 @@ object DownloadDelta {
     totalBytes: DoubleDelta = null,
     url: StringDelta = null
   ): DownloadDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (canResume != null) __obj.updateDynamic("canResume")(canResume)
     if (danger != null) __obj.updateDynamic("danger")(danger)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)

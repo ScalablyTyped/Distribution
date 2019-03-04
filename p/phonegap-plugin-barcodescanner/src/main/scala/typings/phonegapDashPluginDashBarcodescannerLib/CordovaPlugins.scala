@@ -12,8 +12,8 @@ trait CordovaPlugins extends js.Object {
 object CordovaPlugins {
   @scala.inline
   def apply(barcodeScanner: phonegapDashPluginDashBarcodescannerLib.phonegapBarcodeNs.BarcodeScanner): CordovaPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("barcodeScanner")(barcodeScanner)
+    val __obj = js.Dynamic.literal(barcodeScanner = barcodeScanner)
+  
     __obj.asInstanceOf[CordovaPlugins]
   }
 }

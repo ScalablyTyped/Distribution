@@ -58,10 +58,7 @@ object RequestInterceptor {
     responseData: js.Any = null,
     urls: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
   ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (after != null) __obj.updateDynamic("after")(after)
     if (before != null) __obj.updateDynamic("before")(before)
     if (headers != null) __obj.updateDynamic("headers")(headers)

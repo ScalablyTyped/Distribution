@@ -24,13 +24,8 @@ object Options {
     projectId: java.lang.String,
     storageBucket: java.lang.String
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("databaseURL")(databaseURL)
-    __obj.updateDynamic("messagingSenderId")(messagingSenderId)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("storageBucket")(storageBucket)
+    val __obj = js.Dynamic.literal(apiKey = apiKey, appId = appId, databaseURL = databaseURL, messagingSenderId = messagingSenderId, projectId = projectId, storageBucket = storageBucket)
+  
     __obj.asInstanceOf[Options]
   }
 }

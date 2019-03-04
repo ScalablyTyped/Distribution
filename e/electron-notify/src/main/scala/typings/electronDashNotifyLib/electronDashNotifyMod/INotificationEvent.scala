@@ -16,10 +16,8 @@ object INotificationEvent {
     event: electronDashNotifyLib.electronDashNotifyLibStrings.close | electronDashNotifyLib.electronDashNotifyLibStrings.show | electronDashNotifyLib.electronDashNotifyLibStrings.click,
     id: scala.Double
   ): INotificationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeNotification")(closeNotification)
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(closeNotification = closeNotification, event = event.asInstanceOf[js.Any], id = id)
+  
     __obj.asInstanceOf[INotificationEvent]
   }
 }

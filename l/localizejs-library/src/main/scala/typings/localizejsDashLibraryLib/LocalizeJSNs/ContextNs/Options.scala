@@ -122,27 +122,8 @@ object Options {
     translateTimeElement: scala.Boolean,
     translateTitle: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autodetectLanguage")(autodetectLanguage)
-    __obj.updateDynamic("basePath")(basePath)
-    __obj.updateDynamic("blockedClasses")(blockedClasses)
-    __obj.updateDynamic("defaultLanguage")(defaultLanguage)
-    __obj.updateDynamic("enhancedContentSecurity")(enhancedContentSecurity)
-    __obj.updateDynamic("fetchTranslations")(fetchTranslations)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("prefetch")(prefetch)
-    __obj.updateDynamic("rememberLanguage")(rememberLanguage)
-    __obj.updateDynamic("retranslateOnNewPhrases")(retranslateOnNewPhrases)
-    __obj.updateDynamic("saveNewPhrases")(saveNewPhrases)
-    __obj.updateDynamic("saveNewPhrasesFromSource")(saveNewPhrasesFromSource)
-    __obj.updateDynamic("targetLanguage")(targetLanguage)
-    __obj.updateDynamic("translateAlt")(translateAlt)
-    __obj.updateDynamic("translateBody")(translateBody)
-    __obj.updateDynamic("translateClasses")(translateClasses)
-    __obj.updateDynamic("translateMetaTags")(translateMetaTags)
-    __obj.updateDynamic("translateNumbers")(translateNumbers)
-    __obj.updateDynamic("translateTimeElement")(translateTimeElement)
-    __obj.updateDynamic("translateTitle")(translateTitle)
+    val __obj = js.Dynamic.literal(autodetectLanguage = autodetectLanguage, basePath = basePath, blockedClasses = blockedClasses, defaultLanguage = defaultLanguage, enhancedContentSecurity = enhancedContentSecurity, fetchTranslations = fetchTranslations, key = key, prefetch = prefetch, rememberLanguage = rememberLanguage, retranslateOnNewPhrases = retranslateOnNewPhrases, saveNewPhrases = saveNewPhrases, saveNewPhrasesFromSource = saveNewPhrasesFromSource, targetLanguage = targetLanguage, translateAlt = translateAlt, translateBody = translateBody, translateClasses = translateClasses, translateMetaTags = translateMetaTags, translateNumbers = translateNumbers, translateTimeElement = translateTimeElement, translateTitle = translateTitle)
+  
     __obj.asInstanceOf[Options]
   }
 }

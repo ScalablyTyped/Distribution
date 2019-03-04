@@ -42,9 +42,7 @@ object CandidateTemplate {
     parentId: scala.Int | scala.Double = null,
     usage: CandidateUsage = null
   ): CandidateTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("candidate")(candidate)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(candidate = candidate, id = id)
     if (annotation != null) __obj.updateDynamic("annotation")(annotation)
     if (label != null) __obj.updateDynamic("label")(label)
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])

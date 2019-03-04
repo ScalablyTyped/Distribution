@@ -27,11 +27,8 @@ trait ScanCodeData extends js.Object {
 object ScanCodeData {
   @scala.inline
   def apply(charSet: java.lang.String, path: java.lang.String, result: java.lang.String, scanType: scanType): ScanCodeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charSet")(charSet)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("scanType")(scanType)
+    val __obj = js.Dynamic.literal(charSet = charSet, path = path, result = result, scanType = scanType)
+  
     __obj.asInstanceOf[ScanCodeData]
   }
 }

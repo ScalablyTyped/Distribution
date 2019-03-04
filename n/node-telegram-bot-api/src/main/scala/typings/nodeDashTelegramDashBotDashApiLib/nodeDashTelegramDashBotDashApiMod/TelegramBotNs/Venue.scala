@@ -20,10 +20,7 @@ object Venue {
     title: java.lang.String,
     foursquare_id: java.lang.String = null
   ): Venue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(address = address, location = location, title = title)
     if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id)
     __obj.asInstanceOf[Venue]
   }

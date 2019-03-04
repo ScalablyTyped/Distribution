@@ -24,10 +24,8 @@ object MissingJavaRuntimeException {
     Message: java.lang.String,
     URLRuntimeLib: java.lang.String
   ): MissingJavaRuntimeException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("URLRuntimeLib")(URLRuntimeLib)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, URLRuntimeLib = URLRuntimeLib)
+  
     __obj.asInstanceOf[MissingJavaRuntimeException]
   }
 }

@@ -27,14 +27,8 @@ object cssClasses {
     ROOT: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog`,
     SCROLL_LOCK: atMaterialDialogLib.atMaterialDialogLibStrings.`mdc-dialog-scroll-lock`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACCEPT_BTN")(ACCEPT_BTN)
-    __obj.updateDynamic("ANIMATING")(ANIMATING)
-    __obj.updateDynamic("BACKDROP")(BACKDROP)
-    __obj.updateDynamic("CANCEL_BTN")(CANCEL_BTN)
-    __obj.updateDynamic("OPEN")(OPEN)
-    __obj.updateDynamic("ROOT")(ROOT)
-    __obj.updateDynamic("SCROLL_LOCK")(SCROLL_LOCK)
+    val __obj = js.Dynamic.literal(ACCEPT_BTN = ACCEPT_BTN, ANIMATING = ANIMATING, BACKDROP = BACKDROP, CANCEL_BTN = CANCEL_BTN, OPEN = OPEN, ROOT = ROOT, SCROLL_LOCK = SCROLL_LOCK)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

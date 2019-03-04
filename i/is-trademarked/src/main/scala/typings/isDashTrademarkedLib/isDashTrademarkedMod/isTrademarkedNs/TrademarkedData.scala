@@ -22,12 +22,8 @@ object TrademarkedData {
     sn: java.lang.String,
     wordmark: java.lang.String
   ): TrademarkedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("reg")(reg)
-    __obj.updateDynamic("serviceCode")(serviceCode)
-    __obj.updateDynamic("sn")(sn)
-    __obj.updateDynamic("wordmark")(wordmark)
+    val __obj = js.Dynamic.literal(description = description, reg = reg, serviceCode = serviceCode, sn = sn, wordmark = wordmark)
+  
     __obj.asInstanceOf[TrademarkedData]
   }
 }

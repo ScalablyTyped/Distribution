@@ -28,15 +28,8 @@ object Anon_Autocomplete {
     placeholder: java.lang.String,
     searchName: java.lang.String
   ): Anon_Autocomplete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocomplete")(autocomplete)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onClear")(onClear)
-    __obj.updateDynamic("onSubmit")(onSubmit)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("searchName")(searchName)
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, lang = lang, onCancel = onCancel, onChange = onChange, onClear = onClear, onSubmit = onSubmit, placeholder = placeholder, searchName = searchName)
+  
     __obj.asInstanceOf[Anon_Autocomplete]
   }
 }

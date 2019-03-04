@@ -22,12 +22,8 @@ object IBridgeIcon {
     url: java.lang.String,
     width: java.lang.String
   ): IBridgeIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("mimetype")(mimetype)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(depth = depth, height = height, mimetype = mimetype, url = url, width = width)
+  
     __obj.asInstanceOf[IBridgeIcon]
   }
 }

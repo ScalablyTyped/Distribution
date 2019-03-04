@@ -32,10 +32,7 @@ object UserParams {
     remove_groups: js.Array[java.lang.String] = null,
     username: java.lang.String = null
   ): UserParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("external_id")(external_id)
-    __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(email = email, external_id = external_id, nonce = nonce)
     if (add_groups != null) __obj.updateDynamic("add_groups")(add_groups)
     if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin)
     if (avatar_url != null) __obj.updateDynamic("avatar_url")(avatar_url)

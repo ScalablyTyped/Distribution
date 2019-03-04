@@ -13,8 +13,8 @@ trait ColorScheme extends js.Object {
 object ColorScheme {
   @scala.inline
   def apply(colors: js.Array[ThemeColorPair]): ColorScheme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
+    val __obj = js.Dynamic.literal(colors = colors)
+  
     __obj.asInstanceOf[ColorScheme]
   }
 }

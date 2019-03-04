@@ -25,8 +25,7 @@ object InitializeResult {
     */
   /* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): InitializeResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
+    val __obj = js.Dynamic.literal(capabilities = capabilities)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitializeResult]
   }

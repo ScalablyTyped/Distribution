@@ -32,11 +32,8 @@ object _Impl {
     hidden: java.lang.String,
     loading: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("animating")(animating)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(active = active, animating = animating, hidden = hidden, loading = loading)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

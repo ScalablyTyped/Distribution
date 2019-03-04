@@ -19,9 +19,8 @@ object AcsTokenResponse {
     WrapAccessToken: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String],
     WrapAccessTokenExpiresIn: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[java.lang.String]
   ): AcsTokenResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WrapAccessToken")(WrapAccessToken)
-    __obj.updateDynamic("WrapAccessTokenExpiresIn")(WrapAccessTokenExpiresIn)
+    val __obj = js.Dynamic.literal(WrapAccessToken = WrapAccessToken, WrapAccessTokenExpiresIn = WrapAccessTokenExpiresIn)
+  
     __obj.asInstanceOf[AcsTokenResponse]
   }
 }

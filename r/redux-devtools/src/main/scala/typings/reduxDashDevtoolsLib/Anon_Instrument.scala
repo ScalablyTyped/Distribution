@@ -12,8 +12,8 @@ trait Anon_Instrument extends js.Object {
 object Anon_Instrument {
   @scala.inline
   def apply(instrument: js.Function0[js.Function1[/* opts */ js.Any, _]]): Anon_Instrument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instrument")(instrument)
+    val __obj = js.Dynamic.literal(instrument = instrument)
+  
     __obj.asInstanceOf[Anon_Instrument]
   }
 }

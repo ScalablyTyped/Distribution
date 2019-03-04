@@ -18,8 +18,8 @@ object Anon_Indexed {
     `type`: web3Lib.ethAbiMod.ABIDataTypes,
     indexed: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Indexed = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
     __obj.asInstanceOf[Anon_Indexed]
   }

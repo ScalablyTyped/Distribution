@@ -20,10 +20,8 @@ object Anon_Capacity {
     owner: Anon_Id | java.lang.String,
     `type`: java.lang.String
   ): Anon_Capacity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(capacity = capacity, metadata = metadata, owner = owner.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Capacity]
   }
 }

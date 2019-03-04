@@ -37,8 +37,7 @@ object ConfirmStrings {
     subtitle: java.lang.String = null,
     title: java.lang.String = null
   ): ConfirmStrings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (cancelButtonLabel != null) __obj.updateDynamic("cancelButtonLabel")(cancelButtonLabel)
     if (confirmButtonLabel != null) __obj.updateDynamic("confirmButtonLabel")(confirmButtonLabel)
     if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)

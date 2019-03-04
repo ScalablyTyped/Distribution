@@ -18,8 +18,8 @@ trait RequestContextDebugInfo extends js.Object {
 object RequestContextDebugInfo {
   @scala.inline
   def apply(pendingStatements: js.Array[java.lang.String]): RequestContextDebugInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pendingStatements")(pendingStatements)
+    val __obj = js.Dynamic.literal(pendingStatements = pendingStatements)
+  
     __obj.asInstanceOf[RequestContextDebugInfo]
   }
 }

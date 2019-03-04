@@ -12,8 +12,8 @@ trait RouterOptions extends js.Object {
 object RouterOptions {
   @scala.inline
   def apply(caseSensitive: scala.Boolean): RouterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caseSensitive")(caseSensitive)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive)
+  
     __obj.asInstanceOf[RouterOptions]
   }
 }

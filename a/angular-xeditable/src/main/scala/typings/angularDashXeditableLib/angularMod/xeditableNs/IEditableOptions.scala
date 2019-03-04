@@ -56,15 +56,8 @@ object IEditableOptions {
     isDisabled: scala.Boolean,
     theme: java.lang.String
   ): IEditableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("activationEvent")(activationEvent)
-    __obj.updateDynamic("blurElem")(blurElem)
-    __obj.updateDynamic("blurForm")(blurForm)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("icon_set")(icon_set)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(activate = activate, activationEvent = activationEvent, blurElem = blurElem, blurForm = blurForm, buttons = buttons, icon_set = icon_set, isDisabled = isDisabled, theme = theme)
+  
     __obj.asInstanceOf[IEditableOptions]
   }
 }

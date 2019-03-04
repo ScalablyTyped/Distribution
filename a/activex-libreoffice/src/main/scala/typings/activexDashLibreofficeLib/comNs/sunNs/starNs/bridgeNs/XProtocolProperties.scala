@@ -59,14 +59,8 @@ object XProtocolProperties {
     release: js.Function0[scala.Unit],
     requestChange: js.Function1[scala.Double, scala.Double]
   ): XProtocolProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("commitChange")(commitChange)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("requestChange")(requestChange)
+    val __obj = js.Dynamic.literal(Properties = Properties, acquire = acquire, commitChange = commitChange, getProperties = getProperties, queryInterface = queryInterface, release = release, requestChange = requestChange)
+  
     __obj.asInstanceOf[XProtocolProperties]
   }
 }

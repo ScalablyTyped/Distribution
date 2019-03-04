@@ -35,12 +35,8 @@ object ObjectTypeInternalSlot {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ObjectTypeInternalSlot = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("static")(static)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, method = method, optional = optional, static = static, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

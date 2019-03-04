@@ -30,7 +30,8 @@ object ViewModelOptions {
     requires: js.Array[java.lang.String] = null,
     store: Store = null
   ): ViewModelOptions = {
-    val __obj = js.Dynamic.literal(`if` = `if`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("if")(`if`)
     if (factories != null) __obj.updateDynamic("factories")(factories)
     if (factory != null) __obj.updateDynamic("factory")(factory)
     if (internals != null) __obj.updateDynamic("internals")(internals)

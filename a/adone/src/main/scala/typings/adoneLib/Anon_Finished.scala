@@ -13,9 +13,8 @@ trait Anon_Finished extends js.Object {
 object Anon_Finished {
   @scala.inline
   def apply(finishedNs: js.Any, pipelineNs: js.Any): Anon_Finished = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finishedNs")(finishedNs)
-    __obj.updateDynamic("pipelineNs")(pipelineNs)
+    val __obj = js.Dynamic.literal(finishedNs = finishedNs, pipelineNs = pipelineNs)
+  
     __obj.asInstanceOf[Anon_Finished]
   }
 }

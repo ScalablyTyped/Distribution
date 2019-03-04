@@ -103,37 +103,8 @@ object CellProperties {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): CellProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackColor")(BackColor)
-    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
-    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
-    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
-    __obj.updateDynamic("BackTransparent")(BackTransparent)
-    __obj.updateDynamic("BottomBorder")(BottomBorder)
-    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
-    __obj.updateDynamic("CellName")(CellName)
-    __obj.updateDynamic("IsProtected")(IsProtected)
-    __obj.updateDynamic("LeftBorder")(LeftBorder)
-    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
-    __obj.updateDynamic("NumberFormat")(NumberFormat)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RightBorder")(RightBorder)
-    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
-    __obj.updateDynamic("TextSection")(TextSection)
-    __obj.updateDynamic("TopBorder")(TopBorder)
-    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
-    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
-    __obj.updateDynamic("VertOrient")(VertOrient)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(BackColor = BackColor, BackGraphicFilter = BackGraphicFilter, BackGraphicLocation = BackGraphicLocation, BackGraphicURL = BackGraphicURL, BackTransparent = BackTransparent, BottomBorder = BottomBorder, BottomBorderDistance = BottomBorderDistance, CellName = CellName, IsProtected = IsProtected, LeftBorder = LeftBorder, LeftBorderDistance = LeftBorderDistance, NumberFormat = NumberFormat, PropertySetInfo = PropertySetInfo, RightBorder = RightBorder, RightBorderDistance = RightBorderDistance, TextSection = TextSection, TopBorder = TopBorder, TopBorderDistance = TopBorderDistance, UserDefinedAttributes = UserDefinedAttributes, VertOrient = VertOrient, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[CellProperties]
   }
 }

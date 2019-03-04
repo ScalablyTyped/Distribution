@@ -48,25 +48,8 @@ object DateTimeFormatterBuilder {
     parseStrict: js.Function0[DateTimeFormatterBuilder],
     toFormatter: js.Function1[ResolverStyle, DateTimeFormatter]
   ): DateTimeFormatterBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("appendFraction")(appendFraction)
-    __obj.updateDynamic("appendInstant")(appendInstant)
-    __obj.updateDynamic("appendLiteral")(appendLiteral)
-    __obj.updateDynamic("appendOffset")(appendOffset)
-    __obj.updateDynamic("appendOffsetId")(appendOffsetId)
-    __obj.updateDynamic("appendPattern")(appendPattern)
-    __obj.updateDynamic("appendValue")(appendValue)
-    __obj.updateDynamic("appendValueReduced")(appendValueReduced)
-    __obj.updateDynamic("appendZoneId")(appendZoneId)
-    __obj.updateDynamic("optionalEnd")(optionalEnd)
-    __obj.updateDynamic("optionalStart")(optionalStart)
-    __obj.updateDynamic("padNext")(padNext)
-    __obj.updateDynamic("parseCaseInsensitive")(parseCaseInsensitive)
-    __obj.updateDynamic("parseCaseSensitive")(parseCaseSensitive)
-    __obj.updateDynamic("parseLenient")(parseLenient)
-    __obj.updateDynamic("parseStrict")(parseStrict)
-    __obj.updateDynamic("toFormatter")(toFormatter)
+    val __obj = js.Dynamic.literal(append = append, appendFraction = appendFraction, appendInstant = appendInstant, appendLiteral = appendLiteral, appendOffset = appendOffset, appendOffsetId = appendOffsetId, appendPattern = appendPattern, appendValue = appendValue, appendValueReduced = appendValueReduced, appendZoneId = appendZoneId, optionalEnd = optionalEnd, optionalStart = optionalStart, padNext = padNext, parseCaseInsensitive = parseCaseInsensitive, parseCaseSensitive = parseCaseSensitive, parseLenient = parseLenient, parseStrict = parseStrict, toFormatter = toFormatter)
+  
     __obj.asInstanceOf[DateTimeFormatterBuilder]
   }
 }

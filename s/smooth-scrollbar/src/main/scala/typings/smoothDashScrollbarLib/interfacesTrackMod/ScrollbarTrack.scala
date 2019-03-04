@@ -24,13 +24,8 @@ object ScrollbarTrack {
     thumb: ScrollbarThumb,
     update: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): ScrollbarTrack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachTo")(attachTo)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("thumb")(thumb)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(attachTo = attachTo, element = element, hide = hide, show = show, thumb = thumb, update = update)
+  
     __obj.asInstanceOf[ScrollbarTrack]
   }
 }

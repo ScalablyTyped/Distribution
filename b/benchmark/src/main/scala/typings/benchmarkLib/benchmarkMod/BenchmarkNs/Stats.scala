@@ -26,14 +26,8 @@ object Stats {
     sem: scala.Double,
     variance: scala.Double
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviation")(deviation)
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("moe")(moe)
-    __obj.updateDynamic("rme")(rme)
-    __obj.updateDynamic("sample")(sample)
-    __obj.updateDynamic("sem")(sem)
-    __obj.updateDynamic("variance")(variance)
+    val __obj = js.Dynamic.literal(deviation = deviation, mean = mean, moe = moe, rme = rme, sample = sample, sem = sem, variance = variance)
+  
     __obj.asInstanceOf[Stats]
   }
 }

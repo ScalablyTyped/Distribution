@@ -59,9 +59,8 @@ object RegistrationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
     ]
   ): RegistrationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
+    val __obj = js.Dynamic.literal(create = create, delete = delete)
+  
     __obj.asInstanceOf[RegistrationsResource]
   }
 }

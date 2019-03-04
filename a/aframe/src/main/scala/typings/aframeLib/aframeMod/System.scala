@@ -24,12 +24,7 @@ object System {
     schema: Schema[T],
     tick: js.Function2[/* t */ scala.Double, /* dt */ scala.Double, scala.Unit] = null
   ): System[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], init = init, pause = pause, play = play, schema = schema.asInstanceOf[js.Any])
     if (tick != null) __obj.updateDynamic("tick")(tick)
     __obj.asInstanceOf[System[T]]
   }

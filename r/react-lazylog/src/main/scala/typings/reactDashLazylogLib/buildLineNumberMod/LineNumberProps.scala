@@ -20,8 +20,7 @@ object LineNumberProps {
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): LineNumberProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(number = number)
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (style != null) __obj.updateDynamic("style")(style)

@@ -22,12 +22,8 @@ object Site {
     posts: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Post],
     tags: Model[hexoLib.hexoMod.HexoNs.LocalsNs.Tag]
   ): Site = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("posts")(posts)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(categories = categories, data = data, pages = pages, posts = posts, tags = tags)
+  
     __obj.asInstanceOf[Site]
   }
 }

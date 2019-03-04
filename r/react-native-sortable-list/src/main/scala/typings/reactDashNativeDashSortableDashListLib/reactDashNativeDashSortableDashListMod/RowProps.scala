@@ -22,9 +22,7 @@ object RowProps {
     index: scala.Int | scala.Double = null,
     key: reactDashNativeDashSortableDashListLib.DataKey = null
   ): RowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(active = active, data = data)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

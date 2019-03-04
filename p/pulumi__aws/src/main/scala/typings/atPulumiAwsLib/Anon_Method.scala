@@ -22,7 +22,8 @@ object Anon_Method {
     path: java.lang.String = null,
     statusCode: java.lang.String = null
   ): Anon_Method = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (method != null) __obj.updateDynamic("method")(method)
     if (name != null) __obj.updateDynamic("name")(name)
     if (path != null) __obj.updateDynamic("path")(path)

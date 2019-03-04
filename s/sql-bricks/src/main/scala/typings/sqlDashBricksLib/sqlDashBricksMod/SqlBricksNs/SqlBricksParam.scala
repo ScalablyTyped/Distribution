@@ -13,9 +13,8 @@ trait SqlBricksParam extends js.Object {
 object SqlBricksParam {
   @scala.inline
   def apply(text: java.lang.String, values: js.Array[_]): SqlBricksParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(text = text, values = values)
+  
     __obj.asInstanceOf[SqlBricksParam]
   }
 }

@@ -64,19 +64,8 @@ object FilterSetsResource {
     losingBids: LosingBidsResource,
     nonBillableWinningBids: NonBillableWinningBidsResource
   ): FilterSetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bidMetrics")(bidMetrics)
-    __obj.updateDynamic("bidResponseErrors")(bidResponseErrors)
-    __obj.updateDynamic("bidResponsesWithoutBids")(bidResponsesWithoutBids)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("filteredBidRequests")(filteredBidRequests)
-    __obj.updateDynamic("filteredBids")(filteredBids)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("impressionMetrics")(impressionMetrics)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("losingBids")(losingBids)
-    __obj.updateDynamic("nonBillableWinningBids")(nonBillableWinningBids)
+    val __obj = js.Dynamic.literal(bidMetrics = bidMetrics, bidResponseErrors = bidResponseErrors, bidResponsesWithoutBids = bidResponsesWithoutBids, create = create, delete = delete, filteredBidRequests = filteredBidRequests, filteredBids = filteredBids, get = get, impressionMetrics = impressionMetrics, list = list, losingBids = losingBids, nonBillableWinningBids = nonBillableWinningBids)
+  
     __obj.asInstanceOf[FilterSetsResource]
   }
 }

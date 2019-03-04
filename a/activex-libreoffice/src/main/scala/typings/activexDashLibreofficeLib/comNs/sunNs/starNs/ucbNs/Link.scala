@@ -19,9 +19,8 @@ trait Link extends js.Object {
 object Link {
   @scala.inline
   def apply(Destination: java.lang.String, Source: java.lang.String): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Destination")(Destination)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Destination = Destination, Source = Source)
+  
     __obj.asInstanceOf[Link]
   }
 }

@@ -18,10 +18,8 @@ object SjclECCBasic {
     publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey],
     secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
   ): SjclECCBasic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateKeys")(generateKeys)
-    __obj.updateDynamic("publicKey")(publicKey)
-    __obj.updateDynamic("secretKey")(secretKey)
+    val __obj = js.Dynamic.literal(generateKeys = generateKeys, publicKey = publicKey, secretKey = secretKey)
+  
     __obj.asInstanceOf[SjclECCBasic]
   }
 }

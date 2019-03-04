@@ -16,9 +16,8 @@ object IServiceDeviceStatics {
     getDeviceSelector: js.Function1[ServiceDeviceType, java.lang.String],
     getDeviceSelectorFromServiceId: js.Function1[java.lang.String, java.lang.String]
   ): IServiceDeviceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeviceSelector")(getDeviceSelector)
-    __obj.updateDynamic("getDeviceSelectorFromServiceId")(getDeviceSelectorFromServiceId)
+    val __obj = js.Dynamic.literal(getDeviceSelector = getDeviceSelector, getDeviceSelectorFromServiceId = getDeviceSelectorFromServiceId)
+  
     __obj.asInstanceOf[IServiceDeviceStatics]
   }
 }

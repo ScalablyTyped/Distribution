@@ -84,10 +84,7 @@ object ResearchSubject {
     resourceType: code = null,
     text: Narrative = null
   ): ResearchSubject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("individual")(individual)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("study")(study)
+    val __obj = js.Dynamic.literal(individual = individual, status = status, study = study)
     if (_actualArm != null) __obj.updateDynamic("_actualArm")(_actualArm)
     if (_assignedArm != null) __obj.updateDynamic("_assignedArm")(_assignedArm)
     if (_id != null) __obj.updateDynamic("_id")(_id)

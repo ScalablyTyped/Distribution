@@ -12,8 +12,8 @@ trait TabsActions extends js.Object {
 object TabsActions {
   @scala.inline
   def apply(updateIndicator: js.Function0[scala.Unit]): TabsActions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("updateIndicator")(updateIndicator)
+    val __obj = js.Dynamic.literal(updateIndicator = updateIndicator)
+  
     __obj.asInstanceOf[TabsActions]
   }
 }

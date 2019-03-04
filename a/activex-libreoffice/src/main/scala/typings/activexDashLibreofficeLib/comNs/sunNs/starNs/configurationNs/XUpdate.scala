@@ -29,11 +29,8 @@ object XUpdate {
     ],
     removeExtensionXcuFile: js.Function1[java.lang.String, scala.Unit]
   ): XUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insertExtensionXcsFile")(insertExtensionXcsFile)
-    __obj.updateDynamic("insertExtensionXcuFile")(insertExtensionXcuFile)
-    __obj.updateDynamic("insertModificationXcuFile")(insertModificationXcuFile)
-    __obj.updateDynamic("removeExtensionXcuFile")(removeExtensionXcuFile)
+    val __obj = js.Dynamic.literal(insertExtensionXcsFile = insertExtensionXcsFile, insertExtensionXcuFile = insertExtensionXcuFile, insertModificationXcuFile = insertModificationXcuFile, removeExtensionXcuFile = removeExtensionXcuFile)
+  
     __obj.asInstanceOf[XUpdate]
   }
 }

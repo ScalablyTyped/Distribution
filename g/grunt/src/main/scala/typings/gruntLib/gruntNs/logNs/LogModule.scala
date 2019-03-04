@@ -28,18 +28,8 @@ object LogModule {
     writeflags: js.Function1[js.Any, LogModule],
     writeln: js.Function1[java.lang.String, LogModule]
   ): LogModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("errorlns")(errorlns)
-    __obj.updateDynamic("notverbose")(notverbose)
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("oklns")(oklns)
-    __obj.updateDynamic("subhead")(subhead)
-    __obj.updateDynamic("verbose")(verbose)
-    __obj.updateDynamic("warn")(warn)
-    __obj.updateDynamic("write")(write)
-    __obj.updateDynamic("writeflags")(writeflags)
-    __obj.updateDynamic("writeln")(writeln)
+    val __obj = js.Dynamic.literal(error = error, errorlns = errorlns, notverbose = notverbose, ok = ok, oklns = oklns, subhead = subhead, verbose = verbose, warn = warn, write = write, writeflags = writeflags, writeln = writeln)
+  
     __obj.asInstanceOf[LogModule]
   }
 }

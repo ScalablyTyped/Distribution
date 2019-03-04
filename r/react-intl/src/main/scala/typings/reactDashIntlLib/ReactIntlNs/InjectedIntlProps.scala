@@ -12,8 +12,8 @@ trait InjectedIntlProps extends js.Object {
 object InjectedIntlProps {
   @scala.inline
   def apply(intl: InjectedIntl): InjectedIntlProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intl")(intl)
+    val __obj = js.Dynamic.literal(intl = intl)
+  
     __obj.asInstanceOf[InjectedIntlProps]
   }
 }

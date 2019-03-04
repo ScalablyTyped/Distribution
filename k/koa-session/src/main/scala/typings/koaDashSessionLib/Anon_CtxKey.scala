@@ -18,8 +18,7 @@ object Anon_CtxKey {
     key: java.lang.String = null,
     value: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] = null
   ): Anon_CtxKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctx")(ctx)
+    val __obj = js.Dynamic.literal(ctx = ctx)
     if (key != null) __obj.updateDynamic("key")(key)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_CtxKey]

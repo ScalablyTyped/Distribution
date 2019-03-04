@@ -60,36 +60,8 @@ object SAXEventKeeper {
       scala.Unit
     ]
   ): SAXEventKeeper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentBlockingNode")(CurrentBlockingNode)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addBlocker")(addBlocker)
-    __obj.updateDynamic("addElementCollector")(addElementCollector)
-    __obj.updateDynamic("addReferenceResolvedListener")(addReferenceResolvedListener)
-    __obj.updateDynamic("addSAXEventKeeperStatusChangeListener")(addSAXEventKeeperStatusChangeListener)
-    __obj.updateDynamic("addSecurityElementCollector")(addSecurityElementCollector)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("getCurrentBlockingNode")(getCurrentBlockingNode)
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isBlocking")(isBlocking)
-    __obj.updateDynamic("printBufferNodeTree")(printBufferNodeTree)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeBlocker")(removeBlocker)
-    __obj.updateDynamic("removeElementCollector")(removeElementCollector)
-    __obj.updateDynamic("removeReferenceResolvedListener")(removeReferenceResolvedListener)
-    __obj.updateDynamic("removeSAXEventKeeperStatusChangeListener")(removeSAXEventKeeperStatusChangeListener)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("setElement")(setElement)
-    __obj.updateDynamic("setNextHandler")(setNextHandler)
-    __obj.updateDynamic("setSecurityId")(setSecurityId)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startElement")(startElement)
+    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = acquire, addBlocker = addBlocker, addElementCollector = addElementCollector, addReferenceResolvedListener = addReferenceResolvedListener, addSAXEventKeeperStatusChangeListener = addSAXEventKeeperStatusChangeListener, addSecurityElementCollector = addSecurityElementCollector, characters = characters, endDocument = endDocument, endElement = endElement, getCurrentBlockingNode = getCurrentBlockingNode, getElement = getElement, ignorableWhitespace = ignorableWhitespace, initialize = initialize, isBlocking = isBlocking, printBufferNodeTree = printBufferNodeTree, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, removeBlocker = removeBlocker, removeElementCollector = removeElementCollector, removeReferenceResolvedListener = removeReferenceResolvedListener, removeSAXEventKeeperStatusChangeListener = removeSAXEventKeeperStatusChangeListener, setDocumentLocator = setDocumentLocator, setElement = setElement, setNextHandler = setNextHandler, setSecurityId = setSecurityId, startDocument = startDocument, startElement = startElement)
+  
     __obj.asInstanceOf[SAXEventKeeper]
   }
 }

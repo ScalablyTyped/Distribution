@@ -36,13 +36,7 @@ object Props {
     hasStickyPosition: js.UndefOr[scala.Boolean] = js.undefined,
     recent: js.Array[java.lang.String] = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emojiProps")(emojiProps)
-    __obj.updateDynamic("i18n")(i18n)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("perLine")(perLine)
+    val __obj = js.Dynamic.literal(emojiProps = emojiProps, i18n = i18n, id = id, name = name, native = native, perLine = perLine)
     if (emojis != null) __obj.updateDynamic("emojis")(emojis)
     if (!js.isUndefined(hasStickyPosition)) __obj.updateDynamic("hasStickyPosition")(hasStickyPosition)
     if (recent != null) __obj.updateDynamic("recent")(recent)

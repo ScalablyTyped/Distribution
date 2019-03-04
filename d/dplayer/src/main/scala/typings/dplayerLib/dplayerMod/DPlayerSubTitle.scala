@@ -22,8 +22,7 @@ object DPlayerSubTitle {
     fontSize: java.lang.String = null,
     `type`: SubTitleType = null
   ): DPlayerSubTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (bottom != null) __obj.updateDynamic("bottom")(bottom)
     if (color != null) __obj.updateDynamic("color")(color)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)

@@ -28,10 +28,8 @@ object QueryMixin {
     boost: js.Function1[scala.Double, QueryMixin],
     toJSON: js.Function0[js.Any]
   ): QueryMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, toJSON = toJSON)
+  
     __obj.asInstanceOf[QueryMixin]
   }
 }

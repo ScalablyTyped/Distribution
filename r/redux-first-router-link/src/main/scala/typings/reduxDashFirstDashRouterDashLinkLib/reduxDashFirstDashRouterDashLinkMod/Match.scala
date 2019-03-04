@@ -15,11 +15,8 @@ trait Match[P] extends js.Object {
 object Match {
   @scala.inline
   def apply[P](isExact: scala.Boolean, params: P, path: java.lang.String, url: java.lang.String): Match[P] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isExact")(isExact)
-    __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(isExact = isExact, params = params.asInstanceOf[js.Any], path = path, url = url)
+  
     __obj.asInstanceOf[Match[P]]
   }
 }

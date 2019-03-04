@@ -18,9 +18,7 @@ object Anon_AscendingDescending {
     header: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_AscendingDescending = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], header = header)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_AscendingDescending]
   }

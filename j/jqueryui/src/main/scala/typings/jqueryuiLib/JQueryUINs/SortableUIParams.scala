@@ -26,14 +26,8 @@ object SortableUIParams {
     position: js.Any,
     sender: jqueryuiLib.JQuery
   ): SortableUIParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helper")(helper)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("originalPosition")(originalPosition)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(helper = helper, item = item, offset = offset, originalPosition = originalPosition, placeholder = placeholder, position = position, sender = sender)
+  
     __obj.asInstanceOf[SortableUIParams]
   }
 }

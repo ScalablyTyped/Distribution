@@ -65,31 +65,9 @@ object Plugins {
     when: ddDashTraceLib.ddDashTraceMod.pluginsNs.when,
     winston: ddDashTraceLib.ddDashTraceMod.pluginsNs.winston
   ): Plugins = {
-    val __obj = js.Dynamic.literal(`generic-pool` = `generic-pool`, `mongodb-core` = `mongodb-core`)
-    __obj.updateDynamic("amqp10")(amqp10)
-    __obj.updateDynamic("amqplib")(amqplib)
-    __obj.updateDynamic("bluebird")(bluebird)
-    __obj.updateDynamic("bunyan")(bunyan)
-    __obj.updateDynamic("dns")(dns)
-    __obj.updateDynamic("elasticsearch")(elasticsearch)
-    __obj.updateDynamic("express")(express)
-    __obj.updateDynamic("graphql")(graphql)
-    __obj.updateDynamic("hapi")(hapi)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("ioredis")(ioredis)
-    __obj.updateDynamic("koa")(koa)
-    __obj.updateDynamic("memcached")(memcached)
-    __obj.updateDynamic("mysql")(mysql)
-    __obj.updateDynamic("mysql2")(mysql2)
-    __obj.updateDynamic("net")(net)
-    __obj.updateDynamic("pg")(pg)
-    __obj.updateDynamic("pino")(pino)
-    __obj.updateDynamic("q")(q)
-    __obj.updateDynamic("redis")(redis)
-    __obj.updateDynamic("restify")(restify)
-    __obj.updateDynamic("router")(router)
-    __obj.updateDynamic("when")(when)
-    __obj.updateDynamic("winston")(winston)
+    val __obj = js.Dynamic.literal(amqp10 = amqp10, amqplib = amqplib, bluebird = bluebird, bunyan = bunyan, dns = dns, elasticsearch = elasticsearch, express = express, graphql = graphql, hapi = hapi, http = http, ioredis = ioredis, koa = koa, memcached = memcached, mysql = mysql, mysql2 = mysql2, net = net, pg = pg, pino = pino, q = q, redis = redis, restify = restify, router = router, when = when, winston = winston)
+    __obj.updateDynamic("generic-pool")(`generic-pool`)
+    __obj.updateDynamic("mongodb-core")(`mongodb-core`)
     __obj.asInstanceOf[Plugins]
   }
 }

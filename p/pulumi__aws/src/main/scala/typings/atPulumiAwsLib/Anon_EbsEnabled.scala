@@ -20,9 +20,7 @@ object Anon_EbsEnabled {
     iops: scala.Int | scala.Double = null,
     volumeSize: scala.Int | scala.Double = null
   ): Anon_EbsEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ebsEnabled")(ebsEnabled)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(ebsEnabled = ebsEnabled, volumeType = volumeType)
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
     if (volumeSize != null) __obj.updateDynamic("volumeSize")(volumeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EbsEnabled]

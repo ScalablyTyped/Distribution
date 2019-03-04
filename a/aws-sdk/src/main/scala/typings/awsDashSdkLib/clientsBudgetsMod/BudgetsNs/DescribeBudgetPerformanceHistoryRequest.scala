@@ -25,9 +25,7 @@ object DescribeBudgetPerformanceHistoryRequest {
     NextToken: GenericString = null,
     TimePeriod: TimePeriod = null
   ): DescribeBudgetPerformanceHistoryRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("BudgetName")(BudgetName)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, BudgetName = BudgetName)
     if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod)

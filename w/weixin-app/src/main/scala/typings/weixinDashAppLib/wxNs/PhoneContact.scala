@@ -113,8 +113,7 @@ object PhoneContact {
     workFaxNumber: java.lang.String = null,
     workPhoneNumber: java.lang.String = null
   ): PhoneContact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstName")(firstName)
+    val __obj = js.Dynamic.literal(firstName = firstName)
     if (addressCity != null) __obj.updateDynamic("addressCity")(addressCity)
     if (addressCountry != null) __obj.updateDynamic("addressCountry")(addressCountry)
     if (addressPostalCode != null) __obj.updateDynamic("addressPostalCode")(addressPostalCode)

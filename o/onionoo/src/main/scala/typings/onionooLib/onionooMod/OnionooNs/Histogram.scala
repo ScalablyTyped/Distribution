@@ -24,13 +24,8 @@ object Histogram {
     last: java.lang.String,
     values: js.Array[scala.Double]
   ): Histogram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("factor")(factor)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(count = count, factor = factor, first = first, interval = interval, last = last, values = values)
+  
     __obj.asInstanceOf[Histogram]
   }
 }

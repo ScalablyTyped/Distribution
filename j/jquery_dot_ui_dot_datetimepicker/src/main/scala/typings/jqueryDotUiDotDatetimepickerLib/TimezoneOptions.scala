@@ -13,9 +13,8 @@ trait TimezoneOptions extends js.Object {
 object TimezoneOptions {
   @scala.inline
   def apply(label: java.lang.String, value: scala.Double): TimezoneOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, value = value)
+  
     __obj.asInstanceOf[TimezoneOptions]
   }
 }

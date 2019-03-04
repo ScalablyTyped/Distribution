@@ -22,12 +22,8 @@ object Anon_CurrentX {
     startX: scala.Double,
     startY: scala.Double
   ): Anon_CurrentX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentX")(currentX)
-    __obj.updateDynamic("currentY")(currentY)
-    __obj.updateDynamic("diff")(diff)
-    __obj.updateDynamic("startX")(startX)
-    __obj.updateDynamic("startY")(startY)
+    val __obj = js.Dynamic.literal(currentX = currentX, currentY = currentY, diff = diff, startX = startX, startY = startY)
+  
     __obj.asInstanceOf[Anon_CurrentX]
   }
 }

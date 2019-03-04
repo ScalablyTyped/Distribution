@@ -38,19 +38,8 @@ object PreviousMap {
     text: java.lang.String,
     withContent: js.Function0[scala.Boolean]
   ): PreviousMap = {
-    val __obj = js.Dynamic.literal(`inline` = `inline`)
-    __obj.updateDynamic("annotation")(annotation)
-    __obj.updateDynamic("consumer")(consumer)
-    __obj.updateDynamic("consumerCache")(consumerCache)
-    __obj.updateDynamic("decodeInline")(decodeInline)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("isMap")(isMap)
-    __obj.updateDynamic("loadAnnotation")(loadAnnotation)
-    __obj.updateDynamic("loadMap")(loadMap)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("startWith")(startWith)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("withContent")(withContent)
+    val __obj = js.Dynamic.literal(annotation = annotation, consumer = consumer, consumerCache = consumerCache, decodeInline = decodeInline, file = file, isMap = isMap, loadAnnotation = loadAnnotation, loadMap = loadMap, root = root, startWith = startWith, text = text, withContent = withContent)
+    __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[PreviousMap]
   }
 }

@@ -68,35 +68,8 @@ object Anon_Arrow {
     squareCorners: Anon_180,
     triangle: Anon_50
   ): Anon_Arrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrow")(arrow)
-    __obj.updateDynamic("arrow3")(arrow3)
-    __obj.updateDynamic("bouncingBar")(bouncingBar)
-    __obj.updateDynamic("boxBounce")(boxBounce)
-    __obj.updateDynamic("boxBounce2")(boxBounce2)
-    __obj.updateDynamic("circleHalves")(circleHalves)
-    __obj.updateDynamic("circleQuarters")(circleQuarters)
-    __obj.updateDynamic("clock")(clock)
-    __obj.updateDynamic("dots")(dots)
-    __obj.updateDynamic("dots10")(dots10)
-    __obj.updateDynamic("dots11")(dots11)
-    __obj.updateDynamic("dots12")(dots12)
-    __obj.updateDynamic("dots2")(dots2)
-    __obj.updateDynamic("dots3")(dots3)
-    __obj.updateDynamic("dots4")(dots4)
-    __obj.updateDynamic("dots5")(dots5)
-    __obj.updateDynamic("dots6")(dots6)
-    __obj.updateDynamic("dots7")(dots7)
-    __obj.updateDynamic("dots8")(dots8)
-    __obj.updateDynamic("dots9")(dots9)
-    __obj.updateDynamic("flip")(flip)
-    __obj.updateDynamic("growHorizontal")(growHorizontal)
-    __obj.updateDynamic("growVertical")(growVertical)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("pipe")(pipe)
-    __obj.updateDynamic("simpleDots")(simpleDots)
-    __obj.updateDynamic("squareCorners")(squareCorners)
-    __obj.updateDynamic("triangle")(triangle)
+    val __obj = js.Dynamic.literal(arrow = arrow, arrow3 = arrow3, bouncingBar = bouncingBar, boxBounce = boxBounce, boxBounce2 = boxBounce2, circleHalves = circleHalves, circleQuarters = circleQuarters, clock = clock, dots = dots, dots10 = dots10, dots11 = dots11, dots12 = dots12, dots2 = dots2, dots3 = dots3, dots4 = dots4, dots5 = dots5, dots6 = dots6, dots7 = dots7, dots8 = dots8, dots9 = dots9, flip = flip, growHorizontal = growHorizontal, growVertical = growVertical, line = line, pipe = pipe, simpleDots = simpleDots, squareCorners = squareCorners, triangle = triangle)
+  
     __obj.asInstanceOf[Anon_Arrow]
   }
 }

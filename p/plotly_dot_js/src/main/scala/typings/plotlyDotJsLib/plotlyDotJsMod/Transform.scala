@@ -34,17 +34,8 @@ object Transform {
     `type`: plotlyDotJsLib.plotlyDotJsLibStrings.aggregate | plotlyDotJsLib.plotlyDotJsLibStrings.filter | plotlyDotJsLib.plotlyDotJsLibStrings.groupby | plotlyDotJsLib.plotlyDotJsLibStrings.sort,
     value: js.Any
   ): Transform = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("aggregations")(aggregations)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    __obj.updateDynamic("nameformat")(nameformat)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    __obj.updateDynamic("preservegaps")(preservegaps)
-    __obj.updateDynamic("styles")(styles)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(aggregations = aggregations, enabled = enabled, groups = groups.asInstanceOf[js.Any], nameformat = nameformat, operation = operation, order = order.asInstanceOf[js.Any], preservegaps = preservegaps, styles = styles, target = target.asInstanceOf[js.Any], value = value)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transform]
   }
 }

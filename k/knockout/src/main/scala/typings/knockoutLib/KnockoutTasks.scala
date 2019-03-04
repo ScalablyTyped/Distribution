@@ -23,11 +23,8 @@ object KnockoutTasks {
     schedule: js.Function1[js.Function, scala.Double],
     scheduler: js.Function1[js.Function, js.Any]
   ): KnockoutTasks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("runEarly")(runEarly)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("scheduler")(scheduler)
+    val __obj = js.Dynamic.literal(cancel = cancel, runEarly = runEarly, schedule = schedule, scheduler = scheduler)
+  
     __obj.asInstanceOf[KnockoutTasks]
   }
 }

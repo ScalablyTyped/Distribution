@@ -48,8 +48,7 @@ object Props {
     transformDayElement: js.Function3[/* rect */ js.Any, /* value */ js.Any, /* index */ scala.Double, _] = null,
     weekdayLabels: js.Array[java.lang.String] = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(values = values)
     if (classForValue != null) __obj.updateDynamic("classForValue")(classForValue)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])

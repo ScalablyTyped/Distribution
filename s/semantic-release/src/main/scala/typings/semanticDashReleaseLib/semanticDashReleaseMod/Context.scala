@@ -24,8 +24,7 @@ object Context {
     nextRelease: NextRelease = null,
     options: GlobalConfig = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logger")(logger)
+    val __obj = js.Dynamic.literal(logger = logger)
     if (lastRelease != null) __obj.updateDynamic("lastRelease")(lastRelease)
     if (nextRelease != null) __obj.updateDynamic("nextRelease")(nextRelease)
     if (options != null) __obj.updateDynamic("options")(options)

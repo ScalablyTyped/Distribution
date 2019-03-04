@@ -39,13 +39,8 @@ object GetSecretVersionResult {
     versionId: java.lang.String,
     versionStages: js.Array[java.lang.String]
   ): GetSecretVersionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("secretBinary")(secretBinary)
-    __obj.updateDynamic("secretString")(secretString)
-    __obj.updateDynamic("versionId")(versionId)
-    __obj.updateDynamic("versionStages")(versionStages)
+    val __obj = js.Dynamic.literal(arn = arn, id = id, secretBinary = secretBinary, secretString = secretString, versionId = versionId, versionStages = versionStages)
+  
     __obj.asInstanceOf[GetSecretVersionResult]
   }
 }

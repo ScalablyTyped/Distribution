@@ -22,12 +22,8 @@ object JInfoMap {
     myPackageName: java.lang.String,
     myVersion: java.lang.String
   ): JInfoMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("myAppKey")(myAppKey)
-    __obj.updateDynamic("myDeviceId")(myDeviceId)
-    __obj.updateDynamic("myImei")(myImei)
-    __obj.updateDynamic("myPackageName")(myPackageName)
-    __obj.updateDynamic("myVersion")(myVersion)
+    val __obj = js.Dynamic.literal(myAppKey = myAppKey, myDeviceId = myDeviceId, myImei = myImei, myPackageName = myPackageName, myVersion = myVersion)
+  
     __obj.asInstanceOf[JInfoMap]
   }
 }

@@ -24,13 +24,8 @@ object Anon_ANDROID {
     OPENBSD: chromeDashAppsLib.chromeDashAppsLibStrings.openbsd,
     WIN: chromeDashAppsLib.chromeDashAppsLibStrings.win
   ): Anon_ANDROID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANDROID")(ANDROID)
-    __obj.updateDynamic("CROS")(CROS)
-    __obj.updateDynamic("LINUX")(LINUX)
-    __obj.updateDynamic("MAC")(MAC)
-    __obj.updateDynamic("OPENBSD")(OPENBSD)
-    __obj.updateDynamic("WIN")(WIN)
+    val __obj = js.Dynamic.literal(ANDROID = ANDROID, CROS = CROS, LINUX = LINUX, MAC = MAC, OPENBSD = OPENBSD, WIN = WIN)
+  
     __obj.asInstanceOf[Anon_ANDROID]
   }
 }

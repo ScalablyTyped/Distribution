@@ -13,8 +13,7 @@ trait ScrollIntoViewProps extends js.Object {
 object ScrollIntoViewProps {
   @scala.inline
   def apply(id: java.lang.String, alignToTop: js.UndefOr[scala.Boolean] = js.undefined): ScrollIntoViewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (!js.isUndefined(alignToTop)) __obj.updateDynamic("alignToTop")(alignToTop)
     __obj.asInstanceOf[ScrollIntoViewProps]
   }

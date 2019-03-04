@@ -32,14 +32,8 @@ object IKg {
     defaultRowTemplate: js.Function0[java.lang.String],
     domUtilityService: knockoutDotKogridLib.kgNs.DomUtilityService
   ): IKg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregateTemplate")(aggregateTemplate)
-    __obj.updateDynamic("defaultCellTemplate")(defaultCellTemplate)
-    __obj.updateDynamic("defaultGridTemplate")(defaultGridTemplate)
-    __obj.updateDynamic("defaultHeaderCellTemplate")(defaultHeaderCellTemplate)
-    __obj.updateDynamic("defaultHeaderRowTemplate")(defaultHeaderRowTemplate)
-    __obj.updateDynamic("defaultRowTemplate")(defaultRowTemplate)
-    __obj.updateDynamic("domUtilityService")(domUtilityService)
+    val __obj = js.Dynamic.literal(aggregateTemplate = aggregateTemplate, defaultCellTemplate = defaultCellTemplate, defaultGridTemplate = defaultGridTemplate, defaultHeaderCellTemplate = defaultHeaderCellTemplate, defaultHeaderRowTemplate = defaultHeaderRowTemplate, defaultRowTemplate = defaultRowTemplate, domUtilityService = domUtilityService)
+  
     __obj.asInstanceOf[IKg]
   }
 }

@@ -13,9 +13,8 @@ trait InjectedOnClickOutProps extends js.Object {
 object InjectedOnClickOutProps {
   @scala.inline
   def apply(disableOnClickOutside: js.Function0[scala.Unit], enableOnClickOutside: js.Function0[scala.Unit]): InjectedOnClickOutProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableOnClickOutside")(disableOnClickOutside)
-    __obj.updateDynamic("enableOnClickOutside")(enableOnClickOutside)
+    val __obj = js.Dynamic.literal(disableOnClickOutside = disableOnClickOutside, enableOnClickOutside = enableOnClickOutside)
+  
     __obj.asInstanceOf[InjectedOnClickOutProps]
   }
 }

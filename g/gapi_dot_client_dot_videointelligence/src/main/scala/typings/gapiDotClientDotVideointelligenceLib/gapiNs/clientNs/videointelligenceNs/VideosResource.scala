@@ -23,8 +23,8 @@ object VideosResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning_Operation]
     ]
   ): VideosResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotate")(annotate)
+    val __obj = js.Dynamic.literal(annotate = annotate)
+  
     __obj.asInstanceOf[VideosResource]
   }
 }

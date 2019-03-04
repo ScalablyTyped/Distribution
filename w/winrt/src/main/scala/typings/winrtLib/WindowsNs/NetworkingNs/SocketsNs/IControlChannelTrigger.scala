@@ -34,18 +34,8 @@ object IControlChannelTrigger {
     usingTransport: js.Function1[js.Any, scala.Unit],
     waitForPushEnabled: js.Function0[ControlChannelTriggerStatus]
   ): IControlChannelTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("controlChannelTriggerId")(controlChannelTriggerId)
-    __obj.updateDynamic("currentKeepAliveIntervalInMinutes")(currentKeepAliveIntervalInMinutes)
-    __obj.updateDynamic("decreaseNetworkKeepAliveInterval")(decreaseNetworkKeepAliveInterval)
-    __obj.updateDynamic("flushTransport")(flushTransport)
-    __obj.updateDynamic("keepAliveTrigger")(keepAliveTrigger)
-    __obj.updateDynamic("pushNotificationTrigger")(pushNotificationTrigger)
-    __obj.updateDynamic("serverKeepAliveIntervalInMinutes")(serverKeepAliveIntervalInMinutes)
-    __obj.updateDynamic("transportObject")(transportObject)
-    __obj.updateDynamic("usingTransport")(usingTransport)
-    __obj.updateDynamic("waitForPushEnabled")(waitForPushEnabled)
+    val __obj = js.Dynamic.literal(close = close, controlChannelTriggerId = controlChannelTriggerId, currentKeepAliveIntervalInMinutes = currentKeepAliveIntervalInMinutes, decreaseNetworkKeepAliveInterval = decreaseNetworkKeepAliveInterval, flushTransport = flushTransport, keepAliveTrigger = keepAliveTrigger, pushNotificationTrigger = pushNotificationTrigger, serverKeepAliveIntervalInMinutes = serverKeepAliveIntervalInMinutes, transportObject = transportObject, usingTransport = usingTransport, waitForPushEnabled = waitForPushEnabled)
+  
     __obj.asInstanceOf[IControlChannelTrigger]
   }
 }

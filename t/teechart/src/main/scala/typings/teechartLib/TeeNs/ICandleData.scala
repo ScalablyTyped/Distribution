@@ -23,14 +23,8 @@ object ICandleData {
     source: js.Any,
     values: js.Array[scala.Double]
   ): ICandleData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(close = close, high = high, labels = labels, low = low, open = open, source = source, values = values)
+  
     __obj.asInstanceOf[ICandleData]
   }
 }

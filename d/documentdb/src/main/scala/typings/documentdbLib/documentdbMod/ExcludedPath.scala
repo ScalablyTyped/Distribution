@@ -12,8 +12,8 @@ trait ExcludedPath extends js.Object {
 object ExcludedPath {
   @scala.inline
   def apply(Path: java.lang.String): ExcludedPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Path")(Path)
+    val __obj = js.Dynamic.literal(Path = Path)
+  
     __obj.asInstanceOf[ExcludedPath]
   }
 }

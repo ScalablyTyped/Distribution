@@ -16,9 +16,8 @@ object Anon_Results {
     results: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Vector3,
     returnValue: winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction
   ): Anon_Results = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(results = results, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_Results]
   }
 }

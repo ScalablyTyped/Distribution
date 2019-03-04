@@ -18,10 +18,8 @@ object BackAndroidStatic {
     exitApp: js.Function0[scala.Unit],
     removeEventListener: js.Function2[BackPressEventName, js.Function0[scala.Unit], scala.Unit]
   ): BackAndroidStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("exitApp")(exitApp)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(addEventListener = addEventListener, exitApp = exitApp, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[BackAndroidStatic]
   }
 }

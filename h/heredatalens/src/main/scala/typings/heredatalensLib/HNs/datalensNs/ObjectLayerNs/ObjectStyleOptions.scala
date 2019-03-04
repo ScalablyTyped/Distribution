@@ -28,8 +28,7 @@ object ObjectStyleOptions {
     style: heremapsLib.HNs.mapNs.SpatialStyleNs.Options = null,
     zIndex: scala.Int | scala.Double = null
   ): ObjectStyleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
+    val __obj = js.Dynamic.literal(icon = icon)
     if (arrows != null) __obj.updateDynamic("arrows")(arrows)
     if (style != null) __obj.updateDynamic("style")(style)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])

@@ -28,7 +28,8 @@ object Anon_AuthsBuildspecGitCloneDepthInsecureSsl {
     location: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     reportBuildStatus: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): Anon_AuthsBuildspecGitCloneDepthInsecureSsl = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (auths != null) __obj.updateDynamic("auths")(auths.asInstanceOf[js.Any])
     if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec.asInstanceOf[js.Any])
     if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])

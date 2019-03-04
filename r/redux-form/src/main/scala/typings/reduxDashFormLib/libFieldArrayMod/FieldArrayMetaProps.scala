@@ -30,14 +30,7 @@ object FieldArrayMetaProps {
     error: js.Any = null,
     warning: js.Any = null
   ): FieldArrayMetaProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirty")(dirty)
-    __obj.updateDynamic("form")(form)
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("pristine")(pristine)
-    __obj.updateDynamic("submitFailed")(submitFailed)
-    __obj.updateDynamic("submitting")(submitting)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(dirty = dirty, form = form, invalid = invalid, pristine = pristine, submitFailed = submitFailed, submitting = submitting, valid = valid)
     if (error != null) __obj.updateDynamic("error")(error)
     if (warning != null) __obj.updateDynamic("warning")(warning)
     __obj.asInstanceOf[FieldArrayMetaProps]

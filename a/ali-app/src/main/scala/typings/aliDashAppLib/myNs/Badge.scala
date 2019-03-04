@@ -29,9 +29,8 @@ object Badge {
     text: java.lang.String,
     `type`: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.point | aliDashAppLib.aliDashAppLibStrings.num | aliDashAppLib.aliDashAppLibStrings.text | aliDashAppLib.aliDashAppLibStrings.more | java.lang.String
   ): Badge = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(index = index, text = text)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Badge]
   }
 }

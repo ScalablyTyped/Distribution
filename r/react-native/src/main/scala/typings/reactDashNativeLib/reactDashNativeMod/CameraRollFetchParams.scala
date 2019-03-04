@@ -22,8 +22,7 @@ object CameraRollFetchParams {
     groupName: java.lang.String = null,
     groupTypes: CameraRollGroupType = null
   ): CameraRollFetchParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first")(first)
+    val __obj = js.Dynamic.literal(first = first)
     if (after != null) __obj.updateDynamic("after")(after)
     if (assetType != null) __obj.updateDynamic("assetType")(assetType)
     if (groupName != null) __obj.updateDynamic("groupName")(groupName)

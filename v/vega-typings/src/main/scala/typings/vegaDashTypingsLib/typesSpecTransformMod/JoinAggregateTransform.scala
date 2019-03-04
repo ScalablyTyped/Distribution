@@ -28,7 +28,8 @@ object JoinAggregateTransform {
     groupby: (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     ops: js.Array[AggregateOp | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = null
   ): JoinAggregateTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (groupby != null) __obj.updateDynamic("groupby")(groupby.asInstanceOf[js.Any])

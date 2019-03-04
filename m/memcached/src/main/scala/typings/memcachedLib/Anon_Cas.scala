@@ -16,8 +16,7 @@ object Anon_Cas {
     cas: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Cas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cas")(cas)
+    val __obj = js.Dynamic.literal(cas = cas)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Cas]
   }

@@ -21,12 +21,8 @@ object UploadControlValidationErrorOccurredEventArgs {
     showAlert: scala.Boolean,
     validationSettings: BootstrapUploadControlValidationSettings
   ): UploadControlValidationErrorOccurredEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("invalidFiles")(invalidFiles)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("showAlert")(showAlert)
-    __obj.updateDynamic("validationSettings")(validationSettings)
+    val __obj = js.Dynamic.literal(errorText = errorText, invalidFiles = invalidFiles, sender = sender, showAlert = showAlert, validationSettings = validationSettings)
+  
     __obj.asInstanceOf[UploadControlValidationErrorOccurredEventArgs]
   }
 }

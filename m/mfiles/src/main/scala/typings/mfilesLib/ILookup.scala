@@ -42,20 +42,8 @@ object ILookup {
     ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
     Version: scala.Double
   ): ILookup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Deleted")(Deleted)
-    __obj.updateDynamic("DisplayID")(DisplayID)
-    __obj.updateDynamic("DisplayIDAvailable")(DisplayIDAvailable)
-    __obj.updateDynamic("DisplayValue")(DisplayValue)
-    __obj.updateDynamic("GetFormattedDisplayValue")(GetFormattedDisplayValue)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("ItemGUID")(ItemGUID)
-    __obj.updateDynamic("ObjectFlags")(ObjectFlags)
-    __obj.updateDynamic("ObjectType")(ObjectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, DisplayValue = DisplayValue, GetFormattedDisplayValue = GetFormattedDisplayValue, Hidden = Hidden, Item = Item, ItemGUID = ItemGUID, ObjectFlags = ObjectFlags, ObjectType = ObjectType.asInstanceOf[js.Any], Version = Version)
+  
     __obj.asInstanceOf[ILookup]
   }
 }

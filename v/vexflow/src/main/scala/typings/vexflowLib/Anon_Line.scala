@@ -13,8 +13,8 @@ trait Anon_Line extends js.Object {
 object Anon_Line {
   @scala.inline
   def apply(line: scala.Double, `type`: java.lang.String): Anon_Line = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(line = line)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Line]
   }
 }

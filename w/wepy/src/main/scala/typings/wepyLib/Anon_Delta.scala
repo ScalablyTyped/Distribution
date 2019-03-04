@@ -12,8 +12,8 @@ trait Anon_Delta extends js.Object {
 object Anon_Delta {
   @scala.inline
   def apply(delta: scala.Double): Anon_Delta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delta")(delta)
+    val __obj = js.Dynamic.literal(delta = delta)
+  
     __obj.asInstanceOf[Anon_Delta]
   }
 }

@@ -42,11 +42,7 @@ object CachesIscsiVolumeArgs {
     snapshotId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sourceVolumeArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): CachesIscsiVolumeArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetName")(targetName.asInstanceOf[js.Any])
-    __obj.updateDynamic("volumeSizeInBytes")(volumeSizeInBytes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], targetName = targetName.asInstanceOf[js.Any], volumeSizeInBytes = volumeSizeInBytes.asInstanceOf[js.Any])
     if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
     if (sourceVolumeArn != null) __obj.updateDynamic("sourceVolumeArn")(sourceVolumeArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachesIscsiVolumeArgs]

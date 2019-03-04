@@ -22,10 +22,8 @@ object Anon_CallbackCancel {
     ],
     list: js.Function1[js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit], scala.Unit]
   ): Anon_CallbackCancel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(cancel = cancel, item = item, list = list)
+  
     __obj.asInstanceOf[Anon_CallbackCancel]
   }
 }

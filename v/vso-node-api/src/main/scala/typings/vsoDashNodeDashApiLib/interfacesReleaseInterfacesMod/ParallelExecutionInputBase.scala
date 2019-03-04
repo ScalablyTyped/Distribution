@@ -17,10 +17,8 @@ object ParallelExecutionInputBase {
     maxNumberOfAgents: scala.Double,
     parallelExecutionType: ParallelExecutionTypes
   ): ParallelExecutionInputBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("maxNumberOfAgents")(maxNumberOfAgents)
-    __obj.updateDynamic("parallelExecutionType")(parallelExecutionType)
+    val __obj = js.Dynamic.literal(continueOnError = continueOnError, maxNumberOfAgents = maxNumberOfAgents, parallelExecutionType = parallelExecutionType)
+  
     __obj.asInstanceOf[ParallelExecutionInputBase]
   }
 }

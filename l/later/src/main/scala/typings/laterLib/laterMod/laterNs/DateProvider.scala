@@ -102,13 +102,8 @@ object DateProvider {
     ],
     prevRollover: js.Function4[stdLib.Date, scala.Double, Modifier, TimePeriod, stdLib.Date]
   ): DateProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("UTC")(UTC)
-    __obj.updateDynamic("localTime")(localTime)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextRollover")(nextRollover)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("prevRollover")(prevRollover)
+    val __obj = js.Dynamic.literal(UTC = UTC, localTime = localTime, next = next, nextRollover = nextRollover, prev = prev, prevRollover = prevRollover)
+  
     __obj.asInstanceOf[DateProvider]
   }
 }

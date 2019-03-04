@@ -25,11 +25,8 @@ object ShadowFormat {
     Location: ShadowLocation,
     ShadowWidth: scala.Double
   ): ShadowFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("IsTransparent")(IsTransparent)
-    __obj.updateDynamic("Location")(Location)
-    __obj.updateDynamic("ShadowWidth")(ShadowWidth)
+    val __obj = js.Dynamic.literal(Color = Color, IsTransparent = IsTransparent, Location = Location, ShadowWidth = ShadowWidth)
+  
     __obj.asInstanceOf[ShadowFormat]
   }
 }

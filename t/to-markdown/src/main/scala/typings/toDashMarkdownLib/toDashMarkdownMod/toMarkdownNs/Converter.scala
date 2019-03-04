@@ -13,9 +13,8 @@ trait Converter extends js.Object {
 object Converter {
   @scala.inline
   def apply(filter: Filter, replacement: js.Function2[java.lang.String, stdLib.HTMLElement, java.lang.String]): Converter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    __obj.updateDynamic("replacement")(replacement)
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], replacement = replacement)
+  
     __obj.asInstanceOf[Converter]
   }
 }

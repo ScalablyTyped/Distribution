@@ -16,9 +16,8 @@ object Anon_Ext {
     ext: webpackbarLib.webpackbarMod.WebpackBarNs.Stats,
     loader: webpackbarLib.webpackbarMod.WebpackBarNs.Stats
   ): Anon_Ext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("loader")(loader)
+    val __obj = js.Dynamic.literal(ext = ext, loader = loader)
+  
     __obj.asInstanceOf[Anon_Ext]
   }
 }

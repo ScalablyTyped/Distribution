@@ -24,8 +24,7 @@ object Anon_DashNbDashSize {
     instance: babylonjsLib.BABYLONNs.LinesMesh = null,
     updatable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DashNbDashSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(points = points)
     if (dashNb != null) __obj.updateDynamic("dashNb")(dashNb.asInstanceOf[js.Any])
     if (dashSize != null) __obj.updateDynamic("dashSize")(dashSize.asInstanceOf[js.Any])
     if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])

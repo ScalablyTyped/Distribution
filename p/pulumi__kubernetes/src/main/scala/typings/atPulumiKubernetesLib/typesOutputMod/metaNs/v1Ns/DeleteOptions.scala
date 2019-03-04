@@ -70,14 +70,8 @@ object DeleteOptions {
     preconditions: Preconditions,
     propagationPolicy: java.lang.String
   ): DeleteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("dryRun")(dryRun)
-    __obj.updateDynamic("gracePeriodSeconds")(gracePeriodSeconds)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("orphanDependents")(orphanDependents)
-    __obj.updateDynamic("preconditions")(preconditions)
-    __obj.updateDynamic("propagationPolicy")(propagationPolicy)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, dryRun = dryRun, gracePeriodSeconds = gracePeriodSeconds, kind = kind, orphanDependents = orphanDependents, preconditions = preconditions, propagationPolicy = propagationPolicy)
+  
     __obj.asInstanceOf[DeleteOptions]
   }
 }

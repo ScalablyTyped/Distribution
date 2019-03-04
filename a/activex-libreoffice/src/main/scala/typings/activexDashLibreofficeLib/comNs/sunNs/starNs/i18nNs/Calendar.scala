@@ -30,14 +30,8 @@ object Calendar {
     Name: java.lang.String,
     StartOfWeek: java.lang.String
   ): Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Days")(Days)
-    __obj.updateDynamic("Default")(Default)
-    __obj.updateDynamic("Eras")(Eras)
-    __obj.updateDynamic("MinimumNumberOfDaysForFirstWeek")(MinimumNumberOfDaysForFirstWeek)
-    __obj.updateDynamic("Months")(Months)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("StartOfWeek")(StartOfWeek)
+    val __obj = js.Dynamic.literal(Days = Days, Default = Default, Eras = Eras, MinimumNumberOfDaysForFirstWeek = MinimumNumberOfDaysForFirstWeek, Months = Months, Name = Name, StartOfWeek = StartOfWeek)
+  
     __obj.asInstanceOf[Calendar]
   }
 }

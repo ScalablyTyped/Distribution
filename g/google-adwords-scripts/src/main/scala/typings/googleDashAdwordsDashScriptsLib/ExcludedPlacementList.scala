@@ -28,14 +28,7 @@ object ExcludedPlacementList {
     setName: js.Function1[java.lang.String, scala.Unit],
     getEntityType: js.Function0[java.lang.String] = null
   ): ExcludedPlacementList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addExcludedPlacement")(addExcludedPlacement)
-    __obj.updateDynamic("addExcludedPlacements")(addExcludedPlacements)
-    __obj.updateDynamic("campaigns")(campaigns)
-    __obj.updateDynamic("excludedPlacements")(excludedPlacements)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addExcludedPlacement = addExcludedPlacement, addExcludedPlacements = addExcludedPlacements, campaigns = campaigns, excludedPlacements = excludedPlacements, getId = getId, getName = getName, setName = setName)
     if (getEntityType != null) __obj.updateDynamic("getEntityType")(getEntityType)
     __obj.asInstanceOf[ExcludedPlacementList]
   }

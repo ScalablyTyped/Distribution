@@ -31,11 +31,8 @@ object NumberFormatProperties {
     Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
     Type: scala.Double
   ): NumberFormatProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Comment")(Comment)
-    __obj.updateDynamic("FormatString")(FormatString)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Comment = Comment, FormatString = FormatString, Locale = Locale, Type = Type)
+  
     __obj.asInstanceOf[NumberFormatProperties]
   }
 }

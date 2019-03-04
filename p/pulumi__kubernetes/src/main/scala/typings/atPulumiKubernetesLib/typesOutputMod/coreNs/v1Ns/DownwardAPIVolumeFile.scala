@@ -41,11 +41,8 @@ object DownwardAPIVolumeFile {
     path: java.lang.String,
     resourceFieldRef: ResourceFieldSelector
   ): DownwardAPIVolumeFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldRef")(fieldRef)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("resourceFieldRef")(resourceFieldRef)
+    val __obj = js.Dynamic.literal(fieldRef = fieldRef, mode = mode, path = path, resourceFieldRef = resourceFieldRef)
+  
     __obj.asInstanceOf[DownwardAPIVolumeFile]
   }
 }

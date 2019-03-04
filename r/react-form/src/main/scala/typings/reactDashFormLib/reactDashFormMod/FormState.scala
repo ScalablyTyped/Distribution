@@ -22,11 +22,7 @@ object FormState {
     values: FormValues,
     dirty: js.UndefOr[scala.Boolean] = js.undefined
   ): FormState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("nestedErrors")(nestedErrors)
-    __obj.updateDynamic("touched")(touched)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(errors = errors, nestedErrors = nestedErrors, touched = touched, values = values)
     if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty)
     __obj.asInstanceOf[FormState]
   }

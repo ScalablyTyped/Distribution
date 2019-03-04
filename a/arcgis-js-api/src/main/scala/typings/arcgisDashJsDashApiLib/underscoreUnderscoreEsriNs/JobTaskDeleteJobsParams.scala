@@ -37,12 +37,7 @@ object JobTaskDeleteJobsParams {
     user: java.lang.String,
     deleteHistory: js.UndefOr[scala.Boolean] = js.undefined
   ): JobTaskDeleteJobsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobIds")(jobIds)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobIds = jobIds, propertyIsEnumerable = propertyIsEnumerable, user = user)
     if (!js.isUndefined(deleteHistory)) __obj.updateDynamic("deleteHistory")(deleteHistory)
     __obj.asInstanceOf[JobTaskDeleteJobsParams]
   }

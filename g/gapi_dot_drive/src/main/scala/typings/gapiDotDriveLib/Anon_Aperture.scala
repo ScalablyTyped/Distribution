@@ -54,28 +54,8 @@ object Anon_Aperture {
     whiteBalance: java.lang.String,
     width: scala.Double
   ): Anon_Aperture = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aperture")(aperture)
-    __obj.updateDynamic("cameraMake")(cameraMake)
-    __obj.updateDynamic("cameraModel")(cameraModel)
-    __obj.updateDynamic("colorSpace")(colorSpace)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("exposureBias")(exposureBias)
-    __obj.updateDynamic("exposureMode")(exposureMode)
-    __obj.updateDynamic("exposureTime")(exposureTime)
-    __obj.updateDynamic("flashUsed")(flashUsed)
-    __obj.updateDynamic("focalLength")(focalLength)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("isoSpeed")(isoSpeed)
-    __obj.updateDynamic("lens")(lens)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("maxApertureValue")(maxApertureValue)
-    __obj.updateDynamic("meteringMode")(meteringMode)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("sensor")(sensor)
-    __obj.updateDynamic("subjectDistance")(subjectDistance)
-    __obj.updateDynamic("whiteBalance")(whiteBalance)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(aperture = aperture, cameraMake = cameraMake, cameraModel = cameraModel, colorSpace = colorSpace, date = date, exposureBias = exposureBias, exposureMode = exposureMode, exposureTime = exposureTime, flashUsed = flashUsed, focalLength = focalLength, height = height, isoSpeed = isoSpeed, lens = lens, location = location, maxApertureValue = maxApertureValue, meteringMode = meteringMode, rotation = rotation, sensor = sensor, subjectDistance = subjectDistance, whiteBalance = whiteBalance, width = width)
+  
     __obj.asInstanceOf[Anon_Aperture]
   }
 }

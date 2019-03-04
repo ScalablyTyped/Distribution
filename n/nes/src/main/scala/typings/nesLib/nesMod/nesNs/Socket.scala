@@ -26,14 +26,8 @@ object Socket {
     revoke: js.Function2[java.lang.String, js.Any, js.Promise[_]],
     send: js.Function1[js.Any, js.Promise[_]]
   ): Socket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("revoke")(revoke)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(app = app, auth = auth, disconnect = disconnect, id = id, publish = publish, revoke = revoke, send = send)
+  
     __obj.asInstanceOf[Socket]
   }
 }

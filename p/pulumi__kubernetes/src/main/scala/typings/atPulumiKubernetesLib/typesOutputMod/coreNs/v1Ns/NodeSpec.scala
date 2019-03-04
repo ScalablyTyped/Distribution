@@ -49,13 +49,8 @@ object NodeSpec {
     taints: js.Array[Taint],
     unschedulable: scala.Boolean
   ): NodeSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configSource")(configSource)
-    __obj.updateDynamic("externalID")(externalID)
-    __obj.updateDynamic("podCIDR")(podCIDR)
-    __obj.updateDynamic("providerID")(providerID)
-    __obj.updateDynamic("taints")(taints)
-    __obj.updateDynamic("unschedulable")(unschedulable)
+    val __obj = js.Dynamic.literal(configSource = configSource, externalID = externalID, podCIDR = podCIDR, providerID = providerID, taints = taints, unschedulable = unschedulable)
+  
     __obj.asInstanceOf[NodeSpec]
   }
 }

@@ -17,9 +17,8 @@ object strings {
     TILES_SELECTOR: atMaterialGridDashListLib.atMaterialGridDashListLibStrings.`DOTmdc-grid-list__tiles`,
     TILE_SELECTOR: atMaterialGridDashListLib.atMaterialGridDashListLibStrings.`DOTmdc-grid-tile`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TILES_SELECTOR")(TILES_SELECTOR)
-    __obj.updateDynamic("TILE_SELECTOR")(TILE_SELECTOR)
+    val __obj = js.Dynamic.literal(TILES_SELECTOR = TILES_SELECTOR, TILE_SELECTOR = TILE_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

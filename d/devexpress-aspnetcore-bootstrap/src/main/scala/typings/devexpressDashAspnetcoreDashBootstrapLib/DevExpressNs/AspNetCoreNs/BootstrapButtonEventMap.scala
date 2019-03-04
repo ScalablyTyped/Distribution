@@ -21,12 +21,8 @@ object BootstrapButtonEventMap {
     init: EventArgs,
     lostFocus: EventArgs
   ): BootstrapButtonEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkedChanged")(checkedChanged)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("lostFocus")(lostFocus)
+    val __obj = js.Dynamic.literal(checkedChanged = checkedChanged, click = click, gotFocus = gotFocus, init = init, lostFocus = lostFocus)
+  
     __obj.asInstanceOf[BootstrapButtonEventMap]
   }
 }

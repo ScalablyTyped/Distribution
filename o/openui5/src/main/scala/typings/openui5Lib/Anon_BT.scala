@@ -64,17 +64,8 @@ object Anon_BT {
     NE: js.Any,
     StartsWith: js.Any
   ): Anon_BT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BT")(BT)
-    __obj.updateDynamic("Contains")(Contains)
-    __obj.updateDynamic("EQ")(EQ)
-    __obj.updateDynamic("EndsWith")(EndsWith)
-    __obj.updateDynamic("GE")(GE)
-    __obj.updateDynamic("GT")(GT)
-    __obj.updateDynamic("LE")(LE)
-    __obj.updateDynamic("LT")(LT)
-    __obj.updateDynamic("NE")(NE)
-    __obj.updateDynamic("StartsWith")(StartsWith)
+    val __obj = js.Dynamic.literal(BT = BT, Contains = Contains, EQ = EQ, EndsWith = EndsWith, GE = GE, GT = GT, LE = LE, LT = LT, NE = NE, StartsWith = StartsWith)
+  
     __obj.asInstanceOf[Anon_BT]
   }
 }

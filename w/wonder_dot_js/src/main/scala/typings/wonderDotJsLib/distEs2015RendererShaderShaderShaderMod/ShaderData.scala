@@ -18,7 +18,8 @@ object ShaderData {
     textureId: java.lang.String = null,
     value: js.Any = null
   ): ShaderData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (textureId != null) __obj.updateDynamic("textureId")(textureId)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ShaderData]

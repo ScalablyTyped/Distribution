@@ -35,9 +35,7 @@ object AuthorizeConfig {
     prompt: java.lang.String = null,
     response_type: java.lang.String = null
   ): AuthorizeConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(client_id = client_id, scope = scope)
     if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
     if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy)
     if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)

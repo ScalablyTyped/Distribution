@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/universe:i18n", "i18n")
 @js.native
 object i18nNs extends js.Object {
-  def `__`(key: java.lang.String*): java.lang.String = js.native
-  def `__`(key: java.lang.String): java.lang.String = js.native
-  def `__`(
+  def __(key: java.lang.String*): java.lang.String = js.native
+  def __(key: java.lang.String): java.lang.String = js.native
+  def __(
     key: java.lang.String,
     params: meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.GetTranslationParams
   ): java.lang.String = js.native
-  def `__`(
+  def __(
     namespace: java.lang.String,
     key: java.lang.String,
     params: meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.GetTranslationParams

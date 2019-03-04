@@ -39,10 +39,7 @@ object Response {
     headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     status: scala.Int | scala.Double = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("redirect")(redirect)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, redirect = redirect, set = set)
     if (body != null) __obj.updateDynamic("body")(body)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

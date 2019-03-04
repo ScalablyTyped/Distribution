@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JSEscOptions extends js.Object {
-  var `__inline1__`: js.UndefOr[scala.Boolean] = js.undefined
-  var `__inline2__`: js.UndefOr[scala.Boolean] = js.undefined
+  var __inline1__ : js.UndefOr[scala.Boolean] = js.undefined
+  var __inline2__ : js.UndefOr[scala.Boolean] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var es6: js.UndefOr[scala.Boolean] = js.undefined
   var escapeEverything: js.UndefOr[scala.Boolean] = js.undefined
@@ -25,8 +25,8 @@ trait JSEscOptions extends js.Object {
 object JSEscOptions {
   @scala.inline
   def apply(
-    `__inline1__`: js.UndefOr[scala.Boolean] = js.undefined,
-    `__inline2__`: js.UndefOr[scala.Boolean] = js.undefined,
+    __inline1__ : js.UndefOr[scala.Boolean] = js.undefined,
+    __inline2__ : js.UndefOr[scala.Boolean] = js.undefined,
     compact: js.UndefOr[scala.Boolean] = js.undefined,
     es6: js.UndefOr[scala.Boolean] = js.undefined,
     escapeEverything: js.UndefOr[scala.Boolean] = js.undefined,
@@ -41,8 +41,8 @@ object JSEscOptions {
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): JSEscOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`__inline1__`)) __obj.updateDynamic("__inline1__")(`__inline1__`)
-    if (!js.isUndefined(`__inline2__`)) __obj.updateDynamic("__inline2__")(`__inline2__`)
+    if (!js.isUndefined(__inline1__)) __obj.updateDynamic("__inline1__")(__inline1__)
+    if (!js.isUndefined(__inline2__)) __obj.updateDynamic("__inline2__")(__inline2__)
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
     if (!js.isUndefined(es6)) __obj.updateDynamic("es6")(es6)
     if (!js.isUndefined(escapeEverything)) __obj.updateDynamic("escapeEverything")(escapeEverything)

@@ -12,8 +12,8 @@ trait CodePipelineEvent extends js.Object {
 object CodePipelineEvent {
   @scala.inline
   def apply(`CodePipeline.job`: awsDashLambdaLib.Anon_AccountId): CodePipelineEvent = {
-    val __obj = js.Dynamic.literal(`CodePipeline.job` = `CodePipeline.job`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CodePipeline.job")(`CodePipeline.job`)
     __obj.asInstanceOf[CodePipelineEvent]
   }
 }

@@ -22,9 +22,8 @@ object Anon_ComparatorDate {
     comparator: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator,
     date: stdLib.Date | java.lang.String
   ): Anon_ComparatorDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comparator")(comparator)
-    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(comparator = comparator, date = date.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ComparatorDate]
   }
 }

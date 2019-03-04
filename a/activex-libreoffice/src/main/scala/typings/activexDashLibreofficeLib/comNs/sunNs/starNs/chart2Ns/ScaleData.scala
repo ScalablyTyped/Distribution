@@ -70,18 +70,8 @@ object ScaleData {
     ShiftedCategoryPosition: scala.Boolean,
     TimeIncrement: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.TimeIncrement
   ): ScaleData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoDateAxis")(AutoDateAxis)
-    __obj.updateDynamic("AxisType")(AxisType)
-    __obj.updateDynamic("Categories")(Categories)
-    __obj.updateDynamic("IncrementData")(IncrementData)
-    __obj.updateDynamic("Maximum")(Maximum)
-    __obj.updateDynamic("Minimum")(Minimum)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("Origin")(Origin)
-    __obj.updateDynamic("Scaling")(Scaling)
-    __obj.updateDynamic("ShiftedCategoryPosition")(ShiftedCategoryPosition)
-    __obj.updateDynamic("TimeIncrement")(TimeIncrement)
+    val __obj = js.Dynamic.literal(AutoDateAxis = AutoDateAxis, AxisType = AxisType, Categories = Categories, IncrementData = IncrementData, Maximum = Maximum, Minimum = Minimum, Orientation = Orientation, Origin = Origin, Scaling = Scaling, ShiftedCategoryPosition = ShiftedCategoryPosition, TimeIncrement = TimeIncrement)
+  
     __obj.asInstanceOf[ScaleData]
   }
 }

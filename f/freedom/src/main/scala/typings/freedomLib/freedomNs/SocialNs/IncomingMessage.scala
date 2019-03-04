@@ -16,9 +16,8 @@ trait IncomingMessage extends js.Object {
 object IncomingMessage {
   @scala.inline
   def apply(from: ClientState, message: java.lang.String): IncomingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(from = from, message = message)
+  
     __obj.asInstanceOf[IncomingMessage]
   }
 }

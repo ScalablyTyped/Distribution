@@ -12,8 +12,8 @@ trait SchemaSpec extends js.Object {
 object SchemaSpec {
   @scala.inline
   def apply(tables: js.Any): SchemaSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tables")(tables)
+    val __obj = js.Dynamic.literal(tables = tables)
+  
     __obj.asInstanceOf[SchemaSpec]
   }
 }

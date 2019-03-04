@@ -98,8 +98,7 @@ object UserPoolClientArgs {
     supportedIdentityProviders: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     writeAttributes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): UserPoolClientArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
     if (allowedOauthFlows != null) __obj.updateDynamic("allowedOauthFlows")(allowedOauthFlows.asInstanceOf[js.Any])
     if (allowedOauthFlowsUserPoolClient != null) __obj.updateDynamic("allowedOauthFlowsUserPoolClient")(allowedOauthFlowsUserPoolClient.asInstanceOf[js.Any])
     if (allowedOauthScopes != null) __obj.updateDynamic("allowedOauthScopes")(allowedOauthScopes.asInstanceOf[js.Any])

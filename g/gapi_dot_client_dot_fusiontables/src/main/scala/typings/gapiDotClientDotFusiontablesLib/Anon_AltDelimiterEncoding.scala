@@ -45,8 +45,7 @@ object Anon_AltDelimiterEncoding {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDelimiterEncoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

@@ -28,7 +28,8 @@ object ModelFullField {
     transient: js.UndefOr[scala.Boolean] = js.undefined,
     validators: js.Array[Validator] = null
   ): ModelFullField[Field, Doc] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])

@@ -28,15 +28,8 @@ object IndieDelegate {
     setAllMessages: js.Function1[js.Array[Message], scala.Unit],
     setMessages: js.Function2[java.lang.String, js.Array[Message], scala.Unit]
   ): IndieDelegate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearMessages")(clearMessages)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getMessages")(getMessages)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onDidDestroy")(onDidDestroy)
-    __obj.updateDynamic("onDidUpdate")(onDidUpdate)
-    __obj.updateDynamic("setAllMessages")(setAllMessages)
-    __obj.updateDynamic("setMessages")(setMessages)
+    val __obj = js.Dynamic.literal(clearMessages = clearMessages, dispose = dispose, getMessages = getMessages, name = name, onDidDestroy = onDidDestroy, onDidUpdate = onDidUpdate, setAllMessages = setAllMessages, setMessages = setMessages)
+  
     __obj.asInstanceOf[IndieDelegate]
   }
 }

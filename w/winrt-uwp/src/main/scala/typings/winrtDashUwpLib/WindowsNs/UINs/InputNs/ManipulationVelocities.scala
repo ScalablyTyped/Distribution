@@ -22,10 +22,8 @@ object ManipulationVelocities {
     expansion: scala.Double,
     linear: winrtDashUwpLib.WindowsNs.FoundationNs.Point
   ): ManipulationVelocities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angular")(angular)
-    __obj.updateDynamic("expansion")(expansion)
-    __obj.updateDynamic("linear")(linear)
+    val __obj = js.Dynamic.literal(angular = angular, expansion = expansion, linear = linear)
+  
     __obj.asInstanceOf[ManipulationVelocities]
   }
 }

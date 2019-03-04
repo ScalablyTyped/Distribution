@@ -24,13 +24,8 @@ object FieldRuleModel {
     isDisabled: scala.Boolean,
     isSystem: scala.Boolean
   ): FieldRuleModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("isSystem")(isSystem)
+    val __obj = js.Dynamic.literal(actions = actions, conditions = conditions, friendlyName = friendlyName, id = id, isDisabled = isDisabled, isSystem = isSystem)
+  
     __obj.asInstanceOf[FieldRuleModel]
   }
 }

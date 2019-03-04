@@ -22,12 +22,8 @@ object SelectInputComponentProps {
     row: js.Any,
     selectType: SelectType
   ): SelectInputComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("selectType")(selectType)
+    val __obj = js.Dynamic.literal(checked = checked, id = id, onClick = onClick, row = row, selectType = selectType)
+  
     __obj.asInstanceOf[SelectInputComponentProps]
   }
 }

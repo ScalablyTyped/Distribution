@@ -24,8 +24,8 @@ object CountPatternTransform {
     pattern: java.lang.String = null,
     stopwords: java.lang.String = null
   ): CountPatternTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as)
     if (`case` != null) __obj.updateDynamic("case")(`case`)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)

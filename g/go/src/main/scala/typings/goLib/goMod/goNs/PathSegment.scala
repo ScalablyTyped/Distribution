@@ -81,26 +81,8 @@ object PathSegment {
     `type`: EnumValue,
     xAxisRotation: scala.Double
   ): PathSegment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("centerX")(centerX)
-    __obj.updateDynamic("centerY")(centerY)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("endX")(endX)
-    __obj.updateDynamic("endY")(endY)
-    __obj.updateDynamic("equalsApprox")(equalsApprox)
-    __obj.updateDynamic("isClockwiseArc")(isClockwiseArc)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("isLargeArc")(isLargeArc)
-    __obj.updateDynamic("point1X")(point1X)
-    __obj.updateDynamic("point1Y")(point1Y)
-    __obj.updateDynamic("point2X")(point2X)
-    __obj.updateDynamic("point2Y")(point2Y)
-    __obj.updateDynamic("radiusX")(radiusX)
-    __obj.updateDynamic("radiusY")(radiusY)
-    __obj.updateDynamic("startAngle")(startAngle)
-    __obj.updateDynamic("sweepAngle")(sweepAngle)
-    __obj.updateDynamic("xAxisRotation")(xAxisRotation)
+    val __obj = js.Dynamic.literal(centerX = centerX, centerY = centerY, close = close, copy = copy, endX = endX, endY = endY, equalsApprox = equalsApprox, isClockwiseArc = isClockwiseArc, isClosed = isClosed, isLargeArc = isLargeArc, point1X = point1X, point1Y = point1Y, point2X = point2X, point2Y = point2Y, radiusX = radiusX, radiusY = radiusY, startAngle = startAngle, sweepAngle = sweepAngle, xAxisRotation = xAxisRotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PathSegment]
   }
 }

@@ -24,9 +24,7 @@ object CodeAction {
     description: java.lang.String,
     commands: js.Array[CodeActionCommand] = null
   ): CodeAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(changes = changes, description = description)
     if (commands != null) __obj.updateDynamic("commands")(commands)
     __obj.asInstanceOf[CodeAction]
   }

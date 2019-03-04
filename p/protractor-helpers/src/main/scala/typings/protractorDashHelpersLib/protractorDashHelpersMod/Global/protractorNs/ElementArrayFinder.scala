@@ -17,9 +17,8 @@ object ElementArrayFinder {
     $$data: js.Function1[java.lang.String, ElementArrayFinder],
     getByText: js.Function1[java.lang.String, ElementFinder]
   ): ElementArrayFinder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$$data")($$data)
-    __obj.updateDynamic("getByText")(getByText)
+    val __obj = js.Dynamic.literal($$data = $$data, getByText = getByText)
+  
     __obj.asInstanceOf[ElementArrayFinder]
   }
 }

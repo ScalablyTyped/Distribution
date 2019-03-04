@@ -13,8 +13,7 @@ trait LoginStatusResponse extends js.Object {
 object LoginStatusResponse {
   @scala.inline
   def apply(status: fbLib.LoginStatus, authResponse: fbLib.AuthResponse = null): LoginStatusResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse)
     __obj.asInstanceOf[LoginStatusResponse]
   }

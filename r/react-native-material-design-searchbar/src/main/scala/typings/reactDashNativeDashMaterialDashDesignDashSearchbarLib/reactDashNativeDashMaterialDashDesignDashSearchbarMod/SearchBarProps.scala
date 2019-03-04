@@ -60,8 +60,7 @@ object SearchBarProps {
     returnKeyType: reactDashNativeLib.reactDashNativeMod.ReturnKeyType | reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeAndroid | reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS = null,
     textStyle: reactDashNativeLib.reactDashNativeMod.TextStyle = null
   ): SearchBarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
+    val __obj = js.Dynamic.literal(height = height)
     if (!js.isUndefined(alwaysShowBackButton)) __obj.updateDynamic("alwaysShowBackButton")(alwaysShowBackButton)
     if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect)
     if (iconBackName != null) __obj.updateDynamic("iconBackName")(iconBackName)

@@ -69,12 +69,7 @@ object BudgetArgs {
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     timePeriodEnd: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): BudgetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("budgetType")(budgetType.asInstanceOf[js.Any])
-    __obj.updateDynamic("limitAmount")(limitAmount.asInstanceOf[js.Any])
-    __obj.updateDynamic("limitUnit")(limitUnit.asInstanceOf[js.Any])
-    __obj.updateDynamic("timePeriodStart")(timePeriodStart.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(budgetType = budgetType.asInstanceOf[js.Any], limitAmount = limitAmount.asInstanceOf[js.Any], limitUnit = limitUnit.asInstanceOf[js.Any], timePeriodStart = timePeriodStart.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
     if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
     if (costFilters != null) __obj.updateDynamic("costFilters")(costFilters.asInstanceOf[js.Any])
     if (costTypes != null) __obj.updateDynamic("costTypes")(costTypes.asInstanceOf[js.Any])

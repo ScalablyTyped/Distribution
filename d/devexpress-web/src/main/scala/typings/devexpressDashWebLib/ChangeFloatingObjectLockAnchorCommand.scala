@@ -23,9 +23,8 @@ trait ChangeFloatingObjectLockAnchorCommand extends CommandBase {
 object ChangeFloatingObjectLockAnchorCommand {
   @scala.inline
   def apply(execute: js.Function1[scala.Boolean, scala.Boolean], getState: js.Function0[js.Any]): ChangeFloatingObjectLockAnchorCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(execute = execute, getState = getState)
+  
     __obj.asInstanceOf[ChangeFloatingObjectLockAnchorCommand]
   }
 }

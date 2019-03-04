@@ -18,10 +18,8 @@ object ElementJson {
     children: js.Array[ElementJson | TextNode],
     name: java.lang.String
   ): ElementJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attrs = attrs, children = children, name = name)
+  
     __obj.asInstanceOf[ElementJson]
   }
 }

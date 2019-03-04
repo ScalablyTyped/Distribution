@@ -109,7 +109,7 @@ trait Tech extends Component {
   		 * @fires Tech#vttjsloaded
   		 * @fires Tech#vttjserror
   		 */
-  def `addWebVttScript_`(): scala.Unit = js.native
+  def addWebVttScript_(): scala.Unit = js.native
   /**
   		 * Get the {@link AudioTrackList}
   		 *

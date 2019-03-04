@@ -24,8 +24,7 @@ object Anon_Model {
     ]) = null,
     view: java.lang.String | js.Object = null
   ): Anon_Model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     if (upcastAlso != null) __obj.updateDynamic("upcastAlso")(upcastAlso.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Model]

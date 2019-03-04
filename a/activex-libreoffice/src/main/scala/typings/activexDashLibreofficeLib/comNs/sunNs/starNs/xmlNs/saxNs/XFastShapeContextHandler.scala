@@ -42,25 +42,8 @@ object XFastShapeContextHandler {
     startFastElement: js.Function2[scala.Double, XFastAttributeList, scala.Unit],
     startUnknownElement: js.Function3[java.lang.String, java.lang.String, XFastAttributeList, scala.Unit]
   ): XFastShapeContextHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DocumentProperties")(DocumentProperties)
-    __obj.updateDynamic("DrawPage")(DrawPage)
-    __obj.updateDynamic("MediaDescriptor")(MediaDescriptor)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("RelationFragmentPath")(RelationFragmentPath)
-    __obj.updateDynamic("Shape")(Shape)
-    __obj.updateDynamic("StartToken")(StartToken)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("createFastChildContext")(createFastChildContext)
-    __obj.updateDynamic("createUnknownChildContext")(createUnknownChildContext)
-    __obj.updateDynamic("endFastElement")(endFastElement)
-    __obj.updateDynamic("endUnknownElement")(endUnknownElement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startFastElement")(startFastElement)
-    __obj.updateDynamic("startUnknownElement")(startUnknownElement)
+    val __obj = js.Dynamic.literal(DocumentProperties = DocumentProperties, DrawPage = DrawPage, MediaDescriptor = MediaDescriptor, Model = Model, Position = Position, RelationFragmentPath = RelationFragmentPath, Shape = Shape, StartToken = StartToken, acquire = acquire, characters = characters, createFastChildContext = createFastChildContext, createUnknownChildContext = createUnknownChildContext, endFastElement = endFastElement, endUnknownElement = endUnknownElement, queryInterface = queryInterface, release = release, startFastElement = startFastElement, startUnknownElement = startUnknownElement)
+  
     __obj.asInstanceOf[XFastShapeContextHandler]
   }
 }

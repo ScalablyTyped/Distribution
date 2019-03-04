@@ -14,9 +14,7 @@ trait SetList extends js.Object {
 object SetList {
   @scala.inline
   def apply(column: java.lang.String, value: js.Any, table: java.lang.String = null): SetList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(column = column, value = value)
     if (table != null) __obj.updateDynamic("table")(table)
     __obj.asInstanceOf[SetList]
   }

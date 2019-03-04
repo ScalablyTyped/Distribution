@@ -30,16 +30,8 @@ object Keyboard {
     onshowing: js.Function,
     shrinkView: js.Function1[scala.Boolean, scala.Unit]
   ): Keyboard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automaticScrollToTopOnHiding")(automaticScrollToTopOnHiding)
-    __obj.updateDynamic("disableScrollingInShrinkView")(disableScrollingInShrinkView)
-    __obj.updateDynamic("hideFormAccessoryBar")(hideFormAccessoryBar)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("onhide")(onhide)
-    __obj.updateDynamic("onhiding")(onhiding)
-    __obj.updateDynamic("onshow")(onshow)
-    __obj.updateDynamic("onshowing")(onshowing)
-    __obj.updateDynamic("shrinkView")(shrinkView)
+    val __obj = js.Dynamic.literal(automaticScrollToTopOnHiding = automaticScrollToTopOnHiding, disableScrollingInShrinkView = disableScrollingInShrinkView, hideFormAccessoryBar = hideFormAccessoryBar, isVisible = isVisible, onhide = onhide, onhiding = onhiding, onshow = onshow, onshowing = onshowing, shrinkView = shrinkView)
+  
     __obj.asInstanceOf[Keyboard]
   }
 }

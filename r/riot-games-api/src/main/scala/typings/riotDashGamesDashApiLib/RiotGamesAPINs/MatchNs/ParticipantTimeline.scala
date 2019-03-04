@@ -66,34 +66,8 @@ object ParticipantTimeline {
     xpDiffPerMinDeltas: ParticipantTimelineData,
     xpPerMinDeltas: ParticipantTimelineData
   ): ParticipantTimeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ancientGolemAssistsPerMinCounts")(ancientGolemAssistsPerMinCounts)
-    __obj.updateDynamic("ancientGolemKillsPerMinCounts")(ancientGolemKillsPerMinCounts)
-    __obj.updateDynamic("assistedLaneDeathsPerMinDeltas")(assistedLaneDeathsPerMinDeltas)
-    __obj.updateDynamic("assistedLaneKillsPerMinDeltas")(assistedLaneKillsPerMinDeltas)
-    __obj.updateDynamic("baronAssistsPerMinCounts")(baronAssistsPerMinCounts)
-    __obj.updateDynamic("baronKillsPerMinCounts")(baronKillsPerMinCounts)
-    __obj.updateDynamic("creepsPerMinDeltas")(creepsPerMinDeltas)
-    __obj.updateDynamic("csDiffPerMinDeltas")(csDiffPerMinDeltas)
-    __obj.updateDynamic("damageTakenDiffPerMinDeltas")(damageTakenDiffPerMinDeltas)
-    __obj.updateDynamic("damageTakenPerMinDeltas")(damageTakenPerMinDeltas)
-    __obj.updateDynamic("dragonAssistsPerMinCounts")(dragonAssistsPerMinCounts)
-    __obj.updateDynamic("dragonKillsPerMinCounts")(dragonKillsPerMinCounts)
-    __obj.updateDynamic("elderLizardAssistsPerMinCounts")(elderLizardAssistsPerMinCounts)
-    __obj.updateDynamic("elderLizardKillsPerMinCounts")(elderLizardKillsPerMinCounts)
-    __obj.updateDynamic("goldPerMinDeltas")(goldPerMinDeltas)
-    __obj.updateDynamic("inhibitorAssistsPerMinCounts")(inhibitorAssistsPerMinCounts)
-    __obj.updateDynamic("inhibitorKillsPerMinCounts")(inhibitorKillsPerMinCounts)
-    __obj.updateDynamic("lane")(lane)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("towerAssistsPerMinCounts")(towerAssistsPerMinCounts)
-    __obj.updateDynamic("towerKillsPerMinCounts")(towerKillsPerMinCounts)
-    __obj.updateDynamic("towerKillsPerMinDeltas")(towerKillsPerMinDeltas)
-    __obj.updateDynamic("vilemawAssistsPerMinCounts")(vilemawAssistsPerMinCounts)
-    __obj.updateDynamic("vilemawKillsPerMinCounts")(vilemawKillsPerMinCounts)
-    __obj.updateDynamic("wardsPerMinDeltas")(wardsPerMinDeltas)
-    __obj.updateDynamic("xpDiffPerMinDeltas")(xpDiffPerMinDeltas)
-    __obj.updateDynamic("xpPerMinDeltas")(xpPerMinDeltas)
+    val __obj = js.Dynamic.literal(ancientGolemAssistsPerMinCounts = ancientGolemAssistsPerMinCounts, ancientGolemKillsPerMinCounts = ancientGolemKillsPerMinCounts, assistedLaneDeathsPerMinDeltas = assistedLaneDeathsPerMinDeltas, assistedLaneKillsPerMinDeltas = assistedLaneKillsPerMinDeltas, baronAssistsPerMinCounts = baronAssistsPerMinCounts, baronKillsPerMinCounts = baronKillsPerMinCounts, creepsPerMinDeltas = creepsPerMinDeltas, csDiffPerMinDeltas = csDiffPerMinDeltas, damageTakenDiffPerMinDeltas = damageTakenDiffPerMinDeltas, damageTakenPerMinDeltas = damageTakenPerMinDeltas, dragonAssistsPerMinCounts = dragonAssistsPerMinCounts, dragonKillsPerMinCounts = dragonKillsPerMinCounts, elderLizardAssistsPerMinCounts = elderLizardAssistsPerMinCounts, elderLizardKillsPerMinCounts = elderLizardKillsPerMinCounts, goldPerMinDeltas = goldPerMinDeltas, inhibitorAssistsPerMinCounts = inhibitorAssistsPerMinCounts, inhibitorKillsPerMinCounts = inhibitorKillsPerMinCounts, lane = lane, role = role, towerAssistsPerMinCounts = towerAssistsPerMinCounts, towerKillsPerMinCounts = towerKillsPerMinCounts, towerKillsPerMinDeltas = towerKillsPerMinDeltas, vilemawAssistsPerMinCounts = vilemawAssistsPerMinCounts, vilemawKillsPerMinCounts = vilemawKillsPerMinCounts, wardsPerMinDeltas = wardsPerMinDeltas, xpDiffPerMinDeltas = xpDiffPerMinDeltas, xpPerMinDeltas = xpPerMinDeltas)
+  
     __obj.asInstanceOf[ParticipantTimeline]
   }
 }

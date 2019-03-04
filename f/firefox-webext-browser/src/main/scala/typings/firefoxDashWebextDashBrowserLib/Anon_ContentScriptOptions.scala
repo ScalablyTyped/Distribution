@@ -25,8 +25,8 @@ object Anon_ContentScriptOptions {
       ]
     ]
   ): Anon_ContentScriptOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(register = register)
+  
     __obj.asInstanceOf[Anon_ContentScriptOptions]
   }
 }

@@ -12,8 +12,8 @@ trait ElementAttributesProperty extends js.Object {
 object ElementAttributesProperty {
   @scala.inline
   def apply(props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[stdLib.Element]): ElementAttributesProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(props = props)
+  
     __obj.asInstanceOf[ElementAttributesProperty]
   }
 }

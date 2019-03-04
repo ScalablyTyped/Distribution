@@ -179,10 +179,7 @@ object ReferralRequest {
     text: Narrative = null,
     `type`: CodeableConcept = null
   ): ReferralRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(intent = intent, status = status, subject = subject)
     if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_id != null) __obj.updateDynamic("_id")(_id)

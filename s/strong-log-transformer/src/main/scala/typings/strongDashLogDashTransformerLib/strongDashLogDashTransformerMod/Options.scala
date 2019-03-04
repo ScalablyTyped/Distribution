@@ -20,11 +20,8 @@ object Options {
     tag: java.lang.String,
     timeStamp: scala.Boolean
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("mergeMultiline")(mergeMultiline)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(format = format, mergeMultiline = mergeMultiline, tag = tag, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[Options]
   }
 }

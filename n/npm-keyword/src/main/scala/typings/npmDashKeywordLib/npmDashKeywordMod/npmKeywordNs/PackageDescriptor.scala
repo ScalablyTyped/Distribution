@@ -13,9 +13,8 @@ trait PackageDescriptor extends js.Object {
 object PackageDescriptor {
   @scala.inline
   def apply(description: java.lang.String, name: java.lang.String): PackageDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(description = description, name = name)
+  
     __obj.asInstanceOf[PackageDescriptor]
   }
 }

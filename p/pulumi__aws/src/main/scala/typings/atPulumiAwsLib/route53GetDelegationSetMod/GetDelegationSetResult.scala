@@ -13,9 +13,8 @@ trait GetDelegationSetResult extends js.Object {
 object GetDelegationSetResult {
   @scala.inline
   def apply(callerReference: java.lang.String, nameServers: js.Array[java.lang.String]): GetDelegationSetResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callerReference")(callerReference)
-    __obj.updateDynamic("nameServers")(nameServers)
+    val __obj = js.Dynamic.literal(callerReference = callerReference, nameServers = nameServers)
+  
     __obj.asInstanceOf[GetDelegationSetResult]
   }
 }

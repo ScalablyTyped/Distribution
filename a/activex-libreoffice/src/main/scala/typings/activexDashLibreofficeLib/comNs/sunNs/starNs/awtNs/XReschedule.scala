@@ -24,11 +24,8 @@ object XReschedule {
     release: js.Function0[scala.Unit],
     reschedule: js.Function0[scala.Unit]
   ): XReschedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reschedule")(reschedule)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, reschedule = reschedule)
+  
     __obj.asInstanceOf[XReschedule]
   }
 }

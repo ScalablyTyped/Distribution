@@ -85,6 +85,6 @@ org.scalablytyped.runtime.Instantiable0[videoDotJsLib.videoDotJsMod.videojsNs.Te
   		 *        The tech to add source handler functions to.
   		 *
   		 */
-  def withSourceHandlers(tech: `Anon_`): scala.Unit = js.native
+  def withSourceHandlers(tech: Anon_): scala.Unit = js.native
 }
 

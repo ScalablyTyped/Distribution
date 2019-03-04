@@ -38,8 +38,7 @@ object ButtonProps {
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null,
     `type`: gestaltLib.gestaltLibStrings.submit | gestaltLib.gestaltLibStrings.button = null
   ): ButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (!js.isUndefined(accessibilityExpanded)) __obj.updateDynamic("accessibilityExpanded")(accessibilityExpanded)
     if (!js.isUndefined(accessibilityHaspopup)) __obj.updateDynamic("accessibilityHaspopup")(accessibilityHaspopup)
     if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)

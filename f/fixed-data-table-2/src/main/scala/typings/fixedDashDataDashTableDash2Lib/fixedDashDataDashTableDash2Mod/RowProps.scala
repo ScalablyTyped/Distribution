@@ -17,10 +17,8 @@ trait RowProps extends js.Object {
 object RowProps {
   @scala.inline
   def apply(height: scala.Double, rowIndex: scala.Double, width: scala.Double): RowProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, rowIndex = rowIndex, width = width)
+  
     __obj.asInstanceOf[RowProps]
   }
 }

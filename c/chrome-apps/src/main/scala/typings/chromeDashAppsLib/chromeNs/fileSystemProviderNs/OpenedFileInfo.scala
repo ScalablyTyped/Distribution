@@ -38,10 +38,8 @@ object OpenedFileInfo {
     ],
     openRequestId: chromeDashAppsLib.chromeNs.integer
   ): OpenedFileInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("openRequestId")(openRequestId)
+    val __obj = js.Dynamic.literal(filePath = filePath, mode = mode.asInstanceOf[js.Any], openRequestId = openRequestId)
+  
     __obj.asInstanceOf[OpenedFileInfo]
   }
 }

@@ -28,15 +28,8 @@ object TransitLine {
     url: java.lang.String,
     vehicle: TransitVehicle
   ): TransitLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agencies")(agencies)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("short_name")(short_name)
-    __obj.updateDynamic("text_color")(text_color)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("vehicle")(vehicle)
+    val __obj = js.Dynamic.literal(agencies = agencies, color = color, icon = icon, name = name, short_name = short_name, text_color = text_color, url = url, vehicle = vehicle)
+  
     __obj.asInstanceOf[TransitLine]
   }
 }

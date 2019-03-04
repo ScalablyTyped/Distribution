@@ -19,11 +19,8 @@ trait ASPxClientTreeListEndDragNodeEventArgs extends ASPxClientTreeListNodeEvent
 object ASPxClientTreeListEndDragNodeEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, htmlEvent: js.Object, nodeKey: java.lang.String, targetElement: js.Object): ASPxClientTreeListEndDragNodeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("nodeKey")(nodeKey)
-    __obj.updateDynamic("targetElement")(targetElement)
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, nodeKey = nodeKey, targetElement = targetElement)
+  
     __obj.asInstanceOf[ASPxClientTreeListEndDragNodeEventArgs]
   }
 }

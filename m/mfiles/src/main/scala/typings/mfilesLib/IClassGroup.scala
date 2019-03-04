@@ -26,14 +26,8 @@ object IClassGroup {
     ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double,
     RemoveMember: js.Function1[scala.Double, scala.Unit]
   ): IClassGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddMember")(AddMember)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Members")(Members)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ObjectType")(ObjectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("RemoveMember")(RemoveMember)
+    val __obj = js.Dynamic.literal(AddMember = AddMember, Clone = Clone, ID = ID, Members = Members, Name = Name, ObjectType = ObjectType.asInstanceOf[js.Any], RemoveMember = RemoveMember)
+  
     __obj.asInstanceOf[IClassGroup]
   }
 }

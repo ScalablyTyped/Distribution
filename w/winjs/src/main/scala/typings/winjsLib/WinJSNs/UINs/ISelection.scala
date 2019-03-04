@@ -78,17 +78,8 @@ object ISelection {
     selectAll: js.Function0[scala.Unit],
     set: js.Function1[js.Any, winjsLib.WinJSNs.Promise[_]]
   ): ISelection[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("getIndices")(getIndices)
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("isEverything")(isEverything)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("selectAll")(selectAll)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(add = add, clear = clear, count = count, getIndices = getIndices, getItems = getItems, getRanges = getRanges, isEverything = isEverything, remove = remove, selectAll = selectAll, set = set)
+  
     __obj.asInstanceOf[ISelection[T]]
   }
 }

@@ -37,12 +37,8 @@ object NotificationSubscriptionCreateParameters {
     scope: SubscriptionScope,
     subscriber: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): NotificationSubscriptionCreateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("subscriber")(subscriber)
+    val __obj = js.Dynamic.literal(channel = channel, description = description, filter = filter, scope = scope, subscriber = subscriber)
+  
     __obj.asInstanceOf[NotificationSubscriptionCreateParameters]
   }
 }

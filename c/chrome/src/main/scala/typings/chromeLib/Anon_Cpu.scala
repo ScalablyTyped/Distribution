@@ -52,11 +52,8 @@ object Anon_Cpu {
     memoryNs: Anon_CallbackGetInfoInfo,
     storageNs: Anon_CallbackEjectDevice
   ): Anon_Cpu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpuNs")(cpuNs)
-    __obj.updateDynamic("displayNs")(displayNs)
-    __obj.updateDynamic("memoryNs")(memoryNs)
-    __obj.updateDynamic("storageNs")(storageNs)
+    val __obj = js.Dynamic.literal(cpuNs = cpuNs, displayNs = displayNs, memoryNs = memoryNs, storageNs = storageNs)
+  
     __obj.asInstanceOf[Anon_Cpu]
   }
 }

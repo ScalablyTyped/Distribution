@@ -16,9 +16,8 @@ object Anon_Context {
     context: winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.HotspotAuthenticationContext,
     returnValue: scala.Boolean
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(context = context, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_Context]
   }
 }

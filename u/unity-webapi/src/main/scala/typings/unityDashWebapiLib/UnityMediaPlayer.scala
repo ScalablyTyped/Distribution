@@ -32,17 +32,8 @@ object UnityMediaPlayer {
     setPlaybackstate: js.Function1[UnityPlaybackState, js.Any],
     setTrack: js.Function1[UnityTrackMetadata, js.Any]
   ): UnityMediaPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPlaybackstate")(getPlaybackstate)
-    __obj.updateDynamic("onNext")(onNext)
-    __obj.updateDynamic("onPlayPause")(onPlayPause)
-    __obj.updateDynamic("onPrevious")(onPrevious)
-    __obj.updateDynamic("setCanGoNext")(setCanGoNext)
-    __obj.updateDynamic("setCanGoPrev")(setCanGoPrev)
-    __obj.updateDynamic("setCanPause")(setCanPause)
-    __obj.updateDynamic("setCanPlay")(setCanPlay)
-    __obj.updateDynamic("setPlaybackstate")(setPlaybackstate)
-    __obj.updateDynamic("setTrack")(setTrack)
+    val __obj = js.Dynamic.literal(getPlaybackstate = getPlaybackstate, onNext = onNext, onPlayPause = onPlayPause, onPrevious = onPrevious, setCanGoNext = setCanGoNext, setCanGoPrev = setCanGoPrev, setCanPause = setCanPause, setCanPlay = setCanPlay, setPlaybackstate = setPlaybackstate, setTrack = setTrack)
+  
     __obj.asInstanceOf[UnityMediaPlayer]
   }
 }

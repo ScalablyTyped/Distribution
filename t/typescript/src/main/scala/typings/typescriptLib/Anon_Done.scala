@@ -13,9 +13,8 @@ trait Anon_Done[T] extends js.Object {
 object Anon_Done {
   @scala.inline
   def apply[T](done: typescriptLib.typescriptLibNumbers.`false`, value: T): Anon_Done[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(done = done, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Done[T]]
   }
 }

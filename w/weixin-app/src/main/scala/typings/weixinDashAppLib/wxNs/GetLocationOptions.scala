@@ -27,8 +27,7 @@ object GetLocationOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     `type`: weixinDashAppLib.weixinDashAppLibStrings.wgs84 | weixinDashAppLib.weixinDashAppLibStrings.gcj02 = null
   ): GetLocationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(success = success)
     if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

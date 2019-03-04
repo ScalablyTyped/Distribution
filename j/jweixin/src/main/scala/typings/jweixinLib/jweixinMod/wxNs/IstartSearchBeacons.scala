@@ -23,9 +23,7 @@ object IstartSearchBeacons {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IstartSearchBeacons = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("ticket")(ticket)
+    val __obj = js.Dynamic.literal(complete = complete, ticket = ticket)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)
     __obj.asInstanceOf[IstartSearchBeacons]

@@ -28,10 +28,7 @@ object Anon_HashKeyNameNonKeyAttributes {
     readCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     writeCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_HashKeyNameNonKeyAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("projectionType")(projectionType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any])
     if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes.asInstanceOf[js.Any])
     if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
     if (readCapacity != null) __obj.updateDynamic("readCapacity")(readCapacity.asInstanceOf[js.Any])

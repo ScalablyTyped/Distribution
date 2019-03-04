@@ -36,16 +36,7 @@ object InternalTreeNodeProps {
     isLeaf: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null
   ): InternalTreeNodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("dragOver")(dragOver)
-    __obj.updateDynamic("dragOverGapBottom")(dragOverGapBottom)
-    __obj.updateDynamic("dragOverGapTop")(dragOverGapTop)
-    __obj.updateDynamic("eventKey")(eventKey)
-    __obj.updateDynamic("expanded")(expanded)
-    __obj.updateDynamic("halfChecked")(halfChecked)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(checked = checked, dragOver = dragOver, dragOverGapBottom = dragOverGapBottom, dragOverGapTop = dragOverGapTop, eventKey = eventKey, expanded = expanded, halfChecked = halfChecked, pos = pos, selected = selected)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disableCheckbox)) __obj.updateDynamic("disableCheckbox")(disableCheckbox)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

@@ -75,18 +75,8 @@ object ASPxClientControlCollection {
     GetControlsByType: js.Function1[js.Object, js.Array[js.Object]],
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientControlCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("BrowserWindowResized")(BrowserWindowResized)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ForEachControl")(ForEachControl)
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("GetByName")(GetByName)
-    __obj.updateDynamic("GetControlsByPredicate")(GetControlsByPredicate)
-    __obj.updateDynamic("GetControlsByType")(GetControlsByType)
-    __obj.updateDynamic("ValidationCompleted")(ValidationCompleted)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ForEachControl = ForEachControl, Get = Get, GetByName = GetByName, GetControlsByPredicate = GetControlsByPredicate, GetControlsByType = GetControlsByType, ValidationCompleted = ValidationCompleted)
+  
     __obj.asInstanceOf[ASPxClientControlCollection]
   }
 }

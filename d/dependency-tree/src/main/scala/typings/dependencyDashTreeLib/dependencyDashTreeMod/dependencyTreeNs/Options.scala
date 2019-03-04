@@ -32,8 +32,7 @@ object Options {
     visited: DependencyObj = null,
     webpackConfig: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(filename = filename)
     if (detective != null) __obj.updateDynamic("detective")(detective)
     if (directory != null) __obj.updateDynamic("directory")(directory)
     if (filter != null) __obj.updateDynamic("filter")(filter)

@@ -14,8 +14,8 @@ object FetchMoreOptions {
   def apply[TData, TVariables](
     updateQuery: js.Function2[TData, apolloDashClientLib.Anon_FetchMoreResult[TData, TVariables], TData]
   ): FetchMoreOptions[TData, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("updateQuery")(updateQuery)
+    val __obj = js.Dynamic.literal(updateQuery = updateQuery)
+  
     __obj.asInstanceOf[FetchMoreOptions[TData, TVariables]]
   }
 }

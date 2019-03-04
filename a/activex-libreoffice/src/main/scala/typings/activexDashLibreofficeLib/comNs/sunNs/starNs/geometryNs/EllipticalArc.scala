@@ -39,14 +39,8 @@ object EllipticalArc {
     StartPosition: RealPoint2D,
     XAxisRotation: scala.Double
   ): EllipticalArc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndPosition")(EndPosition)
-    __obj.updateDynamic("IsClockwiseSweep")(IsClockwiseSweep)
-    __obj.updateDynamic("IsLargeArc")(IsLargeArc)
-    __obj.updateDynamic("RadiusX")(RadiusX)
-    __obj.updateDynamic("RadiusY")(RadiusY)
-    __obj.updateDynamic("StartPosition")(StartPosition)
-    __obj.updateDynamic("XAxisRotation")(XAxisRotation)
+    val __obj = js.Dynamic.literal(EndPosition = EndPosition, IsClockwiseSweep = IsClockwiseSweep, IsLargeArc = IsLargeArc, RadiusX = RadiusX, RadiusY = RadiusY, StartPosition = StartPosition, XAxisRotation = XAxisRotation)
+  
     __obj.asInstanceOf[EllipticalArc]
   }
 }

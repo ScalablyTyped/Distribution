@@ -20,11 +20,8 @@ object FrameworkIdentityInfo {
     identityType: FrameworkIdentityType,
     role: java.lang.String
   ): FrameworkIdentityInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("identityType")(identityType)
-    __obj.updateDynamic("role")(role)
+    val __obj = js.Dynamic.literal(displayName = displayName, identifier = identifier, identityType = identityType, role = role)
+  
     __obj.asInstanceOf[FrameworkIdentityInfo]
   }
 }

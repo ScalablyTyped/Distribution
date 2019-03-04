@@ -20,11 +20,8 @@ object CacheDidUpdatePluginContext {
     oldResponse: stdLib.Response,
     request: stdLib.Request
   ): CacheDidUpdatePluginContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("newResponse")(newResponse)
-    __obj.updateDynamic("oldResponse")(oldResponse)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(cacheName = cacheName, newResponse = newResponse, oldResponse = oldResponse, request = request)
+  
     __obj.asInstanceOf[CacheDidUpdatePluginContext]
   }
 }

@@ -22,10 +22,9 @@ object Anon_Border {
     `padding-left`: scala.Double,
     `padding-right`: scala.Double
   ): Anon_Border = {
-    val __obj = js.Dynamic.literal(`padding-left` = `padding-left`, `padding-right` = `padding-right`)
-    __obj.updateDynamic("border")(border)
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("head")(head)
+    val __obj = js.Dynamic.literal(border = border, compact = compact, head = head)
+    __obj.updateDynamic("padding-left")(`padding-left`)
+    __obj.updateDynamic("padding-right")(`padding-right`)
     __obj.asInstanceOf[Anon_Border]
   }
 }

@@ -14,9 +14,8 @@ trait DispatcherError extends js.Object {
 object DispatcherError {
   @scala.inline
   def apply(message: java.lang.String, meta: dispatchrLib.Anon_ActionName, `type`: java.lang.String): DispatcherError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(message = message, meta = meta)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DispatcherError]
   }
 }

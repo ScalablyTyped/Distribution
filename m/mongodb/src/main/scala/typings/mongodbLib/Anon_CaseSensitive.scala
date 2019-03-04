@@ -24,8 +24,7 @@ object Anon_CaseSensitive {
     $diacraticSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     $language: java.lang.String = null
   ): Anon_CaseSensitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$search")($search)
+    val __obj = js.Dynamic.literal($search = $search)
     if (!js.isUndefined($caseSensitive)) __obj.updateDynamic("$caseSensitive")($caseSensitive)
     if (!js.isUndefined($diacraticSensitive)) __obj.updateDynamic("$diacraticSensitive")($diacraticSensitive)
     if ($language != null) __obj.updateDynamic("$language")($language)

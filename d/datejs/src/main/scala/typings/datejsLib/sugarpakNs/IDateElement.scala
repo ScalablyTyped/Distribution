@@ -44,23 +44,8 @@ object IDateElement {
     year: js.Function0[IDateElementEvaluator],
     years: js.Function0[IDateElementEvaluator]
   ): IDateElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("millisecond")(millisecond)
-    __obj.updateDynamic("milliseconds")(milliseconds)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("week")(week)
-    __obj.updateDynamic("weeks")(weeks)
-    __obj.updateDynamic("year")(year)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(day = day, days = days, hour = hour, hours = hours, millisecond = millisecond, milliseconds = milliseconds, minute = minute, minutes = minutes, month = month, months = months, second = second, seconds = seconds, week = week, weeks = weeks, year = year, years = years)
+  
     __obj.asInstanceOf[IDateElement]
   }
 }

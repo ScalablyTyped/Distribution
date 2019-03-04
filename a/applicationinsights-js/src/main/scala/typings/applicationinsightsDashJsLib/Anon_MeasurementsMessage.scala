@@ -22,12 +22,8 @@ object Anon_MeasurementsMessage {
     severityLevel: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_MeasurementsMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("measurements")(measurements)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("severityLevel")(severityLevel)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(measurements = measurements, message = message, properties = properties, severityLevel = severityLevel, ver = ver)
+  
     __obj.asInstanceOf[Anon_MeasurementsMessage]
   }
 }

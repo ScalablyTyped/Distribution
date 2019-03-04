@@ -30,12 +30,8 @@ object OpenCommandArgument2 {
     Sink: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     SortingInfo: activexDashInteropLib.SafeArray[NumberedSortingInfo]
   ): OpenCommandArgument2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Priority")(Priority)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("Sink")(Sink)
-    __obj.updateDynamic("SortingInfo")(SortingInfo)
+    val __obj = js.Dynamic.literal(Mode = Mode, Priority = Priority, Properties = Properties, Sink = Sink, SortingInfo = SortingInfo)
+  
     __obj.asInstanceOf[OpenCommandArgument2]
   }
 }

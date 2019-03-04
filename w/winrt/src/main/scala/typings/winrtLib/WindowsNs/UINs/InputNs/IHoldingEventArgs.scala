@@ -18,10 +18,8 @@ object IHoldingEventArgs {
     pointerDeviceType: winrtLib.WindowsNs.DevicesNs.InputNs.PointerDeviceType,
     position: winrtLib.WindowsNs.FoundationNs.Point
   ): IHoldingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("holdingState")(holdingState)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(holdingState = holdingState, pointerDeviceType = pointerDeviceType, position = position)
+  
     __obj.asInstanceOf[IHoldingEventArgs]
   }
 }

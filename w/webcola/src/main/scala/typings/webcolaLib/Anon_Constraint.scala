@@ -18,10 +18,8 @@ object Anon_Constraint {
     lb: webcolaLib.distSrcVpscMod.Block,
     rb: webcolaLib.distSrcVpscMod.Block
   ): Anon_Constraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constraint")(constraint)
-    __obj.updateDynamic("lb")(lb)
-    __obj.updateDynamic("rb")(rb)
+    val __obj = js.Dynamic.literal(constraint = constraint, lb = lb, rb = rb)
+  
     __obj.asInstanceOf[Anon_Constraint]
   }
 }

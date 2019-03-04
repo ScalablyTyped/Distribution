@@ -28,15 +28,8 @@ object IAbstractValidator {
     ValidationFor: js.Function2[java.lang.String, IValidatorFce, js.Any],
     ValidatorFor: js.Function2[java.lang.String, IAbstractValidator[js.Any], js.Any]
   ): IAbstractValidator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreateAbstractListRule")(CreateAbstractListRule)
-    __obj.updateDynamic("CreateAbstractRule")(CreateAbstractRule)
-    __obj.updateDynamic("CreateRule")(CreateRule)
-    __obj.updateDynamic("ForList")(ForList)
-    __obj.updateDynamic("RuleFor")(RuleFor)
-    __obj.updateDynamic("Validation")(Validation)
-    __obj.updateDynamic("ValidationFor")(ValidationFor)
-    __obj.updateDynamic("ValidatorFor")(ValidatorFor)
+    val __obj = js.Dynamic.literal(CreateAbstractListRule = CreateAbstractListRule, CreateAbstractRule = CreateAbstractRule, CreateRule = CreateRule, ForList = ForList, RuleFor = RuleFor, Validation = Validation, ValidationFor = ValidationFor, ValidatorFor = ValidatorFor)
+  
     __obj.asInstanceOf[IAbstractValidator[T]]
   }
 }

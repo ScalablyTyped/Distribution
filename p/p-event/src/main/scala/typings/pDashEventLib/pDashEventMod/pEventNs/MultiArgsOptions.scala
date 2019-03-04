@@ -18,8 +18,7 @@ object MultiArgsOptions {
     rejectionEvents: js.Array[java.lang.String | js.Symbol] = null,
     timeout: scala.Int | scala.Double = null
   ): MultiArgsOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("multiArgs")(multiArgs)
+    val __obj = js.Dynamic.literal(multiArgs = multiArgs)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

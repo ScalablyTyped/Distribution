@@ -63,9 +63,7 @@ object StepperOptions {
     steps: scala.Int | scala.Double = null,
     style: motorDashHatLib.motorDashHatLibStrings.single | motorDashHatLib.motorDashHatLibStrings.double | motorDashHatLib.motorDashHatLibStrings.interleaved | motorDashHatLib.motorDashHatLibStrings.microstep = null
   ): StepperOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pins")(pins)
-    __obj.updateDynamic("pwm")(pwm)
+    val __obj = js.Dynamic.literal(pins = pins, pwm = pwm)
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (microsteps != null) __obj.updateDynamic("microsteps")(microsteps.asInstanceOf[js.Any])

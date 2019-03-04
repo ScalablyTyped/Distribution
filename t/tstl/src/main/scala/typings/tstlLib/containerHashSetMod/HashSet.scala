@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashSetMod.IHashSet because var conflicts: `data_`, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashSet", "HashSet")
+- tstlLib.baseContainerIHashSetMod.IHashSet because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashSet", "HashSet")
 @js.native
 /**
   * Default Constructor.
@@ -60,7 +60,7 @@ class HashSet[Key] ()
   /**
     * @hidden
     */
-  var `buckets_`: tstlLib.baseHashUnderscoreSetHashBucketsMod._SetHashBuckets[Key, tstlLib.tstlLibNumbers.`true`, HashSet[Key]] = js.native
+  var buckets_ : tstlLib.baseHashUnderscoreSetHashBucketsMod._SetHashBuckets[Key, tstlLib.tstlLibNumbers.`true`, HashSet[Key]] = js.native
   /**
     * @inheritDoc
     */

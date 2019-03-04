@@ -45,16 +45,8 @@ object SilverlightControl {
     setData: js.Function1[java.lang.String, scala.Unit],
     setLabel: js.Function1[java.lang.String, scala.Unit]
   ): SilverlightControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("setLabel")(setLabel)
+    val __obj = js.Dynamic.literal(getControlType = getControlType, getData = getData, getLabel = getLabel, getName = getName, getObject = getObject, getParent = getParent, getVisible = getVisible, setData = setData, setLabel = setLabel)
+  
     __obj.asInstanceOf[SilverlightControl]
   }
 }

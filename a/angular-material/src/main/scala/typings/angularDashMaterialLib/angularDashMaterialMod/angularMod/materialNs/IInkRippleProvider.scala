@@ -12,8 +12,8 @@ trait IInkRippleProvider extends js.Object {
 object IInkRippleProvider {
   @scala.inline
   def apply(disableInkRipple: js.Function0[scala.Unit]): IInkRippleProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableInkRipple")(disableInkRipple)
+    val __obj = js.Dynamic.literal(disableInkRipple = disableInkRipple)
+  
     __obj.asInstanceOf[IInkRippleProvider]
   }
 }

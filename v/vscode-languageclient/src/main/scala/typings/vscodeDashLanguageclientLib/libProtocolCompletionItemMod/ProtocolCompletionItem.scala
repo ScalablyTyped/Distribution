@@ -23,12 +23,8 @@ object ProtocolCompletionItem {
     fromEdit: scala.Boolean,
     originalItemKind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
   ): ProtocolCompletionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deprecated")(deprecated)
-    __obj.updateDynamic("documentationFormat")(documentationFormat)
-    __obj.updateDynamic("fromEdit")(fromEdit)
-    __obj.updateDynamic("originalItemKind")(originalItemKind)
+    val __obj = js.Dynamic.literal(data = data, deprecated = deprecated, documentationFormat = documentationFormat, fromEdit = fromEdit, originalItemKind = originalItemKind)
+  
     __obj.asInstanceOf[ProtocolCompletionItem]
   }
 }

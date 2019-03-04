@@ -15,11 +15,8 @@ trait CompiledArgument extends js.Object {
 object CompiledArgument {
   @scala.inline
   def apply(count: scala.Double, lvalue: scala.Boolean, name: java.lang.String, rvalue: scala.Boolean): CompiledArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("lvalue")(lvalue)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rvalue")(rvalue)
+    val __obj = js.Dynamic.literal(count = count, lvalue = lvalue, name = name, rvalue = rvalue)
+  
     __obj.asInstanceOf[CompiledArgument]
   }
 }

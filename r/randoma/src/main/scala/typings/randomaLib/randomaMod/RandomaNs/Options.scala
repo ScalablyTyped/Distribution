@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(seed: java.lang.String | scala.Double): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(seed = seed.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Options]
   }
 }

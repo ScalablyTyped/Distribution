@@ -19,8 +19,8 @@ trait MVCxClientQueryBuilderSaveCommandExecutedEventArgs extends ASPxClientEvent
 object MVCxClientQueryBuilderSaveCommandExecutedEventArgs {
   @scala.inline
   def apply(Result: java.lang.String): MVCxClientQueryBuilderSaveCommandExecutedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Result")(Result)
+    val __obj = js.Dynamic.literal(Result = Result)
+  
     __obj.asInstanceOf[MVCxClientQueryBuilderSaveCommandExecutedEventArgs]
   }
 }

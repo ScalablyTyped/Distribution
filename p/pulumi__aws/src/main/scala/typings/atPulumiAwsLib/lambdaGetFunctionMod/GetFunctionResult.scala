@@ -117,28 +117,8 @@ object GetFunctionResult {
     version: java.lang.String,
     vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
   ): GetFunctionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("deadLetterConfig")(deadLetterConfig)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("invokeArn")(invokeArn)
-    __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
-    __obj.updateDynamic("lastModified")(lastModified)
-    __obj.updateDynamic("layers")(layers)
-    __obj.updateDynamic("memorySize")(memorySize)
-    __obj.updateDynamic("qualifiedArn")(qualifiedArn)
-    __obj.updateDynamic("reservedConcurrentExecutions")(reservedConcurrentExecutions)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("sourceCodeHash")(sourceCodeHash)
-    __obj.updateDynamic("sourceCodeSize")(sourceCodeSize)
-    __obj.updateDynamic("timeout")(timeout)
-    __obj.updateDynamic("tracingConfig")(tracingConfig)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("vpcConfig")(vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
+  
     __obj.asInstanceOf[GetFunctionResult]
   }
 }

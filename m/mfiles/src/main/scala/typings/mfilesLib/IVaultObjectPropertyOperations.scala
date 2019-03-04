@@ -170,40 +170,8 @@ object IVaultObjectPropertyOperations {
     SetWorkflowStateTransition: js.Function4[IObjVer, scala.Double, scala.Double, java.lang.String, IObjectVersionAndProperties],
     SetWorkflowStateTransitionEx: js.Function5[IObjVer, scala.Double, scala.Double, java.lang.String, js.Any, IObjectVersionAndProperties]
   ): IVaultObjectPropertyOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApproveOrRejectAssignment")(ApproveOrRejectAssignment)
-    __obj.updateDynamic("ApproveOrRejectAssignmentByUser")(ApproveOrRejectAssignmentByUser)
-    __obj.updateDynamic("CreatePropertiesFromFileInformation")(CreatePropertiesFromFileInformation)
-    __obj.updateDynamic("GenerateAutomaticPermissionsFromPropertyValues")(GenerateAutomaticPermissionsFromPropertyValues)
-    __obj.updateDynamic("GetProperties")(GetProperties)
-    __obj.updateDynamic("GetPropertiesAsXML")(GetPropertiesAsXML)
-    __obj.updateDynamic("GetPropertiesForDisplay")(GetPropertiesForDisplay)
-    __obj.updateDynamic("GetPropertiesForMetadataSync")(GetPropertiesForMetadataSync)
-    __obj.updateDynamic("GetPropertiesOfMultipleObjects")(GetPropertiesOfMultipleObjects)
-    __obj.updateDynamic("GetPropertiesWithIconClues")(GetPropertiesWithIconClues)
-    __obj.updateDynamic("GetPropertiesWithIconCluesOfMultipleObjects")(GetPropertiesWithIconCluesOfMultipleObjects)
-    __obj.updateDynamic("GetProperty")(GetProperty)
-    __obj.updateDynamic("GetVersionComment")(GetVersionComment)
-    __obj.updateDynamic("GetVersionCommentHistory")(GetVersionCommentHistory)
-    __obj.updateDynamic("GetWorkflowState")(GetWorkflowState)
-    __obj.updateDynamic("MarkAssignmentComplete")(MarkAssignmentComplete)
-    __obj.updateDynamic("MarkAssignmentCompleteByUser")(MarkAssignmentCompleteByUser)
-    __obj.updateDynamic("RemoveProperty")(RemoveProperty)
-    __obj.updateDynamic("SetAllProperties")(SetAllProperties)
-    __obj.updateDynamic("SetAllPropertiesWithPermissions")(SetAllPropertiesWithPermissions)
-    __obj.updateDynamic("SetAllPropertiesWithPermissionsEx")(SetAllPropertiesWithPermissionsEx)
-    __obj.updateDynamic("SetCreationInfoAdmin")(SetCreationInfoAdmin)
-    __obj.updateDynamic("SetLastModificationInfoAdmin")(SetLastModificationInfoAdmin)
-    __obj.updateDynamic("SetProperties")(SetProperties)
-    __obj.updateDynamic("SetPropertiesOfMultipleObjects")(SetPropertiesOfMultipleObjects)
-    __obj.updateDynamic("SetPropertiesWithPermissions")(SetPropertiesWithPermissions)
-    __obj.updateDynamic("SetPropertiesWithPermissionsEx")(SetPropertiesWithPermissionsEx)
-    __obj.updateDynamic("SetProperty")(SetProperty)
-    __obj.updateDynamic("SetVersionComment")(SetVersionComment)
-    __obj.updateDynamic("SetWorkflowState")(SetWorkflowState)
-    __obj.updateDynamic("SetWorkflowStateEx")(SetWorkflowStateEx)
-    __obj.updateDynamic("SetWorkflowStateTransition")(SetWorkflowStateTransition)
-    __obj.updateDynamic("SetWorkflowStateTransitionEx")(SetWorkflowStateTransitionEx)
+    val __obj = js.Dynamic.literal(ApproveOrRejectAssignment = ApproveOrRejectAssignment, ApproveOrRejectAssignmentByUser = ApproveOrRejectAssignmentByUser, CreatePropertiesFromFileInformation = CreatePropertiesFromFileInformation, GenerateAutomaticPermissionsFromPropertyValues = GenerateAutomaticPermissionsFromPropertyValues, GetProperties = GetProperties, GetPropertiesAsXML = GetPropertiesAsXML, GetPropertiesForDisplay = GetPropertiesForDisplay, GetPropertiesForMetadataSync = GetPropertiesForMetadataSync, GetPropertiesOfMultipleObjects = GetPropertiesOfMultipleObjects, GetPropertiesWithIconClues = GetPropertiesWithIconClues, GetPropertiesWithIconCluesOfMultipleObjects = GetPropertiesWithIconCluesOfMultipleObjects, GetProperty = GetProperty, GetVersionComment = GetVersionComment, GetVersionCommentHistory = GetVersionCommentHistory, GetWorkflowState = GetWorkflowState, MarkAssignmentComplete = MarkAssignmentComplete, MarkAssignmentCompleteByUser = MarkAssignmentCompleteByUser, RemoveProperty = RemoveProperty, SetAllProperties = SetAllProperties, SetAllPropertiesWithPermissions = SetAllPropertiesWithPermissions, SetAllPropertiesWithPermissionsEx = SetAllPropertiesWithPermissionsEx, SetCreationInfoAdmin = SetCreationInfoAdmin, SetLastModificationInfoAdmin = SetLastModificationInfoAdmin, SetProperties = SetProperties, SetPropertiesOfMultipleObjects = SetPropertiesOfMultipleObjects, SetPropertiesWithPermissions = SetPropertiesWithPermissions, SetPropertiesWithPermissionsEx = SetPropertiesWithPermissionsEx, SetProperty = SetProperty, SetVersionComment = SetVersionComment, SetWorkflowState = SetWorkflowState, SetWorkflowStateEx = SetWorkflowStateEx, SetWorkflowStateTransition = SetWorkflowStateTransition, SetWorkflowStateTransitionEx = SetWorkflowStateTransitionEx)
+  
     __obj.asInstanceOf[IVaultObjectPropertyOperations]
   }
 }

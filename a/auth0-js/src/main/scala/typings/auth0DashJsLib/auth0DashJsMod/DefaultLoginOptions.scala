@@ -19,10 +19,7 @@ object DefaultLoginOptions {
     audience: java.lang.String = null,
     scope: java.lang.String = null
   ): DefaultLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("realm")(realm)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, realm = realm, username = username)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[DefaultLoginOptions]

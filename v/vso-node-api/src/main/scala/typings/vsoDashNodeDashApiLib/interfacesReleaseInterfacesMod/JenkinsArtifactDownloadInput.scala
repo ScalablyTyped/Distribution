@@ -17,11 +17,8 @@ object JenkinsArtifactDownloadInput {
     artifactItems: js.Array[java.lang.String],
     artifactType: java.lang.String
   ): JenkinsArtifactDownloadInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("artifactDownloadMode")(artifactDownloadMode)
-    __obj.updateDynamic("artifactItems")(artifactItems)
-    __obj.updateDynamic("artifactType")(artifactType)
+    val __obj = js.Dynamic.literal(alias = alias, artifactDownloadMode = artifactDownloadMode, artifactItems = artifactItems, artifactType = artifactType)
+  
     __obj.asInstanceOf[JenkinsArtifactDownloadInput]
   }
 }

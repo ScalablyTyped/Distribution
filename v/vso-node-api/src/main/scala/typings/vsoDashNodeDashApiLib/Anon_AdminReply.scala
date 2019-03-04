@@ -14,10 +14,8 @@ trait Anon_AdminReply extends js.Object {
 object Anon_AdminReply {
   @scala.inline
   def apply(adminReply: scala.Double, publisherReply: scala.Double, review: scala.Double): Anon_AdminReply = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adminReply")(adminReply)
-    __obj.updateDynamic("publisherReply")(publisherReply)
-    __obj.updateDynamic("review")(review)
+    val __obj = js.Dynamic.literal(adminReply = adminReply, publisherReply = publisherReply, review = review)
+  
     __obj.asInstanceOf[Anon_AdminReply]
   }
 }

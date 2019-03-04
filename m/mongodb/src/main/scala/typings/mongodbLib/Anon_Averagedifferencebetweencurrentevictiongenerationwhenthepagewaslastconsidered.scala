@@ -48,8 +48,25 @@ object Anon_Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastc
     `Size of the root page`: scala.Double,
     `Total number of pages currently in cache`: scala.Double
   ): Anon_Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered = {
-    val __obj = js.Dynamic.literal(`Average difference between current eviction generation when the page was last considered` = `Average difference between current eviction generation when the page was last considered`, `Average on-disk page image size seen` = `Average on-disk page image size seen`, `Clean pages currently in cache` = `Clean pages currently in cache`, `Current eviction generation` = `Current eviction generation`, `Dirty pages currently in cache` = `Dirty pages currently in cache`, `Entries in the root page` = `Entries in the root page`, `Internal pages currently in cache` = `Internal pages currently in cache`, `Leaf pages currently in cache` = `Leaf pages currently in cache`, `Maximum difference between current eviction generation when the page was last considered` = `Maximum difference between current eviction generation when the page was last considered`, `Maximum page size seen` = `Maximum page size seen`, `Minimum on-disk page image size seen` = `Minimum on-disk page image size seen`, `On-disk page image sizes smaller than a single allocation unit` = `On-disk page image sizes smaller than a single allocation unit`, `Pages created in memory and never written` = `Pages created in memory and never written`, `Pages currently queued for eviction` = `Pages currently queued for eviction`, `Pages that could not be queued for eviction` = `Pages that could not be queued for eviction`, `Refs skipped during cache traversal` = `Refs skipped during cache traversal`, `Size of the root page` = `Size of the root page`, `Total number of pages currently in cache` = `Total number of pages currently in cache`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Average difference between current eviction generation when the page was last considered")(`Average difference between current eviction generation when the page was last considered`)
+    __obj.updateDynamic("Average on-disk page image size seen")(`Average on-disk page image size seen`)
+    __obj.updateDynamic("Clean pages currently in cache")(`Clean pages currently in cache`)
+    __obj.updateDynamic("Current eviction generation")(`Current eviction generation`)
+    __obj.updateDynamic("Dirty pages currently in cache")(`Dirty pages currently in cache`)
+    __obj.updateDynamic("Entries in the root page")(`Entries in the root page`)
+    __obj.updateDynamic("Internal pages currently in cache")(`Internal pages currently in cache`)
+    __obj.updateDynamic("Leaf pages currently in cache")(`Leaf pages currently in cache`)
+    __obj.updateDynamic("Maximum difference between current eviction generation when the page was last considered")(`Maximum difference between current eviction generation when the page was last considered`)
+    __obj.updateDynamic("Maximum page size seen")(`Maximum page size seen`)
+    __obj.updateDynamic("Minimum on-disk page image size seen")(`Minimum on-disk page image size seen`)
+    __obj.updateDynamic("On-disk page image sizes smaller than a single allocation unit")(`On-disk page image sizes smaller than a single allocation unit`)
+    __obj.updateDynamic("Pages created in memory and never written")(`Pages created in memory and never written`)
+    __obj.updateDynamic("Pages currently queued for eviction")(`Pages currently queued for eviction`)
+    __obj.updateDynamic("Pages that could not be queued for eviction")(`Pages that could not be queued for eviction`)
+    __obj.updateDynamic("Refs skipped during cache traversal")(`Refs skipped during cache traversal`)
+    __obj.updateDynamic("Size of the root page")(`Size of the root page`)
+    __obj.updateDynamic("Total number of pages currently in cache")(`Total number of pages currently in cache`)
     __obj.asInstanceOf[Anon_Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered]
   }
 }

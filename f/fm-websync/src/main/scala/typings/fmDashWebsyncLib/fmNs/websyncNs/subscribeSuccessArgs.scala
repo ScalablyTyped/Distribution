@@ -36,15 +36,8 @@ object subscribeSuccessArgs {
     subscribedClients: js.Array[subscribedClient],
     timestamp: stdLib.Date
   ): subscribeSuccessArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("isResubscribe")(isResubscribe)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("subscribedClients")(subscribedClients)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel, channels = channels, client = client, clientId = clientId, isResubscribe = isResubscribe, meta = meta, subscribedClients = subscribedClients, timestamp = timestamp)
+  
     __obj.asInstanceOf[subscribeSuccessArgs]
   }
 }

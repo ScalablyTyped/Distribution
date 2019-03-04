@@ -13,7 +13,7 @@ object ^ extends js.Object {
   def compileFn(source: java.lang.String): dustjsDashLinkedinLib.dustjsDashLinkedinMod.Template = js.native
   def compileFn(source: java.lang.String, name: java.lang.String): dustjsDashLinkedinLib.dustjsDashLinkedinMod.Template = js.native
   def escapeHtml(html: java.lang.String): java.lang.String = js.native
-  def escapeJs(`js_`: java.lang.String): java.lang.String = js.native
+  def escapeJs(js_ : java.lang.String): java.lang.String = js.native
   def loadSource(compiled: java.lang.String): dustjsDashLinkedinLib.dustjsDashLinkedinMod.Template = js.native
   def makeBase(global: dustjsDashLinkedinLib.dustjsDashLinkedinMod.Context): dustjsDashLinkedinLib.dustjsDashLinkedinMod.Context = js.native
   def makeBase(global: js.Any): dustjsDashLinkedinLib.dustjsDashLinkedinMod.Context = js.native

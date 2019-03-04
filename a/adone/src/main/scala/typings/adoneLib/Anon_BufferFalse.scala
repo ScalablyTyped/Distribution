@@ -12,8 +12,8 @@ trait Anon_BufferFalse extends js.Object {
 object Anon_BufferFalse {
   @scala.inline
   def apply(buffer: adoneLib.adoneLibNumbers.`false`): Anon_BufferFalse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
+    val __obj = js.Dynamic.literal(buffer = buffer)
+  
     __obj.asInstanceOf[Anon_BufferFalse]
   }
 }

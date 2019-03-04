@@ -49,14 +49,8 @@ object TermFilter {
     term: js.Function0[TermFilter],
     toJSON: js.Function0[TermFilter]
   ): TermFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("term")(term)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, term = term, toJSON = toJSON)
+  
     __obj.asInstanceOf[TermFilter]
   }
 }

@@ -22,12 +22,8 @@ object LeafletMouseEvent {
     target: js.Any,
     `type`: java.lang.String
   ): LeafletMouseEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("containerPoint")(containerPoint)
-    __obj.updateDynamic("latlng")(latlng)
-    __obj.updateDynamic("layerPoint")(layerPoint)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(containerPoint = containerPoint, latlng = latlng, layerPoint = layerPoint, originalEvent = originalEvent, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LeafletMouseEvent]
   }
 }

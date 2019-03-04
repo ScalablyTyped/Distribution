@@ -27,8 +27,7 @@ object hexoSpawnDisableEncodingAndOverrideStdioOptions {
     windowsHide: js.UndefOr[scala.Boolean] = js.undefined,
     windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
   ): hexoSpawnDisableEncodingAndOverrideStdioOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(stdio = stdio.asInstanceOf[js.Any])
     if (argv0 != null) __obj.updateDynamic("argv0")(argv0)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)

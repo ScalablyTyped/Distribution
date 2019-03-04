@@ -13,9 +13,8 @@ trait TaskLogReference extends js.Object {
 object TaskLogReference {
   @scala.inline
   def apply(id: scala.Double, location: java.lang.String): TaskLogReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(id = id, location = location)
+  
     __obj.asInstanceOf[TaskLogReference]
   }
 }

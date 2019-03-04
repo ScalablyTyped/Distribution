@@ -46,24 +46,8 @@ object PathVisitor {
     visitor: js.Any,
     wasChangeReported: js.Function0[js.Any]
   ): PathVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AbortRequest")(AbortRequest)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("_abortRequested")(_abortRequested)
-    __obj.updateDynamic("_changeReported")(_changeReported)
-    __obj.updateDynamic("_methodNameTable")(_methodNameTable)
-    __obj.updateDynamic("_reusableContextStack")(_reusableContextStack)
-    __obj.updateDynamic("_shouldVisitComments")(_shouldVisitComments)
-    __obj.updateDynamic("_visiting")(_visiting)
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("acquireContext")(acquireContext)
-    __obj.updateDynamic("releaseContext")(releaseContext)
-    __obj.updateDynamic("reportChanged")(reportChanged)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("visit")(visit)
-    __obj.updateDynamic("visitWithoutReset")(visitWithoutReset)
-    __obj.updateDynamic("visitor")(visitor)
-    __obj.updateDynamic("wasChangeReported")(wasChangeReported)
+    val __obj = js.Dynamic.literal(AbortRequest = AbortRequest, Context = Context, _abortRequested = _abortRequested, _changeReported = _changeReported, _methodNameTable = _methodNameTable, _reusableContextStack = _reusableContextStack, _shouldVisitComments = _shouldVisitComments, _visiting = _visiting, abort = abort, acquireContext = acquireContext, releaseContext = releaseContext, reportChanged = reportChanged, reset = reset, visit = visit, visitWithoutReset = visitWithoutReset, visitor = visitor, wasChangeReported = wasChangeReported)
+  
     __obj.asInstanceOf[PathVisitor]
   }
 }

@@ -28,13 +28,8 @@ object Track {
     uri: java.lang.String,
     id: java.lang.String = null
   ): Track = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("album")(album)
-    __obj.updateDynamic("artists")(artists)
-    __obj.updateDynamic("is_playable")(is_playable)
-    __obj.updateDynamic("media_type")(media_type.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(album = album, artists = artists, is_playable = is_playable, media_type = media_type.asInstanceOf[js.Any], name = name, uri = uri)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[Track]
   }

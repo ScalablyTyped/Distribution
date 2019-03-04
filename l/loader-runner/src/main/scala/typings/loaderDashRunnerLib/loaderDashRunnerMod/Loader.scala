@@ -32,15 +32,7 @@ object Loader {
     normal: js.Function1[/* request */ java.lang.String, java.lang.String] = null,
     pitch: js.Function1[/* request */ java.lang.String, java.lang.String] = null
   ): Loader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("normalExecuted")(normalExecuted)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pitchExecuted")(pitchExecuted)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(data = data, normalExecuted = normalExecuted, options = options, path = path, pitchExecuted = pitchExecuted, query = query, raw = raw, request = request)
     if (normal != null) __obj.updateDynamic("normal")(normal)
     if (pitch != null) __obj.updateDynamic("pitch")(pitch)
     __obj.asInstanceOf[Loader]

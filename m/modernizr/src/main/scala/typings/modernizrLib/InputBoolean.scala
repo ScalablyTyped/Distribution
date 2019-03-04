@@ -32,17 +32,8 @@ object InputBoolean {
     required: scala.Boolean,
     step: scala.Boolean
   ): InputBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocomplete")(autocomplete)
-    __obj.updateDynamic("autofocus")(autofocus)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("multiple")(multiple)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(autocomplete = autocomplete, autofocus = autofocus, list = list, max = max, min = min, multiple = multiple, pattern = pattern, placeholder = placeholder, required = required, step = step)
+  
     __obj.asInstanceOf[InputBoolean]
   }
 }

@@ -108,18 +108,8 @@ object MessageFunctions {
     setFlags: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit],
     setKeywords: js.Function3[js.Any, js.Any, js.Function1[/* error */ nodeLib.Error, scala.Unit], scala.Unit]
   ): MessageFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFlags")(addFlags)
-    __obj.updateDynamic("addKeywords")(addKeywords)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("delFlags")(delFlags)
-    __obj.updateDynamic("delKeywords")(delKeywords)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("serverSupports")(serverSupports)
-    __obj.updateDynamic("setFlags")(setFlags)
-    __obj.updateDynamic("setKeywords")(setKeywords)
+    val __obj = js.Dynamic.literal(addFlags = addFlags, addKeywords = addKeywords, copy = copy, delFlags = delFlags, delKeywords = delKeywords, fetch = fetch, move = move, search = search, serverSupports = serverSupports, setFlags = setFlags, setKeywords = setKeywords)
+  
     __obj.asInstanceOf[MessageFunctions]
   }
 }

@@ -20,10 +20,7 @@ object Anon_Effect {
     parentEffectId: scala.Double,
     label: java.lang.String = null
   ): Anon_Effect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("effectId")(effectId)
-    __obj.updateDynamic("parentEffectId")(parentEffectId)
+    val __obj = js.Dynamic.literal(effect = effect, effectId = effectId, parentEffectId = parentEffectId)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[Anon_Effect]
   }

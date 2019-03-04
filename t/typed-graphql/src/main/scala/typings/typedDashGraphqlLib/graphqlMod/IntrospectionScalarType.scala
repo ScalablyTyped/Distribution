@@ -18,9 +18,7 @@ object IntrospectionScalarType {
     name: java.lang.String,
     description: java.lang.String = null
   ): IntrospectionScalarType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionScalarType]
   }

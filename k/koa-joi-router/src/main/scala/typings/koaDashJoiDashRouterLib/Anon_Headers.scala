@@ -13,8 +13,8 @@ trait Anon_Headers
 object Anon_Headers {
   @scala.inline
   def apply(headers: joiLib.joiMod.SchemaLike): Anon_Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Headers]
   }
 }

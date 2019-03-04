@@ -35,9 +35,7 @@ object ChooseAlipayContactOptions {
       scala.Unit
     ] = null
   ): ChooseAlipayContactOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(count = count, success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[ChooseAlipayContactOptions]

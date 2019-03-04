@@ -18,9 +18,8 @@ object Anon_DataIdNegated {
     negated: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_DataIdNegated = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataId")(dataId.asInstanceOf[js.Any])
-    __obj.updateDynamic("negated")(negated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], negated = negated.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataIdNegated]
   }
 }

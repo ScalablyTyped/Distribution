@@ -53,8 +53,7 @@ object PlaceDetailsRequest {
     region: java.lang.String = null,
     sessiontoken: java.lang.String = null
   ): PlaceDetailsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("placeid")(placeid)
+    val __obj = js.Dynamic.literal(placeid = placeid)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (language != null) __obj.updateDynamic("language")(language)
     if (region != null) __obj.updateDynamic("region")(region)

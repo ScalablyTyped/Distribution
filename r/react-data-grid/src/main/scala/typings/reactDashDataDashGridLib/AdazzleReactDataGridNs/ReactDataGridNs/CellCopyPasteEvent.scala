@@ -40,12 +40,8 @@ object CellCopyPasteEvent {
     toRow: scala.Double,
     value: js.Any
   ): CellCopyPasteEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellKey")(cellKey)
-    __obj.updateDynamic("fromRow")(fromRow)
-    __obj.updateDynamic("rowIdx")(rowIdx)
-    __obj.updateDynamic("toRow")(toRow)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(cellKey = cellKey, fromRow = fromRow, rowIdx = rowIdx, toRow = toRow, value = value)
+  
     __obj.asInstanceOf[CellCopyPasteEvent]
   }
 }

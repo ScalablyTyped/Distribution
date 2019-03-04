@@ -20,11 +20,8 @@ object KnockstrapCarouselDefaults {
     indicatorsTemplate: KnockstrapCarouselDefaultsIndicatorsTemplate,
     itemTemplate: KnockstrapCarouselDefaultsItemTemplate
   ): KnockstrapCarouselDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controlsTemplate")(controlsTemplate)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("indicatorsTemplate")(indicatorsTemplate)
-    __obj.updateDynamic("itemTemplate")(itemTemplate)
+    val __obj = js.Dynamic.literal(controlsTemplate = controlsTemplate, css = css, indicatorsTemplate = indicatorsTemplate, itemTemplate = itemTemplate)
+  
     __obj.asInstanceOf[KnockstrapCarouselDefaults]
   }
 }

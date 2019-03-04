@@ -16,9 +16,8 @@ object Anon_PERMISSIONSINCREASE {
     PERMISSIONS_INCREASE: chromeDashAppsLib.chromeDashAppsLibStrings.permissions_increase,
     UNKNOWN: chromeDashAppsLib.chromeDashAppsLibStrings.unknown
   ): Anon_PERMISSIONSINCREASE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PERMISSIONS_INCREASE")(PERMISSIONS_INCREASE)
-    __obj.updateDynamic("UNKNOWN")(UNKNOWN)
+    val __obj = js.Dynamic.literal(PERMISSIONS_INCREASE = PERMISSIONS_INCREASE, UNKNOWN = UNKNOWN)
+  
     __obj.asInstanceOf[Anon_PERMISSIONSINCREASE]
   }
 }

@@ -28,10 +28,7 @@ object ClientOptions {
     transport: js.Any = null,
     useSSL: js.UndefOr[scala.Boolean] = js.undefined
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessKey")(accessKey)
-    __obj.updateDynamic("endPoint")(endPoint)
-    __obj.updateDynamic("secretKey")(secretKey)
+    val __obj = js.Dynamic.literal(accessKey = accessKey, endPoint = endPoint, secretKey = secretKey)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken)

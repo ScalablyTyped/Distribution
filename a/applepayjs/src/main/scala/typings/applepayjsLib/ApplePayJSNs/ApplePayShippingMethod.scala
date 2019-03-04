@@ -35,9 +35,7 @@ object ApplePayShippingMethod {
     detail: java.lang.String = null,
     identifier: java.lang.String = null
   ): ApplePayShippingMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(amount = amount, label = label)
     if (detail != null) __obj.updateDynamic("detail")(detail)
     if (identifier != null) __obj.updateDynamic("identifier")(identifier)
     __obj.asInstanceOf[ApplePayShippingMethod]

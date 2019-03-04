@@ -36,9 +36,7 @@ object RosterPresenceUpdate {
     message: java.lang.String = null,
     resource: java.lang.String = null
   ): RosterPresenceUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("presence")(presence)
+    val __obj = js.Dynamic.literal(id = id, presence = presence)
     if (message != null) __obj.updateDynamic("message")(message)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[RosterPresenceUpdate]

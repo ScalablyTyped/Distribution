@@ -17,9 +17,8 @@ object RTCRtcCapabilities {
     codecs: js.Array[RTCRtpCodecCapability],
     headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
   ): RTCRtcCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("codecs")(codecs)
-    __obj.updateDynamic("headerExtensions")(headerExtensions)
+    val __obj = js.Dynamic.literal(codecs = codecs, headerExtensions = headerExtensions)
+  
     __obj.asInstanceOf[RTCRtcCapabilities]
   }
 }

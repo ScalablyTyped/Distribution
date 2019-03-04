@@ -30,11 +30,8 @@ object XFunctionAccess {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFunctionAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("callFunction")(callFunction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, callFunction = callFunction, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFunctionAccess]
   }
 }

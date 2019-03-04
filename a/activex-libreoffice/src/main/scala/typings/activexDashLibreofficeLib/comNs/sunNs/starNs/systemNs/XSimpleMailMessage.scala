@@ -126,28 +126,8 @@ object XSimpleMailMessage {
     setRecipient: js.Function1[java.lang.String, scala.Unit],
     setSubject: js.Function1[java.lang.String, scala.Unit]
   ): XSimpleMailMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachement")(Attachement)
-    __obj.updateDynamic("BccRecipient")(BccRecipient)
-    __obj.updateDynamic("CcRecipient")(CcRecipient)
-    __obj.updateDynamic("Originator")(Originator)
-    __obj.updateDynamic("Recipient")(Recipient)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAttachement")(getAttachement)
-    __obj.updateDynamic("getBccRecipient")(getBccRecipient)
-    __obj.updateDynamic("getCcRecipient")(getCcRecipient)
-    __obj.updateDynamic("getOriginator")(getOriginator)
-    __obj.updateDynamic("getRecipient")(getRecipient)
-    __obj.updateDynamic("getSubject")(getSubject)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAttachement")(setAttachement)
-    __obj.updateDynamic("setBccRecipient")(setBccRecipient)
-    __obj.updateDynamic("setCcRecipient")(setCcRecipient)
-    __obj.updateDynamic("setOriginator")(setOriginator)
-    __obj.updateDynamic("setRecipient")(setRecipient)
-    __obj.updateDynamic("setSubject")(setSubject)
+    val __obj = js.Dynamic.literal(Attachement = Attachement, BccRecipient = BccRecipient, CcRecipient = CcRecipient, Originator = Originator, Recipient = Recipient, Subject = Subject, acquire = acquire, getAttachement = getAttachement, getBccRecipient = getBccRecipient, getCcRecipient = getCcRecipient, getOriginator = getOriginator, getRecipient = getRecipient, getSubject = getSubject, queryInterface = queryInterface, release = release, setAttachement = setAttachement, setBccRecipient = setBccRecipient, setCcRecipient = setCcRecipient, setOriginator = setOriginator, setRecipient = setRecipient, setSubject = setSubject)
+  
     __obj.asInstanceOf[XSimpleMailMessage]
   }
 }

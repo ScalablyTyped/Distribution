@@ -30,23 +30,8 @@ object IArrow {
     transparency: scala.Double,
     underline: scala.Boolean
   ): IArrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("drawText")(drawText)
-    __obj.updateDynamic("ellipse")(ellipse)
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("poligon")(poligon)
-    __obj.updateDynamic("rectangle")(rectangle)
-    __obj.updateDynamic("round")(round)
-    __obj.updateDynamic("shadow")(shadow)
-    __obj.updateDynamic("stroke")(stroke)
-    __obj.updateDynamic("textHeight")(textHeight)
-    __obj.updateDynamic("textWidth")(textWidth)
-    __obj.updateDynamic("transparency")(transparency)
-    __obj.updateDynamic("underline")(underline)
+    val __obj = js.Dynamic.literal(drawText = drawText, ellipse = ellipse, fill = fill, font = font, gradient = gradient, image = image, length = length, poligon = poligon, rectangle = rectangle, round = round, shadow = shadow, stroke = stroke, textHeight = textHeight, textWidth = textWidth, transparency = transparency, underline = underline)
+  
     __obj.asInstanceOf[IArrow]
   }
 }

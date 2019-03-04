@@ -16,10 +16,8 @@ object LinkSepAccessor {
     getSourceIndex: js.Function1[Link, scala.Double],
     getTargetIndex: js.Function1[Link, scala.Double]
   ): LinkSepAccessor[Link] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMinSeparation")(getMinSeparation)
-    __obj.updateDynamic("getSourceIndex")(getSourceIndex)
-    __obj.updateDynamic("getTargetIndex")(getTargetIndex)
+    val __obj = js.Dynamic.literal(getMinSeparation = getMinSeparation, getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex)
+  
     __obj.asInstanceOf[LinkSepAccessor[Link]]
   }
 }

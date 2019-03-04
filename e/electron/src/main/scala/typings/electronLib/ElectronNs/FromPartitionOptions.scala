@@ -15,8 +15,8 @@ trait FromPartitionOptions extends js.Object {
 object FromPartitionOptions {
   @scala.inline
   def apply(cache: scala.Boolean): FromPartitionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
+    val __obj = js.Dynamic.literal(cache = cache)
+  
     __obj.asInstanceOf[FromPartitionOptions]
   }
 }

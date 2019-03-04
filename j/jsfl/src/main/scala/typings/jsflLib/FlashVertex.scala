@@ -20,11 +20,8 @@ object FlashVertex {
     x: scala.Double,
     y: scala.Double
   ): FlashVertex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getHalfEdge")(getHalfEdge)
-    __obj.updateDynamic("setLocation")(setLocation)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(getHalfEdge = getHalfEdge, setLocation = setLocation, x = x, y = y)
+  
     __obj.asInstanceOf[FlashVertex]
   }
 }

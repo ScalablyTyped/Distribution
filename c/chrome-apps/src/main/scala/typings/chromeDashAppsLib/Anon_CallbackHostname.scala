@@ -32,8 +32,8 @@ object Anon_CallbackHostname {
       scala.Unit
     ]
   ): Anon_CallbackHostname = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(resolve = resolve)
+  
     __obj.asInstanceOf[Anon_CallbackHostname]
   }
 }

@@ -13,9 +13,8 @@ trait HttpQueryResponse extends js.Object {
 object HttpQueryResponse {
   @scala.inline
   def apply(graphqlResponse: java.lang.String, responseInit: ApolloServerHttpResponse): HttpQueryResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graphqlResponse")(graphqlResponse)
-    __obj.updateDynamic("responseInit")(responseInit)
+    val __obj = js.Dynamic.literal(graphqlResponse = graphqlResponse, responseInit = responseInit)
+  
     __obj.asInstanceOf[HttpQueryResponse]
   }
 }

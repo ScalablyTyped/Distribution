@@ -21,7 +21,8 @@ object Anon_Contains {
     contains: vegaDashTypingsLib.vegaDashTypingsLibStrings.content | vegaDashTypingsLib.vegaDashTypingsLibStrings.padding = null,
     resize: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
     if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
     __obj.asInstanceOf[Anon_Contains]

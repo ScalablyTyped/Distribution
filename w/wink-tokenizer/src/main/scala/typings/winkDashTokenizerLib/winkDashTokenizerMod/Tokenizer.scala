@@ -43,10 +43,8 @@ object Tokenizer {
       js.Array[winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Token]
     ]
   ): Tokenizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defineConfig")(defineConfig)
-    __obj.updateDynamic("getTokensFP")(getTokensFP)
-    __obj.updateDynamic("tokenize")(tokenize)
+    val __obj = js.Dynamic.literal(defineConfig = defineConfig, getTokensFP = getTokensFP, tokenize = tokenize)
+  
     __obj.asInstanceOf[Tokenizer]
   }
 }

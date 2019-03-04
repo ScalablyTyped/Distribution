@@ -12,8 +12,8 @@ trait Humanize extends js.Object {
 object Humanize {
   @scala.inline
   def apply(capitalize: scala.Boolean): Humanize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capitalize")(capitalize)
+    val __obj = js.Dynamic.literal(capitalize = capitalize)
+  
     __obj.asInstanceOf[Humanize]
   }
 }

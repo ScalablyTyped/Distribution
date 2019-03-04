@@ -33,14 +33,8 @@ object LivePlayerContext {
     resume: js.Function1[BaseOptions[_, _], scala.Unit],
     stop: js.Function1[BaseOptions[_, _], scala.Unit]
   ): LivePlayerContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exitFullScreen")(exitFullScreen)
-    __obj.updateDynamic("mute")(mute)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("requestFullScreen")(requestFullScreen)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(exitFullScreen = exitFullScreen, mute = mute, pause = pause, play = play, requestFullScreen = requestFullScreen, resume = resume, stop = stop)
+  
     __obj.asInstanceOf[LivePlayerContext]
   }
 }

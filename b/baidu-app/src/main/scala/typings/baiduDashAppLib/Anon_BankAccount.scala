@@ -35,14 +35,8 @@ object Anon_BankAccount {
     title: java.lang.String,
     `type`: java.lang.String
   ): Anon_BankAccount = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bankAccount")(bankAccount)
-    __obj.updateDynamic("bankName")(bankName)
-    __obj.updateDynamic("companyAddress")(companyAddress)
-    __obj.updateDynamic("errMsg")(errMsg)
-    __obj.updateDynamic("taxNumber")(taxNumber)
-    __obj.updateDynamic("telephone")(telephone)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(bankAccount = bankAccount, bankName = bankName, companyAddress = companyAddress, errMsg = errMsg, taxNumber = taxNumber, telephone = telephone, title = title)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_BankAccount]
   }
 }

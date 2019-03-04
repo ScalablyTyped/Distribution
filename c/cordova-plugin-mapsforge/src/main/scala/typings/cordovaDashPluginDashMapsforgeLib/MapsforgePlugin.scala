@@ -13,9 +13,8 @@ trait MapsforgePlugin extends js.Object {
 object MapsforgePlugin {
   @scala.inline
   def apply(cache: MapsforgeCachePlugin, embedded: MapsforgeEmbeddedPlugin): MapsforgePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("embedded")(embedded)
+    val __obj = js.Dynamic.literal(cache = cache, embedded = embedded)
+  
     __obj.asInstanceOf[MapsforgePlugin]
   }
 }

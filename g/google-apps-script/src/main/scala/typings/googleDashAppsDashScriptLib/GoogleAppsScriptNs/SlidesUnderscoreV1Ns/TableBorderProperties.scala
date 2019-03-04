@@ -17,10 +17,8 @@ trait TableBorderProperties extends js.Object {
 object TableBorderProperties {
   @scala.inline
   def apply(dash_style: DashStyle, table_border_fill: TableBorderPropertiesTableBorderFill, weight: Dimension): TableBorderProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dash_style")(dash_style)
-    __obj.updateDynamic("table_border_fill")(table_border_fill)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(dash_style = dash_style, table_border_fill = table_border_fill, weight = weight)
+  
     __obj.asInstanceOf[TableBorderProperties]
   }
 }

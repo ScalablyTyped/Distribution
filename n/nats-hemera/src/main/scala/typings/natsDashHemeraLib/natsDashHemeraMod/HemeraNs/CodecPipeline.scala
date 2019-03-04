@@ -20,11 +20,8 @@ object CodecPipeline {
     run: js.Function2[js.Any, js.Any, js.Any],
     unshift: js.Function1[js.Any, CodecPipeline]
   ): CodecPipeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("unshift")(unshift)
+    val __obj = js.Dynamic.literal(add = add, reset = reset, run = run, unshift = unshift)
+  
     __obj.asInstanceOf[CodecPipeline]
   }
 }

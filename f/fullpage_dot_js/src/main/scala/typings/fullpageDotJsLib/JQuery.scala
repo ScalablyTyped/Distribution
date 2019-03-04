@@ -12,8 +12,8 @@ trait JQuery extends js.Object {
 object JQuery {
   @scala.inline
   def apply(fullpage: FullPageJs): JQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullpage")(fullpage)
+    val __obj = js.Dynamic.literal(fullpage = fullpage)
+  
     __obj.asInstanceOf[JQuery]
   }
 }

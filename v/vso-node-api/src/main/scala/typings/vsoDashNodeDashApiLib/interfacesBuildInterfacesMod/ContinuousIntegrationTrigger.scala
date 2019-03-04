@@ -37,14 +37,8 @@ object ContinuousIntegrationTrigger {
     pollingJobId: java.lang.String,
     triggerType: DefinitionTriggerType
   ): ContinuousIntegrationTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchChanges")(batchChanges)
-    __obj.updateDynamic("branchFilters")(branchFilters)
-    __obj.updateDynamic("maxConcurrentBuildsPerBranch")(maxConcurrentBuildsPerBranch)
-    __obj.updateDynamic("pathFilters")(pathFilters)
-    __obj.updateDynamic("pollingInterval")(pollingInterval)
-    __obj.updateDynamic("pollingJobId")(pollingJobId)
-    __obj.updateDynamic("triggerType")(triggerType)
+    val __obj = js.Dynamic.literal(batchChanges = batchChanges, branchFilters = branchFilters, maxConcurrentBuildsPerBranch = maxConcurrentBuildsPerBranch, pathFilters = pathFilters, pollingInterval = pollingInterval, pollingJobId = pollingJobId, triggerType = triggerType)
+  
     __obj.asInstanceOf[ContinuousIntegrationTrigger]
   }
 }

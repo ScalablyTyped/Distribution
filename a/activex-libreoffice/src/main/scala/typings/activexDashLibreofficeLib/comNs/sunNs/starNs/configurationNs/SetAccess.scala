@@ -79,37 +79,8 @@ object SetAccess {
     setPropertyToDefault: js.Function1[java.lang.String, scala.Unit],
     unescapeString: js.Function1[java.lang.String, java.lang.String]
   ): SetAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementTemplateName")(ElementTemplateName)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("escapeString")(escapeString)
-    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementTemplateName")(getElementTemplateName)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getExactName")(getExactName)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getPropertyByName")(getPropertyByName)
-    __obj.updateDynamic("getPropertyDefault")(getPropertyDefault)
-    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
-    __obj.updateDynamic("getPropertyState")(getPropertyState)
-    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
-    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("hasPropertyByName")(hasPropertyByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
-    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
-    __obj.updateDynamic("setPropertyToDefault")(setPropertyToDefault)
-    __obj.updateDynamic("unescapeString")(unescapeString)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementTemplateName = ElementTemplateName, ElementType = ElementType, Properties = Properties, acquire = acquire, addContainerListener = addContainerListener, escapeString = escapeString, getByHierarchicalName = getByHierarchicalName, getByName = getByName, getElementNames = getElementNames, getElementTemplateName = getElementTemplateName, getElementType = getElementType, getExactName = getExactName, getProperties = getProperties, getPropertyByName = getPropertyByName, getPropertyDefault = getPropertyDefault, getPropertyDefaults = getPropertyDefaults, getPropertyState = getPropertyState, getPropertyStates = getPropertyStates, hasByHierarchicalName = hasByHierarchicalName, hasByName = hasByName, hasElements = hasElements, hasPropertyByName = hasPropertyByName, queryInterface = queryInterface, release = release, removeContainerListener = removeContainerListener, setAllPropertiesToDefault = setAllPropertiesToDefault, setPropertiesToDefault = setPropertiesToDefault, setPropertyToDefault = setPropertyToDefault, unescapeString = unescapeString)
+  
     __obj.asInstanceOf[SetAccess]
   }
 }

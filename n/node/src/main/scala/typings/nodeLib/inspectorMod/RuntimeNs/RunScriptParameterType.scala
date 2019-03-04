@@ -55,8 +55,7 @@ object RunScriptParameterType {
     returnByValue: js.UndefOr[scala.Boolean] = js.undefined,
     silent: js.UndefOr[scala.Boolean] = js.undefined
   ): RunScriptParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scriptId")(scriptId)
+    val __obj = js.Dynamic.literal(scriptId = scriptId)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
     if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)

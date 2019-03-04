@@ -15,11 +15,8 @@ trait SceneItem extends js.Object {
 object SceneItem {
   @scala.inline
   def apply(bounds: Bounds, mark: vegaDashTypingsLib.Anon_Role, x: scala.Double, y: scala.Double): SceneItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("mark")(mark)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(bounds = bounds, mark = mark, x = x, y = y)
+  
     __obj.asInstanceOf[SceneItem]
   }
 }

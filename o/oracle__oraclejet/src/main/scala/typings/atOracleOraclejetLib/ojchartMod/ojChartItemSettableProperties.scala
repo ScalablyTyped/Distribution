@@ -95,9 +95,7 @@ object ojChartItemSettableProperties {
     y: scala.Int | scala.Double = null,
     z: scala.Int | scala.Double = null
   ): ojChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(groupId = groupId, seriesId = seriesId.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (boxPlot != null) __obj.updateDynamic("boxPlot")(boxPlot)

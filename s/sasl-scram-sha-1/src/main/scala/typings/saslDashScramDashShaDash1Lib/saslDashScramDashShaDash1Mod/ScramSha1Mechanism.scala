@@ -24,11 +24,8 @@ object ScramSha1Mechanism {
       java.lang.String
     ]
   ): ScramSha1Mechanism = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("clientFirst")(clientFirst)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(challenge = challenge, clientFirst = clientFirst, name = name, response = response)
+  
     __obj.asInstanceOf[ScramSha1Mechanism]
   }
 }

@@ -13,9 +13,8 @@ trait DistrictSearchResult extends js.Object {
 object DistrictSearchResult {
   @scala.inline
   def apply(districtList: js.Array[District], info: java.lang.String): DistrictSearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("districtList")(districtList)
-    __obj.updateDynamic("info")(info)
+    val __obj = js.Dynamic.literal(districtList = districtList, info = info)
+  
     __obj.asInstanceOf[DistrictSearchResult]
   }
 }

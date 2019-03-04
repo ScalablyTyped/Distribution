@@ -16,8 +16,7 @@ object ThemeProviderProps {
     theme: stdLib.Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme]),
     children: reactLib.reactMod.ReactNs.ReactNode = null
   ): ThemeProviderProps[Theme] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProviderProps[Theme]]
   }

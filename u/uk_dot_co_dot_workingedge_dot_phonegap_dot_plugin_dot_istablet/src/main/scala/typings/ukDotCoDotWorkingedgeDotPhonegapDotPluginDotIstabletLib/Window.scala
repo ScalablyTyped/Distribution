@@ -16,8 +16,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(isTablet: scala.Boolean): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isTablet")(isTablet)
+    val __obj = js.Dynamic.literal(isTablet = isTablet)
+  
     __obj.asInstanceOf[Window]
   }
 }

@@ -18,8 +18,7 @@ object QueryResult {
     error: stdLib.Error = null,
     ref_params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(response = response)
     if (error != null) __obj.updateDynamic("error")(error)
     if (ref_params != null) __obj.updateDynamic("ref_params")(ref_params)
     __obj.asInstanceOf[QueryResult]

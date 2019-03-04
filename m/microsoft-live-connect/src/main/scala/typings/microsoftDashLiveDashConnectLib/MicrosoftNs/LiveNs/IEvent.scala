@@ -125,23 +125,8 @@ object IEvent {
     updated_time: java.lang.String,
     visibility: java.lang.String
   ): IEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availability")(availability)
-    __obj.updateDynamic("calendar_id")(calendar_id)
-    __obj.updateDynamic("created_time")(created_time)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("end_time")(end_time)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_all_day_event")(is_all_day_event)
-    __obj.updateDynamic("is_recurrent")(is_recurrent)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recurrence")(recurrence)
-    __obj.updateDynamic("reminder_time")(reminder_time)
-    __obj.updateDynamic("start_time")(start_time)
-    __obj.updateDynamic("updated_time")(updated_time)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(availability = availability, calendar_id = calendar_id, created_time = created_time, description = description, end_time = end_time, from = from, id = id, is_all_day_event = is_all_day_event, is_recurrent = is_recurrent, location = location, name = name, recurrence = recurrence, reminder_time = reminder_time, start_time = start_time, updated_time = updated_time, visibility = visibility)
+  
     __obj.asInstanceOf[IEvent]
   }
 }

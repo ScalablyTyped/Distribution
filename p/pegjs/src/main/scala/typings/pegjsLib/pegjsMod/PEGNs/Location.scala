@@ -14,10 +14,8 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(column: scala.Double, line: scala.Double, offset: scala.Double): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(column = column, line = line, offset = offset)
+  
     __obj.asInstanceOf[Location]
   }
 }

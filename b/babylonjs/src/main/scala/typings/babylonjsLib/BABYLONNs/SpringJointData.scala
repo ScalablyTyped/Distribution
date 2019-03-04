@@ -40,11 +40,7 @@ object SpringJointData {
     mainPivot: Vector3 = null,
     nativeParams: js.Any = null
   ): SpringJointData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("damping")(damping)
-    __obj.updateDynamic("forceApplicationCallback")(forceApplicationCallback)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("stiffness")(stiffness)
+    val __obj = js.Dynamic.literal(damping = damping, forceApplicationCallback = forceApplicationCallback, length = length, stiffness = stiffness)
     if (!js.isUndefined(collision)) __obj.updateDynamic("collision")(collision)
     if (connectedAxis != null) __obj.updateDynamic("connectedAxis")(connectedAxis)
     if (connectedPivot != null) __obj.updateDynamic("connectedPivot")(connectedPivot)

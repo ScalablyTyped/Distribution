@@ -29,13 +29,8 @@ object ISimpleText {
     subText: js.Function1[TextSpan, ISimpleText],
     substr: js.Function3[scala.Double, scala.Double, scala.Boolean, java.lang.String]
   ): ISimpleText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charCodeAt")(charCodeAt)
-    __obj.updateDynamic("copyTo")(copyTo)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("lineMap")(lineMap)
-    __obj.updateDynamic("subText")(subText)
-    __obj.updateDynamic("substr")(substr)
+    val __obj = js.Dynamic.literal(charCodeAt = charCodeAt, copyTo = copyTo, length = length, lineMap = lineMap, subText = subText, substr = substr)
+  
     __obj.asInstanceOf[ISimpleText]
   }
 }

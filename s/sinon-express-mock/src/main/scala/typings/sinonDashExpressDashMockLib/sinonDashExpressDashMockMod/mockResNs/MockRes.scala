@@ -58,29 +58,8 @@ object MockRes {
     `type`: sinonLib.sinonMod.SinonNs.SinonStub,
     vary: sinonLib.sinonMod.SinonNs.SinonStub
   ): MockRes = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("attachement")(attachement)
-    __obj.updateDynamic("clearCookie")(clearCookie)
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("download")(download)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("headersSent")(headersSent)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("jsonp")(jsonp)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("locals")(locals)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("redirect")(redirect)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("sendFile")(sendFile)
-    __obj.updateDynamic("sendStatus")(sendStatus)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("vary")(vary)
+    val __obj = js.Dynamic.literal(append = append, attachement = attachement, clearCookie = clearCookie, cookie = cookie, download = download, end = end, format = format, get = get, headersSent = headersSent, json = json, jsonp = jsonp, links = links, locals = locals, location = location, redirect = redirect, render = render, send = send, sendFile = sendFile, sendStatus = sendStatus, set = set, status = status, vary = vary)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MockRes]
   }
 }

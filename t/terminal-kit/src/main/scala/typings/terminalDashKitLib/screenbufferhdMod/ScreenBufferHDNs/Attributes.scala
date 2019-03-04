@@ -54,13 +54,7 @@ object Attributes {
     transparency: js.UndefOr[scala.Boolean] = js.undefined,
     underline: js.UndefOr[scala.Boolean] = js.undefined
   ): Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("bgB")(bgB)
-    __obj.updateDynamic("bgG")(bgG)
-    __obj.updateDynamic("bgR")(bgR)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(b = b, bgB = bgB, bgG = bgG, bgR = bgR, g = g, r = r)
     if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
     if (bgA != null) __obj.updateDynamic("bgA")(bgA.asInstanceOf[js.Any])
     if (!js.isUndefined(bgDefaultColor)) __obj.updateDynamic("bgDefaultColor")(bgDefaultColor)

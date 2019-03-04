@@ -80,17 +80,8 @@ object FuzzyQuery {
     transpositions: js.Function1[scala.Boolean, FuzzyQuery],
     value: js.Function1[java.lang.String, FuzzyQuery]
   ): FuzzyQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("maxExpansions")(maxExpansions)
-    __obj.updateDynamic("minSimilarity")(minSimilarity)
-    __obj.updateDynamic("prefixLength")(prefixLength)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("transpositions")(transpositions)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, maxExpansions = maxExpansions, minSimilarity = minSimilarity, prefixLength = prefixLength, rewrite = rewrite, toJSON = toJSON, transpositions = transpositions, value = value)
+  
     __obj.asInstanceOf[FuzzyQuery]
   }
 }

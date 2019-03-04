@@ -35,10 +35,8 @@ object INamespacedStoreService {
     remove: js.Function1[java.lang.String, scala.Unit],
     set: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): INamespacedStoreService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, remove = remove, set = set)
+  
     __obj.asInstanceOf[INamespacedStoreService]
   }
 }

@@ -13,9 +13,8 @@ trait ReleaseEnvironmentDefinitionReference extends js.Object {
 object ReleaseEnvironmentDefinitionReference {
   @scala.inline
   def apply(definitionId: scala.Double, environmentDefinitionId: scala.Double): ReleaseEnvironmentDefinitionReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("environmentDefinitionId")(environmentDefinitionId)
+    val __obj = js.Dynamic.literal(definitionId = definitionId, environmentDefinitionId = environmentDefinitionId)
+  
     __obj.asInstanceOf[ReleaseEnvironmentDefinitionReference]
   }
 }

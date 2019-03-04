@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "webpack-sources"
-version := "0.1-dt-20180625Z-006f0a"
+version := "0.1-dt-20180625Z-6310be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20180214Z-72965c",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-52dc03",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388")
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "source-list-map" % "v0.1.6-dt-20180214Z-3da838",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-39089e",
+  "org.scalablytyped" %%% "std" % "3.3-05be79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

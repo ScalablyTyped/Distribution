@@ -43,10 +43,7 @@ object TileInfoCreateOptions {
     size: scala.Int | scala.Double = null,
     spatialReference: SpatialReference = null
   ): TileInfoCreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (scales != null) __obj.updateDynamic("scales")(scales)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

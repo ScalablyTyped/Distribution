@@ -90,8 +90,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken {
     upload_protocol: java.lang.String = null,
     userView: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(userId = userId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

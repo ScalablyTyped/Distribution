@@ -24,13 +24,8 @@ object OptionalBuilder3 {
     od: js.Any,
     run: js.Function1[js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, js.Any], Optional[js.Any]]
   ): OptionalBuilder3[A, B, C, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("oa")(oa)
-    __obj.updateDynamic("ob")(ob)
-    __obj.updateDynamic("oc")(oc)
-    __obj.updateDynamic("od")(od)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(chain = chain, oa = oa, ob = ob, oc = oc, od = od, run = run)
+  
     __obj.asInstanceOf[OptionalBuilder3[A, B, C, D]]
   }
 }

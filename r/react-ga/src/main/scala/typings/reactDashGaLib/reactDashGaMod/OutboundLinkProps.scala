@@ -20,9 +20,7 @@ object OutboundLinkProps {
     onClick: js.Function = null,
     target: java.lang.String = null
   ): OutboundLinkProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventLabel")(eventLabel)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(eventLabel = eventLabel, to = to)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[OutboundLinkProps]

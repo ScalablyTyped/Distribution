@@ -19,8 +19,8 @@ trait GitPullRequestQueryInput extends js.Object {
 object GitPullRequestQueryInput {
   @scala.inline
   def apply(items: js.Array[java.lang.String], `type`: GitPullRequestQueryType): GitPullRequestQueryInput = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GitPullRequestQueryInput]
   }
 }

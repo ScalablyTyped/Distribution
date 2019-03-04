@@ -24,12 +24,7 @@ object Server {
     use: js.Function1[Middleware, Server],
     server: wsLib.wsMod.Server = null
   ): Server = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("middleware")(middleware)
-    __obj.updateDynamic("onConnection")(onConnection)
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(app = app, listen = listen, middleware = middleware, onConnection = onConnection, use = use)
     if (server != null) __obj.updateDynamic("server")(server)
     __obj.asInstanceOf[Server]
   }

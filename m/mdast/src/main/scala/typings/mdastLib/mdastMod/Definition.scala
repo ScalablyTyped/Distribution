@@ -25,9 +25,8 @@ object Definition {
     position: unistLib.unistMod.Position = null,
     title: java.lang.String = null
   ): Definition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(identifier = identifier, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (label != null) __obj.updateDynamic("label")(label)
     if (position != null) __obj.updateDynamic("position")(position)

@@ -22,12 +22,8 @@ object SchemaContext {
     schema: Schema,
     schemas: org.scalablytyped.runtime.StringDictionary[Schema]
   ): SchemaContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("propertyPath")(propertyPath)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("schemas")(schemas)
+    val __obj = js.Dynamic.literal(base = base, options = options, propertyPath = propertyPath, schema = schema, schemas = schemas)
+  
     __obj.asInstanceOf[SchemaContext]
   }
 }

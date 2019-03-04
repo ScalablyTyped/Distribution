@@ -13,9 +13,8 @@ trait Anon_SourceBucketName extends js.Object {
 object Anon_SourceBucketName {
   @scala.inline
   def apply(sourceBucketName: java.lang.String, sourceKey: java.lang.String): Anon_SourceBucketName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceBucketName")(sourceBucketName)
-    __obj.updateDynamic("sourceKey")(sourceKey)
+    val __obj = js.Dynamic.literal(sourceBucketName = sourceBucketName, sourceKey = sourceKey)
+  
     __obj.asInstanceOf[Anon_SourceBucketName]
   }
 }

@@ -22,10 +22,8 @@ object AccessControlException {
     LackingPermission: js.Any,
     Message: java.lang.String
   ): AccessControlException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("LackingPermission")(LackingPermission)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, LackingPermission = LackingPermission, Message = Message)
+  
     __obj.asInstanceOf[AccessControlException]
   }
 }

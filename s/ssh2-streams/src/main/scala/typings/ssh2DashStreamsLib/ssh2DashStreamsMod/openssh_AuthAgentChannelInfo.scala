@@ -20,10 +20,8 @@ object openssh_AuthAgentChannelInfo {
     `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`auth-agent@opensshDOTcom`,
     window: scala.Double
   ): openssh_AuthAgentChannelInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("packetSize")(packetSize)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(packetSize = packetSize, sender = sender, window = window)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[openssh_AuthAgentChannelInfo]
   }
 }

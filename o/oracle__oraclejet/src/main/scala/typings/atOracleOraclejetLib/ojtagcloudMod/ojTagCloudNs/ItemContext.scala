@@ -23,12 +23,8 @@ object ItemContext {
     tooltip: java.lang.String,
     value: scala.Double
   ): ItemContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(color = color, label = label, selected = selected, tooltip = tooltip, value = value)
+  
     __obj.asInstanceOf[ItemContext]
   }
 }

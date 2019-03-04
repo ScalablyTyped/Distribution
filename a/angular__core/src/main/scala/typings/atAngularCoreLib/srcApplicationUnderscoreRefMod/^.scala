@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val ALLOW_MULTIPLE_PLATFORMS: atAngularCoreLib.srcDiMod.InjectionToken[scala.Boolean] = js.native
   def assertPlatform(requiredToken: js.Any): atAngularCoreLib.srcApplicationUnderscoreRefMod.PlatformRef = js.native
-  def `compileNgModuleFactory__POST_R3__`[M](
+  def compileNgModuleFactory__POST_R3__[M](
     injector: atAngularCoreLib.srcDiMod.Injector,
     options: atAngularCoreLib.srcLinkerCompilerMod.CompilerOptions,
     moduleType: atAngularCoreLib.srcTypeMod.Type[M]

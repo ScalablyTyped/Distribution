@@ -51,8 +51,7 @@ object CompartmentDefinitionResource {
     modifierExtension: js.Array[Extension] = null,
     param: js.Array[java.lang.String] = null
   ): CompartmentDefinitionResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

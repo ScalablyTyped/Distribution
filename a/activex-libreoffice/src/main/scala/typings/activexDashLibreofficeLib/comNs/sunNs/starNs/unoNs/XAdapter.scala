@@ -34,13 +34,8 @@ object XAdapter {
     release: js.Function0[scala.Unit],
     removeReference: js.Function1[XReference, scala.Unit]
   ): XAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addReference")(addReference)
-    __obj.updateDynamic("queryAdapted")(queryAdapted)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeReference")(removeReference)
+    val __obj = js.Dynamic.literal(acquire = acquire, addReference = addReference, queryAdapted = queryAdapted, queryInterface = queryInterface, release = release, removeReference = removeReference)
+  
     __obj.asInstanceOf[XAdapter]
   }
 }

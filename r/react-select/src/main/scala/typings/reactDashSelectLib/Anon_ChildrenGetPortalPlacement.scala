@@ -36,15 +36,8 @@ object Anon_ChildrenGetPortalPlacement {
     menuShouldScrollIntoView: scala.Boolean,
     minMenuHeight: scala.Double
   ): Anon_ChildrenGetPortalPlacement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("getPortalPlacement")(getPortalPlacement)
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("maxMenuHeight")(maxMenuHeight)
-    __obj.updateDynamic("menuPlacement")(menuPlacement)
-    __obj.updateDynamic("menuPosition")(menuPosition)
-    __obj.updateDynamic("menuShouldScrollIntoView")(menuShouldScrollIntoView)
-    __obj.updateDynamic("minMenuHeight")(minMenuHeight)
+    val __obj = js.Dynamic.literal(children = children, getPortalPlacement = getPortalPlacement, innerProps = innerProps, maxMenuHeight = maxMenuHeight, menuPlacement = menuPlacement, menuPosition = menuPosition, menuShouldScrollIntoView = menuShouldScrollIntoView, minMenuHeight = minMenuHeight)
+  
     __obj.asInstanceOf[Anon_ChildrenGetPortalPlacement]
   }
 }

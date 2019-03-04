@@ -18,10 +18,8 @@ object Linux {
     Capabilities: js.Array[java.lang.String],
     Devices: js.Array[PluginDevice]
   ): Linux = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowAllDevices")(AllowAllDevices)
-    __obj.updateDynamic("Capabilities")(Capabilities)
-    __obj.updateDynamic("Devices")(Devices)
+    val __obj = js.Dynamic.literal(AllowAllDevices = AllowAllDevices, Capabilities = Capabilities, Devices = Devices)
+  
     __obj.asInstanceOf[Linux]
   }
 }

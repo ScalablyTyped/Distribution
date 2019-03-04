@@ -14,10 +14,8 @@ trait plupload_response extends js.Object {
 object plupload_response {
   @scala.inline
   def apply(response: java.lang.String, responseHeaders: java.lang.String, status: scala.Double): plupload_response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(response = response, responseHeaders = responseHeaders, status = status)
+  
     __obj.asInstanceOf[plupload_response]
   }
 }

@@ -46,11 +46,7 @@ object Anon_AltFieldsKeyNewLeaseSeconds {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyNewLeaseSeconds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newLeaseSeconds")(newLeaseSeconds)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("taskqueue")(taskqueue)
+    val __obj = js.Dynamic.literal(newLeaseSeconds = newLeaseSeconds, project = project, task = task, taskqueue = taskqueue)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

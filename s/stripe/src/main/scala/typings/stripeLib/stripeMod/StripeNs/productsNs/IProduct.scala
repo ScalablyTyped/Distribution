@@ -95,24 +95,9 @@ object IProduct {
     updated: scala.Double,
     url: java.lang.String
   ): IProduct = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("caption")(caption)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("deactivated_on")(deactivated_on)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("package_dimensions")(package_dimensions)
-    __obj.updateDynamic("shippable")(shippable)
-    __obj.updateDynamic("skus")(skus)
-    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    __obj.updateDynamic("updated")(updated)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(active = active, attributes = attributes, caption = caption, created = created, deactivated_on = deactivated_on, description = description, id = id, images = images, livemode = livemode, metadata = metadata, name = name, package_dimensions = package_dimensions, shippable = shippable, skus = skus, statement_descriptor = statement_descriptor, updated = updated, url = url)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IProduct]
   }
 }

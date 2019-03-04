@@ -20,11 +20,8 @@ object Anon_EncodingMessage {
     publicKey: nodeDashForgeLib.nodeDashForgeMod.pkiNs.ed25519Ns.NativeBuffer,
     signature: nodeLib.Buffer | stdLib.Uint8Array | nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer | java.lang.String
   ): Anon_EncodingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding, message = message, publicKey = publicKey.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EncodingMessage]
   }
 }

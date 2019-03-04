@@ -50,13 +50,7 @@ object Tombstone {
     ticksToDecay: scala.Double,
     room: Room = null
   ): Tombstone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creep")(creep)
-    __obj.updateDynamic("deathTime")(deathTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("ticksToDecay")(ticksToDecay)
+    val __obj = js.Dynamic.literal(creep = creep, deathTime = deathTime, id = id, pos = pos, store = store, ticksToDecay = ticksToDecay)
     if (room != null) __obj.updateDynamic("room")(room)
     __obj.asInstanceOf[Tombstone]
   }

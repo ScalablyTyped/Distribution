@@ -65,17 +65,8 @@ object SummaryStatisticsResult {
     sum: scala.Double,
     variance: scala.Double
   ): SummaryStatisticsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avg")(avg)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stddev")(stddev)
-    __obj.updateDynamic("sum")(sum)
-    __obj.updateDynamic("variance")(variance)
+    val __obj = js.Dynamic.literal(avg = avg, constructor = constructor, count = count, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable, stddev = stddev, sum = sum, variance = variance)
+  
     __obj.asInstanceOf[SummaryStatisticsResult]
   }
 }

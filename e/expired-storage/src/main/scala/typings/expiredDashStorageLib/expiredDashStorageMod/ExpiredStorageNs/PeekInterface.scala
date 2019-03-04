@@ -27,8 +27,7 @@ object PeekInterface {
     timeLeft: scala.Int | scala.Double = null,
     value: java.lang.String = null
   ): PeekInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isExpired")(isExpired)
+    val __obj = js.Dynamic.literal(isExpired = isExpired)
     if (timeLeft != null) __obj.updateDynamic("timeLeft")(timeLeft.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[PeekInterface]

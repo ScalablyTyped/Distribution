@@ -57,12 +57,7 @@ object Anon_AltExecutionIdFieldsHistoryIdKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltExecutionIdFieldsHistoryIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("executionId")(executionId)
-    __obj.updateDynamic("historyId")(historyId)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("sampleSeriesId")(sampleSeriesId)
-    __obj.updateDynamic("stepId")(stepId)
+    val __obj = js.Dynamic.literal(executionId = executionId, historyId = historyId, projectId = projectId, sampleSeriesId = sampleSeriesId, stepId = stepId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

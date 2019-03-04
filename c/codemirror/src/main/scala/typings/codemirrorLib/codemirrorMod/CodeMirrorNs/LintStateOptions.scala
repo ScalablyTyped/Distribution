@@ -35,9 +35,7 @@ object LintStateOptions {
       scala.Unit
     ] = null
   ): LintStateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("hasGutters")(hasGutters)
+    val __obj = js.Dynamic.literal(async = async, hasGutters = hasGutters)
     if (onUpdateLinting != null) __obj.updateDynamic("onUpdateLinting")(onUpdateLinting)
     __obj.asInstanceOf[LintStateOptions]
   }

@@ -73,8 +73,7 @@ object EvaluateParameterType {
     timeout: js.UndefOr[TimeDelta] = js.undefined,
     userGesture: js.UndefOr[scala.Boolean] = js.undefined
   ): EvaluateParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(expression = expression)
     if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
     if (!js.isUndefined(contextId)) __obj.updateDynamic("contextId")(contextId)
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)

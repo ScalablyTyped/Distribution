@@ -22,8 +22,7 @@ object ActionCodeSettings {
     handleCodeInApp: js.UndefOr[scala.Boolean] = js.undefined,
     iOS: firebaseLib.Anon_BundleId = null
   ): ActionCodeSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (android != null) __obj.updateDynamic("android")(android)
     if (dynamicLinkDomain != null) __obj.updateDynamic("dynamicLinkDomain")(dynamicLinkDomain)
     if (!js.isUndefined(handleCodeInApp)) __obj.updateDynamic("handleCodeInApp")(handleCodeInApp)

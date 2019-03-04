@@ -23,9 +23,7 @@ object PasswordCredentialData {
     iconURL: java.lang.String = null,
     name: java.lang.String = null
   ): PasswordCredentialData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(id = id, password = password)
     if (iconURL != null) __obj.updateDynamic("iconURL")(iconURL)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[PasswordCredentialData]

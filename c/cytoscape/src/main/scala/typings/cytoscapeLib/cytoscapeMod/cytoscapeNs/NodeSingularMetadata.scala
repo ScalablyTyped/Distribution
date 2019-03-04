@@ -33,10 +33,8 @@ object NodeSingularMetadata {
     indegree: js.Function1[scala.Boolean, scala.Double],
     outdegree: js.Function1[scala.Boolean, scala.Double]
   ): NodeSingularMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("degree")(degree)
-    __obj.updateDynamic("indegree")(indegree)
-    __obj.updateDynamic("outdegree")(outdegree)
+    val __obj = js.Dynamic.literal(degree = degree, indegree = indegree, outdegree = outdegree)
+  
     __obj.asInstanceOf[NodeSingularMetadata]
   }
 }

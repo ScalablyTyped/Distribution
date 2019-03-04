@@ -12,8 +12,8 @@ trait Result extends js.Object {
 object Result {
   @scala.inline
   def apply(`type`: java.lang.String): Result = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Result]
   }
 }

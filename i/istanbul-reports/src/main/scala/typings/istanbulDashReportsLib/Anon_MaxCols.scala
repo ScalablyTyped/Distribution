@@ -12,8 +12,8 @@ trait Anon_MaxCols extends js.Object {
 object Anon_MaxCols {
   @scala.inline
   def apply(maxCols: scala.Double): Anon_MaxCols = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxCols")(maxCols)
+    val __obj = js.Dynamic.literal(maxCols = maxCols)
+  
     __obj.asInstanceOf[Anon_MaxCols]
   }
 }

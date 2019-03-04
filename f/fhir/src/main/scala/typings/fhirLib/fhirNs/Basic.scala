@@ -59,8 +59,7 @@ object Basic {
     subject: Reference = null,
     text: Narrative = null
   ): Basic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_created != null) __obj.updateDynamic("_created")(_created)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

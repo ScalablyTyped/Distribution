@@ -24,9 +24,8 @@ object HttpDeployment {
     customDomainNames: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]],
     url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
   ): HttpDeployment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customDomainNames")(customDomainNames)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(customDomainNames = customDomainNames, url = url)
+  
     __obj.asInstanceOf[HttpDeployment]
   }
 }

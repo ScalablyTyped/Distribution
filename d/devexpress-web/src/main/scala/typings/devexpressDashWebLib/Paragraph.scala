@@ -57,14 +57,8 @@ object Paragraph {
     start: scala.Double,
     styleName: java.lang.String
   ): Paragraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("listIndex")(listIndex)
-    __obj.updateDynamic("listLevelIndex")(listLevelIndex)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("styleName")(styleName)
+    val __obj = js.Dynamic.literal(index = index, interval = interval, length = length, listIndex = listIndex, listLevelIndex = listLevelIndex, start = start, styleName = styleName)
+  
     __obj.asInstanceOf[Paragraph]
   }
 }

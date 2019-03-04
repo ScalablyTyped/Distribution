@@ -28,15 +28,8 @@ object Locals {
     style: java.lang.String,
     viewName: java.lang.String
   ): Locals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("displayIcons")(displayIcons)
-    __obj.updateDynamic("fileList")(fileList)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stat")(stat)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("viewName")(viewName)
+    val __obj = js.Dynamic.literal(directory = directory, displayIcons = displayIcons, fileList = fileList, name = name, path = path, stat = stat, style = style, viewName = viewName)
+  
     __obj.asInstanceOf[Locals]
   }
 }

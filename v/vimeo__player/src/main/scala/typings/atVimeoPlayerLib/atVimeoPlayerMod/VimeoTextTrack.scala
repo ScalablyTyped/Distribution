@@ -20,10 +20,7 @@ object VimeoTextTrack {
     language: java.lang.String,
     mode: java.lang.String = null
   ): VimeoTextTrack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(kind = kind, label = label, language = language)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     __obj.asInstanceOf[VimeoTextTrack]
   }

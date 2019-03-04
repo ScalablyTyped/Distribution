@@ -34,18 +34,8 @@ object ICallControl {
     onkeypadpressed: js.Any,
     onredialrequested: js.Any
   ): ICallControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endCall")(endCall)
-    __obj.updateDynamic("hasRinger")(hasRinger)
-    __obj.updateDynamic("indicateActiveCall")(indicateActiveCall)
-    __obj.updateDynamic("indicateNewIncomingCall")(indicateNewIncomingCall)
-    __obj.updateDynamic("indicateNewOutgoingCall")(indicateNewOutgoingCall)
-    __obj.updateDynamic("onanswerrequested")(onanswerrequested)
-    __obj.updateDynamic("onaudiotransferrequested")(onaudiotransferrequested)
-    __obj.updateDynamic("ondialrequested")(ondialrequested)
-    __obj.updateDynamic("onhanguprequested")(onhanguprequested)
-    __obj.updateDynamic("onkeypadpressed")(onkeypadpressed)
-    __obj.updateDynamic("onredialrequested")(onredialrequested)
+    val __obj = js.Dynamic.literal(endCall = endCall, hasRinger = hasRinger, indicateActiveCall = indicateActiveCall, indicateNewIncomingCall = indicateNewIncomingCall, indicateNewOutgoingCall = indicateNewOutgoingCall, onanswerrequested = onanswerrequested, onaudiotransferrequested = onaudiotransferrequested, ondialrequested = ondialrequested, onhanguprequested = onhanguprequested, onkeypadpressed = onkeypadpressed, onredialrequested = onredialrequested)
+  
     __obj.asInstanceOf[ICallControl]
   }
 }

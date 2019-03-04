@@ -45,11 +45,8 @@ object DirectionsResponse {
     routes: js.Array[DirectionsRoute],
     status: DirectionsReponseStatus
   ): DirectionsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available_travel_modes")(available_travel_modes)
-    __obj.updateDynamic("geocoded_waypoints")(geocoded_waypoints)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(available_travel_modes = available_travel_modes, geocoded_waypoints = geocoded_waypoints, routes = routes, status = status)
+  
     __obj.asInstanceOf[DirectionsResponse]
   }
 }

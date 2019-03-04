@@ -58,10 +58,7 @@ object InvoiceItemCreationOptions {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     subscription: java.lang.String = null
   ): InvoiceItemCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("customer")(customer)
+    val __obj = js.Dynamic.literal(amount = amount, currency = currency, customer = customer)
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable)
     if (expand != null) __obj.updateDynamic("expand")(expand)

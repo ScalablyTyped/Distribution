@@ -13,8 +13,7 @@ trait Anon_BufferEncodingFalse extends js.Object {
 object Anon_BufferEncodingFalse {
   @scala.inline
   def apply(encoding: nodeLib.nodeLibStrings.buffer, withFileTypes: nodeLib.nodeLibNumbers.`false` = null): Anon_BufferEncodingFalse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (withFileTypes != null) __obj.updateDynamic("withFileTypes")(withFileTypes)
     __obj.asInstanceOf[Anon_BufferEncodingFalse]
   }

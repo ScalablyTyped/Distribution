@@ -19,9 +19,8 @@ object ComposeActionResponseBuilder {
       ComposeActionResponseBuilder
     ]
   ): ComposeActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setGmailDraft")(setGmailDraft)
+    val __obj = js.Dynamic.literal(build = build, setGmailDraft = setGmailDraft)
+  
     __obj.asInstanceOf[ComposeActionResponseBuilder]
   }
 }

@@ -32,17 +32,8 @@ object DKIMKey {
     SafeToRemoveRevokedKeyFromDNS: scala.Boolean,
     WeakDKIM: scala.Boolean
   ): DKIMKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DKIMHost")(DKIMHost)
-    __obj.updateDynamic("DKIMPendingHost")(DKIMPendingHost)
-    __obj.updateDynamic("DKIMPendingTextValue")(DKIMPendingTextValue)
-    __obj.updateDynamic("DKIMRevokedHost")(DKIMRevokedHost)
-    __obj.updateDynamic("DKIMRevokedTextValue")(DKIMRevokedTextValue)
-    __obj.updateDynamic("DKIMTextValue")(DKIMTextValue)
-    __obj.updateDynamic("DKIMUpdateStatus")(DKIMUpdateStatus)
-    __obj.updateDynamic("DKIMVerified")(DKIMVerified)
-    __obj.updateDynamic("SafeToRemoveRevokedKeyFromDNS")(SafeToRemoveRevokedKeyFromDNS)
-    __obj.updateDynamic("WeakDKIM")(WeakDKIM)
+    val __obj = js.Dynamic.literal(DKIMHost = DKIMHost, DKIMPendingHost = DKIMPendingHost, DKIMPendingTextValue = DKIMPendingTextValue, DKIMRevokedHost = DKIMRevokedHost, DKIMRevokedTextValue = DKIMRevokedTextValue, DKIMTextValue = DKIMTextValue, DKIMUpdateStatus = DKIMUpdateStatus, DKIMVerified = DKIMVerified, SafeToRemoveRevokedKeyFromDNS = SafeToRemoveRevokedKeyFromDNS, WeakDKIM = WeakDKIM)
+  
     __obj.asInstanceOf[DKIMKey]
   }
 }

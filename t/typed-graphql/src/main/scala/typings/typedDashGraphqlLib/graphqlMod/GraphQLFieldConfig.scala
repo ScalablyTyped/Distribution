@@ -22,7 +22,8 @@ object GraphQLFieldConfig {
     description: java.lang.String = null,
     resolve: GraphQLFieldResolveFn = null
   ): GraphQLFieldConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (args != null) __obj.updateDynamic("args")(args)
     if (deprecationReason != null) __obj.updateDynamic("deprecationReason")(deprecationReason)
     if (description != null) __obj.updateDynamic("description")(description)

@@ -56,29 +56,8 @@ object TestPoint {
     url: java.lang.String,
     workItemProperties: js.Array[_]
   ): TestPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("automated")(automated)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("failureType")(failureType)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastResolutionStateId")(lastResolutionStateId)
-    __obj.updateDynamic("lastResult")(lastResult)
-    __obj.updateDynamic("lastResultDetails")(lastResultDetails)
-    __obj.updateDynamic("lastResultState")(lastResultState)
-    __obj.updateDynamic("lastRunBuildNumber")(lastRunBuildNumber)
-    __obj.updateDynamic("lastTestRun")(lastTestRun)
-    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("suite")(suite)
-    __obj.updateDynamic("testCase")(testCase)
-    __obj.updateDynamic("testPlan")(testPlan)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemProperties")(workItemProperties)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, automated = automated, comment = comment, configuration = configuration, failureType = failureType, id = id, lastResolutionStateId = lastResolutionStateId, lastResult = lastResult, lastResultDetails = lastResultDetails, lastResultState = lastResultState, lastRunBuildNumber = lastRunBuildNumber, lastTestRun = lastTestRun, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, outcome = outcome, revision = revision, state = state, suite = suite, testCase = testCase, testPlan = testPlan, url = url, workItemProperties = workItemProperties)
+  
     __obj.asInstanceOf[TestPoint]
   }
 }

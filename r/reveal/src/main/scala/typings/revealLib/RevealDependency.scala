@@ -21,8 +21,7 @@ object RevealDependency {
     callback: js.Function0[scala.Unit] = null,
     condition: js.Function0[scala.Boolean] = null
   ): RevealDependency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (condition != null) __obj.updateDynamic("condition")(condition)

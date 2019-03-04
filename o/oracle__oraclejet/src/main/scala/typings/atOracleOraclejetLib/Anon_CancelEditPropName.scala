@@ -18,9 +18,7 @@ object Anon_CancelEditPropName {
     rowContext: js.Object,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_CancelEditPropName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelEdit")(cancelEdit)
-    __obj.updateDynamic("rowContext")(rowContext)
+    val __obj = js.Dynamic.literal(cancelEdit = cancelEdit, rowContext = rowContext)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_CancelEditPropName]
   }

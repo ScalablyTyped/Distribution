@@ -17,13 +17,8 @@ trait Anon_Family extends js.Object {
 object Anon_Family {
   @scala.inline
   def apply(family: js.Any, size: js.Any, stretch: js.Any, style: js.Any, variant: js.Any, weight: js.Any): Anon_Family = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("stretch")(stretch)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("variant")(variant)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(family = family, size = size, stretch = stretch, style = style, variant = variant, weight = weight)
+  
     __obj.asInstanceOf[Anon_Family]
   }
 }

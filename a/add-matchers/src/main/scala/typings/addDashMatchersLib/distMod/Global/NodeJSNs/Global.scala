@@ -12,8 +12,8 @@ trait Global extends js.Object {
 object Global {
   @scala.inline
   def apply(any: org.scalablytyped.runtime.StringDictionary[js.Any]): Global = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("any")(any)
+    val __obj = js.Dynamic.literal(any = any)
+  
     __obj.asInstanceOf[Global]
   }
 }

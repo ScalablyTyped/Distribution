@@ -18,8 +18,7 @@ object Anon_FileName {
     fileName: java.lang.String = null,
     toDataURL: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_FileName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)
     if (!js.isUndefined(toDataURL)) __obj.updateDynamic("toDataURL")(toDataURL)
     __obj.asInstanceOf[Anon_FileName]

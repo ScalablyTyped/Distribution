@@ -19,10 +19,8 @@ trait ASPxClientHtmlEditorCustomDialogClosingEventArgs extends ASPxClientHtmlEdi
 object ASPxClientHtmlEditorCustomDialogClosingEventArgs {
   @scala.inline
   def apply(handled: scala.Boolean, name: java.lang.String, status: js.Object): ASPxClientHtmlEditorCustomDialogClosingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(handled = handled, name = name, status = status)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosingEventArgs]
   }
 }

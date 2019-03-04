@@ -30,16 +30,8 @@ object Types {
     RECTANGLE: flowdocLib.flowdocLibStrings.RECT,
     SCREEN: flowdocLib.flowdocLibStrings.SCREEN
   ): Types = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DIAMOND")(DIAMOND)
-    __obj.updateDynamic("DOCUMENT")(DOCUMENT)
-    __obj.updateDynamic("ELLIPSE")(ELLIPSE)
-    __obj.updateDynamic("HOTSPOT")(HOTSPOT)
-    __obj.updateDynamic("IMAGE")(IMAGE)
-    __obj.updateDynamic("LAYER")(LAYER)
-    __obj.updateDynamic("PAGE")(PAGE)
-    __obj.updateDynamic("RECTANGLE")(RECTANGLE)
-    __obj.updateDynamic("SCREEN")(SCREEN)
+    val __obj = js.Dynamic.literal(DIAMOND = DIAMOND, DOCUMENT = DOCUMENT, ELLIPSE = ELLIPSE, HOTSPOT = HOTSPOT, IMAGE = IMAGE, LAYER = LAYER, PAGE = PAGE, RECTANGLE = RECTANGLE, SCREEN = SCREEN)
+  
     __obj.asInstanceOf[Types]
   }
 }

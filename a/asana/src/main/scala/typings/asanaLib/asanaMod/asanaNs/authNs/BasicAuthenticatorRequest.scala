@@ -12,8 +12,8 @@ trait BasicAuthenticatorRequest extends js.Object {
 object BasicAuthenticatorRequest {
   @scala.inline
   def apply(auth: asanaLib.Anon_Password): BasicAuthenticatorRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
+    val __obj = js.Dynamic.literal(auth = auth)
+  
     __obj.asInstanceOf[BasicAuthenticatorRequest]
   }
 }

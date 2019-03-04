@@ -54,13 +54,8 @@ object DaemonSetSpec {
     templateGeneration: scala.Double,
     updateStrategy: DaemonSetUpdateStrategy
   ): DaemonSetSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minReadySeconds")(minReadySeconds)
-    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("templateGeneration")(templateGeneration)
-    __obj.updateDynamic("updateStrategy")(updateStrategy)
+    val __obj = js.Dynamic.literal(minReadySeconds = minReadySeconds, revisionHistoryLimit = revisionHistoryLimit, selector = selector, template = template, templateGeneration = templateGeneration, updateStrategy = updateStrategy)
+  
     __obj.asInstanceOf[DaemonSetSpec]
   }
 }

@@ -23,12 +23,8 @@ object Equalizer {
     getHeights: js.Function1[js.Function, js.Array[_]],
     getHeightsByRow: js.Function1[js.Function, js.Array[_]]
   ): Equalizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyHeight")(applyHeight)
-    __obj.updateDynamic("applyHeightByRow")(applyHeightByRow)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getHeights")(getHeights)
-    __obj.updateDynamic("getHeightsByRow")(getHeightsByRow)
+    val __obj = js.Dynamic.literal(applyHeight = applyHeight, applyHeightByRow = applyHeightByRow, destroy = destroy, getHeights = getHeights, getHeightsByRow = getHeightsByRow)
+  
     __obj.asInstanceOf[Equalizer]
   }
 }

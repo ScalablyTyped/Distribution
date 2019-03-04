@@ -20,11 +20,8 @@ object Switch {
     setSelected: js.Function1[scala.Boolean, Switch],
     setValue: js.Function1[java.lang.String, Switch]
   ): Switch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFieldName")(setFieldName)
-    __obj.updateDynamic("setOnChangeAction")(setOnChangeAction)
-    __obj.updateDynamic("setSelected")(setSelected)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(setFieldName = setFieldName, setOnChangeAction = setOnChangeAction, setSelected = setSelected, setValue = setValue)
+  
     __obj.asInstanceOf[Switch]
   }
 }

@@ -20,8 +20,7 @@ object WriteOptions {
     featureProjection: openlayersLib.openlayersMod.ProjectionLike = null,
     rightHanded: js.UndefOr[scala.Boolean] = js.undefined
   ): WriteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataProjection = dataProjection.asInstanceOf[js.Any])
     if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
     if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
     if (!js.isUndefined(rightHanded)) __obj.updateDynamic("rightHanded")(rightHanded)

@@ -31,10 +31,8 @@ object ASPxClientSideParametersModel {
     submit: js.Function0[scala.Unit],
     tabInfo: ASPxClientDocumentPreviewTab
   ): ASPxClientSideParametersModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serializeParameters")(serializeParameters)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("tabInfo")(tabInfo)
+    val __obj = js.Dynamic.literal(serializeParameters = serializeParameters, submit = submit, tabInfo = tabInfo)
+  
     __obj.asInstanceOf[ASPxClientSideParametersModel]
   }
 }

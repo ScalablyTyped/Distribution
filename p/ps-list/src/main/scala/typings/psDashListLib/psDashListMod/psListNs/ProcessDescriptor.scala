@@ -24,10 +24,7 @@ object ProcessDescriptor {
     cpu: scala.Int | scala.Double = null,
     memory: scala.Int | scala.Double = null
   ): ProcessDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("ppid")(ppid)
+    val __obj = js.Dynamic.literal(name = name, pid = pid, ppid = ppid)
     if (cmd != null) __obj.updateDynamic("cmd")(cmd)
     if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])

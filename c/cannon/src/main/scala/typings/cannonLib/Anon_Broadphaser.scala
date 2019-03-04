@@ -22,12 +22,8 @@ object Anon_Broadphaser {
     narrowphase: scala.Double,
     solve: scala.Double
   ): Anon_Broadphaser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("broadphaser")(broadphaser)
-    __obj.updateDynamic("integrate")(integrate)
-    __obj.updateDynamic("makeContactConstraints")(makeContactConstraints)
-    __obj.updateDynamic("narrowphase")(narrowphase)
-    __obj.updateDynamic("solve")(solve)
+    val __obj = js.Dynamic.literal(broadphaser = broadphaser, integrate = integrate, makeContactConstraints = makeContactConstraints, narrowphase = narrowphase, solve = solve)
+  
     __obj.asInstanceOf[Anon_Broadphaser]
   }
 }

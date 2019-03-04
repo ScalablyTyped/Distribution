@@ -25,13 +25,8 @@ object NavItemView {
     remove: js.Function0[scala.Unit],
     setCollapsed: js.Function1[scala.Boolean, scala.Unit]
   ): NavItemView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNavItem")(addNavItem)
-    __obj.updateDynamic("destroyed")(destroyed)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
+    val __obj = js.Dynamic.literal(addNavItem = addNavItem, destroyed = destroyed, isCollapsed = isCollapsed, remove = remove, setCollapsed = setCollapsed)
     __obj.updateDynamic("on")(on_destroy)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setCollapsed")(setCollapsed)
     __obj.asInstanceOf[NavItemView]
   }
 }

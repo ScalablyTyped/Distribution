@@ -40,10 +40,8 @@ trait INxSelectionCell extends js.Object {
 object INxSelectionCell {
   @scala.inline
   def apply(qCol: scala.Double, qRow: scala.Double, qType: NxSelectionCellType): INxSelectionCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCol")(qCol)
-    __obj.updateDynamic("qRow")(qRow)
-    __obj.updateDynamic("qType")(qType)
+    val __obj = js.Dynamic.literal(qCol = qCol, qRow = qRow, qType = qType)
+  
     __obj.asInstanceOf[INxSelectionCell]
   }
 }

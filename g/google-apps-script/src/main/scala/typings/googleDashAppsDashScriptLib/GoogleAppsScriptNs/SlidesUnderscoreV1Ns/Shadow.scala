@@ -44,14 +44,8 @@ object Shadow {
     transform: AffineTransform,
     `type`: ShadowType
   ): Shadow = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("blur_radius")(blur_radius)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("property_state")(property_state)
-    __obj.updateDynamic("rotate_with_shape")(rotate_with_shape)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(alignment = alignment, alpha = alpha, blur_radius = blur_radius, color = color, property_state = property_state, rotate_with_shape = rotate_with_shape, transform = transform)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Shadow]
   }
 }

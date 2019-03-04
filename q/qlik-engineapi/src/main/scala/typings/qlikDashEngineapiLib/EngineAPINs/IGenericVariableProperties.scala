@@ -49,11 +49,7 @@ object IGenericVariableProperties {
     qComment: java.lang.String = null,
     qNumberPresentation: IFieldAttributes = null
   ): IGenericVariableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDefinition")(qDefinition)
-    __obj.updateDynamic("qIncludeInBookmark")(qIncludeInBookmark)
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qDefinition = qDefinition, qIncludeInBookmark = qIncludeInBookmark, qInfo = qInfo, qName = qName)
     if (qComment != null) __obj.updateDynamic("qComment")(qComment)
     if (qNumberPresentation != null) __obj.updateDynamic("qNumberPresentation")(qNumberPresentation)
     __obj.asInstanceOf[IGenericVariableProperties]

@@ -22,13 +22,8 @@ object WorkItemComment {
     text: java.lang.String,
     url: java.lang.String
   ): WorkItemComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("revisedBy")(revisedBy)
-    __obj.updateDynamic("revisedDate")(revisedDate)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, revisedBy = revisedBy, revisedDate = revisedDate, revision = revision, text = text, url = url)
+  
     __obj.asInstanceOf[WorkItemComment]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Suffix extends js.Object {
 object Anon_Suffix {
   @scala.inline
   def apply(suffix: java.lang.String | scala.Boolean): Anon_Suffix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(suffix = suffix.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Suffix]
   }
 }

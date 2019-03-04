@@ -13,8 +13,7 @@ trait MockOptions extends js.Object {
 object MockOptions {
   @scala.inline
   def apply(url: java.lang.String, times: scala.Int | scala.Double = null): MockOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (times != null) __obj.updateDynamic("times")(times.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockOptions]
   }

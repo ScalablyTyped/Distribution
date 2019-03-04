@@ -22,12 +22,8 @@ object Colors {
     tag: prettyDashFormatLib.Anon_Close,
     value: prettyDashFormatLib.Anon_Close
   ): Colors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("prop")(prop)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(comment = comment, content = content, prop = prop, tag = tag, value = value)
+  
     __obj.asInstanceOf[Colors]
   }
 }

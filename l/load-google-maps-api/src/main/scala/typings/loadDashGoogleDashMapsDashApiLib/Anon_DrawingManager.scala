@@ -14,8 +14,8 @@ object Anon_DrawingManager {
   def apply(
     DrawingManager: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.drawingNs.DrawingManager]
   ): Anon_DrawingManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DrawingManager")(DrawingManager)
+    val __obj = js.Dynamic.literal(DrawingManager = DrawingManager)
+  
     __obj.asInstanceOf[Anon_DrawingManager]
   }
 }

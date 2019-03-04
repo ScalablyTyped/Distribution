@@ -54,16 +54,8 @@ object GetVpcEndpointServiceResult {
     serviceType: java.lang.String,
     vpcEndpointPolicySupported: scala.Boolean
   ): GetVpcEndpointServiceResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptanceRequired")(acceptanceRequired)
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("baseEndpointDnsNames")(baseEndpointDnsNames)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("privateDnsName")(privateDnsName)
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("serviceType")(serviceType)
-    __obj.updateDynamic("vpcEndpointPolicySupported")(vpcEndpointPolicySupported)
+    val __obj = js.Dynamic.literal(acceptanceRequired = acceptanceRequired, availabilityZones = availabilityZones, baseEndpointDnsNames = baseEndpointDnsNames, id = id, owner = owner, privateDnsName = privateDnsName, serviceName = serviceName, serviceType = serviceType, vpcEndpointPolicySupported = vpcEndpointPolicySupported)
+  
     __obj.asInstanceOf[GetVpcEndpointServiceResult]
   }
 }

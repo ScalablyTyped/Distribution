@@ -20,8 +20,7 @@ object EveryRepeatOptions {
     limit: scala.Int | scala.Double = null,
     tz: java.lang.String = null
   ): EveryRepeatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("every")(every)
+    val __obj = js.Dynamic.literal(every = every)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (tz != null) __obj.updateDynamic("tz")(tz)

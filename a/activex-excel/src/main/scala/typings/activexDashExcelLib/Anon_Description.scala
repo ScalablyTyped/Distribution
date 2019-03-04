@@ -20,11 +20,8 @@ object Anon_Description {
     Success: scala.Boolean,
     Wb: activexDashExcelLib.ExcelNs.Workbook
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Sheet")(Sheet)
-    __obj.updateDynamic("Success")(Success)
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(Description = Description, Sheet = Sheet, Success = Success, Wb = Wb)
+  
     __obj.asInstanceOf[Anon_Description]
   }
 }

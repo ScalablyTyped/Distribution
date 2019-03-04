@@ -47,7 +47,8 @@ object IGeoJsonObject {
     id: js.Any = null,
     properties: js.Any = null
   ): IGeoJsonObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
     if (features != null) __obj.updateDynamic("features")(features)
     if (geometries != null) __obj.updateDynamic("geometries")(geometries)

@@ -19,10 +19,8 @@ trait Anon_Default extends js.Object {
 object Anon_DEFAULT {
   @scala.inline
   def apply(DEFAULT: scala.Double, DYNAMIC: scala.Double, STATIC: scala.Double): Anon_DEFAULT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT")(DEFAULT)
-    __obj.updateDynamic("DYNAMIC")(DYNAMIC)
-    __obj.updateDynamic("STATIC")(STATIC)
+    val __obj = js.Dynamic.literal(DEFAULT = DEFAULT, DYNAMIC = DYNAMIC, STATIC = STATIC)
+  
     __obj.asInstanceOf[Anon_DEFAULT]
   }
 }
@@ -30,9 +28,8 @@ object Anon_DEFAULT {
 object Anon_Default {
   @scala.inline
   def apply(default: java.lang.String, pointer: java.lang.String): Anon_Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("pointer")(pointer)
+    val __obj = js.Dynamic.literal(default = default, pointer = pointer)
+  
     __obj.asInstanceOf[Anon_Default]
   }
 }

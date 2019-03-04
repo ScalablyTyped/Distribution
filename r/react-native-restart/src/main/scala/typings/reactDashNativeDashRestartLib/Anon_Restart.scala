@@ -12,8 +12,8 @@ trait Anon_Restart extends js.Object {
 object Anon_Restart {
   @scala.inline
   def apply(Restart: js.Function0[scala.Unit]): Anon_Restart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Restart")(Restart)
+    val __obj = js.Dynamic.literal(Restart = Restart)
+  
     __obj.asInstanceOf[Anon_Restart]
   }
 }

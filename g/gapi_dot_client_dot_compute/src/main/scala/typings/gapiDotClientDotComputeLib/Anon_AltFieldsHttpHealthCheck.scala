@@ -54,9 +54,7 @@ object Anon_AltFieldsHttpHealthCheck {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsHttpHealthCheck = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpHealthCheck")(httpHealthCheck)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(httpHealthCheck = httpHealthCheck, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

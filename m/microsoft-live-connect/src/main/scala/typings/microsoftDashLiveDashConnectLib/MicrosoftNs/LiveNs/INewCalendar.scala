@@ -22,8 +22,7 @@ trait INewCalendar extends js.Object {
 object INewCalendar {
   @scala.inline
   def apply(name: java.lang.String, description: java.lang.String = null): INewCalendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[INewCalendar]
   }

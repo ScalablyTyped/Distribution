@@ -23,8 +23,8 @@ object Animation {
       scala.Double
     ]
   ): Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("camera")(camera)
+    val __obj = js.Dynamic.literal(camera = camera)
+  
     __obj.asInstanceOf[Animation]
   }
 }

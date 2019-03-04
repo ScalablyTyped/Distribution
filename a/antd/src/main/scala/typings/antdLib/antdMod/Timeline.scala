@@ -14,15 +14,7 @@ class Timeline ()
 @JSImport("antd", "Timeline")
 @js.native
 object Timeline extends js.Object {
-  @JSName("Item")
-  var Item_Original: reactLib.reactMod.ReactNs.SFC[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = js.native
+  var Item: reactLib.reactMod.ReactNs.SFC[antdLib.libTimelineTimelineItemMod.TimeLineItemProps] = js.native
   var defaultProps: antdLib.Anon_Mode = js.native
-  def Item(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[antdLib.libTimelineTimelineItemMod.TimeLineItemProps]
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def Item(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[antdLib.libTimelineTimelineItemMod.TimeLineItemProps],
-    context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

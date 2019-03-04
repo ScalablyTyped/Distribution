@@ -20,8 +20,7 @@ object Anon_Persistent {
       firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.PersistentBackgroundProperty
     ] = js.undefined
   ): Anon_Persistent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scripts")(scripts)
+    val __obj = js.Dynamic.literal(scripts = scripts)
     if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
     __obj.asInstanceOf[Anon_Persistent]
   }

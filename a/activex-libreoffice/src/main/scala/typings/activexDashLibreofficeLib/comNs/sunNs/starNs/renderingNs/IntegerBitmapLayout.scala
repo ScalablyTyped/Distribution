@@ -79,14 +79,8 @@ object IntegerBitmapLayout {
     ScanLineStride: scala.Double,
     ScanLines: scala.Double
   ): IntegerBitmapLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColorSpace")(ColorSpace)
-    __obj.updateDynamic("IsMsbFirst")(IsMsbFirst)
-    __obj.updateDynamic("Palette")(Palette)
-    __obj.updateDynamic("PlaneStride")(PlaneStride)
-    __obj.updateDynamic("ScanLineBytes")(ScanLineBytes)
-    __obj.updateDynamic("ScanLineStride")(ScanLineStride)
-    __obj.updateDynamic("ScanLines")(ScanLines)
+    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, IsMsbFirst = IsMsbFirst, Palette = Palette, PlaneStride = PlaneStride, ScanLineBytes = ScanLineBytes, ScanLineStride = ScanLineStride, ScanLines = ScanLines)
+  
     __obj.asInstanceOf[IntegerBitmapLayout]
   }
 }

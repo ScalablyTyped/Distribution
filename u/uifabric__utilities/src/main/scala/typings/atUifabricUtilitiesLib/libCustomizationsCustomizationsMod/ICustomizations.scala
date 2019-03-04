@@ -18,9 +18,7 @@ object ICustomizations {
     settings: ISettings,
     inCustomizerContext: js.UndefOr[scala.Boolean] = js.undefined
   ): ICustomizations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scopedSettings")(scopedSettings)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(scopedSettings = scopedSettings, settings = settings)
     if (!js.isUndefined(inCustomizerContext)) __obj.updateDynamic("inCustomizerContext")(inCustomizerContext)
     __obj.asInstanceOf[ICustomizations]
   }

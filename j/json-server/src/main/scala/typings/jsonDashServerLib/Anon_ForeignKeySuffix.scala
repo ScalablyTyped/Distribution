@@ -12,8 +12,8 @@ trait Anon_ForeignKeySuffix extends js.Object {
 object Anon_ForeignKeySuffix {
   @scala.inline
   def apply(foreignKeySuffix: java.lang.String): Anon_ForeignKeySuffix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foreignKeySuffix")(foreignKeySuffix)
+    val __obj = js.Dynamic.literal(foreignKeySuffix = foreignKeySuffix)
+  
     __obj.asInstanceOf[Anon_ForeignKeySuffix]
   }
 }

@@ -13,9 +13,8 @@ trait LocationCoordinates extends js.Object {
 object LocationCoordinates {
   @scala.inline
   def apply(latitude: scala.Double, longitude: scala.Double): LocationCoordinates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
+  
     __obj.asInstanceOf[LocationCoordinates]
   }
 }

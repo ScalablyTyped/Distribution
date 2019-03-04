@@ -34,18 +34,8 @@ object FlashXMLUI {
     setEnabled: js.Function0[js.Any],
     setVisible: js.Function0[js.Any]
   ): FlashXMLUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getControlItemElement")(getControlItemElement)
-    __obj.updateDynamic("getEnabled")(getEnabled)
-    __obj.updateDynamic("getVisible")(getVisible)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setControItemElement")(setControItemElement)
-    __obj.updateDynamic("setControItemElements")(setControItemElements)
-    __obj.updateDynamic("setEnabled")(setEnabled)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(accept = accept, cancel = cancel, get = get, getControlItemElement = getControlItemElement, getEnabled = getEnabled, getVisible = getVisible, set = set, setControItemElement = setControItemElement, setControItemElements = setControItemElements, setEnabled = setEnabled, setVisible = setVisible)
+  
     __obj.asInstanceOf[FlashXMLUI]
   }
 }

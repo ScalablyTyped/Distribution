@@ -27,9 +27,8 @@ object OnScrollListener {
     ],
     onScrollStateChanged: js.Function2[androiduixLib.androidNs.widgetNs.AbsListView, scala.Double, scala.Unit]
   ): OnScrollListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("onScrollStateChanged")(onScrollStateChanged)
+    val __obj = js.Dynamic.literal(onScroll = onScroll, onScrollStateChanged = onScrollStateChanged)
+  
     __obj.asInstanceOf[OnScrollListener]
   }
 }

@@ -12,8 +12,8 @@ trait StatusProps extends js.Object {
 object StatusProps {
   @scala.inline
   def apply(code: java.lang.String): StatusProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
+  
     __obj.asInstanceOf[StatusProps]
   }
 }

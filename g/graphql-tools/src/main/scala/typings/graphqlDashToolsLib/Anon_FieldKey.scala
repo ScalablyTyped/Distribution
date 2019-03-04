@@ -16,9 +16,8 @@ object Anon_FieldKey {
     field: graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     objectType: (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | graphqlLib.graphqlMod.GraphQLInterfaceType
   ): Anon_FieldKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field, objectType = objectType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FieldKey]
   }
 }

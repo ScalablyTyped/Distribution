@@ -25,8 +25,8 @@ object Doctype {
     public: java.lang.String = null,
     system: java.lang.String = null
   ): Doctype = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     if (public != null) __obj.updateDynamic("public")(public)

@@ -21,12 +21,8 @@ object WorkItemRelationType {
     referenceName: java.lang.String,
     url: java.lang.String
   ): WorkItemRelationType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, attributes = attributes, name = name, referenceName = referenceName, url = url)
+  
     __obj.asInstanceOf[WorkItemRelationType]
   }
 }

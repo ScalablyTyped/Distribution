@@ -21,9 +21,7 @@ object ExtendedAttributes {
     name: java.lang.String,
     rhs: ExtendedAttributeRightHandSideIdentifier | ExtendedAttributeRightHandSideIdentifierList = null
   ): ExtendedAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(arguments = arguments, name = name)
     if (rhs != null) __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedAttributes]
   }

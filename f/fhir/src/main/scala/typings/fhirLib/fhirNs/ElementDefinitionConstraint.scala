@@ -90,11 +90,7 @@ object ElementDefinitionConstraint {
     source: uri = null,
     xpath: java.lang.String = null
   ): ElementDefinitionConstraint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("human")(human)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("severity")(severity)
+    val __obj = js.Dynamic.literal(expression = expression, human = human, key = key, severity = severity)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_human != null) __obj.updateDynamic("_human")(_human)

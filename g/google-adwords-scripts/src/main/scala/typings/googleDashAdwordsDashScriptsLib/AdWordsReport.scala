@@ -19,10 +19,8 @@ object AdWordsReport {
     getColumnHeader: js.Function1[java.lang.String, AdWordsReportColumnHeader],
     rows: js.Function0[AdWordsReportRowIterator]
   ): AdWordsReport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exportToSheet")(exportToSheet)
-    __obj.updateDynamic("getColumnHeader")(getColumnHeader)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(exportToSheet = exportToSheet, getColumnHeader = getColumnHeader, rows = rows)
+  
     __obj.asInstanceOf[AdWordsReport]
   }
 }

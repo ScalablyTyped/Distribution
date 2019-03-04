@@ -204,9 +204,7 @@ object Task {
     statusReason: CodeableConcept = null,
     text: Narrative = null
   ): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intent")(intent)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(intent = intent, status = status)
     if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
     if (_definitionUri != null) __obj.updateDynamic("_definitionUri")(_definitionUri)
     if (_description != null) __obj.updateDynamic("_description")(_description)

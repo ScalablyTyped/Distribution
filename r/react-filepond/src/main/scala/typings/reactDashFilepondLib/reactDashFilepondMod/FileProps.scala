@@ -24,8 +24,7 @@ object FileProps {
     size: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): FileProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (name != null) __obj.updateDynamic("name")(name)
     if (origin != null) __obj.updateDynamic("origin")(origin)

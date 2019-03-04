@@ -42,15 +42,8 @@ object EnterprisesResource {
     policies: PoliciesResource,
     webTokens: WebTokensResource
   ): EnterprisesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applications")(applications)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("devices")(devices)
-    __obj.updateDynamic("enrollmentTokens")(enrollmentTokens)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("policies")(policies)
-    __obj.updateDynamic("webTokens")(webTokens)
+    val __obj = js.Dynamic.literal(applications = applications, create = create, devices = devices, enrollmentTokens = enrollmentTokens, get = get, patch = patch, policies = policies, webTokens = webTokens)
+  
     __obj.asInstanceOf[EnterprisesResource]
   }
 }

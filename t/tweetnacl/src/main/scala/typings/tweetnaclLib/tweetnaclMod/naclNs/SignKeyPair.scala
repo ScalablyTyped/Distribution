@@ -13,9 +13,8 @@ trait SignKeyPair extends js.Object {
 object SignKeyPair {
   @scala.inline
   def apply(publicKey: stdLib.Uint8Array, secretKey: stdLib.Uint8Array): SignKeyPair = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("publicKey")(publicKey)
-    __obj.updateDynamic("secretKey")(secretKey)
+    val __obj = js.Dynamic.literal(publicKey = publicKey, secretKey = secretKey)
+  
     __obj.asInstanceOf[SignKeyPair]
   }
 }

@@ -13,9 +13,8 @@ trait IROOM_JOIN_ERROR extends js.Object {
 object IROOM_JOIN_ERROR {
   @scala.inline
   def apply(errorCode: scala.Double, errorMessage: java.lang.String): IROOM_JOIN_ERROR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage)
+  
     __obj.asInstanceOf[IROOM_JOIN_ERROR]
   }
 }

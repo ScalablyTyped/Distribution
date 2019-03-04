@@ -14,9 +14,8 @@ trait ReactNativeFileOptions extends js.Object {
 object ReactNativeFileOptions {
   @scala.inline
   def apply(name: java.lang.String, `type`: java.lang.String, uri: java.lang.String): ReactNativeFileOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(name = name, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ReactNativeFileOptions]
   }
 }

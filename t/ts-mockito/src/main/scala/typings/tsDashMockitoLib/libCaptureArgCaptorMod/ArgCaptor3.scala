@@ -24,13 +24,8 @@ object ArgCaptor3 {
     second: js.Function0[js.Tuple3[T0, T1, T2]],
     third: js.Function0[js.Tuple3[T0, T1, T2]]
   ): ArgCaptor3[T0, T1, T2] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeLast")(beforeLast)
-    __obj.updateDynamic("byCallIndex")(byCallIndex)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("last")(last)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("third")(third)
+    val __obj = js.Dynamic.literal(beforeLast = beforeLast, byCallIndex = byCallIndex, first = first, last = last, second = second, third = third)
+  
     __obj.asInstanceOf[ArgCaptor3[T0, T1, T2]]
   }
 }

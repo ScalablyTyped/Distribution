@@ -13,9 +13,8 @@ trait ReadResult[T] extends js.Object {
 object ReadResult {
   @scala.inline
   def apply[T](done: scala.Boolean, value: T): ReadResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(done = done, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReadResult[T]]
   }
 }

@@ -22,12 +22,8 @@ object Anon_HIGHINTERACTION {
     NORMAL: scala.Double,
     UTILITY: scala.Double
   ): Anon_HIGHINTERACTION = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HIGH")(HIGH)
-    __obj.updateDynamic("INTERACTION")(INTERACTION)
-    __obj.updateDynamic("LOW")(LOW)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("UTILITY")(UTILITY)
+    val __obj = js.Dynamic.literal(HIGH = HIGH, INTERACTION = INTERACTION, LOW = LOW, NORMAL = NORMAL, UTILITY = UTILITY)
+  
     __obj.asInstanceOf[Anon_HIGHINTERACTION]
   }
 }

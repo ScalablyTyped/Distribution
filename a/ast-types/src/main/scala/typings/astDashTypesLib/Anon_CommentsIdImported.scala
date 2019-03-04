@@ -24,8 +24,7 @@ object Anon_CommentsIdImported {
     local: astDashTypesLib.genKindsMod.IdentifierKind = null,
     name: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): Anon_CommentsIdImported = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imported")(imported)
+    val __obj = js.Dynamic.literal(imported = imported)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (id != null) __obj.updateDynamic("id")(id)
     if (loc != null) __obj.updateDynamic("loc")(loc)

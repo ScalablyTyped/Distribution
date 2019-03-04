@@ -30,16 +30,8 @@ object Anon_AlreadyUpToDate {
     uninstalled: scala.Double,
     updated: scala.Double
   ): Anon_AlreadyUpToDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alreadyUpToDate")(alreadyUpToDate)
-    __obj.updateDynamic("inlineUpdateReceived")(inlineUpdateReceived)
-    __obj.updateDynamic("installed")(installed)
-    __obj.updateDynamic("preinstalled")(preinstalled)
-    __obj.updateDynamic("receivedInstallOrUpdate")(receivedInstallOrUpdate)
-    __obj.updateDynamic("receivedUninstall")(receivedUninstall)
-    __obj.updateDynamic("requestedUpdate")(requestedUpdate)
-    __obj.updateDynamic("uninstalled")(uninstalled)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(alreadyUpToDate = alreadyUpToDate, inlineUpdateReceived = inlineUpdateReceived, installed = installed, preinstalled = preinstalled, receivedInstallOrUpdate = receivedInstallOrUpdate, receivedUninstall = receivedUninstall, requestedUpdate = requestedUpdate, uninstalled = uninstalled, updated = updated)
+  
     __obj.asInstanceOf[Anon_AlreadyUpToDate]
   }
 }

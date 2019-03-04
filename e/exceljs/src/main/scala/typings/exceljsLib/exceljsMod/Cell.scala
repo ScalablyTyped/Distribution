@@ -73,13 +73,8 @@ object Cell {
     names: js.Array[java.lang.String] = null,
     numFmt: java.lang.String = null
   ): Cell = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("formula")(formula)
-    __obj.updateDynamic("formulaType")(formulaType)
-    __obj.updateDynamic("removeName")(removeName)
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(formula = formula, formulaType = formulaType, removeName = removeName, result = result.asInstanceOf[js.Any], style = style, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
     if (border != null) __obj.updateDynamic("border")(border)
     if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)

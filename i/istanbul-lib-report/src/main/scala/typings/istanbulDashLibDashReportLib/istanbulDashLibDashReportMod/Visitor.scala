@@ -22,12 +22,8 @@ object Visitor {
     onSummary: js.Function2[N, js.Any, scala.Unit],
     onSummaryEnd: js.Function2[N, js.Any, scala.Unit]
   ): Visitor[N] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDetail")(onDetail)
-    __obj.updateDynamic("onEnd")(onEnd)
-    __obj.updateDynamic("onStart")(onStart)
-    __obj.updateDynamic("onSummary")(onSummary)
-    __obj.updateDynamic("onSummaryEnd")(onSummaryEnd)
+    val __obj = js.Dynamic.literal(onDetail = onDetail, onEnd = onEnd, onStart = onStart, onSummary = onSummary, onSummaryEnd = onSummaryEnd)
+  
     __obj.asInstanceOf[Visitor[N]]
   }
 }

@@ -32,17 +32,8 @@ object WIZ_WIN32_FIND_DATA {
     nFileSizeHigh: scala.Double,
     nFileSizeLow: scala.Double
   ): WIZ_WIN32_FIND_DATA = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cAlternate")(cAlternate)
-    __obj.updateDynamic("cFileName")(cFileName)
-    __obj.updateDynamic("dwFileAttributes")(dwFileAttributes)
-    __obj.updateDynamic("dwReserved0")(dwReserved0)
-    __obj.updateDynamic("dwReserved1")(dwReserved1)
-    __obj.updateDynamic("ftCreationTime")(ftCreationTime)
-    __obj.updateDynamic("ftLastAccessTime")(ftLastAccessTime)
-    __obj.updateDynamic("ftLastWriteTime")(ftLastWriteTime)
-    __obj.updateDynamic("nFileSizeHigh")(nFileSizeHigh)
-    __obj.updateDynamic("nFileSizeLow")(nFileSizeLow)
+    val __obj = js.Dynamic.literal(cAlternate = cAlternate, cFileName = cFileName, dwFileAttributes = dwFileAttributes, dwReserved0 = dwReserved0, dwReserved1 = dwReserved1, ftCreationTime = ftCreationTime, ftLastAccessTime = ftLastAccessTime, ftLastWriteTime = ftLastWriteTime, nFileSizeHigh = nFileSizeHigh, nFileSizeLow = nFileSizeLow)
+  
     __obj.asInstanceOf[WIZ_WIN32_FIND_DATA]
   }
 }

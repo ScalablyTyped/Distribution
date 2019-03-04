@@ -27,13 +27,7 @@ object Event {
     original: ractiveLib._RactiveEvent,
     component: Ractive = null
   ): Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("keypath")(keypath)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("original")(original)
+    val __obj = js.Dynamic.literal(context = context, index = index, keypath = keypath, name = name, node = node, original = original)
     if (component != null) __obj.updateDynamic("component")(component)
     __obj.asInstanceOf[Event]
   }

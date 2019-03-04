@@ -28,9 +28,7 @@ object ZoomifyOptions {
     reprojectionErrorThreshold: scala.Int | scala.Double = null,
     tierSizeCalculation: java.lang.String = null
   ): ZoomifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(size = size, url = url)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)

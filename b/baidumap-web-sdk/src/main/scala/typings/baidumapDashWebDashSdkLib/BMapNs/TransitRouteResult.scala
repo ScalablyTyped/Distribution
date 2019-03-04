@@ -26,14 +26,8 @@ object TransitRouteResult {
     moreResultsUrl: java.lang.String,
     policy: TransitPolicy
   ): TransitRouteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("getEnd")(getEnd)
-    __obj.updateDynamic("getNumPlans")(getNumPlans)
-    __obj.updateDynamic("getPlan")(getPlan)
-    __obj.updateDynamic("getStart")(getStart)
-    __obj.updateDynamic("moreResultsUrl")(moreResultsUrl)
-    __obj.updateDynamic("policy")(policy)
+    val __obj = js.Dynamic.literal(city = city, getEnd = getEnd, getNumPlans = getNumPlans, getPlan = getPlan, getStart = getStart, moreResultsUrl = moreResultsUrl, policy = policy)
+  
     __obj.asInstanceOf[TransitRouteResult]
   }
 }

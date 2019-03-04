@@ -13,9 +13,8 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(key: java.lang.String, quoted: scala.Boolean): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("quoted")(quoted)
+    val __obj = js.Dynamic.literal(key = key, quoted = quoted)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

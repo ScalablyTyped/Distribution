@@ -38,20 +38,8 @@ object Anon_D {
     u: java.lang.String,
     y: java.lang.String
   ): Anon_D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("F")(F)
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("M")(M)
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("Y")(Y)
-    __obj.updateDynamic("d")(d)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("t")(t)
-    __obj.updateDynamic("u")(u)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(D = D, F = F, G = G, M = M, T = T, Y = Y, d = d, g = g, m = m, s = s, t = t, u = u, y = y)
+  
     __obj.asInstanceOf[Anon_D]
   }
 }

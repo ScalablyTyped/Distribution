@@ -22,8 +22,7 @@ object RaygunUser {
     fullName: java.lang.String = null,
     uuid: java.lang.String = null
   ): RaygunUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (email != null) __obj.updateDynamic("email")(email)
     if (firstName != null) __obj.updateDynamic("firstName")(firstName)
     if (fullName != null) __obj.updateDynamic("fullName")(fullName)

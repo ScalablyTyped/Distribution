@@ -124,39 +124,8 @@ object XListBox {
     setDropDownLineCount: js.Function1[scala.Double, scala.Unit],
     setMultipleMode: js.Function1[scala.Boolean, scala.Unit]
   ): XListBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DropDownLineCount")(DropDownLineCount)
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("SelectedItem")(SelectedItem)
-    __obj.updateDynamic("SelectedItemPos")(SelectedItemPos)
-    __obj.updateDynamic("SelectedItems")(SelectedItems)
-    __obj.updateDynamic("SelectedItemsPos")(SelectedItemsPos)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addActionListener")(addActionListener)
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("addItemListener")(addItemListener)
-    __obj.updateDynamic("addItems")(addItems)
-    __obj.updateDynamic("getDropDownLineCount")(getDropDownLineCount)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getItemCount")(getItemCount)
-    __obj.updateDynamic("getItems")(getItems)
-    __obj.updateDynamic("getSelectedItem")(getSelectedItem)
-    __obj.updateDynamic("getSelectedItemPos")(getSelectedItemPos)
-    __obj.updateDynamic("getSelectedItems")(getSelectedItems)
-    __obj.updateDynamic("getSelectedItemsPos")(getSelectedItemsPos)
-    __obj.updateDynamic("isMutipleMode")(isMutipleMode)
-    __obj.updateDynamic("makeVisible")(makeVisible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeActionListener")(removeActionListener)
-    __obj.updateDynamic("removeItemListener")(removeItemListener)
-    __obj.updateDynamic("removeItems")(removeItems)
-    __obj.updateDynamic("selectItem")(selectItem)
-    __obj.updateDynamic("selectItemPos")(selectItemPos)
-    __obj.updateDynamic("selectItemsPos")(selectItemsPos)
-    __obj.updateDynamic("setDropDownLineCount")(setDropDownLineCount)
-    __obj.updateDynamic("setMultipleMode")(setMultipleMode)
+    val __obj = js.Dynamic.literal(DropDownLineCount = DropDownLineCount, ItemCount = ItemCount, Items = Items, SelectedItem = SelectedItem, SelectedItemPos = SelectedItemPos, SelectedItems = SelectedItems, SelectedItemsPos = SelectedItemsPos, acquire = acquire, addActionListener = addActionListener, addItem = addItem, addItemListener = addItemListener, addItems = addItems, getDropDownLineCount = getDropDownLineCount, getItem = getItem, getItemCount = getItemCount, getItems = getItems, getSelectedItem = getSelectedItem, getSelectedItemPos = getSelectedItemPos, getSelectedItems = getSelectedItems, getSelectedItemsPos = getSelectedItemsPos, isMutipleMode = isMutipleMode, makeVisible = makeVisible, queryInterface = queryInterface, release = release, removeActionListener = removeActionListener, removeItemListener = removeItemListener, removeItems = removeItems, selectItem = selectItem, selectItemPos = selectItemPos, selectItemsPos = selectItemsPos, setDropDownLineCount = setDropDownLineCount, setMultipleMode = setMultipleMode)
+  
     __obj.asInstanceOf[XListBox]
   }
 }

@@ -18,9 +18,8 @@ trait MenuListState extends js.Object {
 object MenuListState {
   @scala.inline
   def apply(isMulti: scala.Boolean, maxHeight: scala.Double): MenuListState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isMulti")(isMulti)
-    __obj.updateDynamic("maxHeight")(maxHeight)
+    val __obj = js.Dynamic.literal(isMulti = isMulti, maxHeight = maxHeight)
+  
     __obj.asInstanceOf[MenuListState]
   }
 }

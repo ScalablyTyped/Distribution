@@ -26,14 +26,8 @@ object Anon_GroupIdKey {
     itemTimeStartKey: java.lang.String,
     itemTitleKey: java.lang.String
   ): Anon_GroupIdKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupIdKey")(groupIdKey)
-    __obj.updateDynamic("groupTitleKey")(groupTitleKey)
-    __obj.updateDynamic("itemGroupKey")(itemGroupKey)
-    __obj.updateDynamic("itemIdKey")(itemIdKey)
-    __obj.updateDynamic("itemTimeEndKey")(itemTimeEndKey)
-    __obj.updateDynamic("itemTimeStartKey")(itemTimeStartKey)
-    __obj.updateDynamic("itemTitleKey")(itemTitleKey)
+    val __obj = js.Dynamic.literal(groupIdKey = groupIdKey, groupTitleKey = groupTitleKey, itemGroupKey = itemGroupKey, itemIdKey = itemIdKey, itemTimeEndKey = itemTimeEndKey, itemTimeStartKey = itemTimeStartKey, itemTitleKey = itemTitleKey)
+  
     __obj.asInstanceOf[Anon_GroupIdKey]
   }
 }

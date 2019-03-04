@@ -13,9 +13,8 @@ trait TextSpan extends js.Object {
 object TextSpan {
   @scala.inline
   def apply(length: scala.Double, start: scala.Double): TextSpan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(length = length, start = start)
+  
     __obj.asInstanceOf[TextSpan]
   }
 }

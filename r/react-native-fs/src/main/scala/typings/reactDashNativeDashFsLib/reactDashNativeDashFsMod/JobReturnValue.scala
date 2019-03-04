@@ -13,9 +13,8 @@ trait JobReturnValue[Result] extends js.Object {
 object JobReturnValue {
   @scala.inline
   def apply[Result](jobId: scala.Double, promise: js.Promise[Result]): JobReturnValue[Result] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("promise")(promise)
+    val __obj = js.Dynamic.literal(jobId = jobId, promise = promise)
+  
     __obj.asInstanceOf[JobReturnValue[Result]]
   }
 }

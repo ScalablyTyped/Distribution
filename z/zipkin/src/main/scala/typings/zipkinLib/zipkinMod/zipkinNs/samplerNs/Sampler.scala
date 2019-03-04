@@ -17,8 +17,8 @@ object Sampler {
       zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[scala.Boolean]
     ]
   ): Sampler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shouldSample")(shouldSample)
+    val __obj = js.Dynamic.literal(shouldSample = shouldSample)
+  
     __obj.asInstanceOf[Sampler]
   }
 }

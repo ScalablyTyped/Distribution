@@ -18,9 +18,7 @@ trait FragmentSpread
 object FragmentSpread {
   @scala.inline
   def apply(kind: java.lang.String, name: Name, directives: js.Array[Directive] = null, loc: Location = null): FragmentSpread = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[FragmentSpread]

@@ -18,10 +18,8 @@ object Anon_Automatic {
     deploymentSubmitter: scala.Double,
     firstPreDeploymentApprover: scala.Double
   ): Anon_Automatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automatic")(automatic)
-    __obj.updateDynamic("deploymentSubmitter")(deploymentSubmitter)
-    __obj.updateDynamic("firstPreDeploymentApprover")(firstPreDeploymentApprover)
+    val __obj = js.Dynamic.literal(automatic = automatic, deploymentSubmitter = deploymentSubmitter, firstPreDeploymentApprover = firstPreDeploymentApprover)
+  
     __obj.asInstanceOf[Anon_Automatic]
   }
 }

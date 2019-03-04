@@ -45,10 +45,7 @@ object Anon_AltCommitment {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCommitment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitment")(commitment)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(commitment = commitment, project = project, region = region)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

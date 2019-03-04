@@ -22,11 +22,7 @@ object ParticipantAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ParticipantAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("innerParticipantRef")(innerParticipantRef)
-    __obj.updateDynamic("outerParticipantRef")(outerParticipantRef)
+    val __obj = js.Dynamic.literal($type = $type, id = id, innerParticipantRef = innerParticipantRef, outerParticipantRef = outerParticipantRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

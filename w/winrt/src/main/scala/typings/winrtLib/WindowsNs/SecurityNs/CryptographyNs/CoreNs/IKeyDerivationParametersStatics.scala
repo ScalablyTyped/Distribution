@@ -42,10 +42,8 @@ object IKeyDerivationParametersStatics {
       KeyDerivationParameters
     ]
   ): IKeyDerivationParametersStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildForPbkdf2")(buildForPbkdf2)
-    __obj.updateDynamic("buildForSP800108")(buildForSP800108)
-    __obj.updateDynamic("buildForSP80056a")(buildForSP80056a)
+    val __obj = js.Dynamic.literal(buildForPbkdf2 = buildForPbkdf2, buildForSP800108 = buildForSP800108, buildForSP80056a = buildForSP80056a)
+  
     __obj.asInstanceOf[IKeyDerivationParametersStatics]
   }
 }

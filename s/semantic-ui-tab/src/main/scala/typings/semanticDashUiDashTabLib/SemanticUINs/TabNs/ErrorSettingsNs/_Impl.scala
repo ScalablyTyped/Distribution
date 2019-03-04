@@ -47,14 +47,8 @@ object _Impl {
     recursion: java.lang.String,
     state: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("missingTab")(missingTab)
-    __obj.updateDynamic("noContent")(noContent)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("recursion")(recursion)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(api = api, method = method, missingTab = missingTab, noContent = noContent, path = path, recursion = recursion, state = state)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

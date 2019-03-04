@@ -18,10 +18,8 @@ object Anon_CurrentIconPrefix {
     iconPrefix: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): Anon_CurrentIconPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("iconPrefix")(iconPrefix)
-    __obj.updateDynamic("prefixCls")(prefixCls)
+    val __obj = js.Dynamic.literal(current = current, iconPrefix = iconPrefix, prefixCls = prefixCls)
+  
     __obj.asInstanceOf[Anon_CurrentIconPrefix]
   }
 }

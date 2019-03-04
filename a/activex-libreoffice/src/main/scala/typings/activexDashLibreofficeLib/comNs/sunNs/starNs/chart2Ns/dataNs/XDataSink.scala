@@ -32,11 +32,8 @@ object XDataSink {
     release: js.Function0[scala.Unit],
     setData: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XLabeledDataSequence], scala.Unit]
   ): XDataSink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setData")(setData)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setData = setData)
+  
     __obj.asInstanceOf[XDataSink]
   }
 }

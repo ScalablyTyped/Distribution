@@ -12,8 +12,8 @@ trait Anon_KeyAscii extends js.Object {
 object Anon_KeyAscii {
   @scala.inline
   def apply(KeyAscii: activexDashMsformsLib.MSFormsNs.ReturnInteger): Anon_KeyAscii = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KeyAscii")(KeyAscii)
+    val __obj = js.Dynamic.literal(KeyAscii = KeyAscii)
+  
     __obj.asInstanceOf[Anon_KeyAscii]
   }
 }

@@ -33,9 +33,8 @@ trait DefaultLinkObject extends js.Object {
 object DefaultLinkObject {
   @scala.inline
   def apply(source: js.Tuple2[scala.Double, scala.Double], target: js.Tuple2[scala.Double, scala.Double]): DefaultLinkObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(source = source, target = target)
+  
     __obj.asInstanceOf[DefaultLinkObject]
   }
 }

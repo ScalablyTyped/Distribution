@@ -28,9 +28,7 @@ object Auth0LockAdditionalTextSignUpField {
     `type`: auth0DashLockLib.auth0DashLockLibStrings.text = null,
     validator: js.Function1[/* input */ java.lang.String, Anon_Hint] = null
   ): Auth0LockAdditionalTextSignUpField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("placeholder")(placeholder)
+    val __obj = js.Dynamic.literal(name = name, placeholder = placeholder)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (prefill != null) __obj.updateDynamic("prefill")(prefill.asInstanceOf[js.Any])

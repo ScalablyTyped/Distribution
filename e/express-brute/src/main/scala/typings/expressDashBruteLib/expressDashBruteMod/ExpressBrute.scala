@@ -57,10 +57,8 @@ object ExpressBrute {
       expressLib.expressMod.eNs.RequestHandler
     ]
   ): ExpressBrute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMiddleware")(getMiddleware)
-    __obj.updateDynamic("prevent")(prevent)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(getMiddleware = getMiddleware, prevent = prevent, reset = reset)
+  
     __obj.asInstanceOf[ExpressBrute]
   }
 }

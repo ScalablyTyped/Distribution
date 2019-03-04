@@ -22,9 +22,8 @@ object Anon_ActiveTabIndex {
       reactLib.Event
     ]
   ): Anon_ActiveTabIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTabIndex")(activeTabIndex)
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, event = event)
+  
     __obj.asInstanceOf[Anon_ActiveTabIndex]
   }
 }

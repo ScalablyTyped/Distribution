@@ -38,13 +38,8 @@ object XVclContainerPeer {
       scala.Unit
     ]
   ): XVclContainerPeer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("enableDialogControl")(enableDialogControl)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setGroup")(setGroup)
-    __obj.updateDynamic("setTabOrder")(setTabOrder)
+    val __obj = js.Dynamic.literal(acquire = acquire, enableDialogControl = enableDialogControl, queryInterface = queryInterface, release = release, setGroup = setGroup, setTabOrder = setTabOrder)
+  
     __obj.asInstanceOf[XVclContainerPeer]
   }
 }

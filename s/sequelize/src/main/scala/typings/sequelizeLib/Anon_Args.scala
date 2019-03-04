@@ -16,9 +16,8 @@ object Anon_Args {
     args: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp,
     msg: java.lang.String
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], msg = msg)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

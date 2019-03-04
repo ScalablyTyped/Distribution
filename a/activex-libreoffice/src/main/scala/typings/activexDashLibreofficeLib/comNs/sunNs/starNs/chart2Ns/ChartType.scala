@@ -58,34 +58,8 @@ object ChartType {
     setDataSeries: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XDataSeries], scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ChartType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChartType")(ChartType)
-    __obj.updateDynamic("DataSeries")(DataSeries)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("RoleOfSequenceForSeriesLabel")(RoleOfSequenceForSeriesLabel)
-    __obj.updateDynamic("SupportedMandatoryRoles")(SupportedMandatoryRoles)
-    __obj.updateDynamic("SupportedOptionalRoles")(SupportedOptionalRoles)
-    __obj.updateDynamic("SupportedPropertyRoles")(SupportedPropertyRoles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDataSeries")(addDataSeries)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("createCoordinateSystem")(createCoordinateSystem)
-    __obj.updateDynamic("getChartType")(getChartType)
-    __obj.updateDynamic("getDataSeries")(getDataSeries)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getRoleOfSequenceForSeriesLabel")(getRoleOfSequenceForSeriesLabel)
-    __obj.updateDynamic("getSupportedMandatoryRoles")(getSupportedMandatoryRoles)
-    __obj.updateDynamic("getSupportedOptionalRoles")(getSupportedOptionalRoles)
-    __obj.updateDynamic("getSupportedPropertyRoles")(getSupportedPropertyRoles)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDataSeries")(removeDataSeries)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setDataSeries")(setDataSeries)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ChartType = ChartType, DataSeries = DataSeries, PropertySetInfo = PropertySetInfo, RoleOfSequenceForSeriesLabel = RoleOfSequenceForSeriesLabel, SupportedMandatoryRoles = SupportedMandatoryRoles, SupportedOptionalRoles = SupportedOptionalRoles, SupportedPropertyRoles = SupportedPropertyRoles, acquire = acquire, addDataSeries = addDataSeries, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, createCoordinateSystem = createCoordinateSystem, getChartType = getChartType, getDataSeries = getDataSeries, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getRoleOfSequenceForSeriesLabel = getRoleOfSequenceForSeriesLabel, getSupportedMandatoryRoles = getSupportedMandatoryRoles, getSupportedOptionalRoles = getSupportedOptionalRoles, getSupportedPropertyRoles = getSupportedPropertyRoles, queryInterface = queryInterface, release = release, removeDataSeries = removeDataSeries, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setDataSeries = setDataSeries, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ChartType]
   }
 }

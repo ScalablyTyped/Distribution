@@ -64,8 +64,7 @@ object RelayUptime {
       ]
     ] = null
   ): RelayUptime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (uptime != null) __obj.updateDynamic("uptime")(uptime)
     __obj.asInstanceOf[RelayUptime]

@@ -31,8 +31,7 @@ object ActionSheetOptions {
     itemColor: java.lang.String = null,
     success: js.Function1[/* res */ baiduDashAppLib.Anon_TapIndex, scala.Unit] = null
   ): ActionSheetOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemList")(itemList)
+    val __obj = js.Dynamic.literal(itemList = itemList)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)

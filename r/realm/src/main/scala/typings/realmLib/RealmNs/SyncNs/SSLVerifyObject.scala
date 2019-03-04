@@ -22,12 +22,8 @@ object SSLVerifyObject {
     serverAddress: java.lang.String,
     serverPort: scala.Double
   ): SSLVerifyObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptedByOpenSSL")(acceptedByOpenSSL)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("pemCertificate")(pemCertificate)
-    __obj.updateDynamic("serverAddress")(serverAddress)
-    __obj.updateDynamic("serverPort")(serverPort)
+    val __obj = js.Dynamic.literal(acceptedByOpenSSL = acceptedByOpenSSL, depth = depth, pemCertificate = pemCertificate, serverAddress = serverAddress, serverPort = serverPort)
+  
     __obj.asInstanceOf[SSLVerifyObject]
   }
 }

@@ -34,15 +34,8 @@ object DialogInstance {
     opened: scala.Boolean,
     options: DialogOptions
   ): DialogInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$modal")($modal)
-    __obj.updateDynamic("$modalBody")($modalBody)
-    __obj.updateDynamic("$modalContent")($modalContent)
-    __obj.updateDynamic("$modalDialog")($modalDialog)
-    __obj.updateDynamic("$modalFooter")($modalFooter)
-    __obj.updateDynamic("$modalHeader")($modalHeader)
-    __obj.updateDynamic("opened")(opened)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal($modal = $modal, $modalBody = $modalBody, $modalContent = $modalContent, $modalDialog = $modalDialog, $modalFooter = $modalFooter, $modalHeader = $modalHeader, opened = opened, options = options)
+  
     __obj.asInstanceOf[DialogInstance]
   }
 }

@@ -18,10 +18,8 @@ object Anon_ADAPTIVE {
     ASYNCHRONOUS: chromeDashAppsLib.chromeDashAppsLibStrings.asynchronous,
     SYNCHRONOUS: chromeDashAppsLib.chromeDashAppsLibStrings.synchronous
   ): Anon_ADAPTIVE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADAPTIVE")(ADAPTIVE)
-    __obj.updateDynamic("ASYNCHRONOUS")(ASYNCHRONOUS)
-    __obj.updateDynamic("SYNCHRONOUS")(SYNCHRONOUS)
+    val __obj = js.Dynamic.literal(ADAPTIVE = ADAPTIVE, ASYNCHRONOUS = ASYNCHRONOUS, SYNCHRONOUS = SYNCHRONOUS)
+  
     __obj.asInstanceOf[Anon_ADAPTIVE]
   }
 }

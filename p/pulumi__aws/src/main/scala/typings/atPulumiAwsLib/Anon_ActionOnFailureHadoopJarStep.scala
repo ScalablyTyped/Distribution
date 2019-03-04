@@ -18,10 +18,8 @@ object Anon_ActionOnFailureHadoopJarStep {
     hadoopJarStep: atPulumiPulumiLib.outputMod.Input[Anon_ArgsJarKey],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ActionOnFailureHadoopJarStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionOnFailure")(actionOnFailure.asInstanceOf[js.Any])
-    __obj.updateDynamic("hadoopJarStep")(hadoopJarStep.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionOnFailure = actionOnFailure.asInstanceOf[js.Any], hadoopJarStep = hadoopJarStep.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ActionOnFailureHadoopJarStep]
   }
 }

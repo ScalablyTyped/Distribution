@@ -42,19 +42,8 @@ object XStringListControl {
     notifyModifiedValue: js.Function0[scala.Unit],
     prependListEntry: js.Function1[java.lang.String, scala.Unit]
   ): XStringListControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ControlContext")(ControlContext)
-    __obj.updateDynamic("ControlType")(ControlType)
-    __obj.updateDynamic("ControlWindow")(ControlWindow)
-    __obj.updateDynamic("ListEntries")(ListEntries)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("ValueType")(ValueType)
-    __obj.updateDynamic("appendListEntry")(appendListEntry)
-    __obj.updateDynamic("clearList")(clearList)
-    __obj.updateDynamic("getListEntries")(getListEntries)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
-    __obj.updateDynamic("prependListEntry")(prependListEntry)
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, ListEntries = ListEntries, Value = Value, ValueType = ValueType, appendListEntry = appendListEntry, clearList = clearList, getListEntries = getListEntries, isModified = isModified, notifyModifiedValue = notifyModifiedValue, prependListEntry = prependListEntry)
+  
     __obj.asInstanceOf[XStringListControl]
   }
 }

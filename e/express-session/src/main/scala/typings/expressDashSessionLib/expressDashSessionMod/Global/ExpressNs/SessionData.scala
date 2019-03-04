@@ -16,8 +16,7 @@ object SessionData {
     cookie: SessionCookieData,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): SessionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
+    val __obj = js.Dynamic.literal(cookie = cookie)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SessionData]
   }

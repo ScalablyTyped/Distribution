@@ -30,12 +30,8 @@ object JobTaskSearchJobsParams {
     text: java.lang.String,
     user: java.lang.String
   ): JobTaskSearchJobsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, text = text, user = user)
+  
     __obj.asInstanceOf[JobTaskSearchJobsParams]
   }
 }

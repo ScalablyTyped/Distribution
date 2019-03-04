@@ -13,9 +13,8 @@ trait VimeoParams extends js.Object {
 object VimeoParams {
   @scala.inline
   def apply(name: java.lang.String, value: js.Any): VimeoParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
+  
     __obj.asInstanceOf[VimeoParams]
   }
 }

@@ -22,11 +22,7 @@ object SetCacheOptions {
     data: js.Any = null,
     url: java.lang.String = null
   ): SetCacheOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    __obj.updateDynamic("prefill")(prefill)
-    __obj.updateDynamic("prefillExpires")(prefillExpires.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cache = cache, expires = expires.asInstanceOf[js.Any], prefill = prefill, prefillExpires = prefillExpires.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[SetCacheOptions]

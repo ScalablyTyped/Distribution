@@ -28,14 +28,7 @@ object MongoInstanceDataT {
     uri: java.lang.String,
     tmpDir: mongodbDashMemoryDashServerLib.Anon_ArgsName = null
   ): MongoInstanceDataT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childProcess")(childProcess)
-    __obj.updateDynamic("dbName")(dbName)
-    __obj.updateDynamic("dbPath")(dbPath)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("storageEngine")(storageEngine)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(childProcess = childProcess, dbName = dbName, dbPath = dbPath, instance = instance, port = port, storageEngine = storageEngine, uri = uri)
     if (tmpDir != null) __obj.updateDynamic("tmpDir")(tmpDir)
     __obj.asInstanceOf[MongoInstanceDataT]
   }

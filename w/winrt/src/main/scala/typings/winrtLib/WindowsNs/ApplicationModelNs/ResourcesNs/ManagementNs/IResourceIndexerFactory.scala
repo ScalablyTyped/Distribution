@@ -12,8 +12,8 @@ trait IResourceIndexerFactory extends js.Object {
 object IResourceIndexerFactory {
   @scala.inline
   def apply(createResourceIndexer: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, ResourceIndexer]): IResourceIndexerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createResourceIndexer")(createResourceIndexer)
+    val __obj = js.Dynamic.literal(createResourceIndexer = createResourceIndexer)
+  
     __obj.asInstanceOf[IResourceIndexerFactory]
   }
 }

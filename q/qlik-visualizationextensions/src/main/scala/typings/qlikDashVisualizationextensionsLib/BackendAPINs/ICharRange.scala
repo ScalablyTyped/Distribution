@@ -21,9 +21,8 @@ trait ICharRange extends js.Object {
 object ICharRange {
   @scala.inline
   def apply(qCharCount: scala.Double, qCharPos: scala.Double): ICharRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qCharCount")(qCharCount)
-    __obj.updateDynamic("qCharPos")(qCharPos)
+    val __obj = js.Dynamic.literal(qCharCount = qCharCount, qCharPos = qCharPos)
+  
     __obj.asInstanceOf[ICharRange]
   }
 }

@@ -13,7 +13,8 @@ trait VastAdAttributes extends js.Object {
 object VastAdAttributes {
   @scala.inline
   def apply(`type`: java.lang.String, fallback_index: java.lang.String = null): VastAdAttributes = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (fallback_index != null) __obj.updateDynamic("fallback_index")(fallback_index)
     __obj.asInstanceOf[VastAdAttributes]
   }

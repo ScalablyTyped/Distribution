@@ -26,14 +26,8 @@ object Anon_AutoBaselineColor {
     lineWidth: scala.Double,
     rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
   ): Anon_AutoBaselineColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baselineColor")(baselineColor.asInstanceOf[js.Any])
-    __obj.updateDynamic("baselineStyle")(baselineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("baselineWidth")(baselineWidth)
-    __obj.updateDynamic("lineColor")(lineColor)
-    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("lineWidth")(lineWidth)
-    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baselineColor = baselineColor.asInstanceOf[js.Any], baselineStyle = baselineStyle.asInstanceOf[js.Any], baselineWidth = baselineWidth, lineColor = lineColor, lineStyle = lineStyle.asInstanceOf[js.Any], lineWidth = lineWidth, rendered = rendered.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AutoBaselineColor]
   }
 }

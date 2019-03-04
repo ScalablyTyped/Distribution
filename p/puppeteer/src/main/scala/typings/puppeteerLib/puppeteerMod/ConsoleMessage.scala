@@ -23,10 +23,8 @@ object ConsoleMessage {
     text: js.Function0[java.lang.String],
     `type`: js.Function0[ConsoleMessageType]
   ): ConsoleMessage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(args = args, location = location, text = text)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ConsoleMessage]
   }
 }

@@ -16,8 +16,7 @@ object Anon_Current {
     current: nodeDashForgeLib.nodeDashForgeMod.tlsNs.ConnectionState,
     pending: nodeDashForgeLib.nodeDashForgeMod.tlsNs.ConnectionState = null
   ): Anon_Current = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
+    val __obj = js.Dynamic.literal(current = current)
     if (pending != null) __obj.updateDynamic("pending")(pending)
     __obj.asInstanceOf[Anon_Current]
   }

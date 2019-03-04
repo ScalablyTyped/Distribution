@@ -35,11 +35,8 @@ object ISession {
     isFirst: scala.Boolean,
     renewalDate: scala.Double
   ): ISession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquisitionDate")(acquisitionDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isFirst")(isFirst)
-    __obj.updateDynamic("renewalDate")(renewalDate)
+    val __obj = js.Dynamic.literal(acquisitionDate = acquisitionDate, id = id, isFirst = isFirst, renewalDate = renewalDate)
+  
     __obj.asInstanceOf[ISession]
   }
 }

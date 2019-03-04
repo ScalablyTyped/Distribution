@@ -30,12 +30,7 @@ object ServerRealm {
     settings: hapiLib.Anon_Bind,
     parent: ServerRealm = null
   ): ServerRealm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modifiers")(modifiers)
-    __obj.updateDynamic("plugin")(plugin)
-    __obj.updateDynamic("pluginOptions")(pluginOptions)
-    __obj.updateDynamic("plugins")(plugins)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(modifiers = modifiers, plugin = plugin, pluginOptions = pluginOptions, plugins = plugins, settings = settings)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[ServerRealm]
   }

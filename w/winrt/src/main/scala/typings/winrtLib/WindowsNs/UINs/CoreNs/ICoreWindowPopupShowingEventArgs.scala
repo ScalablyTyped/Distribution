@@ -12,8 +12,8 @@ trait ICoreWindowPopupShowingEventArgs extends js.Object {
 object ICoreWindowPopupShowingEventArgs {
   @scala.inline
   def apply(setDesiredSize: js.Function1[winrtLib.WindowsNs.FoundationNs.Size, scala.Unit]): ICoreWindowPopupShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setDesiredSize")(setDesiredSize)
+    val __obj = js.Dynamic.literal(setDesiredSize = setDesiredSize)
+  
     __obj.asInstanceOf[ICoreWindowPopupShowingEventArgs]
   }
 }

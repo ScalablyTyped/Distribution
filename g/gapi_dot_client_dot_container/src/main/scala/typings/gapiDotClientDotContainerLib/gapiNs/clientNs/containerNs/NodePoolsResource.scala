@@ -69,16 +69,8 @@ object NodePoolsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): NodePoolsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoscaling")(autoscaling)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("setManagement")(setManagement)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(autoscaling = autoscaling, create = create, delete = delete, get = get, list = list, rollback = rollback, setManagement = setManagement, setSize = setSize, update = update)
+  
     __obj.asInstanceOf[NodePoolsResource]
   }
 }

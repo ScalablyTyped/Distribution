@@ -12,8 +12,8 @@ trait Keyid extends js.Object {
 object Keyid {
   @scala.inline
   def apply(bytes: java.lang.String): Keyid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytes")(bytes)
+    val __obj = js.Dynamic.literal(bytes = bytes)
+  
     __obj.asInstanceOf[Keyid]
   }
 }

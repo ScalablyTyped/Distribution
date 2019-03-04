@@ -12,8 +12,8 @@ trait ConstantState extends js.Object {
 object ConstantState {
   @scala.inline
   def apply(newDrawable: js.Function0[androiduixLib.androidNs.graphicsNs.drawableNs.Drawable]): ConstantState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newDrawable")(newDrawable)
+    val __obj = js.Dynamic.literal(newDrawable = newDrawable)
+  
     __obj.asInstanceOf[ConstantState]
   }
 }

@@ -12,10 +12,8 @@ trait HeroGamesWon extends TopHeroStats {
 object HeroGamesWon {
   @scala.inline
   def apply(games_won: java.lang.String, hero: OverwatchHero, img: java.lang.String): HeroGamesWon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("games_won")(games_won)
-    __obj.updateDynamic("hero")(hero)
-    __obj.updateDynamic("img")(img)
+    val __obj = js.Dynamic.literal(games_won = games_won, hero = hero, img = img)
+  
     __obj.asInstanceOf[HeroGamesWon]
   }
 }

@@ -39,8 +39,7 @@ object ServiceArgs {
     healthCheckCustomConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FailureThresholdInput] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ServiceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsConfig")(dnsConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dnsConfig = dnsConfig.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (healthCheckConfig != null) __obj.updateDynamic("healthCheckConfig")(healthCheckConfig.asInstanceOf[js.Any])
     if (healthCheckCustomConfig != null) __obj.updateDynamic("healthCheckCustomConfig")(healthCheckCustomConfig.asInstanceOf[js.Any])

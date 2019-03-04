@@ -19,10 +19,8 @@ object NumeralJsFormat {
     regexps: Anon_Format,
     unformat: js.Function1[java.lang.String, scala.Double]
   ): NumeralJsFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("regexps")(regexps)
-    __obj.updateDynamic("unformat")(unformat)
+    val __obj = js.Dynamic.literal(format = format, regexps = regexps, unformat = unformat)
+  
     __obj.asInstanceOf[NumeralJsFormat]
   }
 }

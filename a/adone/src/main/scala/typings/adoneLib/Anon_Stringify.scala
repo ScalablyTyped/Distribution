@@ -12,8 +12,8 @@ trait Anon_Stringify extends js.Object {
 object Anon_Stringify {
   @scala.inline
   def apply(stringify: adoneLib.adoneLibNumbers.`true`): Anon_Stringify = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stringify")(stringify)
+    val __obj = js.Dynamic.literal(stringify = stringify)
+  
     __obj.asInstanceOf[Anon_Stringify]
   }
 }

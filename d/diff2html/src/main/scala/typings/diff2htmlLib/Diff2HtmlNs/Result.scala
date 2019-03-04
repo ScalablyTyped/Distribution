@@ -54,15 +54,7 @@ object Result {
     oldMode: java.lang.String = null,
     unchangedPercentage: scala.Int | scala.Double = null
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addedLines")(addedLines)
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("deletedLines")(deletedLines)
-    __obj.updateDynamic("isCombined")(isCombined)
-    __obj.updateDynamic("isGitDiff")(isGitDiff)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("newName")(newName)
-    __obj.updateDynamic("oldName")(oldName)
+    val __obj = js.Dynamic.literal(addedLines = addedLines, blocks = blocks, deletedLines = deletedLines, isCombined = isCombined, isGitDiff = isGitDiff, language = language, newName = newName, oldName = oldName)
     if (changedPercentage != null) __obj.updateDynamic("changedPercentage")(changedPercentage.asInstanceOf[js.Any])
     if (checksumAfter != null) __obj.updateDynamic("checksumAfter")(checksumAfter)
     if (checksumBefore != null) __obj.updateDynamic("checksumBefore")(checksumBefore)

@@ -28,15 +28,8 @@ object Anon_Channel {
     topiclength: scala.Double,
     usermodes: java.lang.String
   ): Anon_Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("kicklength")(kicklength)
-    __obj.updateDynamic("maxlist")(maxlist)
-    __obj.updateDynamic("maxtargets")(maxtargets)
-    __obj.updateDynamic("modes")(modes)
-    __obj.updateDynamic("nicklength")(nicklength)
-    __obj.updateDynamic("topiclength")(topiclength)
-    __obj.updateDynamic("usermodes")(usermodes)
+    val __obj = js.Dynamic.literal(channel = channel, kicklength = kicklength, maxlist = maxlist, maxtargets = maxtargets, modes = modes, nicklength = nicklength, topiclength = topiclength, usermodes = usermodes)
+  
     __obj.asInstanceOf[Anon_Channel]
   }
 }

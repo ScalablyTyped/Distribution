@@ -39,11 +39,8 @@ object IDelimiterInfo {
     qNumber: scala.Double,
     qScriptCode: java.lang.String
   ): IDelimiterInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qIsMultiple")(qIsMultiple)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qNumber")(qNumber)
-    __obj.updateDynamic("qScriptCode")(qScriptCode)
+    val __obj = js.Dynamic.literal(qIsMultiple = qIsMultiple, qName = qName, qNumber = qNumber, qScriptCode = qScriptCode)
+  
     __obj.asInstanceOf[IDelimiterInfo]
   }
 }

@@ -13,9 +13,8 @@ trait SupportInfo extends js.Object {
 object SupportInfo {
   @scala.inline
   def apply(languages: js.Array[SupportLanguage], options: js.Array[SupportOption]): SupportInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(languages = languages, options = options)
+  
     __obj.asInstanceOf[SupportInfo]
   }
 }

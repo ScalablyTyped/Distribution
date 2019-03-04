@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ModelArray[T] protected () extends ItemArray[T] {
   def this(modelConstructor: nodalLib.Anon_CalcField) = this()
   var Model: nodalLib.Anon_CalcField = js.native
-  /* private */ def `__saveAll__`(callback: js.Any): js.Any = js.native
+  /* private */ def __saveAll__(callback: js.Any): js.Any = js.native
   def destroyAll(callback: js.Function): scala.Unit = js.native
   def destroyCascade(callback: js.Function): scala.Unit = js.native
   def has(model: Model): scala.Boolean = js.native

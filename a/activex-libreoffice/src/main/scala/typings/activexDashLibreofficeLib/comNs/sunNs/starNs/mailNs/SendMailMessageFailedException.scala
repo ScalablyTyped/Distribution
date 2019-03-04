@@ -30,12 +30,8 @@ object SendMailMessageFailedException {
     ValidSentAddresses: activexDashInteropLib.SafeArray[java.lang.String],
     ValidUnsentAddresses: activexDashInteropLib.SafeArray[java.lang.String]
   ): SendMailMessageFailedException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("InvalidAddresses")(InvalidAddresses)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("ValidSentAddresses")(ValidSentAddresses)
-    __obj.updateDynamic("ValidUnsentAddresses")(ValidUnsentAddresses)
+    val __obj = js.Dynamic.literal(Context = Context, InvalidAddresses = InvalidAddresses, Message = Message, ValidSentAddresses = ValidSentAddresses, ValidUnsentAddresses = ValidUnsentAddresses)
+  
     __obj.asInstanceOf[SendMailMessageFailedException]
   }
 }

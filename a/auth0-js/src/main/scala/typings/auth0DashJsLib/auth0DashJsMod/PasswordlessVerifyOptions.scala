@@ -22,9 +22,7 @@ object PasswordlessVerifyOptions {
     phoneNumber: java.lang.String = null,
     send: java.lang.String = null
   ): PasswordlessVerifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("verificationCode")(verificationCode)
+    val __obj = js.Dynamic.literal(connection = connection, verificationCode = verificationCode)
     if (email != null) __obj.updateDynamic("email")(email)
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
     if (send != null) __obj.updateDynamic("send")(send)

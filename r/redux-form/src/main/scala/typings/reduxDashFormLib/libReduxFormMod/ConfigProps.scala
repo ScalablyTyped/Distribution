@@ -150,8 +150,7 @@ object ConfigProps {
       reduxDashFormLib.reduxDashFormMod.FormWarnings[FormData, scala.Unit]
     ] = null
   ): ConfigProps[FormData, P, ErrorType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("form")(form)
+    val __obj = js.Dynamic.literal(form = form)
     if (asyncBlurFields != null) __obj.updateDynamic("asyncBlurFields")(asyncBlurFields)
     if (asyncChangeFields != null) __obj.updateDynamic("asyncChangeFields")(asyncChangeFields)
     if (asyncValidate != null) __obj.updateDynamic("asyncValidate")(asyncValidate)

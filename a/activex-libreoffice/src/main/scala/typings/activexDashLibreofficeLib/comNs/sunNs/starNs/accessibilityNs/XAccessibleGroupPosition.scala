@@ -20,12 +20,8 @@ object XAccessibleGroupPosition {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAccessibleGroupPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGroupPosition")(getGroupPosition)
-    __obj.updateDynamic("getObjectLink")(getObjectLink)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getGroupPosition = getGroupPosition, getObjectLink = getObjectLink, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAccessibleGroupPosition]
   }
 }

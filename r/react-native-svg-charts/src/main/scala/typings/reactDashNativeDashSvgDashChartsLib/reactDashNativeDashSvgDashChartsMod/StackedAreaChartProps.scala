@@ -61,10 +61,7 @@ object StackedAreaChartProps {
     yAccessor: AccessorFunction[T, scala.Double] = null,
     yScale: ScaleFunction = null
   ): StackedAreaChartProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("keys")(keys)
+    val __obj = js.Dynamic.literal(colors = colors, data = data, keys = keys)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)

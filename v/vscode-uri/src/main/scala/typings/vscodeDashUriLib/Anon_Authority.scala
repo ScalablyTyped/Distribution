@@ -22,8 +22,7 @@ object Anon_Authority {
     path: java.lang.String = null,
     query: java.lang.String = null
   ): Anon_Authority = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(scheme = scheme)
     if (authority != null) __obj.updateDynamic("authority")(authority)
     if (fragment != null) __obj.updateDynamic("fragment")(fragment)
     if (path != null) __obj.updateDynamic("path")(path)

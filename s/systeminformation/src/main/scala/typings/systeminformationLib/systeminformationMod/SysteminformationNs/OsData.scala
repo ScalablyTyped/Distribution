@@ -28,15 +28,8 @@ object OsData {
     platform: java.lang.String,
     release: java.lang.String
   ): OsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arch")(arch)
-    __obj.updateDynamic("codename")(codename)
-    __obj.updateDynamic("distro")(distro)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("kernel")(kernel)
-    __obj.updateDynamic("logofile")(logofile)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(arch = arch, codename = codename, distro = distro, hostname = hostname, kernel = kernel, logofile = logofile, platform = platform, release = release)
+  
     __obj.asInstanceOf[OsData]
   }
 }

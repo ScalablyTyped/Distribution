@@ -22,8 +22,8 @@ object TSTypeParameterDeclaration {
     params: js.Array[astDashTypesLib.genKindsMod.TSTypeParameterKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameterDeclaration
   ): TSTypeParameterDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeParameterDeclaration]
   }
 }

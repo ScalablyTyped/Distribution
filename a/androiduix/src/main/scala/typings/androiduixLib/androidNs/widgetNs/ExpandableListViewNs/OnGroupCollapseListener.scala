@@ -12,8 +12,8 @@ trait OnGroupCollapseListener extends js.Object {
 object OnGroupCollapseListener {
   @scala.inline
   def apply(onGroupCollapse: js.Function1[scala.Double, scala.Unit]): OnGroupCollapseListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGroupCollapse")(onGroupCollapse)
+    val __obj = js.Dynamic.literal(onGroupCollapse = onGroupCollapse)
+  
     __obj.asInstanceOf[OnGroupCollapseListener]
   }
 }

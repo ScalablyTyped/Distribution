@@ -18,10 +18,8 @@ object ITriggeredConnectionStateChangedEventArgs {
     socket: winrtLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocket,
     state: TriggeredConnectState
   ): ITriggeredConnectionStateChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("socket")(socket)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(id = id, socket = socket, state = state)
+  
     __obj.asInstanceOf[ITriggeredConnectionStateChangedEventArgs]
   }
 }

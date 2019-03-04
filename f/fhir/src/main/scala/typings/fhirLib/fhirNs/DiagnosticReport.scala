@@ -139,9 +139,7 @@ object DiagnosticReport {
     subject: Reference = null,
     text: Narrative = null
   ): DiagnosticReport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(code = code, status = status)
     if (_conclusion != null) __obj.updateDynamic("_conclusion")(_conclusion)
     if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -38,11 +38,8 @@ object EndpointAddress {
     nodeName: java.lang.String,
     targetRef: ObjectReference
   ): EndpointAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("targetRef")(targetRef)
+    val __obj = js.Dynamic.literal(hostname = hostname, ip = ip, nodeName = nodeName, targetRef = targetRef)
+  
     __obj.asInstanceOf[EndpointAddress]
   }
 }

@@ -91,20 +91,8 @@ object OutputJax {
     preTranslate: js.Function1[js.Any, scala.Unit],
     version: java.lang.String
   ): OutputJax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Remove")(Remove)
-    __obj.updateDynamic("Translate")(Translate)
-    __obj.updateDynamic("Zoom")(Zoom)
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("fontDir")(fontDir)
-    __obj.updateDynamic("getJaxFromMath")(getJaxFromMath)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageDir")(imageDir)
-    __obj.updateDynamic("postTranslate")(postTranslate)
-    __obj.updateDynamic("preProcess")(preProcess)
-    __obj.updateDynamic("preTranslate")(preTranslate)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(Register = Register, Remove = Remove, Translate = Translate, Zoom = Zoom, directory = directory, fontDir = fontDir, getJaxFromMath = getJaxFromMath, id = id, imageDir = imageDir, postTranslate = postTranslate, preProcess = preProcess, preTranslate = preTranslate, version = version)
+  
     __obj.asInstanceOf[OutputJax]
   }
 }

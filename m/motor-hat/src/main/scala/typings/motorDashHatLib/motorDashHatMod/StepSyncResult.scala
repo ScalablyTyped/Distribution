@@ -23,10 +23,8 @@ trait StepSyncResult extends js.Object {
 object StepSyncResult {
   @scala.inline
   def apply(dir: Direction, duration: scala.Double, steps: scala.Double): StepSyncResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(dir = dir, duration = duration, steps = steps)
+  
     __obj.asInstanceOf[StepSyncResult]
   }
 }

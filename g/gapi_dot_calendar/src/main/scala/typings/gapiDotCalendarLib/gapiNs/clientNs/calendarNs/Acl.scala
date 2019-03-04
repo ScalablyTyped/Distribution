@@ -26,12 +26,8 @@ object Acl {
     role: AccessRole,
     scope: gapiDotCalendarLib.Anon_Type
   ): Acl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, role = role, scope = scope)
+  
     __obj.asInstanceOf[Acl]
   }
 }

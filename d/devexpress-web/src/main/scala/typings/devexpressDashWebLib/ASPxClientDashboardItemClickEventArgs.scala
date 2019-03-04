@@ -62,14 +62,8 @@ object ASPxClientDashboardItemClickEventArgs {
       scala.Unit
     ]
   ): ASPxClientDashboardItemClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAxisPoint")(GetAxisPoint)
-    __obj.updateDynamic("GetData")(GetData)
-    __obj.updateDynamic("GetDeltas")(GetDeltas)
-    __obj.updateDynamic("GetDimensions")(GetDimensions)
-    __obj.updateDynamic("GetMeasures")(GetMeasures)
-    __obj.updateDynamic("ItemName")(ItemName)
-    __obj.updateDynamic("RequestUnderlyingData")(RequestUnderlyingData)
+    val __obj = js.Dynamic.literal(GetAxisPoint = GetAxisPoint, GetData = GetData, GetDeltas = GetDeltas, GetDimensions = GetDimensions, GetMeasures = GetMeasures, ItemName = ItemName, RequestUnderlyingData = RequestUnderlyingData)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemClickEventArgs]
   }
 }

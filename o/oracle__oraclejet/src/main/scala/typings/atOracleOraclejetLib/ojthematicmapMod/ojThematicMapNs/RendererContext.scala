@@ -45,19 +45,7 @@ object RendererContext {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): RendererContext[K1, K2, K3, D1, D2, D3] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("previousState")(previousState)
-    __obj.updateDynamic("renderDefaultFocus")(renderDefaultFocus)
-    __obj.updateDynamic("renderDefaultHover")(renderDefaultHover)
-    __obj.updateDynamic("renderDefaultSelection")(renderDefaultSelection)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement, previousState = previousState, renderDefaultFocus = renderDefaultFocus, renderDefaultHover = renderDefaultHover, renderDefaultSelection = renderDefaultSelection, state = state)
     if (location != null) __obj.updateDynamic("location")(location)
     if (root != null) __obj.updateDynamic("root")(root)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])

@@ -21,10 +21,8 @@ object PhononCustomDialogComponent {
     ],
     open: js.Function0[scala.Unit]
   ): PhononCustomDialogComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(close = close, on = on, open = open)
+  
     __obj.asInstanceOf[PhononCustomDialogComponent]
   }
 }

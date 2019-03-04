@@ -12,8 +12,8 @@ trait IDecoder extends js.Object {
 object IDecoder {
   @scala.inline
   def apply(parse: js.Function1[java.lang.String, cryptojsLib.CryptoJSNs.libNs.WordArray]): IDecoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(parse = parse)
+  
     __obj.asInstanceOf[IDecoder]
   }
 }

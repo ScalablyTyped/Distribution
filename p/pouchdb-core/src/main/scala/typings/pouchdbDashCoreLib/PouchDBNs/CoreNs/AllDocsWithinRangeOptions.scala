@@ -33,9 +33,7 @@ object AllDocsWithinRangeOptions {
     limit: scala.Int | scala.Double = null,
     skip: scala.Int | scala.Double = null
   ): AllDocsWithinRangeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endkey")(endkey)
-    __obj.updateDynamic("startkey")(startkey)
+    val __obj = js.Dynamic.literal(endkey = endkey, startkey = startkey)
     if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)

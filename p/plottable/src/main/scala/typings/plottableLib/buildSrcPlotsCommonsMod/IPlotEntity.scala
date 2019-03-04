@@ -24,15 +24,8 @@ object IPlotEntity {
     position: plottableLib.buildSrcCoreInterfacesMod.Point,
     selection: plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_]
   ): IPlotEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("datasetIndex")(datasetIndex)
-    __obj.updateDynamic("datum")(datum)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal(bounds = bounds, component = component, dataset = dataset, datasetIndex = datasetIndex, datum = datum, index = index, position = position, selection = selection)
+  
     __obj.asInstanceOf[IPlotEntity]
   }
 }

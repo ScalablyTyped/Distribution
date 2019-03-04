@@ -26,9 +26,8 @@ trait Optional[T] extends js.Object {
 object Optional {
   @scala.inline
   def apply[T](IsPresent: scala.Boolean, Value: T): Optional[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsPresent")(IsPresent)
-    __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(IsPresent = IsPresent, Value = Value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Optional[T]]
   }
 }

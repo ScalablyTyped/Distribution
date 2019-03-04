@@ -24,9 +24,7 @@ object CommandHelpFormatterDeps {
     colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = null,
     metadata: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O] = null
   ): CommandHelpFormatterDeps[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], location = location)
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpFormatterDeps[C, N, M, I, O]]

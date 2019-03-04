@@ -46,38 +46,8 @@ object DataPilotTable {
     setSourceRange: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
     setTag: js.Function1[java.lang.String, scala.Unit]
   ): DataPilotTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnFields")(ColumnFields)
-    __obj.updateDynamic("DataFields")(DataFields)
-    __obj.updateDynamic("DataPilotFields")(DataPilotFields)
-    __obj.updateDynamic("FilterDescriptor")(FilterDescriptor)
-    __obj.updateDynamic("HiddenFields")(HiddenFields)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OutputRange")(OutputRange)
-    __obj.updateDynamic("PageFields")(PageFields)
-    __obj.updateDynamic("RowFields")(RowFields)
-    __obj.updateDynamic("SourceRange")(SourceRange)
-    __obj.updateDynamic("Tag")(Tag)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("getColumnFields")(getColumnFields)
-    __obj.updateDynamic("getDataFields")(getDataFields)
-    __obj.updateDynamic("getDataPilotFields")(getDataPilotFields)
-    __obj.updateDynamic("getFilterDescriptor")(getFilterDescriptor)
-    __obj.updateDynamic("getHiddenFields")(getHiddenFields)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getOutputRange")(getOutputRange)
-    __obj.updateDynamic("getPageFields")(getPageFields)
-    __obj.updateDynamic("getRowFields")(getRowFields)
-    __obj.updateDynamic("getSourceRange")(getSourceRange)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setSourceRange")(setSourceRange)
-    __obj.updateDynamic("setTag")(setTag)
+    val __obj = js.Dynamic.literal(ColumnFields = ColumnFields, DataFields = DataFields, DataPilotFields = DataPilotFields, FilterDescriptor = FilterDescriptor, HiddenFields = HiddenFields, Name = Name, OutputRange = OutputRange, PageFields = PageFields, RowFields = RowFields, SourceRange = SourceRange, Tag = Tag, acquire = acquire, addModifyListener = addModifyListener, getColumnFields = getColumnFields, getDataFields = getDataFields, getDataPilotFields = getDataPilotFields, getFilterDescriptor = getFilterDescriptor, getHiddenFields = getHiddenFields, getName = getName, getOutputRange = getOutputRange, getPageFields = getPageFields, getRowFields = getRowFields, getSourceRange = getSourceRange, getTag = getTag, queryInterface = queryInterface, refresh = refresh, release = release, removeModifyListener = removeModifyListener, setName = setName, setSourceRange = setSourceRange, setTag = setTag)
+  
     __obj.asInstanceOf[DataPilotTable]
   }
 }

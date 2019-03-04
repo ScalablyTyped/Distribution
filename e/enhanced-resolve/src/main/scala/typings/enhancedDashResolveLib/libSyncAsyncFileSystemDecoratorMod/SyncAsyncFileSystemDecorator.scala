@@ -114,8 +114,7 @@ object SyncAsyncFileSystemDecorator {
       scala.Unit
     ] = null
   ): SyncAsyncFileSystemDecorator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fs")(fs)
+    val __obj = js.Dynamic.literal(fs = fs)
     if (readFile != null) __obj.updateDynamic("readFile")(readFile)
     if (readJson != null) __obj.updateDynamic("readJson")(readJson)
     if (readdir != null) __obj.updateDynamic("readdir")(readdir)

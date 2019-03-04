@@ -36,12 +36,8 @@ object XDTDHandler {
     release: js.Function0[scala.Unit],
     unparsedEntityDecl: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit]
   ): XDTDHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("notationDecl")(notationDecl)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("unparsedEntityDecl")(unparsedEntityDecl)
+    val __obj = js.Dynamic.literal(acquire = acquire, notationDecl = notationDecl, queryInterface = queryInterface, release = release, unparsedEntityDecl = unparsedEntityDecl)
+  
     __obj.asInstanceOf[XDTDHandler]
   }
 }

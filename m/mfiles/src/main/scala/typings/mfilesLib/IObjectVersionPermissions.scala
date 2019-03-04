@@ -20,11 +20,8 @@ object IObjectVersionPermissions {
     NamedACL: INamedACL,
     ObjVer: IObjVer
   ): IObjectVersionPermissions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("CustomACL")(CustomACL)
-    __obj.updateDynamic("NamedACL")(NamedACL)
-    __obj.updateDynamic("ObjVer")(ObjVer)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, CustomACL = CustomACL, NamedACL = NamedACL, ObjVer = ObjVer)
+  
     __obj.asInstanceOf[IObjectVersionPermissions]
   }
 }

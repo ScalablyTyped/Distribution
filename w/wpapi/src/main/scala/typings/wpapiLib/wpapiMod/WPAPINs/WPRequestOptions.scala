@@ -25,8 +25,7 @@ object WPRequestOptions {
     transport: Transport = null,
     username: java.lang.String = null
   ): WPRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(endpoint = endpoint)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (password != null) __obj.updateDynamic("password")(password)
     if (transport != null) __obj.updateDynamic("transport")(transport)

@@ -31,10 +31,8 @@ object TSInterfaceDeclaration {
     `extends`: js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind] = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSInterfaceDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("declare")(declare)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, declare = declare, id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TSInterfaceDeclaration]

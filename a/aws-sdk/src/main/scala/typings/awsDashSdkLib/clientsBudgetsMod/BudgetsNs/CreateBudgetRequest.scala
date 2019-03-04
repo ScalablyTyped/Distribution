@@ -27,9 +27,7 @@ object CreateBudgetRequest {
     Budget: Budget,
     NotificationsWithSubscribers: NotificationWithSubscribersList = null
   ): CreateBudgetRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("Budget")(Budget)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, Budget = Budget)
     if (NotificationsWithSubscribers != null) __obj.updateDynamic("NotificationsWithSubscribers")(NotificationsWithSubscribers)
     __obj.asInstanceOf[CreateBudgetRequest]
   }

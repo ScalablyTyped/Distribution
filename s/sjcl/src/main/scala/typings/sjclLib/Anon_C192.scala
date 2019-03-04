@@ -26,14 +26,8 @@ object Anon_C192 {
     k224: sjclLib.sjclMod.sjclNs.SjclEllipticalCurve,
     k256: sjclLib.sjclMod.sjclNs.SjclEllipticalCurve
   ): Anon_C192 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c192")(c192)
-    __obj.updateDynamic("c224")(c224)
-    __obj.updateDynamic("c256")(c256)
-    __obj.updateDynamic("c384")(c384)
-    __obj.updateDynamic("k192")(k192)
-    __obj.updateDynamic("k224")(k224)
-    __obj.updateDynamic("k256")(k256)
+    val __obj = js.Dynamic.literal(c192 = c192, c224 = c224, c256 = c256, c384 = c384, k192 = k192, k224 = k224, k256 = k256)
+  
     __obj.asInstanceOf[Anon_C192]
   }
 }

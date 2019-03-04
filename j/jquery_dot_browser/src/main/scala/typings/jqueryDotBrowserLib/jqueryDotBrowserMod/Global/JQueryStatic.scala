@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(browser: jqueryDotBrowserLib.jqueryDotBrowserMod.Matchs): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browser")(browser)
+    val __obj = js.Dynamic.literal(browser = browser)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

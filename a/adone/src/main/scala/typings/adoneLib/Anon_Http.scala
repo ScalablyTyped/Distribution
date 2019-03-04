@@ -12,8 +12,8 @@ trait Anon_Http extends js.Object {
 object Anon_Http {
   @scala.inline
   def apply(httpNs: Anon_Client): Anon_Http = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpNs")(httpNs)
+    val __obj = js.Dynamic.literal(httpNs = httpNs)
+  
     __obj.asInstanceOf[Anon_Http]
   }
 }

@@ -184,7 +184,7 @@ package object underscoreNs {
   type ValueKeyIteratee[T] = (js.Function2[/* value */ T, /* key */ java.lang.String, NotVoid]) | IterateeShorthand[T]
   type ValueKeyIterateeTypeGuard[T, S /* <: T */] = js.Function2[/* value */ T, /* key */ java.lang.String, /* is S */ scala.Boolean]
   /** The placeholder, to be used in curried functions */
-  type `__` = LoDashStatic
+  type __ = LoDashStatic
   // isMatch
   type isMatchCustomizer = js.Function3[
     /* value */ js.Any, 

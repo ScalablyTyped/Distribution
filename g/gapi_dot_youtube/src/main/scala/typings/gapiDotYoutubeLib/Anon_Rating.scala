@@ -19,9 +19,8 @@ trait Anon_Rating extends js.Object {
 object Anon_Rating {
   @scala.inline
   def apply(rating: java.lang.String, videoId: java.lang.String): Anon_Rating = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(rating = rating, videoId = videoId)
+  
     __obj.asInstanceOf[Anon_Rating]
   }
 }

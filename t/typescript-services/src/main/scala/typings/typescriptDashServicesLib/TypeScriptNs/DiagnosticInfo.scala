@@ -14,10 +14,8 @@ trait DiagnosticInfo extends js.Object {
 object DiagnosticInfo {
   @scala.inline
   def apply(category: DiagnosticCategory, code: scala.Double, message: java.lang.String): DiagnosticInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(category = category, code = code, message = message)
+  
     __obj.asInstanceOf[DiagnosticInfo]
   }
 }

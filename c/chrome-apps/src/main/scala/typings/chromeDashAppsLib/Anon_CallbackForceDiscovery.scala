@@ -53,10 +53,8 @@ object Anon_CallbackForceDiscovery {
       chromeDashAppsLib.chromeNs.mdnsNs.ServiceTypes
     ]
   ): Anon_CallbackForceDiscovery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MAX_SERVICE_INSTANCES_PER_EVENT")(MAX_SERVICE_INSTANCES_PER_EVENT)
-    __obj.updateDynamic("forceDiscovery")(forceDiscovery)
-    __obj.updateDynamic("onServiceList")(onServiceList)
+    val __obj = js.Dynamic.literal(MAX_SERVICE_INSTANCES_PER_EVENT = MAX_SERVICE_INSTANCES_PER_EVENT, forceDiscovery = forceDiscovery, onServiceList = onServiceList)
+  
     __obj.asInstanceOf[Anon_CallbackForceDiscovery]
   }
 }

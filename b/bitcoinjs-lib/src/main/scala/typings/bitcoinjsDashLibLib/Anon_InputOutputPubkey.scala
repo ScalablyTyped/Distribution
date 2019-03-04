@@ -22,12 +22,8 @@ object Anon_InputOutputPubkey {
     signature: nodeLib.Buffer,
     witness: js.Array[nodeLib.Buffer]
   ): Anon_InputOutputPubkey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("pubkey")(pubkey)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("witness")(witness)
+    val __obj = js.Dynamic.literal(input = input, output = output, pubkey = pubkey, signature = signature, witness = witness)
+  
     __obj.asInstanceOf[Anon_InputOutputPubkey]
   }
 }

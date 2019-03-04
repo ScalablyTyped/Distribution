@@ -146,8 +146,7 @@ object GeoJSONProps {
     style: leafletLib.leafletMod.PathOptions | leafletLib.leafletMod.StyleFunction[js.Any] = null,
     weight: scala.Int | scala.Double = null
   ): GeoJSONProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

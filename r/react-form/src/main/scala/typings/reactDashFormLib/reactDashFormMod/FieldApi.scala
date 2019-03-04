@@ -34,18 +34,8 @@ object FieldApi {
     setValue: js.Function1[FormValue, scala.Unit],
     setWarning: js.Function1[FormError, scala.Unit]
   ): FieldApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getError")(getError)
-    __obj.updateDynamic("getFieldName")(getFieldName)
-    __obj.updateDynamic("getSuccess")(getSuccess)
-    __obj.updateDynamic("getTouched")(getTouched)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("getWarning")(getWarning)
-    __obj.updateDynamic("setError")(setError)
-    __obj.updateDynamic("setSuccess")(setSuccess)
-    __obj.updateDynamic("setTouched")(setTouched)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setWarning")(setWarning)
+    val __obj = js.Dynamic.literal(getError = getError, getFieldName = getFieldName, getSuccess = getSuccess, getTouched = getTouched, getValue = getValue, getWarning = getWarning, setError = setError, setSuccess = setSuccess, setTouched = setTouched, setValue = setValue, setWarning = setWarning)
+  
     __obj.asInstanceOf[FieldApi]
   }
 }

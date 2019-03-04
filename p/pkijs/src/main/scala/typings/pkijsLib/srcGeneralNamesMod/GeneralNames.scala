@@ -20,11 +20,8 @@ object GeneralNames {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): GeneralNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, names = names, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[GeneralNames]
   }
 }

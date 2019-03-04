@@ -23,10 +23,7 @@ object MapShapeFeatureCreatedEvent {
     layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.layerNs.Shape = null,
     properties: js.Any = null
   ): MapShapeFeatureCreatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (dataItem != null) __obj.updateDynamic("dataItem")(dataItem)
     if (group != null) __obj.updateDynamic("group")(group)
     if (layer != null) __obj.updateDynamic("layer")(layer)

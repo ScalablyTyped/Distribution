@@ -15,10 +15,8 @@ trait IGenericListLayout extends IGenericBaseLayout {
 object IGenericListLayout {
   @scala.inline
   def apply(qInfo: INxInfo, qListObject: IListObject, qMeta: INxMeta): IGenericListLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qListObject")(qListObject)
-    __obj.updateDynamic("qMeta")(qMeta)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qListObject = qListObject, qMeta = qMeta)
+  
     __obj.asInstanceOf[IGenericListLayout]
   }
 }

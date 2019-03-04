@@ -149,14 +149,7 @@ object relationshipCreateRendererParams {
     relationshipScheme: RelationshipScheme = null,
     symbolType: java.lang.String = null
   ): relationshipCreateRendererParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field1")(field1)
-    __obj.updateDynamic("field2")(field2)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(constructor = constructor, field1 = field1, field2 = field2, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable, view = view)
     if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
     if (colorMixMode != null) __obj.updateDynamic("colorMixMode")(colorMixMode)

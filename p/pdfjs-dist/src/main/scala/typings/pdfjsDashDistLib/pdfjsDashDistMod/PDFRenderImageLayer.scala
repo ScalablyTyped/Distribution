@@ -18,10 +18,8 @@ object PDFRenderImageLayer {
     beginLayout: js.Function0[scala.Unit],
     endLayout: js.Function0[scala.Unit]
   ): PDFRenderImageLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendImage")(appendImage)
-    __obj.updateDynamic("beginLayout")(beginLayout)
-    __obj.updateDynamic("endLayout")(endLayout)
+    val __obj = js.Dynamic.literal(appendImage = appendImage, beginLayout = beginLayout, endLayout = endLayout)
+  
     __obj.asInstanceOf[PDFRenderImageLayer]
   }
 }

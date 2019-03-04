@@ -12,8 +12,8 @@ trait Route extends js.Object {
 object Route {
   @scala.inline
   def apply(route: java.lang.String): Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(route = route)
+  
     __obj.asInstanceOf[Route]
   }
 }

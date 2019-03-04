@@ -39,20 +39,8 @@ object Console {
     unpipe: js.Function1[js.Any, Transform],
     write: js.Function3[js.Any, js.Any, js.Any, scala.Unit]
   ): Console = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("formatClean")(formatClean)
-    __obj.updateDynamic("formatColor")(formatColor)
-    __obj.updateDynamic("formatLearnboost")(formatLearnboost)
-    __obj.updateDynamic("formatMinilog")(formatMinilog)
-    __obj.updateDynamic("formatNpm")(formatNpm)
-    __obj.updateDynamic("formatWithStack")(formatWithStack)
-    __obj.updateDynamic("formatters")(formatters)
-    __obj.updateDynamic("minilog")(minilog)
-    __obj.updateDynamic("mixin")(mixin)
-    __obj.updateDynamic("pipe")(pipe)
-    __obj.updateDynamic("unpipe")(unpipe)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(color = color, formatClean = formatClean, formatColor = formatColor, formatLearnboost = formatLearnboost, formatMinilog = formatMinilog, formatNpm = formatNpm, formatWithStack = formatWithStack, formatters = formatters, minilog = minilog, mixin = mixin, pipe = pipe, unpipe = unpipe, write = write)
+  
     __obj.asInstanceOf[Console]
   }
 }

@@ -20,9 +20,7 @@ object PublicKeyAuthMethodData {
     blob: nodeLib.Buffer = null,
     signature: nodeLib.Buffer = null
   ): PublicKeyAuthMethodData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyAlgo")(keyAlgo)
+    val __obj = js.Dynamic.literal(key = key, keyAlgo = keyAlgo)
     if (blob != null) __obj.updateDynamic("blob")(blob)
     if (signature != null) __obj.updateDynamic("signature")(signature)
     __obj.asInstanceOf[PublicKeyAuthMethodData]

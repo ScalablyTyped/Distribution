@@ -78,17 +78,8 @@ object HelloSignStatic {
     init: js.Function1[java.lang.String, scala.Unit],
     open: js.Function1[OpenParameters, scala.Unit]
   ): HelloSignStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CULTURES")(CULTURES)
-    __obj.updateDynamic("EVENT_CANCELED")(EVENT_CANCELED)
-    __obj.updateDynamic("EVENT_DECLINED")(EVENT_DECLINED)
-    __obj.updateDynamic("EVENT_ERROR")(EVENT_ERROR)
-    __obj.updateDynamic("EVENT_SENT")(EVENT_SENT)
-    __obj.updateDynamic("EVENT_SIGNED")(EVENT_SIGNED)
-    __obj.updateDynamic("EVENT_TEMPLATE_CREATED")(EVENT_TEMPLATE_CREATED)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(CULTURES = CULTURES, EVENT_CANCELED = EVENT_CANCELED, EVENT_DECLINED = EVENT_DECLINED, EVENT_ERROR = EVENT_ERROR, EVENT_SENT = EVENT_SENT, EVENT_SIGNED = EVENT_SIGNED, EVENT_TEMPLATE_CREATED = EVENT_TEMPLATE_CREATED, close = close, init = init, open = open)
+  
     __obj.asInstanceOf[HelloSignStatic]
   }
 }

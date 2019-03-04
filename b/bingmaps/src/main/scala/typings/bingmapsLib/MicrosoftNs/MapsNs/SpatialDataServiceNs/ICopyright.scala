@@ -15,9 +15,8 @@ trait ICopyright extends js.Object {
 object ICopyright {
   @scala.inline
   def apply(CopyrightURL: java.lang.String, Sources: js.Array[ICopyrightSource]): ICopyright = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CopyrightURL")(CopyrightURL)
-    __obj.updateDynamic("Sources")(Sources)
+    val __obj = js.Dynamic.literal(CopyrightURL = CopyrightURL, Sources = Sources)
+  
     __obj.asInstanceOf[ICopyright]
   }
 }

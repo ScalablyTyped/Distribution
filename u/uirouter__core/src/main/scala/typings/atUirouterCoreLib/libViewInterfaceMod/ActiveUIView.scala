@@ -34,14 +34,8 @@ object ActiveUIView {
     id: scala.Double,
     name: java.lang.String
   ): ActiveUIView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("configUpdated")(configUpdated)
-    __obj.updateDynamic("creationContext")(creationContext)
-    __obj.updateDynamic("fqn")(fqn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal($type = $type, config = config, configUpdated = configUpdated, creationContext = creationContext, fqn = fqn, id = id, name = name)
+  
     __obj.asInstanceOf[ActiveUIView]
   }
 }

@@ -30,8 +30,7 @@ object config {
     usePlugins: js.Array[java.lang.String] = null,
     webhook: telebotLib.Anon_Cert = null
   ): config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
     if (allowedUpdates != null) __obj.updateDynamic("allowedUpdates")(allowedUpdates)
     if (pluginConfig != null) __obj.updateDynamic("pluginConfig")(pluginConfig)
     if (pluginFolder != null) __obj.updateDynamic("pluginFolder")(pluginFolder)

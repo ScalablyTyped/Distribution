@@ -26,14 +26,8 @@ object ShellNameSpace_FavoritesSelectionChange_Parameter {
     strName: java.lang.String,
     strUrl: java.lang.String
   ): ShellNameSpace_FavoritesSelectionChange_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cItems")(cItems)
-    __obj.updateDynamic("cVisits")(cVisits)
-    __obj.updateDynamic("fAvailableOffline")(fAvailableOffline)
-    __obj.updateDynamic("hItem")(hItem)
-    __obj.updateDynamic("strDate")(strDate)
-    __obj.updateDynamic("strName")(strName)
-    __obj.updateDynamic("strUrl")(strUrl)
+    val __obj = js.Dynamic.literal(cItems = cItems, cVisits = cVisits, fAvailableOffline = fAvailableOffline, hItem = hItem, strDate = strDate, strName = strName, strUrl = strUrl)
+  
     __obj.asInstanceOf[ShellNameSpace_FavoritesSelectionChange_Parameter]
   }
 }

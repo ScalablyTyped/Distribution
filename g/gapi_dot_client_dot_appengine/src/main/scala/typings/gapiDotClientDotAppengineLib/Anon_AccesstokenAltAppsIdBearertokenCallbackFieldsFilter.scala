@@ -64,8 +64,7 @@ object Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsFilter {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appsId")(appsId)
+    val __obj = js.Dynamic.literal(appsId = appsId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

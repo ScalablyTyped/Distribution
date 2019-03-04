@@ -15,11 +15,8 @@ trait PublishData extends js.Object {
 object PublishData {
   @scala.inline
   def apply(channel: java.lang.String, data: js.Any, poolIndex: scala.Double, targetURI: java.lang.String): PublishData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("poolIndex")(poolIndex)
-    __obj.updateDynamic("targetURI")(targetURI)
+    val __obj = js.Dynamic.literal(channel = channel, data = data, poolIndex = poolIndex, targetURI = targetURI)
+  
     __obj.asInstanceOf[PublishData]
   }
 }

@@ -22,9 +22,8 @@ object DashboardArgs {
     dashboardBody: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     dashboardName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): DashboardArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dashboardBody")(dashboardBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("dashboardName")(dashboardName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dashboardBody = dashboardBody.asInstanceOf[js.Any], dashboardName = dashboardName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DashboardArgs]
   }
 }

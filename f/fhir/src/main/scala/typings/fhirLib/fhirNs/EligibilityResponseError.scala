@@ -26,8 +26,7 @@ object EligibilityResponseError {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): EligibilityResponseError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (extension != null) __obj.updateDynamic("extension")(extension)

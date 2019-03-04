@@ -12,8 +12,8 @@ trait ListLinks extends js.Object {
 object ListLinks {
   @scala.inline
   def apply(next: java.lang.String): ListLinks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
+    val __obj = js.Dynamic.literal(next = next)
+  
     __obj.asInstanceOf[ListLinks]
   }
 }

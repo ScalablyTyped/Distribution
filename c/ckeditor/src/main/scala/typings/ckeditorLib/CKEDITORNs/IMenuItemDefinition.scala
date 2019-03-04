@@ -22,12 +22,8 @@ object IMenuItemDefinition {
     label: java.lang.String,
     order: scala.Double
   ): IMenuItemDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("order")(order)
+    val __obj = js.Dynamic.literal(command = command, group = group, icon = icon, label = label, order = order)
+  
     __obj.asInstanceOf[IMenuItemDefinition]
   }
 }

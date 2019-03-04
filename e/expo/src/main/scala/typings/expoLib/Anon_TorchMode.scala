@@ -12,8 +12,8 @@ trait Anon_TorchMode extends js.Object {
 object Anon_TorchMode {
   @scala.inline
   def apply(TorchMode: Anon_Off): Anon_TorchMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TorchMode")(TorchMode)
+    val __obj = js.Dynamic.literal(TorchMode = TorchMode)
+  
     __obj.asInstanceOf[Anon_TorchMode]
   }
 }

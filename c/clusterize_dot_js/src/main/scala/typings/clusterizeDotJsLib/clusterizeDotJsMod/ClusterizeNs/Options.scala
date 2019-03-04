@@ -34,9 +34,7 @@ object Options {
     show_no_data_row: js.UndefOr[scala.Boolean] = js.undefined,
     tag: java.lang.String = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentId")(contentId)
-    __obj.updateDynamic("scrollId")(scrollId)
+    val __obj = js.Dynamic.literal(contentId = contentId, scrollId = scrollId)
     if (blocks_in_cluster != null) __obj.updateDynamic("blocks_in_cluster")(blocks_in_cluster.asInstanceOf[js.Any])
     if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
     if (!js.isUndefined(keep_parity)) __obj.updateDynamic("keep_parity")(keep_parity)

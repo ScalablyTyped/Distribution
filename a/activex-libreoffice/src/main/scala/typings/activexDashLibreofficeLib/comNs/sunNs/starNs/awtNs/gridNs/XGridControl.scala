@@ -74,14 +74,8 @@ object XGridControl {
     getRowAtPoint: js.Function2[scala.Double, scala.Double, scala.Double],
     goToCell: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XGridControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentColumn")(CurrentColumn)
-    __obj.updateDynamic("CurrentRow")(CurrentRow)
-    __obj.updateDynamic("getColumnAtPoint")(getColumnAtPoint)
-    __obj.updateDynamic("getCurrentColumn")(getCurrentColumn)
-    __obj.updateDynamic("getCurrentRow")(getCurrentRow)
-    __obj.updateDynamic("getRowAtPoint")(getRowAtPoint)
-    __obj.updateDynamic("goToCell")(goToCell)
+    val __obj = js.Dynamic.literal(CurrentColumn = CurrentColumn, CurrentRow = CurrentRow, getColumnAtPoint = getColumnAtPoint, getCurrentColumn = getCurrentColumn, getCurrentRow = getCurrentRow, getRowAtPoint = getRowAtPoint, goToCell = goToCell)
+  
     __obj.asInstanceOf[XGridControl]
   }
 }

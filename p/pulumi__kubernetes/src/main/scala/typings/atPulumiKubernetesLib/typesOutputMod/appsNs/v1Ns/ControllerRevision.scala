@@ -54,12 +54,8 @@ object ControllerRevision {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     revision: scala.Double
   ): ControllerRevision = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, data = data, kind = kind, metadata = metadata, revision = revision)
+  
     __obj.asInstanceOf[ControllerRevision]
   }
 }

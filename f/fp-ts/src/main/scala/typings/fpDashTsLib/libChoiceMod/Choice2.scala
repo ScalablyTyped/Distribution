@@ -43,12 +43,8 @@ object Choice2 {
       ]
     ]
   ): Choice2[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("promap")(promap)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], left = left, map = map, promap = promap, right = right)
+  
     __obj.asInstanceOf[Choice2[F]]
   }
 }

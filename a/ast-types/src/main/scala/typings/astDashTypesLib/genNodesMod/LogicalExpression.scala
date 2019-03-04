@@ -26,10 +26,8 @@ object LogicalExpression {
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.LogicalExpression
   ): LogicalExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, operator = operator.asInstanceOf[js.Any], right = right)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LogicalExpression]
   }
 }

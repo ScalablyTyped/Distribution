@@ -17,8 +17,8 @@ trait Anon_Close extends js.Object {
 object Anon_CLOSE {
   @scala.inline
   def apply(CLOSE: java.lang.String): Anon_CLOSE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CLOSE")(CLOSE)
+    val __obj = js.Dynamic.literal(CLOSE = CLOSE)
+  
     __obj.asInstanceOf[Anon_CLOSE]
   }
 }
@@ -26,9 +26,8 @@ object Anon_CLOSE {
 object Anon_Close {
   @scala.inline
   def apply(close: java.lang.String, open: java.lang.String): Anon_Close = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(close = close, open = open)
+  
     __obj.asInstanceOf[Anon_Close]
   }
 }

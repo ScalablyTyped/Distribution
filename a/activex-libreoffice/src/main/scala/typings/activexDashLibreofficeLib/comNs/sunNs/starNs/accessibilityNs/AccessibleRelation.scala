@@ -34,9 +34,8 @@ object AccessibleRelation {
     RelationType: scala.Double,
     TargetSet: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface]
   ): AccessibleRelation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RelationType")(RelationType)
-    __obj.updateDynamic("TargetSet")(TargetSet)
+    val __obj = js.Dynamic.literal(RelationType = RelationType, TargetSet = TargetSet)
+  
     __obj.asInstanceOf[AccessibleRelation]
   }
 }

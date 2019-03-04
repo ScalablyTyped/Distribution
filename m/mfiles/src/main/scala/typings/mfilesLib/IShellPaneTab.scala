@@ -42,22 +42,8 @@ object IShellPaneTab {
     Unselect: js.Function0[scala.Unit],
     Visible: scala.Boolean
   ): IShellPaneTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("IsBuiltIn")(IsBuiltIn)
-    __obj.updateDynamic("Remove")(Remove)
-    __obj.updateDynamic("Select")(Select)
-    __obj.updateDynamic("Selected")(Selected)
-    __obj.updateDynamic("ShowDashboard")(ShowDashboard)
-    __obj.updateDynamic("ShowEmptyContent")(ShowEmptyContent)
-    __obj.updateDynamic("ShowFilePreview")(ShowFilePreview)
-    __obj.updateDynamic("ShowObjectVersionProperties")(ShowObjectVersionProperties)
-    __obj.updateDynamic("ShowPersistentContent")(ShowPersistentContent)
-    __obj.updateDynamic("ShowSSRSReport")(ShowSSRSReport)
-    __obj.updateDynamic("TabId")(TabId)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Unselect")(Unselect)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(Events = Events, IsBuiltIn = IsBuiltIn, Remove = Remove, Select = Select, Selected = Selected, ShowDashboard = ShowDashboard, ShowEmptyContent = ShowEmptyContent, ShowFilePreview = ShowFilePreview, ShowObjectVersionProperties = ShowObjectVersionProperties, ShowPersistentContent = ShowPersistentContent, ShowSSRSReport = ShowSSRSReport, TabId = TabId, Title = Title, Unselect = Unselect, Visible = Visible)
+  
     __obj.asInstanceOf[IShellPaneTab]
   }
 }

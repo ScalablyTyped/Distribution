@@ -37,8 +37,7 @@ object KeysAndAttributes {
     ExpressionAttributeNames: ExpressionAttributeNameMap = null,
     ProjectionExpression: ProjectionExpression = null
   ): KeysAndAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Keys")(Keys)
+    val __obj = js.Dynamic.literal(Keys = Keys)
     if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
     if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
     if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)

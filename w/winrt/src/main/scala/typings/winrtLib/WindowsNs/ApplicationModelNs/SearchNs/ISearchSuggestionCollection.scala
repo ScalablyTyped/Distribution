@@ -38,12 +38,8 @@ object ISearchSuggestionCollection {
     appendSearchSeparator: js.Function1[java.lang.String, scala.Unit],
     size: scala.Double
   ): ISearchSuggestionCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendQuerySuggestion")(appendQuerySuggestion)
-    __obj.updateDynamic("appendQuerySuggestions")(appendQuerySuggestions)
-    __obj.updateDynamic("appendResultSuggestion")(appendResultSuggestion)
-    __obj.updateDynamic("appendSearchSeparator")(appendSearchSeparator)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(appendQuerySuggestion = appendQuerySuggestion, appendQuerySuggestions = appendQuerySuggestions, appendResultSuggestion = appendResultSuggestion, appendSearchSeparator = appendSearchSeparator, size = size)
+  
     __obj.asInstanceOf[ISearchSuggestionCollection]
   }
 }

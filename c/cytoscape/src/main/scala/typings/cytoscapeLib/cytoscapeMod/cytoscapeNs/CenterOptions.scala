@@ -12,8 +12,8 @@ trait CenterOptions extends js.Object {
 object CenterOptions {
   @scala.inline
   def apply(eles: CollectionArgument | Selector): CenterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eles")(eles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eles = eles.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CenterOptions]
   }
 }

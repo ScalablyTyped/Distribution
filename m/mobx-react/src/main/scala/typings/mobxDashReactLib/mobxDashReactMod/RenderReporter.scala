@@ -12,8 +12,8 @@ trait RenderReporter extends js.Object {
 object RenderReporter {
   @scala.inline
   def apply(on: js.Function1[js.Function1[/* data */ IRenderEvent, scala.Unit], scala.Unit]): RenderReporter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
+  
     __obj.asInstanceOf[RenderReporter]
   }
 }

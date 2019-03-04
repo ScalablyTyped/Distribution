@@ -20,11 +20,8 @@ object Auth0Identity {
     provider: java.lang.String,
     user_id: java.lang.String
   ): Auth0Identity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("isSocial")(isSocial)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("user_id")(user_id)
+    val __obj = js.Dynamic.literal(connection = connection, isSocial = isSocial, provider = provider, user_id = user_id)
+  
     __obj.asInstanceOf[Auth0Identity]
   }
 }

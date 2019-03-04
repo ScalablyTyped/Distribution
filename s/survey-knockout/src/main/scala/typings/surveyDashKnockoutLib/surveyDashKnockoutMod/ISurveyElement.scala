@@ -32,17 +32,8 @@ object ISurveyElement {
     setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
     setVisibleIndex: js.Function1[scala.Double, scala.Double]
   ): ISurveyElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isPage")(isPage)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("locStrsChanged")(locStrsChanged)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onFirstRendering")(onFirstRendering)
-    __obj.updateDynamic("onSurveyLoad")(onSurveyLoad)
-    __obj.updateDynamic("setSurveyImpl")(setSurveyImpl)
-    __obj.updateDynamic("setVisibleIndex")(setVisibleIndex)
+    val __obj = js.Dynamic.literal(getType = getType, isPage = isPage, isReadOnly = isReadOnly, isVisible = isVisible, locStrsChanged = locStrsChanged, name = name, onFirstRendering = onFirstRendering, onSurveyLoad = onSurveyLoad, setSurveyImpl = setSurveyImpl, setVisibleIndex = setVisibleIndex)
+  
     __obj.asInstanceOf[ISurveyElement]
   }
 }

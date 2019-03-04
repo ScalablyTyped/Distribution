@@ -16,9 +16,8 @@ object Anon_GetMessageID {
     getMessageID: js.Function0[js.Promise[java.lang.String]],
     getThreadID: js.Function0[js.Promise[java.lang.String]]
   ): Anon_GetMessageID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getMessageID")(getMessageID)
-    __obj.updateDynamic("getThreadID")(getThreadID)
+    val __obj = js.Dynamic.literal(getMessageID = getMessageID, getThreadID = getThreadID)
+  
     __obj.asInstanceOf[Anon_GetMessageID]
   }
 }

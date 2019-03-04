@@ -66,19 +66,8 @@ object SMTPServerSession {
     tlsOptions: nodeLib.tlsMod.TlsOptions,
     transmissionType: java.lang.String
   ): SMTPServerSession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHostname")(clientHostname)
-    __obj.updateDynamic("envelope")(envelope)
-    __obj.updateDynamic("hostNameAppearsAs")(hostNameAppearsAs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("localAddress")(localAddress)
-    __obj.updateDynamic("localPort")(localPort)
-    __obj.updateDynamic("openingCommand")(openingCommand)
-    __obj.updateDynamic("remoteAddress")(remoteAddress)
-    __obj.updateDynamic("remotePort")(remotePort)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("tlsOptions")(tlsOptions)
-    __obj.updateDynamic("transmissionType")(transmissionType)
+    val __obj = js.Dynamic.literal(clientHostname = clientHostname, envelope = envelope, hostNameAppearsAs = hostNameAppearsAs, id = id, localAddress = localAddress, localPort = localPort, openingCommand = openingCommand, remoteAddress = remoteAddress, remotePort = remotePort, secure = secure, tlsOptions = tlsOptions, transmissionType = transmissionType)
+  
     __obj.asInstanceOf[SMTPServerSession]
   }
 }

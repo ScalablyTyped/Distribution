@@ -34,9 +34,7 @@ object CookieDefinition {
     session: js.UndefOr[scala.Boolean] = js.undefined,
     value: java.lang.String = null
   ): CookieDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(domain = domain, path = path)
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (!js.isUndefined(hostOnly)) __obj.updateDynamic("hostOnly")(hostOnly)

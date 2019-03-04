@@ -13,9 +13,8 @@ trait SharedElementProps extends js.Object {
 object SharedElementProps {
   @scala.inline
   def apply(elementId: java.lang.String, resizeMode: java.lang.String): SharedElementProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elementId")(elementId)
-    __obj.updateDynamic("resizeMode")(resizeMode)
+    val __obj = js.Dynamic.literal(elementId = elementId, resizeMode = resizeMode)
+  
     __obj.asInstanceOf[SharedElementProps]
   }
 }

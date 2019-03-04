@@ -21,8 +21,7 @@ object IEnvelope {
     data: T = null,
     timeStamp: java.lang.String = null
   ): IEnvelope[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(topic = topic)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (timeStamp != null) __obj.updateDynamic("timeStamp")(timeStamp)

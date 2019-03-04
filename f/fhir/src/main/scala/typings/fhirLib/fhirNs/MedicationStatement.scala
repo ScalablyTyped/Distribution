@@ -149,10 +149,7 @@ object MedicationStatement {
     resourceType: code = null,
     text: Narrative = null
   ): MedicationStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("taken")(taken)
+    val __obj = js.Dynamic.literal(status = status, subject = subject, taken = taken)
     if (_dateAsserted != null) __obj.updateDynamic("_dateAsserted")(_dateAsserted)
     if (_effectiveDateTime != null) __obj.updateDynamic("_effectiveDateTime")(_effectiveDateTime)
     if (_id != null) __obj.updateDynamic("_id")(_id)

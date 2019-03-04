@@ -42,12 +42,8 @@ object FieldModel {
     `type`: FieldType,
     url: java.lang.String
   ): FieldModel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pickList")(pickList)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, pickList = pickList, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FieldModel]
   }
 }

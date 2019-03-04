@@ -30,8 +30,7 @@ object RequestDefinition {
     name: java.lang.String = null,
     proxy: ProxyConfigDefinition = null
   ): RequestDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (body != null) __obj.updateDynamic("body")(body)
     if (certificate != null) __obj.updateDynamic("certificate")(certificate)

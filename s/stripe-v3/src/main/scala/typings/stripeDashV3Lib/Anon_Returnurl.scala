@@ -12,8 +12,8 @@ trait Anon_Returnurl extends js.Object {
 object Anon_Returnurl {
   @scala.inline
   def apply(return_url: java.lang.String): Anon_Returnurl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("return_url")(return_url)
+    val __obj = js.Dynamic.literal(return_url = return_url)
+  
     __obj.asInstanceOf[Anon_Returnurl]
   }
 }

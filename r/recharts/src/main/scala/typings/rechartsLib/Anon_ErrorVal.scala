@@ -15,11 +15,8 @@ trait Anon_ErrorVal extends js.Object {
 object Anon_ErrorVal {
   @scala.inline
   def apply(errorVal: js.Any, value: js.Any, x: scala.Double, y: scala.Double): Anon_ErrorVal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorVal")(errorVal)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(errorVal = errorVal, value = value, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_ErrorVal]
   }
 }

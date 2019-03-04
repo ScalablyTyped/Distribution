@@ -61,14 +61,8 @@ object FoldableWithIndex1 {
       js.Any
     ]
   ): FoldableWithIndex1[F, I] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("foldMap")(foldMap)
-    __obj.updateDynamic("foldMapWithIndex")(foldMapWithIndex)
-    __obj.updateDynamic("foldr")(foldr)
-    __obj.updateDynamic("foldrWithIndex")(foldrWithIndex)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("reduceWithIndex")(reduceWithIndex)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], foldMap = foldMap, foldMapWithIndex = foldMapWithIndex, foldr = foldr, foldrWithIndex = foldrWithIndex, reduce = reduce, reduceWithIndex = reduceWithIndex)
+  
     __obj.asInstanceOf[FoldableWithIndex1[F, I]]
   }
 }

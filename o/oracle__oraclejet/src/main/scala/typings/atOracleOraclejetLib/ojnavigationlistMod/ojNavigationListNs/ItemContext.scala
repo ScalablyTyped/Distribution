@@ -25,12 +25,7 @@ object ItemContext {
     parentElement: stdLib.Element,
     datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): ItemContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, index = index, key = key, parentElement = parentElement)
     if (datasource != null) __obj.updateDynamic("datasource")(datasource)
     __obj.asInstanceOf[ItemContext[K, D]]
   }

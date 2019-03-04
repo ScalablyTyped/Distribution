@@ -28,8 +28,7 @@ object YAxisProps {
     svg: stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextProps] = null,
     yAccessor: AccessorFunction[T, _] = null
   ): YAxisProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

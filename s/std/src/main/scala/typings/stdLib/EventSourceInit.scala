@@ -12,8 +12,8 @@ trait EventSourceInit extends js.Object {
 object EventSourceInit {
   @scala.inline
   def apply(withCredentials: scala.Boolean): EventSourceInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(withCredentials = withCredentials)
+  
     __obj.asInstanceOf[EventSourceInit]
   }
 }

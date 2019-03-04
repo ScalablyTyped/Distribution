@@ -12,8 +12,8 @@ trait USBDevicesPermission extends Permission {
 object USBDevicesPermission {
   @scala.inline
   def apply(usbDevices: js.Array[chromeDashAppsLib.Anon_ProductId]): USBDevicesPermission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("usbDevices")(usbDevices)
+    val __obj = js.Dynamic.literal(usbDevices = usbDevices)
+  
     __obj.asInstanceOf[USBDevicesPermission]
   }
 }

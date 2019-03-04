@@ -29,13 +29,8 @@ object XTextSearch {
     searchForward: js.Function3[java.lang.String, scala.Double, scala.Double, SearchResult],
     setOptions: js.Function1[SearchOptions, scala.Unit]
   ): XTextSearch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("searchBackward")(searchBackward)
-    __obj.updateDynamic("searchForward")(searchForward)
-    __obj.updateDynamic("setOptions")(setOptions)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, searchBackward = searchBackward, searchForward = searchForward, setOptions = setOptions)
+  
     __obj.asInstanceOf[XTextSearch]
   }
 }

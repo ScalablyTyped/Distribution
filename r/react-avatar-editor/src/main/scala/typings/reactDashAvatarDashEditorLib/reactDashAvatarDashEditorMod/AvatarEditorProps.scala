@@ -54,8 +54,7 @@ object AvatarEditorProps {
     style: js.Object = null,
     width: scala.Int | scala.Double = null
   ): AvatarEditorProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

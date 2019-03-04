@@ -37,14 +37,8 @@ object ASPxClientAxis2D {
     range: ASPxClientAxisRange,
     strips: js.Array[ASPxClientStrip]
   ): ASPxClientAxis2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisTitle")(axisTitle)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("constantLines")(constantLines)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("strips")(strips)
+    val __obj = js.Dynamic.literal(axisTitle = axisTitle, chart = chart, constantLines = constantLines, diagram = diagram, name = name, range = range, strips = strips)
+  
     __obj.asInstanceOf[ASPxClientAxis2D]
   }
 }

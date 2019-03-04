@@ -14,7 +14,8 @@ trait ConsoleAppender extends Appender {
 object ConsoleAppender {
   @scala.inline
   def apply(`type`: log4jsLib.log4jsLibStrings.console, layout: Layout = null): ConsoleAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     __obj.asInstanceOf[ConsoleAppender]
   }

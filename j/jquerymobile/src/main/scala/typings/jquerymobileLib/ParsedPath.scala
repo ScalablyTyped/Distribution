@@ -46,24 +46,8 @@ object ParsedPath {
     search: java.lang.String,
     username: java.lang.String
   ): ParsedPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authority")(authority)
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("doubleSlash")(doubleSlash)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("hrefNoHash")(hrefNoHash)
-    __obj.updateDynamic("hrefNoSearch")(hrefNoSearch)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(authority = authority, directory = directory, domain = domain, doubleSlash = doubleSlash, filename = filename, hash = hash, host = host, hostname = hostname, href = href, hrefNoHash = hrefNoHash, hrefNoSearch = hrefNoSearch, password = password, pathname = pathname, port = port, protocol = protocol, search = search, username = username)
+  
     __obj.asInstanceOf[ParsedPath]
   }
 }

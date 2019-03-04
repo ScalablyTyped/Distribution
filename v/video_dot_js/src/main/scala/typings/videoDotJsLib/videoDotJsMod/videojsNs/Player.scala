@@ -21,8 +21,8 @@ trait Player extends Component {
   var loadingSpinner: Component = js.native
   @JSName("options_")
   var options__Player: PlayerOptions = js.native
-  var `userActive_`: scala.Boolean = js.native
-  var `userActivity_`: scala.Boolean = js.native
+  var userActive_ : scala.Boolean = js.native
+  var userActivity_ : scala.Boolean = js.native
   /**
   		 * Create a remote {@link TextTrack} and an {@link HTMLTrackElement}. It will
   		 * automatically removed from the video element whenever the source changes, unless

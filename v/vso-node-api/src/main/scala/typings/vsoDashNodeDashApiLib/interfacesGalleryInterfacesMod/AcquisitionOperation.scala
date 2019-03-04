@@ -27,10 +27,8 @@ object AcquisitionOperation {
     operationType: AcquisitionOperationType,
     reason: java.lang.String
   ): AcquisitionOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operationState")(operationState)
-    __obj.updateDynamic("operationType")(operationType)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(operationState = operationState, operationType = operationType, reason = reason)
+  
     __obj.asInstanceOf[AcquisitionOperation]
   }
 }

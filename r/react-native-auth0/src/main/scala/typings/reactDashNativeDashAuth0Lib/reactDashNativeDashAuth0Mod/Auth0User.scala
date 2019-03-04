@@ -38,16 +38,7 @@ object Auth0User {
     picture: java.lang.String = null,
     userMetadata: T = null
   ): Auth0User[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("emailVerified")(emailVerified)
-    __obj.updateDynamic("identities")(identities)
-    __obj.updateDynamic("logins_count")(logins_count)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(created_at = created_at, email = email, emailVerified = emailVerified, identities = identities, logins_count = logins_count, name = name, nickname = nickname, updated_at = updated_at, userId = userId)
     if (last_ip != null) __obj.updateDynamic("last_ip")(last_ip)
     if (last_login != null) __obj.updateDynamic("last_login")(last_login)
     if (picture != null) __obj.updateDynamic("picture")(picture)

@@ -20,11 +20,8 @@ object IModalDimensionsParameter {
     windowHeight: scala.Double,
     windowWidth: scala.Double
   ): IModalDimensionsParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageDisplayHeight")(imageDisplayHeight)
-    __obj.updateDynamic("imageDisplayWidth")(imageDisplayWidth)
-    __obj.updateDynamic("windowHeight")(windowHeight)
-    __obj.updateDynamic("windowWidth")(windowWidth)
+    val __obj = js.Dynamic.literal(imageDisplayHeight = imageDisplayHeight, imageDisplayWidth = imageDisplayWidth, windowHeight = windowHeight, windowWidth = windowWidth)
+  
     __obj.asInstanceOf[IModalDimensionsParameter]
   }
 }

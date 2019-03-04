@@ -22,8 +22,8 @@ object DoExpression {
     body: js.Array[astDashTypesLib.genKindsMod.StatementKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.DoExpression
   ): DoExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DoExpression]
   }
 }

@@ -14,9 +14,8 @@ trait Anon_Band
 object Anon_Band {
   @scala.inline
   def apply(band: scala.Boolean | scala.Double, scale: vegaDashTypingsLib.typesSpecEncodeMod.Field): Anon_Band = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("band")(band.asInstanceOf[js.Any])
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(band = band.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Band]
   }
 }

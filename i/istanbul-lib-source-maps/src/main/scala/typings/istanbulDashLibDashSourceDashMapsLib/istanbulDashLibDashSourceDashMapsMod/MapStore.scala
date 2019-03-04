@@ -31,14 +31,7 @@ object MapStore {
     verbose: scala.Boolean,
     baseDir: java.lang.String = null
   ): MapStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("registerMap")(registerMap)
-    __obj.updateDynamic("registerURL")(registerURL)
-    __obj.updateDynamic("sourceStore")(sourceStore)
-    __obj.updateDynamic("transformCoverage")(transformCoverage)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(data = data, dispose = dispose, registerMap = registerMap, registerURL = registerURL, sourceStore = sourceStore, transformCoverage = transformCoverage, verbose = verbose)
     if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
     __obj.asInstanceOf[MapStore]
   }

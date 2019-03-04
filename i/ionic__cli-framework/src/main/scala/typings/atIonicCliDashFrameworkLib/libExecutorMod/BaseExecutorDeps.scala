@@ -20,8 +20,7 @@ object BaseExecutorDeps {
     stderr: nodeLib.NodeJSNs.WriteStream = null,
     stdout: nodeLib.NodeJSNs.WriteStream = null
   ): BaseExecutorDeps[C, N, M, I, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors)
     if (stderr != null) __obj.updateDynamic("stderr")(stderr)
     if (stdout != null) __obj.updateDynamic("stdout")(stdout)

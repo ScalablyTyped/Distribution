@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/element", "ElementArrayFinder")
 @js.native
 class ElementArrayFinder protected () extends WebdriverWebElement {
-  def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser) = this()
-  def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
+  def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser) = this()
+  def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
     ]) = this()
-  def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
+  def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
-    ], `locator_`: js.Any) = this()
-  def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
+    ], locator_ : js.Any) = this()
+  def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
-    ], `locator_`: js.Any, `actionResults_`: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]) = this()
-  var `actionResults_`: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
-  var `browser_`: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
-  var `locator_`: js.Any = js.native
+    ], locator_ : js.Any, actionResults_ : seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]) = this()
+  var actionResults_ : seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  var browser_ : protractorLib.builtBrowserMod.ProtractorBrowser = js.native
+  var locator_ : js.Any = js.native
   /**
     * Shorthand function for finding arrays of elements by css.
     * `element.all(by.css('.abc'))` is equivalent to `$$('.abc')`
@@ -121,14 +121,14 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * @returns {ElementArrayFinder}
     * @private
     */
-  /* private */ def `applyAction_`(actionFn: js.Any): js.Any = js.native
+  /* private */ def applyAction_(actionFn: js.Any): js.Any = js.native
   /**
     * Represents the ElementArrayFinder as an array of ElementFinders.
     *
     * @returns {Array.<ElementFinder>} Return a promise, which resolves to a list
     *     of ElementFinders specified by the locator.
     */
-  def `asElementFinders_`(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[ElementFinder]] = js.native
+  def asElementFinders_(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[ElementFinder]] = js.native
   /**
     * Count the number of elements represented by the ElementArrayFinder.
     *
@@ -519,6 +519,6 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * @returns {ElementFinder} An ElementFinder representation
     * @private
     */
-  def `toElementFinder_`(): ElementFinder = js.native
+  def toElementFinder_(): ElementFinder = js.native
 }
 

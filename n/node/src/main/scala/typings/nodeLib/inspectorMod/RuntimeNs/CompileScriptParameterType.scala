@@ -33,10 +33,7 @@ object CompileScriptParameterType {
     sourceURL: java.lang.String,
     executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   ): CompileScriptParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("persistScript")(persistScript)
-    __obj.updateDynamic("sourceURL")(sourceURL)
+    val __obj = js.Dynamic.literal(expression = expression, persistScript = persistScript, sourceURL = sourceURL)
     if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
     __obj.asInstanceOf[CompileScriptParameterType]
   }

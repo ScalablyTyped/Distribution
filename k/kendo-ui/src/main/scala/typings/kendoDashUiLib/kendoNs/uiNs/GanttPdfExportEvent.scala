@@ -17,10 +17,7 @@ object GanttPdfExportEvent {
     sender: Gantt,
     promise: kendoDashUiLib.JQueryPromise[_] = null
   ): GanttPdfExportEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (promise != null) __obj.updateDynamic("promise")(promise)
     __obj.asInstanceOf[GanttPdfExportEvent]
   }

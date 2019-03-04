@@ -40,9 +40,7 @@ object IServerOptions {
     xml: java.lang.String = null,
     xmlKey: java.lang.String = null
   ): IServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("services")(services)
+    val __obj = js.Dynamic.literal(path = path, services = services)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (attributesKey != null) __obj.updateDynamic("attributesKey")(attributesKey)
     if (!js.isUndefined(enableChunkedEncoding)) __obj.updateDynamic("enableChunkedEncoding")(enableChunkedEncoding)

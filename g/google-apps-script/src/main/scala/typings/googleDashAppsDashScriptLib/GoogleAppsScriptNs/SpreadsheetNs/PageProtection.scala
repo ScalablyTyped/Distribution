@@ -22,12 +22,8 @@ object PageProtection {
     removeUser: js.Function1[java.lang.String, scala.Unit],
     setProtected: js.Function1[scala.Boolean, scala.Unit]
   ): PageProtection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addUser")(addUser)
-    __obj.updateDynamic("getUsers")(getUsers)
-    __obj.updateDynamic("isProtected")(isProtected)
-    __obj.updateDynamic("removeUser")(removeUser)
-    __obj.updateDynamic("setProtected")(setProtected)
+    val __obj = js.Dynamic.literal(addUser = addUser, getUsers = getUsers, isProtected = isProtected, removeUser = removeUser, setProtected = setProtected)
+  
     __obj.asInstanceOf[PageProtection]
   }
 }

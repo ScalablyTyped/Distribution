@@ -93,18 +93,8 @@ object Context {
     logStreamName: java.lang.String,
     memoryLimitInMB: java.lang.String
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awsRequestId")(awsRequestId)
-    __obj.updateDynamic("callbackWaitsForEmptyEventLoop")(callbackWaitsForEmptyEventLoop)
-    __obj.updateDynamic("clientContext")(clientContext)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("functionVersion")(functionVersion)
-    __obj.updateDynamic("getRemainingTimeInMillis")(getRemainingTimeInMillis)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("invokedFunctionArn")(invokedFunctionArn)
-    __obj.updateDynamic("logGroupName")(logGroupName)
-    __obj.updateDynamic("logStreamName")(logStreamName)
-    __obj.updateDynamic("memoryLimitInMB")(memoryLimitInMB)
+    val __obj = js.Dynamic.literal(awsRequestId = awsRequestId, callbackWaitsForEmptyEventLoop = callbackWaitsForEmptyEventLoop, clientContext = clientContext, functionName = functionName, functionVersion = functionVersion, getRemainingTimeInMillis = getRemainingTimeInMillis, identity = identity, invokedFunctionArn = invokedFunctionArn, logGroupName = logGroupName, logStreamName = logStreamName, memoryLimitInMB = memoryLimitInMB)
+  
     __obj.asInstanceOf[Context]
   }
 }

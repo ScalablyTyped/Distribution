@@ -23,12 +23,8 @@ object IIconClasses {
     wait: java.lang.String,
     warning: java.lang.String
   ): IIconClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("wait")(wait)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(error = error, info = info, success = success, wait = wait, warning = warning)
+  
     __obj.asInstanceOf[IIconClasses]
   }
 }

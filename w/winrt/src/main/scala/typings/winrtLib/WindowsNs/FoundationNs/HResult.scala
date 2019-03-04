@@ -12,8 +12,8 @@ trait HResult extends js.Object {
 object HResult {
   @scala.inline
   def apply(value: scala.Double): HResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[HResult]
   }
 }

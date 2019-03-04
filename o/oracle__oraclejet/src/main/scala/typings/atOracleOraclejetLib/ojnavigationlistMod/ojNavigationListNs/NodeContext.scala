@@ -23,11 +23,7 @@ object NodeContext {
     subId: java.lang.String,
     parent: stdLib.Element = null
   ): NodeContext[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(group = group, index = index, key = key.asInstanceOf[js.Any], subId = subId)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[NodeContext[K]]
   }

@@ -24,12 +24,8 @@ object ExtensionSchedule {
     getStartHour: js.Function0[scala.Double],
     getStartMinute: js.Function0[scala.Double]
   ): ExtensionSchedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDayOfWeek")(getDayOfWeek)
-    __obj.updateDynamic("getEndHour")(getEndHour)
-    __obj.updateDynamic("getEndMinute")(getEndMinute)
-    __obj.updateDynamic("getStartHour")(getStartHour)
-    __obj.updateDynamic("getStartMinute")(getStartMinute)
+    val __obj = js.Dynamic.literal(getDayOfWeek = getDayOfWeek, getEndHour = getEndHour, getEndMinute = getEndMinute, getStartHour = getStartHour, getStartMinute = getStartMinute)
+  
     __obj.asInstanceOf[ExtensionSchedule]
   }
 }

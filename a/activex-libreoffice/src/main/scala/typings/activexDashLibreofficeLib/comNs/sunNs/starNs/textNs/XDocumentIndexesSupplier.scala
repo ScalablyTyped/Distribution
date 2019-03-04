@@ -27,12 +27,8 @@ object XDocumentIndexesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDocumentIndexesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DocumentIndexes")(DocumentIndexes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDocumentIndexes")(getDocumentIndexes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DocumentIndexes = DocumentIndexes, acquire = acquire, getDocumentIndexes = getDocumentIndexes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDocumentIndexesSupplier]
   }
 }

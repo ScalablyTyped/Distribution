@@ -32,8 +32,7 @@ object Anon_ChallengeAnswer {
     usernameParameter: java.lang.String = null,
     validationData: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Anon_ChallengeAnswer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userAttributes")(userAttributes)
+    val __obj = js.Dynamic.literal(userAttributes = userAttributes)
     if (challengeAnswer != null) __obj.updateDynamic("challengeAnswer")(challengeAnswer)
     if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName)
     if (codeParameter != null) __obj.updateDynamic("codeParameter")(codeParameter)

@@ -57,10 +57,7 @@ object MaintenanceWindowArgs {
     scheduleTimezone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     startDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): MaintenanceWindowArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cutoff")(cutoff.asInstanceOf[js.Any])
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cutoff = cutoff.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
     if (allowUnassociatedTargets != null) __obj.updateDynamic("allowUnassociatedTargets")(allowUnassociatedTargets.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])

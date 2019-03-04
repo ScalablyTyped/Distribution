@@ -19,9 +19,8 @@ trait ASPxClientButtonClickEventArgs extends ASPxClientProcessingModeEventArgs {
 object ASPxClientButtonClickEventArgs {
   @scala.inline
   def apply(cancelEventAndBubble: scala.Boolean, processOnServer: scala.Boolean): ASPxClientButtonClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelEventAndBubble")(cancelEventAndBubble)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(cancelEventAndBubble = cancelEventAndBubble, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientButtonClickEventArgs]
   }
 }

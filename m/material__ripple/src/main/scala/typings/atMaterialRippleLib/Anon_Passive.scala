@@ -12,8 +12,8 @@ trait Anon_Passive extends js.Object {
 object Anon_Passive {
   @scala.inline
   def apply(passive: scala.Boolean): Anon_Passive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passive")(passive)
+    val __obj = js.Dynamic.literal(passive = passive)
+  
     __obj.asInstanceOf[Anon_Passive]
   }
 }

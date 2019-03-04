@@ -51,19 +51,8 @@ object XNumericControl {
     isModified: js.Function0[scala.Boolean],
     notifyModifiedValue: js.Function0[scala.Unit]
   ): XNumericControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ControlContext")(ControlContext)
-    __obj.updateDynamic("ControlType")(ControlType)
-    __obj.updateDynamic("ControlWindow")(ControlWindow)
-    __obj.updateDynamic("DecimalDigits")(DecimalDigits)
-    __obj.updateDynamic("DisplayUnit")(DisplayUnit)
-    __obj.updateDynamic("MaxValue")(MaxValue)
-    __obj.updateDynamic("MinValue")(MinValue)
-    __obj.updateDynamic("Value")(Value)
-    __obj.updateDynamic("ValueType")(ValueType)
-    __obj.updateDynamic("ValueUnit")(ValueUnit)
-    __obj.updateDynamic("isModified")(isModified)
-    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
+    val __obj = js.Dynamic.literal(ControlContext = ControlContext, ControlType = ControlType, ControlWindow = ControlWindow, DecimalDigits = DecimalDigits, DisplayUnit = DisplayUnit, MaxValue = MaxValue, MinValue = MinValue, Value = Value, ValueType = ValueType, ValueUnit = ValueUnit, isModified = isModified, notifyModifiedValue = notifyModifiedValue)
+  
     __obj.asInstanceOf[XNumericControl]
   }
 }

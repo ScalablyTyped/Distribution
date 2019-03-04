@@ -28,11 +28,8 @@ object SFCBlock {
     scoped: js.UndefOr[scala.Boolean] = js.undefined,
     src: java.lang.String = null
   ): SFCBlock = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(attrs = attrs, content = content, end = end, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (lang != null) __obj.updateDynamic("lang")(lang)
     if (map != null) __obj.updateDynamic("map")(map)
     if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])

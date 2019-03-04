@@ -38,16 +38,7 @@ object RenderData {
     intervalEnd: momentLib.momentMod.momentNs.Moment = null,
     intervalStart: momentLib.momentMod.momentNs.Moment = null
   ): RenderData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("daysOfTheWeek")(daysOfTheWeek)
-    __obj.updateDynamic("eventsLastMonth")(eventsLastMonth)
-    __obj.updateDynamic("eventsNextMonth")(eventsNextMonth)
-    __obj.updateDynamic("eventsThisMonth")(eventsThisMonth)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("numberOfRows")(numberOfRows)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(days = days, daysOfTheWeek = daysOfTheWeek, eventsLastMonth = eventsLastMonth, eventsNextMonth = eventsNextMonth, eventsThisMonth = eventsThisMonth, month = month, months = months, numberOfRows = numberOfRows, year = year)
     if (eventsThisInterval != null) __obj.updateDynamic("eventsThisInterval")(eventsThisInterval)
     if (extras != null) __obj.updateDynamic("extras")(extras)
     if (intervalEnd != null) __obj.updateDynamic("intervalEnd")(intervalEnd)

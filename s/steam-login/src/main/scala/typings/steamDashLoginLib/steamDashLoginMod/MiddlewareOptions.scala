@@ -20,10 +20,7 @@ object MiddlewareOptions {
     verify: java.lang.String,
     useSession: js.UndefOr[scala.Boolean] = js.undefined
   ): MiddlewareOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
-    __obj.updateDynamic("realm")(realm)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(apiKey = apiKey, realm = realm, verify = verify)
     if (!js.isUndefined(useSession)) __obj.updateDynamic("useSession")(useSession)
     __obj.asInstanceOf[MiddlewareOptions]
   }

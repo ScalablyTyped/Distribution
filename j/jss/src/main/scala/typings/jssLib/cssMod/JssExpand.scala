@@ -36,19 +36,8 @@ object JssExpand {
     textShadow: jssLib.Anon_BlurColor | js.Any,
     transition: jssLib.Anon_DelayDuration | js.Any
   ): JssExpand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
-    __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
-    __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], listStyle = listStyle.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], outline = outline.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], textShadow = textShadow.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[JssExpand]
   }
 }

@@ -19,9 +19,8 @@ trait ASPxClientSpellCheckerStopCheckingReasonStatic extends js.Object {
 object ASPxClientSpellCheckerStopCheckingReasonStatic {
   @scala.inline
   def apply(Default: java.lang.String, User: java.lang.String): ASPxClientSpellCheckerStopCheckingReasonStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Default")(Default)
-    __obj.updateDynamic("User")(User)
+    val __obj = js.Dynamic.literal(Default = Default, User = User)
+  
     __obj.asInstanceOf[ASPxClientSpellCheckerStopCheckingReasonStatic]
   }
 }

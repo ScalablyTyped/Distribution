@@ -16,8 +16,8 @@ object Anon_Shim {
       /* import warning: ImportType.apply Failed type conversion: typeof objectKeys */ js.Any
     ]
   ): Anon_Shim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shim")(shim)
+    val __obj = js.Dynamic.literal(shim = shim)
+  
     __obj.asInstanceOf[Anon_Shim]
   }
 }

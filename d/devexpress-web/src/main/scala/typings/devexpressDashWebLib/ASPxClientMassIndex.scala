@@ -32,14 +32,8 @@ object ASPxClientMassIndex {
     series: ASPxClientSeries,
     sumPointsCount: scala.Double
   ): ASPxClientMassIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("movingAveragePointsCount")(movingAveragePointsCount)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("sumPointsCount")(sumPointsCount)
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, movingAveragePointsCount = movingAveragePointsCount, name = name, pane = pane, series = series, sumPointsCount = sumPointsCount)
+  
     __obj.asInstanceOf[ASPxClientMassIndex]
   }
 }

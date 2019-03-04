@@ -30,16 +30,8 @@ object MultiPage_BeforeDropOrPaste_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): MultiPage_BeforeDropOrPaste_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Control")(Control)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Index = Index, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[MultiPage_BeforeDropOrPaste_Parameter]
   }
 }

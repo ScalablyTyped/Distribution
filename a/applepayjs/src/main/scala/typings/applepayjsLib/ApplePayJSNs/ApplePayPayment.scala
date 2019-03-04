@@ -30,8 +30,7 @@ object ApplePayPayment {
     billingContact: ApplePayPaymentContact = null,
     shippingContact: ApplePayPaymentContact = null
   ): ApplePayPayment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(token = token)
     if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
     if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
     __obj.asInstanceOf[ApplePayPayment]

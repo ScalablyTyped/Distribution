@@ -42,14 +42,8 @@ object XPropertySetInfo {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPropertySetInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Properties")(Properties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getPropertyByName")(getPropertyByName)
-    __obj.updateDynamic("hasPropertyByName")(hasPropertyByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Properties = Properties, acquire = acquire, getProperties = getProperties, getPropertyByName = getPropertyByName, hasPropertyByName = hasPropertyByName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPropertySetInfo]
   }
 }

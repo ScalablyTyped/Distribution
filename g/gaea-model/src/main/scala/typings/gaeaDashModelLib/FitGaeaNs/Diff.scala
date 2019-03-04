@@ -45,8 +45,8 @@ object Diff {
     reset: gaeaDashModelLib.Anon_BeforeName = null,
     update: gaeaDashModelLib.Anon_NewValue = null
   ): Diff = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (add != null) __obj.updateDynamic("add")(add)
     if (addCombo != null) __obj.updateDynamic("addCombo")(addCombo)
     if (addSource != null) __obj.updateDynamic("addSource")(addSource)

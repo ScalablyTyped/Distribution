@@ -24,10 +24,7 @@ object NameOutput {
     salutation: java.lang.String = null,
     suffix: java.lang.String = null
   ): NameOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("lastName")(lastName)
+    val __obj = js.Dynamic.literal(firstName = firstName, fullName = fullName, lastName = lastName)
     if (middleName != null) __obj.updateDynamic("middleName")(middleName)
     if (salutation != null) __obj.updateDynamic("salutation")(salutation)
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)

@@ -24,11 +24,8 @@ object IAilment {
     `implicit`: scala.Boolean,
     projects: js.Array[ProjectType] = null
   ): IAilment = {
-    val __obj = js.Dynamic.literal(`implicit` = `implicit`)
-    __obj.updateDynamic("detected")(detected)
-    __obj.updateDynamic("getMessage")(getMessage)
-    __obj.updateDynamic("getTreatmentSteps")(getTreatmentSteps)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(detected = detected, getMessage = getMessage, getTreatmentSteps = getTreatmentSteps, id = id)
+    __obj.updateDynamic("implicit")(`implicit`)
     if (projects != null) __obj.updateDynamic("projects")(projects)
     __obj.asInstanceOf[IAilment]
   }

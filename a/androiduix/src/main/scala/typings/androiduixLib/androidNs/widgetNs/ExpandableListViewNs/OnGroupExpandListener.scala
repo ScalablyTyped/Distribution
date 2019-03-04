@@ -12,8 +12,8 @@ trait OnGroupExpandListener extends js.Object {
 object OnGroupExpandListener {
   @scala.inline
   def apply(onGroupExpand: js.Function1[scala.Double, scala.Unit]): OnGroupExpandListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGroupExpand")(onGroupExpand)
+    val __obj = js.Dynamic.literal(onGroupExpand = onGroupExpand)
+  
     __obj.asInstanceOf[OnGroupExpandListener]
   }
 }

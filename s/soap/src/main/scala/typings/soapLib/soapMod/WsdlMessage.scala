@@ -23,13 +23,7 @@ object WsdlMessage {
     xmlKey: java.lang.String,
     xmlns: WsdlXmlns = null
   ): WsdlMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$name")($name)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("parts")(parts)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal($name = $name, element = element, ignoredNamespaces = ignoredNamespaces, parts = parts, valueKey = valueKey, xmlKey = xmlKey)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[WsdlMessage]
   }

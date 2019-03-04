@@ -21,10 +21,8 @@ object Anon_DataDescription {
     name: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID,
     `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
   ): Anon_DataDescription = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data, description = description, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_DataDescription]
   }
 }

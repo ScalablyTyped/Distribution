@@ -37,12 +37,8 @@ object Location {
     start: scala.Double,
     startToken: Token
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("endToken")(endToken)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("startToken")(startToken)
+    val __obj = js.Dynamic.literal(end = end, endToken = endToken, source = source, start = start, startToken = startToken)
+  
     __obj.asInstanceOf[Location]
   }
 }

@@ -13,9 +13,8 @@ trait CopyAndPutMetaResult extends js.Object {
 object CopyAndPutMetaResult {
   @scala.inline
   def apply(data: ModifyData, res: NormalSuccessResponse): CopyAndPutMetaResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(data = data, res = res)
+  
     __obj.asInstanceOf[CopyAndPutMetaResult]
   }
 }

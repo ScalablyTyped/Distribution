@@ -30,8 +30,7 @@ object Anon_DurationFont {
     superscript: js.UndefOr[scala.Boolean] = js.undefined,
     text: java.lang.String = null
   ): Anon_DurationFont = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(duration = duration)
     if (font != null) __obj.updateDynamic("font")(font)
     if (glyph != null) __obj.updateDynamic("glyph")(glyph)
     if (!js.isUndefined(ignore_ticks)) __obj.updateDynamic("ignore_ticks")(ignore_ticks)

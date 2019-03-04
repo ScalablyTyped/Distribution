@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait PanelProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var header: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var isActive: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,6 +21,7 @@ object PanelProps {
   def apply(
     className: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    extra: reactLib.reactMod.ReactNs.ReactNode = null,
     forceRender: js.UndefOr[scala.Boolean] = js.undefined,
     header: reactLib.reactMod.ReactNs.ReactNode = null,
     isActive: js.UndefOr[scala.Boolean] = js.undefined,
@@ -29,6 +31,7 @@ object PanelProps {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive)

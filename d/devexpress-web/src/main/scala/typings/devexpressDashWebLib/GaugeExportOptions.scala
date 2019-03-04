@@ -19,8 +19,8 @@ trait GaugeExportOptions extends js.Object {
 object GaugeExportOptions {
   @scala.inline
   def apply(AutoArrangeContent: scala.Boolean): GaugeExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoArrangeContent")(AutoArrangeContent)
+    val __obj = js.Dynamic.literal(AutoArrangeContent = AutoArrangeContent)
+  
     __obj.asInstanceOf[GaugeExportOptions]
   }
 }

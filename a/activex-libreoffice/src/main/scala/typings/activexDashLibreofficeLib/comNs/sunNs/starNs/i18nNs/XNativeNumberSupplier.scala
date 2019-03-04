@@ -71,14 +71,8 @@ object XNativeNumberSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNativeNumberSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertFromXmlAttributes")(convertFromXmlAttributes)
-    __obj.updateDynamic("convertToXmlAttributes")(convertToXmlAttributes)
-    __obj.updateDynamic("getNativeNumberString")(getNativeNumberString)
-    __obj.updateDynamic("isValidNatNum")(isValidNatNum)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertFromXmlAttributes = convertFromXmlAttributes, convertToXmlAttributes = convertToXmlAttributes, getNativeNumberString = getNativeNumberString, isValidNatNum = isValidNatNum, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNativeNumberSupplier]
   }
 }

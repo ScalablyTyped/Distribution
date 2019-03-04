@@ -40,18 +40,8 @@ object ButtonStyle {
     top: scala.Double,
     width: scala.Double
   ): ButtonStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("borderRadius")(borderRadius)
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("lineHeight")(lineHeight)
-    __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor, borderRadius = borderRadius, borderWidth = borderWidth, fontSize = fontSize, height = height, left = left, lineHeight = lineHeight, textAlign = textAlign.asInstanceOf[js.Any], top = top, width = width)
+  
     __obj.asInstanceOf[ButtonStyle]
   }
 }

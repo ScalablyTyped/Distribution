@@ -32,16 +32,7 @@ object Menu {
     removeItem: js.Function1[ItemMenuSeparator, scala.Unit],
     parentMenu: Menu = null
   ): Menu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
-    __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("removeItem")(removeItem)
+    val __obj = js.Dynamic.literal(addItem = addItem, contentScript = contentScript.asInstanceOf[js.Any], contentScriptFile = contentScriptFile.asInstanceOf[js.Any], context = context, destroy = destroy, image = image.asInstanceOf[js.Any], items = items, label = label, removeItem = removeItem)
     if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
     __obj.asInstanceOf[Menu]
   }

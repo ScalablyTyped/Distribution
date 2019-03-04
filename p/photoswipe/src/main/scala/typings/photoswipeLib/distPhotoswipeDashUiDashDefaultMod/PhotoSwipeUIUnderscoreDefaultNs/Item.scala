@@ -27,10 +27,7 @@ object Item {
     title: java.lang.String = null,
     vGap: photoswipeLib.Anon_BottomTop = null
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("h")(h)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("w")(w)
+    val __obj = js.Dynamic.literal(h = h, src = src, w = w)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (fitRatio != null) __obj.updateDynamic("fitRatio")(fitRatio.asInstanceOf[js.Any])
     if (initialPosition != null) __obj.updateDynamic("initialPosition")(initialPosition)

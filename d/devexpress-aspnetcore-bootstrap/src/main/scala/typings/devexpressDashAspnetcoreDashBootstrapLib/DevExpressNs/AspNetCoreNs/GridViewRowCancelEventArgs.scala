@@ -12,10 +12,8 @@ trait GridViewRowCancelEventArgs extends CancelEventArgs {
 object GridViewRowCancelEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, sender: Control, visibleIndex: scala.Double): GridViewRowCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, sender = sender, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[GridViewRowCancelEventArgs]
   }
 }

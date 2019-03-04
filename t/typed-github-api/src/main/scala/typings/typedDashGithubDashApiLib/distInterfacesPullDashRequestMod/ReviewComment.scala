@@ -23,15 +23,8 @@ object ReviewComment {
     position: scala.Double,
     updatedAt: momentLib.momentMod.momentNs.Moment
   ): ReviewComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("diffHunk")(diffHunk)
-    __obj.updateDynamic("htmlUri")(htmlUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("updatedAt")(updatedAt)
+    val __obj = js.Dynamic.literal(body = body, createdAt = createdAt, createdBy = createdBy, diffHunk = diffHunk, htmlUri = htmlUri, id = id, position = position, updatedAt = updatedAt)
+  
     __obj.asInstanceOf[ReviewComment]
   }
 }

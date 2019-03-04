@@ -27,13 +27,8 @@ object XDataBarEntry {
     setFormula: js.Function1[java.lang.String, scala.Unit],
     setType: js.Function1[scala.Double, scala.Unit]
   ): XDataBarEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Formula")(Formula)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("getFormula")(getFormula)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setFormula")(setFormula)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(Formula = Formula, Type = Type, getFormula = getFormula, getType = getType, setFormula = setFormula, setType = setType)
+  
     __obj.asInstanceOf[XDataBarEntry]
   }
 }

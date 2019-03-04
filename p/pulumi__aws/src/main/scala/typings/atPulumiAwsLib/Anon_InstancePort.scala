@@ -22,12 +22,8 @@ object Anon_InstancePort {
     lbProtocol: java.lang.String,
     sslCertificateId: java.lang.String
   ): Anon_InstancePort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instancePort")(instancePort)
-    __obj.updateDynamic("instanceProtocol")(instanceProtocol)
-    __obj.updateDynamic("lbPort")(lbPort)
-    __obj.updateDynamic("lbProtocol")(lbProtocol)
-    __obj.updateDynamic("sslCertificateId")(sslCertificateId)
+    val __obj = js.Dynamic.literal(instancePort = instancePort, instanceProtocol = instanceProtocol, lbPort = lbPort, lbProtocol = lbProtocol, sslCertificateId = sslCertificateId)
+  
     __obj.asInstanceOf[Anon_InstancePort]
   }
 }

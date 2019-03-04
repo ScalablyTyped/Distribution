@@ -18,8 +18,7 @@ object FileCallback {
     `match`: java.lang.String | js.Array[java.lang.String] = null,
     options: chokidarLib.chokidarMod.WatchOptions = null
   ): FileCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(fn = fn)
     if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[FileCallback]

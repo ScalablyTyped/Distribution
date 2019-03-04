@@ -140,14 +140,8 @@ object CourseWorkResource {
     ],
     studentSubmissions: StudentSubmissionsResource
   ): CourseWorkResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("modifyAssignees")(modifyAssignees)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("studentSubmissions")(studentSubmissions)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, list = list, modifyAssignees = modifyAssignees, patch = patch, studentSubmissions = studentSubmissions)
+  
     __obj.asInstanceOf[CourseWorkResource]
   }
 }

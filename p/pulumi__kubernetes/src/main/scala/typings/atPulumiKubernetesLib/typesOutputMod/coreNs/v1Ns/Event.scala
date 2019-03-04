@@ -108,23 +108,8 @@ object Event {
     source: EventSource,
     `type`: java.lang.String
   ): Event = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("eventTime")(eventTime)
-    __obj.updateDynamic("firstTimestamp")(firstTimestamp)
-    __obj.updateDynamic("involvedObject")(involvedObject)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("lastTimestamp")(lastTimestamp)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("related")(related)
-    __obj.updateDynamic("reportingComponent")(reportingComponent)
-    __obj.updateDynamic("reportingInstance")(reportingInstance)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(action = action, apiVersion = apiVersion, count = count, eventTime = eventTime, firstTimestamp = firstTimestamp, involvedObject = involvedObject, kind = kind, lastTimestamp = lastTimestamp, message = message, metadata = metadata, reason = reason, related = related, reportingComponent = reportingComponent, reportingInstance = reportingInstance, series = series, source = source)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Event]
   }
 }

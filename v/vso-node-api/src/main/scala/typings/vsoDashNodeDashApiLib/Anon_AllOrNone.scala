@@ -13,9 +13,8 @@ trait Anon_AllOrNone extends js.Object {
 object Anon_AllOrNone {
   @scala.inline
   def apply(allOrNone: scala.Double, bestEffort: scala.Double): Anon_AllOrNone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allOrNone")(allOrNone)
-    __obj.updateDynamic("bestEffort")(bestEffort)
+    val __obj = js.Dynamic.literal(allOrNone = allOrNone, bestEffort = bestEffort)
+  
     __obj.asInstanceOf[Anon_AllOrNone]
   }
 }

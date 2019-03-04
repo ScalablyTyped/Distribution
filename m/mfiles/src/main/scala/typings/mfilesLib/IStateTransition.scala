@@ -40,21 +40,8 @@ object IStateTransition {
     TriggerInDays: scala.Double,
     TriggerMode: mfilesLib.MFilesNs.MFAutoStateTransitionMode
   ): IStateTransition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlList")(AccessControlList)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("EvaluationOrderNumber")(EvaluationOrderNumber)
-    __obj.updateDynamic("FromState")(FromState)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("SignatureSettings")(SignatureSettings)
-    __obj.updateDynamic("ToState")(ToState)
-    __obj.updateDynamic("TriggerAllowedByVBScript")(TriggerAllowedByVBScript)
-    __obj.updateDynamic("TriggerCriteria")(TriggerCriteria)
-    __obj.updateDynamic("TriggerInDays")(TriggerInDays)
-    __obj.updateDynamic("TriggerMode")(TriggerMode)
+    val __obj = js.Dynamic.literal(AccessControlList = AccessControlList, Clone = Clone, Description = Description, EvaluationOrderNumber = EvaluationOrderNumber, FromState = FromState, ID = ID, Name = Name, SemanticAliases = SemanticAliases, SignatureSettings = SignatureSettings, ToState = ToState, TriggerAllowedByVBScript = TriggerAllowedByVBScript, TriggerCriteria = TriggerCriteria, TriggerInDays = TriggerInDays, TriggerMode = TriggerMode)
+  
     __obj.asInstanceOf[IStateTransition]
   }
 }

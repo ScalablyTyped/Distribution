@@ -25,10 +25,8 @@ object VariableMultipliersAgentExecutionOptions {
     multipliers: js.Array[java.lang.String],
     `type`: scala.Double
   ): VariableMultipliersAgentExecutionOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("maxConcurrency")(maxConcurrency)
-    __obj.updateDynamic("multipliers")(multipliers)
+    val __obj = js.Dynamic.literal(continueOnError = continueOnError, maxConcurrency = maxConcurrency, multipliers = multipliers)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[VariableMultipliersAgentExecutionOptions]
   }
 }

@@ -28,13 +28,7 @@ object HttpResponse {
     body: nodeLib.NodeJSNs.ReadableStream = null,
     json: js.Object | js.Promise[js.UndefOr[js.Object]] = null
   ): HttpResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    __obj.updateDynamic("getHeader")(getHeader)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("throwForStatus")(throwForStatus)
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], getHeader = getHeader, headers = headers, request = request, status = status, throwForStatus = throwForStatus)
     if (body != null) __obj.updateDynamic("body")(body)
     if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse]

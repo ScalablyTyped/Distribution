@@ -18,10 +18,8 @@ object Anon_Attrs {
     filename: java.lang.String,
     longname: java.lang.String
   ): Anon_Attrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("longname")(longname)
+    val __obj = js.Dynamic.literal(attrs = attrs, filename = filename, longname = longname)
+  
     __obj.asInstanceOf[Anon_Attrs]
   }
 }

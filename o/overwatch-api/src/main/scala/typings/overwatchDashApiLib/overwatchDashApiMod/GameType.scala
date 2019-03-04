@@ -13,9 +13,8 @@ trait GameType extends js.Object {
 object GameType {
   @scala.inline
   def apply(played: scala.Double, won: scala.Double): GameType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("played")(played)
-    __obj.updateDynamic("won")(won)
+    val __obj = js.Dynamic.literal(played = played, won = won)
+  
     __obj.asInstanceOf[GameType]
   }
 }

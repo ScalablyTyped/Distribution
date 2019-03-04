@@ -27,9 +27,7 @@ object GroupMembershipArgs {
     users: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GroupMembershipArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMembershipArgs]
   }

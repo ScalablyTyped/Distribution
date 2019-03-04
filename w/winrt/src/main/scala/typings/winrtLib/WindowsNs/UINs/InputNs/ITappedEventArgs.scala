@@ -18,10 +18,8 @@ object ITappedEventArgs {
     position: winrtLib.WindowsNs.FoundationNs.Point,
     tapCount: scala.Double
   ): ITappedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("tapCount")(tapCount)
+    val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType, position = position, tapCount = tapCount)
+  
     __obj.asInstanceOf[ITappedEventArgs]
   }
 }

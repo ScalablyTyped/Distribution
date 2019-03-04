@@ -30,8 +30,7 @@ object Anon_DbSecurityGroupMembershipsOptionName {
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcSecurityGroupMemberships: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_DbSecurityGroupMembershipsOptionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("optionName")(optionName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(optionName = optionName.asInstanceOf[js.Any])
     if (dbSecurityGroupMemberships != null) __obj.updateDynamic("dbSecurityGroupMemberships")(dbSecurityGroupMemberships.asInstanceOf[js.Any])
     if (optionSettings != null) __obj.updateDynamic("optionSettings")(optionSettings.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

@@ -16,8 +16,7 @@ object Anon_KeyVersionEndpointEnvironmentName {
     VersionEndpointEnvironmentName: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Anon_KeyVersionEndpointEnvironmentName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("VersionEndpointEnvironmentName")(VersionEndpointEnvironmentName)
+    val __obj = js.Dynamic.literal(VersionEndpointEnvironmentName = VersionEndpointEnvironmentName)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_KeyVersionEndpointEnvironmentName]
   }

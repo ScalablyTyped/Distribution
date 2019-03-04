@@ -18,10 +18,8 @@ object Anon_PathString {
     strokePathStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties,
     trailPathStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties
   ): Anon_PathString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathString")(pathString)
-    __obj.updateDynamic("strokePathStyle")(strokePathStyle.asInstanceOf[js.Any])
-    __obj.updateDynamic("trailPathStyle")(trailPathStyle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pathString = pathString, strokePathStyle = strokePathStyle.asInstanceOf[js.Any], trailPathStyle = trailPathStyle.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PathString]
   }
 }

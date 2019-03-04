@@ -19,9 +19,8 @@ trait ASPxClientHtmlEditorTabCancelEventArgs extends ASPxClientHtmlEditorTabEven
 object ASPxClientHtmlEditorTabCancelEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, name: java.lang.String): ASPxClientHtmlEditorTabCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(cancel = cancel, name = name)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTabCancelEventArgs]
   }
 }

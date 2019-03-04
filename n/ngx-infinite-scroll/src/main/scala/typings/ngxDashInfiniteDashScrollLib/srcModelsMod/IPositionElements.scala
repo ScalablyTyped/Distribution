@@ -13,9 +13,8 @@ trait IPositionElements extends js.Object {
 object IPositionElements {
   @scala.inline
   def apply(axis: js.Any, windowElement: ContainerRef): IPositionElements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("windowElement")(windowElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(axis = axis, windowElement = windowElement.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IPositionElements]
   }
 }

@@ -39,11 +39,8 @@ object ASPxClientSpreadsheetHyperlinkClickEventArgs {
     hyperlinkType: ASPxClientOfficeDocumentLinkType,
     targetUri: java.lang.String
   ): ASPxClientSpreadsheetHyperlinkClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("hyperlinkType")(hyperlinkType)
-    __obj.updateDynamic("targetUri")(targetUri)
+    val __obj = js.Dynamic.literal(handled = handled, htmlEvent = htmlEvent, hyperlinkType = hyperlinkType, targetUri = targetUri)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetHyperlinkClickEventArgs]
   }
 }

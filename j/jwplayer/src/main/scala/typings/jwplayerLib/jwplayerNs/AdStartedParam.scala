@@ -13,9 +13,8 @@ trait AdStartedParam extends js.Object {
 object AdStartedParam {
   @scala.inline
   def apply(creativetype: java.lang.String, tag: java.lang.String): AdStartedParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creativetype")(creativetype)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(creativetype = creativetype, tag = tag)
+  
     __obj.asInstanceOf[AdStartedParam]
   }
 }

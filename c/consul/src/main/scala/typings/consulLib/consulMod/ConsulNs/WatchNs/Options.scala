@@ -13,8 +13,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(method: js.Function, options: consulLib.consulMod.ConsulNs.CommonOptions with WatchOptions = null): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Options]
   }

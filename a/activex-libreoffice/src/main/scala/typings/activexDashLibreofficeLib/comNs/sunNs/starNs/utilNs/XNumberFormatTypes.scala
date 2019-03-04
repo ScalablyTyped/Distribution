@@ -56,15 +56,8 @@ object XNumberFormatTypes {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XNumberFormatTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getFormatForLocale")(getFormatForLocale)
-    __obj.updateDynamic("getFormatIndex")(getFormatIndex)
-    __obj.updateDynamic("getStandardFormat")(getStandardFormat)
-    __obj.updateDynamic("getStandardIndex")(getStandardIndex)
-    __obj.updateDynamic("isTypeCompatible")(isTypeCompatible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getFormatForLocale = getFormatForLocale, getFormatIndex = getFormatIndex, getStandardFormat = getStandardFormat, getStandardIndex = getStandardIndex, isTypeCompatible = isTypeCompatible, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XNumberFormatTypes]
   }
 }

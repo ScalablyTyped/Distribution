@@ -14,8 +14,8 @@ object IdleParam {
   def apply(
     oldstate: jwplayerLib.jwplayerLibStrings.buffering | jwplayerLib.jwplayerLibStrings.playing | jwplayerLib.jwplayerLibStrings.paused
   ): IdleParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oldstate")(oldstate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(oldstate = oldstate.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IdleParam]
   }
 }

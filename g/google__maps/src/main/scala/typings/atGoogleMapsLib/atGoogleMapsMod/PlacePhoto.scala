@@ -24,11 +24,8 @@ object PlacePhoto {
     photo_reference: java.lang.String,
     width: scala.Double
   ): PlacePhoto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("html_attributions")(html_attributions)
-    __obj.updateDynamic("photo_reference")(photo_reference)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, html_attributions = html_attributions, photo_reference = photo_reference, width = width)
+  
     __obj.asInstanceOf[PlacePhoto]
   }
 }

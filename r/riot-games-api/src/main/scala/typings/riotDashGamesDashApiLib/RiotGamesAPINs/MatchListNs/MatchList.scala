@@ -20,11 +20,8 @@ object MatchList {
     startIndex: scala.Double,
     totalGames: scala.Double
   ): MatchList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endIndex")(endIndex)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("startIndex")(startIndex)
-    __obj.updateDynamic("totalGames")(totalGames)
+    val __obj = js.Dynamic.literal(endIndex = endIndex, matches = matches, startIndex = startIndex, totalGames = totalGames)
+  
     __obj.asInstanceOf[MatchList]
   }
 }

@@ -29,13 +29,8 @@ object ImageInfo {
     size: scala.Double,
     width: scala.Double
   ): ImageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorModel")(colorModel)
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("frameNumber")(frameNumber)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(colorModel = colorModel, format = format.asInstanceOf[js.Any], frameNumber = frameNumber, height = height, size = size, width = width)
+  
     __obj.asInstanceOf[ImageInfo]
   }
 }

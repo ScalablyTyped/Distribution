@@ -12,8 +12,8 @@ trait HorizontalLineProps extends js.Object {
 object HorizontalLineProps {
   @scala.inline
   def apply(stroke: java.lang.String): HorizontalLineProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(stroke = stroke)
+  
     __obj.asInstanceOf[HorizontalLineProps]
   }
 }

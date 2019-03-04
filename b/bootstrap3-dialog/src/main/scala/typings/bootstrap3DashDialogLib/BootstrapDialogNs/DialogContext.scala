@@ -68,25 +68,8 @@ object DialogContext {
     setTitle: js.Function1[java.lang.String, scala.Unit],
     setType: js.Function1[java.lang.String, scala.Unit]
   ): DialogContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("enableButtons")(enableButtons)
-    __obj.updateDynamic("getButton")(getButton)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getModal")(getModal)
-    __obj.updateDynamic("getModalBody")(getModalBody)
-    __obj.updateDynamic("getModalContent")(getModalContent)
-    __obj.updateDynamic("getModalDialog")(getModalDialog)
-    __obj.updateDynamic("getModalFooter")(getModalFooter)
-    __obj.updateDynamic("getModalHeader")(getModalHeader)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("realize")(realize)
-    __obj.updateDynamic("setClosable")(setClosable)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("setMessage")(setMessage)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setType")(setType)
+    val __obj = js.Dynamic.literal(close = close, enableButtons = enableButtons, getButton = getButton, getData = getData, getModal = getModal, getModalBody = getModalBody, getModalContent = getModalContent, getModalDialog = getModalDialog, getModalFooter = getModalFooter, getModalHeader = getModalHeader, getTitle = getTitle, open = open, realize = realize, setClosable = setClosable, setData = setData, setMessage = setMessage, setTitle = setTitle, setType = setType)
+  
     __obj.asInstanceOf[DialogContext]
   }
 }

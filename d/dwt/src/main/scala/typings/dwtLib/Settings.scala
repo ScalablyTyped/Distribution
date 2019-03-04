@@ -26,14 +26,8 @@ object Settings {
     RecognitionModule: java.lang.String,
     Redaction: Redaction
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Languages")(Languages)
-    __obj.updateDynamic("LicenseChecker")(LicenseChecker)
-    __obj.updateDynamic("OutputFormat")(OutputFormat)
-    __obj.updateDynamic("PDFAVersion")(PDFAVersion)
-    __obj.updateDynamic("PDFVersion")(PDFVersion)
-    __obj.updateDynamic("RecognitionModule")(RecognitionModule)
-    __obj.updateDynamic("Redaction")(Redaction)
+    val __obj = js.Dynamic.literal(Languages = Languages, LicenseChecker = LicenseChecker, OutputFormat = OutputFormat, PDFAVersion = PDFAVersion, PDFVersion = PDFVersion, RecognitionModule = RecognitionModule, Redaction = Redaction)
+  
     __obj.asInstanceOf[Settings]
   }
 }

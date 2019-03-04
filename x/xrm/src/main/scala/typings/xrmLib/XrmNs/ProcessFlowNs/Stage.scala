@@ -53,13 +53,8 @@ object Stage {
     getStatus: js.Function0[StageStatus],
     getSteps: js.Function0[js.Array[Step]]
   ): Stage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCategory")(getCategory)
-    __obj.updateDynamic("getEntityName")(getEntityName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getStatus")(getStatus)
-    __obj.updateDynamic("getSteps")(getSteps)
+    val __obj = js.Dynamic.literal(getCategory = getCategory, getEntityName = getEntityName, getId = getId, getName = getName, getStatus = getStatus, getSteps = getSteps)
+  
     __obj.asInstanceOf[Stage]
   }
 }

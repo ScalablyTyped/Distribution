@@ -38,20 +38,8 @@ object Anon_AlignArgs {
     visible: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     width: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | scala.Double]
   ): Anon_AlignArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("cancelText")(cancelText)
-    __obj.updateDynamic("centered")(centered)
-    __obj.updateDynamic("closable")(closable)
-    __obj.updateDynamic("confirmLoading")(confirmLoading)
-    __obj.updateDynamic("footer")(footer)
-    __obj.updateDynamic("okText")(okText)
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onOk")(onOk)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(align = align, cancelText = cancelText, centered = centered, closable = closable, confirmLoading = confirmLoading, footer = footer, okText = okText, onCancel = onCancel, onOk = onOk, prefixCls = prefixCls, title = title, visible = visible, width = width)
+  
     __obj.asInstanceOf[Anon_AlignArgs]
   }
 }

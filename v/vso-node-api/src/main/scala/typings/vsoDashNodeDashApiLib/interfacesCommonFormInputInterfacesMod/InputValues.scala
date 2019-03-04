@@ -47,14 +47,8 @@ object InputValues {
     isReadOnly: scala.Boolean,
     possibleValues: js.Array[InputValue]
   ): InputValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("inputId")(inputId)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("isLimitedToPossibleValues")(isLimitedToPossibleValues)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("possibleValues")(possibleValues)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, error = error, inputId = inputId, isDisabled = isDisabled, isLimitedToPossibleValues = isLimitedToPossibleValues, isReadOnly = isReadOnly, possibleValues = possibleValues)
+  
     __obj.asInstanceOf[InputValues]
   }
 }

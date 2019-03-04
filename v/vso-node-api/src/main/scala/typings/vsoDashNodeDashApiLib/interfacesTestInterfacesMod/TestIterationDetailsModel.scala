@@ -34,18 +34,8 @@ object TestIterationDetailsModel {
     startedDate: stdLib.Date,
     url: java.lang.String
   ): TestIterationDetailsModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionResults")(actionResults)
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("durationInMs")(durationInMs)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("startedDate")(startedDate)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(actionResults = actionResults, attachments = attachments, comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, id = id, outcome = outcome, parameters = parameters, startedDate = startedDate, url = url)
+  
     __obj.asInstanceOf[TestIterationDetailsModel]
   }
 }

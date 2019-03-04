@@ -60,15 +60,8 @@ object PagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Page]
     ]
   ): PagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("revert")(revert)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, insert = insert, list = list, patch = patch, publish = publish, revert = revert, update = update)
+  
     __obj.asInstanceOf[PagesResource]
   }
 }

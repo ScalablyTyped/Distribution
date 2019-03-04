@@ -24,10 +24,8 @@ object IgZoomSliderMethods {
     flush: js.Function0[scala.Unit],
     notifySizeChanged: js.Function0[scala.Unit]
   ): IgZoomSliderMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("notifySizeChanged")(notifySizeChanged)
+    val __obj = js.Dynamic.literal(destroy = destroy, flush = flush, notifySizeChanged = notifySizeChanged)
+  
     __obj.asInstanceOf[IgZoomSliderMethods]
   }
 }

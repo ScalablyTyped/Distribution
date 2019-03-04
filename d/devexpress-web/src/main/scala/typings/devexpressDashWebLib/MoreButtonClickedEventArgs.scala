@@ -40,12 +40,8 @@ object MoreButtonClickedEventArgs {
     resource: java.lang.String,
     targetDateTime: stdLib.Date
   ): MoreButtonClickedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("targetDateTime")(targetDateTime)
+    val __obj = js.Dynamic.literal(handled = handled, interval = interval, processOnServer = processOnServer, resource = resource, targetDateTime = targetDateTime)
+  
     __obj.asInstanceOf[MoreButtonClickedEventArgs]
   }
 }

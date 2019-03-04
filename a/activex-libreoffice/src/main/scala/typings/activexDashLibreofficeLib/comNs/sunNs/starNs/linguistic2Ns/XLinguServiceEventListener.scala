@@ -27,12 +27,8 @@ object XLinguServiceEventListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XLinguServiceEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("processLinguServiceEvent")(processLinguServiceEvent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, processLinguServiceEvent = processLinguServiceEvent, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XLinguServiceEventListener]
   }
 }

@@ -70,17 +70,8 @@ object ScaleIOVolumeSource {
     system: java.lang.String,
     volumeName: java.lang.String
   ): ScaleIOVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("gateway")(gateway)
-    __obj.updateDynamic("protectionDomain")(protectionDomain)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("secretRef")(secretRef)
-    __obj.updateDynamic("sslEnabled")(sslEnabled)
-    __obj.updateDynamic("storageMode")(storageMode)
-    __obj.updateDynamic("storagePool")(storagePool)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("volumeName")(volumeName)
+    val __obj = js.Dynamic.literal(fsType = fsType, gateway = gateway, protectionDomain = protectionDomain, readOnly = readOnly, secretRef = secretRef, sslEnabled = sslEnabled, storageMode = storageMode, storagePool = storagePool, system = system, volumeName = volumeName)
+  
     __obj.asInstanceOf[ScaleIOVolumeSource]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Password {
     reset: js.Function1[java.lang.String, js.Promise[scala.Unit]],
     set: js.Function2[java.lang.String, java.lang.String, js.Promise[scala.Unit]]
   ): Anon_Password = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(reset = reset, set = set)
+  
     __obj.asInstanceOf[Anon_Password]
   }
 }

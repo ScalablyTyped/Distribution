@@ -128,8 +128,7 @@ object MergeViewEditorConfiguration {
     workDelay: scala.Int | scala.Double = null,
     workTime: scala.Int | scala.Double = null
   ): MergeViewEditorConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orig")(orig)
+    val __obj = js.Dynamic.literal(orig = orig)
     if (!js.isUndefined(allowEditingOriginals)) __obj.updateDynamic("allowEditingOriginals")(allowEditingOriginals)
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
     if (collapseIdentical != null) __obj.updateDynamic("collapseIdentical")(collapseIdentical.asInstanceOf[js.Any])

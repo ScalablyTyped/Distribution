@@ -13,9 +13,8 @@ trait Anon_Size extends js.Object {
 object Anon_Size {
   @scala.inline
   def apply(size: scala.Double, ttl: scala.Double): Anon_Size = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("ttl")(ttl)
+    val __obj = js.Dynamic.literal(size = size, ttl = ttl)
+  
     __obj.asInstanceOf[Anon_Size]
   }
 }

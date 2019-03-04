@@ -14,10 +14,8 @@ trait JSONEditorNodeType extends js.Object {
 object JSONEditorNodeType {
   @scala.inline
   def apply(className: java.lang.String, title: java.lang.String, value: java.lang.String): JSONEditorNodeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(className = className, title = title, value = value)
+  
     __obj.asInstanceOf[JSONEditorNodeType]
   }
 }

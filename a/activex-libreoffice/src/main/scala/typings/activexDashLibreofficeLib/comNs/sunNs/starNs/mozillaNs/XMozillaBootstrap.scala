@@ -42,25 +42,8 @@ object XMozillaBootstrap {
     setCurrentProfile: js.Function2[MozillaProductType, java.lang.String, java.lang.String],
     shutdownProfile: js.Function0[scala.Double]
   ): XMozillaBootstrap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentProduct")(CurrentProduct)
-    __obj.updateDynamic("CurrentProfile")(CurrentProfile)
-    __obj.updateDynamic("Run")(Run)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("bootupProfile")(bootupProfile)
-    __obj.updateDynamic("getCurrentProduct")(getCurrentProduct)
-    __obj.updateDynamic("getCurrentProfile")(getCurrentProfile)
-    __obj.updateDynamic("getDefaultProfile")(getDefaultProfile)
-    __obj.updateDynamic("getProfileCount")(getProfileCount)
-    __obj.updateDynamic("getProfileExists")(getProfileExists)
-    __obj.updateDynamic("getProfileList")(getProfileList)
-    __obj.updateDynamic("getProfilePath")(getProfilePath)
-    __obj.updateDynamic("isCurrentProfileLocked")(isCurrentProfileLocked)
-    __obj.updateDynamic("isProfileLocked")(isProfileLocked)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentProfile")(setCurrentProfile)
-    __obj.updateDynamic("shutdownProfile")(shutdownProfile)
+    val __obj = js.Dynamic.literal(CurrentProduct = CurrentProduct, CurrentProfile = CurrentProfile, Run = Run, acquire = acquire, bootupProfile = bootupProfile, getCurrentProduct = getCurrentProduct, getCurrentProfile = getCurrentProfile, getDefaultProfile = getDefaultProfile, getProfileCount = getProfileCount, getProfileExists = getProfileExists, getProfileList = getProfileList, getProfilePath = getProfilePath, isCurrentProfileLocked = isCurrentProfileLocked, isProfileLocked = isProfileLocked, queryInterface = queryInterface, release = release, setCurrentProfile = setCurrentProfile, shutdownProfile = shutdownProfile)
+  
     __obj.asInstanceOf[XMozillaBootstrap]
   }
 }

@@ -12,8 +12,8 @@ trait ReleaseDefinitionEnvironmentStep extends js.Object {
 object ReleaseDefinitionEnvironmentStep {
   @scala.inline
   def apply(id: scala.Double): ReleaseDefinitionEnvironmentStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentStep]
   }
 }

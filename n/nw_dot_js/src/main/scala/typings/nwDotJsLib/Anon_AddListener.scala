@@ -31,8 +31,8 @@ object Anon_AddListener {
       scala.Unit
     ]
   ): Anon_AddListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
+    val __obj = js.Dynamic.literal(addListener = addListener)
+  
     __obj.asInstanceOf[Anon_AddListener]
   }
 }

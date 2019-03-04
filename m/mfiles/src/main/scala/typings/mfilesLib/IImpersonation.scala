@@ -20,11 +20,8 @@ object IImpersonation {
     ImpersonationType: mfilesLib.MFilesNs.MFImpersonationType,
     Password: java.lang.String
   ): IImpersonation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Account")(Account)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ImpersonationType")(ImpersonationType)
-    __obj.updateDynamic("Password")(Password)
+    val __obj = js.Dynamic.literal(Account = Account, Clone = Clone, ImpersonationType = ImpersonationType, Password = Password)
+  
     __obj.asInstanceOf[IImpersonation]
   }
 }

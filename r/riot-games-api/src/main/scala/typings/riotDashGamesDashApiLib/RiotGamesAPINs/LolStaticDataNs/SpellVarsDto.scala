@@ -22,12 +22,8 @@ object SpellVarsDto {
     link: java.lang.String,
     ranksWith: java.lang.String
   ): SpellVarsDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coeff")(coeff)
-    __obj.updateDynamic("dyn")(dyn)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("ranksWith")(ranksWith)
+    val __obj = js.Dynamic.literal(coeff = coeff, dyn = dyn, key = key, link = link, ranksWith = ranksWith)
+  
     __obj.asInstanceOf[SpellVarsDto]
   }
 }

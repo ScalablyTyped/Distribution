@@ -49,8 +49,7 @@ object PolygonProps {
     stroke: js.UndefOr[scala.Boolean] = js.undefined,
     weight: scala.Int | scala.Double = null
   ): PolygonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

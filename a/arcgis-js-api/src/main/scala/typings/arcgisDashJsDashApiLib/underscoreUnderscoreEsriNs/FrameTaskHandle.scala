@@ -43,13 +43,8 @@ object FrameTaskHandle {
     remove: js.Function0[scala.Unit],
     resume: js.Function0[scala.Unit]
   ): FrameTaskHandle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("resume")(resume)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, pause = pause, propertyIsEnumerable = propertyIsEnumerable, remove = remove, resume = resume)
+  
     __obj.asInstanceOf[FrameTaskHandle]
   }
 }

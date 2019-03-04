@@ -21,15 +21,8 @@ object ScreenshotDefaultsOptions {
     scale: scala.Boolean,
     screenshotOnRunFailure: scala.Boolean
   ): ScreenshotDefaultsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterScreenshot")(afterScreenshot)
-    __obj.updateDynamic("beforeScreenshot")(beforeScreenshot)
-    __obj.updateDynamic("blackout")(blackout)
-    __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    __obj.updateDynamic("clip")(clip)
-    __obj.updateDynamic("disableTimersAndAnimations")(disableTimersAndAnimations)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("screenshotOnRunFailure")(screenshotOnRunFailure)
+    val __obj = js.Dynamic.literal(afterScreenshot = afterScreenshot, beforeScreenshot = beforeScreenshot, blackout = blackout, capture = capture.asInstanceOf[js.Any], clip = clip, disableTimersAndAnimations = disableTimersAndAnimations, scale = scale, screenshotOnRunFailure = screenshotOnRunFailure)
+  
     __obj.asInstanceOf[ScreenshotDefaultsOptions]
   }
 }

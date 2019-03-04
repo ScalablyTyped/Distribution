@@ -24,13 +24,8 @@ object AdTimeParam {
     sequence: scala.Double,
     tag: java.lang.String
   ): AdTimeParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    __obj.updateDynamic("creativetype")(creativetype)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], creativetype = creativetype, duration = duration, position = position, sequence = sequence, tag = tag)
+  
     __obj.asInstanceOf[AdTimeParam]
   }
 }

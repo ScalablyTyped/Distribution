@@ -12,8 +12,8 @@ trait Anon_DeserializerAnonHiveJsonSerDeOpenXJsonSerDe extends js.Object {
 object Anon_DeserializerAnonHiveJsonSerDeOpenXJsonSerDe {
   @scala.inline
   def apply(deserializer: atPulumiPulumiLib.outputMod.Input[Anon_HiveJsonSerDeOpenXJsonSerDe]): Anon_DeserializerAnonHiveJsonSerDeOpenXJsonSerDe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deserializer")(deserializer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deserializer = deserializer.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DeserializerAnonHiveJsonSerDeOpenXJsonSerDe]
   }
 }

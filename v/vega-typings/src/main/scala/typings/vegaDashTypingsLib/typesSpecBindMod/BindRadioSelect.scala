@@ -21,9 +21,7 @@ object BindRadioSelect {
     name: java.lang.String = null,
     `type`: java.lang.String = null
   ): BindRadioSelect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], options = options)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -15,11 +15,8 @@ trait IDeviceMotionAcceleration extends js.Object {
 object IDeviceMotionAcceleration {
   @scala.inline
   def apply(timestamp: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): IDeviceMotionAcceleration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(timestamp = timestamp, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[IDeviceMotionAcceleration]
   }
 }

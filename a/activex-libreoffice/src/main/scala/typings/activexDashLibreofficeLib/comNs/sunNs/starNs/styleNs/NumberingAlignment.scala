@@ -25,11 +25,8 @@ object NumberingAlignment {
     TextMarginDistance: scala.Double,
     TextNumberingDistance: scala.Double
   ): NumberingAlignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("Insertion")(Insertion)
-    __obj.updateDynamic("TextMarginDistance")(TextMarginDistance)
-    __obj.updateDynamic("TextNumberingDistance")(TextNumberingDistance)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, Insertion = Insertion, TextMarginDistance = TextMarginDistance, TextNumberingDistance = TextNumberingDistance)
+  
     __obj.asInstanceOf[NumberingAlignment]
   }
 }

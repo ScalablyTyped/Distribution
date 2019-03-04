@@ -18,10 +18,8 @@ object ShortestPath {
     edges: js.Array[arangodbLib.ArangoDBNs.Edge[T]],
     vertices: js.Array[java.lang.String]
   ): ShortestPath[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("vertices")(vertices)
+    val __obj = js.Dynamic.literal(distance = distance, edges = edges, vertices = vertices)
+  
     __obj.asInstanceOf[ShortestPath[T]]
   }
 }

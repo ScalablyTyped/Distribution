@@ -13,9 +13,8 @@ trait Option extends js.Object {
 object Option {
   @scala.inline
   def apply(product: Product, theme: java.lang.String | CustomTheme): Option = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(product = product, theme = theme.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Option]
   }
 }

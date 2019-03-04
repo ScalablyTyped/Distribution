@@ -37,12 +37,8 @@ object _Impl {
     method: java.lang.String,
     noTransition: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("alreadySetup")(alreadySetup)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("noTransition")(noTransition)
+    val __obj = js.Dynamic.literal(action = action, alreadySetup = alreadySetup, labels = labels, method = method, noTransition = noTransition)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

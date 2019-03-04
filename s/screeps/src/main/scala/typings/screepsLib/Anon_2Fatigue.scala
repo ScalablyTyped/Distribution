@@ -12,8 +12,8 @@ trait Anon_2Fatigue extends js.Object {
 object Anon_2Fatigue {
   @scala.inline
   def apply(fatigue: screepsLib.screepsLibNumbers.`2`): Anon_2Fatigue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fatigue")(fatigue)
+    val __obj = js.Dynamic.literal(fatigue = fatigue)
+  
     __obj.asInstanceOf[Anon_2Fatigue]
   }
 }

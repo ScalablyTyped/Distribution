@@ -27,9 +27,8 @@ object TypeAlias {
     `type`: astDashTypesLib.astDashTypesLibStrings.TypeAlias,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
   ): TypeAlias = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(id = id, right = right)
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[TypeAlias]
   }

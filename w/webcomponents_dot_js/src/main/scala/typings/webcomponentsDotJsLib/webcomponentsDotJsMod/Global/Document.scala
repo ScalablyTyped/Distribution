@@ -18,8 +18,8 @@ object Document {
       webcomponentsDotJsLib.webcomponentsDotJsMod.CustomElementConstructor
     ]
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerElement")(registerElement)
+    val __obj = js.Dynamic.literal(registerElement = registerElement)
+  
     __obj.asInstanceOf[Document]
   }
 }

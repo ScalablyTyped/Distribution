@@ -20,14 +20,8 @@ object Category {
     posts: hexoLib.hexoMod.Model[Post],
     slug: java.lang.String
   ): Category = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("permalink")(permalink)
-    __obj.updateDynamic("posts")(posts)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(length = length, name = name, parent = parent, path = path, permalink = permalink, posts = posts, slug = slug)
+  
     __obj.asInstanceOf[Category]
   }
 }

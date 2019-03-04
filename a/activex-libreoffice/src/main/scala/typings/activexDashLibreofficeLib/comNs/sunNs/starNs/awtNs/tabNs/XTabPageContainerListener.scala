@@ -24,12 +24,8 @@ object XTabPageContainerListener {
     release: js.Function0[scala.Unit],
     tabPageActivated: js.Function1[TabPageActivatedEvent, scala.Unit]
   ): XTabPageContainerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("tabPageActivated")(tabPageActivated)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, tabPageActivated = tabPageActivated)
+  
     __obj.asInstanceOf[XTabPageContainerListener]
   }
 }

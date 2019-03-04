@@ -24,12 +24,7 @@ object Anon_0150OnResize {
     serverWidth: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
     scrollElement: stdLib.Window = null
   ): Anon_0150OnResize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onResize")(onResize)
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("scrollingResetTimeInterval")(scrollingResetTimeInterval)
-    __obj.updateDynamic("serverHeight")(serverHeight)
-    __obj.updateDynamic("serverWidth")(serverWidth)
+    val __obj = js.Dynamic.literal(onResize = onResize, onScroll = onScroll, scrollingResetTimeInterval = scrollingResetTimeInterval, serverHeight = serverHeight, serverWidth = serverWidth)
     if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement)
     __obj.asInstanceOf[Anon_0150OnResize]
   }

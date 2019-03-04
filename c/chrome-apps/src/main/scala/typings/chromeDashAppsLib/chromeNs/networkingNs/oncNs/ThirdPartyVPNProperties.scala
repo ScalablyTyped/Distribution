@@ -15,8 +15,7 @@ trait ThirdPartyVPNProperties extends js.Object {
 object ThirdPartyVPNProperties {
   @scala.inline
   def apply(ExtensionID: java.lang.String, ProviderName: java.lang.String = null): ThirdPartyVPNProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExtensionID")(ExtensionID)
+    val __obj = js.Dynamic.literal(ExtensionID = ExtensionID)
     if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName)
     __obj.asInstanceOf[ThirdPartyVPNProperties]
   }

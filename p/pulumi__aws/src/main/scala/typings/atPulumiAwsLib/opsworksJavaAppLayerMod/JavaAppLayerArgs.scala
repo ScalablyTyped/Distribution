@@ -146,8 +146,7 @@ object JavaAppLayerArgs {
     systemPackages: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     useEbsOptimizedInstances: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): JavaAppLayerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
     if (appServer != null) __obj.updateDynamic("appServer")(appServer.asInstanceOf[js.Any])
     if (appServerVersion != null) __obj.updateDynamic("appServerVersion")(appServerVersion.asInstanceOf[js.Any])
     if (autoAssignElasticIps != null) __obj.updateDynamic("autoAssignElasticIps")(autoAssignElasticIps.asInstanceOf[js.Any])

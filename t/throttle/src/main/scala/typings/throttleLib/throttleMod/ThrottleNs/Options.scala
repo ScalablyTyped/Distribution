@@ -101,8 +101,7 @@ object Options {
       scala.Unit
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bps")(bps)
+    val __obj = js.Dynamic.literal(bps = bps)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)

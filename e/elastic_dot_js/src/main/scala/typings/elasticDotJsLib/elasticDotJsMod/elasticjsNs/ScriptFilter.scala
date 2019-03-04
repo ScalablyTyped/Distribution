@@ -53,15 +53,8 @@ object ScriptFilter {
     script: js.Function1[java.lang.String, ScriptFilter],
     toJSON: js.Function0[ScriptFilter]
   ): ScriptFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, lang = lang, name = name, params = params, script = script, toJSON = toJSON)
+  
     __obj.asInstanceOf[ScriptFilter]
   }
 }

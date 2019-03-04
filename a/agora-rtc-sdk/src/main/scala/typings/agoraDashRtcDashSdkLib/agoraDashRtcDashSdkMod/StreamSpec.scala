@@ -36,11 +36,7 @@ object StreamSpec {
     microphoneId: java.lang.String = null,
     mirror: js.UndefOr[scala.Boolean] = js.undefined
   ): StreamSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audio")(audio)
-    __obj.updateDynamic("screen")(screen)
-    __obj.updateDynamic("streamID")(streamID)
-    __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(audio = audio, screen = screen, streamID = streamID, video = video)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (audioProcessing != null) __obj.updateDynamic("audioProcessing")(audioProcessing)
     if (cameraId != null) __obj.updateDynamic("cameraId")(cameraId)

@@ -42,12 +42,7 @@ object IAngularEvent {
     targetScope: IScope,
     stopPropagation: js.Function0[scala.Unit] = null
   ): IAngularEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentScope")(currentScope)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("targetScope")(targetScope)
+    val __obj = js.Dynamic.literal(currentScope = currentScope, defaultPrevented = defaultPrevented, name = name, preventDefault = preventDefault, targetScope = targetScope)
     if (stopPropagation != null) __obj.updateDynamic("stopPropagation")(stopPropagation)
     __obj.asInstanceOf[IAngularEvent]
   }

@@ -12,6 +12,6 @@ trait LodashReduceRight1x4[T] extends js.Object {
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[T, TResult],
     accumulator: TResult
   ): TResult = js.native
-  def apply[TResult](callback: lodashLib.lodashMod.underscoreNs.`__`, accumulator: TResult): LodashReduceRight1x6[T, TResult] = js.native
+  def apply[TResult](callback: lodashLib.lodashMod.underscoreNs.__, accumulator: TResult): LodashReduceRight1x6[T, TResult] = js.native
 }
 

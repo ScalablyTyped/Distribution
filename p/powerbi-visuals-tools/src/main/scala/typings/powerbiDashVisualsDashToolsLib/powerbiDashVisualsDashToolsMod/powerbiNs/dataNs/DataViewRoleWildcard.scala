@@ -19,10 +19,8 @@ object DataViewRoleWildcard {
     kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind,
     roles: js.Array[java.lang.String]
   ): DataViewRoleWildcard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("roles")(roles)
+    val __obj = js.Dynamic.literal(key = key, kind = kind, roles = roles)
+  
     __obj.asInstanceOf[DataViewRoleWildcard]
   }
 }

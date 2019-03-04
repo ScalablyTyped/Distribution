@@ -23,14 +23,8 @@ object IPixelGeometry {
     scale: js.Function1[scala.Double, IPixelGeometry],
     shift: js.Function1[js.Array[scala.Double], IPixelGeometry]
   ): IPixelGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getMetaData")(getMetaData)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("shift")(shift)
+    val __obj = js.Dynamic.literal(equals = equals, events = events, getBounds = getBounds, getMetaData = getMetaData, getType = getType, scale = scale, shift = shift)
+  
     __obj.asInstanceOf[IPixelGeometry]
   }
 }

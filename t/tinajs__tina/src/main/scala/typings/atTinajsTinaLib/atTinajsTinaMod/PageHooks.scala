@@ -24,13 +24,8 @@ object PageHooks {
     onShow: js.Function1[Page, scala.Unit],
     onUnload: js.Function1[Page, scala.Unit]
   ): PageHooks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeLoad")(beforeLoad)
-    __obj.updateDynamic("onHide")(onHide)
-    __obj.updateDynamic("onLoad")(onLoad)
-    __obj.updateDynamic("onReady")(onReady)
-    __obj.updateDynamic("onShow")(onShow)
-    __obj.updateDynamic("onUnload")(onUnload)
+    val __obj = js.Dynamic.literal(beforeLoad = beforeLoad, onHide = onHide, onLoad = onLoad, onReady = onReady, onShow = onShow, onUnload = onUnload)
+  
     __obj.asInstanceOf[PageHooks]
   }
 }

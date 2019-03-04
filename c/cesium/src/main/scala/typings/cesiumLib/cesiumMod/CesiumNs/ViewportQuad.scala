@@ -24,13 +24,8 @@ object ViewportQuad {
     show: scala.Boolean,
     update: js.Function0[scala.Unit]
   ): ViewportQuad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("rectangle")(rectangle)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(destroy = destroy, isDestroyed = isDestroyed, material = material, rectangle = rectangle, show = show, update = update)
+  
     __obj.asInstanceOf[ViewportQuad]
   }
 }

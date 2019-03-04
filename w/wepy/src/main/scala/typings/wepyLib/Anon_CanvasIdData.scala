@@ -24,12 +24,7 @@ object Anon_CanvasIdData {
     y: scala.Double,
     height: scala.Int | scala.Double = null
   ): Anon_CanvasIdData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasId")(canvasId)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("wdith")(wdith)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(canvasId = canvasId, data = data, wdith = wdith, x = x, y = y)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CanvasIdData]
   }

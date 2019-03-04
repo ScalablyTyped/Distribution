@@ -22,10 +22,8 @@ object IMembershipSPWeb {
     Groups: js.Function0[IExpression],
     Users: js.Function0[IExpression]
   ): IMembershipSPWeb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllUsers")(AllUsers)
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("Users")(Users)
+    val __obj = js.Dynamic.literal(AllUsers = AllUsers, Groups = Groups, Users = Users)
+  
     __obj.asInstanceOf[IMembershipSPWeb]
   }
 }

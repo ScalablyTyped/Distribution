@@ -18,8 +18,8 @@ trait HeapDiff extends js.Object {
 object HeapDiff {
   @scala.inline
   def apply(end: js.Function0[HeapDiffInformation]): HeapDiff = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
+    val __obj = js.Dynamic.literal(end = end)
+  
     __obj.asInstanceOf[HeapDiff]
   }
 }

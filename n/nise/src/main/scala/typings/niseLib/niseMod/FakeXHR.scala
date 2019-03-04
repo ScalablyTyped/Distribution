@@ -16,9 +16,8 @@ object FakeXHR {
     FakeXMLHttpRequest: FakeXMLHttpRequestStatic,
     useFakeXMLHttpRequest: js.Function0[FakeXMLHttpRequestStatic]
   ): FakeXHR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FakeXMLHttpRequest")(FakeXMLHttpRequest)
-    __obj.updateDynamic("useFakeXMLHttpRequest")(useFakeXMLHttpRequest)
+    val __obj = js.Dynamic.literal(FakeXMLHttpRequest = FakeXMLHttpRequest, useFakeXMLHttpRequest = useFakeXMLHttpRequest)
+  
     __obj.asInstanceOf[FakeXHR]
   }
 }

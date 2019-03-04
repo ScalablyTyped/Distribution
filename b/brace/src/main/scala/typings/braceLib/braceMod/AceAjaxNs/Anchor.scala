@@ -47,13 +47,8 @@ object Anchor {
     onChange: js.Function1[js.Any, scala.Unit],
     setPosition: js.Function3[scala.Double, scala.Double, scala.Boolean, scala.Unit]
   ): Anchor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("setPosition")(setPosition)
+    val __obj = js.Dynamic.literal(detach = detach, getDocument = getDocument, getPosition = getPosition, on = on, onChange = onChange, setPosition = setPosition)
+  
     __obj.asInstanceOf[Anchor]
   }
 }

@@ -13,9 +13,8 @@ trait BatchRequestResults extends js.Object {
 object BatchRequestResults {
   @scala.inline
   def apply(hasError: scala.Boolean, results: js.Array[BatchRequestResult]): BatchRequestResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasError")(hasError)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(hasError = hasError, results = results)
+  
     __obj.asInstanceOf[BatchRequestResults]
   }
 }

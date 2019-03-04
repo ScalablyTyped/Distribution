@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var extensions: js.UndefOr[
     js.Array[
       chromeDashAppsLib.chromeDashAppsLibStrings.`*` | java.lang.String | Anon_Includedirectories
@@ -19,7 +19,7 @@ trait `Anon_` extends js.Object {
   ] = js.undefined
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     extensions: js.Array[
@@ -28,11 +28,11 @@ object `Anon_` {
     types: js.Array[
       chromeDashAppsLib.chromeDashAppsLibStrings.`*` | java.lang.String | Anon_Includedirectories
     ] = null
-  ): `Anon_` = {
+  ): Anon_ = {
     val __obj = js.Dynamic.literal()
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     if (types != null) __obj.updateDynamic("types")(types)
-    __obj.asInstanceOf[`Anon_`]
+    __obj.asInstanceOf[Anon_]
   }
 }
 

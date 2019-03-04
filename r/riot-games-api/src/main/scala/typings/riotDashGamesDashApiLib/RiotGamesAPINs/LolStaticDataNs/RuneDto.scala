@@ -56,29 +56,8 @@ object RuneDto {
     stats: BasicDataStatsDto,
     tags: js.Array[java.lang.String]
   ): RuneDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colloq")(colloq)
-    __obj.updateDynamic("consumeOnFull")(consumeOnFull)
-    __obj.updateDynamic("consumed")(consumed)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("hideFromAll")(hideFromAll)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("inStore")(inStore)
-    __obj.updateDynamic("into")(into)
-    __obj.updateDynamic("maps")(maps)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("plaintext")(plaintext)
-    __obj.updateDynamic("requiredChampion")(requiredChampion)
-    __obj.updateDynamic("rune")(rune)
-    __obj.updateDynamic("sanitizedDescription")(sanitizedDescription)
-    __obj.updateDynamic("specialRecipe")(specialRecipe)
-    __obj.updateDynamic("stacks")(stacks)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(colloq = colloq, consumeOnFull = consumeOnFull, consumed = consumed, depth = depth, description = description, from = from, group = group, hideFromAll = hideFromAll, id = id, image = image, inStore = inStore, into = into, maps = maps, name = name, plaintext = plaintext, requiredChampion = requiredChampion, rune = rune, sanitizedDescription = sanitizedDescription, specialRecipe = specialRecipe, stacks = stacks, stats = stats, tags = tags)
+  
     __obj.asInstanceOf[RuneDto]
   }
 }

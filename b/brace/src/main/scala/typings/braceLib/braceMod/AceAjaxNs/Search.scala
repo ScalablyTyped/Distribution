@@ -50,13 +50,8 @@ object Search {
     set: js.Function1[js.Any, Search],
     setOptions: js.Function1[js.Any, scala.Unit]
   ): Search = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findAll")(findAll)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setOptions")(setOptions)
+    val __obj = js.Dynamic.literal(find = find, findAll = findAll, getOptions = getOptions, replace = replace, set = set, setOptions = setOptions)
+  
     __obj.asInstanceOf[Search]
   }
 }

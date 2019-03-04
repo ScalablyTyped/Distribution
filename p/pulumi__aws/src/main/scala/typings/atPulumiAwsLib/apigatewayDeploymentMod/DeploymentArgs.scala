@@ -43,9 +43,7 @@ object DeploymentArgs {
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null
   ): DeploymentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(restApi = restApi.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (stageDescription != null) __obj.updateDynamic("stageDescription")(stageDescription.asInstanceOf[js.Any])
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])

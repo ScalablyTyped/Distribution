@@ -22,12 +22,8 @@ object IScheduledToastNotification {
     maximumSnoozeCount: scala.Double,
     snoozeInterval: scala.Double
   ): IScheduledToastNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("deliveryTime")(deliveryTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maximumSnoozeCount")(maximumSnoozeCount)
-    __obj.updateDynamic("snoozeInterval")(snoozeInterval)
+    val __obj = js.Dynamic.literal(content = content, deliveryTime = deliveryTime, id = id, maximumSnoozeCount = maximumSnoozeCount, snoozeInterval = snoozeInterval)
+  
     __obj.asInstanceOf[IScheduledToastNotification]
   }
 }

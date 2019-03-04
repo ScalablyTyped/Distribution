@@ -14,7 +14,7 @@ class MultiGrid ()
 @JSImport("react-virtualized/dist/commonjs/MultiGrid", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.`Anon_` = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_ = js.native
   var propTypes: reactDashVirtualizedLib.Anon_ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(
     nextProps: reactDashVirtualizedLib.distEsMultiGridMod.MultiGridProps,

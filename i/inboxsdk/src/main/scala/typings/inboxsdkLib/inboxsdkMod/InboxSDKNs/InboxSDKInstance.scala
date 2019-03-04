@@ -36,19 +36,8 @@ object InboxSDKInstance {
     User: inboxsdkLib.inboxsdkMod.InboxSDKNs.UserNs.UserInstance,
     Widgets: inboxsdkLib.inboxsdkMod.InboxSDKNs.WidgetsNs.WidgetsInstance
   ): InboxSDKInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ButterBar")(ButterBar)
-    __obj.updateDynamic("Compose")(Compose)
-    __obj.updateDynamic("Conversations")(Conversations)
-    __obj.updateDynamic("Global")(Global)
-    __obj.updateDynamic("Keyboard")(Keyboard)
-    __obj.updateDynamic("Lists")(Lists)
-    __obj.updateDynamic("NavMenu")(NavMenu)
-    __obj.updateDynamic("Router")(Router)
-    __obj.updateDynamic("Search")(Search)
-    __obj.updateDynamic("Toolbars")(Toolbars)
-    __obj.updateDynamic("User")(User)
-    __obj.updateDynamic("Widgets")(Widgets)
+    val __obj = js.Dynamic.literal(ButterBar = ButterBar, Compose = Compose, Conversations = Conversations, Global = Global, Keyboard = Keyboard, Lists = Lists, NavMenu = NavMenu, Router = Router, Search = Search, Toolbars = Toolbars, User = User, Widgets = Widgets)
+  
     __obj.asInstanceOf[InboxSDKInstance]
   }
 }

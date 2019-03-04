@@ -46,17 +46,8 @@ object DeviceInfo {
     TopInset: scala.Double,
     Width: scala.Double
   ): DeviceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BitsPerPixel")(BitsPerPixel)
-    __obj.updateDynamic("BottomInset")(BottomInset)
-    __obj.updateDynamic("Capabilities")(Capabilities)
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("LeftInset")(LeftInset)
-    __obj.updateDynamic("PixelPerMeterX")(PixelPerMeterX)
-    __obj.updateDynamic("PixelPerMeterY")(PixelPerMeterY)
-    __obj.updateDynamic("RightInset")(RightInset)
-    __obj.updateDynamic("TopInset")(TopInset)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(BitsPerPixel = BitsPerPixel, BottomInset = BottomInset, Capabilities = Capabilities, Height = Height, LeftInset = LeftInset, PixelPerMeterX = PixelPerMeterX, PixelPerMeterY = PixelPerMeterY, RightInset = RightInset, TopInset = TopInset, Width = Width)
+  
     __obj.asInstanceOf[DeviceInfo]
   }
 }

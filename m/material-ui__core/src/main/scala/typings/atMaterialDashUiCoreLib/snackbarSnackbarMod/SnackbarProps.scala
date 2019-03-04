@@ -71,8 +71,7 @@ object SnackbarProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     transitionDuration: js.Any = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(open = open)
     if (ClickAwayListenerProps != null) __obj.updateDynamic("ClickAwayListenerProps")(ClickAwayListenerProps)
     if (ContentProps != null) __obj.updateDynamic("ContentProps")(ContentProps)
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])

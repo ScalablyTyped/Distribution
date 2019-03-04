@@ -19,8 +19,7 @@ trait RouteOptions extends js.Object {
 object RouteOptions {
   @scala.inline
   def apply(route: java.lang.String, expire: scala.Int | scala.Double = null): RouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(route = route)
     if (expire != null) __obj.updateDynamic("expire")(expire.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptions]
   }

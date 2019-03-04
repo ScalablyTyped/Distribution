@@ -12,8 +12,8 @@ trait STACKGL_resize_drawingbuffer extends js.Object {
 object STACKGL_resize_drawingbuffer {
   @scala.inline
   def apply(resize: js.Function2[stdLib.GLint, stdLib.GLint, scala.Unit]): STACKGL_resize_drawingbuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resize")(resize)
+    val __obj = js.Dynamic.literal(resize = resize)
+  
     __obj.asInstanceOf[STACKGL_resize_drawingbuffer]
   }
 }

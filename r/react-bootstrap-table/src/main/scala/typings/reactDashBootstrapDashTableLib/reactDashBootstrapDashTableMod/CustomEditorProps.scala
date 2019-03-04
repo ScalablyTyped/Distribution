@@ -35,9 +35,7 @@ object CustomEditorProps {
     placeholder: java.lang.String = null,
     ref: js.Function1[/* ref */ js.Any, _] = null
   ): CustomEditorProps[TRow, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, row = row.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)

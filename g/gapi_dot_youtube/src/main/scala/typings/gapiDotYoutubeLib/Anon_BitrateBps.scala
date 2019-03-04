@@ -32,11 +32,8 @@ object Anon_BitrateBps {
     codec: java.lang.String,
     vendor: java.lang.String
   ): Anon_BitrateBps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitrateBps")(bitrateBps)
-    __obj.updateDynamic("channelCount")(channelCount)
-    __obj.updateDynamic("codec")(codec)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(bitrateBps = bitrateBps, channelCount = channelCount, codec = codec, vendor = vendor)
+  
     __obj.asInstanceOf[Anon_BitrateBps]
   }
 }

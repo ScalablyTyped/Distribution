@@ -33,23 +33,8 @@ object FieldSchema_InForm_MultiChoice {
     Type: java.lang.String,
     UseMinWidth: scala.Boolean
   ): FieldSchema_InForm_MultiChoice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("FillInChoice")(FillInChoice)
-    __obj.updateDynamic("Hidden")(Hidden)
-    __obj.updateDynamic("IMEMode")(IMEMode)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("MultiChoices")(MultiChoices)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReadOnlyField")(ReadOnlyField)
-    __obj.updateDynamic("Required")(Required)
-    __obj.updateDynamic("RestrictedMode")(RestrictedMode)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UseMinWidth")(UseMinWidth)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, Description = Description, Direction = Direction, FieldType = FieldType, FillInChoice = FillInChoice, Hidden = Hidden, IMEMode = IMEMode, Id = Id, MultiChoices = MultiChoices, Name = Name, ReadOnlyField = ReadOnlyField, Required = Required, RestrictedMode = RestrictedMode, Title = Title, Type = Type, UseMinWidth = UseMinWidth)
+  
     __obj.asInstanceOf[FieldSchema_InForm_MultiChoice]
   }
 }

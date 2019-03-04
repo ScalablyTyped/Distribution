@@ -13,9 +13,8 @@ trait Range extends js.Object {
 object Range {
   @scala.inline
   def apply(max: scala.Double, min: scala.Double): Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
+    val __obj = js.Dynamic.literal(max = max, min = min)
+  
     __obj.asInstanceOf[Range]
   }
 }

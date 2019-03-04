@@ -30,16 +30,8 @@ object Anon_Body {
     statusMessage: java.lang.String,
     url: java.lang.String
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("boundary")(boundary)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("httpVersion")(httpVersion)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("multipart")(multipart)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, boundary = boundary, headers = headers, httpVersion = httpVersion, method = method, multipart = multipart, statusCode = statusCode, statusMessage = statusMessage, url = url)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

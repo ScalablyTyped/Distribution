@@ -20,9 +20,7 @@ object IVaultUIEvents {
     OnStarted: js.Function0[scala.Unit] = null,
     OnStop: js.Function0[scala.Unit] = null
   ): IVaultUIEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnNewVaultEntry != null) __obj.updateDynamic("OnNewVaultEntry")(OnNewVaultEntry)
     if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)
     if (OnStop != null) __obj.updateDynamic("OnStop")(OnStop)

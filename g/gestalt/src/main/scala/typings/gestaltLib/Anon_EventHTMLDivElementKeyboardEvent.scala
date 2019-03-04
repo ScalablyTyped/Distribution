@@ -20,8 +20,8 @@ object Anon_EventHTMLDivElementKeyboardEvent {
       reactLib.Event
     ]) | (reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], reactLib.Event])
   ): Anon_EventHTMLDivElementKeyboardEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_EventHTMLDivElementKeyboardEvent]
   }
 }

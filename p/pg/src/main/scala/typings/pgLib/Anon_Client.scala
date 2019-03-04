@@ -54,14 +54,7 @@ object Anon_Client {
     defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig,
     native: /* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any = null
   ): Anon_Client = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Client")(Client)
-    __obj.updateDynamic("ClientBase")(ClientBase)
-    __obj.updateDynamic("Connection")(Connection)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("Pool")(Pool)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(Client = Client, ClientBase = ClientBase, Connection = Connection, Events = Events, Pool = Pool, Query = Query, defaults = defaults)
     if (native != null) __obj.updateDynamic("native")(native)
     __obj.asInstanceOf[Anon_Client]
   }

@@ -28,15 +28,8 @@ object IAxes {
     top: IAxis,
     visible: scala.Boolean
   ): IAxes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(add = add, bottom = bottom, chart = chart, items = items, left = left, right = right, top = top, visible = visible)
+  
     __obj.asInstanceOf[IAxes]
   }
 }

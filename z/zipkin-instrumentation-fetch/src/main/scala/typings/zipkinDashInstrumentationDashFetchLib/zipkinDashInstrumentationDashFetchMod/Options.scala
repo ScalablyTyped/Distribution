@@ -13,9 +13,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(remoteServiceName: java.lang.String, tracer: zipkinLib.zipkinMod.Tracer): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remoteServiceName")(remoteServiceName)
-    __obj.updateDynamic("tracer")(tracer)
+    val __obj = js.Dynamic.literal(remoteServiceName = remoteServiceName, tracer = tracer)
+  
     __obj.asInstanceOf[Options]
   }
 }

@@ -94,8 +94,7 @@ object ValidationOptions {
       scala.Unit
     ] = null
   ): ValidationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exampleConfig")(exampleConfig)
+    val __obj = js.Dynamic.literal(exampleConfig = exampleConfig)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (deprecate != null) __obj.updateDynamic("deprecate")(deprecate)

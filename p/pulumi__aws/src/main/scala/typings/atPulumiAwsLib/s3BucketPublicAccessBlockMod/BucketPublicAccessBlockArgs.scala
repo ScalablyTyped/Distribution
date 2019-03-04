@@ -42,8 +42,7 @@ object BucketPublicAccessBlockArgs {
     ignorePublicAcls: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     restrictPublicBuckets: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): BucketPublicAccessBlockArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     if (blockPublicAcls != null) __obj.updateDynamic("blockPublicAcls")(blockPublicAcls.asInstanceOf[js.Any])
     if (blockPublicPolicy != null) __obj.updateDynamic("blockPublicPolicy")(blockPublicPolicy.asInstanceOf[js.Any])
     if (ignorePublicAcls != null) __obj.updateDynamic("ignorePublicAcls")(ignorePublicAcls.asInstanceOf[js.Any])

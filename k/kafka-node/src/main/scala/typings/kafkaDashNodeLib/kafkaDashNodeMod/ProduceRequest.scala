@@ -23,9 +23,7 @@ object ProduceRequest {
     key: js.Any = null,
     partition: scala.Int | scala.Double = null
   ): ProduceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(messages = messages, topic = topic)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])

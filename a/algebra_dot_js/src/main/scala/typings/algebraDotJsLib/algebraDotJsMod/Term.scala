@@ -19,11 +19,8 @@ object Term {
     toString: js.Function0[java.lang.String],
     variables: js.Array[Variable]
   ): Term = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coefficient")(coefficient)
-    __obj.updateDynamic("coefficients")(coefficients)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(coefficient = coefficient, coefficients = coefficients, toString = toString, variables = variables)
+  
     __obj.asInstanceOf[Term]
   }
 }

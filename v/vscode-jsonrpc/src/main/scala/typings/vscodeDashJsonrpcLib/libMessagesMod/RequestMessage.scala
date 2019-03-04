@@ -28,10 +28,7 @@ object RequestMessage {
     method: java.lang.String,
     params: js.Any = null
   ): RequestMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("jsonrpc")(jsonrpc)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc, method = method)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[RequestMessage]
   }

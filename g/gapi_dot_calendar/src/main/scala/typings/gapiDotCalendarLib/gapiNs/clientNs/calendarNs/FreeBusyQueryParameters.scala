@@ -24,10 +24,7 @@ object FreeBusyQueryParameters {
     groupExpansionMax: js.UndefOr[integer] = js.undefined,
     timeZone: java.lang.String = null
   ): FreeBusyQueryParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("timeMax")(timeMax)
-    __obj.updateDynamic("timeMin")(timeMin)
+    val __obj = js.Dynamic.literal(items = items, timeMax = timeMax, timeMin = timeMin)
     if (!js.isUndefined(calendarExpansionMax)) __obj.updateDynamic("calendarExpansionMax")(calendarExpansionMax)
     if (!js.isUndefined(groupExpansionMax)) __obj.updateDynamic("groupExpansionMax")(groupExpansionMax)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)

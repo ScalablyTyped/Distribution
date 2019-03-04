@@ -25,8 +25,7 @@ object ICustomerSourceCreationOptions {
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null
   ): ICustomerSourceCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

@@ -9,6 +9,7 @@ trait IconProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps]] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement]] = js.undefined
+  var onKeyUp: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var rotate: js.UndefOr[scala.Double] = js.undefined
@@ -28,6 +29,7 @@ object IconProps {
     className: java.lang.String = null,
     component: reactLib.reactMod.ReactNs.ComponentType[CustomIconComponentProps] = null,
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement] = null,
+    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLElement] = null,
     prefixCls: java.lang.String = null,
     role: java.lang.String = null,
     rotate: scala.Int | scala.Double = null,
@@ -44,6 +46,7 @@ object IconProps {
     if (className != null) __obj.updateDynamic("className")(className)
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (role != null) __obj.updateDynamic("role")(role)
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])

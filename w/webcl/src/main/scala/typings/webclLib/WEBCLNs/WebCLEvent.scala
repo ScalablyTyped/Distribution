@@ -21,11 +21,8 @@ object WebCLEvent {
     release: js.Function0[scala.Unit],
     setCallback: js.Function2[CommandExecutionStatus, WebCLCallback, scala.Unit]
   ): WebCLEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getProfilingInfo")(getProfilingInfo)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCallback")(setCallback)
+    val __obj = js.Dynamic.literal(getInfo = getInfo, getProfilingInfo = getProfilingInfo, release = release, setCallback = setCallback)
+  
     __obj.asInstanceOf[WebCLEvent]
   }
 }

@@ -18,10 +18,8 @@ object OnGestureListener {
     onFling: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
     onScale: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit]
   ): OnGestureListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDrag")(onDrag)
-    __obj.updateDynamic("onFling")(onFling)
-    __obj.updateDynamic("onScale")(onScale)
+    val __obj = js.Dynamic.literal(onDrag = onDrag, onFling = onFling, onScale = onScale)
+  
     __obj.asInstanceOf[OnGestureListener]
   }
 }

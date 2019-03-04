@@ -13,9 +13,8 @@ trait CognitoIdentity extends js.Object {
 object CognitoIdentity {
   @scala.inline
   def apply(cognitoIdentityId: java.lang.String, cognitoIdentityPoolId: java.lang.String): CognitoIdentity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cognitoIdentityId")(cognitoIdentityId)
-    __obj.updateDynamic("cognitoIdentityPoolId")(cognitoIdentityPoolId)
+    val __obj = js.Dynamic.literal(cognitoIdentityId = cognitoIdentityId, cognitoIdentityPoolId = cognitoIdentityPoolId)
+  
     __obj.asInstanceOf[CognitoIdentity]
   }
 }

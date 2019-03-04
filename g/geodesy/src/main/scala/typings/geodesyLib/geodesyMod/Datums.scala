@@ -32,17 +32,8 @@ object Datums {
     WGS72: Datum,
     WGS84: Datum
   ): Datums = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ED50")(ED50)
-    __obj.updateDynamic("Irl1975")(Irl1975)
-    __obj.updateDynamic("NAD27")(NAD27)
-    __obj.updateDynamic("NAD83")(NAD83)
-    __obj.updateDynamic("NTF")(NTF)
-    __obj.updateDynamic("OSGB36")(OSGB36)
-    __obj.updateDynamic("Potsdam")(Potsdam)
-    __obj.updateDynamic("TokyoJapan")(TokyoJapan)
-    __obj.updateDynamic("WGS72")(WGS72)
-    __obj.updateDynamic("WGS84")(WGS84)
+    val __obj = js.Dynamic.literal(ED50 = ED50, Irl1975 = Irl1975, NAD27 = NAD27, NAD83 = NAD83, NTF = NTF, OSGB36 = OSGB36, Potsdam = Potsdam, TokyoJapan = TokyoJapan, WGS72 = WGS72, WGS84 = WGS84)
+  
     __obj.asInstanceOf[Datums]
   }
 }

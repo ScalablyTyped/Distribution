@@ -22,12 +22,8 @@ object EventListener {
     Helper: js.Any,
     ListenerType: java.lang.String
   ): EventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddListenerParam")(AddListenerParam)
-    __obj.updateDynamic("AllListener")(AllListener)
-    __obj.updateDynamic("EventMethod")(EventMethod)
-    __obj.updateDynamic("Helper")(Helper)
-    __obj.updateDynamic("ListenerType")(ListenerType)
+    val __obj = js.Dynamic.literal(AddListenerParam = AddListenerParam, AllListener = AllListener, EventMethod = EventMethod, Helper = Helper, ListenerType = ListenerType)
+  
     __obj.asInstanceOf[EventListener]
   }
 }

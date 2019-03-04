@@ -16,9 +16,8 @@ object SchemaUtils {
     isSingleProperty: js.Function1[Schema[js.Object], scala.Boolean],
     process: js.Function1[Schema[js.Object], scala.Boolean]
   ): SchemaUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isSingleProperty")(isSingleProperty)
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(isSingleProperty = isSingleProperty, process = process)
+  
     __obj.asInstanceOf[SchemaUtils]
   }
 }

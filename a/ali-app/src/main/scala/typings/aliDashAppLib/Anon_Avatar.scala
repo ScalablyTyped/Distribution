@@ -26,12 +26,8 @@ object Anon_Avatar {
     realName: java.lang.String,
     userId: java.lang.String
   ): Anon_Avatar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("realName")(realName)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(avatar = avatar, email = email, mobile = mobile, realName = realName, userId = userId)
+  
     __obj.asInstanceOf[Anon_Avatar]
   }
 }

@@ -18,10 +18,8 @@ object NodeInfo {
     keypath: java.lang.String,
     ractive: Ractive
   ): NodeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("keypath")(keypath)
-    __obj.updateDynamic("ractive")(ractive)
+    val __obj = js.Dynamic.literal(index = index, keypath = keypath, ractive = ractive)
+  
     __obj.asInstanceOf[NodeInfo]
   }
 }

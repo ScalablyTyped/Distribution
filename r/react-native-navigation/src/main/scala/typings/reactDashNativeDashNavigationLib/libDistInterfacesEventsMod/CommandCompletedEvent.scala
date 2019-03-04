@@ -14,10 +14,8 @@ trait CommandCompletedEvent extends js.Object {
 object CommandCompletedEvent {
   @scala.inline
   def apply(commandId: java.lang.String, completionTime: scala.Double, params: js.Any): CommandCompletedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commandId")(commandId)
-    __obj.updateDynamic("completionTime")(completionTime)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(commandId = commandId, completionTime = completionTime, params = params)
+  
     __obj.asInstanceOf[CommandCompletedEvent]
   }
 }

@@ -26,9 +26,7 @@ object DCOptions {
     frequency: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null
   ): DCOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pins")(pins.asInstanceOf[js.Any])
-    __obj.updateDynamic("pwm")(pwm)
+    val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], pwm = pwm)
     if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[DCOptions]

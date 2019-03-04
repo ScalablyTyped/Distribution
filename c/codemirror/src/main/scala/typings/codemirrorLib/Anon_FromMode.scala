@@ -26,8 +26,7 @@ object Anon_FromMode {
     sharedHist: js.UndefOr[scala.Boolean] = js.undefined,
     to: scala.Int | scala.Double = null
   ): Anon_FromMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (!js.isUndefined(sharedHist)) __obj.updateDynamic("sharedHist")(sharedHist)
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])

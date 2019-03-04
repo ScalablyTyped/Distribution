@@ -18,10 +18,8 @@ object OverScrollLocker {
     lockOverScrollBottom: js.Function1[scala.Double, scala.Unit],
     lockOverScrollTop: js.Function1[scala.Double, scala.Unit]
   ): OverScrollLocker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getScrollContentBottom")(getScrollContentBottom)
-    __obj.updateDynamic("lockOverScrollBottom")(lockOverScrollBottom)
-    __obj.updateDynamic("lockOverScrollTop")(lockOverScrollTop)
+    val __obj = js.Dynamic.literal(getScrollContentBottom = getScrollContentBottom, lockOverScrollBottom = lockOverScrollBottom, lockOverScrollTop = lockOverScrollTop)
+  
     __obj.asInstanceOf[OverScrollLocker]
   }
 }

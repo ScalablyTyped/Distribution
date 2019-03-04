@@ -12,8 +12,8 @@ trait Anon_False extends js.Object {
 object Anon_False {
   @scala.inline
   def apply(normalize: readDashPkgLib.readDashPkgLibNumbers.`false`): Anon_False = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("normalize")(normalize)
+    val __obj = js.Dynamic.literal(normalize = normalize)
+  
     __obj.asInstanceOf[Anon_False]
   }
 }

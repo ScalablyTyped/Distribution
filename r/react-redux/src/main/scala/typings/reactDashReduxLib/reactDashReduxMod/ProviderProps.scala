@@ -26,8 +26,7 @@ object ProviderProps {
     store: reduxLib.reduxMod.Store[_, A],
     context: reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]] = null
   ): ProviderProps[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(store = store)
     if (context != null) __obj.updateDynamic("context")(context)
     __obj.asInstanceOf[ProviderProps[A]]
   }

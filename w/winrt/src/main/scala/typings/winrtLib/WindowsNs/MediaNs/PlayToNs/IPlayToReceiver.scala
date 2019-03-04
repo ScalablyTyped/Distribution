@@ -68,35 +68,8 @@ object IPlayToReceiver {
     supportsImage: scala.Boolean,
     supportsVideo: scala.Boolean
   ): IPlayToReceiver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("notifyDurationChange")(notifyDurationChange)
-    __obj.updateDynamic("notifyEnded")(notifyEnded)
-    __obj.updateDynamic("notifyError")(notifyError)
-    __obj.updateDynamic("notifyLoadedMetadata")(notifyLoadedMetadata)
-    __obj.updateDynamic("notifyPaused")(notifyPaused)
-    __obj.updateDynamic("notifyPlaying")(notifyPlaying)
-    __obj.updateDynamic("notifyRateChange")(notifyRateChange)
-    __obj.updateDynamic("notifySeeked")(notifySeeked)
-    __obj.updateDynamic("notifySeeking")(notifySeeking)
-    __obj.updateDynamic("notifyStopped")(notifyStopped)
-    __obj.updateDynamic("notifyTimeUpdate")(notifyTimeUpdate)
-    __obj.updateDynamic("notifyVolumeChange")(notifyVolumeChange)
-    __obj.updateDynamic("oncurrenttimechangerequested")(oncurrenttimechangerequested)
-    __obj.updateDynamic("onmutechangerequested")(onmutechangerequested)
-    __obj.updateDynamic("onpauserequested")(onpauserequested)
-    __obj.updateDynamic("onplaybackratechangerequested")(onplaybackratechangerequested)
-    __obj.updateDynamic("onplayrequested")(onplayrequested)
-    __obj.updateDynamic("onsourcechangerequested")(onsourcechangerequested)
-    __obj.updateDynamic("onstoprequested")(onstoprequested)
-    __obj.updateDynamic("ontimeupdaterequested")(ontimeupdaterequested)
-    __obj.updateDynamic("onvolumechangerequested")(onvolumechangerequested)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("startAsync")(startAsync)
-    __obj.updateDynamic("stopAsync")(stopAsync)
-    __obj.updateDynamic("supportsAudio")(supportsAudio)
-    __obj.updateDynamic("supportsImage")(supportsImage)
-    __obj.updateDynamic("supportsVideo")(supportsVideo)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName, notifyDurationChange = notifyDurationChange, notifyEnded = notifyEnded, notifyError = notifyError, notifyLoadedMetadata = notifyLoadedMetadata, notifyPaused = notifyPaused, notifyPlaying = notifyPlaying, notifyRateChange = notifyRateChange, notifySeeked = notifySeeked, notifySeeking = notifySeeking, notifyStopped = notifyStopped, notifyTimeUpdate = notifyTimeUpdate, notifyVolumeChange = notifyVolumeChange, oncurrenttimechangerequested = oncurrenttimechangerequested, onmutechangerequested = onmutechangerequested, onpauserequested = onpauserequested, onplaybackratechangerequested = onplaybackratechangerequested, onplayrequested = onplayrequested, onsourcechangerequested = onsourcechangerequested, onstoprequested = onstoprequested, ontimeupdaterequested = ontimeupdaterequested, onvolumechangerequested = onvolumechangerequested, properties = properties, startAsync = startAsync, stopAsync = stopAsync, supportsAudio = supportsAudio, supportsImage = supportsImage, supportsVideo = supportsVideo)
+  
     __obj.asInstanceOf[IPlayToReceiver]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_IdValue extends js.Object {
 object Anon_IdValue {
   @scala.inline
   def apply(id: java.lang.String, value: iobrokerLib.iobrokerMod.Global.ioBrokerNs.Object): Anon_IdValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, value = value)
+  
     __obj.asInstanceOf[Anon_IdValue]
   }
 }

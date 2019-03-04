@@ -56,12 +56,8 @@ object PathFinding {
     diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine,
     instance: js.Any
   ): PathFinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculateDirectPath")(calculateDirectPath)
-    __obj.updateDynamic("calculateDynamicPath")(calculateDynamicPath)
-    __obj.updateDynamic("calculateLinkStartEndCoords")(calculateLinkStartEndCoords)
-    __obj.updateDynamic("diagramEngine")(diagramEngine)
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(calculateDirectPath = calculateDirectPath, calculateDynamicPath = calculateDynamicPath, calculateLinkStartEndCoords = calculateLinkStartEndCoords, diagramEngine = diagramEngine, instance = instance)
+  
     __obj.asInstanceOf[PathFinding]
   }
 }

@@ -18,9 +18,7 @@ object Anon_PartitionKeyRoleArn {
     streamName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     partitionKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_PartitionKeyRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("streamName")(streamName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], streamName = streamName.asInstanceOf[js.Any])
     if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_PartitionKeyRoleArn]
   }

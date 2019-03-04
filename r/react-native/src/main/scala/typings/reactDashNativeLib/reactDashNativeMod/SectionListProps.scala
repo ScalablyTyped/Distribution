@@ -215,8 +215,7 @@ object SectionListProps {
     windowSize: scala.Int | scala.Double = null,
     zoomScale: scala.Int | scala.Double = null
   ): SectionListProps[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sections")(sections)
+    val __obj = js.Dynamic.literal(sections = sections)
     if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])

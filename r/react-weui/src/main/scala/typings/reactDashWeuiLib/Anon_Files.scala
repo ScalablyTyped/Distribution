@@ -26,14 +26,8 @@ object Anon_Files {
     onError: js.Any,
     title: java.lang.String
   ): Anon_Files = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("maxCount")(maxCount)
-    __obj.updateDynamic("maxWidth")(maxWidth)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(files = files, lang = lang, maxCount = maxCount, maxWidth = maxWidth, onChange = onChange, onError = onError, title = title)
+  
     __obj.asInstanceOf[Anon_Files]
   }
 }

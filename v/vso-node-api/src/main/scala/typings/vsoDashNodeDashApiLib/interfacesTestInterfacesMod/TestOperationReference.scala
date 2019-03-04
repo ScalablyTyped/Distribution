@@ -14,10 +14,8 @@ trait TestOperationReference extends js.Object {
 object TestOperationReference {
   @scala.inline
   def apply(id: java.lang.String, status: java.lang.String, url: java.lang.String): TestOperationReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, status = status, url = url)
+  
     __obj.asInstanceOf[TestOperationReference]
   }
 }

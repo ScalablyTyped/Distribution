@@ -36,11 +36,8 @@ object ObjectProperty {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ObjectProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("shorthand")(shorthand)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed, key = key, shorthand = shorthand, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

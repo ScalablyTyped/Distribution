@@ -29,10 +29,8 @@ object ApplicativeComposition12C {
     ],
     of: js.Function1[js.Any, fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, LG, js.Any]]]
   ): ApplicativeComposition12C[F, G, LG] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, map = map, of = of)
+  
     __obj.asInstanceOf[ApplicativeComposition12C[F, G, LG]]
   }
 }

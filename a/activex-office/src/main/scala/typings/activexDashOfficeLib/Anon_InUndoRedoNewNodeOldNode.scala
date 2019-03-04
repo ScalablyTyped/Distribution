@@ -18,10 +18,8 @@ object Anon_InUndoRedoNewNodeOldNode {
     NewNode: activexDashOfficeLib.OfficeNs.CustomXMLNode,
     OldNode: activexDashOfficeLib.OfficeNs.CustomXMLNode
   ): Anon_InUndoRedoNewNodeOldNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("InUndoRedo")(InUndoRedo)
-    __obj.updateDynamic("NewNode")(NewNode)
-    __obj.updateDynamic("OldNode")(OldNode)
+    val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo, NewNode = NewNode, OldNode = OldNode)
+  
     __obj.asInstanceOf[Anon_InUndoRedoNewNodeOldNode]
   }
 }

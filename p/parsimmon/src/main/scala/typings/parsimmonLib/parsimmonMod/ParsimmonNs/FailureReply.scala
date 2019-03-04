@@ -23,12 +23,8 @@ object FailureReply {
     status: parsimmonLib.parsimmonLibNumbers.`false`,
     value: scala.Null
   ): FailureReply = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expected")(expected)
-    __obj.updateDynamic("furthest")(furthest)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(expected = expected, furthest = furthest, index = index, status = status, value = value)
+  
     __obj.asInstanceOf[FailureReply]
   }
 }

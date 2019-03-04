@@ -24,8 +24,7 @@ object CurrencyFormatterProps {
     locale: java.lang.String = null,
     pattern: java.lang.String = null
   ): CurrencyFormatterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quantity")(quantity)
+    val __obj = js.Dynamic.literal(quantity = quantity)
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (decimal != null) __obj.updateDynamic("decimal")(decimal)
     if (group != null) __obj.updateDynamic("group")(group)

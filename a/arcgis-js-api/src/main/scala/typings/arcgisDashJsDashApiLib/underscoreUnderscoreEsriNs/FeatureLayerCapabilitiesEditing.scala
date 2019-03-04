@@ -79,19 +79,8 @@ object FeatureLayerCapabilitiesEditing {
     supportsUpdateWithoutM: scala.Boolean,
     supportsUploadWithItemId: scala.Boolean
   ): FeatureLayerCapabilitiesEditing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("supportsDeleteByAnonymous")(supportsDeleteByAnonymous)
-    __obj.updateDynamic("supportsDeleteByOthers")(supportsDeleteByOthers)
-    __obj.updateDynamic("supportsGeometryUpdate")(supportsGeometryUpdate)
-    __obj.updateDynamic("supportsGlobalId")(supportsGlobalId)
-    __obj.updateDynamic("supportsRollbackOnFailure")(supportsRollbackOnFailure)
-    __obj.updateDynamic("supportsUpdateByAnonymous")(supportsUpdateByAnonymous)
-    __obj.updateDynamic("supportsUpdateByOthers")(supportsUpdateByOthers)
-    __obj.updateDynamic("supportsUpdateWithoutM")(supportsUpdateWithoutM)
-    __obj.updateDynamic("supportsUploadWithItemId")(supportsUploadWithItemId)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, supportsDeleteByAnonymous = supportsDeleteByAnonymous, supportsDeleteByOthers = supportsDeleteByOthers, supportsGeometryUpdate = supportsGeometryUpdate, supportsGlobalId = supportsGlobalId, supportsRollbackOnFailure = supportsRollbackOnFailure, supportsUpdateByAnonymous = supportsUpdateByAnonymous, supportsUpdateByOthers = supportsUpdateByOthers, supportsUpdateWithoutM = supportsUpdateWithoutM, supportsUploadWithItemId = supportsUploadWithItemId)
+  
     __obj.asInstanceOf[FeatureLayerCapabilitiesEditing]
   }
 }

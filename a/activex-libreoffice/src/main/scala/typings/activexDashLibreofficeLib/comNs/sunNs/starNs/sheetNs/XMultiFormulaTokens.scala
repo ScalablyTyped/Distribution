@@ -47,11 +47,8 @@ object XMultiFormulaTokens {
       scala.Unit
     ]
   ): XMultiFormulaTokens = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getTokens")(getTokens)
-    __obj.updateDynamic("setTokens")(setTokens)
+    val __obj = js.Dynamic.literal(Count = Count, getCount = getCount, getTokens = getTokens, setTokens = setTokens)
+  
     __obj.asInstanceOf[XMultiFormulaTokens]
   }
 }

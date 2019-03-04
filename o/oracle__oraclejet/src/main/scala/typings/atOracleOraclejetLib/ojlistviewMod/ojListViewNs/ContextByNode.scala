@@ -23,10 +23,7 @@ object ContextByNode {
     group: js.UndefOr[scala.Boolean] = js.undefined,
     parent: stdLib.Element = null
   ): ContextByNode[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(index = index, key = key.asInstanceOf[js.Any], subId = subId)
     if (!js.isUndefined(group)) __obj.updateDynamic("group")(group)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[ContextByNode[K]]

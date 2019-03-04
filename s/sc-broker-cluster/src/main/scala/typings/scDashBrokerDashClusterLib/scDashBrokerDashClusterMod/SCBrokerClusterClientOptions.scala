@@ -20,9 +20,7 @@ object SCBrokerClusterClientOptions {
     pubSubBatchDuration: scala.Int | scala.Double = null,
     secretKey: java.lang.String = null
   ): SCBrokerClusterClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brokers")(brokers)
-    __obj.updateDynamic("connectRetryErrorThreshold")(connectRetryErrorThreshold)
+    val __obj = js.Dynamic.literal(brokers = brokers, connectRetryErrorThreshold = connectRetryErrorThreshold)
     if (pubSubBatchDuration != null) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.asInstanceOf[js.Any])
     if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
     __obj.asInstanceOf[SCBrokerClusterClientOptions]

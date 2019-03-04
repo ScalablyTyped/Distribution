@@ -19,9 +19,8 @@ object IVideoEffectDefinition {
     activatableClassId: java.lang.String,
     properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
   ): IVideoEffectDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activatableClassId")(activatableClassId)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId, properties = properties)
+  
     __obj.asInstanceOf[IVideoEffectDefinition]
   }
 }

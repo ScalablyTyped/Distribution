@@ -13,9 +13,8 @@ trait MsgPackCallbackResult extends js.Object {
 object MsgPackCallbackResult {
   @scala.inline
   def apply(ok: scala.Boolean, status: scala.Double): MsgPackCallbackResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ok")(ok)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(ok = ok, status = status)
+  
     __obj.asInstanceOf[MsgPackCallbackResult]
   }
 }

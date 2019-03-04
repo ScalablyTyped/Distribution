@@ -24,13 +24,8 @@ object Anon_FamilyName {
     honorificSuffix: java.lang.String,
     middleName: java.lang.String
   ): Anon_FamilyName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("familyName")(familyName)
-    __obj.updateDynamic("formatted")(formatted)
-    __obj.updateDynamic("givenName")(givenName)
-    __obj.updateDynamic("honorificPrefix")(honorificPrefix)
-    __obj.updateDynamic("honorificSuffix")(honorificSuffix)
-    __obj.updateDynamic("middleName")(middleName)
+    val __obj = js.Dynamic.literal(familyName = familyName, formatted = formatted, givenName = givenName, honorificPrefix = honorificPrefix, honorificSuffix = honorificSuffix, middleName = middleName)
+  
     __obj.asInstanceOf[Anon_FamilyName]
   }
 }

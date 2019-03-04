@@ -14,8 +14,8 @@ object Anon_HtmlEngine {
   def apply(
     htmlEngine: jsreportDashHtmlDashToDashXlsxLib.jsreportDashHtmlDashToDashXlsxMod.jsreportDashCoreMod.htmlEngine
   ): Anon_HtmlEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlEngine")(htmlEngine)
+    val __obj = js.Dynamic.literal(htmlEngine = htmlEngine)
+  
     __obj.asInstanceOf[Anon_HtmlEngine]
   }
 }

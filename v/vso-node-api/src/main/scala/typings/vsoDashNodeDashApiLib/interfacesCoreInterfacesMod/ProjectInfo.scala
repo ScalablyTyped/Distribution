@@ -37,18 +37,8 @@ object ProjectInfo {
     version: scala.Double,
     visibility: ProjectVisibility
   ): ProjectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviation")(abbreviation)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("visibility")(visibility)
+    val __obj = js.Dynamic.literal(abbreviation = abbreviation, description = description, id = id, lastUpdateTime = lastUpdateTime, name = name, properties = properties, revision = revision, state = state, uri = uri, version = version, visibility = visibility)
+  
     __obj.asInstanceOf[ProjectInfo]
   }
 }

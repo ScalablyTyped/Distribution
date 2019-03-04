@@ -13,9 +13,8 @@ trait Widget extends js.Object {
 object Widget {
   @scala.inline
   def apply(backgroundColor: js.Any, borderColor: js.Any): Widget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderColor")(borderColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderColor = borderColor)
+  
     __obj.asInstanceOf[Widget]
   }
 }

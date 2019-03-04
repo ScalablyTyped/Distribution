@@ -16,8 +16,9 @@ object ActiveXObjectNameMap {
     `FaxComEx.FaxDocument`: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxDocument,
     `FaxComEx.FaxServer`: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxServer
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`FaxComEx.FaxDocument` = `FaxComEx.FaxDocument`, `FaxComEx.FaxServer` = `FaxComEx.FaxServer`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FaxComEx.FaxDocument")(`FaxComEx.FaxDocument`)
+    __obj.updateDynamic("FaxComEx.FaxServer")(`FaxComEx.FaxServer`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

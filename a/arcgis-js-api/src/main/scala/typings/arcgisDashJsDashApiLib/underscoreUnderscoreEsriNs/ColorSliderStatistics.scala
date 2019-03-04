@@ -44,14 +44,8 @@ object ColorSliderStatistics {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     stddev: scala.Double
   ): ColorSliderStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avg")(avg)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stddev")(stddev)
+    val __obj = js.Dynamic.literal(avg = avg, constructor = constructor, hasOwnProperty = hasOwnProperty, max = max, min = min, propertyIsEnumerable = propertyIsEnumerable, stddev = stddev)
+  
     __obj.asInstanceOf[ColorSliderStatistics]
   }
 }

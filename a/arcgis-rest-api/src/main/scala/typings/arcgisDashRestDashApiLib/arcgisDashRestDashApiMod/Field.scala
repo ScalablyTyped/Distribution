@@ -20,8 +20,8 @@ object Field {
     alias: java.lang.String = null,
     length: scala.Int | scala.Double = null
   ): Field = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (alias != null) __obj.updateDynamic("alias")(alias)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]

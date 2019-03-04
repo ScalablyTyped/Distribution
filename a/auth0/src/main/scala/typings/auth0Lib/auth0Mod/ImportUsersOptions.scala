@@ -13,9 +13,8 @@ trait ImportUsersOptions extends js.Object {
 object ImportUsersOptions {
   @scala.inline
   def apply(connection_id: java.lang.String, users: java.lang.String): ImportUsersOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection_id")(connection_id)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(connection_id = connection_id, users = users)
+  
     __obj.asInstanceOf[ImportUsersOptions]
   }
 }

@@ -16,9 +16,8 @@ object Anon_LeftDataSource {
     leftDataSource: js.Array[antdLib.libTransferMod.TransferItem],
     rightDataSource: js.Array[antdLib.libTransferMod.TransferItem]
   ): Anon_LeftDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leftDataSource")(leftDataSource)
-    __obj.updateDynamic("rightDataSource")(rightDataSource)
+    val __obj = js.Dynamic.literal(leftDataSource = leftDataSource, rightDataSource = rightDataSource)
+  
     __obj.asInstanceOf[Anon_LeftDataSource]
   }
 }

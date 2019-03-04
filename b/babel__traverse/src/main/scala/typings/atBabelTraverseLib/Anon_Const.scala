@@ -22,8 +22,7 @@ object Anon_Const {
     kind: atBabelTraverseLib.atBabelTraverseLibStrings.`var` | atBabelTraverseLib.atBabelTraverseLibStrings.let | atBabelTraverseLib.atBabelTraverseLibStrings.const = null,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Const = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (init != null) __obj.updateDynamic("init")(init)
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)

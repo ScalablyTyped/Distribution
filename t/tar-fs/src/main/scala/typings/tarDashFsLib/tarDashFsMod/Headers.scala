@@ -26,13 +26,8 @@ object Headers {
     `type`: tarDashFsLib.tarDashFsLibStrings.file | tarDashFsLib.tarDashFsLibStrings.directory | tarDashFsLib.tarDashFsLibStrings.link | tarDashFsLib.tarDashFsLibStrings.symlink,
     uid: scala.Double
   ): Headers = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(gid = gid, mode = mode, mtime = mtime, name = name, size = size, uid = uid)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
 }

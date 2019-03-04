@@ -13,9 +13,8 @@ trait RetryOptions extends js.Object {
 object RetryOptions {
   @scala.inline
   def apply(backoffSettings: BackoffSettings, retryCodes: js.Array[java.lang.String]): RetryOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backoffSettings")(backoffSettings)
-    __obj.updateDynamic("retryCodes")(retryCodes)
+    val __obj = js.Dynamic.literal(backoffSettings = backoffSettings, retryCodes = retryCodes)
+  
     __obj.asInstanceOf[RetryOptions]
   }
 }

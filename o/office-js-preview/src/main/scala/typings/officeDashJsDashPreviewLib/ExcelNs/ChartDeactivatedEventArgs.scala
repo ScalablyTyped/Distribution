@@ -42,9 +42,8 @@ object ChartDeactivatedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ChartDeactivated,
     worksheetId: java.lang.String
   ): ChartDeactivatedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chartId")(chartId)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(chartId = chartId, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ChartDeactivatedEventArgs]
   }
 }

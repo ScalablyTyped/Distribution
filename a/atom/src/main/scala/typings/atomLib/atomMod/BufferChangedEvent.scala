@@ -30,12 +30,8 @@ object BufferChangedEvent {
     oldRange: Range,
     oldText: java.lang.String
   ): BufferChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("newRange")(newRange)
-    __obj.updateDynamic("newText")(newText)
-    __obj.updateDynamic("oldRange")(oldRange)
-    __obj.updateDynamic("oldText")(oldText)
+    val __obj = js.Dynamic.literal(changes = changes, newRange = newRange, newText = newText, oldRange = oldRange, oldText = oldText)
+  
     __obj.asInstanceOf[BufferChangedEvent]
   }
 }

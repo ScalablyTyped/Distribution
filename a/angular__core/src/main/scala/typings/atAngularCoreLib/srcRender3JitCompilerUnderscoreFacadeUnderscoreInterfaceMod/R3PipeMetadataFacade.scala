@@ -22,10 +22,8 @@ object R3PipeMetadataFacade {
     `type`: js.Any,
     deps: js.Array[R3DependencyMetadataFacade] = null
   ): R3PipeMetadataFacade = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pipeName")(pipeName)
-    __obj.updateDynamic("pure")(pure)
+    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3PipeMetadataFacade]
   }

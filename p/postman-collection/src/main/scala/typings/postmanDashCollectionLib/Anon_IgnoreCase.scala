@@ -12,8 +12,8 @@ trait Anon_IgnoreCase extends js.Object {
 object Anon_IgnoreCase {
   @scala.inline
   def apply(ignoreCase: scala.Boolean): Anon_IgnoreCase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoreCase")(ignoreCase)
+    val __obj = js.Dynamic.literal(ignoreCase = ignoreCase)
+  
     __obj.asInstanceOf[Anon_IgnoreCase]
   }
 }

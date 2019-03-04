@@ -16,9 +16,8 @@ object Anon_CHECKBOX {
     CHECKBOX: reactDashFoundationLib.enumsMod.SwitchInputTypes,
     RADIO: reactDashFoundationLib.enumsMod.SwitchInputTypes
   ): Anon_CHECKBOX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHECKBOX")(CHECKBOX)
-    __obj.updateDynamic("RADIO")(RADIO)
+    val __obj = js.Dynamic.literal(CHECKBOX = CHECKBOX, RADIO = RADIO)
+  
     __obj.asInstanceOf[Anon_CHECKBOX]
   }
 }

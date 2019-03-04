@@ -13,9 +13,8 @@ trait WorkerClusterStartInfo extends js.Object {
 object WorkerClusterStartInfo {
   @scala.inline
   def apply(childProcess: nodeLib.childUnderscoreProcessMod.ChildProcess, pid: scala.Double): WorkerClusterStartInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childProcess")(childProcess)
-    __obj.updateDynamic("pid")(pid)
+    val __obj = js.Dynamic.literal(childProcess = childProcess, pid = pid)
+  
     __obj.asInstanceOf[WorkerClusterStartInfo]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_QueryTextSentiment extends js.Object {
 object Anon_QueryTextSentiment {
   @scala.inline
   def apply(queryTextSentiment: Anon_Magnitude): Anon_QueryTextSentiment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("queryTextSentiment")(queryTextSentiment)
+    val __obj = js.Dynamic.literal(queryTextSentiment = queryTextSentiment)
+  
     __obj.asInstanceOf[Anon_QueryTextSentiment]
   }
 }

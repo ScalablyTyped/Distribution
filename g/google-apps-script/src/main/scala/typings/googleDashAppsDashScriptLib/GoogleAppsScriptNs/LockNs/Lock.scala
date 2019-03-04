@@ -20,11 +20,8 @@ object Lock {
     tryLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Boolean],
     waitLock: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, scala.Unit]
   ): Lock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasLock")(hasLock)
-    __obj.updateDynamic("releaseLock")(releaseLock)
-    __obj.updateDynamic("tryLock")(tryLock)
-    __obj.updateDynamic("waitLock")(waitLock)
+    val __obj = js.Dynamic.literal(hasLock = hasLock, releaseLock = releaseLock, tryLock = tryLock, waitLock = waitLock)
+  
     __obj.asInstanceOf[Lock]
   }
 }

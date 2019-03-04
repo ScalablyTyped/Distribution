@@ -31,12 +31,8 @@ object MapItem {
     value: java.lang.String = null,
     valueRange: Range = null
   ): MapItem = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (context != null) __obj.updateDynamic("context")(context)

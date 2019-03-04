@@ -16,9 +16,8 @@ object Anon_ECDSASIGN {
     ECDSA_SIGN: chromeDashAppsLib.chromeDashAppsLibStrings.ecdsaSign,
     RSA_SIGN: chromeDashAppsLib.chromeDashAppsLibStrings.rsaSign
   ): Anon_ECDSASIGN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ECDSA_SIGN")(ECDSA_SIGN)
-    __obj.updateDynamic("RSA_SIGN")(RSA_SIGN)
+    val __obj = js.Dynamic.literal(ECDSA_SIGN = ECDSA_SIGN, RSA_SIGN = RSA_SIGN)
+  
     __obj.asInstanceOf[Anon_ECDSASIGN]
   }
 }

@@ -20,8 +20,7 @@ object AudioSpecimenProps {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null
   ): AudioSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (title != null) __obj.updateDynamic("title")(title)

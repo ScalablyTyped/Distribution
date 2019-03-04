@@ -13,9 +13,8 @@ trait audioTrackLoadingData extends js.Object {
 object audioTrackLoadingData {
   @scala.inline
   def apply(id: java.lang.String, url: java.lang.String): audioTrackLoadingData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, url = url)
+  
     __obj.asInstanceOf[audioTrackLoadingData]
   }
 }

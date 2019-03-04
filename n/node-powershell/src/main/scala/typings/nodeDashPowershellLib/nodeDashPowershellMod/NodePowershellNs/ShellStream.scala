@@ -18,10 +18,8 @@ object ShellStream {
     stdin: nodeLib.NodeJSNs.WritableStream,
     stdout: nodeLib.NodeJSNs.ReadableStream
   ): ShellStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("err")(err)
-    __obj.updateDynamic("stdin")(stdin)
-    __obj.updateDynamic("stdout")(stdout)
+    val __obj = js.Dynamic.literal(err = err, stdin = stdin, stdout = stdout)
+  
     __obj.asInstanceOf[ShellStream]
   }
 }

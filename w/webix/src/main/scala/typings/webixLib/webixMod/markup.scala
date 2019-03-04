@@ -22,12 +22,8 @@ object markup {
     namespace: js.Any,
     parse: js.Function2[js.Any, java.lang.String, scala.Unit]
   ): markup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("dataTag")(dataTag)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(attribute = attribute, dataTag = dataTag, init = init, namespace = namespace, parse = parse)
+  
     __obj.asInstanceOf[markup]
   }
 }

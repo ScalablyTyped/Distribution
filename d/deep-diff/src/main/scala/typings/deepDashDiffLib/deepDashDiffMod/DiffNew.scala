@@ -15,9 +15,7 @@ trait DiffNew[RHS]
 object DiffNew {
   @scala.inline
   def apply[RHS](kind: deepDashDiffLib.deepDashDiffLibStrings.N, rhs: RHS, path: js.Array[_] = null): DiffNew[RHS] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("rhs")(rhs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind, rhs = rhs.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path)
     __obj.asInstanceOf[DiffNew[RHS]]
   }

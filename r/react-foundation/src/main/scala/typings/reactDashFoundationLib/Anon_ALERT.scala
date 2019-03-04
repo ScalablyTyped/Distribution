@@ -22,12 +22,8 @@ object Anon_ALERT {
     SUCCESS: reactDashFoundationLib.enumsMod.BadgeColors,
     WARNING: reactDashFoundationLib.enumsMod.BadgeColors
   ): Anon_ALERT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALERT")(ALERT)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("SECONDARY")(SECONDARY)
-    __obj.updateDynamic("SUCCESS")(SUCCESS)
-    __obj.updateDynamic("WARNING")(WARNING)
+    val __obj = js.Dynamic.literal(ALERT = ALERT, INFO = INFO, SECONDARY = SECONDARY, SUCCESS = SUCCESS, WARNING = WARNING)
+  
     __obj.asInstanceOf[Anon_ALERT]
   }
 }

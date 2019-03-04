@@ -22,11 +22,8 @@ object Anon_Elements {
     objects: js.Array[threeLib.threeDashCoreMod.Object3D],
     sprites: js.Array[threeLib.threeDashCoreMod.Object3D]
   ): Anon_Elements = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("lights")(lights)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("sprites")(sprites)
+    val __obj = js.Dynamic.literal(elements = elements, lights = lights, objects = objects, sprites = sprites)
+  
     __obj.asInstanceOf[Anon_Elements]
   }
 }

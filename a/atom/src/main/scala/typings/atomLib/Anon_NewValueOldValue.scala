@@ -13,8 +13,7 @@ trait Anon_NewValueOldValue extends js.Object {
 object Anon_NewValueOldValue {
   @scala.inline
   def apply(newValue: js.Array[java.lang.String], oldValue: js.Array[java.lang.String] = null): Anon_NewValueOldValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(newValue = newValue)
     if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
     __obj.asInstanceOf[Anon_NewValueOldValue]
   }

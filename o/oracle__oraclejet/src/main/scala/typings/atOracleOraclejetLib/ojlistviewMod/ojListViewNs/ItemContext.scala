@@ -29,12 +29,7 @@ object ItemContext {
     leaf: js.UndefOr[scala.Boolean] = js.undefined,
     parentKey: K = null
   ): ItemContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("datasource")(datasource)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], datasource = datasource, index = index, key = key.asInstanceOf[js.Any], parentElement = parentElement)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf)
     if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])

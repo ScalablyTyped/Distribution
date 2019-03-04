@@ -19,9 +19,8 @@ object PageLoader {
     internalLoader: coreDashJsLib.Function,
     load: js.Function2[onsenuiLib.Anon_Page, coreDashJsLib.Function, scala.Unit]
   ): PageLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("internalLoader")(internalLoader)
-    __obj.updateDynamic("load")(load)
+    val __obj = js.Dynamic.literal(internalLoader = internalLoader, load = load)
+  
     __obj.asInstanceOf[PageLoader]
   }
 }

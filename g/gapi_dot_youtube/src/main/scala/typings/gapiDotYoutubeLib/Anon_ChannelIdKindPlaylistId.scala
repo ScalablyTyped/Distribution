@@ -32,11 +32,8 @@ object Anon_ChannelIdKindPlaylistId {
     playlistId: java.lang.String,
     videoId: java.lang.String
   ): Anon_ChannelIdKindPlaylistId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channelId")(channelId)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("playlistId")(playlistId)
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(channelId = channelId, kind = kind, playlistId = playlistId, videoId = videoId)
+  
     __obj.asInstanceOf[Anon_ChannelIdKindPlaylistId]
   }
 }

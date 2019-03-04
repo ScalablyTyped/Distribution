@@ -21,8 +21,8 @@ object DatasetResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AggregateResponse]
     ]
   ): DatasetResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregate")(aggregate)
+    val __obj = js.Dynamic.literal(aggregate = aggregate)
+  
     __obj.asInstanceOf[DatasetResource]
   }
 }

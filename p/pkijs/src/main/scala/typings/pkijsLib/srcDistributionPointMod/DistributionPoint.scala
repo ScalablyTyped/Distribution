@@ -24,10 +24,7 @@ object DistributionPoint {
     distributionPoint: js.Array[pkijsLib.srcGeneralNameMod.default] = null,
     reasons: asn1jsLib.asn1jsMod.BitString = null
   ): DistributionPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
     if (cRLIssuer != null) __obj.updateDynamic("cRLIssuer")(cRLIssuer)
     if (distributionPoint != null) __obj.updateDynamic("distributionPoint")(distributionPoint)
     if (reasons != null) __obj.updateDynamic("reasons")(reasons)

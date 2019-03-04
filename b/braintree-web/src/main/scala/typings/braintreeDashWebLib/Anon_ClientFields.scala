@@ -18,10 +18,8 @@ object Anon_ClientFields {
     fields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldFieldOptions,
     styles: js.Any
   ): Anon_ClientFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(client = client, fields = fields, styles = styles)
+  
     __obj.asInstanceOf[Anon_ClientFields]
   }
 }

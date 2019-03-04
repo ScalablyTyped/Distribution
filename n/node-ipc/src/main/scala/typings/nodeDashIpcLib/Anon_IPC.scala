@@ -12,8 +12,8 @@ trait Anon_IPC extends js.Object {
 object Anon_IPC {
   @scala.inline
   def apply(IPC: org.scalablytyped.runtime.Instantiable0[nodeDashIpcLib.nodeDashIpcMod.NodeIPCNs.IPC]): Anon_IPC = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IPC")(IPC)
+    val __obj = js.Dynamic.literal(IPC = IPC)
+  
     __obj.asInstanceOf[Anon_IPC]
   }
 }

@@ -59,14 +59,8 @@ object XPropertyState {
     release: js.Function0[scala.Unit],
     setPropertyToDefault: js.Function1[java.lang.String, scala.Unit]
   ): XPropertyState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPropertyDefault")(getPropertyDefault)
-    __obj.updateDynamic("getPropertyState")(getPropertyState)
-    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPropertyToDefault")(setPropertyToDefault)
+    val __obj = js.Dynamic.literal(acquire = acquire, getPropertyDefault = getPropertyDefault, getPropertyState = getPropertyState, getPropertyStates = getPropertyStates, queryInterface = queryInterface, release = release, setPropertyToDefault = setPropertyToDefault)
+  
     __obj.asInstanceOf[XPropertyState]
   }
 }

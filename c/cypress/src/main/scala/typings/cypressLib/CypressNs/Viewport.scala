@@ -13,9 +13,8 @@ trait Viewport extends js.Object {
 object Viewport {
   @scala.inline
   def apply(viewportHeight: scala.Double, viewportWidth: scala.Double): Viewport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("viewportHeight")(viewportHeight)
-    __obj.updateDynamic("viewportWidth")(viewportWidth)
+    val __obj = js.Dynamic.literal(viewportHeight = viewportHeight, viewportWidth = viewportWidth)
+  
     __obj.asInstanceOf[Viewport]
   }
 }

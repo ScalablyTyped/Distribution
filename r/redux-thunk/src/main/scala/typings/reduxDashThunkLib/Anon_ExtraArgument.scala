@@ -17,8 +17,8 @@ object Anon_ExtraArgument {
       reduxDashThunkLib.reduxDashThunkMod.ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.Any]
     ]
   ): Anon_ExtraArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withExtraArgument")(withExtraArgument)
+    val __obj = js.Dynamic.literal(withExtraArgument = withExtraArgument)
+  
     __obj.asInstanceOf[Anon_ExtraArgument]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Cb[T] extends js.Object {
 object Anon_Cb {
   @scala.inline
   def apply[T](exec: js.Function1[js.Function2[/* err */ nodeLib.Error, /* result */ T, _], scala.Unit]): Anon_Cb[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
+    val __obj = js.Dynamic.literal(exec = exec)
+  
     __obj.asInstanceOf[Anon_Cb[T]]
   }
 }

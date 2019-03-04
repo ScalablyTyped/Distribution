@@ -20,9 +20,7 @@ object Service {
     async: js.UndefOr[scala.Boolean] = js.undefined,
     pathname: java.lang.String = null
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(name = name, namespace = namespace)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (pathname != null) __obj.updateDynamic("pathname")(pathname)
     __obj.asInstanceOf[Service]

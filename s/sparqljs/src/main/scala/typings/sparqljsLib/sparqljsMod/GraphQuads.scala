@@ -14,9 +14,8 @@ trait GraphQuads extends Quads {
 object GraphQuads {
   @scala.inline
   def apply(name: Term, triples: js.Array[Triple], `type`: sparqljsLib.sparqljsLibStrings.graph): GraphQuads = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("triples")(triples)
+    val __obj = js.Dynamic.literal(name = name, triples = triples)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GraphQuads]
   }
 }

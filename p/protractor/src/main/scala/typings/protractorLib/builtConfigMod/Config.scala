@@ -488,7 +488,7 @@ trait Config
     */
   var testobjectUser: js.UndefOr[java.lang.String] = js.undefined
   var troubleshoot: js.UndefOr[scala.Boolean] = js.undefined
-  var `unknownFlags_`: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var unknownFlags_ : js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * Protractor will track outstanding $timeouts by default, and report them
     * in the error message if Protractor fails to synchronize with Angular in
@@ -602,7 +602,7 @@ object Config {
     testobjectKey: java.lang.String = null,
     testobjectUser: java.lang.String = null,
     troubleshoot: js.UndefOr[scala.Boolean] = js.undefined,
-    `unknownFlags_`: js.Array[java.lang.String] = null,
+    unknownFlags_ : js.Array[java.lang.String] = null,
     untrackOutstandingTimeouts: js.UndefOr[scala.Boolean] = js.undefined,
     useBlockingProxy: js.UndefOr[scala.Boolean] = js.undefined,
     v8Debug: js.Any = null,
@@ -682,7 +682,7 @@ object Config {
     if (testobjectKey != null) __obj.updateDynamic("testobjectKey")(testobjectKey)
     if (testobjectUser != null) __obj.updateDynamic("testobjectUser")(testobjectUser)
     if (!js.isUndefined(troubleshoot)) __obj.updateDynamic("troubleshoot")(troubleshoot)
-    if (`unknownFlags_` != null) __obj.updateDynamic("unknownFlags_")(`unknownFlags_`)
+    if (unknownFlags_ != null) __obj.updateDynamic("unknownFlags_")(unknownFlags_)
     if (!js.isUndefined(untrackOutstandingTimeouts)) __obj.updateDynamic("untrackOutstandingTimeouts")(untrackOutstandingTimeouts)
     if (!js.isUndefined(useBlockingProxy)) __obj.updateDynamic("useBlockingProxy")(useBlockingProxy)
     if (v8Debug != null) __obj.updateDynamic("v8Debug")(v8Debug)

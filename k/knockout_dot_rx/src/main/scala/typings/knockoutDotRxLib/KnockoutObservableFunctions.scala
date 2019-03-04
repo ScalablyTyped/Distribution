@@ -16,9 +16,8 @@ object KnockoutObservableFunctions {
     toObservableWithReplyLatest: js.Function0[knockoutDotRxLib.RxNs.Observable[T]],
     toSubject: js.Function0[rxDashCoreDashBindingLib.RxNs.ISubject[T]]
   ): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toObservableWithReplyLatest")(toObservableWithReplyLatest)
-    __obj.updateDynamic("toSubject")(toSubject)
+    val __obj = js.Dynamic.literal(toObservableWithReplyLatest = toObservableWithReplyLatest, toSubject = toSubject)
+  
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
 }

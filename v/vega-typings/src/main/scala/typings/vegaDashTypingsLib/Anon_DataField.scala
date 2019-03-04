@@ -15,10 +15,8 @@ trait Anon_DataField
 object Anon_DataField {
   @scala.inline
   def apply(data: java.lang.String, field: java.lang.String, name: java.lang.String): Anon_DataField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(data = data, field = field, name = name)
+  
     __obj.asInstanceOf[Anon_DataField]
   }
 }

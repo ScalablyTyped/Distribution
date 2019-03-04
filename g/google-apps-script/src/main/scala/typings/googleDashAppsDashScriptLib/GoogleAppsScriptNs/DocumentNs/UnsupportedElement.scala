@@ -32,17 +32,8 @@ object UnsupportedElement {
     removeFromParent: js.Function0[UnsupportedElement],
     setAttributes: js.Function1[js.Object, UnsupportedElement]
   ): UnsupportedElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAttributes")(setAttributes)
+    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAttributes = setAttributes)
+  
     __obj.asInstanceOf[UnsupportedElement]
   }
 }

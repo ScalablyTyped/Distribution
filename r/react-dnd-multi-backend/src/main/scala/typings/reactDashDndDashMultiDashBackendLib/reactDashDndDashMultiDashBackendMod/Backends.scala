@@ -17,8 +17,8 @@ trait Backends extends js.Object {
 object Backends {
   @scala.inline
   def apply(backends: js.Array[BackendDeclaration]): Backends = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backends")(backends)
+    val __obj = js.Dynamic.literal(backends = backends)
+  
     __obj.asInstanceOf[Backends]
   }
 }

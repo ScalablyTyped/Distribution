@@ -16,9 +16,8 @@ object ICoreWindowFlyoutFactory {
     create: js.Function1[winrtLib.WindowsNs.FoundationNs.Point, CoreWindowFlyout],
     createWithTitle: js.Function2[winrtLib.WindowsNs.FoundationNs.Point, java.lang.String, CoreWindowFlyout]
   ): ICoreWindowFlyoutFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createWithTitle")(createWithTitle)
+    val __obj = js.Dynamic.literal(create = create, createWithTitle = createWithTitle)
+  
     __obj.asInstanceOf[ICoreWindowFlyoutFactory]
   }
 }

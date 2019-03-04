@@ -27,9 +27,7 @@ object Anon_ManufacturerId {
     productId: java.lang.String,
     yearOfManufacture: java.lang.String = null
   ): Anon_ManufacturerId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manufacturerId")(manufacturerId)
-    __obj.updateDynamic("productId")(productId)
+    val __obj = js.Dynamic.literal(manufacturerId = manufacturerId, productId = productId)
     if (yearOfManufacture != null) __obj.updateDynamic("yearOfManufacture")(yearOfManufacture)
     __obj.asInstanceOf[Anon_ManufacturerId]
   }

@@ -86,41 +86,8 @@ object CSS {
     vmin: js.Function1[scala.Double, CSSUnitValue],
     vw: js.Function1[scala.Double, CSSUnitValue]
   ): CSS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hz")(Hz)
-    __obj.updateDynamic("Q")(Q)
-    __obj.updateDynamic("ch")(ch)
-    __obj.updateDynamic("cm")(cm)
-    __obj.updateDynamic("deg")(deg)
-    __obj.updateDynamic("dpcm")(dpcm)
-    __obj.updateDynamic("dpi")(dpi)
-    __obj.updateDynamic("dppx")(dppx)
-    __obj.updateDynamic("em")(em)
-    __obj.updateDynamic("ex")(ex)
-    __obj.updateDynamic("fr")(fr)
-    __obj.updateDynamic("grad")(grad)
-    __obj.updateDynamic("ic")(ic)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("kHz")(kHz)
-    __obj.updateDynamic("lh")(lh)
-    __obj.updateDynamic("mm")(mm)
-    __obj.updateDynamic("ms")(ms)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("pc")(pc)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("pt")(pt)
-    __obj.updateDynamic("px")(px)
-    __obj.updateDynamic("rad")(rad)
-    __obj.updateDynamic("rem")(rem)
-    __obj.updateDynamic("rlh")(rlh)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("turn")(turn)
-    __obj.updateDynamic("vb")(vb)
-    __obj.updateDynamic("vh")(vh)
-    __obj.updateDynamic("vi")(vi)
-    __obj.updateDynamic("vmax")(vmax)
-    __obj.updateDynamic("vmin")(vmin)
-    __obj.updateDynamic("vw")(vw)
+    val __obj = js.Dynamic.literal(Hz = Hz, Q = Q, ch = ch, cm = cm, deg = deg, dpcm = dpcm, dpi = dpi, dppx = dppx, em = em, ex = ex, fr = fr, grad = grad, ic = ic, in = in, kHz = kHz, lh = lh, mm = mm, ms = ms, number = number, pc = pc, percent = percent, pt = pt, px = px, rad = rad, rem = rem, rlh = rlh, s = s, turn = turn, vb = vb, vh = vh, vi = vi, vmax = vmax, vmin = vmin, vw = vw)
+  
     __obj.asInstanceOf[CSS]
   }
 }

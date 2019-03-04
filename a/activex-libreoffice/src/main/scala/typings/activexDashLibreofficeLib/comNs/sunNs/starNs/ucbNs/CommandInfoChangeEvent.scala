@@ -36,11 +36,8 @@ object CommandInfoChangeEvent {
     Reason: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): CommandInfoChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Handle")(Handle)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Reason")(Reason)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Handle = Handle, Name = Name, Reason = Reason, Source = Source)
+  
     __obj.asInstanceOf[CommandInfoChangeEvent]
   }
 }

@@ -22,9 +22,8 @@ object FunctionNode {
     `type`: cssDashTreeLib.cssDashTreeLibStrings.Function,
     loc: CssLocation = null
   ): FunctionNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(children = children, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[FunctionNode]
   }

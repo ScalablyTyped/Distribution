@@ -71,9 +71,7 @@ object ValueSetExpansion {
     parameter: js.Array[ValueSetExpansionParameter] = null,
     total: js.UndefOr[integer] = js.undefined
   ): ValueSetExpansion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(identifier = identifier, timestamp = timestamp)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_identifier != null) __obj.updateDynamic("_identifier")(_identifier)

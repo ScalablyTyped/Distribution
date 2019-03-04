@@ -26,9 +26,7 @@ object Anon_ArgumentsCallee {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     optional: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ArgumentsCallee = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("callee")(callee)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)

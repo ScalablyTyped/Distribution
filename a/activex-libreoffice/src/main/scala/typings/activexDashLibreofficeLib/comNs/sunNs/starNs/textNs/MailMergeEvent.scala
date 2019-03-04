@@ -25,9 +25,8 @@ object MailMergeEvent {
     Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): MailMergeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Model = Model, Source = Source)
+  
     __obj.asInstanceOf[MailMergeEvent]
   }
 }

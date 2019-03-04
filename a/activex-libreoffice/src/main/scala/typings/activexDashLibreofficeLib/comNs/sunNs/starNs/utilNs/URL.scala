@@ -69,18 +69,8 @@ object URL {
     Server: java.lang.String,
     User: java.lang.String
   ): URL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arguments")(Arguments)
-    __obj.updateDynamic("Complete")(Complete)
-    __obj.updateDynamic("Main")(Main)
-    __obj.updateDynamic("Mark")(Mark)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("Port")(Port)
-    __obj.updateDynamic("Protocol")(Protocol)
-    __obj.updateDynamic("Server")(Server)
-    __obj.updateDynamic("User")(User)
+    val __obj = js.Dynamic.literal(Arguments = Arguments, Complete = Complete, Main = Main, Mark = Mark, Name = Name, Password = Password, Path = Path, Port = Port, Protocol = Protocol, Server = Server, User = User)
+  
     __obj.asInstanceOf[URL]
   }
 }

@@ -20,10 +20,7 @@ object IntrospectionUnionType {
     possibleTypes: js.Array[IntrospectionNamedTypeRef],
     description: java.lang.String = null
   ): IntrospectionUnionType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("possibleTypes")(possibleTypes)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, possibleTypes = possibleTypes)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[IntrospectionUnionType]
   }

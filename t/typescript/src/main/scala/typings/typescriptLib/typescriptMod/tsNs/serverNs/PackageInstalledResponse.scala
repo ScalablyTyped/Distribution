@@ -20,11 +20,8 @@ object PackageInstalledResponse {
     projectName: java.lang.String,
     success: scala.Boolean
   ): PackageInstalledResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("projectName")(projectName)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(kind = kind, message = message, projectName = projectName, success = success)
+  
     __obj.asInstanceOf[PackageInstalledResponse]
   }
 }

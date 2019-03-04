@@ -39,12 +39,8 @@ object XConnectableShape {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XConnectableShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("canConnect")(canConnect)
-    __obj.updateDynamic("doConnect")(doConnect)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, canConnect = canConnect, doConnect = doConnect, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XConnectableShape]
   }
 }

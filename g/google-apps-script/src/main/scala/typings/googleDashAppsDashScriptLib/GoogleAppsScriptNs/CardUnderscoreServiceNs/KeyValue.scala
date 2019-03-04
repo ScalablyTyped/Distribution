@@ -40,21 +40,8 @@ object KeyValue {
     setSwitch: js.Function1[Switch, KeyValue],
     setTopLabel: js.Function1[java.lang.String, KeyValue]
   ): KeyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
-    __obj.updateDynamic("setBottomLabel")(setBottomLabel)
-    __obj.updateDynamic("setButton")(setButton)
-    __obj.updateDynamic("setComposeAction")(setComposeAction)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setIcon")(setIcon)
-    __obj.updateDynamic("setIconAltText")(setIconAltText)
-    __obj.updateDynamic("setIconUrl")(setIconUrl)
-    __obj.updateDynamic("setMultiline")(setMultiline)
-    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
-    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
-    __obj.updateDynamic("setSwitch")(setSwitch)
-    __obj.updateDynamic("setTopLabel")(setTopLabel)
+    val __obj = js.Dynamic.literal(setAuthorizationAction = setAuthorizationAction, setBottomLabel = setBottomLabel, setButton = setButton, setComposeAction = setComposeAction, setContent = setContent, setIcon = setIcon, setIconAltText = setIconAltText, setIconUrl = setIconUrl, setMultiline = setMultiline, setOnClickAction = setOnClickAction, setOnClickOpenLinkAction = setOnClickOpenLinkAction, setOpenLink = setOpenLink, setSwitch = setSwitch, setTopLabel = setTopLabel)
+  
     __obj.asInstanceOf[KeyValue]
   }
 }

@@ -24,13 +24,8 @@ object IObjectFiles {
     Sort: js.Function1[IObjectFileComparer, scala.Unit],
     ToJSON: js.Function0[java.lang.String]
   ): IObjectFiles = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetObjectFileByNameForFileSystem")(GetObjectFileByNameForFileSystem)
-    __obj.updateDynamic("GetObjectFileIndexByNameForFileSystem")(GetObjectFileIndexByNameForFileSystem)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Sort")(Sort)
-    __obj.updateDynamic("ToJSON")(ToJSON)
+    val __obj = js.Dynamic.literal(Count = Count, GetObjectFileByNameForFileSystem = GetObjectFileByNameForFileSystem, GetObjectFileIndexByNameForFileSystem = GetObjectFileIndexByNameForFileSystem, Item = Item, Sort = Sort, ToJSON = ToJSON)
+  
     __obj.asInstanceOf[IObjectFiles]
   }
 }

@@ -18,8 +18,7 @@ object Anon_ForwardWhitelistedNames {
     forward: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     whitelistedNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_ForwardWhitelistedNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forward")(forward.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(forward = forward.asInstanceOf[js.Any])
     if (whitelistedNames != null) __obj.updateDynamic("whitelistedNames")(whitelistedNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ForwardWhitelistedNames]
   }

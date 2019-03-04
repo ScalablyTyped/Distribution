@@ -34,18 +34,8 @@ object SNSItem {
     Type: java.lang.String,
     UnsubscribeUrl: java.lang.String
   ): SNSItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("MessageAttributes")(MessageAttributes)
-    __obj.updateDynamic("MessageId")(MessageId)
-    __obj.updateDynamic("Signature")(Signature)
-    __obj.updateDynamic("SignatureVersion")(SignatureVersion)
-    __obj.updateDynamic("SigningCertUrl")(SigningCertUrl)
-    __obj.updateDynamic("Subject")(Subject)
-    __obj.updateDynamic("Timestamp")(Timestamp)
-    __obj.updateDynamic("TopicArn")(TopicArn)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("UnsubscribeUrl")(UnsubscribeUrl)
+    val __obj = js.Dynamic.literal(Message = Message, MessageAttributes = MessageAttributes, MessageId = MessageId, Signature = Signature, SignatureVersion = SignatureVersion, SigningCertUrl = SigningCertUrl, Subject = Subject, Timestamp = Timestamp, TopicArn = TopicArn, Type = Type, UnsubscribeUrl = UnsubscribeUrl)
+  
     __obj.asInstanceOf[SNSItem]
   }
 }

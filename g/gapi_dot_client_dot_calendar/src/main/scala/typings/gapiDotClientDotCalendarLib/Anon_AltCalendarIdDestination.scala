@@ -48,10 +48,7 @@ object Anon_AltCalendarIdDestination {
     sendNotifications: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltCalendarIdDestination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("eventId")(eventId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, destination = destination, eventId = eventId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

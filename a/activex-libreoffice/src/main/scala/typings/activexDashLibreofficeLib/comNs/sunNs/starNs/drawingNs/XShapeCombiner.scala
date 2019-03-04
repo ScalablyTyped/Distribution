@@ -30,12 +30,8 @@ object XShapeCombiner {
     release: js.Function0[scala.Unit],
     split: js.Function1[XShape, scala.Unit]
   ): XShapeCombiner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("combine")(combine)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("split")(split)
+    val __obj = js.Dynamic.literal(acquire = acquire, combine = combine, queryInterface = queryInterface, release = release, split = split)
+  
     __obj.asInstanceOf[XShapeCombiner]
   }
 }

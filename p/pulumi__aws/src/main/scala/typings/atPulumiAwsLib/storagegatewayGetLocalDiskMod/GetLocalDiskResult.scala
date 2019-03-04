@@ -19,9 +19,8 @@ trait GetLocalDiskResult extends js.Object {
 object GetLocalDiskResult {
   @scala.inline
   def apply(diskId: java.lang.String, id: java.lang.String): GetLocalDiskResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("diskId")(diskId)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(diskId = diskId, id = id)
+  
     __obj.asInstanceOf[GetLocalDiskResult]
   }
 }

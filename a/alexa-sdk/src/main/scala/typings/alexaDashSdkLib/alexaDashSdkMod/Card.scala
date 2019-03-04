@@ -22,7 +22,8 @@ object Card {
     text: java.lang.String = null,
     title: java.lang.String = null
   ): Card = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (content != null) __obj.updateDynamic("content")(content)
     if (image != null) __obj.updateDynamic("image")(image)
     if (text != null) __obj.updateDynamic("text")(text)

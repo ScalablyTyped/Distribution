@@ -22,11 +22,8 @@ object WorkItemReference {
     url: java.lang.String,
     webUrl: java.lang.String
   ): WorkItemReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("webUrl")(webUrl)
+    val __obj = js.Dynamic.literal(id = id, name = name, url = url, webUrl = webUrl)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WorkItemReference]
   }
 }

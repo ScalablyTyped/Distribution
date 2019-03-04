@@ -132,8 +132,7 @@ object GridOptions {
     tabIndex: scala.Int | scala.Double = null,
     useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined
   ): GridOptions[EntityType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displaySelectionCheckbox")(displaySelectionCheckbox)
+    val __obj = js.Dynamic.literal(displaySelectionCheckbox = displaySelectionCheckbox)
     if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
     if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
     if (!js.isUndefined(canSelectRows)) __obj.updateDynamic("canSelectRows")(canSelectRows)

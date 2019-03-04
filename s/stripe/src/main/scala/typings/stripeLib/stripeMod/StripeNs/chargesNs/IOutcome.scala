@@ -52,9 +52,8 @@ object IOutcome {
     risk_level: java.lang.String = null,
     rule: java.lang.String | js.Array[java.lang.String] = null
   ): IOutcome = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("network_status")(network_status.asInstanceOf[js.Any])
-    __obj.updateDynamic("seller_message")(seller_message)
+    val __obj = js.Dynamic.literal(network_status = network_status.asInstanceOf[js.Any], seller_message = seller_message)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (risk_level != null) __obj.updateDynamic("risk_level")(risk_level)
     if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])

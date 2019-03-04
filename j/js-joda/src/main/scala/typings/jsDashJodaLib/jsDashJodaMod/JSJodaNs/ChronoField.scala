@@ -37,20 +37,8 @@ object ChronoField {
     rangeUnit: js.Function0[scala.Double],
     toString: js.Function0[java.lang.String]
   ): ChronoField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUnit")(baseUnit)
-    __obj.updateDynamic("checkValidIntValue")(checkValidIntValue)
-    __obj.updateDynamic("checkValidValue")(checkValidValue)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("getFrom")(getFrom)
-    __obj.updateDynamic("isDateBased")(isDateBased)
-    __obj.updateDynamic("isTimeBased")(isTimeBased)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("rangeRefinedBy")(rangeRefinedBy)
-    __obj.updateDynamic("rangeUnit")(rangeUnit)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(baseUnit = baseUnit, checkValidIntValue = checkValidIntValue, checkValidValue = checkValidValue, displayName = displayName, equals = equals, getFrom = getFrom, isDateBased = isDateBased, isTimeBased = isTimeBased, name = name, range = range, rangeRefinedBy = rangeRefinedBy, rangeUnit = rangeUnit, toString = toString)
+  
     __obj.asInstanceOf[ChronoField]
   }
 }

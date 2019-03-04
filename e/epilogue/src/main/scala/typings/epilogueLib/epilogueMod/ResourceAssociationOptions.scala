@@ -22,8 +22,7 @@ object ResourceAssociationOptions {
     onDelete: java.lang.String = null,
     onUpdate: java.lang.String = null
   ): ResourceAssociationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeForeignKeys")(removeForeignKeys)
+    val __obj = js.Dynamic.literal(removeForeignKeys = removeForeignKeys)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints)
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])

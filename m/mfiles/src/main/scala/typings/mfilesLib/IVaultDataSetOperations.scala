@@ -20,11 +20,8 @@ object IVaultDataSetOperations {
     GetReportAccessCredentials: js.Function0[IReportAccessCredentials],
     StartDataSetExport: js.Function1[scala.Double, scala.Unit]
   ): IVaultDataSetOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetDataSetExportingStatus")(GetDataSetExportingStatus)
-    __obj.updateDynamic("GetDataSets")(GetDataSets)
-    __obj.updateDynamic("GetReportAccessCredentials")(GetReportAccessCredentials)
-    __obj.updateDynamic("StartDataSetExport")(StartDataSetExport)
+    val __obj = js.Dynamic.literal(GetDataSetExportingStatus = GetDataSetExportingStatus, GetDataSets = GetDataSets, GetReportAccessCredentials = GetReportAccessCredentials, StartDataSetExport = StartDataSetExport)
+  
     __obj.asInstanceOf[IVaultDataSetOperations]
   }
 }

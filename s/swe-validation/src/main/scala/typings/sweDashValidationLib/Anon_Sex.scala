@@ -14,9 +14,8 @@ trait Anon_Sex extends js.Object {
 object Anon_Sex {
   @scala.inline
   def apply(sex: java.lang.String, ssn: java.lang.String, `type`: java.lang.String): Anon_Sex = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("sex")(sex)
-    __obj.updateDynamic("ssn")(ssn)
+    val __obj = js.Dynamic.literal(sex = sex, ssn = ssn)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Sex]
   }
 }

@@ -27,10 +27,8 @@ object NetworkInterfaceAttachmentArgs {
     instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): NetworkInterfaceAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceIndex")(deviceIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceIndex = deviceIndex.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NetworkInterfaceAttachmentArgs]
   }
 }

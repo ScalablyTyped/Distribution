@@ -14,8 +14,7 @@ trait Rotation extends js.Object {
 object Rotation {
   @scala.inline
   def apply(angle: scala.Double, cx: scala.Int | scala.Double = null, cy: scala.Int | scala.Double = null): Rotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
+    val __obj = js.Dynamic.literal(angle = angle)
     if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
     if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rotation]

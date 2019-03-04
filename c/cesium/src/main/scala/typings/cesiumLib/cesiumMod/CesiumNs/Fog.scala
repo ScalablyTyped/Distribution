@@ -20,11 +20,8 @@ object Fog {
     minimumBrightness: scala.Double,
     screenSpaceErrorFactor: scala.Double
   ): Fog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("density")(density)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("minimumBrightness")(minimumBrightness)
-    __obj.updateDynamic("screenSpaceErrorFactor")(screenSpaceErrorFactor)
+    val __obj = js.Dynamic.literal(density = density, enabled = enabled, minimumBrightness = minimumBrightness, screenSpaceErrorFactor = screenSpaceErrorFactor)
+  
     __obj.asInstanceOf[Fog]
   }
 }

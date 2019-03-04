@@ -36,10 +36,8 @@ object LeaderboardPlayer {
     getName: js.Function0[java.lang.String],
     getPhoto: js.Function0[java.lang.String | scala.Null]
   ): LeaderboardPlayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getID")(getID)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPhoto")(getPhoto)
+    val __obj = js.Dynamic.literal(getID = getID, getName = getName, getPhoto = getPhoto)
+  
     __obj.asInstanceOf[LeaderboardPlayer]
   }
 }

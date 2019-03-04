@@ -20,11 +20,8 @@ object DefineMark {
     marktype: T,
     role: vegaDashTypingsLib.vegaDashTypingsLibStrings.mark | R
   ): DefineMark[T, I, R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("marktype")(marktype.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(group = group, items = items, marktype = marktype.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DefineMark[T, I, R]]
   }
 }

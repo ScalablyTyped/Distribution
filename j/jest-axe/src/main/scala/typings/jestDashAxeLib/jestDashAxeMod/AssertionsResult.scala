@@ -27,10 +27,8 @@ object AssertionsResult {
     message: js.Function0[java.lang.String],
     pass: scala.Boolean
   ): AssertionsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pass")(pass)
+    val __obj = js.Dynamic.literal(actual = actual, message = message, pass = pass)
+  
     __obj.asInstanceOf[AssertionsResult]
   }
 }

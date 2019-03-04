@@ -12,8 +12,8 @@ trait Anon_Ojdatagridcell extends js.Object {
 object Anon_Ojdatagridcell {
   @scala.inline
   def apply(subId: atOracleOraclejetLib.atOracleOraclejetLibStrings.`oj-datagrid-cell`): Anon_Ojdatagridcell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(subId = subId)
+  
     __obj.asInstanceOf[Anon_Ojdatagridcell]
   }
 }

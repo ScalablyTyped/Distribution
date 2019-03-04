@@ -22,12 +22,7 @@ object ValidationError {
     validation: ajvLib.ajvLibNumbers.`true`,
     stack: java.lang.String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajv")(ajv)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("validation")(validation)
+    val __obj = js.Dynamic.literal(ajv = ajv, errors = errors, message = message, name = name, validation = validation)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[ValidationError]
   }

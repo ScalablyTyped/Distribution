@@ -26,12 +26,7 @@ object TokenRequest {
     clientId: java.lang.String = null,
     ttl: scala.Int | scala.Double = null
   ): TokenRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capability")(capability)
-    __obj.updateDynamic("keyName")(keyName)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(capability = capability, keyName = keyName, mac = mac, nonce = nonce, timestamp = timestamp)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenRequest]

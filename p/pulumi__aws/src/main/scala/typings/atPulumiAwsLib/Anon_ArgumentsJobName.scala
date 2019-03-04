@@ -18,8 +18,7 @@ object Anon_ArgumentsJobName {
     arguments: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_ArgumentsJobName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jobName = jobName.asInstanceOf[js.Any])
     if (arguments != null) __obj.updateDynamic("arguments")(arguments.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgumentsJobName]

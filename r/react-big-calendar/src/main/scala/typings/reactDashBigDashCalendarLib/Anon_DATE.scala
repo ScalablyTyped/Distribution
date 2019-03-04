@@ -32,11 +32,8 @@ object Anon_DATE {
     PREVIOUS: reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.PREV,
     TODAY: reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.TODAY
   ): Anon_DATE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DATE")(DATE)
-    __obj.updateDynamic("NEXT")(NEXT)
-    __obj.updateDynamic("PREVIOUS")(PREVIOUS)
-    __obj.updateDynamic("TODAY")(TODAY)
+    val __obj = js.Dynamic.literal(DATE = DATE, NEXT = NEXT, PREVIOUS = PREVIOUS, TODAY = TODAY)
+  
     __obj.asInstanceOf[Anon_DATE]
   }
 }

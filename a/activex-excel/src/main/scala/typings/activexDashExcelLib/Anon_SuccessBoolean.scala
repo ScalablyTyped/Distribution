@@ -12,8 +12,8 @@ trait Anon_SuccessBoolean extends js.Object {
 object Anon_SuccessBoolean {
   @scala.inline
   def apply(Success: scala.Boolean): Anon_SuccessBoolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Success")(Success)
+    val __obj = js.Dynamic.literal(Success = Success)
+  
     __obj.asInstanceOf[Anon_SuccessBoolean]
   }
 }

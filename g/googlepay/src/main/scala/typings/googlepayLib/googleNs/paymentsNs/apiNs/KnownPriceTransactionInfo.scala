@@ -20,10 +20,8 @@ object KnownPriceTransactionInfo {
     totalPrice: java.lang.String,
     totalPriceStatus: googlepayLib.googlepayLibStrings.ESTIMATED | googlepayLib.googlepayLibStrings.FINAL
   ): KnownPriceTransactionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currencyCode")(currencyCode)
-    __obj.updateDynamic("totalPrice")(totalPrice)
-    __obj.updateDynamic("totalPriceStatus")(totalPriceStatus.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currencyCode = currencyCode, totalPrice = totalPrice, totalPriceStatus = totalPriceStatus.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[KnownPriceTransactionInfo]
   }
 }

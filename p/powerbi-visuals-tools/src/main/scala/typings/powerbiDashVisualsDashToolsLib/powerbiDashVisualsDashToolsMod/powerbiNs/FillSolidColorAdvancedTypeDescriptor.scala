@@ -13,8 +13,8 @@ trait FillSolidColorAdvancedTypeDescriptor extends js.Object {
 object FillSolidColorAdvancedTypeDescriptor {
   @scala.inline
   def apply(nullable: scala.Boolean): FillSolidColorAdvancedTypeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nullable")(nullable)
+    val __obj = js.Dynamic.literal(nullable = nullable)
+  
     __obj.asInstanceOf[FillSolidColorAdvancedTypeDescriptor]
   }
 }

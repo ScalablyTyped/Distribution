@@ -12,8 +12,8 @@ trait Anon_UseInstances extends js.Object {
 object Anon_UseInstances {
   @scala.inline
   def apply(useInstances: scala.Boolean): Anon_UseInstances = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useInstances")(useInstances)
+    val __obj = js.Dynamic.literal(useInstances = useInstances)
+  
     __obj.asInstanceOf[Anon_UseInstances]
   }
 }

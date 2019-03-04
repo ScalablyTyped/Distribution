@@ -67,11 +67,7 @@ object CapacityReservationArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     tenancy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ec2TenancyMod.Tenancy] = null
   ): CapacityReservationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("instancePlatform")(instancePlatform.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], instanceCount = instanceCount.asInstanceOf[js.Any], instancePlatform = instancePlatform.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (endDateType != null) __obj.updateDynamic("endDateType")(endDateType.asInstanceOf[js.Any])

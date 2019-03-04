@@ -26,14 +26,8 @@ object Anon_AllDetails {
     symbols: scala.Double,
     testResults: scala.Double
   ): Anon_AllDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("dropLocation")(dropLocation)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("testResults")(testResults)
+    val __obj = js.Dynamic.literal(all = all, details = details, dropLocation = dropLocation, label = label, none = none, symbols = symbols, testResults = testResults)
+  
     __obj.asInstanceOf[Anon_AllDetails]
   }
 }

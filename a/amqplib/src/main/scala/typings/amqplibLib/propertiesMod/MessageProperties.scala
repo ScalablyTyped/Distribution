@@ -40,8 +40,7 @@ object MessageProperties {
     `type`: js.Any = null,
     userId: js.Any = null
   ): MessageProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
     if (appId != null) __obj.updateDynamic("appId")(appId)
     if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId)
     if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)

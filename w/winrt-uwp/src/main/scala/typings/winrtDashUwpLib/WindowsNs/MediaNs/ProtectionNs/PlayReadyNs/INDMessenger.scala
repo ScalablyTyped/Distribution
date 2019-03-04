@@ -79,11 +79,8 @@ object INDMessenger {
       winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDSendResult]
     ]
   ): INDMessenger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sendLicenseFetchRequestAsync")(sendLicenseFetchRequestAsync)
-    __obj.updateDynamic("sendProximityDetectionResponseAsync")(sendProximityDetectionResponseAsync)
-    __obj.updateDynamic("sendProximityDetectionStartAsync")(sendProximityDetectionStartAsync)
-    __obj.updateDynamic("sendRegistrationRequestAsync")(sendRegistrationRequestAsync)
+    val __obj = js.Dynamic.literal(sendLicenseFetchRequestAsync = sendLicenseFetchRequestAsync, sendProximityDetectionResponseAsync = sendProximityDetectionResponseAsync, sendProximityDetectionStartAsync = sendProximityDetectionStartAsync, sendRegistrationRequestAsync = sendRegistrationRequestAsync)
+  
     __obj.asInstanceOf[INDMessenger]
   }
 }

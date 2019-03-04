@@ -130,10 +130,8 @@ object MenuItemSpec {
       java.lang.String
     ]) = null
   ): MenuItemSpec[S] = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("execEvent")(execEvent)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(css = css, execEvent = execEvent, run = run)
+    __obj.updateDynamic("class")(`class`)
     if (active != null) __obj.updateDynamic("active")(active)
     if (enable != null) __obj.updateDynamic("enable")(enable)
     if (icon != null) __obj.updateDynamic("icon")(icon)

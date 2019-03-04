@@ -16,9 +16,8 @@ object Anon_PDocumentPWindow {
     pDocument: activexDashInfopathLib.InfoPathNs._XDocument,
     pWindow: activexDashInfopathLib.InfoPathNs.Window
   ): Anon_PDocumentPWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pDocument")(pDocument)
-    __obj.updateDynamic("pWindow")(pWindow)
+    val __obj = js.Dynamic.literal(pDocument = pDocument, pWindow = pWindow)
+  
     __obj.asInstanceOf[Anon_PDocumentPWindow]
   }
 }

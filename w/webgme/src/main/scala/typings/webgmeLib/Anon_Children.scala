@@ -13,8 +13,7 @@ trait Anon_Children extends js.Object {
 object Anon_Children {
   @scala.inline
   def apply(node: webgmeLib.CoreNs.Node, children: js.Array[webgmeLib.CoreNs.Node] = null): Anon_Children = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(node = node)
     if (children != null) __obj.updateDynamic("children")(children)
     __obj.asInstanceOf[Anon_Children]
   }

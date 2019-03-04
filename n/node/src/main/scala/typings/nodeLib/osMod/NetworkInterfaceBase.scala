@@ -22,11 +22,7 @@ object NetworkInterfaceBase {
     netmask: java.lang.String,
     cidr: java.lang.String = null
   ): NetworkInterfaceBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("mac")(mac)
-    __obj.updateDynamic("netmask")(netmask)
+    val __obj = js.Dynamic.literal(address = address, internal = internal, mac = mac, netmask = netmask)
     if (cidr != null) __obj.updateDynamic("cidr")(cidr)
     __obj.asInstanceOf[NetworkInterfaceBase]
   }

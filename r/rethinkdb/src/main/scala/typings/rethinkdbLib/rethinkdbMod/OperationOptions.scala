@@ -86,21 +86,8 @@ object OperationOptions {
     readMode: rethinkdbLib.rethinkdbLibStrings.single | rethinkdbLib.rethinkdbLibStrings.majority | rethinkdbLib.rethinkdbLibStrings.outdated,
     timeFormat: rethinkdbLib.rethinkdbLibStrings.native | rethinkdbLib.rethinkdbLibStrings.raw
   ): OperationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrayLimit")(arrayLimit)
-    __obj.updateDynamic("binaryFormat")(binaryFormat.asInstanceOf[js.Any])
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("durability")(durability.asInstanceOf[js.Any])
-    __obj.updateDynamic("firstBatchScaledownFactor")(firstBatchScaledownFactor)
-    __obj.updateDynamic("groupFormat")(groupFormat.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxBatchBytes")(maxBatchBytes)
-    __obj.updateDynamic("maxBatchRows")(maxBatchRows)
-    __obj.updateDynamic("maxBatchSeconds")(maxBatchSeconds)
-    __obj.updateDynamic("minBatchRows")(minBatchRows)
-    __obj.updateDynamic("noreply")(noreply)
-    __obj.updateDynamic("profile")(profile)
-    __obj.updateDynamic("readMode")(readMode.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeFormat")(timeFormat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arrayLimit = arrayLimit, binaryFormat = binaryFormat.asInstanceOf[js.Any], db = db, durability = durability.asInstanceOf[js.Any], firstBatchScaledownFactor = firstBatchScaledownFactor, groupFormat = groupFormat.asInstanceOf[js.Any], maxBatchBytes = maxBatchBytes, maxBatchRows = maxBatchRows, maxBatchSeconds = maxBatchSeconds, minBatchRows = minBatchRows, noreply = noreply, profile = profile, readMode = readMode.asInstanceOf[js.Any], timeFormat = timeFormat.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OperationOptions]
   }
 }

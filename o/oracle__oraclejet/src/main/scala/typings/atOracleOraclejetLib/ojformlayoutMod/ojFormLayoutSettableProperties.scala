@@ -23,12 +23,8 @@ object ojFormLayoutSettableProperties {
     labelWrapping: atOracleOraclejetLib.atOracleOraclejetLibStrings.truncate | atOracleOraclejetLib.atOracleOraclejetLibStrings.wrap,
     maxColumns: scala.Double
   ): ojFormLayoutSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelEdge")(labelEdge.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelWidth")(labelWidth)
-    __obj.updateDynamic("labelWrapping")(labelWrapping.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxColumns")(maxColumns)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], labelEdge = labelEdge.asInstanceOf[js.Any], labelWidth = labelWidth, labelWrapping = labelWrapping.asInstanceOf[js.Any], maxColumns = maxColumns)
+  
     __obj.asInstanceOf[ojFormLayoutSettableProperties]
   }
 }

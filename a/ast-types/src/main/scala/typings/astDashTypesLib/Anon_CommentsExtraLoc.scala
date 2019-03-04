@@ -22,8 +22,7 @@ object Anon_CommentsExtraLoc {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     regex: Anon_Flags = null
   ): Anon_CommentsExtraLoc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (loc != null) __obj.updateDynamic("loc")(loc)

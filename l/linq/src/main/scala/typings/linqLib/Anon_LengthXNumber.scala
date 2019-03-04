@@ -16,8 +16,7 @@ object Anon_LengthXNumber {
     length: scala.Double,
     NumberDictionary: /* x */ org.scalablytyped.runtime.NumberDictionary[TCollection] = null
   ): Anon_LengthXNumber[TCollection] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Anon_LengthXNumber[TCollection]]
   }

@@ -24,13 +24,8 @@ object request {
     task: ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task,
     url: java.lang.String
   ): request = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("errorCallback")(errorCallback)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(callback = callback, cancel = cancel, errorCallback = errorCallback, response = response, task = task, url = url)
+  
     __obj.asInstanceOf[request]
   }
 }

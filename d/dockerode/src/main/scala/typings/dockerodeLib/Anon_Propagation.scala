@@ -12,8 +12,8 @@ trait Anon_Propagation extends js.Object {
 object Anon_Propagation {
   @scala.inline
   def apply(Propagation: dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation): Anon_Propagation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Propagation")(Propagation)
+    val __obj = js.Dynamic.literal(Propagation = Propagation)
+  
     __obj.asInstanceOf[Anon_Propagation]
   }
 }

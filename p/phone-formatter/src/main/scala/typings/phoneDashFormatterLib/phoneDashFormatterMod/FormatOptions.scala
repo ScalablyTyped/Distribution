@@ -12,8 +12,8 @@ trait FormatOptions extends js.Object {
 object FormatOptions {
   @scala.inline
   def apply(normalize: scala.Boolean): FormatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("normalize")(normalize)
+    val __obj = js.Dynamic.literal(normalize = normalize)
+  
     __obj.asInstanceOf[FormatOptions]
   }
 }

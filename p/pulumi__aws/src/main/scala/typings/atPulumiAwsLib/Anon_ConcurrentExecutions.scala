@@ -18,9 +18,7 @@ object Anon_ConcurrentExecutions {
     launchPath: java.lang.String,
     parameters: java.lang.String = null
   ): Anon_ConcurrentExecutions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concurrentExecutions")(concurrentExecutions)
-    __obj.updateDynamic("launchPath")(launchPath)
+    val __obj = js.Dynamic.literal(concurrentExecutions = concurrentExecutions, launchPath = launchPath)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     __obj.asInstanceOf[Anon_ConcurrentExecutions]
   }

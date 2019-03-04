@@ -15,9 +15,8 @@ trait FailedKeybindingMatch extends js.Object {
 object FailedKeybindingMatch {
   @scala.inline
   def apply(keyboardEventTarget: stdLib.Element, keystrokes: java.lang.String): FailedKeybindingMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget)
-    __obj.updateDynamic("keystrokes")(keystrokes)
+    val __obj = js.Dynamic.literal(keyboardEventTarget = keyboardEventTarget, keystrokes = keystrokes)
+  
     __obj.asInstanceOf[FailedKeybindingMatch]
   }
 }

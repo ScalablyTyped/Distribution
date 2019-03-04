@@ -12,8 +12,8 @@ trait Group extends js.Object {
 object Group {
   @scala.inline
   def apply(Items: js.Array[Item]): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Items")(Items)
+    val __obj = js.Dynamic.literal(Items = Items)
+  
     __obj.asInstanceOf[Group]
   }
 }

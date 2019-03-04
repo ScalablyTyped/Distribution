@@ -22,10 +22,8 @@ object IInkRecognizerContainer {
     ],
     setDefaultRecognizer: js.Function1[InkRecognizer, scala.Unit]
   ): IInkRecognizerContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRecognizers")(getRecognizers)
-    __obj.updateDynamic("recognizeAsync")(recognizeAsync)
-    __obj.updateDynamic("setDefaultRecognizer")(setDefaultRecognizer)
+    val __obj = js.Dynamic.literal(getRecognizers = getRecognizers, recognizeAsync = recognizeAsync, setDefaultRecognizer = setDefaultRecognizer)
+  
     __obj.asInstanceOf[IInkRecognizerContainer]
   }
 }

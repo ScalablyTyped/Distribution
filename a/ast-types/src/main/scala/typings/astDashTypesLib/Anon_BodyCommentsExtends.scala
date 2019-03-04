@@ -20,8 +20,7 @@ object Anon_BodyCommentsExtends {
     `extends`: js.Array[astDashTypesLib.genKindsMod.InterfaceExtendsKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_BodyCommentsExtends = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
     if (loc != null) __obj.updateDynamic("loc")(loc)

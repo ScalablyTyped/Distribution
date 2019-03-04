@@ -18,8 +18,8 @@ object MembersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ModifyContactGroupMembersResponse]
     ]
   ): MembersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modify")(modify)
+    val __obj = js.Dynamic.literal(modify = modify)
+  
     __obj.asInstanceOf[MembersResource]
   }
 }

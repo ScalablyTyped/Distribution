@@ -73,15 +73,8 @@ object IZoomableView {
     positionItem: js.Function2[T, winjsLib.WinJSNs.UtilitiesNs.IPosition, scala.Unit],
     setCurrentItem: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): IZoomableView[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginZoom")(beginZoom)
-    __obj.updateDynamic("configureForZoom")(configureForZoom)
-    __obj.updateDynamic("endZoom")(endZoom)
-    __obj.updateDynamic("getCurrentItem")(getCurrentItem)
-    __obj.updateDynamic("getPanAxis")(getPanAxis)
-    __obj.updateDynamic("handlePointer")(handlePointer)
-    __obj.updateDynamic("positionItem")(positionItem)
-    __obj.updateDynamic("setCurrentItem")(setCurrentItem)
+    val __obj = js.Dynamic.literal(beginZoom = beginZoom, configureForZoom = configureForZoom, endZoom = endZoom, getCurrentItem = getCurrentItem, getPanAxis = getPanAxis, handlePointer = handlePointer, positionItem = positionItem, setCurrentItem = setCurrentItem)
+  
     __obj.asInstanceOf[IZoomableView[T]]
   }
 }

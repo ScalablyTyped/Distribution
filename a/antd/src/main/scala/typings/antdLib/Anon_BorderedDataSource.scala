@@ -24,11 +24,7 @@ object Anon_BorderedDataSource {
     split: scala.Boolean,
     pagination: antdLib.antdLibNumbers.`false` | antdLib.libPaginationPaginationMod.PaginationConfig = null
   ): Anon_BorderedDataSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bordered")(bordered)
-    __obj.updateDynamic("dataSource")(dataSource)
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("split")(split)
+    val __obj = js.Dynamic.literal(bordered = bordered, dataSource = dataSource, loading = loading, split = split)
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BorderedDataSource]
   }

@@ -18,10 +18,7 @@ object PagePaginatorState {
     page: scala.Double,
     page_size: scala.Int | scala.Double = null
   ): PagePaginatorState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(done = done, loaded = loaded, page = page)
     if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagePaginatorState]
   }

@@ -79,8 +79,7 @@ object PopconfirmProps {
     trigger: antdLib.libTooltipMod.TooltipTrigger = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): PopconfirmProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter)
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])

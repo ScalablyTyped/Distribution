@@ -14,8 +14,8 @@ object Anon_NetworkType {
   def apply(
     Networks: org.scalablytyped.runtime.StringDictionary[dockerodeLib.dockerodeMod.DockerodeNs.NetworkInfo]
   ): Anon_NetworkType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Networks")(Networks)
+    val __obj = js.Dynamic.literal(Networks = Networks)
+  
     __obj.asInstanceOf[Anon_NetworkType]
   }
 }

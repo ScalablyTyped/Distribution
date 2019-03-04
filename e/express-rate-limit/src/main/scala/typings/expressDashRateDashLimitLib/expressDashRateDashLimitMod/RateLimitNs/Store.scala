@@ -18,10 +18,8 @@ object Store {
     incr: js.Function2[java.lang.String, StoreIncrementCallback, scala.Unit],
     resetKey: js.Function1[java.lang.String, scala.Unit]
   ): Store = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decrement")(decrement)
-    __obj.updateDynamic("incr")(incr)
-    __obj.updateDynamic("resetKey")(resetKey)
+    val __obj = js.Dynamic.literal(decrement = decrement, incr = incr, resetKey = resetKey)
+  
     __obj.asInstanceOf[Store]
   }
 }

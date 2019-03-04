@@ -17,7 +17,7 @@ class LLRBEmptyNode[K, V] () extends js.Object {
     * @private
     * @return {number} Not sure what this returns exactly. :-).
     */
-  def `check_`(): scala.Double = js.native
+  def check_(): scala.Double = js.native
   /**
     * Returns a copy of the current node.
     *
@@ -65,7 +65,7 @@ class LLRBEmptyNode[K, V] () extends js.Object {
     * @private
     * @return {boolean} Whether this node is red.
     */
-  def `isRed_`(): scala.Boolean = js.native
+  def isRed_(): scala.Boolean = js.native
   /**
     * @return {null}
     */

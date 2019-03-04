@@ -14,8 +14,7 @@ trait LogoutParams extends js.Object {
 object LogoutParams {
   @scala.inline
   def apply(federated: scala.Boolean, clientId: java.lang.String = null, returnTo: java.lang.String = null): LogoutParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("federated")(federated)
+    val __obj = js.Dynamic.literal(federated = federated)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo)
     __obj.asInstanceOf[LogoutParams]

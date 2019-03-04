@@ -58,10 +58,7 @@ object MultiSamlConfig {
     skipRequestCompression: js.UndefOr[scala.Boolean] = js.undefined,
     validateInResponseTo: js.UndefOr[scala.Boolean] = js.undefined
   ): MultiSamlConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entryPoint")(entryPoint)
-    __obj.updateDynamic("getSamlOptions")(getSamlOptions)
-    __obj.updateDynamic("issuer")(issuer)
+    val __obj = js.Dynamic.literal(entryPoint = entryPoint, getSamlOptions = getSamlOptions, issuer = issuer)
     if (acceptedClockSkewMs != null) __obj.updateDynamic("acceptedClockSkewMs")(acceptedClockSkewMs.asInstanceOf[js.Any])
     if (additionalAuthorizeParams != null) __obj.updateDynamic("additionalAuthorizeParams")(additionalAuthorizeParams)
     if (additionalLogoutParams != null) __obj.updateDynamic("additionalLogoutParams")(additionalLogoutParams)

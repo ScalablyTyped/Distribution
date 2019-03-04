@@ -17,10 +17,8 @@ object SourceRepoTrigger {
     branchFilters: js.Array[java.lang.String],
     triggerType: ReleaseTriggerType
   ): SourceRepoTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("branchFilters")(branchFilters)
-    __obj.updateDynamic("triggerType")(triggerType)
+    val __obj = js.Dynamic.literal(alias = alias, branchFilters = branchFilters, triggerType = triggerType)
+  
     __obj.asInstanceOf[SourceRepoTrigger]
   }
 }

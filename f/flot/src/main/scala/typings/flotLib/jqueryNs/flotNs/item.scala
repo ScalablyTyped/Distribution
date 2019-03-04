@@ -28,13 +28,8 @@ object item {
     series: dataSeries,
     seriesIndex: scala.Double
   ): item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataIndex")(dataIndex)
-    __obj.updateDynamic("datapoint")(datapoint)
-    __obj.updateDynamic("pageX")(pageX)
-    __obj.updateDynamic("pageY")(pageY)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("seriesIndex")(seriesIndex)
+    val __obj = js.Dynamic.literal(dataIndex = dataIndex, datapoint = datapoint, pageX = pageX, pageY = pageY, series = series, seriesIndex = seriesIndex)
+  
     __obj.asInstanceOf[item]
   }
 }

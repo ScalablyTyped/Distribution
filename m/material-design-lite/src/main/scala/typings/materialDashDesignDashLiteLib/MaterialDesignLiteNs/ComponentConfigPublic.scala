@@ -18,9 +18,7 @@ object ComponentConfigPublic {
     cssClass: java.lang.String,
     widget: java.lang.String | scala.Boolean = null
   ): ComponentConfigPublic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classAsString")(classAsString)
-    __obj.updateDynamic("cssClass")(cssClass)
+    val __obj = js.Dynamic.literal(classAsString = classAsString, cssClass = cssClass)
     if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfigPublic]
   }

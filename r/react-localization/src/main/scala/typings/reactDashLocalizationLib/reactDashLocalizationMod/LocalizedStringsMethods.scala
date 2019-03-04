@@ -60,14 +60,8 @@ object LocalizedStringsMethods {
     setContent: js.Function1[js.Any, scala.Unit],
     setLanguage: js.Function1[java.lang.String, scala.Unit]
   ): LocalizedStringsMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatString")(formatString)
-    __obj.updateDynamic("getAvailableLanguages")(getAvailableLanguages)
-    __obj.updateDynamic("getInterfaceLanguage")(getInterfaceLanguage)
-    __obj.updateDynamic("getLanguage")(getLanguage)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setLanguage")(setLanguage)
+    val __obj = js.Dynamic.literal(formatString = formatString, getAvailableLanguages = getAvailableLanguages, getInterfaceLanguage = getInterfaceLanguage, getLanguage = getLanguage, getString = getString, setContent = setContent, setLanguage = setLanguage)
+  
     __obj.asInstanceOf[LocalizedStringsMethods]
   }
 }

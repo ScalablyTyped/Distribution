@@ -99,10 +99,8 @@ object AuditEvent {
     subtype: js.Array[Coding] = null,
     text: Narrative = null
   ): AuditEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("recorded")(recorded)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(agent = agent, recorded = recorded, source = source)
+    __obj.updateDynamic("type")(`type`)
     if (_action != null) __obj.updateDynamic("_action")(_action)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

@@ -22,12 +22,8 @@ object AbstractHandshake {
     getHandshakeFields: js.Function1[Client, HandshakeFields],
     sandboxId: java.lang.String
   ): AbstractHandshake = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authType")(authType)
-    __obj.updateDynamic("authVersion")(authVersion)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("getHandshakeFields")(getHandshakeFields)
-    __obj.updateDynamic("sandboxId")(sandboxId)
+    val __obj = js.Dynamic.literal(authType = authType, authVersion = authVersion, deploymentId = deploymentId, getHandshakeFields = getHandshakeFields, sandboxId = sandboxId)
+  
     __obj.asInstanceOf[AbstractHandshake]
   }
 }

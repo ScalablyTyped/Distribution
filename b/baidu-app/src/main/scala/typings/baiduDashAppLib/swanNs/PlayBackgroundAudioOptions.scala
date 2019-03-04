@@ -25,8 +25,7 @@ object PlayBackgroundAudioOptions {
     success: js.Function1[js.Any, scala.Unit] = null,
     title: java.lang.String = null
   ): PlayBackgroundAudioOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataUrl")(dataUrl)
+    val __obj = js.Dynamic.literal(dataUrl = dataUrl)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (coverImgUrl != null) __obj.updateDynamic("coverImgUrl")(coverImgUrl)
     if (fail != null) __obj.updateDynamic("fail")(fail)

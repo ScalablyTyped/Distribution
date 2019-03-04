@@ -20,12 +20,8 @@ object AdGroupUrls {
     setCustomParameters: js.Function1[js.Object, scala.Unit],
     setTrackingTemplate: js.Function1[java.lang.String, scala.Unit]
   ): AdGroupUrls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearTrackingTemplate")(clearTrackingTemplate)
-    __obj.updateDynamic("getCustomParameters")(getCustomParameters)
-    __obj.updateDynamic("getTrackingTemplate")(getTrackingTemplate)
-    __obj.updateDynamic("setCustomParameters")(setCustomParameters)
-    __obj.updateDynamic("setTrackingTemplate")(setTrackingTemplate)
+    val __obj = js.Dynamic.literal(clearTrackingTemplate = clearTrackingTemplate, getCustomParameters = getCustomParameters, getTrackingTemplate = getTrackingTemplate, setCustomParameters = setCustomParameters, setTrackingTemplate = setTrackingTemplate)
+  
     __obj.asInstanceOf[AdGroupUrls]
   }
 }

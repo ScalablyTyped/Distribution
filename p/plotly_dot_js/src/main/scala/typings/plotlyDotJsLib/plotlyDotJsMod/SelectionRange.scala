@@ -13,9 +13,8 @@ trait SelectionRange extends js.Object {
 object SelectionRange {
   @scala.inline
   def apply(x: js.Array[scala.Double], y: js.Array[scala.Double]): SelectionRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[SelectionRange]
   }
 }

@@ -12,7 +12,7 @@ trait LodashFindKey extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): js.UndefOr[java.lang.String] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFindKey1x2[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashFindKey1x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__): LodashFindKey1x2[T] = js.native
+  def apply[T](predicate: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashFindKey1x2[T] = js.native
 }
 

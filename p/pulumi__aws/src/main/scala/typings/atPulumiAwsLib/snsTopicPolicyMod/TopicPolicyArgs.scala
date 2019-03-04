@@ -22,9 +22,8 @@ object TopicPolicyArgs {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): TopicPolicyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TopicPolicyArgs]
   }
 }

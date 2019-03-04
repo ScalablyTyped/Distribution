@@ -21,10 +21,7 @@ object DataSourceErrorEvent {
     errors: js.Any = null,
     sender: DataSource = null
   ): DataSourceErrorEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorThrown")(errorThrown)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("xhr")(xhr)
+    val __obj = js.Dynamic.literal(errorThrown = errorThrown, status = status, xhr = xhr)
     if (errors != null) __obj.updateDynamic("errors")(errors)
     if (sender != null) __obj.updateDynamic("sender")(sender)
     __obj.asInstanceOf[DataSourceErrorEvent]

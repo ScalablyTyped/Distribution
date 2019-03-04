@@ -20,11 +20,8 @@ object OpenapiError {
     message: java.lang.String,
     path: java.lang.String
   ): OpenapiError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, location = location, message = message, path = path)
+  
     __obj.asInstanceOf[OpenapiError]
   }
 }

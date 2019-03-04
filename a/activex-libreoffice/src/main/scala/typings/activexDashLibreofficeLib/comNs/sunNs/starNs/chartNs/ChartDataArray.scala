@@ -36,24 +36,8 @@ object ChartDataArray {
     ],
     setRowDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
   ): ChartDataArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnDescriptions")(ColumnDescriptions)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("NotANumber")(NotANumber)
-    __obj.updateDynamic("RowDescriptions")(RowDescriptions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChartDataChangeEventListener")(addChartDataChangeEventListener)
-    __obj.updateDynamic("getColumnDescriptions")(getColumnDescriptions)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getNotANumber")(getNotANumber)
-    __obj.updateDynamic("getRowDescriptions")(getRowDescriptions)
-    __obj.updateDynamic("isNotANumber")(isNotANumber)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChartDataChangeEventListener")(removeChartDataChangeEventListener)
-    __obj.updateDynamic("setColumnDescriptions")(setColumnDescriptions)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("setRowDescriptions")(setRowDescriptions)
+    val __obj = js.Dynamic.literal(ColumnDescriptions = ColumnDescriptions, Data = Data, NotANumber = NotANumber, RowDescriptions = RowDescriptions, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, getColumnDescriptions = getColumnDescriptions, getData = getData, getNotANumber = getNotANumber, getRowDescriptions = getRowDescriptions, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener, setColumnDescriptions = setColumnDescriptions, setData = setData, setRowDescriptions = setRowDescriptions)
+  
     __obj.asInstanceOf[ChartDataArray]
   }
 }

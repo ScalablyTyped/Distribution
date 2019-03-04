@@ -75,17 +75,8 @@ object RouteLeg {
     start_location: LatLngLiteral,
     steps: js.Array[DirectionsStep]
   ): RouteLeg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrival_time")(arrival_time)
-    __obj.updateDynamic("departure_time")(departure_time)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("duration_in_traffic")(duration_in_traffic)
-    __obj.updateDynamic("end_address")(end_address)
-    __obj.updateDynamic("end_location")(end_location)
-    __obj.updateDynamic("start_address")(start_address)
-    __obj.updateDynamic("start_location")(start_location)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(arrival_time = arrival_time, departure_time = departure_time, distance = distance, duration = duration, duration_in_traffic = duration_in_traffic, end_address = end_address, end_location = end_location, start_address = start_address, start_location = start_location, steps = steps)
+  
     __obj.asInstanceOf[RouteLeg]
   }
 }

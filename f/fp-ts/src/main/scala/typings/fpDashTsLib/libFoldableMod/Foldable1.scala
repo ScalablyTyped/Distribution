@@ -21,9 +21,8 @@ object Foldable1 {
       js.Any
     ]
   ): Foldable1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("reduce")(reduce)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], reduce = reduce)
+  
     __obj.asInstanceOf[Foldable1[F]]
   }
 }

@@ -22,9 +22,8 @@ trait SystemDependentXWindow extends js.Object {
 object SystemDependentXWindow {
   @scala.inline
   def apply(DisplayPointer: scala.Double, WindowHandle: scala.Double): SystemDependentXWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DisplayPointer")(DisplayPointer)
-    __obj.updateDynamic("WindowHandle")(WindowHandle)
+    val __obj = js.Dynamic.literal(DisplayPointer = DisplayPointer, WindowHandle = WindowHandle)
+  
     __obj.asInstanceOf[SystemDependentXWindow]
   }
 }

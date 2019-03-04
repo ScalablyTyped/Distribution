@@ -71,8 +71,8 @@ object RemoteMethodArgument {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     root: js.UndefOr[scala.Boolean] = js.undefined
   ): RemoteMethodArgument = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("arg")(arg)
+    val __obj = js.Dynamic.literal(arg = arg)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (http != null) __obj.updateDynamic("http")(http)

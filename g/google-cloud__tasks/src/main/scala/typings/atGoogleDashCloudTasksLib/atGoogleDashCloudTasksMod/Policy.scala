@@ -14,10 +14,8 @@ trait Policy extends js.Object {
 object Policy {
   @scala.inline
   def apply(bindings: js.Array[Binding], etag: java.lang.String, version: scala.Double): Policy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindings")(bindings)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(bindings = bindings, etag = etag, version = version)
+  
     __obj.asInstanceOf[Policy]
   }
 }

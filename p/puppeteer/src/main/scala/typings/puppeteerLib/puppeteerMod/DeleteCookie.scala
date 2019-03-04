@@ -21,8 +21,7 @@ object DeleteCookie {
     path: java.lang.String = null,
     url: java.lang.String = null
   ): DeleteCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (path != null) __obj.updateDynamic("path")(path)
     if (url != null) __obj.updateDynamic("url")(url)

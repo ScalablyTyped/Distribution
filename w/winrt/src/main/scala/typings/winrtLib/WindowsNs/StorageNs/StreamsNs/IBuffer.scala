@@ -13,9 +13,8 @@ trait IBuffer extends js.Object {
 object IBuffer {
   @scala.inline
   def apply(capacity: scala.Double, length: scala.Double): IBuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(capacity = capacity, length = length)
+  
     __obj.asInstanceOf[IBuffer]
   }
 }

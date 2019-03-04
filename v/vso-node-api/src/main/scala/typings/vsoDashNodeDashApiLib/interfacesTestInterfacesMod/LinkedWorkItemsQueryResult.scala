@@ -24,13 +24,8 @@ object LinkedWorkItemsQueryResult {
     testCaseId: scala.Double,
     workItems: js.Array[WorkItemReference]
   ): LinkedWorkItemsQueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automatedTestName")(automatedTestName)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("pointId")(pointId)
-    __obj.updateDynamic("suiteId")(suiteId)
-    __obj.updateDynamic("testCaseId")(testCaseId)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(automatedTestName = automatedTestName, planId = planId, pointId = pointId, suiteId = suiteId, testCaseId = testCaseId, workItems = workItems)
+  
     __obj.asInstanceOf[LinkedWorkItemsQueryResult]
   }
 }

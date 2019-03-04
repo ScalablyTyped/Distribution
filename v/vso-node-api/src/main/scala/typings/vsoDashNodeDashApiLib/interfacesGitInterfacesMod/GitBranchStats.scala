@@ -37,12 +37,8 @@ object GitBranchStats {
     isBaseVersion: scala.Boolean,
     name: java.lang.String
   ): GitBranchStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aheadCount")(aheadCount)
-    __obj.updateDynamic("behindCount")(behindCount)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isBaseVersion")(isBaseVersion)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(aheadCount = aheadCount, behindCount = behindCount, commit = commit, isBaseVersion = isBaseVersion, name = name)
+  
     __obj.asInstanceOf[GitBranchStats]
   }
 }

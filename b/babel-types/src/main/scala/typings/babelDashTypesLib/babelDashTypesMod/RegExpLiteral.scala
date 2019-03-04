@@ -28,11 +28,8 @@ object RegExpLiteral {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): RegExpLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, pattern = pattern, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

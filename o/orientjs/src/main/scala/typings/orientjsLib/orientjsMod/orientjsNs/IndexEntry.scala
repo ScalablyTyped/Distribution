@@ -13,9 +13,8 @@ trait IndexEntry extends js.Object {
 object IndexEntry {
   @scala.inline
   def apply(key: java.lang.String, value: java.lang.String | RID): IndexEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IndexEntry]
   }
 }

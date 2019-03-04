@@ -28,15 +28,8 @@ object Anon_AuthenticationRequestExtraParams {
     userPoolClientId: java.lang.String,
     userPoolDomain: java.lang.String
   ): Anon_AuthenticationRequestExtraParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams)
-    __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("sessionCookieName")(sessionCookieName)
-    __obj.updateDynamic("sessionTimeout")(sessionTimeout)
-    __obj.updateDynamic("userPoolArn")(userPoolArn)
-    __obj.updateDynamic("userPoolClientId")(userPoolClientId)
-    __obj.updateDynamic("userPoolDomain")(userPoolDomain)
+    val __obj = js.Dynamic.literal(authenticationRequestExtraParams = authenticationRequestExtraParams, onUnauthenticatedRequest = onUnauthenticatedRequest, scope = scope, sessionCookieName = sessionCookieName, sessionTimeout = sessionTimeout, userPoolArn = userPoolArn, userPoolClientId = userPoolClientId, userPoolDomain = userPoolDomain)
+  
     __obj.asInstanceOf[Anon_AuthenticationRequestExtraParams]
   }
 }

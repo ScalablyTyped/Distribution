@@ -76,8 +76,7 @@ object Anon_0 {
     start: scala.Int | scala.Double = null,
     widget_referrer: java.lang.String = null
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("playlist")(playlist)
+    val __obj = js.Dynamic.literal(playlist = playlist)
     if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
     if (cc_lang_pref != null) __obj.updateDynamic("cc_lang_pref")(cc_lang_pref)
     if (cc_load_policy != null) __obj.updateDynamic("cc_load_policy")(cc_load_policy)

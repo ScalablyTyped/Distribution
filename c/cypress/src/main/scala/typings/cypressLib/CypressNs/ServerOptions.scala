@@ -40,19 +40,8 @@ object ServerOptions {
     urlMatchingOptions: js.Object,
     whitelist: js.Function1[stdLib.Request, scala.Unit]
   ): ServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("force404")(force404)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("onAbort")(onAbort)
-    __obj.updateDynamic("onRequest")(onRequest)
-    __obj.updateDynamic("onResponse")(onResponse)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("urlMatchingOptions")(urlMatchingOptions)
-    __obj.updateDynamic("whitelist")(whitelist)
+    val __obj = js.Dynamic.literal(delay = delay, enable = enable, force404 = force404, headers = headers, method = method, onAbort = onAbort, onRequest = onRequest, onResponse = onResponse, response = response, status = status, urlMatchingOptions = urlMatchingOptions, whitelist = whitelist)
+  
     __obj.asInstanceOf[ServerOptions]
   }
 }

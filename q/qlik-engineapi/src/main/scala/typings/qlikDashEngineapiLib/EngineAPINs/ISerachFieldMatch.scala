@@ -38,11 +38,8 @@ object ISerachFieldMatch {
     qTerms: js.Array[scala.Double],
     qValues: js.Array[scala.Double]
   ): ISerachFieldMatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qField")(qField)
-    __obj.updateDynamic("qNoOfMatches")(qNoOfMatches)
-    __obj.updateDynamic("qTerms")(qTerms)
-    __obj.updateDynamic("qValues")(qValues)
+    val __obj = js.Dynamic.literal(qField = qField, qNoOfMatches = qNoOfMatches, qTerms = qTerms, qValues = qValues)
+  
     __obj.asInstanceOf[ISerachFieldMatch]
   }
 }

@@ -26,11 +26,7 @@ object Anon_DistanceScales {
     distanceScales: viewportDashMercatorDashProjectLib.viewportDashMercatorDashProjectMod.DistanceScales = null,
     meterOffset: scala.Int | scala.Double = null
   ): Anon_DistanceScales = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, scale = scale, zoom = zoom)
     if (distanceScales != null) __obj.updateDynamic("distanceScales")(distanceScales)
     if (meterOffset != null) __obj.updateDynamic("meterOffset")(meterOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DistanceScales]

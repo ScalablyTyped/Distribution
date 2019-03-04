@@ -12,8 +12,8 @@ trait RegexRule extends js.Object {
 object RegexRule {
   @scala.inline
   def apply(regex: stdLib.RegExp): RegexRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(regex = regex)
+  
     __obj.asInstanceOf[RegexRule]
   }
 }

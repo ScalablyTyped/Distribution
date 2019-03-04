@@ -51,8 +51,7 @@ object ValueSetCompose {
     lockedDate: date = null,
     modifierExtension: js.Array[Extension] = null
   ): ValueSetCompose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(include = include)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_inactive != null) __obj.updateDynamic("_inactive")(_inactive)

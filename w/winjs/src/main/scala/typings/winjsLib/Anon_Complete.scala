@@ -19,9 +19,8 @@ trait Anon_Complete extends js.Object {
 object Anon_Complete {
   @scala.inline
   def apply(complete: java.lang.String, loading: java.lang.String): Anon_Complete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("loading")(loading)
+    val __obj = js.Dynamic.literal(complete = complete, loading = loading)
+  
     __obj.asInstanceOf[Anon_Complete]
   }
 }

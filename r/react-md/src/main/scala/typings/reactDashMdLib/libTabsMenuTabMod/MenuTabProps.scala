@@ -87,12 +87,7 @@ object MenuTabProps {
     tabClassName: java.lang.String = null,
     tabStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): MenuTabProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeTabIndex")(activeTabIndex)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    __obj.updateDynamic("overflowAtIndex")(overflowAtIndex)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex, id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], overflowAtIndex = overflowAtIndex, tabs = tabs)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

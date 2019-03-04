@@ -12,8 +12,8 @@ trait PhononOnCloseObject extends js.Object {
 object PhononOnCloseObject {
   @scala.inline
   def apply(close: js.Function0[scala.Unit]): PhononOnCloseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
+    val __obj = js.Dynamic.literal(close = close)
+  
     __obj.asInstanceOf[PhononOnCloseObject]
   }
 }

@@ -20,8 +20,8 @@ object CollectionObserver {
       Disposable
     ]
   ): CollectionObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(subscribe = subscribe)
+  
     __obj.asInstanceOf[CollectionObserver]
   }
 }

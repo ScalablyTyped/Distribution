@@ -51,15 +51,8 @@ object Report {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     title: java.lang.String
   ): Report = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("hierarchy")(hierarchy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(constructor = constructor, description = description, hasOwnProperty = hasOwnProperty, hierarchy = hierarchy, id = id, name = name, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
     __obj.asInstanceOf[Report]
   }
 }

@@ -25,8 +25,7 @@ object OpenUrlConfig {
     title: java.lang.String = null,
     width: scala.Int | scala.Double = null
   ): OpenUrlConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(darkenBackground)) __obj.updateDynamic("darkenBackground")(darkenBackground)
     if (!js.isUndefined(exclusiveView)) __obj.updateDynamic("exclusiveView")(exclusiveView)
     if (!js.isUndefined(fullSize)) __obj.updateDynamic("fullSize")(fullSize)

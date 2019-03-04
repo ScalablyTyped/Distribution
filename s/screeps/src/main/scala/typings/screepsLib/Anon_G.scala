@@ -24,13 +24,8 @@ object Anon_G {
     U: screepsLib.screepsLibStrings.UH,
     Z: screepsLib.screepsLibStrings.ZH
   ): Anon_G = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("K")(K)
-    __obj.updateDynamic("L")(L)
-    __obj.updateDynamic("O")(O)
-    __obj.updateDynamic("U")(U)
-    __obj.updateDynamic("Z")(Z)
+    val __obj = js.Dynamic.literal(G = G, K = K, L = L, O = O, U = U, Z = Z)
+  
     __obj.asInstanceOf[Anon_G]
   }
 }

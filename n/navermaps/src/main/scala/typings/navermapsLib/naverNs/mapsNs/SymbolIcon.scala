@@ -30,8 +30,7 @@ object SymbolIcon {
     strokeWeight: scala.Int | scala.Double = null,
     style: SymbolStyle = null
   ): SymbolIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

@@ -112,7 +112,8 @@ object HealthCheckArgs {
     searchString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): HealthCheckArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (childHealthThreshold != null) __obj.updateDynamic("childHealthThreshold")(childHealthThreshold.asInstanceOf[js.Any])
     if (childHealthchecks != null) __obj.updateDynamic("childHealthchecks")(childHealthchecks.asInstanceOf[js.Any])
     if (cloudwatchAlarmName != null) __obj.updateDynamic("cloudwatchAlarmName")(cloudwatchAlarmName.asInstanceOf[js.Any])

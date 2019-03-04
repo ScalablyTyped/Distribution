@@ -22,10 +22,8 @@ object IRequestCallbackOptions {
     maxCollectionSizeInMB: java.lang.String,
     notModified: scala.Boolean
   ): IRequestCallbackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentCollectionSizeInMB")(currentCollectionSizeInMB)
-    __obj.updateDynamic("maxCollectionSizeInMB")(maxCollectionSizeInMB)
-    __obj.updateDynamic("notModified")(notModified)
+    val __obj = js.Dynamic.literal(currentCollectionSizeInMB = currentCollectionSizeInMB, maxCollectionSizeInMB = maxCollectionSizeInMB, notModified = notModified)
+  
     __obj.asInstanceOf[IRequestCallbackOptions]
   }
 }

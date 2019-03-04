@@ -22,8 +22,7 @@ object SavefileParams {
     filePath: java.lang.String = null,
     success: js.Function1[/* res */ wegameDashApiLib.Anon_SavedFilePath, scala.Unit] = null
   ): SavefileParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tempFilePath")(tempFilePath)
+    val __obj = js.Dynamic.literal(tempFilePath = tempFilePath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (filePath != null) __obj.updateDynamic("filePath")(filePath)

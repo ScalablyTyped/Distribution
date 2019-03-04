@@ -12,8 +12,8 @@ trait ISortInfo extends js.Object {
 object ISortInfo {
   @scala.inline
   def apply(fields: js.Array[java.lang.String]): ISortInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(fields = fields)
+  
     __obj.asInstanceOf[ISortInfo]
   }
 }

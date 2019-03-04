@@ -22,12 +22,8 @@ object Geometry {
     name: java.lang.String,
     schema: Schema[_]
   ): Geometry[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], geometry = geometry, init = init, name = name, schema = schema.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Geometry[T]]
   }
 }

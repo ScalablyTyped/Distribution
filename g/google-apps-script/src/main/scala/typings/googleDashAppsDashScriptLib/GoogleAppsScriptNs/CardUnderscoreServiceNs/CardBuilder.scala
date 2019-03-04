@@ -22,12 +22,8 @@ object CardBuilder {
     setHeader: js.Function1[CardHeader, CardBuilder],
     setName: js.Function1[java.lang.String, CardBuilder]
   ): CardBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCardAction")(addCardAction)
-    __obj.updateDynamic("addSection")(addSection)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setHeader")(setHeader)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addCardAction = addCardAction, addSection = addSection, build = build, setHeader = setHeader, setName = setName)
+  
     __obj.asInstanceOf[CardBuilder]
   }
 }

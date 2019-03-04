@@ -20,11 +20,8 @@ object CollectionCellRendererParams {
     key: scala.Double,
     style: reactLib.reactMod.ReactNs.CSSProperties
   ): CollectionCellRendererParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isScrolling")(isScrolling)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(index = index, isScrolling = isScrolling, key = key, style = style)
+  
     __obj.asInstanceOf[CollectionCellRendererParams]
   }
 }

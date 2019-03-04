@@ -16,8 +16,8 @@ object REQUIRED_CHILDREN {
     children: js.Array[RelayConcreteNode],
     `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.REQUIRED_CHILDREN
   ): REQUIRED_CHILDREN = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[REQUIRED_CHILDREN]
   }
 }

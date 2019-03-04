@@ -26,14 +26,8 @@ object Anon_Day {
     week: plottableLib.plottableLibStrings.week,
     year: plottableLib.plottableLibStrings.year
   ): Anon_Day = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("hour")(hour)
-    __obj.updateDynamic("minute")(minute)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("second")(second)
-    __obj.updateDynamic("week")(week)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(day = day, hour = hour, minute = minute, month = month, second = second, week = week, year = year)
+  
     __obj.asInstanceOf[Anon_Day]
   }
 }

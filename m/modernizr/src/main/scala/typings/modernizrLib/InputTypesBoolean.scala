@@ -38,19 +38,8 @@ object InputTypesBoolean {
     url: scala.Boolean,
     week: scala.Boolean
   ): InputTypesBoolean = {
-    val __obj = js.Dynamic.literal(`datetime-local` = `datetime-local`)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("tel")(tel)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("week")(week)
+    val __obj = js.Dynamic.literal(color = color, date = date, datetime = datetime, email = email, month = month, number = number, range = range, search = search, tel = tel, time = time, url = url, week = week)
+    __obj.updateDynamic("datetime-local")(`datetime-local`)
     __obj.asInstanceOf[InputTypesBoolean]
   }
 }

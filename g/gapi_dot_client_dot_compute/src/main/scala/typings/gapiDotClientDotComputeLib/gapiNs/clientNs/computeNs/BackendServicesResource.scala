@@ -70,15 +70,8 @@ object BackendServicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): BackendServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getHealth")(getHealth)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, getHealth = getHealth, insert = insert, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[BackendServicesResource]
   }
 }

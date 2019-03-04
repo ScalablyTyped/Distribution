@@ -20,9 +20,7 @@ object Anon_FirstTangent {
     firstTangent: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null,
     lastTangent: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = null
   ): Anon_FirstTangent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("times")(times)
+    val __obj = js.Dynamic.literal(points = points, times = times)
     if (firstTangent != null) __obj.updateDynamic("firstTangent")(firstTangent)
     if (lastTangent != null) __obj.updateDynamic("lastTangent")(lastTangent)
     __obj.asInstanceOf[Anon_FirstTangent]

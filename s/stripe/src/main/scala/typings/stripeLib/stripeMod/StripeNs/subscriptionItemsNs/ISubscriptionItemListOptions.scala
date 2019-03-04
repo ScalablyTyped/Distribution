@@ -24,8 +24,7 @@ object ISubscriptionItemListOptions {
     limit: scala.Int | scala.Double = null,
     starting_after: java.lang.String = null
   ): ISubscriptionItemListOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(subscription = subscription)
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
     if (expand != null) __obj.updateDynamic("expand")(expand)

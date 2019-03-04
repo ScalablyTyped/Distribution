@@ -20,13 +20,8 @@ object Envelope3DBounds {
     minY: scala.Double,
     minZ: scala.Double
   ): Envelope3DBounds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxX")(maxX)
-    __obj.updateDynamic("maxY")(maxY)
-    __obj.updateDynamic("maxZ")(maxZ)
-    __obj.updateDynamic("minX")(minX)
-    __obj.updateDynamic("minY")(minY)
-    __obj.updateDynamic("minZ")(minZ)
+    val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, maxZ = maxZ, minX = minX, minY = minY, minZ = minZ)
+  
     __obj.asInstanceOf[Envelope3DBounds]
   }
 }

@@ -24,14 +24,8 @@ object ReleaseTasksUpdatedEvent {
     releaseStepId: scala.Double,
     tasks: js.Array[ReleaseTask]
   ): ReleaseTasksUpdatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environmentId")(environmentId)
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("releaseDeployPhaseId")(releaseDeployPhaseId)
-    __obj.updateDynamic("releaseId")(releaseId)
-    __obj.updateDynamic("releaseStepId")(releaseStepId)
-    __obj.updateDynamic("tasks")(tasks)
+    val __obj = js.Dynamic.literal(environmentId = environmentId, job = job, projectId = projectId, releaseDeployPhaseId = releaseDeployPhaseId, releaseId = releaseId, releaseStepId = releaseStepId, tasks = tasks)
+  
     __obj.asInstanceOf[ReleaseTasksUpdatedEvent]
   }
 }

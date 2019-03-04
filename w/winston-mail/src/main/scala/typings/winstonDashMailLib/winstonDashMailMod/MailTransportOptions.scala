@@ -50,8 +50,7 @@ object MailTransportOptions {
     unique: js.UndefOr[scala.Boolean] = js.undefined,
     username: java.lang.String = null
   ): MailTransportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(to = to)
     if (authentication != null) __obj.updateDynamic("authentication")(authentication)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)

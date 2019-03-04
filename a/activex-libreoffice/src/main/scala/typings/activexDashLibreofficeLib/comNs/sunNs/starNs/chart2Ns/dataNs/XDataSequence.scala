@@ -64,16 +64,8 @@ object XDataSequence {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("SourceRangeRepresentation")(SourceRangeRepresentation)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("generateLabel")(generateLabel)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getNumberFormatKeyByIndex")(getNumberFormatKeyByIndex)
-    __obj.updateDynamic("getSourceRangeRepresentation")(getSourceRangeRepresentation)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Data = Data, SourceRangeRepresentation = SourceRangeRepresentation, acquire = acquire, generateLabel = generateLabel, getData = getData, getNumberFormatKeyByIndex = getNumberFormatKeyByIndex, getSourceRangeRepresentation = getSourceRangeRepresentation, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataSequence]
   }
 }

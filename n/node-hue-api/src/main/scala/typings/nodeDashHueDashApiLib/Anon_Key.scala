@@ -16,8 +16,7 @@ object Anon_Key {
     lastupdated: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastupdated")(lastupdated)
+    val __obj = js.Dynamic.literal(lastupdated = lastupdated)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

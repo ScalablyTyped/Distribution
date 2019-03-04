@@ -39,14 +39,8 @@ object DeliveryViewData {
     startDate: stdLib.Date,
     teams: js.Array[TimelineTeamData]
   ): DeliveryViewData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childIdToParentIdMap")(childIdToParentIdMap)
-    __obj.updateDynamic("criteriaStatus")(criteriaStatus)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("teams")(teams)
+    val __obj = js.Dynamic.literal(childIdToParentIdMap = childIdToParentIdMap, criteriaStatus = criteriaStatus, endDate = endDate, id = id, revision = revision, startDate = startDate, teams = teams)
+  
     __obj.asInstanceOf[DeliveryViewData]
   }
 }

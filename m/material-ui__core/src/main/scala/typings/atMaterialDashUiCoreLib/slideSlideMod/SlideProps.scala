@@ -21,8 +21,7 @@ object SlideProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null
   ): SlideProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter)
     if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)

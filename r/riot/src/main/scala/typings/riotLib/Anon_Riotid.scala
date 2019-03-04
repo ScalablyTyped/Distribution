@@ -13,9 +13,8 @@ trait Anon_Riotid extends js.Object {
 object Anon_Riotid {
   @scala.inline
   def apply(_riot_id: scala.Double, tagName: java.lang.String): Anon_Riotid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_riot_id")(_riot_id)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(_riot_id = _riot_id, tagName = tagName)
+  
     __obj.asInstanceOf[Anon_Riotid]
   }
 }

@@ -41,25 +41,8 @@ object DDELink {
       scala.Unit
     ]
   ): DDELink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Application")(Application)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Results")(Results)
-    __obj.updateDynamic("Topic")(Topic)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("getApplication")(getApplication)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getResults")(getResults)
-    __obj.updateDynamic("getTopic")(getTopic)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setResults")(setResults)
+    val __obj = js.Dynamic.literal(Application = Application, Item = Item, Name = Name, Results = Results, Topic = Topic, acquire = acquire, addRefreshListener = addRefreshListener, getApplication = getApplication, getItem = getItem, getName = getName, getResults = getResults, getTopic = getTopic, queryInterface = queryInterface, refresh = refresh, release = release, removeRefreshListener = removeRefreshListener, setName = setName, setResults = setResults)
+  
     __obj.asInstanceOf[DDELink]
   }
 }

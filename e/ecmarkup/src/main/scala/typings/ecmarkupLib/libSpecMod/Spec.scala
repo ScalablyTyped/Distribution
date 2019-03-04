@@ -26,14 +26,8 @@ object Spec {
     spec: Spec,
     toHTML: js.Function0[java.lang.String]
   ): Spec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exportBiblio")(exportBiblio)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("opts")(opts)
-    __obj.updateDynamic("rootDir")(rootDir)
-    __obj.updateDynamic("rootPath")(rootPath)
-    __obj.updateDynamic("spec")(spec)
-    __obj.updateDynamic("toHTML")(toHTML)
+    val __obj = js.Dynamic.literal(exportBiblio = exportBiblio, namespace = namespace, opts = opts, rootDir = rootDir, rootPath = rootPath, spec = spec, toHTML = toHTML)
+  
     __obj.asInstanceOf[Spec]
   }
 }

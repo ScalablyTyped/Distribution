@@ -55,21 +55,8 @@ object XFilePicker2 {
     setMultiSelectionMode: js.Function1[scala.Boolean, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XFilePicker2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DisplayDirectory")(DisplayDirectory)
-    __obj.updateDynamic("Files")(Files)
-    __obj.updateDynamic("SelectedFiles")(SelectedFiles)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getDisplayDirectory")(getDisplayDirectory)
-    __obj.updateDynamic("getFiles")(getFiles)
-    __obj.updateDynamic("getSelectedFiles")(getSelectedFiles)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDefaultName")(setDefaultName)
-    __obj.updateDynamic("setDisplayDirectory")(setDisplayDirectory)
-    __obj.updateDynamic("setMultiSelectionMode")(setMultiSelectionMode)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory, Files = Files, SelectedFiles = SelectedFiles, acquire = acquire, execute = execute, getDisplayDirectory = getDisplayDirectory, getFiles = getFiles, getSelectedFiles = getSelectedFiles, queryInterface = queryInterface, release = release, setDefaultName = setDefaultName, setDisplayDirectory = setDisplayDirectory, setMultiSelectionMode = setMultiSelectionMode, setTitle = setTitle)
+  
     __obj.asInstanceOf[XFilePicker2]
   }
 }

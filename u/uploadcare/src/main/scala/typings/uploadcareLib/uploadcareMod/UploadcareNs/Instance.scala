@@ -13,9 +13,8 @@ trait Instance extends js.Object {
 object Instance {
   @scala.inline
   def apply(file: uploadcareLib.Anon_Callback, files: uploadcareLib.Anon_CallbackErr): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(file = file, files = files)
+  
     __obj.asInstanceOf[Instance]
   }
 }

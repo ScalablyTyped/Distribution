@@ -16,9 +16,8 @@ object SwitchProps {
     location: historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] with rrcLib.Anon_Pathname,
     routes: js.Array[RouteConfiguration]
   ): SwitchProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(location = location, routes = routes)
+  
     __obj.asInstanceOf[SwitchProps]
   }
 }

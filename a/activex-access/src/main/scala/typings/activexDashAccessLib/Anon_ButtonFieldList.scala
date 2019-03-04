@@ -22,12 +22,8 @@ object Anon_ButtonFieldList {
     X: activexDashStdoleLib.stdoleNs.OLE_XPOS_PIXELS,
     Y: activexDashStdoleLib.stdoleNs.OLE_YPOS_PIXELS
   ): Anon_ButtonFieldList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Button")(Button)
-    __obj.updateDynamic("FieldList")(FieldList)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Button = Button, FieldList = FieldList, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[Anon_ButtonFieldList]
   }
 }

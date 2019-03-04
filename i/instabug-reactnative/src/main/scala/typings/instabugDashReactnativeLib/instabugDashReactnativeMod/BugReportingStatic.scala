@@ -18,10 +18,8 @@ object BugReportingStatic {
     setShakingThresholdForiPad: js.Function1[scala.Double, scala.Unit],
     setShakingThresholdForiPhone: js.Function1[scala.Double, scala.Unit]
   ): BugReportingStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setShakingThresholdForAndroid")(setShakingThresholdForAndroid)
-    __obj.updateDynamic("setShakingThresholdForiPad")(setShakingThresholdForiPad)
-    __obj.updateDynamic("setShakingThresholdForiPhone")(setShakingThresholdForiPhone)
+    val __obj = js.Dynamic.literal(setShakingThresholdForAndroid = setShakingThresholdForAndroid, setShakingThresholdForiPad = setShakingThresholdForiPad, setShakingThresholdForiPhone = setShakingThresholdForiPhone)
+  
     __obj.asInstanceOf[BugReportingStatic]
   }
 }

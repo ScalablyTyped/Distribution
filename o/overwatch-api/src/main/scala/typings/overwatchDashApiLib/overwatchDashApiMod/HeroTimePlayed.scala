@@ -12,10 +12,8 @@ trait HeroTimePlayed extends TopHeroStats {
 object HeroTimePlayed {
   @scala.inline
   def apply(hero: OverwatchHero, img: java.lang.String, played: java.lang.String): HeroTimePlayed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hero")(hero)
-    __obj.updateDynamic("img")(img)
-    __obj.updateDynamic("played")(played)
+    val __obj = js.Dynamic.literal(hero = hero, img = img, played = played)
+  
     __obj.asInstanceOf[HeroTimePlayed]
   }
 }

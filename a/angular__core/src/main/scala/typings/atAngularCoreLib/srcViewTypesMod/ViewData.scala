@@ -38,15 +38,8 @@ object ViewData {
     parentNodeDef: NodeDef = null,
     viewContainerParent: ViewData = null
   ): ViewData = {
-    val __obj = js.Dynamic.literal(`def` = `def`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("initIndex")(initIndex)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("oldValues")(oldValues)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("root")(root)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(component = component, context = context, initIndex = initIndex, nodes = nodes, oldValues = oldValues, renderer = renderer, root = root, state = state)
+    __obj.updateDynamic("def")(`def`)
     if (disposables != null) __obj.updateDynamic("disposables")(disposables)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (parentNodeDef != null) __obj.updateDynamic("parentNodeDef")(parentNodeDef)

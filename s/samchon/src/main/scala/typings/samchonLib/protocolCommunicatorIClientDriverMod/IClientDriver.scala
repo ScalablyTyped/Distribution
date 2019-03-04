@@ -30,13 +30,8 @@ object IClientDriver {
     replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
     sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
   ): IClientDriver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("listen")(listen)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("replyData")(replyData)
-    __obj.updateDynamic("sendData")(sendData)
+    val __obj = js.Dynamic.literal(close = close, isConnected = isConnected, listen = listen, onClose = onClose, replyData = replyData, sendData = sendData)
+  
     __obj.asInstanceOf[IClientDriver]
   }
 }

@@ -17,10 +17,8 @@ trait File extends js.Object {
 object File {
   @scala.inline
   def apply(base: java.lang.String, contents: java.lang.String, path: java.lang.String): File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(base = base, contents = contents, path = path)
+  
     __obj.asInstanceOf[File]
   }
 }

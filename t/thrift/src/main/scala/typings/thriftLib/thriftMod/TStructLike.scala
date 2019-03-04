@@ -13,9 +13,8 @@ trait TStructLike extends js.Object {
 object TStructLike {
   @scala.inline
   def apply(read: js.Function1[TProtocol, scala.Unit], write: js.Function1[TProtocol, scala.Unit]): TStructLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(read = read, write = write)
+  
     __obj.asInstanceOf[TStructLike]
   }
 }

@@ -35,13 +35,8 @@ object ProtocolHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): ProtocolHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryDispatch")(queryDispatch)
-    __obj.updateDynamic("queryDispatches")(queryDispatches)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, initialize = initialize, queryDispatch = queryDispatch, queryDispatches = queryDispatches, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[ProtocolHandler]
   }
 }

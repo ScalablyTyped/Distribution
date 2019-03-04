@@ -32,11 +32,7 @@ object ImageClientOptions {
     region: java.lang.String = null,
     timeout: java.lang.String | scala.Double = null
   ): ImageClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessKeyId")(accessKeyId)
-    __obj.updateDynamic("accessKeySecret")(accessKeySecret)
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("imageHost")(imageHost)
+    val __obj = js.Dynamic.literal(accessKeyId = accessKeyId, accessKeySecret = accessKeySecret, bucket = bucket, imageHost = imageHost)
     if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
     if (region != null) __obj.updateDynamic("region")(region)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

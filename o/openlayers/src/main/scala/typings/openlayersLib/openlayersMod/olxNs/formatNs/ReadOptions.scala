@@ -16,9 +16,8 @@ object ReadOptions {
     dataProjection: openlayersLib.openlayersMod.ProjectionLike,
     featureProjection: openlayersLib.openlayersMod.ProjectionLike
   ): ReadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataProjection = dataProjection.asInstanceOf[js.Any], featureProjection = featureProjection.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReadOptions]
   }
 }

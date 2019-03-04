@@ -36,18 +36,7 @@ object SketchMSDocumentData {
     pages: js.Array[SketchMSPage],
     do_objectID: java.lang.String = null
   ): SketchMSDocumentData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("assets")(assets)
-    __obj.updateDynamic("currentPageIndex")(currentPageIndex)
-    __obj.updateDynamic("enableLayerInteraction")(enableLayerInteraction)
-    __obj.updateDynamic("enableSliceInteraction")(enableSliceInteraction)
-    __obj.updateDynamic("foreignSymbols")(foreignSymbols)
-    __obj.updateDynamic("layerStyles")(layerStyles)
-    __obj.updateDynamic("layerSymbols")(layerSymbols)
-    __obj.updateDynamic("layerTextStyles")(layerTextStyles)
-    __obj.updateDynamic("objectID")(objectID)
-    __obj.updateDynamic("pages")(pages)
+    val __obj = js.Dynamic.literal(_class = _class, assets = assets, currentPageIndex = currentPageIndex, enableLayerInteraction = enableLayerInteraction, enableSliceInteraction = enableSliceInteraction, foreignSymbols = foreignSymbols, layerStyles = layerStyles, layerSymbols = layerSymbols, layerTextStyles = layerTextStyles, objectID = objectID, pages = pages)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSDocumentData]
   }

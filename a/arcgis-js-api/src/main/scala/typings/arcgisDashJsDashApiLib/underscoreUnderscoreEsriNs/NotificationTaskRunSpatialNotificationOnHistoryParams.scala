@@ -58,16 +58,8 @@ object NotificationTaskRunSpatialNotificationOnHistoryParams {
     to: stdLib.Date,
     user: java.lang.String
   ): NotificationTaskRunSpatialNotificationOnHistoryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("logMatches")(logMatches)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, dataWorkspaceId = dataWorkspaceId, from = from, hasOwnProperty = hasOwnProperty, logMatches = logMatches, propertyIsEnumerable = propertyIsEnumerable, send = send, to = to, user = user)
+  
     __obj.asInstanceOf[NotificationTaskRunSpatialNotificationOnHistoryParams]
   }
 }

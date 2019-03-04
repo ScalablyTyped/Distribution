@@ -32,13 +32,8 @@ object TypeAlias {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TypeAlias = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("typeParameters")(typeParameters)
+    val __obj = js.Dynamic.literal(end = end, id = id, loc = loc, right = right, start = start, typeParameters = typeParameters)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

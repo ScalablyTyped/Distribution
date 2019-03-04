@@ -40,8 +40,7 @@ object MotionProps {
     defaultStyle: PlainStyle = null,
     onRest: js.Function0[scala.Unit] = null
   ): MotionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
     if (children != null) __obj.updateDynamic("children")(children)
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (onRest != null) __obj.updateDynamic("onRest")(onRest)

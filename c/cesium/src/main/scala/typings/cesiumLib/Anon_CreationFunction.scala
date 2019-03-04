@@ -20,11 +20,8 @@ object Anon_CreationFunction {
     name: java.lang.String,
     tooltip: java.lang.String
   ): Anon_CreationFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creationFunction")(creationFunction.asInstanceOf[js.Any])
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(creationFunction = creationFunction.asInstanceOf[js.Any], iconUrl = iconUrl, name = name, tooltip = tooltip)
+  
     __obj.asInstanceOf[Anon_CreationFunction]
   }
 }

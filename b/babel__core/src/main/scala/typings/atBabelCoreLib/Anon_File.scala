@@ -26,12 +26,7 @@ object Anon_File {
     sourceRoot: java.lang.String = null,
     sourcesContent: js.Array[java.lang.String] = null
   ): Anon_File = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("mappings")(mappings)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("sources")(sources)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(file = file, mappings = mappings, names = names, sources = sources, version = version)
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
     if (sourcesContent != null) __obj.updateDynamic("sourcesContent")(sourcesContent)
     __obj.asInstanceOf[Anon_File]

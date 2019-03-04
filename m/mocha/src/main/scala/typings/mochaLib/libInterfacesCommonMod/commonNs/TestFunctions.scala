@@ -27,10 +27,8 @@ object TestFunctions {
     retries: js.Function1[scala.Double, scala.Unit],
     skip: js.Function1[java.lang.String, scala.Unit]
   ): TestFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("only")(only)
-    __obj.updateDynamic("retries")(retries)
-    __obj.updateDynamic("skip")(skip)
+    val __obj = js.Dynamic.literal(only = only, retries = retries, skip = skip)
+  
     __obj.asInstanceOf[TestFunctions]
   }
 }

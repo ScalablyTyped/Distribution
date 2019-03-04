@@ -27,8 +27,8 @@ object Anon_Line {
       scala.Unit
     ]
   ): Anon_Line = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(write = write)
+  
     __obj.asInstanceOf[Anon_Line]
   }
 }

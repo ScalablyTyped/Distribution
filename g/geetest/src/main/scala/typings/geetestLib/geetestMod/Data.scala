@@ -22,12 +22,8 @@ object Data {
     new_captcha: java.lang.String,
     success: geetestLib.Success
   ): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("challenge")(challenge)
-    __obj.updateDynamic("geetest_id")(geetest_id)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("new_captcha")(new_captcha)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(challenge = challenge, geetest_id = geetest_id, gt = gt, new_captcha = new_captcha, success = success)
+  
     __obj.asInstanceOf[Data]
   }
 }

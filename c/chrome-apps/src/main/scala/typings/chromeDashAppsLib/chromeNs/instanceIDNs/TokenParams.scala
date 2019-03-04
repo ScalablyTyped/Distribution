@@ -30,9 +30,7 @@ object TokenParams {
     scope: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): TokenParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizedEntity")(authorizedEntity)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(authorizedEntity = authorizedEntity, scope = scope)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[TokenParams]
   }

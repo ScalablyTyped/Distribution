@@ -27,9 +27,7 @@ object EdgeDataDefinition {
     id: java.lang.String = null,
     position: Position = null
   ): EdgeDataDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(source = source, target = target)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (id != null) __obj.updateDynamic("id")(id)
     if (position != null) __obj.updateDynamic("position")(position)

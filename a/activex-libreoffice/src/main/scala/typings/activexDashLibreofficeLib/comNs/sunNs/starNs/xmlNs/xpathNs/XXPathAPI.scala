@@ -133,20 +133,8 @@ object XXPathAPI {
     ],
     unregisterNS: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XXPathAPI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("evalNS")(evalNS)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerExtension")(registerExtension)
-    __obj.updateDynamic("registerExtensionInstance")(registerExtensionInstance)
-    __obj.updateDynamic("registerNS")(registerNS)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("selectNodeList")(selectNodeList)
-    __obj.updateDynamic("selectNodeListNS")(selectNodeListNS)
-    __obj.updateDynamic("selectSingleNode")(selectSingleNode)
-    __obj.updateDynamic("selectSingleNodeNS")(selectSingleNodeNS)
-    __obj.updateDynamic("unregisterNS")(unregisterNS)
+    val __obj = js.Dynamic.literal(acquire = acquire, eval = eval, evalNS = evalNS, queryInterface = queryInterface, registerExtension = registerExtension, registerExtensionInstance = registerExtensionInstance, registerNS = registerNS, release = release, selectNodeList = selectNodeList, selectNodeListNS = selectNodeListNS, selectSingleNode = selectSingleNode, selectSingleNodeNS = selectSingleNodeNS, unregisterNS = unregisterNS)
+  
     __obj.asInstanceOf[XXPathAPI]
   }
 }

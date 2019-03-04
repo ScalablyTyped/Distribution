@@ -22,11 +22,7 @@ object CorrelationPropertyBinding {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): CorrelationPropertyBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("correlationPropertyRef")(correlationPropertyRef)
-    __obj.updateDynamic("dataPath")(dataPath)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal($type = $type, correlationPropertyRef = correlationPropertyRef, dataPath = dataPath, id = id)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

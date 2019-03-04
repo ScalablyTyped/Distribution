@@ -22,12 +22,8 @@ object JQueryFileUploadXhr {
     result: js.Any,
     textStatus: java.lang.String
   ): JQueryFileUploadXhr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorThrown")(errorThrown)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("jqXHR")(jqXHR)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("textStatus")(textStatus)
+    val __obj = js.Dynamic.literal(errorThrown = errorThrown, headers = headers, jqXHR = jqXHR, result = result, textStatus = textStatus)
+  
     __obj.asInstanceOf[JQueryFileUploadXhr]
   }
 }

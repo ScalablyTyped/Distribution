@@ -18,8 +18,7 @@ object Anon_HostPort {
     host: zipkinLib.zipkinMod.zipkinNs.InetAddress = null,
     port: scala.Int | scala.Double = null
   ): Anon_HostPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(serviceName = serviceName)
     if (host != null) __obj.updateDynamic("host")(host)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HostPort]

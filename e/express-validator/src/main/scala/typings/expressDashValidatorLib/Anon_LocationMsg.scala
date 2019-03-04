@@ -20,11 +20,8 @@ object Anon_LocationMsg {
     param: java.lang.String,
     value: js.Any
   ): Anon_LocationMsg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("param")(param)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(location = location, msg = msg, param = param, value = value)
+  
     __obj.asInstanceOf[Anon_LocationMsg]
   }
 }

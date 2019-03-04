@@ -31,14 +31,8 @@ object IToastService {
     showShortCenter: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]],
     showShortTop: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IPromise[_]]
   ): IToastService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("showLongBottom")(showLongBottom)
-    __obj.updateDynamic("showLongCenter")(showLongCenter)
-    __obj.updateDynamic("showLongTop")(showLongTop)
-    __obj.updateDynamic("showShortBottom")(showShortBottom)
-    __obj.updateDynamic("showShortCenter")(showShortCenter)
-    __obj.updateDynamic("showShortTop")(showShortTop)
+    val __obj = js.Dynamic.literal(show = show, showLongBottom = showLongBottom, showLongCenter = showLongCenter, showLongTop = showLongTop, showShortBottom = showShortBottom, showShortCenter = showShortCenter, showShortTop = showShortTop)
+  
     __obj.asInstanceOf[IToastService]
   }
 }

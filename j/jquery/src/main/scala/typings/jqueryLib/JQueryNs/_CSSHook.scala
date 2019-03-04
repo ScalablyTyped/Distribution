@@ -16,9 +16,8 @@ object _CSSHook {
     get: js.Function3[TElement, js.Any, js.Any, js.Any],
     set: js.Function2[TElement, js.Any, scala.Unit]
   ): _CSSHook[TElement] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, set = set)
+  
     __obj.asInstanceOf[_CSSHook[TElement]]
   }
 }

@@ -24,9 +24,8 @@ trait INxSelectionInfo extends js.Object {
 object INxSelectionInfo {
   @scala.inline
   def apply(qInSelections: scala.Boolean, qMadeSelections: scala.Boolean): INxSelectionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInSelections")(qInSelections)
-    __obj.updateDynamic("qMadeSelections")(qMadeSelections)
+    val __obj = js.Dynamic.literal(qInSelections = qInSelections, qMadeSelections = qMadeSelections)
+  
     __obj.asInstanceOf[INxSelectionInfo]
   }
 }

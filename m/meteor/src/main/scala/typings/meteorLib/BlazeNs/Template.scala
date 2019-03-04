@@ -43,22 +43,8 @@ object Template {
     rendered: js.Function,
     viewName: java.lang.String
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$")($)
-    __obj.updateDynamic("constructView")(constructView)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("destroyed")(destroyed)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findAll")(findAll)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("helpers")(helpers)
-    __obj.updateDynamic("onCreated")(onCreated)
-    __obj.updateDynamic("onDestroyed")(onDestroyed)
-    __obj.updateDynamic("onRendered")(onRendered)
-    __obj.updateDynamic("renderFunction")(renderFunction)
-    __obj.updateDynamic("rendered")(rendered)
-    __obj.updateDynamic("viewName")(viewName)
+    val __obj = js.Dynamic.literal($ = $, constructView = constructView, created = created, destroyed = destroyed, events = events, find = find, findAll = findAll, head = head, helpers = helpers, onCreated = onCreated, onDestroyed = onDestroyed, onRendered = onRendered, renderFunction = renderFunction, rendered = rendered, viewName = viewName)
+  
     __obj.asInstanceOf[Template]
   }
 }

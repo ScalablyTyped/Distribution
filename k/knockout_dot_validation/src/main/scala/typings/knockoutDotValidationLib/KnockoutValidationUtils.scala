@@ -38,20 +38,8 @@ object KnockoutValidationUtils {
     setDomData: js.Function2[stdLib.Element, KnockoutValidationConfiguration, scala.Unit],
     values: js.Function1[js.Any, js.Array[_]]
   ): KnockoutValidationUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextFor")(contextFor)
-    __obj.updateDynamic("getConfigOptions")(getConfigOptions)
-    __obj.updateDynamic("getDomData")(getDomData)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasAttribute")(hasAttribute)
-    __obj.updateDynamic("insertAfter")(insertAfter)
-    __obj.updateDynamic("isArray")(isArray)
-    __obj.updateDynamic("isEmptyVal")(isEmptyVal)
-    __obj.updateDynamic("isObject")(isObject)
-    __obj.updateDynamic("isValidatable")(isValidatable)
-    __obj.updateDynamic("newId")(newId)
-    __obj.updateDynamic("setDomData")(setDomData)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(contextFor = contextFor, getConfigOptions = getConfigOptions, getDomData = getDomData, getValue = getValue, hasAttribute = hasAttribute, insertAfter = insertAfter, isArray = isArray, isEmptyVal = isEmptyVal, isObject = isObject, isValidatable = isValidatable, newId = newId, setDomData = setDomData, values = values)
+  
     __obj.asInstanceOf[KnockoutValidationUtils]
   }
 }

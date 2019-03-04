@@ -86,8 +86,7 @@ object Configuration {
     requestHeaders: js.Object = null,
     stickyReconnect: js.UndefOr[scala.Boolean] = js.undefined
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(appendMessageTypeToURL)) __obj.updateDynamic("appendMessageTypeToURL")(appendMessageTypeToURL)
     if (!js.isUndefined(autoBatch)) __obj.updateDynamic("autoBatch")(autoBatch)
     if (backoffIncrement != null) __obj.updateDynamic("backoffIncrement")(backoffIncrement.asInstanceOf[js.Any])

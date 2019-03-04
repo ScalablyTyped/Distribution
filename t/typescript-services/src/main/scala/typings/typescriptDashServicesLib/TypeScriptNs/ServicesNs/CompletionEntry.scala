@@ -14,10 +14,8 @@ trait CompletionEntry extends js.Object {
 object CompletionEntry {
   @scala.inline
   def apply(kind: java.lang.String, kindModifiers: java.lang.String, name: java.lang.String): CompletionEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindModifiers")(kindModifiers)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, kindModifiers = kindModifiers, name = name)
+  
     __obj.asInstanceOf[CompletionEntry]
   }
 }

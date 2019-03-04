@@ -12,8 +12,8 @@ trait IPlaybackRateChangeRequestedEventArgs extends js.Object {
 object IPlaybackRateChangeRequestedEventArgs {
   @scala.inline
   def apply(rate: scala.Double): IPlaybackRateChangeRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rate")(rate)
+    val __obj = js.Dynamic.literal(rate = rate)
+  
     __obj.asInstanceOf[IPlaybackRateChangeRequestedEventArgs]
   }
 }

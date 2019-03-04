@@ -141,41 +141,8 @@ object ASPxClientHtmlEditorChangeElementPropertiesDialog {
     GetWidthValueSpinEdit: js.Function0[ASPxClientSpinEdit],
     GetWidthValueTypeComboBox: js.Function0[ASPxClientComboBox]
   ): ASPxClientHtmlEditorChangeElementPropertiesDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAcceptTextBox")(GetAcceptTextBox)
-    __obj.updateDynamic("GetActionTextBox")(GetActionTextBox)
-    __obj.updateDynamic("GetAltTextBox")(GetAltTextBox)
-    __obj.updateDynamic("GetBorderColorColorEdit")(GetBorderColorColorEdit)
-    __obj.updateDynamic("GetBorderStyleComboBox")(GetBorderStyleComboBox)
-    __obj.updateDynamic("GetBorderWidthSpinEdit")(GetBorderWidthSpinEdit)
-    __obj.updateDynamic("GetBottomMarginTextBox")(GetBottomMarginTextBox)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetCheckedCheckBox")(GetCheckedCheckBox)
-    __obj.updateDynamic("GetCssClassNameComboBox")(GetCssClassNameComboBox)
-    __obj.updateDynamic("GetDirectionComboBox")(GetDirectionComboBox)
-    __obj.updateDynamic("GetDisabledCheckBox")(GetDisabledCheckBox)
-    __obj.updateDynamic("GetForTextBox")(GetForTextBox)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHeightValueSpinEdit")(GetHeightValueSpinEdit)
-    __obj.updateDynamic("GetHeightValueTypeComboBox")(GetHeightValueTypeComboBox)
-    __obj.updateDynamic("GetIdTextBox")(GetIdTextBox)
-    __obj.updateDynamic("GetInputTypeComboBox")(GetInputTypeComboBox)
-    __obj.updateDynamic("GetLeftMarginTextBox")(GetLeftMarginTextBox)
-    __obj.updateDynamic("GetMaxLengthTextBox")(GetMaxLengthTextBox)
-    __obj.updateDynamic("GetMethodTextBox")(GetMethodTextBox)
-    __obj.updateDynamic("GetNameTextBox")(GetNameTextBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetReadonlyCheckBox")(GetReadonlyCheckBox)
-    __obj.updateDynamic("GetRightMarginTextBox")(GetRightMarginTextBox)
-    __obj.updateDynamic("GetSizeTextBox")(GetSizeTextBox)
-    __obj.updateDynamic("GetSrcTextBox")(GetSrcTextBox)
-    __obj.updateDynamic("GetStartSpinEdit")(GetStartSpinEdit)
-    __obj.updateDynamic("GetTabIndexTextBox")(GetTabIndexTextBox)
-    __obj.updateDynamic("GetTitleTextBox")(GetTitleTextBox)
-    __obj.updateDynamic("GetTopMarginTextBox")(GetTopMarginTextBox)
-    __obj.updateDynamic("GetValueTextBox")(GetValueTextBox)
-    __obj.updateDynamic("GetWidthValueSpinEdit")(GetWidthValueSpinEdit)
-    __obj.updateDynamic("GetWidthValueTypeComboBox")(GetWidthValueTypeComboBox)
+    val __obj = js.Dynamic.literal(GetAcceptTextBox = GetAcceptTextBox, GetActionTextBox = GetActionTextBox, GetAltTextBox = GetAltTextBox, GetBorderColorColorEdit = GetBorderColorColorEdit, GetBorderStyleComboBox = GetBorderStyleComboBox, GetBorderWidthSpinEdit = GetBorderWidthSpinEdit, GetBottomMarginTextBox = GetBottomMarginTextBox, GetCancelButton = GetCancelButton, GetCheckedCheckBox = GetCheckedCheckBox, GetCssClassNameComboBox = GetCssClassNameComboBox, GetDirectionComboBox = GetDirectionComboBox, GetDisabledCheckBox = GetDisabledCheckBox, GetForTextBox = GetForTextBox, GetFormLayout = GetFormLayout, GetHeightValueSpinEdit = GetHeightValueSpinEdit, GetHeightValueTypeComboBox = GetHeightValueTypeComboBox, GetIdTextBox = GetIdTextBox, GetInputTypeComboBox = GetInputTypeComboBox, GetLeftMarginTextBox = GetLeftMarginTextBox, GetMaxLengthTextBox = GetMaxLengthTextBox, GetMethodTextBox = GetMethodTextBox, GetNameTextBox = GetNameTextBox, GetOkButton = GetOkButton, GetReadonlyCheckBox = GetReadonlyCheckBox, GetRightMarginTextBox = GetRightMarginTextBox, GetSizeTextBox = GetSizeTextBox, GetSrcTextBox = GetSrcTextBox, GetStartSpinEdit = GetStartSpinEdit, GetTabIndexTextBox = GetTabIndexTextBox, GetTitleTextBox = GetTitleTextBox, GetTopMarginTextBox = GetTopMarginTextBox, GetValueTextBox = GetValueTextBox, GetWidthValueSpinEdit = GetWidthValueSpinEdit, GetWidthValueTypeComboBox = GetWidthValueTypeComboBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorChangeElementPropertiesDialog]
   }
 }

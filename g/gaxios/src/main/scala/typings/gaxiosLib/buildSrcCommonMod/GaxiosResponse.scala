@@ -22,12 +22,8 @@ object GaxiosResponse {
     status: scala.Double,
     statusText: java.lang.String
   ): GaxiosResponse[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(config = config, data = data.asInstanceOf[js.Any], headers = headers, status = status, statusText = statusText)
+  
     __obj.asInstanceOf[GaxiosResponse[T]]
   }
 }

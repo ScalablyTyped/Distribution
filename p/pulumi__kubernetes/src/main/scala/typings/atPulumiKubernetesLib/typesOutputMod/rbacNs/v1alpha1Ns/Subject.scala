@@ -42,11 +42,8 @@ object Subject {
     name: java.lang.String,
     namespace: java.lang.String
   ): Subject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name, namespace = namespace)
+  
     __obj.asInstanceOf[Subject]
   }
 }

@@ -57,14 +57,8 @@ object NodeCollectionMetadata {
     minOutdegree: js.Function1[scala.Boolean, scala.Double],
     totalDegree: js.Function1[scala.Boolean, scala.Double]
   ): NodeCollectionMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxDegree")(maxDegree)
-    __obj.updateDynamic("maxIndegree")(maxIndegree)
-    __obj.updateDynamic("maxOutdegree")(maxOutdegree)
-    __obj.updateDynamic("minDegree")(minDegree)
-    __obj.updateDynamic("minIndegree")(minIndegree)
-    __obj.updateDynamic("minOutdegree")(minOutdegree)
-    __obj.updateDynamic("totalDegree")(totalDegree)
+    val __obj = js.Dynamic.literal(maxDegree = maxDegree, maxIndegree = maxIndegree, maxOutdegree = maxOutdegree, minDegree = minDegree, minIndegree = minIndegree, minOutdegree = minOutdegree, totalDegree = totalDegree)
+  
     __obj.asInstanceOf[NodeCollectionMetadata]
   }
 }

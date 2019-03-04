@@ -59,12 +59,8 @@ object XLogFormatter {
     getHead: js.Function0[java.lang.String],
     getTail: js.Function0[java.lang.String]
   ): XLogFormatter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Head")(Head)
-    __obj.updateDynamic("Tail")(Tail)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("getHead")(getHead)
-    __obj.updateDynamic("getTail")(getTail)
+    val __obj = js.Dynamic.literal(Head = Head, Tail = Tail, format = format, getHead = getHead, getTail = getTail)
+  
     __obj.asInstanceOf[XLogFormatter]
   }
 }

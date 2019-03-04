@@ -37,12 +37,7 @@ object SlideVisibleLayers {
       WatchHandle
     ] = null
   ): SlideVisibleLayers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sublayerIds")(sublayerIds)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, id = id, propertyIsEnumerable = propertyIsEnumerable, sublayerIds = sublayerIds)
     if (get != null) __obj.updateDynamic("get")(get)
     if (set != null) __obj.updateDynamic("set")(set)
     if (watch != null) __obj.updateDynamic("watch")(watch)

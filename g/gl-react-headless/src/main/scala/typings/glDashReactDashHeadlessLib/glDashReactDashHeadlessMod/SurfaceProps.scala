@@ -27,9 +27,7 @@ object SurfaceProps {
     visitor: glDashReactLib.glDashReactMod.Visitor = null,
     webglContextAttributes: stdLib.WebGLContextAttributes = null
   ): SurfaceProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
     if (children != null) __obj.updateDynamic("children")(children)
     if (onContextCreate != null) __obj.updateDynamic("onContextCreate")(onContextCreate)
     if (onContextFailure != null) __obj.updateDynamic("onContextFailure")(onContextFailure)

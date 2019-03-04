@@ -29,10 +29,7 @@ object RendererProps {
     onReadyStateChange: OnReadyStateChange = null,
     render: RenderCallback = null
   ): RendererProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Container")(Container)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("queryConfig")(queryConfig)
+    val __obj = js.Dynamic.literal(Container = Container, environment = environment, queryConfig = queryConfig)
     if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch)
     if (onReadyStateChange != null) __obj.updateDynamic("onReadyStateChange")(onReadyStateChange)
     if (render != null) __obj.updateDynamic("render")(render)

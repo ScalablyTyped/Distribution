@@ -29,14 +29,8 @@ object BeforeFindRequest {
     readPreference: ReadPreferenceOption = null,
     user: parseLib.ParseNs.User = null
   ): BeforeFindRequest = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("isGet")(isGet)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("triggerName")(triggerName)
+    val __obj = js.Dynamic.literal(count = count, headers = headers, ip = ip, isGet = isGet, log = log, query = query, triggerName = triggerName)
+    __obj.updateDynamic("object")(`object`)
     if (installationId != null) __obj.updateDynamic("installationId")(installationId)
     if (!js.isUndefined(master)) __obj.updateDynamic("master")(master)
     if (original != null) __obj.updateDynamic("original")(original)

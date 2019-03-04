@@ -32,25 +32,8 @@ object ITitle {
     transparent: scala.Boolean,
     visible: scala.Boolean
   ): ITitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("margins")(margins)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mousemove")(mousemove)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("resize")(resize)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("transparent")(transparent)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, add = add, bounds = bounds, chart = chart, clicked = clicked, draw = draw, expand = expand, format = format, items = items, margins = margins, mousedown = mousedown, mousemove = mousemove, padding = padding, position = position, resize = resize, text = text, transparent = transparent, visible = visible)
+  
     __obj.asInstanceOf[ITitle]
   }
 }

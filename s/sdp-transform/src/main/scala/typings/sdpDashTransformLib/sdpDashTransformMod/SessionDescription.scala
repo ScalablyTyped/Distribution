@@ -59,8 +59,7 @@ object SessionDescription {
     uri: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): SessionDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("media")(media)
+    val __obj = js.Dynamic.literal(media = media)
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth)
     if (connection != null) __obj.updateDynamic("connection")(connection)
     if (control != null) __obj.updateDynamic("control")(control)

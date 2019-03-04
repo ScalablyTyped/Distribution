@@ -42,9 +42,7 @@ object Anon_AltFamily {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFamily = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(family = family, project = project)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

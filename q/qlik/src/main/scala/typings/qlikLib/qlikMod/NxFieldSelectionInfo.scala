@@ -16,9 +16,8 @@ object NxFieldSelectionInfo {
     qFieldSelectionmode: qlikLib.qlikLibStrings.NORMAL | qlikLib.qlikLibStrings.AND | qlikLib.qlikLibStrings.NOT,
     qName: java.lang.String
   ): NxFieldSelectionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFieldSelectionmode")(qFieldSelectionmode.asInstanceOf[js.Any])
-    __obj.updateDynamic("qName")(qName)
+    val __obj = js.Dynamic.literal(qFieldSelectionmode = qFieldSelectionmode.asInstanceOf[js.Any], qName = qName)
+  
     __obj.asInstanceOf[NxFieldSelectionInfo]
   }
 }

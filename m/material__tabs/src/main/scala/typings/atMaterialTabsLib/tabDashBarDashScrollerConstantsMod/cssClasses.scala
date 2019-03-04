@@ -21,11 +21,8 @@ object cssClasses {
     INDICATOR_FORWARD: atMaterialTabsLib.atMaterialTabsLibStrings.`mdc-tab-bar-scroller__indicator--forward`,
     TAB: atMaterialTabsLib.atMaterialTabsLibStrings.`mdc-tab`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INDICATOR_BACK")(INDICATOR_BACK)
-    __obj.updateDynamic("INDICATOR_ENABLED")(INDICATOR_ENABLED)
-    __obj.updateDynamic("INDICATOR_FORWARD")(INDICATOR_FORWARD)
-    __obj.updateDynamic("TAB")(TAB)
+    val __obj = js.Dynamic.literal(INDICATOR_BACK = INDICATOR_BACK, INDICATOR_ENABLED = INDICATOR_ENABLED, INDICATOR_FORWARD = INDICATOR_FORWARD, TAB = TAB)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

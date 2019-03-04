@@ -12,8 +12,8 @@ trait AttributionOptions extends js.Object {
 object AttributionOptions {
   @scala.inline
   def apply(html: java.lang.String): AttributionOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("html")(html)
+    val __obj = js.Dynamic.literal(html = html)
+  
     __obj.asInstanceOf[AttributionOptions]
   }
 }

@@ -20,8 +20,11 @@ object Anon_01 {
     `2`: reactDashAdalLib.reactDashAdalLibStrings.`INFO:`,
     `3`: reactDashAdalLib.reactDashAdalLibStrings.`VERBOSE:`
   ): Anon_01 = {
-    val __obj = js.Dynamic.literal(`0` = `0`, `1` = `1`, `2` = `2`, `3` = `3`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(`0`)
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
     __obj.asInstanceOf[Anon_01]
   }
 }

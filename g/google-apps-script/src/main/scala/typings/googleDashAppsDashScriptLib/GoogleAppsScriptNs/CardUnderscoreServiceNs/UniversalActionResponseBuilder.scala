@@ -18,10 +18,8 @@ object UniversalActionResponseBuilder {
     displayAddOnCards: js.Function1[js.Array[js.Object], UniversalActionResponseBuilder],
     setOpenLink: js.Function1[OpenLink, UniversalActionResponseBuilder]
   ): UniversalActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("displayAddOnCards")(displayAddOnCards)
-    __obj.updateDynamic("setOpenLink")(setOpenLink)
+    val __obj = js.Dynamic.literal(build = build, displayAddOnCards = displayAddOnCards, setOpenLink = setOpenLink)
+  
     __obj.asInstanceOf[UniversalActionResponseBuilder]
   }
 }

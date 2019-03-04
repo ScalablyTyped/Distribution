@@ -19,9 +19,8 @@ trait ITreeState extends js.Object {
 object ITreeState {
   @scala.inline
   def apply(currentRootNode: js.Any, selectedNode: js.Any): ITreeState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentRootNode")(currentRootNode)
-    __obj.updateDynamic("selectedNode")(selectedNode)
+    val __obj = js.Dynamic.literal(currentRootNode = currentRootNode, selectedNode = selectedNode)
+  
     __obj.asInstanceOf[ITreeState]
   }
 }

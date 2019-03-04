@@ -24,8 +24,7 @@ object PaperSize {
     orientation: java.lang.String = null,
     width: java.lang.String = null
   ): PaperSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("border")(border)
+    val __obj = js.Dynamic.literal(border = border)
     if (format != null) __obj.updateDynamic("format")(format)
     if (height != null) __obj.updateDynamic("height")(height)
     if (margin != null) __obj.updateDynamic("margin")(margin)

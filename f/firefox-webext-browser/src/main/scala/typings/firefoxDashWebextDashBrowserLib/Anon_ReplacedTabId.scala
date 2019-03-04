@@ -17,10 +17,8 @@ trait Anon_ReplacedTabId extends js.Object {
 object Anon_ReplacedTabId {
   @scala.inline
   def apply(replacedTabId: scala.Double, tabId: scala.Double, timeStamp: scala.Double): Anon_ReplacedTabId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replacedTabId")(replacedTabId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(replacedTabId = replacedTabId, tabId = tabId, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[Anon_ReplacedTabId]
   }
 }

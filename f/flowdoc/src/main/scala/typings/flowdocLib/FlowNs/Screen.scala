@@ -25,13 +25,8 @@ object Screen {
     `type`: flowdocLib.flowdocLibStrings.SCREEN,
     connections: js.Array[Connection] = null
   ): Screen = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children, id = id, name = name, position = position, size = size, source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (connections != null) __obj.updateDynamic("connections")(connections)
     __obj.asInstanceOf[Screen]
   }

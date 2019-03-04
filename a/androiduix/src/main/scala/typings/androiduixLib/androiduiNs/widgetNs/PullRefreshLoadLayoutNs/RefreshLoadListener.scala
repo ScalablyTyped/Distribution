@@ -16,9 +16,8 @@ object RefreshLoadListener {
     onLoadMore: js.Function1[androiduixLib.androiduiNs.widgetNs.PullRefreshLoadLayout, scala.Unit],
     onRefresh: js.Function1[androiduixLib.androiduiNs.widgetNs.PullRefreshLoadLayout, scala.Unit]
   ): RefreshLoadListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onLoadMore")(onLoadMore)
-    __obj.updateDynamic("onRefresh")(onRefresh)
+    val __obj = js.Dynamic.literal(onLoadMore = onLoadMore, onRefresh = onRefresh)
+  
     __obj.asInstanceOf[RefreshLoadListener]
   }
 }

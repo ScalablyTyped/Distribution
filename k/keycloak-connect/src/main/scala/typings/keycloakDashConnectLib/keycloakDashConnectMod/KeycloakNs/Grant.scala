@@ -31,17 +31,8 @@ object Grant {
     token_type: java.lang.String,
     update: js.Function1[Grant, scala.Unit]
   ): Grant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__raw")(__raw)
-    __obj.updateDynamic("access_token")(access_token)
-    __obj.updateDynamic("expires_in")(expires_in)
-    __obj.updateDynamic("id_token")(id_token)
-    __obj.updateDynamic("isExpired")(isExpired)
-    __obj.updateDynamic("refresh_token")(refresh_token)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("token_type")(token_type)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(__raw = __raw, access_token = access_token, expires_in = expires_in, id_token = id_token, isExpired = isExpired, refresh_token = refresh_token, store = store, toString = toString, token_type = token_type, update = update)
+  
     __obj.asInstanceOf[Grant]
   }
 }

@@ -22,12 +22,8 @@ object AdminConfigDescriptionResource {
     resourceName: java.lang.String,
     resourceType: ResourceTypes
   ): AdminConfigDescriptionResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configEntries")(configEntries)
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("resourceName")(resourceName)
-    __obj.updateDynamic("resourceType")(resourceType)
+    val __obj = js.Dynamic.literal(configEntries = configEntries, errorCode = errorCode, errorMessage = errorMessage, resourceName = resourceName, resourceType = resourceType)
+  
     __obj.asInstanceOf[AdminConfigDescriptionResource]
   }
 }

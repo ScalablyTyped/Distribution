@@ -18,10 +18,8 @@ object Anon_Error {
     index: java.lang.String,
     res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(error = error, index = index, res = res)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

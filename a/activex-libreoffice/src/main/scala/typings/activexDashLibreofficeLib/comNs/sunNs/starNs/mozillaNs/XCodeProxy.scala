@@ -37,15 +37,8 @@ object XCodeProxy {
     release: js.Function0[scala.Unit],
     run: js.Function0[scala.Double]
   ): XCodeProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ProductType")(ProductType)
-    __obj.updateDynamic("ProfileName")(ProfileName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getProductType")(getProductType)
-    __obj.updateDynamic("getProfileName")(getProfileName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(ProductType = ProductType, ProfileName = ProfileName, acquire = acquire, getProductType = getProductType, getProfileName = getProfileName, queryInterface = queryInterface, release = release, run = run)
+  
     __obj.asInstanceOf[XCodeProxy]
   }
 }

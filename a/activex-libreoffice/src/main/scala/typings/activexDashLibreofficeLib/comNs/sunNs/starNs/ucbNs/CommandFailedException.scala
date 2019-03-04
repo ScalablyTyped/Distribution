@@ -26,10 +26,8 @@ object CommandFailedException {
     Message: java.lang.String,
     Reason: js.Any
   ): CommandFailedException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Reason")(Reason)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, Reason = Reason)
+  
     __obj.asInstanceOf[CommandFailedException]
   }
 }

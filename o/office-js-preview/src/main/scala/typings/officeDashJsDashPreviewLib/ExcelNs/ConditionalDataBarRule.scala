@@ -34,7 +34,8 @@ object ConditionalDataBarRule {
     `type`: ConditionalFormatRuleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LowestValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.HighestValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Formula | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percentile,
     formula: java.lang.String = null
   ): ConditionalDataBarRule = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (formula != null) __obj.updateDynamic("formula")(formula)
     __obj.asInstanceOf[ConditionalDataBarRule]
   }

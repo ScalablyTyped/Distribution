@@ -26,13 +26,7 @@ object RecordTypeInfo {
     urls: stdLib.Record[java.lang.String, java.lang.String],
     developerName: maybe[java.lang.String] = null
   ): RecordTypeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("defaultRecordTypeMapping")(defaultRecordTypeMapping)
-    __obj.updateDynamic("master")(master)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recordTypeId")(recordTypeId)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(available = available, defaultRecordTypeMapping = defaultRecordTypeMapping, master = master, name = name, recordTypeId = recordTypeId, urls = urls)
     if (developerName != null) __obj.updateDynamic("developerName")(developerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordTypeInfo]
   }

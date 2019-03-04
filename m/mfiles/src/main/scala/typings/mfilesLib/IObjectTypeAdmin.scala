@@ -40,21 +40,8 @@ object IObjectTypeAdmin {
     Translatable: scala.Boolean,
     UpdateStatement: java.lang.String
   ): IObjectTypeAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ColumnMappings")(ColumnMappings)
-    __obj.updateDynamic("ConnectionString")(ConnectionString)
-    __obj.updateDynamic("DefaultForAutomaticPermissions")(DefaultForAutomaticPermissions)
-    __obj.updateDynamic("DeleteStatement")(DeleteStatement)
-    __obj.updateDynamic("InsertIntoStatement")(InsertIntoStatement)
-    __obj.updateDynamic("NamedValueNamespaces")(NamedValueNamespaces)
-    __obj.updateDynamic("ObjectType")(ObjectType)
-    __obj.updateDynamic("SelectExtIDStatement")(SelectExtIDStatement)
-    __obj.updateDynamic("SelectStatement")(SelectStatement)
-    __obj.updateDynamic("SelectStatementOneRecord")(SelectStatementOneRecord)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("Translatable")(Translatable)
-    __obj.updateDynamic("UpdateStatement")(UpdateStatement)
+    val __obj = js.Dynamic.literal(Clone = Clone, ColumnMappings = ColumnMappings, ConnectionString = ConnectionString, DefaultForAutomaticPermissions = DefaultForAutomaticPermissions, DeleteStatement = DeleteStatement, InsertIntoStatement = InsertIntoStatement, NamedValueNamespaces = NamedValueNamespaces, ObjectType = ObjectType, SelectExtIDStatement = SelectExtIDStatement, SelectStatement = SelectStatement, SelectStatementOneRecord = SelectStatementOneRecord, SemanticAliases = SemanticAliases, Translatable = Translatable, UpdateStatement = UpdateStatement)
+  
     __obj.asInstanceOf[IObjectTypeAdmin]
   }
 }

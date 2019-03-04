@@ -12,6 +12,6 @@ trait LodashPullAllBy2x4[T] extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     values: lodashLib.lodashMod.underscoreNs.List[T]
   ): lodashLib.lodashMod.underscoreNs.List[T] = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, values: lodashLib.lodashMod.underscoreNs.List[T]): LodashPullAllBy2x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__, values: lodashLib.lodashMod.underscoreNs.List[T]): LodashPullAllBy2x6[T] = js.native
 }
 

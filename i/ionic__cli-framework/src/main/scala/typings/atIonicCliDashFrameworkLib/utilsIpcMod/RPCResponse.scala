@@ -24,11 +24,8 @@ object RPCResponse {
     `type`: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`rpc-response`,
     err: js.Any = null
   ): RPCResponse[R, D] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("procedure")(procedure)
-    __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id, procedure = procedure, request = request.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (err != null) __obj.updateDynamic("err")(err)
     __obj.asInstanceOf[RPCResponse[R, D]]
   }

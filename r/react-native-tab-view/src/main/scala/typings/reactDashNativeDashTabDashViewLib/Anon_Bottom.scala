@@ -59,10 +59,7 @@ object Anon_Bottom {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     tabBarPosition: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.bottom | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.top = null
   ): Anon_Bottom[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigationState")(navigationState)
-    __obj.updateDynamic("onIndexChange")(onIndexChange)
-    __obj.updateDynamic("renderScene")(renderScene)
+    val __obj = js.Dynamic.literal(navigationState = navigationState, onIndexChange = onIndexChange, renderScene = renderScene)
     if (canJumpToTab != null) __obj.updateDynamic("canJumpToTab")(canJumpToTab)
     if (initialLayout != null) __obj.updateDynamic("initialLayout")(initialLayout)
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)

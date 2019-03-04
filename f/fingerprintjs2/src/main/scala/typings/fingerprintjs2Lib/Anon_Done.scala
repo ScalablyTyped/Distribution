@@ -25,9 +25,7 @@ object Anon_Done {
     key: java.lang.String,
     pauseBefore: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Done = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(getData = getData, key = key)
     if (!js.isUndefined(pauseBefore)) __obj.updateDynamic("pauseBefore")(pauseBefore)
     __obj.asInstanceOf[Anon_Done]
   }

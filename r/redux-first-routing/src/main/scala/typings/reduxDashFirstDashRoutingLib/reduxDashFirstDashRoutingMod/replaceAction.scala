@@ -18,8 +18,8 @@ object replaceAction {
     payload: T,
     `type`: reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/REPLACE`
   ): replaceAction[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[replaceAction[T]]
   }
 }

@@ -31,8 +31,7 @@ object carClassifyOptions {
     success: js.Function1[/* res */ carClassifyResponse, scala.Unit] = null,
     top_num: scala.Int | scala.Double = null
   ): carClassifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (color_result != null) __obj.updateDynamic("color_result")(color_result)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

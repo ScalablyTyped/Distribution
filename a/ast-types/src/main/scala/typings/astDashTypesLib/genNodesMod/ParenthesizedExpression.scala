@@ -22,8 +22,8 @@ object ParenthesizedExpression {
     expression: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ParenthesizedExpression
   ): ParenthesizedExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(expression = expression)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ParenthesizedExpression]
   }
 }

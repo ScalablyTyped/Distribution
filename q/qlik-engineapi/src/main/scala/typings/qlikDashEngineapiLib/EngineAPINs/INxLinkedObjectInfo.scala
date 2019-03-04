@@ -25,9 +25,8 @@ trait INxLinkedObjectInfo extends js.Object {
 object INxLinkedObjectInfo {
   @scala.inline
   def apply(qInfo: INxInfo, qRootId: java.lang.String): INxLinkedObjectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qRootId")(qRootId)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qRootId = qRootId)
+  
     __obj.asInstanceOf[INxLinkedObjectInfo]
   }
 }

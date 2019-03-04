@@ -59,16 +59,8 @@ object Structure {
     room: Room,
     structureType: T
   ): Structure[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("hitsMax")(hitsMax)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
-    __obj.updateDynamic("pos")(pos)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("structureType")(structureType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = destroy, hits = hits, hitsMax = hitsMax, id = id, isActive = isActive, notifyWhenAttacked = notifyWhenAttacked, pos = pos, room = room, structureType = structureType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Structure[T]]
   }
 }

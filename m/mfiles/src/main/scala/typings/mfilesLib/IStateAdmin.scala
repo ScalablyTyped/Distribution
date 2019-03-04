@@ -64,33 +64,8 @@ object IStateAdmin {
     SemanticAliases: ISemanticAliases,
     TransitionsRequireEditAccessToObject: scala.Boolean
   ): IStateAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActionAssignToUser")(ActionAssignToUser)
-    __obj.updateDynamic("ActionAssignToUserDefinition")(ActionAssignToUserDefinition)
-    __obj.updateDynamic("ActionConvertToPDF")(ActionConvertToPDF)
-    __obj.updateDynamic("ActionConvertToPDFDefinition")(ActionConvertToPDFDefinition)
-    __obj.updateDynamic("ActionCreateSeparateAssignment")(ActionCreateSeparateAssignment)
-    __obj.updateDynamic("ActionDefinitions")(ActionDefinitions)
-    __obj.updateDynamic("ActionDelete")(ActionDelete)
-    __obj.updateDynamic("ActionMarkForArchiving")(ActionMarkForArchiving)
-    __obj.updateDynamic("ActionRunVBScript")(ActionRunVBScript)
-    __obj.updateDynamic("ActionRunVBScriptDefinition")(ActionRunVBScriptDefinition)
-    __obj.updateDynamic("ActionSendNotification")(ActionSendNotification)
-    __obj.updateDynamic("ActionSendNotificationDefinition")(ActionSendNotificationDefinition)
-    __obj.updateDynamic("ActionSetPermissions")(ActionSetPermissions)
-    __obj.updateDynamic("ActionSetPermissionsDetailedDefinition")(ActionSetPermissionsDetailedDefinition)
-    __obj.updateDynamic("ActionSetProperties")(ActionSetProperties)
-    __obj.updateDynamic("ActionSetPropertiesDefinition")(ActionSetPropertiesDefinition)
-    __obj.updateDynamic("CheckInOutPermissions")(CheckInOutPermissions)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("InOutPermissions")(InOutPermissions)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Postconditions")(Postconditions)
-    __obj.updateDynamic("Preconditions")(Preconditions)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("TransitionsRequireEditAccessToObject")(TransitionsRequireEditAccessToObject)
+    val __obj = js.Dynamic.literal(ActionAssignToUser = ActionAssignToUser, ActionAssignToUserDefinition = ActionAssignToUserDefinition, ActionConvertToPDF = ActionConvertToPDF, ActionConvertToPDFDefinition = ActionConvertToPDFDefinition, ActionCreateSeparateAssignment = ActionCreateSeparateAssignment, ActionDefinitions = ActionDefinitions, ActionDelete = ActionDelete, ActionMarkForArchiving = ActionMarkForArchiving, ActionRunVBScript = ActionRunVBScript, ActionRunVBScriptDefinition = ActionRunVBScriptDefinition, ActionSendNotification = ActionSendNotification, ActionSendNotificationDefinition = ActionSendNotificationDefinition, ActionSetPermissions = ActionSetPermissions, ActionSetPermissionsDetailedDefinition = ActionSetPermissionsDetailedDefinition, ActionSetProperties = ActionSetProperties, ActionSetPropertiesDefinition = ActionSetPropertiesDefinition, CheckInOutPermissions = CheckInOutPermissions, Clone = Clone, Description = Description, ID = ID, InOutPermissions = InOutPermissions, Name = Name, Postconditions = Postconditions, Preconditions = Preconditions, SemanticAliases = SemanticAliases, TransitionsRequireEditAccessToObject = TransitionsRequireEditAccessToObject)
+  
     __obj.asInstanceOf[IStateAdmin]
   }
 }

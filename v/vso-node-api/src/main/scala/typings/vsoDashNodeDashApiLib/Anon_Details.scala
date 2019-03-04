@@ -24,13 +24,8 @@ object Anon_Details {
     testResults: scala.Double,
     workItems: scala.Double
   ): Anon_Details = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("issues")(issues)
-    __obj.updateDynamic("releaseInfo")(releaseInfo)
-    __obj.updateDynamic("testResults")(testResults)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(details = details, environments = environments, issues = issues, releaseInfo = releaseInfo, testResults = testResults, workItems = workItems)
+  
     __obj.asInstanceOf[Anon_Details]
   }
 }

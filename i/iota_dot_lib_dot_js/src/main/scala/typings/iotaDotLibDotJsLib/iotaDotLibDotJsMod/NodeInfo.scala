@@ -46,24 +46,8 @@ object NodeInfo {
     tips: scala.Double,
     transactionsToRequest: scala.Double
   ): NodeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appName")(appName)
-    __obj.updateDynamic("appVersion")(appVersion)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("jreAvailableProcessors")(jreAvailableProcessors)
-    __obj.updateDynamic("jreFreeMemory")(jreFreeMemory)
-    __obj.updateDynamic("jreMaxMemory")(jreMaxMemory)
-    __obj.updateDynamic("jreTotalMemory")(jreTotalMemory)
-    __obj.updateDynamic("jreVersion")(jreVersion)
-    __obj.updateDynamic("latestMilestone")(latestMilestone)
-    __obj.updateDynamic("latestMilestoneIndex")(latestMilestoneIndex)
-    __obj.updateDynamic("latestSolidSubtangleMilestone")(latestSolidSubtangleMilestone)
-    __obj.updateDynamic("latestSolidSubtangleMilestoneIndex")(latestSolidSubtangleMilestoneIndex)
-    __obj.updateDynamic("neighbors")(neighbors)
-    __obj.updateDynamic("packetsQueueSize")(packetsQueueSize)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("tips")(tips)
-    __obj.updateDynamic("transactionsToRequest")(transactionsToRequest)
+    val __obj = js.Dynamic.literal(appName = appName, appVersion = appVersion, duration = duration, jreAvailableProcessors = jreAvailableProcessors, jreFreeMemory = jreFreeMemory, jreMaxMemory = jreMaxMemory, jreTotalMemory = jreTotalMemory, jreVersion = jreVersion, latestMilestone = latestMilestone, latestMilestoneIndex = latestMilestoneIndex, latestSolidSubtangleMilestone = latestSolidSubtangleMilestone, latestSolidSubtangleMilestoneIndex = latestSolidSubtangleMilestoneIndex, neighbors = neighbors, packetsQueueSize = packetsQueueSize, time = time, tips = tips, transactionsToRequest = transactionsToRequest)
+  
     __obj.asInstanceOf[NodeInfo]
   }
 }

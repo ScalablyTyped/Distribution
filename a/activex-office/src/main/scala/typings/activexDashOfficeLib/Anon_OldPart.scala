@@ -12,8 +12,8 @@ trait Anon_OldPart extends js.Object {
 object Anon_OldPart {
   @scala.inline
   def apply(OldPart: activexDashOfficeLib.OfficeNs.CustomXMLPart): Anon_OldPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OldPart")(OldPart)
+    val __obj = js.Dynamic.literal(OldPart = OldPart)
+  
     __obj.asInstanceOf[Anon_OldPart]
   }
 }

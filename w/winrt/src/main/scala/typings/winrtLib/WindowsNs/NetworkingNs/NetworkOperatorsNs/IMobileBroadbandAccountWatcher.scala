@@ -28,15 +28,8 @@ object IMobileBroadbandAccountWatcher {
     status: MobileBroadbandAccountWatcherStatus,
     stop: js.Function0[scala.Unit]
   ): IMobileBroadbandAccountWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onaccountadded")(onaccountadded)
-    __obj.updateDynamic("onaccountremoved")(onaccountremoved)
-    __obj.updateDynamic("onaccountupdated")(onaccountupdated)
-    __obj.updateDynamic("onenumerationcompleted")(onenumerationcompleted)
-    __obj.updateDynamic("onstopped")(onstopped)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(onaccountadded = onaccountadded, onaccountremoved = onaccountremoved, onaccountupdated = onaccountupdated, onenumerationcompleted = onenumerationcompleted, onstopped = onstopped, start = start, status = status, stop = stop)
+  
     __obj.asInstanceOf[IMobileBroadbandAccountWatcher]
   }
 }

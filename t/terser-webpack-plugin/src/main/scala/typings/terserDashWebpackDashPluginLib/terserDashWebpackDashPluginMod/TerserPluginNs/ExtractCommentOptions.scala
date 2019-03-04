@@ -18,8 +18,7 @@ object ExtractCommentOptions {
     banner: scala.Boolean | java.lang.String | FormatFn = null,
     filename: java.lang.String | FormatFn = null
   ): ExtractCommentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtractCommentOptions]

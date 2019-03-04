@@ -18,10 +18,8 @@ object IProximityDeviceStatics {
     getDefault: js.Function0[ProximityDevice],
     getDeviceSelector: js.Function0[java.lang.String]
   ): IProximityDeviceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromId")(fromId)
-    __obj.updateDynamic("getDefault")(getDefault)
-    __obj.updateDynamic("getDeviceSelector")(getDeviceSelector)
+    val __obj = js.Dynamic.literal(fromId = fromId, getDefault = getDefault, getDeviceSelector = getDeviceSelector)
+  
     __obj.asInstanceOf[IProximityDeviceStatics]
   }
 }

@@ -12,8 +12,8 @@ trait ConcatOptionsBuilder extends js.Object {
 object ConcatOptionsBuilder {
   @scala.inline
   def apply(from: ConcatFromOptionsBuilder): ConcatOptionsBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
+    val __obj = js.Dynamic.literal(from = from)
+  
     __obj.asInstanceOf[ConcatOptionsBuilder]
   }
 }

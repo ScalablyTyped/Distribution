@@ -48,19 +48,8 @@ object RowInfo {
     subRows: js.Array[_],
     viewIndex: scala.Double
   ): RowInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregated")(aggregated)
-    __obj.updateDynamic("groupedByPivot")(groupedByPivot)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("nestingPath")(nestingPath)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("pageSize")(pageSize)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("rowValues")(rowValues)
-    __obj.updateDynamic("subRows")(subRows)
-    __obj.updateDynamic("viewIndex")(viewIndex)
+    val __obj = js.Dynamic.literal(aggregated = aggregated, groupedByPivot = groupedByPivot, index = index, level = level, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, row = row, rowValues = rowValues, subRows = subRows, viewIndex = viewIndex)
+  
     __obj.asInstanceOf[RowInfo]
   }
 }

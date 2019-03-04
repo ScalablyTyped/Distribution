@@ -22,8 +22,7 @@ object CreateUltimatePaginationOptions {
     itemTypeToComponent: ItemTypeToComponent,
     WrapperComponent: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_] = null
   ): CreateUltimatePaginationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemTypeToComponent")(itemTypeToComponent)
+    val __obj = js.Dynamic.literal(itemTypeToComponent = itemTypeToComponent)
     if (WrapperComponent != null) __obj.updateDynamic("WrapperComponent")(WrapperComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUltimatePaginationOptions]
   }

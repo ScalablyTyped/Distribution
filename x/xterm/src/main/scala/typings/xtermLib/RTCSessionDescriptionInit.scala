@@ -13,7 +13,8 @@ trait RTCSessionDescriptionInit extends js.Object {
 object RTCSessionDescriptionInit {
   @scala.inline
   def apply(`type`: RTCSdpType, sdp: java.lang.String = null): RTCSessionDescriptionInit = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (sdp != null) __obj.updateDynamic("sdp")(sdp)
     __obj.asInstanceOf[RTCSessionDescriptionInit]
   }

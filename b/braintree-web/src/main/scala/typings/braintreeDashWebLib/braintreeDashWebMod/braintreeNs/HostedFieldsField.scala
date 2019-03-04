@@ -32,8 +32,7 @@ object HostedFieldsField {
     select: scala.Boolean | braintreeDashWebLib.Anon_Options = null,
     `type`: java.lang.String = null
   ): HostedFieldsField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(selector = selector)
     if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])

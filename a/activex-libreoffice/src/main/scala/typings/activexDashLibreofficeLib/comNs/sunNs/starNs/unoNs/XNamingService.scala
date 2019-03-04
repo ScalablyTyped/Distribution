@@ -33,13 +33,8 @@ object XNamingService {
     release: js.Function0[scala.Unit],
     revokeObject: js.Function1[java.lang.String, scala.Unit]
   ): XNamingService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRegisteredObject")(getRegisteredObject)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerObject")(registerObject)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revokeObject")(revokeObject)
+    val __obj = js.Dynamic.literal(acquire = acquire, getRegisteredObject = getRegisteredObject, queryInterface = queryInterface, registerObject = registerObject, release = release, revokeObject = revokeObject)
+  
     __obj.asInstanceOf[XNamingService]
   }
 }

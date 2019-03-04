@@ -18,10 +18,8 @@ object ISearchPaneQueryChangedEventArgs {
     linguisticDetails: SearchPaneQueryLinguisticDetails,
     queryText: java.lang.String
   ): ISearchPaneQueryChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("linguisticDetails")(linguisticDetails)
-    __obj.updateDynamic("queryText")(queryText)
+    val __obj = js.Dynamic.literal(language = language, linguisticDetails = linguisticDetails, queryText = queryText)
+  
     __obj.asInstanceOf[ISearchPaneQueryChangedEventArgs]
   }
 }

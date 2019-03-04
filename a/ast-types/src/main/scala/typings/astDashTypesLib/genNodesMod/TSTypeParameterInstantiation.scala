@@ -20,8 +20,8 @@ object TSTypeParameterInstantiation {
     params: js.Array[astDashTypesLib.genKindsMod.TSTypeKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeParameterInstantiation
   ): TSTypeParameterInstantiation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeParameterInstantiation]
   }
 }

@@ -25,11 +25,8 @@ object InvalidProtocolChangeException {
     invalidProperty: ProtocolProperty,
     reason: scala.Double
   ): InvalidProtocolChangeException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("invalidProperty")(invalidProperty)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, invalidProperty = invalidProperty, reason = reason)
+  
     __obj.asInstanceOf[InvalidProtocolChangeException]
   }
 }

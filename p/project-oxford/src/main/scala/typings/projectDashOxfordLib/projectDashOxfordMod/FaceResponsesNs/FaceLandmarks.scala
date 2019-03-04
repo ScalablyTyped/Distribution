@@ -66,34 +66,8 @@ object FaceLandmarks {
     upperLipBottom: point,
     upperLipTop: point
   ): FaceLandmarks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eyeLeftBottom")(eyeLeftBottom)
-    __obj.updateDynamic("eyeLeftInner")(eyeLeftInner)
-    __obj.updateDynamic("eyeLeftOuter")(eyeLeftOuter)
-    __obj.updateDynamic("eyeLeftTop")(eyeLeftTop)
-    __obj.updateDynamic("eyeRightBottom")(eyeRightBottom)
-    __obj.updateDynamic("eyeRightInner")(eyeRightInner)
-    __obj.updateDynamic("eyeRightOuter")(eyeRightOuter)
-    __obj.updateDynamic("eyeRightTop")(eyeRightTop)
-    __obj.updateDynamic("eyebrowLeftInner")(eyebrowLeftInner)
-    __obj.updateDynamic("eyebrowLeftOuter")(eyebrowLeftOuter)
-    __obj.updateDynamic("eyebrowRightInner")(eyebrowRightInner)
-    __obj.updateDynamic("eyebrowRightOuter")(eyebrowRightOuter)
-    __obj.updateDynamic("mouthLeft")(mouthLeft)
-    __obj.updateDynamic("mouthRight")(mouthRight)
-    __obj.updateDynamic("noseLeftAlarOutTip")(noseLeftAlarOutTip)
-    __obj.updateDynamic("noseLeftAlarTop")(noseLeftAlarTop)
-    __obj.updateDynamic("noseRightAlarOutTip")(noseRightAlarOutTip)
-    __obj.updateDynamic("noseRightAlarTop")(noseRightAlarTop)
-    __obj.updateDynamic("noseRootLeft")(noseRootLeft)
-    __obj.updateDynamic("noseRootRight")(noseRootRight)
-    __obj.updateDynamic("noseTip")(noseTip)
-    __obj.updateDynamic("pupilLeft")(pupilLeft)
-    __obj.updateDynamic("pupilRight")(pupilRight)
-    __obj.updateDynamic("underLipBottom")(underLipBottom)
-    __obj.updateDynamic("underLipTop")(underLipTop)
-    __obj.updateDynamic("upperLipBottom")(upperLipBottom)
-    __obj.updateDynamic("upperLipTop")(upperLipTop)
+    val __obj = js.Dynamic.literal(eyeLeftBottom = eyeLeftBottom, eyeLeftInner = eyeLeftInner, eyeLeftOuter = eyeLeftOuter, eyeLeftTop = eyeLeftTop, eyeRightBottom = eyeRightBottom, eyeRightInner = eyeRightInner, eyeRightOuter = eyeRightOuter, eyeRightTop = eyeRightTop, eyebrowLeftInner = eyebrowLeftInner, eyebrowLeftOuter = eyebrowLeftOuter, eyebrowRightInner = eyebrowRightInner, eyebrowRightOuter = eyebrowRightOuter, mouthLeft = mouthLeft, mouthRight = mouthRight, noseLeftAlarOutTip = noseLeftAlarOutTip, noseLeftAlarTop = noseLeftAlarTop, noseRightAlarOutTip = noseRightAlarOutTip, noseRightAlarTop = noseRightAlarTop, noseRootLeft = noseRootLeft, noseRootRight = noseRootRight, noseTip = noseTip, pupilLeft = pupilLeft, pupilRight = pupilRight, underLipBottom = underLipBottom, underLipTop = underLipTop, upperLipBottom = upperLipBottom, upperLipTop = upperLipTop)
+  
     __obj.asInstanceOf[FaceLandmarks]
   }
 }

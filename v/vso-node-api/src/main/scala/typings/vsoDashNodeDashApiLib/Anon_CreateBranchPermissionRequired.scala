@@ -44,23 +44,8 @@ object Anon_CreateBranchPermissionRequired {
     unresolvableToCommit: scala.Double,
     writePermissionRequired: scala.Double
   ): Anon_CreateBranchPermissionRequired = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createBranchPermissionRequired")(createBranchPermissionRequired)
-    __obj.updateDynamic("createTagPermissionRequired")(createTagPermissionRequired)
-    __obj.updateDynamic("forcePushRequired")(forcePushRequired)
-    __obj.updateDynamic("invalidRefName")(invalidRefName)
-    __obj.updateDynamic("locked")(locked)
-    __obj.updateDynamic("manageNotePermissionRequired")(manageNotePermissionRequired)
-    __obj.updateDynamic("refNameConflict")(refNameConflict)
-    __obj.updateDynamic("rejectedByPlugin")(rejectedByPlugin)
-    __obj.updateDynamic("rejectedByPolicy")(rejectedByPolicy)
-    __obj.updateDynamic("staleOldObjectId")(staleOldObjectId)
-    __obj.updateDynamic("succeeded")(succeeded)
-    __obj.updateDynamic("succeededCorruptRef")(succeededCorruptRef)
-    __obj.updateDynamic("succeededNonExistentRef")(succeededNonExistentRef)
-    __obj.updateDynamic("unprocessed")(unprocessed)
-    __obj.updateDynamic("unresolvableToCommit")(unresolvableToCommit)
-    __obj.updateDynamic("writePermissionRequired")(writePermissionRequired)
+    val __obj = js.Dynamic.literal(createBranchPermissionRequired = createBranchPermissionRequired, createTagPermissionRequired = createTagPermissionRequired, forcePushRequired = forcePushRequired, invalidRefName = invalidRefName, locked = locked, manageNotePermissionRequired = manageNotePermissionRequired, refNameConflict = refNameConflict, rejectedByPlugin = rejectedByPlugin, rejectedByPolicy = rejectedByPolicy, staleOldObjectId = staleOldObjectId, succeeded = succeeded, succeededCorruptRef = succeededCorruptRef, succeededNonExistentRef = succeededNonExistentRef, unprocessed = unprocessed, unresolvableToCommit = unresolvableToCommit, writePermissionRequired = writePermissionRequired)
+  
     __obj.asInstanceOf[Anon_CreateBranchPermissionRequired]
   }
 }

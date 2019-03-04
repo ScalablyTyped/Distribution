@@ -12,8 +12,8 @@ trait Domain extends js.Object {
 object Domain {
   @scala.inline
   def apply(domain: java.lang.String): Domain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
+    val __obj = js.Dynamic.literal(domain = domain)
+  
     __obj.asInstanceOf[Domain]
   }
 }

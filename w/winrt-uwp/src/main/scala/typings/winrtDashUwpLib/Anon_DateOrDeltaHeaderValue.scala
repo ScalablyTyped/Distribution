@@ -16,9 +16,8 @@ object Anon_DateOrDeltaHeaderValue {
     dateOrDeltaHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpDateOrDeltaHeaderValue,
     returnValue: scala.Boolean
   ): Anon_DateOrDeltaHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateOrDeltaHeaderValue")(dateOrDeltaHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(dateOrDeltaHeaderValue = dateOrDeltaHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_DateOrDeltaHeaderValue]
   }
 }

@@ -38,10 +38,7 @@ object ResolverRequest {
     query: java.lang.String = null,
     relativePath: java.lang.String = null
   ): ResolverRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(context = context, path = path, request = request)
     if (__innerRequest != null) __obj.updateDynamic("__innerRequest")(__innerRequest)
     if (__innerRequest_relativePath != null) __obj.updateDynamic("__innerRequest_relativePath")(__innerRequest_relativePath)
     if (__innerRequest_request != null) __obj.updateDynamic("__innerRequest_request")(__innerRequest_request)

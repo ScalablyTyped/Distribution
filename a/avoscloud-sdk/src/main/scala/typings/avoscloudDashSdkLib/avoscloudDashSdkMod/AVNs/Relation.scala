@@ -32,14 +32,8 @@ object Relation {
     targetClassName: java.lang.String,
     toJSON: js.Function0[js.Any]
   ): Relation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("targetClassName")(targetClassName)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(add = add, key = key, parent = parent, query = query, remove = remove, targetClassName = targetClassName, toJSON = toJSON)
+  
     __obj.asInstanceOf[Relation]
   }
 }

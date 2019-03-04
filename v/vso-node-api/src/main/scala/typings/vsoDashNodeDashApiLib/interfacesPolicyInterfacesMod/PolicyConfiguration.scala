@@ -51,17 +51,8 @@ object PolicyConfiguration {
     `type`: PolicyTypeRef,
     url: java.lang.String
   ): PolicyConfiguration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isBlocking")(isBlocking)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, createdBy = createdBy, createdDate = createdDate, id = id, isBlocking = isBlocking, isDeleted = isDeleted, isEnabled = isEnabled, revision = revision, settings = settings, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PolicyConfiguration]
   }
 }

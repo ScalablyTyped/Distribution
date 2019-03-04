@@ -26,8 +26,8 @@ object ColumnSpec {
     role: java.lang.String = null,
     sourceColumn: scala.Int | scala.Double = null
   ): ColumnSpec = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("calc")(calc)
+    val __obj = js.Dynamic.literal(calc = calc)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (properties != null) __obj.updateDynamic("properties")(properties)

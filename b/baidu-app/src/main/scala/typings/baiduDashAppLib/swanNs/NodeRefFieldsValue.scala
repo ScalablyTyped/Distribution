@@ -24,13 +24,8 @@ object NodeRefFieldsValue {
     scrollOffset: baiduDashAppLib.Anon_ScrollLeft,
     size: baiduDashAppLib.Anon_HeightWidth
   ): NodeRefFieldsValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("rect")(rect)
-    __obj.updateDynamic("scrollOffset")(scrollOffset)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(dataset = dataset, id = id, properties = properties, rect = rect, scrollOffset = scrollOffset, size = size)
+  
     __obj.asInstanceOf[NodeRefFieldsValue]
   }
 }

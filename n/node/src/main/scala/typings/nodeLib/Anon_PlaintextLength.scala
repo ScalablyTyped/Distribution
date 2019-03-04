@@ -12,8 +12,8 @@ trait Anon_PlaintextLength extends js.Object {
 object Anon_PlaintextLength {
   @scala.inline
   def apply(plaintextLength: scala.Double): Anon_PlaintextLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plaintextLength")(plaintextLength)
+    val __obj = js.Dynamic.literal(plaintextLength = plaintextLength)
+  
     __obj.asInstanceOf[Anon_PlaintextLength]
   }
 }

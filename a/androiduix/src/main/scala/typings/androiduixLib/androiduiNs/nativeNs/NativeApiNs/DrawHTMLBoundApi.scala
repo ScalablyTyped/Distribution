@@ -22,9 +22,8 @@ object DrawHTMLBoundApi {
     hideDrawHTMLBound: js.Function1[scala.Double, scala.Unit],
     showDrawHTMLBound: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
   ): DrawHTMLBoundApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hideDrawHTMLBound")(hideDrawHTMLBound)
-    __obj.updateDynamic("showDrawHTMLBound")(showDrawHTMLBound)
+    val __obj = js.Dynamic.literal(hideDrawHTMLBound = hideDrawHTMLBound, showDrawHTMLBound = showDrawHTMLBound)
+  
     __obj.asInstanceOf[DrawHTMLBoundApi]
   }
 }

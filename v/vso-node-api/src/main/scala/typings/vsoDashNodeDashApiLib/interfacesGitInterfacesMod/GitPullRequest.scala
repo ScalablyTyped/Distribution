@@ -177,40 +177,8 @@ object GitPullRequest {
     url: java.lang.String,
     workItemRefs: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
   ): GitPullRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("artifactId")(artifactId)
-    __obj.updateDynamic("autoCompleteSetBy")(autoCompleteSetBy)
-    __obj.updateDynamic("closedBy")(closedBy)
-    __obj.updateDynamic("closedDate")(closedDate)
-    __obj.updateDynamic("codeReviewId")(codeReviewId)
-    __obj.updateDynamic("commits")(commits)
-    __obj.updateDynamic("completionOptions")(completionOptions)
-    __obj.updateDynamic("completionQueueTime")(completionQueueTime)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("forkSource")(forkSource)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("lastMergeCommit")(lastMergeCommit)
-    __obj.updateDynamic("lastMergeSourceCommit")(lastMergeSourceCommit)
-    __obj.updateDynamic("lastMergeTargetCommit")(lastMergeTargetCommit)
-    __obj.updateDynamic("mergeFailureMessage")(mergeFailureMessage)
-    __obj.updateDynamic("mergeFailureType")(mergeFailureType)
-    __obj.updateDynamic("mergeId")(mergeId)
-    __obj.updateDynamic("mergeOptions")(mergeOptions)
-    __obj.updateDynamic("mergeStatus")(mergeStatus)
-    __obj.updateDynamic("pullRequestId")(pullRequestId)
-    __obj.updateDynamic("remoteUrl")(remoteUrl)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("reviewers")(reviewers)
-    __obj.updateDynamic("sourceRefName")(sourceRefName)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("supportsIterations")(supportsIterations)
-    __obj.updateDynamic("targetRefName")(targetRefName)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemRefs")(workItemRefs)
+    val __obj = js.Dynamic.literal(_links = _links, artifactId = artifactId, autoCompleteSetBy = autoCompleteSetBy, closedBy = closedBy, closedDate = closedDate, codeReviewId = codeReviewId, commits = commits, completionOptions = completionOptions, completionQueueTime = completionQueueTime, createdBy = createdBy, creationDate = creationDate, description = description, forkSource = forkSource, labels = labels, lastMergeCommit = lastMergeCommit, lastMergeSourceCommit = lastMergeSourceCommit, lastMergeTargetCommit = lastMergeTargetCommit, mergeFailureMessage = mergeFailureMessage, mergeFailureType = mergeFailureType, mergeId = mergeId, mergeOptions = mergeOptions, mergeStatus = mergeStatus, pullRequestId = pullRequestId, remoteUrl = remoteUrl, repository = repository, reviewers = reviewers, sourceRefName = sourceRefName, status = status, supportsIterations = supportsIterations, targetRefName = targetRefName, title = title, url = url, workItemRefs = workItemRefs)
+  
     __obj.asInstanceOf[GitPullRequest]
   }
 }

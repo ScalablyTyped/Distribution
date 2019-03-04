@@ -27,14 +27,8 @@ object Label {
     setOpacity: js.Function1[scala.Double, scala.Unit],
     updateZIndex: js.Function1[scala.Double, scala.Unit]
   ): Label = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("onAdd")(onAdd)
-    __obj.updateDynamic("onRemove")(onRemove)
-    __obj.updateDynamic("setContent")(setContent)
-    __obj.updateDynamic("setLatLng")(setLatLng)
-    __obj.updateDynamic("setOpacity")(setOpacity)
-    __obj.updateDynamic("updateZIndex")(updateZIndex)
+    val __obj = js.Dynamic.literal(close = close, onAdd = onAdd, onRemove = onRemove, setContent = setContent, setLatLng = setLatLng, setOpacity = setOpacity, updateZIndex = updateZIndex)
+  
     __obj.asInstanceOf[Label]
   }
 }

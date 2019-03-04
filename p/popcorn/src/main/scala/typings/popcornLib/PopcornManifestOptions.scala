@@ -20,11 +20,8 @@ object PopcornManifestOptions {
     target: java.lang.String,
     text: PopcornManifestOption
   ): PopcornManifestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(end = end, start = start, target = target, text = text)
+  
     __obj.asInstanceOf[PopcornManifestOptions]
   }
 }

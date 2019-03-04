@@ -32,15 +32,8 @@ object ScrollbarPlugin {
       smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
     ]
   ): ScrollbarPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onDestory")(onDestory)
-    __obj.updateDynamic("onInit")(onInit)
-    __obj.updateDynamic("onRender")(onRender)
-    __obj.updateDynamic("onUpdate")(onUpdate)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("scrollbar")(scrollbar)
-    __obj.updateDynamic("transformDelta")(transformDelta)
+    val __obj = js.Dynamic.literal(name = name, onDestory = onDestory, onInit = onInit, onRender = onRender, onUpdate = onUpdate, options = options, scrollbar = scrollbar, transformDelta = transformDelta)
+  
     __obj.asInstanceOf[ScrollbarPlugin]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_AnErrorStringFailureSuccessAny extends js.Object {
 object Anon_AnErrorStringFailureSuccessAny {
   @scala.inline
   def apply(failure: js.Function1[java.lang.String, js.Any], success: js.Function0[js.Any]): Anon_AnErrorStringFailureSuccessAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccessAny]
   }
 }

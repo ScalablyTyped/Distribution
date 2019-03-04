@@ -19,9 +19,8 @@ trait Anon_Major extends js.Object {
 object Anon_Major {
   @scala.inline
   def apply(major: scala.Double, minor: scala.Double): Anon_Major = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
+    val __obj = js.Dynamic.literal(major = major, minor = minor)
+  
     __obj.asInstanceOf[Anon_Major]
   }
 }

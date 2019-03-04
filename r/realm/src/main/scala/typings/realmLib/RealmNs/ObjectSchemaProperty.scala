@@ -28,7 +28,8 @@ object ObjectSchemaProperty {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     property: java.lang.String = null
   ): ObjectSchemaProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default)
     if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
     if (objectType != null) __obj.updateDynamic("objectType")(objectType)

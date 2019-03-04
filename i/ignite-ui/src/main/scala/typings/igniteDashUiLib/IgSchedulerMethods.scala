@@ -88,20 +88,8 @@ object IgSchedulerMethods {
     previousButton: js.Function0[java.lang.String],
     todayButton: js.Function0[java.lang.String]
   ): IgSchedulerMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("createAppointment")(createAppointment)
-    __obj.updateDynamic("dateRangeButton")(dateRangeButton)
-    __obj.updateDynamic("deleteAppointment")(deleteAppointment)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("editAppointment")(editAppointment)
-    __obj.updateDynamic("getAppointmentsInRange")(getAppointmentsInRange)
-    __obj.updateDynamic("getCalendar")(getCalendar)
-    __obj.updateDynamic("nextButton")(nextButton)
-    __obj.updateDynamic("previousButton")(previousButton)
-    __obj.updateDynamic("todayButton")(todayButton)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, createAppointment = createAppointment, dateRangeButton = dateRangeButton, deleteAppointment = deleteAppointment, destroy = destroy, editAppointment = editAppointment, getAppointmentsInRange = getAppointmentsInRange, getCalendar = getCalendar, nextButton = nextButton, previousButton = previousButton, todayButton = todayButton)
+  
     __obj.asInstanceOf[IgSchedulerMethods]
   }
 }

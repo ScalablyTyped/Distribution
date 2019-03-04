@@ -12,8 +12,8 @@ trait Anon_CloseIcon extends js.Object {
 object Anon_CloseIcon {
   @scala.inline
   def apply(closeIcon: java.lang.String): Anon_CloseIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeIcon")(closeIcon)
+    val __obj = js.Dynamic.literal(closeIcon = closeIcon)
+  
     __obj.asInstanceOf[Anon_CloseIcon]
   }
 }

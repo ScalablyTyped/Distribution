@@ -31,12 +31,8 @@ trait Anon_Both extends js.Object {
 object Anon_Both {
   @scala.inline
   def apply(Both: js.Any, Inline: js.Any, InlineRepeat: js.Any, None: js.Any, Request: js.Any): Anon_Both = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Both")(Both)
-    __obj.updateDynamic("Inline")(Inline)
-    __obj.updateDynamic("InlineRepeat")(InlineRepeat)
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("Request")(Request)
+    val __obj = js.Dynamic.literal(Both = Both, Inline = Inline, InlineRepeat = InlineRepeat, None = None, Request = Request)
+  
     __obj.asInstanceOf[Anon_Both]
   }
 }

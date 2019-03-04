@@ -37,9 +37,7 @@ object AposModuleOptions {
     removeFields: js.Array[Field] = null,
     scene: apostropheLib.apostropheLibStrings.user = null
   ): AposModuleOptions[C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], label = label)
     if (addFields != null) __obj.updateDynamic("addFields")(addFields)
     if (arrangeFields != null) __obj.updateDynamic("arrangeFields")(arrangeFields)
     if (beforeConstruct != null) __obj.updateDynamic("beforeConstruct")(beforeConstruct)

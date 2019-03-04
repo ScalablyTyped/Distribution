@@ -21,10 +21,7 @@ object StrategyOptionsWithRequest {
     scopeSeparator: java.lang.String = null,
     tokenURL: java.lang.String = null
   ): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (!js.isUndefined(enableProof)) __obj.updateDynamic("enableProof")(enableProof)
     if (profileFields != null) __obj.updateDynamic("profileFields")(profileFields)

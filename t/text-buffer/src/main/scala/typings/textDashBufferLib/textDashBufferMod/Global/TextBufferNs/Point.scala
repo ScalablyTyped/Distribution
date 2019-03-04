@@ -83,23 +83,8 @@ object Point {
     translate: js.Function1[PointCompatible, Point],
     traverse: js.Function1[PointCompatible, Point]
   ): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("freeze")(freeze)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("isGreaterThan")(isGreaterThan)
-    __obj.updateDynamic("isGreaterThanOrEqual")(isGreaterThanOrEqual)
-    __obj.updateDynamic("isLessThan")(isLessThan)
-    __obj.updateDynamic("isLessThanOrEqual")(isLessThanOrEqual)
-    __obj.updateDynamic("negate")(negate)
-    __obj.updateDynamic("row")(row)
-    __obj.updateDynamic("serialize")(serialize)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("translate")(translate)
-    __obj.updateDynamic("traverse")(traverse)
+    val __obj = js.Dynamic.literal(column = column, compare = compare, copy = copy, freeze = freeze, isEqual = isEqual, isGreaterThan = isGreaterThan, isGreaterThanOrEqual = isGreaterThanOrEqual, isLessThan = isLessThan, isLessThanOrEqual = isLessThanOrEqual, negate = negate, row = row, serialize = serialize, toArray = toArray, toString = toString, translate = translate, traverse = traverse)
+  
     __obj.asInstanceOf[Point]
   }
 }

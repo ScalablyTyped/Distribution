@@ -17,10 +17,8 @@ trait Anon_Env extends js.Object {
 object Anon_Env {
   @scala.inline
   def apply(envNs: Anon_Editor, processNs: Anon_ArgsCmd, userNs: Anon_GidGids): Anon_Env = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("envNs")(envNs)
-    __obj.updateDynamic("processNs")(processNs)
-    __obj.updateDynamic("userNs")(userNs)
+    val __obj = js.Dynamic.literal(envNs = envNs, processNs = processNs, userNs = userNs)
+  
     __obj.asInstanceOf[Anon_Env]
   }
 }

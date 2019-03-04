@@ -43,8 +43,8 @@ object ClassExpression {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): ClassExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

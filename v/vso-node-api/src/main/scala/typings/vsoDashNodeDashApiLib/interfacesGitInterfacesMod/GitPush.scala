@@ -24,16 +24,8 @@ object GitPush {
     repository: GitRepository,
     url: java.lang.String
   ): GitPush = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("commits")(commits)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("pushCorrelationId")(pushCorrelationId)
-    __obj.updateDynamic("pushId")(pushId)
-    __obj.updateDynamic("pushedBy")(pushedBy)
-    __obj.updateDynamic("refUpdates")(refUpdates)
-    __obj.updateDynamic("repository")(repository)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, commits = commits, date = date, pushCorrelationId = pushCorrelationId, pushId = pushId, pushedBy = pushedBy, refUpdates = refUpdates, repository = repository, url = url)
+  
     __obj.asInstanceOf[GitPush]
   }
 }

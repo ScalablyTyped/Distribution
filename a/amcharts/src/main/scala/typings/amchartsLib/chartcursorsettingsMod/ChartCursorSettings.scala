@@ -99,20 +99,8 @@ object ChartCursorSettings {
     valueBalloonsEnabled: scala.Boolean,
     zoomable: scala.Boolean
   ): ChartCursorSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bulletSize")(bulletSize)
-    __obj.updateDynamic("bulletsEnabled")(bulletsEnabled)
-    __obj.updateDynamic("categoryBalloonAlpha")(categoryBalloonAlpha)
-    __obj.updateDynamic("categoryBalloonColor")(categoryBalloonColor)
-    __obj.updateDynamic("categoryBalloonDateFormats")(categoryBalloonDateFormats)
-    __obj.updateDynamic("categoryBalloonEnabled")(categoryBalloonEnabled)
-    __obj.updateDynamic("cursorAlpha")(cursorAlpha)
-    __obj.updateDynamic("cursorColor")(cursorColor)
-    __obj.updateDynamic("cursorPosition")(cursorPosition)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("pan")(pan)
-    __obj.updateDynamic("valueBalloonsEnabled")(valueBalloonsEnabled)
-    __obj.updateDynamic("zoomable")(zoomable)
+    val __obj = js.Dynamic.literal(bulletSize = bulletSize, bulletsEnabled = bulletsEnabled, categoryBalloonAlpha = categoryBalloonAlpha, categoryBalloonColor = categoryBalloonColor, categoryBalloonDateFormats = categoryBalloonDateFormats, categoryBalloonEnabled = categoryBalloonEnabled, cursorAlpha = cursorAlpha, cursorColor = cursorColor, cursorPosition = cursorPosition, enabled = enabled, pan = pan, valueBalloonsEnabled = valueBalloonsEnabled, zoomable = zoomable)
+  
     __obj.asInstanceOf[ChartCursorSettings]
   }
 }

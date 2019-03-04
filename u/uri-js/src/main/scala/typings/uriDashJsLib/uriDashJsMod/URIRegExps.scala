@@ -38,20 +38,8 @@ object URIRegExps {
     PCT_ENCODED: stdLib.RegExp,
     UNRESERVED: stdLib.RegExp
   ): URIRegExps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ESCAPE")(ESCAPE)
-    __obj.updateDynamic("IPV4ADDRESS")(IPV4ADDRESS)
-    __obj.updateDynamic("IPV6ADDRESS")(IPV6ADDRESS)
-    __obj.updateDynamic("NOT_FRAGMENT")(NOT_FRAGMENT)
-    __obj.updateDynamic("NOT_HOST")(NOT_HOST)
-    __obj.updateDynamic("NOT_PATH")(NOT_PATH)
-    __obj.updateDynamic("NOT_PATH_NOSCHEME")(NOT_PATH_NOSCHEME)
-    __obj.updateDynamic("NOT_QUERY")(NOT_QUERY)
-    __obj.updateDynamic("NOT_SCHEME")(NOT_SCHEME)
-    __obj.updateDynamic("NOT_USERINFO")(NOT_USERINFO)
-    __obj.updateDynamic("OTHER_CHARS")(OTHER_CHARS)
-    __obj.updateDynamic("PCT_ENCODED")(PCT_ENCODED)
-    __obj.updateDynamic("UNRESERVED")(UNRESERVED)
+    val __obj = js.Dynamic.literal(ESCAPE = ESCAPE, IPV4ADDRESS = IPV4ADDRESS, IPV6ADDRESS = IPV6ADDRESS, NOT_FRAGMENT = NOT_FRAGMENT, NOT_HOST = NOT_HOST, NOT_PATH = NOT_PATH, NOT_PATH_NOSCHEME = NOT_PATH_NOSCHEME, NOT_QUERY = NOT_QUERY, NOT_SCHEME = NOT_SCHEME, NOT_USERINFO = NOT_USERINFO, OTHER_CHARS = OTHER_CHARS, PCT_ENCODED = PCT_ENCODED, UNRESERVED = UNRESERVED)
+  
     __obj.asInstanceOf[URIRegExps]
   }
 }

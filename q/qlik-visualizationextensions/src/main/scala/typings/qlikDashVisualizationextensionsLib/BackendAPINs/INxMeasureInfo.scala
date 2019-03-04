@@ -77,19 +77,8 @@ object INxMeasureInfo {
     qReverseSort: scala.Boolean,
     qSortIndicator: SortIndicatorType
   ): INxMeasureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
-    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
-    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qError")(qError)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
-    __obj.updateDynamic("qMax")(qMax)
-    __obj.updateDynamic("qMin")(qMin)
-    __obj.updateDynamic("qNumFormat")(qNumFormat)
-    __obj.updateDynamic("qReverseSort")(qReverseSort)
-    __obj.updateDynamic("qSortIndicator")(qSortIndicator)
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qError = qError, qFallbackTitle = qFallbackTitle, qIsAutoFormat = qIsAutoFormat, qMax = qMax, qMin = qMin, qNumFormat = qNumFormat, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator)
+  
     __obj.asInstanceOf[INxMeasureInfo]
   }
 }

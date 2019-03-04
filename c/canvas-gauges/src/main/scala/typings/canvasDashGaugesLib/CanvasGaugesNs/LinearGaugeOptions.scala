@@ -124,8 +124,7 @@ object LinearGaugeOptions {
     valueTextShadow: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null
   ): LinearGaugeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(renderTo = renderTo.asInstanceOf[js.Any])
     if (!js.isUndefined(animateOnInit)) __obj.updateDynamic("animateOnInit")(animateOnInit)
     if (!js.isUndefined(animatedValue)) __obj.updateDynamic("animatedValue")(animatedValue)
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)

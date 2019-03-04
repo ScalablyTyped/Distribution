@@ -43,11 +43,8 @@ object Binding {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     target: ObjectReference
   ): Binding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, target = target)
+  
     __obj.asInstanceOf[Binding]
   }
 }

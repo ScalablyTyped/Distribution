@@ -22,10 +22,7 @@ object Action {
     prefix: java.lang.String = null,
     slug: java.lang.String = null
   ): Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(action = action, issue = issue, raw = raw)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (slug != null) __obj.updateDynamic("slug")(slug)
     __obj.asInstanceOf[Action]

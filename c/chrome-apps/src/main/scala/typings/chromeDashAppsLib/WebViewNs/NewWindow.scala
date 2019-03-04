@@ -23,9 +23,8 @@ object NewWindow {
     attach: js.Function1[chromeDashAppsLib.HTMLWebViewElement, scala.Unit],
     discard: js.Function0[scala.Unit]
   ): NewWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("discard")(discard)
+    val __obj = js.Dynamic.literal(attach = attach, discard = discard)
+  
     __obj.asInstanceOf[NewWindow]
   }
 }

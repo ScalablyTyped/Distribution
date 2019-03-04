@@ -13,8 +13,8 @@ trait TempFileResponse extends js.Object {
 object TempFileResponse {
   @scala.inline
   def apply(apFilePath: java.lang.String): TempFileResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apFilePath")(apFilePath)
+    val __obj = js.Dynamic.literal(apFilePath = apFilePath)
+  
     __obj.asInstanceOf[TempFileResponse]
   }
 }

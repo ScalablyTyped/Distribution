@@ -14,10 +14,8 @@ trait Anon_High extends js.Object {
 object Anon_High {
   @scala.inline
   def apply(high: scala.Double, low: scala.Double, unsigned: scala.Boolean): Anon_High = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("unsigned")(unsigned)
+    val __obj = js.Dynamic.literal(high = high, low = low, unsigned = unsigned)
+  
     __obj.asInstanceOf[Anon_High]
   }
 }

@@ -30,12 +30,8 @@ object ASPxClientNavBarGroupClickEventArgs {
     htmlEvent: js.Object,
     processOnServer: scala.Boolean
   ): ASPxClientNavBarGroupClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(cancel = cancel, group = group, htmlElement = htmlElement, htmlEvent = htmlEvent, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[ASPxClientNavBarGroupClickEventArgs]
   }
 }

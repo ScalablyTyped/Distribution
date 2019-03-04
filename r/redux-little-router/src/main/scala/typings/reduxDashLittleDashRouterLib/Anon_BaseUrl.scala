@@ -22,11 +22,7 @@ object Anon_BaseUrl {
     url: java.lang.String,
     passRouterStateToReducer: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_BaseUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, query = query, url = url)
     if (!js.isUndefined(passRouterStateToReducer)) __obj.updateDynamic("passRouterStateToReducer")(passRouterStateToReducer)
     __obj.asInstanceOf[Anon_BaseUrl]
   }

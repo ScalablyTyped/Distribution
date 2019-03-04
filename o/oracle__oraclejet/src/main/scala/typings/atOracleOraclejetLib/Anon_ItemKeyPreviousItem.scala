@@ -22,11 +22,7 @@ object Anon_ItemKeyPreviousItem {
     previousKey: K,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ItemKeyPreviousItem[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("previousItem")(previousItem)
-    __obj.updateDynamic("previousKey")(previousKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(item = item, key = key.asInstanceOf[js.Any], previousItem = previousItem, previousKey = previousKey.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ItemKeyPreviousItem[K]]
   }

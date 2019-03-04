@@ -13,9 +13,8 @@ trait AdvancedEncryptionSchemePKCS1 extends AdvancedEncryptionScheme {
 object AdvancedEncryptionSchemePKCS1 {
   @scala.inline
   def apply(padding: scala.Double, scheme: nodeDashRsaLib.nodeDashRsaLibStrings.pkcs1): AdvancedEncryptionSchemePKCS1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(padding = padding, scheme = scheme)
+  
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1]
   }
 }

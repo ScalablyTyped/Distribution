@@ -16,9 +16,8 @@ object Anon_Dom {
     dom: stdLib.Node,
     update: js.Function1[prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], scala.Boolean]
   ): Anon_Dom[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dom")(dom)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(dom = dom, update = update)
+  
     __obj.asInstanceOf[Anon_Dom[S]]
   }
 }

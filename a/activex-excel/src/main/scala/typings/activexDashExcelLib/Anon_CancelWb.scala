@@ -13,9 +13,8 @@ trait Anon_CancelWb extends js.Object {
 object Anon_CancelWb {
   @scala.inline
   def apply(Cancel: scala.Boolean, Wb: activexDashExcelLib.ExcelNs.Workbook): Anon_CancelWb = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Wb = Wb)
+  
     __obj.asInstanceOf[Anon_CancelWb]
   }
 }

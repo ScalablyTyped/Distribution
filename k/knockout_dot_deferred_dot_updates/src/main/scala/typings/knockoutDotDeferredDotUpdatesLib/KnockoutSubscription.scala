@@ -12,8 +12,8 @@ trait KnockoutSubscription extends js.Object {
 object KnockoutSubscription {
   @scala.inline
   def apply(deferUpdates: scala.Boolean): KnockoutSubscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates)
+  
     __obj.asInstanceOf[KnockoutSubscription]
   }
 }

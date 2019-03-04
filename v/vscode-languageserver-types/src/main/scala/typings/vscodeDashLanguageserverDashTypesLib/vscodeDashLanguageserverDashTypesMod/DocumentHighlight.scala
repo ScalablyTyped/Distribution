@@ -19,8 +19,7 @@ trait DocumentHighlight extends js.Object {
 object DocumentHighlight {
   @scala.inline
   def apply(range: Range, kind: DocumentHighlightKind = null): DocumentHighlight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(range = range)
     if (kind != null) __obj.updateDynamic("kind")(kind)
     __obj.asInstanceOf[DocumentHighlight]
   }

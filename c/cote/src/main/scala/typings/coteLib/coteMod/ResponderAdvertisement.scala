@@ -25,8 +25,7 @@ object ResponderAdvertisement {
     respondsTo: js.Array[java.lang.String] = null,
     subset: java.lang.String = null
   ): ResponderAdvertisement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (key != null) __obj.updateDynamic("key")(key)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo)

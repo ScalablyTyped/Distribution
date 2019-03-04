@@ -46,15 +46,8 @@ object PathFigure {
     startX: scala.Double,
     startY: scala.Double
   ): PathFigure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("equalsApprox")(equalsApprox)
-    __obj.updateDynamic("isFilled")(isFilled)
-    __obj.updateDynamic("isShadowed")(isShadowed)
-    __obj.updateDynamic("segments")(segments)
-    __obj.updateDynamic("startX")(startX)
-    __obj.updateDynamic("startY")(startY)
+    val __obj = js.Dynamic.literal(add = add, copy = copy, equalsApprox = equalsApprox, isFilled = isFilled, isShadowed = isShadowed, segments = segments, startX = startX, startY = startY)
+  
     __obj.asInstanceOf[PathFigure]
   }
 }

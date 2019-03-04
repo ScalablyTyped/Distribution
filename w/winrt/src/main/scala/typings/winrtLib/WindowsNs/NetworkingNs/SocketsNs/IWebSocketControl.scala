@@ -20,11 +20,8 @@ object IWebSocketControl {
     serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential,
     supportedProtocols: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
   ): IWebSocketControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outboundBufferSizeInBytes")(outboundBufferSizeInBytes)
-    __obj.updateDynamic("proxyCredential")(proxyCredential)
-    __obj.updateDynamic("serverCredential")(serverCredential)
-    __obj.updateDynamic("supportedProtocols")(supportedProtocols)
+    val __obj = js.Dynamic.literal(outboundBufferSizeInBytes = outboundBufferSizeInBytes, proxyCredential = proxyCredential, serverCredential = serverCredential, supportedProtocols = supportedProtocols)
+  
     __obj.asInstanceOf[IWebSocketControl]
   }
 }

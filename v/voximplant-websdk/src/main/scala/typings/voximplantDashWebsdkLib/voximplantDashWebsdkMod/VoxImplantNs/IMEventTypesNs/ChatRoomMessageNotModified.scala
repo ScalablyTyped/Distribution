@@ -36,11 +36,8 @@ object ChatRoomMessageNotModified {
     private_message: java.lang.String,
     room: java.lang.String
   ): ChatRoomMessageNotModified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("private_message")(private_message)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(code = code, message_id = message_id, private_message = private_message, room = room)
+  
     __obj.asInstanceOf[ChatRoomMessageNotModified]
   }
 }

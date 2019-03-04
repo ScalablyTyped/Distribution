@@ -19,9 +19,8 @@ trait ASPxClientGridViewFocusedCellChangingEventArgs extends ASPxClientCancelEve
 object ASPxClientGridViewFocusedCellChangingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, cellInfo: ASPxClientGridViewCellInfo): ASPxClientGridViewFocusedCellChangingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("cellInfo")(cellInfo)
+    val __obj = js.Dynamic.literal(cancel = cancel, cellInfo = cellInfo)
+  
     __obj.asInstanceOf[ASPxClientGridViewFocusedCellChangingEventArgs]
   }
 }

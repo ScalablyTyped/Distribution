@@ -60,8 +60,7 @@ object CharacteristicOptions {
     secure: js.Array[blenoLib.Property] = null,
     value: nodeLib.Buffer = null
   ): CharacteristicOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(uuid = uuid)
     if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors)
     if (onIndicate != null) __obj.updateDynamic("onIndicate")(onIndicate)
     if (onNotify != null) __obj.updateDynamic("onNotify")(onNotify)

@@ -24,13 +24,8 @@ object VRFrameData {
     rightViewMatrix: stdLib.Float32Array,
     timestamp: scala.Double
   ): VRFrameData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leftProjectionMatrix")(leftProjectionMatrix)
-    __obj.updateDynamic("leftViewMatrix")(leftViewMatrix)
-    __obj.updateDynamic("pose")(pose)
-    __obj.updateDynamic("rightProjectionMatrix")(rightProjectionMatrix)
-    __obj.updateDynamic("rightViewMatrix")(rightViewMatrix)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(leftProjectionMatrix = leftProjectionMatrix, leftViewMatrix = leftViewMatrix, pose = pose, rightProjectionMatrix = rightProjectionMatrix, rightViewMatrix = rightViewMatrix, timestamp = timestamp)
+  
     __obj.asInstanceOf[VRFrameData]
   }
 }

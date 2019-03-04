@@ -24,13 +24,8 @@ object GlideEmailOutbound {
     setReplyTo: js.Function1[java.lang.String, scala.Unit],
     setSubject: js.Function1[java.lang.String, scala.Unit]
   ): GlideEmailOutbound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAddress")(addAddress)
-    __obj.updateDynamic("getSubject")(getSubject)
-    __obj.updateDynamic("setBody")(setBody)
-    __obj.updateDynamic("setFrom")(setFrom)
-    __obj.updateDynamic("setReplyTo")(setReplyTo)
-    __obj.updateDynamic("setSubject")(setSubject)
+    val __obj = js.Dynamic.literal(addAddress = addAddress, getSubject = getSubject, setBody = setBody, setFrom = setFrom, setReplyTo = setReplyTo, setSubject = setSubject)
+  
     __obj.asInstanceOf[GlideEmailOutbound]
   }
 }

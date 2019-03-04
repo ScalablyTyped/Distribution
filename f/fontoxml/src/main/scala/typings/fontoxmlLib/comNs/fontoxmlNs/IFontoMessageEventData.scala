@@ -15,10 +15,8 @@ trait IFontoMessageEventData extends js.Object {
 object IFontoMessageEventData {
   @scala.inline
   def apply(command: java.lang.String, metadata: js.Any, scope: IInvocator, `type`: java.lang.String): IFontoMessageEventData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(command = command, metadata = metadata, scope = scope)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IFontoMessageEventData]
   }
 }

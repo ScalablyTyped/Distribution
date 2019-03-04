@@ -13,9 +13,8 @@ trait Anon_Classes extends js.Object {
 object Anon_Classes {
   @scala.inline
   def apply(classes: jqueryDashGrayLib.jqueryDashGrayMod.Classes, fade: scala.Boolean): Anon_Classes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classes")(classes)
-    __obj.updateDynamic("fade")(fade)
+    val __obj = js.Dynamic.literal(classes = classes, fade = fade)
+  
     __obj.asInstanceOf[Anon_Classes]
   }
 }

@@ -22,9 +22,8 @@ object Topology {
     bbox: geojsonLib.geojsonMod.BBox = null,
     transform: Transform = null
   ): Topology[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arcs")(arcs)
-    __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arcs = arcs, objects = objects.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform)
     __obj.asInstanceOf[Topology[T]]

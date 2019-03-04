@@ -37,16 +37,8 @@ object Comment {
     value: java.lang.String = null,
     valueRange: Range = null
   ): Comment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("rawValue")(rawValue)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(anchor = anchor, comment = comment, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, rawValue = rawValue, tag = tag, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`)
     if (context != null) __obj.updateDynamic("context")(context)
     if (error != null) __obj.updateDynamic("error")(error)
     if (range != null) __obj.updateDynamic("range")(range)

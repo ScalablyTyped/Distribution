@@ -13,9 +13,8 @@ trait Anon_GetContext extends js.Object {
 object Anon_GetContext {
   @scala.inline
   def apply(getContext: js.Function0[js.Any], style: js.Any): Anon_GetContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(getContext = getContext, style = style)
+  
     __obj.asInstanceOf[Anon_GetContext]
   }
 }

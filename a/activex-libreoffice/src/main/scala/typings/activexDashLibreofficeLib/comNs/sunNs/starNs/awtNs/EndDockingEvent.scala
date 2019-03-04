@@ -24,11 +24,8 @@ object EndDockingEvent {
     bCancelled: scala.Boolean,
     bFloating: scala.Boolean
   ): EndDockingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("WindowRectangle")(WindowRectangle)
-    __obj.updateDynamic("bCancelled")(bCancelled)
-    __obj.updateDynamic("bFloating")(bFloating)
+    val __obj = js.Dynamic.literal(Source = Source, WindowRectangle = WindowRectangle, bCancelled = bCancelled, bFloating = bFloating)
+  
     __obj.asInstanceOf[EndDockingEvent]
   }
 }

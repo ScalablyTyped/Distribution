@@ -29,11 +29,7 @@ object Envelope {
     zmax: scala.Int | scala.Double = null,
     zmin: scala.Int | scala.Double = null
   ): Envelope = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xmax")(xmax)
-    __obj.updateDynamic("xmin")(xmin)
-    __obj.updateDynamic("ymax")(ymax)
-    __obj.updateDynamic("ymin")(ymin)
+    val __obj = js.Dynamic.literal(xmax = xmax, xmin = xmin, ymax = ymax, ymin = ymin)
     if (mmax != null) __obj.updateDynamic("mmax")(mmax.asInstanceOf[js.Any])
     if (mmin != null) __obj.updateDynamic("mmin")(mmin.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

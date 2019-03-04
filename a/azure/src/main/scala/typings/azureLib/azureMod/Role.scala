@@ -13,9 +13,8 @@ trait Role extends js.Object {
 object Role {
   @scala.inline
   def apply(instances: org.scalablytyped.runtime.StringDictionary[RoleInstance], name: java.lang.String): Role = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(instances = instances, name = name)
+  
     __obj.asInstanceOf[Role]
   }
 }

@@ -26,15 +26,8 @@ object DataPilotSourceHierarchy {
     release: js.Function0[scala.Unit],
     setName: js.Function1[java.lang.String, scala.Unit]
   ): DataPilotSourceHierarchy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Levels")(Levels)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLevels")(getLevels)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(Levels = Levels, Name = Name, acquire = acquire, getLevels = getLevels, getName = getName, queryInterface = queryInterface, release = release, setName = setName)
+  
     __obj.asInstanceOf[DataPilotSourceHierarchy]
   }
 }

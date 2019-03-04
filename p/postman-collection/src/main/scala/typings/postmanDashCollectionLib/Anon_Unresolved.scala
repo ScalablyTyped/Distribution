@@ -12,8 +12,8 @@ trait Anon_Unresolved extends js.Object {
 object Anon_Unresolved {
   @scala.inline
   def apply(unresolved: scala.Boolean): Anon_Unresolved = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unresolved")(unresolved)
+    val __obj = js.Dynamic.literal(unresolved = unresolved)
+  
     __obj.asInstanceOf[Anon_Unresolved]
   }
 }

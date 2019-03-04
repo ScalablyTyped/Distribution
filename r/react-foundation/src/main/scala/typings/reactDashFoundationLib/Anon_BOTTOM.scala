@@ -20,11 +20,8 @@ object Anon_BOTTOM {
     STRETCH: reactDashFoundationLib.enumsMod.VerticalAlignments,
     TOP: reactDashFoundationLib.enumsMod.VerticalAlignments
   ): Anon_BOTTOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("MIDDLE")(MIDDLE)
-    __obj.updateDynamic("STRETCH")(STRETCH)
-    __obj.updateDynamic("TOP")(TOP)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, MIDDLE = MIDDLE, STRETCH = STRETCH, TOP = TOP)
+  
     __obj.asInstanceOf[Anon_BOTTOM]
   }
 }

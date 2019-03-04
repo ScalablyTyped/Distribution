@@ -81,16 +81,8 @@ object RoutersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): RoutersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getRouterStatus")(getRouterStatus)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, getRouterStatus = getRouterStatus, insert = insert, list = list, patch = patch, preview = preview, update = update)
+  
     __obj.asInstanceOf[RoutersResource]
   }
 }

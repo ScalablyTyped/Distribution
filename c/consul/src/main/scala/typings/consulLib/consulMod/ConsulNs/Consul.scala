@@ -38,17 +38,8 @@ object Consul {
     status: Status,
     watch: js.Function1[consulLib.consulMod.ConsulNs.WatchNs.Options, Watch]
   ): Consul = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acl")(acl)
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("catalog")(catalog)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("health")(health)
-    __obj.updateDynamic("kv")(kv)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("watch")(watch)
+    val __obj = js.Dynamic.literal(acl = acl, agent = agent, catalog = catalog, event = event, health = health, kv = kv, lock = lock, session = session, status = status, watch = watch)
+  
     __obj.asInstanceOf[Consul]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_CellClassName extends js.Object {
 object Anon_CellClassName {
   @scala.inline
   def apply(cellClassName: java.lang.String, className: java.lang.String): Anon_CellClassName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cellClassName")(cellClassName)
-    __obj.updateDynamic("className")(className)
+    val __obj = js.Dynamic.literal(cellClassName = cellClassName, className = className)
+  
     __obj.asInstanceOf[Anon_CellClassName]
   }
 }

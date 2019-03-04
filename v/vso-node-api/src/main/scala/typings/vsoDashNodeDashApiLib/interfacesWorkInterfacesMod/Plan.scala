@@ -72,18 +72,8 @@ object Plan {
     url: java.lang.String,
     userPermissions: PlanUserPermissions
   ): Plan = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("createdByIdentity")(createdByIdentity)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("modifiedByIdentity")(modifiedByIdentity)
-    __obj.updateDynamic("modifiedDate")(modifiedDate)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("userPermissions")(userPermissions)
+    val __obj = js.Dynamic.literal(createdByIdentity = createdByIdentity, createdDate = createdDate, description = description, id = id, modifiedByIdentity = modifiedByIdentity, modifiedDate = modifiedDate, name = name, properties = properties, revision = revision, url = url, userPermissions = userPermissions)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Plan]
   }
 }

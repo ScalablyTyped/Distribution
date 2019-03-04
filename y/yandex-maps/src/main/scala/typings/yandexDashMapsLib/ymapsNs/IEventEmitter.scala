@@ -12,8 +12,8 @@ trait IEventEmitter extends js.Object {
 object IEventEmitter {
   @scala.inline
   def apply(events: IEventManager): IEventEmitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(events = events)
+  
     __obj.asInstanceOf[IEventEmitter]
   }
 }

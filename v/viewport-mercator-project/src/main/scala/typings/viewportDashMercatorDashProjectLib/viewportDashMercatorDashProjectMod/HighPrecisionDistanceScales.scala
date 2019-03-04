@@ -20,13 +20,8 @@ object HighPrecisionDistanceScales {
     pixelsPerMeter: js.Tuple3[scala.Double, scala.Double, scala.Double],
     pixelsPerMeter2: js.Tuple3[scala.Double, scala.Double, scala.Double]
   ): HighPrecisionDistanceScales = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("degreesPerPixel")(degreesPerPixel)
-    __obj.updateDynamic("metersPerPixel")(metersPerPixel)
-    __obj.updateDynamic("pixelsPerDegree")(pixelsPerDegree)
-    __obj.updateDynamic("pixelsPerDegree2")(pixelsPerDegree2)
-    __obj.updateDynamic("pixelsPerMeter")(pixelsPerMeter)
-    __obj.updateDynamic("pixelsPerMeter2")(pixelsPerMeter2)
+    val __obj = js.Dynamic.literal(degreesPerPixel = degreesPerPixel, metersPerPixel = metersPerPixel, pixelsPerDegree = pixelsPerDegree, pixelsPerDegree2 = pixelsPerDegree2, pixelsPerMeter = pixelsPerMeter, pixelsPerMeter2 = pixelsPerMeter2)
+  
     __obj.asInstanceOf[HighPrecisionDistanceScales]
   }
 }

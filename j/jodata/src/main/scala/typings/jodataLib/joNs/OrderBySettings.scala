@@ -23,14 +23,8 @@ object OrderBySettings {
     reset: js.Function0[scala.Unit],
     toString: js.Function0[java.lang.String]
   ): OrderBySettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultOrder")(DefaultOrder)
-    __obj.updateDynamic("DefaultProperty")(DefaultProperty)
-    __obj.updateDynamic("Order")(Order)
-    __obj.updateDynamic("Property")(Property)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(DefaultOrder = DefaultOrder, DefaultProperty = DefaultProperty, Order = Order, Property = Property, isSet = isSet, reset = reset, toString = toString)
+  
     __obj.asInstanceOf[OrderBySettings]
   }
 }

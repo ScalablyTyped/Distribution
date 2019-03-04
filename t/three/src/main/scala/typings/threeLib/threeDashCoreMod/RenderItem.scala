@@ -28,14 +28,8 @@ object RenderItem {
     renderOrder: scala.Double,
     z: scala.Double
   ): RenderItem = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("renderOrder")(renderOrder)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], group = group, id = id, material = material, program = program, renderOrder = renderOrder, z = z)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[RenderItem]
   }
 }

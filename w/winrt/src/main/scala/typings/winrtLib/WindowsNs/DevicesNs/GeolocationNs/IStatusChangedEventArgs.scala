@@ -12,8 +12,8 @@ trait IStatusChangedEventArgs extends js.Object {
 object IStatusChangedEventArgs {
   @scala.inline
   def apply(status: PositionStatus): IStatusChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
+  
     __obj.asInstanceOf[IStatusChangedEventArgs]
   }
 }

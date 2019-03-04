@@ -13,9 +13,8 @@ trait TextPosition extends js.Object {
 object TextPosition {
   @scala.inline
   def apply(Paragraph: scala.Double, PositionInParagraph: scala.Double): TextPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Paragraph")(Paragraph)
-    __obj.updateDynamic("PositionInParagraph")(PositionInParagraph)
+    val __obj = js.Dynamic.literal(Paragraph = Paragraph, PositionInParagraph = PositionInParagraph)
+  
     __obj.asInstanceOf[TextPosition]
   }
 }

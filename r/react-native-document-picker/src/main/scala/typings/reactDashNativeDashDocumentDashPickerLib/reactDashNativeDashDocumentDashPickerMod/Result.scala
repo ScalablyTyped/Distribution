@@ -20,10 +20,8 @@ object Result {
     `type`: java.lang.String,
     uri: java.lang.String
   ): Result = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("fileSize")(fileSize)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(fileName = fileName, fileSize = fileSize, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Result]
   }
 }

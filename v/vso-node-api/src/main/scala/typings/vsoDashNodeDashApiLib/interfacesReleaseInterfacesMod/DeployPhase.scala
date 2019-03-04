@@ -20,11 +20,8 @@ object DeployPhase {
     rank: scala.Double,
     workflowTasks: js.Array[WorkflowTask]
   ): DeployPhase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("phaseType")(phaseType)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("workflowTasks")(workflowTasks)
+    val __obj = js.Dynamic.literal(name = name, phaseType = phaseType, rank = rank, workflowTasks = workflowTasks)
+  
     __obj.asInstanceOf[DeployPhase]
   }
 }

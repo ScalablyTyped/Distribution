@@ -22,8 +22,7 @@ object QueueMessageResponse {
     customProperties: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[_] = null,
     location: java.lang.String = null
   ): QueueMessageResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
     if (brokerProperties != null) __obj.updateDynamic("brokerProperties")(brokerProperties)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (customProperties != null) __obj.updateDynamic("customProperties")(customProperties)

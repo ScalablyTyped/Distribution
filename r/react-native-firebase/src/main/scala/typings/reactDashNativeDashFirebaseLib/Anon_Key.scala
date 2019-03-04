@@ -12,8 +12,8 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(TIMESTAMP: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TIMESTAMP")(TIMESTAMP)
+    val __obj = js.Dynamic.literal(TIMESTAMP = TIMESTAMP)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

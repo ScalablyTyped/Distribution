@@ -17,8 +17,8 @@ trait Anon_PasswordSavingEnabled extends js.Object {
 object Anon_PasswordSavingEnabled {
   @scala.inline
   def apply(passwordSavingEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting): Anon_PasswordSavingEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passwordSavingEnabled")(passwordSavingEnabled)
+    val __obj = js.Dynamic.literal(passwordSavingEnabled = passwordSavingEnabled)
+  
     __obj.asInstanceOf[Anon_PasswordSavingEnabled]
   }
 }

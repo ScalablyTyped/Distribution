@@ -13,10 +13,8 @@ trait EditClickEventArgs extends EventArgs {
 object EditClickEventArgs {
   @scala.inline
   def apply(htmlElement: js.Any, htmlEvent: js.Any, sender: Control): EditClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, sender = sender)
+  
     __obj.asInstanceOf[EditClickEventArgs]
   }
 }

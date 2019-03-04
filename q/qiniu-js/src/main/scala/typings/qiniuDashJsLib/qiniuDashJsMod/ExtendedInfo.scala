@@ -18,9 +18,7 @@ object ExtendedInfo {
     error: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[qiniuDashJsLib.Anon_Type | scala.Double | java.lang.String] = null
   ): ExtendedInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(code = code, error = error)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtendedInfo]
   }

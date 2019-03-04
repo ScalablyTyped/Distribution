@@ -13,9 +13,8 @@ trait NxStackPage extends js.Object {
 object NxStackPage {
   @scala.inline
   def apply(qArea: Rect, qData: js.Array[NxStackedPivotCell]): NxStackPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qArea")(qArea)
-    __obj.updateDynamic("qData")(qData)
+    val __obj = js.Dynamic.literal(qArea = qArea, qData = qData)
+  
     __obj.asInstanceOf[NxStackPage]
   }
 }

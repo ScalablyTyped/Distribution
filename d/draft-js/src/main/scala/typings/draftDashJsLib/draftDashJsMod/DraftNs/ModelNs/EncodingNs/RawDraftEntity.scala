@@ -21,9 +21,8 @@ object RawDraftEntity {
     mutability: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityMutability,
     `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType
   ): RawDraftEntity = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("mutability")(mutability)
+    val __obj = js.Dynamic.literal(data = data, mutability = mutability)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawDraftEntity]
   }
 }

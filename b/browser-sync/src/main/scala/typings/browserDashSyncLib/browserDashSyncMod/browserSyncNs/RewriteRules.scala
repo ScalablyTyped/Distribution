@@ -30,7 +30,8 @@ object RewriteRules {
     ] = null,
     replace: java.lang.String = null
   ): RewriteRules = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("match")(`match`)
     if (fn != null) __obj.updateDynamic("fn")(fn)
     if (replace != null) __obj.updateDynamic("replace")(replace)
     __obj.asInstanceOf[RewriteRules]

@@ -20,10 +20,7 @@ object Anon_CssModule {
     onClickHandler: js.Function0[scala.Unit],
     cssModule: reactstrapLib.reactstrapMod.CSSModule = null
   ): Anon_CssModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("directionText")(directionText)
-    __obj.updateDynamic("onClickHandler")(onClickHandler)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], directionText = directionText, onClickHandler = onClickHandler)
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     __obj.asInstanceOf[Anon_CssModule]
   }

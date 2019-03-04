@@ -57,10 +57,8 @@ object IState {
     reset: js.Function0[scala.Unit],
     set: js.Function1[js.Object, scala.Unit]
   ): IState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrent")(getCurrent)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(getCurrent = getCurrent, reset = reset, set = set)
+  
     __obj.asInstanceOf[IState]
   }
 }

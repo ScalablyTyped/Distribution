@@ -34,11 +34,8 @@ object GeneralName {
     `type`: scala.Double,
     value: js.Any
   ): GeneralName = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GeneralName]
   }
 }

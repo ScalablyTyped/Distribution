@@ -13,9 +13,8 @@ trait Cell extends js.Object {
 object Cell {
   @scala.inline
   def apply(cell: scala.Double, row: scala.Double): Cell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cell = cell, row = row)
+  
     __obj.asInstanceOf[Cell]
   }
 }

@@ -38,10 +38,8 @@ object XConfigurationControllerBroadcaster {
     notifyEvent: js.Function1[ConfigurationChangeEvent, scala.Unit],
     removeConfigurationChangeListener: js.Function1[XConfigurationChangeListener, scala.Unit]
   ): XConfigurationControllerBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addConfigurationChangeListener")(addConfigurationChangeListener)
-    __obj.updateDynamic("notifyEvent")(notifyEvent)
-    __obj.updateDynamic("removeConfigurationChangeListener")(removeConfigurationChangeListener)
+    val __obj = js.Dynamic.literal(addConfigurationChangeListener = addConfigurationChangeListener, notifyEvent = notifyEvent, removeConfigurationChangeListener = removeConfigurationChangeListener)
+  
     __obj.asInstanceOf[XConfigurationControllerBroadcaster]
   }
 }

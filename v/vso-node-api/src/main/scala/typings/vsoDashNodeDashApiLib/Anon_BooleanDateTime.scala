@@ -42,22 +42,8 @@ object Anon_BooleanDateTime {
     teamProject: scala.Double,
     treePath: scala.Double
   ): Anon_BooleanDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("dateTime")(dateTime)
-    __obj.updateDynamic("double")(double)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("picklistDouble")(picklistDouble)
-    __obj.updateDynamic("picklistInteger")(picklistInteger)
-    __obj.updateDynamic("picklistString")(picklistString)
-    __obj.updateDynamic("plainText")(plainText)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("teamProject")(teamProject)
-    __obj.updateDynamic("treePath")(treePath)
+    val __obj = js.Dynamic.literal(boolean = boolean, dateTime = dateTime, double = double, guid = guid, history = history, html = html, identity = identity, integer = integer, picklistDouble = picklistDouble, picklistInteger = picklistInteger, picklistString = picklistString, plainText = plainText, string = string, teamProject = teamProject, treePath = treePath)
+  
     __obj.asInstanceOf[Anon_BooleanDateTime]
   }
 }

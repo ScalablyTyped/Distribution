@@ -44,8 +44,7 @@ object Anon_ActiveIndexAutoPlay {
     ride: reactstrapLib.reactstrapLibStrings.carousel = null,
     slide: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveIndexAutoPlay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)

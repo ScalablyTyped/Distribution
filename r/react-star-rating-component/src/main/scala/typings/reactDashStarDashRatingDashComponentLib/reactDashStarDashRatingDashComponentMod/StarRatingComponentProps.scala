@@ -102,9 +102,7 @@ object StarRatingComponentProps {
     starColor: java.lang.String = null,
     starCount: scala.Int | scala.Double = null
   ): StarRatingComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
     if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor)
     if (onStarClick != null) __obj.updateDynamic("onStarClick")(onStarClick)

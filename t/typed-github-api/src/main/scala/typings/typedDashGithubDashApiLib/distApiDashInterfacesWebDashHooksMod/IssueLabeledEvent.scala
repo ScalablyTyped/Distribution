@@ -18,10 +18,8 @@ object IssueLabeledEvent {
     issue: typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.Issue,
     label: typedDashGithubDashApiLib.distApiDashInterfacesLabelMod.Label
   ): IssueLabeledEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], issue = issue, label = label)
+  
     __obj.asInstanceOf[IssueLabeledEvent]
   }
 }

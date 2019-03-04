@@ -26,14 +26,8 @@ object PluginMount {
     Source: java.lang.String,
     Type: java.lang.String
   ): PluginMount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Destination")(Destination)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Options")(Options)
-    __obj.updateDynamic("Settable")(Settable)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Description = Description, Destination = Destination, Name = Name, Options = Options, Settable = Settable, Source = Source, Type = Type)
+  
     __obj.asInstanceOf[PluginMount]
   }
 }

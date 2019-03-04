@@ -55,10 +55,7 @@ object RecorderManagerStartOptions {
     numberOfChannels: scala.Int | scala.Double = null,
     sampleRate: scala.Int | scala.Double = null
   ): RecorderManagerStartOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encodeBitRate")(encodeBitRate)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("frameSize")(frameSize)
+    val __obj = js.Dynamic.literal(encodeBitRate = encodeBitRate, format = format, frameSize = frameSize)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (numberOfChannels != null) __obj.updateDynamic("numberOfChannels")(numberOfChannels.asInstanceOf[js.Any])
     if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])

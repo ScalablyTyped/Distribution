@@ -24,13 +24,8 @@ object Anon_DOWNLEFT {
     RIGHT: scala.Double,
     UP: scala.Double
   ): Anon_DOWNLEFT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DOWN")(DOWN)
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("PG_DOWN")(PG_DOWN)
-    __obj.updateDynamic("PG_UP")(PG_UP)
-    __obj.updateDynamic("RIGHT")(RIGHT)
-    __obj.updateDynamic("UP")(UP)
+    val __obj = js.Dynamic.literal(DOWN = DOWN, LEFT = LEFT, PG_DOWN = PG_DOWN, PG_UP = PG_UP, RIGHT = RIGHT, UP = UP)
+  
     __obj.asInstanceOf[Anon_DOWNLEFT]
   }
 }

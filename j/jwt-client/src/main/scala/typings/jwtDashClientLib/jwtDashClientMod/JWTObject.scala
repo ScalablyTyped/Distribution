@@ -14,10 +14,8 @@ trait JWTObject extends js.Object {
 object JWTObject {
   @scala.inline
   def apply(claim: js.Any, header: JWTHeader, signature: java.lang.String): JWTObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("claim")(claim)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(claim = claim, header = header, signature = signature)
+  
     __obj.asInstanceOf[JWTObject]
   }
 }

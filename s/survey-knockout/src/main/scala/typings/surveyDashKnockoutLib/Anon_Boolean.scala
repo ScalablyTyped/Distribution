@@ -26,14 +26,8 @@ object Anon_Boolean {
     radiogroup: Anon_CellQuestion,
     text: Anon_CellQuestion
   ): Anon_Boolean = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("dropdown")(dropdown)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("radiogroup")(radiogroup)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(boolean = boolean, checkbox = checkbox, comment = comment, dropdown = dropdown, expression = expression, radiogroup = radiogroup, text = text)
+  
     __obj.asInstanceOf[Anon_Boolean]
   }
 }

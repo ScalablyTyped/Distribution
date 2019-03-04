@@ -23,10 +23,8 @@ object ColumnInfo {
     nullable: scala.Boolean,
     `type`: java.lang.String
   ): ColumnInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("nullable")(nullable)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], maxLength = maxLength, nullable = nullable)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ColumnInfo]
   }
 }

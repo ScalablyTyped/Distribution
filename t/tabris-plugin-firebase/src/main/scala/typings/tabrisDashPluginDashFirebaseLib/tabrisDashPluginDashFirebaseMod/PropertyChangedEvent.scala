@@ -15,10 +15,8 @@ trait PropertyChangedEvent[T, U] extends js.Object {
 object PropertyChangedEvent {
   @scala.inline
   def apply[T, U](target: T, timeStamp: scala.Double, `type`: java.lang.String, value: U): PropertyChangedEvent[T, U] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any], timeStamp = timeStamp, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PropertyChangedEvent[T, U]]
   }
 }

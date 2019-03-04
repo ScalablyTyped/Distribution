@@ -14,10 +14,8 @@ trait IButton extends js.Object {
 object IButton {
   @scala.inline
   def apply(LEFT: java.lang.String, MIDDLE: java.lang.String, RIGHT: java.lang.String): IButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LEFT")(LEFT)
-    __obj.updateDynamic("MIDDLE")(MIDDLE)
-    __obj.updateDynamic("RIGHT")(RIGHT)
+    val __obj = js.Dynamic.literal(LEFT = LEFT, MIDDLE = MIDDLE, RIGHT = RIGHT)
+  
     __obj.asInstanceOf[IButton]
   }
 }

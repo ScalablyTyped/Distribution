@@ -20,11 +20,8 @@ object ResponseStatus {
     message: java.lang.String,
     stackTrace: java.lang.String
   ): ResponseStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("stackTrace")(stackTrace)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errors = errors, message = message, stackTrace = stackTrace)
+  
     __obj.asInstanceOf[ResponseStatus]
   }
 }

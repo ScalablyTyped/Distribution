@@ -57,16 +57,8 @@ object ContributedFeature {
     scopes: js.Array[ContributedFeatureSettingScope],
     serviceInstanceType: java.lang.String
   ): ContributedFeature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("defaultState")(defaultState)
-    __obj.updateDynamic("defaultValueRules")(defaultValueRules)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overrideRules")(overrideRules)
-    __obj.updateDynamic("scopes")(scopes)
-    __obj.updateDynamic("serviceInstanceType")(serviceInstanceType)
+    val __obj = js.Dynamic.literal(_links = _links, defaultState = defaultState, defaultValueRules = defaultValueRules, description = description, id = id, name = name, overrideRules = overrideRules, scopes = scopes, serviceInstanceType = serviceInstanceType)
+  
     __obj.asInstanceOf[ContributedFeature]
   }
 }

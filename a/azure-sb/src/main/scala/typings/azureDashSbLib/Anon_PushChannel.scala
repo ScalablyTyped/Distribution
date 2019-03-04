@@ -14,8 +14,7 @@ trait Anon_PushChannel extends js.Object {
 object Anon_PushChannel {
   @scala.inline
   def apply(pushChannel: java.lang.String, tags: js.Array[java.lang.String] = null, templates: js.Any = null): Anon_PushChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pushChannel")(pushChannel)
+    val __obj = js.Dynamic.literal(pushChannel = pushChannel)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (templates != null) __obj.updateDynamic("templates")(templates)
     __obj.asInstanceOf[Anon_PushChannel]

@@ -16,9 +16,8 @@ object Anon_Link {
     link: yeomanDashGeneratorLib.yeomanDashGeneratorLibStrings.weak | yeomanDashGeneratorLib.yeomanDashGeneratorLibStrings.strong,
     local: java.lang.String
   ): Anon_Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    __obj.updateDynamic("local")(local)
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], local = local)
+  
     __obj.asInstanceOf[Anon_Link]
   }
 }

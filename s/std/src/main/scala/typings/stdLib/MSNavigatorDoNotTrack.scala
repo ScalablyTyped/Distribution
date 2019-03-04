@@ -24,13 +24,8 @@ object MSNavigatorDoNotTrack {
     storeSiteSpecificTrackingException: js.Function1[StoreSiteSpecificExceptionsInformation, scala.Unit],
     storeWebWideTrackingException: js.Function1[StoreExceptionsInformation, scala.Unit]
   ): MSNavigatorDoNotTrack = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirmSiteSpecificTrackingException")(confirmSiteSpecificTrackingException)
-    __obj.updateDynamic("confirmWebWideTrackingException")(confirmWebWideTrackingException)
-    __obj.updateDynamic("removeSiteSpecificTrackingException")(removeSiteSpecificTrackingException)
-    __obj.updateDynamic("removeWebWideTrackingException")(removeWebWideTrackingException)
-    __obj.updateDynamic("storeSiteSpecificTrackingException")(storeSiteSpecificTrackingException)
-    __obj.updateDynamic("storeWebWideTrackingException")(storeWebWideTrackingException)
+    val __obj = js.Dynamic.literal(confirmSiteSpecificTrackingException = confirmSiteSpecificTrackingException, confirmWebWideTrackingException = confirmWebWideTrackingException, removeSiteSpecificTrackingException = removeSiteSpecificTrackingException, removeWebWideTrackingException = removeWebWideTrackingException, storeSiteSpecificTrackingException = storeSiteSpecificTrackingException, storeWebWideTrackingException = storeWebWideTrackingException)
+  
     __obj.asInstanceOf[MSNavigatorDoNotTrack]
   }
 }

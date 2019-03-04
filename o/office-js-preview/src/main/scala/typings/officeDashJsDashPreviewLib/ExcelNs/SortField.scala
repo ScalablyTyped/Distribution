@@ -78,8 +78,7 @@ object SortField {
     sortOn: SortOn | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Value | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FontColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Icon = null,
     subField: java.lang.String = null
   ): SortField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
     if (color != null) __obj.updateDynamic("color")(color)
     if (dataOption != null) __obj.updateDynamic("dataOption")(dataOption.asInstanceOf[js.Any])

@@ -26,14 +26,8 @@ object XMLHttpRequestEventTargetEventMap {
     progress: reactLib.Event,
     timeout: reactLib.Event
   ): XMLHttpRequestEventTargetEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadend")(loadend)
-    __obj.updateDynamic("loadstart")(loadstart)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(abort = abort, error = error, load = load, loadend = loadend, loadstart = loadstart, progress = progress, timeout = timeout)
+  
     __obj.asInstanceOf[XMLHttpRequestEventTargetEventMap]
   }
 }

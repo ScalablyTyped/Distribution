@@ -22,9 +22,8 @@ object Anon_ContentType {
     contentType: java.lang.String = null,
     data: js.Any = null
   ): Anon_ContentType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("ejPvtData")(ejPvtData)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(ejPvtData = ejPvtData, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[Anon_ContentType]

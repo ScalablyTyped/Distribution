@@ -12,8 +12,8 @@ trait Anon_Stem extends js.Object {
 object Anon_Stem {
   @scala.inline
   def apply(stem: js.Function1[java.lang.String, java.lang.String]): Anon_Stem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stem")(stem)
+    val __obj = js.Dynamic.literal(stem = stem)
+  
     __obj.asInstanceOf[Anon_Stem]
   }
 }

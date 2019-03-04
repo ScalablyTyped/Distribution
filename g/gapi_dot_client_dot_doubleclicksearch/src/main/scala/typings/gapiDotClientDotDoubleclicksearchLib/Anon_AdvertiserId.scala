@@ -57,14 +57,7 @@ object Anon_AdvertiserId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdvertiserId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advertiserId")(advertiserId)
-    __obj.updateDynamic("agencyId")(agencyId)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("engineAccountId")(engineAccountId)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("startRow")(startRow)
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId, agencyId = agencyId, endDate = endDate, engineAccountId = engineAccountId, rowCount = rowCount, startDate = startDate, startRow = startRow)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

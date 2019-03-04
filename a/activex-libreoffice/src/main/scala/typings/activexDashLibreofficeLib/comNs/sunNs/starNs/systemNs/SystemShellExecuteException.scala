@@ -22,10 +22,8 @@ object SystemShellExecuteException {
     Message: java.lang.String,
     PosixError: scala.Double
   ): SystemShellExecuteException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("PosixError")(PosixError)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, PosixError = PosixError)
+  
     __obj.asInstanceOf[SystemShellExecuteException]
   }
 }

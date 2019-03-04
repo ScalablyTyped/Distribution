@@ -18,8 +18,8 @@ object NotificationResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Notification]
     ]
   ): NotificationResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[NotificationResource]
   }
 }

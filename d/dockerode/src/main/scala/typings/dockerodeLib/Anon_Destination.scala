@@ -22,12 +22,8 @@ object Anon_Destination {
     RW: scala.Boolean,
     Source: java.lang.String
   ): Anon_Destination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Destination")(Destination)
-    __obj.updateDynamic("Mode")(Mode)
-    __obj.updateDynamic("Propagation")(Propagation)
-    __obj.updateDynamic("RW")(RW)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Destination = Destination, Mode = Mode, Propagation = Propagation, RW = RW, Source = Source)
+  
     __obj.asInstanceOf[Anon_Destination]
   }
 }

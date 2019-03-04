@@ -22,11 +22,8 @@ object CreatedNegotiatedContentResult {
     ],
     location: js.Any
   ): CreatedNegotiatedContentResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiController")(apiController)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("executeAsync")(executeAsync)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(apiController = apiController, content = content, executeAsync = executeAsync, location = location)
+  
     __obj.asInstanceOf[CreatedNegotiatedContentResult[T]]
   }
 }

@@ -53,7 +53,8 @@ object IAccountCreationOptions {
     support_url: java.lang.String = null,
     tos_acceptance: stripeLib.Anon_Date = null
   ): IAccountCreationOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (business_logo != null) __obj.updateDynamic("business_logo")(business_logo)
     if (business_name != null) __obj.updateDynamic("business_name")(business_name)
     if (business_primary_color != null) __obj.updateDynamic("business_primary_color")(business_primary_color)

@@ -23,12 +23,8 @@ object UnsafeCachePlugin {
     source: java.lang.String,
     target: java.lang.String
   ): UnsafeCachePlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("filterPredicate")(filterPredicate)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, cache = cache, filterPredicate = filterPredicate, source = source, target = target)
+  
     __obj.asInstanceOf[UnsafeCachePlugin]
   }
 }

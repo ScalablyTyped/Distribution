@@ -12,8 +12,8 @@ trait ILog extends js.Object {
 object ILog {
   @scala.inline
   def apply(debug: js.Function1[/* repeated */ js.Any, scala.Unit]): ILog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
+    val __obj = js.Dynamic.literal(debug = debug)
+  
     __obj.asInstanceOf[ILog]
   }
 }

@@ -96,12 +96,8 @@ object InvitationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
     ]
   ): InvitationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(accept = accept, create = create, delete = delete, get = get, list = list)
+  
     __obj.asInstanceOf[InvitationsResource]
   }
 }

@@ -24,13 +24,8 @@ object DecodedLogGroupEvent {
     owner: java.lang.String,
     subscriptionFilters: js.Array[java.lang.String]
   ): DecodedLogGroupEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logEvents")(logEvents)
-    __obj.updateDynamic("logGroup")(logGroup)
-    __obj.updateDynamic("logStream")(logStream)
-    __obj.updateDynamic("messageType")(messageType)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("subscriptionFilters")(subscriptionFilters)
+    val __obj = js.Dynamic.literal(logEvents = logEvents, logGroup = logGroup, logStream = logStream, messageType = messageType, owner = owner, subscriptionFilters = subscriptionFilters)
+  
     __obj.asInstanceOf[DecodedLogGroupEvent]
   }
 }

@@ -21,10 +21,7 @@ object ToolBarToggleEvent {
     id: java.lang.String = null,
     target: kendoDashUiLib.JQuery = null
   ): ToolBarToggleEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (id != null) __obj.updateDynamic("id")(id)
     if (target != null) __obj.updateDynamic("target")(target)

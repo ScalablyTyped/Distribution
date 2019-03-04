@@ -17,8 +17,7 @@ object InitialPropertiesHyperCube {
     qHyperCubeDef: HyperCubeDef,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): InitialPropertiesHyperCube = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qHyperCubeDef")(qHyperCubeDef)
+    val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitialPropertiesHyperCube]
   }

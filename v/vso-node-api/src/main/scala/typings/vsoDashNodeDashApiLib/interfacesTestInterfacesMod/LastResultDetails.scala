@@ -18,10 +18,8 @@ object LastResultDetails {
     duration: scala.Double,
     runBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   ): LastResultDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dateCompleted")(dateCompleted)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("runBy")(runBy)
+    val __obj = js.Dynamic.literal(dateCompleted = dateCompleted, duration = duration, runBy = runBy)
+  
     __obj.asInstanceOf[LastResultDetails]
   }
 }

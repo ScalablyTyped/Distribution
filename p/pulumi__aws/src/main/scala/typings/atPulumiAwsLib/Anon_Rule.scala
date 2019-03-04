@@ -12,8 +12,8 @@ trait Anon_Rule extends js.Object {
 object Anon_Rule {
   @scala.inline
   def apply(rule: Anon_ApplyServerSideEncryptionByDefault): Anon_Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(rule = rule)
+  
     __obj.asInstanceOf[Anon_Rule]
   }
 }

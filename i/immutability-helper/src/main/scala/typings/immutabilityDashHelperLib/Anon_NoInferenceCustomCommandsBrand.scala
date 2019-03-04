@@ -12,8 +12,8 @@ trait Anon_NoInferenceCustomCommandsBrand extends js.Object {
 object Anon_NoInferenceCustomCommandsBrand {
   @scala.inline
   def apply(__noInferenceCustomCommandsBrand: js.Any): Anon_NoInferenceCustomCommandsBrand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__noInferenceCustomCommandsBrand")(__noInferenceCustomCommandsBrand)
+    val __obj = js.Dynamic.literal(__noInferenceCustomCommandsBrand = __noInferenceCustomCommandsBrand)
+  
     __obj.asInstanceOf[Anon_NoInferenceCustomCommandsBrand]
   }
 }

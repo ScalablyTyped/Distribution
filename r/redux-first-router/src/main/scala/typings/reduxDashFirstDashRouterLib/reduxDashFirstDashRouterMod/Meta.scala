@@ -22,8 +22,7 @@ object Meta {
     query: js.Object = null,
     search: java.lang.String = null
   ): Meta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(location = location)
     if (navigation != null) __obj.updateDynamic("navigation")(navigation)
     if (notFoundPath != null) __obj.updateDynamic("notFoundPath")(notFoundPath)
     if (query != null) __obj.updateDynamic("query")(query)

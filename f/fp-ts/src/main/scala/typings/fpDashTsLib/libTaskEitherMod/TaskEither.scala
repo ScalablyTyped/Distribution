@@ -21,7 +21,7 @@ class TaskEither[L, A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: TaskEither[L, js.Function1[/* b */ B, C]], fb: TaskEither[L, B]): TaskEither[L, C] = js.native
+  def ap_[B, C](`this`: TaskEither[L, js.Function1[/* b */ B, C]], fb: TaskEither[L, B]): TaskEither[L, C] = js.native
   /**
     * Combine two (parallel) effectful actions, keeping only the result of the first
     * @since 1.6.0

@@ -38,10 +38,8 @@ object AdInstance {
     loadAsync: js.Function0[js.Promise[scala.Unit]],
     showAsync: js.Function0[js.Promise[scala.Unit]]
   ): AdInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPlacementID")(getPlacementID)
-    __obj.updateDynamic("loadAsync")(loadAsync)
-    __obj.updateDynamic("showAsync")(showAsync)
+    val __obj = js.Dynamic.literal(getPlacementID = getPlacementID, loadAsync = loadAsync, showAsync = showAsync)
+  
     __obj.asInstanceOf[AdInstance]
   }
 }

@@ -49,8 +49,7 @@ object ScaleImageOptions {
     quality: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): ScaleImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxSize")(maxSize)
+    val __obj = js.Dynamic.literal(maxSize = maxSize)
     if (customResizer != null) __obj.updateDynamic("customResizer")(customResizer)
     if (!js.isUndefined(includeExif)) __obj.updateDynamic("includeExif")(includeExif)
     if (!js.isUndefined(orient)) __obj.updateDynamic("orient")(orient)

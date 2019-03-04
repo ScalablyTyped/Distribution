@@ -23,14 +23,8 @@ object QualifiedTag {
     prefix: java.lang.String,
     uri: java.lang.String
   ): QualifiedTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("isSelfClosing")(isSelfClosing)
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ns")(ns)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(attributes = attributes, isSelfClosing = isSelfClosing, local = local, name = name, ns = ns, prefix = prefix, uri = uri)
+  
     __obj.asInstanceOf[QualifiedTag]
   }
 }

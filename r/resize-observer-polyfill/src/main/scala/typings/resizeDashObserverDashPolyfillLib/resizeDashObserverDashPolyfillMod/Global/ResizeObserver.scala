@@ -18,10 +18,8 @@ object ResizeObserver {
     observe: js.Function1[stdLib.Element, scala.Unit],
     unobserve: js.Function1[stdLib.Element, scala.Unit]
   ): ResizeObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("observe")(observe)
-    __obj.updateDynamic("unobserve")(unobserve)
+    val __obj = js.Dynamic.literal(disconnect = disconnect, observe = observe, unobserve = unobserve)
+  
     __obj.asInstanceOf[ResizeObserver]
   }
 }

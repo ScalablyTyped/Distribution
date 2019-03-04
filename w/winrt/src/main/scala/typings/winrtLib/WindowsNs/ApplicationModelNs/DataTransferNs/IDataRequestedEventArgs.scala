@@ -12,8 +12,8 @@ trait IDataRequestedEventArgs extends js.Object {
 object IDataRequestedEventArgs {
   @scala.inline
   def apply(request: DataRequest): IDataRequestedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(request = request)
+  
     __obj.asInstanceOf[IDataRequestedEventArgs]
   }
 }

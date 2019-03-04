@@ -65,17 +65,8 @@ object JobQueryDetails {
     tables: js.Array[java.lang.String],
     where: java.lang.String
   ): JobQueryDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("tables")(tables)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(aliases = aliases, constructor = constructor, fields = fields, hasOwnProperty = hasOwnProperty, id = id, name = name, orderBy = orderBy, propertyIsEnumerable = propertyIsEnumerable, tables = tables, where = where)
+  
     __obj.asInstanceOf[JobQueryDetails]
   }
 }

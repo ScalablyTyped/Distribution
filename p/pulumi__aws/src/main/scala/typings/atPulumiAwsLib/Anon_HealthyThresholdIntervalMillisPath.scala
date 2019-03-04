@@ -26,12 +26,7 @@ object Anon_HealthyThresholdIntervalMillisPath {
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_HealthyThresholdIntervalMillisPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
-    __obj.updateDynamic("intervalMillis")(intervalMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeoutMillis")(timeoutMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], intervalMillis = intervalMillis.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeoutMillis = timeoutMillis.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_HealthyThresholdIntervalMillisPath]

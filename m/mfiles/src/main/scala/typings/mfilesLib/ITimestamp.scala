@@ -36,19 +36,8 @@ object ITimestamp {
     UtcToLocalTime: js.Function0[ITimestamp],
     Year: scala.Double
   ): ITimestamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Day")(Day)
-    __obj.updateDynamic("Fraction")(Fraction)
-    __obj.updateDynamic("GetValue")(GetValue)
-    __obj.updateDynamic("Hour")(Hour)
-    __obj.updateDynamic("LocalTimeToUtc")(LocalTimeToUtc)
-    __obj.updateDynamic("Minute")(Minute)
-    __obj.updateDynamic("Month")(Month)
-    __obj.updateDynamic("Second")(Second)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("UtcToLocalTime")(UtcToLocalTime)
-    __obj.updateDynamic("Year")(Year)
+    val __obj = js.Dynamic.literal(Clone = Clone, Day = Day, Fraction = Fraction, GetValue = GetValue, Hour = Hour, LocalTimeToUtc = LocalTimeToUtc, Minute = Minute, Month = Month, Second = Second, SetValue = SetValue, UtcToLocalTime = UtcToLocalTime, Year = Year)
+  
     __obj.asInstanceOf[ITimestamp]
   }
 }

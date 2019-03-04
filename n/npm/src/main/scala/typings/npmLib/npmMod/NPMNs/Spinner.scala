@@ -20,11 +20,8 @@ object Spinner {
     started: scala.Boolean,
     stop: js.Function0[scala.Unit]
   ): Spinner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("int")(int)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("started")(started)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(int = int, start = start, started = started, stop = stop)
+  
     __obj.asInstanceOf[Spinner]
   }
 }

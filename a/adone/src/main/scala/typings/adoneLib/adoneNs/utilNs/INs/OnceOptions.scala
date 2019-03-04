@@ -12,8 +12,8 @@ trait OnceOptions extends js.Object {
 object OnceOptions {
   @scala.inline
   def apply(silent: scala.Boolean): OnceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("silent")(silent)
+    val __obj = js.Dynamic.literal(silent = silent)
+  
     __obj.asInstanceOf[OnceOptions]
   }
 }

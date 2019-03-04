@@ -90,24 +90,8 @@ object XDebugging {
     stepOver: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): XDebugging = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StackTrace")(StackTrace)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearAllBreakPoints")(clearAllBreakPoints)
-    __obj.updateDynamic("doContinue")(doContinue)
-    __obj.updateDynamic("dumpVariable")(dumpVariable)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("getContextInformation")(getContextInformation)
-    __obj.updateDynamic("getStackTrace")(getStackTrace)
-    __obj.updateDynamic("isVariable")(isVariable)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setBreakPoint")(setBreakPoint)
-    __obj.updateDynamic("setVariable")(setVariable)
-    __obj.updateDynamic("stepIn")(stepIn)
-    __obj.updateDynamic("stepOut")(stepOut)
-    __obj.updateDynamic("stepOver")(stepOver)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(StackTrace = StackTrace, acquire = acquire, clearAllBreakPoints = clearAllBreakPoints, doContinue = doContinue, dumpVariable = dumpVariable, eval = eval, getContextInformation = getContextInformation, getStackTrace = getStackTrace, isVariable = isVariable, queryInterface = queryInterface, release = release, setBreakPoint = setBreakPoint, setVariable = setVariable, stepIn = stepIn, stepOut = stepOut, stepOver = stepOver, stop = stop)
+  
     __obj.asInstanceOf[XDebugging]
   }
 }

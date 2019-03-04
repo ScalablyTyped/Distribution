@@ -23,12 +23,8 @@ object Dropdown {
     open: js.Function0[scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): Dropdown = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getPositionClass")(getPositionClass)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(close = close, destroy = destroy, getPositionClass = getPositionClass, open = open, toggle = toggle)
+  
     __obj.asInstanceOf[Dropdown]
   }
 }

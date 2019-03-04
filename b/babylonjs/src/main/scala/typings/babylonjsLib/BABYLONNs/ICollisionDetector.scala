@@ -19,10 +19,8 @@ object ICollisionDetector {
     onInit: js.Function1[InitPayload, scala.Unit],
     onUpdate: js.Function1[UpdatePayload, scala.Unit]
   ): ICollisionDetector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCollision")(onCollision)
-    __obj.updateDynamic("onInit")(onInit)
-    __obj.updateDynamic("onUpdate")(onUpdate)
+    val __obj = js.Dynamic.literal(onCollision = onCollision, onInit = onInit, onUpdate = onUpdate)
+  
     __obj.asInstanceOf[ICollisionDetector]
   }
 }

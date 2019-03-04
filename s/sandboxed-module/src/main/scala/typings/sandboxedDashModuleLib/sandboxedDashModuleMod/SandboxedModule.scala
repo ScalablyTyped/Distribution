@@ -47,14 +47,8 @@ object SandboxedModule {
     required: js.Object,
     sourceTransformers: js.Object
   ): SandboxedModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exports")(exports)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("globals")(globals)
-    __obj.updateDynamic("locals")(locals)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("sourceTransformers")(sourceTransformers)
+    val __obj = js.Dynamic.literal(exports = exports, filename = filename, globals = globals, locals = locals, module = module, required = required, sourceTransformers = sourceTransformers)
+  
     __obj.asInstanceOf[SandboxedModule]
   }
 }

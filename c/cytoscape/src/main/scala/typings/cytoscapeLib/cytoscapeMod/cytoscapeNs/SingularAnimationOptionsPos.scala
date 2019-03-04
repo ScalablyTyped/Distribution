@@ -16,12 +16,8 @@ object SingularAnimationOptionsPos {
     renderedPosition: Position,
     style: js.Any
   ): SingularAnimationOptionsPos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("renderedPosition")(renderedPosition)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(duration = duration, easing = easing, position = position, renderedPosition = renderedPosition, style = style)
+  
     __obj.asInstanceOf[SingularAnimationOptionsPos]
   }
 }

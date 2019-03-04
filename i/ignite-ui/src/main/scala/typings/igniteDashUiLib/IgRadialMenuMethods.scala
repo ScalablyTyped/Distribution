@@ -59,15 +59,8 @@ object IgRadialMenuMethods {
     itemOption: js.Function3[java.lang.String, java.lang.String, js.Object, js.Object],
     styleUpdated: js.Function0[scala.Unit]
   ): IgRadialMenuMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exportVisualData")(exportVisualData)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("itemOption")(itemOption)
-    __obj.updateDynamic("styleUpdated")(styleUpdated)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, flush = flush, itemOption = itemOption, styleUpdated = styleUpdated)
+  
     __obj.asInstanceOf[IgRadialMenuMethods]
   }
 }

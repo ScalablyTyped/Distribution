@@ -18,8 +18,8 @@ object Anon_Categories {
       stdLib.Record[emojiDashMartLib.distDashEsUtilsSharedDashPropsMod.CategoryName, java.lang.String]
     ]
   ): Anon_Categories = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
+    val __obj = js.Dynamic.literal(categories = categories)
+  
     __obj.asInstanceOf[Anon_Categories]
   }
 }

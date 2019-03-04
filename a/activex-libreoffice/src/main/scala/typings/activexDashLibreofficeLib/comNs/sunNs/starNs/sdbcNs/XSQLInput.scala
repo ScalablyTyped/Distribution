@@ -175,30 +175,8 @@ object XSQLInput {
     release: js.Function0[scala.Unit],
     wasNull: js.Function0[scala.Boolean]
   ): XSQLInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("readArray")(readArray)
-    __obj.updateDynamic("readBinaryStream")(readBinaryStream)
-    __obj.updateDynamic("readBlob")(readBlob)
-    __obj.updateDynamic("readBoolean")(readBoolean)
-    __obj.updateDynamic("readByte")(readByte)
-    __obj.updateDynamic("readBytes")(readBytes)
-    __obj.updateDynamic("readCharacterStream")(readCharacterStream)
-    __obj.updateDynamic("readClob")(readClob)
-    __obj.updateDynamic("readDate")(readDate)
-    __obj.updateDynamic("readDouble")(readDouble)
-    __obj.updateDynamic("readFloat")(readFloat)
-    __obj.updateDynamic("readInt")(readInt)
-    __obj.updateDynamic("readLong")(readLong)
-    __obj.updateDynamic("readObject")(readObject)
-    __obj.updateDynamic("readRef")(readRef)
-    __obj.updateDynamic("readShort")(readShort)
-    __obj.updateDynamic("readString")(readString)
-    __obj.updateDynamic("readTime")(readTime)
-    __obj.updateDynamic("readTimestamp")(readTimestamp)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("wasNull")(wasNull)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, readArray = readArray, readBinaryStream = readBinaryStream, readBlob = readBlob, readBoolean = readBoolean, readByte = readByte, readBytes = readBytes, readCharacterStream = readCharacterStream, readClob = readClob, readDate = readDate, readDouble = readDouble, readFloat = readFloat, readInt = readInt, readLong = readLong, readObject = readObject, readRef = readRef, readShort = readShort, readString = readString, readTime = readTime, readTimestamp = readTimestamp, release = release, wasNull = wasNull)
+  
     __obj.asInstanceOf[XSQLInput]
   }
 }

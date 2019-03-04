@@ -20,8 +20,7 @@ object EventDefinition {
     listen: java.lang.String = null,
     name: java.lang.String = null
   ): EventDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (id != null) __obj.updateDynamic("id")(id)

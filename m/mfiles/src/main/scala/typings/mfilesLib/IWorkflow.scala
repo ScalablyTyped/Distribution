@@ -24,13 +24,8 @@ object IWorkflow {
     Name: java.lang.String,
     ObjectClass: mfilesLib.MFilesNs.MFBuiltInDocumentClass | mfilesLib.MFilesNs.MFBuiltInObjectClass | scala.Double
   ): IWorkflow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GetAsLookup")(GetAsLookup)
-    __obj.updateDynamic("GetAsTypedValue")(GetAsTypedValue)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ObjectClass")(ObjectClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Clone = Clone, GetAsLookup = GetAsLookup, GetAsTypedValue = GetAsTypedValue, ID = ID, Name = Name, ObjectClass = ObjectClass.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IWorkflow]
   }
 }

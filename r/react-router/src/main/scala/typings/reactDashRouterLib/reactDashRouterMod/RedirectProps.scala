@@ -24,8 +24,7 @@ object RedirectProps {
     push: js.UndefOr[scala.Boolean] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): RedirectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
     if (from != null) __obj.updateDynamic("from")(from)
     if (path != null) __obj.updateDynamic("path")(path)

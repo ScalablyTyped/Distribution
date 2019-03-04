@@ -18,10 +18,8 @@ object SuggestionInsertedEvent {
     suggestion: TextSuggestion | SnippetSuggestion,
     triggerPosition: atomLib.atomMod.Point
   ): SuggestionInsertedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
-    __obj.updateDynamic("triggerPosition")(triggerPosition)
+    val __obj = js.Dynamic.literal(editor = editor, suggestion = suggestion.asInstanceOf[js.Any], triggerPosition = triggerPosition)
+  
     __obj.asInstanceOf[SuggestionInsertedEvent]
   }
 }

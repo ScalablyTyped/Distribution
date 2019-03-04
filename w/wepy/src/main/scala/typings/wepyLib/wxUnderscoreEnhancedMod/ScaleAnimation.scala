@@ -22,12 +22,8 @@ object ScaleAnimation {
     scaleY: js.Function1[scala.Double, Animation],
     scaleZ: js.Function1[scala.Double, Animation]
   ): ScaleAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("scale3d")(scale3d)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("scaleZ")(scaleZ)
+    val __obj = js.Dynamic.literal(scale = scale, scale3d = scale3d, scaleX = scaleX, scaleY = scaleY, scaleZ = scaleZ)
+  
     __obj.asInstanceOf[ScaleAnimation]
   }
 }

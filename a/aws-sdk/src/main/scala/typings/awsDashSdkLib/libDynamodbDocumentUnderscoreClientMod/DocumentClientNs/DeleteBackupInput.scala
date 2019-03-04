@@ -15,8 +15,8 @@ trait DeleteBackupInput extends js.Object {
 object DeleteBackupInput {
   @scala.inline
   def apply(BackupArn: BackupArn): DeleteBackupInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackupArn")(BackupArn)
+    val __obj = js.Dynamic.literal(BackupArn = BackupArn)
+  
     __obj.asInstanceOf[DeleteBackupInput]
   }
 }

@@ -23,10 +23,8 @@ object EnumType {
     `type`: webidl2Lib.webidl2LibStrings.enum,
     values: js.Array[webidl2Lib.Anon_String]
   ): EnumType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extAttrs")(extAttrs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs, name = name, values = values)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EnumType]
   }
 }

@@ -20,10 +20,7 @@ object Anon_As {
     ops: js.Array[java.lang.String],
     cross: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_As = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("ops")(ops)
+    val __obj = js.Dynamic.literal(as = as, fields = fields, ops = ops)
     if (!js.isUndefined(cross)) __obj.updateDynamic("cross")(cross)
     __obj.asInstanceOf[Anon_As]
   }

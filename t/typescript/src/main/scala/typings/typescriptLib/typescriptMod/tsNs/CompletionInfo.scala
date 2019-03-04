@@ -24,11 +24,8 @@ object CompletionInfo {
     isMemberCompletion: scala.Boolean,
     isNewIdentifierLocation: scala.Boolean
   ): CompletionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("isGlobalCompletion")(isGlobalCompletion)
-    __obj.updateDynamic("isMemberCompletion")(isMemberCompletion)
-    __obj.updateDynamic("isNewIdentifierLocation")(isNewIdentifierLocation)
+    val __obj = js.Dynamic.literal(entries = entries, isGlobalCompletion = isGlobalCompletion, isMemberCompletion = isMemberCompletion, isNewIdentifierLocation = isNewIdentifierLocation)
+  
     __obj.asInstanceOf[CompletionInfo]
   }
 }

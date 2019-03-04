@@ -32,11 +32,8 @@ object _Impl {
     placeholder: java.lang.String,
     visible: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("placeholder")(placeholder)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(active = active, disabled = disabled, placeholder = placeholder, visible = visible)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

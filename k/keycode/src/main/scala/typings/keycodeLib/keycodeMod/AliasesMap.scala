@@ -44,22 +44,8 @@ object AliasesMap {
     spc: scala.Double,
     windows: scala.Double
   ): AliasesMap = {
-    val __obj = js.Dynamic.literal(`return` = `return`)
-    __obj.updateDynamic("break")(break)
-    __obj.updateDynamic("caps")(caps)
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("ctl")(ctl)
-    __obj.updateDynamic("del")(del)
-    __obj.updateDynamic("escape")(escape)
-    __obj.updateDynamic("ins")(ins)
-    __obj.updateDynamic("option")(option)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("pgdn")(pgdn)
-    __obj.updateDynamic("pgup")(pgup)
-    __obj.updateDynamic("spacebar")(spacebar)
-    __obj.updateDynamic("spc")(spc)
-    __obj.updateDynamic("windows")(windows)
+    val __obj = js.Dynamic.literal(break = break, caps = caps, cmd = cmd, control = control, ctl = ctl, del = del, escape = escape, ins = ins, option = option, pause = pause, pgdn = pgdn, pgup = pgup, spacebar = spacebar, spc = spc, windows = windows)
+    __obj.updateDynamic("return")(`return`)
     __obj.asInstanceOf[AliasesMap]
   }
 }

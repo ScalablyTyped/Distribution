@@ -25,11 +25,8 @@ object TabStop {
     FillChar: java.lang.String,
     Position: scala.Double
   ): TabStop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Alignment")(Alignment)
-    __obj.updateDynamic("DecimalChar")(DecimalChar)
-    __obj.updateDynamic("FillChar")(FillChar)
-    __obj.updateDynamic("Position")(Position)
+    val __obj = js.Dynamic.literal(Alignment = Alignment, DecimalChar = DecimalChar, FillChar = FillChar, Position = Position)
+  
     __obj.asInstanceOf[TabStop]
   }
 }

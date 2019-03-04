@@ -12,8 +12,8 @@ trait Util extends js.Object {
 object Util {
   @scala.inline
   def apply(buffer: digibyteLib.Anon_A): Util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
+    val __obj = js.Dynamic.literal(buffer = buffer)
+  
     __obj.asInstanceOf[Util]
   }
 }

@@ -42,22 +42,8 @@ object ReleaseTask {
     task: WorkflowTaskReference,
     timelineRecordId: java.lang.String
   ): ReleaseTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agentName")(agentName)
-    __obj.updateDynamic("dateEnded")(dateEnded)
-    __obj.updateDynamic("dateStarted")(dateStarted)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issues")(issues)
-    __obj.updateDynamic("lineCount")(lineCount)
-    __obj.updateDynamic("logUrl")(logUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("percentComplete")(percentComplete)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("task")(task)
-    __obj.updateDynamic("timelineRecordId")(timelineRecordId)
+    val __obj = js.Dynamic.literal(agentName = agentName, dateEnded = dateEnded, dateStarted = dateStarted, finishTime = finishTime, id = id, issues = issues, lineCount = lineCount, logUrl = logUrl, name = name, percentComplete = percentComplete, rank = rank, startTime = startTime, status = status, task = task, timelineRecordId = timelineRecordId)
+  
     __obj.asInstanceOf[ReleaseTask]
   }
 }

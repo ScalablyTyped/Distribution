@@ -12,8 +12,8 @@ trait DeleteEntityTypeRequest extends js.Object {
 object DeleteEntityTypeRequest {
   @scala.inline
   def apply(name: java.lang.String): DeleteEntityTypeRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[DeleteEntityTypeRequest]
   }
 }

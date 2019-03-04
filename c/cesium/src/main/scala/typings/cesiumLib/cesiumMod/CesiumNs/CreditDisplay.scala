@@ -30,16 +30,8 @@ object CreditDisplay {
     removeDefaultCredit: js.Function1[Credit, scala.Unit],
     update: js.Function0[scala.Unit]
   ): CreditDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCredit")(addCredit)
-    __obj.updateDynamic("addDefaultCredit")(addDefaultCredit)
-    __obj.updateDynamic("beginFrame")(beginFrame)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("endFrame")(endFrame)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("removeDefaultCredit")(removeDefaultCredit)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(addCredit = addCredit, addDefaultCredit = addDefaultCredit, beginFrame = beginFrame, container = container, destroy = destroy, endFrame = endFrame, isDestroyed = isDestroyed, removeDefaultCredit = removeDefaultCredit, update = update)
+  
     __obj.asInstanceOf[CreditDisplay]
   }
 }

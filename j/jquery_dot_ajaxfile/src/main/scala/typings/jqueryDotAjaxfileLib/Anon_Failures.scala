@@ -22,12 +22,8 @@ object Anon_Failures {
     suites: scala.Double,
     tests: scala.Double
   ): Anon_Failures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("passes")(passes)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("suites")(suites)
-    __obj.updateDynamic("tests")(tests)
+    val __obj = js.Dynamic.literal(failures = failures, passes = passes, pending = pending, suites = suites, tests = tests)
+  
     __obj.asInstanceOf[Anon_Failures]
   }
 }

@@ -52,15 +52,8 @@ object PredominanceSchemeForPolyline {
     sizeScheme: SizeSchemeForPolyline,
     width: scala.Double
   ): PredominanceSchemeForPolyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("noDataColor")(noDataColor)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(colors = colors, constructor = constructor, hasOwnProperty = hasOwnProperty, noDataColor = noDataColor, opacity = opacity, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, width = width)
+  
     __obj.asInstanceOf[PredominanceSchemeForPolyline]
   }
 }

@@ -21,10 +21,8 @@ object FilePathRequestedEventOptions {
     fileSystemId: java.lang.String,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): FilePathRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, requestId = requestId)
+  
     __obj.asInstanceOf[FilePathRequestedEventOptions]
   }
 }

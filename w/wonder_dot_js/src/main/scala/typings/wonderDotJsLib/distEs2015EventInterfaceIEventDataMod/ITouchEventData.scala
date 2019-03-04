@@ -24,13 +24,7 @@ object ITouchEventData {
     touches: js.Array[ITouchData],
     currentTarget: stdLib.HTMLElement = null
   ): ITouchEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changedTouches")(changedTouches)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("returnValue")(returnValue)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("targetTouches")(targetTouches)
-    __obj.updateDynamic("touches")(touches)
+    val __obj = js.Dynamic.literal(changedTouches = changedTouches, preventDefault = preventDefault, returnValue = returnValue, target = target, targetTouches = targetTouches, touches = touches)
     if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
     __obj.asInstanceOf[ITouchEventData]
   }

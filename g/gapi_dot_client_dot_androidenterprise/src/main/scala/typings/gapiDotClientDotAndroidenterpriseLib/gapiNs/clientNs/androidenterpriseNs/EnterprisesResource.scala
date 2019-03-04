@@ -161,25 +161,8 @@ object EnterprisesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
     ]
   ): EnterprisesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acknowledgeNotificationSet")(acknowledgeNotificationSet)
-    __obj.updateDynamic("completeSignup")(completeSignup)
-    __obj.updateDynamic("createWebToken")(createWebToken)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("enroll")(enroll)
-    __obj.updateDynamic("generateSignupUrl")(generateSignupUrl)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAndroidDevicePolicyConfig")(getAndroidDevicePolicyConfig)
-    __obj.updateDynamic("getServiceAccount")(getServiceAccount)
-    __obj.updateDynamic("getStoreLayout")(getStoreLayout)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("pullNotificationSet")(pullNotificationSet)
-    __obj.updateDynamic("sendTestPushNotification")(sendTestPushNotification)
-    __obj.updateDynamic("setAccount")(setAccount)
-    __obj.updateDynamic("setAndroidDevicePolicyConfig")(setAndroidDevicePolicyConfig)
-    __obj.updateDynamic("setStoreLayout")(setStoreLayout)
-    __obj.updateDynamic("unenroll")(unenroll)
+    val __obj = js.Dynamic.literal(acknowledgeNotificationSet = acknowledgeNotificationSet, completeSignup = completeSignup, createWebToken = createWebToken, delete = delete, enroll = enroll, generateSignupUrl = generateSignupUrl, get = get, getAndroidDevicePolicyConfig = getAndroidDevicePolicyConfig, getServiceAccount = getServiceAccount, getStoreLayout = getStoreLayout, insert = insert, list = list, pullNotificationSet = pullNotificationSet, sendTestPushNotification = sendTestPushNotification, setAccount = setAccount, setAndroidDevicePolicyConfig = setAndroidDevicePolicyConfig, setStoreLayout = setStoreLayout, unenroll = unenroll)
+  
     __obj.asInstanceOf[EnterprisesResource]
   }
 }

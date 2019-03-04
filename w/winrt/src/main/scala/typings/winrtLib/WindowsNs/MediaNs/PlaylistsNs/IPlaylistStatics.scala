@@ -17,8 +17,8 @@ object IPlaylistStatics {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[Playlist]
     ]
   ): IPlaylistStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadAsync")(loadAsync)
+    val __obj = js.Dynamic.literal(loadAsync = loadAsync)
+  
     __obj.asInstanceOf[IPlaylistStatics]
   }
 }

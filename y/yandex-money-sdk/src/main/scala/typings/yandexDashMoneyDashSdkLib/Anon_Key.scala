@@ -18,9 +18,7 @@ object Anon_Key {
     PaReq: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MD")(MD)
-    __obj.updateDynamic("PaReq")(PaReq)
+    val __obj = js.Dynamic.literal(MD = MD, PaReq = PaReq)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_Key]
   }

@@ -15,8 +15,8 @@ trait CullingConfiguration extends js.Object {
 object CullingConfiguration {
   @scala.inline
   def apply(max: scala.Double): CullingConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(max = max)
+  
     __obj.asInstanceOf[CullingConfiguration]
   }
 }

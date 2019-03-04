@@ -12,8 +12,8 @@ trait SvnWorkspace extends js.Object {
 object SvnWorkspace {
   @scala.inline
   def apply(mappings: js.Array[SvnMappingDetails]): SvnWorkspace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mappings")(mappings)
+    val __obj = js.Dynamic.literal(mappings = mappings)
+  
     __obj.asInstanceOf[SvnWorkspace]
   }
 }

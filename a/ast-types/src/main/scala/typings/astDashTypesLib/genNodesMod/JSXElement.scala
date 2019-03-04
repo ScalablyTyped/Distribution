@@ -40,12 +40,8 @@ object JSXElement {
     `type`: astDashTypesLib.astDashTypesLibStrings.JSXElement,
     closingElement: astDashTypesLib.genKindsMod.JSXClosingElementKind = null
   ): JSXElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("openingElement")(openingElement)
-    __obj.updateDynamic("selfClosing")(selfClosing)
+    val __obj = js.Dynamic.literal(attributes = attributes, children = children, name = name.asInstanceOf[js.Any], openingElement = openingElement, selfClosing = selfClosing)
+    __obj.updateDynamic("type")(`type`)
     if (closingElement != null) __obj.updateDynamic("closingElement")(closingElement)
     __obj.asInstanceOf[JSXElement]
   }

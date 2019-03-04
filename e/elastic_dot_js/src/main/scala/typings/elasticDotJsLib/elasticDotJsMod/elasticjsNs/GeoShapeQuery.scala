@@ -65,15 +65,8 @@ object GeoShapeQuery {
     strategy: js.Function1[java.lang.String, GeoShapeQuery],
     toJSON: js.Function0[js.Any]
   ): GeoShapeQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("indexedShape")(indexedShape)
-    __obj.updateDynamic("relation")(relation)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("strategy")(strategy)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, field = field, indexedShape = indexedShape, relation = relation, shape = shape, strategy = strategy, toJSON = toJSON)
+  
     __obj.asInstanceOf[GeoShapeQuery]
   }
 }

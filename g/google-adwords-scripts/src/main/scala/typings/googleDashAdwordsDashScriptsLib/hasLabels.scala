@@ -18,10 +18,8 @@ object hasLabels {
     labels: js.Function0[AdWordsSelector[Label]],
     removeLabel: js.Function1[java.lang.String, scala.Unit]
   ): hasLabels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyLabel")(applyLabel)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("removeLabel")(removeLabel)
+    val __obj = js.Dynamic.literal(applyLabel = applyLabel, labels = labels, removeLabel = removeLabel)
+  
     __obj.asInstanceOf[hasLabels]
   }
 }

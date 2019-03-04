@@ -22,9 +22,7 @@ object SwitchProps {
     name: java.lang.String = null,
     switched: js.UndefOr[scala.Boolean] = js.undefined
   ): SwitchProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(switched)) __obj.updateDynamic("switched")(switched)

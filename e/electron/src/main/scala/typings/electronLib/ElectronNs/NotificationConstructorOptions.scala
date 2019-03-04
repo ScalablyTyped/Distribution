@@ -66,9 +66,7 @@ object NotificationConstructorOptions {
     sound: java.lang.String = null,
     subtitle: java.lang.String = null
   ): NotificationConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(body = body, title = title)
     if (actions != null) __obj.updateDynamic("actions")(actions)
     if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
     if (!js.isUndefined(hasReply)) __obj.updateDynamic("hasReply")(hasReply)

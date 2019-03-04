@@ -191,35 +191,8 @@ object JobTaskJobInfo {
     versionInfo: JobVersionInfo,
     versionName: java.lang.String
   ): JobTaskJobInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("assignedType")(assignedType)
-    __obj.updateDynamic("childJobIds")(childJobIds)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("dueDate")(dueDate)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("jobTypeId")(jobTypeId)
-    __obj.updateDynamic("loi")(loi)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ownedBy")(ownedBy)
-    __obj.updateDynamic("parentJobId")(parentJobId)
-    __obj.updateDynamic("parentVersion")(parentVersion)
-    __obj.updateDynamic("pendingDays")(pendingDays)
-    __obj.updateDynamic("percentageComplete")(percentageComplete)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("versionExists")(versionExists)
-    __obj.updateDynamic("versionInfo")(versionInfo)
-    __obj.updateDynamic("versionName")(versionName)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, childJobIds = childJobIds, constructor = constructor, createdBy = createdBy, createdDate = createdDate, dataWorkspaceId = dataWorkspaceId, description = description, dueDate = dueDate, endDate = endDate, hasOwnProperty = hasOwnProperty, id = id, jobTypeId = jobTypeId, loi = loi, name = name, ownedBy = ownedBy, parentJobId = parentJobId, parentVersion = parentVersion, pendingDays = pendingDays, percentageComplete = percentageComplete, priority = priority, propertyIsEnumerable = propertyIsEnumerable, stage = stage, startDate = startDate, status = status, versionExists = versionExists, versionInfo = versionInfo, versionName = versionName)
+  
     __obj.asInstanceOf[JobTaskJobInfo]
   }
 }

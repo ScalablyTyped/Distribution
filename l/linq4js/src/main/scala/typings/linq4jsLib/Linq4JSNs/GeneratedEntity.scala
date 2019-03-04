@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeneratedEntity () extends js.Object {
   var Id: scala.Double = js.native
-  var `_GeneratedId_`: scala.Double = js.native
+  var _GeneratedId_ : scala.Double = js.native
 }
 

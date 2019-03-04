@@ -22,9 +22,7 @@ object Anon_EventsFilterPrefix {
     filterSuffix: java.lang.String = null,
     lambdaFunctionArn: java.lang.String = null
   ): Anon_EventsFilterPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(events = events, id = id)
     if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix)
     if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix)
     if (lambdaFunctionArn != null) __obj.updateDynamic("lambdaFunctionArn")(lambdaFunctionArn)

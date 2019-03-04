@@ -25,15 +25,8 @@ object XSequenceOutputStream {
     release: js.Function0[scala.Unit],
     writeBytes: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
   ): XSequenceOutputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WrittenBytes")(WrittenBytes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("closeOutput")(closeOutput)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getWrittenBytes")(getWrittenBytes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("writeBytes")(writeBytes)
+    val __obj = js.Dynamic.literal(WrittenBytes = WrittenBytes, acquire = acquire, closeOutput = closeOutput, flush = flush, getWrittenBytes = getWrittenBytes, queryInterface = queryInterface, release = release, writeBytes = writeBytes)
+  
     __obj.asInstanceOf[XSequenceOutputStream]
   }
 }

@@ -12,8 +12,8 @@ trait SimplifiedSet extends js.Object {
 object SimplifiedSet {
   @scala.inline
   def apply(has: js.Function1[js.Any, scala.Boolean]): SimplifiedSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has")(has)
+    val __obj = js.Dynamic.literal(has = has)
+  
     __obj.asInstanceOf[SimplifiedSet]
   }
 }

@@ -23,10 +23,8 @@ trait WorkArtifactLink extends js.Object {
 object WorkArtifactLink {
   @scala.inline
   def apply(artifactType: java.lang.String, linkType: java.lang.String, toolType: java.lang.String): WorkArtifactLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("linkType")(linkType)
-    __obj.updateDynamic("toolType")(toolType)
+    val __obj = js.Dynamic.literal(artifactType = artifactType, linkType = linkType, toolType = toolType)
+  
     __obj.asInstanceOf[WorkArtifactLink]
   }
 }

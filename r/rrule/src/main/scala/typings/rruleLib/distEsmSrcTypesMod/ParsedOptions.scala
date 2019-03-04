@@ -55,21 +55,7 @@ object ParsedOptions {
     tzid: java.lang.String = null,
     until: stdLib.Date = null
   ): ParsedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byhour")(byhour)
-    __obj.updateDynamic("byminute")(byminute)
-    __obj.updateDynamic("bymonth")(bymonth)
-    __obj.updateDynamic("bymonthday")(bymonthday)
-    __obj.updateDynamic("bynmonthday")(bynmonthday)
-    __obj.updateDynamic("bysecond")(bysecond)
-    __obj.updateDynamic("bysetpos")(bysetpos)
-    __obj.updateDynamic("byweekday")(byweekday)
-    __obj.updateDynamic("byweekno")(byweekno)
-    __obj.updateDynamic("byyearday")(byyearday)
-    __obj.updateDynamic("dtstart")(dtstart)
-    __obj.updateDynamic("freq")(freq)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("wkst")(wkst)
+    val __obj = js.Dynamic.literal(byhour = byhour, byminute = byminute, bymonth = bymonth, bymonthday = bymonthday, bynmonthday = bynmonthday, bysecond = bysecond, bysetpos = bysetpos, byweekday = byweekday, byweekno = byweekno, byyearday = byyearday, dtstart = dtstart, freq = freq, interval = interval, wkst = wkst)
     if (byeaster != null) __obj.updateDynamic("byeaster")(byeaster.asInstanceOf[js.Any])
     if (bynweekday != null) __obj.updateDynamic("bynweekday")(bynweekday)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

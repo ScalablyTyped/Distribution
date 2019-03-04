@@ -14,10 +14,8 @@ trait ResourceRef extends js.Object {
 object ResourceRef {
   @scala.inline
   def apply(id: java.lang.String, resource: ResourceType, resource_path: java.lang.String): ResourceRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("resource_path")(resource_path)
+    val __obj = js.Dynamic.literal(id = id, resource = resource, resource_path = resource_path)
+  
     __obj.asInstanceOf[ResourceRef]
   }
 }

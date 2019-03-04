@@ -22,11 +22,8 @@ object ColourspaceEnum {
     multiband: java.lang.String,
     srgb: java.lang.String
   ): ColourspaceEnum = {
-    val __obj = js.Dynamic.literal(`b-w` = `b-w`)
-    __obj.updateDynamic("bw")(bw)
-    __obj.updateDynamic("cmyk")(cmyk)
-    __obj.updateDynamic("multiband")(multiband)
-    __obj.updateDynamic("srgb")(srgb)
+    val __obj = js.Dynamic.literal(bw = bw, cmyk = cmyk, multiband = multiband, srgb = srgb)
+    __obj.updateDynamic("b-w")(`b-w`)
     __obj.asInstanceOf[ColourspaceEnum]
   }
 }

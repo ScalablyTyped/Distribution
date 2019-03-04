@@ -18,9 +18,8 @@ object ICustomText {
     label: java.lang.String,
     `type`: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.text
   ): ICustomText = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(component = component, label = label)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomText]
   }
 }

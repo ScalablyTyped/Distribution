@@ -169,9 +169,7 @@ object Appointment {
     supportingInformation: js.Array[Reference] = null,
     text: Narrative = null
   ): Appointment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("participant")(participant)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(participant = participant, status = status)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_created != null) __obj.updateDynamic("_created")(_created)
     if (_description != null) __obj.updateDynamic("_description")(_description)

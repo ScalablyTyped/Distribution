@@ -26,14 +26,8 @@ object DefaultMapPanes {
     tilePane: stdLib.HTMLElement,
     tooltipPane: stdLib.HTMLElement
   ): DefaultMapPanes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapPane")(mapPane)
-    __obj.updateDynamic("markerPane")(markerPane)
-    __obj.updateDynamic("overlayPane")(overlayPane)
-    __obj.updateDynamic("popupPane")(popupPane)
-    __obj.updateDynamic("shadowPane")(shadowPane)
-    __obj.updateDynamic("tilePane")(tilePane)
-    __obj.updateDynamic("tooltipPane")(tooltipPane)
+    val __obj = js.Dynamic.literal(mapPane = mapPane, markerPane = markerPane, overlayPane = overlayPane, popupPane = popupPane, shadowPane = shadowPane, tilePane = tilePane, tooltipPane = tooltipPane)
+  
     __obj.asInstanceOf[DefaultMapPanes]
   }
 }

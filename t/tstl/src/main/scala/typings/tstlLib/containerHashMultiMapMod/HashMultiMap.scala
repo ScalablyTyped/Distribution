@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: `data_`, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMultiMap", "HashMultiMap")
+- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMultiMap", "HashMultiMap")
 @js.native
 /**
   * Default Constructor.
@@ -78,7 +78,7 @@ class HashMultiMap[Key, T] ()
   /**
     * @hidden
     */
-  var `buckets_`: js.Any = js.native
+  var buckets_ : js.Any = js.native
   /**
     * Iterator to the first element in a specific bucket.
     *

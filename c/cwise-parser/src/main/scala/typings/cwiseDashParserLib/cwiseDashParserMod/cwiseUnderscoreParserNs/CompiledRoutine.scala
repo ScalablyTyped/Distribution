@@ -20,11 +20,8 @@ object CompiledRoutine {
     localVars: js.Array[java.lang.String],
     thisVars: js.Array[java.lang.String]
   ): CompiledRoutine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("localVars")(localVars)
-    __obj.updateDynamic("thisVars")(thisVars)
+    val __obj = js.Dynamic.literal(args = args, body = body, localVars = localVars, thisVars = thisVars)
+  
     __obj.asInstanceOf[CompiledRoutine]
   }
 }

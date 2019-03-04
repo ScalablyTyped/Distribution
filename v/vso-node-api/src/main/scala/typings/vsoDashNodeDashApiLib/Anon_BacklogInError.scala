@@ -26,14 +26,8 @@ object Anon_BacklogInError {
     noIterationsExist: scala.Double,
     oK: scala.Double
   ): Anon_BacklogInError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backlogInError")(backlogInError)
-    __obj.updateDynamic("doesntExistOrAccessDenied")(doesntExistOrAccessDenied)
-    __obj.updateDynamic("maxTeamFieldsExceeded")(maxTeamFieldsExceeded)
-    __obj.updateDynamic("maxTeamsExceeded")(maxTeamsExceeded)
-    __obj.updateDynamic("missingTeamFieldValue")(missingTeamFieldValue)
-    __obj.updateDynamic("noIterationsExist")(noIterationsExist)
-    __obj.updateDynamic("oK")(oK)
+    val __obj = js.Dynamic.literal(backlogInError = backlogInError, doesntExistOrAccessDenied = doesntExistOrAccessDenied, maxTeamFieldsExceeded = maxTeamFieldsExceeded, maxTeamsExceeded = maxTeamsExceeded, missingTeamFieldValue = missingTeamFieldValue, noIterationsExist = noIterationsExist, oK = oK)
+  
     __obj.asInstanceOf[Anon_BacklogInError]
   }
 }

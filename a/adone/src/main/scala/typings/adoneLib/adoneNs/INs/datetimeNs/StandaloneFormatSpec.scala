@@ -18,9 +18,7 @@ object StandaloneFormatSpec {
     standalone: js.Array[java.lang.String],
     isFormat: stdLib.RegExp = null
   ): StandaloneFormatSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("standalone")(standalone)
+    val __obj = js.Dynamic.literal(format = format, standalone = standalone)
     if (isFormat != null) __obj.updateDynamic("isFormat")(isFormat)
     __obj.asInstanceOf[StandaloneFormatSpec]
   }

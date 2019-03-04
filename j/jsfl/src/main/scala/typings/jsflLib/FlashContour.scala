@@ -20,11 +20,8 @@ object FlashContour {
     interior: scala.Boolean,
     orientation: scala.Double
   ): FlashContour = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("getHalfEdge")(getHalfEdge)
-    __obj.updateDynamic("interior")(interior)
-    __obj.updateDynamic("orientation")(orientation)
+    val __obj = js.Dynamic.literal(fill = fill, getHalfEdge = getHalfEdge, interior = interior, orientation = orientation)
+  
     __obj.asInstanceOf[FlashContour]
   }
 }

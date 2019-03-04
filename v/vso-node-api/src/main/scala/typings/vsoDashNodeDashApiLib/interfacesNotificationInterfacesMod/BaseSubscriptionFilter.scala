@@ -13,8 +13,8 @@ trait BaseSubscriptionFilter extends js.Object {
 object BaseSubscriptionFilter {
   @scala.inline
   def apply(eventType: java.lang.String, `type`: java.lang.String): BaseSubscriptionFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("eventType")(eventType)
+    val __obj = js.Dynamic.literal(eventType = eventType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BaseSubscriptionFilter]
   }
 }

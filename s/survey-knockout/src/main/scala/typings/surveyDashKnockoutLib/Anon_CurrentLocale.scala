@@ -30,16 +30,8 @@ object Anon_CurrentLocale {
     locales: org.scalablytyped.runtime.StringDictionary[js.Any],
     supportedLocales: js.Array[_]
   ): Anon_CurrentLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentLocale")(currentLocale)
-    __obj.updateDynamic("currentLocaleValue")(currentLocaleValue)
-    __obj.updateDynamic("defaultLocale")(defaultLocale)
-    __obj.updateDynamic("defaultLocaleValue")(defaultLocaleValue)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("localeNames")(localeNames)
-    __obj.updateDynamic("locales")(locales)
-    __obj.updateDynamic("supportedLocales")(supportedLocales)
+    val __obj = js.Dynamic.literal(currentLocale = currentLocale, currentLocaleValue = currentLocaleValue, defaultLocale = defaultLocale, defaultLocaleValue = defaultLocaleValue, getLocales = getLocales, getString = getString, localeNames = localeNames, locales = locales, supportedLocales = supportedLocales)
+  
     __obj.asInstanceOf[Anon_CurrentLocale]
   }
 }

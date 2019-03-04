@@ -28,15 +28,8 @@ object Anon_BevelEnabled {
     height: scala.Double,
     size: scala.Double
   ): Anon_BevelEnabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bevelEnabled")(bevelEnabled)
-    __obj.updateDynamic("bevelSegments")(bevelSegments)
-    __obj.updateDynamic("bevelSize")(bevelSize)
-    __obj.updateDynamic("bevelThickness")(bevelThickness)
-    __obj.updateDynamic("curveSegments")(curveSegments)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(bevelEnabled = bevelEnabled, bevelSegments = bevelSegments, bevelSize = bevelSize, bevelThickness = bevelThickness, curveSegments = curveSegments, font = font, height = height, size = size)
+  
     __obj.asInstanceOf[Anon_BevelEnabled]
   }
 }

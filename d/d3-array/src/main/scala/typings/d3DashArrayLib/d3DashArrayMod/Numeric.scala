@@ -10,8 +10,8 @@ trait Numeric extends js.Object
 object Numeric {
   @scala.inline
   def apply(valueOf: js.Function0[scala.Double]): Numeric = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(valueOf = valueOf)
+  
     __obj.asInstanceOf[Numeric]
   }
 }

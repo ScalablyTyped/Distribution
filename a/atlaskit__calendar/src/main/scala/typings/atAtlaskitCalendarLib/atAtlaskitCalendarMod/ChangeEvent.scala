@@ -19,11 +19,8 @@ object ChangeEvent {
     `type`: atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.left | atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.up | atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.right | atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.down | atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.prev | atAtlaskitCalendarLib.atAtlaskitCalendarLibStrings.next,
     year: scala.Double
   ): ChangeEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("day")(day)
-    __obj.updateDynamic("iso")(iso)
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(day = day, iso = iso, month = month, year = year)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeEvent]
   }
 }

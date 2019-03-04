@@ -76,30 +76,8 @@ object XXPathObject {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XXPathObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Boolean")(Boolean)
-    __obj.updateDynamic("Byte")(Byte)
-    __obj.updateDynamic("Double")(Double)
-    __obj.updateDynamic("Float")(Float)
-    __obj.updateDynamic("Hyper")(Hyper)
-    __obj.updateDynamic("Long")(Long)
-    __obj.updateDynamic("NodeList")(NodeList)
-    __obj.updateDynamic("ObjectType")(ObjectType)
-    __obj.updateDynamic("Short")(Short)
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getBoolean")(getBoolean)
-    __obj.updateDynamic("getByte")(getByte)
-    __obj.updateDynamic("getDouble")(getDouble)
-    __obj.updateDynamic("getFloat")(getFloat)
-    __obj.updateDynamic("getHyper")(getHyper)
-    __obj.updateDynamic("getLong")(getLong)
-    __obj.updateDynamic("getNodeList")(getNodeList)
-    __obj.updateDynamic("getObjectType")(getObjectType)
-    __obj.updateDynamic("getShort")(getShort)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Boolean = Boolean, Byte = Byte, Double = Double, Float = Float, Hyper = Hyper, Long = Long, NodeList = NodeList, ObjectType = ObjectType, Short = Short, String = String, acquire = acquire, getBoolean = getBoolean, getByte = getByte, getDouble = getDouble, getFloat = getFloat, getHyper = getHyper, getLong = getLong, getNodeList = getNodeList, getObjectType = getObjectType, getShort = getShort, getString = getString, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XXPathObject]
   }
 }

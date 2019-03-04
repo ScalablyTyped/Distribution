@@ -15,8 +15,8 @@ trait IDelayedRenderState extends js.Object {
 object IDelayedRenderState {
   @scala.inline
   def apply(isRendered: scala.Boolean): IDelayedRenderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRendered")(isRendered)
+    val __obj = js.Dynamic.literal(isRendered = isRendered)
+  
     __obj.asInstanceOf[IDelayedRenderState]
   }
 }

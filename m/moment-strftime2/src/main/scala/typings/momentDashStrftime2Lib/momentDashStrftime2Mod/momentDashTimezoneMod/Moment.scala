@@ -12,8 +12,8 @@ trait Moment extends js.Object {
 object Moment {
   @scala.inline
   def apply(strftime: js.Function1[java.lang.String, java.lang.String]): Moment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strftime")(strftime)
+    val __obj = js.Dynamic.literal(strftime = strftime)
+  
     __obj.asInstanceOf[Moment]
   }
 }

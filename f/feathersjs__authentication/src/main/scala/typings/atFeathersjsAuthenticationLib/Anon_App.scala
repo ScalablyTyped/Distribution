@@ -20,8 +20,8 @@ object Anon_App {
       atFeathersjsAuthenticationLib.atFeathersjsAuthenticationMod.serviceNs.Service[js.Object]
     ]
   ): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Service")(Service)
+    val __obj = js.Dynamic.literal(Service = Service)
+  
     __obj.asInstanceOf[Anon_App]
   }
 }

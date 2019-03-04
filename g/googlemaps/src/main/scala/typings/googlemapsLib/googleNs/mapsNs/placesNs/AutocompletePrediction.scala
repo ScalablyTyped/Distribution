@@ -26,14 +26,8 @@ object AutocompletePrediction {
     terms: js.Array[PredictionTerm],
     types: js.Array[java.lang.String]
   ): AutocompletePrediction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("matched_substrings")(matched_substrings)
-    __obj.updateDynamic("place_id")(place_id)
-    __obj.updateDynamic("reference")(reference)
-    __obj.updateDynamic("structured_formatting")(structured_formatting)
-    __obj.updateDynamic("terms")(terms)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(description = description, matched_substrings = matched_substrings, place_id = place_id, reference = reference, structured_formatting = structured_formatting, terms = terms, types = types)
+  
     __obj.asInstanceOf[AutocompletePrediction]
   }
 }

@@ -32,17 +32,8 @@ object CpuDetail {
     system: java.lang.String,
     user: java.lang.String
   ): CpuDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("guest")(guest)
-    __obj.updateDynamic("guest_nice")(guest_nice)
-    __obj.updateDynamic("idle")(idle)
-    __obj.updateDynamic("iowait")(iowait)
-    __obj.updateDynamic("irq")(irq)
-    __obj.updateDynamic("nice")(nice)
-    __obj.updateDynamic("softirq")(softirq)
-    __obj.updateDynamic("steal")(steal)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(guest = guest, guest_nice = guest_nice, idle = idle, iowait = iowait, irq = irq, nice = nice, softirq = softirq, steal = steal, system = system, user = user)
+  
     __obj.asInstanceOf[CpuDetail]
   }
 }

@@ -24,13 +24,8 @@ object ISidenavObject {
     open: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]],
     toggle: js.Function0[angularLib.angularMod.angularNs.IPromise[scala.Unit]]
   ): ISidenavObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("isLockedOpen")(isLockedOpen)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(close = close, isLockedOpen = isLockedOpen, isOpen = isOpen, onClose = onClose, open = open, toggle = toggle)
+  
     __obj.asInstanceOf[ISidenavObject]
   }
 }

@@ -14,8 +14,8 @@ trait TableBorderRow extends js.Object {
 object TableBorderRow {
   @scala.inline
   def apply(table_border_cells: js.Array[TableBorderCell]): TableBorderRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("table_border_cells")(table_border_cells)
+    val __obj = js.Dynamic.literal(table_border_cells = table_border_cells)
+  
     __obj.asInstanceOf[TableBorderRow]
   }
 }

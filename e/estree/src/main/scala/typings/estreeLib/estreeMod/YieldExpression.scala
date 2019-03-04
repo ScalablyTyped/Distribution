@@ -23,8 +23,8 @@ object YieldExpression {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): YieldExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("delegate")(delegate)
+    val __obj = js.Dynamic.literal(delegate = delegate)
+    __obj.updateDynamic("type")(`type`)
     if (argument != null) __obj.updateDynamic("argument")(argument)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)

@@ -57,19 +57,8 @@ object XDiagramPositioning {
     setDiagramPositionIncludingAxes: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
     setDiagramPositionIncludingAxesAndAxisTitles: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
   ): XDiagramPositioning = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("calculateDiagramPositionExcludingAxes")(calculateDiagramPositionExcludingAxes)
-    __obj.updateDynamic("calculateDiagramPositionIncludingAxes")(calculateDiagramPositionIncludingAxes)
-    __obj.updateDynamic("calculateDiagramPositionIncludingAxesAndAxisTitles")(calculateDiagramPositionIncludingAxesAndAxisTitles)
-    __obj.updateDynamic("isAutomaticDiagramPositioning")(isAutomaticDiagramPositioning)
-    __obj.updateDynamic("isExcludingDiagramPositioning")(isExcludingDiagramPositioning)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAutomaticDiagramPositioning")(setAutomaticDiagramPositioning)
-    __obj.updateDynamic("setDiagramPositionExcludingAxes")(setDiagramPositionExcludingAxes)
-    __obj.updateDynamic("setDiagramPositionIncludingAxes")(setDiagramPositionIncludingAxes)
-    __obj.updateDynamic("setDiagramPositionIncludingAxesAndAxisTitles")(setDiagramPositionIncludingAxesAndAxisTitles)
+    val __obj = js.Dynamic.literal(acquire = acquire, calculateDiagramPositionExcludingAxes = calculateDiagramPositionExcludingAxes, calculateDiagramPositionIncludingAxes = calculateDiagramPositionIncludingAxes, calculateDiagramPositionIncludingAxesAndAxisTitles = calculateDiagramPositionIncludingAxesAndAxisTitles, isAutomaticDiagramPositioning = isAutomaticDiagramPositioning, isExcludingDiagramPositioning = isExcludingDiagramPositioning, queryInterface = queryInterface, release = release, setAutomaticDiagramPositioning = setAutomaticDiagramPositioning, setDiagramPositionExcludingAxes = setDiagramPositionExcludingAxes, setDiagramPositionIncludingAxes = setDiagramPositionIncludingAxes, setDiagramPositionIncludingAxesAndAxisTitles = setDiagramPositionIncludingAxesAndAxisTitles)
+  
     __obj.asInstanceOf[XDiagramPositioning]
   }
 }

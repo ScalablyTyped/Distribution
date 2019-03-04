@@ -24,13 +24,8 @@ object Anon_Oss {
     uas: mobileDashDetectLib.mobileDashDetectMod.MobileDetectNs.MobileDetectRules,
     utils: mobileDashDetectLib.mobileDashDetectMod.MobileDetectNs.MobileDetectRules
   ): Anon_Oss = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oss")(oss)
-    __obj.updateDynamic("phones")(phones)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("tablets")(tablets)
-    __obj.updateDynamic("uas")(uas)
-    __obj.updateDynamic("utils")(utils)
+    val __obj = js.Dynamic.literal(oss = oss, phones = phones, props = props, tablets = tablets, uas = uas, utils = utils)
+  
     __obj.asInstanceOf[Anon_Oss]
   }
 }

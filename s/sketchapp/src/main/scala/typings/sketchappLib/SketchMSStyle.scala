@@ -42,21 +42,7 @@ object SketchMSStyle {
     textStyle: SketchMSTextStyle,
     do_objectID: java.lang.String = null
   ): SketchMSStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("borderOptions")(borderOptions)
-    __obj.updateDynamic("borders")(borders)
-    __obj.updateDynamic("colorControls")(colorControls)
-    __obj.updateDynamic("contextSettings")(contextSettings)
-    __obj.updateDynamic("endDecorationType")(endDecorationType)
-    __obj.updateDynamic("fills")(fills)
-    __obj.updateDynamic("innerShadows")(innerShadows)
-    __obj.updateDynamic("miterLimit")(miterLimit)
-    __obj.updateDynamic("reflection")(reflection)
-    __obj.updateDynamic("shadows")(shadows)
-    __obj.updateDynamic("startDecorationType")(startDecorationType)
-    __obj.updateDynamic("textStyle")(textStyle)
+    val __obj = js.Dynamic.literal(_class = _class, blur = blur, borderOptions = borderOptions, borders = borders, colorControls = colorControls, contextSettings = contextSettings, endDecorationType = endDecorationType, fills = fills, innerShadows = innerShadows, miterLimit = miterLimit, reflection = reflection, shadows = shadows, startDecorationType = startDecorationType, textStyle = textStyle)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSStyle]
   }

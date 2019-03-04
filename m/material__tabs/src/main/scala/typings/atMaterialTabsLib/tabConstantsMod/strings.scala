@@ -13,8 +13,8 @@ trait strings
 object strings {
   @scala.inline
   def apply(SELECTED_EVENT: atMaterialTabsLib.atMaterialTabsLibStrings.`MDCTab:selected`): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SELECTED_EVENT")(SELECTED_EVENT)
+    val __obj = js.Dynamic.literal(SELECTED_EVENT = SELECTED_EVENT)
+  
     __obj.asInstanceOf[strings]
   }
 }

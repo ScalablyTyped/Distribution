@@ -22,9 +22,7 @@ object SectionListScrollParams {
     viewOffset: scala.Int | scala.Double = null,
     viewPosition: scala.Int | scala.Double = null
   ): SectionListScrollParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemIndex")(itemIndex)
-    __obj.updateDynamic("sectionIndex")(sectionIndex)
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex, sectionIndex = sectionIndex)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (viewOffset != null) __obj.updateDynamic("viewOffset")(viewOffset.asInstanceOf[js.Any])
     if (viewPosition != null) __obj.updateDynamic("viewPosition")(viewPosition.asInstanceOf[js.Any])

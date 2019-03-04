@@ -44,23 +44,8 @@ object WindowEventHandlersEventMap {
     unhandledrejection: PromiseRejectionEvent,
     unload: Event
   ): WindowEventHandlersEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterprint")(afterprint)
-    __obj.updateDynamic("beforeprint")(beforeprint)
-    __obj.updateDynamic("beforeunload")(beforeunload)
-    __obj.updateDynamic("hashchange")(hashchange)
-    __obj.updateDynamic("languagechange")(languagechange)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("messageerror")(messageerror)
-    __obj.updateDynamic("offline")(offline)
-    __obj.updateDynamic("online")(online)
-    __obj.updateDynamic("pagehide")(pagehide)
-    __obj.updateDynamic("pageshow")(pageshow)
-    __obj.updateDynamic("popstate")(popstate)
-    __obj.updateDynamic("rejectionhandled")(rejectionhandled)
-    __obj.updateDynamic("storage")(storage)
-    __obj.updateDynamic("unhandledrejection")(unhandledrejection)
-    __obj.updateDynamic("unload")(unload)
+    val __obj = js.Dynamic.literal(afterprint = afterprint, beforeprint = beforeprint, beforeunload = beforeunload, hashchange = hashchange, languagechange = languagechange, message = message, messageerror = messageerror, offline = offline, online = online, pagehide = pagehide, pageshow = pageshow, popstate = popstate, rejectionhandled = rejectionhandled, storage = storage, unhandledrejection = unhandledrejection, unload = unload)
+  
     __obj.asInstanceOf[WindowEventHandlersEventMap]
   }
 }

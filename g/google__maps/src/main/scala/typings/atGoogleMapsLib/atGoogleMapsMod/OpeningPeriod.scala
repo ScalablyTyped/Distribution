@@ -27,9 +27,7 @@ trait OpeningPeriod extends js.Object {
 object OpeningPeriod {
   @scala.inline
   def apply(open: OpeningHoursTime, weekday_text: js.Array[java.lang.String], close: OpeningHoursTime = null): OpeningPeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("weekday_text")(weekday_text)
+    val __obj = js.Dynamic.literal(open = open, weekday_text = weekday_text)
     if (close != null) __obj.updateDynamic("close")(close)
     __obj.asInstanceOf[OpeningPeriod]
   }

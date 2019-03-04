@@ -16,8 +16,8 @@ object CollectTransform {
     sort: vegaDashTypingsLib.typesSpecMarkMod.Compare,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.collect
   ): CollectTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("sort")(sort)
+    val __obj = js.Dynamic.literal(sort = sort)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CollectTransform]
   }
 }

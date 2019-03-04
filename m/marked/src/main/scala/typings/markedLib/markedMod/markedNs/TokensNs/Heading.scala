@@ -15,9 +15,8 @@ trait Heading
 object Heading {
   @scala.inline
   def apply(depth: scala.Double, text: java.lang.String, `type`: markedLib.markedLibStrings.heading): Heading = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(depth = depth, text = text)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Heading]
   }
 }

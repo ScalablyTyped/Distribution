@@ -64,12 +64,8 @@ object XTextConvert {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTextConvert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertToTable")(convertToTable)
-    __obj.updateDynamic("convertToTextFrame")(convertToTextFrame)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertToTable = convertToTable, convertToTextFrame = convertToTextFrame, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTextConvert]
   }
 }

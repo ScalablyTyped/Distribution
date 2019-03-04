@@ -36,11 +36,7 @@ object Anon_ErrorOccurred {
     url: java.lang.String,
     errorOccurred: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ErrorOccurred = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, parentFrameId = parentFrameId, tabId = tabId, url = url)
     if (!js.isUndefined(errorOccurred)) __obj.updateDynamic("errorOccurred")(errorOccurred)
     __obj.asInstanceOf[Anon_ErrorOccurred]
   }

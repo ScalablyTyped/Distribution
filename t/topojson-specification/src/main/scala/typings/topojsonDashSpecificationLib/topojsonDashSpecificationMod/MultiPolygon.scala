@@ -22,8 +22,8 @@ object MultiPolygon {
     id: scala.Double | java.lang.String = null,
     properties: P = null
   ): MultiPolygon[P] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arcs")(arcs)
+    val __obj = js.Dynamic.literal(arcs = arcs)
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])

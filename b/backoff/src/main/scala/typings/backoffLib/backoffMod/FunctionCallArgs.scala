@@ -101,10 +101,9 @@ object FunctionCallArgs {
       FunctionCallArgs[E, R1, R2, R3]
     ]
   ): FunctionCallArgs[E, R1, R2, R3] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(getLastResult = getLastResult)
     __obj.updateDynamic("addListener")(addListener_callback)
     __obj.updateDynamic("emit")(emit_callback)
-    __obj.updateDynamic("getLastResult")(getLastResult)
     __obj.updateDynamic("listeners")(listeners_callback)
     __obj.updateDynamic("on")(on_callback)
     __obj.updateDynamic("once")(once_callback)

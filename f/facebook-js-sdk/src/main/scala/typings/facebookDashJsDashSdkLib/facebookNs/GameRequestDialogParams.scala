@@ -41,9 +41,7 @@ object GameRequestDialogParams {
     title: java.lang.String = null,
     to: java.lang.String | scala.Double = null
   ): GameRequestDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(message = message, method = method)
     if (action_type != null) __obj.updateDynamic("action_type")(action_type.asInstanceOf[js.Any])
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (data != null) __obj.updateDynamic("data")(data)

@@ -19,10 +19,8 @@ object LineBreakResults {
     breakType: scala.Double,
     rHyphenatedWord: activexDashLibreofficeLib.comNs.sunNs.starNs.linguistic2Ns.XHyphenatedWord
   ): LineBreakResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("breakIndex")(breakIndex)
-    __obj.updateDynamic("breakType")(breakType)
-    __obj.updateDynamic("rHyphenatedWord")(rHyphenatedWord)
+    val __obj = js.Dynamic.literal(breakIndex = breakIndex, breakType = breakType, rHyphenatedWord = rHyphenatedWord)
+  
     __obj.asInstanceOf[LineBreakResults]
   }
 }

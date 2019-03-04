@@ -16,9 +16,8 @@ object CognitoAuthUserHandler {
     onFailure: js.Function1[js.Any, scala.Unit],
     onSuccess: js.Function1[CognitoAuthSession, scala.Unit]
   ): CognitoAuthUserHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onFailure")(onFailure)
-    __obj.updateDynamic("onSuccess")(onSuccess)
+    val __obj = js.Dynamic.literal(onFailure = onFailure, onSuccess = onSuccess)
+  
     __obj.asInstanceOf[CognitoAuthUserHandler]
   }
 }

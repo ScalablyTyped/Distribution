@@ -76,8 +76,7 @@ object ScatterplotChartProps {
     yDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
     yType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null
   ): ScatterplotChartProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (axisLabels != null) __obj.updateDynamic("axisLabels")(axisLabels)
     if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)

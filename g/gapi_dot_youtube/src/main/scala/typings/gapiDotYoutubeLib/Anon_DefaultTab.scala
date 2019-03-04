@@ -67,18 +67,8 @@ object Anon_DefaultTab {
     trackingAnalyticsAccountId: java.lang.String,
     unsubscribedTrailer: java.lang.String
   ): Anon_DefaultTab = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultTab")(defaultTab)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("featuredChannelsTitle")(featuredChannelsTitle)
-    __obj.updateDynamic("featuredChannelsUrls")(featuredChannelsUrls)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("moderateComments")(moderateComments)
-    __obj.updateDynamic("showBrowseView")(showBrowseView)
-    __obj.updateDynamic("showRelatedChannels")(showRelatedChannels)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("trackingAnalyticsAccountId")(trackingAnalyticsAccountId)
-    __obj.updateDynamic("unsubscribedTrailer")(unsubscribedTrailer)
+    val __obj = js.Dynamic.literal(defaultTab = defaultTab, description = description, featuredChannelsTitle = featuredChannelsTitle, featuredChannelsUrls = featuredChannelsUrls, keywords = keywords, moderateComments = moderateComments, showBrowseView = showBrowseView, showRelatedChannels = showRelatedChannels, title = title, trackingAnalyticsAccountId = trackingAnalyticsAccountId, unsubscribedTrailer = unsubscribedTrailer)
+  
     __obj.asInstanceOf[Anon_DefaultTab]
   }
 }

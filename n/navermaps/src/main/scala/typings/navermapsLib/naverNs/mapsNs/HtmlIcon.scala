@@ -18,8 +18,7 @@ object HtmlIcon {
     anchor: Point | PointLiteral | Position = null,
     size: Size | SizeLiteral = null
   ): HtmlIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlIcon]

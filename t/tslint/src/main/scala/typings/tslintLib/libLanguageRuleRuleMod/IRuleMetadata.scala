@@ -83,12 +83,8 @@ object IRuleMetadata {
     rationale: java.lang.String = null,
     requiresTypeInfo: js.UndefOr[scala.Boolean] = js.undefined
   ): IRuleMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("optionsDescription")(optionsDescription)
-    __obj.updateDynamic("ruleName")(ruleName)
-    __obj.updateDynamic("typescriptOnly")(typescriptOnly)
+    val __obj = js.Dynamic.literal(description = description, options = options, optionsDescription = optionsDescription, ruleName = ruleName, typescriptOnly = typescriptOnly)
+    __obj.updateDynamic("type")(`type`)
     if (codeExamples != null) __obj.updateDynamic("codeExamples")(codeExamples)
     if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage)
     if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)

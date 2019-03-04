@@ -32,16 +32,8 @@ object Anon_Description {
     unwrap: scala.Boolean,
     version: java.lang.String
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal(`run-at` = `run-at`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("excludes")(excludes)
-    __obj.updateDynamic("includes")(includes)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("unwrap")(unwrap)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(description = description, excludes = excludes, includes = includes, matches = matches, name = name, namespace = namespace, resources = resources, unwrap = unwrap, version = version)
+    __obj.updateDynamic("run-at")(`run-at`)
     __obj.asInstanceOf[Anon_Description]
   }
 }

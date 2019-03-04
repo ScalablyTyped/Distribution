@@ -28,9 +28,8 @@ object ExportSpecifier {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): ExportSpecifier = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exported")(exported)
-    __obj.updateDynamic("local")(local)
+    val __obj = js.Dynamic.literal(exported = exported, local = local)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

@@ -13,9 +13,8 @@ trait SimpleTask extends js.Object {
 object SimpleTask {
   @scala.inline
   def apply(gen: js.Function0[scala.Unit], name: java.lang.String): SimpleTask = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gen")(gen)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(gen = gen, name = name)
+  
     __obj.asInstanceOf[SimpleTask]
   }
 }

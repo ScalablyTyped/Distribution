@@ -20,11 +20,8 @@ object BrowserLegacy {
     bScrollbarLeft: scala.Boolean,
     barWidth: scala.Double
   ): BrowserLegacy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bBounding")(bBounding)
-    __obj.updateDynamic("bScrollOversize")(bScrollOversize)
-    __obj.updateDynamic("bScrollbarLeft")(bScrollbarLeft)
-    __obj.updateDynamic("barWidth")(barWidth)
+    val __obj = js.Dynamic.literal(bBounding = bBounding, bScrollOversize = bScrollOversize, bScrollbarLeft = bScrollbarLeft, barWidth = barWidth)
+  
     __obj.asInstanceOf[BrowserLegacy]
   }
 }

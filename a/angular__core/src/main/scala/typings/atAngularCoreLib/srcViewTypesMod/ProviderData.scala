@@ -12,8 +12,8 @@ trait ProviderData extends js.Object {
 object ProviderData {
   @scala.inline
   def apply(instance: js.Any): ProviderData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
+    val __obj = js.Dynamic.literal(instance = instance)
+  
     __obj.asInstanceOf[ProviderData]
   }
 }

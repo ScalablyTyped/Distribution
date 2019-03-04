@@ -26,14 +26,8 @@ object Anon_Rotation {
     x: scala.Double,
     y: scala.Double
   ): Anon_Rotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("skewX")(skewX)
-    __obj.updateDynamic("skewY")(skewY)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(rotation = rotation, scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_Rotation]
   }
 }

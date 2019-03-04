@@ -12,8 +12,8 @@ trait Anon_Plugin extends js.Object {
 object Anon_Plugin {
   @scala.inline
   def apply(plugin: vueLib.typesPluginMod.PluginObject[vuexDashI18nLib.vuexDashI18nMod.Ii18n]): Anon_Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("plugin")(plugin)
+    val __obj = js.Dynamic.literal(plugin = plugin)
+  
     __obj.asInstanceOf[Anon_Plugin]
   }
 }

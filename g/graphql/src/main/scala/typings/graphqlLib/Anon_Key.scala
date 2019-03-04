@@ -13,8 +13,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(key: java.lang.String | scala.Double, prev: graphqlLib.typeDefinitionMod.ResponsePath = null): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (prev != null) __obj.updateDynamic("prev")(prev)
     __obj.asInstanceOf[Anon_Key]
   }

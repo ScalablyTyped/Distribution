@@ -42,8 +42,7 @@ object Anon_AbsolutePath {
     relativePath: java.lang.String = null,
     search: java.lang.String = null
   ): Anon_AbsolutePath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (pathname != null) __obj.updateDynamic("pathname")(pathname)

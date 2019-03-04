@@ -37,11 +37,8 @@ object UpdatePlan {
     revision: scala.Double,
     `type`: PlanType
   ): UpdatePlan = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(description = description, name = name, properties = properties, revision = revision)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[UpdatePlan]
   }
 }

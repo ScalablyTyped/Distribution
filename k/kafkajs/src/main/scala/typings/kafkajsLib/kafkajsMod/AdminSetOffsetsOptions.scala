@@ -14,10 +14,8 @@ trait AdminSetOffsetsOptions extends js.Object {
 object AdminSetOffsetsOptions {
   @scala.inline
   def apply(groupId: java.lang.String, partitions: js.Array[AdminSetOffsetsSeekEntry], topic: java.lang.String): AdminSetOffsetsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("partitions")(partitions)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(groupId = groupId, partitions = partitions, topic = topic)
+  
     __obj.asInstanceOf[AdminSetOffsetsOptions]
   }
 }

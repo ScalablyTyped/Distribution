@@ -35,11 +35,8 @@ object ChatRoomInfo {
     occupants: scala.Double,
     subject: java.lang.String
   ): ChatRoomInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creationdate")(creationdate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("occupants")(occupants)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(creationdate = creationdate, description = description, occupants = occupants, subject = subject)
+  
     __obj.asInstanceOf[ChatRoomInfo]
   }
 }

@@ -20,11 +20,8 @@ object ILocalContentSuggestionSettings {
     locations: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtLib.WindowsNs.StorageNs.StorageFolder],
     propertiesToMatch: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]
   ): ILocalContentSuggestionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aqsFilter")(aqsFilter)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("locations")(locations)
-    __obj.updateDynamic("propertiesToMatch")(propertiesToMatch)
+    val __obj = js.Dynamic.literal(aqsFilter = aqsFilter, enabled = enabled, locations = locations, propertiesToMatch = propertiesToMatch)
+  
     __obj.asInstanceOf[ILocalContentSuggestionSettings]
   }
 }

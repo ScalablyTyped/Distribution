@@ -27,16 +27,8 @@ object XGraphicExportFilter {
     setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit],
     supportsMimeType: js.Function1[java.lang.String, scala.Boolean]
   ): XGraphicExportFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedMimeTypeNames")(SupportedMimeTypeNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("getSupportedMimeTypeNames")(getSupportedMimeTypeNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setSourceDocument")(setSourceDocument)
-    __obj.updateDynamic("supportsMimeType")(supportsMimeType)
+    val __obj = js.Dynamic.literal(SupportedMimeTypeNames = SupportedMimeTypeNames, acquire = acquire, cancel = cancel, filter = filter, getSupportedMimeTypeNames = getSupportedMimeTypeNames, queryInterface = queryInterface, release = release, setSourceDocument = setSourceDocument, supportsMimeType = supportsMimeType)
+  
     __obj.asInstanceOf[XGraphicExportFilter]
   }
 }

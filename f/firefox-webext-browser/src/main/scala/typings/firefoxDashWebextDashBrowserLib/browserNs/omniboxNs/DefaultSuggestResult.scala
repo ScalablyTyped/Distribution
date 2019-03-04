@@ -28,8 +28,7 @@ object DefaultSuggestResult {
     descriptionStyles: js.Array[firefoxDashWebextDashBrowserLib.Anon_Length] = null,
     descriptionStylesRaw: js.Array[firefoxDashWebextDashBrowserLib.Anon_Offset] = null
   ): DefaultSuggestResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
     if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles)
     if (descriptionStylesRaw != null) __obj.updateDynamic("descriptionStylesRaw")(descriptionStylesRaw)
     __obj.asInstanceOf[DefaultSuggestResult]

@@ -16,9 +16,8 @@ trait FolderList extends js.Object {
 object FolderList {
   @scala.inline
   def apply(Command: FolderListCommand, List: activexDashInteropLib.SafeArray[FolderListEntry]): FolderList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Command")(Command)
-    __obj.updateDynamic("List")(List)
+    val __obj = js.Dynamic.literal(Command = Command, List = List)
+  
     __obj.asInstanceOf[FolderList]
   }
 }

@@ -26,8 +26,8 @@ object Anon_Db {
     prefix: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): Anon_Db = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(db = db)
+    __obj.updateDynamic("type")(`type`)
     if (host != null) __obj.updateDynamic("host")(host)
     if (password != null) __obj.updateDynamic("password")(password)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

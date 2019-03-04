@@ -24,11 +24,9 @@ object Anon_Decimals {
     pattern: js.Array[java.lang.String],
     symbol: java.lang.String
   ): Anon_Decimals = {
-    val __obj = js.Dynamic.literal(`,` = `,`, `.` = `.`)
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("groupSize")(groupSize)
-    __obj.updateDynamic("pattern")(pattern)
-    __obj.updateDynamic("symbol")(symbol)
+    val __obj = js.Dynamic.literal(decimals = decimals, groupSize = groupSize, pattern = pattern, symbol = symbol)
+    __obj.updateDynamic(",")(`,`)
+    __obj.updateDynamic(".")(`.`)
     __obj.asInstanceOf[Anon_Decimals]
   }
 }

@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 object InterpreterDirective {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.InterpreterDirective, value: java.lang.String): InterpreterDirective = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InterpreterDirective]
   }
 }

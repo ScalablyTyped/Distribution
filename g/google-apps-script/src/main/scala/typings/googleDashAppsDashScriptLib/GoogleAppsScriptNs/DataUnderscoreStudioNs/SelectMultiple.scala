@@ -22,12 +22,8 @@ object SelectMultiple {
     setId: js.Function1[java.lang.String, SelectMultiple],
     setName: js.Function1[java.lang.String, SelectMultiple]
   ): SelectMultiple = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOption")(addOption)
-    __obj.updateDynamic("setAllowOverride")(setAllowOverride)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(addOption = addOption, setAllowOverride = setAllowOverride, setHelpText = setHelpText, setId = setId, setName = setName)
+  
     __obj.asInstanceOf[SelectMultiple]
   }
 }

@@ -18,10 +18,8 @@ object Shader {
     uniforms: org.scalablytyped.runtime.StringDictionary[IUniform],
     vertexShader: java.lang.String
   ): Shader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fragmentShader")(fragmentShader)
-    __obj.updateDynamic("uniforms")(uniforms)
-    __obj.updateDynamic("vertexShader")(vertexShader)
+    val __obj = js.Dynamic.literal(fragmentShader = fragmentShader, uniforms = uniforms, vertexShader = vertexShader)
+  
     __obj.asInstanceOf[Shader]
   }
 }

@@ -25,8 +25,7 @@ object FindAllParams {
     opt_expand: java.lang.String = null,
     opt_fields: java.lang.String = null
   ): FindAllParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("workspace")(workspace)
+    val __obj = js.Dynamic.literal(workspace = workspace)
     if (assignee != null) __obj.updateDynamic("assignee")(assignee.asInstanceOf[js.Any])
     if (completed_since != null) __obj.updateDynamic("completed_since")(completed_since)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])

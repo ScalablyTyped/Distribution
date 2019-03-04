@@ -32,13 +32,7 @@ object Anon_Category {
     outputArtifacts: js.Array[java.lang.String] = null,
     roleArn: java.lang.String = null
   ): Anon_Category = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("runOrder")(runOrder)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(category = category, name = name, owner = owner, provider = provider, runOrder = runOrder, version = version)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)
     if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts)
     if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts)

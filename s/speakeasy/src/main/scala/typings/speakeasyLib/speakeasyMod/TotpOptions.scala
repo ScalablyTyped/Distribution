@@ -66,8 +66,7 @@ object TotpOptions {
     step: scala.Int | scala.Double = null,
     time: scala.Int | scala.Double = null
   ): TotpOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(secret = secret)
     if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
     if (counter != null) __obj.updateDynamic("counter")(counter)
     if (digest != null) __obj.updateDynamic("digest")(digest)

@@ -20,9 +20,7 @@ object Anon_CommentsLocQuasi {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsLocQuasi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quasi")(quasi)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(quasi = quasi, tag = tag)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_CommentsLocQuasi]

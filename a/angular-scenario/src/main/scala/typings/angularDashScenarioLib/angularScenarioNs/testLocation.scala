@@ -20,11 +20,8 @@ object testLocation {
     search: js.Function0[Future],
     url: js.Function0[Future]
   ): testLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(hash = hash, path = path, search = search, url = url)
+  
     __obj.asInstanceOf[testLocation]
   }
 }

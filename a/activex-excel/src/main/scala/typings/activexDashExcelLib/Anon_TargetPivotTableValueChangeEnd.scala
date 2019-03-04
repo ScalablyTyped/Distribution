@@ -18,10 +18,8 @@ object Anon_TargetPivotTableValueChangeEnd {
     ValueChangeEnd: scala.Double,
     ValueChangeStart: scala.Double
   ): Anon_TargetPivotTableValueChangeEnd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TargetPivotTable")(TargetPivotTable)
-    __obj.updateDynamic("ValueChangeEnd")(ValueChangeEnd)
-    __obj.updateDynamic("ValueChangeStart")(ValueChangeStart)
+    val __obj = js.Dynamic.literal(TargetPivotTable = TargetPivotTable, ValueChangeEnd = ValueChangeEnd, ValueChangeStart = ValueChangeStart)
+  
     __obj.asInstanceOf[Anon_TargetPivotTableValueChangeEnd]
   }
 }

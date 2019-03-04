@@ -26,10 +26,7 @@ object DocumentListResponse {
     total_rows: scala.Double,
     update_seq: scala.Int | scala.Double = null
   ): DocumentListResponse[D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("total_rows")(total_rows)
+    val __obj = js.Dynamic.literal(offset = offset, rows = rows, total_rows = total_rows)
     if (update_seq != null) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentListResponse[D]]
   }

@@ -50,12 +50,8 @@ object DispatchStatement {
     bIsComment: scala.Boolean,
     nFlags: scala.Double
   ): DispatchStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aArgs")(aArgs)
-    __obj.updateDynamic("aCommand")(aCommand)
-    __obj.updateDynamic("aTarget")(aTarget)
-    __obj.updateDynamic("bIsComment")(bIsComment)
-    __obj.updateDynamic("nFlags")(nFlags)
+    val __obj = js.Dynamic.literal(aArgs = aArgs, aCommand = aCommand, aTarget = aTarget, bIsComment = bIsComment, nFlags = nFlags)
+  
     __obj.asInstanceOf[DispatchStatement]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Name extends js.Object {
 object Anon_Name {
   @scala.inline
   def apply(name: estreeLib.estreeMod.Identifier): Anon_Name = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[Anon_Name]
   }
 }

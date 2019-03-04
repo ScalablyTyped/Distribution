@@ -58,8 +58,7 @@ object TableHeaderProps {
     title: java.lang.String = null,
     tooltip: reactLib.reactMod.ReactNs.ReactNode = null
   ): TableHeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLDOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)

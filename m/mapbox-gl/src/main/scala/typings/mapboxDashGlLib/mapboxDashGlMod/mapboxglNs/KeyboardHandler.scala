@@ -18,10 +18,8 @@ object KeyboardHandler {
     enable: js.Function0[scala.Unit],
     isEnabled: js.Function0[scala.Boolean]
   ): KeyboardHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[KeyboardHandler]
   }
 }

@@ -37,11 +37,8 @@ object Local {
     set: js.Function2[stdLib.Element, T, stdLib.Element],
     toString: js.Function0[java.lang.String]
   ): Local[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(get = get, remove = remove, set = set, toString = toString)
+  
     __obj.asInstanceOf[Local[T]]
   }
 }

@@ -22,9 +22,8 @@ object IPositionService {
     offset: js.Function1[angularLib.JQuery, IPositionCoordinates],
     position: js.Function1[angularLib.JQuery, IPositionCoordinates]
   ): IPositionService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(offset = offset, position = position)
+  
     __obj.asInstanceOf[IPositionService]
   }
 }

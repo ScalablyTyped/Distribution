@@ -24,9 +24,7 @@ object LogglyOptions {
     json: js.UndefOr[scala.Boolean] = js.undefined,
     tags: js.Array[java.lang.String] = null
   ): LogglyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subdomain")(subdomain)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(subdomain = subdomain, token = token)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)

@@ -48,13 +48,8 @@ object CalendarsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Calendar]
     ]
   ): CalendarsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, get = get, insert = insert, patch = patch, update = update)
+  
     __obj.asInstanceOf[CalendarsResource]
   }
 }

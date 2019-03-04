@@ -30,15 +30,8 @@ object PlaceAttribute {
     twitter: java.lang.String,
     url: java.lang.String
   ): PlaceAttribute = {
-    val __obj = js.Dynamic.literal(`app:id` = `app:id`)
-    __obj.updateDynamic("iso3")(iso3)
-    __obj.updateDynamic("locality")(locality)
-    __obj.updateDynamic("phone")(phone)
-    __obj.updateDynamic("postal_code")(postal_code)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("street_address")(street_address)
-    __obj.updateDynamic("twitter")(twitter)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(iso3 = iso3, locality = locality, phone = phone, postal_code = postal_code, region = region, street_address = street_address, twitter = twitter, url = url)
+    __obj.updateDynamic("app:id")(`app:id`)
     __obj.asInstanceOf[PlaceAttribute]
   }
 }

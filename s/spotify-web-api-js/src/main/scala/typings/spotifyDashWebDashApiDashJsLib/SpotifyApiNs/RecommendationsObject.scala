@@ -17,9 +17,8 @@ trait RecommendationsObject extends js.Object {
 object RecommendationsObject {
   @scala.inline
   def apply(seeds: js.Array[RecommendationsSeedObject], tracks: js.Array[TrackObjectSimplified]): RecommendationsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("seeds")(seeds)
-    __obj.updateDynamic("tracks")(tracks)
+    val __obj = js.Dynamic.literal(seeds = seeds, tracks = tracks)
+  
     __obj.asInstanceOf[RecommendationsObject]
   }
 }

@@ -37,19 +37,8 @@ object AllLookAtTypes {
     terrain: Terrain,
     tombstone: Tombstone
   ): AllLookAtTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructionSite")(constructionSite)
-    __obj.updateDynamic("creep")(creep)
-    __obj.updateDynamic("energy")(energy)
-    __obj.updateDynamic("exit")(exit)
-    __obj.updateDynamic("flag")(flag)
-    __obj.updateDynamic("mineral")(mineral)
-    __obj.updateDynamic("nuke")(nuke)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("structure")(structure)
-    __obj.updateDynamic("terrain")(terrain)
-    __obj.updateDynamic("tombstone")(tombstone)
+    val __obj = js.Dynamic.literal(constructionSite = constructionSite, creep = creep, energy = energy, exit = exit, flag = flag, mineral = mineral, nuke = nuke, resource = resource, source = source, structure = structure, terrain = terrain, tombstone = tombstone)
+  
     __obj.asInstanceOf[AllLookAtTypes]
   }
 }

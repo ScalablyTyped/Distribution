@@ -29,8 +29,7 @@ object Options {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     rendererSettings: reactDashLottieLib.Anon_ClassName = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationData")(animationData)
+    val __obj = js.Dynamic.literal(animationData = animationData)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (rendererSettings != null) __obj.updateDynamic("rendererSettings")(rendererSettings)

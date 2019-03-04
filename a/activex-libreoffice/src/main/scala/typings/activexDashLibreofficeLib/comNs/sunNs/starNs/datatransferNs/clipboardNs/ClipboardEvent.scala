@@ -21,9 +21,8 @@ object ClipboardEvent {
     Contents: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): ClipboardEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Contents")(Contents)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Contents = Contents, Source = Source)
+  
     __obj.asInstanceOf[ClipboardEvent]
   }
 }

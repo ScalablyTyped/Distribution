@@ -20,11 +20,8 @@ object Session {
     startedAt: java.lang.String,
     trackError: js.Function1[bugsnagDashJsLib.typesReportMod.default, scala.Unit]
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("startedAt")(startedAt)
-    __obj.updateDynamic("trackError")(trackError)
+    val __obj = js.Dynamic.literal(events = events, id = id, startedAt = startedAt, trackError = trackError)
+  
     __obj.asInstanceOf[Session]
   }
 }

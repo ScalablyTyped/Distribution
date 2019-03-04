@@ -18,8 +18,8 @@ object AsObject {
       googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FileDescriptorProtoNs.AsObject
     ]
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileList")(fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

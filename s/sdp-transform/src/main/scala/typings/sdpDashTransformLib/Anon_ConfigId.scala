@@ -20,10 +20,7 @@ object Anon_ConfigId {
     suite: java.lang.String,
     sessionConfig: java.lang.String = null
   ): Anon_ConfigId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("suite")(suite)
+    val __obj = js.Dynamic.literal(config = config, id = id, suite = suite)
     if (sessionConfig != null) __obj.updateDynamic("sessionConfig")(sessionConfig)
     __obj.asInstanceOf[Anon_ConfigId]
   }

@@ -19,8 +19,7 @@ object IIconSubsetRecord {
     isRegistered: js.UndefOr[scala.Boolean] = js.undefined,
     style: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = null
   ): IIconSubsetRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icons")(icons)
+    val __obj = js.Dynamic.literal(icons = icons)
     if (className != null) __obj.updateDynamic("className")(className)
     if (fontFace != null) __obj.updateDynamic("fontFace")(fontFace)
     if (!js.isUndefined(isRegistered)) __obj.updateDynamic("isRegistered")(isRegistered)

@@ -14,10 +14,8 @@ trait UploadPartResult extends js.Object {
 object UploadPartResult {
   @scala.inline
   def apply(etag: java.lang.String, name: java.lang.String, res: NormalSuccessResponse): UploadPartResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(etag = etag, name = name, res = res)
+  
     __obj.asInstanceOf[UploadPartResult]
   }
 }

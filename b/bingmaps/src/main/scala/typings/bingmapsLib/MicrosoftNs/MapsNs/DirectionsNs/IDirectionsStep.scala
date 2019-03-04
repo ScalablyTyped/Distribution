@@ -57,22 +57,8 @@ object IDirectionsStep {
     transitTerminus: java.lang.String,
     warnings: js.Array[IDirectionsStepWarning]
   ): IDirectionsStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childItineraryItems")(childItineraryItems)
-    __obj.updateDynamic("coordinate")(coordinate)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("durationInSeconds")(durationInSeconds)
-    __obj.updateDynamic("formattedText")(formattedText)
-    __obj.updateDynamic("isImageRoadShield")(isImageRoadShield)
-    __obj.updateDynamic("maneuver")(maneuver)
-    __obj.updateDynamic("postIntersectionHints")(postIntersectionHints)
-    __obj.updateDynamic("preIntersectionHints")(preIntersectionHints)
-    __obj.updateDynamic("startStopName")(startStopName)
-    __obj.updateDynamic("transitLine")(transitLine)
-    __obj.updateDynamic("transitStepIcon")(transitStepIcon)
-    __obj.updateDynamic("transitStopId")(transitStopId)
-    __obj.updateDynamic("transitTerminus")(transitTerminus)
-    __obj.updateDynamic("warnings")(warnings)
+    val __obj = js.Dynamic.literal(childItineraryItems = childItineraryItems, coordinate = coordinate, distance = distance, durationInSeconds = durationInSeconds, formattedText = formattedText, isImageRoadShield = isImageRoadShield, maneuver = maneuver, postIntersectionHints = postIntersectionHints, preIntersectionHints = preIntersectionHints, startStopName = startStopName, transitLine = transitLine, transitStepIcon = transitStepIcon, transitStopId = transitStopId, transitTerminus = transitTerminus, warnings = warnings)
+  
     __obj.asInstanceOf[IDirectionsStep]
   }
 }

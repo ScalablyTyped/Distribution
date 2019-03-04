@@ -12,8 +12,8 @@ trait Anon_Params extends js.Object {
 object Anon_Params {
   @scala.inline
   def apply(reset: js.Function1[reactDashVirtualizedLib.distEsMasonryMod.resetParams, scala.Unit]): Anon_Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(reset = reset)
+  
     __obj.asInstanceOf[Anon_Params]
   }
 }

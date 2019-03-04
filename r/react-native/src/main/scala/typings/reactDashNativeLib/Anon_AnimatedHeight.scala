@@ -22,11 +22,7 @@ object Anon_AnimatedHeight {
     y: scala.Double,
     animated: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AnimatedHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(height = height, width = width, x = x, y = y)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     __obj.asInstanceOf[Anon_AnimatedHeight]
   }

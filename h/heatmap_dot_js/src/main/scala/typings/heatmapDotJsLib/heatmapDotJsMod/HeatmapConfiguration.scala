@@ -41,8 +41,7 @@ object HeatmapConfiguration {
     xField: X = null,
     yField: Y = null
   ): HeatmapConfiguration[V, X, Y] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
+    val __obj = js.Dynamic.literal(container = container)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (gradient != null) __obj.updateDynamic("gradient")(gradient)

@@ -18,10 +18,8 @@ object Anon_ClassNameDefaultPrefixCls {
     prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     size: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]]
   ): Anon_ClassNameDefaultPrefixCls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(className = className, prefixCls = prefixCls, size = size)
+  
     __obj.asInstanceOf[Anon_ClassNameDefaultPrefixCls]
   }
 }

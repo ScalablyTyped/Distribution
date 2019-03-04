@@ -20,11 +20,8 @@ object Path {
     source: arangodbLib.ArangoDBNs.Document[A],
     vertice: js.Array[arangodbLib.ArangoDBNs.Document[A | B | V]]
   ): Path[A, B, E, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination)
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("vertice")(vertice)
+    val __obj = js.Dynamic.literal(destination = destination, edges = edges, source = source, vertice = vertice)
+  
     __obj.asInstanceOf[Path[A, B, E, V]]
   }
 }

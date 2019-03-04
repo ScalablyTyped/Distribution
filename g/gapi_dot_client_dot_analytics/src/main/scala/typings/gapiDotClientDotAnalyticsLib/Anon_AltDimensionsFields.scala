@@ -54,9 +54,7 @@ object Anon_AltDimensionsFields {
     sort: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDimensionsFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ids")(ids)
-    __obj.updateDynamic("metrics")(metrics)
+    val __obj = js.Dynamic.literal(ids = ids, metrics = metrics)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (fields != null) __obj.updateDynamic("fields")(fields)

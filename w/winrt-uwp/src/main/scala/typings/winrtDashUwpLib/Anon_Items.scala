@@ -13,9 +13,8 @@ trait Anon_Items[T] extends js.Object {
 object Anon_Items {
   @scala.inline
   def apply[T](items: T, returnValue: scala.Double): Anon_Items[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_Items[T]]
   }
 }

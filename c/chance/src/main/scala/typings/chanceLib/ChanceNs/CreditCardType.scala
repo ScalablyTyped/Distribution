@@ -20,11 +20,8 @@ object CreditCardType {
     prefix: java.lang.String,
     short_name: java.lang.String
   ): CreditCardType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("short_name")(short_name)
+    val __obj = js.Dynamic.literal(length = length, name = name, prefix = prefix, short_name = short_name)
+  
     __obj.asInstanceOf[CreditCardType]
   }
 }

@@ -16,8 +16,7 @@ object Anon_Align {
     header: scala.Boolean,
     align: markedLib.markedLibStrings.center | markedLib.markedLibStrings.left | markedLib.markedLibStrings.right = null
   ): Anon_Align = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(header = header)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Align]
   }

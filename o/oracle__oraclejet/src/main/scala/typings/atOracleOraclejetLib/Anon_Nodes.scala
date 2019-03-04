@@ -13,9 +13,8 @@ trait Anon_Nodes extends js.Object {
 object Anon_Nodes {
   @scala.inline
   def apply(nodes: Anon_DataTypes, ports: Anon_DataTypesDrag): Anon_Nodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("ports")(ports)
+    val __obj = js.Dynamic.literal(nodes = nodes, ports = ports)
+  
     __obj.asInstanceOf[Anon_Nodes]
   }
 }

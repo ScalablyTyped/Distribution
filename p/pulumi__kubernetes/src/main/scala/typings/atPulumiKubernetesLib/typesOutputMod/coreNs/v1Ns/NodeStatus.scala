@@ -77,18 +77,8 @@ object NodeStatus {
     volumesAttached: js.Array[AttachedVolume],
     volumesInUse: js.Array[java.lang.String]
   ): NodeStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("allocatable")(allocatable)
-    __obj.updateDynamic("capacity")(capacity)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("daemonEndpoints")(daemonEndpoints)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("nodeInfo")(nodeInfo)
-    __obj.updateDynamic("phase")(phase)
-    __obj.updateDynamic("volumesAttached")(volumesAttached)
-    __obj.updateDynamic("volumesInUse")(volumesInUse)
+    val __obj = js.Dynamic.literal(addresses = addresses, allocatable = allocatable, capacity = capacity, conditions = conditions, config = config, daemonEndpoints = daemonEndpoints, images = images, nodeInfo = nodeInfo, phase = phase, volumesAttached = volumesAttached, volumesInUse = volumesInUse)
+  
     __obj.asInstanceOf[NodeStatus]
   }
 }

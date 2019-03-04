@@ -68,12 +68,7 @@ object ComponentPropsGaeaEdit {
     selector: js.Array[ComponentPropsOptionsSelector] = null,
     `type`: java.lang.String = null
   ): ComponentPropsGaeaEdit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hideTool")(hideTool)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(editable = editable, editor = editor, field = field, hideTool = hideTool, label = label)
     if (array != null) __obj.updateDynamic("array")(array)
     if (emptyValue != null) __obj.updateDynamic("emptyValue")(emptyValue)
     if (instance != null) __obj.updateDynamic("instance")(instance)

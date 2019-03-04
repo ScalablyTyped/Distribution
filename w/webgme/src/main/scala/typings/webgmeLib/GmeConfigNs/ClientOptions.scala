@@ -49,11 +49,8 @@ object ClientOptions {
     errorReporting: webgmeLib.Anon_DSN,
     log: webgmeLib.Anon_LevelString
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appDir")(appDir)
-    __obj.updateDynamic("defaultConnectionRouter")(defaultConnectionRouter.asInstanceOf[js.Any])
-    __obj.updateDynamic("errorReporting")(errorReporting)
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(appDir = appDir, defaultConnectionRouter = defaultConnectionRouter.asInstanceOf[js.Any], errorReporting = errorReporting, log = log)
+  
     __obj.asInstanceOf[ClientOptions]
   }
 }

@@ -23,12 +23,8 @@ object NodeContentContext {
     id: K,
     itemData: D
   ): NodeContentContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bounds = bounds, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[NodeContentContext[K, D]]
   }
 }

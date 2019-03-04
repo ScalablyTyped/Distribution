@@ -26,12 +26,8 @@ object Anon_AuthMode {
     resultJSON: java.lang.String,
     resultJSONSignature: java.lang.String
   ): Anon_AuthMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authMode")(authMode)
-    __obj.updateDynamic("errCode")(errCode)
-    __obj.updateDynamic("errMsg")(errMsg)
-    __obj.updateDynamic("resultJSON")(resultJSON)
-    __obj.updateDynamic("resultJSONSignature")(resultJSONSignature)
+    val __obj = js.Dynamic.literal(authMode = authMode, errCode = errCode, errMsg = errMsg, resultJSON = resultJSON, resultJSONSignature = resultJSONSignature)
+  
     __obj.asInstanceOf[Anon_AuthMode]
   }
 }

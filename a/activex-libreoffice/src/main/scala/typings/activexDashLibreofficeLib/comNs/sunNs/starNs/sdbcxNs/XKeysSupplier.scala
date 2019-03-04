@@ -29,12 +29,8 @@ object XKeysSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XKeysSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Keys")(Keys)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getKeys")(getKeys)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Keys = Keys, acquire = acquire, getKeys = getKeys, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XKeysSupplier]
   }
 }

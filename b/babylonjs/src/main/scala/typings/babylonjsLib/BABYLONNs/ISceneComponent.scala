@@ -44,12 +44,8 @@ object ISceneComponent {
     register: js.Function0[scala.Unit],
     scene: Scene
   ): ISceneComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rebuild")(rebuild)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("scene")(scene)
+    val __obj = js.Dynamic.literal(dispose = dispose, name = name, rebuild = rebuild, register = register, scene = scene)
+  
     __obj.asInstanceOf[ISceneComponent]
   }
 }

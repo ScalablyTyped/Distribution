@@ -30,9 +30,8 @@ object Anon_Naclarch {
     ],
     sub_package_path: java.lang.String
   ): Anon_Naclarch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nacl_arch")(nacl_arch.asInstanceOf[js.Any])
-    __obj.updateDynamic("sub_package_path")(sub_package_path)
+    val __obj = js.Dynamic.literal(nacl_arch = nacl_arch.asInstanceOf[js.Any], sub_package_path = sub_package_path)
+  
     __obj.asInstanceOf[Anon_Naclarch]
   }
 }

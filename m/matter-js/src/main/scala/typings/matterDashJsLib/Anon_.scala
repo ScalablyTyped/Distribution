@@ -5,21 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_`
+trait Anon_
   extends /* _ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     StringDictionary: /* _ */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     name: java.lang.String = null
-  ): `Anon_` = {
+  ): Anon_ = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (name != null) __obj.updateDynamic("name")(name)
-    __obj.asInstanceOf[`Anon_`]
+    __obj.asInstanceOf[Anon_]
   }
 }
 

@@ -28,15 +28,8 @@ object DoubleArray {
     size: js.Function0[scala.Double],
     traverse: js.Function2[scala.Double, scala.Double, scala.Double]
   ): DoubleArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bc")(bc)
-    __obj.updateDynamic("calc")(calc)
-    __obj.updateDynamic("commonPrefixSearch")(commonPrefixSearch)
-    __obj.updateDynamic("contain")(contain)
-    __obj.updateDynamic("dump")(dump)
-    __obj.updateDynamic("lookup")(lookup)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("traverse")(traverse)
+    val __obj = js.Dynamic.literal(bc = bc, calc = calc, commonPrefixSearch = commonPrefixSearch, contain = contain, dump = dump, lookup = lookup, size = size, traverse = traverse)
+  
     __obj.asInstanceOf[DoubleArray]
   }
 }

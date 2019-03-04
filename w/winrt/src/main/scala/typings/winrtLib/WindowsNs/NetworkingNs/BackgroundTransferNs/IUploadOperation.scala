@@ -31,18 +31,8 @@ object IUploadOperation {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperationWithProgress[UploadOperation, UploadOperation]
     ]
   ): IUploadOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachAsync")(attachAsync)
-    __obj.updateDynamic("costPolicy")(costPolicy)
-    __obj.updateDynamic("getResponseInformation")(getResponseInformation)
-    __obj.updateDynamic("getResultStreamAt")(getResultStreamAt)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("guid")(guid)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("requestedUri")(requestedUri)
-    __obj.updateDynamic("sourceFile")(sourceFile)
-    __obj.updateDynamic("startAsync")(startAsync)
+    val __obj = js.Dynamic.literal(attachAsync = attachAsync, costPolicy = costPolicy, getResponseInformation = getResponseInformation, getResultStreamAt = getResultStreamAt, group = group, guid = guid, method = method, progress = progress, requestedUri = requestedUri, sourceFile = sourceFile, startAsync = startAsync)
+  
     __obj.asInstanceOf[IUploadOperation]
   }
 }

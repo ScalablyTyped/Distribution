@@ -22,10 +22,8 @@ object ParagraphPropertiesAsian {
     ParaIsForbiddenRules: scala.Boolean,
     ParaIsHangingPunctuation: scala.Boolean
   ): ParagraphPropertiesAsian = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ParaIsCharacterDistance")(ParaIsCharacterDistance)
-    __obj.updateDynamic("ParaIsForbiddenRules")(ParaIsForbiddenRules)
-    __obj.updateDynamic("ParaIsHangingPunctuation")(ParaIsHangingPunctuation)
+    val __obj = js.Dynamic.literal(ParaIsCharacterDistance = ParaIsCharacterDistance, ParaIsForbiddenRules = ParaIsForbiddenRules, ParaIsHangingPunctuation = ParaIsHangingPunctuation)
+  
     __obj.asInstanceOf[ParagraphPropertiesAsian]
   }
 }

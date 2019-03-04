@@ -12,8 +12,8 @@ trait Set[T] extends js.Object {
 object Set {
   @scala.inline
   def apply[T](toJSON: js.Function0[js.Any]): Set[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
+  
     __obj.asInstanceOf[Set[T]]
   }
 }

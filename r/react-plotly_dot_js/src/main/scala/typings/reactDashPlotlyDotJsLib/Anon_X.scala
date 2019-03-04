@@ -16,9 +16,8 @@ object Anon_X {
     x: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Datum */ js.Any,
     y: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Datum */ js.Any
   ): Anon_X = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[Anon_X]
   }
 }

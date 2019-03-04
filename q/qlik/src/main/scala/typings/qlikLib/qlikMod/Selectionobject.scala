@@ -18,10 +18,8 @@ object Selectionobject {
     qForwardCount: scala.Double,
     qSelections: js.Array[NxCurrentSelectionItem]
   ): Selectionobject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBackCount")(qBackCount)
-    __obj.updateDynamic("qForwardCount")(qForwardCount)
-    __obj.updateDynamic("qSelections")(qSelections)
+    val __obj = js.Dynamic.literal(qBackCount = qBackCount, qForwardCount = qForwardCount, qSelections = qSelections)
+  
     __obj.asInstanceOf[Selectionobject]
   }
 }

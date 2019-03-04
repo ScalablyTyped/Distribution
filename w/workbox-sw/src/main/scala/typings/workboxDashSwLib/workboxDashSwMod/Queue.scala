@@ -33,10 +33,8 @@ object Queue {
     name: java.lang.String,
     replayRequests: js.Function0[js.Promise[scala.Unit]]
   ): Queue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRequest")(addRequest)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("replayRequests")(replayRequests)
+    val __obj = js.Dynamic.literal(addRequest = addRequest, name = name, replayRequests = replayRequests)
+  
     __obj.asInstanceOf[Queue]
   }
 }

@@ -88,33 +88,8 @@ object ILanguageService {
     getTypeAtPosition: js.Function2[java.lang.String, scala.Double, TypeInfo],
     refresh: js.Function0[scala.Unit]
   ): ILanguageService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cleanupSemanticCache")(cleanupSemanticCache)
-    __obj.updateDynamic("getBraceMatchingAtPosition")(getBraceMatchingAtPosition)
-    __obj.updateDynamic("getBreakpointStatementAtPosition")(getBreakpointStatementAtPosition)
-    __obj.updateDynamic("getCompilerOptionsDiagnostics")(getCompilerOptionsDiagnostics)
-    __obj.updateDynamic("getCompletionEntryDetails")(getCompletionEntryDetails)
-    __obj.updateDynamic("getCompletionsAtPosition")(getCompletionsAtPosition)
-    __obj.updateDynamic("getDefinitionAtPosition")(getDefinitionAtPosition)
-    __obj.updateDynamic("getEmitOutput")(getEmitOutput)
-    __obj.updateDynamic("getFormattingEditsAfterKeystroke")(getFormattingEditsAfterKeystroke)
-    __obj.updateDynamic("getFormattingEditsForDocument")(getFormattingEditsForDocument)
-    __obj.updateDynamic("getFormattingEditsForRange")(getFormattingEditsForRange)
-    __obj.updateDynamic("getFormattingEditsOnPaste")(getFormattingEditsOnPaste)
-    __obj.updateDynamic("getImplementorsAtPosition")(getImplementorsAtPosition)
-    __obj.updateDynamic("getIndentationAtPosition")(getIndentationAtPosition)
-    __obj.updateDynamic("getNameOrDottedNameSpan")(getNameOrDottedNameSpan)
-    __obj.updateDynamic("getNavigateToItems")(getNavigateToItems)
-    __obj.updateDynamic("getOccurrencesAtPosition")(getOccurrencesAtPosition)
-    __obj.updateDynamic("getOutliningRegions")(getOutliningRegions)
-    __obj.updateDynamic("getReferencesAtPosition")(getReferencesAtPosition)
-    __obj.updateDynamic("getScriptLexicalStructure")(getScriptLexicalStructure)
-    __obj.updateDynamic("getSemanticDiagnostics")(getSemanticDiagnostics)
-    __obj.updateDynamic("getSignatureAtPosition")(getSignatureAtPosition)
-    __obj.updateDynamic("getSyntacticDiagnostics")(getSyntacticDiagnostics)
-    __obj.updateDynamic("getSyntaxTree")(getSyntaxTree)
-    __obj.updateDynamic("getTypeAtPosition")(getTypeAtPosition)
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(cleanupSemanticCache = cleanupSemanticCache, getBraceMatchingAtPosition = getBraceMatchingAtPosition, getBreakpointStatementAtPosition = getBreakpointStatementAtPosition, getCompilerOptionsDiagnostics = getCompilerOptionsDiagnostics, getCompletionEntryDetails = getCompletionEntryDetails, getCompletionsAtPosition = getCompletionsAtPosition, getDefinitionAtPosition = getDefinitionAtPosition, getEmitOutput = getEmitOutput, getFormattingEditsAfterKeystroke = getFormattingEditsAfterKeystroke, getFormattingEditsForDocument = getFormattingEditsForDocument, getFormattingEditsForRange = getFormattingEditsForRange, getFormattingEditsOnPaste = getFormattingEditsOnPaste, getImplementorsAtPosition = getImplementorsAtPosition, getIndentationAtPosition = getIndentationAtPosition, getNameOrDottedNameSpan = getNameOrDottedNameSpan, getNavigateToItems = getNavigateToItems, getOccurrencesAtPosition = getOccurrencesAtPosition, getOutliningRegions = getOutliningRegions, getReferencesAtPosition = getReferencesAtPosition, getScriptLexicalStructure = getScriptLexicalStructure, getSemanticDiagnostics = getSemanticDiagnostics, getSignatureAtPosition = getSignatureAtPosition, getSyntacticDiagnostics = getSyntacticDiagnostics, getSyntaxTree = getSyntaxTree, getTypeAtPosition = getTypeAtPosition, refresh = refresh)
+  
     __obj.asInstanceOf[ILanguageService]
   }
 }

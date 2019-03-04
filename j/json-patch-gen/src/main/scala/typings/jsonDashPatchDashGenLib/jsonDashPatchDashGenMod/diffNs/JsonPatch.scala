@@ -14,10 +14,8 @@ trait JsonPatch extends js.Object {
 object JsonPatch {
   @scala.inline
   def apply(op: PatchOperation, path: java.lang.String, value: js.Any): JsonPatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(op = op, path = path, value = value)
+  
     __obj.asInstanceOf[JsonPatch]
   }
 }

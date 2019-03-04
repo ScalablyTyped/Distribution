@@ -20,9 +20,7 @@ object Object {
     port: scala.Int | scala.Double = null,
     user: java.lang.String = null
   ): Object = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(host = host, scheme = scheme)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[Object]

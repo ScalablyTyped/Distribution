@@ -24,12 +24,7 @@ object TimerEventDefinition {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): TimerEventDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timeCycle")(timeCycle)
-    __obj.updateDynamic("timeDate")(timeDate)
-    __obj.updateDynamic("timeDuration")(timeDuration)
+    val __obj = js.Dynamic.literal($type = $type, id = id, timeCycle = timeCycle, timeDate = timeDate, timeDuration = timeDuration)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

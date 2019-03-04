@@ -55,8 +55,7 @@ object Annotation {
     id: java.lang.String = null,
     time: dateTime = null
   ): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (_authorString != null) __obj.updateDynamic("_authorString")(_authorString)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

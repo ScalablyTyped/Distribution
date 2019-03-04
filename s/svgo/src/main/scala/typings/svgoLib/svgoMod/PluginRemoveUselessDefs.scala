@@ -12,8 +12,8 @@ trait PluginRemoveUselessDefs extends js.Object {
 object PluginRemoveUselessDefs {
   @scala.inline
   def apply(removeUselessDefs: scala.Boolean | js.Object): PluginRemoveUselessDefs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeUselessDefs")(removeUselessDefs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeUselessDefs = removeUselessDefs.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveUselessDefs]
   }
 }

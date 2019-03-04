@@ -18,10 +18,8 @@ object Anon_FdIsatty {
     WriteStream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.ttyNs.WriteStream],
     isatty: js.Function1[scala.Double, scala.Boolean]
   ): Anon_FdIsatty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ReadStream")(ReadStream)
-    __obj.updateDynamic("WriteStream")(WriteStream)
-    __obj.updateDynamic("isatty")(isatty)
+    val __obj = js.Dynamic.literal(ReadStream = ReadStream, WriteStream = WriteStream, isatty = isatty)
+  
     __obj.asInstanceOf[Anon_FdIsatty]
   }
 }

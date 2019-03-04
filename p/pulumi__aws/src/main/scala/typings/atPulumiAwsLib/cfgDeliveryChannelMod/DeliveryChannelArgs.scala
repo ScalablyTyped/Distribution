@@ -37,8 +37,7 @@ object DeliveryChannelArgs {
     snapshotDeliveryProperties: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeliveryFrequencyInput] = null,
     snsTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): DeliveryChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
     if (snapshotDeliveryProperties != null) __obj.updateDynamic("snapshotDeliveryProperties")(snapshotDeliveryProperties.asInstanceOf[js.Any])

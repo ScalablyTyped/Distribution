@@ -22,12 +22,8 @@ object Anon_BlockDurationMinutes {
     spotInstanceType: java.lang.String,
     validUntil: java.lang.String
   ): Anon_BlockDurationMinutes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockDurationMinutes")(blockDurationMinutes)
-    __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior)
-    __obj.updateDynamic("maxPrice")(maxPrice)
-    __obj.updateDynamic("spotInstanceType")(spotInstanceType)
-    __obj.updateDynamic("validUntil")(validUntil)
+    val __obj = js.Dynamic.literal(blockDurationMinutes = blockDurationMinutes, instanceInterruptionBehavior = instanceInterruptionBehavior, maxPrice = maxPrice, spotInstanceType = spotInstanceType, validUntil = validUntil)
+  
     __obj.asInstanceOf[Anon_BlockDurationMinutes]
   }
 }

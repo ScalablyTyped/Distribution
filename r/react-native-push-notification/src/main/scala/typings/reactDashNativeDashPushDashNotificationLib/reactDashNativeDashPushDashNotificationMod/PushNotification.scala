@@ -66,31 +66,8 @@ object PushNotification {
     unregister: js.Function0[scala.Unit],
     userInteraction: scala.Boolean
   ): PushNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandonPermissions")(abandonPermissions)
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("badge")(badge)
-    __obj.updateDynamic("cancelAllLocalNotifications")(cancelAllLocalNotifications)
-    __obj.updateDynamic("cancelLocalNotifications")(cancelLocalNotifications)
-    __obj.updateDynamic("checkPermissions")(checkPermissions)
-    __obj.updateDynamic("clearAllNotifications")(clearAllNotifications)
-    __obj.updateDynamic("configure")(configure)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("foreground")(foreground)
-    __obj.updateDynamic("getApplicationIconBadgeNumber")(getApplicationIconBadgeNumber)
-    __obj.updateDynamic("localNotification")(localNotification)
-    __obj.updateDynamic("localNotificationSchedule")(localNotificationSchedule)
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("popInitialNotification")(popInitialNotification)
-    __obj.updateDynamic("presentLocalNotification")(presentLocalNotification)
-    __obj.updateDynamic("registerNotificationActions")(registerNotificationActions)
-    __obj.updateDynamic("requestPermissions")(requestPermissions)
-    __obj.updateDynamic("scheduleLocalNotification")(scheduleLocalNotification)
-    __obj.updateDynamic("setApplicationIconBadgeNumber")(setApplicationIconBadgeNumber)
-    __obj.updateDynamic("sound")(sound)
-    __obj.updateDynamic("unregister")(unregister)
-    __obj.updateDynamic("userInteraction")(userInteraction)
+    val __obj = js.Dynamic.literal(abandonPermissions = abandonPermissions, alert = alert, badge = badge, cancelAllLocalNotifications = cancelAllLocalNotifications, cancelLocalNotifications = cancelLocalNotifications, checkPermissions = checkPermissions, clearAllNotifications = clearAllNotifications, configure = configure, data = data, finish = finish, foreground = foreground, getApplicationIconBadgeNumber = getApplicationIconBadgeNumber, localNotification = localNotification, localNotificationSchedule = localNotificationSchedule, message = message.asInstanceOf[js.Any], popInitialNotification = popInitialNotification, presentLocalNotification = presentLocalNotification, registerNotificationActions = registerNotificationActions, requestPermissions = requestPermissions, scheduleLocalNotification = scheduleLocalNotification, setApplicationIconBadgeNumber = setApplicationIconBadgeNumber, sound = sound, unregister = unregister, userInteraction = userInteraction)
+  
     __obj.asInstanceOf[PushNotification]
   }
 }

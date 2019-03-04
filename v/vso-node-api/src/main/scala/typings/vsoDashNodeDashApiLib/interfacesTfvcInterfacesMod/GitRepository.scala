@@ -37,18 +37,8 @@ object GitRepository {
     url: java.lang.String,
     validRemoteUrls: js.Array[java.lang.String]
   ): GitRepository = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("defaultBranch")(defaultBranch)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isFork")(isFork)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parentRepository")(parentRepository)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("remoteUrl")(remoteUrl)
-    __obj.updateDynamic("sshUrl")(sshUrl)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("validRemoteUrls")(validRemoteUrls)
+    val __obj = js.Dynamic.literal(_links = _links, defaultBranch = defaultBranch, id = id, isFork = isFork, name = name, parentRepository = parentRepository, project = project, remoteUrl = remoteUrl, sshUrl = sshUrl, url = url, validRemoteUrls = validRemoteUrls)
+  
     __obj.asInstanceOf[GitRepository]
   }
 }

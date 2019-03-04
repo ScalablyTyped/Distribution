@@ -19,8 +19,7 @@ object TypeaheadMenuProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     text: java.lang.String = null
   ): TypeaheadMenuProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (className != null) __obj.updateDynamic("className")(className)
     if (emptyLabel != null) __obj.updateDynamic("emptyLabel")(emptyLabel)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])

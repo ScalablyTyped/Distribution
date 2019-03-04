@@ -48,11 +48,8 @@ object Widgette {
     on: js.Function2[java.lang.String, js.Function, js.Any],
     visible: scala.Boolean
   ): Widgette = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], destroy = destroy, on = on, visible = visible)
+  
     __obj.asInstanceOf[Widgette]
   }
 }

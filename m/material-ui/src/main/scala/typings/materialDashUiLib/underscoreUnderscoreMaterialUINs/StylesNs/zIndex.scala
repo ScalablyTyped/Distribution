@@ -32,17 +32,8 @@ object zIndex {
     snackbar: scala.Double,
     tooltip: scala.Double
   ): zIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appBar")(appBar)
-    __obj.updateDynamic("dialog")(dialog)
-    __obj.updateDynamic("dialogOverlay")(dialogOverlay)
-    __obj.updateDynamic("drawer")(drawer)
-    __obj.updateDynamic("drawerOverlay")(drawerOverlay)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("popover")(popover)
-    __obj.updateDynamic("snackbar")(snackbar)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(appBar = appBar, dialog = dialog, dialogOverlay = dialogOverlay, drawer = drawer, drawerOverlay = drawerOverlay, layer = layer, menu = menu, popover = popover, snackbar = snackbar, tooltip = tooltip)
+  
     __obj.asInstanceOf[zIndex]
   }
 }

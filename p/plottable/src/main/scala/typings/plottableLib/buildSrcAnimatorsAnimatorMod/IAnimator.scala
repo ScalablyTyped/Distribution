@@ -39,9 +39,8 @@ object IAnimator {
     ],
     totalTime: js.Function1[scala.Double, scala.Double]
   ): IAnimator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animate")(animate)
-    __obj.updateDynamic("totalTime")(totalTime)
+    val __obj = js.Dynamic.literal(animate = animate, totalTime = totalTime)
+  
     __obj.asInstanceOf[IAnimator]
   }
 }

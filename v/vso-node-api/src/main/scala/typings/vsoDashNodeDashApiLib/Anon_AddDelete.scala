@@ -22,12 +22,8 @@ object Anon_AddDelete {
     none: scala.Double,
     rename: scala.Double
   ): Anon_AddDelete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("rename")(rename)
+    val __obj = js.Dynamic.literal(add = add, delete = delete, edit = edit, none = none, rename = rename)
+  
     __obj.asInstanceOf[Anon_AddDelete]
   }
 }

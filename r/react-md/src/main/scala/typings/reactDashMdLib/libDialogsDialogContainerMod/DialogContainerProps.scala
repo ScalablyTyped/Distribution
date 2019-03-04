@@ -135,9 +135,7 @@ object DialogContainerProps {
     transitionLeaveTimeout: scala.Int | scala.Double = null,
     width: scala.Double | java.lang.String = null
   ): DialogContainerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], visible = visible)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (!js.isUndefined(activeElementFocus)) __obj.updateDynamic("activeElementFocus")(activeElementFocus)

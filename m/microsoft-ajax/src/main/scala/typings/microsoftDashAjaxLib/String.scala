@@ -37,11 +37,8 @@ object String {
     trimEnd: js.Function0[java.lang.String],
     trimStart: js.Function0[java.lang.String]
   ): String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endsWith")(endsWith)
-    __obj.updateDynamic("trim")(trim)
-    __obj.updateDynamic("trimEnd")(trimEnd)
-    __obj.updateDynamic("trimStart")(trimStart)
+    val __obj = js.Dynamic.literal(endsWith = endsWith, trim = trim, trimEnd = trimEnd, trimStart = trimStart)
+  
     __obj.asInstanceOf[String]
   }
 }

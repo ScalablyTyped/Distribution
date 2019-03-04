@@ -30,8 +30,7 @@ object Anon_Hash {
     nonce: java.lang.String = null,
     state: java.lang.String = null
   ): Anon_Hash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(hash = hash)
     if (_idTokenVerification != null) __obj.updateDynamic("_idTokenVerification")(_idTokenVerification)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (state != null) __obj.updateDynamic("state")(state)

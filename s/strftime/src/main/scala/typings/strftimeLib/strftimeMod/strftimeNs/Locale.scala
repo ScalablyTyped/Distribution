@@ -30,8 +30,7 @@ object Locale {
     shortDays: js.Array[java.lang.String] = null,
     shortMonths: js.Array[java.lang.String] = null
   ): Locale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formats")(formats)
+    val __obj = js.Dynamic.literal(formats = formats)
     if (AM != null) __obj.updateDynamic("AM")(AM)
     if (PM != null) __obj.updateDynamic("PM")(PM)
     if (am != null) __obj.updateDynamic("am")(am)

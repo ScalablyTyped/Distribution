@@ -24,12 +24,8 @@ object IContactPicker {
     pickSingleContactAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ContactInformation]],
     selectionMode: ContactSelectionMode
   ): IContactPicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitButtonText")(commitButtonText)
-    __obj.updateDynamic("desiredFields")(desiredFields)
-    __obj.updateDynamic("pickMultipleContactsAsync")(pickMultipleContactsAsync)
-    __obj.updateDynamic("pickSingleContactAsync")(pickSingleContactAsync)
-    __obj.updateDynamic("selectionMode")(selectionMode)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, desiredFields = desiredFields, pickMultipleContactsAsync = pickMultipleContactsAsync, pickSingleContactAsync = pickSingleContactAsync, selectionMode = selectionMode)
+  
     __obj.asInstanceOf[IContactPicker]
   }
 }

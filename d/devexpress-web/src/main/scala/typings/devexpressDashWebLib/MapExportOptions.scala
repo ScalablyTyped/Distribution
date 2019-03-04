@@ -24,9 +24,8 @@ trait MapExportOptions extends js.Object {
 object MapExportOptions {
   @scala.inline
   def apply(AutomaticPageLayout: scala.Boolean, SizeMode: java.lang.String): MapExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticPageLayout")(AutomaticPageLayout)
-    __obj.updateDynamic("SizeMode")(SizeMode)
+    val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout, SizeMode = SizeMode)
+  
     __obj.asInstanceOf[MapExportOptions]
   }
 }

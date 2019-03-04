@@ -196,8 +196,7 @@ object Base {
       scala.Unit
     ] = null
   ): Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("is")(is)
+    val __obj = js.Dynamic.literal(is = is)
     if ($ != null) __obj.updateDynamic("$")($)
     if ($$ != null) __obj.updateDynamic("$$")($$)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

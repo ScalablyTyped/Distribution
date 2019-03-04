@@ -150,8 +150,7 @@ object Plugin {
       scala.Unit | js.Promise[scala.Unit]
     ] = null
   ): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (buildEnd != null) __obj.updateDynamic("buildEnd")(buildEnd)
     if (buildStart != null) __obj.updateDynamic("buildStart")(buildStart)

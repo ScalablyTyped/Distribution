@@ -44,14 +44,8 @@ object LocatorSuggestLocationsParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     text: java.lang.String
   ): LocatorSuggestLocationsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(categories = categories, constructor = constructor, distance = distance, hasOwnProperty = hasOwnProperty, location = location, propertyIsEnumerable = propertyIsEnumerable, text = text)
+  
     __obj.asInstanceOf[LocatorSuggestLocationsParams]
   }
 }

@@ -22,12 +22,8 @@ object ICameraCaptureUIPhotoCaptureSettings {
     format: CameraCaptureUIPhotoFormat,
     maxResolution: CameraCaptureUIMaxPhotoResolution
   ): ICameraCaptureUIPhotoCaptureSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowCropping")(allowCropping)
-    __obj.updateDynamic("croppedAspectRatio")(croppedAspectRatio)
-    __obj.updateDynamic("croppedSizeInPixels")(croppedSizeInPixels)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("maxResolution")(maxResolution)
+    val __obj = js.Dynamic.literal(allowCropping = allowCropping, croppedAspectRatio = croppedAspectRatio, croppedSizeInPixels = croppedSizeInPixels, format = format, maxResolution = maxResolution)
+  
     __obj.asInstanceOf[ICameraCaptureUIPhotoCaptureSettings]
   }
 }

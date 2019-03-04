@@ -22,12 +22,8 @@ object Trigger {
     getTriggerSourceId: js.Function0[java.lang.String],
     getUniqueId: js.Function0[java.lang.String]
   ): Trigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEventType")(getEventType)
-    __obj.updateDynamic("getHandlerFunction")(getHandlerFunction)
-    __obj.updateDynamic("getTriggerSource")(getTriggerSource)
-    __obj.updateDynamic("getTriggerSourceId")(getTriggerSourceId)
-    __obj.updateDynamic("getUniqueId")(getUniqueId)
+    val __obj = js.Dynamic.literal(getEventType = getEventType, getHandlerFunction = getHandlerFunction, getTriggerSource = getTriggerSource, getTriggerSourceId = getTriggerSourceId, getUniqueId = getUniqueId)
+  
     __obj.asInstanceOf[Trigger]
   }
 }

@@ -58,12 +58,8 @@ object MediaProperties {
     OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
     URL: java.lang.String
   ): MediaProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FilterData")(FilterData.asInstanceOf[js.Any])
-    __obj.updateDynamic("InputStream")(InputStream)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("URL")(URL)
+    val __obj = js.Dynamic.literal(FilterData = FilterData.asInstanceOf[js.Any], InputStream = InputStream, MimeType = MimeType, OutputStream = OutputStream, URL = URL)
+  
     __obj.asInstanceOf[MediaProperties]
   }
 }

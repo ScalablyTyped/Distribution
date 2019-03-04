@@ -16,8 +16,8 @@ object NavigationCompleteTransitionAction {
     key: java.lang.String,
     `type`: reactDashNavigationLib.reactDashNavigationLibStrings.`Navigation/COMPLETE_TRANSITION`
   ): NavigationCompleteTransitionAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NavigationCompleteTransitionAction]
   }
 }

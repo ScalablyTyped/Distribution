@@ -13,9 +13,8 @@ trait ValidationResponse extends js.Object {
 object ValidationResponse {
   @scala.inline
   def apply(service: Service, status: scala.Double): ValidationResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(service = service, status = status)
+  
     __obj.asInstanceOf[ValidationResponse]
   }
 }

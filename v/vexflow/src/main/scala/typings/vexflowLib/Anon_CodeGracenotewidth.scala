@@ -22,12 +22,8 @@ object Anon_CodeGracenotewidth {
     shift_right: scala.Double,
     width: scala.Double
   ): Anon_CodeGracenotewidth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("gracenote_width")(gracenote_width)
-    __obj.updateDynamic("shift_down")(shift_down)
-    __obj.updateDynamic("shift_right")(shift_right)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(code = code, gracenote_width = gracenote_width, shift_down = shift_down, shift_right = shift_right, width = width)
+  
     __obj.asInstanceOf[Anon_CodeGracenotewidth]
   }
 }

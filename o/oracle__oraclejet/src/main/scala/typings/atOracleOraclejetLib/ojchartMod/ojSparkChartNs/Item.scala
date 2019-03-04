@@ -35,18 +35,8 @@ object Item {
     svgStyle: js.Object,
     value: scala.Double
   ): Item = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
-    __obj.updateDynamic("markerDisplayed")(markerDisplayed.asInstanceOf[js.Any])
-    __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    __obj.updateDynamic("markerSize")(markerSize)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, date = date, high = high, low = low, markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerShape = markerShape.asInstanceOf[js.Any], markerSize = markerSize, svgClassName = svgClassName, svgStyle = svgStyle, value = value)
+  
     __obj.asInstanceOf[Item]
   }
 }

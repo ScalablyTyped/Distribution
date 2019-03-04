@@ -59,15 +59,8 @@ object GeoPolygonFilter {
     points: js.Function1[js.Array[_], GeoPolygonFilter],
     toJSON: js.Function0[GeoPolygonFilter]
   ): GeoPolygonFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, name = name, normalize = normalize, points = points, toJSON = toJSON)
+  
     __obj.asInstanceOf[GeoPolygonFilter]
   }
 }

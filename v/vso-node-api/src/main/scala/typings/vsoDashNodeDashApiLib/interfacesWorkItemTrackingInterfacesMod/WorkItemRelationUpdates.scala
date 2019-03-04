@@ -27,10 +27,8 @@ object WorkItemRelationUpdates {
     removed: js.Array[WorkItemRelation],
     updated: js.Array[WorkItemRelation]
   ): WorkItemRelationUpdates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("updated")(updated)
+    val __obj = js.Dynamic.literal(added = added, removed = removed, updated = updated)
+  
     __obj.asInstanceOf[WorkItemRelationUpdates]
   }
 }

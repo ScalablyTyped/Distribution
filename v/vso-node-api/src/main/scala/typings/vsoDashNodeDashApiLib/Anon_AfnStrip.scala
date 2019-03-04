@@ -36,19 +36,8 @@ object Anon_AfnStrip {
     tmiTestRunReverseDeploymentFiles: scala.Double,
     tmiTestRunSummary: scala.Double
   ): Anon_AfnStrip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afnStrip")(afnStrip)
-    __obj.updateDynamic("bugFilingData")(bugFilingData)
-    __obj.updateDynamic("codeCoverage")(codeCoverage)
-    __obj.updateDynamic("consoleLog")(consoleLog)
-    __obj.updateDynamic("generalAttachment")(generalAttachment)
-    __obj.updateDynamic("intermediateCollectorData")(intermediateCollectorData)
-    __obj.updateDynamic("runConfig")(runConfig)
-    __obj.updateDynamic("testImpactDetails")(testImpactDetails)
-    __obj.updateDynamic("tmiTestResultDetail")(tmiTestResultDetail)
-    __obj.updateDynamic("tmiTestRunDeploymentFiles")(tmiTestRunDeploymentFiles)
-    __obj.updateDynamic("tmiTestRunReverseDeploymentFiles")(tmiTestRunReverseDeploymentFiles)
-    __obj.updateDynamic("tmiTestRunSummary")(tmiTestRunSummary)
+    val __obj = js.Dynamic.literal(afnStrip = afnStrip, bugFilingData = bugFilingData, codeCoverage = codeCoverage, consoleLog = consoleLog, generalAttachment = generalAttachment, intermediateCollectorData = intermediateCollectorData, runConfig = runConfig, testImpactDetails = testImpactDetails, tmiTestResultDetail = tmiTestResultDetail, tmiTestRunDeploymentFiles = tmiTestRunDeploymentFiles, tmiTestRunReverseDeploymentFiles = tmiTestRunReverseDeploymentFiles, tmiTestRunSummary = tmiTestRunSummary)
+  
     __obj.asInstanceOf[Anon_AfnStrip]
   }
 }

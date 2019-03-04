@@ -44,23 +44,8 @@ object ApplePaySession {
     onvalidatemerchant: js.Function1[js.Any, scala.Unit],
     supportsVersion: js.Function1[scala.Double, scala.Boolean]
   ): ApplePaySession = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("canMakePayments")(canMakePayments)
-    __obj.updateDynamic("canMakePaymentsWithActiveCard")(canMakePaymentsWithActiveCard)
-    __obj.updateDynamic("completeMerchantValidation")(completeMerchantValidation)
-    __obj.updateDynamic("completePayment")(completePayment)
-    __obj.updateDynamic("completePaymentMethodSelection")(completePaymentMethodSelection)
-    __obj.updateDynamic("completeShippingContactSelection")(completeShippingContactSelection)
-    __obj.updateDynamic("completeShippingMethodSelection")(completeShippingMethodSelection)
-    __obj.updateDynamic("oncancel")(oncancel)
-    __obj.updateDynamic("onpaymentauthorized")(onpaymentauthorized)
-    __obj.updateDynamic("onpaymentmethodselected")(onpaymentmethodselected)
-    __obj.updateDynamic("onshippingcontactselected")(onshippingcontactselected)
-    __obj.updateDynamic("onshippingmethodselected")(onshippingmethodselected)
-    __obj.updateDynamic("onvalidatemerchant")(onvalidatemerchant)
-    __obj.updateDynamic("supportsVersion")(supportsVersion)
+    val __obj = js.Dynamic.literal(abort = abort, begin = begin, canMakePayments = canMakePayments, canMakePaymentsWithActiveCard = canMakePaymentsWithActiveCard, completeMerchantValidation = completeMerchantValidation, completePayment = completePayment, completePaymentMethodSelection = completePaymentMethodSelection, completeShippingContactSelection = completeShippingContactSelection, completeShippingMethodSelection = completeShippingMethodSelection, oncancel = oncancel, onpaymentauthorized = onpaymentauthorized, onpaymentmethodselected = onpaymentmethodselected, onshippingcontactselected = onshippingcontactselected, onshippingmethodselected = onshippingmethodselected, onvalidatemerchant = onvalidatemerchant, supportsVersion = supportsVersion)
+  
     __obj.asInstanceOf[ApplePaySession]
   }
 }

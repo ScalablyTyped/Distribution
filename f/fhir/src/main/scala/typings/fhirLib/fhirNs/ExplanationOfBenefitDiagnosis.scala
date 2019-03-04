@@ -51,8 +51,7 @@ object ExplanationOfBenefitDiagnosis {
     packageCode: CodeableConcept = null,
     `type`: js.Array[CodeableConcept] = null
   ): ExplanationOfBenefitDiagnosis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sequence")(sequence)
+    val __obj = js.Dynamic.literal(sequence = sequence)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)

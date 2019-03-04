@@ -14,11 +14,8 @@ trait OnCellChangeEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
 object OnCellChangeEventArgs {
   @scala.inline
   def apply[T /* <: SlickData */](cell: scala.Double, grid: Grid[T], item: T, row: scala.Double): OnCellChangeEventArgs[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cell")(cell)
-    __obj.updateDynamic("grid")(grid)
-    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    __obj.updateDynamic("row")(row)
+    val __obj = js.Dynamic.literal(cell = cell, grid = grid, item = item.asInstanceOf[js.Any], row = row)
+  
     __obj.asInstanceOf[OnCellChangeEventArgs[T]]
   }
 }

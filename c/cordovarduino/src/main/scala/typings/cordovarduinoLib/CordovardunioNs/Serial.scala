@@ -62,13 +62,8 @@ object Serial {
     requestPermission: js.Function2[js.Function, js.Function, scala.Unit],
     write: js.Function3[java.lang.String, js.Function, js.Function, scala.Unit]
   ): Serial = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("registerReadCallback")(registerReadCallback)
-    __obj.updateDynamic("requestPermission")(requestPermission)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(close = close, open = open, read = read, registerReadCallback = registerReadCallback, requestPermission = requestPermission, write = write)
+  
     __obj.asInstanceOf[Serial]
   }
 }

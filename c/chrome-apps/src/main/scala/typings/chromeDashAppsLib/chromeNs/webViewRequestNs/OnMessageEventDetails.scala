@@ -52,16 +52,8 @@ object OnMessageEventDetails {
     `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
     url: java.lang.String
   ): OnMessageEventDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("stage")(stage)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, message = message, method = method, parentFrameId = parentFrameId, requestId = requestId, stage = stage, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OnMessageEventDetails]
   }
 }

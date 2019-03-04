@@ -20,11 +20,8 @@ object StubbedChromeSetting {
     onChange: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.eventsNs.Event,
     set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
   ): StubbedChromeSetting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, onChange = onChange, set = set)
+  
     __obj.asInstanceOf[StubbedChromeSetting]
   }
 }

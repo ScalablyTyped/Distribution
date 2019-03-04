@@ -22,11 +22,7 @@ object ReferenceEntry {
     originalFileName: java.lang.String = null,
     originalTextSpan: TextSpan = null
   ): ReferenceEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("isDefinition")(isDefinition)
-    __obj.updateDynamic("isWriteAccess")(isWriteAccess)
-    __obj.updateDynamic("textSpan")(textSpan)
+    val __obj = js.Dynamic.literal(fileName = fileName, isDefinition = isDefinition, isWriteAccess = isWriteAccess, textSpan = textSpan)
     if (isInString != null) __obj.updateDynamic("isInString")(isInString)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)

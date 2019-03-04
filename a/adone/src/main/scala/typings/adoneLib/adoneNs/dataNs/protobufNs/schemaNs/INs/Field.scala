@@ -28,11 +28,7 @@ object Field {
     oneof: java.lang.String = null,
     `type`: java.lang.String = null
   ): Field = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("repeated")(repeated)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(options = options, repeated = repeated, required = required, tag = tag)
     if (map != null) __obj.updateDynamic("map")(map)
     if (name != null) __obj.updateDynamic("name")(name)
     if (oneof != null) __obj.updateDynamic("oneof")(oneof)

@@ -31,8 +31,7 @@ object ApplyWorkspaceEditResponse {
     failedChange: scala.Int | scala.Double = null,
     failureReason: java.lang.String = null
   ): ApplyWorkspaceEditResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applied")(applied)
+    val __obj = js.Dynamic.literal(applied = applied)
     if (failedChange != null) __obj.updateDynamic("failedChange")(failedChange.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
     __obj.asInstanceOf[ApplyWorkspaceEditResponse]

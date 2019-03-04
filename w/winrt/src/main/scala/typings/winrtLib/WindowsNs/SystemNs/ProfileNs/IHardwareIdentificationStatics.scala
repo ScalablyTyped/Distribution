@@ -14,8 +14,8 @@ object IHardwareIdentificationStatics {
   def apply(
     getPackageSpecificToken: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer, HardwareToken]
   ): IHardwareIdentificationStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPackageSpecificToken")(getPackageSpecificToken)
+    val __obj = js.Dynamic.literal(getPackageSpecificToken = getPackageSpecificToken)
+  
     __obj.asInstanceOf[IHardwareIdentificationStatics]
   }
 }

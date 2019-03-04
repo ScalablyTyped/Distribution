@@ -44,9 +44,7 @@ object FooterData {
       java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement[_]
     ] = null
   ): FooterData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, label = label)
     if (align != null) __obj.updateDynamic("align")(align)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     __obj.asInstanceOf[FooterData]

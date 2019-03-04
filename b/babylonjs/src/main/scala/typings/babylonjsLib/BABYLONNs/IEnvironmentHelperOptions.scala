@@ -188,34 +188,8 @@ object IEnvironmentHelperOptions {
     skyboxTexture: java.lang.String | BaseTexture,
     toneMappingEnabled: scala.Boolean
   ): IEnvironmentHelperOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundYRotation")(backgroundYRotation)
-    __obj.updateDynamic("cameraContrast")(cameraContrast)
-    __obj.updateDynamic("cameraExposure")(cameraExposure)
-    __obj.updateDynamic("createGround")(createGround)
-    __obj.updateDynamic("createSkybox")(createSkybox)
-    __obj.updateDynamic("enableGroundMirror")(enableGroundMirror)
-    __obj.updateDynamic("enableGroundShadow")(enableGroundShadow)
-    __obj.updateDynamic("environmentTexture")(environmentTexture.asInstanceOf[js.Any])
-    __obj.updateDynamic("groundColor")(groundColor)
-    __obj.updateDynamic("groundMirrorAmount")(groundMirrorAmount)
-    __obj.updateDynamic("groundMirrorBlurKernel")(groundMirrorBlurKernel)
-    __obj.updateDynamic("groundMirrorFallOffDistance")(groundMirrorFallOffDistance)
-    __obj.updateDynamic("groundMirrorFresnelWeight")(groundMirrorFresnelWeight)
-    __obj.updateDynamic("groundMirrorSizeRatio")(groundMirrorSizeRatio)
-    __obj.updateDynamic("groundMirrorTextureType")(groundMirrorTextureType)
-    __obj.updateDynamic("groundOpacity")(groundOpacity)
-    __obj.updateDynamic("groundShadowLevel")(groundShadowLevel)
-    __obj.updateDynamic("groundSize")(groundSize)
-    __obj.updateDynamic("groundTexture")(groundTexture.asInstanceOf[js.Any])
-    __obj.updateDynamic("groundYBias")(groundYBias)
-    __obj.updateDynamic("rootPosition")(rootPosition)
-    __obj.updateDynamic("setupImageProcessing")(setupImageProcessing)
-    __obj.updateDynamic("sizeAuto")(sizeAuto)
-    __obj.updateDynamic("skyboxColor")(skyboxColor)
-    __obj.updateDynamic("skyboxSize")(skyboxSize)
-    __obj.updateDynamic("skyboxTexture")(skyboxTexture.asInstanceOf[js.Any])
-    __obj.updateDynamic("toneMappingEnabled")(toneMappingEnabled)
+    val __obj = js.Dynamic.literal(backgroundYRotation = backgroundYRotation, cameraContrast = cameraContrast, cameraExposure = cameraExposure, createGround = createGround, createSkybox = createSkybox, enableGroundMirror = enableGroundMirror, enableGroundShadow = enableGroundShadow, environmentTexture = environmentTexture.asInstanceOf[js.Any], groundColor = groundColor, groundMirrorAmount = groundMirrorAmount, groundMirrorBlurKernel = groundMirrorBlurKernel, groundMirrorFallOffDistance = groundMirrorFallOffDistance, groundMirrorFresnelWeight = groundMirrorFresnelWeight, groundMirrorSizeRatio = groundMirrorSizeRatio, groundMirrorTextureType = groundMirrorTextureType, groundOpacity = groundOpacity, groundShadowLevel = groundShadowLevel, groundSize = groundSize, groundTexture = groundTexture.asInstanceOf[js.Any], groundYBias = groundYBias, rootPosition = rootPosition, setupImageProcessing = setupImageProcessing, sizeAuto = sizeAuto, skyboxColor = skyboxColor, skyboxSize = skyboxSize, skyboxTexture = skyboxTexture.asInstanceOf[js.Any], toneMappingEnabled = toneMappingEnabled)
+  
     __obj.asInstanceOf[IEnvironmentHelperOptions]
   }
 }

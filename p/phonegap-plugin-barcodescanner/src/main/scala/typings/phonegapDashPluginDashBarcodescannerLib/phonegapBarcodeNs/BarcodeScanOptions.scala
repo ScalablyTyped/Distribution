@@ -36,8 +36,7 @@ object BarcodeScanOptions {
     showTorchButton: js.UndefOr[scala.Boolean] = js.undefined,
     torchOn: js.UndefOr[scala.Boolean] = js.undefined
   ): BarcodeScanOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableAnimations")(disableAnimations)
+    val __obj = js.Dynamic.literal(disableAnimations = disableAnimations)
     if (!js.isUndefined(disableSuccessBeep)) __obj.updateDynamic("disableSuccessBeep")(disableSuccessBeep)
     if (formats != null) __obj.updateDynamic("formats")(formats)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])

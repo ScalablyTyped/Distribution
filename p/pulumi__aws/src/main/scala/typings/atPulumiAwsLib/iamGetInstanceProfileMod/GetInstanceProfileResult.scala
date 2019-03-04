@@ -48,14 +48,8 @@ object GetInstanceProfileResult {
     roleId: java.lang.String,
     roleName: java.lang.String
   ): GetInstanceProfileResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("createDate")(createDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("roleId")(roleId)
-    __obj.updateDynamic("roleName")(roleName)
+    val __obj = js.Dynamic.literal(arn = arn, createDate = createDate, id = id, path = path, roleArn = roleArn, roleId = roleId, roleName = roleName)
+  
     __obj.asInstanceOf[GetInstanceProfileResult]
   }
 }

@@ -37,7 +37,8 @@ object DateFilter {
     delay: scala.Int | scala.Double = null,
     style: reactDashBootstrapDashTableLib.Anon_ComparatorDateCSSProperties = null
   ): DateFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (dateComparators != null) __obj.updateDynamic("dateComparators")(dateComparators)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

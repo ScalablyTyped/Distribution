@@ -22,11 +22,8 @@ object InitMultipartUploadResult {
     res: aliDashOssLib.Anon_Headers,
     uploadId: java.lang.String
   ): InitMultipartUploadResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("uploadId")(uploadId)
+    val __obj = js.Dynamic.literal(bucket = bucket, name = name, res = res, uploadId = uploadId)
+  
     __obj.asInstanceOf[InitMultipartUploadResult]
   }
 }

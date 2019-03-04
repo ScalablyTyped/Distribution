@@ -28,8 +28,7 @@ object CatAllocationParams {
     requestTimeout: scala.Int | scala.Double = null,
     v: js.UndefOr[scala.Boolean] = js.undefined
   ): CatAllocationParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
     if (body != null) __obj.updateDynamic("body")(body)
     if (bytes != null) __obj.updateDynamic("bytes")(bytes)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])

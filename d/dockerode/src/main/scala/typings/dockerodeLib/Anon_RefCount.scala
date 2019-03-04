@@ -13,9 +13,8 @@ trait Anon_RefCount extends js.Object {
 object Anon_RefCount {
   @scala.inline
   def apply(RefCount: scala.Double, Size: scala.Double): Anon_RefCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RefCount")(RefCount)
-    __obj.updateDynamic("Size")(Size)
+    val __obj = js.Dynamic.literal(RefCount = RefCount, Size = Size)
+  
     __obj.asInstanceOf[Anon_RefCount]
   }
 }

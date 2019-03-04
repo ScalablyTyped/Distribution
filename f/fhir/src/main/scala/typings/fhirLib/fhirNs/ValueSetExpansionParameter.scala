@@ -91,8 +91,7 @@ object ValueSetExpansionParameter {
     valueString: java.lang.String = null,
     valueUri: uri = null
   ): ValueSetExpansionParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_name != null) __obj.updateDynamic("_name")(_name)

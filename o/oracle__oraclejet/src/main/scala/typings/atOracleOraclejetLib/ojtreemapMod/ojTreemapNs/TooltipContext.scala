@@ -29,15 +29,8 @@ object TooltipContext {
     parentElement: stdLib.Element,
     value: scala.Double
   ): TooltipContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, data = data, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], label = label, parentElement = parentElement, value = value)
+  
     __obj.asInstanceOf[TooltipContext[K, D]]
   }
 }

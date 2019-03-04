@@ -80,15 +80,8 @@ object JobSpec {
     template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec,
     ttlSecondsAfterFinished: scala.Double
   ): JobSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeDeadlineSeconds")(activeDeadlineSeconds)
-    __obj.updateDynamic("backoffLimit")(backoffLimit)
-    __obj.updateDynamic("completions")(completions)
-    __obj.updateDynamic("manualSelector")(manualSelector)
-    __obj.updateDynamic("parallelism")(parallelism)
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("template")(template)
-    __obj.updateDynamic("ttlSecondsAfterFinished")(ttlSecondsAfterFinished)
+    val __obj = js.Dynamic.literal(activeDeadlineSeconds = activeDeadlineSeconds, backoffLimit = backoffLimit, completions = completions, manualSelector = manualSelector, parallelism = parallelism, selector = selector, template = template, ttlSecondsAfterFinished = ttlSecondsAfterFinished)
+  
     __obj.asInstanceOf[JobSpec]
   }
 }

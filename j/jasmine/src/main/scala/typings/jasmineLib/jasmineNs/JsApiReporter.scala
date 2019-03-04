@@ -19,7 +19,7 @@ trait JsApiReporter
   def resultsForSpec(specId: js.Any): js.Any = js.native
   def resultsForSpecs(specIds: js.Any): js.Any = js.native
   def suites(): js.Array[Suite] = js.native
-  def `summarizeResult_`(result: js.Any): js.Any = js.native
-  def `summarize_`(suiteOrSpec: SuiteOrSpec): js.Any = js.native
+  def summarizeResult_(result: js.Any): js.Any = js.native
+  def summarize_(suiteOrSpec: SuiteOrSpec): js.Any = js.native
 }
 

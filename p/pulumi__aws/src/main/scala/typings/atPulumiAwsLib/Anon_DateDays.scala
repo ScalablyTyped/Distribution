@@ -18,8 +18,7 @@ object Anon_DateDays {
     date: java.lang.String = null,
     days: scala.Int | scala.Double = null
   ): Anon_DateDays = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storageClass")(storageClass)
+    val __obj = js.Dynamic.literal(storageClass = storageClass)
     if (date != null) __obj.updateDynamic("date")(date)
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DateDays]

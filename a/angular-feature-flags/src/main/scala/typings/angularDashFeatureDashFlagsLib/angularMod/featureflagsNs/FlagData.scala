@@ -33,11 +33,8 @@ object FlagData {
     key: java.lang.String,
     name: java.lang.String
   ): FlagData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(active = active, description = description, key = key, name = name)
+  
     __obj.asInstanceOf[FlagData]
   }
 }

@@ -20,9 +20,8 @@ object ServicesResource {
     ],
     skus: SkusResource
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("skus")(skus)
+    val __obj = js.Dynamic.literal(list = list, skus = skus)
+  
     __obj.asInstanceOf[ServicesResource]
   }
 }

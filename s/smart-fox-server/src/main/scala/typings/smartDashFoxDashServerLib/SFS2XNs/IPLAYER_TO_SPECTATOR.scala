@@ -16,9 +16,8 @@ object IPLAYER_TO_SPECTATOR {
     room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
     user: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
   ): IPLAYER_TO_SPECTATOR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(room = room, user = user)
+  
     __obj.asInstanceOf[IPLAYER_TO_SPECTATOR]
   }
 }

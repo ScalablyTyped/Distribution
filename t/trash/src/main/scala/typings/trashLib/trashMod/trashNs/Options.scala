@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(glob: scala.Boolean): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("glob")(glob)
+    val __obj = js.Dynamic.literal(glob = glob)
+  
     __obj.asInstanceOf[Options]
   }
 }

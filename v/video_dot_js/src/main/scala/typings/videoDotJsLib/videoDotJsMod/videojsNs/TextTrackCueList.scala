@@ -47,9 +47,7 @@ object TextTrackCueList {
   		 */
   /* index */ org.scalablytyped.runtime.NumberDictionary[videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue] = null
   ): TextTrackCueList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCueById")(getCueById)
-    __obj.updateDynamic("length")(length)
+    val __obj = js.Dynamic.literal(getCueById = getCueById, length = length)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[TextTrackCueList]
   }

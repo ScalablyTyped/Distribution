@@ -24,8 +24,8 @@ object YieldExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.YieldExpression,
     argument: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): YieldExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("delegate")(delegate)
+    val __obj = js.Dynamic.literal(delegate = delegate)
+    __obj.updateDynamic("type")(`type`)
     if (argument != null) __obj.updateDynamic("argument")(argument)
     __obj.asInstanceOf[YieldExpression]
   }

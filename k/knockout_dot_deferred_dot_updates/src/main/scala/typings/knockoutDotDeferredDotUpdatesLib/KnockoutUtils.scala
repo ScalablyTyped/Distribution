@@ -17,9 +17,8 @@ object KnockoutUtils {
     objectForEach: js.Function2[js.Any, js.Function, scala.Unit],
     objectMap: js.Function2[js.Any, js.Function, js.Any]
   ): KnockoutUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectForEach")(objectForEach)
-    __obj.updateDynamic("objectMap")(objectMap)
+    val __obj = js.Dynamic.literal(objectForEach = objectForEach, objectMap = objectMap)
+  
     __obj.asInstanceOf[KnockoutUtils]
   }
 }

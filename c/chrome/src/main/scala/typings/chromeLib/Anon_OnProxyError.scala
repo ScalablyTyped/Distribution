@@ -16,9 +16,8 @@ object Anon_OnProxyError {
     onProxyError: chromeLib.chromeNs.proxyNs.ProxyErrorEvent,
     settings: chromeLib.chromeNs.typesNs.ChromeSetting
   ): Anon_OnProxyError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onProxyError")(onProxyError)
-    __obj.updateDynamic("settings")(settings)
+    val __obj = js.Dynamic.literal(onProxyError = onProxyError, settings = settings)
+  
     __obj.asInstanceOf[Anon_OnProxyError]
   }
 }

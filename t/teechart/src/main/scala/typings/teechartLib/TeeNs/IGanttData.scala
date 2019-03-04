@@ -21,13 +21,8 @@ object IGanttData {
     values: js.Array[scala.Double],
     x: js.Array[scala.Double]
   ): IGanttData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("values")(values)
-    __obj.updateDynamic("x")(x)
+    val __obj = js.Dynamic.literal(end = end, labels = labels, source = source, start = start, values = values, x = x)
+  
     __obj.asInstanceOf[IGanttData]
   }
 }

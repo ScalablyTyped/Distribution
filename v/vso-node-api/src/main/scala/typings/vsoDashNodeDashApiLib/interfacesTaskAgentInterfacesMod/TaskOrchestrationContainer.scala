@@ -25,14 +25,8 @@ object TaskOrchestrationContainer {
     parallel: scala.Boolean,
     rollback: TaskOrchestrationContainer
   ): TaskOrchestrationContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("itemType")(itemType)
-    __obj.updateDynamic("maxConcurrency")(maxConcurrency)
-    __obj.updateDynamic("parallel")(parallel)
-    __obj.updateDynamic("rollback")(rollback)
+    val __obj = js.Dynamic.literal(children = children, continueOnError = continueOnError, data = data, itemType = itemType, maxConcurrency = maxConcurrency, parallel = parallel, rollback = rollback)
+  
     __obj.asInstanceOf[TaskOrchestrationContainer]
   }
 }

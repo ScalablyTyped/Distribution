@@ -36,11 +36,8 @@ object ChatRoomError {
     room: java.lang.String,
     text: java.lang.String
   ): ChatRoomError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(code = code, operation = operation, room = room, text = text)
+  
     __obj.asInstanceOf[ChatRoomError]
   }
 }

@@ -14,8 +14,7 @@ trait HttpHeader extends js.Object {
 object HttpHeader {
   @scala.inline
   def apply(name: java.lang.String, binaryValue: stdLib.ArrayBuffer = null, value: java.lang.String = null): HttpHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (binaryValue != null) __obj.updateDynamic("binaryValue")(binaryValue)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[HttpHeader]

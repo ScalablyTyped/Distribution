@@ -109,8 +109,7 @@ object DetectedIssue {
     severity: code = null,
     text: Narrative = null
   ): DetectedIssue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_detail != null) __obj.updateDynamic("_detail")(_detail)
     if (_id != null) __obj.updateDynamic("_id")(_id)

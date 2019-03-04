@@ -18,8 +18,8 @@ trait PrintJob extends js.Object {
 object PrintJob {
   @scala.inline
   def apply(getStatus: js.Function1[js.Function1[/* printJobStatusInfo */ PrintJobStatusInfo, _], scala.Unit]): PrintJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(getStatus)
+    val __obj = js.Dynamic.literal(getStatus = getStatus)
+  
     __obj.asInstanceOf[PrintJob]
   }
 }

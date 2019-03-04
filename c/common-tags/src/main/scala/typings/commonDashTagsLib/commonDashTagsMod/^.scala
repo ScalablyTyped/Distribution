@@ -71,7 +71,7 @@ object ^ extends js.Object {
   def stripIndentTransformer_initial(`type`: commonDashTagsLib.commonDashTagsLibStrings.initial): commonDashTagsLib.commonDashTagsMod.TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def trimResultTransformer(): commonDashTagsLib.commonDashTagsMod.TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
-  def `trimResultTransformer_`(side: commonDashTagsLib.commonDashTagsLibStrings.Empty): commonDashTagsLib.commonDashTagsMod.TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer_(side: commonDashTagsLib.commonDashTagsLibStrings.Empty): commonDashTagsLib.commonDashTagsMod.TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")
   def trimResultTransformer_end(side: commonDashTagsLib.commonDashTagsLibStrings.end): commonDashTagsLib.commonDashTagsMod.TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   @JSName("trimResultTransformer")

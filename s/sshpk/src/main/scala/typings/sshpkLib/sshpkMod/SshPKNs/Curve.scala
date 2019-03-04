@@ -28,15 +28,8 @@ object Curve {
     s: nodeLib.Buffer,
     size: scala.Double
   ): Curve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("p")(p)
-    __obj.updateDynamic("pkcs8oid")(pkcs8oid)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(G = G, a = a, b = b, n = n, p = p, pkcs8oid = pkcs8oid, s = s, size = size)
+  
     __obj.asInstanceOf[Curve]
   }
 }

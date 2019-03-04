@@ -38,17 +38,8 @@ object Anon_ComponentFoundation {
     `network-cost`: scala.Int | scala.Double = null,
     `network-id`: scala.Int | scala.Double = null
   ): Anon_ComponentFoundation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("foundation")(foundation)
-    __obj.updateDynamic("generation")(generation)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("raddr")(raddr)
-    __obj.updateDynamic("rport")(rport)
-    __obj.updateDynamic("tcptype")(tcptype)
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(component = component, foundation = foundation, generation = generation, ip = ip, port = port, priority = priority.asInstanceOf[js.Any], raddr = raddr, rport = rport, tcptype = tcptype, transport = transport)
+    __obj.updateDynamic("type")(`type`)
     if (`network-cost` != null) __obj.updateDynamic("network-cost")(`network-cost`.asInstanceOf[js.Any])
     if (`network-id` != null) __obj.updateDynamic("network-id")(`network-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ComponentFoundation]

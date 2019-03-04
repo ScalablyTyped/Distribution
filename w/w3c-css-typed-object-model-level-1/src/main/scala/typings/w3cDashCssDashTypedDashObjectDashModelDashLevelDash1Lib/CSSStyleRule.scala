@@ -12,8 +12,8 @@ trait CSSStyleRule extends js.Object {
 object CSSStyleRule {
   @scala.inline
   def apply(styleMap: StylePropertyMap): CSSStyleRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styleMap")(styleMap)
+    val __obj = js.Dynamic.literal(styleMap = styleMap)
+  
     __obj.asInstanceOf[CSSStyleRule]
   }
 }

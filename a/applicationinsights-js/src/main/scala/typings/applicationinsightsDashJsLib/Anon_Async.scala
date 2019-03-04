@@ -46,24 +46,8 @@ object Anon_Async {
     value: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType,
     ver: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   ): Anon_Async = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("commandName")(commandName)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("dependencyKind")(dependencyKind)
-    __obj.updateDynamic("dependencySource")(dependencySource)
-    __obj.updateDynamic("dependencyTypeName")(dependencyTypeName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("resultCode")(resultCode)
-    __obj.updateDynamic("stdDev")(stdDev)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("ver")(ver)
+    val __obj = js.Dynamic.literal(async = async, commandName = commandName, count = count, dependencyKind = dependencyKind, dependencySource = dependencySource, dependencyTypeName = dependencyTypeName, id = id, kind = kind, max = max, min = min, name = name, properties = properties, resultCode = resultCode, stdDev = stdDev, success = success, value = value, ver = ver)
+  
     __obj.asInstanceOf[Anon_Async]
   }
 }

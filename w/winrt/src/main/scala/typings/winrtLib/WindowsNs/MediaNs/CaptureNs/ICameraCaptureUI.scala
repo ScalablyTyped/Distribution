@@ -21,10 +21,8 @@ object ICameraCaptureUI {
     photoSettings: CameraCaptureUIPhotoCaptureSettings,
     videoSettings: CameraCaptureUIVideoCaptureSettings
   ): ICameraCaptureUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("captureFileAsync")(captureFileAsync)
-    __obj.updateDynamic("photoSettings")(photoSettings)
-    __obj.updateDynamic("videoSettings")(videoSettings)
+    val __obj = js.Dynamic.literal(captureFileAsync = captureFileAsync, photoSettings = photoSettings, videoSettings = videoSettings)
+  
     __obj.asInstanceOf[ICameraCaptureUI]
   }
 }

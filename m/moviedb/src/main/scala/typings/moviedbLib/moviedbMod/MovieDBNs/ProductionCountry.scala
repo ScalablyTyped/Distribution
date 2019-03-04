@@ -13,9 +13,8 @@ trait ProductionCountry extends js.Object {
 object ProductionCountry {
   @scala.inline
   def apply(iso_3166_1: scala.Double, name: java.lang.String): ProductionCountry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iso_3166_1")(iso_3166_1)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(iso_3166_1 = iso_3166_1, name = name)
+  
     __obj.asInstanceOf[ProductionCountry]
   }
 }

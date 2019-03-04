@@ -19,10 +19,8 @@ trait ASPxClientIndicator extends ASPxClientWebChartElementNamed {
 object ASPxClientIndicator {
   @scala.inline
   def apply(chart: ASPxClientWebChart, name: java.lang.String, series: ASPxClientSeries): ASPxClientIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, series = series)
+  
     __obj.asInstanceOf[ASPxClientIndicator]
   }
 }

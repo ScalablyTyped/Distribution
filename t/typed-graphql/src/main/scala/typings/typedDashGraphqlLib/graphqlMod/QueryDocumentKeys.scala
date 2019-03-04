@@ -79,40 +79,8 @@ object QueryDocumentKeys {
     Variable: js.Array[java.lang.String],
     VariableDefinition: js.Array[java.lang.String]
   ): QueryDocumentKeys = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Argument")(Argument)
-    __obj.updateDynamic("BooleanValue")(BooleanValue)
-    __obj.updateDynamic("Directive")(Directive)
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("EnumTypeDefinition")(EnumTypeDefinition)
-    __obj.updateDynamic("EnumValue")(EnumValue)
-    __obj.updateDynamic("EnumValueDefinition")(EnumValueDefinition)
-    __obj.updateDynamic("Field")(Field)
-    __obj.updateDynamic("FieldDefinition")(FieldDefinition)
-    __obj.updateDynamic("FloatValue")(FloatValue)
-    __obj.updateDynamic("FragmentDefinition")(FragmentDefinition)
-    __obj.updateDynamic("FragmentSpread")(FragmentSpread)
-    __obj.updateDynamic("InlineFragment")(InlineFragment)
-    __obj.updateDynamic("InputObjectTypeDefinition")(InputObjectTypeDefinition)
-    __obj.updateDynamic("InputValueDefinition")(InputValueDefinition)
-    __obj.updateDynamic("IntValue")(IntValue)
-    __obj.updateDynamic("InterfaceTypeDefinition")(InterfaceTypeDefinition)
-    __obj.updateDynamic("ListType")(ListType)
-    __obj.updateDynamic("ListValue")(ListValue)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NamedType")(NamedType)
-    __obj.updateDynamic("NonNullType")(NonNullType)
-    __obj.updateDynamic("ObjectField")(ObjectField)
-    __obj.updateDynamic("ObjectTypeDefinition")(ObjectTypeDefinition)
-    __obj.updateDynamic("ObjectValue")(ObjectValue)
-    __obj.updateDynamic("OperationDefinition")(OperationDefinition)
-    __obj.updateDynamic("ScalarTypeDefinition")(ScalarTypeDefinition)
-    __obj.updateDynamic("SelectionSet")(SelectionSet)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("TypeExtensionDefinition")(TypeExtensionDefinition)
-    __obj.updateDynamic("UnionTypeDefinition")(UnionTypeDefinition)
-    __obj.updateDynamic("Variable")(Variable)
-    __obj.updateDynamic("VariableDefinition")(VariableDefinition)
+    val __obj = js.Dynamic.literal(Argument = Argument, BooleanValue = BooleanValue, Directive = Directive, Document = Document, EnumTypeDefinition = EnumTypeDefinition, EnumValue = EnumValue, EnumValueDefinition = EnumValueDefinition, Field = Field, FieldDefinition = FieldDefinition, FloatValue = FloatValue, FragmentDefinition = FragmentDefinition, FragmentSpread = FragmentSpread, InlineFragment = InlineFragment, InputObjectTypeDefinition = InputObjectTypeDefinition, InputValueDefinition = InputValueDefinition, IntValue = IntValue, InterfaceTypeDefinition = InterfaceTypeDefinition, ListType = ListType, ListValue = ListValue, Name = Name, NamedType = NamedType, NonNullType = NonNullType, ObjectField = ObjectField, ObjectTypeDefinition = ObjectTypeDefinition, ObjectValue = ObjectValue, OperationDefinition = OperationDefinition, ScalarTypeDefinition = ScalarTypeDefinition, SelectionSet = SelectionSet, StringValue = StringValue, TypeExtensionDefinition = TypeExtensionDefinition, UnionTypeDefinition = UnionTypeDefinition, Variable = Variable, VariableDefinition = VariableDefinition)
+  
     __obj.asInstanceOf[QueryDocumentKeys]
   }
 }

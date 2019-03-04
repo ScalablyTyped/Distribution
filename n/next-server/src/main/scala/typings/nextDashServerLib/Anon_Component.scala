@@ -13,9 +13,8 @@ trait Anon_Component extends js.Object {
 object Anon_Component {
   @scala.inline
   def apply(Component: reactLib.reactMod.ReactNs.ComponentType[_], err: js.Any): Anon_Component = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    __obj.updateDynamic("err")(err)
+    val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], err = err)
+  
     __obj.asInstanceOf[Anon_Component]
   }
 }

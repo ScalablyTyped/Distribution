@@ -16,9 +16,8 @@ object Anon_Body {
     body: apolloDashLinkDashHttpDashCommonLib.apolloDashLinkDashHttpDashCommonMod.Body,
     options: apolloDashLinkDashHttpDashCommonLib.apolloDashLinkDashHttpDashCommonMod.HttpConfig with (stdLib.Record[java.lang.String, _])
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(body = body, options = options)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

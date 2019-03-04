@@ -49,13 +49,8 @@ object XGraphicTransformer {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XGraphicTransformer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applyBrightnessContrast")(applyBrightnessContrast)
-    __obj.updateDynamic("applyDuotone")(applyDuotone)
-    __obj.updateDynamic("colorChange")(colorChange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, applyBrightnessContrast = applyBrightnessContrast, applyDuotone = applyDuotone, colorChange = colorChange, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XGraphicTransformer]
   }
 }

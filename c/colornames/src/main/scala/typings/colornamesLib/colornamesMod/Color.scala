@@ -32,9 +32,7 @@ object Color {
     css: js.UndefOr[scala.Boolean] = js.undefined,
     vga: js.UndefOr[scala.Boolean] = js.undefined
   ): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (!js.isUndefined(css)) __obj.updateDynamic("css")(css)
     if (!js.isUndefined(vga)) __obj.updateDynamic("vga")(vga)
     __obj.asInstanceOf[Color]

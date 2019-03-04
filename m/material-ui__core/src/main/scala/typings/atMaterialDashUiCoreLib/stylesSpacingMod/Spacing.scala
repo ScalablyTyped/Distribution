@@ -12,8 +12,8 @@ trait Spacing extends js.Object {
 object Spacing {
   @scala.inline
   def apply(unit: scala.Double): Spacing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(unit = unit)
+  
     __obj.asInstanceOf[Spacing]
   }
 }

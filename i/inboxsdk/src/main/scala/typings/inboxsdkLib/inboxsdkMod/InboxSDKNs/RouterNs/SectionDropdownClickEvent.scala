@@ -12,8 +12,8 @@ trait SectionDropdownClickEvent extends js.Object {
 object SectionDropdownClickEvent {
   @scala.inline
   def apply(dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView): SectionDropdownClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dropdown")(dropdown)
+    val __obj = js.Dynamic.literal(dropdown = dropdown)
+  
     __obj.asInstanceOf[SectionDropdownClickEvent]
   }
 }

@@ -245,23 +245,8 @@ object ProjectsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Project]
     ]
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearOrgPolicy")(clearOrgPolicy)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAncestry")(getAncestry)
-    __obj.updateDynamic("getEffectiveOrgPolicy")(getEffectiveOrgPolicy)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("getOrgPolicy")(getOrgPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listAvailableOrgPolicyConstraints")(listAvailableOrgPolicyConstraints)
-    __obj.updateDynamic("listOrgPolicies")(listOrgPolicies)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("setOrgPolicy")(setOrgPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("undelete")(undelete)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, create = create, delete = delete, get = get, getAncestry = getAncestry, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getIamPolicy = getIamPolicy, getOrgPolicy = getOrgPolicy, list = list, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, setIamPolicy = setIamPolicy, setOrgPolicy = setOrgPolicy, testIamPermissions = testIamPermissions, undelete = undelete, update = update)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

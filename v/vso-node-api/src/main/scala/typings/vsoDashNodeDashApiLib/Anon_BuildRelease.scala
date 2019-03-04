@@ -13,9 +13,8 @@ trait Anon_BuildRelease extends js.Object {
 object Anon_BuildRelease {
   @scala.inline
   def apply(build: scala.Double, release: scala.Double): Anon_BuildRelease = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(build = build, release = release)
+  
     __obj.asInstanceOf[Anon_BuildRelease]
   }
 }

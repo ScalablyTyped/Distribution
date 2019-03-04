@@ -19,11 +19,8 @@ object TruncateRequestedEventOptions {
     length: chromeDashAppsLib.chromeNs.double,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): TruncateRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(filePath = filePath, fileSystemId = fileSystemId, length = length, requestId = requestId)
+  
     __obj.asInstanceOf[TruncateRequestedEventOptions]
   }
 }

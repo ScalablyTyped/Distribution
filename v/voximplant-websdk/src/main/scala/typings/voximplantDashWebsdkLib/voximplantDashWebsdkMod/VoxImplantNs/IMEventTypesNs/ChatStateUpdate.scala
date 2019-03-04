@@ -31,9 +31,7 @@ object ChatStateUpdate {
     state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType,
     resource: java.lang.String = null
   ): ChatStateUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(id = id, state = state)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     __obj.asInstanceOf[ChatStateUpdate]
   }

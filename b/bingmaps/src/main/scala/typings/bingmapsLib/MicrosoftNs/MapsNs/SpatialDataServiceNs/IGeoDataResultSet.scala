@@ -21,10 +21,8 @@ object IGeoDataResultSet {
     location: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location,
     results: js.Array[IGeoDataResult]
   ): IGeoDataResultSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Copyright")(Copyright)
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(Copyright = Copyright, location = location.asInstanceOf[js.Any], results = results)
+  
     __obj.asInstanceOf[IGeoDataResultSet]
   }
 }

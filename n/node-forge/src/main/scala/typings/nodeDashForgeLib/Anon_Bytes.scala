@@ -141,12 +141,7 @@ object Anon_Bytes {
     verifyClient: js.UndefOr[scala.Boolean] = js.undefined,
     virtualHost: java.lang.String = null
   ): Anon_Bytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("dataReady")(dataReady)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("tlsDataReady")(tlsDataReady)
+    val __obj = js.Dynamic.literal(closed = closed, connected = connected, dataReady = dataReady, error = error, tlsDataReady = tlsDataReady)
     if (caStore != null) __obj.updateDynamic("caStore")(caStore.asInstanceOf[js.Any])
     if (cipherSuites != null) __obj.updateDynamic("cipherSuites")(cipherSuites)
     if (deflate != null) __obj.updateDynamic("deflate")(deflate)

@@ -26,9 +26,8 @@ object Anon_CallbackCommands {
     ],
     onCommand: chromeDashAppsLib.chromeNs.commandsNs.CommandEvent
   ): Anon_CallbackCommands = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("onCommand")(onCommand)
+    val __obj = js.Dynamic.literal(getAll = getAll, onCommand = onCommand)
+  
     __obj.asInstanceOf[Anon_CallbackCommands]
   }
 }

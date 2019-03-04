@@ -26,8 +26,7 @@ object Anon_InheritResolversFromInterfaces {
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolversParameter = null,
     schemaDirectives: org.scalablytyped.runtime.StringDictionary[Anon_Config] = null
   ): Anon_InheritResolversFromInterfaces = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schemas")(schemas)
+    val __obj = js.Dynamic.literal(schemas = schemas)
     if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)
     if (onTypeConflict != null) __obj.updateDynamic("onTypeConflict")(onTypeConflict)
     if (resolvers != null) __obj.updateDynamic("resolvers")(resolvers.asInstanceOf[js.Any])

@@ -20,12 +20,8 @@ object ReleaseTaskLogUpdatedEvent {
     releaseId: scala.Double,
     timelineRecordId: java.lang.String
   ): ReleaseTaskLogUpdatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environmentId")(environmentId)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("releaseId")(releaseId)
-    __obj.updateDynamic("timelineRecordId")(timelineRecordId)
+    val __obj = js.Dynamic.literal(environmentId = environmentId, lines = lines, projectId = projectId, releaseId = releaseId, timelineRecordId = timelineRecordId)
+  
     __obj.asInstanceOf[ReleaseTaskLogUpdatedEvent]
   }
 }

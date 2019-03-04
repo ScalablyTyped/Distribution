@@ -16,9 +16,8 @@ object Anon_Create {
     Domain: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.domainNs.Domain],
     create: js.Function0[nodeLib.domainMod.Domain]
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Domain")(Domain)
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(Domain = Domain, create = create)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

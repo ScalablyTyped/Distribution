@@ -31,18 +31,8 @@ object TestActionResultModel {
     stepIdentifier: java.lang.String,
     url: java.lang.String
   ): TestActionResultModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionPath")(actionPath)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("completedDate")(completedDate)
-    __obj.updateDynamic("durationInMs")(durationInMs)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("iterationId")(iterationId)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("sharedStepModel")(sharedStepModel)
-    __obj.updateDynamic("startedDate")(startedDate)
-    __obj.updateDynamic("stepIdentifier")(stepIdentifier)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(actionPath = actionPath, comment = comment, completedDate = completedDate, durationInMs = durationInMs, errorMessage = errorMessage, iterationId = iterationId, outcome = outcome, sharedStepModel = sharedStepModel, startedDate = startedDate, stepIdentifier = stepIdentifier, url = url)
+  
     __obj.asInstanceOf[TestActionResultModel]
   }
 }

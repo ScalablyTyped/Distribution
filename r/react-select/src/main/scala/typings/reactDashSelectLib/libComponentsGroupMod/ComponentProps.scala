@@ -21,10 +21,8 @@ object ComponentProps {
     children: reactLib.reactMod.ReactNs.ReactNode,
     label: reactLib.reactMod.ReactNs.ReactNode
   ): ComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Heading")(Heading.asInstanceOf[js.Any])
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Heading = Heading.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ComponentProps]
   }
 }

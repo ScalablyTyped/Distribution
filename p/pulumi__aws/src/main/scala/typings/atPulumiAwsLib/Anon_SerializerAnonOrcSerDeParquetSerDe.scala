@@ -12,8 +12,8 @@ trait Anon_SerializerAnonOrcSerDeParquetSerDe extends js.Object {
 object Anon_SerializerAnonOrcSerDeParquetSerDe {
   @scala.inline
   def apply(serializer: atPulumiPulumiLib.outputMod.Input[Anon_OrcSerDeParquetSerDe]): Anon_SerializerAnonOrcSerDeParquetSerDe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serializer")(serializer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(serializer = serializer.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_SerializerAnonOrcSerDeParquetSerDe]
   }
 }

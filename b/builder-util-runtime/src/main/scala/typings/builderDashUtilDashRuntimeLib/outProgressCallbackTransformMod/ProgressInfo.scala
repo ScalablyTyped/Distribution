@@ -22,12 +22,8 @@ object ProgressInfo {
     total: scala.Double,
     transferred: scala.Double
   ): ProgressInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesPerSecond")(bytesPerSecond)
-    __obj.updateDynamic("delta")(delta)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("transferred")(transferred)
+    val __obj = js.Dynamic.literal(bytesPerSecond = bytesPerSecond, delta = delta, percent = percent, total = total, transferred = transferred)
+  
     __obj.asInstanceOf[ProgressInfo]
   }
 }

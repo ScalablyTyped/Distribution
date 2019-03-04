@@ -12,8 +12,8 @@ trait Anon_VisibilityHeight extends js.Object {
 object Anon_VisibilityHeight {
   @scala.inline
   def apply(visibilityHeight: scala.Double): Anon_VisibilityHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visibilityHeight")(visibilityHeight)
+    val __obj = js.Dynamic.literal(visibilityHeight = visibilityHeight)
+  
     __obj.asInstanceOf[Anon_VisibilityHeight]
   }
 }

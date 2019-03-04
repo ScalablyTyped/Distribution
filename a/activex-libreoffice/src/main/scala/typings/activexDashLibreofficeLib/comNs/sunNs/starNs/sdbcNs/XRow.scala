@@ -196,30 +196,8 @@ object XRow {
     release: js.Function0[scala.Unit],
     wasNull: js.Function0[scala.Boolean]
   ): XRow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getBinaryStream")(getBinaryStream)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getBoolean")(getBoolean)
-    __obj.updateDynamic("getByte")(getByte)
-    __obj.updateDynamic("getBytes")(getBytes)
-    __obj.updateDynamic("getCharacterStream")(getCharacterStream)
-    __obj.updateDynamic("getClob")(getClob)
-    __obj.updateDynamic("getDate")(getDate)
-    __obj.updateDynamic("getDouble")(getDouble)
-    __obj.updateDynamic("getFloat")(getFloat)
-    __obj.updateDynamic("getInt")(getInt)
-    __obj.updateDynamic("getLong")(getLong)
-    __obj.updateDynamic("getObject")(getObject)
-    __obj.updateDynamic("getRef")(getRef)
-    __obj.updateDynamic("getShort")(getShort)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("getTime")(getTime)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("wasNull")(wasNull)
+    val __obj = js.Dynamic.literal(acquire = acquire, getArray = getArray, getBinaryStream = getBinaryStream, getBlob = getBlob, getBoolean = getBoolean, getByte = getByte, getBytes = getBytes, getCharacterStream = getCharacterStream, getClob = getClob, getDate = getDate, getDouble = getDouble, getFloat = getFloat, getInt = getInt, getLong = getLong, getObject = getObject, getRef = getRef, getShort = getShort, getString = getString, getTime = getTime, getTimestamp = getTimestamp, queryInterface = queryInterface, release = release, wasNull = wasNull)
+  
     __obj.asInstanceOf[XRow]
   }
 }

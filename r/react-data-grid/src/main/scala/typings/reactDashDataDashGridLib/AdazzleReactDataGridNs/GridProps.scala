@@ -285,9 +285,7 @@ object GridProps {
     sortDirection: reactDashDataDashGridLib.reactDashDataDashGridLibStrings.ASC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.DESC | reactDashDataDashGridLib.reactDashDataDashGridLibStrings.NONE = null,
     toolbar: reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): GridProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowGetter")(rowGetter.asInstanceOf[js.Any])
-    __obj.updateDynamic("rowsCount")(rowsCount)
+    val __obj = js.Dynamic.literal(rowGetter = rowGetter.asInstanceOf[js.Any], rowsCount = rowsCount)
     if (cellNavigationMode != null) __obj.updateDynamic("cellNavigationMode")(cellNavigationMode.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)

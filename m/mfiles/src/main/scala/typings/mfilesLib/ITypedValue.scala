@@ -71,29 +71,8 @@ object ITypedValue {
     Unserialize: js.Function2[js.Array[scala.Double], scala.Boolean, scala.Unit],
     Value: js.Any
   ): ITypedValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("CompareTo")(CompareTo)
-    __obj.updateDynamic("DataType")(DataType)
-    __obj.updateDynamic("DisplayValue")(DisplayValue)
-    __obj.updateDynamic("GetLookupID")(GetLookupID)
-    __obj.updateDynamic("GetValueAsLocalizedText")(GetValueAsLocalizedText)
-    __obj.updateDynamic("GetValueAsLookup")(GetValueAsLookup)
-    __obj.updateDynamic("GetValueAsLookups")(GetValueAsLookups)
-    __obj.updateDynamic("GetValueAsText")(GetValueAsText)
-    __obj.updateDynamic("GetValueAsTextWithExpression")(GetValueAsTextWithExpression)
-    __obj.updateDynamic("GetValueAsTimestamp")(GetValueAsTimestamp)
-    __obj.updateDynamic("GetValueAsUnlocalizedText")(GetValueAsUnlocalizedText)
-    __obj.updateDynamic("IsNULL")(IsNULL)
-    __obj.updateDynamic("IsUninitialized")(IsUninitialized)
-    __obj.updateDynamic("Serialize")(Serialize)
-    __obj.updateDynamic("SetValue")(SetValue)
-    __obj.updateDynamic("SetValueToLookup")(SetValueToLookup)
-    __obj.updateDynamic("SetValueToMultiSelectLookup")(SetValueToMultiSelectLookup)
-    __obj.updateDynamic("SetValueToNULL")(SetValueToNULL)
-    __obj.updateDynamic("Unserialize")(Unserialize)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, CompareTo = CompareTo, DataType = DataType, DisplayValue = DisplayValue, GetLookupID = GetLookupID, GetValueAsLocalizedText = GetValueAsLocalizedText, GetValueAsLookup = GetValueAsLookup, GetValueAsLookups = GetValueAsLookups, GetValueAsText = GetValueAsText, GetValueAsTextWithExpression = GetValueAsTextWithExpression, GetValueAsTimestamp = GetValueAsTimestamp, GetValueAsUnlocalizedText = GetValueAsUnlocalizedText, IsNULL = IsNULL, IsUninitialized = IsUninitialized, Serialize = Serialize, SetValue = SetValue, SetValueToLookup = SetValueToLookup, SetValueToMultiSelectLookup = SetValueToMultiSelectLookup, SetValueToNULL = SetValueToNULL, Unserialize = Unserialize, Value = Value)
+  
     __obj.asInstanceOf[ITypedValue]
   }
 }

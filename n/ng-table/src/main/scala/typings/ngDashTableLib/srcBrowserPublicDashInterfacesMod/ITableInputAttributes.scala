@@ -38,14 +38,7 @@ object ITableInputAttributes {
     templateHeader: java.lang.String = null,
     templatePagination: java.lang.String = null
   ): ITableInputAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$addClass")($addClass)
-    __obj.updateDynamic("$attr")($attr)
-    __obj.updateDynamic("$normalize")($normalize)
-    __obj.updateDynamic("$observe")($observe)
-    __obj.updateDynamic("$removeClass")($removeClass)
-    __obj.updateDynamic("$set")($set)
-    __obj.updateDynamic("$updateClass")($updateClass)
+    val __obj = js.Dynamic.literal($addClass = $addClass, $attr = $attr, $normalize = $normalize, $observe = $observe, $removeClass = $removeClass, $set = $set, $updateClass = $updateClass)
     if (disableFilter != null) __obj.updateDynamic("disableFilter")(disableFilter)
     if (ngTable != null) __obj.updateDynamic("ngTable")(ngTable)
     if (ngTableDynamic != null) __obj.updateDynamic("ngTableDynamic")(ngTableDynamic)

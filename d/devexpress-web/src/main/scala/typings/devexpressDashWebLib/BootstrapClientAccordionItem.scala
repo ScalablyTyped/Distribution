@@ -74,27 +74,8 @@ object BootstrapClientAccordionItem {
     name: java.lang.String,
     navBar: BootstrapClientAccordion
   ): BootstrapClientAccordionItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetBadgeIconCssClass")(GetBadgeIconCssClass)
-    __obj.updateDynamic("GetBadgeText")(GetBadgeText)
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetIconCssClass")(GetIconCssClass)
-    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
-    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetBadgeIconCssClass")(SetBadgeIconCssClass)
-    __obj.updateDynamic("SetBadgeText")(SetBadgeText)
-    __obj.updateDynamic("SetEnabled")(SetEnabled)
-    __obj.updateDynamic("SetIconCssClass")(SetIconCssClass)
-    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
-    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("navBar")(navBar)
+    val __obj = js.Dynamic.literal(GetBadgeIconCssClass = GetBadgeIconCssClass, GetBadgeText = GetBadgeText, GetEnabled = GetEnabled, GetIconCssClass = GetIconCssClass, GetImageUrl = GetImageUrl, GetNavigateUrl = GetNavigateUrl, GetText = GetText, GetVisible = GetVisible, SetBadgeIconCssClass = SetBadgeIconCssClass, SetBadgeText = SetBadgeText, SetEnabled = SetEnabled, SetIconCssClass = SetIconCssClass, SetImageUrl = SetImageUrl, SetNavigateUrl = SetNavigateUrl, SetText = SetText, SetVisible = SetVisible, group = group, index = index, name = name, navBar = navBar)
+  
     __obj.asInstanceOf[BootstrapClientAccordionItem]
   }
 }

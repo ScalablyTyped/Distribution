@@ -42,8 +42,7 @@ object Anon_AltApplicationIdConsistencyToken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltApplicationIdConsistencyToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationId")(applicationId)
+    val __obj = js.Dynamic.literal(applicationId = applicationId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
     if (fields != null) __obj.updateDynamic("fields")(fields)

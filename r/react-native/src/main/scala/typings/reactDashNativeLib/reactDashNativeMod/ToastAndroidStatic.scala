@@ -34,14 +34,8 @@ object ToastAndroidStatic {
     show: js.Function2[java.lang.String, scala.Double, scala.Unit],
     showWithGravity: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
   ): ToastAndroidStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTTOM")(BOTTOM)
-    __obj.updateDynamic("CENTER")(CENTER)
-    __obj.updateDynamic("LONG")(LONG)
-    __obj.updateDynamic("SHORT")(SHORT)
-    __obj.updateDynamic("TOP")(TOP)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("showWithGravity")(showWithGravity)
+    val __obj = js.Dynamic.literal(BOTTOM = BOTTOM, CENTER = CENTER, LONG = LONG, SHORT = SHORT, TOP = TOP, show = show, showWithGravity = showWithGravity)
+  
     __obj.asInstanceOf[ToastAndroidStatic]
   }
 }

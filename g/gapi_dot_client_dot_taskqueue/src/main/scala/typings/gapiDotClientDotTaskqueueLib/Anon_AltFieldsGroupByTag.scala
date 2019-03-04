@@ -57,11 +57,7 @@ object Anon_AltFieldsGroupByTag {
     tag: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsGroupByTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leaseSecs")(leaseSecs)
-    __obj.updateDynamic("numTasks")(numTasks)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("taskqueue")(taskqueue)
+    val __obj = js.Dynamic.literal(leaseSecs = leaseSecs, numTasks = numTasks, project = project, taskqueue = taskqueue)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(groupByTag)) __obj.updateDynamic("groupByTag")(groupByTag)

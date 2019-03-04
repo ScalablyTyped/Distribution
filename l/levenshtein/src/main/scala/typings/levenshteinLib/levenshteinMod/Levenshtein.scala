@@ -29,12 +29,8 @@ object Levenshtein {
     toString: js.Function0[java.lang.String],
     valueOf: js.Function0[scala.Double]
   ): Levenshtein = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("getMatrix")(getMatrix)
-    __obj.updateDynamic("inspect")(inspect)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(distance = distance, getMatrix = getMatrix, inspect = inspect, toString = toString, valueOf = valueOf)
+  
     __obj.asInstanceOf[Levenshtein]
   }
 }

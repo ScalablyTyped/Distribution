@@ -14,8 +14,8 @@ trait Anon_Unset[T]
 object Anon_Unset {
   @scala.inline
   def apply[T]($unset: js.Array[java.lang.String]): Anon_Unset[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$unset")($unset)
+    val __obj = js.Dynamic.literal($unset = $unset)
+  
     __obj.asInstanceOf[Anon_Unset[T]]
   }
 }

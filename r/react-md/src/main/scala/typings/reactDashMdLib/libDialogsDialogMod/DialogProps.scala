@@ -127,8 +127,7 @@ object DialogProps {
     titleStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     width: scala.Double | java.lang.String = null
   ): DialogProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (additionalFocusKeys != null) __obj.updateDynamic("additionalFocusKeys")(additionalFocusKeys)
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])

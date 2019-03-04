@@ -25,13 +25,8 @@ object ojTimeAxisSettableProperties {
     trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue
   ): ojTimeAxisSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(converter = converter.asInstanceOf[js.Any], end = end, scale = scale.asInstanceOf[js.Any], start = start, trackResize = trackResize.asInstanceOf[js.Any], translations = translations)
+  
     __obj.asInstanceOf[ojTimeAxisSettableProperties]
   }
 }

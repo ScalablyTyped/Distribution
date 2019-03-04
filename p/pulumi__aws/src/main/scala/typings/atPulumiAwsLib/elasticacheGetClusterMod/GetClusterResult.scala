@@ -120,28 +120,8 @@ object GetClusterResult {
     subnetGroupName: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("cacheNodes")(cacheNodes)
-    __obj.updateDynamic("clusterAddress")(clusterAddress)
-    __obj.updateDynamic("configurationEndpoint")(configurationEndpoint)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("engineVersion")(engineVersion)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maintenanceWindow")(maintenanceWindow)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("notificationTopicArn")(notificationTopicArn)
-    __obj.updateDynamic("numCacheNodes")(numCacheNodes)
-    __obj.updateDynamic("parameterGroupName")(parameterGroupName)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("replicationGroupId")(replicationGroupId)
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
-    __obj.updateDynamic("securityGroupNames")(securityGroupNames)
-    __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit)
-    __obj.updateDynamic("snapshotWindow")(snapshotWindow)
-    __obj.updateDynamic("subnetGroupName")(subnetGroupName)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZone = availabilityZone, cacheNodes = cacheNodes, clusterAddress = clusterAddress, configurationEndpoint = configurationEndpoint, engine = engine, engineVersion = engineVersion, id = id, maintenanceWindow = maintenanceWindow, nodeType = nodeType, notificationTopicArn = notificationTopicArn, numCacheNodes = numCacheNodes, parameterGroupName = parameterGroupName, port = port, replicationGroupId = replicationGroupId, securityGroupIds = securityGroupIds, securityGroupNames = securityGroupNames, snapshotRetentionLimit = snapshotRetentionLimit, snapshotWindow = snapshotWindow, subnetGroupName = subnetGroupName, tags = tags)
+  
     __obj.asInstanceOf[GetClusterResult]
   }
 }

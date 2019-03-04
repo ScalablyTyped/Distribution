@@ -22,9 +22,8 @@ trait ThreeDSecureAccountDetails extends js.Object {
 object ThreeDSecureAccountDetails {
   @scala.inline
   def apply(cardType: java.lang.String, lastTwo: java.lang.String): ThreeDSecureAccountDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardType")(cardType)
-    __obj.updateDynamic("lastTwo")(lastTwo)
+    val __obj = js.Dynamic.literal(cardType = cardType, lastTwo = lastTwo)
+  
     __obj.asInstanceOf[ThreeDSecureAccountDetails]
   }
 }

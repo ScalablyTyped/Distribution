@@ -38,8 +38,7 @@ object RequestOptions {
     success: js.Function1[/* res */ DataResponse, scala.Unit] = null,
     timeout: scala.Int | scala.Double = null
   ): RequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (data != null) __obj.updateDynamic("data")(data)
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])

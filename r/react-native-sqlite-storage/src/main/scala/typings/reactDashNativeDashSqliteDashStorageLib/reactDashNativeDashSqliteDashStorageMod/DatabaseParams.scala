@@ -25,9 +25,7 @@ object DatabaseParams {
     key: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): DatabaseParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(location = location, name = name)
     if (createFromLocation != null) __obj.updateDynamic("createFromLocation")(createFromLocation.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)

@@ -48,8 +48,8 @@ object histogram {
   def apply(
     histogram: js.Function1[histogramHistogramParams, arcgisDashJsDashApiLib.IPromise[HistogramResult]]
   ): histogram = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("histogram")(histogram)
+    val __obj = js.Dynamic.literal(histogram = histogram)
+  
     __obj.asInstanceOf[histogram]
   }
 }

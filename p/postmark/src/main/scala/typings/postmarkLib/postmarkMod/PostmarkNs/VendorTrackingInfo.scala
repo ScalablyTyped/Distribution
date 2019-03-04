@@ -15,10 +15,8 @@ trait VendorTrackingInfo extends js.Object {
 object VendorTrackingInfo {
   @scala.inline
   def apply(Company: java.lang.String, Family: java.lang.String, Name: java.lang.String): VendorTrackingInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Company")(Company)
-    __obj.updateDynamic("Family")(Family)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Company = Company, Family = Family, Name = Name)
+  
     __obj.asInstanceOf[VendorTrackingInfo]
   }
 }

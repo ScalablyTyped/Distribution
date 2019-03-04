@@ -48,21 +48,7 @@ object Anon_BoundingSphere {
     encodedNormals: stdLib.Uint8Array = null,
     waterMask: stdLib.Uint8Array = null
   ): Anon_BoundingSphere = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boundingSphere")(boundingSphere)
-    __obj.updateDynamic("eastIndices")(eastIndices)
-    __obj.updateDynamic("eastSkirtHeight")(eastSkirtHeight)
-    __obj.updateDynamic("horizonOcclusionPoint")(horizonOcclusionPoint)
-    __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
-    __obj.updateDynamic("maximumHeight")(maximumHeight)
-    __obj.updateDynamic("minimumHeight")(minimumHeight)
-    __obj.updateDynamic("northIndices")(northIndices)
-    __obj.updateDynamic("northSkirtHeight")(northSkirtHeight)
-    __obj.updateDynamic("quantizedVertices")(quantizedVertices)
-    __obj.updateDynamic("southIndices")(southIndices)
-    __obj.updateDynamic("southSkirtHeight")(southSkirtHeight)
-    __obj.updateDynamic("westIndices")(westIndices)
-    __obj.updateDynamic("westSkirtHeight")(westSkirtHeight)
+    val __obj = js.Dynamic.literal(boundingSphere = boundingSphere, eastIndices = eastIndices, eastSkirtHeight = eastSkirtHeight, horizonOcclusionPoint = horizonOcclusionPoint, indices = indices.asInstanceOf[js.Any], maximumHeight = maximumHeight, minimumHeight = minimumHeight, northIndices = northIndices, northSkirtHeight = northSkirtHeight, quantizedVertices = quantizedVertices, southIndices = southIndices, southSkirtHeight = southSkirtHeight, westIndices = westIndices, westSkirtHeight = westSkirtHeight)
     if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
     if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
     if (encodedNormals != null) __obj.updateDynamic("encodedNormals")(encodedNormals)

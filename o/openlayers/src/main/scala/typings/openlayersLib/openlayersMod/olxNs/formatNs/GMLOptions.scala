@@ -28,8 +28,7 @@ object GMLOptions {
     schemaLocation: java.lang.String = null,
     surface: js.UndefOr[scala.Boolean] = js.undefined
   ): GMLOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("srsName")(srsName)
+    val __obj = js.Dynamic.literal(srsName = srsName)
     if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve)
     if (featureNS != null) __obj.updateDynamic("featureNS")(featureNS.asInstanceOf[js.Any])
     if (featureType != null) __obj.updateDynamic("featureType")(featureType.asInstanceOf[js.Any])

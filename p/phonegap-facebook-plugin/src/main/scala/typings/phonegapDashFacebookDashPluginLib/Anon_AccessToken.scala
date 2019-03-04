@@ -24,13 +24,8 @@ object Anon_AccessToken {
     sig: java.lang.String,
     userID: java.lang.String
   ): Anon_AccessToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("expiresIn")(expiresIn)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("session_key")(session_key)
-    __obj.updateDynamic("sig")(sig)
-    __obj.updateDynamic("userID")(userID)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, expiresIn = expiresIn, secret = secret, session_key = session_key, sig = sig, userID = userID)
+  
     __obj.asInstanceOf[Anon_AccessToken]
   }
 }

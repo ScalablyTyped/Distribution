@@ -24,12 +24,8 @@ object WriteFileRequestedEventOptions {
     openRequestId: chromeDashAppsLib.chromeNs.integer,
     requestId: chromeDashAppsLib.chromeNs.integer
   ): WriteFileRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("openRequestId")(openRequestId)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(data = data, fileSystemId = fileSystemId, offset = offset, openRequestId = openRequestId, requestId = requestId)
+  
     __obj.asInstanceOf[WriteFileRequestedEventOptions]
   }
 }

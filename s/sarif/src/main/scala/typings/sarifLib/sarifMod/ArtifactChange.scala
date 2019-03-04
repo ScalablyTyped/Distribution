@@ -28,9 +28,7 @@ object ArtifactChange {
     replacements: js.Array[Replacement],
     properties: PropertyBag = null
   ): ArtifactChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactLocation")(artifactLocation)
-    __obj.updateDynamic("replacements")(replacements)
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation, replacements = replacements)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[ArtifactChange]
   }

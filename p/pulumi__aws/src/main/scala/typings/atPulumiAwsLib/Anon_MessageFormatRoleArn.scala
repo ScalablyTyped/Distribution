@@ -18,9 +18,7 @@ object Anon_MessageFormatRoleArn {
     targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     messageFormat: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_MessageFormatRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
     if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MessageFormatRoleArn]
   }

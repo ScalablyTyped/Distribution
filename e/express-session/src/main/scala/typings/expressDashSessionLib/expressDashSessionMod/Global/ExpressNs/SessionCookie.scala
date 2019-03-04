@@ -22,12 +22,7 @@ object SessionCookie {
     sameSite: scala.Boolean | java.lang.String = null,
     secure: js.UndefOr[scala.Boolean] = js.undefined
   ): SessionCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    __obj.updateDynamic("httpOnly")(httpOnly)
-    __obj.updateDynamic("originalMaxAge")(originalMaxAge)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], httpOnly = httpOnly, originalMaxAge = originalMaxAge, path = path, serialize = serialize)
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])

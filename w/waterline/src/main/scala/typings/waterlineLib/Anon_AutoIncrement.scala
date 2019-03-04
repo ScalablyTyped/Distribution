@@ -16,7 +16,8 @@ object Anon_AutoIncrement {
     `type`: waterlineLib.waterlineLibStrings.integer,
     autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AutoIncrement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
     __obj.asInstanceOf[Anon_AutoIncrement]
   }

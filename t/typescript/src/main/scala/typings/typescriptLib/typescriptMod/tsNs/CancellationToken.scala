@@ -17,9 +17,8 @@ object CancellationToken {
     isCancellationRequested: js.Function0[scala.Boolean],
     throwIfCancellationRequested: js.Function0[scala.Unit]
   ): CancellationToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCancellationRequested")(isCancellationRequested)
-    __obj.updateDynamic("throwIfCancellationRequested")(throwIfCancellationRequested)
+    val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested, throwIfCancellationRequested = throwIfCancellationRequested)
+  
     __obj.asInstanceOf[CancellationToken]
   }
 }

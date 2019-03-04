@@ -13,8 +13,7 @@ trait Anon_Options extends js.Object {
 object Anon_Options {
   @scala.inline
   def apply(url: java.lang.String, options: restlingLib.restlingMod.RestlingOptions = null): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Anon_Options]
   }

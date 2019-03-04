@@ -25,9 +25,8 @@ object HoldableConfig {
       ]
     ]
   ): HoldableConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("holdComplete")(holdComplete)
-    __obj.updateDynamic("holdProgress")(holdProgress)
+    val __obj = js.Dynamic.literal(holdComplete = holdComplete, holdProgress = holdProgress)
+  
     __obj.asInstanceOf[HoldableConfig]
   }
 }

@@ -12,8 +12,8 @@ trait TargetIdPayload extends js.Object {
 object TargetIdPayload {
   @scala.inline
   def apply(targetId: java.lang.String): TargetIdPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetId")(targetId)
+    val __obj = js.Dynamic.literal(targetId = targetId)
+  
     __obj.asInstanceOf[TargetIdPayload]
   }
 }

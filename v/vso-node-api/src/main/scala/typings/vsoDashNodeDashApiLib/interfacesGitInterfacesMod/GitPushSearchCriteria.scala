@@ -27,13 +27,8 @@ object GitPushSearchCriteria {
     refName: java.lang.String,
     toDate: stdLib.Date
   ): GitPushSearchCriteria = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromDate")(fromDate)
-    __obj.updateDynamic("includeLinks")(includeLinks)
-    __obj.updateDynamic("includeRefUpdates")(includeRefUpdates)
-    __obj.updateDynamic("pusherId")(pusherId)
-    __obj.updateDynamic("refName")(refName)
-    __obj.updateDynamic("toDate")(toDate)
+    val __obj = js.Dynamic.literal(fromDate = fromDate, includeLinks = includeLinks, includeRefUpdates = includeRefUpdates, pusherId = pusherId, refName = refName, toDate = toDate)
+  
     __obj.asInstanceOf[GitPushSearchCriteria]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_DATAOUT extends js.Object {
 object Anon_DATAOUT {
   @scala.inline
   def apply(DATA_OUT: java.lang.String): Anon_DATAOUT = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DATA_OUT")(DATA_OUT)
+    val __obj = js.Dynamic.literal(DATA_OUT = DATA_OUT)
+  
     __obj.asInstanceOf[Anon_DATAOUT]
   }
 }

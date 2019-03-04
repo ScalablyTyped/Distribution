@@ -16,9 +16,8 @@ object Anon_Redirect {
     redirect: uiDashRouterDashExtrasLib.angularMod.uiNs.IRedirectParams,
     to: uiDashRouterDashExtrasLib.angularMod.uiNs.IRedirectParams
   ): Anon_Redirect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("redirect")(redirect)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(redirect = redirect, to = to)
+  
     __obj.asInstanceOf[Anon_Redirect]
   }
 }

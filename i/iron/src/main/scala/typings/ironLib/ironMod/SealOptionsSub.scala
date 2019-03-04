@@ -33,11 +33,8 @@ object SealOptionsSub {
     minPasswordlength: scala.Double,
     saltBits: scala.Double
   ): SealOptionsSub = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    __obj.updateDynamic("iterations")(iterations)
-    __obj.updateDynamic("minPasswordlength")(minPasswordlength)
-    __obj.updateDynamic("saltBits")(saltBits)
+    val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], iterations = iterations, minPasswordlength = minPasswordlength, saltBits = saltBits)
+  
     __obj.asInstanceOf[SealOptionsSub]
   }
 }

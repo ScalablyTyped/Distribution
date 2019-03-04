@@ -47,14 +47,8 @@ object GetVpcAttachmentResult {
     vpcId: java.lang.String,
     vpcOwnerId: java.lang.String
   ): GetVpcAttachmentResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsSupport")(dnsSupport)
-    __obj.updateDynamic("ipv6Support")(ipv6Support)
-    __obj.updateDynamic("subnetIds")(subnetIds)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("transitGatewayId")(transitGatewayId)
-    __obj.updateDynamic("vpcId")(vpcId)
-    __obj.updateDynamic("vpcOwnerId")(vpcOwnerId)
+    val __obj = js.Dynamic.literal(dnsSupport = dnsSupport, ipv6Support = ipv6Support, subnetIds = subnetIds, tags = tags, transitGatewayId = transitGatewayId, vpcId = vpcId, vpcOwnerId = vpcOwnerId)
+  
     __obj.asInstanceOf[GetVpcAttachmentResult]
   }
 }

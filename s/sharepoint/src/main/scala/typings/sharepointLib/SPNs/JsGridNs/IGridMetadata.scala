@@ -31,8 +31,7 @@ object IGridMetadata {
     RecordKeyHash: java.lang.String = null,
     RecordKeyOrderChanged: js.Any = null
   ): IGridMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("KeyColumnName")(KeyColumnName)
+    val __obj = js.Dynamic.literal(KeyColumnName = KeyColumnName)
     if (GridOperationalConstantsFieldKeyMap != null) __obj.updateDynamic("GridOperationalConstantsFieldKeyMap")(GridOperationalConstantsFieldKeyMap)
     if (GroupingLevel != null) __obj.updateDynamic("GroupingLevel")(GroupingLevel.asInstanceOf[js.Any])
     if (GroupingPrefix != null) __obj.updateDynamic("GroupingPrefix")(GroupingPrefix)

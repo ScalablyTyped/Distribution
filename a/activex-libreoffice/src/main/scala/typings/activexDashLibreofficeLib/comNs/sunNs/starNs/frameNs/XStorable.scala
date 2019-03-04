@@ -105,17 +105,8 @@ object XStorable {
       scala.Unit
     ]
   ): XStorable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Location")(Location)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLocation")(getLocation)
-    __obj.updateDynamic("hasLocation")(hasLocation)
-    __obj.updateDynamic("isReadonly")(isReadonly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("store")(store)
-    __obj.updateDynamic("storeAsURL")(storeAsURL)
-    __obj.updateDynamic("storeToURL")(storeToURL)
+    val __obj = js.Dynamic.literal(Location = Location, acquire = acquire, getLocation = getLocation, hasLocation = hasLocation, isReadonly = isReadonly, queryInterface = queryInterface, release = release, store = store, storeAsURL = storeAsURL, storeToURL = storeToURL)
+  
     __obj.asInstanceOf[XStorable]
   }
 }

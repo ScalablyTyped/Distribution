@@ -34,12 +34,8 @@ object Padding {
     r: scala.Double,
     t: scala.Double
   ): Padding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("editType")(editType)
-    __obj.updateDynamic("l")(l)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("t")(t)
+    val __obj = js.Dynamic.literal(b = b, editType = editType, l = l, r = r, t = t)
+  
     __obj.asInstanceOf[Padding]
   }
 }

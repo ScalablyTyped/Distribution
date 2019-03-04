@@ -45,13 +45,8 @@ object RequireMap {
     prefix: java.lang.String,
     url: java.lang.String
   ): RequireMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("originalName")(originalName)
-    __obj.updateDynamic("parentMap")(parentMap)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(fullName = fullName, name = name, originalName = originalName, parentMap = parentMap, prefix = prefix, url = url)
+  
     __obj.asInstanceOf[RequireMap]
   }
 }

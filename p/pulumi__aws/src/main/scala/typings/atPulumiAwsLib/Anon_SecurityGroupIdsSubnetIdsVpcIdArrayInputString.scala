@@ -18,10 +18,8 @@ object Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString {
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString]
   }
 }

@@ -16,8 +16,7 @@ object Anon_Content {
     content: js.Array[js.Array[prosemirrorDashMenuLib.prosemirrorDashMenuMod.MenuElement[S]]],
     floating: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Content[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
     if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
     __obj.asInstanceOf[Anon_Content[S]]
   }

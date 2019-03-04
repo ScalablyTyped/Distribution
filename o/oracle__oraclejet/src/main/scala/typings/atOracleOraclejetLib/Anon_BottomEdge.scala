@@ -20,8 +20,7 @@ object Anon_BottomEdge {
     edge: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom = null,
     query: java.lang.String = null
   ): Anon_BottomEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(selector = selector)
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     __obj.asInstanceOf[Anon_BottomEdge]

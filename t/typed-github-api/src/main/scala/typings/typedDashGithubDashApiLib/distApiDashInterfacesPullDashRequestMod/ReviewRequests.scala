@@ -16,9 +16,8 @@ object ReviewRequests {
     teams: js.Array[typedDashGithubDashApiLib.distApiDashInterfacesTeamMod.Team],
     users: js.Array[typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary]
   ): ReviewRequests = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("teams")(teams)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(teams = teams, users = users)
+  
     __obj.asInstanceOf[ReviewRequests]
   }
 }

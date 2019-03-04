@@ -18,10 +18,8 @@ object IUserOrUserGroupID {
     UserOrGroupID: scala.Double,
     UserOrGroupType: mfilesLib.MFilesNs.MFUserOrUserGroupType
   ): IUserOrUserGroupID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("UserOrGroupID")(UserOrGroupID)
-    __obj.updateDynamic("UserOrGroupType")(UserOrGroupType)
+    val __obj = js.Dynamic.literal(Clone = Clone, UserOrGroupID = UserOrGroupID, UserOrGroupType = UserOrGroupType)
+  
     __obj.asInstanceOf[IUserOrUserGroupID]
   }
 }

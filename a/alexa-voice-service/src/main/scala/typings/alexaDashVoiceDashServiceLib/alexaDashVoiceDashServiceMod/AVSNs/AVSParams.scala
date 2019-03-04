@@ -22,12 +22,8 @@ object AVSParams {
     deviceId: java.lang.String,
     refreshToken: java.lang.String
   ): AVSParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("deviceId")(deviceId)
-    __obj.updateDynamic("refreshToken")(refreshToken)
+    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, debug = debug, deviceId = deviceId, refreshToken = refreshToken)
+  
     __obj.asInstanceOf[AVSParams]
   }
 }

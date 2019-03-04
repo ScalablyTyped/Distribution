@@ -12,8 +12,8 @@ trait AccountInfoOptions extends js.Object {
 object AccountInfoOptions {
   @scala.inline
   def apply(httpCache: scala.Boolean): AccountInfoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpCache")(httpCache)
+    val __obj = js.Dynamic.literal(httpCache = httpCache)
+  
     __obj.asInstanceOf[AccountInfoOptions]
   }
 }

@@ -91,20 +91,8 @@ object XSheetLinkable {
     setLinkSheetName: js.Function1[java.lang.String, scala.Unit],
     setLinkUrl: js.Function1[java.lang.String, scala.Unit]
   ): XSheetLinkable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LinkMode")(LinkMode)
-    __obj.updateDynamic("LinkSheetName")(LinkSheetName)
-    __obj.updateDynamic("LinkUrl")(LinkUrl)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLinkMode")(getLinkMode)
-    __obj.updateDynamic("getLinkSheetName")(getLinkSheetName)
-    __obj.updateDynamic("getLinkUrl")(getLinkUrl)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLinkMode")(setLinkMode)
-    __obj.updateDynamic("setLinkSheetName")(setLinkSheetName)
-    __obj.updateDynamic("setLinkUrl")(setLinkUrl)
+    val __obj = js.Dynamic.literal(LinkMode = LinkMode, LinkSheetName = LinkSheetName, LinkUrl = LinkUrl, acquire = acquire, getLinkMode = getLinkMode, getLinkSheetName = getLinkSheetName, getLinkUrl = getLinkUrl, link = link, queryInterface = queryInterface, release = release, setLinkMode = setLinkMode, setLinkSheetName = setLinkSheetName, setLinkUrl = setLinkUrl)
+  
     __obj.asInstanceOf[XSheetLinkable]
   }
 }

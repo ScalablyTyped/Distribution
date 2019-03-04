@@ -21,8 +21,7 @@ object CreateChannelConfig {
     userProject: java.lang.String = null,
     versions: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateChannelConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(address = address)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)

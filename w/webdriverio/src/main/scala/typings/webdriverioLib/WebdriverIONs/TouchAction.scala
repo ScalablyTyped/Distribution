@@ -20,8 +20,7 @@ object TouchAction {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): TouchAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
     if (element != null) __obj.updateDynamic("element")(element)
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

@@ -121,25 +121,8 @@ object AuxRecordValue {
     tableListStoreField: java.lang.String,
     userVisible: scala.Boolean
   ): AuxRecordValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("canUpdate")(canUpdate)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("displayOrder")(displayOrder)
-    __obj.updateDynamic("displayType")(displayType)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("required")(required)
-    __obj.updateDynamic("tableListClass")(tableListClass)
-    __obj.updateDynamic("tableListDisplayField")(tableListDisplayField)
-    __obj.updateDynamic("tableListStoreField")(tableListStoreField)
-    __obj.updateDynamic("userVisible")(userVisible)
+    val __obj = js.Dynamic.literal(alias = alias, canUpdate = canUpdate, constructor = constructor, data = data, dataType = dataType, displayOrder = displayOrder, displayType = displayType, domain = domain, filter = filter, hasOwnProperty = hasOwnProperty, length = length, name = name, propertyIsEnumerable = propertyIsEnumerable, required = required, tableListClass = tableListClass, tableListDisplayField = tableListDisplayField, tableListStoreField = tableListStoreField, userVisible = userVisible)
+  
     __obj.asInstanceOf[AuxRecordValue]
   }
 }

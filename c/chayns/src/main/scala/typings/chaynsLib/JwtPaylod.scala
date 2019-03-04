@@ -35,15 +35,8 @@ object JwtPaylod {
     TobitUserID: scala.Double,
     isAdmin: scala.Boolean
   ): JwtPaylod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FacebookUserID")(FacebookUserID)
-    __obj.updateDynamic("FirstName")(FirstName)
-    __obj.updateDynamic("LastName")(LastName)
-    __obj.updateDynamic("LocationID")(LocationID)
-    __obj.updateDynamic("LoginType")(LoginType)
-    __obj.updateDynamic("PersonID")(PersonID)
-    __obj.updateDynamic("TobitUserID")(TobitUserID)
-    __obj.updateDynamic("isAdmin")(isAdmin)
+    val __obj = js.Dynamic.literal(FacebookUserID = FacebookUserID, FirstName = FirstName, LastName = LastName, LocationID = LocationID, LoginType = LoginType, PersonID = PersonID, TobitUserID = TobitUserID, isAdmin = isAdmin)
+  
     __obj.asInstanceOf[JwtPaylod]
   }
 }

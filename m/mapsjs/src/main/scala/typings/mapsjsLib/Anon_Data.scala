@@ -20,8 +20,7 @@ object Anon_Data {
     maxAvailableZoomLevel: scala.Int | scala.Double = null,
     timeoutMs: scala.Int | scala.Double = null
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
     if (maxAvailableZoomLevel != null) __obj.updateDynamic("maxAvailableZoomLevel")(maxAvailableZoomLevel.asInstanceOf[js.Any])
     if (timeoutMs != null) __obj.updateDynamic("timeoutMs")(timeoutMs.asInstanceOf[js.Any])

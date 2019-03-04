@@ -24,13 +24,8 @@ object ApprovalOptions {
     requiredApproverCount: scala.Double,
     timeoutInMinutes: scala.Double
   ): ApprovalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped")(autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped)
-    __obj.updateDynamic("enforceIdentityRevalidation")(enforceIdentityRevalidation)
-    __obj.updateDynamic("executionOrder")(executionOrder)
-    __obj.updateDynamic("releaseCreatorCanBeApprover")(releaseCreatorCanBeApprover)
-    __obj.updateDynamic("requiredApproverCount")(requiredApproverCount)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped = autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped, enforceIdentityRevalidation = enforceIdentityRevalidation, executionOrder = executionOrder, releaseCreatorCanBeApprover = releaseCreatorCanBeApprover, requiredApproverCount = requiredApproverCount, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[ApprovalOptions]
   }
 }

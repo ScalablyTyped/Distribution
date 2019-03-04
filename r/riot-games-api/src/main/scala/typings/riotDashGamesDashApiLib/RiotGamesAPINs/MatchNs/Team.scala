@@ -40,21 +40,8 @@ object Team {
     vilemawKills: scala.Double,
     winner: scala.Boolean
   ): Team = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bans")(bans)
-    __obj.updateDynamic("baronKills")(baronKills)
-    __obj.updateDynamic("dominionVictoryScore")(dominionVictoryScore)
-    __obj.updateDynamic("dragonKills")(dragonKills)
-    __obj.updateDynamic("firstBaron")(firstBaron)
-    __obj.updateDynamic("firstBlood")(firstBlood)
-    __obj.updateDynamic("firstDragon")(firstDragon)
-    __obj.updateDynamic("firstInhibitor")(firstInhibitor)
-    __obj.updateDynamic("firstTower")(firstTower)
-    __obj.updateDynamic("inhibitorKills")(inhibitorKills)
-    __obj.updateDynamic("teamId")(teamId)
-    __obj.updateDynamic("towerKills")(towerKills)
-    __obj.updateDynamic("vilemawKills")(vilemawKills)
-    __obj.updateDynamic("winner")(winner)
+    val __obj = js.Dynamic.literal(bans = bans, baronKills = baronKills, dominionVictoryScore = dominionVictoryScore, dragonKills = dragonKills, firstBaron = firstBaron, firstBlood = firstBlood, firstDragon = firstDragon, firstInhibitor = firstInhibitor, firstTower = firstTower, inhibitorKills = inhibitorKills, teamId = teamId, towerKills = towerKills, vilemawKills = vilemawKills, winner = winner)
+  
     __obj.asInstanceOf[Team]
   }
 }

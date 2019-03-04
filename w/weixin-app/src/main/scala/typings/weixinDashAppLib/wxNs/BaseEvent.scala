@@ -22,11 +22,8 @@ object BaseEvent {
     timeStamp: scala.Double,
     `type`: T
   ): BaseEvent[T, Detail] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(currentTarget = currentTarget, detail = detail.asInstanceOf[js.Any], target = target, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseEvent[T, Detail]]
   }
 }

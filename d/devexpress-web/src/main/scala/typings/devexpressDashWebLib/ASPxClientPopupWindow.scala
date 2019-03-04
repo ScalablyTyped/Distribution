@@ -99,22 +99,8 @@ object ASPxClientPopupWindow {
     name: java.lang.String,
     popupControl: ASPxClientPopupControl
   ): ASPxClientPopupWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetFooterImageUrl")(GetFooterImageUrl)
-    __obj.updateDynamic("GetFooterNavigateUrl")(GetFooterNavigateUrl)
-    __obj.updateDynamic("GetFooterText")(GetFooterText)
-    __obj.updateDynamic("GetHeaderImageUrl")(GetHeaderImageUrl)
-    __obj.updateDynamic("GetHeaderNavigateUrl")(GetHeaderNavigateUrl)
-    __obj.updateDynamic("GetHeaderText")(GetHeaderText)
-    __obj.updateDynamic("SetFooterImageUrl")(SetFooterImageUrl)
-    __obj.updateDynamic("SetFooterNavigateUrl")(SetFooterNavigateUrl)
-    __obj.updateDynamic("SetFooterText")(SetFooterText)
-    __obj.updateDynamic("SetHeaderImageUrl")(SetHeaderImageUrl)
-    __obj.updateDynamic("SetHeaderNavigateUrl")(SetHeaderNavigateUrl)
-    __obj.updateDynamic("SetHeaderText")(SetHeaderText)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("popupControl")(popupControl)
+    val __obj = js.Dynamic.literal(GetFooterImageUrl = GetFooterImageUrl, GetFooterNavigateUrl = GetFooterNavigateUrl, GetFooterText = GetFooterText, GetHeaderImageUrl = GetHeaderImageUrl, GetHeaderNavigateUrl = GetHeaderNavigateUrl, GetHeaderText = GetHeaderText, SetFooterImageUrl = SetFooterImageUrl, SetFooterNavigateUrl = SetFooterNavigateUrl, SetFooterText = SetFooterText, SetHeaderImageUrl = SetHeaderImageUrl, SetHeaderNavigateUrl = SetHeaderNavigateUrl, SetHeaderText = SetHeaderText, index = index, name = name, popupControl = popupControl)
+  
     __obj.asInstanceOf[ASPxClientPopupWindow]
   }
 }

@@ -22,12 +22,8 @@ object DelegationTokenOptions {
     scope: java.lang.String,
     target: java.lang.String
   ): DelegationTokenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api_type")(api_type)
-    __obj.updateDynamic("grant_type")(grant_type)
-    __obj.updateDynamic("id_token")(id_token)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(api_type = api_type, grant_type = grant_type, id_token = id_token, scope = scope, target = target)
+  
     __obj.asInstanceOf[DelegationTokenOptions]
   }
 }

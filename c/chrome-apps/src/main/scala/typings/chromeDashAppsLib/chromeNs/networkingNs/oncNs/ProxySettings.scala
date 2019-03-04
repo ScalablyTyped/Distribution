@@ -24,8 +24,7 @@ object ProxySettings {
     Manual: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation] = null,
     PAC: S = null
   ): ProxySettings[M, S, SL] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     if (ExcludeDomains != null) __obj.updateDynamic("ExcludeDomains")(ExcludeDomains.asInstanceOf[js.Any])
     if (Manual != null) __obj.updateDynamic("Manual")(Manual)
     if (PAC != null) __obj.updateDynamic("PAC")(PAC.asInstanceOf[js.Any])

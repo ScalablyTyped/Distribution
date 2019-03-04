@@ -13,8 +13,8 @@ trait Anon_Dismissed
 object Anon_Dismissed {
   @scala.inline
   def apply(`type`: expoLib.expoLibStrings.dismissed): Anon_Dismissed = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Dismissed]
   }
 }

@@ -20,11 +20,8 @@ object ExecutionInfo {
     getRemainingTime: js.Function0[scala.Double],
     isPreview: js.Function0[scala.Boolean]
   ): ExecutionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getRemainingCreateQuota")(getRemainingCreateQuota)
-    __obj.updateDynamic("getRemainingGetQuota")(getRemainingGetQuota)
-    __obj.updateDynamic("getRemainingTime")(getRemainingTime)
-    __obj.updateDynamic("isPreview")(isPreview)
+    val __obj = js.Dynamic.literal(getRemainingCreateQuota = getRemainingCreateQuota, getRemainingGetQuota = getRemainingGetQuota, getRemainingTime = getRemainingTime, isPreview = isPreview)
+  
     __obj.asInstanceOf[ExecutionInfo]
   }
 }

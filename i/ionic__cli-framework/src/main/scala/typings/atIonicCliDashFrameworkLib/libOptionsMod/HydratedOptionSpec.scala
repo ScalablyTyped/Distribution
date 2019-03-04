@@ -12,8 +12,8 @@ trait HydratedOptionSpec extends js.Object {
 object HydratedOptionSpec {
   @scala.inline
   def apply(value: java.lang.String): HydratedOptionSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[HydratedOptionSpec]
   }
 }

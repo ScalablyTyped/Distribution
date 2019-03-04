@@ -22,12 +22,8 @@ object OriginatorPublicKey {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): OriginatorPublicKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("publicKey")(publicKey)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, fromSchema = fromSchema, publicKey = publicKey, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[OriginatorPublicKey]
   }
 }

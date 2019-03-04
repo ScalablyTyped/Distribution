@@ -61,27 +61,8 @@ object DeploymentAttempt {
     status: DeploymentStatus,
     tasks: js.Array[ReleaseTask]
   ): DeploymentAttempt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attempt")(attempt)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("errorLog")(errorLog)
-    __obj.updateDynamic("hasStarted")(hasStarted)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("issues")(issues)
-    __obj.updateDynamic("job")(job)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("lastModifiedOn")(lastModifiedOn)
-    __obj.updateDynamic("operationStatus")(operationStatus)
-    __obj.updateDynamic("postDeploymentGates")(postDeploymentGates)
-    __obj.updateDynamic("preDeploymentGates")(preDeploymentGates)
-    __obj.updateDynamic("queuedOn")(queuedOn)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("releaseDeployPhases")(releaseDeployPhases)
-    __obj.updateDynamic("requestedBy")(requestedBy)
-    __obj.updateDynamic("requestedFor")(requestedFor)
-    __obj.updateDynamic("runPlanId")(runPlanId)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tasks")(tasks)
+    val __obj = js.Dynamic.literal(attempt = attempt, deploymentId = deploymentId, errorLog = errorLog, hasStarted = hasStarted, id = id, issues = issues, job = job, lastModifiedBy = lastModifiedBy, lastModifiedOn = lastModifiedOn, operationStatus = operationStatus, postDeploymentGates = postDeploymentGates, preDeploymentGates = preDeploymentGates, queuedOn = queuedOn, reason = reason, releaseDeployPhases = releaseDeployPhases, requestedBy = requestedBy, requestedFor = requestedFor, runPlanId = runPlanId, status = status, tasks = tasks)
+  
     __obj.asInstanceOf[DeploymentAttempt]
   }
 }

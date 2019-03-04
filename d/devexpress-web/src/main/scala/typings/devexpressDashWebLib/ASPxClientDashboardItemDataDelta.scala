@@ -39,11 +39,8 @@ object ASPxClientDashboardItemDataDelta {
     Name: java.lang.String,
     TargetMeasureId: java.lang.String
   ): ASPxClientDashboardItemDataDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActualMeasureId")(ActualMeasureId)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("TargetMeasureId")(TargetMeasureId)
+    val __obj = js.Dynamic.literal(ActualMeasureId = ActualMeasureId, Id = Id, Name = Name, TargetMeasureId = TargetMeasureId)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDataDelta]
   }
 }

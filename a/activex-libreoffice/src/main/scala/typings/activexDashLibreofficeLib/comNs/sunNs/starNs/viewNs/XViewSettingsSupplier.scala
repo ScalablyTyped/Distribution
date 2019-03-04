@@ -23,12 +23,8 @@ object XViewSettingsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XViewSettingsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ViewSettings")(ViewSettings)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getViewSettings")(getViewSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ViewSettings = ViewSettings, acquire = acquire, getViewSettings = getViewSettings, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XViewSettingsSupplier]
   }
 }

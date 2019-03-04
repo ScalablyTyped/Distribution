@@ -12,9 +12,8 @@ trait BuildDestroyedEvent extends RealtimeBuildEvent {
 object BuildDestroyedEvent {
   @scala.inline
   def apply(build: Build, buildId: scala.Double): BuildDestroyedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildId")(buildId)
+    val __obj = js.Dynamic.literal(build = build, buildId = buildId)
+  
     __obj.asInstanceOf[BuildDestroyedEvent]
   }
 }

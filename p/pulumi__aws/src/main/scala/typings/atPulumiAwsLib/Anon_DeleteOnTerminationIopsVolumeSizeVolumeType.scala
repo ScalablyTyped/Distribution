@@ -20,10 +20,7 @@ object Anon_DeleteOnTerminationIopsVolumeSizeVolumeType {
     volumeType: java.lang.String,
     deleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_DeleteOnTerminationIopsVolumeSizeVolumeType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("volumeSize")(volumeSize)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(iops = iops, volumeSize = volumeSize, volumeType = volumeType)
     if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     __obj.asInstanceOf[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType]
   }

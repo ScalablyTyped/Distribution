@@ -28,10 +28,7 @@ object InjectCodeDetails {
     frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined
   ): InjectCodeDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("cssOrigin")(cssOrigin)
-    __obj.updateDynamic("runAt")(runAt)
+    val __obj = js.Dynamic.literal(code = code, cssOrigin = cssOrigin, runAt = runAt)
     if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
     if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
     if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)

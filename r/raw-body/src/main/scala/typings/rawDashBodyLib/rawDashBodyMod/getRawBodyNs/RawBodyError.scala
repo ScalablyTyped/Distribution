@@ -48,9 +48,8 @@ object RawBodyError {
     received: scala.Int | scala.Double = null,
     stack: java.lang.String = null
   ): RawBodyError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(status = status, statusCode = statusCode)
+    __obj.updateDynamic("type")(`type`)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (expected != null) __obj.updateDynamic("expected")(expected.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

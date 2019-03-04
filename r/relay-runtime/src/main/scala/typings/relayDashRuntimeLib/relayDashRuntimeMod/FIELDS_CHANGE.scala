@@ -16,8 +16,8 @@ object FIELDS_CHANGE {
     fieldIDs: org.scalablytyped.runtime.StringDictionary[DataID | js.Array[DataID]],
     `type`: relayDashRuntimeLib.relayDashRuntimeLibStrings.FIELDS_CHANGE
   ): FIELDS_CHANGE = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fieldIDs")(fieldIDs)
+    val __obj = js.Dynamic.literal(fieldIDs = fieldIDs)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FIELDS_CHANGE]
   }
 }

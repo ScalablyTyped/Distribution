@@ -22,11 +22,7 @@ object ValidatorFunctionContext {
     value: js.Any,
     message: java.lang.String = null
   ): ValidatorFunctionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("messageTemplate")(messageTemplate)
-    __obj.updateDynamic("validatorName")(validatorName)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(displayName = displayName, messageTemplate = messageTemplate, validatorName = validatorName, value = value)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[ValidatorFunctionContext]
   }

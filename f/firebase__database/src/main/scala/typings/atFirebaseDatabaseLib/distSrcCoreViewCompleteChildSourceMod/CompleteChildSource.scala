@@ -35,9 +35,8 @@ object CompleteChildSource {
     ],
     getCompleteChild: js.Function1[java.lang.String, atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null]
   ): CompleteChildSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getChildAfterChild")(getChildAfterChild)
-    __obj.updateDynamic("getCompleteChild")(getCompleteChild)
+    val __obj = js.Dynamic.literal(getChildAfterChild = getChildAfterChild, getCompleteChild = getCompleteChild)
+  
     __obj.asInstanceOf[CompleteChildSource]
   }
 }

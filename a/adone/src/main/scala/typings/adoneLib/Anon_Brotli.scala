@@ -44,14 +44,8 @@ object Anon_Brotli {
     snappyNs: Anon_BufCompressCompressSync,
     xzNs: Anon_AloneDecoderAloneEncoder
   ): Anon_Brotli = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("brotliNs")(brotliNs)
-    __obj.updateDynamic("deflateNs")(deflateNs)
-    __obj.updateDynamic("gzNs")(gzNs)
-    __obj.updateDynamic("lzmaNs")(lzmaNs)
-    __obj.updateDynamic("snappyNs")(snappyNs)
-    __obj.updateDynamic("xzNs")(xzNs)
+    val __obj = js.Dynamic.literal(INs = INs, brotliNs = brotliNs, deflateNs = deflateNs, gzNs = gzNs, lzmaNs = lzmaNs, snappyNs = snappyNs, xzNs = xzNs)
+  
     __obj.asInstanceOf[Anon_Brotli]
   }
 }

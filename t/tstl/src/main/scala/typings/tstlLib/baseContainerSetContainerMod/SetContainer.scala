@@ -22,7 +22,7 @@ abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: Set
   /**
     * @hidden
     */
-  var `data_`: tstlLib.baseContainerUnderscoreSetElementListMod._SetElementList[Key, Unique, Source] = js.native
+  var data_ : tstlLib.baseContainerUnderscoreSetElementListMod._SetElementList[Key, Unique, Source] = js.native
   /**
     * @hidden
     */

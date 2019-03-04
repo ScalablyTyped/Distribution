@@ -82,8 +82,7 @@ object BarChartProps {
     yDomainRange: js.Array[scala.Double] = null,
     yTickNumber: scala.Int | scala.Double = null
   ): BarChartProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (axisLabels != null) __obj.updateDynamic("axisLabels")(axisLabels)
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])

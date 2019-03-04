@@ -54,14 +54,8 @@ object XFormLayerAccess {
     release: js.Function0[scala.Unit],
     setFormDesignMode: js.Function1[scala.Boolean, scala.Unit]
   ): XFormLayerAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getFormController")(getFormController)
-    __obj.updateDynamic("isFormDesignMode")(isFormDesignMode)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFormDesignMode")(setFormDesignMode)
+    val __obj = js.Dynamic.literal(acquire = acquire, getControl = getControl, getFormController = getFormController, isFormDesignMode = isFormDesignMode, queryInterface = queryInterface, release = release, setFormDesignMode = setFormDesignMode)
+  
     __obj.asInstanceOf[XFormLayerAccess]
   }
 }

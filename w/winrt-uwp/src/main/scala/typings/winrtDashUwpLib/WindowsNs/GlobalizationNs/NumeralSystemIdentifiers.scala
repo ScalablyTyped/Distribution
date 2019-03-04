@@ -38,7 +38,7 @@ object NumeralSystemIdentifiers extends js.Object {
   var haniDec: java.lang.String = js.native
   /** Gets the identifier for the Javanese decimal numeral system. */
   @JSName("java")
-  var `java_`: java.lang.String = js.native
+  var java_ : java.lang.String = js.native
   /** Gets the identifier for the Kayah Li decimal numeral system. */
   var kali: java.lang.String = js.native
   /** Gets the identifier for the Khmer decimal numeral system. */

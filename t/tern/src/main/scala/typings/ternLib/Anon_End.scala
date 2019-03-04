@@ -18,10 +18,8 @@ object Anon_End {
     file: java.lang.String,
     start: scala.Double | ternLib.libTernMod.Position
   ): Anon_End = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file, start = start.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_End]
   }
 }

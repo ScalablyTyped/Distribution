@@ -60,13 +60,8 @@ object CustomResourceDefinitionVersion {
     storage: scala.Boolean,
     subresources: CustomResourceSubresources
   ): CustomResourceDefinitionVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalPrinterColumns")(additionalPrinterColumns)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("served")(served)
-    __obj.updateDynamic("storage")(storage)
-    __obj.updateDynamic("subresources")(subresources)
+    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, name = name, schema = schema, served = served, storage = storage, subresources = subresources)
+  
     __obj.asInstanceOf[CustomResourceDefinitionVersion]
   }
 }

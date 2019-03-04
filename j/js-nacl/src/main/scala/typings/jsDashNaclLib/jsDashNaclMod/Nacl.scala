@@ -70,33 +70,8 @@ object Nacl {
     from_hex: js.Function1[java.lang.String, stdLib.Uint8Array],
     to_hex: js.Function1[stdLib.Uint8Array, java.lang.String]
   ): Nacl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("crypto_box")(crypto_box)
-    __obj.updateDynamic("crypto_box_keypair")(crypto_box_keypair)
-    __obj.updateDynamic("crypto_box_keypair_from_raw_sk")(crypto_box_keypair_from_raw_sk)
-    __obj.updateDynamic("crypto_box_open")(crypto_box_open)
-    __obj.updateDynamic("crypto_box_open_precomputed")(crypto_box_open_precomputed)
-    __obj.updateDynamic("crypto_box_precompute")(crypto_box_precompute)
-    __obj.updateDynamic("crypto_box_precomputed")(crypto_box_precomputed)
-    __obj.updateDynamic("crypto_box_random_nonce")(crypto_box_random_nonce)
-    __obj.updateDynamic("crypto_box_seed_keypair")(crypto_box_seed_keypair)
-    __obj.updateDynamic("crypto_hash")(crypto_hash)
-    __obj.updateDynamic("crypto_hash_sha256")(crypto_hash_sha256)
-    __obj.updateDynamic("crypto_secretbox")(crypto_secretbox)
-    __obj.updateDynamic("crypto_secretbox_open")(crypto_secretbox_open)
-    __obj.updateDynamic("crypto_secretbox_random_nonce")(crypto_secretbox_random_nonce)
-    __obj.updateDynamic("crypto_sign")(crypto_sign)
-    __obj.updateDynamic("crypto_sign_detached")(crypto_sign_detached)
-    __obj.updateDynamic("crypto_sign_keypair")(crypto_sign_keypair)
-    __obj.updateDynamic("crypto_sign_open")(crypto_sign_open)
-    __obj.updateDynamic("crypto_sign_seed_keypair")(crypto_sign_seed_keypair)
-    __obj.updateDynamic("crypto_sign_verify_detached")(crypto_sign_verify_detached)
-    __obj.updateDynamic("decode_latin1")(decode_latin1)
-    __obj.updateDynamic("decode_utf8")(decode_utf8)
-    __obj.updateDynamic("encode_latin1")(encode_latin1)
-    __obj.updateDynamic("encode_utf8")(encode_utf8)
-    __obj.updateDynamic("from_hex")(from_hex)
-    __obj.updateDynamic("to_hex")(to_hex)
+    val __obj = js.Dynamic.literal(crypto_box = crypto_box, crypto_box_keypair = crypto_box_keypair, crypto_box_keypair_from_raw_sk = crypto_box_keypair_from_raw_sk, crypto_box_open = crypto_box_open, crypto_box_open_precomputed = crypto_box_open_precomputed, crypto_box_precompute = crypto_box_precompute, crypto_box_precomputed = crypto_box_precomputed, crypto_box_random_nonce = crypto_box_random_nonce, crypto_box_seed_keypair = crypto_box_seed_keypair, crypto_hash = crypto_hash, crypto_hash_sha256 = crypto_hash_sha256, crypto_secretbox = crypto_secretbox, crypto_secretbox_open = crypto_secretbox_open, crypto_secretbox_random_nonce = crypto_secretbox_random_nonce, crypto_sign = crypto_sign, crypto_sign_detached = crypto_sign_detached, crypto_sign_keypair = crypto_sign_keypair, crypto_sign_open = crypto_sign_open, crypto_sign_seed_keypair = crypto_sign_seed_keypair, crypto_sign_verify_detached = crypto_sign_verify_detached, decode_latin1 = decode_latin1, decode_utf8 = decode_utf8, encode_latin1 = encode_latin1, encode_utf8 = encode_utf8, from_hex = from_hex, to_hex = to_hex)
+  
     __obj.asInstanceOf[Nacl]
   }
 }

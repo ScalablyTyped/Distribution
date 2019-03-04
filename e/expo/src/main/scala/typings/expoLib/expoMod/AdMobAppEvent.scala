@@ -13,9 +13,8 @@ trait AdMobAppEvent extends js.Object {
 object AdMobAppEvent {
   @scala.inline
   def apply(info: java.lang.String, name: java.lang.String): AdMobAppEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(info = info, name = name)
+  
     __obj.asInstanceOf[AdMobAppEvent]
   }
 }

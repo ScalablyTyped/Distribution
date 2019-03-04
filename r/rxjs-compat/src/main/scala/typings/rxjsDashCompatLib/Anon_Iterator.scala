@@ -18,10 +18,8 @@ object Anon_Iterator {
     observable: java.lang.String | js.Symbol,
     rxSubscriber: java.lang.String | js.Symbol
   ): Anon_Iterator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iterator")(iterator)
-    __obj.updateDynamic("observable")(observable.asInstanceOf[js.Any])
-    __obj.updateDynamic("rxSubscriber")(rxSubscriber.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(iterator = iterator, observable = observable.asInstanceOf[js.Any], rxSubscriber = rxSubscriber.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Iterator]
   }
 }

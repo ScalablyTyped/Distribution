@@ -32,12 +32,7 @@ object TextareaState {
     left: scala.Int | scala.Double = null,
     top: scala.Int | scala.Double = null
   ): TextareaState[TItem] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualToken")(actualToken)
-    __obj.updateDynamic("dataLoading")(dataLoading)
-    __obj.updateDynamic("selectionEnd")(selectionEnd)
-    __obj.updateDynamic("selectionStart")(selectionStart)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(actualToken = actualToken, dataLoading = dataLoading, selectionEnd = selectionEnd, selectionStart = selectionStart, value = value)
     if (component != null) __obj.updateDynamic("component")(component)
     if (currentTrigger != null) __obj.updateDynamic("currentTrigger")(currentTrigger)
     if (data != null) __obj.updateDynamic("data")(data)

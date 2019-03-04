@@ -72,12 +72,7 @@ object EnhancedSwitchProps {
     trackStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: java.lang.String = null
   ): EnhancedSwitchProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputStyle")(inputStyle)
-    __obj.updateDynamic("inputType")(inputType)
-    __obj.updateDynamic("onParentShouldUpdate")(onParentShouldUpdate)
-    __obj.updateDynamic("switchElement")(switchElement)
-    __obj.updateDynamic("switched")(switched)
+    val __obj = js.Dynamic.literal(inputStyle = inputStyle, inputType = inputType, onParentShouldUpdate = onParentShouldUpdate, switchElement = switchElement, switched = switched)
     js.Dynamic.global.Object.assign(__obj, CommonEnhancedSwitchProps)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(defaultSwitched)) __obj.updateDynamic("defaultSwitched")(defaultSwitched)

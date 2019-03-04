@@ -24,9 +24,8 @@ object SavedResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SavedReports]
     ]
   ): SavedResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generate")(generate)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(generate = generate, list = list)
+  
     __obj.asInstanceOf[SavedResource]
   }
 }

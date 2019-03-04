@@ -21,8 +21,8 @@ object ExpressionStatement {
     loc: Location = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): ExpressionStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(expression = expression)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[ExpressionStatement]

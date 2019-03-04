@@ -37,13 +37,8 @@ object ClassBreaksResultClassBreaksInfos {
     minValue: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): ClassBreaksResultClassBreaksInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("maxValue")(maxValue)
-    __obj.updateDynamic("minValue")(minValue)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, label = label, maxValue = maxValue, minValue = minValue, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[ClassBreaksResultClassBreaksInfos]
   }
 }

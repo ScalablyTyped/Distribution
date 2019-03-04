@@ -20,11 +20,8 @@ object LDLogger {
     info: js.Function1[java.lang.String, scala.Unit],
     warn: js.Function1[java.lang.String, scala.Unit]
   ): LDLogger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(debug = debug, error = error, info = info, warn = warn)
+  
     __obj.asInstanceOf[LDLogger]
   }
 }

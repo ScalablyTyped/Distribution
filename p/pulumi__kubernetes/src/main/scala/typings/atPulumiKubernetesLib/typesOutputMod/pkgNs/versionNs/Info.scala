@@ -33,16 +33,8 @@ object Info {
     minor: java.lang.String,
     platform: java.lang.String
   ): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildDate")(buildDate)
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("gitCommit")(gitCommit)
-    __obj.updateDynamic("gitTreeState")(gitTreeState)
-    __obj.updateDynamic("gitVersion")(gitVersion)
-    __obj.updateDynamic("goVersion")(goVersion)
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(buildDate = buildDate, compiler = compiler, gitCommit = gitCommit, gitTreeState = gitTreeState, gitVersion = gitVersion, goVersion = goVersion, major = major, minor = minor, platform = platform)
+  
     __obj.asInstanceOf[Info]
   }
 }

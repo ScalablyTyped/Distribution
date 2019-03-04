@@ -98,21 +98,8 @@ object XTextTableCursor {
     release: js.Function0[scala.Unit],
     splitRange: js.Function2[scala.Double, scala.Boolean, scala.Boolean]
   ): XTextTableCursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangeName")(RangeName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRangeName")(getRangeName)
-    __obj.updateDynamic("goDown")(goDown)
-    __obj.updateDynamic("goLeft")(goLeft)
-    __obj.updateDynamic("goRight")(goRight)
-    __obj.updateDynamic("goUp")(goUp)
-    __obj.updateDynamic("gotoCellByName")(gotoCellByName)
-    __obj.updateDynamic("gotoEnd")(gotoEnd)
-    __obj.updateDynamic("gotoStart")(gotoStart)
-    __obj.updateDynamic("mergeRange")(mergeRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("splitRange")(splitRange)
+    val __obj = js.Dynamic.literal(RangeName = RangeName, acquire = acquire, getRangeName = getRangeName, goDown = goDown, goLeft = goLeft, goRight = goRight, goUp = goUp, gotoCellByName = gotoCellByName, gotoEnd = gotoEnd, gotoStart = gotoStart, mergeRange = mergeRange, queryInterface = queryInterface, release = release, splitRange = splitRange)
+  
     __obj.asInstanceOf[XTextTableCursor]
   }
 }

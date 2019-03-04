@@ -29,10 +29,8 @@ object ILockable {
     try_lock: js.Function0[js.Promise[scala.Boolean]],
     unlock: js.Function0[js.Promise[scala.Unit]]
   ): ILockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("try_lock")(try_lock)
-    __obj.updateDynamic("unlock")(unlock)
+    val __obj = js.Dynamic.literal(lock = lock, try_lock = try_lock, unlock = unlock)
+  
     __obj.asInstanceOf[ILockable]
   }
 }

@@ -42,8 +42,22 @@ object Anon_Bulkloadedcursorinsertcalls {
     `truncate calls`: scala.Double,
     `update calls`: scala.Double
   ): Anon_Bulkloadedcursorinsertcalls = {
-    val __obj = js.Dynamic.literal(`bulk-loaded cursor-insert calls` = `bulk-loaded cursor-insert calls`, `create calls` = `create calls`, `cursor-insert key and value bytes inserted` = `cursor-insert key and value bytes inserted`, `cursor-remove key bytes removed` = `cursor-remove key bytes removed`, `cursor-update value bytes updated` = `cursor-update value bytes updated`, `insert calls` = `insert calls`, `next calls` = `next calls`, `prev calls` = `prev calls`, `remove calls` = `remove calls`, `reset calls` = `reset calls`, `restarted searches` = `restarted searches`, `search calls` = `search calls`, `search near calls` = `search near calls`, `truncate calls` = `truncate calls`, `update calls` = `update calls`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bulk-loaded cursor-insert calls")(`bulk-loaded cursor-insert calls`)
+    __obj.updateDynamic("create calls")(`create calls`)
+    __obj.updateDynamic("cursor-insert key and value bytes inserted")(`cursor-insert key and value bytes inserted`)
+    __obj.updateDynamic("cursor-remove key bytes removed")(`cursor-remove key bytes removed`)
+    __obj.updateDynamic("cursor-update value bytes updated")(`cursor-update value bytes updated`)
+    __obj.updateDynamic("insert calls")(`insert calls`)
+    __obj.updateDynamic("next calls")(`next calls`)
+    __obj.updateDynamic("prev calls")(`prev calls`)
+    __obj.updateDynamic("remove calls")(`remove calls`)
+    __obj.updateDynamic("reset calls")(`reset calls`)
+    __obj.updateDynamic("restarted searches")(`restarted searches`)
+    __obj.updateDynamic("search calls")(`search calls`)
+    __obj.updateDynamic("search near calls")(`search near calls`)
+    __obj.updateDynamic("truncate calls")(`truncate calls`)
+    __obj.updateDynamic("update calls")(`update calls`)
     __obj.asInstanceOf[Anon_Bulkloadedcursorinsertcalls]
   }
 }

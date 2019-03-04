@@ -14,8 +14,8 @@ trait OutlineOutlineFill extends js.Object {
 object OutlineOutlineFill {
   @scala.inline
   def apply(kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill): OutlineOutlineFill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[OutlineOutlineFill]
   }
 }

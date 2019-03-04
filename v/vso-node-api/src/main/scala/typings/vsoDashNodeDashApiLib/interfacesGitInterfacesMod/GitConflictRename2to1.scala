@@ -39,27 +39,8 @@ object GitConflictRename2to1 {
     targetOriginalPath: java.lang.String,
     url: java.lang.String
   ): GitConflictRename2to1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("conflictId")(conflictId)
-    __obj.updateDynamic("conflictPath")(conflictPath)
-    __obj.updateDynamic("conflictType")(conflictType)
-    __obj.updateDynamic("mergeBaseCommit")(mergeBaseCommit)
-    __obj.updateDynamic("mergeOrigin")(mergeOrigin)
-    __obj.updateDynamic("mergeSourceCommit")(mergeSourceCommit)
-    __obj.updateDynamic("mergeTargetCommit")(mergeTargetCommit)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("resolutionError")(resolutionError)
-    __obj.updateDynamic("resolutionStatus")(resolutionStatus)
-    __obj.updateDynamic("resolvedBy")(resolvedBy)
-    __obj.updateDynamic("resolvedDate")(resolvedDate)
-    __obj.updateDynamic("sourceNewBlob")(sourceNewBlob)
-    __obj.updateDynamic("sourceOriginalBlob")(sourceOriginalBlob)
-    __obj.updateDynamic("sourceOriginalPath")(sourceOriginalPath)
-    __obj.updateDynamic("targetNewBlob")(targetNewBlob)
-    __obj.updateDynamic("targetOriginalBlob")(targetOriginalBlob)
-    __obj.updateDynamic("targetOriginalPath")(targetOriginalPath)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, conflictId = conflictId, conflictPath = conflictPath, conflictType = conflictType, mergeBaseCommit = mergeBaseCommit, mergeOrigin = mergeOrigin, mergeSourceCommit = mergeSourceCommit, mergeTargetCommit = mergeTargetCommit, resolution = resolution, resolutionError = resolutionError, resolutionStatus = resolutionStatus, resolvedBy = resolvedBy, resolvedDate = resolvedDate, sourceNewBlob = sourceNewBlob, sourceOriginalBlob = sourceOriginalBlob, sourceOriginalPath = sourceOriginalPath, targetNewBlob = targetNewBlob, targetOriginalBlob = targetOriginalBlob, targetOriginalPath = targetOriginalPath, url = url)
+  
     __obj.asInstanceOf[GitConflictRename2to1]
   }
 }

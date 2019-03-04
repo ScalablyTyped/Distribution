@@ -32,14 +32,8 @@ object IUiGridExporterConstants {
     VISIBLE: java.lang.String,
     featureName: java.lang.String
   ): IUiGridExporterConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ALL")(ALL)
-    __obj.updateDynamic("BUTTON_LABEL")(BUTTON_LABEL)
-    __obj.updateDynamic("CSV_CONTENT")(CSV_CONTENT)
-    __obj.updateDynamic("FILE_NAME")(FILE_NAME)
-    __obj.updateDynamic("SELECTED")(SELECTED)
-    __obj.updateDynamic("VISIBLE")(VISIBLE)
-    __obj.updateDynamic("featureName")(featureName)
+    val __obj = js.Dynamic.literal(ALL = ALL, BUTTON_LABEL = BUTTON_LABEL, CSV_CONTENT = CSV_CONTENT, FILE_NAME = FILE_NAME, SELECTED = SELECTED, VISIBLE = VISIBLE, featureName = featureName)
+  
     __obj.asInstanceOf[IUiGridExporterConstants]
   }
 }

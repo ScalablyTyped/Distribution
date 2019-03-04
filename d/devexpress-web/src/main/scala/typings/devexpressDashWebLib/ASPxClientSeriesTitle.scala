@@ -25,12 +25,8 @@ object ASPxClientSeriesTitle {
     lines: js.Array[java.lang.String],
     series: ASPxClientSeries
   ): ASPxClientSeriesTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dock")(dock)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(alignment = alignment, chart = chart, dock = dock, lines = lines, series = series)
+  
     __obj.asInstanceOf[ASPxClientSeriesTitle]
   }
 }

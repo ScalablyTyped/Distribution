@@ -16,9 +16,8 @@ object Duration {
     afterMoment: js.Function1[java.lang.String, java.lang.String],
     beforeMoment: js.Function1[java.lang.String, java.lang.String]
   ): Duration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterMoment")(afterMoment)
-    __obj.updateDynamic("beforeMoment")(beforeMoment)
+    val __obj = js.Dynamic.literal(afterMoment = afterMoment, beforeMoment = beforeMoment)
+  
     __obj.asInstanceOf[Duration]
   }
 }

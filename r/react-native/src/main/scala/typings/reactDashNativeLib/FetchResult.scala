@@ -18,10 +18,8 @@ object FetchResult {
     NoData: reactDashNativeLib.reactDashNativeLibStrings.UIBackgroundFetchResultNoData,
     ResultFailed: reactDashNativeLib.reactDashNativeLibStrings.UIBackgroundFetchResultFailed
   ): FetchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewData")(NewData)
-    __obj.updateDynamic("NoData")(NoData)
-    __obj.updateDynamic("ResultFailed")(ResultFailed)
+    val __obj = js.Dynamic.literal(NewData = NewData, NoData = NoData, ResultFailed = ResultFailed)
+  
     __obj.asInstanceOf[FetchResult]
   }
 }

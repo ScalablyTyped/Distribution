@@ -20,11 +20,8 @@ object JasmineJQuery {
     events: JasmineJQueryEvents,
     matchersClass: js.Any
   ): JasmineJQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browserTagCaseIndependentHtml")(browserTagCaseIndependentHtml)
-    __obj.updateDynamic("elementToString")(elementToString)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("matchersClass")(matchersClass)
+    val __obj = js.Dynamic.literal(browserTagCaseIndependentHtml = browserTagCaseIndependentHtml, elementToString = elementToString, events = events, matchersClass = matchersClass)
+  
     __obj.asInstanceOf[JasmineJQuery]
   }
 }

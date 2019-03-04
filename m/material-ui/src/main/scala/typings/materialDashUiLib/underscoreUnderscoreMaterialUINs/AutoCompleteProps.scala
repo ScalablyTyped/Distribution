@@ -121,8 +121,7 @@ object AutoCompleteProps {
     underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: java.lang.String | scala.Double = null
   ): AutoCompleteProps[DataItem] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource)
+    val __obj = js.Dynamic.literal(dataSource = dataSource)
     if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin)
     if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
     if (animation != null) __obj.updateDynamic("animation")(animation)

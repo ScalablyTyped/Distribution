@@ -69,8 +69,7 @@ object GotFormOptions {
     timeout: scala.Double | TimeoutOptions = null,
     useElectronNet: js.UndefOr[scala.Boolean] = js.undefined
   ): GotFormOptions[E] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("form")(form)
+    val __obj = js.Dynamic.literal(form = form)
     if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent)
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth)

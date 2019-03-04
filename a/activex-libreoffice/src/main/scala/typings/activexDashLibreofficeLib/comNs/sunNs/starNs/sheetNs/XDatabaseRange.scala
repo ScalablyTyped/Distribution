@@ -92,22 +92,8 @@ object XDatabaseRange {
     release: js.Function0[scala.Unit],
     setDataArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
   ): XDatabaseRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataArea")(DataArea)
-    __obj.updateDynamic("FilterDescriptor")(FilterDescriptor)
-    __obj.updateDynamic("ImportDescriptor")(ImportDescriptor)
-    __obj.updateDynamic("SortDescriptor")(SortDescriptor)
-    __obj.updateDynamic("SubTotalDescriptor")(SubTotalDescriptor)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataArea")(getDataArea)
-    __obj.updateDynamic("getFilterDescriptor")(getFilterDescriptor)
-    __obj.updateDynamic("getImportDescriptor")(getImportDescriptor)
-    __obj.updateDynamic("getSortDescriptor")(getSortDescriptor)
-    __obj.updateDynamic("getSubTotalDescriptor")(getSubTotalDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDataArea")(setDataArea)
+    val __obj = js.Dynamic.literal(DataArea = DataArea, FilterDescriptor = FilterDescriptor, ImportDescriptor = ImportDescriptor, SortDescriptor = SortDescriptor, SubTotalDescriptor = SubTotalDescriptor, acquire = acquire, getDataArea = getDataArea, getFilterDescriptor = getFilterDescriptor, getImportDescriptor = getImportDescriptor, getSortDescriptor = getSortDescriptor, getSubTotalDescriptor = getSubTotalDescriptor, queryInterface = queryInterface, refresh = refresh, release = release, setDataArea = setDataArea)
+  
     __obj.asInstanceOf[XDatabaseRange]
   }
 }

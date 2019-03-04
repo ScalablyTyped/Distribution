@@ -28,14 +28,8 @@ object IResourceCandidate {
     qualifiers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ResourceQualifier],
     valueAsString: java.lang.String
   ): IResourceCandidate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getQualifierValue")(getQualifierValue)
-    __obj.updateDynamic("getValueAsFileAsync")(getValueAsFileAsync)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isMatch")(isMatch)
-    __obj.updateDynamic("isMatchAsDefault")(isMatchAsDefault)
-    __obj.updateDynamic("qualifiers")(qualifiers)
-    __obj.updateDynamic("valueAsString")(valueAsString)
+    val __obj = js.Dynamic.literal(getQualifierValue = getQualifierValue, getValueAsFileAsync = getValueAsFileAsync, isDefault = isDefault, isMatch = isMatch, isMatchAsDefault = isMatchAsDefault, qualifiers = qualifiers, valueAsString = valueAsString)
+  
     __obj.asInstanceOf[IResourceCandidate]
   }
 }

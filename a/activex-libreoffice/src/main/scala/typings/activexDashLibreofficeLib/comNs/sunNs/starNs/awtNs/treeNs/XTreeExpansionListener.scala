@@ -47,16 +47,8 @@ object XTreeExpansionListener {
     treeExpanded: js.Function1[TreeExpansionEvent, scala.Unit],
     treeExpanding: js.Function1[TreeExpansionEvent, scala.Unit]
   ): XTreeExpansionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("requestChildNodes")(requestChildNodes)
-    __obj.updateDynamic("treeCollapsed")(treeCollapsed)
-    __obj.updateDynamic("treeCollapsing")(treeCollapsing)
-    __obj.updateDynamic("treeExpanded")(treeExpanded)
-    __obj.updateDynamic("treeExpanding")(treeExpanding)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, requestChildNodes = requestChildNodes, treeCollapsed = treeCollapsed, treeCollapsing = treeCollapsing, treeExpanded = treeExpanded, treeExpanding = treeExpanding)
+  
     __obj.asInstanceOf[XTreeExpansionListener]
   }
 }

@@ -20,7 +20,8 @@ object MarkerSymbol {
     xoffset: scala.Int | scala.Double = null,
     yoffset: scala.Int | scala.Double = null
   ): MarkerSymbol = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])

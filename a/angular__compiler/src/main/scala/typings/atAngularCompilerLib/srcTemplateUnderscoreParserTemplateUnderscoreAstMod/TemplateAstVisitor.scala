@@ -38,19 +38,7 @@ object TemplateAstVisitor {
     visitVariable: js.Function2[VariableAst, js.Any, js.Any],
     visit: js.Function2[/* ast */ TemplateAst, /* context */ js.Any, _] = null
   ): TemplateAstVisitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visitAttr")(visitAttr)
-    __obj.updateDynamic("visitBoundText")(visitBoundText)
-    __obj.updateDynamic("visitDirective")(visitDirective)
-    __obj.updateDynamic("visitDirectiveProperty")(visitDirectiveProperty)
-    __obj.updateDynamic("visitElement")(visitElement)
-    __obj.updateDynamic("visitElementProperty")(visitElementProperty)
-    __obj.updateDynamic("visitEmbeddedTemplate")(visitEmbeddedTemplate)
-    __obj.updateDynamic("visitEvent")(visitEvent)
-    __obj.updateDynamic("visitNgContent")(visitNgContent)
-    __obj.updateDynamic("visitReference")(visitReference)
-    __obj.updateDynamic("visitText")(visitText)
-    __obj.updateDynamic("visitVariable")(visitVariable)
+    val __obj = js.Dynamic.literal(visitAttr = visitAttr, visitBoundText = visitBoundText, visitDirective = visitDirective, visitDirectiveProperty = visitDirectiveProperty, visitElement = visitElement, visitElementProperty = visitElementProperty, visitEmbeddedTemplate = visitEmbeddedTemplate, visitEvent = visitEvent, visitNgContent = visitNgContent, visitReference = visitReference, visitText = visitText, visitVariable = visitVariable)
     if (visit != null) __obj.updateDynamic("visit")(visit)
     __obj.asInstanceOf[TemplateAstVisitor]
   }

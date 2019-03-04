@@ -133,13 +133,8 @@ object IMemberResource {
       angularLib.angularMod.angularNs.IPromise[IResourcePromise]
     ]
   ): IMemberResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteByKey")(deleteByKey)
-    __obj.updateDynamic("getByKey")(getByKey)
-    __obj.updateDynamic("getListNode")(getListNode)
-    __obj.updateDynamic("getPagedResults")(getPagedResults)
-    __obj.updateDynamic("getScaffold")(getScaffold)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(deleteByKey = deleteByKey, getByKey = getByKey, getListNode = getListNode, getPagedResults = getPagedResults, getScaffold = getScaffold, save = save)
+  
     __obj.asInstanceOf[IMemberResource]
   }
 }

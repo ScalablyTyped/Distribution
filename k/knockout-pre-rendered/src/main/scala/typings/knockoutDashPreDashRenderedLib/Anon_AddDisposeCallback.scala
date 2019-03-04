@@ -20,11 +20,8 @@ object Anon_AddDisposeCallback {
     removeDisposeCallback: js.Function2[stdLib.Element, js.Function, scala.Unit],
     removeNode: js.Function1[stdLib.Node, scala.Unit]
   ): Anon_AddDisposeCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addDisposeCallback")(addDisposeCallback)
-    __obj.updateDynamic("cleanNode")(cleanNode)
-    __obj.updateDynamic("removeDisposeCallback")(removeDisposeCallback)
-    __obj.updateDynamic("removeNode")(removeNode)
+    val __obj = js.Dynamic.literal(addDisposeCallback = addDisposeCallback, cleanNode = cleanNode, removeDisposeCallback = removeDisposeCallback, removeNode = removeNode)
+  
     __obj.asInstanceOf[Anon_AddDisposeCallback]
   }
 }

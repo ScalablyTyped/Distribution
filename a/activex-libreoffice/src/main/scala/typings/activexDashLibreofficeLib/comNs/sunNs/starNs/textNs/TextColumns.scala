@@ -57,26 +57,8 @@ object TextColumns {
     setColumnCount: js.Function1[scala.Double, scala.Unit],
     setColumns: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextColumn], scala.Unit]
   ): TextColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticDistance")(AutomaticDistance)
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("IsAutomatic")(IsAutomatic)
-    __obj.updateDynamic("ReferenceValue")(ReferenceValue)
-    __obj.updateDynamic("SeparatorLineColor")(SeparatorLineColor)
-    __obj.updateDynamic("SeparatorLineIsOn")(SeparatorLineIsOn)
-    __obj.updateDynamic("SeparatorLineRelativeHeight")(SeparatorLineRelativeHeight)
-    __obj.updateDynamic("SeparatorLineStyle")(SeparatorLineStyle)
-    __obj.updateDynamic("SeparatorLineVerticalAlignment")(SeparatorLineVerticalAlignment)
-    __obj.updateDynamic("SeparatorLineWidth")(SeparatorLineWidth)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColumnCount")(getColumnCount)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getReferenceValue")(getReferenceValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setColumnCount")(setColumnCount)
-    __obj.updateDynamic("setColumns")(setColumns)
+    val __obj = js.Dynamic.literal(AutomaticDistance = AutomaticDistance, ColumnCount = ColumnCount, Columns = Columns, IsAutomatic = IsAutomatic, ReferenceValue = ReferenceValue, SeparatorLineColor = SeparatorLineColor, SeparatorLineIsOn = SeparatorLineIsOn, SeparatorLineRelativeHeight = SeparatorLineRelativeHeight, SeparatorLineStyle = SeparatorLineStyle, SeparatorLineVerticalAlignment = SeparatorLineVerticalAlignment, SeparatorLineWidth = SeparatorLineWidth, acquire = acquire, getColumnCount = getColumnCount, getColumns = getColumns, getReferenceValue = getReferenceValue, queryInterface = queryInterface, release = release, setColumnCount = setColumnCount, setColumns = setColumns)
+  
     __obj.asInstanceOf[TextColumns]
   }
 }

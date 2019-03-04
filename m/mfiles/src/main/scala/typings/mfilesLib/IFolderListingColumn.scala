@@ -26,14 +26,8 @@ object IFolderListingColumn {
     Visible: scala.Boolean,
     Width: scala.Double
   ): IFolderListingColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Visible")(Visible)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(Clone = Clone, Flags = Flags, ID = ID, Name = Name, Position = Position, Visible = Visible, Width = Width)
+  
     __obj.asInstanceOf[IFolderListingColumn]
   }
 }

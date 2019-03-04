@@ -30,12 +30,8 @@ object RawDraftContentBlock {
     `type`: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftBlockType,
     data: js.Object = null
   ): RawDraftContentBlock = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("entityRanges")(entityRanges)
-    __obj.updateDynamic("inlineStyleRanges")(inlineStyleRanges)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(depth = depth, entityRanges = entityRanges, inlineStyleRanges = inlineStyleRanges, key = key, text = text)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[RawDraftContentBlock]
   }

@@ -19,8 +19,7 @@ object InputTextMessageContent {
     disable_web_page_preview: js.UndefOr[scala.Boolean] = js.undefined,
     parse_mode: ParseMode = null
   ): InputTextMessageContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message_text")(message_text)
+    val __obj = js.Dynamic.literal(message_text = message_text)
     if (!js.isUndefined(disable_web_page_preview)) __obj.updateDynamic("disable_web_page_preview")(disable_web_page_preview)
     if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode)
     __obj.asInstanceOf[InputTextMessageContent]

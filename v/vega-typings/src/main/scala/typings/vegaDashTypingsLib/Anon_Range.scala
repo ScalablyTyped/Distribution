@@ -13,8 +13,8 @@ trait Anon_Range
 object Anon_Range {
   @scala.inline
   def apply(range: scala.Double | scala.Boolean): Anon_Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Range]
   }
 }

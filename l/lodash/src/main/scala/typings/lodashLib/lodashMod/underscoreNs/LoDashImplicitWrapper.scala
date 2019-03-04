@@ -229,7 +229,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.compact
     */
   @JSName("compact")
-  def `compact_`[T](
+  def compact_[T](
     `this`: LoDashImplicitWrapper[
       js.UndefOr[
         (List[
@@ -2450,7 +2450,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.partial
     */
-  def partial[T1, T2, R](`this`: LoDashImplicitWrapper[Function2[T1, T2, R]], plc1: `__`, arg2: T2): LoDashImplicitWrapper[Function1[T1, R]] = js.native
+  def partial[T1, T2, R](`this`: LoDashImplicitWrapper[Function2[T1, T2, R]], plc1: __, arg2: T2): LoDashImplicitWrapper[Function1[T1, R]] = js.native
   /**
     * @see _.partial
     */
@@ -2458,15 +2458,15 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: `__`, arg3: T3): LoDashImplicitWrapper[Function1[T2, R]] = js.native
+  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: __, arg3: T3): LoDashImplicitWrapper[Function1[T2, R]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: `__`, arg2: T2, arg3: T3): LoDashImplicitWrapper[Function1[T1, R]] = js.native
+  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: __, arg2: T2, arg3: T3): LoDashImplicitWrapper[Function1[T1, R]] = js.native
   /**
     * @see _.partial
     */
-  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: `__`, plc2: `__`, arg3: T3): LoDashImplicitWrapper[Function2[T1, T2, R]] = js.native
+  def partial[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: __, plc2: __, arg3: T3): LoDashImplicitWrapper[Function2[T1, T2, R]] = js.native
   /**
     * @see _.partial
     */
@@ -2484,7 +2484,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
     arg2: T2,
-    plc3: `__`,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function1[T3, R]] = js.native
   /**
@@ -2493,7 +2493,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
+    plc2: __,
     arg3: T3,
     arg4: T4
   ): LoDashImplicitWrapper[Function1[T2, R]] = js.native
@@ -2503,8 +2503,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
-    plc3: `__`,
+    plc2: __,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function2[T2, T3, R]] = js.native
   /**
@@ -2512,7 +2512,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
-    plc1: `__`,
+    plc1: __,
     arg2: T2,
     arg3: T3,
     arg4: T4
@@ -2522,9 +2522,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
-    plc1: `__`,
+    plc1: __,
     arg2: T2,
-    plc3: `__`,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
   /**
@@ -2532,8 +2532,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
-    plc1: `__`,
-    plc2: `__`,
+    plc1: __,
+    plc2: __,
     arg3: T3,
     arg4: T4
   ): LoDashImplicitWrapper[Function2[T1, T2, R]] = js.native
@@ -2542,9 +2542,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def partial[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
-    plc1: `__`,
-    plc2: `__`,
-    plc3: `__`,
+    plc1: __,
+    plc2: __,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function3[T1, T2, T3, R]] = js.native
   // catch-all
@@ -2568,7 +2568,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, R](`this`: LoDashImplicitWrapper[Function2[T1, T2, R]], arg1: T1, plc2: `__`): LoDashImplicitWrapper[Function1[T2, R]] = js.native
+  def partialRight[T1, T2, R](`this`: LoDashImplicitWrapper[Function2[T1, T2, R]], arg1: T1, plc2: __): LoDashImplicitWrapper[Function1[T2, R]] = js.native
   /**
     * @see _.partialRight
     */
@@ -2576,15 +2576,15 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, arg2: T2, plc3: `__`): LoDashImplicitWrapper[Function1[T3, R]] = js.native
+  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, arg2: T2, plc3: __): LoDashImplicitWrapper[Function1[T3, R]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: `__`, arg3: T3): LoDashImplicitWrapper[Function1[T2, R]] = js.native
+  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: __, arg3: T3): LoDashImplicitWrapper[Function1[T2, R]] = js.native
   /**
     * @see _.partialRight
     */
-  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: `__`, plc3: `__`): LoDashImplicitWrapper[Function2[T2, T3, R]] = js.native
+  def partialRight[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg1: T1, plc2: __, plc3: __): LoDashImplicitWrapper[Function2[T2, T3, R]] = js.native
   /**
     * @see _.partialRight
     */
@@ -2603,7 +2603,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     arg1: T1,
     arg2: T2,
     arg3: T3,
-    plc4: `__`
+    plc4: __
   ): LoDashImplicitWrapper[Function1[T4, R]] = js.native
   /**
     * @see _.partialRight
@@ -2612,7 +2612,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
     arg2: T2,
-    plc3: `__`,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function1[T3, R]] = js.native
   /**
@@ -2622,8 +2622,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
     arg2: T2,
-    plc3: `__`,
-    plc4: `__`
+    plc3: __,
+    plc4: __
   ): LoDashImplicitWrapper[Function2[T3, T4, R]] = js.native
   /**
     * @see _.partialRight
@@ -2631,7 +2631,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partialRight[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
+    plc2: __,
     arg3: T3,
     arg4: T4
   ): LoDashImplicitWrapper[Function1[T2, R]] = js.native
@@ -2641,9 +2641,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partialRight[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
+    plc2: __,
     arg3: T3,
-    plc4: `__`
+    plc4: __
   ): LoDashImplicitWrapper[Function2[T2, T4, R]] = js.native
   /**
     * @see _.partialRight
@@ -2651,8 +2651,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partialRight[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
-    plc3: `__`,
+    plc2: __,
+    plc3: __,
     arg4: T4
   ): LoDashImplicitWrapper[Function2[T2, T3, R]] = js.native
   /**
@@ -2661,9 +2661,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def partialRight[T1, T2, T3, T4, R](
     `this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]],
     arg1: T1,
-    plc2: `__`,
-    plc3: `__`,
-    plc4: `__`
+    plc2: __,
+    plc3: __,
+    plc4: __
   ): LoDashImplicitWrapper[Function3[T2, T3, T4, R]] = js.native
   // arity 1
   /**
@@ -2697,7 +2697,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T2T3R[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg2: T2, plc3: `__`): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
+  def partialRight_T1T2T3R[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], arg2: T2, plc3: __): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
   /**
     * @see _.partialRight
     */
@@ -2718,17 +2718,17 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, arg3: T3, plc4: `__`): LoDashImplicitWrapper[Function2[T1, T4, R]] = js.native
+  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, arg3: T3, plc4: __): LoDashImplicitWrapper[Function2[T1, T4, R]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, plc3: `__`, arg4: T4): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
+  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, plc3: __, arg4: T4): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
   /**
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, plc3: `__`, plc4: `__`): LoDashImplicitWrapper[Function3[T1, T3, T4, R]] = js.native
+  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg2: T2, plc3: __, plc4: __): LoDashImplicitWrapper[Function3[T1, T3, T4, R]] = js.native
   /**
     * @see _.partialRight
     */
@@ -2738,7 +2738,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.partialRight
     */
   @JSName("partialRight")
-  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg3: T3, plc4: `__`): LoDashImplicitWrapper[Function3[T1, T2, T4, R]] = js.native
+  def partialRight_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg3: T3, plc4: __): LoDashImplicitWrapper[Function3[T1, T2, T4, R]] = js.native
   /**
     * @see _.partialRight
     */
@@ -2781,7 +2781,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.partial
     */
   @JSName("partial")
-  def partial_T1T2T3R[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: `__`, arg2: T2): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
+  def partial_T1T2T3R[T1, T2, T3, R](`this`: LoDashImplicitWrapper[Function3[T1, T2, T3, R]], plc1: __, arg2: T2): LoDashImplicitWrapper[Function2[T1, T3, R]] = js.native
   // arity 4
   /**
     * @see _.partial
@@ -2807,22 +2807,22 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.partial
     */
   @JSName("partial")
-  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg1: T1, plc2: `__`, arg3: T3): LoDashImplicitWrapper[Function2[T2, T4, R]] = js.native
+  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], arg1: T1, plc2: __, arg3: T3): LoDashImplicitWrapper[Function2[T2, T4, R]] = js.native
   /**
     * @see _.partial
     */
   @JSName("partial")
-  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: `__`, arg2: T2): LoDashImplicitWrapper[Function3[T1, T3, T4, R]] = js.native
+  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: __, arg2: T2): LoDashImplicitWrapper[Function3[T1, T3, T4, R]] = js.native
   /**
     * @see _.partial
     */
   @JSName("partial")
-  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: `__`, arg2: T2, arg3: T3): LoDashImplicitWrapper[Function2[T1, T4, R]] = js.native
+  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: __, arg2: T2, arg3: T3): LoDashImplicitWrapper[Function2[T1, T4, R]] = js.native
   /**
     * @see _.partial
     */
   @JSName("partial")
-  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: `__`, plc2: `__`, arg3: T3): LoDashImplicitWrapper[Function3[T1, T2, T4, R]] = js.native
+  def partial_T1T2T3T4R[T1, T2, T3, T4, R](`this`: LoDashImplicitWrapper[Function4[T1, T2, T3, T4, R]], plc1: __, plc2: __, arg3: T3): LoDashImplicitWrapper[Function3[T1, T2, T4, R]] = js.native
   /**
     * @see _.partition
     */

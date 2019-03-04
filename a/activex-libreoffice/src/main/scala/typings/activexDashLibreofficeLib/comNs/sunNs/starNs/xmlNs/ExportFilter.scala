@@ -42,19 +42,8 @@ object ExportFilter {
       scala.Unit
     ]
   ): ExportFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("exporter")(exporter)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startElement")(startElement)
+    val __obj = js.Dynamic.literal(acquire = acquire, characters = characters, endDocument = endDocument, endElement = endElement, exporter = exporter, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, startDocument = startDocument, startElement = startElement)
+  
     __obj.asInstanceOf[ExportFilter]
   }
 }

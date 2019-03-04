@@ -36,19 +36,8 @@ object IVaultProperties {
     SeparateLocationForFileData: IAdditionalFolders,
     VaultGUID: java.lang.String
   ): IVaultProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DisplayName")(DisplayName)
-    __obj.updateDynamic("EncryptionOfFileDataAtRest")(EncryptionOfFileDataAtRest)
-    __obj.updateDynamic("ExtendedMetadataDrivenPermissions")(ExtendedMetadataDrivenPermissions)
-    __obj.updateDynamic("FileDataConnectionString")(FileDataConnectionString)
-    __obj.updateDynamic("FileDataStorageType")(FileDataStorageType)
-    __obj.updateDynamic("FullTextSearchLanguage")(FullTextSearchLanguage)
-    __obj.updateDynamic("Icon")(Icon)
-    __obj.updateDynamic("MainDataFolder")(MainDataFolder)
-    __obj.updateDynamic("SQLDatabase")(SQLDatabase)
-    __obj.updateDynamic("SeparateLocationForFileData")(SeparateLocationForFileData)
-    __obj.updateDynamic("VaultGUID")(VaultGUID)
+    val __obj = js.Dynamic.literal(Clone = Clone, DisplayName = DisplayName, EncryptionOfFileDataAtRest = EncryptionOfFileDataAtRest, ExtendedMetadataDrivenPermissions = ExtendedMetadataDrivenPermissions, FileDataConnectionString = FileDataConnectionString, FileDataStorageType = FileDataStorageType, FullTextSearchLanguage = FullTextSearchLanguage, Icon = Icon, MainDataFolder = MainDataFolder, SQLDatabase = SQLDatabase, SeparateLocationForFileData = SeparateLocationForFileData, VaultGUID = VaultGUID)
+  
     __obj.asInstanceOf[IVaultProperties]
   }
 }

@@ -13,9 +13,8 @@ trait ScandalResult extends js.Object {
 object ScandalResult {
   @scala.inline
   def apply(filePath: java.lang.String, matches: js.Array[atomLib.Anon_LeadingContextLines]): ScandalResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filePath")(filePath)
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(filePath = filePath, matches = matches)
+  
     __obj.asInstanceOf[ScandalResult]
   }
 }

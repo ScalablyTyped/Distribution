@@ -42,8 +42,7 @@ object PatchParameters {
     updateViewedData: js.UndefOr[scala.Boolean] = js.undefined,
     useContentAsIndexableText: js.UndefOr[scala.Boolean] = js.undefined
   ): PatchParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (!js.isUndefined(convert)) __obj.updateDynamic("convert")(convert)
     if (modifiedDateBehavior != null) __obj.updateDynamic("modifiedDateBehavior")(modifiedDateBehavior)
     if (!js.isUndefined(newRevision)) __obj.updateDynamic("newRevision")(newRevision)

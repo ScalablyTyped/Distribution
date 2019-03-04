@@ -57,9 +57,7 @@ object Anon_AltCustomerIdDate {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCustomerIdDate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("userKey")(userKey)
+    val __obj = js.Dynamic.literal(date = date, userKey = userKey)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (customerId != null) __obj.updateDynamic("customerId")(customerId)
     if (fields != null) __obj.updateDynamic("fields")(fields)

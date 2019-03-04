@@ -18,10 +18,8 @@ trait PackResult[T] extends js.Object {
 object PackResult {
   @scala.inline
   def apply[T](height: scala.Double, items: js.Array[PackedItem[T]], width: scala.Double): PackResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, items = items, width = width)
+  
     __obj.asInstanceOf[PackResult[T]]
   }
 }

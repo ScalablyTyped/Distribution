@@ -30,16 +30,8 @@ object IStateTransitionForClient {
     SelectableFlagAffectedByPseudoUsers: scala.Boolean,
     ToState: scala.Double
   ): IStateTransitionForClient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("FromState")(FromState)
-    __obj.updateDynamic("GetAsLookup")(GetAsLookup)
-    __obj.updateDynamic("GetAsTypedValue")(GetAsTypedValue)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Selectable")(Selectable)
-    __obj.updateDynamic("SelectableFlagAffectedByPseudoUsers")(SelectableFlagAffectedByPseudoUsers)
-    __obj.updateDynamic("ToState")(ToState)
+    val __obj = js.Dynamic.literal(Clone = Clone, FromState = FromState, GetAsLookup = GetAsLookup, GetAsTypedValue = GetAsTypedValue, ID = ID, Name = Name, Selectable = Selectable, SelectableFlagAffectedByPseudoUsers = SelectableFlagAffectedByPseudoUsers, ToState = ToState)
+  
     __obj.asInstanceOf[IStateTransitionForClient]
   }
 }

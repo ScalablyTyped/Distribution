@@ -30,16 +30,8 @@ object SubscriptionProperties {
     MessageCount: scala.Double,
     RequiresSession: scala.Boolean
   ): SubscriptionProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoDeleteOnIdle")(AutoDeleteOnIdle)
-    __obj.updateDynamic("DeadLetteringOnFilterEvaluationExceptions")(DeadLetteringOnFilterEvaluationExceptions)
-    __obj.updateDynamic("DeadLetteringOnMessageExpiration")(DeadLetteringOnMessageExpiration)
-    __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive)
-    __obj.updateDynamic("EnableBatchedOperations")(EnableBatchedOperations)
-    __obj.updateDynamic("LockDuration")(LockDuration)
-    __obj.updateDynamic("MaxDeliveryCount")(MaxDeliveryCount)
-    __obj.updateDynamic("MessageCount")(MessageCount)
-    __obj.updateDynamic("RequiresSession")(RequiresSession)
+    val __obj = js.Dynamic.literal(AutoDeleteOnIdle = AutoDeleteOnIdle, DeadLetteringOnFilterEvaluationExceptions = DeadLetteringOnFilterEvaluationExceptions, DeadLetteringOnMessageExpiration = DeadLetteringOnMessageExpiration, DefaultMessageTimeToLive = DefaultMessageTimeToLive, EnableBatchedOperations = EnableBatchedOperations, LockDuration = LockDuration, MaxDeliveryCount = MaxDeliveryCount, MessageCount = MessageCount, RequiresSession = RequiresSession)
+  
     __obj.asInstanceOf[SubscriptionProperties]
   }
 }

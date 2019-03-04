@@ -18,10 +18,8 @@ object Anon_Date {
     encodeIso8601: js.Function1[stdLib.Date, java.lang.String],
     setOpts: js.Function1[xmlrpcLib.xmlrpcMod.DateFormatterOptions, scala.Unit]
   ): Anon_Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decodeIso8601")(decodeIso8601)
-    __obj.updateDynamic("encodeIso8601")(encodeIso8601)
-    __obj.updateDynamic("setOpts")(setOpts)
+    val __obj = js.Dynamic.literal(decodeIso8601 = decodeIso8601, encodeIso8601 = encodeIso8601, setOpts = setOpts)
+  
     __obj.asInstanceOf[Anon_Date]
   }
 }

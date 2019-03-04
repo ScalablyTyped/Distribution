@@ -42,13 +42,8 @@ object ReportingWorkItemRevisionsFilter {
     includeTagRef: scala.Boolean,
     types: js.Array[java.lang.String]
   ): ReportingWorkItemRevisionsFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("includeDeleted")(includeDeleted)
-    __obj.updateDynamic("includeIdentityRef")(includeIdentityRef)
-    __obj.updateDynamic("includeLatestOnly")(includeLatestOnly)
-    __obj.updateDynamic("includeTagRef")(includeTagRef)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(fields = fields, includeDeleted = includeDeleted, includeIdentityRef = includeIdentityRef, includeLatestOnly = includeLatestOnly, includeTagRef = includeTagRef, types = types)
+  
     __obj.asInstanceOf[ReportingWorkItemRevisionsFilter]
   }
 }

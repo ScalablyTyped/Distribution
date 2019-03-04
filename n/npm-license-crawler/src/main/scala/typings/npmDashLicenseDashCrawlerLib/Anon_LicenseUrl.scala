@@ -20,11 +20,8 @@ object Anon_LicenseUrl {
     parents: java.lang.String,
     repository: java.lang.String
   ): Anon_LicenseUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("licenseUrl")(licenseUrl)
-    __obj.updateDynamic("licenses")(licenses)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(licenseUrl = licenseUrl, licenses = licenses, parents = parents, repository = repository)
+  
     __obj.asInstanceOf[Anon_LicenseUrl]
   }
 }

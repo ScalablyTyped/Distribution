@@ -30,12 +30,8 @@ object AccountsResource {
     ],
     reports: ReportsResource
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adclients")(adclients)
-    __obj.updateDynamic("adunits")(adunits)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("reports")(reports)
+    val __obj = js.Dynamic.literal(adclients = adclients, adunits = adunits, get = get, list = list, reports = reports)
+  
     __obj.asInstanceOf[AccountsResource]
   }
 }

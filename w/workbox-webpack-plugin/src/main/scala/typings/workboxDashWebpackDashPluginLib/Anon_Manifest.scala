@@ -16,8 +16,7 @@ object Anon_Manifest {
     manifest: js.Array[workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ManifestEntry],
     warnings: js.Array[java.lang.String] = null
   ): Anon_Manifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manifest")(manifest)
+    val __obj = js.Dynamic.literal(manifest = manifest)
     if (warnings != null) __obj.updateDynamic("warnings")(warnings)
     __obj.asInstanceOf[Anon_Manifest]
   }

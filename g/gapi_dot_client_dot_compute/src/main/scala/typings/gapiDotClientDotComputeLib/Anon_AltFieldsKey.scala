@@ -54,9 +54,7 @@ object Anon_AltFieldsKey {
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(project = project, region = region)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

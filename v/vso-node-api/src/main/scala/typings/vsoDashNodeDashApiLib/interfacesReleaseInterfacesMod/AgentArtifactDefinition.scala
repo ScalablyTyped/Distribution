@@ -22,12 +22,8 @@ object AgentArtifactDefinition {
     name: java.lang.String,
     version: java.lang.String
   ): AgentArtifactDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(alias = alias, artifactType = artifactType, details = details, name = name, version = version)
+  
     __obj.asInstanceOf[AgentArtifactDefinition]
   }
 }

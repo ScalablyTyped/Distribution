@@ -24,8 +24,7 @@ object OptionsString {
       java.lang.String
     ] = null
   ): OptionsString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(hash = hash)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(empty)) __obj.updateDynamic("empty")(empty)
     if (serializer != null) __obj.updateDynamic("serializer")(serializer)

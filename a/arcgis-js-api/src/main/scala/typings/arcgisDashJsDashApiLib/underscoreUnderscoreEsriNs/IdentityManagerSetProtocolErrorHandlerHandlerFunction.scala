@@ -30,12 +30,8 @@ object IdentityManagerSetProtocolErrorHandlerHandlerFunction {
     resourceUrl: java.lang.String,
     serverInfo: ServerInfo
   ): IdentityManagerSetProtocolErrorHandlerHandlerFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("resourceUrl")(resourceUrl)
-    __obj.updateDynamic("serverInfo")(serverInfo)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, resourceUrl = resourceUrl, serverInfo = serverInfo)
+  
     __obj.asInstanceOf[IdentityManagerSetProtocolErrorHandlerHandlerFunction]
   }
 }

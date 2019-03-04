@@ -295,8 +295,7 @@ object ProgressMeterWithTextProps {
     FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
     HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null
   ): ProgressMeterWithTextProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     __obj.asInstanceOf[ProgressMeterWithTextProps]

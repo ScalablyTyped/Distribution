@@ -42,21 +42,7 @@ object Milestone {
     url: java.lang.String,
     closed_at: stdLib.Date = null
   ): Milestone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed_issues")(closed_issues)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("creator")(creator)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("due_on")(due_on)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("labels_url")(labels_url)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("open_issues")(open_issues)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(closed_issues = closed_issues, created_at = created_at, creator = creator, description = description, due_on = due_on, html_url = html_url, id = id, labels_url = labels_url, number = number, open_issues = open_issues, state = state.asInstanceOf[js.Any], title = title, updated_at = updated_at, url = url)
     if (closed_at != null) __obj.updateDynamic("closed_at")(closed_at)
     __obj.asInstanceOf[Milestone]
   }

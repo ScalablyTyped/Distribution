@@ -51,8 +51,7 @@ object IRadioGroupProps {
     options: js.Array[atBlueprintjsCoreLib.libEsmCommonPropsMod.IOptionProps] = null,
     selectedValue: java.lang.String | scala.Double = null
   ): IRadioGroupProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(onChange = onChange)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)

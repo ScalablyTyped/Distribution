@@ -32,17 +32,8 @@ object FontChar {
     y: scala.Double,
     yoffset: scala.Double
   ): FontChar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chnl")(chnl)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("page")(page)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xadvance")(xadvance)
-    __obj.updateDynamic("xoffset")(xoffset)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yoffset")(yoffset)
+    val __obj = js.Dynamic.literal(chnl = chnl, height = height, id = id, page = page, width = width, x = x, xadvance = xadvance, xoffset = xoffset, y = y, yoffset = yoffset)
+  
     __obj.asInstanceOf[FontChar]
   }
 }

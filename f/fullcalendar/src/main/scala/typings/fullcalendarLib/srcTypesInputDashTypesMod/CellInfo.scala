@@ -22,12 +22,8 @@ object CellInfo {
     moreEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery,
     segs: js.Array[EventSegment]
   ): CellInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dayEl")(dayEl)
-    __obj.updateDynamic("hiddenSegs")(hiddenSegs)
-    __obj.updateDynamic("moreEl")(moreEl)
-    __obj.updateDynamic("segs")(segs)
+    val __obj = js.Dynamic.literal(date = date, dayEl = dayEl, hiddenSegs = hiddenSegs, moreEl = moreEl, segs = segs)
+  
     __obj.asInstanceOf[CellInfo]
   }
 }

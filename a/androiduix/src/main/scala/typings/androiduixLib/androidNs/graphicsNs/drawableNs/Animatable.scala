@@ -18,10 +18,8 @@ object Animatable {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): Animatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isRunning")(isRunning)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(isRunning = isRunning, start = start, stop = stop)
+  
     __obj.asInstanceOf[Animatable]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Dir extends js.Object {
 object Anon_Dir {
   @scala.inline
   def apply(dir: jszipLib.jszipLibNumbers.`true`): Anon_Dir = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
+    val __obj = js.Dynamic.literal(dir = dir)
+  
     __obj.asInstanceOf[Anon_Dir]
   }
 }

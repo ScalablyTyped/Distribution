@@ -12,8 +12,8 @@ trait PublishResponse extends js.Object {
 object PublishResponse {
   @scala.inline
   def apply(timetoken: scala.Double): PublishResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timetoken")(timetoken)
+    val __obj = js.Dynamic.literal(timetoken = timetoken)
+  
     __obj.asInstanceOf[PublishResponse]
   }
 }

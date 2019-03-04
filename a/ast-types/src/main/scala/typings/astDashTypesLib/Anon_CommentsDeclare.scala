@@ -24,9 +24,7 @@ object Anon_CommentsDeclare {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_CommentsDeclare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(id = id, typeAnnotation = typeAnnotation)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (loc != null) __obj.updateDynamic("loc")(loc)

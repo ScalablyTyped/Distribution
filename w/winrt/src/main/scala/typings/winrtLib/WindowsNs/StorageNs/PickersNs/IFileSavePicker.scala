@@ -40,17 +40,8 @@ object IFileSavePicker {
     suggestedSaveFile: winrtLib.WindowsNs.StorageNs.StorageFile,
     suggestedStartLocation: PickerLocationId
   ): IFileSavePicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitButtonText")(commitButtonText)
-    __obj.updateDynamic("continuationData")(continuationData)
-    __obj.updateDynamic("defaultFileExtension")(defaultFileExtension)
-    __obj.updateDynamic("fileTypeChoices")(fileTypeChoices)
-    __obj.updateDynamic("pickSaveFileAndContinue")(pickSaveFileAndContinue)
-    __obj.updateDynamic("pickSaveFileAsync")(pickSaveFileAsync)
-    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
-    __obj.updateDynamic("suggestedFileName")(suggestedFileName)
-    __obj.updateDynamic("suggestedSaveFile")(suggestedSaveFile)
-    __obj.updateDynamic("suggestedStartLocation")(suggestedStartLocation)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, defaultFileExtension = defaultFileExtension, fileTypeChoices = fileTypeChoices, pickSaveFileAndContinue = pickSaveFileAndContinue, pickSaveFileAsync = pickSaveFileAsync, settingsIdentifier = settingsIdentifier, suggestedFileName = suggestedFileName, suggestedSaveFile = suggestedSaveFile, suggestedStartLocation = suggestedStartLocation)
+  
     __obj.asInstanceOf[IFileSavePicker]
   }
 }

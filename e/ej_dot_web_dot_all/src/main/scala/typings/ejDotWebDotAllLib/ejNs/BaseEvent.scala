@@ -13,8 +13,8 @@ trait BaseEvent extends js.Object {
 object BaseEvent {
   @scala.inline
   def apply(cancel: scala.Boolean, `type`: java.lang.String): BaseEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BaseEvent]
   }
 }

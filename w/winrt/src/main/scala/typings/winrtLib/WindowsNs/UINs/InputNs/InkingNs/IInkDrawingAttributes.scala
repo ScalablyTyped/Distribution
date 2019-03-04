@@ -22,12 +22,8 @@ object IInkDrawingAttributes {
     penTip: PenTipShape,
     size: winrtLib.WindowsNs.FoundationNs.Size
   ): IInkDrawingAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("fitToCurve")(fitToCurve)
-    __obj.updateDynamic("ignorePressure")(ignorePressure)
-    __obj.updateDynamic("penTip")(penTip)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(color = color, fitToCurve = fitToCurve, ignorePressure = ignorePressure, penTip = penTip, size = size)
+  
     __obj.asInstanceOf[IInkDrawingAttributes]
   }
 }

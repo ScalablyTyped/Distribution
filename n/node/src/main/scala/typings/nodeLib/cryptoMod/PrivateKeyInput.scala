@@ -22,8 +22,7 @@ object PrivateKeyInput {
     passphrase: java.lang.String | nodeLib.Buffer = null,
     `type`: nodeLib.nodeLibStrings.pkcs1 | nodeLib.nodeLibStrings.pkcs8 | nodeLib.nodeLibStrings.sec1 = null
   ): PrivateKeyInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

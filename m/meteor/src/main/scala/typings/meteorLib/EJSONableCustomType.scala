@@ -22,9 +22,7 @@ object EJSONableCustomType {
     clone: js.Function0[EJSONableCustomType] = null,
     equals: js.Function1[/* other */ js.Object, scala.Boolean] = null
   ): EJSONableCustomType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSONValue")(toJSONValue)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(toJSONValue = toJSONValue, typeName = typeName)
     if (clone != null) __obj.updateDynamic("clone")(clone)
     if (equals != null) __obj.updateDynamic("equals")(equals)
     __obj.asInstanceOf[EJSONableCustomType]

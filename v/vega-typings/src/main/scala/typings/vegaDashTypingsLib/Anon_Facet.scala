@@ -12,8 +12,8 @@ trait Anon_Facet extends js.Object {
 object Anon_Facet {
   @scala.inline
   def apply(facet: vegaDashTypingsLib.typesSpecMarkMod.Facet): Anon_Facet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("facet")(facet)
+    val __obj = js.Dynamic.literal(facet = facet)
+  
     __obj.asInstanceOf[Anon_Facet]
   }
 }

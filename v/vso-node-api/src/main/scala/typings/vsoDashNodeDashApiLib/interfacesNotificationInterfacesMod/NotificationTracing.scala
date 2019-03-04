@@ -33,12 +33,8 @@ object NotificationTracing {
     startDate: stdLib.Date,
     tracedEntries: scala.Double
   ): NotificationTracing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("maxTracedEntries")(maxTracedEntries)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("tracedEntries")(tracedEntries)
+    val __obj = js.Dynamic.literal(enabled = enabled, endDate = endDate, maxTracedEntries = maxTracedEntries, startDate = startDate, tracedEntries = tracedEntries)
+  
     __obj.asInstanceOf[NotificationTracing]
   }
 }

@@ -30,12 +30,8 @@ object urlUtilsAddProxyRuleRule {
     proxyUrl: java.lang.String,
     urlPrefix: java.lang.String
   ): urlUtilsAddProxyRuleRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("proxyUrl")(proxyUrl)
-    __obj.updateDynamic("urlPrefix")(urlPrefix)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, proxyUrl = proxyUrl, urlPrefix = urlPrefix)
+  
     __obj.asInstanceOf[urlUtilsAddProxyRuleRule]
   }
 }

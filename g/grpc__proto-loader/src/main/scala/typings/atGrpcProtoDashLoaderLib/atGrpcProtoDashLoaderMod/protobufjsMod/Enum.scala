@@ -21,8 +21,8 @@ object Enum {
       ]) with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify descriptor.IEnumDescriptorProto */ js.Any)
     ]
   ): Enum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toDescriptor")(toDescriptor)
+    val __obj = js.Dynamic.literal(toDescriptor = toDescriptor)
+  
     __obj.asInstanceOf[Enum]
   }
 }

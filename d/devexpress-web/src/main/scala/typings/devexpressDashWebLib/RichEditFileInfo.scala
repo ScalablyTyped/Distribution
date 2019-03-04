@@ -29,10 +29,8 @@ trait RichEditFileInfo extends js.Object {
 object RichEditFileInfo {
   @scala.inline
   def apply(documentFormat: js.Any, fileName: java.lang.String, folderPath: java.lang.String): RichEditFileInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("documentFormat")(documentFormat)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("folderPath")(folderPath)
+    val __obj = js.Dynamic.literal(documentFormat = documentFormat, fileName = fileName, folderPath = folderPath)
+  
     __obj.asInstanceOf[RichEditFileInfo]
   }
 }

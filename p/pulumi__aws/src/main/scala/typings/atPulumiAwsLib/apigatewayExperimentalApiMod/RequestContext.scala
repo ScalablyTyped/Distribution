@@ -28,15 +28,8 @@ object RequestContext {
     resourcePath: java.lang.String,
     stage: java.lang.String
   ): RequestContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("apiId")(apiId)
-    __obj.updateDynamic("httpMethod")(httpMethod)
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("resourceId")(resourceId)
-    __obj.updateDynamic("resourcePath")(resourcePath)
-    __obj.updateDynamic("stage")(stage)
+    val __obj = js.Dynamic.literal(accountId = accountId, apiId = apiId, httpMethod = httpMethod, identity = identity, requestId = requestId, resourceId = resourceId, resourcePath = resourcePath, stage = stage)
+  
     __obj.asInstanceOf[RequestContext]
   }
 }

@@ -20,11 +20,8 @@ object SharedAccessSignatureResult {
     queryString: azureLib.Anon_Se,
     url: js.Function0[java.lang.String]
   ): SharedAccessSignatureResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("baseUrl")(baseUrl)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("queryString")(queryString)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(baseUrl = baseUrl, path = path, queryString = queryString, url = url)
+  
     __obj.asInstanceOf[SharedAccessSignatureResult]
   }
 }

@@ -21,11 +21,8 @@ object FooterRendererContext {
     footerContext: atOracleOraclejetLib.Anon_DatasourceD[K, D],
     parentElement: stdLib.Element
   ): FooterRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnIndex")(columnIndex)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("footerContext")(footerContext)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex, componentElement = componentElement, footerContext = footerContext, parentElement = parentElement)
+  
     __obj.asInstanceOf[FooterRendererContext[K, D]]
   }
 }

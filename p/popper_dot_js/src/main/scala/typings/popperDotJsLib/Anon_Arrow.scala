@@ -18,10 +18,8 @@ object Anon_Arrow {
     popper: popperDotJsLib.popperDotJsMod.PopperNs.Offset,
     reference: popperDotJsLib.popperDotJsMod.PopperNs.Offset
   ): Anon_Arrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrow")(arrow)
-    __obj.updateDynamic("popper")(popper)
-    __obj.updateDynamic("reference")(reference)
+    val __obj = js.Dynamic.literal(arrow = arrow, popper = popper, reference = reference)
+  
     __obj.asInstanceOf[Anon_Arrow]
   }
 }

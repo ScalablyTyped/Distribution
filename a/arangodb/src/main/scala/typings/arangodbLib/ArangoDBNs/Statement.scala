@@ -20,11 +20,8 @@ object Statement {
     getBatchSize: js.Function0[scala.Double],
     setBatchSize: js.Function1[scala.Double, scala.Unit]
   ): Statement[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getBatchSize")(getBatchSize)
-    __obj.updateDynamic("setBatchSize")(setBatchSize)
+    val __obj = js.Dynamic.literal(bind = bind, execute = execute, getBatchSize = getBatchSize, setBatchSize = setBatchSize)
+  
     __obj.asInstanceOf[Statement[T]]
   }
 }

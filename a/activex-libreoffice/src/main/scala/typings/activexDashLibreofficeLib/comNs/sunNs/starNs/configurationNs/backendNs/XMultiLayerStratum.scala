@@ -124,16 +124,8 @@ object XMultiLayerStratum {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMultiLayerStratum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLayer")(getLayer)
-    __obj.updateDynamic("getLayers")(getLayers)
-    __obj.updateDynamic("getMultipleLayers")(getMultipleLayers)
-    __obj.updateDynamic("getUpdatableLayer")(getUpdatableLayer)
-    __obj.updateDynamic("getUpdateLayerId")(getUpdateLayerId)
-    __obj.updateDynamic("listLayerIds")(listLayerIds)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getLayer = getLayer, getLayers = getLayers, getMultipleLayers = getMultipleLayers, getUpdatableLayer = getUpdatableLayer, getUpdateLayerId = getUpdateLayerId, listLayerIds = listLayerIds, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMultiLayerStratum]
   }
 }

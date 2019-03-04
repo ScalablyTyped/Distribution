@@ -22,8 +22,7 @@ object Message {
     success: js.Function1[/* result */ js.Any, scala.Unit] = null,
     timeout: scala.Int | scala.Double = null
   ): Message = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
     if (error != null) __obj.updateDynamic("error")(error)
     if (params != null) __obj.updateDynamic("params")(params)
     if (success != null) __obj.updateDynamic("success")(success)

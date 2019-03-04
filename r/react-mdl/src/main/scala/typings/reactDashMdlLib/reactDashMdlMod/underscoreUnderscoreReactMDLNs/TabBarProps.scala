@@ -28,8 +28,7 @@ object TabBarProps {
     onClick: reactLib.reactMod.ReactNs.MouseEventHandler[TabBar] = null,
     title: java.lang.String = null
   ): TabBarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssPrefix")(cssPrefix)
+    val __obj = js.Dynamic.literal(cssPrefix = cssPrefix)
     js.Dynamic.global.Object.assign(__obj, MDLDOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])

@@ -26,14 +26,8 @@ object Anon_Data {
     Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any,
     Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any
   ): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("DraggableHeader")(DraggableHeader)
-    __obj.updateDynamic("Editors")(Editors)
-    __obj.updateDynamic("Filters")(Filters)
-    __obj.updateDynamic("Formatters")(Formatters)
-    __obj.updateDynamic("Menu")(Menu)
-    __obj.updateDynamic("Toolbar")(Toolbar)
+    val __obj = js.Dynamic.literal(Data = Data, DraggableHeader = DraggableHeader, Editors = Editors, Filters = Filters, Formatters = Formatters, Menu = Menu, Toolbar = Toolbar)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

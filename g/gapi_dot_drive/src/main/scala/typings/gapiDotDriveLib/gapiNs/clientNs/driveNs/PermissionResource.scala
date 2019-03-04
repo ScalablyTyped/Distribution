@@ -46,23 +46,8 @@ object PermissionResource {
     value: java.lang.String,
     withLink: scala.Boolean
   ): PermissionResource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("additionalRoles")(additionalRoles)
-    __obj.updateDynamic("authKey")(authKey)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("emailAddress")(emailAddress)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("photoLink")(photoLink)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("selfLink")(selfLink)
-    __obj.updateDynamic("teamDrivePermissionDetails")(teamDrivePermissionDetails)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("withLink")(withLink)
+    val __obj = js.Dynamic.literal(additionalRoles = additionalRoles, authKey = authKey, deleted = deleted, domain = domain, emailAddress = emailAddress, etag = etag, expirationDate = expirationDate, id = id, kind = kind, name = name, photoLink = photoLink, role = role, selfLink = selfLink, teamDrivePermissionDetails = teamDrivePermissionDetails, value = value, withLink = withLink)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PermissionResource]
   }
 }

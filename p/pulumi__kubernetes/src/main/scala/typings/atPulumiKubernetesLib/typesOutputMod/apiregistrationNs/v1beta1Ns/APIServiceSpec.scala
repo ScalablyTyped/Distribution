@@ -72,14 +72,8 @@ object APIServiceSpec {
     version: java.lang.String,
     versionPriority: scala.Double
   ): APIServiceSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caBundle")(caBundle)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("groupPriorityMinimum")(groupPriorityMinimum)
-    __obj.updateDynamic("insecureSkipTLSVerify")(insecureSkipTLSVerify)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionPriority")(versionPriority)
+    val __obj = js.Dynamic.literal(caBundle = caBundle, group = group, groupPriorityMinimum = groupPriorityMinimum, insecureSkipTLSVerify = insecureSkipTLSVerify, service = service, version = version, versionPriority = versionPriority)
+  
     __obj.asInstanceOf[APIServiceSpec]
   }
 }

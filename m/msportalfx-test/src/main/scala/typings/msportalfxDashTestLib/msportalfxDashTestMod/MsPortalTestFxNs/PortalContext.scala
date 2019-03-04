@@ -28,9 +28,7 @@ object PortalContext {
     signInUrl: java.lang.String = null,
     testExtensions: js.Array[TestExtension] = null
   ): PortalContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capabilities")(capabilities)
-    __obj.updateDynamic("portalUrl")(portalUrl)
+    val __obj = js.Dynamic.literal(capabilities = capabilities, portalUrl = portalUrl)
     if (chromeDriverPath != null) __obj.updateDynamic("chromeDriverPath")(chromeDriverPath)
     if (features != null) __obj.updateDynamic("features")(features)
     if (signInEmail != null) __obj.updateDynamic("signInEmail")(signInEmail)

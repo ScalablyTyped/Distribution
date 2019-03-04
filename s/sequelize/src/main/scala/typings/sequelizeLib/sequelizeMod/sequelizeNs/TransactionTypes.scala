@@ -25,10 +25,8 @@ object TransactionTypes {
     EXCLUSIVE: TransactionTypeExclusive,
     IMMEDIATE: TransactionTypeImmediate
   ): TransactionTypes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFERRED")(DEFERRED)
-    __obj.updateDynamic("EXCLUSIVE")(EXCLUSIVE)
-    __obj.updateDynamic("IMMEDIATE")(IMMEDIATE)
+    val __obj = js.Dynamic.literal(DEFERRED = DEFERRED, EXCLUSIVE = EXCLUSIVE, IMMEDIATE = IMMEDIATE)
+  
     __obj.asInstanceOf[TransactionTypes]
   }
 }

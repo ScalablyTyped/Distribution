@@ -14,10 +14,8 @@ trait Anon_Abusive extends js.Object {
 object Anon_Abusive {
   @scala.inline
   def apply(abusive: scala.Double, general: scala.Double, spam: scala.Double): Anon_Abusive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abusive")(abusive)
-    __obj.updateDynamic("general")(general)
-    __obj.updateDynamic("spam")(spam)
+    val __obj = js.Dynamic.literal(abusive = abusive, general = general, spam = spam)
+  
     __obj.asInstanceOf[Anon_Abusive]
   }
 }

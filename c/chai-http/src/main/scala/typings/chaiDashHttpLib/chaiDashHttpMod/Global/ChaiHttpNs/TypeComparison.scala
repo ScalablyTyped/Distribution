@@ -12,8 +12,8 @@ trait TypeComparison extends js.Object {
 object TypeComparison {
   @scala.inline
   def apply(ip: js.Any): TypeComparison = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ip")(ip)
+    val __obj = js.Dynamic.literal(ip = ip)
+  
     __obj.asInstanceOf[TypeComparison]
   }
 }

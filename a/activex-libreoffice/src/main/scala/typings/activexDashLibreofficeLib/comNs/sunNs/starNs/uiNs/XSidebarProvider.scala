@@ -51,19 +51,8 @@ object XSidebarProvider {
     setVisible: js.Function1[scala.Boolean, scala.Unit],
     showDecks: js.Function1[scala.Boolean, scala.Unit]
   ): XSidebarProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Decks")(Decks)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Sidebar")(Sidebar)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDecks")(getDecks)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getSidebar")(getSidebar)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("showDecks")(showDecks)
+    val __obj = js.Dynamic.literal(Decks = Decks, Frame = Frame, Sidebar = Sidebar, acquire = acquire, getDecks = getDecks, getFrame = getFrame, getSidebar = getSidebar, isVisible = isVisible, queryInterface = queryInterface, release = release, setVisible = setVisible, showDecks = showDecks)
+  
     __obj.asInstanceOf[XSidebarProvider]
   }
 }

@@ -19,8 +19,8 @@ object ISyndicationFeedFactory {
       SyndicationFeed
     ]
   ): ISyndicationFeedFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createSyndicationFeed")(createSyndicationFeed)
+    val __obj = js.Dynamic.literal(createSyndicationFeed = createSyndicationFeed)
+  
     __obj.asInstanceOf[ISyndicationFeedFactory]
   }
 }

@@ -12,8 +12,8 @@ trait TextInputContentSizeChangeEventData extends js.Object {
 object TextInputContentSizeChangeEventData {
   @scala.inline
   def apply(contentSize: reactDashNativeLib.Anon_Height): TextInputContentSizeChangeEventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentSize")(contentSize)
+    val __obj = js.Dynamic.literal(contentSize = contentSize)
+  
     __obj.asInstanceOf[TextInputContentSizeChangeEventData]
   }
 }

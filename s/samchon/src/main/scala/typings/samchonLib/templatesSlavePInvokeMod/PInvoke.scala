@@ -20,15 +20,15 @@ class PInvoke protected ()
   /**
     * @hidden
     */
-  var `history_`: js.Any = js.native
+  var history_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `hold_`: js.Any = js.native
+  var hold_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `slave_system_`: js.Any = js.native
+  var slave_system_ : js.Any = js.native
   /**
     * Report completion.
     */

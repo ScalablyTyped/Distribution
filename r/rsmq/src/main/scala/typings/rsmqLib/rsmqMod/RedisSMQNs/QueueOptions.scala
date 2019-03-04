@@ -19,8 +19,7 @@ object QueueOptions {
     maxsize: scala.Int | scala.Double = null,
     vt: scala.Int | scala.Double = null
   ): QueueOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qname")(qname)
+    val __obj = js.Dynamic.literal(qname = qname)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (maxsize != null) __obj.updateDynamic("maxsize")(maxsize.asInstanceOf[js.Any])
     if (vt != null) __obj.updateDynamic("vt")(vt.asInstanceOf[js.Any])

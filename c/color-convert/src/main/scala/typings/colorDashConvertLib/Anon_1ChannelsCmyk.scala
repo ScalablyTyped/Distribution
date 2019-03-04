@@ -30,16 +30,8 @@ object Anon_1ChannelsCmyk {
     labels: js.Array[colorDashConvertLib.colorDashConvertLibStrings.gray],
     rgb: js.Function1[colorDashConvertLib.conversionsMod.GRAY, colorDashConvertLib.conversionsMod.RGB]
   ): Anon_1ChannelsCmyk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("cmyk")(cmyk)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("hsl")(hsl)
-    __obj.updateDynamic("hsv")(hsv)
-    __obj.updateDynamic("hwb")(hwb)
-    __obj.updateDynamic("lab")(lab)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(channels = channels, cmyk = cmyk, hex = hex, hsl = hsl, hsv = hsv, hwb = hwb, lab = lab, labels = labels, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_1ChannelsCmyk]
   }
 }

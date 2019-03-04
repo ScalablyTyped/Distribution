@@ -14,8 +14,7 @@ trait CellAttributes extends js.Object {
 object CellAttributes {
   @scala.inline
   def apply(default: js.Any, getFromDOM: getFromDOM = null, setDOMAttr: setDOMAttr = null): CellAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
+    val __obj = js.Dynamic.literal(default = default)
     if (getFromDOM != null) __obj.updateDynamic("getFromDOM")(getFromDOM)
     if (setDOMAttr != null) __obj.updateDynamic("setDOMAttr")(setDOMAttr)
     __obj.asInstanceOf[CellAttributes]

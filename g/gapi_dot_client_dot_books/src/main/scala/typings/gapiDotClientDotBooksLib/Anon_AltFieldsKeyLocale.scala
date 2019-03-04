@@ -45,8 +45,7 @@ object Anon_AltFieldsKeyLocale {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notification_id")(notification_id)
+    val __obj = js.Dynamic.literal(notification_id = notification_id)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

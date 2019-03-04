@@ -16,9 +16,8 @@ object Anon_Added {
     added: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact],
     removed: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]
   ): Anon_Added = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("added")(added)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(added = added, removed = removed)
+  
     __obj.asInstanceOf[Anon_Added]
   }
 }

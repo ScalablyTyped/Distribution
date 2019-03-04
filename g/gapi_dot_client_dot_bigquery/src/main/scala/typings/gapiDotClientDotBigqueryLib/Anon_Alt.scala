@@ -45,9 +45,7 @@ object Anon_Alt {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_Alt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datasetId")(datasetId)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(datasetId = datasetId, projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(deleteContents)) __obj.updateDynamic("deleteContents")(deleteContents)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -16,8 +16,7 @@ object WithTheme {
     theme: T,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null
   ): WithTheme[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithTheme[T]]
   }

@@ -25,10 +25,7 @@ object InteractionIdentificationConfig {
     delay: scala.Int | scala.Double = null,
     resetOnInteraction: js.UndefOr[scala.Boolean] = js.undefined
   ): InteractionIdentificationConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("foregroundColor")(foregroundColor)
+    val __obj = js.Dynamic.literal(callback = callback, duration = duration, foregroundColor = foregroundColor)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(resetOnInteraction)) __obj.updateDynamic("resetOnInteraction")(resetOnInteraction)

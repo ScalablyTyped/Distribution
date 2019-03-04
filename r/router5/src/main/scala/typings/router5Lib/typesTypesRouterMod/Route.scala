@@ -44,9 +44,7 @@ object Route {
     ] = null,
     forwardTo: java.lang.String = null
   ): Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(name = name, path = path)
     if (canActivate != null) __obj.updateDynamic("canActivate")(canActivate)
     if (children != null) __obj.updateDynamic("children")(children)
     if (decodeParams != null) __obj.updateDynamic("decodeParams")(decodeParams)

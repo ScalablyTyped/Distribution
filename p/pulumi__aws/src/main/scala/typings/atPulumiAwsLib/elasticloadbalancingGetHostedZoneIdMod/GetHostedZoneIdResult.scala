@@ -15,8 +15,8 @@ trait GetHostedZoneIdResult extends js.Object {
 object GetHostedZoneIdResult {
   @scala.inline
   def apply(id: java.lang.String): GetHostedZoneIdResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[GetHostedZoneIdResult]
   }
 }

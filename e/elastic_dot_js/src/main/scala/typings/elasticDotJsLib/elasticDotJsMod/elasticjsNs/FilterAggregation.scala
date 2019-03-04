@@ -43,12 +43,8 @@ object FilterAggregation {
     filter: js.Function1[Filter, FilterAggregation],
     toJSON: js.Function0[js.Any]
   ): FilterAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, filter = filter, toJSON = toJSON)
+  
     __obj.asInstanceOf[FilterAggregation]
   }
 }

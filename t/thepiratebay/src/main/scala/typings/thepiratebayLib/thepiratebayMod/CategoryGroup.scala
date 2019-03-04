@@ -12,10 +12,8 @@ trait CategoryGroup extends Category {
 object CategoryGroup {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String, subcategories: js.Array[Category]): CategoryGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subcategories")(subcategories)
+    val __obj = js.Dynamic.literal(id = id, name = name, subcategories = subcategories)
+  
     __obj.asInstanceOf[CategoryGroup]
   }
 }

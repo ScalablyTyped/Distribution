@@ -23,8 +23,7 @@ object AccelerometerAnalogOption {
     sensitivity: scala.Int | scala.Double = null,
     zeroV: scala.Double | js.Array[scala.Double] = null
   ): AccelerometerAnalogOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pins")(pins)
+    val __obj = js.Dynamic.literal(pins = pins)
     if (aref != null) __obj.updateDynamic("aref")(aref.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCalibrate)) __obj.updateDynamic("autoCalibrate")(autoCalibrate)
     if (controller != null) __obj.updateDynamic("controller")(controller)

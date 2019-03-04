@@ -37,12 +37,8 @@ object ContactsDic {
     realName: java.lang.String,
     userId: java.lang.String
   ): ContactsDic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatar")(avatar)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("realName")(realName)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(avatar = avatar, displayName = displayName, mobile = mobile, realName = realName, userId = userId)
+  
     __obj.asInstanceOf[ContactsDic]
   }
 }

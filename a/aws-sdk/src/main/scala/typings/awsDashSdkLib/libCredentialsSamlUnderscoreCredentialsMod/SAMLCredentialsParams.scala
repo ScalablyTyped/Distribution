@@ -40,10 +40,7 @@ object SAMLCredentialsParams {
     DurationSeconds: scala.Int | scala.Double = null,
     Policy: java.lang.String = null
   ): SAMLCredentialsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PrincipalArn")(PrincipalArn)
-    __obj.updateDynamic("RoleArn")(RoleArn)
-    __obj.updateDynamic("SAMLAssertion")(SAMLAssertion)
+    val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn, RoleArn = RoleArn, SAMLAssertion = SAMLAssertion)
     if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
     if (Policy != null) __obj.updateDynamic("Policy")(Policy)
     __obj.asInstanceOf[SAMLCredentialsParams]

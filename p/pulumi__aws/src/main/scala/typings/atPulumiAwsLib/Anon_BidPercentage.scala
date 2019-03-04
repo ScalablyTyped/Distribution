@@ -38,13 +38,8 @@ object Anon_BidPercentage {
     spotIamFleetRole: java.lang.String = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_BidPercentage = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("instanceRole")(instanceRole)
-    __obj.updateDynamic("instanceTypes")(instanceTypes)
-    __obj.updateDynamic("maxVcpus")(maxVcpus)
-    __obj.updateDynamic("minVcpus")(minVcpus)
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
-    __obj.updateDynamic("subnets")(subnets)
+    val __obj = js.Dynamic.literal(instanceRole = instanceRole, instanceTypes = instanceTypes, maxVcpus = maxVcpus, minVcpus = minVcpus, securityGroupIds = securityGroupIds, subnets = subnets)
+    __obj.updateDynamic("type")(`type`)
     if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
     if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair)

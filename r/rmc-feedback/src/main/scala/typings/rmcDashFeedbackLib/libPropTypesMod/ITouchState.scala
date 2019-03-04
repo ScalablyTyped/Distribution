@@ -12,8 +12,8 @@ trait ITouchState extends js.Object {
 object ITouchState {
   @scala.inline
   def apply(active: scala.Boolean): ITouchState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal(active = active)
+  
     __obj.asInstanceOf[ITouchState]
   }
 }

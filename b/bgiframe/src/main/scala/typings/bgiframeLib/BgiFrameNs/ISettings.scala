@@ -26,14 +26,8 @@ object ISettings {
     top: java.lang.String,
     width: java.lang.String
   ): ISettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditional")(conditional)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(conditional = conditional, height = height, left = left, opacity = opacity, src = src, top = top, width = width)
+  
     __obj.asInstanceOf[ISettings]
   }
 }

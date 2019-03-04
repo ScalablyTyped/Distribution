@@ -30,12 +30,8 @@ object BuildLog {
     `type`: java.lang.String,
     url: java.lang.String
   ): BuildLog = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("lastChangedOn")(lastChangedOn)
-    __obj.updateDynamic("lineCount")(lineCount)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(createdOn = createdOn, id = id, lastChangedOn = lastChangedOn, lineCount = lineCount, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BuildLog]
   }
 }

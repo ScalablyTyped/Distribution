@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(truncate: js.Function2[java.lang.String, TruncateOptions, java.lang.String]): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("truncate")(truncate)
+    val __obj = js.Dynamic.literal(truncate = truncate)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

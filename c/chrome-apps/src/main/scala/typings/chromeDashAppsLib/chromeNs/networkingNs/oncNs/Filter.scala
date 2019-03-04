@@ -35,8 +35,7 @@ object Filter {
     limit: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("networkType")(networkType)
+    val __obj = js.Dynamic.literal(networkType = networkType)
     if (!js.isUndefined(configured)) __obj.updateDynamic("configured")(configured)
     if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

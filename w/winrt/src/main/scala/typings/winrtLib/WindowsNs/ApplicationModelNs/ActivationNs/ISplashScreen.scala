@@ -13,9 +13,8 @@ trait ISplashScreen extends js.Object {
 object ISplashScreen {
   @scala.inline
   def apply(imageLocation: winrtLib.WindowsNs.FoundationNs.Rect, ondismissed: js.Any): ISplashScreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageLocation")(imageLocation)
-    __obj.updateDynamic("ondismissed")(ondismissed)
+    val __obj = js.Dynamic.literal(imageLocation = imageLocation, ondismissed = ondismissed)
+  
     __obj.asInstanceOf[ISplashScreen]
   }
 }

@@ -42,25 +42,8 @@ object XSheetCondition2 {
     setOperator: js.Function1[ConditionOperator, scala.Unit],
     setSourcePosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Unit]
   ): XSheetCondition2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConditionOperator")(ConditionOperator)
-    __obj.updateDynamic("Formula1")(Formula1)
-    __obj.updateDynamic("Formula2")(Formula2)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("SourcePosition")(SourcePosition)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getConditionOperator")(getConditionOperator)
-    __obj.updateDynamic("getFormula1")(getFormula1)
-    __obj.updateDynamic("getFormula2")(getFormula2)
-    __obj.updateDynamic("getOperator")(getOperator)
-    __obj.updateDynamic("getSourcePosition")(getSourcePosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setConditionOperator")(setConditionOperator)
-    __obj.updateDynamic("setFormula1")(setFormula1)
-    __obj.updateDynamic("setFormula2")(setFormula2)
-    __obj.updateDynamic("setOperator")(setOperator)
-    __obj.updateDynamic("setSourcePosition")(setSourcePosition)
+    val __obj = js.Dynamic.literal(ConditionOperator = ConditionOperator, Formula1 = Formula1, Formula2 = Formula2, Operator = Operator, SourcePosition = SourcePosition, acquire = acquire, getConditionOperator = getConditionOperator, getFormula1 = getFormula1, getFormula2 = getFormula2, getOperator = getOperator, getSourcePosition = getSourcePosition, queryInterface = queryInterface, release = release, setConditionOperator = setConditionOperator, setFormula1 = setFormula1, setFormula2 = setFormula2, setOperator = setOperator, setSourcePosition = setSourcePosition)
+  
     __obj.asInstanceOf[XSheetCondition2]
   }
 }

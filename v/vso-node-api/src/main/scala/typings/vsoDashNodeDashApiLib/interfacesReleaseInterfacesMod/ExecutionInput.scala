@@ -12,8 +12,8 @@ trait ExecutionInput extends js.Object {
 object ExecutionInput {
   @scala.inline
   def apply(parallelExecutionType: ParallelExecutionTypes): ExecutionInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parallelExecutionType")(parallelExecutionType)
+    val __obj = js.Dynamic.literal(parallelExecutionType = parallelExecutionType)
+  
     __obj.asInstanceOf[ExecutionInput]
   }
 }

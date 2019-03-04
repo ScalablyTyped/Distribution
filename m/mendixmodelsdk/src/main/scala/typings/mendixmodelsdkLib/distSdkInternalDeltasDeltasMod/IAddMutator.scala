@@ -18,9 +18,7 @@ object IAddMutator {
     value: PrimitiveValue,
     insertionIndex: scala.Int | scala.Double = null
   ): IAddMutator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mutatorType")(mutatorType)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mutatorType = mutatorType, value = value.asInstanceOf[js.Any])
     if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddMutator]
   }

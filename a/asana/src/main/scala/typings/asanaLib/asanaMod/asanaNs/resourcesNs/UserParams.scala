@@ -12,8 +12,8 @@ trait UserParams extends js.Object {
 object UserParams {
   @scala.inline
   def apply(user: java.lang.String | scala.Double): UserParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[UserParams]
   }
 }

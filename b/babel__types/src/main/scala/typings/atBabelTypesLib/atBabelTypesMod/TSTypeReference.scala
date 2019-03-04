@@ -28,8 +28,8 @@ object TSTypeReference {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TSTypeParameterInstantiation = null
   ): TSTypeReference = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(typeName = typeName)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

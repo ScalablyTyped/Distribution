@@ -19,9 +19,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(parent: java.lang.String, tabs: java.lang.String): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("tabs")(tabs)
+    val __obj = js.Dynamic.literal(parent = parent, tabs = tabs)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

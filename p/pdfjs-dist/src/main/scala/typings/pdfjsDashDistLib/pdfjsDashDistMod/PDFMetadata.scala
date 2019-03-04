@@ -18,10 +18,8 @@ object PDFMetadata {
     has: js.Function1[java.lang.String, scala.Boolean],
     parse: js.Function0[scala.Unit]
   ): PDFMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("parse")(parse)
+    val __obj = js.Dynamic.literal(get = get, has = has, parse = parse)
+  
     __obj.asInstanceOf[PDFMetadata]
   }
 }

@@ -18,10 +18,8 @@ object Anon_Dest {
     slices: scala.Double,
     stacks: scala.Double
   ): Anon_Dest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("func")(func)
-    __obj.updateDynamic("slices")(slices)
-    __obj.updateDynamic("stacks")(stacks)
+    val __obj = js.Dynamic.literal(func = func, slices = slices, stacks = stacks)
+  
     __obj.asInstanceOf[Anon_Dest]
   }
 }

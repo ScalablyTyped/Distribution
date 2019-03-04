@@ -39,10 +39,7 @@ object IGrowlMessage {
     ttl: scala.Int | scala.Double = null,
     variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IGrowlMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(destroy = destroy, setText = setText, text = text)
     if (!js.isUndefined(disableCloseButton)) __obj.updateDynamic("disableCloseButton")(disableCloseButton)
     if (!js.isUndefined(disableCountDown)) __obj.updateDynamic("disableCountDown")(disableCountDown)
     if (!js.isUndefined(disableIcons)) __obj.updateDynamic("disableIcons")(disableIcons)

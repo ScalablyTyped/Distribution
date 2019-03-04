@@ -16,9 +16,8 @@ object RaphaelAnimation {
     delay: js.Function1[scala.Double, RaphaelAnimation],
     repeat: js.Function1[scala.Double, RaphaelAnimation]
   ): RaphaelAnimation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("repeat")(repeat)
+    val __obj = js.Dynamic.literal(delay = delay, repeat = repeat)
+  
     __obj.asInstanceOf[RaphaelAnimation]
   }
 }

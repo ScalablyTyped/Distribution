@@ -26,12 +26,8 @@ object ViewConfig {
     path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
     viewDecl: atUirouterCoreLib.libStateInterfaceMod._ViewDeclaration
   ): ViewConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$id")($id)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("viewDecl")(viewDecl)
+    val __obj = js.Dynamic.literal($id = $id, load = load, loaded = loaded, path = path, viewDecl = viewDecl)
+  
     __obj.asInstanceOf[ViewConfig]
   }
 }

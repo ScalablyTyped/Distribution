@@ -79,14 +79,8 @@ object XOptimizedStorage {
     ],
     writeAndAttachToStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream, scala.Unit]
   ): XOptimizedStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachToURL")(attachToURL)
-    __obj.updateDynamic("copyElementDirectlyTo")(copyElementDirectlyTo)
-    __obj.updateDynamic("copyStreamElementData")(copyStreamElementData)
-    __obj.updateDynamic("getElementPropertyValue")(getElementPropertyValue)
-    __obj.updateDynamic("insertRawNonEncrStreamElementDirect")(insertRawNonEncrStreamElementDirect)
-    __obj.updateDynamic("insertStreamElementDirect")(insertStreamElementDirect)
-    __obj.updateDynamic("writeAndAttachToStream")(writeAndAttachToStream)
+    val __obj = js.Dynamic.literal(attachToURL = attachToURL, copyElementDirectlyTo = copyElementDirectlyTo, copyStreamElementData = copyStreamElementData, getElementPropertyValue = getElementPropertyValue, insertRawNonEncrStreamElementDirect = insertRawNonEncrStreamElementDirect, insertStreamElementDirect = insertStreamElementDirect, writeAndAttachToStream = writeAndAttachToStream)
+  
     __obj.asInstanceOf[XOptimizedStorage]
   }
 }

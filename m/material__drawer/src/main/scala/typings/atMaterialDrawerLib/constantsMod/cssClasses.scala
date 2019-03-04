@@ -27,14 +27,8 @@ object cssClasses {
     OPENING: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer--opening`,
     ROOT: atMaterialDrawerLib.atMaterialDrawerLibStrings.`mdc-drawer`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANIMATE")(ANIMATE)
-    __obj.updateDynamic("CLOSING")(CLOSING)
-    __obj.updateDynamic("DISMISSIBLE")(DISMISSIBLE)
-    __obj.updateDynamic("MODAL")(MODAL)
-    __obj.updateDynamic("OPEN")(OPEN)
-    __obj.updateDynamic("OPENING")(OPENING)
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(ANIMATE = ANIMATE, CLOSING = CLOSING, DISMISSIBLE = DISMISSIBLE, MODAL = MODAL, OPEN = OPEN, OPENING = OPENING, ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

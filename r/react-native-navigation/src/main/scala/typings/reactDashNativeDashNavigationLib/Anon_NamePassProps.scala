@@ -16,8 +16,7 @@ trait Anon_NamePassProps extends js.Object {
 object Anon_NamePassProps {
   @scala.inline
   def apply(name: java.lang.String, passProps: js.Object = null): Anon_NamePassProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (passProps != null) __obj.updateDynamic("passProps")(passProps)
     __obj.asInstanceOf[Anon_NamePassProps]
   }

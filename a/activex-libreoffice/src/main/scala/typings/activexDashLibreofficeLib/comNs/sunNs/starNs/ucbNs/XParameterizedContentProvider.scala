@@ -38,12 +38,8 @@ object XParameterizedContentProvider {
     registerInstance: js.Function3[java.lang.String, java.lang.String, scala.Boolean, XContentProvider],
     release: js.Function0[scala.Unit]
   ): XParameterizedContentProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("deregisterInstance")(deregisterInstance)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerInstance")(registerInstance)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, deregisterInstance = deregisterInstance, queryInterface = queryInterface, registerInstance = registerInstance, release = release)
+  
     __obj.asInstanceOf[XParameterizedContentProvider]
   }
 }

@@ -18,9 +18,7 @@ object IControl {
     onRemove: js.Function1[Map, js.Any],
     getDefaultPosition: js.Function0[java.lang.String] = null
   ): IControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onAdd")(onAdd)
-    __obj.updateDynamic("onRemove")(onRemove)
+    val __obj = js.Dynamic.literal(onAdd = onAdd, onRemove = onRemove)
     if (getDefaultPosition != null) __obj.updateDynamic("getDefaultPosition")(getDefaultPosition)
     __obj.asInstanceOf[IControl]
   }

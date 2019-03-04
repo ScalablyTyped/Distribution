@@ -18,10 +18,8 @@ object Anon_FieldToMatchRegexPatternSetIdTextTransformation {
     regexPatternSetId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_FieldToMatchRegexPatternSetIdTextTransformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldToMatch")(fieldToMatch.asInstanceOf[js.Any])
-    __obj.updateDynamic("regexPatternSetId")(regexPatternSetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("textTransformation")(textTransformation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fieldToMatch = fieldToMatch.asInstanceOf[js.Any], regexPatternSetId = regexPatternSetId.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FieldToMatchRegexPatternSetIdTextTransformation]
   }
 }

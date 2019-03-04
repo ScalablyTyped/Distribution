@@ -36,10 +36,7 @@ object Anon_BufferSize {
     threads: js.Array[java.lang.String] = null,
     windowLength: scala.Int | scala.Double = null
   ): Anon_BufferSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferSize")(bufferSize)
-    __obj.updateDynamic("features")(features)
-    __obj.updateDynamic("interval")(interval)
+    val __obj = js.Dynamic.literal(bufferSize = bufferSize, features = features, interval = interval)
     if (threads != null) __obj.updateDynamic("threads")(threads)
     if (windowLength != null) __obj.updateDynamic("windowLength")(windowLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BufferSize]

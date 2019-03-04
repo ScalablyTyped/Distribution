@@ -62,17 +62,8 @@ object GoogleApiYouTubeChannelResource {
     status: Anon_IsLinked,
     topicDetails: Anon_TopicIds
   ): GoogleApiYouTubeChannelResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brandingSettings")(brandingSettings)
-    __obj.updateDynamic("contentDetails")(contentDetails)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("invideoPromotion")(invideoPromotion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("snippet")(snippet)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("topicDetails")(topicDetails)
+    val __obj = js.Dynamic.literal(brandingSettings = brandingSettings, contentDetails = contentDetails, etag = etag, id = id, invideoPromotion = invideoPromotion, kind = kind, snippet = snippet, statistics = statistics, status = status, topicDetails = topicDetails)
+  
     __obj.asInstanceOf[GoogleApiYouTubeChannelResource]
   }
 }

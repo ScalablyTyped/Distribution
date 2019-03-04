@@ -79,18 +79,8 @@ object WorkflowPathDisplayDetails {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     sourceStepID: scala.Double
   ): WorkflowPathDisplayDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("destStepId")(destStepId)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelColor")(labelColor)
-    __obj.updateDynamic("labelX")(labelX)
-    __obj.updateDynamic("labelY")(labelY)
-    __obj.updateDynamic("lineColor")(lineColor)
-    __obj.updateDynamic("pathObject")(pathObject)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sourceStepID")(sourceStepID)
+    val __obj = js.Dynamic.literal(constructor = constructor, destStepId = destStepId, hasOwnProperty = hasOwnProperty, label = label, labelColor = labelColor, labelX = labelX, labelY = labelY, lineColor = lineColor, pathObject = pathObject, propertyIsEnumerable = propertyIsEnumerable, sourceStepID = sourceStepID)
+  
     __obj.asInstanceOf[WorkflowPathDisplayDetails]
   }
 }

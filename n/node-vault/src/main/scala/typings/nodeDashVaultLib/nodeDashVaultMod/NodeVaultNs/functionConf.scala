@@ -14,9 +14,7 @@ trait functionConf extends js.Object {
 object functionConf {
   @scala.inline
   def apply(method: java.lang.String, path: java.lang.String, schema: nodeDashVaultLib.Anon_Query = null): functionConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(method = method, path = path)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     __obj.asInstanceOf[functionConf]
   }

@@ -13,9 +13,8 @@ trait hasGetFinalUrl extends js.Object {
 object hasGetFinalUrl {
   @scala.inline
   def apply(getFinalUrl: js.Function0[java.lang.String], getMobileFinalUrl: js.Function0[java.lang.String]): hasGetFinalUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFinalUrl")(getFinalUrl)
-    __obj.updateDynamic("getMobileFinalUrl")(getMobileFinalUrl)
+    val __obj = js.Dynamic.literal(getFinalUrl = getFinalUrl, getMobileFinalUrl = getMobileFinalUrl)
+  
     __obj.asInstanceOf[hasGetFinalUrl]
   }
 }

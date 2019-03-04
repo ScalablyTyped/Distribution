@@ -24,10 +24,7 @@ object Spec {
     pre: Handler = null,
     validate: koaDashJoiDashRouterLib.Anon_BodyContinueOnError = null
   ): Spec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (meta != null) __obj.updateDynamic("meta")(meta)
     if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
     if (validate != null) __obj.updateDynamic("validate")(validate)

@@ -51,12 +51,8 @@ object ServicePort {
     protocol: java.lang.String,
     targetPort: scala.Double | java.lang.String
   ): ServicePort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodePort")(nodePort)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("targetPort")(targetPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name, nodePort = nodePort, port = port, protocol = protocol, targetPort = targetPort.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ServicePort]
   }
 }

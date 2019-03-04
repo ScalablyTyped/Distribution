@@ -48,14 +48,8 @@ object AnimationEvent {
     totalTime: scala.Double,
     triggerName: java.lang.String
   ): AnimationEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("fromState")(fromState)
-    __obj.updateDynamic("phaseName")(phaseName)
-    __obj.updateDynamic("toState")(toState)
-    __obj.updateDynamic("totalTime")(totalTime)
-    __obj.updateDynamic("triggerName")(triggerName)
+    val __obj = js.Dynamic.literal(disabled = disabled, element = element, fromState = fromState, phaseName = phaseName, toState = toState, totalTime = totalTime, triggerName = triggerName)
+  
     __obj.asInstanceOf[AnimationEvent]
   }
 }

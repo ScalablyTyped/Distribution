@@ -29,22 +29,8 @@ object GitCommit {
     url: java.lang.String,
     workItems: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
   ): GitCommit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("changeCounts")(changeCounts)
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("commitId")(commitId)
-    __obj.updateDynamic("committer")(committer)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("remoteUrl")(remoteUrl)
-    __obj.updateDynamic("statuses")(statuses)
-    __obj.updateDynamic("treeId")(treeId)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItems")(workItems)
+    val __obj = js.Dynamic.literal(_links = _links, author = author, changeCounts = changeCounts, changes = changes, comment = comment, commentTruncated = commentTruncated, commitId = commitId, committer = committer, parents = parents, push = push, remoteUrl = remoteUrl, statuses = statuses, treeId = treeId, url = url, workItems = workItems)
+  
     __obj.asInstanceOf[GitCommit]
   }
 }

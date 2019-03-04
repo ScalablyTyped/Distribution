@@ -13,9 +13,8 @@ trait Present[T] extends Option[T] {
 object Present {
   @scala.inline
   def apply[T](kind: typescriptDashOptionalLib.typescriptDashOptionalLibStrings.present, value: T): Present[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Present[T]]
   }
 }

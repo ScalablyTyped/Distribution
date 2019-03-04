@@ -50,14 +50,8 @@ object ObjectMethod {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): ObjectMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key, kind = kind.asInstanceOf[js.Any], params = params)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

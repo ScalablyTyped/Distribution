@@ -18,10 +18,8 @@ trait IMeasureWithCenter extends IMeasure {
 object IMeasureWithCenter {
   @scala.inline
   def apply(center: IPoint, high: IPoint, low: IPoint): IMeasureWithCenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("high")(high)
-    __obj.updateDynamic("low")(low)
+    val __obj = js.Dynamic.literal(center = center, high = high, low = low)
+  
     __obj.asInstanceOf[IMeasureWithCenter]
   }
 }

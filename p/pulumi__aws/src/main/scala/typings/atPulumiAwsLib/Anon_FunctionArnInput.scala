@@ -12,8 +12,8 @@ trait Anon_FunctionArnInput extends js.Object {
 object Anon_FunctionArnInput {
   @scala.inline
   def apply(functionArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_FunctionArnInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functionArn")(functionArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(functionArn = functionArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FunctionArnInput]
   }
 }

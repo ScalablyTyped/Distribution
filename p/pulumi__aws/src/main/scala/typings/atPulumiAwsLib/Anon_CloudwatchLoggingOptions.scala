@@ -36,13 +36,7 @@ object Anon_CloudwatchLoggingOptions {
     s3BackupConfiguration: Anon_BucketArnBufferInterval = null,
     s3BackupMode: java.lang.String = null
   ): Anon_CloudwatchLoggingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
-    __obj.updateDynamic("clusterJdbcurl")(clusterJdbcurl)
-    __obj.updateDynamic("dataTableName")(dataTableName)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions, clusterJdbcurl = clusterJdbcurl, dataTableName = dataTableName, password = password, roleArn = roleArn, username = username)
     if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions)
     if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns)
     if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration)

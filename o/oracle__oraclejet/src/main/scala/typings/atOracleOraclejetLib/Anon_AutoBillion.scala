@@ -20,11 +20,8 @@ object Anon_AutoBillion {
     tooltipDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
     tooltipLabel: java.lang.String
   ): Anon_AutoBillion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("converter")(converter)
-    __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    __obj.updateDynamic("tooltipDisplay")(tooltipDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("tooltipLabel")(tooltipLabel)
+    val __obj = js.Dynamic.literal(converter = converter, scaling = scaling.asInstanceOf[js.Any], tooltipDisplay = tooltipDisplay.asInstanceOf[js.Any], tooltipLabel = tooltipLabel)
+  
     __obj.asInstanceOf[Anon_AutoBillion]
   }
 }

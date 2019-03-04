@@ -12,8 +12,8 @@ trait DefaultValueTypeDescriptor extends js.Object {
 object DefaultValueTypeDescriptor {
   @scala.inline
   def apply(defaultValue: scala.Boolean): DefaultValueTypeDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue)
+  
     __obj.asInstanceOf[DefaultValueTypeDescriptor]
   }
 }

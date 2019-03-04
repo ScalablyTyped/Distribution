@@ -21,8 +21,7 @@ object AddSubsystemInfo {
     transpile: js.UndefOr[scala.Boolean] = js.undefined,
     useFilename: js.UndefOr[scala.Boolean] = js.undefined
   ): AddSubsystemInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subsystem")(subsystem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(subsystem = subsystem.asInstanceOf[js.Any])
     if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (configureArgs != null) __obj.updateDynamic("configureArgs")(configureArgs)
     if (description != null) __obj.updateDynamic("description")(description)

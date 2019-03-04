@@ -26,12 +26,8 @@ object IEvent {
     signal: signalsDotJsLib.libOrgOsflashSignalsIPrioritySignalMod.IPrioritySignal,
     target: js.Object
   ): IEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("signal")(signal)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, clone = clone, currentTarget = currentTarget, signal = signal, target = target)
+  
     __obj.asInstanceOf[IEvent]
   }
 }

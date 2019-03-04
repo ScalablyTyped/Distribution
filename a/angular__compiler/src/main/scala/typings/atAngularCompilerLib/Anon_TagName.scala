@@ -17,8 +17,7 @@ object Anon_TagName {
     tagName: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.JSDocTagName | java.lang.String,
     text: java.lang.String = null
   ): Anon_TagName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Anon_TagName]
   }

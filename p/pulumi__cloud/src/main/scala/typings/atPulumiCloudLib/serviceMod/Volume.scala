@@ -12,8 +12,8 @@ trait Volume extends js.Object {
 object Volume {
   @scala.inline
   def apply(kind: VolumeKind): Volume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+  
     __obj.asInstanceOf[Volume]
   }
 }

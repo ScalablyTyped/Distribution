@@ -23,9 +23,7 @@ object ViewContentParameters {
     currency: java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): ViewContentParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_ids")(content_ids)
-    __obj.updateDynamic("content_type")(content_type)
+    val __obj = js.Dynamic.literal(content_ids = content_ids, content_type = content_type)
     if (content_category != null) __obj.updateDynamic("content_category")(content_category)
     if (content_name != null) __obj.updateDynamic("content_name")(content_name)
     if (currency != null) __obj.updateDynamic("currency")(currency)

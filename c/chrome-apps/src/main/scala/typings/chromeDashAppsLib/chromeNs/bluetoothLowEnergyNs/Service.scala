@@ -31,9 +31,7 @@ object Service {
     deviceAddress: java.lang.String = null,
     instanceId: java.lang.String = null
   ): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isPrimary")(isPrimary)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(isPrimary = isPrimary, uuid = uuid)
     if (deviceAddress != null) __obj.updateDynamic("deviceAddress")(deviceAddress)
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
     __obj.asInstanceOf[Service]

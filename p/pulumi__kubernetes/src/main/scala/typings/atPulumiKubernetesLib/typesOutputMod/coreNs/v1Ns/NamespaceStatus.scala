@@ -19,8 +19,8 @@ trait NamespaceStatus extends js.Object {
 object NamespaceStatus {
   @scala.inline
   def apply(phase: java.lang.String): NamespaceStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("phase")(phase)
+    val __obj = js.Dynamic.literal(phase = phase)
+  
     __obj.asInstanceOf[NamespaceStatus]
   }
 }

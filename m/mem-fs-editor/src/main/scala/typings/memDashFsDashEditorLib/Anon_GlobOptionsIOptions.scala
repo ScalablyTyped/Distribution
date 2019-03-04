@@ -12,8 +12,8 @@ trait Anon_GlobOptionsIOptions extends js.Object {
 object Anon_GlobOptionsIOptions {
   @scala.inline
   def apply(globOptions: globLib.globMod.GNs.IOptions): Anon_GlobOptionsIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("globOptions")(globOptions)
+    val __obj = js.Dynamic.literal(globOptions = globOptions)
+  
     __obj.asInstanceOf[Anon_GlobOptionsIOptions]
   }
 }

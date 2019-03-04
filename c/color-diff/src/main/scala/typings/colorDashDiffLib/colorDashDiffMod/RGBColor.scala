@@ -15,10 +15,7 @@ trait RGBColor extends js.Object {
 object RGBColor {
   @scala.inline
   def apply(B: scala.Double, G: scala.Double, R: scala.Double, A: scala.Int | scala.Double = null): RGBColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("B")(B)
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("R")(R)
+    val __obj = js.Dynamic.literal(B = B, G = G, R = R)
     if (A != null) __obj.updateDynamic("A")(A.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBColor]
   }

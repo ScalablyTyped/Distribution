@@ -18,10 +18,8 @@ object Anon_0 {
     insertNode: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`1`,
     none: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`0`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("insertNode")(insertNode)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(appendChild = appendChild, insertNode = insertNode, none = none)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

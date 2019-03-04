@@ -36,15 +36,8 @@ object ITransitLine {
     uri: java.lang.String,
     verboseName: java.lang.String
   ): ITransitLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abbreviatedName")(abbreviatedName)
-    __obj.updateDynamic("agencyId")(agencyId)
-    __obj.updateDynamic("agencyName")(agencyName)
-    __obj.updateDynamic("agencyUrl")(agencyUrl)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("providerInfo")(providerInfo)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("verboseName")(verboseName)
+    val __obj = js.Dynamic.literal(abbreviatedName = abbreviatedName, agencyId = agencyId, agencyName = agencyName, agencyUrl = agencyUrl, phoneNumber = phoneNumber, providerInfo = providerInfo, uri = uri, verboseName = verboseName)
+  
     __obj.asInstanceOf[ITransitLine]
   }
 }

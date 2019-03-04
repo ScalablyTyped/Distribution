@@ -12,8 +12,8 @@ trait Anon_ActiveLink extends js.Object {
 object Anon_ActiveLink {
   @scala.inline
   def apply(activeLink: scala.Null): Anon_ActiveLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeLink")(activeLink)
+    val __obj = js.Dynamic.literal(activeLink = activeLink)
+  
     __obj.asInstanceOf[Anon_ActiveLink]
   }
 }

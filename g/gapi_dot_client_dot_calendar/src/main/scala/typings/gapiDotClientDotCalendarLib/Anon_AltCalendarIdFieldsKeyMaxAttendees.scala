@@ -54,8 +54,7 @@ object Anon_AltCalendarIdFieldsKeyMaxAttendees {
     supportsAttachments: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltCalendarIdFieldsKeyMaxAttendees = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

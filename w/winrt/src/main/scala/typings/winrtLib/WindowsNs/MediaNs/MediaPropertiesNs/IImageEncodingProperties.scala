@@ -19,11 +19,8 @@ object IImageEncodingProperties {
     `type`: java.lang.String,
     width: scala.Double
   ): IImageEncodingProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("subtype")(subtype)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, properties = properties, subtype = subtype, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IImageEncodingProperties]
   }
 }

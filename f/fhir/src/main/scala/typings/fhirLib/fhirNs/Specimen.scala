@@ -99,8 +99,7 @@ object Specimen {
     text: Narrative = null,
     `type`: CodeableConcept = null
   ): Specimen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(subject = subject)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

@@ -44,10 +44,7 @@ object MeshCreatePlaneParams {
     material: MeshCreatePlaneParamsMaterial = null,
     size: scala.Double | MeshCreatePlaneParamsSize = null
   ): MeshCreatePlaneParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (facing != null) __obj.updateDynamic("facing")(facing)
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (material != null) __obj.updateDynamic("material")(material)

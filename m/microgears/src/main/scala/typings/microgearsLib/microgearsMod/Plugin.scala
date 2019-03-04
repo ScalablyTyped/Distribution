@@ -18,10 +18,8 @@ object Plugin {
     beforeChain: js.Function2[js.Array[_], js.Any, js.Array[_]],
     name: java.lang.String
   ): Plugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterChain")(afterChain)
-    __obj.updateDynamic("beforeChain")(beforeChain)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(afterChain = afterChain, beforeChain = beforeChain, name = name)
+  
     __obj.asInstanceOf[Plugin]
   }
 }

@@ -68,20 +68,8 @@ object XGridDataModel {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XGridDataModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("RowCount")(RowCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getCellData")(getCellData)
-    __obj.updateDynamic("getCellToolTip")(getCellToolTip)
-    __obj.updateDynamic("getRowData")(getRowData)
-    __obj.updateDynamic("getRowHeading")(getRowHeading)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, RowCount = RowCount, acquire = acquire, addEventListener = addEventListener, createClone = createClone, dispose = dispose, getCellData = getCellData, getCellToolTip = getCellToolTip, getRowData = getRowData, getRowHeading = getRowHeading, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XGridDataModel]
   }
 }

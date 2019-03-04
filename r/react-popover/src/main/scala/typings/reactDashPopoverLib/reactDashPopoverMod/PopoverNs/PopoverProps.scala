@@ -36,8 +36,7 @@ object PopoverProps {
     target: reactLib.reactMod.ReactNs.ReactElement[_] = null,
     tipSize: scala.Int | scala.Double = null
   ): PopoverProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     if (appendTarget != null) __obj.updateDynamic("appendTarget")(appendTarget)
     if (className != null) __obj.updateDynamic("className")(className)
     if (enterExitTransitionDurationMs != null) __obj.updateDynamic("enterExitTransitionDurationMs")(enterExitTransitionDurationMs.asInstanceOf[js.Any])

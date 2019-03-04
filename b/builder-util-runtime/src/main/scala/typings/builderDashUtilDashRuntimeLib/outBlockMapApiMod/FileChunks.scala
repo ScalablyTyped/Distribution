@@ -13,9 +13,8 @@ trait FileChunks extends js.Object {
 object FileChunks {
   @scala.inline
   def apply(checksums: js.Array[java.lang.String], sizes: js.Array[scala.Double]): FileChunks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checksums")(checksums)
-    __obj.updateDynamic("sizes")(sizes)
+    val __obj = js.Dynamic.literal(checksums = checksums, sizes = sizes)
+  
     __obj.asInstanceOf[FileChunks]
   }
 }

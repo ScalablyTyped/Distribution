@@ -12,9 +12,8 @@ trait MenuItemEventArgs extends EventArgs {
 object MenuItemEventArgs {
   @scala.inline
   def apply(item: BootstrapMenuItem, sender: Control): MenuItemEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(item = item, sender = sender)
+  
     __obj.asInstanceOf[MenuItemEventArgs]
   }
 }

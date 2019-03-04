@@ -32,15 +32,7 @@ object ojDialogSettableProperties {
     translations: atOracleOraclejetLib.Anon_LabelCloseIcon,
     dialogTitle: java.lang.String = null
   ): ojDialogSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancelBehavior")(cancelBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("dragAffordance")(dragAffordance.asInstanceOf[js.Any])
-    __obj.updateDynamic("initialVisibility")(initialVisibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("modality")(modality.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("resizeBehavior")(resizeBehavior.asInstanceOf[js.Any])
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("translations")(translations)
+    val __obj = js.Dynamic.literal(cancelBehavior = cancelBehavior.asInstanceOf[js.Any], dragAffordance = dragAffordance.asInstanceOf[js.Any], initialVisibility = initialVisibility.asInstanceOf[js.Any], modality = modality.asInstanceOf[js.Any], position = position, resizeBehavior = resizeBehavior.asInstanceOf[js.Any], role = role, translations = translations)
     if (dialogTitle != null) __obj.updateDynamic("dialogTitle")(dialogTitle)
     __obj.asInstanceOf[ojDialogSettableProperties]
   }

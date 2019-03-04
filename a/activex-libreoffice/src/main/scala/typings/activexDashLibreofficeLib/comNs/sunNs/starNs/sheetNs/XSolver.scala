@@ -36,19 +36,8 @@ object XSolver {
     release: js.Function0[scala.Unit],
     solve: js.Function0[scala.Unit]
   ): XSolver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Constraints")(Constraints)
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("Maximize")(Maximize)
-    __obj.updateDynamic("Objective")(Objective)
-    __obj.updateDynamic("ResultValue")(ResultValue)
-    __obj.updateDynamic("Solution")(Solution)
-    __obj.updateDynamic("Success")(Success)
-    __obj.updateDynamic("Variables")(Variables)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("solve")(solve)
+    val __obj = js.Dynamic.literal(Constraints = Constraints, Document = Document, Maximize = Maximize, Objective = Objective, ResultValue = ResultValue, Solution = Solution, Success = Success, Variables = Variables, acquire = acquire, queryInterface = queryInterface, release = release, solve = solve)
+  
     __obj.asInstanceOf[XSolver]
   }
 }

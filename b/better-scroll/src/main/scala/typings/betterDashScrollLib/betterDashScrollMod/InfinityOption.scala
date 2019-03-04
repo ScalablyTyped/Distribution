@@ -18,10 +18,8 @@ object InfinityOption {
     fetch: js.Function1[scala.Double, scala.Unit],
     render: js.Function2[js.Any, stdLib.Element, stdLib.Element]
   ): InfinityOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createTombstone")(createTombstone)
-    __obj.updateDynamic("fetch")(fetch)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(createTombstone = createTombstone, fetch = fetch, render = render)
+  
     __obj.asInstanceOf[InfinityOption]
   }
 }

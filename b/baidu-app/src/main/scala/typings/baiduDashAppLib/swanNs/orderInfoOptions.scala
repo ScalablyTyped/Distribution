@@ -66,15 +66,7 @@ object orderInfoOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): orderInfoOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appKey")(appKey)
-    __obj.updateDynamic("bizInfo")(bizInfo)
-    __obj.updateDynamic("dealId")(dealId)
-    __obj.updateDynamic("dealTitle")(dealTitle)
-    __obj.updateDynamic("rsaSign")(rsaSign)
-    __obj.updateDynamic("signFieldsRange")(signFieldsRange)
-    __obj.updateDynamic("totalAmount")(totalAmount)
-    __obj.updateDynamic("tpOrderId")(tpOrderId)
+    val __obj = js.Dynamic.literal(appKey = appKey, bizInfo = bizInfo, dealId = dealId, dealTitle = dealTitle, rsaSign = rsaSign, signFieldsRange = signFieldsRange, totalAmount = totalAmount, tpOrderId = tpOrderId)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

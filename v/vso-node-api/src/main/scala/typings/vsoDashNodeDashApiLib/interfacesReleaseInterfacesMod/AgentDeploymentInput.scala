@@ -25,18 +25,8 @@ object AgentDeploymentInput {
     skipArtifactsDownload: scala.Boolean,
     timeoutInMinutes: scala.Double
   ): AgentDeploymentInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactsDownloadInput")(artifactsDownloadInput)
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("demands")(demands)
-    __obj.updateDynamic("enableAccessToken")(enableAccessToken)
-    __obj.updateDynamic("imageId")(imageId)
-    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
-    __obj.updateDynamic("overrideInputs")(overrideInputs)
-    __obj.updateDynamic("parallelExecution")(parallelExecution)
-    __obj.updateDynamic("queueId")(queueId)
-    __obj.updateDynamic("skipArtifactsDownload")(skipArtifactsDownload)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    val __obj = js.Dynamic.literal(artifactsDownloadInput = artifactsDownloadInput, condition = condition, demands = demands, enableAccessToken = enableAccessToken, imageId = imageId, jobCancelTimeoutInMinutes = jobCancelTimeoutInMinutes, overrideInputs = overrideInputs, parallelExecution = parallelExecution, queueId = queueId, skipArtifactsDownload = skipArtifactsDownload, timeoutInMinutes = timeoutInMinutes)
+  
     __obj.asInstanceOf[AgentDeploymentInput]
   }
 }

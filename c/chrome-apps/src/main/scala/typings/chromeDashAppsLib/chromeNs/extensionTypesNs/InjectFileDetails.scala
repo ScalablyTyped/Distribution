@@ -21,10 +21,7 @@ object InjectFileDetails {
     frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined
   ): InjectFileDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cssOrigin")(cssOrigin)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("runAt")(runAt)
+    val __obj = js.Dynamic.literal(cssOrigin = cssOrigin, file = file, runAt = runAt)
     if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
     if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
     if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)

@@ -32,18 +32,8 @@ object ChronoZonedDateTime {
     toEpochSecond: js.Function0[scala.Double],
     toInstant: js.Function0[Instant]
   ): ChronoZonedDateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compareTo")(compareTo)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("isAfter")(isAfter)
-    __obj.updateDynamic("isBefore")(isBefore)
-    __obj.updateDynamic("isEqual")(isEqual)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("toEpochSecond")(toEpochSecond)
-    __obj.updateDynamic("toInstant")(toInstant)
+    val __obj = js.Dynamic.literal(compareTo = compareTo, equals = equals, format = format, get = get, isAfter = isAfter, isBefore = isBefore, isEqual = isEqual, query = query, range = range, toEpochSecond = toEpochSecond, toInstant = toInstant)
+  
     __obj.asInstanceOf[ChronoZonedDateTime]
   }
 }

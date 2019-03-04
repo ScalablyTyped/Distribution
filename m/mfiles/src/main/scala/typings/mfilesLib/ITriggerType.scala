@@ -32,17 +32,8 @@ object ITriggerType {
     Type: mfilesLib.MFilesNs.MFTriggerType,
     Weekly: IWeeklyTrigger
   ): ITriggerType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Daily")(Daily)
-    __obj.updateDynamic("MonthlyDOW")(MonthlyDOW)
-    __obj.updateDynamic("MonthlyDate")(MonthlyDate)
-    __obj.updateDynamic("SetDailyTrigger")(SetDailyTrigger)
-    __obj.updateDynamic("SetMonthlyDOW")(SetMonthlyDOW)
-    __obj.updateDynamic("SetMonthlyDate")(SetMonthlyDate)
-    __obj.updateDynamic("SetWeekly")(SetWeekly)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Weekly")(Weekly)
+    val __obj = js.Dynamic.literal(Clone = Clone, Daily = Daily, MonthlyDOW = MonthlyDOW, MonthlyDate = MonthlyDate, SetDailyTrigger = SetDailyTrigger, SetMonthlyDOW = SetMonthlyDOW, SetMonthlyDate = SetMonthlyDate, SetWeekly = SetWeekly, Type = Type, Weekly = Weekly)
+  
     __obj.asInstanceOf[ITriggerType]
   }
 }

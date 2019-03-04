@@ -15,11 +15,8 @@ trait DataInput extends js.Object {
 object DataInput {
   @scala.inline
   def apply(online: scala.Boolean, uuid: java.lang.String, x: scala.Double, y: scala.Double): DataInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("online")(online)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(online = online, uuid = uuid, x = x, y = y)
+  
     __obj.asInstanceOf[DataInput]
   }
 }

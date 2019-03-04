@@ -48,20 +48,8 @@ object PivotTable {
     remove: js.Function0[scala.Unit],
     setValuesDisplayOrientation: js.Function1[Dimension, PivotTable]
   ): PivotTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCalculatedPivotValue")(addCalculatedPivotValue)
-    __obj.updateDynamic("addColumnGroup")(addColumnGroup)
-    __obj.updateDynamic("addFilter")(addFilter)
-    __obj.updateDynamic("addPivotValue")(addPivotValue)
-    __obj.updateDynamic("addRowGroup")(addRowGroup)
-    __obj.updateDynamic("getAnchorCell")(getAnchorCell)
-    __obj.updateDynamic("getColumnGroups")(getColumnGroups)
-    __obj.updateDynamic("getFilters")(getFilters)
-    __obj.updateDynamic("getPivotValues")(getPivotValues)
-    __obj.updateDynamic("getRowGroups")(getRowGroups)
-    __obj.updateDynamic("getValuesDisplayOrientation")(getValuesDisplayOrientation)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setValuesDisplayOrientation")(setValuesDisplayOrientation)
+    val __obj = js.Dynamic.literal(addCalculatedPivotValue = addCalculatedPivotValue, addColumnGroup = addColumnGroup, addFilter = addFilter, addPivotValue = addPivotValue, addRowGroup = addRowGroup, getAnchorCell = getAnchorCell, getColumnGroups = getColumnGroups, getFilters = getFilters, getPivotValues = getPivotValues, getRowGroups = getRowGroups, getValuesDisplayOrientation = getValuesDisplayOrientation, remove = remove, setValuesDisplayOrientation = setValuesDisplayOrientation)
+  
     __obj.asInstanceOf[PivotTable]
   }
 }

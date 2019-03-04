@@ -24,13 +24,8 @@ object ReleaseApprovalHistory {
     modifiedOn: stdLib.Date,
     revision: scala.Double
   ): ReleaseApprovalHistory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approver")(approver)
-    __obj.updateDynamic("changedBy")(changedBy)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("revision")(revision)
+    val __obj = js.Dynamic.literal(approver = approver, changedBy = changedBy, comments = comments, createdOn = createdOn, modifiedOn = modifiedOn, revision = revision)
+  
     __obj.asInstanceOf[ReleaseApprovalHistory]
   }
 }

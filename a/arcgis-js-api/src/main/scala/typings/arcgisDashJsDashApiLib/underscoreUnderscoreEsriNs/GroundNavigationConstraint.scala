@@ -37,10 +37,8 @@ object GroundNavigationConstraint {
       WatchHandle
     ] = null
   ): GroundNavigationConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
+    __obj.updateDynamic("type")(`type`)
     if (get != null) __obj.updateDynamic("get")(get)
     if (set != null) __obj.updateDynamic("set")(set)
     if (watch != null) __obj.updateDynamic("watch")(watch)

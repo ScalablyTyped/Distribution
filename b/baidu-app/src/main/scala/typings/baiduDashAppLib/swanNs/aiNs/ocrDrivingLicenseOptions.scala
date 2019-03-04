@@ -30,8 +30,7 @@ object ocrDrivingLicenseOptions {
     success: js.Function1[/* res */ ocrDrivingLicenseResponse, scala.Unit] = null,
     unified_valid_period: js.UndefOr[scala.Boolean] = js.undefined
   ): ocrDrivingLicenseOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(image = image)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
     if (fail != null) __obj.updateDynamic("fail")(fail)

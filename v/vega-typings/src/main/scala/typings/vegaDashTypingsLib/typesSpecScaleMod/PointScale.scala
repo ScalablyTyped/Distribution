@@ -31,8 +31,8 @@ object PointScale {
     reverse: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): PointScale = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("type")(`type`)
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainMax != null) __obj.updateDynamic("domainMax")(domainMax.asInstanceOf[js.Any])

@@ -58,11 +58,8 @@ object Anon_ConnectionsGates {
       synapticLib.synapticMod.ArchitectNs.Perceptron
     ]
   ): Anon_ConnectionsGates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Hopfield")(Hopfield)
-    __obj.updateDynamic("LSTM")(LSTM)
-    __obj.updateDynamic("Liquid")(Liquid)
-    __obj.updateDynamic("Perceptron")(Perceptron)
+    val __obj = js.Dynamic.literal(Hopfield = Hopfield, LSTM = LSTM, Liquid = Liquid, Perceptron = Perceptron)
+  
     __obj.asInstanceOf[Anon_ConnectionsGates]
   }
 }

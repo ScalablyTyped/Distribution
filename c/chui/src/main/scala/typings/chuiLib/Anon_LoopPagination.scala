@@ -20,9 +20,7 @@ object Anon_LoopPagination {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     pagination: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_LoopPagination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("panels")(panels)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(panels = panels, target = target)
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
     __obj.asInstanceOf[Anon_LoopPagination]

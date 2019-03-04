@@ -32,8 +32,7 @@ object HsmArgs {
     ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): HsmArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
     if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])

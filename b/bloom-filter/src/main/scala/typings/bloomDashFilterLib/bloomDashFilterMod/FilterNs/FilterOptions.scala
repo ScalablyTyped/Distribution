@@ -20,9 +20,7 @@ object FilterOptions {
     nFlags: scala.Int | scala.Double = null,
     nTweak: scala.Int | scala.Double = null
   ): FilterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nHashFuncs")(nHashFuncs)
-    __obj.updateDynamic("vData")(vData)
+    val __obj = js.Dynamic.literal(nHashFuncs = nHashFuncs, vData = vData)
     if (nFlags != null) __obj.updateDynamic("nFlags")(nFlags.asInstanceOf[js.Any])
     if (nTweak != null) __obj.updateDynamic("nTweak")(nTweak.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]

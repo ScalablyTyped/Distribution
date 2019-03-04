@@ -21,8 +21,7 @@ object PaymentPortalPost {
     PostData: java.lang.String = null,
     Url: java.lang.String = null
   ): PaymentPortalPost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Method")(Method)
+    val __obj = js.Dynamic.literal(Method = Method)
     if (PostData != null) __obj.updateDynamic("PostData")(PostData)
     if (Url != null) __obj.updateDynamic("Url")(Url)
     __obj.asInstanceOf[PaymentPortalPost]

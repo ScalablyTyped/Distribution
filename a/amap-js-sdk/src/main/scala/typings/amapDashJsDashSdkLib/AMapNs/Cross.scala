@@ -26,14 +26,8 @@ object Cross {
     second_id: java.lang.String,
     second_name: java.lang.String
   ): Cross = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("first_id")(first_id)
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("second_id")(second_id)
-    __obj.updateDynamic("second_name")(second_name)
+    val __obj = js.Dynamic.literal(direction = direction, distance = distance, first_id = first_id, first_name = first_name, location = location, second_id = second_id, second_name = second_name)
+  
     __obj.asInstanceOf[Cross]
   }
 }

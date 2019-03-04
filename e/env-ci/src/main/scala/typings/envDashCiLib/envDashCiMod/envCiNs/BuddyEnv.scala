@@ -35,15 +35,7 @@ object BuddyEnv {
     pr: java.lang.String = null,
     tag: java.lang.String = null
   ): BuddyEnv = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildUrl")(buildUrl)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("isCi")(isCi)
-    __obj.updateDynamic("isPr")(isPr)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(build = build, buildUrl = buildUrl, commit = commit, isCi = isCi, isPr = isPr, name = name, service = service, slug = slug)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (pr != null) __obj.updateDynamic("pr")(pr)
     if (tag != null) __obj.updateDynamic("tag")(tag)

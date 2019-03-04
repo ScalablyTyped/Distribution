@@ -20,11 +20,8 @@ object NotificationQueryCondition {
     subscriber: java.lang.String,
     subscriptionId: java.lang.String
   ): NotificationQueryCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventInitiator")(eventInitiator)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("subscriber")(subscriber)
-    __obj.updateDynamic("subscriptionId")(subscriptionId)
+    val __obj = js.Dynamic.literal(eventInitiator = eventInitiator, eventType = eventType, subscriber = subscriber, subscriptionId = subscriptionId)
+  
     __obj.asInstanceOf[NotificationQueryCondition]
   }
 }

@@ -20,11 +20,8 @@ object Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber {
     fontWeight: scala.Double,
     letterSpacing: scala.Double
   ): Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fontFamily")(fontFamily)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("letterSpacing")(letterSpacing)
+    val __obj = js.Dynamic.literal(fontFamily = fontFamily, fontSize = fontSize, fontWeight = fontWeight, letterSpacing = letterSpacing)
+  
     __obj.asInstanceOf[Anon_FontFamilyFontSizeFontWeightLetterSpacingNumber]
   }
 }

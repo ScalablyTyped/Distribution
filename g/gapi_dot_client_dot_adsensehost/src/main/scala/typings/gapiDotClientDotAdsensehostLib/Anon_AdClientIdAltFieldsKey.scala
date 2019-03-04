@@ -42,9 +42,7 @@ object Anon_AdClientIdAltFieldsKey {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AdClientIdAltFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adClientId")(adClientId)
-    __obj.updateDynamic("urlChannelId")(urlChannelId)
+    val __obj = js.Dynamic.literal(adClientId = adClientId, urlChannelId = urlChannelId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

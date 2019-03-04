@@ -234,8 +234,7 @@ object ReactImageGalleryProps {
     thumbnailPosition: reactDashImageDashGalleryLib.reactDashImageDashGalleryLibStrings.top | reactDashImageDashGalleryLib.reactDashImageDashGalleryLibStrings.right | reactDashImageDashGalleryLib.reactDashImageDashGalleryLibStrings.bottom | reactDashImageDashGalleryLib.reactDashImageDashGalleryLibStrings.left = null,
     useBrowserFullscreen: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactImageGalleryProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (defaultImage != null) __obj.updateDynamic("defaultImage")(defaultImage)
     if (!js.isUndefined(disableArrowKeys)) __obj.updateDynamic("disableArrowKeys")(disableArrowKeys)

@@ -19,10 +19,7 @@ object ScrollViewChangingEvent {
     currentPage: scala.Int | scala.Double = null,
     nextPage: scala.Int | scala.Double = null
   ): ScrollViewChangingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
     if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangingEvent]

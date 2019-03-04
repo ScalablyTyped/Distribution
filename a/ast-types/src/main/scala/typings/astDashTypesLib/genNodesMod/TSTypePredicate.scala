@@ -23,9 +23,8 @@ object TSTypePredicate {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypePredicate,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): TSTypePredicate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypePredicate]
   }
 }

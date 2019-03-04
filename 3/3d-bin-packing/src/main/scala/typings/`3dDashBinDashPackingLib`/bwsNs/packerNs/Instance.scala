@@ -76,17 +76,8 @@ object Instance {
     setName: js.Function1[java.lang.String, scala.Unit],
     setWidth: js.Function1[scala.Double, scala.Unit]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TYPE")(TYPE)
-    __obj.updateDynamic("getHeight")(getHeight)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getVolume")(getVolume)
-    __obj.updateDynamic("getWidth")(getWidth)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setLength")(setLength)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(TYPE = TYPE, getHeight = getHeight, getLength = getLength, getName = getName, getVolume = getVolume, getWidth = getWidth, setHeight = setHeight, setLength = setLength, setName = setName, setWidth = setWidth)
+  
     __obj.asInstanceOf[Instance]
   }
 }

@@ -22,12 +22,8 @@ object HoverComponentSpec {
     top: scala.Double,
     width: scala.Double
   ): HoverComponentSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("hovering")(hovering)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, hovering = hovering, left = left, top = top, width = width)
+  
     __obj.asInstanceOf[HoverComponentSpec]
   }
 }

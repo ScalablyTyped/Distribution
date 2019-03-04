@@ -22,12 +22,8 @@ object Route {
     path: java.lang.String | stdLib.RegExp,
     spec: RouteSpec
   ): Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    __obj.updateDynamic("spec")(spec)
+    val __obj = js.Dynamic.literal(chain = chain, method = method, name = name, path = path.asInstanceOf[js.Any], spec = spec)
+  
     __obj.asInstanceOf[Route]
   }
 }

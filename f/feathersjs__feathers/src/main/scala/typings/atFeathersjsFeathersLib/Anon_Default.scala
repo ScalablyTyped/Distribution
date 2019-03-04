@@ -19,10 +19,8 @@ object Anon_Default {
     default: js.Function0[atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any]],
     version: java.lang.String
   ): Anon_Default = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SKIP")(SKIP.asInstanceOf[js.Any])
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(SKIP = SKIP.asInstanceOf[js.Any], default = default, version = version)
+  
     __obj.asInstanceOf[Anon_Default]
   }
 }

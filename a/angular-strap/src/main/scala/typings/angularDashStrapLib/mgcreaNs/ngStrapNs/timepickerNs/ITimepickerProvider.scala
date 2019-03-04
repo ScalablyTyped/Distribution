@@ -12,8 +12,8 @@ trait ITimepickerProvider extends js.Object {
 object ITimepickerProvider {
   @scala.inline
   def apply(defaults: ITimepickerOptions): ITimepickerProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[ITimepickerProvider]
   }
 }

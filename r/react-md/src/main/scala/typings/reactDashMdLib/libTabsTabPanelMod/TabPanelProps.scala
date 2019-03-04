@@ -83,9 +83,7 @@ object TabPanelProps {
     onTouchStart: js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): TabPanelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contolledById")(contolledById.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contolledById = contolledById.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

@@ -24,11 +24,7 @@ object Anon_ActionConfiguration {
     continuationToken: java.lang.String = null,
     encryptionKey: awsDashLambdaLib.awsDashLambdaMod.EncryptionKey with Anon_KMS = null
   ): Anon_ActionConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionConfiguration")(actionConfiguration)
-    __obj.updateDynamic("artifactCredentials")(artifactCredentials)
-    __obj.updateDynamic("inputArtifacts")(inputArtifacts)
-    __obj.updateDynamic("outputArtifacts")(outputArtifacts)
+    val __obj = js.Dynamic.literal(actionConfiguration = actionConfiguration, artifactCredentials = artifactCredentials, inputArtifacts = inputArtifacts, outputArtifacts = outputArtifacts)
     if (continuationToken != null) __obj.updateDynamic("continuationToken")(continuationToken)
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey)
     __obj.asInstanceOf[Anon_ActionConfiguration]

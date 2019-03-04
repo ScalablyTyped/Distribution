@@ -51,8 +51,11 @@ object BezierEdges {
     `control-point-weight`: scala.Double,
     `edge-distances`: scala.Double
   ): BezierEdges = {
-    val __obj = js.Dynamic.literal(`control-point-distance` = `control-point-distance`, `control-point-step-size` = `control-point-step-size`, `control-point-weight` = `control-point-weight`, `edge-distances` = `edge-distances`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("control-point-distance")(`control-point-distance`)
+    __obj.updateDynamic("control-point-step-size")(`control-point-step-size`)
+    __obj.updateDynamic("control-point-weight")(`control-point-weight`)
+    __obj.updateDynamic("edge-distances")(`edge-distances`)
     __obj.asInstanceOf[BezierEdges]
   }
 }

@@ -18,9 +18,7 @@ object Anon_RecordColumnsRecordEncoding {
     recordFormat: atPulumiPulumiLib.outputMod.Input[Anon_MappingParametersRecordFormatType],
     recordEncoding: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_RecordColumnsRecordEncoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recordColumns")(recordColumns.asInstanceOf[js.Any])
-    __obj.updateDynamic("recordFormat")(recordFormat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(recordColumns = recordColumns.asInstanceOf[js.Any], recordFormat = recordFormat.asInstanceOf[js.Any])
     if (recordEncoding != null) __obj.updateDynamic("recordEncoding")(recordEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_RecordColumnsRecordEncoding]
   }

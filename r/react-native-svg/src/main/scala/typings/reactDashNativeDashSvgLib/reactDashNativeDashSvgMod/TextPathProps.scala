@@ -133,9 +133,7 @@ object TextPathProps {
     xlinkHref: java.lang.String = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): TextPathProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("midLine")(midLine)
+    val __obj = js.Dynamic.literal(href = href, midLine = midLine)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline)
     if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)

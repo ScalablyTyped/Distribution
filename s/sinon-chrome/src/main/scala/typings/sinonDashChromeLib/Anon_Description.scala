@@ -18,8 +18,7 @@ object Anon_Description {
     description: java.lang.String = null,
     placeholders: org.scalablytyped.runtime.StringDictionary[Anon_Content] = null
   ): Anon_Description = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (description != null) __obj.updateDynamic("description")(description)
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
     __obj.asInstanceOf[Anon_Description]

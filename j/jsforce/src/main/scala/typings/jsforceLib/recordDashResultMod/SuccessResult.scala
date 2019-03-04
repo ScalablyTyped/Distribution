@@ -13,9 +13,8 @@ trait SuccessResult extends RecordResult {
 object SuccessResult {
   @scala.inline
   def apply(id: jsforceLib.salesforceDashIdMod.SalesforceId, success: jsforceLib.jsforceLibNumbers.`true`): SuccessResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(id = id, success = success)
+  
     __obj.asInstanceOf[SuccessResult]
   }
 }

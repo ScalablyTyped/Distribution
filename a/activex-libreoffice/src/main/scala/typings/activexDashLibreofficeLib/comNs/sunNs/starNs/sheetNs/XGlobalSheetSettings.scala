@@ -98,25 +98,8 @@ object XGlobalSheetSettings {
     UseTabCol: scala.Boolean,
     UserLists: activexDashInteropLib.SafeArray[java.lang.String]
   ): XGlobalSheetSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DoAutoComplete")(DoAutoComplete)
-    __obj.updateDynamic("EnterEdit")(EnterEdit)
-    __obj.updateDynamic("ExpandReferences")(ExpandReferences)
-    __obj.updateDynamic("ExtendFormat")(ExtendFormat)
-    __obj.updateDynamic("LinkUpdateMode")(LinkUpdateMode)
-    __obj.updateDynamic("MarkHeader")(MarkHeader)
-    __obj.updateDynamic("Metric")(Metric)
-    __obj.updateDynamic("MoveDirection")(MoveDirection)
-    __obj.updateDynamic("MoveSelection")(MoveSelection)
-    __obj.updateDynamic("PrintAllSheets")(PrintAllSheets)
-    __obj.updateDynamic("PrintEmptyPages")(PrintEmptyPages)
-    __obj.updateDynamic("RangeFinder")(RangeFinder)
-    __obj.updateDynamic("ReplaceCellsWarning")(ReplaceCellsWarning)
-    __obj.updateDynamic("Scale")(Scale)
-    __obj.updateDynamic("StatusBarFunction")(StatusBarFunction)
-    __obj.updateDynamic("UsePrinterMetrics")(UsePrinterMetrics)
-    __obj.updateDynamic("UseTabCol")(UseTabCol)
-    __obj.updateDynamic("UserLists")(UserLists)
+    val __obj = js.Dynamic.literal(DoAutoComplete = DoAutoComplete, EnterEdit = EnterEdit, ExpandReferences = ExpandReferences, ExtendFormat = ExtendFormat, LinkUpdateMode = LinkUpdateMode, MarkHeader = MarkHeader, Metric = Metric, MoveDirection = MoveDirection, MoveSelection = MoveSelection, PrintAllSheets = PrintAllSheets, PrintEmptyPages = PrintEmptyPages, RangeFinder = RangeFinder, ReplaceCellsWarning = ReplaceCellsWarning, Scale = Scale, StatusBarFunction = StatusBarFunction, UsePrinterMetrics = UsePrinterMetrics, UseTabCol = UseTabCol, UserLists = UserLists)
+  
     __obj.asInstanceOf[XGlobalSheetSettings]
   }
 }

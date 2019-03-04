@@ -14,10 +14,8 @@ trait Anon_CodeLine extends js.Object {
 object Anon_CodeLine {
   @scala.inline
   def apply(code: java.lang.String, line: scala.Double, point: scala.Double): Anon_CodeLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("point")(point)
+    val __obj = js.Dynamic.literal(code = code, line = line, point = point)
+  
     __obj.asInstanceOf[Anon_CodeLine]
   }
 }

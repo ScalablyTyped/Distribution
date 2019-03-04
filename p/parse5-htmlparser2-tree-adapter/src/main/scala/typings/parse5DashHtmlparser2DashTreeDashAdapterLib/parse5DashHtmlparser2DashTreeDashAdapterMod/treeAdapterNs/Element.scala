@@ -62,22 +62,10 @@ object Element {
     `x-attribsPrefix`: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     sourceCodeLocation: parse5Lib.parse5Mod.ElementLocation = null
   ): Element = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `x-attribsNamespace` = `x-attribsNamespace`, `x-attribsPrefix` = `x-attribsPrefix`)
-    __obj.updateDynamic("attribs")(attribs)
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("firstChild")(firstChild)
-    __obj.updateDynamic("lastChild")(lastChild)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("nextSibling")(nextSibling)
-    __obj.updateDynamic("nodeType")(nodeType)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("parentNode")(parentNode)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("previousSibling")(previousSibling)
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(attribs = attribs, childNodes = childNodes, children = children, firstChild = firstChild, lastChild = lastChild, name = name, namespace = namespace, next = next, nextSibling = nextSibling, nodeType = nodeType, parent = parent, parentNode = parentNode, prev = prev, previousSibling = previousSibling, tagName = tagName)
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("x-attribsNamespace")(`x-attribsNamespace`)
+    __obj.updateDynamic("x-attribsPrefix")(`x-attribsPrefix`)
     if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
     __obj.asInstanceOf[Element]
   }

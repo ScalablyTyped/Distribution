@@ -14,8 +14,8 @@ object Anon_Attr {
   def apply(
     _attr: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify XmlAttrs */ js.Any
   ): Anon_Attr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_attr")(_attr)
+    val __obj = js.Dynamic.literal(_attr = _attr)
+  
     __obj.asInstanceOf[Anon_Attr]
   }
 }

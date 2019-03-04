@@ -28,15 +28,8 @@ object Anon_CalendarDayView {
     calendarWeekView: java.lang.String,
     calendarYearView: java.lang.String
   ): Anon_CalendarDayView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarDayView")(calendarDayView)
-    __obj.updateDynamic("calendarHourList")(calendarHourList)
-    __obj.updateDynamic("calendarMonthCell")(calendarMonthCell)
-    __obj.updateDynamic("calendarMonthCellEvents")(calendarMonthCellEvents)
-    __obj.updateDynamic("calendarMonthView")(calendarMonthView)
-    __obj.updateDynamic("calendarSlideBox")(calendarSlideBox)
-    __obj.updateDynamic("calendarWeekView")(calendarWeekView)
-    __obj.updateDynamic("calendarYearView")(calendarYearView)
+    val __obj = js.Dynamic.literal(calendarDayView = calendarDayView, calendarHourList = calendarHourList, calendarMonthCell = calendarMonthCell, calendarMonthCellEvents = calendarMonthCellEvents, calendarMonthView = calendarMonthView, calendarSlideBox = calendarSlideBox, calendarWeekView = calendarWeekView, calendarYearView = calendarYearView)
+  
     __obj.asInstanceOf[Anon_CalendarDayView]
   }
 }

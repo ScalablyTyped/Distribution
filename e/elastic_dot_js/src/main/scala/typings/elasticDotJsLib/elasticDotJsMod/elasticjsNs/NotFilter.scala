@@ -42,13 +42,8 @@ object NotFilter {
     name: js.Function1[java.lang.String, NotFilter],
     toJSON: js.Function0[NotFilter]
   ): NotFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, filter = filter, name = name, toJSON = toJSON)
+  
     __obj.asInstanceOf[NotFilter]
   }
 }

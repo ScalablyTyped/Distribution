@@ -13,9 +13,8 @@ trait UniqueItemsParams extends ErrorParameters {
 object UniqueItemsParams {
   @scala.inline
   def apply(i: scala.Double, j: scala.Double): UniqueItemsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i")(i)
-    __obj.updateDynamic("j")(j)
+    val __obj = js.Dynamic.literal(i = i, j = j)
+  
     __obj.asInstanceOf[UniqueItemsParams]
   }
 }

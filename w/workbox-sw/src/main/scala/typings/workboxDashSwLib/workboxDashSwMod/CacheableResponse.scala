@@ -20,8 +20,8 @@ trait CacheableResponse extends js.Object {
 object CacheableResponse {
   @scala.inline
   def apply(isResponseCacheable: js.Function1[stdLib.Response, scala.Boolean]): CacheableResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isResponseCacheable")(isResponseCacheable)
+    val __obj = js.Dynamic.literal(isResponseCacheable = isResponseCacheable)
+  
     __obj.asInstanceOf[CacheableResponse]
   }
 }

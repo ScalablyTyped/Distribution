@@ -44,10 +44,8 @@ object XLSparkline {
     changeType: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit],
     createSparkline: js.Function5[java.lang.String, java.lang.String, java.lang.String, js.Any, scala.Double, scala.Unit]
   ): XLSparkline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changePointColor")(changePointColor)
-    __obj.updateDynamic("changeType")(changeType)
-    __obj.updateDynamic("createSparkline")(createSparkline)
+    val __obj = js.Dynamic.literal(changePointColor = changePointColor, changeType = changeType, createSparkline = createSparkline)
+  
     __obj.asInstanceOf[XLSparkline]
   }
 }

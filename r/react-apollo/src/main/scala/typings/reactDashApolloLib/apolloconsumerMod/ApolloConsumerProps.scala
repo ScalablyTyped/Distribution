@@ -17,8 +17,8 @@ object ApolloConsumerProps {
       reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
     ]
   ): ApolloConsumerProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[ApolloConsumerProps]
   }
 }

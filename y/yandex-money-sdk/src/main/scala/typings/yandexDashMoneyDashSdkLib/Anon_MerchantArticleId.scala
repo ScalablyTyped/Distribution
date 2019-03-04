@@ -14,10 +14,8 @@ trait Anon_MerchantArticleId extends js.Object {
 object Anon_MerchantArticleId {
   @scala.inline
   def apply(merchantArticleId: java.lang.String, secret: java.lang.String, serial: java.lang.String): Anon_MerchantArticleId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantArticleId")(merchantArticleId)
-    __obj.updateDynamic("secret")(secret)
-    __obj.updateDynamic("serial")(serial)
+    val __obj = js.Dynamic.literal(merchantArticleId = merchantArticleId, secret = secret, serial = serial)
+  
     __obj.asInstanceOf[Anon_MerchantArticleId]
   }
 }

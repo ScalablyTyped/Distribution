@@ -18,10 +18,8 @@ object Anon_Cut {
     partitionFirst: cytoscapeLib.cytoscapeMod.cytoscapeNs.NodeCollection,
     partitionSecond: cytoscapeLib.cytoscapeMod.cytoscapeNs.NodeCollection
   ): Anon_Cut = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cut")(cut)
-    __obj.updateDynamic("partitionFirst")(partitionFirst)
-    __obj.updateDynamic("partitionSecond")(partitionSecond)
+    val __obj = js.Dynamic.literal(cut = cut, partitionFirst = partitionFirst, partitionSecond = partitionSecond)
+  
     __obj.asInstanceOf[Anon_Cut]
   }
 }

@@ -123,18 +123,8 @@ object OrganizationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
     ]
   ): OrganizationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearOrgPolicy")(clearOrgPolicy)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getEffectiveOrgPolicy")(getEffectiveOrgPolicy)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("getOrgPolicy")(getOrgPolicy)
-    __obj.updateDynamic("listAvailableOrgPolicyConstraints")(listAvailableOrgPolicyConstraints)
-    __obj.updateDynamic("listOrgPolicies")(listOrgPolicies)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("setOrgPolicy")(setOrgPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    val __obj = js.Dynamic.literal(clearOrgPolicy = clearOrgPolicy, get = get, getEffectiveOrgPolicy = getEffectiveOrgPolicy, getIamPolicy = getIamPolicy, getOrgPolicy = getOrgPolicy, listAvailableOrgPolicyConstraints = listAvailableOrgPolicyConstraints, listOrgPolicies = listOrgPolicies, search = search, setIamPolicy = setIamPolicy, setOrgPolicy = setOrgPolicy, testIamPermissions = testIamPermissions)
+  
     __obj.asInstanceOf[OrganizationsResource]
   }
 }

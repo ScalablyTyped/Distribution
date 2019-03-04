@@ -20,10 +20,8 @@ object ColorStatistics {
     Minimum: java.lang.String,
     `Standard Deviation`: java.lang.String
   ): ColorStatistics = {
-    val __obj = js.Dynamic.literal(`Standard Deviation` = `Standard Deviation`)
-    __obj.updateDynamic("Maximum")(Maximum)
-    __obj.updateDynamic("Mean")(Mean)
-    __obj.updateDynamic("Minimum")(Minimum)
+    val __obj = js.Dynamic.literal(Maximum = Maximum, Mean = Mean, Minimum = Minimum)
+    __obj.updateDynamic("Standard Deviation")(`Standard Deviation`)
     __obj.asInstanceOf[ColorStatistics]
   }
 }

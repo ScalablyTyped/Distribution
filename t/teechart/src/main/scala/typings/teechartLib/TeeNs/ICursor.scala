@@ -12,8 +12,8 @@ trait ICursor extends js.Object {
 object ICursor {
   @scala.inline
   def apply(cursor: java.lang.String): ICursor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cursor")(cursor)
+    val __obj = js.Dynamic.literal(cursor = cursor)
+  
     __obj.asInstanceOf[ICursor]
   }
 }

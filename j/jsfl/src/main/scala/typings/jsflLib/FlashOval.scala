@@ -25,11 +25,8 @@ object FlashOval {
     innerRadius: scala.Double,
     startAngle: scala.Double
   ): FlashOval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closePath")(closePath)
-    __obj.updateDynamic("endAngle")(endAngle)
-    __obj.updateDynamic("innerRadius")(innerRadius)
-    __obj.updateDynamic("startAngle")(startAngle)
+    val __obj = js.Dynamic.literal(closePath = closePath, endAngle = endAngle, innerRadius = innerRadius, startAngle = startAngle)
+  
     __obj.asInstanceOf[FlashOval]
   }
 }

@@ -34,16 +34,8 @@ object IUtilityService {
     seti18n: js.Function2[ngDashGridLib.ngGridNs.IGridScope, java.lang.String, scala.Unit],
     visualLength: js.Function1[js.Any, scala.Double]
   ): IUtilityService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endsWith")(endsWith)
-    __obj.updateDynamic("evalProperty")(evalProperty)
-    __obj.updateDynamic("forIn")(forIn)
-    __obj.updateDynamic("getElementsByClassName")(getElementsByClassName)
-    __obj.updateDynamic("getInstanceType")(getInstanceType)
-    __obj.updateDynamic("isNullOrUndefined")(isNullOrUndefined)
-    __obj.updateDynamic("newId")(newId)
-    __obj.updateDynamic("seti18n")(seti18n)
-    __obj.updateDynamic("visualLength")(visualLength)
+    val __obj = js.Dynamic.literal(endsWith = endsWith, evalProperty = evalProperty, forIn = forIn, getElementsByClassName = getElementsByClassName, getInstanceType = getInstanceType, isNullOrUndefined = isNullOrUndefined, newId = newId, seti18n = seti18n, visualLength = visualLength)
+  
     __obj.asInstanceOf[IUtilityService]
   }
 }

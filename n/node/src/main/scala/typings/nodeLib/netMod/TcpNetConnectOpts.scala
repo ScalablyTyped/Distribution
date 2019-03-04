@@ -28,8 +28,7 @@ object TcpNetConnectOpts {
     timeout: scala.Int | scala.Double = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined
   ): TcpNetConnectOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(port = port)
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])

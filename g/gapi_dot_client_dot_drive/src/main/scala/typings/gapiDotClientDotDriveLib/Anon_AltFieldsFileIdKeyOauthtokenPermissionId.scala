@@ -60,9 +60,7 @@ object Anon_AltFieldsFileIdKeyOauthtokenPermissionId {
     useDomainAdminAccess: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFileIdKeyOauthtokenPermissionId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
-    __obj.updateDynamic("permissionId")(permissionId)
+    val __obj = js.Dynamic.literal(fileId = fileId, permissionId = permissionId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

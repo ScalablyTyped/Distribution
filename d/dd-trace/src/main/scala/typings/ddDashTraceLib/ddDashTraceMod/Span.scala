@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 object Span {
   @scala.inline
   def apply(context: js.Function0[SpanContext]): Span = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
+  
     __obj.asInstanceOf[Span]
   }
 }

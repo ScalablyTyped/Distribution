@@ -34,13 +34,8 @@ object TableFilterField {
     Operator: FilterOperator,
     StringValue: java.lang.String
   ): TableFilterField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Connection")(Connection)
-    __obj.updateDynamic("Field")(Field)
-    __obj.updateDynamic("IsNumeric")(IsNumeric)
-    __obj.updateDynamic("NumericValue")(NumericValue)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("StringValue")(StringValue)
+    val __obj = js.Dynamic.literal(Connection = Connection, Field = Field, IsNumeric = IsNumeric, NumericValue = NumericValue, Operator = Operator, StringValue = StringValue)
+  
     __obj.asInstanceOf[TableFilterField]
   }
 }

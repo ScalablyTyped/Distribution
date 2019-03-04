@@ -26,8 +26,7 @@ object UrlData {
     priority: scala.Double | java.lang.String = null,
     video: sitemap2Lib.Anon_Contentloc = null
   ): UrlData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (chengefreq != null) __obj.updateDynamic("chengefreq")(chengefreq)
     if (lastmod != null) __obj.updateDynamic("lastmod")(lastmod)
     if (!js.isUndefined(lastmodInISO)) __obj.updateDynamic("lastmodInISO")(lastmodInISO)

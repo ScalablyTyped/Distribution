@@ -13,8 +13,8 @@ trait CallbackArgument extends js.Object {
 object CallbackArgument {
   @scala.inline
   def apply(isValid: scala.Boolean, `type`: reactDashCreditDashCardsLib.Anon_Issuer): CallbackArgument = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isValid")(isValid)
+    val __obj = js.Dynamic.literal(isValid = isValid)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CallbackArgument]
   }
 }

@@ -20,9 +20,7 @@ object ErrorEventObject {
     detailedMessage: java.lang.String = null,
     options: js.Any = null
   ): ErrorEventObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(id = id, message = message)
     if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[ErrorEventObject]

@@ -29,9 +29,8 @@ object TransformationMethod {
       scala.Unit
     ]
   ): TransformationMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTransformation")(getTransformation)
-    __obj.updateDynamic("onFocusChanged")(onFocusChanged)
+    val __obj = js.Dynamic.literal(getTransformation = getTransformation, onFocusChanged = onFocusChanged)
+  
     __obj.asInstanceOf[TransformationMethod]
   }
 }

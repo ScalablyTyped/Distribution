@@ -44,9 +44,8 @@ trait ExternalReference extends js.Object {
 object ExternalReference {
   @scala.inline
   def apply(Index: scala.Double, Reference: js.Any): ExternalReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Index")(Index)
-    __obj.updateDynamic("Reference")(Reference)
+    val __obj = js.Dynamic.literal(Index = Index, Reference = Reference)
+  
     __obj.asInstanceOf[ExternalReference]
   }
 }

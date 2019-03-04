@@ -24,13 +24,8 @@ object Anon_Control {
     regExpReplacement: js.Function1[java.lang.String, java.lang.String],
     shellArg: js.Function1[java.lang.String, java.lang.String]
   ): Anon_Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("htmlSpecialChars")(htmlSpecialChars)
-    __obj.updateDynamic("regExpPattern")(regExpPattern)
-    __obj.updateDynamic("regExpReplacement")(regExpReplacement)
-    __obj.updateDynamic("shellArg")(shellArg)
+    val __obj = js.Dynamic.literal(control = control, format = format, htmlSpecialChars = htmlSpecialChars, regExpPattern = regExpPattern, regExpReplacement = regExpReplacement, shellArg = shellArg)
+  
     __obj.asInstanceOf[Anon_Control]
   }
 }

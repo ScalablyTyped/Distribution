@@ -26,9 +26,7 @@ object Anon_DeleteOnTermination {
     snapshotId: java.lang.String = null,
     volumeType: java.lang.String = null
   ): Anon_DeleteOnTermination = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName)
-    __obj.updateDynamic("volumeSize")(volumeSize)
+    val __obj = js.Dynamic.literal(deviceName = deviceName, volumeSize = volumeSize)
     if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])

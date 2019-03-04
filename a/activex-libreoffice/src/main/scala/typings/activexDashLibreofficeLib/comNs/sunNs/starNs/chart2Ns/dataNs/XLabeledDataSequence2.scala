@@ -27,19 +27,8 @@ object XLabeledDataSequence2 {
     setLabel: js.Function1[XDataSequence, scala.Unit],
     setValues: js.Function1[XDataSequence, scala.Unit]
   ): XLabeledDataSequence2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("Values")(Values)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addModifyListener")(addModifyListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getValues")(getValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setValues")(setValues)
+    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = acquire, addModifyListener = addModifyListener, createClone = createClone, getLabel = getLabel, getValues = getValues, queryInterface = queryInterface, release = release, removeModifyListener = removeModifyListener, setLabel = setLabel, setValues = setValues)
+  
     __obj.asInstanceOf[XLabeledDataSequence2]
   }
 }

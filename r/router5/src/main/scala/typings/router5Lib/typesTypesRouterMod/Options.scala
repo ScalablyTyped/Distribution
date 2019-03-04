@@ -34,15 +34,7 @@ object Options {
     defaultRoute: java.lang.String = null,
     queryParams: searchDashParamsLib.typingsEncodeMod.IOptions = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowNotFound")(allowNotFound)
-    __obj.updateDynamic("autoCleanUp")(autoCleanUp)
-    __obj.updateDynamic("caseSensitive")(caseSensitive)
-    __obj.updateDynamic("queryParamsMode")(queryParamsMode)
-    __obj.updateDynamic("rewritePathOnMatch")(rewritePathOnMatch)
-    __obj.updateDynamic("strictTrailingSlash")(strictTrailingSlash)
-    __obj.updateDynamic("strongMatching")(strongMatching)
-    __obj.updateDynamic("trailingSlashMode")(trailingSlashMode)
+    val __obj = js.Dynamic.literal(allowNotFound = allowNotFound, autoCleanUp = autoCleanUp, caseSensitive = caseSensitive, queryParamsMode = queryParamsMode, rewritePathOnMatch = rewritePathOnMatch, strictTrailingSlash = strictTrailingSlash, strongMatching = strongMatching, trailingSlashMode = trailingSlashMode)
     if (defaultParams != null) __obj.updateDynamic("defaultParams")(defaultParams)
     if (defaultRoute != null) __obj.updateDynamic("defaultRoute")(defaultRoute)
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams)

@@ -32,17 +32,8 @@ object XGridControl {
     removeGridControlListener: js.Function1[XGridControlListener, scala.Unit],
     setCurrentColumnPosition: js.Function1[scala.Double, scala.Unit]
   ): XGridControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentColumnPosition")(CurrentColumnPosition)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addGridControlListener")(addGridControlListener)
-    __obj.updateDynamic("getCurrentColumnPosition")(getCurrentColumnPosition)
-    __obj.updateDynamic("queryFieldData")(queryFieldData)
-    __obj.updateDynamic("queryFieldDataType")(queryFieldDataType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeGridControlListener")(removeGridControlListener)
-    __obj.updateDynamic("setCurrentColumnPosition")(setCurrentColumnPosition)
+    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = acquire, addGridControlListener = addGridControlListener, getCurrentColumnPosition = getCurrentColumnPosition, queryFieldData = queryFieldData, queryFieldDataType = queryFieldDataType, queryInterface = queryInterface, release = release, removeGridControlListener = removeGridControlListener, setCurrentColumnPosition = setCurrentColumnPosition)
+  
     __obj.asInstanceOf[XGridControl]
   }
 }

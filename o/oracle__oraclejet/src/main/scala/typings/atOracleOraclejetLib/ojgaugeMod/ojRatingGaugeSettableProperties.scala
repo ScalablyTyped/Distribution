@@ -46,23 +46,7 @@ object ojRatingGaugeSettableProperties {
     transientValue: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null
   ): ojRatingGaugeSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("changedState")(changedState)
-    __obj.updateDynamic("hoverState")(hoverState)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    __obj.updateDynamic("readonly")(readonly)
-    __obj.updateDynamic("selectedState")(selectedState)
-    __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    __obj.updateDynamic("thresholds")(thresholds)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("unselectedState")(unselectedState)
-    __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changed = changed, changedState = changedState, hoverState = hoverState, max = max, min = min, orientation = orientation.asInstanceOf[js.Any], preserveAspectRatio = preserveAspectRatio.asInstanceOf[js.Any], readonly = readonly, selectedState = selectedState, step = step.asInstanceOf[js.Any], thresholds = thresholds, tooltip = tooltip, trackResize = trackResize.asInstanceOf[js.Any], translations = translations, unselectedState = unselectedState, visualEffects = visualEffects.asInstanceOf[js.Any])
     if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojRatingGaugeSettableProperties]

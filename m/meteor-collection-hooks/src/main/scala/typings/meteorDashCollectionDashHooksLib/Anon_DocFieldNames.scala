@@ -92,13 +92,8 @@ object Anon_DocFieldNames {
       scala.Unit
     ]
   ): Anon_DocFieldNames[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findOne")(findOne)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("upsert")(upsert)
+    val __obj = js.Dynamic.literal(find = find, findOne = findOne, insert = insert, remove = remove, update = update, upsert = upsert)
+  
     __obj.asInstanceOf[Anon_DocFieldNames[T]]
   }
 }

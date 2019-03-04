@@ -16,9 +16,8 @@ object DefaultRendererPlugins {
     accessibility: pixiDotJsLib.PIXINs.accessibilityNs.AccessibilityManager,
     interaction: pixiDotJsLib.PIXINs.interactionNs.InteractionManager
   ): DefaultRendererPlugins = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessibility")(accessibility)
-    __obj.updateDynamic("interaction")(interaction)
+    val __obj = js.Dynamic.literal(accessibility = accessibility, interaction = interaction)
+  
     __obj.asInstanceOf[DefaultRendererPlugins]
   }
 }

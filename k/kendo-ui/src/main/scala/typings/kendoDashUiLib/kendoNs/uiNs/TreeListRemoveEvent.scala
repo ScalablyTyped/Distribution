@@ -19,10 +19,7 @@ object TreeListRemoveEvent {
     model: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
     row: kendoDashUiLib.JQuery = null
   ): TreeListRemoveEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (model != null) __obj.updateDynamic("model")(model)
     if (row != null) __obj.updateDynamic("row")(row)
     __obj.asInstanceOf[TreeListRemoveEvent]

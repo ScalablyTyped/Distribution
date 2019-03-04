@@ -34,11 +34,7 @@ object CanvasMapTypeOptions {
     uid: java.lang.String = null,
     vendor: java.lang.String = null
   ): CanvasMapTypeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxZoom")(maxZoom)
-    __obj.updateDynamic("minZoom")(minZoom)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("projection")(projection)
+    val __obj = js.Dynamic.literal(maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection)
     if (!js.isUndefined(darktheme)) __obj.updateDynamic("darktheme")(darktheme)
     if (getTileData != null) __obj.updateDynamic("getTileData")(getTileData)
     if (provider != null) __obj.updateDynamic("provider")(provider)

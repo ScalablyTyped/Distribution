@@ -64,9 +64,7 @@ object VpcEndpointArgs {
     subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     vpcEndpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VpcEndpointArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
     if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
     if (privateDnsEnabled != null) __obj.updateDynamic("privateDnsEnabled")(privateDnsEnabled.asInstanceOf[js.Any])

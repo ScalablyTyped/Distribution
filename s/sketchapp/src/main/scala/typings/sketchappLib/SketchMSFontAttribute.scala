@@ -18,9 +18,7 @@ object SketchMSFontAttribute {
     attributes: Anon_Name,
     _archive: java.lang.String = null
   ): SketchMSFontAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("attributes")(attributes)
+    val __obj = js.Dynamic.literal(_class = _class, attributes = attributes)
     if (_archive != null) __obj.updateDynamic("_archive")(_archive)
     __obj.asInstanceOf[SketchMSFontAttribute]
   }

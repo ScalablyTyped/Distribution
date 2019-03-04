@@ -80,11 +80,7 @@ object CompositionContext {
     viewModel: js.Any = null,
     viewModelResource: HtmlBehaviorResource = null
   ): CompositionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindingContext")(bindingContext)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("viewResources")(viewResources)
-    __obj.updateDynamic("viewSlot")(viewSlot)
+    val __obj = js.Dynamic.literal(bindingContext = bindingContext, container = container, viewResources = viewResources, viewSlot = viewSlot)
     if (childContainer != null) __obj.updateDynamic("childContainer")(childContainer)
     if (host != null) __obj.updateDynamic("host")(host)
     if (model != null) __obj.updateDynamic("model")(model)

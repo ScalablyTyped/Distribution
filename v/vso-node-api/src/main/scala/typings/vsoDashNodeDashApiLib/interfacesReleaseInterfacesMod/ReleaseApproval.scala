@@ -101,26 +101,8 @@ object ReleaseApproval {
     trialNumber: scala.Double,
     url: java.lang.String
   ): ReleaseApproval = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approvalType")(approvalType)
-    __obj.updateDynamic("approvedBy")(approvedBy)
-    __obj.updateDynamic("approver")(approver)
-    __obj.updateDynamic("attempt")(attempt)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isAutomated")(isAutomated)
-    __obj.updateDynamic("isNotificationOn")(isNotificationOn)
-    __obj.updateDynamic("modifiedOn")(modifiedOn)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
-    __obj.updateDynamic("releaseEnvironment")(releaseEnvironment)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("trialNumber")(trialNumber)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(approvalType = approvalType, approvedBy = approvedBy, approver = approver, attempt = attempt, comments = comments, createdOn = createdOn, history = history, id = id, isAutomated = isAutomated, isNotificationOn = isNotificationOn, modifiedOn = modifiedOn, rank = rank, release = release, releaseDefinition = releaseDefinition, releaseEnvironment = releaseEnvironment, revision = revision, status = status, trialNumber = trialNumber, url = url)
+  
     __obj.asInstanceOf[ReleaseApproval]
   }
 }

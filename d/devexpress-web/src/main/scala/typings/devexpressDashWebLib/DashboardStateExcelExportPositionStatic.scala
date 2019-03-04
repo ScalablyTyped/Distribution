@@ -19,9 +19,8 @@ trait DashboardStateExcelExportPositionStatic extends js.Object {
 object DashboardStateExcelExportPositionStatic {
   @scala.inline
   def apply(Below: java.lang.String, SeparateSheet: java.lang.String): DashboardStateExcelExportPositionStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Below")(Below)
-    __obj.updateDynamic("SeparateSheet")(SeparateSheet)
+    val __obj = js.Dynamic.literal(Below = Below, SeparateSheet = SeparateSheet)
+  
     __obj.asInstanceOf[DashboardStateExcelExportPositionStatic]
   }
 }

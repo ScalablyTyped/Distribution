@@ -24,8 +24,7 @@ object SourceImageOptions {
     resolutions: js.Array[scala.Double] = null,
     state: openlayersLib.openlayersMod.sourceNs.State = null
   ): SourceImageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(projection = projection.asInstanceOf[js.Any])
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent)
     if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])

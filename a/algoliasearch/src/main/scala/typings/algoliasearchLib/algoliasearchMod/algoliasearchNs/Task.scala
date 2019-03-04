@@ -14,9 +14,7 @@ trait Task extends js.Object {
 object Task {
   @scala.inline
   def apply(createdAt: java.lang.String, taskID: scala.Double, objectID: java.lang.String = null): Task = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createdAt")(createdAt)
-    __obj.updateDynamic("taskID")(taskID)
+    val __obj = js.Dynamic.literal(createdAt = createdAt, taskID = taskID)
     if (objectID != null) __obj.updateDynamic("objectID")(objectID)
     __obj.asInstanceOf[Task]
   }

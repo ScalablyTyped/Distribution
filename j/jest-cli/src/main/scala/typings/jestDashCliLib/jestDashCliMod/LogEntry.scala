@@ -14,9 +14,8 @@ trait LogEntry extends js.Object {
 object LogEntry {
   @scala.inline
   def apply(message: LogMessage, origin: java.lang.String, `type`: LogType): LogEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(message = message, origin = origin)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LogEntry]
   }
 }

@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
 object GraphPattern {
   @scala.inline
   def apply(name: Term, patterns: js.Array[Pattern], `type`: sparqljsLib.sparqljsLibStrings.graph): GraphPattern = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("patterns")(patterns)
+    val __obj = js.Dynamic.literal(name = name, patterns = patterns)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GraphPattern]
   }
 }

@@ -12,8 +12,8 @@ trait Navigator extends js.Object {
 object Navigator {
   @scala.inline
   def apply(clipboard: Clipboard): Navigator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clipboard")(clipboard)
+    val __obj = js.Dynamic.literal(clipboard = clipboard)
+  
     __obj.asInstanceOf[Navigator]
   }
 }

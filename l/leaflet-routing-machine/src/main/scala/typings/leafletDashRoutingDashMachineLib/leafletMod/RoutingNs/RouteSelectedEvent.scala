@@ -12,8 +12,8 @@ trait RouteSelectedEvent extends js.Object {
 object RouteSelectedEvent {
   @scala.inline
   def apply(route: IRoute): RouteSelectedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(route = route)
+  
     __obj.asInstanceOf[RouteSelectedEvent]
   }
 }

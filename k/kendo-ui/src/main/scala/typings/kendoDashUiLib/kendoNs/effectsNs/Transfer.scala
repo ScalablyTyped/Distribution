@@ -16,12 +16,8 @@ object Transfer {
     reverse: js.Function0[kendoDashUiLib.JQueryPromise[_]],
     stop: js.Function0[Transfer]
   ): Transfer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("play")(play)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(add = add, duration = duration, play = play, reverse = reverse, stop = stop)
+  
     __obj.asInstanceOf[Transfer]
   }
 }

@@ -18,8 +18,7 @@ object TranspileOutput {
     diagnostics: js.Array[Diagnostic] = null,
     sourceMapText: java.lang.String = null
   ): TranspileOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outputText")(outputText)
+    val __obj = js.Dynamic.literal(outputText = outputText)
     if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
     if (sourceMapText != null) __obj.updateDynamic("sourceMapText")(sourceMapText)
     __obj.asInstanceOf[TranspileOutput]

@@ -20,11 +20,8 @@ object Anon_Full {
     oneLevel: scala.Double,
     oneLevelPlusNestedEmptyFolders: scala.Double
   ): Anon_Full = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("oneLevel")(oneLevel)
-    __obj.updateDynamic("oneLevelPlusNestedEmptyFolders")(oneLevelPlusNestedEmptyFolders)
+    val __obj = js.Dynamic.literal(full = full, none = none, oneLevel = oneLevel, oneLevelPlusNestedEmptyFolders = oneLevelPlusNestedEmptyFolders)
+  
     __obj.asInstanceOf[Anon_Full]
   }
 }

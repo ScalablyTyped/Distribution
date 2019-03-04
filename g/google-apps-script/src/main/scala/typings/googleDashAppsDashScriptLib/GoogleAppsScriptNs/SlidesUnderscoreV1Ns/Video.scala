@@ -25,11 +25,8 @@ object Video {
     url: java.lang.String,
     video_properties: VideoProperties
   ): Video = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("video_properties")(video_properties)
+    val __obj = js.Dynamic.literal(id = id, source = source, url = url, video_properties = video_properties)
+  
     __obj.asInstanceOf[Video]
   }
 }

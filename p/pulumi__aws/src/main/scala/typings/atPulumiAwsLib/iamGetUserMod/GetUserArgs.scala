@@ -15,8 +15,8 @@ trait GetUserArgs extends js.Object {
 object GetUserArgs {
   @scala.inline
   def apply(userName: java.lang.String): GetUserArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userName")(userName)
+    val __obj = js.Dynamic.literal(userName = userName)
+  
     __obj.asInstanceOf[GetUserArgs]
   }
 }

@@ -45,8 +45,7 @@ object StepLabelProps {
     orientation: atMaterialDashUiCoreLib.stepperStepperMod.Orientation = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): StepLabelProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (StepIconComponent != null) __obj.updateDynamic("StepIconComponent")(StepIconComponent.asInstanceOf[js.Any])
     if (StepIconProps != null) __obj.updateDynamic("StepIconProps")(StepIconProps)
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)

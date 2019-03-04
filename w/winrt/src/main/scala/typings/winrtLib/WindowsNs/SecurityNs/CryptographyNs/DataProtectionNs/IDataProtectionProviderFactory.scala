@@ -12,8 +12,8 @@ trait IDataProtectionProviderFactory extends js.Object {
 object IDataProtectionProviderFactory {
   @scala.inline
   def apply(createOverloadExplicit: js.Function1[java.lang.String, DataProtectionProvider]): IDataProtectionProviderFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createOverloadExplicit")(createOverloadExplicit)
+    val __obj = js.Dynamic.literal(createOverloadExplicit = createOverloadExplicit)
+  
     __obj.asInstanceOf[IDataProtectionProviderFactory]
   }
 }

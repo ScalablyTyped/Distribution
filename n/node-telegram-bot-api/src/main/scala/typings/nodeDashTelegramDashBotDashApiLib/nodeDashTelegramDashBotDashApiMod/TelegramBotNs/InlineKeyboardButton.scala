@@ -26,8 +26,7 @@ object InlineKeyboardButton {
     switch_inline_query_current_chat: java.lang.String = null,
     url: java.lang.String = null
   ): InlineKeyboardButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (callback_data != null) __obj.updateDynamic("callback_data")(callback_data)
     if (callback_game != null) __obj.updateDynamic("callback_game")(callback_game)
     if (!js.isUndefined(pay)) __obj.updateDynamic("pay")(pay)

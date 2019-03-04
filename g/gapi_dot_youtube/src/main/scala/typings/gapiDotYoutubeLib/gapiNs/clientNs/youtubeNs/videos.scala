@@ -64,13 +64,8 @@ object videos {
       gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeVideoResource]
     ]
   ): videos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("getRating")(getRating)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("rate")(rate)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, getRating = getRating, insert = insert, list = list, rate = rate, update = update)
+  
     __obj.asInstanceOf[videos]
   }
 }

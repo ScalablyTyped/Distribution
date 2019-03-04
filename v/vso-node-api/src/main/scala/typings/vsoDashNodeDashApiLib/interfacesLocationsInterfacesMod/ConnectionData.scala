@@ -47,14 +47,8 @@ object ConnectionData {
     locationServiceData: LocationServiceData,
     webApplicationRelativeDirectory: java.lang.String
   ): ConnectionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticatedUser")(authenticatedUser)
-    __obj.updateDynamic("authorizedUser")(authorizedUser)
-    __obj.updateDynamic("deploymentId")(deploymentId)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("lastUserAccess")(lastUserAccess)
-    __obj.updateDynamic("locationServiceData")(locationServiceData)
-    __obj.updateDynamic("webApplicationRelativeDirectory")(webApplicationRelativeDirectory)
+    val __obj = js.Dynamic.literal(authenticatedUser = authenticatedUser, authorizedUser = authorizedUser, deploymentId = deploymentId, instanceId = instanceId, lastUserAccess = lastUserAccess, locationServiceData = locationServiceData, webApplicationRelativeDirectory = webApplicationRelativeDirectory)
+  
     __obj.asInstanceOf[ConnectionData]
   }
 }

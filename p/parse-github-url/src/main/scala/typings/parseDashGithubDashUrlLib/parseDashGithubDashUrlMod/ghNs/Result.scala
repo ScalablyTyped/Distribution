@@ -37,8 +37,7 @@ object Result {
     search: java.lang.String = null,
     slashes: js.UndefOr[scala.Boolean] = js.undefined
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branch")(branch)
+    val __obj = js.Dynamic.literal(branch = branch)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (filepath != null) __obj.updateDynamic("filepath")(filepath)
     if (hash != null) __obj.updateDynamic("hash")(hash)

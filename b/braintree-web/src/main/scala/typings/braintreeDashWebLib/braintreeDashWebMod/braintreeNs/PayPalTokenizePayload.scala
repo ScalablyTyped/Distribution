@@ -14,9 +14,8 @@ trait PayPalTokenizePayload extends js.Object {
 object PayPalTokenizePayload {
   @scala.inline
   def apply(details: PayPalAccountDetails, nonce: java.lang.String, `type`: java.lang.String): PayPalTokenizePayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(details = details, nonce = nonce)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PayPalTokenizePayload]
   }
 }

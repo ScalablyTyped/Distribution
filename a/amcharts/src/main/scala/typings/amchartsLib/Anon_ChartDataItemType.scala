@@ -19,9 +19,8 @@ object Anon_ChartDataItemType {
     dataItem: amchartsLib.sliceMod.default,
     `type`: java.lang.String
   ): Anon_ChartDataItemType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dataItem")(dataItem)
+    val __obj = js.Dynamic.literal(chart = chart, dataItem = dataItem)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ChartDataItemType]
   }
 }

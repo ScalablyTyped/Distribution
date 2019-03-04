@@ -54,14 +54,8 @@ object VersionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
     ]
   ): VersionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("live")(live)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("set_latest")(set_latest)
-    __obj.updateDynamic("undelete")(undelete)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, live = live, publish = publish, set_latest = set_latest, undelete = undelete, update = update)
+  
     __obj.asInstanceOf[VersionsResource]
   }
 }

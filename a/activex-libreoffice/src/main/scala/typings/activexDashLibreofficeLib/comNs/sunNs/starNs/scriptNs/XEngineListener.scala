@@ -35,14 +35,8 @@ object XEngineListener {
     release: js.Function0[scala.Unit],
     running: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XEngineListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("finished")(finished)
-    __obj.updateDynamic("interrupt")(interrupt)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("running")(running)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, finished = finished, interrupt = interrupt, queryInterface = queryInterface, release = release, running = running)
+  
     __obj.asInstanceOf[XEngineListener]
   }
 }

@@ -55,9 +55,7 @@ object MapboxProps {
     viewState: ViewState = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): MapboxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl)
     if (container != null) __obj.updateDynamic("container")(container)
     if (gl != null) __obj.updateDynamic("gl")(gl)

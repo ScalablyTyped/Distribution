@@ -29,10 +29,8 @@ object Issue {
     message: java.lang.String,
     `type`: IssueType
   ): Issue = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(category = category, data = data, message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Issue]
   }
 }

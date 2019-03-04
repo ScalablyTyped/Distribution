@@ -36,9 +36,7 @@ object AposConstructor {
     root: java.lang.String = null,
     rootDir: java.lang.String = null
   ): AposConstructor[M, O] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("shortName")(shortName)
+    val __obj = js.Dynamic.literal(modules = modules, shortName = shortName)
     if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
     if (afterListen != null) __obj.updateDynamic("afterListen")(afterListen)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)

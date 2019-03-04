@@ -16,8 +16,8 @@ object IRandomAccessStreamReference {
       winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IRandomAccessStreamWithContentType]
     ]
   ): IRandomAccessStreamReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openReadAsync")(openReadAsync)
+    val __obj = js.Dynamic.literal(openReadAsync = openReadAsync)
+  
     __obj.asInstanceOf[IRandomAccessStreamReference]
   }
 }

@@ -26,13 +26,8 @@ object TextContentItem {
     transform: js.Array[scala.Double],
     width: scala.Double
   ): TextContentItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("fontName")(fontName)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("str")(str)
-    __obj.updateDynamic("transform")(transform)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(dir = dir, fontName = fontName, height = height, str = str, transform = transform, width = width)
+  
     __obj.asInstanceOf[TextContentItem]
   }
 }

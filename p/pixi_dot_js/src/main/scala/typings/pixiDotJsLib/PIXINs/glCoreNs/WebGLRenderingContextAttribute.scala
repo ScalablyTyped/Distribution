@@ -24,12 +24,8 @@ object WebGLRenderingContextAttribute {
     stride: scala.Double,
     `type`: scala.Double
   ): WebGLRenderingContextAttribute = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attribute")(attribute)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("normalized")(normalized)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stride")(stride)
+    val __obj = js.Dynamic.literal(attribute = attribute, buffer = buffer, normalized = normalized, start = start, stride = stride)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WebGLRenderingContextAttribute]
   }
 }

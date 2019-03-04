@@ -24,13 +24,8 @@ object User {
     UserFullName: java.lang.String,
     UserID: scala.Double
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FacebookID")(FacebookID)
-    __obj.updateDynamic("FirstName")(FirstName)
-    __obj.updateDynamic("LastName")(LastName)
-    __obj.updateDynamic("PersonID")(PersonID)
-    __obj.updateDynamic("UserFullName")(UserFullName)
-    __obj.updateDynamic("UserID")(UserID)
+    val __obj = js.Dynamic.literal(FacebookID = FacebookID, FirstName = FirstName, LastName = LastName, PersonID = PersonID, UserFullName = UserFullName, UserID = UserID)
+  
     __obj.asInstanceOf[User]
   }
 }

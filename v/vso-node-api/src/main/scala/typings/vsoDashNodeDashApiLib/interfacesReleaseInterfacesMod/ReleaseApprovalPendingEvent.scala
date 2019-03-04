@@ -40,21 +40,8 @@ object ReleaseApprovalPendingEvent {
     title: java.lang.String,
     webAccessUri: java.lang.String
   ): ReleaseApprovalPendingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("approval")(approval)
-    __obj.updateDynamic("approvalOptions")(approvalOptions)
-    __obj.updateDynamic("completedApprovals")(completedApprovals)
-    __obj.updateDynamic("definitionName")(definitionName)
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("environmentId")(environmentId)
-    __obj.updateDynamic("environmentName")(environmentName)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("isMultipleRankApproval")(isMultipleRankApproval)
-    __obj.updateDynamic("pendingApprovals")(pendingApprovals)
-    __obj.updateDynamic("releaseCreator")(releaseCreator)
-    __obj.updateDynamic("releaseName")(releaseName)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("webAccessUri")(webAccessUri)
+    val __obj = js.Dynamic.literal(approval = approval, approvalOptions = approvalOptions, completedApprovals = completedApprovals, definitionName = definitionName, deployment = deployment, environmentId = environmentId, environmentName = environmentName, environments = environments, isMultipleRankApproval = isMultipleRankApproval, pendingApprovals = pendingApprovals, releaseCreator = releaseCreator, releaseName = releaseName, title = title, webAccessUri = webAccessUri)
+  
     __obj.asInstanceOf[ReleaseApprovalPendingEvent]
   }
 }

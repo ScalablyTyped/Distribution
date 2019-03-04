@@ -20,11 +20,8 @@ object Anon_BASIC {
     LIST: chromeDashAppsLib.chromeDashAppsLibStrings.list,
     PROGRESS: chromeDashAppsLib.chromeDashAppsLibStrings.progress
   ): Anon_BASIC = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BASIC")(BASIC)
-    __obj.updateDynamic("IMAGE")(IMAGE)
-    __obj.updateDynamic("LIST")(LIST)
-    __obj.updateDynamic("PROGRESS")(PROGRESS)
+    val __obj = js.Dynamic.literal(BASIC = BASIC, IMAGE = IMAGE, LIST = LIST, PROGRESS = PROGRESS)
+  
     __obj.asInstanceOf[Anon_BASIC]
   }
 }

@@ -22,11 +22,8 @@ object EnqueuedCommand {
     name: java.lang.String,
     `type`: java.lang.String
   ): EnqueuedCommand = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("chainerId")(chainerId)
-    __obj.updateDynamic("fn")(fn)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(args = args, chainerId = chainerId, fn = fn, name = name)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[EnqueuedCommand]
   }
 }

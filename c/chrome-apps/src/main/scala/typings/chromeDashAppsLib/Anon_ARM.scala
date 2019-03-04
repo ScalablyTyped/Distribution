@@ -22,12 +22,8 @@ object Anon_ARM {
     X86_32: chromeDashAppsLib.chromeDashAppsLibStrings.`x86-32`,
     X86_64: chromeDashAppsLib.chromeDashAppsLibStrings.`x86-64`
   ): Anon_ARM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARM")(ARM)
-    __obj.updateDynamic("MIPS")(MIPS)
-    __obj.updateDynamic("MIPS64")(MIPS64)
-    __obj.updateDynamic("X86_32")(X86_32)
-    __obj.updateDynamic("X86_64")(X86_64)
+    val __obj = js.Dynamic.literal(ARM = ARM, MIPS = MIPS, MIPS64 = MIPS64, X86_32 = X86_32, X86_64 = X86_64)
+  
     __obj.asInstanceOf[Anon_ARM]
   }
 }

@@ -24,13 +24,8 @@ object Anon_Args {
     onPressIn: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
     touchableComponent: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("onPeekIn")(onPeekIn)
-    __obj.updateDynamic("onPeekOut")(onPeekOut)
-    __obj.updateDynamic("onPress")(onPress)
-    __obj.updateDynamic("onPressIn")(onPressIn)
-    __obj.updateDynamic("touchableComponent")(touchableComponent)
+    val __obj = js.Dynamic.literal(children = children, onPeekIn = onPeekIn, onPeekOut = onPeekOut, onPress = onPress, onPressIn = onPressIn, touchableComponent = touchableComponent)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

@@ -37,27 +37,8 @@ object SelectUI {
     show: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): SelectUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildState")(buildState)
-    __obj.updateDynamic("closeOptions")(closeOptions)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("hot")(hot)
-    __obj.updateDynamic("isBuilt")(isBuilt)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    __obj.updateDynamic("openOptions")(openOptions)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setItems")(setItems)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(build = build, buildState = buildState, closeOptions = closeOptions, destroy = destroy, element = element, eventManager = eventManager, focus = focus, getValue = getValue, hide = hide, hot = hot, isBuilt = isBuilt, items = items, menu = menu.asInstanceOf[js.Any], openOptions = openOptions, options = options, reset = reset, setItems = setItems, setValue = setValue, show = show, update = update)
+  
     __obj.asInstanceOf[SelectUI]
   }
 }

@@ -26,9 +26,7 @@ object Anon_AttributeDataType {
     required: js.UndefOr[scala.Boolean] = js.undefined,
     stringAttributeConstraints: Anon_MaxLength = null
   ): Anon_AttributeDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeDataType")(attributeDataType)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributeDataType = attributeDataType, name = name)
     if (!js.isUndefined(developerOnlyAttribute)) __obj.updateDynamic("developerOnlyAttribute")(developerOnlyAttribute)
     if (!js.isUndefined(mutable)) __obj.updateDynamic("mutable")(mutable)
     if (numberAttributeConstraints != null) __obj.updateDynamic("numberAttributeConstraints")(numberAttributeConstraints)

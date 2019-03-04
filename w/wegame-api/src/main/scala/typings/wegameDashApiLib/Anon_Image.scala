@@ -20,8 +20,8 @@ object Anon_Image {
     image: java.lang.String = null,
     text: java.lang.String = null
   ): Anon_Image = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(style = style)
+    __obj.updateDynamic("type")(`type`)
     if (image != null) __obj.updateDynamic("image")(image)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[Anon_Image]

@@ -18,10 +18,8 @@ object CustomEventHandler {
     haltEventListeners: js.Array[java.lang.String],
     init: js.Function1[CustomEventOptions, scala.Unit]
   ): CustomEventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("haltEventListeners")(haltEventListeners)
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(destroy = destroy, haltEventListeners = haltEventListeners, init = init)
+  
     __obj.asInstanceOf[CustomEventHandler]
   }
 }

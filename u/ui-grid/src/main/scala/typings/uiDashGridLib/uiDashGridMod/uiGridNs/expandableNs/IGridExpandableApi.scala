@@ -37,12 +37,8 @@ object IGridExpandableApi {
     toggleAllRows: js.Function0[scala.Unit],
     toggleRowExpansion: js.Function1[TEntity, scala.Unit]
   ): IGridExpandableApi[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseAllRows")(collapseAllRows)
-    __obj.updateDynamic("expandAllRows")(expandAllRows)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("toggleAllRows")(toggleAllRows)
-    __obj.updateDynamic("toggleRowExpansion")(toggleRowExpansion)
+    val __obj = js.Dynamic.literal(collapseAllRows = collapseAllRows, expandAllRows = expandAllRows, on = on, toggleAllRows = toggleAllRows, toggleRowExpansion = toggleRowExpansion)
+  
     __obj.asInstanceOf[IGridExpandableApi[TEntity]]
   }
 }

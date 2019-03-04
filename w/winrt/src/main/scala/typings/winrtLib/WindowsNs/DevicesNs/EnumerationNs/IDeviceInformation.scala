@@ -30,16 +30,8 @@ object IDeviceInformation {
     properties: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _],
     update: js.Function1[DeviceInformationUpdate, scala.Unit]
   ): IDeviceInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enclosureLocation")(enclosureLocation)
-    __obj.updateDynamic("getGlyphThumbnailAsync")(getGlyphThumbnailAsync)
-    __obj.updateDynamic("getThumbnailAsync")(getThumbnailAsync)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(enclosureLocation = enclosureLocation, getGlyphThumbnailAsync = getGlyphThumbnailAsync, getThumbnailAsync = getThumbnailAsync, id = id, isDefault = isDefault, isEnabled = isEnabled, name = name, properties = properties, update = update)
+  
     __obj.asInstanceOf[IDeviceInformation]
   }
 }

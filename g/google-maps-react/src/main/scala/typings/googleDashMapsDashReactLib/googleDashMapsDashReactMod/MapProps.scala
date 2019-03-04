@@ -104,8 +104,7 @@ object MapProps {
     zoomControl: js.UndefOr[scala.Boolean] = js.undefined,
     zoomControlOptions: googlemapsLib.googleNs.mapsNs.ZoomControlOptions = null
   ): MapProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("google")(google)
+    val __obj = js.Dynamic.literal(google = google)
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])

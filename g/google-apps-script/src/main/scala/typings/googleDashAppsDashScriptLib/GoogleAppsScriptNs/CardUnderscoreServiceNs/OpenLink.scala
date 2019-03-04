@@ -18,10 +18,8 @@ object OpenLink {
     setOpenAs: js.Function1[OpenAs, OpenLink],
     setUrl: js.Function1[java.lang.String, OpenLink]
   ): OpenLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setOnClose")(setOnClose)
-    __obj.updateDynamic("setOpenAs")(setOpenAs)
-    __obj.updateDynamic("setUrl")(setUrl)
+    val __obj = js.Dynamic.literal(setOnClose = setOnClose, setOpenAs = setOpenAs, setUrl = setUrl)
+  
     __obj.asInstanceOf[OpenLink]
   }
 }

@@ -23,10 +23,8 @@ object ExpandVetoException {
     Event: TreeExpansionEvent,
     Message: java.lang.String
   ): ExpandVetoException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Event")(Event)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, Event = Event, Message = Message)
+  
     __obj.asInstanceOf[ExpandVetoException]
   }
 }

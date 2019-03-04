@@ -13,9 +13,8 @@ trait Anon_ConnectionResult extends js.Object {
 object Anon_ConnectionResult {
   @scala.inline
   def apply(connection: js.Any, result: js.Any): Anon_ConnectionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(connection = connection, result = result)
+  
     __obj.asInstanceOf[Anon_ConnectionResult]
   }
 }

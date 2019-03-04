@@ -12,8 +12,8 @@ trait TopicOffsets extends js.Object {
 object TopicOffsets {
   @scala.inline
   def apply(partitions: js.Array[PartitionOffset]): TopicOffsets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partitions")(partitions)
+    val __obj = js.Dynamic.literal(partitions = partitions)
+  
     __obj.asInstanceOf[TopicOffsets]
   }
 }

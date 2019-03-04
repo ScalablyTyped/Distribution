@@ -27,7 +27,8 @@ object ComponentRelation {
     target: java.lang.String = null,
     unlinked: js.Function1[/* target */ Component, scala.Unit] = null
   ): ComponentRelation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (linkChanged != null) __obj.updateDynamic("linkChanged")(linkChanged)
     if (linked != null) __obj.updateDynamic("linked")(linked)
     if (target != null) __obj.updateDynamic("target")(target)

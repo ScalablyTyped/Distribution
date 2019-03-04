@@ -48,13 +48,8 @@ object XCellRangeData {
       scala.Unit
     ]
   ): XCellRangeData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataArray")(DataArray)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataArray")(getDataArray)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDataArray")(setDataArray)
+    val __obj = js.Dynamic.literal(DataArray = DataArray, acquire = acquire, getDataArray = getDataArray, queryInterface = queryInterface, release = release, setDataArray = setDataArray)
+  
     __obj.asInstanceOf[XCellRangeData]
   }
 }

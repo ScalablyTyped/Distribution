@@ -26,19 +26,8 @@ object PropertySetRegistry {
     release: js.Function0[scala.Unit],
     removePropertySet: js.Function1[java.lang.String, scala.Unit]
   ): PropertySetRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("openPropertySet")(openPropertySet)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertySet")(removePropertySet)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, openPropertySet = openPropertySet, queryInterface = queryInterface, release = release, removePropertySet = removePropertySet)
+  
     __obj.asInstanceOf[PropertySetRegistry]
   }
 }

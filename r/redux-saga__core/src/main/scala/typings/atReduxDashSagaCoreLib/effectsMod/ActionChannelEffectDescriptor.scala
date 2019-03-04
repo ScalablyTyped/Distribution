@@ -18,8 +18,7 @@ object ActionChannelEffectDescriptor {
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]],
     buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[reduxLib.reduxMod.Action[_]] = null
   ): ActionChannelEffectDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     if (buffer != null) __obj.updateDynamic("buffer")(buffer)
     __obj.asInstanceOf[ActionChannelEffectDescriptor]
   }

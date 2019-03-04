@@ -18,10 +18,8 @@ object CharacterMetadata {
     getStyle: js.Function0[DraftInlineStyle],
     hasStyle: js.Function1[java.lang.String, scala.Boolean]
   ): CharacterMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEntity")(getEntity)
-    __obj.updateDynamic("getStyle")(getStyle)
-    __obj.updateDynamic("hasStyle")(hasStyle)
+    val __obj = js.Dynamic.literal(getEntity = getEntity, getStyle = getStyle, hasStyle = hasStyle)
+  
     __obj.asInstanceOf[CharacterMetadata]
   }
 }

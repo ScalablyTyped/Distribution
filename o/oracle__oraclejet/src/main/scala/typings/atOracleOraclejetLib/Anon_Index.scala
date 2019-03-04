@@ -13,9 +13,8 @@ trait Anon_Index extends js.Object {
 object Anon_Index {
   @scala.inline
   def apply(index: scala.Double, subId: atOracleOraclejetLib.atOracleOraclejetLibStrings.`oj-gantt-row-label`): Anon_Index = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(index = index, subId = subId)
+  
     __obj.asInstanceOf[Anon_Index]
   }
 }

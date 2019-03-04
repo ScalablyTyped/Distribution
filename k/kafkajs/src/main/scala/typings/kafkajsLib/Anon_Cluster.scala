@@ -12,8 +12,8 @@ trait Anon_Cluster extends js.Object {
 object Anon_Cluster {
   @scala.inline
   def apply(cluster: js.Any): Anon_Cluster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cluster")(cluster)
+    val __obj = js.Dynamic.literal(cluster = cluster)
+  
     __obj.asInstanceOf[Anon_Cluster]
   }
 }

@@ -23,7 +23,7 @@ trait Editor extends js.Object {
     "background"(a background element that will be behind the selection),
     or "wrap" (the wrapper node that wraps all of the line's elements, including gutter elements).
     class should be the name of the class to apply. */
-  def addLineClass(line: js.Any, where: java.lang.String, `_class_`: java.lang.String): LineHandle = js.native
+  def addLineClass(line: js.Any, where: java.lang.String, _class_ : java.lang.String): LineHandle = js.native
   /** Adds a line widget, an element shown below a line, spanning the whole of the editor's width, and moving the lines below it downwards.
     line should be either an integer or a line handle, and node should be a DOM node, which will be displayed below the given line.
     options, when given, should be an object that configures the behavior of the widget.
@@ -365,7 +365,7 @@ trait Editor extends js.Object {
     where should be one of "text", "background", or "wrap"(see addLineClass).
     class can be left off to remove all classes for the specified node, or be a string to remove only a specific class. */
   def removeLineClass(line: js.Any, where: java.lang.String): LineHandle = js.native
-  def removeLineClass(line: js.Any, where: java.lang.String, `class_`: java.lang.String): LineHandle = js.native
+  def removeLineClass(line: js.Any, where: java.lang.String, class_ : java.lang.String): LineHandle = js.native
   /** Pass this the exact argument passed for the mode parameter to addOverlay to remove an overlay again. */
   def removeOverlay(mode: js.Any): scala.Unit = js.native
   def scrollIntoView(): scala.Unit = js.native

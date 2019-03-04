@@ -19,11 +19,8 @@ object EJSONableCustomType {
     toJSONValue: js.Function0[JSONable],
     typeName: js.Function0[java.lang.String]
   ): EJSONableCustomType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("toJSONValue")(toJSONValue)
-    __obj.updateDynamic("typeName")(typeName)
+    val __obj = js.Dynamic.literal(clone = clone, equals = equals, toJSONValue = toJSONValue, typeName = typeName)
+  
     __obj.asInstanceOf[EJSONableCustomType]
   }
 }

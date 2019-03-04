@@ -22,10 +22,8 @@ object Canvas {
     labels: org.scalablytyped.runtime.StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, scala.Unit]],
     nodes: org.scalablytyped.runtime.StringDictionary[js.Function2[/* node */ Node, /* repeated */ js.Any, scala.Unit]]
   ): Canvas = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("nodes")(nodes)
+    val __obj = js.Dynamic.literal(edges = edges, labels = labels, nodes = nodes)
+  
     __obj.asInstanceOf[Canvas]
   }
 }

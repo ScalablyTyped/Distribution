@@ -20,11 +20,8 @@ object Anon_CLICK {
     HOVER: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.hover,
     HOVER_TARGET_ONLY: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`hover-target`
   ): Anon_CLICK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CLICK")(CLICK)
-    __obj.updateDynamic("CLICK_TARGET_ONLY")(CLICK_TARGET_ONLY)
-    __obj.updateDynamic("HOVER")(HOVER)
-    __obj.updateDynamic("HOVER_TARGET_ONLY")(HOVER_TARGET_ONLY)
+    val __obj = js.Dynamic.literal(CLICK = CLICK, CLICK_TARGET_ONLY = CLICK_TARGET_ONLY, HOVER = HOVER, HOVER_TARGET_ONLY = HOVER_TARGET_ONLY)
+  
     __obj.asInstanceOf[Anon_CLICK]
   }
 }

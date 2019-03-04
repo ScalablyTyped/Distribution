@@ -38,20 +38,8 @@ object WaitXHR {
     url: java.lang.String,
     xhr: stdLib.XMLHttpRequest
   ): WaitXHR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestHeaders")(requestHeaders)
-    __obj.updateDynamic("response")(response)
-    __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("xhr")(xhr)
+    val __obj = js.Dynamic.literal(duration = duration, id = id, method = method, request = request, requestBody = requestBody.asInstanceOf[js.Any], requestHeaders = requestHeaders, response = response, responseBody = responseBody.asInstanceOf[js.Any], responseHeaders = responseHeaders, status = status, statusMessage = statusMessage, url = url, xhr = xhr)
+  
     __obj.asInstanceOf[WaitXHR]
   }
 }

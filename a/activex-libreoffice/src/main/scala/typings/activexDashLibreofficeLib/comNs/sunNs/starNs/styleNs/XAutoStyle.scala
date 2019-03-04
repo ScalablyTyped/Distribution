@@ -59,23 +59,8 @@ object XAutoStyle {
       scala.Unit
     ]
   ): XAutoStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
-    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
-    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, firePropertiesChangeEvent = firePropertiesChangeEvent, getProperties = getProperties, getPropertyDefaults = getPropertyDefaults, getPropertySetInfo = getPropertySetInfo, getPropertyStates = getPropertyStates, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener, setAllPropertiesToDefault = setAllPropertiesToDefault, setPropertiesToDefault = setPropertiesToDefault, setPropertyValues = setPropertyValues)
+  
     __obj.asInstanceOf[XAutoStyle]
   }
 }

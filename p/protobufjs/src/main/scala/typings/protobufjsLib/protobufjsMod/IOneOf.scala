@@ -18,8 +18,7 @@ object IOneOf {
     oneof: js.Array[java.lang.String],
     options: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IOneOf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oneof")(oneof)
+    val __obj = js.Dynamic.literal(oneof = oneof)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[IOneOf]
   }

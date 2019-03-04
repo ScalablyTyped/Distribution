@@ -22,13 +22,8 @@ object SearchViewModelSuggestCompleteEventResults {
     source: js.Any,
     sourceIndex: scala.Double
   ): SearchViewModelSuggestCompleteEventResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceIndex")(sourceIndex)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, results = results, source = source, sourceIndex = sourceIndex)
+  
     __obj.asInstanceOf[SearchViewModelSuggestCompleteEventResults]
   }
 }

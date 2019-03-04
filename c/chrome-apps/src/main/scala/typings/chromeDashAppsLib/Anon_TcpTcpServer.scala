@@ -36,10 +36,8 @@ trait Anon_TcpTcpServer extends js.Object {
 object Anon_TcpTcpServer {
   @scala.inline
   def apply(tcpNs: Anon_Args, tcpServerNs: Anon_AddressArgs, udpNs: Anon_AddressArgsBind): Anon_TcpTcpServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tcpNs")(tcpNs)
-    __obj.updateDynamic("tcpServerNs")(tcpServerNs)
-    __obj.updateDynamic("udpNs")(udpNs)
+    val __obj = js.Dynamic.literal(tcpNs = tcpNs, tcpServerNs = tcpServerNs, udpNs = udpNs)
+  
     __obj.asInstanceOf[Anon_TcpTcpServer]
   }
 }

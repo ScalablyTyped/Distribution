@@ -15,8 +15,7 @@ object AsarIntegrity {
     checksums: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     externalAllowed: js.UndefOr[scala.Boolean] = js.undefined
   ): AsarIntegrity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checksums")(checksums)
+    val __obj = js.Dynamic.literal(checksums = checksums)
     if (!js.isUndefined(externalAllowed)) __obj.updateDynamic("externalAllowed")(externalAllowed)
     __obj.asInstanceOf[AsarIntegrity]
   }

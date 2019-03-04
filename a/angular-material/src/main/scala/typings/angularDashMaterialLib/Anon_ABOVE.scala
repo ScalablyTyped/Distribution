@@ -22,12 +22,8 @@ object Anon_ABOVE {
     BELOW: java.lang.String,
     CENTER: java.lang.String
   ): Anon_ABOVE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ABOVE")(ABOVE)
-    __obj.updateDynamic("ALIGN_BOTTOMS")(ALIGN_BOTTOMS)
-    __obj.updateDynamic("ALIGN_TOPS")(ALIGN_TOPS)
-    __obj.updateDynamic("BELOW")(BELOW)
-    __obj.updateDynamic("CENTER")(CENTER)
+    val __obj = js.Dynamic.literal(ABOVE = ABOVE, ALIGN_BOTTOMS = ALIGN_BOTTOMS, ALIGN_TOPS = ALIGN_TOPS, BELOW = BELOW, CENTER = CENTER)
+  
     __obj.asInstanceOf[Anon_ABOVE]
   }
 }

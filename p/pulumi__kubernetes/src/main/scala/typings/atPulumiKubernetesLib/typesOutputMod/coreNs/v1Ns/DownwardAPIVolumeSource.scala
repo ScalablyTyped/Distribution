@@ -26,9 +26,8 @@ trait DownwardAPIVolumeSource extends js.Object {
 object DownwardAPIVolumeSource {
   @scala.inline
   def apply(defaultMode: scala.Double, items: js.Array[DownwardAPIVolumeFile]): DownwardAPIVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultMode")(defaultMode)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(defaultMode = defaultMode, items = items)
+  
     __obj.asInstanceOf[DownwardAPIVolumeSource]
   }
 }

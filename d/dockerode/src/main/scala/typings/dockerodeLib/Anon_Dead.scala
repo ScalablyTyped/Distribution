@@ -34,18 +34,8 @@ object Anon_Dead {
     StartedAt: java.lang.String,
     Status: java.lang.String
   ): Anon_Dead = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dead")(Dead)
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("ExitCode")(ExitCode)
-    __obj.updateDynamic("FinishedAt")(FinishedAt)
-    __obj.updateDynamic("OOMKilled")(OOMKilled)
-    __obj.updateDynamic("Paused")(Paused)
-    __obj.updateDynamic("Pid")(Pid)
-    __obj.updateDynamic("Restarting")(Restarting)
-    __obj.updateDynamic("Running")(Running)
-    __obj.updateDynamic("StartedAt")(StartedAt)
-    __obj.updateDynamic("Status")(Status)
+    val __obj = js.Dynamic.literal(Dead = Dead, Error = Error, ExitCode = ExitCode, FinishedAt = FinishedAt, OOMKilled = OOMKilled, Paused = Paused, Pid = Pid, Restarting = Restarting, Running = Running, StartedAt = StartedAt, Status = Status)
+  
     __obj.asInstanceOf[Anon_Dead]
   }
 }

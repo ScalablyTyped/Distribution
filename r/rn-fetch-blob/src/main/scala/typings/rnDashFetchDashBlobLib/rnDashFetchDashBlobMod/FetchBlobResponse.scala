@@ -70,19 +70,8 @@ object FetchBlobResponse {
     text: js.Function0[java.lang.String | js.Promise[_]],
     `type`: rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.base64 | rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.path | rnDashFetchDashBlobLib.rnDashFetchDashBlobLibStrings.utf8
   ): FetchBlobResponse = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("readFile")(readFile)
-    __obj.updateDynamic("readStream")(readStream)
-    __obj.updateDynamic("respInfo")(respInfo)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("taskId")(taskId)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(base64 = base64, blob = blob, data = data, flush = flush, json = json, path = path, readFile = readFile, readStream = readStream, respInfo = respInfo, session = session, taskId = taskId, text = text)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchBlobResponse]
   }
 }

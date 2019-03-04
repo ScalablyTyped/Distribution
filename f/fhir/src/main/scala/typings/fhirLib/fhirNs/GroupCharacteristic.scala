@@ -66,9 +66,7 @@ object GroupCharacteristic {
     valueQuantity: Quantity = null,
     valueRange: Range = null
   ): GroupCharacteristic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("exclude")(exclude)
+    val __obj = js.Dynamic.literal(code = code, exclude = exclude)
     if (_exclude != null) __obj.updateDynamic("_exclude")(_exclude)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

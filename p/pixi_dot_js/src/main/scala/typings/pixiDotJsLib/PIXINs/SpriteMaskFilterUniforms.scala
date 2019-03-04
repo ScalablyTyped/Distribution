@@ -14,10 +14,8 @@ trait SpriteMaskFilterUniforms extends js.Object {
 object SpriteMaskFilterUniforms {
   @scala.inline
   def apply(alpha: scala.Double, mask: Texture, otherMatrix: Matrix): SpriteMaskFilterUniforms = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("otherMatrix")(otherMatrix)
+    val __obj = js.Dynamic.literal(alpha = alpha, mask = mask, otherMatrix = otherMatrix)
+  
     __obj.asInstanceOf[SpriteMaskFilterUniforms]
   }
 }

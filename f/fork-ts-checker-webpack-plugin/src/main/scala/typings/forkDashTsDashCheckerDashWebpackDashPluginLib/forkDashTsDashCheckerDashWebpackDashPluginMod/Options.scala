@@ -48,25 +48,8 @@ object Options {
     watch: java.lang.String | js.Array[java.lang.String],
     workers: scala.Double
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("checkSyntacticErrors")(checkSyntacticErrors)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("compilerOptions")(compilerOptions)
-    __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    __obj.updateDynamic("formatterOptions")(formatterOptions)
-    __obj.updateDynamic("ignoreDiagnostics")(ignoreDiagnostics)
-    __obj.updateDynamic("ignoreLints")(ignoreLints)
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("memoryLimit")(memoryLimit)
-    __obj.updateDynamic("reportFiles")(reportFiles)
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("tsconfig")(tsconfig)
-    __obj.updateDynamic("tslint")(tslint.asInstanceOf[js.Any])
-    __obj.updateDynamic("tslintAutoFix")(tslintAutoFix)
-    __obj.updateDynamic("vue")(vue)
-    __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
-    __obj.updateDynamic("workers")(workers)
+    val __obj = js.Dynamic.literal(async = async, checkSyntacticErrors = checkSyntacticErrors, colors = colors, compilerOptions = compilerOptions, formatter = formatter.asInstanceOf[js.Any], formatterOptions = formatterOptions, ignoreDiagnostics = ignoreDiagnostics, ignoreLints = ignoreLints, logger = logger, memoryLimit = memoryLimit, reportFiles = reportFiles, silent = silent, tsconfig = tsconfig, tslint = tslint.asInstanceOf[js.Any], tslintAutoFix = tslintAutoFix, vue = vue, watch = watch.asInstanceOf[js.Any], workers = workers)
+  
     __obj.asInstanceOf[Options]
   }
 }

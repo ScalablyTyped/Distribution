@@ -206,8 +206,7 @@ object TypeaheadProps {
     selectHintOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
     selected: js.Array[T] = null
   ): TypeaheadProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     if (a11yNumResults != null) __obj.updateDynamic("a11yNumResults")(a11yNumResults)
     if (a11yNumSelected != null) __obj.updateDynamic("a11yNumSelected")(a11yNumSelected)
     if (align != null) __obj.updateDynamic("align")(align)

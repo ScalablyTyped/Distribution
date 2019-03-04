@@ -20,11 +20,8 @@ object PluginDevice {
     Path: java.lang.String,
     Settable: js.Array[java.lang.String]
   ): PluginDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("Settable")(Settable)
+    val __obj = js.Dynamic.literal(Description = Description, Name = Name, Path = Path, Settable = Settable)
+  
     __obj.asInstanceOf[PluginDevice]
   }
 }

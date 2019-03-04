@@ -36,8 +36,7 @@ object Anon_Amount {
     shippingAddressOverride: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.PayPalShippingAddress = null,
     useraction: java.lang.String = null
   ): Anon_Amount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flow")(flow)
+    val __obj = js.Dynamic.literal(flow = flow)
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (billingAgreementDescription != null) __obj.updateDynamic("billingAgreementDescription")(billingAgreementDescription)
     if (currency != null) __obj.updateDynamic("currency")(currency)

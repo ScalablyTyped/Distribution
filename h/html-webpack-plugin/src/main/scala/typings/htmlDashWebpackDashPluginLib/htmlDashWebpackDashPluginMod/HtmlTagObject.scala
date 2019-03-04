@@ -34,10 +34,7 @@ object HtmlTagObject {
     voidTag: scala.Boolean,
     innerHTML: java.lang.String = null
   ): HtmlTagObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("tagName")(tagName)
-    __obj.updateDynamic("voidTag")(voidTag)
+    val __obj = js.Dynamic.literal(attributes = attributes, tagName = tagName, voidTag = voidTag)
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML)
     __obj.asInstanceOf[HtmlTagObject]
   }

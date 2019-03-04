@@ -29,10 +29,8 @@ object TextElement {
     kind: googleDashAppsDashScriptLib.Anon_Autotext,
     start_index: scala.Double
   ): TextElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end_index")(end_index)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("start_index")(start_index)
+    val __obj = js.Dynamic.literal(end_index = end_index, kind = kind, start_index = start_index)
+  
     __obj.asInstanceOf[TextElement]
   }
 }

@@ -58,10 +58,8 @@ object TestMatricesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
     ]
   ): TestMatricesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, get = get)
+  
     __obj.asInstanceOf[TestMatricesResource]
   }
 }

@@ -13,8 +13,7 @@ trait PMInfo extends js.Object {
 object PMInfo {
   @scala.inline
   def apply(name: java.lang.String, version: java.lang.String = null): PMInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[PMInfo]
   }

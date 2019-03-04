@@ -23,12 +23,8 @@ object DetoxJestAdapter {
     specDone: js.Function0[scala.Unit],
     specStarted: js.Function0[scala.Unit]
   ): DetoxJestAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterAll")(afterAll)
-    __obj.updateDynamic("beforeEach")(beforeEach)
-    __obj.updateDynamic("detox")(detox)
-    __obj.updateDynamic("specDone")(specDone)
-    __obj.updateDynamic("specStarted")(specStarted)
+    val __obj = js.Dynamic.literal(afterAll = afterAll, beforeEach = beforeEach, detox = detox, specDone = specDone, specStarted = specStarted)
+  
     __obj.asInstanceOf[DetoxJestAdapter]
   }
 }

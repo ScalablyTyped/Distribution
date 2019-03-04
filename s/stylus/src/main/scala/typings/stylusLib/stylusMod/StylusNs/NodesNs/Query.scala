@@ -46,27 +46,8 @@ object Query {
     toJSON: js.Function0[stylusLib.Anon_ColumnFilenameLinenoNodesPredicate],
     `type`: java.lang.String
   ): Query = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("coerce")(coerce)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("operate")(operate)
-    __obj.updateDynamic("predicate")(predicate)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("resolvedPredicate")(resolvedPredicate)
-    __obj.updateDynamic("resolvedType")(resolvedType)
-    __obj.updateDynamic("shouldCoerce")(shouldCoerce)
-    __obj.updateDynamic("toBoolean")(toBoolean)
-    __obj.updateDynamic("toExpression")(toExpression)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(clone = clone, coerce = coerce, column = column, eval = eval, filename = filename, first = first, hash = hash, lineno = lineno, merge = merge, nodeName = nodeName, nodes = nodes, operate = operate, predicate = predicate, push = push, resolvedPredicate = resolvedPredicate, resolvedType = resolvedType, shouldCoerce = shouldCoerce, toBoolean = toBoolean, toExpression = toExpression, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Query]
   }
 }

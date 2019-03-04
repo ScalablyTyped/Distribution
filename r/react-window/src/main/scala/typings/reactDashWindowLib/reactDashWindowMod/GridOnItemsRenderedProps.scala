@@ -28,15 +28,8 @@ object GridOnItemsRenderedProps {
     visibleRowStartIndex: scala.Double,
     visibleRowStopIndex: scala.Double
   ): GridOnItemsRenderedProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("overscanColumnStartIndex")(overscanColumnStartIndex)
-    __obj.updateDynamic("overscanColumnStopIndex")(overscanColumnStopIndex)
-    __obj.updateDynamic("overscanRowStartIndex")(overscanRowStartIndex)
-    __obj.updateDynamic("overscanRowStopIndex")(overscanRowStopIndex)
-    __obj.updateDynamic("visibleColumnStartIndex")(visibleColumnStartIndex)
-    __obj.updateDynamic("visibleColumnStopIndex")(visibleColumnStopIndex)
-    __obj.updateDynamic("visibleRowStartIndex")(visibleRowStartIndex)
-    __obj.updateDynamic("visibleRowStopIndex")(visibleRowStopIndex)
+    val __obj = js.Dynamic.literal(overscanColumnStartIndex = overscanColumnStartIndex, overscanColumnStopIndex = overscanColumnStopIndex, overscanRowStartIndex = overscanRowStartIndex, overscanRowStopIndex = overscanRowStopIndex, visibleColumnStartIndex = visibleColumnStartIndex, visibleColumnStopIndex = visibleColumnStopIndex, visibleRowStartIndex = visibleRowStartIndex, visibleRowStopIndex = visibleRowStopIndex)
+  
     __obj.asInstanceOf[GridOnItemsRenderedProps]
   }
 }

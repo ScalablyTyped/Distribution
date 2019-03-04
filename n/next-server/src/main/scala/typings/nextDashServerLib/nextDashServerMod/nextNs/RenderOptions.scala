@@ -22,11 +22,7 @@ object RenderOptions {
     staticMarkup: scala.Boolean,
     runtimeConfig: stdLib.Record[_, _] = null
   ): RenderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buildId")(buildId)
-    __obj.updateDynamic("distDir")(distDir)
-    __obj.updateDynamic("generateETags")(generateETags)
-    __obj.updateDynamic("staticMarkup")(staticMarkup)
+    val __obj = js.Dynamic.literal(buildId = buildId, distDir = distDir, generateETags = generateETags, staticMarkup = staticMarkup)
     if (runtimeConfig != null) __obj.updateDynamic("runtimeConfig")(runtimeConfig)
     __obj.asInstanceOf[RenderOptions]
   }

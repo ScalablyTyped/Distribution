@@ -79,16 +79,7 @@ object INxMeasureInfo {
     qNumFormat: IFieldAttributes = null,
     qSortIndicator: SortIndicatorType = null
   ): INxMeasureInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
-    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
-    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
-    __obj.updateDynamic("qCardinal")(qCardinal)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
-    __obj.updateDynamic("qMax")(qMax)
-    __obj.updateDynamic("qMin")(qMin)
-    __obj.updateDynamic("qReverseSort")(qReverseSort)
+    val __obj = js.Dynamic.literal(qApprMaxGlyphCount = qApprMaxGlyphCount, qAttrDimInfo = qAttrDimInfo, qAttrExprInfo = qAttrExprInfo, qCardinal = qCardinal, qFallbackTitle = qFallbackTitle, qIsAutoFormat = qIsAutoFormat, qMax = qMax, qMin = qMin, qReverseSort = qReverseSort)
     if (qError != null) __obj.updateDynamic("qError")(qError)
     if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
     if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator)

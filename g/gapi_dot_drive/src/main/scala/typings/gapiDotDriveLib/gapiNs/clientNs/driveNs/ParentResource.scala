@@ -22,12 +22,8 @@ object ParentResource {
     parentLink: java.lang.String,
     selfLink: java.lang.String
   ): ParentResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isRoot")(isRoot)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("parentLink")(parentLink)
-    __obj.updateDynamic("selfLink")(selfLink)
+    val __obj = js.Dynamic.literal(id = id, isRoot = isRoot, kind = kind, parentLink = parentLink, selfLink = selfLink)
+  
     __obj.asInstanceOf[ParentResource]
   }
 }

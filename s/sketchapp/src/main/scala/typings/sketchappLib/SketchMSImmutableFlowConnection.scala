@@ -18,9 +18,7 @@ object SketchMSImmutableFlowConnection {
     animationType: scala.Double,
     destinationArtboardID: java.lang.String | sketchappLib.sketchappLibStrings.back = null
   ): SketchMSImmutableFlowConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("animationType")(animationType)
+    val __obj = js.Dynamic.literal(_class = _class, animationType = animationType)
     if (destinationArtboardID != null) __obj.updateDynamic("destinationArtboardID")(destinationArtboardID.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSImmutableFlowConnection]
   }

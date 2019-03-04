@@ -20,11 +20,8 @@ object Anon_CaseSensitive {
     objectTooLarge: scala.Double,
     unknown: scala.Double
   ): Anon_CaseSensitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caseSensitive")(caseSensitive)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("objectTooLarge")(objectTooLarge)
-    __obj.updateDynamic("unknown")(unknown)
+    val __obj = js.Dynamic.literal(caseSensitive = caseSensitive, none = none, objectTooLarge = objectTooLarge, unknown = unknown)
+  
     __obj.asInstanceOf[Anon_CaseSensitive]
   }
 }

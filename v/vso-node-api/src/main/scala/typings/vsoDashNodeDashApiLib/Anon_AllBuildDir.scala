@@ -20,11 +20,8 @@ object Anon_AllBuildDir {
     sourceAndOutputDir: scala.Double,
     sourceDir: scala.Double
   ): Anon_AllBuildDir = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allBuildDir")(allBuildDir)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceAndOutputDir")(sourceAndOutputDir)
-    __obj.updateDynamic("sourceDir")(sourceDir)
+    val __obj = js.Dynamic.literal(allBuildDir = allBuildDir, source = source, sourceAndOutputDir = sourceAndOutputDir, sourceDir = sourceDir)
+  
     __obj.asInstanceOf[Anon_AllBuildDir]
   }
 }

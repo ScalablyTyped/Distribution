@@ -22,8 +22,7 @@ object CalendarsInsertParameters {
     location: java.lang.String = null,
     timeZone: java.lang.String = null
   ): CalendarsInsertParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(summary = summary)
     if (description != null) __obj.updateDynamic("description")(description)
     if (location != null) __obj.updateDynamic("location")(location)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)

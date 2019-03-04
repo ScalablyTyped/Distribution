@@ -12,8 +12,8 @@ trait DispatcherState extends js.Object {
 object DispatcherState {
   @scala.inline
   def apply(stores: org.scalablytyped.runtime.StringDictionary[js.Any]): DispatcherState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stores")(stores)
+    val __obj = js.Dynamic.literal(stores = stores)
+  
     __obj.asInstanceOf[DispatcherState]
   }
 }

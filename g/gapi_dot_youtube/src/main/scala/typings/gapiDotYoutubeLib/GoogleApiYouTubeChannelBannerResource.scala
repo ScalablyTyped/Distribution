@@ -23,10 +23,8 @@ trait GoogleApiYouTubeChannelBannerResource extends js.Object {
 object GoogleApiYouTubeChannelBannerResource {
   @scala.inline
   def apply(etag: java.lang.String, kind: java.lang.String, url: java.lang.String): GoogleApiYouTubeChannelBannerResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(etag = etag, kind = kind, url = url)
+  
     __obj.asInstanceOf[GoogleApiYouTubeChannelBannerResource]
   }
 }

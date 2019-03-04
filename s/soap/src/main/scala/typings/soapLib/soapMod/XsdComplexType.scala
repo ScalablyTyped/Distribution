@@ -31,15 +31,7 @@ object XsdComplexType {
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     xmlns: WsdlXmlns = null
   ): XsdComplexType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$name")($name)
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nsName")(nsName)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal($name = $name, children = children.asInstanceOf[js.Any], ignoredNamespaces = ignoredNamespaces, name = name, nsName = nsName, prefix = prefix, valueKey = valueKey, xmlKey = xmlKey)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[XsdComplexType]

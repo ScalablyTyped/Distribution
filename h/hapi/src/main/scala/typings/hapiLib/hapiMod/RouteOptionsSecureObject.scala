@@ -47,8 +47,7 @@ object RouteOptionsSecureObject {
     referrer: hapiLib.hapiLibNumbers.`false` | ReferrerPolicy = null,
     xframe: hapiLib.hapiLibNumbers.`true` | hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.Anon_Allowfrom = null
   ): RouteOptionsSecureObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("xss")(xss)
+    val __obj = js.Dynamic.literal(xss = xss)
     if (hsts != null) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])
     if (!js.isUndefined(noOpen)) __obj.updateDynamic("noOpen")(noOpen)
     if (!js.isUndefined(noSniff)) __obj.updateDynamic("noSniff")(noSniff)

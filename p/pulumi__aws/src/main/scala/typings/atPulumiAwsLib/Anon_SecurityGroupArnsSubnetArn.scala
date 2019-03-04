@@ -16,9 +16,8 @@ object Anon_SecurityGroupArnsSubnetArn {
     securityGroupArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     subnetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_SecurityGroupArnsSubnetArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("securityGroupArns")(securityGroupArns.asInstanceOf[js.Any])
-    __obj.updateDynamic("subnetArn")(subnetArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(securityGroupArns = securityGroupArns.asInstanceOf[js.Any], subnetArn = subnetArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_SecurityGroupArnsSubnetArn]
   }
 }

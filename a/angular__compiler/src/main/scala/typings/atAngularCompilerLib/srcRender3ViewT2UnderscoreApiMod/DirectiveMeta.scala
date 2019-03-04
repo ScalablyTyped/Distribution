@@ -43,11 +43,7 @@ object DirectiveMeta {
     outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     exportAs: java.lang.String = null
   ): DirectiveMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("isComponent")(isComponent)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outputs")(outputs)
+    val __obj = js.Dynamic.literal(inputs = inputs, isComponent = isComponent, name = name, outputs = outputs)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
     __obj.asInstanceOf[DirectiveMeta]
   }

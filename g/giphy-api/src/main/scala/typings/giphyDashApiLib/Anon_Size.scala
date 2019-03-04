@@ -14,10 +14,8 @@ trait Anon_Size extends js.Object {
 object Anon_Size {
   @scala.inline
   def apply(size: java.lang.String, webp: java.lang.String, webp_size: java.lang.String): Anon_Size = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("webp")(webp)
-    __obj.updateDynamic("webp_size")(webp_size)
+    val __obj = js.Dynamic.literal(size = size, webp = webp, webp_size = webp_size)
+  
     __obj.asInstanceOf[Anon_Size]
   }
 }

@@ -36,19 +36,8 @@ object BuildServer {
     url: java.lang.String,
     version: scala.Double
   ): BuildServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agents")(agents)
-    __obj.updateDynamic("controller")(controller)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isVirtual")(isVirtual)
-    __obj.updateDynamic("messageQueueUrl")(messageQueueUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("requireClientCertificates")(requireClientCertificates)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusChangedDate")(statusChangedDate)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(agents = agents, controller = controller, id = id, isVirtual = isVirtual, messageQueueUrl = messageQueueUrl, name = name, requireClientCertificates = requireClientCertificates, status = status, statusChangedDate = statusChangedDate, uri = uri, url = url, version = version)
+  
     __obj.asInstanceOf[BuildServer]
   }
 }

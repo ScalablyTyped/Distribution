@@ -32,9 +32,7 @@ object NamedQueryArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): NamedQueryArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedQueryArgs]

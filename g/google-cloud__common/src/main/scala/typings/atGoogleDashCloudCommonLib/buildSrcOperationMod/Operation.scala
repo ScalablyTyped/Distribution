@@ -32,14 +32,14 @@ class Operation[T] protected ()
     *
     * @private
     */
-  /* protected */ def `listenForEvents_`(): scala.Unit = js.native
+  /* protected */ def listenForEvents_(): scala.Unit = js.native
   /**
     * Poll for a status update. Returns null for an incomplete
     * status, and metadata for a complete status.
     *
     * @private
     */
-  /* protected */ def `poll_`(callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.MetadataCallback): scala.Unit = js.native
+  /* protected */ def poll_(callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.MetadataCallback): scala.Unit = js.native
   /**
     * Wraps the `complete` and `error` events in a Promise.
     *
@@ -55,6 +55,6 @@ class Operation[T] protected ()
     *
     * @private
     */
-  /* protected */ def `startPolling_`(): js.Promise[scala.Unit] = js.native
+  /* protected */ def startPolling_(): js.Promise[scala.Unit] = js.native
 }
 

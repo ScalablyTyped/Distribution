@@ -17,8 +17,8 @@ trait PortalLayer extends js.Object {
 object PortalLayer {
   @scala.inline
   def apply(portalItem: PortalItem): PortalLayer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("portalItem")(portalItem)
+    val __obj = js.Dynamic.literal(portalItem = portalItem)
+  
     __obj.asInstanceOf[PortalLayer]
   }
 }

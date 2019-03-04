@@ -71,14 +71,8 @@ object Format {
     spatialReference: SpatialReference,
     viewModel: CoordinateConversionViewModel
   ): Format = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conversionInfo")(conversionInfo)
-    __obj.updateDynamic("coordinateSegments")(coordinateSegments)
-    __obj.updateDynamic("currentPattern")(currentPattern)
-    __obj.updateDynamic("defaultPattern")(defaultPattern)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("spatialReference")(spatialReference)
-    __obj.updateDynamic("viewModel")(viewModel)
+    val __obj = js.Dynamic.literal(conversionInfo = conversionInfo, coordinateSegments = coordinateSegments, currentPattern = currentPattern, defaultPattern = defaultPattern, name = name, spatialReference = spatialReference, viewModel = viewModel)
+  
     __obj.asInstanceOf[Format]
   }
 }

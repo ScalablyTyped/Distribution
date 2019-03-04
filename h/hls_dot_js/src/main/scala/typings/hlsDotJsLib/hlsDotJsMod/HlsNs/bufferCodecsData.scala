@@ -15,8 +15,8 @@ trait bufferCodecsData extends js.Object {
 object bufferCodecsData {
   @scala.inline
   def apply(tracks: Tracks): bufferCodecsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tracks")(tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks)
+  
     __obj.asInstanceOf[bufferCodecsData]
   }
 }

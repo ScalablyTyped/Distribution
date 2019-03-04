@@ -24,13 +24,8 @@ object AggregatedResultsByOutcome {
     outcome: TestOutcome,
     rerunResultCount: scala.Double
   ): AggregatedResultsByOutcome = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("groupByField")(groupByField)
-    __obj.updateDynamic("groupByValue")(groupByValue)
-    __obj.updateDynamic("outcome")(outcome)
-    __obj.updateDynamic("rerunResultCount")(rerunResultCount)
+    val __obj = js.Dynamic.literal(count = count, duration = duration, groupByField = groupByField, groupByValue = groupByValue, outcome = outcome, rerunResultCount = rerunResultCount)
+  
     __obj.asInstanceOf[AggregatedResultsByOutcome]
   }
 }

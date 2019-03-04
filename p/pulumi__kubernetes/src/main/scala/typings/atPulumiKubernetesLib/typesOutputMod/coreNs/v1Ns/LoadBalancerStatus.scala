@@ -19,8 +19,8 @@ trait LoadBalancerStatus extends js.Object {
 object LoadBalancerStatus {
   @scala.inline
   def apply(ingress: js.Array[LoadBalancerIngress]): LoadBalancerStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ingress")(ingress)
+    val __obj = js.Dynamic.literal(ingress = ingress)
+  
     __obj.asInstanceOf[LoadBalancerStatus]
   }
 }

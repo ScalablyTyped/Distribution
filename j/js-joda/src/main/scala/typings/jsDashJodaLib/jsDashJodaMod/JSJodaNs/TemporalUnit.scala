@@ -26,14 +26,8 @@ object TemporalUnit {
     isSupportedBy: js.Function1[Temporal, scala.Boolean],
     isTimeBased: js.Function0[scala.Boolean]
   ): TemporalUnit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTo")(addTo)
-    __obj.updateDynamic("between")(between)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("isDateBased")(isDateBased)
-    __obj.updateDynamic("isDurationEstimated")(isDurationEstimated)
-    __obj.updateDynamic("isSupportedBy")(isSupportedBy)
-    __obj.updateDynamic("isTimeBased")(isTimeBased)
+    val __obj = js.Dynamic.literal(addTo = addTo, between = between, duration = duration, isDateBased = isDateBased, isDurationEstimated = isDurationEstimated, isSupportedBy = isSupportedBy, isTimeBased = isTimeBased)
+  
     __obj.asInstanceOf[TemporalUnit]
   }
 }

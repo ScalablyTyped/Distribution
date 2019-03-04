@@ -76,18 +76,8 @@ object IgToolbarMethods {
     removeItem: js.Function1[js.Object, js.Object],
     widget: js.Function0[scala.Unit]
   ): IgToolbarMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activateItem")(activateItem)
-    __obj.updateDynamic("addItem")(addItem)
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("deactivateAll")(deactivateAll)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disableItem")(disableItem)
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("removeItem")(removeItem)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(activateItem = activateItem, addItem = addItem, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, deactivateAll = deactivateAll, destroy = destroy, disableItem = disableItem, getItem = getItem, removeItem = removeItem, widget = widget)
+  
     __obj.asInstanceOf[IgToolbarMethods]
   }
 }

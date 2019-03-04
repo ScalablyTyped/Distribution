@@ -12,8 +12,8 @@ trait Next extends js.Object {
 object Next {
   @scala.inline
   def apply(total: qiniuDashJsLib.Anon_Loaded): Next = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(total = total)
+  
     __obj.asInstanceOf[Next]
   }
 }

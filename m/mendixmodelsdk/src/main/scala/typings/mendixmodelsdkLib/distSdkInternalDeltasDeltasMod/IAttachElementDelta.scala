@@ -34,12 +34,7 @@ object IAttachElementDelta {
     unitId: java.lang.String,
     newIndex: scala.Int | scala.Double = null
   ): IAttachElementDelta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deltaType")(deltaType)
-    __obj.updateDynamic("elementId")(elementId)
-    __obj.updateDynamic("newParentId")(newParentId)
-    __obj.updateDynamic("newParentPropertyName")(newParentPropertyName)
-    __obj.updateDynamic("unitId")(unitId)
+    val __obj = js.Dynamic.literal(deltaType = deltaType, elementId = elementId, newParentId = newParentId, newParentPropertyName = newParentPropertyName, unitId = unitId)
     if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttachElementDelta]
   }

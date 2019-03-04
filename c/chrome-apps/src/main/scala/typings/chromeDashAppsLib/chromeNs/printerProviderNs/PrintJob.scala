@@ -27,12 +27,8 @@ object PrintJob {
     ticket: js.Object,
     title: java.lang.String
   ): PrintJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("printerId")(printerId)
-    __obj.updateDynamic("ticket")(ticket)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(contentType = contentType, document = document, printerId = printerId, ticket = ticket, title = title)
+  
     __obj.asInstanceOf[PrintJob]
   }
 }

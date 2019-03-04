@@ -34,14 +34,7 @@ object Anon_CanPurchaseUploadAllowance {
     sponsoredGroupName: java.lang.String = null,
     sponsoredGroupRole: evernoteLib.evernoteMod.EvernoteNs.SponsoredGroupRole = null
   ): Anon_CanPurchaseUploadAllowance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canPurchaseUploadAllowance")(canPurchaseUploadAllowance)
-    __obj.updateDynamic("currentTime")(currentTime)
-    __obj.updateDynamic("premium")(premium)
-    __obj.updateDynamic("premiumCancellationPending")(premiumCancellationPending)
-    __obj.updateDynamic("premiumExtendable")(premiumExtendable)
-    __obj.updateDynamic("premiumPending")(premiumPending)
-    __obj.updateDynamic("premiumRecurring")(premiumRecurring)
+    val __obj = js.Dynamic.literal(canPurchaseUploadAllowance = canPurchaseUploadAllowance, currentTime = currentTime, premium = premium, premiumCancellationPending = premiumCancellationPending, premiumExtendable = premiumExtendable, premiumPending = premiumPending, premiumRecurring = premiumRecurring)
     if (premiumExpirationDate != null) __obj.updateDynamic("premiumExpirationDate")(premiumExpirationDate.asInstanceOf[js.Any])
     if (!js.isUndefined(premiumUpgradable)) __obj.updateDynamic("premiumUpgradable")(premiumUpgradable)
     if (sponsoredGroupName != null) __obj.updateDynamic("sponsoredGroupName")(sponsoredGroupName)

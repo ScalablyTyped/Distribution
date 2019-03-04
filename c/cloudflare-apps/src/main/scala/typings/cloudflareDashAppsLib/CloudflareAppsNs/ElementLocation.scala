@@ -16,9 +16,8 @@ object ElementLocation {
     method: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.before | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.prepend | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.append | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.after | cloudflareDashAppsLib.cloudflareDashAppsLibStrings.replace,
     selector: java.lang.String
   ): ElementLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], selector = selector)
+  
     __obj.asInstanceOf[ElementLocation]
   }
 }

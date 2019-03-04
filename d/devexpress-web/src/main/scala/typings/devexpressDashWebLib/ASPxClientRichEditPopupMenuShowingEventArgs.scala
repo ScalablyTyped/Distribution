@@ -19,9 +19,8 @@ trait ASPxClientRichEditPopupMenuShowingEventArgs extends ASPxClientCancelEventA
 object ASPxClientRichEditPopupMenuShowingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, menuItems: ASPxClientRichEditPopupMenuItemCollection): ASPxClientRichEditPopupMenuShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("menuItems")(menuItems)
+    val __obj = js.Dynamic.literal(cancel = cancel, menuItems = menuItems)
+  
     __obj.asInstanceOf[ASPxClientRichEditPopupMenuShowingEventArgs]
   }
 }

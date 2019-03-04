@@ -13,9 +13,8 @@ trait CRelayContext[TEnvironment] extends js.Object {
 object CRelayContext {
   @scala.inline
   def apply[TEnvironment](environment: TEnvironment, variables: Variables): CRelayContext[TEnvironment] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], variables = variables)
+  
     __obj.asInstanceOf[CRelayContext[TEnvironment]]
   }
 }

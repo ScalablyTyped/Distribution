@@ -18,10 +18,8 @@ object IRandomAccessStreamReferenceStatics {
     createFromStream: js.Function1[IRandomAccessStream, RandomAccessStreamReference],
     createFromUri: js.Function1[winrtLib.WindowsNs.FoundationNs.Uri, RandomAccessStreamReference]
   ): IRandomAccessStreamReferenceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFromFile")(createFromFile)
-    __obj.updateDynamic("createFromStream")(createFromStream)
-    __obj.updateDynamic("createFromUri")(createFromUri)
+    val __obj = js.Dynamic.literal(createFromFile = createFromFile, createFromStream = createFromStream, createFromUri = createFromUri)
+  
     __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
   }
 }

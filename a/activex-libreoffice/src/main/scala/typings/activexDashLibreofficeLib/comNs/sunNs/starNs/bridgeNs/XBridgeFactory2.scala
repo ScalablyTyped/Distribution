@@ -33,17 +33,8 @@ object XBridgeFactory2 {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XBridgeFactory2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExistingBridges")(ExistingBridges)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createBridge")(createBridge)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getBridge")(getBridge)
-    __obj.updateDynamic("getExistingBridges")(getExistingBridges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(ExistingBridges = ExistingBridges, acquire = acquire, addEventListener = addEventListener, createBridge = createBridge, dispose = dispose, getBridge = getBridge, getExistingBridges = getExistingBridges, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XBridgeFactory2]
   }
 }

@@ -42,22 +42,8 @@ object Anon_AddAdd {
     renameDelete: scala.Double,
     renameRename: scala.Double
   ): Anon_AddAdd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAdd")(addAdd)
-    __obj.updateDynamic("addRename")(addRename)
-    __obj.updateDynamic("deleteEdit")(deleteEdit)
-    __obj.updateDynamic("deleteRename")(deleteRename)
-    __obj.updateDynamic("directoryChild")(directoryChild)
-    __obj.updateDynamic("directoryFile")(directoryFile)
-    __obj.updateDynamic("editDelete")(editDelete)
-    __obj.updateDynamic("editEdit")(editEdit)
-    __obj.updateDynamic("fileDirectory")(fileDirectory)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("rename1to2")(rename1to2)
-    __obj.updateDynamic("rename2to1")(rename2to1)
-    __obj.updateDynamic("renameAdd")(renameAdd)
-    __obj.updateDynamic("renameDelete")(renameDelete)
-    __obj.updateDynamic("renameRename")(renameRename)
+    val __obj = js.Dynamic.literal(addAdd = addAdd, addRename = addRename, deleteEdit = deleteEdit, deleteRename = deleteRename, directoryChild = directoryChild, directoryFile = directoryFile, editDelete = editDelete, editEdit = editEdit, fileDirectory = fileDirectory, none = none, rename1to2 = rename1to2, rename2to1 = rename2to1, renameAdd = renameAdd, renameDelete = renameDelete, renameRename = renameRename)
+  
     __obj.asInstanceOf[Anon_AddAdd]
   }
 }

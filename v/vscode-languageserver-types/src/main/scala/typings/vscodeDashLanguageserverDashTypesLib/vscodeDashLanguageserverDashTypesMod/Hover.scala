@@ -19,8 +19,7 @@ trait Hover extends js.Object {
 object Hover {
   @scala.inline
   def apply(contents: MarkupContent | MarkedString | js.Array[MarkedString], range: Range = null): Hover = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[Hover]
   }

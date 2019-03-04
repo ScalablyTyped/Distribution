@@ -12,8 +12,8 @@ trait OrderOptions extends js.Object {
 object OrderOptions {
   @scala.inline
   def apply(descending: scala.Boolean): OrderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descending")(descending)
+    val __obj = js.Dynamic.literal(descending = descending)
+  
     __obj.asInstanceOf[OrderOptions]
   }
 }

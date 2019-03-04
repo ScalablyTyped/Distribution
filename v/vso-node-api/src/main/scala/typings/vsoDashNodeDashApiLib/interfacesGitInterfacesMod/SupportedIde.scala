@@ -37,12 +37,8 @@ object SupportedIde {
     protocolHandlerUrl: java.lang.String,
     supportedPlatforms: js.Array[java.lang.String]
   ): SupportedIde = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downloadUrl")(downloadUrl)
-    __obj.updateDynamic("ideType")(ideType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("protocolHandlerUrl")(protocolHandlerUrl)
-    __obj.updateDynamic("supportedPlatforms")(supportedPlatforms)
+    val __obj = js.Dynamic.literal(downloadUrl = downloadUrl, ideType = ideType, name = name, protocolHandlerUrl = protocolHandlerUrl, supportedPlatforms = supportedPlatforms)
+  
     __obj.asInstanceOf[SupportedIde]
   }
 }

@@ -51,25 +51,8 @@ object GetLoadBalancerResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     zoneId: java.lang.String
   ): GetLoadBalancerResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessLogs")(accessLogs)
-    __obj.updateDynamic("availabilityZones")(availabilityZones)
-    __obj.updateDynamic("connectionDraining")(connectionDraining)
-    __obj.updateDynamic("connectionDrainingTimeout")(connectionDrainingTimeout)
-    __obj.updateDynamic("crossZoneLoadBalancing")(crossZoneLoadBalancing)
-    __obj.updateDynamic("dnsName")(dnsName)
-    __obj.updateDynamic("healthCheck")(healthCheck)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("idleTimeout")(idleTimeout)
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("internal")(internal)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("securityGroups")(securityGroups)
-    __obj.updateDynamic("sourceSecurityGroup")(sourceSecurityGroup)
-    __obj.updateDynamic("sourceSecurityGroupId")(sourceSecurityGroupId)
-    __obj.updateDynamic("subnets")(subnets)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("zoneId")(zoneId)
+    val __obj = js.Dynamic.literal(accessLogs = accessLogs, availabilityZones = availabilityZones, connectionDraining = connectionDraining, connectionDrainingTimeout = connectionDrainingTimeout, crossZoneLoadBalancing = crossZoneLoadBalancing, dnsName = dnsName, healthCheck = healthCheck, id = id, idleTimeout = idleTimeout, instances = instances, internal = internal, listeners = listeners, securityGroups = securityGroups, sourceSecurityGroup = sourceSecurityGroup, sourceSecurityGroupId = sourceSecurityGroupId, subnets = subnets, tags = tags, zoneId = zoneId)
+  
     __obj.asInstanceOf[GetLoadBalancerResult]
   }
 }

@@ -27,10 +27,7 @@ object Kernel {
     offset: scala.Int | scala.Double = null,
     scale: scala.Int | scala.Double = null
   ): Kernel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("kernel")(kernel)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, kernel = kernel, width = width)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Kernel]

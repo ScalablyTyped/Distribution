@@ -42,9 +42,7 @@ object Anon_AltFieldsKeyMerchantIdOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyMerchantIdOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("merchantId")(merchantId)
-    __obj.updateDynamic("templateName")(templateName)
+    val __obj = js.Dynamic.literal(merchantId = merchantId, templateName = templateName)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

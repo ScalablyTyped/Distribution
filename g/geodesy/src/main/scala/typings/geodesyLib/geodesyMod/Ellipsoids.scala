@@ -24,13 +24,8 @@ object Ellipsoids {
     Intl1924: Ellipsoid,
     WGS84: Ellipsoid
   ): Ellipsoids = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Airy1830")(Airy1830)
-    __obj.updateDynamic("AiryModified")(AiryModified)
-    __obj.updateDynamic("Bessel1841")(Bessel1841)
-    __obj.updateDynamic("GRS80")(GRS80)
-    __obj.updateDynamic("Intl1924")(Intl1924)
-    __obj.updateDynamic("WGS84")(WGS84)
+    val __obj = js.Dynamic.literal(Airy1830 = Airy1830, AiryModified = AiryModified, Bessel1841 = Bessel1841, GRS80 = GRS80, Intl1924 = Intl1924, WGS84 = WGS84)
+  
     __obj.asInstanceOf[Ellipsoids]
   }
 }

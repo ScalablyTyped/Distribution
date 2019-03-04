@@ -53,15 +53,8 @@ object Handshake {
     url: java.lang.String,
     xdomain: scala.Boolean
   ): Handshake = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("issued")(issued)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("xdomain")(xdomain)
+    val __obj = js.Dynamic.literal(address = address, headers = headers, issued = issued, query = query, secure = secure, time = time, url = url, xdomain = xdomain)
+  
     __obj.asInstanceOf[Handshake]
   }
 }

@@ -28,8 +28,7 @@ object Anon_CommentsDecorators {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_CommentsDecorators = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(properties = properties)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (loc != null) __obj.updateDynamic("loc")(loc)

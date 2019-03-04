@@ -12,8 +12,8 @@ trait OffsetsByTopicPartition extends js.Object {
 object OffsetsByTopicPartition {
   @scala.inline
   def apply(topics: js.Array[TopicOffsets]): OffsetsByTopicPartition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(topics = topics)
+  
     __obj.asInstanceOf[OffsetsByTopicPartition]
   }
 }

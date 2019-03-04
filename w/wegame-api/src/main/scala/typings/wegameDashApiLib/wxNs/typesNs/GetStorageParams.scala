@@ -20,8 +20,7 @@ object GetStorageParams {
     fail: js.Function0[scala.Unit] = null,
     success: js.Function1[/* res */ wegameDashApiLib.Anon_DataAny, scala.Unit] = null
   ): GetStorageParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

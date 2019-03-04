@@ -152,8 +152,7 @@ object NewmanRunOptions {
     timeoutRequest: scala.Int | scala.Double = null,
     timeoutScript: scala.Int | scala.Double = null
   ): NewmanRunOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
     if (bail != null) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
     if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
     if (delayRequest != null) __obj.updateDynamic("delayRequest")(delayRequest.asInstanceOf[js.Any])

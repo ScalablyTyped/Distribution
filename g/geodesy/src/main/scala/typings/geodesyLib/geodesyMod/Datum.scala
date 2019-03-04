@@ -34,9 +34,8 @@ object Datum {
       scala.Double
     ]
   ): Datum = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ellipsoid")(ellipsoid)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(ellipsoid = ellipsoid, transform = transform)
+  
     __obj.asInstanceOf[Datum]
   }
 }

@@ -36,10 +36,7 @@ object ExecutionContextDescription {
     origin: java.lang.String,
     auxData: js.Object = null
   ): ExecutionContextDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(id = id, name = name, origin = origin)
     if (auxData != null) __obj.updateDynamic("auxData")(auxData)
     __obj.asInstanceOf[ExecutionContextDescription]
   }

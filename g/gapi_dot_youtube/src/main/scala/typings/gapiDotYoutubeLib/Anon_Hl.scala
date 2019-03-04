@@ -32,8 +32,7 @@ object Anon_Hl {
     id: java.lang.String = null,
     regionCode: java.lang.String = null
   ): Anon_Hl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (hl != null) __obj.updateDynamic("hl")(hl)
     if (id != null) __obj.updateDynamic("id")(id)
     if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)

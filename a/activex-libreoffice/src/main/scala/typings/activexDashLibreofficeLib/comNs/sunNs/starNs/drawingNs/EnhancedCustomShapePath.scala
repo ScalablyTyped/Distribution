@@ -55,19 +55,8 @@ object EnhancedCustomShapePath {
     TextFrames: activexDashInteropLib.SafeArray[EnhancedCustomShapeTextFrame],
     TextPathAllowed: scala.Boolean
   ): EnhancedCustomShapePath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConcentricGradientFillAllowed")(ConcentricGradientFillAllowed)
-    __obj.updateDynamic("Coordinates")(Coordinates)
-    __obj.updateDynamic("ExtrusionAllowed")(ExtrusionAllowed)
-    __obj.updateDynamic("GluePointLeavingDirections")(GluePointLeavingDirections)
-    __obj.updateDynamic("GluePointType")(GluePointType)
-    __obj.updateDynamic("GluePoints")(GluePoints)
-    __obj.updateDynamic("Segments")(Segments)
-    __obj.updateDynamic("StretchX")(StretchX)
-    __obj.updateDynamic("StretchY")(StretchY)
-    __obj.updateDynamic("SubViewSize")(SubViewSize)
-    __obj.updateDynamic("TextFrames")(TextFrames)
-    __obj.updateDynamic("TextPathAllowed")(TextPathAllowed)
+    val __obj = js.Dynamic.literal(ConcentricGradientFillAllowed = ConcentricGradientFillAllowed, Coordinates = Coordinates, ExtrusionAllowed = ExtrusionAllowed, GluePointLeavingDirections = GluePointLeavingDirections, GluePointType = GluePointType, GluePoints = GluePoints, Segments = Segments, StretchX = StretchX, StretchY = StretchY, SubViewSize = SubViewSize, TextFrames = TextFrames, TextPathAllowed = TextPathAllowed)
+  
     __obj.asInstanceOf[EnhancedCustomShapePath]
   }
 }

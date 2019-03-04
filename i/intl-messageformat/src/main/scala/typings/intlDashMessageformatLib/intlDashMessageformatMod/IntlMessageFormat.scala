@@ -16,9 +16,8 @@ object IntlMessageFormat {
     format: js.Function1[js.Any, java.lang.String],
     resolvedOptions: js.Function0[intlDashMessageformatLib.Anon_Locale]
   ): IntlMessageFormat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("resolvedOptions")(resolvedOptions)
+    val __obj = js.Dynamic.literal(format = format, resolvedOptions = resolvedOptions)
+  
     __obj.asInstanceOf[IntlMessageFormat]
   }
 }

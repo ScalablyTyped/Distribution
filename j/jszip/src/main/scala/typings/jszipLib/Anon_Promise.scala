@@ -12,8 +12,8 @@ trait Anon_Promise extends js.Object {
 object Anon_Promise {
   @scala.inline
   def apply(Promise: stdLib.PromiseConstructorLike): Anon_Promise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Promise")(Promise)
+    val __obj = js.Dynamic.literal(Promise = Promise)
+  
     __obj.asInstanceOf[Anon_Promise]
   }
 }

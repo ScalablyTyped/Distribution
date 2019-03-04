@@ -12,8 +12,8 @@ trait Anon_ApplyServerSideEncryptionByDefault extends js.Object {
 object Anon_ApplyServerSideEncryptionByDefault {
   @scala.inline
   def apply(applyServerSideEncryptionByDefault: Anon_KmsMasterKeyId): Anon_ApplyServerSideEncryptionByDefault = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyServerSideEncryptionByDefault")(applyServerSideEncryptionByDefault)
+    val __obj = js.Dynamic.literal(applyServerSideEncryptionByDefault = applyServerSideEncryptionByDefault)
+  
     __obj.asInstanceOf[Anon_ApplyServerSideEncryptionByDefault]
   }
 }

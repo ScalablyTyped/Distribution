@@ -22,7 +22,7 @@ class ConditionVariable () extends js.Object {
   /**
     * @hidden
     */
-  var `resolvers_`: js.Any = js.native
+  var resolvers_ : js.Any = js.native
   /**
     * Notify, wake all
     */

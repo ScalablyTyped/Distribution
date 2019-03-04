@@ -37,12 +37,8 @@ object SvnMappingDetails {
     revision: java.lang.String,
     serverPath: java.lang.String
   ): SvnMappingDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("ignoreExternals")(ignoreExternals)
-    __obj.updateDynamic("localPath")(localPath)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("serverPath")(serverPath)
+    val __obj = js.Dynamic.literal(depth = depth, ignoreExternals = ignoreExternals, localPath = localPath, revision = revision, serverPath = serverPath)
+  
     __obj.asInstanceOf[SvnMappingDetails]
   }
 }

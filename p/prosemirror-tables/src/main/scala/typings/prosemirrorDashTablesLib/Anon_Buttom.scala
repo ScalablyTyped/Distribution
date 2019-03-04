@@ -15,11 +15,8 @@ trait Anon_Buttom extends js.Object {
 object Anon_Buttom {
   @scala.inline
   def apply(buttom: scala.Double, left: scala.Double, right: scala.Double, top: scala.Double): Anon_Buttom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttom")(buttom)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(buttom = buttom, left = left, right = right, top = top)
+  
     __obj.asInstanceOf[Anon_Buttom]
   }
 }

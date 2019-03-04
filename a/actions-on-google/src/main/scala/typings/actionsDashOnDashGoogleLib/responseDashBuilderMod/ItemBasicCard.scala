@@ -12,8 +12,8 @@ trait ItemBasicCard extends RichResponseItem {
 object ItemBasicCard {
   @scala.inline
   def apply(basicCard: BasicCard): ItemBasicCard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basicCard")(basicCard)
+    val __obj = js.Dynamic.literal(basicCard = basicCard)
+  
     __obj.asInstanceOf[ItemBasicCard]
   }
 }

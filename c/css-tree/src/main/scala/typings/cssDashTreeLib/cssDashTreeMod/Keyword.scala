@@ -22,12 +22,8 @@ object Keyword {
     prefix: java.lang.String,
     vendor: java.lang.String
   ): Keyword = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basename")(basename)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(basename = basename, custom = custom, name = name, prefix = prefix, vendor = vendor)
+  
     __obj.asInstanceOf[Keyword]
   }
 }

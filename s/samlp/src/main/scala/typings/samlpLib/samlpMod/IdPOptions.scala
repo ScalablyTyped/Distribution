@@ -63,11 +63,7 @@ object IdPOptions {
     signResponse: js.UndefOr[scala.Boolean] = js.undefined,
     signatureAlgorithm: SignatureAlgorithmType = null
   ): IdPOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    __obj.updateDynamic("getPostURL")(getPostURL)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], getPostURL = getPostURL, issuer = issuer, key = key.asInstanceOf[js.Any])
     if (RelayState != null) __obj.updateDynamic("RelayState")(RelayState)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (authnContextClassRef != null) __obj.updateDynamic("authnContextClassRef")(authnContextClassRef)

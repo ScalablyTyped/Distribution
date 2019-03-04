@@ -68,18 +68,8 @@ object Margin {
     setTo: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, Margin],
     top: scala.Double
   ): Margin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("equalTo")(equalTo)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("equalsApprox")(equalsApprox)
-    __obj.updateDynamic("isReal")(isReal)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setTo")(setTo)
-    __obj.updateDynamic("top")(top)
+    val __obj = js.Dynamic.literal(bottom = bottom, copy = copy, equalTo = equalTo, equals = equals, equalsApprox = equalsApprox, isReal = isReal, left = left, right = right, set = set, setTo = setTo, top = top)
+  
     __obj.asInstanceOf[Margin]
   }
 }

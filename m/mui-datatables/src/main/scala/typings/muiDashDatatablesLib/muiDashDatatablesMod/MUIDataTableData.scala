@@ -13,9 +13,8 @@ trait MUIDataTableData extends js.Object {
 object MUIDataTableData {
   @scala.inline
   def apply(data: js.Array[_], index: scala.Double): MUIDataTableData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(data = data, index = index)
+  
     __obj.asInstanceOf[MUIDataTableData]
   }
 }

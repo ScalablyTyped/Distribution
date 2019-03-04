@@ -32,8 +32,7 @@ object TouchableProps {
     onMouseLeave: js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElement, scala.Unit] = null,
     shape: gestaltLib.gestaltLibStrings.square | gestaltLib.gestaltLibStrings.rounded | gestaltLib.gestaltLibStrings.pill | gestaltLib.gestaltLibStrings.circle | gestaltLib.gestaltLibStrings.roundedTop | gestaltLib.gestaltLibStrings.roundedBottom | gestaltLib.gestaltLibStrings.roundedLeft | gestaltLib.gestaltLibStrings.roundedRight = null
   ): TouchableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onTouch")(onTouch)
+    val __obj = js.Dynamic.literal(onTouch = onTouch)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(fullHeight)) __obj.updateDynamic("fullHeight")(fullHeight)
     if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)

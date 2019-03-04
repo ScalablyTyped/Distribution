@@ -18,8 +18,8 @@ object DeobfuscationfilesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DeobfuscationFilesUploadResponse]
     ]
   ): DeobfuscationfilesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("upload")(upload)
+    val __obj = js.Dynamic.literal(upload = upload)
+  
     __obj.asInstanceOf[DeobfuscationfilesResource]
   }
 }

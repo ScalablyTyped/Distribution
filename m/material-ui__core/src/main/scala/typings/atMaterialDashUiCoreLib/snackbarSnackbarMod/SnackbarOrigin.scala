@@ -16,9 +16,8 @@ object SnackbarOrigin {
     horizontal: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right,
     vertical: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom
   ): SnackbarOrigin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(horizontal = horizontal.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SnackbarOrigin]
   }
 }

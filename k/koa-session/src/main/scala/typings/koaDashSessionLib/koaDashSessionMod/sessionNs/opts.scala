@@ -97,11 +97,7 @@ object opts {
       scala.Unit
     ] = null
   ): opts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("genid")(genid)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, genid = genid, key = key)
     if (ContextStore != null) __obj.updateDynamic("ContextStore")(ContextStore)
     if (beforeSave != null) __obj.updateDynamic("beforeSave")(beforeSave)
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])

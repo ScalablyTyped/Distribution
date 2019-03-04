@@ -12,8 +12,8 @@ trait Fork extends js.Object {
 object Fork {
   @scala.inline
   def apply(use: js.Function1[Plugin[js.Any], js.Any]): Fork = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("use")(use)
+    val __obj = js.Dynamic.literal(use = use)
+  
     __obj.asInstanceOf[Fork]
   }
 }

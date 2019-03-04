@@ -20,11 +20,8 @@ object Anon_0 {
     regular: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`0`,
     solid: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`2`
   ): Anon_0 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("light")(light)
-    __obj.updateDynamic("regular")(regular)
-    __obj.updateDynamic("solid")(solid)
+    val __obj = js.Dynamic.literal(brand = brand, light = light, regular = regular, solid = solid)
+  
     __obj.asInstanceOf[Anon_0]
   }
 }

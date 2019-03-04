@@ -35,13 +35,8 @@ object IPrintOptionDetails {
     trySetValue: js.Function1[js.Any, scala.Boolean],
     value: js.Any
   ): IPrintOptionDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorText")(errorText)
-    __obj.updateDynamic("optionId")(optionId)
-    __obj.updateDynamic("optionType")(optionType)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("trySetValue")(trySetValue)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(errorText = errorText, optionId = optionId, optionType = optionType, state = state, trySetValue = trySetValue, value = value)
+  
     __obj.asInstanceOf[IPrintOptionDetails]
   }
 }

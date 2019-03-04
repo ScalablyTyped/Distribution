@@ -28,15 +28,8 @@ object Anon_RTLDDEFAUL {
     RTLD_NOLOAD: scala.Double,
     RTLD_NOW: scala.Double
   ): Anon_RTLDDEFAUL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RTLD_DEFAUL")(RTLD_DEFAUL)
-    __obj.updateDynamic("RTLD_GLOBAL")(RTLD_GLOBAL)
-    __obj.updateDynamic("RTLD_LAZY")(RTLD_LAZY)
-    __obj.updateDynamic("RTLD_LOCAL")(RTLD_LOCAL)
-    __obj.updateDynamic("RTLD_NEXT")(RTLD_NEXT)
-    __obj.updateDynamic("RTLD_NODELETE")(RTLD_NODELETE)
-    __obj.updateDynamic("RTLD_NOLOAD")(RTLD_NOLOAD)
-    __obj.updateDynamic("RTLD_NOW")(RTLD_NOW)
+    val __obj = js.Dynamic.literal(RTLD_DEFAUL = RTLD_DEFAUL, RTLD_GLOBAL = RTLD_GLOBAL, RTLD_LAZY = RTLD_LAZY, RTLD_LOCAL = RTLD_LOCAL, RTLD_NEXT = RTLD_NEXT, RTLD_NODELETE = RTLD_NODELETE, RTLD_NOLOAD = RTLD_NOLOAD, RTLD_NOW = RTLD_NOW)
+  
     __obj.asInstanceOf[Anon_RTLDDEFAUL]
   }
 }

@@ -19,9 +19,8 @@ trait RunFilter extends js.Object {
 object RunFilter {
   @scala.inline
   def apply(sourceFilter: java.lang.String, testCaseFilter: java.lang.String): RunFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sourceFilter")(sourceFilter)
-    __obj.updateDynamic("testCaseFilter")(testCaseFilter)
+    val __obj = js.Dynamic.literal(sourceFilter = sourceFilter, testCaseFilter = testCaseFilter)
+  
     __obj.asInstanceOf[RunFilter]
   }
 }

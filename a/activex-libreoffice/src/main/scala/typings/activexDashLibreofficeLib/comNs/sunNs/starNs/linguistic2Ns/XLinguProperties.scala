@@ -98,34 +98,8 @@ object XLinguProperties {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XLinguProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultLocale")(DefaultLocale)
-    __obj.updateDynamic("DefaultLocale_CJK")(DefaultLocale_CJK)
-    __obj.updateDynamic("DefaultLocale_CTL")(DefaultLocale_CTL)
-    __obj.updateDynamic("HyphMinLeading")(HyphMinLeading)
-    __obj.updateDynamic("HyphMinTrailing")(HyphMinTrailing)
-    __obj.updateDynamic("HyphMinWordLength")(HyphMinWordLength)
-    __obj.updateDynamic("IsHyphAuto")(IsHyphAuto)
-    __obj.updateDynamic("IsHyphSpecial")(IsHyphSpecial)
-    __obj.updateDynamic("IsIgnoreControlCharacters")(IsIgnoreControlCharacters)
-    __obj.updateDynamic("IsSpellAuto")(IsSpellAuto)
-    __obj.updateDynamic("IsSpellCapitalization")(IsSpellCapitalization)
-    __obj.updateDynamic("IsSpellSpecial")(IsSpellSpecial)
-    __obj.updateDynamic("IsSpellUpperCase")(IsSpellUpperCase)
-    __obj.updateDynamic("IsSpellWithDigits")(IsSpellWithDigits)
-    __obj.updateDynamic("IsUseDictionaryList")(IsUseDictionaryList)
-    __obj.updateDynamic("IsWrapReverse")(IsWrapReverse)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(DefaultLocale = DefaultLocale, DefaultLocale_CJK = DefaultLocale_CJK, DefaultLocale_CTL = DefaultLocale_CTL, HyphMinLeading = HyphMinLeading, HyphMinTrailing = HyphMinTrailing, HyphMinWordLength = HyphMinWordLength, IsHyphAuto = IsHyphAuto, IsHyphSpecial = IsHyphSpecial, IsIgnoreControlCharacters = IsIgnoreControlCharacters, IsSpellAuto = IsSpellAuto, IsSpellCapitalization = IsSpellCapitalization, IsSpellSpecial = IsSpellSpecial, IsSpellUpperCase = IsSpellUpperCase, IsSpellWithDigits = IsSpellWithDigits, IsUseDictionaryList = IsUseDictionaryList, IsWrapReverse = IsWrapReverse, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XLinguProperties]
   }
 }

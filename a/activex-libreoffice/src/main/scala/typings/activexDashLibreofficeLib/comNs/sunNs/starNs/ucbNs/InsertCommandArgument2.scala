@@ -21,11 +21,8 @@ object InsertCommandArgument2 {
     MimeType: java.lang.String,
     ReplaceExisting: scala.Boolean
   ): InsertCommandArgument2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("DocumentId")(DocumentId)
-    __obj.updateDynamic("MimeType")(MimeType)
-    __obj.updateDynamic("ReplaceExisting")(ReplaceExisting)
+    val __obj = js.Dynamic.literal(Data = Data, DocumentId = DocumentId, MimeType = MimeType, ReplaceExisting = ReplaceExisting)
+  
     __obj.asInstanceOf[InsertCommandArgument2]
   }
 }

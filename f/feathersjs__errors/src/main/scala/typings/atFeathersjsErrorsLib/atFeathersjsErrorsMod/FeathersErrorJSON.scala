@@ -24,13 +24,8 @@ object FeathersErrorJSON {
     message: java.lang.String,
     name: java.lang.String
   ): FeathersErrorJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(className = className, code = code, data = data, errors = errors, message = message, name = name)
+  
     __obj.asInstanceOf[FeathersErrorJSON]
   }
 }

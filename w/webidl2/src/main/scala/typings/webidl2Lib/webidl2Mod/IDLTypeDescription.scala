@@ -35,11 +35,7 @@ object IDLTypeDescription {
     generic: java.lang.String = null,
     `type`: java.lang.String = null
   ): IDLTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
-    __obj.updateDynamic("nullable")(nullable)
-    __obj.updateDynamic("sequence")(sequence)
-    __obj.updateDynamic("union")(union)
+    val __obj = js.Dynamic.literal(idlType = idlType.asInstanceOf[js.Any], nullable = nullable, sequence = sequence, union = union)
     if (generic != null) __obj.updateDynamic("generic")(generic)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IDLTypeDescription]

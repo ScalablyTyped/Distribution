@@ -19,11 +19,8 @@ object CellClickEventArgs {
     resource: java.lang.String,
     sender: Control
   ): CellClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("interval")(interval)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, interval = interval, resource = resource, sender = sender)
+  
     __obj.asInstanceOf[CellClickEventArgs]
   }
 }

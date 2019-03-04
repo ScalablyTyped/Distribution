@@ -19,8 +19,8 @@ trait SDKReady
 object SDKReady {
   @scala.inline
   def apply(version: java.lang.String): SDKReady = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
+  
     __obj.asInstanceOf[SDKReady]
   }
 }

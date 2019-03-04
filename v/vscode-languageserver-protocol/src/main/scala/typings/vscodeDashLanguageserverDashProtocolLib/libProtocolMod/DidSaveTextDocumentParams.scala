@@ -23,8 +23,7 @@ object DidSaveTextDocumentParams {
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier,
     text: java.lang.String = null
   ): DidSaveTextDocumentParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[DidSaveTextDocumentParams]
   }

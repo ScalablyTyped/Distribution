@@ -18,8 +18,8 @@ object FindResponse {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ _
     ]
   ): FindResponse[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("docs")(docs)
+    val __obj = js.Dynamic.literal(docs = docs)
+  
     __obj.asInstanceOf[FindResponse[Content]]
   }
 }

@@ -22,10 +22,8 @@ object IMembership {
     SPGroup: js.Function1[scala.Double, IExpression],
     SPWeb: IMembershipSPWeb
   ): IMembership = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentUserGroups")(CurrentUserGroups)
-    __obj.updateDynamic("SPGroup")(SPGroup)
-    __obj.updateDynamic("SPWeb")(SPWeb)
+    val __obj = js.Dynamic.literal(CurrentUserGroups = CurrentUserGroups, SPGroup = SPGroup, SPWeb = SPWeb)
+  
     __obj.asInstanceOf[IMembership]
   }
 }

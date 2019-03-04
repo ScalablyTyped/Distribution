@@ -25,8 +25,7 @@ object GetSubnetIdsArgs {
     filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetSubnetIdsArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(vpcId = vpcId)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetSubnetIdsArgs]

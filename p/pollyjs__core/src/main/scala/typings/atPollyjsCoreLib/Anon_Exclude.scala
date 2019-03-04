@@ -12,8 +12,8 @@ trait Anon_Exclude extends js.Object {
 object Anon_Exclude {
   @scala.inline
   def apply(exclude: js.Array[java.lang.String]): Anon_Exclude = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclude")(exclude)
+    val __obj = js.Dynamic.literal(exclude = exclude)
+  
     __obj.asInstanceOf[Anon_Exclude]
   }
 }

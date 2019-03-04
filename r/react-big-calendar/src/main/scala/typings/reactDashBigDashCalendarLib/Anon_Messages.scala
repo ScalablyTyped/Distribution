@@ -12,8 +12,8 @@ trait Anon_Messages extends js.Object {
 object Anon_Messages {
   @scala.inline
   def apply(messages: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Messages): Anon_Messages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("messages")(messages)
+    val __obj = js.Dynamic.literal(messages = messages)
+  
     __obj.asInstanceOf[Anon_Messages]
   }
 }

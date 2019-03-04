@@ -30,9 +30,7 @@ object GraphQLObjectTypeConfig {
     interfaces: Thunk[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[GraphQLInterfaceType]]] = null,
     isTypeOf: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLIsTypeOfFn[TSource, TContext]] = null
   ): GraphQLObjectTypeConfig[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])

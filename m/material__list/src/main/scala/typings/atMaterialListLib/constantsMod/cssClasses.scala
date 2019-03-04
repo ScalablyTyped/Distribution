@@ -21,11 +21,8 @@ object cssClasses {
     LIST_ITEM_SELECTED_CLASS: atMaterialListLib.atMaterialListLibStrings.`mdc-list-item--selected`,
     ROOT: atMaterialListLib.atMaterialListLibStrings.`mdc-list`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LIST_ITEM_ACTIVATED_CLASS")(LIST_ITEM_ACTIVATED_CLASS)
-    __obj.updateDynamic("LIST_ITEM_CLASS")(LIST_ITEM_CLASS)
-    __obj.updateDynamic("LIST_ITEM_SELECTED_CLASS")(LIST_ITEM_SELECTED_CLASS)
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(LIST_ITEM_ACTIVATED_CLASS = LIST_ITEM_ACTIVATED_CLASS, LIST_ITEM_CLASS = LIST_ITEM_CLASS, LIST_ITEM_SELECTED_CLASS = LIST_ITEM_SELECTED_CLASS, ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

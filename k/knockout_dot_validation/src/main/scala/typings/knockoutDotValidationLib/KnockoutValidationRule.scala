@@ -20,9 +20,7 @@ object KnockoutValidationRule {
     condition: js.Function0[scala.Boolean] = null,
     message: java.lang.String = null
   ): KnockoutValidationRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("rule")(rule)
+    val __obj = js.Dynamic.literal(params = params, rule = rule)
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[KnockoutValidationRule]

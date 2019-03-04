@@ -16,14 +16,6 @@ trait MenuComponent
     semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
-  @JSName("Menu")
-  var Menu_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
-  def Menu(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps]
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def Menu(
-    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps],
-    context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  var Menu: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
 }
 

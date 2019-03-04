@@ -83,31 +83,8 @@ object DataPilotSource {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): DataPilotSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnFieldCount")(ColumnFieldCount)
-    __obj.updateDynamic("ColumnGrand")(ColumnGrand)
-    __obj.updateDynamic("DataFieldCount")(DataFieldCount)
-    __obj.updateDynamic("Dimensions")(Dimensions)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("Results")(Results)
-    __obj.updateDynamic("RowFieldCount")(RowFieldCount)
-    __obj.updateDynamic("RowGrand")(RowGrand)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getDimensions")(getDimensions)
-    __obj.updateDynamic("getFilteredResults")(getFilteredResults)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("getResults")(getResults)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(ColumnFieldCount = ColumnFieldCount, ColumnGrand = ColumnGrand, DataFieldCount = DataFieldCount, Dimensions = Dimensions, PropertySetInfo = PropertySetInfo, Results = Results, RowFieldCount = RowFieldCount, RowGrand = RowGrand, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addRefreshListener = addRefreshListener, addVetoableChangeListener = addVetoableChangeListener, getDimensions = getDimensions, getFilteredResults = getFilteredResults, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, getResults = getResults, queryInterface = queryInterface, refresh = refresh, release = release, removePropertyChangeListener = removePropertyChangeListener, removeRefreshListener = removeRefreshListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[DataPilotSource]
   }
 }

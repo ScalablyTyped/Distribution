@@ -12,8 +12,8 @@ trait EnumerateVisualObjectInstancesOptions extends js.Object {
 object EnumerateVisualObjectInstancesOptions {
   @scala.inline
   def apply(objectName: java.lang.String): EnumerateVisualObjectInstancesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectName")(objectName)
+    val __obj = js.Dynamic.literal(objectName = objectName)
+  
     __obj.asInstanceOf[EnumerateVisualObjectInstancesOptions]
   }
 }

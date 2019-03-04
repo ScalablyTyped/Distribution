@@ -20,11 +20,8 @@ object Anon_Complete {
     prev: java.lang.String,
     start: java.lang.String
   ): Anon_Complete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(complete = complete, next = next, prev = prev, start = start)
+  
     __obj.asInstanceOf[Anon_Complete]
   }
 }

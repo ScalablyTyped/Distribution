@@ -18,9 +18,7 @@ object Options {
     siteKey: java.lang.String,
     ssl: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("secretKey")(secretKey)
-    __obj.updateDynamic("siteKey")(siteKey)
+    val __obj = js.Dynamic.literal(secretKey = secretKey, siteKey = siteKey)
     if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
     __obj.asInstanceOf[Options]
   }

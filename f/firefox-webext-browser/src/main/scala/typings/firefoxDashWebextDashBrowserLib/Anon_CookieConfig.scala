@@ -70,13 +70,7 @@ object Anon_CookieConfig {
     protectedContentEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting = null,
     thirdPartyCookiesAllowed: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting = null
   ): Anon_CookieConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookieConfig")(cookieConfig)
-    __obj.updateDynamic("firstPartyIsolate")(firstPartyIsolate)
-    __obj.updateDynamic("hyperlinkAuditingEnabled")(hyperlinkAuditingEnabled)
-    __obj.updateDynamic("referrersEnabled")(referrersEnabled)
-    __obj.updateDynamic("resistFingerprinting")(resistFingerprinting)
-    __obj.updateDynamic("trackingProtectionMode")(trackingProtectionMode)
+    val __obj = js.Dynamic.literal(cookieConfig = cookieConfig, firstPartyIsolate = firstPartyIsolate, hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, referrersEnabled = referrersEnabled, resistFingerprinting = resistFingerprinting, trackingProtectionMode = trackingProtectionMode)
     if (protectedContentEnabled != null) __obj.updateDynamic("protectedContentEnabled")(protectedContentEnabled)
     if (thirdPartyCookiesAllowed != null) __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed)
     __obj.asInstanceOf[Anon_CookieConfig]

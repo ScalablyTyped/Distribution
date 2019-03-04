@@ -16,9 +16,8 @@ trait IGenericBaseLayout extends js.Object {
 object IGenericBaseLayout {
   @scala.inline
   def apply(qInfo: INxInfo, qMeta: INxMeta): IGenericBaseLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qMeta")(qMeta)
+    val __obj = js.Dynamic.literal(qInfo = qInfo, qMeta = qMeta)
+  
     __obj.asInstanceOf[IGenericBaseLayout]
   }
 }

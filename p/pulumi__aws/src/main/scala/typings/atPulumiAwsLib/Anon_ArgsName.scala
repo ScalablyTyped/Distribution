@@ -20,9 +20,7 @@ object Anon_ArgsName {
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     args: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_ArgsName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArgsName]
   }

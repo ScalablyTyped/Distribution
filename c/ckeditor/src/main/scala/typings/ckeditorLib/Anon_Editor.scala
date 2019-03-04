@@ -20,9 +20,8 @@ object Anon_Editor {
       scala.Double
     ]
   ): Anon_Editor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exec")(exec)
-    __obj.updateDynamic("refresh")(refresh)
+    val __obj = js.Dynamic.literal(exec = exec, refresh = refresh)
+  
     __obj.asInstanceOf[Anon_Editor]
   }
 }

@@ -19,9 +19,8 @@ trait QuestionsResult extends js.Object {
 object QuestionsResult {
   @scala.inline
   def apply(hasMoreQuestions: scala.Boolean, questions: js.Array[Question]): QuestionsResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasMoreQuestions")(hasMoreQuestions)
-    __obj.updateDynamic("questions")(questions)
+    val __obj = js.Dynamic.literal(hasMoreQuestions = hasMoreQuestions, questions = questions)
+  
     __obj.asInstanceOf[QuestionsResult]
   }
 }

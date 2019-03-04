@@ -30,11 +30,7 @@ object LegendLayerInfos {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     title: java.lang.String = null
   ): LegendLayerInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer, propertyIsEnumerable = propertyIsEnumerable)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[LegendLayerInfos]
   }

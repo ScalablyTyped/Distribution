@@ -16,10 +16,8 @@ object Tag {
     isSelfClosing: scala.Boolean,
     name: java.lang.String
   ): Tag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("isSelfClosing")(isSelfClosing)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(attributes = attributes, isSelfClosing = isSelfClosing, name = name)
+  
     __obj.asInstanceOf[Tag]
   }
 }

@@ -24,8 +24,7 @@ object CategoryPage {
     prev_link: java.lang.String = null,
     total: scala.Int | scala.Double = null
   ): CategoryPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(category = category)
     if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
     if (current_url != null) __obj.updateDynamic("current_url")(current_url)
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])

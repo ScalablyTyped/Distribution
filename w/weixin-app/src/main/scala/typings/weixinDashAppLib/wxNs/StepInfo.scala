@@ -17,9 +17,8 @@ trait StepInfo extends js.Object {
 object StepInfo {
   @scala.inline
   def apply(step: scala.Double, timestamp: scala.Double): StepInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(step = step, timestamp = timestamp)
+  
     __obj.asInstanceOf[StepInfo]
   }
 }

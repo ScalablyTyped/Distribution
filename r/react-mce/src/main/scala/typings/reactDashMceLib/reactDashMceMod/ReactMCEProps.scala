@@ -144,8 +144,7 @@ object ReactMCEProps {
     onUndo: reactDashMceLib.EventHandler = null,
     onVisualAid: reactDashMceLib.EventHandler = null
   ): ReactMCEProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(config = config)
     if (content != null) __obj.updateDynamic("content")(content)
     if (onActivate != null) __obj.updateDynamic("onActivate")(onActivate)
     if (onAddUndo != null) __obj.updateDynamic("onAddUndo")(onAddUndo)

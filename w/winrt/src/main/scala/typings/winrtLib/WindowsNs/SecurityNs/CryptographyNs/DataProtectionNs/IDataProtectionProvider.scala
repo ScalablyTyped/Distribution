@@ -40,11 +40,8 @@ object IDataProtectionProvider {
       winrtLib.WindowsNs.FoundationNs.IAsyncAction
     ]
   ): IDataProtectionProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("protectAsync")(protectAsync)
-    __obj.updateDynamic("protectStreamAsync")(protectStreamAsync)
-    __obj.updateDynamic("unprotectAsync")(unprotectAsync)
-    __obj.updateDynamic("unprotectStreamAsync")(unprotectStreamAsync)
+    val __obj = js.Dynamic.literal(protectAsync = protectAsync, protectStreamAsync = protectStreamAsync, unprotectAsync = unprotectAsync, unprotectStreamAsync = unprotectStreamAsync)
+  
     __obj.asInstanceOf[IDataProtectionProvider]
   }
 }

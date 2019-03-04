@@ -24,9 +24,7 @@ object UserInfo {
     phoneNumber: java.lang.String = null,
     photoURL: java.lang.String = null
   ): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providerId")(providerId)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(providerId = providerId, uid = uid)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (email != null) __obj.updateDynamic("email")(email)
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)

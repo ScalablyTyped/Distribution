@@ -20,13 +20,8 @@ object ICallExpression {
     expression: AST,
     start: js.Function0[scala.Double]
   ): ICallExpression = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_end")(_end)
-    __obj.updateDynamic("_start")(_start)
-    __obj.updateDynamic("argumentList")(argumentList)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(_end = _end, _start = _start, argumentList = argumentList, end = end, expression = expression, start = start)
+  
     __obj.asInstanceOf[ICallExpression]
   }
 }

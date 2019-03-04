@@ -36,11 +36,8 @@ object XHatchWindowFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHatchWindowFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createHatchWindowInstance")(createHatchWindowInstance)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createHatchWindowInstance = createHatchWindowInstance, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHatchWindowFactory]
   }
 }

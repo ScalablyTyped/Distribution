@@ -34,18 +34,8 @@ object Anon_All {
     userCreated: scala.Double,
     validateShelveset: scala.Double
   ): Anon_All = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("batchedCI")(batchedCI)
-    __obj.updateDynamic("checkInShelveset")(checkInShelveset)
-    __obj.updateDynamic("individualCI")(individualCI)
-    __obj.updateDynamic("manual")(manual)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("pullRequest")(pullRequest)
-    __obj.updateDynamic("schedule")(schedule)
-    __obj.updateDynamic("triggered")(triggered)
-    __obj.updateDynamic("userCreated")(userCreated)
-    __obj.updateDynamic("validateShelveset")(validateShelveset)
+    val __obj = js.Dynamic.literal(all = all, batchedCI = batchedCI, checkInShelveset = checkInShelveset, individualCI = individualCI, manual = manual, none = none, pullRequest = pullRequest, schedule = schedule, triggered = triggered, userCreated = userCreated, validateShelveset = validateShelveset)
+  
     __obj.asInstanceOf[Anon_All]
   }
 }

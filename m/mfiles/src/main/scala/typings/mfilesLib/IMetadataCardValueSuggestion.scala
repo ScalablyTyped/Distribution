@@ -14,10 +14,8 @@ trait IMetadataCardValueSuggestion extends js.Object {
 object IMetadataCardValueSuggestion {
   @scala.inline
   def apply(IsNewValue: scala.Boolean, Name: java.lang.String, Value: js.Any): IMetadataCardValueSuggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsNewValue")(IsNewValue)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(IsNewValue = IsNewValue, Name = Name, Value = Value)
+  
     __obj.asInstanceOf[IMetadataCardValueSuggestion]
   }
 }

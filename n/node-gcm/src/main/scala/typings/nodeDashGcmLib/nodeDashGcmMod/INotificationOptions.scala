@@ -36,9 +36,7 @@ object INotificationOptions {
     title_loc_args: java.lang.String = null,
     title_loc_key: java.lang.String = null
   ): INotificationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(icon = icon, title = title)
     if (badge != null) __obj.updateDynamic("badge")(badge)
     if (body != null) __obj.updateDynamic("body")(body)
     if (body_loc_args != null) __obj.updateDynamic("body_loc_args")(body_loc_args)

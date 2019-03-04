@@ -48,17 +48,8 @@ object Quaternion {
     y: scala.Double,
     z: scala.Double
   ): Quaternion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("conjugate")(conjugate)
-    __obj.updateDynamic("invert")(invert)
-    __obj.updateDynamic("multiply")(multiply)
-    __obj.updateDynamic("norm")(norm)
-    __obj.updateDynamic("normalize")(normalize)
-    __obj.updateDynamic("w")(w)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(clone = clone, conjugate = conjugate, invert = invert, multiply = multiply, norm = norm, normalize = normalize, w = w, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[Quaternion]
   }
 }

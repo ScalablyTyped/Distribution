@@ -54,9 +54,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslP
     requestId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetSslProxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("targetSslProxy")(targetSslProxy)
+    val __obj = js.Dynamic.literal(project = project, targetSslProxy = targetSslProxy)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

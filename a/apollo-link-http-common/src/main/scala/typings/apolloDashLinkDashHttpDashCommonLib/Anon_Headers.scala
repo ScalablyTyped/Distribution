@@ -18,10 +18,8 @@ object Anon_Headers {
     http: apolloDashLinkDashHttpDashCommonLib.apolloDashLinkDashHttpDashCommonMod.HttpQueryOptions,
     options: Anon_Method
   ): Anon_Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(headers = headers, http = http, options = options)
+  
     __obj.asInstanceOf[Anon_Headers]
   }
 }

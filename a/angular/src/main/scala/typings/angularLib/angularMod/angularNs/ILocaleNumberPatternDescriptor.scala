@@ -30,16 +30,8 @@ object ILocaleNumberPatternDescriptor {
     posPre: java.lang.String,
     posSuf: java.lang.String
   ): ILocaleNumberPatternDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gSize")(gSize)
-    __obj.updateDynamic("lgSize")(lgSize)
-    __obj.updateDynamic("maxFrac")(maxFrac)
-    __obj.updateDynamic("minFrac")(minFrac)
-    __obj.updateDynamic("minInt")(minInt)
-    __obj.updateDynamic("negPre")(negPre)
-    __obj.updateDynamic("negSuf")(negSuf)
-    __obj.updateDynamic("posPre")(posPre)
-    __obj.updateDynamic("posSuf")(posSuf)
+    val __obj = js.Dynamic.literal(gSize = gSize, lgSize = lgSize, maxFrac = maxFrac, minFrac = minFrac, minInt = minInt, negPre = negPre, negSuf = negSuf, posPre = posPre, posSuf = posSuf)
+  
     __obj.asInstanceOf[ILocaleNumberPatternDescriptor]
   }
 }

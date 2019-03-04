@@ -22,9 +22,7 @@ object Anon_CommentsExpressionExtra {
     extra: Anon_Parenthesized = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_CommentsExpressionExtra = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(expression = expression, typeAnnotation = typeAnnotation)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (extra != null) __obj.updateDynamic("extra")(extra)
     if (loc != null) __obj.updateDynamic("loc")(loc)

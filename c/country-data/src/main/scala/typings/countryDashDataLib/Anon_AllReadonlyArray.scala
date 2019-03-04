@@ -12,8 +12,8 @@ trait Anon_AllReadonlyArray extends js.Object {
 object Anon_AllReadonlyArray {
   @scala.inline
   def apply(all: js.Array[java.lang.String]): Anon_AllReadonlyArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
+    val __obj = js.Dynamic.literal(all = all)
+  
     __obj.asInstanceOf[Anon_AllReadonlyArray]
   }
 }

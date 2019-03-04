@@ -17,10 +17,8 @@ trait NodeStatus extends js.Object {
 object NodeStatus {
   @scala.inline
   def apply(fill: StatusFill, shape: StatusShape, text: java.lang.String): NodeStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fill")(fill)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(fill = fill, shape = shape, text = text)
+  
     __obj.asInstanceOf[NodeStatus]
   }
 }

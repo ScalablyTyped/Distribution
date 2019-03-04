@@ -36,12 +36,8 @@ object ICommunicator {
     replyData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit],
     sendData: js.Function1[samchonLib.protocolInvokeInvokeMod.Invoke, scala.Unit]
   ): ICommunicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("replyData")(replyData)
-    __obj.updateDynamic("sendData")(sendData)
+    val __obj = js.Dynamic.literal(close = close, isConnected = isConnected, onClose = onClose, replyData = replyData, sendData = sendData)
+  
     __obj.asInstanceOf[ICommunicator]
   }
 }

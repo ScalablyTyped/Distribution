@@ -114,9 +114,7 @@ object List {
     text: Narrative = null,
     title: java.lang.String = null
   ): List = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(mode = mode, status = status)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

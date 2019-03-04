@@ -37,16 +37,8 @@ object IMultiValuePropertyType {
     separator: java.lang.String,
     singleValuePropType: java.lang.String
   ): IMultiValuePropertyType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginValidateNormalizeConvert")(BeginValidateNormalizeConvert)
-    __obj.updateDynamic("GetSerializableMultiValuePropType")(GetSerializableMultiValuePropType)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("InitSingleValuePropType")(InitSingleValuePropType)
-    __obj.updateDynamic("LocStrArrayToLocStr")(LocStrArrayToLocStr)
-    __obj.updateDynamic("LocStrToLocStrArray")(LocStrToLocStrArray)
-    __obj.updateDynamic("bMultiValue")(bMultiValue)
-    __obj.updateDynamic("separator")(separator)
-    __obj.updateDynamic("singleValuePropType")(singleValuePropType)
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = BeginValidateNormalizeConvert, GetSerializableMultiValuePropType = GetSerializableMultiValuePropType, ID = ID, InitSingleValuePropType = InitSingleValuePropType, LocStrArrayToLocStr = LocStrArrayToLocStr, LocStrToLocStrArray = LocStrToLocStrArray, bMultiValue = bMultiValue, separator = separator, singleValuePropType = singleValuePropType)
+  
     __obj.asInstanceOf[IMultiValuePropertyType]
   }
 }

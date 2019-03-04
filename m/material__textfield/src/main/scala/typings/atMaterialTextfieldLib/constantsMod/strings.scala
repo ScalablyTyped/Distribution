@@ -25,13 +25,8 @@ object strings {
     LINE_RIPPLE_SELECTOR: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`DOTmdc-line-ripple`,
     OUTLINE_SELECTOR: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`DOTmdc-notched-outline`
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARIA_CONTROLS")(ARIA_CONTROLS)
-    __obj.updateDynamic("ICON_SELECTOR")(ICON_SELECTOR)
-    __obj.updateDynamic("INPUT_SELECTOR")(INPUT_SELECTOR)
-    __obj.updateDynamic("LABEL_SELECTOR")(LABEL_SELECTOR)
-    __obj.updateDynamic("LINE_RIPPLE_SELECTOR")(LINE_RIPPLE_SELECTOR)
-    __obj.updateDynamic("OUTLINE_SELECTOR")(OUTLINE_SELECTOR)
+    val __obj = js.Dynamic.literal(ARIA_CONTROLS = ARIA_CONTROLS, ICON_SELECTOR = ICON_SELECTOR, INPUT_SELECTOR = INPUT_SELECTOR, LABEL_SELECTOR = LABEL_SELECTOR, LINE_RIPPLE_SELECTOR = LINE_RIPPLE_SELECTOR, OUTLINE_SELECTOR = OUTLINE_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

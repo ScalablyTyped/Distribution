@@ -28,15 +28,8 @@ object Anon_Encoding {
     URI: java.lang.String,
     Uri: java.lang.String
   ): Anon_Encoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Encoding")(Encoding)
-    __obj.updateDynamic("Id")(Id)
-    __obj.updateDynamic("ObjectReference")(ObjectReference)
-    __obj.updateDynamic("Qualifier")(Qualifier)
-    __obj.updateDynamic("ReferencedData")(ReferencedData)
-    __obj.updateDynamic("Target")(Target)
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("Uri")(Uri)
+    val __obj = js.Dynamic.literal(Encoding = Encoding, Id = Id, ObjectReference = ObjectReference, Qualifier = Qualifier, ReferencedData = ReferencedData, Target = Target, URI = URI, Uri = Uri)
+  
     __obj.asInstanceOf[Anon_Encoding]
   }
 }

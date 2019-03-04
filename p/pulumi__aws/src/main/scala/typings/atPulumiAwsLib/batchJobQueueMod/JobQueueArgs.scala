@@ -36,10 +36,7 @@ object JobQueueArgs {
     state: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): JobQueueArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeEnvironments")(computeEnvironments.asInstanceOf[js.Any])
-    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computeEnvironments = computeEnvironments.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobQueueArgs]
   }

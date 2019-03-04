@@ -22,9 +22,8 @@ object LevelMapping {
     labels: org.scalablytyped.runtime.NumberDictionary[java.lang.String],
     values: org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): LevelMapping = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(labels = labels, values = values)
+  
     __obj.asInstanceOf[LevelMapping]
   }
 }

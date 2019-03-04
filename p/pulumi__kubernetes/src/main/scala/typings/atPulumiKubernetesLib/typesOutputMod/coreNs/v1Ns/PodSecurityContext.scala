@@ -72,14 +72,8 @@ object PodSecurityContext {
     supplementalGroups: js.Array[scala.Double],
     sysctls: js.Array[Sysctl]
   ): PodSecurityContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsGroup")(fsGroup)
-    __obj.updateDynamic("runAsGroup")(runAsGroup)
-    __obj.updateDynamic("runAsNonRoot")(runAsNonRoot)
-    __obj.updateDynamic("runAsUser")(runAsUser)
-    __obj.updateDynamic("seLinuxOptions")(seLinuxOptions)
-    __obj.updateDynamic("supplementalGroups")(supplementalGroups)
-    __obj.updateDynamic("sysctls")(sysctls)
+    val __obj = js.Dynamic.literal(fsGroup = fsGroup, runAsGroup = runAsGroup, runAsNonRoot = runAsNonRoot, runAsUser = runAsUser, seLinuxOptions = seLinuxOptions, supplementalGroups = supplementalGroups, sysctls = sysctls)
+  
     __obj.asInstanceOf[PodSecurityContext]
   }
 }

@@ -60,15 +60,8 @@ object Filterable1 {
       fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type[F, js.Any], fpDashTsLib.libHKTMod.Type[F, js.Any]]
     ]
   ): Filterable1[F] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("compact")(compact)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("filterMap")(filterMap)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("partitionMap")(partitionMap)
-    __obj.updateDynamic("separate")(separate)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], compact = compact, filter = filter, filterMap = filterMap, map = map, partition = partition, partitionMap = partitionMap, separate = separate)
+  
     __obj.asInstanceOf[Filterable1[F]]
   }
 }

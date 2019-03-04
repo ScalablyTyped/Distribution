@@ -13,9 +13,8 @@ trait Anon_ChartObject extends js.Object {
 object Anon_ChartObject {
   @scala.inline
   def apply(chartObject: js.Any, drawObject: js.Any): Anon_ChartObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chartObject")(chartObject)
-    __obj.updateDynamic("drawObject")(drawObject)
+    val __obj = js.Dynamic.literal(chartObject = chartObject, drawObject = drawObject)
+  
     __obj.asInstanceOf[Anon_ChartObject]
   }
 }

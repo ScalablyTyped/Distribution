@@ -51,8 +51,8 @@ object TestReportParticipant {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): TestReportParticipant = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (_display != null) __obj.updateDynamic("_display")(_display)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

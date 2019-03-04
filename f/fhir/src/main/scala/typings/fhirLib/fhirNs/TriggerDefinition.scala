@@ -75,7 +75,8 @@ object TriggerDefinition {
     fhir_comments: js.Array[java.lang.String] = null,
     id: java.lang.String = null
   ): TriggerDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_eventName != null) __obj.updateDynamic("_eventName")(_eventName)
     if (_eventTimingDate != null) __obj.updateDynamic("_eventTimingDate")(_eventTimingDate)
     if (_eventTimingDateTime != null) __obj.updateDynamic("_eventTimingDateTime")(_eventTimingDateTime)

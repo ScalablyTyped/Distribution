@@ -30,10 +30,8 @@ object IStrategyOptions {
     cacheName: java.lang.String,
     plugins: js.Array[workboxDashSwLib.Plugin]
   ): IStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheExpiration")(cacheExpiration)
-    __obj.updateDynamic("cacheName")(cacheName)
-    __obj.updateDynamic("plugins")(plugins)
+    val __obj = js.Dynamic.literal(cacheExpiration = cacheExpiration, cacheName = cacheName, plugins = plugins)
+  
     __obj.asInstanceOf[IStrategyOptions]
   }
 }

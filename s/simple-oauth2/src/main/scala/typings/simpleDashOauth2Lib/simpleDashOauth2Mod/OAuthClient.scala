@@ -20,11 +20,8 @@ object OAuthClient {
     clientCredentials: simpleDashOauth2Lib.Anon_GetTokenParams,
     ownerPassword: simpleDashOauth2Lib.Anon_GetToken
   ): OAuthClient[ClientIdName] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("authorizationCode")(authorizationCode)
-    __obj.updateDynamic("clientCredentials")(clientCredentials)
-    __obj.updateDynamic("ownerPassword")(ownerPassword)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, authorizationCode = authorizationCode, clientCredentials = clientCredentials, ownerPassword = ownerPassword)
+  
     __obj.asInstanceOf[OAuthClient[ClientIdName]]
   }
 }

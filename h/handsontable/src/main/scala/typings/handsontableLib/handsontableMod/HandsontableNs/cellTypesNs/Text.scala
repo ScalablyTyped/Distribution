@@ -16,9 +16,8 @@ object Text {
     editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text,
     renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text
   ): Text = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editor")(editor)
-    __obj.updateDynamic("renderer")(renderer)
+    val __obj = js.Dynamic.literal(editor = editor, renderer = renderer)
+  
     __obj.asInstanceOf[Text]
   }
 }

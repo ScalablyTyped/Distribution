@@ -28,14 +28,8 @@ object FileTypeSettings {
     text: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
     video: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
   ): FileTypeSettings = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("audio")(audio)
-    __obj.updateDynamic("flash")(flash)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("video")(video)
+    val __obj = js.Dynamic.literal(audio = audio, flash = flash, html = html, image = image, other = other, text = text, video = video)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[FileTypeSettings]
   }
 }

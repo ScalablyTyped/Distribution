@@ -24,13 +24,8 @@ object ExcelColumn {
     resizeable: scala.Boolean,
     width: scala.Double
   ): ExcelColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editable")(editable)
-    __obj.updateDynamic("filterable")(filterable)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("resizeable")(resizeable)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(editable = editable, filterable = filterable, key = key, name = name, resizeable = resizeable, width = width)
+  
     __obj.asInstanceOf[ExcelColumn]
   }
 }

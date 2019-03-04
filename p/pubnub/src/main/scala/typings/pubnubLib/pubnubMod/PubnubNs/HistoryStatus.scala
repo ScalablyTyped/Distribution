@@ -21,9 +21,7 @@ object HistoryStatus {
     errorData: stdLib.Error = null,
     statusCode: scala.Int | scala.Double = null
   ): HistoryStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("operation")(operation)
+    val __obj = js.Dynamic.literal(error = error, operation = operation)
     if (errorData != null) __obj.updateDynamic("errorData")(errorData)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryStatus]

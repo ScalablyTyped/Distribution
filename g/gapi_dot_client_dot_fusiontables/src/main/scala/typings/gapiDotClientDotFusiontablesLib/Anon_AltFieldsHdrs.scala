@@ -50,8 +50,7 @@ object Anon_AltFieldsHdrs {
     typed: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltFieldsHdrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sql")(sql)
+    val __obj = js.Dynamic.literal(sql = sql)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (!js.isUndefined(hdrs)) __obj.updateDynamic("hdrs")(hdrs)

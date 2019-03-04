@@ -26,13 +26,8 @@ object GitRefFavorite {
     `type`: RefFavoriteType,
     url: java.lang.String
   ): GitRefFavorite = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("identityId")(identityId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("repositoryId")(repositoryId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, id = id, identityId = identityId, name = name, repositoryId = repositoryId, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GitRefFavorite]
   }
 }

@@ -22,8 +22,7 @@ object Anon_KeyExpirationTime {
     revocationCertificate: js.UndefOr[scala.Boolean] = js.undefined,
     userIds: js.Array[openpgpLib.openpgpMod.UserId] = null
   ): Anon_KeyExpirationTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("privateKey")(privateKey)
+    val __obj = js.Dynamic.literal(privateKey = privateKey)
     if (keyExpirationTime != null) __obj.updateDynamic("keyExpirationTime")(keyExpirationTime.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
     if (!js.isUndefined(revocationCertificate)) __obj.updateDynamic("revocationCertificate")(revocationCertificate)

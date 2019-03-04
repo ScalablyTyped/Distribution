@@ -16,8 +16,7 @@ object Anon_OpenOptions {
     openOptions: atOracleOraclejetLib.ojmenuMod.ojMenuNs.OpenOptions,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_OpenOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openOptions")(openOptions)
+    val __obj = js.Dynamic.literal(openOptions = openOptions)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_OpenOptions]
   }

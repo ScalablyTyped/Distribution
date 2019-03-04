@@ -12,8 +12,8 @@ trait AgentMigrationMessage extends js.Object {
 object AgentMigrationMessage {
   @scala.inline
   def apply(accessToken: java.lang.String): AgentMigrationMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
+    val __obj = js.Dynamic.literal(accessToken = accessToken)
+  
     __obj.asInstanceOf[AgentMigrationMessage]
   }
 }

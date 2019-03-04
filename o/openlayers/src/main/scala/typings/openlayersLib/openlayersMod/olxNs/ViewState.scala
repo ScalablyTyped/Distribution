@@ -20,11 +20,8 @@ object ViewState {
     resolution: scala.Double,
     rotation: scala.Double
   ): ViewState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("projection")(projection)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("rotation")(rotation)
+    val __obj = js.Dynamic.literal(center = center, projection = projection, resolution = resolution, rotation = rotation)
+  
     __obj.asInstanceOf[ViewState]
   }
 }

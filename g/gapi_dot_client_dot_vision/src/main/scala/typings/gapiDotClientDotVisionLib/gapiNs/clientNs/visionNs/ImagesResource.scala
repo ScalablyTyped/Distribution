@@ -18,8 +18,8 @@ object ImagesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BatchAnnotateImagesResponse]
     ]
   ): ImagesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotate")(annotate)
+    val __obj = js.Dynamic.literal(annotate = annotate)
+  
     __obj.asInstanceOf[ImagesResource]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Boolean extends js.Object {
 object Anon_Boolean {
   @scala.inline
   def apply(`type`: waterlineLib.waterlineLibStrings.boolean): Anon_Boolean = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Boolean]
   }
 }

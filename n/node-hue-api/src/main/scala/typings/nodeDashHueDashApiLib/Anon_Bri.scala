@@ -28,15 +28,8 @@ object Anon_Bri {
     sat: scala.Double,
     xy: js.Tuple2[scala.Double, scala.Double]
   ): Anon_Bri = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bri")(bri)
-    __obj.updateDynamic("colormode")(colormode)
-    __obj.updateDynamic("ct")(ct)
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("sat")(sat)
-    __obj.updateDynamic("xy")(xy)
+    val __obj = js.Dynamic.literal(bri = bri, colormode = colormode, ct = ct, effect = effect, hue = hue, on = on, sat = sat, xy = xy)
+  
     __obj.asInstanceOf[Anon_Bri]
   }
 }

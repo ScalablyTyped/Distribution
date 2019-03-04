@@ -26,9 +26,7 @@ object IShellPaneTabEvents {
     OnTabSelected: js.Function0[scala.Unit] = null,
     OnTabUnselected: js.Function0[scala.Unit] = null
   ): IShellPaneTabEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Register")(Register)
-    __obj.updateDynamic("Unregister")(Unregister)
+    val __obj = js.Dynamic.literal(Register = Register, Unregister = Unregister)
     if (OnHideTab != null) __obj.updateDynamic("OnHideTab")(OnHideTab)
     if (OnShowTab != null) __obj.updateDynamic("OnShowTab")(OnShowTab)
     if (OnStarted != null) __obj.updateDynamic("OnStarted")(OnStarted)

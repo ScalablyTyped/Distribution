@@ -59,9 +59,7 @@ object DeleteItemInput {
     ReturnItemCollectionMetrics: ReturnItemCollectionMetrics = null,
     ReturnValues: ReturnValue = null
   ): DeleteItemInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Key")(Key)
-    __obj.updateDynamic("TableName")(TableName)
+    val __obj = js.Dynamic.literal(Key = Key, TableName = TableName)
     if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
     if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
     if (Expected != null) __obj.updateDynamic("Expected")(Expected)

@@ -24,13 +24,8 @@ object IPointerDevice {
     screenRect: winrtLib.WindowsNs.FoundationNs.Rect,
     supportedUsages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDeviceUsage]
   ): IPointerDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isIntegrated")(isIntegrated)
-    __obj.updateDynamic("maxContacts")(maxContacts)
-    __obj.updateDynamic("physicalDeviceRect")(physicalDeviceRect)
-    __obj.updateDynamic("pointerDeviceType")(pointerDeviceType)
-    __obj.updateDynamic("screenRect")(screenRect)
-    __obj.updateDynamic("supportedUsages")(supportedUsages)
+    val __obj = js.Dynamic.literal(isIntegrated = isIntegrated, maxContacts = maxContacts, physicalDeviceRect = physicalDeviceRect, pointerDeviceType = pointerDeviceType, screenRect = screenRect, supportedUsages = supportedUsages)
+  
     __obj.asInstanceOf[IPointerDevice]
   }
 }

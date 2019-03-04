@@ -34,8 +34,7 @@ object MoreLikeThisOptions {
     minwl: scala.Int | scala.Double = null,
     qf: java.lang.String | js.Object = null
   ): MoreLikeThisOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
+    val __obj = js.Dynamic.literal(on = on)
     if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (fl != null) __obj.updateDynamic("fl")(fl.asInstanceOf[js.Any])

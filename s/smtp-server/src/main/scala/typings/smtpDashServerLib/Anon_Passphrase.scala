@@ -13,9 +13,8 @@ trait Anon_Passphrase extends js.Object {
 object Anon_Passphrase {
   @scala.inline
   def apply(passphrase: java.lang.String, pem: java.lang.String | nodeLib.Buffer): Anon_Passphrase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passphrase")(passphrase)
-    __obj.updateDynamic("pem")(pem.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(passphrase = passphrase, pem = pem.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Passphrase]
   }
 }

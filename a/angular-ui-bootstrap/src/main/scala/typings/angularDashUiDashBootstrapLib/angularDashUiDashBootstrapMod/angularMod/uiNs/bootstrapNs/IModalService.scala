@@ -23,9 +23,8 @@ object IModalService {
     getPromiseChain: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
     open: js.Function1[IModalSettings, IModalInstanceService]
   ): IModalService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPromiseChain")(getPromiseChain)
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(getPromiseChain = getPromiseChain, open = open)
+  
     __obj.asInstanceOf[IModalService]
   }
 }

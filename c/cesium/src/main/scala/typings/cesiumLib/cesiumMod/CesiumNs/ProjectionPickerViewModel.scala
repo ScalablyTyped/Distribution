@@ -36,19 +36,8 @@ object ProjectionPickerViewModel {
     tooltipOrthographic: java.lang.String,
     tooltipPerspective: java.lang.String
   ): ProjectionPickerViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("dropDownVisible")(dropDownVisible)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("isOrthographicProjection")(isOrthographicProjection)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("sceneMode")(sceneMode)
-    __obj.updateDynamic("selectedTooltip")(selectedTooltip)
-    __obj.updateDynamic("switchToOrthographic")(switchToOrthographic)
-    __obj.updateDynamic("switchToPerspective")(switchToPerspective)
-    __obj.updateDynamic("toggleDropdown")(toggleDropdown)
-    __obj.updateDynamic("tooltipOrthographic")(tooltipOrthographic)
-    __obj.updateDynamic("tooltipPerspective")(tooltipPerspective)
+    val __obj = js.Dynamic.literal(destroy = destroy, dropDownVisible = dropDownVisible, isDestroyed = isDestroyed, isOrthographicProjection = isOrthographicProjection, scene = scene, sceneMode = sceneMode, selectedTooltip = selectedTooltip, switchToOrthographic = switchToOrthographic, switchToPerspective = switchToPerspective, toggleDropdown = toggleDropdown, tooltipOrthographic = tooltipOrthographic, tooltipPerspective = tooltipPerspective)
+  
     __obj.asInstanceOf[ProjectionPickerViewModel]
   }
 }

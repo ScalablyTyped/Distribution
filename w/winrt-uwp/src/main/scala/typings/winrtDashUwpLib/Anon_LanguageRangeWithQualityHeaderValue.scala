@@ -16,9 +16,8 @@ object Anon_LanguageRangeWithQualityHeaderValue {
     languageRangeWithQualityHeaderValue: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpLanguageRangeWithQualityHeaderValue,
     returnValue: scala.Boolean
   ): Anon_LanguageRangeWithQualityHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languageRangeWithQualityHeaderValue")(languageRangeWithQualityHeaderValue)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(languageRangeWithQualityHeaderValue = languageRangeWithQualityHeaderValue, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_LanguageRangeWithQualityHeaderValue]
   }
 }

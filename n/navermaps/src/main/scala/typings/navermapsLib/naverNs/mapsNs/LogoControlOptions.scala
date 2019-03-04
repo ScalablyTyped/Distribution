@@ -12,8 +12,8 @@ trait LogoControlOptions extends js.Object {
 object LogoControlOptions {
   @scala.inline
   def apply(position: Position): LogoControlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(position = position)
+  
     __obj.asInstanceOf[LogoControlOptions]
   }
 }

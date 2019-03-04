@@ -19,10 +19,9 @@ object ClassicFormFields {
     FNAME: java.lang.String,
     LNAME: java.lang.String
   ): ClassicFormFields = {
-    val __obj = js.Dynamic.literal(`BIRTHDAY[day]` = `BIRTHDAY[day]`, `BIRTHDAY[month]` = `BIRTHDAY[month]`)
-    __obj.updateDynamic("EMAIL")(EMAIL)
-    __obj.updateDynamic("FNAME")(FNAME)
-    __obj.updateDynamic("LNAME")(LNAME)
+    val __obj = js.Dynamic.literal(EMAIL = EMAIL, FNAME = FNAME, LNAME = LNAME)
+    __obj.updateDynamic("BIRTHDAY[day]")(`BIRTHDAY[day]`)
+    __obj.updateDynamic("BIRTHDAY[month]")(`BIRTHDAY[month]`)
     __obj.asInstanceOf[ClassicFormFields]
   }
 }

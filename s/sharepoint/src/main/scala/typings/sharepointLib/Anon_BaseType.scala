@@ -22,12 +22,8 @@ object Anon_BaseType {
     EnableVesioning: scala.Boolean,
     Id: java.lang.String
   ): Anon_BaseType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BaseType")(BaseType)
-    __obj.updateDynamic("DefaultItemOpen")(DefaultItemOpen)
-    __obj.updateDynamic("Direction")(Direction)
-    __obj.updateDynamic("EnableVesioning")(EnableVesioning)
-    __obj.updateDynamic("Id")(Id)
+    val __obj = js.Dynamic.literal(BaseType = BaseType, DefaultItemOpen = DefaultItemOpen, Direction = Direction, EnableVesioning = EnableVesioning, Id = Id)
+  
     __obj.asInstanceOf[Anon_BaseType]
   }
 }

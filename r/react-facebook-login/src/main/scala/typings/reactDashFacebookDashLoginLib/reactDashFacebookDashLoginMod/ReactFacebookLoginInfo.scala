@@ -20,9 +20,7 @@ object ReactFacebookLoginInfo {
     email: java.lang.String = null,
     name: java.lang.String = null
   ): ReactFacebookLoginInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessToken")(accessToken)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(accessToken = accessToken, id = id)
     if (email != null) __obj.updateDynamic("email")(email)
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[ReactFacebookLoginInfo]

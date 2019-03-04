@@ -23,10 +23,8 @@ trait TaskAgentPoolReference extends js.Object {
 object TaskAgentPoolReference {
   @scala.inline
   def apply(id: scala.Double, isHosted: scala.Boolean, name: java.lang.String): TaskAgentPoolReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isHosted")(isHosted)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, isHosted = isHosted, name = name)
+  
     __obj.asInstanceOf[TaskAgentPoolReference]
   }
 }

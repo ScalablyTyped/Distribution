@@ -24,11 +24,7 @@ object ProximityObject {
     address: AddressObject = null,
     bidModifier: scala.Int | scala.Double = null
   ): ProximityObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("radiusUnits")(radiusUnits)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, radius = radius, radiusUnits = radiusUnits)
     if (address != null) __obj.updateDynamic("address")(address)
     if (bidModifier != null) __obj.updateDynamic("bidModifier")(bidModifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProximityObject]

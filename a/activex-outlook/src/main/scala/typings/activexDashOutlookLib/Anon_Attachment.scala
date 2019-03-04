@@ -12,8 +12,8 @@ trait Anon_Attachment extends js.Object {
 object Anon_Attachment {
   @scala.inline
   def apply(Attachment: activexDashOutlookLib.OutlookNs.Attachment): Anon_Attachment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attachment")(Attachment)
+    val __obj = js.Dynamic.literal(Attachment = Attachment)
+  
     __obj.asInstanceOf[Anon_Attachment]
   }
 }

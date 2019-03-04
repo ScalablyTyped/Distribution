@@ -13,9 +13,8 @@ trait Anon_Number extends js.Object {
 object Anon_Number {
   @scala.inline
   def apply(number: java.lang.String, street: java.lang.String): Anon_Number = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("street")(street)
+    val __obj = js.Dynamic.literal(number = number, street = street)
+  
     __obj.asInstanceOf[Anon_Number]
   }
 }

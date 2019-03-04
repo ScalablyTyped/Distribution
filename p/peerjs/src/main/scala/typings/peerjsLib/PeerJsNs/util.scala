@@ -13,9 +13,8 @@ trait util extends js.Object {
 object util {
   @scala.inline
   def apply(browser: java.lang.String, supports: utilSupportsObj): util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("supports")(supports)
+    val __obj = js.Dynamic.literal(browser = browser, supports = supports)
+  
     __obj.asInstanceOf[util]
   }
 }

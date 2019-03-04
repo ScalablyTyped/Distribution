@@ -24,11 +24,8 @@ object ProjectsResource {
     groupStats: GroupStatsResource,
     groups: GroupsResource
   ): ProjectsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteEvents")(deleteEvents)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("groupStats")(groupStats)
-    __obj.updateDynamic("groups")(groups)
+    val __obj = js.Dynamic.literal(deleteEvents = deleteEvents, events = events, groupStats = groupStats, groups = groups)
+  
     __obj.asInstanceOf[ProjectsResource]
   }
 }

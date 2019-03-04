@@ -42,22 +42,8 @@ object AdWordsStats {
     getViewRate: js.Function0[scala.Double],
     getViews: js.Function0[scala.Double]
   ): AdWordsStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAverageCpc")(getAverageCpc)
-    __obj.updateDynamic("getAverageCpm")(getAverageCpm)
-    __obj.updateDynamic("getAverageCpv")(getAverageCpv)
-    __obj.updateDynamic("getAveragePageviews")(getAveragePageviews)
-    __obj.updateDynamic("getAveragePosition")(getAveragePosition)
-    __obj.updateDynamic("getAverageTimeOnSite")(getAverageTimeOnSite)
-    __obj.updateDynamic("getBounceRage")(getBounceRage)
-    __obj.updateDynamic("getClicks")(getClicks)
-    __obj.updateDynamic("getConversionRate")(getConversionRate)
-    __obj.updateDynamic("getConversions")(getConversions)
-    __obj.updateDynamic("getCost")(getCost)
-    __obj.updateDynamic("getCtr")(getCtr)
-    __obj.updateDynamic("getImpressions")(getImpressions)
-    __obj.updateDynamic("getViewRate")(getViewRate)
-    __obj.updateDynamic("getViews")(getViews)
+    val __obj = js.Dynamic.literal(getAverageCpc = getAverageCpc, getAverageCpm = getAverageCpm, getAverageCpv = getAverageCpv, getAveragePageviews = getAveragePageviews, getAveragePosition = getAveragePosition, getAverageTimeOnSite = getAverageTimeOnSite, getBounceRage = getBounceRage, getClicks = getClicks, getConversionRate = getConversionRate, getConversions = getConversions, getCost = getCost, getCtr = getCtr, getImpressions = getImpressions, getViewRate = getViewRate, getViews = getViews)
+  
     __obj.asInstanceOf[AdWordsStats]
   }
 }

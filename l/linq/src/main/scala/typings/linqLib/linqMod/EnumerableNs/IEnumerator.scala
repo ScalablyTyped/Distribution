@@ -14,10 +14,8 @@ trait IEnumerator[T] extends js.Object {
 object IEnumerator {
   @scala.inline
   def apply[T](current: js.Function0[T], dispose: js.Function0[scala.Unit], moveNext: js.Function0[scala.Boolean]): IEnumerator[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("moveNext")(moveNext)
+    val __obj = js.Dynamic.literal(current = current, dispose = dispose, moveNext = moveNext)
+  
     __obj.asInstanceOf[IEnumerator[T]]
   }
 }

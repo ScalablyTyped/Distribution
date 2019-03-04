@@ -79,8 +79,7 @@ object Schedule {
     specialty: js.Array[CodeableConcept] = null,
     text: Narrative = null
   ): Schedule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actor")(actor)
+    val __obj = js.Dynamic.literal(actor = actor)
     if (_active != null) __obj.updateDynamic("_active")(_active)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -19,8 +19,8 @@ trait NodeConfigSource extends js.Object {
 object NodeConfigSource {
   @scala.inline
   def apply(configMap: ConfigMapNodeConfigSource): NodeConfigSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configMap")(configMap)
+    val __obj = js.Dynamic.literal(configMap = configMap)
+  
     __obj.asInstanceOf[NodeConfigSource]
   }
 }

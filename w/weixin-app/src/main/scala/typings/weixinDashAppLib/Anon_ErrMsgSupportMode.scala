@@ -14,9 +14,8 @@ trait Anon_ErrMsgSupportMode extends js.Object {
 object Anon_ErrMsgSupportMode {
   @scala.inline
   def apply(errMsg: java.lang.String, supportMode: js.Array[weixinDashAppLib.wxNs.AuthModes]): Anon_ErrMsgSupportMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errMsg")(errMsg)
-    __obj.updateDynamic("supportMode")(supportMode)
+    val __obj = js.Dynamic.literal(errMsg = errMsg, supportMode = supportMode)
+  
     __obj.asInstanceOf[Anon_ErrMsgSupportMode]
   }
 }

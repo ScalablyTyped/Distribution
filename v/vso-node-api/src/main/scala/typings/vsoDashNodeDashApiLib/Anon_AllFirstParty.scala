@@ -26,13 +26,8 @@ object Anon_AllFirstParty {
     public: scala.Double,
     released: scala.Double
   ): Anon_AllFirstParty = {
-    val __obj = js.Dynamic.literal(`private` = `private`)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("firstParty")(firstParty)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("preview")(preview)
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("released")(released)
+    val __obj = js.Dynamic.literal(all = all, firstParty = firstParty, none = none, preview = preview, public = public, released = released)
+    __obj.updateDynamic("private")(`private`)
     __obj.asInstanceOf[Anon_AllFirstParty]
   }
 }

@@ -109,14 +109,7 @@ object ParsedMail {
     references: js.Array[java.lang.String] = null,
     replyTo: AddressObject = null
   ): ParsedMail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("textAsHtml")(textAsHtml)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, headers = headers, html = html.asInstanceOf[js.Any], subject = subject, text = text, textAsHtml = textAsHtml, to = to)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (bcc != null) __obj.updateDynamic("bcc")(bcc)
     if (cc != null) __obj.updateDynamic("cc")(cc)

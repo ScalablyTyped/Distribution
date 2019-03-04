@@ -13,9 +13,8 @@ trait WEBGL_lose_context extends js.Object {
 object WEBGL_lose_context {
   @scala.inline
   def apply(loseContext: js.Function0[scala.Unit], restoreContext: js.Function0[scala.Unit]): WEBGL_lose_context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loseContext")(loseContext)
-    __obj.updateDynamic("restoreContext")(restoreContext)
+    val __obj = js.Dynamic.literal(loseContext = loseContext, restoreContext = restoreContext)
+  
     __obj.asInstanceOf[WEBGL_lose_context]
   }
 }

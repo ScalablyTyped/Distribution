@@ -22,8 +22,7 @@ object SelectionInfo {
     nativeEvent: reactLib.Event = null,
     record: T = null
   ): SelectionInfo[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectWay")(selectWay)
+    val __obj = js.Dynamic.literal(selectWay = selectWay)
     if (changeRowKeys != null) __obj.updateDynamic("changeRowKeys")(changeRowKeys)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (nativeEvent != null) __obj.updateDynamic("nativeEvent")(nativeEvent)

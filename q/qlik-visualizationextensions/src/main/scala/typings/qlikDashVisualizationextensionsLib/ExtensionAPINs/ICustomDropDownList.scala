@@ -21,12 +21,8 @@ object ICustomDropDownList {
     ref: java.lang.String,
     `type`: java.lang.String
   ): ICustomDropDownList = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(component = component, defaultValue = defaultValue, label = label, options = options.asInstanceOf[js.Any], ref = ref)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomDropDownList]
   }
 }

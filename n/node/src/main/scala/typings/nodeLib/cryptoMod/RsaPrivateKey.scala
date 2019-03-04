@@ -14,8 +14,7 @@ trait RsaPrivateKey extends js.Object {
 object RsaPrivateKey {
   @scala.inline
   def apply(key: KeyLike, padding: scala.Int | scala.Double = null, passphrase: java.lang.String = null): RsaPrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
     __obj.asInstanceOf[RsaPrivateKey]

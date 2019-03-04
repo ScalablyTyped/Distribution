@@ -62,17 +62,8 @@ object ImageData {
     top: scala.Double,
     width: scala.Double
   ): ImageData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspectRatio")(aspectRatio)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("naturalHeight")(naturalHeight)
-    __obj.updateDynamic("naturalWidth")(naturalWidth)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, height = height, left = left, naturalHeight = naturalHeight, naturalWidth = naturalWidth, rotate = rotate, scaleX = scaleX, scaleY = scaleY, top = top, width = width)
+  
     __obj.asInstanceOf[ImageData]
   }
 }

@@ -73,16 +73,8 @@ object IGenericDimension {
     setProperties: js.Function0[js.Promise[IGenericDimensionProperties]],
     unPublish: js.Function0[js.Promise[scala.Unit]]
   ): IGenericDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyPatches")(applyPatches)
-    __obj.updateDynamic("getDimension")(getDimension)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getLayout")(getLayout)
-    __obj.updateDynamic("getLinkedObjects")(getLinkedObjects)
-    __obj.updateDynamic("getProperties")(getProperties)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("setProperties")(setProperties)
-    __obj.updateDynamic("unPublish")(unPublish)
+    val __obj = js.Dynamic.literal(applyPatches = applyPatches, getDimension = getDimension, getInfo = getInfo, getLayout = getLayout, getLinkedObjects = getLinkedObjects, getProperties = getProperties, publish = publish, setProperties = setProperties, unPublish = unPublish)
+  
     __obj.asInstanceOf[IGenericDimension]
   }
 }

@@ -29,15 +29,8 @@ object Neighbours {
     sw: java.lang.String,
     w: java.lang.String
   ): Neighbours = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("n")(n)
-    __obj.updateDynamic("ne")(ne)
-    __obj.updateDynamic("nw")(nw)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("se")(se)
-    __obj.updateDynamic("sw")(sw)
-    __obj.updateDynamic("w")(w)
+    val __obj = js.Dynamic.literal(e = e, n = n, ne = ne, nw = nw, s = s, se = se, sw = sw, w = w)
+  
     __obj.asInstanceOf[Neighbours]
   }
 }

@@ -295,18 +295,11 @@ object SheetCellRange {
     CellRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRange = null,
     SheetRangesQuery: SheetRangesQuery = null
   ): SheetCellRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AbsoluteName")(AbsoluteName)
+    val __obj = js.Dynamic.literal(AbsoluteName = AbsoluteName, ConditionalFormat = ConditionalFormat, ConditionalFormatLocal = ConditionalFormatLocal, Position = Position, Size = Size, Validation = Validation, ValidationLocal = ValidationLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
-    __obj.updateDynamic("ConditionalFormat")(ConditionalFormat)
-    __obj.updateDynamic("ConditionalFormatLocal")(ConditionalFormatLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("Validation")(Validation)
-    __obj.updateDynamic("ValidationLocal")(ValidationLocal)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XArrayFormulaRange)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XAutoFormattable)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellFormatRangesSupplier)

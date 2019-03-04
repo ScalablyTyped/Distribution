@@ -22,10 +22,8 @@ object IGeoshape {
     geoshapeType: GeoshapeType,
     spatialReferenceId: scala.Double
   ): IGeoshape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altitudeReferenceSystem")(altitudeReferenceSystem)
-    __obj.updateDynamic("geoshapeType")(geoshapeType)
-    __obj.updateDynamic("spatialReferenceId")(spatialReferenceId)
+    val __obj = js.Dynamic.literal(altitudeReferenceSystem = altitudeReferenceSystem, geoshapeType = geoshapeType, spatialReferenceId = spatialReferenceId)
+  
     __obj.asInstanceOf[IGeoshape]
   }
 }

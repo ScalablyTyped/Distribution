@@ -13,9 +13,8 @@ trait Anon_Readable[R, T] extends js.Object {
 object Anon_Readable {
   @scala.inline
   def apply[R, T](readable: ReadableStream[T], writable: WritableStream[R]): Anon_Readable[R, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readable")(readable)
-    __obj.updateDynamic("writable")(writable)
+    val __obj = js.Dynamic.literal(readable = readable, writable = writable)
+  
     __obj.asInstanceOf[Anon_Readable[R, T]]
   }
 }

@@ -28,15 +28,8 @@ object CommitSummary {
     sha: java.lang.String,
     url: java.lang.String
   ): CommitSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("comments_url")(comments_url)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("committer")(committer)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("parents")(parents)
-    __obj.updateDynamic("sha")(sha)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(author = author, comments_url = comments_url, commit = commit, committer = committer, html_url = html_url, parents = parents, sha = sha, url = url)
+  
     __obj.asInstanceOf[CommitSummary]
   }
 }

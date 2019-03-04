@@ -32,8 +32,7 @@ object GiraffeObject {
     dispose: js.Function0[js.Any] = null,
     initialize: js.Function0[js.Any] = null
   ): GiraffeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (afterDispose != null) __obj.updateDynamic("afterDispose")(afterDispose)
     if (afterInitialize != null) __obj.updateDynamic("afterInitialize")(afterInitialize)
     if (appEvents != null) __obj.updateDynamic("appEvents")(appEvents)

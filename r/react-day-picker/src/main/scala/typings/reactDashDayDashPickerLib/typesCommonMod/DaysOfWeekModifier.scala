@@ -12,8 +12,8 @@ trait DaysOfWeekModifier extends js.Object {
 object DaysOfWeekModifier {
   @scala.inline
   def apply(daysOfWeek: js.Array[scala.Double]): DaysOfWeekModifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("daysOfWeek")(daysOfWeek)
+    val __obj = js.Dynamic.literal(daysOfWeek = daysOfWeek)
+  
     __obj.asInstanceOf[DaysOfWeekModifier]
   }
 }

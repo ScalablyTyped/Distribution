@@ -24,8 +24,8 @@ object CatchClause {
     guard: astDashTypesLib.genKindsMod.ExpressionKind = null,
     param: astDashTypesLib.genKindsMod.PatternKind = null
   ): CatchClause = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (guard != null) __obj.updateDynamic("guard")(guard)
     if (param != null) __obj.updateDynamic("param")(param)
     __obj.asInstanceOf[CatchClause]

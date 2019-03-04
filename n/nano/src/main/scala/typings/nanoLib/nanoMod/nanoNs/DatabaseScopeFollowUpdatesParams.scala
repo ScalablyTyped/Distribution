@@ -25,8 +25,7 @@ object DatabaseScopeFollowUpdatesParams {
     response_grace_time: scala.Int | scala.Double = null,
     since: java.lang.String = null
   ): DatabaseScopeFollowUpdatesParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
+    val __obj = js.Dynamic.literal(db = db)
     if (feed != null) __obj.updateDynamic("feed")(feed)
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers)

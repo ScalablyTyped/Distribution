@@ -18,8 +18,10 @@ object ActiveXObjectNameMap {
     `Excel.Chart`: activexDashExcelLib.ExcelNs.Chart,
     `Excel.Sheet`: activexDashExcelLib.ExcelNs.Worksheet
   ): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`Excel.Application` = `Excel.Application`, `Excel.Chart` = `Excel.Chart`, `Excel.Sheet` = `Excel.Sheet`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Excel.Application")(`Excel.Application`)
+    __obj.updateDynamic("Excel.Chart")(`Excel.Chart`)
+    __obj.updateDynamic("Excel.Sheet")(`Excel.Sheet`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

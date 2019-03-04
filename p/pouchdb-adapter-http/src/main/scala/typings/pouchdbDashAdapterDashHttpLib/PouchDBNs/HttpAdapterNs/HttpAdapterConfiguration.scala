@@ -20,8 +20,7 @@ object HttpAdapterConfiguration {
     name: java.lang.String = null,
     skip_setup: js.UndefOr[scala.Boolean] = js.undefined
   ): HttpAdapterConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adapter")(adapter)
+    val __obj = js.Dynamic.literal(adapter = adapter)
     if (auth != null) __obj.updateDynamic("auth")(auth)
     if (fetch != null) __obj.updateDynamic("fetch")(fetch)
     if (name != null) __obj.updateDynamic("name")(name)

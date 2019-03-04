@@ -37,10 +37,7 @@ object PixelBlockStatistics {
     minValue: scala.Int | scala.Double = null,
     noDataValue: scala.Int | scala.Double = null
   ): PixelBlockStatistics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])

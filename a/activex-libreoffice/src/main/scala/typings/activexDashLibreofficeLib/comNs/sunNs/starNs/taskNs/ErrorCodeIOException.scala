@@ -19,10 +19,8 @@ object ErrorCodeIOException {
     ErrCode: scala.Double,
     Message: java.lang.String
   ): ErrorCodeIOException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrCode")(ErrCode)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, ErrCode = ErrCode, Message = Message)
+  
     __obj.asInstanceOf[ErrorCodeIOException]
   }
 }

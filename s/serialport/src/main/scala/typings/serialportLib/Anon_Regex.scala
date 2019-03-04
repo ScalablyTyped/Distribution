@@ -12,8 +12,8 @@ trait Anon_Regex extends js.Object {
 object Anon_Regex {
   @scala.inline
   def apply(regex: stdLib.RegExp): Anon_Regex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(regex = regex)
+  
     __obj.asInstanceOf[Anon_Regex]
   }
 }

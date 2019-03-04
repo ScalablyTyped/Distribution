@@ -30,12 +30,8 @@ object PortalFeaturedGroups {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     title: java.lang.String
   ): PortalFeaturedGroups = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, owner = owner, propertyIsEnumerable = propertyIsEnumerable, title = title)
+  
     __obj.asInstanceOf[PortalFeaturedGroups]
   }
 }

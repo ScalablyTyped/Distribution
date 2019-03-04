@@ -20,8 +20,7 @@ object EnsureIndexOptions {
     sparse: js.UndefOr[scala.Boolean] = js.undefined,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): EnsureIndexOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
+    val __obj = js.Dynamic.literal(fieldName = fieldName)
     if (expireAfterSeconds != null) __obj.updateDynamic("expireAfterSeconds")(expireAfterSeconds.asInstanceOf[js.Any])
     if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse)
     if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)

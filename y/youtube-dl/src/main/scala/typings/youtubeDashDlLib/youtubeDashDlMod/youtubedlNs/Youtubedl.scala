@@ -16,9 +16,8 @@ object Youtubedl {
     on: js.Function2[java.lang.String, js.Function1[/* info */ Info, scala.Unit], Youtubedl],
     pipe: js.Function1[nodeLib.fsMod.WriteStream, Youtubedl]
   ): Youtubedl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("pipe")(pipe)
+    val __obj = js.Dynamic.literal(on = on, pipe = pipe)
+  
     __obj.asInstanceOf[Youtubedl]
   }
 }

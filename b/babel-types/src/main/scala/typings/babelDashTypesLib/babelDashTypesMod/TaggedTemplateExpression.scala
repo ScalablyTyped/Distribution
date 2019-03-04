@@ -27,12 +27,8 @@ object TaggedTemplateExpression {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): TaggedTemplateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("quasi")(quasi)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("tag")(tag)
+    val __obj = js.Dynamic.literal(end = end, loc = loc, quasi = quasi, start = start, tag = tag)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

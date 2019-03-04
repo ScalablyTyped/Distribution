@@ -61,10 +61,8 @@ object AliasesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListCourseAliasesResponse]
     ]
   ): AliasesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, list = list)
+  
     __obj.asInstanceOf[AliasesResource]
   }
 }

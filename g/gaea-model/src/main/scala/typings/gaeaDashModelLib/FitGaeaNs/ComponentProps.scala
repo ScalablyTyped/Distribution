@@ -79,9 +79,7 @@ object ComponentProps {
     gaeaPreview: js.UndefOr[scala.Boolean] = js.undefined,
     gaeaVariables: org.scalablytyped.runtime.StringDictionary[VariableData] = null
   ): ComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gaeaName")(gaeaName)
-    __obj.updateDynamic("gaeaUniqueKey")(gaeaUniqueKey)
+    val __obj = js.Dynamic.literal(gaeaName = gaeaName, gaeaUniqueKey = gaeaUniqueKey)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn)

@@ -20,9 +20,8 @@ object TrainingPhrase {
     `type`: java.lang.String,
     timesAddedCount: scala.Int | scala.Double = null
   ): TrainingPhrase = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parts")(parts)
+    val __obj = js.Dynamic.literal(name = name, parts = parts)
+    __obj.updateDynamic("type")(`type`)
     if (timesAddedCount != null) __obj.updateDynamic("timesAddedCount")(timesAddedCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainingPhrase]
   }

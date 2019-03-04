@@ -24,9 +24,8 @@ object QuestsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[QuestListResponse]
     ]
   ): QuestsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(accept = accept, list = list)
+  
     __obj.asInstanceOf[QuestsResource]
   }
 }

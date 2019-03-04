@@ -20,11 +20,8 @@ object Anon_DistributionDomainName {
     eventType: awsDashLambdaLib.awsDashLambdaLibStrings.`origin-request` | awsDashLambdaLib.awsDashLambdaLibStrings.`origin-response` | awsDashLambdaLib.awsDashLambdaLibStrings.`viewer-request` | awsDashLambdaLib.awsDashLambdaLibStrings.`viewer-response`,
     requestId: java.lang.String
   ): Anon_DistributionDomainName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distributionDomainName")(distributionDomainName)
-    __obj.updateDynamic("distributionId")(distributionId)
-    __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(distributionDomainName = distributionDomainName, distributionId = distributionId, eventType = eventType.asInstanceOf[js.Any], requestId = requestId)
+  
     __obj.asInstanceOf[Anon_DistributionDomainName]
   }
 }

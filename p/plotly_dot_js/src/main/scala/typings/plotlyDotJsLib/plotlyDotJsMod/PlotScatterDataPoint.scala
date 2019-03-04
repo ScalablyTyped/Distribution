@@ -28,15 +28,8 @@ object PlotScatterDataPoint {
     y: scala.Double,
     yaxis: LayoutAxis
   ): PlotScatterDataPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("curveNumber")(curveNumber)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("pointIndex")(pointIndex)
-    __obj.updateDynamic("pointNumber")(pointNumber)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xaxis")(xaxis)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yaxis")(yaxis)
+    val __obj = js.Dynamic.literal(curveNumber = curveNumber, data = data, pointIndex = pointIndex, pointNumber = pointNumber, x = x, xaxis = xaxis, y = y, yaxis = yaxis)
+  
     __obj.asInstanceOf[PlotScatterDataPoint]
   }
 }

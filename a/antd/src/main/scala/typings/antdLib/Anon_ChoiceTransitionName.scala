@@ -22,12 +22,8 @@ object Anon_ChoiceTransitionName {
     showSearch: scala.Boolean,
     transitionName: java.lang.String
   ): Anon_ChoiceTransitionName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("choiceTransitionName")(choiceTransitionName)
-    __obj.updateDynamic("filterOption")(filterOption)
-    __obj.updateDynamic("optionLabelProp")(optionLabelProp)
-    __obj.updateDynamic("showSearch")(showSearch)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(choiceTransitionName = choiceTransitionName, filterOption = filterOption, optionLabelProp = optionLabelProp, showSearch = showSearch, transitionName = transitionName)
+  
     __obj.asInstanceOf[Anon_ChoiceTransitionName]
   }
 }

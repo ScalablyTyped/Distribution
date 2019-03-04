@@ -12,8 +12,8 @@ trait Anon_RemoveListenerListenerRegistration extends js.Object {
 object Anon_RemoveListenerListenerRegistration {
   @scala.inline
   def apply(removeListener: ckeditorLib.CKEDITORNs.listenerRegistration): Anon_RemoveListenerListenerRegistration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(removeListener = removeListener)
+  
     __obj.asInstanceOf[Anon_RemoveListenerListenerRegistration]
   }
 }

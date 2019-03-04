@@ -47,14 +47,8 @@ object IgChartLegendMethods {
     id: js.Function0[java.lang.String],
     widget: js.Function0[scala.Unit]
   ): IgChartLegendMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exportVisualData")(exportVisualData)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("widget")(widget)
+    val __obj = js.Dynamic.literal(changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, id = id, widget = widget)
+  
     __obj.asInstanceOf[IgChartLegendMethods]
   }
 }

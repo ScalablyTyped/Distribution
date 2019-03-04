@@ -14,10 +14,8 @@ trait Anon_CandleColors extends js.Object {
 object Anon_CandleColors {
   @scala.inline
   def apply(candleColors: Anon_Negative, height: scala.Double, width: scala.Double): Anon_CandleColors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("candleColors")(candleColors)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(candleColors = candleColors, height = height, width = width)
+  
     __obj.asInstanceOf[Anon_CandleColors]
   }
 }

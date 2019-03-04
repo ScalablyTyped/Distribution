@@ -14,8 +14,8 @@ object Anon_Route {
   def apply(
     route: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Route[reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.RouteBase]
   ): Anon_Route = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Route]
   }
 }

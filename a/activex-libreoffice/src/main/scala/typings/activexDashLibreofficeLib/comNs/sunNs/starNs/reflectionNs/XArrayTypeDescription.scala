@@ -59,20 +59,8 @@ object XArrayTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XArrayTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dimensions")(Dimensions)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NumberOfDimensions")(NumberOfDimensions)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDimensions")(getDimensions)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getNumberOfDimensions")(getNumberOfDimensions)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Dimensions = Dimensions, Name = Name, NumberOfDimensions = NumberOfDimensions, Type = Type, TypeClass = TypeClass, acquire = acquire, getDimensions = getDimensions, getName = getName, getNumberOfDimensions = getNumberOfDimensions, getType = getType, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XArrayTypeDescription]
   }
 }

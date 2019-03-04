@@ -22,7 +22,8 @@ object FunctionParamType {
     mode: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.IN | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.OUT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.INOUT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.VARIADIC = null,
     name: java.lang.String = null
   ): FunctionParamType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

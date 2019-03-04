@@ -26,10 +26,8 @@ object PolyPolygonBezierDescriptor {
     PolyPolygonBezier: PolyPolygonBezierCoords,
     PolygonKind: PolygonKind
   ): PolyPolygonBezierDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Geometry")(Geometry)
-    __obj.updateDynamic("PolyPolygonBezier")(PolyPolygonBezier)
-    __obj.updateDynamic("PolygonKind")(PolygonKind)
+    val __obj = js.Dynamic.literal(Geometry = Geometry, PolyPolygonBezier = PolyPolygonBezier, PolygonKind = PolygonKind)
+  
     __obj.asInstanceOf[PolyPolygonBezierDescriptor]
   }
 }

@@ -22,8 +22,7 @@ object RecorderStatusArgs {
     isEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RecorderStatusArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isEnabled")(isEnabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isEnabled = isEnabled.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecorderStatusArgs]
   }

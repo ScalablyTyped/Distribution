@@ -29,10 +29,8 @@ trait ASPxClientSpellCheckerAfterCheckEventArgs extends ASPxClientEventArgs {
 object ASPxClientSpellCheckerAfterCheckEventArgs {
   @scala.inline
   def apply(checkedText: java.lang.String, controlId: java.lang.String, reason: java.lang.String): ASPxClientSpellCheckerAfterCheckEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkedText")(checkedText)
-    __obj.updateDynamic("controlId")(controlId)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(checkedText = checkedText, controlId = controlId, reason = reason)
+  
     __obj.asInstanceOf[ASPxClientSpellCheckerAfterCheckEventArgs]
   }
 }

@@ -45,22 +45,8 @@ object AlbumObjectFull {
     uri: java.lang.String,
     available_markets: js.Array[java.lang.String] = null
   ): AlbumObjectFull = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("album_type")(album_type)
-    __obj.updateDynamic("artists")(artists)
-    __obj.updateDynamic("copyrights")(copyrights)
-    __obj.updateDynamic("external_ids")(external_ids)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("genres")(genres)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("popularity")(popularity)
-    __obj.updateDynamic("release_date")(release_date)
-    __obj.updateDynamic("release_date_precision")(release_date_precision)
-    __obj.updateDynamic("tracks")(tracks)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(album_type = album_type, artists = artists, copyrights = copyrights, external_ids = external_ids, external_urls = external_urls, genres = genres, href = href, id = id, images = images, name = name, popularity = popularity, release_date = release_date, release_date_precision = release_date_precision, tracks = tracks, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets)
     __obj.asInstanceOf[AlbumObjectFull]
   }

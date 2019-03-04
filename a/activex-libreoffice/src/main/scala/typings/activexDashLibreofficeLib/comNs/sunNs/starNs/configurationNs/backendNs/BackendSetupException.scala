@@ -28,10 +28,8 @@ object BackendSetupException {
     Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Message: java.lang.String
   ): BackendSetupException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackendException")(BackendException)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(BackendException = BackendException, Context = Context, Message = Message)
+  
     __obj.asInstanceOf[BackendSetupException]
   }
 }

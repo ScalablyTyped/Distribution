@@ -16,8 +16,8 @@ trait IGridImporterApi extends js.Object {
 object IGridImporterApi {
   @scala.inline
   def apply(importFile: js.Function1[stdLib.File, scala.Unit]): IGridImporterApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("importFile")(importFile)
+    val __obj = js.Dynamic.literal(importFile = importFile)
+  
     __obj.asInstanceOf[IGridImporterApi]
   }
 }

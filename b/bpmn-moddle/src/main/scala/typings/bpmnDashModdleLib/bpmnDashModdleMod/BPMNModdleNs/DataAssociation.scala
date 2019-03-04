@@ -26,13 +26,7 @@ object DataAssociation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): DataAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("assignment")(assignment)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("sourceRef")(sourceRef)
-    __obj.updateDynamic("targetRef")(targetRef)
-    __obj.updateDynamic("transformation")(transformation)
+    val __obj = js.Dynamic.literal($type = $type, assignment = assignment, id = id, sourceRef = sourceRef, targetRef = targetRef, transformation = transformation)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

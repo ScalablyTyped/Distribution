@@ -42,9 +42,8 @@ object Codec {
       scala.Unit
     ]
   ): Codec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addExtPacker")(addExtPacker)
-    __obj.updateDynamic("addExtUnpacker")(addExtUnpacker)
+    val __obj = js.Dynamic.literal(addExtPacker = addExtPacker, addExtUnpacker = addExtUnpacker)
+  
     __obj.asInstanceOf[Codec]
   }
 }

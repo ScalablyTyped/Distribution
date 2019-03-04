@@ -22,12 +22,8 @@ object Anon_Args {
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     visitedType: graphqlDashToolsLib.distSchemaVisitorMod.VisitableSchemaType
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("visitedType")(visitedType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(args = args, context = context, name = name, schema = schema, visitedType = visitedType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

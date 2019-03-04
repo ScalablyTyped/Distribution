@@ -36,20 +36,8 @@ object ValueRange {
     smallestMaximum: js.Function0[scala.Double],
     toString: js.Function0[java.lang.String]
   ): ValueRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkValidIntValue")(checkValidIntValue)
-    __obj.updateDynamic("checkValidValue")(checkValidValue)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("hashCode")(hashCode)
-    __obj.updateDynamic("isFixed")(isFixed)
-    __obj.updateDynamic("isIntValue")(isIntValue)
-    __obj.updateDynamic("isValidIntValue")(isValidIntValue)
-    __obj.updateDynamic("isValidValue")(isValidValue)
-    __obj.updateDynamic("largestMinimum")(largestMinimum)
-    __obj.updateDynamic("maximum")(maximum)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("smallestMaximum")(smallestMaximum)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(checkValidIntValue = checkValidIntValue, checkValidValue = checkValidValue, equals = equals, hashCode = hashCode, isFixed = isFixed, isIntValue = isIntValue, isValidIntValue = isValidIntValue, isValidValue = isValidValue, largestMinimum = largestMinimum, maximum = maximum, minimum = minimum, smallestMaximum = smallestMaximum, toString = toString)
+  
     __obj.asInstanceOf[ValueRange]
   }
 }

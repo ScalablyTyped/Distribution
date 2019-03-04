@@ -50,16 +50,8 @@ object ContainersResource {
     versions: VersionsResource,
     workspaces: WorkspacesResource
   ): ContainersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("environments")(environments)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("version_headers")(version_headers)
-    __obj.updateDynamic("versions")(versions)
-    __obj.updateDynamic("workspaces")(workspaces)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, environments = environments, get = get, list = list, update = update, version_headers = version_headers, versions = versions, workspaces = workspaces)
+  
     __obj.asInstanceOf[ContainersResource]
   }
 }

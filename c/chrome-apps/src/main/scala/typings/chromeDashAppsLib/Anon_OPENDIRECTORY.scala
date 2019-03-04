@@ -20,11 +20,8 @@ object Anon_OPENDIRECTORY {
     OPEN_WRITABLE_FILE: chromeDashAppsLib.chromeDashAppsLibStrings.openWritableFile,
     SAVE_FILE: chromeDashAppsLib.chromeDashAppsLibStrings.saveFile
   ): Anon_OPENDIRECTORY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OPEN_DIRECTORY")(OPEN_DIRECTORY)
-    __obj.updateDynamic("OPEN_FILE")(OPEN_FILE)
-    __obj.updateDynamic("OPEN_WRITABLE_FILE")(OPEN_WRITABLE_FILE)
-    __obj.updateDynamic("SAVE_FILE")(SAVE_FILE)
+    val __obj = js.Dynamic.literal(OPEN_DIRECTORY = OPEN_DIRECTORY, OPEN_FILE = OPEN_FILE, OPEN_WRITABLE_FILE = OPEN_WRITABLE_FILE, SAVE_FILE = SAVE_FILE)
+  
     __obj.asInstanceOf[Anon_OPENDIRECTORY]
   }
 }

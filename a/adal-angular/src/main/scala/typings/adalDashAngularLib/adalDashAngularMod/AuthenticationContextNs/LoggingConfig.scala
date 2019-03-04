@@ -18,10 +18,8 @@ object LoggingConfig {
     log: js.Function1[java.lang.String, scala.Unit],
     piiLoggingEnabled: scala.Boolean
   ): LoggingConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("piiLoggingEnabled")(piiLoggingEnabled)
+    val __obj = js.Dynamic.literal(level = level, log = log, piiLoggingEnabled = piiLoggingEnabled)
+  
     __obj.asInstanceOf[LoggingConfig]
   }
 }

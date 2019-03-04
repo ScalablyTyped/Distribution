@@ -52,19 +52,8 @@ object XAxis {
     release: js.Function0[scala.Unit],
     setScaleData: js.Function1[ScaleData, scala.Unit]
   ): XAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GridProperties")(GridProperties)
-    __obj.updateDynamic("ScaleData")(ScaleData)
-    __obj.updateDynamic("SubGridProperties")(SubGridProperties)
-    __obj.updateDynamic("SubTickProperties")(SubTickProperties)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getGridProperties")(getGridProperties)
-    __obj.updateDynamic("getScaleData")(getScaleData)
-    __obj.updateDynamic("getSubGridProperties")(getSubGridProperties)
-    __obj.updateDynamic("getSubTickProperties")(getSubTickProperties)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setScaleData")(setScaleData)
+    val __obj = js.Dynamic.literal(GridProperties = GridProperties, ScaleData = ScaleData, SubGridProperties = SubGridProperties, SubTickProperties = SubTickProperties, acquire = acquire, getGridProperties = getGridProperties, getScaleData = getScaleData, getSubGridProperties = getSubGridProperties, getSubTickProperties = getSubTickProperties, queryInterface = queryInterface, release = release, setScaleData = setScaleData)
+  
     __obj.asInstanceOf[XAxis]
   }
 }

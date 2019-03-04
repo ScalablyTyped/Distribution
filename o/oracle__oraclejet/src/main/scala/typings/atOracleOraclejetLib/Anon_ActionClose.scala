@@ -18,9 +18,7 @@ object Anon_ActionClose {
     element: stdLib.Element,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_ActionClose = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], element = element)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_ActionClose]
   }

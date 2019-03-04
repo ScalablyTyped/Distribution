@@ -16,8 +16,7 @@ object BulkOptions {
     extIdField: java.lang.String,
     concurrencyMode: jsforceLib.jsforceLibStrings.Serial | jsforceLib.jsforceLibStrings.Parallel = null
   ): BulkOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extIdField")(extIdField)
+    val __obj = js.Dynamic.literal(extIdField = extIdField)
     if (concurrencyMode != null) __obj.updateDynamic("concurrencyMode")(concurrencyMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkOptions]
   }

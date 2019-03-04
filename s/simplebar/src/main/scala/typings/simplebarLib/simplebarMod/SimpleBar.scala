@@ -18,10 +18,8 @@ object SimpleBar {
     getScrollElement: js.Function0[stdLib.Element],
     recalculate: js.Function0[scala.Unit]
   ): SimpleBar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContentElement")(getContentElement)
-    __obj.updateDynamic("getScrollElement")(getScrollElement)
-    __obj.updateDynamic("recalculate")(recalculate)
+    val __obj = js.Dynamic.literal(getContentElement = getContentElement, getScrollElement = getScrollElement, recalculate = recalculate)
+  
     __obj.asInstanceOf[SimpleBar]
   }
 }

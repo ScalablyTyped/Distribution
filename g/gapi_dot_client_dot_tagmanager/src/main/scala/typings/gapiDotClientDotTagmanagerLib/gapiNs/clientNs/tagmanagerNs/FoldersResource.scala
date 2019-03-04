@@ -60,15 +60,8 @@ object FoldersResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Folder]
     ]
   ): FoldersResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("entities")(entities)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("move_entities_to_folder")(move_entities_to_folder)
-    __obj.updateDynamic("revert")(revert)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, entities = entities, get = get, list = list, move_entities_to_folder = move_entities_to_folder, revert = revert, update = update)
+  
     __obj.asInstanceOf[FoldersResource]
   }
 }

@@ -14,8 +14,8 @@ trait ParagraphPropertiesComplex extends js.Object {
 object ParagraphPropertiesComplex {
   @scala.inline
   def apply(WritingMode: scala.Double): ParagraphPropertiesComplex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("WritingMode")(WritingMode)
+    val __obj = js.Dynamic.literal(WritingMode = WritingMode)
+  
     __obj.asInstanceOf[ParagraphPropertiesComplex]
   }
 }

@@ -26,14 +26,8 @@ object Milliseconds {
     weeks: js.Function1[scala.Double, scala.Double],
     years: js.Function1[scala.Double, scala.Double]
   ): Milliseconds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("days")(days)
-    __obj.updateDynamic("hours")(hours)
-    __obj.updateDynamic("minutes")(minutes)
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("seconds")(seconds)
-    __obj.updateDynamic("weeks")(weeks)
-    __obj.updateDynamic("years")(years)
+    val __obj = js.Dynamic.literal(days = days, hours = hours, minutes = minutes, months = months, seconds = seconds, weeks = weeks, years = years)
+  
     __obj.asInstanceOf[Milliseconds]
   }
 }

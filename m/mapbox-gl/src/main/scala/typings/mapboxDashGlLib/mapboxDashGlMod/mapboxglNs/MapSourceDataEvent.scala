@@ -31,15 +31,8 @@ object MapSourceDataEvent {
     `type`: java.lang.String,
     originalEvent: js.UndefOr[scala.Nothing] = js.undefined
   ): MapSourceDataEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("coord")(coord)
-    __obj.updateDynamic("dataType")(dataType)
-    __obj.updateDynamic("isSourceLoaded")(isSourceLoaded)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourceDataType")(sourceDataType.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceId")(sourceId)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("tile")(tile)
+    val __obj = js.Dynamic.literal(coord = coord, dataType = dataType, isSourceLoaded = isSourceLoaded, source = source, sourceDataType = sourceDataType.asInstanceOf[js.Any], sourceId = sourceId, target = target, tile = tile)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(originalEvent)) __obj.updateDynamic("originalEvent")(originalEvent)
     __obj.asInstanceOf[MapSourceDataEvent]
   }

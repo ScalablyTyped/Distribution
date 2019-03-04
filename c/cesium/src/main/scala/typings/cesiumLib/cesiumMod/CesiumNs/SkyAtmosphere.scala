@@ -20,11 +20,8 @@ object SkyAtmosphere {
     isDestroyed: js.Function0[scala.Boolean],
     show: scala.Boolean
   ): SkyAtmosphere = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("ellipsoid")(ellipsoid)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(destroy = destroy, ellipsoid = ellipsoid, isDestroyed = isDestroyed, show = show)
+  
     __obj.asInstanceOf[SkyAtmosphere]
   }
 }

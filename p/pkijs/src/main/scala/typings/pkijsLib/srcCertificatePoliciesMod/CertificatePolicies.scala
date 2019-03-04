@@ -20,11 +20,8 @@ object CertificatePolicies {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): CertificatePolicies = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificatePolicies")(certificatePolicies)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(certificatePolicies = certificatePolicies, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[CertificatePolicies]
   }
 }

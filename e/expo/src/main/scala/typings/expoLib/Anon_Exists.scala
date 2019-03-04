@@ -25,12 +25,7 @@ object Anon_Exists {
     uri: java.lang.String,
     md5: expoLib.expoMod.Md5 = null
   ): Anon_Exists = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exists")(exists)
-    __obj.updateDynamic("isDirectory")(isDirectory)
-    __obj.updateDynamic("modificationTime")(modificationTime)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(exists = exists, isDirectory = isDirectory, modificationTime = modificationTime, size = size, uri = uri)
     if (md5 != null) __obj.updateDynamic("md5")(md5)
     __obj.asInstanceOf[Anon_Exists]
   }

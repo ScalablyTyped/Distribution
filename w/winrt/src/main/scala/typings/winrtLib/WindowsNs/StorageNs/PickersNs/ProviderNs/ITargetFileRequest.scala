@@ -16,9 +16,8 @@ object ITargetFileRequest {
     getDeferral: js.Function0[TargetFileRequestDeferral],
     targetFile: winrtLib.WindowsNs.StorageNs.IStorageFile
   ): ITargetFileRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDeferral")(getDeferral)
-    __obj.updateDynamic("targetFile")(targetFile)
+    val __obj = js.Dynamic.literal(getDeferral = getDeferral, targetFile = targetFile)
+  
     __obj.asInstanceOf[ITargetFileRequest]
   }
 }

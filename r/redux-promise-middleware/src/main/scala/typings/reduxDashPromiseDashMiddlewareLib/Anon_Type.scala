@@ -16,8 +16,8 @@ object Anon_Type {
     `type`: java.lang.String,
     value: reduxDashPromiseDashMiddlewareLib.reduxDashPromiseDashMiddlewareMod.reduxMod.PayloadType[PA]
   ): Anon_Type[PA] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Type[PA]]
   }
 }

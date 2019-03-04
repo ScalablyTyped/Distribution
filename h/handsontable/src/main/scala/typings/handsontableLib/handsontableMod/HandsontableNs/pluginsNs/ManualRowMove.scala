@@ -39,27 +39,8 @@ object ManualRowMove {
     removedRows: js.Array[_],
     rowsMapper: MoveRowsMapper
   ): ManualRowMove = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("backlight")(backlight)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("guideline")(guideline)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("moveRow")(moveRow)
-    __obj.updateDynamic("moveRows")(moveRows)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("removedRows")(removedRows)
-    __obj.updateDynamic("rowsMapper")(rowsMapper)
+    val __obj = js.Dynamic.literal(addHook = addHook, backlight = backlight, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, guideline = guideline, init = init, initialized = initialized, isPluginsReady = isPluginsReady, moveRow = moveRow, moveRows = moveRows, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, removedRows = removedRows, rowsMapper = rowsMapper)
+  
     __obj.asInstanceOf[ManualRowMove]
   }
 }

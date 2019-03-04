@@ -34,8 +34,7 @@ object Anon_Alignment {
     id: java.lang.String = null,
     passProps: js.Object = null
   ): Anon_Alignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (passProps != null) __obj.updateDynamic("passProps")(passProps)

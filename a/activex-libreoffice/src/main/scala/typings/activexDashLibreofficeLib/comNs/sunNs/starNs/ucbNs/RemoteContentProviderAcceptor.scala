@@ -26,13 +26,8 @@ object RemoteContentProviderAcceptor {
     release: js.Function0[scala.Unit],
     removeRemoteContentProvider: js.Function1[java.lang.String, scala.Boolean]
   ): RemoteContentProviderAcceptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("activateRemoteContentProviders")(activateRemoteContentProviders)
-    __obj.updateDynamic("addRemoteContentProvider")(addRemoteContentProvider)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRemoteContentProvider")(removeRemoteContentProvider)
+    val __obj = js.Dynamic.literal(acquire = acquire, activateRemoteContentProviders = activateRemoteContentProviders, addRemoteContentProvider = addRemoteContentProvider, queryInterface = queryInterface, release = release, removeRemoteContentProvider = removeRemoteContentProvider)
+  
     __obj.asInstanceOf[RemoteContentProviderAcceptor]
   }
 }

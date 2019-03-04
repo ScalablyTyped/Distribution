@@ -24,10 +24,8 @@ object Anon_Engine {
     INs: Anon_BlockCallback,
     utilNs: Anon_ArgsAssert
   ): Anon_Engine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Engine")(Engine)
-    __obj.updateDynamic("INs")(INs)
-    __obj.updateDynamic("utilNs")(utilNs)
+    val __obj = js.Dynamic.literal(Engine = Engine, INs = INs, utilNs = utilNs)
+  
     __obj.asInstanceOf[Anon_Engine]
   }
 }

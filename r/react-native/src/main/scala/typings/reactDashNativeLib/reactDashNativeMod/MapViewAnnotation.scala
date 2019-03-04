@@ -52,9 +52,7 @@ object MapViewAnnotation {
     title: java.lang.String = null,
     view: reactLib.reactMod.ReactNs.ReactElement[_] = null
   ): MapViewAnnotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (!js.isUndefined(animateDrop)) __obj.updateDynamic("animateDrop")(animateDrop)
     if (detailCalloutView != null) __obj.updateDynamic("detailCalloutView")(detailCalloutView)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

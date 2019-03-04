@@ -88,20 +88,8 @@ object CompletionSuggester {
     transpositions: js.Function1[scala.Boolean, CompletionSuggester],
     unicodeAware: js.Function1[scala.Boolean, CompletionSuggester]
   ): CompletionSuggester = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("editDistance")(editDistance)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("fuzzy")(fuzzy)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("prefixLength")(prefixLength)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("transpositions")(transpositions)
-    __obj.updateDynamic("unicodeAware")(unicodeAware)
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, editDistance = editDistance, field = field, fuzzy = fuzzy, minLength = minLength, prefixLength = prefixLength, shardSize = shardSize, size = size, text = text, toJSON = toJSON, transpositions = transpositions, unicodeAware = unicodeAware)
+  
     __obj.asInstanceOf[CompletionSuggester]
   }
 }

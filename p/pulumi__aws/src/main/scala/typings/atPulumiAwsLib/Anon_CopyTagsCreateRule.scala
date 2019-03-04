@@ -22,10 +22,7 @@ object Anon_CopyTagsCreateRule {
     copyTags: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tagsToAdd: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): Anon_CopyTagsCreateRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createRule")(createRule.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("retainRule")(retainRule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createRule = createRule.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], retainRule = retainRule.asInstanceOf[js.Any])
     if (copyTags != null) __obj.updateDynamic("copyTags")(copyTags.asInstanceOf[js.Any])
     if (tagsToAdd != null) __obj.updateDynamic("tagsToAdd")(tagsToAdd.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CopyTagsCreateRule]

@@ -34,13 +34,8 @@ object WorkItemTemplateReference {
     url: java.lang.String,
     workItemTypeName: java.lang.String
   ): WorkItemTemplateReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemTypeName")(workItemTypeName)
+    val __obj = js.Dynamic.literal(_links = _links, description = description, id = id, name = name, url = url, workItemTypeName = workItemTypeName)
+  
     __obj.asInstanceOf[WorkItemTemplateReference]
   }
 }

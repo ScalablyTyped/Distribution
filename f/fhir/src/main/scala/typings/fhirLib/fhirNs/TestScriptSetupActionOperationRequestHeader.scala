@@ -41,9 +41,7 @@ object TestScriptSetupActionOperationRequestHeader {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): TestScriptSetupActionOperationRequestHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(field = field, value = value)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_field != null) __obj.updateDynamic("_field")(_field)
     if (_id != null) __obj.updateDynamic("_id")(_id)

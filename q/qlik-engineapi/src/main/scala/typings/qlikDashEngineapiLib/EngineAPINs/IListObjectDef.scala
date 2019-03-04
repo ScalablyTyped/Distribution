@@ -67,12 +67,7 @@ object IListObjectDef {
     qFrequencyMode: FrequencyModeType = null,
     qShowAlternatives: js.UndefOr[scala.Boolean] = js.undefined
   ): IListObjectDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAutoSortByState")(qAutoSortByState)
-    __obj.updateDynamic("qDef")(qDef)
-    __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch)
-    __obj.updateDynamic("qLibraryId")(qLibraryId)
-    __obj.updateDynamic("qStateName")(qStateName)
+    val __obj = js.Dynamic.literal(qAutoSortByState = qAutoSortByState, qDef = qDef, qInitialDataFetch = qInitialDataFetch, qLibraryId = qLibraryId, qStateName = qStateName)
     if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions)
     if (qFrequencyMode != null) __obj.updateDynamic("qFrequencyMode")(qFrequencyMode)
     if (!js.isUndefined(qShowAlternatives)) __obj.updateDynamic("qShowAlternatives")(qShowAlternatives)

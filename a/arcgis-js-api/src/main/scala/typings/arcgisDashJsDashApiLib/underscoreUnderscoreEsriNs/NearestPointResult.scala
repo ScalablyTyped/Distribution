@@ -51,15 +51,8 @@ object NearestPointResult {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     vertexIndex: scala.Double
   ): NearestPointResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("coordinate")(coordinate)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("isRightSide")(isRightSide)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("vertexIndex")(vertexIndex)
+    val __obj = js.Dynamic.literal(constructor = constructor, coordinate = coordinate, distance = distance, hasOwnProperty = hasOwnProperty, isEmpty = isEmpty, isRightSide = isRightSide, propertyIsEnumerable = propertyIsEnumerable, vertexIndex = vertexIndex)
+  
     __obj.asInstanceOf[NearestPointResult]
   }
 }

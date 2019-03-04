@@ -71,9 +71,7 @@ object Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey {
     upload_protocol: java.lang.String = null,
     validateOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(location = location, projectId = projectId)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

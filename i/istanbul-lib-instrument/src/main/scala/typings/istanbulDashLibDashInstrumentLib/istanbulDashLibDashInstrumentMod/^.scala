@@ -14,10 +14,10 @@ object ^ extends js.Object {
       istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.InstrumenterOptions
     ]
   ): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Instrumenter = js.native
-  def programVisitor(types: istanbulDashLibDashInstrumentLib.`Anon_`): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Visitor = js.native
-  def programVisitor(types: istanbulDashLibDashInstrumentLib.`Anon_`, sourceFilePath: java.lang.String): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Visitor = js.native
+  def programVisitor(types: istanbulDashLibDashInstrumentLib.Anon_): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Visitor = js.native
+  def programVisitor(types: istanbulDashLibDashInstrumentLib.Anon_, sourceFilePath: java.lang.String): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Visitor = js.native
   def programVisitor(
-    types: istanbulDashLibDashInstrumentLib.`Anon_`,
+    types: istanbulDashLibDashInstrumentLib.Anon_,
     sourceFilePath: java.lang.String,
     opts: stdLib.Partial[istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.VisitorOptions]
   ): istanbulDashLibDashInstrumentLib.istanbulDashLibDashInstrumentMod.Visitor = js.native

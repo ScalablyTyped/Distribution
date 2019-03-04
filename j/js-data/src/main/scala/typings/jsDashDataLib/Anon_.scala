@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var Promise: stdLib.PromiseConstructor = js.native
   var isBrowser: scala.Boolean = js.native
   def `_`(dest: js.Any, src: js.Any): scala.Unit = js.native

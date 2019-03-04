@@ -12,8 +12,8 @@ trait Anon_HighWaterMark extends js.Object {
 object Anon_HighWaterMark {
   @scala.inline
   def apply(highWaterMark: scala.Double): Anon_HighWaterMark = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highWaterMark")(highWaterMark)
+    val __obj = js.Dynamic.literal(highWaterMark = highWaterMark)
+  
     __obj.asInstanceOf[Anon_HighWaterMark]
   }
 }

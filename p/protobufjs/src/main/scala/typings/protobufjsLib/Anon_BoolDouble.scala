@@ -38,20 +38,8 @@ object Anon_BoolDouble {
     uint32: scala.Double,
     uint64: scala.Double
   ): Anon_BoolDouble = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bool")(bool)
-    __obj.updateDynamic("double")(double)
-    __obj.updateDynamic("fixed32")(fixed32)
-    __obj.updateDynamic("fixed64")(fixed64)
-    __obj.updateDynamic("float")(float)
-    __obj.updateDynamic("int32")(int32)
-    __obj.updateDynamic("int64")(int64)
-    __obj.updateDynamic("sfixed32")(sfixed32)
-    __obj.updateDynamic("sfixed64")(sfixed64)
-    __obj.updateDynamic("sint32")(sint32)
-    __obj.updateDynamic("sint64")(sint64)
-    __obj.updateDynamic("uint32")(uint32)
-    __obj.updateDynamic("uint64")(uint64)
+    val __obj = js.Dynamic.literal(bool = bool, double = double, fixed32 = fixed32, fixed64 = fixed64, float = float, int32 = int32, int64 = int64, sfixed32 = sfixed32, sfixed64 = sfixed64, sint32 = sint32, sint64 = sint64, uint32 = uint32, uint64 = uint64)
+  
     __obj.asInstanceOf[Anon_BoolDouble]
   }
 }

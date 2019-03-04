@@ -57,8 +57,7 @@ object DropdownProps {
     ] = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): DropdownProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(alignEnd)) __obj.updateDynamic("alignEnd")(alignEnd)
     if (drop != null) __obj.updateDynamic("drop")(drop)
     if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)

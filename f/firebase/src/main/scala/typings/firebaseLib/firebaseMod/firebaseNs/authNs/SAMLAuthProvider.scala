@@ -10,8 +10,8 @@ trait SAMLAuthProvider extends AuthProvider
 object SAMLAuthProvider {
   @scala.inline
   def apply(providerId: java.lang.String): SAMLAuthProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("providerId")(providerId)
+    val __obj = js.Dynamic.literal(providerId = providerId)
+  
     __obj.asInstanceOf[SAMLAuthProvider]
   }
 }

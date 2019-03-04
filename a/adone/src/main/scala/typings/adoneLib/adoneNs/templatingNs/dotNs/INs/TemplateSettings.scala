@@ -38,20 +38,8 @@ object TemplateSettings {
     useParams: stdLib.RegExp,
     varname: java.lang.String
   ): TemplateSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("conditional")(conditional)
-    __obj.updateDynamic("define")(define)
-    __obj.updateDynamic("defineParams")(defineParams)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("evaluate")(evaluate)
-    __obj.updateDynamic("interpolate")(interpolate)
-    __obj.updateDynamic("iterate")(iterate)
-    __obj.updateDynamic("selfcontained")(selfcontained)
-    __obj.updateDynamic("strip")(strip)
-    __obj.updateDynamic("use")(use)
-    __obj.updateDynamic("useParams")(useParams)
-    __obj.updateDynamic("varname")(varname)
+    val __obj = js.Dynamic.literal(append = append, conditional = conditional, define = define, defineParams = defineParams, encode = encode, evaluate = evaluate, interpolate = interpolate, iterate = iterate, selfcontained = selfcontained, strip = strip, use = use, useParams = useParams, varname = varname)
+  
     __obj.asInstanceOf[TemplateSettings]
   }
 }

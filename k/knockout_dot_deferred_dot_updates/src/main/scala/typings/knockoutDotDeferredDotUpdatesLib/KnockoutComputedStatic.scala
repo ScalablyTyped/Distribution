@@ -13,8 +13,8 @@ trait KnockoutComputedStatic extends js.Object {
 object KnockoutComputedStatic {
   @scala.inline
   def apply(deferUpdates: scala.Boolean): KnockoutComputedStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates)
+  
     __obj.asInstanceOf[KnockoutComputedStatic]
   }
 }

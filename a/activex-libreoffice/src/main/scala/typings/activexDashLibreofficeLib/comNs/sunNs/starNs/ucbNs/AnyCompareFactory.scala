@@ -22,12 +22,8 @@ object AnyCompareFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): AnyCompareFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createAnyCompareByName")(createAnyCompareByName)
-    __obj.updateDynamic("createWithLocale")(createWithLocale)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createAnyCompareByName = createAnyCompareByName, createWithLocale = createWithLocale, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[AnyCompareFactory]
   }
 }

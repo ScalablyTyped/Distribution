@@ -82,21 +82,8 @@ object FileContainer {
     signingKeyId: java.lang.String,
     size: scala.Double
   ): FileContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactUri")(artifactUri)
-    __obj.updateDynamic("contentLocation")(contentLocation)
-    __obj.updateDynamic("createdBy")(createdBy)
-    __obj.updateDynamic("dateCreated")(dateCreated)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("itemLocation")(itemLocation)
-    __obj.updateDynamic("locatorPath")(locatorPath)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
-    __obj.updateDynamic("securityToken")(securityToken)
-    __obj.updateDynamic("signingKeyId")(signingKeyId)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(artifactUri = artifactUri, contentLocation = contentLocation, createdBy = createdBy, dateCreated = dateCreated, description = description, id = id, itemLocation = itemLocation, locatorPath = locatorPath, name = name, options = options, scopeIdentifier = scopeIdentifier, securityToken = securityToken, signingKeyId = signingKeyId, size = size)
+  
     __obj.asInstanceOf[FileContainer]
   }
 }

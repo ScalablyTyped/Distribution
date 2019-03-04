@@ -23,13 +23,8 @@ object MochaPhantomJsWindowOptions {
     run: js.Function0[scala.Unit],
     started: scala.Boolean
   ): MochaPhantomJsWindowOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ended")(ended)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("mochaPhantomJS")(mochaPhantomJS)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("started")(started)
+    val __obj = js.Dynamic.literal(ended = ended, env = env, failures = failures, mochaPhantomJS = mochaPhantomJS, run = run, started = started)
+  
     __obj.asInstanceOf[MochaPhantomJsWindowOptions]
   }
 }

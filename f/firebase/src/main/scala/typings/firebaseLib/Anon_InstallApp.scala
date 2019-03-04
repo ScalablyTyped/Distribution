@@ -18,8 +18,7 @@ object Anon_InstallApp {
     installApp: js.UndefOr[scala.Boolean] = js.undefined,
     minimumVersion: java.lang.String = null
   ): Anon_InstallApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("packageName")(packageName)
+    val __obj = js.Dynamic.literal(packageName = packageName)
     if (!js.isUndefined(installApp)) __obj.updateDynamic("installApp")(installApp)
     if (minimumVersion != null) __obj.updateDynamic("minimumVersion")(minimumVersion)
     __obj.asInstanceOf[Anon_InstallApp]

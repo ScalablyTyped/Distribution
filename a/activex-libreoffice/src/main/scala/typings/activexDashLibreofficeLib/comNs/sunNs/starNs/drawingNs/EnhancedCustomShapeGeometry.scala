@@ -65,18 +65,8 @@ object EnhancedCustomShapeGeometry {
     Type: java.lang.String,
     ViewBox: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
   ): EnhancedCustomShapeGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdjustmentValues")(AdjustmentValues)
-    __obj.updateDynamic("Equations")(Equations)
-    __obj.updateDynamic("Extrusion")(Extrusion)
-    __obj.updateDynamic("Handles")(Handles)
-    __obj.updateDynamic("MirroredX")(MirroredX)
-    __obj.updateDynamic("MirroredY")(MirroredY)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("TextPath")(TextPath)
-    __obj.updateDynamic("TextRotateAngle")(TextRotateAngle)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("ViewBox")(ViewBox)
+    val __obj = js.Dynamic.literal(AdjustmentValues = AdjustmentValues, Equations = Equations, Extrusion = Extrusion, Handles = Handles, MirroredX = MirroredX, MirroredY = MirroredY, Path = Path, TextPath = TextPath, TextRotateAngle = TextRotateAngle, Type = Type, ViewBox = ViewBox)
+  
     __obj.asInstanceOf[EnhancedCustomShapeGeometry]
   }
 }

@@ -27,9 +27,8 @@ object NumericLiteral {
     value: scala.Double,
     raw: java.lang.String = null
   ): NumericLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(extra = extra, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (raw != null) __obj.updateDynamic("raw")(raw)
     __obj.asInstanceOf[NumericLiteral]
   }

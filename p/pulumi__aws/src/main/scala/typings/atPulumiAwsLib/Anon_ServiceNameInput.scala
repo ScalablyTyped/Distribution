@@ -12,8 +12,8 @@ trait Anon_ServiceNameInput extends js.Object {
 object Anon_ServiceNameInput {
   @scala.inline
   def apply(serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]): Anon_ServiceNameInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ServiceNameInput]
   }
 }

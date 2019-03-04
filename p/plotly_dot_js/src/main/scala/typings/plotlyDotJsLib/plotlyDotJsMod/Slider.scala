@@ -119,28 +119,8 @@ object Slider {
     y: scala.Double,
     yanchor: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.top | plotlyDotJsLib.plotlyDotJsLibStrings.middle | plotlyDotJsLib.plotlyDotJsLibStrings.bottom
   ): Slider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("activebgcolor")(activebgcolor.asInstanceOf[js.Any])
-    __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    __obj.updateDynamic("bordercolor")(bordercolor.asInstanceOf[js.Any])
-    __obj.updateDynamic("borderwidth")(borderwidth)
-    __obj.updateDynamic("currentvalue")(currentvalue)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("len")(len)
-    __obj.updateDynamic("lenmode")(lenmode.asInstanceOf[js.Any])
-    __obj.updateDynamic("minorticklen")(minorticklen)
-    __obj.updateDynamic("pad")(pad)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("tickcolor")(tickcolor.asInstanceOf[js.Any])
-    __obj.updateDynamic("ticklen")(ticklen)
-    __obj.updateDynamic("tickwidth")(tickwidth)
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("visible")(visible)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active, activebgcolor = activebgcolor.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], bordercolor = bordercolor.asInstanceOf[js.Any], borderwidth = borderwidth, currentvalue = currentvalue, font = font, len = len, lenmode = lenmode.asInstanceOf[js.Any], minorticklen = minorticklen, pad = pad, steps = steps, tickcolor = tickcolor.asInstanceOf[js.Any], ticklen = ticklen, tickwidth = tickwidth, transition = transition, visible = visible, x = x, xanchor = xanchor.asInstanceOf[js.Any], y = y, yanchor = yanchor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Slider]
   }
 }

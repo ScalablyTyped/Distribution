@@ -35,16 +35,8 @@ object XDataEditor {
     setModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     show: js.Function0[scala.Unit]
   ): XDataEditor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDataEditorListener")(addDataEditorListener)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDataEditorListener")(removeDataEditorListener)
-    __obj.updateDynamic("setModel")(setModel)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(Model = Model, acquire = acquire, addDataEditorListener = addDataEditorListener, getModel = getModel, queryInterface = queryInterface, release = release, removeDataEditorListener = removeDataEditorListener, setModel = setModel, show = show)
+  
     __obj.asInstanceOf[XDataEditor]
   }
 }

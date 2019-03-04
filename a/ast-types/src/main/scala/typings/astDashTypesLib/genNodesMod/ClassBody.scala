@@ -26,8 +26,8 @@ object ClassBody {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.ClassBody
   ): ClassBody = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ClassBody]
   }
 }

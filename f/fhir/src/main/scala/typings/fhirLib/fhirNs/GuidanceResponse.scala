@@ -119,9 +119,7 @@ object GuidanceResponse {
     subject: Reference = null,
     text: Narrative = null
   ): GuidanceResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(module = module, status = status)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

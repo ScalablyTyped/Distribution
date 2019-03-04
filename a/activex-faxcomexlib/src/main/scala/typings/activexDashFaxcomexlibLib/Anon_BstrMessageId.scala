@@ -18,10 +18,8 @@ object Anon_BstrMessageId {
     fAddedToReceiveFolder: scala.Boolean,
     pFaxAccount: activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxAccount
   ): Anon_BstrMessageId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bstrMessageId")(bstrMessageId)
-    __obj.updateDynamic("fAddedToReceiveFolder")(fAddedToReceiveFolder)
-    __obj.updateDynamic("pFaxAccount")(pFaxAccount)
+    val __obj = js.Dynamic.literal(bstrMessageId = bstrMessageId, fAddedToReceiveFolder = fAddedToReceiveFolder, pFaxAccount = pFaxAccount)
+  
     __obj.asInstanceOf[Anon_BstrMessageId]
   }
 }

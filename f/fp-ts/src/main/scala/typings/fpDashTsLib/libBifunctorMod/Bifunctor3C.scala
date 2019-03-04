@@ -27,10 +27,8 @@ object Bifunctor3C {
       fpDashTsLib.libHKTMod.Type3[F, U, js.Any, js.Any]
     ]
   ): Bifunctor3C[F, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
-    __obj.updateDynamic("_U")(_U.asInstanceOf[js.Any])
-    __obj.updateDynamic("bimap")(bimap)
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _U = _U.asInstanceOf[js.Any], bimap = bimap)
+  
     __obj.asInstanceOf[Bifunctor3C[F, U]]
   }
 }

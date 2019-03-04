@@ -124,8 +124,7 @@ object Sequence {
     `type`: code = null,
     variant: js.Array[SequenceVariant] = null
   ): Sequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem)
     if (_coordinateSystem != null) __obj.updateDynamic("_coordinateSystem")(_coordinateSystem)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

@@ -12,8 +12,8 @@ trait StreetViewPanoRequest extends js.Object {
 object StreetViewPanoRequest {
   @scala.inline
   def apply(pano: java.lang.String): StreetViewPanoRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pano")(pano)
+    val __obj = js.Dynamic.literal(pano = pano)
+  
     __obj.asInstanceOf[StreetViewPanoRequest]
   }
 }

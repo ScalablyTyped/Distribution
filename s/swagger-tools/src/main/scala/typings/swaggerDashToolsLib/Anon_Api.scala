@@ -34,14 +34,7 @@ object Anon_Api {
     operationPath: js.Array[java.lang.String] = null,
     useStubs: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("apiDeclaration")(apiDeclaration)
-    __obj.updateDynamic("apiIndex")(apiIndex)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("resourceIndex")(resourceIndex)
-    __obj.updateDynamic("resourceListing")(resourceListing)
-    __obj.updateDynamic("swaggerVersion")(swaggerVersion)
+    val __obj = js.Dynamic.literal(api = api, apiDeclaration = apiDeclaration, apiIndex = apiIndex, params = params, resourceIndex = resourceIndex, resourceListing = resourceListing, swaggerVersion = swaggerVersion)
     if (authorizations != null) __obj.updateDynamic("authorizations")(authorizations)
     if (operation != null) __obj.updateDynamic("operation")(operation)
     if (operationPath != null) __obj.updateDynamic("operationPath")(operationPath)

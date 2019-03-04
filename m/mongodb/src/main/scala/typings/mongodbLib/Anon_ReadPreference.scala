@@ -16,8 +16,7 @@ object Anon_ReadPreference {
     readPreference: mongodbLib.mongodbMod.ReadPreference | java.lang.String,
     session: mongodbLib.mongodbMod.ClientSession = null
   ): Anon_ReadPreference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(readPreference = readPreference.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session)
     __obj.asInstanceOf[Anon_ReadPreference]
   }

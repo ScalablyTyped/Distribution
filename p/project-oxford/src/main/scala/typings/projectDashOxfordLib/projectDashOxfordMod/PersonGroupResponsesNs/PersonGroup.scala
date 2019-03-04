@@ -14,10 +14,8 @@ trait PersonGroup extends js.Object {
 object PersonGroup {
   @scala.inline
   def apply(name: java.lang.String, personGroupId: java.lang.String, userData: java.lang.String): PersonGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("personGroupId")(personGroupId)
-    __obj.updateDynamic("userData")(userData)
+    val __obj = js.Dynamic.literal(name = name, personGroupId = personGroupId, userData = userData)
+  
     __obj.asInstanceOf[PersonGroup]
   }
 }

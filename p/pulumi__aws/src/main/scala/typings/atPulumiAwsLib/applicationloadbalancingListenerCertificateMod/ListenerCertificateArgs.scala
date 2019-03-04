@@ -22,9 +22,8 @@ object ListenerCertificateArgs {
     certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     listenerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): ListenerCertificateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("listenerArn")(listenerArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any], listenerArn = listenerArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ListenerCertificateArgs]
   }
 }

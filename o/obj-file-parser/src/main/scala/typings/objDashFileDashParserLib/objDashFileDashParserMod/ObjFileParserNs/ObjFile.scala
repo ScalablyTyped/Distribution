@@ -13,9 +13,8 @@ trait ObjFile extends js.Object {
 object ObjFile {
   @scala.inline
   def apply(materialLibraries: js.Array[_], models: js.Array[ObjModel]): ObjFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("materialLibraries")(materialLibraries)
-    __obj.updateDynamic("models")(models)
+    val __obj = js.Dynamic.literal(materialLibraries = materialLibraries, models = models)
+  
     __obj.asInstanceOf[ObjFile]
   }
 }

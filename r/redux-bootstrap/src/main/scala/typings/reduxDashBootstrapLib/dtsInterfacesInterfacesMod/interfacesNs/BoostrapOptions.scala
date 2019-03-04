@@ -44,9 +44,7 @@ object BoostrapOptions {
     render: js.Function = null,
     routerProps: RouterProps = null
   ): BoostrapOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reducers")(reducers)
-    __obj.updateDynamic("routes")(routes)
+    val __obj = js.Dynamic.literal(reducers = reducers, routes = routes)
     if (container != null) __obj.updateDynamic("container")(container)
     if (createHistory != null) __obj.updateDynamic("createHistory")(createHistory)
     if (devToolsOptions != null) __obj.updateDynamic("devToolsOptions")(devToolsOptions)

@@ -22,11 +22,7 @@ object TokenDetails {
     token: java.lang.String,
     clientId: java.lang.String = null
   ): TokenDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capability")(capability)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("issued")(issued)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(capability = capability, expires = expires, issued = issued, token = token)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     __obj.asInstanceOf[TokenDetails]
   }

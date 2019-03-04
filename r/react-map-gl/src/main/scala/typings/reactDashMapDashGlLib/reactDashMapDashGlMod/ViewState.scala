@@ -24,10 +24,7 @@ object ViewState {
     bearing: scala.Int | scala.Double = null,
     pitch: scala.Int | scala.Double = null
   ): ViewState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude, zoom = zoom)
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
     if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])

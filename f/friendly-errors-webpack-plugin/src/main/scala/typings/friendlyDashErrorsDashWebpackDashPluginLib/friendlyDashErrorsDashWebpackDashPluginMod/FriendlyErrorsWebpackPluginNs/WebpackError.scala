@@ -24,13 +24,8 @@ object WebpackError {
     severity: Severity,
     webpackError: js.Any
   ): WebpackError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("severity")(severity)
-    __obj.updateDynamic("webpackError")(webpackError)
+    val __obj = js.Dynamic.literal(file = file, message = message, name = name, origin = origin, severity = severity, webpackError = webpackError)
+  
     __obj.asInstanceOf[WebpackError]
   }
 }

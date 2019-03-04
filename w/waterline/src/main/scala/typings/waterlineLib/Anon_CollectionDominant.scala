@@ -18,9 +18,7 @@ object Anon_CollectionDominant {
     via: java.lang.String,
     dominant: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_CollectionDominant = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("via")(via)
+    val __obj = js.Dynamic.literal(collection = collection, via = via)
     if (!js.isUndefined(dominant)) __obj.updateDynamic("dominant")(dominant)
     __obj.asInstanceOf[Anon_CollectionDominant]
   }

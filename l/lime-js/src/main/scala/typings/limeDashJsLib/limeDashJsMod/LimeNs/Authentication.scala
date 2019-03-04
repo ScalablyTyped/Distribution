@@ -12,8 +12,8 @@ trait Authentication extends js.Object {
 object Authentication {
   @scala.inline
   def apply(scheme: java.lang.String): Authentication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(scheme = scheme)
+  
     __obj.asInstanceOf[Authentication]
   }
 }

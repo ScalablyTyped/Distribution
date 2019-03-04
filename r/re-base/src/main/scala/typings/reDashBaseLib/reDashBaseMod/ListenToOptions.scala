@@ -42,8 +42,8 @@ object ListenToOptions {
     onFailure: js.Function1[/* error */ js.Any, scala.Unit] = null,
     queries: js.Object = null
   ): ListenToOptions = {
-    val __obj = js.Dynamic.literal(`then` = `then`)
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
+    __obj.updateDynamic("then")(`then`)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (queries != null) __obj.updateDynamic("queries")(queries)

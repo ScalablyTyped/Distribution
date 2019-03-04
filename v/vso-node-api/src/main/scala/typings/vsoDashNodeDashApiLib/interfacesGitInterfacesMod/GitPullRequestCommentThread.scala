@@ -26,17 +26,8 @@ object GitPullRequestCommentThread {
     status: CommentThreadStatus,
     threadContext: CommentThreadContext
   ): GitPullRequestCommentThread = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("comments")(comments)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("pullRequestThreadContext")(pullRequestThreadContext)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("threadContext")(threadContext)
+    val __obj = js.Dynamic.literal(_links = _links, comments = comments, id = id, isDeleted = isDeleted, lastUpdatedDate = lastUpdatedDate, properties = properties, publishedDate = publishedDate, pullRequestThreadContext = pullRequestThreadContext, status = status, threadContext = threadContext)
+  
     __obj.asInstanceOf[GitPullRequestCommentThread]
   }
 }

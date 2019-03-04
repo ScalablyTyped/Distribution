@@ -19,9 +19,8 @@ object StylesheetCSS {
     css: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Node | cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.Edge,
     selector: java.lang.String
   ): StylesheetCSS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], selector = selector)
+  
     __obj.asInstanceOf[StylesheetCSS]
   }
 }

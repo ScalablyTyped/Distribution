@@ -24,8 +24,7 @@ object HTTPArgument {
     items: wpapiLib.Anon_Type = null,
     `type`: HTTPArgumentType = null
   ): HTTPArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("required")(required)
+    val __obj = js.Dynamic.literal(required = required)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (enum != null) __obj.updateDynamic("enum")(enum)

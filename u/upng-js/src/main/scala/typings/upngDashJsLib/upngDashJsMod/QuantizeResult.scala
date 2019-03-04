@@ -15,10 +15,8 @@ trait QuantizeResult extends js.Object {
 object QuantizeResult {
   @scala.inline
   def apply(abuf: stdLib.ArrayBuffer, inds: stdLib.Uint8Array, plte: js.Array[_]): QuantizeResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abuf")(abuf)
-    __obj.updateDynamic("inds")(inds)
-    __obj.updateDynamic("plte")(plte)
+    val __obj = js.Dynamic.literal(abuf = abuf, inds = inds, plte = plte)
+  
     __obj.asInstanceOf[QuantizeResult]
   }
 }

@@ -22,9 +22,7 @@ object RenameParams {
     fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
     success: js.Function0[scala.Unit] = null
   ): RenameParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newPath")(newPath)
-    __obj.updateDynamic("oldPath")(oldPath)
+    val __obj = js.Dynamic.literal(newPath = newPath, oldPath = oldPath)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

@@ -24,13 +24,8 @@ object Anon_EndpointCollection {
     ulX: scala.Double,
     ulY: scala.Double
   ): Anon_EndpointCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpointCollection")(endpointCollection)
-    __obj.updateDynamic("idxMinX")(idxMinX)
-    __obj.updateDynamic("idxMinY")(idxMinY)
-    __obj.updateDynamic("quadCollection")(quadCollection)
-    __obj.updateDynamic("ulX")(ulX)
-    __obj.updateDynamic("ulY")(ulY)
+    val __obj = js.Dynamic.literal(endpointCollection = endpointCollection, idxMinX = idxMinX, idxMinY = idxMinY, quadCollection = quadCollection, ulX = ulX, ulY = ulY)
+  
     __obj.asInstanceOf[Anon_EndpointCollection]
   }
 }

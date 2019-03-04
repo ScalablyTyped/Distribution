@@ -12,8 +12,8 @@ trait Anon_Explorer extends js.Object {
 object Anon_Explorer {
   @scala.inline
   def apply(Explorer: activexDashOutlookLib.OutlookNs.Explorer): Anon_Explorer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Explorer")(Explorer)
+    val __obj = js.Dynamic.literal(Explorer = Explorer)
+  
     __obj.asInstanceOf[Anon_Explorer]
   }
 }

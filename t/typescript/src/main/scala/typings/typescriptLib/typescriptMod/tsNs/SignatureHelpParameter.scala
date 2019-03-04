@@ -20,11 +20,8 @@ object SignatureHelpParameter {
     isOptional: scala.Boolean,
     name: java.lang.String
   ): SignatureHelpParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayParts")(displayParts)
-    __obj.updateDynamic("documentation")(documentation)
-    __obj.updateDynamic("isOptional")(isOptional)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(displayParts = displayParts, documentation = documentation, isOptional = isOptional, name = name)
+  
     __obj.asInstanceOf[SignatureHelpParameter]
   }
 }

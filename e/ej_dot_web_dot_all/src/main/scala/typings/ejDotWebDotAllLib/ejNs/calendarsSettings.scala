@@ -12,8 +12,8 @@ trait calendarsSettings extends js.Object {
 object calendarsSettings {
   @scala.inline
   def apply(standard: standardSettings): calendarsSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("standard")(standard)
+    val __obj = js.Dynamic.literal(standard = standard)
+  
     __obj.asInstanceOf[calendarsSettings]
   }
 }

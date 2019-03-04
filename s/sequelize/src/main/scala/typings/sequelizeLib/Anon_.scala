@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   var `!..`: js.Tuple2[scala.Double, scala.Double]
   @JSName("$between")
   var $between: (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date])
@@ -49,7 +49,7 @@ trait `Anon_` extends js.Object {
   var `@>`: js.Any
 }
 
-object `Anon_` {
+object Anon_ {
   @scala.inline
   def apply(
     `!..`: js.Tuple2[scala.Double, scala.Double],
@@ -75,27 +75,14 @@ object `Anon_` {
     `..`: js.Tuple2[scala.Double, scala.Double],
     `<@`: js.Any,
     `@>`: js.Any
-  ): `Anon_` = {
-    val __obj = js.Dynamic.literal(`!..` = `!..`, `&&` = `&&`, `..` = `..`, `<@` = `<@`, `@>` = `@>`)
-    __obj.updateDynamic("$between")($between.asInstanceOf[js.Any])
-    __obj.updateDynamic("$contained")($contained)
-    __obj.updateDynamic("$contains")($contains)
-    __obj.updateDynamic("$gt")($gt.asInstanceOf[js.Any])
-    __obj.updateDynamic("$gte")($gte.asInstanceOf[js.Any])
-    __obj.updateDynamic("$iLike")($iLike.asInstanceOf[js.Any])
-    __obj.updateDynamic("$ilike")($ilike.asInstanceOf[js.Any])
-    __obj.updateDynamic("$in")($in.asInstanceOf[js.Any])
-    __obj.updateDynamic("$like")($like.asInstanceOf[js.Any])
-    __obj.updateDynamic("$lt")($lt.asInstanceOf[js.Any])
-    __obj.updateDynamic("$lte")($lte.asInstanceOf[js.Any])
-    __obj.updateDynamic("$ne")($ne.asInstanceOf[js.Any])
-    __obj.updateDynamic("$not")($not.asInstanceOf[js.Any])
-    __obj.updateDynamic("$notBetween")($notBetween)
-    __obj.updateDynamic("$notILike")($notILike.asInstanceOf[js.Any])
-    __obj.updateDynamic("$notIn")($notIn.asInstanceOf[js.Any])
-    __obj.updateDynamic("$notLike")($notLike.asInstanceOf[js.Any])
-    __obj.updateDynamic("$overlap")($overlap.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`Anon_`]
+  ): Anon_ = {
+    val __obj = js.Dynamic.literal($between = $between.asInstanceOf[js.Any], $contained = $contained, $contains = $contains, $gt = $gt.asInstanceOf[js.Any], $gte = $gte.asInstanceOf[js.Any], $iLike = $iLike.asInstanceOf[js.Any], $ilike = $ilike.asInstanceOf[js.Any], $in = $in.asInstanceOf[js.Any], $like = $like.asInstanceOf[js.Any], $lt = $lt.asInstanceOf[js.Any], $lte = $lte.asInstanceOf[js.Any], $ne = $ne.asInstanceOf[js.Any], $not = $not.asInstanceOf[js.Any], $notBetween = $notBetween, $notILike = $notILike.asInstanceOf[js.Any], $notIn = $notIn.asInstanceOf[js.Any], $notLike = $notLike.asInstanceOf[js.Any], $overlap = $overlap.asInstanceOf[js.Any])
+    __obj.updateDynamic("!..")(`!..`)
+    __obj.updateDynamic("&&")(`&&`)
+    __obj.updateDynamic("..")(`..`)
+    __obj.updateDynamic("<@")(`<@`)
+    __obj.updateDynamic("@>")(`@>`)
+    __obj.asInstanceOf[Anon_]
   }
 }
 

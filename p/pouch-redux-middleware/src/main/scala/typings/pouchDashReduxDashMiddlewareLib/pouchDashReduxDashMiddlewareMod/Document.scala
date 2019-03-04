@@ -16,8 +16,7 @@ object Document {
     _id: js.Any,
     StringDictionary: /* field */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
+    val __obj = js.Dynamic.literal(_id = _id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Document]
   }

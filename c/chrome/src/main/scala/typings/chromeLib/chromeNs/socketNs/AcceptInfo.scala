@@ -13,8 +13,7 @@ trait AcceptInfo extends js.Object {
 object AcceptInfo {
   @scala.inline
   def apply(resultCode: scala.Double, socketId: scala.Int | scala.Double = null): AcceptInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resultCode")(resultCode)
+    val __obj = js.Dynamic.literal(resultCode = resultCode)
     if (socketId != null) __obj.updateDynamic("socketId")(socketId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInfo]
   }

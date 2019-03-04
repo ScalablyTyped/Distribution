@@ -45,13 +45,8 @@ object Anon_ActionType {
     ],
     onRestarted: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
   ): Anon_ActionType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActionType")(ActionType)
-    __obj.updateDynamic("LaunchSource")(LaunchSource)
-    __obj.updateDynamic("PlayStoreStatus")(PlayStoreStatus)
-    __obj.updateDynamic("onEmbedRequested")(onEmbedRequested)
-    __obj.updateDynamic("onLaunched")(onLaunched)
-    __obj.updateDynamic("onRestarted")(onRestarted)
+    val __obj = js.Dynamic.literal(ActionType = ActionType, LaunchSource = LaunchSource, PlayStoreStatus = PlayStoreStatus, onEmbedRequested = onEmbedRequested, onLaunched = onLaunched, onRestarted = onRestarted)
+  
     __obj.asInstanceOf[Anon_ActionType]
   }
 }

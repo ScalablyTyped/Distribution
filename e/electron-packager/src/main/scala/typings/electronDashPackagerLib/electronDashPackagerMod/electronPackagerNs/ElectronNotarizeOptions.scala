@@ -13,9 +13,8 @@ trait ElectronNotarizeOptions extends js.Object {
 object ElectronNotarizeOptions {
   @scala.inline
   def apply(appleId: java.lang.String, appleIdPassword: java.lang.String): ElectronNotarizeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appleId")(appleId)
-    __obj.updateDynamic("appleIdPassword")(appleIdPassword)
+    val __obj = js.Dynamic.literal(appleId = appleId, appleIdPassword = appleIdPassword)
+  
     __obj.asInstanceOf[ElectronNotarizeOptions]
   }
 }

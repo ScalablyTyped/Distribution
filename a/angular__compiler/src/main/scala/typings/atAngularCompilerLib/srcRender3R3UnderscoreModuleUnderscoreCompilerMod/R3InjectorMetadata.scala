@@ -22,10 +22,8 @@ object R3InjectorMetadata {
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null
   ): R3InjectorMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("providers")(providers)
+    val __obj = js.Dynamic.literal(imports = imports, name = name, providers = providers)
+    __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3InjectorMetadata]
   }

@@ -42,10 +42,7 @@ object ListenerArgs {
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sslPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ListenerArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
-    __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], loadBalancerArn = loadBalancerArn.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (sslPolicy != null) __obj.updateDynamic("sslPolicy")(sslPolicy.asInstanceOf[js.Any])

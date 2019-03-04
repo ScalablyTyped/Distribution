@@ -117,11 +117,7 @@ object histogramHistogramParams {
     valueExpression: java.lang.String = null,
     view: View = null
   ): histogramHistogramParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = propertyIsEnumerable)
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
     if (features != null) __obj.updateDynamic("features")(features)
     if (field != null) __obj.updateDynamic("field")(field)

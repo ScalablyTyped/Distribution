@@ -22,9 +22,7 @@ object Anon_Config {
     main: java.lang.String = null,
     `private`: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, version = version)
     if (config != null) __obj.updateDynamic("config")(config)
     if (main != null) __obj.updateDynamic("main")(main)
     if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)

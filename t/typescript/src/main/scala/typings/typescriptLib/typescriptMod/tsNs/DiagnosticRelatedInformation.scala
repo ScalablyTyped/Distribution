@@ -24,10 +24,7 @@ object DiagnosticRelatedInformation {
     length: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): DiagnosticRelatedInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(category = category, code = code, messageText = messageText.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

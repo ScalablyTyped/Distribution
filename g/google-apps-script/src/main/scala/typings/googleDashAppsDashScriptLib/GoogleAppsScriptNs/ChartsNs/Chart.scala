@@ -24,13 +24,8 @@ object Chart {
     getType: js.Function0[java.lang.String],
     setId: js.Function1[java.lang.String, Chart]
   ): Chart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAs")(getAs)
-    __obj.updateDynamic("getBlob")(getBlob)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setId")(setId)
+    val __obj = js.Dynamic.literal(getAs = getAs, getBlob = getBlob, getId = getId, getOptions = getOptions, getType = getType, setId = setId)
+  
     __obj.asInstanceOf[Chart]
   }
 }

@@ -41,13 +41,8 @@ object Lock {
     Timeout: scala.Double,
     Type: LockType
   ): Lock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Depth")(Depth)
-    __obj.updateDynamic("LockTokens")(LockTokens)
-    __obj.updateDynamic("Owner")(Owner)
-    __obj.updateDynamic("Scope")(Scope)
-    __obj.updateDynamic("Timeout")(Timeout)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Depth = Depth, LockTokens = LockTokens, Owner = Owner, Scope = Scope, Timeout = Timeout, Type = Type)
+  
     __obj.asInstanceOf[Lock]
   }
 }

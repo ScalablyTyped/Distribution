@@ -22,10 +22,7 @@ object Range {
     origEnd: scala.Int | scala.Double = null,
     origStart: scala.Int | scala.Double = null
   ): Range = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("isEmpty")(isEmpty)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, isEmpty = isEmpty, start = start)
     if (origEnd != null) __obj.updateDynamic("origEnd")(origEnd.asInstanceOf[js.Any])
     if (origStart != null) __obj.updateDynamic("origStart")(origStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Range]

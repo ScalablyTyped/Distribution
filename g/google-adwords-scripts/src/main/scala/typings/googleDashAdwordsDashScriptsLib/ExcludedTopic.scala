@@ -20,12 +20,8 @@ object ExcludedTopic {
     getTopicId: js.Function0[scala.Double],
     remove: js.Function0[scala.Unit]
   ): ExcludedTopic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAdGroup")(getAdGroup)
-    __obj.updateDynamic("getCampaign")(getCampaign)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTopicId")(getTopicId)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(getAdGroup = getAdGroup, getCampaign = getCampaign, getId = getId, getTopicId = getTopicId, remove = remove)
+  
     __obj.asInstanceOf[ExcludedTopic]
   }
 }

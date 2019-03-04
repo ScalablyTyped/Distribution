@@ -75,8 +75,8 @@ object predominance {
       arcgisDashJsDashApiLib.IPromise[predominanceRendererResult]
     ]
   ): predominance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createRenderer")(createRenderer)
+    val __obj = js.Dynamic.literal(createRenderer = createRenderer)
+  
     __obj.asInstanceOf[predominance]
   }
 }

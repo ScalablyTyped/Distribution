@@ -13,8 +13,7 @@ trait StrictOptions extends BaseOptions {
 object StrictOptions {
   @scala.inline
   def apply(strict: gitDashUsernameLib.gitDashUsernameLibNumbers.`true`, cwd: java.lang.String = null): StrictOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("strict")(strict)
+    val __obj = js.Dynamic.literal(strict = strict)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     __obj.asInstanceOf[StrictOptions]
   }

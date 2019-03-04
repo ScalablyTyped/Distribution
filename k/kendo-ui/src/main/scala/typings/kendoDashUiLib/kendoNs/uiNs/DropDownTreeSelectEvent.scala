@@ -17,10 +17,7 @@ object DropDownTreeSelectEvent {
     sender: DropDownTree,
     node: stdLib.Element = null
   ): DropDownTreeSelectEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (node != null) __obj.updateDynamic("node")(node)
     __obj.asInstanceOf[DropDownTreeSelectEvent]
   }

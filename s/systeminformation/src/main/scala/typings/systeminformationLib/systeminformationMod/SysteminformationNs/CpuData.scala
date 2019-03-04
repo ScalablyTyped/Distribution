@@ -38,20 +38,8 @@ object CpuData {
     stepping: java.lang.String,
     vendor: java.lang.String
   ): CpuData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cores")(cores)
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("manufacturer")(manufacturer)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("speedmax")(speedmax)
-    __obj.updateDynamic("speedmin")(speedmin)
-    __obj.updateDynamic("stepping")(stepping)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(brand = brand, cache = cache, cores = cores, family = family, flags = flags, manufacturer = manufacturer, model = model, revision = revision, speed = speed, speedmax = speedmax, speedmin = speedmin, stepping = stepping, vendor = vendor)
+  
     __obj.asInstanceOf[CpuData]
   }
 }

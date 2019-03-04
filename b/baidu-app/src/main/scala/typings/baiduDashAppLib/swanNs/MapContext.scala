@@ -31,12 +31,8 @@ object MapContext {
     moveToLocation: js.Function0[scala.Unit],
     translateMarker: js.Function1[TranslateMarkerOptions, scala.Unit]
   ): MapContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCenterLocation")(getCenterLocation)
-    __obj.updateDynamic("getRegion")(getRegion)
-    __obj.updateDynamic("includePoints")(includePoints)
-    __obj.updateDynamic("moveToLocation")(moveToLocation)
-    __obj.updateDynamic("translateMarker")(translateMarker)
+    val __obj = js.Dynamic.literal(getCenterLocation = getCenterLocation, getRegion = getRegion, includePoints = includePoints, moveToLocation = moveToLocation, translateMarker = translateMarker)
+  
     __obj.asInstanceOf[MapContext]
   }
 }

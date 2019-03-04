@@ -47,12 +47,8 @@ object FieldOptions {
     setFriendlyName: js.Function1[java.lang.String, scala.Unit],
     validateValue: js.Function2[js.Any, js.Any, js.Array[java.lang.String]]
   ): FieldOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addValidator")(addValidator)
-    __obj.updateDynamic("getFriendlyName")(getFriendlyName)
-    __obj.updateDynamic("getValidators")(getValidators)
-    __obj.updateDynamic("setFriendlyName")(setFriendlyName)
-    __obj.updateDynamic("validateValue")(validateValue)
+    val __obj = js.Dynamic.literal(addValidator = addValidator, getFriendlyName = getFriendlyName, getValidators = getValidators, setFriendlyName = setFriendlyName, validateValue = validateValue)
+  
     __obj.asInstanceOf[FieldOptions]
   }
 }

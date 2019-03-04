@@ -28,12 +28,7 @@ object IDelegateToSchemaOptions {
     skipValidation: js.UndefOr[scala.Boolean] = js.undefined,
     transforms: js.Array[Transform] = null
   ): IDelegateToSchemaOptions[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fieldName = fieldName, info = info, operation = operation, schema = schema)
     if (args != null) __obj.updateDynamic("args")(args)
     if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
     if (transforms != null) __obj.updateDynamic("transforms")(transforms)

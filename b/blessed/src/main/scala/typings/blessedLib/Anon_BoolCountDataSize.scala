@@ -30,16 +30,8 @@ object Anon_BoolCountDataSize {
     strCount: scala.Double,
     strTableSize: scala.Double
   ): Anon_BoolCountDataSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boolCount")(boolCount)
-    __obj.updateDynamic("dataSize")(dataSize)
-    __obj.updateDynamic("extended")(extended)
-    __obj.updateDynamic("headerSize")(headerSize)
-    __obj.updateDynamic("magicNumber")(magicNumber)
-    __obj.updateDynamic("namesSize")(namesSize)
-    __obj.updateDynamic("numCount")(numCount)
-    __obj.updateDynamic("strCount")(strCount)
-    __obj.updateDynamic("strTableSize")(strTableSize)
+    val __obj = js.Dynamic.literal(boolCount = boolCount, dataSize = dataSize, extended = extended, headerSize = headerSize, magicNumber = magicNumber, namesSize = namesSize, numCount = numCount, strCount = strCount, strTableSize = strTableSize)
+  
     __obj.asInstanceOf[Anon_BoolCountDataSize]
   }
 }

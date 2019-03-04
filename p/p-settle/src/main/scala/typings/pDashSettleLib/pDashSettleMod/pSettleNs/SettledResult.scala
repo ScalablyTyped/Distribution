@@ -17,9 +17,7 @@ trait SettledResult[T] extends js.Object {
 object SettledResult {
   @scala.inline
   def apply[T](isFulfilled: scala.Boolean, isRejected: scala.Boolean, reason: js.Any = null, value: T = null): SettledResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFulfilled")(isFulfilled)
-    __obj.updateDynamic("isRejected")(isRejected)
+    val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isRejected = isRejected)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettledResult[T]]

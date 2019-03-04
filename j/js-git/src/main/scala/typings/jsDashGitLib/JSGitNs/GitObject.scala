@@ -13,8 +13,8 @@ trait GitObject extends js.Object {
 object GitObject {
   @scala.inline
   def apply(body: js.Any, `type`: java.lang.String): GitObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GitObject]
   }
 }

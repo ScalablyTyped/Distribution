@@ -333,11 +333,7 @@ object TableProps {
     subRowHeightGetter: js.Function1[/* index */ scala.Double, scala.Double] = null,
     touchScrollEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): TableProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headerHeight")(headerHeight)
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("rowsCount")(rowsCount)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(headerHeight = headerHeight, rowHeight = rowHeight, rowsCount = rowsCount, width = width)
     if (bufferRowCount != null) __obj.updateDynamic("bufferRowCount")(bufferRowCount.asInstanceOf[js.Any])
     if (cellGroupWrapperHeight != null) __obj.updateDynamic("cellGroupWrapperHeight")(cellGroupWrapperHeight.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)

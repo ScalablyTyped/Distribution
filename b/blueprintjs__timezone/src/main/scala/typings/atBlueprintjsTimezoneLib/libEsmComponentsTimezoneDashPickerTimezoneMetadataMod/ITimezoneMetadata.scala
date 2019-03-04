@@ -22,10 +22,7 @@ object ITimezoneMetadata {
     abbreviation: java.lang.String = null,
     population: scala.Int | scala.Double = null
   ): ITimezoneMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("offsetAsString")(offsetAsString)
-    __obj.updateDynamic("timezone")(timezone)
+    val __obj = js.Dynamic.literal(offset = offset, offsetAsString = offsetAsString, timezone = timezone)
     if (abbreviation != null) __obj.updateDynamic("abbreviation")(abbreviation)
     if (population != null) __obj.updateDynamic("population")(population.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimezoneMetadata]

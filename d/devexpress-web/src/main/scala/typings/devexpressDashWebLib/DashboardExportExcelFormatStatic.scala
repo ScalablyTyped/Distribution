@@ -23,10 +23,8 @@ trait DashboardExportExcelFormatStatic extends js.Object {
 object DashboardExportExcelFormatStatic {
   @scala.inline
   def apply(Csv: java.lang.String, Xls: java.lang.String, Xlsx: java.lang.String): DashboardExportExcelFormatStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Csv")(Csv)
-    __obj.updateDynamic("Xls")(Xls)
-    __obj.updateDynamic("Xlsx")(Xlsx)
+    val __obj = js.Dynamic.literal(Csv = Csv, Xls = Xls, Xlsx = Xlsx)
+  
     __obj.asInstanceOf[DashboardExportExcelFormatStatic]
   }
 }

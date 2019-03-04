@@ -38,20 +38,8 @@ object ILocaleDateTimeFormatDescriptor {
     shortDate: java.lang.String,
     shortTime: java.lang.String
   ): ILocaleDateTimeFormatDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AMPMS")(AMPMS)
-    __obj.updateDynamic("DAY")(DAY)
-    __obj.updateDynamic("MONTH")(MONTH)
-    __obj.updateDynamic("SHORTDAY")(SHORTDAY)
-    __obj.updateDynamic("SHORTMONTH")(SHORTMONTH)
-    __obj.updateDynamic("fullDate")(fullDate)
-    __obj.updateDynamic("longDate")(longDate)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("mediumDate")(mediumDate)
-    __obj.updateDynamic("mediumTime")(mediumTime)
-    __obj.updateDynamic("short")(short)
-    __obj.updateDynamic("shortDate")(shortDate)
-    __obj.updateDynamic("shortTime")(shortTime)
+    val __obj = js.Dynamic.literal(AMPMS = AMPMS, DAY = DAY, MONTH = MONTH, SHORTDAY = SHORTDAY, SHORTMONTH = SHORTMONTH, fullDate = fullDate, longDate = longDate, medium = medium, mediumDate = mediumDate, mediumTime = mediumTime, short = short, shortDate = shortDate, shortTime = shortTime)
+  
     __obj.asInstanceOf[ILocaleDateTimeFormatDescriptor]
   }
 }

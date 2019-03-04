@@ -51,22 +51,8 @@ object IVaultNamedACLOperations {
     UpdateNamedACLAdmin: js.Function1[INamedACLAdmin, scala.Unit],
     UpdateNamedACLWithPropagationAdmin: js.Function3[INamedACLAdmin, scala.Boolean, scala.Boolean, scala.Unit]
   ): IVaultNamedACLOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddNamedACLAdmin")(AddNamedACLAdmin)
-    __obj.updateDynamic("GetMatchingNamedACLForAccessControlList")(GetMatchingNamedACLForAccessControlList)
-    __obj.updateDynamic("GetMatchingNamedACLForAccessControlListComponent")(GetMatchingNamedACLForAccessControlListComponent)
-    __obj.updateDynamic("GetNamedACL")(GetNamedACL)
-    __obj.updateDynamic("GetNamedACLAdmin")(GetNamedACLAdmin)
-    __obj.updateDynamic("GetNamedACLIDByAlias")(GetNamedACLIDByAlias)
-    __obj.updateDynamic("GetNamedACLIDByGUID")(GetNamedACLIDByGUID)
-    __obj.updateDynamic("GetNamedACLWithRefresh")(GetNamedACLWithRefresh)
-    __obj.updateDynamic("GetNamedACLs")(GetNamedACLs)
-    __obj.updateDynamic("GetNamedACLsByTypeAdmin")(GetNamedACLsByTypeAdmin)
-    __obj.updateDynamic("GetNamedACLsWithRefresh")(GetNamedACLsWithRefresh)
-    __obj.updateDynamic("IsNamedACLUsedInAutomaticPermissionsAdmin")(IsNamedACLUsedInAutomaticPermissionsAdmin)
-    __obj.updateDynamic("RemoveNamedACLWithPropagationAdmin")(RemoveNamedACLWithPropagationAdmin)
-    __obj.updateDynamic("UpdateNamedACLAdmin")(UpdateNamedACLAdmin)
-    __obj.updateDynamic("UpdateNamedACLWithPropagationAdmin")(UpdateNamedACLWithPropagationAdmin)
+    val __obj = js.Dynamic.literal(AddNamedACLAdmin = AddNamedACLAdmin, GetMatchingNamedACLForAccessControlList = GetMatchingNamedACLForAccessControlList, GetMatchingNamedACLForAccessControlListComponent = GetMatchingNamedACLForAccessControlListComponent, GetNamedACL = GetNamedACL, GetNamedACLAdmin = GetNamedACLAdmin, GetNamedACLIDByAlias = GetNamedACLIDByAlias, GetNamedACLIDByGUID = GetNamedACLIDByGUID, GetNamedACLWithRefresh = GetNamedACLWithRefresh, GetNamedACLs = GetNamedACLs, GetNamedACLsByTypeAdmin = GetNamedACLsByTypeAdmin, GetNamedACLsWithRefresh = GetNamedACLsWithRefresh, IsNamedACLUsedInAutomaticPermissionsAdmin = IsNamedACLUsedInAutomaticPermissionsAdmin, RemoveNamedACLWithPropagationAdmin = RemoveNamedACLWithPropagationAdmin, UpdateNamedACLAdmin = UpdateNamedACLAdmin, UpdateNamedACLWithPropagationAdmin = UpdateNamedACLWithPropagationAdmin)
+  
     __obj.asInstanceOf[IVaultNamedACLOperations]
   }
 }

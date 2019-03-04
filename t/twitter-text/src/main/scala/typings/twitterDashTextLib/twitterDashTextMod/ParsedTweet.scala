@@ -26,14 +26,8 @@ object ParsedTweet {
     validRangeStart: scala.Double,
     weightedLength: scala.Double
   ): ParsedTweet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayRangeEnd")(displayRangeEnd)
-    __obj.updateDynamic("displayRangeStart")(displayRangeStart)
-    __obj.updateDynamic("permillage")(permillage)
-    __obj.updateDynamic("valid")(valid)
-    __obj.updateDynamic("validRangeEnd")(validRangeEnd)
-    __obj.updateDynamic("validRangeStart")(validRangeStart)
-    __obj.updateDynamic("weightedLength")(weightedLength)
+    val __obj = js.Dynamic.literal(displayRangeEnd = displayRangeEnd, displayRangeStart = displayRangeStart, permillage = permillage, valid = valid, validRangeEnd = validRangeEnd, validRangeStart = validRangeStart, weightedLength = weightedLength)
+  
     __obj.asInstanceOf[ParsedTweet]
   }
 }

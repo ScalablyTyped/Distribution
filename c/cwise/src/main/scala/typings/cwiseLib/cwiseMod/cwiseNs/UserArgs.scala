@@ -26,9 +26,7 @@ object UserArgs {
     pre: js.Function2[/* a */ scala.Double, /* repeated */ js.Any, scala.Unit] = null,
     printCode: js.UndefOr[scala.Boolean] = js.undefined
   ): UserArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(args = args, body = body)
     if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
     if (funcName != null) __obj.updateDynamic("funcName")(funcName)
     if (post != null) __obj.updateDynamic("post")(post)

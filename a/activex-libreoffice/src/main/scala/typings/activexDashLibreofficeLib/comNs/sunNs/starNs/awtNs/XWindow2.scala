@@ -66,38 +66,8 @@ object XWindow2 {
     setPosSize: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
     setVisible: js.Function1[scala.Boolean, scala.Unit]
   ): XWindow2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputSize")(OutputSize)
-    __obj.updateDynamic("PosSize")(PosSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addFocusListener")(addFocusListener)
-    __obj.updateDynamic("addKeyListener")(addKeyListener)
-    __obj.updateDynamic("addMouseListener")(addMouseListener)
-    __obj.updateDynamic("addMouseMotionListener")(addMouseMotionListener)
-    __obj.updateDynamic("addPaintListener")(addPaintListener)
-    __obj.updateDynamic("addWindowListener")(addWindowListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getOutputSize")(getOutputSize)
-    __obj.updateDynamic("getPosSize")(getPosSize)
-    __obj.updateDynamic("hasFocus")(hasFocus)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeFocusListener")(removeFocusListener)
-    __obj.updateDynamic("removeKeyListener")(removeKeyListener)
-    __obj.updateDynamic("removeMouseListener")(removeMouseListener)
-    __obj.updateDynamic("removeMouseMotionListener")(removeMouseMotionListener)
-    __obj.updateDynamic("removePaintListener")(removePaintListener)
-    __obj.updateDynamic("removeWindowListener")(removeWindowListener)
-    __obj.updateDynamic("setEnable")(setEnable)
-    __obj.updateDynamic("setFocus")(setFocus)
-    __obj.updateDynamic("setOutputSize")(setOutputSize)
-    __obj.updateDynamic("setPosSize")(setPosSize)
-    __obj.updateDynamic("setVisible")(setVisible)
+    val __obj = js.Dynamic.literal(OutputSize = OutputSize, PosSize = PosSize, acquire = acquire, addEventListener = addEventListener, addFocusListener = addFocusListener, addKeyListener = addKeyListener, addMouseListener = addMouseListener, addMouseMotionListener = addMouseMotionListener, addPaintListener = addPaintListener, addWindowListener = addWindowListener, dispose = dispose, getOutputSize = getOutputSize, getPosSize = getPosSize, hasFocus = hasFocus, isActive = isActive, isEnabled = isEnabled, isVisible = isVisible, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeFocusListener = removeFocusListener, removeKeyListener = removeKeyListener, removeMouseListener = removeMouseListener, removeMouseMotionListener = removeMouseMotionListener, removePaintListener = removePaintListener, removeWindowListener = removeWindowListener, setEnable = setEnable, setFocus = setFocus, setOutputSize = setOutputSize, setPosSize = setPosSize, setVisible = setVisible)
+  
     __obj.asInstanceOf[XWindow2]
   }
 }

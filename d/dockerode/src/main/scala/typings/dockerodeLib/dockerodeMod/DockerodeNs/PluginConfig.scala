@@ -38,19 +38,7 @@ object PluginConfig {
     rootfs: js.Any,
     User: User = null
   ): PluginConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Args")(Args)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Documentation")(Documentation)
-    __obj.updateDynamic("Entrypoint")(Entrypoint)
-    __obj.updateDynamic("Env")(Env)
-    __obj.updateDynamic("Interface")(Interface)
-    __obj.updateDynamic("Linux")(Linux)
-    __obj.updateDynamic("Mounts")(Mounts)
-    __obj.updateDynamic("Network")(Network)
-    __obj.updateDynamic("PropagatedMount")(PropagatedMount)
-    __obj.updateDynamic("WorkDir")(WorkDir)
-    __obj.updateDynamic("rootfs")(rootfs)
+    val __obj = js.Dynamic.literal(Args = Args, Description = Description, Documentation = Documentation, Entrypoint = Entrypoint, Env = Env, Interface = Interface, Linux = Linux, Mounts = Mounts, Network = Network, PropagatedMount = PropagatedMount, WorkDir = WorkDir, rootfs = rootfs)
     if (User != null) __obj.updateDynamic("User")(User)
     __obj.asInstanceOf[PluginConfig]
   }

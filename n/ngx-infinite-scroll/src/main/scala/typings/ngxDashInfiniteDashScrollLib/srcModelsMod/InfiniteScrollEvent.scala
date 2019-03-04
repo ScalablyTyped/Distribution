@@ -12,8 +12,8 @@ trait InfiniteScrollEvent extends js.Object {
 object InfiniteScrollEvent {
   @scala.inline
   def apply(currentScrollPosition: scala.Double): InfiniteScrollEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentScrollPosition")(currentScrollPosition)
+    val __obj = js.Dynamic.literal(currentScrollPosition = currentScrollPosition)
+  
     __obj.asInstanceOf[InfiniteScrollEvent]
   }
 }

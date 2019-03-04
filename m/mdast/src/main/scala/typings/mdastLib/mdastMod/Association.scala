@@ -13,8 +13,7 @@ trait Association extends js.Object {
 object Association {
   @scala.inline
   def apply(identifier: java.lang.String, label: java.lang.String = null): Association = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[Association]
   }

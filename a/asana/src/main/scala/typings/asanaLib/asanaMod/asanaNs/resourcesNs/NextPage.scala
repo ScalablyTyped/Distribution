@@ -14,10 +14,8 @@ trait NextPage extends js.Object {
 object NextPage {
   @scala.inline
   def apply(offset: java.lang.String, path: java.lang.String, uri: java.lang.String): NextPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(offset = offset, path = path, uri = uri)
+  
     __obj.asInstanceOf[NextPage]
   }
 }

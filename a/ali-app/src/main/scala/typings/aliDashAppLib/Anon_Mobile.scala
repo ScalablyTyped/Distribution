@@ -14,9 +14,8 @@ trait Anon_Mobile extends js.Object {
 object Anon_Mobile {
   @scala.inline
   def apply(mobile: java.lang.String, name: java.lang.String): Anon_Mobile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mobile")(mobile)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mobile = mobile, name = name)
+  
     __obj.asInstanceOf[Anon_Mobile]
   }
 }

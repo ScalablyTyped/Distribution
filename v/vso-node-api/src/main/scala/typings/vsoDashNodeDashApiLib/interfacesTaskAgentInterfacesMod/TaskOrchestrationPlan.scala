@@ -42,26 +42,8 @@ object TaskOrchestrationPlan {
     timeline: TimelineReference,
     version: scala.Double
   ): TaskOrchestrationPlan = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactLocation")(artifactLocation)
-    __obj.updateDynamic("artifactUri")(artifactUri)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("environment")(environment)
-    __obj.updateDynamic("finishTime")(finishTime)
-    __obj.updateDynamic("implementation")(implementation)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("planGroup")(planGroup)
-    __obj.updateDynamic("planId")(planId)
-    __obj.updateDynamic("planType")(planType)
-    __obj.updateDynamic("requestedById")(requestedById)
-    __obj.updateDynamic("requestedForId")(requestedForId)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("resultCode")(resultCode)
-    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("timeline")(timeline)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation, artifactUri = artifactUri, definition = definition, environment = environment, finishTime = finishTime, implementation = implementation, owner = owner, planGroup = planGroup, planId = planId, planType = planType, requestedById = requestedById, requestedForId = requestedForId, result = result, resultCode = resultCode, scopeIdentifier = scopeIdentifier, startTime = startTime, state = state, timeline = timeline, version = version)
+  
     __obj.asInstanceOf[TaskOrchestrationPlan]
   }
 }

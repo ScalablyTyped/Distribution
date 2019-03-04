@@ -26,13 +26,7 @@ object LogDescriptor {
     v: scala.Double,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): LogDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(hostname = hostname, level = level, msg = msg, pid = pid, time = time, v = v)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[LogDescriptor]
   }

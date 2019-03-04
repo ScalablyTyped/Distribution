@@ -23,10 +23,8 @@ trait GlobalGitRepositoryKey extends js.Object {
 object GlobalGitRepositoryKey {
   @scala.inline
   def apply(collectionId: java.lang.String, projectId: java.lang.String, repositoryId: java.lang.String): GlobalGitRepositoryKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collectionId")(collectionId)
-    __obj.updateDynamic("projectId")(projectId)
-    __obj.updateDynamic("repositoryId")(repositoryId)
+    val __obj = js.Dynamic.literal(collectionId = collectionId, projectId = projectId, repositoryId = repositoryId)
+  
     __obj.asInstanceOf[GlobalGitRepositoryKey]
   }
 }

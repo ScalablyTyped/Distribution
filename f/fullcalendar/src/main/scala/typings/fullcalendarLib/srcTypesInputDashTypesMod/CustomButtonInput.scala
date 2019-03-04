@@ -24,9 +24,7 @@ object CustomButtonInput {
     icon: java.lang.String = null,
     themeIcon: java.lang.String = null
   ): CustomButtonInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(click = click, text = text)
     if (bootstrapFontAwesome != null) __obj.updateDynamic("bootstrapFontAwesome")(bootstrapFontAwesome)
     if (bootstrapGlyphicon != null) __obj.updateDynamic("bootstrapGlyphicon")(bootstrapGlyphicon)
     if (icon != null) __obj.updateDynamic("icon")(icon)

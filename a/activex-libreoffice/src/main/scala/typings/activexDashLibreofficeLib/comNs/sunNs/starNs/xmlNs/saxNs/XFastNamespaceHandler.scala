@@ -21,12 +21,8 @@ object XFastNamespaceHandler {
     registerNamespace: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     release: js.Function0[scala.Unit]
   ): XFastNamespaceHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getNamespaceURI")(getNamespaceURI)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerNamespace")(registerNamespace)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getNamespaceURI = getNamespaceURI, queryInterface = queryInterface, registerNamespace = registerNamespace, release = release)
+  
     __obj.asInstanceOf[XFastNamespaceHandler]
   }
 }

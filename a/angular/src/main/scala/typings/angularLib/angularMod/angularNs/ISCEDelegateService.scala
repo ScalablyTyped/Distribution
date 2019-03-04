@@ -22,10 +22,8 @@ object ISCEDelegateService {
     trustAs: js.Function2[java.lang.String, js.Any, js.Any],
     valueOf: js.Function1[js.Any, js.Any]
   ): ISCEDelegateService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTrusted")(getTrusted)
-    __obj.updateDynamic("trustAs")(trustAs)
-    __obj.updateDynamic("valueOf")(valueOf)
+    val __obj = js.Dynamic.literal(getTrusted = getTrusted, trustAs = trustAs, valueOf = valueOf)
+  
     __obj.asInstanceOf[ISCEDelegateService]
   }
 }

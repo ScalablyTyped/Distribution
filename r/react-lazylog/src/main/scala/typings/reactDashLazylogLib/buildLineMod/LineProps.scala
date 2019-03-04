@@ -34,10 +34,7 @@ object LineProps {
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): LineProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("rowHeight")(rowHeight)
+    val __obj = js.Dynamic.literal(data = data, number = number, rowHeight = rowHeight)
     if (formatPart != null) __obj.updateDynamic("formatPart")(formatPart)
     if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
     if (onLineNumberClick != null) __obj.updateDynamic("onLineNumberClick")(onLineNumberClick)

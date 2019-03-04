@@ -60,15 +60,8 @@ object FunctionScoreQuery {
     scoreMode: js.Function1[java.lang.String, FunctionScoreQuery],
     toJSON: js.Function0[js.Any]
   ): FunctionScoreQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("boostMode")(boostMode)
-    __obj.updateDynamic("filter")(filter)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scoreMode")(scoreMode)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, boostMode = boostMode, filter = filter, functions = functions, query = query, scoreMode = scoreMode, toJSON = toJSON)
+  
     __obj.asInstanceOf[FunctionScoreQuery]
   }
 }

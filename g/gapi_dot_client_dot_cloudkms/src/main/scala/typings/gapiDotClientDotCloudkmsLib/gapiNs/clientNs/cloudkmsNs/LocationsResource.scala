@@ -26,10 +26,8 @@ object LocationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListLocationsResponse]
     ]
   ): LocationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("keyRings")(keyRings)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(get = get, keyRings = keyRings, list = list)
+  
     __obj.asInstanceOf[LocationsResource]
   }
 }

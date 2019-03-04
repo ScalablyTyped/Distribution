@@ -24,10 +24,8 @@ object RowChangeEvent {
     Rows: scala.Double,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): RowChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Rows")(Rows)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(Action = Action, Rows = Rows, Source = Source)
+  
     __obj.asInstanceOf[RowChangeEvent]
   }
 }

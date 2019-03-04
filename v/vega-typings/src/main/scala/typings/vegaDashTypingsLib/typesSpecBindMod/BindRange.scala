@@ -25,8 +25,7 @@ object BindRange {
     step: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): BindRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
+    val __obj = js.Dynamic.literal(input = input)
     if (debounce != null) __obj.updateDynamic("debounce")(debounce.asInstanceOf[js.Any])
     if (element != null) __obj.updateDynamic("element")(element)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

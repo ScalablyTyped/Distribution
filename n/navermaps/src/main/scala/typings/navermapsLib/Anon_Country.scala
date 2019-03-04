@@ -22,12 +22,8 @@ object Anon_Country {
     sido: java.lang.String,
     sigugun: java.lang.String
   ): Anon_Country = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("dongmyun")(dongmyun)
-    __obj.updateDynamic("rest")(rest)
-    __obj.updateDynamic("sido")(sido)
-    __obj.updateDynamic("sigugun")(sigugun)
+    val __obj = js.Dynamic.literal(country = country, dongmyun = dongmyun, rest = rest, sido = sido, sigugun = sigugun)
+  
     __obj.asInstanceOf[Anon_Country]
   }
 }

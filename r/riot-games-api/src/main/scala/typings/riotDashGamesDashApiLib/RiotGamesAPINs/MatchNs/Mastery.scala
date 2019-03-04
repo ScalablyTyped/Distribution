@@ -13,9 +13,8 @@ trait Mastery extends js.Object {
 object Mastery {
   @scala.inline
   def apply(masteryId: scala.Double, rank: scala.Double): Mastery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("masteryId")(masteryId)
-    __obj.updateDynamic("rank")(rank)
+    val __obj = js.Dynamic.literal(masteryId = masteryId, rank = rank)
+  
     __obj.asInstanceOf[Mastery]
   }
 }

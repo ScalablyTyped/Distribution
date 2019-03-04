@@ -107,23 +107,8 @@ object UserDetails {
     userQueries: js.Array[JobQueryContainer],
     zipCode: java.lang.String
   ): UserDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("faxNumber")(faxNumber)
-    __obj.updateDynamic("firstName")(firstName)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("lastName")(lastName)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("privileges")(privileges)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("roomNumber")(roomNumber)
-    __obj.updateDynamic("userName")(userName)
-    __obj.updateDynamic("userQueries")(userQueries)
-    __obj.updateDynamic("zipCode")(zipCode)
+    val __obj = js.Dynamic.literal(address = address, constructor = constructor, email = email, faxNumber = faxNumber, firstName = firstName, fullName = fullName, groups = groups, hasOwnProperty = hasOwnProperty, lastName = lastName, phoneNumber = phoneNumber, privileges = privileges, propertyIsEnumerable = propertyIsEnumerable, roomNumber = roomNumber, userName = userName, userQueries = userQueries, zipCode = zipCode)
+  
     __obj.asInstanceOf[UserDetails]
   }
 }

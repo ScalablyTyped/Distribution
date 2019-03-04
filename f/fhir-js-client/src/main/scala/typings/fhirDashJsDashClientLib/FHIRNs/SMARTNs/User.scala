@@ -18,8 +18,8 @@ trait User extends js.Object {
 object User {
   @scala.inline
   def apply(read: js.Function0[js.Promise[Response]]): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(read = read)
+  
     __obj.asInstanceOf[User]
   }
 }

@@ -13,9 +13,8 @@ trait DrawerItem extends js.Object {
 object DrawerItem {
   @scala.inline
   def apply(focused: scala.Boolean, route: NavigationRoute[NavigationParams]): DrawerItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(focused = focused, route = route.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[DrawerItem]
   }
 }

@@ -19,10 +19,8 @@ object Anon_Container {
     offset: scala.Double,
     speed: scala.Double
   ): Anon_Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$container")($container)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("speed")(speed)
+    val __obj = js.Dynamic.literal($container = $container, offset = offset, speed = speed)
+  
     __obj.asInstanceOf[Anon_Container]
   }
 }

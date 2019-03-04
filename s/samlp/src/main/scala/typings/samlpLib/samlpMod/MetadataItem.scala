@@ -20,11 +20,8 @@ object MetadataItem {
     id: java.lang.String,
     optional: scala.Boolean
   ): MetadataItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(description = description, displayName = displayName, id = id, optional = optional)
+  
     __obj.asInstanceOf[MetadataItem]
   }
 }

@@ -31,15 +31,8 @@ object XHatchWindow {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     setController: js.Function1[XHatchWindowController, scala.Unit]
   ): XHatchWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HatchBorderSize")(HatchBorderSize)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setController")(setController)
+    val __obj = js.Dynamic.literal(HatchBorderSize = HatchBorderSize, acquire = acquire, addEventListener = addEventListener, dispose = dispose, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setController = setController)
+  
     __obj.asInstanceOf[XHatchWindow]
   }
 }

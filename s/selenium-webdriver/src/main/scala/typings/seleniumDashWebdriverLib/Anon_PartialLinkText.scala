@@ -13,8 +13,8 @@ trait Anon_PartialLinkText
 object Anon_PartialLinkText {
   @scala.inline
   def apply(partialLinkText: java.lang.String): Anon_PartialLinkText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partialLinkText")(partialLinkText)
+    val __obj = js.Dynamic.literal(partialLinkText = partialLinkText)
+  
     __obj.asInstanceOf[Anon_PartialLinkText]
   }
 }

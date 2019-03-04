@@ -99,19 +99,8 @@ object XFastParser {
     setNamespaceHandler: js.Function1[XFastNamespaceHandler, scala.Unit],
     setTokenHandler: js.Function1[XFastTokenHandler, scala.Unit]
   ): XFastParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getNamespaceURL")(getNamespaceURL)
-    __obj.updateDynamic("parseStream")(parseStream)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerNamespace")(registerNamespace)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setEntityResolver")(setEntityResolver)
-    __obj.updateDynamic("setErrorHandler")(setErrorHandler)
-    __obj.updateDynamic("setFastDocumentHandler")(setFastDocumentHandler)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("setNamespaceHandler")(setNamespaceHandler)
-    __obj.updateDynamic("setTokenHandler")(setTokenHandler)
+    val __obj = js.Dynamic.literal(acquire = acquire, getNamespaceURL = getNamespaceURL, parseStream = parseStream, queryInterface = queryInterface, registerNamespace = registerNamespace, release = release, setEntityResolver = setEntityResolver, setErrorHandler = setErrorHandler, setFastDocumentHandler = setFastDocumentHandler, setLocale = setLocale, setNamespaceHandler = setNamespaceHandler, setTokenHandler = setTokenHandler)
+  
     __obj.asInstanceOf[XFastParser]
   }
 }

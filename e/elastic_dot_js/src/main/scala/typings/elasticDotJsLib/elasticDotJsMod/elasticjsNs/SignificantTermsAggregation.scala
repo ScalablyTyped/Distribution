@@ -91,19 +91,8 @@ object SignificantTermsAggregation {
     size: js.Function1[scala.Double, SignificantTermsAggregation],
     toJSON: js.Function0[js.Any]
   ): SignificantTermsAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("agg")(agg)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("executionHint")(executionHint)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("include")(include)
-    __obj.updateDynamic("minDocCount")(minDocCount)
-    __obj.updateDynamic("shardSize")(shardSize)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, agg = agg, aggregation = aggregation, exclude = exclude, executionHint = executionHint, field = field, format = format, include = include, minDocCount = minDocCount, shardSize = shardSize, size = size, toJSON = toJSON)
+  
     __obj.asInstanceOf[SignificantTermsAggregation]
   }
 }

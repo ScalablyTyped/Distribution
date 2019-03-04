@@ -82,40 +82,8 @@ object IShellListing {
     SumOfResultCounts: scala.Double,
     UnselectAll: js.Function0[scala.Unit]
   ): IShellListing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActivateListing")(ActivateListing)
-    __obj.updateDynamic("ActivateSelected")(ActivateSelected)
-    __obj.updateDynamic("AutoFitAllColumns")(AutoFitAllColumns)
-    __obj.updateDynamic("AutoFitFirstColumn")(AutoFitFirstColumn)
-    __obj.updateDynamic("ColumnHeadersVisible")(ColumnHeadersVisible)
-    __obj.updateDynamic("CurrentPath")(CurrentPath)
-    __obj.updateDynamic("CurrentSelection")(CurrentSelection)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("GroupObjectsByObjectType")(GroupObjectsByObjectType)
-    __obj.updateDynamic("GroupViewsAndFolders")(GroupViewsAndFolders)
-    __obj.updateDynamic("IsActive")(IsActive)
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("RefreshListing")(RefreshListing)
-    __obj.updateDynamic("RefreshListingAsync")(RefreshListingAsync)
-    __obj.updateDynamic("RefreshObject")(RefreshObject)
-    __obj.updateDynamic("RefreshSelectedObjects")(RefreshSelectedObjects)
-    __obj.updateDynamic("SelectFolder")(SelectFolder)
-    __obj.updateDynamic("SelectNextFolder")(SelectNextFolder)
-    __obj.updateDynamic("SelectNextObject")(SelectNextObject)
-    __obj.updateDynamic("SelectNextObjectFile")(SelectNextObjectFile)
-    __obj.updateDynamic("SelectObjectFile")(SelectObjectFile)
-    __obj.updateDynamic("SelectObjectOrObjectFileVersion")(SelectObjectOrObjectFileVersion)
-    __obj.updateDynamic("SelectObjectVersion")(SelectObjectVersion)
-    __obj.updateDynamic("SelectPrevFolder")(SelectPrevFolder)
-    __obj.updateDynamic("SelectPrevObject")(SelectPrevObject)
-    __obj.updateDynamic("SelectPrevObjectFile")(SelectPrevObjectFile)
-    __obj.updateDynamic("SetFolderSelectionStates")(SetFolderSelectionStates)
-    __obj.updateDynamic("SetObjectOrObjectFileVersionSelectionStates")(SetObjectOrObjectFileVersionSelectionStates)
-    __obj.updateDynamic("SetObjectVersionSelectionStates")(SetObjectVersionSelectionStates)
-    __obj.updateDynamic("SetTheme")(SetTheme)
-    __obj.updateDynamic("SetVirtualSelection")(SetVirtualSelection)
-    __obj.updateDynamic("SumOfResultCounts")(SumOfResultCounts)
-    __obj.updateDynamic("UnselectAll")(UnselectAll)
+    val __obj = js.Dynamic.literal(ActivateListing = ActivateListing, ActivateSelected = ActivateSelected, AutoFitAllColumns = AutoFitAllColumns, AutoFitFirstColumn = AutoFitFirstColumn, ColumnHeadersVisible = ColumnHeadersVisible, CurrentPath = CurrentPath, CurrentSelection = CurrentSelection, Events = Events, GroupObjectsByObjectType = GroupObjectsByObjectType, GroupViewsAndFolders = GroupViewsAndFolders, IsActive = IsActive, Items = Items, RefreshListing = RefreshListing, RefreshListingAsync = RefreshListingAsync, RefreshObject = RefreshObject, RefreshSelectedObjects = RefreshSelectedObjects, SelectFolder = SelectFolder, SelectNextFolder = SelectNextFolder, SelectNextObject = SelectNextObject, SelectNextObjectFile = SelectNextObjectFile, SelectObjectFile = SelectObjectFile, SelectObjectOrObjectFileVersion = SelectObjectOrObjectFileVersion, SelectObjectVersion = SelectObjectVersion, SelectPrevFolder = SelectPrevFolder, SelectPrevObject = SelectPrevObject, SelectPrevObjectFile = SelectPrevObjectFile, SetFolderSelectionStates = SetFolderSelectionStates, SetObjectOrObjectFileVersionSelectionStates = SetObjectOrObjectFileVersionSelectionStates, SetObjectVersionSelectionStates = SetObjectVersionSelectionStates, SetTheme = SetTheme, SetVirtualSelection = SetVirtualSelection, SumOfResultCounts = SumOfResultCounts, UnselectAll = UnselectAll)
+  
     __obj.asInstanceOf[IShellListing]
   }
 }

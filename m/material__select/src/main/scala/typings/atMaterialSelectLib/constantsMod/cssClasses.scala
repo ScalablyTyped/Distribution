@@ -19,10 +19,8 @@ object cssClasses {
     DISABLED: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select--disabled`,
     ROOT: atMaterialSelectLib.atMaterialSelectLibStrings.`mdc-select`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOX")(BOX)
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(BOX = BOX, DISABLED = DISABLED, ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

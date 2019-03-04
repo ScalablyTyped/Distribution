@@ -44,8 +44,7 @@ object Props {
     ],
     as: Format = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(onChange = onChange)
     if (as != null) __obj.updateDynamic("as")(as)
     __obj.asInstanceOf[Props]
   }

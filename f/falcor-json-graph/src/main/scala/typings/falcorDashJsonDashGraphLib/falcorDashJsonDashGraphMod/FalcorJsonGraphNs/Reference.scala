@@ -18,9 +18,7 @@ object Reference {
     value: Path,
     $expires: scala.Int | scala.Double = null
   ): Reference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal($type = $type, value = value)
     if ($expires != null) __obj.updateDynamic("$expires")($expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }

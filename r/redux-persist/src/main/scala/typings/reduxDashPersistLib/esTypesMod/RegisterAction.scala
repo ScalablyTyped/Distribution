@@ -16,8 +16,8 @@ object RegisterAction {
     key: java.lang.String,
     `type`: reduxDashPersistLib.reduxDashPersistLibStrings.`redux-persist/es/REGISTER`
   ): RegisterAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RegisterAction]
   }
 }

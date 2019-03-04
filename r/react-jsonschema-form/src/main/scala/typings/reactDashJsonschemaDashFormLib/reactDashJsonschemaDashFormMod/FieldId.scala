@@ -13,8 +13,8 @@ trait FieldId extends js.Object {
 object FieldId {
   @scala.inline
   def apply($id: java.lang.String): FieldId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$id")($id)
+    val __obj = js.Dynamic.literal($id = $id)
+  
     __obj.asInstanceOf[FieldId]
   }
 }

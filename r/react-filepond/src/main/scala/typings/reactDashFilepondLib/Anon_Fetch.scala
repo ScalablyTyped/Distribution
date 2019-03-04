@@ -22,12 +22,8 @@ object Anon_Fetch {
     restore: java.lang.String | reactDashFilepondLib.reactDashFilepondMod.ServerUrl,
     revert: java.lang.String | reactDashFilepondLib.reactDashFilepondMod.ServerUrl
   ): Anon_Fetch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fetch")(fetch.asInstanceOf[js.Any])
-    __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    __obj.updateDynamic("restore")(restore.asInstanceOf[js.Any])
-    __obj.updateDynamic("revert")(revert.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fetch = fetch.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], restore = restore.asInstanceOf[js.Any], revert = revert.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Fetch]
   }
 }

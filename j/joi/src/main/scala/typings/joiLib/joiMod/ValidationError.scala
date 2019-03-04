@@ -24,13 +24,7 @@ object ValidationError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_object")(_object)
-    __obj.updateDynamic("annotate")(annotate)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("isJoi")(isJoi)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(_object = _object, annotate = annotate, details = details, isJoi = isJoi, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[ValidationError]
   }

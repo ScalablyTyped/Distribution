@@ -20,10 +20,7 @@ object MutationStoreValue {
     variables: js.Object,
     error: stdLib.Error = null
   ): MutationStoreValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loading")(loading)
-    __obj.updateDynamic("mutation")(mutation)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(loading = loading, mutation = mutation, variables = variables)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[MutationStoreValue]
   }

@@ -32,16 +32,8 @@ object WorkItemBehavior {
     rank: scala.Double,
     url: java.lang.String
   ): WorkItemBehavior = {
-    val __obj = js.Dynamic.literal(`abstract` = `abstract`)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherits")(inherits)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("overriden")(overriden)
-    __obj.updateDynamic("rank")(rank)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(color = color, description = description, fields = fields, id = id, inherits = inherits, name = name, overriden = overriden, rank = rank, url = url)
+    __obj.updateDynamic("abstract")(`abstract`)
     __obj.asInstanceOf[WorkItemBehavior]
   }
 }

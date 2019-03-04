@@ -40,10 +40,8 @@ object Connection {
     ],
     get: js.Function2[java.lang.String, java.lang.String, sharedbLib.libSharedbMod.Doc]
   ): Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFetchQuery")(createFetchQuery)
-    __obj.updateDynamic("createSubscribeQuery")(createSubscribeQuery)
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(createFetchQuery = createFetchQuery, createSubscribeQuery = createSubscribeQuery, get = get)
+  
     __obj.asInstanceOf[Connection]
   }
 }

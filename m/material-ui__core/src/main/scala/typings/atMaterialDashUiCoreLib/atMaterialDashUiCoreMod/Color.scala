@@ -40,11 +40,17 @@ object Color {
     A400: java.lang.String,
     A700: java.lang.String
   ): Color = {
-    val __obj = js.Dynamic.literal(`100` = `100`, `200` = `200`, `300` = `300`, `400` = `400`, `50` = `50`, `500` = `500`, `600` = `600`, `700` = `700`, `800` = `800`, `900` = `900`)
-    __obj.updateDynamic("A100")(A100)
-    __obj.updateDynamic("A200")(A200)
-    __obj.updateDynamic("A400")(A400)
-    __obj.updateDynamic("A700")(A700)
+    val __obj = js.Dynamic.literal(A100 = A100, A200 = A200, A400 = A400, A700 = A700)
+    __obj.updateDynamic("100")(`100`)
+    __obj.updateDynamic("200")(`200`)
+    __obj.updateDynamic("300")(`300`)
+    __obj.updateDynamic("400")(`400`)
+    __obj.updateDynamic("50")(`50`)
+    __obj.updateDynamic("500")(`500`)
+    __obj.updateDynamic("600")(`600`)
+    __obj.updateDynamic("700")(`700`)
+    __obj.updateDynamic("800")(`800`)
+    __obj.updateDynamic("900")(`900`)
     __obj.asInstanceOf[Color]
   }
 }

@@ -18,10 +18,8 @@ object Anon_Coefficients {
     expression: mathjsLib.mathjsMod.mathNs.MathNode | java.lang.String,
     variables: js.Array[java.lang.String]
   ): Anon_Coefficients = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("coefficients")(coefficients)
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(coefficients = coefficients, expression = expression.asInstanceOf[js.Any], variables = variables)
+  
     __obj.asInstanceOf[Anon_Coefficients]
   }
 }

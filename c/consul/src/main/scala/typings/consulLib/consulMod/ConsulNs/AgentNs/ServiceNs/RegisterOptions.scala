@@ -35,8 +35,7 @@ object RegisterOptions {
     wait: java.lang.String = null,
     wan: js.UndefOr[scala.Boolean] = js.undefined
   ): RegisterOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (address != null) __obj.updateDynamic("address")(address)
     if (check != null) __obj.updateDynamic("check")(check)
     if (checks != null) __obj.updateDynamic("checks")(checks)

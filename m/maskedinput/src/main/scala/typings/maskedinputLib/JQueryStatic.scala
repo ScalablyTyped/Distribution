@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(mask: MaskedInputStatic): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mask")(mask)
+    val __obj = js.Dynamic.literal(mask = mask)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

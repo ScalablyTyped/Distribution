@@ -12,8 +12,8 @@ trait CommandA7[R, T, U, V, W, X, Y, Z] extends js.Object {
 object CommandA7 {
   @scala.inline
   def apply[R, T, U, V, W, X, Y, Z](execute: js.Function7[T, U, V, W, X, Y, Z, js.Thenable[R]]): CommandA7[R, T, U, V, W, X, Y, Z] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[CommandA7[R, T, U, V, W, X, Y, Z]]
   }
 }

@@ -39,20 +39,7 @@ object ojColorPaletteSettableProperties {
     describedBy: java.lang.String = null,
     labelledBy: java.lang.String = null
   ): ojColorPaletteSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("displayOptions")(displayOptions)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("helpHints")(helpHints)
-    __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
-    __obj.updateDynamic("labelHint")(labelHint)
-    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.updateDynamic("messagesCustom")(messagesCustom)
-    __obj.updateDynamic("palette")(palette)
-    __obj.updateDynamic("swatchSize")(swatchSize.asInstanceOf[js.Any])
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(disabled = disabled, displayOptions = displayOptions, help = help, helpHints = helpHints, labelDisplay = labelDisplay.asInstanceOf[js.Any], labelHint = labelHint, layout = layout.asInstanceOf[js.Any], messagesCustom = messagesCustom, palette = palette, swatchSize = swatchSize.asInstanceOf[js.Any], translations = translations, valid = valid.asInstanceOf[js.Any], value = value)
     if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
     if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
     __obj.asInstanceOf[ojColorPaletteSettableProperties]

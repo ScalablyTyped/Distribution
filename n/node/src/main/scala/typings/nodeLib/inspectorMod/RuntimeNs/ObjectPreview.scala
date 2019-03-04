@@ -46,9 +46,8 @@ object ObjectPreview {
     entries: js.Array[EntryPreview] = null,
     subtype: java.lang.String = null
   ): ObjectPreview = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("overflow")(overflow)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(overflow = overflow, properties = properties)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (entries != null) __obj.updateDynamic("entries")(entries)
     if (subtype != null) __obj.updateDynamic("subtype")(subtype)

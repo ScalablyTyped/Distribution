@@ -18,10 +18,8 @@ object PolicyDocument {
     expiration: java.lang.String,
     string: java.lang.String
   ): PolicyDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("expiration")(expiration)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(conditions = conditions, expiration = expiration, string = string)
+  
     __obj.asInstanceOf[PolicyDocument]
   }
 }

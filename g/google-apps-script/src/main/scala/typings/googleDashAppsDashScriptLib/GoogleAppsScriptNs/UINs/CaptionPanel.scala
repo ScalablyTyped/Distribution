@@ -67,31 +67,8 @@ object CaptionPanel {
     setWidget: js.Function1[Widget, CaptionPanel],
     setWidth: js.Function1[java.lang.String, CaptionPanel]
   ): CaptionPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setCaptionText")(setCaptionText)
-    __obj.updateDynamic("setContentWidget")(setContentWidget)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setLayoutData")(setLayoutData)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setWidget")(setWidget)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(add = add, addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, clear = clear, getId = getId, getTag = getTag, getType = getType, setCaptionText = setCaptionText, setContentWidget = setContentWidget, setHeight = setHeight, setId = setId, setLayoutData = setLayoutData, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidget = setWidget, setWidth = setWidth)
+  
     __obj.asInstanceOf[CaptionPanel]
   }
 }

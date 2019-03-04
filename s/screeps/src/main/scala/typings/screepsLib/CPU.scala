@@ -60,13 +60,7 @@ object CPU {
     tickLimit: scala.Double,
     getHeapStatistics: js.Function0[HeapStatistics] = null
   ): CPU = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("getUsed")(getUsed)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("setShardLimits")(setShardLimits)
-    __obj.updateDynamic("shardLimits")(shardLimits)
-    __obj.updateDynamic("tickLimit")(tickLimit)
+    val __obj = js.Dynamic.literal(bucket = bucket, getUsed = getUsed, limit = limit, setShardLimits = setShardLimits, shardLimits = shardLimits, tickLimit = tickLimit)
     if (getHeapStatistics != null) __obj.updateDynamic("getHeapStatistics")(getHeapStatistics)
     __obj.asInstanceOf[CPU]
   }

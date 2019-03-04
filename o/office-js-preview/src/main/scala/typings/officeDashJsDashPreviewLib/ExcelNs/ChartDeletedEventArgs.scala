@@ -50,10 +50,8 @@ object ChartDeletedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ChartDeleted,
     worksheetId: java.lang.String
   ): ChartDeletedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("chartId")(chartId)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(chartId = chartId, source = source.asInstanceOf[js.Any], worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ChartDeletedEventArgs]
   }
 }

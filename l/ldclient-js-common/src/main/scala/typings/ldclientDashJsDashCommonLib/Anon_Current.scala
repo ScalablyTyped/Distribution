@@ -16,9 +16,8 @@ object Anon_Current {
     current: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDFlagValue,
     previous: ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDFlagValue
   ): Anon_Current = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("previous")(previous)
+    val __obj = js.Dynamic.literal(current = current, previous = previous)
+  
     __obj.asInstanceOf[Anon_Current]
   }
 }

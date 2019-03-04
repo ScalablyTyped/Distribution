@@ -14,10 +14,8 @@ trait Anon_NextNumber extends js.Object {
 object Anon_NextNumber {
   @scala.inline
   def apply(nextNumber: scala.Double, nextNumberIncrement: scala.Double, stringPrefix: java.lang.String): Anon_NextNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nextNumber")(nextNumber)
-    __obj.updateDynamic("nextNumberIncrement")(nextNumberIncrement)
-    __obj.updateDynamic("stringPrefix")(stringPrefix)
+    val __obj = js.Dynamic.literal(nextNumber = nextNumber, nextNumberIncrement = nextNumberIncrement, stringPrefix = stringPrefix)
+  
     __obj.asInstanceOf[Anon_NextNumber]
   }
 }

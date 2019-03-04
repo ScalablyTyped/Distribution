@@ -15,8 +15,8 @@ trait Anon_TimeoutNumber extends js.Object {
 object Anon_TimeoutNumber {
   @scala.inline
   def apply(timeout: scala.Double): Anon_TimeoutNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(timeout = timeout)
+  
     __obj.asInstanceOf[Anon_TimeoutNumber]
   }
 }

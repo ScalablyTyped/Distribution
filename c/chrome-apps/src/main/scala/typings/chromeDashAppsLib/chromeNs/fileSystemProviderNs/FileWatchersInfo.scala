@@ -20,9 +20,7 @@ trait FileWatchersInfo extends js.Object {
 object FileWatchersInfo {
   @scala.inline
   def apply(entryPath: java.lang.String, recursive: scala.Boolean, lastTag: java.lang.String = null): FileWatchersInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("recursive")(recursive)
+    val __obj = js.Dynamic.literal(entryPath = entryPath, recursive = recursive)
     if (lastTag != null) __obj.updateDynamic("lastTag")(lastTag)
     __obj.asInstanceOf[FileWatchersInfo]
   }

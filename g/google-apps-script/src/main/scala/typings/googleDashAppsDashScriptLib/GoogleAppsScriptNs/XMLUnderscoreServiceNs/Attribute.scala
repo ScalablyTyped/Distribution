@@ -24,13 +24,8 @@ object Attribute {
     setNamespace: js.Function1[Namespace, Attribute],
     setValue: js.Function1[java.lang.String, Attribute]
   ): Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getNamespace")(getNamespace)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setNamespace")(setNamespace)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(getName = getName, getNamespace = getNamespace, getValue = getValue, setName = setName, setNamespace = setNamespace, setValue = setValue)
+  
     __obj.asInstanceOf[Attribute]
   }
 }

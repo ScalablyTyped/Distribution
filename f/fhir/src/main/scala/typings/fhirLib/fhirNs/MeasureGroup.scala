@@ -56,8 +56,7 @@ object MeasureGroup {
     population: js.Array[MeasureGroupPopulation] = null,
     stratifier: js.Array[MeasureGroupStratifier] = null
   ): MeasureGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

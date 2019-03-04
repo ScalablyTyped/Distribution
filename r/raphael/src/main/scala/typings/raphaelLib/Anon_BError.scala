@@ -16,12 +16,8 @@ trait Anon_BError extends js.Object {
 object Anon_BError {
   @scala.inline
   def apply(b: scala.Double, error: scala.Boolean, g: scala.Double, hex: java.lang.String, r: scala.Double): Anon_BError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(b = b, error = error, g = g, hex = hex, r = r)
+  
     __obj.asInstanceOf[Anon_BError]
   }
 }

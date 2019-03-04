@@ -27,13 +27,7 @@ object BaseEmoji {
     unified: java.lang.String,
     skin: EmojiSkin = null
   ): BaseEmoji = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colons")(colons)
-    __obj.updateDynamic("emoticons")(emoticons)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("unified")(unified)
+    val __obj = js.Dynamic.literal(colons = colons, emoticons = emoticons, id = id, name = name, native = native, unified = unified)
     if (skin != null) __obj.updateDynamic("skin")(skin)
     __obj.asInstanceOf[BaseEmoji]
   }

@@ -24,8 +24,8 @@ object AwaitExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.AwaitExpression,
     argument: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): AwaitExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("all")(all)
+    val __obj = js.Dynamic.literal(all = all)
+    __obj.updateDynamic("type")(`type`)
     if (argument != null) __obj.updateDynamic("argument")(argument)
     __obj.asInstanceOf[AwaitExpression]
   }

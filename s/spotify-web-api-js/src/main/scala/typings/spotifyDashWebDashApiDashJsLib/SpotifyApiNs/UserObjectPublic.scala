@@ -32,11 +32,8 @@ object UserObjectPublic {
     followers: FollowersObject = null,
     images: js.Array[ImageObject] = null
   ): UserObjectPublic = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (display_name != null) __obj.updateDynamic("display_name")(display_name)
     if (followers != null) __obj.updateDynamic("followers")(followers)
     if (images != null) __obj.updateDynamic("images")(images)

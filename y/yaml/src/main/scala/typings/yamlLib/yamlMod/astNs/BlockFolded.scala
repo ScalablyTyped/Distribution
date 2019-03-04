@@ -27,8 +27,8 @@ object BlockFolded {
     tag: java.lang.String = null,
     value: scala.Boolean | scala.Double | java.lang.String = null
   ): BlockFolded = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

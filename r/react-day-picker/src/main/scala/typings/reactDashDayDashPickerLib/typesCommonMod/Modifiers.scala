@@ -18,9 +18,7 @@ object Modifiers {
     today: Modifier | js.Array[Modifier],
     StringDictionary: /* other */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] = null
   ): Modifiers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outside")(outside.asInstanceOf[js.Any])
-    __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(outside = outside.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Modifiers]
   }

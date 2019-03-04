@@ -51,13 +51,8 @@ object ASPxClientImageSliderItem {
     name: java.lang.String,
     text: java.lang.String
   ): ASPxClientImageSliderItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageSlider")(imageSlider)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("loaded")(loaded)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(imageSlider = imageSlider, imageUrl = imageUrl, index = index, loaded = loaded, name = name, text = text)
+  
     __obj.asInstanceOf[ASPxClientImageSliderItem]
   }
 }

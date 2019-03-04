@@ -16,9 +16,8 @@ object Anon_MARGIN {
     MARGIN: reactDashFoundationLib.enumsMod.GutterTypes,
     PADDING: reactDashFoundationLib.enumsMod.GutterTypes
   ): Anon_MARGIN = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MARGIN")(MARGIN)
-    __obj.updateDynamic("PADDING")(PADDING)
+    val __obj = js.Dynamic.literal(MARGIN = MARGIN, PADDING = PADDING)
+  
     __obj.asInstanceOf[Anon_MARGIN]
   }
 }

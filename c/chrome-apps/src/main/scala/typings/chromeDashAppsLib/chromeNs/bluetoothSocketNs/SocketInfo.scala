@@ -68,11 +68,7 @@ object SocketInfo {
     name: java.lang.String = null,
     uuid: java.lang.String = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("paused")(paused)
-    __obj.updateDynamic("persistent")(persistent)
-    __obj.updateDynamic("socketId")(socketId)
+    val __obj = js.Dynamic.literal(connected = connected, paused = paused, persistent = persistent, socketId = socketId)
     if (address != null) __obj.updateDynamic("address")(address)
     if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize)
     if (name != null) __obj.updateDynamic("name")(name)

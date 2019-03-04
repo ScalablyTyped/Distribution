@@ -15,10 +15,8 @@ trait ItemContext extends js.Object {
 object ItemContext {
   @scala.inline
   def apply(itemIndex: scala.Double, seriesIndex: scala.Double, subId: java.lang.String): ItemContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("itemIndex")(itemIndex)
-    __obj.updateDynamic("seriesIndex")(seriesIndex)
-    __obj.updateDynamic("subId")(subId)
+    val __obj = js.Dynamic.literal(itemIndex = itemIndex, seriesIndex = seriesIndex, subId = subId)
+  
     __obj.asInstanceOf[ItemContext]
   }
 }

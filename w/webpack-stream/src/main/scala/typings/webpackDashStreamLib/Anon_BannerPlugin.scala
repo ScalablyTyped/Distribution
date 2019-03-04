@@ -45,23 +45,8 @@ object Anon_BannerPlugin {
     loaderNs: js.Any,
     optimizeNs: Anon_AggressiveMergingPluginAggressiveSplittingPlugin
   ): Anon_BannerPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BannerPluginNs")(BannerPluginNs)
-    __obj.updateDynamic("CompilerNs")(CompilerNs)
-    __obj.updateDynamic("DllPluginNs")(DllPluginNs)
-    __obj.updateDynamic("DllReferencePluginNs")(DllReferencePluginNs)
-    __obj.updateDynamic("EvalSourceMapDevToolPluginNs")(EvalSourceMapDevToolPluginNs)
-    __obj.updateDynamic("ICompilerNs")(ICompilerNs)
-    __obj.updateDynamic("MultiCompilerNs")(MultiCompilerNs)
-    __obj.updateDynamic("OptionsNs")(OptionsNs)
-    __obj.updateDynamic("SourceMapDevToolPluginNs")(SourceMapDevToolPluginNs)
-    __obj.updateDynamic("StatsNs")(StatsNs)
-    __obj.updateDynamic("compilationNs")(compilationNs)
-    __obj.updateDynamic("compilerNs")(compilerNs)
-    __obj.updateDynamic("debugNs")(debugNs)
-    __obj.updateDynamic("dependenciesNs")(dependenciesNs)
-    __obj.updateDynamic("loaderNs")(loaderNs)
-    __obj.updateDynamic("optimizeNs")(optimizeNs)
+    val __obj = js.Dynamic.literal(BannerPluginNs = BannerPluginNs, CompilerNs = CompilerNs, DllPluginNs = DllPluginNs, DllReferencePluginNs = DllReferencePluginNs, EvalSourceMapDevToolPluginNs = EvalSourceMapDevToolPluginNs, ICompilerNs = ICompilerNs, MultiCompilerNs = MultiCompilerNs, OptionsNs = OptionsNs, SourceMapDevToolPluginNs = SourceMapDevToolPluginNs, StatsNs = StatsNs, compilationNs = compilationNs, compilerNs = compilerNs, debugNs = debugNs, dependenciesNs = dependenciesNs, loaderNs = loaderNs, optimizeNs = optimizeNs)
+  
     __obj.asInstanceOf[Anon_BannerPlugin]
   }
 }

@@ -14,10 +14,8 @@ trait IStrategyOption extends js.Object {
 object IStrategyOption {
   @scala.inline
   def apply(callbackURL: java.lang.String, clientID: java.lang.String, clientSecret: java.lang.String): IStrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
+  
     __obj.asInstanceOf[IStrategyOption]
   }
 }

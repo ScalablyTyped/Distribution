@@ -26,8 +26,7 @@ object AsObject {
     messageSetWireFormat: js.UndefOr[scala.Boolean] = js.undefined,
     noStandardDescriptorAccessor: js.UndefOr[scala.Boolean] = js.undefined
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uninterpretedOptionList")(uninterpretedOptionList)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
     if (!js.isUndefined(mapEntry)) __obj.updateDynamic("mapEntry")(mapEntry)
     if (!js.isUndefined(messageSetWireFormat)) __obj.updateDynamic("messageSetWireFormat")(messageSetWireFormat)

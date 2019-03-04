@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/debug/debug_node", "DebugElement__PRE_R3__")
 @js.native
-class `DebugElement__PRE_R3__` protected ()
-  extends `DebugNode__PRE_R3__`
+class DebugElement__PRE_R3__ protected ()
+  extends DebugNode__PRE_R3__
      with DebugElement {
   def this(nativeNode: js.Any, parent: js.Any, _debugContext: atAngularCoreLib.srcViewMod.DebugContext) = this()
   /* CompleteClass */

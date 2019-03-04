@@ -37,12 +37,8 @@ object Cubehelix {
     scale: js.Function0[Scale[Color]],
     start: js.Function1[scala.Double, Cubehelix]
   ): Cubehelix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gamma")(gamma)
-    __obj.updateDynamic("lightness")(lightness)
-    __obj.updateDynamic("rotations")(rotations)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(gamma = gamma, lightness = lightness, rotations = rotations, scale = scale, start = start)
+  
     __obj.asInstanceOf[Cubehelix]
   }
 }

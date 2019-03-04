@@ -87,8 +87,7 @@ object Config {
     swaggerSecurityHandlers: SwaggerSecurityHandlers = null,
     validateResponse: js.UndefOr[scala.Boolean] = js.undefined
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appRoot")(appRoot)
+    val __obj = js.Dynamic.literal(appRoot = appRoot)
     if (bagpipes != null) __obj.updateDynamic("bagpipes")(bagpipes)
     if (configDir != null) __obj.updateDynamic("configDir")(configDir)
     if (controllersDirs != null) __obj.updateDynamic("controllersDirs")(controllersDirs)

@@ -61,9 +61,7 @@ object ConceptMapGroupElementTargetDependsOn {
     modifierExtension: js.Array[Extension] = null,
     system: uri = null
   ): ConceptMapGroupElementTargetDependsOn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(code = code, property = property)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_display != null) __obj.updateDynamic("_display")(_display)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

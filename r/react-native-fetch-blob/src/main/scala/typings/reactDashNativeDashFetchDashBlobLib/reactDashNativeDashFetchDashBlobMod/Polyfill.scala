@@ -26,14 +26,8 @@ object Polyfill {
     ProgressEvent: PolyfillProgressEvent,
     XMLHttpRequest: PolyfillXMLHttpRequest
   ): Polyfill = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Blob")(Blob)
-    __obj.updateDynamic("Event")(Event)
-    __obj.updateDynamic("Fetch")(Fetch)
-    __obj.updateDynamic("File")(File)
-    __obj.updateDynamic("FileReader")(FileReader)
-    __obj.updateDynamic("ProgressEvent")(ProgressEvent)
-    __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest)
+    val __obj = js.Dynamic.literal(Blob = Blob, Event = Event, Fetch = Fetch, File = File, FileReader = FileReader, ProgressEvent = ProgressEvent, XMLHttpRequest = XMLHttpRequest)
+  
     __obj.asInstanceOf[Polyfill]
   }
 }

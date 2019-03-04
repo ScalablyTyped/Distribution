@@ -18,9 +18,8 @@ object Anon_KeyTypeValue {
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_KeyTypeValue = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_KeyTypeValue]
   }
 }

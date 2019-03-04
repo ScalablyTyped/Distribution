@@ -18,8 +18,7 @@ object LocalizedProps {
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     attrs: js.Object = null
   ): LocalizedProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     __obj.asInstanceOf[LocalizedProps]

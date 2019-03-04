@@ -31,10 +31,8 @@ object DragSourceEvent {
     DragSourceContext: XDragSourceContext,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): DragSourceEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DragSource")(DragSource)
-    __obj.updateDynamic("DragSourceContext")(DragSourceContext)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(DragSource = DragSource, DragSourceContext = DragSourceContext, Source = Source)
+  
     __obj.asInstanceOf[DragSourceEvent]
   }
 }

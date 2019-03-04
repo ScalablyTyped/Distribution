@@ -17,8 +17,8 @@ object WebDriverBarrier {
       js.Promise[scala.Unit]
     ]
   ): WebDriverBarrier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onCommand")(onCommand)
+    val __obj = js.Dynamic.literal(onCommand = onCommand)
+  
     __obj.asInstanceOf[WebDriverBarrier]
   }
 }

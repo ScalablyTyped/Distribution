@@ -35,15 +35,8 @@ object Config {
     uphost: java.lang.String,
     useCdnDomain: scala.Boolean
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkByMD5")(checkByMD5)
-    __obj.updateDynamic("concurrentRequestLimit")(concurrentRequestLimit)
-    __obj.updateDynamic("disableStatisticsReport")(disableStatisticsReport)
-    __obj.updateDynamic("forceDirect")(forceDirect)
-    __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    __obj.updateDynamic("retryCount")(retryCount)
-    __obj.updateDynamic("uphost")(uphost)
-    __obj.updateDynamic("useCdnDomain")(useCdnDomain)
+    val __obj = js.Dynamic.literal(checkByMD5 = checkByMD5, concurrentRequestLimit = concurrentRequestLimit, disableStatisticsReport = disableStatisticsReport, forceDirect = forceDirect, region = region.asInstanceOf[js.Any], retryCount = retryCount, uphost = uphost, useCdnDomain = useCdnDomain)
+  
     __obj.asInstanceOf[Config]
   }
 }

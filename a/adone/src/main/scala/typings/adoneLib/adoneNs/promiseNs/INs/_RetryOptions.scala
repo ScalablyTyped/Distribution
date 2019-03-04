@@ -26,13 +26,8 @@ object _RetryOptions {
     report: js.Function3[java.lang.String, _RetryOptions, js.Any, scala.Unit],
     timeout: scala.Double
   ): _RetryOptions = {
-    val __obj = js.Dynamic.literal(`match` = `match`.asInstanceOf[js.Any])
-    __obj.updateDynamic("backOffBase")(backOffBase)
-    __obj.updateDynamic("backOffExponent")(backOffExponent)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(backOffBase = backOffBase, backOffExponent = backOffExponent, max = max, name = name, report = report, timeout = timeout)
+    __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_RetryOptions]
   }
 }

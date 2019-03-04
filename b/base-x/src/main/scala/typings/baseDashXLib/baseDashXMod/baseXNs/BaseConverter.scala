@@ -18,10 +18,8 @@ object BaseConverter {
     decodeUnsafe: js.Function1[java.lang.String, js.UndefOr[bufferLib.bufferMod.Buffer]],
     encode: js.Function1[bufferLib.bufferMod.Buffer, java.lang.String]
   ): BaseConverter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("decodeUnsafe")(decodeUnsafe)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, decodeUnsafe = decodeUnsafe, encode = encode)
+  
     __obj.asInstanceOf[BaseConverter]
   }
 }

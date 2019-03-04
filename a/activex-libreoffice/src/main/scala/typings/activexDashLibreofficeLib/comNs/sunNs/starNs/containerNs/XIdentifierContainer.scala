@@ -43,19 +43,8 @@ object XIdentifierContainer {
     removeByIdentifier: js.Function1[scala.Double, scala.Unit],
     replaceByIdentifer: js.Function2[scala.Double, js.Any, scala.Unit]
   ): XIdentifierContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("Identifiers")(Identifiers)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getByIdentifier")(getByIdentifier)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getIdentifiers")(getIdentifiers)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByIdentifier")(removeByIdentifier)
-    __obj.updateDynamic("replaceByIdentifer")(replaceByIdentifer)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, Identifiers = Identifiers, acquire = acquire, getByIdentifier = getByIdentifier, getElementType = getElementType, getIdentifiers = getIdentifiers, hasElements = hasElements, insert = insert, queryInterface = queryInterface, release = release, removeByIdentifier = removeByIdentifier, replaceByIdentifer = replaceByIdentifer)
+  
     __obj.asInstanceOf[XIdentifierContainer]
   }
 }

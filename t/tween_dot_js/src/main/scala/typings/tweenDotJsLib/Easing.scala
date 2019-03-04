@@ -34,18 +34,8 @@ object Easing {
     Quintic: Anon_In,
     Sinusoidal: Anon_In
   ): Easing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Back")(Back)
-    __obj.updateDynamic("Bounce")(Bounce)
-    __obj.updateDynamic("Circular")(Circular)
-    __obj.updateDynamic("Cubic")(Cubic)
-    __obj.updateDynamic("Elastic")(Elastic)
-    __obj.updateDynamic("Exponential")(Exponential)
-    __obj.updateDynamic("Linear")(Linear)
-    __obj.updateDynamic("Quadratic")(Quadratic)
-    __obj.updateDynamic("Quartic")(Quartic)
-    __obj.updateDynamic("Quintic")(Quintic)
-    __obj.updateDynamic("Sinusoidal")(Sinusoidal)
+    val __obj = js.Dynamic.literal(Back = Back, Bounce = Bounce, Circular = Circular, Cubic = Cubic, Elastic = Elastic, Exponential = Exponential, Linear = Linear, Quadratic = Quadratic, Quartic = Quartic, Quintic = Quintic, Sinusoidal = Sinusoidal)
+  
     __obj.asInstanceOf[Easing]
   }
 }

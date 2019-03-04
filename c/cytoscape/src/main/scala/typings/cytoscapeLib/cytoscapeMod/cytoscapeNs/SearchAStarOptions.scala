@@ -25,9 +25,7 @@ object SearchAStarOptions {
     heuristic: js.Function1[/* node */ NodeCollection, scala.Double] = null,
     weight: WeightFn = null
   ): SearchAStarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("goal")(goal.asInstanceOf[js.Any])
-    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(goal = goal.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     if (heuristic != null) __obj.updateDynamic("heuristic")(heuristic)
     if (weight != null) __obj.updateDynamic("weight")(weight)

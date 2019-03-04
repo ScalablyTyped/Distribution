@@ -39,7 +39,7 @@ object utilsNs extends js.Object {
   /**
     * Highlight the given string of `js`.
     */
-  def highlight(`js_`: java.lang.String): java.lang.String = js.native
+  def highlight(js_ : java.lang.String): java.lang.String = js.native
   /**
     * Lookup file names at the given `path`.
     *

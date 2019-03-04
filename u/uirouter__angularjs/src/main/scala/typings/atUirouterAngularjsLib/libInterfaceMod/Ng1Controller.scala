@@ -94,10 +94,8 @@ object Ng1Controller {
     ],
     uiOnParamsChanged: js.Function2[js.Any, atUirouterCoreLib.atUirouterCoreMod.Transition, scala.Unit]
   ): Ng1Controller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$onInit")($onInit)
-    __obj.updateDynamic("uiCanExit")(uiCanExit)
-    __obj.updateDynamic("uiOnParamsChanged")(uiOnParamsChanged)
+    val __obj = js.Dynamic.literal($onInit = $onInit, uiCanExit = uiCanExit, uiOnParamsChanged = uiOnParamsChanged)
+  
     __obj.asInstanceOf[Ng1Controller]
   }
 }

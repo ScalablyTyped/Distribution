@@ -12,8 +12,8 @@ trait Anon_Dhparam extends js.Object {
 object Anon_Dhparam {
   @scala.inline
   def apply(dhparam: js.Any): Anon_Dhparam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dhparam")(dhparam)
+    val __obj = js.Dynamic.literal(dhparam = dhparam)
+  
     __obj.asInstanceOf[Anon_Dhparam]
   }
 }

@@ -20,10 +20,7 @@ object Anon_Address {
     last_name: java.lang.String,
     business_name: java.lang.String = null
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("last_name")(last_name)
+    val __obj = js.Dynamic.literal(address = address, first_name = first_name, last_name = last_name)
     if (business_name != null) __obj.updateDynamic("business_name")(business_name)
     __obj.asInstanceOf[Anon_Address]
   }

@@ -12,8 +12,8 @@ trait IControlChannelTriggerEventDetails extends js.Object {
 object IControlChannelTriggerEventDetails {
   @scala.inline
   def apply(controlChannelTrigger: ControlChannelTrigger): IControlChannelTriggerEventDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controlChannelTrigger")(controlChannelTrigger)
+    val __obj = js.Dynamic.literal(controlChannelTrigger = controlChannelTrigger)
+  
     __obj.asInstanceOf[IControlChannelTriggerEventDetails]
   }
 }

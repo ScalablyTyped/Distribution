@@ -51,15 +51,8 @@ object PrintOptions {
     Sort: scala.Boolean,
     Wait: scala.Boolean
   ): PrintOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Collate")(Collate)
-    __obj.updateDynamic("CopyCount")(CopyCount)
-    __obj.updateDynamic("DuplexMode")(DuplexMode)
-    __obj.updateDynamic("FileName")(FileName)
-    __obj.updateDynamic("Pages")(Pages)
-    __obj.updateDynamic("PrinterName")(PrinterName)
-    __obj.updateDynamic("Sort")(Sort)
-    __obj.updateDynamic("Wait")(Wait)
+    val __obj = js.Dynamic.literal(Collate = Collate, CopyCount = CopyCount, DuplexMode = DuplexMode, FileName = FileName, Pages = Pages, PrinterName = PrinterName, Sort = Sort, Wait = Wait)
+  
     __obj.asInstanceOf[PrintOptions]
   }
 }

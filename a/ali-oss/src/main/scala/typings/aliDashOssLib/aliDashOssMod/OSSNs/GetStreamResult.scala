@@ -14,8 +14,7 @@ trait GetStreamResult extends js.Object {
 object GetStreamResult {
   @scala.inline
   def apply(res: NormalSuccessResponse, stream: js.Any = null): GetStreamResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(res = res)
     if (stream != null) __obj.updateDynamic("stream")(stream)
     __obj.asInstanceOf[GetStreamResult]
   }

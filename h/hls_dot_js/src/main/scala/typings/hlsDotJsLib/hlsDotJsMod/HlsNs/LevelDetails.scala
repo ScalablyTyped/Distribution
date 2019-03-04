@@ -60,15 +60,8 @@ object LevelDetails {
     `type`: java.lang.String,
     version: scala.Double
   ): LevelDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("averagetargetduration")(averagetargetduration)
-    __obj.updateDynamic("endSN")(endSN)
-    __obj.updateDynamic("fragments")(fragments)
-    __obj.updateDynamic("live")(live)
-    __obj.updateDynamic("startSN")(startSN)
-    __obj.updateDynamic("targetduration")(targetduration)
-    __obj.updateDynamic("totalduration")(totalduration)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(averagetargetduration = averagetargetduration, endSN = endSN, fragments = fragments, live = live, startSN = startSN, targetduration = targetduration, totalduration = totalduration, version = version)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[LevelDetails]
   }
 }

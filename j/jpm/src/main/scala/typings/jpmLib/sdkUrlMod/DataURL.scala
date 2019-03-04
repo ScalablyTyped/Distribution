@@ -21,12 +21,8 @@ object DataURL {
     parameters: js.Object,
     toString: js.Function0[java.lang.String]
   ): DataURL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(base64 = base64, data = data, mimeType = mimeType, parameters = parameters, toString = toString)
+  
     __obj.asInstanceOf[DataURL]
   }
 }

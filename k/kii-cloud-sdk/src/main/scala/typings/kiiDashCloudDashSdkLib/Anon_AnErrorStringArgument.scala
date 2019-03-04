@@ -36,9 +36,8 @@ object Anon_AnErrorStringArgument {
       js.Any
     ]
   ): Anon_AnErrorStringArgument[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringArgument[T]]
   }
 }

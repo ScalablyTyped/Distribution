@@ -19,8 +19,8 @@ trait ASPxClientCancelEventArgs extends ASPxClientEventArgs {
 object ASPxClientCancelEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean): ASPxClientCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
+    val __obj = js.Dynamic.literal(cancel = cancel)
+  
     __obj.asInstanceOf[ASPxClientCancelEventArgs]
   }
 }

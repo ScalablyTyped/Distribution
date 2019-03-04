@@ -50,25 +50,8 @@ object FlashFilter {
     strength: scala.Double,
     `type`: java.lang.String
   ): FlashFilter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("blurX")(blurX)
-    __obj.updateDynamic("blurY")(blurY)
-    __obj.updateDynamic("brightness")(brightness)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("contrast")(contrast)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("hideObject")(hideObject)
-    __obj.updateDynamic("highlightColor")(highlightColor)
-    __obj.updateDynamic("hue")(hue)
-    __obj.updateDynamic("inner")(inner)
-    __obj.updateDynamic("knockout")(knockout)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("saturation")(saturation)
-    __obj.updateDynamic("shadowColor")(shadowColor)
-    __obj.updateDynamic("strength")(strength)
+    val __obj = js.Dynamic.literal(angle = angle, blurX = blurX, blurY = blurY, brightness = brightness, color = color, contrast = contrast, distance = distance, enabled = enabled, hideObject = hideObject, highlightColor = highlightColor, hue = hue, inner = inner, knockout = knockout, name = name, quality = quality, saturation = saturation, shadowColor = shadowColor, strength = strength)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FlashFilter]
   }
 }

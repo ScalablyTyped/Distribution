@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- samchonLib.templatesSlaveSlaveClientMod.ISlaveClient because var conflicts: _Complete_process, `communicator_`. Inlined connect */ @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorClient")
+- samchonLib.templatesSlaveSlaveClientMod.ISlaveClient because var conflicts: _Complete_process, communicator_. Inlined connect */ @JSImport("samchon/templates/parallel/derived/MediatorClient", "MediatorClient")
 @js.native
 class MediatorClient protected ()
   extends samchonLib.templatesParallelMediatorSystemMod.MediatorSystem {

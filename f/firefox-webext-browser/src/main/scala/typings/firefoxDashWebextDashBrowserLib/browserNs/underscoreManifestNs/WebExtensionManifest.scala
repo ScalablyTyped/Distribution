@@ -86,10 +86,7 @@ object WebExtensionManifest {
     user_scripts: firefoxDashWebextDashBrowserLib.Anon_Apiscript = null,
     web_accessible_resources: js.Array[java.lang.String] = null
   ): WebExtensionManifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manifest_version")(manifest_version)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(manifest_version = manifest_version, name = name, version = version)
     if (applications != null) __obj.updateDynamic("applications")(applications)
     if (author != null) __obj.updateDynamic("author")(author)
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])

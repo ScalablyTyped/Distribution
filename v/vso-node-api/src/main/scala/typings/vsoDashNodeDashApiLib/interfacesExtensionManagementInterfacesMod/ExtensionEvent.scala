@@ -42,13 +42,8 @@ object ExtensionEvent {
     modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
     updateType: ExtensionUpdateType
   ): ExtensionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("extensionVersion")(extensionVersion)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("modifiedBy")(modifiedBy)
-    __obj.updateDynamic("updateType")(updateType)
+    val __obj = js.Dynamic.literal(extension = extension, extensionVersion = extensionVersion, host = host, links = links, modifiedBy = modifiedBy, updateType = updateType)
+  
     __obj.asInstanceOf[ExtensionEvent]
   }
 }

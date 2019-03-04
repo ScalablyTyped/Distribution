@@ -13,9 +13,8 @@ trait ISPECTATOR_TO_PLAYER_ERROR extends js.Object {
 object ISPECTATOR_TO_PLAYER_ERROR {
   @scala.inline
   def apply(errorCode: scala.Double, errorMessage: java.lang.String): ISPECTATOR_TO_PLAYER_ERROR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
-    __obj.updateDynamic("errorMessage")(errorMessage)
+    val __obj = js.Dynamic.literal(errorCode = errorCode, errorMessage = errorMessage)
+  
     __obj.asInstanceOf[ISPECTATOR_TO_PLAYER_ERROR]
   }
 }

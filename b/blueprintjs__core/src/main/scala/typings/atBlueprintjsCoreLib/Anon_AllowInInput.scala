@@ -22,12 +22,8 @@ object Anon_AllowInInput {
     preventDefault: scala.Boolean,
     stopPropagation: scala.Boolean
   ): Anon_AllowInInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowInInput")(allowInInput)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    val __obj = js.Dynamic.literal(allowInInput = allowInInput, disabled = disabled, global = global, preventDefault = preventDefault, stopPropagation = stopPropagation)
+  
     __obj.asInstanceOf[Anon_AllowInInput]
   }
 }

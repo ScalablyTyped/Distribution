@@ -20,9 +20,7 @@ object StripePaymentRequestUpdateOptions {
     displayItems: js.Array[DisplayItem] = null,
     shippingOptions: js.Array[ShippingOption] = null
   ): StripePaymentRequestUpdateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(currency = currency, total = total)
     if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems)
     if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions)
     __obj.asInstanceOf[StripePaymentRequestUpdateOptions]

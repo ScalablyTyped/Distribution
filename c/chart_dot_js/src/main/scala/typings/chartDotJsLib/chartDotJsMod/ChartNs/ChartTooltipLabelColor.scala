@@ -13,9 +13,8 @@ trait ChartTooltipLabelColor extends js.Object {
 object ChartTooltipLabelColor {
   @scala.inline
   def apply(backgroundColor: ChartColor, borderColor: ChartColor): ChartTooltipLabelColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ChartTooltipLabelColor]
   }
 }

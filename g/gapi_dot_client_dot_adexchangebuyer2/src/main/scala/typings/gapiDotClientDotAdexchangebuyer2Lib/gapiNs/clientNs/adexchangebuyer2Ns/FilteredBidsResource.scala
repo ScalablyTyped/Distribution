@@ -27,10 +27,8 @@ object FilteredBidsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
     ]
   ): FilteredBidsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creatives")(creatives)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(creatives = creatives, details = details, list = list)
+  
     __obj.asInstanceOf[FilteredBidsResource]
   }
 }

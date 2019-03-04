@@ -12,8 +12,8 @@ trait DocumentTitleProps extends js.Object {
 object DocumentTitleProps {
   @scala.inline
   def apply(title: java.lang.String): DocumentTitleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
+  
     __obj.asInstanceOf[DocumentTitleProps]
   }
 }

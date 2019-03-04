@@ -14,10 +14,8 @@ trait RequestOrig extends js.Object {
 object RequestOrig {
   @scala.inline
   def apply(params: js.Object, payload: js.Object, query: js.Object): RequestOrig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(params = params, payload = payload, query = query)
+  
     __obj.asInstanceOf[RequestOrig]
   }
 }

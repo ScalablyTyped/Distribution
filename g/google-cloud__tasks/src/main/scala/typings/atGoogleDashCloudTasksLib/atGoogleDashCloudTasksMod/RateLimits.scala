@@ -18,10 +18,8 @@ object RateLimits {
     maxConcurrentDispatches: scala.Double,
     maxDispatchesPerSecond: scala.Double
   ): RateLimits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxBurstSize")(maxBurstSize)
-    __obj.updateDynamic("maxConcurrentDispatches")(maxConcurrentDispatches)
-    __obj.updateDynamic("maxDispatchesPerSecond")(maxDispatchesPerSecond)
+    val __obj = js.Dynamic.literal(maxBurstSize = maxBurstSize, maxConcurrentDispatches = maxConcurrentDispatches, maxDispatchesPerSecond = maxDispatchesPerSecond)
+  
     __obj.asInstanceOf[RateLimits]
   }
 }

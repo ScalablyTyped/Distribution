@@ -28,8 +28,8 @@ object PreviewProps {
       reactLib.reactMod.Global.JSXNs.Element
     ]
   ): PreviewProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generator")(generator)
+    val __obj = js.Dynamic.literal(generator = generator)
+  
     __obj.asInstanceOf[PreviewProps]
   }
 }

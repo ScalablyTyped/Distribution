@@ -19,11 +19,7 @@ object IValidationFailure {
     IsAsync: scala.Boolean,
     TranslateArgs: IErrorTranslateArgs = null
   ): IValidationFailure = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Error")(Error)
-    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    __obj.updateDynamic("HasError")(HasError)
-    __obj.updateDynamic("IsAsync")(IsAsync)
+    val __obj = js.Dynamic.literal(Error = Error, ErrorMessage = ErrorMessage, HasError = HasError, IsAsync = IsAsync)
     if (TranslateArgs != null) __obj.updateDynamic("TranslateArgs")(TranslateArgs)
     __obj.asInstanceOf[IValidationFailure]
   }

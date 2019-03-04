@@ -57,8 +57,7 @@ object Anon_ChannelIdForChannelId {
     order: java.lang.String = null,
     pageToken: java.lang.String = null
   ): Anon_ChannelIdForChannelId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (forChannelId != null) __obj.updateDynamic("forChannelId")(forChannelId)
     if (id != null) __obj.updateDynamic("id")(id)

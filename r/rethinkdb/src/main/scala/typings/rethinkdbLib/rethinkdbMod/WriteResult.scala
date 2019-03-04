@@ -28,15 +28,8 @@ object WriteResult {
     skipped: scala.Double,
     unchanged: scala.Double
   ): WriteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("first_error")(first_error)
-    __obj.updateDynamic("generated_keys")(generated_keys)
-    __obj.updateDynamic("inserted")(inserted)
-    __obj.updateDynamic("replaced")(replaced)
-    __obj.updateDynamic("skipped")(skipped)
-    __obj.updateDynamic("unchanged")(unchanged)
+    val __obj = js.Dynamic.literal(deleted = deleted, errors = errors, first_error = first_error, generated_keys = generated_keys, inserted = inserted, replaced = replaced, skipped = skipped, unchanged = unchanged)
+  
     __obj.asInstanceOf[WriteResult]
   }
 }

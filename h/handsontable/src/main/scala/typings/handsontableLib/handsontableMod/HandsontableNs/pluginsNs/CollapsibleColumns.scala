@@ -61,38 +61,8 @@ object CollapsibleColumns {
     toggleAllCollapsibleSections: js.Function1[java.lang.String, scala.Unit],
     toggleCollapsibleSection: js.Function2[js.Object, java.lang.String, scala.Unit]
   ): CollapsibleColumns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("buttonEnabledList")(buttonEnabledList)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("checkDependencies")(checkDependencies)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("collapseAll")(collapseAll)
-    __obj.updateDynamic("collapseSection")(collapseSection)
-    __obj.updateDynamic("collapsedSections")(collapsedSections)
-    __obj.updateDynamic("columnHeaderLevelCount")(columnHeaderLevelCount)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("expandAll")(expandAll)
-    __obj.updateDynamic("expandSection")(expandSection)
-    __obj.updateDynamic("generateIndicator")(generateIndicator)
-    __obj.updateDynamic("hiddenColumnsPlugin")(hiddenColumnsPlugin)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("markSectionAs")(markSectionAs)
-    __obj.updateDynamic("meetsDependencies")(meetsDependencies)
-    __obj.updateDynamic("nestedHeadersPlugin")(nestedHeadersPlugin)
-    __obj.updateDynamic("parseSettings")(parseSettings)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    __obj.updateDynamic("toggleAllCollapsibleSections")(toggleAllCollapsibleSections)
-    __obj.updateDynamic("toggleCollapsibleSection")(toggleCollapsibleSection)
+    val __obj = js.Dynamic.literal(addHook = addHook, buttonEnabledList = buttonEnabledList, callOnPluginsReady = callOnPluginsReady, checkDependencies = checkDependencies, clearHooks = clearHooks, collapseAll = collapseAll, collapseSection = collapseSection, collapsedSections = collapsedSections, columnHeaderLevelCount = columnHeaderLevelCount, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, expandAll = expandAll, expandSection = expandSection, generateIndicator = generateIndicator, hiddenColumnsPlugin = hiddenColumnsPlugin, init = init, initialized = initialized, isPluginsReady = isPluginsReady, markSectionAs = markSectionAs, meetsDependencies = meetsDependencies, nestedHeadersPlugin = nestedHeadersPlugin, parseSettings = parseSettings, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, settings = settings.asInstanceOf[js.Any], toggleAllCollapsibleSections = toggleAllCollapsibleSections, toggleCollapsibleSection = toggleCollapsibleSection)
+  
     __obj.asInstanceOf[CollapsibleColumns]
   }
 }

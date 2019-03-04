@@ -12,8 +12,8 @@ trait IOptions extends js.Object {
 object IOptions {
   @scala.inline
   def apply(newLine: java.lang.String): IOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newLine")(newLine)
+    val __obj = js.Dynamic.literal(newLine = newLine)
+  
     __obj.asInstanceOf[IOptions]
   }
 }

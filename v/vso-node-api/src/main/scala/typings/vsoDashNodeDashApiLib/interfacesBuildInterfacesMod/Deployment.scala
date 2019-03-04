@@ -12,8 +12,8 @@ trait Deployment extends js.Object {
 object Deployment {
   @scala.inline
   def apply(`type`: java.lang.String): Deployment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Deployment]
   }
 }

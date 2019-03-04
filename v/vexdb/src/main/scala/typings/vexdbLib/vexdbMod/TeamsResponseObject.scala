@@ -32,17 +32,8 @@ object TeamsResponseObject {
     robot_name: java.lang.String,
     team_name: java.lang.String
   ): TeamsResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("grade")(grade)
-    __obj.updateDynamic("is_registered")(is_registered.asInstanceOf[js.Any])
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("organisation")(organisation)
-    __obj.updateDynamic("program")(program)
-    __obj.updateDynamic("region")(region)
-    __obj.updateDynamic("robot_name")(robot_name)
-    __obj.updateDynamic("team_name")(team_name)
+    val __obj = js.Dynamic.literal(city = city, country = country, grade = grade, is_registered = is_registered.asInstanceOf[js.Any], number = number, organisation = organisation, program = program, region = region, robot_name = robot_name, team_name = team_name)
+  
     __obj.asInstanceOf[TeamsResponseObject]
   }
 }

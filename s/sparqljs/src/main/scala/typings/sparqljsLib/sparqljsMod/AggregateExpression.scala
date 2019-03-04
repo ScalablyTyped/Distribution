@@ -24,9 +24,8 @@ object AggregateExpression {
     distinct: js.UndefOr[scala.Boolean] = js.undefined,
     separator: java.lang.String = null
   ): AggregateExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aggregation")(aggregation)
-    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aggregation = aggregation, expression = expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
     if (separator != null) __obj.updateDynamic("separator")(separator)
     __obj.asInstanceOf[AggregateExpression]

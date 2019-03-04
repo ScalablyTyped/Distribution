@@ -13,9 +13,8 @@ trait RangeModifier extends js.Object {
 object RangeModifier {
   @scala.inline
   def apply(from: stdLib.Date, to: stdLib.Date): RangeModifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
     __obj.asInstanceOf[RangeModifier]
   }
 }

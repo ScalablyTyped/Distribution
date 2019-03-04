@@ -22,11 +22,7 @@ object StateMeta {
     redirected: scala.Boolean,
     source: java.lang.String = null
   ): StateMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("redirected")(redirected)
+    val __obj = js.Dynamic.literal(id = id, options = options, params = params, redirected = redirected)
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[StateMeta]
   }

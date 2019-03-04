@@ -12,8 +12,8 @@ trait Card extends js.Object {
 object Card {
   @scala.inline
   def apply(printJson: js.Function0[java.lang.String]): Card = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson)
+    val __obj = js.Dynamic.literal(printJson = printJson)
+  
     __obj.asInstanceOf[Card]
   }
 }

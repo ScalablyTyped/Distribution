@@ -45,20 +45,8 @@ object Anon_Custom {
     uric: scala.Boolean,
     uricNoSlash: scala.Boolean
   ): Anon_Custom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    __obj.updateDynamic("maintainCase")(maintainCase)
-    __obj.updateDynamic("mark")(mark)
-    __obj.updateDynamic("postSlug")(postSlug)
-    __obj.updateDynamic("preSlug")(preSlug)
-    __obj.updateDynamic("separator")(separator)
-    __obj.updateDynamic("slugFunc")(slugFunc)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("titleCase")(titleCase.asInstanceOf[js.Any])
-    __obj.updateDynamic("truncate")(truncate)
-    __obj.updateDynamic("uric")(uric)
-    __obj.updateDynamic("uricNoSlash")(uricNoSlash)
+    val __obj = js.Dynamic.literal(custom = custom, lang = lang.asInstanceOf[js.Any], maintainCase = maintainCase, mark = mark, postSlug = postSlug, preSlug = preSlug, separator = separator, slugFunc = slugFunc, symbols = symbols, titleCase = titleCase.asInstanceOf[js.Any], truncate = truncate, uric = uric, uricNoSlash = uricNoSlash)
+  
     __obj.asInstanceOf[Anon_Custom]
   }
 }

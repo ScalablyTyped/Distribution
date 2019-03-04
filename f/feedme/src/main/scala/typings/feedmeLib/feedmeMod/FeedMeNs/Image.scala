@@ -22,12 +22,8 @@ object Image {
     url: java.lang.String,
     width: java.lang.String
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, link = link, title = title, url = url, width = width)
+  
     __obj.asInstanceOf[Image]
   }
 }

@@ -13,9 +13,8 @@ trait TestStartDetails extends js.Object {
 object TestStartDetails {
   @scala.inline
   def apply(module: java.lang.String, name: java.lang.String): TestStartDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(module = module, name = name)
+  
     __obj.asInstanceOf[TestStartDetails]
   }
 }

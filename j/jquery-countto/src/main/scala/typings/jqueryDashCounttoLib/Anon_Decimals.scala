@@ -59,15 +59,8 @@ object Anon_Decimals {
     speed: scala.Double,
     to: scala.Double
   ): Anon_Decimals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decimals")(decimals)
-    __obj.updateDynamic("formatter")(formatter)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("onUpdate")(onUpdate)
-    __obj.updateDynamic("refreshInterval")(refreshInterval)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(decimals = decimals, formatter = formatter, from = from, onComplete = onComplete, onUpdate = onUpdate, refreshInterval = refreshInterval, speed = speed, to = to)
+  
     __obj.asInstanceOf[Anon_Decimals]
   }
 }

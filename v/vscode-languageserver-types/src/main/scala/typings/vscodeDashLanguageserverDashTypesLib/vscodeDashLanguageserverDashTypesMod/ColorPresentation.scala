@@ -28,8 +28,7 @@ trait ColorPresentation extends js.Object {
 object ColorPresentation {
   @scala.inline
   def apply(label: java.lang.String, additionalTextEdits: js.Array[TextEdit] = null, textEdit: TextEdit = null): ColorPresentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
     if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits)
     if (textEdit != null) __obj.updateDynamic("textEdit")(textEdit)
     __obj.asInstanceOf[ColorPresentation]

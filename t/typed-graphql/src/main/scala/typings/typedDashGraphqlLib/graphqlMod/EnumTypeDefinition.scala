@@ -17,10 +17,7 @@ trait EnumTypeDefinition
 object EnumTypeDefinition {
   @scala.inline
   def apply(kind: java.lang.String, name: Name, values: js.Array[EnumValueDefinition], loc: Location = null): EnumTypeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, values = values)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[EnumTypeDefinition]
   }

@@ -34,9 +34,7 @@ object CreateTemplateContent {
     reply_to: java.lang.String = null,
     text: java.lang.String = null
   ): CreateTemplateContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], subject = subject)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (html != null) __obj.updateDynamic("html")(html)
     if (reply_to != null) __obj.updateDynamic("reply_to")(reply_to)

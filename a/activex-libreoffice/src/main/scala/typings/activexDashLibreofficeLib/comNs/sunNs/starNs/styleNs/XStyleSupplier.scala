@@ -31,13 +31,8 @@ object XStyleSupplier {
     release: js.Function0[scala.Unit],
     setStyle: js.Function1[XStyle, scala.Unit]
   ): XStyleSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Style")(Style)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStyle")(getStyle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStyle")(setStyle)
+    val __obj = js.Dynamic.literal(Style = Style, acquire = acquire, getStyle = getStyle, queryInterface = queryInterface, release = release, setStyle = setStyle)
+  
     __obj.asInstanceOf[XStyleSupplier]
   }
 }

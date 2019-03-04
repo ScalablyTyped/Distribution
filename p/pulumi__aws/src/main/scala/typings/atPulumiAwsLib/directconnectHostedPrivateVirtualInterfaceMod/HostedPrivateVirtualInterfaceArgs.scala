@@ -62,12 +62,7 @@ object HostedPrivateVirtualInterfaceArgs {
     mtu: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): HostedPrivateVirtualInterfaceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
-    __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
-    __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], connectionId = connectionId.asInstanceOf[js.Any], ownerAccountId = ownerAccountId.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
     if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])

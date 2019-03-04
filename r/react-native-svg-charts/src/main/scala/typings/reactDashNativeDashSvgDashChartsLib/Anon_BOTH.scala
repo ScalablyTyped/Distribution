@@ -18,10 +18,8 @@ object Anon_BOTH {
     HORIZONTAL: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.HORIZONTAL,
     VERTICAL: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.VERTICAL
   ): Anon_BOTH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOTH")(BOTH)
-    __obj.updateDynamic("HORIZONTAL")(HORIZONTAL)
-    __obj.updateDynamic("VERTICAL")(VERTICAL)
+    val __obj = js.Dynamic.literal(BOTH = BOTH, HORIZONTAL = HORIZONTAL, VERTICAL = VERTICAL)
+  
     __obj.asInstanceOf[Anon_BOTH]
   }
 }

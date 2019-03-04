@@ -32,15 +32,8 @@ object IGlobBase {
     statCache: org.scalablytyped.runtime.StringDictionary[js.UndefOr[globLib.globLibNumbers.`false` | globLib.Anon_IsDirectory]],
     symlinks: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]]
   ): IGlobBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("found")(found)
-    __obj.updateDynamic("minimatch")(minimatch)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("realpathCache")(realpathCache)
-    __obj.updateDynamic("statCache")(statCache)
-    __obj.updateDynamic("symlinks")(symlinks)
+    val __obj = js.Dynamic.literal(aborted = aborted, cache = cache, found = found, minimatch = minimatch, options = options, realpathCache = realpathCache, statCache = statCache, symlinks = symlinks)
+  
     __obj.asInstanceOf[IGlobBase]
   }
 }

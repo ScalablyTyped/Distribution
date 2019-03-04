@@ -27,8 +27,7 @@ object ListRequestObject {
     filter: java.lang.String = null,
     pageSize: scala.Int | scala.Double = null
   ): ListRequestObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(parent = parent)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRequestObject]

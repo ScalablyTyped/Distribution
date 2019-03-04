@@ -24,13 +24,8 @@ object Anon_Create {
     none: scala.Double,
     read: scala.Double
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("edit")(edit)
-    __obj.updateDynamic("managePermissions")(managePermissions)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("read")(read)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, edit = edit, managePermissions = managePermissions, none = none, read = read)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

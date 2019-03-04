@@ -26,14 +26,8 @@ object ICoreApplication {
     run: js.Function1[IFrameworkViewSource, scala.Unit],
     runWithActivationFactories: js.Function1[winrtLib.WindowsNs.FoundationNs.IGetActivationFactory, scala.Unit]
   ): ICoreApplication = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentView")(getCurrentView)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onresuming")(onresuming)
-    __obj.updateDynamic("onsuspending")(onsuspending)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("runWithActivationFactories")(runWithActivationFactories)
+    val __obj = js.Dynamic.literal(getCurrentView = getCurrentView, id = id, onresuming = onresuming, onsuspending = onsuspending, properties = properties, run = run, runWithActivationFactories = runWithActivationFactories)
+  
     __obj.asInstanceOf[ICoreApplication]
   }
 }

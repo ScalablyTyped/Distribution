@@ -24,13 +24,8 @@ object TournamentCodeParameters {
     spectatorType: java.lang.String,
     teamSize: scala.Double
   ): TournamentCodeParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedSummonerIds")(allowedSummonerIds)
-    __obj.updateDynamic("mapType")(mapType)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("pickType")(pickType)
-    __obj.updateDynamic("spectatorType")(spectatorType)
-    __obj.updateDynamic("teamSize")(teamSize)
+    val __obj = js.Dynamic.literal(allowedSummonerIds = allowedSummonerIds, mapType = mapType, metadata = metadata, pickType = pickType, spectatorType = spectatorType, teamSize = teamSize)
+  
     __obj.asInstanceOf[TournamentCodeParameters]
   }
 }

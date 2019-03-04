@@ -35,8 +35,7 @@ object Anon_ImageDataKeyPath {
     imageData: firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType] = null,
     path: java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null
   ): Anon_ImageDataKeyPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tabId")(tabId)
+    val __obj = js.Dynamic.literal(tabId = tabId)
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageDataKeyPath]

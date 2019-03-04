@@ -164,31 +164,8 @@ object CategoryAxesSettings {
     startOnAxis: scala.Boolean,
     tickLength: scala.Double
   ): CategoryAxesSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoGridCount")(autoGridCount)
-    __obj.updateDynamic("axisAlpha")(axisAlpha)
-    __obj.updateDynamic("axisColor")(axisColor)
-    __obj.updateDynamic("axisHeight")(axisHeight)
-    __obj.updateDynamic("axisThickness")(axisThickness)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dashLength")(dashLength)
-    __obj.updateDynamic("dateFormats")(dateFormats)
-    __obj.updateDynamic("equalSpacing")(equalSpacing)
-    __obj.updateDynamic("fillAlpha")(fillAlpha)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("gridAlpha")(gridAlpha)
-    __obj.updateDynamic("gridColor")(gridColor)
-    __obj.updateDynamic("gridCount")(gridCount)
-    __obj.updateDynamic("gridThickness")(gridThickness)
-    __obj.updateDynamic("groupToPeriods")(groupToPeriods)
-    __obj.updateDynamic("inside")(inside)
-    __obj.updateDynamic("labelRotation")(labelRotation)
-    __obj.updateDynamic("maxSeries")(maxSeries)
-    __obj.updateDynamic("minPeriod")(minPeriod)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("startOnAxis")(startOnAxis)
-    __obj.updateDynamic("tickLength")(tickLength)
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisHeight = axisHeight, axisThickness = axisThickness, color = color, dashLength = dashLength, dateFormats = dateFormats, equalSpacing = equalSpacing, fillAlpha = fillAlpha, fillColor = fillColor, fontSize = fontSize, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, groupToPeriods = groupToPeriods, inside = inside, labelRotation = labelRotation, maxSeries = maxSeries, minPeriod = minPeriod, position = position, startOnAxis = startOnAxis, tickLength = tickLength)
+  
     __obj.asInstanceOf[CategoryAxesSettings]
   }
 }

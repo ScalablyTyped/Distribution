@@ -36,8 +36,7 @@ object Operation {
     summary: java.lang.String = null,
     tags: js.Array[java.lang.String] = null
   ): Operation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responses")(responses)
+    val __obj = js.Dynamic.literal(responses = responses)
     if (consumes != null) __obj.updateDynamic("consumes")(consumes)
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
     if (description != null) __obj.updateDynamic("description")(description)

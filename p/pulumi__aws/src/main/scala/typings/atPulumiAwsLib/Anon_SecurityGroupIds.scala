@@ -18,10 +18,8 @@ object Anon_SecurityGroupIds {
     subnets: js.Array[java.lang.String],
     vpcId: java.lang.String
   ): Anon_SecurityGroupIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
-    __obj.updateDynamic("subnets")(subnets)
-    __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds, subnets = subnets, vpcId = vpcId)
+  
     __obj.asInstanceOf[Anon_SecurityGroupIds]
   }
 }

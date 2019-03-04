@@ -24,11 +24,8 @@ object ASPxClientTreeListStartDragNodeEventArgs {
     nodeKey: java.lang.String,
     targets: js.Array[js.Object]
   ): ASPxClientTreeListStartDragNodeEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("nodeKey")(nodeKey)
-    __obj.updateDynamic("targets")(targets)
+    val __obj = js.Dynamic.literal(cancel = cancel, htmlEvent = htmlEvent, nodeKey = nodeKey, targets = targets)
+  
     __obj.asInstanceOf[ASPxClientTreeListStartDragNodeEventArgs]
   }
 }

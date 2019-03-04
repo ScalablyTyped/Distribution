@@ -14,8 +14,7 @@ trait Anon_Accesstoken
 object Anon_Accesstoken {
   @scala.inline
   def apply(access_token: java.lang.String, openID: java.lang.String = null): Anon_Accesstoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("access_token")(access_token)
+    val __obj = js.Dynamic.literal(access_token = access_token)
     if (openID != null) __obj.updateDynamic("openID")(openID)
     __obj.asInstanceOf[Anon_Accesstoken]
   }

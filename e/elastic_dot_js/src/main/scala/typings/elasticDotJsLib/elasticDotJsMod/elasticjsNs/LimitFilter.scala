@@ -42,13 +42,8 @@ object LimitFilter {
     toJSON: js.Function0[LimitFilter],
     value: js.Function1[scala.Double, LimitFilter]
   ): LimitFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, name = name, toJSON = toJSON, value = value)
+  
     __obj.asInstanceOf[LimitFilter]
   }
 }

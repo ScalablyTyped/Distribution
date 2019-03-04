@@ -22,8 +22,7 @@ object PromptProps {
     ]),
     when: js.UndefOr[scala.Boolean] = js.undefined
   ): PromptProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (!js.isUndefined(when)) __obj.updateDynamic("when")(when)
     __obj.asInstanceOf[PromptProps]
   }

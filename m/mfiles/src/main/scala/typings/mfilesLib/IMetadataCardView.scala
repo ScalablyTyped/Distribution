@@ -14,10 +14,8 @@ trait IMetadataCardView extends js.Object {
 object IMetadataCardView {
   @scala.inline
   def apply(DashboardID: java.lang.String, Events: IEvents, Name: java.lang.String): IMetadataCardView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DashboardID")(DashboardID)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(DashboardID = DashboardID, Events = Events, Name = Name)
+  
     __obj.asInstanceOf[IMetadataCardView]
   }
 }

@@ -22,12 +22,8 @@ object IPlayToSourceSelectedEventArgs {
     supportsImage: scala.Boolean,
     supportsVideo: scala.Boolean
   ): IPlayToSourceSelectedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("supportsAudio")(supportsAudio)
-    __obj.updateDynamic("supportsImage")(supportsImage)
-    __obj.updateDynamic("supportsVideo")(supportsVideo)
+    val __obj = js.Dynamic.literal(friendlyName = friendlyName, icon = icon, supportsAudio = supportsAudio, supportsImage = supportsImage, supportsVideo = supportsVideo)
+  
     __obj.asInstanceOf[IPlayToSourceSelectedEventArgs]
   }
 }

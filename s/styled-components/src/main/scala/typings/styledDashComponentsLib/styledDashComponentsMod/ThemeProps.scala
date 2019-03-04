@@ -12,8 +12,8 @@ trait ThemeProps[T] extends js.Object {
 object ThemeProps {
   @scala.inline
   def apply[T](theme: T): ThemeProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ThemeProps[T]]
   }
 }

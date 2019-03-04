@@ -20,12 +20,8 @@ object XAbstractView {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAbstractView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Document = Document, acquire = acquire, getDocument = getDocument, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAbstractView]
   }
 }

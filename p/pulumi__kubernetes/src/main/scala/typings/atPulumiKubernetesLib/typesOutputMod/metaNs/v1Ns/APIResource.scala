@@ -66,16 +66,8 @@ object APIResource {
     verbs: js.Array[java.lang.String],
     version: java.lang.String
   ): APIResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespaced")(namespaced)
-    __obj.updateDynamic("shortNames")(shortNames)
-    __obj.updateDynamic("singularName")(singularName)
-    __obj.updateDynamic("verbs")(verbs)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(categories = categories, group = group, kind = kind, name = name, namespaced = namespaced, shortNames = shortNames, singularName = singularName, verbs = verbs, version = version)
+  
     __obj.asInstanceOf[APIResource]
   }
 }

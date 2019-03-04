@@ -22,8 +22,7 @@ object SearchUserOptions {
     maxResults: scala.Int | scala.Double = null,
     startAt: scala.Int | scala.Double = null
   ): SearchUserOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(username = username)
     if (!js.isUndefined(includeActive)) __obj.updateDynamic("includeActive")(includeActive)
     if (!js.isUndefined(includeInactive)) __obj.updateDynamic("includeInactive")(includeInactive)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait OutboundLinkArgs extends js.Object {
 object OutboundLinkArgs {
   @scala.inline
   def apply(label: java.lang.String): OutboundLinkArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(label = label)
+  
     __obj.asInstanceOf[OutboundLinkArgs]
   }
 }

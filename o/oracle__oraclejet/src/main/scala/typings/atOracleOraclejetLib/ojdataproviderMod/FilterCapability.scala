@@ -12,8 +12,8 @@ trait FilterCapability extends js.Object {
 object FilterCapability {
   @scala.inline
   def apply(operators: js.Array[java.lang.String]): FilterCapability = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operators")(operators)
+    val __obj = js.Dynamic.literal(operators = operators)
+  
     __obj.asInstanceOf[FilterCapability]
   }
 }

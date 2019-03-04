@@ -19,9 +19,8 @@ trait Anon_QNameQUrl extends js.Object {
 object Anon_QNameQUrl {
   @scala.inline
   def apply(qName: java.lang.String, qUrl: java.lang.String): Anon_QNameQUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qUrl")(qUrl)
+    val __obj = js.Dynamic.literal(qName = qName, qUrl = qUrl)
+  
     __obj.asInstanceOf[Anon_QNameQUrl]
   }
 }

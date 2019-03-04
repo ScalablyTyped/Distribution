@@ -30,15 +30,8 @@ object IFolderPicker {
     suggestedStartLocation: PickerLocationId,
     viewMode: PickerViewMode
   ): IFolderPicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitButtonText")(commitButtonText)
-    __obj.updateDynamic("continuationData")(continuationData)
-    __obj.updateDynamic("fileTypeFilter")(fileTypeFilter)
-    __obj.updateDynamic("pickFolderAndContinue")(pickFolderAndContinue)
-    __obj.updateDynamic("pickSingleFolderAsync")(pickSingleFolderAsync)
-    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
-    __obj.updateDynamic("suggestedStartLocation")(suggestedStartLocation)
-    __obj.updateDynamic("viewMode")(viewMode)
+    val __obj = js.Dynamic.literal(commitButtonText = commitButtonText, continuationData = continuationData, fileTypeFilter = fileTypeFilter, pickFolderAndContinue = pickFolderAndContinue, pickSingleFolderAsync = pickSingleFolderAsync, settingsIdentifier = settingsIdentifier, suggestedStartLocation = suggestedStartLocation, viewMode = viewMode)
+  
     __obj.asInstanceOf[IFolderPicker]
   }
 }

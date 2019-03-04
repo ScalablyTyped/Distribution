@@ -24,10 +24,7 @@ object BrowserEventObj {
     targetdestroyed: Target,
     disconnected: js.UndefOr[scala.Nothing] = js.undefined
   ): BrowserEventObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetchanged")(targetchanged)
-    __obj.updateDynamic("targetcreated")(targetcreated)
-    __obj.updateDynamic("targetdestroyed")(targetdestroyed)
+    val __obj = js.Dynamic.literal(targetchanged = targetchanged, targetcreated = targetcreated, targetdestroyed = targetdestroyed)
     if (!js.isUndefined(disconnected)) __obj.updateDynamic("disconnected")(disconnected)
     __obj.asInstanceOf[BrowserEventObj]
   }

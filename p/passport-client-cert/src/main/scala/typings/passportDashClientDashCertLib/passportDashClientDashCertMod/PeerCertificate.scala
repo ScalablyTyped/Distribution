@@ -28,15 +28,8 @@ object PeerCertificate {
     valid_from: java.lang.String,
     valid_to: java.lang.String
   ): PeerCertificate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fingerprint")(fingerprint)
-    __obj.updateDynamic("issuer")(issuer)
-    __obj.updateDynamic("issuerInfo")(issuerInfo)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("serialNumber")(serialNumber)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("valid_from")(valid_from)
-    __obj.updateDynamic("valid_to")(valid_to)
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint, issuer = issuer, issuerInfo = issuerInfo, raw = raw, serialNumber = serialNumber, subject = subject, valid_from = valid_from, valid_to = valid_to)
+  
     __obj.asInstanceOf[PeerCertificate]
   }
 }

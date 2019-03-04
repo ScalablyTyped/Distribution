@@ -19,19 +19,19 @@ abstract class Client protected ()
   /**
     * @hidden
     */
-  var `communicator_`: js.Any = js.native
+  var communicator_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `no_`: js.Any = js.native
+  var no_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `service_`: js.Any = js.native
+  var service_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `user_`: js.Any = js.native
+  var user_ : js.Any = js.native
   /**
     * Change related {@link Service} object.
     *

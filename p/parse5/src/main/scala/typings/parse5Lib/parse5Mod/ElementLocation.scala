@@ -29,16 +29,8 @@ object ElementLocation {
     startOffset: scala.Double,
     startTag: StartTagLocation
   ): ElementLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("endCol")(endCol)
-    __obj.updateDynamic("endLine")(endLine)
-    __obj.updateDynamic("endOffset")(endOffset)
-    __obj.updateDynamic("endTag")(endTag)
-    __obj.updateDynamic("startCol")(startCol)
-    __obj.updateDynamic("startLine")(startLine)
-    __obj.updateDynamic("startOffset")(startOffset)
-    __obj.updateDynamic("startTag")(startTag)
+    val __obj = js.Dynamic.literal(attrs = attrs, endCol = endCol, endLine = endLine, endOffset = endOffset, endTag = endTag, startCol = startCol, startLine = startLine, startOffset = startOffset, startTag = startTag)
+  
     __obj.asInstanceOf[ElementLocation]
   }
 }

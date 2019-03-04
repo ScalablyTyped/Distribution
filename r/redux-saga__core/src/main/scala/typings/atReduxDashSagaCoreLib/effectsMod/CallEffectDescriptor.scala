@@ -14,10 +14,8 @@ trait CallEffectDescriptor extends js.Object {
 object CallEffectDescriptor {
   @scala.inline
   def apply(args: js.Array[_], context: js.Any, fn: js.Function): CallEffectDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(args = args, context = context, fn = fn)
+  
     __obj.asInstanceOf[CallEffectDescriptor]
   }
 }

@@ -13,8 +13,8 @@ trait ParsedMediaType extends js.Object {
 object ParsedMediaType {
   @scala.inline
   def apply(parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String], `type`: java.lang.String): ParsedMediaType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ParsedMediaType]
   }
 }

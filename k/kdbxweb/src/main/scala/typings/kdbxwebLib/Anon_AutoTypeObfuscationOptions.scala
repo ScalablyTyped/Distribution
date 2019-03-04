@@ -30,16 +30,8 @@ object Anon_AutoTypeObfuscationOptions {
     KdfId: Anon_AesArgon2,
     Signatures: Anon_FileMagic
   ): Anon_AutoTypeObfuscationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoTypeObfuscationOptions")(AutoTypeObfuscationOptions)
-    __obj.updateDynamic("CipherId")(CipherId)
-    __obj.updateDynamic("CompressionAlgorithm")(CompressionAlgorithm)
-    __obj.updateDynamic("CrsAlgorithm")(CrsAlgorithm)
-    __obj.updateDynamic("Defaults")(Defaults)
-    __obj.updateDynamic("ErrorCodes")(ErrorCodes)
-    __obj.updateDynamic("Icons")(Icons)
-    __obj.updateDynamic("KdfId")(KdfId)
-    __obj.updateDynamic("Signatures")(Signatures)
+    val __obj = js.Dynamic.literal(AutoTypeObfuscationOptions = AutoTypeObfuscationOptions, CipherId = CipherId, CompressionAlgorithm = CompressionAlgorithm, CrsAlgorithm = CrsAlgorithm, Defaults = Defaults, ErrorCodes = ErrorCodes, Icons = Icons, KdfId = KdfId, Signatures = Signatures)
+  
     __obj.asInstanceOf[Anon_AutoTypeObfuscationOptions]
   }
 }

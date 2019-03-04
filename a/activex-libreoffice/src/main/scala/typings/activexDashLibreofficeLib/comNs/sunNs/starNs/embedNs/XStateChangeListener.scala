@@ -56,13 +56,8 @@ object XStateChangeListener {
       scala.Unit
     ]
   ): XStateChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("changingState")(changingState)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("stateChanged")(stateChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, changingState = changingState, disposing = disposing, queryInterface = queryInterface, release = release, stateChanged = stateChanged)
+  
     __obj.asInstanceOf[XStateChangeListener]
   }
 }

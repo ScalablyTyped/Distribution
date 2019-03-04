@@ -29,10 +29,8 @@ object Twitter {
     ready: js.Function1[js.Function1[Twitter, scala.Unit], scala.Unit],
     widgets: TwitterWidgets
   ): Twitter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("widgets")(widgets)
+    val __obj = js.Dynamic.literal(events = events, ready = ready, widgets = widgets)
+  
     __obj.asInstanceOf[Twitter]
   }
 }

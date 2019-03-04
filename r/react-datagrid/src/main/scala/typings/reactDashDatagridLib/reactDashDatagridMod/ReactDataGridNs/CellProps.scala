@@ -32,11 +32,8 @@ object CellProps {
     rowIndex: scala.Double,
     style: reactLib.reactMod.ReactNs.CSSProperties
   ): CellProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("rowIndex")(rowIndex)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(className = className, index = index, rowIndex = rowIndex, style = style)
+  
     __obj.asInstanceOf[CellProps]
   }
 }

@@ -168,33 +168,8 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(`inline` = `inline`)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("defaults")(defaults)
-    __obj.updateDynamic("delay")(delay)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    __obj.updateDynamic("onFailure")(onFailure)
-    __obj.updateDynamic("onInvalid")(onInvalid)
-    __obj.updateDynamic("onSuccess")(onSuccess)
-    __obj.updateDynamic("onValid")(onValid)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    __obj.updateDynamic("revalidate")(revalidate)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    __obj.updateDynamic("transition")(transition)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug, defaults = defaults, delay = delay, duration = duration, error = error, fields = fields, keyboardShortcuts = keyboardShortcuts, metadata = metadata, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onFailure = onFailure, onInvalid = onInvalid, onSuccess = onSuccess, onValid = onValid, performance = performance, prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate, rules = rules, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition, verbose = verbose)
+    __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[_Impl]
   }
 }

@@ -22,12 +22,8 @@ object Anon_Firstx {
     last_y: scala.Double,
     staff_height: scala.Double
   ): Anon_Firstx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_x")(first_x)
-    __obj.updateDynamic("first_y")(first_y)
-    __obj.updateDynamic("last_x")(last_x)
-    __obj.updateDynamic("last_y")(last_y)
-    __obj.updateDynamic("staff_height")(staff_height)
+    val __obj = js.Dynamic.literal(first_x = first_x, first_y = first_y, last_x = last_x, last_y = last_y, staff_height = staff_height)
+  
     __obj.asInstanceOf[Anon_Firstx]
   }
 }

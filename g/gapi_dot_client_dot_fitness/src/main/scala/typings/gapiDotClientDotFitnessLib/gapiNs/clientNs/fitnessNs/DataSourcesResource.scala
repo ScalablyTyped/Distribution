@@ -70,15 +70,8 @@ object DataSourcesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
     ]
   ): DataSourcesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("dataPointChanges")(dataPointChanges)
-    __obj.updateDynamic("datasets")(datasets)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(create = create, dataPointChanges = dataPointChanges, datasets = datasets, delete = delete, get = get, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[DataSourcesResource]
   }
 }

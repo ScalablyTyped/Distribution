@@ -22,12 +22,8 @@ object TickerProgress {
     pct: scala.Double,
     total: scala.Double
   ): TickerProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("eta")(eta)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("pct")(pct)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(complete = complete, eta = eta, message = message, pct = pct, total = total)
+  
     __obj.asInstanceOf[TickerProgress]
   }
 }

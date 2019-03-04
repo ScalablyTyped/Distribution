@@ -13,8 +13,7 @@ trait HistoryMessage extends js.Object {
 object HistoryMessage {
   @scala.inline
   def apply(entry: js.Any, timetoken: java.lang.String | scala.Double = null): HistoryMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entry")(entry)
+    val __obj = js.Dynamic.literal(entry = entry)
     if (timetoken != null) __obj.updateDynamic("timetoken")(timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryMessage]
   }

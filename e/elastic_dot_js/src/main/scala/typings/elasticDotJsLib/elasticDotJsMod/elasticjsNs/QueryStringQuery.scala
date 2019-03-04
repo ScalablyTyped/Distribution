@@ -199,33 +199,8 @@ object QueryStringQuery {
     toJSON: js.Function0[js.Any],
     useDisMax: js.Function1[java.lang.String, QueryStringQuery]
   ): QueryStringQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("allowLeadingWildcard")(allowLeadingWildcard)
-    __obj.updateDynamic("analyzeWildcard")(analyzeWildcard)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("autoGeneratePhraseQueries")(autoGeneratePhraseQueries)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("defaultField")(defaultField)
-    __obj.updateDynamic("defaultOperator")(defaultOperator)
-    __obj.updateDynamic("enablePositionIncrements")(enablePositionIncrements)
-    __obj.updateDynamic("escape")(escape)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("fuzzyMaxExpansions")(fuzzyMaxExpansions)
-    __obj.updateDynamic("fuzzyMinSim")(fuzzyMinSim)
-    __obj.updateDynamic("fuzzyPrefixLength")(fuzzyPrefixLength)
-    __obj.updateDynamic("fuzzyRewrite")(fuzzyRewrite)
-    __obj.updateDynamic("lenient")(lenient)
-    __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms)
-    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
-    __obj.updateDynamic("phraseSlop")(phraseSlop)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("quoteAnalyzer")(quoteAnalyzer)
-    __obj.updateDynamic("quoteFieldSuffix")(quoteFieldSuffix)
-    __obj.updateDynamic("rewrite")(rewrite)
-    __obj.updateDynamic("tieBreaker")(tieBreaker)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("useDisMax")(useDisMax)
+    val __obj = js.Dynamic.literal(_type = _type, allowLeadingWildcard = allowLeadingWildcard, analyzeWildcard = analyzeWildcard, analyzer = analyzer, autoGeneratePhraseQueries = autoGeneratePhraseQueries, boost = boost, defaultField = defaultField, defaultOperator = defaultOperator, enablePositionIncrements = enablePositionIncrements, escape = escape, fields = fields, fuzzyMaxExpansions = fuzzyMaxExpansions, fuzzyMinSim = fuzzyMinSim, fuzzyPrefixLength = fuzzyPrefixLength, fuzzyRewrite = fuzzyRewrite, lenient = lenient, lowercaseExpandedTerms = lowercaseExpandedTerms, minimumShouldMatch = minimumShouldMatch, phraseSlop = phraseSlop, query = query, quoteAnalyzer = quoteAnalyzer, quoteFieldSuffix = quoteFieldSuffix, rewrite = rewrite, tieBreaker = tieBreaker, toJSON = toJSON, useDisMax = useDisMax)
+  
     __obj.asInstanceOf[QueryStringQuery]
   }
 }

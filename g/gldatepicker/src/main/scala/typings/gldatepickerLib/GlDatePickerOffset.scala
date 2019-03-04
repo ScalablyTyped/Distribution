@@ -13,9 +13,8 @@ trait GlDatePickerOffset extends js.Object {
 object GlDatePickerOffset {
   @scala.inline
   def apply(x: scala.Double, y: scala.Double): GlDatePickerOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[GlDatePickerOffset]
   }
 }

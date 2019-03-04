@@ -12,11 +12,8 @@ trait BoundedDistributiveLattice[A]
 object BoundedDistributiveLattice {
   @scala.inline
   def apply[A](join: js.Function2[A, A, A], meet: js.Function2[A, A, A], one: A, zero: A): BoundedDistributiveLattice[A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("join")(join)
-    __obj.updateDynamic("meet")(meet)
-    __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
-    __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(join = join, meet = meet, one = one.asInstanceOf[js.Any], zero = zero.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BoundedDistributiveLattice[A]]
   }
 }

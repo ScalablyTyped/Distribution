@@ -22,12 +22,8 @@ object NavigationLayout {
     isMeasured: scala.Boolean,
     width: AnimatedValue
   ): NavigationLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("initHeight")(initHeight)
-    __obj.updateDynamic("initWidth")(initWidth)
-    __obj.updateDynamic("isMeasured")(isMeasured)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, initHeight = initHeight, initWidth = initWidth, isMeasured = isMeasured, width = width)
+  
     __obj.asInstanceOf[NavigationLayout]
   }
 }

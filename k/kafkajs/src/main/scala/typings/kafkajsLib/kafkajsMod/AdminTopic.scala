@@ -22,8 +22,7 @@ object AdminTopic {
     replicaAssignment: js.Array[AdminTopicReplicaAssignment] = null,
     replicationFactor: scala.Int | scala.Double = null
   ): AdminTopic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(topic = topic)
     if (configEntries != null) __obj.updateDynamic("configEntries")(configEntries)
     if (numPartitions != null) __obj.updateDynamic("numPartitions")(numPartitions.asInstanceOf[js.Any])
     if (replicaAssignment != null) __obj.updateDynamic("replicaAssignment")(replicaAssignment)

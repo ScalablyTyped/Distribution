@@ -68,9 +68,8 @@ object IWebElementFinders {
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]]
     ]
   ): IWebElementFinders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findElement")(findElement)
-    __obj.updateDynamic("findElements")(findElements)
+    val __obj = js.Dynamic.literal(findElement = findElement, findElements = findElements)
+  
     __obj.asInstanceOf[IWebElementFinders]
   }
 }

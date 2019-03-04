@@ -88,30 +88,8 @@ object XComplexDescriptionAccess {
     ],
     setRowDescriptions: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
   ): XComplexDescriptionAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnDescriptions")(ColumnDescriptions)
-    __obj.updateDynamic("ComplexColumnDescriptions")(ComplexColumnDescriptions)
-    __obj.updateDynamic("ComplexRowDescriptions")(ComplexRowDescriptions)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("NotANumber")(NotANumber)
-    __obj.updateDynamic("RowDescriptions")(RowDescriptions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChartDataChangeEventListener")(addChartDataChangeEventListener)
-    __obj.updateDynamic("getColumnDescriptions")(getColumnDescriptions)
-    __obj.updateDynamic("getComplexColumnDescriptions")(getComplexColumnDescriptions)
-    __obj.updateDynamic("getComplexRowDescriptions")(getComplexRowDescriptions)
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getNotANumber")(getNotANumber)
-    __obj.updateDynamic("getRowDescriptions")(getRowDescriptions)
-    __obj.updateDynamic("isNotANumber")(isNotANumber)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChartDataChangeEventListener")(removeChartDataChangeEventListener)
-    __obj.updateDynamic("setColumnDescriptions")(setColumnDescriptions)
-    __obj.updateDynamic("setComplexColumnDescriptions")(setComplexColumnDescriptions)
-    __obj.updateDynamic("setComplexRowDescriptions")(setComplexRowDescriptions)
-    __obj.updateDynamic("setData")(setData)
-    __obj.updateDynamic("setRowDescriptions")(setRowDescriptions)
+    val __obj = js.Dynamic.literal(ColumnDescriptions = ColumnDescriptions, ComplexColumnDescriptions = ComplexColumnDescriptions, ComplexRowDescriptions = ComplexRowDescriptions, Data = Data, NotANumber = NotANumber, RowDescriptions = RowDescriptions, acquire = acquire, addChartDataChangeEventListener = addChartDataChangeEventListener, getColumnDescriptions = getColumnDescriptions, getComplexColumnDescriptions = getComplexColumnDescriptions, getComplexRowDescriptions = getComplexRowDescriptions, getData = getData, getNotANumber = getNotANumber, getRowDescriptions = getRowDescriptions, isNotANumber = isNotANumber, queryInterface = queryInterface, release = release, removeChartDataChangeEventListener = removeChartDataChangeEventListener, setColumnDescriptions = setColumnDescriptions, setComplexColumnDescriptions = setComplexColumnDescriptions, setComplexRowDescriptions = setComplexRowDescriptions, setData = setData, setRowDescriptions = setRowDescriptions)
+  
     __obj.asInstanceOf[XComplexDescriptionAccess]
   }
 }

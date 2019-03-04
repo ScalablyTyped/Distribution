@@ -76,9 +76,7 @@ object ClusterInstanceArgs {
     promotionTier: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ClusterInstanceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceClass")(instanceClass.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], instanceClass = instanceClass.asInstanceOf[js.Any])
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])

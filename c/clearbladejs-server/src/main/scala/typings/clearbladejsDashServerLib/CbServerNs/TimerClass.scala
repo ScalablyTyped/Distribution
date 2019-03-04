@@ -16,9 +16,8 @@ object TimerClass {
     Create: js.Function3[java.lang.String, TimerCreateOptions, CbCallback, scala.Unit],
     Fetch: js.Function2[java.lang.String, CbCallback, scala.Unit]
   ): TimerClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Create")(Create)
-    __obj.updateDynamic("Fetch")(Fetch)
+    val __obj = js.Dynamic.literal(Create = Create, Fetch = Fetch)
+  
     __obj.asInstanceOf[TimerClass]
   }
 }

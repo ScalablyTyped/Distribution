@@ -59,15 +59,8 @@ object SidenavOptions {
     onOpenStart: js.Function2[Sidenav, stdLib.Element, scala.Unit],
     outDuration: scala.Double
   ): SidenavOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("draggable")(draggable)
-    __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("outDuration")(outDuration)
+    val __obj = js.Dynamic.literal(draggable = draggable, edge = edge.asInstanceOf[js.Any], inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
     __obj.asInstanceOf[SidenavOptions]
   }
 }

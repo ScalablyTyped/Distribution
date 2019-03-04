@@ -18,12 +18,8 @@ object IPanoramaConnectionMarker {
     getPosition: js.Function0[js.Array[scala.Double]],
     properties: yandexDashMapsLib.ymapsNs.dataNs.Manager
   ): IPanoramaConnectionMarker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConnectedPanorama")(getConnectedPanorama)
-    __obj.updateDynamic("getIconSet")(getIconSet)
-    __obj.updateDynamic("getPanorama")(getPanorama)
-    __obj.updateDynamic("getPosition")(getPosition)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(getConnectedPanorama = getConnectedPanorama, getIconSet = getIconSet, getPanorama = getPanorama, getPosition = getPosition, properties = properties)
+  
     __obj.asInstanceOf[IPanoramaConnectionMarker]
   }
 }

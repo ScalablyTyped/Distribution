@@ -20,9 +20,8 @@ object IntentRequest {
     intent: Intent = null,
     locale: java.lang.String = null
   ): IntentRequest = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(requestId = requestId, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (dialogState != null) __obj.updateDynamic("dialogState")(dialogState)
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (locale != null) __obj.updateDynamic("locale")(locale)

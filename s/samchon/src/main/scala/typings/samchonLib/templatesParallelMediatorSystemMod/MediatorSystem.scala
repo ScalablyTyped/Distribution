@@ -28,11 +28,11 @@ abstract class MediatorSystem protected ()
   /**
     * @hidden
     */
-  var `progress_list_`: js.Any = js.native
+  var progress_list_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `system_array_`: js.Any = js.native
+  var system_array_ : js.Any = js.native
   /**
     * Get parent {@link ParallelSystemArrayMediator} or {@link DistributedSystemArrayMediator} object.
     */

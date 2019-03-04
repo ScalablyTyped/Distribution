@@ -55,14 +55,8 @@ object Sorts {
     initOnLoad: js.Function0[scala.Boolean],
     remove: js.Function1[java.lang.String, Dynatable]
   ): Sorts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("guessType")(guessType)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initOnLoad")(initOnLoad)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(add = add, clear = clear, functions = functions, guessType = guessType, init = init, initOnLoad = initOnLoad, remove = remove)
+  
     __obj.asInstanceOf[Sorts]
   }
 }

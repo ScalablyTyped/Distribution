@@ -24,8 +24,7 @@ object BindingDef {
     securityContext: atAngularCoreLib.srcSanitizationSecurityMod.SecurityContext = null,
     suffix: java.lang.String = null
   ): BindingDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
+    val __obj = js.Dynamic.literal(flags = flags)
     if (name != null) __obj.updateDynamic("name")(name)
     if (nonMinifiedName != null) __obj.updateDynamic("nonMinifiedName")(nonMinifiedName)
     if (ns != null) __obj.updateDynamic("ns")(ns)

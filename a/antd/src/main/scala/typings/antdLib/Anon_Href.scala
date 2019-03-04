@@ -13,9 +13,8 @@ trait Anon_Href extends js.Object {
 object Anon_Href {
   @scala.inline
   def apply(href: java.lang.String, title: reactLib.reactMod.ReactNs.ReactNode): Anon_Href = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(href = href, title = title.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Href]
   }
 }

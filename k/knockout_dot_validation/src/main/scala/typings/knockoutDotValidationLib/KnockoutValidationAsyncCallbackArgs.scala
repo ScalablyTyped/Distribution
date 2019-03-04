@@ -13,9 +13,8 @@ trait KnockoutValidationAsyncCallbackArgs extends js.Object {
 object KnockoutValidationAsyncCallbackArgs {
   @scala.inline
   def apply(isValid: scala.Boolean, message: java.lang.String): KnockoutValidationAsyncCallbackArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(isValid = isValid, message = message)
+  
     __obj.asInstanceOf[KnockoutValidationAsyncCallbackArgs]
   }
 }

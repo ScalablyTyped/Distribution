@@ -26,14 +26,8 @@ object Anon_ClassName {
     ref: js.Function1[reactLib.HTMLElement, scala.Unit],
     tabIndex: /* import warning: ImportType.apply Failed type conversion: @blueprintjs/core.@blueprintjs/core/lib/esm/components/button/abstractButton.IButtonProps & H['tabIndex'] */ js.Any
   ): Anon_ClassName[H] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
-    __obj.updateDynamic("onKeyUp")(onKeyUp)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("tabIndex")(tabIndex)
+    val __obj = js.Dynamic.literal(className = className, disabled = disabled, onClick = onClick, onKeyDown = onKeyDown, onKeyUp = onKeyUp, ref = ref, tabIndex = tabIndex)
+  
     __obj.asInstanceOf[Anon_ClassName[H]]
   }
 }

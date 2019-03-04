@@ -15,7 +15,7 @@ class IO[A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: IO[js.Function1[/* b */ B, C]], fb: IO[B]): IO[C] = js.native
+  def ap_[B, C](`this`: IO[js.Function1[/* b */ B, C]], fb: IO[B]): IO[C] = js.native
   /**
     * Combine two effectful actions, keeping only the result of the first
     * @since 1.6.0

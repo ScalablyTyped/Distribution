@@ -33,13 +33,8 @@ object IntegerBezierSegment2D {
     Px: scala.Double,
     Py: scala.Double
   ): IntegerBezierSegment2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("C1x")(C1x)
-    __obj.updateDynamic("C1y")(C1y)
-    __obj.updateDynamic("C2x")(C2x)
-    __obj.updateDynamic("C2y")(C2y)
-    __obj.updateDynamic("Px")(Px)
-    __obj.updateDynamic("Py")(Py)
+    val __obj = js.Dynamic.literal(C1x = C1x, C1y = C1y, C2x = C2x, C2y = C2y, Px = Px, Py = Py)
+  
     __obj.asInstanceOf[IntegerBezierSegment2D]
   }
 }

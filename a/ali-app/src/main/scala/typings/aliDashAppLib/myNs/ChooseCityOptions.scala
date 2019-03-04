@@ -30,12 +30,7 @@ object ChooseCityOptions {
     complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
     fail: js.Function1[js.Any, scala.Unit] = null
   ): ChooseCityOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cities")(cities)
-    __obj.updateDynamic("hotCities")(hotCities)
-    __obj.updateDynamic("showHotCities")(showHotCities)
-    __obj.updateDynamic("showLocatedCity")(showLocatedCity)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(cities = cities, hotCities = hotCities, showHotCities = showHotCities, showLocatedCity = showLocatedCity, success = success)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[ChooseCityOptions]

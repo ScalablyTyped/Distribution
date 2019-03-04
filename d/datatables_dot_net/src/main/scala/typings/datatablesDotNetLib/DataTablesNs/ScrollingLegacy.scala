@@ -26,14 +26,8 @@ object ScrollingLegacy {
     sX: java.lang.String,
     sY: java.lang.String
   ): ScrollingLegacy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bAutoCss")(bAutoCss)
-    __obj.updateDynamic("bCollapse")(bCollapse)
-    __obj.updateDynamic("bInfinite")(bInfinite)
-    __obj.updateDynamic("iBarWidth")(iBarWidth)
-    __obj.updateDynamic("iLoadGap")(iLoadGap)
-    __obj.updateDynamic("sX")(sX)
-    __obj.updateDynamic("sY")(sY)
+    val __obj = js.Dynamic.literal(bAutoCss = bAutoCss, bCollapse = bCollapse, bInfinite = bInfinite, iBarWidth = iBarWidth, iLoadGap = iLoadGap, sX = sX, sY = sY)
+  
     __obj.asInstanceOf[ScrollingLegacy]
   }
 }

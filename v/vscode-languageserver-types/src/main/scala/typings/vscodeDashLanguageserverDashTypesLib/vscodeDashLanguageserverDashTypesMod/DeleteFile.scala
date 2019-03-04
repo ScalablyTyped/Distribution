@@ -28,9 +28,7 @@ object DeleteFile {
     uri: java.lang.String,
     options: DeleteFileOptions = null
   ): DeleteFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(kind = kind, uri = uri)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[DeleteFile]
   }

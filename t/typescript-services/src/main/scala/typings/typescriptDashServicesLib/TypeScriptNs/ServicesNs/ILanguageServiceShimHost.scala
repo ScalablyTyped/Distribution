@@ -43,25 +43,8 @@ object ILanguageServiceShimHost {
     resolveRelativePath: js.Function2[java.lang.String, java.lang.String, java.lang.String],
     warning: js.Function0[scala.Boolean]
   ): ILanguageServiceShimHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("directoryExists")(directoryExists)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("fatal")(fatal)
-    __obj.updateDynamic("fileExists")(fileExists)
-    __obj.updateDynamic("getCompilationSettings")(getCompilationSettings)
-    __obj.updateDynamic("getDiagnosticsObject")(getDiagnosticsObject)
-    __obj.updateDynamic("getLocalizedDiagnosticMessages")(getLocalizedDiagnosticMessages)
-    __obj.updateDynamic("getParentDirectory")(getParentDirectory)
-    __obj.updateDynamic("getScriptByteOrderMark")(getScriptByteOrderMark)
-    __obj.updateDynamic("getScriptFileNames")(getScriptFileNames)
-    __obj.updateDynamic("getScriptIsOpen")(getScriptIsOpen)
-    __obj.updateDynamic("getScriptSnapshot")(getScriptSnapshot)
-    __obj.updateDynamic("getScriptVersion")(getScriptVersion)
-    __obj.updateDynamic("information")(information)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("resolveRelativePath")(resolveRelativePath)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(debug = debug, directoryExists = directoryExists, error = error, fatal = fatal, fileExists = fileExists, getCompilationSettings = getCompilationSettings, getDiagnosticsObject = getDiagnosticsObject, getLocalizedDiagnosticMessages = getLocalizedDiagnosticMessages, getParentDirectory = getParentDirectory, getScriptByteOrderMark = getScriptByteOrderMark, getScriptFileNames = getScriptFileNames, getScriptIsOpen = getScriptIsOpen, getScriptSnapshot = getScriptSnapshot, getScriptVersion = getScriptVersion, information = information, log = log, resolveRelativePath = resolveRelativePath, warning = warning)
+  
     __obj.asInstanceOf[ILanguageServiceShimHost]
   }
 }

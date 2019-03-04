@@ -54,14 +54,8 @@ object FillBitmap {
     aURL: java.lang.String,
     bLogicalSize: scala.Boolean
   ): FillBitmap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aBitmapMode")(aBitmapMode)
-    __obj.updateDynamic("aOffset")(aOffset)
-    __obj.updateDynamic("aPositionOffset")(aPositionOffset)
-    __obj.updateDynamic("aRectanglePoint")(aRectanglePoint)
-    __obj.updateDynamic("aSize")(aSize)
-    __obj.updateDynamic("aURL")(aURL)
-    __obj.updateDynamic("bLogicalSize")(bLogicalSize)
+    val __obj = js.Dynamic.literal(aBitmapMode = aBitmapMode, aOffset = aOffset, aPositionOffset = aPositionOffset, aRectanglePoint = aRectanglePoint, aSize = aSize, aURL = aURL, bLogicalSize = bLogicalSize)
+  
     __obj.asInstanceOf[FillBitmap]
   }
 }

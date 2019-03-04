@@ -12,8 +12,8 @@ trait HookCompileOptions extends js.Object {
 object HookCompileOptions {
   @scala.inline
   def apply(`type`: tapableLib.TapType): HookCompileOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[HookCompileOptions]
   }
 }

@@ -30,12 +30,8 @@ object ASPxClientDashboardItemDrillDownStateChangedEventArgs {
     ItemName: java.lang.String,
     Values: js.Array[js.Object]
   ): ASPxClientDashboardItemDrillDownStateChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("IsNullValue")(IsNullValue)
-    __obj.updateDynamic("IsOthersValue")(IsOthersValue)
-    __obj.updateDynamic("ItemName")(ItemName)
-    __obj.updateDynamic("Values")(Values)
+    val __obj = js.Dynamic.literal(Action = Action, IsNullValue = IsNullValue, IsOthersValue = IsOthersValue, ItemName = ItemName, Values = Values)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemDrillDownStateChangedEventArgs]
   }
 }

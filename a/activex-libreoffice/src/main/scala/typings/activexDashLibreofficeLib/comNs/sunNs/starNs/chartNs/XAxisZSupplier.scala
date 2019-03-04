@@ -68,18 +68,8 @@ object XAxisZSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAxisZSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ZAxis")(ZAxis)
-    __obj.updateDynamic("ZAxisTitle")(ZAxisTitle)
-    __obj.updateDynamic("ZHelpGrid")(ZHelpGrid)
-    __obj.updateDynamic("ZMainGrid")(ZMainGrid)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getZAxis")(getZAxis)
-    __obj.updateDynamic("getZAxisTitle")(getZAxisTitle)
-    __obj.updateDynamic("getZHelpGrid")(getZHelpGrid)
-    __obj.updateDynamic("getZMainGrid")(getZMainGrid)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ZAxis = ZAxis, ZAxisTitle = ZAxisTitle, ZHelpGrid = ZHelpGrid, ZMainGrid = ZMainGrid, acquire = acquire, getZAxis = getZAxis, getZAxisTitle = getZAxisTitle, getZHelpGrid = getZHelpGrid, getZMainGrid = getZMainGrid, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAxisZSupplier]
   }
 }

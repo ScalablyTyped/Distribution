@@ -25,16 +25,8 @@ object BootstrapBinaryImageEventMap {
     validation: EditValidationEventArgs,
     valueChanged: ProcessingModeEventArgs
   ): BootstrapBinaryImageEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("gotFocus")(gotFocus)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("lostFocus")(lostFocus)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("valueChanged")(valueChanged)
+    val __obj = js.Dynamic.literal(beginCallback = beginCallback, callbackError = callbackError, click = click, endCallback = endCallback, gotFocus = gotFocus, init = init, lostFocus = lostFocus, validation = validation, valueChanged = valueChanged)
+  
     __obj.asInstanceOf[BootstrapBinaryImageEventMap]
   }
 }

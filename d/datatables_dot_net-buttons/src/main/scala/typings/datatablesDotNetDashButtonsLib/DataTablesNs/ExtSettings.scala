@@ -12,8 +12,8 @@ trait ExtSettings extends js.Object {
 object ExtSettings {
   @scala.inline
   def apply(buttons: ExtButtonsSettings): ExtSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
+    val __obj = js.Dynamic.literal(buttons = buttons)
+  
     __obj.asInstanceOf[ExtSettings]
   }
 }

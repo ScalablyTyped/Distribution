@@ -12,8 +12,8 @@ trait KeyboardInstance extends js.Object {
 object KeyboardInstance {
   @scala.inline
   def apply(createShortcutHandle: js.Function1[KeyboardShortcutDescriptor, KeyboardShortcutHandle]): KeyboardInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createShortcutHandle")(createShortcutHandle)
+    val __obj = js.Dynamic.literal(createShortcutHandle = createShortcutHandle)
+  
     __obj.asInstanceOf[KeyboardInstance]
   }
 }

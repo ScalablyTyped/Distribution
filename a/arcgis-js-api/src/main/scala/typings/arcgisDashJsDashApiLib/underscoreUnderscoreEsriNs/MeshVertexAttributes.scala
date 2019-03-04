@@ -51,11 +51,7 @@ object MeshVertexAttributes {
       WatchHandle
     ] = null
   ): MeshVertexAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, position = position, propertyIsEnumerable = propertyIsEnumerable)
     if (color != null) __obj.updateDynamic("color")(color)
     if (get != null) __obj.updateDynamic("get")(get)
     if (normal != null) __obj.updateDynamic("normal")(normal)

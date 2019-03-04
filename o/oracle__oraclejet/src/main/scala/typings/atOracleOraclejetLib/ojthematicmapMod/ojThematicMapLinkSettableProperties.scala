@@ -31,16 +31,8 @@ object ojThematicMapLinkSettableProperties {
     svgStyle: js.Object,
     width: scala.Double
   ): ojThematicMapLinkSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("endLocation")(endLocation)
-    __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    __obj.updateDynamic("shortDesc")(shortDesc)
-    __obj.updateDynamic("startLocation")(startLocation)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(categories = categories, color = color, endLocation = endLocation, selectable = selectable.asInstanceOf[js.Any], shortDesc = shortDesc, startLocation = startLocation, svgClassName = svgClassName, svgStyle = svgStyle, width = width)
+  
     __obj.asInstanceOf[ojThematicMapLinkSettableProperties]
   }
 }

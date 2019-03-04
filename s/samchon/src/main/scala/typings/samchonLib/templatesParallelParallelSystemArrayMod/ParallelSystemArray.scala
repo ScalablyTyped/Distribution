@@ -15,7 +15,7 @@ abstract class ParallelSystemArray[System /* <: samchonLib.templatesParallelPara
   /**
     * @hidden
     */
-  var `history_sequence_`: js.Any = js.native
+  var history_sequence_ : js.Any = js.native
   /**
     * @hidden
     */

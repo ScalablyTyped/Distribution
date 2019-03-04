@@ -15,11 +15,8 @@ trait Color extends js.Object {
 object Color {
   @scala.inline
   def apply(a: scala.Double, b: scala.Double, g: scala.Double, r: scala.Double): Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("a")(a)
-    __obj.updateDynamic("b")(b)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("r")(r)
+    val __obj = js.Dynamic.literal(a = a, b = b, g = g, r = r)
+  
     __obj.asInstanceOf[Color]
   }
 }

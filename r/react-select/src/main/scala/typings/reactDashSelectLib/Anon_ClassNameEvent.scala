@@ -20,11 +20,8 @@ object Anon_ClassNameEvent {
     onMouseDown: js.Function1[js.Any, scala.Unit],
     onTouchEnd: js.Function1[js.Any, scala.Unit]
   ): Anon_ClassNameEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onMouseDown")(onMouseDown)
-    __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    val __obj = js.Dynamic.literal(className = className, onClick = onClick, onMouseDown = onMouseDown, onTouchEnd = onTouchEnd)
+  
     __obj.asInstanceOf[Anon_ClassNameEvent]
   }
 }

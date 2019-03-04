@@ -18,10 +18,8 @@ object Anon_L {
     P: js.Array[scala.Double],
     U: mathjsLib.mathjsMod.mathNs.MathArray | mathjsLib.mathjsMod.mathNs.Matrix
   ): Anon_L = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("L")(L.asInstanceOf[js.Any])
-    __obj.updateDynamic("P")(P)
-    __obj.updateDynamic("U")(U.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(L = L.asInstanceOf[js.Any], P = P, U = U.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_L]
   }
 }

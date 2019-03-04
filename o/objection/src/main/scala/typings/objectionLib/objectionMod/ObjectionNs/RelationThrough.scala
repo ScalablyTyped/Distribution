@@ -24,9 +24,7 @@ object RelationThrough {
     extra: js.Array[java.lang.String] | js.Object = null,
     modelClass: ModelClass[_] | java.lang.String = null
   ): RelationThrough = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (modelClass != null) __obj.updateDynamic("modelClass")(modelClass.asInstanceOf[js.Any])

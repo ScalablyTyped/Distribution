@@ -38,8 +38,7 @@ object Props {
     selected: stdLib.Date | js.Array[stdLib.Date] = null,
     showOutsideDays: js.UndefOr[scala.Boolean] = js.undefined
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDateSelected")(onDateSelected)
+    val __obj = js.Dynamic.literal(onDateSelected = onDateSelected)
     if (children != null) __obj.updateDynamic("children")(children)
     if (date != null) __obj.updateDynamic("date")(date)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])

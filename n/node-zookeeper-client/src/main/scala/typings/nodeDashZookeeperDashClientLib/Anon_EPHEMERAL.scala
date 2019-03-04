@@ -20,11 +20,8 @@ object Anon_EPHEMERAL {
     PERSISTENT: scala.Double,
     PERSISTENT_SEQUENTIAL: scala.Double
   ): Anon_EPHEMERAL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EPHEMERAL")(EPHEMERAL)
-    __obj.updateDynamic("EPHEMERAL_SEQUENTIAL")(EPHEMERAL_SEQUENTIAL)
-    __obj.updateDynamic("PERSISTENT")(PERSISTENT)
-    __obj.updateDynamic("PERSISTENT_SEQUENTIAL")(PERSISTENT_SEQUENTIAL)
+    val __obj = js.Dynamic.literal(EPHEMERAL = EPHEMERAL, EPHEMERAL_SEQUENTIAL = EPHEMERAL_SEQUENTIAL, PERSISTENT = PERSISTENT, PERSISTENT_SEQUENTIAL = PERSISTENT_SEQUENTIAL)
+  
     __obj.asInstanceOf[Anon_EPHEMERAL]
   }
 }

@@ -17,10 +17,7 @@ object TreeListExpandEvent {
     sender: TreeList,
     model: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null
   ): TreeListExpandEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (model != null) __obj.updateDynamic("model")(model)
     __obj.asInstanceOf[TreeListExpandEvent]
   }

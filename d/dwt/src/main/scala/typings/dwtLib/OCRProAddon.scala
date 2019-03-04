@@ -20,11 +20,8 @@ object OCRProAddon {
     NewOCRZone: js.Function0[OCRZone],
     NewSettings: js.Function0[Settings]
   ): OCRProAddon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewOCRError")(NewOCRError)
-    __obj.updateDynamic("NewOCRReadPara")(NewOCRReadPara)
-    __obj.updateDynamic("NewOCRZone")(NewOCRZone)
-    __obj.updateDynamic("NewSettings")(NewSettings)
+    val __obj = js.Dynamic.literal(NewOCRError = NewOCRError, NewOCRReadPara = NewOCRReadPara, NewOCRZone = NewOCRZone, NewSettings = NewSettings)
+  
     __obj.asInstanceOf[OCRProAddon]
   }
 }

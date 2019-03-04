@@ -14,10 +14,8 @@ trait ApiResponse extends js.Object {
 object ApiResponse {
   @scala.inline
   def apply(body: js.Any, headers: js.Any, statusCode: scala.Double): ApiResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode)
+  
     __obj.asInstanceOf[ApiResponse]
   }
 }

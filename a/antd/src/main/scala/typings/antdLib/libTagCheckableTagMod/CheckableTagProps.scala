@@ -20,8 +20,7 @@ object CheckableTagProps {
     onChange: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
     prefixCls: java.lang.String = null
   ): CheckableTagProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checked")(checked)
+    val __obj = js.Dynamic.literal(checked = checked)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

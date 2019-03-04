@@ -27,8 +27,7 @@ object CreateOptions {
     isOnly: js.UndefOr[scala.Boolean] = js.undefined,
     pending: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(title = title)
     if (file != null) __obj.updateDynamic("file")(file)
     if (fn != null) __obj.updateDynamic("fn")(fn)
     if (!js.isUndefined(isOnly)) __obj.updateDynamic("isOnly")(isOnly)

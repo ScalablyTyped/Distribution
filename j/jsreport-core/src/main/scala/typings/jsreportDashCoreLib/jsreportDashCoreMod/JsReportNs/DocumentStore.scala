@@ -12,8 +12,8 @@ trait DocumentStore extends js.Object {
 object DocumentStore {
   @scala.inline
   def apply(collection: js.Function1[java.lang.String, Collection]): DocumentStore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
+    val __obj = js.Dynamic.literal(collection = collection)
+  
     __obj.asInstanceOf[DocumentStore]
   }
 }

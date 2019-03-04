@@ -20,11 +20,8 @@ object ITooltipService {
     move: js.Function1[TooltipMoveOptions, scala.Unit],
     show: js.Function1[TooltipShowOptions, scala.Unit]
   ): ITooltipService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("move")(move)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(enabled = enabled, hide = hide, move = move, show = show)
+  
     __obj.asInstanceOf[ITooltipService]
   }
 }

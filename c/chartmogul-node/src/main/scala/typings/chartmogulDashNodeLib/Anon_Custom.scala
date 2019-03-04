@@ -16,9 +16,8 @@ object Anon_Custom {
     custom: js.Array[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.NewCustomAttributes],
     email: java.lang.String
   ): Anon_Custom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(custom = custom, email = email)
+  
     __obj.asInstanceOf[Anon_Custom]
   }
 }

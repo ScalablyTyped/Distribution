@@ -37,12 +37,8 @@ object ISearch {
     tokens: js.Array[ISearchToken],
     total: scala.Double
   ): ISearch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("tokens")(tokens)
-    __obj.updateDynamic("total")(total)
+    val __obj = js.Dynamic.literal(items = items, options = options, query = query, tokens = tokens, total = total)
+  
     __obj.asInstanceOf[ISearch]
   }
 }

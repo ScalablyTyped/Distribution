@@ -14,9 +14,8 @@ trait TimePeriod
 object TimePeriod {
   @scala.inline
   def apply(endTime: java.lang.String, startTime: java.lang.String): TimePeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endTime")(endTime)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(endTime = endTime, startTime = startTime)
+  
     __obj.asInstanceOf[TimePeriod]
   }
 }

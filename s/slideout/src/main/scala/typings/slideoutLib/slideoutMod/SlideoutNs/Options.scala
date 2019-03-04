@@ -60,9 +60,7 @@ object Options {
     tolerance: scala.Int | scala.Double = null,
     touch: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("panel")(panel)
+    val __obj = js.Dynamic.literal(menu = menu, panel = panel)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (fx != null) __obj.updateDynamic("fx")(fx)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])

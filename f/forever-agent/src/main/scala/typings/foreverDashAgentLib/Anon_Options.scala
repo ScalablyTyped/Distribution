@@ -20,8 +20,8 @@ object Anon_Options {
       foreverDashAgentLib.foreverDashAgentMod.ForeverAgentSSL
     ]
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SSL")(SSL)
+    val __obj = js.Dynamic.literal(SSL = SSL)
+  
     __obj.asInstanceOf[Anon_Options]
   }
 }

@@ -52,27 +52,8 @@ object LayerWriter {
     setPropertyValueForLocale: js.Function2[js.Any, java.lang.String, scala.Unit],
     startLayer: js.Function0[scala.Unit]
   ): LayerWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addOrReplaceNode")(addOrReplaceNode)
-    __obj.updateDynamic("addOrReplaceNodeFromTemplate")(addOrReplaceNodeFromTemplate)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("addPropertyWithValue")(addPropertyWithValue)
-    __obj.updateDynamic("dropNode")(dropNode)
-    __obj.updateDynamic("endLayer")(endLayer)
-    __obj.updateDynamic("endNode")(endNode)
-    __obj.updateDynamic("endProperty")(endProperty)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("overrideNode")(overrideNode)
-    __obj.updateDynamic("overrideProperty")(overrideProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setOutputStream")(setOutputStream)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
-    __obj.updateDynamic("setPropertyValueForLocale")(setPropertyValueForLocale)
-    __obj.updateDynamic("startLayer")(startLayer)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = acquire, addOrReplaceNode = addOrReplaceNode, addOrReplaceNodeFromTemplate = addOrReplaceNodeFromTemplate, addProperty = addProperty, addPropertyWithValue = addPropertyWithValue, dropNode = dropNode, endLayer = endLayer, endNode = endNode, endProperty = endProperty, getOutputStream = getOutputStream, initialize = initialize, overrideNode = overrideNode, overrideProperty = overrideProperty, queryInterface = queryInterface, release = release, setOutputStream = setOutputStream, setPropertyValue = setPropertyValue, setPropertyValueForLocale = setPropertyValueForLocale, startLayer = startLayer)
+  
     __obj.asInstanceOf[LayerWriter]
   }
 }

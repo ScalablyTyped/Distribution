@@ -39,11 +39,8 @@ object ASPxClientDashboardItemRequestUnderlyingDataParameters {
     UniqueValuesByAxisName: js.Object,
     ValuesByAxisName: js.Object
   ): ASPxClientDashboardItemRequestUnderlyingDataParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AxisPoints")(AxisPoints)
-    __obj.updateDynamic("DataMembers")(DataMembers)
-    __obj.updateDynamic("UniqueValuesByAxisName")(UniqueValuesByAxisName)
-    __obj.updateDynamic("ValuesByAxisName")(ValuesByAxisName)
+    val __obj = js.Dynamic.literal(AxisPoints = AxisPoints, DataMembers = DataMembers, UniqueValuesByAxisName = UniqueValuesByAxisName, ValuesByAxisName = ValuesByAxisName)
+  
     __obj.asInstanceOf[ASPxClientDashboardItemRequestUnderlyingDataParameters]
   }
 }

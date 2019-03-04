@@ -74,14 +74,8 @@ object XContextChangeEventMultiplexer {
       scala.Unit
     ]
   ): XContextChangeEventMultiplexer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addContextChangeEventListener")(addContextChangeEventListener)
-    __obj.updateDynamic("broadcastContextChangeEvent")(broadcastContextChangeEvent)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeAllContextChangeEventListeners")(removeAllContextChangeEventListeners)
-    __obj.updateDynamic("removeContextChangeEventListener")(removeContextChangeEventListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addContextChangeEventListener = addContextChangeEventListener, broadcastContextChangeEvent = broadcastContextChangeEvent, queryInterface = queryInterface, release = release, removeAllContextChangeEventListeners = removeAllContextChangeEventListeners, removeContextChangeEventListener = removeContextChangeEventListener)
+  
     __obj.asInstanceOf[XContextChangeEventMultiplexer]
   }
 }

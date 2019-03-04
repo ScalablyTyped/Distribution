@@ -33,11 +33,8 @@ object DataPilotFieldAutoShowInfo {
     ItemCount: scala.Double,
     ShowItemsMode: scala.Double
   ): DataPilotFieldAutoShowInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataField")(DataField)
-    __obj.updateDynamic("IsEnabled")(IsEnabled)
-    __obj.updateDynamic("ItemCount")(ItemCount)
-    __obj.updateDynamic("ShowItemsMode")(ShowItemsMode)
+    val __obj = js.Dynamic.literal(DataField = DataField, IsEnabled = IsEnabled, ItemCount = ItemCount, ShowItemsMode = ShowItemsMode)
+  
     __obj.asInstanceOf[DataPilotFieldAutoShowInfo]
   }
 }

@@ -50,9 +50,7 @@ object EurekaClientConfig {
     useDns: js.UndefOr[scala.Boolean] = js.undefined,
     useLocalMetadata: js.UndefOr[scala.Boolean] = js.undefined
   ): EurekaClientConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(host = host, port = port)
     if (!js.isUndefined(clusterRefreshInterval)) __obj.updateDynamic("clusterRefreshInterval")(clusterRefreshInterval)
     if (!js.isUndefined(fetchMetadata)) __obj.updateDynamic("fetchMetadata")(fetchMetadata)
     if (!js.isUndefined(fetchRegistry)) __obj.updateDynamic("fetchRegistry")(fetchRegistry)

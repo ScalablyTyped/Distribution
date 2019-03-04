@@ -18,10 +18,8 @@ object IWebAuthenticationResult {
     responseErrorDetail: scala.Double,
     responseStatus: WebAuthenticationStatus
   ): IWebAuthenticationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseData")(responseData)
-    __obj.updateDynamic("responseErrorDetail")(responseErrorDetail)
-    __obj.updateDynamic("responseStatus")(responseStatus)
+    val __obj = js.Dynamic.literal(responseData = responseData, responseErrorDetail = responseErrorDetail, responseStatus = responseStatus)
+  
     __obj.asInstanceOf[IWebAuthenticationResult]
   }
 }

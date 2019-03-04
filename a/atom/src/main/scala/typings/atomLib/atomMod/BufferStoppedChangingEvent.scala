@@ -12,8 +12,8 @@ trait BufferStoppedChangingEvent extends js.Object {
 object BufferStoppedChangingEvent {
   @scala.inline
   def apply(changes: js.Array[TextChange]): BufferStoppedChangingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
+    val __obj = js.Dynamic.literal(changes = changes)
+  
     __obj.asInstanceOf[BufferStoppedChangingEvent]
   }
 }

@@ -22,10 +22,8 @@ object SpecificationContents {
     y: scala.Double,
     name: java.lang.String = null
   ): SpecificationContents = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(path = path, x = x, y = y)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[SpecificationContents]
   }

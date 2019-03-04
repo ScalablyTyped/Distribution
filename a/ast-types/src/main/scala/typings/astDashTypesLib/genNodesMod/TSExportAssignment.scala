@@ -21,8 +21,8 @@ object TSExportAssignment {
     expression: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.TSExportAssignment
   ): TSExportAssignment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(expression = expression)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSExportAssignment]
   }
 }

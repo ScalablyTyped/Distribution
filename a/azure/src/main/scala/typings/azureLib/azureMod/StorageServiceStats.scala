@@ -12,8 +12,8 @@ trait StorageServiceStats extends js.Object {
 object StorageServiceStats {
   @scala.inline
   def apply(GeoReplication: azureLib.Anon_LastSyncTime): StorageServiceStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GeoReplication")(GeoReplication)
+    val __obj = js.Dynamic.literal(GeoReplication = GeoReplication)
+  
     __obj.asInstanceOf[StorageServiceStats]
   }
 }

@@ -24,13 +24,7 @@ object DefinitionInfo {
     originalFileName: java.lang.String = null,
     originalTextSpan: TextSpan = null
   ): DefinitionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerKind")(containerKind)
-    __obj.updateDynamic("containerName")(containerName)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("textSpan")(textSpan)
+    val __obj = js.Dynamic.literal(containerKind = containerKind, containerName = containerName, fileName = fileName, kind = kind, name = name, textSpan = textSpan)
     if (originalFileName != null) __obj.updateDynamic("originalFileName")(originalFileName)
     if (originalTextSpan != null) __obj.updateDynamic("originalTextSpan")(originalTextSpan)
     __obj.asInstanceOf[DefinitionInfo]

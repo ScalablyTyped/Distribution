@@ -30,8 +30,7 @@ object Anon_AngularThres {
     transThres: scala.Int | scala.Double = null,
     updateDelay: scala.Int | scala.Double = null
   ): Anon_AngularThres = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ros")(ros)
+    val __obj = js.Dynamic.literal(ros = ros)
     if (angularThres != null) __obj.updateDynamic("angularThres")(angularThres.asInstanceOf[js.Any])
     if (fixedFrame != null) __obj.updateDynamic("fixedFrame")(fixedFrame)
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])

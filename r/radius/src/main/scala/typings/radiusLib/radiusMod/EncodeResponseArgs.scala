@@ -18,10 +18,7 @@ trait EncodeResponseArgs extends js.Object {
 object EncodeResponseArgs {
   @scala.inline
   def apply(code: java.lang.String, packet: RadiusPacket, secret: java.lang.String, attributes: js.Any = null): EncodeResponseArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("packet")(packet)
-    __obj.updateDynamic("secret")(secret)
+    val __obj = js.Dynamic.literal(code = code, packet = packet, secret = secret)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[EncodeResponseArgs]
   }

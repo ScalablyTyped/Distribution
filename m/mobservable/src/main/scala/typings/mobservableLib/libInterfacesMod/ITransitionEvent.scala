@@ -24,13 +24,8 @@ object ITransitionEvent {
     newValue: java.lang.String,
     state: java.lang.String
   ): ITransitionEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changed")(changed)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("newValue")(newValue)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(changed = changed, context = context, id = id, name = name, newValue = newValue, state = state)
+  
     __obj.asInstanceOf[ITransitionEvent]
   }
 }

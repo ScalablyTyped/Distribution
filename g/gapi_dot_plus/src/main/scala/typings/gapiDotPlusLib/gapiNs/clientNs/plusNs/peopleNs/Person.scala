@@ -70,36 +70,8 @@ object Person {
     urls: js.Array[gapiDotPlusLib.Anon_Label],
     verified: scala.Boolean
   ): Person = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aboutMe")(aboutMe)
-    __obj.updateDynamic("ageRange")(ageRange)
-    __obj.updateDynamic("birthday")(birthday)
-    __obj.updateDynamic("braggingRights")(braggingRights)
-    __obj.updateDynamic("circledByCount")(circledByCount)
-    __obj.updateDynamic("cover")(cover)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("emails")(emails)
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("isPlusUser")(isPlusUser)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nickname")(nickname)
-    __obj.updateDynamic("objectType")(objectType)
-    __obj.updateDynamic("occupation")(occupation)
-    __obj.updateDynamic("organizations")(organizations)
-    __obj.updateDynamic("placesLived")(placesLived)
-    __obj.updateDynamic("plusOneCount")(plusOneCount)
-    __obj.updateDynamic("relationshipStatus")(relationshipStatus)
-    __obj.updateDynamic("skills")(skills)
-    __obj.updateDynamic("tagline")(tagline)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("urls")(urls)
-    __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(aboutMe = aboutMe, ageRange = ageRange, birthday = birthday, braggingRights = braggingRights, circledByCount = circledByCount, cover = cover, displayName = displayName, domain = domain, emails = emails, etag = etag, gender = gender, id = id, image = image, isPlusUser = isPlusUser, kind = kind, language = language, name = name, nickname = nickname, objectType = objectType, occupation = occupation, organizations = organizations, placesLived = placesLived, plusOneCount = plusOneCount, relationshipStatus = relationshipStatus, skills = skills, tagline = tagline, url = url, urls = urls, verified = verified)
+  
     __obj.asInstanceOf[Person]
   }
 }

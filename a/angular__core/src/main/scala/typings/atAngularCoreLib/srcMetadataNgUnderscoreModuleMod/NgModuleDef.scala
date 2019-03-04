@@ -37,11 +37,8 @@ object NgModuleDef {
     `type`: T,
     transitiveCompileScopes: NgModuleTransitiveScopes = null
   ): NgModuleDef[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("bootstrap")(bootstrap)
-    __obj.updateDynamic("declarations")(declarations)
-    __obj.updateDynamic("exports")(exports)
-    __obj.updateDynamic("imports")(imports)
+    val __obj = js.Dynamic.literal(bootstrap = bootstrap, declarations = declarations, exports = exports, imports = imports)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (transitiveCompileScopes != null) __obj.updateDynamic("transitiveCompileScopes")(transitiveCompileScopes)
     __obj.asInstanceOf[NgModuleDef[T]]
   }

@@ -48,14 +48,8 @@ object XClipboardManager {
     release: js.Function0[scala.Unit],
     removeClipboard: js.Function1[java.lang.String, scala.Unit]
   ): XClipboardManager = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addClipboard")(addClipboard)
-    __obj.updateDynamic("getClipboard")(getClipboard)
-    __obj.updateDynamic("listClipboardNames")(listClipboardNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeClipboard")(removeClipboard)
+    val __obj = js.Dynamic.literal(acquire = acquire, addClipboard = addClipboard, getClipboard = getClipboard, listClipboardNames = listClipboardNames, queryInterface = queryInterface, release = release, removeClipboard = removeClipboard)
+  
     __obj.asInstanceOf[XClipboardManager]
   }
 }

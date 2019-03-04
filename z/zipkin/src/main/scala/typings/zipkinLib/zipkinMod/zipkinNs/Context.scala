@@ -20,11 +20,8 @@ object Context {
     scoped: js.Function1[js.Function0[js.Any], js.Any],
     setContext: js.Function1[T, scala.Unit]
   ): Context[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContext")(getContext)
-    __obj.updateDynamic("letContext")(letContext)
-    __obj.updateDynamic("scoped")(scoped)
-    __obj.updateDynamic("setContext")(setContext)
+    val __obj = js.Dynamic.literal(getContext = getContext, letContext = letContext, scoped = scoped, setContext = setContext)
+  
     __obj.asInstanceOf[Context[T]]
   }
 }

@@ -18,10 +18,8 @@ object Anon_Hide {
     isEnabled: js.Function0[scala.Boolean],
     show: js.Function0[scala.Unit]
   ): Anon_Hide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(hide = hide, isEnabled = isEnabled, show = show)
+  
     __obj.asInstanceOf[Anon_Hide]
   }
 }

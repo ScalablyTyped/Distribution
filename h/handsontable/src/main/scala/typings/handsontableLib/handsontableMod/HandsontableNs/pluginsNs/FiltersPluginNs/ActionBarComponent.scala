@@ -25,17 +25,8 @@ object ActionBarComponent {
     reset: js.Function0[scala.Unit],
     show: js.Function0[scala.Unit]
   ): ActionBarComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("elements")(elements)
-    __obj.updateDynamic("getMenuItemDescriptor")(getMenuItemDescriptor)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isHidden")(isHidden)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(accept = accept, cancel = cancel, destroy = destroy, elements = elements, getMenuItemDescriptor = getMenuItemDescriptor, hidden = hidden, hide = hide, isHidden = isHidden, reset = reset, show = show)
+  
     __obj.asInstanceOf[ActionBarComponent]
   }
 }

@@ -43,13 +43,8 @@ object Title {
     size: scala.Double,
     text: java.lang.String
   ): Title = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("bold")(bold)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(alpha = alpha, bold = bold, color = color, id = id, size = size, text = text)
+  
     __obj.asInstanceOf[Title]
   }
 }

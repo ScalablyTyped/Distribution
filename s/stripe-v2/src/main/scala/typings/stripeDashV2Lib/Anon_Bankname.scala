@@ -22,11 +22,8 @@ object Anon_Bankname {
     `object`: java.lang.String,
     validated: scala.Boolean
   ): Anon_Bankname = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("bank_name")(bank_name)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("last4")(last4)
-    __obj.updateDynamic("validated")(validated)
+    val __obj = js.Dynamic.literal(bank_name = bank_name, country = country, last4 = last4, validated = validated)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Bankname]
   }
 }

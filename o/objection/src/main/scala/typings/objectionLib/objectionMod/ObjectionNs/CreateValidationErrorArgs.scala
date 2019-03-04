@@ -20,7 +20,8 @@ object CreateValidationErrorArgs {
     data: ErrorHash | js.Any = null,
     message: java.lang.String = null
   ): CreateValidationErrorArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[CreateValidationErrorArgs]

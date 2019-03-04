@@ -22,9 +22,8 @@ object NavigationReplaceAction {
     action: NavigationNavigateAction = null,
     params: NavigationParams = null
   ): NavigationReplaceAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("routeName")(routeName)
+    val __obj = js.Dynamic.literal(key = key, routeName = routeName)
+    __obj.updateDynamic("type")(`type`)
     if (action != null) __obj.updateDynamic("action")(action)
     if (params != null) __obj.updateDynamic("params")(params)
     __obj.asInstanceOf[NavigationReplaceAction]

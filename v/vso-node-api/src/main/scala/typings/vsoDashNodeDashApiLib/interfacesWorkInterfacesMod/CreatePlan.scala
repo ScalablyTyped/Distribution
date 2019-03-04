@@ -27,10 +27,8 @@ trait CreatePlan extends js.Object {
 object CreatePlan {
   @scala.inline
   def apply(description: java.lang.String, name: java.lang.String, properties: js.Any, `type`: PlanType): CreatePlan = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(description = description, name = name, properties = properties)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CreatePlan]
   }
 }

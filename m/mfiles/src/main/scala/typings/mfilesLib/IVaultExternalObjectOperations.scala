@@ -25,8 +25,8 @@ object IVaultExternalObjectOperations {
       IObjectVersionAndProperties
     ]
   ): IVaultExternalObjectOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PromoteObject")(PromoteObject)
+    val __obj = js.Dynamic.literal(PromoteObject = PromoteObject)
+  
     __obj.asInstanceOf[IVaultExternalObjectOperations]
   }
 }

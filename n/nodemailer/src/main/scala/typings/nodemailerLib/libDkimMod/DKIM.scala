@@ -16,9 +16,8 @@ object DKIM {
     keys: js.Array[java.lang.String | nodemailerLib.Anon_Key],
     options: nodemailerLib.libDkimMod.DKIMNs.Options
   ): DKIM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(keys = keys, options = options)
+  
     __obj.asInstanceOf[DKIM]
   }
 }

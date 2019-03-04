@@ -51,11 +51,8 @@ object InstancesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
     ]
   ): InstancesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(debug = debug, delete = delete, get = get, list = list)
+  
     __obj.asInstanceOf[InstancesResource]
   }
 }

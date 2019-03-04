@@ -35,10 +35,8 @@ object CustomResourceDefinitionStatus {
     conditions: js.Array[CustomResourceDefinitionCondition],
     storedVersions: js.Array[java.lang.String]
   ): CustomResourceDefinitionStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptedNames")(acceptedNames)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("storedVersions")(storedVersions)
+    val __obj = js.Dynamic.literal(acceptedNames = acceptedNames, conditions = conditions, storedVersions = storedVersions)
+  
     __obj.asInstanceOf[CustomResourceDefinitionStatus]
   }
 }

@@ -69,16 +69,8 @@ object StatefulSetStatus {
     updateRevision: java.lang.String,
     updatedReplicas: scala.Double
   ): StatefulSetStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collisionCount")(collisionCount)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("currentReplicas")(currentReplicas)
-    __obj.updateDynamic("currentRevision")(currentRevision)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
-    __obj.updateDynamic("readyReplicas")(readyReplicas)
-    __obj.updateDynamic("replicas")(replicas)
-    __obj.updateDynamic("updateRevision")(updateRevision)
-    __obj.updateDynamic("updatedReplicas")(updatedReplicas)
+    val __obj = js.Dynamic.literal(collisionCount = collisionCount, conditions = conditions, currentReplicas = currentReplicas, currentRevision = currentRevision, observedGeneration = observedGeneration, readyReplicas = readyReplicas, replicas = replicas, updateRevision = updateRevision, updatedReplicas = updatedReplicas)
+  
     __obj.asInstanceOf[StatefulSetStatus]
   }
 }

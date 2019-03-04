@@ -47,12 +47,7 @@ object IEditControl {
     SupportedReadMode: EditActorReadType = null,
     SupportedWriteMode: EditActorWriteType = null
   ): IEditControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BindToCell")(BindToCell)
-    __obj.updateDynamic("Dispose")(Dispose)
-    __obj.updateDynamic("OnBeginEdit")(OnBeginEdit)
-    __obj.updateDynamic("OnEndEdit")(OnEndEdit)
-    __obj.updateDynamic("Unbind")(Unbind)
+    val __obj = js.Dynamic.literal(BindToCell = BindToCell, Dispose = Dispose, OnBeginEdit = OnBeginEdit, OnEndEdit = OnEndEdit, Unbind = Unbind)
     if (Focus != null) __obj.updateDynamic("Focus")(Focus)
     if (GetCellContext != null) __obj.updateDynamic("GetCellContext")(GetCellContext)
     if (GetInputElement != null) __obj.updateDynamic("GetInputElement")(GetInputElement)

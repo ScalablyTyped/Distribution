@@ -13,9 +13,8 @@ trait Schema extends js.Object {
 object Schema {
   @scala.inline
   def apply(columnNames: ColumnNames, tableName: java.lang.String): Schema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnNames")(columnNames)
-    __obj.updateDynamic("tableName")(tableName)
+    val __obj = js.Dynamic.literal(columnNames = columnNames, tableName = tableName)
+  
     __obj.asInstanceOf[Schema]
   }
 }

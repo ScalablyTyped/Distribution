@@ -115,10 +115,8 @@ object NotificationOptions {
     requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
     silent: js.UndefOr[scala.Boolean] = js.undefined
   ): NotificationOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, message = message, title = title)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl)
     if (buttons != null) __obj.updateDynamic("buttons")(buttons)
     if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage)

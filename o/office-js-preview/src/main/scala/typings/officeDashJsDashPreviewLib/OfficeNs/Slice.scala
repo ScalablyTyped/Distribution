@@ -51,10 +51,8 @@ trait Slice extends js.Object {
 object Slice {
   @scala.inline
   def apply(data: js.Any, index: scala.Double, size: scala.Double): Slice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(data = data, index = index, size = size)
+  
     __obj.asInstanceOf[Slice]
   }
 }

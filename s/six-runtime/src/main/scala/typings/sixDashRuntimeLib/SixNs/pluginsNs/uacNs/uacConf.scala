@@ -26,14 +26,8 @@ object uacConf {
     skipOffline: scala.Boolean,
     whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
   ): uacConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_id")(client_id)
-    __obj.updateDynamic("client_secret")(client_secret)
-    __obj.updateDynamic("enableMock")(enableMock)
-    __obj.updateDynamic("failHook")(failHook)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("skipOffline")(skipOffline)
-    __obj.updateDynamic("whiteList")(whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, enableMock = enableMock, failHook = failHook, getPath = getPath, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[uacConf]
   }
 }

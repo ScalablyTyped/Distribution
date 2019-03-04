@@ -20,11 +20,8 @@ object ISearchPane {
     SetTheme: js.Function1[ITheme, scala.Unit],
     Visible: scala.Boolean
   ): ISearchPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Available")(Available)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("SetTheme")(SetTheme)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(Available = Available, Events = Events, SetTheme = SetTheme, Visible = Visible)
+  
     __obj.asInstanceOf[ISearchPane]
   }
 }

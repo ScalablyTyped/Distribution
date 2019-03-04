@@ -24,13 +24,8 @@ object Icon {
     size: scala.Double,
     source: java.lang.String
   ): Icon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("ext")(ext)
-    __obj.updateDynamic("mime")(mime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(data = data, ext = ext, mime = mime, name = name, size = size, source = source)
+  
     __obj.asInstanceOf[Icon]
   }
 }

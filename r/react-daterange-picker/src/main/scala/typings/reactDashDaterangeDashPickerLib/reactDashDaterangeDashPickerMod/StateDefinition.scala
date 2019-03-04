@@ -18,9 +18,7 @@ object StateDefinition {
     label: java.lang.String,
     selectable: js.UndefOr[scala.Boolean] = js.undefined
   ): StateDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(color = color, label = label)
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     __obj.asInstanceOf[StateDefinition]
   }

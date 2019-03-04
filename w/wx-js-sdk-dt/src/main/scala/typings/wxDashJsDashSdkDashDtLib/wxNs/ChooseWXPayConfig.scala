@@ -41,10 +41,8 @@ object ChooseWXPayConfig {
     signType: java.lang.String = null,
     success: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null
   ): ChooseWXPayConfig = {
-    val __obj = js.Dynamic.literal(`package` = `package`)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("paySign")(paySign)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(nonceStr = nonceStr, paySign = paySign, timestamp = timestamp)
+    __obj.updateDynamic("package")(`package`)
     if (cancel != null) __obj.updateDynamic("cancel")(cancel)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

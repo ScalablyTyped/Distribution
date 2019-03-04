@@ -16,9 +16,8 @@ object IMobileBroadbandAccountStatics {
     availableNetworkAccountIds: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
     createFromNetworkAccountId: js.Function1[java.lang.String, MobileBroadbandAccount]
   ): IMobileBroadbandAccountStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availableNetworkAccountIds")(availableNetworkAccountIds)
-    __obj.updateDynamic("createFromNetworkAccountId")(createFromNetworkAccountId)
+    val __obj = js.Dynamic.literal(availableNetworkAccountIds = availableNetworkAccountIds, createFromNetworkAccountId = createFromNetworkAccountId)
+  
     __obj.asInstanceOf[IMobileBroadbandAccountStatics]
   }
 }

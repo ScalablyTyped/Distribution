@@ -28,15 +28,8 @@ object ApplicationCacheEventMap {
     progress: ProgressEvent,
     updateready: Event
   ): ApplicationCacheEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cached")(cached)
-    __obj.updateDynamic("checking")(checking)
-    __obj.updateDynamic("downloading")(downloading)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("noupdate")(noupdate)
-    __obj.updateDynamic("obsolete")(obsolete)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("updateready")(updateready)
+    val __obj = js.Dynamic.literal(cached = cached, checking = checking, downloading = downloading, error = error, noupdate = noupdate, obsolete = obsolete, progress = progress, updateready = updateready)
+  
     __obj.asInstanceOf[ApplicationCacheEventMap]
   }
 }

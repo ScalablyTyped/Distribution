@@ -28,15 +28,8 @@ object ITextConstantsStatics {
     undefinedFontStyle: FontStyle,
     undefinedInt32Value: scala.Double
   ): ITextConstantsStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoColor")(autoColor)
-    __obj.updateDynamic("maxUnitCount")(maxUnitCount)
-    __obj.updateDynamic("minUnitCount")(minUnitCount)
-    __obj.updateDynamic("undefinedColor")(undefinedColor)
-    __obj.updateDynamic("undefinedFloatValue")(undefinedFloatValue)
-    __obj.updateDynamic("undefinedFontStretch")(undefinedFontStretch)
-    __obj.updateDynamic("undefinedFontStyle")(undefinedFontStyle)
-    __obj.updateDynamic("undefinedInt32Value")(undefinedInt32Value)
+    val __obj = js.Dynamic.literal(autoColor = autoColor, maxUnitCount = maxUnitCount, minUnitCount = minUnitCount, undefinedColor = undefinedColor, undefinedFloatValue = undefinedFloatValue, undefinedFontStretch = undefinedFontStretch, undefinedFontStyle = undefinedFontStyle, undefinedInt32Value = undefinedInt32Value)
+  
     __obj.asInstanceOf[ITextConstantsStatics]
   }
 }

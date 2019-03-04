@@ -13,8 +13,8 @@ trait KnockoutSubscribableFunctions[T] extends js.Object {
 object KnockoutSubscribableFunctions {
   @scala.inline
   def apply[T](deferUpdates: scala.Boolean): KnockoutSubscribableFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    val __obj = js.Dynamic.literal(deferUpdates = deferUpdates)
+  
     __obj.asInstanceOf[KnockoutSubscribableFunctions[T]]
   }
 }

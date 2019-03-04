@@ -26,14 +26,8 @@ object Settings {
     table: Table,
     writers: Writers
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("features")(features)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("readers")(readers)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("writers")(writers)
+    val __obj = js.Dynamic.literal(dataset = dataset, features = features, inputs = inputs, params = params, readers = readers, table = table, writers = writers)
+  
     __obj.asInstanceOf[Settings]
   }
 }

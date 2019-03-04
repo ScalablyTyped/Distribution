@@ -33,10 +33,8 @@ object ApplicationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ApplicationVerifyResponse]
     ]
   ): ApplicationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("played")(played)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(get = get, played = played, verify = verify)
+  
     __obj.asInstanceOf[ApplicationsResource]
   }
 }

@@ -76,12 +76,7 @@ object CapabilityStatementMessagingEvent {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): CapabilityStatementMessagingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(code = code, focus = focus, mode = mode, request = request, response = response)
     if (_category != null) __obj.updateDynamic("_category")(_category)
     if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

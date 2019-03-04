@@ -51,13 +51,8 @@ object TwitchExtClientQueryParams {
     popout: twitchDashExtLib.twitchDashExtLibStrings.`true` | twitchDashExtLib.twitchDashExtLibStrings.`false`,
     state: twitchDashExtLib.twitchDashExtLibStrings.testing | twitchDashExtLib.twitchDashExtLibStrings.hosted_test | twitchDashExtLib.twitchDashExtLibStrings.approved | twitchDashExtLib.twitchDashExtLibStrings.released | twitchDashExtLib.twitchDashExtLibStrings.ready_for_review | twitchDashExtLib.twitchDashExtLibStrings.in_review | twitchDashExtLib.twitchDashExtLibStrings.pending_action | twitchDashExtLib.twitchDashExtLibStrings.uploading
   ): TwitchExtClientQueryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    __obj.updateDynamic("popout")(popout.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], language = language, mode = mode.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], popout = popout.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TwitchExtClientQueryParams]
   }
 }

@@ -24,12 +24,7 @@ object IdTokenResult {
     token: java.lang.String,
     signInProvider: java.lang.String = null
   ): IdTokenResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authTime")(authTime)
-    __obj.updateDynamic("claims")(claims)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("issuedAtTime")(issuedAtTime)
-    __obj.updateDynamic("token")(token)
+    val __obj = js.Dynamic.literal(authTime = authTime, claims = claims, expirationTime = expirationTime, issuedAtTime = issuedAtTime, token = token)
     if (signInProvider != null) __obj.updateDynamic("signInProvider")(signInProvider)
     __obj.asInstanceOf[IdTokenResult]
   }

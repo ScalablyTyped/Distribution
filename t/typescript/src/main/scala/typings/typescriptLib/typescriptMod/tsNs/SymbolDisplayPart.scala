@@ -13,9 +13,8 @@ trait SymbolDisplayPart extends js.Object {
 object SymbolDisplayPart {
   @scala.inline
   def apply(kind: java.lang.String, text: java.lang.String): SymbolDisplayPart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(kind = kind, text = text)
+  
     __obj.asInstanceOf[SymbolDisplayPart]
   }
 }

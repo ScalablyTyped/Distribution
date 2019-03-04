@@ -19,8 +19,8 @@ object ObjectObservationAdapter {
       js.UndefOr[InternalPropertyObserver | scala.Null]
     ]
   ): ObjectObservationAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getObserver")(getObserver)
+    val __obj = js.Dynamic.literal(getObserver = getObserver)
+  
     __obj.asInstanceOf[ObjectObservationAdapter]
   }
 }

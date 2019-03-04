@@ -27,8 +27,7 @@ object IconOptions {
     shadowUrl: java.lang.String = null,
     tooltipAnchor: PointExpression = null
   ): IconOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (className != null) __obj.updateDynamic("className")(className)
     if (iconAnchor != null) __obj.updateDynamic("iconAnchor")(iconAnchor.asInstanceOf[js.Any])

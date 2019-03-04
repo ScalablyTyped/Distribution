@@ -22,8 +22,7 @@ object Anon_CommentsLocParametersReadonly {
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_CommentsLocParametersReadonly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameters")(parameters)
+    val __obj = js.Dynamic.literal(parameters = parameters)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)

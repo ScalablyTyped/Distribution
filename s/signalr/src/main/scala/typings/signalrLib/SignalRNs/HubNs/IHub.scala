@@ -12,8 +12,8 @@ trait IHub extends js.Object {
 object IHub {
   @scala.inline
   def apply(start: js.Function0[scala.Unit]): IHub = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(start = start)
+  
     __obj.asInstanceOf[IHub]
   }
 }

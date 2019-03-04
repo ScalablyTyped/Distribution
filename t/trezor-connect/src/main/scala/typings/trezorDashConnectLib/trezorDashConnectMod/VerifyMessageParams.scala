@@ -24,11 +24,7 @@ object VerifyMessageParams {
     keepSession: js.UndefOr[scala.Boolean] = js.undefined,
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): VerifyMessageParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("coin")(coin)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(address = address, coin = coin, message = message, signature = signature)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (device != null) __obj.updateDynamic("device")(device)
     if (!js.isUndefined(keepSession)) __obj.updateDynamic("keepSession")(keepSession)

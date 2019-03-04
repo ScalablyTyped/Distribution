@@ -41,10 +41,7 @@ object ClusterEndpointArgs {
     excludedMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     staticMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): ClusterEndpointArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterEndpointIdentifier")(clusterEndpointIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("customEndpointType")(customEndpointType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterEndpointIdentifier = clusterEndpointIdentifier.asInstanceOf[js.Any], clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], customEndpointType = customEndpointType.asInstanceOf[js.Any])
     if (excludedMembers != null) __obj.updateDynamic("excludedMembers")(excludedMembers.asInstanceOf[js.Any])
     if (staticMembers != null) __obj.updateDynamic("staticMembers")(staticMembers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEndpointArgs]

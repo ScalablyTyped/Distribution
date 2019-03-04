@@ -87,14 +87,7 @@ object IAttributes {
     */
   /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): IAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$addClass")($addClass)
-    __obj.updateDynamic("$attr")($attr)
-    __obj.updateDynamic("$normalize")($normalize)
-    __obj.updateDynamic("$observe")($observe)
-    __obj.updateDynamic("$removeClass")($removeClass)
-    __obj.updateDynamic("$set")($set)
-    __obj.updateDynamic("$updateClass")($updateClass)
+    val __obj = js.Dynamic.literal($addClass = $addClass, $attr = $attr, $normalize = $normalize, $observe = $observe, $removeClass = $removeClass, $set = $set, $updateClass = $updateClass)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IAttributes]
   }

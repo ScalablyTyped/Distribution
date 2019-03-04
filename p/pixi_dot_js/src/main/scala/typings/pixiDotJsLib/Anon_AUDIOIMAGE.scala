@@ -15,11 +15,8 @@ trait Anon_AUDIOIMAGE extends js.Object {
 object Anon_AUDIOIMAGE {
   @scala.inline
   def apply(AUDIO: scala.Double, IMAGE: scala.Double, VIDEO: scala.Double, XHR: scala.Double): Anon_AUDIOIMAGE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUDIO")(AUDIO)
-    __obj.updateDynamic("IMAGE")(IMAGE)
-    __obj.updateDynamic("VIDEO")(VIDEO)
-    __obj.updateDynamic("XHR")(XHR)
+    val __obj = js.Dynamic.literal(AUDIO = AUDIO, IMAGE = IMAGE, VIDEO = VIDEO, XHR = XHR)
+  
     __obj.asInstanceOf[Anon_AUDIOIMAGE]
   }
 }

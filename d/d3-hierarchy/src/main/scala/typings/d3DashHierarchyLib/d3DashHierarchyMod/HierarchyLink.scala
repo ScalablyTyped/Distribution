@@ -19,9 +19,8 @@ trait HierarchyLink[Datum] extends js.Object {
 object HierarchyLink {
   @scala.inline
   def apply[Datum](source: HierarchyNode[Datum], target: HierarchyNode[Datum]): HierarchyLink[Datum] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(source = source, target = target)
+  
     __obj.asInstanceOf[HierarchyLink[Datum]]
   }
 }

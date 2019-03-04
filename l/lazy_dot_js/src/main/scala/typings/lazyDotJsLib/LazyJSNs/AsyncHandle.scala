@@ -18,10 +18,8 @@ object AsyncHandle {
     onComplete: js.Function1[Callback, scala.Unit],
     onError: js.Function1[ErrorCallback, scala.Unit]
   ): AsyncHandle[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("onError")(onError)
+    val __obj = js.Dynamic.literal(cancel = cancel, onComplete = onComplete, onError = onError)
+  
     __obj.asInstanceOf[AsyncHandle[T]]
   }
 }

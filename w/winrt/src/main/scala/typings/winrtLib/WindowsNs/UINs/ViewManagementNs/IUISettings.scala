@@ -38,20 +38,8 @@ object IUISettings {
     scrollBarThumbBoxSize: winrtLib.WindowsNs.FoundationNs.Size,
     uIElementColor: js.Function1[UIElementType, winrtLib.WindowsNs.UINs.Color]
   ): IUISettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animationsEnabled")(animationsEnabled)
-    __obj.updateDynamic("caretBlinkRate")(caretBlinkRate)
-    __obj.updateDynamic("caretBrowsingEnabled")(caretBrowsingEnabled)
-    __obj.updateDynamic("caretWidth")(caretWidth)
-    __obj.updateDynamic("cursorSize")(cursorSize)
-    __obj.updateDynamic("doubleClickTime")(doubleClickTime)
-    __obj.updateDynamic("handPreference")(handPreference)
-    __obj.updateDynamic("messageDuration")(messageDuration)
-    __obj.updateDynamic("mouseHoverTime")(mouseHoverTime)
-    __obj.updateDynamic("scrollBarArrowSize")(scrollBarArrowSize)
-    __obj.updateDynamic("scrollBarSize")(scrollBarSize)
-    __obj.updateDynamic("scrollBarThumbBoxSize")(scrollBarThumbBoxSize)
-    __obj.updateDynamic("uIElementColor")(uIElementColor)
+    val __obj = js.Dynamic.literal(animationsEnabled = animationsEnabled, caretBlinkRate = caretBlinkRate, caretBrowsingEnabled = caretBrowsingEnabled, caretWidth = caretWidth, cursorSize = cursorSize, doubleClickTime = doubleClickTime, handPreference = handPreference, messageDuration = messageDuration, mouseHoverTime = mouseHoverTime, scrollBarArrowSize = scrollBarArrowSize, scrollBarSize = scrollBarSize, scrollBarThumbBoxSize = scrollBarThumbBoxSize, uIElementColor = uIElementColor)
+  
     __obj.asInstanceOf[IUISettings]
   }
 }

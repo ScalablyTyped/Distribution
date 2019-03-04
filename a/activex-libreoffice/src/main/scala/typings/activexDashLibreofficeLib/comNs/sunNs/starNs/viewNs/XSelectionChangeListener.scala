@@ -28,12 +28,8 @@ object XSelectionChangeListener {
     release: js.Function0[scala.Unit],
     selectionChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XSelectionChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("selectionChanged")(selectionChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, selectionChanged = selectionChanged)
+  
     __obj.asInstanceOf[XSelectionChangeListener]
   }
 }

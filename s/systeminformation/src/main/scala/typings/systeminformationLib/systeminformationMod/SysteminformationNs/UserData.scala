@@ -24,13 +24,8 @@ object UserData {
     tty: java.lang.String,
     user: java.lang.String
   ): UserData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("tty")(tty)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(command = command, date = date, ip = ip, time = time, tty = tty, user = user)
+  
     __obj.asInstanceOf[UserData]
   }
 }

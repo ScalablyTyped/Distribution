@@ -43,29 +43,8 @@ object TrimRows {
     untrimRow: js.Function1[scala.Double, scala.Unit],
     untrimRows: js.Function1[js.Array[scala.Double], scala.Unit]
   ): TrimRows = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("isTrimmed")(isTrimmed)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("removedRows")(removedRows)
-    __obj.updateDynamic("rowsMapper")(rowsMapper)
-    __obj.updateDynamic("trimRow")(trimRow)
-    __obj.updateDynamic("trimRows")(trimRows)
-    __obj.updateDynamic("trimmedRows")(trimmedRows)
-    __obj.updateDynamic("untrimAll")(untrimAll)
-    __obj.updateDynamic("untrimRow")(untrimRow)
-    __obj.updateDynamic("untrimRows")(untrimRows)
+    val __obj = js.Dynamic.literal(addHook = addHook, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, isTrimmed = isTrimmed, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, removedRows = removedRows, rowsMapper = rowsMapper, trimRow = trimRow, trimRows = trimRows, trimmedRows = trimmedRows, untrimAll = untrimAll, untrimRow = untrimRow, untrimRows = untrimRows)
+  
     __obj.asInstanceOf[TrimRows]
   }
 }

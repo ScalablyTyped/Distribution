@@ -13,8 +13,7 @@ trait JsonProperties extends js.Object {
 object JsonProperties {
   @scala.inline
   def apply(value: js.Any, onChange: reactDashJsonLib.OnChangeHandler = null): JsonProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     __obj.asInstanceOf[JsonProperties]
   }

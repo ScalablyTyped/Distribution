@@ -15,11 +15,8 @@ trait Anon_HeightOriginX extends js.Object {
 object Anon_HeightOriginX {
   @scala.inline
   def apply(height: scala.Double, originX: scala.Double, originY: scala.Double, width: scala.Double): Anon_HeightOriginX = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("originX")(originX)
-    __obj.updateDynamic("originY")(originY)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, originX = originX, originY = originY, width = width)
+  
     __obj.asInstanceOf[Anon_HeightOriginX]
   }
 }

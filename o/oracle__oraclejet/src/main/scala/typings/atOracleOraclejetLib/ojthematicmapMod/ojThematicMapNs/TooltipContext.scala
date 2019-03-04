@@ -37,14 +37,7 @@ object TooltipContext {
     location: java.lang.String = null,
     locationName: java.lang.String = null
   ): TooltipContext[K1, K2, K3, D1, D2, D3] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, id = id.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], parentElement = parentElement, tooltip = tooltip, x = x, y = y)
     if (color != null) __obj.updateDynamic("color")(color)
     if (data != null) __obj.updateDynamic("data")(data)
     if (label != null) __obj.updateDynamic("label")(label)

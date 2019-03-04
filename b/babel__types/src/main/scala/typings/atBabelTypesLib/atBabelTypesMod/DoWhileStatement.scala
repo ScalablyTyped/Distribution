@@ -32,9 +32,8 @@ object DoWhileStatement {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): DoWhileStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(body = body, test = test)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

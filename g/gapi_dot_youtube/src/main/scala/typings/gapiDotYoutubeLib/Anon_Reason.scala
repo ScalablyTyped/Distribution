@@ -27,10 +27,8 @@ object Anon_Reason {
     resourceId: Anon_ChannelIdKind,
     seedResourceId: Anon_ChannelIdKindPlaylistId
   ): Anon_Reason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("resourceId")(resourceId)
-    __obj.updateDynamic("seedResourceId")(seedResourceId)
+    val __obj = js.Dynamic.literal(reason = reason, resourceId = resourceId, seedResourceId = seedResourceId)
+  
     __obj.asInstanceOf[Anon_Reason]
   }
 }

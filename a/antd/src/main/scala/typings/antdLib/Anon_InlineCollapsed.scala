@@ -12,8 +12,8 @@ trait Anon_InlineCollapsed extends js.Object {
 object Anon_InlineCollapsed {
   @scala.inline
   def apply(inlineCollapsed: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]): Anon_InlineCollapsed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inlineCollapsed")(inlineCollapsed)
+    val __obj = js.Dynamic.literal(inlineCollapsed = inlineCollapsed)
+  
     __obj.asInstanceOf[Anon_InlineCollapsed]
   }
 }

@@ -12,8 +12,8 @@ trait FullPageJSGlobalOptions extends js.Object {
 object FullPageJSGlobalOptions {
   @scala.inline
   def apply(options: FullPageJsOptions): FullPageJSGlobalOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
+  
     __obj.asInstanceOf[FullPageJSGlobalOptions]
   }
 }

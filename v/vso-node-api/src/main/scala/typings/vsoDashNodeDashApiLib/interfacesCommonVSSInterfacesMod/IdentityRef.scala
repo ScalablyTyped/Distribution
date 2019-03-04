@@ -32,17 +32,8 @@ object IdentityRef {
     uniqueName: java.lang.String,
     url: java.lang.String
   ): IdentityRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directoryAlias")(directoryAlias)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageUrl")(imageUrl)
-    __obj.updateDynamic("inactive")(inactive)
-    __obj.updateDynamic("isAadIdentity")(isAadIdentity)
-    __obj.updateDynamic("isContainer")(isContainer)
-    __obj.updateDynamic("profileUrl")(profileUrl)
-    __obj.updateDynamic("uniqueName")(uniqueName)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(directoryAlias = directoryAlias, displayName = displayName, id = id, imageUrl = imageUrl, inactive = inactive, isAadIdentity = isAadIdentity, isContainer = isContainer, profileUrl = profileUrl, uniqueName = uniqueName, url = url)
+  
     __obj.asInstanceOf[IdentityRef]
   }
 }

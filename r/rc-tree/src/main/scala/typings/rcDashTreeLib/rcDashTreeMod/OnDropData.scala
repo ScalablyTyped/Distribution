@@ -24,12 +24,7 @@ object OnDropData {
     node: InternalTreeNode,
     dropToGap: js.UndefOr[scala.Boolean] = js.undefined
   ): OnDropData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dragNode")(dragNode)
-    __obj.updateDynamic("dragNodesKeys")(dragNodesKeys)
-    __obj.updateDynamic("dropPosition")(dropPosition)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(dragNode = dragNode, dragNodesKeys = dragNodesKeys, dropPosition = dropPosition, event = event, node = node)
     if (!js.isUndefined(dropToGap)) __obj.updateDynamic("dropToGap")(dropToGap)
     __obj.asInstanceOf[OnDropData]
   }

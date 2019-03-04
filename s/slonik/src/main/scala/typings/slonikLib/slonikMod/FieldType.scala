@@ -26,14 +26,8 @@ object FieldType {
     name: java.lang.String,
     tableID: scala.Double
   ): FieldType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columnID")(columnID)
-    __obj.updateDynamic("dataTypeID")(dataTypeID)
-    __obj.updateDynamic("dataTypeModifier")(dataTypeModifier)
-    __obj.updateDynamic("dataTypeSize")(dataTypeSize)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tableID")(tableID)
+    val __obj = js.Dynamic.literal(columnID = columnID, dataTypeID = dataTypeID, dataTypeModifier = dataTypeModifier, dataTypeSize = dataTypeSize, format = format, name = name, tableID = tableID)
+  
     __obj.asInstanceOf[FieldType]
   }
 }

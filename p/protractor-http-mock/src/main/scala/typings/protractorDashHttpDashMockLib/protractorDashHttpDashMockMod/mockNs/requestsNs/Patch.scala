@@ -20,9 +20,8 @@ object Patch {
     request: protractorDashHttpDashMockLib.Anon_Method,
     response: protractorDashHttpDashMockLib.Anon_Data[TResponse]
   ): Patch[TResponse] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(request = request, response = response)
+  
     __obj.asInstanceOf[Patch[TResponse]]
   }
 }

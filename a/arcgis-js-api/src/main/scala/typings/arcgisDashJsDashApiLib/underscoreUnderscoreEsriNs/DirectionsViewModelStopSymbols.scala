@@ -51,10 +51,7 @@ object DirectionsViewModelStopSymbols {
     unlocated: Symbol = null,
     waypoint: Symbol = null
   ): DirectionsViewModelStopSymbols = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (first != null) __obj.updateDynamic("first")(first)
     if (last != null) __obj.updateDynamic("last")(last)
     if (middle != null) __obj.updateDynamic("middle")(middle)

@@ -7,36 +7,36 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_PromisifyStream1 extends js.Object {
-  def `__promisify__`(
+  def __promisify__(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     stream3: nodeLib.NodeJSNs.ReadWriteStream,
     stream4: nodeLib.NodeJSNs.ReadWriteStream,
     stream5: nodeLib.NodeJSNs.WritableStream
   ): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(
+  def __promisify__(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     stream3: nodeLib.NodeJSNs.ReadWriteStream,
     stream4: nodeLib.NodeJSNs.WritableStream
   ): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(
+  def __promisify__(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     stream3: nodeLib.NodeJSNs.WritableStream
   ): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(
+  def __promisify__(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.ReadWriteStream,
     streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream)*
   ): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(stream1: nodeLib.NodeJSNs.ReadableStream, stream2: nodeLib.NodeJSNs.WritableStream): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(
+  def __promisify__(stream1: nodeLib.NodeJSNs.ReadableStream, stream2: nodeLib.NodeJSNs.WritableStream): js.Promise[scala.Unit] = js.native
+  def __promisify__(
     stream1: nodeLib.NodeJSNs.ReadableStream,
     stream2: nodeLib.NodeJSNs.WritableStream,
     streams: (nodeLib.NodeJSNs.ReadWriteStream | nodeLib.NodeJSNs.WritableStream)*
   ): js.Promise[scala.Unit] = js.native
-  def `__promisify__`(
+  def __promisify__(
     streams: js.Array[
       nodeLib.NodeJSNs.ReadableStream | nodeLib.NodeJSNs.WritableStream | nodeLib.NodeJSNs.ReadWriteStream
     ]

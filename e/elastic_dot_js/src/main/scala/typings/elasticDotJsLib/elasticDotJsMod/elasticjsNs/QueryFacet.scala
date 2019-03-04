@@ -61,16 +61,8 @@ object QueryFacet {
     scope: js.Function1[java.lang.String, QueryFacet],
     toJSON: js.Function0[js.Any]
   ): QueryFacet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cacheFilter")(cacheFilter)
-    __obj.updateDynamic("facetFilter")(facetFilter)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nested")(nested)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cacheFilter = cacheFilter, facetFilter = facetFilter, global = global, mode = mode, nested = nested, query = query, scope = scope, toJSON = toJSON)
+  
     __obj.asInstanceOf[QueryFacet]
   }
 }

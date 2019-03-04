@@ -12,9 +12,8 @@ trait EcKeyImportParams extends Algorithm {
 object EcKeyImportParams {
   @scala.inline
   def apply(name: java.lang.String, namedCurve: NamedCurve): EcKeyImportParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namedCurve")(namedCurve)
+    val __obj = js.Dynamic.literal(name = name, namedCurve = namedCurve)
+  
     __obj.asInstanceOf[EcKeyImportParams]
   }
 }

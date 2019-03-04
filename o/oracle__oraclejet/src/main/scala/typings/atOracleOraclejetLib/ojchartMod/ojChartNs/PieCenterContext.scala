@@ -21,11 +21,8 @@ object PieCenterContext {
     label: java.lang.String,
     outerBounds: js.Object
   ): PieCenterContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("innerBounds")(innerBounds)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("outerBounds")(outerBounds)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, innerBounds = innerBounds, label = label, outerBounds = outerBounds)
+  
     __obj.asInstanceOf[PieCenterContext]
   }
 }

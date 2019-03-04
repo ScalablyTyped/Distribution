@@ -22,12 +22,8 @@ object Anon_HistoryMaxItems {
     MntncHistoryDays: scala.Double,
     RecycleBinName: java.lang.String
   ): Anon_HistoryMaxItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HistoryMaxItems")(HistoryMaxItems)
-    __obj.updateDynamic("HistoryMaxSize")(HistoryMaxSize)
-    __obj.updateDynamic("KeyEncryptionRounds")(KeyEncryptionRounds)
-    __obj.updateDynamic("MntncHistoryDays")(MntncHistoryDays)
-    __obj.updateDynamic("RecycleBinName")(RecycleBinName)
+    val __obj = js.Dynamic.literal(HistoryMaxItems = HistoryMaxItems, HistoryMaxSize = HistoryMaxSize, KeyEncryptionRounds = KeyEncryptionRounds, MntncHistoryDays = MntncHistoryDays, RecycleBinName = RecycleBinName)
+  
     __obj.asInstanceOf[Anon_HistoryMaxItems]
   }
 }

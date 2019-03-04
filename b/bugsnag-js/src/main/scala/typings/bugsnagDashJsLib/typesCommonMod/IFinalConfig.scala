@@ -63,21 +63,7 @@ object IFinalConfig {
     sessionEndpoint: java.lang.String = null,
     user: js.Object = null
   ): IFinalConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
-    __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs)
-    __obj.updateDynamic("autoCaptureSessions")(autoCaptureSessions)
-    __obj.updateDynamic("autoNotify")(autoNotify)
-    __obj.updateDynamic("beforeSend")(beforeSend)
-    __obj.updateDynamic("collectUserIp")(collectUserIp)
-    __obj.updateDynamic("consoleBreadcrumbsEnabled")(consoleBreadcrumbsEnabled)
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("interactionBreadcrumbsEnabled")(interactionBreadcrumbsEnabled)
-    __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs)
-    __obj.updateDynamic("maxEvents")(maxEvents)
-    __obj.updateDynamic("navigationBreadcrumbsEnabled")(navigationBreadcrumbsEnabled)
-    __obj.updateDynamic("notifyReleaseStages")(notifyReleaseStages)
-    __obj.updateDynamic("releaseStage")(releaseStage)
+    val __obj = js.Dynamic.literal(apiKey = apiKey, autoBreadcrumbs = autoBreadcrumbs, autoCaptureSessions = autoCaptureSessions, autoNotify = autoNotify, beforeSend = beforeSend, collectUserIp = collectUserIp, consoleBreadcrumbsEnabled = consoleBreadcrumbsEnabled, endpoints = endpoints, interactionBreadcrumbsEnabled = interactionBreadcrumbsEnabled, maxBreadcrumbs = maxBreadcrumbs, maxEvents = maxEvents, navigationBreadcrumbsEnabled = navigationBreadcrumbsEnabled, notifyReleaseStages = notifyReleaseStages, releaseStage = releaseStage)
     if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion)
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
     if (logger != null) __obj.updateDynamic("logger")(logger)

@@ -28,9 +28,7 @@ object ObjectCallback {
     headers: js.Object = null,
     host: java.lang.String = null
   ): ObjectCallback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, url = url)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (customValue != null) __obj.updateDynamic("customValue")(customValue)
     if (headers != null) __obj.updateDynamic("headers")(headers)

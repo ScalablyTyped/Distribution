@@ -14,10 +14,8 @@ trait FilterGroup extends js.Object {
 object FilterGroup {
   @scala.inline
   def apply(end: scala.Double, level: scala.Double, start: scala.Double): FilterGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, level = level, start = start)
+  
     __obj.asInstanceOf[FilterGroup]
   }
 }

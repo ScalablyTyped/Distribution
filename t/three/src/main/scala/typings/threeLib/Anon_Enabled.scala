@@ -26,14 +26,8 @@ object Anon_Enabled {
     offsetY: scala.Double,
     width: scala.Double
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("fullHeight")(fullHeight)
-    __obj.updateDynamic("fullWidth")(fullWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(enabled = enabled, fullHeight = fullHeight, fullWidth = fullWidth, height = height, offsetX = offsetX, offsetY = offsetY, width = width)
+  
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

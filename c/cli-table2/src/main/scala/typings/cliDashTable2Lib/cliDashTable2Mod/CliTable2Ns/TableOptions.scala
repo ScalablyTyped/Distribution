@@ -26,14 +26,8 @@ object TableOptions {
     truncate: java.lang.String,
     wordWrap: scala.Boolean
   ): TableOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colAligns")(colAligns)
-    __obj.updateDynamic("colWidths")(colWidths)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("rowAligns")(rowAligns)
-    __obj.updateDynamic("rowHeights")(rowHeights)
-    __obj.updateDynamic("truncate")(truncate)
-    __obj.updateDynamic("wordWrap")(wordWrap)
+    val __obj = js.Dynamic.literal(colAligns = colAligns, colWidths = colWidths, head = head, rowAligns = rowAligns, rowHeights = rowHeights, truncate = truncate, wordWrap = wordWrap)
+  
     __obj.asInstanceOf[TableOptions]
   }
 }

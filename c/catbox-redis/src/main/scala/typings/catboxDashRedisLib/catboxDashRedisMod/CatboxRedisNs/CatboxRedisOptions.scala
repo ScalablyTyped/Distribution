@@ -62,8 +62,7 @@ object CatboxRedisOptions {
     socket: java.lang.String = null,
     url: java.lang.String = null
   ): CatboxRedisOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partition")(partition)
+    val __obj = js.Dynamic.literal(partition = partition)
     if (client != null) __obj.updateDynamic("client")(client)
     if (database != null) __obj.updateDynamic("database")(database)
     if (host != null) __obj.updateDynamic("host")(host)

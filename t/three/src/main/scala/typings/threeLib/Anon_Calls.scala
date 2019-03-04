@@ -22,12 +22,8 @@ object Anon_Calls {
     points: scala.Double,
     triangles: scala.Double
   ): Anon_Calls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calls")(calls)
-    __obj.updateDynamic("frame")(frame)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("triangles")(triangles)
+    val __obj = js.Dynamic.literal(calls = calls, frame = frame, lines = lines, points = points, triangles = triangles)
+  
     __obj.asInstanceOf[Anon_Calls]
   }
 }

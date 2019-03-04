@@ -35,7 +35,8 @@ object ManagedSchema {
       JSONSchemaBasicType | JSONSchemaArrayType | JSONSchemaObjectType | JSONSchemaRefType
     ] = null
   ): ManagedSchema = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if ($ref != null) __obj.updateDynamic("$ref")($ref)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[ManagedSchema]

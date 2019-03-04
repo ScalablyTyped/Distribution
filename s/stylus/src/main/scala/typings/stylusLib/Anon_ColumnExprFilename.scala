@@ -24,13 +24,8 @@ object Anon_ColumnExprFilename {
     lineno: scala.Double,
     op: java.lang.String
   ): Anon_ColumnExprFilename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("expr")(expr)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("op")(op)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, expr = expr, filename = filename, lineno = lineno, op = op)
+  
     __obj.asInstanceOf[Anon_ColumnExprFilename]
   }
 }

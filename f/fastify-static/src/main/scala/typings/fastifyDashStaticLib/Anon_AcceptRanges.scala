@@ -47,8 +47,7 @@ object Anon_AcceptRanges {
     setHeaders: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     wildcard: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AcceptRanges = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(root = root)
     if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges)
     if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)
     if (!js.isUndefined(decorateReply)) __obj.updateDynamic("decorateReply")(decorateReply)

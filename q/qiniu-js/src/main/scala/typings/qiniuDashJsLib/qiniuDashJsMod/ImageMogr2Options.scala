@@ -38,15 +38,8 @@ object ImageMogr2Options {
     strip: scala.Boolean,
     thumbnail: java.lang.String
   ): ImageMogr2Options = {
-    val __obj = js.Dynamic.literal(`auto-orient` = `auto-orient`)
-    __obj.updateDynamic("blur")(blur)
-    __obj.updateDynamic("crop")(crop)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("gravity")(gravity)
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("rotate")(rotate)
-    __obj.updateDynamic("strip")(strip)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(blur = blur, crop = crop, format = format, gravity = gravity, quality = quality, rotate = rotate, strip = strip, thumbnail = thumbnail)
+    __obj.updateDynamic("auto-orient")(`auto-orient`)
     __obj.asInstanceOf[ImageMogr2Options]
   }
 }

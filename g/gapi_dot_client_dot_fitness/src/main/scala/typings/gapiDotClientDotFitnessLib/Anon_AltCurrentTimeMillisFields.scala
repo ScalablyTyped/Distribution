@@ -45,9 +45,7 @@ object Anon_AltCurrentTimeMillisFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCurrentTimeMillisFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(sessionId = sessionId, userId = userId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis)
     if (fields != null) __obj.updateDynamic("fields")(fields)

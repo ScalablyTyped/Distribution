@@ -44,24 +44,8 @@ object XSpreadsheets2 {
     removeByName: js.Function1[java.lang.String, scala.Unit],
     replaceByName: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XSpreadsheets2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copyByName")(copyByName)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("importSheet")(importSheet)
-    __obj.updateDynamic("insertByName")(insertByName)
-    __obj.updateDynamic("insertNewByName")(insertNewByName)
-    __obj.updateDynamic("moveByName")(moveByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByName")(removeByName)
-    __obj.updateDynamic("replaceByName")(replaceByName)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, copyByName = copyByName, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, importSheet = importSheet, insertByName = insertByName, insertNewByName = insertNewByName, moveByName = moveByName, queryInterface = queryInterface, release = release, removeByName = removeByName, replaceByName = replaceByName)
+  
     __obj.asInstanceOf[XSpreadsheets2]
   }
 }

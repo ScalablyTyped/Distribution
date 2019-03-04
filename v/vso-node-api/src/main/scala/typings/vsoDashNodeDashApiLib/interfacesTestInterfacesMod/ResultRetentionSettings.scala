@@ -20,11 +20,8 @@ object ResultRetentionSettings {
     lastUpdatedDate: stdLib.Date,
     manualResultsRetentionDuration: scala.Double
   ): ResultRetentionSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("automatedResultsRetentionDuration")(automatedResultsRetentionDuration)
-    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("manualResultsRetentionDuration")(manualResultsRetentionDuration)
+    val __obj = js.Dynamic.literal(automatedResultsRetentionDuration = automatedResultsRetentionDuration, lastUpdatedBy = lastUpdatedBy, lastUpdatedDate = lastUpdatedDate, manualResultsRetentionDuration = manualResultsRetentionDuration)
+  
     __obj.asInstanceOf[ResultRetentionSettings]
   }
 }

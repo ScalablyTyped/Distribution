@@ -18,8 +18,7 @@ object Loader {
     async: js.UndefOr[scala.Boolean] = js.undefined,
     extend: js.Function1[Loader, Loader] = null
   ): Loader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSource")(getSource)
+    val __obj = js.Dynamic.literal(getSource = getSource)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (extend != null) __obj.updateDynamic("extend")(extend)
     __obj.asInstanceOf[Loader]

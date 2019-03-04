@@ -51,10 +51,7 @@ object ExpansionProfileFixedVersion {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ExpansionProfileFixedVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(mode = mode, system = system, version = version)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_mode != null) __obj.updateDynamic("_mode")(_mode)

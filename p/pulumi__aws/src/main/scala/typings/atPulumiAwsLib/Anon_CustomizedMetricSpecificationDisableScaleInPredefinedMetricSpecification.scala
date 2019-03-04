@@ -20,8 +20,7 @@ object Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecifica
     disableScaleIn: js.UndefOr[scala.Boolean] = js.undefined,
     predefinedMetricSpecification: Anon_PredefinedMetricType = null
   ): Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetValue")(targetValue)
+    val __obj = js.Dynamic.literal(targetValue = targetValue)
     if (customizedMetricSpecification != null) __obj.updateDynamic("customizedMetricSpecification")(customizedMetricSpecification)
     if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn)
     if (predefinedMetricSpecification != null) __obj.updateDynamic("predefinedMetricSpecification")(predefinedMetricSpecification)

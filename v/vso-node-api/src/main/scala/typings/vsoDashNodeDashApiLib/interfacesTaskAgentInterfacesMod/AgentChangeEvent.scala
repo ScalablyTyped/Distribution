@@ -22,12 +22,8 @@ object AgentChangeEvent {
     poolId: scala.Double,
     timeStamp: stdLib.Date
   ): AgentChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("agent")(agent)
-    __obj.updateDynamic("eventType")(eventType)
-    __obj.updateDynamic("pool")(pool)
-    __obj.updateDynamic("poolId")(poolId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(agent = agent, eventType = eventType, pool = pool, poolId = poolId, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[AgentChangeEvent]
   }
 }

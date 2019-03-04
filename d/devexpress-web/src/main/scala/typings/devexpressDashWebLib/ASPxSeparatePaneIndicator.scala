@@ -30,12 +30,8 @@ object ASPxSeparatePaneIndicator {
     pane: java.lang.String,
     series: ASPxClientSeries
   ): ASPxSeparatePaneIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, name = name, pane = pane, series = series)
+  
     __obj.asInstanceOf[ASPxSeparatePaneIndicator]
   }
 }

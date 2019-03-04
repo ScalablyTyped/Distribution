@@ -45,10 +45,7 @@ object VolumeAttachmentArgs {
     forceDetach: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     skipDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): VolumeAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], instanceId = instanceId.asInstanceOf[js.Any], volumeId = volumeId.asInstanceOf[js.Any])
     if (forceDetach != null) __obj.updateDynamic("forceDetach")(forceDetach.asInstanceOf[js.Any])
     if (skipDestroy != null) __obj.updateDynamic("skipDestroy")(skipDestroy.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeAttachmentArgs]

@@ -39,9 +39,7 @@ object IConnectPacket {
     username: java.lang.String = null,
     will: mqttDashPacketLib.Anon_Payload = null
   ): IConnectPacket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("cmd")(cmd)
+    val __obj = js.Dynamic.literal(clientId = clientId, cmd = cmd)
     if (!js.isUndefined(clean)) __obj.updateDynamic("clean")(clean)
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])

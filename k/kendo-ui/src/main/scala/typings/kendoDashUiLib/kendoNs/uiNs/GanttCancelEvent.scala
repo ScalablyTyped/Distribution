@@ -19,10 +19,7 @@ object GanttCancelEvent {
     container: kendoDashUiLib.JQuery = null,
     task: kendoDashUiLib.kendoNs.dataNs.GanttTask = null
   ): GanttCancelEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (container != null) __obj.updateDynamic("container")(container)
     if (task != null) __obj.updateDynamic("task")(task)
     __obj.asInstanceOf[GanttCancelEvent]

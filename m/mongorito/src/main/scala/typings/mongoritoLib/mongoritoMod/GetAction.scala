@@ -13,7 +13,8 @@ trait GetAction extends Action {
 object GetAction {
   @scala.inline
   def apply(`type`: ActionTypes, key: java.lang.String = null): GetAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[GetAction]
   }

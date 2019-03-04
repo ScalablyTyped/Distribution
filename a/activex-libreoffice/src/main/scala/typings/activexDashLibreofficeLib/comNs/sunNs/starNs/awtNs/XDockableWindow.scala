@@ -71,20 +71,8 @@ object XDockableWindow {
     startPopupMode: js.Function1[Rectangle, scala.Unit],
     unlock: js.Function0[scala.Unit]
   ): XDockableWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDockableWindowListener")(addDockableWindowListener)
-    __obj.updateDynamic("enableDocking")(enableDocking)
-    __obj.updateDynamic("isFloating")(isFloating)
-    __obj.updateDynamic("isInPopupMode")(isInPopupMode)
-    __obj.updateDynamic("isLocked")(isLocked)
-    __obj.updateDynamic("lock")(lock)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDockableWindowListener")(removeDockableWindowListener)
-    __obj.updateDynamic("setFloatingMode")(setFloatingMode)
-    __obj.updateDynamic("startPopupMode")(startPopupMode)
-    __obj.updateDynamic("unlock")(unlock)
+    val __obj = js.Dynamic.literal(acquire = acquire, addDockableWindowListener = addDockableWindowListener, enableDocking = enableDocking, isFloating = isFloating, isInPopupMode = isInPopupMode, isLocked = isLocked, lock = lock, queryInterface = queryInterface, release = release, removeDockableWindowListener = removeDockableWindowListener, setFloatingMode = setFloatingMode, startPopupMode = startPopupMode, unlock = unlock)
+  
     __obj.asInstanceOf[XDockableWindow]
   }
 }

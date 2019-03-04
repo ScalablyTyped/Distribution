@@ -16,8 +16,8 @@ trait NonNullType
 object NonNullType {
   @scala.inline
   def apply(kind: java.lang.String, `type`: NamedType | ListType, loc: Location = null): NonNullType = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[NonNullType]
   }

@@ -79,25 +79,8 @@ object XTextTable {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): XTextTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Anchor")(Anchor)
-    __obj.updateDynamic("CellNames")(CellNames)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("Rows")(Rows)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attach")(attach)
-    __obj.updateDynamic("createCursorByCellName")(createCursorByCellName)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAnchor")(getAnchor)
-    __obj.updateDynamic("getCellByName")(getCellByName)
-    __obj.updateDynamic("getCellNames")(getCellNames)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("getRows")(getRows)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(Anchor = Anchor, CellNames = CellNames, Columns = Columns, Rows = Rows, acquire = acquire, addEventListener = addEventListener, attach = attach, createCursorByCellName = createCursorByCellName, dispose = dispose, getAnchor = getAnchor, getCellByName = getCellByName, getCellNames = getCellNames, getColumns = getColumns, getRows = getRows, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[XTextTable]
   }
 }

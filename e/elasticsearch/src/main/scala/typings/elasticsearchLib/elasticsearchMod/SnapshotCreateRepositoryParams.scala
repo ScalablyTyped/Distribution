@@ -26,8 +26,7 @@ object SnapshotCreateRepositoryParams {
     timeout: TimeSpan = null,
     verify: js.UndefOr[scala.Boolean] = js.undefined
   ): SnapshotCreateRepositoryParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("repository")(repository)
+    val __obj = js.Dynamic.literal(repository = repository)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

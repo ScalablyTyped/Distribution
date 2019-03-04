@@ -17,10 +17,8 @@ trait IncludeAssociation extends js.Object {
 object IncludeAssociation {
   @scala.inline
   def apply(identifier: java.lang.String, source: Model[_, _], target: Model[_, _]): IncludeAssociation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(identifier = identifier, source = source, target = target)
+  
     __obj.asInstanceOf[IncludeAssociation]
   }
 }

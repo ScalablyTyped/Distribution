@@ -28,10 +28,7 @@ object CheckBoxProps {
     style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerIcon = null,
     uncheckedIcon: java.lang.String = null
   ): CheckBoxProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("onCheck")(onCheck)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(label = label, onCheck = onCheck, value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

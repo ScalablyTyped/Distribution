@@ -20,11 +20,8 @@ object IAdditionalClassInfo {
     Clone: js.Function0[IAdditionalClassInfo],
     InfoType: mfilesLib.MFilesNs.MFAdditionalClassInfoType
   ): IAdditionalClassInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AssignmentClassInfo")(AssignmentClassInfo)
-    __obj.updateDynamic("Clear")(Clear)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("InfoType")(InfoType)
+    val __obj = js.Dynamic.literal(AssignmentClassInfo = AssignmentClassInfo, Clear = Clear, Clone = Clone, InfoType = InfoType)
+  
     __obj.asInstanceOf[IAdditionalClassInfo]
   }
 }

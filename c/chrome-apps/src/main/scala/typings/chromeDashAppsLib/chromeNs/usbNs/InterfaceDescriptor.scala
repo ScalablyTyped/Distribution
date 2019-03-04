@@ -43,14 +43,7 @@ object InterfaceDescriptor {
     interfaceSubclass: chromeDashAppsLib.chromeNs.integer,
     description: java.lang.String = null
   ): InterfaceDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alternateSetting")(alternateSetting)
-    __obj.updateDynamic("endpoints")(endpoints)
-    __obj.updateDynamic("extra_data")(extra_data)
-    __obj.updateDynamic("interfaceClass")(interfaceClass)
-    __obj.updateDynamic("interfaceNumber")(interfaceNumber)
-    __obj.updateDynamic("interfaceProtocol")(interfaceProtocol)
-    __obj.updateDynamic("interfaceSubclass")(interfaceSubclass)
+    val __obj = js.Dynamic.literal(alternateSetting = alternateSetting, endpoints = endpoints, extra_data = extra_data, interfaceClass = interfaceClass, interfaceNumber = interfaceNumber, interfaceProtocol = interfaceProtocol, interfaceSubclass = interfaceSubclass)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[InterfaceDescriptor]
   }

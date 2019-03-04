@@ -22,12 +22,8 @@ object INetworkInformationService {
     isOffline: js.Function0[scala.Boolean],
     isOnline: js.Function0[scala.Boolean]
   ): INetworkInformationService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearOfflineWatch")(clearOfflineWatch)
-    __obj.updateDynamic("clearOnlineWatch")(clearOnlineWatch)
-    __obj.updateDynamic("getNetwork")(getNetwork)
-    __obj.updateDynamic("isOffline")(isOffline)
-    __obj.updateDynamic("isOnline")(isOnline)
+    val __obj = js.Dynamic.literal(clearOfflineWatch = clearOfflineWatch, clearOnlineWatch = clearOnlineWatch, getNetwork = getNetwork, isOffline = isOffline, isOnline = isOnline)
+  
     __obj.asInstanceOf[INetworkInformationService]
   }
 }

@@ -12,8 +12,8 @@ trait ObjectWithId extends js.Object {
 object ObjectWithId {
   @scala.inline
   def apply(id: java.lang.String): ObjectWithId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[ObjectWithId]
   }
 }

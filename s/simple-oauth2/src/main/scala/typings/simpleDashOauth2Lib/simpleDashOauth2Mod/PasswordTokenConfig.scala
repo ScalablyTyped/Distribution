@@ -21,10 +21,8 @@ object PasswordTokenConfig {
     scope: java.lang.String | js.Array[java.lang.String],
     username: java.lang.String
   ): PasswordTokenConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, scope = scope.asInstanceOf[js.Any], username = username)
+  
     __obj.asInstanceOf[PasswordTokenConfig]
   }
 }

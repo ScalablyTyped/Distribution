@@ -22,9 +22,7 @@ object Anon_AdDomainJoinPasswordAdDomainJoinUser {
     adDomainJoinUser: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     crossRealmTrustPrincipalPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AdDomainJoinPasswordAdDomainJoinUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kdcAdminPassword")(kdcAdminPassword.asInstanceOf[js.Any])
-    __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kdcAdminPassword = kdcAdminPassword.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any])
     if (adDomainJoinPassword != null) __obj.updateDynamic("adDomainJoinPassword")(adDomainJoinPassword.asInstanceOf[js.Any])
     if (adDomainJoinUser != null) __obj.updateDynamic("adDomainJoinUser")(adDomainJoinUser.asInstanceOf[js.Any])
     if (crossRealmTrustPrincipalPassword != null) __obj.updateDynamic("crossRealmTrustPrincipalPassword")(crossRealmTrustPrincipalPassword.asInstanceOf[js.Any])

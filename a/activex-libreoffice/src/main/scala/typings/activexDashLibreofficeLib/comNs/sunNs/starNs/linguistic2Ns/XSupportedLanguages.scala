@@ -23,13 +23,8 @@ object XSupportedLanguages {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSupportedLanguages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Languages")(Languages)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLanguages")(getLanguages)
-    __obj.updateDynamic("hasLanguage")(hasLanguage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Languages = Languages, acquire = acquire, getLanguages = getLanguages, hasLanguage = hasLanguage, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSupportedLanguages]
   }
 }

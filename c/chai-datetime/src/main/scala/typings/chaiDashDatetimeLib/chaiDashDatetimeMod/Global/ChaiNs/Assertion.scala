@@ -42,15 +42,8 @@ object Assertion {
       Assertion
     ]
   ): Assertion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("afterDate")(afterDate)
-    __obj.updateDynamic("afterTime")(afterTime)
-    __obj.updateDynamic("beforeDate")(beforeDate)
-    __obj.updateDynamic("beforeTime")(beforeTime)
-    __obj.updateDynamic("equalDate")(equalDate)
-    __obj.updateDynamic("equalTime")(equalTime)
-    __obj.updateDynamic("withinDate")(withinDate)
-    __obj.updateDynamic("withinTime")(withinTime)
+    val __obj = js.Dynamic.literal(afterDate = afterDate, afterTime = afterTime, beforeDate = beforeDate, beforeTime = beforeTime, equalDate = equalDate, equalTime = equalTime, withinDate = withinDate, withinTime = withinTime)
+  
     __obj.asInstanceOf[Assertion]
   }
 }

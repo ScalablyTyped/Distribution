@@ -20,11 +20,8 @@ object Anon_ACTION {
     PARENTS: java.lang.String,
     VIEW: java.lang.String
   ): Anon_ACTION = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACTION")(ACTION)
-    __obj.updateDynamic("DOCUMENTS")(DOCUMENTS)
-    __obj.updateDynamic("PARENTS")(PARENTS)
-    __obj.updateDynamic("VIEW")(VIEW)
+    val __obj = js.Dynamic.literal(ACTION = ACTION, DOCUMENTS = DOCUMENTS, PARENTS = PARENTS, VIEW = VIEW)
+  
     __obj.asInstanceOf[Anon_ACTION]
   }
 }

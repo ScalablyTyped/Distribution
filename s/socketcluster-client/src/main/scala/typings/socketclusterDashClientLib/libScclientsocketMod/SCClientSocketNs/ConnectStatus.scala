@@ -22,10 +22,7 @@ object ConnectStatus {
     authError: nodeLib.Error = null,
     authToken: js.Object = null
   ): ConnectStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("pingTimeout")(pingTimeout)
+    val __obj = js.Dynamic.literal(id = id, isAuthenticated = isAuthenticated, pingTimeout = pingTimeout)
     if (authError != null) __obj.updateDynamic("authError")(authError)
     if (authToken != null) __obj.updateDynamic("authToken")(authToken)
     __obj.asInstanceOf[ConnectStatus]

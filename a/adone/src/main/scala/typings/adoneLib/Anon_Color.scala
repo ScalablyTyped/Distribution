@@ -20,11 +20,8 @@ object Anon_Color {
     defaultOptions: nodeLib.utilMod.InspectOptions,
     styles: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
   ): Anon_Color = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("custom")(custom)
-    __obj.updateDynamic("defaultOptions")(defaultOptions)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(colors = colors, custom = custom, defaultOptions = defaultOptions, styles = styles)
+  
     __obj.asInstanceOf[Anon_Color]
   }
 }

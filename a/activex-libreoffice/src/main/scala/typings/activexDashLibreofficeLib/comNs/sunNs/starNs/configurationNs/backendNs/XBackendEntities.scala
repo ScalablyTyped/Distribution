@@ -72,16 +72,8 @@ object XBackendEntities {
     release: js.Function0[scala.Unit],
     supportsEntity: js.Function1[java.lang.String, scala.Boolean]
   ): XBackendEntities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdminEntity")(AdminEntity)
-    __obj.updateDynamic("OwnerEntity")(OwnerEntity)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getAdminEntity")(getAdminEntity)
-    __obj.updateDynamic("getOwnerEntity")(getOwnerEntity)
-    __obj.updateDynamic("isEqualEntity")(isEqualEntity)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("supportsEntity")(supportsEntity)
+    val __obj = js.Dynamic.literal(AdminEntity = AdminEntity, OwnerEntity = OwnerEntity, acquire = acquire, getAdminEntity = getAdminEntity, getOwnerEntity = getOwnerEntity, isEqualEntity = isEqualEntity, queryInterface = queryInterface, release = release, supportsEntity = supportsEntity)
+  
     __obj.asInstanceOf[XBackendEntities]
   }
 }

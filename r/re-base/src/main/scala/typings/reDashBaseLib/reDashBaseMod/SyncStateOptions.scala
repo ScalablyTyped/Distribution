@@ -62,9 +62,7 @@ object SyncStateOptions {
     queries: js.Object = null,
     `then`: js.Function0[scala.Unit] = null
   ): SyncStateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(context = context, state = state)
     if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(keepKeys)) __obj.updateDynamic("keepKeys")(keepKeys)

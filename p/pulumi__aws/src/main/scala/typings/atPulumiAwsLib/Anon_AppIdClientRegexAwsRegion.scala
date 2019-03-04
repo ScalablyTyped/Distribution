@@ -20,9 +20,7 @@ object Anon_AppIdClientRegexAwsRegion {
     appIdClientRegex: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     awsRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AppIdClientRegexAwsRegion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
-    __obj.updateDynamic("userPoolId")(userPoolId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any])
     if (appIdClientRegex != null) __obj.updateDynamic("appIdClientRegex")(appIdClientRegex.asInstanceOf[js.Any])
     if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AppIdClientRegexAwsRegion]

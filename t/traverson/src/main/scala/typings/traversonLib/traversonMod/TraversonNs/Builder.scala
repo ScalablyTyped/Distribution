@@ -151,21 +151,8 @@ object Builder {
     withRequestOptions: js.Function1[js.Any, Builder],
     withTemplateParameters: js.Function1[js.Any, Builder]
   ): Builder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("follow")(follow)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getResource")(getResource)
-    __obj.updateDynamic("getUrl")(getUrl)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("jsonHal")(jsonHal)
-    __obj.updateDynamic("newRequest")(newRequest)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("post")(post)
-    __obj.updateDynamic("put")(put)
-    __obj.updateDynamic("setMediaType")(setMediaType)
-    __obj.updateDynamic("withRequestOptions")(withRequestOptions)
-    __obj.updateDynamic("withTemplateParameters")(withTemplateParameters)
+    val __obj = js.Dynamic.literal(delete = delete, follow = follow, get = get, getResource = getResource, getUrl = getUrl, json = json, jsonHal = jsonHal, newRequest = newRequest, patch = patch, post = post, put = put, setMediaType = setMediaType, withRequestOptions = withRequestOptions, withTemplateParameters = withTemplateParameters)
+  
     __obj.asInstanceOf[Builder]
   }
 }

@@ -18,9 +18,7 @@ object ConnectOptions {
     onSuccess: js.Function1[ibmDashMobilefirstLib.WLNs.ResponseBase, scala.Unit],
     timeout: scala.Int | scala.Double = null
   ): ConnectOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onFailure")(onFailure)
-    __obj.updateDynamic("onSuccess")(onSuccess)
+    val __obj = js.Dynamic.literal(onFailure = onFailure, onSuccess = onSuccess)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }

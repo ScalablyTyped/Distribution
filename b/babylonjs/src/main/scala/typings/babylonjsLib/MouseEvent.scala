@@ -24,13 +24,8 @@ object MouseEvent {
     webkitMovementX: scala.Double,
     webkitMovementY: scala.Double
   ): MouseEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mozMovementX")(mozMovementX)
-    __obj.updateDynamic("mozMovementY")(mozMovementY)
-    __obj.updateDynamic("msMovementX")(msMovementX)
-    __obj.updateDynamic("msMovementY")(msMovementY)
-    __obj.updateDynamic("webkitMovementX")(webkitMovementX)
-    __obj.updateDynamic("webkitMovementY")(webkitMovementY)
+    val __obj = js.Dynamic.literal(mozMovementX = mozMovementX, mozMovementY = mozMovementY, msMovementX = msMovementX, msMovementY = msMovementY, webkitMovementX = webkitMovementX, webkitMovementY = webkitMovementY)
+  
     __obj.asInstanceOf[MouseEvent]
   }
 }

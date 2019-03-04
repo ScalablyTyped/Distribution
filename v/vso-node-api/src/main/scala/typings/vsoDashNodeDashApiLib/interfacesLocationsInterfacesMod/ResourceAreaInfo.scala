@@ -14,10 +14,8 @@ trait ResourceAreaInfo extends js.Object {
 object ResourceAreaInfo {
   @scala.inline
   def apply(id: java.lang.String, locationUrl: java.lang.String, name: java.lang.String): ResourceAreaInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("locationUrl")(locationUrl)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, locationUrl = locationUrl, name = name)
+  
     __obj.asInstanceOf[ResourceAreaInfo]
   }
 }

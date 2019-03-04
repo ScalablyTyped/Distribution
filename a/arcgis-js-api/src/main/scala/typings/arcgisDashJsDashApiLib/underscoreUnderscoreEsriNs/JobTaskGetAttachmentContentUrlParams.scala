@@ -30,12 +30,8 @@ object JobTaskGetAttachmentContentUrlParams {
     jobId: scala.Double,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): JobTaskGetAttachmentContentUrlParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachmentId")(attachmentId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(attachmentId = attachmentId, constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[JobTaskGetAttachmentContentUrlParams]
   }
 }

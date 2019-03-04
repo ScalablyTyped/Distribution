@@ -12,8 +12,8 @@ trait Anon_NativeAd extends js.Object {
 object Anon_NativeAd {
   @scala.inline
   def apply(nativeAd: expoLib.expoMod.FacebookAdsNs.NativeAd): Anon_NativeAd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeAd")(nativeAd)
+    val __obj = js.Dynamic.literal(nativeAd = nativeAd)
+  
     __obj.asInstanceOf[Anon_NativeAd]
   }
 }

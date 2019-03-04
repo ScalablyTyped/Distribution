@@ -46,9 +46,8 @@ object Anon_CallbackErr {
       scala.Unit
     ]
   ): Anon_CallbackErr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(remove = remove, store = store)
+  
     __obj.asInstanceOf[Anon_CallbackErr]
   }
 }

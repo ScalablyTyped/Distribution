@@ -30,10 +30,8 @@ object FloatingActionButtonOptions {
     hoverEnabled: scala.Boolean,
     toolbarEnabled: scala.Boolean
   ): FloatingActionButtonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("hoverEnabled")(hoverEnabled)
-    __obj.updateDynamic("toolbarEnabled")(toolbarEnabled)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], hoverEnabled = hoverEnabled, toolbarEnabled = toolbarEnabled)
+  
     __obj.asInstanceOf[FloatingActionButtonOptions]
   }
 }

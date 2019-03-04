@@ -76,9 +76,7 @@ object ImmunizationRecommendationRecommendation {
     targetDisease: CodeableConcept = null,
     vaccineCode: CodeableConcept = null
   ): ImmunizationRecommendationRecommendation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("forecastStatus")(forecastStatus)
+    val __obj = js.Dynamic.literal(date = date, forecastStatus = forecastStatus)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_doseNumber != null) __obj.updateDynamic("_doseNumber")(_doseNumber)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

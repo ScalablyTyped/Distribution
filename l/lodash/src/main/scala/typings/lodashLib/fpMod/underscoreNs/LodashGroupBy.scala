@@ -18,10 +18,10 @@ trait LodashGroupBy extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[T]] = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashGroupBy1x2[T] = js.native
-  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: T): LodashGroupBy2x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashGroupBy1x2[T] = js.native
+  def apply[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.__, collection: T): LodashGroupBy2x2[T] = js.native
   def apply[T](
-    iteratee: lodashLib.lodashMod.underscoreNs.`__`,
+    iteratee: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashGroupBy1x2[T] = js.native
 }

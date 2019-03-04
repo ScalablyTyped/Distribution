@@ -71,11 +71,8 @@ object XPackageRegistry {
     getSupportedPackageTypes: js.Function0[activexDashInteropLib.SafeArray[XPackageTypeInfo]],
     packageRemoved: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XPackageRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedPackageTypes")(SupportedPackageTypes)
-    __obj.updateDynamic("bindPackage")(bindPackage)
-    __obj.updateDynamic("getSupportedPackageTypes")(getSupportedPackageTypes)
-    __obj.updateDynamic("packageRemoved")(packageRemoved)
+    val __obj = js.Dynamic.literal(SupportedPackageTypes = SupportedPackageTypes, bindPackage = bindPackage, getSupportedPackageTypes = getSupportedPackageTypes, packageRemoved = packageRemoved)
+  
     __obj.asInstanceOf[XPackageRegistry]
   }
 }

@@ -12,8 +12,8 @@ trait IRawNotification extends js.Object {
 object IRawNotification {
   @scala.inline
   def apply(content: java.lang.String): IRawNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+  
     __obj.asInstanceOf[IRawNotification]
   }
 }

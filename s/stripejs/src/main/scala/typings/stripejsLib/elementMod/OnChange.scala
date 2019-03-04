@@ -59,11 +59,7 @@ object OnChange {
     country: java.lang.String = null,
     value: js.Any = null
   ): OnChange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bankName")(bankName)
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(bankName = bankName, complete = complete, empty = empty, error = error)
     if (brand != null) __obj.updateDynamic("brand")(brand)
     if (country != null) __obj.updateDynamic("country")(country)
     if (value != null) __obj.updateDynamic("value")(value)

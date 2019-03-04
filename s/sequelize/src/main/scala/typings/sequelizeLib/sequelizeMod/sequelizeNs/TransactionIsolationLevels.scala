@@ -28,11 +28,8 @@ object TransactionIsolationLevels {
     REPEATABLE_READ: TransactionIsolationLevelRepeatableRead,
     SERIALIZABLE: TransactionIsolationLevelSerializable
   ): TransactionIsolationLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("READ_COMMITTED")(READ_COMMITTED)
-    __obj.updateDynamic("READ_UNCOMMITTED")(READ_UNCOMMITTED)
-    __obj.updateDynamic("REPEATABLE_READ")(REPEATABLE_READ)
-    __obj.updateDynamic("SERIALIZABLE")(SERIALIZABLE)
+    val __obj = js.Dynamic.literal(READ_COMMITTED = READ_COMMITTED, READ_UNCOMMITTED = READ_UNCOMMITTED, REPEATABLE_READ = REPEATABLE_READ, SERIALIZABLE = SERIALIZABLE)
+  
     __obj.asInstanceOf[TransactionIsolationLevels]
   }
 }

@@ -23,12 +23,8 @@ object CommandQueue {
     logs: js.Function1[js.Any, js.Any],
     toJSON: js.Function0[js.Array[java.lang.String]]
   ): CommandQueue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("logs")(logs)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(add = add, create = create, get = get, logs = logs, toJSON = toJSON)
+  
     __obj.asInstanceOf[CommandQueue]
   }
 }

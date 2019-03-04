@@ -20,11 +20,8 @@ object LogRecord {
     meta: js.Any,
     msg: java.lang.String
   ): LogRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_logLevel")(_logLevel)
-    __obj.updateDynamic("_tags")(_tags)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(_logLevel = _logLevel, _tags = _tags, meta = meta, msg = msg)
+  
     __obj.asInstanceOf[LogRecord]
   }
 }

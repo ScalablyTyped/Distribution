@@ -32,8 +32,8 @@ object Anon_Data {
       scala.Unit | jqueryLib.jqueryLibNumbers.`false`
     ]
   ): Anon_Data[TTarget, TData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setup")(setup)
+    val __obj = js.Dynamic.literal(setup = setup)
+  
     __obj.asInstanceOf[Anon_Data[TTarget, TData]]
   }
 }

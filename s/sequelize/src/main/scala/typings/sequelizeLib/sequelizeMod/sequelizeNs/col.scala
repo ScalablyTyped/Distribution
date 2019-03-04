@@ -12,8 +12,8 @@ trait col extends js.Object {
 object col {
   @scala.inline
   def apply(col: java.lang.String): col = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
+    val __obj = js.Dynamic.literal(col = col)
+  
     __obj.asInstanceOf[col]
   }
 }

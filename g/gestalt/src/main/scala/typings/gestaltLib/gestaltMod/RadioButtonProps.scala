@@ -26,9 +26,7 @@ object RadioButtonProps {
     size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md = null,
     value: java.lang.String = null
   ): RadioButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(id = id, onChange = onChange)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (name != null) __obj.updateDynamic("name")(name)

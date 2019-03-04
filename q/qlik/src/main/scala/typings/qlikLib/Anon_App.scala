@@ -23,9 +23,8 @@ object Anon_App {
     ],
     setContent: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContent")(getContent)
-    __obj.updateDynamic("setContent")(setContent)
+    val __obj = js.Dynamic.literal(getContent = getContent, setContent = setContent)
+  
     __obj.asInstanceOf[Anon_App]
   }
 }

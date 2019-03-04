@@ -28,18 +28,8 @@ object GearConstraint {
     `type`: scala.Double,
     update: js.Function0[scala.Unit]
   ): GearConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("collideConnected")(collideConnected)
-    __obj.updateDynamic("equeations")(equeations)
-    __obj.updateDynamic("getMaxTorque")(getMaxTorque)
-    __obj.updateDynamic("ratio")(ratio)
-    __obj.updateDynamic("setMaxTorque")(setMaxTorque)
-    __obj.updateDynamic("setRelaxation")(setRelaxation)
-    __obj.updateDynamic("setStiffness")(setStiffness)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(angle = angle, bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, equeations = equeations, getMaxTorque = getMaxTorque, ratio = ratio, setMaxTorque = setMaxTorque, setRelaxation = setRelaxation, setStiffness = setStiffness, update = update)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GearConstraint]
   }
 }

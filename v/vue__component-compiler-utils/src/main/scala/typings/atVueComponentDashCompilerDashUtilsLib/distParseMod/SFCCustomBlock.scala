@@ -28,11 +28,8 @@ object SFCCustomBlock {
     `type`: java.lang.String,
     map: atVueComponentDashCompilerDashUtilsLib.distTypesMod.RawSourceMap = null
   ): SFCCustomBlock = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(attrs = attrs, content = content, end = end, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (map != null) __obj.updateDynamic("map")(map)
     __obj.asInstanceOf[SFCCustomBlock]
   }

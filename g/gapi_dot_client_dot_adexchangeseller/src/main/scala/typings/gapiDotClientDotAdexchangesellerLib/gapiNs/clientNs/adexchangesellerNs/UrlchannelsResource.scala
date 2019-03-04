@@ -18,8 +18,8 @@ object UrlchannelsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
     ]
   ): UrlchannelsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[UrlchannelsResource]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Smooth extends js.Object {
 object Anon_Smooth {
   @scala.inline
   def apply(smooth: scala.Boolean | java.lang.String): Anon_Smooth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(smooth = smooth.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Smooth]
   }
 }

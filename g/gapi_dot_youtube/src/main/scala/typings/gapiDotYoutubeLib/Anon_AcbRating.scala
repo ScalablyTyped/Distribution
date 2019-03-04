@@ -87,22 +87,8 @@ object Anon_AcbRating {
     russiaRating: java.lang.String,
     tvpgRating: java.lang.String
   ): Anon_AcbRating = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acbRating")(acbRating)
-    __obj.updateDynamic("bbfcRating")(bbfcRating)
-    __obj.updateDynamic("cbfcRating")(cbfcRating)
-    __obj.updateDynamic("chvrsRating")(chvrsRating)
-    __obj.updateDynamic("djctqRating")(djctqRating)
-    __obj.updateDynamic("eirinRating")(eirinRating)
-    __obj.updateDynamic("fmocRating")(fmocRating)
-    __obj.updateDynamic("fskRating")(fskRating)
-    __obj.updateDynamic("icaaRating")(icaaRating)
-    __obj.updateDynamic("kmrbRating")(kmrbRating)
-    __obj.updateDynamic("mpaaRating")(mpaaRating)
-    __obj.updateDynamic("oflcRating")(oflcRating)
-    __obj.updateDynamic("rtcRating")(rtcRating)
-    __obj.updateDynamic("russiaRating")(russiaRating)
-    __obj.updateDynamic("tvpgRating")(tvpgRating)
+    val __obj = js.Dynamic.literal(acbRating = acbRating, bbfcRating = bbfcRating, cbfcRating = cbfcRating, chvrsRating = chvrsRating, djctqRating = djctqRating, eirinRating = eirinRating, fmocRating = fmocRating, fskRating = fskRating, icaaRating = icaaRating, kmrbRating = kmrbRating, mpaaRating = mpaaRating, oflcRating = oflcRating, rtcRating = rtcRating, russiaRating = russiaRating, tvpgRating = tvpgRating)
+  
     __obj.asInstanceOf[Anon_AcbRating]
   }
 }

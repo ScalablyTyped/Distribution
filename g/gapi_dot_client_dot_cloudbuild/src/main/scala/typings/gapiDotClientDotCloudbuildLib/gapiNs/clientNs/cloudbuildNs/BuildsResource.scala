@@ -52,11 +52,8 @@ object BuildsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ListBuildsResponse]
     ]
   ): BuildsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(cancel = cancel, create = create, get = get, list = list)
+  
     __obj.asInstanceOf[BuildsResource]
   }
 }

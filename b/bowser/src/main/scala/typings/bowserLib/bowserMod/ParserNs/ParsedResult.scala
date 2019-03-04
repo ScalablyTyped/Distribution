@@ -15,11 +15,8 @@ trait ParsedResult extends js.Object {
 object ParsedResult {
   @scala.inline
   def apply(browser: BrowserDetails, engine: EngineDetails, os: OSDetails, platform: PlatformDetails): ParsedResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browser")(browser)
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("os")(os)
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(browser = browser, engine = engine, os = os, platform = platform)
+  
     __obj.asInstanceOf[ParsedResult]
   }
 }

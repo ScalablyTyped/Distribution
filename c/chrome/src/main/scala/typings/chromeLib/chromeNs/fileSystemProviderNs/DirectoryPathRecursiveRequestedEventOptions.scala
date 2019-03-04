@@ -18,11 +18,8 @@ object DirectoryPathRecursiveRequestedEventOptions {
     recursive: scala.Boolean,
     requestId: scala.Double
   ): DirectoryPathRecursiveRequestedEventOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directoryPath")(directoryPath)
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
-    __obj.updateDynamic("recursive")(recursive)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(directoryPath = directoryPath, fileSystemId = fileSystemId, recursive = recursive, requestId = requestId)
+  
     __obj.asInstanceOf[DirectoryPathRecursiveRequestedEventOptions]
   }
 }

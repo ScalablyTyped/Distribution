@@ -34,15 +34,7 @@ object ClusterCreationOptions {
     hiveMetastore: azureLib.Anon_Database = null,
     oozieMetastore: azureLib.Anon_Database = null
   ): ClusterCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultStorageAccountKey")(defaultStorageAccountKey)
-    __obj.updateDynamic("defaultStorageAccountName")(defaultStorageAccountName)
-    __obj.updateDynamic("defaultStorageContainer")(defaultStorageContainer)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(defaultStorageAccountKey = defaultStorageAccountKey, defaultStorageAccountName = defaultStorageAccountName, defaultStorageContainer = defaultStorageContainer, location = location, name = name, nodes = nodes, password = password, user = user)
     if (additionalStorageAccounts != null) __obj.updateDynamic("additionalStorageAccounts")(additionalStorageAccounts)
     if (hiveMetastore != null) __obj.updateDynamic("hiveMetastore")(hiveMetastore)
     if (oozieMetastore != null) __obj.updateDynamic("oozieMetastore")(oozieMetastore)

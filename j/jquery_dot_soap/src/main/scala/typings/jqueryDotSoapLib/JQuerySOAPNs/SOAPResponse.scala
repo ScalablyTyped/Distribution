@@ -17,10 +17,8 @@ object SOAPResponse {
     toString: js.Function0[java.lang.String],
     toXML: js.Function0[stdLib.XMLDocument]
   ): SOAPResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toXML")(toXML)
+    val __obj = js.Dynamic.literal(toJSON = toJSON, toString = toString, toXML = toXML)
+  
     __obj.asInstanceOf[SOAPResponse]
   }
 }

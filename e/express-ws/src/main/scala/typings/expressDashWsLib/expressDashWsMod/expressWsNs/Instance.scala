@@ -18,10 +18,8 @@ object Instance {
     applyTo: js.Function1[RouterLike, scala.Unit],
     getWss: js.Function0[wsLib.wsMod.Server]
   ): Instance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("applyTo")(applyTo)
-    __obj.updateDynamic("getWss")(getWss)
+    val __obj = js.Dynamic.literal(app = app, applyTo = applyTo, getWss = getWss)
+  
     __obj.asInstanceOf[Instance]
   }
 }

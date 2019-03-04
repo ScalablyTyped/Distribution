@@ -15,10 +15,8 @@ trait AddPatch
 object AddPatch {
   @scala.inline
   def apply(op: jsonDashPatchLib.jsonDashPatchLibStrings.add, path: java.lang.String, value: js.Any): AddPatch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(op = op, path = path, value = value)
+  
     __obj.asInstanceOf[AddPatch]
   }
 }

@@ -29,13 +29,7 @@ object LoggingEvent {
     startTime: stdLib.Date,
     cluster: log4jsLib.Anon_Worker = null
   ): LoggingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categoryName")(categoryName)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(categoryName = categoryName, context = context, data = data, level = level, pid = pid, startTime = startTime)
     if (cluster != null) __obj.updateDynamic("cluster")(cluster)
     __obj.asInstanceOf[LoggingEvent]
   }

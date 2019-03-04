@@ -16,9 +16,8 @@ object NodeStringDecoder {
     detectIncompleteChar: js.Function1[easyDashXDashHeadersLib.Buffer, scala.Double],
     write: js.Function1[easyDashXDashHeadersLib.Buffer, java.lang.String]
   ): NodeStringDecoder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("detectIncompleteChar")(detectIncompleteChar)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(detectIncompleteChar = detectIncompleteChar, write = write)
+  
     __obj.asInstanceOf[NodeStringDecoder]
   }
 }

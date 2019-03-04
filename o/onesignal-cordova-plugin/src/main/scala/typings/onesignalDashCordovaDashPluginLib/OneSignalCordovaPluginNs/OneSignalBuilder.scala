@@ -22,12 +22,8 @@ object OneSignalBuilder {
     iOSSettings: js.Function1[onesignalDashCordovaDashPluginLib.Anon_KOSSettingsKeyAutoPrompt, OneSignalBuilder],
     inFocusDisplaying: js.Function1[OSDisplayType, OneSignalBuilder]
   ): OneSignalBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endInit")(endInit)
-    __obj.updateDynamic("handleNotificationOpened")(handleNotificationOpened)
-    __obj.updateDynamic("handleNotificationReceived")(handleNotificationReceived)
-    __obj.updateDynamic("iOSSettings")(iOSSettings)
-    __obj.updateDynamic("inFocusDisplaying")(inFocusDisplaying)
+    val __obj = js.Dynamic.literal(endInit = endInit, handleNotificationOpened = handleNotificationOpened, handleNotificationReceived = handleNotificationReceived, iOSSettings = iOSSettings, inFocusDisplaying = inFocusDisplaying)
+  
     __obj.asInstanceOf[OneSignalBuilder]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Options {
     options: js.Object,
     path: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.StrOrRegex
   ): Anon_Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(options = options, path = path.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Options]
   }
 }

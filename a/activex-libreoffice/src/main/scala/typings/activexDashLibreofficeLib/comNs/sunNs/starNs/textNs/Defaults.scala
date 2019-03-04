@@ -30,14 +30,13 @@ object Defaults {
     TabStopDistance: scala.Double,
     XPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet = null
   ): Defaults = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(TabStopDistance = TabStopDistance)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
-    __obj.updateDynamic("TabStopDistance")(TabStopDistance)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPropertySet)
     __obj.asInstanceOf[Defaults]
   }

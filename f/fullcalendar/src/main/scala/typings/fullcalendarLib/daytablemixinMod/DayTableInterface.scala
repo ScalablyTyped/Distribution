@@ -38,20 +38,8 @@ object DayTableInterface {
     sliceRangeByRow: js.Function1[js.Any, js.Any],
     updateDayTable: js.Function0[js.Any]
   ): DayTableInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bookendCells")(bookendCells)
-    __obj.updateDynamic("colCnt")(colCnt)
-    __obj.updateDynamic("dayDates")(dayDates)
-    __obj.updateDynamic("daysPerRow")(daysPerRow)
-    __obj.updateDynamic("getCellDate")(getCellDate)
-    __obj.updateDynamic("getCellRange")(getCellRange)
-    __obj.updateDynamic("renderBgTrHtml")(renderBgTrHtml)
-    __obj.updateDynamic("renderHeadHtml")(renderHeadHtml)
-    __obj.updateDynamic("renderIntroHtml")(renderIntroHtml)
-    __obj.updateDynamic("rowCnt")(rowCnt)
-    __obj.updateDynamic("sliceRangeByDay")(sliceRangeByDay)
-    __obj.updateDynamic("sliceRangeByRow")(sliceRangeByRow)
-    __obj.updateDynamic("updateDayTable")(updateDayTable)
+    val __obj = js.Dynamic.literal(bookendCells = bookendCells, colCnt = colCnt, dayDates = dayDates, daysPerRow = daysPerRow, getCellDate = getCellDate, getCellRange = getCellRange, renderBgTrHtml = renderBgTrHtml, renderHeadHtml = renderHeadHtml, renderIntroHtml = renderIntroHtml, rowCnt = rowCnt, sliceRangeByDay = sliceRangeByDay, sliceRangeByRow = sliceRangeByRow, updateDayTable = updateDayTable)
+  
     __obj.asInstanceOf[DayTableInterface]
   }
 }

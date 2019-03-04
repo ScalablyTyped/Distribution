@@ -24,13 +24,8 @@ object Polyline {
     show: scala.Boolean,
     width: scala.Double
   ): Polyline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("positions")(positions)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(id = id, loop = loop, material = material, positions = positions, show = show, width = width)
+  
     __obj.asInstanceOf[Polyline]
   }
 }

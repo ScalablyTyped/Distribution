@@ -22,12 +22,8 @@ object Baseline {
     y0: scala.Double,
     y1: scala.Double
   ): Baseline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("has_baseline")(has_baseline)
-    __obj.updateDynamic("x0")(x0)
-    __obj.updateDynamic("x1")(x1)
-    __obj.updateDynamic("y0")(y0)
-    __obj.updateDynamic("y1")(y1)
+    val __obj = js.Dynamic.literal(has_baseline = has_baseline, x0 = x0, x1 = x1, y0 = y0, y1 = y1)
+  
     __obj.asInstanceOf[Baseline]
   }
 }

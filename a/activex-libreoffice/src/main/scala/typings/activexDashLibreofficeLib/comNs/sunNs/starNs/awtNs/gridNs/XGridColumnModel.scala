@@ -107,25 +107,8 @@ object XGridColumnModel {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     setDefaultColumns: js.Function1[scala.Double, scala.Unit]
   ): XGridColumnModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnCount")(ColumnCount)
-    __obj.updateDynamic("Columns")(Columns)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addColumn")(addColumn)
-    __obj.updateDynamic("addContainerListener")(addContainerListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("createClone")(createClone)
-    __obj.updateDynamic("createColumn")(createColumn)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getColumn")(getColumn)
-    __obj.updateDynamic("getColumnCount")(getColumnCount)
-    __obj.updateDynamic("getColumns")(getColumns)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeColumn")(removeColumn)
-    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setDefaultColumns")(setDefaultColumns)
+    val __obj = js.Dynamic.literal(ColumnCount = ColumnCount, Columns = Columns, acquire = acquire, addColumn = addColumn, addContainerListener = addContainerListener, addEventListener = addEventListener, createClone = createClone, createColumn = createColumn, dispose = dispose, getColumn = getColumn, getColumnCount = getColumnCount, getColumns = getColumns, queryInterface = queryInterface, release = release, removeColumn = removeColumn, removeContainerListener = removeContainerListener, removeEventListener = removeEventListener, setDefaultColumns = setDefaultColumns)
+  
     __obj.asInstanceOf[XGridColumnModel]
   }
 }

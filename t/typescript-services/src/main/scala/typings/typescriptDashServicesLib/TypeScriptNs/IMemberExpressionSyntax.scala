@@ -39,33 +39,8 @@ object IMemberExpressionSyntax {
     withLeadingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax],
     withTrailingTrivia: js.Function1[ISyntaxTriviaList, IExpressionSyntax]
   ): IMemberExpressionSyntax = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(accept)
-    __obj.updateDynamic("childAt")(childAt)
-    __obj.updateDynamic("childCount")(childCount)
-    __obj.updateDynamic("collectTextElements")(collectTextElements)
-    __obj.updateDynamic("firstToken")(firstToken)
-    __obj.updateDynamic("fullText")(fullText)
-    __obj.updateDynamic("fullWidth")(fullWidth)
-    __obj.updateDynamic("isExpression")(isExpression)
-    __obj.updateDynamic("isIncrementallyUnusable")(isIncrementallyUnusable)
-    __obj.updateDynamic("isList")(isList)
-    __obj.updateDynamic("isMemberExpression")(isMemberExpression)
-    __obj.updateDynamic("isNode")(isNode)
-    __obj.updateDynamic("isPostfixExpression")(isPostfixExpression)
-    __obj.updateDynamic("isSeparatedList")(isSeparatedList)
-    __obj.updateDynamic("isToken")(isToken)
-    __obj.updateDynamic("isTypeScriptSpecific")(isTypeScriptSpecific)
-    __obj.updateDynamic("isUnaryExpression")(isUnaryExpression)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("lastToken")(lastToken)
-    __obj.updateDynamic("leadingTrivia")(leadingTrivia)
-    __obj.updateDynamic("leadingTriviaWidth")(leadingTriviaWidth)
-    __obj.updateDynamic("trailingTrivia")(trailingTrivia)
-    __obj.updateDynamic("trailingTriviaWidth")(trailingTriviaWidth)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("withLeadingTrivia")(withLeadingTrivia)
-    __obj.updateDynamic("withTrailingTrivia")(withTrailingTrivia)
+    val __obj = js.Dynamic.literal(accept = accept, childAt = childAt, childCount = childCount, collectTextElements = collectTextElements, firstToken = firstToken, fullText = fullText, fullWidth = fullWidth, isExpression = isExpression, isIncrementallyUnusable = isIncrementallyUnusable, isList = isList, isMemberExpression = isMemberExpression, isNode = isNode, isPostfixExpression = isPostfixExpression, isSeparatedList = isSeparatedList, isToken = isToken, isTypeScriptSpecific = isTypeScriptSpecific, isUnaryExpression = isUnaryExpression, kind = kind, lastToken = lastToken, leadingTrivia = leadingTrivia, leadingTriviaWidth = leadingTriviaWidth, trailingTrivia = trailingTrivia, trailingTriviaWidth = trailingTriviaWidth, width = width, withLeadingTrivia = withLeadingTrivia, withTrailingTrivia = withTrailingTrivia)
+  
     __obj.asInstanceOf[IMemberExpressionSyntax]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_MaxError extends js.Object {
 object Anon_MaxError {
   @scala.inline
   def apply(maxError: js.Any): Anon_MaxError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxError")(maxError)
+    val __obj = js.Dynamic.literal(maxError = maxError)
+  
     __obj.asInstanceOf[Anon_MaxError]
   }
 }

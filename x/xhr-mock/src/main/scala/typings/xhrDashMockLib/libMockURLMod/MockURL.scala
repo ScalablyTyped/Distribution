@@ -29,8 +29,7 @@ object MockURL {
     query: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     username: java.lang.String = null
   ): MockURL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(toString = toString)
     if (hash != null) __obj.updateDynamic("hash")(hash)
     if (host != null) __obj.updateDynamic("host")(host)
     if (password != null) __obj.updateDynamic("password")(password)

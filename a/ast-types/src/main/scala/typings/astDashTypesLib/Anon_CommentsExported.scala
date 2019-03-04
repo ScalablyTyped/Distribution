@@ -24,8 +24,7 @@ object Anon_CommentsExported {
     local: astDashTypesLib.genKindsMod.IdentifierKind = null,
     name: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): Anon_CommentsExported = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exported")(exported)
+    val __obj = js.Dynamic.literal(exported = exported)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (id != null) __obj.updateDynamic("id")(id)
     if (loc != null) __obj.updateDynamic("loc")(loc)

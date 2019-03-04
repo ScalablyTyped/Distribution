@@ -12,8 +12,8 @@ trait ValidateCustomResponse extends js.Object {
 object ValidateCustomResponse {
   @scala.inline
   def apply(response: js.Any): ValidateCustomResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("response")(response)
+    val __obj = js.Dynamic.literal(response = response)
+  
     __obj.asInstanceOf[ValidateCustomResponse]
   }
 }

@@ -37,12 +37,7 @@ object FixedSizeListProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): FixedSizeListProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("itemCount")(itemCount)
-    __obj.updateDynamic("itemSize")(itemSize)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount, itemSize = itemSize, width = width.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     if (initialScrollOffset != null) __obj.updateDynamic("initialScrollOffset")(initialScrollOffset.asInstanceOf[js.Any])

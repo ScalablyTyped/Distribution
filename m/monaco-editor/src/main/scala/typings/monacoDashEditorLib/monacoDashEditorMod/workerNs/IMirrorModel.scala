@@ -18,10 +18,8 @@ object IMirrorModel {
     uri: monacoDashEditorLib.monacoDashEditorMod.Uri,
     version: scala.Double
   ): IMirrorModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(getValue = getValue, uri = uri, version = version)
+  
     __obj.asInstanceOf[IMirrorModel]
   }
 }

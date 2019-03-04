@@ -22,9 +22,8 @@ object VisualUpdateOptions {
     editMode: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.EditMode = null,
     viewMode: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.ViewMode = null
   ): VisualUpdateOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("dataViews")(dataViews)
-    __obj.updateDynamic("viewport")(viewport)
+    val __obj = js.Dynamic.literal(dataViews = dataViews, viewport = viewport)
+    __obj.updateDynamic("type")(`type`)
     if (editMode != null) __obj.updateDynamic("editMode")(editMode)
     if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode)
     __obj.asInstanceOf[VisualUpdateOptions]

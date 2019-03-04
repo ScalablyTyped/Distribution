@@ -43,20 +43,8 @@ object SelectionState {
     isCollapsed: js.Function0[scala.Boolean],
     serialize: js.Function0[java.lang.String]
   ): SelectionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAnchorKey")(getAnchorKey)
-    __obj.updateDynamic("getAnchorOffset")(getAnchorOffset)
-    __obj.updateDynamic("getEndKey")(getEndKey)
-    __obj.updateDynamic("getEndOffset")(getEndOffset)
-    __obj.updateDynamic("getFocusKey")(getFocusKey)
-    __obj.updateDynamic("getFocusOffset")(getFocusOffset)
-    __obj.updateDynamic("getHasFocus")(getHasFocus)
-    __obj.updateDynamic("getIsBackward")(getIsBackward)
-    __obj.updateDynamic("getStartKey")(getStartKey)
-    __obj.updateDynamic("getStartOffset")(getStartOffset)
-    __obj.updateDynamic("hasEdgeWithin")(hasEdgeWithin)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(getAnchorKey = getAnchorKey, getAnchorOffset = getAnchorOffset, getEndKey = getEndKey, getEndOffset = getEndOffset, getFocusKey = getFocusKey, getFocusOffset = getFocusOffset, getHasFocus = getHasFocus, getIsBackward = getIsBackward, getStartKey = getStartKey, getStartOffset = getStartOffset, hasEdgeWithin = hasEdgeWithin, isCollapsed = isCollapsed, serialize = serialize)
+  
     __obj.asInstanceOf[SelectionState]
   }
 }

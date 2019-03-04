@@ -26,10 +26,7 @@ object IChartistAnimationOptions {
     fill: java.lang.String = null,
     id: java.lang.String = null
   ): IChartistAnimationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dur")(dur.asInstanceOf[js.Any])
-    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dur = dur.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin)
     if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill)

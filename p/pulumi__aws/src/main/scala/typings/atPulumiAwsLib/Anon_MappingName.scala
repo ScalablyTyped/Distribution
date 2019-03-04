@@ -18,9 +18,7 @@ object Anon_MappingName {
     sqlType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     mapping: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_MappingName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("sqlType")(sqlType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sqlType = sqlType.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(mapping.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_MappingName]
   }

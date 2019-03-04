@@ -16,9 +16,8 @@ object Anon_LARGESMALL {
     LARGE: reactDashFoundationLib.enumsMod.CalloutSizes,
     SMALL: reactDashFoundationLib.enumsMod.CalloutSizes
   ): Anon_LARGESMALL = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LARGE")(LARGE)
-    __obj.updateDynamic("SMALL")(SMALL)
+    val __obj = js.Dynamic.literal(LARGE = LARGE, SMALL = SMALL)
+  
     __obj.asInstanceOf[Anon_LARGESMALL]
   }
 }

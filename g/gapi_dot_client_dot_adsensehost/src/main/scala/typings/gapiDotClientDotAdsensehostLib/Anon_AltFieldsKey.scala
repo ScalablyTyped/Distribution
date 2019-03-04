@@ -48,9 +48,7 @@ object Anon_AltFieldsKey {
     userLocale: java.lang.String = null,
     websiteLocale: java.lang.String = null
   ): Anon_AltFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productCode")(productCode)
-    __obj.updateDynamic("websiteUrl")(websiteUrl)
+    val __obj = js.Dynamic.literal(productCode = productCode, websiteUrl = websiteUrl)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

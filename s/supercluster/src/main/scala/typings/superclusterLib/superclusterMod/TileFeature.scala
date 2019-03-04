@@ -18,9 +18,8 @@ object TileFeature {
     tags: (ClusterProperties with C) | P,
     `type`: superclusterLib.superclusterLibNumbers.`1`
   ): TileFeature[C, P] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geometry")(geometry)
-    __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(geometry = geometry, tags = tags.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TileFeature[C, P]]
   }
 }

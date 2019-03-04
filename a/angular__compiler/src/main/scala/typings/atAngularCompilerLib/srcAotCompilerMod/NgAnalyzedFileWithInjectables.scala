@@ -22,10 +22,8 @@ object NgAnalyzedFileWithInjectables {
       atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileShallowModuleMetadata
     ]
   ): NgAnalyzedFileWithInjectables = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("injectables")(injectables)
-    __obj.updateDynamic("shallowModules")(shallowModules)
+    val __obj = js.Dynamic.literal(fileName = fileName, injectables = injectables, shallowModules = shallowModules)
+  
     __obj.asInstanceOf[NgAnalyzedFileWithInjectables]
   }
 }

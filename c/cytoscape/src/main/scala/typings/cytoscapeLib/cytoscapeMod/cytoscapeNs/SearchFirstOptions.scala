@@ -27,8 +27,7 @@ object SearchFirstOptions {
     directed: js.UndefOr[scala.Boolean] = js.undefined,
     visit: SearchVisitFunction = null
   ): SearchFirstOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(roots = roots.asInstanceOf[js.Any])
     if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
     if (visit != null) __obj.updateDynamic("visit")(visit)
     __obj.asInstanceOf[SearchFirstOptions]

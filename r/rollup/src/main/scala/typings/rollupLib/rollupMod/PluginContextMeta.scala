@@ -12,8 +12,8 @@ trait PluginContextMeta extends js.Object {
 object PluginContextMeta {
   @scala.inline
   def apply(rollupVersion: java.lang.String): PluginContextMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rollupVersion")(rollupVersion)
+    val __obj = js.Dynamic.literal(rollupVersion = rollupVersion)
+  
     __obj.asInstanceOf[PluginContextMeta]
   }
 }

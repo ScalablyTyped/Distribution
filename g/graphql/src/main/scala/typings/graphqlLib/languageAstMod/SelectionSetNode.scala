@@ -18,9 +18,7 @@ object SelectionSetNode {
     selections: js.Array[SelectionNode],
     loc: Location = null
   ): SelectionSetNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("selections")(selections)
+    val __obj = js.Dynamic.literal(kind = kind, selections = selections)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[SelectionSetNode]
   }

@@ -143,8 +143,7 @@ object PaginationOptions {
     totalClass: java.lang.String = null,
     `type`: swiperLib.swiperLibStrings.bullets | swiperLib.swiperLibStrings.fraction | swiperLib.swiperLibStrings.progressbar | swiperLib.swiperLibStrings.custom = null
   ): PaginationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     if (bulletActiveClass != null) __obj.updateDynamic("bulletActiveClass")(bulletActiveClass)
     if (bulletClass != null) __obj.updateDynamic("bulletClass")(bulletClass)
     if (bulletElement != null) __obj.updateDynamic("bulletElement")(bulletElement)

@@ -18,10 +18,8 @@ object Anon_Clamp {
     inRange: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof inRange */ js.Any,
     random: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof random */ js.Any
   ): Anon_Clamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clamp")(clamp)
-    __obj.updateDynamic("inRange")(inRange)
-    __obj.updateDynamic("random")(random)
+    val __obj = js.Dynamic.literal(clamp = clamp, inRange = inRange, random = random)
+  
     __obj.asInstanceOf[Anon_Clamp]
   }
 }

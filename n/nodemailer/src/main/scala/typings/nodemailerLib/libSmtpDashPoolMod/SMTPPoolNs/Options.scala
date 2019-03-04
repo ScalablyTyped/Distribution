@@ -131,8 +131,7 @@ object Options {
     url: java.lang.String = null,
     watchHtml: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | nodemailerLib.libMailerMod.MailNs.AttachmentLike = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pool")(pool)
+    val __obj = js.Dynamic.literal(pool = pool)
     if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
     if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (auth != null) __obj.updateDynamic("auth")(auth)

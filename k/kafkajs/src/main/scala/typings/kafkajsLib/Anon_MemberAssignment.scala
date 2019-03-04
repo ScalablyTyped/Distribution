@@ -13,9 +13,8 @@ trait Anon_MemberAssignment extends js.Object {
 object Anon_MemberAssignment {
   @scala.inline
   def apply(memberAssignment: nodeLib.Buffer, memberId: scala.Double): Anon_MemberAssignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("memberAssignment")(memberAssignment)
-    __obj.updateDynamic("memberId")(memberId)
+    val __obj = js.Dynamic.literal(memberAssignment = memberAssignment, memberId = memberId)
+  
     __obj.asInstanceOf[Anon_MemberAssignment]
   }
 }

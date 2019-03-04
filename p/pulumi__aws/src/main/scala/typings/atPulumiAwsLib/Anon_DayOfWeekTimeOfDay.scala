@@ -18,10 +18,8 @@ object Anon_DayOfWeekTimeOfDay {
     timeOfDay: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     timeZone: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_DayOfWeekTimeOfDay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
-    __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dayOfWeek = dayOfWeek.asInstanceOf[js.Any], timeOfDay = timeOfDay.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DayOfWeekTimeOfDay]
   }
 }

@@ -27,12 +27,8 @@ object NewExpression {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): NewExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("callee")(callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee.asInstanceOf[js.Any], end = end, loc = loc, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

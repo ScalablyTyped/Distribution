@@ -62,17 +62,8 @@ object Group {
     overridden: scala.Boolean,
     visible: scala.Boolean
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contribution")(contribution)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inherited")(inherited)
-    __obj.updateDynamic("isContribution")(isContribution)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("overridden")(overridden)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(contribution = contribution, controls = controls, height = height, id = id, inherited = inherited, isContribution = isContribution, label = label, order = order, overridden = overridden, visible = visible)
+  
     __obj.asInstanceOf[Group]
   }
 }

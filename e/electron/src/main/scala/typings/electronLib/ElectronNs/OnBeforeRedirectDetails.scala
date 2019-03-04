@@ -37,16 +37,7 @@ object OnBeforeRedirectDetails {
     ip: java.lang.String = null,
     webContentsId: scala.Int | scala.Double = null
   ): OnBeforeRedirectDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("redirectURL")(redirectURL)
-    __obj.updateDynamic("resourceType")(resourceType)
-    __obj.updateDynamic("responseHeaders")(responseHeaders)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(fromCache = fromCache, id = id, method = method, redirectURL = redirectURL, resourceType = resourceType, responseHeaders = responseHeaders, statusCode = statusCode, timestamp = timestamp, url = url)
     if (ip != null) __obj.updateDynamic("ip")(ip)
     if (webContentsId != null) __obj.updateDynamic("webContentsId")(webContentsId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBeforeRedirectDetails]

@@ -15,11 +15,11 @@ class TimedMutex ()
   /**
     * @hidden
     */
-  var `lock_count_`: js.Any = js.native
+  var lock_count_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `resolvers_`: js.Any = js.native
+  var resolvers_ : js.Any = js.native
   /**
     * Lock until be unlocked.
     */

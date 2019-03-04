@@ -24,12 +24,8 @@ object SceneViewKeyDownEvent {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): SceneViewKeyDownEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("repeat")(repeat)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(key = key, native = native, repeat = repeat, stopPropagation = stopPropagation, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SceneViewKeyDownEvent]
   }
 }

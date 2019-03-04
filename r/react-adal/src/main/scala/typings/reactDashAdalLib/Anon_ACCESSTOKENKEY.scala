@@ -40,21 +40,8 @@ object Anon_ACCESSTOKENKEY {
     TOKEN_KEYS: reactDashAdalLib.reactDashAdalLibStrings.adalDOTtokenDOTkeys,
     USERNAME: reactDashAdalLib.reactDashAdalLibStrings.adalDOTusername
   ): Anon_ACCESSTOKENKEY = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ACCESS_TOKEN_KEY")(ACCESS_TOKEN_KEY)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("ERROR_DESCRIPTION")(ERROR_DESCRIPTION)
-    __obj.updateDynamic("EXPIRATION_KEY")(EXPIRATION_KEY)
-    __obj.updateDynamic("IDTOKEN")(IDTOKEN)
-    __obj.updateDynamic("LOGIN_ERROR")(LOGIN_ERROR)
-    __obj.updateDynamic("LOGIN_REQUEST")(LOGIN_REQUEST)
-    __obj.updateDynamic("NONCE_IDTOKEN")(NONCE_IDTOKEN)
-    __obj.updateDynamic("RENEW_STATUS")(RENEW_STATUS)
-    __obj.updateDynamic("SESSION_STATE")(SESSION_STATE)
-    __obj.updateDynamic("STATE_LOGIN")(STATE_LOGIN)
-    __obj.updateDynamic("STATE_RENEW")(STATE_RENEW)
-    __obj.updateDynamic("TOKEN_KEYS")(TOKEN_KEYS)
-    __obj.updateDynamic("USERNAME")(USERNAME)
+    val __obj = js.Dynamic.literal(ACCESS_TOKEN_KEY = ACCESS_TOKEN_KEY, ERROR = ERROR, ERROR_DESCRIPTION = ERROR_DESCRIPTION, EXPIRATION_KEY = EXPIRATION_KEY, IDTOKEN = IDTOKEN, LOGIN_ERROR = LOGIN_ERROR, LOGIN_REQUEST = LOGIN_REQUEST, NONCE_IDTOKEN = NONCE_IDTOKEN, RENEW_STATUS = RENEW_STATUS, SESSION_STATE = SESSION_STATE, STATE_LOGIN = STATE_LOGIN, STATE_RENEW = STATE_RENEW, TOKEN_KEYS = TOKEN_KEYS, USERNAME = USERNAME)
+  
     __obj.asInstanceOf[Anon_ACCESSTOKENKEY]
   }
 }

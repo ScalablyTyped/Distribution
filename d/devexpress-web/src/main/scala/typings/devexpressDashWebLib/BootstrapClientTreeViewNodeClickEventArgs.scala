@@ -29,11 +29,8 @@ object BootstrapClientTreeViewNodeClickEventArgs {
     node: BootstrapClientTreeViewNode,
     processOnServer: scala.Boolean
   ): BootstrapClientTreeViewNodeClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("processOnServer")(processOnServer)
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement, htmlEvent = htmlEvent, node = node, processOnServer = processOnServer)
+  
     __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
   }
 }

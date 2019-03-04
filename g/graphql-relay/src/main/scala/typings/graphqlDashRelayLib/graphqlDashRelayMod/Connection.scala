@@ -13,9 +13,8 @@ trait Connection[T] extends js.Object {
 object Connection {
   @scala.inline
   def apply[T](edges: js.Array[Edge[T]], pageInfo: PageInfo): Connection[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("pageInfo")(pageInfo)
+    val __obj = js.Dynamic.literal(edges = edges, pageInfo = pageInfo)
+  
     __obj.asInstanceOf[Connection[T]]
   }
 }

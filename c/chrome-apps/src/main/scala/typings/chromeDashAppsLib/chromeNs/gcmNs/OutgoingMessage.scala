@@ -32,10 +32,7 @@ object OutgoingMessage {
     messageId: java.lang.String,
     timeToLive: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): OutgoingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("destinationId")(destinationId)
-    __obj.updateDynamic("messageId")(messageId)
+    val __obj = js.Dynamic.literal(data = data, destinationId = destinationId, messageId = messageId)
     if (!js.isUndefined(timeToLive)) __obj.updateDynamic("timeToLive")(timeToLive)
     __obj.asInstanceOf[OutgoingMessage]
   }

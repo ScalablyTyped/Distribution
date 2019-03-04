@@ -22,12 +22,8 @@ object MemoryStats {
     stats: dockerodeLib.Anon_Activeanon,
     usage: scala.Double
   ): MemoryStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failcnt")(failcnt)
-    __obj.updateDynamic("limit")(limit)
-    __obj.updateDynamic("max_usage")(max_usage)
-    __obj.updateDynamic("stats")(stats)
-    __obj.updateDynamic("usage")(usage)
+    val __obj = js.Dynamic.literal(failcnt = failcnt, limit = limit, max_usage = max_usage, stats = stats, usage = usage)
+  
     __obj.asInstanceOf[MemoryStats]
   }
 }

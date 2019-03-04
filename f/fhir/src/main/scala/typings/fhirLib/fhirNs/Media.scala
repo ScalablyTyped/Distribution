@@ -154,8 +154,8 @@ object Media {
     view: CodeableConcept = null,
     width: js.UndefOr[positiveInt] = js.undefined
   ): Media = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
+    val __obj = js.Dynamic.literal(content = content)
+    __obj.updateDynamic("type")(`type`)
     if (_duration != null) __obj.updateDynamic("_duration")(_duration)
     if (_frames != null) __obj.updateDynamic("_frames")(_frames)
     if (_height != null) __obj.updateDynamic("_height")(_height)

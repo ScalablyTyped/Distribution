@@ -148,8 +148,7 @@ object ServiceArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     waitForSteadyState: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): ServiceArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController.asInstanceOf[js.Any])
     if (deploymentMaximumPercent != null) __obj.updateDynamic("deploymentMaximumPercent")(deploymentMaximumPercent.asInstanceOf[js.Any])

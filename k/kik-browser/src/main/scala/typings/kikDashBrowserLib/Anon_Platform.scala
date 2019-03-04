@@ -12,8 +12,8 @@ trait Anon_Platform extends js.Object {
 object Anon_Platform {
   @scala.inline
   def apply(platform: Anon_Browser): Anon_Platform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("platform")(platform)
+    val __obj = js.Dynamic.literal(platform = platform)
+  
     __obj.asInstanceOf[Anon_Platform]
   }
 }

@@ -20,11 +20,8 @@ object Interpolation {
     Linear: js.Function2[js.Array[scala.Double], scala.Double, scala.Double],
     Utils: Anon_Bernstein
   ): Interpolation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Bezier")(Bezier)
-    __obj.updateDynamic("CatmullRom")(CatmullRom)
-    __obj.updateDynamic("Linear")(Linear)
-    __obj.updateDynamic("Utils")(Utils)
+    val __obj = js.Dynamic.literal(Bezier = Bezier, CatmullRom = CatmullRom, Linear = Linear, Utils = Utils)
+  
     __obj.asInstanceOf[Interpolation]
   }
 }

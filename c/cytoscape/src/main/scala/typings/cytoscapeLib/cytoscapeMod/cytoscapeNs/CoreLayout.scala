@@ -42,10 +42,8 @@ object CoreLayout {
     layout: js.Function1[LayoutOptions, Layouts],
     makeLayout: js.Function1[LayoutOptions, Layouts]
   ): CoreLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createLayout")(createLayout)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("makeLayout")(makeLayout)
+    val __obj = js.Dynamic.literal(createLayout = createLayout, layout = layout, makeLayout = makeLayout)
+  
     __obj.asInstanceOf[CoreLayout]
   }
 }

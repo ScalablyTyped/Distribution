@@ -14,10 +14,8 @@ trait APIResponseMeta extends js.Object {
 object APIResponseMeta {
   @scala.inline
   def apply(request_id: java.lang.String, status: scala.Double, version: java.lang.String): APIResponseMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("request_id")(request_id)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(request_id = request_id, status = status, version = version)
+  
     __obj.asInstanceOf[APIResponseMeta]
   }
 }

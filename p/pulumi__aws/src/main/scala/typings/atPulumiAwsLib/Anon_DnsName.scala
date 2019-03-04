@@ -13,9 +13,8 @@ trait Anon_DnsName extends js.Object {
 object Anon_DnsName {
   @scala.inline
   def apply(dnsName: java.lang.String, hostedZoneId: java.lang.String): Anon_DnsName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dnsName")(dnsName)
-    __obj.updateDynamic("hostedZoneId")(hostedZoneId)
+    val __obj = js.Dynamic.literal(dnsName = dnsName, hostedZoneId = hostedZoneId)
+  
     __obj.asInstanceOf[Anon_DnsName]
   }
 }

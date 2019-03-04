@@ -32,12 +32,8 @@ object Anon_Attributename {
     ],
     username: Anon_Email
   ): Anon_Attributename = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(list = list, password = password, remove = remove, set = set, username = username)
+  
     __obj.asInstanceOf[Anon_Attributename]
   }
 }

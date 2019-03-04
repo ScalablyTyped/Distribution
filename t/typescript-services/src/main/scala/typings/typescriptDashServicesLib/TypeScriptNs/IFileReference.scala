@@ -22,13 +22,8 @@ object IFileReference {
     path: java.lang.String,
     position: scala.Double
   ): IFileReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("character")(character)
-    __obj.updateDynamic("isResident")(isResident)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(character = character, isResident = isResident, length = length, line = line, path = path, position = position)
+  
     __obj.asInstanceOf[IFileReference]
   }
 }

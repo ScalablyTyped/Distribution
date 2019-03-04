@@ -13,9 +13,8 @@ trait Anon_Ch extends js.Object {
 object Anon_Ch {
   @scala.inline
   def apply(Ch: activexDashExcelLib.ExcelNs.Chart, Wb: activexDashExcelLib.ExcelNs.Workbook): Anon_Ch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Ch")(Ch)
-    __obj.updateDynamic("Wb")(Wb)
+    val __obj = js.Dynamic.literal(Ch = Ch, Wb = Wb)
+  
     __obj.asInstanceOf[Anon_Ch]
   }
 }

@@ -48,25 +48,8 @@ object MatchesResponseObject {
     scored: vexdbLib.vexdbLibNumbers.`0` | vexdbLib.vexdbLibNumbers.`1`,
     sku: java.lang.String
   ): MatchesResponseObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blue1")(blue1)
-    __obj.updateDynamic("blue2")(blue2)
-    __obj.updateDynamic("blue3")(blue3)
-    __obj.updateDynamic("bluescore")(bluescore)
-    __obj.updateDynamic("bluesit")(bluesit)
-    __obj.updateDynamic("division")(division)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("matchnum")(matchnum)
-    __obj.updateDynamic("red1")(red1)
-    __obj.updateDynamic("red2")(red2)
-    __obj.updateDynamic("red3")(red3)
-    __obj.updateDynamic("redscore")(redscore)
-    __obj.updateDynamic("redsit")(redsit)
-    __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    __obj.updateDynamic("scheduled")(scheduled)
-    __obj.updateDynamic("scored")(scored.asInstanceOf[js.Any])
-    __obj.updateDynamic("sku")(sku)
+    val __obj = js.Dynamic.literal(blue1 = blue1, blue2 = blue2, blue3 = blue3, bluescore = bluescore, bluesit = bluesit, division = division, field = field, instance = instance, matchnum = matchnum, red1 = red1, red2 = red2, red3 = red3, redscore = redscore, redsit = redsit, round = round.asInstanceOf[js.Any], scheduled = scheduled, scored = scored.asInstanceOf[js.Any], sku = sku)
+  
     __obj.asInstanceOf[MatchesResponseObject]
   }
 }

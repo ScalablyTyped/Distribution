@@ -34,8 +34,7 @@ object SCCBrokerClientOptions {
     stateServerPort: scala.Int | scala.Double = null,
     stateServerReconnectRandomness: scala.Int | scala.Double = null
   ): SCCBrokerClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stateServerHost")(stateServerHost)
+    val __obj = js.Dynamic.literal(stateServerHost = stateServerHost)
     if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
     if (brokerRetryDelay != null) __obj.updateDynamic("brokerRetryDelay")(brokerRetryDelay.asInstanceOf[js.Any])
     if (clientPoolSize != null) __obj.updateDynamic("clientPoolSize")(clientPoolSize.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ abstract class AdaptorContainer[T, Source /* <: tstlLib.baseDisposableIPartialCo
   /**
     * @hidden
     */
-  var `source_`: Source = js.native
+  var source_ : Source = js.native
   /**
     * Test whether container is empty.
     */

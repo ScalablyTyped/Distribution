@@ -82,15 +82,8 @@ object JSTreeStaticDefaultsSearch {
     show_only_matches: scala.Boolean,
     show_only_matches_children: scala.Boolean
   ): JSTreeStaticDefaultsSearch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajax")(ajax)
-    __obj.updateDynamic("case_sensitive")(case_sensitive)
-    __obj.updateDynamic("close_opened_onclear")(close_opened_onclear)
-    __obj.updateDynamic("fuzzy")(fuzzy)
-    __obj.updateDynamic("search_callback")(search_callback)
-    __obj.updateDynamic("search_leaves_only")(search_leaves_only)
-    __obj.updateDynamic("show_only_matches")(show_only_matches)
-    __obj.updateDynamic("show_only_matches_children")(show_only_matches_children)
+    val __obj = js.Dynamic.literal(ajax = ajax, case_sensitive = case_sensitive, close_opened_onclear = close_opened_onclear, fuzzy = fuzzy, search_callback = search_callback, search_leaves_only = search_leaves_only, show_only_matches = show_only_matches, show_only_matches_children = show_only_matches_children)
+  
     __obj.asInstanceOf[JSTreeStaticDefaultsSearch]
   }
 }

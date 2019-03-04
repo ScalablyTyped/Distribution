@@ -32,11 +32,11 @@ class WebServerConnector protected ()
   /**
     * @hidden
     */
-  var `browser_socket_`: js.Any = js.native
+  var browser_socket_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `node_client_`: js.Any = js.native
+  var node_client_ : js.Any = js.native
   /**
     * @inheritdoc
     */

@@ -81,8 +81,7 @@ object FirehoseDeliveryStreamArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     versionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): FirehoseDeliveryStreamArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (destinationId != null) __obj.updateDynamic("destinationId")(destinationId.asInstanceOf[js.Any])
     if (elasticsearchConfiguration != null) __obj.updateDynamic("elasticsearchConfiguration")(elasticsearchConfiguration.asInstanceOf[js.Any])

@@ -34,8 +34,7 @@ object Anon_AggregateAlign {
     search: js.UndefOr[scala.Boolean] = js.undefined,
     sortable: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AggregateAlign = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(property = property)
     if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])

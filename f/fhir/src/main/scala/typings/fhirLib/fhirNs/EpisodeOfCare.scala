@@ -94,9 +94,7 @@ object EpisodeOfCare {
     text: Narrative = null,
     `type`: js.Array[CodeableConcept] = null
   ): EpisodeOfCare = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(patient = patient, status = status)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_language != null) __obj.updateDynamic("_language")(_language)

@@ -35,12 +35,8 @@ object TriggerOptions {
     log: scala.Boolean,
     timeout: scala.Double
   ): TriggerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancable")(cancable)
-    __obj.updateDynamic("force")(force)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancable = cancable, force = force, log = log, timeout = timeout)
+  
     __obj.asInstanceOf[TriggerOptions]
   }
 }

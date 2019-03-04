@@ -46,16 +46,7 @@ object SendmailTransport {
       scala.Unit
     ]) with js.Function0[js.Promise[nodemailerLib.nodemailerLibNumbers.`true`]] = null
   ): SendmailTransport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("mailer")(mailer)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("winbreak")(winbreak)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], logger = logger, mailer = mailer, name = name, options = options, path = path, send = send, version = version, winbreak = winbreak)
     if (close != null) __obj.updateDynamic("close")(close)
     if (verify != null) __obj.updateDynamic("verify")(verify)
     __obj.asInstanceOf[SendmailTransport]

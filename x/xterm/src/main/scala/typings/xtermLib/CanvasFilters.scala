@@ -12,8 +12,8 @@ trait CanvasFilters extends js.Object {
 object CanvasFilters {
   @scala.inline
   def apply(filter: java.lang.String): CanvasFilters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
+    val __obj = js.Dynamic.literal(filter = filter)
+  
     __obj.asInstanceOf[CanvasFilters]
   }
 }

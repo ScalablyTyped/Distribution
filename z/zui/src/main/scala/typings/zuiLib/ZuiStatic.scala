@@ -27,14 +27,8 @@ object ZuiStatic {
     modalTrigger: ModalTrigger,
     store: StoreStatic
   ): ZuiStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Color")(Color)
-    __obj.updateDynamic("Messager")(Messager)
-    __obj.updateDynamic("ModalTrigger")(ModalTrigger)
-    __obj.updateDynamic("colorset")(colorset)
-    __obj.updateDynamic("messager")(messager)
-    __obj.updateDynamic("modalTrigger")(modalTrigger)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(Color = Color, Messager = Messager, ModalTrigger = ModalTrigger, colorset = colorset, messager = messager, modalTrigger = modalTrigger, store = store)
+  
     __obj.asInstanceOf[ZuiStatic]
   }
 }

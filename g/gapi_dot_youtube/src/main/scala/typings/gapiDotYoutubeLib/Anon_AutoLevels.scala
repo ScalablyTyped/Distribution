@@ -42,8 +42,7 @@ object Anon_AutoLevels {
     onBehalfOfContentOwnerChannel: java.lang.String = null,
     stabilize: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AutoLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
     if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
     if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)

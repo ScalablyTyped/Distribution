@@ -80,26 +80,8 @@ object XSheetCellRangeContainer {
       scala.Unit
     ]
   ): XSheetCellRangeContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cells")(Cells)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("RangeAddresses")(RangeAddresses)
-    __obj.updateDynamic("RangeAddressesAsString")(RangeAddressesAsString)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addRangeAddress")(addRangeAddress)
-    __obj.updateDynamic("addRangeAddresses")(addRangeAddresses)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCells")(getCells)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getRangeAddresses")(getRangeAddresses)
-    __obj.updateDynamic("getRangeAddressesAsString")(getRangeAddressesAsString)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeRangeAddress")(removeRangeAddress)
-    __obj.updateDynamic("removeRangeAddresses")(removeRangeAddresses)
+    val __obj = js.Dynamic.literal(Cells = Cells, Count = Count, ElementType = ElementType, RangeAddresses = RangeAddresses, RangeAddressesAsString = RangeAddressesAsString, acquire = acquire, addRangeAddress = addRangeAddress, addRangeAddresses = addRangeAddresses, getByIndex = getByIndex, getCells = getCells, getCount = getCount, getElementType = getElementType, getRangeAddresses = getRangeAddresses, getRangeAddressesAsString = getRangeAddressesAsString, hasElements = hasElements, queryInterface = queryInterface, release = release, removeRangeAddress = removeRangeAddress, removeRangeAddresses = removeRangeAddresses)
+  
     __obj.asInstanceOf[XSheetCellRangeContainer]
   }
 }

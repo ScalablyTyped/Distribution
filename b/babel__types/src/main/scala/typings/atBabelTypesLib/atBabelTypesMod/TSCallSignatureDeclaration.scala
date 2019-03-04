@@ -30,7 +30,8 @@ object TSCallSignatureDeclaration {
     typeAnnotation: TSTypeAnnotation = null,
     typeParameters: TSTypeParameterDeclaration = null
   ): TSCallSignatureDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

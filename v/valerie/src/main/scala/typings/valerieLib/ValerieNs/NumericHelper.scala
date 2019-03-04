@@ -45,16 +45,8 @@ object NumericHelper {
     parse: js.Function1[java.lang.String, scala.Double],
     unformat: js.Function1[java.lang.String, java.lang.String]
   ): NumericHelper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addThousandsSeparator")(addThousandsSeparator)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("isCurrencyMajor")(isCurrencyMajor)
-    __obj.updateDynamic("isCurrencyMajorMinor")(isCurrencyMajorMinor)
-    __obj.updateDynamic("isFloat")(isFloat)
-    __obj.updateDynamic("isInteger")(isInteger)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("unformat")(unformat)
+    val __obj = js.Dynamic.literal(addThousandsSeparator = addThousandsSeparator, format = format, init = init, isCurrencyMajor = isCurrencyMajor, isCurrencyMajorMinor = isCurrencyMajorMinor, isFloat = isFloat, isInteger = isInteger, parse = parse, unformat = unformat)
+  
     __obj.asInstanceOf[NumericHelper]
   }
 }

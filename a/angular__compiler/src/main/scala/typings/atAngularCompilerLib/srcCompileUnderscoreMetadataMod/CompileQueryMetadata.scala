@@ -22,12 +22,8 @@ object CompileQueryMetadata {
     read: CompileTokenMetadata,
     selectors: js.Array[CompileTokenMetadata]
   ): CompileQueryMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("descendants")(descendants)
-    __obj.updateDynamic("first")(first)
-    __obj.updateDynamic("propertyName")(propertyName)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("selectors")(selectors)
+    val __obj = js.Dynamic.literal(descendants = descendants, first = first, propertyName = propertyName, read = read, selectors = selectors)
+  
     __obj.asInstanceOf[CompileQueryMetadata]
   }
 }

@@ -12,8 +12,8 @@ trait AsObject extends js.Object {
 object AsObject {
   @scala.inline
   def apply(value: scala.Boolean): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[AsObject]
   }
 }

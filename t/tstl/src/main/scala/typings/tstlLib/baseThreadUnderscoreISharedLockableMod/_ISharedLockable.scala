@@ -27,10 +27,8 @@ object _ISharedLockable {
     try_lock_shared: js.Function0[js.Promise[scala.Boolean]],
     unlock_shared: js.Function0[js.Promise[scala.Unit]]
   ): _ISharedLockable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lock_shared")(lock_shared)
-    __obj.updateDynamic("try_lock_shared")(try_lock_shared)
-    __obj.updateDynamic("unlock_shared")(unlock_shared)
+    val __obj = js.Dynamic.literal(lock_shared = lock_shared, try_lock_shared = try_lock_shared, unlock_shared = unlock_shared)
+  
     __obj.asInstanceOf[_ISharedLockable]
   }
 }

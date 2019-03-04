@@ -30,13 +30,7 @@ object Anon_AlignDisabled {
     disabledMinutes: js.UndefOr[scala.Nothing] = js.undefined,
     disabledSeconds: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_AlignDisabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("focusOnOpen")(focusOnOpen)
-    __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("transitionName")(transitionName)
+    val __obj = js.Dynamic.literal(align = align, disabled = disabled, focusOnOpen = focusOnOpen, hideDisabledOptions = hideDisabledOptions, placement = placement, transitionName = transitionName)
     if (!js.isUndefined(disabledHours)) __obj.updateDynamic("disabledHours")(disabledHours)
     if (!js.isUndefined(disabledMinutes)) __obj.updateDynamic("disabledMinutes")(disabledMinutes)
     if (!js.isUndefined(disabledSeconds)) __obj.updateDynamic("disabledSeconds")(disabledSeconds)

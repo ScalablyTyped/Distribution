@@ -18,8 +18,8 @@ object Anon_Args {
       js.Function1[/* repeated */ js.Any, _]
     ]
   ): Anon_Args = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("throttle")(throttle)
+    val __obj = js.Dynamic.literal(throttle = throttle)
+  
     __obj.asInstanceOf[Anon_Args]
   }
 }

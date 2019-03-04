@@ -58,17 +58,8 @@ object XSheetAuditing {
     showInvalid: js.Function0[scala.Boolean],
     showPrecedents: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, scala.Boolean]
   ): XSheetAuditing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearArrows")(clearArrows)
-    __obj.updateDynamic("hideDependents")(hideDependents)
-    __obj.updateDynamic("hidePrecedents")(hidePrecedents)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("showDependents")(showDependents)
-    __obj.updateDynamic("showErrors")(showErrors)
-    __obj.updateDynamic("showInvalid")(showInvalid)
-    __obj.updateDynamic("showPrecedents")(showPrecedents)
+    val __obj = js.Dynamic.literal(acquire = acquire, clearArrows = clearArrows, hideDependents = hideDependents, hidePrecedents = hidePrecedents, queryInterface = queryInterface, release = release, showDependents = showDependents, showErrors = showErrors, showInvalid = showInvalid, showPrecedents = showPrecedents)
+  
     __obj.asInstanceOf[XSheetAuditing]
   }
 }

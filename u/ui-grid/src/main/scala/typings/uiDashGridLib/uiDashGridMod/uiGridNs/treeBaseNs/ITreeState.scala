@@ -12,8 +12,8 @@ trait ITreeState extends js.Object {
 object ITreeState {
   @scala.inline
   def apply(expandedState: org.scalablytyped.runtime.StringDictionary[java.lang.String]): ITreeState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandedState")(expandedState)
+    val __obj = js.Dynamic.literal(expandedState = expandedState)
+  
     __obj.asInstanceOf[ITreeState]
   }
 }

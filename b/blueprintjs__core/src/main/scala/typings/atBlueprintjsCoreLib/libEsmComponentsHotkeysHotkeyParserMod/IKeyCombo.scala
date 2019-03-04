@@ -13,8 +13,7 @@ trait IKeyCombo extends js.Object {
 object IKeyCombo {
   @scala.inline
   def apply(modifiers: scala.Double, key: java.lang.String = null): IKeyCombo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modifiers")(modifiers)
+    val __obj = js.Dynamic.literal(modifiers = modifiers)
     if (key != null) __obj.updateDynamic("key")(key)
     __obj.asInstanceOf[IKeyCombo]
   }

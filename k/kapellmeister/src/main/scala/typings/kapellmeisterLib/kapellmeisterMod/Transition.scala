@@ -24,12 +24,7 @@ object Transition {
     tweens: js.Array[js.Function0[Interpolator]],
     timer: d3DashTimerLib.d3DashTimerMod.Timer = null
   ): Transition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("stateKey")(stateKey)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("timing")(timing)
-    __obj.updateDynamic("tweens")(tweens)
+    val __obj = js.Dynamic.literal(events = events, stateKey = stateKey, status = status, timing = timing, tweens = tweens)
     if (timer != null) __obj.updateDynamic("timer")(timer)
     __obj.asInstanceOf[Transition]
   }

@@ -42,13 +42,8 @@ object GetTaskDefinitionResult {
     status: java.lang.String,
     taskRoleArn: java.lang.String
   ): GetTaskDefinitionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("networkMode")(networkMode)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("taskRoleArn")(taskRoleArn)
+    val __obj = js.Dynamic.literal(family = family, id = id, networkMode = networkMode, revision = revision, status = status, taskRoleArn = taskRoleArn)
+  
     __obj.asInstanceOf[GetTaskDefinitionResult]
   }
 }

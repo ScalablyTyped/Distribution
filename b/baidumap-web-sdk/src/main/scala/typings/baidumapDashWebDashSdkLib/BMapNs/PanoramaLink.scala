@@ -14,10 +14,8 @@ trait PanoramaLink extends js.Object {
 object PanoramaLink {
   @scala.inline
   def apply(description: java.lang.String, heading: java.lang.String, id: java.lang.String): PanoramaLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(description = description, heading = heading, id = id)
+  
     __obj.asInstanceOf[PanoramaLink]
   }
 }

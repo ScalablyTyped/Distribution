@@ -106,9 +106,7 @@ object ReactTagsProps {
     tagComponent: reactLib.reactMod.ReactNs.SFC[TagComponentProps] = null,
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleAddition")(handleAddition)
-    __obj.updateDynamic("handleDelete")(handleDelete)
+    val __obj = js.Dynamic.literal(handleAddition = handleAddition, handleDelete = handleDelete)
     if (!js.isUndefined(allowBackspace)) __obj.updateDynamic("allowBackspace")(allowBackspace)
     if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew)
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)

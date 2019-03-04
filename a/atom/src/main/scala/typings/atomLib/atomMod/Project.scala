@@ -93,25 +93,8 @@ object Project {
     repositoryForDirectory: js.Function1[Directory, js.Promise[GitRepository | scala.Null]],
     setPaths: js.Function1[js.Array[java.lang.String], scala.Unit]
   ): Project = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addPath")(addPath)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("getDirectories")(getDirectories)
-    __obj.updateDynamic("getPaths")(getPaths)
-    __obj.updateDynamic("getRepositories")(getRepositories)
-    __obj.updateDynamic("getWatcherPromise")(getWatcherPromise)
-    __obj.updateDynamic("observeBuffers")(observeBuffers)
-    __obj.updateDynamic("observeRepositories")(observeRepositories)
-    __obj.updateDynamic("onDidAddBuffer")(onDidAddBuffer)
-    __obj.updateDynamic("onDidAddRepository")(onDidAddRepository)
-    __obj.updateDynamic("onDidChangeFiles")(onDidChangeFiles)
-    __obj.updateDynamic("onDidChangePaths")(onDidChangePaths)
-    __obj.updateDynamic("onDidReplace")(onDidReplace)
-    __obj.updateDynamic("relativize")(relativize)
-    __obj.updateDynamic("relativizePath")(relativizePath)
-    __obj.updateDynamic("removePath")(removePath)
-    __obj.updateDynamic("repositoryForDirectory")(repositoryForDirectory)
-    __obj.updateDynamic("setPaths")(setPaths)
+    val __obj = js.Dynamic.literal(addPath = addPath, contains = contains, getDirectories = getDirectories, getPaths = getPaths, getRepositories = getRepositories, getWatcherPromise = getWatcherPromise, observeBuffers = observeBuffers, observeRepositories = observeRepositories, onDidAddBuffer = onDidAddBuffer, onDidAddRepository = onDidAddRepository, onDidChangeFiles = onDidChangeFiles, onDidChangePaths = onDidChangePaths, onDidReplace = onDidReplace, relativize = relativize, relativizePath = relativizePath, removePath = removePath, repositoryForDirectory = repositoryForDirectory, setPaths = setPaths)
+  
     __obj.asInstanceOf[Project]
   }
 }

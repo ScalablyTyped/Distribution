@@ -13,9 +13,8 @@ trait RestrictOptions extends js.Object {
 object RestrictOptions {
   @scala.inline
   def apply(idField: java.lang.String, ownerField: java.lang.String): RestrictOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("idField")(idField)
-    __obj.updateDynamic("ownerField")(ownerField)
+    val __obj = js.Dynamic.literal(idField = idField, ownerField = ownerField)
+  
     __obj.asInstanceOf[RestrictOptions]
   }
 }

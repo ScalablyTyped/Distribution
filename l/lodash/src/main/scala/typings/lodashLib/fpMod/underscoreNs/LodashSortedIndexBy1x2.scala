@@ -12,7 +12,7 @@ trait LodashSortedIndexBy1x2[T] extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
     array: lodashLib.lodashMod.underscoreNs.List[T]
   ): scala.Double = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashSortedIndexBy1x6[T] = js.native
-  def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashSortedIndexBy1x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__): LodashSortedIndexBy1x6[T] = js.native
+  def apply(iteratee: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashSortedIndexBy1x6[T] = js.native
 }
 

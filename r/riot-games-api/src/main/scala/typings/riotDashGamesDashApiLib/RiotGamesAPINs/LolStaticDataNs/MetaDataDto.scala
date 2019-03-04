@@ -14,9 +14,8 @@ trait MetaDataDto extends js.Object {
 object MetaDataDto {
   @scala.inline
   def apply(isRune: scala.Boolean, tier: java.lang.String, `type`: java.lang.String): MetaDataDto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("isRune")(isRune)
-    __obj.updateDynamic("tier")(tier)
+    val __obj = js.Dynamic.literal(isRune = isRune, tier = tier)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MetaDataDto]
   }
 }

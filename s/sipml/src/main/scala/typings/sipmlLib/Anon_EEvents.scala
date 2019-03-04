@@ -16,9 +16,8 @@ object Anon_EEvents {
     events: sipmlLib.SIPmlNs.StackNs.EventSubscriptionType | js.Array[sipmlLib.SIPmlNs.StackNs.EventSubscriptionType],
     listener: js.Function1[sipmlLib.SIPmlNs.StackNs.Event, scala.Unit]
   ): Anon_EEvents = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    __obj.updateDynamic("listener")(listener)
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], listener = listener)
+  
     __obj.asInstanceOf[Anon_EEvents]
   }
 }

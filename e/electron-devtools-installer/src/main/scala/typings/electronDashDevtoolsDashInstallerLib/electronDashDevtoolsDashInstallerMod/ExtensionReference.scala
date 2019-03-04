@@ -13,9 +13,8 @@ trait ExtensionReference extends js.Object {
 object ExtensionReference {
   @scala.inline
   def apply(electron: java.lang.String, id: java.lang.String): ExtensionReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("electron")(electron)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(electron = electron, id = id)
+  
     __obj.asInstanceOf[ExtensionReference]
   }
 }

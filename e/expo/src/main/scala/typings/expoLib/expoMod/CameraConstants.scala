@@ -24,13 +24,8 @@ object CameraConstants {
     VideoQuality: org.scalablytyped.runtime.StringDictionary[scala.Double],
     WhiteBalance: expoLib.Anon_AutoCloudy
   ): CameraConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFocus")(AutoFocus)
-    __obj.updateDynamic("BarCodeType")(BarCodeType)
-    __obj.updateDynamic("FlashMode")(FlashMode)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("VideoQuality")(VideoQuality)
-    __obj.updateDynamic("WhiteBalance")(WhiteBalance)
+    val __obj = js.Dynamic.literal(AutoFocus = AutoFocus, BarCodeType = BarCodeType, FlashMode = FlashMode, Type = Type, VideoQuality = VideoQuality, WhiteBalance = WhiteBalance)
+  
     __obj.asInstanceOf[CameraConstants]
   }
 }

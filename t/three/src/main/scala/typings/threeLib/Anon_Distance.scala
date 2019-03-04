@@ -13,8 +13,8 @@ trait Anon_Distance extends js.Object {
 object Anon_Distance {
   @scala.inline
   def apply(distance: scala.Double, `object`: threeLib.threeDashCoreMod.Object3D): Anon_Distance = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("distance")(distance)
+    val __obj = js.Dynamic.literal(distance = distance)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_Distance]
   }
 }

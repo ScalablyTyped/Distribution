@@ -13,9 +13,8 @@ trait BottomRight extends js.Object {
 object BottomRight {
   @scala.inline
   def apply(bottom: scala.Double, right: scala.Double): BottomRight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(bottom = bottom, right = right)
+  
     __obj.asInstanceOf[BottomRight]
   }
 }

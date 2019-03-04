@@ -57,36 +57,8 @@ object IELangTestDefaults {
     stopButtonLabel: java.lang.String,
     submitButtonHtml: java.lang.String
   ): IELangTestDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentCSS")(contentCSS)
-    __obj.updateDynamic("contentInnerCSS")(contentInnerCSS)
-    __obj.updateDynamic("contentInnerHtml")(contentInnerHtml)
-    __obj.updateDynamic("fluidRowHtml")(fluidRowHtml)
-    __obj.updateDynamic("formHtml")(formHtml)
-    __obj.updateDynamic("headLabel")(headLabel)
-    __obj.updateDynamic("headLabelHtml")(headLabelHtml)
-    __obj.updateDynamic("radioButtonHtml")(radioButtonHtml)
-    __obj.updateDynamic("radioGroupHtml")(radioGroupHtml)
-    __obj.updateDynamic("rdoOrderedLabel")(rdoOrderedLabel)
-    __obj.updateDynamic("rdoOrderedTooltip")(rdoOrderedTooltip)
-    __obj.updateDynamic("rdoRandomlyLabel")(rdoRandomlyLabel)
-    __obj.updateDynamic("rdoRandomlyTooltip")(rdoRandomlyTooltip)
-    __obj.updateDynamic("rdoSelectedLabel")(rdoSelectedLabel)
-    __obj.updateDynamic("rdoSelectedTooltip")(rdoSelectedTooltip)
-    __obj.updateDynamic("rdoTypedLabel")(rdoTypedLabel)
-    __obj.updateDynamic("rdoTypedTooltip")(rdoTypedTooltip)
-    __obj.updateDynamic("rdoVoicedLabel")(rdoVoicedLabel)
-    __obj.updateDynamic("rdoVoicedTooltip")(rdoVoicedTooltip)
-    __obj.updateDynamic("rdoWrittedLabel")(rdoWrittedLabel)
-    __obj.updateDynamic("rdoWrittedTooltip")(rdoWrittedTooltip)
-    __obj.updateDynamic("resultCSS")(resultCSS)
-    __obj.updateDynamic("resultHeadCSS")(resultHeadCSS)
-    __obj.updateDynamic("resultHeadLabel")(resultHeadLabel)
-    __obj.updateDynamic("resultHeadLabelHtml")(resultHeadLabelHtml)
-    __obj.updateDynamic("resultHtml")(resultHtml)
-    __obj.updateDynamic("startButtonLabel")(startButtonLabel)
-    __obj.updateDynamic("stopButtonLabel")(stopButtonLabel)
-    __obj.updateDynamic("submitButtonHtml")(submitButtonHtml)
+    val __obj = js.Dynamic.literal(contentCSS = contentCSS, contentInnerCSS = contentInnerCSS, contentInnerHtml = contentInnerHtml, fluidRowHtml = fluidRowHtml, formHtml = formHtml, headLabel = headLabel, headLabelHtml = headLabelHtml, radioButtonHtml = radioButtonHtml, radioGroupHtml = radioGroupHtml, rdoOrderedLabel = rdoOrderedLabel, rdoOrderedTooltip = rdoOrderedTooltip, rdoRandomlyLabel = rdoRandomlyLabel, rdoRandomlyTooltip = rdoRandomlyTooltip, rdoSelectedLabel = rdoSelectedLabel, rdoSelectedTooltip = rdoSelectedTooltip, rdoTypedLabel = rdoTypedLabel, rdoTypedTooltip = rdoTypedTooltip, rdoVoicedLabel = rdoVoicedLabel, rdoVoicedTooltip = rdoVoicedTooltip, rdoWrittedLabel = rdoWrittedLabel, rdoWrittedTooltip = rdoWrittedTooltip, resultCSS = resultCSS, resultHeadCSS = resultHeadCSS, resultHeadLabel = resultHeadLabel, resultHeadLabelHtml = resultHeadLabelHtml, resultHtml = resultHtml, startButtonLabel = startButtonLabel, stopButtonLabel = stopButtonLabel, submitButtonHtml = submitButtonHtml)
+  
     __obj.asInstanceOf[IELangTestDefaults]
   }
 }

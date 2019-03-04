@@ -20,11 +20,8 @@ object ExtensionStatisticUpdate {
     publisherName: java.lang.String,
     statistic: ExtensionStatistic
   ): ExtensionStatisticUpdate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("statistic")(statistic)
+    val __obj = js.Dynamic.literal(extensionName = extensionName, operation = operation, publisherName = publisherName, statistic = statistic)
+  
     __obj.asInstanceOf[ExtensionStatisticUpdate]
   }
 }

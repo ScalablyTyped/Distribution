@@ -38,8 +38,7 @@ object LayoutSideMenu {
     options: reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options = null,
     right: LayoutStackChildren = null
   ): LayoutSideMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
+    val __obj = js.Dynamic.literal(center = center)
     if (id != null) __obj.updateDynamic("id")(id)
     if (left != null) __obj.updateDynamic("left")(left)
     if (options != null) __obj.updateDynamic("options")(options)

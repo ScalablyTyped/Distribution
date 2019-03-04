@@ -58,30 +58,8 @@ object Movie {
     vote_average: scala.Double,
     vote_count: scala.Double
   ): Movie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adult")(adult)
-    __obj.updateDynamic("backdrop_path")(backdrop_path)
-    __obj.updateDynamic("belongs_to_collection")(belongs_to_collection)
-    __obj.updateDynamic("budget")(budget)
-    __obj.updateDynamic("genres")(genres)
-    __obj.updateDynamic("homepage")(homepage)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imdb_id")(imdb_id)
-    __obj.updateDynamic("original_title")(original_title)
-    __obj.updateDynamic("overview")(overview)
-    __obj.updateDynamic("popularity")(popularity)
-    __obj.updateDynamic("poster_path")(poster_path)
-    __obj.updateDynamic("production_companies")(production_companies)
-    __obj.updateDynamic("production_countries")(production_countries)
-    __obj.updateDynamic("release_date")(release_date)
-    __obj.updateDynamic("revenue")(revenue)
-    __obj.updateDynamic("runtime")(runtime)
-    __obj.updateDynamic("spoken_languages")(spoken_languages)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tagline")(tagline)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("vote_average")(vote_average)
-    __obj.updateDynamic("vote_count")(vote_count)
+    val __obj = js.Dynamic.literal(adult = adult, backdrop_path = backdrop_path, belongs_to_collection = belongs_to_collection, budget = budget, genres = genres, homepage = homepage, id = id, imdb_id = imdb_id, original_title = original_title, overview = overview, popularity = popularity, poster_path = poster_path, production_companies = production_companies, production_countries = production_countries, release_date = release_date, revenue = revenue, runtime = runtime, spoken_languages = spoken_languages, status = status, tagline = tagline, title = title, vote_average = vote_average, vote_count = vote_count)
+  
     __obj.asInstanceOf[Movie]
   }
 }

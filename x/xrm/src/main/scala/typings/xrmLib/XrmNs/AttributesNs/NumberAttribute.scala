@@ -62,26 +62,8 @@ object NumberAttribute {
     setSubmitMode: js.Function1[xrmLib.XrmNs.SubmitMode, scala.Unit],
     setValue: js.Function1[scala.Double, scala.Unit]
   ): NumberAttribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOnChange")(addOnChange)
-    __obj.updateDynamic("controls")(controls)
-    __obj.updateDynamic("fireOnChange")(fireOnChange)
-    __obj.updateDynamic("getAttributeType")(getAttributeType)
-    __obj.updateDynamic("getFormat")(getFormat)
-    __obj.updateDynamic("getIsDirty")(getIsDirty)
-    __obj.updateDynamic("getMax")(getMax)
-    __obj.updateDynamic("getMin")(getMin)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPrecision")(getPrecision)
-    __obj.updateDynamic("getRequiredLevel")(getRequiredLevel)
-    __obj.updateDynamic("getSubmitMode")(getSubmitMode)
-    __obj.updateDynamic("getUserPrivilege")(getUserPrivilege)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("removeOnChange")(removeOnChange)
-    __obj.updateDynamic("setRequiredLevel")(setRequiredLevel)
-    __obj.updateDynamic("setSubmitMode")(setSubmitMode)
-    __obj.updateDynamic("setValue")(setValue)
+    val __obj = js.Dynamic.literal(addOnChange = addOnChange, controls = controls, fireOnChange = fireOnChange, getAttributeType = getAttributeType, getFormat = getFormat, getIsDirty = getIsDirty, getMax = getMax, getMin = getMin, getName = getName, getParent = getParent, getPrecision = getPrecision, getRequiredLevel = getRequiredLevel, getSubmitMode = getSubmitMode, getUserPrivilege = getUserPrivilege, getValue = getValue, removeOnChange = removeOnChange, setRequiredLevel = setRequiredLevel, setSubmitMode = setSubmitMode, setValue = setValue)
+  
     __obj.asInstanceOf[NumberAttribute]
   }
 }

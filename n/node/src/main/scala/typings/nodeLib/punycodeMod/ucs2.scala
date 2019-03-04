@@ -16,9 +16,8 @@ object ucs2 {
     decode: js.Function1[java.lang.String, js.Array[scala.Double]],
     encode: js.Function1[js.Array[scala.Double], java.lang.String]
   ): ucs2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  
     __obj.asInstanceOf[ucs2]
   }
 }

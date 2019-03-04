@@ -32,11 +32,8 @@ object _Impl {
     maxSelections: java.lang.String,
     noResults: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addResult")(addResult)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("maxSelections")(maxSelections)
-    __obj.updateDynamic("noResults")(noResults)
+    val __obj = js.Dynamic.literal(addResult = addResult, count = count, maxSelections = maxSelections, noResults = noResults)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

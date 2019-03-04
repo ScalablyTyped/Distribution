@@ -20,11 +20,8 @@ object TabsBeforeLoadUIParams {
     panel: jqueryuiLib.JQuery,
     tab: jqueryuiLib.JQuery
   ): TabsBeforeLoadUIParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ajaxSettings")(ajaxSettings)
-    __obj.updateDynamic("jqXHR")(jqXHR)
-    __obj.updateDynamic("panel")(panel)
-    __obj.updateDynamic("tab")(tab)
+    val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings, jqXHR = jqXHR, panel = panel, tab = tab)
+  
     __obj.asInstanceOf[TabsBeforeLoadUIParams]
   }
 }

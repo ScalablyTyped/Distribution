@@ -39,8 +39,7 @@ object CreateClientOptions {
     retryOptions: RetryOptions = null,
     timeout: scala.Int | scala.Double = null
   ): CreateClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)

@@ -57,16 +57,8 @@ object CordovaPluginBackgroundMode {
     onfailure: js.Function1[js.Function1[/* errorCode */ scala.Double, scala.Unit], scala.Unit],
     setDefaults: js.Function1[ICordovaPluginBackgroundModeNotificationItem, scala.Unit]
   ): CordovaPluginBackgroundMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configure")(configure)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isActivated")(isActivated)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("onactivate")(onactivate)
-    __obj.updateDynamic("ondeactivate")(ondeactivate)
-    __obj.updateDynamic("onfailure")(onfailure)
-    __obj.updateDynamic("setDefaults")(setDefaults)
+    val __obj = js.Dynamic.literal(configure = configure, disable = disable, enable = enable, isActivated = isActivated, isEnabled = isEnabled, onactivate = onactivate, ondeactivate = ondeactivate, onfailure = onfailure, setDefaults = setDefaults)
+  
     __obj.asInstanceOf[CordovaPluginBackgroundMode]
   }
 }

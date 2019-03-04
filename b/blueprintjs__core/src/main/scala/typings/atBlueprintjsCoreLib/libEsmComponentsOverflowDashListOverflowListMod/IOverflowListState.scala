@@ -15,10 +15,8 @@ trait IOverflowListState[T] extends js.Object {
 object IOverflowListState {
   @scala.inline
   def apply[T](lastOverflowCount: scala.Double, overflow: js.Array[T], visible: js.Array[T]): IOverflowListState[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastOverflowCount")(lastOverflowCount)
-    __obj.updateDynamic("overflow")(overflow)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(lastOverflowCount = lastOverflowCount, overflow = overflow, visible = visible)
+  
     __obj.asInstanceOf[IOverflowListState[T]]
   }
 }

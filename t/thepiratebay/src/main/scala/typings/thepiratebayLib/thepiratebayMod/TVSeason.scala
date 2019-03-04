@@ -13,9 +13,8 @@ trait TVSeason extends js.Object {
 object TVSeason {
   @scala.inline
   def apply(title: java.lang.String, torrents: js.Array[TVTorrent]): TVSeason = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("torrents")(torrents)
+    val __obj = js.Dynamic.literal(title = title, torrents = torrents)
+  
     __obj.asInstanceOf[TVSeason]
   }
 }

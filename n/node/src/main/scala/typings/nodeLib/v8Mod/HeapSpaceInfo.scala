@@ -22,12 +22,8 @@ object HeapSpaceInfo {
     space_size: scala.Double,
     space_used_size: scala.Double
   ): HeapSpaceInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("physical_space_size")(physical_space_size)
-    __obj.updateDynamic("space_available_size")(space_available_size)
-    __obj.updateDynamic("space_name")(space_name)
-    __obj.updateDynamic("space_size")(space_size)
-    __obj.updateDynamic("space_used_size")(space_used_size)
+    val __obj = js.Dynamic.literal(physical_space_size = physical_space_size, space_available_size = space_available_size, space_name = space_name, space_size = space_size, space_used_size = space_used_size)
+  
     __obj.asInstanceOf[HeapSpaceInfo]
   }
 }

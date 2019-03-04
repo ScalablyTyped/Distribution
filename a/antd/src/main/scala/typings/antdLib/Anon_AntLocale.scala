@@ -12,8 +12,8 @@ trait Anon_AntLocale extends js.Object {
 object Anon_AntLocale {
   @scala.inline
   def apply(antLocale: propDashTypesLib.propDashTypesMod.Requireable[js.Object]): Anon_AntLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antLocale")(antLocale)
+    val __obj = js.Dynamic.literal(antLocale = antLocale)
+  
     __obj.asInstanceOf[Anon_AntLocale]
   }
 }

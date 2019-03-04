@@ -32,9 +32,8 @@ object activities {
       ]
     ]
   ): activities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(insert = insert, list = list)
+  
     __obj.asInstanceOf[activities]
   }
 }

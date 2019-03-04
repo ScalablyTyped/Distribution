@@ -36,11 +36,8 @@ trait INxPage extends js.Object {
 object INxPage {
   @scala.inline
   def apply(qHeight: scala.Double, qLeft: scala.Double, qTop: scala.Double, qWidth: scala.Double): INxPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qHeight")(qHeight)
-    __obj.updateDynamic("qLeft")(qLeft)
-    __obj.updateDynamic("qTop")(qTop)
-    __obj.updateDynamic("qWidth")(qWidth)
+    val __obj = js.Dynamic.literal(qHeight = qHeight, qLeft = qLeft, qTop = qTop, qWidth = qWidth)
+  
     __obj.asInstanceOf[INxPage]
   }
 }

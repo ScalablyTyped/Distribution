@@ -12,8 +12,8 @@ trait EventUrlFilters extends js.Object {
 object EventUrlFilters {
   @scala.inline
   def apply(url: js.Array[firefoxDashWebextDashBrowserLib.browserNs.eventsNs.UrlFilter]): EventUrlFilters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[EventUrlFilters]
   }
 }

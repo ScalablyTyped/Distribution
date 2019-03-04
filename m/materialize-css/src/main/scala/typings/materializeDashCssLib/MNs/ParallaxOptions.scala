@@ -16,8 +16,8 @@ trait ParallaxOptions extends js.Object {
 object ParallaxOptions {
   @scala.inline
   def apply(responsiveThreshold: scala.Double): ParallaxOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responsiveThreshold")(responsiveThreshold)
+    val __obj = js.Dynamic.literal(responsiveThreshold = responsiveThreshold)
+  
     __obj.asInstanceOf[ParallaxOptions]
   }
 }

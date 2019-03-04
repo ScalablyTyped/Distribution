@@ -14,10 +14,8 @@ trait Response[R] extends js.Object {
 object Response {
   @scala.inline
   def apply[R](data: R, statusCode: scala.Double, statusText: java.lang.String): Response[R] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusText")(statusText)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode, statusText = statusText)
+  
     __obj.asInstanceOf[Response[R]]
   }
 }

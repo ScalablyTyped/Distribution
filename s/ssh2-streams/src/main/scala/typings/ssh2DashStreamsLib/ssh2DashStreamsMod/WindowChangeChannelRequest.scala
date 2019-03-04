@@ -24,13 +24,8 @@ object WindowChangeChannelRequest {
     rows: scala.Double,
     width: scala.Double
   ): WindowChangeChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cols")(cols)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("rows")(rows)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(cols = cols, height = height, recipient = recipient, request = request, rows = rows, width = width)
+  
     __obj.asInstanceOf[WindowChangeChannelRequest]
   }
 }

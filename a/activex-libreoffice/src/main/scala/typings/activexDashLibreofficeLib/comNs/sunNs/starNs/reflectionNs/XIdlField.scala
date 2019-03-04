@@ -35,20 +35,8 @@ object XIdlField {
     release: js.Function0[scala.Unit],
     set: js.Function2[js.Any, js.Any, scala.Unit]
   ): XIdlField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessMode")(AccessMode)
-    __obj.updateDynamic("DeclaringClass")(DeclaringClass)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAccessMode")(getAccessMode)
-    __obj.updateDynamic("getDeclaringClass")(getDeclaringClass)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(AccessMode = AccessMode, DeclaringClass = DeclaringClass, Name = Name, Type = Type, acquire = acquire, get = get, getAccessMode = getAccessMode, getDeclaringClass = getDeclaringClass, getName = getName, getType = getType, queryInterface = queryInterface, release = release, set = set)
+  
     __obj.asInstanceOf[XIdlField]
   }
 }

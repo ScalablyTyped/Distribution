@@ -13,9 +13,8 @@ trait GalleryWatchResult extends js.Object {
 object GalleryWatchResult {
   @scala.inline
   def apply(galleryId: java.lang.String, success: scala.Boolean): GalleryWatchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("galleryId")(galleryId)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(galleryId = galleryId, success = success)
+  
     __obj.asInstanceOf[GalleryWatchResult]
   }
 }

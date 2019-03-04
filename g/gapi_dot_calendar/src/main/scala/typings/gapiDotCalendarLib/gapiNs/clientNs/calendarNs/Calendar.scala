@@ -26,11 +26,7 @@ object Calendar {
     location: java.lang.String = null,
     timeZone: java.lang.String = null
   ): Calendar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(etag = etag, id = id, kind = kind, summary = summary)
     if (description != null) __obj.updateDynamic("description")(description)
     if (location != null) __obj.updateDynamic("location")(location)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)

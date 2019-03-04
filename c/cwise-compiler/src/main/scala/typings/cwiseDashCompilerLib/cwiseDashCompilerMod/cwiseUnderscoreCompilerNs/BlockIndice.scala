@@ -12,8 +12,8 @@ trait BlockIndice extends ArgType {
 object BlockIndice {
   @scala.inline
   def apply(blockIndices: scala.Double): BlockIndice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockIndices")(blockIndices)
+    val __obj = js.Dynamic.literal(blockIndices = blockIndices)
+  
     __obj.asInstanceOf[BlockIndice]
   }
 }

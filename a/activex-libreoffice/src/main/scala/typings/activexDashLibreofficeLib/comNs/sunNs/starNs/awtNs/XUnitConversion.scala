@@ -52,14 +52,8 @@ object XUnitConversion {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XUnitConversion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convertPointToLogic")(convertPointToLogic)
-    __obj.updateDynamic("convertPointToPixel")(convertPointToPixel)
-    __obj.updateDynamic("convertSizeToLogic")(convertSizeToLogic)
-    __obj.updateDynamic("convertSizeToPixel")(convertSizeToPixel)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convertPointToLogic = convertPointToLogic, convertPointToPixel = convertPointToPixel, convertSizeToLogic = convertSizeToLogic, convertSizeToPixel = convertSizeToPixel, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XUnitConversion]
   }
 }

@@ -18,8 +18,7 @@ object JobPayloadInput {
     compressedUrn: js.UndefOr[scala.Boolean] = js.undefined,
     rootFilename: java.lang.String = null
   ): JobPayloadInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("urn")(urn)
+    val __obj = js.Dynamic.literal(urn = urn)
     if (!js.isUndefined(compressedUrn)) __obj.updateDynamic("compressedUrn")(compressedUrn)
     if (rootFilename != null) __obj.updateDynamic("rootFilename")(rootFilename)
     __obj.asInstanceOf[JobPayloadInput]

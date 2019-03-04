@@ -55,9 +55,7 @@ object GMXMLHttpRequestOptions {
     upload: Anon_Onabort = null,
     user: java.lang.String = null
   ): GMXMLHttpRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
     if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
     if (context != null) __obj.updateDynamic("context")(context)
     if (data != null) __obj.updateDynamic("data")(data)

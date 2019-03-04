@@ -27,14 +27,8 @@ object ReadonlyUnderscoreEscapedMap {
     size: scala.Double,
     values: js.Function0[Iterator[T]]
   ): ReadonlyUnderscoreEscapedMap[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(entries = entries, forEach = forEach, get = get, has = has, keys = keys, size = size, values = values)
+  
     __obj.asInstanceOf[ReadonlyUnderscoreEscapedMap[T]]
   }
 }

@@ -31,19 +31,8 @@ object ASPxClientPopupControlCollection {
     HideAllWindows: js.Function0[scala.Unit],
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientPopupControlCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BeginCallback")(BeginCallback)
-    __obj.updateDynamic("BrowserWindowResized")(BrowserWindowResized)
-    __obj.updateDynamic("CallbackError")(CallbackError)
-    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
-    __obj.updateDynamic("EndCallback")(EndCallback)
-    __obj.updateDynamic("ForEachControl")(ForEachControl)
-    __obj.updateDynamic("Get")(Get)
-    __obj.updateDynamic("GetByName")(GetByName)
-    __obj.updateDynamic("GetControlsByPredicate")(GetControlsByPredicate)
-    __obj.updateDynamic("GetControlsByType")(GetControlsByType)
-    __obj.updateDynamic("HideAllWindows")(HideAllWindows)
-    __obj.updateDynamic("ValidationCompleted")(ValidationCompleted)
+    val __obj = js.Dynamic.literal(BeginCallback = BeginCallback, BrowserWindowResized = BrowserWindowResized, CallbackError = CallbackError, ControlsInitialized = ControlsInitialized, EndCallback = EndCallback, ForEachControl = ForEachControl, Get = Get, GetByName = GetByName, GetControlsByPredicate = GetControlsByPredicate, GetControlsByType = GetControlsByType, HideAllWindows = HideAllWindows, ValidationCompleted = ValidationCompleted)
+  
     __obj.asInstanceOf[ASPxClientPopupControlCollection]
   }
 }

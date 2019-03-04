@@ -20,11 +20,8 @@ object ParseResponseResult {
     statusCode: java.lang.String,
     statusMessage: java.lang.String
   ): ParseResponseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, statusCode = statusCode, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[ParseResponseResult]
   }
 }

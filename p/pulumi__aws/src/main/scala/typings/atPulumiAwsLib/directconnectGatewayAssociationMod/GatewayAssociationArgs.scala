@@ -22,9 +22,8 @@ object GatewayAssociationArgs {
     dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): GatewayAssociationArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
-    __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dxGatewayId = dxGatewayId.asInstanceOf[js.Any], vpnGatewayId = vpnGatewayId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GatewayAssociationArgs]
   }
 }

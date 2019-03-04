@@ -52,27 +52,8 @@ object NgDevModePerfCounters {
     tNode: scala.Double,
     tView: scala.Double
   ): NgDevModePerfCounters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("firstTemplatePass")(firstTemplatePass)
-    __obj.updateDynamic("rendererAddClass")(rendererAddClass)
-    __obj.updateDynamic("rendererAddEventListener")(rendererAddEventListener)
-    __obj.updateDynamic("rendererCreateComment")(rendererCreateComment)
-    __obj.updateDynamic("rendererCreateElement")(rendererCreateElement)
-    __obj.updateDynamic("rendererCreateTextNode")(rendererCreateTextNode)
-    __obj.updateDynamic("rendererDestroy")(rendererDestroy)
-    __obj.updateDynamic("rendererDestroyNode")(rendererDestroyNode)
-    __obj.updateDynamic("rendererMoveNode")(rendererMoveNode)
-    __obj.updateDynamic("rendererRemoveAttribute")(rendererRemoveAttribute)
-    __obj.updateDynamic("rendererRemoveClass")(rendererRemoveClass)
-    __obj.updateDynamic("rendererRemoveNode")(rendererRemoveNode)
-    __obj.updateDynamic("rendererRemoveStyle")(rendererRemoveStyle)
-    __obj.updateDynamic("rendererSetAttribute")(rendererSetAttribute)
-    __obj.updateDynamic("rendererSetClassName")(rendererSetClassName)
-    __obj.updateDynamic("rendererSetProperty")(rendererSetProperty)
-    __obj.updateDynamic("rendererSetStyle")(rendererSetStyle)
-    __obj.updateDynamic("rendererSetText")(rendererSetText)
-    __obj.updateDynamic("tNode")(tNode)
-    __obj.updateDynamic("tView")(tView)
+    val __obj = js.Dynamic.literal(firstTemplatePass = firstTemplatePass, rendererAddClass = rendererAddClass, rendererAddEventListener = rendererAddEventListener, rendererCreateComment = rendererCreateComment, rendererCreateElement = rendererCreateElement, rendererCreateTextNode = rendererCreateTextNode, rendererDestroy = rendererDestroy, rendererDestroyNode = rendererDestroyNode, rendererMoveNode = rendererMoveNode, rendererRemoveAttribute = rendererRemoveAttribute, rendererRemoveClass = rendererRemoveClass, rendererRemoveNode = rendererRemoveNode, rendererRemoveStyle = rendererRemoveStyle, rendererSetAttribute = rendererSetAttribute, rendererSetClassName = rendererSetClassName, rendererSetProperty = rendererSetProperty, rendererSetStyle = rendererSetStyle, rendererSetText = rendererSetText, tNode = tNode, tView = tView)
+  
     __obj.asInstanceOf[NgDevModePerfCounters]
   }
 }

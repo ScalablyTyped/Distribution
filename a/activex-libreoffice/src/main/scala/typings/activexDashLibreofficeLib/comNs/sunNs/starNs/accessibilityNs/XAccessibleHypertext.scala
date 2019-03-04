@@ -82,37 +82,8 @@ object XAccessibleHypertext {
     setCaretPosition: js.Function1[scala.Double, scala.Boolean],
     setSelection: js.Function2[scala.Double, scala.Double, scala.Boolean]
   ): XAccessibleHypertext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CaretPosition")(CaretPosition)
-    __obj.updateDynamic("CharacterCount")(CharacterCount)
-    __obj.updateDynamic("HyperLinkCount")(HyperLinkCount)
-    __obj.updateDynamic("SelectedText")(SelectedText)
-    __obj.updateDynamic("SelectionEnd")(SelectionEnd)
-    __obj.updateDynamic("SelectionStart")(SelectionStart)
-    __obj.updateDynamic("Text")(Text)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("copyText")(copyText)
-    __obj.updateDynamic("getCaretPosition")(getCaretPosition)
-    __obj.updateDynamic("getCharacter")(getCharacter)
-    __obj.updateDynamic("getCharacterAttributes")(getCharacterAttributes)
-    __obj.updateDynamic("getCharacterBounds")(getCharacterBounds)
-    __obj.updateDynamic("getCharacterCount")(getCharacterCount)
-    __obj.updateDynamic("getHyperLink")(getHyperLink)
-    __obj.updateDynamic("getHyperLinkCount")(getHyperLinkCount)
-    __obj.updateDynamic("getHyperLinkIndex")(getHyperLinkIndex)
-    __obj.updateDynamic("getIndexAtPoint")(getIndexAtPoint)
-    __obj.updateDynamic("getSelectedText")(getSelectedText)
-    __obj.updateDynamic("getSelectionEnd")(getSelectionEnd)
-    __obj.updateDynamic("getSelectionStart")(getSelectionStart)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("getTextAtIndex")(getTextAtIndex)
-    __obj.updateDynamic("getTextBeforeIndex")(getTextBeforeIndex)
-    __obj.updateDynamic("getTextBehindIndex")(getTextBehindIndex)
-    __obj.updateDynamic("getTextRange")(getTextRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCaretPosition")(setCaretPosition)
-    __obj.updateDynamic("setSelection")(setSelection)
+    val __obj = js.Dynamic.literal(CaretPosition = CaretPosition, CharacterCount = CharacterCount, HyperLinkCount = HyperLinkCount, SelectedText = SelectedText, SelectionEnd = SelectionEnd, SelectionStart = SelectionStart, Text = Text, acquire = acquire, copyText = copyText, getCaretPosition = getCaretPosition, getCharacter = getCharacter, getCharacterAttributes = getCharacterAttributes, getCharacterBounds = getCharacterBounds, getCharacterCount = getCharacterCount, getHyperLink = getHyperLink, getHyperLinkCount = getHyperLinkCount, getHyperLinkIndex = getHyperLinkIndex, getIndexAtPoint = getIndexAtPoint, getSelectedText = getSelectedText, getSelectionEnd = getSelectionEnd, getSelectionStart = getSelectionStart, getText = getText, getTextAtIndex = getTextAtIndex, getTextBeforeIndex = getTextBeforeIndex, getTextBehindIndex = getTextBehindIndex, getTextRange = getTextRange, queryInterface = queryInterface, release = release, setCaretPosition = setCaretPosition, setSelection = setSelection)
+  
     __obj.asInstanceOf[XAccessibleHypertext]
   }
 }

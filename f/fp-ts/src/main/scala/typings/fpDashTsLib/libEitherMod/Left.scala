@@ -19,7 +19,7 @@ class Left[L, A] protected () extends Either[L, A] {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
+  def ap_[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): Either[V, B] = js.native
   /** Binds the given function across `Right` */
   def chain[B](f: js.Function1[/* a */ A, Either[L, B]]): Either[L, B] = js.native

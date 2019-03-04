@@ -20,8 +20,7 @@ object Anon_ContainerNameContainerPortPort {
     containerPort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_ContainerNameContainerPortPort = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registryArn")(registryArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(registryArn = registryArn.asInstanceOf[js.Any])
     if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
     if (containerPort != null) __obj.updateDynamic("containerPort")(containerPort.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

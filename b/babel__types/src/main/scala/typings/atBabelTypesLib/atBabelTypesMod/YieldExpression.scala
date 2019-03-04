@@ -29,8 +29,8 @@ object YieldExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): YieldExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("delegate")(delegate)
+    val __obj = js.Dynamic.literal(delegate = delegate)
+    __obj.updateDynamic("type")(`type`)
     if (argument != null) __obj.updateDynamic("argument")(argument)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

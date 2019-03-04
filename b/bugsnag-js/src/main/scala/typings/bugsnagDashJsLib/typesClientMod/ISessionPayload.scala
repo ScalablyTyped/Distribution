@@ -22,9 +22,7 @@ object ISessionPayload {
     device: js.Object = null,
     user: js.Object = null
   ): ISessionPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notifier")(notifier)
-    __obj.updateDynamic("sessions")(sessions)
+    val __obj = js.Dynamic.literal(notifier = notifier, sessions = sessions)
     if (app != null) __obj.updateDynamic("app")(app)
     if (device != null) __obj.updateDynamic("device")(device)
     if (user != null) __obj.updateDynamic("user")(user)

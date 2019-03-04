@@ -24,13 +24,8 @@ object Anon_AllowScriptableWebParts {
     PermissionCustomizePages: scala.Boolean,
     WebUrl: java.lang.String
   ): Anon_AllowScriptableWebParts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowScriptableWebParts")(AllowScriptableWebParts)
-    __obj.updateDynamic("CurrentUserId")(CurrentUserId)
-    __obj.updateDynamic("EffectivePresenceEnabled")(EffectivePresenceEnabled)
-    __obj.updateDynamic("LCID")(LCID)
-    __obj.updateDynamic("PermissionCustomizePages")(PermissionCustomizePages)
-    __obj.updateDynamic("WebUrl")(WebUrl)
+    val __obj = js.Dynamic.literal(AllowScriptableWebParts = AllowScriptableWebParts, CurrentUserId = CurrentUserId, EffectivePresenceEnabled = EffectivePresenceEnabled, LCID = LCID, PermissionCustomizePages = PermissionCustomizePages, WebUrl = WebUrl)
+  
     __obj.asInstanceOf[Anon_AllowScriptableWebParts]
   }
 }

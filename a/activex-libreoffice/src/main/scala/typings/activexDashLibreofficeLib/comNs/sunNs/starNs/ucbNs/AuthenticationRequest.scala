@@ -63,20 +63,8 @@ object AuthenticationRequest {
     ServerName: java.lang.String,
     UserName: java.lang.String
   ): AuthenticationRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Account")(Account)
-    __obj.updateDynamic("Classification")(Classification)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Diagnostic")(Diagnostic)
-    __obj.updateDynamic("HasAccount")(HasAccount)
-    __obj.updateDynamic("HasPassword")(HasPassword)
-    __obj.updateDynamic("HasRealm")(HasRealm)
-    __obj.updateDynamic("HasUserName")(HasUserName)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("Realm")(Realm)
-    __obj.updateDynamic("ServerName")(ServerName)
-    __obj.updateDynamic("UserName")(UserName)
+    val __obj = js.Dynamic.literal(Account = Account, Classification = Classification, Context = Context, Diagnostic = Diagnostic, HasAccount = HasAccount, HasPassword = HasPassword, HasRealm = HasRealm, HasUserName = HasUserName, Message = Message, Password = Password, Realm = Realm, ServerName = ServerName, UserName = UserName)
+  
     __obj.asInstanceOf[AuthenticationRequest]
   }
 }

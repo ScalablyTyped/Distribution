@@ -13,9 +13,8 @@ trait IKeyNamePairs extends js.Object {
 object IKeyNamePairs {
   @scala.inline
   def apply(Count: scala.Double, Item: js.Function1[scala.Double, IKeyNamePair]): IKeyNamePairs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
+    val __obj = js.Dynamic.literal(Count = Count, Item = Item)
+  
     __obj.asInstanceOf[IKeyNamePairs]
   }
 }

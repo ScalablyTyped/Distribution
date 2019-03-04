@@ -26,8 +26,7 @@ object ServoGeneralOption {
     startAt: scala.Int | scala.Double = null,
     `type`: java.lang.String = null
   ): ServoGeneralOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
     if (controller != null) __obj.updateDynamic("controller")(controller)
     if (!js.isUndefined(isInverted)) __obj.updateDynamic("isInverted")(isInverted)

@@ -60,19 +60,8 @@ object XDevice {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FontDescriptors")(FontDescriptors)
-    __obj.updateDynamic("Info")(Info)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createBitmap")(createBitmap)
-    __obj.updateDynamic("createDevice")(createDevice)
-    __obj.updateDynamic("createDisplayBitmap")(createDisplayBitmap)
-    __obj.updateDynamic("createGraphics")(createGraphics)
-    __obj.updateDynamic("getFont")(getFont)
-    __obj.updateDynamic("getFontDescriptors")(getFontDescriptors)
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(FontDescriptors = FontDescriptors, Info = Info, acquire = acquire, createBitmap = createBitmap, createDevice = createDevice, createDisplayBitmap = createDisplayBitmap, createGraphics = createGraphics, getFont = getFont, getFontDescriptors = getFontDescriptors, getInfo = getInfo, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDevice]
   }
 }

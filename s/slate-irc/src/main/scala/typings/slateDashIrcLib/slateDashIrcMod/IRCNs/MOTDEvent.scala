@@ -12,8 +12,8 @@ trait MOTDEvent extends js.Object {
 object MOTDEvent {
   @scala.inline
   def apply(motd: js.Array[java.lang.String]): MOTDEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("motd")(motd)
+    val __obj = js.Dynamic.literal(motd = motd)
+  
     __obj.asInstanceOf[MOTDEvent]
   }
 }

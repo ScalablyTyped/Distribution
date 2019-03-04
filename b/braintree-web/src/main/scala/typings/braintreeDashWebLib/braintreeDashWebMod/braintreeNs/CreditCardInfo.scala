@@ -20,11 +20,8 @@ object CreditCardInfo {
     expirationDate: java.lang.String,
     number: java.lang.String
   ): CreditCardInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("billingAddress")(billingAddress)
-    __obj.updateDynamic("cvv")(cvv)
-    __obj.updateDynamic("expirationDate")(expirationDate)
-    __obj.updateDynamic("number")(number)
+    val __obj = js.Dynamic.literal(billingAddress = billingAddress, cvv = cvv, expirationDate = expirationDate, number = number)
+  
     __obj.asInstanceOf[CreditCardInfo]
   }
 }

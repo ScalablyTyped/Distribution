@@ -22,10 +22,8 @@ object PathWatcher {
     getStartPromise: js.Function0[js.Promise[scala.Unit]],
     onDidError: js.Function1[js.Function1[/* error */ nodeLib.Error, scala.Unit], Disposable]
   ): PathWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getStartPromise")(getStartPromise)
-    __obj.updateDynamic("onDidError")(onDidError)
+    val __obj = js.Dynamic.literal(dispose = dispose, getStartPromise = getStartPromise, onDidError = onDidError)
+  
     __obj.asInstanceOf[PathWatcher]
   }
 }

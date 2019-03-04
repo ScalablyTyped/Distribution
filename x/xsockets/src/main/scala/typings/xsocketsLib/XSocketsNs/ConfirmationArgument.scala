@@ -12,8 +12,8 @@ trait ConfirmationArgument extends js.Object {
 object ConfirmationArgument {
   @scala.inline
   def apply(event: java.lang.String): ConfirmationArgument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[ConfirmationArgument]
   }
 }

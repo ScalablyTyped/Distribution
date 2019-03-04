@@ -19,9 +19,8 @@ trait Publisher extends js.Object {
 object Publisher {
   @scala.inline
   def apply(name: java.lang.String, serviceOwnerId: java.lang.String): Publisher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("serviceOwnerId")(serviceOwnerId)
+    val __obj = js.Dynamic.literal(name = name, serviceOwnerId = serviceOwnerId)
+  
     __obj.asInstanceOf[Publisher]
   }
 }

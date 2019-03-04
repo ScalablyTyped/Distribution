@@ -20,11 +20,8 @@ object Collection {
     direct: meteorDashCollectionDashHooksLib.Anon_CallbackDoc[T],
     hookOptions: meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.GlobalHookOptions
   ): Collection[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("direct")(direct)
-    __obj.updateDynamic("hookOptions")(hookOptions)
+    val __obj = js.Dynamic.literal(after = after, before = before, direct = direct, hookOptions = hookOptions)
+  
     __obj.asInstanceOf[Collection[T]]
   }
 }

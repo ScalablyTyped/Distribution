@@ -16,9 +16,8 @@ object Anon_Context {
     context: reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.TimelineContext,
     item: reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.TimelineItem
   ): Anon_Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(context = context, item = item)
+  
     __obj.asInstanceOf[Anon_Context]
   }
 }

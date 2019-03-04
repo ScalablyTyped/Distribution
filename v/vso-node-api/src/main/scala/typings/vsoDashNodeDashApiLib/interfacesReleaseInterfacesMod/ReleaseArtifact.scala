@@ -28,15 +28,8 @@ object ReleaseArtifact {
     name: java.lang.String,
     releaseId: scala.Double
   ): ReleaseArtifact = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactProvider")(artifactProvider)
-    __obj.updateDynamic("artifactType")(artifactType)
-    __obj.updateDynamic("definitionData")(definitionData)
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("releaseId")(releaseId)
+    val __obj = js.Dynamic.literal(artifactProvider = artifactProvider, artifactType = artifactType, definitionData = definitionData, definitionId = definitionId, description = description, id = id, name = name, releaseId = releaseId)
+  
     __obj.asInstanceOf[ReleaseArtifact]
   }
 }

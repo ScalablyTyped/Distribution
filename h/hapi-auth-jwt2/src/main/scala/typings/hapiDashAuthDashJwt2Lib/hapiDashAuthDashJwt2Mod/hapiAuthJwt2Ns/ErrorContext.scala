@@ -32,9 +32,7 @@ object ErrorContext {
     attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     message: java.lang.String = null
   ): ErrorContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorType")(errorType)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(errorType = errorType, schema = schema)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[ErrorContext]

@@ -13,9 +13,8 @@ trait Checks extends js.Object {
 object Checks {
   @scala.inline
   def apply(canActivateChecks: js.Array[CanActivate], canDeactivateChecks: js.Array[CanDeactivate]): Checks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canActivateChecks")(canActivateChecks)
-    __obj.updateDynamic("canDeactivateChecks")(canDeactivateChecks)
+    val __obj = js.Dynamic.literal(canActivateChecks = canActivateChecks, canDeactivateChecks = canDeactivateChecks)
+  
     __obj.asInstanceOf[Checks]
   }
 }

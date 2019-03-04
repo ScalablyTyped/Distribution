@@ -34,12 +34,8 @@ object Backoff {
     setMax: js.Function1[scala.Double, scala.Unit],
     setMin: js.Function1[scala.Double, scala.Unit]
   ): Backoff = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setJitter")(setJitter)
-    __obj.updateDynamic("setMax")(setMax)
-    __obj.updateDynamic("setMin")(setMin)
+    val __obj = js.Dynamic.literal(duration = duration, reset = reset, setJitter = setJitter, setMax = setMax, setMin = setMin)
+  
     __obj.asInstanceOf[Backoff]
   }
 }

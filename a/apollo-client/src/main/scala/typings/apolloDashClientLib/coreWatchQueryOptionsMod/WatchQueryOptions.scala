@@ -24,8 +24,7 @@ object WatchQueryOptions {
     pollInterval: scala.Int | scala.Double = null,
     variables: TVariables = null
   ): WatchQueryOptions[TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (context != null) __obj.updateDynamic("context")(context)
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)

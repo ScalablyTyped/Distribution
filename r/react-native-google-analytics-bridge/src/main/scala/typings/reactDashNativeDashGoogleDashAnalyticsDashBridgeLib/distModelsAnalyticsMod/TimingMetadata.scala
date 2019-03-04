@@ -13,8 +13,7 @@ trait TimingMetadata extends js.Object {
 object TimingMetadata {
   @scala.inline
   def apply(name: java.lang.String, label: java.lang.String = null): TimingMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[TimingMetadata]
   }

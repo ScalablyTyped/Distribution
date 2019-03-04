@@ -12,8 +12,8 @@ trait RecyclerListener extends js.Object {
 object RecyclerListener {
   @scala.inline
   def apply(onMovedToScrapHeap: js.Function1[androiduixLib.androidNs.viewNs.View, scala.Unit]): RecyclerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onMovedToScrapHeap")(onMovedToScrapHeap)
+    val __obj = js.Dynamic.literal(onMovedToScrapHeap = onMovedToScrapHeap)
+  
     __obj.asInstanceOf[RecyclerListener]
   }
 }

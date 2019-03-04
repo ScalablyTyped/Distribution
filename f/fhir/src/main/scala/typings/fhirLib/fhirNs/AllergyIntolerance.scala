@@ -169,9 +169,7 @@ object AllergyIntolerance {
     text: Narrative = null,
     `type`: code = null
   ): AllergyIntolerance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("verificationStatus")(verificationStatus)
+    val __obj = js.Dynamic.literal(patient = patient, verificationStatus = verificationStatus)
     if (_assertedDate != null) __obj.updateDynamic("_assertedDate")(_assertedDate)
     if (_category != null) __obj.updateDynamic("_category")(_category)
     if (_clinicalStatus != null) __obj.updateDynamic("_clinicalStatus")(_clinicalStatus)

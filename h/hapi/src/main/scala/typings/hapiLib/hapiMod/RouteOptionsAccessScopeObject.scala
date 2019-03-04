@@ -12,8 +12,8 @@ trait RouteOptionsAccessScopeObject extends _RouteOptionsAccessObject {
 object RouteOptionsAccessScopeObject {
   @scala.inline
   def apply(scope: RouteOptionsAccessScope): RouteOptionsAccessScopeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RouteOptionsAccessScopeObject]
   }
 }

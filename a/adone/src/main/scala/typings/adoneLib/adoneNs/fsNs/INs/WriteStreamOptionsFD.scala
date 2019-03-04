@@ -26,8 +26,7 @@ object WriteStreamOptionsFD {
     mode: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): WriteStreamOptionsFD = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fd")(fd)
+    val __obj = js.Dynamic.literal(fd = fd)
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (flags != null) __obj.updateDynamic("flags")(flags)

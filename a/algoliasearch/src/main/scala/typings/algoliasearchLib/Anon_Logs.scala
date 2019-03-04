@@ -12,8 +12,8 @@ trait Anon_Logs extends js.Object {
 object Anon_Logs {
   @scala.inline
   def apply(logs: js.Array[algoliasearchLib.algoliasearchMod.algoliasearchNs.Log]): Anon_Logs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logs")(logs)
+    val __obj = js.Dynamic.literal(logs = logs)
+  
     __obj.asInstanceOf[Anon_Logs]
   }
 }

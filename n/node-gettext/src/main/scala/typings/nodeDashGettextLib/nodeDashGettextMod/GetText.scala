@@ -85,24 +85,9 @@ object GetText {
     textdomain: js.Function1[java.lang.String, scala.Unit],
     warn: js.Function1[java.lang.String, scala.Unit]
   ): GetText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTranslations")(addTranslations)
-    __obj.updateDynamic("dgettext")(dgettext)
-    __obj.updateDynamic("dngettext")(dngettext)
-    __obj.updateDynamic("dnpgettext")(dnpgettext)
-    __obj.updateDynamic("dpgettext")(dpgettext)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("getComment")(getComment)
-    __obj.updateDynamic("gettext")(gettext)
-    __obj.updateDynamic("ngettext")(ngettext)
-    __obj.updateDynamic("npgettext")(npgettext)
+    val __obj = js.Dynamic.literal(addTranslations = addTranslations, dgettext = dgettext, dngettext = dngettext, dnpgettext = dnpgettext, dpgettext = dpgettext, emit = emit, getComment = getComment, gettext = gettext, ngettext = ngettext, npgettext = npgettext, pgettext = pgettext, setLocale = setLocale, setTextDomain = setTextDomain, textdomain = textdomain, warn = warn)
     __obj.updateDynamic("off")(off_error)
     __obj.updateDynamic("on")(on_error)
-    __obj.updateDynamic("pgettext")(pgettext)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("setTextDomain")(setTextDomain)
-    __obj.updateDynamic("textdomain")(textdomain)
-    __obj.updateDynamic("warn")(warn)
     __obj.asInstanceOf[GetText]
   }
 }

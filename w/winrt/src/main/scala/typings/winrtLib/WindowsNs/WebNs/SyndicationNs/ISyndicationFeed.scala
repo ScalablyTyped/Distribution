@@ -60,35 +60,8 @@ object ISyndicationFeed {
     subtitle: ISyndicationText,
     title: ISyndicationText
   ): ISyndicationFeed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
-    __obj.updateDynamic("authors")(authors)
-    __obj.updateDynamic("baseUri")(baseUri)
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("contributors")(contributors)
-    __obj.updateDynamic("elementExtensions")(elementExtensions)
-    __obj.updateDynamic("firstUri")(firstUri)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
-    __obj.updateDynamic("iconUri")(iconUri)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageUri")(imageUri)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime)
-    __obj.updateDynamic("lastUri")(lastUri)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("loadFromXml")(loadFromXml)
-    __obj.updateDynamic("nextUri")(nextUri)
-    __obj.updateDynamic("nodeName")(nodeName)
-    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
-    __obj.updateDynamic("nodeValue")(nodeValue)
-    __obj.updateDynamic("previousUri")(previousUri)
-    __obj.updateDynamic("rights")(rights)
-    __obj.updateDynamic("sourceFormat")(sourceFormat)
-    __obj.updateDynamic("subtitle")(subtitle)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(attributeExtensions = attributeExtensions, authors = authors, baseUri = baseUri, categories = categories, contributors = contributors, elementExtensions = elementExtensions, firstUri = firstUri, generator = generator, getXmlDocument = getXmlDocument, iconUri = iconUri, id = id, imageUri = imageUri, items = items, language = language, lastUpdatedTime = lastUpdatedTime, lastUri = lastUri, links = links, load = load, loadFromXml = loadFromXml, nextUri = nextUri, nodeName = nodeName, nodeNamespace = nodeNamespace, nodeValue = nodeValue, previousUri = previousUri, rights = rights, sourceFormat = sourceFormat, subtitle = subtitle, title = title)
+  
     __obj.asInstanceOf[ISyndicationFeed]
   }
 }

@@ -141,8 +141,7 @@ object QuestionnaireItemEnableWhen {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): QuestionnaireItemEnableWhen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("question")(question)
+    val __obj = js.Dynamic.literal(question = question)
     if (_answerBoolean != null) __obj.updateDynamic("_answerBoolean")(_answerBoolean)
     if (_answerDate != null) __obj.updateDynamic("_answerDate")(_answerDate)
     if (_answerDateTime != null) __obj.updateDynamic("_answerDateTime")(_answerDateTime)

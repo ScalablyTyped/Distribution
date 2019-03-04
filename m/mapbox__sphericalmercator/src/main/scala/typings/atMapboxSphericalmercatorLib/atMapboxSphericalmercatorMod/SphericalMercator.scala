@@ -62,14 +62,8 @@ object SphericalMercator {
       XYBounds
     ]
   ): SphericalMercator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bbox")(bbox)
-    __obj.updateDynamic("convert")(convert)
-    __obj.updateDynamic("forward")(forward)
-    __obj.updateDynamic("inverse")(inverse)
-    __obj.updateDynamic("ll")(ll)
-    __obj.updateDynamic("px")(px)
-    __obj.updateDynamic("xyz")(xyz)
+    val __obj = js.Dynamic.literal(bbox = bbox, convert = convert, forward = forward, inverse = inverse, ll = ll, px = px, xyz = xyz)
+  
     __obj.asInstanceOf[SphericalMercator]
   }
 }

@@ -12,8 +12,8 @@ trait IPrintTaskCompletedEventArgs extends js.Object {
 object IPrintTaskCompletedEventArgs {
   @scala.inline
   def apply(completion: PrintTaskCompletion): IPrintTaskCompletedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("completion")(completion)
+    val __obj = js.Dynamic.literal(completion = completion)
+  
     __obj.asInstanceOf[IPrintTaskCompletedEventArgs]
   }
 }

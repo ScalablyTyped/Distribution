@@ -60,8 +60,7 @@ object Anon_AltDelimiter {
     startLine: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AltDelimiter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tableId")(tableId)
+    val __obj = js.Dynamic.literal(tableId = tableId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

@@ -13,9 +13,8 @@ trait Anon_MaximumRetryCount extends js.Object {
 object Anon_MaximumRetryCount {
   @scala.inline
   def apply(MaximumRetryCount: scala.Double, Name: java.lang.String): Anon_MaximumRetryCount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MaximumRetryCount")(MaximumRetryCount)
-    __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(MaximumRetryCount = MaximumRetryCount, Name = Name)
+  
     __obj.asInstanceOf[Anon_MaximumRetryCount]
   }
 }

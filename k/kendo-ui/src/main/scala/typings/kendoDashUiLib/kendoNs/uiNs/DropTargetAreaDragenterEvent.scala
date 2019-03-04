@@ -19,8 +19,7 @@ object DropTargetAreaDragenterEvent {
     dropTarget: kendoDashUiLib.JQuery = null,
     target: stdLib.Element = null
   ): DropTargetAreaDragenterEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(sender = sender)
     if (draggable != null) __obj.updateDynamic("draggable")(draggable)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (target != null) __obj.updateDynamic("target")(target)

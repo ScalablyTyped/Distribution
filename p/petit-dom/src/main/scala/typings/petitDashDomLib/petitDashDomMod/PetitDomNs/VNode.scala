@@ -16,10 +16,8 @@ trait VNode extends js.Object {
 object VNode {
   @scala.inline
   def apply(content: js.Array[VNode], isSVG: scala.Boolean, props: js.Any, `type`: js.Any, key: Key = null): VNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("isSVG")(isSVG)
-    __obj.updateDynamic("props")(props)
+    val __obj = js.Dynamic.literal(content = content, isSVG = isSVG, props = props)
+    __obj.updateDynamic("type")(`type`)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[VNode]
   }

@@ -12,8 +12,8 @@ trait ShareSingleReturn extends js.Object {
 object ShareSingleReturn {
   @scala.inline
   def apply(message: java.lang.String): ShareSingleReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
+  
     __obj.asInstanceOf[ShareSingleReturn]
   }
 }

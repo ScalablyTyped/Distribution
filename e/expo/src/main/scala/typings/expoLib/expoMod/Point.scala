@@ -13,9 +13,8 @@ trait Point extends js.Object {
 object Point {
   @scala.inline
   def apply(x: Axis, y: Axis): Point = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
     __obj.asInstanceOf[Point]
   }
 }

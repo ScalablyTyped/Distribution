@@ -24,9 +24,7 @@ object QueueItem {
     preprocess: js.Function1[/* data */ js.Any, _] = null,
     schema: arangodbLib.FoxxNs.Schema = null
   ): QueueItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mount = mount, name = name)
     if (backOff != null) __obj.updateDynamic("backOff")(backOff.asInstanceOf[js.Any])
     if (maxFailures != null) __obj.updateDynamic("maxFailures")(maxFailures.asInstanceOf[js.Any])
     if (preprocess != null) __obj.updateDynamic("preprocess")(preprocess)

@@ -19,13 +19,8 @@ object GitRevert {
     status: GitAsyncOperationStatus,
     url: java.lang.String
   ): GitRevert = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("detailedStatus")(detailedStatus)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("revertId")(revertId)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, detailedStatus = detailedStatus, parameters = parameters, revertId = revertId, status = status, url = url)
+  
     __obj.asInstanceOf[GitRevert]
   }
 }

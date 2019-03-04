@@ -37,12 +37,8 @@ object XConfirmDeleteBroadcaster {
     release: js.Function0[scala.Unit],
     removeConfirmDeleteListener: js.Function1[XConfirmDeleteListener, scala.Unit]
   ): XConfirmDeleteBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConfirmDeleteListener")(addConfirmDeleteListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeConfirmDeleteListener")(removeConfirmDeleteListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addConfirmDeleteListener = addConfirmDeleteListener, queryInterface = queryInterface, release = release, removeConfirmDeleteListener = removeConfirmDeleteListener)
+  
     __obj.asInstanceOf[XConfirmDeleteBroadcaster]
   }
 }

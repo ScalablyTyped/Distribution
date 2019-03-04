@@ -18,9 +18,7 @@ object VASTClientCustomStorage {
     setItem: js.Function2[java.lang.String, java.lang.String, scala.Unit],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any | js.Function0[_]] = null
   ): VASTClientCustomStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("setItem")(setItem)
+    val __obj = js.Dynamic.literal(getItem = getItem, setItem = setItem)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[VASTClientCustomStorage]
   }

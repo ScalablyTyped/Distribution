@@ -34,10 +34,7 @@ object Anon_BufferingIntervalBufferingSize {
     s3BackupMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     typeName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BufferingIntervalBufferingSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domainArn")(domainArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domainArn = domainArn.asInstanceOf[js.Any], indexName = indexName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (bufferingInterval != null) __obj.updateDynamic("bufferingInterval")(bufferingInterval.asInstanceOf[js.Any])
     if (bufferingSize != null) __obj.updateDynamic("bufferingSize")(bufferingSize.asInstanceOf[js.Any])
     if (cloudwatchLoggingOptions != null) __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions.asInstanceOf[js.Any])

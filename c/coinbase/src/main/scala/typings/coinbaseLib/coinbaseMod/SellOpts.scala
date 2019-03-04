@@ -47,8 +47,7 @@ object SellOpts {
     quote: js.UndefOr[scala.Boolean] = js.undefined,
     total: java.lang.String = null
   ): SellOpts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(currency = currency)
     if (!js.isUndefined(agree_btc_amount_varies)) __obj.updateDynamic("agree_btc_amount_varies")(agree_btc_amount_varies)
     if (amount != null) __obj.updateDynamic("amount")(amount)
     if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)

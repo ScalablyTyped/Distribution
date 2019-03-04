@@ -54,13 +54,8 @@ object GeoPoint {
     string: js.Function1[java.lang.String, GeoPoint],
     toJSON: js.Function0[js.Any]
   ): GeoPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("geohash")(geohash)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, array = array, geohash = geohash, properties = properties, string = string, toJSON = toJSON)
+  
     __obj.asInstanceOf[GeoPoint]
   }
 }

@@ -29,8 +29,7 @@ object Anon_Alpha {
     unit: java.lang.String = null,
     value: js.Any = null
   ): Anon_Alpha = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(string = string)
     if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (hex != null) __obj.updateDynamic("hex")(hex)
     if (rgba != null) __obj.updateDynamic("rgba")(rgba)

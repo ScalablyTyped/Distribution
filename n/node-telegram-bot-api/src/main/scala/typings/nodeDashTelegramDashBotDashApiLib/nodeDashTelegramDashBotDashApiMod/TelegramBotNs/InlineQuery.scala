@@ -22,11 +22,7 @@ object InlineQuery {
     query: java.lang.String,
     location: Location = null
   ): InlineQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(from = from, id = id, offset = offset, query = query)
     if (location != null) __obj.updateDynamic("location")(location)
     __obj.asInstanceOf[InlineQuery]
   }

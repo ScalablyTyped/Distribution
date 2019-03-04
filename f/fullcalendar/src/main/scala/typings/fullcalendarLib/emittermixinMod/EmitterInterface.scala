@@ -24,13 +24,8 @@ object EmitterInterface {
     trigger: js.Function2[js.Any, /* repeated */ js.Any, js.Any],
     triggerWith: js.Function3[js.Any, js.Any, js.Any, js.Any]
   ): EmitterInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasHandlers")(hasHandlers)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("one")(one)
-    __obj.updateDynamic("trigger")(trigger)
-    __obj.updateDynamic("triggerWith")(triggerWith)
+    val __obj = js.Dynamic.literal(hasHandlers = hasHandlers, off = off, on = on, one = one, trigger = trigger, triggerWith = triggerWith)
+  
     __obj.asInstanceOf[EmitterInterface]
   }
 }

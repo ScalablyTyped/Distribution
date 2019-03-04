@@ -78,18 +78,8 @@ object XLocalizedAliases {
     ],
     unbindAliases: js.Function1[java.lang.String, scala.Unit]
   ): XLocalizedAliases = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("bindAlias")(bindAlias)
-    __obj.updateDynamic("listAliases")(listAliases)
-    __obj.updateDynamic("lookupAlias")(lookupAlias)
-    __obj.updateDynamic("lookupProgrammatic")(lookupProgrammatic)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rebindAliases")(rebindAliases)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("renameAlias")(renameAlias)
-    __obj.updateDynamic("unbindAlias")(unbindAlias)
-    __obj.updateDynamic("unbindAliases")(unbindAliases)
+    val __obj = js.Dynamic.literal(acquire = acquire, bindAlias = bindAlias, listAliases = listAliases, lookupAlias = lookupAlias, lookupProgrammatic = lookupProgrammatic, queryInterface = queryInterface, rebindAliases = rebindAliases, release = release, renameAlias = renameAlias, unbindAlias = unbindAlias, unbindAliases = unbindAliases)
+  
     __obj.asInstanceOf[XLocalizedAliases]
   }
 }

@@ -36,17 +36,7 @@ object ojTabBarSettableProperties {
     truncation: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.progressive,
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null
   ): ojTabBarSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("as")(as)
-    __obj.updateDynamic("currentItem")(currentItem)
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("translations")(translations)
-    __obj.updateDynamic("truncation")(truncation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(as = as, currentItem = currentItem, display = display.asInstanceOf[js.Any], edge = edge.asInstanceOf[js.Any], item = item, overflow = overflow.asInstanceOf[js.Any], reorderable = reorderable.asInstanceOf[js.Any], selection = selection, translations = translations, truncation = truncation.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data)
     __obj.asInstanceOf[ojTabBarSettableProperties[K, D]]
   }

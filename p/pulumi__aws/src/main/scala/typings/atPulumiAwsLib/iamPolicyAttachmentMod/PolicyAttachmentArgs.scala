@@ -43,8 +43,7 @@ object PolicyAttachmentArgs {
     roles: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]]] = null,
     users: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamUserMod.User]]] = null
   ): PolicyAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(policyArn = policyArn.asInstanceOf[js.Any])
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])

@@ -22,8 +22,7 @@ object CircleOptions {
     snapToPixel: js.UndefOr[scala.Boolean] = js.undefined,
     stroke: openlayersLib.openlayersMod.styleNs.Stroke = null
   ): CircleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("radius")(radius)
+    val __obj = js.Dynamic.literal(radius = radius)
     if (atlasManager != null) __obj.updateDynamic("atlasManager")(atlasManager)
     if (fill != null) __obj.updateDynamic("fill")(fill)
     if (!js.isUndefined(snapToPixel)) __obj.updateDynamic("snapToPixel")(snapToPixel)

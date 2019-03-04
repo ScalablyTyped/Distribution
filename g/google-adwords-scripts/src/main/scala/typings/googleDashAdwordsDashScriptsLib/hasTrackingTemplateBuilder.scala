@@ -16,9 +16,8 @@ object hasTrackingTemplateBuilder {
     withCustomParameters: js.Function1[js.Object, B],
     withTrackingTemplate: js.Function1[java.lang.String, B]
   ): hasTrackingTemplateBuilder[B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withCustomParameters")(withCustomParameters)
-    __obj.updateDynamic("withTrackingTemplate")(withTrackingTemplate)
+    val __obj = js.Dynamic.literal(withCustomParameters = withCustomParameters, withTrackingTemplate = withTrackingTemplate)
+  
     __obj.asInstanceOf[hasTrackingTemplateBuilder[B]]
   }
 }

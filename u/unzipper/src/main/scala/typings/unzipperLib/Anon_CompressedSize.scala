@@ -30,15 +30,7 @@ object Anon_CompressedSize {
     versionsNeededToExtract: scala.Double,
     signature: scala.Int | scala.Double = null
   ): Anon_CompressedSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compressedSize")(compressedSize)
-    __obj.updateDynamic("compressionMethod")(compressionMethod)
-    __obj.updateDynamic("crc32")(crc32)
-    __obj.updateDynamic("extraFieldLength")(extraFieldLength)
-    __obj.updateDynamic("fileNameLength")(fileNameLength)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
-    __obj.updateDynamic("versionsNeededToExtract")(versionsNeededToExtract)
+    val __obj = js.Dynamic.literal(compressedSize = compressedSize, compressionMethod = compressionMethod, crc32 = crc32, extraFieldLength = extraFieldLength, fileNameLength = fileNameLength, flags = flags, lastModifiedTime = lastModifiedTime, versionsNeededToExtract = versionsNeededToExtract)
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CompressedSize]
   }

@@ -18,8 +18,8 @@ object BlogUserInfosResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BlogUserInfo]
     ]
   ): BlogUserInfosResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[BlogUserInfosResource]
   }
 }

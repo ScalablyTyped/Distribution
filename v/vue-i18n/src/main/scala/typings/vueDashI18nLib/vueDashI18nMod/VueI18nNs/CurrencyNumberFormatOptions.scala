@@ -35,9 +35,7 @@ object CurrencyNumberFormatOptions {
     minimumSignificantDigits: scala.Int | scala.Double = null,
     useGrouping: js.UndefOr[scala.Boolean] = js.undefined
   ): CurrencyNumberFormatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
-    __obj.updateDynamic("style")(style)
+    val __obj = js.Dynamic.literal(currency = currency, style = style)
     if (currencyDisplay != null) __obj.updateDynamic("currencyDisplay")(currencyDisplay)
     if (formatMatcher != null) __obj.updateDynamic("formatMatcher")(formatMatcher)
     if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher)

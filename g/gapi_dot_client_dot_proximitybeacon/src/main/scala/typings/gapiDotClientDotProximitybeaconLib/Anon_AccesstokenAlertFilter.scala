@@ -80,8 +80,7 @@ object Anon_AccesstokenAlertFilter {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAlertFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beaconName")(beaconName)
+    val __obj = js.Dynamic.literal(beaconName = beaconName)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alertFilter != null) __obj.updateDynamic("alertFilter")(alertFilter)

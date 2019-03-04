@@ -23,8 +23,7 @@ object PNotifyconfirmButton {
     promptTrigger: js.UndefOr[scala.Boolean] = js.undefined,
     text: java.lang.String = null
   ): PNotifyconfirmButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("click")(click)
+    val __obj = js.Dynamic.literal(click = click)
     if (addClass != null) __obj.updateDynamic("addClass")(addClass)
     if (!js.isUndefined(promptTrigger)) __obj.updateDynamic("promptTrigger")(promptTrigger)
     if (text != null) __obj.updateDynamic("text")(text)

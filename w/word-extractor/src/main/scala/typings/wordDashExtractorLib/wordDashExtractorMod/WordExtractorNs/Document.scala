@@ -22,12 +22,8 @@ object Document {
     getFootnotes: js.Function0[java.lang.String],
     getHeaders: js.Function0[java.lang.String]
   ): Document = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAnnotations")(getAnnotations)
-    __obj.updateDynamic("getBody")(getBody)
-    __obj.updateDynamic("getEndNotes")(getEndNotes)
-    __obj.updateDynamic("getFootnotes")(getFootnotes)
-    __obj.updateDynamic("getHeaders")(getHeaders)
+    val __obj = js.Dynamic.literal(getAnnotations = getAnnotations, getBody = getBody, getEndNotes = getEndNotes, getFootnotes = getFootnotes, getHeaders = getHeaders)
+  
     __obj.asInstanceOf[Document]
   }
 }

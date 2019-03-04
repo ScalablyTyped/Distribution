@@ -44,8 +44,7 @@ object PaginationProps {
     ] = null,
     siblingRange: scala.Double | java.lang.String = null
   ): PaginationProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("totalPages")(totalPages.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(totalPages = totalPages.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activePage != null) __obj.updateDynamic("activePage")(activePage.asInstanceOf[js.Any])
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)

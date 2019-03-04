@@ -108,37 +108,8 @@ object XGroup {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): XGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Expression")(Expression)
-    __obj.updateDynamic("Footer")(Footer)
-    __obj.updateDynamic("FooterOn")(FooterOn)
-    __obj.updateDynamic("Functions")(Functions)
-    __obj.updateDynamic("GroupInterval")(GroupInterval)
-    __obj.updateDynamic("GroupOn")(GroupOn)
-    __obj.updateDynamic("Groups")(Groups)
-    __obj.updateDynamic("Header")(Header)
-    __obj.updateDynamic("HeaderOn")(HeaderOn)
-    __obj.updateDynamic("KeepTogether")(KeepTogether)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("ResetPageNumber")(ResetPageNumber)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("StartNewColumn")(StartNewColumn)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(Expression = Expression, Footer = Footer, FooterOn = FooterOn, Functions = Functions, GroupInterval = GroupInterval, GroupOn = GroupOn, Groups = Groups, Header = Header, HeaderOn = HeaderOn, KeepTogether = KeepTogether, Parent = Parent, PropertySetInfo = PropertySetInfo, ResetPageNumber = ResetPageNumber, SortAscending = SortAscending, StartNewColumn = StartNewColumn, acquire = acquire, addEventListener = addEventListener, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, dispose = dispose, getParent = getParent, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setParent = setParent, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[XGroup]
   }
 }

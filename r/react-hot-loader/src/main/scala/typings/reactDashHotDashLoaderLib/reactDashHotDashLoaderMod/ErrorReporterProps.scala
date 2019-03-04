@@ -12,8 +12,8 @@ trait ErrorReporterProps extends js.Object {
 object ErrorReporterProps {
   @scala.inline
   def apply(error: js.Any): ErrorReporterProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[ErrorReporterProps]
   }
 }

@@ -12,8 +12,8 @@ trait ScreenOrientationEventMap extends js.Object {
 object ScreenOrientationEventMap {
   @scala.inline
   def apply(change: Event): ScreenOrientationEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
+    val __obj = js.Dynamic.literal(change = change)
+  
     __obj.asInstanceOf[ScreenOrientationEventMap]
   }
 }

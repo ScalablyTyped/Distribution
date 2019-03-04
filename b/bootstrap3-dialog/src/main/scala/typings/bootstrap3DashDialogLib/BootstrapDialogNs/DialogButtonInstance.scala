@@ -28,13 +28,8 @@ object DialogButtonInstance {
     toggleEnable: js.Function1[scala.Boolean, scala.Unit],
     toggleSpin: js.Function1[scala.Boolean, scala.Unit]
   ): DialogButtonInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("spin")(spin)
-    __obj.updateDynamic("stopSpin")(stopSpin)
-    __obj.updateDynamic("toggleEnable")(toggleEnable)
-    __obj.updateDynamic("toggleSpin")(toggleSpin)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, spin = spin, stopSpin = stopSpin, toggleEnable = toggleEnable, toggleSpin = toggleSpin)
+  
     __obj.asInstanceOf[DialogButtonInstance]
   }
 }

@@ -61,7 +61,8 @@ object SubscriptionChannel {
     modifierExtension: js.Array[Extension] = null,
     payload: java.lang.String = null
   ): SubscriptionChannel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_endpoint != null) __obj.updateDynamic("_endpoint")(_endpoint)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_header != null) __obj.updateDynamic("_header")(_header)

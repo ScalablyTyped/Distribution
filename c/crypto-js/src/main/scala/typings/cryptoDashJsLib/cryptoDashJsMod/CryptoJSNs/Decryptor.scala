@@ -15,9 +15,8 @@ object Decryptor {
     finalize: js.Function0[java.lang.String],
     process: js.Function1[java.lang.String, java.lang.String]
   ): Decryptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finalize")(finalize)
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(finalize = finalize, process = process)
+  
     __obj.asInstanceOf[Decryptor]
   }
 }

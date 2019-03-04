@@ -22,12 +22,8 @@ object Anon_AtimeMode {
     name: java.lang.String,
     stats: adoneLib.adoneNs.fsNs.INs.Stats
   ): Anon_AtimeMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(atime = atime, mode = mode, mtime = mtime, name = name, stats = stats)
+  
     __obj.asInstanceOf[Anon_AtimeMode]
   }
 }

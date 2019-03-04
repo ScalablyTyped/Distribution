@@ -14,9 +14,7 @@ trait Fragment extends js.Object {
 object Fragment {
   @scala.inline
   def apply(raw: java.lang.String, text: java.lang.String, values: js.Array[_] = null): Fragment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(raw = raw, text = text)
     if (values != null) __obj.updateDynamic("values")(values)
     __obj.asInstanceOf[Fragment]
   }

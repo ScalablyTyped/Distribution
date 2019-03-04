@@ -48,14 +48,7 @@ object Token {
     value: java.lang.String,
     `type`: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("lineBreaks")(lineBreaks)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(col = col, line = line, lineBreaks = lineBreaks, offset = offset, text = text, toString = toString, value = value)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Token]
   }

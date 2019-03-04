@@ -22,12 +22,8 @@ object LeagueDto {
     queue: java.lang.String,
     tier: java.lang.String
   ): LeagueDto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("participantId")(participantId)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("tier")(tier)
+    val __obj = js.Dynamic.literal(entries = entries, name = name, participantId = participantId, queue = queue, tier = tier)
+  
     __obj.asInstanceOf[LeagueDto]
   }
 }

@@ -35,7 +35,17 @@ object EventData {
     `9`: Anon_AmountEnergySpentNumber,
     NumberDictionary: /* key */ org.scalablytyped.runtime.NumberDictionary[scala.Null | Anon_Amount] = null
   ): EventData = {
-    val __obj = js.Dynamic.literal(`1` = `1`, `10` = `10`, `2` = `2`, `3` = `3`, `4` = `4`, `5` = `5`, `6` = `6`, `7` = `7`, `8` = `8`, `9` = `9`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("1")(`1`)
+    __obj.updateDynamic("10")(`10`)
+    __obj.updateDynamic("2")(`2`)
+    __obj.updateDynamic("3")(`3`)
+    __obj.updateDynamic("4")(`4`)
+    __obj.updateDynamic("5")(`5`)
+    __obj.updateDynamic("6")(`6`)
+    __obj.updateDynamic("7")(`7`)
+    __obj.updateDynamic("8")(`8`)
+    __obj.updateDynamic("9")(`9`)
     js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[EventData]
   }

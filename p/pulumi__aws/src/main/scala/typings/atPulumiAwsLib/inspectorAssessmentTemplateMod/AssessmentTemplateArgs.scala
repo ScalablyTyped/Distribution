@@ -32,10 +32,7 @@ object AssessmentTemplateArgs {
     targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): AssessmentTemplateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
-    __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], rulesPackageArns = rulesPackageArns.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTemplateArgs]
   }

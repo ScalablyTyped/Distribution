@@ -14,8 +14,8 @@ object Anon_CheckAuthMode {
   def apply(
     checkAuthMode: wepyLib.wepyLibStrings.fingerPrint | wepyLib.wepyLibStrings.facial | wepyLib.wepyLibStrings.speech
   ): Anon_CheckAuthMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkAuthMode")(checkAuthMode.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_CheckAuthMode]
   }
 }

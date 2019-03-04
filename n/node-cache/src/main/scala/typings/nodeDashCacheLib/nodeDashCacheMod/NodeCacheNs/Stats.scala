@@ -22,12 +22,8 @@ object Stats {
     misses: scala.Double,
     vsize: scala.Double
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hits")(hits)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("ksize")(ksize)
-    __obj.updateDynamic("misses")(misses)
-    __obj.updateDynamic("vsize")(vsize)
+    val __obj = js.Dynamic.literal(hits = hits, keys = keys, ksize = ksize, misses = misses, vsize = vsize)
+  
     __obj.asInstanceOf[Stats]
   }
 }

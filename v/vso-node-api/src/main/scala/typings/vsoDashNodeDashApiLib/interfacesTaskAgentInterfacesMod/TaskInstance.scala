@@ -30,18 +30,8 @@ object TaskInstance {
     timeoutInMinutes: scala.Double,
     version: java.lang.String
   ): TaskInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRun")(alwaysRun)
-    __obj.updateDynamic("condition")(condition)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("instanceId")(instanceId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, condition = condition, continueOnError = continueOnError, displayName = displayName, enabled = enabled, id = id, inputs = inputs, instanceId = instanceId, name = name, timeoutInMinutes = timeoutInMinutes, version = version)
+  
     __obj.asInstanceOf[TaskInstance]
   }
 }

@@ -234,29 +234,8 @@ object INavigationService {
     showUserDialog: js.Function0[scala.Unit],
     syncTree: js.Function1[ISyncTreeArgs, js.Any]
   ): INavigationService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_setActiveTreeType")(_setActiveTreeType)
-    __obj.updateDynamic("_syncPath")(_syncPath)
-    __obj.updateDynamic("changeSection")(changeSection)
-    __obj.updateDynamic("executeMenuAction")(executeMenuAction)
-    __obj.updateDynamic("hideDialog")(hideDialog)
-    __obj.updateDynamic("hideMenu")(hideMenu)
-    __obj.updateDynamic("hideNavigation")(hideNavigation)
-    __obj.updateDynamic("hideSearch")(hideSearch)
-    __obj.updateDynamic("hideTray")(hideTray)
-    __obj.updateDynamic("hideTree")(hideTree)
-    __obj.updateDynamic("loadLegacyIFrame")(loadLegacyIFrame)
-    __obj.updateDynamic("reloadNode")(reloadNode)
-    __obj.updateDynamic("reloadSection")(reloadSection)
-    __obj.updateDynamic("setupTreeEvents")(setupTreeEvents)
-    __obj.updateDynamic("showDialog")(showDialog)
-    __obj.updateDynamic("showHelpDialog")(showHelpDialog)
-    __obj.updateDynamic("showMenu")(showMenu)
-    __obj.updateDynamic("showSearch")(showSearch)
-    __obj.updateDynamic("showTray")(showTray)
-    __obj.updateDynamic("showTree")(showTree)
-    __obj.updateDynamic("showUserDialog")(showUserDialog)
-    __obj.updateDynamic("syncTree")(syncTree)
+    val __obj = js.Dynamic.literal(_setActiveTreeType = _setActiveTreeType, _syncPath = _syncPath, changeSection = changeSection, executeMenuAction = executeMenuAction, hideDialog = hideDialog, hideMenu = hideMenu, hideNavigation = hideNavigation, hideSearch = hideSearch, hideTray = hideTray, hideTree = hideTree, loadLegacyIFrame = loadLegacyIFrame, reloadNode = reloadNode, reloadSection = reloadSection, setupTreeEvents = setupTreeEvents, showDialog = showDialog, showHelpDialog = showHelpDialog, showMenu = showMenu, showSearch = showSearch, showTray = showTray, showTree = showTree, showUserDialog = showUserDialog, syncTree = syncTree)
+  
     __obj.asInstanceOf[INavigationService]
   }
 }

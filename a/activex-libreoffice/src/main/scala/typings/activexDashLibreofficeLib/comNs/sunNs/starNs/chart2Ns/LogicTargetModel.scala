@@ -37,11 +37,8 @@ object LogicTargetModel {
     LegendID: java.lang.String,
     LogicTargetModels: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet]
   ): LogicTargetModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CoordinateSystems")(CoordinateSystems)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("LegendID")(LegendID)
-    __obj.updateDynamic("LogicTargetModels")(LogicTargetModels)
+    val __obj = js.Dynamic.literal(CoordinateSystems = CoordinateSystems, ID = ID, LegendID = LegendID, LogicTargetModels = LogicTargetModels)
+  
     __obj.asInstanceOf[LogicTargetModel]
   }
 }

@@ -28,15 +28,8 @@ object Anon_BlogCategoryTitle {
     Title: java.lang.String,
     Url: java.lang.String
   ): Anon_BlogCategoryTitle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BlogCategoryTitle")(BlogCategoryTitle)
-    __obj.updateDynamic("BlogPostTitle")(BlogPostTitle)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("RecycleBinEnabled")(RecycleBinEnabled)
-    __obj.updateDynamic("SiteOwnerName")(SiteOwnerName)
-    __obj.updateDynamic("SiteUrl")(SiteUrl)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("Url")(Url)
+    val __obj = js.Dynamic.literal(BlogCategoryTitle = BlogCategoryTitle, BlogPostTitle = BlogPostTitle, Description = Description, RecycleBinEnabled = RecycleBinEnabled, SiteOwnerName = SiteOwnerName, SiteUrl = SiteUrl, Title = Title, Url = Url)
+  
     __obj.asInstanceOf[Anon_BlogCategoryTitle]
   }
 }

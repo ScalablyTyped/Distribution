@@ -15,11 +15,8 @@ trait OSSubscriptionState extends js.Object {
 object OSSubscriptionState {
   @scala.inline
   def apply(pushToken: js.Any, subscribed: scala.Boolean, userId: js.Any, userSubscriptionSetting: js.Any): OSSubscriptionState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pushToken")(pushToken)
-    __obj.updateDynamic("subscribed")(subscribed)
-    __obj.updateDynamic("userId")(userId)
-    __obj.updateDynamic("userSubscriptionSetting")(userSubscriptionSetting)
+    val __obj = js.Dynamic.literal(pushToken = pushToken, subscribed = subscribed, userId = userId, userSubscriptionSetting = userSubscriptionSetting)
+  
     __obj.asInstanceOf[OSSubscriptionState]
   }
 }

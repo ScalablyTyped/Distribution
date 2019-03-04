@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MenuButton extends Component {
   var menu: Menu = js.native
-  var `menuButton_`: Button = js.native
+  var menuButton_ : Button = js.native
   @JSName("options_")
   var options__MenuButton: MenuButtonOptions = js.native
   /**

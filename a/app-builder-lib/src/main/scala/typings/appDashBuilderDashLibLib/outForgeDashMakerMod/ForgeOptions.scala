@@ -12,8 +12,8 @@ trait ForgeOptions extends js.Object {
 object ForgeOptions {
   @scala.inline
   def apply(dir: java.lang.String): ForgeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dir")(dir)
+    val __obj = js.Dynamic.literal(dir = dir)
+  
     __obj.asInstanceOf[ForgeOptions]
   }
 }

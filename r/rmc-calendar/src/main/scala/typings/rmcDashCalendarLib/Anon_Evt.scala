@@ -22,12 +22,8 @@ object Anon_Evt {
     onTouchMove: js.Function1[reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], scala.Unit],
     onTouchStart: js.Function1[reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLDivElement], scala.Unit]
   ): Anon_Evt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onFinish")(onFinish)
-    __obj.updateDynamic("onTouchCancel")(onTouchCancel)
-    __obj.updateDynamic("onTouchEnd")(onTouchEnd)
-    __obj.updateDynamic("onTouchMove")(onTouchMove)
-    __obj.updateDynamic("onTouchStart")(onTouchStart)
+    val __obj = js.Dynamic.literal(onFinish = onFinish, onTouchCancel = onTouchCancel, onTouchEnd = onTouchEnd, onTouchMove = onTouchMove, onTouchStart = onTouchStart)
+  
     __obj.asInstanceOf[Anon_Evt]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_GH extends js.Object {
 object Anon_GH {
   @scala.inline
   def apply(H: screepsLib.screepsLibStrings.GH, O: screepsLib.screepsLibStrings.GO): Anon_GH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("H")(H)
-    __obj.updateDynamic("O")(O)
+    val __obj = js.Dynamic.literal(H = H, O = O)
+  
     __obj.asInstanceOf[Anon_GH]
   }
 }

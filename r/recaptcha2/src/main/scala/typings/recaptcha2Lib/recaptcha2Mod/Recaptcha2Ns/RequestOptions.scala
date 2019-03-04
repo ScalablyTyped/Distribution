@@ -20,11 +20,8 @@ object RequestOptions {
     method: recaptcha2Lib.recaptcha2LibStrings.POST,
     uri: java.lang.String
   ): RequestOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = json, method = method, uri = uri)
+  
     __obj.asInstanceOf[RequestOptions[T]]
   }
 }

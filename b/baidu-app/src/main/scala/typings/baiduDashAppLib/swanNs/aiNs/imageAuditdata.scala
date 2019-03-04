@@ -22,11 +22,8 @@ object imageAuditdata {
     `type`: scala.Double,
     words: scala.Double
   ): imageAuditdata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("msg")(msg)
-    __obj.updateDynamic("probability")(probability)
-    __obj.updateDynamic("stars")(stars)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(msg = msg, probability = probability, stars = stars, words = words)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[imageAuditdata]
   }
 }

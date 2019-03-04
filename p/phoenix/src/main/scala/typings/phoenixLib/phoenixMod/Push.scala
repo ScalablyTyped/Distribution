@@ -18,10 +18,8 @@ object Push {
     resend: js.Function1[scala.Double, scala.Unit],
     send: js.Function0[scala.Unit]
   ): Push = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("receive")(receive)
-    __obj.updateDynamic("resend")(resend)
-    __obj.updateDynamic("send")(send)
+    val __obj = js.Dynamic.literal(receive = receive, resend = resend, send = send)
+  
     __obj.asInstanceOf[Push]
   }
 }

@@ -22,9 +22,8 @@ object Anon_AcceptableStates {
     ],
     stateChangeRequired: youtubeDashPlayerLib.youtubeDashPlayerLibNumbers.`false`
   ): Anon_AcceptableStates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acceptableStates")(acceptableStates)
-    __obj.updateDynamic("stateChangeRequired")(stateChangeRequired)
+    val __obj = js.Dynamic.literal(acceptableStates = acceptableStates, stateChangeRequired = stateChangeRequired)
+  
     __obj.asInstanceOf[Anon_AcceptableStates]
   }
 }

@@ -92,8 +92,7 @@ object LZMAFilter {
     pb: scala.Int | scala.Double = null,
     preset: scala.Int | scala.Double = null
   ): LZMAFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (dict_size != null) __obj.updateDynamic("dict_size")(dict_size.asInstanceOf[js.Any])
     if (lc != null) __obj.updateDynamic("lc")(lc.asInstanceOf[js.Any])

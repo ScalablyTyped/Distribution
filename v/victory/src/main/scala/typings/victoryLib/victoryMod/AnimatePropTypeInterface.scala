@@ -43,8 +43,7 @@ object AnimatePropTypeInterface {
     onExit: victoryLib.Anon_Before = null,
     onLoad: victoryLib.Anon_After = null
   ): AnimatePropTypeInterface = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
+    val __obj = js.Dynamic.literal(duration = duration)
     if (easing != null) __obj.updateDynamic("easing")(easing)
     if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
     if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)

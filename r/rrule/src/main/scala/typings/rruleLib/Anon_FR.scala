@@ -26,14 +26,8 @@ object Anon_FR {
     TU: rruleLib.distEsmSrcWeekdayMod.Weekday,
     WE: rruleLib.distEsmSrcWeekdayMod.Weekday
   ): Anon_FR = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FR")(FR)
-    __obj.updateDynamic("MO")(MO)
-    __obj.updateDynamic("SA")(SA)
-    __obj.updateDynamic("SU")(SU)
-    __obj.updateDynamic("TH")(TH)
-    __obj.updateDynamic("TU")(TU)
-    __obj.updateDynamic("WE")(WE)
+    val __obj = js.Dynamic.literal(FR = FR, MO = MO, SA = SA, SU = SU, TH = TH, TU = TU, WE = WE)
+  
     __obj.asInstanceOf[Anon_FR]
   }
 }

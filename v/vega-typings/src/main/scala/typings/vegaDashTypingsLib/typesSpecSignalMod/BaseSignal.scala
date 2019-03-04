@@ -18,8 +18,7 @@ object BaseSignal {
     description: java.lang.String = null,
     on: js.Array[vegaDashTypingsLib.typesSpecOnDashEventsMod.OnEvent] = null
   ): BaseSignal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (description != null) __obj.updateDynamic("description")(description)
     if (on != null) __obj.updateDynamic("on")(on)
     __obj.asInstanceOf[BaseSignal]

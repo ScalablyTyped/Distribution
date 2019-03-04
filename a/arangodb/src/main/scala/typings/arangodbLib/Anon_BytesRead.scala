@@ -24,13 +24,8 @@ object Anon_BytesRead {
     message: java.lang.String,
     time: java.lang.String
   ): Anon_BytesRead = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytesRead")(bytesRead)
-    __obj.updateDynamic("bytesWritten")(bytesWritten)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("filesCombined")(filesCombined)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("time")(time)
+    val __obj = js.Dynamic.literal(bytesRead = bytesRead, bytesWritten = bytesWritten, count = count, filesCombined = filesCombined, message = message, time = time)
+  
     __obj.asInstanceOf[Anon_BytesRead]
   }
 }

@@ -14,10 +14,8 @@ trait RoleInstanceEndpoint extends js.Object {
 object RoleInstanceEndpoint {
   @scala.inline
   def apply(address: java.lang.String, port: scala.Double, protocol: java.lang.String): RoleInstanceEndpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(address = address, port = port, protocol = protocol)
+  
     __obj.asInstanceOf[RoleInstanceEndpoint]
   }
 }

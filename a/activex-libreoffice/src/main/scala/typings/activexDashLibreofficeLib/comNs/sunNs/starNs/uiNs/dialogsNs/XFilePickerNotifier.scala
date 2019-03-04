@@ -29,12 +29,8 @@ object XFilePickerNotifier {
     release: js.Function0[scala.Unit],
     removeFilePickerListener: js.Function1[XFilePickerListener, scala.Unit]
   ): XFilePickerNotifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addFilePickerListener")(addFilePickerListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeFilePickerListener")(removeFilePickerListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addFilePickerListener = addFilePickerListener, queryInterface = queryInterface, release = release, removeFilePickerListener = removeFilePickerListener)
+  
     __obj.asInstanceOf[XFilePickerNotifier]
   }
 }

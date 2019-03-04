@@ -73,19 +73,8 @@ object FluxStore {
     getDispatcher: js.Function0[fluxLib.libDispatcherMod.namespaced[TPayload]],
     hasChanged: js.Function0[scala.Boolean]
   ): FluxStore[TPayload] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("__changeEvent")(__changeEvent)
-    __obj.updateDynamic("__changed")(__changed)
-    __obj.updateDynamic("__className")(__className)
-    __obj.updateDynamic("__dispatcher")(__dispatcher)
-    __obj.updateDynamic("__emitChange")(__emitChange)
-    __obj.updateDynamic("__emitter")(__emitter)
-    __obj.updateDynamic("__invokeOnDispatch")(__invokeOnDispatch)
-    __obj.updateDynamic("__onDispatch")(__onDispatch)
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("getDispatchToken")(getDispatchToken)
-    __obj.updateDynamic("getDispatcher")(getDispatcher)
-    __obj.updateDynamic("hasChanged")(hasChanged)
+    val __obj = js.Dynamic.literal(__changeEvent = __changeEvent, __changed = __changed, __className = __className, __dispatcher = __dispatcher, __emitChange = __emitChange, __emitter = __emitter, __invokeOnDispatch = __invokeOnDispatch, __onDispatch = __onDispatch, addListener = addListener, getDispatchToken = getDispatchToken, getDispatcher = getDispatcher, hasChanged = hasChanged)
+  
     __obj.asInstanceOf[FluxStore[TPayload]]
   }
 }

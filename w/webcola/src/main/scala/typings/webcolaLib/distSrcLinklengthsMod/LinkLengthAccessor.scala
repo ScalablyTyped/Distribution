@@ -16,10 +16,8 @@ object LinkLengthAccessor {
     getTargetIndex: js.Function1[Link, scala.Double],
     setLength: js.Function2[Link, scala.Double, scala.Unit]
   ): LinkLengthAccessor[Link] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSourceIndex")(getSourceIndex)
-    __obj.updateDynamic("getTargetIndex")(getTargetIndex)
-    __obj.updateDynamic("setLength")(setLength)
+    val __obj = js.Dynamic.literal(getSourceIndex = getSourceIndex, getTargetIndex = getTargetIndex, setLength = setLength)
+  
     __obj.asInstanceOf[LinkLengthAccessor[Link]]
   }
 }

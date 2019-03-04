@@ -166,8 +166,7 @@ object MenuProps {
     xThreshold: scala.Int | scala.Double = null,
     yThreshold: scala.Int | scala.Double = null
   ): MenuProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(visible = visible)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose)

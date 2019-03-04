@@ -46,10 +46,8 @@ object IConfigurationFile {
     defaultSeverity: tslintLib.libLanguageRuleRuleMod.RuleSeverity = null,
     linterOptions: stdLib.Partial[tslintLib.Anon_Exclude] = null
   ): IConfigurationFile = {
-    val __obj = js.Dynamic.literal(`extends` = `extends`)
-    __obj.updateDynamic("jsRules")(jsRules)
-    __obj.updateDynamic("rules")(rules)
-    __obj.updateDynamic("rulesDirectory")(rulesDirectory)
+    val __obj = js.Dynamic.literal(jsRules = jsRules, rules = rules, rulesDirectory = rulesDirectory)
+    __obj.updateDynamic("extends")(`extends`)
     if (defaultSeverity != null) __obj.updateDynamic("defaultSeverity")(defaultSeverity)
     if (linterOptions != null) __obj.updateDynamic("linterOptions")(linterOptions)
     __obj.asInstanceOf[IConfigurationFile]

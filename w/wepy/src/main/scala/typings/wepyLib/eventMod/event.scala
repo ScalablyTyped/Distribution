@@ -20,10 +20,8 @@ object event {
     $transfor: js.Function1[js.Array[_], scala.Unit],
     active: scala.Boolean
   ): event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$destroy")($destroy)
-    __obj.updateDynamic("$transfor")($transfor)
-    __obj.updateDynamic("active")(active)
+    val __obj = js.Dynamic.literal($destroy = $destroy, $transfor = $transfor, active = active)
+  
     __obj.asInstanceOf[event]
   }
 }

@@ -24,13 +24,8 @@ object Anon_Function {
     outdated: scala.Boolean,
     ready: rethinkdbLib.rethinkdbLibNumbers.`true`
   ): Anon_Function = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("function")(function)
-    __obj.updateDynamic("geo")(geo)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("multi")(multi)
-    __obj.updateDynamic("outdated")(outdated)
-    __obj.updateDynamic("ready")(ready)
+    val __obj = js.Dynamic.literal(function = function, geo = geo, index = index, multi = multi, outdated = outdated, ready = ready)
+  
     __obj.asInstanceOf[Anon_Function]
   }
 }

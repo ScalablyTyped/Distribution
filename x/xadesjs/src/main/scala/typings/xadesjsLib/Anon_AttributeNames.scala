@@ -22,12 +22,8 @@ object Anon_AttributeNames {
     NamespaceURI: java.lang.String,
     SignedPropertiesType: java.lang.String
   ): Anon_AttributeNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttributeNames")(AttributeNames)
-    __obj.updateDynamic("DefaultPrefix")(DefaultPrefix)
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("NamespaceURI")(NamespaceURI)
-    __obj.updateDynamic("SignedPropertiesType")(SignedPropertiesType)
+    val __obj = js.Dynamic.literal(AttributeNames = AttributeNames, DefaultPrefix = DefaultPrefix, ElementNames = ElementNames, NamespaceURI = NamespaceURI, SignedPropertiesType = SignedPropertiesType)
+  
     __obj.asInstanceOf[Anon_AttributeNames]
   }
 }

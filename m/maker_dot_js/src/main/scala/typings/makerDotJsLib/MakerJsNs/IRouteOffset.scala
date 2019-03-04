@@ -23,11 +23,8 @@ object IRouteOffset {
     route: js.Array[java.lang.String],
     routeKey: java.lang.String
   ): IRouteOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("route")(route)
-    __obj.updateDynamic("routeKey")(routeKey)
+    val __obj = js.Dynamic.literal(layer = layer, offset = offset, route = route, routeKey = routeKey)
+  
     __obj.asInstanceOf[IRouteOffset]
   }
 }

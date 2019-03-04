@@ -22,12 +22,8 @@ object Anon_AbandonedCompleted {
     inProgress: scala.Double,
     queued: scala.Double
   ): Anon_AbandonedCompleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("abandoned")(abandoned)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("failed")(failed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("queued")(queued)
+    val __obj = js.Dynamic.literal(abandoned = abandoned, completed = completed, failed = failed, inProgress = inProgress, queued = queued)
+  
     __obj.asInstanceOf[Anon_AbandonedCompleted]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Code {
     link: prosemirrorDashModelLib.prosemirrorDashModelMod.MarkSpec,
     strong: prosemirrorDashModelLib.prosemirrorDashModelMod.MarkSpec
   ): Anon_Code = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("em")(em)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("strong")(strong)
+    val __obj = js.Dynamic.literal(code = code, em = em, link = link, strong = strong)
+  
     __obj.asInstanceOf[Anon_Code]
   }
 }

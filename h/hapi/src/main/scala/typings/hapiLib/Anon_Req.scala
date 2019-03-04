@@ -13,9 +13,8 @@ trait Anon_Req extends js.Object {
 object Anon_Req {
   @scala.inline
   def apply(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): Anon_Req = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(req = req, res = res)
+  
     __obj.asInstanceOf[Anon_Req]
   }
 }

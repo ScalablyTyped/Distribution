@@ -22,9 +22,8 @@ object Rule {
     `type`: cssDashTreeLib.cssDashTreeLibStrings.Rule,
     loc: CssLocation = null
   ): Rule = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("block")(block)
-    __obj.updateDynamic("prelude")(prelude.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(block = block, prelude = prelude.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Rule]
   }

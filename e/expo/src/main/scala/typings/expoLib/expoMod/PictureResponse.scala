@@ -22,12 +22,8 @@ object PictureResponse {
     uri: java.lang.String,
     width: scala.Double
   ): PictureResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("exif")(exif)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(base64 = base64, exif = exif, height = height, uri = uri, width = width)
+  
     __obj.asInstanceOf[PictureResponse]
   }
 }

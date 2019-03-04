@@ -27,10 +27,7 @@ object Payload {
     statusCode: scala.Double,
     attributes: js.Any = null
   ): Payload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(error = error, message = message, statusCode = statusCode)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[Payload]
   }

@@ -20,10 +20,7 @@ object WatchOptions {
     onlogout: js.Function0[scala.Unit],
     onready: js.Function0[scala.Unit] = null
   ): WatchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loggedInUser")(loggedInUser)
-    __obj.updateDynamic("onlogin")(onlogin)
-    __obj.updateDynamic("onlogout")(onlogout)
+    val __obj = js.Dynamic.literal(loggedInUser = loggedInUser, onlogin = onlogin, onlogout = onlogout)
     if (onready != null) __obj.updateDynamic("onready")(onready)
     __obj.asInstanceOf[WatchOptions]
   }

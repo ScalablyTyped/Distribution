@@ -18,10 +18,8 @@ object IConfigSchemaEntry {
     message: java.lang.String,
     validate: js.Function1[js.Any, scala.Boolean]
   ): IConfigSchemaEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue, message = message, validate = validate)
+  
     __obj.asInstanceOf[IConfigSchemaEntry]
   }
 }

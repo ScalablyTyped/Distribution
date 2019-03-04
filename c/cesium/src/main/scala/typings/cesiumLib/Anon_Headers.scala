@@ -32,8 +32,7 @@ object Anon_Headers {
     retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
     templateValues: js.Any = null
   ): Anon_Headers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)

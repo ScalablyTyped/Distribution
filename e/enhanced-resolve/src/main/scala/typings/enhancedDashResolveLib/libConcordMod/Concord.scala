@@ -22,11 +22,8 @@ object Concord {
     modules: Dictionary[java.lang.String],
     types: Dictionary[java.lang.String]
   ): Concord = {
-    val __obj = js.Dynamic.literal(`[server] main` = `[server] main`)
-    __obj.updateDynamic("extensions")(extensions)
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(extensions = extensions, main = main, modules = modules, types = types)
+    __obj.updateDynamic("[server] main")(`[server] main`)
     __obj.asInstanceOf[Concord]
   }
 }

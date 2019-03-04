@@ -22,9 +22,7 @@ object Anon_BucketNameKmsKeyArnPrefix {
     prefix: java.lang.String = null,
     syncFormat: java.lang.String = null
   ): Anon_BucketNameKmsKeyArnPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucketName")(bucketName)
-    __obj.updateDynamic("region")(region)
+    val __obj = js.Dynamic.literal(bucketName = bucketName, region = region)
     if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (syncFormat != null) __obj.updateDynamic("syncFormat")(syncFormat)

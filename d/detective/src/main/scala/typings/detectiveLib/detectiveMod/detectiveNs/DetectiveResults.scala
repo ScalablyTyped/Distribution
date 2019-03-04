@@ -27,9 +27,7 @@ object DetectiveResults {
     strings: js.Array[java.lang.String],
     nodes: js.Array[_] = null
   ): DetectiveResults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expressions")(expressions)
-    __obj.updateDynamic("strings")(strings)
+    val __obj = js.Dynamic.literal(expressions = expressions, strings = strings)
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)
     __obj.asInstanceOf[DetectiveResults]
   }

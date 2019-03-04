@@ -26,13 +26,7 @@ object ResourceRole {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): ResourceRole = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("ResourceParameterBindings")(ResourceParameterBindings)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("resourceAssignmentExpression")(resourceAssignmentExpression)
-    __obj.updateDynamic("resourceRef")(resourceRef)
+    val __obj = js.Dynamic.literal($type = $type, ResourceParameterBindings = ResourceParameterBindings, id = id, name = name, resourceAssignmentExpression = resourceAssignmentExpression, resourceRef = resourceRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

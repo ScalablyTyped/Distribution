@@ -15,9 +15,8 @@ trait TransitStop extends js.Object {
 object TransitStop {
   @scala.inline
   def apply(location: LatLngLiteral, name: java.lang.String): TransitStop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(location = location, name = name)
+  
     __obj.asInstanceOf[TransitStop]
   }
 }

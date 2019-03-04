@@ -24,9 +24,7 @@ object Anon_OwnerSourceDetails {
       js.Array[atPulumiPulumiLib.outputMod.Input[Anon_EventSourceMaximumExecutionFrequency]]
     ] = null
   ): Anon_OwnerSourceDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    __obj.updateDynamic("sourceIdentifier")(sourceIdentifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any])
     if (sourceDetails != null) __obj.updateDynamic("sourceDetails")(sourceDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_OwnerSourceDetails]
   }

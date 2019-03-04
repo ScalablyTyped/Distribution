@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait LodashSortedLastIndexBy1x1[T] extends js.Object {
   def apply(value: T): scala.Double = js.native
   def apply(value: T, array: lodashLib.lodashMod.underscoreNs.List[T]): scala.Double = js.native
-  def apply(value: lodashLib.lodashMod.underscoreNs.`__`): LodashSortedLastIndexBy1x5[T] = js.native
-  def apply(value: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashSortedLastIndexBy1x5[T] = js.native
+  def apply(value: lodashLib.lodashMod.underscoreNs.__): LodashSortedLastIndexBy1x5[T] = js.native
+  def apply(value: lodashLib.lodashMod.underscoreNs.__, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashSortedLastIndexBy1x5[T] = js.native
 }
 

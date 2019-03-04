@@ -55,12 +55,9 @@ object Token {
     bank_account: stripejsLib.customerMod.BankAccount = null,
     card: stripejsLib.customerMod.Card = null
   ): Token = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("client_ip")(client_ip)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("used")(used)
+    val __obj = js.Dynamic.literal(client_ip = client_ip, created = created, id = id, livemode = livemode, used = used)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (bank_account != null) __obj.updateDynamic("bank_account")(bank_account)
     if (card != null) __obj.updateDynamic("card")(card)
     __obj.asInstanceOf[Token]

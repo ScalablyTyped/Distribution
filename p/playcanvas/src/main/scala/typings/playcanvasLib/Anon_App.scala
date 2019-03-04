@@ -18,9 +18,7 @@ object Anon_App {
     entity: playcanvasLib.pcNs.Entity,
     enabled: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_App = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
-    __obj.updateDynamic("entity")(entity)
+    val __obj = js.Dynamic.literal(app = app, entity = entity)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     __obj.asInstanceOf[Anon_App]
   }

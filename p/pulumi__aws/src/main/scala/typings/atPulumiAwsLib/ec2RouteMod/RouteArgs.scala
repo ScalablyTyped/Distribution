@@ -62,8 +62,7 @@ object RouteArgs {
     transitGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): RouteArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any])
     if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
     if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock.asInstanceOf[js.Any])
     if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId.asInstanceOf[js.Any])

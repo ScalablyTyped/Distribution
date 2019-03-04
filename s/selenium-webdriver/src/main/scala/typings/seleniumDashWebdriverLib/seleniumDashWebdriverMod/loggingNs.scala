@@ -83,10 +83,10 @@ object loggingNs extends js.Object {
     def this(name: java.lang.String, level: scala.Double) = this()
     /** This logger's name. */
     var name: java.lang.String = js.native
-    var `name_`: java.lang.String = js.native
+    var name_ : java.lang.String = js.native
     /** The numeric log level. */
     var value: scala.Double = js.native
-    var `value_`: scala.Double = js.native
+    var value_ : scala.Double = js.native
   }
   
   /**
@@ -104,7 +104,7 @@ object loggingNs extends js.Object {
       * @return {!Logger} the new logger.
       * @private
       */
-    def `createLogger_`(name: java.lang.String, parent: Logger): Logger = js.native
+    def createLogger_(name: java.lang.String, parent: Logger): Logger = js.native
     /**
       * Retrieves a named logger, creating it in the process. This function will
       * implicitly create the requested logger, and any of its parents, if they
@@ -142,13 +142,13 @@ object loggingNs extends js.Object {
     def this(name: java.lang.String) = this()
     def this(name: java.lang.String, opt_level: Level) = this()
     /** @private {Set<function(!Entry)>} */
-    var `handlers_`: js.Any = js.native
+    var handlers_ : js.Any = js.native
     /** @private {Level} */
-    var `level_`: Level = js.native
+    var level_ : Level = js.native
     /** @private {string} */
-    var `name_`: java.lang.String = js.native
+    var name_ : java.lang.String = js.native
     /** @private {Logger} */
-    var `parent_`: Logger = js.native
+    var parent_ : Logger = js.native
     /**
       * Adds a handler to this logger. The handler will be invoked for each message
       * logged with this instance, or any of its descendants.

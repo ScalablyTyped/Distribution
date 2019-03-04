@@ -18,9 +18,7 @@ object Anon_Filters {
     rangeBehavior: java.lang.String,
     filters: relayDashRuntimeLib.relayDashRuntimeMod.Variables = null
   ): Anon_Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("rangeBehavior")(rangeBehavior)
+    val __obj = js.Dynamic.literal(key = key, rangeBehavior = rangeBehavior)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     __obj.asInstanceOf[Anon_Filters]
   }

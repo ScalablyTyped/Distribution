@@ -97,9 +97,7 @@ object BadgeProps {
     secondary: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): BadgeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("badgeContent")(badgeContent.asInstanceOf[js.Any])
-    __obj.updateDynamic("badgeId")(badgeId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(badgeContent = badgeContent.asInstanceOf[js.Any], badgeId = badgeId.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (badgeClassName != null) __obj.updateDynamic("badgeClassName")(badgeClassName)
     if (badgeStyle != null) __obj.updateDynamic("badgeStyle")(badgeStyle)

@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonAddCopy extends js.Object {
 object Anon_EnumValuesAnonAddCopy {
   @scala.inline
   def apply(enumValues: Anon_AddCopy): Anon_EnumValuesAnonAddCopy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonAddCopy]
   }
 }

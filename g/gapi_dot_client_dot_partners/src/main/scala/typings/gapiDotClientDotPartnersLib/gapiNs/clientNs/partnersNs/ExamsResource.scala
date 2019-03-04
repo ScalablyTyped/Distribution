@@ -18,8 +18,8 @@ object ExamsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ExamToken]
     ]
   ): ExamsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getToken")(getToken)
+    val __obj = js.Dynamic.literal(getToken = getToken)
+  
     __obj.asInstanceOf[ExamsResource]
   }
 }

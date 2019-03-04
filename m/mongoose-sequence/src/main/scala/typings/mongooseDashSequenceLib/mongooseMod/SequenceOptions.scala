@@ -26,8 +26,7 @@ object SequenceOptions {
     id: java.lang.String = null,
     reference_fields: js.Array[java.lang.String] = null
   ): SequenceOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inc_field")(inc_field)
+    val __obj = js.Dynamic.literal(inc_field = inc_field)
     if (collection_name != null) __obj.updateDynamic("collection_name")(collection_name)
     if (!js.isUndefined(disable_hooks)) __obj.updateDynamic("disable_hooks")(disable_hooks)
     if (id != null) __obj.updateDynamic("id")(id)

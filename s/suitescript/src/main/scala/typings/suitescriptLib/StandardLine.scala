@@ -30,16 +30,8 @@ object StandardLine {
     isPosting: js.Function0[scala.Boolean],
     isTaxable: js.Function0[scala.Boolean]
   ): StandardLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEntityId")(getEntityId)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getSubsidiaryId")(getSubsidiaryId)
-    __obj.updateDynamic("getTaxAmount")(getTaxAmount)
-    __obj.updateDynamic("getTaxItemId")(getTaxItemId)
-    __obj.updateDynamic("getTaxType")(getTaxType)
-    __obj.updateDynamic("getTaxableAmount")(getTaxableAmount)
-    __obj.updateDynamic("isPosting")(isPosting)
-    __obj.updateDynamic("isTaxable")(isTaxable)
+    val __obj = js.Dynamic.literal(getEntityId = getEntityId, getId = getId, getSubsidiaryId = getSubsidiaryId, getTaxAmount = getTaxAmount, getTaxItemId = getTaxItemId, getTaxType = getTaxType, getTaxableAmount = getTaxableAmount, isPosting = isPosting, isTaxable = isTaxable)
+  
     __obj.asInstanceOf[StandardLine]
   }
 }

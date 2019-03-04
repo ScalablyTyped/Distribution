@@ -111,12 +111,7 @@ object GridProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): GridProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, height = height, rowCount = rowCount, width = width)
     if (className != null) __obj.updateDynamic("className")(className)
     if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])
     if (initialScrollTop != null) __obj.updateDynamic("initialScrollTop")(initialScrollTop.asInstanceOf[js.Any])

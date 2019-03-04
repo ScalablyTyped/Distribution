@@ -13,9 +13,8 @@ trait LibWordArray extends js.Object {
 object LibWordArray {
   @scala.inline
   def apply(sigBytes: scala.Double, words: js.Array[scala.Double]): LibWordArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sigBytes")(sigBytes)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(sigBytes = sigBytes, words = words)
+  
     __obj.asInstanceOf[LibWordArray]
   }
 }

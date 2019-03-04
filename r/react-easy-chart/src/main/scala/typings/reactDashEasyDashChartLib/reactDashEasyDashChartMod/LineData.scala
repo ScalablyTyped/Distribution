@@ -13,9 +13,8 @@ trait LineData extends js.Object {
 object LineData {
   @scala.inline
   def apply(x: scala.Double | stdLib.Date | java.lang.String, y: scala.Double | stdLib.Date | java.lang.String): LineData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[LineData]
   }
 }

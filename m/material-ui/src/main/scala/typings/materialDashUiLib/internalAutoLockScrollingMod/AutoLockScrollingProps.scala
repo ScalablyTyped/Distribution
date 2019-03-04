@@ -18,8 +18,7 @@ object AutoLockScrollingProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[AutoLockScrolling] = null
   ): AutoLockScrollingProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lock")(lock)
+    val __obj = js.Dynamic.literal(lock = lock)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

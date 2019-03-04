@@ -32,15 +32,7 @@ object SignerInfo {
     signedAttrs: pkijsLib.srcSignedAndUnsignedAttributesMod.default = null,
     unsignedAttrs: pkijsLib.srcSignedAndUnsignedAttributesMod.default = null
   ): SignerInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("sid")(sid)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("signatureAlgorithm")(signatureAlgorithm)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(digestAlgorithm = digestAlgorithm, fromSchema = fromSchema, sid = sid, signature = signature, signatureAlgorithm = signatureAlgorithm, toJSON = toJSON, toSchema = toSchema, version = version)
     if (signedAttrs != null) __obj.updateDynamic("signedAttrs")(signedAttrs)
     if (unsignedAttrs != null) __obj.updateDynamic("unsignedAttrs")(unsignedAttrs)
     __obj.asInstanceOf[SignerInfo]

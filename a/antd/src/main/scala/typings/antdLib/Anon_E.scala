@@ -18,10 +18,8 @@ object Anon_E {
     layout: antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical,
     onSubmit: js.Function1[reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement], scala.Unit]
   ): Anon_E = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hideRequiredMark")(hideRequiredMark)
-    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.updateDynamic("onSubmit")(onSubmit)
+    val __obj = js.Dynamic.literal(hideRequiredMark = hideRequiredMark, layout = layout.asInstanceOf[js.Any], onSubmit = onSubmit)
+  
     __obj.asInstanceOf[Anon_E]
   }
 }

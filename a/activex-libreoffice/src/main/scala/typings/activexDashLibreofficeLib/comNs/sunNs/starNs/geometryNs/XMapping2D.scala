@@ -35,12 +35,8 @@ object XMapping2D {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XMapping2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("mapInverse")(mapInverse)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, map = map, mapInverse = mapInverse, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XMapping2D]
   }
 }

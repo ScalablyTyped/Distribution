@@ -13,9 +13,8 @@ trait Region extends js.Object {
 object Region {
   @scala.inline
   def apply(countries: js.Array[java.lang.String], name: java.lang.String): Region = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("countries")(countries)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(countries = countries, name = name)
+  
     __obj.asInstanceOf[Region]
   }
 }

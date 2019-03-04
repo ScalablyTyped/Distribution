@@ -26,14 +26,8 @@ object ProjectionGroup {
     padding: scala.Double,
     stiffness: scala.Double
   ): ProjectionGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("leaves")(leaves)
-    __obj.updateDynamic("maxVar")(maxVar)
-    __obj.updateDynamic("minVar")(minVar)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("stiffness")(stiffness)
+    val __obj = js.Dynamic.literal(bounds = bounds, groups = groups, leaves = leaves, maxVar = maxVar, minVar = minVar, padding = padding, stiffness = stiffness)
+  
     __obj.asInstanceOf[ProjectionGroup]
   }
 }

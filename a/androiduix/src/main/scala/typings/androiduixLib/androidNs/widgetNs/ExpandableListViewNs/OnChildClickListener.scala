@@ -27,8 +27,8 @@ object OnChildClickListener {
       scala.Boolean
     ]
   ): OnChildClickListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onChildClick")(onChildClick)
+    val __obj = js.Dynamic.literal(onChildClick = onChildClick)
+  
     __obj.asInstanceOf[OnChildClickListener]
   }
 }

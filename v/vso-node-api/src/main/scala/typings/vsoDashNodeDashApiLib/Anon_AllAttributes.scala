@@ -44,23 +44,8 @@ object Anon_AllAttributes {
     none: scala.Double,
     useFallbackAssetUri: scala.Double
   ): Anon_AllAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allAttributes")(allAttributes)
-    __obj.updateDynamic("excludeNonValidated")(excludeNonValidated)
-    __obj.updateDynamic("includeAssetUri")(includeAssetUri)
-    __obj.updateDynamic("includeCategoryAndTags")(includeCategoryAndTags)
-    __obj.updateDynamic("includeFiles")(includeFiles)
-    __obj.updateDynamic("includeInstallationTargets")(includeInstallationTargets)
-    __obj.updateDynamic("includeLatestVersionOnly")(includeLatestVersionOnly)
-    __obj.updateDynamic("includeLcids")(includeLcids)
-    __obj.updateDynamic("includeMetadata")(includeMetadata)
-    __obj.updateDynamic("includeMinimalPayloadForVsIde")(includeMinimalPayloadForVsIde)
-    __obj.updateDynamic("includeSharedAccounts")(includeSharedAccounts)
-    __obj.updateDynamic("includeStatistics")(includeStatistics)
-    __obj.updateDynamic("includeVersionProperties")(includeVersionProperties)
-    __obj.updateDynamic("includeVersions")(includeVersions)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("useFallbackAssetUri")(useFallbackAssetUri)
+    val __obj = js.Dynamic.literal(allAttributes = allAttributes, excludeNonValidated = excludeNonValidated, includeAssetUri = includeAssetUri, includeCategoryAndTags = includeCategoryAndTags, includeFiles = includeFiles, includeInstallationTargets = includeInstallationTargets, includeLatestVersionOnly = includeLatestVersionOnly, includeLcids = includeLcids, includeMetadata = includeMetadata, includeMinimalPayloadForVsIde = includeMinimalPayloadForVsIde, includeSharedAccounts = includeSharedAccounts, includeStatistics = includeStatistics, includeVersionProperties = includeVersionProperties, includeVersions = includeVersions, none = none, useFallbackAssetUri = useFallbackAssetUri)
+  
     __obj.asInstanceOf[Anon_AllAttributes]
   }
 }

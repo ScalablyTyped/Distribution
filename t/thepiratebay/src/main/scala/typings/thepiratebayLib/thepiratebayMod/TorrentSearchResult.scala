@@ -28,20 +28,8 @@ object TorrentSearchResult {
     uploaderLink: java.lang.String,
     verified: scala.Boolean
   ): TorrentSearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("leechers")(leechers)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("magnetLink")(magnetLink)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("seeders")(seeders)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("subcategory")(subcategory)
-    __obj.updateDynamic("uploadDate")(uploadDate)
-    __obj.updateDynamic("uploader")(uploader)
-    __obj.updateDynamic("uploaderLink")(uploaderLink)
-    __obj.updateDynamic("verified")(verified)
+    val __obj = js.Dynamic.literal(category = category, id = id, leechers = leechers, link = link, magnetLink = magnetLink, name = name, seeders = seeders, size = size, subcategory = subcategory, uploadDate = uploadDate, uploader = uploader, uploaderLink = uploaderLink, verified = verified)
+  
     __obj.asInstanceOf[TorrentSearchResult]
   }
 }

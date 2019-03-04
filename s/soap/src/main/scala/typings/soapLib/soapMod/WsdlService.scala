@@ -18,11 +18,7 @@ object WsdlService {
     xmlKey: java.lang.String,
     xmlns: WsdlXmlns = null
   ): WsdlService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
-    __obj.updateDynamic("ports")(ports)
-    __obj.updateDynamic("valueKey")(valueKey)
-    __obj.updateDynamic("xmlKey")(xmlKey)
+    val __obj = js.Dynamic.literal(ignoredNamespaces = ignoredNamespaces, ports = ports, valueKey = valueKey, xmlKey = xmlKey)
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
     __obj.asInstanceOf[WsdlService]
   }

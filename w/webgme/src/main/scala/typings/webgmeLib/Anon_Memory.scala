@@ -19,8 +19,8 @@ object Anon_Memory {
   def apply(
     `type`: webgmeLib.webgmeLibStrings.mongo | webgmeLib.webgmeLibStrings.redis | webgmeLib.webgmeLibStrings.memory
   ): Anon_Memory = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Memory]
   }
 }

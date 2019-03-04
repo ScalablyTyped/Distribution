@@ -62,9 +62,7 @@ object SnapshotViewIOSProps {
     style: StyleProp[ViewStyle] = null,
     testID: java.lang.String = null
   ): SnapshotViewIOSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSnapshotReady")(onSnapshotReady)
-    __obj.updateDynamic("testIdentifier")(testIdentifier)
+    val __obj = js.Dynamic.literal(onSnapshotReady = onSnapshotReady, testIdentifier = testIdentifier)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

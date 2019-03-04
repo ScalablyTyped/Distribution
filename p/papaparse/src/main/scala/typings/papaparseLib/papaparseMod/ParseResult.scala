@@ -14,10 +14,8 @@ trait ParseResult extends js.Object {
 object ParseResult {
   @scala.inline
   def apply(data: js.Array[_], errors: js.Array[ParseError], meta: ParseMeta): ParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(data = data, errors = errors, meta = meta)
+  
     __obj.asInstanceOf[ParseResult]
   }
 }

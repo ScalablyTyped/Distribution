@@ -36,7 +36,8 @@ object Anon_AuthSource {
     url: java.lang.String = null,
     username: java.lang.String = null
   ): Anon_AuthSource = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (authSource != null) __obj.updateDynamic("authSource")(authSource)
     if (dbName != null) __obj.updateDynamic("dbName")(dbName)
     if (eventsCollectionName != null) __obj.updateDynamic("eventsCollectionName")(eventsCollectionName)

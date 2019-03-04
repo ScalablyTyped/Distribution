@@ -14,9 +14,8 @@ trait Anon_Equals extends js.Object {
 object Anon_Equals {
   @scala.inline
   def apply(equals: scala.Double, notEquals: scala.Double): Anon_Equals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("notEquals")(notEquals)
+    val __obj = js.Dynamic.literal(equals = equals, notEquals = notEquals)
+  
     __obj.asInstanceOf[Anon_Equals]
   }
 }

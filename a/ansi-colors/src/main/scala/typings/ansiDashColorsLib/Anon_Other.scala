@@ -16,9 +16,8 @@ object Anon_Other {
     other: ansiDashColorsLib.ansiDashColorsMod.colorsNs.OtherPlatformsSymbols,
     windows: ansiDashColorsLib.ansiDashColorsMod.colorsNs.WindowsSymbols
   ): Anon_Other = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("other")(other)
-    __obj.updateDynamic("windows")(windows)
+    val __obj = js.Dynamic.literal(other = other, windows = windows)
+  
     __obj.asInstanceOf[Anon_Other]
   }
 }

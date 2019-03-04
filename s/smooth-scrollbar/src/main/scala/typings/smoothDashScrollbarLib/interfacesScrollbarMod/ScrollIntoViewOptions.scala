@@ -22,12 +22,8 @@ object ScrollIntoViewOptions {
     offsetTop: scala.Double,
     onlyScrollIfNeeded: scala.Boolean
   ): ScrollIntoViewOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignToTop")(alignToTop)
-    __obj.updateDynamic("offsetBottom")(offsetBottom)
-    __obj.updateDynamic("offsetLeft")(offsetLeft)
-    __obj.updateDynamic("offsetTop")(offsetTop)
-    __obj.updateDynamic("onlyScrollIfNeeded")(onlyScrollIfNeeded)
+    val __obj = js.Dynamic.literal(alignToTop = alignToTop, offsetBottom = offsetBottom, offsetLeft = offsetLeft, offsetTop = offsetTop, onlyScrollIfNeeded = onlyScrollIfNeeded)
+  
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
 }

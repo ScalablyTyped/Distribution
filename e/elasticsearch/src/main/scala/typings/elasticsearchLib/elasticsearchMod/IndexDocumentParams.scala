@@ -50,9 +50,8 @@ object IndexDocumentParams {
     versionType: VersionType = null,
     waitForActiveShards: java.lang.String = null
   ): IndexDocumentParams[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index)
+    __obj.updateDynamic("type")(`type`)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

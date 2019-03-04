@@ -33,17 +33,8 @@ object ICalendarController {
     newItemDialog: js.Function1[java.lang.String, scala.Unit],
     refreshItems: js.Function0[scala.Unit]
   ): ICalendarController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseAll")(collapseAll)
-    __obj.updateDynamic("deleteItem")(deleteItem)
-    __obj.updateDynamic("expandAll")(expandAll)
-    __obj.updateDynamic("getActiveScope")(getActiveScope)
-    __obj.updateDynamic("moveToDate")(moveToDate)
-    __obj.updateDynamic("moveToView")(moveToView)
-    __obj.updateDynamic("moveToViewDate")(moveToViewDate)
-    __obj.updateDynamic("moveToViewType")(moveToViewType)
-    __obj.updateDynamic("newItemDialog")(newItemDialog)
-    __obj.updateDynamic("refreshItems")(refreshItems)
+    val __obj = js.Dynamic.literal(collapseAll = collapseAll, deleteItem = deleteItem, expandAll = expandAll, getActiveScope = getActiveScope, moveToDate = moveToDate, moveToView = moveToView, moveToViewDate = moveToViewDate, moveToViewType = moveToViewType, newItemDialog = newItemDialog, refreshItems = refreshItems)
+  
     __obj.asInstanceOf[ICalendarController]
   }
 }

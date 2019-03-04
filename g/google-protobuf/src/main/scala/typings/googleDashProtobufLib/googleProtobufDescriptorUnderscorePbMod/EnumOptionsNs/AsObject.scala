@@ -22,8 +22,7 @@ object AsObject {
     allowAlias: js.UndefOr[scala.Boolean] = js.undefined,
     deprecated: js.UndefOr[scala.Boolean] = js.undefined
   ): AsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uninterpretedOptionList")(uninterpretedOptionList)
+    val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList)
     if (!js.isUndefined(allowAlias)) __obj.updateDynamic("allowAlias")(allowAlias)
     if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
     __obj.asInstanceOf[AsObject]

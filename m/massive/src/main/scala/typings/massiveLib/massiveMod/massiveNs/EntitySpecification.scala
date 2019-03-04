@@ -27,12 +27,8 @@ object EntitySpecification {
     path: java.lang.String,
     schema: java.lang.String
   ): EntitySpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("loader")(loader)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(db = db, loader = loader, name = name, path = path, schema = schema)
+  
     __obj.asInstanceOf[EntitySpecification]
   }
 }

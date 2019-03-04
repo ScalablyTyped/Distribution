@@ -23,8 +23,7 @@ object ExecFileOptionsWithStringEncoding {
     windowsHide: js.UndefOr[scala.Boolean] = js.undefined,
     windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
   ): ExecFileOptionsWithStringEncoding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (env != null) __obj.updateDynamic("env")(env)
     if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])

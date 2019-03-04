@@ -27,10 +27,8 @@ object Anon_PageList {
     sizePerPageDropDown: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SizePerPageDropDown,
     totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
   ): Anon_PageList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pageList")(pageList)
-    __obj.updateDynamic("sizePerPageDropDown")(sizePerPageDropDown)
-    __obj.updateDynamic("totalText")(totalText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(pageList = pageList, sizePerPageDropDown = sizePerPageDropDown, totalText = totalText.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_PageList]
   }
 }

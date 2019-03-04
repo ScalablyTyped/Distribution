@@ -12,8 +12,8 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(files: org.scalablytyped.runtime.StringDictionary[File]): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files)
+    val __obj = js.Dynamic.literal(files = files)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

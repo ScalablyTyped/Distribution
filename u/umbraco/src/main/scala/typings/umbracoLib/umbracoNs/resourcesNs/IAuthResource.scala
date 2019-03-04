@@ -129,12 +129,8 @@ object IAuthResource {
     ],
     performLogout: js.Function0[angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
   ): IAuthResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentUser")(getCurrentUser)
-    __obj.updateDynamic("getRemainingTimeoutSeconds")(getRemainingTimeoutSeconds)
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("performLogin")(performLogin)
-    __obj.updateDynamic("performLogout")(performLogout)
+    val __obj = js.Dynamic.literal(getCurrentUser = getCurrentUser, getRemainingTimeoutSeconds = getRemainingTimeoutSeconds, isAuthenticated = isAuthenticated, performLogin = performLogin, performLogout = performLogout)
+  
     __obj.asInstanceOf[IAuthResource]
   }
 }

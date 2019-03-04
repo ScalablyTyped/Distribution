@@ -111,9 +111,7 @@ object ImagingStudySeries {
     performer: js.Array[Reference] = null,
     started: dateTime = null
   ): ImagingStudySeries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("modality")(modality)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(modality = modality, uid = uid)
     if (_availability != null) __obj.updateDynamic("_availability")(_availability)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

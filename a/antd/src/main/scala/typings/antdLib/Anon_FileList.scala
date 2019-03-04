@@ -12,8 +12,8 @@ trait Anon_FileList extends js.Object {
 object Anon_FileList {
   @scala.inline
   def apply(fileList: js.Array[antdLib.libUploadInterfaceMod.UploadFile]): Anon_FileList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileList")(fileList)
+    val __obj = js.Dynamic.literal(fileList = fileList)
+  
     __obj.asInstanceOf[Anon_FileList]
   }
 }

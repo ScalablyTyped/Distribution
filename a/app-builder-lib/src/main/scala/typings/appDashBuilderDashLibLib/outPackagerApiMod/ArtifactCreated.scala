@@ -27,9 +27,7 @@ object ArtifactCreated {
     target: appDashBuilderDashLibLib.outCoreMod.Target = null,
     updateInfo: js.Any = null
   ): ArtifactCreated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("packager")(packager)
+    val __obj = js.Dynamic.literal(file = file, packager = packager)
     if (arch != null) __obj.updateDynamic("arch")(arch)
     if (fileContent != null) __obj.updateDynamic("fileContent")(fileContent)
     if (!js.isUndefined(isWriteUpdateInfo)) __obj.updateDynamic("isWriteUpdateInfo")(isWriteUpdateInfo)

@@ -24,8 +24,7 @@ object PluginOptions {
     disable: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null
   ): PluginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(filename = filename)
     if (!js.isUndefined(allChunks)) __obj.updateDynamic("allChunks")(allChunks)
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
     if (id != null) __obj.updateDynamic("id")(id)

@@ -13,9 +13,8 @@ trait Subscription extends js.Object {
 object Subscription {
   @scala.inline
   def apply(listenable: Listenable, stop: js.Function): Subscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listenable")(listenable)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(listenable = listenable, stop = stop)
+  
     __obj.asInstanceOf[Subscription]
   }
 }

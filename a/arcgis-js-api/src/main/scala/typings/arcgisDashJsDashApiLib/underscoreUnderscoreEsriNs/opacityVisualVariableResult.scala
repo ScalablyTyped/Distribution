@@ -44,14 +44,8 @@ object opacityVisualVariableResult {
     statistics: SummaryStatisticsResult,
     visualVariable: OpacityVariable
   ): opacityVisualVariableResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authoringInfo")(authoringInfo)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("visualVariable")(visualVariable)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, statistics = statistics, visualVariable = visualVariable)
+  
     __obj.asInstanceOf[opacityVisualVariableResult]
   }
 }

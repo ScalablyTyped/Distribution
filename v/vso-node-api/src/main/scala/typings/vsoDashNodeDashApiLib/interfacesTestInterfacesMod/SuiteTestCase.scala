@@ -13,9 +13,8 @@ trait SuiteTestCase extends js.Object {
 object SuiteTestCase {
   @scala.inline
   def apply(pointAssignments: js.Array[PointAssignment], testCase: WorkItemReference): SuiteTestCase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pointAssignments")(pointAssignments)
-    __obj.updateDynamic("testCase")(testCase)
+    val __obj = js.Dynamic.literal(pointAssignments = pointAssignments, testCase = testCase)
+  
     __obj.asInstanceOf[SuiteTestCase]
   }
 }

@@ -51,9 +51,8 @@ object Anon_AltBucketEntity {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketEntity = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("entity")(entity)
+    val __obj = js.Dynamic.literal(bucket = bucket, entity = entity)
+    __obj.updateDynamic("object")(`object`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (generation != null) __obj.updateDynamic("generation")(generation)

@@ -27,8 +27,7 @@ object PasswordProps {
     suffix: reactLib.reactMod.ReactNs.ReactNode = null,
     visibilityToggle: js.UndefOr[scala.Boolean] = js.undefined
   ): PasswordProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
     if (addonAfter != null) __obj.updateDynamic("addonAfter")(addonAfter.asInstanceOf[js.Any])
     if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)

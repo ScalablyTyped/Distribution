@@ -18,10 +18,8 @@ object Anon_PolicyConfiguration {
     PolicyEvaluationRecord: js.Any,
     PolicyEvaluationStatus: Anon_EnumValuesAnonApprovedBroken
   ): Anon_PolicyConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PolicyConfiguration")(PolicyConfiguration)
-    __obj.updateDynamic("PolicyEvaluationRecord")(PolicyEvaluationRecord)
-    __obj.updateDynamic("PolicyEvaluationStatus")(PolicyEvaluationStatus)
+    val __obj = js.Dynamic.literal(PolicyConfiguration = PolicyConfiguration, PolicyEvaluationRecord = PolicyEvaluationRecord, PolicyEvaluationStatus = PolicyEvaluationStatus)
+  
     __obj.asInstanceOf[Anon_PolicyConfiguration]
   }
 }

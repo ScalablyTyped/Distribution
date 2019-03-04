@@ -35,8 +35,7 @@ object OAuth2Provider {
     name: java.lang.String = null,
     oauth2: OAuth2Endpoints = null
   ): OAuth2Provider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (description != null) __obj.updateDynamic("description")(description)
     if (name != null) __obj.updateDynamic("name")(name)
     if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2)

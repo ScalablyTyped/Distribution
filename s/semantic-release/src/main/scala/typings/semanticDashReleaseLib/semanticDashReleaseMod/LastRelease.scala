@@ -17,10 +17,8 @@ trait LastRelease extends js.Object {
 object LastRelease {
   @scala.inline
   def apply(gitHead: java.lang.String, gitTag: java.lang.String, version: java.lang.String): LastRelease = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gitHead")(gitHead)
-    __obj.updateDynamic("gitTag")(gitTag)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(gitHead = gitHead, gitTag = gitTag, version = version)
+  
     __obj.asInstanceOf[LastRelease]
   }
 }

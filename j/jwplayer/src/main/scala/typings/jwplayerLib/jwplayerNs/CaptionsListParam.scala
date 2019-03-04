@@ -12,8 +12,8 @@ trait CaptionsListParam extends js.Object {
 object CaptionsListParam {
   @scala.inline
   def apply(tracks: js.Array[_]): CaptionsListParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tracks")(tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks)
+  
     __obj.asInstanceOf[CaptionsListParam]
   }
 }

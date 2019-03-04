@@ -14,10 +14,8 @@ trait Anon_ColorScale extends js.Object {
 object Anon_ColorScale {
   @scala.inline
   def apply(colorScale: js.Array[java.lang.String], height: scala.Double, width: scala.Double): Anon_ColorScale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colorScale")(colorScale)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(colorScale = colorScale, height = height, width = width)
+  
     __obj.asInstanceOf[Anon_ColorScale]
   }
 }

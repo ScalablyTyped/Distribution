@@ -64,16 +64,8 @@ object DataSet {
     stockEvents: js.Array[amchartsLib.stockeventMod.default],
     title: java.lang.String
   ): DataSet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categoryField")(categoryField)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("compared")(compared)
-    __obj.updateDynamic("dataProvider")(dataProvider)
-    __obj.updateDynamic("fieldMappings")(fieldMappings)
-    __obj.updateDynamic("showInCompare")(showInCompare)
-    __obj.updateDynamic("showInSelect")(showInSelect)
-    __obj.updateDynamic("stockEvents")(stockEvents)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(categoryField = categoryField, color = color, compared = compared, dataProvider = dataProvider, fieldMappings = fieldMappings, showInCompare = showInCompare, showInSelect = showInSelect, stockEvents = stockEvents, title = title)
+  
     __obj.asInstanceOf[DataSet]
   }
 }

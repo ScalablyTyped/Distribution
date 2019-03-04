@@ -84,20 +84,8 @@ object EventModule {
     removeListener: js.Function2[java.lang.String, js.Function, EventModule],
     setMaxListener: js.Function1[scala.Double, scala.Unit]
   ): EventModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListener")(addListener)
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("listeners")(listeners)
-    __obj.updateDynamic("listenersAny")(listenersAny)
-    __obj.updateDynamic("many")(many)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("offAny")(offAny)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("onAny")(onAny)
-    __obj.updateDynamic("once")(once)
-    __obj.updateDynamic("removeAllListeners")(removeAllListeners)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("setMaxListener")(setMaxListener)
+    val __obj = js.Dynamic.literal(addListener = addListener, emit = emit, listeners = listeners, listenersAny = listenersAny, many = many, off = off, offAny = offAny, on = on, onAny = onAny, once = once, removeAllListeners = removeAllListeners, removeListener = removeListener, setMaxListener = setMaxListener)
+  
     __obj.asInstanceOf[EventModule]
   }
 }

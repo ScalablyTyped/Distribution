@@ -14,8 +14,8 @@ object Anon_WeightedTargetsAnonVirtualNodeWeight {
   def apply(
     weightedTargets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_VirtualNodeWeight]]]
   ): Anon_WeightedTargetsAnonVirtualNodeWeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("weightedTargets")(weightedTargets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(weightedTargets = weightedTargets.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_WeightedTargetsAnonVirtualNodeWeight]
   }
 }

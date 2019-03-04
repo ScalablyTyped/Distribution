@@ -178,34 +178,8 @@ object NumberingLevel {
     SymbolTextDistance: scala.Double,
     VertOrient: scala.Double
   ): NumberingLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Adjust")(Adjust)
-    __obj.updateDynamic("BulletChar")(BulletChar)
-    __obj.updateDynamic("BulletColor")(BulletColor)
-    __obj.updateDynamic("BulletFont")(BulletFont)
-    __obj.updateDynamic("BulletFontName")(BulletFontName)
-    __obj.updateDynamic("BulletId")(BulletId)
-    __obj.updateDynamic("BulletRelSize")(BulletRelSize)
-    __obj.updateDynamic("CharStyleName")(CharStyleName)
-    __obj.updateDynamic("FirstLineIndent")(FirstLineIndent)
-    __obj.updateDynamic("FirstLineOffset")(FirstLineOffset)
-    __obj.updateDynamic("GraphicBitmap")(GraphicBitmap)
-    __obj.updateDynamic("GraphicSize")(GraphicSize)
-    __obj.updateDynamic("GraphicURL")(GraphicURL)
-    __obj.updateDynamic("HeadingStyleName")(HeadingStyleName)
-    __obj.updateDynamic("IndentAt")(IndentAt)
-    __obj.updateDynamic("LabelFollowedBy")(LabelFollowedBy)
-    __obj.updateDynamic("LeftMargin")(LeftMargin)
-    __obj.updateDynamic("ListtabStopPosition")(ListtabStopPosition)
-    __obj.updateDynamic("NumberingType")(NumberingType)
-    __obj.updateDynamic("ParagraphStyleName")(ParagraphStyleName)
-    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
-    __obj.updateDynamic("PositionAndSpaceMode")(PositionAndSpaceMode)
-    __obj.updateDynamic("Prefix")(Prefix)
-    __obj.updateDynamic("StartWith")(StartWith)
-    __obj.updateDynamic("Suffix")(Suffix)
-    __obj.updateDynamic("SymbolTextDistance")(SymbolTextDistance)
-    __obj.updateDynamic("VertOrient")(VertOrient)
+    val __obj = js.Dynamic.literal(Adjust = Adjust, BulletChar = BulletChar, BulletColor = BulletColor, BulletFont = BulletFont, BulletFontName = BulletFontName, BulletId = BulletId, BulletRelSize = BulletRelSize, CharStyleName = CharStyleName, FirstLineIndent = FirstLineIndent, FirstLineOffset = FirstLineOffset, GraphicBitmap = GraphicBitmap, GraphicSize = GraphicSize, GraphicURL = GraphicURL, HeadingStyleName = HeadingStyleName, IndentAt = IndentAt, LabelFollowedBy = LabelFollowedBy, LeftMargin = LeftMargin, ListtabStopPosition = ListtabStopPosition, NumberingType = NumberingType, ParagraphStyleName = ParagraphStyleName, ParentNumbering = ParentNumbering, PositionAndSpaceMode = PositionAndSpaceMode, Prefix = Prefix, StartWith = StartWith, Suffix = Suffix, SymbolTextDistance = SymbolTextDistance, VertOrient = VertOrient)
+  
     __obj.asInstanceOf[NumberingLevel]
   }
 }

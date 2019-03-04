@@ -49,18 +49,12 @@ object Anon_110 {
     SELECT: athenajsLib.athenajsLibNumbers.`8`,
     START: athenajsLib.athenajsLibNumbers.`9`
   ): Anon_110 = {
-    val __obj = js.Dynamic.literal(`32` = `32`, `37` = `37`, `38` = `38`, `39` = `39`, `40` = `40`)
-    __obj.updateDynamic("FACE_0")(FACE_0)
-    __obj.updateDynamic("FACE_3")(FACE_3)
-    __obj.updateDynamic("FACE_4")(FACE_4)
-    __obj.updateDynamic("LEFT_ANALOGUE_STICK")(LEFT_ANALOGUE_STICK)
-    __obj.updateDynamic("LEFT_SHOULDER")(LEFT_SHOULDER)
-    __obj.updateDynamic("LEFT_SHOULDER_BOTTOM")(LEFT_SHOULDER_BOTTOM)
-    __obj.updateDynamic("RIGHT_ANALOGUE_STICK")(RIGHT_ANALOGUE_STICK)
-    __obj.updateDynamic("RIGHT_SHOULDER")(RIGHT_SHOULDER)
-    __obj.updateDynamic("RIGHT_SHOULDER_BOTTOM")(RIGHT_SHOULDER_BOTTOM)
-    __obj.updateDynamic("SELECT")(SELECT)
-    __obj.updateDynamic("START")(START)
+    val __obj = js.Dynamic.literal(FACE_0 = FACE_0, FACE_3 = FACE_3, FACE_4 = FACE_4, LEFT_ANALOGUE_STICK = LEFT_ANALOGUE_STICK, LEFT_SHOULDER = LEFT_SHOULDER, LEFT_SHOULDER_BOTTOM = LEFT_SHOULDER_BOTTOM, RIGHT_ANALOGUE_STICK = RIGHT_ANALOGUE_STICK, RIGHT_SHOULDER = RIGHT_SHOULDER, RIGHT_SHOULDER_BOTTOM = RIGHT_SHOULDER_BOTTOM, SELECT = SELECT, START = START)
+    __obj.updateDynamic("32")(`32`)
+    __obj.updateDynamic("37")(`37`)
+    __obj.updateDynamic("38")(`38`)
+    __obj.updateDynamic("39")(`39`)
+    __obj.updateDynamic("40")(`40`)
     __obj.asInstanceOf[Anon_110]
   }
 }

@@ -17,11 +17,8 @@ object IShareTargetActivatedEventArgs {
     shareOperation: winrtLib.WindowsNs.ApplicationModelNs.DataTransferNs.ShareTargetNs.ShareOperation,
     splashScreen: SplashScreen
   ): IShareTargetActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("shareOperation")(shareOperation)
-    __obj.updateDynamic("splashScreen")(splashScreen)
+    val __obj = js.Dynamic.literal(kind = kind, previousExecutionState = previousExecutionState, shareOperation = shareOperation, splashScreen = splashScreen)
+  
     __obj.asInstanceOf[IShareTargetActivatedEventArgs]
   }
 }

@@ -18,8 +18,8 @@ object AccountsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Account]
     ]
   ): AccountsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
+    val __obj = js.Dynamic.literal(insert = insert)
+  
     __obj.asInstanceOf[AccountsResource]
   }
 }

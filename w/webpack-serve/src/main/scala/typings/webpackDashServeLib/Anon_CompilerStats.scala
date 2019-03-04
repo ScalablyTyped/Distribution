@@ -13,9 +13,8 @@ trait Anon_CompilerStats extends js.Object {
 object Anon_CompilerStats {
   @scala.inline
   def apply(compiler: webpackLib.webpackMod.Compiler, stats: webpackLib.webpackMod.Stats): Anon_CompilerStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("stats")(stats)
+    val __obj = js.Dynamic.literal(compiler = compiler, stats = stats)
+  
     __obj.asInstanceOf[Anon_CompilerStats]
   }
 }

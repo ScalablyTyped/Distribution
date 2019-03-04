@@ -13,9 +13,8 @@ trait Data extends js.Object {
 object Data {
   @scala.inline
   def apply(data: js.Any, meta: npmDashRegistryDashPackageDashInfoLib.Anon_Failure): Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("meta")(meta)
+    val __obj = js.Dynamic.literal(data = data, meta = meta)
+  
     __obj.asInstanceOf[Data]
   }
 }

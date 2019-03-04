@@ -20,11 +20,8 @@ object Params {
     g: bignumLib.bignumMod.namespaced,
     hash: java.lang.String
   ): Params = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("N")(N)
-    __obj.updateDynamic("N_length_bits")(N_length_bits)
-    __obj.updateDynamic("g")(g)
-    __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(N = N, N_length_bits = N_length_bits, g = g, hash = hash)
+  
     __obj.asInstanceOf[Params]
   }
 }

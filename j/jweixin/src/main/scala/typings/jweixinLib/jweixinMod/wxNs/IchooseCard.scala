@@ -39,15 +39,7 @@ object IchooseCard {
     complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IchooseCard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cardId")(cardId)
-    __obj.updateDynamic("cardSign")(cardSign)
-    __obj.updateDynamic("cardType")(cardType)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("shopId")(shopId)
-    __obj.updateDynamic("signType")(signType)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(cardId = cardId, cardSign = cardSign, cardType = cardType, nonceStr = nonceStr, shopId = shopId, signType = signType, success = success, timestamp = timestamp)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[IchooseCard]

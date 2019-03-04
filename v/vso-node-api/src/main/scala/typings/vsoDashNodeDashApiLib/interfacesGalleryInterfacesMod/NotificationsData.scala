@@ -27,9 +27,8 @@ object NotificationsData {
     identities: org.scalablytyped.runtime.StringDictionary[js.Any],
     `type`: NotificationTemplateType
   ): NotificationsData = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("identities")(identities)
+    val __obj = js.Dynamic.literal(data = data, identities = identities)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[NotificationsData]
   }
 }

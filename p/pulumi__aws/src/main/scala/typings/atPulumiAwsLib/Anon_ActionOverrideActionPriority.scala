@@ -22,9 +22,7 @@ object Anon_ActionOverrideActionPriority {
     overrideAction: atPulumiPulumiLib.outputMod.Input[Anon_TypeInput] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ActionOverrideActionPriority = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (overrideAction != null) __obj.updateDynamic("overrideAction")(overrideAction.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

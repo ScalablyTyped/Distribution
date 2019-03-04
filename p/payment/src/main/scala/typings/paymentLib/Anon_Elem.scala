@@ -44,12 +44,8 @@ object Anon_Elem {
     formatCardNumber: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement],
     restrictNumeric: js.Function1[stdLib.HTMLInputElement, stdLib.HTMLInputElement]
   ): Anon_Elem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fns")(fns)
-    __obj.updateDynamic("formatCardCVC")(formatCardCVC)
-    __obj.updateDynamic("formatCardExpiry")(formatCardExpiry)
-    __obj.updateDynamic("formatCardNumber")(formatCardNumber)
-    __obj.updateDynamic("restrictNumeric")(restrictNumeric)
+    val __obj = js.Dynamic.literal(fns = fns, formatCardCVC = formatCardCVC, formatCardExpiry = formatCardExpiry, formatCardNumber = formatCardNumber, restrictNumeric = restrictNumeric)
+  
     __obj.asInstanceOf[Anon_Elem]
   }
 }

@@ -200,24 +200,8 @@ object XDocumentMetadataAccess {
     ],
     storeMetadataToStorage: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, scala.Unit]
   ): XDocumentMetadataAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LocalName")(LocalName)
-    __obj.updateDynamic("Namespace")(Namespace)
-    __obj.updateDynamic("RDFRepository")(RDFRepository)
-    __obj.updateDynamic("StringValue")(StringValue)
-    __obj.updateDynamic("addContentOrStylesFile")(addContentOrStylesFile)
-    __obj.updateDynamic("addMetadataFile")(addMetadataFile)
-    __obj.updateDynamic("getElementByMetadataReference")(getElementByMetadataReference)
-    __obj.updateDynamic("getElementByURI")(getElementByURI)
-    __obj.updateDynamic("getMetadataGraphsWithType")(getMetadataGraphsWithType)
-    __obj.updateDynamic("getRDFRepository")(getRDFRepository)
-    __obj.updateDynamic("importMetadataFile")(importMetadataFile)
-    __obj.updateDynamic("loadMetadataFromMedium")(loadMetadataFromMedium)
-    __obj.updateDynamic("loadMetadataFromStorage")(loadMetadataFromStorage)
-    __obj.updateDynamic("removeContentOrStylesFile")(removeContentOrStylesFile)
-    __obj.updateDynamic("removeMetadataFile")(removeMetadataFile)
-    __obj.updateDynamic("storeMetadataToMedium")(storeMetadataToMedium)
-    __obj.updateDynamic("storeMetadataToStorage")(storeMetadataToStorage)
+    val __obj = js.Dynamic.literal(LocalName = LocalName, Namespace = Namespace, RDFRepository = RDFRepository, StringValue = StringValue, addContentOrStylesFile = addContentOrStylesFile, addMetadataFile = addMetadataFile, getElementByMetadataReference = getElementByMetadataReference, getElementByURI = getElementByURI, getMetadataGraphsWithType = getMetadataGraphsWithType, getRDFRepository = getRDFRepository, importMetadataFile = importMetadataFile, loadMetadataFromMedium = loadMetadataFromMedium, loadMetadataFromStorage = loadMetadataFromStorage, removeContentOrStylesFile = removeContentOrStylesFile, removeMetadataFile = removeMetadataFile, storeMetadataToMedium = storeMetadataToMedium, storeMetadataToStorage = storeMetadataToStorage)
+  
     __obj.asInstanceOf[XDocumentMetadataAccess]
   }
 }

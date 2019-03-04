@@ -12,8 +12,8 @@ trait Gamepad extends js.Object {
 object Gamepad {
   @scala.inline
   def apply(displayId: scala.Double): Gamepad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayId")(displayId)
+    val __obj = js.Dynamic.literal(displayId = displayId)
+  
     __obj.asInstanceOf[Gamepad]
   }
 }

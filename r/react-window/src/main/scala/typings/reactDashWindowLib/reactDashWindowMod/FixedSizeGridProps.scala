@@ -45,14 +45,7 @@ object FixedSizeGridProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     useIsScrolling: js.UndefOr[scala.Boolean] = js.undefined
   ): FixedSizeGridProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("columnCount")(columnCount)
-    __obj.updateDynamic("columnWidth")(columnWidth)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("rowCount")(rowCount)
-    __obj.updateDynamic("rowHeight")(rowHeight)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = columnWidth, height = height, rowCount = rowCount, rowHeight = rowHeight, width = width)
     if (className != null) __obj.updateDynamic("className")(className)
     if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])
     if (initialScrollTop != null) __obj.updateDynamic("initialScrollTop")(initialScrollTop.asInstanceOf[js.Any])

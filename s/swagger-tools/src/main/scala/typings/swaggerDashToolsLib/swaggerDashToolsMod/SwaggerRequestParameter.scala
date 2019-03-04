@@ -15,11 +15,8 @@ trait SwaggerRequestParameter[T] extends js.Object {
 object SwaggerRequestParameter {
   @scala.inline
   def apply[T](originalValue: js.Any, path: js.Array[java.lang.String], schema: SwaggerParameterSchema, value: T): SwaggerRequestParameter[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("originalValue")(originalValue)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(originalValue = originalValue, path = path, schema = schema, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SwaggerRequestParameter[T]]
   }
 }

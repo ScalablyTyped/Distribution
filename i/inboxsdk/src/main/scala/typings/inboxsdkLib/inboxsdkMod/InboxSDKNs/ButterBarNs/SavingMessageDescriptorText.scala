@@ -25,8 +25,7 @@ object SavingMessageDescriptorText {
     showConfirmation: js.UndefOr[scala.Boolean] = js.undefined,
     time: scala.Int | scala.Double = null
   ): SavingMessageDescriptorText = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(text = text)
     if (className != null) __obj.updateDynamic("className")(className)
     if (confirmationText != null) __obj.updateDynamic("confirmationText")(confirmationText)
     if (confirmationTime != null) __obj.updateDynamic("confirmationTime")(confirmationTime.asInstanceOf[js.Any])

@@ -20,9 +20,8 @@ object MeshPrimitive {
     `type`: scala.Double,
     indexed: js.UndefOr[scala.Boolean] = js.undefined
   ): MeshPrimitive = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("count")(count)
+    val __obj = js.Dynamic.literal(base = base, count = count)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed)
     __obj.asInstanceOf[MeshPrimitive]
   }

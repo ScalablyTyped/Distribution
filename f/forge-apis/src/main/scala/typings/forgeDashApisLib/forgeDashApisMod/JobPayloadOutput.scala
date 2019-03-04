@@ -12,8 +12,8 @@ trait JobPayloadOutput extends js.Object {
 object JobPayloadOutput {
   @scala.inline
   def apply(formats: js.Array[JobPayloadItem]): JobPayloadOutput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formats")(formats)
+    val __obj = js.Dynamic.literal(formats = formats)
+  
     __obj.asInstanceOf[JobPayloadOutput]
   }
 }

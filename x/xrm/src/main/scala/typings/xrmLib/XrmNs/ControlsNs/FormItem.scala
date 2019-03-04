@@ -32,10 +32,8 @@ object FormItem {
     getLabel: js.Function0[java.lang.String],
     navigate: js.Function0[scala.Unit]
   ): FormItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("navigate")(navigate)
+    val __obj = js.Dynamic.literal(getId = getId, getLabel = getLabel, navigate = navigate)
+  
     __obj.asInstanceOf[FormItem]
   }
 }

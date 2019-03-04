@@ -13,9 +13,8 @@ trait EitherPatterns[L, R, T] extends js.Object {
 object EitherPatterns {
   @scala.inline
   def apply[L, R, T](left: js.Function1[L, T], right: js.Function1[R, T]): EitherPatterns[L, R, T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, right = right)
+  
     __obj.asInstanceOf[EitherPatterns[L, R, T]]
   }
 }

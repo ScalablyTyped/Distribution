@@ -39,8 +39,7 @@ object Anon_AltFieldsKeyOauthtoken {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtoken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("savedAdStyleId")(savedAdStyleId)
+    val __obj = js.Dynamic.literal(savedAdStyleId = savedAdStyleId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

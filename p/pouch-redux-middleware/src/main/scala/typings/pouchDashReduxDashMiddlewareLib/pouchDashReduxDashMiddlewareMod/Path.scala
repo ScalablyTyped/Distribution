@@ -52,10 +52,7 @@ object Path {
     scheduleInset: js.Function1[/* doc */ Document, scala.Unit] = null,
     scheduleRemove: js.Function1[/* doc */ Document, scala.Unit] = null
   ): Path = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("db")(db)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(actions = actions, db = db, path = path)
     if (docs != null) __obj.updateDynamic("docs")(docs)
     if (handleResponse != null) __obj.updateDynamic("handleResponse")(handleResponse)
     if (propagateDelete != null) __obj.updateDynamic("propagateDelete")(propagateDelete)

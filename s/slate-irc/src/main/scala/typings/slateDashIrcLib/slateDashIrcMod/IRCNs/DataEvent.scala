@@ -22,12 +22,8 @@ object DataEvent {
     string: java.lang.String,
     trailing: java.lang.String
   ): DataEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("string")(string)
-    __obj.updateDynamic("trailing")(trailing)
+    val __obj = js.Dynamic.literal(command = command, params = params, prefix = prefix, string = string, trailing = trailing)
+  
     __obj.asInstanceOf[DataEvent]
   }
 }

@@ -18,8 +18,8 @@ trait AndroidApi extends js.Object {
 object AndroidApi {
   @scala.inline
   def apply(actionViewIntent: js.Function2[java.lang.String, java.lang.String, js.Promise[_]]): AndroidApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionViewIntent")(actionViewIntent)
+    val __obj = js.Dynamic.literal(actionViewIntent = actionViewIntent)
+  
     __obj.asInstanceOf[AndroidApi]
   }
 }

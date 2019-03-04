@@ -86,10 +86,7 @@ object Anon_AltFieldsFilter {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(instance = instance, project = project, zone = zone)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (filter != null) __obj.updateDynamic("filter")(filter)

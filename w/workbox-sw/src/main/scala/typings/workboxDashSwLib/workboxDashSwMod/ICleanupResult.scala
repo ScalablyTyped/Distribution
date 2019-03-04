@@ -25,9 +25,8 @@ object ICleanupResult {
     deletedCacheRequests: js.Array[java.lang.String],
     deletedRevisionDetails: js.Array[java.lang.String]
   ): ICleanupResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deletedCacheRequests")(deletedCacheRequests)
-    __obj.updateDynamic("deletedRevisionDetails")(deletedRevisionDetails)
+    val __obj = js.Dynamic.literal(deletedCacheRequests = deletedCacheRequests, deletedRevisionDetails = deletedRevisionDetails)
+  
     __obj.asInstanceOf[ICleanupResult]
   }
 }

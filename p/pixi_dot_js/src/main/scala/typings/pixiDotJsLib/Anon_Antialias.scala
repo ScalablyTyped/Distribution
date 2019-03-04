@@ -36,18 +36,7 @@ object Anon_Antialias {
     width: scala.Double,
     view: stdLib.HTMLCanvasElement = null
   ): Anon_Antialias = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antialias")(antialias)
-    __obj.updateDynamic("autoResize")(autoResize)
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("clearBeforeRender")(clearBeforeRender)
-    __obj.updateDynamic("forceFXAA")(forceFXAA)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("legacy")(legacy)
-    __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
-    __obj.updateDynamic("roundPixels")(roundPixels)
-    __obj.updateDynamic("transparent")(transparent)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(antialias = antialias, autoResize = autoResize, backgroundColor = backgroundColor, clearBeforeRender = clearBeforeRender, forceFXAA = forceFXAA, height = height, legacy = legacy, preserveDrawingBuffer = preserveDrawingBuffer, roundPixels = roundPixels, transparent = transparent, width = width)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[Anon_Antialias]
   }

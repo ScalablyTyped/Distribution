@@ -36,13 +36,8 @@ object XGrid {
     release: js.Function0[scala.Unit],
     setCurrentColumnPosition: js.Function1[scala.Double, scala.Unit]
   ): XGrid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentColumnPosition")(CurrentColumnPosition)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCurrentColumnPosition")(getCurrentColumnPosition)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentColumnPosition")(setCurrentColumnPosition)
+    val __obj = js.Dynamic.literal(CurrentColumnPosition = CurrentColumnPosition, acquire = acquire, getCurrentColumnPosition = getCurrentColumnPosition, queryInterface = queryInterface, release = release, setCurrentColumnPosition = setCurrentColumnPosition)
+  
     __obj.asInstanceOf[XGrid]
   }
 }

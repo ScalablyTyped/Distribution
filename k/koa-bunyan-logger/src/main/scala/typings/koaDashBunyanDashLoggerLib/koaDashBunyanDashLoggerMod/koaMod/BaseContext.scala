@@ -13,8 +13,8 @@ trait BaseContext extends js.Object {
 object BaseContext {
   @scala.inline
   def apply(log: bunyanLib.bunyanMod.namespaced): BaseContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(log = log)
+  
     __obj.asInstanceOf[BaseContext]
   }
 }

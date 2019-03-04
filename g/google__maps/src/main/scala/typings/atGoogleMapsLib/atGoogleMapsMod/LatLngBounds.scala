@@ -13,9 +13,8 @@ trait LatLngBounds extends js.Object {
 object LatLngBounds {
   @scala.inline
   def apply(northeast: LatLngLiteral, southwest: LatLngLiteral): LatLngBounds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("northeast")(northeast)
-    __obj.updateDynamic("southwest")(southwest)
+    val __obj = js.Dynamic.literal(northeast = northeast, southwest = southwest)
+  
     __obj.asInstanceOf[LatLngBounds]
   }
 }

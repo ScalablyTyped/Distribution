@@ -26,14 +26,8 @@ object Image {
     tabs: ImageTabs,
     width: scala.Double
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ctype")(ctype)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("frames")(frames)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("tabs")(tabs)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(ctype = ctype, data = data, depth = depth, frames = frames, height = height, tabs = tabs, width = width)
+  
     __obj.asInstanceOf[Image]
   }
 }

@@ -13,8 +13,8 @@ trait strings
 object strings {
   @scala.inline
   def apply(ARIA_SELECTED: atMaterialTabLib.atMaterialTabLibStrings.`aria-selected`): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARIA_SELECTED")(ARIA_SELECTED)
+    val __obj = js.Dynamic.literal(ARIA_SELECTED = ARIA_SELECTED)
+  
     __obj.asInstanceOf[strings]
   }
 }

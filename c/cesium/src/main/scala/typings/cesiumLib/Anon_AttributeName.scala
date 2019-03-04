@@ -22,8 +22,7 @@ object Anon_AttributeName {
     renderState: cesiumLib.cesiumMod.CesiumNs.RenderState = null,
     vertexShaderSource: java.lang.String = null
   ): Anon_AttributeName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributeName")(attributeName)
+    val __obj = js.Dynamic.literal(attributeName = attributeName)
     if (fragmentShaderSource != null) __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
     if (glslDatatype != null) __obj.updateDynamic("glslDatatype")(glslDatatype)
     if (renderState != null) __obj.updateDynamic("renderState")(renderState)

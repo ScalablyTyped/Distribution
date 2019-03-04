@@ -54,11 +54,8 @@ object ParagraphInfo {
     listType: ListType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bullet,
     numberType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 63 */ js.Any
   ): ParagraphInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bulletType")(bulletType)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
-    __obj.updateDynamic("numberType")(numberType)
+    val __obj = js.Dynamic.literal(bulletType = bulletType, index = index, listType = listType.asInstanceOf[js.Any], numberType = numberType)
+  
     __obj.asInstanceOf[ParagraphInfo]
   }
 }

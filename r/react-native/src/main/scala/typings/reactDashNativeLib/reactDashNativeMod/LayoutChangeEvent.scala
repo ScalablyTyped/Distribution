@@ -12,8 +12,8 @@ trait LayoutChangeEvent extends js.Object {
 object LayoutChangeEvent {
   @scala.inline
   def apply(nativeEvent: reactDashNativeLib.Anon_Layout): LayoutChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
     __obj.asInstanceOf[LayoutChangeEvent]
   }
 }

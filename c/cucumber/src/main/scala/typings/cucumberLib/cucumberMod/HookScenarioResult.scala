@@ -18,10 +18,8 @@ object HookScenarioResult {
     result: ScenarioResult,
     sourceLocation: SourceLocation
   ): HookScenarioResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pickle")(pickle)
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("sourceLocation")(sourceLocation)
+    val __obj = js.Dynamic.literal(pickle = pickle, result = result, sourceLocation = sourceLocation)
+  
     __obj.asInstanceOf[HookScenarioResult]
   }
 }

@@ -24,16 +24,8 @@ object ContextualBufferScanResult {
     stopped: scala.Boolean,
     trailingContextLines: js.Array[java.lang.String]
   ): ContextualBufferScanResult = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("leadingContextLines")(leadingContextLines)
-    __obj.updateDynamic("lineText")(lineText)
-    __obj.updateDynamic("matchText")(matchText)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("stop")(stop)
-    __obj.updateDynamic("stopped")(stopped)
-    __obj.updateDynamic("trailingContextLines")(trailingContextLines)
+    val __obj = js.Dynamic.literal(buffer = buffer, leadingContextLines = leadingContextLines, lineText = lineText, matchText = matchText, range = range, replace = replace, stop = stop, stopped = stopped, trailingContextLines = trailingContextLines)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[ContextualBufferScanResult]
   }
 }

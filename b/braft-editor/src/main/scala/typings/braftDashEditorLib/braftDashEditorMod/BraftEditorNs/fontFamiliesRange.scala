@@ -13,9 +13,8 @@ trait fontFamiliesRange extends js.Object {
 object fontFamiliesRange {
   @scala.inline
   def apply(family: java.lang.String, name: java.lang.String): fontFamiliesRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(family = family, name = name)
+  
     __obj.asInstanceOf[fontFamiliesRange]
   }
 }

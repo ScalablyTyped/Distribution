@@ -28,11 +28,8 @@ object Erd {
     ],
     uninstall: js.Function1[stdLib.HTMLElement, scala.Unit]
   ): Erd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listenTo")(listenTo)
-    __obj.updateDynamic("removeAllListeners")(removeAllListeners)
-    __obj.updateDynamic("removeListener")(removeListener)
-    __obj.updateDynamic("uninstall")(uninstall)
+    val __obj = js.Dynamic.literal(listenTo = listenTo, removeAllListeners = removeAllListeners, removeListener = removeListener, uninstall = uninstall)
+  
     __obj.asInstanceOf[Erd]
   }
 }

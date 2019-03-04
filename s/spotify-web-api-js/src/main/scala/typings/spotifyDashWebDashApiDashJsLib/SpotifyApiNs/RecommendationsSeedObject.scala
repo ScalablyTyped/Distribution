@@ -28,12 +28,8 @@ object RecommendationsSeedObject {
     initialPoolSize: scala.Double,
     `type`: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.genre
   ): RecommendationsSeedObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("afterFilteringSize")(afterFilteringSize)
-    __obj.updateDynamic("afterRelinkingSize")(afterRelinkingSize)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("initialPoolSize")(initialPoolSize)
+    val __obj = js.Dynamic.literal(afterFilteringSize = afterFilteringSize, afterRelinkingSize = afterRelinkingSize, href = href, id = id, initialPoolSize = initialPoolSize)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationsSeedObject]
   }
 }

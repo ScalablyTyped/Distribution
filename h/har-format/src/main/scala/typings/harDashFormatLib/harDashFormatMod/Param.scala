@@ -27,8 +27,7 @@ object Param {
     fileName: java.lang.String = null,
     value: java.lang.String = null
   ): Param = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (fileName != null) __obj.updateDynamic("fileName")(fileName)

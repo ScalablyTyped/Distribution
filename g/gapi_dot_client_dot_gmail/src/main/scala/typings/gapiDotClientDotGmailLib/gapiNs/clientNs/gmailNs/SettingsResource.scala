@@ -70,18 +70,8 @@ object SettingsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[VacationSettings]
     ]
   ): SettingsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
-    __obj.updateDynamic("forwardingAddresses")(forwardingAddresses)
-    __obj.updateDynamic("getAutoForwarding")(getAutoForwarding)
-    __obj.updateDynamic("getImap")(getImap)
-    __obj.updateDynamic("getPop")(getPop)
-    __obj.updateDynamic("getVacation")(getVacation)
-    __obj.updateDynamic("sendAs")(sendAs)
-    __obj.updateDynamic("updateAutoForwarding")(updateAutoForwarding)
-    __obj.updateDynamic("updateImap")(updateImap)
-    __obj.updateDynamic("updatePop")(updatePop)
-    __obj.updateDynamic("updateVacation")(updateVacation)
+    val __obj = js.Dynamic.literal(filters = filters, forwardingAddresses = forwardingAddresses, getAutoForwarding = getAutoForwarding, getImap = getImap, getPop = getPop, getVacation = getVacation, sendAs = sendAs, updateAutoForwarding = updateAutoForwarding, updateImap = updateImap, updatePop = updatePop, updateVacation = updateVacation)
+  
     __obj.asInstanceOf[SettingsResource]
   }
 }

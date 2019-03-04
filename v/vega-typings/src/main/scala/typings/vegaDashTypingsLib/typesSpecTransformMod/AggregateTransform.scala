@@ -38,7 +38,8 @@ object AggregateTransform {
     ops: (js.Array[AggregateOp | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     signal: java.lang.String = null
   ): AggregateTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (cross != null) __obj.updateDynamic("cross")(cross.asInstanceOf[js.Any])
     if (drop != null) __obj.updateDynamic("drop")(drop.asInstanceOf[js.Any])

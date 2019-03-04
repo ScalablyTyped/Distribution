@@ -24,12 +24,8 @@ object XValidityConstraintListener {
     release: js.Function0[scala.Unit],
     validityConstraintChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit]
   ): XValidityConstraintListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("validityConstraintChanged")(validityConstraintChanged)
+    val __obj = js.Dynamic.literal(acquire = acquire, disposing = disposing, queryInterface = queryInterface, release = release, validityConstraintChanged = validityConstraintChanged)
+  
     __obj.asInstanceOf[XValidityConstraintListener]
   }
 }

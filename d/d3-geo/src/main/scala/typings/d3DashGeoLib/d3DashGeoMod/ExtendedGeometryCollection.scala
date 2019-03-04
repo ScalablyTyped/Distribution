@@ -20,8 +20,8 @@ object ExtendedGeometryCollection {
     bbox: js.Array[scala.Double] = null,
     crs: d3DashGeoLib.Anon_Properties = null
   ): ExtendedGeometryCollection[GeometryType] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geometries")(geometries)
+    val __obj = js.Dynamic.literal(geometries = geometries)
+    __obj.updateDynamic("type")(`type`)
     if (bbox != null) __obj.updateDynamic("bbox")(bbox)
     if (crs != null) __obj.updateDynamic("crs")(crs)
     __obj.asInstanceOf[ExtendedGeometryCollection[GeometryType]]

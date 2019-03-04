@@ -34,18 +34,8 @@ object ServiceEndpointType {
     inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
     name: java.lang.String
   ): ServiceEndpointType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticationSchemes")(authenticationSchemes)
-    __obj.updateDynamic("dataSources")(dataSources)
-    __obj.updateDynamic("dependencyData")(dependencyData)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("endpointUrl")(endpointUrl)
-    __obj.updateDynamic("helpLink")(helpLink)
-    __obj.updateDynamic("helpMarkDown")(helpMarkDown)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(authenticationSchemes = authenticationSchemes, dataSources = dataSources, dependencyData = dependencyData, description = description, displayName = displayName, endpointUrl = endpointUrl, helpLink = helpLink, helpMarkDown = helpMarkDown, iconUrl = iconUrl, inputDescriptors = inputDescriptors, name = name)
+  
     __obj.asInstanceOf[ServiceEndpointType]
   }
 }

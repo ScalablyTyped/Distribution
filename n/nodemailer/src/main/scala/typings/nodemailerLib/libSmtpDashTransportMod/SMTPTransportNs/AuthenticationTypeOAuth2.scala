@@ -20,10 +20,8 @@ object AuthenticationTypeOAuth2 {
     `type`: nodemailerLib.nodemailerLibStrings.OAUTH2,
     user: java.lang.String
   ): AuthenticationTypeOAuth2 = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("oauth2")(oauth2)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(method = method, oauth2 = oauth2, user = user)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AuthenticationTypeOAuth2]
   }
 }

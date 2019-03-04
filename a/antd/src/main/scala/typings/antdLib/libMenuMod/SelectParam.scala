@@ -22,12 +22,8 @@ object SelectParam {
     keyPath: js.Array[java.lang.String],
     selectedKeys: js.Array[java.lang.String]
   ): SelectParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domEvent")(domEvent)
-    __obj.updateDynamic("item")(item)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyPath")(keyPath)
-    __obj.updateDynamic("selectedKeys")(selectedKeys)
+    val __obj = js.Dynamic.literal(domEvent = domEvent, item = item, key = key, keyPath = keyPath, selectedKeys = selectedKeys)
+  
     __obj.asInstanceOf[SelectParam]
   }
 }

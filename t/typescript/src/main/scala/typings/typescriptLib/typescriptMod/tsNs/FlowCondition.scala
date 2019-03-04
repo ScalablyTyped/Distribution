@@ -20,10 +20,7 @@ object FlowCondition {
     flags: FlowFlags,
     id: scala.Int | scala.Double = null
   ): FlowCondition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("antecedent")(antecedent)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("flags")(flags)
+    val __obj = js.Dynamic.literal(antecedent = antecedent, expression = expression, flags = flags)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowCondition]
   }

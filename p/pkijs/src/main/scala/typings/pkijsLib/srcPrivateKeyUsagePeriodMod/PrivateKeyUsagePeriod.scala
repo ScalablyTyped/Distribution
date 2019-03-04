@@ -22,10 +22,7 @@ object PrivateKeyUsagePeriod {
     notAfter: stdLib.Date = null,
     notBefore: stdLib.Date = null
   ): PrivateKeyUsagePeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
     if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter)
     if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore)
     __obj.asInstanceOf[PrivateKeyUsagePeriod]

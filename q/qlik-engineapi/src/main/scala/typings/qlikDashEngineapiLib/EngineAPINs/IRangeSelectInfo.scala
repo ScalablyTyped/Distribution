@@ -23,8 +23,8 @@ trait IRangeSelectInfo extends js.Object {
 object IRangeSelectInfo {
   @scala.inline
   def apply(qRange: IRange): IRangeSelectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qRange")(qRange)
+    val __obj = js.Dynamic.literal(qRange = qRange)
+  
     __obj.asInstanceOf[IRangeSelectInfo]
   }
 }

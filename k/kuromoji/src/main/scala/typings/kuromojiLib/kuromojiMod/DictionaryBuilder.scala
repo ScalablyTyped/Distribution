@@ -34,18 +34,8 @@ object DictionaryBuilder {
     unkDef: js.Function1[java.lang.String, DictionaryBuilder],
     unk_entries: js.Array[java.lang.String]
   ): DictionaryBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTokenInfoDictionary")(addTokenInfoDictionary)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("buildConnectionCosts")(buildConnectionCosts)
-    __obj.updateDynamic("buildDoubleArray")(buildDoubleArray)
-    __obj.updateDynamic("buildTokenInfoDictionary")(buildTokenInfoDictionary)
-    __obj.updateDynamic("buildUnknownDictionary")(buildUnknownDictionary)
-    __obj.updateDynamic("charDef")(charDef)
-    __obj.updateDynamic("costMatrix")(costMatrix)
-    __obj.updateDynamic("tid_entries")(tid_entries)
-    __obj.updateDynamic("unkDef")(unkDef)
-    __obj.updateDynamic("unk_entries")(unk_entries)
+    val __obj = js.Dynamic.literal(addTokenInfoDictionary = addTokenInfoDictionary, build = build, buildConnectionCosts = buildConnectionCosts, buildDoubleArray = buildDoubleArray, buildTokenInfoDictionary = buildTokenInfoDictionary, buildUnknownDictionary = buildUnknownDictionary, charDef = charDef, costMatrix = costMatrix, tid_entries = tid_entries, unkDef = unkDef, unk_entries = unk_entries)
+  
     __obj.asInstanceOf[DictionaryBuilder]
   }
 }

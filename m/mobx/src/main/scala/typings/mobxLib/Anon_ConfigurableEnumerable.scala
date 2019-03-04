@@ -24,11 +24,7 @@ object Anon_ConfigurableEnumerable {
     writable: scala.Boolean,
     value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_ConfigurableEnumerable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configurable")(configurable)
-    __obj.updateDynamic("enumerable")(enumerable)
-    __obj.updateDynamic("initializer")(initializer)
-    __obj.updateDynamic("writable")(writable)
+    val __obj = js.Dynamic.literal(configurable = configurable, enumerable = enumerable, initializer = initializer, writable = writable)
     if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_ConfigurableEnumerable]
   }

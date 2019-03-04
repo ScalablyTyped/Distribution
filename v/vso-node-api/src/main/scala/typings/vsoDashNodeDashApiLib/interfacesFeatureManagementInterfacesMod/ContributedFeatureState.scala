@@ -37,12 +37,8 @@ object ContributedFeatureState {
     scope: ContributedFeatureSettingScope,
     state: ContributedFeatureEnabledValue
   ): ContributedFeatureState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("featureId")(featureId)
-    __obj.updateDynamic("overridden")(overridden)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(featureId = featureId, overridden = overridden, reason = reason, scope = scope, state = state)
+  
     __obj.asInstanceOf[ContributedFeatureState]
   }
 }

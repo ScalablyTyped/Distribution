@@ -20,11 +20,8 @@ object SuiteCreateModel {
     requirementIds: js.Array[scala.Double],
     suiteType: java.lang.String
   ): SuiteCreateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("queryString")(queryString)
-    __obj.updateDynamic("requirementIds")(requirementIds)
-    __obj.updateDynamic("suiteType")(suiteType)
+    val __obj = js.Dynamic.literal(name = name, queryString = queryString, requirementIds = requirementIds, suiteType = suiteType)
+  
     __obj.asInstanceOf[SuiteCreateModel]
   }
 }

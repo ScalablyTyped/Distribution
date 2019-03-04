@@ -28,15 +28,8 @@ object SyslogConfigSetLevels {
     notice: scala.Double,
     warning: scala.Double
   ): SyslogConfigSetLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alert")(alert)
-    __obj.updateDynamic("crit")(crit)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("emerg")(emerg)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("notice")(notice)
-    __obj.updateDynamic("warning")(warning)
+    val __obj = js.Dynamic.literal(alert = alert, crit = crit, debug = debug, emerg = emerg, error = error, info = info, notice = notice, warning = warning)
+  
     __obj.asInstanceOf[SyslogConfigSetLevels]
   }
 }

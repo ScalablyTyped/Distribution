@@ -20,9 +20,7 @@ object Anon_Detail {
     detail: java.lang.String = null,
     statusCode: scala.Int | scala.Double = null
   ): Anon_Detail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("faultcode")(faultcode.asInstanceOf[js.Any])
-    __obj.updateDynamic("faultstring")(faultstring)
+    val __obj = js.Dynamic.literal(faultcode = faultcode.asInstanceOf[js.Any], faultstring = faultstring)
     if (detail != null) __obj.updateDynamic("detail")(detail)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Detail]

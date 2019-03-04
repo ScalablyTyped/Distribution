@@ -22,8 +22,8 @@ object CustomPropertyItems {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomPropertyItems = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+    __obj.updateDynamic("type")(`type`)
     if (label != null) __obj.updateDynamic("label")(label)
     if (ref != null) __obj.updateDynamic("ref")(ref)
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])

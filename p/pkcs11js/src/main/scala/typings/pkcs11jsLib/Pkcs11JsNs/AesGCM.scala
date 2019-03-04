@@ -21,9 +21,8 @@ object AesGCM {
     aad: nodeLib.Buffer = null,
     iv: nodeLib.Buffer = null
   ): AesGCM = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("ivBits")(ivBits)
-    __obj.updateDynamic("tagBits")(tagBits)
+    val __obj = js.Dynamic.literal(ivBits = ivBits, tagBits = tagBits)
+    __obj.updateDynamic("type")(`type`)
     if (aad != null) __obj.updateDynamic("aad")(aad)
     if (iv != null) __obj.updateDynamic("iv")(iv)
     __obj.asInstanceOf[AesGCM]

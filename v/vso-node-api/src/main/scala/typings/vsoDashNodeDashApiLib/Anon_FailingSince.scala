@@ -13,9 +13,8 @@ trait Anon_FailingSince extends js.Object {
 object Anon_FailingSince {
   @scala.inline
   def apply(failingSince: scala.Double, regular: scala.Double): Anon_FailingSince = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failingSince")(failingSince)
-    __obj.updateDynamic("regular")(regular)
+    val __obj = js.Dynamic.literal(failingSince = failingSince, regular = regular)
+  
     __obj.asInstanceOf[Anon_FailingSince]
   }
 }

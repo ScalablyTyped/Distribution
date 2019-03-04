@@ -13,9 +13,8 @@ trait Anon_Padding extends js.Object {
 object Anon_Padding {
   @scala.inline
   def apply(padding: js.Array[scala.Double], points: js.Array[wepyLib.wxUnderscoreEnhancedMod.LagLng]): Anon_Padding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("points")(points)
+    val __obj = js.Dynamic.literal(padding = padding, points = points)
+  
     __obj.asInstanceOf[Anon_Padding]
   }
 }

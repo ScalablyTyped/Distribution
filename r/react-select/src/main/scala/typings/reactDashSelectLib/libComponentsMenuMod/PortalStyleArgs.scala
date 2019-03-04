@@ -18,10 +18,8 @@ object PortalStyleArgs {
     position: reactDashSelectLib.libTypesMod.MenuPosition,
     rect: reactDashSelectLib.libUtilsMod.RectType
   ): PortalStyleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("rect")(rect)
+    val __obj = js.Dynamic.literal(offset = offset, position = position, rect = rect)
+  
     __obj.asInstanceOf[PortalStyleArgs]
   }
 }

@@ -34,15 +34,8 @@ object GitRepositoryRef {
     sshUrl: java.lang.String,
     url: java.lang.String
   ): GitRepositoryRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isFork")(isFork)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("remoteUrl")(remoteUrl)
-    __obj.updateDynamic("sshUrl")(sshUrl)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(collection = collection, id = id, isFork = isFork, name = name, project = project, remoteUrl = remoteUrl, sshUrl = sshUrl, url = url)
+  
     __obj.asInstanceOf[GitRepositoryRef]
   }
 }

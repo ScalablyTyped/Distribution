@@ -43,12 +43,8 @@ object XControlAccess {
     release: js.Function0[scala.Unit],
     setControlProperty: js.Function3[java.lang.String, java.lang.String, js.Any, scala.Unit]
   ): XControlAccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControlProperty")(getControlProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setControlProperty")(setControlProperty)
+    val __obj = js.Dynamic.literal(acquire = acquire, getControlProperty = getControlProperty, queryInterface = queryInterface, release = release, setControlProperty = setControlProperty)
+  
     __obj.asInstanceOf[XControlAccess]
   }
 }

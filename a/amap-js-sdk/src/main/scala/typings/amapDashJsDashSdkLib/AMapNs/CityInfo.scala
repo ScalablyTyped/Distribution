@@ -15,11 +15,8 @@ trait CityInfo extends js.Object {
 object CityInfo {
   @scala.inline
   def apply(adcode: java.lang.String, citycode: java.lang.String, count: scala.Double, name: java.lang.String): CityInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adcode")(adcode)
-    __obj.updateDynamic("citycode")(citycode)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(adcode = adcode, citycode = citycode, count = count, name = name)
+  
     __obj.asInstanceOf[CityInfo]
   }
 }

@@ -35,15 +35,8 @@ object XUIObject {
     getState: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
     getType: js.Function0[java.lang.String]
   ): XUIObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Children")(Children)
-    __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("executeAction")(executeAction)
-    __obj.updateDynamic("getChild")(getChild)
-    __obj.updateDynamic("getChildren")(getChildren)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(Children = Children, State = State.asInstanceOf[js.Any], Type = Type, executeAction = executeAction, getChild = getChild, getChildren = getChildren, getState = getState, getType = getType)
+  
     __obj.asInstanceOf[XUIObject]
   }
 }

@@ -20,11 +20,8 @@ object IImageDimensionParameter {
     windowHeight: scala.Double,
     windowWidth: scala.Double
   ): IImageDimensionParameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("imageHeight")(imageHeight)
-    __obj.updateDynamic("imageWidth")(imageWidth)
-    __obj.updateDynamic("windowHeight")(windowHeight)
-    __obj.updateDynamic("windowWidth")(windowWidth)
+    val __obj = js.Dynamic.literal(imageHeight = imageHeight, imageWidth = imageWidth, windowHeight = windowHeight, windowWidth = windowWidth)
+  
     __obj.asInstanceOf[IImageDimensionParameter]
   }
 }

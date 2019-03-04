@@ -26,8 +26,7 @@ object IStaticViewConfig {
       ]
     ]) = null
   ): IStaticViewConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticViewConfig]
   }

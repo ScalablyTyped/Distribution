@@ -23,11 +23,8 @@ object Snapshot {
     zone_data: js.Array[ZoneRecord],
     zone_uuid: java.lang.String
   ): Snapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change_time")(change_time)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("zone_data")(zone_data)
-    __obj.updateDynamic("zone_uuid")(zone_uuid)
+    val __obj = js.Dynamic.literal(change_time = change_time, serial = serial, zone_data = zone_data, zone_uuid = zone_uuid)
+  
     __obj.asInstanceOf[Snapshot]
   }
 }

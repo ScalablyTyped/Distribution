@@ -22,12 +22,8 @@ object Anon_BufferFlushDelay {
     pageTracking: Anon_AutoBasePath,
     trackExceptions: scala.Boolean
   ): Anon_BufferFlushDelay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferFlushDelay")(bufferFlushDelay)
-    __obj.updateDynamic("developerMode")(developerMode)
-    __obj.updateDynamic("optOut")(optOut)
-    __obj.updateDynamic("pageTracking")(pageTracking)
-    __obj.updateDynamic("trackExceptions")(trackExceptions)
+    val __obj = js.Dynamic.literal(bufferFlushDelay = bufferFlushDelay, developerMode = developerMode, optOut = optOut, pageTracking = pageTracking, trackExceptions = trackExceptions)
+  
     __obj.asInstanceOf[Anon_BufferFlushDelay]
   }
 }

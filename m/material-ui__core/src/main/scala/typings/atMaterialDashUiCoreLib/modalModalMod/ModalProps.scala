@@ -61,8 +61,7 @@ object ModalProps {
     onRendered: js.Function0[scala.Unit] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ModalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(open = open)
     if (BackdropComponent != null) __obj.updateDynamic("BackdropComponent")(BackdropComponent.asInstanceOf[js.Any])
     if (BackdropProps != null) __obj.updateDynamic("BackdropProps")(BackdropProps)
     if (className != null) __obj.updateDynamic("className")(className)

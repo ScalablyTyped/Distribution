@@ -27,8 +27,7 @@ object KeyPairArgs {
     keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     keyNamePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): KeyPairArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairArgs]

@@ -52,10 +52,7 @@ object PopupDockOptions {
     buttonEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     position: java.lang.String | js.Function = null
   ): PopupDockOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
     if (!js.isUndefined(buttonEnabled)) __obj.updateDynamic("buttonEnabled")(buttonEnabled)
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

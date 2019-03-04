@@ -22,8 +22,7 @@ object ChannelArgs {
     channelId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ChannelArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelArgs]
   }

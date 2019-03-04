@@ -12,8 +12,8 @@ trait TypeParams extends ErrorParameters {
 object TypeParams {
   @scala.inline
   def apply(`type`: java.lang.String): TypeParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeParams]
   }
 }

@@ -34,18 +34,8 @@ object Anon_ActiveUnzonedRange {
     renderUnzonedRange: js.Any,
     validUnzonedRange: js.Any
   ): Anon_ActiveUnzonedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeUnzonedRange")(activeUnzonedRange)
-    __obj.updateDynamic("currentRangeUnit")(currentRangeUnit)
-    __obj.updateDynamic("currentUnzonedRange")(currentUnzonedRange)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dateIncrement")(dateIncrement)
-    __obj.updateDynamic("isRangeAllDay")(isRangeAllDay)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("maxTime")(maxTime)
-    __obj.updateDynamic("minTime")(minTime)
-    __obj.updateDynamic("renderUnzonedRange")(renderUnzonedRange)
-    __obj.updateDynamic("validUnzonedRange")(validUnzonedRange)
+    val __obj = js.Dynamic.literal(activeUnzonedRange = activeUnzonedRange, currentRangeUnit = currentRangeUnit, currentUnzonedRange = currentUnzonedRange, date = date, dateIncrement = dateIncrement, isRangeAllDay = isRangeAllDay, isValid = isValid, maxTime = maxTime, minTime = minTime, renderUnzonedRange = renderUnzonedRange, validUnzonedRange = validUnzonedRange)
+  
     __obj.asInstanceOf[Anon_ActiveUnzonedRange]
   }
 }

@@ -24,10 +24,7 @@ object PegjsError {
     found: js.Any = null,
     stack: js.Any = null
   ): PegjsError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(location = location, message = message, name = name)
     if (expected != null) __obj.updateDynamic("expected")(expected)
     if (found != null) __obj.updateDynamic("found")(found)
     if (stack != null) __obj.updateDynamic("stack")(stack)

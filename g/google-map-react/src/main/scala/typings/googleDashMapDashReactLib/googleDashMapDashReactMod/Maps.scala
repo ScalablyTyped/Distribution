@@ -60,31 +60,8 @@ object Maps {
     UnitSystem: js.Any,
     ZoomControlStyle: js.Any
   ): Maps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Animation")(Animation)
-    __obj.updateDynamic("ControlPosition")(ControlPosition)
-    __obj.updateDynamic("DirectionsStatus")(DirectionsStatus)
-    __obj.updateDynamic("DirectionsTravelMode")(DirectionsTravelMode)
-    __obj.updateDynamic("DirectionsUnitSystem")(DirectionsUnitSystem)
-    __obj.updateDynamic("DistanceMatrixElementStatus")(DistanceMatrixElementStatus)
-    __obj.updateDynamic("DistanceMatrixStatus")(DistanceMatrixStatus)
-    __obj.updateDynamic("ElevationStatus")(ElevationStatus)
-    __obj.updateDynamic("GeocoderLocationType")(GeocoderLocationType)
-    __obj.updateDynamic("GeocoderStatus")(GeocoderStatus)
-    __obj.updateDynamic("KmlLayerStats")(KmlLayerStats)
-    __obj.updateDynamic("MapTypeControlStyle")(MapTypeControlStyle)
-    __obj.updateDynamic("MapTypeId")(MapTypeId)
-    __obj.updateDynamic("MaxZoomStatus")(MaxZoomStatus)
-    __obj.updateDynamic("NavigationControlStyle")(NavigationControlStyle)
-    __obj.updateDynamic("ScaleControlStyle")(ScaleControlStyle)
-    __obj.updateDynamic("StreetViewStatus")(StreetViewStatus)
-    __obj.updateDynamic("StrokePosition")(StrokePosition)
-    __obj.updateDynamic("SymbolPath")(SymbolPath)
-    __obj.updateDynamic("TransitMode")(TransitMode)
-    __obj.updateDynamic("TransitRoutePreference")(TransitRoutePreference)
-    __obj.updateDynamic("TravelMode")(TravelMode)
-    __obj.updateDynamic("UnitSystem")(UnitSystem)
-    __obj.updateDynamic("ZoomControlStyle")(ZoomControlStyle)
+    val __obj = js.Dynamic.literal(Animation = Animation, ControlPosition = ControlPosition, DirectionsStatus = DirectionsStatus, DirectionsTravelMode = DirectionsTravelMode, DirectionsUnitSystem = DirectionsUnitSystem, DistanceMatrixElementStatus = DistanceMatrixElementStatus, DistanceMatrixStatus = DistanceMatrixStatus, ElevationStatus = ElevationStatus, GeocoderLocationType = GeocoderLocationType, GeocoderStatus = GeocoderStatus, KmlLayerStats = KmlLayerStats, MapTypeControlStyle = MapTypeControlStyle, MapTypeId = MapTypeId, MaxZoomStatus = MaxZoomStatus, NavigationControlStyle = NavigationControlStyle, ScaleControlStyle = ScaleControlStyle, StreetViewStatus = StreetViewStatus, StrokePosition = StrokePosition, SymbolPath = SymbolPath, TransitMode = TransitMode, TransitRoutePreference = TransitRoutePreference, TravelMode = TravelMode, UnitSystem = UnitSystem, ZoomControlStyle = ZoomControlStyle)
+  
     __obj.asInstanceOf[Maps]
   }
 }

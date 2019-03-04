@@ -41,10 +41,8 @@ object Transaction {
     commit: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]],
     rollback: js.Function0[bluebirdLib.bluebirdMod.namespaced[scala.Unit]]
   ): Transaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOCK")(LOCK)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("rollback")(rollback)
+    val __obj = js.Dynamic.literal(LOCK = LOCK, commit = commit, rollback = rollback)
+  
     __obj.asInstanceOf[Transaction]
   }
 }

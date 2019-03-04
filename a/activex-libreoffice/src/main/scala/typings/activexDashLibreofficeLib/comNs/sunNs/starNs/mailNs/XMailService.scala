@@ -119,19 +119,8 @@ object XMailService {
     release: js.Function0[scala.Unit],
     removeConnectionListener: js.Function1[XConnectionListener, scala.Unit]
   ): XMailService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentConnectionContext")(CurrentConnectionContext)
-    __obj.updateDynamic("SupportedConnectionTypes")(SupportedConnectionTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConnectionListener")(addConnectionListener)
-    __obj.updateDynamic("connect")(connect)
-    __obj.updateDynamic("disconnect")(disconnect)
-    __obj.updateDynamic("getCurrentConnectionContext")(getCurrentConnectionContext)
-    __obj.updateDynamic("getSupportedConnectionTypes")(getSupportedConnectionTypes)
-    __obj.updateDynamic("isConnected")(isConnected)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeConnectionListener")(removeConnectionListener)
+    val __obj = js.Dynamic.literal(CurrentConnectionContext = CurrentConnectionContext, SupportedConnectionTypes = SupportedConnectionTypes, acquire = acquire, addConnectionListener = addConnectionListener, connect = connect, disconnect = disconnect, getCurrentConnectionContext = getCurrentConnectionContext, getSupportedConnectionTypes = getSupportedConnectionTypes, isConnected = isConnected, queryInterface = queryInterface, release = release, removeConnectionListener = removeConnectionListener)
+  
     __obj.asInstanceOf[XMailService]
   }
 }

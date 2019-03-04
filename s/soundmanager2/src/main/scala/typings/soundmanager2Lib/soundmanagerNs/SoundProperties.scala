@@ -41,8 +41,7 @@ object SoundProperties {
     whileloading: js.Function0[scala.Unit] = null,
     whileplaying: js.Function0[scala.Unit] = null
   ): SoundProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay)
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])

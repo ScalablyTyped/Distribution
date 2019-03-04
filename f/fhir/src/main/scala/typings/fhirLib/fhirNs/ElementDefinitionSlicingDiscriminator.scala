@@ -40,8 +40,8 @@ object ElementDefinitionSlicingDiscriminator {
     fhir_comments: js.Array[java.lang.String] = null,
     id: java.lang.String = null
   ): ElementDefinitionSlicingDiscriminator = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
+    __obj.updateDynamic("type")(`type`)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_path != null) __obj.updateDynamic("_path")(_path)

@@ -23,10 +23,7 @@ object AngularFireSimpleObject {
     $value: js.Any,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): AngularFireSimpleObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$id")($id)
-    __obj.updateDynamic("$priority")($priority)
-    __obj.updateDynamic("$value")($value)
+    val __obj = js.Dynamic.literal($id = $id, $priority = $priority, $value = $value)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AngularFireSimpleObject]
   }

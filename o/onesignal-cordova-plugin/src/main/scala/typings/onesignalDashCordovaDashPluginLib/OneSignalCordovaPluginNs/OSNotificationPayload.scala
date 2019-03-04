@@ -50,13 +50,7 @@ object OSNotificationPayload {
     smallIcon: java.lang.String = null,
     smallIconAccentColor: java.lang.String = null
   ): OSNotificationPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionButtons")(actionButtons)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("notificationID")(notificationID)
-    __obj.updateDynamic("rawPayload")(rawPayload)
-    __obj.updateDynamic("sound")(sound)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(actionButtons = actionButtons, body = body, notificationID = notificationID, rawPayload = rawPayload, sound = sound, title = title)
     if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
     if (backgroundImageLayout != null) __obj.updateDynamic("backgroundImageLayout")(backgroundImageLayout)
     if (bigPicture != null) __obj.updateDynamic("bigPicture")(bigPicture)

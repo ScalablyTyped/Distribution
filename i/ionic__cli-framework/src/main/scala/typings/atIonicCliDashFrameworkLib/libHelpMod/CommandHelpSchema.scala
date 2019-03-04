@@ -32,17 +32,8 @@ object CommandHelpSchema {
     options: js.Array[CommandHelpSchemaOption],
     summary: java.lang.String
   ): CommandHelpSchema = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("exampleCommands")(exampleCommands)
-    __obj.updateDynamic("footnotes")(footnotes)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(aliases = aliases, description = description, exampleCommands = exampleCommands, footnotes = footnotes, groups = groups, inputs = inputs, name = name, namespace = namespace, options = options, summary = summary)
+  
     __obj.asInstanceOf[CommandHelpSchema]
   }
 }

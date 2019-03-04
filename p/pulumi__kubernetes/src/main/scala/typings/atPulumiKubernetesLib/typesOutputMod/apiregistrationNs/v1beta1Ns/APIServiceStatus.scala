@@ -18,8 +18,8 @@ trait APIServiceStatus extends js.Object {
 object APIServiceStatus {
   @scala.inline
   def apply(conditions: js.Array[APIServiceCondition]): APIServiceStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conditions")(conditions)
+    val __obj = js.Dynamic.literal(conditions = conditions)
+  
     __obj.asInstanceOf[APIServiceStatus]
   }
 }

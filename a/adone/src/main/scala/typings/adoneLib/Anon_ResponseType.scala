@@ -12,8 +12,8 @@ trait Anon_ResponseType extends js.Object {
 object Anon_ResponseType {
   @scala.inline
   def apply(responseType: adoneLib.adoneLibStrings.string): Anon_ResponseType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responseType")(responseType)
+    val __obj = js.Dynamic.literal(responseType = responseType)
+  
     __obj.asInstanceOf[Anon_ResponseType]
   }
 }

@@ -36,19 +36,8 @@ object IObjectClassAdmin {
     SemanticAliases: ISemanticAliases,
     Workflow: scala.Double
   ): IObjectClassAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AdditionalClassInfo")(AdditionalClassInfo)
-    __obj.updateDynamic("AssociatedPropertyDefs")(AssociatedPropertyDefs)
-    __obj.updateDynamic("AutomaticPermissionsForObjects")(AutomaticPermissionsForObjects)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("ForceWorkflow")(ForceWorkflow)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("NamePropertyDef")(NamePropertyDef)
-    __obj.updateDynamic("ObjectType")(ObjectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("Predefined")(Predefined)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("Workflow")(Workflow)
+    val __obj = js.Dynamic.literal(AdditionalClassInfo = AdditionalClassInfo, AssociatedPropertyDefs = AssociatedPropertyDefs, AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, ForceWorkflow = ForceWorkflow, ID = ID, Name = Name, NamePropertyDef = NamePropertyDef, ObjectType = ObjectType.asInstanceOf[js.Any], Predefined = Predefined, SemanticAliases = SemanticAliases, Workflow = Workflow)
+  
     __obj.asInstanceOf[IObjectClassAdmin]
   }
 }

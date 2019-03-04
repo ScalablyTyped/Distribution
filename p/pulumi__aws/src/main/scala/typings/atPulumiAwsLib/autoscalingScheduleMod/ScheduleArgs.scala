@@ -56,9 +56,7 @@ object ScheduleArgs {
     recurrence: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     startTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ScheduleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoscalingGroupName")(autoscalingGroupName.asInstanceOf[js.Any])
-    __obj.updateDynamic("scheduledActionName")(scheduledActionName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], scheduledActionName = scheduledActionName.asInstanceOf[js.Any])
     if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])

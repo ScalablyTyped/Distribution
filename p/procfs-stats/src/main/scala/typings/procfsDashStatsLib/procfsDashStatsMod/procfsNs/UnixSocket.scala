@@ -28,15 +28,8 @@ object UnixSocket {
     St: java.lang.String,
     Type: java.lang.String
   ): UnixSocket = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Inode")(Inode)
-    __obj.updateDynamic("Num")(Num)
-    __obj.updateDynamic("Path")(Path)
-    __obj.updateDynamic("Protocol")(Protocol)
-    __obj.updateDynamic("RefCount")(RefCount)
-    __obj.updateDynamic("St")(St)
-    __obj.updateDynamic("Type")(Type)
+    val __obj = js.Dynamic.literal(Flags = Flags, Inode = Inode, Num = Num, Path = Path, Protocol = Protocol, RefCount = RefCount, St = St, Type = Type)
+  
     __obj.asInstanceOf[UnixSocket]
   }
 }

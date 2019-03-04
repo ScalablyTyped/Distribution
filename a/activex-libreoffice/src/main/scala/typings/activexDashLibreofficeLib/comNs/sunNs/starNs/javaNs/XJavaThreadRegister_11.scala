@@ -37,13 +37,8 @@ object XJavaThreadRegister_11 {
     release: js.Function0[scala.Unit],
     revokeThread: js.Function0[scala.Unit]
   ): XJavaThreadRegister_11 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("isThreadAttached")(isThreadAttached)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerThread")(registerThread)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("revokeThread")(revokeThread)
+    val __obj = js.Dynamic.literal(acquire = acquire, isThreadAttached = isThreadAttached, queryInterface = queryInterface, registerThread = registerThread, release = release, revokeThread = revokeThread)
+  
     __obj.asInstanceOf[XJavaThreadRegister_11]
   }
 }

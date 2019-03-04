@@ -12,8 +12,8 @@ trait Anon_PanelBody extends js.Object {
 object Anon_PanelBody {
   @scala.inline
   def apply(PanelBodyNs: js.Any): Anon_PanelBody = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PanelBodyNs")(PanelBodyNs)
+    val __obj = js.Dynamic.literal(PanelBodyNs = PanelBodyNs)
+  
     __obj.asInstanceOf[Anon_PanelBody]
   }
 }

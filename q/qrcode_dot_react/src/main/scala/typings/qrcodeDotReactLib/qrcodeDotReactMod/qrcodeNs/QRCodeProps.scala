@@ -28,8 +28,7 @@ object QRCodeProps {
     renderAs: qrcodeDotReactLib.qrcodeDotReactLibStrings.svg | qrcodeDotReactLib.qrcodeDotReactLibStrings.canvas = null,
     size: scala.Int | scala.Double = null
   ): QRCodeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor)
     if (fgColor != null) __obj.updateDynamic("fgColor")(fgColor)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

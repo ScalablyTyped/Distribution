@@ -39,12 +39,8 @@ object XReferenceResolvedBroadcaster {
     release: js.Function0[scala.Unit],
     removeReferenceResolvedListener: js.Function2[scala.Double, XReferenceResolvedListener, scala.Unit]
   ): XReferenceResolvedBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addReferenceResolvedListener")(addReferenceResolvedListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeReferenceResolvedListener")(removeReferenceResolvedListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addReferenceResolvedListener = addReferenceResolvedListener, queryInterface = queryInterface, release = release, removeReferenceResolvedListener = removeReferenceResolvedListener)
+  
     __obj.asInstanceOf[XReferenceResolvedBroadcaster]
   }
 }

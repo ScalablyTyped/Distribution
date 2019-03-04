@@ -22,12 +22,8 @@ object AjaxDefaults {
     processData: scala.Boolean,
     timeout: scala.Double
   ): AjaxDefaults = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("global")(global)
-    __obj.updateDynamic("processData")(processData)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(async = async, cache = cache, global = global, processData = processData, timeout = timeout)
+  
     __obj.asInstanceOf[AjaxDefaults]
   }
 }

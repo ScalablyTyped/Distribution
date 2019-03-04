@@ -13,8 +13,8 @@ trait SignalInfo extends js.Object {
 object SignalInfo {
   @scala.inline
   def apply(name: java.lang.String): SignalInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[SignalInfo]
   }
 }

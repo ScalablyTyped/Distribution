@@ -12,8 +12,8 @@ trait BeginTransactionResponse extends js.Object {
 object BeginTransactionResponse {
   @scala.inline
   def apply(transaction: java.lang.String): BeginTransactionResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transaction")(transaction)
+    val __obj = js.Dynamic.literal(transaction = transaction)
+  
     __obj.asInstanceOf[BeginTransactionResponse]
   }
 }

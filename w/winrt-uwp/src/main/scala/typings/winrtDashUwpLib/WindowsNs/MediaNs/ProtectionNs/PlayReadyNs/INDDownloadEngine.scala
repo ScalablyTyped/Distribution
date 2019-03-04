@@ -47,16 +47,8 @@ object INDDownloadEngine {
     resume: js.Function0[scala.Unit],
     seek: js.Function1[scala.Double, scala.Unit]
   ): INDDownloadEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferFullMaxThresholdInSamples")(bufferFullMaxThresholdInSamples)
-    __obj.updateDynamic("bufferFullMinThresholdInSamples")(bufferFullMinThresholdInSamples)
-    __obj.updateDynamic("canSeek")(canSeek)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("notifier")(notifier)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("seek")(seek)
+    val __obj = js.Dynamic.literal(bufferFullMaxThresholdInSamples = bufferFullMaxThresholdInSamples, bufferFullMinThresholdInSamples = bufferFullMinThresholdInSamples, canSeek = canSeek, close = close, notifier = notifier, open = open, pause = pause, resume = resume, seek = seek)
+  
     __obj.asInstanceOf[INDDownloadEngine]
   }
 }

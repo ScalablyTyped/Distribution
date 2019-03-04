@@ -30,10 +30,7 @@ object GraphQLRequestContext {
     queryHash: java.lang.String = null,
     response: GraphQLResponse = null
   ): GraphQLRequestContext[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(cache = cache, context = context.asInstanceOf[js.Any], request = request)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (document != null) __obj.updateDynamic("document")(document)
     if (operation != null) __obj.updateDynamic("operation")(operation)

@@ -42,10 +42,8 @@ object Rule {
     apiVersions: js.Array[java.lang.String],
     resources: js.Array[java.lang.String]
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiGroups")(apiGroups)
-    __obj.updateDynamic("apiVersions")(apiVersions)
-    __obj.updateDynamic("resources")(resources)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, resources = resources)
+  
     __obj.asInstanceOf[Rule]
   }
 }

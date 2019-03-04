@@ -24,12 +24,8 @@ object Anon_ColumnFilenameLinenoPrefix {
     prefix: java.lang.String,
     `val`: java.lang.String
   ): Anon_ColumnFilenameLinenoPrefix = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno, prefix = prefix)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoPrefix]
   }
 }

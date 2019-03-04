@@ -97,8 +97,8 @@ trait filterXSS extends js.Object {
 object FilterXSS {
   @scala.inline
   def apply(process: js.Function1[java.lang.String, java.lang.String]): FilterXSS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("process")(process)
+    val __obj = js.Dynamic.literal(process = process)
+  
     __obj.asInstanceOf[FilterXSS]
   }
 }

@@ -22,11 +22,7 @@ object TriangleConfiguration {
     width: scala.Double | java.lang.String,
     backgroundColor: java.lang.String = null
   ): TriangleConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foregroundColor")(foregroundColor)
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("pointingDirection")(pointingDirection)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(foregroundColor = foregroundColor, height = height.asInstanceOf[js.Any], pointingDirection = pointingDirection, width = width.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     __obj.asInstanceOf[TriangleConfiguration]
   }

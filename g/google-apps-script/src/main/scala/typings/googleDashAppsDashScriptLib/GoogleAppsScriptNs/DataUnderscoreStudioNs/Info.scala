@@ -13,9 +13,8 @@ trait Info extends js.Object {
 object Info {
   @scala.inline
   def apply(setId: js.Function1[java.lang.String, Info], setText: js.Function1[java.lang.String, Info]): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setText")(setText)
+    val __obj = js.Dynamic.literal(setId = setId, setText = setText)
+  
     __obj.asInstanceOf[Info]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Popup[E /* <: leafletLib.leafletMod.Popup */] extends js.Object {
 object Anon_Popup {
   @scala.inline
   def apply[E /* <: leafletLib.leafletMod.Popup */](popup: E): Anon_Popup[E] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(popup = popup.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Popup[E]]
   }
 }

@@ -14,9 +14,8 @@ trait QueryAction extends Action {
 object QueryAction {
   @scala.inline
   def apply(method: java.lang.String, query: js.Array[mongoritoLib.Anon_Args], `type`: ActionTypes): QueryAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(method = method, query = query)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[QueryAction]
   }
 }

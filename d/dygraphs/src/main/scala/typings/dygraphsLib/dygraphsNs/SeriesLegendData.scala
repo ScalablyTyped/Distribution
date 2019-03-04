@@ -52,15 +52,8 @@ object SeriesLegendData {
     y: scala.Double,
     yHTML: java.lang.String
   ): SeriesLegendData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dashHTML")(dashHTML)
-    __obj.updateDynamic("isHighlighted")(isHighlighted)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("labelHTML")(labelHTML)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("yHTML")(yHTML)
+    val __obj = js.Dynamic.literal(color = color, dashHTML = dashHTML, isHighlighted = isHighlighted, isVisible = isVisible, label = label, labelHTML = labelHTML, y = y, yHTML = yHTML)
+  
     __obj.asInstanceOf[SeriesLegendData]
   }
 }

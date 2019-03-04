@@ -18,8 +18,7 @@ object I18nComponentProps {
     update: js.UndefOr[scala.Boolean] = js.undefined,
     withHash: js.UndefOr[scala.Boolean] = js.undefined
   ): I18nComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(update)) __obj.updateDynamic("update")(update)
     if (!js.isUndefined(withHash)) __obj.updateDynamic("withHash")(withHash)
     __obj.asInstanceOf[I18nComponentProps]

@@ -49,8 +49,7 @@ object SlidingMarkerOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): SlidingMarkerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
     if (animateFunctionAdapter != null) __obj.updateDynamic("animateFunctionAdapter")(animateFunctionAdapter)
     if (animation != null) __obj.updateDynamic("animation")(animation)

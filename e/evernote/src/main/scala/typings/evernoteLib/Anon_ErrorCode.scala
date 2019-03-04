@@ -13,8 +13,7 @@ trait Anon_ErrorCode extends js.Object {
 object Anon_ErrorCode {
   @scala.inline
   def apply(errorCode: evernoteLib.evernoteMod.EvernoteNs.EDAMErrorCode, parameter: java.lang.String = null): Anon_ErrorCode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(errorCode = errorCode)
     if (parameter != null) __obj.updateDynamic("parameter")(parameter)
     __obj.asInstanceOf[Anon_ErrorCode]
   }

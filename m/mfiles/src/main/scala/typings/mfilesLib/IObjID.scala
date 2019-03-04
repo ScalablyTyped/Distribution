@@ -28,15 +28,8 @@ object IObjID {
     Type: scala.Double,
     Unserialize: js.Function1[js.Array[scala.Double], scala.Unit]
   ): IObjID = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Serialize")(Serialize)
-    __obj.updateDynamic("SetIDs")(SetIDs)
-    __obj.updateDynamic("ToJSON")(ToJSON)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Unserialize")(Unserialize)
+    val __obj = js.Dynamic.literal(Clone = Clone, CloneFrom = CloneFrom, ID = ID, Serialize = Serialize, SetIDs = SetIDs, ToJSON = ToJSON, Type = Type, Unserialize = Unserialize)
+  
     __obj.asInstanceOf[IObjID]
   }
 }

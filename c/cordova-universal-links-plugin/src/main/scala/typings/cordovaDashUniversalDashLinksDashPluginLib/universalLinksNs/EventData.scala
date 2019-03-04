@@ -24,13 +24,8 @@ object EventData {
     scheme: java.lang.String,
     url: java.lang.String
   ): EventData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(hash = hash, host = host, params = params, path = path, scheme = scheme, url = url)
+  
     __obj.asInstanceOf[EventData]
   }
 }

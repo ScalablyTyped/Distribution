@@ -46,13 +46,7 @@ object Anon_EllipsoidHeight {
     structureisBigEndian: js.UndefOr[scala.Boolean] = js.undefined,
     structurestride: scala.Int | scala.Double = null
   ): Anon_EllipsoidHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightmap")(heightmap.asInstanceOf[js.Any])
-    __obj.updateDynamic("nativeRectangle")(nativeRectangle)
-    __obj.updateDynamic("skirtHeight")(skirtHeight)
-    __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, heightmap = heightmap.asInstanceOf[js.Any], nativeRectangle = nativeRectangle, skirtHeight = skirtHeight, vertices = vertices.asInstanceOf[js.Any], width = width)
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
     if (!js.isUndefined(isGeographic)) __obj.updateDynamic("isGeographic")(isGeographic)
     if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)

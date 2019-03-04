@@ -12,8 +12,8 @@ trait Anon_DropdownMenu extends js.Object {
 object Anon_DropdownMenu {
   @scala.inline
   def apply(DropdownMenuNs: js.Any): Anon_DropdownMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DropdownMenuNs")(DropdownMenuNs)
+    val __obj = js.Dynamic.literal(DropdownMenuNs = DropdownMenuNs)
+  
     __obj.asInstanceOf[Anon_DropdownMenu]
   }
 }

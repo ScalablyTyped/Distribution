@@ -51,10 +51,7 @@ object configWorkersLoaderConfig {
     packages: js.Array[_] = null,
     paths: js.Any = null
   ): configWorkersLoaderConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
     if (has != null) __obj.updateDynamic("has")(has)
     if (map != null) __obj.updateDynamic("map")(map)

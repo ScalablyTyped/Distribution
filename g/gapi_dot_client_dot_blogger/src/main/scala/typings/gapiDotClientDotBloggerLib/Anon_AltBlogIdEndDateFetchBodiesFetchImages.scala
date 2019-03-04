@@ -72,8 +72,7 @@ object Anon_AltBlogIdEndDateFetchBodiesFetchImages {
     userIp: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AltBlogIdEndDateFetchBodiesFetchImages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blogId")(blogId)
+    val __obj = js.Dynamic.literal(blogId = blogId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate)
     if (!js.isUndefined(fetchBodies)) __obj.updateDynamic("fetchBodies")(fetchBodies)

@@ -13,9 +13,8 @@ trait PlugLogin extends js.Object {
 object PlugLogin {
   @scala.inline
   def apply(email: java.lang.String, password: java.lang.String): PlugLogin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("password")(password)
+    val __obj = js.Dynamic.literal(email = email, password = password)
+  
     __obj.asInstanceOf[PlugLogin]
   }
 }

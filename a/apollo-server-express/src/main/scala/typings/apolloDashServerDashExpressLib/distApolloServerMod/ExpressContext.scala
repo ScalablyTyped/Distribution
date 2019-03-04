@@ -13,9 +13,8 @@ trait ExpressContext extends js.Object {
 object ExpressContext {
   @scala.inline
   def apply(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): ExpressContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(req = req, res = res)
+  
     __obj.asInstanceOf[ExpressContext]
   }
 }

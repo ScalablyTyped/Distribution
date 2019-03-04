@@ -26,14 +26,8 @@ object Group {
     isCollapsed: js.Function0[scala.Boolean],
     remove: js.Function0[scala.Unit]
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapse")(collapse)
-    __obj.updateDynamic("expand")(expand)
-    __obj.updateDynamic("getControlIndex")(getControlIndex)
-    __obj.updateDynamic("getDepth")(getDepth)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("isCollapsed")(isCollapsed)
-    __obj.updateDynamic("remove")(remove)
+    val __obj = js.Dynamic.literal(collapse = collapse, expand = expand, getControlIndex = getControlIndex, getDepth = getDepth, getRange = getRange, isCollapsed = isCollapsed, remove = remove)
+  
     __obj.asInstanceOf[Group]
   }
 }

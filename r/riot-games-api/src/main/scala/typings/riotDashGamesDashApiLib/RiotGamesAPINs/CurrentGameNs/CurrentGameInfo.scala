@@ -34,18 +34,8 @@ object CurrentGameInfo {
     participants: js.Array[CurrentGameParticipant],
     platformId: java.lang.String
   ): CurrentGameInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bannedChampion")(bannedChampion)
-    __obj.updateDynamic("gameId")(gameId)
-    __obj.updateDynamic("gameLength")(gameLength)
-    __obj.updateDynamic("gameMode")(gameMode)
-    __obj.updateDynamic("gameQueueConfigId")(gameQueueConfigId)
-    __obj.updateDynamic("gameStartTime")(gameStartTime)
-    __obj.updateDynamic("gameType")(gameType)
-    __obj.updateDynamic("mapId")(mapId)
-    __obj.updateDynamic("observers")(observers)
-    __obj.updateDynamic("participants")(participants)
-    __obj.updateDynamic("platformId")(platformId)
+    val __obj = js.Dynamic.literal(bannedChampion = bannedChampion, gameId = gameId, gameLength = gameLength, gameMode = gameMode, gameQueueConfigId = gameQueueConfigId, gameStartTime = gameStartTime, gameType = gameType, mapId = mapId, observers = observers, participants = participants, platformId = platformId)
+  
     __obj.asInstanceOf[CurrentGameInfo]
   }
 }

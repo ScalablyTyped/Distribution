@@ -22,10 +22,7 @@ object IObserverTree {
     listeners: scala.Int | scala.Double = null,
     observers: js.Array[IObserverTree] = null
   ): IObserverTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(context = context, id = id, name = name)
     if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
     if (observers != null) __obj.updateDynamic("observers")(observers)
     __obj.asInstanceOf[IObserverTree]

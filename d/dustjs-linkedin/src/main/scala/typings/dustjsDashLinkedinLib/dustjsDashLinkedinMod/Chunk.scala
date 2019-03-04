@@ -47,14 +47,8 @@ object Chunk {
     untap: js.Function0[Chunk],
     write: js.Function1[java.lang.String, Chunk]
   ): Chunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("setError")(setError)
-    __obj.updateDynamic("tap")(tap)
-    __obj.updateDynamic("untap")(untap)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(end = end, map = map, render = render, setError = setError, tap = tap, untap = untap, write = write)
+  
     __obj.asInstanceOf[Chunk]
   }
 }

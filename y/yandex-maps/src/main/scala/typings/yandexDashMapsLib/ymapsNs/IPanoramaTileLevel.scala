@@ -16,9 +16,8 @@ object IPanoramaTileLevel {
     getImageSize: js.Function0[js.Array[scala.Double]],
     getTileUrl: js.Function2[scala.Double, scala.Double, java.lang.String]
   ): IPanoramaTileLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getImageSize")(getImageSize)
-    __obj.updateDynamic("getTileUrl")(getTileUrl)
+    val __obj = js.Dynamic.literal(getImageSize = getImageSize, getTileUrl = getTileUrl)
+  
     __obj.asInstanceOf[IPanoramaTileLevel]
   }
 }

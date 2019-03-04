@@ -39,12 +39,8 @@ object LaunchOptions {
     scene: scala.Double,
     shareTicket: java.lang.String
   ): LaunchOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("referrerInfo")(referrerInfo)
-    __obj.updateDynamic("scene")(scene)
-    __obj.updateDynamic("shareTicket")(shareTicket)
+    val __obj = js.Dynamic.literal(path = path, query = query, referrerInfo = referrerInfo, scene = scene, shareTicket = shareTicket)
+  
     __obj.asInstanceOf[LaunchOptions]
   }
 }

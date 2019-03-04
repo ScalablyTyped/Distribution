@@ -15,8 +15,8 @@ trait Anon_Condition extends js.Object {
 object Anon_Condition {
   @scala.inline
   def apply(condition: java.lang.String, `type`: java.lang.String): Anon_Condition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(condition = condition)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Condition]
   }
 }

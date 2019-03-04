@@ -38,8 +38,7 @@ object ITetherOptions {
     targetModifier: java.lang.String = null,
     targetOffset: java.lang.String = null
   ): ITetherOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachment")(attachment)
+    val __obj = js.Dynamic.literal(attachment = attachment)
     if (bodyElement != null) __obj.updateDynamic("bodyElement")(bodyElement)
     if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix)
     if (classes != null) __obj.updateDynamic("classes")(classes)

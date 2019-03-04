@@ -24,8 +24,7 @@ object LinearGradientProps {
     y1: reactDashNativeDashSvgLib.NumberProp = null,
     y2: reactDashNativeDashSvgLib.NumberProp = null
   ): LinearGradientProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits)
     if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
     if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])

@@ -58,32 +58,8 @@ object XDictionary1 {
     setLanguage: js.Function1[scala.Double, scala.Unit],
     setName: js.Function1[java.lang.String, scala.Unit]
   ): XDictionary1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("DictionaryType")(DictionaryType)
-    __obj.updateDynamic("Entries")(Entries)
-    __obj.updateDynamic("Language")(Language)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addDictionaryEventListener")(addDictionaryEventListener)
-    __obj.updateDynamic("addEntry")(addEntry)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getDictionaryType")(getDictionaryType)
-    __obj.updateDynamic("getEntries")(getEntries)
-    __obj.updateDynamic("getEntry")(getEntry)
-    __obj.updateDynamic("getLanguage")(getLanguage)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("isActive")(isActive)
-    __obj.updateDynamic("isFull")(isFull)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeDictionaryEventListener")(removeDictionaryEventListener)
-    __obj.updateDynamic("setActive")(setActive)
-    __obj.updateDynamic("setLanguage")(setLanguage)
-    __obj.updateDynamic("setName")(setName)
+    val __obj = js.Dynamic.literal(Count = Count, DictionaryType = DictionaryType, Entries = Entries, Language = Language, Name = Name, acquire = acquire, add = add, addDictionaryEventListener = addDictionaryEventListener, addEntry = addEntry, clear = clear, getCount = getCount, getDictionaryType = getDictionaryType, getEntries = getEntries, getEntry = getEntry, getLanguage = getLanguage, getName = getName, isActive = isActive, isFull = isFull, queryInterface = queryInterface, release = release, remove = remove, removeDictionaryEventListener = removeDictionaryEventListener, setActive = setActive, setLanguage = setLanguage, setName = setName)
+  
     __obj.asInstanceOf[XDictionary1]
   }
 }

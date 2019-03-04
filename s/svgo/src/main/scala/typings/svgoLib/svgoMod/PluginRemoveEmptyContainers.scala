@@ -12,8 +12,8 @@ trait PluginRemoveEmptyContainers extends js.Object {
 object PluginRemoveEmptyContainers {
   @scala.inline
   def apply(removeEmptyContainers: scala.Boolean | js.Object): PluginRemoveEmptyContainers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeEmptyContainers")(removeEmptyContainers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeEmptyContainers = removeEmptyContainers.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveEmptyContainers]
   }
 }

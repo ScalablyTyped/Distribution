@@ -20,8 +20,8 @@ object TypeParameterDeclaration {
     params: js.Array[astDashTypesLib.genKindsMod.TypeParameterKind],
     `type`: astDashTypesLib.astDashTypesLibStrings.TypeParameterDeclaration
   ): TypeParameterDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TypeParameterDeclaration]
   }
 }

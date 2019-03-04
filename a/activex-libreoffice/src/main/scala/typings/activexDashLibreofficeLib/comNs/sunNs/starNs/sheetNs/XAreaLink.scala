@@ -50,16 +50,8 @@ object XAreaLink {
     setDestArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
     setSourceArea: js.Function1[java.lang.String, scala.Unit]
   ): XAreaLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DestArea")(DestArea)
-    __obj.updateDynamic("SourceArea")(SourceArea)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDestArea")(getDestArea)
-    __obj.updateDynamic("getSourceArea")(getSourceArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDestArea")(setDestArea)
-    __obj.updateDynamic("setSourceArea")(setSourceArea)
+    val __obj = js.Dynamic.literal(DestArea = DestArea, SourceArea = SourceArea, acquire = acquire, getDestArea = getDestArea, getSourceArea = getSourceArea, queryInterface = queryInterface, release = release, setDestArea = setDestArea, setSourceArea = setSourceArea)
+  
     __obj.asInstanceOf[XAreaLink]
   }
 }

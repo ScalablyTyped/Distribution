@@ -12,8 +12,8 @@ trait BezierCurve extends JsonCurve {
 object BezierCurve {
   @scala.inline
   def apply(b: js.Tuple3[Position, Position2D, Position2D]): BezierCurve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b")(b)
+    val __obj = js.Dynamic.literal(b = b)
+  
     __obj.asInstanceOf[BezierCurve]
   }
 }

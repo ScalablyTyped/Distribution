@@ -12,8 +12,8 @@ trait ICoreWindowDialogFactory extends js.Object {
 object ICoreWindowDialogFactory {
   @scala.inline
   def apply(createWithTitle: js.Function1[java.lang.String, CoreWindowDialog]): ICoreWindowDialogFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWithTitle")(createWithTitle)
+    val __obj = js.Dynamic.literal(createWithTitle = createWithTitle)
+  
     __obj.asInstanceOf[ICoreWindowDialogFactory]
   }
 }

@@ -44,18 +44,8 @@ object SafariExtensionContextMenuEvent {
     `type`: java.lang.String,
     userInfo: js.Any
   ): SafariExtensionContextMenuEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("cancelable")(cancelable)
-    __obj.updateDynamic("contextMenu")(contextMenu)
-    __obj.updateDynamic("currentTarget")(currentTarget)
-    __obj.updateDynamic("defaultPrevented")(defaultPrevented)
-    __obj.updateDynamic("eventPhase")(eventPhase)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("userInfo")(userInfo)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, cancelable = cancelable, contextMenu = contextMenu, currentTarget = currentTarget, defaultPrevented = defaultPrevented, eventPhase = eventPhase, preventDefault = preventDefault, stopPropagation = stopPropagation, target = target, timestamp = timestamp, userInfo = userInfo)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SafariExtensionContextMenuEvent]
   }
 }

@@ -42,20 +42,8 @@ object IServerVaultManagementOperations {
     RestoreVault: js.Function1[IRestoreJob, scala.Unit],
     TakeVaultOffline: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
   ): IServerVaultManagementOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AttachVault")(AttachVault)
-    __obj.updateDynamic("AttachVaultWithOptions")(AttachVaultWithOptions)
-    __obj.updateDynamic("BackupVault")(BackupVault)
-    __obj.updateDynamic("BringVaultOnline")(BringVaultOnline)
-    __obj.updateDynamic("CopyVault")(CopyVault)
-    __obj.updateDynamic("CreateNewVault")(CreateNewVault)
-    __obj.updateDynamic("DestroyVault")(DestroyVault)
-    __obj.updateDynamic("DetachVault")(DetachVault)
-    __obj.updateDynamic("GetBackupFileContents")(GetBackupFileContents)
-    __obj.updateDynamic("GetVaultProperties")(GetVaultProperties)
-    __obj.updateDynamic("OptimizeVault")(OptimizeVault)
-    __obj.updateDynamic("RestoreVault")(RestoreVault)
-    __obj.updateDynamic("TakeVaultOffline")(TakeVaultOffline)
+    val __obj = js.Dynamic.literal(AttachVault = AttachVault, AttachVaultWithOptions = AttachVaultWithOptions, BackupVault = BackupVault, BringVaultOnline = BringVaultOnline, CopyVault = CopyVault, CreateNewVault = CreateNewVault, DestroyVault = DestroyVault, DetachVault = DetachVault, GetBackupFileContents = GetBackupFileContents, GetVaultProperties = GetVaultProperties, OptimizeVault = OptimizeVault, RestoreVault = RestoreVault, TakeVaultOffline = TakeVaultOffline)
+  
     __obj.asInstanceOf[IServerVaultManagementOperations]
   }
 }

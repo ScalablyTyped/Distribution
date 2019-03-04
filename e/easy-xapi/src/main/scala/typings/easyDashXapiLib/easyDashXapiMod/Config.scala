@@ -24,12 +24,7 @@ object Config {
     root: java.lang.String,
     xHeaderDefaults: js.Object = null
   ): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("root")(root)
+    val __obj = js.Dynamic.literal(log = log, mount = mount, name = name, port = port, root = root)
     if (xHeaderDefaults != null) __obj.updateDynamic("xHeaderDefaults")(xHeaderDefaults)
     __obj.asInstanceOf[Config]
   }

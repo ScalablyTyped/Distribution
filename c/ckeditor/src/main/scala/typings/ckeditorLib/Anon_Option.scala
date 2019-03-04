@@ -18,10 +18,8 @@ object Anon_Option {
     priority: scala.Double,
     value: ckeditorLib.CKEDITORNs.htmlParserNs.rule
   ): Anon_Option = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("option")(option)
-    __obj.updateDynamic("priority")(priority)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(option = option, priority = priority, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Option]
   }
 }

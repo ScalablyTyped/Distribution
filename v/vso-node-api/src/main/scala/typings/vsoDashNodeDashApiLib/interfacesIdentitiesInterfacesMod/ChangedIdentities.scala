@@ -19,9 +19,8 @@ trait ChangedIdentities extends js.Object {
 object ChangedIdentities {
   @scala.inline
   def apply(identities: js.Array[Identity], sequenceContext: ChangedIdentitiesContext): ChangedIdentities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identities")(identities)
-    __obj.updateDynamic("sequenceContext")(sequenceContext)
+    val __obj = js.Dynamic.literal(identities = identities, sequenceContext = sequenceContext)
+  
     __obj.asInstanceOf[ChangedIdentities]
   }
 }

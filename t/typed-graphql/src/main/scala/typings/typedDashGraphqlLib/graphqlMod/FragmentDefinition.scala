@@ -27,11 +27,7 @@ object FragmentDefinition {
     directives: js.Array[Directive] = null,
     loc: Location = null
   ): FragmentDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("selectionSet")(selectionSet)
-    __obj.updateDynamic("typeCondition")(typeCondition)
+    val __obj = js.Dynamic.literal(kind = kind, name = name, selectionSet = selectionSet, typeCondition = typeCondition)
     if (directives != null) __obj.updateDynamic("directives")(directives)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[FragmentDefinition]

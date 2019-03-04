@@ -22,8 +22,8 @@ trait ExecAction extends js.Object {
 object ExecAction {
   @scala.inline
   def apply(command: js.Array[java.lang.String]): ExecAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(command = command)
+  
     __obj.asInstanceOf[ExecAction]
   }
 }

@@ -19,9 +19,8 @@ trait ASPxClientCardViewBatchEditConfirmShowingEventArgs extends ASPxClientCance
 object ASPxClientCardViewBatchEditConfirmShowingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, requestTriggerID: java.lang.String): ASPxClientCardViewBatchEditConfirmShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("requestTriggerID")(requestTriggerID)
+    val __obj = js.Dynamic.literal(cancel = cancel, requestTriggerID = requestTriggerID)
+  
     __obj.asInstanceOf[ASPxClientCardViewBatchEditConfirmShowingEventArgs]
   }
 }

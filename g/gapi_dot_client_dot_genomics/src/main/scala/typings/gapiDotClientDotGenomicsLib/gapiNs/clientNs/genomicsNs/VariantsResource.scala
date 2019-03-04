@@ -207,13 +207,8 @@ object VariantsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantsResponse]
     ]
   ): VariantsResource = {
-    val __obj = js.Dynamic.literal(`import` = `import`)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, merge = merge, patch = patch, search = search)
+    __obj.updateDynamic("import")(`import`)
     __obj.asInstanceOf[VariantsResource]
   }
 }

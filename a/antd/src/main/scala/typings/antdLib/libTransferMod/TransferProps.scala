@@ -124,8 +124,7 @@ object TransferProps {
     targetKeys: js.Array[java.lang.String] = null,
     titles: js.Array[java.lang.String] = null
   ): TransferProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataSource")(dataSource)
+    val __obj = js.Dynamic.literal(dataSource = dataSource)
     if (body != null) __obj.updateDynamic("body")(body)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

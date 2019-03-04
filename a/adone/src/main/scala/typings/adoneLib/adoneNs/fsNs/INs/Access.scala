@@ -14,10 +14,8 @@ trait Access extends js.Object {
 object Access {
   @scala.inline
   def apply(execute: scala.Boolean, read: scala.Boolean, write: scala.Boolean): Access = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(execute = execute, read = read, write = write)
+  
     __obj.asInstanceOf[Access]
   }
 }

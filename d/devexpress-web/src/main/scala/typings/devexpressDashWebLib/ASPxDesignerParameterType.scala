@@ -45,12 +45,8 @@ object ASPxDesignerParameterType {
     value: java.lang.String,
     valueConverter: js.Function1[js.Object, js.Object]
   ): ASPxDesignerParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultVal")(defaultVal)
-    __obj.updateDynamic("displayValue")(displayValue)
-    __obj.updateDynamic("specifics")(specifics)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("valueConverter")(valueConverter)
+    val __obj = js.Dynamic.literal(defaultVal = defaultVal, displayValue = displayValue, specifics = specifics, value = value, valueConverter = valueConverter)
+  
     __obj.asInstanceOf[ASPxDesignerParameterType]
   }
 }

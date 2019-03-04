@@ -25,13 +25,8 @@ object InputContainerPropsMultiple {
     role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty,
     selected: js.Array[T]
   ): InputContainerPropsMultiple[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inputClassName")(inputClassName)
-    __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("onRemove")(onRemove)
-    __obj.updateDynamic("renderToken")(renderToken)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("selected")(selected)
+    val __obj = js.Dynamic.literal(inputClassName = inputClassName, labelKey = labelKey.asInstanceOf[js.Any], onRemove = onRemove, renderToken = renderToken, role = role, selected = selected)
+  
     __obj.asInstanceOf[InputContainerPropsMultiple[T]]
   }
 }

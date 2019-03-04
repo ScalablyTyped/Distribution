@@ -27,8 +27,7 @@ object RadioProps {
     name: java.lang.String = null,
     onChange: reactLib.reactMod.ReactNs.FormEventHandler[Radio] = null
   ): RadioProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, DOMAttributes)
     js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
     js.Dynamic.global.Object.assign(__obj, RippleComponent)

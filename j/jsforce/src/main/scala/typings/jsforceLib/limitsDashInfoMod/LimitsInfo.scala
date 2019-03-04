@@ -66,34 +66,8 @@ object LimitsInfo {
     SingleEmail: Limit,
     StreamingApiConcurrentClients: Limit
   ): LimitsInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConcurrentAsyncGetReportInstances")(ConcurrentAsyncGetReportInstances)
-    __obj.updateDynamic("ConcurrentSyncReportRuns")(ConcurrentSyncReportRuns)
-    __obj.updateDynamic("DailyAnalyticsDataflowJobExecutions")(DailyAnalyticsDataflowJobExecutions)
-    __obj.updateDynamic("DailyApiRequests")(DailyApiRequests)
-    __obj.updateDynamic("DailyAsyncApexExecutions")(DailyAsyncApexExecutions)
-    __obj.updateDynamic("DailyBulkApiRequests")(DailyBulkApiRequests)
-    __obj.updateDynamic("DailyDurableGenericStreamingApiEvents")(DailyDurableGenericStreamingApiEvents)
-    __obj.updateDynamic("DailyDurableStreamingApiEvents")(DailyDurableStreamingApiEvents)
-    __obj.updateDynamic("DailyGenericStreamingApiEvents")(DailyGenericStreamingApiEvents)
-    __obj.updateDynamic("DailyStreamingApiEvents")(DailyStreamingApiEvents)
-    __obj.updateDynamic("DailyWorkflowEmails")(DailyWorkflowEmails)
-    __obj.updateDynamic("DataStorageMB")(DataStorageMB)
-    __obj.updateDynamic("DurableStreamingApiConcurrentClients")(DurableStreamingApiConcurrentClients)
-    __obj.updateDynamic("FileStorageMB")(FileStorageMB)
-    __obj.updateDynamic("HourlyAsyncReportRuns")(HourlyAsyncReportRuns)
-    __obj.updateDynamic("HourlyDashboardRefreshes")(HourlyDashboardRefreshes)
-    __obj.updateDynamic("HourlyDashboardResults")(HourlyDashboardResults)
-    __obj.updateDynamic("HourlyDashboardStatuses")(HourlyDashboardStatuses)
-    __obj.updateDynamic("HourlyODataCallout")(HourlyODataCallout)
-    __obj.updateDynamic("HourlySyncReportRuns")(HourlySyncReportRuns)
-    __obj.updateDynamic("HourlyTimeBasedWorkflow")(HourlyTimeBasedWorkflow)
-    __obj.updateDynamic("MassEmail")(MassEmail)
-    __obj.updateDynamic("MonthlyPlatformEvents")(MonthlyPlatformEvents)
-    __obj.updateDynamic("Package2VersionCreates")(Package2VersionCreates)
-    __obj.updateDynamic("PermissionSets")(PermissionSets)
-    __obj.updateDynamic("SingleEmail")(SingleEmail)
-    __obj.updateDynamic("StreamingApiConcurrentClients")(StreamingApiConcurrentClients)
+    val __obj = js.Dynamic.literal(ConcurrentAsyncGetReportInstances = ConcurrentAsyncGetReportInstances, ConcurrentSyncReportRuns = ConcurrentSyncReportRuns, DailyAnalyticsDataflowJobExecutions = DailyAnalyticsDataflowJobExecutions, DailyApiRequests = DailyApiRequests, DailyAsyncApexExecutions = DailyAsyncApexExecutions, DailyBulkApiRequests = DailyBulkApiRequests, DailyDurableGenericStreamingApiEvents = DailyDurableGenericStreamingApiEvents, DailyDurableStreamingApiEvents = DailyDurableStreamingApiEvents, DailyGenericStreamingApiEvents = DailyGenericStreamingApiEvents, DailyStreamingApiEvents = DailyStreamingApiEvents, DailyWorkflowEmails = DailyWorkflowEmails, DataStorageMB = DataStorageMB, DurableStreamingApiConcurrentClients = DurableStreamingApiConcurrentClients, FileStorageMB = FileStorageMB, HourlyAsyncReportRuns = HourlyAsyncReportRuns, HourlyDashboardRefreshes = HourlyDashboardRefreshes, HourlyDashboardResults = HourlyDashboardResults, HourlyDashboardStatuses = HourlyDashboardStatuses, HourlyODataCallout = HourlyODataCallout, HourlySyncReportRuns = HourlySyncReportRuns, HourlyTimeBasedWorkflow = HourlyTimeBasedWorkflow, MassEmail = MassEmail, MonthlyPlatformEvents = MonthlyPlatformEvents, Package2VersionCreates = Package2VersionCreates, PermissionSets = PermissionSets, SingleEmail = SingleEmail, StreamingApiConcurrentClients = StreamingApiConcurrentClients)
+  
     __obj.asInstanceOf[LimitsInfo]
   }
 }

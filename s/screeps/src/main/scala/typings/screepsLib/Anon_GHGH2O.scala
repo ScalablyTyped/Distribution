@@ -32,17 +32,8 @@ object Anon_GHGH2O {
     ZH: screepsLib.screepsLibStrings.ZH2O,
     ZO: screepsLib.screepsLibStrings.ZHO2
   ): Anon_GHGH2O = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GH")(GH)
-    __obj.updateDynamic("GO")(GO)
-    __obj.updateDynamic("KH")(KH)
-    __obj.updateDynamic("KO")(KO)
-    __obj.updateDynamic("LH")(LH)
-    __obj.updateDynamic("LO")(LO)
-    __obj.updateDynamic("UH")(UH)
-    __obj.updateDynamic("UO")(UO)
-    __obj.updateDynamic("ZH")(ZH)
-    __obj.updateDynamic("ZO")(ZO)
+    val __obj = js.Dynamic.literal(GH = GH, GO = GO, KH = KH, KO = KO, LH = LH, LO = LO, UH = UH, UO = UO, ZH = ZH, ZO = ZO)
+  
     __obj.asInstanceOf[Anon_GHGH2O]
   }
 }

@@ -67,19 +67,7 @@ object Configuration {
     developerName: java.lang.String = null,
     developerURL: java.lang.String = null
   ): Configuration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    __obj.updateDynamic("icons")(icons)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("logging")(logging)
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pixel_art")(pixel_art)
-    __obj.updateDynamic("start_url")(start_url)
-    __obj.updateDynamic("theme_color")(theme_color)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(background = background, dir = dir, display = display.asInstanceOf[js.Any], icons = icons, lang = lang, logging = logging, orientation = orientation.asInstanceOf[js.Any], path = path, pixel_art = pixel_art, start_url = start_url, theme_color = theme_color, version = version)
     if (appDescription != null) __obj.updateDynamic("appDescription")(appDescription)
     if (appName != null) __obj.updateDynamic("appName")(appName)
     if (developerName != null) __obj.updateDynamic("developerName")(developerName)

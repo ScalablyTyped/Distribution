@@ -14,7 +14,7 @@ object yogNs extends js.Object {
     var RAL_Original: yog2DashKernelLib.Anon_AppendExtPath = js.native
     var ROOT_PATH: java.lang.String = js.native
     @JSName("_")
-    var __Original: yog2DashKernelLib.`Anon_` with lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+    var __Original: yog2DashKernelLib.Anon_ with lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
     var app: expressLib.expressMod.eNs.Express = js.native
     @JSName("express")
     var express_Original: (js.Function0[

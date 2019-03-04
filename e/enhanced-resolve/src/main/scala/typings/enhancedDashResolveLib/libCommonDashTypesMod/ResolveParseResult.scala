@@ -22,12 +22,8 @@ object ResolveParseResult {
     query: java.lang.String,
     request: java.lang.String
   ): ResolveParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directory")(directory)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("module")(module)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(directory = directory, file = file, module = module, query = query, request = request)
+  
     __obj.asInstanceOf[ResolveParseResult]
   }
 }

@@ -20,8 +20,7 @@ object Anon_Callee {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     `object`: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): Anon_Callee = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callee")(callee)
+    val __obj = js.Dynamic.literal(callee = callee)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (`object` != null) __obj.updateDynamic("object")(`object`)

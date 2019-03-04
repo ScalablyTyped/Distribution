@@ -45,24 +45,8 @@ object ToolbarController {
     update: js.Function0[scala.Unit],
     updateImage: js.Function0[scala.Unit]
   ): ToolbarController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SubToolbarName")(SubToolbarName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("createItemWindow")(createItemWindow)
-    __obj.updateDynamic("createPopupWindow")(createPopupWindow)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("doubleClick")(doubleClick)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("functionSelected")(functionSelected)
-    __obj.updateDynamic("getSubToolbarName")(getSubToolbarName)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("opensSubToolbar")(opensSubToolbar)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("statusChanged")(statusChanged)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("updateImage")(updateImage)
+    val __obj = js.Dynamic.literal(SubToolbarName = SubToolbarName, acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, disposing = disposing, doubleClick = doubleClick, execute = execute, functionSelected = functionSelected, getSubToolbarName = getSubToolbarName, initialize = initialize, opensSubToolbar = opensSubToolbar, queryInterface = queryInterface, release = release, statusChanged = statusChanged, update = update, updateImage = updateImage)
+  
     __obj.asInstanceOf[ToolbarController]
   }
 }

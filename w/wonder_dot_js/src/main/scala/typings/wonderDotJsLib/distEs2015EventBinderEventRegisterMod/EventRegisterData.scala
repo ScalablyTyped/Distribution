@@ -15,11 +15,8 @@ trait EventRegisterData extends js.Object {
 object EventRegisterData {
   @scala.inline
   def apply(domHandler: js.Function, handler: js.Function, originHandler: js.Function, priority: scala.Double): EventRegisterData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domHandler")(domHandler)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("originHandler")(originHandler)
-    __obj.updateDynamic("priority")(priority)
+    val __obj = js.Dynamic.literal(domHandler = domHandler, handler = handler, originHandler = originHandler, priority = priority)
+  
     __obj.asInstanceOf[EventRegisterData]
   }
 }

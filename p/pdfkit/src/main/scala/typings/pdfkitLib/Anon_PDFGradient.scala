@@ -18,10 +18,8 @@ object Anon_PDFGradient {
     PDFLinearGradient: pdfkitLib.PDFKitNs.PDFLinearGradient,
     PDFRadialGradiant: pdfkitLib.PDFKitNs.PDFRadialGradient
   ): Anon_PDFGradient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PDFGradient")(PDFGradient)
-    __obj.updateDynamic("PDFLinearGradient")(PDFLinearGradient)
-    __obj.updateDynamic("PDFRadialGradiant")(PDFRadialGradiant)
+    val __obj = js.Dynamic.literal(PDFGradient = PDFGradient, PDFLinearGradient = PDFLinearGradient, PDFRadialGradiant = PDFRadialGradiant)
+  
     __obj.asInstanceOf[Anon_PDFGradient]
   }
 }

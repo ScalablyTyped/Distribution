@@ -22,12 +22,8 @@ object Anon_Account {
     deployment: scala.Double,
     none: scala.Double
   ): Anon_Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("account")(account)
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("collection")(collection)
-    __obj.updateDynamic("deployment")(deployment)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(account = account, all = all, collection = collection, deployment = deployment, none = none)
+  
     __obj.asInstanceOf[Anon_Account]
   }
 }

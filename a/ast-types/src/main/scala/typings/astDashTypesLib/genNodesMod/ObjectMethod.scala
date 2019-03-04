@@ -38,14 +38,8 @@ object ObjectMethod {
     accessibility: astDashTypesLib.genKindsMod.LiteralKind = null,
     decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
   ): ObjectMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params)
+    __obj.updateDynamic("type")(`type`)
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     __obj.asInstanceOf[ObjectMethod]

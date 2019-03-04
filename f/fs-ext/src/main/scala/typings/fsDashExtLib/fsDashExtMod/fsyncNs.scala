@@ -13,6 +13,6 @@ object fsyncNs extends js.Object {
     * Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
     * @param fd A file descriptor.
     */
-  def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
+  def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

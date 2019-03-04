@@ -16,8 +16,7 @@ object Anon_Sheet {
     sheet: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerStyleSheet */ js.Any,
     target: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Sheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sheet")(sheet)
+    val __obj = js.Dynamic.literal(sheet = sheet)
     if (!js.isUndefined(target)) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[Anon_Sheet]
   }

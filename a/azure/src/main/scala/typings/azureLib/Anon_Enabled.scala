@@ -20,11 +20,8 @@ object Anon_Enabled {
     RetentionPolicy: Anon_Days,
     Version: scala.Double
   ): Anon_Enabled = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Enabled")(Enabled)
-    __obj.updateDynamic("IncludeAPIs")(IncludeAPIs)
-    __obj.updateDynamic("RetentionPolicy")(RetentionPolicy)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(Enabled = Enabled, IncludeAPIs = IncludeAPIs, RetentionPolicy = RetentionPolicy, Version = Version)
+  
     __obj.asInstanceOf[Anon_Enabled]
   }
 }

@@ -18,8 +18,8 @@ object VideoAbuseReportReasonsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[VideoAbuseReportReasonListResponse]
     ]
   ): VideoAbuseReportReasonsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[VideoAbuseReportReasonsResource]
   }
 }

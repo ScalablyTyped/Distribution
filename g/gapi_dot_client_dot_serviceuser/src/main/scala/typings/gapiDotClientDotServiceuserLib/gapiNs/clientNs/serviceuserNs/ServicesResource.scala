@@ -54,11 +54,8 @@ object ServicesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
     ]
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, list = list, search = search)
+  
     __obj.asInstanceOf[ServicesResource]
   }
 }

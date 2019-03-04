@@ -25,11 +25,8 @@ object XScriptProviderFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XScriptProviderFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createScriptProvider")(createScriptProvider)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createScriptProvider = createScriptProvider, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XScriptProviderFactory]
   }
 }

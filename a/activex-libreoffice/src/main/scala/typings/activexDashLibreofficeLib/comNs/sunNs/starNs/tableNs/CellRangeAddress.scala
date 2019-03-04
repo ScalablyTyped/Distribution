@@ -28,12 +28,8 @@ object CellRangeAddress {
     StartColumn: scala.Double,
     StartRow: scala.Double
   ): CellRangeAddress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndColumn")(EndColumn)
-    __obj.updateDynamic("EndRow")(EndRow)
-    __obj.updateDynamic("Sheet")(Sheet)
-    __obj.updateDynamic("StartColumn")(StartColumn)
-    __obj.updateDynamic("StartRow")(StartRow)
+    val __obj = js.Dynamic.literal(EndColumn = EndColumn, EndRow = EndRow, Sheet = Sheet, StartColumn = StartColumn, StartRow = StartRow)
+  
     __obj.asInstanceOf[CellRangeAddress]
   }
 }

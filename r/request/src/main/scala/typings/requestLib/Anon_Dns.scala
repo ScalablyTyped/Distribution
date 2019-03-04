@@ -25,13 +25,8 @@ object Anon_Dns {
     total: scala.Double,
     wait: scala.Double
   ): Anon_Dns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dns")(dns)
-    __obj.updateDynamic("download")(download)
-    __obj.updateDynamic("firstByte")(firstByte)
-    __obj.updateDynamic("tcp")(tcp)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("wait")(wait)
+    val __obj = js.Dynamic.literal(dns = dns, download = download, firstByte = firstByte, tcp = tcp, total = total, wait = wait)
+  
     __obj.asInstanceOf[Anon_Dns]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_RoleArnStreamArn extends js.Object {
 object Anon_RoleArnStreamArn {
   @scala.inline
   def apply(roleArn: java.lang.String, streamArn: java.lang.String): Anon_RoleArnStreamArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("roleArn")(roleArn)
-    __obj.updateDynamic("streamArn")(streamArn)
+    val __obj = js.Dynamic.literal(roleArn = roleArn, streamArn = streamArn)
+  
     __obj.asInstanceOf[Anon_RoleArnStreamArn]
   }
 }

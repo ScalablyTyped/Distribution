@@ -16,9 +16,8 @@ object Anon_ColumnMultiple {
     column: atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple,
     row: atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple
   ): Anon_ColumnMultiple = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ColumnMultiple]
   }
 }

@@ -43,12 +43,8 @@ object PropertyStateChangeEvent {
     PropertyName: java.lang.String,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): PropertyStateChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewValue")(NewValue)
-    __obj.updateDynamic("OldValue")(OldValue)
-    __obj.updateDynamic("PropertyHandle")(PropertyHandle)
-    __obj.updateDynamic("PropertyName")(PropertyName)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(NewValue = NewValue, OldValue = OldValue, PropertyHandle = PropertyHandle, PropertyName = PropertyName, Source = Source)
+  
     __obj.asInstanceOf[PropertyStateChangeEvent]
   }
 }

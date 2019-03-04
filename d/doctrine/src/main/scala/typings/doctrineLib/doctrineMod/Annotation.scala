@@ -17,9 +17,8 @@ trait Annotation extends js.Object {
 object Annotation {
   @scala.inline
   def apply(description: java.lang.String, tags: js.Array[Tag]): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(description = description, tags = tags)
+  
     __obj.asInstanceOf[Annotation]
   }
 }

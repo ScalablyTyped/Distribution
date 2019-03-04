@@ -41,13 +41,8 @@ object XImageProducer {
     removeConsumer: js.Function1[XImageConsumer, scala.Unit],
     startProduction: js.Function0[scala.Unit]
   ): XImageProducer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addConsumer")(addConsumer)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeConsumer")(removeConsumer)
-    __obj.updateDynamic("startProduction")(startProduction)
+    val __obj = js.Dynamic.literal(acquire = acquire, addConsumer = addConsumer, queryInterface = queryInterface, release = release, removeConsumer = removeConsumer, startProduction = startProduction)
+  
     __obj.asInstanceOf[XImageProducer]
   }
 }

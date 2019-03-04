@@ -19,11 +19,8 @@ object IPanoramaConnectionArrow {
     getPanorama: js.Function0[IPanorama],
     properties: yandexDashMapsLib.ymapsNs.dataNs.Manager
   ): IPanoramaConnectionArrow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getConnectedPanorama")(getConnectedPanorama)
-    __obj.updateDynamic("getDirection")(getDirection)
-    __obj.updateDynamic("getPanorama")(getPanorama)
-    __obj.updateDynamic("properties")(properties)
+    val __obj = js.Dynamic.literal(getConnectedPanorama = getConnectedPanorama, getDirection = getDirection, getPanorama = getPanorama, properties = properties)
+  
     __obj.asInstanceOf[IPanoramaConnectionArrow]
   }
 }

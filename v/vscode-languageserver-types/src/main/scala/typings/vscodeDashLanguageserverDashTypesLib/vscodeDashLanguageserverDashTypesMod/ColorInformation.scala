@@ -19,9 +19,8 @@ trait ColorInformation extends js.Object {
 object ColorInformation {
   @scala.inline
   def apply(color: Color, range: Range): ColorInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("range")(range)
+    val __obj = js.Dynamic.literal(color = color, range = range)
+  
     __obj.asInstanceOf[ColorInformation]
   }
 }

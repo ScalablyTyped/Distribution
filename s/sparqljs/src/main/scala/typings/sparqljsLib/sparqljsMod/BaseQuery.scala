@@ -22,8 +22,8 @@ object BaseQuery {
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null
   ): BaseQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("prefixes")(prefixes)
+    val __obj = js.Dynamic.literal(prefixes = prefixes)
+    __obj.updateDynamic("type")(`type`)
     if (base != null) __obj.updateDynamic("base")(base)
     if (values != null) __obj.updateDynamic("values")(values)
     if (where != null) __obj.updateDynamic("where")(where)

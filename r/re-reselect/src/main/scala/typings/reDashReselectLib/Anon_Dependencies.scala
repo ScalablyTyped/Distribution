@@ -20,11 +20,8 @@ object Anon_Dependencies {
     resetRecomputations: js.Function0[scala.Double],
     resultFunc: C
   ): Anon_Dependencies[C, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    __obj.updateDynamic("recomputations")(recomputations)
-    __obj.updateDynamic("resetRecomputations")(resetRecomputations)
-    __obj.updateDynamic("resultFunc")(resultFunc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], recomputations = recomputations, resetRecomputations = resetRecomputations, resultFunc = resultFunc.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Dependencies[C, D]]
   }
 }

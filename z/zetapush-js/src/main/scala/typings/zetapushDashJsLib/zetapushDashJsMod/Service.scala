@@ -12,8 +12,8 @@ trait Service extends js.Object {
 object Service {
   @scala.inline
   def apply(DEFAULT_DEPLOYMENT_ID: java.lang.String): Service = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEFAULT_DEPLOYMENT_ID")(DEFAULT_DEPLOYMENT_ID)
+    val __obj = js.Dynamic.literal(DEFAULT_DEPLOYMENT_ID = DEFAULT_DEPLOYMENT_ID)
+  
     __obj.asInstanceOf[Service]
   }
 }

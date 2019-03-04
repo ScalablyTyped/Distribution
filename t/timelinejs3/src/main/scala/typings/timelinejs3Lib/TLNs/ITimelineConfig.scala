@@ -28,8 +28,7 @@ object ITimelineConfig {
     scale: timelinejs3Lib.timelinejs3LibStrings.human | timelinejs3Lib.timelinejs3LibStrings.cosmological = null,
     title: ITimelineSlideData = null
   ): ITimelineConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(events = events)
     if (eras != null) __obj.updateDynamic("eras")(eras)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)

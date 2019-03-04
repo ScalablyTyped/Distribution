@@ -61,27 +61,8 @@ object FieldSchema_InView {
     fieldRenderer: js.Any,
     listItemMenu: java.lang.String
   ): FieldSchema_InView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
-    __obj.updateDynamic("CalloutMenu")(CalloutMenu)
-    __obj.updateDynamic("ClassInfo")(ClassInfo)
-    __obj.updateDynamic("DisplayName")(DisplayName)
-    __obj.updateDynamic("Explicit")(Explicit)
-    __obj.updateDynamic("FieldTitle")(FieldTitle)
-    __obj.updateDynamic("FieldType")(FieldType)
-    __obj.updateDynamic("Filterable")(Filterable)
-    __obj.updateDynamic("GridActiveAndReadOnly")(GridActiveAndReadOnly)
-    __obj.updateDynamic("GroupField")(GroupField)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("ReadOnly")(ReadOnly)
-    __obj.updateDynamic("RealFieldName")(RealFieldName)
-    __obj.updateDynamic("ResultType")(ResultType)
-    __obj.updateDynamic("Sortable")(Sortable)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("css")(css)
-    __obj.updateDynamic("fieldRenderer")(fieldRenderer)
-    __obj.updateDynamic("listItemMenu")(listItemMenu)
+    val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing, CalloutMenu = CalloutMenu, ClassInfo = ClassInfo, DisplayName = DisplayName, Explicit = Explicit, FieldTitle = FieldTitle, FieldType = FieldType, Filterable = Filterable, GridActiveAndReadOnly = GridActiveAndReadOnly, GroupField = GroupField, ID = ID, Name = Name, ReadOnly = ReadOnly, RealFieldName = RealFieldName, ResultType = ResultType, Sortable = Sortable, Type = Type, css = css, fieldRenderer = fieldRenderer, listItemMenu = listItemMenu)
+  
     __obj.asInstanceOf[FieldSchema_InView]
   }
 }

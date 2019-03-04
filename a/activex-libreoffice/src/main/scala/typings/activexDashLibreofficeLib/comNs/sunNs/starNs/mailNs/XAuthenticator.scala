@@ -45,14 +45,8 @@ object XAuthenticator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAuthenticator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("UserName")(UserName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPassword")(getPassword)
-    __obj.updateDynamic("getUserName")(getUserName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Password = Password, UserName = UserName, acquire = acquire, getPassword = getPassword, getUserName = getUserName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAuthenticator]
   }
 }

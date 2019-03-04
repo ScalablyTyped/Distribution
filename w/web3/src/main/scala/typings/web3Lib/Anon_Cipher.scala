@@ -24,13 +24,8 @@ object Anon_Cipher {
     kdfparams: Anon_Dklen,
     mac: java.lang.String
   ): Anon_Cipher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cipher")(cipher)
-    __obj.updateDynamic("cipherparams")(cipherparams)
-    __obj.updateDynamic("ciphertext")(ciphertext)
-    __obj.updateDynamic("kdf")(kdf)
-    __obj.updateDynamic("kdfparams")(kdfparams)
-    __obj.updateDynamic("mac")(mac)
+    val __obj = js.Dynamic.literal(cipher = cipher, cipherparams = cipherparams, ciphertext = ciphertext, kdf = kdf, kdfparams = kdfparams, mac = mac)
+  
     __obj.asInstanceOf[Anon_Cipher]
   }
 }

@@ -22,12 +22,8 @@ object EventHandler {
     eventName: java.lang.String,
     handler: js.Function
   ): EventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bubbles")(bubbles)
-    __obj.updateDynamic("capture")(capture)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("handler")(handler)
+    val __obj = js.Dynamic.literal(bubbles = bubbles, capture = capture, dispose = dispose, eventName = eventName, handler = handler)
+  
     __obj.asInstanceOf[EventHandler]
   }
 }

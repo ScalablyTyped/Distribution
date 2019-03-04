@@ -34,16 +34,8 @@ object TypeLookup {
     string: java.lang.String,
     undefined: js.UndefOr[scala.Nothing] = js.undefined
   ): TypeLookup = {
-    val __obj = js.Dynamic.literal(`null` = `null`)
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("boolean")(boolean)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("filelist")(filelist)
-    __obj.updateDynamic("function")(function)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("regexp")(regexp)
-    __obj.updateDynamic("string")(string)
+    val __obj = js.Dynamic.literal(array = array, boolean = boolean, date = date, error = error, filelist = filelist, function = function, number = number, regexp = regexp, string = string)
+    __obj.updateDynamic("null")(`null`)
     if (!js.isUndefined(undefined)) __obj.updateDynamic("undefined")(undefined)
     __obj.asInstanceOf[TypeLookup]
   }

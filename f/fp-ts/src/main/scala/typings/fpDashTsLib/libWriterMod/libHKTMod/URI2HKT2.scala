@@ -12,8 +12,8 @@ trait URI2HKT2[L, A] extends js.Object {
 object URI2HKT2 {
   @scala.inline
   def apply[L, A](Writer: fpDashTsLib.libWriterMod.Writer[L, A]): URI2HKT2[L, A] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Writer")(Writer)
+    val __obj = js.Dynamic.literal(Writer = Writer)
+  
     __obj.asInstanceOf[URI2HKT2[L, A]]
   }
 }

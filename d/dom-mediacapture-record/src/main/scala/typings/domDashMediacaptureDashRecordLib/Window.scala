@@ -26,10 +26,8 @@ object Window {
       MediaRecorderErrorEvent
     ]
   ): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BlobEvent")(BlobEvent)
-    __obj.updateDynamic("MediaRecorder")(MediaRecorder)
-    __obj.updateDynamic("MediaRecorderErrorEvent")(MediaRecorderErrorEvent)
+    val __obj = js.Dynamic.literal(BlobEvent = BlobEvent, MediaRecorder = MediaRecorder, MediaRecorderErrorEvent = MediaRecorderErrorEvent)
+  
     __obj.asInstanceOf[Window]
   }
 }

@@ -13,9 +13,8 @@ trait ExtraField extends js.Object {
 object ExtraField {
   @scala.inline
   def apply(data: nodeLib.Buffer, id: scala.Double): ExtraField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(data = data, id = id)
+  
     __obj.asInstanceOf[ExtraField]
   }
 }

@@ -15,8 +15,8 @@ trait GeoSphere extends js.Object {
 object GeoSphere {
   @scala.inline
   def apply(`type`: d3DashGeoLib.d3DashGeoLibStrings.Sphere): GeoSphere = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[GeoSphere]
   }
 }

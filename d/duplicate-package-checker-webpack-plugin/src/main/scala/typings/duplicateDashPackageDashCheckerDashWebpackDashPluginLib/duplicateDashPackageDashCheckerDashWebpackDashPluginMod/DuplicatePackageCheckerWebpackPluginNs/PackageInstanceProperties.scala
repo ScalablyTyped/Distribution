@@ -25,10 +25,7 @@ object PackageInstanceProperties {
     version: java.lang.String,
     issuer: java.lang.String = null
   ): PackageInstanceProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, path = path, version = version)
     if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     __obj.asInstanceOf[PackageInstanceProperties]
   }

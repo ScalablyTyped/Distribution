@@ -14,8 +14,8 @@ trait Anon_Set[T]
 object Anon_Set {
   @scala.inline
   def apply[T]($set: T): Anon_Set[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$set")($set.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($set = $set.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Set[T]]
   }
 }

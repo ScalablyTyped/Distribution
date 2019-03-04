@@ -12,8 +12,8 @@ trait END extends js.Object {
 object END {
   @scala.inline
   def apply(`type`: atReduxDashSagaTypesLib.atReduxDashSagaTypesLibStrings.`@@redux-saga/CHANNEL_END`): END = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[END]
   }
 }

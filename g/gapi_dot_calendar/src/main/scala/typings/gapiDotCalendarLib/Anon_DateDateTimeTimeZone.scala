@@ -18,9 +18,7 @@ object Anon_DateDateTimeTimeZone {
     dateTime: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.datetime,
     timeZone: java.lang.String = null
   ): Anon_DateDateTimeTimeZone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("dateTime")(dateTime)
+    val __obj = js.Dynamic.literal(date = date, dateTime = dateTime)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
     __obj.asInstanceOf[Anon_DateDateTimeTimeZone]
   }

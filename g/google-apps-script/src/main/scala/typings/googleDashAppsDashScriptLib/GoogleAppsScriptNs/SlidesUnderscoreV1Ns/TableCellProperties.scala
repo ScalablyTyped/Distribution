@@ -20,9 +20,8 @@ object TableCellProperties {
     content_alignment: ContentAlignment,
     table_cell_background_fill: TableCellPropertiesTableCellBackgroundFill
   ): TableCellProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content_alignment")(content_alignment)
-    __obj.updateDynamic("table_cell_background_fill")(table_cell_background_fill)
+    val __obj = js.Dynamic.literal(content_alignment = content_alignment, table_cell_background_fill = table_cell_background_fill)
+  
     __obj.asInstanceOf[TableCellProperties]
   }
 }

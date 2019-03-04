@@ -36,19 +36,8 @@ object NxCell {
     qState: qlikLib.qlikLibStrings.L | qlikLib.qlikLibStrings.S | qlikLib.qlikLibStrings.O | qlikLib.qlikLibStrings.D | qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.X | qlikLib.qlikLibStrings.XS | qlikLib.qlikLibStrings.XL,
     qText: java.lang.String
   ): NxCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttrDims")(qAttrDims)
-    __obj.updateDynamic("qAttrExps")(qAttrExps)
-    __obj.updateDynamic("qElemNumber")(qElemNumber)
-    __obj.updateDynamic("qFrequency")(qFrequency)
-    __obj.updateDynamic("qHighlightRanges")(qHighlightRanges)
-    __obj.updateDynamic("qIsEmpty")(qIsEmpty)
-    __obj.updateDynamic("qIsNull")(qIsNull)
-    __obj.updateDynamic("qIsOtherCell")(qIsOtherCell)
-    __obj.updateDynamic("qIsTotalCell")(qIsTotalCell)
-    __obj.updateDynamic("qNum")(qNum)
-    __obj.updateDynamic("qState")(qState.asInstanceOf[js.Any])
-    __obj.updateDynamic("qText")(qText)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qElemNumber = qElemNumber, qFrequency = qFrequency, qHighlightRanges = qHighlightRanges, qIsEmpty = qIsEmpty, qIsNull = qIsNull, qIsOtherCell = qIsOtherCell, qIsTotalCell = qIsTotalCell, qNum = qNum, qState = qState.asInstanceOf[js.Any], qText = qText)
+  
     __obj.asInstanceOf[NxCell]
   }
 }

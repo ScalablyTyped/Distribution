@@ -51,13 +51,8 @@ object AchievementsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AchievementUpdateMultipleResponse]
     ]
   ): AchievementsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("increment")(increment)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("reveal")(reveal)
-    __obj.updateDynamic("setStepsAtLeast")(setStepsAtLeast)
-    __obj.updateDynamic("unlock")(unlock)
-    __obj.updateDynamic("updateMultiple")(updateMultiple)
+    val __obj = js.Dynamic.literal(increment = increment, list = list, reveal = reveal, setStepsAtLeast = setStepsAtLeast, unlock = unlock, updateMultiple = updateMultiple)
+  
     __obj.asInstanceOf[AchievementsResource]
   }
 }

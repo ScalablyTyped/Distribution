@@ -39,27 +39,8 @@ object MergeCells {
     selectionCalculations: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.MergeCellsPluginNs.SelectionCalculations,
     unmerge: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]
   ): MergeCells = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("autofillCalculations")(autofillCalculations)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearCollections")(clearCollections)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("mergeSelection")(mergeSelection)
-    __obj.updateDynamic("mergedCellsCollection")(mergedCellsCollection)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("selectionCalculations")(selectionCalculations)
-    __obj.updateDynamic("unmerge")(unmerge)
+    val __obj = js.Dynamic.literal(addHook = addHook, autofillCalculations = autofillCalculations, callOnPluginsReady = callOnPluginsReady, clearCollections = clearCollections, clearHooks = clearHooks, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, init = init, initialized = initialized, isPluginsReady = isPluginsReady, merge = merge, mergeSelection = mergeSelection, mergedCellsCollection = mergedCellsCollection, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, selectionCalculations = selectionCalculations, unmerge = unmerge)
+  
     __obj.asInstanceOf[MergeCells]
   }
 }

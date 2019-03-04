@@ -18,10 +18,8 @@ object Anon_4 {
     labels: colorDashConvertLib.colorDashConvertLibStrings.cmyk,
     rgb: js.Function1[colorDashConvertLib.conversionsMod.CMYK, colorDashConvertLib.conversionsMod.RGB]
   ): Anon_4 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("rgb")(rgb)
+    val __obj = js.Dynamic.literal(channels = channels, labels = labels, rgb = rgb)
+  
     __obj.asInstanceOf[Anon_4]
   }
 }

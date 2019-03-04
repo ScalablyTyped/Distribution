@@ -13,9 +13,8 @@ trait Anon_Content extends js.Object {
 object Anon_Content {
   @scala.inline
   def apply(content: java.lang.String, offset: amapDashJsDashSdkLib.AMapNs.Pixel): Anon_Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(content = content, offset = offset)
+  
     __obj.asInstanceOf[Anon_Content]
   }
 }

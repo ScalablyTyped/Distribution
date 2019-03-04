@@ -13,9 +13,8 @@ trait Anon_Data extends js.Object {
 object Anon_Data {
   @scala.inline
   def apply(data: js.Object, res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse): Anon_Data = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(data = data, res = res)
+  
     __obj.asInstanceOf[Anon_Data]
   }
 }

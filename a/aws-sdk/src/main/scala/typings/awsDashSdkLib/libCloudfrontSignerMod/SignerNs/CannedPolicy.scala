@@ -18,8 +18,10 @@ object CannedPolicy {
     `CloudFront-Key-Pair-Id`: java.lang.String,
     `CloudFront-Signature`: java.lang.String
   ): CannedPolicy = {
-    val __obj = js.Dynamic.literal(`CloudFront-Expires` = `CloudFront-Expires`, `CloudFront-Key-Pair-Id` = `CloudFront-Key-Pair-Id`, `CloudFront-Signature` = `CloudFront-Signature`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CloudFront-Expires")(`CloudFront-Expires`)
+    __obj.updateDynamic("CloudFront-Key-Pair-Id")(`CloudFront-Key-Pair-Id`)
+    __obj.updateDynamic("CloudFront-Signature")(`CloudFront-Signature`)
     __obj.asInstanceOf[CannedPolicy]
   }
 }

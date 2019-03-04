@@ -53,9 +53,7 @@ object StateField {
     ] = null,
     toJSON: js.Function1[/* value */ T, _] = null
   ): StateField[T, S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("init")(init)
+    val __obj = js.Dynamic.literal(apply = apply, init = init)
     if (fromJSON != null) __obj.updateDynamic("fromJSON")(fromJSON)
     if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON)
     __obj.asInstanceOf[StateField[T, S]]

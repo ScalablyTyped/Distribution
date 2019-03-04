@@ -20,11 +20,8 @@ object Anon_Address {
     id: java.lang.String,
     port: scala.Double
   ): Anon_Address = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("availabilityZone")(availabilityZone)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(address = address, availabilityZone = availabilityZone, id = id, port = port)
+  
     __obj.asInstanceOf[Anon_Address]
   }
 }

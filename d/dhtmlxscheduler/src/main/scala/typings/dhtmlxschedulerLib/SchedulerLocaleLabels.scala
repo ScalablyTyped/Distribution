@@ -42,22 +42,8 @@ object SchedulerLocaleLabels {
     unit_tab: java.lang.String,
     week_tab: java.lang.String
   ): SchedulerLocaleLabels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirm_closing")(confirm_closing)
-    __obj.updateDynamic("confirm_deleting")(confirm_deleting)
-    __obj.updateDynamic("day_tab")(day_tab)
-    __obj.updateDynamic("dhx_cal_today_button")(dhx_cal_today_button)
-    __obj.updateDynamic("icon_cancel")(icon_cancel)
-    __obj.updateDynamic("icon_delete")(icon_delete)
-    __obj.updateDynamic("icon_details")(icon_details)
-    __obj.updateDynamic("icon_edit")(icon_edit)
-    __obj.updateDynamic("icon_save")(icon_save)
-    __obj.updateDynamic("month_tab")(month_tab)
-    __obj.updateDynamic("new_event")(new_event)
-    __obj.updateDynamic("section_description")(section_description)
-    __obj.updateDynamic("section_time")(section_time)
-    __obj.updateDynamic("unit_tab")(unit_tab)
-    __obj.updateDynamic("week_tab")(week_tab)
+    val __obj = js.Dynamic.literal(confirm_closing = confirm_closing, confirm_deleting = confirm_deleting, day_tab = day_tab, dhx_cal_today_button = dhx_cal_today_button, icon_cancel = icon_cancel, icon_delete = icon_delete, icon_details = icon_details, icon_edit = icon_edit, icon_save = icon_save, month_tab = month_tab, new_event = new_event, section_description = section_description, section_time = section_time, unit_tab = unit_tab, week_tab = week_tab)
+  
     __obj.asInstanceOf[SchedulerLocaleLabels]
   }
 }

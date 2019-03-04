@@ -12,8 +12,8 @@ trait SliderState extends js.Object {
 object SliderState {
   @scala.inline
   def apply(value: scala.Double): SliderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[SliderState]
   }
 }

@@ -22,12 +22,8 @@ object NotificationBacklogStatus {
     timeSinceLastProcessedNotificationMs: scala.Double,
     unprocessedNotifications: scala.Double
   ): NotificationBacklogStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("maxUnprocessedNotificationAgeMs")(maxUnprocessedNotificationAgeMs)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("timeSinceLastProcessedNotificationMs")(timeSinceLastProcessedNotificationMs)
-    __obj.updateDynamic("unprocessedNotifications")(unprocessedNotifications)
+    val __obj = js.Dynamic.literal(channel = channel, maxUnprocessedNotificationAgeMs = maxUnprocessedNotificationAgeMs, publisher = publisher, timeSinceLastProcessedNotificationMs = timeSinceLastProcessedNotificationMs, unprocessedNotifications = unprocessedNotifications)
+  
     __obj.asInstanceOf[NotificationBacklogStatus]
   }
 }

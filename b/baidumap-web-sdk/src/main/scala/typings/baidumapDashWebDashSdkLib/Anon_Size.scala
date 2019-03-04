@@ -14,9 +14,8 @@ trait Anon_Size extends js.Object {
 object Anon_Size {
   @scala.inline
   def apply(size: baidumapDashWebDashSdkLib.BMapNs.Size, target: js.Any, `type`: java.lang.String): Anon_Size = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(size = size, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Size]
   }
 }

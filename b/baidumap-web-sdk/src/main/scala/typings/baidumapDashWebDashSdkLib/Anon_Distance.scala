@@ -22,11 +22,8 @@ object Anon_Distance {
     target: js.Any,
     `type`: java.lang.String
   ): Anon_Distance = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("polylines")(polylines)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(distance = distance, points = points, polylines = polylines, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Distance]
   }
 }

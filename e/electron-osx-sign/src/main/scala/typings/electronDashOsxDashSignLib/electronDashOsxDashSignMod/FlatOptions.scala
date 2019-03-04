@@ -22,8 +22,7 @@ object FlatOptions {
     platform: java.lang.String = null,
     scripts: java.lang.String = null
   ): FlatOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("app")(app)
+    val __obj = js.Dynamic.literal(app = app)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (install != null) __obj.updateDynamic("install")(install)
     if (keychain != null) __obj.updateDynamic("keychain")(keychain)

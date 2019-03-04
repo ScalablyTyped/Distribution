@@ -35,19 +35,8 @@ object Thesaurus {
     release: js.Function0[scala.Unit],
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
   ): Thesaurus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Locales")(Locales)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getLocales")(getLocales)
-    __obj.updateDynamic("getServiceDisplayName")(getServiceDisplayName)
-    __obj.updateDynamic("hasLocale")(hasLocale)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryMeanings")(queryMeanings)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    val __obj = js.Dynamic.literal(Locales = Locales, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getLocales = getLocales, getServiceDisplayName = getServiceDisplayName, hasLocale = hasLocale, initialize = initialize, queryInterface = queryInterface, queryMeanings = queryMeanings, release = release, removeEventListener = removeEventListener)
+  
     __obj.asInstanceOf[Thesaurus]
   }
 }

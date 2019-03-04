@@ -12,8 +12,8 @@ trait _Impl extends js.Object {
 object _Impl {
   @scala.inline
   def apply(dimmer: js.Function0[semanticDashUiDashDimmerLib.JQuery]): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dimmer")(dimmer)
+    val __obj = js.Dynamic.literal(dimmer = dimmer)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

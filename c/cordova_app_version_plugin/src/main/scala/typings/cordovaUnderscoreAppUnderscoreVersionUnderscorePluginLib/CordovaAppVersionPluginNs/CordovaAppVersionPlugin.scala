@@ -16,8 +16,8 @@ trait CordovaAppVersionPlugin extends js.Object {
 object CordovaAppVersionPlugin {
   @scala.inline
   def apply(getAppVersion: js.Function0[java.lang.String]): CordovaAppVersionPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAppVersion")(getAppVersion)
+    val __obj = js.Dynamic.literal(getAppVersion = getAppVersion)
+  
     __obj.asInstanceOf[CordovaAppVersionPlugin]
   }
 }

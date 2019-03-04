@@ -13,9 +13,8 @@ trait ViewContext extends js.Object {
 object ViewContext {
   @scala.inline
   def apply(name: java.lang.String, parent: ViewContext): ViewContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(name = name, parent = parent)
+  
     __obj.asInstanceOf[ViewContext]
   }
 }

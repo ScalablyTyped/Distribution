@@ -21,11 +21,8 @@ object IRule {
     getOptions: js.Function0[IOptions],
     isEnabled: js.Function0[scala.Boolean]
   ): IRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("applyWithWalker")(applyWithWalker)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(apply = apply, applyWithWalker = applyWithWalker, getOptions = getOptions, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[IRule]
   }
 }

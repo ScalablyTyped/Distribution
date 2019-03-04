@@ -17,9 +17,8 @@ object cssClasses {
     CHOICE: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-set--choice`,
     FILTER: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-set--filter`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHOICE")(CHOICE)
-    __obj.updateDynamic("FILTER")(FILTER)
+    val __obj = js.Dynamic.literal(CHOICE = CHOICE, FILTER = FILTER)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

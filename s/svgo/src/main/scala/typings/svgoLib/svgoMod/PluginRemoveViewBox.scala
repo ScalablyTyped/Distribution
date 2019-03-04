@@ -12,8 +12,8 @@ trait PluginRemoveViewBox extends js.Object {
 object PluginRemoveViewBox {
   @scala.inline
   def apply(removeViewBox: scala.Boolean | js.Object): PluginRemoveViewBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeViewBox")(removeViewBox.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeViewBox = removeViewBox.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveViewBox]
   }
 }

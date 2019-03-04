@@ -19,11 +19,8 @@ trait DeleteSurroundingTextParameters extends js.Object {
 object DeleteSurroundingTextParameters {
   @scala.inline
   def apply(contextID: scala.Double, engineID: java.lang.String, length: scala.Double, offset: scala.Double): DeleteSurroundingTextParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contextID")(contextID)
-    __obj.updateDynamic("engineID")(engineID)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("offset")(offset)
+    val __obj = js.Dynamic.literal(contextID = contextID, engineID = engineID, length = length, offset = offset)
+  
     __obj.asInstanceOf[DeleteSurroundingTextParameters]
   }
 }

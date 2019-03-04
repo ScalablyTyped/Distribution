@@ -64,14 +64,8 @@ object XBufferController {
     showBuffer: js.Function1[scala.Boolean, scala.Boolean],
     switchBuffer: js.Function1[scala.Boolean, scala.Boolean]
   ): XBufferController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createBuffers")(createBuffers)
-    __obj.updateDynamic("destroyBuffers")(destroyBuffers)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("showBuffer")(showBuffer)
-    __obj.updateDynamic("switchBuffer")(switchBuffer)
+    val __obj = js.Dynamic.literal(acquire = acquire, createBuffers = createBuffers, destroyBuffers = destroyBuffers, queryInterface = queryInterface, release = release, showBuffer = showBuffer, switchBuffer = switchBuffer)
+  
     __obj.asInstanceOf[XBufferController]
   }
 }

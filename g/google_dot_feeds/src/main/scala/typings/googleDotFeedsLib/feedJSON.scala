@@ -22,12 +22,8 @@ object feedJSON {
     feedURL: java.lang.String,
     link: java.lang.String
   ): feedJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("feedURL")(feedURL)
-    __obj.updateDynamic("link")(link)
+    val __obj = js.Dynamic.literal(author = author, description = description, entries = entries, feedURL = feedURL, link = link)
+  
     __obj.asInstanceOf[feedJSON]
   }
 }

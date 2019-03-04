@@ -46,10 +46,8 @@ object ReferencesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
     ]
   ): ReferencesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bases")(bases)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(bases = bases, get = get, search = search)
+  
     __obj.asInstanceOf[ReferencesResource]
   }
 }

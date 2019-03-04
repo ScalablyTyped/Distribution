@@ -36,12 +36,8 @@ object XDataFormatTranslator {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDataFormatTranslator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataFlavorFromSystemDataType")(getDataFlavorFromSystemDataType)
-    __obj.updateDynamic("getSystemDataTypeFromDataFlavor")(getSystemDataTypeFromDataFlavor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, getDataFlavorFromSystemDataType = getDataFlavorFromSystemDataType, getSystemDataTypeFromDataFlavor = getSystemDataTypeFromDataFlavor, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDataFormatTranslator]
   }
 }

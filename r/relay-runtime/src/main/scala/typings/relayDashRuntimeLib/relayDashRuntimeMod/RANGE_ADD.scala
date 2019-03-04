@@ -26,8 +26,8 @@ object RANGE_ADD {
     parentName: java.lang.String = null,
     rangeBehaviors: RangeBehaviors = null
   ): RANGE_ADD = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("edgeName")(edgeName)
+    val __obj = js.Dynamic.literal(edgeName = edgeName)
+    __obj.updateDynamic("type")(`type`)
     if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo)
     if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
     if (parentID != null) __obj.updateDynamic("parentID")(parentID)

@@ -26,14 +26,8 @@ object Anon_AbortedCompleted {
     unspecified: scala.Double,
     waiting: scala.Double
   ): Anon_AbortedCompleted = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("completed")(completed)
-    __obj.updateDynamic("inProgress")(inProgress)
-    __obj.updateDynamic("needsInvestigation")(needsInvestigation)
-    __obj.updateDynamic("notStarted")(notStarted)
-    __obj.updateDynamic("unspecified")(unspecified)
-    __obj.updateDynamic("waiting")(waiting)
+    val __obj = js.Dynamic.literal(aborted = aborted, completed = completed, inProgress = inProgress, needsInvestigation = needsInvestigation, notStarted = notStarted, unspecified = unspecified, waiting = waiting)
+  
     __obj.asInstanceOf[Anon_AbortedCompleted]
   }
 }

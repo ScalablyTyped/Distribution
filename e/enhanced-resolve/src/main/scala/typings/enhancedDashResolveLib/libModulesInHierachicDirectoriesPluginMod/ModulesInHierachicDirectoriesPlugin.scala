@@ -21,11 +21,8 @@ object ModulesInHierachicDirectoriesPlugin {
     source: java.lang.String,
     target: java.lang.String
   ): ModulesInHierachicDirectoriesPlugin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("directories")(directories)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(apply = apply, directories = directories, source = source, target = target)
+  
     __obj.asInstanceOf[ModulesInHierachicDirectoriesPlugin]
   }
 }

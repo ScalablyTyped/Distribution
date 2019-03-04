@@ -12,8 +12,8 @@ trait IMaintenanceTriggerFactory extends js.Object {
 object IMaintenanceTriggerFactory {
   @scala.inline
   def apply(create: js.Function2[scala.Double, scala.Boolean, MaintenanceTrigger]): IMaintenanceTriggerFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[IMaintenanceTriggerFactory]
   }
 }

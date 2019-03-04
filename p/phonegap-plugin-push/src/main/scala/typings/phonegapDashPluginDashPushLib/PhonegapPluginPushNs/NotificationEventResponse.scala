@@ -43,12 +43,7 @@ object NotificationEventResponse {
     sound: java.lang.String,
     title: java.lang.String = null
   ): NotificationEventResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalData")(additionalData)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("sound")(sound)
+    val __obj = js.Dynamic.literal(additionalData = additionalData, count = count, image = image, message = message, sound = sound)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[NotificationEventResponse]
   }

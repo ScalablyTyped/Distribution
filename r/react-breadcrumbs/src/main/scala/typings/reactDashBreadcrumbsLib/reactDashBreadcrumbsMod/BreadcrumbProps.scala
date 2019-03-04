@@ -16,8 +16,7 @@ object BreadcrumbProps {
     data: historyLib.historyMod.LocationDescriptor[historyLib.historyMod.LocationState] with reactDashBreadcrumbsLib.Anon_Title,
     hidden: js.UndefOr[scala.Boolean] = js.undefined
   ): BreadcrumbProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     __obj.asInstanceOf[BreadcrumbProps]
   }

@@ -28,11 +28,7 @@ object SetTabBarStyleOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): SetTabBarStyleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("borderStyle")(borderStyle)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("selectedColor")(selectedColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, borderStyle = borderStyle, color = color, selectedColor = selectedColor)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

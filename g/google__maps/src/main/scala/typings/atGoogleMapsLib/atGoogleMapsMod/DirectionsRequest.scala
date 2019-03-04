@@ -142,9 +142,7 @@ object DirectionsRequest {
     units: UnitSystem = null,
     waypoints: js.Array[LatLng] = null
   ): DirectionsRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     if (!js.isUndefined(alternatives)) __obj.updateDynamic("alternatives")(alternatives)
     if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
     if (avoid != null) __obj.updateDynamic("avoid")(avoid)

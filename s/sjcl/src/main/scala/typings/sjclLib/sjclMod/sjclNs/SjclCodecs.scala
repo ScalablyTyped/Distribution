@@ -22,12 +22,8 @@ object SjclCodecs {
     hex: SjclCodec[java.lang.String],
     utf8String: SjclCodec[java.lang.String]
   ): SjclCodecs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("base64url")(base64url)
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("utf8String")(utf8String)
+    val __obj = js.Dynamic.literal(base64 = base64, base64url = base64url, bytes = bytes, hex = hex, utf8String = utf8String)
+  
     __obj.asInstanceOf[SjclCodecs]
   }
 }

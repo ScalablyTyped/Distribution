@@ -16,9 +16,7 @@ object AntTreeNodeExpandedEvent {
     node: AntTreeNode,
     expanded: js.UndefOr[scala.Boolean] = js.undefined
   ): AntTreeNodeExpandedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent, node = node)
     if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
     __obj.asInstanceOf[AntTreeNodeExpandedEvent]
   }

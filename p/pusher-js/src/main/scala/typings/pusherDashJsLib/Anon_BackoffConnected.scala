@@ -22,12 +22,8 @@ object Anon_BackoffConnected {
     retry: js.Function0[scala.Unit],
     ssl_only: js.Function0[scala.Unit]
   ): Anon_BackoffConnected = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backoff")(backoff)
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("refused")(refused)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("ssl_only")(ssl_only)
+    val __obj = js.Dynamic.literal(backoff = backoff, connected = connected, refused = refused, retry = retry, ssl_only = ssl_only)
+  
     __obj.asInstanceOf[Anon_BackoffConnected]
   }
 }

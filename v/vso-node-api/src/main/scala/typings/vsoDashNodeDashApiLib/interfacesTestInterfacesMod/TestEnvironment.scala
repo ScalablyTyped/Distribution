@@ -13,9 +13,8 @@ trait TestEnvironment extends js.Object {
 object TestEnvironment {
   @scala.inline
   def apply(environmentId: java.lang.String, environmentName: java.lang.String): TestEnvironment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("environmentId")(environmentId)
-    __obj.updateDynamic("environmentName")(environmentName)
+    val __obj = js.Dynamic.literal(environmentId = environmentId, environmentName = environmentName)
+  
     __obj.asInstanceOf[TestEnvironment]
   }
 }

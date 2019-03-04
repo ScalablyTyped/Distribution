@@ -35,11 +35,8 @@ object FinishEngineEvent {
     Return: js.Any,
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
   ): FinishEngineEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    __obj.updateDynamic("Finish")(Finish)
-    __obj.updateDynamic("Return")(Return)
-    __obj.updateDynamic("Source")(Source)
+    val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage, Finish = Finish, Return = Return, Source = Source)
+  
     __obj.asInstanceOf[FinishEngineEvent]
   }
 }

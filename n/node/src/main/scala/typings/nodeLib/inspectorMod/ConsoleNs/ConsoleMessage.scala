@@ -45,10 +45,7 @@ object ConsoleMessage {
     line: scala.Int | scala.Double = null,
     url: java.lang.String = null
   ): ConsoleMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(level = level, source = source, text = text)
     if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
     if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url)

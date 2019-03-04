@@ -30,8 +30,7 @@ object IXHROptions {
     `type`: java.lang.String = null,
     user: java.lang.String = null
   ): IXHROptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (customRequestInitializer != null) __obj.updateDynamic("customRequestInitializer")(customRequestInitializer)
     if (data != null) __obj.updateDynamic("data")(data)
     if (headers != null) __obj.updateDynamic("headers")(headers)

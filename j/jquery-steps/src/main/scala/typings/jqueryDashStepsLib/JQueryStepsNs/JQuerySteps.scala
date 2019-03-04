@@ -67,18 +67,8 @@ object JQuerySteps {
     remove: js.Function1[scala.Double, scala.Boolean],
     skip: js.Function1[scala.Double, scala.Boolean]
   ): JQuerySteps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("finish")(finish)
-    __obj.updateDynamic("getCurrentIndex")(getCurrentIndex)
-    __obj.updateDynamic("getCurrentStep")(getCurrentStep)
-    __obj.updateDynamic("getStep")(getStep)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("previous")(previous)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("skip")(skip)
+    val __obj = js.Dynamic.literal(add = add, destroy = destroy, finish = finish, getCurrentIndex = getCurrentIndex, getCurrentStep = getCurrentStep, getStep = getStep, insert = insert, next = next, previous = previous, remove = remove, skip = skip)
+  
     __obj.asInstanceOf[JQuerySteps]
   }
 }

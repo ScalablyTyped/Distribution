@@ -13,9 +13,8 @@ trait ClientLookupValue extends js.Object {
 object ClientLookupValue {
   @scala.inline
   def apply(LookupId: scala.Double, LookupValue: java.lang.String): ClientLookupValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LookupId")(LookupId)
-    __obj.updateDynamic("LookupValue")(LookupValue)
+    val __obj = js.Dynamic.literal(LookupId = LookupId, LookupValue = LookupValue)
+  
     __obj.asInstanceOf[ClientLookupValue]
   }
 }

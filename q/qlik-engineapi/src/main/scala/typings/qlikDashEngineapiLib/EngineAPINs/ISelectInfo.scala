@@ -54,12 +54,7 @@ object ISelectInfo {
     qRangeLo: scala.Double,
     qTextSearch: java.lang.String = null
   ): ISelectInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qContinuousRangeInfo")(qContinuousRangeInfo)
-    __obj.updateDynamic("qNumberFormat")(qNumberFormat)
-    __obj.updateDynamic("qRangeHi")(qRangeHi)
-    __obj.updateDynamic("qRangeInfo")(qRangeInfo)
-    __obj.updateDynamic("qRangeLo")(qRangeLo)
+    val __obj = js.Dynamic.literal(qContinuousRangeInfo = qContinuousRangeInfo, qNumberFormat = qNumberFormat, qRangeHi = qRangeHi, qRangeInfo = qRangeInfo, qRangeLo = qRangeLo)
     if (qTextSearch != null) __obj.updateDynamic("qTextSearch")(qTextSearch)
     __obj.asInstanceOf[ISelectInfo]
   }

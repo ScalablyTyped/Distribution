@@ -30,9 +30,7 @@ object iComponent {
     templateUrl: java.lang.String = null,
     transclude: java.lang.String = null
   ): iComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(selector = selector, template = template)
     if (bindings != null) __obj.updateDynamic("bindings")(bindings)
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
     if (require != null) __obj.updateDynamic("require")(require)

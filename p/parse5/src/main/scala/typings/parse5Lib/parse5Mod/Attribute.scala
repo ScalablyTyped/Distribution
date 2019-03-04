@@ -32,9 +32,7 @@ object Attribute {
     namespace: java.lang.String = null,
     prefix: java.lang.String = null
   ): Attribute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(name = name, value = value)
     if (namespace != null) __obj.updateDynamic("namespace")(namespace)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     __obj.asInstanceOf[Attribute]

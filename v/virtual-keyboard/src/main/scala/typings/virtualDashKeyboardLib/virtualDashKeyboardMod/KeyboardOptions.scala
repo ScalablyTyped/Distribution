@@ -138,7 +138,8 @@ object KeyboardOptions {
     visible: kbEventHandler = null,
     wheelMessage: java.lang.String = null
   ): KeyboardOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(acceptValid)) __obj.updateDynamic("acceptValid")(acceptValid)
     if (accepted != null) __obj.updateDynamic("accepted")(accepted)
     if (!js.isUndefined(alwaysOpen)) __obj.updateDynamic("alwaysOpen")(alwaysOpen)

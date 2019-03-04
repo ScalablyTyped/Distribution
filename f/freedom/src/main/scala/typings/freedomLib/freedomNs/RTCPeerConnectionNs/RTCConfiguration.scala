@@ -18,8 +18,7 @@ object RTCConfiguration {
     iceTransports: java.lang.String = null,
     peerIdentity: java.lang.String = null
   ): RTCConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iceServers")(iceServers)
+    val __obj = js.Dynamic.literal(iceServers = iceServers)
     if (iceTransports != null) __obj.updateDynamic("iceTransports")(iceTransports)
     if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity)
     __obj.asInstanceOf[RTCConfiguration]

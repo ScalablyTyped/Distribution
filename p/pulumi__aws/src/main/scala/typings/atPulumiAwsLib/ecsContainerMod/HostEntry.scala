@@ -13,9 +13,8 @@ trait HostEntry extends js.Object {
 object HostEntry {
   @scala.inline
   def apply(hostname: java.lang.String, ipAddress: java.lang.String): HostEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("ipAddress")(ipAddress)
+    val __obj = js.Dynamic.literal(hostname = hostname, ipAddress = ipAddress)
+  
     __obj.asInstanceOf[HostEntry]
   }
 }

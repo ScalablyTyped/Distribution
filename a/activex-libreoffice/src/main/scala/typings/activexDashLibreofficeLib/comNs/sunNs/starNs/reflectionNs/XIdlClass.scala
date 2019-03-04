@@ -191,36 +191,8 @@ object XIdlClass {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XIdlClass[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Array")(Array)
-    __obj.updateDynamic("Classes")(Classes)
-    __obj.updateDynamic("ComponentType")(ComponentType)
-    __obj.updateDynamic("Fields")(Fields)
-    __obj.updateDynamic("Interfaces")(Interfaces)
-    __obj.updateDynamic("Methods")(Methods)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Superclasses")(Superclasses)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("Uik")(Uik)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createObject")(createObject)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("getArray")(getArray)
-    __obj.updateDynamic("getClass")(getClass)
-    __obj.updateDynamic("getClasses")(getClasses)
-    __obj.updateDynamic("getComponentType")(getComponentType)
-    __obj.updateDynamic("getField")(getField)
-    __obj.updateDynamic("getFields")(getFields)
-    __obj.updateDynamic("getInterfaces")(getInterfaces)
-    __obj.updateDynamic("getMethod")(getMethod)
-    __obj.updateDynamic("getMethods")(getMethods)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSuperclasses")(getSuperclasses)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("getUik")(getUik)
-    __obj.updateDynamic("isAssignableFrom")(isAssignableFrom)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Array = Array, Classes = Classes, ComponentType = ComponentType, Fields = Fields, Interfaces = Interfaces, Methods = Methods, Name = Name, Superclasses = Superclasses, TypeClass = TypeClass, Uik = Uik, acquire = acquire, createObject = createObject, equals = equals, getArray = getArray, getClass = getClass, getClasses = getClasses, getComponentType = getComponentType, getField = getField, getFields = getFields, getInterfaces = getInterfaces, getMethod = getMethod, getMethods = getMethods, getName = getName, getSuperclasses = getSuperclasses, getTypeClass = getTypeClass, getUik = getUik, isAssignableFrom = isAssignableFrom, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XIdlClass[T]]
   }
 }

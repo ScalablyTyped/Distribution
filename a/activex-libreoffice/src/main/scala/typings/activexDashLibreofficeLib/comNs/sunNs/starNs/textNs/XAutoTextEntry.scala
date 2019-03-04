@@ -23,11 +23,8 @@ object XAutoTextEntry {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAutoTextEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applyTo")(applyTo)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, applyTo = applyTo, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAutoTextEntry]
   }
 }

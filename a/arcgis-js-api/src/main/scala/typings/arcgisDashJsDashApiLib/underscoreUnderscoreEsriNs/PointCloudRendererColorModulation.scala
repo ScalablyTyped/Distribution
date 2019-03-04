@@ -41,11 +41,7 @@ object PointCloudRendererColorModulation {
     maxValue: scala.Int | scala.Double = null,
     minValue: scala.Int | scala.Double = null
   ): PointCloudRendererColorModulation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, field = field, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
     if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudRendererColorModulation]

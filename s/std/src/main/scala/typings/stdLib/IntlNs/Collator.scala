@@ -16,9 +16,8 @@ object Collator {
     compare: js.Function2[java.lang.String, java.lang.String, scala.Double],
     resolvedOptions: js.Function0[ResolvedCollatorOptions]
   ): Collator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(compare)
-    __obj.updateDynamic("resolvedOptions")(resolvedOptions)
+    val __obj = js.Dynamic.literal(compare = compare, resolvedOptions = resolvedOptions)
+  
     __obj.asInstanceOf[Collator]
   }
 }

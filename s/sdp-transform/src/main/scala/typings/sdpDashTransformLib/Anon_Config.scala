@@ -20,9 +20,7 @@ object Anon_Config {
     config: java.lang.String = null,
     direction: java.lang.String = null
   ): Anon_Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(uri = uri, value = value)
     if (config != null) __obj.updateDynamic("config")(config)
     if (direction != null) __obj.updateDynamic("direction")(direction)
     __obj.asInstanceOf[Anon_Config]

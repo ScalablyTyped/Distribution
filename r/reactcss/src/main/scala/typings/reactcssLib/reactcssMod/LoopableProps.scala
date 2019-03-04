@@ -26,7 +26,8 @@ object LoopableProps {
     odd: js.UndefOr[scala.Boolean] = js.undefined,
     ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
   ): LoopableProps = {
-    val __obj = js.Dynamic.literal(`nth-child` = `nth-child`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nth-child")(`nth-child`)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (!js.isUndefined(even)) __obj.updateDynamic("even")(even)
     if (!js.isUndefined(`first-child`)) __obj.updateDynamic("first-child")(`first-child`)

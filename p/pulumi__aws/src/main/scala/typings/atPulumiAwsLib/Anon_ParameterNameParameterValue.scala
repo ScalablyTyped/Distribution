@@ -16,9 +16,8 @@ object Anon_ParameterNameParameterValue {
     parameterName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     parameterValue: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ParameterNameParameterValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    __obj.updateDynamic("parameterValue")(parameterValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], parameterValue = parameterValue.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ParameterNameParameterValue]
   }
 }

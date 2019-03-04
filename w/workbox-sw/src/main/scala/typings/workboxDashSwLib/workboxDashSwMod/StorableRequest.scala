@@ -22,11 +22,8 @@ object StorableRequest {
     toObject: js.Function0[IStorableRequestOptions],
     toRequest: js.Function0[stdLib.Request]
   ): StorableRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("toObject")(toObject)
-    __obj.updateDynamic("toRequest")(toRequest)
+    val __obj = js.Dynamic.literal(clone = clone, timestamp = timestamp, toObject = toObject, toRequest = toRequest)
+  
     __obj.asInstanceOf[StorableRequest]
   }
 }

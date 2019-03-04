@@ -30,9 +30,7 @@ object ClassModel {
     meteorMethods: js.Object = null,
     secured: meteorDashAstronomyLib.Anon_Insert | scala.Boolean = null
   ): ClassModel[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(fields = fields, name = name)
     if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
     if (collection != null) __obj.updateDynamic("collection")(collection)
     if (events != null) __obj.updateDynamic("events")(events)

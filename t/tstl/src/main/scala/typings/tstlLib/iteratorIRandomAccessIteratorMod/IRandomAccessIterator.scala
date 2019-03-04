@@ -32,13 +32,8 @@ object IRandomAccessIterator {
     prev: js.Function0[Iterator],
     value: T
   ): IRandomAccessIterator[T, Iterator] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("advance")(advance)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(advance = advance, equals = equals, index = index, next = next, prev = prev, value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IRandomAccessIterator[T, Iterator]]
   }
 }

@@ -32,11 +32,7 @@ object Agent {
     matchMode: MatchMode = null,
     supportedLanguageCodes: js.Array[java.lang.String] = null
   ): Agent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultLanguageCode")(defaultLanguageCode)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("timeZone")(timeZone)
+    val __obj = js.Dynamic.literal(defaultLanguageCode = defaultLanguageCode, displayName = displayName, parent = parent, timeZone = timeZone)
     if (avatarUri != null) __obj.updateDynamic("avatarUri")(avatarUri)
     if (classificationThreshold != null) __obj.updateDynamic("classificationThreshold")(classificationThreshold.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)

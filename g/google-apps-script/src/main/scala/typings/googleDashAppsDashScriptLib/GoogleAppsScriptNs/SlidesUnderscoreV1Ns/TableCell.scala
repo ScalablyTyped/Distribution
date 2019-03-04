@@ -27,12 +27,8 @@ object TableCell {
     table_cell_properties: TableCellProperties,
     text: TextContent
   ): TableCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column_span")(column_span)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("row_span")(row_span)
-    __obj.updateDynamic("table_cell_properties")(table_cell_properties)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(column_span = column_span, location = location, row_span = row_span, table_cell_properties = table_cell_properties, text = text)
+  
     __obj.asInstanceOf[TableCell]
   }
 }

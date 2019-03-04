@@ -23,11 +23,8 @@ object LayoutEventObject {
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
     target: js.Any = null
   ): LayoutEventObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("cy")(cy)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(cy = cy, layout = layout, namespace = namespace, timeStamp = timeStamp)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[LayoutEventObject]
   }

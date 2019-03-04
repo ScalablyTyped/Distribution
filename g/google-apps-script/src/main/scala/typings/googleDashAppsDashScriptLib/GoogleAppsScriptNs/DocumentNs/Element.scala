@@ -72,37 +72,8 @@ object Element {
     removeFromParent: js.Function0[Element],
     setAttributes: js.Function1[js.Object, Element]
   ): Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBody")(asBody)
-    __obj.updateDynamic("asEquation")(asEquation)
-    __obj.updateDynamic("asEquationFunction")(asEquationFunction)
-    __obj.updateDynamic("asEquationFunctionArgumentSeparator")(asEquationFunctionArgumentSeparator)
-    __obj.updateDynamic("asEquationSymbol")(asEquationSymbol)
-    __obj.updateDynamic("asFooterSection")(asFooterSection)
-    __obj.updateDynamic("asFootnote")(asFootnote)
-    __obj.updateDynamic("asFootnoteSection")(asFootnoteSection)
-    __obj.updateDynamic("asHeaderSection")(asHeaderSection)
-    __obj.updateDynamic("asHorizontalRule")(asHorizontalRule)
-    __obj.updateDynamic("asInlineDrawing")(asInlineDrawing)
-    __obj.updateDynamic("asInlineImage")(asInlineImage)
-    __obj.updateDynamic("asListItem")(asListItem)
-    __obj.updateDynamic("asPageBreak")(asPageBreak)
-    __obj.updateDynamic("asParagraph")(asParagraph)
-    __obj.updateDynamic("asTable")(asTable)
-    __obj.updateDynamic("asTableCell")(asTableCell)
-    __obj.updateDynamic("asTableOfContents")(asTableOfContents)
-    __obj.updateDynamic("asTableRow")(asTableRow)
-    __obj.updateDynamic("asText")(asText)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAttributes")(setAttributes)
+    val __obj = js.Dynamic.literal(asBody = asBody, asEquation = asEquation, asEquationFunction = asEquationFunction, asEquationFunctionArgumentSeparator = asEquationFunctionArgumentSeparator, asEquationSymbol = asEquationSymbol, asFooterSection = asFooterSection, asFootnote = asFootnote, asFootnoteSection = asFootnoteSection, asHeaderSection = asHeaderSection, asHorizontalRule = asHorizontalRule, asInlineDrawing = asInlineDrawing, asInlineImage = asInlineImage, asListItem = asListItem, asPageBreak = asPageBreak, asParagraph = asParagraph, asTable = asTable, asTableCell = asTableCell, asTableOfContents = asTableOfContents, asTableRow = asTableRow, asText = asText, copy = copy, getAttributes = getAttributes, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, merge = merge, removeFromParent = removeFromParent, setAttributes = setAttributes)
+  
     __obj.asInstanceOf[Element]
   }
 }

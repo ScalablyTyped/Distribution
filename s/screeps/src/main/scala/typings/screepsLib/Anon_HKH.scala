@@ -18,10 +18,8 @@ object Anon_HKH {
     O: screepsLib.screepsLibStrings.KO,
     Z: screepsLib.screepsLibStrings.ZK
   ): Anon_HKH = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("H")(H)
-    __obj.updateDynamic("O")(O)
-    __obj.updateDynamic("Z")(Z)
+    val __obj = js.Dynamic.literal(H = H, O = O, Z = Z)
+  
     __obj.asInstanceOf[Anon_HKH]
   }
 }

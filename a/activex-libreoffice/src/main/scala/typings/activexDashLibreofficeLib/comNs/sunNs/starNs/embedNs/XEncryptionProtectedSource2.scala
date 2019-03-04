@@ -39,14 +39,8 @@ object XEncryptionProtectedSource2 {
     ],
     setEncryptionPassword: js.Function1[java.lang.String, scala.Unit]
   ): XEncryptionProtectedSource2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("hasEncryptionData")(hasEncryptionData)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryption")(removeEncryption)
-    __obj.updateDynamic("setEncryptionData")(setEncryptionData)
-    __obj.updateDynamic("setEncryptionPassword")(setEncryptionPassword)
+    val __obj = js.Dynamic.literal(acquire = acquire, hasEncryptionData = hasEncryptionData, queryInterface = queryInterface, release = release, removeEncryption = removeEncryption, setEncryptionData = setEncryptionData, setEncryptionPassword = setEncryptionPassword)
+  
     __obj.asInstanceOf[XEncryptionProtectedSource2]
   }
 }

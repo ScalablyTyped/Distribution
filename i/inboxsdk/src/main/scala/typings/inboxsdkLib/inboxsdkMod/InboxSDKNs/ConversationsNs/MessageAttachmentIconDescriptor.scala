@@ -20,9 +20,7 @@ object MessageAttachmentIconDescriptor {
     iconClass: java.lang.String = null,
     onClick: js.Function0[scala.Unit] = null
   ): MessageAttachmentIconDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(iconUrl = iconUrl, tooltip = tooltip)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     __obj.asInstanceOf[MessageAttachmentIconDescriptor]

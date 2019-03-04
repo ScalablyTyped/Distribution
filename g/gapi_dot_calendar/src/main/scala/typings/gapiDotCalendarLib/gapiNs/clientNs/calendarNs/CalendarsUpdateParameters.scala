@@ -24,8 +24,7 @@ object CalendarsUpdateParameters {
     summary: java.lang.String = null,
     timeZone: java.lang.String = null
   ): CalendarsUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId)
     if (description != null) __obj.updateDynamic("description")(description)
     if (location != null) __obj.updateDynamic("location")(location)
     if (summary != null) __obj.updateDynamic("summary")(summary)

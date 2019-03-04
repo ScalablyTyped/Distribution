@@ -140,20 +140,8 @@ object LineDescriptor {
     SecondaryButtonImage: activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic,
     SecondaryButtonImageURL: java.lang.String
   ): LineDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Category")(Category)
-    __obj.updateDynamic("Control")(Control)
-    __obj.updateDynamic("DisplayName")(DisplayName)
-    __obj.updateDynamic("HasPrimaryButton")(HasPrimaryButton)
-    __obj.updateDynamic("HasSecondaryButton")(HasSecondaryButton)
-    __obj.updateDynamic("HelpURL")(HelpURL)
-    __obj.updateDynamic("IndentLevel")(IndentLevel)
-    __obj.updateDynamic("PrimaryButtonId")(PrimaryButtonId)
-    __obj.updateDynamic("PrimaryButtonImage")(PrimaryButtonImage)
-    __obj.updateDynamic("PrimaryButtonImageURL")(PrimaryButtonImageURL)
-    __obj.updateDynamic("SecondaryButtonId")(SecondaryButtonId)
-    __obj.updateDynamic("SecondaryButtonImage")(SecondaryButtonImage)
-    __obj.updateDynamic("SecondaryButtonImageURL")(SecondaryButtonImageURL)
+    val __obj = js.Dynamic.literal(Category = Category, Control = Control, DisplayName = DisplayName, HasPrimaryButton = HasPrimaryButton, HasSecondaryButton = HasSecondaryButton, HelpURL = HelpURL, IndentLevel = IndentLevel, PrimaryButtonId = PrimaryButtonId, PrimaryButtonImage = PrimaryButtonImage, PrimaryButtonImageURL = PrimaryButtonImageURL, SecondaryButtonId = SecondaryButtonId, SecondaryButtonImage = SecondaryButtonImage, SecondaryButtonImageURL = SecondaryButtonImageURL)
+  
     __obj.asInstanceOf[LineDescriptor]
   }
 }

@@ -42,8 +42,7 @@ object ServerEventsApplicationObject {
     spread: js.UndefOr[scala.Boolean] = js.undefined,
     tags: js.UndefOr[scala.Boolean] = js.undefined
   ): ServerEventsApplicationObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)

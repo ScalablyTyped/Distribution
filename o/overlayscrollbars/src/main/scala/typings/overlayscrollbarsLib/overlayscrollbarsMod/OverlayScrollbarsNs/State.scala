@@ -36,19 +36,8 @@ object State {
     viewportSize: overlayscrollbarsLib.Anon_Height,
     widthAuto: scala.Boolean
   ): State = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoUpdate")(autoUpdate)
-    __obj.updateDynamic("contentScrollSize")(contentScrollSize)
-    __obj.updateDynamic("documentMixed")(documentMixed)
-    __obj.updateDynamic("hasOverflow")(hasOverflow)
-    __obj.updateDynamic("heightAuto")(heightAuto)
-    __obj.updateDynamic("hideOverflow")(hideOverflow)
-    __obj.updateDynamic("hostSize")(hostSize)
-    __obj.updateDynamic("overflowAmount")(overflowAmount)
-    __obj.updateDynamic("padding")(padding)
-    __obj.updateDynamic("sleeping")(sleeping)
-    __obj.updateDynamic("viewportSize")(viewportSize)
-    __obj.updateDynamic("widthAuto")(widthAuto)
+    val __obj = js.Dynamic.literal(autoUpdate = autoUpdate, contentScrollSize = contentScrollSize, documentMixed = documentMixed, hasOverflow = hasOverflow, heightAuto = heightAuto, hideOverflow = hideOverflow, hostSize = hostSize, overflowAmount = overflowAmount, padding = padding, sleeping = sleeping, viewportSize = viewportSize, widthAuto = widthAuto)
+  
     __obj.asInstanceOf[State]
   }
 }

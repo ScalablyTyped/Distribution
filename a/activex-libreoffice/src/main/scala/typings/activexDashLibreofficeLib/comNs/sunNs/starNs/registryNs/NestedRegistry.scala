@@ -69,21 +69,8 @@ object NestedRegistry {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): NestedRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RootKey")(RootKey)
-    __obj.updateDynamic("URL")(URL)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getRootKey")(getRootKey)
-    __obj.updateDynamic("getURL")(getURL)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("isValid")(isValid)
-    __obj.updateDynamic("mergeKey")(mergeKey)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(RootKey = RootKey, URL = URL, acquire = acquire, close = close, destroy = destroy, getRootKey = getRootKey, getURL = getURL, initialize = initialize, isReadOnly = isReadOnly, isValid = isValid, mergeKey = mergeKey, open = open, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[NestedRegistry]
   }
 }

@@ -12,8 +12,8 @@ trait DrawerLayoutSlideEvent extends js.Object {
 object DrawerLayoutSlideEvent {
   @scala.inline
   def apply(nativeEvent: reactDashNativeDashDrawerDashLayoutLib.Anon_Offset): DrawerLayoutSlideEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
     __obj.asInstanceOf[DrawerLayoutSlideEvent]
   }
 }

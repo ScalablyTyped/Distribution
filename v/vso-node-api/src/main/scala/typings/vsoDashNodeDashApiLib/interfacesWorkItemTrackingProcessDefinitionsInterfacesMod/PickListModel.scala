@@ -22,12 +22,8 @@ object PickListModel {
     `type`: java.lang.String,
     url: java.lang.String
   ): PickListModel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isSuggested")(isSuggested)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, isSuggested = isSuggested, items = items, name = name, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PickListModel]
   }
 }

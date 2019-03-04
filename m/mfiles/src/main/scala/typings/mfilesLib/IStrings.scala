@@ -26,14 +26,8 @@ object IStrings {
     Join: js.Function1[java.lang.String, java.lang.String],
     Remove: js.Function1[scala.Double, scala.Unit]
   ): IStrings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Add")(Add)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Item")(Item)
-    __obj.updateDynamic("Join")(Join)
-    __obj.updateDynamic("Remove")(Remove)
+    val __obj = js.Dynamic.literal(Add = Add, Clone = Clone, CloneFrom = CloneFrom, Count = Count, Item = Item, Join = Join, Remove = Remove)
+  
     __obj.asInstanceOf[IStrings]
   }
 }

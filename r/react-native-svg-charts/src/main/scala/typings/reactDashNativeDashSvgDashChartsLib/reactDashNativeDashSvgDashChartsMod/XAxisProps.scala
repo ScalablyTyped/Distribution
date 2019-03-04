@@ -24,8 +24,7 @@ object XAxisProps {
     svg: stdLib.Partial[reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.TextProps] = null,
     xAccessor: AccessorFunction[T, _] = null
   ): XAxisProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset)
     if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
     if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])

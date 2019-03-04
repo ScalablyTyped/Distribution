@@ -17,10 +17,8 @@ object IMapAction {
     end: js.Function0[scala.Unit],
     events: IEventManager
   ): IMapAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("events")(events)
+    val __obj = js.Dynamic.literal(begin = begin, end = end, events = events)
+  
     __obj.asInstanceOf[IMapAction]
   }
 }

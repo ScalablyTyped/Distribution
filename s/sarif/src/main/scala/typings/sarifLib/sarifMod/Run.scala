@@ -119,8 +119,7 @@ object Run {
     results: js.Array[Result] = null,
     versionControlProvenance: js.Array[VersionControlDetails] = null
   ): Run = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tool")(tool)
+    val __obj = js.Dynamic.literal(tool = tool)
     if (aggregateIds != null) __obj.updateDynamic("aggregateIds")(aggregateIds)
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
     if (baselineInstanceGuid != null) __obj.updateDynamic("baselineInstanceGuid")(baselineInstanceGuid)

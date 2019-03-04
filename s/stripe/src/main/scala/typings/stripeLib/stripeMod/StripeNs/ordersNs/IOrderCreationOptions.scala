@@ -49,8 +49,7 @@ object IOrderCreationOptions {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null
   ): IOrderCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currency")(currency)
+    val __obj = js.Dynamic.literal(currency = currency)
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (email != null) __obj.updateDynamic("email")(email)

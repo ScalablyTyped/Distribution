@@ -13,9 +13,8 @@ trait MonthYear extends js.Object {
 object MonthYear {
   @scala.inline
   def apply(month: scala.Double, year: scala.Double): MonthYear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("month")(month)
-    __obj.updateDynamic("year")(year)
+    val __obj = js.Dynamic.literal(month = month, year = year)
+  
     __obj.asInstanceOf[MonthYear]
   }
 }

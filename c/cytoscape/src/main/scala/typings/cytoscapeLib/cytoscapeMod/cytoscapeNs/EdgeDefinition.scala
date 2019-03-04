@@ -26,8 +26,7 @@ object EdgeDefinition {
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     style: CssStyleDeclaration = null
   ): EdgeDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
     if (!js.isUndefined(grabbable)) __obj.updateDynamic("grabbable")(grabbable)

@@ -36,26 +36,8 @@ object XWriter {
     startElement: js.Function2[java.lang.String, XAttributeList, scala.Unit],
     unknown: js.Function1[java.lang.String, scala.Unit]
   ): XWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("OutputStream")(OutputStream)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("allowLineBreak")(allowLineBreak)
-    __obj.updateDynamic("characters")(characters)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("endCDATA")(endCDATA)
-    __obj.updateDynamic("endDocument")(endDocument)
-    __obj.updateDynamic("endElement")(endElement)
-    __obj.updateDynamic("getOutputStream")(getOutputStream)
-    __obj.updateDynamic("ignorableWhitespace")(ignorableWhitespace)
-    __obj.updateDynamic("processingInstruction")(processingInstruction)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setDocumentLocator")(setDocumentLocator)
-    __obj.updateDynamic("setOutputStream")(setOutputStream)
-    __obj.updateDynamic("startCDATA")(startCDATA)
-    __obj.updateDynamic("startDocument")(startDocument)
-    __obj.updateDynamic("startElement")(startElement)
-    __obj.updateDynamic("unknown")(unknown)
+    val __obj = js.Dynamic.literal(OutputStream = OutputStream, acquire = acquire, allowLineBreak = allowLineBreak, characters = characters, comment = comment, endCDATA = endCDATA, endDocument = endDocument, endElement = endElement, getOutputStream = getOutputStream, ignorableWhitespace = ignorableWhitespace, processingInstruction = processingInstruction, queryInterface = queryInterface, release = release, setDocumentLocator = setDocumentLocator, setOutputStream = setOutputStream, startCDATA = startCDATA, startDocument = startDocument, startElement = startElement, unknown = unknown)
+  
     __obj.asInstanceOf[XWriter]
   }
 }

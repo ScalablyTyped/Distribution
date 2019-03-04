@@ -22,12 +22,8 @@ object ListObjectResult {
     prefixes: js.Array[java.lang.String],
     res: NormalSuccessResponse
   ): ListObjectResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isTruncated")(isTruncated)
-    __obj.updateDynamic("nextMarker")(nextMarker)
-    __obj.updateDynamic("objects")(objects)
-    __obj.updateDynamic("prefixes")(prefixes)
-    __obj.updateDynamic("res")(res)
+    val __obj = js.Dynamic.literal(isTruncated = isTruncated, nextMarker = nextMarker, objects = objects, prefixes = prefixes, res = res)
+  
     __obj.asInstanceOf[ListObjectResult]
   }
 }

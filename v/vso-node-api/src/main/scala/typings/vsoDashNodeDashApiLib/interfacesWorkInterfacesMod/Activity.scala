@@ -13,9 +13,8 @@ trait Activity extends js.Object {
 object Activity {
   @scala.inline
   def apply(capacityPerDay: scala.Double, name: java.lang.String): Activity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("capacityPerDay")(capacityPerDay)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(capacityPerDay = capacityPerDay, name = name)
+  
     __obj.asInstanceOf[Activity]
   }
 }

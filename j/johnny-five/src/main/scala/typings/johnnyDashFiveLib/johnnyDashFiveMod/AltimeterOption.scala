@@ -20,8 +20,7 @@ object AltimeterOption {
     elevation: scala.Int | scala.Double = null,
     freq: scala.Int | scala.Double = null
   ): AltimeterOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("controller")(controller)
+    val __obj = js.Dynamic.literal(controller = controller)
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (freq != null) __obj.updateDynamic("freq")(freq.asInstanceOf[js.Any])

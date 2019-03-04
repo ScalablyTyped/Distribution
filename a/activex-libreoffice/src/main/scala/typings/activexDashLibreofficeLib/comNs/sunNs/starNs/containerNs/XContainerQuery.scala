@@ -46,12 +46,8 @@ object XContainerQuery {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XContainerQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createSubSetEnumerationByProperties")(createSubSetEnumerationByProperties)
-    __obj.updateDynamic("createSubSetEnumerationByQuery")(createSubSetEnumerationByQuery)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createSubSetEnumerationByProperties = createSubSetEnumerationByProperties, createSubSetEnumerationByQuery = createSubSetEnumerationByQuery, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XContainerQuery]
   }
 }

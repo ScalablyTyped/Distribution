@@ -27,10 +27,8 @@ object Link {
     rel: java.lang.String,
     url: java.lang.String
   ): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attributes")(attributes)
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(attributes = attributes, rel = rel, url = url)
+  
     __obj.asInstanceOf[Link]
   }
 }

@@ -23,11 +23,8 @@ object CompressOptions {
     noCompressIfLarger: scala.Boolean,
     quality: scala.Double
   ): CompressOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("maxWidh")(maxWidh)
-    __obj.updateDynamic("noCompressIfLarger")(noCompressIfLarger)
-    __obj.updateDynamic("quality")(quality)
+    val __obj = js.Dynamic.literal(maxHeight = maxHeight, maxWidh = maxWidh, noCompressIfLarger = noCompressIfLarger, quality = quality)
+  
     __obj.asInstanceOf[CompressOptions]
   }
 }

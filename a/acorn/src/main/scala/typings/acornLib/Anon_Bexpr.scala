@@ -26,14 +26,8 @@ object Anon_Bexpr {
     p_stat: acornLib.acornMod.acornNs.TokContext,
     q_tmpl: acornLib.acornMod.acornNs.TokContext
   ): Anon_Bexpr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("b_expr")(b_expr)
-    __obj.updateDynamic("b_stat")(b_stat)
-    __obj.updateDynamic("b_tmpl")(b_tmpl)
-    __obj.updateDynamic("f_expr")(f_expr)
-    __obj.updateDynamic("p_expr")(p_expr)
-    __obj.updateDynamic("p_stat")(p_stat)
-    __obj.updateDynamic("q_tmpl")(q_tmpl)
+    val __obj = js.Dynamic.literal(b_expr = b_expr, b_stat = b_stat, b_tmpl = b_tmpl, f_expr = f_expr, p_expr = p_expr, p_stat = p_stat, q_tmpl = q_tmpl)
+  
     __obj.asInstanceOf[Anon_Bexpr]
   }
 }

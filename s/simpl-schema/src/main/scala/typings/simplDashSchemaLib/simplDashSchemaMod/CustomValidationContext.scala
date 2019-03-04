@@ -54,17 +54,8 @@ object CustomValidationContext {
     validationContext: ValidationContext,
     value: js.Any
   ): CustomValidationContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addValidationErrors")(addValidationErrors)
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("genericKey")(genericKey)
-    __obj.updateDynamic("isSet")(isSet)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("siblingField")(siblingField)
-    __obj.updateDynamic("validationContext")(validationContext)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(addValidationErrors = addValidationErrors, definition = definition, field = field, genericKey = genericKey, isSet = isSet, key = key, operator = operator, siblingField = siblingField, validationContext = validationContext, value = value)
+  
     __obj.asInstanceOf[CustomValidationContext]
   }
 }

@@ -20,11 +20,8 @@ object NavigationConstants {
     statusBarHeight: scala.Double,
     topBarHeight: scala.Double
   ): NavigationConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backButtonId")(backButtonId)
-    __obj.updateDynamic("bottomTabsHeight")(bottomTabsHeight)
-    __obj.updateDynamic("statusBarHeight")(statusBarHeight)
-    __obj.updateDynamic("topBarHeight")(topBarHeight)
+    val __obj = js.Dynamic.literal(backButtonId = backButtonId, bottomTabsHeight = bottomTabsHeight, statusBarHeight = statusBarHeight, topBarHeight = topBarHeight)
+  
     __obj.asInstanceOf[NavigationConstants]
   }
 }

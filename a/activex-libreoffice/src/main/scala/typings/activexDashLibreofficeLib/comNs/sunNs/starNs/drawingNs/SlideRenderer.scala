@@ -34,11 +34,8 @@ object SlideRenderer {
       activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
     ]
   ): SlideRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculatePreviewSize")(calculatePreviewSize)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("createPreview")(createPreview)
-    __obj.updateDynamic("createPreviewForCanvas")(createPreviewForCanvas)
+    val __obj = js.Dynamic.literal(calculatePreviewSize = calculatePreviewSize, create = create, createPreview = createPreview, createPreviewForCanvas = createPreviewForCanvas)
+  
     __obj.asInstanceOf[SlideRenderer]
   }
 }

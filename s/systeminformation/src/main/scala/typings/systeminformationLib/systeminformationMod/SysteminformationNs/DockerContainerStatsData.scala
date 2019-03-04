@@ -34,18 +34,8 @@ object DockerContainerStatsData {
     networks: js.Any,
     precpu_stats: systeminformationLib.Anon_Cpuusage
   ): DockerContainerStatsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockIO")(blockIO)
-    __obj.updateDynamic("cpu_percent")(cpu_percent)
-    __obj.updateDynamic("cpu_stats")(cpu_stats)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("mem_limit")(mem_limit)
-    __obj.updateDynamic("mem_percent")(mem_percent)
-    __obj.updateDynamic("mem_usage")(mem_usage)
-    __obj.updateDynamic("memory_stats")(memory_stats)
-    __obj.updateDynamic("netIO")(netIO)
-    __obj.updateDynamic("networks")(networks)
-    __obj.updateDynamic("precpu_stats")(precpu_stats)
+    val __obj = js.Dynamic.literal(blockIO = blockIO, cpu_percent = cpu_percent, cpu_stats = cpu_stats, id = id, mem_limit = mem_limit, mem_percent = mem_percent, mem_usage = mem_usage, memory_stats = memory_stats, netIO = netIO, networks = networks, precpu_stats = precpu_stats)
+  
     __obj.asInstanceOf[DockerContainerStatsData]
   }
 }

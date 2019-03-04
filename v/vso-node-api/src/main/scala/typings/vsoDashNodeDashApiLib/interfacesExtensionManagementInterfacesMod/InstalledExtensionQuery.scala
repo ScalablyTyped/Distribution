@@ -16,9 +16,8 @@ object InstalledExtensionQuery {
     assetTypes: js.Array[java.lang.String],
     monikers: js.Array[vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionIdentifier]
   ): InstalledExtensionQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assetTypes")(assetTypes)
-    __obj.updateDynamic("monikers")(monikers)
+    val __obj = js.Dynamic.literal(assetTypes = assetTypes, monikers = monikers)
+  
     __obj.asInstanceOf[InstalledExtensionQuery]
   }
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashFindLastFrom1x1[T, S] extends js.Object {
-  def apply(fromIndex: lodashLib.lodashMod.underscoreNs.`__`): LodashFindLastFrom1x5[S] = js.native
+  def apply(fromIndex: lodashLib.lodashMod.underscoreNs.__): LodashFindLastFrom1x5[S] = js.native
   def apply(
-    fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
+    fromIndex: lodashLib.lodashMod.underscoreNs.__,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindLastFrom1x5[S] = js.native
   def apply(fromIndex: scala.Double): js.UndefOr[S] = js.native

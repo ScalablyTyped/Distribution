@@ -44,12 +44,8 @@ object IgResponsiveContainerMethods {
     startPoller: js.Function0[scala.Unit],
     stopPoller: js.Function0[scala.Unit]
   ): IgResponsiveContainerMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCallback")(addCallback)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("removeCallback")(removeCallback)
-    __obj.updateDynamic("startPoller")(startPoller)
-    __obj.updateDynamic("stopPoller")(stopPoller)
+    val __obj = js.Dynamic.literal(addCallback = addCallback, destroy = destroy, removeCallback = removeCallback, startPoller = startPoller, stopPoller = stopPoller)
+  
     __obj.asInstanceOf[IgResponsiveContainerMethods]
   }
 }

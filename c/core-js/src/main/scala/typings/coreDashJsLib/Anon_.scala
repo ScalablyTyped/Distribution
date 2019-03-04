@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait `Anon_` extends js.Object {
+trait Anon_ extends js.Object {
   val Array: Anon_A = js.native
   val Date: Anon_Date = js.native
   @JSName("Dict")

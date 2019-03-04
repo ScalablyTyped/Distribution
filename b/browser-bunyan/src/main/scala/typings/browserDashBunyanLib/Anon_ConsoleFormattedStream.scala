@@ -16,9 +16,8 @@ object Anon_ConsoleFormattedStream {
     ConsoleFormattedStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleFormattedStream */ js.Any,
     ConsoleRawStream: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BrowserBunyan.ConsoleRawStream */ js.Any
   ): Anon_ConsoleFormattedStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConsoleFormattedStream")(ConsoleFormattedStream)
-    __obj.updateDynamic("ConsoleRawStream")(ConsoleRawStream)
+    val __obj = js.Dynamic.literal(ConsoleFormattedStream = ConsoleFormattedStream, ConsoleRawStream = ConsoleRawStream)
+  
     __obj.asInstanceOf[Anon_ConsoleFormattedStream]
   }
 }

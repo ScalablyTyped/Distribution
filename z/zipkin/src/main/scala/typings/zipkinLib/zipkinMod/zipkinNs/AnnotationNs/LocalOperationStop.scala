@@ -11,8 +11,8 @@ trait LocalOperationStop
 object LocalOperationStop {
   @scala.inline
   def apply(annotationType: java.lang.String): LocalOperationStop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotationType")(annotationType)
+    val __obj = js.Dynamic.literal(annotationType = annotationType)
+  
     __obj.asInstanceOf[LocalOperationStop]
   }
 }

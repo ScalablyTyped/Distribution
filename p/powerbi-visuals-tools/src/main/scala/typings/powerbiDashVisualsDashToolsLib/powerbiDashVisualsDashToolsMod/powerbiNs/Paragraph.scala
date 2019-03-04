@@ -13,8 +13,7 @@ trait Paragraph extends js.Object {
 object Paragraph {
   @scala.inline
   def apply(textRuns: js.Array[TextRun], horizontalTextAlignment: java.lang.String = null): Paragraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("textRuns")(textRuns)
+    val __obj = js.Dynamic.literal(textRuns = textRuns)
     if (horizontalTextAlignment != null) __obj.updateDynamic("horizontalTextAlignment")(horizontalTextAlignment)
     __obj.asInstanceOf[Paragraph]
   }

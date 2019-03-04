@@ -21,8 +21,7 @@ object NewDocument {
   /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     ttl: scala.Int | scala.Double = null
   ): NewDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewDocument]

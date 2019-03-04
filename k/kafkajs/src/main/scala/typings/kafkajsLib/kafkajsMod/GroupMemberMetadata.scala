@@ -22,12 +22,8 @@ object GroupMemberMetadata {
     memberId: java.lang.String,
     memberMetadata: nodeLib.Buffer
   ): GroupMemberMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHost")(clientHost)
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("memberAssignment")(memberAssignment)
-    __obj.updateDynamic("memberId")(memberId)
-    __obj.updateDynamic("memberMetadata")(memberMetadata)
+    val __obj = js.Dynamic.literal(clientHost = clientHost, clientId = clientId, memberAssignment = memberAssignment, memberId = memberId, memberMetadata = memberMetadata)
+  
     __obj.asInstanceOf[GroupMemberMetadata]
   }
 }

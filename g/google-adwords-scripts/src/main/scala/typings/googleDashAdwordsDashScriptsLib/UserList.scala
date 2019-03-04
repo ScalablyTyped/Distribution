@@ -59,30 +59,8 @@ object UserList {
     targetedAdGroups: js.Function0[AdWordsSelector[AdGroup]],
     targetedCampaigns: js.Function0[AdWordsSelector[Campaign]]
   ): UserList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("excludedAdGroups")(excludedAdGroups)
-    __obj.updateDynamic("excludedCampaigns")(excludedCampaigns)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getMembershipLifeSpan")(getMembershipLifeSpan)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSizeForDisplay")(getSizeForDisplay)
-    __obj.updateDynamic("getSizeForSearch")(getSizeForSearch)
-    __obj.updateDynamic("getSizeRangeForDisplay")(getSizeRangeForDisplay)
-    __obj.updateDynamic("getSizeRangeForSearch")(getSizeRangeForSearch)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isClosed")(isClosed)
-    __obj.updateDynamic("isEligibleForDisplay")(isEligibleForDisplay)
-    __obj.updateDynamic("isEligibleForSearch")(isEligibleForSearch)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("isReadOnly")(isReadOnly)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("setDescription")(setDescription)
-    __obj.updateDynamic("setMembershipLifeSpan")(setMembershipLifeSpan)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("targetedAdGroups")(targetedAdGroups)
-    __obj.updateDynamic("targetedCampaigns")(targetedCampaigns)
+    val __obj = js.Dynamic.literal(close = close, excludedAdGroups = excludedAdGroups, excludedCampaigns = excludedCampaigns, getDescription = getDescription, getId = getId, getMembershipLifeSpan = getMembershipLifeSpan, getName = getName, getSizeForDisplay = getSizeForDisplay, getSizeForSearch = getSizeForSearch, getSizeRangeForDisplay = getSizeRangeForDisplay, getSizeRangeForSearch = getSizeRangeForSearch, getType = getType, isClosed = isClosed, isEligibleForDisplay = isEligibleForDisplay, isEligibleForSearch = isEligibleForSearch, isOpen = isOpen, isReadOnly = isReadOnly, open = open, setDescription = setDescription, setMembershipLifeSpan = setMembershipLifeSpan, setName = setName, targetedAdGroups = targetedAdGroups, targetedCampaigns = targetedCampaigns)
+  
     __obj.asInstanceOf[UserList]
   }
 }

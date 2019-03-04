@@ -13,9 +13,8 @@ trait RecorderResult extends js.Object {
 object RecorderResult {
   @scala.inline
   def apply(blob: stdLib.Blob, buffer: js.Array[stdLib.Float32Array]): RecorderResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("buffer")(buffer)
+    val __obj = js.Dynamic.literal(blob = blob, buffer = buffer)
+  
     __obj.asInstanceOf[RecorderResult]
   }
 }

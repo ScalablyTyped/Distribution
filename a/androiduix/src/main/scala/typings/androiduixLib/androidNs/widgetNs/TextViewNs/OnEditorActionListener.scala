@@ -23,8 +23,8 @@ object OnEditorActionListener {
       scala.Boolean
     ]
   ): OnEditorActionListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onEditorAction")(onEditorAction)
+    val __obj = js.Dynamic.literal(onEditorAction = onEditorAction)
+  
     __obj.asInstanceOf[OnEditorActionListener]
   }
 }

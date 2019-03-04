@@ -35,8 +35,7 @@ object navigateToSmartProgramOptions {
     path: java.lang.String = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): navigateToSmartProgramOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appKey")(appKey)
+    val __obj = js.Dynamic.literal(appKey = appKey)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (extraData != null) __obj.updateDynamic("extraData")(extraData)
     if (fail != null) __obj.updateDynamic("fail")(fail)

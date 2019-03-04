@@ -79,16 +79,8 @@ object CustomResourceDefinitionSpec {
     version: java.lang.String,
     versions: js.Array[CustomResourceDefinitionVersion]
   ): CustomResourceDefinitionSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("additionalPrinterColumns")(additionalPrinterColumns)
-    __obj.updateDynamic("conversion")(conversion)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("names")(names)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("subresources")(subresources)
-    __obj.updateDynamic("validation")(validation)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(additionalPrinterColumns = additionalPrinterColumns, conversion = conversion, group = group, names = names, scope = scope, subresources = subresources, validation = validation, version = version, versions = versions)
+  
     __obj.asInstanceOf[CustomResourceDefinitionSpec]
   }
 }

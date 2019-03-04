@@ -22,8 +22,7 @@ object GlobalTableArgs {
     replicas: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RegionNameInput]]],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GlobalTableArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(replicas = replicas.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalTableArgs]
   }

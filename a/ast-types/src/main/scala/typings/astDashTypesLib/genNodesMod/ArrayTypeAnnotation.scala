@@ -22,8 +22,8 @@ object ArrayTypeAnnotation {
     elementType: astDashTypesLib.genKindsMod.FlowTypeKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ArrayTypeAnnotation
   ): ArrayTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("elementType")(elementType)
+    val __obj = js.Dynamic.literal(elementType = elementType)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArrayTypeAnnotation]
   }
 }

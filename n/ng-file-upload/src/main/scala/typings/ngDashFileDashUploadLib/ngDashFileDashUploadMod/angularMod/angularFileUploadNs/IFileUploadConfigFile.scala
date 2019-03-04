@@ -77,10 +77,7 @@ object IFileUploadConfigFile {
     xsrfCookieName: java.lang.String = null,
     xsrfHeaderName: java.lang.String = null
   ): IFileUploadConfigFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(data = data, method = method, url = url)
     if (arrayKey != null) __obj.updateDynamic("arrayKey")(arrayKey)
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress)

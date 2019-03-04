@@ -26,9 +26,7 @@ object ModeSwitchConfig {
     headline: java.lang.String = null,
     preventclose: js.UndefOr[scala.Boolean] = js.undefined
   ): ModeSwitchConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(callback = callback, items = items)
     if (headline != null) __obj.updateDynamic("headline")(headline)
     if (!js.isUndefined(preventclose)) __obj.updateDynamic("preventclose")(preventclose)
     __obj.asInstanceOf[ModeSwitchConfig]

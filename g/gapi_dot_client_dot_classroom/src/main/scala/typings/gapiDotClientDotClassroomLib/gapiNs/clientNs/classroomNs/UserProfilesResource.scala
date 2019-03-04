@@ -30,10 +30,8 @@ object UserProfilesResource {
     guardianInvitations: GuardianInvitationsResource,
     guardians: GuardiansResource
   ): UserProfilesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("guardianInvitations")(guardianInvitations)
-    __obj.updateDynamic("guardians")(guardians)
+    val __obj = js.Dynamic.literal(get = get, guardianInvitations = guardianInvitations, guardians = guardians)
+  
     __obj.asInstanceOf[UserProfilesResource]
   }
 }

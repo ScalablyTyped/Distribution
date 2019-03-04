@@ -39,17 +39,8 @@ object Document {
     value: java.lang.String = null,
     valueRange: Range = null
   ): Document = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("anchor")(anchor)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("contents")(contents)
-    __obj.updateDynamic("directives")(directives)
-    __obj.updateDynamic("hasComment")(hasComment)
-    __obj.updateDynamic("hasProps")(hasProps)
-    __obj.updateDynamic("jsonLike")(jsonLike)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("tag")(tag)
-    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    val __obj = js.Dynamic.literal(anchor = anchor, comment = comment, contents = contents, directives = directives, hasComment = hasComment, hasProps = hasProps, jsonLike = jsonLike, props = props, tag = tag, valueRangeContainsNewline = valueRangeContainsNewline)
+    __obj.updateDynamic("type")(`type`)
     if (context != null) __obj.updateDynamic("context")(context)
     if (error != null) __obj.updateDynamic("error")(error)
     if (range != null) __obj.updateDynamic("range")(range)

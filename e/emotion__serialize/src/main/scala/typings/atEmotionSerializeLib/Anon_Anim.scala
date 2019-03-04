@@ -19,11 +19,8 @@ object Anon_Anim {
     styles: java.lang.String,
     toString: js.Function0[java.lang.String]
   ): Anon_Anim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anim")(anim)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("styles")(styles)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(anim = anim, name = name, styles = styles, toString = toString)
+  
     __obj.asInstanceOf[Anon_Anim]
   }
 }

@@ -57,8 +57,7 @@ object IFindNearRouteOptions {
     start: java.lang.String | bingmapsLib.MicrosoftNs.MapsNs.Location = null,
     travelMode: java.lang.String = null
   ): IFindNearRouteOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spatialFilterType")(spatialFilterType)
+    val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType)
     if (avoid != null) __obj.updateDynamic("avoid")(avoid)
     if (distanceBeforeFirstTurn != null) __obj.updateDynamic("distanceBeforeFirstTurn")(distanceBeforeFirstTurn.asInstanceOf[js.Any])
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

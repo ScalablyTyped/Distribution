@@ -12,8 +12,8 @@ trait NodePropertyNames extends js.Object {
 object NodePropertyNames {
   @scala.inline
   def apply(Attributes: webgmeLib.Anon_Name): NodePropertyNames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Attributes")(Attributes)
+    val __obj = js.Dynamic.literal(Attributes = Attributes)
+  
     __obj.asInstanceOf[NodePropertyNames]
   }
 }

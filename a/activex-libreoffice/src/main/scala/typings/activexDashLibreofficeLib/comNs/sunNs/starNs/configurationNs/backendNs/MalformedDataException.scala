@@ -46,10 +46,8 @@ object MalformedDataException {
     ErrorDetails: js.Any,
     Message: java.lang.String
   ): MalformedDataException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("ErrorDetails")(ErrorDetails)
-    __obj.updateDynamic("Message")(Message)
+    val __obj = js.Dynamic.literal(Context = Context, ErrorDetails = ErrorDetails, Message = Message)
+  
     __obj.asInstanceOf[MalformedDataException]
   }
 }

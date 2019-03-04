@@ -12,8 +12,8 @@ trait AddHeapSnapshotChunkEventDataType extends js.Object {
 object AddHeapSnapshotChunkEventDataType {
   @scala.inline
   def apply(chunk: java.lang.String): AddHeapSnapshotChunkEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chunk")(chunk)
+    val __obj = js.Dynamic.literal(chunk = chunk)
+  
     __obj.asInstanceOf[AddHeapSnapshotChunkEventDataType]
   }
 }

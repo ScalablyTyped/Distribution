@@ -33,12 +33,8 @@ object ViewerSize {
     width: scala.Double,
     widthDefault: java.lang.String
   ): ViewerSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("heightDefault")(heightDefault)
-    __obj.updateDynamic("heightratio")(heightratio)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("widthDefault")(widthDefault)
+    val __obj = js.Dynamic.literal(height = height, heightDefault = heightDefault, heightratio = heightratio, width = width, widthDefault = widthDefault)
+  
     __obj.asInstanceOf[ViewerSize]
   }
 }

@@ -35,10 +35,8 @@ object BlankNode {
     termType: rdfDashJsLib.rdfDashJsLibStrings.BlankNode,
     value: java.lang.String
   ): BlankNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("termType")(termType)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(equals = equals, termType = termType, value = value)
+  
     __obj.asInstanceOf[BlankNode]
   }
 }

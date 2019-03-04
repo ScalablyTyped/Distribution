@@ -16,9 +16,8 @@ object Anon_VirtualNodeWeight {
     virtualNode: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
   ): Anon_VirtualNodeWeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("virtualNode")(virtualNode.asInstanceOf[js.Any])
-    __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_VirtualNodeWeight]
   }
 }

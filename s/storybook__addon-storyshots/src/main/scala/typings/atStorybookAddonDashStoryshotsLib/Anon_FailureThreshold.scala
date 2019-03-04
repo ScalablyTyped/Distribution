@@ -16,9 +16,8 @@ object Anon_FailureThreshold {
     failureThreshold: scala.Double,
     failureThresholdType: atStorybookAddonDashStoryshotsLib.atStorybookAddonDashStoryshotsLibStrings.percent
   ): Anon_FailureThreshold = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failureThreshold")(failureThreshold)
-    __obj.updateDynamic("failureThresholdType")(failureThresholdType)
+    val __obj = js.Dynamic.literal(failureThreshold = failureThreshold, failureThresholdType = failureThresholdType)
+  
     __obj.asInstanceOf[Anon_FailureThreshold]
   }
 }

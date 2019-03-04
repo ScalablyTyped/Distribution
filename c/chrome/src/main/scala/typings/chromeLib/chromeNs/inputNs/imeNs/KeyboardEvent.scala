@@ -67,10 +67,8 @@ object KeyboardEvent {
     keyCode: scala.Int | scala.Double = null,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined
   ): KeyboardEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("requestId")(requestId)
+    val __obj = js.Dynamic.literal(code = code, key = key, requestId = requestId)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(capsLock)) __obj.updateDynamic("capsLock")(capsLock)
     if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)

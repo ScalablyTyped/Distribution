@@ -20,11 +20,8 @@ object ToolbarIcon {
     name: java.lang.String,
     title: java.lang.String
   ): ToolbarIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], className = className, name = name, title = title)
+  
     __obj.asInstanceOf[ToolbarIcon]
   }
 }

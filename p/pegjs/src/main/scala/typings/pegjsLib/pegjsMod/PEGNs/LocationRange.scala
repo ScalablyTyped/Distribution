@@ -13,9 +13,8 @@ trait LocationRange extends js.Object {
 object LocationRange {
   @scala.inline
   def apply(end: Location, start: Location): LocationRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(end = end, start = start)
+  
     __obj.asInstanceOf[LocationRange]
   }
 }

@@ -20,8 +20,7 @@ object Auth0LockThemeButton {
     icon: java.lang.String = null,
     primaryColor: java.lang.String = null
   ): Auth0LockThemeButton = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displayName")(displayName)
+    val __obj = js.Dynamic.literal(displayName = displayName)
     if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)

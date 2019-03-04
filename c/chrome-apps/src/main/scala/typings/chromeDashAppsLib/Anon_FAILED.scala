@@ -20,11 +20,8 @@ object Anon_FAILED {
     SUCCEEDED: chromeDashAppsLib.chromeDashAppsLibStrings.succeeded,
     UNHANDLED: chromeDashAppsLib.chromeDashAppsLibStrings.unhandled
   ): Anon_FAILED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FAILED")(FAILED)
-    __obj.updateDynamic("REJECTED")(REJECTED)
-    __obj.updateDynamic("SUCCEEDED")(SUCCEEDED)
-    __obj.updateDynamic("UNHANDLED")(UNHANDLED)
+    val __obj = js.Dynamic.literal(FAILED = FAILED, REJECTED = REJECTED, SUCCEEDED = SUCCEEDED, UNHANDLED = UNHANDLED)
+  
     __obj.asInstanceOf[Anon_FAILED]
   }
 }

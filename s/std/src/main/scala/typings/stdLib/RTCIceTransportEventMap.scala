@@ -14,10 +14,8 @@ trait RTCIceTransportEventMap extends js.Object {
 object RTCIceTransportEventMap {
   @scala.inline
   def apply(gatheringstatechange: Event, selectedcandidatepairchange: Event, statechange: Event): RTCIceTransportEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatheringstatechange")(gatheringstatechange)
-    __obj.updateDynamic("selectedcandidatepairchange")(selectedcandidatepairchange)
-    __obj.updateDynamic("statechange")(statechange)
+    val __obj = js.Dynamic.literal(gatheringstatechange = gatheringstatechange, selectedcandidatepairchange = selectedcandidatepairchange, statechange = statechange)
+  
     __obj.asInstanceOf[RTCIceTransportEventMap]
   }
 }

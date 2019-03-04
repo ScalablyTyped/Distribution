@@ -13,9 +13,8 @@ trait Anon_ArgsMsgNumber extends js.Object {
 object Anon_ArgsMsgNumber {
   @scala.inline
   def apply(args: js.Tuple2[scala.Double, scala.Double], msg: java.lang.String): Anon_ArgsMsgNumber = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(args = args, msg = msg)
+  
     __obj.asInstanceOf[Anon_ArgsMsgNumber]
   }
 }

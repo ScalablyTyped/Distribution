@@ -32,11 +32,7 @@ object Anon_FrameIdProcessIdTabId {
     url: java.lang.String,
     processId: scala.Int | scala.Double = null
   ): Anon_FrameIdProcessIdTabId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, tabId = tabId, timeStamp = timeStamp, url = url)
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FrameIdProcessIdTabId]
   }

@@ -45,8 +45,7 @@ object Anon_AltCircleId {
     userId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltCircleId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circleId")(circleId)
+    val __obj = js.Dynamic.literal(circleId = circleId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (email != null) __obj.updateDynamic("email")(email)
     if (fields != null) __obj.updateDynamic("fields")(fields)

@@ -46,21 +46,8 @@ object Job {
     failure: java.lang.String = null,
     success: java.lang.String = null
   ): Job = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("abort")(abort)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("delayUntil")(delayUntil)
-    __obj.updateDynamic("failures")(failures)
-    __obj.updateDynamic("maxFailures")(maxFailures)
-    __obj.updateDynamic("modified")(modified)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("repeatDelay")(repeatDelay)
-    __obj.updateDynamic("repeatTimes")(repeatTimes)
-    __obj.updateDynamic("repeatUntil")(repeatUntil)
-    __obj.updateDynamic("runFailures")(runFailures)
-    __obj.updateDynamic("runs")(runs)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(abort = abort, created = created, data = data, delayUntil = delayUntil, failures = failures, maxFailures = maxFailures, modified = modified, queue = queue, repeatDelay = repeatDelay, repeatTimes = repeatTimes, repeatUntil = repeatUntil, runFailures = runFailures, runs = runs, status = status)
+    __obj.updateDynamic("type")(`type`)
     if (failure != null) __obj.updateDynamic("failure")(failure)
     if (success != null) __obj.updateDynamic("success")(success)
     __obj.asInstanceOf[Job]

@@ -23,12 +23,8 @@ object RoutingOptions {
     simplifyGeometry: scala.Boolean,
     z: scala.Double
   ): RoutingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowUTurns")(allowUTurns)
-    __obj.updateDynamic("fileFormat")(fileFormat)
-    __obj.updateDynamic("geometryOnly")(geometryOnly)
-    __obj.updateDynamic("simplifyGeometry")(simplifyGeometry)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(allowUTurns = allowUTurns, fileFormat = fileFormat, geometryOnly = geometryOnly, simplifyGeometry = simplifyGeometry, z = z)
+  
     __obj.asInstanceOf[RoutingOptions]
   }
 }

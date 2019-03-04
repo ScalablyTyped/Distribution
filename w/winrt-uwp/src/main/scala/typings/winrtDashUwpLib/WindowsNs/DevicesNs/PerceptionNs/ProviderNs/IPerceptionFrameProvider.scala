@@ -36,14 +36,8 @@ object IPerceptionFrameProvider {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): IPerceptionFrameProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("available")(available)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("frameProviderInfo")(frameProviderInfo)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("setProperty")(setProperty)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(available = available, close = close, frameProviderInfo = frameProviderInfo, properties = properties, setProperty = setProperty, start = start, stop = stop)
+  
     __obj.asInstanceOf[IPerceptionFrameProvider]
   }
 }

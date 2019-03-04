@@ -49,9 +49,8 @@ object ClientCertificateRequest {
       ]
     ]
   ): ClientCertificateRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificateAuthorities")(certificateAuthorities)
-    __obj.updateDynamic("certificateTypes")(certificateTypes)
+    val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities, certificateTypes = certificateTypes)
+  
     __obj.asInstanceOf[ClientCertificateRequest]
   }
 }

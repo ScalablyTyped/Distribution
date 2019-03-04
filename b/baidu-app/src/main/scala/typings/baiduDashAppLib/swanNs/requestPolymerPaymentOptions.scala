@@ -34,8 +34,7 @@ object requestPolymerPaymentOptions {
     fail: js.Function1[js.Any, scala.Unit] = null,
     success: js.Function1[/* res */ baiduDashAppLib.Anon_AuthSetting, scala.Unit] = null
   ): requestPolymerPaymentOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("orderInfo")(orderInfo)
+    val __obj = js.Dynamic.literal(orderInfo = orderInfo)
     if (bannedChannels != null) __obj.updateDynamic("bannedChannels")(bannedChannels)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

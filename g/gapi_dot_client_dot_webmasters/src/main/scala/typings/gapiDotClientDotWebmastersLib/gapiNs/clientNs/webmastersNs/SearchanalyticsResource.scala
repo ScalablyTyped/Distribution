@@ -24,8 +24,8 @@ object SearchanalyticsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
     ]
   ): SearchanalyticsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
+  
     __obj.asInstanceOf[SearchanalyticsResource]
   }
 }

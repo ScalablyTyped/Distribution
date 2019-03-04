@@ -13,9 +13,8 @@ trait Edge extends js.Object {
 object Edge {
   @scala.inline
   def apply(u: java.lang.String, v: java.lang.String): Edge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("u")(u)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(u = u, v = v)
+  
     __obj.asInstanceOf[Edge]
   }
 }

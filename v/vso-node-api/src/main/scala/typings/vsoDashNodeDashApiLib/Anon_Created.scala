@@ -13,9 +13,8 @@ trait Anon_Created extends js.Object {
 object Anon_Created {
   @scala.inline
   def apply(created: scala.Double, pendingUpload: scala.Double): Anon_Created = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("pendingUpload")(pendingUpload)
+    val __obj = js.Dynamic.literal(created = created, pendingUpload = pendingUpload)
+  
     __obj.asInstanceOf[Anon_Created]
   }
 }

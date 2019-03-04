@@ -223,23 +223,8 @@ object XSmartTagAction {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XSmartTagAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SmartTagCount")(SmartTagCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getActionCaptionFromID")(getActionCaptionFromID)
-    __obj.updateDynamic("getActionCount")(getActionCount)
-    __obj.updateDynamic("getActionID")(getActionID)
-    __obj.updateDynamic("getActionNameFromID")(getActionNameFromID)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getSmartTagCaption")(getSmartTagCaption)
-    __obj.updateDynamic("getSmartTagName")(getSmartTagName)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("invokeAction")(invokeAction)
-    __obj.updateDynamic("isCaptionDynamic")(isCaptionDynamic)
-    __obj.updateDynamic("isShowSmartTagIndicator")(isShowSmartTagIndicator)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SmartTagCount = SmartTagCount, acquire = acquire, getActionCaptionFromID = getActionCaptionFromID, getActionCount = getActionCount, getActionID = getActionID, getActionNameFromID = getActionNameFromID, getDescription = getDescription, getName = getName, getSmartTagCaption = getSmartTagCaption, getSmartTagName = getSmartTagName, initialize = initialize, invokeAction = invokeAction, isCaptionDynamic = isCaptionDynamic, isShowSmartTagIndicator = isShowSmartTagIndicator, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XSmartTagAction]
   }
 }

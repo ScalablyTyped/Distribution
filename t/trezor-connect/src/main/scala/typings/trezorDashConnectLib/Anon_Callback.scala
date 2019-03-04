@@ -12,8 +12,8 @@ trait Anon_Callback extends js.Object {
 object Anon_Callback {
   @scala.inline
   def apply(callback: js.Function0[trezorDashConnectLib.trezorDashConnectMod.LoginChallenge]): Anon_Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
+    val __obj = js.Dynamic.literal(callback = callback)
+  
     __obj.asInstanceOf[Anon_Callback]
   }
 }

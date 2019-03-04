@@ -41,11 +41,7 @@ object PerformanceEntry {
     startTime: scala.Double,
     kind: scala.Int | scala.Double = null
   ): PerformanceEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("entryType")(entryType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("startTime")(startTime)
+    val __obj = js.Dynamic.literal(duration = duration, entryType = entryType, name = name, startTime = startTime)
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceEntry]
   }

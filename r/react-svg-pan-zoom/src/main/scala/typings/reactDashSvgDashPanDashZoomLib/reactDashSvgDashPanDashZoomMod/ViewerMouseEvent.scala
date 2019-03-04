@@ -32,17 +32,8 @@ object ViewerMouseEvent {
     x: scala.Double,
     y: scala.Double
   ): ViewerMouseEvent[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SVGViewer")(SVGViewer)
-    __obj.updateDynamic("originalEvent")(originalEvent)
-    __obj.updateDynamic("point")(point)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("translationX")(translationX)
-    __obj.updateDynamic("translationY")(translationY)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(SVGViewer = SVGViewer, originalEvent = originalEvent, point = point, preventDefault = preventDefault, scaleFactor = scaleFactor, stopPropagation = stopPropagation, translationX = translationX, translationY = translationY, x = x, y = y)
+  
     __obj.asInstanceOf[ViewerMouseEvent[T]]
   }
 }

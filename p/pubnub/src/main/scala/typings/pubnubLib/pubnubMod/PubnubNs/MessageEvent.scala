@@ -32,14 +32,8 @@ object MessageEvent {
     subscription: java.lang.String,
     timetoken: java.lang.String
   ): MessageEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualChannel")(actualChannel)
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("publisher")(publisher)
-    __obj.updateDynamic("subscribedChannel")(subscribedChannel)
-    __obj.updateDynamic("subscription")(subscription)
-    __obj.updateDynamic("timetoken")(timetoken)
+    val __obj = js.Dynamic.literal(actualChannel = actualChannel, channel = channel, message = message, publisher = publisher, subscribedChannel = subscribedChannel, subscription = subscription, timetoken = timetoken)
+  
     __obj.asInstanceOf[MessageEvent]
   }
 }

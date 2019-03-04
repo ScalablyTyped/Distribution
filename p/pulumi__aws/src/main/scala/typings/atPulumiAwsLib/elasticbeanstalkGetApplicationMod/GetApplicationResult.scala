@@ -29,11 +29,8 @@ object GetApplicationResult {
     description: java.lang.String,
     id: java.lang.String
   ): GetApplicationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appversionLifecycle")(appversionLifecycle)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(appversionLifecycle = appversionLifecycle, arn = arn, description = description, id = id)
+  
     __obj.asInstanceOf[GetApplicationResult]
   }
 }

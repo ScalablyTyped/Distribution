@@ -95,26 +95,8 @@ object XUnionTypeDescription {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XUnionTypeDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultDiscriminant")(DefaultDiscriminant)
-    __obj.updateDynamic("DefaultMemberType")(DefaultMemberType)
-    __obj.updateDynamic("DiscriminantType")(DiscriminantType)
-    __obj.updateDynamic("Discriminants")(Discriminants)
-    __obj.updateDynamic("MemberNames")(MemberNames)
-    __obj.updateDynamic("MemberTypes")(MemberTypes)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("TypeClass")(TypeClass)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultDiscriminant")(getDefaultDiscriminant)
-    __obj.updateDynamic("getDefaultMemberType")(getDefaultMemberType)
-    __obj.updateDynamic("getDiscriminantType")(getDiscriminantType)
-    __obj.updateDynamic("getDiscriminants")(getDiscriminants)
-    __obj.updateDynamic("getMemberNames")(getMemberNames)
-    __obj.updateDynamic("getMemberTypes")(getMemberTypes)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getTypeClass")(getTypeClass)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DefaultDiscriminant = DefaultDiscriminant, DefaultMemberType = DefaultMemberType, DiscriminantType = DiscriminantType, Discriminants = Discriminants, MemberNames = MemberNames, MemberTypes = MemberTypes, Name = Name, TypeClass = TypeClass, acquire = acquire, getDefaultDiscriminant = getDefaultDiscriminant, getDefaultMemberType = getDefaultMemberType, getDiscriminantType = getDiscriminantType, getDiscriminants = getDiscriminants, getMemberNames = getMemberNames, getMemberTypes = getMemberTypes, getName = getName, getTypeClass = getTypeClass, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XUnionTypeDescription]
   }
 }

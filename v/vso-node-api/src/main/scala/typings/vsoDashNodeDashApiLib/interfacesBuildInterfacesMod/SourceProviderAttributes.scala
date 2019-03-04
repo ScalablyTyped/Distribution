@@ -27,10 +27,8 @@ object SourceProviderAttributes {
     supportedCapabilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     supportedTriggers: js.Array[SupportedTrigger]
   ): SourceProviderAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("supportedCapabilities")(supportedCapabilities)
-    __obj.updateDynamic("supportedTriggers")(supportedTriggers)
+    val __obj = js.Dynamic.literal(name = name, supportedCapabilities = supportedCapabilities, supportedTriggers = supportedTriggers)
+  
     __obj.asInstanceOf[SourceProviderAttributes]
   }
 }

@@ -40,8 +40,7 @@ object FindRequest {
     ] = null,
     use_index: java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) = null
   ): FindRequest[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(selector = selector)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])

@@ -44,14 +44,8 @@ object ReleaseStartMetadata {
     properties: js.Any,
     reason: ReleaseReason
   ): ReleaseStartMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("definitionId")(definitionId)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isDraft")(isDraft)
-    __obj.updateDynamic("manualEnvironments")(manualEnvironments)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(artifacts = artifacts, definitionId = definitionId, description = description, isDraft = isDraft, manualEnvironments = manualEnvironments, properties = properties, reason = reason)
+  
     __obj.asInstanceOf[ReleaseStartMetadata]
   }
 }

@@ -51,10 +51,7 @@ object Anon_AccountIdAltCustomDataSourceIdFieldsKey {
     `start-index`: scala.Int | scala.Double = null,
     userIp: java.lang.String = null
   ): Anon_AccountIdAltCustomDataSourceIdFieldsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("customDataSourceId")(customDataSourceId)
-    __obj.updateDynamic("webPropertyId")(webPropertyId)
+    val __obj = js.Dynamic.literal(accountId = accountId, customDataSourceId = customDataSourceId, webPropertyId = webPropertyId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

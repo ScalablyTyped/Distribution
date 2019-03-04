@@ -24,13 +24,8 @@ object NetStatsData {
     tx: scala.Double,
     tx_sec: scala.Double
   ): NetStatsData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iface")(iface)
-    __obj.updateDynamic("ms")(ms)
-    __obj.updateDynamic("rx")(rx)
-    __obj.updateDynamic("rx_sec")(rx_sec)
-    __obj.updateDynamic("tx")(tx)
-    __obj.updateDynamic("tx_sec")(tx_sec)
+    val __obj = js.Dynamic.literal(iface = iface, ms = ms, rx = rx, rx_sec = rx_sec, tx = tx, tx_sec = tx_sec)
+  
     __obj.asInstanceOf[NetStatsData]
   }
 }

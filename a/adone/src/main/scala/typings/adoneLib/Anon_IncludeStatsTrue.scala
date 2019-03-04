@@ -12,8 +12,8 @@ trait Anon_IncludeStatsTrue extends js.Object {
 object Anon_IncludeStatsTrue {
   @scala.inline
   def apply(includeStats: adoneLib.adoneLibNumbers.`true`): Anon_IncludeStatsTrue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("includeStats")(includeStats)
+    val __obj = js.Dynamic.literal(includeStats = includeStats)
+  
     __obj.asInstanceOf[Anon_IncludeStatsTrue]
   }
 }

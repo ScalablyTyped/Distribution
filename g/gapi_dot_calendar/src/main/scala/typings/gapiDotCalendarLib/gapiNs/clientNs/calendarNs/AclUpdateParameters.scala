@@ -17,11 +17,8 @@ object AclUpdateParameters {
     ruleId: java.lang.String,
     scope: gapiDotCalendarLib.Anon_TypeValue
   ): AclUpdateParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("role")(role)
-    __obj.updateDynamic("ruleId")(ruleId)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, role = role, ruleId = ruleId, scope = scope)
+  
     __obj.asInstanceOf[AclUpdateParameters]
   }
 }

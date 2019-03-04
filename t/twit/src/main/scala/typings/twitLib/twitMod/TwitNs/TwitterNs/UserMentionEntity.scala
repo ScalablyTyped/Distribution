@@ -22,12 +22,8 @@ object UserMentionEntity {
     name: java.lang.String,
     screen_name: java.lang.String
   ): UserMentionEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("id_str")(id_str)
-    __obj.updateDynamic("indices")(indices)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("screen_name")(screen_name)
+    val __obj = js.Dynamic.literal(id = id, id_str = id_str, indices = indices, name = name, screen_name = screen_name)
+  
     __obj.asInstanceOf[UserMentionEntity]
   }
 }

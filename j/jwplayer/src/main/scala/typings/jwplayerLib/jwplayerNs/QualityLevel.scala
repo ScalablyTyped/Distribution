@@ -18,10 +18,8 @@ object QualityLevel {
     mode: jwplayerLib.jwplayerLibStrings.auto | jwplayerLib.jwplayerLibStrings.manual,
     reason: jwplayerLib.jwplayerLibStrings.auto | jwplayerLib.jwplayerLibStrings.api | (jwplayerLib.jwplayerLibStrings.`initial choice`)
   ): QualityLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(level = level, mode = mode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[QualityLevel]
   }
 }

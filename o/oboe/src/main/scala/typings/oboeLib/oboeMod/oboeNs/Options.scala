@@ -24,8 +24,7 @@ object Options {
     method: java.lang.String = null,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (body != null) __obj.updateDynamic("body")(body)
     if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached)
     if (headers != null) __obj.updateDynamic("headers")(headers)

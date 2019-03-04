@@ -27,10 +27,8 @@ trait MessageNotModified
 object MessageNotModified {
   @scala.inline
   def apply(code: scala.Double, message_id: java.lang.String, to: java.lang.String): MessageNotModified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(code = code, message_id = message_id, to = to)
+  
     __obj.asInstanceOf[MessageNotModified]
   }
 }

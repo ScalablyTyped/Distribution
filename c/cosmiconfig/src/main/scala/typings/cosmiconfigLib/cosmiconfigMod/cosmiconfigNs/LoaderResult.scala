@@ -13,8 +13,7 @@ trait LoaderResult extends js.Object {
 object LoaderResult {
   @scala.inline
   def apply(filepath: java.lang.String, config: Config = null): LoaderResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filepath")(filepath)
+    val __obj = js.Dynamic.literal(filepath = filepath)
     if (config != null) __obj.updateDynamic("config")(config)
     __obj.asInstanceOf[LoaderResult]
   }

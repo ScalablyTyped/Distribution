@@ -19,11 +19,8 @@ trait Bounds extends js.Object {
 object Bounds {
   @scala.inline
   def apply(height: scala.Double, left: scala.Double, top: scala.Double, width: scala.Double): Bounds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, left = left, top = top, width = width)
+  
     __obj.asInstanceOf[Bounds]
   }
 }

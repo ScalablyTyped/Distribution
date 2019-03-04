@@ -18,10 +18,8 @@ object Anon_Cooked {
     original: js.Array[java.lang.String],
     remain: js.Array[java.lang.String]
   ): Anon_Cooked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cooked")(cooked)
-    __obj.updateDynamic("original")(original)
-    __obj.updateDynamic("remain")(remain)
+    val __obj = js.Dynamic.literal(cooked = cooked, original = original, remain = remain)
+  
     __obj.asInstanceOf[Anon_Cooked]
   }
 }

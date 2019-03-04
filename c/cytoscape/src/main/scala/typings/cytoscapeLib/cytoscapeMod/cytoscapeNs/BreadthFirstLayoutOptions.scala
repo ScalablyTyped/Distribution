@@ -43,13 +43,7 @@ object BreadthFirstLayoutOptions {
     spacingFactor: scala.Int | scala.Double = null,
     stop: LayoutHandler = null
   ): BreadthFirstLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circle")(circle)
-    __obj.updateDynamic("directed")(directed)
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("maximalAdjustments")(maximalAdjustments)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
+    val __obj = js.Dynamic.literal(circle = circle, directed = directed, fit = fit, maximalAdjustments = maximalAdjustments, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

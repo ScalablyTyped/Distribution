@@ -39,16 +39,8 @@ object XLabeledDataSequence {
     setLabel: js.Function1[XDataSequence, scala.Unit],
     setValues: js.Function1[XDataSequence, scala.Unit]
   ): XLabeledDataSequence = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("Values")(Values)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLabel")(getLabel)
-    __obj.updateDynamic("getValues")(getValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLabel")(setLabel)
-    __obj.updateDynamic("setValues")(setValues)
+    val __obj = js.Dynamic.literal(Label = Label, Values = Values, acquire = acquire, getLabel = getLabel, getValues = getValues, queryInterface = queryInterface, release = release, setLabel = setLabel, setValues = setValues)
+  
     __obj.asInstanceOf[XLabeledDataSequence]
   }
 }

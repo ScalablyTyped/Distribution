@@ -28,15 +28,8 @@ object Trophy {
     name: java.lang.String,
     name_clean: java.lang.String
   ): Trophy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("data_link")(data_link)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("name_clean")(name_clean)
+    val __obj = js.Dynamic.literal(data = data, data_link = data_link, datetime = datetime, description = description, id = id, image = image, name = name, name_clean = name_clean)
+  
     __obj.asInstanceOf[Trophy]
   }
 }

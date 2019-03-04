@@ -13,9 +13,8 @@ trait CanvasState extends js.Object {
 object CanvasState {
   @scala.inline
   def apply(restore: js.Function0[scala.Unit], save: js.Function0[scala.Unit]): CanvasState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("restore")(restore)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(restore = restore, save = save)
+  
     __obj.asInstanceOf[CanvasState]
   }
 }

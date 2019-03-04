@@ -27,9 +27,8 @@ object OnItemSelectedListener {
     ],
     onNothingSelected: js.Function1[androiduixLib.androidNs.widgetNs.AdapterView[_], scala.Unit]
   ): OnItemSelectedListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onItemSelected")(onItemSelected)
-    __obj.updateDynamic("onNothingSelected")(onNothingSelected)
+    val __obj = js.Dynamic.literal(onItemSelected = onItemSelected, onNothingSelected = onNothingSelected)
+  
     __obj.asInstanceOf[OnItemSelectedListener]
   }
 }

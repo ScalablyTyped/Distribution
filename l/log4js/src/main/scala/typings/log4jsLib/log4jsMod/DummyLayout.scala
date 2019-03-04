@@ -12,8 +12,8 @@ trait DummyLayout extends Layout {
 object DummyLayout {
   @scala.inline
   def apply(`type`: log4jsLib.log4jsLibStrings.dummy): DummyLayout = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DummyLayout]
   }
 }

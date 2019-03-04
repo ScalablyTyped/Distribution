@@ -32,17 +32,8 @@ object Footnote {
     removeFromParent: js.Function0[Footnote],
     setAttributes: js.Function1[js.Object, Footnote]
   ): Footnote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getAttributes")(getAttributes)
-    __obj.updateDynamic("getFootnoteContents")(getFootnoteContents)
-    __obj.updateDynamic("getNextSibling")(getNextSibling)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPreviousSibling")(getPreviousSibling)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isAtDocumentEnd")(isAtDocumentEnd)
-    __obj.updateDynamic("removeFromParent")(removeFromParent)
-    __obj.updateDynamic("setAttributes")(setAttributes)
+    val __obj = js.Dynamic.literal(copy = copy, getAttributes = getAttributes, getFootnoteContents = getFootnoteContents, getNextSibling = getNextSibling, getParent = getParent, getPreviousSibling = getPreviousSibling, getType = getType, isAtDocumentEnd = isAtDocumentEnd, removeFromParent = removeFromParent, setAttributes = setAttributes)
+  
     __obj.asInstanceOf[Footnote]
   }
 }

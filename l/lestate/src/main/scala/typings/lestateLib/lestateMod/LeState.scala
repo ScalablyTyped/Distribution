@@ -22,12 +22,8 @@ object LeState {
     insert: js.Function1[js.Object, scala.Unit],
     set: js.Function1[js.Object, js.Array[lestateLib.Anon_Id]]
   ): LeState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createListener")(createListener)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getDescription")(getDescription)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(createListener = createListener, get = get, getDescription = getDescription, insert = insert, set = set)
+  
     __obj.asInstanceOf[LeState]
   }
 }

@@ -36,12 +36,8 @@ object XSetSpellAlternatives {
     setAlternatives: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
     setFailureType: js.Function1[scala.Double, scala.Unit]
   ): XSetSpellAlternatives = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setAlternatives")(setAlternatives)
-    __obj.updateDynamic("setFailureType")(setFailureType)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, setAlternatives = setAlternatives, setFailureType = setFailureType)
+  
     __obj.asInstanceOf[XSetSpellAlternatives]
   }
 }

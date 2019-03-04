@@ -33,9 +33,7 @@ object IMetaData {
     nullable: js.UndefOr[scala.Boolean] = js.undefined,
     precision: scala.Int | scala.Double = null
   ): IMetaData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(name = name, scale = scale)
     if (byteSize != null) __obj.updateDynamic("byteSize")(byteSize.asInstanceOf[js.Any])
     if (dbType != null) __obj.updateDynamic("dbType")(dbType.asInstanceOf[js.Any])
     if (fetchType != null) __obj.updateDynamic("fetchType")(fetchType.asInstanceOf[js.Any])

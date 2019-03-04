@@ -12,8 +12,8 @@ trait Anon_AddonTypeAppendPrepend extends js.Object {
 object Anon_AddonTypeAppendPrepend {
   @scala.inline
   def apply(addonType: reactstrapLib.reactstrapLibStrings.prepend | reactstrapLib.reactstrapLibStrings.append): Anon_AddonTypeAppendPrepend = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addonType")(addonType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addonType = addonType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_AddonTypeAppendPrepend]
   }
 }

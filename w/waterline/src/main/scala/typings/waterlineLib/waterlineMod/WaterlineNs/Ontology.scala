@@ -12,8 +12,8 @@ trait Ontology extends js.Object {
 object Ontology {
   @scala.inline
   def apply(collections: js.Any): Ontology = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collections")(collections)
+    val __obj = js.Dynamic.literal(collections = collections)
+  
     __obj.asInstanceOf[Ontology]
   }
 }

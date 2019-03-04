@@ -12,8 +12,8 @@ trait Anon_Etag extends js.Object {
 object Anon_Etag {
   @scala.inline
   def apply(etag: js.Any): Anon_Etag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etag")(etag)
+    val __obj = js.Dynamic.literal(etag = etag)
+  
     __obj.asInstanceOf[Anon_Etag]
   }
 }

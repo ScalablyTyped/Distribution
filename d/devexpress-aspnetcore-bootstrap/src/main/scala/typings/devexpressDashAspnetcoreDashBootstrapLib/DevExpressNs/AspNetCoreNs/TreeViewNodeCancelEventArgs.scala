@@ -17,11 +17,8 @@ object TreeViewNodeCancelEventArgs {
     processOnServer: scala.Boolean,
     sender: Control
   ): TreeViewNodeCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, node = node, processOnServer = processOnServer, sender = sender)
+  
     __obj.asInstanceOf[TreeViewNodeCancelEventArgs]
   }
 }

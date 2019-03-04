@@ -37,12 +37,8 @@ object GitItemDescriptor {
     versionOptions: GitVersionOptions,
     versionType: GitVersionType
   ): GitItemDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("recursionLevel")(recursionLevel)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("versionOptions")(versionOptions)
-    __obj.updateDynamic("versionType")(versionType)
+    val __obj = js.Dynamic.literal(path = path, recursionLevel = recursionLevel, version = version, versionOptions = versionOptions, versionType = versionType)
+  
     __obj.asInstanceOf[GitItemDescriptor]
   }
 }

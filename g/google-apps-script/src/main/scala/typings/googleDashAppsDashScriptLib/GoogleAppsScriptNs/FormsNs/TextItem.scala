@@ -46,24 +46,8 @@ object TextItem {
     setTitle: js.Function1[java.lang.String, TextItem],
     setValidation: js.Function1[TextValidation, TextItem]
   ): TextItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearValidation")(clearValidation)
-    __obj.updateDynamic("createResponse")(createResponse)
-    __obj.updateDynamic("duplicate")(duplicate)
-    __obj.updateDynamic("getGeneralFeedback")(getGeneralFeedback)
-    __obj.updateDynamic("getHelpText")(getHelpText)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getPoints")(getPoints)
-    __obj.updateDynamic("getTitle")(getTitle)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("isRequired")(isRequired)
-    __obj.updateDynamic("setGeneralFeedback")(setGeneralFeedback)
-    __obj.updateDynamic("setHelpText")(setHelpText)
-    __obj.updateDynamic("setPoints")(setPoints)
-    __obj.updateDynamic("setRequired")(setRequired)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setValidation")(setValidation)
+    val __obj = js.Dynamic.literal(clearValidation = clearValidation, createResponse = createResponse, duplicate = duplicate, getGeneralFeedback = getGeneralFeedback, getHelpText = getHelpText, getId = getId, getIndex = getIndex, getPoints = getPoints, getTitle = getTitle, getType = getType, isRequired = isRequired, setGeneralFeedback = setGeneralFeedback, setHelpText = setHelpText, setPoints = setPoints, setRequired = setRequired, setTitle = setTitle, setValidation = setValidation)
+  
     __obj.asInstanceOf[TextItem]
   }
 }

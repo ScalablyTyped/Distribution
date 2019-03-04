@@ -32,9 +32,7 @@ object SnackbarProps {
     onRequestClose: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(open)
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], open = open)
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
     if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)

@@ -15,10 +15,8 @@ trait Anon_InitialValue extends js.Object {
 object Anon_InitialValue {
   @scala.inline
   def apply(initialValue: js.Any, `object`: js.Any, property: java.lang.String, value: js.Any): Anon_InitialValue = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("initialValue")(initialValue)
-    __obj.updateDynamic("property")(property)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(initialValue = initialValue, property = property, value = value)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Anon_InitialValue]
   }
 }

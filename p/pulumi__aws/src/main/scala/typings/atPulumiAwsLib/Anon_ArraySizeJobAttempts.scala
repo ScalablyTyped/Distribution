@@ -20,9 +20,7 @@ object Anon_ArraySizeJobAttempts {
     arraySize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     jobAttempts: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): Anon_ArraySizeJobAttempts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("jobDefinition")(jobDefinition.asInstanceOf[js.Any])
-    __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jobDefinition = jobDefinition.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
     if (arraySize != null) __obj.updateDynamic("arraySize")(arraySize.asInstanceOf[js.Any])
     if (jobAttempts != null) __obj.updateDynamic("jobAttempts")(jobAttempts.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArraySizeJobAttempts]

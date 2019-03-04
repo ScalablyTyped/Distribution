@@ -53,30 +53,8 @@ object XPasswordContainer2 {
     removeUrl: js.Function1[java.lang.String, scala.Unit],
     useDefaultMasterPassword: js.Function1[XInteractionHandler, scala.Boolean]
   ): XPasswordContainer2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addPersistent")(addPersistent)
-    __obj.updateDynamic("addUrl")(addUrl)
-    __obj.updateDynamic("allowPersistentStoring")(allowPersistentStoring)
-    __obj.updateDynamic("authorizateWithMasterPassword")(authorizateWithMasterPassword)
-    __obj.updateDynamic("changeMasterPassword")(changeMasterPassword)
-    __obj.updateDynamic("find")(find)
-    __obj.updateDynamic("findForName")(findForName)
-    __obj.updateDynamic("findUrl")(findUrl)
-    __obj.updateDynamic("getAllPersistent")(getAllPersistent)
-    __obj.updateDynamic("getUrls")(getUrls)
-    __obj.updateDynamic("hasMasterPassword")(hasMasterPassword)
-    __obj.updateDynamic("isDefaultMasterPasswordUsed")(isDefaultMasterPasswordUsed)
-    __obj.updateDynamic("isPersistentStoringAllowed")(isPersistentStoringAllowed)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAllPersistent")(removeAllPersistent)
-    __obj.updateDynamic("removeMasterPassword")(removeMasterPassword)
-    __obj.updateDynamic("removePersistent")(removePersistent)
-    __obj.updateDynamic("removeUrl")(removeUrl)
-    __obj.updateDynamic("useDefaultMasterPassword")(useDefaultMasterPassword)
+    val __obj = js.Dynamic.literal(acquire = acquire, add = add, addPersistent = addPersistent, addUrl = addUrl, allowPersistentStoring = allowPersistentStoring, authorizateWithMasterPassword = authorizateWithMasterPassword, changeMasterPassword = changeMasterPassword, find = find, findForName = findForName, findUrl = findUrl, getAllPersistent = getAllPersistent, getUrls = getUrls, hasMasterPassword = hasMasterPassword, isDefaultMasterPasswordUsed = isDefaultMasterPasswordUsed, isPersistentStoringAllowed = isPersistentStoringAllowed, queryInterface = queryInterface, release = release, remove = remove, removeAllPersistent = removeAllPersistent, removeMasterPassword = removeMasterPassword, removePersistent = removePersistent, removeUrl = removeUrl, useDefaultMasterPassword = useDefaultMasterPassword)
+  
     __obj.asInstanceOf[XPasswordContainer2]
   }
 }

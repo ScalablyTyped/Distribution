@@ -39,27 +39,8 @@ object ManualColumnMove {
     removeHook: js.Function1[java.lang.String, scala.Unit],
     removedColumns: js.Array[_]
   ): ManualColumnMove = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addHook")(addHook)
-    __obj.updateDynamic("backlight")(backlight)
-    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
-    __obj.updateDynamic("clearHooks")(clearHooks)
-    __obj.updateDynamic("columnsMapper")(columnsMapper)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disablePlugin")(disablePlugin)
-    __obj.updateDynamic("enablePlugin")(enablePlugin)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("guideline")(guideline)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("initialized")(initialized)
-    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
-    __obj.updateDynamic("moveColumn")(moveColumn)
-    __obj.updateDynamic("moveColumns")(moveColumns)
-    __obj.updateDynamic("pluginName")(pluginName)
-    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
-    __obj.updateDynamic("removeHook")(removeHook)
-    __obj.updateDynamic("removedColumns")(removedColumns)
+    val __obj = js.Dynamic.literal(addHook = addHook, backlight = backlight, callOnPluginsReady = callOnPluginsReady, clearHooks = clearHooks, columnsMapper = columnsMapper, destroy = destroy, disablePlugin = disablePlugin, enablePlugin = enablePlugin, enabled = enabled, eventManager = eventManager, guideline = guideline, init = init, initialized = initialized, isPluginsReady = isPluginsReady, moveColumn = moveColumn, moveColumns = moveColumns, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = removeHook, removedColumns = removedColumns)
+  
     __obj.asInstanceOf[ManualColumnMove]
   }
 }

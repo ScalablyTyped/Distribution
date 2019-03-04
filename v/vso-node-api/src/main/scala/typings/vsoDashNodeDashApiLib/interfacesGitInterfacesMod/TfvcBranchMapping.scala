@@ -23,9 +23,8 @@ trait TfvcBranchMapping extends js.Object {
 object TfvcBranchMapping {
   @scala.inline
   def apply(depth: java.lang.String, serverItem: java.lang.String, `type`: java.lang.String): TfvcBranchMapping = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("depth")(depth)
-    __obj.updateDynamic("serverItem")(serverItem)
+    val __obj = js.Dynamic.literal(depth = depth, serverItem = serverItem)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TfvcBranchMapping]
   }
 }

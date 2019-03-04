@@ -55,28 +55,8 @@ object PlotMarker {
     symbol: java.lang.String | js.Array[java.lang.String],
     width: scala.Double
   ): PlotMarker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autocolorscale")(autocolorscale)
-    __obj.updateDynamic("cauto")(cauto)
-    __obj.updateDynamic("cmax")(cmax)
-    __obj.updateDynamic("cmin")(cmin)
-    __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    __obj.updateDynamic("colorbar")(colorbar)
-    __obj.updateDynamic("colors")(colors)
-    __obj.updateDynamic("colorscale")(colorscale.asInstanceOf[js.Any])
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("maxdisplayed")(maxdisplayed)
-    __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("reversescale")(reversescale)
-    __obj.updateDynamic("showscale")(showscale)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    __obj.updateDynamic("sizemax")(sizemax)
-    __obj.updateDynamic("sizemin")(sizemin)
-    __obj.updateDynamic("sizemode")(sizemode.asInstanceOf[js.Any])
-    __obj.updateDynamic("sizeref")(sizeref)
-    __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(autocolorscale = autocolorscale, cauto = cauto, cmax = cmax, cmin = cmin, color = color.asInstanceOf[js.Any], colorbar = colorbar, colors = colors, colorscale = colorscale.asInstanceOf[js.Any], gradient = gradient, line = line, maxdisplayed = maxdisplayed, opacity = opacity.asInstanceOf[js.Any], reversescale = reversescale, showscale = showscale, size = size.asInstanceOf[js.Any], sizemax = sizemax, sizemin = sizemin, sizemode = sizemode.asInstanceOf[js.Any], sizeref = sizeref, symbol = symbol.asInstanceOf[js.Any], width = width)
+  
     __obj.asInstanceOf[PlotMarker]
   }
 }

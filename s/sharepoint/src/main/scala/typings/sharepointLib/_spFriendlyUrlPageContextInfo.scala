@@ -20,11 +20,8 @@ object _spFriendlyUrlPageContextInfo {
     termStoreId: java.lang.String,
     title: java.lang.String
   ): _spFriendlyUrlPageContextInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("termId")(termId)
-    __obj.updateDynamic("termSetId")(termSetId)
-    __obj.updateDynamic("termStoreId")(termStoreId)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(termId = termId, termSetId = termSetId, termStoreId = termStoreId, title = title)
+  
     __obj.asInstanceOf[_spFriendlyUrlPageContextInfo]
   }
 }

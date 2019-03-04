@@ -28,8 +28,7 @@ object Names {
     ru: java.lang.String = null,
     `zh-CN`: java.lang.String = null
   ): Names = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("en")(en)
+    val __obj = js.Dynamic.literal(en = en)
     if (de != null) __obj.updateDynamic("de")(de)
     if (es != null) __obj.updateDynamic("es")(es)
     if (fr != null) __obj.updateDynamic("fr")(fr)

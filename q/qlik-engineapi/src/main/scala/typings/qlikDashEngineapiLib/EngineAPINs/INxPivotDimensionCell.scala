@@ -88,18 +88,8 @@ object INxPivotDimensionCell {
     qUp: scala.Double,
     qValue: scala.Double
   ): INxPivotDimensionCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qAttrDims")(qAttrDims)
-    __obj.updateDynamic("qAttrExps")(qAttrExps)
-    __obj.updateDynamic("qCanCollapse")(qCanCollapse)
-    __obj.updateDynamic("qCanExpand")(qCanExpand)
-    __obj.updateDynamic("qDown")(qDown)
-    __obj.updateDynamic("qElemNo")(qElemNo)
-    __obj.updateDynamic("qSubNodes")(qSubNodes)
-    __obj.updateDynamic("qText")(qText)
-    __obj.updateDynamic("qType")(qType)
-    __obj.updateDynamic("qUp")(qUp)
-    __obj.updateDynamic("qValue")(qValue)
+    val __obj = js.Dynamic.literal(qAttrDims = qAttrDims, qAttrExps = qAttrExps, qCanCollapse = qCanCollapse, qCanExpand = qCanExpand, qDown = qDown, qElemNo = qElemNo, qSubNodes = qSubNodes, qText = qText, qType = qType, qUp = qUp, qValue = qValue)
+  
     __obj.asInstanceOf[INxPivotDimensionCell]
   }
 }

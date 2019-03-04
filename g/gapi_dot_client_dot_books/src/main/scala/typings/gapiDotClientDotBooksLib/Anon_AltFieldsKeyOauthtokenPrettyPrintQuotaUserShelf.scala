@@ -48,10 +48,7 @@ object Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserShelf {
     source: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserShelf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shelf")(shelf)
-    __obj.updateDynamic("volumeId")(volumeId)
-    __obj.updateDynamic("volumePosition")(volumePosition)
+    val __obj = js.Dynamic.literal(shelf = shelf, volumeId = volumeId, volumePosition = volumePosition)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

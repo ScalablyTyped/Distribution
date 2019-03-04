@@ -14,7 +14,7 @@ trait Pagelet
   var html: java.lang.String = js.native
   var id: java.lang.String = js.native
   @JSName("js")
-  var `js_`: js.Array[java.lang.String] = js.native
+  var js_ : js.Array[java.lang.String] = js.native
   var mode: yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode = js.native
   var reqID: java.lang.String = js.native
   var scripts: js.Array[java.lang.String] = js.native

@@ -184,10 +184,7 @@ object ChargeItem {
     supportingInformation: js.Array[Reference] = null,
     text: Narrative = null
   ): ChargeItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(code = code, status = status, subject = subject)
     if (_definition != null) __obj.updateDynamic("_definition")(_definition)
     if (_enteredDate != null) __obj.updateDynamic("_enteredDate")(_enteredDate)
     if (_factorOverride != null) __obj.updateDynamic("_factorOverride")(_factorOverride)

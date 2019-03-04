@@ -22,9 +22,8 @@ object StaticIpAttachmentArgs {
     instanceName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     staticIpName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): StaticIpAttachmentArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    __obj.updateDynamic("staticIpName")(staticIpName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], staticIpName = staticIpName.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[StaticIpAttachmentArgs]
   }
 }

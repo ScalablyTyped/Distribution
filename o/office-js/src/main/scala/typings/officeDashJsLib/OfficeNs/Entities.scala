@@ -78,14 +78,8 @@ object Entities {
     taskSuggestions: js.Array[java.lang.String],
     urls: js.Array[java.lang.String]
   ): Entities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addresses")(addresses)
-    __obj.updateDynamic("contacts")(contacts)
-    __obj.updateDynamic("emailAddresses")(emailAddresses)
-    __obj.updateDynamic("meetingSuggestions")(meetingSuggestions)
-    __obj.updateDynamic("phoneNumbers")(phoneNumbers)
-    __obj.updateDynamic("taskSuggestions")(taskSuggestions)
-    __obj.updateDynamic("urls")(urls)
+    val __obj = js.Dynamic.literal(addresses = addresses, contacts = contacts, emailAddresses = emailAddresses, meetingSuggestions = meetingSuggestions, phoneNumbers = phoneNumbers, taskSuggestions = taskSuggestions, urls = urls)
+  
     __obj.asInstanceOf[Entities]
   }
 }

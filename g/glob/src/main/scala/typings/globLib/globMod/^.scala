@@ -27,8 +27,8 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def `__promisify__`(pattern: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  def `__promisify__`(pattern: java.lang.String, options: globLib.globMod.GNs.IOptions): js.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify__(pattern: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def __promisify__(pattern: java.lang.String, options: globLib.globMod.GNs.IOptions): js.Promise[js.Array[java.lang.String]] = js.native
   def hasMagic(pattern: java.lang.String): scala.Boolean = js.native
   def hasMagic(pattern: java.lang.String, options: globLib.globMod.GNs.IOptions): scala.Boolean = js.native
   def sync(pattern: java.lang.String): js.Array[java.lang.String] = js.native

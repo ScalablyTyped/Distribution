@@ -42,22 +42,8 @@ object Phantom {
     waitForJS: scala.Boolean,
     width: java.lang.String
   ): Phantom = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockJavaScript")(blockJavaScript)
-    __obj.updateDynamic("customPhantomJS")(customPhantomJS)
-    __obj.updateDynamic("fitToPage")(fitToPage)
-    __obj.updateDynamic("footer")(footer)
-    __obj.updateDynamic("footerHeight")(footerHeight)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("headerHeight")(headerHeight)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    __obj.updateDynamic("phantomjsVersion")(phantomjsVersion)
-    __obj.updateDynamic("resourceTimeout")(resourceTimeout)
-    __obj.updateDynamic("waitForJS")(waitForJS)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(blockJavaScript = blockJavaScript, customPhantomJS = customPhantomJS, fitToPage = fitToPage, footer = footer, footerHeight = footerHeight, format = format, header = header, headerHeight = headerHeight, height = height, margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], phantomjsVersion = phantomjsVersion, resourceTimeout = resourceTimeout, waitForJS = waitForJS, width = width)
+  
     __obj.asInstanceOf[Phantom]
   }
 }

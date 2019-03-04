@@ -17,15 +17,15 @@ object Config extends js.Object {
   var cwd: java.lang.String = js.native
   var dir: java.lang.String = js.native
   var folder: java.lang.String = js.native
-  var `httpProxy_`: js.Any = js.native
-  var `httpsProxy_`: js.Any = js.native
+  var httpProxy_ : js.Any = js.native
+  var httpsProxy_ : js.Any = js.native
   var isLocalVersion: scala.Boolean = js.native
   var isProjectVersion: scala.Boolean = js.native
   var localInstall: java.lang.String = js.native
-  var `noProxy_`: js.Any = js.native
+  var noProxy_ : js.Any = js.native
   var nodeModuleName: java.lang.String = js.native
-  var `osArch_`: java.lang.String = js.native
-  var `osType_`: java.lang.String = js.native
+  var osArch_ : java.lang.String = js.native
+  var osType_ : java.lang.String = js.native
   var packageFile: java.lang.String = js.native
   var parentPath: java.lang.String = js.native
   var runCommand: java.lang.String = js.native
@@ -40,8 +40,8 @@ object Config extends js.Object {
     */
   def cdnUrls(): webdriverDashManagerLib.builtLibConfigMod.ConfigFile = js.native
   def getBaseDir(): java.lang.String = js.native
-  def `getConfigFile_`(): java.lang.String = js.native
-  def `getPackageFile_`(): java.lang.String = js.native
+  def getConfigFile_(): java.lang.String = js.native
+  def getPackageFile_(): java.lang.String = js.native
   def getSeleniumDir(): java.lang.String = js.native
   /**
     * Get the package version.

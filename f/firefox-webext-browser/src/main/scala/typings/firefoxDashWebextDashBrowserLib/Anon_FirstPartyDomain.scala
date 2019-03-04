@@ -33,9 +33,7 @@ object Anon_FirstPartyDomain {
     firstPartyDomain: java.lang.String = null,
     storeId: java.lang.String = null
   ): Anon_FirstPartyDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(name = name, url = url)
     if (firstPartyDomain != null) __obj.updateDynamic("firstPartyDomain")(firstPartyDomain)
     if (storeId != null) __obj.updateDynamic("storeId")(storeId)
     __obj.asInstanceOf[Anon_FirstPartyDomain]

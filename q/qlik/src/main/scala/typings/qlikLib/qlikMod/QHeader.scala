@@ -41,15 +41,7 @@ object QHeader {
     qMin: scala.Int | scala.Double = null,
     qStateCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): QHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("col")(col)
-    __obj.updateDynamic("isOrderedBy")(isOrderedBy)
-    __obj.updateDynamic("orderBy")(orderBy)
-    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
-    __obj.updateDynamic("qReverseSort")(qReverseSort)
-    __obj.updateDynamic("qSortIndicator")(qSortIndicator.asInstanceOf[js.Any])
-    __obj.updateDynamic("reverseOrder")(reverseOrder)
-    __obj.updateDynamic("selectRange")(selectRange)
+    val __obj = js.Dynamic.literal(col = col, isOrderedBy = isOrderedBy, orderBy = orderBy, qFallbackTitle = qFallbackTitle, qReverseSort = qReverseSort, qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = reverseOrder, selectRange = selectRange)
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
     if (qCardinal != null) __obj.updateDynamic("qCardinal")(qCardinal.asInstanceOf[js.Any])

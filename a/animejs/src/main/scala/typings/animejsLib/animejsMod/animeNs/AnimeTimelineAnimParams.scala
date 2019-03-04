@@ -24,9 +24,7 @@ object AnimeTimelineAnimParams {
     run: animejsLib.AnimeCallbackFunction = null,
     update: animejsLib.AnimeCallbackFunction = null
   ): AnimeTimelineAnimParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(begin)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

@@ -12,8 +12,8 @@ trait Anon_Stop extends js.Object {
 object Anon_Stop {
   @scala.inline
   def apply(stop: js.Function0[scala.Unit]): Anon_Stop = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(stop = stop)
+  
     __obj.asInstanceOf[Anon_Stop]
   }
 }

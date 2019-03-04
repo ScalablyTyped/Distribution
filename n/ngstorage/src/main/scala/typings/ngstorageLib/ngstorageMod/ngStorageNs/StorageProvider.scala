@@ -28,15 +28,8 @@ object StorageProvider {
     setSerializer: js.Function1[js.Function1[/* value */ js.Any, java.lang.String], scala.Unit],
     supported: js.Function0[scala.Boolean]
   ): StorageProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setDeserializer")(setDeserializer)
-    __obj.updateDynamic("setKeyPrefix")(setKeyPrefix)
-    __obj.updateDynamic("setSerializer")(setSerializer)
-    __obj.updateDynamic("supported")(supported)
+    val __obj = js.Dynamic.literal($get = $get, get = get, remove = remove, set = set, setDeserializer = setDeserializer, setKeyPrefix = setKeyPrefix, setSerializer = setSerializer, supported = supported)
+  
     __obj.asInstanceOf[StorageProvider]
   }
 }

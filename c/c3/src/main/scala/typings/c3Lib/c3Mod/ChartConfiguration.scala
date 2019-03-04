@@ -103,8 +103,7 @@ object ChartConfiguration {
     transition: c3Lib.Anon_Duration = null,
     zoom: ZoomOptions = null
   ): ChartConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (area != null) __obj.updateDynamic("area")(area)
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (bar != null) __obj.updateDynamic("bar")(bar)

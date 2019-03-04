@@ -13,9 +13,8 @@ trait TeamMember extends js.Object {
 object TeamMember {
   @scala.inline
   def apply(identity: IdentityRef, isTeamAdmin: scala.Boolean): TeamMember = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("isTeamAdmin")(isTeamAdmin)
+    val __obj = js.Dynamic.literal(identity = identity, isTeamAdmin = isTeamAdmin)
+  
     __obj.asInstanceOf[TeamMember]
   }
 }

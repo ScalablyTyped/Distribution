@@ -36,10 +36,8 @@ object Delegate {
       scala.Unit
     ]
   ): Delegate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getApp")(getApp)
-    __obj.updateDynamic("launchApp")(launchApp)
-    __obj.updateDynamic("stopApp")(stopApp)
+    val __obj = js.Dynamic.literal(getApp = getApp, launchApp = launchApp, stopApp = stopApp)
+  
     __obj.asInstanceOf[Delegate]
   }
 }

@@ -15,8 +15,8 @@ trait SubscribeTo extends js.Object {
 object SubscribeTo {
   @scala.inline
   def apply(authCode: js.Function0[meteorLib.MeteorNs.SubscriptionHandle]): SubscribeTo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authCode")(authCode)
+    val __obj = js.Dynamic.literal(authCode = authCode)
+  
     __obj.asInstanceOf[SubscribeTo]
   }
 }

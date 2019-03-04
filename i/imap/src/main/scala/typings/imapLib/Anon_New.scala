@@ -17,9 +17,8 @@ trait Anon_New extends js.Object {
 object Anon_New {
   @scala.inline
   def apply(`new`: scala.Double, total: scala.Double, unseen: scala.Double): Anon_New = {
-    val __obj = js.Dynamic.literal(`new` = `new`)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("unseen")(unseen)
+    val __obj = js.Dynamic.literal(total = total, unseen = unseen)
+    __obj.updateDynamic("new")(`new`)
     __obj.asInstanceOf[Anon_New]
   }
 }

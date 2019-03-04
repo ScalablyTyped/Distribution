@@ -25,10 +25,8 @@ object AddressComponent {
     short_name: java.lang.String,
     types: js.Array[AddressType | GeocodingAddressComponentType]
   ): AddressComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("long_name")(long_name)
-    __obj.updateDynamic("short_name")(short_name)
-    __obj.updateDynamic("types")(types)
+    val __obj = js.Dynamic.literal(long_name = long_name, short_name = short_name, types = types)
+  
     __obj.asInstanceOf[AddressComponent]
   }
 }

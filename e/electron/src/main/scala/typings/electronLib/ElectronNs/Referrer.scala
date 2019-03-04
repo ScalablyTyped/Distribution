@@ -25,9 +25,8 @@ object Referrer {
     policy: electronLib.electronLibStrings.default | electronLib.electronLibStrings.`unsafe-url` | electronLib.electronLibStrings.`no-referrer-when-downgrade` | electronLib.electronLibStrings.`no-referrer` | electronLib.electronLibStrings.origin | electronLib.electronLibStrings.`strict-origin-when-cross-origin` | electronLib.electronLibStrings.`same-origin` | electronLib.electronLibStrings.`strict-origin`,
     url: java.lang.String
   ): Referrer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], url = url)
+  
     __obj.asInstanceOf[Referrer]
   }
 }

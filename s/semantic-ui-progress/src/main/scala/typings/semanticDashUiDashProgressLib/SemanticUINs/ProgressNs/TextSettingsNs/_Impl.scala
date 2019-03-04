@@ -42,13 +42,8 @@ object _Impl {
     success: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | java.lang.String,
     warning: semanticDashUiDashProgressLib.semanticDashUiDashProgressLibNumbers.`false` | java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[_Impl]
   }
 }

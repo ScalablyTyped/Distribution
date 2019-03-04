@@ -33,13 +33,8 @@ object XBoundComponent {
     release: js.Function0[scala.Unit],
     removeUpdateListener: js.Function1[XUpdateListener, scala.Unit]
   ): XBoundComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addUpdateListener")(addUpdateListener)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeUpdateListener")(removeUpdateListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addUpdateListener = addUpdateListener, commit = commit, queryInterface = queryInterface, release = release, removeUpdateListener = removeUpdateListener)
+  
     __obj.asInstanceOf[XBoundComponent]
   }
 }

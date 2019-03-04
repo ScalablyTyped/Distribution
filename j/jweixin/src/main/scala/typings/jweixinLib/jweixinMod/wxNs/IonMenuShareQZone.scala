@@ -33,13 +33,7 @@ object IonMenuShareQZone {
     complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IonMenuShareQZone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("desc")(desc)
-    __obj.updateDynamic("imgUrl")(imgUrl)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("success")(success)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(cancel = cancel, desc = desc, imgUrl = imgUrl, link = link, success = success, title = title)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     __obj.asInstanceOf[IonMenuShareQZone]

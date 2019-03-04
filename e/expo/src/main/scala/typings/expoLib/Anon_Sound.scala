@@ -13,9 +13,8 @@ trait Anon_Sound extends js.Object {
 object Anon_Sound {
   @scala.inline
   def apply(sound: expoLib.expoMod.AudioNs.Sound, status: expoLib.expoMod.PlaybackStatus): Anon_Sound = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sound")(sound)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(sound = sound, status = status)
+  
     __obj.asInstanceOf[Anon_Sound]
   }
 }

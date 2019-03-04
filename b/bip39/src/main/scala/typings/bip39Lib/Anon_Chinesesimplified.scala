@@ -30,16 +30,8 @@ object Anon_Chinesesimplified {
     japanese: js.Array[java.lang.String],
     spanish: js.Array[java.lang.String]
   ): Anon_Chinesesimplified = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EN")(EN)
-    __obj.updateDynamic("JA")(JA)
-    __obj.updateDynamic("chinese_simplified")(chinese_simplified)
-    __obj.updateDynamic("chinese_traditional")(chinese_traditional)
-    __obj.updateDynamic("english")(english)
-    __obj.updateDynamic("french")(french)
-    __obj.updateDynamic("italian")(italian)
-    __obj.updateDynamic("japanese")(japanese)
-    __obj.updateDynamic("spanish")(spanish)
+    val __obj = js.Dynamic.literal(EN = EN, JA = JA, chinese_simplified = chinese_simplified, chinese_traditional = chinese_traditional, english = english, french = french, italian = italian, japanese = japanese, spanish = spanish)
+  
     __obj.asInstanceOf[Anon_Chinesesimplified]
   }
 }

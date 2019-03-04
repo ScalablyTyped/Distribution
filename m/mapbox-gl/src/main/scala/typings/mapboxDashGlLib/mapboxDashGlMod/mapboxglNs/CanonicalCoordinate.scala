@@ -22,12 +22,8 @@ object CanonicalCoordinate {
     y: scala.Double,
     z: scala.Double
   ): CanonicalCoordinate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(equals = equals, key = key, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[CanonicalCoordinate]
   }
 }

@@ -13,9 +13,8 @@ trait Script extends js.Object {
 object Script {
   @scala.inline
   def apply(mount: java.lang.String, name: java.lang.String): Script = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mount")(mount)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(mount = mount, name = name)
+  
     __obj.asInstanceOf[Script]
   }
 }

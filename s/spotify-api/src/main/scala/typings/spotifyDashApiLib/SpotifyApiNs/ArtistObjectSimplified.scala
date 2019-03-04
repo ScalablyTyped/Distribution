@@ -28,12 +28,8 @@ object ArtistObjectSimplified {
     `type`: spotifyDashApiLib.spotifyDashApiLibStrings.artist,
     uri: java.lang.String
   ): ArtistObjectSimplified = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("external_urls")(external_urls)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(external_urls = external_urls, href = href, id = id, name = name, uri = uri)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ArtistObjectSimplified]
   }
 }

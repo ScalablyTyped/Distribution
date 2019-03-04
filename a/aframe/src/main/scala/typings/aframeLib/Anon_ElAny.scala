@@ -18,8 +18,8 @@ object Anon_ElAny {
       aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
     ])
   ): Anon_ElAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ElAny]
   }
 }

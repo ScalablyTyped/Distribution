@@ -12,8 +12,8 @@ trait DiagramProps extends js.Object {
 object DiagramProps {
   @scala.inline
   def apply(connections: js.Array[grommetLib.Anon_Anchor]): DiagramProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connections")(connections)
+    val __obj = js.Dynamic.literal(connections = connections)
+  
     __obj.asInstanceOf[DiagramProps]
   }
 }

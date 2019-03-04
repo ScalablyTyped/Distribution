@@ -44,12 +44,8 @@ object ServicesResource {
     ],
     versions: VersionsResource
   ): ServicesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("versions")(versions)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, list = list, patch = patch, versions = versions)
+  
     __obj.asInstanceOf[ServicesResource]
   }
 }

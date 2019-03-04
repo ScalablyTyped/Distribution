@@ -18,10 +18,8 @@ object Anon_LOCK {
     NONE: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.none,
     PUSH: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.push
   ): Anon_LOCK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LOCK")(LOCK)
-    __obj.updateDynamic("NONE")(NONE)
-    __obj.updateDynamic("PUSH")(PUSH)
+    val __obj = js.Dynamic.literal(LOCK = LOCK, NONE = NONE, PUSH = PUSH)
+  
     __obj.asInstanceOf[Anon_LOCK]
   }
 }

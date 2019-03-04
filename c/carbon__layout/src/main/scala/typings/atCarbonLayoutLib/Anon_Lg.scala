@@ -16,12 +16,8 @@ trait Anon_Lg extends js.Object {
 object Anon_Lg {
   @scala.inline
   def apply(lg: Anon_Columns, max: Anon_Columns, md: Anon_Columns, sm: Anon_Columns, xlg: Anon_Columns): Anon_Lg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lg")(lg)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("md")(md)
-    __obj.updateDynamic("sm")(sm)
-    __obj.updateDynamic("xlg")(xlg)
+    val __obj = js.Dynamic.literal(lg = lg, max = max, md = md, sm = sm, xlg = xlg)
+  
     __obj.asInstanceOf[Anon_Lg]
   }
 }

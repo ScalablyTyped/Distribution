@@ -28,10 +28,8 @@ trait PackageId extends js.Object {
 object PackageId {
   @scala.inline
   def apply(name: java.lang.String, subModuleName: java.lang.String, version: java.lang.String): PackageId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("subModuleName")(subModuleName)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, subModuleName = subModuleName, version = version)
+  
     __obj.asInstanceOf[PackageId]
   }
 }

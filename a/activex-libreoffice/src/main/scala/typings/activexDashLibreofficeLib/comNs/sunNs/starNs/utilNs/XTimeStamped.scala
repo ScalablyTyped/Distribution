@@ -38,12 +38,8 @@ object XTimeStamped {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTimeStamped = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Timestamp")(Timestamp)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getTimestamp")(getTimestamp)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Timestamp = Timestamp, acquire = acquire, getTimestamp = getTimestamp, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTimeStamped]
   }
 }

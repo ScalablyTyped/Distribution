@@ -20,8 +20,8 @@ object Anon_Moneysourcetoken {
     money_source_token: java.lang.String = null,
     pan_fragment: java.lang.String = null
   ): Anon_Moneysourcetoken = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payment_card_type")(payment_card_type)
+    val __obj = js.Dynamic.literal(payment_card_type = payment_card_type)
+    __obj.updateDynamic("type")(`type`)
     if (money_source_token != null) __obj.updateDynamic("money_source_token")(money_source_token)
     if (pan_fragment != null) __obj.updateDynamic("pan_fragment")(pan_fragment)
     __obj.asInstanceOf[Anon_Moneysourcetoken]

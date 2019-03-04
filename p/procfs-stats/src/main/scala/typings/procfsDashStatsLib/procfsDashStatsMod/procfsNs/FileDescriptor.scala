@@ -20,10 +20,7 @@ object FileDescriptor {
     stat: FileDescriptorStat | scala.Boolean,
     fd: java.lang.String = null
   ): FileDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("stat")(stat.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(info = info, path = path, stat = stat.asInstanceOf[js.Any])
     if (fd != null) __obj.updateDynamic("fd")(fd)
     __obj.asInstanceOf[FileDescriptor]
   }

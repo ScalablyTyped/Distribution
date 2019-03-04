@@ -24,8 +24,7 @@ object OnTrigger {
     toggle: vegaDashTypingsLib.typesSpecExprMod.Expr = null,
     values: vegaDashTypingsLib.typesSpecExprMod.Expr = null
   ): OnTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(trigger = trigger)
     if (insert != null) __obj.updateDynamic("insert")(insert)
     if (modify != null) __obj.updateDynamic("modify")(modify)
     if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])

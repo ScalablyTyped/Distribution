@@ -36,9 +36,7 @@ object Anon_ActiveIndex {
     ride: reactstrapLib.reactstrapLibStrings.carousel = null,
     slide: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ActiveIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("previous")(previous)
+    val __obj = js.Dynamic.literal(next = next, previous = previous)
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

@@ -13,9 +13,8 @@ trait Anon_Outparams extends js.Object {
 object Anon_Outparams {
   @scala.inline
   def apply(outparams: js.Any, result: js.Array[_]): Anon_Outparams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("outparams")(outparams)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(outparams = outparams, result = result)
+  
     __obj.asInstanceOf[Anon_Outparams]
   }
 }

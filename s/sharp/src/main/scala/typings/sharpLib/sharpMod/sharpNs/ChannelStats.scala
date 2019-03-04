@@ -42,17 +42,8 @@ object ChannelStats {
     stdev: scala.Double,
     sum: scala.Double
   ): ChannelStats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("maxX")(maxX)
-    __obj.updateDynamic("maxY")(maxY)
-    __obj.updateDynamic("mean")(mean)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("minX")(minX)
-    __obj.updateDynamic("minY")(minY)
-    __obj.updateDynamic("squaresSum")(squaresSum)
-    __obj.updateDynamic("stdev")(stdev)
-    __obj.updateDynamic("sum")(sum)
+    val __obj = js.Dynamic.literal(max = max, maxX = maxX, maxY = maxY, mean = mean, min = min, minX = minX, minY = minY, squaresSum = squaresSum, stdev = stdev, sum = sum)
+  
     __obj.asInstanceOf[ChannelStats]
   }
 }

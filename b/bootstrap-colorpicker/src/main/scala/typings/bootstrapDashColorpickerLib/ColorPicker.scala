@@ -30,16 +30,8 @@ object ColorPicker {
     options: ColorPickerOptions,
     picker: JQuery
   ): ColorPicker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("picker")(picker)
+    val __obj = js.Dynamic.literal(color = color, component = component, container = container, disabled = disabled, element = element, format = format, input = input, options = options, picker = picker)
+  
     __obj.asInstanceOf[ColorPicker]
   }
 }

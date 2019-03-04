@@ -12,8 +12,8 @@ trait ComponentHost extends js.Object {
 object ComponentHost {
   @scala.inline
   def apply(application: typedocLib.distLibApplicationMod.Application): ComponentHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application")(application)
+    val __obj = js.Dynamic.literal(application = application)
+  
     __obj.asInstanceOf[ComponentHost]
   }
 }

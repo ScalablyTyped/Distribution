@@ -13,8 +13,8 @@ trait Anon_ValueSignalValue
 object Anon_ValueSignalValue {
   @scala.inline
   def apply(value: vegaDashTypingsLib.typesSpecSignalMod.SignalValue): Anon_ValueSignalValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+  
     __obj.asInstanceOf[Anon_ValueSignalValue]
   }
 }

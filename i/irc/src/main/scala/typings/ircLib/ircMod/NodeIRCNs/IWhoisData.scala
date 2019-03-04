@@ -36,15 +36,8 @@ object IWhoisData {
     serverinfo: java.lang.String,
     user: java.lang.String
   ): IWhoisData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("nick")(nick)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("realname")(realname)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("serverinfo")(serverinfo)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(channels = channels, host = host, nick = nick, operator = operator, realname = realname, server = server, serverinfo = serverinfo, user = user)
+  
     __obj.asInstanceOf[IWhoisData]
   }
 }

@@ -55,7 +55,8 @@ object SearchParams {
     query: js.Any = null,
     since: java.lang.String = null
   ): SearchParams = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params)
     if (patient != null) __obj.updateDynamic("patient")(patient)

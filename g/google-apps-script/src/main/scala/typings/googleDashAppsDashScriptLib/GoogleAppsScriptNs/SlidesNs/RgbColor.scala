@@ -22,12 +22,8 @@ object RgbColor {
     getGreen: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     getRed: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer]
   ): RgbColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asHexString")(asHexString)
-    __obj.updateDynamic("getBlue")(getBlue)
-    __obj.updateDynamic("getColorType")(getColorType)
-    __obj.updateDynamic("getGreen")(getGreen)
-    __obj.updateDynamic("getRed")(getRed)
+    val __obj = js.Dynamic.literal(asHexString = asHexString, getBlue = getBlue, getColorType = getColorType, getGreen = getGreen, getRed = getRed)
+  
     __obj.asInstanceOf[RgbColor]
   }
 }

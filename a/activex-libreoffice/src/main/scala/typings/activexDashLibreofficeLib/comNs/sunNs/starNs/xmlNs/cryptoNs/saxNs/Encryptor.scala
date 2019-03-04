@@ -31,19 +31,8 @@ object Encryptor {
     setReferenceCount: js.Function1[scala.Double, scala.Unit],
     setReferenceId: js.Function1[scala.Double, scala.Unit]
   ): Encryptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEncryptionResultListener")(addEncryptionResultListener)
-    __obj.updateDynamic("endMission")(endMission)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("referenceResolved")(referenceResolved)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEncryptionResultListener")(removeEncryptionResultListener)
-    __obj.updateDynamic("setBlockerId")(setBlockerId)
-    __obj.updateDynamic("setKeyId")(setKeyId)
-    __obj.updateDynamic("setReferenceCount")(setReferenceCount)
-    __obj.updateDynamic("setReferenceId")(setReferenceId)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEncryptionResultListener = addEncryptionResultListener, endMission = endMission, initialize = initialize, queryInterface = queryInterface, referenceResolved = referenceResolved, release = release, removeEncryptionResultListener = removeEncryptionResultListener, setBlockerId = setBlockerId, setKeyId = setKeyId, setReferenceCount = setReferenceCount, setReferenceId = setReferenceId)
+  
     __obj.asInstanceOf[Encryptor]
   }
 }

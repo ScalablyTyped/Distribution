@@ -28,15 +28,8 @@ object Container_BeforeDropOrPaste_Parameter {
     X: scala.Double,
     Y: scala.Double
   ): Container_BeforeDropOrPaste_Parameter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Action")(Action)
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Control")(Control)
-    __obj.updateDynamic("Data")(Data)
-    __obj.updateDynamic("Effect")(Effect)
-    __obj.updateDynamic("Shift")(Shift)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("Y")(Y)
+    val __obj = js.Dynamic.literal(Action = Action, Cancel = Cancel, Control = Control, Data = Data, Effect = Effect, Shift = Shift, X = X, Y = Y)
+  
     __obj.asInstanceOf[Container_BeforeDropOrPaste_Parameter]
   }
 }

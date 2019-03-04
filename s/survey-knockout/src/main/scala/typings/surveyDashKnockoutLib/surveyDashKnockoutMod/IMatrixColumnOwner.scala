@@ -21,13 +21,8 @@ object IMatrixColumnOwner {
     getRequiredText: js.Function0[java.lang.String],
     onColumnPropertiesChanged: js.Function1[MatrixDropdownColumn, scala.Unit]
   ): IMatrixColumnOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCellType")(getCellType)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
-    __obj.updateDynamic("getRequiredText")(getRequiredText)
-    __obj.updateDynamic("onColumnPropertiesChanged")(onColumnPropertiesChanged)
+    val __obj = js.Dynamic.literal(getCellType = getCellType, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRequiredText = getRequiredText, onColumnPropertiesChanged = onColumnPropertiesChanged)
+  
     __obj.asInstanceOf[IMatrixColumnOwner]
   }
 }

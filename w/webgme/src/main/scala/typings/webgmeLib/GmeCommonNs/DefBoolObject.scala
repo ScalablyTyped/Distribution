@@ -12,8 +12,8 @@ trait DefBoolObject extends DefObject {
 object DefBoolObject {
   @scala.inline
   def apply(`type`: webgmeLib.webgmeLibStrings.boolean): DefBoolObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DefBoolObject]
   }
 }

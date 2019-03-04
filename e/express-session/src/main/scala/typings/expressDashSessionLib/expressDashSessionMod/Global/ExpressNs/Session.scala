@@ -27,14 +27,8 @@ object Session {
     save: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit],
     touch: js.Function1[js.Function1[/* err */ js.Any, scala.Unit], scala.Unit]
   ): Session = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("regenerate")(regenerate)
-    __obj.updateDynamic("reload")(reload)
-    __obj.updateDynamic("save")(save)
-    __obj.updateDynamic("touch")(touch)
+    val __obj = js.Dynamic.literal(cookie = cookie, destroy = destroy, id = id, regenerate = regenerate, reload = reload, save = save, touch = touch)
+  
     __obj.asInstanceOf[Session]
   }
 }

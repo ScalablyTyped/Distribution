@@ -24,8 +24,7 @@ object Anon_CustomizedMetricSpecification {
     scaleInCooldown: scala.Int | scala.Double = null,
     scaleOutCooldown: scala.Int | scala.Double = null
   ): Anon_CustomizedMetricSpecification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targetValue")(targetValue)
+    val __obj = js.Dynamic.literal(targetValue = targetValue)
     if (customizedMetricSpecification != null) __obj.updateDynamic("customizedMetricSpecification")(customizedMetricSpecification)
     if (!js.isUndefined(disableScaleIn)) __obj.updateDynamic("disableScaleIn")(disableScaleIn)
     if (predefinedMetricSpecification != null) __obj.updateDynamic("predefinedMetricSpecification")(predefinedMetricSpecification)

@@ -22,12 +22,8 @@ object IStateConditions {
     VBScript: scala.Boolean,
     VBScriptDefinition: java.lang.String
   ): IStateConditions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("PropertyConditions")(PropertyConditions)
-    __obj.updateDynamic("PropertyConditionsDefinition")(PropertyConditionsDefinition)
-    __obj.updateDynamic("VBScript")(VBScript)
-    __obj.updateDynamic("VBScriptDefinition")(VBScriptDefinition)
+    val __obj = js.Dynamic.literal(Clone = Clone, PropertyConditions = PropertyConditions, PropertyConditionsDefinition = PropertyConditionsDefinition, VBScript = VBScript, VBScriptDefinition = VBScriptDefinition)
+  
     __obj.asInstanceOf[IStateConditions]
   }
 }

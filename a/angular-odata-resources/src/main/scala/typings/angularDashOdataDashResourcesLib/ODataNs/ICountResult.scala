@@ -14,9 +14,8 @@ trait ICountResult extends js.Object {
 object ICountResult {
   @scala.inline
   def apply($promise: angularLib.angularMod.angularNs.IPromise[_], result: scala.Double): ICountResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$promise")($promise)
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal($promise = $promise, result = result)
+  
     __obj.asInstanceOf[ICountResult]
   }
 }

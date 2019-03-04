@@ -33,11 +33,7 @@ object Stats {
     length: scala.Int | scala.Double = null,
     tbuffered: scala.Int | scala.Double = null
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("tfirst")(tfirst)
-    __obj.updateDynamic("tload")(tload)
-    __obj.updateDynamic("trequest")(trequest)
+    val __obj = js.Dynamic.literal(mtime = mtime, tfirst = tfirst, tload = tload, trequest = trequest)
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (tbuffered != null) __obj.updateDynamic("tbuffered")(tbuffered.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]

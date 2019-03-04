@@ -20,11 +20,8 @@ object Queryable {
     selectDeep: js.Function1[/* repeated */ js.Any, Query[js.Any]],
     where: js.Function1[/* repeated */ js.Any, Query[T]]
   ): Queryable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("selectDeep")(selectDeep)
-    __obj.updateDynamic("where")(where)
+    val __obj = js.Dynamic.literal(delete = delete, select = select, selectDeep = selectDeep, where = where)
+  
     __obj.asInstanceOf[Queryable[T]]
   }
 }

@@ -28,10 +28,13 @@ object DailyApiRequests {
     `Salesforce for iOS`: Limit,
     SalesforceA: Limit
   ): DailyApiRequests = {
-    val __obj = js.Dynamic.literal(`Chatter Desktop` = `Chatter Desktop`, `Chatter Mobile for BlackBerry` = `Chatter Mobile for BlackBerry`, `Salesforce Files` = `Salesforce Files`, `Salesforce Marketing Cloud` = `Salesforce Marketing Cloud`, `Salesforce for Android` = `Salesforce for Android`, `Salesforce for iOS` = `Salesforce for iOS`)
-    __obj.updateDynamic("Max")(Max)
-    __obj.updateDynamic("Remaining")(Remaining)
-    __obj.updateDynamic("SalesforceA")(SalesforceA)
+    val __obj = js.Dynamic.literal(Max = Max, Remaining = Remaining, SalesforceA = SalesforceA)
+    __obj.updateDynamic("Chatter Desktop")(`Chatter Desktop`)
+    __obj.updateDynamic("Chatter Mobile for BlackBerry")(`Chatter Mobile for BlackBerry`)
+    __obj.updateDynamic("Salesforce Files")(`Salesforce Files`)
+    __obj.updateDynamic("Salesforce Marketing Cloud")(`Salesforce Marketing Cloud`)
+    __obj.updateDynamic("Salesforce for Android")(`Salesforce for Android`)
+    __obj.updateDynamic("Salesforce for iOS")(`Salesforce for iOS`)
     __obj.asInstanceOf[DailyApiRequests]
   }
 }

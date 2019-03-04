@@ -25,7 +25,8 @@ object TtsEvent {
     charIndex: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     errorMessage: java.lang.String = null
   ): TtsEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(charIndex)) __obj.updateDynamic("charIndex")(charIndex)
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
     __obj.asInstanceOf[TtsEvent]

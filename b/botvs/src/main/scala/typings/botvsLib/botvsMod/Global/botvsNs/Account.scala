@@ -37,11 +37,8 @@ object Account {
     FrozenStocks: scala.Double,
     Stocks: scala.Double
   ): Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Balance")(Balance)
-    __obj.updateDynamic("FrozenBalance")(FrozenBalance)
-    __obj.updateDynamic("FrozenStocks")(FrozenStocks)
-    __obj.updateDynamic("Stocks")(Stocks)
+    val __obj = js.Dynamic.literal(Balance = Balance, FrozenBalance = FrozenBalance, FrozenStocks = FrozenStocks, Stocks = Stocks)
+  
     __obj.asInstanceOf[Account]
   }
 }

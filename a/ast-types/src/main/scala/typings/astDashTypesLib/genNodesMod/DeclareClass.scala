@@ -19,8 +19,8 @@ import scala.scalajs.js.annotation._
 object DeclareClass {
   @scala.inline
   def apply(`type`: astDashTypesLib.astDashTypesLibStrings.DeclareClass): DeclareClass = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeclareClass]
   }
 }

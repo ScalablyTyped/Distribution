@@ -64,10 +64,7 @@ object Anon_Audience {
     scope: java.lang.String = null,
     state: java.lang.String = null
   ): Anon_Audience = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("redirectUri")(redirectUri)
-    __obj.updateDynamic("responseType")(responseType)
+    val __obj = js.Dynamic.literal(domain = domain, redirectUri = redirectUri, responseType = responseType)
     if (audience != null) __obj.updateDynamic("audience")(audience)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (connection != null) __obj.updateDynamic("connection")(connection)

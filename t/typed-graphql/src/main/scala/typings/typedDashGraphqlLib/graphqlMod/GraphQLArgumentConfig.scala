@@ -14,7 +14,8 @@ trait GraphQLArgumentConfig extends js.Object {
 object GraphQLArgumentConfig {
   @scala.inline
   def apply(`type`: GraphQLInputType, defaultValue: js.Any = null, description: java.lang.String = null): GraphQLArgumentConfig = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[GraphQLArgumentConfig]

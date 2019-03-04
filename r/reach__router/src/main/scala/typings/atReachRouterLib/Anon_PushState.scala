@@ -18,10 +18,8 @@ object Anon_PushState {
     replaceState: js.Function3[js.Any, java.lang.String, java.lang.String, scala.Unit],
     state: js.Any
   ): Anon_PushState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pushState")(pushState)
-    __obj.updateDynamic("replaceState")(replaceState)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(pushState = pushState, replaceState = replaceState, state = state)
+  
     __obj.asInstanceOf[Anon_PushState]
   }
 }

@@ -13,9 +13,8 @@ trait TitleEventEntity extends js.Object {
 object TitleEventEntity {
   @scala.inline
   def apply(domEvent: reactLib.Event, key: java.lang.String): TitleEventEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domEvent")(domEvent)
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(domEvent = domEvent, key = key)
+  
     __obj.asInstanceOf[TitleEventEntity]
   }
 }

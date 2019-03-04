@@ -25,12 +25,8 @@ object SignatureHelpItems {
     items: js.Array[SignatureHelpItem],
     selectedItemIndex: scala.Double
   ): SignatureHelpItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicableSpan")(applicableSpan)
-    __obj.updateDynamic("argumentCount")(argumentCount)
-    __obj.updateDynamic("argumentIndex")(argumentIndex)
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("selectedItemIndex")(selectedItemIndex)
+    val __obj = js.Dynamic.literal(applicableSpan = applicableSpan, argumentCount = argumentCount, argumentIndex = argumentIndex, items = items, selectedItemIndex = selectedItemIndex)
+  
     __obj.asInstanceOf[SignatureHelpItems]
   }
 }

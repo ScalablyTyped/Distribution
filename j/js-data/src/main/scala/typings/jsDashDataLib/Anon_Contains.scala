@@ -40,13 +40,15 @@ object Anon_Contains {
     notContains: js.Function2[js.Any, js.Any, scala.Boolean],
     notIn: js.Function2[js.Any, js.Any, scala.Boolean]
   ): Anon_Contains = {
-    val __obj = js.Dynamic.literal(`!=` = `!=`, `!==` = `!==`, `<` = `<`, `<=` = `<=`, `==` = `==`, `===` = `===`, `>` = `>`, `>=` = `>=`)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("in")(in)
-    __obj.updateDynamic("isectEmpty")(isectEmpty)
-    __obj.updateDynamic("isectNotEmpty")(isectNotEmpty)
-    __obj.updateDynamic("notContains")(notContains)
-    __obj.updateDynamic("notIn")(notIn)
+    val __obj = js.Dynamic.literal(contains = contains, in = in, isectEmpty = isectEmpty, isectNotEmpty = isectNotEmpty, notContains = notContains, notIn = notIn)
+    __obj.updateDynamic("!=")(`!=`)
+    __obj.updateDynamic("!==")(`!==`)
+    __obj.updateDynamic("<")(`<`)
+    __obj.updateDynamic("<=")(`<=`)
+    __obj.updateDynamic("==")(`==`)
+    __obj.updateDynamic("===")(`===`)
+    __obj.updateDynamic(">")(`>`)
+    __obj.updateDynamic(">=")(`>=`)
     __obj.asInstanceOf[Anon_Contains]
   }
 }

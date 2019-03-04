@@ -22,12 +22,8 @@ object FormSerializerPatterns {
     push: stdLib.RegExp,
     validate: stdLib.RegExp
   ): FormSerializerPatterns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fixed")(fixed)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("named")(named)
-    __obj.updateDynamic("push")(push)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(fixed = fixed, key = key, named = named, push = push, validate = validate)
+  
     __obj.asInstanceOf[FormSerializerPatterns]
   }
 }

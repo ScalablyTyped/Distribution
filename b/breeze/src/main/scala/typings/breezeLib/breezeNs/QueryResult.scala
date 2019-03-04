@@ -30,10 +30,7 @@ object QueryResult {
     inlineCount: scala.Int | scala.Double = null,
     retrievedEntities: js.Array[Entity] = null
   ): QueryResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpResponse")(httpResponse)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("results")(results)
+    val __obj = js.Dynamic.literal(httpResponse = httpResponse, query = query, results = results)
     if (entityManager != null) __obj.updateDynamic("entityManager")(entityManager)
     if (inlineCount != null) __obj.updateDynamic("inlineCount")(inlineCount.asInstanceOf[js.Any])
     if (retrievedEntities != null) __obj.updateDynamic("retrievedEntities")(retrievedEntities)

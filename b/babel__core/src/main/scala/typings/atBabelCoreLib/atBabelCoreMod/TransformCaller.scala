@@ -15,8 +15,7 @@ trait TransformCaller extends js.Object {
 object TransformCaller {
   @scala.inline
   def apply(name: java.lang.String, supportsStaticESM: js.UndefOr[scala.Boolean] = js.undefined): TransformCaller = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (!js.isUndefined(supportsStaticESM)) __obj.updateDynamic("supportsStaticESM")(supportsStaticESM)
     __obj.asInstanceOf[TransformCaller]
   }

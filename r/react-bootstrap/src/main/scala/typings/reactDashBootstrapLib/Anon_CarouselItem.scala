@@ -12,8 +12,8 @@ trait Anon_CarouselItem extends js.Object {
 object Anon_CarouselItem {
   @scala.inline
   def apply(CarouselItemNs: js.Any): Anon_CarouselItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CarouselItemNs")(CarouselItemNs)
+    val __obj = js.Dynamic.literal(CarouselItemNs = CarouselItemNs)
+  
     __obj.asInstanceOf[Anon_CarouselItem]
   }
 }

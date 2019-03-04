@@ -161,33 +161,8 @@ object ASPxClientSeries {
     viewType: java.lang.String,
     visible: scala.Boolean
   ): ASPxClientSeries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actualCrosshairEnabled")(actualCrosshairEnabled)
-    __obj.updateDynamic("actualCrosshairLabelVisibility")(actualCrosshairLabelVisibility)
-    __obj.updateDynamic("argumentScaleType")(argumentScaleType)
-    __obj.updateDynamic("axisX")(axisX)
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("crosshairLabelPattern")(crosshairLabelPattern)
-    __obj.updateDynamic("crosshairValueItems")(crosshairValueItems)
-    __obj.updateDynamic("fibonacciIndicators")(fibonacciIndicators)
-    __obj.updateDynamic("groupedElementsPattern")(groupedElementsPattern)
-    __obj.updateDynamic("indicators")(indicators)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("regressionLines")(regressionLines)
-    __obj.updateDynamic("stackedGroup")(stackedGroup)
-    __obj.updateDynamic("titles")(titles)
-    __obj.updateDynamic("toolTipEnabled")(toolTipEnabled)
-    __obj.updateDynamic("toolTipImage")(toolTipImage)
-    __obj.updateDynamic("toolTipText")(toolTipText)
-    __obj.updateDynamic("trendLines")(trendLines)
-    __obj.updateDynamic("valueScaleType")(valueScaleType)
-    __obj.updateDynamic("viewType")(viewType)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(actualCrosshairEnabled = actualCrosshairEnabled, actualCrosshairLabelVisibility = actualCrosshairLabelVisibility, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, chart = chart, color = color, crosshairLabelPattern = crosshairLabelPattern, crosshairValueItems = crosshairValueItems, fibonacciIndicators = fibonacciIndicators, groupedElementsPattern = groupedElementsPattern, indicators = indicators, label = label, name = name, pane = pane, points = points, regressionLines = regressionLines, stackedGroup = stackedGroup, titles = titles, toolTipEnabled = toolTipEnabled, toolTipImage = toolTipImage, toolTipText = toolTipText, trendLines = trendLines, valueScaleType = valueScaleType, viewType = viewType, visible = visible)
+  
     __obj.asInstanceOf[ASPxClientSeries]
   }
 }

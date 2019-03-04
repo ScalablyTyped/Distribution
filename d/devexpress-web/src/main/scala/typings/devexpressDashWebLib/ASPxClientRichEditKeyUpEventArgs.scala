@@ -19,8 +19,8 @@ trait ASPxClientRichEditKeyUpEventArgs extends ASPxClientEventArgs {
 object ASPxClientRichEditKeyUpEventArgs {
   @scala.inline
   def apply(htmlEvent: js.Object): ASPxClientRichEditKeyUpEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent)
+  
     __obj.asInstanceOf[ASPxClientRichEditKeyUpEventArgs]
   }
 }

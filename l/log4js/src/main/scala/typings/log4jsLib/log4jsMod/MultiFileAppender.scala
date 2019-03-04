@@ -23,10 +23,8 @@ object MultiFileAppender {
     property: java.lang.String,
     `type`: log4jsLib.log4jsLibStrings.multiFile
   ): MultiFileAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(base = base, extension = extension, property = property)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MultiFileAppender]
   }
 }

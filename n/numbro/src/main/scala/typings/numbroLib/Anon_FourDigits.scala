@@ -20,11 +20,8 @@ object Anon_FourDigits {
     fullWithTwoDecimals: numbroLib.numbroMod.numbroNs.Format,
     fullWithTwoDecimalsNoCurrency: numbroLib.numbroMod.numbroNs.Format
   ): Anon_FourDigits = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fourDigits")(fourDigits)
-    __obj.updateDynamic("fullWithNoDecimals")(fullWithNoDecimals)
-    __obj.updateDynamic("fullWithTwoDecimals")(fullWithTwoDecimals)
-    __obj.updateDynamic("fullWithTwoDecimalsNoCurrency")(fullWithTwoDecimalsNoCurrency)
+    val __obj = js.Dynamic.literal(fourDigits = fourDigits, fullWithNoDecimals = fullWithNoDecimals, fullWithTwoDecimals = fullWithTwoDecimals, fullWithTwoDecimalsNoCurrency = fullWithTwoDecimalsNoCurrency)
+  
     __obj.asInstanceOf[Anon_FourDigits]
   }
 }

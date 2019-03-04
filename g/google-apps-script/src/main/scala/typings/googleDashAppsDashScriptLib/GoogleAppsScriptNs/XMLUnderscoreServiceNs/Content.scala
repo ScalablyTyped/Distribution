@@ -34,18 +34,8 @@ object Content {
     getType: js.Function0[ContentType],
     getValue: js.Function0[java.lang.String]
   ): Content = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asCdata")(asCdata)
-    __obj.updateDynamic("asComment")(asComment)
-    __obj.updateDynamic("asDocType")(asDocType)
-    __obj.updateDynamic("asElement")(asElement)
-    __obj.updateDynamic("asEntityRef")(asEntityRef)
-    __obj.updateDynamic("asProcessingInstruction")(asProcessingInstruction)
-    __obj.updateDynamic("asText")(asText)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("getParentElement")(getParentElement)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getValue")(getValue)
+    val __obj = js.Dynamic.literal(asCdata = asCdata, asComment = asComment, asDocType = asDocType, asElement = asElement, asEntityRef = asEntityRef, asProcessingInstruction = asProcessingInstruction, asText = asText, detach = detach, getParentElement = getParentElement, getType = getType, getValue = getValue)
+  
     __obj.asInstanceOf[Content]
   }
 }

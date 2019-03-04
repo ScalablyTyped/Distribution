@@ -131,26 +131,8 @@ object QueryDesign {
     restoreViewData: js.Function1[js.Any, scala.Unit],
     suspend: js.Function1[scala.Boolean, scala.Boolean]
   ): QueryDesign = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActiveCommand")(ActiveCommand)
-    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
-    __obj.updateDynamic("Frame")(Frame)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("ViewData")(ViewData)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("attachFrame")(attachFrame)
-    __obj.updateDynamic("attachModel")(attachModel)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getViewData")(getViewData)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("restoreViewData")(restoreViewData)
-    __obj.updateDynamic("suspend")(suspend)
+    val __obj = js.Dynamic.literal(ActiveCommand = ActiveCommand, EscapeProcessing = EscapeProcessing, Frame = Frame, Model = Model, ViewData = ViewData, acquire = acquire, addEventListener = addEventListener, attachFrame = attachFrame, attachModel = attachModel, dispose = dispose, getFrame = getFrame, getModel = getModel, getViewData = getViewData, initialize = initialize, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, restoreViewData = restoreViewData, suspend = suspend)
+  
     __obj.asInstanceOf[QueryDesign]
   }
 }

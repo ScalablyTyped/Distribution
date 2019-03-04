@@ -21,8 +21,8 @@ object CanActivateChild {
       (rxjsLib.rxjsMod.Observable[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | (js.Promise[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
     ]
   ): CanActivateChild = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canActivateChild")(canActivateChild)
+    val __obj = js.Dynamic.literal(canActivateChild = canActivateChild)
+  
     __obj.asInstanceOf[CanActivateChild]
   }
 }

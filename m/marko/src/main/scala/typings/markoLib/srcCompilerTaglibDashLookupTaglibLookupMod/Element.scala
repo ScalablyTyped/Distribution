@@ -12,8 +12,8 @@ trait Element extends js.Object {
 object Element {
   @scala.inline
   def apply(tagName: java.lang.String): Element = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(tagName = tagName)
+  
     __obj.asInstanceOf[Element]
   }
 }

@@ -13,8 +13,8 @@ trait ReturnedDetails extends js.Object {
 object ReturnedDetails {
   @scala.inline
   def apply(setting: js.Any): ReturnedDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setting")(setting)
+    val __obj = js.Dynamic.literal(setting = setting)
+  
     __obj.asInstanceOf[ReturnedDetails]
   }
 }

@@ -15,11 +15,8 @@ trait Anon_AllAllowedValues extends js.Object {
 object Anon_AllAllowedValues {
   @scala.inline
   def apply(all: scala.Double, allowedValues: scala.Double, dependentFields: scala.Double, none: scala.Double): Anon_AllAllowedValues = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("allowedValues")(allowedValues)
-    __obj.updateDynamic("dependentFields")(dependentFields)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(all = all, allowedValues = allowedValues, dependentFields = dependentFields, none = none)
+  
     __obj.asInstanceOf[Anon_AllAllowedValues]
   }
 }

@@ -34,15 +34,8 @@ object KeyTransRecipientInfo {
     toSchema: js.Function0[js.Any],
     version: scala.Double
   ): KeyTransRecipientInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptedKey")(encryptedKey)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("keyEncryptionAlgorithm")(keyEncryptionAlgorithm)
-    __obj.updateDynamic("recipientCertificate")(recipientCertificate)
-    __obj.updateDynamic("rid")(rid)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(encryptedKey = encryptedKey, fromSchema = fromSchema, keyEncryptionAlgorithm = keyEncryptionAlgorithm, recipientCertificate = recipientCertificate, rid = rid, toJSON = toJSON, toSchema = toSchema, version = version)
+  
     __obj.asInstanceOf[KeyTransRecipientInfo]
   }
 }

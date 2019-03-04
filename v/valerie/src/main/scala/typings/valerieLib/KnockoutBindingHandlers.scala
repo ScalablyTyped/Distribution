@@ -170,25 +170,8 @@ object KnockoutBindingHandlers {
     visibleWhenUntouched: knockoutLib.KnockoutBindingHandler[_, _, _],
     visibleWhenValid: knockoutLib.KnockoutBindingHandler[_, _, _]
   ): KnockoutBindingHandlers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disabledWhenNotValid")(disabledWhenNotValid)
-    __obj.updateDynamic("disabledWhenTouchedAndNotValid")(disabledWhenTouchedAndNotValid)
-    __obj.updateDynamic("enabledWhenApplicable")(enabledWhenApplicable)
-    __obj.updateDynamic("formattedText")(formattedText)
-    __obj.updateDynamic("validatedChecked")(validatedChecked)
-    __obj.updateDynamic("validatedSelectedOptions")(validatedSelectedOptions)
-    __obj.updateDynamic("validatedValue")(validatedValue)
-    __obj.updateDynamic("validationCss")(validationCss)
-    __obj.updateDynamic("validationMessage")(validationMessage)
-    __obj.updateDynamic("validationMessageText")(validationMessageText)
-    __obj.updateDynamic("validationName")(validationName)
-    __obj.updateDynamic("visibleWhenApplicable")(visibleWhenApplicable)
-    __obj.updateDynamic("visibleWhenFocused")(visibleWhenFocused)
-    __obj.updateDynamic("visibleWhenInvalid")(visibleWhenInvalid)
-    __obj.updateDynamic("visibleWhenSummaryNotEmpty")(visibleWhenSummaryNotEmpty)
-    __obj.updateDynamic("visibleWhenTouched")(visibleWhenTouched)
-    __obj.updateDynamic("visibleWhenUntouched")(visibleWhenUntouched)
-    __obj.updateDynamic("visibleWhenValid")(visibleWhenValid)
+    val __obj = js.Dynamic.literal(disabledWhenNotValid = disabledWhenNotValid, disabledWhenTouchedAndNotValid = disabledWhenTouchedAndNotValid, enabledWhenApplicable = enabledWhenApplicable, formattedText = formattedText, validatedChecked = validatedChecked, validatedSelectedOptions = validatedSelectedOptions, validatedValue = validatedValue, validationCss = validationCss, validationMessage = validationMessage, validationMessageText = validationMessageText, validationName = validationName, visibleWhenApplicable = visibleWhenApplicable, visibleWhenFocused = visibleWhenFocused, visibleWhenInvalid = visibleWhenInvalid, visibleWhenSummaryNotEmpty = visibleWhenSummaryNotEmpty, visibleWhenTouched = visibleWhenTouched, visibleWhenUntouched = visibleWhenUntouched, visibleWhenValid = visibleWhenValid)
+  
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
 }

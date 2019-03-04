@@ -18,10 +18,8 @@ object Anon_MatchedQueries {
     matchedQueryIds: scala.Double,
     references: org.scalablytyped.runtime.StringDictionary[atAngularCoreLib.srcViewTypesMod.QueryValueType]
   ): Anon_MatchedQueries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matchedQueries")(matchedQueries)
-    __obj.updateDynamic("matchedQueryIds")(matchedQueryIds)
-    __obj.updateDynamic("references")(references)
+    val __obj = js.Dynamic.literal(matchedQueries = matchedQueries, matchedQueryIds = matchedQueryIds, references = references)
+  
     __obj.asInstanceOf[Anon_MatchedQueries]
   }
 }

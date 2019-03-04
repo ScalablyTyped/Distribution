@@ -24,9 +24,7 @@ object SocketInfo {
     peerAddress: java.lang.String = null,
     peerPort: scala.Int | scala.Double = null
   ): SocketInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("socketType")(socketType)
+    val __obj = js.Dynamic.literal(connected = connected, socketType = socketType)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
     if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress)

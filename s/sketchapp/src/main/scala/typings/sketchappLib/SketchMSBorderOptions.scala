@@ -22,12 +22,8 @@ object SketchMSBorderOptions {
     lineCapStyle: SketchMSBorderLineCapStyle,
     lineJoinStyle: SketchMSBorderLineJoinStyle
   ): SketchMSBorderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("dashPattern")(dashPattern)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("lineCapStyle")(lineCapStyle)
-    __obj.updateDynamic("lineJoinStyle")(lineJoinStyle)
+    val __obj = js.Dynamic.literal(_class = _class, dashPattern = dashPattern, isEnabled = isEnabled, lineCapStyle = lineCapStyle, lineJoinStyle = lineJoinStyle)
+  
     __obj.asInstanceOf[SketchMSBorderOptions]
   }
 }

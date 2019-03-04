@@ -18,10 +18,8 @@ object Anon_Body {
     request: nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option,
     statusCode: scala.Double
   ): Anon_Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("statusCode")(statusCode)
+    val __obj = js.Dynamic.literal(body = body, request = request, statusCode = statusCode)
+  
     __obj.asInstanceOf[Anon_Body]
   }
 }

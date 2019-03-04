@@ -33,16 +33,8 @@ object IExtJSCore {
     knownBugIn: js.Function3[java.lang.String, js.Function, java.lang.String, js.Any],
     requireOk: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): IExtJSCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Ext")(Ext)
-    __obj.updateDynamic("clickCQ")(clickCQ)
-    __obj.updateDynamic("clickComponentQuery")(clickComponentQuery)
-    __obj.updateDynamic("compositeQuery")(compositeQuery)
-    __obj.updateDynamic("cq")(cq)
-    __obj.updateDynamic("cq1")(cq1)
-    __obj.updateDynamic("getExt")(getExt)
-    __obj.updateDynamic("knownBugIn")(knownBugIn)
-    __obj.updateDynamic("requireOk")(requireOk)
+    val __obj = js.Dynamic.literal(Ext = Ext, clickCQ = clickCQ, clickComponentQuery = clickComponentQuery, compositeQuery = compositeQuery, cq = cq, cq1 = cq1, getExt = getExt, knownBugIn = knownBugIn, requireOk = requireOk)
+  
     __obj.asInstanceOf[IExtJSCore]
   }
 }

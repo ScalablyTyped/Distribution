@@ -13,9 +13,8 @@ trait List extends js.Object {
 object List {
   @scala.inline
   def apply(getListId: js.Function0[java.lang.String], getListParagraphs: js.Function0[js.Array[Paragraph]]): List = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getListId")(getListId)
-    __obj.updateDynamic("getListParagraphs")(getListParagraphs)
+    val __obj = js.Dynamic.literal(getListId = getListId, getListParagraphs = getListParagraphs)
+  
     __obj.asInstanceOf[List]
   }
 }

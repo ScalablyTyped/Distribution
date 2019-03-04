@@ -38,8 +38,8 @@ object Report {
       scala.Unit
     ]
   ): Report = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addCustomError")(addCustomError)
+    val __obj = js.Dynamic.literal(addCustomError = addCustomError)
+  
     __obj.asInstanceOf[Report]
   }
 }

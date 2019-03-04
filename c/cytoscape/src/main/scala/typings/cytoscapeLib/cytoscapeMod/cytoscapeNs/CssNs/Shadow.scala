@@ -42,8 +42,12 @@ object Shadow {
     `shadow-offset-y`: scala.Double,
     `shadow-opacity`: scala.Double
   ): Shadow = {
-    val __obj = js.Dynamic.literal(`shadow-blur` = `shadow-blur`, `shadow-color` = `shadow-color`, `shadow-offset-x` = `shadow-offset-x`, `shadow-offset-y` = `shadow-offset-y`, `shadow-opacity` = `shadow-opacity`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shadow-blur")(`shadow-blur`)
+    __obj.updateDynamic("shadow-color")(`shadow-color`)
+    __obj.updateDynamic("shadow-offset-x")(`shadow-offset-x`)
+    __obj.updateDynamic("shadow-offset-y")(`shadow-offset-y`)
+    __obj.updateDynamic("shadow-opacity")(`shadow-opacity`)
     __obj.asInstanceOf[Shadow]
   }
 }

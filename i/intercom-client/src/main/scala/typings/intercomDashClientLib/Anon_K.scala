@@ -16,8 +16,7 @@ object Anon_K {
     status: java.lang.String,
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): Anon_K = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_K]
   }

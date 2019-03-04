@@ -18,10 +18,8 @@ object DropTarget {
     drop: js.Function2[DragDropMonitor, java.lang.String, js.Any],
     hover: js.Function2[DragDropMonitor, java.lang.String, scala.Unit]
   ): DropTarget = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canDrop")(canDrop)
-    __obj.updateDynamic("drop")(drop)
-    __obj.updateDynamic("hover")(hover)
+    val __obj = js.Dynamic.literal(canDrop = canDrop, drop = drop, hover = hover)
+  
     __obj.asInstanceOf[DropTarget]
   }
 }

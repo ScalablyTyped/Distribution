@@ -19,11 +19,8 @@ object Anon_Quantity {
     toString: js.Function0[java.lang.String],
     transformations: js.Array[RollTransformation]
   ): Anon_Quantity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quantity")(quantity)
-    __obj.updateDynamic("sides")(sides)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("transformations")(transformations)
+    val __obj = js.Dynamic.literal(quantity = quantity, sides = sides, toString = toString, transformations = transformations)
+  
     __obj.asInstanceOf[Anon_Quantity]
   }
 }

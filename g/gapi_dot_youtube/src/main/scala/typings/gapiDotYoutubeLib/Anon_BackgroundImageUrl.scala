@@ -107,26 +107,8 @@ object Anon_BackgroundImageUrl {
     trackingImageUrl: java.lang.String,
     watchIconImageUrl: java.lang.String
   ): Anon_BackgroundImageUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl)
-    __obj.updateDynamic("bannerExternalUrl")(bannerExternalUrl)
-    __obj.updateDynamic("bannerImageUrl")(bannerImageUrl)
-    __obj.updateDynamic("bannerMobileExtraHdImageUrl")(bannerMobileExtraHdImageUrl)
-    __obj.updateDynamic("bannerMobileHdImageUrl")(bannerMobileHdImageUrl)
-    __obj.updateDynamic("bannerMobileImageUrl")(bannerMobileImageUrl)
-    __obj.updateDynamic("bannerMobileLowImageUrl")(bannerMobileLowImageUrl)
-    __obj.updateDynamic("bannerMobileMediumImageUrl")(bannerMobileMediumImageUrl)
-    __obj.updateDynamic("bannerTabletExtraHdImageUrl")(bannerTabletExtraHdImageUrl)
-    __obj.updateDynamic("bannerTabletHdImageUrl")(bannerTabletHdImageUrl)
-    __obj.updateDynamic("bannerTabletImageUrl")(bannerTabletImageUrl)
-    __obj.updateDynamic("bannerTabletLowImageUrl")(bannerTabletLowImageUrl)
-    __obj.updateDynamic("bannerTvImageUrl")(bannerTvImageUrl)
-    __obj.updateDynamic("largeBrandedBannerImageImapScript")(largeBrandedBannerImageImapScript)
-    __obj.updateDynamic("largeBrandedBannerImageUrl")(largeBrandedBannerImageUrl)
-    __obj.updateDynamic("smallBrandedBannerImageImapScript")(smallBrandedBannerImageImapScript)
-    __obj.updateDynamic("smallBrandedBannerImageUrl")(smallBrandedBannerImageUrl)
-    __obj.updateDynamic("trackingImageUrl")(trackingImageUrl)
-    __obj.updateDynamic("watchIconImageUrl")(watchIconImageUrl)
+    val __obj = js.Dynamic.literal(backgroundImageUrl = backgroundImageUrl, bannerExternalUrl = bannerExternalUrl, bannerImageUrl = bannerImageUrl, bannerMobileExtraHdImageUrl = bannerMobileExtraHdImageUrl, bannerMobileHdImageUrl = bannerMobileHdImageUrl, bannerMobileImageUrl = bannerMobileImageUrl, bannerMobileLowImageUrl = bannerMobileLowImageUrl, bannerMobileMediumImageUrl = bannerMobileMediumImageUrl, bannerTabletExtraHdImageUrl = bannerTabletExtraHdImageUrl, bannerTabletHdImageUrl = bannerTabletHdImageUrl, bannerTabletImageUrl = bannerTabletImageUrl, bannerTabletLowImageUrl = bannerTabletLowImageUrl, bannerTvImageUrl = bannerTvImageUrl, largeBrandedBannerImageImapScript = largeBrandedBannerImageImapScript, largeBrandedBannerImageUrl = largeBrandedBannerImageUrl, smallBrandedBannerImageImapScript = smallBrandedBannerImageImapScript, smallBrandedBannerImageUrl = smallBrandedBannerImageUrl, trackingImageUrl = trackingImageUrl, watchIconImageUrl = watchIconImageUrl)
+  
     __obj.asInstanceOf[Anon_BackgroundImageUrl]
   }
 }

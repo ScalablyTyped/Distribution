@@ -46,13 +46,8 @@ object XGridColumnFactory {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XGridColumnFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColumnTypes")(ColumnTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createColumn")(createColumn)
-    __obj.updateDynamic("getColumnTypes")(getColumnTypes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ColumnTypes = ColumnTypes, acquire = acquire, createColumn = createColumn, getColumnTypes = getColumnTypes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XGridColumnFactory]
   }
 }

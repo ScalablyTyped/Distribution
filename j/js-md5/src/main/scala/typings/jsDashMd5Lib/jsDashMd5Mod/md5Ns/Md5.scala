@@ -40,15 +40,8 @@ object Md5 {
     toString: js.Function0[java.lang.String],
     update: js.Function1[message, Md5]
   ): Md5 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("array")(array)
-    __obj.updateDynamic("arrayBuffer")(arrayBuffer)
-    __obj.updateDynamic("base64")(base64)
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("hex")(hex)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(array = array, arrayBuffer = arrayBuffer, base64 = base64, buffer = buffer, digest = digest, hex = hex, toString = toString, update = update)
+  
     __obj.asInstanceOf[Md5]
   }
 }

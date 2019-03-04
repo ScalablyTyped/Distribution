@@ -18,10 +18,8 @@ object EventItem {
     event: T,
     objectId: java.lang.String
   ): EventItem[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    __obj.updateDynamic("objectId")(objectId)
+    val __obj = js.Dynamic.literal(data = data, event = event.asInstanceOf[js.Any], objectId = objectId)
+  
     __obj.asInstanceOf[EventItem[T]]
   }
 }

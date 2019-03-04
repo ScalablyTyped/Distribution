@@ -26,14 +26,8 @@ object Anon_ActionRequired {
     uninstalled: scala.Double,
     versionUpdated: scala.Double
   ): Anon_ActionRequired = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actionRequired")(actionRequired)
-    __obj.updateDynamic("actionResolved")(actionResolved)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("installed")(installed)
-    __obj.updateDynamic("uninstalled")(uninstalled)
-    __obj.updateDynamic("versionUpdated")(versionUpdated)
+    val __obj = js.Dynamic.literal(actionRequired = actionRequired, actionResolved = actionResolved, disabled = disabled, enabled = enabled, installed = installed, uninstalled = uninstalled, versionUpdated = versionUpdated)
+  
     __obj.asInstanceOf[Anon_ActionRequired]
   }
 }

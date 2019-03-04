@@ -16,8 +16,8 @@ trait Anon_FocusMenu extends js.Object {
 object Anon_FocusMenu {
   @scala.inline
   def apply(focusMenu: scala.Boolean): Anon_FocusMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("focusMenu")(focusMenu)
+    val __obj = js.Dynamic.literal(focusMenu = focusMenu)
+  
     __obj.asInstanceOf[Anon_FocusMenu]
   }
 }

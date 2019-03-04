@@ -24,13 +24,8 @@ object SketchMSBorder {
     position: SketchMSBorderPositionEnum,
     thickness: scala.Double
   ): SketchMSBorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("fillType")(fillType)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("thickness")(thickness)
+    val __obj = js.Dynamic.literal(_class = _class, color = color, fillType = fillType, isEnabled = isEnabled, position = position, thickness = thickness)
+  
     __obj.asInstanceOf[SketchMSBorder]
   }
 }

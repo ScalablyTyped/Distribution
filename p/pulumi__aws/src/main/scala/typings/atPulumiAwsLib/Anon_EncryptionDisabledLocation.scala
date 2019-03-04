@@ -26,7 +26,8 @@ object Anon_EncryptionDisabledLocation {
     packaging: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EncryptionDisabledLocation = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (encryptionDisabled != null) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

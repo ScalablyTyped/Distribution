@@ -45,13 +45,8 @@ object JSON_PointerWrap {
       scala.Unit
     ]
   ): JSON_PointerWrap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dict")(dict)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("walk")(walk)
+    val __obj = js.Dynamic.literal(dict = dict, get = get, has = has, remove = remove, set = set, walk = walk)
+  
     __obj.asInstanceOf[JSON_PointerWrap]
   }
 }

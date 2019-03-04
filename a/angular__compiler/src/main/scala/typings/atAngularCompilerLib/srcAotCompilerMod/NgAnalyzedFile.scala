@@ -24,13 +24,8 @@ object NgAnalyzedFile {
     ngModules: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata],
     pipes: js.Array[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol]
   ): NgAnalyzedFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directives")(directives)
-    __obj.updateDynamic("exportsNonSourceFiles")(exportsNonSourceFiles)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("injectables")(injectables)
-    __obj.updateDynamic("ngModules")(ngModules)
-    __obj.updateDynamic("pipes")(pipes)
+    val __obj = js.Dynamic.literal(directives = directives, exportsNonSourceFiles = exportsNonSourceFiles, fileName = fileName, injectables = injectables, ngModules = ngModules, pipes = pipes)
+  
     __obj.asInstanceOf[NgAnalyzedFile]
   }
 }

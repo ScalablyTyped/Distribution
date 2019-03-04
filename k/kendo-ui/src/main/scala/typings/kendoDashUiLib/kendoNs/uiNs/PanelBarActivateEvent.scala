@@ -17,10 +17,7 @@ object PanelBarActivateEvent {
     sender: PanelBar,
     item: stdLib.Element = null
   ): PanelBarActivateEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (item != null) __obj.updateDynamic("item")(item)
     __obj.asInstanceOf[PanelBarActivateEvent]
   }

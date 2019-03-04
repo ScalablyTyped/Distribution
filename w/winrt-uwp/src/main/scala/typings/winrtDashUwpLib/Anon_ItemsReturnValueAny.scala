@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueAny {
     items: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _],
     returnValue: scala.Double
   ): Anon_ItemsReturnValueAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueAny]
   }
 }

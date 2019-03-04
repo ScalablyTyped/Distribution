@@ -20,11 +20,8 @@ object IPushNotificationChannel {
     onpushnotificationreceived: js.Any,
     uri: java.lang.String
   ): IPushNotificationChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("expirationTime")(expirationTime)
-    __obj.updateDynamic("onpushnotificationreceived")(onpushnotificationreceived)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(close = close, expirationTime = expirationTime, onpushnotificationreceived = onpushnotificationreceived, uri = uri)
+  
     __obj.asInstanceOf[IPushNotificationChannel]
   }
 }

@@ -12,8 +12,8 @@ trait GetOption extends js.Object {
 object GetOption {
   @scala.inline
   def apply(signed: scala.Boolean): GetOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signed")(signed)
+    val __obj = js.Dynamic.literal(signed = signed)
+  
     __obj.asInstanceOf[GetOption]
   }
 }

@@ -20,11 +20,8 @@ object Anon_BULK {
     INTERRUPT: chromeDashAppsLib.chromeDashAppsLibStrings.interrupt,
     ISOCHRONOUS: chromeDashAppsLib.chromeDashAppsLibStrings.isochronous
   ): Anon_BULK = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BULK")(BULK)
-    __obj.updateDynamic("CONTROL")(CONTROL)
-    __obj.updateDynamic("INTERRUPT")(INTERRUPT)
-    __obj.updateDynamic("ISOCHRONOUS")(ISOCHRONOUS)
+    val __obj = js.Dynamic.literal(BULK = BULK, CONTROL = CONTROL, INTERRUPT = INTERRUPT, ISOCHRONOUS = ISOCHRONOUS)
+  
     __obj.asInstanceOf[Anon_BULK]
   }
 }

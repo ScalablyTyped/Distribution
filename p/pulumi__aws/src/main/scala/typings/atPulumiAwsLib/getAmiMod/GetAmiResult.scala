@@ -164,32 +164,8 @@ object GetAmiResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     virtualizationType: java.lang.String
   ): GetAmiResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("architecture")(architecture)
-    __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings)
-    __obj.updateDynamic("creationDate")(creationDate)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hypervisor")(hypervisor)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("imageId")(imageId)
-    __obj.updateDynamic("imageLocation")(imageLocation)
-    __obj.updateDynamic("imageOwnerAlias")(imageOwnerAlias)
-    __obj.updateDynamic("imageType")(imageType)
-    __obj.updateDynamic("kernelId")(kernelId)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("productCodes")(productCodes)
-    __obj.updateDynamic("public")(public)
-    __obj.updateDynamic("ramdiskId")(ramdiskId)
-    __obj.updateDynamic("rootDeviceName")(rootDeviceName)
-    __obj.updateDynamic("rootDeviceType")(rootDeviceType)
-    __obj.updateDynamic("rootSnapshotId")(rootSnapshotId)
-    __obj.updateDynamic("sriovNetSupport")(sriovNetSupport)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("stateReason")(stateReason)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("virtualizationType")(virtualizationType)
+    val __obj = js.Dynamic.literal(architecture = architecture, blockDeviceMappings = blockDeviceMappings, creationDate = creationDate, description = description, hypervisor = hypervisor, id = id, imageId = imageId, imageLocation = imageLocation, imageOwnerAlias = imageOwnerAlias, imageType = imageType, kernelId = kernelId, name = name, ownerId = ownerId, platform = platform, productCodes = productCodes, public = public, ramdiskId = ramdiskId, rootDeviceName = rootDeviceName, rootDeviceType = rootDeviceType, rootSnapshotId = rootSnapshotId, sriovNetSupport = sriovNetSupport, state = state, stateReason = stateReason, tags = tags, virtualizationType = virtualizationType)
+  
     __obj.asInstanceOf[GetAmiResult]
   }
 }

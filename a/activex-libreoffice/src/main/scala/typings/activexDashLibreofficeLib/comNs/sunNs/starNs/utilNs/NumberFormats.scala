@@ -68,22 +68,8 @@ object NumberFormats {
     release: js.Function0[scala.Unit],
     removeByKey: js.Function1[scala.Double, scala.Unit]
   ): NumberFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addNew")(addNew)
-    __obj.updateDynamic("addNewConverted")(addNewConverted)
-    __obj.updateDynamic("generateFormat")(generateFormat)
-    __obj.updateDynamic("getByKey")(getByKey)
-    __obj.updateDynamic("getFormatForLocale")(getFormatForLocale)
-    __obj.updateDynamic("getFormatIndex")(getFormatIndex)
-    __obj.updateDynamic("getStandardFormat")(getStandardFormat)
-    __obj.updateDynamic("getStandardIndex")(getStandardIndex)
-    __obj.updateDynamic("isTypeCompatible")(isTypeCompatible)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryKey")(queryKey)
-    __obj.updateDynamic("queryKeys")(queryKeys)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeByKey")(removeByKey)
+    val __obj = js.Dynamic.literal(acquire = acquire, addNew = addNew, addNewConverted = addNewConverted, generateFormat = generateFormat, getByKey = getByKey, getFormatForLocale = getFormatForLocale, getFormatIndex = getFormatIndex, getStandardFormat = getStandardFormat, getStandardIndex = getStandardIndex, isTypeCompatible = isTypeCompatible, queryInterface = queryInterface, queryKey = queryKey, queryKeys = queryKeys, release = release, removeByKey = removeByKey)
+  
     __obj.asInstanceOf[NumberFormats]
   }
 }

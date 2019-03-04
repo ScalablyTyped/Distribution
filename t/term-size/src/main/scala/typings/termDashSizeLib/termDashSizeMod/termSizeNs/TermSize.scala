@@ -13,9 +13,8 @@ trait TermSize extends js.Object {
 object TermSize {
   @scala.inline
   def apply(columns: scala.Double, rows: scala.Double): TermSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(columns = columns, rows = rows)
+  
     __obj.asInstanceOf[TermSize]
   }
 }

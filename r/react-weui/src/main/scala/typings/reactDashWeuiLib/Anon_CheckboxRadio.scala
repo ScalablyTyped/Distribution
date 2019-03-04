@@ -26,14 +26,8 @@ object Anon_CheckboxRadio {
     vcode: scala.Boolean,
     warn: scala.Boolean
   ): Anon_CheckboxRadio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("checkbox")(checkbox)
-    __obj.updateDynamic("radio")(radio)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("selectPos")(selectPos)
-    __obj.updateDynamic("switch")(switch)
-    __obj.updateDynamic("vcode")(vcode)
-    __obj.updateDynamic("warn")(warn)
+    val __obj = js.Dynamic.literal(checkbox = checkbox, radio = radio, select = select, selectPos = selectPos, switch = switch, vcode = vcode, warn = warn)
+  
     __obj.asInstanceOf[Anon_CheckboxRadio]
   }
 }

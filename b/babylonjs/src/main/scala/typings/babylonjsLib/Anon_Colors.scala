@@ -18,8 +18,7 @@ object Anon_Colors {
     lines: js.Array[js.Array[babylonjsLib.BABYLONNs.Vector3]],
     colors: babylonjsLib.BABYLONNs.Nullable[js.Array[js.Array[babylonjsLib.BABYLONNs.Color4]]] = null
   ): Anon_Colors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(lines = lines)
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Colors]
   }

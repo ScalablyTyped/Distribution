@@ -13,9 +13,8 @@ trait DeploymentProgress extends js.Object {
 object DeploymentProgress {
   @scala.inline
   def apply(percentage: scala.Double, state: DeploymentProgressState): DeploymentProgress = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("percentage")(percentage)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(percentage = percentage, state = state)
+  
     __obj.asInstanceOf[DeploymentProgress]
   }
 }

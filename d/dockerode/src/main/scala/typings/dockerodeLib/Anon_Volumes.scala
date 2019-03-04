@@ -16,9 +16,8 @@ object Anon_Volumes {
     Volumes: js.Array[dockerodeLib.dockerodeMod.DockerodeNs.VolumeInspectInfo],
     Warnings: js.Array[java.lang.String]
   ): Anon_Volumes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Volumes")(Volumes)
-    __obj.updateDynamic("Warnings")(Warnings)
+    val __obj = js.Dynamic.literal(Volumes = Volumes, Warnings = Warnings)
+  
     __obj.asInstanceOf[Anon_Volumes]
   }
 }

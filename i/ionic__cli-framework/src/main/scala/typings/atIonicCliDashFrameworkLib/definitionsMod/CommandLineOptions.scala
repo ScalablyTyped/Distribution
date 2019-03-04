@@ -11,7 +11,8 @@ trait CommandLineOptions
 object CommandLineOptions {
   @scala.inline
   def apply(`_`: js.Array[java.lang.String], `--`: js.Array[java.lang.String] = null): CommandLineOptions = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     if (`--` != null) __obj.updateDynamic("--")(`--`)
     __obj.asInstanceOf[CommandLineOptions]
   }

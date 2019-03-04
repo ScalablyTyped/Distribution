@@ -20,8 +20,8 @@ object AtrulePrelude {
     `type`: cssDashTreeLib.cssDashTreeLibStrings.AtrulePrelude,
     loc: CssLocation = null
   ): AtrulePrelude = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[AtrulePrelude]
   }

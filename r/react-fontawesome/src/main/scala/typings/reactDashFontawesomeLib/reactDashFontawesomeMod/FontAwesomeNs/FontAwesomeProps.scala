@@ -42,8 +42,7 @@ object FontAwesomeProps {
     stack: FontAwesomeStack = null,
     tag: java.lang.String = null
   ): FontAwesomeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     js.Dynamic.global.Object.assign(__obj, Intermediate)
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
     if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)

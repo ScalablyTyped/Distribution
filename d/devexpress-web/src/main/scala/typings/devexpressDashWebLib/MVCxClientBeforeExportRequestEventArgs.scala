@@ -19,8 +19,8 @@ trait MVCxClientBeforeExportRequestEventArgs extends ASPxClientEventArgs {
 object MVCxClientBeforeExportRequestEventArgs {
   @scala.inline
   def apply(customArgs: js.Object): MVCxClientBeforeExportRequestEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customArgs")(customArgs)
+    val __obj = js.Dynamic.literal(customArgs = customArgs)
+  
     __obj.asInstanceOf[MVCxClientBeforeExportRequestEventArgs]
   }
 }

@@ -18,10 +18,8 @@ object Redaction {
     FindTextAction: EnumDWT_OCRFindTextAction,
     FindTextFlags: EnumDWT_OCRFindTextFlags
   ): Redaction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FindText")(FindText)
-    __obj.updateDynamic("FindTextAction")(FindTextAction)
-    __obj.updateDynamic("FindTextFlags")(FindTextFlags)
+    val __obj = js.Dynamic.literal(FindText = FindText, FindTextAction = FindTextAction, FindTextFlags = FindTextFlags)
+  
     __obj.asInstanceOf[Redaction]
   }
 }

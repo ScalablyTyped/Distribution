@@ -42,12 +42,8 @@ object InformationNode {
     parentId: scala.Double,
     `type`: java.lang.String
   ): InformationNode = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
-    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
-    __obj.updateDynamic("nodeId")(nodeId)
-    __obj.updateDynamic("parentId")(parentId)
+    val __obj = js.Dynamic.literal(fields = fields, lastModifiedBy = lastModifiedBy, lastModifiedDate = lastModifiedDate, nodeId = nodeId, parentId = parentId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InformationNode]
   }
 }

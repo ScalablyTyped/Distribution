@@ -20,11 +20,7 @@ object ManageOffer {
     offerId: scala.Double | java.lang.String = null,
     source: java.lang.String = null
   ): ManageOffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("buying")(buying)
-    __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    __obj.updateDynamic("selling")(selling)
+    val __obj = js.Dynamic.literal(amount = amount, buying = buying, price = price.asInstanceOf[js.Any], selling = selling)
     if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[ManageOffer]

@@ -18,10 +18,8 @@ object Anon_In {
     InOut: js.Function1[scala.Double, scala.Double],
     Out: js.Function1[scala.Double, scala.Double]
   ): Anon_In = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("In")(In)
-    __obj.updateDynamic("InOut")(InOut)
-    __obj.updateDynamic("Out")(Out)
+    val __obj = js.Dynamic.literal(In = In, InOut = InOut, Out = Out)
+  
     __obj.asInstanceOf[Anon_In]
   }
 }

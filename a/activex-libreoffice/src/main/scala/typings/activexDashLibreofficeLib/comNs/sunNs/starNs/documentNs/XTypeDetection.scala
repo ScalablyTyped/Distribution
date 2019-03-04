@@ -61,12 +61,8 @@ object XTypeDetection {
     queryTypeByURL: js.Function1[java.lang.String, java.lang.String],
     release: js.Function0[scala.Unit]
   ): XTypeDetection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryTypeByDescriptor")(queryTypeByDescriptor)
-    __obj.updateDynamic("queryTypeByURL")(queryTypeByURL)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryTypeByDescriptor = queryTypeByDescriptor, queryTypeByURL = queryTypeByURL, release = release)
+  
     __obj.asInstanceOf[XTypeDetection]
   }
 }

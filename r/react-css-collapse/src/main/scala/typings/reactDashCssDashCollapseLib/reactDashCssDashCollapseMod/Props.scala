@@ -20,8 +20,7 @@ object Props {
     onRest: js.Function0[scala.Unit] = null,
     transition: java.lang.String = null
   ): Props = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isOpen")(isOpen)
+    val __obj = js.Dynamic.literal(isOpen = isOpen)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onRest != null) __obj.updateDynamic("onRest")(onRest)
     if (transition != null) __obj.updateDynamic("transition")(transition)

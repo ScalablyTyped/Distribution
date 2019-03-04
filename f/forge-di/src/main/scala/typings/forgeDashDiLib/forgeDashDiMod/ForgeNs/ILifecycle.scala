@@ -17,8 +17,8 @@ trait ILifecycle extends js.Object {
 object ILifecycle {
   @scala.inline
   def apply(getInstance: js.Function1[IResolver, js.Any]): ILifecycle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInstance")(getInstance)
+    val __obj = js.Dynamic.literal(getInstance = getInstance)
+  
     __obj.asInstanceOf[ILifecycle]
   }
 }

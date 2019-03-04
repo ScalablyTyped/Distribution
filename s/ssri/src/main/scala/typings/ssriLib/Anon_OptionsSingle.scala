@@ -18,8 +18,7 @@ object Anon_OptionsSingle {
     options: js.Array[java.lang.String] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_OptionsSingle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("single")(single)
+    val __obj = js.Dynamic.literal(single = single)
     if (options != null) __obj.updateDynamic("options")(options)
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
     __obj.asInstanceOf[Anon_OptionsSingle]

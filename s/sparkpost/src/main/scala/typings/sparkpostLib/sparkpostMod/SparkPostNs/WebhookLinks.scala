@@ -12,8 +12,8 @@ trait WebhookLinks extends js.Object {
 object WebhookLinks {
   @scala.inline
   def apply(links: js.Array[sparkpostLib.Anon_Href]): WebhookLinks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("links")(links)
+    val __obj = js.Dynamic.literal(links = links)
+  
     __obj.asInstanceOf[WebhookLinks]
   }
 }

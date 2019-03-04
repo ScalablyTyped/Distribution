@@ -18,10 +18,8 @@ object IObjectTypeTargetForBrowsing {
     TargetObjectType: scala.Double,
     ViewCollection: scala.Double
   ): IObjectTypeTargetForBrowsing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("TargetObjectType")(TargetObjectType)
-    __obj.updateDynamic("ViewCollection")(ViewCollection)
+    val __obj = js.Dynamic.literal(Clone = Clone, TargetObjectType = TargetObjectType, ViewCollection = ViewCollection)
+  
     __obj.asInstanceOf[IObjectTypeTargetForBrowsing]
   }
 }

@@ -82,8 +82,7 @@ object AxisValueOptions {
     units: js.Array[js.Tuple2[java.lang.String, js.Array[scala.Double]]] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): AxisValueOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals)
     if (alternateGridColor != null) __obj.updateDynamic("alternateGridColor")(alternateGridColor)
     if (breaks != null) __obj.updateDynamic("breaks")(breaks)

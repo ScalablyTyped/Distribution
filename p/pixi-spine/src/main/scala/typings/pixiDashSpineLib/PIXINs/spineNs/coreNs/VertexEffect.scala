@@ -18,10 +18,8 @@ object VertexEffect {
     end: js.Function0[scala.Unit],
     transform: js.Function4[Vector2, Vector2, Color, Color, scala.Unit]
   ): VertexEffect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("transform")(transform)
+    val __obj = js.Dynamic.literal(begin = begin, end = end, transform = transform)
+  
     __obj.asInstanceOf[VertexEffect]
   }
 }

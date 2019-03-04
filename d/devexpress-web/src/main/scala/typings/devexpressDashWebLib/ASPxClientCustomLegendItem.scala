@@ -19,10 +19,8 @@ trait ASPxClientCustomLegendItem extends ASPxClientWebChartElementNamed {
 object ASPxClientCustomLegendItem {
   @scala.inline
   def apply(chart: ASPxClientWebChart, name: java.lang.String, text: java.lang.String): ASPxClientCustomLegendItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(chart = chart, name = name, text = text)
+  
     __obj.asInstanceOf[ASPxClientCustomLegendItem]
   }
 }

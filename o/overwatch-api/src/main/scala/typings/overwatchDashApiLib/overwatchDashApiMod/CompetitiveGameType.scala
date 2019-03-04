@@ -20,12 +20,8 @@ object CompetitiveGameType {
     win_rate: scala.Double,
     won: scala.Double
   ): CompetitiveGameType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("lost")(lost)
-    __obj.updateDynamic("played")(played)
-    __obj.updateDynamic("win_rate")(win_rate)
-    __obj.updateDynamic("won")(won)
+    val __obj = js.Dynamic.literal(draw = draw, lost = lost, played = played, win_rate = win_rate, won = won)
+  
     __obj.asInstanceOf[CompetitiveGameType]
   }
 }

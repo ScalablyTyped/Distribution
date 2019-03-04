@@ -22,9 +22,8 @@ object ThreadRowActionButtonDescriptor {
     className: java.lang.String = null,
     onClick: js.Function1[/* event */ js.Any, scala.Unit] = null
   ): ThreadRowActionButtonDescriptor = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(title = title, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (className != null) __obj.updateDynamic("className")(className)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     __obj.asInstanceOf[ThreadRowActionButtonDescriptor]

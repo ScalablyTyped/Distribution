@@ -24,8 +24,7 @@ object Model {
     state: js.Any = null,
     subscriptions: SubscriptionsMapObject = null
   ): Model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namespace")(namespace)
+    val __obj = js.Dynamic.literal(namespace = namespace)
     if (effects != null) __obj.updateDynamic("effects")(effects)
     if (reducers != null) __obj.updateDynamic("reducers")(reducers.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state)

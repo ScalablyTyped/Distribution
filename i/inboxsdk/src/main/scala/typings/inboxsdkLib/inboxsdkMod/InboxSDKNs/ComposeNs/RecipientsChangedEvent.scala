@@ -14,10 +14,8 @@ trait RecipientsChangedEvent extends js.Object {
 object RecipientsChangedEvent {
   @scala.inline
   def apply(bcc: inboxsdkLib.Anon_Added, cc: inboxsdkLib.Anon_Added, to: inboxsdkLib.Anon_Added): RecipientsChangedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bcc")(bcc)
-    __obj.updateDynamic("cc")(cc)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(bcc = bcc, cc = cc, to = to)
+  
     __obj.asInstanceOf[RecipientsChangedEvent]
   }
 }

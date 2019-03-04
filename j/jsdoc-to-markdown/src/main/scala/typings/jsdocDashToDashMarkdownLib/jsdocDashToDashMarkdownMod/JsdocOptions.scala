@@ -36,8 +36,7 @@ object JsdocOptions {
     noCache: js.UndefOr[scala.Boolean] = js.undefined,
     source: java.lang.String = null
   ): JsdocOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     if (configure != null) __obj.updateDynamic("configure")(configure)
     if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache)
     if (source != null) __obj.updateDynamic("source")(source)

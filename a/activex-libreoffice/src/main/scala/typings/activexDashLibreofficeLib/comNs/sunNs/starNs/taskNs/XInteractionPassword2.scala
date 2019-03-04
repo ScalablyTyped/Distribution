@@ -41,20 +41,8 @@ object XInteractionPassword2 {
     setPasswordToModify: js.Function1[java.lang.String, scala.Unit],
     setRecommendReadOnly: js.Function1[scala.Boolean, scala.Unit]
   ): XInteractionPassword2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Password")(Password)
-    __obj.updateDynamic("PasswordToModify")(PasswordToModify)
-    __obj.updateDynamic("RecommendReadOnly")(RecommendReadOnly)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getPassword")(getPassword)
-    __obj.updateDynamic("getPasswordToModify")(getPasswordToModify)
-    __obj.updateDynamic("getRecommendReadOnly")(getRecommendReadOnly)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("select")(select)
-    __obj.updateDynamic("setPassword")(setPassword)
-    __obj.updateDynamic("setPasswordToModify")(setPasswordToModify)
-    __obj.updateDynamic("setRecommendReadOnly")(setRecommendReadOnly)
+    val __obj = js.Dynamic.literal(Password = Password, PasswordToModify = PasswordToModify, RecommendReadOnly = RecommendReadOnly, acquire = acquire, getPassword = getPassword, getPasswordToModify = getPasswordToModify, getRecommendReadOnly = getRecommendReadOnly, queryInterface = queryInterface, release = release, select = select, setPassword = setPassword, setPasswordToModify = setPasswordToModify, setRecommendReadOnly = setRecommendReadOnly)
+  
     __obj.asInstanceOf[XInteractionPassword2]
   }
 }

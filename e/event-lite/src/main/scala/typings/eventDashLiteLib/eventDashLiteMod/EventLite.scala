@@ -20,11 +20,8 @@ object EventLite {
     on: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], EventLite],
     once: js.Function2[java.lang.String, js.Function1[/* repeated */ js.Any, scala.Unit], EventLite]
   ): EventLite = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emit")(emit)
-    __obj.updateDynamic("off")(off)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("once")(once)
+    val __obj = js.Dynamic.literal(emit = emit, off = off, on = on, once = once)
+  
     __obj.asInstanceOf[EventLite]
   }
 }

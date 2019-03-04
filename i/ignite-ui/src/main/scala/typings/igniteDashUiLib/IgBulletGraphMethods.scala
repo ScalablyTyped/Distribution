@@ -76,18 +76,8 @@ object IgBulletGraphMethods {
     styleUpdated: js.Function0[scala.Unit],
     updateRange: js.Function1[js.Object, scala.Unit]
   ): IgBulletGraphMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRange")(addRange)
-    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
-    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("exportVisualData")(exportVisualData)
-    __obj.updateDynamic("flush")(flush)
-    __obj.updateDynamic("getRangeNames")(getRangeNames)
-    __obj.updateDynamic("removeRange")(removeRange)
-    __obj.updateDynamic("styleUpdated")(styleUpdated)
-    __obj.updateDynamic("updateRange")(updateRange)
+    val __obj = js.Dynamic.literal(addRange = addRange, changeGlobalLanguage = changeGlobalLanguage, changeGlobalRegional = changeGlobalRegional, changeLocale = changeLocale, destroy = destroy, exportVisualData = exportVisualData, flush = flush, getRangeNames = getRangeNames, removeRange = removeRange, styleUpdated = styleUpdated, updateRange = updateRange)
+  
     __obj.asInstanceOf[IgBulletGraphMethods]
   }
 }

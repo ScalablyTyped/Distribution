@@ -18,8 +18,7 @@ object Anon_DaysMode {
     days: scala.Int | scala.Double = null,
     years: scala.Int | scala.Double = null
   ): Anon_DaysMode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mode")(mode)
+    val __obj = js.Dynamic.literal(mode = mode)
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DaysMode]

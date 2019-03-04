@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(browser: Anon_Alarms): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browser")(browser)
+    val __obj = js.Dynamic.literal(browser = browser)
+  
     __obj.asInstanceOf[Window]
   }
 }

@@ -28,15 +28,8 @@ object Anon_DashboardGroup {
     WidgetScope: Anon_EnumValuesAnonCollectionUser,
     WidgetTypesResponse: js.Any
   ): Anon_DashboardGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DashboardGroup")(DashboardGroup)
-    __obj.updateDynamic("DashboardScope")(DashboardScope)
-    __obj.updateDynamic("GroupMemberPermission")(GroupMemberPermission)
-    __obj.updateDynamic("TeamDashboardPermission")(TeamDashboardPermission)
-    __obj.updateDynamic("WidgetMetadata")(WidgetMetadata)
-    __obj.updateDynamic("WidgetMetadataResponse")(WidgetMetadataResponse)
-    __obj.updateDynamic("WidgetScope")(WidgetScope)
-    __obj.updateDynamic("WidgetTypesResponse")(WidgetTypesResponse)
+    val __obj = js.Dynamic.literal(DashboardGroup = DashboardGroup, DashboardScope = DashboardScope, GroupMemberPermission = GroupMemberPermission, TeamDashboardPermission = TeamDashboardPermission, WidgetMetadata = WidgetMetadata, WidgetMetadataResponse = WidgetMetadataResponse, WidgetScope = WidgetScope, WidgetTypesResponse = WidgetTypesResponse)
+  
     __obj.asInstanceOf[Anon_DashboardGroup]
   }
 }

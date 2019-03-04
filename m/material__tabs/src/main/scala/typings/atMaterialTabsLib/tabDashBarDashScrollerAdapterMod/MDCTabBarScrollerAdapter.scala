@@ -64,33 +64,8 @@ object MDCTabBarScrollerAdapter {
     setScrollLeftForScrollFrame: js.Function1[scala.Double, scala.Unit],
     setTransformStyleForTabBar: js.Function1[java.lang.String, scala.Unit]
   ): MDCTabBarScrollerAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addClass")(addClass)
-    __obj.updateDynamic("addClassToBackIndicator")(addClassToBackIndicator)
-    __obj.updateDynamic("addClassToForwardIndicator")(addClassToForwardIndicator)
-    __obj.updateDynamic("deregisterBackIndicatorClickHandler")(deregisterBackIndicatorClickHandler)
-    __obj.updateDynamic("deregisterCapturedInteractionHandler")(deregisterCapturedInteractionHandler)
-    __obj.updateDynamic("deregisterForwardIndicatorClickHandler")(deregisterForwardIndicatorClickHandler)
-    __obj.updateDynamic("deregisterWindowResizeHandler")(deregisterWindowResizeHandler)
-    __obj.updateDynamic("eventTargetHasClass")(eventTargetHasClass)
-    __obj.updateDynamic("getComputedLeftForTabAtIndex")(getComputedLeftForTabAtIndex)
-    __obj.updateDynamic("getComputedWidthForTabAtIndex")(getComputedWidthForTabAtIndex)
-    __obj.updateDynamic("getNumberOfTabs")(getNumberOfTabs)
-    __obj.updateDynamic("getOffsetLeftForEventTarget")(getOffsetLeftForEventTarget)
-    __obj.updateDynamic("getOffsetWidthForEventTarget")(getOffsetWidthForEventTarget)
-    __obj.updateDynamic("getOffsetWidthForScrollFrame")(getOffsetWidthForScrollFrame)
-    __obj.updateDynamic("getOffsetWidthForTabBar")(getOffsetWidthForTabBar)
-    __obj.updateDynamic("getScrollLeftForScrollFrame")(getScrollLeftForScrollFrame)
-    __obj.updateDynamic("isRTL")(isRTL)
-    __obj.updateDynamic("registerBackIndicatorClickHandler")(registerBackIndicatorClickHandler)
-    __obj.updateDynamic("registerCapturedInteractionHandler")(registerCapturedInteractionHandler)
-    __obj.updateDynamic("registerForwardIndicatorClickHandler")(registerForwardIndicatorClickHandler)
-    __obj.updateDynamic("registerWindowResizeHandler")(registerWindowResizeHandler)
-    __obj.updateDynamic("removeClass")(removeClass)
-    __obj.updateDynamic("removeClassFromBackIndicator")(removeClassFromBackIndicator)
-    __obj.updateDynamic("removeClassFromForwardIndicator")(removeClassFromForwardIndicator)
-    __obj.updateDynamic("setScrollLeftForScrollFrame")(setScrollLeftForScrollFrame)
-    __obj.updateDynamic("setTransformStyleForTabBar")(setTransformStyleForTabBar)
+    val __obj = js.Dynamic.literal(addClass = addClass, addClassToBackIndicator = addClassToBackIndicator, addClassToForwardIndicator = addClassToForwardIndicator, deregisterBackIndicatorClickHandler = deregisterBackIndicatorClickHandler, deregisterCapturedInteractionHandler = deregisterCapturedInteractionHandler, deregisterForwardIndicatorClickHandler = deregisterForwardIndicatorClickHandler, deregisterWindowResizeHandler = deregisterWindowResizeHandler, eventTargetHasClass = eventTargetHasClass, getComputedLeftForTabAtIndex = getComputedLeftForTabAtIndex, getComputedWidthForTabAtIndex = getComputedWidthForTabAtIndex, getNumberOfTabs = getNumberOfTabs, getOffsetLeftForEventTarget = getOffsetLeftForEventTarget, getOffsetWidthForEventTarget = getOffsetWidthForEventTarget, getOffsetWidthForScrollFrame = getOffsetWidthForScrollFrame, getOffsetWidthForTabBar = getOffsetWidthForTabBar, getScrollLeftForScrollFrame = getScrollLeftForScrollFrame, isRTL = isRTL, registerBackIndicatorClickHandler = registerBackIndicatorClickHandler, registerCapturedInteractionHandler = registerCapturedInteractionHandler, registerForwardIndicatorClickHandler = registerForwardIndicatorClickHandler, registerWindowResizeHandler = registerWindowResizeHandler, removeClass = removeClass, removeClassFromBackIndicator = removeClassFromBackIndicator, removeClassFromForwardIndicator = removeClassFromForwardIndicator, setScrollLeftForScrollFrame = setScrollLeftForScrollFrame, setTransformStyleForTabBar = setTransformStyleForTabBar)
+  
     __obj.asInstanceOf[MDCTabBarScrollerAdapter]
   }
 }

@@ -12,8 +12,8 @@ trait HTML5BackendContext extends js.Object {
 object HTML5BackendContext {
   @scala.inline
   def apply(window: reactDashDndDashHtml5DashBackendLib.libHTML5BackendMod.Global.Window): HTML5BackendContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(window = window)
+  
     __obj.asInstanceOf[HTML5BackendContext]
   }
 }

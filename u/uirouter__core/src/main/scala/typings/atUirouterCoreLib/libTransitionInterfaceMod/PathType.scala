@@ -13,9 +13,8 @@ trait PathType extends js.Object {
 object PathType {
   @scala.inline
   def apply(name: java.lang.String, scope: TransitionHookScope): PathType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(name = name, scope = scope)
+  
     __obj.asInstanceOf[PathType]
   }
 }

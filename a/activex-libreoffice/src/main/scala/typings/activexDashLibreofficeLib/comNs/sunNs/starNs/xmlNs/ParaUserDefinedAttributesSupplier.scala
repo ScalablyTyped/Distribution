@@ -25,8 +25,8 @@ trait ParaUserDefinedAttributesSupplier extends js.Object {
 object ParaUserDefinedAttributesSupplier {
   @scala.inline
   def apply(ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer): ParaUserDefinedAttributesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ParaUserDefinedAttributes")(ParaUserDefinedAttributes)
+    val __obj = js.Dynamic.literal(ParaUserDefinedAttributes = ParaUserDefinedAttributes)
+  
     __obj.asInstanceOf[ParaUserDefinedAttributesSupplier]
   }
 }

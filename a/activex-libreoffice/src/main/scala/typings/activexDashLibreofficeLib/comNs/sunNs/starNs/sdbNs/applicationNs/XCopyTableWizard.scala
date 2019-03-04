@@ -85,18 +85,8 @@ object XCopyTableWizard {
     removeCopyTableListener: js.Function1[XCopyTableListener, scala.Unit],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): XCopyTableWizard = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreatePrimaryKey")(CreatePrimaryKey)
-    __obj.updateDynamic("DestinationTableName")(DestinationTableName)
-    __obj.updateDynamic("Operation")(Operation)
-    __obj.updateDynamic("UseHeaderLineAsColumnNames")(UseHeaderLineAsColumnNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addCopyTableListener")(addCopyTableListener)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeCopyTableListener")(removeCopyTableListener)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(CreatePrimaryKey = CreatePrimaryKey, DestinationTableName = DestinationTableName, Operation = Operation, UseHeaderLineAsColumnNames = UseHeaderLineAsColumnNames, acquire = acquire, addCopyTableListener = addCopyTableListener, execute = execute, queryInterface = queryInterface, release = release, removeCopyTableListener = removeCopyTableListener, setTitle = setTitle)
+  
     __obj.asInstanceOf[XCopyTableWizard]
   }
 }

@@ -18,10 +18,8 @@ object ReadableStreamBYOBRequest {
     respondWithNewView: js.Function1[stdLib.ArrayBufferView, scala.Unit],
     view: stdLib.ArrayBufferView
   ): ReadableStreamBYOBRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("respond")(respond)
-    __obj.updateDynamic("respondWithNewView")(respondWithNewView)
-    __obj.updateDynamic("view")(view)
+    val __obj = js.Dynamic.literal(respond = respond, respondWithNewView = respondWithNewView, view = view)
+  
     __obj.asInstanceOf[ReadableStreamBYOBRequest]
   }
 }

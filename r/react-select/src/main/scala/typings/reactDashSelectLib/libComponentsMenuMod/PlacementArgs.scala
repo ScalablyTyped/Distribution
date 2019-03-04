@@ -24,13 +24,8 @@ object PlacementArgs {
     placement: reactDashSelectLib.reactDashSelectLibStrings.bottom | reactDashSelectLib.reactDashSelectLibStrings.top | reactDashSelectLib.reactDashSelectLibStrings.auto,
     shouldScroll: scala.Boolean
   ): PlacementArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isFixedPosition")(isFixedPosition)
-    __obj.updateDynamic("maxHeight")(maxHeight)
-    __obj.updateDynamic("menuEl")(menuEl.asInstanceOf[js.Any])
-    __obj.updateDynamic("minHeight")(minHeight)
-    __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    __obj.updateDynamic("shouldScroll")(shouldScroll)
+    val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition, maxHeight = maxHeight, menuEl = menuEl.asInstanceOf[js.Any], minHeight = minHeight, placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll)
+  
     __obj.asInstanceOf[PlacementArgs]
   }
 }

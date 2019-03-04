@@ -12,8 +12,8 @@ trait Plugin[EntityType] extends js.Object {
 object Plugin {
   @scala.inline
   def apply[EntityType](onGridInit: js.Function1[Grid[EntityType], scala.Unit]): Plugin[EntityType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onGridInit")(onGridInit)
+    val __obj = js.Dynamic.literal(onGridInit = onGridInit)
+  
     __obj.asInstanceOf[Plugin[EntityType]]
   }
 }

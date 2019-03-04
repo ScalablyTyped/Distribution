@@ -42,9 +42,7 @@ object Anon_AltDatasetId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDatasetId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datasetId")(datasetId)
-    __obj.updateDynamic("projectId")(projectId)
+    val __obj = js.Dynamic.literal(datasetId = datasetId, projectId = projectId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

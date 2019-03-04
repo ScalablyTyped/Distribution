@@ -26,10 +26,7 @@ object SearchFieldProps {
     placeholder: java.lang.String = null,
     value: java.lang.String = null
   ): SearchFieldProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("onChange")(onChange)
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel, id = id, onChange = onChange)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)

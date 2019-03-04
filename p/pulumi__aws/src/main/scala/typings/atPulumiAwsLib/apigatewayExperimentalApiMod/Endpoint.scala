@@ -18,10 +18,8 @@ object Endpoint {
     loadBalancer: atPulumiAwsLib.atPulumiAwsMod.elasticloadbalancingv2Ns.LoadBalancer,
     port: scala.Double
   ): Endpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("loadBalancer")(loadBalancer)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(hostname = hostname, loadBalancer = loadBalancer, port = port)
+  
     __obj.asInstanceOf[Endpoint]
   }
 }

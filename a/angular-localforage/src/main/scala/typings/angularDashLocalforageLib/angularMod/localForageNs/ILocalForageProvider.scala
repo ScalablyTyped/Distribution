@@ -16,9 +16,8 @@ object ILocalForageProvider {
     config: js.Function1[LocalForageConfig, scala.Unit],
     setNotify: js.Function2[scala.Boolean, scala.Boolean, scala.Unit]
   ): ILocalForageProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("setNotify")(setNotify)
+    val __obj = js.Dynamic.literal(config = config, setNotify = setNotify)
+  
     __obj.asInstanceOf[ILocalForageProvider]
   }
 }

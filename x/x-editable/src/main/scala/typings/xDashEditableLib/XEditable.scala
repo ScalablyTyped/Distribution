@@ -40,21 +40,8 @@ object XEditable {
     toggleDisabled: js.Function0[scala.Unit],
     validate: js.Function0[scala.Unit]
   ): XEditable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("option")(option)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("submit")(submit)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("toggleDisabled")(toggleDisabled)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(activate = activate, destroy = destroy, disable = disable, enable = enable, getValue = getValue, hide = hide, option = option, options = options, setValue = setValue, show = show, submit = submit, toggle = toggle, toggleDisabled = toggleDisabled, validate = validate)
+  
     __obj.asInstanceOf[XEditable]
   }
 }

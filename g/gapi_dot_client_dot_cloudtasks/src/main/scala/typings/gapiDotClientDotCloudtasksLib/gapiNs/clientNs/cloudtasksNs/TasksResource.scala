@@ -162,16 +162,8 @@ object TasksResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Task]
     ]
   ): TasksResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acknowledge")(acknowledge)
-    __obj.updateDynamic("cancelLease")(cancelLease)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("pull")(pull)
-    __obj.updateDynamic("renewLease")(renewLease)
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(acknowledge = acknowledge, cancelLease = cancelLease, create = create, delete = delete, get = get, list = list, pull = pull, renewLease = renewLease, run = run)
+  
     __obj.asInstanceOf[TasksResource]
   }
 }

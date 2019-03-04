@@ -24,13 +24,8 @@ object DayComponentProps {
     state: reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.Empty | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.selected | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.disabled | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.today,
     theme: CalendarTheme
   ): DayComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("marking")(marking.asInstanceOf[js.Any])
-    __obj.updateDynamic("onLongPress")(onLongPress)
-    __obj.updateDynamic("onPress")(onPress)
-    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    __obj.updateDynamic("theme")(theme)
+    val __obj = js.Dynamic.literal(date = date, marking = marking.asInstanceOf[js.Any], onLongPress = onLongPress, onPress = onPress, state = state.asInstanceOf[js.Any], theme = theme)
+  
     __obj.asInstanceOf[DayComponentProps]
   }
 }

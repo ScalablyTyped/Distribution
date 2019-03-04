@@ -88,20 +88,8 @@ object ASPxClientNavBarGroup {
     name: java.lang.String,
     navBar: ASPxClientNavBar
   ): ASPxClientNavBarGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetEnabled")(GetEnabled)
-    __obj.updateDynamic("GetExpanded")(GetExpanded)
-    __obj.updateDynamic("GetItem")(GetItem)
-    __obj.updateDynamic("GetItemByName")(GetItemByName)
-    __obj.updateDynamic("GetItemCount")(GetItemCount)
-    __obj.updateDynamic("GetText")(GetText)
-    __obj.updateDynamic("GetVisible")(GetVisible)
-    __obj.updateDynamic("SetExpanded")(SetExpanded)
-    __obj.updateDynamic("SetText")(SetText)
-    __obj.updateDynamic("SetVisible")(SetVisible)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("navBar")(navBar)
+    val __obj = js.Dynamic.literal(GetEnabled = GetEnabled, GetExpanded = GetExpanded, GetItem = GetItem, GetItemByName = GetItemByName, GetItemCount = GetItemCount, GetText = GetText, GetVisible = GetVisible, SetExpanded = SetExpanded, SetText = SetText, SetVisible = SetVisible, index = index, name = name, navBar = navBar)
+  
     __obj.asInstanceOf[ASPxClientNavBarGroup]
   }
 }

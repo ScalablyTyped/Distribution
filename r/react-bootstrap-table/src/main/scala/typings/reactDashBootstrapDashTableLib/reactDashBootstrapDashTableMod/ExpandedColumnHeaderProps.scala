@@ -12,8 +12,8 @@ trait ExpandedColumnHeaderProps extends js.Object {
 object ExpandedColumnHeaderProps {
   @scala.inline
   def apply(anyExpand: scala.Boolean): ExpandedColumnHeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("anyExpand")(anyExpand)
+    val __obj = js.Dynamic.literal(anyExpand = anyExpand)
+  
     __obj.asInstanceOf[ExpandedColumnHeaderProps]
   }
 }

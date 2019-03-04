@@ -59,8 +59,7 @@ object UploadOptions {
     ] = null,
     `type`: java.lang.String = null
   ): UploadOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (beforeStart != null) __obj.updateDynamic("beforeStart")(beforeStart)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (data != null) __obj.updateDynamic("data")(data)

@@ -18,10 +18,8 @@ object Anon_CONNECTED {
     CONNECTING: chromeDashAppsLib.chromeDashAppsLibStrings.Connecting,
     DISCONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.Disconnected
   ): Anon_CONNECTED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CONNECTED")(CONNECTED)
-    __obj.updateDynamic("CONNECTING")(CONNECTING)
-    __obj.updateDynamic("DISCONNECTED")(DISCONNECTED)
+    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED, CONNECTING = CONNECTING, DISCONNECTED = DISCONNECTED)
+  
     __obj.asInstanceOf[Anon_CONNECTED]
   }
 }

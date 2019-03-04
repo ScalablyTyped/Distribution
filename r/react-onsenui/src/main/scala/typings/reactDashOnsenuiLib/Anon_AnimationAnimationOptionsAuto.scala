@@ -50,9 +50,7 @@ object Anon_AnimationAnimationOptionsAuto {
     swipeable: js.UndefOr[scala.Boolean] = js.undefined,
     tabBorder: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AnimationAnimationOptionsAuto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("renderTabs")(renderTabs)
+    val __obj = js.Dynamic.literal(index = index, renderTabs = renderTabs)
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
     if (ignoreEdgeWidth != null) __obj.updateDynamic("ignoreEdgeWidth")(ignoreEdgeWidth.asInstanceOf[js.Any])

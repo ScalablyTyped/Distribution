@@ -26,14 +26,8 @@ object CurrentLoadData {
     currentload_system: scala.Double,
     currentload_user: scala.Double
   ): CurrentLoadData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avgload")(avgload)
-    __obj.updateDynamic("cpus")(cpus)
-    __obj.updateDynamic("currentload")(currentload)
-    __obj.updateDynamic("currentload_irq")(currentload_irq)
-    __obj.updateDynamic("currentload_nice")(currentload_nice)
-    __obj.updateDynamic("currentload_system")(currentload_system)
-    __obj.updateDynamic("currentload_user")(currentload_user)
+    val __obj = js.Dynamic.literal(avgload = avgload, cpus = cpus, currentload = currentload, currentload_irq = currentload_irq, currentload_nice = currentload_nice, currentload_system = currentload_system, currentload_user = currentload_user)
+  
     __obj.asInstanceOf[CurrentLoadData]
   }
 }

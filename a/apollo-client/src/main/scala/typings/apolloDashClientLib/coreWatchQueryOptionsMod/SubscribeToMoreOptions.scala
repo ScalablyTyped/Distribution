@@ -20,8 +20,7 @@ object SubscribeToMoreOptions {
     updateQuery: UpdateQueryFn[TData, TVariables, TSubscriptionData] = null,
     variables: TVariables = null
   ): SubscribeToMoreOptions[TData, TVariables, TSubscriptionData] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
+    val __obj = js.Dynamic.literal(document = document)
     if (onError != null) __obj.updateDynamic("onError")(onError)
     if (updateQuery != null) __obj.updateDynamic("updateQuery")(updateQuery)
     if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])

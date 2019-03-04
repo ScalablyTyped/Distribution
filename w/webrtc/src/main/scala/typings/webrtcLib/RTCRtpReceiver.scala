@@ -20,9 +20,8 @@ object RTCRtpReceiver {
     getContributingSources: js.Function0[js.Array[RTCRtpContributingSource]],
     getParameters: js.Function0[RTCRtpParameters]
   ): RTCRtpReceiver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContributingSources")(getContributingSources)
-    __obj.updateDynamic("getParameters")(getParameters)
+    val __obj = js.Dynamic.literal(getContributingSources = getContributingSources, getParameters = getParameters)
+  
     __obj.asInstanceOf[RTCRtpReceiver]
   }
 }

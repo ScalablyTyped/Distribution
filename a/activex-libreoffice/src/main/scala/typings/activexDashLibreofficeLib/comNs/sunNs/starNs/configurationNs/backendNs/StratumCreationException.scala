@@ -25,12 +25,8 @@ object StratumCreationException {
     StratumData: java.lang.String,
     StratumService: java.lang.String
   ): StratumCreationException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BackendException")(BackendException)
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("StratumData")(StratumData)
-    __obj.updateDynamic("StratumService")(StratumService)
+    val __obj = js.Dynamic.literal(BackendException = BackendException, Context = Context, Message = Message, StratumData = StratumData, StratumService = StratumService)
+  
     __obj.asInstanceOf[StratumCreationException]
   }
 }

@@ -13,9 +13,8 @@ trait IntrospectionNonNullTypeRef[T /* <: IntrospectionTypeRef */] extends js.Ob
 object IntrospectionNonNullTypeRef {
   @scala.inline
   def apply[T /* <: IntrospectionTypeRef */](kind: graphqlLib.graphqlLibStrings.NON_NULL, ofType: T): IntrospectionNonNullTypeRef[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("ofType")(ofType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(kind = kind, ofType = ofType.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IntrospectionNonNullTypeRef[T]]
   }
 }

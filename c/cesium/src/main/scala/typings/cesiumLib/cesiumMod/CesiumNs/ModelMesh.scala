@@ -14,10 +14,8 @@ trait ModelMesh extends js.Object {
 object ModelMesh {
   @scala.inline
   def apply(id: java.lang.String, materials: js.Array[ModelMaterial], name: java.lang.String): ModelMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("materials")(materials)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(id = id, materials = materials, name = name)
+  
     __obj.asInstanceOf[ModelMesh]
   }
 }

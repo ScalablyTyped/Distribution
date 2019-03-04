@@ -32,11 +32,8 @@ object ISelection {
     selectionStartColumn: scala.Double,
     selectionStartLineNumber: scala.Double
   ): ISelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("positionColumn")(positionColumn)
-    __obj.updateDynamic("positionLineNumber")(positionLineNumber)
-    __obj.updateDynamic("selectionStartColumn")(selectionStartColumn)
-    __obj.updateDynamic("selectionStartLineNumber")(selectionStartLineNumber)
+    val __obj = js.Dynamic.literal(positionColumn = positionColumn, positionLineNumber = positionLineNumber, selectionStartColumn = selectionStartColumn, selectionStartLineNumber = selectionStartLineNumber)
+  
     __obj.asInstanceOf[ISelection]
   }
 }

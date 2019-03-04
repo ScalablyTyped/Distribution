@@ -25,12 +25,8 @@ object PushChannelSubscriptionsPromise {
     removeWhere: js.Function1[PushChannelSubscriptionParams, js.Promise[scala.Unit]],
     save: js.Function1[PushChannelSubscription, js.Promise[PushChannelSubscription]]
   ): PushChannelSubscriptionsPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("listChannels")(listChannels)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeWhere")(removeWhere)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(list = list, listChannels = listChannels, remove = remove, removeWhere = removeWhere, save = save)
+  
     __obj.asInstanceOf[PushChannelSubscriptionsPromise]
   }
 }

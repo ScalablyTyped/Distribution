@@ -23,8 +23,7 @@ object IBankAccountTokenCreationOptions {
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null
   ): IBankAccountTokenCreationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bank_account")(bank_account)
+    val __obj = js.Dynamic.literal(bank_account = bank_account)
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)

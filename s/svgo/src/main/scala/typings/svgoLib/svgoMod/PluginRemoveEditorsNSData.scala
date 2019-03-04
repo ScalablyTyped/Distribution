@@ -12,8 +12,8 @@ trait PluginRemoveEditorsNSData extends js.Object {
 object PluginRemoveEditorsNSData {
   @scala.inline
   def apply(removeEditorsNSData: scala.Boolean | js.Object): PluginRemoveEditorsNSData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeEditorsNSData")(removeEditorsNSData.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeEditorsNSData = removeEditorsNSData.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveEditorsNSData]
   }
 }

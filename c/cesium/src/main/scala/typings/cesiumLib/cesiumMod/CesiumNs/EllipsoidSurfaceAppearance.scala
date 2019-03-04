@@ -29,20 +29,8 @@ object EllipsoidSurfaceAppearance {
     vertexFormat: VertexFormat,
     vertexShaderSource: java.lang.String
   ): EllipsoidSurfaceAppearance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aboveGround")(aboveGround)
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("faceForward")(faceForward)
-    __obj.updateDynamic("flat")(flat)
-    __obj.updateDynamic("fragmentShaderSource")(fragmentShaderSource)
-    __obj.updateDynamic("getFragmentShaderSource")(getFragmentShaderSource)
-    __obj.updateDynamic("getRenderState")(getRenderState)
-    __obj.updateDynamic("isTranslucent")(isTranslucent)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("renderState")(renderState)
-    __obj.updateDynamic("translucent")(translucent)
-    __obj.updateDynamic("vertexFormat")(vertexFormat)
-    __obj.updateDynamic("vertexShaderSource")(vertexShaderSource)
+    val __obj = js.Dynamic.literal(aboveGround = aboveGround, closed = closed, faceForward = faceForward, flat = flat, fragmentShaderSource = fragmentShaderSource, getFragmentShaderSource = getFragmentShaderSource, getRenderState = getRenderState, isTranslucent = isTranslucent, material = material, renderState = renderState, translucent = translucent, vertexFormat = vertexFormat, vertexShaderSource = vertexShaderSource)
+  
     __obj.asInstanceOf[EllipsoidSurfaceAppearance]
   }
 }

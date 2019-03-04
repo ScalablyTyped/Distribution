@@ -28,12 +28,8 @@ object Anon_Chrome {
     silk: scala.Boolean,
     version: java.lang.String
   ): Anon_Chrome = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chrome")(chrome)
-    __obj.updateDynamic("firefox")(firefox)
-    __obj.updateDynamic("playbook")(playbook)
-    __obj.updateDynamic("silk")(silk)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(chrome = chrome, firefox = firefox, playbook = playbook, silk = silk, version = version)
+  
     __obj.asInstanceOf[Anon_Chrome]
   }
 }

@@ -28,8 +28,8 @@ object XMultiTextMarkup {
   def apply(
     commitMultiTextMarkup: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextMarkupDescriptor], scala.Unit]
   ): XMultiTextMarkup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commitMultiTextMarkup")(commitMultiTextMarkup)
+    val __obj = js.Dynamic.literal(commitMultiTextMarkup = commitMultiTextMarkup)
+  
     __obj.asInstanceOf[XMultiTextMarkup]
   }
 }

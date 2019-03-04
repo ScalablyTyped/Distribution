@@ -48,21 +48,7 @@ object GalleryItem {
     nsfw: js.UndefOr[scala.Boolean] = js.undefined,
     vote: java.lang.String = null
   ): GalleryItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("comment_count")(comment_count)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("downs")(downs)
-    __obj.updateDynamic("favorite")(favorite)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("is_album")(is_album)
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("topic")(topic)
-    __obj.updateDynamic("topic_id")(topic_id)
-    __obj.updateDynamic("ups")(ups)
-    __obj.updateDynamic("views")(views)
+    val __obj = js.Dynamic.literal(comment_count = comment_count, datetime = datetime, description = description, downs = downs, favorite = favorite, id = id, is_album = is_album, link = link, score = score, title = title, topic = topic, topic_id = topic_id, ups = ups, views = views)
     if (account_id != null) __obj.updateDynamic("account_id")(account_id.asInstanceOf[js.Any])
     if (account_url != null) __obj.updateDynamic("account_url")(account_url)
     if (!js.isUndefined(nsfw)) __obj.updateDynamic("nsfw")(nsfw)

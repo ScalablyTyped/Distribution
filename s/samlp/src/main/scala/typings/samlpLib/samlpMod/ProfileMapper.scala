@@ -18,10 +18,8 @@ object ProfileMapper {
     getNameIdentifier: js.Function0[js.Any],
     metadata: js.Array[MetadataItem]
   ): ProfileMapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getClaims")(getClaims)
-    __obj.updateDynamic("getNameIdentifier")(getNameIdentifier)
-    __obj.updateDynamic("metadata")(metadata)
+    val __obj = js.Dynamic.literal(getClaims = getClaims, getNameIdentifier = getNameIdentifier, metadata = metadata)
+  
     __obj.asInstanceOf[ProfileMapper]
   }
 }

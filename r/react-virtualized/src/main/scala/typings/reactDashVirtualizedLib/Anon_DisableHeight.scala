@@ -18,10 +18,8 @@ object Anon_DisableHeight {
     disableWidth: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
     onResize: js.Function0[scala.Unit]
   ): Anon_DisableHeight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disableHeight")(disableHeight)
-    __obj.updateDynamic("disableWidth")(disableWidth)
-    __obj.updateDynamic("onResize")(onResize)
+    val __obj = js.Dynamic.literal(disableHeight = disableHeight, disableWidth = disableWidth, onResize = onResize)
+  
     __obj.asInstanceOf[Anon_DisableHeight]
   }
 }

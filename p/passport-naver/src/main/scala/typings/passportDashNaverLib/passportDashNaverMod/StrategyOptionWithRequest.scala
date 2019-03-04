@@ -22,11 +22,7 @@ object StrategyOptionWithRequest {
     svcType: scala.Int | scala.Double = null,
     tokenURL: java.lang.String = null
   ): StrategyOptionWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
     if (authType != null) __obj.updateDynamic("authType")(authType)
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (profileURL != null) __obj.updateDynamic("profileURL")(profileURL)

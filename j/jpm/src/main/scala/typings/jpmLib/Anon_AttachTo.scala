@@ -38,8 +38,7 @@ object Anon_AttachTo {
     onAttach: js.Function1[/* worker */ jpmLib.FFAddonSDKNs.ContentWorker, _] = null,
     onError: js.Function1[/* error */ stdLib.Error, _] = null
   ): Anon_AttachTo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(include = include.asInstanceOf[js.Any])
     if (attachTo != null) __obj.updateDynamic("attachTo")(attachTo.asInstanceOf[js.Any])
     if (contentScript != null) __obj.updateDynamic("contentScript")(contentScript.asInstanceOf[js.Any])
     if (contentScriptFile != null) __obj.updateDynamic("contentScriptFile")(contentScriptFile.asInstanceOf[js.Any])

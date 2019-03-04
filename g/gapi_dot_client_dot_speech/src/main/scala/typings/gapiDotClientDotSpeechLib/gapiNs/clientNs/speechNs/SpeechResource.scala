@@ -32,9 +32,8 @@ object SpeechResource {
       gapiDotClientLib.gapiNs.clientNs.Request[RecognizeResponse]
     ]
   ): SpeechResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("longrunningrecognize")(longrunningrecognize)
-    __obj.updateDynamic("recognize")(recognize)
+    val __obj = js.Dynamic.literal(longrunningrecognize = longrunningrecognize, recognize = recognize)
+  
     __obj.asInstanceOf[SpeechResource]
   }
 }

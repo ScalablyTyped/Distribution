@@ -32,17 +32,8 @@ object IMatrixDropdownData {
     onRowChanging: js.Function3[MatrixDropdownRowModelBase, java.lang.String, js.Any, js.Any],
     validateCell: js.Function3[MatrixDropdownRowModelBase, java.lang.String, js.Any, SurveyError]
   ): IMatrixDropdownData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("createQuestion")(createQuestion)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
-    __obj.updateDynamic("getProcessedText")(getProcessedText)
-    __obj.updateDynamic("getRowIndex")(getRowIndex)
-    __obj.updateDynamic("getSurvey")(getSurvey)
-    __obj.updateDynamic("onRowChanged")(onRowChanged)
-    __obj.updateDynamic("onRowChanging")(onRowChanging)
-    __obj.updateDynamic("validateCell")(validateCell)
+    val __obj = js.Dynamic.literal(columns = columns, createQuestion = createQuestion, getLocale = getLocale, getMarkdownHtml = getMarkdownHtml, getProcessedText = getProcessedText, getRowIndex = getRowIndex, getSurvey = getSurvey, onRowChanged = onRowChanged, onRowChanging = onRowChanging, validateCell = validateCell)
+  
     __obj.asInstanceOf[IMatrixDropdownData]
   }
 }

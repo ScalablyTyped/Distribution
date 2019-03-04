@@ -38,12 +38,8 @@ object TestConfig {
     minOptionalTestsToPass: scala.Double,
     minPhraseLength: scala.Double
   ): TestConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowPassphrases")(allowPassphrases)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("minOptionalTestsToPass")(minOptionalTestsToPass)
-    __obj.updateDynamic("minPhraseLength")(minPhraseLength)
+    val __obj = js.Dynamic.literal(allowPassphrases = allowPassphrases, maxLength = maxLength, minLength = minLength, minOptionalTestsToPass = minOptionalTestsToPass, minPhraseLength = minPhraseLength)
+  
     __obj.asInstanceOf[TestConfig]
   }
 }

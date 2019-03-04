@@ -46,15 +46,8 @@ object XControllerBorder {
     release: js.Function0[scala.Unit],
     removeBorderResizeListener: js.Function1[XBorderResizeListener, scala.Unit]
   ): XControllerBorder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Border")(Border)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addBorderResizeListener")(addBorderResizeListener)
-    __obj.updateDynamic("getBorder")(getBorder)
-    __obj.updateDynamic("queryBorderedArea")(queryBorderedArea)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeBorderResizeListener")(removeBorderResizeListener)
+    val __obj = js.Dynamic.literal(Border = Border, acquire = acquire, addBorderResizeListener = addBorderResizeListener, getBorder = getBorder, queryBorderedArea = queryBorderedArea, queryInterface = queryInterface, release = release, removeBorderResizeListener = removeBorderResizeListener)
+  
     __obj.asInstanceOf[XControllerBorder]
   }
 }

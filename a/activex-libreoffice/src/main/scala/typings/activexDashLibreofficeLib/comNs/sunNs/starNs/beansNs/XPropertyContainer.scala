@@ -39,12 +39,8 @@ object XPropertyContainer {
     release: js.Function0[scala.Unit],
     removeProperty: js.Function1[java.lang.String, scala.Unit]
   ): XPropertyContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addProperty")(addProperty)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeProperty")(removeProperty)
+    val __obj = js.Dynamic.literal(acquire = acquire, addProperty = addProperty, queryInterface = queryInterface, release = release, removeProperty = removeProperty)
+  
     __obj.asInstanceOf[XPropertyContainer]
   }
 }

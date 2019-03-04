@@ -18,8 +18,7 @@ object Anon_LaunchTemplateSpecificationOverrides {
     launchTemplateSpecification: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateIdLaunchTemplateName],
     overrides: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_InstanceTypeInput]]] = null
   ): Anon_LaunchTemplateSpecificationOverrides = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("launchTemplateSpecification")(launchTemplateSpecification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_LaunchTemplateSpecificationOverrides]
   }

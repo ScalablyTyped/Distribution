@@ -34,18 +34,8 @@ object DockerVersion {
     Platform: dockerodeLib.Anon_Name,
     Version: java.lang.String
   ): DockerVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ApiVersion")(ApiVersion)
-    __obj.updateDynamic("Arch")(Arch)
-    __obj.updateDynamic("BuildTime")(BuildTime)
-    __obj.updateDynamic("Components")(Components)
-    __obj.updateDynamic("GitCommit")(GitCommit)
-    __obj.updateDynamic("GoVersion")(GoVersion)
-    __obj.updateDynamic("KernelVersion")(KernelVersion)
-    __obj.updateDynamic("MinAPIVersion")(MinAPIVersion)
-    __obj.updateDynamic("Os")(Os)
-    __obj.updateDynamic("Platform")(Platform)
-    __obj.updateDynamic("Version")(Version)
+    val __obj = js.Dynamic.literal(ApiVersion = ApiVersion, Arch = Arch, BuildTime = BuildTime, Components = Components, GitCommit = GitCommit, GoVersion = GoVersion, KernelVersion = KernelVersion, MinAPIVersion = MinAPIVersion, Os = Os, Platform = Platform, Version = Version)
+  
     __obj.asInstanceOf[DockerVersion]
   }
 }

@@ -9,7 +9,7 @@ trait DecorateRequestOptions
   extends requestLib.requestMod.requestNs.CoreOptions {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var autoPaginateVal: js.UndefOr[scala.Boolean] = js.undefined
-  var `interceptors_`: js.UndefOr[js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor]] = js.undefined
+  var interceptors_ : js.UndefOr[js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor]] = js.undefined
   var maxRetries: js.UndefOr[scala.Double] = js.undefined
   var objectMode: js.UndefOr[scala.Boolean] = js.undefined
   var shouldReturnStream: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,7 +45,7 @@ object DecorateRequestOptions {
     hawk: requestLib.requestMod.requestNs.HawkOptions = null,
     headers: requestLib.requestMod.requestNs.Headers = null,
     host: java.lang.String = null,
-    `interceptors_`: js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor] = null,
+    interceptors_ : js.Array[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Interceptor] = null,
     jar: requestLib.requestMod.requestNs.CookieJar | scala.Boolean = null,
     json: js.Any = null,
     jsonReplacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _] = null,
@@ -77,8 +77,7 @@ object DecorateRequestOptions {
     useQuerystring: js.UndefOr[scala.Boolean] = js.undefined,
     withCredentials: js.UndefOr[scala.Boolean] = js.undefined
   ): DecorateRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
     if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (agentClass != null) __obj.updateDynamic("agentClass")(agentClass)
     if (agentOptions != null) __obj.updateDynamic("agentOptions")(agentOptions.asInstanceOf[js.Any])
@@ -104,7 +103,7 @@ object DecorateRequestOptions {
     if (hawk != null) __obj.updateDynamic("hawk")(hawk)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (host != null) __obj.updateDynamic("host")(host)
-    if (`interceptors_` != null) __obj.updateDynamic("interceptors_")(`interceptors_`)
+    if (interceptors_ != null) __obj.updateDynamic("interceptors_")(interceptors_)
     if (jar != null) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     if (json != null) __obj.updateDynamic("json")(json)
     if (jsonReplacer != null) __obj.updateDynamic("jsonReplacer")(jsonReplacer)

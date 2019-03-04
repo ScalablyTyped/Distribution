@@ -12,8 +12,8 @@ trait CreateIndexOptions extends js.Object {
 object CreateIndexOptions {
   @scala.inline
   def apply(index: pouchdbDashFindLib.Anon_Ddoc): CreateIndexOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
+  
     __obj.asInstanceOf[CreateIndexOptions]
   }
 }

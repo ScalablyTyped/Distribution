@@ -22,12 +22,8 @@ object Anon_CerData {
     production: scala.Boolean,
     pushOptions: Anon_Gateway
   ): Anon_CerData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cerData")(cerData)
-    __obj.updateDynamic("feedBackOptions")(feedBackOptions)
-    __obj.updateDynamic("keyData")(keyData)
-    __obj.updateDynamic("production")(production)
-    __obj.updateDynamic("pushOptions")(pushOptions)
+    val __obj = js.Dynamic.literal(cerData = cerData, feedBackOptions = feedBackOptions, keyData = keyData, production = production, pushOptions = pushOptions)
+  
     __obj.asInstanceOf[Anon_CerData]
   }
 }

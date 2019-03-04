@@ -18,10 +18,8 @@ object Anon_ForegroundColor {
     foregroundColor: SketchMSKeyValueArchive,
     paragraphStyle: Anon_AllowsDefaultTighteningForTruncation
   ): Anon_ForegroundColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MSAttributedStringFontAttribute")(MSAttributedStringFontAttribute)
-    __obj.updateDynamic("foregroundColor")(foregroundColor)
-    __obj.updateDynamic("paragraphStyle")(paragraphStyle)
+    val __obj = js.Dynamic.literal(MSAttributedStringFontAttribute = MSAttributedStringFontAttribute, foregroundColor = foregroundColor, paragraphStyle = paragraphStyle)
+  
     __obj.asInstanceOf[Anon_ForegroundColor]
   }
 }

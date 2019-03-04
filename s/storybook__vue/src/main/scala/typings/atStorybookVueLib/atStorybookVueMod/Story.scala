@@ -18,10 +18,8 @@ object Story {
     addDecorator: js.Function1[StoryDecorator, Story],
     kind: java.lang.String
   ): Story = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("addDecorator")(addDecorator)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(add = add, addDecorator = addDecorator, kind = kind)
+  
     __obj.asInstanceOf[Story]
   }
 }

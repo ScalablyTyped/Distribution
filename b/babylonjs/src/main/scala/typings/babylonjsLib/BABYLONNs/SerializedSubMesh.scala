@@ -33,17 +33,8 @@ object SerializedSubMesh {
     verticesCount: scala.Double,
     verticesStart: scala.Double
   ): SerializedSubMesh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("boxMaximum")(boxMaximum)
-    __obj.updateDynamic("boxMinimum")(boxMinimum)
-    __obj.updateDynamic("hasMaterial")(hasMaterial)
-    __obj.updateDynamic("indexCount")(indexCount)
-    __obj.updateDynamic("indexStart")(indexStart)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("sphereCenter")(sphereCenter)
-    __obj.updateDynamic("sphereRadius")(sphereRadius)
-    __obj.updateDynamic("verticesCount")(verticesCount)
-    __obj.updateDynamic("verticesStart")(verticesStart)
+    val __obj = js.Dynamic.literal(boxMaximum = boxMaximum, boxMinimum = boxMinimum, hasMaterial = hasMaterial, indexCount = indexCount, indexStart = indexStart, position = position, sphereCenter = sphereCenter, sphereRadius = sphereRadius, verticesCount = verticesCount, verticesStart = verticesStart)
+  
     __obj.asInstanceOf[SerializedSubMesh]
   }
 }

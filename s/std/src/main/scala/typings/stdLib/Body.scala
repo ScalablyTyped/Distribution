@@ -26,13 +26,7 @@ object Body {
     text: js.Function0[js.Promise[java.lang.String]],
     body: ReadableStream[Uint8Array] = null
   ): Body = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrayBuffer")(arrayBuffer)
-    __obj.updateDynamic("blob")(blob)
-    __obj.updateDynamic("bodyUsed")(bodyUsed)
-    __obj.updateDynamic("formData")(formData)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(arrayBuffer = arrayBuffer, blob = blob, bodyUsed = bodyUsed, formData = formData, json = json, text = text)
     if (body != null) __obj.updateDynamic("body")(body)
     __obj.asInstanceOf[Body]
   }

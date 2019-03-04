@@ -17,11 +17,8 @@ object ICachedFileUpdaterActivatedEventArgs {
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
   ): ICachedFileUpdaterActivatedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cachedFileUpdaterUI")(cachedFileUpdaterUI)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("previousExecutionState")(previousExecutionState)
-    __obj.updateDynamic("splashScreen")(splashScreen)
+    val __obj = js.Dynamic.literal(cachedFileUpdaterUI = cachedFileUpdaterUI, kind = kind, previousExecutionState = previousExecutionState, splashScreen = splashScreen)
+  
     __obj.asInstanceOf[ICachedFileUpdaterActivatedEventArgs]
   }
 }

@@ -33,10 +33,8 @@ object UndoManagerEvent {
     UndoActionTitle: java.lang.String,
     UndoContextDepth: scala.Double
   ): UndoManagerEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("UndoActionTitle")(UndoActionTitle)
-    __obj.updateDynamic("UndoContextDepth")(UndoContextDepth)
+    val __obj = js.Dynamic.literal(Source = Source, UndoActionTitle = UndoActionTitle, UndoContextDepth = UndoContextDepth)
+  
     __obj.asInstanceOf[UndoManagerEvent]
   }
 }

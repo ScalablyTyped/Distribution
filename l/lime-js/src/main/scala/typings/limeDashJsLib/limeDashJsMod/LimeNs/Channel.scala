@@ -38,20 +38,8 @@ object Channel {
     state: java.lang.String,
     transport: Transport
   ): Channel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("localNode")(localNode)
-    __obj.updateDynamic("onCommand")(onCommand)
-    __obj.updateDynamic("onMessage")(onMessage)
-    __obj.updateDynamic("onNotification")(onNotification)
-    __obj.updateDynamic("onSession")(onSession)
-    __obj.updateDynamic("remoteNode")(remoteNode)
-    __obj.updateDynamic("sendCommand")(sendCommand)
-    __obj.updateDynamic("sendMessage")(sendMessage)
-    __obj.updateDynamic("sendNotification")(sendNotification)
-    __obj.updateDynamic("sendSession")(sendSession)
-    __obj.updateDynamic("sessionId")(sessionId)
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("transport")(transport)
+    val __obj = js.Dynamic.literal(localNode = localNode, onCommand = onCommand, onMessage = onMessage, onNotification = onNotification, onSession = onSession, remoteNode = remoteNode, sendCommand = sendCommand, sendMessage = sendMessage, sendNotification = sendNotification, sendSession = sendSession, sessionId = sessionId, state = state, transport = transport)
+  
     __obj.asInstanceOf[Channel]
   }
 }

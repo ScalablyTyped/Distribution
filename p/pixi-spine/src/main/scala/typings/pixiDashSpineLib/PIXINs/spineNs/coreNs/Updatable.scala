@@ -12,8 +12,8 @@ trait Updatable extends js.Object {
 object Updatable {
   @scala.inline
   def apply(update: js.Function0[scala.Unit]): Updatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(update = update)
+  
     __obj.asInstanceOf[Updatable]
   }
 }

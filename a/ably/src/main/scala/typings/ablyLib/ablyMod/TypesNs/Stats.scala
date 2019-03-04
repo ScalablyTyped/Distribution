@@ -30,16 +30,8 @@ object Stats {
     persisted: StatsMessageTypes,
     tokenRequests: StatsRequestCount
   ): Stats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("apiRequests")(apiRequests)
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("connections")(connections)
-    __obj.updateDynamic("inbound")(inbound)
-    __obj.updateDynamic("intervalId")(intervalId)
-    __obj.updateDynamic("outbound")(outbound)
-    __obj.updateDynamic("persisted")(persisted)
-    __obj.updateDynamic("tokenRequests")(tokenRequests)
+    val __obj = js.Dynamic.literal(all = all, apiRequests = apiRequests, channels = channels, connections = connections, inbound = inbound, intervalId = intervalId, outbound = outbound, persisted = persisted, tokenRequests = tokenRequests)
+  
     __obj.asInstanceOf[Stats]
   }
 }

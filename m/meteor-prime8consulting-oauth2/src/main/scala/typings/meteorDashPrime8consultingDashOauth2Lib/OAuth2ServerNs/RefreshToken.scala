@@ -20,11 +20,8 @@ object RefreshToken {
     refreshToken: java.lang.String,
     userId: java.lang.String
   ): RefreshToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("expires")(expires)
-    __obj.updateDynamic("refreshToken")(refreshToken)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(clientId = clientId, expires = expires, refreshToken = refreshToken, userId = userId)
+  
     __obj.asInstanceOf[RefreshToken]
   }
 }

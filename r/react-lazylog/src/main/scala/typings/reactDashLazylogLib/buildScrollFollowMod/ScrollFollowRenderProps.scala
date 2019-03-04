@@ -20,11 +20,8 @@ object ScrollFollowRenderProps {
     startFollowing: js.Function0[scala.Unit],
     stopFollowing: js.Function0[scala.Unit]
   ): ScrollFollowRenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("follow")(follow)
-    __obj.updateDynamic("onScroll")(onScroll)
-    __obj.updateDynamic("startFollowing")(startFollowing)
-    __obj.updateDynamic("stopFollowing")(stopFollowing)
+    val __obj = js.Dynamic.literal(follow = follow, onScroll = onScroll, startFollowing = startFollowing, stopFollowing = stopFollowing)
+  
     __obj.asInstanceOf[ScrollFollowRenderProps]
   }
 }

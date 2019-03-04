@@ -18,10 +18,8 @@ object ISurveyImpl {
     getSurvey: js.Function0[ISurvey],
     getTextProcessor: js.Function0[ITextProcessor]
   ): ISurveyImpl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geSurveyData")(geSurveyData)
-    __obj.updateDynamic("getSurvey")(getSurvey)
-    __obj.updateDynamic("getTextProcessor")(getTextProcessor)
+    val __obj = js.Dynamic.literal(geSurveyData = geSurveyData, getSurvey = getSurvey, getTextProcessor = getTextProcessor)
+  
     __obj.asInstanceOf[ISurveyImpl]
   }
 }

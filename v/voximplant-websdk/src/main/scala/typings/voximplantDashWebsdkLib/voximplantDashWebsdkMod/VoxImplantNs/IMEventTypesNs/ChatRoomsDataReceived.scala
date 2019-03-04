@@ -19,8 +19,8 @@ trait ChatRoomsDataReceived
 object ChatRoomsDataReceived {
   @scala.inline
   def apply(rooms: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatRoom]): ChatRoomsDataReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rooms")(rooms)
+    val __obj = js.Dynamic.literal(rooms = rooms)
+  
     __obj.asInstanceOf[ChatRoomsDataReceived]
   }
 }

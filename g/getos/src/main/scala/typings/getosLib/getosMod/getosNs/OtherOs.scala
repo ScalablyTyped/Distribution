@@ -14,8 +14,8 @@ object OtherOs {
   def apply(
     os: getosLib.getosLibStrings.aix | getosLib.getosLibStrings.android | getosLib.getosLibStrings.darwin | getosLib.getosLibStrings.freebsd | getosLib.getosLibStrings.openbsd | getosLib.getosLibStrings.sunos | getosLib.getosLibStrings.win32 | getosLib.getosLibStrings.cygwin
   ): OtherOs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(os = os.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[OtherOs]
   }
 }

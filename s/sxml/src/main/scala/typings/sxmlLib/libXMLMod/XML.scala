@@ -42,15 +42,15 @@ class XML ()
   /**
     * @hidden
     */
-  var `property_map_`: js.Any = js.native
+  var property_map_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `tag_`: js.Any = js.native
+  var tag_ : js.Any = js.native
   /**
     * @hidden
     */
-  var `value_`: js.Any = js.native
+  var value_ : js.Any = js.native
   def eraseProperty(key: java.lang.String): scala.Unit = js.native
   def findProperty(key: java.lang.String): tstlLib.containerHashMapMod.HashMapNs.Iterator[java.lang.String, java.lang.String] = js.native
   def getProperty(key: java.lang.String): java.lang.String = js.native

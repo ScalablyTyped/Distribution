@@ -34,8 +34,7 @@ object Anon_InBackground {
     onPageShow: js.Function1[/* tab */ jpmLib.FFAddonSDKNs.Tab, _] = null,
     onReady: js.Function1[/* tab */ jpmLib.FFAddonSDKNs.Tab, _] = null
   ): Anon_InBackground = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (!js.isUndefined(inBackground)) __obj.updateDynamic("inBackground")(inBackground)
     if (!js.isUndefined(inNewWindow)) __obj.updateDynamic("inNewWindow")(inNewWindow)
     if (!js.isUndefined(isPinned)) __obj.updateDynamic("isPinned")(isPinned)

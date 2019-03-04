@@ -18,10 +18,8 @@ object ChangesResponse {
     results: js.Array[ChangesResponseChange[Content]],
     status: java.lang.String
   ): ChangesResponse[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("last_seq")(last_seq.asInstanceOf[js.Any])
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(last_seq = last_seq.asInstanceOf[js.Any], results = results, status = status)
+  
     __obj.asInstanceOf[ChangesResponse[Content]]
   }
 }

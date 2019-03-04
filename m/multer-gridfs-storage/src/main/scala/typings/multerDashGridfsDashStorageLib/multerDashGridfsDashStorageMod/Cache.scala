@@ -38,20 +38,8 @@ object Cache {
     set: js.Function2[js.Object, js.Object, scala.Unit],
     waitFor: js.Function1[js.Object, js.Promise[js.Object]]
   ): Cache = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("connections")(connections)
-    __obj.updateDynamic("findUri")(findUri)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("isOpening")(isOpening)
-    __obj.updateDynamic("isPending")(isPending)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("resolve")(resolve)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("waitFor")(waitFor)
+    val __obj = js.Dynamic.literal(clear = clear, connections = connections, findUri = findUri, get = get, has = has, initialize = initialize, isOpening = isOpening, isPending = isPending, reject = reject, remove = remove, resolve = resolve, set = set, waitFor = waitFor)
+  
     __obj.asInstanceOf[Cache]
   }
 }

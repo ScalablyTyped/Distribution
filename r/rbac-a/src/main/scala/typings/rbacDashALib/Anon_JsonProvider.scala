@@ -13,8 +13,8 @@ trait Anon_JsonProvider extends js.Object {
 object Anon_JsonProvider {
   @scala.inline
   def apply(JsonProvider: Anon_Roles): Anon_JsonProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("JsonProvider")(JsonProvider)
+    val __obj = js.Dynamic.literal(JsonProvider = JsonProvider)
+  
     __obj.asInstanceOf[Anon_JsonProvider]
   }
 }

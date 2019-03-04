@@ -22,8 +22,8 @@ object OperationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): OperationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
+    val __obj = js.Dynamic.literal(get = get)
+  
     __obj.asInstanceOf[OperationsResource]
   }
 }

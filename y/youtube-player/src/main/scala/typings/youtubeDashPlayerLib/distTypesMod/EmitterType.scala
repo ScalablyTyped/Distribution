@@ -12,8 +12,8 @@ trait EmitterType extends js.Object {
 object EmitterType {
   @scala.inline
   def apply(trigger: js.Function2[java.lang.String, js.Object, scala.Unit]): EmitterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("trigger")(trigger)
+    val __obj = js.Dynamic.literal(trigger = trigger)
+  
     __obj.asInstanceOf[EmitterType]
   }
 }

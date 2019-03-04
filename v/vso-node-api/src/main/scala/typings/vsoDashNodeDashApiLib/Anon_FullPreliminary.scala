@@ -13,9 +13,8 @@ trait Anon_FullPreliminary extends js.Object {
 object Anon_FullPreliminary {
   @scala.inline
   def apply(full: scala.Double, preliminary: scala.Double): Anon_FullPreliminary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("full")(full)
-    __obj.updateDynamic("preliminary")(preliminary)
+    val __obj = js.Dynamic.literal(full = full, preliminary = preliminary)
+  
     __obj.asInstanceOf[Anon_FullPreliminary]
   }
 }

@@ -19,10 +19,7 @@ object MapMarkerCreatedEvent {
     layer: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null,
     marker: kendoDashUiLib.kendoNs.datavizNs.mapNs.Marker = null
   ): MapMarkerCreatedEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (marker != null) __obj.updateDynamic("marker")(marker)
     __obj.asInstanceOf[MapMarkerCreatedEvent]

@@ -65,8 +65,8 @@ trait VisualVariablesRenderer extends js.Object {
 object VisualVariablesRenderer {
   @scala.inline
   def apply(visualVariables: js.Array[VisualVariable]): VisualVariablesRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("visualVariables")(visualVariables)
+    val __obj = js.Dynamic.literal(visualVariables = visualVariables)
+  
     __obj.asInstanceOf[VisualVariablesRenderer]
   }
 }

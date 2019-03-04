@@ -42,14 +42,8 @@ object XPane {
     getWindow: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
     isAnchorOnly: js.Function0[scala.Boolean]
   ): XPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Canvas")(Canvas)
-    __obj.updateDynamic("ResourceId")(ResourceId)
-    __obj.updateDynamic("Window")(Window)
-    __obj.updateDynamic("getCanvas")(getCanvas)
-    __obj.updateDynamic("getResourceId")(getResourceId)
-    __obj.updateDynamic("getWindow")(getWindow)
-    __obj.updateDynamic("isAnchorOnly")(isAnchorOnly)
+    val __obj = js.Dynamic.literal(Canvas = Canvas, ResourceId = ResourceId, Window = Window, getCanvas = getCanvas, getResourceId = getResourceId, getWindow = getWindow, isAnchorOnly = isAnchorOnly)
+  
     __obj.asInstanceOf[XPane]
   }
 }

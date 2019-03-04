@@ -20,11 +20,8 @@ object RetryStrategyOptions {
     times_connected: scala.Double,
     total_retry_time: scala.Double
   ): RetryStrategyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attempt")(attempt)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("times_connected")(times_connected)
-    __obj.updateDynamic("total_retry_time")(total_retry_time)
+    val __obj = js.Dynamic.literal(attempt = attempt, error = error, times_connected = times_connected, total_retry_time = total_retry_time)
+  
     __obj.asInstanceOf[RetryStrategyOptions]
   }
 }

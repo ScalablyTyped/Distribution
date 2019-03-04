@@ -56,9 +56,7 @@ object GatewayArgs {
     smbGuestPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tapeDriveType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): GatewayArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gatewayName")(gatewayName.asInstanceOf[js.Any])
-    __obj.updateDynamic("gatewayTimezone")(gatewayTimezone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gatewayName = gatewayName.asInstanceOf[js.Any], gatewayTimezone = gatewayTimezone.asInstanceOf[js.Any])
     if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
     if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
     if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])

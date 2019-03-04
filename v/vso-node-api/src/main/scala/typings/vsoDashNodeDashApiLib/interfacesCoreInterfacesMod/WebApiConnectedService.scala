@@ -44,15 +44,8 @@ object WebApiConnectedService {
     serviceUri: java.lang.String,
     url: java.lang.String
   ): WebApiConnectedService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authenticatedBy")(authenticatedBy)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("friendlyName")(friendlyName)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("serviceUri")(serviceUri)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(authenticatedBy = authenticatedBy, description = description, friendlyName = friendlyName, id = id, kind = kind, project = project, serviceUri = serviceUri, url = url)
+  
     __obj.asInstanceOf[WebApiConnectedService]
   }
 }

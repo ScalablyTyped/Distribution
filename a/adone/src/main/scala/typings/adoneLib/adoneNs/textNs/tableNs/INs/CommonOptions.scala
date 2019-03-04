@@ -32,13 +32,8 @@ object CommonOptions {
     rowHeights: js.Array[scala.Double],
     truncate: java.lang.String
   ): CommonOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("colAligns")(colAligns)
-    __obj.updateDynamic("colWidths")(colWidths)
-    __obj.updateDynamic("head")(head)
-    __obj.updateDynamic("rowAligns")(rowAligns)
-    __obj.updateDynamic("rowHeights")(rowHeights)
-    __obj.updateDynamic("truncate")(truncate)
+    val __obj = js.Dynamic.literal(colAligns = colAligns, colWidths = colWidths, head = head, rowAligns = rowAligns, rowHeights = rowHeights, truncate = truncate)
+  
     __obj.asInstanceOf[CommonOptions]
   }
 }

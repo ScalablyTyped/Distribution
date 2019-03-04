@@ -16,9 +16,8 @@ object Anon_ResourceArnRoleArn {
     resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_ResourceArnRoleArn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_ResourceArnRoleArn]
   }
 }

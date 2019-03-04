@@ -20,11 +20,8 @@ object ISurveyTriggerOwner {
     setCompleted: js.Function0[js.Any],
     setTriggerValue: js.Function3[java.lang.String, js.Any, scala.Boolean, js.Any]
   ): ISurveyTriggerOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copyTriggerValue")(copyTriggerValue)
-    __obj.updateDynamic("getObjects")(getObjects)
-    __obj.updateDynamic("setCompleted")(setCompleted)
-    __obj.updateDynamic("setTriggerValue")(setTriggerValue)
+    val __obj = js.Dynamic.literal(copyTriggerValue = copyTriggerValue, getObjects = getObjects, setCompleted = setCompleted, setTriggerValue = setTriggerValue)
+  
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }
 }

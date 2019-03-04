@@ -34,10 +34,7 @@ object Anon_DistanceModel {
     velocity: playcanvasLib.pcNs.Vec3 = null,
     volume: scala.Int | scala.Double = null
   ): Anon_DistanceModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxDistance")(maxDistance)
-    __obj.updateDynamic("refDistance")(refDistance)
-    __obj.updateDynamic("rollOffFactor")(rollOffFactor)
+    val __obj = js.Dynamic.literal(maxDistance = maxDistance, refDistance = refDistance, rollOffFactor = rollOffFactor)
     if (distanceModel != null) __obj.updateDynamic("distanceModel")(distanceModel)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)

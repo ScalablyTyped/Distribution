@@ -30,16 +30,8 @@ object Metadata {
     palette: scala.Boolean,
     width: scala.Double
   ): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alpha")(alpha)
-    __obj.updateDynamic("bpp")(bpp.asInstanceOf[js.Any])
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("colorType")(colorType)
-    __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("interlace")(interlace)
-    __obj.updateDynamic("palette")(palette)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(alpha = alpha, bpp = bpp.asInstanceOf[js.Any], color = color, colorType = colorType, depth = depth.asInstanceOf[js.Any], height = height, interlace = interlace, palette = palette, width = width)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

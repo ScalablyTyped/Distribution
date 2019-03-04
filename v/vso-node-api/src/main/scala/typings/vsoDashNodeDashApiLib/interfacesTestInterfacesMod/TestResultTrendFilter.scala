@@ -28,15 +28,8 @@ object TestResultTrendFilter {
     testRunTitles: js.Array[java.lang.String],
     trendDays: scala.Double
   ): TestResultTrendFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("branchNames")(branchNames)
-    __obj.updateDynamic("buildCount")(buildCount)
-    __obj.updateDynamic("definitionIds")(definitionIds)
-    __obj.updateDynamic("envDefinitionIds")(envDefinitionIds)
-    __obj.updateDynamic("maxCompleteDate")(maxCompleteDate)
-    __obj.updateDynamic("publishContext")(publishContext)
-    __obj.updateDynamic("testRunTitles")(testRunTitles)
-    __obj.updateDynamic("trendDays")(trendDays)
+    val __obj = js.Dynamic.literal(branchNames = branchNames, buildCount = buildCount, definitionIds = definitionIds, envDefinitionIds = envDefinitionIds, maxCompleteDate = maxCompleteDate, publishContext = publishContext, testRunTitles = testRunTitles, trendDays = trendDays)
+  
     __obj.asInstanceOf[TestResultTrendFilter]
   }
 }

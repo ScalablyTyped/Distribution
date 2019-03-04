@@ -23,10 +23,8 @@ trait BoardReference extends js.Object {
 object BoardReference {
   @scala.inline
   def apply(id: java.lang.String, name: java.lang.String, url: java.lang.String): BoardReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(id = id, name = name, url = url)
+  
     __obj.asInstanceOf[BoardReference]
   }
 }

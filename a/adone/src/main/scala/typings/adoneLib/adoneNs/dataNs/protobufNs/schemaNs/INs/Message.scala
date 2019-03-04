@@ -24,11 +24,8 @@ object Message {
     name: java.lang.String,
     extensions: adoneLib.Anon_FromTo = null
   ): Message = {
-    val __obj = js.Dynamic.literal(`extends` = `extends`)
-    __obj.updateDynamic("enums")(enums)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(enums = enums, fields = fields, messages = messages, name = name)
+    __obj.updateDynamic("extends")(`extends`)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
     __obj.asInstanceOf[Message]
   }

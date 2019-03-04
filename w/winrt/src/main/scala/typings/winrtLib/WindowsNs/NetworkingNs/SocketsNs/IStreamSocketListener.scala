@@ -28,13 +28,8 @@ object IStreamSocketListener {
     information: StreamSocketListenerInformation,
     onconnectionreceived: js.Any
   ): IStreamSocketListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bindEndpointAsync")(bindEndpointAsync)
-    __obj.updateDynamic("bindServiceNameAsync")(bindServiceNameAsync)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("control")(control)
-    __obj.updateDynamic("information")(information)
-    __obj.updateDynamic("onconnectionreceived")(onconnectionreceived)
+    val __obj = js.Dynamic.literal(bindEndpointAsync = bindEndpointAsync, bindServiceNameAsync = bindServiceNameAsync, close = close, control = control, information = information, onconnectionreceived = onconnectionreceived)
+  
     __obj.asInstanceOf[IStreamSocketListener]
   }
 }

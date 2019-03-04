@@ -25,11 +25,8 @@ object TableFilterField3 {
     Operator: scala.Double,
     Values: activexDashInteropLib.SafeArray[FilterFieldValue]
   ): TableFilterField3 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Connection")(Connection)
-    __obj.updateDynamic("Field")(Field)
-    __obj.updateDynamic("Operator")(Operator)
-    __obj.updateDynamic("Values")(Values)
+    val __obj = js.Dynamic.literal(Connection = Connection, Field = Field, Operator = Operator, Values = Values)
+  
     __obj.asInstanceOf[TableFilterField3]
   }
 }

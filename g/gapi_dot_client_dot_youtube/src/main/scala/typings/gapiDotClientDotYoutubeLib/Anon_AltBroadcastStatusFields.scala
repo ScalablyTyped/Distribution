@@ -76,10 +76,7 @@ object Anon_AltBroadcastStatusFields {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltBroadcastStatusFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("broadcastStatus")(broadcastStatus)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(broadcastStatus = broadcastStatus, id = id, part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

@@ -32,19 +32,8 @@ object CampaignDisplay {
     placements: js.Function0[AdWordsSelector[Placement]],
     topics: js.Function0[AdWordsSelector[Topic]]
   ): CampaignDisplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audiences")(audiences)
-    __obj.updateDynamic("excludedAudiences")(excludedAudiences)
-    __obj.updateDynamic("excludedKeywords")(excludedKeywords)
-    __obj.updateDynamic("excludedPlacements")(excludedPlacements)
-    __obj.updateDynamic("excludedTopics")(excludedTopics)
-    __obj.updateDynamic("keywords")(keywords)
-    __obj.updateDynamic("newAudienceBuilder")(newAudienceBuilder)
-    __obj.updateDynamic("newKeywordBuilder")(newKeywordBuilder)
-    __obj.updateDynamic("newPlacementBuilder")(newPlacementBuilder)
-    __obj.updateDynamic("newTopicBuilder")(newTopicBuilder)
-    __obj.updateDynamic("placements")(placements)
-    __obj.updateDynamic("topics")(topics)
+    val __obj = js.Dynamic.literal(audiences = audiences, excludedAudiences = excludedAudiences, excludedKeywords = excludedKeywords, excludedPlacements = excludedPlacements, excludedTopics = excludedTopics, keywords = keywords, newAudienceBuilder = newAudienceBuilder, newKeywordBuilder = newKeywordBuilder, newPlacementBuilder = newPlacementBuilder, newTopicBuilder = newTopicBuilder, placements = placements, topics = topics)
+  
     __obj.asInstanceOf[CampaignDisplay]
   }
 }

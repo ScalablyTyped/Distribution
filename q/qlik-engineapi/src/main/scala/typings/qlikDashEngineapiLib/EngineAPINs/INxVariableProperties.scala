@@ -44,12 +44,8 @@ object INxVariableProperties {
     qPreDefinedList: js.Array[java.lang.String],
     qUsePredefListedValues: scala.Boolean
   ): INxVariableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qIncludeInBookmark")(qIncludeInBookmark)
-    __obj.updateDynamic("qName")(qName)
-    __obj.updateDynamic("qNumberPresentation")(qNumberPresentation)
-    __obj.updateDynamic("qPreDefinedList")(qPreDefinedList)
-    __obj.updateDynamic("qUsePredefListedValues")(qUsePredefListedValues)
+    val __obj = js.Dynamic.literal(qIncludeInBookmark = qIncludeInBookmark, qName = qName, qNumberPresentation = qNumberPresentation, qPreDefinedList = qPreDefinedList, qUsePredefListedValues = qUsePredefListedValues)
+  
     __obj.asInstanceOf[INxVariableProperties]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Super[Base] extends js.Object {
 object Anon_Super {
   @scala.inline
   def apply[Base](_super: coreDashObjectLib.dashPrivateUtilsMod.Super[Base]): Anon_Super[Base] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_super")(_super)
+    val __obj = js.Dynamic.literal(_super = _super)
+  
     __obj.asInstanceOf[Anon_Super[Base]]
   }
 }

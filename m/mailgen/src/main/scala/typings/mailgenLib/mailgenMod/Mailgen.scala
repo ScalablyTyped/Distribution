@@ -23,11 +23,8 @@ object Mailgen {
     generatePlaintext: js.Function1[mailgenLib.mailgenMod.MailgenNs.Content, js.Any],
     parseParams: js.Function1[js.Any, js.Any]
   ): Mailgen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cacheThemes")(cacheThemes)
-    __obj.updateDynamic("generate")(generate)
-    __obj.updateDynamic("generatePlaintext")(generatePlaintext)
-    __obj.updateDynamic("parseParams")(parseParams)
+    val __obj = js.Dynamic.literal(cacheThemes = cacheThemes, generate = generate, generatePlaintext = generatePlaintext, parseParams = parseParams)
+  
     __obj.asInstanceOf[Mailgen]
   }
 }

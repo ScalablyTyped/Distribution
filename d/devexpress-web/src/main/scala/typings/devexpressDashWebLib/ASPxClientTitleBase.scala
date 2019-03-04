@@ -34,11 +34,8 @@ object ASPxClientTitleBase {
     dock: java.lang.String,
     lines: js.Array[java.lang.String]
   ): ASPxClientTitleBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dock")(dock)
-    __obj.updateDynamic("lines")(lines)
+    val __obj = js.Dynamic.literal(alignment = alignment, chart = chart, dock = dock, lines = lines)
+  
     __obj.asInstanceOf[ASPxClientTitleBase]
   }
 }

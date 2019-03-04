@@ -50,12 +50,8 @@ object Toleration {
     tolerationSeconds: scala.Double,
     value: java.lang.String
   ): Toleration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("effect")(effect)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("tolerationSeconds")(tolerationSeconds)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(effect = effect, key = key, operator = operator, tolerationSeconds = tolerationSeconds, value = value)
+  
     __obj.asInstanceOf[Toleration]
   }
 }

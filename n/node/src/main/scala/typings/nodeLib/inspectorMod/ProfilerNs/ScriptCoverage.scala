@@ -30,10 +30,8 @@ object ScriptCoverage {
     scriptId: nodeLib.inspectorMod.RuntimeNs.ScriptId,
     url: java.lang.String
   ): ScriptCoverage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functions")(functions)
-    __obj.updateDynamic("scriptId")(scriptId)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(functions = functions, scriptId = scriptId, url = url)
+  
     __obj.asInstanceOf[ScriptCoverage]
   }
 }

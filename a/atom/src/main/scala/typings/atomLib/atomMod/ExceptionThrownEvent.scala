@@ -22,12 +22,8 @@ object ExceptionThrownEvent {
     originalError: nodeLib.Error,
     url: java.lang.String
   ): ExceptionThrownEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("originalError")(originalError)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(column = column, line = line, message = message, originalError = originalError, url = url)
+  
     __obj.asInstanceOf[ExceptionThrownEvent]
   }
 }

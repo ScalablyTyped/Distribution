@@ -36,9 +36,8 @@ object PowScale {
     round: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     zero: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
   ): PowScale = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], name = name)
+    __obj.updateDynamic("type")(`type`)
     if (bins != null) __obj.updateDynamic("bins")(bins.asInstanceOf[js.Any])
     if (clamp != null) __obj.updateDynamic("clamp")(clamp.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])

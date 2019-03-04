@@ -21,11 +21,8 @@ object Tooltip {
     show: js.Function0[scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): Tooltip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(destroy = destroy, hide = hide, show = show, toggle = toggle)
+  
     __obj.asInstanceOf[Tooltip]
   }
 }

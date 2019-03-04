@@ -14,10 +14,8 @@ trait Anon_Fd extends js.Object {
 object Anon_Fd {
   @scala.inline
   def apply(fd: scala.Double, pid: scala.Double, pty: java.lang.String): Anon_Fd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fd")(fd)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("pty")(pty)
+    val __obj = js.Dynamic.literal(fd = fd, pid = pid, pty = pty)
+  
     __obj.asInstanceOf[Anon_Fd]
   }
 }

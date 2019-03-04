@@ -22,8 +22,7 @@ object EvaluateOnCallFrameReturnType {
     result: nodeLib.inspectorMod.RuntimeNs.RemoteObject,
     exceptionDetails: nodeLib.inspectorMod.RuntimeNs.ExceptionDetails = null
   ): EvaluateOnCallFrameReturnType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
     if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
     __obj.asInstanceOf[EvaluateOnCallFrameReturnType]
   }

@@ -36,9 +36,7 @@ object RowActionType {
     color: java.lang.String = null,
     identifier: java.lang.String = null
   ): RowActionType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(style = style, title = title)
     if (color != null) __obj.updateDynamic("color")(color)
     if (identifier != null) __obj.updateDynamic("identifier")(identifier)
     __obj.asInstanceOf[RowActionType]

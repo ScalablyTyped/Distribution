@@ -28,15 +28,8 @@ object DiffieHellman {
     setKey: js.Function1[PrivateKey, scala.Unit],
     setPrivateKey: js.Function1[PrivateKey, scala.Unit]
   ): DiffieHellman = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("computeSecret")(computeSecret)
-    __obj.updateDynamic("generateKey")(generateKey)
-    __obj.updateDynamic("generateKeys")(generateKeys)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("getPrivateKey")(getPrivateKey)
-    __obj.updateDynamic("getPublicKey")(getPublicKey)
-    __obj.updateDynamic("setKey")(setKey)
-    __obj.updateDynamic("setPrivateKey")(setPrivateKey)
+    val __obj = js.Dynamic.literal(computeSecret = computeSecret, generateKey = generateKey, generateKeys = generateKeys, getKey = getKey, getPrivateKey = getPrivateKey, getPublicKey = getPublicKey, setKey = setKey, setPrivateKey = setPrivateKey)
+  
     __obj.asInstanceOf[DiffieHellman]
   }
 }

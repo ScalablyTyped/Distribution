@@ -265,33 +265,8 @@ object XParameters {
       scala.Unit
     ]
   ): XParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearParameters")(clearParameters)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setArray")(setArray)
-    __obj.updateDynamic("setBinaryStream")(setBinaryStream)
-    __obj.updateDynamic("setBlob")(setBlob)
-    __obj.updateDynamic("setBoolean")(setBoolean)
-    __obj.updateDynamic("setByte")(setByte)
-    __obj.updateDynamic("setBytes")(setBytes)
-    __obj.updateDynamic("setCharacterStream")(setCharacterStream)
-    __obj.updateDynamic("setClob")(setClob)
-    __obj.updateDynamic("setDate")(setDate)
-    __obj.updateDynamic("setDouble")(setDouble)
-    __obj.updateDynamic("setFloat")(setFloat)
-    __obj.updateDynamic("setInt")(setInt)
-    __obj.updateDynamic("setLong")(setLong)
-    __obj.updateDynamic("setNull")(setNull)
-    __obj.updateDynamic("setObject")(setObject)
-    __obj.updateDynamic("setObjectNull")(setObjectNull)
-    __obj.updateDynamic("setObjectWithInfo")(setObjectWithInfo)
-    __obj.updateDynamic("setRef")(setRef)
-    __obj.updateDynamic("setShort")(setShort)
-    __obj.updateDynamic("setString")(setString)
-    __obj.updateDynamic("setTime")(setTime)
-    __obj.updateDynamic("setTimestamp")(setTimestamp)
+    val __obj = js.Dynamic.literal(acquire = acquire, clearParameters = clearParameters, queryInterface = queryInterface, release = release, setArray = setArray, setBinaryStream = setBinaryStream, setBlob = setBlob, setBoolean = setBoolean, setByte = setByte, setBytes = setBytes, setCharacterStream = setCharacterStream, setClob = setClob, setDate = setDate, setDouble = setDouble, setFloat = setFloat, setInt = setInt, setLong = setLong, setNull = setNull, setObject = setObject, setObjectNull = setObjectNull, setObjectWithInfo = setObjectWithInfo, setRef = setRef, setShort = setShort, setString = setString, setTime = setTime, setTimestamp = setTimestamp)
+  
     __obj.asInstanceOf[XParameters]
   }
 }

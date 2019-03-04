@@ -20,11 +20,8 @@ object Anon_ContentLength {
     totalRows: scala.Double,
     visibleRows: scala.Double
   ): Anon_ContentLength = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentLength")(contentLength)
-    __obj.updateDynamic("renderedRows")(renderedRows)
-    __obj.updateDynamic("totalRows")(totalRows)
-    __obj.updateDynamic("visibleRows")(visibleRows)
+    val __obj = js.Dynamic.literal(contentLength = contentLength, renderedRows = renderedRows, totalRows = totalRows, visibleRows = visibleRows)
+  
     __obj.asInstanceOf[Anon_ContentLength]
   }
 }

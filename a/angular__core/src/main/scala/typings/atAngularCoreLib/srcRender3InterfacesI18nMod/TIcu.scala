@@ -87,14 +87,8 @@ object TIcu {
     update: js.Array[I18nUpdateOpCodes],
     vars: js.Array[scala.Double]
   ): TIcu = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("cases")(cases)
-    __obj.updateDynamic("childIcus")(childIcus)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("expandoStartIndex")(expandoStartIndex)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("vars")(vars)
+    val __obj = js.Dynamic.literal(cases = cases, childIcus = childIcus, create = create, expandoStartIndex = expandoStartIndex, remove = remove, update = update, vars = vars)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TIcu]
   }
 }

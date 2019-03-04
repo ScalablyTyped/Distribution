@@ -32,13 +32,7 @@ object ECPrivateKey {
     namedCurve: java.lang.String = null,
     publicKey: pkijsLib.srcECPublicKeyMod.default = null
   ): ECPrivateKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromJSON")(fromJSON)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(fromJSON = fromJSON, fromSchema = fromSchema, privateKey = privateKey, toJSON = toJSON, toSchema = toSchema, version = version)
     if (namedCurve != null) __obj.updateDynamic("namedCurve")(namedCurve)
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey)
     __obj.asInstanceOf[ECPrivateKey]

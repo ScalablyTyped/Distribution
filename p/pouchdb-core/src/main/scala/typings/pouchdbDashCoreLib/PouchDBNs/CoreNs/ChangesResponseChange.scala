@@ -22,10 +22,7 @@ object ChangesResponseChange {
     deleted: js.UndefOr[scala.Boolean] = js.undefined,
     doc: ExistingDocument[Content with ChangesMeta] = null
   ): ChangesResponseChange[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changes")(changes)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("seq")(seq.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changes = changes, id = id, seq = seq.asInstanceOf[js.Any])
     if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangesResponseChange[Content]]

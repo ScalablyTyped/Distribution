@@ -18,10 +18,8 @@ object Anon_IdTotalacceptedrecipients {
     total_accepted_recipients: scala.Double,
     total_rejected_recipients: scala.Double
   ): Anon_IdTotalacceptedrecipients = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("total_accepted_recipients")(total_accepted_recipients)
-    __obj.updateDynamic("total_rejected_recipients")(total_rejected_recipients)
+    val __obj = js.Dynamic.literal(id = id, total_accepted_recipients = total_accepted_recipients, total_rejected_recipients = total_rejected_recipients)
+  
     __obj.asInstanceOf[Anon_IdTotalacceptedrecipients]
   }
 }

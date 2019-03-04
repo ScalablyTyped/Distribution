@@ -20,9 +20,7 @@ object Anon_ContainerName {
     elbName: java.lang.String = null,
     targetGroupArn: java.lang.String = null
   ): Anon_ContainerName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("containerName")(containerName)
-    __obj.updateDynamic("containerPort")(containerPort)
+    val __obj = js.Dynamic.literal(containerName = containerName, containerPort = containerPort)
     if (elbName != null) __obj.updateDynamic("elbName")(elbName)
     if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn)
     __obj.asInstanceOf[Anon_ContainerName]

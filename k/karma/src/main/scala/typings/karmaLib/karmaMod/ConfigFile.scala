@@ -12,8 +12,8 @@ trait ConfigFile extends js.Object {
 object ConfigFile {
   @scala.inline
   def apply(configFile: java.lang.String): ConfigFile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configFile")(configFile)
+    val __obj = js.Dynamic.literal(configFile = configFile)
+  
     __obj.asInstanceOf[ConfigFile]
   }
 }

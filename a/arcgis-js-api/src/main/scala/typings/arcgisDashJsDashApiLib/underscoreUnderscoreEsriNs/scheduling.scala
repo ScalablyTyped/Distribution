@@ -37,9 +37,8 @@ object scheduling {
     addFrameTask: js.Function1[PhaseCallbacks, FrameTaskHandle],
     schedule: js.Function1[js.Function, js.Any]
   ): scheduling = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFrameTask")(addFrameTask)
-    __obj.updateDynamic("schedule")(schedule)
+    val __obj = js.Dynamic.literal(addFrameTask = addFrameTask, schedule = schedule)
+  
     __obj.asInstanceOf[scheduling]
   }
 }

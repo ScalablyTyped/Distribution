@@ -21,8 +21,8 @@ object FunctorComposition3C1 {
       fpDashTsLib.libHKTMod.Type3[F, UF, LF, fpDashTsLib.libHKTMod.Type[G, js.Any]]
     ]
   ): FunctorComposition3C1[F, G, UF, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
+  
     __obj.asInstanceOf[FunctorComposition3C1[F, G, UF, LF]]
   }
 }

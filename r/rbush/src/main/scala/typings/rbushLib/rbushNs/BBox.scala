@@ -15,11 +15,8 @@ trait BBox extends js.Object {
 object BBox {
   @scala.inline
   def apply(maxX: scala.Double, maxY: scala.Double, minX: scala.Double, minY: scala.Double): BBox = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxX")(maxX)
-    __obj.updateDynamic("maxY")(maxY)
-    __obj.updateDynamic("minX")(minX)
-    __obj.updateDynamic("minY")(minY)
+    val __obj = js.Dynamic.literal(maxX = maxX, maxY = maxY, minX = minX, minY = minY)
+  
     __obj.asInstanceOf[BBox]
   }
 }

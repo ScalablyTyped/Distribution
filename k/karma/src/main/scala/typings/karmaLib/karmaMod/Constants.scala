@@ -42,22 +42,8 @@ object Constants {
     NO_COLOR_PATTERN: java.lang.String,
     VERSION: java.lang.String
   ): Constants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("COLOR_PATTERN")(COLOR_PATTERN)
-    __obj.updateDynamic("CONSOLE_APPENDER")(CONSOLE_APPENDER)
-    __obj.updateDynamic("DEFAULT_HOSTNAME")(DEFAULT_HOSTNAME)
-    __obj.updateDynamic("DEFAULT_LISTEN_ADDR")(DEFAULT_LISTEN_ADDR)
-    __obj.updateDynamic("DEFAULT_PORT")(DEFAULT_PORT)
-    __obj.updateDynamic("EXIT_CODE")(EXIT_CODE)
-    __obj.updateDynamic("LOG_DEBUG")(LOG_DEBUG)
-    __obj.updateDynamic("LOG_DISABLE")(LOG_DISABLE)
-    __obj.updateDynamic("LOG_ERROR")(LOG_ERROR)
-    __obj.updateDynamic("LOG_INFO")(LOG_INFO)
-    __obj.updateDynamic("LOG_LOG")(LOG_LOG)
-    __obj.updateDynamic("LOG_PRIORITIES")(LOG_PRIORITIES)
-    __obj.updateDynamic("LOG_WARN")(LOG_WARN)
-    __obj.updateDynamic("NO_COLOR_PATTERN")(NO_COLOR_PATTERN)
-    __obj.updateDynamic("VERSION")(VERSION)
+    val __obj = js.Dynamic.literal(COLOR_PATTERN = COLOR_PATTERN, CONSOLE_APPENDER = CONSOLE_APPENDER, DEFAULT_HOSTNAME = DEFAULT_HOSTNAME, DEFAULT_LISTEN_ADDR = DEFAULT_LISTEN_ADDR, DEFAULT_PORT = DEFAULT_PORT, EXIT_CODE = EXIT_CODE, LOG_DEBUG = LOG_DEBUG, LOG_DISABLE = LOG_DISABLE, LOG_ERROR = LOG_ERROR, LOG_INFO = LOG_INFO, LOG_LOG = LOG_LOG, LOG_PRIORITIES = LOG_PRIORITIES, LOG_WARN = LOG_WARN, NO_COLOR_PATTERN = NO_COLOR_PATTERN, VERSION = VERSION)
+  
     __obj.asInstanceOf[Constants]
   }
 }

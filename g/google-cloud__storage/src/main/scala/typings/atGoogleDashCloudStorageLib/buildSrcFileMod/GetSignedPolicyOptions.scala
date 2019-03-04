@@ -27,8 +27,7 @@ object GetSignedPolicyOptions {
     successRedirect: java.lang.String = null,
     successStatus: java.lang.String = null
   ): GetSignedPolicyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     if (acl != null) __obj.updateDynamic("acl")(acl)
     if (contentLengthRange != null) __obj.updateDynamic("contentLengthRange")(contentLengthRange)
     if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])

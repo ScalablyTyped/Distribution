@@ -32,9 +32,8 @@ object AlgorithmBiblioEntry {
     term: java.lang.String = null,
     title: java.lang.String = null
   ): AlgorithmBiblioEntry = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("aoid")(aoid)
-    __obj.updateDynamic("referencingIds")(referencingIds)
+    val __obj = js.Dynamic.literal(aoid = aoid, referencingIds = referencingIds)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (clauseId != null) __obj.updateDynamic("clauseId")(clauseId)
     if (id != null) __obj.updateDynamic("id")(id)

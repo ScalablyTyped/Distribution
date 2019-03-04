@@ -32,8 +32,7 @@ object DragComponentProps {
     onDrag: js.Function0[scala.Unit] = null,
     subscribeTo: js.Array[java.lang.String] = null
   ): DragComponentProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
     if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender)
     if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
     if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)

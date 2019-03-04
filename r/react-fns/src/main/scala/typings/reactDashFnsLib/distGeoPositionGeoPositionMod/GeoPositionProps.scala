@@ -18,8 +18,7 @@ object GeoPositionProps {
     coords: reactDashFnsLib.Anon_Latitude = null,
     error: stdLib.PositionError = null
   ): GeoPositionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isLoading")(isLoading)
+    val __obj = js.Dynamic.literal(isLoading = isLoading)
     if (coords != null) __obj.updateDynamic("coords")(coords)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[GeoPositionProps]

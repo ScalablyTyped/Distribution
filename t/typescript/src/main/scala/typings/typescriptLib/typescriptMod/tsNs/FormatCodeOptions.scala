@@ -50,22 +50,7 @@ object FormatCodeOptions {
     InsertSpaceBeforeFunctionParenthesis: js.UndefOr[scala.Boolean] = js.undefined,
     insertSpaceBeforeTypeAnnotation: js.UndefOr[scala.Boolean] = js.undefined
   ): FormatCodeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ConvertTabsToSpaces")(ConvertTabsToSpaces)
-    __obj.updateDynamic("IndentSize")(IndentSize)
-    __obj.updateDynamic("IndentStyle")(IndentStyle)
-    __obj.updateDynamic("InsertSpaceAfterCommaDelimiter")(InsertSpaceAfterCommaDelimiter)
-    __obj.updateDynamic("InsertSpaceAfterFunctionKeywordForAnonymousFunctions")(InsertSpaceAfterFunctionKeywordForAnonymousFunctions)
-    __obj.updateDynamic("InsertSpaceAfterKeywordsInControlFlowStatements")(InsertSpaceAfterKeywordsInControlFlowStatements)
-    __obj.updateDynamic("InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets")(InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets)
-    __obj.updateDynamic("InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis")(InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis)
-    __obj.updateDynamic("InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces")(InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces)
-    __obj.updateDynamic("InsertSpaceAfterSemicolonInForStatements")(InsertSpaceAfterSemicolonInForStatements)
-    __obj.updateDynamic("InsertSpaceBeforeAndAfterBinaryOperators")(InsertSpaceBeforeAndAfterBinaryOperators)
-    __obj.updateDynamic("NewLineCharacter")(NewLineCharacter)
-    __obj.updateDynamic("PlaceOpenBraceOnNewLineForControlBlocks")(PlaceOpenBraceOnNewLineForControlBlocks)
-    __obj.updateDynamic("PlaceOpenBraceOnNewLineForFunctions")(PlaceOpenBraceOnNewLineForFunctions)
-    __obj.updateDynamic("TabSize")(TabSize)
+    val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces, IndentSize = IndentSize, IndentStyle = IndentStyle, InsertSpaceAfterCommaDelimiter = InsertSpaceAfterCommaDelimiter, InsertSpaceAfterFunctionKeywordForAnonymousFunctions = InsertSpaceAfterFunctionKeywordForAnonymousFunctions, InsertSpaceAfterKeywordsInControlFlowStatements = InsertSpaceAfterKeywordsInControlFlowStatements, InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets = InsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets, InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis = InsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis, InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces = InsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces, InsertSpaceAfterSemicolonInForStatements = InsertSpaceAfterSemicolonInForStatements, InsertSpaceBeforeAndAfterBinaryOperators = InsertSpaceBeforeAndAfterBinaryOperators, NewLineCharacter = NewLineCharacter, PlaceOpenBraceOnNewLineForControlBlocks = PlaceOpenBraceOnNewLineForControlBlocks, PlaceOpenBraceOnNewLineForFunctions = PlaceOpenBraceOnNewLineForFunctions, TabSize = TabSize)
     if (BaseIndentSize != null) __obj.updateDynamic("BaseIndentSize")(BaseIndentSize.asInstanceOf[js.Any])
     if (!js.isUndefined(InsertSpaceAfterConstructor)) __obj.updateDynamic("InsertSpaceAfterConstructor")(InsertSpaceAfterConstructor)
     if (!js.isUndefined(InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces)) __obj.updateDynamic("InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces")(InsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces)

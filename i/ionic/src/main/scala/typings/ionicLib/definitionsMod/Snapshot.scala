@@ -24,13 +24,8 @@ object Snapshot {
     sha: java.lang.String,
     state: java.lang.String
   ): Snapshot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("note")(note)
-    __obj.updateDynamic("ref")(ref)
-    __obj.updateDynamic("sha")(sha)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(created = created, id = id, note = note, ref = ref, sha = sha, state = state)
+  
     __obj.asInstanceOf[Snapshot]
   }
 }

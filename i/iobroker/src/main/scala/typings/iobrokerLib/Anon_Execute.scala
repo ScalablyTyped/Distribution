@@ -14,10 +14,8 @@ trait Anon_Execute extends js.Object {
 object Anon_Execute {
   @scala.inline
   def apply(execute: scala.Boolean, http: scala.Boolean, sendto: scala.Boolean): Anon_Execute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("http")(http)
-    __obj.updateDynamic("sendto")(sendto)
+    val __obj = js.Dynamic.literal(execute = execute, http = http, sendto = sendto)
+  
     __obj.asInstanceOf[Anon_Execute]
   }
 }

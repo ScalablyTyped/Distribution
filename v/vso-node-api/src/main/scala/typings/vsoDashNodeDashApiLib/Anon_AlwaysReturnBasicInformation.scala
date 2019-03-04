@@ -22,12 +22,8 @@ object Anon_AlwaysReturnBasicInformation {
     includeInvalidSubscriptions: scala.Double,
     none: scala.Double
   ): Anon_AlwaysReturnBasicInformation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysReturnBasicInformation")(alwaysReturnBasicInformation)
-    __obj.updateDynamic("includeDeletedSubscriptions")(includeDeletedSubscriptions)
-    __obj.updateDynamic("includeFilterDetails")(includeFilterDetails)
-    __obj.updateDynamic("includeInvalidSubscriptions")(includeInvalidSubscriptions)
-    __obj.updateDynamic("none")(none)
+    val __obj = js.Dynamic.literal(alwaysReturnBasicInformation = alwaysReturnBasicInformation, includeDeletedSubscriptions = includeDeletedSubscriptions, includeFilterDetails = includeFilterDetails, includeInvalidSubscriptions = includeInvalidSubscriptions, none = none)
+  
     __obj.asInstanceOf[Anon_AlwaysReturnBasicInformation]
   }
 }

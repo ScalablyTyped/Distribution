@@ -12,8 +12,8 @@ trait IHotspotAuthenticationContextStatics extends js.Object {
 object IHotspotAuthenticationContextStatics {
   @scala.inline
   def apply(tryGetAuthenticationContext: js.Function1[java.lang.String, winrtLib.Anon_Context]): IHotspotAuthenticationContextStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tryGetAuthenticationContext")(tryGetAuthenticationContext)
+    val __obj = js.Dynamic.literal(tryGetAuthenticationContext = tryGetAuthenticationContext)
+  
     __obj.asInstanceOf[IHotspotAuthenticationContextStatics]
   }
 }

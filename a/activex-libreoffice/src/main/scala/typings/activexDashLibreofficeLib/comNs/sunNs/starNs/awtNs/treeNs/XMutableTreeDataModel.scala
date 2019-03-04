@@ -44,19 +44,8 @@ object XMutableTreeDataModel {
     removeTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
     setRoot: js.Function1[XMutableTreeNode, scala.Unit]
   ): XMutableTreeDataModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Root")(Root)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addTreeDataModelListener")(addTreeDataModelListener)
-    __obj.updateDynamic("createNode")(createNode)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getRoot")(getRoot)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeTreeDataModelListener")(removeTreeDataModelListener)
-    __obj.updateDynamic("setRoot")(setRoot)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEventListener = addEventListener, addTreeDataModelListener = addTreeDataModelListener, createNode = createNode, dispose = dispose, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeTreeDataModelListener = removeTreeDataModelListener, setRoot = setRoot)
+  
     __obj.asInstanceOf[XMutableTreeDataModel]
   }
 }

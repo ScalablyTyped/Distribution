@@ -33,9 +33,8 @@ object TSTypeAliasDeclaration {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TSTypeParameterDeclaration = null
   ): TSTypeAliasDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    val __obj = js.Dynamic.literal(id = id, typeAnnotation = typeAnnotation)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)

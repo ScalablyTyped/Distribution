@@ -14,8 +14,8 @@ object Array {
   def apply[T](
     `_`: blissfuljsLib.BlissNSNs.BlissBindedArray[T] with blissfuljsLib.BlissNSNs.BlissCollectionArray[T]
   ): Array[T] = {
-    val __obj = js.Dynamic.literal(`_` = `_`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_")(`_`)
     __obj.asInstanceOf[Array[T]]
   }
 }

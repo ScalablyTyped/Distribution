@@ -16,8 +16,8 @@ object Anon_Payload {
     payload: reduxDashLittleDashRouterLib.reduxDashLittleDashRouterMod.Location,
     `type`: java.lang.String
   ): Anon_Payload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(payload = payload)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Payload]
   }
 }

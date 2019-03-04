@@ -13,9 +13,8 @@ trait IPrintTaskConfiguration extends js.Object {
 object IPrintTaskConfiguration {
   @scala.inline
   def apply(onsaverequested: js.Any, printerExtensionContext: js.Any): IPrintTaskConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onsaverequested")(onsaverequested)
-    __obj.updateDynamic("printerExtensionContext")(printerExtensionContext)
+    val __obj = js.Dynamic.literal(onsaverequested = onsaverequested, printerExtensionContext = printerExtensionContext)
+  
     __obj.asInstanceOf[IPrintTaskConfiguration]
   }
 }

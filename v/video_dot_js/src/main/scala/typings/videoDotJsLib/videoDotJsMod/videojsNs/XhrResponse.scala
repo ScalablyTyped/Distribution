@@ -24,13 +24,8 @@ object XhrResponse {
     statusCode: scala.Double,
     url: java.lang.String
   ): XhrResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("rawRequest")(rawRequest)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(body = body, headers = headers, method = method, rawRequest = rawRequest, statusCode = statusCode, url = url)
+  
     __obj.asInstanceOf[XhrResponse]
   }
 }

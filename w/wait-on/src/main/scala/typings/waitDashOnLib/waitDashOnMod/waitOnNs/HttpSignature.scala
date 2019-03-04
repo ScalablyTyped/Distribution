@@ -13,9 +13,8 @@ trait HttpSignature extends js.Object {
 object HttpSignature {
   @scala.inline
   def apply(key: java.lang.String, keyId: java.lang.String): HttpSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("keyId")(keyId)
+    val __obj = js.Dynamic.literal(key = key, keyId = keyId)
+  
     __obj.asInstanceOf[HttpSignature]
   }
 }

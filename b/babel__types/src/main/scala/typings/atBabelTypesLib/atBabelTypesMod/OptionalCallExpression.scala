@@ -34,10 +34,8 @@ object OptionalCallExpression {
     typeArguments: TypeParameterInstantiation = null,
     typeParameters: TSTypeParameterInstantiation = null
   ): OptionalCallExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("arguments")(arguments)
-    __obj.updateDynamic("callee")(callee)
-    __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(arguments = arguments, callee = callee, optional = optional)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

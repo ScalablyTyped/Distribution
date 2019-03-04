@@ -29,10 +29,7 @@ object ParsedCommandLine {
     typeAcquisition: TypeAcquisition = null,
     wildcardDirectories: MapLike[WatchDirectoryFlags] = null
   ): ParsedCommandLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("fileNames")(fileNames)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(errors = errors, fileNames = fileNames, options = options)
     if (!js.isUndefined(compileOnSave)) __obj.updateDynamic("compileOnSave")(compileOnSave)
     if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
     if (raw != null) __obj.updateDynamic("raw")(raw)

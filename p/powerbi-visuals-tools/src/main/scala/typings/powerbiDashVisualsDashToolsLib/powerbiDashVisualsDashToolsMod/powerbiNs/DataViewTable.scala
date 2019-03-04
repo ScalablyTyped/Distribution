@@ -29,8 +29,7 @@ object DataViewTable {
     rows: js.Array[DataViewTableRow] = null,
     totals: js.Array[PrimitiveValue] = null
   ): DataViewTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
+    val __obj = js.Dynamic.literal(columns = columns)
     if (identity != null) __obj.updateDynamic("identity")(identity)
     if (identityFields != null) __obj.updateDynamic("identityFields")(identityFields)
     if (rows != null) __obj.updateDynamic("rows")(rows)

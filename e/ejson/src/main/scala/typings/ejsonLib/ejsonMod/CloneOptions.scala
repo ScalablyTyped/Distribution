@@ -12,8 +12,8 @@ trait CloneOptions extends js.Object {
 object CloneOptions {
   @scala.inline
   def apply(keyOrderSensitive: scala.Boolean): CloneOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyOrderSensitive")(keyOrderSensitive)
+    val __obj = js.Dynamic.literal(keyOrderSensitive = keyOrderSensitive)
+  
     __obj.asInstanceOf[CloneOptions]
   }
 }

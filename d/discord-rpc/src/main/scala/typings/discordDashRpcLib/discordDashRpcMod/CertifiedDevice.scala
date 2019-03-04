@@ -30,11 +30,8 @@ object CertifiedDevice {
     hardwareMute: js.UndefOr[scala.Boolean] = js.undefined,
     noiseSuppression: js.UndefOr[scala.Boolean] = js.undefined
   ): CertifiedDevice = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("related")(related)
-    __obj.updateDynamic("uuid")(uuid)
-    __obj.updateDynamic("vendor")(vendor)
+    val __obj = js.Dynamic.literal(model = model, related = related, uuid = uuid, vendor = vendor)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(automaticGainControl)) __obj.updateDynamic("automaticGainControl")(automaticGainControl)
     if (!js.isUndefined(echoCancellation)) __obj.updateDynamic("echoCancellation")(echoCancellation)
     if (!js.isUndefined(hardwareMute)) __obj.updateDynamic("hardwareMute")(hardwareMute)

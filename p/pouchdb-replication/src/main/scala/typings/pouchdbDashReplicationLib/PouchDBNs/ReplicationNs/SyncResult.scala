@@ -16,9 +16,8 @@ object SyncResult {
     change: ReplicationResult[Content],
     direction: pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.push | pouchdbDashReplicationLib.pouchdbDashReplicationLibStrings.pull
   ): SyncResult[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(change)
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(change = change, direction = direction.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[SyncResult[Content]]
   }
 }

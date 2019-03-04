@@ -12,8 +12,8 @@ trait Anon_PanelCollapse extends js.Object {
 object Anon_PanelCollapse {
   @scala.inline
   def apply(PanelCollapseNs: js.Any): Anon_PanelCollapse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PanelCollapseNs")(PanelCollapseNs)
+    val __obj = js.Dynamic.literal(PanelCollapseNs = PanelCollapseNs)
+  
     __obj.asInstanceOf[Anon_PanelCollapse]
   }
 }

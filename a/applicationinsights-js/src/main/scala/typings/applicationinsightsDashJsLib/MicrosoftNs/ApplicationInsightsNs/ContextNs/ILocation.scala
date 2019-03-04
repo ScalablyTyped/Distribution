@@ -15,8 +15,8 @@ trait ILocation extends js.Object {
 object ILocation {
   @scala.inline
   def apply(ip: java.lang.String): ILocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ip")(ip)
+    val __obj = js.Dynamic.literal(ip = ip)
+  
     __obj.asInstanceOf[ILocation]
   }
 }

@@ -16,9 +16,7 @@ trait ObjectValue
 object ObjectValue {
   @scala.inline
   def apply(fields: js.Array[ObjectField], kind: java.lang.String, loc: Location = null): ObjectValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[ObjectValue]
   }

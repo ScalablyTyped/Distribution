@@ -63,13 +63,8 @@ object MiscUtil {
     startsWith: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
     toCamel: js.Function1[java.lang.String, java.lang.String]
   ): MiscUtil = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("defineProperty")(defineProperty)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("startsWith")(startsWith)
-    __obj.updateDynamic("toCamel")(toCamel)
+    val __obj = js.Dynamic.literal(contains = contains, defineProperty = defineProperty, each = each, extend = extend, startsWith = startsWith, toCamel = toCamel)
+  
     __obj.asInstanceOf[MiscUtil]
   }
 }

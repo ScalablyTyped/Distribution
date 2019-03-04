@@ -14,10 +14,8 @@ trait SharedWebCredentials extends js.Object {
 object SharedWebCredentials {
   @scala.inline
   def apply(password: java.lang.String, server: java.lang.String, username: java.lang.String): SharedWebCredentials = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("server")(server)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(password = password, server = server, username = username)
+  
     __obj.asInstanceOf[SharedWebCredentials]
   }
 }

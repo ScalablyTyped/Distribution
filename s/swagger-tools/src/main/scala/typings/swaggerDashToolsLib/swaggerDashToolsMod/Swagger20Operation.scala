@@ -24,8 +24,7 @@ object Swagger20Operation {
     summary: java.lang.String = null,
     tags: js.Array[java.lang.String] = null
   ): Swagger20Operation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("responses")(responses)
+    val __obj = js.Dynamic.literal(responses = responses)
     if (operationId != null) __obj.updateDynamic("operationId")(operationId)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     if (security != null) __obj.updateDynamic("security")(security)

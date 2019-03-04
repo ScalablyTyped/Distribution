@@ -29,9 +29,7 @@ object Rule {
     priority: scala.Int | scala.Double = null,
     tags: js.Array[java.lang.String] = null
   ): Rule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("conditions")(conditions)
+    val __obj = js.Dynamic.literal(actions = actions, conditions = conditions)
     if (id != null) __obj.updateDynamic("id")(id)
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)

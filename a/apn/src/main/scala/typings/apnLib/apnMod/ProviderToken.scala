@@ -23,10 +23,8 @@ trait ProviderToken extends js.Object {
 object ProviderToken {
   @scala.inline
   def apply(key: nodeLib.Buffer | java.lang.String, keyId: java.lang.String, teamId: java.lang.String): ProviderToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("keyId")(keyId)
-    __obj.updateDynamic("teamId")(teamId)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyId = keyId, teamId = teamId)
+  
     __obj.asInstanceOf[ProviderToken]
   }
 }

@@ -108,22 +108,8 @@ object DirectGenerator {
     suggestMode: js.Function1[java.lang.String, DirectGenerator],
     toJSON: js.Function0[js.Any]
   ): DirectGenerator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("maxEdits")(maxEdits)
-    __obj.updateDynamic("maxInspections")(maxInspections)
-    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
-    __obj.updateDynamic("minDocFreq")(minDocFreq)
-    __obj.updateDynamic("minWordLen")(minWordLen)
-    __obj.updateDynamic("postFilter")(postFilter)
-    __obj.updateDynamic("preFilter")(preFilter)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("stringDistance")(stringDistance)
-    __obj.updateDynamic("suggestMode")(suggestMode)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, accuracy = accuracy, field = field, maxEdits = maxEdits, maxInspections = maxInspections, maxTermFreq = maxTermFreq, minDocFreq = minDocFreq, minWordLen = minWordLen, postFilter = postFilter, preFilter = preFilter, size = size, sort = sort, stringDistance = stringDistance, suggestMode = suggestMode, toJSON = toJSON)
+  
     __obj.asInstanceOf[DirectGenerator]
   }
 }

@@ -30,10 +30,8 @@ object CommentThreadsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CommentThread]
     ]
   ): CommentThreadsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(insert = insert, list = list, update = update)
+  
     __obj.asInstanceOf[CommentThreadsResource]
   }
 }

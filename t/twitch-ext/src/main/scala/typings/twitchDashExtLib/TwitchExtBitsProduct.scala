@@ -32,10 +32,7 @@ object TwitchExtBitsProduct {
     sku: java.lang.String,
     inDevelopment: js.UndefOr[scala.Boolean] = js.undefined
   ): TwitchExtBitsProduct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cost")(cost)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("sku")(sku)
+    val __obj = js.Dynamic.literal(cost = cost, displayName = displayName, sku = sku)
     if (!js.isUndefined(inDevelopment)) __obj.updateDynamic("inDevelopment")(inDevelopment)
     __obj.asInstanceOf[TwitchExtBitsProduct]
   }

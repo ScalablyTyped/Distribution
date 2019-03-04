@@ -18,9 +18,7 @@ object ProjectDetailsDeps {
     rootDirectory: java.lang.String,
     args: minimistLib.minimistMod.minimistNs.ParsedArgs = null
   ): ProjectDetailsDeps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e)
-    __obj.updateDynamic("rootDirectory")(rootDirectory)
+    val __obj = js.Dynamic.literal(e = e, rootDirectory = rootDirectory)
     if (args != null) __obj.updateDynamic("args")(args)
     __obj.asInstanceOf[ProjectDetailsDeps]
   }

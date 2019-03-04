@@ -36,16 +36,8 @@ object ISelectorComponent {
     ],
     set_selectedEntities: js.Function1[js.Any, scala.Unit]
   ): ISelectorComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get_callback")(get_callback)
-    __obj.updateDynamic("get_componentType")(get_componentType)
-    __obj.updateDynamic("get_scopeKey")(get_scopeKey)
-    __obj.updateDynamic("get_selectedEntities")(get_selectedEntities)
-    __obj.updateDynamic("removeEntity")(removeEntity)
-    __obj.updateDynamic("revertTo")(revertTo)
-    __obj.updateDynamic("setEntity")(setEntity)
-    __obj.updateDynamic("set_callback")(set_callback)
-    __obj.updateDynamic("set_selectedEntities")(set_selectedEntities)
+    val __obj = js.Dynamic.literal(get_callback = get_callback, get_componentType = get_componentType, get_scopeKey = get_scopeKey, get_selectedEntities = get_selectedEntities, removeEntity = removeEntity, revertTo = revertTo, setEntity = setEntity, set_callback = set_callback, set_selectedEntities = set_selectedEntities)
+  
     __obj.asInstanceOf[ISelectorComponent]
   }
 }

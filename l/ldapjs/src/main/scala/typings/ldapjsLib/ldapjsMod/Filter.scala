@@ -13,8 +13,8 @@ trait Filter extends js.Object {
 object Filter {
   @scala.inline
   def apply(matches: js.Function1[js.Any, scala.Boolean], `type`: java.lang.String): Filter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("matches")(matches)
+    val __obj = js.Dynamic.literal(matches = matches)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Filter]
   }
 }

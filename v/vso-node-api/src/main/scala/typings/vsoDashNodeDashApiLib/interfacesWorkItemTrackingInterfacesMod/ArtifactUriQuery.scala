@@ -15,8 +15,8 @@ trait ArtifactUriQuery extends js.Object {
 object ArtifactUriQuery {
   @scala.inline
   def apply(artifactUris: js.Array[java.lang.String]): ArtifactUriQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactUris")(artifactUris)
+    val __obj = js.Dynamic.literal(artifactUris = artifactUris)
+  
     __obj.asInstanceOf[ArtifactUriQuery]
   }
 }

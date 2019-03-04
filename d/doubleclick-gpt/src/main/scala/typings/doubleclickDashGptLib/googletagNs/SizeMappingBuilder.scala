@@ -16,9 +16,8 @@ object SizeMappingBuilder {
     addSize: js.Function2[SingleSizeArray, GeneralSize, SizeMappingBuilder],
     build: js.Function0[SizeMappingArray]
   ): SizeMappingBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addSize")(addSize)
-    __obj.updateDynamic("build")(build)
+    val __obj = js.Dynamic.literal(addSize = addSize, build = build)
+  
     __obj.asInstanceOf[SizeMappingBuilder]
   }
 }

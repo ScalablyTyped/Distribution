@@ -96,18 +96,8 @@ object CryptoKeysResource {
       gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
     ]
   ): CryptoKeysResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("cryptoKeyVersions")(cryptoKeyVersions)
-    __obj.updateDynamic("decrypt")(decrypt)
-    __obj.updateDynamic("encrypt")(encrypt)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
-    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
-    __obj.updateDynamic("updatePrimaryVersion")(updatePrimaryVersion)
+    val __obj = js.Dynamic.literal(create = create, cryptoKeyVersions = cryptoKeyVersions, decrypt = decrypt, encrypt = encrypt, get = get, getIamPolicy = getIamPolicy, list = list, patch = patch, setIamPolicy = setIamPolicy, testIamPermissions = testIamPermissions, updatePrimaryVersion = updatePrimaryVersion)
+  
     __obj.asInstanceOf[CryptoKeysResource]
   }
 }

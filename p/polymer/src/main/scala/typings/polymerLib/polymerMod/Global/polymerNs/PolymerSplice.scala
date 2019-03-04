@@ -22,10 +22,9 @@ object PolymerSplice {
     removed: js.Array[js.Object],
     `type`: java.lang.String
   ): PolymerSplice = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("addedCount")(addedCount)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("removed")(removed)
+    val __obj = js.Dynamic.literal(addedCount = addedCount, index = index, removed = removed)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PolymerSplice]
   }
 }

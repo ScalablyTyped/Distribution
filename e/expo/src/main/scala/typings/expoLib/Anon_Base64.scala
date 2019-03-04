@@ -24,11 +24,7 @@ object Anon_Base64 {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Anon_Base64 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    __obj.updateDynamic("quality")(quality)
-    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    __obj.updateDynamic("snapshotContentContainer")(snapshotContentContainer)
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], quality = quality, result = result.asInstanceOf[js.Any], snapshotContentContainer = snapshotContentContainer)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Base64]

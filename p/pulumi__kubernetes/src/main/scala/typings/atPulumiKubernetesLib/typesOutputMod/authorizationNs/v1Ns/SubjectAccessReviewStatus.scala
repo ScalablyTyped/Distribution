@@ -40,11 +40,8 @@ object SubjectAccessReviewStatus {
     evaluationError: java.lang.String,
     reason: java.lang.String
   ): SubjectAccessReviewStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowed")(allowed)
-    __obj.updateDynamic("denied")(denied)
-    __obj.updateDynamic("evaluationError")(evaluationError)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(allowed = allowed, denied = denied, evaluationError = evaluationError, reason = reason)
+  
     __obj.asInstanceOf[SubjectAccessReviewStatus]
   }
 }

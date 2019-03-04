@@ -24,10 +24,8 @@ object IContainer {
     end: js.Function0[Iterator],
     erase: js.Function2[Iterator, Iterator, Iterator]
   ): IContainer[Iterator] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("begin")(begin)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("erase")(erase)
+    val __obj = js.Dynamic.literal(begin = begin, end = end, erase = erase)
+  
     __obj.asInstanceOf[IContainer[Iterator]]
   }
 }

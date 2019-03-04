@@ -55,8 +55,8 @@ object DateFileAppender {
     mode: scala.Int | scala.Double = null,
     pattern: java.lang.String = null
   ): DateFileAppender = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("filename")(filename)
+    val __obj = js.Dynamic.literal(filename = filename)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(alwaysIncludePattern)) __obj.updateDynamic("alwaysIncludePattern")(alwaysIncludePattern)
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (daysToKeep != null) __obj.updateDynamic("daysToKeep")(daysToKeep.asInstanceOf[js.Any])

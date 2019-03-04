@@ -26,12 +26,8 @@ object XTransferableSource {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XTransferableSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DataSourceDescription")(DataSourceDescription)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDataSourceDescription")(getDataSourceDescription)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DataSourceDescription = DataSourceDescription, acquire = acquire, getDataSourceDescription = getDataSourceDescription, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XTransferableSource]
   }
 }

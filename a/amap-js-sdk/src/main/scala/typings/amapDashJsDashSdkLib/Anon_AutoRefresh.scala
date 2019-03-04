@@ -26,8 +26,7 @@ object Anon_AutoRefresh {
     zIndex: scala.Int | scala.Double = null,
     zooms: js.Array[scala.Double] = null
   ): Anon_AutoRefresh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
     if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh)
     if (!js.isUndefined(detectRetina)) __obj.updateDynamic("detectRetina")(detectRetina)
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])

@@ -36,9 +36,7 @@ object PluralPropsWithoutI18n {
     two: reactLib.reactMod.ReactNs.ReactNode = null,
     zero: reactLib.reactMod.ReactNs.ReactNode = null
   ): PluralPropsWithoutI18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("other")(other.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className)
     if (description != null) __obj.updateDynamic("description")(description)

@@ -31,12 +31,8 @@ object FoundInPageResult {
     requestId: scala.Double,
     selectionArea: SelectionArea
   ): FoundInPageResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeMatchOrdinal")(activeMatchOrdinal)
-    __obj.updateDynamic("finalUpdate")(finalUpdate)
-    __obj.updateDynamic("matches")(matches)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("selectionArea")(selectionArea)
+    val __obj = js.Dynamic.literal(activeMatchOrdinal = activeMatchOrdinal, finalUpdate = finalUpdate, matches = matches, requestId = requestId, selectionArea = selectionArea)
+  
     __obj.asInstanceOf[FoundInPageResult]
   }
 }

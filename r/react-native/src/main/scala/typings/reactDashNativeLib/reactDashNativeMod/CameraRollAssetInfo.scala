@@ -13,9 +13,8 @@ trait CameraRollAssetInfo extends js.Object {
 object CameraRollAssetInfo {
   @scala.inline
   def apply(edges: js.Array[CameraRollEdgeInfo], page_info: reactDashNativeLib.Anon_Endcursor): CameraRollAssetInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("edges")(edges)
-    __obj.updateDynamic("page_info")(page_info)
+    val __obj = js.Dynamic.literal(edges = edges, page_info = page_info)
+  
     __obj.asInstanceOf[CameraRollAssetInfo]
   }
 }

@@ -18,8 +18,8 @@ object Anon_Create {
       simpleDashOauth2Lib.simpleDashOauth2Mod.AccessToken
     ]
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
+    val __obj = js.Dynamic.literal(create = create)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

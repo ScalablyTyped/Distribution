@@ -30,12 +30,8 @@ object JobTaskQueryJobsParams {
     queryId: scala.Double,
     user: java.lang.String
   ): JobTaskQueryJobsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("queryId")(queryId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, queryId = queryId, user = user)
+  
     __obj.asInstanceOf[JobTaskQueryJobsParams]
   }
 }

@@ -40,14 +40,8 @@ object XForbiddenCharacters {
       scala.Unit
     ]
   ): XForbiddenCharacters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getForbiddenCharacters")(getForbiddenCharacters)
-    __obj.updateDynamic("hasForbiddenCharacters")(hasForbiddenCharacters)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeForbiddenCharacters")(removeForbiddenCharacters)
-    __obj.updateDynamic("setForbiddenCharacters")(setForbiddenCharacters)
+    val __obj = js.Dynamic.literal(acquire = acquire, getForbiddenCharacters = getForbiddenCharacters, hasForbiddenCharacters = hasForbiddenCharacters, queryInterface = queryInterface, release = release, removeForbiddenCharacters = removeForbiddenCharacters, setForbiddenCharacters = setForbiddenCharacters)
+  
     __obj.asInstanceOf[XForbiddenCharacters]
   }
 }

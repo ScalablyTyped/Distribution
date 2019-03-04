@@ -41,11 +41,8 @@ object Quad {
     predicate: Quad_Predicate,
     subject: Quad_Subject
   ): Quad = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("predicate")(predicate)
-    __obj.updateDynamic("subject")(subject)
+    val __obj = js.Dynamic.literal(equals = equals, graph = graph, predicate = predicate, subject = subject)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[Quad]
   }
 }

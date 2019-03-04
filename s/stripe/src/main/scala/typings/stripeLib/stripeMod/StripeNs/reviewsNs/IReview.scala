@@ -45,13 +45,8 @@ object IReview {
     open: scala.Boolean,
     reason: stripeLib.stripeLibStrings.rule | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.approved | stripeLib.stripeLibStrings.refunded | stripeLib.stripeLibStrings.refunded_as_fraud | stripeLib.stripeLibStrings.disputed
   ): IReview = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("livemode")(livemode)
-    __obj.updateDynamic("open")(open)
-    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], created = created, id = id, livemode = livemode, open = open, reason = reason.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IReview]
   }
 }

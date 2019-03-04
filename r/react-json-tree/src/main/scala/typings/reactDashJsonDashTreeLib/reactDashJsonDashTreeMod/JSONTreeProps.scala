@@ -94,8 +94,7 @@ object JSONTreeProps {
       reactLib.reactMod.Global.JSXNs.Element
     ] = null
   ): JSONTreeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (collectionLimit != null) __obj.updateDynamic("collectionLimit")(collectionLimit.asInstanceOf[js.Any])
     if (getItemString != null) __obj.updateDynamic("getItemString")(getItemString)

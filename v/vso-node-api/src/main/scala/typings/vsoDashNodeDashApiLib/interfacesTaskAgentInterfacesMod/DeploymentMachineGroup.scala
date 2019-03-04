@@ -20,13 +20,8 @@ object DeploymentMachineGroup {
     project: ProjectReference,
     size: scala.Double
   ): DeploymentMachineGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("machines")(machines)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pool")(pool)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(id = id, machines = machines, name = name, pool = pool, project = project, size = size)
+  
     __obj.asInstanceOf[DeploymentMachineGroup]
   }
 }

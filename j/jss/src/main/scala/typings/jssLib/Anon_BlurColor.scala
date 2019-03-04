@@ -15,11 +15,8 @@ trait Anon_BlurColor extends js.Object {
 object Anon_BlurColor {
   @scala.inline
   def apply(blur: jssLib.cssMod.Length, color: js.Any, x: jssLib.cssMod.Length, y: jssLib.cssMod.Length): Anon_BlurColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], color = color, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_BlurColor]
   }
 }

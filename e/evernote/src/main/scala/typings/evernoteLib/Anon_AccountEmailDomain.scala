@@ -38,11 +38,7 @@ object Anon_AccountEmailDomain {
     enableSupportTickets: js.UndefOr[scala.Boolean] = js.undefined,
     enableTwitterSharing: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AccountEmailDomain = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountEmailDomain")(accountEmailDomain)
-    __obj.updateDynamic("marketingUrl")(marketingUrl)
-    __obj.updateDynamic("serviceHost")(serviceHost)
-    __obj.updateDynamic("supportUrl")(supportUrl)
+    val __obj = js.Dynamic.literal(accountEmailDomain = accountEmailDomain, marketingUrl = marketingUrl, serviceHost = serviceHost, supportUrl = supportUrl)
     if (!js.isUndefined(enableFacebookSharing)) __obj.updateDynamic("enableFacebookSharing")(enableFacebookSharing)
     if (!js.isUndefined(enableGiftSubscriptions)) __obj.updateDynamic("enableGiftSubscriptions")(enableGiftSubscriptions)
     if (!js.isUndefined(enableLinkedInSharing)) __obj.updateDynamic("enableLinkedInSharing")(enableLinkedInSharing)

@@ -14,10 +14,8 @@ trait Signature extends js.Object {
 object Signature {
   @scala.inline
   def apply(header: Header, payload: js.Any, signature: java.lang.String): Signature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(header = header, payload = payload, signature = signature)
+  
     __obj.asInstanceOf[Signature]
   }
 }

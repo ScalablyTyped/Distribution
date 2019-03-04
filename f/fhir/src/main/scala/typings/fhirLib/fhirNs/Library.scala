@@ -229,8 +229,8 @@ object Library {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): Library = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
+    __obj.updateDynamic("type")(`type`)
     if (_approvalDate != null) __obj.updateDynamic("_approvalDate")(_approvalDate)
     if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
     if (_date != null) __obj.updateDynamic("_date")(_date)

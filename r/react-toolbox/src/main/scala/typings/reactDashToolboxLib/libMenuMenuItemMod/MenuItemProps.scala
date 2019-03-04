@@ -80,8 +80,7 @@ object MenuItemProps {
     theme: MenuItemTheme = null,
     value: js.Any = null
   ): MenuItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("caption")(caption)
+    val __obj = js.Dynamic.literal(caption = caption)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

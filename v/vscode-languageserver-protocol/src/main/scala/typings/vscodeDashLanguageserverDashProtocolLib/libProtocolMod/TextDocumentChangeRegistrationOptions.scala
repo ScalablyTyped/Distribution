@@ -15,8 +15,7 @@ trait TextDocumentChangeRegistrationOptions extends TextDocumentRegistrationOpti
 object TextDocumentChangeRegistrationOptions {
   @scala.inline
   def apply(syncKind: TextDocumentSyncKind, documentSelector: DocumentSelector = null): TextDocumentChangeRegistrationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("syncKind")(syncKind)
+    val __obj = js.Dynamic.literal(syncKind = syncKind)
     if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector)
     __obj.asInstanceOf[TextDocumentChangeRegistrationOptions]
   }

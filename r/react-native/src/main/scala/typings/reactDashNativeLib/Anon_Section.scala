@@ -12,8 +12,8 @@ trait Anon_Section[ItemT] extends js.Object {
 object Anon_Section {
   @scala.inline
   def apply[ItemT](section: reactDashNativeLib.reactDashNativeMod.SectionListData[ItemT]): Anon_Section[ItemT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("section")(section)
+    val __obj = js.Dynamic.literal(section = section)
+  
     __obj.asInstanceOf[Anon_Section[ItemT]]
   }
 }

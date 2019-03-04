@@ -20,9 +20,8 @@ trait Boundary extends js.Object {
 object Boundary {
   @scala.inline
   def apply(endPos: scala.Double, startPos: scala.Double): Boundary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endPos")(endPos)
-    __obj.updateDynamic("startPos")(startPos)
+    val __obj = js.Dynamic.literal(endPos = endPos, startPos = startPos)
+  
     __obj.asInstanceOf[Boundary]
   }
 }

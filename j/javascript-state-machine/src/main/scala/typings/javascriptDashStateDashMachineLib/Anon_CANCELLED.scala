@@ -23,11 +23,8 @@ object Anon_CANCELLED {
     PENDING: scala.Double,
     SUCCEEDED: scala.Double
   ): Anon_CANCELLED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CANCELLED")(CANCELLED)
-    __obj.updateDynamic("NOTRANSITION")(NOTRANSITION)
-    __obj.updateDynamic("PENDING")(PENDING)
-    __obj.updateDynamic("SUCCEEDED")(SUCCEEDED)
+    val __obj = js.Dynamic.literal(CANCELLED = CANCELLED, NOTRANSITION = NOTRANSITION, PENDING = PENDING, SUCCEEDED = SUCCEEDED)
+  
     __obj.asInstanceOf[Anon_CANCELLED]
   }
 }

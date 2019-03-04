@@ -32,11 +32,8 @@ object ASPxClientUploadControlValidationErrorTypeConstsStatic {
     MaxFileSizeExceeded: scala.Double,
     NotAllowedFileExtension: scala.Double
   ): ASPxClientUploadControlValidationErrorTypeConstsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FileNameContainsInvalidCharacter")(FileNameContainsInvalidCharacter)
-    __obj.updateDynamic("MaxFileCountExceeded")(MaxFileCountExceeded)
-    __obj.updateDynamic("MaxFileSizeExceeded")(MaxFileSizeExceeded)
-    __obj.updateDynamic("NotAllowedFileExtension")(NotAllowedFileExtension)
+    val __obj = js.Dynamic.literal(FileNameContainsInvalidCharacter = FileNameContainsInvalidCharacter, MaxFileCountExceeded = MaxFileCountExceeded, MaxFileSizeExceeded = MaxFileSizeExceeded, NotAllowedFileExtension = NotAllowedFileExtension)
+  
     __obj.asInstanceOf[ASPxClientUploadControlValidationErrorTypeConstsStatic]
   }
 }

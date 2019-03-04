@@ -22,9 +22,7 @@ object Anon_AccessTokenUrl {
     https: js.UndefOr[scala.Boolean] = js.undefined,
     ticketUrl: java.lang.String = null
   ): Anon_AccessTokenUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("appSecret")(appSecret)
+    val __obj = js.Dynamic.literal(appId = appId, appSecret = appSecret)
     if (accessTokenUrl != null) __obj.updateDynamic("accessTokenUrl")(accessTokenUrl)
     if (!js.isUndefined(https)) __obj.updateDynamic("https")(https)
     if (ticketUrl != null) __obj.updateDynamic("ticketUrl")(ticketUrl)

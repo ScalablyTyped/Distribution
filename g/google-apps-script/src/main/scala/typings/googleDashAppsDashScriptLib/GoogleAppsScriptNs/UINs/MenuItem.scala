@@ -61,28 +61,8 @@ object MenuItem {
     setVisible: js.Function1[scala.Boolean, MenuItem],
     setWidth: js.Function1[java.lang.String, MenuItem]
   ): MenuItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
-    __obj.updateDynamic("addStyleName")(addStyleName)
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getTag")(getTag)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("setCommand")(setCommand)
-    __obj.updateDynamic("setHTML")(setHTML)
-    __obj.updateDynamic("setHeight")(setHeight)
-    __obj.updateDynamic("setId")(setId)
-    __obj.updateDynamic("setPixelSize")(setPixelSize)
-    __obj.updateDynamic("setSize")(setSize)
-    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
-    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
-    __obj.updateDynamic("setStyleName")(setStyleName)
-    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
-    __obj.updateDynamic("setSubMenu")(setSubMenu)
-    __obj.updateDynamic("setTag")(setTag)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setVisible")(setVisible)
-    __obj.updateDynamic("setWidth")(setWidth)
+    val __obj = js.Dynamic.literal(addStyleDependentName = addStyleDependentName, addStyleName = addStyleName, getId = getId, getTag = getTag, getType = getType, setCommand = setCommand, setHTML = setHTML, setHeight = setHeight, setId = setId, setPixelSize = setPixelSize, setSize = setSize, setStyleAttribute = setStyleAttribute, setStyleAttributes = setStyleAttributes, setStyleName = setStyleName, setStylePrimaryName = setStylePrimaryName, setSubMenu = setSubMenu, setTag = setTag, setText = setText, setTitle = setTitle, setVisible = setVisible, setWidth = setWidth)
+  
     __obj.asInstanceOf[MenuItem]
   }
 }

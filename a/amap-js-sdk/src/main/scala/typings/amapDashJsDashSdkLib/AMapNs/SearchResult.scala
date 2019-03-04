@@ -20,11 +20,8 @@ object SearchResult {
     keywordList: js.Array[java.lang.String],
     poiList: PoiList
   ): SearchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cityList")(cityList)
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("keywordList")(keywordList)
-    __obj.updateDynamic("poiList")(poiList)
+    val __obj = js.Dynamic.literal(cityList = cityList, info = info, keywordList = keywordList, poiList = poiList)
+  
     __obj.asInstanceOf[SearchResult]
   }
 }

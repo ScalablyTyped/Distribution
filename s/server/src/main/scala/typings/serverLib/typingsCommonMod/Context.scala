@@ -48,24 +48,7 @@ object Context {
     xhr: scala.Boolean,
     ips: js.Array[java.lang.String] = null
   ): Context = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cookie")(cookie)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("req")(req)
-    __obj.updateDynamic("res")(res)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("xhr")(xhr)
+    val __obj = js.Dynamic.literal(cookie = cookie, data = data, error = error, files = files, headers = headers, ip = ip, method = method, options = options, params = params, path = path, query = query, req = req, res = res, secure = secure, session = session, url = url, xhr = xhr)
     if (ips != null) __obj.updateDynamic("ips")(ips)
     __obj.asInstanceOf[Context]
   }

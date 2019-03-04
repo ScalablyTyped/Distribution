@@ -16,9 +16,8 @@ object UpdateDraftBodyAction {
     addUpdateContent: js.Function2[java.lang.String, ContentType, UpdateDraftBodyAction],
     setUpdateType: js.Function1[UpdateDraftBodyType, UpdateDraftBodyAction]
   ): UpdateDraftBodyAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addUpdateContent")(addUpdateContent)
-    __obj.updateDynamic("setUpdateType")(setUpdateType)
+    val __obj = js.Dynamic.literal(addUpdateContent = addUpdateContent, setUpdateType = setUpdateType)
+  
     __obj.asInstanceOf[UpdateDraftBodyAction]
   }
 }

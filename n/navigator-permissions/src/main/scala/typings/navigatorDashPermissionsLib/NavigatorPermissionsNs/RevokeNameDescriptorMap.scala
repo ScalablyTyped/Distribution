@@ -20,11 +20,8 @@ object RevokeNameDescriptorMap {
     notifications: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications],
     push: PushPermissionDescriptor
   ): RevokeNameDescriptorMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geolocation")(geolocation)
-    __obj.updateDynamic("midi")(midi)
-    __obj.updateDynamic("notifications")(notifications)
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(geolocation = geolocation, midi = midi, notifications = notifications, push = push)
+  
     __obj.asInstanceOf[RevokeNameDescriptorMap]
   }
 }

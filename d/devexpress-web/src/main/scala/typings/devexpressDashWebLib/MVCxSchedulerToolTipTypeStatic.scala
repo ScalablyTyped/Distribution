@@ -23,10 +23,8 @@ trait MVCxSchedulerToolTipTypeStatic extends js.Object {
 object MVCxSchedulerToolTipTypeStatic {
   @scala.inline
   def apply(Appointment: scala.Double, AppointmentDrag: scala.Double, Selection: scala.Double): MVCxSchedulerToolTipTypeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Appointment")(Appointment)
-    __obj.updateDynamic("AppointmentDrag")(AppointmentDrag)
-    __obj.updateDynamic("Selection")(Selection)
+    val __obj = js.Dynamic.literal(Appointment = Appointment, AppointmentDrag = AppointmentDrag, Selection = Selection)
+  
     __obj.asInstanceOf[MVCxSchedulerToolTipTypeStatic]
   }
 }

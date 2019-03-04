@@ -23,10 +23,8 @@ object SearchBetweennessResult {
     betweennessNormalised: js.Function1[NodeSingular, scala.Double],
     betweennessNormalized: js.Function1[NodeSingular, scala.Double]
   ): SearchBetweennessResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("betweenness")(betweenness)
-    __obj.updateDynamic("betweennessNormalised")(betweennessNormalised)
-    __obj.updateDynamic("betweennessNormalized")(betweennessNormalized)
+    val __obj = js.Dynamic.literal(betweenness = betweenness, betweennessNormalised = betweennessNormalised, betweennessNormalized = betweennessNormalized)
+  
     __obj.asInstanceOf[SearchBetweennessResult]
   }
 }

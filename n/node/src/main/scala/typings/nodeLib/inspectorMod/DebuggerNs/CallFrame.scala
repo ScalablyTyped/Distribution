@@ -55,12 +55,8 @@ object CallFrame {
     functionLocation: Location = null,
     returnValue: nodeLib.inspectorMod.RuntimeNs.RemoteObject = null
   ): CallFrame = {
-    val __obj = js.Dynamic.literal(`this` = `this`)
-    __obj.updateDynamic("callFrameId")(callFrameId)
-    __obj.updateDynamic("functionName")(functionName)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("scopeChain")(scopeChain)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(callFrameId = callFrameId, functionName = functionName, location = location, scopeChain = scopeChain, url = url)
+    __obj.updateDynamic("this")(`this`)
     if (functionLocation != null) __obj.updateDynamic("functionLocation")(functionLocation)
     if (returnValue != null) __obj.updateDynamic("returnValue")(returnValue)
     __obj.asInstanceOf[CallFrame]

@@ -13,8 +13,8 @@ trait strings
 object strings {
   @scala.inline
   def apply(CHIP_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip`): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CHIP_SELECTOR")(CHIP_SELECTOR)
+    val __obj = js.Dynamic.literal(CHIP_SELECTOR = CHIP_SELECTOR)
+  
     __obj.asInstanceOf[strings]
   }
 }

@@ -29,11 +29,8 @@ object ASPxClientDockManagerProcessingModeCancelEventArgs {
     processOnServer: scala.Boolean,
     zone: ASPxClientDockZone
   ): ASPxClientDockManagerProcessingModeCancelEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("panel")(panel)
-    __obj.updateDynamic("processOnServer")(processOnServer)
-    __obj.updateDynamic("zone")(zone)
+    val __obj = js.Dynamic.literal(cancel = cancel, panel = panel, processOnServer = processOnServer, zone = zone)
+  
     __obj.asInstanceOf[ASPxClientDockManagerProcessingModeCancelEventArgs]
   }
 }

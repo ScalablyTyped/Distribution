@@ -34,15 +34,8 @@ object NavigationBarItem {
     spans: js.Array[TextSpan],
     text: java.lang.String
   ): NavigationBarItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bolded")(bolded)
-    __obj.updateDynamic("childItems")(childItems)
-    __obj.updateDynamic("grayed")(grayed)
-    __obj.updateDynamic("indent")(indent)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("kindModifiers")(kindModifiers)
-    __obj.updateDynamic("spans")(spans)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(bolded = bolded, childItems = childItems, grayed = grayed, indent = indent, kind = kind, kindModifiers = kindModifiers, spans = spans, text = text)
+  
     __obj.asInstanceOf[NavigationBarItem]
   }
 }

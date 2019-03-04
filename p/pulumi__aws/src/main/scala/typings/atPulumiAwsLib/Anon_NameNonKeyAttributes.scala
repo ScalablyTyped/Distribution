@@ -20,11 +20,8 @@ object Anon_NameNonKeyAttributes {
     projectionType: java.lang.String,
     rangeKey: java.lang.String
   ): Anon_NameNonKeyAttributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes)
-    __obj.updateDynamic("projectionType")(projectionType)
-    __obj.updateDynamic("rangeKey")(rangeKey)
+    val __obj = js.Dynamic.literal(name = name, nonKeyAttributes = nonKeyAttributes, projectionType = projectionType, rangeKey = rangeKey)
+  
     __obj.asInstanceOf[Anon_NameNonKeyAttributes]
   }
 }

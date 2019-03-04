@@ -15,8 +15,8 @@ trait ICustomErrorMessage extends js.Object {
 object ICustomErrorMessage {
   @scala.inline
   def apply(calcCond: java.lang.String): ICustomErrorMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calcCond")(calcCond)
+    val __obj = js.Dynamic.literal(calcCond = calcCond)
+  
     __obj.asInstanceOf[ICustomErrorMessage]
   }
 }

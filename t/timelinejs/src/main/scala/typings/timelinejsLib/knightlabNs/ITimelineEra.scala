@@ -28,11 +28,7 @@ object ITimelineEra {
     text: java.lang.String,
     tag: java.lang.String = null
   ): ITimelineEra = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endDate")(endDate)
-    __obj.updateDynamic("headline")(headline)
-    __obj.updateDynamic("startDate")(startDate)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(endDate = endDate, headline = headline, startDate = startDate, text = text)
     if (tag != null) __obj.updateDynamic("tag")(tag)
     __obj.asInstanceOf[ITimelineEra]
   }

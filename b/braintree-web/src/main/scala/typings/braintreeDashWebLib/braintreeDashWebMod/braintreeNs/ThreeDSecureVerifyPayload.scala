@@ -22,12 +22,8 @@ object ThreeDSecureVerifyPayload {
     liabilityShifted: scala.Boolean,
     nonce: java.lang.String
   ): ThreeDSecureVerifyPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("details")(details)
-    __obj.updateDynamic("liabilityShiftPossible")(liabilityShiftPossible)
-    __obj.updateDynamic("liabilityShifted")(liabilityShifted)
-    __obj.updateDynamic("nonce")(nonce)
+    val __obj = js.Dynamic.literal(description = description, details = details, liabilityShiftPossible = liabilityShiftPossible, liabilityShifted = liabilityShifted, nonce = nonce)
+  
     __obj.asInstanceOf[ThreeDSecureVerifyPayload]
   }
 }

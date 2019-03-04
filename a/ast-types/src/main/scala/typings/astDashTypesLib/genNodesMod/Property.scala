@@ -32,13 +32,8 @@ object Property {
     value: astDashTypesLib.genKindsMod.ExpressionKind | astDashTypesLib.genKindsMod.PatternKind,
     decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null
   ): Property = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("shorthand")(shorthand)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method, shorthand = shorthand, value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     __obj.asInstanceOf[Property]
   }

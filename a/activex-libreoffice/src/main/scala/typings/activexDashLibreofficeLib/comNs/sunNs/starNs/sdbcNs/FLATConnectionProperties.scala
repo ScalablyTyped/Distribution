@@ -43,16 +43,8 @@ object FLATConnectionProperties {
     password: java.lang.String,
     user: java.lang.String
   ): FLATConnectionProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharSet")(CharSet)
-    __obj.updateDynamic("DecimalDelimiter")(DecimalDelimiter)
-    __obj.updateDynamic("Extension")(Extension)
-    __obj.updateDynamic("FieldDelimiter")(FieldDelimiter)
-    __obj.updateDynamic("HeaderLine")(HeaderLine)
-    __obj.updateDynamic("StringDelimiter")(StringDelimiter)
-    __obj.updateDynamic("ThousandDelimiter")(ThousandDelimiter)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(CharSet = CharSet, DecimalDelimiter = DecimalDelimiter, Extension = Extension, FieldDelimiter = FieldDelimiter, HeaderLine = HeaderLine, StringDelimiter = StringDelimiter, ThousandDelimiter = ThousandDelimiter, password = password, user = user)
+  
     __obj.asInstanceOf[FLATConnectionProperties]
   }
 }

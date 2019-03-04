@@ -42,8 +42,7 @@ object ReplicaGlobalSecondaryIndexSettingsDescription {
     ProvisionedWriteCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
     ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   ): ReplicaGlobalSecondaryIndexSettingsDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IndexName")(IndexName)
+    val __obj = js.Dynamic.literal(IndexName = IndexName)
     if (IndexStatus != null) __obj.updateDynamic("IndexStatus")(IndexStatus.asInstanceOf[js.Any])
     if (ProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ProvisionedReadCapacityAutoScalingSettings")(ProvisionedReadCapacityAutoScalingSettings)
     if (!js.isUndefined(ProvisionedReadCapacityUnits)) __obj.updateDynamic("ProvisionedReadCapacityUnits")(ProvisionedReadCapacityUnits)

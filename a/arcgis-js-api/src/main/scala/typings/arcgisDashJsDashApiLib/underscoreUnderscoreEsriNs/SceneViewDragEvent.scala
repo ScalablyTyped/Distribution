@@ -36,18 +36,8 @@ object SceneViewDragEvent {
     x: scala.Double,
     y: scala.Double
   ): SceneViewDragEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("button")(button)
-    __obj.updateDynamic("buttons")(buttons)
-    __obj.updateDynamic("native")(native)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("radius")(radius)
-    __obj.updateDynamic("stopPropagation")(stopPropagation)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(action = action, angle = angle, button = button, buttons = buttons, native = native, origin = origin, radius = radius, stopPropagation = stopPropagation, timestamp = timestamp, x = x, y = y)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SceneViewDragEvent]
   }
 }

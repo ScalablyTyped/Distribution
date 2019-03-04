@@ -24,9 +24,8 @@ object CertificateArgs {
     active: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     csr: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): CertificateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], csr = csr.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[CertificateArgs]
   }
 }

@@ -14,10 +14,8 @@ trait PublicState extends js.Object {
 object PublicState {
   @scala.inline
   def apply(max: scala.Double, min: scala.Double, values: js.Array[scala.Double]): PublicState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(max = max, min = min, values = values)
+  
     __obj.asInstanceOf[PublicState]
   }
 }

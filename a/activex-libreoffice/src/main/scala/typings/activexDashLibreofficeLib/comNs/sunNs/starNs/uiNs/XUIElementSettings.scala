@@ -46,13 +46,8 @@ object XUIElementSettings {
     setSettings: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess, scala.Unit],
     updateSettings: js.Function0[scala.Unit]
   ): XUIElementSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSettings")(getSettings)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setSettings")(setSettings)
-    __obj.updateDynamic("updateSettings")(updateSettings)
+    val __obj = js.Dynamic.literal(acquire = acquire, getSettings = getSettings, queryInterface = queryInterface, release = release, setSettings = setSettings, updateSettings = updateSettings)
+  
     __obj.asInstanceOf[XUIElementSettings]
   }
 }

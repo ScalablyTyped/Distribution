@@ -21,8 +21,7 @@ object ButtonsSettings {
     name: java.lang.String = null,
     tabIndex: scala.Int | scala.Double = null
   ): ButtonsSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttons")(buttons)
+    val __obj = js.Dynamic.literal(buttons = buttons)
     if (dom != null) __obj.updateDynamic("dom")(dom)
     if (name != null) __obj.updateDynamic("name")(name)
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

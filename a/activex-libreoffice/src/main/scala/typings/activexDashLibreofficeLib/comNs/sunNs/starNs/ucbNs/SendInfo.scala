@@ -20,9 +20,8 @@ trait SendInfo extends js.Object {
 object SendInfo {
   @scala.inline
   def apply(ProtocolType: java.lang.String, Value: java.lang.String): SendInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ProtocolType")(ProtocolType)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(ProtocolType = ProtocolType, Value = Value)
+  
     __obj.asInstanceOf[SendInfo]
   }
 }

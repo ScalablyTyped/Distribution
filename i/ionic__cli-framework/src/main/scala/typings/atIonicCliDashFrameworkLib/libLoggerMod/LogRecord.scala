@@ -20,9 +20,7 @@ object LogRecord {
     format: js.UndefOr[scala.Boolean] = js.undefined,
     level: js.UndefOr[LoggerLevelWeight] = js.undefined
   ): LogRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("logger")(logger)
-    __obj.updateDynamic("msg")(msg)
+    val __obj = js.Dynamic.literal(logger = logger, msg = msg)
     if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(level)) __obj.updateDynamic("level")(level)
     __obj.asInstanceOf[LogRecord]

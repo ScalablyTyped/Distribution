@@ -66,15 +66,8 @@ object IDeviceService {
     getUUID: js.Function0[java.lang.String],
     getVersion: js.Function0[java.lang.String]
   ): IDeviceService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCordova")(getCordova)
-    __obj.updateDynamic("getDevice")(getDevice)
-    __obj.updateDynamic("getManufacturer")(getManufacturer)
-    __obj.updateDynamic("getModel")(getModel)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getPlatform")(getPlatform)
-    __obj.updateDynamic("getUUID")(getUUID)
-    __obj.updateDynamic("getVersion")(getVersion)
+    val __obj = js.Dynamic.literal(getCordova = getCordova, getDevice = getDevice, getManufacturer = getManufacturer, getModel = getModel, getName = getName, getPlatform = getPlatform, getUUID = getUUID, getVersion = getVersion)
+  
     __obj.asInstanceOf[IDeviceService]
   }
 }

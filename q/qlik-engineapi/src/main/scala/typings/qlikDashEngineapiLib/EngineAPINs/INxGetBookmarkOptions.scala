@@ -22,9 +22,8 @@ trait INxGetBookmarkOptions extends js.Object {
 object INxGetBookmarkOptions {
   @scala.inline
   def apply(qData: js.Any, qTypes: js.Array[java.lang.String]): INxGetBookmarkOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qData")(qData)
-    __obj.updateDynamic("qTypes")(qTypes)
+    val __obj = js.Dynamic.literal(qData = qData, qTypes = qTypes)
+  
     __obj.asInstanceOf[INxGetBookmarkOptions]
   }
 }

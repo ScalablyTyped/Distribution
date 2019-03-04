@@ -12,8 +12,8 @@ trait AuthBase extends js.Object {
 object AuthBase {
   @scala.inline
   def apply(clientId: java.lang.String): AuthBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
+    val __obj = js.Dynamic.literal(clientId = clientId)
+  
     __obj.asInstanceOf[AuthBase]
   }
 }

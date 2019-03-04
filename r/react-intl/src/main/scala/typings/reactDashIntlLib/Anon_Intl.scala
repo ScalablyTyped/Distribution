@@ -12,8 +12,8 @@ trait Anon_Intl extends js.Object {
 object Anon_Intl {
   @scala.inline
   def apply(intl: reactDashIntlLib.ReactIntlNs.InjectedIntl): Anon_Intl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("intl")(intl)
+    val __obj = js.Dynamic.literal(intl = intl)
+  
     __obj.asInstanceOf[Anon_Intl]
   }
 }

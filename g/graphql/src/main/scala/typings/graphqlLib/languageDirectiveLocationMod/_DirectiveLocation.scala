@@ -53,26 +53,8 @@ object _DirectiveLocation {
     UNION: graphqlLib.graphqlLibStrings.UNION,
     VARIABLE_DEFINITION: graphqlLib.graphqlLibStrings.VARIABLE_DEFINITION
   ): _DirectiveLocation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARGUMENT_DEFINITION")(ARGUMENT_DEFINITION)
-    __obj.updateDynamic("ENUM")(ENUM)
-    __obj.updateDynamic("ENUM_VALUE")(ENUM_VALUE)
-    __obj.updateDynamic("FIELD")(FIELD)
-    __obj.updateDynamic("FIELD_DEFINITION")(FIELD_DEFINITION)
-    __obj.updateDynamic("FRAGMENT_DEFINITION")(FRAGMENT_DEFINITION)
-    __obj.updateDynamic("FRAGMENT_SPREAD")(FRAGMENT_SPREAD)
-    __obj.updateDynamic("INLINE_FRAGMENT")(INLINE_FRAGMENT)
-    __obj.updateDynamic("INPUT_FIELD_DEFINITION")(INPUT_FIELD_DEFINITION)
-    __obj.updateDynamic("INPUT_OBJECT")(INPUT_OBJECT)
-    __obj.updateDynamic("INTERFACE")(INTERFACE)
-    __obj.updateDynamic("MUTATION")(MUTATION)
-    __obj.updateDynamic("OBJECT")(OBJECT)
-    __obj.updateDynamic("QUERY")(QUERY)
-    __obj.updateDynamic("SCALAR")(SCALAR)
-    __obj.updateDynamic("SCHEMA")(SCHEMA)
-    __obj.updateDynamic("SUBSCRIPTION")(SUBSCRIPTION)
-    __obj.updateDynamic("UNION")(UNION)
-    __obj.updateDynamic("VARIABLE_DEFINITION")(VARIABLE_DEFINITION)
+    val __obj = js.Dynamic.literal(ARGUMENT_DEFINITION = ARGUMENT_DEFINITION, ENUM = ENUM, ENUM_VALUE = ENUM_VALUE, FIELD = FIELD, FIELD_DEFINITION = FIELD_DEFINITION, FRAGMENT_DEFINITION = FRAGMENT_DEFINITION, FRAGMENT_SPREAD = FRAGMENT_SPREAD, INLINE_FRAGMENT = INLINE_FRAGMENT, INPUT_FIELD_DEFINITION = INPUT_FIELD_DEFINITION, INPUT_OBJECT = INPUT_OBJECT, INTERFACE = INTERFACE, MUTATION = MUTATION, OBJECT = OBJECT, QUERY = QUERY, SCALAR = SCALAR, SCHEMA = SCHEMA, SUBSCRIPTION = SUBSCRIPTION, UNION = UNION, VARIABLE_DEFINITION = VARIABLE_DEFINITION)
+  
     __obj.asInstanceOf[_DirectiveLocation]
   }
 }

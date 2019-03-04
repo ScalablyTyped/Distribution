@@ -32,17 +32,8 @@ object BindingToSyntax {
     toSelf: js.Function0[BindingInWhenOnSyntax[T]],
     toService: js.Function1[ServiceIdentifier[T], scala.Unit]
   ): BindingToSyntax[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("to")(to)
-    __obj.updateDynamic("toAutoFactory")(toAutoFactory)
-    __obj.updateDynamic("toConstantValue")(toConstantValue)
-    __obj.updateDynamic("toConstructor")(toConstructor)
-    __obj.updateDynamic("toDynamicValue")(toDynamicValue)
-    __obj.updateDynamic("toFactory")(toFactory)
-    __obj.updateDynamic("toFunction")(toFunction)
-    __obj.updateDynamic("toProvider")(toProvider)
-    __obj.updateDynamic("toSelf")(toSelf)
-    __obj.updateDynamic("toService")(toService)
+    val __obj = js.Dynamic.literal(to = to, toAutoFactory = toAutoFactory, toConstantValue = toConstantValue, toConstructor = toConstructor, toDynamicValue = toDynamicValue, toFactory = toFactory, toFunction = toFunction, toProvider = toProvider, toSelf = toSelf, toService = toService)
+  
     __obj.asInstanceOf[BindingToSyntax[T]]
   }
 }

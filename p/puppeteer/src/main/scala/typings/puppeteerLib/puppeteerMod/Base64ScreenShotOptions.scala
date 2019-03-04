@@ -21,8 +21,7 @@ object Base64ScreenShotOptions {
     quality: scala.Int | scala.Double = null,
     `type`: puppeteerLib.puppeteerLibStrings.jpeg | puppeteerLib.puppeteerLibStrings.png = null
   ): Base64ScreenShotOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encoding")(encoding)
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (clip != null) __obj.updateDynamic("clip")(clip)
     if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage)
     if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground)

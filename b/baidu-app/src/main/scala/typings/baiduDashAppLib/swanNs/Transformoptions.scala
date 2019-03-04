@@ -29,13 +29,8 @@ object Transformoptions {
     translateX: scala.Double,
     translateY: scala.Double
   ): Transformoptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scaleX")(scaleX)
-    __obj.updateDynamic("scaleY")(scaleY)
-    __obj.updateDynamic("skewX")(skewX)
-    __obj.updateDynamic("skewY")(skewY)
-    __obj.updateDynamic("translateX")(translateX)
-    __obj.updateDynamic("translateY")(translateY)
+    val __obj = js.Dynamic.literal(scaleX = scaleX, scaleY = scaleY, skewX = skewX, skewY = skewY, translateX = translateX, translateY = translateY)
+  
     __obj.asInstanceOf[Transformoptions]
   }
 }

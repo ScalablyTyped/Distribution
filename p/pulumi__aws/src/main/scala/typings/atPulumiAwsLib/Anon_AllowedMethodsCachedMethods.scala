@@ -38,12 +38,7 @@ object Anon_AllowedMethodsCachedMethods {
     smoothStreaming: js.UndefOr[scala.Boolean] = js.undefined,
     trustedSigners: js.Array[java.lang.String] = null
   ): Anon_AllowedMethodsCachedMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedMethods")(allowedMethods)
-    __obj.updateDynamic("cachedMethods")(cachedMethods)
-    __obj.updateDynamic("forwardedValues")(forwardedValues)
-    __obj.updateDynamic("targetOriginId")(targetOriginId)
-    __obj.updateDynamic("viewerProtocolPolicy")(viewerProtocolPolicy)
+    val __obj = js.Dynamic.literal(allowedMethods = allowedMethods, cachedMethods = cachedMethods, forwardedValues = forwardedValues, targetOriginId = targetOriginId, viewerProtocolPolicy = viewerProtocolPolicy)
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
     if (fieldLevelEncryptionId != null) __obj.updateDynamic("fieldLevelEncryptionId")(fieldLevelEncryptionId)

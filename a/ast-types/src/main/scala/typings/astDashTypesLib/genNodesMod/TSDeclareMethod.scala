@@ -53,15 +53,9 @@ object TSDeclareMethod {
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind | astDashTypesLib.genKindsMod.NoopKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): TSDeclareMethod = {
-    val __obj = js.Dynamic.literal(`abstract` = `abstract`, `type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(async = async, computed = computed, generator = generator, key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional, params = params, static = static)
+    __obj.updateDynamic("abstract")(`abstract`)
+    __obj.updateDynamic("type")(`type`)
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

@@ -27,10 +27,8 @@ object BlockContentToken {
     `type`: java.lang.String,
     lines: js.Tuple2[scala.Double, scala.Double] = null
   ): BlockContentToken = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("level")(level)
+    val __obj = js.Dynamic.literal(children = children, content = content, level = level)
+    __obj.updateDynamic("type")(`type`)
     if (lines != null) __obj.updateDynamic("lines")(lines)
     __obj.asInstanceOf[BlockContentToken]
   }

@@ -16,9 +16,8 @@ object Anon_State {
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],
     transactions: js.Array[prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S]]
   ): Anon_State[S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("transactions")(transactions)
+    val __obj = js.Dynamic.literal(state = state, transactions = transactions)
+  
     __obj.asInstanceOf[Anon_State[S]]
   }
 }

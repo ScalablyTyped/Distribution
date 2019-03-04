@@ -38,20 +38,8 @@ object DeveloperMetadata {
     setValue: js.Function1[java.lang.String, DeveloperMetadata],
     setVisibility: js.Function1[DeveloperMetadataVisibility, DeveloperMetadata]
   ): DeveloperMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("getLocation")(getLocation)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("getVisibility")(getVisibility)
-    __obj.updateDynamic("moveToColumn")(moveToColumn)
-    __obj.updateDynamic("moveToRow")(moveToRow)
-    __obj.updateDynamic("moveToSheet")(moveToSheet)
-    __obj.updateDynamic("moveToSpreadsheet")(moveToSpreadsheet)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setKey")(setKey)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("setVisibility")(setVisibility)
+    val __obj = js.Dynamic.literal(getId = getId, getKey = getKey, getLocation = getLocation, getValue = getValue, getVisibility = getVisibility, moveToColumn = moveToColumn, moveToRow = moveToRow, moveToSheet = moveToSheet, moveToSpreadsheet = moveToSpreadsheet, remove = remove, setKey = setKey, setValue = setValue, setVisibility = setVisibility)
+  
     __obj.asInstanceOf[DeveloperMetadata]
   }
 }

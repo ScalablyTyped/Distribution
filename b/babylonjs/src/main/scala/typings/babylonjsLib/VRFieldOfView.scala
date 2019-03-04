@@ -20,11 +20,8 @@ object VRFieldOfView {
     rightDegrees: scala.Double,
     upDegrees: scala.Double
   ): VRFieldOfView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("downDegrees")(downDegrees)
-    __obj.updateDynamic("leftDegrees")(leftDegrees)
-    __obj.updateDynamic("rightDegrees")(rightDegrees)
-    __obj.updateDynamic("upDegrees")(upDegrees)
+    val __obj = js.Dynamic.literal(downDegrees = downDegrees, leftDegrees = leftDegrees, rightDegrees = rightDegrees, upDegrees = upDegrees)
+  
     __obj.asInstanceOf[VRFieldOfView]
   }
 }

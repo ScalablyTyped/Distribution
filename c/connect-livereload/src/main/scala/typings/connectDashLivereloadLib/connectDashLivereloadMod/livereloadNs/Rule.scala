@@ -13,8 +13,8 @@ trait Rule extends js.Object {
 object Rule {
   @scala.inline
   def apply(fn: js.Function2[java.lang.String, java.lang.String, java.lang.String], `match`: stdLib.RegExp): Rule = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("fn")(fn)
+    val __obj = js.Dynamic.literal(fn = fn)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Rule]
   }
 }

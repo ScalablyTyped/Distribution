@@ -14,10 +14,8 @@ trait Anon_CancelLCauseFlag extends js.Object {
 object Anon_CancelLCauseFlag {
   @scala.inline
   def apply(Cancel: scala.Boolean, lCauseFlag: scala.Double, pWB2: js.Any): Anon_CancelLCauseFlag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("lCauseFlag")(lCauseFlag)
-    __obj.updateDynamic("pWB2")(pWB2)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, lCauseFlag = lCauseFlag, pWB2 = pWB2)
+  
     __obj.asInstanceOf[Anon_CancelLCauseFlag]
   }
 }

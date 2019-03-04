@@ -70,16 +70,8 @@ object Projector {
     scheduleRender: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): Projector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("detach")(detach)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("merge")(merge)
-    __obj.updateDynamic("renderNow")(renderNow)
-    __obj.updateDynamic("replace")(replace)
-    __obj.updateDynamic("resume")(resume)
-    __obj.updateDynamic("scheduleRender")(scheduleRender)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(append = append, detach = detach, insertBefore = insertBefore, merge = merge, renderNow = renderNow, replace = replace, resume = resume, scheduleRender = scheduleRender, stop = stop)
+  
     __obj.asInstanceOf[Projector]
   }
 }

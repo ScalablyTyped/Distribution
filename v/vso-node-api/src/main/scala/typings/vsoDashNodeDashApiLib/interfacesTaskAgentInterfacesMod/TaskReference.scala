@@ -20,11 +20,8 @@ object TaskReference {
     name: java.lang.String,
     version: java.lang.String
   ): TaskReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("inputs")(inputs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(id = id, inputs = inputs, name = name, version = version)
+  
     __obj.asInstanceOf[TaskReference]
   }
 }

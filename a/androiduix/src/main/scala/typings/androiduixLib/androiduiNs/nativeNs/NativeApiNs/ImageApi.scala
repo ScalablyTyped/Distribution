@@ -35,11 +35,8 @@ object ImageApi {
     loadImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
     recycleImage: js.Function1[scala.Double, scala.Unit]
   ): ImageApi = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createImage")(createImage)
-    __obj.updateDynamic("getPixels")(getPixels)
-    __obj.updateDynamic("loadImage")(loadImage)
-    __obj.updateDynamic("recycleImage")(recycleImage)
+    val __obj = js.Dynamic.literal(createImage = createImage, getPixels = getPixels, loadImage = loadImage, recycleImage = recycleImage)
+  
     __obj.asInstanceOf[ImageApi]
   }
 }

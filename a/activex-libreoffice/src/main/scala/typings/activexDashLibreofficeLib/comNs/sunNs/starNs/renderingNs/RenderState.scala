@@ -56,11 +56,8 @@ object RenderState {
     CompositeOperation: scala.Double,
     DeviceColor: activexDashInteropLib.SafeArray[ColorComponent]
   ): RenderState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AffineTransform")(AffineTransform)
-    __obj.updateDynamic("Clip")(Clip)
-    __obj.updateDynamic("CompositeOperation")(CompositeOperation)
-    __obj.updateDynamic("DeviceColor")(DeviceColor)
+    val __obj = js.Dynamic.literal(AffineTransform = AffineTransform, Clip = Clip, CompositeOperation = CompositeOperation, DeviceColor = DeviceColor)
+  
     __obj.asInstanceOf[RenderState]
   }
 }

@@ -13,8 +13,7 @@ trait CustomMatcherResult extends js.Object {
 object CustomMatcherResult {
   @scala.inline
   def apply(pass: scala.Boolean, message: java.lang.String = null): CustomMatcherResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pass")(pass)
+    val __obj = js.Dynamic.literal(pass = pass)
     if (message != null) __obj.updateDynamic("message")(message)
     __obj.asInstanceOf[CustomMatcherResult]
   }

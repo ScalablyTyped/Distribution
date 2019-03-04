@@ -17,8 +17,8 @@ class Path protected () extends js.Object {
   def this(pathOrString: js.Array[java.lang.String]) = this()
   def this(pathOrString: java.lang.String, pieceNum: scala.Double) = this()
   def this(pathOrString: js.Array[java.lang.String], pieceNum: scala.Double) = this()
-  var `pieceNum_`: js.Any = js.native
-  var `pieces_`: js.Any = js.native
+  var pieceNum_ : js.Any = js.native
+  var pieces_ : js.Any = js.native
   def child(childPathObj: Path): Path = js.native
   /**
     * @param {string|!Path} childPathObj

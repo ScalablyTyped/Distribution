@@ -13,9 +13,8 @@ trait KeyComponentsPublic extends _Key {
 object KeyComponentsPublic {
   @scala.inline
   def apply(e: nodeLib.Buffer | scala.Double, n: nodeLib.Buffer): KeyComponentsPublic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    __obj.updateDynamic("n")(n)
+    val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], n = n)
+  
     __obj.asInstanceOf[KeyComponentsPublic]
   }
 }

@@ -22,9 +22,8 @@ object Anon_FindNegativeTabindex {
     findNegativeTabindex: scala.Boolean,
     findPositiveTabindex: jqueryDashFocusableLib.jqueryDashFocusableLibNumbers.`true`
   ): Anon_FindNegativeTabindex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findNegativeTabindex")(findNegativeTabindex)
-    __obj.updateDynamic("findPositiveTabindex")(findPositiveTabindex)
+    val __obj = js.Dynamic.literal(findNegativeTabindex = findNegativeTabindex, findPositiveTabindex = findPositiveTabindex)
+  
     __obj.asInstanceOf[Anon_FindNegativeTabindex]
   }
 }

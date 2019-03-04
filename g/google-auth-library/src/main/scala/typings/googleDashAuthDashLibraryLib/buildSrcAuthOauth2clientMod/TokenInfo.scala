@@ -67,10 +67,7 @@ object TokenInfo {
     sub: java.lang.String = null,
     user_id: java.lang.String = null
   ): TokenInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aud")(aud)
-    __obj.updateDynamic("expiry_date")(expiry_date)
-    __obj.updateDynamic("scopes")(scopes)
+    val __obj = js.Dynamic.literal(aud = aud, expiry_date = expiry_date, scopes = scopes)
     if (access_type != null) __obj.updateDynamic("access_type")(access_type)
     if (azp != null) __obj.updateDynamic("azp")(azp)
     if (sub != null) __obj.updateDynamic("sub")(sub)

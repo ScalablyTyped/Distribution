@@ -14,10 +14,8 @@ trait Anon_FamilySize extends js.Object {
 object Anon_FamilySize {
   @scala.inline
   def apply(family: java.lang.String, size: scala.Double, weight: java.lang.String): Anon_FamilySize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("family")(family)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(family = family, size = size, weight = weight)
+  
     __obj.asInstanceOf[Anon_FamilySize]
   }
 }

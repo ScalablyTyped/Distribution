@@ -17,8 +17,8 @@ object MatchedRoute {
   def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.MatchedRoute with js.Any */](`match`: reactDashRouterLib.reactDashRouterMod.`match`[Params], route: RouteConfig): MatchedRoute[Params] = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("route")(route)
+    val __obj = js.Dynamic.literal(route = route)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[MatchedRoute[Params]]
   }
 }

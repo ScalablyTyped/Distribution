@@ -18,10 +18,8 @@ object SequenceSqlFunction {
     next: js.Function0[scala.Double],
     reset: js.Function0[scala.Double]
   ): SequenceSqlFunction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("current")(current)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(current = current, next = next, reset = reset)
+  
     __obj.asInstanceOf[SequenceSqlFunction]
   }
 }

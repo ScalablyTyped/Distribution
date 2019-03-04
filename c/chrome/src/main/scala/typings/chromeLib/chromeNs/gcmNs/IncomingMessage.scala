@@ -24,8 +24,7 @@ trait IncomingMessage extends js.Object {
 object IncomingMessage {
   @scala.inline
   def apply(data: js.Object, collapseKey: java.lang.String = null, from: java.lang.String = null): IncomingMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
     if (collapseKey != null) __obj.updateDynamic("collapseKey")(collapseKey)
     if (from != null) __obj.updateDynamic("from")(from)
     __obj.asInstanceOf[IncomingMessage]

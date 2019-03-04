@@ -14,9 +14,7 @@ trait RequestAuthorization extends js.Object {
 object RequestAuthorization {
   @scala.inline
   def apply(credentials: java.lang.String, scheme: java.lang.String, basic: restifyLib.Anon_Password = null): RequestAuthorization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credentials")(credentials)
-    __obj.updateDynamic("scheme")(scheme)
+    val __obj = js.Dynamic.literal(credentials = credentials, scheme = scheme)
     if (basic != null) __obj.updateDynamic("basic")(basic)
     __obj.asInstanceOf[RequestAuthorization]
   }

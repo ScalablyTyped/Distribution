@@ -30,9 +30,7 @@ object MapType {
     radius: scala.Int | scala.Double = null,
     tileSize: Size = null
   ): MapType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTile")(getTile)
-    __obj.updateDynamic("releaseTile")(releaseTile)
+    val __obj = js.Dynamic.literal(getTile = getTile, releaseTile = releaseTile)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])

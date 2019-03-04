@@ -30,16 +30,8 @@ object DevtoolModuleFilenameTemplateInfo {
     resourcePath: java.lang.String,
     shortIdentifier: java.lang.String
   ): DevtoolModuleFilenameTemplateInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("absoluteResourcePath")(absoluteResourcePath)
-    __obj.updateDynamic("allLoaders")(allLoaders)
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("moduleId")(moduleId)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("resource")(resource)
-    __obj.updateDynamic("resourcePath")(resourcePath)
-    __obj.updateDynamic("shortIdentifier")(shortIdentifier)
+    val __obj = js.Dynamic.literal(absoluteResourcePath = absoluteResourcePath, allLoaders = allLoaders, hash = hash, identifier = identifier, moduleId = moduleId, query = query, resource = resource, resourcePath = resourcePath, shortIdentifier = shortIdentifier)
+  
     __obj.asInstanceOf[DevtoolModuleFilenameTemplateInfo]
   }
 }

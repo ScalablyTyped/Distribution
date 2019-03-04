@@ -35,11 +35,8 @@ object ChildNode {
     remove: js.Function0[scala.Unit],
     replaceWith: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
   ): ChildNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("replaceWith")(replaceWith)
+    val __obj = js.Dynamic.literal(after = after, before = before, remove = remove, replaceWith = replaceWith)
+  
     __obj.asInstanceOf[ChildNode]
   }
 }

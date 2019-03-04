@@ -49,8 +49,7 @@ object Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrint {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(videoId = videoId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

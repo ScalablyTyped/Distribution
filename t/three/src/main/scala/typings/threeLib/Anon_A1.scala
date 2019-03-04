@@ -52,27 +52,8 @@ object Anon_A1 {
     smootherstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
     smoothstep: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
   ): Anon_A1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEG2RAD")(DEG2RAD)
-    __obj.updateDynamic("RAD2DEG")(RAD2DEG)
-    __obj.updateDynamic("ceilPowerOfTwo")(ceilPowerOfTwo)
-    __obj.updateDynamic("clamp")(clamp)
-    __obj.updateDynamic("degToRad")(degToRad)
-    __obj.updateDynamic("euclideanModulo")(euclideanModulo)
-    __obj.updateDynamic("floorPowerOfTwo")(floorPowerOfTwo)
-    __obj.updateDynamic("generateUUID")(generateUUID)
-    __obj.updateDynamic("isPowerOfTwo")(isPowerOfTwo)
-    __obj.updateDynamic("lerp")(lerp)
-    __obj.updateDynamic("mapLinear")(mapLinear)
-    __obj.updateDynamic("nearestPowerOfTwo")(nearestPowerOfTwo)
-    __obj.updateDynamic("nextPowerOfTwo")(nextPowerOfTwo)
-    __obj.updateDynamic("radToDeg")(radToDeg)
-    __obj.updateDynamic("randFloat")(randFloat)
-    __obj.updateDynamic("randFloatSpread")(randFloatSpread)
-    __obj.updateDynamic("randInt")(randInt)
-    __obj.updateDynamic("random16")(random16)
-    __obj.updateDynamic("smootherstep")(smootherstep)
-    __obj.updateDynamic("smoothstep")(smoothstep)
+    val __obj = js.Dynamic.literal(DEG2RAD = DEG2RAD, RAD2DEG = RAD2DEG, ceilPowerOfTwo = ceilPowerOfTwo, clamp = clamp, degToRad = degToRad, euclideanModulo = euclideanModulo, floorPowerOfTwo = floorPowerOfTwo, generateUUID = generateUUID, isPowerOfTwo = isPowerOfTwo, lerp = lerp, mapLinear = mapLinear, nearestPowerOfTwo = nearestPowerOfTwo, nextPowerOfTwo = nextPowerOfTwo, radToDeg = radToDeg, randFloat = randFloat, randFloatSpread = randFloatSpread, randInt = randInt, random16 = random16, smootherstep = smootherstep, smoothstep = smoothstep)
+  
     __obj.asInstanceOf[Anon_A1]
   }
 }

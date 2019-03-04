@@ -146,7 +146,8 @@ object SequenceQuality {
     truthFN: js.UndefOr[decimal] = js.undefined,
     truthTP: js.UndefOr[decimal] = js.undefined
   ): SequenceQuality = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (_end != null) __obj.updateDynamic("_end")(_end)
     if (_fScore != null) __obj.updateDynamic("_fScore")(_fScore)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

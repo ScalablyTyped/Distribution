@@ -76,8 +76,7 @@ object CircularProgressProps {
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     value: scala.Int | scala.Double = null
   ): CircularProgressProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
     if (className != null) __obj.updateDynamic("className")(className)
     if (determinateDashoffset != null) __obj.updateDynamic("determinateDashoffset")(determinateDashoffset.asInstanceOf[js.Any])

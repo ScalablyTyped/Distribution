@@ -52,8 +52,7 @@ object Anon_CanResume {
     totalBytes: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.DoubleDelta = null,
     url: firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.StringDelta = null
   ): Anon_CanResume = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
     if (canResume != null) __obj.updateDynamic("canResume")(canResume)
     if (danger != null) __obj.updateDynamic("danger")(danger)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)

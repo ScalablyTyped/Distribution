@@ -24,9 +24,8 @@ object MetaProperty {
     property: astDashTypesLib.genKindsMod.IdentifierKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.MetaProperty
   ): MetaProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(meta = meta, property = property)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MetaProperty]
   }
 }

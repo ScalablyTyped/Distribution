@@ -20,11 +20,8 @@ object Anon_NewXMLNode {
     Reason: scala.Double,
     Sel: activexDashWordLib.WordNs.Selection
   ): Anon_NewXMLNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NewXMLNode")(NewXMLNode)
-    __obj.updateDynamic("OldXMLNode")(OldXMLNode)
-    __obj.updateDynamic("Reason")(Reason)
-    __obj.updateDynamic("Sel")(Sel)
+    val __obj = js.Dynamic.literal(NewXMLNode = NewXMLNode, OldXMLNode = OldXMLNode, Reason = Reason, Sel = Sel)
+  
     __obj.asInstanceOf[Anon_NewXMLNode]
   }
 }

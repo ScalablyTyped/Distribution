@@ -20,11 +20,8 @@ object Anon_ExtendedJsFonts {
     swfPath: java.lang.String,
     userDefinedFonts: js.Array[java.lang.String]
   ): Anon_ExtendedJsFonts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extendedJsFonts")(extendedJsFonts)
-    __obj.updateDynamic("swfContainerId")(swfContainerId)
-    __obj.updateDynamic("swfPath")(swfPath)
-    __obj.updateDynamic("userDefinedFonts")(userDefinedFonts)
+    val __obj = js.Dynamic.literal(extendedJsFonts = extendedJsFonts, swfContainerId = swfContainerId, swfPath = swfPath, userDefinedFonts = userDefinedFonts)
+  
     __obj.asInstanceOf[Anon_ExtendedJsFonts]
   }
 }

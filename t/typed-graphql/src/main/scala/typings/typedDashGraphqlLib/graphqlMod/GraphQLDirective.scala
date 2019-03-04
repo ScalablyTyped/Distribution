@@ -25,13 +25,8 @@ object GraphQLDirective {
     onFragment: scala.Boolean,
     onOperation: scala.Boolean
   ): GraphQLDirective = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("onField")(onField)
-    __obj.updateDynamic("onFragment")(onFragment)
-    __obj.updateDynamic("onOperation")(onOperation)
+    val __obj = js.Dynamic.literal(args = args, description = description, name = name, onField = onField, onFragment = onFragment, onOperation = onOperation)
+  
     __obj.asInstanceOf[GraphQLDirective]
   }
 }

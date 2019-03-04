@@ -46,24 +46,8 @@ object ModularScaleRatio {
     perfectFifth: scala.Double,
     perfectFourth: scala.Double
   ): ModularScaleRatio = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("augFourth")(augFourth)
-    __obj.updateDynamic("doubleOctave")(doubleOctave)
-    __obj.updateDynamic("goldenSection")(goldenSection)
-    __obj.updateDynamic("majorEleventh")(majorEleventh)
-    __obj.updateDynamic("majorSecond")(majorSecond)
-    __obj.updateDynamic("majorSeventh")(majorSeventh)
-    __obj.updateDynamic("majorSixth")(majorSixth)
-    __obj.updateDynamic("majorTenth")(majorTenth)
-    __obj.updateDynamic("majorThird")(majorThird)
-    __obj.updateDynamic("majorTwelfth")(majorTwelfth)
-    __obj.updateDynamic("minorSecond")(minorSecond)
-    __obj.updateDynamic("minorSeventh")(minorSeventh)
-    __obj.updateDynamic("minorSixth")(minorSixth)
-    __obj.updateDynamic("minorThird")(minorThird)
-    __obj.updateDynamic("octave")(octave)
-    __obj.updateDynamic("perfectFifth")(perfectFifth)
-    __obj.updateDynamic("perfectFourth")(perfectFourth)
+    val __obj = js.Dynamic.literal(augFourth = augFourth, doubleOctave = doubleOctave, goldenSection = goldenSection, majorEleventh = majorEleventh, majorSecond = majorSecond, majorSeventh = majorSeventh, majorSixth = majorSixth, majorTenth = majorTenth, majorThird = majorThird, majorTwelfth = majorTwelfth, minorSecond = minorSecond, minorSeventh = minorSeventh, minorSixth = minorSixth, minorThird = minorThird, octave = octave, perfectFifth = perfectFifth, perfectFourth = perfectFourth)
+  
     __obj.asInstanceOf[ModularScaleRatio]
   }
 }

@@ -39,12 +39,8 @@ object Spec {
     options: js.Object,
     toString: js.Function0[java.lang.String]
   ): Spec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conform")(conform)
-    __obj.updateDynamic("explain")(explain)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("toString")(toString)
+    val __obj = js.Dynamic.literal(conform = conform, explain = explain, name = name, options = options, toString = toString)
+  
     __obj.asInstanceOf[Spec]
   }
 }

@@ -46,12 +46,8 @@ object IDiscount {
     start: scala.Double,
     subscription: java.lang.String
   ): IDiscount = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("coupon")(coupon)
-    __obj.updateDynamic("customer")(customer)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("subscription")(subscription)
+    val __obj = js.Dynamic.literal(coupon = coupon, customer = customer, end = end, start = start, subscription = subscription)
+    __obj.updateDynamic("object")(`object`)
     __obj.asInstanceOf[IDiscount]
   }
 }

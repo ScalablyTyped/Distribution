@@ -29,14 +29,8 @@ object HTTPInjectResponse {
     statusMessage: java.lang.String,
     trailers: js.Object
   ): HTTPInjectResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("raw")(raw)
-    __obj.updateDynamic("rawPayload")(rawPayload)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusMessage")(statusMessage)
-    __obj.updateDynamic("trailers")(trailers)
+    val __obj = js.Dynamic.literal(headers = headers, payload = payload, raw = raw, rawPayload = rawPayload, statusCode = statusCode, statusMessage = statusMessage, trailers = trailers)
+  
     __obj.asInstanceOf[HTTPInjectResponse]
   }
 }

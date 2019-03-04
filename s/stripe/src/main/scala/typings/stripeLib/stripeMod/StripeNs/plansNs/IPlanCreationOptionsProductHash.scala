@@ -35,8 +35,7 @@ object IPlanCreationOptionsProductHash {
     metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
     statement_descriptor: java.lang.String = null
   ): IPlanCreationOptionsProductHash = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (id != null) __obj.updateDynamic("id")(id)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)

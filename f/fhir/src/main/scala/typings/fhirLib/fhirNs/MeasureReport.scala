@@ -94,10 +94,8 @@ object MeasureReport {
     resourceType: code = null,
     text: Narrative = null
   ): MeasureReport = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("measure")(measure)
-    __obj.updateDynamic("period")(period)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(measure = measure, period = period, status = status)
+    __obj.updateDynamic("type")(`type`)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

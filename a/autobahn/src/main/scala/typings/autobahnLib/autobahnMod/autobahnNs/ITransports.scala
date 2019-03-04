@@ -20,11 +20,8 @@ object ITransports {
     list: js.Function0[js.Array[java.lang.String]],
     register: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ITransports = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("isRegistered")(isRegistered)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("register")(register)
+    val __obj = js.Dynamic.literal(get = get, isRegistered = isRegistered, list = list, register = register)
+  
     __obj.asInstanceOf[ITransports]
   }
 }

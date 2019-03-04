@@ -26,14 +26,8 @@ object Anon_AggregationType {
     RepositoryLanguageAnalytics: js.Any,
     ResultPhase: Anon_EnumValuesAnonFullPreliminary
   ): Anon_AggregationType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AggregationType")(AggregationType)
-    __obj.updateDynamic("CodeChangeTrendItem")(CodeChangeTrendItem)
-    __obj.updateDynamic("ProjectActivityMetrics")(ProjectActivityMetrics)
-    __obj.updateDynamic("ProjectLanguageAnalytics")(ProjectLanguageAnalytics)
-    __obj.updateDynamic("RepositoryActivityMetrics")(RepositoryActivityMetrics)
-    __obj.updateDynamic("RepositoryLanguageAnalytics")(RepositoryLanguageAnalytics)
-    __obj.updateDynamic("ResultPhase")(ResultPhase)
+    val __obj = js.Dynamic.literal(AggregationType = AggregationType, CodeChangeTrendItem = CodeChangeTrendItem, ProjectActivityMetrics = ProjectActivityMetrics, ProjectLanguageAnalytics = ProjectLanguageAnalytics, RepositoryActivityMetrics = RepositoryActivityMetrics, RepositoryLanguageAnalytics = RepositoryLanguageAnalytics, ResultPhase = ResultPhase)
+  
     __obj.asInstanceOf[Anon_AggregationType]
   }
 }

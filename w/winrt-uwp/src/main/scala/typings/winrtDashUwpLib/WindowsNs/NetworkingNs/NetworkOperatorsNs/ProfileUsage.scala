@@ -16,9 +16,8 @@ trait ProfileUsage extends js.Object {
 object ProfileUsage {
   @scala.inline
   def apply(lastSyncTime: stdLib.Date, usageInMegabytes: scala.Double): ProfileUsage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lastSyncTime")(lastSyncTime)
-    __obj.updateDynamic("usageInMegabytes")(usageInMegabytes)
+    val __obj = js.Dynamic.literal(lastSyncTime = lastSyncTime, usageInMegabytes = usageInMegabytes)
+  
     __obj.asInstanceOf[ProfileUsage]
   }
 }

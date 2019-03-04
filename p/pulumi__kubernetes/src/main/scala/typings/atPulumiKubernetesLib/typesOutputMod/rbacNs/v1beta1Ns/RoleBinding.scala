@@ -50,12 +50,8 @@ object RoleBinding {
     roleRef: RoleRef,
     subjects: js.Array[Subject]
   ): RoleBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("roleRef")(roleRef)
-    __obj.updateDynamic("subjects")(subjects)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, roleRef = roleRef, subjects = subjects)
+  
     __obj.asInstanceOf[RoleBinding]
   }
 }

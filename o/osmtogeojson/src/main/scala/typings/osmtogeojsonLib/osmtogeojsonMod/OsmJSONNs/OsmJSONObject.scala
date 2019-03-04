@@ -12,8 +12,8 @@ trait OsmJSONObject extends js.Object {
 object OsmJSONObject {
   @scala.inline
   def apply(elements: js.Array[Node | Way | Relationship]): OsmJSONObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elements")(elements)
+    val __obj = js.Dynamic.literal(elements = elements)
+  
     __obj.asInstanceOf[OsmJSONObject]
   }
 }

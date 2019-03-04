@@ -12,8 +12,8 @@ trait JQueryStatic extends js.Object {
 object JQueryStatic {
   @scala.inline
   def apply(toast: js.Function1[toastOptions, scala.Unit]): JQueryStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toast")(toast)
+    val __obj = js.Dynamic.literal(toast = toast)
+  
     __obj.asInstanceOf[JQueryStatic]
   }
 }

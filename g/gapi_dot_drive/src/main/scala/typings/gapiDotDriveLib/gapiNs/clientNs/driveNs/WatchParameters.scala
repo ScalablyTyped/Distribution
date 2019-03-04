@@ -20,8 +20,7 @@ object WatchParameters {
     revisionId: java.lang.String = null,
     supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
   ): WatchParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (resource != null) __obj.updateDynamic("resource")(resource)
     if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
     if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)

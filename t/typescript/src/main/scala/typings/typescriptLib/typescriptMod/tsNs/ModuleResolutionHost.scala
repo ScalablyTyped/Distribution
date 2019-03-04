@@ -30,9 +30,7 @@ object ModuleResolutionHost {
     realpath: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
     trace: js.Function1[/* s */ java.lang.String, scala.Unit] = null
   ): ModuleResolutionHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileExists")(fileExists)
-    __obj.updateDynamic("readFile")(readFile)
+    val __obj = js.Dynamic.literal(fileExists = fileExists, readFile = readFile)
     if (directoryExists != null) __obj.updateDynamic("directoryExists")(directoryExists)
     if (getCurrentDirectory != null) __obj.updateDynamic("getCurrentDirectory")(getCurrentDirectory)
     if (getDirectories != null) __obj.updateDynamic("getDirectories")(getDirectories)

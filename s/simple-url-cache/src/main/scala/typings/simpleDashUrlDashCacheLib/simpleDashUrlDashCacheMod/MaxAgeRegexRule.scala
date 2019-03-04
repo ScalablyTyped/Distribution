@@ -12,9 +12,8 @@ trait MaxAgeRegexRule extends RegexRule {
 object MaxAgeRegexRule {
   @scala.inline
   def apply(maxAge: scala.Double, regex: stdLib.RegExp): MaxAgeRegexRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxAge")(maxAge)
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(maxAge = maxAge, regex = regex)
+  
     __obj.asInstanceOf[MaxAgeRegexRule]
   }
 }

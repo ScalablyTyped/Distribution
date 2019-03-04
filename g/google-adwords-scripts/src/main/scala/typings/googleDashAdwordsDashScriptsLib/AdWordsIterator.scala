@@ -18,10 +18,8 @@ object AdWordsIterator {
     next: js.Function0[E],
     totalNumEntities: js.Function0[scala.Double]
   ): AdWordsIterator[E] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hasNext")(hasNext)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("totalNumEntities")(totalNumEntities)
+    val __obj = js.Dynamic.literal(hasNext = hasNext, next = next, totalNumEntities = totalNumEntities)
+  
     __obj.asInstanceOf[AdWordsIterator[E]]
   }
 }

@@ -29,10 +29,8 @@ object FillGradientPath {
     stops: js.Array[GradientStop],
     `type`: exceljsLib.exceljsLibStrings.gradient
   ): FillGradientPath = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("gradient")(gradient)
-    __obj.updateDynamic("stops")(stops)
+    val __obj = js.Dynamic.literal(center = center, gradient = gradient, stops = stops)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FillGradientPath]
   }
 }

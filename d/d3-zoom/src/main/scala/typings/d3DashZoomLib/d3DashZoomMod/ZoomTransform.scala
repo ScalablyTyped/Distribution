@@ -126,21 +126,8 @@ object ZoomTransform {
     x: scala.Double,
     y: scala.Double
   ): ZoomTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("applyX")(applyX)
-    __obj.updateDynamic("applyY")(applyY)
-    __obj.updateDynamic("invert")(invert)
-    __obj.updateDynamic("invertX")(invertX)
-    __obj.updateDynamic("invertY")(invertY)
-    __obj.updateDynamic("k")(k)
-    __obj.updateDynamic("rescaleX")(rescaleX)
-    __obj.updateDynamic("rescaleY")(rescaleY)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("translate")(translate)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(apply = apply, applyX = applyX, applyY = applyY, invert = invert, invertX = invertX, invertY = invertY, k = k, rescaleX = rescaleX, rescaleY = rescaleY, scale = scale, toString = toString, translate = translate, x = x, y = y)
+  
     __obj.asInstanceOf[ZoomTransform]
   }
 }

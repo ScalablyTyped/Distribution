@@ -22,12 +22,8 @@ object Blob {
     filename: java.lang.String,
     signed_id: java.lang.String
   ): Blob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byte_size")(byte_size)
-    __obj.updateDynamic("checksum")(checksum)
-    __obj.updateDynamic("content_type")(content_type)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("signed_id")(signed_id)
+    val __obj = js.Dynamic.literal(byte_size = byte_size, checksum = checksum, content_type = content_type, filename = filename, signed_id = signed_id)
+  
     __obj.asInstanceOf[Blob]
   }
 }

@@ -24,10 +24,8 @@ object util {
     encode: js.Function1[js.Object, java.lang.String],
     hash: js.Function1[js.Any, java.lang.String]
   ): util = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("hash")(hash)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, hash = hash)
+  
     __obj.asInstanceOf[util]
   }
 }

@@ -26,14 +26,8 @@ object FocusableWrapper {
     setFocusableElement: js.Function1[stdLib.HTMLElement, scala.Unit],
     useSecondaryElement: js.Function0[scala.Unit]
   ): FocusableWrapper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventManager")(eventManager)
-    __obj.updateDynamic("focus")(focus)
-    __obj.updateDynamic("getFocusableElement")(getFocusableElement)
-    __obj.updateDynamic("listenersCount")(listenersCount)
-    __obj.updateDynamic("mainElement")(mainElement)
-    __obj.updateDynamic("setFocusableElement")(setFocusableElement)
-    __obj.updateDynamic("useSecondaryElement")(useSecondaryElement)
+    val __obj = js.Dynamic.literal(eventManager = eventManager, focus = focus, getFocusableElement = getFocusableElement, listenersCount = listenersCount, mainElement = mainElement, setFocusableElement = setFocusableElement, useSecondaryElement = useSecondaryElement)
+  
     __obj.asInstanceOf[FocusableWrapper]
   }
 }

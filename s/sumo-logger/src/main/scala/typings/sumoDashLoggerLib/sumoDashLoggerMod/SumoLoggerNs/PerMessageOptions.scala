@@ -21,10 +21,8 @@ trait PerMessageOptions extends js.Object {
 object PerMessageOptions {
   @scala.inline
   def apply(sessionKey: java.lang.String, timestamp: stdLib.Date, url: java.lang.String): PerMessageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sessionKey")(sessionKey)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(sessionKey = sessionKey, timestamp = timestamp, url = url)
+  
     __obj.asInstanceOf[PerMessageOptions]
   }
 }

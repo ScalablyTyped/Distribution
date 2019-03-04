@@ -22,12 +22,8 @@ object MaskOptions {
     maskChar: java.lang.String,
     permanents: js.Array[scala.Double]
   ): MaskOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysShowMask")(alwaysShowMask)
-    __obj.updateDynamic("formatChars")(formatChars)
-    __obj.updateDynamic("mask")(mask)
-    __obj.updateDynamic("maskChar")(maskChar)
-    __obj.updateDynamic("permanents")(permanents)
+    val __obj = js.Dynamic.literal(alwaysShowMask = alwaysShowMask, formatChars = formatChars, mask = mask, maskChar = maskChar, permanents = permanents)
+  
     __obj.asInstanceOf[MaskOptions]
   }
 }

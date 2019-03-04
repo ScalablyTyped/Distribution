@@ -12,8 +12,8 @@ trait ActiveXObjectNameMap extends js.Object {
 object ActiveXObjectNameMap {
   @scala.inline
   def apply(`PowerPoint.Application`: activexDashPowerpointLib.PowerPointNs.Application): ActiveXObjectNameMap = {
-    val __obj = js.Dynamic.literal(`PowerPoint.Application` = `PowerPoint.Application`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PowerPoint.Application")(`PowerPoint.Application`)
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
 }

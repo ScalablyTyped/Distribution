@@ -12,8 +12,8 @@ trait PivotSchemaRowAxis extends js.Object {
 object PivotSchemaRowAxis {
   @scala.inline
   def apply(tuples: js.Array[PivotTupleModel]): PivotSchemaRowAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tuples")(tuples)
+    val __obj = js.Dynamic.literal(tuples = tuples)
+  
     __obj.asInstanceOf[PivotSchemaRowAxis]
   }
 }

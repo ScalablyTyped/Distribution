@@ -37,12 +37,8 @@ object RestApiResponseStatusModel {
     status: RestApiResponseStatus,
     statusMessage: java.lang.String
   ): RestApiResponseStatusModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("operationDetails")(operationDetails)
-    __obj.updateDynamic("operationId")(operationId)
-    __obj.updateDynamic("percentageCompleted")(percentageCompleted)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("statusMessage")(statusMessage)
+    val __obj = js.Dynamic.literal(operationDetails = operationDetails, operationId = operationId, percentageCompleted = percentageCompleted, status = status, statusMessage = statusMessage)
+  
     __obj.asInstanceOf[RestApiResponseStatusModel]
   }
 }

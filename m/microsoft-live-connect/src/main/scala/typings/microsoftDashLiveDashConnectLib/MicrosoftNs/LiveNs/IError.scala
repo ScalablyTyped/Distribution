@@ -19,8 +19,8 @@ trait IError extends js.Object {
 object IError {
   @scala.inline
   def apply(error: microsoftDashLiveDashConnectLib.Anon_Code): IError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(error = error)
+  
     __obj.asInstanceOf[IError]
   }
 }

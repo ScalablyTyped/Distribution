@@ -13,9 +13,8 @@ trait Anon_InputOutputAnonAllowIncomplete extends js.Object {
 object Anon_InputOutputAnonAllowIncomplete {
   @scala.inline
   def apply(input: Anon_AllowIncomplete, output: Anon_Check): Anon_InputOutputAnonAllowIncomplete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(input = input, output = output)
+  
     __obj.asInstanceOf[Anon_InputOutputAnonAllowIncomplete]
   }
 }

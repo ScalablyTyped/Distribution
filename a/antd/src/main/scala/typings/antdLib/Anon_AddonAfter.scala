@@ -54,25 +54,8 @@ object Anon_AddonAfter {
     `type`: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
     value: propDashTypesLib.propDashTypesMod.Requireable[_]
   ): Anon_AddonAfter = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("addonAfter")(addonAfter)
-    __obj.updateDynamic("addonBefore")(addonBefore)
-    __obj.updateDynamic("allowClear")(allowClear)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("disabled")(disabled)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("onBlur")(onBlur)
-    __obj.updateDynamic("onFocus")(onFocus)
-    __obj.updateDynamic("onKeyDown")(onKeyDown)
-    __obj.updateDynamic("onKeyUp")(onKeyUp)
-    __obj.updateDynamic("onPressEnter")(onPressEnter)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("suffix")(suffix)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(addonAfter = addonAfter, addonBefore = addonBefore, allowClear = allowClear, className = className, defaultValue = defaultValue, disabled = disabled, id = id, maxLength = maxLength, onBlur = onBlur, onFocus = onFocus, onKeyDown = onKeyDown, onKeyUp = onKeyUp, onPressEnter = onPressEnter, prefix = prefix, prefixCls = prefixCls, size = size, suffix = suffix, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AddonAfter]
   }
 }

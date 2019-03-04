@@ -27,9 +27,8 @@ object ErrorHandler {
     closed: js.Function0[CloseAction],
     error: js.Function3[nodeLib.Error, vscodeDashJsonrpcLib.libMessagesMod.Message, scala.Double, ErrorAction]
   ): ErrorHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closed")(closed)
-    __obj.updateDynamic("error")(error)
+    val __obj = js.Dynamic.literal(closed = closed, error = error)
+  
     __obj.asInstanceOf[ErrorHandler]
   }
 }

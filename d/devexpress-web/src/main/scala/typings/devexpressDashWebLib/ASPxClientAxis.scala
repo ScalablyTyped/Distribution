@@ -28,15 +28,8 @@ object ASPxClientAxis {
     reverse: scala.Boolean,
     strips: js.Array[ASPxClientStrip]
   ): ASPxClientAxis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisTitle")(axisTitle)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("constantLines")(constantLines)
-    __obj.updateDynamic("diagram")(diagram)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("reverse")(reverse)
-    __obj.updateDynamic("strips")(strips)
+    val __obj = js.Dynamic.literal(axisTitle = axisTitle, chart = chart, constantLines = constantLines, diagram = diagram, name = name, range = range, reverse = reverse, strips = strips)
+  
     __obj.asInstanceOf[ASPxClientAxis]
   }
 }

@@ -16,9 +16,8 @@ object Anon_Error {
     error: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit],
     log: js.Function2[java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): Anon_Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(error = error, log = log)
+  
     __obj.asInstanceOf[Anon_Error]
   }
 }

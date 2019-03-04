@@ -101,18 +101,8 @@ object ViewState {
     toScreen: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]],
     toScreenNoRotation: js.Function3[js.Array[scala.Double], scala.Double, scala.Double, js.Array[scala.Double]]
   ): ViewState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("extent")(extent)
-    __obj.updateDynamic("resolution")(resolution)
-    __obj.updateDynamic("rotation")(rotation)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toMap")(toMap)
-    __obj.updateDynamic("toScreen")(toScreen)
-    __obj.updateDynamic("toScreenNoRotation")(toScreenNoRotation)
+    val __obj = js.Dynamic.literal(center = center, clone = clone, copy = copy, extent = extent, resolution = resolution, rotation = rotation, scale = scale, size = size, toMap = toMap, toScreen = toScreen, toScreenNoRotation = toScreenNoRotation)
+  
     __obj.asInstanceOf[ViewState]
   }
 }

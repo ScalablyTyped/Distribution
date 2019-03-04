@@ -72,17 +72,8 @@ object PostsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Post]
     ]
   ): PostsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getByPath")(getByPath)
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("publish")(publish)
-    __obj.updateDynamic("revert")(revert)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(delete = delete, get = get, getByPath = getByPath, insert = insert, list = list, patch = patch, publish = publish, revert = revert, search = search, update = update)
+  
     __obj.asInstanceOf[PostsResource]
   }
 }

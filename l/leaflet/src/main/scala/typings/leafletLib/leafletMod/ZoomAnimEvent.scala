@@ -20,11 +20,8 @@ object ZoomAnimEvent {
     `type`: java.lang.String,
     zoom: scala.Double
   ): ZoomAnimEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("noUpdate")(noUpdate)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(center = center, noUpdate = noUpdate, target = target, zoom = zoom)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ZoomAnimEvent]
   }
 }

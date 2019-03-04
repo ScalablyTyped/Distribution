@@ -1,35 +1,35 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.0.5-75248a"
+version := "1.0.5-88a235"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.10-2d17c8",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.3.5-040f4f",
-  "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.3-572dc3",
-  "org.scalablytyped" %%% "firebase__logger" % "0.1.7-d883ae",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.8-9a6cc6",
-  "org.scalablytyped" %%% "grpc" % "1.18.0-5de3d4",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
-  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190212Z-230f3e",
-  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190212Z-4af46b",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-9f7187",
-  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-439a87",
-  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-11ba80",
-  "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-194d25",
-  "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-fcd7c0",
-  "org.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-5309c0",
-  "org.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-22d711",
-  "org.scalablytyped" %%% "protobufjs__float" % "1.0.2-b6fcaa",
-  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-dcfcdb",
-  "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-7a72e9",
-  "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-a1c1c6",
-  "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-a2b675",
-  "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3")
+  "org.scalablytyped" %%% "firebase__app" % "0.3.10-d752dc",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.3.5-8b6709",
+  "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.3-a01059",
+  "org.scalablytyped" %%% "firebase__logger" % "0.1.7-4d839b",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.8-84fe78",
+  "org.scalablytyped" %%% "grpc" % "1.18.0-abbf5d",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
+  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190212Z-4b2ccf",
+  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190212Z-dfbe74",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-d4ffb6",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-c3e68e",
+  "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-a03f5d",
+  "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-86ab76",
+  "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-86ed03",
+  "org.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-04aaa9",
+  "org.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-a2cc95",
+  "org.scalablytyped" %%% "protobufjs__float" % "1.0.2-4b38c0",
+  "org.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-f020d2",
+  "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-ae7ee1",
+  "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-f0cb50",
+  "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-225760",
+  "org.scalablytyped" %%% "std" % "3.3-05be79",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

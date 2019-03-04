@@ -101,8 +101,7 @@ object Options {
       js.Array[scala.Double]
     ] = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rowToTilePoint")(rowToTilePoint)
+    val __obj = js.Dynamic.literal(rowToTilePoint = rowToTilePoint)
     if (aggregation != null) __obj.updateDynamic("aggregation")(aggregation)
     if (alphaScale != null) __obj.updateDynamic("alphaScale")(alphaScale)
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])

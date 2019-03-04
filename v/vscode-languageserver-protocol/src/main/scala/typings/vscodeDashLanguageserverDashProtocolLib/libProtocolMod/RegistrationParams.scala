@@ -12,8 +12,8 @@ trait RegistrationParams extends js.Object {
 object RegistrationParams {
   @scala.inline
   def apply(registrations: js.Array[Registration]): RegistrationParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registrations")(registrations)
+    val __obj = js.Dynamic.literal(registrations = registrations)
+  
     __obj.asInstanceOf[RegistrationParams]
   }
 }

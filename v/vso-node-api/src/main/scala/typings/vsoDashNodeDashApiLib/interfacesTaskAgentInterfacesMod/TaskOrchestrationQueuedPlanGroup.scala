@@ -24,13 +24,8 @@ object TaskOrchestrationQueuedPlanGroup {
     project: ProjectReference,
     queuePosition: scala.Double
   ): TaskOrchestrationQueuedPlanGroup = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("definition")(definition)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("planGroup")(planGroup)
-    __obj.updateDynamic("plans")(plans)
-    __obj.updateDynamic("project")(project)
-    __obj.updateDynamic("queuePosition")(queuePosition)
+    val __obj = js.Dynamic.literal(definition = definition, owner = owner, planGroup = planGroup, plans = plans, project = project, queuePosition = queuePosition)
+  
     __obj.asInstanceOf[TaskOrchestrationQueuedPlanGroup]
   }
 }

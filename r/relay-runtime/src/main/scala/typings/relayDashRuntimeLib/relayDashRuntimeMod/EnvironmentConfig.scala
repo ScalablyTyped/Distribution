@@ -20,9 +20,7 @@ object EnvironmentConfig {
     configName: java.lang.String = null,
     handlerProvider: HandlerProvider = null
   ): EnvironmentConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("network")(network)
-    __obj.updateDynamic("store")(store)
+    val __obj = js.Dynamic.literal(network = network, store = store)
     if (configName != null) __obj.updateDynamic("configName")(configName)
     if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(handlerProvider)
     __obj.asInstanceOf[EnvironmentConfig]

@@ -41,8 +41,8 @@ object Pattern9 {
       Plan[js.Any]
     ]
   ): Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("thenDo")(thenDo)
+    val __obj = js.Dynamic.literal(thenDo = thenDo)
+  
     __obj.asInstanceOf[Pattern9[T1, T2, T3, T4, T5, T6, T7, T8, T9]]
   }
 }

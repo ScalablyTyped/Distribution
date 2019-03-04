@@ -27,8 +27,7 @@ object ApiKeyArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     expires: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ApiKeyArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyArgs]

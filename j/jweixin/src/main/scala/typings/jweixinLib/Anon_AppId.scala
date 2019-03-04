@@ -29,12 +29,7 @@ object Anon_AppId {
     timestamp: scala.Double,
     debug: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AppId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("jsApiList")(jsApiList)
-    __obj.updateDynamic("nonceStr")(nonceStr)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(appId = appId, jsApiList = jsApiList, nonceStr = nonceStr, signature = signature, timestamp = timestamp)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     __obj.asInstanceOf[Anon_AppId]
   }

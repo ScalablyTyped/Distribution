@@ -16,9 +16,8 @@ object AppliedDrawStep {
     animator: plottableLib.buildSrcAnimatorsAnimatorMod.IAnimator,
     attrToAppliedProjector: plottableLib.buildSrcCoreInterfacesMod.AttributeToAppliedProjector
   ): AppliedDrawStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animator")(animator)
-    __obj.updateDynamic("attrToAppliedProjector")(attrToAppliedProjector)
+    val __obj = js.Dynamic.literal(animator = animator, attrToAppliedProjector = attrToAppliedProjector)
+  
     __obj.asInstanceOf[AppliedDrawStep]
   }
 }

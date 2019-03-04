@@ -30,11 +30,8 @@ trait ShippingOption extends js.Object {
 object ShippingOption {
   @scala.inline
   def apply(amount: scala.Double, detail: java.lang.String, id: java.lang.String, label: java.lang.String): ShippingOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("amount")(amount)
-    __obj.updateDynamic("detail")(detail)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(amount = amount, detail = detail, id = id, label = label)
+  
     __obj.asInstanceOf[ShippingOption]
   }
 }

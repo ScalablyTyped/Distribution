@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/di/reflective_injector", "ReflectiveInjector_")
 @js.native
-class `ReflectiveInjector_` protected () extends ReflectiveInjector {
+class ReflectiveInjector_ protected () extends ReflectiveInjector {
   /**
     * Private
     */
@@ -28,7 +28,7 @@ class `ReflectiveInjector_` protected () extends ReflectiveInjector {
 /* static members */
 @JSImport("@angular/core/src/di/reflective_injector", "ReflectiveInjector_")
 @js.native
-object `ReflectiveInjector_` extends js.Object {
+object ReflectiveInjector_ extends js.Object {
   var INJECTOR_KEY: js.Any = js.native
 }
 

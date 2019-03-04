@@ -41,20 +41,8 @@ object XDriverManager2 {
     release: js.Function0[scala.Unit],
     setLoginTimeout: js.Function1[scala.Double, scala.Unit]
   ): XDriverManager2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getConnection")(getConnection)
-    __obj.updateDynamic("getConnectionWithInfo")(getConnectionWithInfo)
-    __obj.updateDynamic("getDriverByURL")(getDriverByURL)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, LoginTimeout = LoginTimeout, acquire = acquire, createEnumeration = createEnumeration, getConnection = getConnection, getConnectionWithInfo = getConnectionWithInfo, getDriverByURL = getDriverByURL, getElementType = getElementType, getLoginTimeout = getLoginTimeout, hasElements = hasElements, queryInterface = queryInterface, release = release, setLoginTimeout = setLoginTimeout)
+  
     __obj.asInstanceOf[XDriverManager2]
   }
 }

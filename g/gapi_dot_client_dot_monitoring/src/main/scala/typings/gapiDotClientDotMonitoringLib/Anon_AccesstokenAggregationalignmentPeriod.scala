@@ -123,8 +123,7 @@ object Anon_AccesstokenAggregationalignmentPeriod {
     upload_protocol: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AccesstokenAggregationalignmentPeriod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (`aggregation.alignmentPeriod` != null) __obj.updateDynamic("aggregation.alignmentPeriod")(`aggregation.alignmentPeriod`)

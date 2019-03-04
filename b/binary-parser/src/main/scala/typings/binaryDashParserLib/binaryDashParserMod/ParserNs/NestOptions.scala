@@ -16,7 +16,8 @@ object NestOptions {
     assert: java.lang.String | scala.Double | (js.Function1[/* value */ Data, scala.Boolean]) = null,
     formatter: js.Function1[/* value */ Data, _] = null
   ): NestOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(formatter)
     __obj.asInstanceOf[NestOptions]

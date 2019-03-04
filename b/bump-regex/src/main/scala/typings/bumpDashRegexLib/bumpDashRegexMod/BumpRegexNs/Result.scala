@@ -25,8 +25,8 @@ object Result {
     `type`: bumpDashRegexLib.bumpDashRegexLibStrings.major | bumpDashRegexLib.bumpDashRegexLibStrings.minor | bumpDashRegexLib.bumpDashRegexLibStrings.patch | bumpDashRegexLib.bumpDashRegexLibStrings.prerelease = null,
     version: java.lang.String = null
   ): Result = {
-    val __obj = js.Dynamic.literal(`new` = `new`)
-    __obj.updateDynamic("prev")(prev)
+    val __obj = js.Dynamic.literal(prev = prev)
+    __obj.updateDynamic("new")(`new`)
     if (!js.isUndefined(`case`)) __obj.updateDynamic("case")(`case`)
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
     if (key != null) __obj.updateDynamic("key")(key)

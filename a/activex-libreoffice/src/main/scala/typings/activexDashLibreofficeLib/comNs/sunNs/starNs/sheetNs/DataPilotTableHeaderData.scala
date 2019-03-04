@@ -39,12 +39,8 @@ object DataPilotTableHeaderData {
     Level: scala.Double,
     MemberName: java.lang.String
   ): DataPilotTableHeaderData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dimension")(Dimension)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("Hierarchy")(Hierarchy)
-    __obj.updateDynamic("Level")(Level)
-    __obj.updateDynamic("MemberName")(MemberName)
+    val __obj = js.Dynamic.literal(Dimension = Dimension, Flags = Flags, Hierarchy = Hierarchy, Level = Level, MemberName = MemberName)
+  
     __obj.asInstanceOf[DataPilotTableHeaderData]
   }
 }

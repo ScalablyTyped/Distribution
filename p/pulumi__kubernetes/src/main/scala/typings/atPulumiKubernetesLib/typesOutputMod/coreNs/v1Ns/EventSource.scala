@@ -22,9 +22,8 @@ trait EventSource extends js.Object {
 object EventSource {
   @scala.inline
   def apply(component: java.lang.String, host: java.lang.String): EventSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("host")(host)
+    val __obj = js.Dynamic.literal(component = component, host = host)
+  
     __obj.asInstanceOf[EventSource]
   }
 }

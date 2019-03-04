@@ -163,18 +163,8 @@ object SessionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
     ]
   ): SessionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beginTransaction")(beginTransaction)
-    __obj.updateDynamic("commit")(commit)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("executeSql")(executeSql)
-    __obj.updateDynamic("executeStreamingSql")(executeStreamingSql)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("rollback")(rollback)
-    __obj.updateDynamic("streamingRead")(streamingRead)
+    val __obj = js.Dynamic.literal(beginTransaction = beginTransaction, commit = commit, create = create, delete = delete, executeSql = executeSql, executeStreamingSql = executeStreamingSql, get = get, list = list, read = read, rollback = rollback, streamingRead = streamingRead)
+  
     __obj.asInstanceOf[SessionsResource]
   }
 }

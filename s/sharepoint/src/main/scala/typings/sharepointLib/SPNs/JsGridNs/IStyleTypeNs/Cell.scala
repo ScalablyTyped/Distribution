@@ -34,14 +34,8 @@ object Cell {
     textAlign: js.Any,
     textColor: js.Any
   ): Cell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("font")(font)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("fontStyle")(fontStyle)
-    __obj.updateDynamic("fontWeight")(fontWeight)
-    __obj.updateDynamic("textAlign")(textAlign)
-    __obj.updateDynamic("textColor")(textColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, font = font, fontSize = fontSize, fontStyle = fontStyle, fontWeight = fontWeight, textAlign = textAlign, textColor = textColor)
+  
     __obj.asInstanceOf[Cell]
   }
 }

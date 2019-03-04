@@ -38,9 +38,7 @@ object config {
     stream: js.UndefOr[scala.Boolean] = js.undefined,
     user: java.lang.String = null
   ): config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("database")(database)
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(database = database, server = server)
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain)
     if (driver != null) __obj.updateDynamic("driver")(driver)

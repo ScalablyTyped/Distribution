@@ -25,10 +25,8 @@ object Projection {
     getLastRender: js.Function0[VNode],
     update: js.Function1[VNode, scala.Unit]
   ): Projection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domNode")(domNode)
-    __obj.updateDynamic("getLastRender")(getLastRender)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(domNode = domNode, getLastRender = getLastRender, update = update)
+  
     __obj.asInstanceOf[Projection]
   }
 }

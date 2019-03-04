@@ -34,18 +34,8 @@ object Page {
     version: java.lang.String,
     words: js.Array[Word]
   ): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("html")(html)
-    __obj.updateDynamic("lines")(lines)
-    __obj.updateDynamic("oem")(oem)
-    __obj.updateDynamic("paragraphs")(paragraphs)
-    __obj.updateDynamic("psm")(psm)
-    __obj.updateDynamic("symbols")(symbols)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("words")(words)
+    val __obj = js.Dynamic.literal(blocks = blocks, confidence = confidence, html = html, lines = lines, oem = oem, paragraphs = paragraphs, psm = psm, symbols = symbols, text = text, version = version, words = words)
+  
     __obj.asInstanceOf[Page]
   }
 }

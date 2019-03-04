@@ -24,12 +24,8 @@ object XRangeSelectionChangeListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XRangeSelectionChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("descriptorChanged")(descriptorChanged)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, descriptorChanged = descriptorChanged, disposing = disposing, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XRangeSelectionChangeListener]
   }
 }

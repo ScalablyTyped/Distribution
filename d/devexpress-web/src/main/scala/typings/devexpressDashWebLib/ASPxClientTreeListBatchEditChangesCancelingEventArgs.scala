@@ -34,11 +34,8 @@ object ASPxClientTreeListBatchEditChangesCancelingEventArgs {
     insertedValues: js.Object,
     updatedValues: js.Object
   ): ASPxClientTreeListBatchEditChangesCancelingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("deletedValues")(deletedValues)
-    __obj.updateDynamic("insertedValues")(insertedValues)
-    __obj.updateDynamic("updatedValues")(updatedValues)
+    val __obj = js.Dynamic.literal(cancel = cancel, deletedValues = deletedValues, insertedValues = insertedValues, updatedValues = updatedValues)
+  
     __obj.asInstanceOf[ASPxClientTreeListBatchEditChangesCancelingEventArgs]
   }
 }

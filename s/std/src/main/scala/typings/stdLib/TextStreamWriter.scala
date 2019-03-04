@@ -30,13 +30,8 @@ object TextStreamWriter {
     WriteBlankLines: js.Function1[scala.Double, scala.Unit],
     WriteLine: js.Function1[java.lang.String, scala.Unit]
   ): TextStreamWriter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Close")(Close)
-    __obj.updateDynamic("Column")(Column)
-    __obj.updateDynamic("Line")(Line)
-    __obj.updateDynamic("Write")(Write)
-    __obj.updateDynamic("WriteBlankLines")(WriteBlankLines)
-    __obj.updateDynamic("WriteLine")(WriteLine)
+    val __obj = js.Dynamic.literal(Close = Close, Column = Column, Line = Line, Write = Write, WriteBlankLines = WriteBlankLines, WriteLine = WriteLine)
+  
     __obj.asInstanceOf[TextStreamWriter]
   }
 }

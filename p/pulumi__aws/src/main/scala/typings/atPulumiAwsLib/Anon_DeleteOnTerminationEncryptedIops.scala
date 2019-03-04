@@ -26,10 +26,7 @@ object Anon_DeleteOnTerminationEncryptedIops {
     kmsKeyId: java.lang.String = null,
     snapshotId: java.lang.String = null
   ): Anon_DeleteOnTerminationEncryptedIops = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("iops")(iops)
-    __obj.updateDynamic("volumeSize")(volumeSize)
-    __obj.updateDynamic("volumeType")(volumeType)
+    val __obj = js.Dynamic.literal(iops = iops, volumeSize = volumeSize, volumeType = volumeType)
     if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted)
     if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId)

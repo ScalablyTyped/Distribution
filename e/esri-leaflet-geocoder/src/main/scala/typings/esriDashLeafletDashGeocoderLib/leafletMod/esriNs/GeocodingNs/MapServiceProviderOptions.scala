@@ -26,12 +26,7 @@ object MapServiceProviderOptions {
     maxResults: scala.Int | scala.Double = null,
     token: java.lang.String = null
   ): MapServiceProviderOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferRadius")(bufferRadius.asInstanceOf[js.Any])
-    __obj.updateDynamic("formatSuggestion")(formatSuggestion)
-    __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    __obj.updateDynamic("searchFields")(searchFields.asInstanceOf[js.Any])
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(bufferRadius = bufferRadius.asInstanceOf[js.Any], formatSuggestion = formatSuggestion, layers = layers.asInstanceOf[js.Any], searchFields = searchFields.asInstanceOf[js.Any], url = url)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (label != null) __obj.updateDynamic("label")(label)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

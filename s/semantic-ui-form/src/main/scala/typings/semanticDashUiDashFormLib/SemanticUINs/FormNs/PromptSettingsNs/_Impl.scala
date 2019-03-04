@@ -142,32 +142,8 @@ object _Impl {
     regExp: java.lang.String,
     url: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("checked")(checked)
-    __obj.updateDynamic("contain")(contain)
-    __obj.updateDynamic("containExactly")(containExactly)
-    __obj.updateDynamic("creditCard")(creditCard)
-    __obj.updateDynamic("decimal")(decimal)
-    __obj.updateDynamic("different")(different)
-    __obj.updateDynamic("doesntContain")(doesntContain)
-    __obj.updateDynamic("doesntContainExactly")(doesntContainExactly)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("empty")(empty)
-    __obj.updateDynamic("exactCount")(exactCount)
-    __obj.updateDynamic("exactLength")(exactLength)
-    __obj.updateDynamic("integer")(integer)
-    __obj.updateDynamic("is")(is)
-    __obj.updateDynamic("isExactly")(isExactly)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("maxCount")(maxCount)
-    __obj.updateDynamic("maxLength")(maxLength)
-    __obj.updateDynamic("minCount")(minCount)
-    __obj.updateDynamic("minLength")(minLength)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("notExactly")(notExactly)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("regExp")(regExp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(checked = checked, contain = contain, containExactly = containExactly, creditCard = creditCard, decimal = decimal, different = different, doesntContain = doesntContain, doesntContainExactly = doesntContainExactly, email = email, empty = empty, exactCount = exactCount, exactLength = exactLength, integer = integer, is = is, isExactly = isExactly, length = length, maxCount = maxCount, maxLength = maxLength, minCount = minCount, minLength = minLength, not = not, notExactly = notExactly, number = number, regExp = regExp, url = url)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[_Impl]
   }
 }

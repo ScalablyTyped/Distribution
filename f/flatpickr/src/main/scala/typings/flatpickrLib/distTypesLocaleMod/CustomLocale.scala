@@ -62,9 +62,7 @@ object CustomLocale {
     weekAbbreviation: java.lang.String = null,
     yearAriaLabel: java.lang.String = null
   ): CustomLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("months")(months)
-    __obj.updateDynamic("weekdays")(weekdays)
+    val __obj = js.Dynamic.literal(months = months, weekdays = weekdays)
     if (amPM != null) __obj.updateDynamic("amPM")(amPM)
     if (daysInMonth != null) __obj.updateDynamic("daysInMonth")(daysInMonth)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])

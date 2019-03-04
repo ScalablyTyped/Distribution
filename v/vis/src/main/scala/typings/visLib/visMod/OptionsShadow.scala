@@ -22,12 +22,8 @@ object OptionsShadow {
     x: scala.Double,
     y: scala.Double
   ): OptionsShadow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(color = color, enabled = enabled, size = size, x = x, y = y)
+  
     __obj.asInstanceOf[OptionsShadow]
   }
 }

@@ -22,13 +22,8 @@ object XFormattedString {
     release: js.Function0[scala.Unit],
     setString: js.Function1[java.lang.String, scala.Unit]
   ): XFormattedString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("String")(String)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getString")(getString)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setString")(setString)
+    val __obj = js.Dynamic.literal(String = String, acquire = acquire, getString = getString, queryInterface = queryInterface, release = release, setString = setString)
+  
     __obj.asInstanceOf[XFormattedString]
   }
 }

@@ -17,9 +17,7 @@ object MUIDataTableCustomHeadRenderer {
     label: java.lang.String = null,
     options: MUIDataTableColumnOptions = null
   ): MUIDataTableCustomHeadRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(index = index, name = name)
     if (label != null) __obj.updateDynamic("label")(label)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[MUIDataTableCustomHeadRenderer]

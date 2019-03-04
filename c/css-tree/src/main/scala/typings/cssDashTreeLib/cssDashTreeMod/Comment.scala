@@ -21,8 +21,8 @@ object Comment {
     value: java.lang.String,
     loc: CssLocation = null
   ): Comment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Comment]
   }

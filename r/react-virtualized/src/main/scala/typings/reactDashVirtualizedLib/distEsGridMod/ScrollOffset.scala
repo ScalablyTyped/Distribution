@@ -13,9 +13,8 @@ trait ScrollOffset extends js.Object {
 object ScrollOffset {
   @scala.inline
   def apply(scrollLeft: scala.Double, scrollTop: scala.Double): ScrollOffset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
+    val __obj = js.Dynamic.literal(scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
     __obj.asInstanceOf[ScrollOffset]
   }
 }

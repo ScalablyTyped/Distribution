@@ -23,14 +23,7 @@ object DropdownMenuRenderProps {
     show: scala.Boolean,
     outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
   ): DropdownMenuRenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignEnd")(alignEnd)
-    __obj.updateDynamic("arrowProps")(arrowProps)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("scheduleUpdate")(scheduleUpdate)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(alignEnd = alignEnd, arrowProps = arrowProps, close = close, placement = placement, props = props, scheduleUpdate = scheduleUpdate, show = show)
     if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
     __obj.asInstanceOf[DropdownMenuRenderProps]
   }

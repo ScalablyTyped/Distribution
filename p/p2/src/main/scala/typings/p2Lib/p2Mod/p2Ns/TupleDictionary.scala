@@ -28,15 +28,8 @@ object TupleDictionary {
     reset: js.Function0[scala.Unit],
     set: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
   ): TupleDictionary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getByKey")(getByKey)
-    __obj.updateDynamic("getKey")(getKey)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(copy = copy, data = data, get = get, getByKey = getByKey, getKey = getKey, keys = keys, reset = reset, set = set)
+  
     __obj.asInstanceOf[TupleDictionary]
   }
 }

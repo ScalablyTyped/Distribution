@@ -20,11 +20,8 @@ object PaneProperty {
     order: scala.Double,
     width: scala.Double | java.lang.String
   ): PaneProperty = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], order = order, width = width.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PaneProperty]
   }
 }

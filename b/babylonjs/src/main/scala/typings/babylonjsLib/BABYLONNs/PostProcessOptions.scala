@@ -16,9 +16,8 @@ trait PostProcessOptions extends js.Object {
 object PostProcessOptions {
   @scala.inline
   def apply(height: scala.Double, width: scala.Double): PostProcessOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
     __obj.asInstanceOf[PostProcessOptions]
   }
 }

@@ -20,11 +20,8 @@ object ButtonsApiExportInfoReturn {
     messageTop: java.lang.String,
     title: java.lang.String
   ): ButtonsApiExportInfoReturn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("messageBottom")(messageBottom)
-    __obj.updateDynamic("messageTop")(messageTop)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(filename = filename, messageBottom = messageBottom, messageTop = messageTop, title = title)
+  
     __obj.asInstanceOf[ButtonsApiExportInfoReturn]
   }
 }

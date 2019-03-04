@@ -32,17 +32,8 @@ object FontCommon {
     scaleH: scala.Double,
     scaleW: scala.Double
   ): FontCommon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alphaChnl")(alphaChnl)
-    __obj.updateDynamic("base")(base)
-    __obj.updateDynamic("blueChnl")(blueChnl)
-    __obj.updateDynamic("greenChnl")(greenChnl)
-    __obj.updateDynamic("lineHeight")(lineHeight)
-    __obj.updateDynamic("packed")(packed)
-    __obj.updateDynamic("pages")(pages)
-    __obj.updateDynamic("redChnl")(redChnl)
-    __obj.updateDynamic("scaleH")(scaleH)
-    __obj.updateDynamic("scaleW")(scaleW)
+    val __obj = js.Dynamic.literal(alphaChnl = alphaChnl, base = base, blueChnl = blueChnl, greenChnl = greenChnl, lineHeight = lineHeight, packed = packed, pages = pages, redChnl = redChnl, scaleH = scaleH, scaleW = scaleW)
+  
     __obj.asInstanceOf[FontCommon]
   }
 }

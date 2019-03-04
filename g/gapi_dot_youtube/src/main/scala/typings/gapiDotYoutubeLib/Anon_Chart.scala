@@ -57,16 +57,8 @@ object Anon_Chart {
     part: java.lang.String,
     videoCategoryId: java.lang.String
   ): Anon_Chart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("locale")(locale)
-    __obj.updateDynamic("maxResults")(maxResults)
-    __obj.updateDynamic("myRating")(myRating)
-    __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
-    __obj.updateDynamic("pageToken")(pageToken)
-    __obj.updateDynamic("part")(part)
-    __obj.updateDynamic("videoCategoryId")(videoCategoryId)
+    val __obj = js.Dynamic.literal(chart = chart, id = id, locale = locale, maxResults = maxResults, myRating = myRating, onBehalfOfContentOwner = onBehalfOfContentOwner, pageToken = pageToken, part = part, videoCategoryId = videoCategoryId)
+  
     __obj.asInstanceOf[Anon_Chart]
   }
 }

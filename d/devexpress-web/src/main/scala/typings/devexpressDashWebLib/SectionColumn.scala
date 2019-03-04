@@ -24,9 +24,8 @@ trait SectionColumn extends js.Object {
 object SectionColumn {
   @scala.inline
   def apply(spacing: scala.Double, width: scala.Double): SectionColumn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("spacing")(spacing)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(spacing = spacing, width = width)
+  
     __obj.asInstanceOf[SectionColumn]
   }
 }

@@ -20,11 +20,8 @@ object AppEngineRouting {
     service: java.lang.String,
     version: java.lang.String
   ): AppEngineRouting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(host = host, instance = instance, service = service, version = version)
+  
     __obj.asInstanceOf[AppEngineRouting]
   }
 }

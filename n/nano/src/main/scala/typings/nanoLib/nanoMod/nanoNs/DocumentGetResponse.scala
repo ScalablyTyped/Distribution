@@ -41,9 +41,7 @@ object DocumentGetResponse {
     _revisions: js.Any = null,
     _revs_info: js.Array[_] = null
   ): DocumentGetResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
-    __obj.updateDynamic("_rev")(_rev)
+    val __obj = js.Dynamic.literal(_id = _id, _rev = _rev)
     if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
     if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
     if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted)

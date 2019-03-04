@@ -59,9 +59,7 @@ object plupload_settings {
     silverlight_xap_url: java.lang.String = null,
     unique_names: js.UndefOr[scala.Boolean] = js.undefined
   ): plupload_settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("browse_button")(browse_button)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(browse_button = browse_button, url = url)
     if (chunk_size != null) __obj.updateDynamic("chunk_size")(chunk_size.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container)
     if (drop_element != null) __obj.updateDynamic("drop_element")(drop_element)

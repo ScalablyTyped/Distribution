@@ -14,10 +14,8 @@ trait IChangesObject[T] extends js.Object {
 object IChangesObject {
   @scala.inline
   def apply[T](currentValue: T, isFirstChange: js.Function0[scala.Boolean], previousValue: T): IChangesObject[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("isFirstChange")(isFirstChange)
-    __obj.updateDynamic("previousValue")(previousValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentValue = currentValue.asInstanceOf[js.Any], isFirstChange = isFirstChange, previousValue = previousValue.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IChangesObject[T]]
   }
 }

@@ -12,8 +12,8 @@ trait InstallProduct extends js.Object {
 object InstallProduct {
   @scala.inline
   def apply(id: java.lang.String): InstallProduct = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[InstallProduct]
   }
 }

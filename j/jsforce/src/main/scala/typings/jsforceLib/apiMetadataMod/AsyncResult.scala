@@ -22,10 +22,7 @@ object AsyncResult {
     message: java.lang.String = null,
     statusCode: java.lang.String = null
   ): AsyncResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(done = done, id = id, state = state)
     if (message != null) __obj.updateDynamic("message")(message)
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
     __obj.asInstanceOf[AsyncResult]

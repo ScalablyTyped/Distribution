@@ -56,23 +56,8 @@ object XSecuritySAXEventKeeper {
     ],
     setSecurityId: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): XSecuritySAXEventKeeper = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentBlockingNode")(CurrentBlockingNode)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addBlocker")(addBlocker)
-    __obj.updateDynamic("addElementCollector")(addElementCollector)
-    __obj.updateDynamic("addSecurityElementCollector")(addSecurityElementCollector)
-    __obj.updateDynamic("getCurrentBlockingNode")(getCurrentBlockingNode)
-    __obj.updateDynamic("getElement")(getElement)
-    __obj.updateDynamic("isBlocking")(isBlocking)
-    __obj.updateDynamic("printBufferNodeTree")(printBufferNodeTree)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeBlocker")(removeBlocker)
-    __obj.updateDynamic("removeElementCollector")(removeElementCollector)
-    __obj.updateDynamic("setElement")(setElement)
-    __obj.updateDynamic("setNextHandler")(setNextHandler)
-    __obj.updateDynamic("setSecurityId")(setSecurityId)
+    val __obj = js.Dynamic.literal(CurrentBlockingNode = CurrentBlockingNode, acquire = acquire, addBlocker = addBlocker, addElementCollector = addElementCollector, addSecurityElementCollector = addSecurityElementCollector, getCurrentBlockingNode = getCurrentBlockingNode, getElement = getElement, isBlocking = isBlocking, printBufferNodeTree = printBufferNodeTree, queryInterface = queryInterface, release = release, removeBlocker = removeBlocker, removeElementCollector = removeElementCollector, setElement = setElement, setNextHandler = setNextHandler, setSecurityId = setSecurityId)
+  
     __obj.asInstanceOf[XSecuritySAXEventKeeper]
   }
 }

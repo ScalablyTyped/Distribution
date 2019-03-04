@@ -21,14 +21,8 @@ object IDragTool {
     mousemove: js.Function1[js.Any, scala.Boolean],
     series: ISeries
   ): IDragTool = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("clicked")(clicked)
-    __obj.updateDynamic("draw")(draw)
-    __obj.updateDynamic("mousedown")(mousedown)
-    __obj.updateDynamic("mousemove")(mousemove)
-    __obj.updateDynamic("series")(series)
+    val __obj = js.Dynamic.literal(active = active, chart = chart, clicked = clicked, draw = draw, mousedown = mousedown, mousemove = mousemove, series = series)
+  
     __obj.asInstanceOf[IDragTool]
   }
 }

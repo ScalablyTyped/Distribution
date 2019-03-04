@@ -14,9 +14,7 @@ trait IErrorTranslateArgs extends js.Object {
 object IErrorTranslateArgs {
   @scala.inline
   def apply(MessageArgs: js.Any, TranslateId: java.lang.String, CustomMessage: IErrorCustomMessage = null): IErrorTranslateArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MessageArgs")(MessageArgs)
-    __obj.updateDynamic("TranslateId")(TranslateId)
+    val __obj = js.Dynamic.literal(MessageArgs = MessageArgs, TranslateId = TranslateId)
     if (CustomMessage != null) __obj.updateDynamic("CustomMessage")(CustomMessage)
     __obj.asInstanceOf[IErrorTranslateArgs]
   }

@@ -61,8 +61,7 @@ object Options {
     sync: js.UndefOr[scala.Boolean] = js.undefined,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute)
     if (cache != null) __obj.updateDynamic("cache")(cache)
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])

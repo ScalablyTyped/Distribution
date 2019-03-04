@@ -26,9 +26,7 @@ object ConfigPage {
     scripts: js.Array[java.lang.String] = null,
     styles: js.Array[java.lang.String] = null
   ): ConfigPage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(path = path, title = title)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (!js.isUndefined(hideFromMenu)) __obj.updateDynamic("hideFromMenu")(hideFromMenu)
     if (imports != null) __obj.updateDynamic("imports")(imports)

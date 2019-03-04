@@ -47,13 +47,8 @@ object Annotation {
     speed: js.Array[scala.Double],
     weight: js.Array[scala.Double]
   ): Annotation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datasources")(datasources)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("nodes")(nodes)
-    __obj.updateDynamic("speed")(speed)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(datasources = datasources, distance = distance, duration = duration, nodes = nodes, speed = speed, weight = weight)
+  
     __obj.asInstanceOf[Annotation]
   }
 }

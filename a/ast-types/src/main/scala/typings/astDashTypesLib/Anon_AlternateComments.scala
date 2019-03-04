@@ -22,10 +22,7 @@ object Anon_AlternateComments {
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
   ): Anon_AlternateComments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alternate")(alternate)
-    __obj.updateDynamic("consequent")(consequent)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(alternate = alternate, consequent = consequent, test = test)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[Anon_AlternateComments]

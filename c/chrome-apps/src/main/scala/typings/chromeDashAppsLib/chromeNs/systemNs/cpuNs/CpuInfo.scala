@@ -38,12 +38,7 @@ object CpuInfo {
     processors: js.Array[ProcessorInfo],
     temperatures: js.Array[chromeDashAppsLib.chromeNs.double] = null
   ): CpuInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("archName")(archName)
-    __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    __obj.updateDynamic("modelName")(modelName)
-    __obj.updateDynamic("numOfProcessors")(numOfProcessors)
-    __obj.updateDynamic("processors")(processors)
+    val __obj = js.Dynamic.literal(archName = archName, features = features.asInstanceOf[js.Any], modelName = modelName, numOfProcessors = numOfProcessors, processors = processors)
     if (temperatures != null) __obj.updateDynamic("temperatures")(temperatures)
     __obj.asInstanceOf[CpuInfo]
   }

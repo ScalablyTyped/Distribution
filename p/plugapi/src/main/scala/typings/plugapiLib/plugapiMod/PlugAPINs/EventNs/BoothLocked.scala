@@ -15,11 +15,8 @@ trait BoothLocked extends js.Object {
 object BoothLocked {
   @scala.inline
   def apply(c: scala.Boolean, f: scala.Boolean, m: java.lang.String, ml: java.lang.String): BoothLocked = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("f")(f)
-    __obj.updateDynamic("m")(m)
-    __obj.updateDynamic("ml")(ml)
+    val __obj = js.Dynamic.literal(c = c, f = f, m = m, ml = ml)
+  
     __obj.asInstanceOf[BoothLocked]
   }
 }

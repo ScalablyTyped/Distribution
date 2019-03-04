@@ -32,12 +32,8 @@ object XDimensionsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDimensionsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Dimensions")(Dimensions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDimensions")(getDimensions)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Dimensions = Dimensions, acquire = acquire, getDimensions = getDimensions, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDimensionsSupplier]
   }
 }

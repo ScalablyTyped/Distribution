@@ -22,12 +22,8 @@ object Anon_Centimeter {
     Meter: java.lang.String,
     Millimeter: java.lang.String
   ): Anon_Centimeter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Centimeter")(Centimeter)
-    __obj.updateDynamic("Foot")(Foot)
-    __obj.updateDynamic("Inch")(Inch)
-    __obj.updateDynamic("Meter")(Meter)
-    __obj.updateDynamic("Millimeter")(Millimeter)
+    val __obj = js.Dynamic.literal(Centimeter = Centimeter, Foot = Foot, Inch = Inch, Meter = Meter, Millimeter = Millimeter)
+  
     __obj.asInstanceOf[Anon_Centimeter]
   }
 }

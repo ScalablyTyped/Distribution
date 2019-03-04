@@ -13,8 +13,7 @@ trait SkipLinksProps extends js.Object {
 object SkipLinksProps {
   @scala.inline
   def apply(children: reactLib.reactMod.ReactNs.ReactNode, messages: grommetLib.Anon_SkipTo = null): SkipLinksProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages)
     __obj.asInstanceOf[SkipLinksProps]
   }

@@ -32,17 +32,8 @@ object LegendClickEvent {
     layout: stdLib.Partial[Layout],
     node: PlotlyHTMLElement
   ): LegendClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("curveNumber")(curveNumber)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("expandedIndex")(expandedIndex)
-    __obj.updateDynamic("frames")(frames)
-    __obj.updateDynamic("fullData")(fullData)
-    __obj.updateDynamic("fullLayout")(fullLayout)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(config = config, curveNumber = curveNumber, data = data, event = event, expandedIndex = expandedIndex, frames = frames, fullData = fullData, fullLayout = fullLayout, layout = layout, node = node)
+  
     __obj.asInstanceOf[LegendClickEvent]
   }
 }

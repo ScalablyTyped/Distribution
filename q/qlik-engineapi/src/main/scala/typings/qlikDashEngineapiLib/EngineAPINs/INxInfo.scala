@@ -25,8 +25,7 @@ trait INxInfo extends js.Object {
 object INxInfo {
   @scala.inline
   def apply(qType: java.lang.String, qId: java.lang.String = null): INxInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qType")(qType)
+    val __obj = js.Dynamic.literal(qType = qType)
     if (qId != null) __obj.updateDynamic("qId")(qId)
     __obj.asInstanceOf[INxInfo]
   }

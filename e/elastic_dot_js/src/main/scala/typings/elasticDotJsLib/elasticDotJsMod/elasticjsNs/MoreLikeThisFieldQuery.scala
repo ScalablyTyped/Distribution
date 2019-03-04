@@ -108,23 +108,8 @@ object MoreLikeThisFieldQuery {
     stopWords: js.Function1[js.Array[_], MoreLikeThisFieldQuery],
     toJSON: js.Function0[js.Any]
   ): MoreLikeThisFieldQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("analyzer")(analyzer)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("boostTerms")(boostTerms)
-    __obj.updateDynamic("failOnUnsupportedField")(failOnUnsupportedField)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("likeText")(likeText)
-    __obj.updateDynamic("maxDocFreq")(maxDocFreq)
-    __obj.updateDynamic("maxQueryTerms")(maxQueryTerms)
-    __obj.updateDynamic("maxWordLen")(maxWordLen)
-    __obj.updateDynamic("minDocFreq")(minDocFreq)
-    __obj.updateDynamic("minTermFreq")(minTermFreq)
-    __obj.updateDynamic("minWordLen")(minWordLen)
-    __obj.updateDynamic("percentTermsToMatch")(percentTermsToMatch)
-    __obj.updateDynamic("stopWords")(stopWords)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, analyzer = analyzer, boost = boost, boostTerms = boostTerms, failOnUnsupportedField = failOnUnsupportedField, field = field, likeText = likeText, maxDocFreq = maxDocFreq, maxQueryTerms = maxQueryTerms, maxWordLen = maxWordLen, minDocFreq = minDocFreq, minTermFreq = minTermFreq, minWordLen = minWordLen, percentTermsToMatch = percentTermsToMatch, stopWords = stopWords, toJSON = toJSON)
+  
     __obj.asInstanceOf[MoreLikeThisFieldQuery]
   }
 }

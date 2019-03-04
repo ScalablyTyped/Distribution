@@ -67,8 +67,7 @@ object Anon_AccesstokenAltBearertokenCallbackConfigId {
     upload_protocol: java.lang.String = null,
     view: java.lang.String = null
   ): Anon_AccesstokenAltBearertokenCallbackConfigId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName)
+    val __obj = js.Dynamic.literal(serviceName = serviceName)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alt != null) __obj.updateDynamic("alt")(alt)

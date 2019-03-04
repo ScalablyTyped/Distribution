@@ -22,12 +22,8 @@ object DBResultObject {
     rowcount: scala.Double,
     rows: js.Array[js.Array[js.Object]]
   ): DBResultObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cols")(cols)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("json")(json)
-    __obj.updateDynamic("rowcount")(rowcount)
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(cols = cols, duration = duration, json = json, rowcount = rowcount, rows = rows)
+  
     __obj.asInstanceOf[DBResultObject]
   }
 }

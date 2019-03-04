@@ -34,8 +34,7 @@ object SortableGridItemProps {
     onDoubleTap: js.Function0[scala.Unit] = null,
     onTap: js.Function0[scala.Unit] = null
   ): SortableGridItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
     if (onDoubleTap != null) __obj.updateDynamic("onDoubleTap")(onDoubleTap)
     if (onTap != null) __obj.updateDynamic("onTap")(onTap)

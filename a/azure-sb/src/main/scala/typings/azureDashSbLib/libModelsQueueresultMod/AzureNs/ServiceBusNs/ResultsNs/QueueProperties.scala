@@ -36,19 +36,8 @@ object QueueProperties {
     RequiresSession: scala.Boolean,
     SizeInBytes: scala.Double
   ): QueueProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DeadLetteringOnMessageExpiration")(DeadLetteringOnMessageExpiration)
-    __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive)
-    __obj.updateDynamic("DuplicateDetectionHistoryTimeWindow")(DuplicateDetectionHistoryTimeWindow)
-    __obj.updateDynamic("EnableBatchedOperations")(EnableBatchedOperations)
-    __obj.updateDynamic("EnablePartitioning")(EnablePartitioning)
-    __obj.updateDynamic("LockDuration")(LockDuration)
-    __obj.updateDynamic("MaxDeliveryCount")(MaxDeliveryCount)
-    __obj.updateDynamic("MaxSizeInMegabytes")(MaxSizeInMegabytes)
-    __obj.updateDynamic("MessageCount")(MessageCount)
-    __obj.updateDynamic("RequiresDuplicateDetection")(RequiresDuplicateDetection)
-    __obj.updateDynamic("RequiresSession")(RequiresSession)
-    __obj.updateDynamic("SizeInBytes")(SizeInBytes)
+    val __obj = js.Dynamic.literal(DeadLetteringOnMessageExpiration = DeadLetteringOnMessageExpiration, DefaultMessageTimeToLive = DefaultMessageTimeToLive, DuplicateDetectionHistoryTimeWindow = DuplicateDetectionHistoryTimeWindow, EnableBatchedOperations = EnableBatchedOperations, EnablePartitioning = EnablePartitioning, LockDuration = LockDuration, MaxDeliveryCount = MaxDeliveryCount, MaxSizeInMegabytes = MaxSizeInMegabytes, MessageCount = MessageCount, RequiresDuplicateDetection = RequiresDuplicateDetection, RequiresSession = RequiresSession, SizeInBytes = SizeInBytes)
+  
     __obj.asInstanceOf[QueueProperties]
   }
 }

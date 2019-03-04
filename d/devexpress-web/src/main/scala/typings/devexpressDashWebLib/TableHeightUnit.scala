@@ -24,8 +24,8 @@ trait TableHeightUnit extends js.Object {
 object TableHeightUnit {
   @scala.inline
   def apply(`type`: js.Any, value: scala.Double): TableHeightUnit = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableHeightUnit]
   }
 }

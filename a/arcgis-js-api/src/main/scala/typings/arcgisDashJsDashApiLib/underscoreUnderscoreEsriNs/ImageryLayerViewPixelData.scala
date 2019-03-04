@@ -30,11 +30,7 @@ object ImageryLayerViewPixelData {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     extent: Extent = null
   ): ImageryLayerViewPixelData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("pixelBlock")(pixelBlock)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, pixelBlock = pixelBlock, propertyIsEnumerable = propertyIsEnumerable)
     if (extent != null) __obj.updateDynamic("extent")(extent)
     __obj.asInstanceOf[ImageryLayerViewPixelData]
   }

@@ -13,8 +13,7 @@ trait Anon_DaysStorageClass extends js.Object {
 object Anon_DaysStorageClass {
   @scala.inline
   def apply(storageClass: java.lang.String, days: scala.Int | scala.Double = null): Anon_DaysStorageClass = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("storageClass")(storageClass)
+    val __obj = js.Dynamic.literal(storageClass = storageClass)
     if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DaysStorageClass]
   }

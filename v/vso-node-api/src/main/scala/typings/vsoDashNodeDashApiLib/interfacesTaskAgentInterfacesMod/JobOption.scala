@@ -16,9 +16,8 @@ trait JobOption extends js.Object {
 object JobOption {
   @scala.inline
   def apply(data: org.scalablytyped.runtime.StringDictionary[java.lang.String], id: java.lang.String): JobOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(data = data, id = id)
+  
     __obj.asInstanceOf[JobOption]
   }
 }

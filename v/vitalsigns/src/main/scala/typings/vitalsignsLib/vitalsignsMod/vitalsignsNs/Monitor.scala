@@ -16,8 +16,8 @@ trait Monitor extends js.Object {
 object Monitor {
   @scala.inline
   def apply(connections: js.Any): Monitor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connections")(connections)
+    val __obj = js.Dynamic.literal(connections = connections)
+  
     __obj.asInstanceOf[Monitor]
   }
 }

@@ -22,12 +22,8 @@ object RNFetchBlobWriteStream {
     id: java.lang.String,
     write: js.Function1[java.lang.String, js.Promise[scala.Unit]]
   ): RNFetchBlobWriteStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(append)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("encoding")(encoding)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(append = append, close = close, encoding = encoding, id = id, write = write)
+  
     __obj.asInstanceOf[RNFetchBlobWriteStream]
   }
 }

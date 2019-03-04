@@ -26,13 +26,8 @@ object XPathExtension {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPathExtension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Libxml2ExtensionHandle")(Libxml2ExtensionHandle)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createWithModel")(createWithModel)
-    __obj.updateDynamic("getLibxml2ExtensionHandle")(getLibxml2ExtensionHandle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Libxml2ExtensionHandle = Libxml2ExtensionHandle, acquire = acquire, createWithModel = createWithModel, getLibxml2ExtensionHandle = getLibxml2ExtensionHandle, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPathExtension]
   }
 }

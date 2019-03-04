@@ -67,16 +67,8 @@ object IHttpContent {
       winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
     ]
   ): IHttpContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferAllAsync")(bufferAllAsync)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("readAsBufferAsync")(readAsBufferAsync)
-    __obj.updateDynamic("readAsInputStreamAsync")(readAsInputStreamAsync)
-    __obj.updateDynamic("readAsStringAsync")(readAsStringAsync)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("tryComputeLength")(tryComputeLength)
-    __obj.updateDynamic("writeToStreamAsync")(writeToStreamAsync)
+    val __obj = js.Dynamic.literal(bufferAllAsync = bufferAllAsync, close = close, headers = headers, readAsBufferAsync = readAsBufferAsync, readAsInputStreamAsync = readAsInputStreamAsync, readAsStringAsync = readAsStringAsync, toString = toString, tryComputeLength = tryComputeLength, writeToStreamAsync = writeToStreamAsync)
+  
     __obj.asInstanceOf[IHttpContent]
   }
 }

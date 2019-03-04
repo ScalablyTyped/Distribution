@@ -184,13 +184,8 @@ object StudentSubmissionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
     ]
   ): StudentSubmissionsResource = {
-    val __obj = js.Dynamic.literal(`return` = `return`)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("modifyAttachments")(modifyAttachments)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("reclaim")(reclaim)
-    __obj.updateDynamic("turnIn")(turnIn)
+    val __obj = js.Dynamic.literal(get = get, list = list, modifyAttachments = modifyAttachments, patch = patch, reclaim = reclaim, turnIn = turnIn)
+    __obj.updateDynamic("return")(`return`)
     __obj.asInstanceOf[StudentSubmissionsResource]
   }
 }

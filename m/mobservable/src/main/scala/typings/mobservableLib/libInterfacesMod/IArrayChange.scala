@@ -15,9 +15,9 @@ trait IArrayChange[T] extends js.Object {
 object IArrayChange {
   @scala.inline
   def apply[T](index: scala.Double, `object`: IObservableArray[T], oldValue: T, `type`: java.lang.String): IArrayChange[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index, oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IArrayChange[T]]
   }
 }

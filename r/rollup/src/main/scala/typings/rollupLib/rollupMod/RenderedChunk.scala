@@ -30,15 +30,7 @@ object RenderedChunk {
     name: java.lang.String,
     facadeModuleId: java.lang.String = null
   ): RenderedChunk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dynamicImports")(dynamicImports)
-    __obj.updateDynamic("exports")(exports)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("imports")(imports)
-    __obj.updateDynamic("isDynamicEntry")(isDynamicEntry)
-    __obj.updateDynamic("isEntry")(isEntry)
-    __obj.updateDynamic("modules")(modules)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports, exports = exports, fileName = fileName, imports = imports, isDynamicEntry = isDynamicEntry, isEntry = isEntry, modules = modules, name = name)
     if (facadeModuleId != null) __obj.updateDynamic("facadeModuleId")(facadeModuleId)
     __obj.asInstanceOf[RenderedChunk]
   }

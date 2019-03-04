@@ -29,18 +29,8 @@ object WebRedirectionResponseDetails {
     ip: java.lang.String = null,
     responseHeaders: js.Array[HttpHeader] = null
   ): WebRedirectionResponseDetails = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("redirectUrl")(redirectUrl)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, redirectUrl = redirectUrl, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (initiator != null) __obj.updateDynamic("initiator")(initiator)
     if (ip != null) __obj.updateDynamic("ip")(ip)
     if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)

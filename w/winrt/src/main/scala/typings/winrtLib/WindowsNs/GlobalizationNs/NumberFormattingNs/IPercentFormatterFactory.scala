@@ -21,8 +21,8 @@ object IPercentFormatterFactory {
       PercentFormatter
     ]
   ): IPercentFormatterFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createPercentFormatter")(createPercentFormatter)
+    val __obj = js.Dynamic.literal(createPercentFormatter = createPercentFormatter)
+  
     __obj.asInstanceOf[IPercentFormatterFactory]
   }
 }

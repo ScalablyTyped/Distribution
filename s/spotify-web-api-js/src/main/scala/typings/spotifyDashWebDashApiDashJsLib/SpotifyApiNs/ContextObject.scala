@@ -24,8 +24,8 @@ object ContextObject {
     external_urls: ExternalUrlObject = null,
     href: java.lang.String = null
   ): ContextObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("uri")(uri)
+    val __obj = js.Dynamic.literal(uri = uri)
+    __obj.updateDynamic("type")(`type`)
     if (external_urls != null) __obj.updateDynamic("external_urls")(external_urls)
     if (href != null) __obj.updateDynamic("href")(href)
     __obj.asInstanceOf[ContextObject]

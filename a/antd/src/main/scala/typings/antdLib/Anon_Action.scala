@@ -20,11 +20,8 @@ object Anon_Action {
     prefixCls: java.lang.String,
     visibilityToggle: scala.Boolean
   ): Anon_Action = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("inputPrefixCls")(inputPrefixCls)
-    __obj.updateDynamic("prefixCls")(prefixCls)
-    __obj.updateDynamic("visibilityToggle")(visibilityToggle)
+    val __obj = js.Dynamic.literal(action = action, inputPrefixCls = inputPrefixCls, prefixCls = prefixCls, visibilityToggle = visibilityToggle)
+  
     __obj.asInstanceOf[Anon_Action]
   }
 }

@@ -35,13 +35,8 @@ trait Calls[T] extends js.Object {
 object Calls {
   @scala.inline
   def apply[T](arg: js.Any, args: js.Array[_], context: js.Any, k: scala.Double, returned: T, threw: stdLib.Error): Calls[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arg")(arg)
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("k")(k)
-    __obj.updateDynamic("returned")(returned.asInstanceOf[js.Any])
-    __obj.updateDynamic("threw")(threw)
+    val __obj = js.Dynamic.literal(arg = arg, args = args, context = context, k = k, returned = returned.asInstanceOf[js.Any], threw = threw)
+  
     __obj.asInstanceOf[Calls[T]]
   }
 }

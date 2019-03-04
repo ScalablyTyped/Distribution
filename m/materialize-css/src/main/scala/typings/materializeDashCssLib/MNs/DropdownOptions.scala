@@ -90,20 +90,8 @@ object DropdownOptions {
     onOpenStart: js.Function2[Dropdown, stdLib.Element, scala.Unit],
     outDuration: scala.Double
   ): DropdownOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    __obj.updateDynamic("autoTrigger")(autoTrigger)
-    __obj.updateDynamic("closeOnClick")(closeOnClick)
-    __obj.updateDynamic("constrainWidth")(constrainWidth)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("coverTrigger")(coverTrigger)
-    __obj.updateDynamic("hover")(hover)
-    __obj.updateDynamic("inDuration")(inDuration)
-    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
-    __obj.updateDynamic("onCloseStart")(onCloseStart)
-    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
-    __obj.updateDynamic("onOpenStart")(onOpenStart)
-    __obj.updateDynamic("outDuration")(outDuration)
+    val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], autoTrigger = autoTrigger, closeOnClick = closeOnClick, constrainWidth = constrainWidth, container = container, coverTrigger = coverTrigger, hover = hover, inDuration = inDuration, onCloseEnd = onCloseEnd, onCloseStart = onCloseStart, onOpenEnd = onOpenEnd, onOpenStart = onOpenStart, outDuration = outDuration)
+  
     __obj.asInstanceOf[DropdownOptions]
   }
 }

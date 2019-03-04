@@ -124,20 +124,8 @@ object XExtendedIndexEntrySupplier {
     release: js.Function0[scala.Unit],
     usePhoneticEntry: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean]
   ): XExtendedIndexEntrySupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LocaleList")(LocaleList)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("compareIndexEntry")(compareIndexEntry)
-    __obj.updateDynamic("getAlgorithmList")(getAlgorithmList)
-    __obj.updateDynamic("getIndexCharacter")(getIndexCharacter)
-    __obj.updateDynamic("getIndexFollowPageWord")(getIndexFollowPageWord)
-    __obj.updateDynamic("getIndexKey")(getIndexKey)
-    __obj.updateDynamic("getLocaleList")(getLocaleList)
-    __obj.updateDynamic("getPhoneticCandidate")(getPhoneticCandidate)
-    __obj.updateDynamic("loadAlgorithm")(loadAlgorithm)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("usePhoneticEntry")(usePhoneticEntry)
+    val __obj = js.Dynamic.literal(LocaleList = LocaleList, acquire = acquire, compareIndexEntry = compareIndexEntry, getAlgorithmList = getAlgorithmList, getIndexCharacter = getIndexCharacter, getIndexFollowPageWord = getIndexFollowPageWord, getIndexKey = getIndexKey, getLocaleList = getLocaleList, getPhoneticCandidate = getPhoneticCandidate, loadAlgorithm = loadAlgorithm, queryInterface = queryInterface, release = release, usePhoneticEntry = usePhoneticEntry)
+  
     __obj.asInstanceOf[XExtendedIndexEntrySupplier]
   }
 }

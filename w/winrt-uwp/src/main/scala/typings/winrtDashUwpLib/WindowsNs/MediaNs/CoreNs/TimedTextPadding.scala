@@ -28,12 +28,8 @@ object TimedTextPadding {
     start: scala.Double,
     unit: TimedTextUnit
   ): TimedTextPadding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("before")(before)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(after = after, before = before, end = end, start = start, unit = unit)
+  
     __obj.asInstanceOf[TimedTextPadding]
   }
 }

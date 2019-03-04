@@ -12,8 +12,8 @@ trait GeocodeResponse extends js.Object {
 object GeocodeResponse {
   @scala.inline
   def apply(result: navermapsLib.Anon_Items): GeocodeResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[GeocodeResponse]
   }
 }

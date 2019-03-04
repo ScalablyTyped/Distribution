@@ -20,11 +20,8 @@ object SSECommand {
     profileUrl: java.lang.String,
     userId: java.lang.String
   ): SSECommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channels")(channels)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("profileUrl")(profileUrl)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(channels = channels, displayName = displayName, profileUrl = profileUrl, userId = userId)
+  
     __obj.asInstanceOf[SSECommand]
   }
 }

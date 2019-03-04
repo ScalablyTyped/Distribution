@@ -36,19 +36,8 @@ object Collection {
     title: java.lang.String,
     updated_at: java.lang.String
   ): Collection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body_html")(body_html)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("metafields")(metafields)
-    __obj.updateDynamic("published")(published)
-    __obj.updateDynamic("published_at")(published_at)
-    __obj.updateDynamic("published_scope")(published_scope)
-    __obj.updateDynamic("sort_order")(sort_order)
-    __obj.updateDynamic("template_suffix")(template_suffix)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("updated_at")(updated_at)
+    val __obj = js.Dynamic.literal(body_html = body_html, handle = handle, id = id, image = image, metafields = metafields, published = published, published_at = published_at, published_scope = published_scope, sort_order = sort_order, template_suffix = template_suffix, title = title, updated_at = updated_at)
+  
     __obj.asInstanceOf[Collection]
   }
 }

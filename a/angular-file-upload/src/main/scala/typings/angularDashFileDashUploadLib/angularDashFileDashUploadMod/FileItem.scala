@@ -142,33 +142,8 @@ object FileItem {
     url: java.lang.String,
     withCredentials: scala.Boolean
   ): FileItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alias")(alias)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("formData")(formData)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isCancel")(isCancel)
-    __obj.updateDynamic("isError")(isError)
-    __obj.updateDynamic("isReady")(isReady)
-    __obj.updateDynamic("isSuccess")(isSuccess)
-    __obj.updateDynamic("isUploaded")(isUploaded)
-    __obj.updateDynamic("isUploading")(isUploading)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("onBeforeUpload")(onBeforeUpload)
-    __obj.updateDynamic("onCancel")(onCancel)
-    __obj.updateDynamic("onComplete")(onComplete)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onProgress")(onProgress)
-    __obj.updateDynamic("onSuccess")(onSuccess)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAfterUpload")(removeAfterUpload)
-    __obj.updateDynamic("upload")(upload)
-    __obj.updateDynamic("uploader")(uploader)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("withCredentials")(withCredentials)
+    val __obj = js.Dynamic.literal(alias = alias, cancel = cancel, file = file, formData = formData, headers = headers, index = index, isCancel = isCancel, isError = isError, isReady = isReady, isSuccess = isSuccess, isUploaded = isUploaded, isUploading = isUploading, method = method, onBeforeUpload = onBeforeUpload, onCancel = onCancel, onComplete = onComplete, onError = onError, onProgress = onProgress, onSuccess = onSuccess, progress = progress, remove = remove, removeAfterUpload = removeAfterUpload, upload = upload, uploader = uploader, url = url, withCredentials = withCredentials)
+  
     __obj.asInstanceOf[FileItem]
   }
 }

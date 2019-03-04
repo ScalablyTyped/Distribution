@@ -31,12 +31,8 @@ object DoWhileStatement {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): DoWhileStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(body = body, end = end, loc = loc, start = start, test = test)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

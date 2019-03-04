@@ -20,9 +20,7 @@ object MathJSON {
     fixPrefix: js.UndefOr[scala.Boolean] = js.undefined,
     mathjs: java.lang.String = null
   ): MathJSON = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(unit = unit, value = value)
     if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix)
     if (mathjs != null) __obj.updateDynamic("mathjs")(mathjs)
     __obj.asInstanceOf[MathJSON]

@@ -12,8 +12,8 @@ trait Errors extends js.Object {
 object Errors {
   @scala.inline
   def apply(validation: org.scalablytyped.runtime.StringDictionary[jjvLib.Anon_Required]): Errors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("validation")(validation)
+    val __obj = js.Dynamic.literal(validation = validation)
+  
     __obj.asInstanceOf[Errors]
   }
 }

@@ -22,11 +22,8 @@ object XUpdateModel {
     release: js.Function0[scala.Unit],
     updateModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Unit]
   ): XUpdateModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("updateModel")(updateModel)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, release = release, updateModel = updateModel)
+  
     __obj.asInstanceOf[XUpdateModel]
   }
 }

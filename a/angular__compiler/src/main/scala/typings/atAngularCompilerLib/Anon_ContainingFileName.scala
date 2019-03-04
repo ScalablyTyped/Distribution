@@ -14,8 +14,8 @@ object Anon_ContainingFileName {
   def apply(
     resourceNameToFileName: js.Function2[java.lang.String, java.lang.String, java.lang.String | scala.Null]
   ): Anon_ContainingFileName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceNameToFileName")(resourceNameToFileName)
+    val __obj = js.Dynamic.literal(resourceNameToFileName = resourceNameToFileName)
+  
     __obj.asInstanceOf[Anon_ContainingFileName]
   }
 }

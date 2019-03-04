@@ -27,9 +27,8 @@ object GroupsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ErrorGroup]
     ]
   ): GroupsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(get = get, update = update)
+  
     __obj.asInstanceOf[GroupsResource]
   }
 }

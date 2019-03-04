@@ -18,9 +18,8 @@ object Anon_New {
     rawResult: mongooseLib.mongooseLibNumbers.`true`,
     upsert: mongooseLib.mongooseLibNumbers.`true`
   ): Anon_New = {
-    val __obj = js.Dynamic.literal(`new` = `new`)
-    __obj.updateDynamic("rawResult")(rawResult)
-    __obj.updateDynamic("upsert")(upsert)
+    val __obj = js.Dynamic.literal(rawResult = rawResult, upsert = upsert)
+    __obj.updateDynamic("new")(`new`)
     __obj.asInstanceOf[Anon_New]
   }
 }

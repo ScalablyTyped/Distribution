@@ -13,9 +13,8 @@ trait PayPalClientIds extends js.Object {
 object PayPalClientIds {
   @scala.inline
   def apply(PayPalEnvironmentProduction: java.lang.String, PayPalEnvironmentSandbox: java.lang.String): PayPalClientIds = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PayPalEnvironmentProduction")(PayPalEnvironmentProduction)
-    __obj.updateDynamic("PayPalEnvironmentSandbox")(PayPalEnvironmentSandbox)
+    val __obj = js.Dynamic.literal(PayPalEnvironmentProduction = PayPalEnvironmentProduction, PayPalEnvironmentSandbox = PayPalEnvironmentSandbox)
+  
     __obj.asInstanceOf[PayPalClientIds]
   }
 }

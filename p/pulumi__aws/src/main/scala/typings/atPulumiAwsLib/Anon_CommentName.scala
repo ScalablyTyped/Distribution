@@ -18,8 +18,7 @@ object Anon_CommentName {
     comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_CommentName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_CommentName]

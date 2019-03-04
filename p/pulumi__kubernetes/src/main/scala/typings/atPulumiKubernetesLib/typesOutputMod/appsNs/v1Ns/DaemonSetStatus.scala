@@ -74,17 +74,8 @@ object DaemonSetStatus {
     observedGeneration: scala.Double,
     updatedNumberScheduled: scala.Double
   ): DaemonSetStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collisionCount")(collisionCount)
-    __obj.updateDynamic("conditions")(conditions)
-    __obj.updateDynamic("currentNumberScheduled")(currentNumberScheduled)
-    __obj.updateDynamic("desiredNumberScheduled")(desiredNumberScheduled)
-    __obj.updateDynamic("numberAvailable")(numberAvailable)
-    __obj.updateDynamic("numberMisscheduled")(numberMisscheduled)
-    __obj.updateDynamic("numberReady")(numberReady)
-    __obj.updateDynamic("numberUnavailable")(numberUnavailable)
-    __obj.updateDynamic("observedGeneration")(observedGeneration)
-    __obj.updateDynamic("updatedNumberScheduled")(updatedNumberScheduled)
+    val __obj = js.Dynamic.literal(collisionCount = collisionCount, conditions = conditions, currentNumberScheduled = currentNumberScheduled, desiredNumberScheduled = desiredNumberScheduled, numberAvailable = numberAvailable, numberMisscheduled = numberMisscheduled, numberReady = numberReady, numberUnavailable = numberUnavailable, observedGeneration = observedGeneration, updatedNumberScheduled = updatedNumberScheduled)
+  
     __obj.asInstanceOf[DaemonSetStatus]
   }
 }

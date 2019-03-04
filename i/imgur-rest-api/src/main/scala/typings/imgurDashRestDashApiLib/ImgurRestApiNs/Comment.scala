@@ -42,21 +42,7 @@ object Comment {
     ups: scala.Double,
     vote: java.lang.String = null
   ): Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("album_cover")(album_cover)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("author_id")(author_id)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("datetime")(datetime)
-    __obj.updateDynamic("deleted")(deleted)
-    __obj.updateDynamic("downs")(downs)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image_id")(image_id)
-    __obj.updateDynamic("on_album")(on_album)
-    __obj.updateDynamic("parent_id")(parent_id)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("ups")(ups)
+    val __obj = js.Dynamic.literal(album_cover = album_cover, author = author, author_id = author_id, children = children, comment = comment, datetime = datetime, deleted = deleted, downs = downs, id = id, image_id = image_id, on_album = on_album, parent_id = parent_id, points = points, ups = ups)
     if (vote != null) __obj.updateDynamic("vote")(vote)
     __obj.asInstanceOf[Comment]
   }

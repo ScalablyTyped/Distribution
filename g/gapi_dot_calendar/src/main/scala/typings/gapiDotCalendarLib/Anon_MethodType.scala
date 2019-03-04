@@ -13,8 +13,8 @@ trait Anon_MethodType extends js.Object {
 object Anon_MethodType {
   @scala.inline
   def apply(method: java.lang.String, `type`: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.NotificationType): Anon_MethodType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(method = method)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_MethodType]
   }
 }

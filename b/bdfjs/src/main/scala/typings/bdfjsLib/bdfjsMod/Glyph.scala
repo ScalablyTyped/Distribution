@@ -32,17 +32,8 @@ object Glyph {
     scalableWidthX: scala.Double,
     scalableWidthY: scala.Double
   ): Glyph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bitmap")(bitmap)
-    __obj.updateDynamic("boundingBox")(boundingBox)
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("char")(char)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("deviceWidthX")(deviceWidthX)
-    __obj.updateDynamic("deviceWidthY")(deviceWidthY)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("scalableWidthX")(scalableWidthX)
-    __obj.updateDynamic("scalableWidthY")(scalableWidthY)
+    val __obj = js.Dynamic.literal(bitmap = bitmap, boundingBox = boundingBox, bytes = bytes, char = char, code = code, deviceWidthX = deviceWidthX, deviceWidthY = deviceWidthY, name = name, scalableWidthX = scalableWidthX, scalableWidthY = scalableWidthY)
+  
     __obj.asInstanceOf[Glyph]
   }
 }

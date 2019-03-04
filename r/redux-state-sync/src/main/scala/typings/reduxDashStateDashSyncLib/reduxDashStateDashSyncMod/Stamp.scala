@@ -15,9 +15,8 @@ trait Stamp extends js.Object {
 object Stamp {
   @scala.inline
   def apply($uuid: java.lang.String, $wuid: java.lang.String): Stamp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$uuid")($uuid)
-    __obj.updateDynamic("$wuid")($wuid)
+    val __obj = js.Dynamic.literal($uuid = $uuid, $wuid = $wuid)
+  
     __obj.asInstanceOf[Stamp]
   }
 }

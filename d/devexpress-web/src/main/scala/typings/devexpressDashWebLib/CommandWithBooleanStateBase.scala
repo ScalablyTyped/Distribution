@@ -18,8 +18,8 @@ trait CommandWithBooleanStateBase extends CommandBase {
 object CommandWithBooleanStateBase {
   @scala.inline
   def apply(getState: js.Function0[js.Any]): CommandWithBooleanStateBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getState")(getState)
+    val __obj = js.Dynamic.literal(getState = getState)
+  
     __obj.asInstanceOf[CommandWithBooleanStateBase]
   }
 }

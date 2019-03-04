@@ -34,10 +34,8 @@ object IPreallocatedWorkItemFactory {
       PreallocatedWorkItem
     ]
   ): IPreallocatedWorkItemFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWorkItem")(createWorkItem)
-    __obj.updateDynamic("createWorkItemWithPriority")(createWorkItemWithPriority)
-    __obj.updateDynamic("createWorkItemWithPriorityAndOptions")(createWorkItemWithPriorityAndOptions)
+    val __obj = js.Dynamic.literal(createWorkItem = createWorkItem, createWorkItemWithPriority = createWorkItemWithPriority, createWorkItemWithPriorityAndOptions = createWorkItemWithPriorityAndOptions)
+  
     __obj.asInstanceOf[IPreallocatedWorkItemFactory]
   }
 }

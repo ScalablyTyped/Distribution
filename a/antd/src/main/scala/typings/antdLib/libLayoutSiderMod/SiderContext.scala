@@ -12,8 +12,8 @@ trait SiderContext extends js.Object {
 object SiderContext {
   @scala.inline
   def apply(siderCollapsed: scala.Boolean): SiderContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("siderCollapsed")(siderCollapsed)
+    val __obj = js.Dynamic.literal(siderCollapsed = siderCollapsed)
+  
     __obj.asInstanceOf[SiderContext]
   }
 }

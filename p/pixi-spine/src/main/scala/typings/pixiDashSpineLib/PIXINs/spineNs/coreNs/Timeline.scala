@@ -34,9 +34,8 @@ object Timeline {
     ],
     getPropertyId: js.Function0[scala.Double]
   ): Timeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("getPropertyId")(getPropertyId)
+    val __obj = js.Dynamic.literal(apply = apply, getPropertyId = getPropertyId)
+  
     __obj.asInstanceOf[Timeline]
   }
 }

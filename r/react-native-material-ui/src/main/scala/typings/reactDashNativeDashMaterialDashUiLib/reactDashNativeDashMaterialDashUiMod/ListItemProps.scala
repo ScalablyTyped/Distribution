@@ -34,8 +34,7 @@ object ListItemProps {
     rightElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
     style: ListItemStyle = null
   ): ListItemProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("centerElement")(centerElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(centerElement = centerElement.asInstanceOf[js.Any])
     if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense)
     if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider)
     if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])

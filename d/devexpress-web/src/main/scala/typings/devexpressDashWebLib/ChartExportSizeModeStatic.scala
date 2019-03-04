@@ -23,10 +23,8 @@ trait ChartExportSizeModeStatic extends js.Object {
 object ChartExportSizeModeStatic {
   @scala.inline
   def apply(None: java.lang.String, Stretch: java.lang.String, Zoom: java.lang.String): ChartExportSizeModeStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("None")(None)
-    __obj.updateDynamic("Stretch")(Stretch)
-    __obj.updateDynamic("Zoom")(Zoom)
+    val __obj = js.Dynamic.literal(None = None, Stretch = Stretch, Zoom = Zoom)
+  
     __obj.asInstanceOf[ChartExportSizeModeStatic]
   }
 }

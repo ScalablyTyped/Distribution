@@ -13,9 +13,8 @@ trait Anon_Invalid extends js.Object {
 object Anon_Invalid {
   @scala.inline
   def apply(invalid: java.lang.String, valid: java.lang.String): Anon_Invalid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invalid")(invalid)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(invalid = invalid, valid = valid)
+  
     __obj.asInstanceOf[Anon_Invalid]
   }
 }

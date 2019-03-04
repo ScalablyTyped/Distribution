@@ -27,10 +27,8 @@ object Anon_BackgroundColor {
     featuredPlaylistId: java.lang.String,
     textColor: java.lang.String
   ): Anon_BackgroundColor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backgroundColor")(backgroundColor)
-    __obj.updateDynamic("featuredPlaylistId")(featuredPlaylistId)
-    __obj.updateDynamic("textColor")(textColor)
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor, featuredPlaylistId = featuredPlaylistId, textColor = textColor)
+  
     __obj.asInstanceOf[Anon_BackgroundColor]
   }
 }

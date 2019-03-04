@@ -34,18 +34,8 @@ object FeaturesLegacy {
     bSortClasses: scala.Boolean,
     bStateSave: scala.Boolean
   ): FeaturesLegacy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bAutoWidth")(bAutoWidth)
-    __obj.updateDynamic("bDeferRender")(bDeferRender)
-    __obj.updateDynamic("bFilter")(bFilter)
-    __obj.updateDynamic("bInfo")(bInfo)
-    __obj.updateDynamic("bLengthChange")(bLengthChange)
-    __obj.updateDynamic("bPaginate")(bPaginate)
-    __obj.updateDynamic("bProcessing")(bProcessing)
-    __obj.updateDynamic("bServerSide")(bServerSide)
-    __obj.updateDynamic("bSort")(bSort)
-    __obj.updateDynamic("bSortClasses")(bSortClasses)
-    __obj.updateDynamic("bStateSave")(bStateSave)
+    val __obj = js.Dynamic.literal(bAutoWidth = bAutoWidth, bDeferRender = bDeferRender, bFilter = bFilter, bInfo = bInfo, bLengthChange = bLengthChange, bPaginate = bPaginate, bProcessing = bProcessing, bServerSide = bServerSide, bSort = bSort, bSortClasses = bSortClasses, bStateSave = bStateSave)
+  
     __obj.asInstanceOf[FeaturesLegacy]
   }
 }

@@ -18,10 +18,8 @@ object Anon_DataDecode {
     encode: js.Function1[js.Any, java.lang.String],
     jsonNs: js.Any
   ): Anon_DataDecode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("jsonNs")(jsonNs)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, jsonNs = jsonNs)
+  
     __obj.asInstanceOf[Anon_DataDecode]
   }
 }

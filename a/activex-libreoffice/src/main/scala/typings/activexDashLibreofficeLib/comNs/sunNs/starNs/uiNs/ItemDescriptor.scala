@@ -70,16 +70,8 @@ object ItemDescriptor {
     Type: scala.Double,
     Width: scala.Double
   ): ItemDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CommandURL")(CommandURL)
-    __obj.updateDynamic("HelpURL")(HelpURL)
-    __obj.updateDynamic("IsVisible")(IsVisible)
-    __obj.updateDynamic("ItemDescriptorContainer")(ItemDescriptorContainer)
-    __obj.updateDynamic("Label")(Label)
-    __obj.updateDynamic("Offset")(Offset)
-    __obj.updateDynamic("Style")(Style)
-    __obj.updateDynamic("Type")(Type)
-    __obj.updateDynamic("Width")(Width)
+    val __obj = js.Dynamic.literal(CommandURL = CommandURL, HelpURL = HelpURL, IsVisible = IsVisible, ItemDescriptorContainer = ItemDescriptorContainer, Label = Label, Offset = Offset, Style = Style, Type = Type, Width = Width)
+  
     __obj.asInstanceOf[ItemDescriptor]
   }
 }

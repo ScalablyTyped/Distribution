@@ -43,8 +43,8 @@ object ReadsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchReadsResponse]
     ]
   ): ReadsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(search = search)
+  
     __obj.asInstanceOf[ReadsResource]
   }
 }

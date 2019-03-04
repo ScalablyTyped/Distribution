@@ -22,8 +22,7 @@ object ProviderProps {
     immutable: js.UndefOr[scala.Boolean] = js.undefined,
     store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction] = null
   ): ProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
+    val __obj = js.Dynamic.literal(client = client)
     if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable)
     if (store != null) __obj.updateDynamic("store")(store)
     __obj.asInstanceOf[ProviderProps]

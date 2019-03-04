@@ -37,10 +37,7 @@ object Button {
     style: java.lang.String = null,
     title: java.lang.String = null
   ): Button = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("image")(image)
+    val __obj = js.Dynamic.literal(callback = callback, id = id, image = image)
     if (clazz != null) __obj.updateDynamic("clazz")(clazz)
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title)

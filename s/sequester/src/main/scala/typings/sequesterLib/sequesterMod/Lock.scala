@@ -24,13 +24,8 @@ object Lock {
     share: js.Function1[sequesterLib.Callback, scala.Unit],
     unlock: js.Function0[scala.Unit]
   ): Lock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("downgrade")(downgrade)
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("share")(share)
-    __obj.updateDynamic("unlock")(unlock)
+    val __obj = js.Dynamic.literal(count = count, dispose = dispose, downgrade = downgrade, exclude = exclude, share = share, unlock = unlock)
+  
     __obj.asInstanceOf[Lock]
   }
 }

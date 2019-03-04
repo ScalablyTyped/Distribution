@@ -27,13 +27,8 @@ object PromiseTracker {
     tracking: js.Function0[scala.Boolean],
     trackingCount: js.Function0[scala.Double]
   ): PromiseTracker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("active")(active)
-    __obj.updateDynamic("addPromise")(addPromise)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("createPromise")(createPromise)
-    __obj.updateDynamic("tracking")(tracking)
-    __obj.updateDynamic("trackingCount")(trackingCount)
+    val __obj = js.Dynamic.literal(active = active, addPromise = addPromise, cancel = cancel, createPromise = createPromise, tracking = tracking, trackingCount = trackingCount)
+  
     __obj.asInstanceOf[PromiseTracker]
   }
 }

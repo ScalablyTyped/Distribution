@@ -44,19 +44,7 @@ object ViewportProps {
     transitionInterpolator: TransitionInterpolator = null,
     transitionInterruption: TRANSITION_EVENTS = null
   ): ViewportProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("altitude")(altitude)
-    __obj.updateDynamic("bearing")(bearing)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
-    __obj.updateDynamic("maxPitch")(maxPitch)
-    __obj.updateDynamic("maxZoom")(maxZoom)
-    __obj.updateDynamic("minPitch")(minPitch)
-    __obj.updateDynamic("minZoom")(minZoom)
-    __obj.updateDynamic("pitch")(pitch)
-    __obj.updateDynamic("width")(width)
-    __obj.updateDynamic("zoom")(zoom)
+    val __obj = js.Dynamic.literal(altitude = altitude, bearing = bearing, height = height, latitude = latitude, longitude = longitude, maxPitch = maxPitch, maxZoom = maxZoom, minPitch = minPitch, minZoom = minZoom, pitch = pitch, width = width, zoom = zoom)
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(transitionEasing)
     if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator)

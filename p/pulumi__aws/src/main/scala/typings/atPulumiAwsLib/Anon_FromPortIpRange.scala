@@ -20,11 +20,8 @@ object Anon_FromPortIpRange {
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     toPort: atPulumiPulumiLib.outputMod.Input[scala.Double]
   ): Anon_FromPortIpRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
-    __obj.updateDynamic("ipRange")(ipRange.asInstanceOf[js.Any])
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], ipRange = ipRange.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_FromPortIpRange]
   }
 }

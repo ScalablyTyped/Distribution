@@ -13,9 +13,8 @@ trait PromptResponse extends js.Object {
 object PromptResponse {
   @scala.inline
   def apply(getResponseText: js.Function0[java.lang.String], getSelectedButton: js.Function0[Button]): PromptResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getResponseText")(getResponseText)
-    __obj.updateDynamic("getSelectedButton")(getSelectedButton)
+    val __obj = js.Dynamic.literal(getResponseText = getResponseText, getSelectedButton = getSelectedButton)
+  
     __obj.asInstanceOf[PromptResponse]
   }
 }

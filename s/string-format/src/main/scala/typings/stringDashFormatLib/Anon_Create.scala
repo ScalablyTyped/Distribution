@@ -27,9 +27,8 @@ object Anon_Create {
     ],
     extend: js.Function2[js.Any, stringDashFormatLib.stringDashFormatMod.Transformers, scala.Unit]
   ): Anon_Create = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("extend")(extend)
+    val __obj = js.Dynamic.literal(create = create, extend = extend)
+  
     __obj.asInstanceOf[Anon_Create]
   }
 }

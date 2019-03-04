@@ -25,12 +25,8 @@ object ITypedRule {
     getOptions: js.Function0[IOptions],
     isEnabled: js.Function0[scala.Boolean]
   ): ITypedRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply)
-    __obj.updateDynamic("applyWithProgram")(applyWithProgram)
-    __obj.updateDynamic("applyWithWalker")(applyWithWalker)
-    __obj.updateDynamic("getOptions")(getOptions)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(apply = apply, applyWithProgram = applyWithProgram, applyWithWalker = applyWithWalker, getOptions = getOptions, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[ITypedRule]
   }
 }

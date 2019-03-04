@@ -20,11 +20,8 @@ object Anon_Charsets {
     languages: js.Array[java.lang.String],
     mediaTypes: js.Array[java.lang.String]
   ): Anon_Charsets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("charsets")(charsets)
-    __obj.updateDynamic("encodings")(encodings)
-    __obj.updateDynamic("languages")(languages)
-    __obj.updateDynamic("mediaTypes")(mediaTypes)
+    val __obj = js.Dynamic.literal(charsets = charsets, encodings = encodings, languages = languages, mediaTypes = mediaTypes)
+  
     __obj.asInstanceOf[Anon_Charsets]
   }
 }

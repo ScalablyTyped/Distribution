@@ -12,8 +12,8 @@ trait GitPathToItemsCollection extends js.Object {
 object GitPathToItemsCollection {
   @scala.inline
   def apply(items: org.scalablytyped.runtime.StringDictionary[js.Array[GitItem]]): GitPathToItemsCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+  
     __obj.asInstanceOf[GitPathToItemsCollection]
   }
 }

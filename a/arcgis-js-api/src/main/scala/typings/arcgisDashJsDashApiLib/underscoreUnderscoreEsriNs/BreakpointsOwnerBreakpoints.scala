@@ -59,10 +59,7 @@ object BreakpointsOwnerBreakpoints {
     xlarge: scala.Int | scala.Double = null,
     xsmall: scala.Int | scala.Double = null
   ): BreakpointsOwnerBreakpoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
     if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
     if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])

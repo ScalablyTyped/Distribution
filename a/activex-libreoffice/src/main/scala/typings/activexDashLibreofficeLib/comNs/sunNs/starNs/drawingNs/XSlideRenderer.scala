@@ -70,10 +70,8 @@ object XSlideRenderer {
       activexDashLibreofficeLib.comNs.sunNs.starNs.renderingNs.XBitmap
     ]
   ): XSlideRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calculatePreviewSize")(calculatePreviewSize)
-    __obj.updateDynamic("createPreview")(createPreview)
-    __obj.updateDynamic("createPreviewForCanvas")(createPreviewForCanvas)
+    val __obj = js.Dynamic.literal(calculatePreviewSize = calculatePreviewSize, createPreview = createPreview, createPreviewForCanvas = createPreviewForCanvas)
+  
     __obj.asInstanceOf[XSlideRenderer]
   }
 }

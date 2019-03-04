@@ -31,14 +31,12 @@ object MeasureShape {
     StartPosition: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     Text: Text = null
   ): MeasureShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("EndPosition")(EndPosition)
+    val __obj = js.Dynamic.literal(EndPosition = EndPosition, StartPosition = StartPosition)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, MeasureProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
-    __obj.updateDynamic("StartPosition")(StartPosition)
     js.Dynamic.global.Object.assign(__obj, Text)
     __obj.asInstanceOf[MeasureShape]
   }

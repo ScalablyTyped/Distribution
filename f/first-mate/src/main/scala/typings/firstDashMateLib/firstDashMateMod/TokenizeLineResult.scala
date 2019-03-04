@@ -37,11 +37,8 @@ object TokenizeLineResult {
     tags: js.Array[scala.Double | java.lang.String],
     tokens: js.Array[GrammarToken]
   ): TokenizeLineResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("ruleStack")(ruleStack)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("tokens")(tokens)
+    val __obj = js.Dynamic.literal(line = line, ruleStack = ruleStack, tags = tags, tokens = tokens)
+  
     __obj.asInstanceOf[TokenizeLineResult]
   }
 }

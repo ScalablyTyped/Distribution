@@ -22,12 +22,8 @@ object Attrs {
     uri: java.lang.String,
     value: js.Any
   ): Attrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("local")(local)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("prefix")(prefix)
-    __obj.updateDynamic("uri")(uri)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(local = local, name = name, prefix = prefix, uri = uri, value = value)
+  
     __obj.asInstanceOf[Attrs]
   }
 }

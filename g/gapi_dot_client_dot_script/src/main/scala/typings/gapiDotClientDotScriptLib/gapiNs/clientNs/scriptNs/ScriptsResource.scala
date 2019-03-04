@@ -28,8 +28,8 @@ object ScriptsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Operation]
     ]
   ): ScriptsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
+    val __obj = js.Dynamic.literal(run = run)
+  
     __obj.asInstanceOf[ScriptsResource]
   }
 }

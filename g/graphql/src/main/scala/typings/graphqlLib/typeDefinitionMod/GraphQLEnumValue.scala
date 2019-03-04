@@ -26,11 +26,7 @@ object GraphQLEnumValue {
     astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.EnumValueDefinitionNode] = null,
     isDeprecated: js.UndefOr[scala.Boolean] = js.undefined
   ): GraphQLEnumValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
-    __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(deprecationReason = deprecationReason.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name, value = value)
     if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
     if (!js.isUndefined(isDeprecated)) __obj.updateDynamic("isDeprecated")(isDeprecated)
     __obj.asInstanceOf[GraphQLEnumValue]

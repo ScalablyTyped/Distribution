@@ -26,13 +26,8 @@ object RenderError {
     message: java.lang.String,
     `type`: java.lang.String
   ): RenderError = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("extract")(extract)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(column = column, extract = extract, filename = filename, index = index, line = line, message = message)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RenderError]
   }
 }

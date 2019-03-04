@@ -20,8 +20,8 @@ object Anon_Event {
       reactLib.Event
     ]
   ): Anon_Event = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[Anon_Event]
   }
 }

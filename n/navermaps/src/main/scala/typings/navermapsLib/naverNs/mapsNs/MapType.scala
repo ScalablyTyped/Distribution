@@ -24,13 +24,8 @@ object MapType {
     projection: Projection,
     tileSize: Size
   ): MapType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTile")(getTile)
-    __obj.updateDynamic("maxZoom")(maxZoom)
-    __obj.updateDynamic("minZoom")(minZoom)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("projection")(projection)
-    __obj.updateDynamic("tileSize")(tileSize)
+    val __obj = js.Dynamic.literal(getTile = getTile, maxZoom = maxZoom, minZoom = minZoom, name = name, projection = projection, tileSize = tileSize)
+  
     __obj.asInstanceOf[MapType]
   }
 }

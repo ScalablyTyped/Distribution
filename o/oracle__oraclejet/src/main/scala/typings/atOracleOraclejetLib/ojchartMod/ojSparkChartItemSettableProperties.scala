@@ -37,14 +37,7 @@ object ojSparkChartItemSettableProperties {
     markerShape: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String = null,
     value: scala.Int | scala.Double = null
   ): ojSparkChartItemSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderColor")(borderColor)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("markerDisplayed")(markerDisplayed.asInstanceOf[js.Any])
-    __obj.updateDynamic("markerSize")(markerSize)
-    __obj.updateDynamic("svgClassName")(svgClassName)
-    __obj.updateDynamic("svgStyle")(svgStyle)
+    val __obj = js.Dynamic.literal(borderColor = borderColor, color = color, date = date, markerDisplayed = markerDisplayed.asInstanceOf[js.Any], markerSize = markerSize, svgClassName = svgClassName, svgStyle = svgStyle)
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
     if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])

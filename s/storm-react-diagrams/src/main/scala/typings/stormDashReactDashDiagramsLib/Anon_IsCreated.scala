@@ -13,9 +13,8 @@ trait Anon_IsCreated extends js.Object {
 object Anon_IsCreated {
   @scala.inline
   def apply(isCreated: scala.Boolean, node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): Anon_IsCreated = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCreated")(isCreated)
-    __obj.updateDynamic("node")(node)
+    val __obj = js.Dynamic.literal(isCreated = isCreated, node = node)
+  
     __obj.asInstanceOf[Anon_IsCreated]
   }
 }

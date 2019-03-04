@@ -19,9 +19,8 @@ trait ASPxClientVerticalGridBatchEditRecordInsertingEventArgs extends ASPxClient
 object ASPxClientVerticalGridBatchEditRecordInsertingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, visibleIndex: scala.Double): ASPxClientVerticalGridBatchEditRecordInsertingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    val __obj = js.Dynamic.literal(cancel = cancel, visibleIndex = visibleIndex)
+  
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordInsertingEventArgs]
   }
 }

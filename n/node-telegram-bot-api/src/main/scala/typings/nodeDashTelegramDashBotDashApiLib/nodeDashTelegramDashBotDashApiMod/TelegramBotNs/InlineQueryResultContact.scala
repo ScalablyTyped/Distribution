@@ -32,10 +32,8 @@ object InlineQueryResultContact {
     thumb_url: java.lang.String = null,
     thumb_width: scala.Int | scala.Double = null
   ): InlineQueryResultContact = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("phone_number")(phone_number)
+    val __obj = js.Dynamic.literal(first_name = first_name, id = id, phone_number = phone_number)
+    __obj.updateDynamic("type")(`type`)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)
     if (last_name != null) __obj.updateDynamic("last_name")(last_name)
     if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)

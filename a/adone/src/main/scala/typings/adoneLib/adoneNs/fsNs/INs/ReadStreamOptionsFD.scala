@@ -27,8 +27,7 @@ object ReadStreamOptionsFD {
     mode: scala.Int | scala.Double = null,
     start: scala.Int | scala.Double = null
   ): ReadStreamOptionsFD = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fd")(fd)
+    val __obj = js.Dynamic.literal(fd = fd)
     if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

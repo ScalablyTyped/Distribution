@@ -20,11 +20,8 @@ object SwalState {
     promise: sweetalertLib.Anon_Reject,
     timer: scala.Double
   ): SwalState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actions")(actions)
-    __obj.updateDynamic("isOpen")(isOpen)
-    __obj.updateDynamic("promise")(promise)
-    __obj.updateDynamic("timer")(timer)
+    val __obj = js.Dynamic.literal(actions = actions, isOpen = isOpen, promise = promise, timer = timer)
+  
     __obj.asInstanceOf[SwalState]
   }
 }

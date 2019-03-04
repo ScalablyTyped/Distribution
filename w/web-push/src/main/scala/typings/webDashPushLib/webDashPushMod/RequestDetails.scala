@@ -22,10 +22,7 @@ object RequestDetails {
     body: nodeLib.Buffer = null,
     proxy: java.lang.String = null
   ): RequestDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endpoint")(endpoint)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(endpoint = endpoint, headers = headers, method = method)
     if (body != null) __obj.updateDynamic("body")(body)
     if (proxy != null) __obj.updateDynamic("proxy")(proxy)
     __obj.asInstanceOf[RequestDetails]

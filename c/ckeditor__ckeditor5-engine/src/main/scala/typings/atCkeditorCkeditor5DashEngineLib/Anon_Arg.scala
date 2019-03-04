@@ -16,9 +16,8 @@ object Anon_Arg {
     error: js.Function1[/* repeated */ js.Any, java.lang.String],
     log: js.Function1[/* repeated */ js.Any, java.lang.String]
   ): Anon_Arg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("log")(log)
+    val __obj = js.Dynamic.literal(error = error, log = log)
+  
     __obj.asInstanceOf[Anon_Arg]
   }
 }

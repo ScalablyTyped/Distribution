@@ -130,34 +130,8 @@ object Dock {
     show: js.Function0[scala.Unit],
     toggle: js.Function0[scala.Unit]
   ): Dock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activate")(activate)
-    __obj.updateDynamic("activateNextPane")(activateNextPane)
-    __obj.updateDynamic("activatePreviousPane")(activatePreviousPane)
-    __obj.updateDynamic("getActivePane")(getActivePane)
-    __obj.updateDynamic("getActivePaneItem")(getActivePaneItem)
-    __obj.updateDynamic("getPaneItems")(getPaneItems)
-    __obj.updateDynamic("getPanes")(getPanes)
-    __obj.updateDynamic("hide")(hide)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("observeActivePane")(observeActivePane)
-    __obj.updateDynamic("observeActivePaneItem")(observeActivePaneItem)
-    __obj.updateDynamic("observePaneItems")(observePaneItems)
-    __obj.updateDynamic("observePanes")(observePanes)
-    __obj.updateDynamic("observeVisible")(observeVisible)
-    __obj.updateDynamic("onDidAddPane")(onDidAddPane)
-    __obj.updateDynamic("onDidAddPaneItem")(onDidAddPaneItem)
-    __obj.updateDynamic("onDidChangeActivePane")(onDidChangeActivePane)
-    __obj.updateDynamic("onDidChangeActivePaneItem")(onDidChangeActivePaneItem)
-    __obj.updateDynamic("onDidChangeHovered")(onDidChangeHovered)
-    __obj.updateDynamic("onDidChangeVisible")(onDidChangeVisible)
-    __obj.updateDynamic("onDidDestroyPane")(onDidDestroyPane)
-    __obj.updateDynamic("onDidDestroyPaneItem")(onDidDestroyPaneItem)
-    __obj.updateDynamic("onDidStopChangingActivePaneItem")(onDidStopChangingActivePaneItem)
-    __obj.updateDynamic("onWillDestroyPane")(onWillDestroyPane)
-    __obj.updateDynamic("onWillDestroyPaneItem")(onWillDestroyPaneItem)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(activate = activate, activateNextPane = activateNextPane, activatePreviousPane = activatePreviousPane, getActivePane = getActivePane, getActivePaneItem = getActivePaneItem, getPaneItems = getPaneItems, getPanes = getPanes, hide = hide, isVisible = isVisible, observeActivePane = observeActivePane, observeActivePaneItem = observeActivePaneItem, observePaneItems = observePaneItems, observePanes = observePanes, observeVisible = observeVisible, onDidAddPane = onDidAddPane, onDidAddPaneItem = onDidAddPaneItem, onDidChangeActivePane = onDidChangeActivePane, onDidChangeActivePaneItem = onDidChangeActivePaneItem, onDidChangeHovered = onDidChangeHovered, onDidChangeVisible = onDidChangeVisible, onDidDestroyPane = onDidDestroyPane, onDidDestroyPaneItem = onDidDestroyPaneItem, onDidStopChangingActivePaneItem = onDidStopChangingActivePaneItem, onWillDestroyPane = onWillDestroyPane, onWillDestroyPaneItem = onWillDestroyPaneItem, show = show, toggle = toggle)
+  
     __obj.asInstanceOf[Dock]
   }
 }

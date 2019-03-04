@@ -22,8 +22,7 @@ object CommandModule {
     command: js.Array[java.lang.String] | java.lang.String = null,
     describe: java.lang.String | yargsLib.yargsLibNumbers.`false` = null
   ): CommandModule[T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler)
+    val __obj = js.Dynamic.literal(handler = handler)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (builder != null) __obj.updateDynamic("builder")(builder.asInstanceOf[js.Any])
     if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])

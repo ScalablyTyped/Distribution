@@ -26,14 +26,8 @@ object DrivingResult {
     taxi_cost: scala.Double,
     waypoints: Poi
   ): DrivingResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    __obj.updateDynamic("info")(info)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("routes")(routes)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("taxi_cost")(taxi_cost)
-    __obj.updateDynamic("waypoints")(waypoints)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], info = info, origin = origin, routes = routes, start = start, taxi_cost = taxi_cost, waypoints = waypoints)
+  
     __obj.asInstanceOf[DrivingResult]
   }
 }

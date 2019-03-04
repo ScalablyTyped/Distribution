@@ -40,8 +40,8 @@ object AdditionalItems {
       ]
     ]
   ): AdditionalItems = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
+    val __obj = js.Dynamic.literal(data = data)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalItems]
   }
 }

@@ -16,9 +16,8 @@ object Anon_AES128GCM {
     AES_128_GCM: webDashPushLib.webDashPushLibStrings.aws128gcm with webDashPushLib.webDashPushMod.ContentEncoding,
     AES_GCM: webDashPushLib.webDashPushLibStrings.aesgcm with webDashPushLib.webDashPushMod.ContentEncoding
   ): Anon_AES128GCM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AES_128_GCM")(AES_128_GCM)
-    __obj.updateDynamic("AES_GCM")(AES_GCM)
+    val __obj = js.Dynamic.literal(AES_128_GCM = AES_128_GCM, AES_GCM = AES_GCM)
+  
     __obj.asInstanceOf[Anon_AES128GCM]
   }
 }

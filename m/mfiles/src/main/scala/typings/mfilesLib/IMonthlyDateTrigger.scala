@@ -13,9 +13,8 @@ trait IMonthlyDateTrigger extends js.Object {
 object IMonthlyDateTrigger {
   @scala.inline
   def apply(Days: scala.Double, Months: mfilesLib.MFilesNs.MFTriggerMonth): IMonthlyDateTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Days")(Days)
-    __obj.updateDynamic("Months")(Months)
+    val __obj = js.Dynamic.literal(Days = Days, Months = Months)
+  
     __obj.asInstanceOf[IMonthlyDateTrigger]
   }
 }

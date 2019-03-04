@@ -14,10 +14,8 @@ trait TMessage extends js.Object {
 object TMessage {
   @scala.inline
   def apply(fname: java.lang.String, mtype: thriftLib.thriftMod.ThriftNs.MessageType, rseqid: scala.Double): TMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fname")(fname)
-    __obj.updateDynamic("mtype")(mtype)
-    __obj.updateDynamic("rseqid")(rseqid)
+    val __obj = js.Dynamic.literal(fname = fname, mtype = mtype, rseqid = rseqid)
+  
     __obj.asInstanceOf[TMessage]
   }
 }

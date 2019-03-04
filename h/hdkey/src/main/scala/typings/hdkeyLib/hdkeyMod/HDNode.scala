@@ -20,11 +20,8 @@ object HDNode {
     privateKey: nodeLib.Buffer,
     publicKey: nodeLib.Buffer
   ): HDNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chainCode")(chainCode)
-    __obj.updateDynamic("derive")(derive)
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("publicKey")(publicKey)
+    val __obj = js.Dynamic.literal(chainCode = chainCode, derive = derive, privateKey = privateKey, publicKey = publicKey)
+  
     __obj.asInstanceOf[HDNode]
   }
 }

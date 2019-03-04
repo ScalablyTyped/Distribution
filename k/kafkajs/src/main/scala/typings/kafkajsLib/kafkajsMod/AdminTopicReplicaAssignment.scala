@@ -13,9 +13,8 @@ trait AdminTopicReplicaAssignment extends js.Object {
 object AdminTopicReplicaAssignment {
   @scala.inline
   def apply(partition: scala.Double, replicas: js.Array[scala.Double]): AdminTopicReplicaAssignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("replicas")(replicas)
+    val __obj = js.Dynamic.literal(partition = partition, replicas = replicas)
+  
     __obj.asInstanceOf[AdminTopicReplicaAssignment]
   }
 }

@@ -21,11 +21,8 @@ object TooltipContext {
     label: java.lang.String,
     parentElement: stdLib.Element
   ): TooltipContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("parentElement")(parentElement)
+    val __obj = js.Dynamic.literal(color = color, componentElement = componentElement, label = label, parentElement = parentElement)
+  
     __obj.asInstanceOf[TooltipContext]
   }
 }

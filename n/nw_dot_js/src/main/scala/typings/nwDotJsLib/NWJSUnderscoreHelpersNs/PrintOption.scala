@@ -46,13 +46,8 @@ object PrintOption {
     printer: java.lang.String,
     shouldPrintBackgrounds: scala.Boolean
   ): PrintOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headerFooterEnabled")(headerFooterEnabled)
-    __obj.updateDynamic("landscape")(landscape)
-    __obj.updateDynamic("mediaSize")(mediaSize)
-    __obj.updateDynamic("pdf_path")(pdf_path)
-    __obj.updateDynamic("printer")(printer)
-    __obj.updateDynamic("shouldPrintBackgrounds")(shouldPrintBackgrounds)
+    val __obj = js.Dynamic.literal(headerFooterEnabled = headerFooterEnabled, landscape = landscape, mediaSize = mediaSize, pdf_path = pdf_path, printer = printer, shouldPrintBackgrounds = shouldPrintBackgrounds)
+  
     __obj.asInstanceOf[PrintOption]
   }
 }

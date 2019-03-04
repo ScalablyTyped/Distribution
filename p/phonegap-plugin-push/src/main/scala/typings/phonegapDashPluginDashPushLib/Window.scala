@@ -12,8 +12,8 @@ trait Window extends js.Object {
 object Window {
   @scala.inline
   def apply(PushNotification: phonegapDashPluginDashPushLib.PhonegapPluginPushNs.PushNotificationStatic): Window = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PushNotification")(PushNotification)
+    val __obj = js.Dynamic.literal(PushNotification = PushNotification)
+  
     __obj.asInstanceOf[Window]
   }
 }

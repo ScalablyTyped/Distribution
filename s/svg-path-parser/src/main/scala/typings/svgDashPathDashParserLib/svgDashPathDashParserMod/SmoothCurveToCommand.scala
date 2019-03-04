@@ -26,13 +26,7 @@ object SmoothCurveToCommand {
     y2: scala.Double,
     relative: js.UndefOr[scala.Boolean] = js.undefined
   ): SmoothCurveToCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("x2")(x2)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("y2")(y2)
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command, x = x, x2 = x2, y = y, y2 = y2)
     if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
     __obj.asInstanceOf[SmoothCurveToCommand]
   }

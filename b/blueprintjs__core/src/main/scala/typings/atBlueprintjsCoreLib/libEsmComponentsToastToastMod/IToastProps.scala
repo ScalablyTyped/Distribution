@@ -47,8 +47,7 @@ object IToastProps {
     onDismiss: js.Function1[/* didTimeoutExpire */ scala.Boolean, scala.Unit] = null,
     timeout: scala.Int | scala.Double = null
   ): IToastProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action)
     if (className != null) __obj.updateDynamic("className")(className)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

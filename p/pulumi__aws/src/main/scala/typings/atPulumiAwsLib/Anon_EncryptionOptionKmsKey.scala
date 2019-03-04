@@ -16,8 +16,7 @@ object Anon_EncryptionOptionKmsKey {
     encryptionOption: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     kmsKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_EncryptionOptionKmsKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("encryptionOption")(encryptionOption.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encryptionOption = encryptionOption.asInstanceOf[js.Any])
     if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EncryptionOptionKmsKey]
   }

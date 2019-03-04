@@ -56,30 +56,8 @@ object BootstrapCardViewEventMap {
     selectionChanged: CardViewSelectionEventArgs,
     toolbarItemClick: GridToolbarItemClickEventArgs
   ): BootstrapCardViewEventMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("batchEditCardDeleting")(batchEditCardDeleting)
-    __obj.updateDynamic("batchEditCardInserting")(batchEditCardInserting)
-    __obj.updateDynamic("batchEditCardValidating")(batchEditCardValidating)
-    __obj.updateDynamic("batchEditChangesCanceling")(batchEditChangesCanceling)
-    __obj.updateDynamic("batchEditChangesSaving")(batchEditChangesSaving)
-    __obj.updateDynamic("batchEditConfirmShowing")(batchEditConfirmShowing)
-    __obj.updateDynamic("batchEditEndEditing")(batchEditEndEditing)
-    __obj.updateDynamic("batchEditStartEditing")(batchEditStartEditing)
-    __obj.updateDynamic("batchEditTemplateCellFocused")(batchEditTemplateCellFocused)
-    __obj.updateDynamic("beginCallback")(beginCallback)
-    __obj.updateDynamic("callbackError")(callbackError)
-    __obj.updateDynamic("cardClick")(cardClick)
-    __obj.updateDynamic("cardDblClick")(cardDblClick)
-    __obj.updateDynamic("cardFocusing")(cardFocusing)
-    __obj.updateDynamic("columnSorting")(columnSorting)
-    __obj.updateDynamic("customButtonClick")(customButtonClick)
-    __obj.updateDynamic("customizationWindowCloseUp")(customizationWindowCloseUp)
-    __obj.updateDynamic("endCallback")(endCallback)
-    __obj.updateDynamic("focusedCardChanged")(focusedCardChanged)
-    __obj.updateDynamic("focusedCellChanging")(focusedCellChanging)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("selectionChanged")(selectionChanged)
-    __obj.updateDynamic("toolbarItemClick")(toolbarItemClick)
+    val __obj = js.Dynamic.literal(batchEditCardDeleting = batchEditCardDeleting, batchEditCardInserting = batchEditCardInserting, batchEditCardValidating = batchEditCardValidating, batchEditChangesCanceling = batchEditChangesCanceling, batchEditChangesSaving = batchEditChangesSaving, batchEditConfirmShowing = batchEditConfirmShowing, batchEditEndEditing = batchEditEndEditing, batchEditStartEditing = batchEditStartEditing, batchEditTemplateCellFocused = batchEditTemplateCellFocused, beginCallback = beginCallback, callbackError = callbackError, cardClick = cardClick, cardDblClick = cardDblClick, cardFocusing = cardFocusing, columnSorting = columnSorting, customButtonClick = customButtonClick, customizationWindowCloseUp = customizationWindowCloseUp, endCallback = endCallback, focusedCardChanged = focusedCardChanged, focusedCellChanging = focusedCellChanging, init = init, selectionChanged = selectionChanged, toolbarItemClick = toolbarItemClick)
+  
     __obj.asInstanceOf[BootstrapCardViewEventMap]
   }
 }

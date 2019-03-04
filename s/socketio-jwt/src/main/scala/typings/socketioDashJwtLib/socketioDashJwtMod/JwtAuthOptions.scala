@@ -25,9 +25,7 @@ object JwtAuthOptions {
     handshake: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Int | scala.Double = null
   ): JwtAuthOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decodedPropertyName")(decodedPropertyName)
-    __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(decodedPropertyName = decodedPropertyName, secret = secret.asInstanceOf[js.Any])
     if (!js.isUndefined(callback)) __obj.updateDynamic("callback")(callback)
     if (!js.isUndefined(handshake)) __obj.updateDynamic("handshake")(handshake)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

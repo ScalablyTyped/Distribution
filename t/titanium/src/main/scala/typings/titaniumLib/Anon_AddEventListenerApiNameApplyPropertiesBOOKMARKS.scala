@@ -117,28 +117,8 @@ object Anon_AddEventListenerApiNameApplyPropertiesBOOKMARKS {
     removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
     setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
   ): Anon_AddEventListenerApiNameApplyPropertiesBOOKMARKS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BOOKMARKS")(BOOKMARKS)
-    __obj.updateDynamic("CONTACTS")(CONTACTS)
-    __obj.updateDynamic("DOWNLOADS")(DOWNLOADS)
-    __obj.updateDynamic("FAVORITES")(FAVORITES)
-    __obj.updateDynamic("FEATURED")(FEATURED)
-    __obj.updateDynamic("HISTORY")(HISTORY)
-    __obj.updateDynamic("MORE")(MORE)
-    __obj.updateDynamic("MOST_RECENT")(MOST_RECENT)
-    __obj.updateDynamic("MOST_VIEWED")(MOST_VIEWED)
-    __obj.updateDynamic("RECENTS")(RECENTS)
-    __obj.updateDynamic("SEARCH")(SEARCH)
-    __obj.updateDynamic("TOP_RATED")(TOP_RATED)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("apiName")(apiName)
-    __obj.updateDynamic("applyProperties")(applyProperties)
-    __obj.updateDynamic("bubbleParent")(bubbleParent)
-    __obj.updateDynamic("fireEvent")(fireEvent)
-    __obj.updateDynamic("getApiName")(getApiName)
-    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    val __obj = js.Dynamic.literal(BOOKMARKS = BOOKMARKS, CONTACTS = CONTACTS, DOWNLOADS = DOWNLOADS, FAVORITES = FAVORITES, FEATURED = FEATURED, HISTORY = HISTORY, MORE = MORE, MOST_RECENT = MOST_RECENT, MOST_VIEWED = MOST_VIEWED, RECENTS = RECENTS, SEARCH = SEARCH, TOP_RATED = TOP_RATED, addEventListener = addEventListener, apiName = apiName, applyProperties = applyProperties, bubbleParent = bubbleParent, fireEvent = fireEvent, getApiName = getApiName, getBubbleParent = getBubbleParent, removeEventListener = removeEventListener, setBubbleParent = setBubbleParent)
+  
     __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBOOKMARKS]
   }
 }

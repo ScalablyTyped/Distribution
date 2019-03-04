@@ -30,9 +30,7 @@ object Anon_AutoscalingPolicyBidPrice {
     instanceCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_AutoscalingPolicyBidPrice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("instanceRole")(instanceRole.asInstanceOf[js.Any])
-    __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
     if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy.asInstanceOf[js.Any])
     if (bidPrice != null) __obj.updateDynamic("bidPrice")(bidPrice.asInstanceOf[js.Any])
     if (ebsConfigs != null) __obj.updateDynamic("ebsConfigs")(ebsConfigs.asInstanceOf[js.Any])

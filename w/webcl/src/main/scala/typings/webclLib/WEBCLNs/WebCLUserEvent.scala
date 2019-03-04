@@ -19,12 +19,8 @@ object WebCLUserEvent {
     setCallback: js.Function2[CommandExecutionStatus, WebCLCallback, scala.Unit],
     setStatus: js.Function1[CommandExecutionStatus, scala.Unit]
   ): WebCLUserEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInfo")(getInfo)
-    __obj.updateDynamic("getProfilingInfo")(getProfilingInfo)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCallback")(setCallback)
-    __obj.updateDynamic("setStatus")(setStatus)
+    val __obj = js.Dynamic.literal(getInfo = getInfo, getProfilingInfo = getProfilingInfo, release = release, setCallback = setCallback, setStatus = setStatus)
+  
     __obj.asInstanceOf[WebCLUserEvent]
   }
 }

@@ -36,17 +36,8 @@ object Services {
     spellingServiceEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
     translationServiceEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
   ): Services = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alternateErrorPagesEnabled")(alternateErrorPagesEnabled)
-    __obj.updateDynamic("autofillEnabled")(autofillEnabled)
-    __obj.updateDynamic("hotwordSearchEnabled")(hotwordSearchEnabled)
-    __obj.updateDynamic("instantEnabled")(instantEnabled)
-    __obj.updateDynamic("passwordSavingEnabled")(passwordSavingEnabled)
-    __obj.updateDynamic("safeBrowsingEnabled")(safeBrowsingEnabled)
-    __obj.updateDynamic("safeBrowsingExtendedReportingEnabled")(safeBrowsingExtendedReportingEnabled)
-    __obj.updateDynamic("searchSuggestEnabled")(searchSuggestEnabled)
-    __obj.updateDynamic("spellingServiceEnabled")(spellingServiceEnabled)
-    __obj.updateDynamic("translationServiceEnabled")(translationServiceEnabled)
+    val __obj = js.Dynamic.literal(alternateErrorPagesEnabled = alternateErrorPagesEnabled, autofillEnabled = autofillEnabled, hotwordSearchEnabled = hotwordSearchEnabled, instantEnabled = instantEnabled, passwordSavingEnabled = passwordSavingEnabled, safeBrowsingEnabled = safeBrowsingEnabled, safeBrowsingExtendedReportingEnabled = safeBrowsingExtendedReportingEnabled, searchSuggestEnabled = searchSuggestEnabled, spellingServiceEnabled = spellingServiceEnabled, translationServiceEnabled = translationServiceEnabled)
+  
     __obj.asInstanceOf[Services]
   }
 }

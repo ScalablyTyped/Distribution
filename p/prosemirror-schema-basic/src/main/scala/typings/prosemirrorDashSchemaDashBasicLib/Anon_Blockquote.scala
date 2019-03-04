@@ -30,16 +30,8 @@ object Anon_Blockquote {
     paragraph: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec,
     text: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeSpec
   ): Anon_Blockquote = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockquote")(blockquote)
-    __obj.updateDynamic("code_block")(code_block)
-    __obj.updateDynamic("doc")(doc)
-    __obj.updateDynamic("hard_break")(hard_break)
-    __obj.updateDynamic("heading")(heading)
-    __obj.updateDynamic("horizontal_rule")(horizontal_rule)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("paragraph")(paragraph)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(blockquote = blockquote, code_block = code_block, doc = doc, hard_break = hard_break, heading = heading, horizontal_rule = horizontal_rule, image = image, paragraph = paragraph, text = text)
+  
     __obj.asInstanceOf[Anon_Blockquote]
   }
 }

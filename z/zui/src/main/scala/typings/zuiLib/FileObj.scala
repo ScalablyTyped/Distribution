@@ -40,9 +40,7 @@ object FileObj {
     status: STATUS = null,
     `type`: java.lang.String = null
   ): FileObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getNative")(getNative)
+    val __obj = js.Dynamic.literal(destroy = destroy, getNative = getNative)
     if (ext != null) __obj.updateDynamic("ext")(ext)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isImage)) __obj.updateDynamic("isImage")(isImage)

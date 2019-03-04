@@ -20,9 +20,7 @@ object CompileTemplateSummary {
     animations: js.Array[_] = null,
     encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation = null
   ): CompileTemplateSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngContentSelectors")(ngContentSelectors)
-    __obj.updateDynamic("styles")(styles)
+    val __obj = js.Dynamic.literal(ngContentSelectors = ngContentSelectors, styles = styles)
     if (animations != null) __obj.updateDynamic("animations")(animations)
     if (encapsulation != null) __obj.updateDynamic("encapsulation")(encapsulation)
     __obj.asInstanceOf[CompileTemplateSummary]

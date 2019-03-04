@@ -30,12 +30,8 @@ object WorkflowOption {
     returnCode: scala.Double,
     steps: js.Array[WorkflowStepInfo]
   ): WorkflowOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("returnCode")(returnCode)
-    __obj.updateDynamic("steps")(steps)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, returnCode = returnCode, steps = steps)
+  
     __obj.asInstanceOf[WorkflowOption]
   }
 }

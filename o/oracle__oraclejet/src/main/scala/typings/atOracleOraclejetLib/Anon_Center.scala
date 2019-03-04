@@ -18,10 +18,8 @@ object Anon_Center {
     titleHalign: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
     titleStyle: js.Object
   ): Anon_Center = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("titleHalign")(titleHalign.asInstanceOf[js.Any])
-    __obj.updateDynamic("titleStyle")(titleStyle)
+    val __obj = js.Dynamic.literal(title = title, titleHalign = titleHalign.asInstanceOf[js.Any], titleStyle = titleStyle)
+  
     __obj.asInstanceOf[Anon_Center]
   }
 }

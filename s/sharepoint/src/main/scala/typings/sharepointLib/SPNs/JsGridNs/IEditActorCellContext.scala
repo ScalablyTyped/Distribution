@@ -29,15 +29,8 @@ object IEditActorCellContext {
     propType: IPropertyType,
     record: IRecord
   ): IEditActorCellContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SetCurrentValue")(SetCurrentValue)
-    __obj.updateDynamic("cellExpandSpace")(cellExpandSpace)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("fieldKey")(fieldKey)
-    __obj.updateDynamic("originalValue")(originalValue)
-    __obj.updateDynamic("propType")(propType)
-    __obj.updateDynamic("record")(record)
+    val __obj = js.Dynamic.literal(SetCurrentValue = SetCurrentValue, cellExpandSpace = cellExpandSpace, column = column, field = field, fieldKey = fieldKey, originalValue = originalValue, propType = propType, record = record)
+  
     __obj.asInstanceOf[IEditActorCellContext]
   }
 }

@@ -14,10 +14,8 @@ trait SplineControlPoint extends js.Object {
 object SplineControlPoint {
   @scala.inline
   def apply(x: scala.Double, y: scala.Double, z: scala.Double): SplineControlPoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(x = x, y = y, z = z)
+  
     __obj.asInstanceOf[SplineControlPoint]
   }
 }

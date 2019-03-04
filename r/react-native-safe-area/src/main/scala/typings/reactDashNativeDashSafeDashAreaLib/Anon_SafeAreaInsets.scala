@@ -14,8 +14,8 @@ object Anon_SafeAreaInsets {
   def apply(
     safeAreaInsets: reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.SafeAreaInsets
   ): Anon_SafeAreaInsets = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("safeAreaInsets")(safeAreaInsets)
+    val __obj = js.Dynamic.literal(safeAreaInsets = safeAreaInsets)
+  
     __obj.asInstanceOf[Anon_SafeAreaInsets]
   }
 }

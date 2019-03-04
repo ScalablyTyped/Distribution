@@ -11,3 +11,17 @@ trait DatabaseSchemaJson extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DatabaseSchemaJson {
+  @scala.inline
+  def apply(
+    stores: js.Array[StoreSchemaJson],
+    fullTextCatalogs: js.Array[FullTextCatalog] = null,
+    version: scala.Int | scala.Double = null
+  ): DatabaseSchemaJson = {
+    val __obj = js.Dynamic.literal(stores = stores)
+    if (fullTextCatalogs != null) __obj.updateDynamic("fullTextCatalogs")(fullTextCatalogs)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatabaseSchemaJson]
+  }
+}
+

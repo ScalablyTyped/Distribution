@@ -12,8 +12,8 @@ trait Functor[T] extends js.Object {
 object Functor {
   @scala.inline
   def apply[T](map: js.Function1[js.Function1[/* t */ T, js.Any], Functor[js.Any]]): Functor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(map = map)
+  
     __obj.asInstanceOf[Functor[T]]
   }
 }

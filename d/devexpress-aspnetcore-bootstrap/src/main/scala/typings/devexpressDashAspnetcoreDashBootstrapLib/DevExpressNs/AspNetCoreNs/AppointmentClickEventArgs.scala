@@ -14,11 +14,8 @@ trait AppointmentClickEventArgs extends EventArgs {
 object AppointmentClickEventArgs {
   @scala.inline
   def apply(appointmentId: java.lang.String, handled: scala.Boolean, htmlElement: js.Object, sender: Control): AppointmentClickEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointmentId")(appointmentId)
-    __obj.updateDynamic("handled")(handled)
-    __obj.updateDynamic("htmlElement")(htmlElement)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId, handled = handled, htmlElement = htmlElement, sender = sender)
+  
     __obj.asInstanceOf[AppointmentClickEventArgs]
   }
 }

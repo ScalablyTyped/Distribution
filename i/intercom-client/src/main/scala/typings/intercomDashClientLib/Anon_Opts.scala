@@ -17,8 +17,8 @@ object Anon_Opts {
       java.lang.String
     ]
   ): Anon_Opts = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("userHash")(userHash)
+    val __obj = js.Dynamic.literal(userHash = userHash)
+  
     __obj.asInstanceOf[Anon_Opts]
   }
 }

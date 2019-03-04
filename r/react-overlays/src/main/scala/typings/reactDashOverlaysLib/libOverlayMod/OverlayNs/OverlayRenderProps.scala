@@ -24,12 +24,7 @@ object OverlayRenderProps {
     show: scala.Boolean,
     outOfBoundaries: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayRenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("arrowProps")(arrowProps)
-    __obj.updateDynamic("placement")(placement)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("scheduleUpdate")(scheduleUpdate)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(arrowProps = arrowProps, placement = placement, props = props, scheduleUpdate = scheduleUpdate, show = show)
     if (!js.isUndefined(outOfBoundaries)) __obj.updateDynamic("outOfBoundaries")(outOfBoundaries)
     __obj.asInstanceOf[OverlayRenderProps]
   }

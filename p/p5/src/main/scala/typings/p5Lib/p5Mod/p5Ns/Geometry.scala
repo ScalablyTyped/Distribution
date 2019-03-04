@@ -42,12 +42,8 @@ object Geometry {
     computeNormals: js.Function0[p5Lib.p5Mod.Geometry],
     normalize: js.Function0[p5Lib.p5Mod.Geometry]
   ): Geometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("averageNormals")(averageNormals)
-    __obj.updateDynamic("averagePoleNormals")(averagePoleNormals)
-    __obj.updateDynamic("computeFaces")(computeFaces)
-    __obj.updateDynamic("computeNormals")(computeNormals)
-    __obj.updateDynamic("normalize")(normalize)
+    val __obj = js.Dynamic.literal(averageNormals = averageNormals, averagePoleNormals = averagePoleNormals, computeFaces = computeFaces, computeNormals = computeNormals, normalize = normalize)
+  
     __obj.asInstanceOf[Geometry]
   }
 }

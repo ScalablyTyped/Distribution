@@ -18,8 +18,7 @@ object Executable {
     args: js.Array[java.lang.String] = null,
     options: ExecutableOptions = null
   ): Executable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command)
+    val __obj = js.Dynamic.literal(command = command)
     if (args != null) __obj.updateDynamic("args")(args)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[Executable]

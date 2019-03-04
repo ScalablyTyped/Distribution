@@ -117,28 +117,8 @@ object WidgetMetadata {
     targets: js.Array[java.lang.String],
     typeId: java.lang.String
   ): WidgetMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedSizes")(allowedSizes)
-    __obj.updateDynamic("analyticsServiceRequired")(analyticsServiceRequired)
-    __obj.updateDynamic("catalogIconUrl")(catalogIconUrl)
-    __obj.updateDynamic("catalogInfoUrl")(catalogInfoUrl)
-    __obj.updateDynamic("configurationContributionId")(configurationContributionId)
-    __obj.updateDynamic("configurationContributionRelativeId")(configurationContributionRelativeId)
-    __obj.updateDynamic("configurationRequired")(configurationRequired)
-    __obj.updateDynamic("contentUri")(contentUri)
-    __obj.updateDynamic("contributionId")(contributionId)
-    __obj.updateDynamic("defaultSettings")(defaultSettings)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("isNameConfigurable")(isNameConfigurable)
-    __obj.updateDynamic("isVisibleFromCatalog")(isVisibleFromCatalog)
-    __obj.updateDynamic("lightboxOptions")(lightboxOptions)
-    __obj.updateDynamic("loadingImageUrl")(loadingImageUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("supportedScopes")(supportedScopes)
-    __obj.updateDynamic("targets")(targets)
-    __obj.updateDynamic("typeId")(typeId)
+    val __obj = js.Dynamic.literal(allowedSizes = allowedSizes, analyticsServiceRequired = analyticsServiceRequired, catalogIconUrl = catalogIconUrl, catalogInfoUrl = catalogInfoUrl, configurationContributionId = configurationContributionId, configurationContributionRelativeId = configurationContributionRelativeId, configurationRequired = configurationRequired, contentUri = contentUri, contributionId = contributionId, defaultSettings = defaultSettings, description = description, isEnabled = isEnabled, isNameConfigurable = isNameConfigurable, isVisibleFromCatalog = isVisibleFromCatalog, lightboxOptions = lightboxOptions, loadingImageUrl = loadingImageUrl, name = name, publisherName = publisherName, supportedScopes = supportedScopes, targets = targets, typeId = typeId)
+  
     __obj.asInstanceOf[WidgetMetadata]
   }
 }

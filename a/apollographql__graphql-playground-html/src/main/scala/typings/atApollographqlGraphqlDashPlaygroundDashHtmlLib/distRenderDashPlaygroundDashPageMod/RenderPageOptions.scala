@@ -25,8 +25,7 @@ object RenderPageOptions {
     tabs: js.Array[Tab] = null,
     workspaceName: java.lang.String = null
   ): RenderPageOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(version = version)
     if (cdnUrl != null) __obj.updateDynamic("cdnUrl")(cdnUrl)
     if (codeTheme != null) __obj.updateDynamic("codeTheme")(codeTheme)
     if (config != null) __obj.updateDynamic("config")(config)

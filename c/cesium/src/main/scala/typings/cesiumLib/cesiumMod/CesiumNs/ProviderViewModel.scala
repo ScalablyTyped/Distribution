@@ -20,11 +20,8 @@ object ProviderViewModel {
     name: java.lang.String,
     tooltip: java.lang.String
   ): ProviderViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("creationCommand")(creationCommand)
-    __obj.updateDynamic("iconUrl")(iconUrl)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("tooltip")(tooltip)
+    val __obj = js.Dynamic.literal(creationCommand = creationCommand, iconUrl = iconUrl, name = name, tooltip = tooltip)
+  
     __obj.asInstanceOf[ProviderViewModel]
   }
 }

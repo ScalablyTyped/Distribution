@@ -13,8 +13,8 @@ trait Anon_ShowType extends js.Object {
 object Anon_ShowType {
   @scala.inline
   def apply(show: scala.Boolean, `type`: java.lang.String): Anon_ShowType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("show")(show)
+    val __obj = js.Dynamic.literal(show = show)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_ShowType]
   }
 }

@@ -14,10 +14,8 @@ trait LogGroupEventRecord extends js.Object {
 object LogGroupEventRecord {
   @scala.inline
   def apply(id: java.lang.String, message: java.lang.String, timestamp: scala.Double): LogGroupEventRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, message = message, timestamp = timestamp)
+  
     __obj.asInstanceOf[LogGroupEventRecord]
   }
 }

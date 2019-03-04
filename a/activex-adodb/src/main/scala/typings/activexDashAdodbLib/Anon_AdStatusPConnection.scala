@@ -18,10 +18,8 @@ object Anon_AdStatusPConnection {
     pConnection: activexDashAdodbLib.ADODBNs.Connection,
     pError: activexDashAdodbLib.ADODBNs.Error
   ): Anon_AdStatusPConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adStatus")(adStatus)
-    __obj.updateDynamic("pConnection")(pConnection)
-    __obj.updateDynamic("pError")(pError)
+    val __obj = js.Dynamic.literal(adStatus = adStatus, pConnection = pConnection, pError = pError)
+  
     __obj.asInstanceOf[Anon_AdStatusPConnection]
   }
 }

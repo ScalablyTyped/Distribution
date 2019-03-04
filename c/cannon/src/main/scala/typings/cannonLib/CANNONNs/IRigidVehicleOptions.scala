@@ -12,8 +12,8 @@ trait IRigidVehicleOptions extends js.Object {
 object IRigidVehicleOptions {
   @scala.inline
   def apply(chassisBody: Body): IRigidVehicleOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chassisBody")(chassisBody)
+    val __obj = js.Dynamic.literal(chassisBody = chassisBody)
+  
     __obj.asInstanceOf[IRigidVehicleOptions]
   }
 }

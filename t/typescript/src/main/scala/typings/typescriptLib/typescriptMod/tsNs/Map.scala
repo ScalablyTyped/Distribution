@@ -26,17 +26,8 @@ object Map {
     size: scala.Double,
     values: js.Function0[Iterator[T]]
   ): Map[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(clear = clear, delete = delete, entries = entries, forEach = forEach, get = get, has = has, keys = keys, set = set, size = size, values = values)
+  
     __obj.asInstanceOf[Map[T]]
   }
 }

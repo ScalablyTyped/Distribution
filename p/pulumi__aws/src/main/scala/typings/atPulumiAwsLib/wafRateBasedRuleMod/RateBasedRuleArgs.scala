@@ -39,10 +39,7 @@ object RateBasedRuleArgs {
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     predicates: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]] = null
   ): RateBasedRuleArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
-    __obj.updateDynamic("rateKey")(rateKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("rateLimit")(rateLimit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], rateKey = rateKey.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (predicates != null) __obj.updateDynamic("predicates")(predicates.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateBasedRuleArgs]

@@ -84,30 +84,8 @@ object MessageEvent {
     transmission_id: java.lang.String,
     `type`: java.lang.String
   ): MessageEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bounce_class")(bounce_class)
-    __obj.updateDynamic("campaign_id")(campaign_id)
-    __obj.updateDynamic("customer_id")(customer_id)
-    __obj.updateDynamic("delv_method")(delv_method)
-    __obj.updateDynamic("device_token")(device_token)
-    __obj.updateDynamic("error_code")(error_code)
-    __obj.updateDynamic("ip_address")(ip_address)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("msg_from")(msg_from)
-    __obj.updateDynamic("msg_size")(msg_size)
-    __obj.updateDynamic("num_retries")(num_retries)
-    __obj.updateDynamic("raw_reason")(raw_reason)
-    __obj.updateDynamic("rcpt_meta")(rcpt_meta)
-    __obj.updateDynamic("rcpt_tags")(rcpt_tags)
-    __obj.updateDynamic("rcpt_to")(rcpt_to)
-    __obj.updateDynamic("rcpt_type")(rcpt_type)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("routing_domain")(routing_domain)
-    __obj.updateDynamic("subject")(subject)
-    __obj.updateDynamic("template_id")(template_id)
-    __obj.updateDynamic("template_version")(template_version)
-    __obj.updateDynamic("timestamp")(timestamp)
-    __obj.updateDynamic("transmission_id")(transmission_id)
+    val __obj = js.Dynamic.literal(bounce_class = bounce_class, campaign_id = campaign_id, customer_id = customer_id, delv_method = delv_method, device_token = device_token, error_code = error_code, ip_address = ip_address, message_id = message_id, msg_from = msg_from, msg_size = msg_size, num_retries = num_retries, raw_reason = raw_reason, rcpt_meta = rcpt_meta, rcpt_tags = rcpt_tags, rcpt_to = rcpt_to, rcpt_type = rcpt_type, reason = reason, routing_domain = routing_domain, subject = subject, template_id = template_id, template_version = template_version, timestamp = timestamp, transmission_id = transmission_id)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MessageEvent]
   }
 }

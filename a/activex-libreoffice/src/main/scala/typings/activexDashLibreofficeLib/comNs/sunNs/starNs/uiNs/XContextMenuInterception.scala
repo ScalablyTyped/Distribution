@@ -27,12 +27,8 @@ object XContextMenuInterception {
     release: js.Function0[scala.Unit],
     releaseContextMenuInterceptor: js.Function1[XContextMenuInterceptor, scala.Unit]
   ): XContextMenuInterception = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("registerContextMenuInterceptor")(registerContextMenuInterceptor)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("releaseContextMenuInterceptor")(releaseContextMenuInterceptor)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, registerContextMenuInterceptor = registerContextMenuInterceptor, release = release, releaseContextMenuInterceptor = releaseContextMenuInterceptor)
+  
     __obj.asInstanceOf[XContextMenuInterception]
   }
 }

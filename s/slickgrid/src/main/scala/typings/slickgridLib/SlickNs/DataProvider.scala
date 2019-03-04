@@ -29,9 +29,7 @@ object DataProvider {
     getLength: js.Function0[scala.Double],
     getItemMetadata: js.Function1[/* index */ scala.Double, RowMetadata[T]] = null
   ): DataProvider[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItem")(getItem)
-    __obj.updateDynamic("getLength")(getLength)
+    val __obj = js.Dynamic.literal(getItem = getItem, getLength = getLength)
     if (getItemMetadata != null) __obj.updateDynamic("getItemMetadata")(getItemMetadata)
     __obj.asInstanceOf[DataProvider[T]]
   }

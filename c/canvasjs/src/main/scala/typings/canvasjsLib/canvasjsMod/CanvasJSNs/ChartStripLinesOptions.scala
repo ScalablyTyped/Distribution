@@ -150,9 +150,7 @@ object ChartStripLinesOptions {
     thickness: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null
   ): ChartStripLinesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("labelMaxWidth")(labelMaxWidth)
-    __obj.updateDynamic("labelWrap")(labelWrap)
+    val __obj = js.Dynamic.literal(labelMaxWidth = labelMaxWidth, labelWrap = labelWrap)
     if (color != null) __obj.updateDynamic("color")(color)
     if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)

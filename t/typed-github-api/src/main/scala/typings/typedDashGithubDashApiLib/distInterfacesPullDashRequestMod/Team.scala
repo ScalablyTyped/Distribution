@@ -24,13 +24,8 @@ object Team {
     privacy: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.closed,
     slug: java.lang.String
   ): Team = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("permission")(permission)
-    __obj.updateDynamic("privacy")(privacy)
-    __obj.updateDynamic("slug")(slug)
+    val __obj = js.Dynamic.literal(description = description, id = id, name = name, permission = permission, privacy = privacy, slug = slug)
+  
     __obj.asInstanceOf[Team]
   }
 }

@@ -20,11 +20,8 @@ object Anon_AUTOVERIFIED {
     CODE_SENT: java.lang.String,
     ERROR: java.lang.String
   ): Anon_AUTOVERIFIED = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AUTO_VERIFIED")(AUTO_VERIFIED)
-    __obj.updateDynamic("AUTO_VERIFY_TIMEOUT")(AUTO_VERIFY_TIMEOUT)
-    __obj.updateDynamic("CODE_SENT")(CODE_SENT)
-    __obj.updateDynamic("ERROR")(ERROR)
+    val __obj = js.Dynamic.literal(AUTO_VERIFIED = AUTO_VERIFIED, AUTO_VERIFY_TIMEOUT = AUTO_VERIFY_TIMEOUT, CODE_SENT = CODE_SENT, ERROR = ERROR)
+  
     __obj.asInstanceOf[Anon_AUTOVERIFIED]
   }
 }

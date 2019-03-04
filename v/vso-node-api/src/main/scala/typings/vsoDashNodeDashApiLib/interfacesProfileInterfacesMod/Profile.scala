@@ -24,13 +24,8 @@ object Profile {
     revision: scala.Double,
     timeStamp: stdLib.Date
   ): Profile = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applicationContainer")(applicationContainer)
-    __obj.updateDynamic("coreAttributes")(coreAttributes)
-    __obj.updateDynamic("coreRevision")(coreRevision)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("revision")(revision)
-    __obj.updateDynamic("timeStamp")(timeStamp)
+    val __obj = js.Dynamic.literal(applicationContainer = applicationContainer, coreAttributes = coreAttributes, coreRevision = coreRevision, id = id, revision = revision, timeStamp = timeStamp)
+  
     __obj.asInstanceOf[Profile]
   }
 }

@@ -20,10 +20,7 @@ object OutputAsset {
     source: java.lang.String | nodeLib.Buffer,
     code: js.UndefOr[scala.Nothing] = js.undefined
   ): OutputAsset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("isAsset")(isAsset)
-    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fileName = fileName, isAsset = isAsset, source = source.asInstanceOf[js.Any])
     if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)
     __obj.asInstanceOf[OutputAsset]
   }

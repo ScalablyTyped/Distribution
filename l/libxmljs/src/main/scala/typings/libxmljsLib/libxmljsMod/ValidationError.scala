@@ -27,8 +27,7 @@ object ValidationError {
     line: scala.Int | scala.Double = null,
     stack: java.lang.String = null
   ): ValidationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
+    val __obj = js.Dynamic.literal(column = column)
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

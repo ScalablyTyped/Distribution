@@ -18,10 +18,8 @@ object IValidIconStrategy {
     invalidIcon: java.lang.String,
     validIcon: java.lang.String
   ): IValidIconStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("invalidIcon")(invalidIcon)
-    __obj.updateDynamic("validIcon")(validIcon)
+    val __obj = js.Dynamic.literal(getContainer = getContainer, invalidIcon = invalidIcon, validIcon = validIcon)
+  
     __obj.asInstanceOf[IValidIconStrategy]
   }
 }

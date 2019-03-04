@@ -72,18 +72,8 @@ object Anon_DocumentUrlFrameIdFromCacheIp {
     originUrl: java.lang.String = null,
     responseHeaders: firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.HttpHeaders = null
   ): Anon_DocumentUrlFrameIdFromCacheIp = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("frameId")(frameId)
-    __obj.updateDynamic("fromCache")(fromCache)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("parentFrameId")(parentFrameId)
-    __obj.updateDynamic("redirectUrl")(redirectUrl)
-    __obj.updateDynamic("requestId")(requestId)
-    __obj.updateDynamic("statusCode")(statusCode)
-    __obj.updateDynamic("statusLine")(statusLine)
-    __obj.updateDynamic("tabId")(tabId)
-    __obj.updateDynamic("timeStamp")(timeStamp)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(frameId = frameId, fromCache = fromCache, method = method, parentFrameId = parentFrameId, redirectUrl = redirectUrl, requestId = requestId, statusCode = statusCode, statusLine = statusLine, tabId = tabId, timeStamp = timeStamp, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (documentUrl != null) __obj.updateDynamic("documentUrl")(documentUrl)
     if (ip != null) __obj.updateDynamic("ip")(ip)
     if (originUrl != null) __obj.updateDynamic("originUrl")(originUrl)

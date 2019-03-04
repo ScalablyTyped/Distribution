@@ -18,10 +18,8 @@ object Anon_KeyPropagateAtLaunch {
     propagateAtLaunch: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_KeyPropagateAtLaunch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.updateDynamic("propagateAtLaunch")(propagateAtLaunch.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], propagateAtLaunch = propagateAtLaunch.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KeyPropagateAtLaunch]
   }
 }

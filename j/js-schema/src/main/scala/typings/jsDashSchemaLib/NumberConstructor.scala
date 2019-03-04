@@ -22,12 +22,8 @@ object NumberConstructor {
     min: js.Function1[scala.Double, NumberConstructor],
     step: js.Function1[scala.Double, NumberConstructor]
   ): NumberConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("above")(above)
-    __obj.updateDynamic("below")(below)
-    __obj.updateDynamic("max")(max)
-    __obj.updateDynamic("min")(min)
-    __obj.updateDynamic("step")(step)
+    val __obj = js.Dynamic.literal(above = above, below = below, max = max, min = min, step = step)
+  
     __obj.asInstanceOf[NumberConstructor]
   }
 }

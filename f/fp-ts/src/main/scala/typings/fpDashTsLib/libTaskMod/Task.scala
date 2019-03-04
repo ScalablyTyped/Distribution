@@ -15,7 +15,7 @@ class Task[A] protected () extends js.Object {
   /**
     * Flipped version of `ap`
     */
-  def `ap_`[B, C](`this`: Task[js.Function1[/* b */ B, C]], fb: Task[B]): Task[C] = js.native
+  def ap_[B, C](`this`: Task[js.Function1[/* b */ B, C]], fb: Task[B]): Task[C] = js.native
   /**
     * Combine two effectful actions, keeping only the result of the first
     * @since 1.6.0

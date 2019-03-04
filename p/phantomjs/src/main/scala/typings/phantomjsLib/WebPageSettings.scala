@@ -30,16 +30,8 @@ object WebPageSettings {
     userName: java.lang.String,
     webSecurityEnabled: scala.Boolean
   ): WebPageSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("XSSAuditingEnabled")(XSSAuditingEnabled)
-    __obj.updateDynamic("javascriptEnabled")(javascriptEnabled)
-    __obj.updateDynamic("loadImages")(loadImages)
-    __obj.updateDynamic("localToRemoteUrlAccessEnabled")(localToRemoteUrlAccessEnabled)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("resourceTimeout")(resourceTimeout)
-    __obj.updateDynamic("userAgent")(userAgent)
-    __obj.updateDynamic("userName")(userName)
-    __obj.updateDynamic("webSecurityEnabled")(webSecurityEnabled)
+    val __obj = js.Dynamic.literal(XSSAuditingEnabled = XSSAuditingEnabled, javascriptEnabled = javascriptEnabled, loadImages = loadImages, localToRemoteUrlAccessEnabled = localToRemoteUrlAccessEnabled, password = password, resourceTimeout = resourceTimeout, userAgent = userAgent, userName = userName, webSecurityEnabled = webSecurityEnabled)
+  
     __obj.asInstanceOf[WebPageSettings]
   }
 }

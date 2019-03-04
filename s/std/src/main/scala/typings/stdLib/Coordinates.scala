@@ -26,10 +26,7 @@ object Coordinates {
     heading: scala.Int | scala.Double = null,
     speed: scala.Int | scala.Double = null
   ): Coordinates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accuracy")(accuracy)
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(accuracy = accuracy, latitude = latitude, longitude = longitude)
     if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
     if (altitudeAccuracy != null) __obj.updateDynamic("altitudeAccuracy")(altitudeAccuracy.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])

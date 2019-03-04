@@ -26,9 +26,7 @@ object StripePaymentResponse {
     shippingAddress: ShippingAddress = null,
     shippingOption: ShippingOption = null
   ): StripePaymentResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
-    __obj.updateDynamic("methodName")(methodName)
+    val __obj = js.Dynamic.literal(complete = complete, methodName = methodName)
     if (payerEmail != null) __obj.updateDynamic("payerEmail")(payerEmail)
     if (payerName != null) __obj.updateDynamic("payerName")(payerName)
     if (payerPhone != null) __obj.updateDynamic("payerPhone")(payerPhone)

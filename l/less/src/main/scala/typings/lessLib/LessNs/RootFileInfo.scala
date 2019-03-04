@@ -36,14 +36,7 @@ object RootFileInfo {
     rootpath: java.lang.String,
     rewriteUrls: js.UndefOr[scala.Boolean] = js.undefined
   ): RootFileInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("currentDirectory")(currentDirectory)
-    __obj.updateDynamic("entryPath")(entryPath)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("reference")(reference)
-    __obj.updateDynamic("relativeUrls")(relativeUrls)
-    __obj.updateDynamic("rootFilename")(rootFilename)
-    __obj.updateDynamic("rootpath")(rootpath)
+    val __obj = js.Dynamic.literal(currentDirectory = currentDirectory, entryPath = entryPath, filename = filename, reference = reference, relativeUrls = relativeUrls, rootFilename = rootFilename, rootpath = rootpath)
     if (!js.isUndefined(rewriteUrls)) __obj.updateDynamic("rewriteUrls")(rewriteUrls)
     __obj.asInstanceOf[RootFileInfo]
   }

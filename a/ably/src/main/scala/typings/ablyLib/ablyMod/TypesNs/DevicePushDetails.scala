@@ -14,8 +14,7 @@ trait DevicePushDetails extends js.Object {
 object DevicePushDetails {
   @scala.inline
   def apply(recipient: js.Any, errorReason: ErrorInfo = null, state: DevicePushState = null): DevicePushDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipient")(recipient)
+    val __obj = js.Dynamic.literal(recipient = recipient)
     if (errorReason != null) __obj.updateDynamic("errorReason")(errorReason)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[DevicePushDetails]

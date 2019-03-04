@@ -22,9 +22,8 @@ trait ASPxClientAppointmentOperation extends js.Object {
 object ASPxClientAppointmentOperation {
   @scala.inline
   def apply(Apply: js.Function0[scala.Unit], Cancel: js.Function0[scala.Unit]): ASPxClientAppointmentOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Apply")(Apply)
-    __obj.updateDynamic("Cancel")(Cancel)
+    val __obj = js.Dynamic.literal(Apply = Apply, Cancel = Cancel)
+  
     __obj.asInstanceOf[ASPxClientAppointmentOperation]
   }
 }

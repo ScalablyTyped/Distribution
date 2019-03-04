@@ -24,10 +24,8 @@ object ASPxClientHintWindow {
     SetContentLoading: js.Function0[scala.Unit],
     UpdatePosition: js.Function0[scala.Unit]
   ): ASPxClientHintWindow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SetContent")(SetContent)
-    __obj.updateDynamic("SetContentLoading")(SetContentLoading)
-    __obj.updateDynamic("UpdatePosition")(UpdatePosition)
+    val __obj = js.Dynamic.literal(SetContent = SetContent, SetContentLoading = SetContentLoading, UpdatePosition = UpdatePosition)
+  
     __obj.asInstanceOf[ASPxClientHintWindow]
   }
 }

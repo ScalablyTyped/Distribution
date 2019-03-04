@@ -14,10 +14,8 @@ trait Anon_IsNear extends js.Object {
 object Anon_IsNear {
   @scala.inline
   def apply(isNear: scala.Boolean, maxRange: scala.Double, value: scala.Double): Anon_IsNear = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isNear")(isNear)
-    __obj.updateDynamic("maxRange")(maxRange)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(isNear = isNear, maxRange = maxRange, value = value)
+  
     __obj.asInstanceOf[Anon_IsNear]
   }
 }

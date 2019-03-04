@@ -13,9 +13,8 @@ trait PartitionerPartitionMetadata extends js.Object {
 object PartitionerPartitionMetadata {
   @scala.inline
   def apply(leader: scala.Double, partitionId: scala.Double): PartitionerPartitionMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("leader")(leader)
-    __obj.updateDynamic("partitionId")(partitionId)
+    val __obj = js.Dynamic.literal(leader = leader, partitionId = partitionId)
+  
     __obj.asInstanceOf[PartitionerPartitionMetadata]
   }
 }

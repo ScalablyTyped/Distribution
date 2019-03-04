@@ -16,9 +16,8 @@ object Anon_Removed {
     removed: js.Array[java.lang.String],
     set: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Anon_Removed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(removed = removed, set = set)
+  
     __obj.asInstanceOf[Anon_Removed]
   }
 }

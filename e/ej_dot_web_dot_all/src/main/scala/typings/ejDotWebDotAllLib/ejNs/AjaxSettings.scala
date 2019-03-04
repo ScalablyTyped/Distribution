@@ -24,8 +24,7 @@ object AjaxSettings {
     dataType: java.lang.String = null,
     `type`: java.lang.String = null
   ): AjaxSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(cache)
+    val __obj = js.Dynamic.literal(cache = cache)
     if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
     if (data != null) __obj.updateDynamic("data")(data)

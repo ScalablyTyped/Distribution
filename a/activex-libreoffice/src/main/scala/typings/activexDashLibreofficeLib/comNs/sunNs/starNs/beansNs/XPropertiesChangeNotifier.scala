@@ -40,12 +40,8 @@ object XPropertiesChangeNotifier {
       scala.Unit
     ]
   ): XPropertiesChangeNotifier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addPropertiesChangeListener = addPropertiesChangeListener, queryInterface = queryInterface, release = release, removePropertiesChangeListener = removePropertiesChangeListener)
+  
     __obj.asInstanceOf[XPropertiesChangeNotifier]
   }
 }

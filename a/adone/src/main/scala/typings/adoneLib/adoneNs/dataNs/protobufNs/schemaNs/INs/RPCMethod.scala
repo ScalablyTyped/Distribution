@@ -24,11 +24,7 @@ object RPCMethod {
     input_type: java.lang.String = null,
     output_type: java.lang.String = null
   ): RPCMethod = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client_streaming")(client_streaming)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("server_streaming")(server_streaming)
+    val __obj = js.Dynamic.literal(client_streaming = client_streaming, name = name, options = options, server_streaming = server_streaming)
     if (input_type != null) __obj.updateDynamic("input_type")(input_type)
     if (output_type != null) __obj.updateDynamic("output_type")(output_type)
     __obj.asInstanceOf[RPCMethod]

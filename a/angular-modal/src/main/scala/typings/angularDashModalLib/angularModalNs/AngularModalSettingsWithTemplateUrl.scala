@@ -17,8 +17,7 @@ object AngularModalSettingsWithTemplateUrl {
     controller: AngularModalControllerDefinition = null,
     controllerAs: java.lang.String = null
   ): AngularModalSettingsWithTemplateUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("templateUrl")(templateUrl)
+    val __obj = js.Dynamic.literal(templateUrl = templateUrl)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)

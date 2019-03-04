@@ -21,9 +21,8 @@ object OAuth2PasswordSecurity {
     description: java.lang.String = null,
     scopes: js.Array[OAuthScope] = null
   ): OAuth2PasswordSecurity = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("flow")(flow)
-    __obj.updateDynamic("tokenUrl")(tokenUrl)
+    val __obj = js.Dynamic.literal(flow = flow, tokenUrl = tokenUrl)
+    __obj.updateDynamic("type")(`type`)
     if (description != null) __obj.updateDynamic("description")(description)
     if (scopes != null) __obj.updateDynamic("scopes")(scopes)
     __obj.asInstanceOf[OAuth2PasswordSecurity]

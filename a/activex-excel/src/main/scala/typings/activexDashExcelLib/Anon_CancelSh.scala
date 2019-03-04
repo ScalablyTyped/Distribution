@@ -22,12 +22,8 @@ object Anon_CancelSh {
     ValueChangeEnd: scala.Double,
     ValueChangeStart: scala.Double
   ): Anon_CancelSh = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Sh")(Sh)
-    __obj.updateDynamic("TargetPivotTable")(TargetPivotTable)
-    __obj.updateDynamic("ValueChangeEnd")(ValueChangeEnd)
-    __obj.updateDynamic("ValueChangeStart")(ValueChangeStart)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Sh = Sh, TargetPivotTable = TargetPivotTable, ValueChangeEnd = ValueChangeEnd, ValueChangeStart = ValueChangeStart)
+  
     __obj.asInstanceOf[Anon_CancelSh]
   }
 }

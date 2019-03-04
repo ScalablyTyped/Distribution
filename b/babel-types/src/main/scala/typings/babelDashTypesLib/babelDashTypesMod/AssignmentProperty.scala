@@ -31,14 +31,8 @@ object AssignmentProperty {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): AssignmentProperty = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("shorthand")(shorthand)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(computed = computed, end = end, key = key, loc = loc, shorthand = shorthand, start = start, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

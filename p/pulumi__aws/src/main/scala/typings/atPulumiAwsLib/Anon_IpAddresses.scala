@@ -13,9 +13,8 @@ trait Anon_IpAddresses extends js.Object {
 object Anon_IpAddresses {
   @scala.inline
   def apply(ipAddresses: js.Array[java.lang.String], ipFamily: java.lang.String): Anon_IpAddresses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ipAddresses")(ipAddresses)
-    __obj.updateDynamic("ipFamily")(ipFamily)
+    val __obj = js.Dynamic.literal(ipAddresses = ipAddresses, ipFamily = ipFamily)
+  
     __obj.asInstanceOf[Anon_IpAddresses]
   }
 }

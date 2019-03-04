@@ -12,8 +12,8 @@ trait Anon_Theme extends js.Object {
 object Anon_Theme {
   @scala.inline
   def apply(theme: themingLib.themingMod.Theme): Anon_Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Theme]
   }
 }

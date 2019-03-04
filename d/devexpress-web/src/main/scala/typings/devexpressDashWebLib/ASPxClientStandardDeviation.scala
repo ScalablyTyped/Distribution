@@ -32,14 +32,8 @@ object ASPxClientStandardDeviation {
     series: ASPxClientSeries,
     valueLevel: java.lang.String
   ): ASPxClientStandardDeviation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("pointsCount")(pointsCount)
-    __obj.updateDynamic("series")(series)
-    __obj.updateDynamic("valueLevel")(valueLevel)
+    val __obj = js.Dynamic.literal(axisY = axisY, chart = chart, name = name, pane = pane, pointsCount = pointsCount, series = series, valueLevel = valueLevel)
+  
     __obj.asInstanceOf[ASPxClientStandardDeviation]
   }
 }

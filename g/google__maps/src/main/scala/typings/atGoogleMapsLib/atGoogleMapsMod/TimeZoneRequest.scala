@@ -28,8 +28,7 @@ trait TimeZoneRequest extends js.Object {
 object TimeZoneRequest {
   @scala.inline
   def apply(location: LatLng, language: Language = null, timestamp: stdLib.Date | scala.Double = null): TimeZoneRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeZoneRequest]

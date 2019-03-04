@@ -20,10 +20,7 @@ object Anon_NameNamespaceResource {
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     resource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_NameNamespaceResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameNamespaceResource]
   }

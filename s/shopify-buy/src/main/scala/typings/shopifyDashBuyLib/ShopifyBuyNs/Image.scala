@@ -28,14 +28,7 @@ object Image {
     attrs: js.Any = null,
     onlineStoreUrl: java.lang.String = null
   ): Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("product_id")(product_id)
-    __obj.updateDynamic("src")(src)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("variant_ids")(variant_ids)
+    val __obj = js.Dynamic.literal(created_at = created_at, id = id.asInstanceOf[js.Any], position = position, product_id = product_id, src = src, updated_at = updated_at, variant_ids = variant_ids)
     if (attrs != null) __obj.updateDynamic("attrs")(attrs)
     if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
     __obj.asInstanceOf[Image]

@@ -14,10 +14,8 @@ trait BLEError extends js.Object {
 object BLEError {
   @scala.inline
   def apply(errorMessage: java.lang.String, id: java.lang.String, name: java.lang.String): BLEError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(errorMessage = errorMessage, id = id, name = name)
+  
     __obj.asInstanceOf[BLEError]
   }
 }

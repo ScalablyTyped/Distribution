@@ -26,11 +26,8 @@ object Anon_OnPageChanged {
     ShowPageAction: org.scalablytyped.runtime.Instantiable0[chromeLib.chromeNs.declarativeContentNs.ShowPageAction],
     onPageChanged: chromeLib.chromeNs.declarativeContentNs.PageChangedEvent
   ): Anon_OnPageChanged = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PageStateMatcher")(PageStateMatcher)
-    __obj.updateDynamic("PageStateMatcherProperties")(PageStateMatcherProperties)
-    __obj.updateDynamic("ShowPageAction")(ShowPageAction)
-    __obj.updateDynamic("onPageChanged")(onPageChanged)
+    val __obj = js.Dynamic.literal(PageStateMatcher = PageStateMatcher, PageStateMatcherProperties = PageStateMatcherProperties, ShowPageAction = ShowPageAction, onPageChanged = onPageChanged)
+  
     __obj.asInstanceOf[Anon_OnPageChanged]
   }
 }

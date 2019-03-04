@@ -22,9 +22,8 @@ trait ResultEvent
 object ResultEvent {
   @scala.inline
   def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, Value: js.Any): ResultEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Value")(Value)
+    val __obj = js.Dynamic.literal(Source = Source, Value = Value)
+  
     __obj.asInstanceOf[ResultEvent]
   }
 }

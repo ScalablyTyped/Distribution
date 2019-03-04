@@ -83,9 +83,7 @@ object Options {
     window: js.Object = null,
     xhtml: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("inject")(inject)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(inject = inject, template = template)
     if (appMountId != null) __obj.updateDynamic("appMountId")(appMountId)
     if (appMountIds != null) __obj.updateDynamic("appMountIds")(appMountIds)
     if (baseHref != null) __obj.updateDynamic("baseHref")(baseHref)

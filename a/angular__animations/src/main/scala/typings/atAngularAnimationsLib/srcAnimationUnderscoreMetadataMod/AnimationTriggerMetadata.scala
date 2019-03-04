@@ -30,9 +30,8 @@ object AnimationTriggerMetadata {
     `type`: AnimationMetadataType,
     options: atAngularAnimationsLib.Anon_NameParams = null
   ): AnimationTriggerMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("definitions")(definitions)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(definitions = definitions, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (options != null) __obj.updateDynamic("options")(options)
     __obj.asInstanceOf[AnimationTriggerMetadata]
   }

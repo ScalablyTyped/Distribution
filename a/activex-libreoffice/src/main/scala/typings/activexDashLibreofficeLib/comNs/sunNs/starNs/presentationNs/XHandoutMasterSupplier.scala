@@ -23,12 +23,8 @@ object XHandoutMasterSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHandoutMasterSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HandoutMasterPage")(HandoutMasterPage)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getHandoutMasterPage")(getHandoutMasterPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HandoutMasterPage = HandoutMasterPage, acquire = acquire, getHandoutMasterPage = getHandoutMasterPage, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHandoutMasterSupplier]
   }
 }

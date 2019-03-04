@@ -15,9 +15,8 @@ trait LineData extends js.Object {
 object LineData {
   @scala.inline
   def apply(bufferRow: scala.Double, screenRow: scala.Double): LineData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bufferRow")(bufferRow)
-    __obj.updateDynamic("screenRow")(screenRow)
+    val __obj = js.Dynamic.literal(bufferRow = bufferRow, screenRow = screenRow)
+  
     __obj.asInstanceOf[LineData]
   }
 }

@@ -24,13 +24,8 @@ object InteractionTrackingData {
     pointerId: scala.Double,
     rightDown: scala.Boolean
   ): InteractionTrackingData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("leftDown")(leftDown)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("over")(over)
-    __obj.updateDynamic("pointerId")(pointerId)
-    __obj.updateDynamic("rightDown")(rightDown)
+    val __obj = js.Dynamic.literal(flags = flags, leftDown = leftDown, none = none, over = over, pointerId = pointerId, rightDown = rightDown)
+  
     __obj.asInstanceOf[InteractionTrackingData]
   }
 }

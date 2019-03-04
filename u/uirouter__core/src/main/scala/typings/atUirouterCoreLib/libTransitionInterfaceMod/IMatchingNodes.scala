@@ -24,12 +24,7 @@ object IMatchingNodes {
     to: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode]] = null
   ): IMatchingNodes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entering")(entering)
-    __obj.updateDynamic("exiting")(exiting)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("retained")(retained)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(entering = entering, exiting = exiting, from = from, retained = retained, to = to)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IMatchingNodes]
   }

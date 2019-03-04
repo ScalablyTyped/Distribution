@@ -24,13 +24,8 @@ object TriggerCreateOptions {
     service_name: java.lang.String,
     system_key: java.lang.String
   ): TriggerCreateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("def_module")(def_module)
-    __obj.updateDynamic("def_name")(def_name)
-    __obj.updateDynamic("key_value_pairs")(key_value_pairs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("service_name")(service_name)
-    __obj.updateDynamic("system_key")(system_key)
+    val __obj = js.Dynamic.literal(def_module = def_module, def_name = def_name, key_value_pairs = key_value_pairs, name = name, service_name = service_name, system_key = system_key)
+  
     __obj.asInstanceOf[TriggerCreateOptions]
   }
 }

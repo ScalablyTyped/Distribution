@@ -44,11 +44,8 @@ object TargetInfo {
     faviconUrl: java.lang.String = null,
     tabId: scala.Int | scala.Double = null
   ): TargetInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("attached")(attached)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(attached = attached, id = id, title = title, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
     if (faviconUrl != null) __obj.updateDynamic("faviconUrl")(faviconUrl)
     if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])

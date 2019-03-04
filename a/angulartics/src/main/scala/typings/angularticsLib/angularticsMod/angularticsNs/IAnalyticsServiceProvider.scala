@@ -81,32 +81,8 @@ object IAnalyticsServiceProvider {
     withAutoBase: js.Function1[scala.Boolean, scala.Unit],
     withBase: js.Function1[scala.Boolean, scala.Unit]
   ): IAnalyticsServiceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("developerMode")(developerMode)
-    __obj.updateDynamic("excludeRoutes")(excludeRoutes)
-    __obj.updateDynamic("firstPageview")(firstPageview)
-    __obj.updateDynamic("queryKeysBlacklist")(queryKeysBlacklist)
-    __obj.updateDynamic("queryKeysWhitelist")(queryKeysWhitelist)
-    __obj.updateDynamic("registerClearCookies")(registerClearCookies)
-    __obj.updateDynamic("registerEventTrack")(registerEventTrack)
-    __obj.updateDynamic("registerIncrementProperty")(registerIncrementProperty)
-    __obj.updateDynamic("registerPageTrack")(registerPageTrack)
-    __obj.updateDynamic("registerSetAlias")(registerSetAlias)
-    __obj.updateDynamic("registerSetSuperProperties")(registerSetSuperProperties)
-    __obj.updateDynamic("registerSetSuperPropertiesOnce")(registerSetSuperPropertiesOnce)
-    __obj.updateDynamic("registerSetUserProperties")(registerSetUserProperties)
-    __obj.updateDynamic("registerSetUserPropertiesOnce")(registerSetUserPropertiesOnce)
-    __obj.updateDynamic("registerSetUsername")(registerSetUsername)
-    __obj.updateDynamic("registerTransactionTrack")(registerTransactionTrack)
-    __obj.updateDynamic("registerUserTimings")(registerUserTimings)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("trackExceptions")(trackExceptions)
-    __obj.updateDynamic("trackRoutes")(trackRoutes)
-    __obj.updateDynamic("trackStates")(trackStates)
-    __obj.updateDynamic("virtualPageviews")(virtualPageviews)
-    __obj.updateDynamic("withAutoBase")(withAutoBase)
-    __obj.updateDynamic("withBase")(withBase)
+    val __obj = js.Dynamic.literal($get = $get, developerMode = developerMode, excludeRoutes = excludeRoutes, firstPageview = firstPageview, queryKeysBlacklist = queryKeysBlacklist, queryKeysWhitelist = queryKeysWhitelist, registerClearCookies = registerClearCookies, registerEventTrack = registerEventTrack, registerIncrementProperty = registerIncrementProperty, registerPageTrack = registerPageTrack, registerSetAlias = registerSetAlias, registerSetSuperProperties = registerSetSuperProperties, registerSetSuperPropertiesOnce = registerSetSuperPropertiesOnce, registerSetUserProperties = registerSetUserProperties, registerSetUserPropertiesOnce = registerSetUserPropertiesOnce, registerSetUsername = registerSetUsername, registerTransactionTrack = registerTransactionTrack, registerUserTimings = registerUserTimings, settings = settings, trackExceptions = trackExceptions, trackRoutes = trackRoutes, trackStates = trackStates, virtualPageviews = virtualPageviews, withAutoBase = withAutoBase, withBase = withBase)
+  
     __obj.asInstanceOf[IAnalyticsServiceProvider]
   }
 }

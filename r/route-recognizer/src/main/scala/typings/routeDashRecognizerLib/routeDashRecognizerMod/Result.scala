@@ -18,10 +18,8 @@ object Result {
     isDynamic: scala.Boolean,
     params: Params
   ): Result = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDynamic")(isDynamic)
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], isDynamic = isDynamic, params = params)
+  
     __obj.asInstanceOf[Result]
   }
 }

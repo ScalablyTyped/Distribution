@@ -19,9 +19,8 @@ object ReceivedRequest {
     method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method,
     url: java.lang.String
   ): ReceivedRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(method = method, url = url)
+  
     __obj.asInstanceOf[ReceivedRequest]
   }
 }

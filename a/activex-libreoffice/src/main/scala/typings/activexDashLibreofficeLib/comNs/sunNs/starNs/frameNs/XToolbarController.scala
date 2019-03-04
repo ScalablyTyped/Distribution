@@ -53,15 +53,8 @@ object XToolbarController {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XToolbarController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("createItemWindow")(createItemWindow)
-    __obj.updateDynamic("createPopupWindow")(createPopupWindow)
-    __obj.updateDynamic("doubleClick")(doubleClick)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, click = click, createItemWindow = createItemWindow, createPopupWindow = createPopupWindow, doubleClick = doubleClick, execute = execute, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XToolbarController]
   }
 }

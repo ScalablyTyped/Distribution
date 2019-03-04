@@ -27,13 +27,8 @@ object StoreJsStorage {
     remove: js.Function1[java.lang.String, scala.Unit],
     write: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): StoreJsStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearAll")(clearAll)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(clearAll = clearAll, each = each, name = name, read = read, remove = remove, write = write)
+  
     __obj.asInstanceOf[StoreJsStorage]
   }
 }

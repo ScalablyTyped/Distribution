@@ -18,10 +18,8 @@ object Anon_PauseResumeReset {
     reset: js.Function0[scala.Unit],
     update: js.Function0[scala.Unit]
   ): Anon_PauseResumeReset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pauseResume")(pauseResume)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(pauseResume = pauseResume, reset = reset, update = update)
+  
     __obj.asInstanceOf[Anon_PauseResumeReset]
   }
 }

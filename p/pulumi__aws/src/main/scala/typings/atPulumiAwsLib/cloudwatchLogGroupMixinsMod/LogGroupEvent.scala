@@ -12,8 +12,8 @@ trait LogGroupEvent extends js.Object {
 object LogGroupEvent {
   @scala.inline
   def apply(awslogs: atPulumiAwsLib.Anon_DataString): LogGroupEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("awslogs")(awslogs)
+    val __obj = js.Dynamic.literal(awslogs = awslogs)
+  
     __obj.asInstanceOf[LogGroupEvent]
   }
 }

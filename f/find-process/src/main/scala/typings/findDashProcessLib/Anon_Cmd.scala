@@ -24,13 +24,8 @@ object Anon_Cmd {
     ppid: java.lang.String,
     uid: java.lang.String
   ): Anon_Cmd = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmd")(cmd)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("pid")(pid)
-    __obj.updateDynamic("ppid")(ppid)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(cmd = cmd, gid = gid, name = name, pid = pid, ppid = ppid, uid = uid)
+  
     __obj.asInstanceOf[Anon_Cmd]
   }
 }

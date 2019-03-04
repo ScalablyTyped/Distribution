@@ -22,8 +22,7 @@ object styleObject {
     overrides: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     styles: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): styleObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("element")(element)
+    val __obj = js.Dynamic.literal(element = element)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (name != null) __obj.updateDynamic("name")(name)
     if (overrides != null) __obj.updateDynamic("overrides")(overrides)

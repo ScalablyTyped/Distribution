@@ -24,13 +24,8 @@ object ExifData {
     makernote: exifLib.Anon_AutoBracketing,
     thumbnail: exifLib.Anon_Compression
   ): ExifData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exif")(exif)
-    __obj.updateDynamic("gps")(gps)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("interoperability")(interoperability)
-    __obj.updateDynamic("makernote")(makernote)
-    __obj.updateDynamic("thumbnail")(thumbnail)
+    val __obj = js.Dynamic.literal(exif = exif, gps = gps, image = image, interoperability = interoperability, makernote = makernote, thumbnail = thumbnail)
+  
     __obj.asInstanceOf[ExifData]
   }
 }

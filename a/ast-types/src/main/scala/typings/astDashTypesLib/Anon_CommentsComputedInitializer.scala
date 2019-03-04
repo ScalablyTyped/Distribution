@@ -28,8 +28,7 @@ object Anon_CommentsComputedInitializer {
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
   ): Anon_CommentsComputedInitializer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)

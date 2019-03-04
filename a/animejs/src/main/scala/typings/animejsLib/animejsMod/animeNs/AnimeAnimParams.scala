@@ -34,8 +34,7 @@ object AnimeAnimParams {
     run: animejsLib.AnimeCallbackFunction = null,
     update: animejsLib.AnimeCallbackFunction = null
   ): AnimeAnimParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (begin != null) __obj.updateDynamic("begin")(begin)
     if (complete != null) __obj.updateDynamic("complete")(complete)

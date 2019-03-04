@@ -13,9 +13,8 @@ trait Anon_Settings extends js.Object {
 object Anon_Settings {
   @scala.inline
   def apply(settings: Anon_EditorcursorShape, version: java.lang.String): Anon_Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(settings = settings, version = version)
+  
     __obj.asInstanceOf[Anon_Settings]
   }
 }

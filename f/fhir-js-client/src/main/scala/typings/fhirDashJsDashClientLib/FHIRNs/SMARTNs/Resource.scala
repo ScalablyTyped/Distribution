@@ -28,8 +28,7 @@ object Resource {
     */
   /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Resource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("resourceType")(resourceType)
+    val __obj = js.Dynamic.literal(resourceType = resourceType)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Resource]
   }

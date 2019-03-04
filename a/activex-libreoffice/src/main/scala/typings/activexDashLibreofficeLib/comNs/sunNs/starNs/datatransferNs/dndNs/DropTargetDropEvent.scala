@@ -48,15 +48,8 @@ object DropTargetDropEvent {
     SourceActions: scala.Double,
     Transferable: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable
   ): DropTargetDropEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("DropAction")(DropAction)
-    __obj.updateDynamic("Dummy")(Dummy)
-    __obj.updateDynamic("LocationX")(LocationX)
-    __obj.updateDynamic("LocationY")(LocationY)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("SourceActions")(SourceActions)
-    __obj.updateDynamic("Transferable")(Transferable)
+    val __obj = js.Dynamic.literal(Context = Context, DropAction = DropAction, Dummy = Dummy, LocationX = LocationX, LocationY = LocationY, Source = Source, SourceActions = SourceActions, Transferable = Transferable)
+  
     __obj.asInstanceOf[DropTargetDropEvent]
   }
 }

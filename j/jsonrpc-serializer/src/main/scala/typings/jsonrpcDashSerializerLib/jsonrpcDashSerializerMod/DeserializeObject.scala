@@ -16,8 +16,8 @@ object DeserializeObject {
     payload: RequestPayloadObject | NotificationPayloadObject | SuccessPayloadObject | ErrorPayloadObject,
     `type`: PayloadType
   ): DeserializeObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[DeserializeObject]
   }
 }

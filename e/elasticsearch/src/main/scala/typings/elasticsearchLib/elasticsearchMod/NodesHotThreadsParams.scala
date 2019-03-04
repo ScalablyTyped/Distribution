@@ -34,8 +34,7 @@ object NodesHotThreadsParams {
     timeout: TimeSpan = null,
     `type`: elasticsearchLib.elasticsearchLibStrings.cpu | elasticsearchLib.elasticsearchLibStrings.wait | elasticsearchLib.elasticsearchLibStrings.blocked = null
   ): NodesHotThreadsParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])

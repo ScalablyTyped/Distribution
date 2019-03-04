@@ -22,11 +22,7 @@ object DetailedArguments {
     newAliases: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
     error: stdLib.Error = null
   ): DetailedArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aliases")(aliases)
-    __obj.updateDynamic("argv")(argv)
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("newAliases")(newAliases)
+    val __obj = js.Dynamic.literal(aliases = aliases, argv = argv, configuration = configuration, newAliases = newAliases)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[DetailedArguments]
   }

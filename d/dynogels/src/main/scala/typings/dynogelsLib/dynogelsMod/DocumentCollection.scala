@@ -14,10 +14,8 @@ trait DocumentCollection extends js.Object {
 object DocumentCollection {
   @scala.inline
   def apply(Count: scala.Double, Items: js.Array[Document], ScannedCount: scala.Double): DocumentCollection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Items")(Items)
-    __obj.updateDynamic("ScannedCount")(ScannedCount)
+    val __obj = js.Dynamic.literal(Count = Count, Items = Items, ScannedCount = ScannedCount)
+  
     __obj.asInstanceOf[DocumentCollection]
   }
 }

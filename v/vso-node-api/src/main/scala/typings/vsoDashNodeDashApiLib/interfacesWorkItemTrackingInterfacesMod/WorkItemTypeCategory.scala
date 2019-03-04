@@ -34,13 +34,8 @@ object WorkItemTypeCategory {
     url: java.lang.String,
     workItemTypes: js.Array[WorkItemTypeReference]
   ): WorkItemTypeCategory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("defaultWorkItemType")(defaultWorkItemType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    val __obj = js.Dynamic.literal(_links = _links, defaultWorkItemType = defaultWorkItemType, name = name, referenceName = referenceName, url = url, workItemTypes = workItemTypes)
+  
     __obj.asInstanceOf[WorkItemTypeCategory]
   }
 }

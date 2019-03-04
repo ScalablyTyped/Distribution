@@ -20,11 +20,8 @@ object Anon_Consolidate {
     savePath: java.lang.String,
     useDotNotation: scala.Boolean
   ): Anon_Consolidate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consolidate")(consolidate)
-    __obj.updateDynamic("report")(report)
-    __obj.updateDynamic("savePath")(savePath)
-    __obj.updateDynamic("useDotNotation")(useDotNotation)
+    val __obj = js.Dynamic.literal(consolidate = consolidate, report = report, savePath = savePath, useDotNotation = useDotNotation)
+  
     __obj.asInstanceOf[Anon_Consolidate]
   }
 }

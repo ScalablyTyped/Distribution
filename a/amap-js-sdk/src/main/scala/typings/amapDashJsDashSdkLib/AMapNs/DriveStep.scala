@@ -42,20 +42,7 @@ object DriveStep {
     cities: js.Array[ViaCity] = null,
     tmcs: js.Array[TMC] = null
   ): DriveStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("assist_action")(assist_action)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("end_location")(end_location)
-    __obj.updateDynamic("instruction")(instruction)
-    __obj.updateDynamic("orientation")(orientation)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("road")(road)
-    __obj.updateDynamic("start_location")(start_location)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("toll_road")(toll_road)
-    __obj.updateDynamic("tolls")(tolls)
-    __obj.updateDynamic("tolls_distance")(tolls_distance)
+    val __obj = js.Dynamic.literal(action = action, assist_action = assist_action, distance = distance, end_location = end_location, instruction = instruction, orientation = orientation, path = path, road = road, start_location = start_location, time = time, toll_road = toll_road, tolls = tolls, tolls_distance = tolls_distance)
     if (cities != null) __obj.updateDynamic("cities")(cities)
     if (tmcs != null) __obj.updateDynamic("tmcs")(tmcs)
     __obj.asInstanceOf[DriveStep]

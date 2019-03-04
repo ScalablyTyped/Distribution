@@ -158,35 +158,8 @@ object ValueAxesSettings {
     unit: java.lang.String,
     unitPosition: java.lang.String
   ): ValueAxesSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("autoGridCount")(autoGridCount)
-    __obj.updateDynamic("axisAlpha")(axisAlpha)
-    __obj.updateDynamic("axisColor")(axisColor)
-    __obj.updateDynamic("axisThickness")(axisThickness)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dashLength")(dashLength)
-    __obj.updateDynamic("fillAlpha")(fillAlpha)
-    __obj.updateDynamic("fillColor")(fillColor)
-    __obj.updateDynamic("gridAlpha")(gridAlpha)
-    __obj.updateDynamic("gridColor")(gridColor)
-    __obj.updateDynamic("gridCount")(gridCount)
-    __obj.updateDynamic("gridThickness")(gridThickness)
-    __obj.updateDynamic("includeGuidesInMinMax")(includeGuidesInMinMax)
-    __obj.updateDynamic("includeHidden")(includeHidden)
-    __obj.updateDynamic("inside")(inside)
-    __obj.updateDynamic("integersOnly")(integersOnly)
-    __obj.updateDynamic("labelFrequency")(labelFrequency)
-    __obj.updateDynamic("labelsEnabled")(labelsEnabled)
-    __obj.updateDynamic("logarithmic")(logarithmic)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("reversed")(reversed)
-    __obj.updateDynamic("showFirstLabel")(showFirstLabel)
-    __obj.updateDynamic("showLastLabel")(showLastLabel)
-    __obj.updateDynamic("stackType")(stackType)
-    __obj.updateDynamic("tickLength")(tickLength)
-    __obj.updateDynamic("unit")(unit)
-    __obj.updateDynamic("unitPosition")(unitPosition)
+    val __obj = js.Dynamic.literal(autoGridCount = autoGridCount, axisAlpha = axisAlpha, axisColor = axisColor, axisThickness = axisThickness, color = color, dashLength = dashLength, fillAlpha = fillAlpha, fillColor = fillColor, gridAlpha = gridAlpha, gridColor = gridColor, gridCount = gridCount, gridThickness = gridThickness, includeGuidesInMinMax = includeGuidesInMinMax, includeHidden = includeHidden, inside = inside, integersOnly = integersOnly, labelFrequency = labelFrequency, labelsEnabled = labelsEnabled, logarithmic = logarithmic, offset = offset, position = position, reversed = reversed, showFirstLabel = showFirstLabel, showLastLabel = showLastLabel, stackType = stackType, tickLength = tickLength, unit = unit, unitPosition = unitPosition)
+  
     __obj.asInstanceOf[ValueAxesSettings]
   }
 }

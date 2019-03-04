@@ -32,17 +32,8 @@ object EllipsoidPrimitive {
     show: scala.Boolean,
     update: js.Function0[scala.Unit]
   ): EllipsoidPrimitive = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(center)
-    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("material")(material)
-    __obj.updateDynamic("modelMatrix")(modelMatrix)
-    __obj.updateDynamic("radii")(radii)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(center = center, debugShowBoundingVolume = debugShowBoundingVolume, destroy = destroy, id = id, isDestroyed = isDestroyed, material = material, modelMatrix = modelMatrix, radii = radii, show = show, update = update)
+  
     __obj.asInstanceOf[EllipsoidPrimitive]
   }
 }

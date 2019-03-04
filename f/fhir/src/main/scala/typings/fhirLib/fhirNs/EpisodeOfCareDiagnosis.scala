@@ -41,8 +41,7 @@ object EpisodeOfCareDiagnosis {
     rank: js.UndefOr[positiveInt] = js.undefined,
     role: CodeableConcept = null
   ): EpisodeOfCareDiagnosis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("condition")(condition)
+    val __obj = js.Dynamic.literal(condition = condition)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_rank != null) __obj.updateDynamic("_rank")(_rank)

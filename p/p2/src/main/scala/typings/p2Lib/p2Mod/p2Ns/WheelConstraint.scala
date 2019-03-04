@@ -40,24 +40,8 @@ object WheelConstraint {
     update: js.Function0[scala.Unit],
     vehicle: TopDownVehicle
   ): WheelConstraint = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("collideConnected")(collideConnected)
-    __obj.updateDynamic("engineForce")(engineForce)
-    __obj.updateDynamic("equeations")(equeations)
-    __obj.updateDynamic("forwardEquation")(forwardEquation)
-    __obj.updateDynamic("getSpeed")(getSpeed)
-    __obj.updateDynamic("localForwardVector")(localForwardVector)
-    __obj.updateDynamic("localPosition")(localPosition)
-    __obj.updateDynamic("setBrakeForce")(setBrakeForce)
-    __obj.updateDynamic("setRelaxation")(setRelaxation)
-    __obj.updateDynamic("setSideFriction")(setSideFriction)
-    __obj.updateDynamic("setStiffness")(setStiffness)
-    __obj.updateDynamic("sideEquation")(sideEquation)
-    __obj.updateDynamic("steerValue")(steerValue)
-    __obj.updateDynamic("update")(update)
-    __obj.updateDynamic("vehicle")(vehicle)
+    val __obj = js.Dynamic.literal(bodyA = bodyA, bodyB = bodyB, collideConnected = collideConnected, engineForce = engineForce, equeations = equeations, forwardEquation = forwardEquation, getSpeed = getSpeed, localForwardVector = localForwardVector, localPosition = localPosition, setBrakeForce = setBrakeForce, setRelaxation = setRelaxation, setSideFriction = setSideFriction, setStiffness = setStiffness, sideEquation = sideEquation, steerValue = steerValue, update = update, vehicle = vehicle)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[WheelConstraint]
   }
 }

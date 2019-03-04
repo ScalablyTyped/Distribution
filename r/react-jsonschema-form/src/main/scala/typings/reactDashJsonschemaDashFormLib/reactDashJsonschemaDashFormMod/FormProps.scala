@@ -75,8 +75,7 @@ object FormProps {
     validate: js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation] = null,
     widgets: org.scalablytyped.runtime.StringDictionary[Widget] = null
   ): FormProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("schema")(schema)
+    val __obj = js.Dynamic.literal(schema = schema)
     if (ArrayFieldTemplate != null) __obj.updateDynamic("ArrayFieldTemplate")(ArrayFieldTemplate)
     if (ErrorList != null) __obj.updateDynamic("ErrorList")(ErrorList)
     if (FieldTemplate != null) __obj.updateDynamic("FieldTemplate")(FieldTemplate)

@@ -13,9 +13,8 @@ trait Anon_ShTargetPivotTableWorksheet extends js.Object {
 object Anon_ShTargetPivotTableWorksheet {
   @scala.inline
   def apply(Sh: activexDashExcelLib.ExcelNs.Worksheet, Target: activexDashExcelLib.ExcelNs.PivotTable): Anon_ShTargetPivotTableWorksheet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Sh")(Sh)
-    __obj.updateDynamic("Target")(Target)
+    val __obj = js.Dynamic.literal(Sh = Sh, Target = Target)
+  
     __obj.asInstanceOf[Anon_ShTargetPivotTableWorksheet]
   }
 }

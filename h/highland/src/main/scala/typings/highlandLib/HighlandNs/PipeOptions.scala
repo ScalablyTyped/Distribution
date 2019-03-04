@@ -12,8 +12,8 @@ trait PipeOptions extends js.Object {
 object PipeOptions {
   @scala.inline
   def apply(end: scala.Boolean): PipeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("end")(end)
+    val __obj = js.Dynamic.literal(end = end)
+  
     __obj.asInstanceOf[PipeOptions]
   }
 }

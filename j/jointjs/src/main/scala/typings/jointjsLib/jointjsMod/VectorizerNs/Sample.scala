@@ -14,10 +14,8 @@ trait Sample extends js.Object {
 object Sample {
   @scala.inline
   def apply(distance: scala.Double, x: scala.Double, y: scala.Double): Sample = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(distance = distance, x = x, y = y)
+  
     __obj.asInstanceOf[Sample]
   }
 }

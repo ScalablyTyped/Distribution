@@ -50,24 +50,8 @@ object GIFObject {
     username: java.lang.String,
     user: giphyDashApiLib.Anon_Avatarurl = null
   ): GIFObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bitly_url")(bitly_url)
-    __obj.updateDynamic("content_url")(content_url)
-    __obj.updateDynamic("create_datetime")(create_datetime)
-    __obj.updateDynamic("embed_url")(embed_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("images")(images)
-    __obj.updateDynamic("import_datetime")(import_datetime)
-    __obj.updateDynamic("rating")(rating)
-    __obj.updateDynamic("slug")(slug)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("source_post_url")(source_post_url)
-    __obj.updateDynamic("source_tld")(source_tld)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("trending_datetime")(trending_datetime)
-    __obj.updateDynamic("update_datetime")(update_datetime)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(bitly_url = bitly_url, content_url = content_url, create_datetime = create_datetime, embed_url = embed_url, id = id, images = images, import_datetime = import_datetime, rating = rating, slug = slug, source = source, source_post_url = source_post_url, source_tld = source_tld, title = title, trending_datetime = trending_datetime, update_datetime = update_datetime, url = url, username = username)
+    __obj.updateDynamic("type")(`type`)
     if (user != null) __obj.updateDynamic("user")(user)
     __obj.asInstanceOf[GIFObject]
   }

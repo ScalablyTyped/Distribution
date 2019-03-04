@@ -22,12 +22,8 @@ object Anon_Const {
     path: babelDashTraverseLib.babelDashTraverseMod.NodePath[babelDashTraverseLib.babelDashTraverseMod.Node],
     scope: babelDashTraverseLib.babelDashTraverseMod.Scope
   ): Anon_Const = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("existing")(existing)
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(existing = existing, identifier = identifier, kind = kind.asInstanceOf[js.Any], path = path, scope = scope)
+  
     __obj.asInstanceOf[Anon_Const]
   }
 }

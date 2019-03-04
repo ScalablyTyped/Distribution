@@ -20,9 +20,8 @@ object ResourceConfigQuery {
     `type`: ResourceTypes,
     configNames: js.Array[java.lang.String] = null
   ): ResourceConfigQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("configEntries")(configEntries)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(configEntries = configEntries, name = name)
+    __obj.updateDynamic("type")(`type`)
     if (configNames != null) __obj.updateDynamic("configNames")(configNames)
     __obj.asInstanceOf[ResourceConfigQuery]
   }

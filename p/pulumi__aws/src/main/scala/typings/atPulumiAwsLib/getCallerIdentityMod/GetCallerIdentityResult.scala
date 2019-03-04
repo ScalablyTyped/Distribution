@@ -27,11 +27,8 @@ trait GetCallerIdentityResult extends js.Object {
 object GetCallerIdentityResult {
   @scala.inline
   def apply(accountId: java.lang.String, arn: java.lang.String, id: java.lang.String, userId: java.lang.String): GetCallerIdentityResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId)
-    __obj.updateDynamic("arn")(arn)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("userId")(userId)
+    val __obj = js.Dynamic.literal(accountId = accountId, arn = arn, id = id, userId = userId)
+  
     __obj.asInstanceOf[GetCallerIdentityResult]
   }
 }

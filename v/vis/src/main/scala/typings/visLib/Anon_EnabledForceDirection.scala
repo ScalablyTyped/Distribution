@@ -20,9 +20,8 @@ object Anon_EnabledForceDirection {
     `type`: java.lang.String,
     forceDirection: java.lang.String | scala.Boolean = null
   ): Anon_EnabledForceDirection = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("roundness")(roundness)
+    val __obj = js.Dynamic.literal(enabled = enabled, roundness = roundness)
+    __obj.updateDynamic("type")(`type`)
     if (forceDirection != null) __obj.updateDynamic("forceDirection")(forceDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EnabledForceDirection]
   }

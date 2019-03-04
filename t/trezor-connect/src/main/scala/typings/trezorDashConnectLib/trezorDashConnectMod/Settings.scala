@@ -47,8 +47,7 @@ object Settings {
     webusb: js.UndefOr[scala.Boolean] = js.undefined,
     webusbSrc: java.lang.String = null
   ): Settings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     if (configSrc != null) __obj.updateDynamic("configSrc")(configSrc)
     if (connectSrc != null) __obj.updateDynamic("connectSrc")(connectSrc)
     if (extension != null) __obj.updateDynamic("extension")(extension)

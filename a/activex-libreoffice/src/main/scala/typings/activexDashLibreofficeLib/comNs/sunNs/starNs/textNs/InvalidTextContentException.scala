@@ -19,10 +19,8 @@ object InvalidTextContentException {
     Message: java.lang.String,
     TextContent: XTextContent
   ): InvalidTextContentException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Context")(Context)
-    __obj.updateDynamic("Message")(Message)
-    __obj.updateDynamic("TextContent")(TextContent)
+    val __obj = js.Dynamic.literal(Context = Context, Message = Message, TextContent = TextContent)
+  
     __obj.asInstanceOf[InvalidTextContentException]
   }
 }

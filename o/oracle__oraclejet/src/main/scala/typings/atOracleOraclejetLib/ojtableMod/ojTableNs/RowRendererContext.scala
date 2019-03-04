@@ -21,11 +21,8 @@ object RowRendererContext {
     parentElement: stdLib.Element,
     rowContext: atOracleOraclejetLib.Anon_Datasource[K, D]
   ): RowRendererContext[K, D] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("componentElement")(componentElement)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("parentElement")(parentElement)
-    __obj.updateDynamic("rowContext")(rowContext)
+    val __obj = js.Dynamic.literal(componentElement = componentElement, data = data, parentElement = parentElement, rowContext = rowContext)
+  
     __obj.asInstanceOf[RowRendererContext[K, D]]
   }
 }

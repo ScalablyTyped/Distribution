@@ -56,10 +56,7 @@ object ViewOpenParameters {
     cmdbar: CmdBarDisplay = null,
     navbar: NavBarDisplay = null
   ): ViewOpenParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("etn")(etn)
-    __obj.updateDynamic("viewid")(viewid)
-    __obj.updateDynamic("viewtype")(viewtype)
+    val __obj = js.Dynamic.literal(etn = etn, viewid = viewid, viewtype = viewtype)
     if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
     if (navbar != null) __obj.updateDynamic("navbar")(navbar)
     __obj.asInstanceOf[ViewOpenParameters]

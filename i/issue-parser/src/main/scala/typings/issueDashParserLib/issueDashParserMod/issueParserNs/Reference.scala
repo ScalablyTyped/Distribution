@@ -20,9 +20,7 @@ object Reference {
     prefix: java.lang.String = null,
     slug: java.lang.String = null
   ): Reference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("issue")(issue)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(issue = issue, raw = raw)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
     if (slug != null) __obj.updateDynamic("slug")(slug)
     __obj.asInstanceOf[Reference]

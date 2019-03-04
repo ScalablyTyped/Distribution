@@ -16,9 +16,8 @@ object Anon_EventLoaded {
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLVideoElement, reactLib.Event],
     loaded: scala.Double
   ): Anon_EventLoaded = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
-    __obj.updateDynamic("loaded")(loaded)
+    val __obj = js.Dynamic.literal(event = event, loaded = loaded)
+  
     __obj.asInstanceOf[Anon_EventLoaded]
   }
 }

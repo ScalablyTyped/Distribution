@@ -44,8 +44,7 @@ object IDialogOpenConfirmOptions {
     trapFocus: js.UndefOr[scala.Boolean] = js.undefined,
     width: java.lang.String | scala.Double = null
   ): IDialogOpenConfirmOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(template = template)
     if (appendClassName != null) __obj.updateDynamic("appendClassName")(appendClassName)
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(ariaAuto)) __obj.updateDynamic("ariaAuto")(ariaAuto)

@@ -37,12 +37,8 @@ object RequestInfo {
     stateResponse: java.lang.String,
     valid: scala.Boolean
   ): RequestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("requestType")(requestType)
-    __obj.updateDynamic("stateMatch")(stateMatch)
-    __obj.updateDynamic("stateResponse")(stateResponse)
-    __obj.updateDynamic("valid")(valid)
+    val __obj = js.Dynamic.literal(parameters = parameters, requestType = requestType, stateMatch = stateMatch, stateResponse = stateResponse, valid = valid)
+  
     __obj.asInstanceOf[RequestInfo]
   }
 }

@@ -15,9 +15,8 @@ trait Anon_NodeParent
 object Anon_NodeParent {
   @scala.inline
   def apply(node: js.Any, parent: scala.Null, `type`: eslintLib.eslintLibStrings.TDZ): Anon_NodeParent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("node")(node)
-    __obj.updateDynamic("parent")(parent)
+    val __obj = js.Dynamic.literal(node = node, parent = parent)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_NodeParent]
   }
 }

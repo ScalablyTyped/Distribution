@@ -40,11 +40,8 @@ object _Impl {
     value: java.lang.String,
     values: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("remoteValues")(remoteValues)
-    __obj.updateDynamic("value")(value)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(name = name, remoteValues = remoteValues, value = value, values = values)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

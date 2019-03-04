@@ -42,15 +42,8 @@ object FilterOptionsDialog {
     ],
     setTitle: js.Function1[java.lang.String, scala.Unit]
   ): FilterOptionsDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("PropertyValues")(PropertyValues)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("execute")(execute)
-    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
-    __obj.updateDynamic("setTitle")(setTitle)
+    val __obj = js.Dynamic.literal(PropertyValues = PropertyValues, acquire = acquire, execute = execute, getPropertyValues = getPropertyValues, queryInterface = queryInterface, release = release, setPropertyValues = setPropertyValues, setTitle = setTitle)
+  
     __obj.asInstanceOf[FilterOptionsDialog]
   }
 }

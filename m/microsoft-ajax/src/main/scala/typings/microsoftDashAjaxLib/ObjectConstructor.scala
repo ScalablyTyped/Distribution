@@ -19,9 +19,8 @@ trait ObjectConstructor extends js.Object {
 object ObjectConstructor {
   @scala.inline
   def apply(getType: js.Function1[js.Any, Type], getTypeName: js.Function1[js.Any, java.lang.String]): ObjectConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("getTypeName")(getTypeName)
+    val __obj = js.Dynamic.literal(getType = getType, getTypeName = getTypeName)
+  
     __obj.asInstanceOf[ObjectConstructor]
   }
 }

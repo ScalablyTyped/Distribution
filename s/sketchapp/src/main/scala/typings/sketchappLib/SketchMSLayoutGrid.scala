@@ -42,21 +42,7 @@ object SketchMSLayoutGrid {
     totalWidth: scala.Double,
     do_objectID: java.lang.String = null
   ): SketchMSLayoutGrid = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_class")(_class)
-    __obj.updateDynamic("columnWidth")(columnWidth)
-    __obj.updateDynamic("drawHorizontal")(drawHorizontal)
-    __obj.updateDynamic("drawHorizontalLines")(drawHorizontalLines)
-    __obj.updateDynamic("drawVertical")(drawVertical)
-    __obj.updateDynamic("gutterHeight")(gutterHeight)
-    __obj.updateDynamic("gutterWidth")(gutterWidth)
-    __obj.updateDynamic("guttersOutside")(guttersOutside)
-    __obj.updateDynamic("horizontalOffset")(horizontalOffset)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("numberOfColumns")(numberOfColumns)
-    __obj.updateDynamic("objectID")(objectID)
-    __obj.updateDynamic("rowHeightMultiplication")(rowHeightMultiplication)
-    __obj.updateDynamic("totalWidth")(totalWidth)
+    val __obj = js.Dynamic.literal(_class = _class, columnWidth = columnWidth, drawHorizontal = drawHorizontal, drawHorizontalLines = drawHorizontalLines, drawVertical = drawVertical, gutterHeight = gutterHeight, gutterWidth = gutterWidth, guttersOutside = guttersOutside, horizontalOffset = horizontalOffset, isEnabled = isEnabled, numberOfColumns = numberOfColumns, objectID = objectID, rowHeightMultiplication = rowHeightMultiplication, totalWidth = totalWidth)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     __obj.asInstanceOf[SketchMSLayoutGrid]
   }

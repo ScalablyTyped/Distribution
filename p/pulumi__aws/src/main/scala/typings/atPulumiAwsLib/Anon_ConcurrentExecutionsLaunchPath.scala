@@ -18,9 +18,7 @@ object Anon_ConcurrentExecutionsLaunchPath {
     launchPath: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     parameters: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ConcurrentExecutionsLaunchPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("concurrentExecutions")(concurrentExecutions.asInstanceOf[js.Any])
-    __obj.updateDynamic("launchPath")(launchPath.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(concurrentExecutions = concurrentExecutions.asInstanceOf[js.Any], launchPath = launchPath.asInstanceOf[js.Any])
     if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ConcurrentExecutionsLaunchPath]
   }

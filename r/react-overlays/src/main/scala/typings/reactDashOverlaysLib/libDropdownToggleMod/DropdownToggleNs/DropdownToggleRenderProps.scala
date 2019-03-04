@@ -18,10 +18,8 @@ object DropdownToggleRenderProps {
     show: scala.Boolean,
     toggle: js.Function1[scala.Boolean, scala.Unit]
   ): DropdownToggleRenderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("toggle")(toggle)
+    val __obj = js.Dynamic.literal(props = props, show = show, toggle = toggle)
+  
     __obj.asInstanceOf[DropdownToggleRenderProps]
   }
 }

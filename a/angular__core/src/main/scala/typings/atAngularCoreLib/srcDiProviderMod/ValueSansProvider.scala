@@ -16,8 +16,8 @@ trait ValueSansProvider
 object ValueSansProvider {
   @scala.inline
   def apply(useValue: js.Any): ValueSansProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("useValue")(useValue)
+    val __obj = js.Dynamic.literal(useValue = useValue)
+  
     __obj.asInstanceOf[ValueSansProvider]
   }
 }

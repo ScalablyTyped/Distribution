@@ -23,10 +23,8 @@ trait ArrayBufferView extends BufferSource {
 object ArrayBufferView {
   @scala.inline
   def apply(buffer: ArrayBufferLike, byteLength: scala.Double, byteOffset: scala.Double): ArrayBufferView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("byteLength")(byteLength)
-    __obj.updateDynamic("byteOffset")(byteOffset)
+    val __obj = js.Dynamic.literal(buffer = buffer, byteLength = byteLength, byteOffset = byteOffset)
+  
     __obj.asInstanceOf[ArrayBufferView]
   }
 }

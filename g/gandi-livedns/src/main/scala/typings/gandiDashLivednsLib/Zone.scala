@@ -32,17 +32,8 @@ object Zone {
     serial: scala.Double,
     uuid: java.lang.String
   ): Zone = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apex_alias")(apex_alias)
-    __obj.updateDynamic("email")(email)
-    __obj.updateDynamic("expire")(expire)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("primary_ns")(primary_ns)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("serial")(serial)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(apex_alias = apex_alias, email = email, expire = expire, minimum = minimum, name = name, primary_ns = primary_ns, refresh = refresh, retry = retry, serial = serial, uuid = uuid)
+  
     __obj.asInstanceOf[Zone]
   }
 }

@@ -19,9 +19,8 @@ trait LineSpacing extends js.Object {
 object LineSpacing {
   @scala.inline
   def apply(Height: scala.Double, Mode: scala.Double): LineSpacing = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Height")(Height)
-    __obj.updateDynamic("Mode")(Mode)
+    val __obj = js.Dynamic.literal(Height = Height, Mode = Mode)
+  
     __obj.asInstanceOf[LineSpacing]
   }
 }

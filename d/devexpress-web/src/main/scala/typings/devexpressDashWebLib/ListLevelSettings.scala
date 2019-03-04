@@ -93,20 +93,8 @@ object ListLevelSettings {
     separator: java.lang.String,
     start: scala.Double
   ): ListLevelSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("displayFormatString")(displayFormatString)
-    __obj.updateDynamic("firstLineIndent")(firstLineIndent)
-    __obj.updateDynamic("firstLineIndentType")(firstLineIndentType)
-    __obj.updateDynamic("fontBold")(fontBold)
-    __obj.updateDynamic("fontColor")(fontColor)
-    __obj.updateDynamic("fontItalic")(fontItalic)
-    __obj.updateDynamic("fontName")(fontName)
-    __obj.updateDynamic("fontSize")(fontSize)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("leftIndent")(leftIndent)
-    __obj.updateDynamic("separator")(separator)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(alignment = alignment, displayFormatString = displayFormatString, firstLineIndent = firstLineIndent, firstLineIndentType = firstLineIndentType, fontBold = fontBold, fontColor = fontColor, fontItalic = fontItalic, fontName = fontName, fontSize = fontSize, format = format, leftIndent = leftIndent, separator = separator, start = start)
+  
     __obj.asInstanceOf[ListLevelSettings]
   }
 }

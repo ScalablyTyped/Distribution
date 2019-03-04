@@ -45,12 +45,8 @@ object ASPxClientHintShowingEventArgs {
     targetElement: js.Object,
     titleElement: js.Object
   ): ASPxClientHintShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("contentElement")(contentElement)
-    __obj.updateDynamic("hintElement")(hintElement)
-    __obj.updateDynamic("targetElement")(targetElement)
-    __obj.updateDynamic("titleElement")(titleElement)
+    val __obj = js.Dynamic.literal(cancel = cancel, contentElement = contentElement, hintElement = hintElement, targetElement = targetElement, titleElement = titleElement)
+  
     __obj.asInstanceOf[ASPxClientHintShowingEventArgs]
   }
 }

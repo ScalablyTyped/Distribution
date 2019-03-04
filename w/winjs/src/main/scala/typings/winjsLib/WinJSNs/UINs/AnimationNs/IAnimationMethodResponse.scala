@@ -14,8 +14,8 @@ trait IAnimationMethodResponse extends js.Object {
 object IAnimationMethodResponse {
   @scala.inline
   def apply(execute: js.Function0[winjsLib.WinJSNs.Promise[_]]): IAnimationMethodResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(execute)
+    val __obj = js.Dynamic.literal(execute = execute)
+  
     __obj.asInstanceOf[IAnimationMethodResponse]
   }
 }

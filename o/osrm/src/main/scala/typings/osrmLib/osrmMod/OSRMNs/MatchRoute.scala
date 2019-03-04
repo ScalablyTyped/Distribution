@@ -28,13 +28,7 @@ object MatchRoute {
     weight_name: java.lang.String,
     geometry: js.Any = null
   ): MatchRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confidence")(confidence)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("legs")(legs)
-    __obj.updateDynamic("weight")(weight)
-    __obj.updateDynamic("weight_name")(weight_name)
+    val __obj = js.Dynamic.literal(confidence = confidence, distance = distance, duration = duration, legs = legs, weight = weight, weight_name = weight_name)
     if (geometry != null) __obj.updateDynamic("geometry")(geometry)
     __obj.asInstanceOf[MatchRoute]
   }

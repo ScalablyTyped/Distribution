@@ -47,11 +47,8 @@ object XPrimitive2DRenderer {
     ],
     release: js.Function0[scala.Unit]
   ): XPrimitive2DRenderer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("rasterize")(rasterize)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, rasterize = rasterize, release = release)
+  
     __obj.asInstanceOf[XPrimitive2DRenderer]
   }
 }

@@ -13,9 +13,8 @@ trait Endpoint extends js.Object {
 object Endpoint {
   @scala.inline
   def apply(hostname: java.lang.String, port: scala.Double): Endpoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("port")(port)
+    val __obj = js.Dynamic.literal(hostname = hostname, port = port)
+  
     __obj.asInstanceOf[Endpoint]
   }
 }

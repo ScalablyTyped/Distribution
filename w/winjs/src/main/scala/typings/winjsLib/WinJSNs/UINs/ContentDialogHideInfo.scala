@@ -18,8 +18,8 @@ trait ContentDialogHideInfo extends js.Object {
 object ContentDialogHideInfo {
   @scala.inline
   def apply(result: java.lang.String): ContentDialogHideInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
+    val __obj = js.Dynamic.literal(result = result)
+  
     __obj.asInstanceOf[ContentDialogHideInfo]
   }
 }

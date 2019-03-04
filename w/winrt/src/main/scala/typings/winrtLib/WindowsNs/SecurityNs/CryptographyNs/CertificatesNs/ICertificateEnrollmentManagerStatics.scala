@@ -36,10 +36,8 @@ object ICertificateEnrollmentManagerStatics {
     ],
     installCertificateAsync: js.Function2[java.lang.String, InstallOptions, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
   ): ICertificateEnrollmentManagerStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createRequestAsync")(createRequestAsync)
-    __obj.updateDynamic("importPfxDataAsync")(importPfxDataAsync)
-    __obj.updateDynamic("installCertificateAsync")(installCertificateAsync)
+    val __obj = js.Dynamic.literal(createRequestAsync = createRequestAsync, importPfxDataAsync = importPfxDataAsync, installCertificateAsync = installCertificateAsync)
+  
     __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
   }
 }

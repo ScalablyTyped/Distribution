@@ -38,10 +38,7 @@ object TemplateCompileOptions {
     transformAssetUrls: atVueComponentDashCompilerDashUtilsLib.distTemplateCompilerModulesAssetUrlMod.AssetURLOptions | scala.Boolean = null,
     transpileOptions: js.Any = null
   ): TemplateCompileOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compiler")(compiler)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(compiler = compiler, filename = filename, source = source)
     if (compilerOptions != null) __obj.updateDynamic("compilerOptions")(compilerOptions)
     if (!js.isUndefined(isFunctional)) __obj.updateDynamic("isFunctional")(isFunctional)
     if (!js.isUndefined(isProduction)) __obj.updateDynamic("isProduction")(isProduction)

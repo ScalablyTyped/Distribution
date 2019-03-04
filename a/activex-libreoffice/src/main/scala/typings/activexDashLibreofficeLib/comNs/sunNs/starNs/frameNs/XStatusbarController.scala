@@ -108,24 +108,8 @@ object XStatusbarController {
     statusChanged: js.Function1[FeatureStateEvent, scala.Unit],
     update: js.Function0[scala.Unit]
   ): XStatusbarController = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("click")(click)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("doubleClick")(doubleClick)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("mouseButtonDown")(mouseButtonDown)
-    __obj.updateDynamic("mouseButtonUp")(mouseButtonUp)
-    __obj.updateDynamic("mouseMove")(mouseMove)
-    __obj.updateDynamic("paint")(paint)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("statusChanged")(statusChanged)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(acquire = acquire, addEventListener = addEventListener, click = click, command = command, dispose = dispose, disposing = disposing, doubleClick = doubleClick, initialize = initialize, mouseButtonDown = mouseButtonDown, mouseButtonUp = mouseButtonUp, mouseMove = mouseMove, paint = paint, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, statusChanged = statusChanged, update = update)
+  
     __obj.asInstanceOf[XStatusbarController]
   }
 }

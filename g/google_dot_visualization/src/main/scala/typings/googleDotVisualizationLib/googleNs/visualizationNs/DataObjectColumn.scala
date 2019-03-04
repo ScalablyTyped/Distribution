@@ -22,7 +22,8 @@ object DataObjectColumn {
     p: js.Any = null,
     pattern: java.lang.String = null
   ): DataObjectColumn = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)
     if (p != null) __obj.updateDynamic("p")(p)

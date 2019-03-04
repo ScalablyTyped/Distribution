@@ -12,8 +12,8 @@ trait SymbolConstructor extends js.Object {
 object SymbolConstructor {
   @scala.inline
   def apply(observable: js.Symbol): SymbolConstructor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("observable")(observable)
+    val __obj = js.Dynamic.literal(observable = observable)
+  
     __obj.asInstanceOf[SymbolConstructor]
   }
 }

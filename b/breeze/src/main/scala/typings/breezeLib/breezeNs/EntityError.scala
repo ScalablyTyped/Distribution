@@ -22,12 +22,8 @@ object EntityError {
     isServerError: scala.Boolean,
     propertyName: java.lang.String
   ): EntityError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("errorMessage")(errorMessage)
-    __obj.updateDynamic("errorName")(errorName)
-    __obj.updateDynamic("isServerError")(isServerError)
-    __obj.updateDynamic("propertyName")(propertyName)
+    val __obj = js.Dynamic.literal(entity = entity, errorMessage = errorMessage, errorName = errorName, isServerError = isServerError, propertyName = propertyName)
+  
     __obj.asInstanceOf[EntityError]
   }
 }

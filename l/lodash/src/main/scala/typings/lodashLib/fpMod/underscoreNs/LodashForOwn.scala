@@ -15,7 +15,7 @@ trait LodashForOwn extends js.Object {
     ],
     `object`: T
   ): js.UndefOr[T | scala.Null] = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashForOwn2x2[T] = js.native
-  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashForOwn2x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__): LodashForOwn2x2[T] = js.native
+  def apply[T](iteratee: lodashLib.lodashMod.underscoreNs.__, `object`: T): LodashForOwn2x2[T] = js.native
 }
 

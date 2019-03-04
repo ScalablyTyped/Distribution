@@ -18,9 +18,7 @@ object ProjectDetailsMultiAppResult {
     id: java.lang.String = null,
     `type`: ionicLib.definitionsMod.ProjectType = null
   ): ProjectDetailsMultiAppResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
-    __obj.updateDynamic("errors")(errors)
+    val __obj = js.Dynamic.literal(context = context, errors = errors)
     if (id != null) __obj.updateDynamic("id")(id)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ProjectDetailsMultiAppResult]

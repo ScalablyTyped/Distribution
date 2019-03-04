@@ -13,9 +13,8 @@ trait Config extends js.Object {
 object Config {
   @scala.inline
   def apply(MONEY_URL: java.lang.String, SP_MONEY_URL: java.lang.String): Config = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MONEY_URL")(MONEY_URL)
-    __obj.updateDynamic("SP_MONEY_URL")(SP_MONEY_URL)
+    val __obj = js.Dynamic.literal(MONEY_URL = MONEY_URL, SP_MONEY_URL = SP_MONEY_URL)
+  
     __obj.asInstanceOf[Config]
   }
 }

@@ -25,10 +25,7 @@ object PaymentsLiteDialogParams {
     quantity: scala.Int | scala.Double = null,
     redirect_uri: java.lang.String = null
   ): PaymentsLiteDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("product_id")(product_id)
+    val __obj = js.Dynamic.literal(action = action, method = method, product_id = product_id)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (developer_payload != null) __obj.updateDynamic("developer_payload")(developer_payload)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])

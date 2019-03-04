@@ -94,20 +94,8 @@ object XEngine {
     setLibraryAccess: js.Function1[XLibraryAccess, scala.Unit],
     setRoot: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit]
   ): XEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Root")(Root)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEngineListener")(addEngineListener)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("compile")(compile)
-    __obj.updateDynamic("getRoot")(getRoot)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEngineListener")(removeEngineListener)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("runAsync")(runAsync)
-    __obj.updateDynamic("setLibraryAccess")(setLibraryAccess)
-    __obj.updateDynamic("setRoot")(setRoot)
+    val __obj = js.Dynamic.literal(Root = Root, acquire = acquire, addEngineListener = addEngineListener, cancel = cancel, compile = compile, getRoot = getRoot, queryInterface = queryInterface, release = release, removeEngineListener = removeEngineListener, run = run, runAsync = runAsync, setLibraryAccess = setLibraryAccess, setRoot = setRoot)
+  
     __obj.asInstanceOf[XEngine]
   }
 }

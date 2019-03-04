@@ -18,8 +18,7 @@ object UrlMatchResult {
     consumed: js.Array[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment],
     posParams: org.scalablytyped.runtime.StringDictionary[atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSegment] = null
   ): UrlMatchResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumed")(consumed)
+    val __obj = js.Dynamic.literal(consumed = consumed)
     if (posParams != null) __obj.updateDynamic("posParams")(posParams)
     __obj.asInstanceOf[UrlMatchResult]
   }

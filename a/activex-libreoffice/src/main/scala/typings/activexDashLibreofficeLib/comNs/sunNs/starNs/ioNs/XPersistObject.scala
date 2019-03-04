@@ -67,14 +67,8 @@ object XPersistObject {
     release: js.Function0[scala.Unit],
     write: js.Function1[XObjectOutputStream, scala.Unit]
   ): XPersistObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ServiceName")(ServiceName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getServiceName")(getServiceName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(ServiceName = ServiceName, acquire = acquire, getServiceName = getServiceName, queryInterface = queryInterface, read = read, release = release, write = write)
+  
     __obj.asInstanceOf[XPersistObject]
   }
 }

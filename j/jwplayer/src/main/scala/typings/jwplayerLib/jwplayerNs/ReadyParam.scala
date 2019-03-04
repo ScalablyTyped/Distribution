@@ -16,9 +16,8 @@ object ReadyParam {
     setupTime: scala.Double,
     viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
   ): ReadyParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setupTime")(setupTime)
-    __obj.updateDynamic("viewable")(viewable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(setupTime = setupTime, viewable = viewable.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ReadyParam]
   }
 }

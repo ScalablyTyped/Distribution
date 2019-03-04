@@ -20,8 +20,8 @@ object Anon_Cipher {
     cipher: java.lang.String = null,
     passphrase: java.lang.String | Buffer = null
   ): Anon_Cipher = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (cipher != null) __obj.updateDynamic("cipher")(cipher)
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Cipher]

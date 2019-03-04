@@ -24,11 +24,8 @@ object XComponentRegistry {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XComponentRegistry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createObject")(createObject)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, createObject = createObject, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XComponentRegistry]
   }
 }

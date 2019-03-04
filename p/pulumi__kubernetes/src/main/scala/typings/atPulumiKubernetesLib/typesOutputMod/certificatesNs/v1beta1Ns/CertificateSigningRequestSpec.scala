@@ -49,13 +49,8 @@ object CertificateSigningRequestSpec {
     usages: js.Array[java.lang.String],
     username: java.lang.String
   ): CertificateSigningRequestSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("usages")(usages)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(extra = extra, groups = groups, request = request, uid = uid, usages = usages, username = username)
+  
     __obj.asInstanceOf[CertificateSigningRequestSpec]
   }
 }

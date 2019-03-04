@@ -18,10 +18,8 @@ object Response {
     nextPageToken: java.lang.String,
     nextSyncToken: java.lang.String
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connections")(connections)
-    __obj.updateDynamic("nextPageToken")(nextPageToken)
-    __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    val __obj = js.Dynamic.literal(connections = connections, nextPageToken = nextPageToken, nextSyncToken = nextSyncToken)
+  
     __obj.asInstanceOf[Response]
   }
 }

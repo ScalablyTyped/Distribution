@@ -26,12 +26,7 @@ object PaymentDataRequest {
     shippingAddressParameters: ShippingAddressParameters = null,
     shippingAddressRequired: js.UndefOr[scala.Boolean] = js.undefined
   ): PaymentDataRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedPaymentMethods")(allowedPaymentMethods)
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("apiVersionMinor")(apiVersionMinor)
-    __obj.updateDynamic("merchantInfo")(merchantInfo)
-    __obj.updateDynamic("transactionInfo")(transactionInfo)
+    val __obj = js.Dynamic.literal(allowedPaymentMethods = allowedPaymentMethods, apiVersion = apiVersion, apiVersionMinor = apiVersionMinor, merchantInfo = merchantInfo, transactionInfo = transactionInfo)
     if (!js.isUndefined(emailRequired)) __obj.updateDynamic("emailRequired")(emailRequired)
     if (shippingAddressParameters != null) __obj.updateDynamic("shippingAddressParameters")(shippingAddressParameters)
     if (!js.isUndefined(shippingAddressRequired)) __obj.updateDynamic("shippingAddressRequired")(shippingAddressRequired)

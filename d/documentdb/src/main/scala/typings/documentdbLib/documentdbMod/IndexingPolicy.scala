@@ -24,11 +24,8 @@ object IndexingPolicy {
     automatic: scala.Boolean,
     indexingMode: IndexingMode
   ): IndexingPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ExcludedPaths")(ExcludedPaths)
-    __obj.updateDynamic("IncludedPaths")(IncludedPaths)
-    __obj.updateDynamic("automatic")(automatic)
-    __obj.updateDynamic("indexingMode")(indexingMode)
+    val __obj = js.Dynamic.literal(ExcludedPaths = ExcludedPaths, IncludedPaths = IncludedPaths, automatic = automatic, indexingMode = indexingMode)
+  
     __obj.asInstanceOf[IndexingPolicy]
   }
 }

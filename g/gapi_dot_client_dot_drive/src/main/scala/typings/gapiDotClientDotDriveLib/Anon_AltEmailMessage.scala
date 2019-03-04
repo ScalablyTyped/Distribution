@@ -63,8 +63,7 @@ object Anon_AltEmailMessage {
     useDomainAdminAccess: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltEmailMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileId")(fileId)
+    val __obj = js.Dynamic.literal(fileId = fileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage)
     if (fields != null) __obj.updateDynamic("fields")(fields)

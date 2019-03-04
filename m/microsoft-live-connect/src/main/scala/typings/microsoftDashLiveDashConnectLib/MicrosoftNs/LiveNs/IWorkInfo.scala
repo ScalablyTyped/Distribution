@@ -25,9 +25,8 @@ object IWorkInfo {
     employer: microsoftDashLiveDashConnectLib.Anon_Name,
     position: microsoftDashLiveDashConnectLib.Anon_Name
   ): IWorkInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("employer")(employer)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(employer = employer, position = position)
+  
     __obj.asInstanceOf[IWorkInfo]
   }
 }

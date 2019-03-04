@@ -24,9 +24,8 @@ object OnboardingResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Volume2]
     ]
   ): OnboardingResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listCategories")(listCategories)
-    __obj.updateDynamic("listCategoryVolumes")(listCategoryVolumes)
+    val __obj = js.Dynamic.literal(listCategories = listCategories, listCategoryVolumes = listCategoryVolumes)
+  
     __obj.asInstanceOf[OnboardingResource]
   }
 }

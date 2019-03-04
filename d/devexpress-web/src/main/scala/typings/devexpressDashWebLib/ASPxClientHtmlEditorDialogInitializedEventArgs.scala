@@ -24,9 +24,8 @@ trait ASPxClientHtmlEditorDialogInitializedEventArgs extends ASPxClientEventArgs
 object ASPxClientHtmlEditorDialogInitializedEventArgs {
   @scala.inline
   def apply(dialog: ASPxClientHtmlEditorDialogBase, dialogName: java.lang.String): ASPxClientHtmlEditorDialogInitializedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dialog")(dialog)
-    __obj.updateDynamic("dialogName")(dialogName)
+    val __obj = js.Dynamic.literal(dialog = dialog, dialogName = dialogName)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogInitializedEventArgs]
   }
 }

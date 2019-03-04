@@ -26,14 +26,8 @@ object ParseResult {
     textContent: java.lang.String,
     title: java.lang.String
   ): ParseResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("byline")(byline)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("dir")(dir)
-    __obj.updateDynamic("excerpt")(excerpt)
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("textContent")(textContent)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(byline = byline, content = content, dir = dir, excerpt = excerpt, length = length, textContent = textContent, title = title)
+  
     __obj.asInstanceOf[ParseResult]
   }
 }

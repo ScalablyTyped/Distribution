@@ -15,8 +15,8 @@ trait PropertyBag extends js.Object {
 object PropertyBag {
   @scala.inline
   def apply(bag: org.scalablytyped.runtime.StringDictionary[java.lang.String]): PropertyBag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bag")(bag)
+    val __obj = js.Dynamic.literal(bag = bag)
+  
     __obj.asInstanceOf[PropertyBag]
   }
 }

@@ -23,10 +23,7 @@ object INxMetaTitleDescriptionTag {
     title: java.lang.String,
     qName: java.lang.String = null
   ): INxMetaTitleDescriptionTag = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(description = description, tags = tags, title = title)
     if (qName != null) __obj.updateDynamic("qName")(qName)
     __obj.asInstanceOf[INxMetaTitleDescriptionTag]
   }

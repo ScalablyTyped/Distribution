@@ -43,14 +43,8 @@ object XPolicy {
     refresh: js.Function0[scala.Unit],
     release: js.Function0[scala.Unit]
   ): XPolicy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DefaultPermissions")(DefaultPermissions)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getDefaultPermissions")(getDefaultPermissions)
-    __obj.updateDynamic("getPermissions")(getPermissions)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("refresh")(refresh)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(DefaultPermissions = DefaultPermissions, acquire = acquire, getDefaultPermissions = getDefaultPermissions, getPermissions = getPermissions, queryInterface = queryInterface, refresh = refresh, release = release)
+  
     __obj.asInstanceOf[XPolicy]
   }
 }

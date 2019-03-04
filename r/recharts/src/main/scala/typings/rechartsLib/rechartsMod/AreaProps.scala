@@ -82,8 +82,7 @@ object AreaProps {
     yAxis: js.Object = null,
     yAxisId: java.lang.String | scala.Double = null
   ): AreaProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
     if (activeDot != null) __obj.updateDynamic("activeDot")(activeDot.asInstanceOf[js.Any])
     if (animationBegin != null) __obj.updateDynamic("animationBegin")(animationBegin.asInstanceOf[js.Any])
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])

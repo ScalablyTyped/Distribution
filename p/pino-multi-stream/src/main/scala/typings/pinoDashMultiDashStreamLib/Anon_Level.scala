@@ -16,8 +16,7 @@ object Anon_Level {
     stream: nodeLib.NodeJSNs.WritableStream,
     level: pinoDashMultiDashStreamLib.pinoDashMultiDashStreamMod.pinomsNs.Level = null
   ): Anon_Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stream")(stream)
+    val __obj = js.Dynamic.literal(stream = stream)
     if (level != null) __obj.updateDynamic("level")(level)
     __obj.asInstanceOf[Anon_Level]
   }

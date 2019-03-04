@@ -12,8 +12,8 @@ trait IAsymmetricKeyAlgorithmProviderStatics extends js.Object {
 object IAsymmetricKeyAlgorithmProviderStatics {
   @scala.inline
   def apply(openAlgorithm: js.Function1[java.lang.String, AsymmetricKeyAlgorithmProvider]): IAsymmetricKeyAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openAlgorithm")(openAlgorithm)
+    val __obj = js.Dynamic.literal(openAlgorithm = openAlgorithm)
+  
     __obj.asInstanceOf[IAsymmetricKeyAlgorithmProviderStatics]
   }
 }

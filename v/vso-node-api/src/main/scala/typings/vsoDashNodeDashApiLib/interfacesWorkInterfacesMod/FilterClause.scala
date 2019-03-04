@@ -22,12 +22,8 @@ object FilterClause {
     operator: java.lang.String,
     value: java.lang.String
   ): FilterClause = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fieldName")(fieldName)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("logicalOperator")(logicalOperator)
-    __obj.updateDynamic("operator")(operator)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(fieldName = fieldName, index = index, logicalOperator = logicalOperator, operator = operator, value = value)
+  
     __obj.asInstanceOf[FilterClause]
   }
 }

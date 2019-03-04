@@ -81,8 +81,7 @@ object ExplanationOfBenefitBenefitBalance {
     term: CodeableConcept = null,
     unit: CodeableConcept = null
   ): ExplanationOfBenefitBenefitBalance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("category")(category)
+    val __obj = js.Dynamic.literal(category = category)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_excluded != null) __obj.updateDynamic("_excluded")(_excluded)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

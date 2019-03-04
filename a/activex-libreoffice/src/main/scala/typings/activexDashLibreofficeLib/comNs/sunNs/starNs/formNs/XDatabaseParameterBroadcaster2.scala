@@ -40,14 +40,8 @@ object XDatabaseParameterBroadcaster2 {
     removeDatabaseParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit],
     removeParameterListener: js.Function1[XDatabaseParameterListener, scala.Unit]
   ): XDatabaseParameterBroadcaster2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addDatabaseParameterListener")(addDatabaseParameterListener)
-    __obj.updateDynamic("addParameterListener")(addParameterListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeDatabaseParameterListener")(removeDatabaseParameterListener)
-    __obj.updateDynamic("removeParameterListener")(removeParameterListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addDatabaseParameterListener = addDatabaseParameterListener, addParameterListener = addParameterListener, queryInterface = queryInterface, release = release, removeDatabaseParameterListener = removeDatabaseParameterListener, removeParameterListener = removeParameterListener)
+  
     __obj.asInstanceOf[XDatabaseParameterBroadcaster2]
   }
 }

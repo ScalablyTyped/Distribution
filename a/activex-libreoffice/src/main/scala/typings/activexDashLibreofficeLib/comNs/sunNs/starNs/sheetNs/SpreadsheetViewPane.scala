@@ -32,21 +32,8 @@ object SpreadsheetViewPane {
     setFirstVisibleColumn: js.Function1[scala.Double, scala.Unit],
     setFirstVisibleRow: js.Function1[scala.Double, scala.Unit]
   ): SpreadsheetViewPane = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FirstVisibleColumn")(FirstVisibleColumn)
-    __obj.updateDynamic("FirstVisibleRow")(FirstVisibleRow)
-    __obj.updateDynamic("ReferredCells")(ReferredCells)
-    __obj.updateDynamic("VisibleRange")(VisibleRange)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getFirstVisibleColumn")(getFirstVisibleColumn)
-    __obj.updateDynamic("getFirstVisibleRow")(getFirstVisibleRow)
-    __obj.updateDynamic("getReferredCells")(getReferredCells)
-    __obj.updateDynamic("getVisibleRange")(getVisibleRange)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setFirstVisibleColumn")(setFirstVisibleColumn)
-    __obj.updateDynamic("setFirstVisibleRow")(setFirstVisibleRow)
+    val __obj = js.Dynamic.literal(FirstVisibleColumn = FirstVisibleColumn, FirstVisibleRow = FirstVisibleRow, ReferredCells = ReferredCells, VisibleRange = VisibleRange, acquire = acquire, getControl = getControl, getFirstVisibleColumn = getFirstVisibleColumn, getFirstVisibleRow = getFirstVisibleRow, getReferredCells = getReferredCells, getVisibleRange = getVisibleRange, queryInterface = queryInterface, release = release, setFirstVisibleColumn = setFirstVisibleColumn, setFirstVisibleRow = setFirstVisibleRow)
+  
     __obj.asInstanceOf[SpreadsheetViewPane]
   }
 }

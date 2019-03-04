@@ -12,10 +12,10 @@ object ^ extends js.Object {
   /**
     * Set the constructor prototype to `BaseError`.
     */
-  def apply[T /* <: stdLib.Error */](`super_`: makeDashErrorLib.Anon_Args[T]): makeDashErrorLib.makeDashErrorMod.makeErrorNs.Constructor[T with makeDashErrorLib.makeDashErrorMod.makeErrorNs.BaseError] = js.native
+  def apply[T /* <: stdLib.Error */](super_ : makeDashErrorLib.Anon_Args[T]): makeDashErrorLib.makeDashErrorMod.makeErrorNs.Constructor[T with makeDashErrorLib.makeDashErrorMod.makeErrorNs.BaseError] = js.native
   /**
     * Create a specialized error instance.
     */
-  def apply[T /* <: stdLib.Error */, K](name: java.lang.String | js.Function, `super_`: K): K with makeDashErrorLib.makeDashErrorMod.makeErrorNs.SpecializedConstructor[T] = js.native
+  def apply[T /* <: stdLib.Error */, K](name: java.lang.String | js.Function, super_ : K): K with makeDashErrorLib.makeDashErrorMod.makeErrorNs.SpecializedConstructor[T] = js.native
 }
 

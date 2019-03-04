@@ -20,11 +20,8 @@ object TextStyleBuilder {
     setFontName: js.Function1[java.lang.String, TextStyleBuilder],
     setFontSize: js.Function1[stdLib.Number, TextStyleBuilder]
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("setColor")(setColor)
-    __obj.updateDynamic("setFontName")(setFontName)
-    __obj.updateDynamic("setFontSize")(setFontSize)
+    val __obj = js.Dynamic.literal(build = build, setColor = setColor, setFontName = setFontName, setFontSize = setFontSize)
+  
     __obj.asInstanceOf[TextStyleBuilder]
   }
 }

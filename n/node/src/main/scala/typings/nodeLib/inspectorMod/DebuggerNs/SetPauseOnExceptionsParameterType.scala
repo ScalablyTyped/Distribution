@@ -15,8 +15,8 @@ trait SetPauseOnExceptionsParameterType extends js.Object {
 object SetPauseOnExceptionsParameterType {
   @scala.inline
   def apply(state: java.lang.String): SetPauseOnExceptionsParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(state = state)
+  
     __obj.asInstanceOf[SetPauseOnExceptionsParameterType]
   }
 }

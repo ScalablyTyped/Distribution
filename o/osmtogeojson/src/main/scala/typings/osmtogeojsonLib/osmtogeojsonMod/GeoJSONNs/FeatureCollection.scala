@@ -12,8 +12,8 @@ trait FeatureCollection extends GeoJSONObject {
 object FeatureCollection {
   @scala.inline
   def apply(features: js.Array[Feature], `type`: java.lang.String): FeatureCollection = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("features")(features)
+    val __obj = js.Dynamic.literal(features = features)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[FeatureCollection]
   }
 }

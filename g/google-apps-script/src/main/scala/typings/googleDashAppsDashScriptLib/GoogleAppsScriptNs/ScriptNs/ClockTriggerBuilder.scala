@@ -47,20 +47,8 @@ object ClockTriggerBuilder {
     onMonthDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
     onWeekDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday, ClockTriggerBuilder]
   ): ClockTriggerBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("after")(after)
-    __obj.updateDynamic("at")(at)
-    __obj.updateDynamic("atDate")(atDate)
-    __obj.updateDynamic("atHour")(atHour)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("everyDays")(everyDays)
-    __obj.updateDynamic("everyHours")(everyHours)
-    __obj.updateDynamic("everyMinutes")(everyMinutes)
-    __obj.updateDynamic("everyWeeks")(everyWeeks)
-    __obj.updateDynamic("inTimezone")(inTimezone)
-    __obj.updateDynamic("nearMinute")(nearMinute)
-    __obj.updateDynamic("onMonthDay")(onMonthDay)
-    __obj.updateDynamic("onWeekDay")(onWeekDay)
+    val __obj = js.Dynamic.literal(after = after, at = at, atDate = atDate, atHour = atHour, create = create, everyDays = everyDays, everyHours = everyHours, everyMinutes = everyMinutes, everyWeeks = everyWeeks, inTimezone = inTimezone, nearMinute = nearMinute, onMonthDay = onMonthDay, onWeekDay = onWeekDay)
+  
     __obj.asInstanceOf[ClockTriggerBuilder]
   }
 }

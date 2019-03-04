@@ -12,8 +12,8 @@ trait Anon_Simplify extends js.Object {
 object Anon_Simplify {
   @scala.inline
   def apply(simplify: scala.Boolean): Anon_Simplify = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("simplify")(simplify)
+    val __obj = js.Dynamic.literal(simplify = simplify)
+  
     __obj.asInstanceOf[Anon_Simplify]
   }
 }

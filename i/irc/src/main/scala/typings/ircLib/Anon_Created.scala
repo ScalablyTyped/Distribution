@@ -22,12 +22,8 @@ object Anon_Created {
     serverName: java.lang.String,
     users: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): Anon_Created = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("serverName")(serverName)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(created = created, key = key, mode = mode, serverName = serverName, users = users)
+  
     __obj.asInstanceOf[Anon_Created]
   }
 }

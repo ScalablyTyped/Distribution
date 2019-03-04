@@ -59,10 +59,8 @@ object IMacroService {
     generateMvcSyntax: js.Function1[/* repeated */ js.Any, scala.Unit],
     generateWebFormsSyntax: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): IMacroService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("generateMacroSyntax")(generateMacroSyntax)
-    __obj.updateDynamic("generateMvcSyntax")(generateMvcSyntax)
-    __obj.updateDynamic("generateWebFormsSyntax")(generateWebFormsSyntax)
+    val __obj = js.Dynamic.literal(generateMacroSyntax = generateMacroSyntax, generateMvcSyntax = generateMvcSyntax, generateWebFormsSyntax = generateWebFormsSyntax)
+  
     __obj.asInstanceOf[IMacroService]
   }
 }

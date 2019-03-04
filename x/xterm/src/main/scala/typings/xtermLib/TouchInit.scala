@@ -42,9 +42,7 @@ object TouchInit {
     screenY: scala.Int | scala.Double = null,
     touchType: TouchType = null
   ): TouchInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(identifier = identifier, target = target)
     if (altitudeAngle != null) __obj.updateDynamic("altitudeAngle")(altitudeAngle.asInstanceOf[js.Any])
     if (azimuthAngle != null) __obj.updateDynamic("azimuthAngle")(azimuthAngle.asInstanceOf[js.Any])
     if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])

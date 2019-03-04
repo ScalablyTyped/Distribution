@@ -42,16 +42,8 @@ object ISuggestionResult {
     subtitle: java.lang.String,
     title: java.lang.String
   ): ISuggestionResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("bestView")(bestView)
-    __obj.updateDynamic("entityId")(entityId)
-    __obj.updateDynamic("entitySubType")(entitySubType)
-    __obj.updateDynamic("entityType")(entityType)
-    __obj.updateDynamic("formattedSuggestion")(formattedSuggestion)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("subtitle")(subtitle)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(address = address, bestView = bestView, entityId = entityId, entitySubType = entitySubType, entityType = entityType, formattedSuggestion = formattedSuggestion, location = location, subtitle = subtitle, title = title)
+  
     __obj.asInstanceOf[ISuggestionResult]
   }
 }

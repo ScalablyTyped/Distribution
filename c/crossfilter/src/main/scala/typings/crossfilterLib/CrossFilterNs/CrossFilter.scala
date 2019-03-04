@@ -24,13 +24,8 @@ object CrossFilter {
     remove: js.Function0[CrossFilter[T]],
     size: js.Function0[scala.Double]
   ): CrossFilter[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GroupAll")(GroupAll)
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("dimension")(dimension)
-    __obj.updateDynamic("groupAll")(groupAll)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(GroupAll = GroupAll, add = add, dimension = dimension, groupAll = groupAll, remove = remove, size = size)
+  
     __obj.asInstanceOf[CrossFilter[T]]
   }
 }

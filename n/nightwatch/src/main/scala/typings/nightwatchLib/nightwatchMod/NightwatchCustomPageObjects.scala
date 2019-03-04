@@ -12,8 +12,8 @@ trait NightwatchCustomPageObjects extends js.Object {
 object NightwatchCustomPageObjects {
   @scala.inline
   def apply(page: org.scalablytyped.runtime.StringDictionary[js.Function0[EnhancedPageObject]]): NightwatchCustomPageObjects = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("page")(page)
+    val __obj = js.Dynamic.literal(page = page)
+  
     __obj.asInstanceOf[NightwatchCustomPageObjects]
   }
 }

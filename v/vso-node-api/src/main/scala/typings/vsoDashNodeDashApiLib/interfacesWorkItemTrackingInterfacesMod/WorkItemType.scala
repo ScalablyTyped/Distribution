@@ -64,19 +64,8 @@ object WorkItemType {
     url: java.lang.String,
     xmlForm: java.lang.String
   ): WorkItemType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("fieldInstances")(fieldInstances)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("icon")(icon)
-    __obj.updateDynamic("isDisabled")(isDisabled)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("referenceName")(referenceName)
-    __obj.updateDynamic("transitions")(transitions)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("xmlForm")(xmlForm)
+    val __obj = js.Dynamic.literal(_links = _links, color = color, description = description, fieldInstances = fieldInstances, fields = fields, icon = icon, isDisabled = isDisabled, name = name, referenceName = referenceName, transitions = transitions, url = url, xmlForm = xmlForm)
+  
     __obj.asInstanceOf[WorkItemType]
   }
 }

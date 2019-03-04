@@ -50,10 +50,7 @@ object StrategyOption {
     userProfileURL: java.lang.String = null,
     userProperty: java.lang.String = null
   ): StrategyOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("clientSecret")(clientSecret)
+    val __obj = js.Dynamic.literal(callbackURL = callbackURL, clientID = clientID, clientSecret = clientSecret)
     if (assignProperty != null) __obj.updateDynamic("assignProperty")(assignProperty)
     if (!js.isUndefined(authInfo)) __obj.updateDynamic("authInfo")(authInfo)
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)

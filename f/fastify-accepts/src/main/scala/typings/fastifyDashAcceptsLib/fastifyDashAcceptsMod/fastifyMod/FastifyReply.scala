@@ -126,16 +126,8 @@ object FastifyReply {
       js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
     ])
   ): FastifyReply[HttpResponse] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requestAccepts")(requestAccepts)
-    __obj.updateDynamic("requestCharset")(requestCharset.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestCharsets")(requestCharsets.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestEncoding")(requestEncoding.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestEncodings")(requestEncodings.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestLanguage")(requestLanguage.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestLanguages")(requestLanguages.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
-    __obj.updateDynamic("requestTypes")(requestTypes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(requestAccepts = requestAccepts, requestCharset = requestCharset.asInstanceOf[js.Any], requestCharsets = requestCharsets.asInstanceOf[js.Any], requestEncoding = requestEncoding.asInstanceOf[js.Any], requestEncodings = requestEncodings.asInstanceOf[js.Any], requestLanguage = requestLanguage.asInstanceOf[js.Any], requestLanguages = requestLanguages.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], requestTypes = requestTypes.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[FastifyReply[HttpResponse]]
   }
 }

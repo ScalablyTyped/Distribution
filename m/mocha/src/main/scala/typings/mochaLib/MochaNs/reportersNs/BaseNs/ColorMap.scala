@@ -68,20 +68,17 @@ object ColorMap {
     suite: scala.Double,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double] = null
   ): ColorMap = {
-    val __obj = js.Dynamic.literal(`bright fail` = `bright fail`, `bright pass` = `bright pass`, `bright yellow` = `bright yellow`, `diff added` = `diff added`, `diff gutter` = `diff gutter`, `diff removed` = `diff removed`, `error message` = `error message`, `error stack` = `error stack`, `error title` = `error title`, `plane crash` = `plane crash`)
-    __obj.updateDynamic("checkmark")(checkmark)
-    __obj.updateDynamic("fail")(fail)
-    __obj.updateDynamic("fast")(fast)
-    __obj.updateDynamic("green")(green)
-    __obj.updateDynamic("light")(light)
-    __obj.updateDynamic("medium")(medium)
-    __obj.updateDynamic("pass")(pass)
-    __obj.updateDynamic("pending")(pending)
-    __obj.updateDynamic("plane")(plane)
-    __obj.updateDynamic("progress")(progress)
-    __obj.updateDynamic("runway")(runway)
-    __obj.updateDynamic("slow")(slow)
-    __obj.updateDynamic("suite")(suite)
+    val __obj = js.Dynamic.literal(checkmark = checkmark, fail = fail, fast = fast, green = green, light = light, medium = medium, pass = pass, pending = pending, plane = plane, progress = progress, runway = runway, slow = slow, suite = suite)
+    __obj.updateDynamic("bright fail")(`bright fail`)
+    __obj.updateDynamic("bright pass")(`bright pass`)
+    __obj.updateDynamic("bright yellow")(`bright yellow`)
+    __obj.updateDynamic("diff added")(`diff added`)
+    __obj.updateDynamic("diff gutter")(`diff gutter`)
+    __obj.updateDynamic("diff removed")(`diff removed`)
+    __obj.updateDynamic("error message")(`error message`)
+    __obj.updateDynamic("error stack")(`error stack`)
+    __obj.updateDynamic("error title")(`error title`)
+    __obj.updateDynamic("plane crash")(`plane crash`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ColorMap]
   }

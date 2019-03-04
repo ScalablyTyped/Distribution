@@ -12,8 +12,8 @@ trait IInclinometerReadingChangedEventArgs extends js.Object {
 object IInclinometerReadingChangedEventArgs {
   @scala.inline
   def apply(reading: InclinometerReading): IInclinometerReadingChangedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("reading")(reading)
+    val __obj = js.Dynamic.literal(reading = reading)
+  
     __obj.asInstanceOf[IInclinometerReadingChangedEventArgs]
   }
 }

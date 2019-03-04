@@ -31,12 +31,8 @@ object Decimal {
     Scale: scala.Double,
     Sign: scala.Double
   ): Decimal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HighValue")(HighValue)
-    __obj.updateDynamic("LowValue")(LowValue)
-    __obj.updateDynamic("MiddleValue")(MiddleValue)
-    __obj.updateDynamic("Scale")(Scale)
-    __obj.updateDynamic("Sign")(Sign)
+    val __obj = js.Dynamic.literal(HighValue = HighValue, LowValue = LowValue, MiddleValue = MiddleValue, Scale = Scale, Sign = Sign)
+  
     __obj.asInstanceOf[Decimal]
   }
 }

@@ -26,13 +26,8 @@ object Anon_Buy {
     request: scala.Double,
     `try`: scala.Double
   ): Anon_Buy = {
-    val __obj = js.Dynamic.literal(`try` = `try`)
-    __obj.updateDynamic("buy")(buy)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("install")(install)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("purchaseRequest")(purchaseRequest)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(buy = buy, get = get, install = install, none = none, purchaseRequest = purchaseRequest, request = request)
+    __obj.updateDynamic("try")(`try`)
     __obj.asInstanceOf[Anon_Buy]
   }
 }

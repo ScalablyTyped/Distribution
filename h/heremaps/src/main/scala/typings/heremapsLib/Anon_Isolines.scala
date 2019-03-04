@@ -14,10 +14,8 @@ trait Anon_Isolines extends js.Object {
 object Anon_Isolines {
   @scala.inline
   def apply(MetaInfo: Anon_Timestamp, View: js.Array[Anon_Result], isolines: js.Array[_]): Anon_Isolines = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MetaInfo")(MetaInfo)
-    __obj.updateDynamic("View")(View)
-    __obj.updateDynamic("isolines")(isolines)
+    val __obj = js.Dynamic.literal(MetaInfo = MetaInfo, View = View, isolines = isolines)
+  
     __obj.asInstanceOf[Anon_Isolines]
   }
 }

@@ -20,9 +20,8 @@ object MediaType {
     `type`: java.lang.String,
     suffix: java.lang.String = null
   ): MediaType = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("subtype")(subtype)
+    val __obj = js.Dynamic.literal(parameters = parameters, subtype = subtype)
+    __obj.updateDynamic("type")(`type`)
     if (suffix != null) __obj.updateDynamic("suffix")(suffix)
     __obj.asInstanceOf[MediaType]
   }

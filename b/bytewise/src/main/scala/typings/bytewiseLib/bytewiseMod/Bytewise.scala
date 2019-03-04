@@ -18,9 +18,7 @@ object Bytewise {
     encode: js.Function1[js.Any, nodeLib.Buffer],
     StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Bytewise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Bytewise]
   }

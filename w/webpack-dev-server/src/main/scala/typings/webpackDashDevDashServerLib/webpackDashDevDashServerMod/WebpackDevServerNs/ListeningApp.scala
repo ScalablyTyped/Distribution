@@ -12,8 +12,8 @@ trait ListeningApp extends js.Object {
 object ListeningApp {
   @scala.inline
   def apply(address: js.Function0[webpackDashDevDashServerLib.Anon_Port]): ListeningApp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
+    val __obj = js.Dynamic.literal(address = address)
+  
     __obj.asInstanceOf[ListeningApp]
   }
 }

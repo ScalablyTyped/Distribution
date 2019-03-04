@@ -14,9 +14,7 @@ trait EventInput extends js.Object {
 object EventInput {
   @scala.inline
   def apply(languageCode: java.lang.String, name: java.lang.String, parameters: js.Any = null): EventInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("languageCode")(languageCode)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(languageCode = languageCode, name = name)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)
     __obj.asInstanceOf[EventInput]
   }

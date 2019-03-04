@@ -42,18 +42,8 @@ object Anon_BootstrapComponents {
     `type`: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileTypeMetadata,
     id: java.lang.String = null
   ): Anon_BootstrapComponents = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bootstrapComponents")(bootstrapComponents)
-    __obj.updateDynamic("declaredDirectives")(declaredDirectives)
-    __obj.updateDynamic("declaredPipes")(declaredPipes)
-    __obj.updateDynamic("entryComponents")(entryComponents)
-    __obj.updateDynamic("exportedDirectives")(exportedDirectives)
-    __obj.updateDynamic("exportedModules")(exportedModules)
-    __obj.updateDynamic("exportedPipes")(exportedPipes)
-    __obj.updateDynamic("importedModules")(importedModules)
-    __obj.updateDynamic("providers")(providers)
-    __obj.updateDynamic("schemas")(schemas)
-    __obj.updateDynamic("transitiveModule")(transitiveModule)
+    val __obj = js.Dynamic.literal(bootstrapComponents = bootstrapComponents, declaredDirectives = declaredDirectives, declaredPipes = declaredPipes, entryComponents = entryComponents, exportedDirectives = exportedDirectives, exportedModules = exportedModules, exportedPipes = exportedPipes, importedModules = importedModules, providers = providers, schemas = schemas, transitiveModule = transitiveModule)
+    __obj.updateDynamic("type")(`type`)
     if (id != null) __obj.updateDynamic("id")(id)
     __obj.asInstanceOf[Anon_BootstrapComponents]
   }

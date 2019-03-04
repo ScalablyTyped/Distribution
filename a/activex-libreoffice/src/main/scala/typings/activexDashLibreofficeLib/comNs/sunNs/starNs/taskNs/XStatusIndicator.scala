@@ -64,15 +64,8 @@ object XStatusIndicator {
     setValue: js.Function1[scala.Double, scala.Unit],
     start: js.Function2[java.lang.String, scala.Double, scala.Unit]
   ): XStatusIndicator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(acquire = acquire, end = end, queryInterface = queryInterface, release = release, reset = reset, setText = setText, setValue = setValue, start = start)
+  
     __obj.asInstanceOf[XStatusIndicator]
   }
 }

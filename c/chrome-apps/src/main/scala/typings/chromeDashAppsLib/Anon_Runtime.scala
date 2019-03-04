@@ -35,10 +35,8 @@ object Anon_Runtime {
     runtimeNs: Anon_ActionType,
     window: chromeDashAppsLib.chromeNs.appNs.ChromeAppWindow
   ): Anon_Runtime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_State")(_State)
-    __obj.updateDynamic("runtimeNs")(runtimeNs)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(_State = _State, runtimeNs = runtimeNs, window = window)
+  
     __obj.asInstanceOf[Anon_Runtime]
   }
 }

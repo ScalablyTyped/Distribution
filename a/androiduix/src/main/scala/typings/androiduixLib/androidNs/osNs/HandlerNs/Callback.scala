@@ -12,8 +12,8 @@ trait Callback extends js.Object {
 object Callback {
   @scala.inline
   def apply(handleMessage: js.Function1[androiduixLib.androidNs.osNs.Message, scala.Boolean]): Callback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleMessage")(handleMessage)
+    val __obj = js.Dynamic.literal(handleMessage = handleMessage)
+  
     __obj.asInstanceOf[Callback]
   }
 }

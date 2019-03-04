@@ -20,11 +20,8 @@ object Anon_Arc {
     Circle: java.lang.String,
     Line: java.lang.String
   ): Anon_Arc = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Arc")(Arc)
-    __obj.updateDynamic("BezierSeed")(BezierSeed)
-    __obj.updateDynamic("Circle")(Circle)
-    __obj.updateDynamic("Line")(Line)
+    val __obj = js.Dynamic.literal(Arc = Arc, BezierSeed = BezierSeed, Circle = Circle, Line = Line)
+  
     __obj.asInstanceOf[Anon_Arc]
   }
 }

@@ -16,8 +16,7 @@ object Anon_Filters {
     filters: js.Array[BluetoothRequestDeviceFilter],
     optionalServices: js.Array[BluetoothServiceUUID] = null
   ): Anon_Filters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filters = filters)
     if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices)
     __obj.asInstanceOf[Anon_Filters]
   }

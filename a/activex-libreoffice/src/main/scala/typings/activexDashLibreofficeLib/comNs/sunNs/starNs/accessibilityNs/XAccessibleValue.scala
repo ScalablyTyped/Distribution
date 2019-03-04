@@ -82,17 +82,8 @@ object XAccessibleValue {
     release: js.Function0[scala.Unit],
     setCurrentValue: js.Function1[js.Any, scala.Boolean]
   ): XAccessibleValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CurrentValue")(CurrentValue)
-    __obj.updateDynamic("MaximumValue")(MaximumValue)
-    __obj.updateDynamic("MinimumValue")(MinimumValue)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getCurrentValue")(getCurrentValue)
-    __obj.updateDynamic("getMaximumValue")(getMaximumValue)
-    __obj.updateDynamic("getMinimumValue")(getMinimumValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setCurrentValue")(setCurrentValue)
+    val __obj = js.Dynamic.literal(CurrentValue = CurrentValue, MaximumValue = MaximumValue, MinimumValue = MinimumValue, acquire = acquire, getCurrentValue = getCurrentValue, getMaximumValue = getMaximumValue, getMinimumValue = getMinimumValue, queryInterface = queryInterface, release = release, setCurrentValue = setCurrentValue)
+  
     __obj.asInstanceOf[XAccessibleValue]
   }
 }

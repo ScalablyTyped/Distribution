@@ -18,8 +18,8 @@ object RejectionInfo {
     reason: java.lang.String,
     `type`: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
   ): RejectionInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(reason = reason)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[RejectionInfo]
   }
 }

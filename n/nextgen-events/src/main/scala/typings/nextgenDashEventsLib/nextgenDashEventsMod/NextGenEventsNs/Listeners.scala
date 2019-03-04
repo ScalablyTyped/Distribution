@@ -20,11 +20,8 @@ object Listeners {
     newListener: js.Array[Func],
     removeListener: js.Array[Func]
   ): Listeners = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("interrupt")(interrupt)
-    __obj.updateDynamic("newListener")(newListener)
-    __obj.updateDynamic("removeListener")(removeListener)
+    val __obj = js.Dynamic.literal(error = error, interrupt = interrupt, newListener = newListener, removeListener = removeListener)
+  
     __obj.asInstanceOf[Listeners]
   }
 }

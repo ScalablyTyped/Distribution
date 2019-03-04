@@ -14,10 +14,8 @@ trait ButtonGroupOption extends js.Object {
 object ButtonGroupOption {
   @scala.inline
   def apply(label: java.lang.String, tooltip: java.lang.String, value: java.lang.String): ButtonGroupOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("tooltip")(tooltip)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(label = label, tooltip = tooltip, value = value)
+  
     __obj.asInstanceOf[ButtonGroupOption]
   }
 }

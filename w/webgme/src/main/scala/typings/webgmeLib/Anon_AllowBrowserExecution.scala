@@ -45,12 +45,8 @@ object Anon_AllowBrowserExecution {
     displayAll: scala.Boolean,
     serverResultTimeout: scala.Double
   ): Anon_AllowBrowserExecution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowBrowserExecution")(allowBrowserExecution)
-    __obj.updateDynamic("allowServerExecution")(allowServerExecution)
-    __obj.updateDynamic("basePaths")(basePaths)
-    __obj.updateDynamic("displayAll")(displayAll)
-    __obj.updateDynamic("serverResultTimeout")(serverResultTimeout)
+    val __obj = js.Dynamic.literal(allowBrowserExecution = allowBrowserExecution, allowServerExecution = allowServerExecution, basePaths = basePaths, displayAll = displayAll, serverResultTimeout = serverResultTimeout)
+  
     __obj.asInstanceOf[Anon_AllowBrowserExecution]
   }
 }

@@ -18,10 +18,8 @@ object PersonResponse {
     person: gapiDotPeopleLib.gapiNs.clientNs.peopleNs.Person,
     requestedResourceName: java.lang.String
   ): PersonResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpStatusCode")(httpStatusCode)
-    __obj.updateDynamic("person")(person)
-    __obj.updateDynamic("requestedResourceName")(requestedResourceName)
+    val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode, person = person, requestedResourceName = requestedResourceName)
+  
     __obj.asInstanceOf[PersonResponse]
   }
 }

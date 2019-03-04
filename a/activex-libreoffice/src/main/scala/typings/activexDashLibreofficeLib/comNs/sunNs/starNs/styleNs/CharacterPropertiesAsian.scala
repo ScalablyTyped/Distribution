@@ -54,16 +54,8 @@ object CharacterPropertiesAsian {
     CharPostureAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.FontSlant,
     CharWeightAsian: scala.Double
   ): CharacterPropertiesAsian = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CharFontCharSetAsian")(CharFontCharSetAsian)
-    __obj.updateDynamic("CharFontFamilyAsian")(CharFontFamilyAsian)
-    __obj.updateDynamic("CharFontNameAsian")(CharFontNameAsian)
-    __obj.updateDynamic("CharFontPitchAsian")(CharFontPitchAsian)
-    __obj.updateDynamic("CharFontStyleNameAsian")(CharFontStyleNameAsian)
-    __obj.updateDynamic("CharHeightAsian")(CharHeightAsian)
-    __obj.updateDynamic("CharLocaleAsian")(CharLocaleAsian)
-    __obj.updateDynamic("CharPostureAsian")(CharPostureAsian)
-    __obj.updateDynamic("CharWeightAsian")(CharWeightAsian)
+    val __obj = js.Dynamic.literal(CharFontCharSetAsian = CharFontCharSetAsian, CharFontFamilyAsian = CharFontFamilyAsian, CharFontNameAsian = CharFontNameAsian, CharFontPitchAsian = CharFontPitchAsian, CharFontStyleNameAsian = CharFontStyleNameAsian, CharHeightAsian = CharHeightAsian, CharLocaleAsian = CharLocaleAsian, CharPostureAsian = CharPostureAsian, CharWeightAsian = CharWeightAsian)
+  
     __obj.asInstanceOf[CharacterPropertiesAsian]
   }
 }

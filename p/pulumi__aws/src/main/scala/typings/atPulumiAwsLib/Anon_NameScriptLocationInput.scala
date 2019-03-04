@@ -16,8 +16,7 @@ object Anon_NameScriptLocationInput {
     scriptLocation: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_NameScriptLocationInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scriptLocation")(scriptLocation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(scriptLocation = scriptLocation.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_NameScriptLocationInput]
   }

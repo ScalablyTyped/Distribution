@@ -78,9 +78,7 @@ object ReactFacebookLoginProps {
     version: java.lang.String = null,
     xfbml: js.UndefOr[scala.Boolean] = js.undefined
   ): ReactFacebookLoginProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appId")(appId)
-    __obj.updateDynamic("callback")(callback)
+    val __obj = js.Dynamic.literal(appId = appId, callback = callback)
     if (authType != null) __obj.updateDynamic("authType")(authType)
     if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad)
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle)

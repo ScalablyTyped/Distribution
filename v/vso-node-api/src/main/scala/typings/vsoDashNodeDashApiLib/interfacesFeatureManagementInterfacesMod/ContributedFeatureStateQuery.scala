@@ -27,10 +27,8 @@ object ContributedFeatureStateQuery {
     featureStates: org.scalablytyped.runtime.StringDictionary[ContributedFeatureState],
     scopeValues: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): ContributedFeatureStateQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("featureIds")(featureIds)
-    __obj.updateDynamic("featureStates")(featureStates)
-    __obj.updateDynamic("scopeValues")(scopeValues)
+    val __obj = js.Dynamic.literal(featureIds = featureIds, featureStates = featureStates, scopeValues = scopeValues)
+  
     __obj.asInstanceOf[ContributedFeatureStateQuery]
   }
 }

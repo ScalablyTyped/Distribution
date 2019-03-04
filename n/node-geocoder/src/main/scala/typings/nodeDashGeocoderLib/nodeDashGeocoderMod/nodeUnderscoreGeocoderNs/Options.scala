@@ -54,8 +54,7 @@ object Options {
     state: java.lang.String = null,
     timeout: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
+    val __obj = js.Dynamic.literal(provider = provider)
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
     if (appCode != null) __obj.updateDynamic("appCode")(appCode)
     if (appId != null) __obj.updateDynamic("appId")(appId)

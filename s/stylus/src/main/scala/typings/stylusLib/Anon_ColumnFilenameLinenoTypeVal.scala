@@ -24,11 +24,9 @@ object Anon_ColumnFilenameLinenoTypeVal {
     `type`: java.lang.String,
     `val`: scala.Double
   ): Anon_ColumnFilenameLinenoTypeVal = {
-    val __obj = js.Dynamic.literal(`type` = `type`, `val` = `val`)
-    __obj.updateDynamic("__type")(__type)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
+    val __obj = js.Dynamic.literal(__type = __type, column = column, filename = filename, lineno = lineno)
+    __obj.updateDynamic("type")(`type`)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_ColumnFilenameLinenoTypeVal]
   }
 }

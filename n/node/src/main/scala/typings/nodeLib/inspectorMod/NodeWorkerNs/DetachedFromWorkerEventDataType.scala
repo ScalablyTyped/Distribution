@@ -15,8 +15,8 @@ trait DetachedFromWorkerEventDataType extends js.Object {
 object DetachedFromWorkerEventDataType {
   @scala.inline
   def apply(sessionId: SessionID): DetachedFromWorkerEventDataType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sessionId")(sessionId)
+    val __obj = js.Dynamic.literal(sessionId = sessionId)
+  
     __obj.asInstanceOf[DetachedFromWorkerEventDataType]
   }
 }

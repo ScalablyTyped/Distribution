@@ -26,9 +26,8 @@ trait EditCookieParams[T, K] extends js.Object {
 object EditCookieParams {
   @scala.inline
   def apply[T, K](filter: T, modification: K): EditCookieParams[T, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    __obj.updateDynamic("modification")(modification.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], modification = modification.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[EditCookieParams[T, K]]
   }
 }

@@ -48,13 +48,8 @@ object SubjectAccessReviewSpec {
     uid: java.lang.String,
     user: java.lang.String
   ): SubjectAccessReviewSpec = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extra")(extra)
-    __obj.updateDynamic("groups")(groups)
-    __obj.updateDynamic("nonResourceAttributes")(nonResourceAttributes)
-    __obj.updateDynamic("resourceAttributes")(resourceAttributes)
-    __obj.updateDynamic("uid")(uid)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(extra = extra, groups = groups, nonResourceAttributes = nonResourceAttributes, resourceAttributes = resourceAttributes, uid = uid, user = user)
+  
     __obj.asInstanceOf[SubjectAccessReviewSpec]
   }
 }

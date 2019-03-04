@@ -19,8 +19,9 @@ object Anon_AddNewValueObject {
     `object`: mobxLib.libTypesObservablesetMod.ObservableSet[T],
     `type`: mobxLib.mobxLibStrings.add
   ): Anon_AddNewValueObject[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_AddNewValueObject[T]]
   }
 }

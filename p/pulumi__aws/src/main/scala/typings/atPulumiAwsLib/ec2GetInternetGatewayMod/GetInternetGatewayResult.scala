@@ -28,12 +28,8 @@ object GetInternetGatewayResult {
     ownerId: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetInternetGatewayResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attachments")(attachments)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("internetGatewayId")(internetGatewayId)
-    __obj.updateDynamic("ownerId")(ownerId)
-    __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(attachments = attachments, id = id, internetGatewayId = internetGatewayId, ownerId = ownerId, tags = tags)
+  
     __obj.asInstanceOf[GetInternetGatewayResult]
   }
 }

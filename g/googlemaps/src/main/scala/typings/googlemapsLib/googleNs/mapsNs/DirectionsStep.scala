@@ -30,16 +30,8 @@ object DirectionsStep {
     transit: TransitDetails,
     travel_mode: TravelMode
   ): DirectionsStep = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("end_location")(end_location)
-    __obj.updateDynamic("instructions")(instructions)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("start_location")(start_location)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("transit")(transit)
-    __obj.updateDynamic("travel_mode")(travel_mode)
+    val __obj = js.Dynamic.literal(distance = distance, duration = duration, end_location = end_location, instructions = instructions, path = path, start_location = start_location, steps = steps, transit = transit, travel_mode = travel_mode)
+  
     __obj.asInstanceOf[DirectionsStep]
   }
 }

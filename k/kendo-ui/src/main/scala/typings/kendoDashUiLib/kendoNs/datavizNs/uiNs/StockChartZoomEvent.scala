@@ -21,10 +21,7 @@ object StockChartZoomEvent {
     delta: scala.Int | scala.Double = null,
     originalEvent: js.Any = null
   ): StockChartZoomEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges)
     if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)

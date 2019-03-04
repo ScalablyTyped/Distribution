@@ -28,15 +28,8 @@ object HashTable {
     table: js.Function0[org.scalablytyped.runtime.StringDictionary[HashTableItem]],
     toArray: js.Function0[js.Array[HashTableItemWithKey]]
   ): HashTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("hasKey")(hasKey)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("toArray")(toArray)
+    val __obj = js.Dynamic.literal(add = add, getCount = getCount, getValue = getValue, hasKey = hasKey, remove = remove, reset = reset, table = table, toArray = toArray)
+  
     __obj.asInstanceOf[HashTable]
   }
 }

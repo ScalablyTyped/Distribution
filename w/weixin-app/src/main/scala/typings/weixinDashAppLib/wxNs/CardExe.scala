@@ -44,9 +44,7 @@ object CardExe {
     outer_str: java.lang.String = null,
     success: js.Function1[js.Any, scala.Unit] = null
   ): CardExe = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(signature = signature, timestamp = timestamp)
     if (code != null) __obj.updateDynamic("code")(code)
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)

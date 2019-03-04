@@ -124,8 +124,7 @@ object AreaRenderingOptions {
     strokeWidth: scala.Int | scala.Double = null,
     toolTip: java.lang.String = null
   ): AreaRenderingOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
+    val __obj = js.Dynamic.literal(key = key)
     if (altImage != null) __obj.updateDynamic("altImage")(altImage)
     if (!js.isUndefined(altImageFill)) __obj.updateDynamic("altImageFill")(altImageFill)
     if (altImageOpacity != null) __obj.updateDynamic("altImageOpacity")(altImageOpacity.asInstanceOf[js.Any])

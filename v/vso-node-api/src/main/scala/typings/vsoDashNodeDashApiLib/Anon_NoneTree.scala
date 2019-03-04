@@ -22,12 +22,8 @@ object Anon_NoneTree {
     workItemLink: scala.Double,
     workItemTypeExtension: scala.Double
   ): Anon_NoneTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("tree")(tree)
-    __obj.updateDynamic("workItem")(workItem)
-    __obj.updateDynamic("workItemLink")(workItemLink)
-    __obj.updateDynamic("workItemTypeExtension")(workItemTypeExtension)
+    val __obj = js.Dynamic.literal(none = none, tree = tree, workItem = workItem, workItemLink = workItemLink, workItemTypeExtension = workItemTypeExtension)
+  
     __obj.asInstanceOf[Anon_NoneTree]
   }
 }

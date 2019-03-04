@@ -18,10 +18,8 @@ object OnScaleGestureListener {
     onScaleBegin: js.Function1[androiduixLib.androidNs.viewNs.ScaleGestureDetector, scala.Boolean],
     onScaleEnd: js.Function1[androiduixLib.androidNs.viewNs.ScaleGestureDetector, scala.Unit]
   ): OnScaleGestureListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onScale")(onScale)
-    __obj.updateDynamic("onScaleBegin")(onScaleBegin)
-    __obj.updateDynamic("onScaleEnd")(onScaleEnd)
+    val __obj = js.Dynamic.literal(onScale = onScale, onScaleBegin = onScaleBegin, onScaleEnd = onScaleEnd)
+  
     __obj.asInstanceOf[OnScaleGestureListener]
   }
 }

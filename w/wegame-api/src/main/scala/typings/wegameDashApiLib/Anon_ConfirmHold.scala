@@ -39,8 +39,7 @@ object Anon_ConfirmHold {
     maxLength: scala.Int | scala.Double = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ConfirmHold = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue)
     if (!js.isUndefined(confirmHold)) __obj.updateDynamic("confirmHold")(confirmHold)
     if (confirmType != null) __obj.updateDynamic("confirmType")(confirmType.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])

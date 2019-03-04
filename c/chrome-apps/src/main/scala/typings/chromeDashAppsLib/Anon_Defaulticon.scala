@@ -31,11 +31,7 @@ object Anon_Defaulticon {
     id: java.lang.String,
     file_access: js.Array[chromeDashAppsLib.chromeDashAppsLibStrings.read] | js.Array[java.lang.String] = null
   ): Anon_Defaulticon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default_icon")(default_icon)
-    __obj.updateDynamic("default_title")(default_title)
-    __obj.updateDynamic("file_filters")(file_filters)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(default_icon = default_icon, default_title = default_title, file_filters = file_filters, id = id)
     if (file_access != null) __obj.updateDynamic("file_access")(file_access.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Defaulticon]
   }

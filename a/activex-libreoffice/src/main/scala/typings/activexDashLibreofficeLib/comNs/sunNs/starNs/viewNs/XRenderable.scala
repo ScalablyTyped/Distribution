@@ -69,13 +69,8 @@ object XRenderable {
       scala.Unit
     ]
   ): XRenderable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getRenderer")(getRenderer)
-    __obj.updateDynamic("getRendererCount")(getRendererCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("render")(render)
+    val __obj = js.Dynamic.literal(acquire = acquire, getRenderer = getRenderer, getRendererCount = getRendererCount, queryInterface = queryInterface, release = release, render = render)
+  
     __obj.asInstanceOf[XRenderable]
   }
 }

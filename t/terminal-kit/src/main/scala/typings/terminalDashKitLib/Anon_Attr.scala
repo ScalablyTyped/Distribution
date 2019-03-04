@@ -18,10 +18,8 @@ object Anon_Attr {
     transparencyChar: java.lang.String,
     transparencyType: scala.Double
   ): Anon_Attr = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    __obj.updateDynamic("transparencyChar")(transparencyChar)
-    __obj.updateDynamic("transparencyType")(transparencyType)
+    val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], transparencyChar = transparencyChar, transparencyType = transparencyType)
+  
     __obj.asInstanceOf[Anon_Attr]
   }
 }

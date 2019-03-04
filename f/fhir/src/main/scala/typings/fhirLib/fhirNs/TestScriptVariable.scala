@@ -101,8 +101,7 @@ object TestScriptVariable {
     path: java.lang.String = null,
     sourceId: id = null
   ): TestScriptVariable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (_defaultValue != null) __obj.updateDynamic("_defaultValue")(_defaultValue)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_expression != null) __obj.updateDynamic("_expression")(_expression)

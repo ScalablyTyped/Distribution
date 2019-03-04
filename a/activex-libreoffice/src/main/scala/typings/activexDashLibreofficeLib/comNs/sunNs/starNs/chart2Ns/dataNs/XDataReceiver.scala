@@ -83,19 +83,8 @@ object XDataReceiver {
       scala.Unit
     ]
   ): XDataReceiver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("RangeHighlighter")(RangeHighlighter)
-    __obj.updateDynamic("UsedData")(UsedData)
-    __obj.updateDynamic("UsedRangeRepresentations")(UsedRangeRepresentations)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("attachDataProvider")(attachDataProvider)
-    __obj.updateDynamic("attachNumberFormatsSupplier")(attachNumberFormatsSupplier)
-    __obj.updateDynamic("getRangeHighlighter")(getRangeHighlighter)
-    __obj.updateDynamic("getUsedData")(getUsedData)
-    __obj.updateDynamic("getUsedRangeRepresentations")(getUsedRangeRepresentations)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setArguments")(setArguments)
+    val __obj = js.Dynamic.literal(RangeHighlighter = RangeHighlighter, UsedData = UsedData, UsedRangeRepresentations = UsedRangeRepresentations, acquire = acquire, attachDataProvider = attachDataProvider, attachNumberFormatsSupplier = attachNumberFormatsSupplier, getRangeHighlighter = getRangeHighlighter, getUsedData = getUsedData, getUsedRangeRepresentations = getUsedRangeRepresentations, queryInterface = queryInterface, release = release, setArguments = setArguments)
+  
     __obj.asInstanceOf[XDataReceiver]
   }
 }

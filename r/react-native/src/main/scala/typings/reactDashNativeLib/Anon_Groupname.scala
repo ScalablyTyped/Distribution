@@ -22,11 +22,8 @@ object Anon_Groupname {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): Anon_Groupname = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("group_name")(group_name)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(group_name = group_name, image = image, location = location, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Groupname]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- sipDotJsLib.typesClientDashContextMod.ClientContext because Inheritance from two classes */ @JSImport("sip.js/types/session", "InviteClientContext")
+- sipDotJsLib.typesClientDashContextMod.ClientContext because Inheritance from two classes. Inlined request, send, receiveResponse, onRequestTimeout, onTransportError */ @JSImport("sip.js/types/session", "InviteClientContext")
 @js.native
 class InviteClientContext protected () extends Session {
   def this(ua: sipDotJsLib.typesUaMod.UA, target: java.lang.String) = this()

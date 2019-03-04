@@ -20,8 +20,7 @@ object CompletionObserver {
     error: js.Function1[/* err */ js.Any, scala.Unit] = null,
     next: js.Function1[/* value */ T, scala.Unit] = null
   ): CompletionObserver[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete)
+    val __obj = js.Dynamic.literal(complete = complete)
     if (!js.isUndefined(closed)) __obj.updateDynamic("closed")(closed)
     if (error != null) __obj.updateDynamic("error")(error)
     if (next != null) __obj.updateDynamic("next")(next)

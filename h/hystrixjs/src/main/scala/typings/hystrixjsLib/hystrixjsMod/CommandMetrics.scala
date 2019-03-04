@@ -38,20 +38,8 @@ object CommandMetrics {
     markTimeout: js.Function0[scala.Unit],
     reset: js.Function0[scala.Unit]
   ): CommandMetrics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addExecutionTime")(addExecutionTime)
-    __obj.updateDynamic("decrementExecutionCount")(decrementExecutionCount)
-    __obj.updateDynamic("getCurrentExecutionCount")(getCurrentExecutionCount)
-    __obj.updateDynamic("getExecutionTime")(getExecutionTime)
-    __obj.updateDynamic("getHealthCounts")(getHealthCounts)
-    __obj.updateDynamic("getRollingCount")(getRollingCount)
-    __obj.updateDynamic("incrementExecutionCount")(incrementExecutionCount)
-    __obj.updateDynamic("markFailure")(markFailure)
-    __obj.updateDynamic("markRejected")(markRejected)
-    __obj.updateDynamic("markShortCircuited")(markShortCircuited)
-    __obj.updateDynamic("markSuccess")(markSuccess)
-    __obj.updateDynamic("markTimeout")(markTimeout)
-    __obj.updateDynamic("reset")(reset)
+    val __obj = js.Dynamic.literal(addExecutionTime = addExecutionTime, decrementExecutionCount = decrementExecutionCount, getCurrentExecutionCount = getCurrentExecutionCount, getExecutionTime = getExecutionTime, getHealthCounts = getHealthCounts, getRollingCount = getRollingCount, incrementExecutionCount = incrementExecutionCount, markFailure = markFailure, markRejected = markRejected, markShortCircuited = markShortCircuited, markSuccess = markSuccess, markTimeout = markTimeout, reset = reset)
+  
     __obj.asInstanceOf[CommandMetrics]
   }
 }

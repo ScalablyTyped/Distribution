@@ -26,9 +26,8 @@ object GeneratorExpression {
     `type`: astDashTypesLib.astDashTypesLibStrings.GeneratorExpression,
     filter: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): GeneratorExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("blocks")(blocks)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(blocks = blocks, body = body)
+    __obj.updateDynamic("type")(`type`)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[GeneratorExpression]
   }

@@ -33,13 +33,8 @@ object JSXElement {
     selfClosing: js.UndefOr[scala.Boolean] = js.undefined,
     trailingComments: js.Array[Comment] = null
   ): JSXElement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("closingElement")(closingElement)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("openingElement")(openingElement)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(children = children, closingElement = closingElement, end = end, loc = loc, openingElement = openingElement, start = start)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing)

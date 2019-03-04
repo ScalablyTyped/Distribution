@@ -51,9 +51,8 @@ object Anon_AltBucketFieldsGenerationKey {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketFieldsGenerationKey = {
-    val __obj = js.Dynamic.literal(`object` = `object`)
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("permissions")(permissions)
+    val __obj = js.Dynamic.literal(bucket = bucket, permissions = permissions)
+    __obj.updateDynamic("object")(`object`)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (generation != null) __obj.updateDynamic("generation")(generation)

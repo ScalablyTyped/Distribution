@@ -28,9 +28,7 @@ object Anon_BodyCommentsDeclareExtends {
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
   ): Anon_BodyCommentsDeclareExtends = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body, id = id.asInstanceOf[js.Any])
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`)

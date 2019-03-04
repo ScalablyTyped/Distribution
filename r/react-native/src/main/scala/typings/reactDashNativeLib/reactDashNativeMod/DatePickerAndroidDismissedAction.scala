@@ -12,8 +12,8 @@ trait DatePickerAndroidDismissedAction extends DatePickerAndroidOpenReturn {
 object DatePickerAndroidDismissedAction {
   @scala.inline
   def apply(action: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction): DatePickerAndroidDismissedAction = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("action")(action)
+    val __obj = js.Dynamic.literal(action = action)
+  
     __obj.asInstanceOf[DatePickerAndroidDismissedAction]
   }
 }

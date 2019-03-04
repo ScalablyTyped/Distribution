@@ -20,13 +20,8 @@ object MessageSignature {
     signature: java.lang.String,
     v: java.lang.String
   ): MessageSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("messageHash")(messageHash)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("s")(s)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("v")(v)
+    val __obj = js.Dynamic.literal(message = message, messageHash = messageHash, r = r, s = s, signature = signature, v = v)
+  
     __obj.asInstanceOf[MessageSignature]
   }
 }

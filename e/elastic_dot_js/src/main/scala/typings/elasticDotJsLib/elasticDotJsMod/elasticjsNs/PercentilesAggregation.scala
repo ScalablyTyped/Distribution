@@ -76,18 +76,8 @@ object PercentilesAggregation {
     scriptValuesSorted: js.Function1[scala.Boolean, PercentilesAggregation],
     toJSON: js.Function0[js.Any]
   ): PercentilesAggregation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("compression")(compression)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("keyed")(keyed)
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("percent")(percent)
-    __obj.updateDynamic("percents")(percents)
-    __obj.updateDynamic("script")(script)
-    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, compression = compression, field = field, keyed = keyed, lang = lang, params = params, percent = percent, percents = percents, script = script, scriptValuesSorted = scriptValuesSorted, toJSON = toJSON)
+  
     __obj.asInstanceOf[PercentilesAggregation]
   }
 }

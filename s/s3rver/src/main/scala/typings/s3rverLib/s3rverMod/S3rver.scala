@@ -43,14 +43,8 @@ object S3rver {
     setPort: js.Function1[scala.Double, S3rver],
     setSilent: js.Function1[scala.Boolean, S3rver]
   ): S3rver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("setDirectory")(setDirectory)
-    __obj.updateDynamic("setErrorDocument")(setErrorDocument)
-    __obj.updateDynamic("setHostname")(setHostname)
-    __obj.updateDynamic("setIndexDocument")(setIndexDocument)
-    __obj.updateDynamic("setPort")(setPort)
-    __obj.updateDynamic("setSilent")(setSilent)
+    val __obj = js.Dynamic.literal(run = run, setDirectory = setDirectory, setErrorDocument = setErrorDocument, setHostname = setHostname, setIndexDocument = setIndexDocument, setPort = setPort, setSilent = setSilent)
+  
     __obj.asInstanceOf[S3rver]
   }
 }

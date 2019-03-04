@@ -18,10 +18,8 @@ object OnPageChangeListener {
     onPageScrolled: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
     onPageSelected: js.Function1[scala.Double, scala.Unit]
   ): OnPageChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onPageScrollStateChanged")(onPageScrollStateChanged)
-    __obj.updateDynamic("onPageScrolled")(onPageScrolled)
-    __obj.updateDynamic("onPageSelected")(onPageSelected)
+    val __obj = js.Dynamic.literal(onPageScrollStateChanged = onPageScrollStateChanged, onPageScrolled = onPageScrolled, onPageSelected = onPageSelected)
+  
     __obj.asInstanceOf[OnPageChangeListener]
   }
 }

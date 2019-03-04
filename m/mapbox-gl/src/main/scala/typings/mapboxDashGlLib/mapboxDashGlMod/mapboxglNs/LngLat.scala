@@ -25,13 +25,8 @@ object LngLat {
     toString: js.Function0[java.lang.String],
     wrap: js.Function0[LngLat]
   ): LngLat = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lat")(lat)
-    __obj.updateDynamic("lng")(lng)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toBounds")(toBounds)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("wrap")(wrap)
+    val __obj = js.Dynamic.literal(lat = lat, lng = lng, toArray = toArray, toBounds = toBounds, toString = toString, wrap = wrap)
+  
     __obj.asInstanceOf[LngLat]
   }
 }

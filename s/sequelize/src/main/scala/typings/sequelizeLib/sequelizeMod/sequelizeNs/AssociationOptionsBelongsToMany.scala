@@ -56,8 +56,7 @@ object AssociationOptionsBelongsToMany {
     timestamps: js.UndefOr[scala.Boolean] = js.undefined,
     uniqueKey: java.lang.String = null
   ): AssociationOptionsBelongsToMany = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("through")(through.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(through = through.asInstanceOf[js.Any])
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
     if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints)
     if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])

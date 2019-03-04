@@ -33,10 +33,7 @@ object ResellernotifyResource {
     ],
     topicName: java.lang.String = null
   ): ResellernotifyResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getwatchdetails")(getwatchdetails)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("unregister")(unregister)
+    val __obj = js.Dynamic.literal(getwatchdetails = getwatchdetails, register = register, unregister = unregister)
     if (topicName != null) __obj.updateDynamic("topicName")(topicName)
     __obj.asInstanceOf[ResellernotifyResource]
   }

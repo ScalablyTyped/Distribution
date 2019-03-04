@@ -24,9 +24,8 @@ trait IPathLine extends IPath {
 object IPathLine {
   @scala.inline
   def apply(end: IPoint, origin: IPoint, `type`: java.lang.String, layer: java.lang.String = null): IPathLine = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(end = end, origin = origin)
+    __obj.updateDynamic("type")(`type`)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     __obj.asInstanceOf[IPathLine]
   }

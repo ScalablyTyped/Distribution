@@ -31,10 +31,7 @@ object ManifestBase {
     homepage_url: java.lang.String = null,
     short_name: java.lang.String = null
   ): ManifestBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("manifest_version")(manifest_version)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(manifest_version = manifest_version, name = name, version = version)
     if (applications != null) __obj.updateDynamic("applications")(applications)
     if (author != null) __obj.updateDynamic("author")(author)
     if (browser_specific_settings != null) __obj.updateDynamic("browser_specific_settings")(browser_specific_settings)

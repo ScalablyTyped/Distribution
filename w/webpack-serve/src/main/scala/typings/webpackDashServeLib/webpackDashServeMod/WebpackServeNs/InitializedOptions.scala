@@ -34,8 +34,7 @@ object InitializedOptions {
     open: OpenOptions | scala.Boolean = null,
     port: scala.Int | scala.Double = null
   ): InitializedOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any])
     if (add != null) __obj.updateDynamic("add")(add)
     if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard)
     if (compiler != null) __obj.updateDynamic("compiler")(compiler)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core/src/di/reflective_provider", "ResolvedReflectiveProvider_")
 @js.native
-class `ResolvedReflectiveProvider_` protected () extends ResolvedReflectiveProvider {
+class ResolvedReflectiveProvider_ protected () extends ResolvedReflectiveProvider {
   def this(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey, resolvedFactories: js.Array[ResolvedReflectiveFactory], multiProvider: scala.Boolean) = this()
   /**
     * A key, usually a `Type<any>`.

@@ -72,17 +72,8 @@ object IgTreeGridRowSelectorsMethods {
     toggleCheckStateById: js.Function1[js.Object, scala.Unit],
     uncheckedRows: js.Function0[js.Array[_]]
   ): IgTreeGridRowSelectorsMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeCheckState")(changeCheckState)
-    __obj.updateDynamic("changeCheckStateById")(changeCheckStateById)
-    __obj.updateDynamic("changeLocale")(changeLocale)
-    __obj.updateDynamic("checkStateById")(checkStateById)
-    __obj.updateDynamic("checkedRows")(checkedRows)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("partiallyCheckedRows")(partiallyCheckedRows)
-    __obj.updateDynamic("toggleCheckState")(toggleCheckState)
-    __obj.updateDynamic("toggleCheckStateById")(toggleCheckStateById)
-    __obj.updateDynamic("uncheckedRows")(uncheckedRows)
+    val __obj = js.Dynamic.literal(changeCheckState = changeCheckState, changeCheckStateById = changeCheckStateById, changeLocale = changeLocale, checkStateById = checkStateById, checkedRows = checkedRows, destroy = destroy, partiallyCheckedRows = partiallyCheckedRows, toggleCheckState = toggleCheckState, toggleCheckStateById = toggleCheckStateById, uncheckedRows = uncheckedRows)
+  
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }
 }

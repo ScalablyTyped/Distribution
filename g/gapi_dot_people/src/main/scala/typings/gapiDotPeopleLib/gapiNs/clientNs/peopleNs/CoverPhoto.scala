@@ -13,9 +13,8 @@ trait CoverPhoto extends js.Object {
 object CoverPhoto {
   @scala.inline
   def apply(metadata: FieldMetadata, url: java.lang.String): CoverPhoto = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(metadata = metadata, url = url)
+  
     __obj.asInstanceOf[CoverPhoto]
   }
 }

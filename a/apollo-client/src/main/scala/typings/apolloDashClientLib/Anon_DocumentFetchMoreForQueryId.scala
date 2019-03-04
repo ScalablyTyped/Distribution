@@ -28,14 +28,7 @@ object Anon_DocumentFetchMoreForQueryId {
     variables: js.Object,
     fetchMoreForQueryId: java.lang.String = null
   ): Anon_DocumentFetchMoreForQueryId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("document")(document)
-    __obj.updateDynamic("isPoll")(isPoll)
-    __obj.updateDynamic("isRefetch")(isRefetch)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("queryId")(queryId)
-    __obj.updateDynamic("storePreviousVariables")(storePreviousVariables)
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(document = document, isPoll = isPoll, isRefetch = isRefetch, metadata = metadata, queryId = queryId, storePreviousVariables = storePreviousVariables, variables = variables)
     if (fetchMoreForQueryId != null) __obj.updateDynamic("fetchMoreForQueryId")(fetchMoreForQueryId)
     __obj.asInstanceOf[Anon_DocumentFetchMoreForQueryId]
   }

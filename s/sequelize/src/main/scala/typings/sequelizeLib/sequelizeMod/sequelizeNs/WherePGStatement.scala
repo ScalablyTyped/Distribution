@@ -18,9 +18,8 @@ trait WherePGStatement extends js.Object {
 object WherePGStatement {
   @scala.inline
   def apply($all: js.Array[java.lang.String | scala.Double], $any: js.Array[java.lang.String | scala.Double]): WherePGStatement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$all")($all)
-    __obj.updateDynamic("$any")($any)
+    val __obj = js.Dynamic.literal($all = $all, $any = $any)
+  
     __obj.asInstanceOf[WherePGStatement]
   }
 }

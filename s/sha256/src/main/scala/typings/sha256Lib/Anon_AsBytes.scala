@@ -12,8 +12,8 @@ trait Anon_AsBytes extends js.Object {
 object Anon_AsBytes {
   @scala.inline
   def apply(asBytes: sha256Lib.sha256LibNumbers.`true`): Anon_AsBytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBytes")(asBytes)
+    val __obj = js.Dynamic.literal(asBytes = asBytes)
+  
     __obj.asInstanceOf[Anon_AsBytes]
   }
 }

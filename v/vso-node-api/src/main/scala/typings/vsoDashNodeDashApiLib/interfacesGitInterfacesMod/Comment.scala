@@ -67,18 +67,8 @@ object Comment {
     publishedDate: stdLib.Date,
     usersLiked: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
   ): Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("commentType")(commentType)
-    __obj.updateDynamic("content")(content)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDeleted")(isDeleted)
-    __obj.updateDynamic("lastContentUpdatedDate")(lastContentUpdatedDate)
-    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    __obj.updateDynamic("parentCommentId")(parentCommentId)
-    __obj.updateDynamic("publishedDate")(publishedDate)
-    __obj.updateDynamic("usersLiked")(usersLiked)
+    val __obj = js.Dynamic.literal(_links = _links, author = author, commentType = commentType, content = content, id = id, isDeleted = isDeleted, lastContentUpdatedDate = lastContentUpdatedDate, lastUpdatedDate = lastUpdatedDate, parentCommentId = parentCommentId, publishedDate = publishedDate, usersLiked = usersLiked)
+  
     __obj.asInstanceOf[Comment]
   }
 }

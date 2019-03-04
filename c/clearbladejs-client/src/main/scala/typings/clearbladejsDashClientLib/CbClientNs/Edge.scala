@@ -30,16 +30,8 @@ object Edge {
     updateEdgeByName: js.Function3[java.lang.String, js.Object, CbCallback, scala.Unit],
     user: APIUser
   ): Edge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("URI")(URI)
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("deleteEdgeByName")(deleteEdgeByName)
-    __obj.updateDynamic("systemKey")(systemKey)
-    __obj.updateDynamic("systemSecret")(systemSecret)
-    __obj.updateDynamic("updateEdgeByName")(updateEdgeByName)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(URI = URI, columns = columns, count = count, create = create, deleteEdgeByName = deleteEdgeByName, systemKey = systemKey, systemSecret = systemSecret, updateEdgeByName = updateEdgeByName, user = user)
+  
     __obj.asInstanceOf[Edge]
   }
 }

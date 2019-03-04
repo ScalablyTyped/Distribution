@@ -79,8 +79,7 @@ object IIconProps {
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
     title: java.lang.String | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` = null
   ): IIconProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
     if (!js.isUndefined(children)) __obj.updateDynamic("children")(children)
     if (className != null) __obj.updateDynamic("className")(className)
     if (color != null) __obj.updateDynamic("color")(color)

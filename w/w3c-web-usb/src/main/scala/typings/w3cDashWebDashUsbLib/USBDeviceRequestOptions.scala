@@ -12,8 +12,8 @@ trait USBDeviceRequestOptions extends js.Object {
 object USBDeviceRequestOptions {
   @scala.inline
   def apply(filters: js.Array[USBDeviceFilter]): USBDeviceRequestOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(filters = filters)
+  
     __obj.asInstanceOf[USBDeviceRequestOptions]
   }
 }

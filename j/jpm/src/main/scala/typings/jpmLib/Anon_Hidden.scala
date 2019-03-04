@@ -26,9 +26,7 @@ object Anon_Hidden {
     onHide: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null,
     onShow: js.Function1[/* toolbar */ jpmLib.sdkUiToolbarMod.Toolbar, _] = null
   ): Anon_Hidden = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(items = items, title = title)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
     if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)

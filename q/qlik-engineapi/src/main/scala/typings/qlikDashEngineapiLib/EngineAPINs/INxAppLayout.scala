@@ -76,19 +76,8 @@ object INxAppLayout {
     qThumbnail: IStaticContentUrl,
     qTitle: java.lang.String
   ): INxAppLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qFileName")(qFileName)
-    __obj.updateDynamic("qHasData")(qHasData)
-    __obj.updateDynamic("qHasScript")(qHasScript)
-    __obj.updateDynamic("qIsOpenedWithoutData")(qIsOpenedWithoutData)
-    __obj.updateDynamic("qLastReloadTime")(qLastReloadTime)
-    __obj.updateDynamic("qLocaleInfo")(qLocaleInfo)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qModified")(qModified)
-    __obj.updateDynamic("qReadOnly")(qReadOnly)
-    __obj.updateDynamic("qStateNames")(qStateNames)
-    __obj.updateDynamic("qThumbnail")(qThumbnail)
-    __obj.updateDynamic("qTitle")(qTitle)
+    val __obj = js.Dynamic.literal(qFileName = qFileName, qHasData = qHasData, qHasScript = qHasScript, qIsOpenedWithoutData = qIsOpenedWithoutData, qLastReloadTime = qLastReloadTime, qLocaleInfo = qLocaleInfo, qMeta = qMeta, qModified = qModified, qReadOnly = qReadOnly, qStateNames = qStateNames, qThumbnail = qThumbnail, qTitle = qTitle)
+  
     __obj.asInstanceOf[INxAppLayout]
   }
 }
