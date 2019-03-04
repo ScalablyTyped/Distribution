@@ -18,10 +18,8 @@ object RepresentedCountryRecord {
     `type`: java.lang.String,
     is_in_european_union: js.UndefOr[scala.Boolean] = js.undefined
   ): RepresentedCountryRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("geoname_id")(geoname_id)
-    __obj.updateDynamic("iso_code")(iso_code)
-    __obj.updateDynamic("names")(names)
+    val __obj = js.Dynamic.literal(geoname_id = geoname_id, iso_code = iso_code, names = names)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(is_in_european_union)) __obj.updateDynamic("is_in_european_union")(is_in_european_union)
     __obj.asInstanceOf[RepresentedCountryRecord]
   }

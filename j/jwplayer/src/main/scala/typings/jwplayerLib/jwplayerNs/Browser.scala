@@ -28,15 +28,8 @@ object Browser {
     safari: scala.Boolean,
     version: Version
   ): Browser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chrome")(chrome)
-    __obj.updateDynamic("edge")(edge)
-    __obj.updateDynamic("facebook")(facebook)
-    __obj.updateDynamic("firefox")(firefox)
-    __obj.updateDynamic("ie")(ie)
-    __obj.updateDynamic("msie")(msie)
-    __obj.updateDynamic("safari")(safari)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(chrome = chrome, edge = edge, facebook = facebook, firefox = firefox, ie = ie, msie = msie, safari = safari, version = version)
+  
     __obj.asInstanceOf[Browser]
   }
 }

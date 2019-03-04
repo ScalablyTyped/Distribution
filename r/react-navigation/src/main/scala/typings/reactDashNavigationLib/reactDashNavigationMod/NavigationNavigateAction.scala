@@ -21,8 +21,8 @@ object NavigationNavigateAction {
     key: java.lang.String = null,
     params: NavigationParams = null
   ): NavigationNavigateAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("routeName")(routeName)
+    val __obj = js.Dynamic.literal(routeName = routeName)
+    __obj.updateDynamic("type")(`type`)
     if (action != null) __obj.updateDynamic("action")(action)
     if (key != null) __obj.updateDynamic("key")(key)
     if (params != null) __obj.updateDynamic("params")(params)

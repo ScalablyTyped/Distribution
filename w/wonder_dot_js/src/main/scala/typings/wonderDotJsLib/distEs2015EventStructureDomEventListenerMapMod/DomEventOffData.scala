@@ -18,10 +18,8 @@ object DomEventOffData {
     domHandler: js.Function,
     eventName: wonderDotJsLib.distEs2015EventObjectEventNameHandlerMod.EEventName
   ): DomEventOffData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dom")(dom)
-    __obj.updateDynamic("domHandler")(domHandler)
-    __obj.updateDynamic("eventName")(eventName)
+    val __obj = js.Dynamic.literal(dom = dom, domHandler = domHandler, eventName = eventName)
+  
     __obj.asInstanceOf[DomEventOffData]
   }
 }

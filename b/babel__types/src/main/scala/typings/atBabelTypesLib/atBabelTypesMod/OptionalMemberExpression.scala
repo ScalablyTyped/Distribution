@@ -32,10 +32,9 @@ object OptionalMemberExpression {
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null
   ): OptionalMemberExpression = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("optional")(optional)
-    __obj.updateDynamic("property")(property)
+    val __obj = js.Dynamic.literal(computed = computed, optional = optional, property = property)
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

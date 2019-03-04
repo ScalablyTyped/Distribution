@@ -19,10 +19,8 @@ object MoveOperation {
     op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.move,
     path: java.lang.String
   ): MoveOperation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("op")(op)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(from = from, op = op, path = path)
+  
     __obj.asInstanceOf[MoveOperation]
   }
 }

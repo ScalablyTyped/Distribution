@@ -58,16 +58,8 @@ object DatasetConfiguration {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     whereConditions: js.Array[WhereCondition]
   ): DatasetConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changeCondition")(changeCondition)
-    __obj.updateDynamic("changeFields")(changeFields)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("dataset")(dataset)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("whereConditions")(whereConditions)
+    val __obj = js.Dynamic.literal(changeCondition = changeCondition, changeFields = changeFields, constructor = constructor, dataWorkspaceId = dataWorkspaceId, dataset = dataset, hasOwnProperty = hasOwnProperty, name = name, propertyIsEnumerable = propertyIsEnumerable, whereConditions = whereConditions)
+  
     __obj.asInstanceOf[DatasetConfiguration]
   }
 }

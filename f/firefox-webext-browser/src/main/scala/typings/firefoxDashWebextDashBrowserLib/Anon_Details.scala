@@ -39,14 +39,8 @@ object Anon_Details {
     settings: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
     unregister: js.Function0[js.Promise[scala.Unit]]
   ): Anon_Details = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onProxyError")(onProxyError)
-    __obj.updateDynamic("onRequest")(onRequest)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("registerProxyScript")(registerProxyScript)
-    __obj.updateDynamic("settings")(settings)
-    __obj.updateDynamic("unregister")(unregister)
+    val __obj = js.Dynamic.literal(onError = onError, onProxyError = onProxyError, onRequest = onRequest, register = register, registerProxyScript = registerProxyScript, settings = settings, unregister = unregister)
+  
     __obj.asInstanceOf[Anon_Details]
   }
 }

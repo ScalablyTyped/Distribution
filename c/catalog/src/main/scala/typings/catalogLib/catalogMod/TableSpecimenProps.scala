@@ -16,8 +16,7 @@ object TableSpecimenProps {
     rows: js.Array[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]],
     columns: js.Array[java.lang.String] = null
   ): TableSpecimenProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rows")(rows)
+    val __obj = js.Dynamic.literal(rows = rows)
     if (columns != null) __obj.updateDynamic("columns")(columns)
     __obj.asInstanceOf[TableSpecimenProps]
   }

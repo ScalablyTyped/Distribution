@@ -14,10 +14,8 @@ trait RealtimeBase extends RestBase {
 object RealtimeBase {
   @scala.inline
   def apply(clientId: java.lang.String, close: js.Function0[scala.Unit], connect: js.Function0[scala.Unit]): RealtimeBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("close")(close)
-    __obj.updateDynamic("connect")(connect)
+    val __obj = js.Dynamic.literal(clientId = clientId, close = close, connect = connect)
+  
     __obj.asInstanceOf[RealtimeBase]
   }
 }

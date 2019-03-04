@@ -60,10 +60,7 @@ object Anon_AltCpksverFeatures {
     userIp: java.lang.String = null,
     volumeIds: java.lang.String = null
   ): Anon_AltCpksverFeatures = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cpksver")(cpksver)
-    __obj.updateDynamic("nonce")(nonce)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(cpksver = cpksver, nonce = nonce, source = source)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (features != null) __obj.updateDynamic("features")(features)
     if (fields != null) __obj.updateDynamic("fields")(fields)

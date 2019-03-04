@@ -16,9 +16,8 @@ object AuthorizationInfo {
     getAuthorizationStatus: js.Function0[AuthorizationStatus],
     getAuthorizationUrl: js.Function0[java.lang.String]
   ): AuthorizationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAuthorizationStatus")(getAuthorizationStatus)
-    __obj.updateDynamic("getAuthorizationUrl")(getAuthorizationUrl)
+    val __obj = js.Dynamic.literal(getAuthorizationStatus = getAuthorizationStatus, getAuthorizationUrl = getAuthorizationUrl)
+  
     __obj.asInstanceOf[AuthorizationInfo]
   }
 }

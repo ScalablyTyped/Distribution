@@ -13,8 +13,7 @@ trait Prompt extends js.Object {
 object Prompt {
   @scala.inline
   def apply(prompt: java.lang.String, echo: js.UndefOr[scala.Boolean] = js.undefined): Prompt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("prompt")(prompt)
+    val __obj = js.Dynamic.literal(prompt = prompt)
     if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo)
     __obj.asInstanceOf[Prompt]
   }

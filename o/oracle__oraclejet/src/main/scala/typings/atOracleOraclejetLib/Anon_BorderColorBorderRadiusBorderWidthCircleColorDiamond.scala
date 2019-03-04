@@ -40,10 +40,7 @@ object Anon_BorderColorBorderRadiusBorderWidthCircleColorDiamond {
     svgStyle: js.Object = null,
     width: scala.Int | scala.Double = null
   ): Anon_BorderColorBorderRadiusBorderWidthCircleColorDiamond = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("borderWidth")(borderWidth)
-    __obj.updateDynamic("opacity")(opacity)
-    __obj.updateDynamic("svgClassName")(svgClassName)
+    val __obj = js.Dynamic.literal(borderWidth = borderWidth, opacity = opacity, svgClassName = svgClassName)
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius)
     if (color != null) __obj.updateDynamic("color")(color)

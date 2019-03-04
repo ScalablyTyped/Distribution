@@ -14,10 +14,8 @@ trait ControlOptions extends js.Object {
 object ControlOptions {
   @scala.inline
   def apply(alwaysRun: scala.Boolean, continueOnError: scala.Boolean, enabled: scala.Boolean): ControlOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("alwaysRun")(alwaysRun)
-    __obj.updateDynamic("continueOnError")(continueOnError)
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal(alwaysRun = alwaysRun, continueOnError = continueOnError, enabled = enabled)
+  
     __obj.asInstanceOf[ControlOptions]
   }
 }

@@ -38,20 +38,8 @@ object Anon_Basis {
     stepAfter: plottableLib.plottableLibStrings.stepAfter,
     stepBefore: plottableLib.plottableLibStrings.stepBefore
   ): Anon_Basis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("basis")(basis)
-    __obj.updateDynamic("basisClosed")(basisClosed)
-    __obj.updateDynamic("basisOpen")(basisOpen)
-    __obj.updateDynamic("bundle")(bundle)
-    __obj.updateDynamic("cardinal")(cardinal)
-    __obj.updateDynamic("cardinalClosed")(cardinalClosed)
-    __obj.updateDynamic("cardinalOpen")(cardinalOpen)
-    __obj.updateDynamic("linear")(linear)
-    __obj.updateDynamic("linearClosed")(linearClosed)
-    __obj.updateDynamic("monotone")(monotone)
-    __obj.updateDynamic("step")(step)
-    __obj.updateDynamic("stepAfter")(stepAfter)
-    __obj.updateDynamic("stepBefore")(stepBefore)
+    val __obj = js.Dynamic.literal(basis = basis, basisClosed = basisClosed, basisOpen = basisOpen, bundle = bundle, cardinal = cardinal, cardinalClosed = cardinalClosed, cardinalOpen = cardinalOpen, linear = linear, linearClosed = linearClosed, monotone = monotone, step = step, stepAfter = stepAfter, stepBefore = stepBefore)
+  
     __obj.asInstanceOf[Anon_Basis]
   }
 }

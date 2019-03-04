@@ -13,8 +13,8 @@ trait Url extends js.Object {
 object Url {
   @scala.inline
   def apply(url: java.lang.String): Url = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
+  
     __obj.asInstanceOf[Url]
   }
 }

@@ -45,9 +45,7 @@ object Anon_AltBucketFieldsKeyNotification {
     userIp: java.lang.String = null,
     userProject: java.lang.String = null
   ): Anon_AltBucketFieldsKeyNotification = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bucket")(bucket)
-    __obj.updateDynamic("notification")(notification)
+    val __obj = js.Dynamic.literal(bucket = bucket, notification = notification)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

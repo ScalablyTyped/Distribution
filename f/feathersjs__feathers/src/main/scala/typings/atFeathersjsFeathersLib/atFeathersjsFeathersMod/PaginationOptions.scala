@@ -13,9 +13,8 @@ trait PaginationOptions extends js.Object {
 object PaginationOptions {
   @scala.inline
   def apply(default: scala.Double, max: scala.Double): PaginationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("default")(default)
-    __obj.updateDynamic("max")(max)
+    val __obj = js.Dynamic.literal(default = default, max = max)
+  
     __obj.asInstanceOf[PaginationOptions]
   }
 }

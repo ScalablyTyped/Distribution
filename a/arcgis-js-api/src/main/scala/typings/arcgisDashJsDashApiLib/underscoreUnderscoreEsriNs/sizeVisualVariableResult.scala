@@ -58,16 +58,8 @@ object sizeVisualVariableResult {
     statistics: SummaryStatisticsResult,
     visualVariables: js.Array[SizeVariable]
   ): sizeVisualVariableResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authoringInfo")(authoringInfo)
-    __obj.updateDynamic("basemapId")(basemapId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultValuesUsed")(defaultValuesUsed)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("sizeScheme")(sizeScheme)
-    __obj.updateDynamic("statistics")(statistics)
-    __obj.updateDynamic("visualVariables")(visualVariables)
+    val __obj = js.Dynamic.literal(authoringInfo = authoringInfo, basemapId = basemapId, constructor = constructor, defaultValuesUsed = defaultValuesUsed, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, sizeScheme = sizeScheme, statistics = statistics, visualVariables = visualVariables)
+  
     __obj.asInstanceOf[sizeVisualVariableResult]
   }
 }

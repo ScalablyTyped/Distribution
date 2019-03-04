@@ -22,9 +22,7 @@ object IopenProductSpecificView {
     fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
   ): IopenProductSpecificView = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("productId")(productId)
-    __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(productId = productId, viewType = viewType.asInstanceOf[js.Any])
     if (complete != null) __obj.updateDynamic("complete")(complete)
     if (fail != null) __obj.updateDynamic("fail")(fail)
     if (success != null) __obj.updateDynamic("success")(success)

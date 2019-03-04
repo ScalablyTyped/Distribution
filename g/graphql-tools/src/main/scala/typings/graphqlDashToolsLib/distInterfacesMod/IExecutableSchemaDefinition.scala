@@ -32,8 +32,7 @@ object IExecutableSchemaDefinition {
     resolvers: (IResolvers[_, TContext]) | (js.Array[IResolvers[_, TContext]]) = null,
     schemaDirectives: org.scalablytyped.runtime.StringDictionary[graphqlDashToolsLib.Anon_Config] = null
   ): IExecutableSchemaDefinition[TContext] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("typeDefs")(typeDefs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(typeDefs = typeDefs.asInstanceOf[js.Any])
     if (!js.isUndefined(allowUndefinedInResolve)) __obj.updateDynamic("allowUndefinedInResolve")(allowUndefinedInResolve)
     if (connectors != null) __obj.updateDynamic("connectors")(connectors)
     if (directiveResolvers != null) __obj.updateDynamic("directiveResolvers")(directiveResolvers)

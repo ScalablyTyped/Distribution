@@ -13,9 +13,8 @@ trait RedirectByRegEx extends js.Object {
 object RedirectByRegEx {
   @scala.inline
   def apply(from: java.lang.String, to: java.lang.String): RedirectByRegEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(from = from, to = to)
+  
     __obj.asInstanceOf[RedirectByRegEx]
   }
 }

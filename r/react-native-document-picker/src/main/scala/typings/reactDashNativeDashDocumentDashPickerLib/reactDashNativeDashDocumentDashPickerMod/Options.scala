@@ -18,8 +18,7 @@ object Options {
     left: scala.Int | scala.Double = null,
     top: scala.Int | scala.Double = null
   ): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filetype")(filetype)
+    val __obj = js.Dynamic.literal(filetype = filetype)
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

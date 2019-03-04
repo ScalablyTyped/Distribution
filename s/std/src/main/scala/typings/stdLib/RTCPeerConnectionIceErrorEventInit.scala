@@ -23,8 +23,7 @@ object RTCPeerConnectionIceErrorEventInit {
     statusText: java.lang.String = null,
     url: java.lang.String = null
   ): RTCPeerConnectionIceErrorEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorCode")(errorCode)
+    val __obj = js.Dynamic.literal(errorCode = errorCode)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

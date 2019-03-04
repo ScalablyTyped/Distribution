@@ -86,19 +86,8 @@ object ASPxClientDiagramCoordinates {
     qualitativeArgument: java.lang.String,
     valueScaleType: java.lang.String
   ): ASPxClientDiagramCoordinates = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetAxisValue")(GetAxisValue)
-    __obj.updateDynamic("IsEmpty")(IsEmpty)
-    __obj.updateDynamic("argumentScaleType")(argumentScaleType)
-    __obj.updateDynamic("axisX")(axisX)
-    __obj.updateDynamic("axisY")(axisY)
-    __obj.updateDynamic("dateTimeArgument")(dateTimeArgument)
-    __obj.updateDynamic("dateTimeValue")(dateTimeValue)
-    __obj.updateDynamic("numericalArgument")(numericalArgument)
-    __obj.updateDynamic("numericalValue")(numericalValue)
-    __obj.updateDynamic("pane")(pane)
-    __obj.updateDynamic("qualitativeArgument")(qualitativeArgument)
-    __obj.updateDynamic("valueScaleType")(valueScaleType)
+    val __obj = js.Dynamic.literal(GetAxisValue = GetAxisValue, IsEmpty = IsEmpty, argumentScaleType = argumentScaleType, axisX = axisX, axisY = axisY, dateTimeArgument = dateTimeArgument, dateTimeValue = dateTimeValue, numericalArgument = numericalArgument, numericalValue = numericalValue, pane = pane, qualitativeArgument = qualitativeArgument, valueScaleType = valueScaleType)
+  
     __obj.asInstanceOf[ASPxClientDiagramCoordinates]
   }
 }

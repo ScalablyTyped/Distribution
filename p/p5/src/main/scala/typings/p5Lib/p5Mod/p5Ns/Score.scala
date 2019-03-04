@@ -46,13 +46,8 @@ object Score {
     start: js.Function0[scala.Unit],
     stop: js.Function0[scala.Unit]
   ): Score = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loop")(loop)
-    __obj.updateDynamic("noLoop")(noLoop)
-    __obj.updateDynamic("pause")(pause)
-    __obj.updateDynamic("setBPM")(setBPM)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("stop")(stop)
+    val __obj = js.Dynamic.literal(loop = loop, noLoop = noLoop, pause = pause, setBPM = setBPM, start = start, stop = stop)
+  
     __obj.asInstanceOf[Score]
   }
 }

@@ -24,8 +24,7 @@ object TableHeaderProps {
     sortBy: java.lang.String = null,
     sortDirection: SortDirectionType = null
   ): TableHeaderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataKey")(dataKey)
+    val __obj = js.Dynamic.literal(dataKey = dataKey)
     if (columnData != null) __obj.updateDynamic("columnData")(columnData)
     if (!js.isUndefined(disableSort)) __obj.updateDynamic("disableSort")(disableSort)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

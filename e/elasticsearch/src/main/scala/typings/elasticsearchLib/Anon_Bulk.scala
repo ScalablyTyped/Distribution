@@ -13,9 +13,8 @@ trait Anon_Bulk extends js.Object {
 object Anon_Bulk {
   @scala.inline
   def apply(bulk: scala.Double, search: scala.Double): Anon_Bulk = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bulk")(bulk)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(bulk = bulk, search = search)
+  
     __obj.asInstanceOf[Anon_Bulk]
   }
 }

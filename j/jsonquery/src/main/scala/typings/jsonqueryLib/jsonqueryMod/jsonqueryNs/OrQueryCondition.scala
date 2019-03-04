@@ -13,8 +13,8 @@ trait OrQueryCondition[T] extends BinaryQueryCondition[T] {
 object OrQueryCondition {
   @scala.inline
   def apply[T]($or: js.Array[Query[T]]): OrQueryCondition[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$or")($or)
+    val __obj = js.Dynamic.literal($or = $or)
+  
     __obj.asInstanceOf[OrQueryCondition[T]]
   }
 }

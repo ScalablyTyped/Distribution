@@ -35,10 +35,7 @@ object VisualObjectInstance {
     propertyTypes: org.scalablytyped.runtime.StringDictionary[ValueTypeDescriptor] = null,
     validValues: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String] | ValidationOptions] = null
   ): VisualObjectInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("objectName")(objectName)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(objectName = objectName, properties = properties, selector = selector)
     if (containerIdx != null) __obj.updateDynamic("containerIdx")(containerIdx.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (propertyTypes != null) __obj.updateDynamic("propertyTypes")(propertyTypes)

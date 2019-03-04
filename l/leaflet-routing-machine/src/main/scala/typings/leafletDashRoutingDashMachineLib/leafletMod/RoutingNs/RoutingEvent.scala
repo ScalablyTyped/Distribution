@@ -13,8 +13,8 @@ trait RoutingEvent extends js.Object {
 object RoutingEvent {
   @scala.inline
   def apply(waypoints: js.Array[Waypoint]): RoutingEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("waypoints")(waypoints)
+    val __obj = js.Dynamic.literal(waypoints = waypoints)
+  
     __obj.asInstanceOf[RoutingEvent]
   }
 }

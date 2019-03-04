@@ -22,9 +22,7 @@ object RouteChildrenProps {
     location: historyLib.historyMod.Location[S],
     `match`: `match`[Params] = null
   ): RouteChildrenProps[Params, S] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(history = history, location = location)
     if (`match` != null) __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[RouteChildrenProps[Params, S]]
   }

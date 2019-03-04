@@ -38,11 +38,8 @@ object ReaderT {
     ],
     of: js.Function1[js.Any, js.Function1[js.Any, fpDashTsLib.libHKTMod.HKT[M, js.Any]]]
   ): ReaderT[M] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ap")(ap)
-    __obj.updateDynamic("chain")(chain)
-    __obj.updateDynamic("map")(map)
-    __obj.updateDynamic("of")(of)
+    val __obj = js.Dynamic.literal(ap = ap, chain = chain, map = map, of = of)
+  
     __obj.asInstanceOf[ReaderT[M]]
   }
 }

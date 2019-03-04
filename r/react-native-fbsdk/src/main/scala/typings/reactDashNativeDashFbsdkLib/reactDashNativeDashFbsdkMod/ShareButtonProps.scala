@@ -19,8 +19,7 @@ trait ShareButtonProps extends js.Object {
 object ShareButtonProps {
   @scala.inline
   def apply(shareContent: ShareContent, style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null): ShareButtonProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shareContent")(shareContent)
+    val __obj = js.Dynamic.literal(shareContent = shareContent)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ShareButtonProps]
   }

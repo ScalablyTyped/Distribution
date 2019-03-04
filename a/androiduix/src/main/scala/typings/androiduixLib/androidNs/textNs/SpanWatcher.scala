@@ -25,10 +25,8 @@ object SpanWatcher {
     onSpanChanged: js.Function6[Spannable, js.Any, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
     onSpanRemoved: js.Function4[Spannable, js.Any, scala.Double, scala.Double, scala.Unit]
   ): SpanWatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onSpanAdded")(onSpanAdded)
-    __obj.updateDynamic("onSpanChanged")(onSpanChanged)
-    __obj.updateDynamic("onSpanRemoved")(onSpanRemoved)
+    val __obj = js.Dynamic.literal(onSpanAdded = onSpanAdded, onSpanChanged = onSpanChanged, onSpanRemoved = onSpanRemoved)
+  
     __obj.asInstanceOf[SpanWatcher]
   }
 }

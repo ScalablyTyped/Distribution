@@ -28,10 +28,7 @@ object Anon_Badge {
     onChange: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ActionButtonState, _] = null,
     onClick: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ActionButton, _] = null
   ): Anon_Badge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("label")(label)
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], id = id, label = label)
     if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
     if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)

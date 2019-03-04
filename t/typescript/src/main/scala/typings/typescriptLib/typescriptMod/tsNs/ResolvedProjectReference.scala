@@ -18,9 +18,7 @@ object ResolvedProjectReference {
     sourceFile: SourceFile,
     references: js.Array[js.UndefOr[ResolvedProjectReference]] = null
   ): ResolvedProjectReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commandLine")(commandLine)
-    __obj.updateDynamic("sourceFile")(sourceFile)
+    val __obj = js.Dynamic.literal(commandLine = commandLine, sourceFile = sourceFile)
     if (references != null) __obj.updateDynamic("references")(references)
     __obj.asInstanceOf[ResolvedProjectReference]
   }

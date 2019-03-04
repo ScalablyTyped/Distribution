@@ -39,12 +39,8 @@ object XBroadcaster {
     release: js.Function0[scala.Unit],
     unlockBroadcasts: js.Function0[scala.Unit]
   ): XBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("lockBroadcasts")(lockBroadcasts)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("unlockBroadcasts")(unlockBroadcasts)
+    val __obj = js.Dynamic.literal(acquire = acquire, lockBroadcasts = lockBroadcasts, queryInterface = queryInterface, release = release, unlockBroadcasts = unlockBroadcasts)
+  
     __obj.asInstanceOf[XBroadcaster]
   }
 }

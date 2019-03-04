@@ -58,13 +58,8 @@ object ShippingsettingsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[ShippingSettings]
     ]
   ): ShippingsettingsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("custombatch")(custombatch)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getsupportedcarriers")(getsupportedcarriers)
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(custombatch = custombatch, get = get, getsupportedcarriers = getsupportedcarriers, list = list, patch = patch, update = update)
+  
     __obj.asInstanceOf[ShippingsettingsResource]
   }
 }

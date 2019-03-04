@@ -20,10 +20,8 @@ object InstrumentationEvent {
     timestamp: scala.Double,
     `type`: java.lang.String
   ): InstrumentationEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("payload")(payload)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, payload = payload, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[InstrumentationEvent]
   }
 }

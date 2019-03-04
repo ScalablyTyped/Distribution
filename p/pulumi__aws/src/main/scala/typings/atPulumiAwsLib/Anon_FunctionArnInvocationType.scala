@@ -20,10 +20,7 @@ object Anon_FunctionArnInvocationType {
     position: scala.Double,
     topicArn: java.lang.String = null
   ): Anon_FunctionArnInvocationType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("functionArn")(functionArn)
-    __obj.updateDynamic("invocationType")(invocationType)
-    __obj.updateDynamic("position")(position)
+    val __obj = js.Dynamic.literal(functionArn = functionArn, invocationType = invocationType, position = position)
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn)
     __obj.asInstanceOf[Anon_FunctionArnInvocationType]
   }

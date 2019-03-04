@@ -12,8 +12,8 @@ trait Anon_FinalCall extends js.Object {
 object Anon_FinalCall {
   @scala.inline
   def apply(finalCall: scala.Boolean): Anon_FinalCall = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("finalCall")(finalCall)
+    val __obj = js.Dynamic.literal(finalCall = finalCall)
+  
     __obj.asInstanceOf[Anon_FinalCall]
   }
 }

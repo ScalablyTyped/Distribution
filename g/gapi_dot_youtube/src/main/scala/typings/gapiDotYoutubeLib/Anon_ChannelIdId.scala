@@ -42,9 +42,7 @@ object Anon_ChannelIdId {
     maxResults: scala.Int | scala.Double = null,
     mine: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ChannelIdId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pagetoken")(pagetoken)
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(pagetoken = pagetoken, part = part)
     if (channelId != null) __obj.updateDynamic("channelId")(channelId)
     if (id != null) __obj.updateDynamic("id")(id)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])

@@ -51,8 +51,7 @@ object ListEntry {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): ListEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("item")(item)
+    val __obj = js.Dynamic.literal(item = item)
     if (_date != null) __obj.updateDynamic("_date")(_date)
     if (_deleted != null) __obj.updateDynamic("_deleted")(_deleted)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)

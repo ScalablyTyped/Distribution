@@ -19,12 +19,8 @@ object Observer {
     onNext: js.Function1[T, scala.Unit],
     toNotifier: js.Function0[js.Function1[/* notification */ Notification[T], scala.Unit]]
   ): Observer[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asObserver")(asObserver)
-    __obj.updateDynamic("onCompleted")(onCompleted)
-    __obj.updateDynamic("onError")(onError)
-    __obj.updateDynamic("onNext")(onNext)
-    __obj.updateDynamic("toNotifier")(toNotifier)
+    val __obj = js.Dynamic.literal(asObserver = asObserver, onCompleted = onCompleted, onError = onError, onNext = onNext, toNotifier = toNotifier)
+  
     __obj.asInstanceOf[Observer[T]]
   }
 }

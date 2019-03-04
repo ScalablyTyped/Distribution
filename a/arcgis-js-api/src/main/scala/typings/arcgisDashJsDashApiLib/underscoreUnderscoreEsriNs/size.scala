@@ -171,11 +171,8 @@ object size {
       arcgisDashJsDashApiLib.IPromise[sizeVisualVariableResult]
     ]
   ): size = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAgeRenderer")(createAgeRenderer)
-    __obj.updateDynamic("createClassBreaksRenderer")(createClassBreaksRenderer)
-    __obj.updateDynamic("createContinuousRenderer")(createContinuousRenderer)
-    __obj.updateDynamic("createVisualVariables")(createVisualVariables)
+    val __obj = js.Dynamic.literal(createAgeRenderer = createAgeRenderer, createClassBreaksRenderer = createClassBreaksRenderer, createContinuousRenderer = createContinuousRenderer, createVisualVariables = createVisualVariables)
+  
     __obj.asInstanceOf[size]
   }
 }

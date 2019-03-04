@@ -47,7 +47,8 @@ object RemovePassword {
     scheme: electronLib.electronLibStrings.basic | electronLib.electronLibStrings.digest | electronLib.electronLibStrings.ntlm | electronLib.electronLibStrings.negotiate = null,
     username: java.lang.String = null
   ): RemovePassword = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (password != null) __obj.updateDynamic("password")(password)
     if (realm != null) __obj.updateDynamic("realm")(realm)

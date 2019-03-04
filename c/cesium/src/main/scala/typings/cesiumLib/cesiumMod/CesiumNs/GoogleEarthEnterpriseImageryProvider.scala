@@ -50,32 +50,8 @@ object GoogleEarthEnterpriseImageryProvider {
     tilingScheme: TilingScheme,
     url: java.lang.String
   ): GoogleEarthEnterpriseImageryProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("credit")(credit)
-    __obj.updateDynamic("defaultAlpha")(defaultAlpha)
-    __obj.updateDynamic("defaultBrightness")(defaultBrightness)
-    __obj.updateDynamic("defaultContrast")(defaultContrast)
-    __obj.updateDynamic("defaultGamma")(defaultGamma)
-    __obj.updateDynamic("defaultHue")(defaultHue)
-    __obj.updateDynamic("defaultMagnificationFilter")(defaultMagnificationFilter)
-    __obj.updateDynamic("defaultMinificationFilter")(defaultMinificationFilter)
-    __obj.updateDynamic("defaultSaturation")(defaultSaturation)
-    __obj.updateDynamic("errorEvent")(errorEvent)
-    __obj.updateDynamic("getTileCredits")(getTileCredits)
-    __obj.updateDynamic("hasAlphaChannel")(hasAlphaChannel)
-    __obj.updateDynamic("maximumLevel")(maximumLevel)
-    __obj.updateDynamic("minimumLevel")(minimumLevel)
-    __obj.updateDynamic("pickFeatures")(pickFeatures)
-    __obj.updateDynamic("proxy")(proxy)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("readyPromise")(readyPromise)
-    __obj.updateDynamic("rectangle")(rectangle)
-    __obj.updateDynamic("requestImage")(requestImage)
-    __obj.updateDynamic("tileDiscardPolicy")(tileDiscardPolicy)
-    __obj.updateDynamic("tileHeight")(tileHeight)
-    __obj.updateDynamic("tileWidth")(tileWidth)
-    __obj.updateDynamic("tilingScheme")(tilingScheme)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(credit = credit, defaultAlpha = defaultAlpha, defaultBrightness = defaultBrightness, defaultContrast = defaultContrast, defaultGamma = defaultGamma, defaultHue = defaultHue, defaultMagnificationFilter = defaultMagnificationFilter, defaultMinificationFilter = defaultMinificationFilter, defaultSaturation = defaultSaturation, errorEvent = errorEvent, getTileCredits = getTileCredits, hasAlphaChannel = hasAlphaChannel, maximumLevel = maximumLevel, minimumLevel = minimumLevel, pickFeatures = pickFeatures, proxy = proxy, ready = ready, readyPromise = readyPromise, rectangle = rectangle, requestImage = requestImage, tileDiscardPolicy = tileDiscardPolicy, tileHeight = tileHeight, tileWidth = tileWidth, tilingScheme = tilingScheme, url = url)
+  
     __obj.asInstanceOf[GoogleEarthEnterpriseImageryProvider]
   }
 }

@@ -13,9 +13,8 @@ trait ImpressionViewableEvent extends js.Object {
 object ImpressionViewableEvent {
   @scala.inline
   def apply(serviceName: java.lang.String, slot: doubleclickDashGptLib.googletagNs.Slot): ImpressionViewableEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serviceName")(serviceName)
-    __obj.updateDynamic("slot")(slot)
+    val __obj = js.Dynamic.literal(serviceName = serviceName, slot = slot)
+  
     __obj.asInstanceOf[ImpressionViewableEvent]
   }
 }

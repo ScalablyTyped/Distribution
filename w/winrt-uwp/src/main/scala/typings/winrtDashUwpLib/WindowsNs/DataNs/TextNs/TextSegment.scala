@@ -16,9 +16,8 @@ trait TextSegment extends js.Object {
 object TextSegment {
   @scala.inline
   def apply(length: scala.Double, startPosition: scala.Double): TextSegment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("length")(length)
-    __obj.updateDynamic("startPosition")(startPosition)
+    val __obj = js.Dynamic.literal(length = length, startPosition = startPosition)
+  
     __obj.asInstanceOf[TextSegment]
   }
 }

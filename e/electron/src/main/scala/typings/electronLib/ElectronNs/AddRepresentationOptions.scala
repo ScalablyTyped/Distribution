@@ -37,8 +37,7 @@ object AddRepresentationOptions {
     height: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): AddRepresentationOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    val __obj = js.Dynamic.literal(scaleFactor = scaleFactor)
     if (buffer != null) __obj.updateDynamic("buffer")(buffer)
     if (dataURL != null) __obj.updateDynamic("dataURL")(dataURL)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

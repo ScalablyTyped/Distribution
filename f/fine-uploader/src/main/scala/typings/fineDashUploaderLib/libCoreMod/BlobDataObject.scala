@@ -19,9 +19,8 @@ trait BlobDataObject extends js.Object {
 object BlobDataObject {
   @scala.inline
   def apply(name: java.lang.String, size: scala.Double): BlobDataObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(name = name, size = size)
+  
     __obj.asInstanceOf[BlobDataObject]
   }
 }

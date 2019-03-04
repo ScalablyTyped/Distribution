@@ -68,31 +68,8 @@ object ITextDocument {
     undo: js.Function0[scala.Unit],
     undoLimit: scala.Double
   ): ITextDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyDisplayUpdates")(applyDisplayUpdates)
-    __obj.updateDynamic("batchDisplayUpdates")(batchDisplayUpdates)
-    __obj.updateDynamic("beginUndoGroup")(beginUndoGroup)
-    __obj.updateDynamic("canCopy")(canCopy)
-    __obj.updateDynamic("canPaste")(canPaste)
-    __obj.updateDynamic("canRedo")(canRedo)
-    __obj.updateDynamic("canUndo")(canUndo)
-    __obj.updateDynamic("caretType")(caretType)
-    __obj.updateDynamic("defaultTabStop")(defaultTabStop)
-    __obj.updateDynamic("endUndoGroup")(endUndoGroup)
-    __obj.updateDynamic("getDefaultCharacterFormat")(getDefaultCharacterFormat)
-    __obj.updateDynamic("getDefaultParagraphFormat")(getDefaultParagraphFormat)
-    __obj.updateDynamic("getRange")(getRange)
-    __obj.updateDynamic("getRangeFromPoint")(getRangeFromPoint)
-    __obj.updateDynamic("getText")(getText)
-    __obj.updateDynamic("loadFromStream")(loadFromStream)
-    __obj.updateDynamic("redo")(redo)
-    __obj.updateDynamic("saveToStream")(saveToStream)
-    __obj.updateDynamic("selection")(selection)
-    __obj.updateDynamic("setDefaultCharacterFormat")(setDefaultCharacterFormat)
-    __obj.updateDynamic("setDefaultParagraphFormat")(setDefaultParagraphFormat)
-    __obj.updateDynamic("setText")(setText)
-    __obj.updateDynamic("undo")(undo)
-    __obj.updateDynamic("undoLimit")(undoLimit)
+    val __obj = js.Dynamic.literal(applyDisplayUpdates = applyDisplayUpdates, batchDisplayUpdates = batchDisplayUpdates, beginUndoGroup = beginUndoGroup, canCopy = canCopy, canPaste = canPaste, canRedo = canRedo, canUndo = canUndo, caretType = caretType, defaultTabStop = defaultTabStop, endUndoGroup = endUndoGroup, getDefaultCharacterFormat = getDefaultCharacterFormat, getDefaultParagraphFormat = getDefaultParagraphFormat, getRange = getRange, getRangeFromPoint = getRangeFromPoint, getText = getText, loadFromStream = loadFromStream, redo = redo, saveToStream = saveToStream, selection = selection, setDefaultCharacterFormat = setDefaultCharacterFormat, setDefaultParagraphFormat = setDefaultParagraphFormat, setText = setText, undo = undo, undoLimit = undoLimit)
+  
     __obj.asInstanceOf[ITextDocument]
   }
 }

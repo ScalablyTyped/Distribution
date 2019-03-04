@@ -40,8 +40,7 @@ object ClientOptions {
     timeout: scala.Int | scala.Double = null,
     tlsOptions: js.Object = null
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (bindCredentials != null) __obj.updateDynamic("bindCredentials")(bindCredentials)
     if (bindDN != null) __obj.updateDynamic("bindDN")(bindDN)
     if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])

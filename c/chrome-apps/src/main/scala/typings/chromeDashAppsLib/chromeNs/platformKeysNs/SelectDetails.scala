@@ -31,9 +31,7 @@ object SelectDetails {
     request: ClientCertificateRequest,
     clientCerts: js.Array[stdLib.ArrayBuffer] = null
   ): SelectDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("interactive")(interactive)
-    __obj.updateDynamic("request")(request)
+    val __obj = js.Dynamic.literal(interactive = interactive, request = request)
     if (clientCerts != null) __obj.updateDynamic("clientCerts")(clientCerts)
     __obj.asInstanceOf[SelectDetails]
   }

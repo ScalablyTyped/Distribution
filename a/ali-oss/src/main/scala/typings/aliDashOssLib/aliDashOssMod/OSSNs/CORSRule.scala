@@ -26,9 +26,7 @@ object CORSRule {
     exposeHeader: java.lang.String | js.Array[java.lang.String] = null,
     maxAgeSeconds: java.lang.String | js.Array[java.lang.String] = null
   ): CORSRule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowedMethod")(allowedMethod.asInstanceOf[js.Any])
-    __obj.updateDynamic("allowedOrigin")(allowedOrigin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowedMethod = allowedMethod.asInstanceOf[js.Any], allowedOrigin = allowedOrigin.asInstanceOf[js.Any])
     if (allowedHeader != null) __obj.updateDynamic("allowedHeader")(allowedHeader.asInstanceOf[js.Any])
     if (exposeHeader != null) __obj.updateDynamic("exposeHeader")(exposeHeader.asInstanceOf[js.Any])
     if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])

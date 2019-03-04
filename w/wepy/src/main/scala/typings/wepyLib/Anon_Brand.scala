@@ -40,21 +40,8 @@ object Anon_Brand {
     windowHeight: scala.Double,
     windowWidth: scala.Double
   ): Anon_Brand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SDKVersion")(SDKVersion)
-    __obj.updateDynamic("brand")(brand)
-    __obj.updateDynamic("fontSizeSetting")(fontSizeSetting)
-    __obj.updateDynamic("language")(language)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("pixelRatio")(pixelRatio)
-    __obj.updateDynamic("platform")(platform)
-    __obj.updateDynamic("screenHeight")(screenHeight)
-    __obj.updateDynamic("screenWidth")(screenWidth)
-    __obj.updateDynamic("statusBarHeight")(statusBarHeight)
-    __obj.updateDynamic("system")(system)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("windowHeight")(windowHeight)
-    __obj.updateDynamic("windowWidth")(windowWidth)
+    val __obj = js.Dynamic.literal(SDKVersion = SDKVersion, brand = brand, fontSizeSetting = fontSizeSetting, language = language, model = model, pixelRatio = pixelRatio, platform = platform, screenHeight = screenHeight, screenWidth = screenWidth, statusBarHeight = statusBarHeight, system = system, version = version, windowHeight = windowHeight, windowWidth = windowWidth)
+  
     __obj.asInstanceOf[Anon_Brand]
   }
 }

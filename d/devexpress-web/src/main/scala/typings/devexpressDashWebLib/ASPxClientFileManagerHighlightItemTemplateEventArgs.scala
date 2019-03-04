@@ -39,11 +39,8 @@ object ASPxClientFileManagerHighlightItemTemplateEventArgs {
     itemName: java.lang.String,
     templateElement: java.lang.String
   ): ASPxClientFileManagerHighlightItemTemplateEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filterValue")(filterValue)
-    __obj.updateDynamic("highlightCssClassName")(highlightCssClassName)
-    __obj.updateDynamic("itemName")(itemName)
-    __obj.updateDynamic("templateElement")(templateElement)
+    val __obj = js.Dynamic.literal(filterValue = filterValue, highlightCssClassName = highlightCssClassName, itemName = itemName, templateElement = templateElement)
+  
     __obj.asInstanceOf[ASPxClientFileManagerHighlightItemTemplateEventArgs]
   }
 }

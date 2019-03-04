@@ -16,8 +16,8 @@ object SampleTransform {
     size: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef,
     `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.sample
   ): SampleTransform = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SampleTransform]
   }
 }

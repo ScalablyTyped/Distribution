@@ -19,9 +19,8 @@ trait AssetDetails extends js.Object {
 object AssetDetails {
   @scala.inline
   def apply(answers: Answers, publisherNaturalIdentifier: java.lang.String): AssetDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("answers")(answers)
-    __obj.updateDynamic("publisherNaturalIdentifier")(publisherNaturalIdentifier)
+    val __obj = js.Dynamic.literal(answers = answers, publisherNaturalIdentifier = publisherNaturalIdentifier)
+  
     __obj.asInstanceOf[AssetDetails]
   }
 }

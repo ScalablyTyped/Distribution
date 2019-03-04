@@ -36,9 +36,8 @@ trait RollingUpdateDeployment extends js.Object {
 object RollingUpdateDeployment {
   @scala.inline
   def apply(maxSurge: scala.Double | java.lang.String, maxUnavailable: scala.Double | java.lang.String): RollingUpdateDeployment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maxSurge")(maxSurge.asInstanceOf[js.Any])
-    __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maxSurge = maxSurge.asInstanceOf[js.Any], maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[RollingUpdateDeployment]
   }
 }

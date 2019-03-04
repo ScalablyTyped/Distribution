@@ -23,10 +23,7 @@ object BookmarkThumbnail {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     url: java.lang.String = null
   ): BookmarkThumbnail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[BookmarkThumbnail]
   }

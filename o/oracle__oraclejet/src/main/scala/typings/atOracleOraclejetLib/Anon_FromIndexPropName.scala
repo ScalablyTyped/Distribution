@@ -20,10 +20,7 @@ object Anon_FromIndexPropName {
     toIndex: scala.Double,
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_FromIndexPropName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromIndex")(fromIndex)
-    __obj.updateDynamic("tile")(tile)
-    __obj.updateDynamic("toIndex")(toIndex)
+    val __obj = js.Dynamic.literal(fromIndex = fromIndex, tile = tile, toIndex = toIndex)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Anon_FromIndexPropName]
   }

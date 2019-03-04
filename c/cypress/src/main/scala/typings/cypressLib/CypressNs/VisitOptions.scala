@@ -57,13 +57,8 @@ object VisitOptions {
     onLoad: js.Function1[mochaLib.Window, scala.Unit],
     timeout: scala.Double
   ): VisitOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("auth")(auth)
-    __obj.updateDynamic("failOnStatusCode")(failOnStatusCode)
-    __obj.updateDynamic("log")(log)
-    __obj.updateDynamic("onBeforeLoad")(onBeforeLoad)
-    __obj.updateDynamic("onLoad")(onLoad)
-    __obj.updateDynamic("timeout")(timeout)
+    val __obj = js.Dynamic.literal(auth = auth, failOnStatusCode = failOnStatusCode, log = log, onBeforeLoad = onBeforeLoad, onLoad = onLoad, timeout = timeout)
+  
     __obj.asInstanceOf[VisitOptions]
   }
 }

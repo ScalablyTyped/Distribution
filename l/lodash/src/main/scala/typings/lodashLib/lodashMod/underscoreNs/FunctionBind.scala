@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FunctionBind extends js.Object {
   @JSName("placeholder")
-  var placeholder_Original: `__` = js.native
+  var placeholder_Original: __ = js.native
   def apply(func: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any, partials: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
     * Creates a lodash object which wraps value to enable implicit method chain sequences.

@@ -132,15 +132,8 @@ object Anon_CallBack {
       scala.Unit
     ]
   ): Anon_CallBack[TEntity] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canvasHeightChanged")(canvasHeightChanged)
-    __obj.updateDynamic("columnVisibilityChanged")(columnVisibilityChanged)
-    __obj.updateDynamic("filterChanged")(filterChanged)
-    __obj.updateDynamic("rowsRendered")(rowsRendered)
-    __obj.updateDynamic("rowsVisibleChanged")(rowsVisibleChanged)
-    __obj.updateDynamic("scrollBegin")(scrollBegin)
-    __obj.updateDynamic("scrollEnd")(scrollEnd)
-    __obj.updateDynamic("sortChanged")(sortChanged)
+    val __obj = js.Dynamic.literal(canvasHeightChanged = canvasHeightChanged, columnVisibilityChanged = columnVisibilityChanged, filterChanged = filterChanged, rowsRendered = rowsRendered, rowsVisibleChanged = rowsVisibleChanged, scrollBegin = scrollBegin, scrollEnd = scrollEnd, sortChanged = sortChanged)
+  
     __obj.asInstanceOf[Anon_CallBack[TEntity]]
   }
 }

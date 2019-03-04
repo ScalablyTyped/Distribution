@@ -28,12 +28,8 @@ object HandleFieldPayload {
     handle: java.lang.String,
     handleKey: java.lang.String
   ): HandleFieldPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("dataID")(dataID)
-    __obj.updateDynamic("fieldKey")(fieldKey)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("handleKey")(handleKey)
+    val __obj = js.Dynamic.literal(args = args, dataID = dataID, fieldKey = fieldKey, handle = handle, handleKey = handleKey)
+  
     __obj.asInstanceOf[HandleFieldPayload]
   }
 }

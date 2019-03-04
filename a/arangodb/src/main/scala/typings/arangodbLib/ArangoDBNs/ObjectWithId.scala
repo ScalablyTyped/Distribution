@@ -18,8 +18,7 @@ object ObjectWithId {
     _id: java.lang.String,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ObjectWithId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_id")(_id)
+    val __obj = js.Dynamic.literal(_id = _id)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ObjectWithId]
   }

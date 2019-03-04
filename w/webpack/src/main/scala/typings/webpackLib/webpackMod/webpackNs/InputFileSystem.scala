@@ -63,13 +63,7 @@ object InputFileSystem {
     statSync: js.Function1[java.lang.String, js.Any],
     purge: js.Function0[scala.Unit] = null
   ): InputFileSystem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("readFile")(readFile)
-    __obj.updateDynamic("readFileSync")(readFileSync)
-    __obj.updateDynamic("readlink")(readlink)
-    __obj.updateDynamic("readlinkSync")(readlinkSync)
-    __obj.updateDynamic("stat")(stat)
-    __obj.updateDynamic("statSync")(statSync)
+    val __obj = js.Dynamic.literal(readFile = readFile, readFileSync = readFileSync, readlink = readlink, readlinkSync = readlinkSync, stat = stat, statSync = statSync)
     if (purge != null) __obj.updateDynamic("purge")(purge)
     __obj.asInstanceOf[InputFileSystem]
   }

@@ -46,12 +46,8 @@ object DeploymentRollback {
     rollbackTo: RollbackConfig,
     updatedAnnotations: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): DeploymentRollback = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("rollbackTo")(rollbackTo)
-    __obj.updateDynamic("updatedAnnotations")(updatedAnnotations)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, name = name, rollbackTo = rollbackTo, updatedAnnotations = updatedAnnotations)
+  
     __obj.asInstanceOf[DeploymentRollback]
   }
 }

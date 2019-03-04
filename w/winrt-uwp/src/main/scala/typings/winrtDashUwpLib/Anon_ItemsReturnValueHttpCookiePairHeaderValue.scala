@@ -16,9 +16,8 @@ object Anon_ItemsReturnValueHttpCookiePairHeaderValue {
     items: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpCookiePairHeaderValue,
     returnValue: scala.Double
   ): Anon_ItemsReturnValueHttpCookiePairHeaderValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
-    __obj.updateDynamic("returnValue")(returnValue)
+    val __obj = js.Dynamic.literal(items = items, returnValue = returnValue)
+  
     __obj.asInstanceOf[Anon_ItemsReturnValueHttpCookiePairHeaderValue]
   }
 }

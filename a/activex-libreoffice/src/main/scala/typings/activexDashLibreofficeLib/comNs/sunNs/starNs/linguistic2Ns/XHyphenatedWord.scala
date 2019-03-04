@@ -66,21 +66,8 @@ object XHyphenatedWord {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XHyphenatedWord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("HyphenPos")(HyphenPos)
-    __obj.updateDynamic("HyphenatedWord")(HyphenatedWord)
-    __obj.updateDynamic("HyphenationPos")(HyphenationPos)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Word")(Word)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getHyphenPos")(getHyphenPos)
-    __obj.updateDynamic("getHyphenatedWord")(getHyphenatedWord)
-    __obj.updateDynamic("getHyphenationPos")(getHyphenationPos)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getWord")(getWord)
-    __obj.updateDynamic("isAlternativeSpelling")(isAlternativeSpelling)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(HyphenPos = HyphenPos, HyphenatedWord = HyphenatedWord, HyphenationPos = HyphenationPos, Locale = Locale, Word = Word, acquire = acquire, getHyphenPos = getHyphenPos, getHyphenatedWord = getHyphenatedWord, getHyphenationPos = getHyphenationPos, getLocale = getLocale, getWord = getWord, isAlternativeSpelling = isAlternativeSpelling, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XHyphenatedWord]
   }
 }

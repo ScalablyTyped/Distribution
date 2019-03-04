@@ -16,7 +16,8 @@ object EncoderOptions {
     `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex,
     alphabet: java.lang.String = null
   ): EncoderOptions = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (alphabet != null) __obj.updateDynamic("alphabet")(alphabet)
     __obj.asInstanceOf[EncoderOptions]
   }

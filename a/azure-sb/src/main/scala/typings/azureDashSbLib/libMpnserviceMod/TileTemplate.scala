@@ -26,14 +26,8 @@ object TileTemplate {
     id: java.lang.String,
     title: java.lang.String
   ): TileTemplate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("backBackgroundImage")(backBackgroundImage)
-    __obj.updateDynamic("backContent")(backContent)
-    __obj.updateDynamic("backTitle")(backTitle)
-    __obj.updateDynamic("backgroundImage")(backgroundImage)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(backBackgroundImage = backBackgroundImage, backContent = backContent, backTitle = backTitle, backgroundImage = backgroundImage, count = count, id = id, title = title)
+  
     __obj.asInstanceOf[TileTemplate]
   }
 }

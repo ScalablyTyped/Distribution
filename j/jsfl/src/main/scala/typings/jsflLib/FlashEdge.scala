@@ -28,15 +28,8 @@ object FlashEdge {
     splitEdge: js.Function1[scala.Double, scala.Unit],
     stroke: FlashStroke
   ): FlashEdge = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cubicSegmentIndex")(cubicSegmentIndex)
-    __obj.updateDynamic("getControl")(getControl)
-    __obj.updateDynamic("getHalfEdge")(getHalfEdge)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isLine")(isLine)
-    __obj.updateDynamic("setControl")(setControl)
-    __obj.updateDynamic("splitEdge")(splitEdge)
-    __obj.updateDynamic("stroke")(stroke)
+    val __obj = js.Dynamic.literal(cubicSegmentIndex = cubicSegmentIndex, getControl = getControl, getHalfEdge = getHalfEdge, id = id, isLine = isLine, setControl = setControl, splitEdge = splitEdge, stroke = stroke)
+  
     __obj.asInstanceOf[FlashEdge]
   }
 }

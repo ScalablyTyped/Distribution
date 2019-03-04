@@ -12,8 +12,8 @@ trait Anon_EnumValuesAnonGlobalWorkflow extends js.Object {
 object Anon_EnumValuesAnonGlobalWorkflow {
   @scala.inline
   def apply(enumValues: Anon_GlobalWorkflow): Anon_EnumValuesAnonGlobalWorkflow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumValues")(enumValues)
+    val __obj = js.Dynamic.literal(enumValues = enumValues)
+  
     __obj.asInstanceOf[Anon_EnumValuesAnonGlobalWorkflow]
   }
 }

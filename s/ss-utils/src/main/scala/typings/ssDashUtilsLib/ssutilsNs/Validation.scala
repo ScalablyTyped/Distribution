@@ -18,10 +18,8 @@ object Validation {
     messages: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     overrideMessages: scala.Boolean
   ): Validation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorFilter")(errorFilter)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("overrideMessages")(overrideMessages)
+    val __obj = js.Dynamic.literal(errorFilter = errorFilter, messages = messages, overrideMessages = overrideMessages)
+  
     __obj.asInstanceOf[Validation]
   }
 }

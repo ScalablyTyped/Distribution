@@ -13,9 +13,8 @@ trait IFormats extends js.Object {
 object IFormats {
   @scala.inline
   def apply(date: IDateFormats, title: ITitleFormats): IFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("date")(date)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(date = date, title = title)
+  
     __obj.asInstanceOf[IFormats]
   }
 }

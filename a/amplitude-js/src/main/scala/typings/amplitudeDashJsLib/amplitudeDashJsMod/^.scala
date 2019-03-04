@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("amplitude-js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val `__VERSION__`: java.lang.String = js.native
+  val __VERSION__ : java.lang.String = js.native
   var options: amplitudeDashJsLib.amplitudeDashJsMod.Config = js.native
   def clearUserProperties(): scala.Unit = js.native
   def getInstance(): amplitudeDashJsLib.amplitudeDashJsMod.AmplitudeClient = js.native

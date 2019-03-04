@@ -20,11 +20,8 @@ object CertificateCreationResult {
     csr: java.lang.String,
     serviceKey: java.lang.String
   ): CertificateCreationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("certificate")(certificate)
-    __obj.updateDynamic("clientKey")(clientKey)
-    __obj.updateDynamic("csr")(csr)
-    __obj.updateDynamic("serviceKey")(serviceKey)
+    val __obj = js.Dynamic.literal(certificate = certificate, clientKey = clientKey, csr = csr, serviceKey = serviceKey)
+  
     __obj.asInstanceOf[CertificateCreationResult]
   }
 }

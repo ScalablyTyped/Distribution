@@ -24,13 +24,8 @@ object FakeClientRect {
     top: scala.Double,
     width: scala.Double
   ): FakeClientRect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("top")(top)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bottom = bottom, height = height, left = left, right = right, top = top, width = width)
+  
     __obj.asInstanceOf[FakeClientRect]
   }
 }

@@ -15,8 +15,8 @@ trait IStripeVersion extends js.Object {
 object IStripeVersion {
   @scala.inline
   def apply(stripe_version: java.lang.String): IStripeVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("stripe_version")(stripe_version)
+    val __obj = js.Dynamic.literal(stripe_version = stripe_version)
+  
     __obj.asInstanceOf[IStripeVersion]
   }
 }

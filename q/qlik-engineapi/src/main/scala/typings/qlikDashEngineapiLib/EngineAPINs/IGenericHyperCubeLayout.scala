@@ -24,14 +24,7 @@ object IGenericHyperCubeLayout {
     qStateName: java.lang.String,
     qError: INxLayoutErrors = null
   ): IGenericHyperCubeLayout = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qExtendsId")(qExtendsId)
-    __obj.updateDynamic("qHasSoftPatches")(qHasSoftPatches)
-    __obj.updateDynamic("qHyperCube")(qHyperCube)
-    __obj.updateDynamic("qInfo")(qInfo)
-    __obj.updateDynamic("qMeta")(qMeta)
-    __obj.updateDynamic("qSelectionInfo")(qSelectionInfo)
-    __obj.updateDynamic("qStateName")(qStateName)
+    val __obj = js.Dynamic.literal(qExtendsId = qExtendsId, qHasSoftPatches = qHasSoftPatches, qHyperCube = qHyperCube, qInfo = qInfo, qMeta = qMeta, qSelectionInfo = qSelectionInfo, qStateName = qStateName)
     if (qError != null) __obj.updateDynamic("qError")(qError)
     __obj.asInstanceOf[IGenericHyperCubeLayout]
   }

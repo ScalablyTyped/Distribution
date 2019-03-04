@@ -26,8 +26,7 @@ object MiniMatchGlob {
     nonegate: js.UndefOr[scala.Boolean] = js.undefined,
     nonull: js.UndefOr[scala.Boolean] = js.undefined
   ): MiniMatchGlob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("glob")(glob)
+    val __obj = js.Dynamic.literal(glob = glob)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot)
     if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate)

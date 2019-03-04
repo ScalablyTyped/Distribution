@@ -28,8 +28,8 @@ object List {
     spread: js.UndefOr[scala.Boolean] = js.undefined,
     start: scala.Int | scala.Double = null
   ): List = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered)
     if (position != null) __obj.updateDynamic("position")(position)

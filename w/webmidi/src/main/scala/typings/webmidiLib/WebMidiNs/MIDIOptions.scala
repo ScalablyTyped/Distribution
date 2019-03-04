@@ -16,8 +16,8 @@ trait MIDIOptions extends js.Object {
 object MIDIOptions {
   @scala.inline
   def apply(sysex: scala.Boolean): MIDIOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sysex")(sysex)
+    val __obj = js.Dynamic.literal(sysex = sysex)
+  
     __obj.asInstanceOf[MIDIOptions]
   }
 }

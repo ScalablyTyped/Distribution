@@ -20,8 +20,7 @@ object Anon_AttributesGeometry {
     id: js.Any = null,
     modelMatrix: cesiumLib.cesiumMod.CesiumNs.Matrix4 = null
   ): Anon_AttributesGeometry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("geometry")(geometry)
+    val __obj = js.Dynamic.literal(geometry = geometry)
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     if (id != null) __obj.updateDynamic("id")(id)
     if (modelMatrix != null) __obj.updateDynamic("modelMatrix")(modelMatrix)

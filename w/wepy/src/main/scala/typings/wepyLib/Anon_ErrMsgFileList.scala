@@ -13,9 +13,8 @@ trait Anon_ErrMsgFileList extends js.Object {
 object Anon_ErrMsgFileList {
   @scala.inline
   def apply(errMsg: java.lang.String, fileList: js.Array[js.Object]): Anon_ErrMsgFileList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errMsg")(errMsg)
-    __obj.updateDynamic("fileList")(fileList)
+    val __obj = js.Dynamic.literal(errMsg = errMsg, fileList = fileList)
+  
     __obj.asInstanceOf[Anon_ErrMsgFileList]
   }
 }

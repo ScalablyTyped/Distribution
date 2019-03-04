@@ -25,7 +25,7 @@ object turndownLibStrings {
   sealed trait Underscore extends js.Object
   
   @js.native
-  sealed trait `__` extends js.Object
+  sealed trait __ extends js.Object
   
   @js.native
   sealed trait a
@@ -530,7 +530,7 @@ object turndownLibStrings {
   @scala.inline
   def Underscore: Underscore = "_".asInstanceOf[Underscore]
   @scala.inline
-  def `__`: `__` = "__".asInstanceOf[`__`]
+  def __ : __ = "__".asInstanceOf[__]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

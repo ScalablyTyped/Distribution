@@ -12,10 +12,8 @@ trait AppointmentToolTipShowingEventArgs extends CancelEventArgs {
 object AppointmentToolTipShowingEventArgs {
   @scala.inline
   def apply(appointment: BootstrapSchedulerAppointment, cancel: scala.Boolean, sender: Control): AppointmentToolTipShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appointment")(appointment)
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(appointment = appointment, cancel = cancel, sender = sender)
+  
     __obj.asInstanceOf[AppointmentToolTipShowingEventArgs]
   }
 }

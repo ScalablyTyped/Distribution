@@ -20,11 +20,8 @@ object GhostTableNestedHeaders {
     nestedHeaders: NestedHeaders,
     widthsCache: js.Array[_]
   ): GhostTableNestedHeaders = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("container")(container)
-    __obj.updateDynamic("nestedHeaders")(nestedHeaders)
-    __obj.updateDynamic("widthsCache")(widthsCache)
+    val __obj = js.Dynamic.literal(clear = clear, container = container, nestedHeaders = nestedHeaders, widthsCache = widthsCache)
+  
     __obj.asInstanceOf[GhostTableNestedHeaders]
   }
 }

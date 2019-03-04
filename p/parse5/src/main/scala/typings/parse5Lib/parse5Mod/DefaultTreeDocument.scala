@@ -23,10 +23,8 @@ object DefaultTreeDocument {
     mode: DocumentMode,
     nodeName: parse5Lib.parse5LibStrings.`#document`
   ): DefaultTreeDocument = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("childNodes")(childNodes)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("nodeName")(nodeName)
+    val __obj = js.Dynamic.literal(childNodes = childNodes, mode = mode, nodeName = nodeName)
+  
     __obj.asInstanceOf[DefaultTreeDocument]
   }
 }

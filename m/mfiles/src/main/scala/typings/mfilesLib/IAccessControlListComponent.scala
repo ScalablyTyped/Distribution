@@ -40,21 +40,8 @@ object IAccessControlListComponent {
     ResetCurrentUserBinding: js.Function0[scala.Unit],
     ResetNamedACLLink: js.Function0[scala.Unit]
   ): IAccessControlListComponent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccessControlEntries")(AccessControlEntries)
-    __obj.updateDynamic("CanDeactivate")(CanDeactivate)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CurrentUserBinding")(CurrentUserBinding)
-    __obj.updateDynamic("GetACEByUserOrGroupID")(GetACEByUserOrGroupID)
-    __obj.updateDynamic("GetACEKeyByUserOrGroupID")(GetACEKeyByUserOrGroupID)
-    __obj.updateDynamic("HasCurrentUser")(HasCurrentUser)
-    __obj.updateDynamic("HasCurrentUserBinding")(HasCurrentUserBinding)
-    __obj.updateDynamic("HasNamedACLLink")(HasNamedACLLink)
-    __obj.updateDynamic("HasPseudoUsers")(HasPseudoUsers)
-    __obj.updateDynamic("IsActive")(IsActive)
-    __obj.updateDynamic("NamedACLLink")(NamedACLLink)
-    __obj.updateDynamic("ResetCurrentUserBinding")(ResetCurrentUserBinding)
-    __obj.updateDynamic("ResetNamedACLLink")(ResetNamedACLLink)
+    val __obj = js.Dynamic.literal(AccessControlEntries = AccessControlEntries, CanDeactivate = CanDeactivate, Clone = Clone, CurrentUserBinding = CurrentUserBinding, GetACEByUserOrGroupID = GetACEByUserOrGroupID, GetACEKeyByUserOrGroupID = GetACEKeyByUserOrGroupID, HasCurrentUser = HasCurrentUser, HasCurrentUserBinding = HasCurrentUserBinding, HasNamedACLLink = HasNamedACLLink, HasPseudoUsers = HasPseudoUsers, IsActive = IsActive, NamedACLLink = NamedACLLink, ResetCurrentUserBinding = ResetCurrentUserBinding, ResetNamedACLLink = ResetNamedACLLink)
+  
     __obj.asInstanceOf[IAccessControlListComponent]
   }
 }

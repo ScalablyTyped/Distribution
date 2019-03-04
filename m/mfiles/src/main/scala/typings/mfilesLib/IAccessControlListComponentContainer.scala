@@ -20,11 +20,8 @@ object IAccessControlListComponentContainer {
     GetKeys: js.Function0[IAccessControlListComponentKeys],
     HasKey: js.Function1[IAccessControlListComponentKey, scala.Boolean]
   ): IAccessControlListComponentContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("At")(At)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("GetKeys")(GetKeys)
-    __obj.updateDynamic("HasKey")(HasKey)
+    val __obj = js.Dynamic.literal(At = At, Count = Count, GetKeys = GetKeys, HasKey = HasKey)
+  
     __obj.asInstanceOf[IAccessControlListComponentContainer]
   }
 }

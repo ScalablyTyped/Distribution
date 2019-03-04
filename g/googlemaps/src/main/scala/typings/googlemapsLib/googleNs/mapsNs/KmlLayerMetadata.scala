@@ -22,12 +22,8 @@ object KmlLayerMetadata {
     name: java.lang.String,
     snippet: java.lang.String
   ): KmlLayerMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("author")(author)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("hasScreenOverlays")(hasScreenOverlays)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("snippet")(snippet)
+    val __obj = js.Dynamic.literal(author = author, description = description, hasScreenOverlays = hasScreenOverlays, name = name, snippet = snippet)
+  
     __obj.asInstanceOf[KmlLayerMetadata]
   }
 }

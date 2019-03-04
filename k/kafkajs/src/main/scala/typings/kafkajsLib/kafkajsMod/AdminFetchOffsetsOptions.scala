@@ -13,9 +13,8 @@ trait AdminFetchOffsetsOptions extends js.Object {
 object AdminFetchOffsetsOptions {
   @scala.inline
   def apply(groupId: java.lang.String, topic: java.lang.String): AdminFetchOffsetsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("topic")(topic)
+    val __obj = js.Dynamic.literal(groupId = groupId, topic = topic)
+  
     __obj.asInstanceOf[AdminFetchOffsetsOptions]
   }
 }

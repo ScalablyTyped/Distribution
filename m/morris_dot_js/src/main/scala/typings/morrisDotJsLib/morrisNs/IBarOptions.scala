@@ -50,12 +50,7 @@ object IBarOptions {
     resize: js.UndefOr[scala.Boolean] = js.undefined,
     stacked: js.UndefOr[scala.Boolean] = js.undefined
   ): IBarOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("xkey")(xkey)
-    __obj.updateDynamic("ykeys")(ykeys)
+    val __obj = js.Dynamic.literal(data = data, element = element, labels = labels, xkey = xkey, ykeys = ykeys)
     if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes)
     if (barColors != null) __obj.updateDynamic("barColors")(barColors)
     if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)

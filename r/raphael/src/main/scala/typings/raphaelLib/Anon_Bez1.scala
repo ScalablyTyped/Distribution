@@ -28,15 +28,8 @@ object Anon_Bez1 {
     x: scala.Double,
     y: scala.Double
   ): Anon_Bez1 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bez1")(bez1)
-    __obj.updateDynamic("bez2")(bez2)
-    __obj.updateDynamic("segment1")(segment1)
-    __obj.updateDynamic("segment2")(segment2)
-    __obj.updateDynamic("t1")(t1)
-    __obj.updateDynamic("t2")(t2)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(bez1 = bez1, bez2 = bez2, segment1 = segment1, segment2 = segment2, t1 = t1, t2 = t2, x = x, y = y)
+  
     __obj.asInstanceOf[Anon_Bez1]
   }
 }

@@ -22,8 +22,8 @@ object TSEnumMember {
     `type`: astDashTypesLib.astDashTypesLibStrings.TSEnumMember,
     initializer: astDashTypesLib.genKindsMod.ExpressionKind = null
   ): TSEnumMember = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (initializer != null) __obj.updateDynamic("initializer")(initializer)
     __obj.asInstanceOf[TSEnumMember]
   }

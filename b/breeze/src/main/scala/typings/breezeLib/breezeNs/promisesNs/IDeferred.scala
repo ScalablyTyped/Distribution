@@ -18,10 +18,8 @@ object IDeferred {
     reject: js.Function1[js.Any, scala.Unit],
     resolve: js.Function1[T, scala.Unit]
   ): IDeferred[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("promise")(promise)
-    __obj.updateDynamic("reject")(reject)
-    __obj.updateDynamic("resolve")(resolve)
+    val __obj = js.Dynamic.literal(promise = promise, reject = reject, resolve = resolve)
+  
     __obj.asInstanceOf[IDeferred[T]]
   }
 }

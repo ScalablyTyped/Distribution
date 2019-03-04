@@ -13,9 +13,8 @@ trait IGeoposition extends js.Object {
 object IGeoposition {
   @scala.inline
   def apply(civicAddress: CivicAddress, coordinate: Geocoordinate): IGeoposition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("civicAddress")(civicAddress)
-    __obj.updateDynamic("coordinate")(coordinate)
+    val __obj = js.Dynamic.literal(civicAddress = civicAddress, coordinate = coordinate)
+  
     __obj.asInstanceOf[IGeoposition]
   }
 }

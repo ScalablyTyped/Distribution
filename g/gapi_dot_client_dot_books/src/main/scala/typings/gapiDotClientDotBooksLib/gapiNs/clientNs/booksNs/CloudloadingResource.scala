@@ -28,10 +28,8 @@ object CloudloadingResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BooksCloudloadingResource]
     ]
   ): CloudloadingResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addBook")(addBook)
-    __obj.updateDynamic("deleteBook")(deleteBook)
-    __obj.updateDynamic("updateBook")(updateBook)
+    val __obj = js.Dynamic.literal(addBook = addBook, deleteBook = deleteBook, updateBook = updateBook)
+  
     __obj.asInstanceOf[CloudloadingResource]
   }
 }

@@ -33,12 +33,8 @@ object XQueriesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XQueriesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Queries")(Queries)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getQueries")(getQueries)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Queries = Queries, acquire = acquire, getQueries = getQueries, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XQueriesSupplier]
   }
 }

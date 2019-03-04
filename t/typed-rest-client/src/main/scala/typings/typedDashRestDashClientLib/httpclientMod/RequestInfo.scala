@@ -14,10 +14,8 @@ trait RequestInfo extends js.Object {
 object RequestInfo {
   @scala.inline
   def apply(httpModule: js.Any, options: nodeLib.httpMod.RequestOptions, parsedUrl: nodeLib.urlMod.Url): RequestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("httpModule")(httpModule)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("parsedUrl")(parsedUrl)
+    val __obj = js.Dynamic.literal(httpModule = httpModule, options = options, parsedUrl = parsedUrl)
+  
     __obj.asInstanceOf[RequestInfo]
   }
 }

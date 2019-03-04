@@ -13,9 +13,8 @@ trait WriteResult extends js.Object {
 object WriteResult {
   @scala.inline
   def apply(buffer: nodeLib.Buffer, bytesWritten: scala.Double): WriteResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer)
-    __obj.updateDynamic("bytesWritten")(bytesWritten)
+    val __obj = js.Dynamic.literal(buffer = buffer, bytesWritten = bytesWritten)
+  
     __obj.asInstanceOf[WriteResult]
   }
 }

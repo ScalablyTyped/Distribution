@@ -41,13 +41,8 @@ object BootstrapUIWidgetExportEventArgs {
     fileName: java.lang.String,
     format: java.lang.String
   ): BootstrapUIWidgetExportEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("element")(element)
-    __obj.updateDynamic("fileName")(fileName)
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(cancel = cancel, component = component, data = data, element = element, fileName = fileName, format = format)
+  
     __obj.asInstanceOf[BootstrapUIWidgetExportEventArgs]
   }
 }

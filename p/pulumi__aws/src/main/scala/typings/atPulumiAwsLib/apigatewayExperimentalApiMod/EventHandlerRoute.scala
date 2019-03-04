@@ -18,10 +18,8 @@ object EventHandlerRoute {
     method: Method,
     path: java.lang.String
   ): EventHandlerRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventHandler")(eventHandler.asInstanceOf[js.Any])
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(eventHandler = eventHandler.asInstanceOf[js.Any], method = method, path = path)
+  
     __obj.asInstanceOf[EventHandlerRoute]
   }
 }

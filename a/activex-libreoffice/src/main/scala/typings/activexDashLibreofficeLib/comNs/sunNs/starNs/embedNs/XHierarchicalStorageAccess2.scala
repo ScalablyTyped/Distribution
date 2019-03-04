@@ -43,11 +43,8 @@ object XHierarchicalStorageAccess2 {
     openStreamElementByHierarchicalName: js.Function2[java.lang.String, scala.Double, XExtendedStorageStream],
     removeStreamElementByHierarchicalName: js.Function1[java.lang.String, scala.Unit]
   ): XHierarchicalStorageAccess2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openEncryptedStreamByHierarchicalName")(openEncryptedStreamByHierarchicalName)
-    __obj.updateDynamic("openEncryptedStreamElementByHierarchicalName")(openEncryptedStreamElementByHierarchicalName)
-    __obj.updateDynamic("openStreamElementByHierarchicalName")(openStreamElementByHierarchicalName)
-    __obj.updateDynamic("removeStreamElementByHierarchicalName")(removeStreamElementByHierarchicalName)
+    val __obj = js.Dynamic.literal(openEncryptedStreamByHierarchicalName = openEncryptedStreamByHierarchicalName, openEncryptedStreamElementByHierarchicalName = openEncryptedStreamElementByHierarchicalName, openStreamElementByHierarchicalName = openStreamElementByHierarchicalName, removeStreamElementByHierarchicalName = removeStreamElementByHierarchicalName)
+  
     __obj.asInstanceOf[XHierarchicalStorageAccess2]
   }
 }

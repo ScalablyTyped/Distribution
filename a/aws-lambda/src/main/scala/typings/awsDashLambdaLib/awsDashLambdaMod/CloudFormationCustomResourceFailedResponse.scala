@@ -23,13 +23,7 @@ object CloudFormationCustomResourceFailedResponse {
     Status: awsDashLambdaLib.awsDashLambdaLibStrings.FAILED,
     Data: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): CloudFormationCustomResourceFailedResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LogicalResourceId")(LogicalResourceId)
-    __obj.updateDynamic("PhysicalResourceId")(PhysicalResourceId)
-    __obj.updateDynamic("Reason")(Reason)
-    __obj.updateDynamic("RequestId")(RequestId)
-    __obj.updateDynamic("StackId")(StackId)
-    __obj.updateDynamic("Status")(Status)
+    val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId, PhysicalResourceId = PhysicalResourceId, Reason = Reason, RequestId = RequestId, StackId = StackId, Status = Status)
     if (Data != null) __obj.updateDynamic("Data")(Data)
     __obj.asInstanceOf[CloudFormationCustomResourceFailedResponse]
   }

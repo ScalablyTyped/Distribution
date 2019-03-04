@@ -32,8 +32,17 @@ object Anon_Allocationsrequiringfileextension {
     `file size in bytes`: scala.Double,
     `minor version number`: scala.Double
   ): Anon_Allocationsrequiringfileextension = {
-    val __obj = js.Dynamic.literal(`allocations requiring file extension` = `allocations requiring file extension`, `blocks allocated` = `blocks allocated`, `blocks freed` = `blocks freed`, `checkpoint size` = `checkpoint size`, `file allocation unit size` = `file allocation unit size`, `file bytes available for reuse` = `file bytes available for reuse`, `file magic number` = `file magic number`, `file major version number` = `file major version number`, `file size in bytes` = `file size in bytes`, `minor version number` = `minor version number`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allocations requiring file extension")(`allocations requiring file extension`)
+    __obj.updateDynamic("blocks allocated")(`blocks allocated`)
+    __obj.updateDynamic("blocks freed")(`blocks freed`)
+    __obj.updateDynamic("checkpoint size")(`checkpoint size`)
+    __obj.updateDynamic("file allocation unit size")(`file allocation unit size`)
+    __obj.updateDynamic("file bytes available for reuse")(`file bytes available for reuse`)
+    __obj.updateDynamic("file magic number")(`file magic number`)
+    __obj.updateDynamic("file major version number")(`file major version number`)
+    __obj.updateDynamic("file size in bytes")(`file size in bytes`)
+    __obj.updateDynamic("minor version number")(`minor version number`)
     __obj.asInstanceOf[Anon_Allocationsrequiringfileextension]
   }
 }

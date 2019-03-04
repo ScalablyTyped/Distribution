@@ -48,9 +48,7 @@ object GenericTransferInfo {
     length: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
     timeout: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): GenericTransferInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("endpoint")(endpoint)
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], endpoint = endpoint)
     if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
     if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)

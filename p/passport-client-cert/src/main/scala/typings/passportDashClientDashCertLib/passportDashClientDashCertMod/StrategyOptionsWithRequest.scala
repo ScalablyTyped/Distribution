@@ -12,8 +12,8 @@ trait StrategyOptionsWithRequest extends js.Object {
 object StrategyOptionsWithRequest {
   @scala.inline
   def apply(passReqToCallback: passportDashClientDashCertLib.passportDashClientDashCertLibNumbers.`true`): StrategyOptionsWithRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback)
+  
     __obj.asInstanceOf[StrategyOptionsWithRequest]
   }
 }

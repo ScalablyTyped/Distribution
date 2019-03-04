@@ -13,8 +13,7 @@ trait Manifest extends js.Object {
 object Manifest {
   @scala.inline
   def apply(server: hapiLib.hapiMod.ServerOptions, register: glueLib.Anon_Plugins = null): Manifest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("server")(server)
+    val __obj = js.Dynamic.literal(server = server)
     if (register != null) __obj.updateDynamic("register")(register)
     __obj.asInstanceOf[Manifest]
   }

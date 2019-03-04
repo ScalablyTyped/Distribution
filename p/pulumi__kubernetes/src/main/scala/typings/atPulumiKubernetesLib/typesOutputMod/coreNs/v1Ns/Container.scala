@@ -172,28 +172,8 @@ object Container {
     volumeMounts: js.Array[VolumeMount],
     workingDir: java.lang.String
   ): Container = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args)
-    __obj.updateDynamic("command")(command)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("envFrom")(envFrom)
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("imagePullPolicy")(imagePullPolicy)
-    __obj.updateDynamic("lifecycle")(lifecycle)
-    __obj.updateDynamic("livenessProbe")(livenessProbe)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("ports")(ports)
-    __obj.updateDynamic("readinessProbe")(readinessProbe)
-    __obj.updateDynamic("resources")(resources)
-    __obj.updateDynamic("securityContext")(securityContext)
-    __obj.updateDynamic("stdin")(stdin)
-    __obj.updateDynamic("stdinOnce")(stdinOnce)
-    __obj.updateDynamic("terminationMessagePath")(terminationMessagePath)
-    __obj.updateDynamic("terminationMessagePolicy")(terminationMessagePolicy)
-    __obj.updateDynamic("tty")(tty)
-    __obj.updateDynamic("volumeDevices")(volumeDevices)
-    __obj.updateDynamic("volumeMounts")(volumeMounts)
-    __obj.updateDynamic("workingDir")(workingDir)
+    val __obj = js.Dynamic.literal(args = args, command = command, env = env, envFrom = envFrom, image = image, imagePullPolicy = imagePullPolicy, lifecycle = lifecycle, livenessProbe = livenessProbe, name = name, ports = ports, readinessProbe = readinessProbe, resources = resources, securityContext = securityContext, stdin = stdin, stdinOnce = stdinOnce, terminationMessagePath = terminationMessagePath, terminationMessagePolicy = terminationMessagePolicy, tty = tty, volumeDevices = volumeDevices, volumeMounts = volumeMounts, workingDir = workingDir)
+  
     __obj.asInstanceOf[Container]
   }
 }

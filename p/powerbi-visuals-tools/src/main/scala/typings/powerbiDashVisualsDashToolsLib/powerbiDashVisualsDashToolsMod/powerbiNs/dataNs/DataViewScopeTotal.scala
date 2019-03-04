@@ -23,10 +23,8 @@ object DataViewScopeTotal {
     key: java.lang.String,
     kind: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
   ): DataViewScopeTotal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exprs")(exprs)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(exprs = exprs, key = key, kind = kind)
+  
     __obj.asInstanceOf[DataViewScopeTotal]
   }
 }

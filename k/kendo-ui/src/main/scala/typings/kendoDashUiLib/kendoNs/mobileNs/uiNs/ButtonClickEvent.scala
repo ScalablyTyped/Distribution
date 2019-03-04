@@ -19,10 +19,7 @@ object ButtonClickEvent {
     button: kendoDashUiLib.JQuery = null,
     target: kendoDashUiLib.JQuery = null
   ): ButtonClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (button != null) __obj.updateDynamic("button")(button)
     if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[ButtonClickEvent]

@@ -18,10 +18,8 @@ object Anon_Charset {
     encode: js.Function2[java.lang.String, java.lang.String, Class_Buffer],
     isEncoding: js.Function1[java.lang.String, scala.Boolean]
   ): Anon_Charset = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("isEncoding")(isEncoding)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, isEncoding = isEncoding)
+  
     __obj.asInstanceOf[Anon_Charset]
   }
 }

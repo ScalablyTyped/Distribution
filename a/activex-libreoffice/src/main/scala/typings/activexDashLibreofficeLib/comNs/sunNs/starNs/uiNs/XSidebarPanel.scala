@@ -28,10 +28,8 @@ object XSidebarPanel {
     getHeightForWidth: js.Function1[scala.Double, LayoutSize],
     getMinimalWidth: js.Function0[scala.Double]
   ): XSidebarPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("MinimalWidth")(MinimalWidth)
-    __obj.updateDynamic("getHeightForWidth")(getHeightForWidth)
-    __obj.updateDynamic("getMinimalWidth")(getMinimalWidth)
+    val __obj = js.Dynamic.literal(MinimalWidth = MinimalWidth, getHeightForWidth = getHeightForWidth, getMinimalWidth = getMinimalWidth)
+  
     __obj.asInstanceOf[XSidebarPanel]
   }
 }

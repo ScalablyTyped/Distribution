@@ -13,9 +13,8 @@ trait BlockedUser extends js.Object {
 object BlockedUser {
   @scala.inline
   def apply(blocked_id: scala.Double, blocked_url: java.lang.String): BlockedUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blocked_id")(blocked_id)
-    __obj.updateDynamic("blocked_url")(blocked_url)
+    val __obj = js.Dynamic.literal(blocked_id = blocked_id, blocked_url = blocked_url)
+  
     __obj.asInstanceOf[BlockedUser]
   }
 }

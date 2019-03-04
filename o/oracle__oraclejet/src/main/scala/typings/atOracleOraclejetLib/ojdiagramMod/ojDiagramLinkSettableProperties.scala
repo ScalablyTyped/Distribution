@@ -45,10 +45,7 @@ object ojDiagramLinkSettableProperties {
     svgStyle: js.Object = null,
     width: scala.Int | scala.Double = null
   ): ojDiagramLinkSettableProperties = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("endNode")(endNode)
-    __obj.updateDynamic("startNode")(startNode)
+    val __obj = js.Dynamic.literal(categories = categories, endNode = endNode, startNode = startNode)
     if (color != null) __obj.updateDynamic("color")(color)
     if (endConnectorType != null) __obj.updateDynamic("endConnectorType")(endConnectorType.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label)

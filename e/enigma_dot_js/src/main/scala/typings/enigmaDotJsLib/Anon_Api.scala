@@ -13,9 +13,8 @@ trait Anon_Api extends js.Object {
 object Anon_Api {
   @scala.inline
   def apply(api: enigmaDotJsLib.enigmaJSNs.IGeneratedAPI, config: js.Any): Anon_Api = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("api")(api)
-    __obj.updateDynamic("config")(config)
+    val __obj = js.Dynamic.literal(api = api, config = config)
+  
     __obj.asInstanceOf[Anon_Api]
   }
 }

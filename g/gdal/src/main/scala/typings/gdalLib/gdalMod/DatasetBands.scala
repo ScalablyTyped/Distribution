@@ -27,13 +27,8 @@ object DatasetBands {
       js.Array[js.Any]
     ]
   ): DatasetBands = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("ds")(ds)
-    __obj.updateDynamic("forEach")(forEach)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(count = count, create = create, ds = ds, forEach = forEach, get = get, map = map)
+  
     __obj.asInstanceOf[DatasetBands]
   }
 }

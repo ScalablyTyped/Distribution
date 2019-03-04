@@ -69,9 +69,7 @@ object JobArgs {
     securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): JobArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (allocatedCapacity != null) __obj.updateDynamic("allocatedCapacity")(allocatedCapacity.asInstanceOf[js.Any])
     if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
     if (defaultArguments != null) __obj.updateDynamic("defaultArguments")(defaultArguments.asInstanceOf[js.Any])

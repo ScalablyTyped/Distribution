@@ -22,12 +22,8 @@ object Anon_Delete {
     Version: scala.Double,
     Write: scala.Boolean
   ): Anon_Delete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Delete")(Delete)
-    __obj.updateDynamic("Read")(Read)
-    __obj.updateDynamic("RetentionPolicy")(RetentionPolicy)
-    __obj.updateDynamic("Version")(Version)
-    __obj.updateDynamic("Write")(Write)
+    val __obj = js.Dynamic.literal(Delete = Delete, Read = Read, RetentionPolicy = RetentionPolicy, Version = Version, Write = Write)
+  
     __obj.asInstanceOf[Anon_Delete]
   }
 }

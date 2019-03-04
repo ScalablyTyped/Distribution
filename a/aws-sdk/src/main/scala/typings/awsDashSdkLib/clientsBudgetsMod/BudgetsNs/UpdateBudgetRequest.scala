@@ -19,9 +19,8 @@ trait UpdateBudgetRequest extends js.Object {
 object UpdateBudgetRequest {
   @scala.inline
   def apply(AccountId: AccountId, NewBudget: Budget): UpdateBudgetRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AccountId")(AccountId)
-    __obj.updateDynamic("NewBudget")(NewBudget)
+    val __obj = js.Dynamic.literal(AccountId = AccountId, NewBudget = NewBudget)
+  
     __obj.asInstanceOf[UpdateBudgetRequest]
   }
 }

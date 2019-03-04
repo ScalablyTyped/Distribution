@@ -22,12 +22,8 @@ object Link {
     rel: js.Function1[java.lang.String, Reference],
     set: js.Function1[Reference, Reference]
   ): Link = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("has")(has)
-    __obj.updateDynamic("refs")(refs)
-    __obj.updateDynamic("rel")(rel)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(get = get, has = has, refs = refs, rel = rel, set = set)
+  
     __obj.asInstanceOf[Link]
   }
 }

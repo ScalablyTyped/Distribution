@@ -25,13 +25,8 @@ object UserInfo {
     nickName: java.lang.String,
     province: java.lang.String
   ): UserInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatarUrl")(avatarUrl)
-    __obj.updateDynamic("city")(city)
-    __obj.updateDynamic("country")(country)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("nickName")(nickName)
-    __obj.updateDynamic("province")(province)
+    val __obj = js.Dynamic.literal(avatarUrl = avatarUrl, city = city, country = country, gender = gender, nickName = nickName, province = province)
+  
     __obj.asInstanceOf[UserInfo]
   }
 }

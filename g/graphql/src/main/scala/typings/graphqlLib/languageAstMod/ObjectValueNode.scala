@@ -20,9 +20,7 @@ object ObjectValueNode {
     kind: graphqlLib.graphqlLibStrings.ObjectValue,
     loc: Location = null
   ): ObjectValueNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(fields = fields, kind = kind)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[ObjectValueNode]
   }

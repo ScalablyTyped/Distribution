@@ -28,15 +28,8 @@ object ISmsDevice {
     onsmsmessagereceived: js.Any,
     sendMessageAsync: js.Function1[ISmsMessage, SendSmsMessageOperation]
   ): ISmsDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountPhoneNumber")(accountPhoneNumber)
-    __obj.updateDynamic("calculateLength")(calculateLength)
-    __obj.updateDynamic("cellularClass")(cellularClass)
-    __obj.updateDynamic("deviceStatus")(deviceStatus)
-    __obj.updateDynamic("messageStore")(messageStore)
-    __obj.updateDynamic("onsmsdevicestatuschanged")(onsmsdevicestatuschanged)
-    __obj.updateDynamic("onsmsmessagereceived")(onsmsmessagereceived)
-    __obj.updateDynamic("sendMessageAsync")(sendMessageAsync)
+    val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber, calculateLength = calculateLength, cellularClass = cellularClass, deviceStatus = deviceStatus, messageStore = messageStore, onsmsdevicestatuschanged = onsmsdevicestatuschanged, onsmsmessagereceived = onsmsmessagereceived, sendMessageAsync = sendMessageAsync)
+  
     __obj.asInstanceOf[ISmsDevice]
   }
 }

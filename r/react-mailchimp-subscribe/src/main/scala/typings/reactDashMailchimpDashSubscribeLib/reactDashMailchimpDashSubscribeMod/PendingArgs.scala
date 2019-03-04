@@ -16,8 +16,7 @@ object PendingArgs {
     message: scala.Null,
     status: reactDashMailchimpDashSubscribeLib.reactDashMailchimpDashSubscribeLibStrings.sending = null
   ): PendingArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (status != null) __obj.updateDynamic("status")(status)
     __obj.asInstanceOf[PendingArgs]
   }

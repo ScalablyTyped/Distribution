@@ -22,12 +22,8 @@ object Parser {
     getAll: js.Function0[org.scalablytyped.runtime.StringDictionary[js.Any]],
     set: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): Parser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("eval")(eval)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("getAll")(getAll)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, eval = eval, get = get, getAll = getAll, set = set)
+  
     __obj.asInstanceOf[Parser]
   }
 }

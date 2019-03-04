@@ -22,8 +22,7 @@ object Anon_Dimensions {
     min: scala.Int | scala.Double = null,
     ref: java.lang.String = null
   ): Anon_Dimensions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
     if (items != null) __obj.updateDynamic("items")(items)
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

@@ -82,8 +82,7 @@ object IRenderDefinition {
     options: IRendererOptions = null,
     textures: js.Any = null
   ): IRenderDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engine")(engine)
+    val __obj = js.Dynamic.literal(engine = engine)
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (context != null) __obj.updateDynamic("context")(context)

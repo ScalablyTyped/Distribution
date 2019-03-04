@@ -68,13 +68,8 @@ object FoldableWithIndexComposition3C1 {
       js.Any
     ]
   ): FoldableWithIndexComposition3C1[F, FI, G, GI, UF, LF] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("foldMap")(foldMap)
-    __obj.updateDynamic("foldMapWithIndex")(foldMapWithIndex)
-    __obj.updateDynamic("foldr")(foldr)
-    __obj.updateDynamic("foldrWithIndex")(foldrWithIndex)
-    __obj.updateDynamic("reduce")(reduce)
-    __obj.updateDynamic("reduceWithIndex")(reduceWithIndex)
+    val __obj = js.Dynamic.literal(foldMap = foldMap, foldMapWithIndex = foldMapWithIndex, foldr = foldr, foldrWithIndex = foldrWithIndex, reduce = reduce, reduceWithIndex = reduceWithIndex)
+  
     __obj.asInstanceOf[FoldableWithIndexComposition3C1[F, FI, G, GI, UF, LF]]
   }
 }

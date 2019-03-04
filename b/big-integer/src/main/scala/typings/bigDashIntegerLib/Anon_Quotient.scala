@@ -16,9 +16,8 @@ object Anon_Quotient {
     quotient: bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigInteger,
     remainder: bigDashIntegerLib.bigDashIntegerMod.bigIntNs.BigInteger
   ): Anon_Quotient = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("quotient")(quotient)
-    __obj.updateDynamic("remainder")(remainder)
+    val __obj = js.Dynamic.literal(quotient = quotient, remainder = remainder)
+  
     __obj.asInstanceOf[Anon_Quotient]
   }
 }

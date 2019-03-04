@@ -12,8 +12,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(patterns: js.Array[java.lang.String]): Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patterns")(patterns)
+    val __obj = js.Dynamic.literal(patterns = patterns)
+  
     __obj.asInstanceOf[Options]
   }
 }

@@ -21,9 +21,8 @@ object AskQuery {
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null
   ): AskQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("prefixes")(prefixes)
-    __obj.updateDynamic("queryType")(queryType)
+    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType)
+    __obj.updateDynamic("type")(`type`)
     if (base != null) __obj.updateDynamic("base")(base)
     if (values != null) __obj.updateDynamic("values")(values)
     if (where != null) __obj.updateDynamic("where")(where)

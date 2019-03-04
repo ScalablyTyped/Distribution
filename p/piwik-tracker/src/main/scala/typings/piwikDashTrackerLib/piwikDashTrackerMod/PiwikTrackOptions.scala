@@ -132,8 +132,7 @@ object PiwikTrackOptions {
     uid: java.lang.String = null,
     urlref: java.lang.String = null
   ): PiwikTrackOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (_cvar != null) __obj.updateDynamic("_cvar")(_cvar)
     if (_ects != null) __obj.updateDynamic("_ects")(_ects.asInstanceOf[js.Any])
     if (_id != null) __obj.updateDynamic("_id")(_id)

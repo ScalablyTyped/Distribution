@@ -26,13 +26,7 @@ object ExtentInfo {
     ResolutionUnit: ExtentInfoValue,
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[ExtentInfoValue] = null
   ): ExtentInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DateTime")(DateTime)
-    __obj.updateDynamic("ExposureBiasValue")(ExposureBiasValue)
-    __obj.updateDynamic("ExposureTime")(ExposureTime)
-    __obj.updateDynamic("ISOSpeedRatings")(ISOSpeedRatings)
-    __obj.updateDynamic("Model")(Model)
-    __obj.updateDynamic("ResolutionUnit")(ResolutionUnit)
+    val __obj = js.Dynamic.literal(DateTime = DateTime, ExposureBiasValue = ExposureBiasValue, ExposureTime = ExposureTime, ISOSpeedRatings = ISOSpeedRatings, Model = Model, ResolutionUnit = ResolutionUnit)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ExtentInfo]
   }

@@ -18,8 +18,7 @@ object Error {
     details: java.lang.String = null,
     reason: java.lang.String = null
   ): Error = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details)
     if (reason != null) __obj.updateDynamic("reason")(reason)
     __obj.asInstanceOf[Error]

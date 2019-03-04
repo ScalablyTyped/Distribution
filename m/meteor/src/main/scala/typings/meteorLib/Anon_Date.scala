@@ -15,8 +15,8 @@ trait Anon_Date
 object Anon_Date {
   @scala.inline
   def apply($type: meteorLib.meteorLibStrings.timestamp | meteorLib.meteorLibStrings.date): Anon_Date = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal($type = $type.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Date]
   }
 }

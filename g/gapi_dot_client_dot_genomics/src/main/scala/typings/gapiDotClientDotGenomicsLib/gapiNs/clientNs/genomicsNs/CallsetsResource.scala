@@ -77,12 +77,8 @@ object CallsetsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[SearchCallSetsResponse]
     ]
   ): CallsetsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("patch")(patch)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(create = create, delete = delete, get = get, patch = patch, search = search)
+  
     __obj.asInstanceOf[CallsetsResource]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_CountInput extends js.Object {
 object Anon_CountInput {
   @scala.inline
   def apply(count: atPulumiPulumiLib.outputMod.Input[scala.Double]): Anon_CountInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_CountInput]
   }
 }

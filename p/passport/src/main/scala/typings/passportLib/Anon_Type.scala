@@ -13,8 +13,7 @@ trait Anon_Type extends js.Object {
 object Anon_Type {
   @scala.inline
   def apply(value: java.lang.String, `type`: java.lang.String = null): Anon_Type = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(value = value)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Type]
   }

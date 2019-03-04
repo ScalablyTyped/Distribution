@@ -70,14 +70,8 @@ object IterableChanges {
     forEachPreviousItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit],
     forEachRemovedItem: js.Function1[js.Function1[/* record */ IterableChangeRecord[V], scala.Unit], scala.Unit]
   ): IterableChanges[V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forEachAddedItem")(forEachAddedItem)
-    __obj.updateDynamic("forEachIdentityChange")(forEachIdentityChange)
-    __obj.updateDynamic("forEachItem")(forEachItem)
-    __obj.updateDynamic("forEachMovedItem")(forEachMovedItem)
-    __obj.updateDynamic("forEachOperation")(forEachOperation)
-    __obj.updateDynamic("forEachPreviousItem")(forEachPreviousItem)
-    __obj.updateDynamic("forEachRemovedItem")(forEachRemovedItem)
+    val __obj = js.Dynamic.literal(forEachAddedItem = forEachAddedItem, forEachIdentityChange = forEachIdentityChange, forEachItem = forEachItem, forEachMovedItem = forEachMovedItem, forEachOperation = forEachOperation, forEachPreviousItem = forEachPreviousItem, forEachRemovedItem = forEachRemovedItem)
+  
     __obj.asInstanceOf[IterableChanges[V]]
   }
 }

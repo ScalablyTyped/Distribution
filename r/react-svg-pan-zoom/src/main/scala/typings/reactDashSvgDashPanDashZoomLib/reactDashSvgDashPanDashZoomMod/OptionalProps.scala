@@ -74,26 +74,7 @@ object OptionalProps {
     toolbarPosition: ToolbarPosition,
     value: Value = null
   ): OptionalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SVGBackground")(SVGBackground)
-    __obj.updateDynamic("background")(background)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("customToolbar")(customToolbar.asInstanceOf[js.Any])
-    __obj.updateDynamic("detectAutoPan")(detectAutoPan)
-    __obj.updateDynamic("detectWheel")(detectWheel)
-    __obj.updateDynamic("modifierKeys")(modifierKeys)
-    __obj.updateDynamic("onChangeTool")(onChangeTool)
-    __obj.updateDynamic("onChangeValue")(onChangeValue)
-    __obj.updateDynamic("onClick")(onClick)
-    __obj.updateDynamic("onDoubleClick")(onDoubleClick)
-    __obj.updateDynamic("onMouseDown")(onMouseDown)
-    __obj.updateDynamic("onMouseMove")(onMouseMove)
-    __obj.updateDynamic("onMouseUp")(onMouseUp)
-    __obj.updateDynamic("preventPanOutside")(preventPanOutside)
-    __obj.updateDynamic("scaleFactor")(scaleFactor)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("tool")(tool)
-    __obj.updateDynamic("toolbarPosition")(toolbarPosition)
+    val __obj = js.Dynamic.literal(SVGBackground = SVGBackground, background = background, className = className, customToolbar = customToolbar.asInstanceOf[js.Any], detectAutoPan = detectAutoPan, detectWheel = detectWheel, modifierKeys = modifierKeys, onChangeTool = onChangeTool, onChangeValue = onChangeValue, onClick = onClick, onDoubleClick = onDoubleClick, onMouseDown = onMouseDown, onMouseMove = onMouseMove, onMouseUp = onMouseUp, preventPanOutside = preventPanOutside, scaleFactor = scaleFactor, style = style, tool = tool, toolbarPosition = toolbarPosition)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[OptionalProps]
   }

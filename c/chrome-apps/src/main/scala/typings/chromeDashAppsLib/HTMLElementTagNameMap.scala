@@ -13,9 +13,8 @@ trait HTMLElementTagNameMap extends js.Object {
 object HTMLElementTagNameMap {
   @scala.inline
   def apply(appview: HTMLAppViewElement, webview: HTMLWebViewElement): HTMLElementTagNameMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("appview")(appview)
-    __obj.updateDynamic("webview")(webview)
+    val __obj = js.Dynamic.literal(appview = appview, webview = webview)
+  
     __obj.asInstanceOf[HTMLElementTagNameMap]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_BufferBytesWrittenNumberTBuffer[TBuffer /* <: Buffer | stdLib.Uint8Ar
 object Anon_BufferBytesWrittenNumberTBuffer {
   @scala.inline
   def apply[TBuffer /* <: Buffer | stdLib.Uint8Array */](buffer: TBuffer, bytesWritten: scala.Double): Anon_BufferBytesWrittenNumberTBuffer[TBuffer] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    __obj.updateDynamic("bytesWritten")(bytesWritten)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesWritten = bytesWritten)
+  
     __obj.asInstanceOf[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]]
   }
 }

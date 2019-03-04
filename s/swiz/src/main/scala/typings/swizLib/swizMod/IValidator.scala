@@ -18,10 +18,8 @@ object IValidator {
     help: java.lang.String,
     name: java.lang.String
   ): IValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("func")(func)
-    __obj.updateDynamic("help")(help)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(func = func, help = help, name = name)
+  
     __obj.asInstanceOf[IValidator]
   }
 }

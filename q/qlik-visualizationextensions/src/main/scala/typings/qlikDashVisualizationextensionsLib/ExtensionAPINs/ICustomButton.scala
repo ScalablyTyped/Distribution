@@ -19,11 +19,8 @@ object ICustomButton {
     ref: java.lang.String,
     `type`: java.lang.String
   ): ICustomButton = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    __obj.updateDynamic("component")(component)
-    __obj.updateDynamic("label")(label)
-    __obj.updateDynamic("ref")(ref)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component, label = label, ref = ref)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ICustomButton]
   }
 }

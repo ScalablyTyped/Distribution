@@ -16,9 +16,8 @@ object ISearchIndex {
     indexDocument: js.Function3[java.lang.String, java.lang.String, js.Object, scala.Unit],
     search: js.Function2[js.Array[java.lang.String], js.Array[js.Object], js.Array[js.Object]]
   ): ISearchIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("indexDocument")(indexDocument)
-    __obj.updateDynamic("search")(search)
+    val __obj = js.Dynamic.literal(indexDocument = indexDocument, search = search)
+  
     __obj.asInstanceOf[ISearchIndex]
   }
 }

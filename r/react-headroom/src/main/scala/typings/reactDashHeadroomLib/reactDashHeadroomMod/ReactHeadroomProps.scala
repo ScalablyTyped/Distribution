@@ -40,8 +40,7 @@ object ReactHeadroomProps {
     upTolerance: scala.Int | scala.Double = null,
     wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ReactHeadroomProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(calcHeightOnResize)) __obj.updateDynamic("calcHeightOnResize")(calcHeightOnResize)
     if (className != null) __obj.updateDynamic("className")(className)
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)

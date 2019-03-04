@@ -20,13 +20,8 @@ object XMLSignature {
     release: js.Function0[scala.Unit],
     validate: js.Function2[XXMLSignatureTemplate, XXMLSecurityContext, XXMLSignatureTemplate]
   ): XMLSignature = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("generate")(generate)
-    __obj.updateDynamic("initialize")(initialize)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("validate")(validate)
+    val __obj = js.Dynamic.literal(acquire = acquire, generate = generate, initialize = initialize, queryInterface = queryInterface, release = release, validate = validate)
+  
     __obj.asInstanceOf[XMLSignature]
   }
 }

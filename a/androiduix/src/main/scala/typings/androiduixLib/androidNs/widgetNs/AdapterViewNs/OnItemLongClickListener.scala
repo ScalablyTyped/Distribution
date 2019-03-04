@@ -25,8 +25,8 @@ object OnItemLongClickListener {
       scala.Boolean
     ]
   ): OnItemLongClickListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onItemLongClick")(onItemLongClick)
+    val __obj = js.Dynamic.literal(onItemLongClick = onItemLongClick)
+  
     __obj.asInstanceOf[OnItemLongClickListener]
   }
 }

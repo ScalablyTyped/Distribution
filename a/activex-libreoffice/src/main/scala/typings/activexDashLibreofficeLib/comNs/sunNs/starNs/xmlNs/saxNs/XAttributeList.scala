@@ -46,17 +46,8 @@ object XAttributeList {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAttributeList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Length")(Length)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getLength")(getLength)
-    __obj.updateDynamic("getNameByIndex")(getNameByIndex)
-    __obj.updateDynamic("getTypeByIndex")(getTypeByIndex)
-    __obj.updateDynamic("getTypeByName")(getTypeByName)
-    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
-    __obj.updateDynamic("getValueByName")(getValueByName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Length = Length, acquire = acquire, getLength = getLength, getNameByIndex = getNameByIndex, getTypeByIndex = getTypeByIndex, getTypeByName = getTypeByName, getValueByIndex = getValueByIndex, getValueByName = getValueByName, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAttributeList]
   }
 }

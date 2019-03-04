@@ -35,9 +35,7 @@ object EventPropTypeInterface {
     childName: java.lang.String = null,
     eventKey: TEventKey = null
   ): EventPropTypeInterface[TTarget, TEventKey] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventHandlers")(eventHandlers)
-    __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eventHandlers = eventHandlers, target = target.asInstanceOf[js.Any])
     if (childName != null) __obj.updateDynamic("childName")(childName)
     if (eventKey != null) __obj.updateDynamic("eventKey")(eventKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPropTypeInterface[TTarget, TEventKey]]

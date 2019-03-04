@@ -73,16 +73,8 @@ object FontInfo {
     UnicodeRanges2: scala.Double,
     UnicodeRanges3: scala.Double
   ): FontInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FamilyName")(FamilyName)
-    __obj.updateDynamic("FontDescription")(FontDescription)
-    __obj.updateDynamic("IsSymbolFont")(IsSymbolFont)
-    __obj.updateDynamic("IsVertical")(IsVertical)
-    __obj.updateDynamic("StyleName")(StyleName)
-    __obj.updateDynamic("UnicodeRanges0")(UnicodeRanges0)
-    __obj.updateDynamic("UnicodeRanges1")(UnicodeRanges1)
-    __obj.updateDynamic("UnicodeRanges2")(UnicodeRanges2)
-    __obj.updateDynamic("UnicodeRanges3")(UnicodeRanges3)
+    val __obj = js.Dynamic.literal(FamilyName = FamilyName, FontDescription = FontDescription, IsSymbolFont = IsSymbolFont, IsVertical = IsVertical, StyleName = StyleName, UnicodeRanges0 = UnicodeRanges0, UnicodeRanges1 = UnicodeRanges1, UnicodeRanges2 = UnicodeRanges2, UnicodeRanges3 = UnicodeRanges3)
+  
     __obj.asInstanceOf[FontInfo]
   }
 }

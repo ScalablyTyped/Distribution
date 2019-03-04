@@ -46,9 +46,7 @@ object MutationProps {
     update: MutationUpdaterFn[TData] = null,
     variables: TVariables = null
   ): MutationProps[TData, TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("mutation")(mutation)
+    val __obj = js.Dynamic.literal(children = children, mutation = mutation)
     if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries)
     if (client != null) __obj.updateDynamic("client")(client)
     if (context != null) __obj.updateDynamic("context")(context)

@@ -25,9 +25,8 @@ object IfStatement {
     `type`: astDashTypesLib.astDashTypesLibStrings.IfStatement,
     alternate: astDashTypesLib.genKindsMod.StatementKind = null
   ): IfStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("consequent")(consequent)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(consequent = consequent, test = test)
+    __obj.updateDynamic("type")(`type`)
     if (alternate != null) __obj.updateDynamic("alternate")(alternate)
     __obj.asInstanceOf[IfStatement]
   }

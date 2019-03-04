@@ -37,12 +37,7 @@ object PointCloudUniqueValueRendererColorUniqueValueInfos {
     values: js.Array[java.lang.String],
     label: java.lang.String = null
   ): PointCloudUniqueValueRendererColorUniqueValueInfos = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("values")(values)
+    val __obj = js.Dynamic.literal(color = color, constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, values = values)
     if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[PointCloudUniqueValueRendererColorUniqueValueInfos]
   }

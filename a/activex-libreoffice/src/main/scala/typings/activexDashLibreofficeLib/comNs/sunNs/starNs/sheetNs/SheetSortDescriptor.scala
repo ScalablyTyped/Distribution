@@ -77,32 +77,8 @@ object SheetSortDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SheetSortDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BindFormatsToContent")(BindFormatsToContent)
-    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
-    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
-    __obj.updateDynamic("ContainsHeader")(ContainsHeader)
-    __obj.updateDynamic("CopyOutputData")(CopyOutputData)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
-    __obj.updateDynamic("IsUserListEnabled")(IsUserListEnabled)
-    __obj.updateDynamic("MaxFieldCount")(MaxFieldCount)
-    __obj.updateDynamic("Orientation")(Orientation)
-    __obj.updateDynamic("OutputPosition")(OutputPosition)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("SortColumns")(SortColumns)
-    __obj.updateDynamic("SortFields")(SortFields)
-    __obj.updateDynamic("UserListIndex")(UserListIndex)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(BindFormatsToContent = BindFormatsToContent, CollatorAlgorithm = CollatorAlgorithm, CollatorLocale = CollatorLocale, ContainsHeader = ContainsHeader, CopyOutputData = CopyOutputData, IsCaseSensitive = IsCaseSensitive, IsUserListEnabled = IsUserListEnabled, MaxFieldCount = MaxFieldCount, Orientation = Orientation, OutputPosition = OutputPosition, PropertySetInfo = PropertySetInfo, SortAscending = SortAscending, SortColumns = SortColumns, SortFields = SortFields, UserListIndex = UserListIndex, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SheetSortDescriptor]
   }
 }

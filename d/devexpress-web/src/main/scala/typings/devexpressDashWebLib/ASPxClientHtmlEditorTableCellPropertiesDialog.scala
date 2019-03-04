@@ -26,14 +26,8 @@ object ASPxClientHtmlEditorTableCellPropertiesDialog {
     GetOkButton: js.Function0[ASPxClientButton],
     GetVerticalAlignmentComboBox: js.Function0[ASPxClientComboBox]
   ): ASPxClientHtmlEditorTableCellPropertiesDialog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetApplyToAllCellsCheckBox")(GetApplyToAllCellsCheckBox)
-    __obj.updateDynamic("GetBackgroundColorColorEdit")(GetBackgroundColorColorEdit)
-    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
-    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
-    __obj.updateDynamic("GetHorizontalAlignmentComboBox")(GetHorizontalAlignmentComboBox)
-    __obj.updateDynamic("GetOkButton")(GetOkButton)
-    __obj.updateDynamic("GetVerticalAlignmentComboBox")(GetVerticalAlignmentComboBox)
+    val __obj = js.Dynamic.literal(GetApplyToAllCellsCheckBox = GetApplyToAllCellsCheckBox, GetBackgroundColorColorEdit = GetBackgroundColorColorEdit, GetCancelButton = GetCancelButton, GetFormLayout = GetFormLayout, GetHorizontalAlignmentComboBox = GetHorizontalAlignmentComboBox, GetOkButton = GetOkButton, GetVerticalAlignmentComboBox = GetVerticalAlignmentComboBox)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
   }
 }

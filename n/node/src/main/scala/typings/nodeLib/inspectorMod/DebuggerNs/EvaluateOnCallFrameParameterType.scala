@@ -62,9 +62,7 @@ object EvaluateOnCallFrameParameterType {
     throwOnSideEffect: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: js.UndefOr[nodeLib.inspectorMod.RuntimeNs.TimeDelta] = js.undefined
   ): EvaluateOnCallFrameParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callFrameId")(callFrameId)
-    __obj.updateDynamic("expression")(expression)
+    val __obj = js.Dynamic.literal(callFrameId = callFrameId, expression = expression)
     if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
     if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
     if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)

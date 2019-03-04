@@ -96,24 +96,8 @@ object BitArray {
     toggle: js.Function1[scala.Double, BitArray],
     xor: js.Function1[BitArray, BitArray]
   ): BitArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("not")(not)
-    __obj.updateDynamic("or")(or)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("toArray")(toArray)
-    __obj.updateDynamic("toBinaryString")(toBinaryString)
-    __obj.updateDynamic("toHexString")(toHexString)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("toggle")(toggle)
-    __obj.updateDynamic("xor")(xor)
+    val __obj = js.Dynamic.literal(and = and, copy = copy, count = count, equals = equals, get = get, not = not, or = or, reset = reset, set = set, size = size, toArray = toArray, toBinaryString = toBinaryString, toHexString = toHexString, toJSON = toJSON, toString = toString, toggle = toggle, xor = xor)
+  
     __obj.asInstanceOf[BitArray]
   }
 }

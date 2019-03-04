@@ -27,14 +27,8 @@ object cssClasses {
     FLEXIBLE_MIN: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible-space-minimized`,
     TOOLBAR_ROW_FLEXIBLE: atMaterialToolbarLib.atMaterialToolbarLibStrings.`mdc-toolbar--flexible`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FIXED")(FIXED)
-    __obj.updateDynamic("FIXED_AT_LAST_ROW")(FIXED_AT_LAST_ROW)
-    __obj.updateDynamic("FIXED_LASTROW")(FIXED_LASTROW)
-    __obj.updateDynamic("FLEXIBLE_DEFAULT_BEHAVIOR")(FLEXIBLE_DEFAULT_BEHAVIOR)
-    __obj.updateDynamic("FLEXIBLE_MAX")(FLEXIBLE_MAX)
-    __obj.updateDynamic("FLEXIBLE_MIN")(FLEXIBLE_MIN)
-    __obj.updateDynamic("TOOLBAR_ROW_FLEXIBLE")(TOOLBAR_ROW_FLEXIBLE)
+    val __obj = js.Dynamic.literal(FIXED = FIXED, FIXED_AT_LAST_ROW = FIXED_AT_LAST_ROW, FIXED_LASTROW = FIXED_LASTROW, FLEXIBLE_DEFAULT_BEHAVIOR = FLEXIBLE_DEFAULT_BEHAVIOR, FLEXIBLE_MAX = FLEXIBLE_MAX, FLEXIBLE_MIN = FLEXIBLE_MIN, TOOLBAR_ROW_FLEXIBLE = TOOLBAR_ROW_FLEXIBLE)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

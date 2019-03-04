@@ -22,12 +22,8 @@ object ResourceRequest {
     time: stdLib.Date,
     url: java.lang.String
   ): ResourceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(headers = headers, id = id, method = method, time = time, url = url)
+  
     __obj.asInstanceOf[ResourceRequest]
   }
 }

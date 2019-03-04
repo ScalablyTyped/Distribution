@@ -18,10 +18,7 @@ object TemplateError {
     riotData: riotLib.Anon_Riotid,
     stack: java.lang.String = null
   ): TemplateError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("riotData")(riotData)
+    val __obj = js.Dynamic.literal(message = message, name = name, riotData = riotData)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[TemplateError]
   }

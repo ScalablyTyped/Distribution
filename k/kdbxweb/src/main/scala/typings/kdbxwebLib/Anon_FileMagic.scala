@@ -14,10 +14,8 @@ trait Anon_FileMagic extends js.Object {
 object Anon_FileMagic {
   @scala.inline
   def apply(FileMagic: scala.Double, Sig2Kdb: scala.Double, Sig2Kdbx: scala.Double): Anon_FileMagic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FileMagic")(FileMagic)
-    __obj.updateDynamic("Sig2Kdb")(Sig2Kdb)
-    __obj.updateDynamic("Sig2Kdbx")(Sig2Kdbx)
+    val __obj = js.Dynamic.literal(FileMagic = FileMagic, Sig2Kdb = Sig2Kdb, Sig2Kdbx = Sig2Kdbx)
+  
     __obj.asInstanceOf[Anon_FileMagic]
   }
 }

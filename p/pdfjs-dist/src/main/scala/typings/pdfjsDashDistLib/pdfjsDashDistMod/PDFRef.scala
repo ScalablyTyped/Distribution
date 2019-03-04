@@ -13,9 +13,8 @@ trait PDFRef extends js.Object {
 object PDFRef {
   @scala.inline
   def apply(gen: js.Any, num: scala.Double): PDFRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("gen")(gen)
-    __obj.updateDynamic("num")(num)
+    val __obj = js.Dynamic.literal(gen = gen, num = num)
+  
     __obj.asInstanceOf[PDFRef]
   }
 }

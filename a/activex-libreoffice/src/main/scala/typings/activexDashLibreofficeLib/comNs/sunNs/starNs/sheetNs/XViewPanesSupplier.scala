@@ -26,12 +26,8 @@ object XViewPanesSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XViewPanesSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ViewPanes")(ViewPanes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getViewPanes")(getViewPanes)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ViewPanes = ViewPanes, acquire = acquire, getViewPanes = getViewPanes, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XViewPanesSupplier]
   }
 }

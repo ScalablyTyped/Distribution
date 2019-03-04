@@ -14,9 +14,7 @@ trait IStackTrace extends js.Object {
 object IStackTrace {
   @scala.inline
   def apply(file: java.lang.String, line: scala.Double, function: java.lang.String = null): IStackTrace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("line")(line)
+    val __obj = js.Dynamic.literal(file = file, line = line)
     if (function != null) __obj.updateDynamic("function")(function)
     __obj.asInstanceOf[IStackTrace]
   }

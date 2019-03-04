@@ -36,8 +36,7 @@ object HealthcareServiceNotAvailable {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): HealthcareServiceNotAvailable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

@@ -18,8 +18,8 @@ object AchievementDefinitionsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[AchievementDefinitionsListResponse]
     ]
   ): AchievementDefinitionsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(list = list)
+  
     __obj.asInstanceOf[AchievementDefinitionsResource]
   }
 }

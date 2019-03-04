@@ -40,21 +40,8 @@ object PinModes {
     STEPPER: PIN_MODE,
     UNKOWN: PIN_MODE
   ): PinModes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ANALOG")(ANALOG)
-    __obj.updateDynamic("I2C")(I2C)
-    __obj.updateDynamic("IGNORE")(IGNORE)
-    __obj.updateDynamic("INPUT")(INPUT)
-    __obj.updateDynamic("ONEWIRE")(ONEWIRE)
-    __obj.updateDynamic("OUTPUT")(OUTPUT)
-    __obj.updateDynamic("PING_READ")(PING_READ)
-    __obj.updateDynamic("PULLUP")(PULLUP)
-    __obj.updateDynamic("PWM")(PWM)
-    __obj.updateDynamic("SERIAL")(SERIAL)
-    __obj.updateDynamic("SERVO")(SERVO)
-    __obj.updateDynamic("SHIFT")(SHIFT)
-    __obj.updateDynamic("STEPPER")(STEPPER)
-    __obj.updateDynamic("UNKOWN")(UNKOWN)
+    val __obj = js.Dynamic.literal(ANALOG = ANALOG, I2C = I2C, IGNORE = IGNORE, INPUT = INPUT, ONEWIRE = ONEWIRE, OUTPUT = OUTPUT, PING_READ = PING_READ, PULLUP = PULLUP, PWM = PWM, SERIAL = SERIAL, SERVO = SERVO, SHIFT = SHIFT, STEPPER = STEPPER, UNKOWN = UNKOWN)
+  
     __obj.asInstanceOf[PinModes]
   }
 }

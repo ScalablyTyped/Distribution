@@ -22,12 +22,8 @@ object ViewModel {
     disconnected: js.Function1[stdLib.Element, scala.Unit],
     propertyChanged: js.Function1[PropertyChangedContext, scala.Unit]
   ): ViewModel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activated")(activated)
-    __obj.updateDynamic("bindingsApplied")(bindingsApplied)
-    __obj.updateDynamic("connected")(connected)
-    __obj.updateDynamic("disconnected")(disconnected)
-    __obj.updateDynamic("propertyChanged")(propertyChanged)
+    val __obj = js.Dynamic.literal(activated = activated, bindingsApplied = bindingsApplied, connected = connected, disconnected = disconnected, propertyChanged = propertyChanged)
+  
     __obj.asInstanceOf[ViewModel]
   }
 }

@@ -13,9 +13,8 @@ trait Anon_Animation extends js.Object {
 object Anon_Animation {
   @scala.inline
   def apply(animation: visLib.visMod.TimelineAnimationOptions, focus: scala.Boolean): Anon_Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animation")(animation)
-    __obj.updateDynamic("focus")(focus)
+    val __obj = js.Dynamic.literal(animation = animation, focus = focus)
+  
     __obj.asInstanceOf[Anon_Animation]
   }
 }

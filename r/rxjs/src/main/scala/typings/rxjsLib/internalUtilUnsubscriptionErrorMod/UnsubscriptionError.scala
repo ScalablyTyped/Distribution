@@ -18,10 +18,7 @@ object UnsubscriptionError {
     name: java.lang.String,
     stack: java.lang.String = null
   ): UnsubscriptionError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(errors = errors, message = message, name = name)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[UnsubscriptionError]
   }

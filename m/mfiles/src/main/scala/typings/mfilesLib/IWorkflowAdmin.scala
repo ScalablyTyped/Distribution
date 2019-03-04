@@ -26,14 +26,8 @@ object IWorkflowAdmin {
     States: IStatesAdmin,
     Workflow: IWorkflow
   ): IWorkflowAdmin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("Description")(Description)
-    __obj.updateDynamic("Permissions")(Permissions)
-    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
-    __obj.updateDynamic("StateTransitions")(StateTransitions)
-    __obj.updateDynamic("States")(States)
-    __obj.updateDynamic("Workflow")(Workflow)
+    val __obj = js.Dynamic.literal(Clone = Clone, Description = Description, Permissions = Permissions, SemanticAliases = SemanticAliases, StateTransitions = StateTransitions, States = States, Workflow = Workflow)
+  
     __obj.asInstanceOf[IWorkflowAdmin]
   }
 }

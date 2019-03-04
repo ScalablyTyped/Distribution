@@ -20,11 +20,8 @@ object I18n {
     search: java.lang.String,
     skintext: java.lang.String
   ): I18n = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("notfound")(notfound)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("skintext")(skintext)
+    val __obj = js.Dynamic.literal(categories = categories, notfound = notfound, search = search, skintext = skintext)
+  
     __obj.asInstanceOf[I18n]
   }
 }

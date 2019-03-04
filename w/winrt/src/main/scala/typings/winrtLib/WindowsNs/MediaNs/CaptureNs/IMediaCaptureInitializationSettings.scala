@@ -20,11 +20,8 @@ object IMediaCaptureInitializationSettings {
     streamingCaptureMode: StreamingCaptureMode,
     videoDeviceId: java.lang.String
   ): IMediaCaptureInitializationSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioDeviceId")(audioDeviceId)
-    __obj.updateDynamic("photoCaptureSource")(photoCaptureSource)
-    __obj.updateDynamic("streamingCaptureMode")(streamingCaptureMode)
-    __obj.updateDynamic("videoDeviceId")(videoDeviceId)
+    val __obj = js.Dynamic.literal(audioDeviceId = audioDeviceId, photoCaptureSource = photoCaptureSource, streamingCaptureMode = streamingCaptureMode, videoDeviceId = videoDeviceId)
+  
     __obj.asInstanceOf[IMediaCaptureInitializationSettings]
   }
 }

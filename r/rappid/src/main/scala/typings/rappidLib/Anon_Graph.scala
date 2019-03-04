@@ -18,10 +18,8 @@ object Anon_Graph {
     model: backboneLib.backboneMod.Collection[jointjsLib.jointjsMod.diaNs.Cell],
     paper: jointjsLib.jointjsMod.diaNs.Paper
   ): Anon_Graph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("graph")(graph)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("paper")(paper)
+    val __obj = js.Dynamic.literal(graph = graph, model = model, paper = paper)
+  
     __obj.asInstanceOf[Anon_Graph]
   }
 }

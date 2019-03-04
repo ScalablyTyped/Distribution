@@ -227,8 +227,7 @@ object ChartDataSeriesOptions {
     yValueFormatString: java.lang.String = null,
     zValueFormatString: java.lang.String = null
   ): ChartDataSeriesOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dataPoints")(dataPoints)
+    val __obj = js.Dynamic.literal(dataPoints = dataPoints)
     if (axisXIndex != null) __obj.updateDynamic("axisXIndex")(axisXIndex.asInstanceOf[js.Any])
     if (axisXType != null) __obj.updateDynamic("axisXType")(axisXType)
     if (axisYIndex != null) __obj.updateDynamic("axisYIndex")(axisYIndex.asInstanceOf[js.Any])

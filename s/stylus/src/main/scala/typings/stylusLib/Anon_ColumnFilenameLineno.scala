@@ -22,11 +22,8 @@ object Anon_ColumnFilenameLineno {
     quote: java.lang.String,
     `val`: java.lang.String
   ): Anon_ColumnFilenameLineno = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("filename")(filename)
-    __obj.updateDynamic("lineno")(lineno)
-    __obj.updateDynamic("quote")(quote)
+    val __obj = js.Dynamic.literal(column = column, filename = filename, lineno = lineno, quote = quote)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Anon_ColumnFilenameLineno]
   }
 }

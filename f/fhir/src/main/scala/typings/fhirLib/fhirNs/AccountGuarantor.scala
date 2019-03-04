@@ -41,8 +41,7 @@ object AccountGuarantor {
     onHold: js.UndefOr[scala.Boolean] = js.undefined,
     period: Period = null
   ): AccountGuarantor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("party")(party)
+    val __obj = js.Dynamic.literal(party = party)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_onHold != null) __obj.updateDynamic("_onHold")(_onHold)

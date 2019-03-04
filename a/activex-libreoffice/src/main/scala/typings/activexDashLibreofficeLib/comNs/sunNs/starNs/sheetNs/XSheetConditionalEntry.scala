@@ -29,13 +29,8 @@ object XSheetConditionalEntry {
     release: js.Function0[scala.Unit],
     setStyleName: js.Function1[java.lang.String, scala.Unit]
   ): XSheetConditionalEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("StyleName")(StyleName)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getStyleName")(getStyleName)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setStyleName")(setStyleName)
+    val __obj = js.Dynamic.literal(StyleName = StyleName, acquire = acquire, getStyleName = getStyleName, queryInterface = queryInterface, release = release, setStyleName = setStyleName)
+  
     __obj.asInstanceOf[XSheetConditionalEntry]
   }
 }

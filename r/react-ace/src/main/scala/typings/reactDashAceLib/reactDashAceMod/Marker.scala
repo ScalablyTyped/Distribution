@@ -24,12 +24,8 @@ object Marker {
     startRow: scala.Double,
     `type`: java.lang.String
   ): Marker = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("endCol")(endCol)
-    __obj.updateDynamic("endRow")(endRow)
-    __obj.updateDynamic("startCol")(startCol)
-    __obj.updateDynamic("startRow")(startRow)
+    val __obj = js.Dynamic.literal(className = className, endCol = endCol, endRow = endRow, startCol = startCol, startRow = startRow)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Marker]
   }
 }

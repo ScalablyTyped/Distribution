@@ -381,8 +381,7 @@ object StructureMapGroupRuleSource {
     `type`: java.lang.String = null,
     variable: id = null
   ): StructureMapGroupRuleSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(context = context)
     if (_check != null) __obj.updateDynamic("_check")(_check)
     if (_condition != null) __obj.updateDynamic("_condition")(_condition)
     if (_context != null) __obj.updateDynamic("_context")(_context)

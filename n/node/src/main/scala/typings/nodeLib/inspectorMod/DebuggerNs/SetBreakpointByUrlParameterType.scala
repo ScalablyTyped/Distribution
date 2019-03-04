@@ -44,8 +44,7 @@ object SetBreakpointByUrlParameterType {
     url: java.lang.String = null,
     urlRegex: java.lang.String = null
   ): SetBreakpointByUrlParameterType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lineNumber")(lineNumber)
+    val __obj = js.Dynamic.literal(lineNumber = lineNumber)
     if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
     if (condition != null) __obj.updateDynamic("condition")(condition)
     if (scriptHash != null) __obj.updateDynamic("scriptHash")(scriptHash)

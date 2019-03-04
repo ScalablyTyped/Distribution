@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@firebase/database/dist/src/core/view/CompleteChildSource", "NoCompleteChildSource_")
 @js.native
-class `NoCompleteChildSource_` () extends CompleteChildSource {
+class NoCompleteChildSource_ () extends CompleteChildSource {
   /**
     * @inheritDoc
     */

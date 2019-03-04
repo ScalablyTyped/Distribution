@@ -17,9 +17,8 @@ object strings {
     ARIA_HIDDEN: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.`aria-hidden`,
     ROLE: atMaterialTextfieldLib.atMaterialTextfieldLibStrings.role
   ): strings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ARIA_HIDDEN")(ARIA_HIDDEN)
-    __obj.updateDynamic("ROLE")(ROLE)
+    val __obj = js.Dynamic.literal(ARIA_HIDDEN = ARIA_HIDDEN, ROLE = ROLE)
+  
     __obj.asInstanceOf[strings]
   }
 }

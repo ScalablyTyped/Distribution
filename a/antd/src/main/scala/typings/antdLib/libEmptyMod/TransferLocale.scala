@@ -12,8 +12,8 @@ trait TransferLocale extends js.Object {
 object TransferLocale {
   @scala.inline
   def apply(description: java.lang.String): TransferLocale = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
+  
     __obj.asInstanceOf[TransferLocale]
   }
 }

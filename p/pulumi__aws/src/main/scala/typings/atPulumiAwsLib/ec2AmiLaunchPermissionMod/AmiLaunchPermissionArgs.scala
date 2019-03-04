@@ -22,9 +22,8 @@ object AmiLaunchPermissionArgs {
     accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): AmiLaunchPermissionArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[AmiLaunchPermissionArgs]
   }
 }

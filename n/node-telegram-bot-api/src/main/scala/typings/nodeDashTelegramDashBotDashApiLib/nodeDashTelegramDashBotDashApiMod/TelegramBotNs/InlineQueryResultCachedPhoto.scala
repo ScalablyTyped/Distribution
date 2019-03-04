@@ -28,9 +28,8 @@ object InlineQueryResultCachedPhoto {
     reply_markup: InlineKeyboardMarkup = null,
     title: java.lang.String = null
   ): InlineQueryResultCachedPhoto = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("photo_file_id")(photo_file_id)
+    val __obj = js.Dynamic.literal(id = id, photo_file_id = photo_file_id)
+    __obj.updateDynamic("type")(`type`)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (description != null) __obj.updateDynamic("description")(description)
     if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content)

@@ -20,13 +20,8 @@ object SysInfoNoPath {
     name: java.lang.String,
     path: scala.Null
   ): SysInfoNoPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("configureArgs")(configureArgs)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("group")(group)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(configureArgs = configureArgs, description = description, group = group, instance = instance, name = name, path = path)
+  
     __obj.asInstanceOf[SysInfoNoPath]
   }
 }

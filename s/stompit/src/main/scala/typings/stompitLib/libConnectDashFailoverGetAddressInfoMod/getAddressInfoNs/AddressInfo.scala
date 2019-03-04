@@ -26,11 +26,7 @@ object AddressInfo {
     path: java.lang.String = null,
     port: scala.Int | scala.Double = null
   ): AddressInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connectArgs")(connectArgs)
-    __obj.updateDynamic("pseudoUri")(pseudoUri)
-    __obj.updateDynamic("transport")(transport)
-    __obj.updateDynamic("transportPath")(transportPath)
+    val __obj = js.Dynamic.literal(connectArgs = connectArgs, pseudoUri = pseudoUri, transport = transport, transportPath = transportPath)
     if (host != null) __obj.updateDynamic("host")(host)
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

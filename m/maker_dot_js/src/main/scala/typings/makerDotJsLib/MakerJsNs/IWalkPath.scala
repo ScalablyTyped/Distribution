@@ -25,14 +25,8 @@ object IWalkPath {
     route: js.Array[java.lang.String],
     routeKey: java.lang.String
   ): IWalkPath = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("modelContext")(modelContext)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("pathContext")(pathContext)
-    __obj.updateDynamic("pathId")(pathId)
-    __obj.updateDynamic("route")(route)
-    __obj.updateDynamic("routeKey")(routeKey)
+    val __obj = js.Dynamic.literal(layer = layer, modelContext = modelContext, offset = offset, pathContext = pathContext, pathId = pathId, route = route, routeKey = routeKey)
+  
     __obj.asInstanceOf[IWalkPath]
   }
 }

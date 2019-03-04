@@ -25,12 +25,8 @@ object ISearchContent {
     metaData: umbracoLib.Anon_Url,
     subTitle: java.lang.String
   ): ISearchContent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("editorPath")(editorPath)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("menuUrl")(menuUrl)
-    __obj.updateDynamic("metaData")(metaData)
-    __obj.updateDynamic("subTitle")(subTitle)
+    val __obj = js.Dynamic.literal(editorPath = editorPath, id = id, menuUrl = menuUrl, metaData = metaData, subTitle = subTitle)
+  
     __obj.asInstanceOf[ISearchContent]
   }
 }

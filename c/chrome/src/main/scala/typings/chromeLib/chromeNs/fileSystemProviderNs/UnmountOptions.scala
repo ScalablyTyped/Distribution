@@ -13,8 +13,8 @@ trait UnmountOptions extends js.Object {
 object UnmountOptions {
   @scala.inline
   def apply(fileSystemId: java.lang.String): UnmountOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    val __obj = js.Dynamic.literal(fileSystemId = fileSystemId)
+  
     __obj.asInstanceOf[UnmountOptions]
   }
 }

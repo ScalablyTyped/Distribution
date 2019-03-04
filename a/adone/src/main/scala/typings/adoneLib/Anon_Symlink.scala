@@ -12,8 +12,8 @@ trait Anon_Symlink extends js.Object {
 object Anon_Symlink {
   @scala.inline
   def apply(`type`: adoneLib.adoneLibStrings.symlink): Anon_Symlink = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Symlink]
   }
 }

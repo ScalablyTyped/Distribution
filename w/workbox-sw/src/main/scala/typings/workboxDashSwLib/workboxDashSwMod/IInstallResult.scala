@@ -22,9 +22,8 @@ object IInstallResult {
     notUpdatedEntries: js.Array[java.lang.String | IPrecacheEntry],
     updatedEntries: js.Array[java.lang.String | IPrecacheEntry]
   ): IInstallResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notUpdatedEntries")(notUpdatedEntries)
-    __obj.updateDynamic("updatedEntries")(updatedEntries)
+    val __obj = js.Dynamic.literal(notUpdatedEntries = notUpdatedEntries, updatedEntries = updatedEntries)
+  
     __obj.asInstanceOf[IInstallResult]
   }
 }

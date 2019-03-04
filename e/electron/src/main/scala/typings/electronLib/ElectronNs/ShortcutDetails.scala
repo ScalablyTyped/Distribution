@@ -50,8 +50,7 @@ object ShortcutDetails {
     icon: java.lang.String = null,
     iconIndex: scala.Int | scala.Double = null
   ): ShortcutDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (appUserModelId != null) __obj.updateDynamic("appUserModelId")(appUserModelId)
     if (args != null) __obj.updateDynamic("args")(args)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)

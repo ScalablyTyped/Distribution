@@ -22,11 +22,7 @@ object TocElement {
     title: java.lang.String,
     href: java.lang.String = null
   ): TocElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("level")(level)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(id = id, level = level, order = order, title = title)
     if (href != null) __obj.updateDynamic("href")(href)
     __obj.asInstanceOf[TocElement]
   }

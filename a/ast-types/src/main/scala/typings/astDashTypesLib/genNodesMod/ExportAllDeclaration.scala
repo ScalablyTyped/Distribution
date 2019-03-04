@@ -24,8 +24,8 @@ object ExportAllDeclaration {
     `type`: astDashTypesLib.astDashTypesLibStrings.ExportAllDeclaration,
     exported: astDashTypesLib.genKindsMod.IdentifierKind = null
   ): ExportAllDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("source")(source)
+    val __obj = js.Dynamic.literal(source = source)
+    __obj.updateDynamic("type")(`type`)
     if (exported != null) __obj.updateDynamic("exported")(exported)
     __obj.asInstanceOf[ExportAllDeclaration]
   }

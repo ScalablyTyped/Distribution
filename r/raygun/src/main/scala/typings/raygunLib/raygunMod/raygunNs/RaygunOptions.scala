@@ -40,8 +40,7 @@ object RaygunOptions {
     useSSL: js.UndefOr[scala.Boolean] = js.undefined,
     userHumanStringForObject: js.UndefOr[scala.Boolean] = js.undefined
   ): RaygunOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiKey")(apiKey)
+    val __obj = js.Dynamic.literal(apiKey = apiKey)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (groupingKey != null) __obj.updateDynamic("groupingKey")(groupingKey)
     if (host != null) __obj.updateDynamic("host")(host)

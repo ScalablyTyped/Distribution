@@ -14,8 +14,7 @@ trait PutBucketWebsiteConfig extends js.Object {
 object PutBucketWebsiteConfig {
   @scala.inline
   def apply(index: java.lang.String, error: java.lang.String = null): PutBucketWebsiteConfig = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
+    val __obj = js.Dynamic.literal(index = index)
     if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[PutBucketWebsiteConfig]
   }

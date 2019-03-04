@@ -14,10 +14,8 @@ trait AuthData extends js.Object {
 object AuthData {
   @scala.inline
   def apply(hash: java.lang.String, method: java.lang.String, salt: java.lang.String): AuthData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("salt")(salt)
+    val __obj = js.Dynamic.literal(hash = hash, method = method, salt = salt)
+  
     __obj.asInstanceOf[AuthData]
   }
 }

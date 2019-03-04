@@ -42,9 +42,7 @@ object Anon_AltDartId {
     quotaUser: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AltDartId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dartId")(dartId)
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(dartId = dartId, profileId = profileId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (key != null) __obj.updateDynamic("key")(key)

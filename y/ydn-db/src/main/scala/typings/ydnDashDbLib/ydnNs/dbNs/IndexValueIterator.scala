@@ -13,6 +13,7 @@ class IndexValueIterator protected () extends Iterator {
   def this(store_name: java.lang.String, index_name: java.lang.String, key_range: js.Any, reverse: scala.Boolean) = this()
 }
 
+/* static members */
 @JSGlobal("ydn.db.IndexValueIterator")
 @js.native
 object IndexValueIterator extends js.Object {

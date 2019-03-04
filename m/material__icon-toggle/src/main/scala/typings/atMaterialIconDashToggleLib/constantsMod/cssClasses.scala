@@ -17,9 +17,8 @@ object cssClasses {
     DISABLED: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`mdc-icon-toggle--disabled`,
     ROOT: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`mdc-icon-toggle`
   ): cssClasses = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DISABLED")(DISABLED)
-    __obj.updateDynamic("ROOT")(ROOT)
+    val __obj = js.Dynamic.literal(DISABLED = DISABLED, ROOT = ROOT)
+  
     __obj.asInstanceOf[cssClasses]
   }
 }

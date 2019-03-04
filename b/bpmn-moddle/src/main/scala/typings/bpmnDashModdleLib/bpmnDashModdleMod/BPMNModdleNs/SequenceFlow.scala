@@ -30,16 +30,7 @@ object SequenceFlow {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): SequenceFlow = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("conditionExpression")(conditionExpression)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isImmediate")(isImmediate)
-    __obj.updateDynamic("monitoring")(monitoring)
-    __obj.updateDynamic("sourceRef")(sourceRef)
-    __obj.updateDynamic("targetRef")(targetRef)
+    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, conditionExpression = conditionExpression, id = id, isImmediate = isImmediate, monitoring = monitoring, sourceRef = sourceRef, targetRef = targetRef)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

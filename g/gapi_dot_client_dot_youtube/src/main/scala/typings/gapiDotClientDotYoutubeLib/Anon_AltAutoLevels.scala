@@ -84,8 +84,7 @@ object Anon_AltAutoLevels {
     stabilize: js.UndefOr[scala.Boolean] = js.undefined,
     userIp: java.lang.String = null
   ): Anon_AltAutoLevels = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(autoLevels)) __obj.updateDynamic("autoLevels")(autoLevels)
     if (fields != null) __obj.updateDynamic("fields")(fields)

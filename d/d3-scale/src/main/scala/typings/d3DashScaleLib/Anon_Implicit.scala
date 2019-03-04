@@ -12,8 +12,8 @@ trait Anon_Implicit extends js.Object {
 object Anon_Implicit {
   @scala.inline
   def apply(name: d3DashScaleLib.d3DashScaleLibStrings.`implicit`): Anon_Implicit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+  
     __obj.asInstanceOf[Anon_Implicit]
   }
 }

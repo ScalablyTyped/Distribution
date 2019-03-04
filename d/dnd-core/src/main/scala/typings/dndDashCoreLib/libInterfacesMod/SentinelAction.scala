@@ -12,8 +12,8 @@ trait SentinelAction extends js.Object {
 object SentinelAction {
   @scala.inline
   def apply(`type`: java.lang.String): SentinelAction = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SentinelAction]
   }
 }

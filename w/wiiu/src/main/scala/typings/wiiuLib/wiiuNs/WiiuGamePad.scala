@@ -72,37 +72,8 @@ object WiiuGamePad {
     tpValidity: scala.Double,
     update: js.Function0[WiiuGamePad]
   ): WiiuGamePad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accX")(accX)
-    __obj.updateDynamic("accY")(accY)
-    __obj.updateDynamic("accZ")(accZ)
-    __obj.updateDynamic("angleX")(angleX)
-    __obj.updateDynamic("angleY")(angleY)
-    __obj.updateDynamic("angleZ")(angleZ)
-    __obj.updateDynamic("contentX")(contentX)
-    __obj.updateDynamic("contentY")(contentY)
-    __obj.updateDynamic("dirXx")(dirXx)
-    __obj.updateDynamic("dirXy")(dirXy)
-    __obj.updateDynamic("dirXz")(dirXz)
-    __obj.updateDynamic("dirYx")(dirYx)
-    __obj.updateDynamic("dirYy")(dirYy)
-    __obj.updateDynamic("dirYz")(dirYz)
-    __obj.updateDynamic("dirZx")(dirZx)
-    __obj.updateDynamic("dirZy")(dirZy)
-    __obj.updateDynamic("dirZz")(dirZz)
-    __obj.updateDynamic("gyroX")(gyroX)
-    __obj.updateDynamic("gyroY")(gyroY)
-    __obj.updateDynamic("gyroZ")(gyroZ)
-    __obj.updateDynamic("hold")(hold)
-    __obj.updateDynamic("isDataValid")(isDataValid)
-    __obj.updateDynamic("isEnabled")(isEnabled)
-    __obj.updateDynamic("lStickX")(lStickX)
-    __obj.updateDynamic("lStickY")(lStickY)
-    __obj.updateDynamic("rStickX")(rStickX)
-    __obj.updateDynamic("rStickY")(rStickY)
-    __obj.updateDynamic("tpTouch")(tpTouch)
-    __obj.updateDynamic("tpValidity")(tpValidity)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(accX = accX, accY = accY, accZ = accZ, angleX = angleX, angleY = angleY, angleZ = angleZ, contentX = contentX, contentY = contentY, dirXx = dirXx, dirXy = dirXy, dirXz = dirXz, dirYx = dirYx, dirYy = dirYy, dirYz = dirYz, dirZx = dirZx, dirZy = dirZy, dirZz = dirZz, gyroX = gyroX, gyroY = gyroY, gyroZ = gyroZ, hold = hold, isDataValid = isDataValid, isEnabled = isEnabled, lStickX = lStickX, lStickY = lStickY, rStickX = rStickX, rStickY = rStickY, tpTouch = tpTouch, tpValidity = tpValidity, update = update)
+  
     __obj.asInstanceOf[WiiuGamePad]
   }
 }

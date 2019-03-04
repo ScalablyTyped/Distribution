@@ -36,11 +36,8 @@ object ShadowPropTypesIOSStatic {
     shadowOpacity: scala.Double,
     shadowRadius: scala.Double
   ): ShadowPropTypesIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("shadowColor")(shadowColor)
-    __obj.updateDynamic("shadowOffset")(shadowOffset)
-    __obj.updateDynamic("shadowOpacity")(shadowOpacity)
-    __obj.updateDynamic("shadowRadius")(shadowRadius)
+    val __obj = js.Dynamic.literal(shadowColor = shadowColor, shadowOffset = shadowOffset, shadowOpacity = shadowOpacity, shadowRadius = shadowRadius)
+  
     __obj.asInstanceOf[ShadowPropTypesIOSStatic]
   }
 }

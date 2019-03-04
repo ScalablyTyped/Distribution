@@ -18,10 +18,8 @@ object LoaderHandler {
     get: js.Function1[java.lang.String, AnyLoader | scala.Null],
     handlers: js.Array[stdLib.RegExp | AnyLoader]
   ): LoaderHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("handlers")(handlers)
+    val __obj = js.Dynamic.literal(add = add, get = get, handlers = handlers)
+  
     __obj.asInstanceOf[LoaderHandler]
   }
 }

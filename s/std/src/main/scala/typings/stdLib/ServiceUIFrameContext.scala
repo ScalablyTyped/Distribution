@@ -16,9 +16,8 @@ object ServiceUIFrameContext {
     getCachedFrameMessage: js.Function1[java.lang.String, java.lang.String],
     postFrameMessage: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): ServiceUIFrameContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCachedFrameMessage")(getCachedFrameMessage)
-    __obj.updateDynamic("postFrameMessage")(postFrameMessage)
+    val __obj = js.Dynamic.literal(getCachedFrameMessage = getCachedFrameMessage, postFrameMessage = postFrameMessage)
+  
     __obj.asInstanceOf[ServiceUIFrameContext]
   }
 }

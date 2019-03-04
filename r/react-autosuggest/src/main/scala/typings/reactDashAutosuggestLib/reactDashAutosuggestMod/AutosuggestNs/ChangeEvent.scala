@@ -16,9 +16,8 @@ object ChangeEvent {
     method: reactDashAutosuggestLib.reactDashAutosuggestLibStrings.down | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.up | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.escape | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.enter | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.click | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.`type`,
     newValue: java.lang.String
   ): ChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    __obj.updateDynamic("newValue")(newValue)
+    val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], newValue = newValue)
+  
     __obj.asInstanceOf[ChangeEvent]
   }
 }

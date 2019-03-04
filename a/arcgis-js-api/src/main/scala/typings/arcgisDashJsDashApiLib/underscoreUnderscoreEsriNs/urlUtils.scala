@@ -44,10 +44,8 @@ object urlUtils {
     getProxyRule: js.Function1[java.lang.String, js.Any],
     urlToObject: js.Function1[java.lang.String, js.Any]
   ): urlUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addProxyRule")(addProxyRule)
-    __obj.updateDynamic("getProxyRule")(getProxyRule)
-    __obj.updateDynamic("urlToObject")(urlToObject)
+    val __obj = js.Dynamic.literal(addProxyRule = addProxyRule, getProxyRule = getProxyRule, urlToObject = urlToObject)
+  
     __obj.asInstanceOf[urlUtils]
   }
 }

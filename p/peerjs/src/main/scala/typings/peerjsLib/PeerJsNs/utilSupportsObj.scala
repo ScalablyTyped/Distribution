@@ -15,11 +15,8 @@ trait utilSupportsObj extends js.Object {
 object utilSupportsObj {
   @scala.inline
   def apply(audioVideo: scala.Boolean, binary: scala.Boolean, data: scala.Boolean, reliable: scala.Boolean): utilSupportsObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("audioVideo")(audioVideo)
-    __obj.updateDynamic("binary")(binary)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("reliable")(reliable)
+    val __obj = js.Dynamic.literal(audioVideo = audioVideo, binary = binary, data = data, reliable = reliable)
+  
     __obj.asInstanceOf[utilSupportsObj]
   }
 }

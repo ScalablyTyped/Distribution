@@ -20,11 +20,8 @@ object IPropertyDefOrObjectType {
     ID: scala.Double,
     PropertyDef: scala.Boolean
   ): IPropertyDefOrObjectType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("GetAsExpression")(GetAsExpression)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("PropertyDef")(PropertyDef)
+    val __obj = js.Dynamic.literal(Clone = Clone, GetAsExpression = GetAsExpression, ID = ID, PropertyDef = PropertyDef)
+  
     __obj.asInstanceOf[IPropertyDefOrObjectType]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_Wn extends js.Object {
 object Anon_Wn {
   @scala.inline
   def apply(Wn: activexDashPowerpointLib.PowerPointNs.SlideShowWindow): Anon_Wn = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Wn")(Wn)
+    val __obj = js.Dynamic.literal(Wn = Wn)
+  
     __obj.asInstanceOf[Anon_Wn]
   }
 }

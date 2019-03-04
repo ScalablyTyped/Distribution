@@ -24,10 +24,8 @@ trait ASPxClientSpreadsheetPopupMenuShowingEventArgs extends ASPxClientCancelEve
 object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, menuItems: ASPxClientSpreadsheetPopupMenuItemCollection, menuType: js.Any): ASPxClientSpreadsheetPopupMenuShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("menuItems")(menuItems)
-    __obj.updateDynamic("menuType")(menuType)
+    val __obj = js.Dynamic.literal(cancel = cancel, menuItems = menuItems, menuType = menuType)
+  
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuShowingEventArgs]
   }
 }

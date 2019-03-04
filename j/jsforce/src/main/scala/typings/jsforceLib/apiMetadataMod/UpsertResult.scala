@@ -14,10 +14,8 @@ trait UpsertResult extends js.Object {
 object UpsertResult {
   @scala.inline
   def apply(created: scala.Boolean, fullName: java.lang.String, success: scala.Boolean): UpsertResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("fullName")(fullName)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(created = created, fullName = fullName, success = success)
+  
     __obj.asInstanceOf[UpsertResult]
   }
 }

@@ -13,9 +13,8 @@ trait NativeScrollSize extends js.Object {
 object NativeScrollSize {
   @scala.inline
   def apply(height: scala.Double, width: scala.Double): NativeScrollSize = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(height = height, width = width)
+  
     __obj.asInstanceOf[NativeScrollSize]
   }
 }

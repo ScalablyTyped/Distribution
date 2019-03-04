@@ -18,10 +18,8 @@ object RealtimeLoader {
     load: js.Function0[scala.Unit],
     start: js.Function0[scala.Unit]
   ): RealtimeLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleErrors")(handleErrors)
-    __obj.updateDynamic("load")(load)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(handleErrors = handleErrors, load = load, start = start)
+  
     __obj.asInstanceOf[RealtimeLoader]
   }
 }

@@ -54,28 +54,8 @@ object Model {
     show: scala.Boolean,
     update: js.Function0[scala.Unit]
   ): Model = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeAnimations")(activeAnimations)
-    __obj.updateDynamic("allowPicking")(allowPicking)
-    __obj.updateDynamic("asynchronous")(asynchronous)
-    __obj.updateDynamic("basePath")(basePath)
-    __obj.updateDynamic("boundingSphere")(boundingSphere)
-    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
-    __obj.updateDynamic("debugWireframe")(debugWireframe)
-    __obj.updateDynamic("destroy")(destroy)
-    __obj.updateDynamic("getMaterial")(getMaterial)
-    __obj.updateDynamic("getMesh")(getMesh)
-    __obj.updateDynamic("getNode")(getNode)
-    __obj.updateDynamic("gltf")(gltf)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isDestroyed")(isDestroyed)
-    __obj.updateDynamic("minimumPixelSize")(minimumPixelSize)
-    __obj.updateDynamic("modelMatrix")(modelMatrix)
-    __obj.updateDynamic("ready")(ready)
-    __obj.updateDynamic("readyPromise")(readyPromise)
-    __obj.updateDynamic("scale")(scale)
-    __obj.updateDynamic("show")(show)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(activeAnimations = activeAnimations, allowPicking = allowPicking, asynchronous = asynchronous, basePath = basePath, boundingSphere = boundingSphere, debugShowBoundingVolume = debugShowBoundingVolume, debugWireframe = debugWireframe, destroy = destroy, getMaterial = getMaterial, getMesh = getMesh, getNode = getNode, gltf = gltf, id = id, isDestroyed = isDestroyed, minimumPixelSize = minimumPixelSize, modelMatrix = modelMatrix, ready = ready, readyPromise = readyPromise, scale = scale, show = show, update = update)
+  
     __obj.asInstanceOf[Model]
   }
 }

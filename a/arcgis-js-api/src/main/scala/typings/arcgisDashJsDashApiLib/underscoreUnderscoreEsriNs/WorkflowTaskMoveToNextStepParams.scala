@@ -44,14 +44,8 @@ object WorkflowTaskMoveToNextStepParams {
     stepId: scala.Double,
     user: java.lang.String
   ): WorkflowTaskMoveToNextStepParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("jobId")(jobId)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("returnCode")(returnCode)
-    __obj.updateDynamic("stepId")(stepId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, jobId = jobId, propertyIsEnumerable = propertyIsEnumerable, returnCode = returnCode, stepId = stepId, user = user)
+  
     __obj.asInstanceOf[WorkflowTaskMoveToNextStepParams]
   }
 }

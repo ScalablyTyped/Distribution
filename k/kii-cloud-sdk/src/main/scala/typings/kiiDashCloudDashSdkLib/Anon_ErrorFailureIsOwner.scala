@@ -16,9 +16,8 @@ object Anon_ErrorFailureIsOwner {
     failure: js.Function1[stdLib.Error, js.Any],
     success: js.Function3[kiiDashCloudDashSdkLib.KiiCloudNs.KiiThing, T, scala.Boolean, js.Any]
   ): Anon_ErrorFailureIsOwner[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_ErrorFailureIsOwner[T]]
   }
 }

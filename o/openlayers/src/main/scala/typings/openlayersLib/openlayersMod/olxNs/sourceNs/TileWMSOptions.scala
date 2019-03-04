@@ -44,8 +44,7 @@ object TileWMSOptions {
     urls: js.Array[java.lang.String] = null,
     wrapX: js.UndefOr[scala.Boolean] = js.undefined
   ): TileWMSOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("params")(params)
+    val __obj = js.Dynamic.literal(params = params)
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin)

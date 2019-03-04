@@ -18,8 +18,7 @@ object Anon_IncludeArrayIndex {
     includeArrayIndex: java.lang.String = null,
     preserveNullAndEmptyArrays: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_IncludeArrayIndex = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
+    val __obj = js.Dynamic.literal(path = path)
     if (includeArrayIndex != null) __obj.updateDynamic("includeArrayIndex")(includeArrayIndex)
     if (!js.isUndefined(preserveNullAndEmptyArrays)) __obj.updateDynamic("preserveNullAndEmptyArrays")(preserveNullAndEmptyArrays)
     __obj.asInstanceOf[Anon_IncludeArrayIndex]

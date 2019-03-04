@@ -98,8 +98,7 @@ object INxDimension {
     qShowTotal: js.UndefOr[scala.Boolean] = js.undefined,
     qTotalLabel: IStringExpressionContainer = null
   ): INxDimension = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qDef")(qDef)
+    val __obj = js.Dynamic.literal(qDef = qDef)
     if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
     if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
     if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)

@@ -12,8 +12,8 @@ trait MultipleOfParams extends ErrorParameters {
 object MultipleOfParams {
   @scala.inline
   def apply(multipleOf: scala.Double): MultipleOfParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("multipleOf")(multipleOf)
+    val __obj = js.Dynamic.literal(multipleOf = multipleOf)
+  
     __obj.asInstanceOf[MultipleOfParams]
   }
 }

@@ -13,8 +13,7 @@ trait LocaleProviderProps extends js.Object {
 object LocaleProviderProps {
   @scala.inline
   def apply(locale: Locale, children: reactLib.reactMod.ReactNs.ReactNode = null): LocaleProviderProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("locale")(locale)
+    val __obj = js.Dynamic.literal(locale = locale)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocaleProviderProps]
   }

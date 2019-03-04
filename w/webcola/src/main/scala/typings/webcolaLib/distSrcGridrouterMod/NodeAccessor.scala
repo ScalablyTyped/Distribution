@@ -16,9 +16,8 @@ object NodeAccessor {
     getBounds: js.Function1[Node, webcolaLib.distSrcRectangleMod.Rectangle],
     getChildren: js.Function1[Node, js.Array[scala.Double]]
   ): NodeAccessor[Node] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("getChildren")(getChildren)
+    val __obj = js.Dynamic.literal(getBounds = getBounds, getChildren = getChildren)
+  
     __obj.asInstanceOf[NodeAccessor[Node]]
   }
 }

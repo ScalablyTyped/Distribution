@@ -24,13 +24,8 @@ object IShellItems {
     ObjectVersions: IObjectVersions,
     ObjectVersionsAndProperties: IObjectVersionAndPropertiesOfMultipleObjects
   ): IShellItems = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("Folders")(Folders)
-    __obj.updateDynamic("GetObjectVersionsCount")(GetObjectVersionsCount)
-    __obj.updateDynamic("ObjectFiles")(ObjectFiles)
-    __obj.updateDynamic("ObjectVersions")(ObjectVersions)
-    __obj.updateDynamic("ObjectVersionsAndProperties")(ObjectVersionsAndProperties)
+    val __obj = js.Dynamic.literal(Count = Count, Folders = Folders, GetObjectVersionsCount = GetObjectVersionsCount, ObjectFiles = ObjectFiles, ObjectVersions = ObjectVersions, ObjectVersionsAndProperties = ObjectVersionsAndProperties)
+  
     __obj.asInstanceOf[IShellItems]
   }
 }

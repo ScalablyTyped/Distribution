@@ -26,9 +26,8 @@ trait Attribute extends js.Object {
 object Attribute {
   @scala.inline
   def apply(range: js.Array[scala.Double], `type`: scala.Double, value: scala.Double): Attribute = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("range")(range)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(range = range, value = value)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Attribute]
   }
 }

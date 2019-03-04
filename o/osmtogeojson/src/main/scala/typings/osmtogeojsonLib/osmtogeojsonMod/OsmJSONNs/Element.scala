@@ -28,8 +28,8 @@ object Element {
     user: java.lang.String = null,
     version: scala.Int | scala.Double = null
   ): Element = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+    __obj.updateDynamic("type")(`type`)
     if (changeset != null) __obj.updateDynamic("changeset")(changeset.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)

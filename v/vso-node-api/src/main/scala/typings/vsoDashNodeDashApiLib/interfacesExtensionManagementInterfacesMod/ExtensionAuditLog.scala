@@ -27,10 +27,8 @@ object ExtensionAuditLog {
     extensionName: java.lang.String,
     publisherName: java.lang.String
   ): ExtensionAuditLog = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("publisherName")(publisherName)
+    val __obj = js.Dynamic.literal(entries = entries, extensionName = extensionName, publisherName = publisherName)
+  
     __obj.asInstanceOf[ExtensionAuditLog]
   }
 }

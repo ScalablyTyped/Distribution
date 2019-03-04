@@ -15,8 +15,7 @@ trait StyleRules extends js.Object {
 object StyleRules {
   @scala.inline
   def apply(rules: js.Array[Rule | Comment | AtRule], parsingErrors: js.Array[ParserError] = null): StyleRules = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(rules = rules)
     if (parsingErrors != null) __obj.updateDynamic("parsingErrors")(parsingErrors)
     __obj.asInstanceOf[StyleRules]
   }

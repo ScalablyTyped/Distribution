@@ -13,9 +13,8 @@ trait Anon_K extends js.Object {
 object Anon_K {
   @scala.inline
   def apply(path: java.lang.String, pkg: org.scalablytyped.runtime.StringDictionary[js.Any]): Anon_K = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("pkg")(pkg)
+    val __obj = js.Dynamic.literal(path = path, pkg = pkg)
+  
     __obj.asInstanceOf[Anon_K]
   }
 }

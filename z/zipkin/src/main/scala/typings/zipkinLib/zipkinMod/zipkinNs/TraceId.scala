@@ -25,14 +25,8 @@ object TraceId {
     toString: js.Function0[java.lang.String],
     traceId: java.lang.String
   ): TraceId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("isDebug")(isDebug)
-    __obj.updateDynamic("parentId")(parentId)
-    __obj.updateDynamic("sampled")(sampled)
-    __obj.updateDynamic("spanId")(spanId)
-    __obj.updateDynamic("toString")(toString)
-    __obj.updateDynamic("traceId")(traceId)
+    val __obj = js.Dynamic.literal(flags = flags, isDebug = isDebug, parentId = parentId, sampled = sampled, spanId = spanId, toString = toString, traceId = traceId)
+  
     __obj.asInstanceOf[TraceId]
   }
 }

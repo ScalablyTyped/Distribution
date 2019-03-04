@@ -30,16 +30,8 @@ object CentralDirectory {
     signature: scala.Double,
     sizeOfCentralDirectory: scala.Double
   ): CentralDirectory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("commentLength")(commentLength)
-    __obj.updateDynamic("diskNumber")(diskNumber)
-    __obj.updateDynamic("diskStart")(diskStart)
-    __obj.updateDynamic("files")(files)
-    __obj.updateDynamic("numberOfRecords")(numberOfRecords)
-    __obj.updateDynamic("numberOfRecordsOnDisk")(numberOfRecordsOnDisk)
-    __obj.updateDynamic("offsetToStartOfCentralDirectory")(offsetToStartOfCentralDirectory)
-    __obj.updateDynamic("signature")(signature)
-    __obj.updateDynamic("sizeOfCentralDirectory")(sizeOfCentralDirectory)
+    val __obj = js.Dynamic.literal(commentLength = commentLength, diskNumber = diskNumber, diskStart = diskStart, files = files, numberOfRecords = numberOfRecords, numberOfRecordsOnDisk = numberOfRecordsOnDisk, offsetToStartOfCentralDirectory = offsetToStartOfCentralDirectory, signature = signature, sizeOfCentralDirectory = sizeOfCentralDirectory)
+  
     __obj.asInstanceOf[CentralDirectory]
   }
 }

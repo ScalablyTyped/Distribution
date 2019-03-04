@@ -23,13 +23,8 @@ object GridViewContextMenuEventArgs {
     sender: Control,
     showBrowserMenu: scala.Boolean
   ): GridViewContextMenuEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("htmlEvent")(htmlEvent)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("menu")(menu)
-    __obj.updateDynamic("objectType")(objectType)
-    __obj.updateDynamic("sender")(sender)
-    __obj.updateDynamic("showBrowserMenu")(showBrowserMenu)
+    val __obj = js.Dynamic.literal(htmlEvent = htmlEvent, index = index, menu = menu, objectType = objectType, sender = sender, showBrowserMenu = showBrowserMenu)
+  
     __obj.asInstanceOf[GridViewContextMenuEventArgs]
   }
 }

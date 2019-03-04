@@ -27,12 +27,8 @@ object Restrictions {
     maxTVShowRank: scala.Double,
     maxTVShowRatingForCountry: js.Function1[java.lang.String, java.lang.String]
   ): Restrictions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("allowsExplicit")(allowsExplicit)
-    __obj.updateDynamic("maxMovieRank")(maxMovieRank)
-    __obj.updateDynamic("maxMovieRatingForCountry")(maxMovieRatingForCountry)
-    __obj.updateDynamic("maxTVShowRank")(maxTVShowRank)
-    __obj.updateDynamic("maxTVShowRatingForCountry")(maxTVShowRatingForCountry)
+    val __obj = js.Dynamic.literal(allowsExplicit = allowsExplicit, maxMovieRank = maxMovieRank, maxMovieRatingForCountry = maxMovieRatingForCountry, maxTVShowRank = maxTVShowRank, maxTVShowRatingForCountry = maxTVShowRatingForCountry)
+  
     __obj.asInstanceOf[Restrictions]
   }
 }

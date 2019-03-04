@@ -17,10 +17,8 @@ trait IChannel extends js.Object {
 object IChannel {
   @scala.inline
   def apply(name: java.lang.String, topic: java.lang.String, users: java.lang.String): IChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("topic")(topic)
-    __obj.updateDynamic("users")(users)
+    val __obj = js.Dynamic.literal(name = name, topic = topic, users = users)
+  
     __obj.asInstanceOf[IChannel]
   }
 }

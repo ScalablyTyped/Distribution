@@ -13,9 +13,8 @@ trait MorphNormals extends js.Object {
 object MorphNormals {
   @scala.inline
   def apply(name: java.lang.String, normals: js.Array[Vector3]): MorphNormals = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("normals")(normals)
+    val __obj = js.Dynamic.literal(name = name, normals = normals)
+  
     __obj.asInstanceOf[MorphNormals]
   }
 }

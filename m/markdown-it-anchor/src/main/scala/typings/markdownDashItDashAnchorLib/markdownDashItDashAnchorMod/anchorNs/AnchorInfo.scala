@@ -13,9 +13,8 @@ trait AnchorInfo extends js.Object {
 object AnchorInfo {
   @scala.inline
   def apply(slug: java.lang.String, title: java.lang.String): AnchorInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("slug")(slug)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(slug = slug, title = title)
+  
     __obj.asInstanceOf[AnchorInfo]
   }
 }

@@ -56,15 +56,8 @@ object XValueBinding {
     setValue: js.Function1[js.Any, scala.Unit],
     supportsType: js.Function1[activexDashLibreofficeLib.`type`, scala.Boolean]
   ): XValueBinding = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedValueTypes")(SupportedValueTypes)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getSupportedValueTypes")(getSupportedValueTypes)
-    __obj.updateDynamic("getValue")(getValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("setValue")(setValue)
-    __obj.updateDynamic("supportsType")(supportsType)
+    val __obj = js.Dynamic.literal(SupportedValueTypes = SupportedValueTypes, acquire = acquire, getSupportedValueTypes = getSupportedValueTypes, getValue = getValue, queryInterface = queryInterface, release = release, setValue = setValue, supportsType = supportsType)
+  
     __obj.asInstanceOf[XValueBinding]
   }
 }

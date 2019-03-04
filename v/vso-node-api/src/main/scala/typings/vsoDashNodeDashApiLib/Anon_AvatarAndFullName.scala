@@ -14,10 +14,8 @@ trait Anon_AvatarAndFullName extends js.Object {
 object Anon_AvatarAndFullName {
   @scala.inline
   def apply(avatarAndFullName: scala.Double, avatarOnly: scala.Double, fullName: scala.Double): Anon_AvatarAndFullName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("avatarAndFullName")(avatarAndFullName)
-    __obj.updateDynamic("avatarOnly")(avatarOnly)
-    __obj.updateDynamic("fullName")(fullName)
+    val __obj = js.Dynamic.literal(avatarAndFullName = avatarAndFullName, avatarOnly = avatarOnly, fullName = fullName)
+  
     __obj.asInstanceOf[Anon_AvatarAndFullName]
   }
 }

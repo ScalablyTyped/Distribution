@@ -14,10 +14,8 @@ trait CommonNeighbors extends js.Object {
 object CommonNeighbors {
   @scala.inline
   def apply(left: java.lang.String, neighbors: js.Array[java.lang.String], right: java.lang.String): CommonNeighbors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("neighbors")(neighbors)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(left = left, neighbors = neighbors, right = right)
+  
     __obj.asInstanceOf[CommonNeighbors]
   }
 }

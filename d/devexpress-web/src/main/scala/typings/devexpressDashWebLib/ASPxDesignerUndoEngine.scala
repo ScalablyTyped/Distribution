@@ -53,14 +53,8 @@ object ASPxDesignerUndoEngine {
     undoAll: js.Function0[scala.Unit],
     undoEnabled: js.Any
   ): ASPxDesignerUndoEngine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clearHistory")(clearHistory)
-    __obj.updateDynamic("isDirty")(isDirty)
-    __obj.updateDynamic("redo")(redo)
-    __obj.updateDynamic("redoEnabled")(redoEnabled)
-    __obj.updateDynamic("undo")(undo)
-    __obj.updateDynamic("undoAll")(undoAll)
-    __obj.updateDynamic("undoEnabled")(undoEnabled)
+    val __obj = js.Dynamic.literal(clearHistory = clearHistory, isDirty = isDirty, redo = redo, redoEnabled = redoEnabled, undo = undo, undoAll = undoAll, undoEnabled = undoEnabled)
+  
     __obj.asInstanceOf[ASPxDesignerUndoEngine]
   }
 }

@@ -19,10 +19,8 @@ object PolyPolygonShape3D {
     SequenceY: DoubleSequenceSequence,
     SequenceZ: DoubleSequenceSequence
   ): PolyPolygonShape3D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SequenceX")(SequenceX.asInstanceOf[js.Any])
-    __obj.updateDynamic("SequenceY")(SequenceY.asInstanceOf[js.Any])
-    __obj.updateDynamic("SequenceZ")(SequenceZ.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(SequenceX = SequenceX.asInstanceOf[js.Any], SequenceY = SequenceY.asInstanceOf[js.Any], SequenceZ = SequenceZ.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PolyPolygonShape3D]
   }
 }

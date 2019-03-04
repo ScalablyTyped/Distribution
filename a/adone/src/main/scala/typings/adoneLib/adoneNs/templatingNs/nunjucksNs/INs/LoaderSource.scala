@@ -14,10 +14,8 @@ trait LoaderSource extends js.Object {
 object LoaderSource {
   @scala.inline
   def apply(noCache: scala.Boolean, path: java.lang.String, src: java.lang.String): LoaderSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("noCache")(noCache)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(noCache = noCache, path = path, src = src)
+  
     __obj.asInstanceOf[LoaderSource]
   }
 }

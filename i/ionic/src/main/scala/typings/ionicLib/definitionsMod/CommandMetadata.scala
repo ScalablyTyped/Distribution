@@ -26,9 +26,8 @@ object CommandMetadata {
     inputs: js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput] = null,
     options: js.Array[CommandMetadataOption] = null
   ): CommandMetadata = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("summary")(summary)
+    val __obj = js.Dynamic.literal(name = name, summary = summary)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (exampleCommands != null) __obj.updateDynamic("exampleCommands")(exampleCommands)
     if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes)

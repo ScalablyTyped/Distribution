@@ -16,9 +16,8 @@ object ResizeObserverEntry {
     contentRect: resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.DOMRectReadOnly,
     target: stdLib.Element
   ): ResizeObserverEntry = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentRect")(contentRect)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(contentRect = contentRect, target = target)
+  
     __obj.asInstanceOf[ResizeObserverEntry]
   }
 }

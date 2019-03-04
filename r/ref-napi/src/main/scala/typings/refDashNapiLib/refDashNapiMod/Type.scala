@@ -30,11 +30,7 @@ object Type {
     alignment: scala.Int | scala.Double = null,
     name: java.lang.String = null
   ): Type = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("indirection")(indirection)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(get = get, indirection = indirection, set = set, size = size)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[Type]

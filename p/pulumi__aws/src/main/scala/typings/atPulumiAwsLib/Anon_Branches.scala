@@ -22,10 +22,7 @@ object Anon_Branches {
     branches: js.Array[java.lang.String] = null,
     customData: java.lang.String = null
   ): Anon_Branches = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destinationArn")(destinationArn)
-    __obj.updateDynamic("events")(events)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(destinationArn = destinationArn, events = events, name = name)
     if (branches != null) __obj.updateDynamic("branches")(branches)
     if (customData != null) __obj.updateDynamic("customData")(customData)
     __obj.asInstanceOf[Anon_Branches]

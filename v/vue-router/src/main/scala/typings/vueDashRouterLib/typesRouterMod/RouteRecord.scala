@@ -46,13 +46,7 @@ object RouteRecord {
     parent: RouteRecord = null,
     redirect: RedirectOption = null
   ): RouteRecord = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("components")(components)
-    __obj.updateDynamic("instances")(instances)
-    __obj.updateDynamic("meta")(meta)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    __obj.updateDynamic("regex")(regex)
+    val __obj = js.Dynamic.literal(components = components, instances = instances, meta = meta, path = path, props = props.asInstanceOf[js.Any], regex = regex)
     if (beforeEnter != null) __obj.updateDynamic("beforeEnter")(beforeEnter)
     if (matchAs != null) __obj.updateDynamic("matchAs")(matchAs)
     if (name != null) __obj.updateDynamic("name")(name)

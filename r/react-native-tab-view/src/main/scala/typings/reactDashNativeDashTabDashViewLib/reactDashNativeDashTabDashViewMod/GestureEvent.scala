@@ -12,8 +12,8 @@ trait GestureEvent extends js.Object {
 object GestureEvent {
   @scala.inline
   def apply(nativeEvent: reactDashNativeDashTabDashViewLib.Anon_ChangedTouches): GestureEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nativeEvent")(nativeEvent)
+    val __obj = js.Dynamic.literal(nativeEvent = nativeEvent)
+  
     __obj.asInstanceOf[GestureEvent]
   }
 }

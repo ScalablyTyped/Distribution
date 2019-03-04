@@ -12,8 +12,8 @@ trait INavbarProvider extends js.Object {
 object INavbarProvider {
   @scala.inline
   def apply(defaults: INavbarOptions): INavbarProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaults")(defaults)
+    val __obj = js.Dynamic.literal(defaults = defaults)
+  
     __obj.asInstanceOf[INavbarProvider]
   }
 }

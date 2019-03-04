@@ -30,13 +30,8 @@ object LogEvent {
     tags: js.Array[java.lang.String],
     timestamp: java.lang.String
   ): LogEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data, error = error, request = request, tags = tags, timestamp = timestamp)
+  
     __obj.asInstanceOf[LogEvent]
   }
 }

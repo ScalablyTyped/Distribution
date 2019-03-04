@@ -40,21 +40,8 @@ object IShellPaneContainer {
     TabTitleSize: scala.Double,
     Visible: scala.Boolean
   ): IShellPaneContainer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddTab")(AddTab)
-    __obj.updateDynamic("Content")(Content)
-    __obj.updateDynamic("Events")(Events)
-    __obj.updateDynamic("Focus")(Focus)
-    __obj.updateDynamic("GetSelectedTab")(GetSelectedTab)
-    __obj.updateDynamic("GetTab")(GetTab)
-    __obj.updateDynamic("IsFocused")(IsFocused)
-    __obj.updateDynamic("Minimized")(Minimized)
-    __obj.updateDynamic("SetDefaultSize")(SetDefaultSize)
-    __obj.updateDynamic("SetDefaultVisibility")(SetDefaultVisibility)
-    __obj.updateDynamic("ShellFrame")(ShellFrame)
-    __obj.updateDynamic("Size")(Size)
-    __obj.updateDynamic("TabTitleSize")(TabTitleSize)
-    __obj.updateDynamic("Visible")(Visible)
+    val __obj = js.Dynamic.literal(AddTab = AddTab, Content = Content, Events = Events, Focus = Focus, GetSelectedTab = GetSelectedTab, GetTab = GetTab, IsFocused = IsFocused, Minimized = Minimized, SetDefaultSize = SetDefaultSize, SetDefaultVisibility = SetDefaultVisibility, ShellFrame = ShellFrame, Size = Size, TabTitleSize = TabTitleSize, Visible = Visible)
+  
     __obj.asInstanceOf[IShellPaneContainer]
   }
 }

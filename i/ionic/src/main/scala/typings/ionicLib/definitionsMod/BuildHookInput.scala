@@ -16,9 +16,8 @@ object BuildHookInput {
     build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
     name: ionicLib.ionicLibStrings.`build:before` | ionicLib.ionicLibStrings.`build:after`
   ): BuildHookInput = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[BuildHookInput]
   }
 }

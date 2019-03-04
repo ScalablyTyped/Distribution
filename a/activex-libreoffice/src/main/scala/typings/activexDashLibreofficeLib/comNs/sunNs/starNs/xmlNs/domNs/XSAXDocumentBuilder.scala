@@ -35,19 +35,8 @@ object XSAXDocumentBuilder {
     reset: js.Function0[scala.Unit],
     startDocumentFragment: js.Function1[XDocument, scala.Unit]
   ): XSAXDocumentBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Document")(Document)
-    __obj.updateDynamic("DocumentFragment")(DocumentFragment)
-    __obj.updateDynamic("State")(State)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("endDocumentFragment")(endDocumentFragment)
-    __obj.updateDynamic("getDocument")(getDocument)
-    __obj.updateDynamic("getDocumentFragment")(getDocumentFragment)
-    __obj.updateDynamic("getState")(getState)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("startDocumentFragment")(startDocumentFragment)
+    val __obj = js.Dynamic.literal(Document = Document, DocumentFragment = DocumentFragment, State = State, acquire = acquire, endDocumentFragment = endDocumentFragment, getDocument = getDocument, getDocumentFragment = getDocumentFragment, getState = getState, queryInterface = queryInterface, release = release, reset = reset, startDocumentFragment = startDocumentFragment)
+  
     __obj.asInstanceOf[XSAXDocumentBuilder]
   }
 }

@@ -27,10 +27,8 @@ object ReviewSummary {
     ratingCount: scala.Double,
     ratingSplit: js.Array[RatingCountPerRating]
   ): ReviewSummary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("averageRating")(averageRating)
-    __obj.updateDynamic("ratingCount")(ratingCount)
-    __obj.updateDynamic("ratingSplit")(ratingSplit)
+    val __obj = js.Dynamic.literal(averageRating = averageRating, ratingCount = ratingCount, ratingSplit = ratingSplit)
+  
     __obj.asInstanceOf[ReviewSummary]
   }
 }

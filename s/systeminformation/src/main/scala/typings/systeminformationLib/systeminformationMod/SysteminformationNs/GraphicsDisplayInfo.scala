@@ -30,16 +30,8 @@ object GraphicsDisplayInfo {
     sizex: scala.Double,
     sizey: scala.Double
   ): GraphicsDisplayInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("builtin")(builtin)
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("main")(main)
-    __obj.updateDynamic("model")(model)
-    __obj.updateDynamic("pixeldepth")(pixeldepth)
-    __obj.updateDynamic("resolutionx")(resolutionx)
-    __obj.updateDynamic("resolutiony")(resolutiony)
-    __obj.updateDynamic("sizex")(sizex)
-    __obj.updateDynamic("sizey")(sizey)
+    val __obj = js.Dynamic.literal(builtin = builtin, connection = connection, main = main, model = model, pixeldepth = pixeldepth, resolutionx = resolutionx, resolutiony = resolutiony, sizex = sizex, sizey = sizey)
+  
     __obj.asInstanceOf[GraphicsDisplayInfo]
   }
 }

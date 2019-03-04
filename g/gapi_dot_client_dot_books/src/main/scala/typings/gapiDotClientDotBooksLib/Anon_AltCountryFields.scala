@@ -56,8 +56,7 @@ object Anon_AltCountryFields {
     userIp: java.lang.String = null,
     user_library_consistent_read: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AltCountryFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("volumeId")(volumeId)
+    val __obj = js.Dynamic.literal(volumeId = volumeId)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (country != null) __obj.updateDynamic("country")(country)
     if (fields != null) __obj.updateDynamic("fields")(fields)

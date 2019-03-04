@@ -26,8 +26,7 @@ object ImageMapTypeOptions {
     opacity: scala.Int | scala.Double = null,
     tileSize: Size = null
   ): ImageMapTypeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTileUrl")(getTileUrl)
+    val __obj = js.Dynamic.literal(getTileUrl = getTileUrl)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
     if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])

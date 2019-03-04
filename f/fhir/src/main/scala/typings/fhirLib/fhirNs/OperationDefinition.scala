@@ -229,13 +229,8 @@ object OperationDefinition {
     useContext: js.Array[UsageContext] = null,
     version: java.lang.String = null
   ): OperationDefinition = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("instance")(instance)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("system")(system)
+    val __obj = js.Dynamic.literal(code = code, instance = instance, kind = kind, name = name, status = status, system = system)
+    __obj.updateDynamic("type")(`type`)
     if (_code != null) __obj.updateDynamic("_code")(_code)
     if (_comment != null) __obj.updateDynamic("_comment")(_comment)
     if (_date != null) __obj.updateDynamic("_date")(_date)

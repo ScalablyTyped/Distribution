@@ -119,10 +119,7 @@ object TestReport {
     tester: java.lang.String = null,
     text: Narrative = null
   ): TestReport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("result")(result)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("testScript")(testScript)
+    val __obj = js.Dynamic.literal(result = result, status = status, testScript = testScript)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
     if (_issued != null) __obj.updateDynamic("_issued")(_issued)

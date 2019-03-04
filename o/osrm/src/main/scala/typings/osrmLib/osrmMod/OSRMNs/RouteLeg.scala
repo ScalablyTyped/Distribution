@@ -53,13 +53,8 @@ object RouteLeg {
     summary: java.lang.String,
     weight: scala.Double
   ): RouteLeg = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotation")(annotation)
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("steps")(steps)
-    __obj.updateDynamic("summary")(summary)
-    __obj.updateDynamic("weight")(weight)
+    val __obj = js.Dynamic.literal(annotation = annotation, distance = distance, duration = duration, steps = steps, summary = summary, weight = weight)
+  
     __obj.asInstanceOf[RouteLeg]
   }
 }

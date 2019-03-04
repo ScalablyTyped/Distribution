@@ -22,12 +22,8 @@ object DialogFacebookResultSelection {
     last_name: java.lang.String,
     name: java.lang.String
   ): DialogFacebookResultSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("first_name")(first_name)
-    __obj.updateDynamic("gender")(gender)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("last_name")(last_name)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(first_name = first_name, gender = gender, id = id, last_name = last_name, name = name)
+  
     __obj.asInstanceOf[DialogFacebookResultSelection]
   }
 }

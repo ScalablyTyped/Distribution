@@ -22,12 +22,8 @@ object NewmanRunExecutionAssertionError {
     stack: java.lang.String,
     test: java.lang.String
   ): NewmanRunExecutionAssertionError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("stack")(stack)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(index = index, message = message, name = name, stack = stack, test = test)
+  
     __obj.asInstanceOf[NewmanRunExecutionAssertionError]
   }
 }

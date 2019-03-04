@@ -23,7 +23,8 @@ object ListObjectsQuery {
     marker: java.lang.String = null,
     prefix: java.lang.String = null
   ): ListObjectsQuery = {
-    val __obj = js.Dynamic.literal(`max-keys` = `max-keys`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max-keys")(`max-keys`.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
     if (marker != null) __obj.updateDynamic("marker")(marker)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)

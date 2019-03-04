@@ -18,10 +18,8 @@ object TableColumnAst {
     columnsList: js.Array[java.lang.String],
     tableList: js.Array[java.lang.String]
   ): TableColumnAst = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
-    __obj.updateDynamic("columnsList")(columnsList)
-    __obj.updateDynamic("tableList")(tableList)
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], columnsList = columnsList, tableList = tableList)
+  
     __obj.asInstanceOf[TableColumnAst]
   }
 }

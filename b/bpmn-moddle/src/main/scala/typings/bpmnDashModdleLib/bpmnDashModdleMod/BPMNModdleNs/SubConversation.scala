@@ -26,16 +26,7 @@ object SubConversation {
     extensionDefinitions: js.Array[ExtensionDefinition] = null,
     extensionElements: ExtensionElements = null
   ): SubConversation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("conversationNodes")(conversationNodes)
-    __obj.updateDynamic("correlationKeys")(correlationKeys)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incomingConversationLinks")(incomingConversationLinks)
-    __obj.updateDynamic("messageFlowRefs")(messageFlowRefs)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("outgoingConversationLinks")(outgoingConversationLinks)
-    __obj.updateDynamic("participantRefs")(participantRefs)
+    val __obj = js.Dynamic.literal($type = $type, conversationNodes = conversationNodes, correlationKeys = correlationKeys, id = id, incomingConversationLinks = incomingConversationLinks, messageFlowRefs = messageFlowRefs, name = name, outgoingConversationLinks = outgoingConversationLinks, participantRefs = participantRefs)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

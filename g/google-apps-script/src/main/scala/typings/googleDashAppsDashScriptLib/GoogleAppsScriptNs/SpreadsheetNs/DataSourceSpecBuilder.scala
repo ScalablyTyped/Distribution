@@ -28,15 +28,8 @@ object DataSourceSpecBuilder {
     removeParameter: js.Function1[java.lang.String, DataSourceSpecBuilder],
     setParameterFromCell: js.Function2[java.lang.String, java.lang.String, DataSourceSpecBuilder]
   ): DataSourceSpecBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("asBigQuery")(asBigQuery)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("getParameters")(getParameters)
-    __obj.updateDynamic("getType")(getType)
-    __obj.updateDynamic("removeAllParameters")(removeAllParameters)
-    __obj.updateDynamic("removeParameter")(removeParameter)
-    __obj.updateDynamic("setParameterFromCell")(setParameterFromCell)
+    val __obj = js.Dynamic.literal(asBigQuery = asBigQuery, build = build, copy = copy, getParameters = getParameters, getType = getType, removeAllParameters = removeAllParameters, removeParameter = removeParameter, setParameterFromCell = setParameterFromCell)
+  
     __obj.asInstanceOf[DataSourceSpecBuilder]
   }
 }

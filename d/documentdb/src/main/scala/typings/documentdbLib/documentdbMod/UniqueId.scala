@@ -13,8 +13,8 @@ trait UniqueId extends js.Object {
 object UniqueId {
   @scala.inline
   def apply(id: java.lang.String): UniqueId = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(id = id)
+  
     __obj.asInstanceOf[UniqueId]
   }
 }

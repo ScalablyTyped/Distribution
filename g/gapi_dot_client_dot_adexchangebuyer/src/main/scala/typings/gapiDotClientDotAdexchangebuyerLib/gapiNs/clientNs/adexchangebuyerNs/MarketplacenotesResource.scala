@@ -24,9 +24,8 @@ object MarketplacenotesResource {
       gapiDotClientLib.gapiNs.clientNs.Request[GetOrderNotesResponse]
     ]
   ): MarketplacenotesResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(insert)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(insert = insert, list = list)
+  
     __obj.asInstanceOf[MarketplacenotesResource]
   }
 }

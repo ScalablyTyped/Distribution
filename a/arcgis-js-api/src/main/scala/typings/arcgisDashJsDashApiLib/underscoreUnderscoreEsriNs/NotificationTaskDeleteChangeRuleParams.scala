@@ -30,12 +30,8 @@ object NotificationTaskDeleteChangeRuleParams {
     ruleId: java.lang.String,
     user: java.lang.String
   ): NotificationTaskDeleteChangeRuleParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("ruleId")(ruleId)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, ruleId = ruleId, user = user)
+  
     __obj.asInstanceOf[NotificationTaskDeleteChangeRuleParams]
   }
 }

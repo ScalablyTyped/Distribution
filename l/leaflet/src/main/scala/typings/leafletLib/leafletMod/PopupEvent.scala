@@ -12,9 +12,8 @@ trait PopupEvent extends LeafletEvent {
 object PopupEvent {
   @scala.inline
   def apply(popup: Popup, target: js.Any, `type`: java.lang.String): PopupEvent = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("popup")(popup)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(popup = popup, target = target)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[PopupEvent]
   }
 }

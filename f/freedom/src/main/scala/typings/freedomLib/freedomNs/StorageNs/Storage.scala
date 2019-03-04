@@ -28,12 +28,8 @@ object Storage {
     remove: js.Function1[java.lang.String, js.Promise[java.lang.String]],
     set: js.Function2[java.lang.String, java.lang.String, js.Promise[java.lang.String]]
   ): Storage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("keys")(keys)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
+    val __obj = js.Dynamic.literal(clear = clear, get = get, keys = keys, remove = remove, set = set)
+  
     __obj.asInstanceOf[Storage]
   }
 }

@@ -20,11 +20,8 @@ object Anon_Chart {
     dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions,
     legend: Anon_Chart
   ): Anon_Chart = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("dataPoint")(dataPoint)
-    __obj.updateDynamic("dataSeries")(dataSeries)
-    __obj.updateDynamic("legend")(legend)
+    val __obj = js.Dynamic.literal(chart = chart, dataPoint = dataPoint, dataSeries = dataSeries, legend = legend)
+  
     __obj.asInstanceOf[Anon_Chart]
   }
 }

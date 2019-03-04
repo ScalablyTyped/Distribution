@@ -25,11 +25,8 @@ object GatedCheckInTrigger {
     triggerType: DefinitionTriggerType,
     useWorkspaceMappings: scala.Boolean
   ): GatedCheckInTrigger = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pathFilters")(pathFilters)
-    __obj.updateDynamic("runContinuousIntegration")(runContinuousIntegration)
-    __obj.updateDynamic("triggerType")(triggerType)
-    __obj.updateDynamic("useWorkspaceMappings")(useWorkspaceMappings)
+    val __obj = js.Dynamic.literal(pathFilters = pathFilters, runContinuousIntegration = runContinuousIntegration, triggerType = triggerType, useWorkspaceMappings = useWorkspaceMappings)
+  
     __obj.asInstanceOf[GatedCheckInTrigger]
   }
 }

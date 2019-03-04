@@ -22,8 +22,7 @@ object ProxyOptions {
     port: scala.Int | scala.Double = null,
     proxyAuth: java.lang.String = null
   ): ProxyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(headers = headers)
     if (host != null) __obj.updateDynamic("host")(host)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

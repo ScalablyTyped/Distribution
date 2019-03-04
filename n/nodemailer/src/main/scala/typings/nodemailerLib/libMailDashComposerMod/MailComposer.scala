@@ -26,12 +26,8 @@ object MailComposer {
     mail: nodemailerLib.libMailerMod.MailNs.Options,
     message: nodemailerLib.libMimeDashNodeMod.namespaced | nodemailerLib.nodemailerLibNumbers.`false`
   ): MailComposer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compile")(compile)
-    __obj.updateDynamic("getAlternatives")(getAlternatives)
-    __obj.updateDynamic("getAttachments")(getAttachments)
-    __obj.updateDynamic("mail")(mail)
-    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compile = compile, getAlternatives = getAlternatives, getAttachments = getAttachments, mail = mail, message = message.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[MailComposer]
   }
 }

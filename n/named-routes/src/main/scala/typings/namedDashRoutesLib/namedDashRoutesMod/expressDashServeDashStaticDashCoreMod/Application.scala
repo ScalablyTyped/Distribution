@@ -12,8 +12,8 @@ trait Application extends js.Object {
 object Application {
   @scala.inline
   def apply(namedRoutes: namedDashRoutesLib.namedDashRoutesMod.NamedRouter): Application = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("namedRoutes")(namedRoutes)
+    val __obj = js.Dynamic.literal(namedRoutes = namedRoutes)
+  
     __obj.asInstanceOf[Application]
   }
 }

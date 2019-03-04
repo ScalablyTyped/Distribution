@@ -24,13 +24,8 @@ object Attributes {
     size: scala.Double,
     uid: scala.Double
   ): Attributes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("atime")(atime)
-    __obj.updateDynamic("gid")(gid)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("mtime")(mtime)
-    __obj.updateDynamic("size")(size)
-    __obj.updateDynamic("uid")(uid)
+    val __obj = js.Dynamic.literal(atime = atime, gid = gid, mode = mode, mtime = mtime, size = size, uid = uid)
+  
     __obj.asInstanceOf[Attributes]
   }
 }

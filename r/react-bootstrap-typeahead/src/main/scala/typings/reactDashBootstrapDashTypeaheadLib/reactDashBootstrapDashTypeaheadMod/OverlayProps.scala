@@ -23,8 +23,7 @@ object OverlayProps {
     referenceElement: reactLib.HTMLElement = null,
     show: js.UndefOr[scala.Boolean] = js.undefined
   ): OverlayProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("container")(container)
+    val __obj = js.Dynamic.literal(container = container)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)

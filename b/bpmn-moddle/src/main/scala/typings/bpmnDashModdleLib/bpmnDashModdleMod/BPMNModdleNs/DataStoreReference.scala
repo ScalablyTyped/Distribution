@@ -29,15 +29,7 @@ object DataStoreReference {
     extensionElements: ExtensionElements = null,
     name: java.lang.String = null
   ): DataStoreReference = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$type")($type)
-    __obj.updateDynamic("auditing")(auditing)
-    __obj.updateDynamic("categoryValueRef")(categoryValueRef)
-    __obj.updateDynamic("dataState")(dataState)
-    __obj.updateDynamic("dataStoreRef")(dataStoreRef)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("itemSubjectRef")(itemSubjectRef)
-    __obj.updateDynamic("monitoring")(monitoring)
+    val __obj = js.Dynamic.literal($type = $type, auditing = auditing, categoryValueRef = categoryValueRef, dataState = dataState, dataStoreRef = dataStoreRef, id = id, itemSubjectRef = itemSubjectRef, monitoring = monitoring)
     if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
     if (documentation != null) __obj.updateDynamic("documentation")(documentation)
     if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)

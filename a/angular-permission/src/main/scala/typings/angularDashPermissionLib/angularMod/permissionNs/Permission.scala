@@ -18,9 +18,7 @@ object Permission {
     validatePermission: js.Function0[angularLib.angularMod.angularNs.IPromise[_]],
     validationFunction: PermissionValidationFunction = null
   ): Permission = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("permissionName")(permissionName)
-    __obj.updateDynamic("validatePermission")(validatePermission)
+    val __obj = js.Dynamic.literal(permissionName = permissionName, validatePermission = validatePermission)
     if (validationFunction != null) __obj.updateDynamic("validationFunction")(validationFunction)
     __obj.asInstanceOf[Permission]
   }

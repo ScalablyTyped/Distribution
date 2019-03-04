@@ -48,11 +48,7 @@ object Anon_Clock {
     tilingScheme: cesiumLib.cesiumMod.CesiumNs.TilingScheme = null,
     times: cesiumLib.cesiumMod.CesiumNs.TimeIntervalCollection = null
   ): Anon_Clock = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("layer")(layer)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("tileMatrixSetID")(tileMatrixSetID)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(layer = layer, style = style, tileMatrixSetID = tileMatrixSetID, url = url)
     if (clock != null) __obj.updateDynamic("clock")(clock)
     if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)

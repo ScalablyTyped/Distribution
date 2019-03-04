@@ -20,10 +20,8 @@ object Token {
     loc: SourceLocation = null,
     range: js.Tuple2[scala.Double, scala.Double] = null
   ): Token = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(end = end, start = start, value = value)
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)
     __obj.asInstanceOf[Token]

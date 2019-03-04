@@ -13,9 +13,8 @@ trait SitelinkData extends js.Object {
 object SitelinkData {
   @scala.inline
   def apply(lang: java.lang.String, project: java.lang.String): SitelinkData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("lang")(lang)
-    __obj.updateDynamic("project")(project)
+    val __obj = js.Dynamic.literal(lang = lang, project = project)
+  
     __obj.asInstanceOf[SitelinkData]
   }
 }

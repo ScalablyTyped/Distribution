@@ -26,12 +26,8 @@ object ParseMeta {
     linebreak: java.lang.String,
     truncated: scala.Boolean
   ): ParseMeta = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aborted")(aborted)
-    __obj.updateDynamic("delimiter")(delimiter)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("linebreak")(linebreak)
-    __obj.updateDynamic("truncated")(truncated)
+    val __obj = js.Dynamic.literal(aborted = aborted, delimiter = delimiter, fields = fields, linebreak = linebreak, truncated = truncated)
+  
     __obj.asInstanceOf[ParseMeta]
   }
 }

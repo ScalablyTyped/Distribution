@@ -25,8 +25,8 @@ object TSTypeLiteral {
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSTypeLiteral
   ): TSTypeLiteral = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("members")(members)
+    val __obj = js.Dynamic.literal(members = members)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TSTypeLiteral]
   }
 }

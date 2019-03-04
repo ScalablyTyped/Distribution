@@ -30,15 +30,8 @@ object Anon_Extras {
     targetPort: java.lang.String,
     `type`: java.lang.String
   ): Anon_Extras = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("labels")(labels)
-    __obj.updateDynamic("points")(points)
-    __obj.updateDynamic("selected")(selected)
-    __obj.updateDynamic("source")(source)
-    __obj.updateDynamic("sourcePort")(sourcePort)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("targetPort")(targetPort)
+    val __obj = js.Dynamic.literal(id = id, labels = labels, points = points, selected = selected, source = source, sourcePort = sourcePort, target = target, targetPort = targetPort)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Extras]
   }
 }

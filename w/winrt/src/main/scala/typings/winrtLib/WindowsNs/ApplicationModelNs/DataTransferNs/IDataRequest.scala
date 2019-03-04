@@ -20,11 +20,8 @@ object IDataRequest {
     failWithDisplayText: js.Function1[java.lang.String, scala.Unit],
     getDeferral: js.Function0[DataRequestDeferral]
   ): IDataRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("deadline")(deadline)
-    __obj.updateDynamic("failWithDisplayText")(failWithDisplayText)
-    __obj.updateDynamic("getDeferral")(getDeferral)
+    val __obj = js.Dynamic.literal(data = data, deadline = deadline, failWithDisplayText = failWithDisplayText, getDeferral = getDeferral)
+  
     __obj.asInstanceOf[IDataRequest]
   }
 }

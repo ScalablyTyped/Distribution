@@ -58,11 +58,8 @@ object Endpoints {
     metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
     subsets: js.Array[EndpointSubset]
   ): Endpoints = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apiVersion")(apiVersion)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("metadata")(metadata)
-    __obj.updateDynamic("subsets")(subsets)
+    val __obj = js.Dynamic.literal(apiVersion = apiVersion, kind = kind, metadata = metadata, subsets = subsets)
+  
     __obj.asInstanceOf[Endpoints]
   }
 }

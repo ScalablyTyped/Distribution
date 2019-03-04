@@ -28,15 +28,8 @@ object TfvcShelvesetRef {
     owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
     url: java.lang.String
   ): TfvcShelvesetRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("comment")(comment)
-    __obj.updateDynamic("commentTruncated")(commentTruncated)
-    __obj.updateDynamic("createdDate")(createdDate)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(_links = _links, comment = comment, commentTruncated = commentTruncated, createdDate = createdDate, id = id, name = name, owner = owner, url = url)
+  
     __obj.asInstanceOf[TfvcShelvesetRef]
   }
 }

@@ -13,9 +13,8 @@ trait IconInfo extends js.Object {
 object IconInfo {
   @scala.inline
   def apply(file: java.lang.String, size: scala.Double): IconInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("file")(file)
-    __obj.updateDynamic("size")(size)
+    val __obj = js.Dynamic.literal(file = file, size = size)
+  
     __obj.asInstanceOf[IconInfo]
   }
 }

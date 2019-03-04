@@ -13,8 +13,7 @@ trait SchemaError
 object SchemaError {
   @scala.inline
   def apply(message: java.lang.String, stack: java.lang.String = null): SchemaError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(message = message)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     __obj.asInstanceOf[SchemaError]
   }

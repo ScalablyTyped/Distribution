@@ -13,9 +13,8 @@ trait Closest extends js.Object {
 object Closest {
   @scala.inline
   def apply(mdist: scala.Double, mpos: scala.Double): Closest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mdist")(mdist)
-    __obj.updateDynamic("mpos")(mpos)
+    val __obj = js.Dynamic.literal(mdist = mdist, mpos = mpos)
+  
     __obj.asInstanceOf[Closest]
   }
 }

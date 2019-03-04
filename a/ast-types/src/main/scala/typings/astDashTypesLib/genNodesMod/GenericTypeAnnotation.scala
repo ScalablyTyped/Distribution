@@ -24,8 +24,8 @@ object GenericTypeAnnotation {
     `type`: astDashTypesLib.astDashTypesLibStrings.GenericTypeAnnotation,
     typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
   ): GenericTypeAnnotation = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`)
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
     __obj.asInstanceOf[GenericTypeAnnotation]
   }

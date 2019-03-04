@@ -132,27 +132,8 @@ object RelyingpartyResource {
       gapiDotClientLib.gapiNs.clientNs.Request[IdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
     ]
   ): RelyingpartyResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createAuthUri")(createAuthUri)
-    __obj.updateDynamic("deleteAccount")(deleteAccount)
-    __obj.updateDynamic("downloadAccount")(downloadAccount)
-    __obj.updateDynamic("emailLinkSignin")(emailLinkSignin)
-    __obj.updateDynamic("getAccountInfo")(getAccountInfo)
-    __obj.updateDynamic("getOobConfirmationCode")(getOobConfirmationCode)
-    __obj.updateDynamic("getProjectConfig")(getProjectConfig)
-    __obj.updateDynamic("getPublicKeys")(getPublicKeys)
-    __obj.updateDynamic("getRecaptchaParam")(getRecaptchaParam)
-    __obj.updateDynamic("resetPassword")(resetPassword)
-    __obj.updateDynamic("sendVerificationCode")(sendVerificationCode)
-    __obj.updateDynamic("setAccountInfo")(setAccountInfo)
-    __obj.updateDynamic("setProjectConfig")(setProjectConfig)
-    __obj.updateDynamic("signOutUser")(signOutUser)
-    __obj.updateDynamic("signupNewUser")(signupNewUser)
-    __obj.updateDynamic("uploadAccount")(uploadAccount)
-    __obj.updateDynamic("verifyAssertion")(verifyAssertion)
-    __obj.updateDynamic("verifyCustomToken")(verifyCustomToken)
-    __obj.updateDynamic("verifyPassword")(verifyPassword)
-    __obj.updateDynamic("verifyPhoneNumber")(verifyPhoneNumber)
+    val __obj = js.Dynamic.literal(createAuthUri = createAuthUri, deleteAccount = deleteAccount, downloadAccount = downloadAccount, emailLinkSignin = emailLinkSignin, getAccountInfo = getAccountInfo, getOobConfirmationCode = getOobConfirmationCode, getProjectConfig = getProjectConfig, getPublicKeys = getPublicKeys, getRecaptchaParam = getRecaptchaParam, resetPassword = resetPassword, sendVerificationCode = sendVerificationCode, setAccountInfo = setAccountInfo, setProjectConfig = setProjectConfig, signOutUser = signOutUser, signupNewUser = signupNewUser, uploadAccount = uploadAccount, verifyAssertion = verifyAssertion, verifyCustomToken = verifyCustomToken, verifyPassword = verifyPassword, verifyPhoneNumber = verifyPhoneNumber)
+  
     __obj.asInstanceOf[RelyingpartyResource]
   }
 }

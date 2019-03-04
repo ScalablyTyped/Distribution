@@ -39,16 +39,8 @@ object LocaleFormats {
     v: java.lang.String,
     x: java.lang.String
   ): LocaleFormats = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("D")(D)
-    __obj.updateDynamic("F")(F)
-    __obj.updateDynamic("R")(R)
-    __obj.updateDynamic("T")(T)
-    __obj.updateDynamic("X")(X)
-    __obj.updateDynamic("c")(c)
-    __obj.updateDynamic("r")(r)
-    __obj.updateDynamic("v")(v)
-    __obj.updateDynamic("x")(x)
+    val __obj = js.Dynamic.literal(D = D, F = F, R = R, T = T, X = X, c = c, r = r, v = v, x = x)
+  
     __obj.asInstanceOf[LocaleFormats]
   }
 }

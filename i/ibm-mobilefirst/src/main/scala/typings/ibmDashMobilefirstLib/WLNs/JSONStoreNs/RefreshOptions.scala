@@ -18,8 +18,7 @@ object RefreshOptions {
     onFailure: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null,
     onSuccess: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null
   ): RefreshOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("push")(push)
+    val __obj = js.Dynamic.literal(push = push)
     if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
     if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
     if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)

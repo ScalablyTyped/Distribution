@@ -22,12 +22,8 @@ object SearchViewModelSearchCompleteEvent {
     results: js.Array[SearchViewModelSearchCompleteEventResults],
     searchTerm: java.lang.String
   ): SearchViewModelSearchCompleteEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeSourceIndex")(activeSourceIndex)
-    __obj.updateDynamic("errors")(errors)
-    __obj.updateDynamic("numResults")(numResults)
-    __obj.updateDynamic("results")(results)
-    __obj.updateDynamic("searchTerm")(searchTerm)
+    val __obj = js.Dynamic.literal(activeSourceIndex = activeSourceIndex, errors = errors, numResults = numResults, results = results, searchTerm = searchTerm)
+  
     __obj.asInstanceOf[SearchViewModelSearchCompleteEvent]
   }
 }

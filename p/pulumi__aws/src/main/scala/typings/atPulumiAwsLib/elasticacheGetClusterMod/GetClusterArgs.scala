@@ -16,8 +16,7 @@ trait GetClusterArgs extends js.Object {
 object GetClusterArgs {
   @scala.inline
   def apply(clusterId: java.lang.String, tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null): GetClusterArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clusterId")(clusterId)
+    val __obj = js.Dynamic.literal(clusterId = clusterId)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetClusterArgs]
   }

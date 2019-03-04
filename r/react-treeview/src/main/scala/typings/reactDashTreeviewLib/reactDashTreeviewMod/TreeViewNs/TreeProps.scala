@@ -26,8 +26,7 @@ object TreeProps {
     itemClassName: java.lang.String = null,
     treeViewClassName: java.lang.String = null
   ): TreeProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeLabel")(nodeLabel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nodeLabel = nodeLabel.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
     if (childrenClassName != null) __obj.updateDynamic("childrenClassName")(childrenClassName)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)

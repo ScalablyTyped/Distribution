@@ -12,8 +12,8 @@ trait Anon_Frequency extends js.Object {
 object Anon_Frequency {
   @scala.inline
   def apply(frequency: java.lang.String): Anon_Frequency = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("frequency")(frequency)
+    val __obj = js.Dynamic.literal(frequency = frequency)
+  
     __obj.asInstanceOf[Anon_Frequency]
   }
 }

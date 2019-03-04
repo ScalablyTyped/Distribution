@@ -18,8 +18,7 @@ object Anon_BucketNameEnableS3KeyPrefix {
     bucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3KeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_BucketNameEnableS3KeyPrefix = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any])
     if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
     if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BucketNameEnableS3KeyPrefix]

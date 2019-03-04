@@ -39,13 +39,8 @@ object XSubTotalCalculatable {
     release: js.Function0[scala.Unit],
     removeSubTotals: js.Function0[scala.Unit]
   ): XSubTotalCalculatable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("applySubTotals")(applySubTotals)
-    __obj.updateDynamic("createSubTotalDescriptor")(createSubTotalDescriptor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeSubTotals")(removeSubTotals)
+    val __obj = js.Dynamic.literal(acquire = acquire, applySubTotals = applySubTotals, createSubTotalDescriptor = createSubTotalDescriptor, queryInterface = queryInterface, release = release, removeSubTotals = removeSubTotals)
+  
     __obj.asInstanceOf[XSubTotalCalculatable]
   }
 }

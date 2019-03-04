@@ -15,8 +15,8 @@ trait Anon_Cancel
 object Anon_Cancel {
   @scala.inline
   def apply(`type`: expoLib.expoLibStrings.cancel): Anon_Cancel = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Cancel]
   }
 }

@@ -19,10 +19,8 @@ object OpenCLPlatform {
     Name: java.lang.String,
     Vendor: java.lang.String
   ): OpenCLPlatform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Devices")(Devices)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Vendor")(Vendor)
+    val __obj = js.Dynamic.literal(Devices = Devices, Name = Name, Vendor = Vendor)
+  
     __obj.asInstanceOf[OpenCLPlatform]
   }
 }

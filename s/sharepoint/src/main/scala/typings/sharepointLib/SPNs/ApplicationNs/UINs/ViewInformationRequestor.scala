@@ -12,8 +12,8 @@ trait ViewInformationRequestor extends js.Object {
 object ViewInformationRequestor {
   @scala.inline
   def apply(onViewInformationReturned: js.Function1[ViewSelectorGroups, scala.Unit]): ViewInformationRequestor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onViewInformationReturned")(onViewInformationReturned)
+    val __obj = js.Dynamic.literal(onViewInformationReturned = onViewInformationReturned)
+  
     __obj.asInstanceOf[ViewInformationRequestor]
   }
 }

@@ -22,10 +22,8 @@ object StylesCreator {
     options: atMaterialDashUiCoreLib.Anon_Index,
     themingEnabled: scala.Boolean
   ): StylesCreator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("options")(options)
-    __obj.updateDynamic("themingEnabled")(themingEnabled)
+    val __obj = js.Dynamic.literal(create = create, options = options, themingEnabled = themingEnabled)
+  
     __obj.asInstanceOf[StylesCreator]
   }
 }

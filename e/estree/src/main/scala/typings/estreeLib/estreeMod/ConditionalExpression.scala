@@ -25,10 +25,8 @@ object ConditionalExpression {
     range: js.Tuple2[scala.Double, scala.Double] = null,
     trailingComments: js.Array[Comment] = null
   ): ConditionalExpression = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alternate")(alternate)
-    __obj.updateDynamic("consequent")(consequent)
-    __obj.updateDynamic("test")(test)
+    val __obj = js.Dynamic.literal(alternate = alternate, consequent = consequent, test = test)
+    __obj.updateDynamic("type")(`type`)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (range != null) __obj.updateDynamic("range")(range)

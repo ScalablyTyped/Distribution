@@ -28,15 +28,8 @@ object IDictionary {
     set: js.Function2[TKey, TValue, scala.Boolean],
     toEnumerable: js.Function0[IEnumerable[linqLib.Anon_KeyValue[TKey, TValue]]]
   ): IDictionary[TKey, TValue] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("contains")(contains)
-    __obj.updateDynamic("count")(count)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("toEnumerable")(toEnumerable)
+    val __obj = js.Dynamic.literal(add = add, clear = clear, contains = contains, count = count, get = get, remove = remove, set = set, toEnumerable = toEnumerable)
+  
     __obj.asInstanceOf[IDictionary[TKey, TValue]]
   }
 }

@@ -12,8 +12,8 @@ trait ContextConfigData extends js.Object {
 object ContextConfigData {
   @scala.inline
   def apply(options: wonderDotJsLib.Anon_Alpha): ContextConfigData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
+  
     __obj.asInstanceOf[ContextConfigData]
   }
 }

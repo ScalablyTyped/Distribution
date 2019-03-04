@@ -33,8 +33,7 @@ object ITimelineMedia {
     credit: java.lang.String = null,
     thumbnail: java.lang.String = null
   ): ITimelineMedia = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (caption != null) __obj.updateDynamic("caption")(caption)
     if (credit != null) __obj.updateDynamic("credit")(credit)
     if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)

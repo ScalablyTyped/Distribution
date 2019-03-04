@@ -15,8 +15,8 @@ trait TouchBarGroupConstructorOptions extends js.Object {
 object TouchBarGroupConstructorOptions {
   @scala.inline
   def apply(items: TouchBar): TouchBarGroupConstructorOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("items")(items)
+    val __obj = js.Dynamic.literal(items = items)
+  
     __obj.asInstanceOf[TouchBarGroupConstructorOptions]
   }
 }

@@ -36,10 +36,7 @@ object Anon_Buffer {
     structureisBigEndian: js.UndefOr[scala.Boolean] = js.undefined,
     structurestride: scala.Int | scala.Double = null
   ): Anon_Buffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], height = height, width = width)
     if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
     if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
     if (structure != null) __obj.updateDynamic("structure")(structure)

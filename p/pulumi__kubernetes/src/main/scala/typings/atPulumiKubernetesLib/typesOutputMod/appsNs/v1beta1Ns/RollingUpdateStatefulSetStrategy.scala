@@ -19,8 +19,8 @@ trait RollingUpdateStatefulSetStrategy extends js.Object {
 object RollingUpdateStatefulSetStrategy {
   @scala.inline
   def apply(partition: scala.Double): RollingUpdateStatefulSetStrategy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("partition")(partition)
+    val __obj = js.Dynamic.literal(partition = partition)
+  
     __obj.asInstanceOf[RollingUpdateStatefulSetStrategy]
   }
 }

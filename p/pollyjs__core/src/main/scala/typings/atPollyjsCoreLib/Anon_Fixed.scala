@@ -16,9 +16,8 @@ object Anon_Fixed {
     fixed: js.Function1[scala.Double, js.Function0[js.Promise[scala.Unit]]],
     relative: js.Function1[scala.Double, js.Function1[/* ms */ scala.Double, js.Promise[scala.Unit]]]
   ): Anon_Fixed = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fixed")(fixed)
-    __obj.updateDynamic("relative")(relative)
+    val __obj = js.Dynamic.literal(fixed = fixed, relative = relative)
+  
     __obj.asInstanceOf[Anon_Fixed]
   }
 }

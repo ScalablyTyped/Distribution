@@ -73,19 +73,7 @@ object CaptionShape {
     Shape: Shape = null,
     Text: Text = null
   ): CaptionShape = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CaptionAngle")(CaptionAngle)
-    __obj.updateDynamic("CaptionEscapeAbsolute")(CaptionEscapeAbsolute)
-    __obj.updateDynamic("CaptionEscapeDirection")(CaptionEscapeDirection)
-    __obj.updateDynamic("CaptionEscapeRelative")(CaptionEscapeRelative)
-    __obj.updateDynamic("CaptionGap")(CaptionGap)
-    __obj.updateDynamic("CaptionIsEscapeRelative")(CaptionIsEscapeRelative)
-    __obj.updateDynamic("CaptionIsFitLineLength")(CaptionIsFitLineLength)
-    __obj.updateDynamic("CaptionIsFixedAngle")(CaptionIsFixedAngle)
-    __obj.updateDynamic("CaptionLineLength")(CaptionLineLength)
-    __obj.updateDynamic("CaptionPoint")(CaptionPoint)
-    __obj.updateDynamic("CaptionType")(CaptionType)
-    __obj.updateDynamic("CornerRadius")(CornerRadius)
+    val __obj = js.Dynamic.literal(CaptionAngle = CaptionAngle, CaptionEscapeAbsolute = CaptionEscapeAbsolute, CaptionEscapeDirection = CaptionEscapeDirection, CaptionEscapeRelative = CaptionEscapeRelative, CaptionGap = CaptionGap, CaptionIsEscapeRelative = CaptionIsEscapeRelative, CaptionIsFitLineLength = CaptionIsFitLineLength, CaptionIsFixedAngle = CaptionIsFixedAngle, CaptionLineLength = CaptionLineLength, CaptionPoint = CaptionPoint, CaptionType = CaptionType, CornerRadius = CornerRadius)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
     if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)

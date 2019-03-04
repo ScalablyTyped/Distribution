@@ -57,13 +57,8 @@ object PawsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[PawsVerifyDeviceResponse]
     ]
   ): PawsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getSpectrum")(getSpectrum)
-    __obj.updateDynamic("getSpectrumBatch")(getSpectrumBatch)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("notifySpectrumUse")(notifySpectrumUse)
-    __obj.updateDynamic("register")(register)
-    __obj.updateDynamic("verifyDevice")(verifyDevice)
+    val __obj = js.Dynamic.literal(getSpectrum = getSpectrum, getSpectrumBatch = getSpectrumBatch, init = init, notifySpectrumUse = notifySpectrumUse, register = register, verifyDevice = verifyDevice)
+  
     __obj.asInstanceOf[PawsResource]
   }
 }

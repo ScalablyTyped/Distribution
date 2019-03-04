@@ -31,8 +31,7 @@ object User {
     scopes: js.Array[java.lang.String] = null,
     serverAuthCode: java.lang.String = null
   ): User = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(user = user)
     if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
     if (accessTokenExpirationDate != null) __obj.updateDynamic("accessTokenExpirationDate")(accessTokenExpirationDate.asInstanceOf[js.Any])
     if (idToken != null) __obj.updateDynamic("idToken")(idToken)

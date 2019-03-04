@@ -12,8 +12,8 @@ trait Anon_CropWithEllipsis extends js.Object {
 object Anon_CropWithEllipsis {
   @scala.inline
   def apply(cropWithEllipsis: scala.Boolean): Anon_CropWithEllipsis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cropWithEllipsis")(cropWithEllipsis)
+    val __obj = js.Dynamic.literal(cropWithEllipsis = cropWithEllipsis)
+  
     __obj.asInstanceOf[Anon_CropWithEllipsis]
   }
 }

@@ -20,8 +20,8 @@ object Anon_Splice {
       (js.Tuple2[scala.Double, js.UndefOr[scala.Double]]) | (js.Array[scala.Double | T])
     ]
   ): Anon_Splice[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$splice")($splice)
+    val __obj = js.Dynamic.literal($splice = $splice)
+  
     __obj.asInstanceOf[Anon_Splice[T]]
   }
 }

@@ -35,11 +35,7 @@ object EditorChangeCancellable {
       scala.Unit
     ] = null
   ): EditorChangeCancellable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(cancel = cancel, from = from, text = text, to = to)
     if (origin != null) __obj.updateDynamic("origin")(origin)
     if (removed != null) __obj.updateDynamic("removed")(removed)
     if (update != null) __obj.updateDynamic("update")(update)

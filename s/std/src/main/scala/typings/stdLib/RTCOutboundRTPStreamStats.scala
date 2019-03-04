@@ -34,9 +34,8 @@ object RTCOutboundRTPStreamStats {
     targetBitrate: scala.Int | scala.Double = null,
     transportId: java.lang.String = null
   ): RTCOutboundRTPStreamStats = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("timestamp")(timestamp)
+    val __obj = js.Dynamic.literal(id = id, timestamp = timestamp)
+    __obj.updateDynamic("type")(`type`)
     if (associateStatsId != null) __obj.updateDynamic("associateStatsId")(associateStatsId)
     if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
     if (codecId != null) __obj.updateDynamic("codecId")(codecId)

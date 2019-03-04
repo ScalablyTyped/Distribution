@@ -12,8 +12,8 @@ trait Anon_CancelBooleanReadOnly extends js.Object {
 object Anon_CancelBooleanReadOnly {
   @scala.inline
   def apply(Cancel: scala.Boolean): Anon_CancelBooleanReadOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
+    val __obj = js.Dynamic.literal(Cancel = Cancel)
+  
     __obj.asInstanceOf[Anon_CancelBooleanReadOnly]
   }
 }

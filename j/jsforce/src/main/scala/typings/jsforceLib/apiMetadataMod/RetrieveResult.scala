@@ -20,11 +20,8 @@ object RetrieveResult {
     messages: js.Array[js.Object],
     zipFile: java.lang.String
   ): RetrieveResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileProperties")(fileProperties)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("messages")(messages)
-    __obj.updateDynamic("zipFile")(zipFile)
+    val __obj = js.Dynamic.literal(fileProperties = fileProperties, id = id, messages = messages, zipFile = zipFile)
+  
     __obj.asInstanceOf[RetrieveResult]
   }
 }

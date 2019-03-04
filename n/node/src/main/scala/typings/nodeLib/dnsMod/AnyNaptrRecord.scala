@@ -22,13 +22,8 @@ object AnyNaptrRecord {
     service: java.lang.String,
     `type`: nodeLib.nodeLibStrings.NAPTR
   ): AnyNaptrRecord = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("flags")(flags)
-    __obj.updateDynamic("order")(order)
-    __obj.updateDynamic("preference")(preference)
-    __obj.updateDynamic("regexp")(regexp)
-    __obj.updateDynamic("replacement")(replacement)
-    __obj.updateDynamic("service")(service)
+    val __obj = js.Dynamic.literal(flags = flags, order = order, preference = preference, regexp = regexp, replacement = replacement, service = service)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[AnyNaptrRecord]
   }
 }

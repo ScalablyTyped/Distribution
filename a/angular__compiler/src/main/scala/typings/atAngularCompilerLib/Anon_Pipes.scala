@@ -20,9 +20,8 @@ object Anon_Pipes {
       atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
     ]
   ): Anon_Pipes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pipes")(pipes)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(pipes = pipes, template = template)
+  
     __obj.asInstanceOf[Anon_Pipes]
   }
 }

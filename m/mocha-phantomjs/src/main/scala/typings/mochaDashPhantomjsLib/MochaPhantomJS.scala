@@ -26,14 +26,8 @@ object MochaPhantomJS {
     startTime: stdLib.Date,
     url: java.lang.String
   ): MochaPhantomJS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("columns")(columns)
-    __obj.updateDynamic("customizeMocha")(customizeMocha)
-    __obj.updateDynamic("mochaStartWait")(mochaStartWait)
-    __obj.updateDynamic("output")(output)
-    __obj.updateDynamic("run")(run)
-    __obj.updateDynamic("startTime")(startTime)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(columns = columns, customizeMocha = customizeMocha, mochaStartWait = mochaStartWait, output = output, run = run, startTime = startTime, url = url)
+  
     __obj.asInstanceOf[MochaPhantomJS]
   }
 }

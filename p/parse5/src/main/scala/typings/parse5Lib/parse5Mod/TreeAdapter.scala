@@ -238,37 +238,8 @@ object TreeAdapter {
     setDocumentType: js.Function4[Document, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
     setTemplateContent: js.Function2[Element, DocumentFragment, scala.Unit]
   ): TreeAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("adoptAttributes")(adoptAttributes)
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("createCommentNode")(createCommentNode)
-    __obj.updateDynamic("createDocument")(createDocument)
-    __obj.updateDynamic("createDocumentFragment")(createDocumentFragment)
-    __obj.updateDynamic("createElement")(createElement)
-    __obj.updateDynamic("detachNode")(detachNode)
-    __obj.updateDynamic("getAttrList")(getAttrList)
-    __obj.updateDynamic("getChildNodes")(getChildNodes)
-    __obj.updateDynamic("getCommentNodeContent")(getCommentNodeContent)
-    __obj.updateDynamic("getDocumentMode")(getDocumentMode)
-    __obj.updateDynamic("getDocumentTypeNodeName")(getDocumentTypeNodeName)
-    __obj.updateDynamic("getDocumentTypeNodePublicId")(getDocumentTypeNodePublicId)
-    __obj.updateDynamic("getDocumentTypeNodeSystemId")(getDocumentTypeNodeSystemId)
-    __obj.updateDynamic("getFirstChild")(getFirstChild)
-    __obj.updateDynamic("getNamespaceURI")(getNamespaceURI)
-    __obj.updateDynamic("getParentNode")(getParentNode)
-    __obj.updateDynamic("getTagName")(getTagName)
-    __obj.updateDynamic("getTemplateContent")(getTemplateContent)
-    __obj.updateDynamic("getTextNodeContent")(getTextNodeContent)
-    __obj.updateDynamic("insertBefore")(insertBefore)
-    __obj.updateDynamic("insertText")(insertText)
-    __obj.updateDynamic("insertTextBefore")(insertTextBefore)
-    __obj.updateDynamic("isCommentNode")(isCommentNode)
-    __obj.updateDynamic("isDocumentTypeNode")(isDocumentTypeNode)
-    __obj.updateDynamic("isElementNode")(isElementNode)
-    __obj.updateDynamic("isTextNode")(isTextNode)
-    __obj.updateDynamic("setDocumentMode")(setDocumentMode)
-    __obj.updateDynamic("setDocumentType")(setDocumentType)
-    __obj.updateDynamic("setTemplateContent")(setTemplateContent)
+    val __obj = js.Dynamic.literal(adoptAttributes = adoptAttributes, appendChild = appendChild, createCommentNode = createCommentNode, createDocument = createDocument, createDocumentFragment = createDocumentFragment, createElement = createElement, detachNode = detachNode, getAttrList = getAttrList, getChildNodes = getChildNodes, getCommentNodeContent = getCommentNodeContent, getDocumentMode = getDocumentMode, getDocumentTypeNodeName = getDocumentTypeNodeName, getDocumentTypeNodePublicId = getDocumentTypeNodePublicId, getDocumentTypeNodeSystemId = getDocumentTypeNodeSystemId, getFirstChild = getFirstChild, getNamespaceURI = getNamespaceURI, getParentNode = getParentNode, getTagName = getTagName, getTemplateContent = getTemplateContent, getTextNodeContent = getTextNodeContent, insertBefore = insertBefore, insertText = insertText, insertTextBefore = insertTextBefore, isCommentNode = isCommentNode, isDocumentTypeNode = isDocumentTypeNode, isElementNode = isElementNode, isTextNode = isTextNode, setDocumentMode = setDocumentMode, setDocumentType = setDocumentType, setTemplateContent = setTemplateContent)
+  
     __obj.asInstanceOf[TreeAdapter]
   }
 }

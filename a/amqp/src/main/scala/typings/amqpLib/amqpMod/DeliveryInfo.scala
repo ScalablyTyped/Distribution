@@ -26,14 +26,8 @@ object DeliveryInfo {
     redelivered: scala.Boolean,
     routingKey: java.lang.String
   ): DeliveryInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumerTag")(consumerTag)
-    __obj.updateDynamic("contentType")(contentType)
-    __obj.updateDynamic("deliveryTag")(deliveryTag)
-    __obj.updateDynamic("exchange")(exchange)
-    __obj.updateDynamic("queue")(queue)
-    __obj.updateDynamic("redelivered")(redelivered)
-    __obj.updateDynamic("routingKey")(routingKey)
+    val __obj = js.Dynamic.literal(consumerTag = consumerTag, contentType = contentType, deliveryTag = deliveryTag, exchange = exchange, queue = queue, redelivered = redelivered, routingKey = routingKey)
+  
     __obj.asInstanceOf[DeliveryInfo]
   }
 }

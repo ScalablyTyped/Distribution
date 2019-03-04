@@ -13,9 +13,8 @@ trait AccountingBook extends js.Object {
 object AccountingBook {
   @scala.inline
   def apply(getId: js.Function0[scala.Double], isPrimary: js.Function0[scala.Boolean]): AccountingBook = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId)
-    __obj.updateDynamic("isPrimary")(isPrimary)
+    val __obj = js.Dynamic.literal(getId = getId, isPrimary = isPrimary)
+  
     __obj.asInstanceOf[AccountingBook]
   }
 }

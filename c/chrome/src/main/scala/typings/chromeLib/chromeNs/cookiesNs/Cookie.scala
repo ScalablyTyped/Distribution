@@ -42,16 +42,7 @@ object Cookie {
     value: java.lang.String,
     expirationDate: scala.Int | scala.Double = null
   ): Cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("hostOnly")(hostOnly)
-    __obj.updateDynamic("httpOnly")(httpOnly)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("secure")(secure)
-    __obj.updateDynamic("session")(session)
-    __obj.updateDynamic("storeId")(storeId)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(domain = domain, hostOnly = hostOnly, httpOnly = httpOnly, name = name, path = path, secure = secure, session = session, storeId = storeId, value = value)
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cookie]
   }

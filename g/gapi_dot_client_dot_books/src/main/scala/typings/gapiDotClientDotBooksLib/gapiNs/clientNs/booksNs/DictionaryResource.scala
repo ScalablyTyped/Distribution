@@ -18,8 +18,8 @@ object DictionaryResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Metadata]
     ]
   ): DictionaryResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("listOfflineMetadata")(listOfflineMetadata)
+    val __obj = js.Dynamic.literal(listOfflineMetadata = listOfflineMetadata)
+  
     __obj.asInstanceOf[DictionaryResource]
   }
 }

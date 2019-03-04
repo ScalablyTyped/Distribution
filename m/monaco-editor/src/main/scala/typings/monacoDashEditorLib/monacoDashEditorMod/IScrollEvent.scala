@@ -28,15 +28,8 @@ object IScrollEvent {
     scrollWidth: scala.Double,
     scrollWidthChanged: scala.Boolean
   ): IScrollEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scrollHeight")(scrollHeight)
-    __obj.updateDynamic("scrollHeightChanged")(scrollHeightChanged)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollLeftChanged")(scrollLeftChanged)
-    __obj.updateDynamic("scrollTop")(scrollTop)
-    __obj.updateDynamic("scrollTopChanged")(scrollTopChanged)
-    __obj.updateDynamic("scrollWidth")(scrollWidth)
-    __obj.updateDynamic("scrollWidthChanged")(scrollWidthChanged)
+    val __obj = js.Dynamic.literal(scrollHeight = scrollHeight, scrollHeightChanged = scrollHeightChanged, scrollLeft = scrollLeft, scrollLeftChanged = scrollLeftChanged, scrollTop = scrollTop, scrollTopChanged = scrollTopChanged, scrollWidth = scrollWidth, scrollWidthChanged = scrollWidthChanged)
+  
     __obj.asInstanceOf[IScrollEvent]
   }
 }

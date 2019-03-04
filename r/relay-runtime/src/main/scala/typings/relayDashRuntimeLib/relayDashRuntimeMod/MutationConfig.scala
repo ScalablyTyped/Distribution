@@ -54,9 +54,7 @@ object MutationConfig {
     ] = null,
     uploadables: UploadableMap = null
   ): MutationConfig[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mutation")(mutation.asInstanceOf[js.Any])
-    __obj.updateDynamic("variables")(variables)
+    val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any], variables = variables)
     if (configs != null) __obj.updateDynamic("configs")(configs)
     if (onCompleted != null) __obj.updateDynamic("onCompleted")(onCompleted)
     if (onError != null) __obj.updateDynamic("onError")(onError)

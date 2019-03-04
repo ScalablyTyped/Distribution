@@ -14,10 +14,8 @@ trait Metadata extends js.Object {
 object Metadata {
   @scala.inline
   def apply(authorizationURL: java.lang.String, clientID: java.lang.String, tokenURL: java.lang.String): Metadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authorizationURL")(authorizationURL)
-    __obj.updateDynamic("clientID")(clientID)
-    __obj.updateDynamic("tokenURL")(tokenURL)
+    val __obj = js.Dynamic.literal(authorizationURL = authorizationURL, clientID = clientID, tokenURL = tokenURL)
+  
     __obj.asInstanceOf[Metadata]
   }
 }

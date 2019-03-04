@@ -13,9 +13,8 @@ trait IBridgeVersion extends js.Object {
 object IBridgeVersion {
   @scala.inline
   def apply(name: java.lang.String, version: nodeDashHueDashApiLib.Anon_Api): IBridgeVersion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(name = name, version = version)
+  
     __obj.asInstanceOf[IBridgeVersion]
   }
 }

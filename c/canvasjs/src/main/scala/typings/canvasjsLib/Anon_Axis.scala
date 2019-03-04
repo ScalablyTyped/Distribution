@@ -18,10 +18,8 @@ object Anon_Axis {
     chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
     stripline: Anon_Axis
   ): Anon_Axis = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("stripline")(stripline)
+    val __obj = js.Dynamic.literal(axis = axis, chart = chart, stripline = stripline)
+  
     __obj.asInstanceOf[Anon_Axis]
   }
 }

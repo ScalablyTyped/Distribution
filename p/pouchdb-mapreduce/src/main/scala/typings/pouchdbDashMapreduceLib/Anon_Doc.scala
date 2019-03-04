@@ -22,10 +22,7 @@ object Anon_Doc {
     value: js.Any,
     doc: pouchdbDashCoreLib.PouchDBNs.CoreNs.ExistingDocument[Content with pouchdbDashCoreLib.PouchDBNs.CoreNs.AllDocsMeta] = null
   ): Anon_Doc[Content] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(id = id, key = key, value = value)
     if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Doc[Content]]
   }

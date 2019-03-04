@@ -79,11 +79,8 @@ object IHistoryService {
     remove: js.Function1[scala.Double, scala.Unit],
     removeAll: js.Function0[scala.Unit]
   ): IHistoryService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("getCurrent")(getCurrent)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("removeAll")(removeAll)
+    val __obj = js.Dynamic.literal(add = add, getCurrent = getCurrent, remove = remove, removeAll = removeAll)
+  
     __obj.asInstanceOf[IHistoryService]
   }
 }

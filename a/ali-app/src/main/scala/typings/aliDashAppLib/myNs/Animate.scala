@@ -13,8 +13,8 @@ trait Animate extends js.Object {
 object Animate {
   @scala.inline
   def apply(args: js.Array[_], `type`: java.lang.String): Animate = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("args")(args)
+    val __obj = js.Dynamic.literal(args = args)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Animate]
   }
 }

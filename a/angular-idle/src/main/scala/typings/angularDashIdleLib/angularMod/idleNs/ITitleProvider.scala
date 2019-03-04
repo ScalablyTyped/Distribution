@@ -21,9 +21,8 @@ trait ITitleProvider
 object ITitleProvider {
   @scala.inline
   def apply($get: js.Any, enabled: js.Function1[scala.Boolean, scala.Unit]): ITitleProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$get")($get)
-    __obj.updateDynamic("enabled")(enabled)
+    val __obj = js.Dynamic.literal($get = $get, enabled = enabled)
+  
     __obj.asInstanceOf[ITitleProvider]
   }
 }

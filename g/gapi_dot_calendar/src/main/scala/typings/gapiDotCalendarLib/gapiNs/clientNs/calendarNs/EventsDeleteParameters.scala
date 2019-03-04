@@ -20,9 +20,7 @@ object EventsDeleteParameters {
     eventId: java.lang.String,
     sendNotifications: js.UndefOr[scala.Boolean] = js.undefined
   ): EventsDeleteParameters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("calendarId")(calendarId)
-    __obj.updateDynamic("eventId")(eventId)
+    val __obj = js.Dynamic.literal(calendarId = calendarId, eventId = eventId)
     if (!js.isUndefined(sendNotifications)) __obj.updateDynamic("sendNotifications")(sendNotifications)
     __obj.asInstanceOf[EventsDeleteParameters]
   }

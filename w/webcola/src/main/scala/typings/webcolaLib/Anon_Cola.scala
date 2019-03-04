@@ -13,9 +13,8 @@ trait Anon_Cola extends js.Object {
 object Anon_Cola {
   @scala.inline
   def apply(cola: webcolaLib.distSrcLayoutMod.Layout, powerGraph: js.Any): Anon_Cola = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cola")(cola)
-    __obj.updateDynamic("powerGraph")(powerGraph)
+    val __obj = js.Dynamic.literal(cola = cola, powerGraph = powerGraph)
+  
     __obj.asInstanceOf[Anon_Cola]
   }
 }

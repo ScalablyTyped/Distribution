@@ -20,9 +20,7 @@ object Package {
     artifact: java.lang.String = null,
     individually: js.UndefOr[scala.Boolean] = js.undefined
   ): Package = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exclude")(exclude)
-    __obj.updateDynamic("include")(include)
+    val __obj = js.Dynamic.literal(exclude = exclude, include = include)
     if (artifact != null) __obj.updateDynamic("artifact")(artifact)
     if (!js.isUndefined(individually)) __obj.updateDynamic("individually")(individually)
     __obj.asInstanceOf[Package]

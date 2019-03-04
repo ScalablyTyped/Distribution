@@ -44,23 +44,8 @@ object LogInfo {
     unpack: java.lang.String,
     write: java.lang.String
   ): LogInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("conv")(conv)
-    __obj.updateDynamic("cost")(cost)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("pack")(pack)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("prot")(prot)
-    __obj.updateDynamic("proxy")(proxy)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("read")(read)
-    __obj.updateDynamic("remote")(remote)
-    __obj.updateDynamic("requestID")(requestID)
-    __obj.updateDynamic("retry")(retry)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("talk")(talk)
-    __obj.updateDynamic("unpack")(unpack)
-    __obj.updateDynamic("write")(write)
+    val __obj = js.Dynamic.literal(conv = conv, cost = cost, method = method, pack = pack, path = path, prot = prot, proxy = proxy, query = query, read = read, remote = remote, requestID = requestID, retry = retry, service = service, talk = talk, unpack = unpack, write = write)
+  
     __obj.asInstanceOf[LogInfo]
   }
 }

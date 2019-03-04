@@ -24,10 +24,7 @@ object URISchemeHandler {
     domainHost: js.UndefOr[scala.Boolean] = js.undefined,
     unicodeSupport: js.UndefOr[scala.Boolean] = js.undefined
   ): URISchemeHandler[Components, Options, ParentComponents] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("scheme")(scheme)
-    __obj.updateDynamic("serialize")(serialize)
+    val __obj = js.Dynamic.literal(parse = parse, scheme = scheme, serialize = serialize)
     if (!js.isUndefined(absolutePath)) __obj.updateDynamic("absolutePath")(absolutePath)
     if (!js.isUndefined(domainHost)) __obj.updateDynamic("domainHost")(domainHost)
     if (!js.isUndefined(unicodeSupport)) __obj.updateDynamic("unicodeSupport")(unicodeSupport)

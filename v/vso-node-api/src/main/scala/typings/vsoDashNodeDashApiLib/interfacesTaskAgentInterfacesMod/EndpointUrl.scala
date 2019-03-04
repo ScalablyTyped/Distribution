@@ -22,12 +22,8 @@ object EndpointUrl {
     isVisible: java.lang.String,
     value: java.lang.String
   ): EndpointUrl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dependsOn")(dependsOn)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("helpText")(helpText)
-    __obj.updateDynamic("isVisible")(isVisible)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(dependsOn = dependsOn, displayName = displayName, helpText = helpText, isVisible = isVisible, value = value)
+  
     __obj.asInstanceOf[EndpointUrl]
   }
 }

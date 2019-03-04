@@ -11,8 +11,8 @@ trait Spec
      with org.scalablytyped.runtime.Instantiable3[/* env */ Env, /* suite */ Suite, /* description */ java.lang.String, js.Any] {
   var afterCallbacks: js.Array[SpecFunction] = js.native
   var matchersClass: Matchers[_] = js.native
-  var `results_`: NestedResults = js.native
-  var `spies_`: js.Array[Spy] = js.native
+  var results_ : NestedResults = js.native
+  var spies_ : js.Array[Spy] = js.native
   var suite: Suite = js.native
   var throwOnExpectationFailure: scala.Boolean = js.native
   def addBeforesAndAftersToQueue(): scala.Unit = js.native
@@ -31,7 +31,7 @@ trait Spec
   def finish(onComplete: js.Function0[scala.Unit]): scala.Unit = js.native
   def finishCallback(): scala.Unit = js.native
   def getFullName(): java.lang.String = js.native
-  def `getMatchersClass_`(): Matchers[_] = js.native
+  def getMatchersClass_(): Matchers[_] = js.native
   def getResult(): js.Any = js.native
   def log(arguments: js.Any): js.Any = js.native
   def removeAllSpies(): scala.Unit = js.native

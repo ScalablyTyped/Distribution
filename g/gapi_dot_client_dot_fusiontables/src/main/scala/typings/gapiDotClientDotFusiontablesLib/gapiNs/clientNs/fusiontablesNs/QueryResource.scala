@@ -38,9 +38,8 @@ object QueryResource {
       gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
     ]
   ): QueryResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("sql")(sql)
-    __obj.updateDynamic("sqlGet")(sqlGet)
+    val __obj = js.Dynamic.literal(sql = sql, sqlGet = sqlGet)
+  
     __obj.asInstanceOf[QueryResource]
   }
 }

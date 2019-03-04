@@ -535,7 +535,7 @@ object defaultNs extends js.Object {
   	 * of functions that are run when a lifecycle is triggered
   	 */
   @js.native
-  object `hooks_`
+  object hooks_
     extends /* type */ org.scalablytyped.runtime.StringDictionary[js.Function0[_]]
   
   type NetworkState = videoDotJsLib.videoDotJsMod.videojsNs.NetworkState

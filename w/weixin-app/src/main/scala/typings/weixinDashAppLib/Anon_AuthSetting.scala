@@ -18,8 +18,8 @@ object Anon_AuthSetting {
   {[ key in weixin-app.wx.Scope ]: boolean}
     */ weixinDashAppLib.weixinDashAppLibStrings.Anon_AuthSetting with js.Any
   ): Anon_AuthSetting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authSetting")(authSetting)
+    val __obj = js.Dynamic.literal(authSetting = authSetting)
+  
     __obj.asInstanceOf[Anon_AuthSetting]
   }
 }

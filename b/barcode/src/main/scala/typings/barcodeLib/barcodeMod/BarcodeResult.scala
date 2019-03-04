@@ -51,10 +51,8 @@ object BarcodeResult {
       scala.Unit
     ]
   ): BarcodeResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBase64")(getBase64)
-    __obj.updateDynamic("getStream")(getStream)
-    __obj.updateDynamic("saveImage")(saveImage)
+    val __obj = js.Dynamic.literal(getBase64 = getBase64, getStream = getStream, saveImage = saveImage)
+  
     __obj.asInstanceOf[BarcodeResult]
   }
 }

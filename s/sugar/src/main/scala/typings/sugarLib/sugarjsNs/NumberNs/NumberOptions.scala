@@ -13,9 +13,8 @@ trait NumberOptions extends js.Object {
 object NumberOptions {
   @scala.inline
   def apply(decimal: java.lang.String, thousands: java.lang.String): NumberOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decimal")(decimal)
-    __obj.updateDynamic("thousands")(thousands)
+    val __obj = js.Dynamic.literal(decimal = decimal, thousands = thousands)
+  
     __obj.asInstanceOf[NumberOptions]
   }
 }

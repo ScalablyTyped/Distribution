@@ -47,11 +47,8 @@ object AWSElasticBlockStoreVolumeSource {
     readOnly: scala.Boolean,
     volumeID: java.lang.String
   ): AWSElasticBlockStoreVolumeSource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fsType")(fsType)
-    __obj.updateDynamic("partition")(partition)
-    __obj.updateDynamic("readOnly")(readOnly)
-    __obj.updateDynamic("volumeID")(volumeID)
+    val __obj = js.Dynamic.literal(fsType = fsType, partition = partition, readOnly = readOnly, volumeID = volumeID)
+  
     __obj.asInstanceOf[AWSElasticBlockStoreVolumeSource]
   }
 }

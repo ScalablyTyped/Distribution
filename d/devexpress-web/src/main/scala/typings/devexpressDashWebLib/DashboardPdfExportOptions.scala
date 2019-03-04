@@ -179,35 +179,8 @@ object DashboardPdfExportOptions {
     TreemapAutomaticPageLayout: scala.Boolean,
     TreemapSizeMode: java.lang.String
   ): DashboardPdfExportOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutoFitPageCount")(AutoFitPageCount)
-    __obj.updateDynamic("CardAutoArrangeContent")(CardAutoArrangeContent)
-    __obj.updateDynamic("ChartAutomaticPageLayout")(ChartAutomaticPageLayout)
-    __obj.updateDynamic("ChartSizeMode")(ChartSizeMode)
-    __obj.updateDynamic("DashboardAutomaticPageLayout")(DashboardAutomaticPageLayout)
-    __obj.updateDynamic("DashboardStatePosition")(DashboardStatePosition)
-    __obj.updateDynamic("DocumentScaleMode")(DocumentScaleMode)
-    __obj.updateDynamic("ExportFilters")(ExportFilters)
-    __obj.updateDynamic("ExportParameters")(ExportParameters)
-    __obj.updateDynamic("FontInfo")(FontInfo)
-    __obj.updateDynamic("GaugeAutoArrangeContent")(GaugeAutoArrangeContent)
-    __obj.updateDynamic("GridFitToPageWidth")(GridFitToPageWidth)
-    __obj.updateDynamic("GridPrintHeadersOnEveryPage")(GridPrintHeadersOnEveryPage)
-    __obj.updateDynamic("IncludeHiddenParameters")(IncludeHiddenParameters)
-    __obj.updateDynamic("MapAutomaticPageLayout")(MapAutomaticPageLayout)
-    __obj.updateDynamic("MapSizeMode")(MapSizeMode)
-    __obj.updateDynamic("PageLayout")(PageLayout)
-    __obj.updateDynamic("PaperKind")(PaperKind)
-    __obj.updateDynamic("PieAutoArrangeContent")(PieAutoArrangeContent)
-    __obj.updateDynamic("PivotPrintHeadersOnEveryPage")(PivotPrintHeadersOnEveryPage)
-    __obj.updateDynamic("RangeFilterAutomaticPageLayout")(RangeFilterAutomaticPageLayout)
-    __obj.updateDynamic("RangeFilterSizeMode")(RangeFilterSizeMode)
-    __obj.updateDynamic("ScaleFactor")(ScaleFactor)
-    __obj.updateDynamic("ScaleMode")(ScaleMode)
-    __obj.updateDynamic("ShowTitle")(ShowTitle)
-    __obj.updateDynamic("Title")(Title)
-    __obj.updateDynamic("TreemapAutomaticPageLayout")(TreemapAutomaticPageLayout)
-    __obj.updateDynamic("TreemapSizeMode")(TreemapSizeMode)
+    val __obj = js.Dynamic.literal(AutoFitPageCount = AutoFitPageCount, CardAutoArrangeContent = CardAutoArrangeContent, ChartAutomaticPageLayout = ChartAutomaticPageLayout, ChartSizeMode = ChartSizeMode, DashboardAutomaticPageLayout = DashboardAutomaticPageLayout, DashboardStatePosition = DashboardStatePosition, DocumentScaleMode = DocumentScaleMode, ExportFilters = ExportFilters, ExportParameters = ExportParameters, FontInfo = FontInfo, GaugeAutoArrangeContent = GaugeAutoArrangeContent, GridFitToPageWidth = GridFitToPageWidth, GridPrintHeadersOnEveryPage = GridPrintHeadersOnEveryPage, IncludeHiddenParameters = IncludeHiddenParameters, MapAutomaticPageLayout = MapAutomaticPageLayout, MapSizeMode = MapSizeMode, PageLayout = PageLayout, PaperKind = PaperKind, PieAutoArrangeContent = PieAutoArrangeContent, PivotPrintHeadersOnEveryPage = PivotPrintHeadersOnEveryPage, RangeFilterAutomaticPageLayout = RangeFilterAutomaticPageLayout, RangeFilterSizeMode = RangeFilterSizeMode, ScaleFactor = ScaleFactor, ScaleMode = ScaleMode, ShowTitle = ShowTitle, Title = Title, TreemapAutomaticPageLayout = TreemapAutomaticPageLayout, TreemapSizeMode = TreemapSizeMode)
+  
     __obj.asInstanceOf[DashboardPdfExportOptions]
   }
 }

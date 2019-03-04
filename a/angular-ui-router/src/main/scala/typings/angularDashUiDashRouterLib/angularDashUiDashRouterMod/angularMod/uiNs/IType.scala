@@ -58,10 +58,7 @@ object IType {
     equals: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Boolean] = null,
     pattern: stdLib.RegExp = null
   ): IType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
-    __obj.updateDynamic("is")(is)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode, is = is)
     if (equals != null) __obj.updateDynamic("equals")(equals)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
     __obj.asInstanceOf[IType]

@@ -79,9 +79,7 @@ object BloodhoundOptions {
     sorter: js.Function2[/* a */ T, /* b */ T, scala.Double] = null,
     sufficient: scala.Int | scala.Double = null
   ): BloodhoundOptions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("datumTokenizer")(datumTokenizer)
-    __obj.updateDynamic("queryTokenizer")(queryTokenizer)
+    val __obj = js.Dynamic.literal(datumTokenizer = datumTokenizer, queryTokenizer = queryTokenizer)
     if (identify != null) __obj.updateDynamic("identify")(identify)
     if (!js.isUndefined(initialize)) __obj.updateDynamic("initialize")(initialize)
     if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])

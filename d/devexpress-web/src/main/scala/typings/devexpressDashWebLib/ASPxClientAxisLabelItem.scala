@@ -40,12 +40,8 @@ object ASPxClientAxisLabelItem {
     chart: ASPxClientWebChart,
     text: java.lang.String
   ): ASPxClientAxisLabelItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("axis")(axis)
-    __obj.updateDynamic("axisValue")(axisValue)
-    __obj.updateDynamic("axisValueInternal")(axisValueInternal)
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(axis = axis, axisValue = axisValue, axisValueInternal = axisValueInternal, chart = chart, text = text)
+  
     __obj.asInstanceOf[ASPxClientAxisLabelItem]
   }
 }

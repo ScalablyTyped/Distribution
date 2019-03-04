@@ -26,8 +26,7 @@ object DefaultSubnetArgs {
     mapPublicIpOnLaunch: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): DefaultSubnetArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any])
     if (mapPublicIpOnLaunch != null) __obj.updateDynamic("mapPublicIpOnLaunch")(mapPublicIpOnLaunch.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSubnetArgs]

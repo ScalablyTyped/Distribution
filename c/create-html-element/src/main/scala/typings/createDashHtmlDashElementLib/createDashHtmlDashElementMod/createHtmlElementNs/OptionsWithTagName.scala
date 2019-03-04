@@ -15,8 +15,7 @@ object OptionsWithTagName {
     name: K,
     attributes: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double | js.Array[java.lang.String]] = null
   ): OptionsWithTagName[K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
     __obj.asInstanceOf[OptionsWithTagName[K]]
   }

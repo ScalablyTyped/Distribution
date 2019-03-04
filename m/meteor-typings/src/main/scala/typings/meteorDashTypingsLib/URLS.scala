@@ -18,10 +18,8 @@ object URLS {
     resetPassword: js.Function1[java.lang.String, java.lang.String],
     verifyEmail: js.Function1[java.lang.String, java.lang.String]
   ): URLS = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enrollAccount")(enrollAccount)
-    __obj.updateDynamic("resetPassword")(resetPassword)
-    __obj.updateDynamic("verifyEmail")(verifyEmail)
+    val __obj = js.Dynamic.literal(enrollAccount = enrollAccount, resetPassword = resetPassword, verifyEmail = verifyEmail)
+  
     __obj.asInstanceOf[URLS]
   }
 }

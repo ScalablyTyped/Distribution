@@ -20,11 +20,8 @@ object Anon_ABBREVIATION {
     NAME: atBlueprintjsTimezoneLib.atBlueprintjsTimezoneLibStrings.name,
     OFFSET: atBlueprintjsTimezoneLib.atBlueprintjsTimezoneLibStrings.offset
   ): Anon_ABBREVIATION = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ABBREVIATION")(ABBREVIATION)
-    __obj.updateDynamic("COMPOSITE")(COMPOSITE)
-    __obj.updateDynamic("NAME")(NAME)
-    __obj.updateDynamic("OFFSET")(OFFSET)
+    val __obj = js.Dynamic.literal(ABBREVIATION = ABBREVIATION, COMPOSITE = COMPOSITE, NAME = NAME, OFFSET = OFFSET)
+  
     __obj.asInstanceOf[Anon_ABBREVIATION]
   }
 }

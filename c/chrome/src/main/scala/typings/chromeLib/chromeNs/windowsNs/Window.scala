@@ -61,12 +61,8 @@ object Window {
     top: scala.Int | scala.Double = null,
     width: scala.Int | scala.Double = null
   ): Window = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("alwaysOnTop")(alwaysOnTop)
-    __obj.updateDynamic("focused")(focused)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("incognito")(incognito)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop, focused = focused, id = id, incognito = incognito, state = state)
+    __obj.updateDynamic("type")(`type`)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)

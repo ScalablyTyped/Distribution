@@ -35,14 +35,8 @@ object ForStatement {
     leadingComments: js.Array[Comment] = null,
     trailingComments: js.Array[Comment] = null
   ): ForStatement = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("test")(test)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(body = body, end = end, init = init.asInstanceOf[js.Any], loc = loc, start = start, test = test, update = update)
+    __obj.updateDynamic("type")(`type`)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)

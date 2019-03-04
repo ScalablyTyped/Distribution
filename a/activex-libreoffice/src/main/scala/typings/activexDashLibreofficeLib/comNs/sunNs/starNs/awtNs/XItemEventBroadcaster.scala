@@ -23,12 +23,8 @@ object XItemEventBroadcaster {
     release: js.Function0[scala.Unit],
     removeItemListener: js.Function1[XItemListener, scala.Unit]
   ): XItemEventBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addItemListener")(addItemListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeItemListener")(removeItemListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addItemListener = addItemListener, queryInterface = queryInterface, release = release, removeItemListener = removeItemListener)
+  
     __obj.asInstanceOf[XItemEventBroadcaster]
   }
 }

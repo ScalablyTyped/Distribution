@@ -66,12 +66,8 @@ object Payments {
     onReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
     purchaseAsync: js.Function1[PurchaseConfig, js.Promise[Purchase]]
   ): Payments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("consumePurchaseAsync")(consumePurchaseAsync)
-    __obj.updateDynamic("getCatalogAsync")(getCatalogAsync)
-    __obj.updateDynamic("getPurchasesAsync")(getPurchasesAsync)
-    __obj.updateDynamic("onReady")(onReady)
-    __obj.updateDynamic("purchaseAsync")(purchaseAsync)
+    val __obj = js.Dynamic.literal(consumePurchaseAsync = consumePurchaseAsync, getCatalogAsync = getCatalogAsync, getPurchasesAsync = getPurchasesAsync, onReady = onReady, purchaseAsync = purchaseAsync)
+  
     __obj.asInstanceOf[Payments]
   }
 }

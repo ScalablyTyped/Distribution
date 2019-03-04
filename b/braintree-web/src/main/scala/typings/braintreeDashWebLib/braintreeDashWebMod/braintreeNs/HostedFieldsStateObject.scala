@@ -18,10 +18,8 @@ object HostedFieldsStateObject {
     emittedBy: HostedFieldsHostedFieldsFieldName,
     fields: HostedFieldsFieldDataFields
   ): HostedFieldsStateObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cards")(cards)
-    __obj.updateDynamic("emittedBy")(emittedBy)
-    __obj.updateDynamic("fields")(fields)
+    val __obj = js.Dynamic.literal(cards = cards, emittedBy = emittedBy, fields = fields)
+  
     __obj.asInstanceOf[HostedFieldsStateObject]
   }
 }

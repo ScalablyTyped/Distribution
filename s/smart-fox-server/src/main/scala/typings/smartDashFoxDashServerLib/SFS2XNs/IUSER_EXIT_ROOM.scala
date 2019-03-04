@@ -16,9 +16,8 @@ object IUSER_EXIT_ROOM {
     room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
     user: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
   ): IUSER_EXIT_ROOM = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("room")(room)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(room = room, user = user)
+  
     __obj.asInstanceOf[IUSER_EXIT_ROOM]
   }
 }

@@ -20,11 +20,8 @@ object IUiGridCellNavConstants {
     FEATURE_NAME: java.lang.String,
     direction: uiDashGridLib.Anon_DOWNLEFT
   ): IUiGridCellNavConstants = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CELL_NAV_EVENT")(CELL_NAV_EVENT)
-    __obj.updateDynamic("EVENT_TYPE")(EVENT_TYPE)
-    __obj.updateDynamic("FEATURE_NAME")(FEATURE_NAME)
-    __obj.updateDynamic("direction")(direction)
+    val __obj = js.Dynamic.literal(CELL_NAV_EVENT = CELL_NAV_EVENT, EVENT_TYPE = EVENT_TYPE, FEATURE_NAME = FEATURE_NAME, direction = direction)
+  
     __obj.asInstanceOf[IUiGridCellNavConstants]
   }
 }

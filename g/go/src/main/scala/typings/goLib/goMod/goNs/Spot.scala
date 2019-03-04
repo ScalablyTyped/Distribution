@@ -86,21 +86,8 @@ object Spot {
     x: scala.Double,
     y: scala.Double
   ): Spot = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("copy")(copy)
-    __obj.updateDynamic("equals")(equals)
-    __obj.updateDynamic("includesSide")(includesSide)
-    __obj.updateDynamic("isDefault")(isDefault)
-    __obj.updateDynamic("isNoSpot")(isNoSpot)
-    __obj.updateDynamic("isSide")(isSide)
-    __obj.updateDynamic("isSpot")(isSpot)
-    __obj.updateDynamic("offsetX")(offsetX)
-    __obj.updateDynamic("offsetY")(offsetY)
-    __obj.updateDynamic("opposite")(opposite)
-    __obj.updateDynamic("set")(set)
-    __obj.updateDynamic("setTo")(setTo)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(copy = copy, equals = equals, includesSide = includesSide, isDefault = isDefault, isNoSpot = isNoSpot, isSide = isSide, isSpot = isSpot, offsetX = offsetX, offsetY = offsetY, opposite = opposite, set = set, setTo = setTo, x = x, y = y)
+  
     __obj.asInstanceOf[Spot]
   }
 }

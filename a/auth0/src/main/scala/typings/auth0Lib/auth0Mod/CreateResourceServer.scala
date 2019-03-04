@@ -27,8 +27,7 @@ object CreateResourceServer {
     token_lifetime: scala.Int | scala.Double = null,
     token_lifetime_for_web: scala.Int | scala.Double = null
   ): CreateResourceServer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
+    val __obj = js.Dynamic.literal(identifier = identifier)
     if (!js.isUndefined(allow_offline_access)) __obj.updateDynamic("allow_offline_access")(allow_offline_access)
     if (id != null) __obj.updateDynamic("id")(id)
     if (name != null) __obj.updateDynamic("name")(name)

@@ -52,7 +52,20 @@ object Anon_Clearfix {
     `show-for-sr`: js.UndefOr[scala.Boolean] = js.undefined,
     `show-on-focus`: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Clearfix = {
-    val __obj = js.Dynamic.literal(`float-center` = `float-center`, `float-left` = `float-left`, `float-right` = `float-right`, `hide-for-large` = `hide-for-large`, `hide-for-large-only` = `hide-for-large-only`, `hide-for-medium` = `hide-for-medium`, `hide-for-medium-only` = `hide-for-medium-only`, `hide-for-small-only` = `hide-for-small-only`, `show-for-large` = `show-for-large`, `show-for-large-only` = `show-for-large-only`, `show-for-medium` = `show-for-medium`, `show-for-medium-only` = `show-for-medium-only`, `show-for-small-only` = `show-for-small-only`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("float-center")(`float-center`)
+    __obj.updateDynamic("float-left")(`float-left`)
+    __obj.updateDynamic("float-right")(`float-right`)
+    __obj.updateDynamic("hide-for-large")(`hide-for-large`)
+    __obj.updateDynamic("hide-for-large-only")(`hide-for-large-only`)
+    __obj.updateDynamic("hide-for-medium")(`hide-for-medium`)
+    __obj.updateDynamic("hide-for-medium-only")(`hide-for-medium-only`)
+    __obj.updateDynamic("hide-for-small-only")(`hide-for-small-only`)
+    __obj.updateDynamic("show-for-large")(`show-for-large`)
+    __obj.updateDynamic("show-for-large-only")(`show-for-large-only`)
+    __obj.updateDynamic("show-for-medium")(`show-for-medium`)
+    __obj.updateDynamic("show-for-medium-only")(`show-for-medium-only`)
+    __obj.updateDynamic("show-for-small-only")(`show-for-small-only`)
     if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix)
     if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
     if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible)

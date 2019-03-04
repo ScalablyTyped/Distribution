@@ -22,10 +22,7 @@ object Anon_EntityErrors {
     stack: java.lang.String = null,
     status: scala.Int | scala.Double = null
   ): Anon_EntityErrors = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("entityErrors")(entityErrors)
-    __obj.updateDynamic("httpResponse")(httpResponse)
-    __obj.updateDynamic("message")(message)
+    val __obj = js.Dynamic.literal(entityErrors = entityErrors, httpResponse = httpResponse, message = message)
     if (stack != null) __obj.updateDynamic("stack")(stack)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EntityErrors]

@@ -37,12 +37,8 @@ object XChangeBroadcaster {
     release: js.Function0[scala.Unit],
     removeChangeListener: js.Function1[XChangeListener, scala.Unit]
   ): XChangeBroadcaster = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChangeListener")(addChangeListener)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChangeListener")(removeChangeListener)
+    val __obj = js.Dynamic.literal(acquire = acquire, addChangeListener = addChangeListener, queryInterface = queryInterface, release = release, removeChangeListener = removeChangeListener)
+  
     __obj.asInstanceOf[XChangeBroadcaster]
   }
 }

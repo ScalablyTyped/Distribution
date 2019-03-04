@@ -45,12 +45,8 @@ object ASPxClientRecurrenceType {
     Weekly: java.lang.String,
     Yearly: java.lang.String
   ): ASPxClientRecurrenceType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Daily")(Daily)
-    __obj.updateDynamic("Hourly")(Hourly)
-    __obj.updateDynamic("Monthly")(Monthly)
-    __obj.updateDynamic("Weekly")(Weekly)
-    __obj.updateDynamic("Yearly")(Yearly)
+    val __obj = js.Dynamic.literal(Daily = Daily, Hourly = Hourly, Monthly = Monthly, Weekly = Weekly, Yearly = Yearly)
+  
     __obj.asInstanceOf[ASPxClientRecurrenceType]
   }
 }

@@ -148,29 +148,8 @@ object _Impl {
     silent: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animateChildren")(animateChildren)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("closeNested")(closeNested)
-    __obj.updateDynamic("collapsible")(collapsible)
-    __obj.updateDynamic("debug")(debug)
-    __obj.updateDynamic("duration")(duration)
-    __obj.updateDynamic("easing")(easing)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("exclusive")(exclusive)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("namespace")(namespace)
-    __obj.updateDynamic("observeChanges")(observeChanges)
-    __obj.updateDynamic("on")(on)
-    __obj.updateDynamic("onChange")(onChange)
-    __obj.updateDynamic("onClose")(onClose)
-    __obj.updateDynamic("onClosing")(onClosing)
-    __obj.updateDynamic("onOpen")(onOpen)
-    __obj.updateDynamic("onOpening")(onOpening)
-    __obj.updateDynamic("performance")(performance)
-    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    __obj.updateDynamic("silent")(silent)
-    __obj.updateDynamic("verbose")(verbose)
+    val __obj = js.Dynamic.literal(animateChildren = animateChildren, className = className.asInstanceOf[js.Any], closeNested = closeNested, collapsible = collapsible, debug = debug, duration = duration, easing = easing, error = error, exclusive = exclusive, name = name, namespace = namespace, observeChanges = observeChanges, on = on, onChange = onChange, onClose = onClose, onClosing = onClosing, onOpen = onOpen, onOpening = onOpening, performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

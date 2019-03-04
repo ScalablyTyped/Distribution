@@ -12,8 +12,8 @@ trait Connection extends js.Object {
 object Connection {
   @scala.inline
   def apply(nodeID: java.lang.String): Connection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nodeID")(nodeID)
+    val __obj = js.Dynamic.literal(nodeID = nodeID)
+  
     __obj.asInstanceOf[Connection]
   }
 }

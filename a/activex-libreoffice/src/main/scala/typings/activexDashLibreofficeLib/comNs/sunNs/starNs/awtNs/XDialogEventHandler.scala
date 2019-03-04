@@ -42,13 +42,8 @@ object XDialogEventHandler {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XDialogEventHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SupportedMethodNames")(SupportedMethodNames)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("callHandlerMethod")(callHandlerMethod)
-    __obj.updateDynamic("getSupportedMethodNames")(getSupportedMethodNames)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(SupportedMethodNames = SupportedMethodNames, acquire = acquire, callHandlerMethod = callHandlerMethod, getSupportedMethodNames = getSupportedMethodNames, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XDialogEventHandler]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_NavbarCollapse extends js.Object {
 object Anon_NavbarCollapse {
   @scala.inline
   def apply(NavbarCollapseNs: js.Any): Anon_NavbarCollapse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NavbarCollapseNs")(NavbarCollapseNs)
+    val __obj = js.Dynamic.literal(NavbarCollapseNs = NavbarCollapseNs)
+  
     __obj.asInstanceOf[Anon_NavbarCollapse]
   }
 }

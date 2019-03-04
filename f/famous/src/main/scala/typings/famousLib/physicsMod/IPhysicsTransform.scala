@@ -13,9 +13,8 @@ trait IPhysicsTransform extends js.Object {
 object IPhysicsTransform {
   @scala.inline
   def apply(position: js.Array[scala.Double], rotation: js.Array[scala.Double]): IPhysicsTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("rotation")(rotation)
+    val __obj = js.Dynamic.literal(position = position, rotation = rotation)
+  
     __obj.asInstanceOf[IPhysicsTransform]
   }
 }

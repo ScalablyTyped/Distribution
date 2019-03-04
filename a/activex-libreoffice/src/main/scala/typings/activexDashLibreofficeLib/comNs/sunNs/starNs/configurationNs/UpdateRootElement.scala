@@ -61,38 +61,8 @@ object UpdateRootElement {
     setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
     setToDefaultAsProperty: js.Function0[scala.Unit]
   ): UpdateRootElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AsProperty")(AsProperty)
-    __obj.updateDynamic("DefaultAsProperty")(DefaultAsProperty)
-    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
-    __obj.updateDynamic("Locale")(Locale)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("PendingChanges")(PendingChanges.asInstanceOf[js.Any])
-    __obj.updateDynamic("StateAsProperty")(StateAsProperty)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addChangesListener")(addChangesListener)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("commitChanges")(commitChanges)
-    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAsProperty")(getAsProperty)
-    __obj.updateDynamic("getDefaultAsProperty")(getDefaultAsProperty)
-    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
-    __obj.updateDynamic("getLocale")(getLocale)
-    __obj.updateDynamic("getName")(getName)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("getPendingChanges")(getPendingChanges)
-    __obj.updateDynamic("getStateAsProperty")(getStateAsProperty)
-    __obj.updateDynamic("hasPendingChanges")(hasPendingChanges)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeChangesListener")(removeChangesListener)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setLocale")(setLocale)
-    __obj.updateDynamic("setName")(setName)
-    __obj.updateDynamic("setParent")(setParent)
-    __obj.updateDynamic("setToDefaultAsProperty")(setToDefaultAsProperty)
+    val __obj = js.Dynamic.literal(AsProperty = AsProperty, DefaultAsProperty = DefaultAsProperty, HierarchicalName = HierarchicalName, Locale = Locale, Name = Name, Parent = Parent, PendingChanges = PendingChanges.asInstanceOf[js.Any], StateAsProperty = StateAsProperty, acquire = acquire, addChangesListener = addChangesListener, addEventListener = addEventListener, commitChanges = commitChanges, composeHierarchicalName = composeHierarchicalName, dispose = dispose, getAsProperty = getAsProperty, getDefaultAsProperty = getDefaultAsProperty, getHierarchicalName = getHierarchicalName, getLocale = getLocale, getName = getName, getParent = getParent, getPendingChanges = getPendingChanges, getStateAsProperty = getStateAsProperty, hasPendingChanges = hasPendingChanges, queryInterface = queryInterface, release = release, removeChangesListener = removeChangesListener, removeEventListener = removeEventListener, setLocale = setLocale, setName = setName, setParent = setParent, setToDefaultAsProperty = setToDefaultAsProperty)
+  
     __obj.asInstanceOf[UpdateRootElement]
   }
 }

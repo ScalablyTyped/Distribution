@@ -57,34 +57,8 @@ object ChartLine {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): ChartLine = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LineCap")(LineCap)
-    __obj.updateDynamic("LineColor")(LineColor)
-    __obj.updateDynamic("LineDash")(LineDash)
-    __obj.updateDynamic("LineDashName")(LineDashName)
-    __obj.updateDynamic("LineEnd")(LineEnd)
-    __obj.updateDynamic("LineEndCenter")(LineEndCenter)
-    __obj.updateDynamic("LineEndName")(LineEndName)
-    __obj.updateDynamic("LineEndWidth")(LineEndWidth)
-    __obj.updateDynamic("LineJoint")(LineJoint)
-    __obj.updateDynamic("LineStart")(LineStart)
-    __obj.updateDynamic("LineStartCenter")(LineStartCenter)
-    __obj.updateDynamic("LineStartName")(LineStartName)
-    __obj.updateDynamic("LineStartWidth")(LineStartWidth)
-    __obj.updateDynamic("LineStyle")(LineStyle)
-    __obj.updateDynamic("LineTransparence")(LineTransparence)
-    __obj.updateDynamic("LineWidth")(LineWidth)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(LineCap = LineCap, LineColor = LineColor, LineDash = LineDash, LineDashName = LineDashName, LineEnd = LineEnd, LineEndCenter = LineEndCenter, LineEndName = LineEndName, LineEndWidth = LineEndWidth, LineJoint = LineJoint, LineStart = LineStart, LineStartCenter = LineStartCenter, LineStartName = LineStartName, LineStartWidth = LineStartWidth, LineStyle = LineStyle, LineTransparence = LineTransparence, LineWidth = LineWidth, PropertySetInfo = PropertySetInfo, acquire = acquire, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[ChartLine]
   }
 }

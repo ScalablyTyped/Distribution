@@ -20,10 +20,7 @@ object QueryResult {
     totalSize: scala.Double,
     nextRecordsUrl: java.lang.String = null
   ): QueryResult[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("done")(done)
-    __obj.updateDynamic("records")(records)
-    __obj.updateDynamic("totalSize")(totalSize)
+    val __obj = js.Dynamic.literal(done = done, records = records, totalSize = totalSize)
     if (nextRecordsUrl != null) __obj.updateDynamic("nextRecordsUrl")(nextRecordsUrl)
     __obj.asInstanceOf[QueryResult[T]]
   }

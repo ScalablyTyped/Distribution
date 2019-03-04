@@ -13,9 +13,8 @@ trait Anon_RememberUser extends js.Object {
 object Anon_RememberUser {
   @scala.inline
   def apply(rememberUser: scala.Boolean, scope: java.lang.String): Anon_RememberUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rememberUser")(rememberUser)
-    __obj.updateDynamic("scope")(scope)
+    val __obj = js.Dynamic.literal(rememberUser = rememberUser, scope = scope)
+  
     __obj.asInstanceOf[Anon_RememberUser]
   }
 }

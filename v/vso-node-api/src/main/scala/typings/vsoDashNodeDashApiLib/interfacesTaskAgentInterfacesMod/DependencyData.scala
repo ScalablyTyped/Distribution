@@ -13,9 +13,8 @@ trait DependencyData extends js.Object {
 object DependencyData {
   @scala.inline
   def apply(input: java.lang.String, map: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueAnonKeyValueString]): DependencyData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("map")(map)
+    val __obj = js.Dynamic.literal(input = input, map = map)
+  
     __obj.asInstanceOf[DependencyData]
   }
 }

@@ -69,16 +69,8 @@ object TopChildrenQuery {
     toJSON: js.Function0[js.Any],
     `type`: js.Function1[java.lang.String, TopChildrenQuery]
   ): TopChildrenQuery = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("boost")(boost)
-    __obj.updateDynamic("factor")(factor)
-    __obj.updateDynamic("incrementalFactor")(incrementalFactor)
-    __obj.updateDynamic("query")(query)
-    __obj.updateDynamic("scope")(scope)
-    __obj.updateDynamic("score")(score)
-    __obj.updateDynamic("scoreMode")(scoreMode)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, boost = boost, factor = factor, incrementalFactor = incrementalFactor, query = query, scope = scope, score = score, scoreMode = scoreMode, toJSON = toJSON)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TopChildrenQuery]
   }
 }

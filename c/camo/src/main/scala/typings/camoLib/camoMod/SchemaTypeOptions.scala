@@ -60,7 +60,8 @@ object SchemaTypeOptions {
     unique: js.UndefOr[scala.Boolean] = js.undefined,
     validate: js.Function1[/* value */ Type, scala.Boolean] = null
   ): SchemaTypeOptions[Type] = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (choices != null) __obj.updateDynamic("choices")(choices)
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (`match` != null) __obj.updateDynamic("match")(`match`)

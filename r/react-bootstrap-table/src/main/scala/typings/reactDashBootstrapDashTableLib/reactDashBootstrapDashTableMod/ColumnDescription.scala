@@ -192,32 +192,8 @@ object ColumnDescription {
     text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_],
     width: java.lang.String
   ): ColumnDescription[TRow] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("align")(align)
-    __obj.updateDynamic("attrs")(attrs)
-    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    __obj.updateDynamic("columnTitle")(columnTitle)
-    __obj.updateDynamic("customEditor")(customEditor)
-    __obj.updateDynamic("editAttrs")(editAttrs)
-    __obj.updateDynamic("editClassName")(editClassName.asInstanceOf[js.Any])
-    __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    __obj.updateDynamic("expandable")(expandable)
-    __obj.updateDynamic("export")(export)
-    __obj.updateDynamic("filterFormatted")(filterFormatted)
-    __obj.updateDynamic("filterValue")(filterValue)
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("formatExtraData")(formatExtraData)
-    __obj.updateDynamic("hidden")(hidden)
-    __obj.updateDynamic("hiddenOnInsert")(hiddenOnInsert)
-    __obj.updateDynamic("invalidEditColumnClassName")(invalidEditColumnClassName.asInstanceOf[js.Any])
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("searchable")(searchable)
-    __obj.updateDynamic("sort")(sort)
-    __obj.updateDynamic("sortFunc")(sortFunc)
-    __obj.updateDynamic("sortFuncExtraData")(sortFuncExtraData)
-    __obj.updateDynamic("style")(style)
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(align = align, attrs = attrs, className = className.asInstanceOf[js.Any], columnTitle = columnTitle, customEditor = customEditor, editAttrs = editAttrs, editClassName = editClassName.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], expandable = expandable, export = export, filterFormatted = filterFormatted, filterValue = filterValue, format = format, formatExtraData = formatExtraData, hidden = hidden, hiddenOnInsert = hiddenOnInsert, invalidEditColumnClassName = invalidEditColumnClassName.asInstanceOf[js.Any], name = name, searchable = searchable, sort = sort, sortFunc = sortFunc, sortFuncExtraData = sortFuncExtraData, style = style, text = text.asInstanceOf[js.Any], width = width)
+  
     __obj.asInstanceOf[ColumnDescription[TRow]]
   }
 }

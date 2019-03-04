@@ -52,27 +52,8 @@ object StatStatic {
     wifi: js.Function1[Callback[js.Array[Wifi]], scala.Nothing],
     works: scala.Boolean
   ): StatStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("argv")(argv)
-    __obj.updateDynamic("cpu")(cpu)
-    __obj.updateDynamic("cwd")(cwd)
-    __obj.updateDynamic("disk")(disk)
-    __obj.updateDynamic("env")(env)
-    __obj.updateDynamic("fd")(fd)
-    __obj.updateDynamic("fds")(fds)
-    __obj.updateDynamic("io")(io)
-    __obj.updateDynamic("meminfo")(meminfo)
-    __obj.updateDynamic("net")(net)
-    __obj.updateDynamic("stat")(stat)
-    __obj.updateDynamic("statm")(statm)
-    __obj.updateDynamic("status")(status)
-    __obj.updateDynamic("tcp")(tcp)
-    __obj.updateDynamic("thread")(thread)
-    __obj.updateDynamic("threads")(threads)
-    __obj.updateDynamic("udp")(udp)
-    __obj.updateDynamic("unix")(unix)
-    __obj.updateDynamic("wifi")(wifi)
-    __obj.updateDynamic("works")(works)
+    val __obj = js.Dynamic.literal(argv = argv, cpu = cpu, cwd = cwd, disk = disk, env = env, fd = fd, fds = fds, io = io, meminfo = meminfo, net = net, stat = stat, statm = statm, status = status, tcp = tcp, thread = thread, threads = threads, udp = udp, unix = unix, wifi = wifi, works = works)
+  
     __obj.asInstanceOf[StatStatic]
   }
 }

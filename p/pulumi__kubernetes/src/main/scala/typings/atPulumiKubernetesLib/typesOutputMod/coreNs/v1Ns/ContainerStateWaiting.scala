@@ -22,9 +22,8 @@ trait ContainerStateWaiting extends js.Object {
 object ContainerStateWaiting {
   @scala.inline
   def apply(message: java.lang.String, reason: java.lang.String): ContainerStateWaiting = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("reason")(reason)
+    val __obj = js.Dynamic.literal(message = message, reason = reason)
+  
     __obj.asInstanceOf[ContainerStateWaiting]
   }
 }

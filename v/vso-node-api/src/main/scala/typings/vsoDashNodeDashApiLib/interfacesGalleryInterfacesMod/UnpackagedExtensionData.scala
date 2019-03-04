@@ -44,23 +44,8 @@ object UnpackagedExtensionData {
     version: java.lang.String,
     vsixId: java.lang.String
   ): UnpackagedExtensionData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("categories")(categories)
-    __obj.updateDynamic("description")(description)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("draftId")(draftId)
-    __obj.updateDynamic("extensionName")(extensionName)
-    __obj.updateDynamic("installationTargets")(installationTargets)
-    __obj.updateDynamic("isConvertedToMarkdown")(isConvertedToMarkdown)
-    __obj.updateDynamic("pricingCategory")(pricingCategory)
-    __obj.updateDynamic("product")(product)
-    __obj.updateDynamic("publisherName")(publisherName)
-    __obj.updateDynamic("qnAEnabled")(qnAEnabled)
-    __obj.updateDynamic("referralUrl")(referralUrl)
-    __obj.updateDynamic("repositoryUrl")(repositoryUrl)
-    __obj.updateDynamic("tags")(tags)
-    __obj.updateDynamic("version")(version)
-    __obj.updateDynamic("vsixId")(vsixId)
+    val __obj = js.Dynamic.literal(categories = categories, description = description, displayName = displayName, draftId = draftId, extensionName = extensionName, installationTargets = installationTargets, isConvertedToMarkdown = isConvertedToMarkdown, pricingCategory = pricingCategory, product = product, publisherName = publisherName, qnAEnabled = qnAEnabled, referralUrl = referralUrl, repositoryUrl = repositoryUrl, tags = tags, version = version, vsixId = vsixId)
+  
     __obj.asInstanceOf[UnpackagedExtensionData]
   }
 }

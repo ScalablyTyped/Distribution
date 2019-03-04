@@ -22,12 +22,8 @@ object Framebuffer {
     handle: stdLib.WebGLFramebuffer,
     syncSize: js.Function2[scala.Double, scala.Double, scala.Unit]
   ): Framebuffer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("syncSize")(syncSize)
+    val __obj = js.Dynamic.literal(bind = bind, color = color, dispose = dispose, handle = handle, syncSize = syncSize)
+  
     __obj.asInstanceOf[Framebuffer]
   }
 }

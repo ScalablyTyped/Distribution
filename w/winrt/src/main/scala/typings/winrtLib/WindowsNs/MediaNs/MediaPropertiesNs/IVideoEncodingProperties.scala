@@ -25,14 +25,8 @@ object IVideoEncodingProperties {
     `type`: java.lang.String,
     width: scala.Double
   ): IVideoEncodingProperties = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("bitrate")(bitrate)
-    __obj.updateDynamic("frameRate")(frameRate)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("pixelAspectRatio")(pixelAspectRatio)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("subtype")(subtype)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(bitrate = bitrate, frameRate = frameRate, height = height, pixelAspectRatio = pixelAspectRatio, properties = properties, subtype = subtype, width = width)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IVideoEncodingProperties]
   }
 }

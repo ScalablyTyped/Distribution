@@ -15,8 +15,8 @@ trait ComponentAttached extends js.Object {
 object ComponentAttached {
   @scala.inline
   def apply(attached: js.Function0[scala.Unit]): ComponentAttached = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attached")(attached)
+    val __obj = js.Dynamic.literal(attached = attached)
+  
     __obj.asInstanceOf[ComponentAttached]
   }
 }

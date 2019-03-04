@@ -12,8 +12,8 @@ trait Anon_EventHTMLDivElementSyntheticEvent extends js.Object {
 object Anon_EventHTMLDivElementSyntheticEvent {
   @scala.inline
   def apply(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event]): Anon_EventHTMLDivElementSyntheticEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("event")(event)
+    val __obj = js.Dynamic.literal(event = event)
+  
     __obj.asInstanceOf[Anon_EventHTMLDivElementSyntheticEvent]
   }
 }

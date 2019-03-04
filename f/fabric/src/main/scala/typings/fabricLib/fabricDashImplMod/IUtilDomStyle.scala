@@ -15,8 +15,8 @@ trait IUtilDomStyle extends js.Object {
 object IUtilDomStyle {
   @scala.inline
   def apply(setStyle: js.Function2[stdLib.HTMLElement, js.Any, stdLib.HTMLElement]): IUtilDomStyle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setStyle")(setStyle)
+    val __obj = js.Dynamic.literal(setStyle = setStyle)
+  
     __obj.asInstanceOf[IUtilDomStyle]
   }
 }

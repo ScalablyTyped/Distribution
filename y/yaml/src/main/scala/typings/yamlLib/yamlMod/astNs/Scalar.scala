@@ -32,8 +32,7 @@ object Scalar {
     `type`: yamlLib.yamlLibStrings.BLOCK_FOLDED | yamlLib.yamlLibStrings.BLOCK_LITERAL | yamlLib.yamlLibStrings.PLAIN | yamlLib.yamlLibStrings.QUOTE_DOUBLE | yamlLib.yamlLibStrings.QUOTE_SINGLE = null,
     value: scala.Boolean | scala.Double | java.lang.String = null
   ): Scalar = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(toJSON = toJSON)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (commentBefore != null) __obj.updateDynamic("commentBefore")(commentBefore)
     if (cstNode != null) __obj.updateDynamic("cstNode")(cstNode)

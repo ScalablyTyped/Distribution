@@ -13,9 +13,8 @@ trait Anon_Highlight extends js.Object {
 object Anon_Highlight {
   @scala.inline
   def apply(highlight: scala.Boolean, text: java.lang.String): Anon_Highlight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("highlight")(highlight)
-    __obj.updateDynamic("text")(text)
+    val __obj = js.Dynamic.literal(highlight = highlight, text = text)
+  
     __obj.asInstanceOf[Anon_Highlight]
   }
 }

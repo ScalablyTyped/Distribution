@@ -26,14 +26,8 @@ object Command {
     passThru: js.Function0[scala.Boolean],
     save: js.Function0[scala.Boolean]
   ): Command = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("moveDown")(moveDown)
-    __obj.updateDynamic("moveLeft")(moveLeft)
-    __obj.updateDynamic("moveRight")(moveRight)
-    __obj.updateDynamic("moveUp")(moveUp)
-    __obj.updateDynamic("passThru")(passThru)
-    __obj.updateDynamic("save")(save)
+    val __obj = js.Dynamic.literal(cancel = cancel, moveDown = moveDown, moveLeft = moveLeft, moveRight = moveRight, moveUp = moveUp, passThru = passThru, save = save)
+  
     __obj.asInstanceOf[Command]
   }
 }

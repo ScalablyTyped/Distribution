@@ -16,9 +16,8 @@ object Anon_Level {
     releaseKeepAwake: js.Function0[scala.Unit],
     requestKeepAwake: js.Function1[java.lang.String, scala.Unit]
   ): Anon_Level = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("releaseKeepAwake")(releaseKeepAwake)
-    __obj.updateDynamic("requestKeepAwake")(requestKeepAwake)
+    val __obj = js.Dynamic.literal(releaseKeepAwake = releaseKeepAwake, requestKeepAwake = requestKeepAwake)
+  
     __obj.asInstanceOf[Anon_Level]
   }
 }

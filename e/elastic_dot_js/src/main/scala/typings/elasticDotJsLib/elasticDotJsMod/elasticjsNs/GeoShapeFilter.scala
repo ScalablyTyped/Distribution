@@ -74,17 +74,8 @@ object GeoShapeFilter {
     strategy: js.Function1[java.lang.String, GeoShapeFilter],
     toJSON: js.Function0[GeoShapeFilter]
   ): GeoShapeFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_type")(_type)
-    __obj.updateDynamic("cache")(cache)
-    __obj.updateDynamic("cacheKey")(cacheKey)
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("indexedShape")(indexedShape)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("relation")(relation)
-    __obj.updateDynamic("shape")(shape)
-    __obj.updateDynamic("strategy")(strategy)
-    __obj.updateDynamic("toJSON")(toJSON)
+    val __obj = js.Dynamic.literal(_type = _type, cache = cache, cacheKey = cacheKey, field = field, indexedShape = indexedShape, name = name, relation = relation, shape = shape, strategy = strategy, toJSON = toJSON)
+  
     __obj.asInstanceOf[GeoShapeFilter]
   }
 }

@@ -72,11 +72,7 @@ object VideoProps {
     poster: java.lang.String = null,
     preload: gestaltLib.gestaltLibStrings.auto | gestaltLib.gestaltLibStrings.metadata | gestaltLib.gestaltLibStrings.none = null
   ): VideoProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aspectRatio")(aspectRatio)
-    __obj.updateDynamic("captions")(captions)
-    __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    __obj.updateDynamic("volume")(volume)
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio, captions = captions, src = src.asInstanceOf[js.Any], volume = volume)
     if (accessibilityMaximizeLabel != null) __obj.updateDynamic("accessibilityMaximizeLabel")(accessibilityMaximizeLabel)
     if (accessibilityMinimizeLabel != null) __obj.updateDynamic("accessibilityMinimizeLabel")(accessibilityMinimizeLabel)
     if (accessibilityMuteLabel != null) __obj.updateDynamic("accessibilityMuteLabel")(accessibilityMuteLabel)

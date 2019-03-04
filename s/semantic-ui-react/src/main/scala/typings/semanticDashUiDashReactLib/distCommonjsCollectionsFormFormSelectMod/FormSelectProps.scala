@@ -139,8 +139,7 @@ object FormSelectProps {
     width: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null,
     wrapSelection: js.UndefOr[scala.Boolean] = js.undefined
   ): FormSelectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (additionLabel != null) __obj.updateDynamic("additionLabel")(additionLabel.asInstanceOf[js.Any])
     if (additionPosition != null) __obj.updateDynamic("additionPosition")(additionPosition.asInstanceOf[js.Any])

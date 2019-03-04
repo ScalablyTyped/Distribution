@@ -30,16 +30,8 @@ object IVaultLoginAccountOperations {
     RemoveLoginAccount: js.Function1[java.lang.String, scala.Unit],
     UpdateLoginPassword: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): IVaultLoginAccountOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddLoginAccount")(AddLoginAccount)
-    __obj.updateDynamic("ForceLogout")(ForceLogout)
-    __obj.updateDynamic("GetLoginAccount")(GetLoginAccount)
-    __obj.updateDynamic("GetLoginAccounts")(GetLoginAccounts)
-    __obj.updateDynamic("GetLoginAccountsWithSessions")(GetLoginAccountsWithSessions)
-    __obj.updateDynamic("GetPersonalInformationFromDomain")(GetPersonalInformationFromDomain)
-    __obj.updateDynamic("ModifyLoginAccount")(ModifyLoginAccount)
-    __obj.updateDynamic("RemoveLoginAccount")(RemoveLoginAccount)
-    __obj.updateDynamic("UpdateLoginPassword")(UpdateLoginPassword)
+    val __obj = js.Dynamic.literal(AddLoginAccount = AddLoginAccount, ForceLogout = ForceLogout, GetLoginAccount = GetLoginAccount, GetLoginAccounts = GetLoginAccounts, GetLoginAccountsWithSessions = GetLoginAccountsWithSessions, GetPersonalInformationFromDomain = GetPersonalInformationFromDomain, ModifyLoginAccount = ModifyLoginAccount, RemoveLoginAccount = RemoveLoginAccount, UpdateLoginPassword = UpdateLoginPassword)
+  
     __obj.asInstanceOf[IVaultLoginAccountOperations]
   }
 }

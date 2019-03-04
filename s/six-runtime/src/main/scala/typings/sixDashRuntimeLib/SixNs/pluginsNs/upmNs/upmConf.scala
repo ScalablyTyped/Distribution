@@ -30,16 +30,8 @@ object upmConf {
     skipOffline: scala.Boolean,
     whiteList: java.lang.String | stdLib.RegExp | js.Array[java.lang.String] | sixDashRuntimeLib.SixNs.pluginsNs.whiteList
   ): upmConf = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientId")(clientId)
-    __obj.updateDynamic("clientSecret")(clientSecret)
-    __obj.updateDynamic("domain")(domain)
-    __obj.updateDynamic("enableMock")(enableMock)
-    __obj.updateDynamic("failHook")(failHook)
-    __obj.updateDynamic("getPath")(getPath)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("skipOffline")(skipOffline)
-    __obj.updateDynamic("whiteList")(whiteList.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientId = clientId, clientSecret = clientSecret, domain = domain, enableMock = enableMock, failHook = failHook, getPath = getPath, path = path, skipOffline = skipOffline, whiteList = whiteList.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[upmConf]
   }
 }

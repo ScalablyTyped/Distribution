@@ -46,9 +46,8 @@ object ShapeActivatedEventArgs {
     `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeActivated,
     worksheetId: java.lang.String
   ): ShapeActivatedEventArgs = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("shapeId")(shapeId)
-    __obj.updateDynamic("worksheetId")(worksheetId)
+    val __obj = js.Dynamic.literal(shapeId = shapeId, worksheetId = worksheetId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ShapeActivatedEventArgs]
   }
 }

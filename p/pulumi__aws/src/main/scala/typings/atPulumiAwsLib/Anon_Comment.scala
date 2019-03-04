@@ -14,8 +14,7 @@ trait Anon_Comment extends js.Object {
 object Anon_Comment {
   @scala.inline
   def apply(name: java.lang.String, comment: java.lang.String = null, `type`: java.lang.String = null): Anon_Comment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (comment != null) __obj.updateDynamic("comment")(comment)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Anon_Comment]

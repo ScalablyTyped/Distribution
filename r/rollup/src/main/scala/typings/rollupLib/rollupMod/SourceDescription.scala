@@ -13,8 +13,7 @@ trait SourceDescription extends js.Object {
 object SourceDescription {
   @scala.inline
   def apply(code: java.lang.String, map: java.lang.String | RawSourceMap = null): SourceDescription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
+    val __obj = js.Dynamic.literal(code = code)
     if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceDescription]
   }

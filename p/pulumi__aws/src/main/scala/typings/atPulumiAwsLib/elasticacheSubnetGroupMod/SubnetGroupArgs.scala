@@ -27,8 +27,7 @@ object SubnetGroupArgs {
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): SubnetGroupArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(subnetIds = subnetIds.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetGroupArgs]

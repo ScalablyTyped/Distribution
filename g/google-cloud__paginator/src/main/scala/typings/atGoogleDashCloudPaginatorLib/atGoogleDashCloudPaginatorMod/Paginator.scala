@@ -22,7 +22,7 @@ class Paginator () extends js.Object {
     * @param {array} args - The original `arguments` pseduo-array that the original
     *     method received.
     */
-  def `parseArguments_`(args: js.Array[_]): ParsedArguments = js.native
+  def parseArguments_(args: js.Array[_]): ParsedArguments = js.native
   /**
     * This method simply calls the nextQuery recursively, emitting results to a
     * stream. The stream ends when `nextQuery` is null.
@@ -41,7 +41,7 @@ class Paginator () extends js.Object {
     *     and returns `nextQuery` to receive more results.
     * @return {stream} - Readable object stream.
     */
-  def `runAsStream_`(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
+  def runAsStream_(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
   /**
     * This simply checks to see if `autoPaginate` is set or not, if it's true
     * then we buffer all results, otherwise simply call the original method.
@@ -58,7 +58,7 @@ class Paginator () extends js.Object {
     * @param {function} originalMethod - The cached method that accepts a callback
     *     and returns `nextQuery` to receive more results.
     */
-  def `run_`(parsedArguments: ParsedArguments, originalMethod: js.Function): scala.Unit = js.native
+  def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): scala.Unit = js.native
   /**
     * Wraps paginated API calls in a readable object stream.
     *

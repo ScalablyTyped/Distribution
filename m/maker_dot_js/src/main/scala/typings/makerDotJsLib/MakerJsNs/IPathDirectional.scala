@@ -28,9 +28,8 @@ object IPathDirectional {
     layer: java.lang.String = null,
     reversed: js.UndefOr[scala.Boolean] = js.undefined
   ): IPathDirectional = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("endPoints")(endPoints)
-    __obj.updateDynamic("origin")(origin)
+    val __obj = js.Dynamic.literal(endPoints = endPoints, origin = origin)
+    __obj.updateDynamic("type")(`type`)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
     __obj.asInstanceOf[IPathDirectional]

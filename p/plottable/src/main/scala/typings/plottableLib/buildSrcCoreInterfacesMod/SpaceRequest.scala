@@ -13,9 +13,8 @@ trait SpaceRequest extends js.Object {
 object SpaceRequest {
   @scala.inline
   def apply(minHeight: scala.Double, minWidth: scala.Double): SpaceRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("minHeight")(minHeight)
-    __obj.updateDynamic("minWidth")(minWidth)
+    val __obj = js.Dynamic.literal(minHeight = minHeight, minWidth = minWidth)
+  
     __obj.asInstanceOf[SpaceRequest]
   }
 }

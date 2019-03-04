@@ -26,14 +26,8 @@ object Anon_BeforeMount {
     render: js.Any,
     template: java.lang.String
   ): Anon_BeforeMount = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("beforeMount")(beforeMount)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("md")(md)
-    __obj.updateDynamic("props")(props)
-    __obj.updateDynamic("render")(render)
-    __obj.updateDynamic("template")(template)
+    val __obj = js.Dynamic.literal(beforeMount = beforeMount, computed = computed, data = data, md = md, props = props, render = render, template = template)
+  
     __obj.asInstanceOf[Anon_BeforeMount]
   }
 }

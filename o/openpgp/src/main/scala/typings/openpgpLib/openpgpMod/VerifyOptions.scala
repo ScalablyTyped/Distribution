@@ -24,9 +24,7 @@ object VerifyOptions {
     signature: Signature = null,
     streaming: openpgpLib.openpgpLibStrings.web | openpgpLib.openpgpLibStrings.node | openpgpLib.openpgpLibNumbers.`false` = null
   ): VerifyOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("publicKeys")(publicKeys.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(message = message, publicKeys = publicKeys.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date)
     if (signature != null) __obj.updateDynamic("signature")(signature)
     if (streaming != null) __obj.updateDynamic("streaming")(streaming.asInstanceOf[js.Any])

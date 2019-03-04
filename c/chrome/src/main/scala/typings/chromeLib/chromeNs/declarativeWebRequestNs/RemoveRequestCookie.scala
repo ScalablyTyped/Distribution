@@ -12,8 +12,8 @@ trait RemoveRequestCookie extends js.Object {
 object RemoveRequestCookie {
   @scala.inline
   def apply(filter: RequestCookie): RemoveRequestCookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("filter")(filter)
+    val __obj = js.Dynamic.literal(filter = filter)
+  
     __obj.asInstanceOf[RemoveRequestCookie]
   }
 }

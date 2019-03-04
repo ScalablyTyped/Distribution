@@ -22,12 +22,8 @@ object IFolderContentItem {
     TraditionalFolder: ILookup,
     View: IView
   ): IFolderContentItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FolderContentItemType")(FolderContentItemType)
-    __obj.updateDynamic("ObjectVersion")(ObjectVersion)
-    __obj.updateDynamic("PropertyFolder")(PropertyFolder)
-    __obj.updateDynamic("TraditionalFolder")(TraditionalFolder)
-    __obj.updateDynamic("View")(View)
+    val __obj = js.Dynamic.literal(FolderContentItemType = FolderContentItemType, ObjectVersion = ObjectVersion, PropertyFolder = PropertyFolder, TraditionalFolder = TraditionalFolder, View = View)
+  
     __obj.asInstanceOf[IFolderContentItem]
   }
 }

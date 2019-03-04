@@ -16,7 +16,8 @@ trait CDO
 object CDO {
   @scala.inline
   def apply(`type`: cssDashTreeLib.cssDashTreeLibStrings.CDO, loc: CssLocation = null): CDO = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     __obj.asInstanceOf[CDO]
   }

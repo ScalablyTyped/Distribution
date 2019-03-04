@@ -41,10 +41,7 @@ object ShapedLayoutOptions {
     spacingFactor: scala.Int | scala.Double = null,
     stop: LayoutHandler = null
   ): ShapedLayoutOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fit")(fit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
+    val __obj = js.Dynamic.literal(fit = fit, name = name, nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels)
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
     if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
     if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)

@@ -105,8 +105,7 @@ object PathProps {
     x: reactDashNativeDashSvgLib.NumberProp = null,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): PathProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("d")(d)
+    val __obj = js.Dynamic.literal(d = d)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
     if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule)
     if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])

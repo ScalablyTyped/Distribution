@@ -13,8 +13,7 @@ trait TranslateOptions extends js.Object {
 object TranslateOptions {
   @scala.inline
   def apply(phrase: java.lang.String, locale: java.lang.String = null): TranslateOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("phrase")(phrase)
+    val __obj = js.Dynamic.literal(phrase = phrase)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     __obj.asInstanceOf[TranslateOptions]
   }

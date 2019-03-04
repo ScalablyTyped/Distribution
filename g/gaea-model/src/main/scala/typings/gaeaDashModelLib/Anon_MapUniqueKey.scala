@@ -21,8 +21,7 @@ object Anon_MapUniqueKey {
     targetIndex: scala.Int | scala.Double = null,
     targetMapUniqueKey: java.lang.String = null
   ): Anon_MapUniqueKey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey)
     if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex.asInstanceOf[js.Any])
     if (targetMapUniqueKey != null) __obj.updateDynamic("targetMapUniqueKey")(targetMapUniqueKey)
     __obj.asInstanceOf[Anon_MapUniqueKey]

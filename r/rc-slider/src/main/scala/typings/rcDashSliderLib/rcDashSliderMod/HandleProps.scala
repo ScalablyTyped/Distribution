@@ -46,10 +46,7 @@ object HandleProps {
     tipTransitionName: java.lang.String = null,
     trackStyle: js.Array[reactLib.reactMod.ReactNs.CSSProperties] | reactLib.reactMod.ReactNs.CSSProperties = null
   ): HandleProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("className")(className)
-    __obj.updateDynamic("offset")(offset)
-    __obj.updateDynamic("vertical")(vertical)
+    val __obj = js.Dynamic.literal(className = className, offset = offset, vertical = vertical)
     if (activeDotStyle != null) __obj.updateDynamic("activeDotStyle")(activeDotStyle)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle)

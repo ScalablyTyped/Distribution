@@ -22,12 +22,8 @@ object Base {
     init: js.Function1[/* repeated */ js.Any, scala.Unit],
     mixIn: js.Function1[js.Object, scala.Unit]
   ): Base = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clone")(clone)
-    __obj.updateDynamic("create")(create)
-    __obj.updateDynamic("extend")(extend)
-    __obj.updateDynamic("init")(init)
-    __obj.updateDynamic("mixIn")(mixIn)
+    val __obj = js.Dynamic.literal(clone = clone, create = create, extend = extend, init = init, mixIn = mixIn)
+  
     __obj.asInstanceOf[Base]
   }
 }

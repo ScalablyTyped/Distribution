@@ -67,18 +67,8 @@ object Anon_DetailsGetAllFrames {
     onReferenceFragmentUpdated: firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs._WebNavigationOnReferenceFragmentUpdatedEvent[js.Function1[/* details */ Anon_FrameIdProcessId, scala.Unit]],
     onTabReplaced: WebExtEvent[js.Function1[/* details */ Anon_ReplacedTabId, scala.Unit]]
   ): Anon_DetailsGetAllFrames = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllFrames")(getAllFrames)
-    __obj.updateDynamic("getFrame")(getFrame)
-    __obj.updateDynamic("onBeforeNavigate")(onBeforeNavigate)
-    __obj.updateDynamic("onCommitted")(onCommitted)
-    __obj.updateDynamic("onCompleted")(onCompleted)
-    __obj.updateDynamic("onCreatedNavigationTarget")(onCreatedNavigationTarget)
-    __obj.updateDynamic("onDOMContentLoaded")(onDOMContentLoaded)
-    __obj.updateDynamic("onErrorOccurred")(onErrorOccurred)
-    __obj.updateDynamic("onHistoryStateUpdated")(onHistoryStateUpdated)
-    __obj.updateDynamic("onReferenceFragmentUpdated")(onReferenceFragmentUpdated)
-    __obj.updateDynamic("onTabReplaced")(onTabReplaced)
+    val __obj = js.Dynamic.literal(getAllFrames = getAllFrames, getFrame = getFrame, onBeforeNavigate = onBeforeNavigate, onCommitted = onCommitted, onCompleted = onCompleted, onCreatedNavigationTarget = onCreatedNavigationTarget, onDOMContentLoaded = onDOMContentLoaded, onErrorOccurred = onErrorOccurred, onHistoryStateUpdated = onHistoryStateUpdated, onReferenceFragmentUpdated = onReferenceFragmentUpdated, onTabReplaced = onTabReplaced)
+  
     __obj.asInstanceOf[Anon_DetailsGetAllFrames]
   }
 }

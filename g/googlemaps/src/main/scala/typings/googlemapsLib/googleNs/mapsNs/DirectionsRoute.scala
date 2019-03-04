@@ -63,15 +63,8 @@ object DirectionsRoute {
     warnings: js.Array[java.lang.String],
     waypoint_order: js.Array[scala.Double]
   ): DirectionsRoute = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bounds")(bounds)
-    __obj.updateDynamic("copyrights")(copyrights)
-    __obj.updateDynamic("fare")(fare)
-    __obj.updateDynamic("legs")(legs)
-    __obj.updateDynamic("overview_path")(overview_path)
-    __obj.updateDynamic("overview_polyline")(overview_polyline)
-    __obj.updateDynamic("warnings")(warnings)
-    __obj.updateDynamic("waypoint_order")(waypoint_order)
+    val __obj = js.Dynamic.literal(bounds = bounds, copyrights = copyrights, fare = fare, legs = legs, overview_path = overview_path, overview_polyline = overview_polyline, warnings = warnings, waypoint_order = waypoint_order)
+  
     __obj.asInstanceOf[DirectionsRoute]
   }
 }

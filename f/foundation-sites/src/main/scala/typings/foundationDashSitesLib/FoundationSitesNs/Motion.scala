@@ -16,9 +16,8 @@ object Motion {
     animateIn: js.Function3[js.Object, js.Any, js.Function, scala.Unit],
     animateOut: js.Function3[js.Object, js.Any, js.Function, scala.Unit]
   ): Motion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("animateIn")(animateIn)
-    __obj.updateDynamic("animateOut")(animateOut)
+    val __obj = js.Dynamic.literal(animateIn = animateIn, animateOut = animateOut)
+  
     __obj.asInstanceOf[Motion]
   }
 }

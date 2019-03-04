@@ -13,7 +13,8 @@ trait NodeBase extends js.Object {
 object NodeBase {
   @scala.inline
   def apply(`type`: java.lang.String, parent: NodeBase = null): NodeBase = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[NodeBase]
   }

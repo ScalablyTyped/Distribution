@@ -12,8 +12,8 @@ trait Anon_Account extends js.Object {
 object Anon_Account {
   @scala.inline
   def apply(Account: activexDashOutlookLib.OutlookNs.Account): Anon_Account = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Account")(Account)
+    val __obj = js.Dynamic.literal(Account = Account)
+  
     __obj.asInstanceOf[Anon_Account]
   }
 }

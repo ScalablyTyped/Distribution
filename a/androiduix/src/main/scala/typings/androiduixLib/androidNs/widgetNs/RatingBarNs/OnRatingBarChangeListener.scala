@@ -18,8 +18,8 @@ object OnRatingBarChangeListener {
   def apply(
     onRatingChanged: js.Function3[androiduixLib.androidNs.widgetNs.RatingBar, scala.Double, scala.Boolean, scala.Unit]
   ): OnRatingBarChangeListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onRatingChanged")(onRatingChanged)
+    val __obj = js.Dynamic.literal(onRatingChanged = onRatingChanged)
+  
     __obj.asInstanceOf[OnRatingBarChangeListener]
   }
 }

@@ -23,8 +23,9 @@ object Index {
     `type`: java.lang.String,
     ddoc: java.lang.String = null
   ): Index = {
-    val __obj = js.Dynamic.literal(`def` = `def`, `type` = `type`)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
+    __obj.updateDynamic("def")(`def`)
+    __obj.updateDynamic("type")(`type`)
     if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
     __obj.asInstanceOf[Index]
   }

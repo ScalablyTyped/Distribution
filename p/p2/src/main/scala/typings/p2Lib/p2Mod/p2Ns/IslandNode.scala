@@ -22,12 +22,8 @@ object IslandNode {
     reset: js.Function0[scala.Unit],
     visited: scala.Boolean
   ): IslandNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("equations")(equations)
-    __obj.updateDynamic("neighbors")(neighbors)
-    __obj.updateDynamic("reset")(reset)
-    __obj.updateDynamic("visited")(visited)
+    val __obj = js.Dynamic.literal(body = body, equations = equations, neighbors = neighbors, reset = reset, visited = visited)
+  
     __obj.asInstanceOf[IslandNode]
   }
 }

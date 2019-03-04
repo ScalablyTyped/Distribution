@@ -28,13 +28,8 @@ object SceneRendererProps {
       reactDashNativeDashTabDashViewLib.Anon_Remove
     ]
   ): SceneRendererProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLastPosition")(getLastPosition)
-    __obj.updateDynamic("jumpTo")(jumpTo)
-    __obj.updateDynamic("layout")(layout)
-    __obj.updateDynamic("navigationState")(navigationState)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("subscribe")(subscribe)
+    val __obj = js.Dynamic.literal(getLastPosition = getLastPosition, jumpTo = jumpTo, layout = layout, navigationState = navigationState, position = position, subscribe = subscribe)
+  
     __obj.asInstanceOf[SceneRendererProps[T]]
   }
 }

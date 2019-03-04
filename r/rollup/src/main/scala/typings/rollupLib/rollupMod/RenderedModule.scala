@@ -20,11 +20,8 @@ object RenderedModule {
     renderedExports: js.Array[java.lang.String],
     renderedLength: scala.Double
   ): RenderedModule = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("originalLength")(originalLength)
-    __obj.updateDynamic("removedExports")(removedExports)
-    __obj.updateDynamic("renderedExports")(renderedExports)
-    __obj.updateDynamic("renderedLength")(renderedLength)
+    val __obj = js.Dynamic.literal(originalLength = originalLength, removedExports = removedExports, renderedExports = renderedExports, renderedLength = renderedLength)
+  
     __obj.asInstanceOf[RenderedModule]
   }
 }

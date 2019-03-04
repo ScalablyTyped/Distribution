@@ -13,9 +13,8 @@ trait IRowVal extends js.Object {
 object IRowVal {
   @scala.inline
   def apply(identity: scala.Boolean, row: scala.Double | js.Any): IRowVal = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity)
-    __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identity = identity, row = row.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IRowVal]
   }
 }

@@ -32,9 +32,8 @@ object XStringRepresentation {
     convertToControlValue: js.Function1[js.Any, java.lang.String],
     convertToPropertyValue: js.Function2[java.lang.String, activexDashLibreofficeLib.`type`, js.Any]
   ): XStringRepresentation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("convertToControlValue")(convertToControlValue)
-    __obj.updateDynamic("convertToPropertyValue")(convertToPropertyValue)
+    val __obj = js.Dynamic.literal(convertToControlValue = convertToControlValue, convertToPropertyValue = convertToPropertyValue)
+  
     __obj.asInstanceOf[XStringRepresentation]
   }
 }

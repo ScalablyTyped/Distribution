@@ -16,8 +16,8 @@ trait SearchPageRankResult extends js.Object {
 object SearchPageRankResult {
   @scala.inline
   def apply(rank: js.Function1[NodeCollection, scala.Double]): SearchPageRankResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("rank")(rank)
+    val __obj = js.Dynamic.literal(rank = rank)
+  
     __obj.asInstanceOf[SearchPageRankResult]
   }
 }

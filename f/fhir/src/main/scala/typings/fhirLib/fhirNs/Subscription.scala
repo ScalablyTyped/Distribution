@@ -94,11 +94,7 @@ object Subscription {
     tag: js.Array[Coding] = null,
     text: Narrative = null
   ): Subscription = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("channel")(channel)
-    __obj.updateDynamic("criteria")(criteria)
-    __obj.updateDynamic("reason")(reason)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(channel = channel, criteria = criteria, reason = reason, status = status)
     if (_criteria != null) __obj.updateDynamic("_criteria")(_criteria)
     if (_end != null) __obj.updateDynamic("_end")(_end)
     if (_error != null) __obj.updateDynamic("_error")(_error)

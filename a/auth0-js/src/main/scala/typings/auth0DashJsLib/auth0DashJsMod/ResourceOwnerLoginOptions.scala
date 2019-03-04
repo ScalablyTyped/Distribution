@@ -19,10 +19,7 @@ object ResourceOwnerLoginOptions {
     device: java.lang.String = null,
     scope: java.lang.String = null
   ): ResourceOwnerLoginOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("connection")(connection)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(connection = connection, password = password, username = username)
     if (device != null) __obj.updateDynamic("device")(device)
     if (scope != null) __obj.updateDynamic("scope")(scope)
     __obj.asInstanceOf[ResourceOwnerLoginOptions]

@@ -23,12 +23,8 @@ object Grid {
     rowFactory: RowFactory[EntityType],
     selectionService: SelectionService[EntityType]
   ): Grid[EntityType] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$$selectionPhase")($$selectionPhase)
-    __obj.updateDynamic("config")(config)
-    __obj.updateDynamic("configureColumnWidths")(configureColumnWidths)
-    __obj.updateDynamic("rowFactory")(rowFactory)
-    __obj.updateDynamic("selectionService")(selectionService)
+    val __obj = js.Dynamic.literal($$selectionPhase = $$selectionPhase, config = config, configureColumnWidths = configureColumnWidths, rowFactory = rowFactory, selectionService = selectionService)
+  
     __obj.asInstanceOf[Grid[EntityType]]
   }
 }

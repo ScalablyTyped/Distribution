@@ -30,16 +30,8 @@ object detectIt {
     state: state,
     update: js.Function0[scala.Unit]
   ): detectIt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasMouse")(hasMouse)
-    __obj.updateDynamic("hasTouch")(hasTouch)
-    __obj.updateDynamic("maxTouchPoints")(maxTouchPoints)
-    __obj.updateDynamic("passiveEvents")(passiveEvents)
-    __obj.updateDynamic("primaryHover")(primaryHover.asInstanceOf[js.Any])
-    __obj.updateDynamic("primaryPointer")(primaryPointer.asInstanceOf[js.Any])
-    __obj.updateDynamic("state")(state)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(deviceType = deviceType.asInstanceOf[js.Any], hasMouse = hasMouse, hasTouch = hasTouch, maxTouchPoints = maxTouchPoints, passiveEvents = passiveEvents, primaryHover = primaryHover.asInstanceOf[js.Any], primaryPointer = primaryPointer.asInstanceOf[js.Any], state = state, update = update)
+  
     __obj.asInstanceOf[detectIt]
   }
 }

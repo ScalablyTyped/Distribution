@@ -45,19 +45,8 @@ object XWindowPeer {
     setBackground: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
     setPointer: js.Function1[XPointer, scala.Unit]
   ): XWindowPeer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Toolkit")(Toolkit)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getToolkit")(getToolkit)
-    __obj.updateDynamic("invalidate")(invalidate)
-    __obj.updateDynamic("invalidateRect")(invalidateRect)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("setBackground")(setBackground)
-    __obj.updateDynamic("setPointer")(setPointer)
+    val __obj = js.Dynamic.literal(Toolkit = Toolkit, acquire = acquire, addEventListener = addEventListener, dispose = dispose, getToolkit = getToolkit, invalidate = invalidate, invalidateRect = invalidateRect, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, setBackground = setBackground, setPointer = setPointer)
+  
     __obj.asInstanceOf[XWindowPeer]
   }
 }

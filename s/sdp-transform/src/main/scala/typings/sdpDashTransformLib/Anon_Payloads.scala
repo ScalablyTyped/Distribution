@@ -20,9 +20,8 @@ object Anon_Payloads {
     `type`: java.lang.String,
     payloads: java.lang.String = null
   ): Anon_Payloads = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
+    val __obj = js.Dynamic.literal(port = port, protocol = protocol)
+    __obj.updateDynamic("type")(`type`)
     if (payloads != null) __obj.updateDynamic("payloads")(payloads)
     __obj.asInstanceOf[Anon_Payloads]
   }

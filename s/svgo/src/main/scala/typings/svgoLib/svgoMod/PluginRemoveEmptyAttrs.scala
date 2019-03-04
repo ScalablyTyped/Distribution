@@ -12,8 +12,8 @@ trait PluginRemoveEmptyAttrs extends js.Object {
 object PluginRemoveEmptyAttrs {
   @scala.inline
   def apply(removeEmptyAttrs: scala.Boolean | js.Object): PluginRemoveEmptyAttrs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("removeEmptyAttrs")(removeEmptyAttrs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(removeEmptyAttrs = removeEmptyAttrs.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginRemoveEmptyAttrs]
   }
 }

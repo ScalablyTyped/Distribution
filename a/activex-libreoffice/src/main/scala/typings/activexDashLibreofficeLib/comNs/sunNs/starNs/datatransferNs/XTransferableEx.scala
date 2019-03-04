@@ -30,11 +30,8 @@ object XTransferableEx {
     ],
     release: js.Function0[scala.Unit]
   ): XTransferableEx = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("queryTransferDataFlavors")(queryTransferDataFlavors)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, queryInterface = queryInterface, queryTransferDataFlavors = queryTransferDataFlavors, release = release)
+  
     __obj.asInstanceOf[XTransferableEx]
   }
 }

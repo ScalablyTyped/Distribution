@@ -22,9 +22,8 @@ object Location {
     query: js.Object = null,
     search: java.lang.String = null
   ): Location = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("payload")(payload)
+    val __obj = js.Dynamic.literal(pathname = pathname, payload = payload)
+    __obj.updateDynamic("type")(`type`)
     if (query != null) __obj.updateDynamic("query")(query)
     if (search != null) __obj.updateDynamic("search")(search)
     __obj.asInstanceOf[Location]

@@ -42,12 +42,8 @@ object InfoObject {
     procName: java.lang.String,
     state: js.Any
   ): InfoObject = {
-    val __obj = js.Dynamic.literal(`class` = `class`)
-    __obj.updateDynamic("lineNumber")(lineNumber)
-    __obj.updateDynamic("message")(message)
-    __obj.updateDynamic("number")(number)
-    __obj.updateDynamic("procName")(procName)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(lineNumber = lineNumber, message = message, number = number, procName = procName, state = state)
+    __obj.updateDynamic("class")(`class`)
     __obj.asInstanceOf[InfoObject]
   }
 }

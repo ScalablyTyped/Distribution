@@ -31,7 +31,8 @@ object FilterExtension {
       java.lang.String
     ] = null
   ): FilterExtension = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (filter != null) __obj.updateDynamic("filter")(filter)
     __obj.asInstanceOf[FilterExtension]
   }

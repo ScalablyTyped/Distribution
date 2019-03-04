@@ -26,9 +26,8 @@ object ChatRoomBanList {
     participants: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatRoomParticipant],
     room: java.lang.String
   ): ChatRoomBanList = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("participants")(participants)
-    __obj.updateDynamic("room")(room)
+    val __obj = js.Dynamic.literal(participants = participants, room = room)
+  
     __obj.asInstanceOf[ChatRoomBanList]
   }
 }

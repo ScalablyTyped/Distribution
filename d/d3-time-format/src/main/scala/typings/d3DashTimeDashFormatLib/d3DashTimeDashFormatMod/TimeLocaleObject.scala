@@ -107,11 +107,8 @@ object TimeLocaleObject {
       js.Function1[/* dateString */ java.lang.String, stdLib.Date | scala.Null]
     ]
   ): TimeLocaleObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
-    __obj.updateDynamic("parse")(parse)
-    __obj.updateDynamic("utcFormat")(utcFormat)
-    __obj.updateDynamic("utcParse")(utcParse)
+    val __obj = js.Dynamic.literal(format = format, parse = parse, utcFormat = utcFormat, utcParse = utcParse)
+  
     __obj.asInstanceOf[TimeLocaleObject]
   }
 }

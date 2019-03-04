@@ -13,9 +13,8 @@ trait Anon_CancelSel extends js.Object {
 object Anon_CancelSel {
   @scala.inline
   def apply(Cancel: scala.Boolean, Sel: activexDashWordLib.WordNs.Selection): Anon_CancelSel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Cancel")(Cancel)
-    __obj.updateDynamic("Sel")(Sel)
+    val __obj = js.Dynamic.literal(Cancel = Cancel, Sel = Sel)
+  
     __obj.asInstanceOf[Anon_CancelSel]
   }
 }

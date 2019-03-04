@@ -36,11 +36,8 @@ object XFilterAdapter {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFilterAdapter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("convert")(convert)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, convert = convert, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFilterAdapter]
   }
 }

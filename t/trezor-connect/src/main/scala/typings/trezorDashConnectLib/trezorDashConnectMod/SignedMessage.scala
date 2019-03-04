@@ -14,9 +14,8 @@ trait SignedMessage extends js.Object {
 object SignedMessage {
   @scala.inline
   def apply(address: java.lang.String, signature: java.lang.String): SignedMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("address")(address)
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(address = address, signature = signature)
+  
     __obj.asInstanceOf[SignedMessage]
   }
 }

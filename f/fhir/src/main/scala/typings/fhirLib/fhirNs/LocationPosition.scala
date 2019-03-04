@@ -51,9 +51,7 @@ object LocationPosition {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): LocationPosition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("latitude")(latitude)
-    __obj.updateDynamic("longitude")(longitude)
+    val __obj = js.Dynamic.literal(latitude = latitude, longitude = longitude)
     if (_altitude != null) __obj.updateDynamic("_altitude")(_altitude)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

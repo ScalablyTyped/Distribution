@@ -22,12 +22,8 @@ object IXmlLoadSettings {
     resolveExternals: scala.Boolean,
     validateOnParse: scala.Boolean
   ): IXmlLoadSettings = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("elementContentWhiteSpace")(elementContentWhiteSpace)
-    __obj.updateDynamic("maxElementDepth")(maxElementDepth)
-    __obj.updateDynamic("prohibitDtd")(prohibitDtd)
-    __obj.updateDynamic("resolveExternals")(resolveExternals)
-    __obj.updateDynamic("validateOnParse")(validateOnParse)
+    val __obj = js.Dynamic.literal(elementContentWhiteSpace = elementContentWhiteSpace, maxElementDepth = maxElementDepth, prohibitDtd = prohibitDtd, resolveExternals = resolveExternals, validateOnParse = validateOnParse)
+  
     __obj.asInstanceOf[IXmlLoadSettings]
   }
 }

@@ -141,8 +141,7 @@ object CarePlanActivityDetail {
     scheduledTiming: Timing = null,
     statusReason: java.lang.String = null
   ): CarePlanActivityDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (_description != null) __obj.updateDynamic("_description")(_description)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

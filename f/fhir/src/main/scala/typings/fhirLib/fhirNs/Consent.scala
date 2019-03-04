@@ -144,9 +144,7 @@ object Consent {
     sourceReference: Reference = null,
     text: Narrative = null
   ): Consent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("patient")(patient)
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(patient = patient, status = status)
     if (_dateTime != null) __obj.updateDynamic("_dateTime")(_dateTime)
     if (_id != null) __obj.updateDynamic("_id")(_id)
     if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)

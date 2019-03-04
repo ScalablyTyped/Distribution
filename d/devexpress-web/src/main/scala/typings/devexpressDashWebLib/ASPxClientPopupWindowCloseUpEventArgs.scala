@@ -19,9 +19,8 @@ trait ASPxClientPopupWindowCloseUpEventArgs extends ASPxClientPopupWindowEventAr
 object ASPxClientPopupWindowCloseUpEventArgs {
   @scala.inline
   def apply(closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCloseUpEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("closeReason")(closeReason)
-    __obj.updateDynamic("window")(window)
+    val __obj = js.Dynamic.literal(closeReason = closeReason, window = window)
+  
     __obj.asInstanceOf[ASPxClientPopupWindowCloseUpEventArgs]
   }
 }

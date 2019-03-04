@@ -12,8 +12,8 @@ trait SignBlobResponse extends js.Object {
 object SignBlobResponse {
   @scala.inline
   def apply(signature: java.lang.String): SignBlobResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("signature")(signature)
+    val __obj = js.Dynamic.literal(signature = signature)
+  
     __obj.asInstanceOf[SignBlobResponse]
   }
 }

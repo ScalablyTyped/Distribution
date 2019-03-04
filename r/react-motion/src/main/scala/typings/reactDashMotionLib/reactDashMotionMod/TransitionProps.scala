@@ -54,8 +54,7 @@ object TransitionProps {
     willEnter: js.Function1[/* styleThatEntered */ TransitionStyle, PlainStyle] = null,
     willLeave: js.Function1[/* styleThatLeft */ TransitionStyle, Style | scala.Unit] = null
   ): TransitionProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children)
     if (defaultStyles != null) __obj.updateDynamic("defaultStyles")(defaultStyles)
     if (didLeave != null) __obj.updateDynamic("didLeave")(didLeave)

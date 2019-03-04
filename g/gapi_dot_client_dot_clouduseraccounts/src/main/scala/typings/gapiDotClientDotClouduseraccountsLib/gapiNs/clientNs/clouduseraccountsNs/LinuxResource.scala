@@ -24,9 +24,8 @@ object LinuxResource {
       gapiDotClientLib.gapiNs.clientNs.Request[LinuxGetLinuxAccountViewsResponse]
     ]
   ): LinuxResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAuthorizedKeysView")(getAuthorizedKeysView)
-    __obj.updateDynamic("getLinuxAccountViews")(getLinuxAccountViews)
+    val __obj = js.Dynamic.literal(getAuthorizedKeysView = getAuthorizedKeysView, getLinuxAccountViews = getLinuxAccountViews)
+  
     __obj.asInstanceOf[LinuxResource]
   }
 }

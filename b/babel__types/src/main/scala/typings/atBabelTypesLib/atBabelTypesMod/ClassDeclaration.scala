@@ -48,8 +48,8 @@ object ClassDeclaration {
     trailingComments: js.Array[Comment] = null,
     typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop = null
   ): ClassDeclaration = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("body")(body)
+    val __obj = js.Dynamic.literal(body = body)
+    __obj.updateDynamic("type")(`type`)
     if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
     if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)

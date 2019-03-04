@@ -24,9 +24,8 @@ object RecommendedResource {
       gapiDotClientLib.gapiNs.clientNs.Request[BooksVolumesRecommendedRateResponse]
     ]
   ): RecommendedResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("list")(list)
-    __obj.updateDynamic("rate")(rate)
+    val __obj = js.Dynamic.literal(list = list, rate = rate)
+  
     __obj.asInstanceOf[RecommendedResource]
   }
 }

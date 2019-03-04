@@ -58,8 +58,7 @@ object MaskedViewIOSProps {
     style: StyleProp[ViewStyle] = null,
     testID: java.lang.String = null
   ): MaskedViewIOSProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("maskElement")(maskElement)
+    val __obj = js.Dynamic.literal(maskElement = maskElement)
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)

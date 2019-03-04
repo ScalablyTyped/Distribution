@@ -12,8 +12,8 @@ trait UUIDObject extends js.Object {
 object UUIDObject {
   @scala.inline
   def apply(uuids: js.Array[java.lang.String]): UUIDObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uuids")(uuids)
+    val __obj = js.Dynamic.literal(uuids = uuids)
+  
     __obj.asInstanceOf[UUIDObject]
   }
 }

@@ -16,10 +16,8 @@ object Full {
     name: java.lang.String,
     sub: isoDash3166Dash2Lib.isoDash3166Dash2Mod.SubdivisionInfoNs.Map
   ): Full = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("sub")(sub)
+    val __obj = js.Dynamic.literal(code = code, name = name, sub = sub)
+  
     __obj.asInstanceOf[Full]
   }
 }

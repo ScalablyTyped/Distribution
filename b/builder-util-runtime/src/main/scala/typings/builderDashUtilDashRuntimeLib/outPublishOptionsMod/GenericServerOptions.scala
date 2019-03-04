@@ -39,9 +39,7 @@ object GenericServerOptions {
     updaterCacheDirName: java.lang.String = null,
     useMultipleRangeRequest: js.UndefOr[scala.Boolean] = js.undefined
   ): GenericServerOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provider")(provider)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(provider = provider, url = url)
     if (channel != null) __obj.updateDynamic("channel")(channel)
     if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
     if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)

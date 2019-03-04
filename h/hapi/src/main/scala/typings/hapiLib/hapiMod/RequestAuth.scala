@@ -36,14 +36,8 @@ object RequestAuth {
     mode: java.lang.String,
     strategy: java.lang.String
   ): RequestAuth = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifacts")(artifacts)
-    __obj.updateDynamic("credentials")(credentials)
-    __obj.updateDynamic("error")(error)
-    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
-    __obj.updateDynamic("isAuthorized")(isAuthorized)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("strategy")(strategy)
+    val __obj = js.Dynamic.literal(artifacts = artifacts, credentials = credentials, error = error, isAuthenticated = isAuthenticated, isAuthorized = isAuthorized, mode = mode, strategy = strategy)
+  
     __obj.asInstanceOf[RequestAuth]
   }
 }

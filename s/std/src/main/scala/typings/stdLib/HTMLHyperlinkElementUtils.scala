@@ -34,18 +34,8 @@ object HTMLHyperlinkElementUtils {
     search: java.lang.String,
     username: java.lang.String
   ): HTMLHyperlinkElementUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hash")(hash)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("hostname")(hostname)
-    __obj.updateDynamic("href")(href)
-    __obj.updateDynamic("origin")(origin)
-    __obj.updateDynamic("password")(password)
-    __obj.updateDynamic("pathname")(pathname)
-    __obj.updateDynamic("port")(port)
-    __obj.updateDynamic("protocol")(protocol)
-    __obj.updateDynamic("search")(search)
-    __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, password = password, pathname = pathname, port = port, protocol = protocol, search = search, username = username)
+  
     __obj.asInstanceOf[HTMLHyperlinkElementUtils]
   }
 }

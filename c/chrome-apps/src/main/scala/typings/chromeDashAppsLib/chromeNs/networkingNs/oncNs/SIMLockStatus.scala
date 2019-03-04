@@ -21,9 +21,7 @@ object SIMLockStatus {
     LockType: chromeDashAppsLib.chromeDashAppsLibStrings.`sim-pin` | chromeDashAppsLib.chromeDashAppsLibStrings.`sim-puk` | chromeDashAppsLib.chromeDashAppsLibStrings.Empty,
     RetriesLeft: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
   ): SIMLockStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("LockEnabled")(LockEnabled)
-    __obj.updateDynamic("LockType")(LockType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(LockEnabled = LockEnabled, LockType = LockType.asInstanceOf[js.Any])
     if (!js.isUndefined(RetriesLeft)) __obj.updateDynamic("RetriesLeft")(RetriesLeft)
     __obj.asInstanceOf[SIMLockStatus]
   }

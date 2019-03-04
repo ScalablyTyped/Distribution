@@ -29,10 +29,8 @@ object DraftEntityInstance {
     getMutability: js.Function0[draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityMutability],
     getType: js.Function0[draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftEntityType]
   ): DraftEntityInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getData")(getData)
-    __obj.updateDynamic("getMutability")(getMutability)
-    __obj.updateDynamic("getType")(getType)
+    val __obj = js.Dynamic.literal(getData = getData, getMutability = getMutability, getType = getType)
+  
     __obj.asInstanceOf[DraftEntityInstance]
   }
 }

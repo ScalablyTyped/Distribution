@@ -14,10 +14,8 @@ trait Highlight extends js.Object {
 object Highlight {
   @scala.inline
   def apply(color: java.lang.String, from: scala.Double, to: scala.Double): Highlight = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("color")(color)
-    __obj.updateDynamic("from")(from)
-    __obj.updateDynamic("to")(to)
+    val __obj = js.Dynamic.literal(color = color, from = from, to = to)
+  
     __obj.asInstanceOf[Highlight]
   }
 }

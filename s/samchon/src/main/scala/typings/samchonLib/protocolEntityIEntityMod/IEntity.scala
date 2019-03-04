@@ -90,11 +90,8 @@ object IEntity {
     key: js.Function0[js.Any],
     toXML: js.Function0[sxmlLib.sxmlMod.XML]
   ): IEntity = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("TAG")(TAG)
-    __obj.updateDynamic("construct")(construct)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("toXML")(toXML)
+    val __obj = js.Dynamic.literal(TAG = TAG, construct = construct, key = key, toXML = toXML)
+  
     __obj.asInstanceOf[IEntity]
   }
 }

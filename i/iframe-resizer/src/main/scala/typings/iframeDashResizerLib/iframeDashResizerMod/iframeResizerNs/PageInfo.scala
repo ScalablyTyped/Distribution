@@ -52,15 +52,8 @@ object PageInfo {
     scrollLeft: scala.Double,
     scrollTop: scala.Double
   ): PageInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clientHeight")(clientHeight)
-    __obj.updateDynamic("clientWidth")(clientWidth)
-    __obj.updateDynamic("iframeHeight")(iframeHeight)
-    __obj.updateDynamic("iframeWidth")(iframeWidth)
-    __obj.updateDynamic("offsetLeft")(offsetLeft)
-    __obj.updateDynamic("offsetTop")(offsetTop)
-    __obj.updateDynamic("scrollLeft")(scrollLeft)
-    __obj.updateDynamic("scrollTop")(scrollTop)
+    val __obj = js.Dynamic.literal(clientHeight = clientHeight, clientWidth = clientWidth, iframeHeight = iframeHeight, iframeWidth = iframeWidth, offsetLeft = offsetLeft, offsetTop = offsetTop, scrollLeft = scrollLeft, scrollTop = scrollTop)
+  
     __obj.asInstanceOf[PageInfo]
   }
 }

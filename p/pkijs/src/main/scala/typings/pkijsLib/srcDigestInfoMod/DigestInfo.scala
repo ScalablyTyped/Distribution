@@ -22,12 +22,8 @@ object DigestInfo {
     toJSON: js.Function0[js.Any],
     toSchema: js.Function0[js.Any]
   ): DigestInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("digest")(digest)
-    __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
-    __obj.updateDynamic("fromSchema")(fromSchema)
-    __obj.updateDynamic("toJSON")(toJSON)
-    __obj.updateDynamic("toSchema")(toSchema)
+    val __obj = js.Dynamic.literal(digest = digest, digestAlgorithm = digestAlgorithm, fromSchema = fromSchema, toJSON = toJSON, toSchema = toSchema)
+  
     __obj.asInstanceOf[DigestInfo]
   }
 }

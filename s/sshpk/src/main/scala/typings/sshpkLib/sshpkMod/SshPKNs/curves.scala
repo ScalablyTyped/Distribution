@@ -14,10 +14,8 @@ trait curves extends js.Object {
 object curves {
   @scala.inline
   def apply(nistp256: Curve, nistp384: Curve, nistp512: Curve): curves = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("nistp256")(nistp256)
-    __obj.updateDynamic("nistp384")(nistp384)
-    __obj.updateDynamic("nistp512")(nistp512)
+    val __obj = js.Dynamic.literal(nistp256 = nistp256, nistp384 = nistp384, nistp512 = nistp512)
+  
     __obj.asInstanceOf[curves]
   }
 }

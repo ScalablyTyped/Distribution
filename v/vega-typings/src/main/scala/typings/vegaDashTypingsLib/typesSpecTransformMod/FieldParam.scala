@@ -12,8 +12,8 @@ trait FieldParam extends TransformField {
 object FieldParam {
   @scala.inline
   def apply(field: java.lang.String): FieldParam = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
+    val __obj = js.Dynamic.literal(field = field)
+  
     __obj.asInstanceOf[FieldParam]
   }
 }

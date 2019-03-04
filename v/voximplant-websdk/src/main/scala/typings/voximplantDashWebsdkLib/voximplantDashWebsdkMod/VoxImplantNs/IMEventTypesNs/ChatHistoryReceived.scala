@@ -31,10 +31,8 @@ object ChatHistoryReceived {
     message_id: java.lang.String,
     messages: js.Array[voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.IMHistoryMessage]
   ): ChatHistoryReceived = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("message_id")(message_id)
-    __obj.updateDynamic("messages")(messages)
+    val __obj = js.Dynamic.literal(id = id, message_id = message_id, messages = messages)
+  
     __obj.asInstanceOf[ChatHistoryReceived]
   }
 }

@@ -20,8 +20,7 @@ object Response {
     headers: org.scalablytyped.runtime.StringDictionary[Header] = null,
     schema: Schema = null
   ): Response = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("description")(description)
+    val __obj = js.Dynamic.literal(description = description)
     if (examples != null) __obj.updateDynamic("examples")(examples)
     if (headers != null) __obj.updateDynamic("headers")(headers)
     if (schema != null) __obj.updateDynamic("schema")(schema)

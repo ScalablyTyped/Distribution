@@ -13,9 +13,8 @@ trait ASPxClientFloatingActionButtonActionCollapsingEventArgs extends ASPxClient
 object ASPxClientFloatingActionButtonActionCollapsingEventArgs {
   @scala.inline
   def apply(collapseReason: ASPxClientFloatingActionButtonCollapseReason, contextName: java.lang.String): ASPxClientFloatingActionButtonActionCollapsingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapseReason")(collapseReason)
-    __obj.updateDynamic("contextName")(contextName)
+    val __obj = js.Dynamic.literal(collapseReason = collapseReason, contextName = contextName)
+  
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionCollapsingEventArgs]
   }
 }

@@ -19,12 +19,8 @@ object ControllerMethodMetadata {
     path: java.lang.String,
     target: js.Any
   ): ControllerMethodMetadata = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("middleware")(middleware)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(key = key, method = method, middleware = middleware, path = path, target = target)
+  
     __obj.asInstanceOf[ControllerMethodMetadata]
   }
 }

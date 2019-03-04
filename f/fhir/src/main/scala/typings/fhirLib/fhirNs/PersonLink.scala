@@ -36,8 +36,7 @@ object PersonLink {
     id: java.lang.String = null,
     modifierExtension: js.Array[Extension] = null
   ): PersonLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     if (_assurance != null) __obj.updateDynamic("_assurance")(_assurance)
     if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
     if (_id != null) __obj.updateDynamic("_id")(_id)

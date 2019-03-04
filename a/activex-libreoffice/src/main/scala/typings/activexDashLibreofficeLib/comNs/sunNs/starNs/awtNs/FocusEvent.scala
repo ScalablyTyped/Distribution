@@ -36,11 +36,8 @@ object FocusEvent {
     Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
     Temporary: scala.Boolean
   ): FocusEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FocusFlags")(FocusFlags)
-    __obj.updateDynamic("NextFocus")(NextFocus)
-    __obj.updateDynamic("Source")(Source)
-    __obj.updateDynamic("Temporary")(Temporary)
+    val __obj = js.Dynamic.literal(FocusFlags = FocusFlags, NextFocus = NextFocus, Source = Source, Temporary = Temporary)
+  
     __obj.asInstanceOf[FocusEvent]
   }
 }

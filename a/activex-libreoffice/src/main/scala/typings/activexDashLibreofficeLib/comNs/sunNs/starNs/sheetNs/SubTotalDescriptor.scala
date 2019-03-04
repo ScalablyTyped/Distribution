@@ -93,35 +93,8 @@ object SubTotalDescriptor {
     ],
     setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
   ): SubTotalDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("BindFormatsToContent")(BindFormatsToContent)
-    __obj.updateDynamic("Count")(Count)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("EnableSort")(EnableSort)
-    __obj.updateDynamic("EnableUserSortList")(EnableUserSortList)
-    __obj.updateDynamic("InsertPageBreaks")(InsertPageBreaks)
-    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
-    __obj.updateDynamic("MaxFieldCount")(MaxFieldCount)
-    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
-    __obj.updateDynamic("SortAscending")(SortAscending)
-    __obj.updateDynamic("UserSortListIndex")(UserSortListIndex)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addNew")(addNew)
-    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
-    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
-    __obj.updateDynamic("clear")(clear)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getByIndex")(getByIndex)
-    __obj.updateDynamic("getCount")(getCount)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
-    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
-    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
-    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    val __obj = js.Dynamic.literal(BindFormatsToContent = BindFormatsToContent, Count = Count, ElementType = ElementType, EnableSort = EnableSort, EnableUserSortList = EnableUserSortList, InsertPageBreaks = InsertPageBreaks, IsCaseSensitive = IsCaseSensitive, MaxFieldCount = MaxFieldCount, PropertySetInfo = PropertySetInfo, SortAscending = SortAscending, UserSortListIndex = UserSortListIndex, acquire = acquire, addNew = addNew, addPropertyChangeListener = addPropertyChangeListener, addVetoableChangeListener = addVetoableChangeListener, clear = clear, createEnumeration = createEnumeration, getByIndex = getByIndex, getCount = getCount, getElementType = getElementType, getPropertySetInfo = getPropertySetInfo, getPropertyValue = getPropertyValue, hasElements = hasElements, queryInterface = queryInterface, release = release, removePropertyChangeListener = removePropertyChangeListener, removeVetoableChangeListener = removeVetoableChangeListener, setPropertyValue = setPropertyValue)
+  
     __obj.asInstanceOf[SubTotalDescriptor]
   }
 }

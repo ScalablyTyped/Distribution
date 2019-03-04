@@ -101,37 +101,8 @@ object EmbeddedPieChartBuilder {
     ],
     setTransposeRowsAndColumns: js.Function1[scala.Boolean, EmbeddedChartBuilder]
   ): EmbeddedPieChartBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addRange")(addRange)
-    __obj.updateDynamic("asAreaChart")(asAreaChart)
-    __obj.updateDynamic("asBarChart")(asBarChart)
-    __obj.updateDynamic("asColumnChart")(asColumnChart)
-    __obj.updateDynamic("asComboChart")(asComboChart)
-    __obj.updateDynamic("asHistogramChart")(asHistogramChart)
-    __obj.updateDynamic("asLineChart")(asLineChart)
-    __obj.updateDynamic("asPieChart")(asPieChart)
-    __obj.updateDynamic("asScatterChart")(asScatterChart)
-    __obj.updateDynamic("asTableChart")(asTableChart)
-    __obj.updateDynamic("build")(build)
-    __obj.updateDynamic("getChartType")(getChartType)
-    __obj.updateDynamic("getContainer")(getContainer)
-    __obj.updateDynamic("getRanges")(getRanges)
-    __obj.updateDynamic("removeRange")(removeRange)
-    __obj.updateDynamic("reverseCategories")(reverseCategories)
-    __obj.updateDynamic("set3D")(set3D)
-    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
-    __obj.updateDynamic("setChartType")(setChartType)
-    __obj.updateDynamic("setColors")(setColors)
-    __obj.updateDynamic("setHiddenDimensionStrategy")(setHiddenDimensionStrategy)
-    __obj.updateDynamic("setLegendPosition")(setLegendPosition)
-    __obj.updateDynamic("setLegendTextStyle")(setLegendTextStyle)
-    __obj.updateDynamic("setMergeStrategy")(setMergeStrategy)
-    __obj.updateDynamic("setNumHeaders")(setNumHeaders)
-    __obj.updateDynamic("setOption")(setOption)
-    __obj.updateDynamic("setPosition")(setPosition)
-    __obj.updateDynamic("setTitle")(setTitle)
-    __obj.updateDynamic("setTitleTextStyle")(setTitleTextStyle)
-    __obj.updateDynamic("setTransposeRowsAndColumns")(setTransposeRowsAndColumns)
+    val __obj = js.Dynamic.literal(addRange = addRange, asAreaChart = asAreaChart, asBarChart = asBarChart, asColumnChart = asColumnChart, asComboChart = asComboChart, asHistogramChart = asHistogramChart, asLineChart = asLineChart, asPieChart = asPieChart, asScatterChart = asScatterChart, asTableChart = asTableChart, build = build, getChartType = getChartType, getContainer = getContainer, getRanges = getRanges, removeRange = removeRange, reverseCategories = reverseCategories, set3D = set3D, setBackgroundColor = setBackgroundColor, setChartType = setChartType, setColors = setColors, setHiddenDimensionStrategy = setHiddenDimensionStrategy, setLegendPosition = setLegendPosition, setLegendTextStyle = setLegendTextStyle, setMergeStrategy = setMergeStrategy, setNumHeaders = setNumHeaders, setOption = setOption, setPosition = setPosition, setTitle = setTitle, setTitleTextStyle = setTitleTextStyle, setTransposeRowsAndColumns = setTransposeRowsAndColumns)
+  
     __obj.asInstanceOf[EmbeddedPieChartBuilder]
   }
 }

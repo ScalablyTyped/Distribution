@@ -22,12 +22,8 @@ object Anon_AllFields {
     none: scala.Double,
     relations: scala.Double
   ): Anon_AllFields = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("all")(all)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("none")(none)
-    __obj.updateDynamic("relations")(relations)
+    val __obj = js.Dynamic.literal(all = all, fields = fields, links = links, none = none, relations = relations)
+  
     __obj.asInstanceOf[Anon_AllFields]
   }
 }

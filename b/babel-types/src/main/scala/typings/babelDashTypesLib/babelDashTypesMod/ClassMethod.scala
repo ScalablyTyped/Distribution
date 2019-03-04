@@ -55,20 +55,8 @@ object ClassMethod {
     typeParameters: TypeParameterDeclaration = null,
     value: FunctionExpression = null
   ): ClassMethod = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("computed")(computed)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("expression")(expression)
-    __obj.updateDynamic("generator")(generator)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    __obj.updateDynamic("loc")(loc)
-    __obj.updateDynamic("params")(params)
-    __obj.updateDynamic("start")(start)
-    __obj.updateDynamic("static")(static)
+    val __obj = js.Dynamic.literal(async = async, body = body, computed = computed, end = end, expression = expression, generator = generator, id = id, key = key, kind = kind.asInstanceOf[js.Any], loc = loc, params = params, start = start, static = static)
+    __obj.updateDynamic("type")(`type`)
     if (decorators != null) __obj.updateDynamic("decorators")(decorators)
     if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments)
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)

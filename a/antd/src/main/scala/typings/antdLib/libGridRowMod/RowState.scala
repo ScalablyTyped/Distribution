@@ -12,8 +12,8 @@ trait RowState extends js.Object {
 object RowState {
   @scala.inline
   def apply(screens: BreakpointMap): RowState = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("screens")(screens)
+    val __obj = js.Dynamic.literal(screens = screens)
+  
     __obj.asInstanceOf[RowState]
   }
 }

@@ -57,15 +57,8 @@ object XParametricPolyPolygon2D {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XParametricPolyPolygon2D = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ColorSpace")(ColorSpace)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getColor")(getColor)
-    __obj.updateDynamic("getColorSpace")(getColorSpace)
-    __obj.updateDynamic("getOutline")(getOutline)
-    __obj.updateDynamic("getPointColor")(getPointColor)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ColorSpace = ColorSpace, acquire = acquire, getColor = getColor, getColorSpace = getColorSpace, getOutline = getOutline, getPointColor = getPointColor, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XParametricPolyPolygon2D]
   }
 }

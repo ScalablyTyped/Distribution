@@ -25,11 +25,8 @@ object CellProtection {
     IsLocked: scala.Boolean,
     IsPrintHidden: scala.Boolean
   ): CellProtection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("IsFormulaHidden")(IsFormulaHidden)
-    __obj.updateDynamic("IsHidden")(IsHidden)
-    __obj.updateDynamic("IsLocked")(IsLocked)
-    __obj.updateDynamic("IsPrintHidden")(IsPrintHidden)
+    val __obj = js.Dynamic.literal(IsFormulaHidden = IsFormulaHidden, IsHidden = IsHidden, IsLocked = IsLocked, IsPrintHidden = IsPrintHidden)
+  
     __obj.asInstanceOf[CellProtection]
   }
 }

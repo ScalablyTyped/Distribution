@@ -86,29 +86,8 @@ object RowColumnDefinition {
     total: scala.Double,
     width: scala.Double
   ): RowColumnDefinition = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("actual")(actual)
-    __obj.updateDynamic("alignment")(alignment)
-    __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    __obj.updateDynamic("bind")(bind)
-    __obj.updateDynamic("computeEffectiveSpacing")(computeEffectiveSpacing)
-    __obj.updateDynamic("computeEffectiveSpacingTop")(computeEffectiveSpacingTop)
-    __obj.updateDynamic("coversSeparators")(coversSeparators)
-    __obj.updateDynamic("height")(height)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("isRow")(isRow)
-    __obj.updateDynamic("maximum")(maximum)
-    __obj.updateDynamic("minimum")(minimum)
-    __obj.updateDynamic("panel")(panel)
-    __obj.updateDynamic("position")(position)
-    __obj.updateDynamic("separatorDashArray")(separatorDashArray)
-    __obj.updateDynamic("separatorPadding")(separatorPadding.asInstanceOf[js.Any])
-    __obj.updateDynamic("separatorStroke")(separatorStroke.asInstanceOf[js.Any])
-    __obj.updateDynamic("separatorStrokeWidth")(separatorStrokeWidth)
-    __obj.updateDynamic("sizing")(sizing)
-    __obj.updateDynamic("stretch")(stretch)
-    __obj.updateDynamic("total")(total)
-    __obj.updateDynamic("width")(width)
+    val __obj = js.Dynamic.literal(actual = actual, alignment = alignment, background = background.asInstanceOf[js.Any], bind = bind, computeEffectiveSpacing = computeEffectiveSpacing, computeEffectiveSpacingTop = computeEffectiveSpacingTop, coversSeparators = coversSeparators, height = height, index = index, isRow = isRow, maximum = maximum, minimum = minimum, panel = panel, position = position, separatorDashArray = separatorDashArray, separatorPadding = separatorPadding.asInstanceOf[js.Any], separatorStroke = separatorStroke.asInstanceOf[js.Any], separatorStrokeWidth = separatorStrokeWidth, sizing = sizing, stretch = stretch, total = total, width = width)
+  
     __obj.asInstanceOf[RowColumnDefinition]
   }
 }

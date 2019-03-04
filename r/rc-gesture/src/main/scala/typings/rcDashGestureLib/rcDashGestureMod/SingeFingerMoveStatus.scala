@@ -24,13 +24,8 @@ object SingeFingerMoveStatus {
     y: scala.Double,
     z: scala.Double
   ): SingeFingerMoveStatus = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("angle")(angle)
-    __obj.updateDynamic("time")(time)
-    __obj.updateDynamic("velocity")(velocity)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
-    __obj.updateDynamic("z")(z)
+    val __obj = js.Dynamic.literal(angle = angle, time = time, velocity = velocity, x = x, y = y, z = z)
+  
     __obj.asInstanceOf[SingeFingerMoveStatus]
   }
 }

@@ -18,9 +18,7 @@ object Field {
     rules: js.Array[Rule],
     optional: js.UndefOr[scala.Boolean] = js.undefined
   ): Field = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identifier")(identifier)
-    __obj.updateDynamic("rules")(rules)
+    val __obj = js.Dynamic.literal(identifier = identifier, rules = rules)
     if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
     __obj.asInstanceOf[Field]
   }

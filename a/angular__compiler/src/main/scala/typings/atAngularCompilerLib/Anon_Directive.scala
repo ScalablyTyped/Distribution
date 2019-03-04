@@ -16,9 +16,8 @@ object Anon_Directive {
     directive: DirectiveT,
     node: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template
   ): Anon_Directive[DirectiveT] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("directive")(directive.asInstanceOf[js.Any])
-    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(directive = directive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Directive[DirectiveT]]
   }
 }

@@ -16,9 +16,8 @@ trait Array[T] extends js.Object {
 object Array {
   @scala.inline
   def apply[T]($promise: angularLib.angularMod.angularNs.IPromise[Array[T]], $resolved: scala.Boolean): Array[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("$promise")($promise)
-    __obj.updateDynamic("$resolved")($resolved)
+    val __obj = js.Dynamic.literal($promise = $promise, $resolved = $resolved)
+  
     __obj.asInstanceOf[Array[T]]
   }
 }

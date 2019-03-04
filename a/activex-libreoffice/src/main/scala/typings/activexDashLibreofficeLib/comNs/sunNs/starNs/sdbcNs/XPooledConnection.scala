@@ -50,12 +50,8 @@ object XPooledConnection {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XPooledConnection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Connection")(Connection)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("getConnection")(getConnection)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(Connection = Connection, acquire = acquire, getConnection = getConnection, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XPooledConnection]
   }
 }

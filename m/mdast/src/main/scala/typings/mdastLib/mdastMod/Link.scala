@@ -25,9 +25,8 @@ object Link {
     position: unistLib.unistMod.Position = null,
     title: java.lang.String = null
   ): Link = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("children")(children)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(children = children, url = url)
+    __obj.updateDynamic("type")(`type`)
     if (data != null) __obj.updateDynamic("data")(data)
     if (position != null) __obj.updateDynamic("position")(position)
     if (title != null) __obj.updateDynamic("title")(title)

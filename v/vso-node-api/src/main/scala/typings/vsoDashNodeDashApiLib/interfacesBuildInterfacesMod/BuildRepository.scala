@@ -54,15 +54,8 @@ object BuildRepository {
     `type`: java.lang.String,
     url: java.lang.String
   ): BuildRepository = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("checkoutSubmodules")(checkoutSubmodules)
-    __obj.updateDynamic("clean")(clean)
-    __obj.updateDynamic("defaultBranch")(defaultBranch)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("rootFolder")(rootFolder)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(checkoutSubmodules = checkoutSubmodules, clean = clean, defaultBranch = defaultBranch, id = id, name = name, properties = properties, rootFolder = rootFolder, url = url)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[BuildRepository]
   }
 }

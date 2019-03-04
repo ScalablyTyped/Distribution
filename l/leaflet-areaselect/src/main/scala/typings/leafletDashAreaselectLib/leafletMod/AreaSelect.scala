@@ -20,11 +20,8 @@ object AreaSelect {
     remove: js.Function0[scala.Unit],
     setDimensions: js.Function1[Dimension, scala.Unit]
   ): AreaSelect = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addTo")(addTo)
-    __obj.updateDynamic("getBounds")(getBounds)
-    __obj.updateDynamic("remove")(remove)
-    __obj.updateDynamic("setDimensions")(setDimensions)
+    val __obj = js.Dynamic.literal(addTo = addTo, getBounds = getBounds, remove = remove, setDimensions = setDimensions)
+  
     __obj.asInstanceOf[AreaSelect]
   }
 }

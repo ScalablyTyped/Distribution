@@ -18,10 +18,8 @@ object Anon_ChildrenInnerPropsSelectProps {
     innerProps: Anon_ClassNameEvent,
     selectProps: js.Any
   ): Anon_ChildrenInnerPropsSelectProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    __obj.updateDynamic("innerProps")(innerProps)
-    __obj.updateDynamic("selectProps")(selectProps)
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerProps = innerProps, selectProps = selectProps)
+  
     __obj.asInstanceOf[Anon_ChildrenInnerPropsSelectProps]
   }
 }

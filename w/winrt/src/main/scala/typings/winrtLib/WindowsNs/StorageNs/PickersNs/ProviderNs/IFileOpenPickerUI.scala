@@ -32,17 +32,8 @@ object IFileOpenPickerUI {
     settingsIdentifier: java.lang.String,
     title: java.lang.String
   ): IFileOpenPickerUI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFile")(addFile)
-    __obj.updateDynamic("allowedFileTypes")(allowedFileTypes)
-    __obj.updateDynamic("canAddFile")(canAddFile)
-    __obj.updateDynamic("containsFile")(containsFile)
-    __obj.updateDynamic("onclosing")(onclosing)
-    __obj.updateDynamic("onfileremoved")(onfileremoved)
-    __obj.updateDynamic("removeFile")(removeFile)
-    __obj.updateDynamic("selectionMode")(selectionMode)
-    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(addFile = addFile, allowedFileTypes = allowedFileTypes, canAddFile = canAddFile, containsFile = containsFile, onclosing = onclosing, onfileremoved = onfileremoved, removeFile = removeFile, selectionMode = selectionMode, settingsIdentifier = settingsIdentifier, title = title)
+  
     __obj.asInstanceOf[IFileOpenPickerUI]
   }
 }

@@ -14,10 +14,8 @@ trait Ulimit extends js.Object {
 object Ulimit {
   @scala.inline
   def apply(hardLimit: scala.Double, name: UlimitName, softLimit: scala.Double): Ulimit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("hardLimit")(hardLimit)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("softLimit")(softLimit)
+    val __obj = js.Dynamic.literal(hardLimit = hardLimit, name = name, softLimit = softLimit)
+  
     __obj.asInstanceOf[Ulimit]
   }
 }

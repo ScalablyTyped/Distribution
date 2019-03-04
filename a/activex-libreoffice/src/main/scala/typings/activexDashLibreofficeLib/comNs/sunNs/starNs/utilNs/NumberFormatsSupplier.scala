@@ -34,16 +34,8 @@ object NumberFormatsSupplier {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): NumberFormatsSupplier = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("NumberFormatSettings")(NumberFormatSettings)
-    __obj.updateDynamic("NumberFormats")(NumberFormats)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createWithDefaultLocale")(createWithDefaultLocale)
-    __obj.updateDynamic("createWithLocale")(createWithLocale)
-    __obj.updateDynamic("getNumberFormatSettings")(getNumberFormatSettings)
-    __obj.updateDynamic("getNumberFormats")(getNumberFormats)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(NumberFormatSettings = NumberFormatSettings, NumberFormats = NumberFormats, acquire = acquire, createWithDefaultLocale = createWithDefaultLocale, createWithLocale = createWithLocale, getNumberFormatSettings = getNumberFormatSettings, getNumberFormats = getNumberFormats, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[NumberFormatsSupplier]
   }
 }

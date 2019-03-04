@@ -24,13 +24,8 @@ object Anon_OnDeleteSuggestion {
     onInputStarted: chromeLib.chromeNs.omniboxNs.OmniboxInputStartedEvent,
     setDefaultSuggestion: js.Function1[chromeLib.chromeNs.omniboxNs.Suggestion, scala.Unit]
   ): Anon_OnDeleteSuggestion = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onDeleteSuggestion")(onDeleteSuggestion)
-    __obj.updateDynamic("onInputCancelled")(onInputCancelled)
-    __obj.updateDynamic("onInputChanged")(onInputChanged)
-    __obj.updateDynamic("onInputEntered")(onInputEntered)
-    __obj.updateDynamic("onInputStarted")(onInputStarted)
-    __obj.updateDynamic("setDefaultSuggestion")(setDefaultSuggestion)
+    val __obj = js.Dynamic.literal(onDeleteSuggestion = onDeleteSuggestion, onInputCancelled = onInputCancelled, onInputChanged = onInputChanged, onInputEntered = onInputEntered, onInputStarted = onInputStarted, setDefaultSuggestion = setDefaultSuggestion)
+  
     __obj.asInstanceOf[Anon_OnDeleteSuggestion]
   }
 }

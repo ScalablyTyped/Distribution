@@ -27,13 +27,8 @@ object LogLevel {
     TRACE: loglevelLib.loglevelLibNumbers.`0`,
     WARN: loglevelLib.loglevelLibNumbers.`3`
   ): LogLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("DEBUG")(DEBUG)
-    __obj.updateDynamic("ERROR")(ERROR)
-    __obj.updateDynamic("INFO")(INFO)
-    __obj.updateDynamic("SILENT")(SILENT)
-    __obj.updateDynamic("TRACE")(TRACE)
-    __obj.updateDynamic("WARN")(WARN)
+    val __obj = js.Dynamic.literal(DEBUG = DEBUG, ERROR = ERROR, INFO = INFO, SILENT = SILENT, TRACE = TRACE, WARN = WARN)
+  
     __obj.asInstanceOf[LogLevel]
   }
 }

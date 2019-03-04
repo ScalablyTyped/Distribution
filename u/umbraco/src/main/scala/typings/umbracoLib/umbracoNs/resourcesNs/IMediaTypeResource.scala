@@ -38,8 +38,8 @@ object IMediaTypeResource {
   def apply(
     getAllowedTypes: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
   ): IMediaTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllowedTypes")(getAllowedTypes)
+    val __obj = js.Dynamic.literal(getAllowedTypes = getAllowedTypes)
+  
     __obj.asInstanceOf[IMediaTypeResource]
   }
 }

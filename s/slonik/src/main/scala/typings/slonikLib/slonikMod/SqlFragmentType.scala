@@ -13,9 +13,8 @@ trait SqlFragmentType extends js.Object {
 object SqlFragmentType {
   @scala.inline
   def apply(parameters: js.Array[PrimitiveValueExpressionType], sql: java.lang.String): SqlFragmentType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parameters")(parameters)
-    __obj.updateDynamic("sql")(sql)
+    val __obj = js.Dynamic.literal(parameters = parameters, sql = sql)
+  
     __obj.asInstanceOf[SqlFragmentType]
   }
 }

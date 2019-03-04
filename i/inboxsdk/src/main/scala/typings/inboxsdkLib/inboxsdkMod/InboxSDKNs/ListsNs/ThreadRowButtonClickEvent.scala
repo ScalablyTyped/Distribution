@@ -16,8 +16,7 @@ object ThreadRowButtonClickEvent {
     threadRowView: ThreadRowView,
     dropdown: inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.DropdownView = null
   ): ThreadRowButtonClickEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("threadRowView")(threadRowView)
+    val __obj = js.Dynamic.literal(threadRowView = threadRowView)
     if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown)
     __obj.asInstanceOf[ThreadRowButtonClickEvent]
   }

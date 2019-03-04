@@ -27,10 +27,8 @@ trait SecretKeySelector extends js.Object {
 object SecretKeySelector {
   @scala.inline
   def apply(key: java.lang.String, name: java.lang.String, optional: scala.Boolean): SecretKeySelector = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("key")(key)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("optional")(optional)
+    val __obj = js.Dynamic.literal(key = key, name = name, optional = optional)
+  
     __obj.asInstanceOf[SecretKeySelector]
   }
 }

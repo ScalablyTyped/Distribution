@@ -27,20 +27,8 @@ object ListEntrySource {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     removeListEntryListener: js.Function1[XListEntryListener, scala.Unit]
   ): ListEntrySource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AllListEntries")(AllListEntries)
-    __obj.updateDynamic("ListEntryCount")(ListEntryCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("addListEntryListener")(addListEntryListener)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getAllListEntries")(getAllListEntries)
-    __obj.updateDynamic("getListEntry")(getListEntry)
-    __obj.updateDynamic("getListEntryCount")(getListEntryCount)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("removeListEntryListener")(removeListEntryListener)
+    val __obj = js.Dynamic.literal(AllListEntries = AllListEntries, ListEntryCount = ListEntryCount, acquire = acquire, addEventListener = addEventListener, addListEntryListener = addListEntryListener, dispose = dispose, getAllListEntries = getAllListEntries, getListEntry = getListEntry, getListEntryCount = getListEntryCount, queryInterface = queryInterface, release = release, removeEventListener = removeEventListener, removeListEntryListener = removeListEntryListener)
+  
     __obj.asInstanceOf[ListEntrySource]
   }
 }

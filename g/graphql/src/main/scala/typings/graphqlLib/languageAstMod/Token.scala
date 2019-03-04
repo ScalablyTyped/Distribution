@@ -51,12 +51,7 @@ object Token {
     prev: Token = null,
     value: java.lang.String = null
   ): Token = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("column")(column)
-    __obj.updateDynamic("end")(end)
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("line")(line)
-    __obj.updateDynamic("start")(start)
+    val __obj = js.Dynamic.literal(column = column, end = end, kind = kind, line = line, start = start)
     if (next != null) __obj.updateDynamic("next")(next)
     if (prev != null) __obj.updateDynamic("prev")(prev)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -19,8 +19,8 @@ trait ASPxClientDashboardMasterFilterClearedEventArgs extends ASPxClientEventArg
 object ASPxClientDashboardMasterFilterClearedEventArgs {
   @scala.inline
   def apply(ItemName: java.lang.String): ASPxClientDashboardMasterFilterClearedEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ItemName")(ItemName)
+    val __obj = js.Dynamic.literal(ItemName = ItemName)
+  
     __obj.asInstanceOf[ASPxClientDashboardMasterFilterClearedEventArgs]
   }
 }

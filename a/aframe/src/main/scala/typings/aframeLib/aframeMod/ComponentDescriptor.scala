@@ -18,8 +18,7 @@ object ComponentDescriptor {
     dependencies: js.Array[java.lang.String] = null,
     multiple: js.UndefOr[scala.Boolean] = js.undefined
   ): ComponentDescriptor[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Component")(Component)
+    val __obj = js.Dynamic.literal(Component = Component)
     if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
     __obj.asInstanceOf[ComponentDescriptor[T]]

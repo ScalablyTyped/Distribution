@@ -67,8 +67,7 @@ object Anon_AccountUserRoleOnly {
     subaccountId: java.lang.String = null,
     userIp: java.lang.String = null
   ): Anon_AccountUserRoleOnly = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("profileId")(profileId)
+    val __obj = js.Dynamic.literal(profileId = profileId)
     if (!js.isUndefined(accountUserRoleOnly)) __obj.updateDynamic("accountUserRoleOnly")(accountUserRoleOnly)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (fields != null) __obj.updateDynamic("fields")(fields)

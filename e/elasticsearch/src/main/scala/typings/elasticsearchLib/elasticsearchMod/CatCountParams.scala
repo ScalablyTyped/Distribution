@@ -26,8 +26,7 @@ object CatCountParams {
     requestTimeout: scala.Int | scala.Double = null,
     v: js.UndefOr[scala.Boolean] = js.undefined
   ): CatCountParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("format")(format)
+    val __obj = js.Dynamic.literal(format = format)
     if (body != null) __obj.updateDynamic("body")(body)
     if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
     if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])

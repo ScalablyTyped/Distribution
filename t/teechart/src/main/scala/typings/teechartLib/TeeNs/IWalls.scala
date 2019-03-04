@@ -16,12 +16,8 @@ trait IWalls extends js.Object {
 object IWalls {
   @scala.inline
   def apply(back: IWall, bottom: IWall, left: IWall, right: IWall, visible: scala.Boolean): IWalls = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("back")(back)
-    __obj.updateDynamic("bottom")(bottom)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
-    __obj.updateDynamic("visible")(visible)
+    val __obj = js.Dynamic.literal(back = back, bottom = bottom, left = left, right = right, visible = visible)
+  
     __obj.asInstanceOf[IWalls]
   }
 }

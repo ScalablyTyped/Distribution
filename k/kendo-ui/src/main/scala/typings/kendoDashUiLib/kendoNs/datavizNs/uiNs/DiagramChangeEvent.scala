@@ -19,10 +19,7 @@ object DiagramChangeEvent {
     added: js.Any = null,
     removed: js.Any = null
   ): DiagramChangeEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
-    __obj.updateDynamic("preventDefault")(preventDefault)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented, preventDefault = preventDefault, sender = sender)
     if (added != null) __obj.updateDynamic("added")(added)
     if (removed != null) __obj.updateDynamic("removed")(removed)
     __obj.asInstanceOf[DiagramChangeEvent]

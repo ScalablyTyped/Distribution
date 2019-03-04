@@ -36,13 +36,8 @@ object XSVGPrinter {
       scala.Boolean
     ]
   ): XSVGPrinter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("endJob")(endJob)
-    __obj.updateDynamic("printPage")(printPage)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("startJob")(startJob)
+    val __obj = js.Dynamic.literal(acquire = acquire, endJob = endJob, printPage = printPage, queryInterface = queryInterface, release = release, startJob = startJob)
+  
     __obj.asInstanceOf[XSVGPrinter]
   }
 }

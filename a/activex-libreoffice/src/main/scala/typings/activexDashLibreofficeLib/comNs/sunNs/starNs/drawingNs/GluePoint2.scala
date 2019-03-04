@@ -38,12 +38,8 @@ object GluePoint2 {
     Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
     PositionAlignment: Alignment
   ): GluePoint2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Escape")(Escape)
-    __obj.updateDynamic("IsRelative")(IsRelative)
-    __obj.updateDynamic("IsUserDefined")(IsUserDefined)
-    __obj.updateDynamic("Position")(Position)
-    __obj.updateDynamic("PositionAlignment")(PositionAlignment)
+    val __obj = js.Dynamic.literal(Escape = Escape, IsRelative = IsRelative, IsUserDefined = IsUserDefined, Position = Position, PositionAlignment = PositionAlignment)
+  
     __obj.asInstanceOf[GluePoint2]
   }
 }

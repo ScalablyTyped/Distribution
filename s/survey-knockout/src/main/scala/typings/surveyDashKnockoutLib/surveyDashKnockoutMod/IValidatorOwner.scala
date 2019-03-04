@@ -22,12 +22,8 @@ object IValidatorOwner {
     validatedValue: js.Any,
     validators: js.Array[SurveyValidator]
   ): IValidatorOwner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDataFilteredProperties")(getDataFilteredProperties)
-    __obj.updateDynamic("getDataFilteredValues")(getDataFilteredValues)
-    __obj.updateDynamic("getValidatorTitle")(getValidatorTitle)
-    __obj.updateDynamic("validatedValue")(validatedValue)
-    __obj.updateDynamic("validators")(validators)
+    val __obj = js.Dynamic.literal(getDataFilteredProperties = getDataFilteredProperties, getDataFilteredValues = getDataFilteredValues, getValidatorTitle = getValidatorTitle, validatedValue = validatedValue, validators = validators)
+  
     __obj.asInstanceOf[IValidatorOwner]
   }
 }

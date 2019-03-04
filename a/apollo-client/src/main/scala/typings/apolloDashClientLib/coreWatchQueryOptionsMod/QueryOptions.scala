@@ -22,8 +22,7 @@ object QueryOptions {
     metadata: js.Any = null,
     variables: TVariables = null
   ): QueryOptions[TVariables] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("query")(query)
+    val __obj = js.Dynamic.literal(query = query)
     if (context != null) __obj.updateDynamic("context")(context)
     if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy)
     if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy)

@@ -12,8 +12,8 @@ trait FeaturesPayload extends EventPayload {
 object FeaturesPayload {
   @scala.inline
   def apply(getFeatures: js.Function0[js.Array[_]]): FeaturesPayload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFeatures")(getFeatures)
+    val __obj = js.Dynamic.literal(getFeatures = getFeatures)
+  
     __obj.asInstanceOf[FeaturesPayload]
   }
 }

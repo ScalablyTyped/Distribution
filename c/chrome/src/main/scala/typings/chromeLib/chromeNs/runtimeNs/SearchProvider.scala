@@ -42,8 +42,7 @@ object SearchProvider {
     suggest_url: java.lang.String = null,
     suggest_url_post_params: java.lang.String = null
   ): SearchProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("search_url")(search_url)
+    val __obj = js.Dynamic.literal(search_url = search_url)
     if (alternate_urls != null) __obj.updateDynamic("alternate_urls")(alternate_urls)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (favicon_url != null) __obj.updateDynamic("favicon_url")(favicon_url)

@@ -27,9 +27,7 @@ object IdentityNotificationTopicArgs {
     notificationType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): IdentityNotificationTopicArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    __obj.updateDynamic("notificationType")(notificationType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any])
     if (topicArn != null) __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityNotificationTopicArgs]
   }

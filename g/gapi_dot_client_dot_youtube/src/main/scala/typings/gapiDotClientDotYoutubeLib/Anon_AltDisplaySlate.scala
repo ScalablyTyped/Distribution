@@ -90,9 +90,7 @@ object Anon_AltDisplaySlate {
     userIp: java.lang.String = null,
     walltime: java.lang.String = null
   ): Anon_AltDisplaySlate = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("part")(part)
+    val __obj = js.Dynamic.literal(id = id, part = part)
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (!js.isUndefined(displaySlate)) __obj.updateDynamic("displaySlate")(displaySlate)
     if (fields != null) __obj.updateDynamic("fields")(fields)

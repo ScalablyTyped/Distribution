@@ -91,18 +91,8 @@ object XAccessibleSelection {
     selectAccessibleChild: js.Function1[scala.Double, scala.Unit],
     selectAllAccessibleChildren: js.Function0[scala.Unit]
   ): XAccessibleSelection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("SelectedAccessibleChildCount")(SelectedAccessibleChildCount)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("clearAccessibleSelection")(clearAccessibleSelection)
-    __obj.updateDynamic("deselectAccessibleChild")(deselectAccessibleChild)
-    __obj.updateDynamic("getSelectedAccessibleChild")(getSelectedAccessibleChild)
-    __obj.updateDynamic("getSelectedAccessibleChildCount")(getSelectedAccessibleChildCount)
-    __obj.updateDynamic("isAccessibleChildSelected")(isAccessibleChildSelected)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("selectAccessibleChild")(selectAccessibleChild)
-    __obj.updateDynamic("selectAllAccessibleChildren")(selectAllAccessibleChildren)
+    val __obj = js.Dynamic.literal(SelectedAccessibleChildCount = SelectedAccessibleChildCount, acquire = acquire, clearAccessibleSelection = clearAccessibleSelection, deselectAccessibleChild = deselectAccessibleChild, getSelectedAccessibleChild = getSelectedAccessibleChild, getSelectedAccessibleChildCount = getSelectedAccessibleChildCount, isAccessibleChildSelected = isAccessibleChildSelected, queryInterface = queryInterface, release = release, selectAccessibleChild = selectAccessibleChild, selectAllAccessibleChildren = selectAllAccessibleChildren)
+  
     __obj.asInstanceOf[XAccessibleSelection]
   }
 }

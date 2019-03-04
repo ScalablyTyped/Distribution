@@ -39,8 +39,7 @@ object IOrderListOptions {
     starting_after: java.lang.String = null,
     status_transitions: stripeLib.Anon_CanceledFulfilled = null
   ): IOrderListOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("status")(status)
+    val __obj = js.Dynamic.literal(status = status)
     if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)

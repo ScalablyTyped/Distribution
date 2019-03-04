@@ -21,9 +21,7 @@ object SendDialogParams {
     redirect_uri: java.lang.String = null,
     to: java.lang.String = null
   ): SendDialogParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("link")(link)
-    __obj.updateDynamic("method")(method)
+    val __obj = js.Dynamic.literal(link = link, method = method)
     if (app_id != null) __obj.updateDynamic("app_id")(app_id)
     if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)

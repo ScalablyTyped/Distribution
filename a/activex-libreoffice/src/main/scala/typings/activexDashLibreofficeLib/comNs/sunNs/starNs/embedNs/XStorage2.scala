@@ -106,36 +106,8 @@ object XStorage2 {
     removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
     renameElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
   ): XStorage2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementNames")(ElementNames)
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("addEventListener")(addEventListener)
-    __obj.updateDynamic("cloneEncryptedStream")(cloneEncryptedStream)
-    __obj.updateDynamic("cloneEncryptedStreamElement")(cloneEncryptedStreamElement)
-    __obj.updateDynamic("cloneStreamElement")(cloneStreamElement)
-    __obj.updateDynamic("copyElementTo")(copyElementTo)
-    __obj.updateDynamic("copyLastCommitTo")(copyLastCommitTo)
-    __obj.updateDynamic("copyStorageElementLastCommitTo")(copyStorageElementLastCommitTo)
-    __obj.updateDynamic("copyToStorage")(copyToStorage)
-    __obj.updateDynamic("dispose")(dispose)
-    __obj.updateDynamic("getByName")(getByName)
-    __obj.updateDynamic("getElementNames")(getElementNames)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasByName")(hasByName)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("isStorageElement")(isStorageElement)
-    __obj.updateDynamic("isStreamElement")(isStreamElement)
-    __obj.updateDynamic("moveElementTo")(moveElementTo)
-    __obj.updateDynamic("openEncryptedStream")(openEncryptedStream)
-    __obj.updateDynamic("openEncryptedStreamElement")(openEncryptedStreamElement)
-    __obj.updateDynamic("openStorageElement")(openStorageElement)
-    __obj.updateDynamic("openStreamElement")(openStreamElement)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
-    __obj.updateDynamic("removeElement")(removeElement)
-    __obj.updateDynamic("removeEventListener")(removeEventListener)
-    __obj.updateDynamic("renameElement")(renameElement)
+    val __obj = js.Dynamic.literal(ElementNames = ElementNames, ElementType = ElementType, acquire = acquire, addEventListener = addEventListener, cloneEncryptedStream = cloneEncryptedStream, cloneEncryptedStreamElement = cloneEncryptedStreamElement, cloneStreamElement = cloneStreamElement, copyElementTo = copyElementTo, copyLastCommitTo = copyLastCommitTo, copyStorageElementLastCommitTo = copyStorageElementLastCommitTo, copyToStorage = copyToStorage, dispose = dispose, getByName = getByName, getElementNames = getElementNames, getElementType = getElementType, hasByName = hasByName, hasElements = hasElements, isStorageElement = isStorageElement, isStreamElement = isStreamElement, moveElementTo = moveElementTo, openEncryptedStream = openEncryptedStream, openEncryptedStreamElement = openEncryptedStreamElement, openStorageElement = openStorageElement, openStreamElement = openStreamElement, queryInterface = queryInterface, release = release, removeElement = removeElement, removeEventListener = removeEventListener, renameElement = renameElement)
+  
     __obj.asInstanceOf[XStorage2]
   }
 }

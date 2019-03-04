@@ -62,8 +62,7 @@ object ITypeOptions {
     validateOptions: angularLib.angularMod.Global.Function = null,
     wrapper: java.lang.String | js.Array[java.lang.String] = null
   ): ITypeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(name = name)
     if (apiCheck != null) __obj.updateDynamic("apiCheck")(apiCheck)
     if (apiCheckFunction != null) __obj.updateDynamic("apiCheckFunction")(apiCheckFunction)
     if (apiCheckInstance != null) __obj.updateDynamic("apiCheckInstance")(apiCheckInstance)

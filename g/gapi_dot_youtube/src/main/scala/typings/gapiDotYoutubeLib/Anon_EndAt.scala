@@ -32,11 +32,8 @@ object Anon_EndAt {
     startAt: java.lang.String,
     videoId: java.lang.String
   ): Anon_EndAt = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("endAt")(endAt)
-    __obj.updateDynamic("note")(note)
-    __obj.updateDynamic("startAt")(startAt)
-    __obj.updateDynamic("videoId")(videoId)
+    val __obj = js.Dynamic.literal(endAt = endAt, note = note, startAt = startAt, videoId = videoId)
+  
     __obj.asInstanceOf[Anon_EndAt]
   }
 }

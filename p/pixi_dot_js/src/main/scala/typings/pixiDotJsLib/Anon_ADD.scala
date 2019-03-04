@@ -52,27 +52,8 @@ object Anon_ADD {
     SCREEN_NPM: scala.Double,
     SOFT_LIGHT: scala.Double
   ): Anon_ADD = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ADD")(ADD)
-    __obj.updateDynamic("ADD_NPM")(ADD_NPM)
-    __obj.updateDynamic("COLOR")(COLOR)
-    __obj.updateDynamic("COLOR_BURN")(COLOR_BURN)
-    __obj.updateDynamic("COLOR_DODGE")(COLOR_DODGE)
-    __obj.updateDynamic("DARKEN")(DARKEN)
-    __obj.updateDynamic("DIFFERENCE")(DIFFERENCE)
-    __obj.updateDynamic("EXCLUSION")(EXCLUSION)
-    __obj.updateDynamic("HARD_LIGHT")(HARD_LIGHT)
-    __obj.updateDynamic("HUE")(HUE)
-    __obj.updateDynamic("LIGHTEN")(LIGHTEN)
-    __obj.updateDynamic("LUMINOSITY")(LUMINOSITY)
-    __obj.updateDynamic("MULTIPLY")(MULTIPLY)
-    __obj.updateDynamic("NORMAL")(NORMAL)
-    __obj.updateDynamic("NORMAL_NPM")(NORMAL_NPM)
-    __obj.updateDynamic("OVERLAY")(OVERLAY)
-    __obj.updateDynamic("SATURATION")(SATURATION)
-    __obj.updateDynamic("SCREEN")(SCREEN)
-    __obj.updateDynamic("SCREEN_NPM")(SCREEN_NPM)
-    __obj.updateDynamic("SOFT_LIGHT")(SOFT_LIGHT)
+    val __obj = js.Dynamic.literal(ADD = ADD, ADD_NPM = ADD_NPM, COLOR = COLOR, COLOR_BURN = COLOR_BURN, COLOR_DODGE = COLOR_DODGE, DARKEN = DARKEN, DIFFERENCE = DIFFERENCE, EXCLUSION = EXCLUSION, HARD_LIGHT = HARD_LIGHT, HUE = HUE, LIGHTEN = LIGHTEN, LUMINOSITY = LUMINOSITY, MULTIPLY = MULTIPLY, NORMAL = NORMAL, NORMAL_NPM = NORMAL_NPM, OVERLAY = OVERLAY, SATURATION = SATURATION, SCREEN = SCREEN, SCREEN_NPM = SCREEN_NPM, SOFT_LIGHT = SOFT_LIGHT)
+  
     __obj.asInstanceOf[Anon_ADD]
   }
 }

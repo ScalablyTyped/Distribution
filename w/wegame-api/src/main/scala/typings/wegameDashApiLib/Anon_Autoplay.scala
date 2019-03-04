@@ -87,8 +87,7 @@ object Anon_Autoplay {
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Anon_Autoplay = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("src")(src)
+    val __obj = js.Dynamic.literal(src = src)
     if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

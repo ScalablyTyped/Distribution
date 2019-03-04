@@ -37,15 +37,8 @@ object dateArithmeticStatic {
     neq: js.Function2[stdLib.Date, stdLib.Date, scala.Boolean],
     subtract: js.Function3[stdLib.Date, scala.Double, Unit, stdLib.Date]
   ): dateArithmeticStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("add")(add)
-    __obj.updateDynamic("eq")(eq)
-    __obj.updateDynamic("gt")(gt)
-    __obj.updateDynamic("gte")(gte)
-    __obj.updateDynamic("lt")(lt)
-    __obj.updateDynamic("lte")(lte)
-    __obj.updateDynamic("neq")(neq)
-    __obj.updateDynamic("subtract")(subtract)
+    val __obj = js.Dynamic.literal(add = add, eq = eq, gt = gt, gte = gte, lt = lt, lte = lte, neq = neq, subtract = subtract)
+  
     __obj.asInstanceOf[dateArithmeticStatic]
   }
 }

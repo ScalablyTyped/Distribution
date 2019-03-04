@@ -26,14 +26,8 @@ object AdTypeSpace {
     imageAd: js.Function0[scala.Boolean],
     responsiveDisplayAd: js.Function0[scala.Boolean]
   ): AdTypeSpace = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("expandedTextAd")(expandedTextAd)
-    __obj.updateDynamic("gmailImageAd")(gmailImageAd)
-    __obj.updateDynamic("gmailMultiProductAd")(gmailMultiProductAd)
-    __obj.updateDynamic("gmailSinglePromotionAd")(gmailSinglePromotionAd)
-    __obj.updateDynamic("html5Ad")(html5Ad)
-    __obj.updateDynamic("imageAd")(imageAd)
-    __obj.updateDynamic("responsiveDisplayAd")(responsiveDisplayAd)
+    val __obj = js.Dynamic.literal(expandedTextAd = expandedTextAd, gmailImageAd = gmailImageAd, gmailMultiProductAd = gmailMultiProductAd, gmailSinglePromotionAd = gmailSinglePromotionAd, html5Ad = html5Ad, imageAd = imageAd, responsiveDisplayAd = responsiveDisplayAd)
+  
     __obj.asInstanceOf[AdTypeSpace]
   }
 }

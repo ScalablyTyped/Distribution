@@ -16,9 +16,8 @@ object Anon_ClientOperationsObject {
     client: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
     operations: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
   ): Anon_ClientOperationsObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("client")(client)
-    __obj.updateDynamic("operations")(operations)
+    val __obj = js.Dynamic.literal(client = client, operations = operations)
+  
     __obj.asInstanceOf[Anon_ClientOperationsObject]
   }
 }

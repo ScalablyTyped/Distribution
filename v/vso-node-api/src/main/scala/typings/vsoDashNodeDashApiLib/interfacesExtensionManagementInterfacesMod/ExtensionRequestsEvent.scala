@@ -37,12 +37,8 @@ object ExtensionRequestsEvent {
     requests: js.Array[ExtensionRequest],
     updateType: ExtensionRequestUpdateType
   ): ExtensionRequestsEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("host")(host)
-    __obj.updateDynamic("links")(links)
-    __obj.updateDynamic("requests")(requests)
-    __obj.updateDynamic("updateType")(updateType)
+    val __obj = js.Dynamic.literal(extension = extension, host = host, links = links, requests = requests, updateType = updateType)
+  
     __obj.asInstanceOf[ExtensionRequestsEvent]
   }
 }

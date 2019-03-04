@@ -43,13 +43,8 @@ object Page {
     properties: googleDashAppsDashScriptLib.Anon_Layoutproperties,
     revision_id: java.lang.String
   ): Page = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object_id")(object_id)
-    __obj.updateDynamic("page_elements")(page_elements)
-    __obj.updateDynamic("page_properties")(page_properties)
-    __obj.updateDynamic("page_type")(page_type)
-    __obj.updateDynamic("properties")(properties)
-    __obj.updateDynamic("revision_id")(revision_id)
+    val __obj = js.Dynamic.literal(object_id = object_id, page_elements = page_elements, page_properties = page_properties, page_type = page_type, properties = properties, revision_id = revision_id)
+  
     __obj.asInstanceOf[Page]
   }
 }

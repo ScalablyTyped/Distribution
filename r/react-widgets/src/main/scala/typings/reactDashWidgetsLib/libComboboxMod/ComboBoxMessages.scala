@@ -27,10 +27,8 @@ object ComboBoxMessages {
     emptyList: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String]),
     open: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String])
   ): ComboBoxMessages = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("emptyFilter")(emptyFilter.asInstanceOf[js.Any])
-    __obj.updateDynamic("emptyList")(emptyList.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(emptyFilter = emptyFilter.asInstanceOf[js.Any], emptyList = emptyList.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ComboBoxMessages]
   }
 }

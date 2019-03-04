@@ -23,8 +23,7 @@ object MenuProps {
     align: java.lang.String = null,
     valign: java.lang.String = null
   ): MenuProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(target = target)
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
     js.Dynamic.global.Object.assign(__obj, RippleComponent)
     if (align != null) __obj.updateDynamic("align")(align)

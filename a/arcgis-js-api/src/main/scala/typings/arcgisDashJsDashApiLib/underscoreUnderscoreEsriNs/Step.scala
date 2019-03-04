@@ -135,27 +135,8 @@ object Step {
     stepPercentComplete: scala.Double,
     stepType: StepType
   ): Step = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("assignedTo")(assignedTo)
-    __obj.updateDynamic("assignedType")(assignedType)
-    __obj.updateDynamic("async")(async)
-    __obj.updateDynamic("autoRun")(autoRun)
-    __obj.updateDynamic("canSkip")(canSkip)
-    __obj.updateDynamic("canSpawnConcurrency")(canSpawnConcurrency)
-    __obj.updateDynamic("commonId")(commonId)
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("defaultPercentComplete")(defaultPercentComplete)
-    __obj.updateDynamic("hasBeenExecuted")(hasBeenExecuted)
-    __obj.updateDynamic("hasBeenStarted")(hasBeenStarted)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("notificationType")(notificationType)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("selfCheck")(selfCheck)
-    __obj.updateDynamic("statusId")(statusId)
-    __obj.updateDynamic("stepPercentComplete")(stepPercentComplete)
-    __obj.updateDynamic("stepType")(stepType)
+    val __obj = js.Dynamic.literal(assignedTo = assignedTo, assignedType = assignedType, async = async, autoRun = autoRun, canSkip = canSkip, canSpawnConcurrency = canSpawnConcurrency, commonId = commonId, constructor = constructor, defaultPercentComplete = defaultPercentComplete, hasBeenExecuted = hasBeenExecuted, hasBeenStarted = hasBeenStarted, hasOwnProperty = hasOwnProperty, id = id, name = name, notificationType = notificationType, propertyIsEnumerable = propertyIsEnumerable, selfCheck = selfCheck, statusId = statusId, stepPercentComplete = stepPercentComplete, stepType = stepType)
+  
     __obj.asInstanceOf[Step]
   }
 }

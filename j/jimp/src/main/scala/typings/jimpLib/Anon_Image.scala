@@ -13,9 +13,8 @@ trait Anon_Image extends js.Object {
 object Anon_Image {
   @scala.inline
   def apply(image: jimpLib.jimpMod.Jimp, percent: scala.Double): Anon_Image = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("image")(image)
-    __obj.updateDynamic("percent")(percent)
+    val __obj = js.Dynamic.literal(image = image, percent = percent)
+  
     __obj.asInstanceOf[Anon_Image]
   }
 }

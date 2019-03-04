@@ -45,7 +45,7 @@ class Vector[T] ()
   /**
     * @hidden
     */
-  var `data_`: js.Any = js.native
+  var data_ : js.Any = js.native
   /**
     * Access data.
     *

@@ -16,9 +16,8 @@ object IntrospectionNamedTypeRef {
     kind: /* import warning: ImportType.apply Failed type conversion: T['kind'] */ js.Any,
     name: java.lang.String
   ): IntrospectionNamedTypeRef[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
-    __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(kind = kind, name = name)
+  
     __obj.asInstanceOf[IntrospectionNamedTypeRef[T]]
   }
 }

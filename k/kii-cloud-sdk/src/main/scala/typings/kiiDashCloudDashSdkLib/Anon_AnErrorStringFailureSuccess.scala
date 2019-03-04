@@ -16,9 +16,8 @@ object Anon_AnErrorStringFailureSuccess {
     failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, java.lang.String, js.Any],
     success: js.Function1[kiiDashCloudDashSdkLib.KiiCloudNs.KiiACL, js.Any]
   ): Anon_AnErrorStringFailureSuccess = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("failure")(failure)
-    __obj.updateDynamic("success")(success)
+    val __obj = js.Dynamic.literal(failure = failure, success = success)
+  
     __obj.asInstanceOf[Anon_AnErrorStringFailureSuccess]
   }
 }

@@ -24,8 +24,8 @@ object CustomProperyMedia {
     ref: java.lang.String = null,
     show: scala.Boolean | ShowFunction = null
   ): CustomProperyMedia = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("component")(component)
+    val __obj = js.Dynamic.literal(component = component)
+    __obj.updateDynamic("type")(`type`)
     if (label != null) __obj.updateDynamic("label")(label)
     if (layoutRef != null) __obj.updateDynamic("layoutRef")(layoutRef)
     if (ref != null) __obj.updateDynamic("ref")(ref)

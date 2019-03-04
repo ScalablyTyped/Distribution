@@ -20,9 +20,8 @@ object NavigationEventPayload {
     `type`: EventType,
     lastState: NavigationState = null
   ): NavigationEventPayload = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("action")(action)
-    __obj.updateDynamic("state")(state)
+    val __obj = js.Dynamic.literal(action = action, state = state)
+    __obj.updateDynamic("type")(`type`)
     if (lastState != null) __obj.updateDynamic("lastState")(lastState)
     __obj.asInstanceOf[NavigationEventPayload]
   }

@@ -24,9 +24,8 @@ object RouteComponentProps {
     `match`: `match`[Params],
     staticContext: C = null
   ): RouteComponentProps[Params, C, S] = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("history")(history)
-    __obj.updateDynamic("location")(location)
+    val __obj = js.Dynamic.literal(history = history, location = location)
+    __obj.updateDynamic("match")(`match`)
     if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteComponentProps[Params, C, S]]
   }

@@ -18,10 +18,8 @@ object IWalker {
     getSourceFile: js.Function0[typescriptLib.typescriptMod.tsNs.SourceFile],
     walk: js.Function1[typescriptLib.typescriptMod.tsNs.SourceFile, scala.Unit]
   ): IWalker = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getFailures")(getFailures)
-    __obj.updateDynamic("getSourceFile")(getSourceFile)
-    __obj.updateDynamic("walk")(walk)
+    val __obj = js.Dynamic.literal(getFailures = getFailures, getSourceFile = getSourceFile, walk = walk)
+  
     __obj.asInstanceOf[IWalker]
   }
 }

@@ -87,31 +87,8 @@ object XMutableTreeNode {
     setHasChildrenOnDemand: js.Function1[scala.Boolean, scala.Unit],
     setNodeGraphicURL: js.Function1[java.lang.String, scala.Unit]
   ): XMutableTreeNode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ChildCount")(ChildCount)
-    __obj.updateDynamic("CollapsedGraphicURL")(CollapsedGraphicURL)
-    __obj.updateDynamic("DataValue")(DataValue)
-    __obj.updateDynamic("DisplayValue")(DisplayValue)
-    __obj.updateDynamic("ExpandedGraphicURL")(ExpandedGraphicURL)
-    __obj.updateDynamic("NodeGraphicURL")(NodeGraphicURL)
-    __obj.updateDynamic("Parent")(Parent)
-    __obj.updateDynamic("appendChild")(appendChild)
-    __obj.updateDynamic("getChildAt")(getChildAt)
-    __obj.updateDynamic("getChildCount")(getChildCount)
-    __obj.updateDynamic("getCollapsedGraphicURL")(getCollapsedGraphicURL)
-    __obj.updateDynamic("getDisplayValue")(getDisplayValue)
-    __obj.updateDynamic("getExpandedGraphicURL")(getExpandedGraphicURL)
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getNodeGraphicURL")(getNodeGraphicURL)
-    __obj.updateDynamic("getParent")(getParent)
-    __obj.updateDynamic("hasChildrenOnDemand")(hasChildrenOnDemand)
-    __obj.updateDynamic("insertChildByIndex")(insertChildByIndex)
-    __obj.updateDynamic("removeChildByIndex")(removeChildByIndex)
-    __obj.updateDynamic("setCollapsedGraphicURL")(setCollapsedGraphicURL)
-    __obj.updateDynamic("setDisplayValue")(setDisplayValue)
-    __obj.updateDynamic("setExpandedGraphicURL")(setExpandedGraphicURL)
-    __obj.updateDynamic("setHasChildrenOnDemand")(setHasChildrenOnDemand)
-    __obj.updateDynamic("setNodeGraphicURL")(setNodeGraphicURL)
+    val __obj = js.Dynamic.literal(ChildCount = ChildCount, CollapsedGraphicURL = CollapsedGraphicURL, DataValue = DataValue, DisplayValue = DisplayValue, ExpandedGraphicURL = ExpandedGraphicURL, NodeGraphicURL = NodeGraphicURL, Parent = Parent, appendChild = appendChild, getChildAt = getChildAt, getChildCount = getChildCount, getCollapsedGraphicURL = getCollapsedGraphicURL, getDisplayValue = getDisplayValue, getExpandedGraphicURL = getExpandedGraphicURL, getIndex = getIndex, getNodeGraphicURL = getNodeGraphicURL, getParent = getParent, hasChildrenOnDemand = hasChildrenOnDemand, insertChildByIndex = insertChildByIndex, removeChildByIndex = removeChildByIndex, setCollapsedGraphicURL = setCollapsedGraphicURL, setDisplayValue = setDisplayValue, setExpandedGraphicURL = setExpandedGraphicURL, setHasChildrenOnDemand = setHasChildrenOnDemand, setNodeGraphicURL = setNodeGraphicURL)
+  
     __obj.asInstanceOf[XMutableTreeNode]
   }
 }

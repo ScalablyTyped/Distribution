@@ -30,15 +30,8 @@ object Index {
     `type`: IndexType,
     unique: scala.Boolean
   ): Index[T] = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("deduplicate")(deduplicate)
-    __obj.updateDynamic("fields")(fields)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("isNewlyCreated")(isNewlyCreated)
-    __obj.updateDynamic("selectivityEstimate")(selectivityEstimate)
-    __obj.updateDynamic("sparse")(sparse)
-    __obj.updateDynamic("unique")(unique)
+    val __obj = js.Dynamic.literal(code = code, deduplicate = deduplicate, fields = fields, id = id, isNewlyCreated = isNewlyCreated, selectivityEstimate = selectivityEstimate, sparse = sparse, unique = unique)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[Index[T]]
   }
 }

@@ -13,9 +13,8 @@ trait DialogFacebookResult extends js.Object {
 object DialogFacebookResult {
   @scala.inline
   def apply(buttonType: scala.Double, selection: js.Array[DialogFacebookResultSelection]): DialogFacebookResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("buttonType")(buttonType)
-    __obj.updateDynamic("selection")(selection)
+    val __obj = js.Dynamic.literal(buttonType = buttonType, selection = selection)
+  
     __obj.asInstanceOf[DialogFacebookResult]
   }
 }

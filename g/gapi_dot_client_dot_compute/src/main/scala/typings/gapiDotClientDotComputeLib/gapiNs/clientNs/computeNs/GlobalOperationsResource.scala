@@ -36,11 +36,8 @@ object GlobalOperationsResource {
       gapiDotClientLib.gapiNs.clientNs.Request[OperationList]
     ]
   ): GlobalOperationsResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("aggregatedList")(aggregatedList)
-    __obj.updateDynamic("delete")(delete)
-    __obj.updateDynamic("get")(get)
-    __obj.updateDynamic("list")(list)
+    val __obj = js.Dynamic.literal(aggregatedList = aggregatedList, delete = delete, get = get, list = list)
+  
     __obj.asInstanceOf[GlobalOperationsResource]
   }
 }

@@ -67,18 +67,8 @@ object FeathersAuthenticationOAuth1Options {
     service: java.lang.String,
     session: scala.Boolean
   ): FeathersAuthenticationOAuth1Options = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Verifier")(Verifier)
-    __obj.updateDynamic("callbackPath")(callbackPath)
-    __obj.updateDynamic("callbackURL")(callbackURL)
-    __obj.updateDynamic("entity")(entity)
-    __obj.updateDynamic("formatter")(formatter)
-    __obj.updateDynamic("handler")(handler)
-    __obj.updateDynamic("idField")(idField)
-    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("service")(service)
-    __obj.updateDynamic("session")(session)
+    val __obj = js.Dynamic.literal(Verifier = Verifier, callbackPath = callbackPath, callbackURL = callbackURL, entity = entity, formatter = formatter, handler = handler, idField = idField, passReqToCallback = passReqToCallback, path = path, service = service, session = session)
+  
     __obj.asInstanceOf[FeathersAuthenticationOAuth1Options]
   }
 }

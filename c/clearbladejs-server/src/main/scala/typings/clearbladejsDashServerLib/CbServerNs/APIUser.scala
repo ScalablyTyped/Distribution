@@ -14,9 +14,7 @@ trait APIUser extends js.Object {
 object APIUser {
   @scala.inline
   def apply(authToken: java.lang.String, email: java.lang.String, user_id: java.lang.String = null): APIUser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("authToken")(authToken)
-    __obj.updateDynamic("email")(email)
+    val __obj = js.Dynamic.literal(authToken = authToken, email = email)
     if (user_id != null) __obj.updateDynamic("user_id")(user_id)
     __obj.asInstanceOf[APIUser]
   }

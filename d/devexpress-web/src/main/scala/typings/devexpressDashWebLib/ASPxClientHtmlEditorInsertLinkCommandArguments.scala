@@ -46,13 +46,8 @@ object ASPxClientHtmlEditorInsertLinkCommandArguments {
     title: java.lang.String,
     url: java.lang.String
   ): ASPxClientHtmlEditorInsertLinkCommandArguments = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selectedElement")(selectedElement)
-    __obj.updateDynamic("styleSettings")(styleSettings)
-    __obj.updateDynamic("target")(target)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(selectedElement = selectedElement, styleSettings = styleSettings, target = target, text = text, title = title, url = url)
+  
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
   }
 }

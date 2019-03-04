@@ -18,10 +18,8 @@ object Anon_ChartEntries {
     entries: js.Array[Anon_DataPoint],
     toolTip: Anon_ChartEntries
   ): Anon_ChartEntries = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chart")(chart)
-    __obj.updateDynamic("entries")(entries)
-    __obj.updateDynamic("toolTip")(toolTip)
+    val __obj = js.Dynamic.literal(chart = chart, entries = entries, toolTip = toolTip)
+  
     __obj.asInstanceOf[Anon_ChartEntries]
   }
 }

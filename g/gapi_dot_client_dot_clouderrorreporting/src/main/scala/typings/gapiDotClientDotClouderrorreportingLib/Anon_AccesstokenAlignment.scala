@@ -123,8 +123,7 @@ object Anon_AccesstokenAlignment {
     uploadType: java.lang.String = null,
     upload_protocol: java.lang.String = null
   ): Anon_AccesstokenAlignment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("projectName")(projectName)
+    val __obj = js.Dynamic.literal(projectName = projectName)
     if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
     if (access_token != null) __obj.updateDynamic("access_token")(access_token)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)

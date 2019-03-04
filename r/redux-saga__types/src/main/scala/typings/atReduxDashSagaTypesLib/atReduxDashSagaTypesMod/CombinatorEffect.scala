@@ -20,9 +20,9 @@ object CombinatorEffect {
     payload: CombinatorEffectDescriptor[E],
     `type`: T
   ): CombinatorEffect[T, E] = {
-    val __obj = js.Dynamic.literal(`@@redux-saga/IO` = `@@redux-saga/IO`, `type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("combinator")(combinator)
-    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(combinator = combinator, payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("@@redux-saga/IO")(`@@redux-saga/IO`)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CombinatorEffect[T, E]]
   }
 }

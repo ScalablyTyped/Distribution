@@ -12,8 +12,8 @@ trait PiezoOption extends js.Object {
 object PiezoOption {
   @scala.inline
   def apply(pin: scala.Double): PiezoOption = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("pin")(pin)
+    val __obj = js.Dynamic.literal(pin = pin)
+  
     __obj.asInstanceOf[PiezoOption]
   }
 }

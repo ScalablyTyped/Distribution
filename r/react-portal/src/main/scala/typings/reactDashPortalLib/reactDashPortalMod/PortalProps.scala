@@ -20,8 +20,7 @@ object PortalProps {
     node: reactLib.Element = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
   ): PortalProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (node != null) __obj.updateDynamic("node")(node)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])

@@ -51,15 +51,8 @@ object JobVersionInfo {
     parent: java.lang.String,
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean]
   ): JobVersionInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("created")(created)
-    __obj.updateDynamic("dataWorkspaceId")(dataWorkspaceId)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("owner")(owner)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
+    val __obj = js.Dynamic.literal(constructor = constructor, created = created, dataWorkspaceId = dataWorkspaceId, hasOwnProperty = hasOwnProperty, name = name, owner = owner, parent = parent, propertyIsEnumerable = propertyIsEnumerable)
+  
     __obj.asInstanceOf[JobVersionInfo]
   }
 }

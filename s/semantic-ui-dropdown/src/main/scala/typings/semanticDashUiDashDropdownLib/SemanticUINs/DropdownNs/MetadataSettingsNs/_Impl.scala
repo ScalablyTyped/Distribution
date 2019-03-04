@@ -37,12 +37,8 @@ object _Impl {
     text: java.lang.String,
     value: java.lang.String
   ): _Impl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultText")(defaultText)
-    __obj.updateDynamic("defaultValue")(defaultValue)
-    __obj.updateDynamic("placeholderText")(placeholderText)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(defaultText = defaultText, defaultValue = defaultValue, placeholderText = placeholderText, text = text, value = value)
+  
     __obj.asInstanceOf[_Impl]
   }
 }

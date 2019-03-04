@@ -12,8 +12,8 @@ trait IHotspotAuthenticationEventDetails extends js.Object {
 object IHotspotAuthenticationEventDetails {
   @scala.inline
   def apply(eventToken: java.lang.String): IHotspotAuthenticationEventDetails = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventToken")(eventToken)
+    val __obj = js.Dynamic.literal(eventToken = eventToken)
+  
     __obj.asInstanceOf[IHotspotAuthenticationEventDetails]
   }
 }

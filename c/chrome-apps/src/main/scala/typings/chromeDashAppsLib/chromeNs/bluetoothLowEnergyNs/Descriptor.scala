@@ -30,9 +30,7 @@ object Descriptor {
     instanceId: java.lang.String = null,
     value: stdLib.ArrayBuffer = null
   ): Descriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("permissions")(permissions)
-    __obj.updateDynamic("uuid")(uuid)
+    val __obj = js.Dynamic.literal(permissions = permissions, uuid = uuid)
     if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic)
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
     if (value != null) __obj.updateDynamic("value")(value)

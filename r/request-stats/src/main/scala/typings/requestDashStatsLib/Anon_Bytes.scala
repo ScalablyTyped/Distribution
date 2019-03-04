@@ -42,13 +42,8 @@ object Anon_Bytes {
     path: java.lang.String,
     raw: nodeLib.httpMod.IncomingMessage
   ): Anon_Bytes = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("bytes")(bytes)
-    __obj.updateDynamic("headers")(headers)
-    __obj.updateDynamic("ip")(ip)
-    __obj.updateDynamic("method")(method)
-    __obj.updateDynamic("path")(path)
-    __obj.updateDynamic("raw")(raw)
+    val __obj = js.Dynamic.literal(bytes = bytes, headers = headers, ip = ip, method = method, path = path, raw = raw)
+  
     __obj.asInstanceOf[Anon_Bytes]
   }
 }

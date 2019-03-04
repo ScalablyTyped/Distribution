@@ -27,10 +27,8 @@ object AutoLaunch {
     enable: js.Function0[js.Promise[scala.Unit]],
     isEnabled: js.Function0[js.Promise[scala.Boolean]]
   ): AutoLaunch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("disable")(disable)
-    __obj.updateDynamic("enable")(enable)
-    __obj.updateDynamic("isEnabled")(isEnabled)
+    val __obj = js.Dynamic.literal(disable = disable, enable = enable, isEnabled = isEnabled)
+  
     __obj.asInstanceOf[AutoLaunch]
   }
 }

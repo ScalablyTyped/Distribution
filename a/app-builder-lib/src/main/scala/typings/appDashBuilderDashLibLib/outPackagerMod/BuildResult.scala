@@ -32,11 +32,8 @@ object BuildResult {
       ]
     ]
   ): BuildResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("artifactPaths")(artifactPaths)
-    __obj.updateDynamic("configuration")(configuration)
-    __obj.updateDynamic("outDir")(outDir)
-    __obj.updateDynamic("platformToTargets")(platformToTargets)
+    val __obj = js.Dynamic.literal(artifactPaths = artifactPaths, configuration = configuration, outDir = outDir, platformToTargets = platformToTargets)
+  
     __obj.asInstanceOf[BuildResult]
   }
 }

@@ -12,8 +12,8 @@ trait Anon_DefaultValueAny extends js.Object {
 object Anon_DefaultValueAny {
   @scala.inline
   def apply(defaultValue: js.Any): Anon_DefaultValueAny = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("defaultValue")(defaultValue)
+    val __obj = js.Dynamic.literal(defaultValue = defaultValue)
+  
     __obj.asInstanceOf[Anon_DefaultValueAny]
   }
 }

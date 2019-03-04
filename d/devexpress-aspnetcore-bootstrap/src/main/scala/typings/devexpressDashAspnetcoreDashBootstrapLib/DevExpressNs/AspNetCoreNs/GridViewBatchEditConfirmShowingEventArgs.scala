@@ -12,10 +12,8 @@ trait GridViewBatchEditConfirmShowingEventArgs extends CancelEventArgs {
 object GridViewBatchEditConfirmShowingEventArgs {
   @scala.inline
   def apply(cancel: scala.Boolean, requestTriggerID: java.lang.String, sender: Control): GridViewBatchEditConfirmShowingEventArgs = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel)
-    __obj.updateDynamic("requestTriggerID")(requestTriggerID)
-    __obj.updateDynamic("sender")(sender)
+    val __obj = js.Dynamic.literal(cancel = cancel, requestTriggerID = requestTriggerID, sender = sender)
+  
     __obj.asInstanceOf[GridViewBatchEditConfirmShowingEventArgs]
   }
 }

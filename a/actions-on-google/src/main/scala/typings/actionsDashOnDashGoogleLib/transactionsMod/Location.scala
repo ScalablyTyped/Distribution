@@ -18,10 +18,8 @@ object Location {
     phoneNumber: java.lang.String,
     postalAddress: actionsDashOnDashGoogleLib.Anon_AddressLines
   ): Location = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("notes")(notes)
-    __obj.updateDynamic("phoneNumber")(phoneNumber)
-    __obj.updateDynamic("postalAddress")(postalAddress)
+    val __obj = js.Dynamic.literal(notes = notes, phoneNumber = phoneNumber, postalAddress = postalAddress)
+  
     __obj.asInstanceOf[Location]
   }
 }

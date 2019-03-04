@@ -12,8 +12,8 @@ trait FormNameProps extends js.Object {
 object FormNameProps {
   @scala.inline
   def apply(children: js.Function1[reduxDashFormLib.Anon_Form, reactLib.reactMod.ReactNs.ReactNode]): FormNameProps = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(children)
+    val __obj = js.Dynamic.literal(children = children)
+  
     __obj.asInstanceOf[FormNameProps]
   }
 }

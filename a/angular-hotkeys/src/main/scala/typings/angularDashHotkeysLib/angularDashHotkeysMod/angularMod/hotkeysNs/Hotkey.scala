@@ -51,9 +51,7 @@ object Hotkey {
     description: java.lang.String = null,
     persistent: js.UndefOr[scala.Boolean] = js.undefined
   ): Hotkey = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("callback")(callback)
-    __obj.updateDynamic("combo")(combo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = callback, combo = combo.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action)
     if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn)
     if (description != null) __obj.updateDynamic("description")(description)

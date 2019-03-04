@@ -20,10 +20,7 @@ object GraphQLServiceContext {
     schemaHash: java.lang.String,
     persistedQueries: apolloDashServerDashCoreLib.Anon_Cache = null
   ): GraphQLServiceContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("engine")(engine)
-    __obj.updateDynamic("schema")(schema)
-    __obj.updateDynamic("schemaHash")(schemaHash)
+    val __obj = js.Dynamic.literal(engine = engine, schema = schema, schemaHash = schemaHash)
     if (persistedQueries != null) __obj.updateDynamic("persistedQueries")(persistedQueries)
     __obj.asInstanceOf[GraphQLServiceContext]
   }

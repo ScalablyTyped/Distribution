@@ -20,8 +20,7 @@ object KeystrokeInfo {
     ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined
   ): KeystrokeInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("keyCode")(keyCode)
+    val __obj = js.Dynamic.literal(keyCode = keyCode)
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey)
     if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey)
     if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey)

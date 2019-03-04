@@ -18,10 +18,8 @@ object Anon_DisplacementBias {
     displacementMap: threeLib.threeDashCoreMod.IUniform,
     displacementScale: threeLib.threeDashCoreMod.IUniform
   ): Anon_DisplacementBias = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("displacementBias")(displacementBias)
-    __obj.updateDynamic("displacementMap")(displacementMap)
-    __obj.updateDynamic("displacementScale")(displacementScale)
+    val __obj = js.Dynamic.literal(displacementBias = displacementBias, displacementMap = displacementMap, displacementScale = displacementScale)
+  
     __obj.asInstanceOf[Anon_DisplacementBias]
   }
 }

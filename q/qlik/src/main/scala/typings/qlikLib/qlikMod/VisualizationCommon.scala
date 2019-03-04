@@ -22,12 +22,8 @@ object VisualizationCommon {
     subtitle: java.lang.String,
     title: java.lang.String
   ): VisualizationCommon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("footnote")(footnote)
-    __obj.updateDynamic("qHyperCubeDef")(qHyperCubeDef)
-    __obj.updateDynamic("showTitles")(showTitles)
-    __obj.updateDynamic("subtitle")(subtitle)
-    __obj.updateDynamic("title")(title)
+    val __obj = js.Dynamic.literal(footnote = footnote, qHyperCubeDef = qHyperCubeDef, showTitles = showTitles, subtitle = subtitle, title = title)
+  
     __obj.asInstanceOf[VisualizationCommon]
   }
 }

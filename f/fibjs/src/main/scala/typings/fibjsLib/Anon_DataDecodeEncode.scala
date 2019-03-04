@@ -13,9 +13,8 @@ trait Anon_DataDecodeEncode extends js.Object {
 object Anon_DataDecodeEncode {
   @scala.inline
   def apply(decode: js.Function1[Class_Buffer, js.Object], encode: js.Function1[js.Object, Class_Buffer]): Anon_DataDecodeEncode = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(decode)
-    __obj.updateDynamic("encode")(encode)
+    val __obj = js.Dynamic.literal(decode = decode, encode = encode)
+  
     __obj.asInstanceOf[Anon_DataDecodeEncode]
   }
 }

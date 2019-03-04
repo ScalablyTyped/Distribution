@@ -24,10 +24,8 @@ object ComprehensionBlock {
     right: astDashTypesLib.genKindsMod.ExpressionKind,
     `type`: astDashTypesLib.astDashTypesLibStrings.ComprehensionBlock
   ): ComprehensionBlock = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("each")(each)
-    __obj.updateDynamic("left")(left)
-    __obj.updateDynamic("right")(right)
+    val __obj = js.Dynamic.literal(each = each, left = left, right = right)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[ComprehensionBlock]
   }
 }

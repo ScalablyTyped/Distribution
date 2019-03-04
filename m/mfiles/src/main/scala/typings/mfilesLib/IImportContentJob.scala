@@ -42,22 +42,8 @@ object IImportContentJob {
     UseNamesAsAliases: scala.Boolean,
     UsePermissions: scala.Boolean
   ): IImportContentJob = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ActivateAutomaticPermissionsForNewOrChangedDefinitions")(ActivateAutomaticPermissionsForNewOrChangedDefinitions)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("DisableImportedExternalObjectTypeConnections")(DisableImportedExternalObjectTypeConnections)
-    __obj.updateDynamic("DisableImportedExternalUserGroups")(DisableImportedExternalUserGroups)
-    __obj.updateDynamic("DisableImportedVaultEventHandlers")(DisableImportedVaultEventHandlers)
-    __obj.updateDynamic("Flags")(Flags)
-    __obj.updateDynamic("IgnoreAutomaticPermissionsDefinedByObjects")(IgnoreAutomaticPermissionsDefinedByObjects)
-    __obj.updateDynamic("Impersonation")(Impersonation)
-    __obj.updateDynamic("MetadataStructureSelectors")(MetadataStructureSelectors)
-    __obj.updateDynamic("Permissions")(Permissions)
-    __obj.updateDynamic("ResetExportTimestamps")(ResetExportTimestamps)
-    __obj.updateDynamic("SourceLocation")(SourceLocation)
-    __obj.updateDynamic("UseDefaultObjectTypePermissions")(UseDefaultObjectTypePermissions)
-    __obj.updateDynamic("UseNamesAsAliases")(UseNamesAsAliases)
-    __obj.updateDynamic("UsePermissions")(UsePermissions)
+    val __obj = js.Dynamic.literal(ActivateAutomaticPermissionsForNewOrChangedDefinitions = ActivateAutomaticPermissionsForNewOrChangedDefinitions, Clone = Clone, DisableImportedExternalObjectTypeConnections = DisableImportedExternalObjectTypeConnections, DisableImportedExternalUserGroups = DisableImportedExternalUserGroups, DisableImportedVaultEventHandlers = DisableImportedVaultEventHandlers, Flags = Flags, IgnoreAutomaticPermissionsDefinedByObjects = IgnoreAutomaticPermissionsDefinedByObjects, Impersonation = Impersonation, MetadataStructureSelectors = MetadataStructureSelectors, Permissions = Permissions, ResetExportTimestamps = ResetExportTimestamps, SourceLocation = SourceLocation, UseDefaultObjectTypePermissions = UseDefaultObjectTypePermissions, UseNamesAsAliases = UseNamesAsAliases, UsePermissions = UsePermissions)
+  
     __obj.asInstanceOf[IImportContentJob]
   }
 }

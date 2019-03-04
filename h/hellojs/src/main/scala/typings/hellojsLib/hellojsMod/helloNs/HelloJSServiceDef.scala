@@ -62,8 +62,7 @@ object HelloJSServiceDef {
     wrap: org.scalablytyped.runtime.StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, scala.Unit]] = null,
     xhr: js.Function2[/* p */ js.Any, /* query */ js.Any, scala.Unit] = null
   ): HelloJSServiceDef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("oauth")(oauth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(oauth = oauth.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base)
     if (del != null) __obj.updateDynamic("del")(del)
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])

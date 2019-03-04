@@ -16,9 +16,8 @@ object Transport {
     send: js.Function1[js.Any, scala.Unit],
     setHandler: js.Function1[atStorybookChannelsLib.EventHandler, scala.Unit]
   ): Transport = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("send")(send)
-    __obj.updateDynamic("setHandler")(setHandler)
+    val __obj = js.Dynamic.literal(send = send, setHandler = setHandler)
+  
     __obj.asInstanceOf[Transport]
   }
 }

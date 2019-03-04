@@ -13,8 +13,8 @@ trait Anon_Match extends js.Object {
 object Anon_Match {
   @scala.inline
   def apply(`match`: java.lang.String, options: js.Any): Anon_Match = {
-    val __obj = js.Dynamic.literal(`match` = `match`)
-    __obj.updateDynamic("options")(options)
+    val __obj = js.Dynamic.literal(options = options)
+    __obj.updateDynamic("match")(`match`)
     __obj.asInstanceOf[Anon_Match]
   }
 }

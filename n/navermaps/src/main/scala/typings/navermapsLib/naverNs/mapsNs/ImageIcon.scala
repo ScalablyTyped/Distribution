@@ -22,8 +22,7 @@ object ImageIcon {
     scaledSize: Size | SizeLiteral = null,
     size: Size | SizeLiteral = null
   ): ImageIcon = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("url")(url)
+    val __obj = js.Dynamic.literal(url = url)
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (scaledSize != null) __obj.updateDynamic("scaledSize")(scaledSize.asInstanceOf[js.Any])

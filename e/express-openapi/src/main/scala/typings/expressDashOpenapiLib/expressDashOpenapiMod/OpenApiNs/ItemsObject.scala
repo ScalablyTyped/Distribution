@@ -46,7 +46,8 @@ object ItemsObject {
     pattern: java.lang.String = null,
     uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
   ): ItemsObject = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
     if (collectionFormat != null) __obj.updateDynamic("collectionFormat")(collectionFormat)
     if (default != null) __obj.updateDynamic("default")(default)
     if (enum != null) __obj.updateDynamic("enum")(enum)

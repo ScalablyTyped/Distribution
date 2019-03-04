@@ -23,9 +23,7 @@ object FittingContext {
     output: js.Any,
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): FittingContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("input")(input)
-    __obj.updateDynamic("output")(output)
+    val __obj = js.Dynamic.literal(input = input, output = output)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FittingContext]
   }

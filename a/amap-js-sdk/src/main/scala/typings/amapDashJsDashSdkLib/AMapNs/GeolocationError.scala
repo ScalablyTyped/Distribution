@@ -12,8 +12,8 @@ trait GeolocationError extends js.Object {
 object GeolocationError {
   @scala.inline
   def apply(info: java.lang.String): GeolocationError = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("info")(info)
+    val __obj = js.Dynamic.literal(info = info)
+  
     __obj.asInstanceOf[GeolocationError]
   }
 }

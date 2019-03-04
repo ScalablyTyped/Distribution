@@ -44,23 +44,8 @@ object IValueListItem {
     ParentID: scala.Double,
     ValueListID: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double
   ): IValueListItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AutomaticPermissionsForObjects")(AutomaticPermissionsForObjects)
-    __obj.updateDynamic("Clone")(Clone)
-    __obj.updateDynamic("CloneFrom")(CloneFrom)
-    __obj.updateDynamic("Deleted")(Deleted)
-    __obj.updateDynamic("DisplayID")(DisplayID)
-    __obj.updateDynamic("DisplayIDAvailable")(DisplayIDAvailable)
-    __obj.updateDynamic("GetIconAsPNG")(GetIconAsPNG)
-    __obj.updateDynamic("HasOwner")(HasOwner)
-    __obj.updateDynamic("HasParent")(HasParent)
-    __obj.updateDynamic("ID")(ID)
-    __obj.updateDynamic("Icon")(Icon)
-    __obj.updateDynamic("ItemGUID")(ItemGUID)
-    __obj.updateDynamic("Name")(Name)
-    __obj.updateDynamic("OwnerID")(OwnerID)
-    __obj.updateDynamic("ParentID")(ParentID)
-    __obj.updateDynamic("ValueListID")(ValueListID.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AutomaticPermissionsForObjects = AutomaticPermissionsForObjects, Clone = Clone, CloneFrom = CloneFrom, Deleted = Deleted, DisplayID = DisplayID, DisplayIDAvailable = DisplayIDAvailable, GetIconAsPNG = GetIconAsPNG, HasOwner = HasOwner, HasParent = HasParent, ID = ID, Icon = Icon, ItemGUID = ItemGUID, Name = Name, OwnerID = OwnerID, ParentID = ParentID, ValueListID = ValueListID.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IValueListItem]
   }
 }

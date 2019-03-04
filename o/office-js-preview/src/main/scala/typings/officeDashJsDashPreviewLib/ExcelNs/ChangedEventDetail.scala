@@ -55,11 +55,8 @@ object ChangedEventDetail {
     valueTypeAfter: RangeValueType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Integer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Error | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichValue,
     valueTypeBefore: RangeValueType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Empty | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.String | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Integer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Boolean | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Error | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichValue
   ): ChangedEventDetail = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("valueAfter")(valueAfter)
-    __obj.updateDynamic("valueBefore")(valueBefore)
-    __obj.updateDynamic("valueTypeAfter")(valueTypeAfter.asInstanceOf[js.Any])
-    __obj.updateDynamic("valueTypeBefore")(valueTypeBefore.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(valueAfter = valueAfter, valueBefore = valueBefore, valueTypeAfter = valueTypeAfter.asInstanceOf[js.Any], valueTypeBefore = valueTypeBefore.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[ChangedEventDetail]
   }
 }

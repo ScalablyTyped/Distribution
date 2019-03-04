@@ -14,10 +14,8 @@ trait Anon_Handle extends js.Object {
 object Anon_Handle {
   @scala.inline
   def apply(handle: stdLib.HTMLElement, scrollbar: stdLib.HTMLElement, track: stdLib.HTMLElement): Anon_Handle = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(handle)
-    __obj.updateDynamic("scrollbar")(scrollbar)
-    __obj.updateDynamic("track")(track)
+    val __obj = js.Dynamic.literal(handle = handle, scrollbar = scrollbar, track = track)
+  
     __obj.asInstanceOf[Anon_Handle]
   }
 }

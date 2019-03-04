@@ -30,8 +30,8 @@ object Composites {
   def apply(
     newtonsCradle: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, Composite]
   ): Composites = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newtonsCradle")(newtonsCradle)
+    val __obj = js.Dynamic.literal(newtonsCradle = newtonsCradle)
+  
     __obj.asInstanceOf[Composites]
   }
 }

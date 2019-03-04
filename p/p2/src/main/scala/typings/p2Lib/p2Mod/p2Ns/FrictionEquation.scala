@@ -60,39 +60,8 @@ object FrictionEquation {
     timeStep: scala.Double,
     update: js.Function0[scala.Unit]
   ): FrictionEquation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("G")(G)
-    __obj.updateDynamic("addToWlambda")(addToWlambda)
-    __obj.updateDynamic("bodyA")(bodyA)
-    __obj.updateDynamic("bodyB")(bodyB)
-    __obj.updateDynamic("computeB")(computeB)
-    __obj.updateDynamic("computeGW")(computeGW)
-    __obj.updateDynamic("computeGWlambda")(computeGWlambda)
-    __obj.updateDynamic("computeGiMGt")(computeGiMGt)
-    __obj.updateDynamic("computeGiMf")(computeGiMf)
-    __obj.updateDynamic("computeGq")(computeGq)
-    __obj.updateDynamic("computeInvC")(computeInvC)
-    __obj.updateDynamic("contactEquations")(contactEquations)
-    __obj.updateDynamic("contactPointA")(contactPointA)
-    __obj.updateDynamic("contactPointB")(contactPointB)
-    __obj.updateDynamic("enabled")(enabled)
-    __obj.updateDynamic("epsilon")(epsilon)
-    __obj.updateDynamic("frictionCoefficient")(frictionCoefficient)
-    __obj.updateDynamic("getSlipForce")(getSlipForce)
-    __obj.updateDynamic("gmult")(gmult)
-    __obj.updateDynamic("maxForce")(maxForce)
-    __obj.updateDynamic("minForce")(minForce)
-    __obj.updateDynamic("multiplier")(multiplier)
-    __obj.updateDynamic("needsUpdate")(needsUpdate)
-    __obj.updateDynamic("relativeVelocity")(relativeVelocity)
-    __obj.updateDynamic("relaxation")(relaxation)
-    __obj.updateDynamic("setSlipForce")(setSlipForce)
-    __obj.updateDynamic("shapeA")(shapeA)
-    __obj.updateDynamic("shapeB")(shapeB)
-    __obj.updateDynamic("stiffness")(stiffness)
-    __obj.updateDynamic("t")(t)
-    __obj.updateDynamic("timeStep")(timeStep)
-    __obj.updateDynamic("update")(update)
+    val __obj = js.Dynamic.literal(G = G, addToWlambda = addToWlambda, bodyA = bodyA, bodyB = bodyB, computeB = computeB, computeGW = computeGW, computeGWlambda = computeGWlambda, computeGiMGt = computeGiMGt, computeGiMf = computeGiMf, computeGq = computeGq, computeInvC = computeInvC, contactEquations = contactEquations, contactPointA = contactPointA, contactPointB = contactPointB, enabled = enabled, epsilon = epsilon, frictionCoefficient = frictionCoefficient, getSlipForce = getSlipForce, gmult = gmult, maxForce = maxForce, minForce = minForce, multiplier = multiplier, needsUpdate = needsUpdate, relativeVelocity = relativeVelocity, relaxation = relaxation, setSlipForce = setSlipForce, shapeA = shapeA, shapeB = shapeB, stiffness = stiffness, t = t, timeStep = timeStep, update = update)
+  
     __obj.asInstanceOf[FrictionEquation]
   }
 }

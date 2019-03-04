@@ -26,14 +26,8 @@ object IssueComment {
     url: java.lang.String,
     user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
   ): IssueComment = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("body")(body)
-    __obj.updateDynamic("created_at")(created_at)
-    __obj.updateDynamic("html_url")(html_url)
-    __obj.updateDynamic("id")(id)
-    __obj.updateDynamic("updated_at")(updated_at)
-    __obj.updateDynamic("url")(url)
-    __obj.updateDynamic("user")(user)
+    val __obj = js.Dynamic.literal(body = body, created_at = created_at, html_url = html_url, id = id, updated_at = updated_at, url = url, user = user)
+  
     __obj.asInstanceOf[IssueComment]
   }
 }

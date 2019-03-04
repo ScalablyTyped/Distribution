@@ -35,8 +35,8 @@ object ImageEditorStatic {
       scala.Unit
     ]
   ): ImageEditorStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cropImage")(cropImage)
+    val __obj = js.Dynamic.literal(cropImage = cropImage)
+  
     __obj.asInstanceOf[ImageEditorStatic]
   }
 }

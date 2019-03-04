@@ -53,8 +53,7 @@ object ServerEventCriteria {
     spread: js.UndefOr[scala.Boolean] = js.undefined,
     tags: js.UndefOr[scala.Boolean] = js.undefined
   ): ServerEventCriteria[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

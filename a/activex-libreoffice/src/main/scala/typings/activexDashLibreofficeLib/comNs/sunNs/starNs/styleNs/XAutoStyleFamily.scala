@@ -23,15 +23,8 @@ object XAutoStyleFamily {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XAutoStyleFamily = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ElementType")(ElementType)
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("createEnumeration")(createEnumeration)
-    __obj.updateDynamic("getElementType")(getElementType)
-    __obj.updateDynamic("hasElements")(hasElements)
-    __obj.updateDynamic("insertStyle")(insertStyle)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(ElementType = ElementType, acquire = acquire, createEnumeration = createEnumeration, getElementType = getElementType, hasElements = hasElements, insertStyle = insertStyle, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XAutoStyleFamily]
   }
 }

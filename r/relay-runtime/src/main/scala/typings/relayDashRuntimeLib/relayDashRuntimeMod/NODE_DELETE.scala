@@ -22,8 +22,8 @@ object NODE_DELETE {
     parentID: java.lang.String = null,
     parentName: java.lang.String = null
   ): NODE_DELETE = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("deletedIDFieldName")(deletedIDFieldName)
+    val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName)
+    __obj.updateDynamic("type")(`type`)
     if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName)
     if (parentID != null) __obj.updateDynamic("parentID")(parentID)
     if (parentName != null) __obj.updateDynamic("parentName")(parentName)

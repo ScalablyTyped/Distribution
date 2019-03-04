@@ -128,23 +128,8 @@ object ILocaleInfo {
     qTimeFmt: java.lang.String,
     qTimestampFmt: java.lang.String
   ): ILocaleInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("qBrokenWeeks")(qBrokenWeeks)
-    __obj.updateDynamic("qCalendarStrings")(qCalendarStrings)
-    __obj.updateDynamic("qCollation")(qCollation)
-    __obj.updateDynamic("qCurrentYear")(qCurrentYear)
-    __obj.updateDynamic("qDateFmt")(qDateFmt)
-    __obj.updateDynamic("qDecimalSep")(qDecimalSep)
-    __obj.updateDynamic("qFirstMonthOfYear")(qFirstMonthOfYear)
-    __obj.updateDynamic("qFirstWeekDay")(qFirstWeekDay)
-    __obj.updateDynamic("qListSep")(qListSep)
-    __obj.updateDynamic("qMoneyDecimalSep")(qMoneyDecimalSep)
-    __obj.updateDynamic("qMoneyFmt")(qMoneyFmt)
-    __obj.updateDynamic("qMoneyThousandSep")(qMoneyThousandSep)
-    __obj.updateDynamic("qReferenceDay")(qReferenceDay)
-    __obj.updateDynamic("qThousandSep")(qThousandSep)
-    __obj.updateDynamic("qTimeFmt")(qTimeFmt)
-    __obj.updateDynamic("qTimestampFmt")(qTimestampFmt)
+    val __obj = js.Dynamic.literal(qBrokenWeeks = qBrokenWeeks, qCalendarStrings = qCalendarStrings, qCollation = qCollation, qCurrentYear = qCurrentYear, qDateFmt = qDateFmt, qDecimalSep = qDecimalSep, qFirstMonthOfYear = qFirstMonthOfYear, qFirstWeekDay = qFirstWeekDay, qListSep = qListSep, qMoneyDecimalSep = qMoneyDecimalSep, qMoneyFmt = qMoneyFmt, qMoneyThousandSep = qMoneyThousandSep, qReferenceDay = qReferenceDay, qThousandSep = qThousandSep, qTimeFmt = qTimeFmt, qTimestampFmt = qTimestampFmt)
+  
     __obj.asInstanceOf[ILocaleInfo]
   }
 }

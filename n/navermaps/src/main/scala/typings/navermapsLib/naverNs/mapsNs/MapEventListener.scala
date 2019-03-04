@@ -23,11 +23,8 @@ object MapEventListener {
     listenerId: java.lang.String,
     target: js.Any
   ): MapEventListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("eventName")(eventName)
-    __obj.updateDynamic("listener")(listener)
-    __obj.updateDynamic("listenerId")(listenerId)
-    __obj.updateDynamic("target")(target)
+    val __obj = js.Dynamic.literal(eventName = eventName, listener = listener, listenerId = listenerId, target = target)
+  
     __obj.asInstanceOf[MapEventListener]
   }
 }

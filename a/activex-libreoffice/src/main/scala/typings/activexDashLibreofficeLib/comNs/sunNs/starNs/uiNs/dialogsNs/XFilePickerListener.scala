@@ -58,16 +58,8 @@ object XFilePickerListener {
     queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
     release: js.Function0[scala.Unit]
   ): XFilePickerListener = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("acquire")(acquire)
-    __obj.updateDynamic("controlStateChanged")(controlStateChanged)
-    __obj.updateDynamic("dialogSizeChanged")(dialogSizeChanged)
-    __obj.updateDynamic("directoryChanged")(directoryChanged)
-    __obj.updateDynamic("disposing")(disposing)
-    __obj.updateDynamic("fileSelectionChanged")(fileSelectionChanged)
-    __obj.updateDynamic("helpRequested")(helpRequested)
-    __obj.updateDynamic("queryInterface")(queryInterface)
-    __obj.updateDynamic("release")(release)
+    val __obj = js.Dynamic.literal(acquire = acquire, controlStateChanged = controlStateChanged, dialogSizeChanged = dialogSizeChanged, directoryChanged = directoryChanged, disposing = disposing, fileSelectionChanged = fileSelectionChanged, helpRequested = helpRequested, queryInterface = queryInterface, release = release)
+  
     __obj.asInstanceOf[XFilePickerListener]
   }
 }

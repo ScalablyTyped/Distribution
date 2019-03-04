@@ -13,8 +13,7 @@ trait IntrospectionNonNullTypeRef extends IntrospectionTypeRef {
 object IntrospectionNonNullTypeRef {
   @scala.inline
   def apply(kind: typedDashGraphqlLib.typedDashGraphqlLibStrings.NON_NULL, ofType: IntrospectionTypeRef = null): IntrospectionNonNullTypeRef = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("kind")(kind)
+    val __obj = js.Dynamic.literal(kind = kind)
     if (ofType != null) __obj.updateDynamic("ofType")(ofType)
     __obj.asInstanceOf[IntrospectionNonNullTypeRef]
   }

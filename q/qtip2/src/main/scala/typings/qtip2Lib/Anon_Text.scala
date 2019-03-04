@@ -12,8 +12,8 @@ trait Anon_Text extends js.Object {
 object Anon_Text {
   @scala.inline
   def apply(text: qtip2Lib.QTip2Ns.Title): Anon_Text = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_Text]
   }
 }

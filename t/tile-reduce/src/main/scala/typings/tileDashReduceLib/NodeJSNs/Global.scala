@@ -12,8 +12,8 @@ trait Global extends js.Object {
 object Global {
   @scala.inline
   def apply(mapOptions: js.Any): Global = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("mapOptions")(mapOptions)
+    val __obj = js.Dynamic.literal(mapOptions = mapOptions)
+  
     __obj.asInstanceOf[Global]
   }
 }

@@ -16,9 +16,8 @@ object Paragraph {
     getIndex: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
     getRange: js.Function0[TextRange]
   ): Paragraph = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getIndex")(getIndex)
-    __obj.updateDynamic("getRange")(getRange)
+    val __obj = js.Dynamic.literal(getIndex = getIndex, getRange = getRange)
+  
     __obj.asInstanceOf[Paragraph]
   }
 }

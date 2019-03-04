@@ -13,9 +13,8 @@ trait ReadInfo extends js.Object {
 object ReadInfo {
   @scala.inline
   def apply(data: stdLib.ArrayBuffer, resultCode: scala.Double): ReadInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("data")(data)
-    __obj.updateDynamic("resultCode")(resultCode)
+    val __obj = js.Dynamic.literal(data = data, resultCode = resultCode)
+  
     __obj.asInstanceOf[ReadInfo]
   }
 }

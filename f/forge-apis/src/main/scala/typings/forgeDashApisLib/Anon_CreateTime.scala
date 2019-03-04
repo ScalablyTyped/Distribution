@@ -34,18 +34,8 @@ object Anon_CreateTime {
     storageSize: scala.Double,
     versionNumber: scala.Double
   ): Anon_CreateTime = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createTime")(createTime)
-    __obj.updateDynamic("createUserId")(createUserId)
-    __obj.updateDynamic("displayName")(displayName)
-    __obj.updateDynamic("extension")(extension)
-    __obj.updateDynamic("fileType")(fileType)
-    __obj.updateDynamic("lastModifiedTime")(lastModifiedTime)
-    __obj.updateDynamic("lastModifiedUserId")(lastModifiedUserId)
-    __obj.updateDynamic("mimeType")(mimeType)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("storageSize")(storageSize)
-    __obj.updateDynamic("versionNumber")(versionNumber)
+    val __obj = js.Dynamic.literal(createTime = createTime, createUserId = createUserId, displayName = displayName, extension = extension, fileType = fileType, lastModifiedTime = lastModifiedTime, lastModifiedUserId = lastModifiedUserId, mimeType = mimeType, name = name, storageSize = storageSize, versionNumber = versionNumber)
+  
     __obj.asInstanceOf[Anon_CreateTime]
   }
 }

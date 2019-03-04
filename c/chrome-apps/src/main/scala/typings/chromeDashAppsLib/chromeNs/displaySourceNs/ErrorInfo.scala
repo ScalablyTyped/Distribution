@@ -31,7 +31,8 @@ object ErrorInfo {
     ],
     description: java.lang.String = null
   ): ErrorInfo = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ErrorInfo]
   }

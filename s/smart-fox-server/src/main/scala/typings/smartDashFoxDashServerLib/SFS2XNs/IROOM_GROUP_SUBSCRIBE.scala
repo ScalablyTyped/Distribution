@@ -16,9 +16,8 @@ object IROOM_GROUP_SUBSCRIBE {
     groupId: java.lang.String,
     newRooms: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom]
   ): IROOM_GROUP_SUBSCRIBE = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("groupId")(groupId)
-    __obj.updateDynamic("newRooms")(newRooms)
+    val __obj = js.Dynamic.literal(groupId = groupId, newRooms = newRooms)
+  
     __obj.asInstanceOf[IROOM_GROUP_SUBSCRIBE]
   }
 }

@@ -28,13 +28,8 @@ object MatchWaypoint {
     name: java.lang.String,
     waypoint_index: js.Array[scala.Double]
   ): MatchWaypoint = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distance")(distance)
-    __obj.updateDynamic("hint")(hint)
-    __obj.updateDynamic("location")(location)
-    __obj.updateDynamic("matchings_index")(matchings_index)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("waypoint_index")(waypoint_index)
+    val __obj = js.Dynamic.literal(distance = distance, hint = hint, location = location, matchings_index = matchings_index, name = name, waypoint_index = waypoint_index)
+  
     __obj.asInstanceOf[MatchWaypoint]
   }
 }

@@ -36,8 +36,7 @@ object SignOptions {
     privateKey: js.Any = null,
     secret: js.Any = null
   ): SignOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("header")(header)
+    val __obj = js.Dynamic.literal(header = header)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key)
     if (payload != null) __obj.updateDynamic("payload")(payload)

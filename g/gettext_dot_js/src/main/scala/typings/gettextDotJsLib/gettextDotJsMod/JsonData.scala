@@ -12,8 +12,8 @@ trait JsonData extends JsonDataMessages {
 object JsonData {
   @scala.inline
   def apply(Empty: JsonDataHeader): JsonData = {
-    val __obj = js.Dynamic.literal(Empty = Empty)
-  
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("")(Empty)
     __obj.asInstanceOf[JsonData]
   }
 }

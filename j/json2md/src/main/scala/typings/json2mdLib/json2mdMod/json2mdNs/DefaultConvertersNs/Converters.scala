@@ -40,20 +40,7 @@ object Converters {
     ul: js.Array[java.lang.String],
     StringDictionary: /* converter */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Converters = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("blockquote")(blockquote.asInstanceOf[js.Any])
-    __obj.updateDynamic("code")(code)
-    __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    __obj.updateDynamic("ol")(ol)
-    __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    __obj.updateDynamic("table")(table)
-    __obj.updateDynamic("ul")(ul)
+    val __obj = js.Dynamic.literal(blockquote = blockquote.asInstanceOf[js.Any], code = code, h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], ol = ol, p = p.asInstanceOf[js.Any], table = table, ul = ul)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Converters]
   }

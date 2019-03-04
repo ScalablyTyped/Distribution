@@ -51,8 +51,7 @@ object MangoQuery {
     update: js.UndefOr[scala.Boolean] = js.undefined,
     use_index: java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) = null
   ): MangoQuery = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("selector")(selector)
+    val __obj = js.Dynamic.literal(selector = selector)
     if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
     if (!js.isUndefined(execution_stats)) __obj.updateDynamic("execution_stats")(execution_stats)
     if (fields != null) __obj.updateDynamic("fields")(fields)

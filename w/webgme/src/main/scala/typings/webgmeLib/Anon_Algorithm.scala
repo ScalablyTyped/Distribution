@@ -61,14 +61,8 @@ object Anon_Algorithm {
     renewBeforeExpires: scala.Double,
     tokenGenerator: java.lang.String
   ): Anon_Algorithm = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("algorithm")(algorithm)
-    __obj.updateDynamic("cookieId")(cookieId)
-    __obj.updateDynamic("expiresIn")(expiresIn)
-    __obj.updateDynamic("privateKey")(privateKey)
-    __obj.updateDynamic("publicKey")(publicKey)
-    __obj.updateDynamic("renewBeforeExpires")(renewBeforeExpires)
-    __obj.updateDynamic("tokenGenerator")(tokenGenerator)
+    val __obj = js.Dynamic.literal(algorithm = algorithm, cookieId = cookieId, expiresIn = expiresIn, privateKey = privateKey, publicKey = publicKey, renewBeforeExpires = renewBeforeExpires, tokenGenerator = tokenGenerator)
+  
     __obj.asInstanceOf[Anon_Algorithm]
   }
 }

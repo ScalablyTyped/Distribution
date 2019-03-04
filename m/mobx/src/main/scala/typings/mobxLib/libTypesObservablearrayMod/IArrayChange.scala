@@ -22,10 +22,9 @@ object IArrayChange {
     oldValue: T,
     `type`: mobxLib.mobxLibStrings.update
   ): IArrayChange[T] = {
-    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index, newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")(`object`)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IArrayChange[T]]
   }
 }

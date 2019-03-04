@@ -14,10 +14,8 @@ trait Version extends js.Object {
 object Version {
   @scala.inline
   def apply(major: scala.Double, minor: scala.Double, version: java.lang.String): Version = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("major")(major)
-    __obj.updateDynamic("minor")(minor)
-    __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(major = major, minor = minor, version = version)
+  
     __obj.asInstanceOf[Version]
   }
 }

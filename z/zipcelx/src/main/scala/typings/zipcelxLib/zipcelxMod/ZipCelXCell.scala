@@ -22,8 +22,8 @@ object ZipCelXCell {
     `type`: zipcelxLib.zipcelxLibStrings.string | zipcelxLib.zipcelxLibStrings.number,
     value: java.lang.String | scala.Double
   ): ZipCelXCell = {
-    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipCelXCell]
   }
 }

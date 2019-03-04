@@ -88,13 +88,7 @@ object CompositionContext {
     view: js.Any = null,
     viewElements: js.Array[stdLib.HTMLElement] = null
   ): CompositionContext = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("activeView")(activeView)
-    __obj.updateDynamic("child")(child)
-    __obj.updateDynamic("composingNewView")(composingNewView)
-    __obj.updateDynamic("mode")(mode)
-    __obj.updateDynamic("parent")(parent)
-    __obj.updateDynamic("triggerAttach")(triggerAttach)
+    val __obj = js.Dynamic.literal(activeView = activeView, child = child, composingNewView = composingNewView, mode = mode, parent = parent, triggerAttach = triggerAttach)
     if (!js.isUndefined(activate)) __obj.updateDynamic("activate")(activate)
     if (area != null) __obj.updateDynamic("area")(area)
     if (attached != null) __obj.updateDynamic("attached")(attached)

@@ -16,9 +16,8 @@ object Pattern1 {
     and: js.Function1[Observable[js.Any], Pattern2[T1, js.Any]],
     thenDo: js.Function1[js.Function1[/* item1 */ T1, js.Any], Plan[js.Any]]
   ): Pattern1[T1] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(and)
-    __obj.updateDynamic("thenDo")(thenDo)
+    val __obj = js.Dynamic.literal(and = and, thenDo = thenDo)
+  
     __obj.asInstanceOf[Pattern1[T1]]
   }
 }

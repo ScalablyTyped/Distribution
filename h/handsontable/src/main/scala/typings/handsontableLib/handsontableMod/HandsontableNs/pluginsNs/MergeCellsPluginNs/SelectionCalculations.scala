@@ -32,9 +32,8 @@ object SelectionCalculations {
       scala.Unit
     ]
   ): SelectionCalculations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUpdatedSelectionRange")(getUpdatedSelectionRange)
-    __obj.updateDynamic("snapDelta")(snapDelta)
+    val __obj = js.Dynamic.literal(getUpdatedSelectionRange = getUpdatedSelectionRange, snapDelta = snapDelta)
+  
     __obj.asInstanceOf[SelectionCalculations]
   }
 }

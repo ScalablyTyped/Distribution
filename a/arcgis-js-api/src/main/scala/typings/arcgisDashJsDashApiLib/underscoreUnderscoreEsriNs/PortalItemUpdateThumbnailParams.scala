@@ -23,11 +23,8 @@ object PortalItemUpdateThumbnailParams {
     propertyIsEnumerable: js.Function1[stdLib.PropertyKey, scala.Boolean],
     thumbnail: stdLib.Blob | java.lang.String
   ): PortalItemUpdateThumbnailParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("constructor")(constructor)
-    __obj.updateDynamic("hasOwnProperty")(hasOwnProperty)
-    __obj.updateDynamic("propertyIsEnumerable")(propertyIsEnumerable)
-    __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = hasOwnProperty, propertyIsEnumerable = propertyIsEnumerable, thumbnail = thumbnail.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PortalItemUpdateThumbnailParams]
   }
 }

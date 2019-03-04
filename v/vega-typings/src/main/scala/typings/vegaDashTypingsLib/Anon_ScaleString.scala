@@ -13,8 +13,8 @@ trait Anon_ScaleString
 object Anon_ScaleString {
   @scala.inline
   def apply(scale: java.lang.String): Anon_ScaleString = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(scale)
+    val __obj = js.Dynamic.literal(scale = scale)
+  
     __obj.asInstanceOf[Anon_ScaleString]
   }
 }

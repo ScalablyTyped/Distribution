@@ -12,8 +12,8 @@ trait bufferCreatedData extends js.Object {
 object bufferCreatedData {
   @scala.inline
   def apply(tracks: Tracks): bufferCreatedData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tracks")(tracks)
+    val __obj = js.Dynamic.literal(tracks = tracks)
+  
     __obj.asInstanceOf[bufferCreatedData]
   }
 }

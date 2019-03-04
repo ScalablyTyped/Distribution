@@ -12,8 +12,8 @@ trait PluginAddAttributesToSVGElement extends js.Object {
 object PluginAddAttributesToSVGElement {
   @scala.inline
   def apply(addAttributesToSVGElement: scala.Boolean | js.Object): PluginAddAttributesToSVGElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAttributesToSVGElement")(addAttributesToSVGElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addAttributesToSVGElement = addAttributesToSVGElement.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[PluginAddAttributesToSVGElement]
   }
 }

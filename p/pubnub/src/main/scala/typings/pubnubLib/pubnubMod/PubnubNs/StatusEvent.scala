@@ -28,14 +28,8 @@ object StatusEvent {
     operation: java.lang.String,
     subscribedChannels: js.Array[java.lang.String]
   ): StatusEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("affectedChannelGroups")(affectedChannelGroups)
-    __obj.updateDynamic("affectedChannels")(affectedChannels)
-    __obj.updateDynamic("category")(category)
-    __obj.updateDynamic("currentTimetoken")(currentTimetoken.asInstanceOf[js.Any])
-    __obj.updateDynamic("lastTimetoken")(lastTimetoken.asInstanceOf[js.Any])
-    __obj.updateDynamic("operation")(operation)
-    __obj.updateDynamic("subscribedChannels")(subscribedChannels)
+    val __obj = js.Dynamic.literal(affectedChannelGroups = affectedChannelGroups, affectedChannels = affectedChannels, category = category, currentTimetoken = currentTimetoken.asInstanceOf[js.Any], lastTimetoken = lastTimetoken.asInstanceOf[js.Any], operation = operation, subscribedChannels = subscribedChannels)
+  
     __obj.asInstanceOf[StatusEvent]
   }
 }

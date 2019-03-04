@@ -18,10 +18,8 @@ object Keygrip {
     sign: js.Function1[js.Any, java.lang.String],
     verify: js.Function2[js.Any, java.lang.String, scala.Boolean]
   ): Keygrip = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("index")(index)
-    __obj.updateDynamic("sign")(sign)
-    __obj.updateDynamic("verify")(verify)
+    val __obj = js.Dynamic.literal(index = index, sign = sign, verify = verify)
+  
     __obj.asInstanceOf[Keygrip]
   }
 }

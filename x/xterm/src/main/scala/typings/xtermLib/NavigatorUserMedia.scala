@@ -27,10 +27,8 @@ object NavigatorUserMedia {
     ],
     mediaDevices: MediaDevices
   ): NavigatorUserMedia = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayMedia")(getDisplayMedia)
-    __obj.updateDynamic("getUserMedia")(getUserMedia)
-    __obj.updateDynamic("mediaDevices")(mediaDevices)
+    val __obj = js.Dynamic.literal(getDisplayMedia = getDisplayMedia, getUserMedia = getUserMedia, mediaDevices = mediaDevices)
+  
     __obj.asInstanceOf[NavigatorUserMedia]
   }
 }

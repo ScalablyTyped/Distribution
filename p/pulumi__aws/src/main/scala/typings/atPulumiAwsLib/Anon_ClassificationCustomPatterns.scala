@@ -18,9 +18,7 @@ object Anon_ClassificationCustomPatterns {
     grokPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     customPatterns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): Anon_ClassificationCustomPatterns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("classification")(classification.asInstanceOf[js.Any])
-    __obj.updateDynamic("grokPattern")(grokPattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classification = classification.asInstanceOf[js.Any], grokPattern = grokPattern.asInstanceOf[js.Any])
     if (customPatterns != null) __obj.updateDynamic("customPatterns")(customPatterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ClassificationCustomPatterns]
   }

@@ -31,9 +31,8 @@ trait InkStrokePointer extends js.Object {
 object InkStrokePointer {
   @scala.inline
   def apply(contentId: java.lang.String, inkStrokeId: java.lang.String): InkStrokePointer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("contentId")(contentId)
-    __obj.updateDynamic("inkStrokeId")(inkStrokeId)
+    val __obj = js.Dynamic.literal(contentId = contentId, inkStrokeId = inkStrokeId)
+  
     __obj.asInstanceOf[InkStrokePointer]
   }
 }

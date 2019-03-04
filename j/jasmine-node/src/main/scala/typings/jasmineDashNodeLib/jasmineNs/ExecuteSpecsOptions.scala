@@ -32,9 +32,7 @@ object ExecuteSpecsOptions {
     teamcity: java.lang.String | scala.Boolean = null,
     useRequireJs: js.UndefOr[scala.Boolean] = js.undefined
   ): ExecuteSpecsOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("regExpSpec")(regExpSpec)
-    __obj.updateDynamic("specFolders")(specFolders)
+    val __obj = js.Dynamic.literal(regExpSpec = regExpSpec, specFolders = specFolders)
     if (!js.isUndefined(growl)) __obj.updateDynamic("growl")(growl)
     if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace)
     if (!js.isUndefined(isVerbose)) __obj.updateDynamic("isVerbose")(isVerbose)

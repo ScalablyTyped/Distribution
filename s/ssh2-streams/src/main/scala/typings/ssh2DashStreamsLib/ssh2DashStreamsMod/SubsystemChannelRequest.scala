@@ -20,11 +20,8 @@ object SubsystemChannelRequest {
     subsystem: java.lang.String,
     wantReply: scala.Boolean
   ): SubsystemChannelRequest = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("recipient")(recipient)
-    __obj.updateDynamic("request")(request)
-    __obj.updateDynamic("subsystem")(subsystem)
-    __obj.updateDynamic("wantReply")(wantReply)
+    val __obj = js.Dynamic.literal(recipient = recipient, request = request, subsystem = subsystem, wantReply = wantReply)
+  
     __obj.asInstanceOf[SubsystemChannelRequest]
   }
 }

@@ -50,14 +50,8 @@ object Node {
     x: scala.Double,
     y: scala.Double
   ): Node = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("i")(i)
-    __obj.updateDynamic("next")(next)
-    __obj.updateDynamic("prev")(prev)
-    __obj.updateDynamic("removed")(removed)
-    __obj.updateDynamic("t")(t)
-    __obj.updateDynamic("x")(x)
-    __obj.updateDynamic("y")(y)
+    val __obj = js.Dynamic.literal(i = i, next = next, prev = prev, removed = removed, t = t, x = x, y = y)
+  
     __obj.asInstanceOf[Node]
   }
 }

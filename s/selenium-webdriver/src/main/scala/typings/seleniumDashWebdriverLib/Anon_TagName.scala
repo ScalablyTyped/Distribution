@@ -13,8 +13,8 @@ trait Anon_TagName
 object Anon_TagName {
   @scala.inline
   def apply(tagName: java.lang.String): Anon_TagName = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tagName")(tagName)
+    val __obj = js.Dynamic.literal(tagName = tagName)
+  
     __obj.asInstanceOf[Anon_TagName]
   }
 }

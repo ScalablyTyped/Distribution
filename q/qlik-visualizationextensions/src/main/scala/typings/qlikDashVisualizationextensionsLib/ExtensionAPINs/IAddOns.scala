@@ -12,8 +12,8 @@ trait IAddOns extends js.Object {
 object IAddOns {
   @scala.inline
   def apply(uses: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.addons): IAddOns = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uses")(uses)
+    val __obj = js.Dynamic.literal(uses = uses)
+  
     __obj.asInstanceOf[IAddOns]
   }
 }

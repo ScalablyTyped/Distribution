@@ -12,8 +12,8 @@ trait WriterPatterns[S, T, U] extends js.Object {
 object WriterPatterns {
   @scala.inline
   def apply[S, T, U](writer: js.Function2[js.Array[S], T, U]): WriterPatterns[S, T, U] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("writer")(writer)
+    val __obj = js.Dynamic.literal(writer = writer)
+  
     __obj.asInstanceOf[WriterPatterns[S, T, U]]
   }
 }

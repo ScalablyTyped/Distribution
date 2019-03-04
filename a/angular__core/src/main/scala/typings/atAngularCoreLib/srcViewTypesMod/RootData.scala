@@ -28,15 +28,8 @@ object RootData {
     sanitizer: atAngularCoreLib.srcSanitizationSecurityMod.Sanitizer,
     selectorOrNode: js.Any
   ): RootData = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("errorHandler")(errorHandler)
-    __obj.updateDynamic("injector")(injector)
-    __obj.updateDynamic("ngModule")(ngModule)
-    __obj.updateDynamic("projectableNodes")(projectableNodes)
-    __obj.updateDynamic("renderer")(renderer)
-    __obj.updateDynamic("rendererFactory")(rendererFactory)
-    __obj.updateDynamic("sanitizer")(sanitizer)
-    __obj.updateDynamic("selectorOrNode")(selectorOrNode)
+    val __obj = js.Dynamic.literal(errorHandler = errorHandler, injector = injector, ngModule = ngModule, projectableNodes = projectableNodes, renderer = renderer, rendererFactory = rendererFactory, sanitizer = sanitizer, selectorOrNode = selectorOrNode)
+  
     __obj.asInstanceOf[RootData]
   }
 }

@@ -24,13 +24,8 @@ object AttachmentLoader {
     newPointAttachment: js.Function2[Skin, java.lang.String, PointAttachment],
     newRegionAttachment: js.Function3[Skin, java.lang.String, java.lang.String, RegionAttachment]
   ): AttachmentLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("newBoundingBoxAttachment")(newBoundingBoxAttachment)
-    __obj.updateDynamic("newClippingAttachment")(newClippingAttachment)
-    __obj.updateDynamic("newMeshAttachment")(newMeshAttachment)
-    __obj.updateDynamic("newPathAttachment")(newPathAttachment)
-    __obj.updateDynamic("newPointAttachment")(newPointAttachment)
-    __obj.updateDynamic("newRegionAttachment")(newRegionAttachment)
+    val __obj = js.Dynamic.literal(newBoundingBoxAttachment = newBoundingBoxAttachment, newClippingAttachment = newClippingAttachment, newMeshAttachment = newMeshAttachment, newPathAttachment = newPathAttachment, newPointAttachment = newPointAttachment, newRegionAttachment = newRegionAttachment)
+  
     __obj.asInstanceOf[AttachmentLoader]
   }
 }

@@ -19,8 +19,7 @@ object VRDisplayEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     reason: VRDisplayEventReason = null
   ): VRDisplayEventInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("display")(display)
+    val __obj = js.Dynamic.literal(display = display)
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)

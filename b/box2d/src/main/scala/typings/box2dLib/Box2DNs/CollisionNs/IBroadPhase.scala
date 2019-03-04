@@ -84,16 +84,8 @@ object IBroadPhase {
     ],
     Rebalance: js.Function1[scala.Double, scala.Unit]
   ): IBroadPhase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("CreateProxy")(CreateProxy)
-    __obj.updateDynamic("DestroyProxy")(DestroyProxy)
-    __obj.updateDynamic("GetFatAABB")(GetFatAABB)
-    __obj.updateDynamic("GetProxyCount")(GetProxyCount)
-    __obj.updateDynamic("GetUserData")(GetUserData)
-    __obj.updateDynamic("MoveProxy")(MoveProxy)
-    __obj.updateDynamic("Query")(Query)
-    __obj.updateDynamic("RayCast")(RayCast)
-    __obj.updateDynamic("Rebalance")(Rebalance)
+    val __obj = js.Dynamic.literal(CreateProxy = CreateProxy, DestroyProxy = DestroyProxy, GetFatAABB = GetFatAABB, GetProxyCount = GetProxyCount, GetUserData = GetUserData, MoveProxy = MoveProxy, Query = Query, RayCast = RayCast, Rebalance = Rebalance)
+  
     __obj.asInstanceOf[IBroadPhase]
   }
 }

@@ -38,9 +38,7 @@ object ConfigItem {
     name: java.lang.String = null,
     options: js.Object | atBabelCoreLib.atBabelCoreLibNumbers.`false` = null
   ): ConfigItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dirname")(dirname)
-    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dirname = dirname, value = value.asInstanceOf[js.Any])
     if (file != null) __obj.updateDynamic("file")(file)
     if (name != null) __obj.updateDynamic("name")(name)
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

@@ -28,14 +28,8 @@ object TaskAttachment {
     timelineId: java.lang.String,
     `type`: java.lang.String
   ): TaskAttachment = {
-    val __obj = js.Dynamic.literal(`type` = `type`)
-    __obj.updateDynamic("_links")(_links)
-    __obj.updateDynamic("createdOn")(createdOn)
-    __obj.updateDynamic("lastChangedBy")(lastChangedBy)
-    __obj.updateDynamic("lastChangedOn")(lastChangedOn)
-    __obj.updateDynamic("name")(name)
-    __obj.updateDynamic("recordId")(recordId)
-    __obj.updateDynamic("timelineId")(timelineId)
+    val __obj = js.Dynamic.literal(_links = _links, createdOn = createdOn, lastChangedBy = lastChangedBy, lastChangedOn = lastChangedOn, name = name, recordId = recordId, timelineId = timelineId)
+    __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TaskAttachment]
   }
 }

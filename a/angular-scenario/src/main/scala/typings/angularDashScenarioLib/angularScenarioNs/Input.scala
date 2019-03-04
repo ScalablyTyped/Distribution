@@ -20,10 +20,8 @@ object Input {
     select: js.Function1[js.Any, js.Any],
     `val`: js.Function0[Future]
   ): Input = {
-    val __obj = js.Dynamic.literal(`val` = `val`)
-    __obj.updateDynamic("check")(check)
-    __obj.updateDynamic("enter")(enter)
-    __obj.updateDynamic("select")(select)
+    val __obj = js.Dynamic.literal(check = check, enter = enter, select = select)
+    __obj.updateDynamic("val")(`val`)
     __obj.asInstanceOf[Input]
   }
 }

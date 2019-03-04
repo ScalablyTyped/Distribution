@@ -13,9 +13,8 @@ trait ClampResponse extends js.Object {
 object ClampResponse {
   @scala.inline
   def apply(clamped: java.lang.String, original: java.lang.String): ClampResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clamped")(clamped)
-    __obj.updateDynamic("original")(original)
+    val __obj = js.Dynamic.literal(clamped = clamped, original = original)
+  
     __obj.asInstanceOf[ClampResponse]
   }
 }

@@ -22,11 +22,7 @@ object Template {
     value: js.Any,
     className: java.lang.String = null
   ): Template = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("field")(field)
-    __obj.updateDynamic("text")(text)
-    __obj.updateDynamic("title")(title)
-    __obj.updateDynamic("value")(value)
+    val __obj = js.Dynamic.literal(field = field, text = text, title = title, value = value)
     if (className != null) __obj.updateDynamic("className")(className)
     __obj.asInstanceOf[Template]
   }

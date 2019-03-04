@@ -17,8 +17,8 @@ object CodeLensParams {
   def apply(
     textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
   ): CodeLensParams = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("textDocument")(textDocument)
+    val __obj = js.Dynamic.literal(textDocument = textDocument)
+  
     __obj.asInstanceOf[CodeLensParams]
   }
 }
