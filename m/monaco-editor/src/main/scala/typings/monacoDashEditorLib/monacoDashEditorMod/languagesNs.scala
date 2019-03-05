@@ -12,6 +12,7 @@ object languagesNs extends js.Object {
     var command: js.UndefOr[Command] = js.undefined
     var diagnostics: js.UndefOr[js.Array[monacoDashEditorLib.monacoDashEditorMod.editorNs.IMarkerData]] = js.undefined
     var edit: js.UndefOr[WorkspaceEdit] = js.undefined
+    var isPreferred: js.UndefOr[scala.Boolean] = js.undefined
     var kind: js.UndefOr[java.lang.String] = js.undefined
     var title: java.lang.String
   }
@@ -19,8 +20,6 @@ object languagesNs extends js.Object {
   trait CodeActionContext extends js.Object {
     /**
       * An array of diagnostics.
-      *
-      * @readonly
       */
     val markers: js.Array[monacoDashEditorLib.monacoDashEditorMod.editorNs.IMarkerData]
     /**
@@ -38,7 +37,7 @@ object languagesNs extends js.Object {
       range: monacoDashEditorLib.monacoDashEditorMod.Range,
       context: CodeActionContext,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
-    ): (js.Array[Command | CodeAction]) | (monacoDashEditorLib.monacoDashEditorMod.Thenable[js.Array[Command | CodeAction]])
+    ): (js.Array[Command | CodeAction]) | (js.Promise[js.Array[Command | CodeAction]])
   }
   
   trait CodeLensProvider extends js.Object {
@@ -157,7 +156,7 @@ object languagesNs extends js.Object {
       * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
       * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
       */
-    var range: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
+    var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     /**
       * A string that should be used when comparing this item
       * with other items. When `falsy` the [label](#CompletionItem.label)
@@ -209,11 +208,15 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait CompletionTriggerKind extends js.Object
   
-  trait DefinitionLink extends js.Object {
-    var origin: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
-    var range: monacoDashEditorLib.monacoDashEditorMod.IRange
-    var selectionRange: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
-    var uri: monacoDashEditorLib.monacoDashEditorMod.Uri
+  trait DeclarationProvider extends js.Object {
+    /**
+      * Provide the declaration of the symbol at the given position and document.
+      */
+    def provideDeclaration(
+      model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
+      position: monacoDashEditorLib.monacoDashEditorMod.Position,
+      token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
+    ): ProviderResult[Definition | js.Array[LocationLink]]
   }
   
   trait DefinitionProvider extends js.Object {
@@ -224,7 +227,7 @@ object languagesNs extends js.Object {
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
-    ): ProviderResult[Definition | js.Array[DefinitionLink]]
+    ): ProviderResult[Definition | js.Array[LocationLink]]
   }
   
   trait DocumentColorProvider extends js.Object {
@@ -260,7 +263,7 @@ object languagesNs extends js.Object {
     /**
       * The highlight kind, default is [text](#DocumentHighlightKind.Text).
       */
-    var kind: DocumentHighlightKind
+    var kind: js.UndefOr[DocumentHighlightKind] = js.undefined
     /**
       * The range this highlight applies to.
       */
@@ -339,10 +342,6 @@ object languagesNs extends js.Object {
       * Describe what to do with the indentation.
       */
     var indentAction: IndentAction
-    /**
-      * Describe whether to outdent current line.
-      */
-    var outdentCurrentLine: js.UndefOr[scala.Boolean] = js.undefined
     /**
       * Describes the number of characters to remove from the new line's indentation.
       */
@@ -634,7 +633,7 @@ object languagesNs extends js.Object {
   
   trait ILink extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
-    var url: js.UndefOr[java.lang.String] = js.undefined
+    var url: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri | java.lang.String] = js.undefined
   }
   
   trait IMonarchLanguage extends js.Object {
@@ -696,7 +695,7 @@ object languagesNs extends js.Object {
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
-    ): ProviderResult[Definition | js.Array[DefinitionLink]]
+    ): ProviderResult[Definition | js.Array[LocationLink]]
   }
   
   @js.native
@@ -714,11 +713,11 @@ object languagesNs extends js.Object {
     /**
       * If a line matches this pattern, then **only the next line** after it should be indented once.
       */
-    var indentNextLinePattern: js.UndefOr[stdLib.RegExp] = js.undefined
+    var indentNextLinePattern: js.UndefOr[stdLib.RegExp | scala.Null] = js.undefined
     /**
       * If a line matches this pattern, then its indentation should not be changed and it should not be evaluated against the other rules.
       */
-    var unIndentedLinePattern: js.UndefOr[stdLib.RegExp] = js.undefined
+    var unIndentedLinePattern: js.UndefOr[stdLib.RegExp | scala.Null] = js.undefined
   }
   
   trait LanguageConfiguration extends js.Object {
@@ -797,6 +796,26 @@ object languagesNs extends js.Object {
     var range: monacoDashEditorLib.monacoDashEditorMod.IRange
     /**
       * The resource identifier of this location.
+      */
+    var uri: monacoDashEditorLib.monacoDashEditorMod.Uri
+  }
+  
+  trait LocationLink extends js.Object {
+    /**
+      * A range to select where this link originates from.
+      */
+    var originSelectionRange: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
+    /**
+      * The full range this link points to.
+      */
+    var range: monacoDashEditorLib.monacoDashEditorMod.IRange
+    /**
+      * A range to select this link points to. Must be contained
+      * in `LocationLink.range`.
+      */
+    var targetSelectionRange: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange] = js.undefined
+    /**
+      * The target uri this link points to.
       */
     var uri: monacoDashEditorLib.monacoDashEditorMod.Uri
   }
@@ -908,6 +927,22 @@ object languagesNs extends js.Object {
     var resource: monacoDashEditorLib.monacoDashEditorMod.Uri
   }
   
+  trait SelectionRange extends js.Object {
+    var kind: java.lang.String
+    var range: monacoDashEditorLib.monacoDashEditorMod.IRange
+  }
+  
+  trait SelectionRangeProvider extends js.Object {
+    /**
+      * Provide ranges that should be selected from the given position.
+      */
+    def provideSelectionRanges(
+      model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
+      positions: js.Array[monacoDashEditorLib.monacoDashEditorMod.Position],
+      token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
+    ): ProviderResult[js.Array[js.Array[SelectionRange]]]
+  }
+  
   trait SignatureHelp extends js.Object {
     /**
       * The active parameter of the active signature.
@@ -924,9 +959,10 @@ object languagesNs extends js.Object {
   }
   
   trait SignatureHelpContext extends js.Object {
+    val activeSignatureHelp: js.UndefOr[SignatureHelp] = js.undefined
     val isRetrigger: scala.Boolean
     val triggerCharacter: js.UndefOr[java.lang.String] = js.undefined
-    val triggerReason: SignatureHelpTriggerReason
+    val triggerKind: SignatureHelpTriggerKind
   }
   
   trait SignatureHelpProvider extends js.Object {
@@ -944,7 +980,7 @@ object languagesNs extends js.Object {
   }
   
   @js.native
-  sealed trait SignatureHelpTriggerReason extends js.Object
+  sealed trait SignatureHelpTriggerKind extends js.Object
   
   trait SignatureInformation extends js.Object {
     /**
@@ -966,7 +1002,11 @@ object languagesNs extends js.Object {
   @js.native
   sealed trait SymbolKind extends js.Object
   
-  trait TextEdit extends js.Object
+  trait TextEdit extends js.Object {
+    var eol: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.editorNs.EndOfLineSequence] = js.undefined
+    var range: monacoDashEditorLib.monacoDashEditorMod.IRange
+    var text: java.lang.String
+  }
   
   trait TokensProvider extends js.Object {
     /**
@@ -987,11 +1027,11 @@ object languagesNs extends js.Object {
       model: monacoDashEditorLib.monacoDashEditorMod.editorNs.ITextModel,
       position: monacoDashEditorLib.monacoDashEditorMod.Position,
       token: monacoDashEditorLib.monacoDashEditorMod.CancellationToken
-    ): ProviderResult[Definition | js.Array[DefinitionLink]]
+    ): ProviderResult[Definition | js.Array[LocationLink]]
   }
   
   trait WorkspaceEdit extends js.Object {
-    var edits: js.UndefOr[js.Array[ResourceTextEdit | ResourceFileEdit]] = js.undefined
+    var edits: js.Array[ResourceTextEdit | ResourceFileEdit]
   }
   
   def getEncodedLanguageId(languageId: java.lang.String): scala.Double = js.native
@@ -1017,7 +1057,15 @@ object languagesNs extends js.Object {
   def registerSignatureHelpProvider(languageId: java.lang.String, provider: SignatureHelpProvider): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def registerTypeDefinitionProvider(languageId: java.lang.String, provider: TypeDefinitionProvider): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def setLanguageConfiguration(languageId: java.lang.String, configuration: LanguageConfiguration): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+  def setMonarchTokensProvider(
+    languageId: java.lang.String,
+    languageDef: monacoDashEditorLib.monacoDashEditorMod.Thenable[IMonarchLanguage]
+  ): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def setMonarchTokensProvider(languageId: java.lang.String, languageDef: IMonarchLanguage): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+  def setTokensProvider(
+    languageId: java.lang.String,
+    provider: monacoDashEditorLib.monacoDashEditorMod.Thenable[TokensProvider | EncodedTokensProvider]
+  ): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def setTokensProvider(languageId: java.lang.String, provider: EncodedTokensProvider): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def setTokensProvider(languageId: java.lang.String, provider: TokensProvider): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   @js.native
@@ -1299,25 +1347,25 @@ object languagesNs extends js.Object {
   }
   
   @js.native
-  object SignatureHelpTriggerReason extends js.Object {
+  object SignatureHelpTriggerKind extends js.Object {
     @js.native
     sealed trait ContentChange
-      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerReason
+      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerKind
     
     @js.native
     sealed trait Invoke
-      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerReason
+      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerKind
     
     @js.native
     sealed trait TriggerCharacter
-      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerReason
+      extends monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerKind
     
     /* 3 */ val ContentChange: ContentChange with scala.Double = js.native
     /* 1 */ val Invoke: Invoke with scala.Double = js.native
     /* 2 */ val TriggerCharacter: TriggerCharacter with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[
-        monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerReason with scala.Double
+        monacoDashEditorLib.monacoDashEditorMod.languagesNs.SignatureHelpTriggerKind with scala.Double
       ] = js.native
   }
   
@@ -1698,8 +1746,8 @@ object languagesNs extends js.Object {
     @js.native
     sealed trait ScriptTarget extends js.Object
     
-    var getJavaScriptWorker: js.Function0[monacoDashEditorLib.monacoDashEditorMod.Promise[js.Any]] = js.native
-    var getTypeScriptWorker: js.Function0[monacoDashEditorLib.monacoDashEditorMod.Promise[js.Any]] = js.native
+    var getJavaScriptWorker: js.Function0[js.Promise[js.Any]] = js.native
+    var getTypeScriptWorker: js.Function0[js.Promise[js.Any]] = js.native
     var javascriptDefaults: LanguageServiceDefaults = js.native
     var typescriptDefaults: LanguageServiceDefaults = js.native
     @js.native
@@ -1868,7 +1916,7 @@ object languagesNs extends js.Object {
   }
   
   type CharacterPair = js.Tuple2[java.lang.String, java.lang.String]
-  type Definition = Location | js.Array[Location]
+  type Definition = Location | js.Array[Location] | js.Array[LocationLink]
   type IMonarchLanguageAction = IShortMonarchLanguageAction | IExpandedMonarchLanguageAction | js.Array[IShortMonarchLanguageAction] | js.Array[IExpandedMonarchLanguageAction]
   type IMonarchLanguageRule = IShortMonarchLanguageRule1 | IShortMonarchLanguageRule2 | IExpandedMonarchLanguageRule
   type IShortMonarchLanguageAction = java.lang.String

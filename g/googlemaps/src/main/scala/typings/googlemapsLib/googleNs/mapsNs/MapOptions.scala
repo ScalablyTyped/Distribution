@@ -19,6 +19,14 @@ trait MapOptions extends js.Object {
     * interest, also known as a POI. By default map icons are clickable.
     */
   var clickableIcons: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Size in pixels of the controls appearing on the map. This value must be
+    * supplied directly when creating the Map, updating this value later may
+    * bring the controls into an undefined state. Only governs the controls
+    * made by the Maps API itself. Does not scale developer created custom
+    * controls.
+    */
+  var controlSize: js.UndefOr[scala.Double] = js.undefined
   /** Enables/disables all default UI. May be overridden individually. */
   var disableDefaultUI: js.UndefOr[scala.Boolean] = js.undefined
   /** Enables/disables zoom and center on double click. Enabled by default. */
@@ -184,6 +192,7 @@ object MapOptions {
     backgroundColor: java.lang.String = null,
     center: LatLng | LatLngLiteral = null,
     clickableIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    controlSize: scala.Int | scala.Double = null,
     disableDefaultUI: js.UndefOr[scala.Boolean] = js.undefined,
     disableDoubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -223,6 +232,7 @@ object MapOptions {
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (!js.isUndefined(clickableIcons)) __obj.updateDynamic("clickableIcons")(clickableIcons)
+    if (controlSize != null) __obj.updateDynamic("controlSize")(controlSize.asInstanceOf[js.Any])
     if (!js.isUndefined(disableDefaultUI)) __obj.updateDynamic("disableDefaultUI")(disableDefaultUI)
     if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

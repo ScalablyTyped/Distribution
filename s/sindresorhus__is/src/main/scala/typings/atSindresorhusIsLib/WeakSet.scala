@@ -13,3 +13,17 @@ trait WeakSet[T /* <: js.Object */] extends js.Object {
   def has(value: T): scala.Boolean
 }
 
+object WeakSet {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    add: js.Function1[T, WeakSet[T]],
+    delete: js.Function1[T, scala.Boolean],
+    has: js.Function1[T, scala.Boolean],
+    toStringTag: java.lang.String
+  ): WeakSet[T] = {
+    val __obj = js.Dynamic.literal(add = add, delete = delete, has = has, toStringTag = toStringTag)
+  
+    __obj.asInstanceOf[WeakSet[T]]
+  }
+}
+

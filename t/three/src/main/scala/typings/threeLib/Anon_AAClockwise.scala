@@ -750,7 +750,7 @@ trait Anon_AAClockwise extends js.Object {
   var Material: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Material] = js.native
   var MaterialCreator: org.scalablytyped.runtime.Instantiable2[
     /* baseUrl */ js.UndefOr[/* baseUrl */ java.lang.String], 
-    /* options */ js.UndefOr[/* options */ js.Any], 
+    /* options */ js.UndefOr[/* options */ threeLib.threeDashMtlloaderMod.MaterialCreatorOptions], 
     threeLib.threeMod.MaterialCreator
   ] = js.native
   var MaterialIdCount: scala.Double = js.native

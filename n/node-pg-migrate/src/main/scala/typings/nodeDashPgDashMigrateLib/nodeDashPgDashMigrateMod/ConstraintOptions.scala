@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConstraintOptions extends js.Object {
-  var check: js.UndefOr[java.lang.String] = js.undefined
+  var check: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var deferrable: js.UndefOr[scala.Boolean] = js.undefined
   var deferred: js.UndefOr[scala.Boolean] = js.undefined
   var exclude: js.UndefOr[java.lang.String] = js.undefined
@@ -18,7 +18,7 @@ trait ConstraintOptions extends js.Object {
 object ConstraintOptions {
   @scala.inline
   def apply(
-    check: java.lang.String = null,
+    check: java.lang.String | js.Array[java.lang.String] = null,
     deferrable: js.UndefOr[scala.Boolean] = js.undefined,
     deferred: js.UndefOr[scala.Boolean] = js.undefined,
     exclude: java.lang.String = null,
@@ -27,7 +27,7 @@ object ConstraintOptions {
     unique: js.Array[Name] | js.Array[js.Array[Name]] = null
   ): ConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    if (check != null) __obj.updateDynamic("check")(check)
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (!js.isUndefined(deferrable)) __obj.updateDynamic("deferrable")(deferrable)
     if (!js.isUndefined(deferred)) __obj.updateDynamic("deferred")(deferred)
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)

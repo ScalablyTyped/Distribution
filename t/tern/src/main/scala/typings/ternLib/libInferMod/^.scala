@@ -20,7 +20,7 @@ object ^ extends js.Object {
   def analyze(ast: estreeLib.estreeMod.Program, name: java.lang.String, scope: ternLib.libInferMod.Scope): scala.Unit = js.native
   def cx(): ternLib.libInferMod.Context = js.native
   def didGuess(): scala.Boolean = js.native
-  def expressionType(expr: ternLib.Anon_Node): ternLib.libInferMod.AVal | ternLib.libInferMod.Type = js.native
+  def expressionType(expr: ternLib.Anon_NodeState): ternLib.libInferMod.AVal | ternLib.libInferMod.Type = js.native
   def findClosestExpression(ast: estreeLib.estreeMod.Program, start: js.UndefOr[scala.Nothing], end: scala.Double): ternLib.Anon_Node | scala.Null = js.native
   def findClosestExpression(
     ast: estreeLib.estreeMod.Program,
@@ -99,6 +99,6 @@ object ^ extends js.Object {
   def resetGuessing(`val`: scala.Boolean): scala.Unit = js.native
   def scopeAt(ast: estreeLib.estreeMod.Program, pos: scala.Double): ternLib.libInferMod.Scope = js.native
   def scopeAt(ast: estreeLib.estreeMod.Program, pos: scala.Double, scope: ternLib.libInferMod.Scope): ternLib.libInferMod.Scope = js.native
-  def withContext(context: ternLib.libInferMod.Context, f: js.Function0[scala.Unit]): scala.Unit = js.native
+  def withContext[R](context: ternLib.libInferMod.Context, f: js.Function0[R]): R = js.native
 }
 

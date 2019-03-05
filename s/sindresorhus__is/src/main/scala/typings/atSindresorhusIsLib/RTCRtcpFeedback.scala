@@ -10,3 +10,13 @@ trait RTCRtcpFeedback extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RTCRtcpFeedback {
+  @scala.inline
+  def apply(parameter: java.lang.String = null, `type`: java.lang.String = null): RTCRtcpFeedback = {
+    val __obj = js.Dynamic.literal()
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RTCRtcpFeedback]
+  }
+}
+

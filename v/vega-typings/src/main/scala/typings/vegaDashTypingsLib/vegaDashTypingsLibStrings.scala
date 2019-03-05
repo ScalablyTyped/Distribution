@@ -516,7 +516,8 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait end
-    extends vegaDashTypingsLib.typesSpecTitleMod._TitleAnchor
+    extends vegaDashTypingsLib.typesSpecLayoutMod.LayoutTitleAnchor
+       with vegaDashTypingsLib.typesSpecTitleMod._TitleAnchor
   
   @js.native
   sealed trait enter
@@ -1667,7 +1668,8 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait start
-    extends vegaDashTypingsLib.typesSpecTitleMod._TitleAnchor
+    extends vegaDashTypingsLib.typesSpecLayoutMod.LayoutTitleAnchor
+       with vegaDashTypingsLib.typesSpecTitleMod._TitleAnchor
   
   @js.native
   sealed trait stderr

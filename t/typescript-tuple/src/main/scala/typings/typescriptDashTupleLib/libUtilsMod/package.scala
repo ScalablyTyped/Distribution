@@ -24,8 +24,10 @@ package object libUtilsMod {
   type Reverse[Tuple /* <: js.Array[_] */, Prefix /* <: js.Array[_] */] = Prefix
   type ShortestTuple[TupleSet /* <: js.Array[js.Array[_]] */, Shortest] = Shortest | (/* import warning: ImportType.apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Shortest, any, [Shortest, any]>[0] */ js.Any)
   type SingleTupleSet[Types /* <: js.Array[_] */, Holder /* <: js.Array[js.Array[_]] */] = Holder
+  type SliceStartQuantity[Tuple /* <: js.Array[_] */, Start /* <: scala.Double */, Quantity /* <: scala.Double */, Holder /* <: js.Array[_] */, Count /* <: js.Array[_] */] = Reverse[Holder, js.Array[js.Any]]
   type SortTwoTuple[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */, WhenEqual] = /* import warning: ImportType.apply Failed type conversion: typescript-tuple.Anon_Equal<WhenEqual, Left, Right>[typescript-tuple.typescript-tuple/lib/utils.CompareLength<Left, Right>] */ js.Any
   type SplitInfiniteTuple[Tuple /* <: js.Array[_] */] = js.Tuple2[Reverse[js.Any, js.Array[js.Any]], js.Any]
+  type Tail[Tuple /* <: js.Array[_] */] = js.Any
   type _AllIndexesEqual[Type, Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */, Count /* <: js.Array[_] */] = Holder
   type _AllIndexesSubset[Type, Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */, Count /* <: js.Array[_] */] = Holder
   type _AllIndexesSuperset[Type, Tuple /* <: js.Array[_] */, Holder /* <: js.Array[_] */, Count /* <: js.Array[_] */] = Holder

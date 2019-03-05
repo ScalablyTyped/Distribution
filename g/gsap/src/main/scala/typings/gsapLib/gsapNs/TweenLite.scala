@@ -29,12 +29,21 @@ object TweenLite extends js.Object {
     */
   var ticker: js.Any = js.native
   /** Provides a simple way to call a () => void after a set amount of time (or frames). */
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit]): gsapLib.gsapNs.TweenLite = js.native
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit], params: js.Array[_]): gsapLib.gsapNs.TweenLite = js.native
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Any): gsapLib.gsapNs.TweenLite = js.native
+  def delayedCall(delay: scala.Double, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): gsapLib.gsapNs.TweenLite = js.native
   def delayedCall(
     delay: scala.Double,
-    callback: js.Function0[scala.Unit],
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_]
+  ): gsapLib.gsapNs.TweenLite = js.native
+  def delayedCall(
+    delay: scala.Double,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_],
+    scope: js.Any
+  ): gsapLib.gsapNs.TweenLite = js.native
+  def delayedCall(
+    delay: scala.Double,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
     params: js.Array[_],
     scope: js.Any,
     useFrames: scala.Boolean
@@ -56,7 +65,7 @@ object TweenLite extends js.Object {
   def getTweensOf(target: js.Any): js.Array[gsapLib.gsapNs.TweenLite] = js.native
   def getTweensOf(target: js.Any, onlyActive: scala.Boolean): js.Array[gsapLib.gsapNs.TweenLite] = js.native
   /** Immediately kills all of the delayedCalls to a particular () => void. */
-  def killDelayedCallsTo(func: js.Function0[scala.Unit]): scala.Unit = js.native
+  def killDelayedCallsTo(func: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   /** Kills all the tweens (or specific tweening properties) of a particular object or delayedCalls to a particular () => void. */
   def killTweensOf(target: js.Any): scala.Unit = js.native
   def killTweensOf(target: js.Any, onlyActive: scala.Boolean): scala.Unit = js.native

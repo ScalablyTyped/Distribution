@@ -18,7 +18,7 @@ object defaultNs extends js.Object {
   def boolean(value: js.Any): /* is boolean */ scala.Boolean = js.native
   def boundFunction(value: js.Any): /* is @sindresorhus/is.Function */ scala.Boolean = js.native
   def buffer(input: js.Any): /* is node.Buffer */ scala.Boolean = js.native
-  def `class_`(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Class<unknown> */ scala.Boolean = js.native
+  def class_(value: js.Any): /* is @sindresorhus/is.@sindresorhus/is.Class<unknown> */ scala.Boolean = js.native
   def dataView(value: js.Any): /* is @sindresorhus/is.DataView */ scala.Boolean = js.native
   def date(value: js.Any): /* is @sindresorhus/is.Date */ scala.Boolean = js.native
   def directInstanceOf[T](instance: js.Any, klass: atSindresorhusIsLib.atSindresorhusIsMod.Class[T]): /* is T */ scala.Boolean = js.native
@@ -34,7 +34,7 @@ object defaultNs extends js.Object {
   def falsy(value: js.Any): scala.Boolean = js.native
   def float32Array(value: js.Any): /* is @sindresorhus/is.Float32Array */ scala.Boolean = js.native
   def float64Array(value: js.Any): /* is @sindresorhus/is.Float64Array */ scala.Boolean = js.native
-  def `function_`(value: js.Any): /* is @sindresorhus/is.Function */ scala.Boolean = js.native
+  def function_(value: js.Any): /* is @sindresorhus/is.Function */ scala.Boolean = js.native
   def generator(value: js.Any): /* is @sindresorhus/is.Generator */ scala.Boolean = js.native
   def generatorFunction(value: js.Any): /* is @sindresorhus/is.GeneratorFunction */ scala.Boolean = js.native
   def inRange(value: scala.Double, range: atSindresorhusIsLib.Array[scala.Double]): scala.Boolean = js.native
@@ -55,7 +55,7 @@ object defaultNs extends js.Object {
   def nonEmptySet(value: js.Any): scala.Boolean = js.native
   def nonEmptyString(value: js.Any): scala.Boolean = js.native
   def nullOrUndefined(value: js.Any): scala.Boolean = js.native
-  def `null_`(value: js.Any): /* is null */ scala.Boolean = js.native
+  def null_(value: js.Any): /* is null */ scala.Boolean = js.native
   def number(value: js.Any): /* is number */ scala.Boolean = js.native
   def numericString(value: js.Any): scala.Boolean = js.native
   def `object`(value: js.Any): /* is object */ scala.Boolean = js.native

@@ -10,3 +10,12 @@ trait RsaKeyAlgorithm extends KeyAlgorithm {
   var publicExponent: BigInteger
 }
 
+object RsaKeyAlgorithm {
+  @scala.inline
+  def apply(modulusLength: scala.Double, name: java.lang.String, publicExponent: BigInteger): RsaKeyAlgorithm = {
+    val __obj = js.Dynamic.literal(modulusLength = modulusLength, name = name, publicExponent = publicExponent)
+  
+    __obj.asInstanceOf[RsaKeyAlgorithm]
+  }
+}
+

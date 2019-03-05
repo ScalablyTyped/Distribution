@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScopeConstructor
   extends org.scalablytyped.runtime.Instantiable0[Scope]
-     with org.scalablytyped.runtime.Instantiable1[/* parent */ Scope, Scope]
+     with org.scalablytyped.runtime.Instantiable2[/* parent */ Scope, /* originNode */ estreeLib.estreeMod.Node, Scope]
 

@@ -104,3 +104,36 @@ trait RegExp extends js.Object {
   def test(string: java.lang.String): scala.Boolean
 }
 
+object RegExp {
+  @scala.inline
+  def apply(
+    compile: js.Function0[RegExp],
+    exec: js.Function1[java.lang.String, RegExpExecArray | scala.Null],
+    flags: java.lang.String,
+    global: scala.Boolean,
+    ignoreCase: scala.Boolean,
+    lastIndex: scala.Double,
+    `match`: js.Function1[/* string */ java.lang.String, RegExpMatchArray | scala.Null],
+    multiline: scala.Boolean,
+    replace: (js.Function2[/* string */ java.lang.String, /* replaceValue */ java.lang.String, java.lang.String]) with (js.Function2[
+      /* string */ java.lang.String, 
+      /* replacer */ js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String], 
+      java.lang.String
+    ]),
+    search: js.Function1[/* string */ java.lang.String, scala.Double],
+    source: java.lang.String,
+    split: js.Function2[
+      /* string */ java.lang.String, 
+      /* limit */ js.UndefOr[scala.Double], 
+      Array[java.lang.String]
+    ],
+    sticky: scala.Boolean,
+    test: js.Function1[java.lang.String, scala.Boolean],
+    unicode: scala.Boolean
+  ): RegExp = {
+    val __obj = js.Dynamic.literal(compile = compile, exec = exec, flags = flags, global = global, ignoreCase = ignoreCase, lastIndex = lastIndex, multiline = multiline, replace = replace, search = search, source = source, split = split, sticky = sticky, test = test, unicode = unicode)
+    __obj.updateDynamic("match")(`match`)
+    __obj.asInstanceOf[RegExp]
+  }
+}
+

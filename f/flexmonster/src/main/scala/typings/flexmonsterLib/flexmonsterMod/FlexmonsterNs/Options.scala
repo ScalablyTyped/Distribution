@@ -22,6 +22,7 @@ trait Options extends js.Object {
   var selectEmptyCells: js.UndefOr[scala.Boolean] = js.undefined
   var showAggregationLabels: js.UndefOr[scala.Boolean] = js.undefined
   var showAggregations: js.UndefOr[scala.Boolean] = js.undefined
+  var showAllFieldsDrillThrough: js.UndefOr[scala.Boolean] = js.undefined
   var showCalculatedValuesButton: js.UndefOr[scala.Boolean] = js.undefined
   var showDefaultSlice: js.UndefOr[scala.Boolean] = js.undefined
   var showDrillThroughConfigurator: js.UndefOr[scala.Boolean] = js.undefined
@@ -53,6 +54,7 @@ object Options {
     selectEmptyCells: js.UndefOr[scala.Boolean] = js.undefined,
     showAggregationLabels: js.UndefOr[scala.Boolean] = js.undefined,
     showAggregations: js.UndefOr[scala.Boolean] = js.undefined,
+    showAllFieldsDrillThrough: js.UndefOr[scala.Boolean] = js.undefined,
     showCalculatedValuesButton: js.UndefOr[scala.Boolean] = js.undefined,
     showDefaultSlice: js.UndefOr[scala.Boolean] = js.undefined,
     showDrillThroughConfigurator: js.UndefOr[scala.Boolean] = js.undefined,
@@ -81,6 +83,7 @@ object Options {
     if (!js.isUndefined(selectEmptyCells)) __obj.updateDynamic("selectEmptyCells")(selectEmptyCells)
     if (!js.isUndefined(showAggregationLabels)) __obj.updateDynamic("showAggregationLabels")(showAggregationLabels)
     if (!js.isUndefined(showAggregations)) __obj.updateDynamic("showAggregations")(showAggregations)
+    if (!js.isUndefined(showAllFieldsDrillThrough)) __obj.updateDynamic("showAllFieldsDrillThrough")(showAllFieldsDrillThrough)
     if (!js.isUndefined(showCalculatedValuesButton)) __obj.updateDynamic("showCalculatedValuesButton")(showCalculatedValuesButton)
     if (!js.isUndefined(showDefaultSlice)) __obj.updateDynamic("showDefaultSlice")(showDefaultSlice)
     if (!js.isUndefined(showDrillThroughConfigurator)) __obj.updateDynamic("showDrillThroughConfigurator")(showDrillThroughConfigurator)

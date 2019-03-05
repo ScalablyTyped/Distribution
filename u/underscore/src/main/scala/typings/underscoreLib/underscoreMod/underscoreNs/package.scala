@@ -18,4 +18,5 @@ package object underscoreNs {
     TResult
   ]
   type ObjectIterator[T, TResult] = js.Function3[/* element */ T, /* key */ java.lang.String, /* list */ Dictionary[T], TResult]
+  type Predicate[T] = js.Function1[/* value */ T, scala.Boolean]
 }

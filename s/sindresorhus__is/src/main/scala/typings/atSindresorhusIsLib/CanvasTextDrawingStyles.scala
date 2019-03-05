@@ -12,3 +12,17 @@ trait CanvasTextDrawingStyles extends js.Object {
   var textBaseline: CanvasTextBaseline
 }
 
+object CanvasTextDrawingStyles {
+  @scala.inline
+  def apply(
+    direction: CanvasDirection,
+    font: java.lang.String,
+    textAlign: CanvasTextAlign,
+    textBaseline: CanvasTextBaseline
+  ): CanvasTextDrawingStyles = {
+    val __obj = js.Dynamic.literal(direction = direction, font = font, textAlign = textAlign, textBaseline = textBaseline)
+  
+    __obj.asInstanceOf[CanvasTextDrawingStyles]
+  }
+}
+

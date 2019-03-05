@@ -204,6 +204,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.PositionProperty
   
   @js.native
+  sealed trait `:-moz-any()`
+    extends csstypeLib.csstypeMod.AdvancedPseudos
+  
+  @js.native
   sealed trait `:-moz-any-link`
     extends csstypeLib.csstypeMod.SimplePseudos
   
@@ -234,6 +238,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `:-ms-input-placeholder`
     extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
+  sealed trait `:-webkit-any()`
+    extends csstypeLib.csstypeMod.AdvancedPseudos
   
   @js.native
   sealed trait `:-webkit-any-link`
@@ -469,6 +477,10 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.SimplePseudos
   
   @js.native
+  sealed trait `:focus-visible`
+    extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
   sealed trait `:focus-within`
     extends csstypeLib.csstypeMod.SimplePseudos
   
@@ -527,6 +539,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `:link`
     extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
+  sealed trait `:matches()`
+    extends csstypeLib.csstypeMod.AdvancedPseudos
   
   @js.native
   sealed trait `:not`
@@ -2706,9 +2722,11 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._JustifySelfProperty
        with csstypeLib.csstypeMod._LeftProperty[js.Any]
        with csstypeLib.csstypeMod._MarginBlockEndProperty[js.Any]
+       with csstypeLib.csstypeMod._MarginBlockProperty[js.Any]
        with csstypeLib.csstypeMod._MarginBlockStartProperty[js.Any]
        with csstypeLib.csstypeMod._MarginBottomProperty[js.Any]
        with csstypeLib.csstypeMod._MarginInlineEndProperty[js.Any]
+       with csstypeLib.csstypeMod._MarginInlineProperty[js.Any]
        with csstypeLib.csstypeMod._MarginInlineStartProperty[js.Any]
        with csstypeLib.csstypeMod._MarginLeftProperty[js.Any]
        with csstypeLib.csstypeMod._MarginProperty[js.Any]
@@ -6126,6 +6144,8 @@ object csstypeLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
+  def `:-moz-any()`: `:-moz-any()` = ":-moz-any()".asInstanceOf[`:-moz-any()`]
+  @scala.inline
   def `:-moz-any-link`: `:-moz-any-link` = ":-moz-any-link".asInstanceOf[`:-moz-any-link`]
   @scala.inline
   def `:-moz-dir`: `:-moz-dir` = ":-moz-dir".asInstanceOf[`:-moz-dir`]
@@ -6141,6 +6161,8 @@ object csstypeLibStrings {
   def `:-ms-fullscreen`: `:-ms-fullscreen` = ":-ms-fullscreen".asInstanceOf[`:-ms-fullscreen`]
   @scala.inline
   def `:-ms-input-placeholder`: `:-ms-input-placeholder` = ":-ms-input-placeholder".asInstanceOf[`:-ms-input-placeholder`]
+  @scala.inline
+  def `:-webkit-any()`: `:-webkit-any()` = ":-webkit-any()".asInstanceOf[`:-webkit-any()`]
   @scala.inline
   def `:-webkit-any-link`: `:-webkit-any-link` = ":-webkit-any-link".asInstanceOf[`:-webkit-any-link`]
   @scala.inline
@@ -6258,6 +6280,8 @@ object csstypeLibStrings {
   @scala.inline
   def `:focus`: `:focus` = ":focus".asInstanceOf[`:focus`]
   @scala.inline
+  def `:focus-visible`: `:focus-visible` = ":focus-visible".asInstanceOf[`:focus-visible`]
+  @scala.inline
   def `:focus-within`: `:focus-within` = ":focus-within".asInstanceOf[`:focus-within`]
   @scala.inline
   def `:fullscreen`: `:fullscreen` = ":fullscreen".asInstanceOf[`:fullscreen`]
@@ -6287,6 +6311,8 @@ object csstypeLibStrings {
   def `:left`: `:left` = ":left".asInstanceOf[`:left`]
   @scala.inline
   def `:link`: `:link` = ":link".asInstanceOf[`:link`]
+  @scala.inline
+  def `:matches()`: `:matches()` = ":matches()".asInstanceOf[`:matches()`]
   @scala.inline
   def `:not`: `:not` = ":not".asInstanceOf[`:not`]
   @scala.inline

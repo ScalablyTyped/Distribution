@@ -43,5 +43,6 @@ object libDomMod extends js.Object {
   def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
   def setPortalAttribute(element: reactLib.HTMLElement): scala.Unit = js.native
+  def setVirtualParent(child: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Unit = js.native
 }
 

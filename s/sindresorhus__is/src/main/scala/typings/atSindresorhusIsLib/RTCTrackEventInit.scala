@@ -12,3 +12,23 @@ trait RTCTrackEventInit extends EventInit {
   var transceiver: RTCRtpTransceiver
 }
 
+object RTCTrackEventInit {
+  @scala.inline
+  def apply(
+    receiver: RTCRtpReceiver,
+    track: MediaStreamTrack,
+    transceiver: RTCRtpTransceiver,
+    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
+    composed: js.UndefOr[scala.Boolean] = js.undefined,
+    streams: Array[MediaStream] = null
+  ): RTCTrackEventInit = {
+    val __obj = js.Dynamic.literal(receiver = receiver, track = track, transceiver = transceiver)
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
+    if (streams != null) __obj.updateDynamic("streams")(streams)
+    __obj.asInstanceOf[RTCTrackEventInit]
+  }
+}
+

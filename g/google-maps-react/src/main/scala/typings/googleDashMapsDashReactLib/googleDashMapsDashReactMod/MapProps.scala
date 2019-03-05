@@ -46,6 +46,7 @@ object MapProps {
     center: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
     centerAroundCurrentLocation: js.UndefOr[scala.Boolean] = js.undefined,
     clickableIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    controlSize: scala.Int | scala.Double = null,
     disableDefaultUI: js.UndefOr[scala.Boolean] = js.undefined,
     disableDoubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -110,6 +111,7 @@ object MapProps {
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (!js.isUndefined(centerAroundCurrentLocation)) __obj.updateDynamic("centerAroundCurrentLocation")(centerAroundCurrentLocation)
     if (!js.isUndefined(clickableIcons)) __obj.updateDynamic("clickableIcons")(clickableIcons)
+    if (controlSize != null) __obj.updateDynamic("controlSize")(controlSize.asInstanceOf[js.Any])
     if (!js.isUndefined(disableDefaultUI)) __obj.updateDynamic("disableDefaultUI")(disableDefaultUI)
     if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

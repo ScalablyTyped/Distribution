@@ -19,3 +19,24 @@ trait HTMLHyperlinkElementUtils extends js.Object {
   var username: java.lang.String
 }
 
+object HTMLHyperlinkElementUtils {
+  @scala.inline
+  def apply(
+    hash: java.lang.String,
+    host: java.lang.String,
+    hostname: java.lang.String,
+    href: java.lang.String,
+    origin: java.lang.String,
+    password: java.lang.String,
+    pathname: java.lang.String,
+    port: java.lang.String,
+    protocol: java.lang.String,
+    search: java.lang.String,
+    username: java.lang.String
+  ): HTMLHyperlinkElementUtils = {
+    val __obj = js.Dynamic.literal(hash = hash, host = host, hostname = hostname, href = href, origin = origin, password = password, pathname = pathname, port = port, protocol = protocol, search = search, username = username)
+  
+    __obj.asInstanceOf[HTMLHyperlinkElementUtils]
+  }
+}
+

@@ -21,6 +21,9 @@ trait LayoutParams extends Layout {
   var padding: js.UndefOr[
     scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[scala.Double]
   ] = js.undefined
+  var titleAnchor: js.UndefOr[
+    LayoutTitleAnchor | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[LayoutTitleAnchor]
+  ] = js.undefined
   var titleBand: js.UndefOr[
     scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[scala.Double]
   ] = js.undefined
@@ -36,6 +39,7 @@ object LayoutParams {
     headerBand: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[scala.Double] = null,
     offset: LayoutOffset = null,
     padding: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[scala.Double] = null,
+    titleAnchor: LayoutTitleAnchor | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[LayoutTitleAnchor] = null,
     titleBand: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | RowColumn[scala.Double] = null
   ): LayoutParams = {
     val __obj = js.Dynamic.literal()
@@ -46,6 +50,7 @@ object LayoutParams {
     if (headerBand != null) __obj.updateDynamic("headerBand")(headerBand.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (titleAnchor != null) __obj.updateDynamic("titleAnchor")(titleAnchor.asInstanceOf[js.Any])
     if (titleBand != null) __obj.updateDynamic("titleBand")(titleBand.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutParams]
   }

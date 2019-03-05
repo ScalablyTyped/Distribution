@@ -1,5 +1,5 @@
 ```
-// Type definitions for tern 0.22
+// Type definitions for tern 0.23
 // Project: https://github.com/ternjs/tern
 // Definitions by: Nikolaj Kappler <https://github.com/nkappler>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

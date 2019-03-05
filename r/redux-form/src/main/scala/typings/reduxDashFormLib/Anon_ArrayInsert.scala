@@ -159,13 +159,13 @@ trait Anon_ArrayInsert extends js.Object {
   @JSName("stopAsyncValidation")
   var stopAsyncValidation_Original: js.Function2[
     /* form */ java.lang.String, 
-    /* errors */ js.UndefOr[reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]], 
+    /* errors */ js.UndefOr[reduxDashFormLib.reduxDashFormMod.FormErrors[_, _]], 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
   @JSName("stopSubmit")
   var stopSubmit_Original: js.Function2[
     /* form */ java.lang.String, 
-    /* errors */ js.UndefOr[reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]], 
+    /* errors */ js.UndefOr[reduxDashFormLib.reduxDashFormMod.FormErrors[_, _]], 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
   @JSName("submit")
@@ -255,21 +255,17 @@ trait Anon_ArrayInsert extends js.Object {
   def startAsyncValidation(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def startSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def stopAsyncValidation(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
-  def stopAsyncValidation(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def stopAsyncValidation(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[_, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
   def stopSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
-  def stopSubmit(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def stopSubmit(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[_, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
   def submit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def touch(form: java.lang.String, fields: java.lang.String*): reduxDashFormLib.libActionsMod.FormAction = js.native
   def unregisterField(form: java.lang.String, name: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def untouch(form: java.lang.String, fields: java.lang.String*): reduxDashFormLib.libActionsMod.FormAction = js.native
-  def updateSyncErrors[T](
-    from: java.lang.String,
-    syncErrors: reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, T],
-    error: T
-  ): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def updateSyncErrors[T](from: java.lang.String, syncErrors: reduxDashFormLib.reduxDashFormMod.FormErrors[_, T], error: T): reduxDashFormLib.libActionsMod.FormAction = js.native
   def updateSyncWarnings[T](
     form: java.lang.String,
-    syncWarnings: reduxDashFormLib.reduxDashFormMod.FormWarnings[stdLib.FormData, T],
+    syncWarnings: reduxDashFormLib.reduxDashFormMod.FormWarnings[_, T],
     warning: T
   ): reduxDashFormLib.libActionsMod.FormAction = js.native
 }

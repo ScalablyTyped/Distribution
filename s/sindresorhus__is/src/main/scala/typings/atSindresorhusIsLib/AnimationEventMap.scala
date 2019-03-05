@@ -10,3 +10,12 @@ trait AnimationEventMap extends js.Object {
   var finish: AnimationPlaybackEvent
 }
 
+object AnimationEventMap {
+  @scala.inline
+  def apply(cancel: AnimationPlaybackEvent, finish: AnimationPlaybackEvent): AnimationEventMap = {
+    val __obj = js.Dynamic.literal(cancel = cancel, finish = finish)
+  
+    __obj.asInstanceOf[AnimationEventMap]
+  }
+}
+

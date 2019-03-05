@@ -15,5 +15,6 @@ class ProcessValue () extends js.Object {
   def getValue(text: java.lang.String, values: HashTable[_]): js.Any = js.native
   def hasValue(text: java.lang.String): scala.Boolean = js.native
   def hasValue(text: java.lang.String, values: HashTable[_]): scala.Boolean = js.native
+  def setValue(obj: js.Any, text: java.lang.String, value: js.Any): scala.Unit = js.native
 }
 

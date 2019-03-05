@@ -255,6 +255,16 @@ trait QueryParameters extends js.Object {
     */
   var query: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Sets the languages to be used by language-specific settings and functionalities
+    * such as ignorePlurals, removeStopWords, and CJK word-detection.
+    * https://www.algolia.com/doc/api-reference/api-parameters/queryLanguages/
+    */
+  var queryLanguages: js.UndefOr[
+    js.Array[
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+    ]
+  ] = js.undefined
+  /**
     * Selects how the query words are interpreted
     * default: 'prefixLast'
     * 'prefixAll' All query words are interpreted as prefixes. This option is not recommended.
@@ -310,6 +320,7 @@ trait QueryParameters extends js.Object {
     */
   var snippetEllipsisText: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Controls how facet values are sorted.
     * https://www.algolia.com/doc/api-reference/api-parameters/sortFacetValuesBy/
     */
   var sortFacetValuesBy: js.UndefOr[
@@ -387,6 +398,9 @@ object QueryParameters {
     optionalWords: js.Array[java.lang.String] = null,
     page: scala.Int | scala.Double = null,
     query: java.lang.String = null,
+    queryLanguages: js.Array[
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+    ] = null,
     queryType: algoliasearchLib.algoliasearchLibStrings.prefixAll | algoliasearchLib.algoliasearchLibStrings.prefixLast | algoliasearchLib.algoliasearchLibStrings.prefixNone = null,
     removeStopWords: scala.Boolean | js.Array[java.lang.String] = null,
     removeWordsIfNoResults: algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.lastWords | algoliasearchLib.algoliasearchLibStrings.firstWords | algoliasearchLib.algoliasearchLibStrings.allOptional = null,
@@ -441,6 +455,7 @@ object QueryParameters {
     if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
+    if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages)
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
     if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
     if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults.asInstanceOf[js.Any])

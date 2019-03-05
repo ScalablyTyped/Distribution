@@ -13,3 +13,22 @@ trait UnderlyingByteSource extends js.Object {
   var `type`: atSindresorhusIsLib.atSindresorhusIsLibStrings.bytes
 }
 
+object UnderlyingByteSource {
+  @scala.inline
+  def apply(
+    `type`: atSindresorhusIsLib.atSindresorhusIsLibStrings.bytes,
+    autoAllocateChunkSize: scala.Int | scala.Double = null,
+    cancel: ReadableStreamErrorCallback = null,
+    pull: ReadableByteStreamControllerCallback = null,
+    start: ReadableByteStreamControllerCallback = null
+  ): UnderlyingByteSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    if (autoAllocateChunkSize != null) __obj.updateDynamic("autoAllocateChunkSize")(autoAllocateChunkSize.asInstanceOf[js.Any])
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (pull != null) __obj.updateDynamic("pull")(pull)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[UnderlyingByteSource]
+  }
+}
+

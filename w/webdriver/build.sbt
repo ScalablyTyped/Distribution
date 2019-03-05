@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriver"
-version := "5.6.4-2e3eb2"
+version := "5.7.0-c72a8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-197130",
   "org.scalablytyped" %%% "deepmerge" % "3.2.0-065978",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-ffa40c",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
-  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190212Z-64012f",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
+  "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190214Z-7f7267",
   "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-e9e8b4",
   "org.scalablytyped" %%% "std" % "3.3-05be79",

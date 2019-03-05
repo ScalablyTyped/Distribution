@@ -13,6 +13,7 @@ trait ExportOptions extends js.Object {
   var footer: js.UndefOr[java.lang.String] = js.undefined
   var header: js.UndefOr[java.lang.String] = js.undefined
   var pageOrientation: js.UndefOr[java.lang.String] = js.undefined
+  var requestHeader: js.UndefOr[js.Object] = js.undefined
   var showFilters: js.UndefOr[scala.Boolean] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
   var useCustomizeCellForData: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,6 +30,7 @@ object ExportOptions {
     footer: java.lang.String = null,
     header: java.lang.String = null,
     pageOrientation: java.lang.String = null,
+    requestHeader: js.Object = null,
     showFilters: js.UndefOr[scala.Boolean] = js.undefined,
     url: java.lang.String = null,
     useCustomizeCellForData: js.UndefOr[scala.Boolean] = js.undefined,
@@ -42,6 +44,7 @@ object ExportOptions {
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (header != null) __obj.updateDynamic("header")(header)
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
+    if (requestHeader != null) __obj.updateDynamic("requestHeader")(requestHeader)
     if (!js.isUndefined(showFilters)) __obj.updateDynamic("showFilters")(showFilters)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(useCustomizeCellForData)) __obj.updateDynamic("useCustomizeCellForData")(useCustomizeCellForData)

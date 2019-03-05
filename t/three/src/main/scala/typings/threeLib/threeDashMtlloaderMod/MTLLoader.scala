@@ -12,7 +12,7 @@ class MTLLoader ()
   def this(manager: threeLib.threeDashCoreMod.LoadingManager) = this()
   var crossOrigin: scala.Boolean = js.native
   var manager: threeLib.threeDashCoreMod.LoadingManager = js.native
-  var materials: js.Array[threeLib.threeDashCoreMod.Material] = js.native
+  var materialOptions: MaterialCreatorOptions = js.native
   var path: java.lang.String = js.native
   var texturePath: java.lang.String = js.native
   def load(url: java.lang.String, onLoad: js.Function1[/* materialCreator */ MaterialCreator, scala.Unit]): scala.Unit = js.native
@@ -30,7 +30,7 @@ class MTLLoader ()
   def parse(text: java.lang.String): MaterialCreator = js.native
   def setBaseUrl(path: java.lang.String): scala.Unit = js.native
   def setCrossOrigin(value: scala.Boolean): scala.Unit = js.native
-  def setMaterialOptions(value: js.Any): scala.Unit = js.native
+  def setMaterialOptions(value: MaterialCreatorOptions): scala.Unit = js.native
   def setPath(path: java.lang.String): scala.Unit = js.native
   def setTexturePath(path: java.lang.String): scala.Unit = js.native
 }

@@ -10,3 +10,12 @@ trait Anon_Proxy[T /* <: js.Object */] extends js.Object {
   def revoke(): scala.Unit
 }
 
+object Anon_Proxy {
+  @scala.inline
+  def apply[T /* <: js.Object */](proxy: T, revoke: js.Function0[scala.Unit]): Anon_Proxy[T] = {
+    val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any], revoke = revoke)
+  
+    __obj.asInstanceOf[Anon_Proxy[T]]
+  }
+}
+

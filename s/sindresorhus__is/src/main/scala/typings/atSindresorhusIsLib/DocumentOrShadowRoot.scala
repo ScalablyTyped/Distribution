@@ -19,3 +19,20 @@ trait DocumentOrShadowRoot extends js.Object {
   def getSelection(): Selection | scala.Null
 }
 
+object DocumentOrShadowRoot {
+  @scala.inline
+  def apply(
+    caretPositionFromPoint: js.Function2[scala.Double, scala.Double, CaretPosition | scala.Null],
+    caretRangeFromPoint: js.Function2[scala.Double, scala.Double, Range],
+    elementFromPoint: js.Function2[scala.Double, scala.Double, Element | scala.Null],
+    elementsFromPoint: js.Function2[scala.Double, scala.Double, Array[Element]],
+    getSelection: js.Function0[Selection | scala.Null],
+    styleSheets: StyleSheetList,
+    activeElement: Element = null
+  ): DocumentOrShadowRoot = {
+    val __obj = js.Dynamic.literal(caretPositionFromPoint = caretPositionFromPoint, caretRangeFromPoint = caretRangeFromPoint, elementFromPoint = elementFromPoint, elementsFromPoint = elementsFromPoint, getSelection = getSelection, styleSheets = styleSheets)
+    if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement)
+    __obj.asInstanceOf[DocumentOrShadowRoot]
+  }
+}
+

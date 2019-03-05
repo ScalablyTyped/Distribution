@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ArrayBufferView extends js.Object {
+trait ArrayBufferView extends BufferSource {
   /**
     * The ArrayBuffer instance referenced by the array.
     */
@@ -18,5 +18,14 @@ trait ArrayBufferView extends js.Object {
     * The offset in bytes of the array.
     */
   var byteOffset: scala.Double
+}
+
+object ArrayBufferView {
+  @scala.inline
+  def apply(buffer: ArrayBufferLike, byteLength: scala.Double, byteOffset: scala.Double): ArrayBufferView = {
+    val __obj = js.Dynamic.literal(buffer = buffer, byteLength = byteLength, byteOffset = byteOffset)
+  
+    __obj.asInstanceOf[ArrayBufferView]
+  }
 }
 

@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ImageBitmap extends js.Object {
+trait ImageBitmap
+  extends CanvasImageSource
+     with TexImageSource
+     with Transferable {
   /**
     * Returns the intrinsic height of the image, in CSS
     * pixels.

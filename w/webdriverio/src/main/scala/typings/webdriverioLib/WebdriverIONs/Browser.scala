@@ -41,6 +41,7 @@ trait Browser extends js.Object {
   def newWindow(url: java.lang.String, windowName: java.lang.String, windowFeatures: java.lang.String): java.lang.String = js.native
   def pause(milliseconds: scala.Double): scala.Unit = js.native
   def reloadSession(): scala.Unit = js.native
+  def saveRecordingScreen(filepath: java.lang.String): nodeLib.Buffer = js.native
   def saveScreenshot(filepath: java.lang.String): nodeLib.Buffer = js.native
   def setCookies(cookie: Cookie): scala.Unit = js.native
   def setTimeout(timeouts: Timeouts): scala.Unit = js.native

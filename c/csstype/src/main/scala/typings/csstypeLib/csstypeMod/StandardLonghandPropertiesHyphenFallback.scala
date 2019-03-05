@@ -382,6 +382,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `block-size`: js.UndefOr[BlockSizeProperty[TLength] | js.Array[BlockSizeProperty[TLength]]] = js.undefined
   /**
+    * The **`border-block-color`** CSS property defines the color of the logical block borders of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color` and `border-bottom-color`, or `border-right-color` and `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `currentcolor`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-color
+    */
+  var `border-block-color`: js.UndefOr[BorderBlockColorProperty | js.Array[BorderBlockColorProperty]] = js.undefined
+  /**
     * The **`border-block-end-color`** CSS property defines the color of the logical block-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
@@ -457,6 +469,30 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
   var `border-block-start-width`: js.UndefOr[
     BorderBlockStartWidthProperty[TLength] | js.Array[BorderBlockStartWidthProperty[TLength]]
   ] = js.undefined
+  /**
+    * The **`border-block-style`** CSS property defines the style of the logical block borders of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style` and `border-bottom-style`, or `border-left-style` and `border-right-style` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-style
+    */
+  var `border-block-style`: js.UndefOr[BorderBlockStyleProperty | js.Array[BorderBlockStyleProperty]] = js.undefined
+  /**
+    * The **`border-block-width`** CSS property defines the width of the logical block borders of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width` and `border-bottom-width`, or `border-left-width`, and `border-right-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `medium`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-width
+    */
+  var `border-block-width`: js.UndefOr[BorderBlockWidthProperty[TLength] | js.Array[BorderBlockWidthProperty[TLength]]] = js.undefined
   /**
     * The **`border-bottom-color`** CSS property sets the color of an element's bottom border. It can also be set with the shorthand CSS properties `border-color` or `border-bottom`.
     *
@@ -538,6 +574,34 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `border-collapse`: js.UndefOr[BorderCollapseProperty | js.Array[BorderCollapseProperty]] = js.undefined
   /**
+    * The **`border-end-end-radius`** CSS property defines a logical border radius on an element, which maps to a physical border radius that depends on on the element's `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-end-end-radius
+    */
+  var `border-end-end-radius`: js.UndefOr[
+    BorderEndEndRadiusProperty[TLength] | js.Array[BorderEndEndRadiusProperty[TLength]]
+  ] = js.undefined
+  /**
+    * The **`border-end-start-radius`** CSS property defines a logical border radius on an element, which maps to a physical border radius depending on the element's `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-end-start-radius
+    */
+  var `border-end-start-radius`: js.UndefOr[
+    BorderEndStartRadiusProperty[TLength] | js.Array[BorderEndStartRadiusProperty[TLength]]
+  ] = js.undefined
+  /**
     * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
     *
     * **Initial value**: `0`
@@ -599,6 +663,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/border-image-width
     */
   var `border-image-width`: js.UndefOr[BorderImageWidthProperty[TLength] | js.Array[BorderImageWidthProperty[TLength]]] = js.undefined
+  /**
+    * The **`border-inline-color`** CSS property defines the color of the logical inline borders of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color` and `border-bottom-color`, or `border-right-color` and `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `currentcolor`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-color
+    */
+  var `border-inline-color`: js.UndefOr[BorderInlineColorProperty | js.Array[BorderInlineColorProperty]] = js.undefined
   /**
     * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -676,6 +752,32 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `border-inline-start-width`: js.UndefOr[
     BorderInlineStartWidthProperty[TLength] | js.Array[BorderInlineStartWidthProperty[TLength]]
+  ] = js.undefined
+  /**
+    * The **`border-inline-style`** CSS property defines the style of the logical inline borders of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style` and `border-bottom-style`, or `border-left-style` and `border-right-style` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-style
+    */
+  var `border-inline-style`: js.UndefOr[BorderInlineStyleProperty | js.Array[BorderInlineStyleProperty]] = js.undefined
+  /**
+    * The **`border-inline-width`** CSS property defines the width of the logical inline borders of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width` and `border-bottom-width`, or `border-left-width`, and `border-right-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `medium`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-width
+    */
+  var `border-inline-width`: js.UndefOr[
+    BorderInlineWidthProperty[TLength] | js.Array[BorderInlineWidthProperty[TLength]]
   ] = js.undefined
   /**
     * The **`border-left-color`** CSS property sets the color of an element's left border. It can also be set with the shorthand CSS properties `border-color` or `border-left`.
@@ -761,6 +863,34 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/border-spacing
     */
   var `border-spacing`: js.UndefOr[BorderSpacingProperty[TLength] | js.Array[BorderSpacingProperty[TLength]]] = js.undefined
+  /**
+    * The **`border-start-end-radius`** CSS property defines a logical border radius on an element, which maps to a physical border radius depending on the element's `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-start-end-radius
+    */
+  var `border-start-end-radius`: js.UndefOr[
+    BorderStartEndRadiusProperty[TLength] | js.Array[BorderStartEndRadiusProperty[TLength]]
+  ] = js.undefined
+  /**
+    * The **`border-start-start-radius`** CSS property defines a logical border radius on an element, which maps to a physical border radius that depends on the element's `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-start-start-radius
+    */
+  var `border-start-start-radius`: js.UndefOr[
+    BorderStartStartRadiusProperty[TLength] | js.Array[BorderStartStartRadiusProperty[TLength]]
+  ] = js.undefined
   /**
     * The **`border-top-color`** CSS property sets the color of an element's top border. It can also be set with the shorthand CSS properties `border-color` or `border-top`.
     *
@@ -882,9 +1012,31 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
+    * ---
+    *
+    * _Supported in Multi-column Layout_
+    *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * | **50** |   No    | **10** | **12** | **10** |
+    * | **50** |   No    |   No   | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in Paged Media_
+    *
+    * | Chrome | Firefox | Safari |  Edge  |   IE   |
+    * | :----: | :-----: | :----: | :----: | :----: |
+    * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in CSS Regions_
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   No    |   No   |  No  | No  |
+    *
+    * ---
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/break-after
     */
@@ -900,7 +1052,7 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * | **50** | **65**  | **10** | **12** | **10** |
+    * | **50** | **65**  |   No   | **12** | **10** |
     *
     * ---
     *
@@ -943,6 +1095,14 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
     * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in CSS Regions_
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   No    |   No   |  No  | No  |
     *
     * ---
     *
@@ -2000,6 +2160,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `list-style-type`: js.UndefOr[ListStyleTypeProperty | js.Array[ListStyleTypeProperty]] = js.undefined
   /**
+    * The **`margin-block`** CSS property defines the logical block start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-block
+    */
+  var `margin-block`: js.UndefOr[MarginBlockProperty[TLength] | js.Array[MarginBlockProperty[TLength]]] = js.undefined
+  /**
     * The **`margin-block-end`** CSS property defines the logical block end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation.
     *
     * **Initial value**: `0`
@@ -2035,6 +2207,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-bottom
     */
   var `margin-bottom`: js.UndefOr[MarginBottomProperty[TLength] | js.Array[MarginBottomProperty[TLength]]] = js.undefined
+  /**
+    * The **`margin-inline`** CSS property defines the logical inline start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline
+    */
+  var `margin-inline`: js.UndefOr[MarginInlineProperty[TLength] | js.Array[MarginInlineProperty[TLength]]] = js.undefined
   /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -2669,6 +2853,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     */
   var `overscroll-behavior-y`: js.UndefOr[OverscrollBehaviorYProperty | js.Array[OverscrollBehaviorYProperty]] = js.undefined
   /**
+    * The **`padding-block`** CSS property defines the logical block start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/padding-block
+    */
+  var `padding-block`: js.UndefOr[PaddingBlockProperty[TLength] | js.Array[PaddingBlockProperty[TLength]]] = js.undefined
+  /**
     * The **`padding-block-end`** CSS property defines the logical block end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `0`
@@ -2706,6 +2902,18 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-bottom
     */
   var `padding-bottom`: js.UndefOr[PaddingBottomProperty[TLength] | js.Array[PaddingBottomProperty[TLength]]] = js.undefined
+  /**
+    * The **`padding-inline`** CSS property defines the logical inline start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline
+    */
+  var `padding-inline`: js.UndefOr[PaddingInlineProperty[TLength] | js.Array[PaddingInlineProperty[TLength]]] = js.undefined
   /**
     * The **`padding-inline-end`** CSS property defines the logical inline end padding of an element, which maps to a physical padding depending on the element's writing mode, directionality, and text orientation. It corresponds to the `padding-top`, `padding-right`, `padding-bottom`, or `padding-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
@@ -3615,7 +3823,7 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **4**  |  **3**  | **5**  | n/a  | No  |
+    * | **4**  |  **1**  | **5**  | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-rendering
     */
@@ -3825,10 +4033,10 @@ trait StandardLonghandPropertiesHyphenFallback[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome  |   Firefox    |    Safari     |     Edge     |   IE   |
-    * | :-----: | :----------: | :-----------: | :----------: | :----: |
-    * | **54**  | **49** _-x-_ | **3.1** _-x-_ | **12** _-x-_ | **10** |
-    * | 6 _-x-_ |              |               |              |        |
+    * | Chrome  |   Firefox   |    Safari     |     Edge     |   IE   |
+    * | :-----: | :---------: | :-----------: | :----------: | :----: |
+    * | **54**  | **1** _-x-_ | **3.1** _-x-_ | **12** _-x-_ | **10** |
+    * | 6 _-x-_ |             |               |              |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/user-select
     */
@@ -4009,29 +4217,37 @@ object StandardLonghandPropertiesHyphenFallback {
     `background-size`: BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]] = null,
     `block-overflow`: BlockOverflowProperty | js.Array[BlockOverflowProperty] = null,
     `block-size`: BlockSizeProperty[TLength] | js.Array[BlockSizeProperty[TLength]] = null,
+    `border-block-color`: BorderBlockColorProperty | js.Array[BorderBlockColorProperty] = null,
     `border-block-end-color`: BorderBlockEndColorProperty | js.Array[BorderBlockEndColorProperty] = null,
     `border-block-end-style`: BorderBlockEndStyleProperty | js.Array[BorderBlockEndStyleProperty] = null,
     `border-block-end-width`: BorderBlockEndWidthProperty[TLength] | js.Array[BorderBlockEndWidthProperty[TLength]] = null,
     `border-block-start-color`: BorderBlockStartColorProperty | js.Array[BorderBlockStartColorProperty] = null,
     `border-block-start-style`: BorderBlockStartStyleProperty | js.Array[BorderBlockStartStyleProperty] = null,
     `border-block-start-width`: BorderBlockStartWidthProperty[TLength] | js.Array[BorderBlockStartWidthProperty[TLength]] = null,
+    `border-block-style`: BorderBlockStyleProperty | js.Array[BorderBlockStyleProperty] = null,
+    `border-block-width`: BorderBlockWidthProperty[TLength] | js.Array[BorderBlockWidthProperty[TLength]] = null,
     `border-bottom-color`: BorderBottomColorProperty | js.Array[BorderBottomColorProperty] = null,
     `border-bottom-left-radius`: BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]] = null,
     `border-bottom-right-radius`: BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]] = null,
     `border-bottom-style`: BorderBottomStyleProperty | js.Array[BorderBottomStyleProperty] = null,
     `border-bottom-width`: BorderBottomWidthProperty[TLength] | js.Array[BorderBottomWidthProperty[TLength]] = null,
     `border-collapse`: BorderCollapseProperty | js.Array[BorderCollapseProperty] = null,
+    `border-end-end-radius`: BorderEndEndRadiusProperty[TLength] | js.Array[BorderEndEndRadiusProperty[TLength]] = null,
+    `border-end-start-radius`: BorderEndStartRadiusProperty[TLength] | js.Array[BorderEndStartRadiusProperty[TLength]] = null,
     `border-image-outset`: BorderImageOutsetProperty[TLength] | js.Array[BorderImageOutsetProperty[TLength]] = null,
     `border-image-repeat`: BorderImageRepeatProperty | js.Array[BorderImageRepeatProperty] = null,
     `border-image-slice`: BorderImageSliceProperty | js.Array[BorderImageSliceProperty] = null,
     `border-image-source`: BorderImageSourceProperty | js.Array[BorderImageSourceProperty] = null,
     `border-image-width`: BorderImageWidthProperty[TLength] | js.Array[BorderImageWidthProperty[TLength]] = null,
+    `border-inline-color`: BorderInlineColorProperty | js.Array[BorderInlineColorProperty] = null,
     `border-inline-end-color`: BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty] = null,
     `border-inline-end-style`: BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty] = null,
     `border-inline-end-width`: BorderInlineEndWidthProperty[TLength] | js.Array[BorderInlineEndWidthProperty[TLength]] = null,
     `border-inline-start-color`: BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty] = null,
     `border-inline-start-style`: BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty] = null,
     `border-inline-start-width`: BorderInlineStartWidthProperty[TLength] | js.Array[BorderInlineStartWidthProperty[TLength]] = null,
+    `border-inline-style`: BorderInlineStyleProperty | js.Array[BorderInlineStyleProperty] = null,
+    `border-inline-width`: BorderInlineWidthProperty[TLength] | js.Array[BorderInlineWidthProperty[TLength]] = null,
     `border-left-color`: BorderLeftColorProperty | js.Array[BorderLeftColorProperty] = null,
     `border-left-style`: BorderLeftStyleProperty | js.Array[BorderLeftStyleProperty] = null,
     `border-left-width`: BorderLeftWidthProperty[TLength] | js.Array[BorderLeftWidthProperty[TLength]] = null,
@@ -4039,6 +4255,8 @@ object StandardLonghandPropertiesHyphenFallback {
     `border-right-style`: BorderRightStyleProperty | js.Array[BorderRightStyleProperty] = null,
     `border-right-width`: BorderRightWidthProperty[TLength] | js.Array[BorderRightWidthProperty[TLength]] = null,
     `border-spacing`: BorderSpacingProperty[TLength] | js.Array[BorderSpacingProperty[TLength]] = null,
+    `border-start-end-radius`: BorderStartEndRadiusProperty[TLength] | js.Array[BorderStartEndRadiusProperty[TLength]] = null,
+    `border-start-start-radius`: BorderStartStartRadiusProperty[TLength] | js.Array[BorderStartStartRadiusProperty[TLength]] = null,
     `border-top-color`: BorderTopColorProperty | js.Array[BorderTopColorProperty] = null,
     `border-top-left-radius`: BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]] = null,
     `border-top-right-radius`: BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]] = null,
@@ -4121,17 +4339,7 @@ object StandardLonghandPropertiesHyphenFallback {
     `inset-inline-end`: InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]] = null,
     `inset-inline-start`: InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]] = null,
     isolation: IsolationProperty | js.Array[IsolationProperty] = null,
-    `justify-content`: JustifyContentProperty | js.Array[JustifyContentProperty] = null,
-    `justify-items`: JustifyItemsProperty | js.Array[JustifyItemsProperty] = null,
-    `justify-self`: JustifySelfProperty | js.Array[JustifySelfProperty] = null,
-    left: LeftProperty[TLength] | js.Array[LeftProperty[TLength]] = null,
-    `letter-spacing`: LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]] = null,
-    `line-break`: LineBreakProperty | js.Array[LineBreakProperty] = null,
-    `line-height`: LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]] = null,
-    `line-height-step`: LineHeightStepProperty[TLength] | js.Array[LineHeightStepProperty[TLength]] = null,
-    `list-style-image`: ListStyleImageProperty | js.Array[ListStyleImageProperty] = null,
-    `list-style-position`: ListStylePositionProperty | js.Array[ListStylePositionProperty] = null,
-    `list-style-type`: ListStyleTypeProperty | js.Array[ListStyleTypeProperty] = null
+    `justify-content`: JustifyContentProperty | js.Array[JustifyContentProperty] = null
   ): StandardLonghandPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`align-content` != null) __obj.updateDynamic("align-content")(`align-content`.asInstanceOf[js.Any])
@@ -4161,29 +4369,37 @@ object StandardLonghandPropertiesHyphenFallback {
     if (`background-size` != null) __obj.updateDynamic("background-size")(`background-size`.asInstanceOf[js.Any])
     if (`block-overflow` != null) __obj.updateDynamic("block-overflow")(`block-overflow`.asInstanceOf[js.Any])
     if (`block-size` != null) __obj.updateDynamic("block-size")(`block-size`.asInstanceOf[js.Any])
+    if (`border-block-color` != null) __obj.updateDynamic("border-block-color")(`border-block-color`.asInstanceOf[js.Any])
     if (`border-block-end-color` != null) __obj.updateDynamic("border-block-end-color")(`border-block-end-color`.asInstanceOf[js.Any])
     if (`border-block-end-style` != null) __obj.updateDynamic("border-block-end-style")(`border-block-end-style`.asInstanceOf[js.Any])
     if (`border-block-end-width` != null) __obj.updateDynamic("border-block-end-width")(`border-block-end-width`.asInstanceOf[js.Any])
     if (`border-block-start-color` != null) __obj.updateDynamic("border-block-start-color")(`border-block-start-color`.asInstanceOf[js.Any])
     if (`border-block-start-style` != null) __obj.updateDynamic("border-block-start-style")(`border-block-start-style`.asInstanceOf[js.Any])
     if (`border-block-start-width` != null) __obj.updateDynamic("border-block-start-width")(`border-block-start-width`.asInstanceOf[js.Any])
+    if (`border-block-style` != null) __obj.updateDynamic("border-block-style")(`border-block-style`.asInstanceOf[js.Any])
+    if (`border-block-width` != null) __obj.updateDynamic("border-block-width")(`border-block-width`.asInstanceOf[js.Any])
     if (`border-bottom-color` != null) __obj.updateDynamic("border-bottom-color")(`border-bottom-color`.asInstanceOf[js.Any])
     if (`border-bottom-left-radius` != null) __obj.updateDynamic("border-bottom-left-radius")(`border-bottom-left-radius`.asInstanceOf[js.Any])
     if (`border-bottom-right-radius` != null) __obj.updateDynamic("border-bottom-right-radius")(`border-bottom-right-radius`.asInstanceOf[js.Any])
     if (`border-bottom-style` != null) __obj.updateDynamic("border-bottom-style")(`border-bottom-style`.asInstanceOf[js.Any])
     if (`border-bottom-width` != null) __obj.updateDynamic("border-bottom-width")(`border-bottom-width`.asInstanceOf[js.Any])
     if (`border-collapse` != null) __obj.updateDynamic("border-collapse")(`border-collapse`.asInstanceOf[js.Any])
+    if (`border-end-end-radius` != null) __obj.updateDynamic("border-end-end-radius")(`border-end-end-radius`.asInstanceOf[js.Any])
+    if (`border-end-start-radius` != null) __obj.updateDynamic("border-end-start-radius")(`border-end-start-radius`.asInstanceOf[js.Any])
     if (`border-image-outset` != null) __obj.updateDynamic("border-image-outset")(`border-image-outset`.asInstanceOf[js.Any])
     if (`border-image-repeat` != null) __obj.updateDynamic("border-image-repeat")(`border-image-repeat`.asInstanceOf[js.Any])
     if (`border-image-slice` != null) __obj.updateDynamic("border-image-slice")(`border-image-slice`.asInstanceOf[js.Any])
     if (`border-image-source` != null) __obj.updateDynamic("border-image-source")(`border-image-source`.asInstanceOf[js.Any])
     if (`border-image-width` != null) __obj.updateDynamic("border-image-width")(`border-image-width`.asInstanceOf[js.Any])
+    if (`border-inline-color` != null) __obj.updateDynamic("border-inline-color")(`border-inline-color`.asInstanceOf[js.Any])
     if (`border-inline-end-color` != null) __obj.updateDynamic("border-inline-end-color")(`border-inline-end-color`.asInstanceOf[js.Any])
     if (`border-inline-end-style` != null) __obj.updateDynamic("border-inline-end-style")(`border-inline-end-style`.asInstanceOf[js.Any])
     if (`border-inline-end-width` != null) __obj.updateDynamic("border-inline-end-width")(`border-inline-end-width`.asInstanceOf[js.Any])
     if (`border-inline-start-color` != null) __obj.updateDynamic("border-inline-start-color")(`border-inline-start-color`.asInstanceOf[js.Any])
     if (`border-inline-start-style` != null) __obj.updateDynamic("border-inline-start-style")(`border-inline-start-style`.asInstanceOf[js.Any])
     if (`border-inline-start-width` != null) __obj.updateDynamic("border-inline-start-width")(`border-inline-start-width`.asInstanceOf[js.Any])
+    if (`border-inline-style` != null) __obj.updateDynamic("border-inline-style")(`border-inline-style`.asInstanceOf[js.Any])
+    if (`border-inline-width` != null) __obj.updateDynamic("border-inline-width")(`border-inline-width`.asInstanceOf[js.Any])
     if (`border-left-color` != null) __obj.updateDynamic("border-left-color")(`border-left-color`.asInstanceOf[js.Any])
     if (`border-left-style` != null) __obj.updateDynamic("border-left-style")(`border-left-style`.asInstanceOf[js.Any])
     if (`border-left-width` != null) __obj.updateDynamic("border-left-width")(`border-left-width`.asInstanceOf[js.Any])
@@ -4191,6 +4407,8 @@ object StandardLonghandPropertiesHyphenFallback {
     if (`border-right-style` != null) __obj.updateDynamic("border-right-style")(`border-right-style`.asInstanceOf[js.Any])
     if (`border-right-width` != null) __obj.updateDynamic("border-right-width")(`border-right-width`.asInstanceOf[js.Any])
     if (`border-spacing` != null) __obj.updateDynamic("border-spacing")(`border-spacing`.asInstanceOf[js.Any])
+    if (`border-start-end-radius` != null) __obj.updateDynamic("border-start-end-radius")(`border-start-end-radius`.asInstanceOf[js.Any])
+    if (`border-start-start-radius` != null) __obj.updateDynamic("border-start-start-radius")(`border-start-start-radius`.asInstanceOf[js.Any])
     if (`border-top-color` != null) __obj.updateDynamic("border-top-color")(`border-top-color`.asInstanceOf[js.Any])
     if (`border-top-left-radius` != null) __obj.updateDynamic("border-top-left-radius")(`border-top-left-radius`.asInstanceOf[js.Any])
     if (`border-top-right-radius` != null) __obj.updateDynamic("border-top-right-radius")(`border-top-right-radius`.asInstanceOf[js.Any])
@@ -4274,16 +4492,6 @@ object StandardLonghandPropertiesHyphenFallback {
     if (`inset-inline-start` != null) __obj.updateDynamic("inset-inline-start")(`inset-inline-start`.asInstanceOf[js.Any])
     if (isolation != null) __obj.updateDynamic("isolation")(isolation.asInstanceOf[js.Any])
     if (`justify-content` != null) __obj.updateDynamic("justify-content")(`justify-content`.asInstanceOf[js.Any])
-    if (`justify-items` != null) __obj.updateDynamic("justify-items")(`justify-items`.asInstanceOf[js.Any])
-    if (`justify-self` != null) __obj.updateDynamic("justify-self")(`justify-self`.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (`letter-spacing` != null) __obj.updateDynamic("letter-spacing")(`letter-spacing`.asInstanceOf[js.Any])
-    if (`line-break` != null) __obj.updateDynamic("line-break")(`line-break`.asInstanceOf[js.Any])
-    if (`line-height` != null) __obj.updateDynamic("line-height")(`line-height`.asInstanceOf[js.Any])
-    if (`line-height-step` != null) __obj.updateDynamic("line-height-step")(`line-height-step`.asInstanceOf[js.Any])
-    if (`list-style-image` != null) __obj.updateDynamic("list-style-image")(`list-style-image`.asInstanceOf[js.Any])
-    if (`list-style-position` != null) __obj.updateDynamic("list-style-position")(`list-style-position`.asInstanceOf[js.Any])
-    if (`list-style-type` != null) __obj.updateDynamic("list-style-type")(`list-style-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardLonghandPropertiesHyphenFallback[TLength]]
   }
 }

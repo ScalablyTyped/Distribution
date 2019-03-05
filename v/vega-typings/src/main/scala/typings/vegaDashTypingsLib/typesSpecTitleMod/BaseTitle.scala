@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN] extends js.Object {
+trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN, O] extends js.Object {
   var align: js.UndefOr[A] = js.undefined
   /**
     * The anchor position for placing the title. One of `"start"`, `"middle"`, or `"end"`. For example, with an orientation of top these anchor positions map to a left-, center-, or right-aligned title.
@@ -61,12 +61,12 @@ trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN] extends js.Object {
   /**
     * Default title orientation (`"top"`, `"bottom"`, `"left"`, or `"right"`)
     */
-  var orient: js.UndefOr[TitleOrient] = js.undefined
+  var orient: js.UndefOr[O] = js.undefined
 }
 
 object BaseTitle {
   @scala.inline
-  def apply[N, S, C, FW, FS, A, TB, F, AN](
+  def apply[N, S, C, FW, FS, A, TB, F, AN, O](
     align: A = null,
     anchor: AN = null,
     angle: N = null,
@@ -79,8 +79,8 @@ object BaseTitle {
     frame: F = null,
     limit: N = null,
     offset: N = null,
-    orient: TitleOrient = null
-  ): BaseTitle[N, S, C, FW, FS, A, TB, F, AN] = {
+    orient: O = null
+  ): BaseTitle[N, S, C, FW, FS, A, TB, F, AN, O] = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
@@ -94,8 +94,8 @@ object BaseTitle {
     if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient)
-    __obj.asInstanceOf[BaseTitle[N, S, C, FW, FS, A, TB, F, AN]]
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseTitle[N, S, C, FW, FS, A, TB, F, AN, O]]
   }
 }
 

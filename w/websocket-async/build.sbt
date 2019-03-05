@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "websocket-async"
-version := "1.3-dt-20180715Z-d43037"
+version := "1.3-dt-20190214Z-d43037"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

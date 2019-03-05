@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 object hoistDashNonDashReactDashStaticsLibStrings {
   @js.native
-  sealed trait namespaced extends js.Object
+  sealed trait NonReactStatics extends js.Object
   
   @scala.inline
-  def namespaced: namespaced = "namespaced".asInstanceOf[namespaced]
+  def NonReactStatics: NonReactStatics = "NonReactStatics".asInstanceOf[NonReactStatics]
 }
 

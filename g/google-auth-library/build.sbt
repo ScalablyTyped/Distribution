@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "3.1.0-bfee15"
+version := "3.1.0-108fbf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,10 +10,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-c05865",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-f65764",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-11c3fe",
-  "org.scalablytyped" %%% "gaxios" % "1.8.0-295140",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-7b9f32",
+  "org.scalablytyped" %%% "gaxios" % "1.8.1-295140",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-a33c91",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-fb0f7e",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-47a0fd",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-b37c98",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-de8173",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-c41785",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-5cf9d4",

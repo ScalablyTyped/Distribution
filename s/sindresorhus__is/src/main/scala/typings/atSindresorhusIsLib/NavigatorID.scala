@@ -17,3 +17,22 @@ trait NavigatorID extends js.Object {
   val vendorSub: java.lang.String
 }
 
+object NavigatorID {
+  @scala.inline
+  def apply(
+    appCodeName: java.lang.String,
+    appName: java.lang.String,
+    appVersion: java.lang.String,
+    platform: java.lang.String,
+    product: java.lang.String,
+    productSub: java.lang.String,
+    userAgent: java.lang.String,
+    vendor: java.lang.String,
+    vendorSub: java.lang.String
+  ): NavigatorID = {
+    val __obj = js.Dynamic.literal(appCodeName = appCodeName, appName = appName, appVersion = appVersion, platform = platform, product = product, productSub = productSub, userAgent = userAgent, vendor = vendor, vendorSub = vendorSub)
+  
+    __obj.asInstanceOf[NavigatorID]
+  }
+}
+

@@ -11,3 +11,12 @@ trait MSInputMethodContextEventMap extends js.Object {
   var MSCandidateWindowUpdate: Event
 }
 
+object MSInputMethodContextEventMap {
+  @scala.inline
+  def apply(MSCandidateWindowHide: Event, MSCandidateWindowShow: Event, MSCandidateWindowUpdate: Event): MSInputMethodContextEventMap = {
+    val __obj = js.Dynamic.literal(MSCandidateWindowHide = MSCandidateWindowHide, MSCandidateWindowShow = MSCandidateWindowShow, MSCandidateWindowUpdate = MSCandidateWindowUpdate)
+  
+    __obj.asInstanceOf[MSInputMethodContextEventMap]
+  }
+}
+

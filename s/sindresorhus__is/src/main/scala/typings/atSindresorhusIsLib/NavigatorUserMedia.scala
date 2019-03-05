@@ -15,3 +15,21 @@ trait NavigatorUserMedia extends js.Object {
   ): scala.Unit
 }
 
+object NavigatorUserMedia {
+  @scala.inline
+  def apply(
+    getDisplayMedia: js.Function1[MediaStreamConstraints, Promise[MediaStream]],
+    getUserMedia: js.Function3[
+      MediaStreamConstraints, 
+      NavigatorUserMediaSuccessCallback, 
+      NavigatorUserMediaErrorCallback, 
+      scala.Unit
+    ],
+    mediaDevices: MediaDevices
+  ): NavigatorUserMedia = {
+    val __obj = js.Dynamic.literal(getDisplayMedia = getDisplayMedia, getUserMedia = getUserMedia, mediaDevices = mediaDevices)
+  
+    __obj.asInstanceOf[NavigatorUserMedia]
+  }
+}
+

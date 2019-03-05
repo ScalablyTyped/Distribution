@@ -23,6 +23,8 @@ object ^ extends js.Object {
     plain: nodeLib.Buffer,
     options: argon2Lib.argon2Mod.Options with (argon2Lib.Anon_False | argon2Lib.Anon_Raw)
   ): js.Promise[nodeLib.Buffer] = js.native
+  def needsRehash(hash: java.lang.String): scala.Boolean = js.native
+  def needsRehash(hash: java.lang.String, options: argon2Lib.argon2Mod.Options): scala.Boolean = js.native
   def verify(hash: java.lang.String, plain: java.lang.String): js.Promise[scala.Boolean] = js.native
   def verify(hash: java.lang.String, plain: nodeLib.Buffer): js.Promise[scala.Boolean] = js.native
 }

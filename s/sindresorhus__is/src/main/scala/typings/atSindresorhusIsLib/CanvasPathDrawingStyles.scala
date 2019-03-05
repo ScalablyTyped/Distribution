@@ -15,3 +15,20 @@ trait CanvasPathDrawingStyles extends js.Object {
   def setLineDash(segments: Array[scala.Double]): scala.Unit
 }
 
+object CanvasPathDrawingStyles {
+  @scala.inline
+  def apply(
+    getLineDash: js.Function0[Array[scala.Double]],
+    lineCap: CanvasLineCap,
+    lineDashOffset: scala.Double,
+    lineJoin: CanvasLineJoin,
+    lineWidth: scala.Double,
+    miterLimit: scala.Double,
+    setLineDash: js.Function1[Array[scala.Double], scala.Unit]
+  ): CanvasPathDrawingStyles = {
+    val __obj = js.Dynamic.literal(getLineDash = getLineDash, lineCap = lineCap, lineDashOffset = lineDashOffset, lineJoin = lineJoin, lineWidth = lineWidth, miterLimit = miterLimit, setLineDash = setLineDash)
+  
+    __obj.asInstanceOf[CanvasPathDrawingStyles]
+  }
+}
+

@@ -3159,12 +3159,30 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.get
     */
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: TObject, path: TKey, defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: TObject, path: js.Array[TKey], defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: js.UndefOr[scala.Nothing], path: TKey, defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: js.UndefOr[scala.Nothing], path: js.Array[TKey], defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: TKey, defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
-  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: js.Array[TKey], defaultValue: TDefault): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: TObject, path: TKey, defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: TObject, path: js.Array[TKey], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: js.UndefOr[scala.Nothing], path: TKey, defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: js.UndefOr[scala.Nothing], path: js.Array[TKey], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: TKey, defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
+  def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](`object`: scala.Null, path: js.Array[TKey], defaultValue: TDefault): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   /**
     * Gets the property value at path of object. If the resolved value is undefined the defaultValue is used
     * in its place.

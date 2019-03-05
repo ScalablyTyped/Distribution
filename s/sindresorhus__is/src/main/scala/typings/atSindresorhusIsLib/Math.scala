@@ -210,3 +210,57 @@ trait Math extends js.Object {
   def trunc(x: scala.Double): scala.Double
 }
 
+object Math {
+  @scala.inline
+  def apply(
+    E: scala.Double,
+    LN10: scala.Double,
+    LN2: scala.Double,
+    LOG10E: scala.Double,
+    LOG2E: scala.Double,
+    PI: scala.Double,
+    SQRT1_2: scala.Double,
+    SQRT2: scala.Double,
+    abs: js.Function1[scala.Double, scala.Double],
+    acos: js.Function1[scala.Double, scala.Double],
+    acosh: js.Function1[scala.Double, scala.Double],
+    asin: js.Function1[scala.Double, scala.Double],
+    asinh: js.Function1[scala.Double, scala.Double],
+    atan: js.Function1[scala.Double, scala.Double],
+    atan2: js.Function2[scala.Double, scala.Double, scala.Double],
+    atanh: js.Function1[scala.Double, scala.Double],
+    cbrt: js.Function1[scala.Double, scala.Double],
+    ceil: js.Function1[scala.Double, scala.Double],
+    clz32: js.Function1[scala.Double, scala.Double],
+    cos: js.Function1[scala.Double, scala.Double],
+    cosh: js.Function1[scala.Double, scala.Double],
+    exp: js.Function1[scala.Double, scala.Double],
+    expm1: js.Function1[scala.Double, scala.Double],
+    floor: js.Function1[scala.Double, scala.Double],
+    fround: js.Function1[scala.Double, scala.Double],
+    hypot: js.Function1[/* repeated */ scala.Double, scala.Double],
+    imul: js.Function2[scala.Double, scala.Double, scala.Double],
+    log: js.Function1[scala.Double, scala.Double],
+    log10: js.Function1[scala.Double, scala.Double],
+    log1p: js.Function1[scala.Double, scala.Double],
+    log2: js.Function1[scala.Double, scala.Double],
+    max: js.Function1[/* repeated */ scala.Double, scala.Double],
+    min: js.Function1[/* repeated */ scala.Double, scala.Double],
+    pow: js.Function2[scala.Double, scala.Double, scala.Double],
+    random: js.Function0[scala.Double],
+    round: js.Function1[scala.Double, scala.Double],
+    sign: js.Function1[scala.Double, scala.Double],
+    sin: js.Function1[scala.Double, scala.Double],
+    sinh: js.Function1[scala.Double, scala.Double],
+    sqrt: js.Function1[scala.Double, scala.Double],
+    tan: js.Function1[scala.Double, scala.Double],
+    tanh: js.Function1[scala.Double, scala.Double],
+    toStringTag: java.lang.String,
+    trunc: js.Function1[scala.Double, scala.Double]
+  ): Math = {
+    val __obj = js.Dynamic.literal(E = E, LN10 = LN10, LN2 = LN2, LOG10E = LOG10E, LOG2E = LOG2E, PI = PI, SQRT1_2 = SQRT1_2, SQRT2 = SQRT2, abs = abs, acos = acos, acosh = acosh, asin = asin, asinh = asinh, atan = atan, atan2 = atan2, atanh = atanh, cbrt = cbrt, ceil = ceil, clz32 = clz32, cos = cos, cosh = cosh, exp = exp, expm1 = expm1, floor = floor, fround = fround, hypot = hypot, imul = imul, log = log, log10 = log10, log1p = log1p, log2 = log2, max = max, min = min, pow = pow, random = random, round = round, sign = sign, sin = sin, sinh = sinh, sqrt = sqrt, tan = tan, tanh = tanh, toStringTag = toStringTag, trunc = trunc)
+  
+    __obj.asInstanceOf[Math]
+  }
+}
+

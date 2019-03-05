@@ -11,3 +11,18 @@ trait VRLayer extends js.Object {
   var source: js.UndefOr[HTMLCanvasElement | scala.Null] = js.undefined
 }
 
+object VRLayer {
+  @scala.inline
+  def apply(
+    leftBounds: Array[scala.Double] | Float32Array = null,
+    rightBounds: Array[scala.Double] | Float32Array = null,
+    source: HTMLCanvasElement = null
+  ): VRLayer = {
+    val __obj = js.Dynamic.literal()
+    if (leftBounds != null) __obj.updateDynamic("leftBounds")(leftBounds.asInstanceOf[js.Any])
+    if (rightBounds != null) __obj.updateDynamic("rightBounds")(rightBounds.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[VRLayer]
+  }
+}
+

@@ -13,6 +13,8 @@ trait AVal extends js.Object {
     * property pointing to an AST node.
     */
   var originNode: js.UndefOr[estreeLib.estreeMod.Node] = js.native
+  val propertyOf: js.UndefOr[Obj] = js.native
+  val types: js.Array[Type] = js.native
   /**
     * Add a type to this abstract value. If the type is already in there,
     * this is a no-op. weight can be given to give this type a non-default
@@ -27,7 +29,14 @@ trait AVal extends js.Object {
     * Asks the AVal if it contains a function type. Useful when
     * you aren’t interested in other kinds of types.
     */
-  def getFunctionType(): js.UndefOr[Type] = js.native
+  def getFunctionType(): js.UndefOr[Fn] = js.native
+  /**
+    * Asks the AVal if it contains an Object type. Useful when
+    * you aren’t interested in other kinds of types.
+    */
+  def getObjType(): Obj | scala.Null = js.native
+  /** Get an `AVal` that represents the named property of this type. */
+  def getProp(prop: java.lang.String): AVal = js.native
   /**
     * Asks the abstract value for its current type. May return `null`
     * when there is no type, or conflicting types are present. When

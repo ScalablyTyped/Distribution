@@ -50,6 +50,16 @@ trait StandardShorthandPropertiesHyphen[TLength] extends js.Object {
     */
   var border: js.UndefOr[BorderProperty[TLength]] = js.undefined
   /**
+    * The **`border-block`** CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-block
+    */
+  var `border-block`: js.UndefOr[BorderBlockProperty[TLength]] = js.undefined
+  /**
     * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
@@ -100,6 +110,16 @@ trait StandardShorthandPropertiesHyphen[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/border-image
     */
   var `border-image`: js.UndefOr[BorderImageProperty] = js.undefined
+  /**
+    * The **`border-inline`** CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
+    */
+  var `border-inline`: js.UndefOr[BorderInlineProperty[TLength]] = js.undefined
   /**
     * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
     *
@@ -345,7 +365,7 @@ trait StandardShorthandPropertiesHyphen[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * | **1**  |   Yes   | **4**  | **12** | No  |
+    * | **1**  |  **2**  | **4**  | **12** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask
     */
@@ -482,11 +502,13 @@ object StandardShorthandPropertiesHyphen {
     animation: AnimationProperty = null,
     background: BackgroundProperty[TLength] = null,
     border: BorderProperty[TLength] = null,
+    `border-block`: BorderBlockProperty[TLength] = null,
     `border-block-end`: BorderBlockEndProperty[TLength] = null,
     `border-block-start`: BorderBlockStartProperty[TLength] = null,
     `border-bottom`: BorderBottomProperty[TLength] = null,
     `border-color`: BorderColorProperty = null,
     `border-image`: BorderImageProperty = null,
+    `border-inline`: BorderInlineProperty[TLength] = null,
     `border-inline-end`: BorderInlineEndProperty[TLength] = null,
     `border-inline-start`: BorderInlineStartProperty[TLength] = null,
     `border-left`: BorderLeftProperty[TLength] = null,
@@ -526,11 +548,13 @@ object StandardShorthandPropertiesHyphen {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (`border-block` != null) __obj.updateDynamic("border-block")(`border-block`.asInstanceOf[js.Any])
     if (`border-block-end` != null) __obj.updateDynamic("border-block-end")(`border-block-end`.asInstanceOf[js.Any])
     if (`border-block-start` != null) __obj.updateDynamic("border-block-start")(`border-block-start`.asInstanceOf[js.Any])
     if (`border-bottom` != null) __obj.updateDynamic("border-bottom")(`border-bottom`.asInstanceOf[js.Any])
     if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
     if (`border-image` != null) __obj.updateDynamic("border-image")(`border-image`.asInstanceOf[js.Any])
+    if (`border-inline` != null) __obj.updateDynamic("border-inline")(`border-inline`.asInstanceOf[js.Any])
     if (`border-inline-end` != null) __obj.updateDynamic("border-inline-end")(`border-inline-end`.asInstanceOf[js.Any])
     if (`border-inline-start` != null) __obj.updateDynamic("border-inline-start")(`border-inline-start`.asInstanceOf[js.Any])
     if (`border-left` != null) __obj.updateDynamic("border-left")(`border-left`.asInstanceOf[js.Any])

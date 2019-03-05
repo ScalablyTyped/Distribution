@@ -20,7 +20,8 @@ trait Legend
       vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
       vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
       vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
-      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue, 
+      LegendOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
     ] {
   /**
     * The direction of the legend, one of `"vertical"` (default) or `"horizontal"`.
@@ -105,7 +106,7 @@ object Legend {
     labelSeparation: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     offset: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     opacity: java.lang.String = null,
-    orient: LegendOrient = null,
+    orient: LegendOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     padding: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     rowPadding: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     shape: java.lang.String = null,
@@ -173,7 +174,7 @@ object Legend {
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity)
-    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rowPadding != null) __obj.updateDynamic("rowPadding")(rowPadding.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-react"
-version := "0.7.1-bef0a2"
+version := "0.7.1-47d3be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,19 +11,19 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-link" % "1.2.8-98b0c6",
   "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.15-b45dc8",
   "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-b3e7eb",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-49af40",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-60f3ea",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-0e5462",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-a00511",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-4c89f3",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-80b212",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-ecc25b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
-  "org.scalablytyped" %%% "lodash_dot_flatten" % "4.4-dt-20190212Z-0fb219",
-  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190212Z-9d5a36",
-  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190212Z-d3367b",
-  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190212Z-55025b",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
+  "org.scalablytyped" %%% "lodash_dot_flatten" % "4.4-dt-20190214Z-a347bf",
+  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-c84b8f",
+  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-eb2fa0",
+  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190214Z-f3e21b",
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180214Z-cda594",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-0b0b5e",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-7328c8",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-f7f3c1",
   "org.scalablytyped" %%% "redux" % "4.0.1-03a2e6",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bfac6c",

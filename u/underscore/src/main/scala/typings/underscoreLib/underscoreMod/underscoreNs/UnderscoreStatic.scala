@@ -843,13 +843,13 @@ trait UnderscoreStatic extends js.Object {
     * @param attrs Object with key values pair
     * @return Predicate function
     **/
-  def matcher[T](attrs: T): ListIterator[T, scala.Boolean] = js.native
+  def matcher[T](attrs: T): Predicate[T] = js.native
   /**
     * Returns a predicate function that will tell you if a passed in object contains all of the key/value properties present in attrs.
     * @param attrs Object with key values pair
     * @return Predicate function
     **/
-  def matches[T](attrs: T): ListIterator[T, scala.Boolean] = js.native
+  def matches[T](attrs: T): Predicate[T] = js.native
   /**
     * Returns the maximum value in list.
     * @param list Finds the maximum value in this list.

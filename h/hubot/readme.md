@@ -3,5 +3,6 @@
 // Project: https://github.com/hubotio/hubot
 // Definitions by: Dirk Gadsden <https://github.com/dirk>
 //                 Kees C. Bakker <https://github.com/KeesCBakker>
+//                 Emil Marklund <https://github.com/eeemil>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

@@ -14,3 +14,22 @@ trait ConcatParams extends Algorithm {
   var publicInfo: js.UndefOr[Uint8Array] = js.undefined
 }
 
+object ConcatParams {
+  @scala.inline
+  def apply(
+    algorithmId: Uint8Array,
+    name: java.lang.String,
+    partyUInfo: Uint8Array,
+    partyVInfo: Uint8Array,
+    hash: java.lang.String | Algorithm = null,
+    privateInfo: Uint8Array = null,
+    publicInfo: Uint8Array = null
+  ): ConcatParams = {
+    val __obj = js.Dynamic.literal(algorithmId = algorithmId, name = name, partyUInfo = partyUInfo, partyVInfo = partyVInfo)
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (privateInfo != null) __obj.updateDynamic("privateInfo")(privateInfo)
+    if (publicInfo != null) __obj.updateDynamic("publicInfo")(publicInfo)
+    __obj.asInstanceOf[ConcatParams]
+  }
+}
+

@@ -39,7 +39,7 @@ class Editor protected ()
     callback: js.Function2[/* ui */ scala.Boolean, /* value */ js.Object, scala.Boolean],
     scope: js.Object
   ): scala.Unit = js.native
-  def addContextToolbar(predicate: js.Function0[scala.Unit], items: java.lang.String): scala.Unit = js.native
+  def addContextToolbar(predicate: js.Function0[scala.Boolean], items: java.lang.String): scala.Unit = js.native
   def addMenuItem(name: java.lang.String, settings: js.Object): scala.Unit = js.native
   def addQueryStateHandler(name: java.lang.String, callback: js.Function0[scala.Boolean]): scala.Unit = js.native
   def addQueryStateHandler(name: java.lang.String, callback: js.Function0[scala.Boolean], scope: js.Object): scala.Unit = js.native
@@ -54,6 +54,7 @@ class Editor protected ()
   def destroy(): scala.Unit = js.native
   def destroy(automatic: scala.Boolean): scala.Unit = js.native
   def execCallback(name: java.lang.String): js.Object = js.native
+  def execCommand(cmd: java.lang.String): scala.Unit = js.native
   def execCommand(cmd: java.lang.String, ui: scala.Boolean): scala.Unit = js.native
   def execCommand(cmd: java.lang.String, ui: scala.Boolean, value: js.Any): scala.Unit = js.native
   def execCommand(cmd: java.lang.String, ui: scala.Boolean, value: js.Any, args: js.Object): scala.Unit = js.native

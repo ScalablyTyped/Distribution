@@ -26,6 +26,9 @@ class Calendar protected () extends Widget {
   def navigateToPast(): scala.Unit = js.native
   def navigateUp(): scala.Unit = js.native
   def selectDates(): scala.Unit = js.native
+  def selectDates(datesToSelect: js.Any): scala.Unit = js.native
+  //somehow the same interface got implemented twice which are the same
+  //kendo-ui supports date selection(https://docs.telerik.com/kendo-ui/knowledge-base/calendar-select-range-of-dates)
   def value(): stdLib.Date = js.native
   def value(value: java.lang.String): scala.Unit = js.native
   def value(value: stdLib.Date): scala.Unit = js.native

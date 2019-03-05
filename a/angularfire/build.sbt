@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angularfire"
-version := "0.8.2-dt-20181124Z-d1a3cc"
+version := "0.8.2-dt-20181124Z-b13998"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,14 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-b19f07",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-098e24",
-  "org.scalablytyped" %%% "firebase" % "5.8.5-e5d47b",
+  "org.scalablytyped" %%% "firebase" % "5.8.5-795c78",
   "org.scalablytyped" %%% "firebase__app" % "0.3.10-d752dc",
   "org.scalablytyped" %%% "firebase__app-types" % "0.3.5-8b6709",
   "org.scalablytyped" %%% "firebase__auth" % "0.9.4-c7ad6c",
   "org.scalablytyped" %%% "firebase__auth-types" % "0.5.3-7b0673",
   "org.scalablytyped" %%% "firebase__database" % "0.3.13-5eed28",
   "org.scalablytyped" %%% "firebase__database-types" % "0.3.6-365aad",
-  "org.scalablytyped" %%% "firebase__firestore" % "1.0.5-88a235",
+  "org.scalablytyped" %%% "firebase__firestore" % "1.0.5-09fa1f",
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.3-a01059",
   "org.scalablytyped" %%% "firebase__functions" % "0.4.0-ab018b",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.3.0-b58d1f",
@@ -26,11 +26,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__storage" % "0.2.9-3ef0e6",
   "org.scalablytyped" %%% "firebase__storage-types" % "0.2.6-d5926a",
   "org.scalablytyped" %%% "firebase__util" % "0.2.8-84fe78",
-  "org.scalablytyped" %%% "grpc" % "1.18.0-abbf5d",
+  "org.scalablytyped" %%% "grpc" % "1.19.0-115278",
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20190212Z-862ffd",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
-  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190212Z-4b2ccf",
-  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190212Z-dfbe74",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
+  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-e859ac",
+  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190214Z-921e8a",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-d4ffb6",
   "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
   "org.scalablytyped" %%% "promise-polyfill" % "6.0-dt-20190212Z-c78cec",

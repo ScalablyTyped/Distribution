@@ -62,6 +62,8 @@ object Position extends js.Object {
     a: monacoDashEditorLib.monacoDashEditorMod.IPosition,
     b: monacoDashEditorLib.monacoDashEditorMod.IPosition
   ): scala.Double = js.native
+  def equals(): scala.Boolean = js.native
+  def equals(a: monacoDashEditorLib.monacoDashEditorMod.IPosition): scala.Boolean = js.native
   /**
     * Test if position `a` equals position `b`
     */
@@ -69,6 +71,7 @@ object Position extends js.Object {
     a: monacoDashEditorLib.monacoDashEditorMod.IPosition,
     b: monacoDashEditorLib.monacoDashEditorMod.IPosition
   ): scala.Boolean = js.native
+  def equals(a: scala.Null, b: monacoDashEditorLib.monacoDashEditorMod.IPosition): scala.Boolean = js.native
   /**
     * Test if position `a` is before position `b`.
     * If the two positions are equal, the result will be false.

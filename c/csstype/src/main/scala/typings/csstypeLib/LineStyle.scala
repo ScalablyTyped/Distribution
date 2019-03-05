@@ -8,16 +8,20 @@ import scala.scalajs.js.annotation._
 trait LineStyle
   extends csstypeLib.csstypeMod.BorderBlockEndStyleProperty
      with csstypeLib.csstypeMod.BorderBlockStartStyleProperty
+     with csstypeLib.csstypeMod.BorderBlockStyleProperty
      with csstypeLib.csstypeMod.BorderBottomStyleProperty
      with csstypeLib.csstypeMod.BorderInlineEndStyleProperty
      with csstypeLib.csstypeMod.BorderInlineStartStyleProperty
+     with csstypeLib.csstypeMod.BorderInlineStyleProperty
      with csstypeLib.csstypeMod.BorderLeftStyleProperty
      with csstypeLib.csstypeMod.BorderRightStyleProperty
      with csstypeLib.csstypeMod.BorderTopStyleProperty
      with csstypeLib.csstypeMod._BorderBlockEndProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderBlockProperty[js.Any]
      with csstypeLib.csstypeMod._BorderBlockStartProperty[js.Any]
      with csstypeLib.csstypeMod._BorderBottomProperty[js.Any]
      with csstypeLib.csstypeMod._BorderInlineEndProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderInlineProperty[js.Any]
      with csstypeLib.csstypeMod._BorderInlineStartProperty[js.Any]
      with csstypeLib.csstypeMod._BorderLeftProperty[js.Any]
      with csstypeLib.csstypeMod._BorderProperty[js.Any]

@@ -11,3 +11,16 @@ trait RTCRtpParameters extends js.Object {
   var rtcp: RTCRtcpParameters
 }
 
+object RTCRtpParameters {
+  @scala.inline
+  def apply(
+    codecs: Array[RTCRtpCodecParameters],
+    headerExtensions: Array[RTCRtpHeaderExtensionParameters],
+    rtcp: RTCRtcpParameters
+  ): RTCRtpParameters = {
+    val __obj = js.Dynamic.literal(codecs = codecs, headerExtensions = headerExtensions, rtcp = rtcp)
+  
+    __obj.asInstanceOf[RTCRtpParameters]
+  }
+}
+

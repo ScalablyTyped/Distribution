@@ -66,11 +66,11 @@ trait Event extends js.Object {
     * 
     * *Supported hosts, by platform*
     *  <table>
-    *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-    *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Outlook    </strong></td><td> Y (Mailbox 1.3)            </td><td>                            </td><td>                 </td></tr>
-    *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-    *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><th>                             </th><th> Office for Windows desktop                                       </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+    *   <tr><td><strong> Excel      </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> Outlook    </strong></td><td> Y (Mailbox 1.3: without options<br>Mailbox Preview: with options)</td><td>                            </td><td>                 </td></tr>
+    *   <tr><td><strong> PowerPoint </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
+    *   <tr><td><strong> Word       </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
     *  </table>
     * 
     * @param options Optional. An object literal that contains one or more of the following properties.
@@ -79,6 +79,6 @@ trait Event extends js.Object {
     *                    For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
     */
   def completed(): scala.Unit = js.native
-  def completed(options: js.Any): scala.Unit = js.native
+  def completed(options: officeDashJsDashPreviewLib.Anon_AllowEvent): scala.Unit = js.native
 }
 

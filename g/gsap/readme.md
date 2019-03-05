@@ -6,5 +6,6 @@
 //                  Richard Fox <https://github.com/ProbablePrime>,
 //                  Philip Bulley <https://github.com/philipbulley>,
 //                  Leonardo Melo <https://github.com/leomeloxp>
+//                  Adem Hodzic <https://github.com/AdemHodzic>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

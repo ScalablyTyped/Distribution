@@ -259,13 +259,30 @@ trait Client extends js.Object {
     dontStopAppOnReset: java.lang.String
   ): scala.Unit = js.native
   def startRecordingScreen(
-    filePath: java.lang.String,
-    videoSize: scala.Double,
-    timeLimit: scala.Double,
-    bitRate: scala.Double
+    remotePath: js.UndefOr[java.lang.String],
+    username: js.UndefOr[java.lang.String],
+    password: js.UndefOr[java.lang.String],
+    method: js.UndefOr[java.lang.String],
+    forceRestart: js.UndefOr[scala.Boolean],
+    timeLimit: js.UndefOr[java.lang.String],
+    videoType: js.UndefOr[java.lang.String],
+    videoQuality: js.UndefOr[java.lang.String],
+    videoFps: js.UndefOr[java.lang.String],
+    bitRate: js.UndefOr[java.lang.String],
+    videoSize: js.UndefOr[java.lang.String],
+    bugReport: js.UndefOr[java.lang.String]
   ): scala.Unit = js.native
   def status(): js.Object = js.native
-  def stopRecordingScreen(): scala.Unit = js.native
+  def stopRecordingScreen(): java.lang.String = js.native
+  def stopRecordingScreen(remotePath: java.lang.String): java.lang.String = js.native
+  def stopRecordingScreen(remotePath: java.lang.String, username: java.lang.String): java.lang.String = js.native
+  def stopRecordingScreen(remotePath: java.lang.String, username: java.lang.String, password: java.lang.String): java.lang.String = js.native
+  def stopRecordingScreen(
+    remotePath: java.lang.String,
+    username: java.lang.String,
+    password: java.lang.String,
+    method: java.lang.String
+  ): java.lang.String = js.native
   def switchContext(name: java.lang.String): scala.Unit = js.native
   def switchToFrame(): scala.Unit = js.native
   def switchToFrame(id: java.lang.String): scala.Unit = js.native

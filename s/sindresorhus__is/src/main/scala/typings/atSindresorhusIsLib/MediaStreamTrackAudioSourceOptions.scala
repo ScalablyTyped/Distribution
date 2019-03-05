@@ -9,3 +9,12 @@ trait MediaStreamTrackAudioSourceOptions extends js.Object {
   var mediaStreamTrack: MediaStreamTrack
 }
 
+object MediaStreamTrackAudioSourceOptions {
+  @scala.inline
+  def apply(mediaStreamTrack: MediaStreamTrack): MediaStreamTrackAudioSourceOptions = {
+    val __obj = js.Dynamic.literal(mediaStreamTrack = mediaStreamTrack)
+  
+    __obj.asInstanceOf[MediaStreamTrackAudioSourceOptions]
+  }
+}
+

@@ -61,3 +61,66 @@ trait SVGElementTagNameMap extends js.Object {
   var view: SVGViewElement
 }
 
+object SVGElementTagNameMap {
+  @scala.inline
+  def apply(
+    circle: SVGCircleElement,
+    clipPath: SVGClipPathElement,
+    defs: SVGDefsElement,
+    desc: SVGDescElement,
+    ellipse: SVGEllipseElement,
+    feBlend: SVGFEBlendElement,
+    feColorMatrix: SVGFEColorMatrixElement,
+    feComponentTransfer: SVGFEComponentTransferElement,
+    feComposite: SVGFECompositeElement,
+    feConvolveMatrix: SVGFEConvolveMatrixElement,
+    feDiffuseLighting: SVGFEDiffuseLightingElement,
+    feDisplacementMap: SVGFEDisplacementMapElement,
+    feDistantLight: SVGFEDistantLightElement,
+    feFlood: SVGFEFloodElement,
+    feFuncA: SVGFEFuncAElement,
+    feFuncB: SVGFEFuncBElement,
+    feFuncG: SVGFEFuncGElement,
+    feFuncR: SVGFEFuncRElement,
+    feGaussianBlur: SVGFEGaussianBlurElement,
+    feImage: SVGFEImageElement,
+    feMerge: SVGFEMergeElement,
+    feMergeNode: SVGFEMergeNodeElement,
+    feMorphology: SVGFEMorphologyElement,
+    feOffset: SVGFEOffsetElement,
+    fePointLight: SVGFEPointLightElement,
+    feSpecularLighting: SVGFESpecularLightingElement,
+    feSpotLight: SVGFESpotLightElement,
+    feTile: SVGFETileElement,
+    feTurbulence: SVGFETurbulenceElement,
+    filter: SVGFilterElement,
+    foreignObject: SVGForeignObjectElement,
+    g: SVGGElement,
+    image: SVGImageElement,
+    line: SVGLineElement,
+    linearGradient: SVGLinearGradientElement,
+    marker: SVGMarkerElement,
+    mask: SVGMaskElement,
+    metadata: SVGMetadataElement,
+    path: SVGPathElement,
+    pattern: SVGPatternElement,
+    polygon: SVGPolygonElement,
+    polyline: SVGPolylineElement,
+    radialGradient: SVGRadialGradientElement,
+    rect: SVGRectElement,
+    stop: SVGStopElement,
+    svg: SVGSVGElement,
+    switch: SVGSwitchElement,
+    symbol: SVGSymbolElement,
+    text: SVGTextElement,
+    textPath: SVGTextPathElement,
+    tspan: SVGTSpanElement,
+    use: SVGUseElement,
+    view: SVGViewElement
+  ): SVGElementTagNameMap = {
+    val __obj = js.Dynamic.literal(circle = circle, clipPath = clipPath, defs = defs, desc = desc, ellipse = ellipse, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, filter = filter, foreignObject = foreignObject, g = g, image = image, line = line, linearGradient = linearGradient, marker = marker, mask = mask, metadata = metadata, path = path, pattern = pattern, polygon = polygon, polyline = polyline, radialGradient = radialGradient, rect = rect, stop = stop, svg = svg, switch = switch, symbol = symbol, text = text, textPath = textPath, tspan = tspan, use = use, view = view)
+  
+    __obj.asInstanceOf[SVGElementTagNameMap]
+  }
+}
+

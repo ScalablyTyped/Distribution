@@ -578,15 +578,24 @@ package object underscoreNs {
   type LodashGet6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashGetOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashGetOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashGetOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
   ]
   type LodashGetOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 
@@ -1205,15 +1214,24 @@ package object underscoreNs {
   type LodashPath6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashPathOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashPathOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashPathOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
   ]
   type LodashPathOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 
@@ -1263,15 +1281,24 @@ package object underscoreNs {
   type LodashProp6x2 = js.Function1[/* path */ lodashLib.lodashMod.underscoreNs.PropertyPath, js.Any]
   type LodashPropOr1x3[TObject, TKey /* <: java.lang.String */, TDefault] = js.Function1[
     /* object */ js.UndefOr[TObject | scala.Null], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashPropOr1x5[TObject, TDefault] = js.Function1[
     /* path */ java.lang.String | js.Array[java.lang.String], 
-    (/* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[keyof TObject] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ]
   type LodashPropOr1x6[TObject, TKey /* <: java.lang.String */] = js.Function1[
     /* defaultValue */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | js.Any
   ]
   type LodashPropOr2x3[TDefault] = js.Function1[
     /* object */ js.UndefOr[lodashLib.lodashMod.underscoreNs.NumericDictionary[js.Any] | scala.Null], 

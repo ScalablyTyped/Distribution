@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "avvio"
-version := "6.1.0-d26192"
+version := "6.1.1-d26192"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

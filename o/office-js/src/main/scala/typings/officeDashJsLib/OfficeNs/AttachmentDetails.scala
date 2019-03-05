@@ -43,6 +43,12 @@ trait AttachmentDetails extends js.Object {
     * Gets the size of the attachment in bytes.
     */
   var size: scala.Double
+  /**
+    * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
+    * 
+    * [Api set: Mailbox Preview]
+    */
+  var url: java.lang.String
 }
 
 object AttachmentDetails {
@@ -53,9 +59,10 @@ object AttachmentDetails {
     id: java.lang.String,
     isInline: scala.Boolean,
     name: java.lang.String,
-    size: scala.Double
+    size: scala.Double,
+    url: java.lang.String
   ): AttachmentDetails = {
-    val __obj = js.Dynamic.literal(attachmentType = attachmentType, contentType = contentType, id = id, isInline = isInline, name = name, size = size)
+    val __obj = js.Dynamic.literal(attachmentType = attachmentType, contentType = contentType, id = id, isInline = isInline, name = name, size = size, url = url)
   
     __obj.asInstanceOf[AttachmentDetails]
   }

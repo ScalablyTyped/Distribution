@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_FormSyncWarnings extends js.Object {
   def apply[T](
     form: java.lang.String,
-    syncWarnings: reduxDashFormLib.reduxDashFormMod.FormWarnings[stdLib.FormData, T],
+    syncWarnings: reduxDashFormLib.reduxDashFormMod.FormWarnings[_, T],
     warning: T
   ): reduxDashFormLib.libActionsMod.FormAction = js.native
 }

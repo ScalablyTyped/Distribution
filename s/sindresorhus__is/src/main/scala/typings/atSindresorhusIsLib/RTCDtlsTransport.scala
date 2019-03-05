@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCDtlsTransport extends EventTarget {
+trait RTCDtlsTransport
+  extends EventTarget
+     with RTCTransport {
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]) | scala.Null = js.native
   var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   val state: RTCDtlsTransportState = js.native

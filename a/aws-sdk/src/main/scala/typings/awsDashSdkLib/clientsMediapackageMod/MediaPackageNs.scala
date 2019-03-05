@@ -22,6 +22,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait ClientApiVersions extends js.Object {
@@ -85,6 +86,7 @@ object MediaPackageNs extends js.Object {
     cannot be changed after a Channel is created.
       */
     var Id: __string
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateChannelResponse extends js.Object {
@@ -101,6 +103,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateOriginEndpointRequest extends js.Object {
@@ -131,6 +134,7 @@ object MediaPackageNs extends js.Object {
     If not specified, startover playback will be disabled for the OriginEndpoint.
       */
     var StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Amount of delay (seconds) to enforce on the playback of live content.
     If not specified, there will be no time delay in effect for the OriginEndpoint.
@@ -172,6 +176,7 @@ object MediaPackageNs extends js.Object {
     If not specified, startover playback will be disabled for the OriginEndpoint.
       */
     var StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Amount of delay (seconds) to enforce on the playback of live content.
     If not specified, there will be no time delay in effect for the OriginEndpoint.
@@ -279,6 +284,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DescribeOriginEndpointRequest extends js.Object {
@@ -318,6 +324,7 @@ object MediaPackageNs extends js.Object {
     If not specified, startover playback will be disabled for the OriginEndpoint.
       */
     var StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Amount of delay (seconds) to enforce on the playback of live content.
     If not specified, there will be no time delay in effect for the OriginEndpoint.
@@ -573,6 +580,14 @@ object MediaPackageNs extends js.Object {
     var OriginEndpoints: js.UndefOr[__listOfOriginEndpoint] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  }
+  
   trait MssEncryption extends js.Object {
     var SpekeKeyProvider: SpekeKeyProvider
   }
@@ -620,6 +635,7 @@ object MediaPackageNs extends js.Object {
     If not specified, startover playback will be disabled for the OriginEndpoint.
       */
     var StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Amount of delay (seconds) to enforce on the playback of live content.
     If not specified, there will be no time delay in effect for the OriginEndpoint.
@@ -656,6 +672,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait RotateIngestEndpointCredentialsRequest extends js.Object {
@@ -683,6 +700,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait SpekeKeyProvider extends js.Object {
@@ -725,6 +743,14 @@ object MediaPackageNs extends js.Object {
       */
     var StreamOrder: js.UndefOr[StreamOrder] = js.undefined
   }
+  
+  trait TagResourceRequest extends js.Object {
+    var ResourceArn: __string
+    var Tags: __mapOf__string
+  }
+  
+  trait Tags
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   @js.native
   trait Types
@@ -916,6 +942,29 @@ object MediaPackageNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListOriginEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * 
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Changes the Channel's first IngestEndpoint's username and password. WARNING - This API is deprecated. Please use RotateIngestEndpointCredentials instead
       */
     def rotateChannelCredentials(): awsDashSdkLib.libRequestMod.Request[RotateChannelCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -961,6 +1010,36 @@ object MediaPackageNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[RotateIngestEndpointCredentialsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Updates an existing Channel.
       */
@@ -1009,6 +1088,14 @@ object MediaPackageNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[UpdateOriginEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait UntagResourceRequest extends js.Object {
+    var ResourceArn: __string
+    /**
+      * The key(s) of tag to be deleted
+      */
+    var TagKeys: __listOf__string
+  }
+  
   trait UpdateChannelRequest extends js.Object {
     /**
       * A short text description of the Channel.
@@ -1034,6 +1121,7 @@ object MediaPackageNs extends js.Object {
       * The ID of the Channel.
       */
     var Id: js.UndefOr[__string] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait UpdateOriginEndpointRequest extends js.Object {
@@ -1099,6 +1187,7 @@ object MediaPackageNs extends js.Object {
     If not specified, startover playback will be disabled for the OriginEndpoint.
       */
     var StartoverWindowSeconds: js.UndefOr[__integer] = js.undefined
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Amount of delay (seconds) to enforce on the playback of live content.
     If not specified, there will be no time delay in effect for the OriginEndpoint.
@@ -1127,6 +1216,9 @@ object MediaPackageNs extends js.Object {
   trait _SegmentTemplateFormat extends js.Object
   
   trait _StreamOrder extends js.Object
+  
+  trait __mapOf__string
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   trait _apiVersion extends js.Object
   

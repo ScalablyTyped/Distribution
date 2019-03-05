@@ -60,9 +60,7 @@
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.runtime.Statics.anyHash(Statics.java:122)
-	at scala.collection.immutable.HashMap.elemHashCode(HashMap.scala:87)
-	at scala.collection.immutable.HashMap.computeHash(HashMap.scala:96)
+	at scala.collection.immutable.HashMap$HashTrieMap.get0(HashMap.scala:330)
 	at scala.collection.immutable.HashMap.get(HashMap.scala:56)
 	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:357)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:249)
@@ -1084,6 +1082,8 @@
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:90)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:81)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

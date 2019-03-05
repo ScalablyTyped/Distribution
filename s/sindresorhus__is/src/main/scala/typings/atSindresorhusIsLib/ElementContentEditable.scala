@@ -11,3 +11,12 @@ trait ElementContentEditable extends js.Object {
   val isContentEditable: scala.Boolean
 }
 
+object ElementContentEditable {
+  @scala.inline
+  def apply(contentEditable: java.lang.String, inputMode: java.lang.String, isContentEditable: scala.Boolean): ElementContentEditable = {
+    val __obj = js.Dynamic.literal(contentEditable = contentEditable, inputMode = inputMode, isContentEditable = isContentEditable)
+  
+    __obj.asInstanceOf[ElementContentEditable]
+  }
+}
+

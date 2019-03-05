@@ -58,6 +58,7 @@ trait DesiredCapabilities extends Capabilities {
   var logLevel: js.UndefOr[java.lang.String] = js.undefined
   var loggingPrefs: js.UndefOr[webdriverLib.Anon_Browser] = js.undefined
   var maxInstances: js.UndefOr[scala.Double] = js.undefined
+  var mobileEmulationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var `moz:firefoxOptions`: js.UndefOr[FirefoxOptions] = js.undefined
   var nativeEvents: js.UndefOr[scala.Boolean] = js.undefined
   var onlyProxySeleniumTraffic: js.UndefOr[scala.Boolean] = js.undefined
@@ -142,6 +143,7 @@ object DesiredCapabilities {
     logLevel: java.lang.String = null,
     loggingPrefs: webdriverLib.Anon_Browser = null,
     maxInstances: scala.Int | scala.Double = null,
+    mobileEmulationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     `moz:firefoxOptions`: FirefoxOptions = null,
     nativeEvents: js.UndefOr[scala.Boolean] = js.undefined,
     onlyProxySeleniumTraffic: js.UndefOr[scala.Boolean] = js.undefined,
@@ -225,6 +227,7 @@ object DesiredCapabilities {
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
     if (loggingPrefs != null) __obj.updateDynamic("loggingPrefs")(loggingPrefs)
     if (maxInstances != null) __obj.updateDynamic("maxInstances")(maxInstances.asInstanceOf[js.Any])
+    if (!js.isUndefined(mobileEmulationEnabled)) __obj.updateDynamic("mobileEmulationEnabled")(mobileEmulationEnabled)
     if (`moz:firefoxOptions` != null) __obj.updateDynamic("moz:firefoxOptions")(`moz:firefoxOptions`)
     if (!js.isUndefined(nativeEvents)) __obj.updateDynamic("nativeEvents")(nativeEvents)
     if (!js.isUndefined(onlyProxySeleniumTraffic)) __obj.updateDynamic("onlyProxySeleniumTraffic")(onlyProxySeleniumTraffic)

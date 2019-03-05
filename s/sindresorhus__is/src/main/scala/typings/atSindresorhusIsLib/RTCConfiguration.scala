@@ -15,3 +15,26 @@ trait RTCConfiguration extends js.Object {
   var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
 }
 
+object RTCConfiguration {
+  @scala.inline
+  def apply(
+    bundlePolicy: RTCBundlePolicy = null,
+    certificates: Array[RTCCertificate] = null,
+    iceCandidatePoolSize: scala.Int | scala.Double = null,
+    iceServers: Array[RTCIceServer] = null,
+    iceTransportPolicy: RTCIceTransportPolicy = null,
+    peerIdentity: java.lang.String = null,
+    rtcpMuxPolicy: RTCRtcpMuxPolicy = null
+  ): RTCConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (bundlePolicy != null) __obj.updateDynamic("bundlePolicy")(bundlePolicy)
+    if (certificates != null) __obj.updateDynamic("certificates")(certificates)
+    if (iceCandidatePoolSize != null) __obj.updateDynamic("iceCandidatePoolSize")(iceCandidatePoolSize.asInstanceOf[js.Any])
+    if (iceServers != null) __obj.updateDynamic("iceServers")(iceServers)
+    if (iceTransportPolicy != null) __obj.updateDynamic("iceTransportPolicy")(iceTransportPolicy)
+    if (peerIdentity != null) __obj.updateDynamic("peerIdentity")(peerIdentity)
+    if (rtcpMuxPolicy != null) __obj.updateDynamic("rtcpMuxPolicy")(rtcpMuxPolicy)
+    __obj.asInstanceOf[RTCConfiguration]
+  }
+}
+

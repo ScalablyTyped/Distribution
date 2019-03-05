@@ -16,7 +16,8 @@ trait Title
       vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       TitleFrame | vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
-      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue, 
+      TitleOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
     ] {
   /**
     * A boolean flag indicating if the title element should respond to input events such as mouse hover.
@@ -64,7 +65,7 @@ object Title {
     limit: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
     name: java.lang.String = null,
     offset: vegaDashTypingsLib.typesSpecValuesMod.NumberValue = null,
-    orient: TitleOrient = null,
+    orient: TitleOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
     style: java.lang.String | js.Array[java.lang.String] = null,
     zindex: scala.Int | scala.Double = null
   ): Title = {
@@ -84,7 +85,7 @@ object Title {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]

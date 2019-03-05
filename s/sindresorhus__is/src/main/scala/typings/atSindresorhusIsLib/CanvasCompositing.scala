@@ -10,3 +10,12 @@ trait CanvasCompositing extends js.Object {
   var globalCompositeOperation: java.lang.String
 }
 
+object CanvasCompositing {
+  @scala.inline
+  def apply(globalAlpha: scala.Double, globalCompositeOperation: java.lang.String): CanvasCompositing = {
+    val __obj = js.Dynamic.literal(globalAlpha = globalAlpha, globalCompositeOperation = globalCompositeOperation)
+  
+    __obj.asInstanceOf[CanvasCompositing]
+  }
+}
+

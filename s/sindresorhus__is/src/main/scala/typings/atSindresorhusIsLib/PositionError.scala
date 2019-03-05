@@ -13,3 +13,18 @@ trait PositionError extends js.Object {
   val message: java.lang.String
 }
 
+object PositionError {
+  @scala.inline
+  def apply(
+    PERMISSION_DENIED: scala.Double,
+    POSITION_UNAVAILABLE: scala.Double,
+    TIMEOUT: scala.Double,
+    code: scala.Double,
+    message: java.lang.String
+  ): PositionError = {
+    val __obj = js.Dynamic.literal(PERMISSION_DENIED = PERMISSION_DENIED, POSITION_UNAVAILABLE = POSITION_UNAVAILABLE, TIMEOUT = TIMEOUT, code = code, message = message)
+  
+    __obj.asInstanceOf[PositionError]
+  }
+}
+

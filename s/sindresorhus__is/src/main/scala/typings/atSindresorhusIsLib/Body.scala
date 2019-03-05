@@ -15,3 +15,20 @@ trait Body extends js.Object {
   def text(): Promise[java.lang.String]
 }
 
+object Body {
+  @scala.inline
+  def apply(
+    arrayBuffer: js.Function0[Promise[ArrayBuffer]],
+    blob: js.Function0[Promise[Blob]],
+    bodyUsed: scala.Boolean,
+    formData: js.Function0[Promise[FormData]],
+    json: js.Function0[Promise[_]],
+    text: js.Function0[Promise[java.lang.String]],
+    body: ReadableStream[Uint8Array] = null
+  ): Body = {
+    val __obj = js.Dynamic.literal(arrayBuffer = arrayBuffer, blob = blob, bodyUsed = bodyUsed, formData = formData, json = json, text = text)
+    if (body != null) __obj.updateDynamic("body")(body)
+    __obj.asInstanceOf[Body]
+  }
+}
+

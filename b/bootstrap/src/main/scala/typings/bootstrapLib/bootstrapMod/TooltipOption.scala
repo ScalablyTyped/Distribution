@@ -82,6 +82,18 @@ trait TooltipOption extends js.Object {
     ])
   ] = js.undefined
   /**
+    * Enable or disable the sanitization. If activated 'template', 'content' and 'title' options will be sanitized.
+    *
+    * @default true
+    */
+  var sanitize: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Here you can supply your own sanitize function. This can be useful if you prefer to use a dedicated library to perform sanitization.
+    *
+    * @default null
+    */
+  var sanitizeFn: js.UndefOr[scala.Null | (js.Function1[/* input */ java.lang.String, java.lang.String])] = js.undefined
+  /**
     * If a selector is provided, tooltip or popover objects will be delegated to the specified targets.
     * In practice, this is used to enable dynamic HTML content to have popovers added.
     *
@@ -116,6 +128,10 @@ trait TooltipOption extends js.Object {
     * @default tooltip: "hover focus", popover: "click"
     */
   var trigger: js.UndefOr[Trigger] = js.undefined
+  /**
+    * Object which contains allowed attributes and tags.
+    */
+  var whiteList: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
 }
 
 object TooltipOption {
@@ -134,10 +150,13 @@ object TooltipOption {
       /* trigger */ stdLib.Element, 
       Placement
     ]) = null,
+    sanitize: js.UndefOr[scala.Boolean] = js.undefined,
+    sanitizeFn: js.Function1[/* input */ java.lang.String, java.lang.String] = null,
     selector: java.lang.String | bootstrapLib.bootstrapLibNumbers.`false` = null,
     template: java.lang.String = null,
     title: java.lang.String | stdLib.Element | (js.ThisFunction0[/* this */ stdLib.Element, java.lang.String | stdLib.Element]) = null,
-    trigger: Trigger = null
+    trigger: Trigger = null,
+    whiteList: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null
   ): TooltipOption = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
@@ -148,10 +167,13 @@ object TooltipOption {
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
+    if (sanitizeFn != null) __obj.updateDynamic("sanitizeFn")(sanitizeFn)
     if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     if (template != null) __obj.updateDynamic("template")(template)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (whiteList != null) __obj.updateDynamic("whiteList")(whiteList)
     __obj.asInstanceOf[TooltipOption]
   }
 }

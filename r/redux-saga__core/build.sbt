@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-saga__core"
-version := "1.0.2-a8f825"
+version := "1.0.2-1865aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bfac6c",
   "org.scalablytyped" %%% "typescript-compare" % "0.0.2-0fa312",
   "org.scalablytyped" %%% "typescript-logic" % "0.0.0-205c84",
-  "org.scalablytyped" %%% "typescript-tuple" % "2.1.1-77814d")
+  "org.scalablytyped" %%% "typescript-tuple" % "2.2.0-4b07ca")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

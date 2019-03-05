@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait PageHeaderProps extends js.Object {
   var backIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var breadcrumb: js.UndefOr[antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var onBack: js.UndefOr[
@@ -29,6 +30,7 @@ object PageHeaderProps {
     title: reactLib.reactMod.ReactNs.ReactNode,
     backIcon: reactLib.reactMod.ReactNs.ReactNode = null,
     breadcrumb: antdLib.libBreadcrumbBreadcrumbMod.BreadcrumbProps = null,
+    className: java.lang.String = null,
     extra: reactLib.reactMod.ReactNs.ReactNode = null,
     footer: reactLib.reactMod.ReactNs.ReactNode = null,
     onBack: js.Function1[
@@ -43,6 +45,7 @@ object PageHeaderProps {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb)
+    if (className != null) __obj.updateDynamic("className")(className)
     if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (onBack != null) __obj.updateDynamic("onBack")(onBack)

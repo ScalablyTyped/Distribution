@@ -10,3 +10,12 @@ trait BroadcastChannelEventMap extends js.Object {
   var messageerror: MessageEvent
 }
 
+object BroadcastChannelEventMap {
+  @scala.inline
+  def apply(message: MessageEvent, messageerror: MessageEvent): BroadcastChannelEventMap = {
+    val __obj = js.Dynamic.literal(message = message, messageerror = messageerror)
+  
+    __obj.asInstanceOf[BroadcastChannelEventMap]
+  }
+}
+

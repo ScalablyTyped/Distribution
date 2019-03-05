@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL]
-  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] {
+trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR]
+  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] {
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for gradient legends.
     *
@@ -26,7 +26,7 @@ trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL]
   /**
     * Legend orient group layout parameters.
     */
-  var layout: js.UndefOr[LL] = js.undefined
+  var layout: js.UndefOr[LegendLayout] = js.undefined
   /**
     * Border stroke dash pattern for the full legend.
     */
@@ -57,7 +57,7 @@ trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL]
 
 object LegendConfig {
   @scala.inline
-  def apply[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL](
+  def apply[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR](
     clipHeight: NS = null,
     columnPadding: NS = null,
     columns: NS = null,
@@ -85,9 +85,9 @@ object LegendConfig {
     labelOverlap: LO = null,
     labelPadding: N = null,
     labelSeparation: NS = null,
-    layout: LL = null,
+    layout: LegendLayout = null,
     offset: N = null,
-    orient: vegaDashTypingsLib.typesSpecLegendMod.LegendOrient = null,
+    orient: LOR = null,
     padding: N = null,
     rowPadding: NS = null,
     strokeColor: C = null,
@@ -117,7 +117,7 @@ object LegendConfig {
     titleOpacity: N = null,
     titleOrient: O = null,
     titlePadding: N = null
-  ): LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL] = {
+  ): LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] = {
     val __obj = js.Dynamic.literal()
     if (clipHeight != null) __obj.updateDynamic("clipHeight")(clipHeight.asInstanceOf[js.Any])
     if (columnPadding != null) __obj.updateDynamic("columnPadding")(columnPadding.asInstanceOf[js.Any])
@@ -146,9 +146,9 @@ object LegendConfig {
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rowPadding != null) __obj.updateDynamic("rowPadding")(rowPadding.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
@@ -178,7 +178,7 @@ object LegendConfig {
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LL]]
+    __obj.asInstanceOf[LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR]]
   }
 }
 

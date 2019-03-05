@@ -15,17 +15,27 @@ class TimelineLite () extends SimpleTimeline {
   /** Inserts a special callback that pauses playback of the timeline at a particular time or label. */
   def addPause(): TimelineLite = js.native
   def addPause(position: js.Any): TimelineLite = js.native
-  def addPause(position: js.Any, callback: js.Function0[scala.Unit]): TimelineLite = js.native
-  def addPause(position: js.Any, callback: js.Function0[scala.Unit], params: js.Array[_]): TimelineLite = js.native
-  def addPause(position: js.Any, callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Any): TimelineLite = js.native
+  def addPause(position: js.Any, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): TimelineLite = js.native
+  def addPause(position: js.Any, callback: js.Function1[/* repeated */ js.Any, scala.Unit], params: js.Array[_]): TimelineLite = js.native
+  def addPause(
+    position: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_],
+    scope: js.Any
+  ): TimelineLite = js.native
   /**
     * Adds a callback to the end of the timeline (or elsewhere using the "position" parameter) - this is a convenience method that accomplishes exactly the same thing as
     * add( TweenLite.delayedCall(...) ) but with less code.
     */
-  def call(callback: js.Function0[scala.Unit]): TimelineLite = js.native
-  def call(callback: js.Function0[scala.Unit], params: js.Array[_]): TimelineLite = js.native
-  def call(callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Any): TimelineLite = js.native
-  def call(callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Any, position: js.Any): TimelineLite = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): TimelineLite = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit], params: js.Array[_]): TimelineLite = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit], params: js.Array[_], scope: js.Any): TimelineLite = js.native
+  def call(
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_],
+    scope: js.Any,
+    position: js.Any
+  ): TimelineLite = js.native
   /** Empties the timeline of all tweens, timelines, and callbacks (and optionally labels too). */
   def clear(): TimelineLite = js.native
   def clear(labels: scala.Boolean): TimelineLite = js.native
@@ -97,7 +107,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): TimelineLite = js.native
   def staggerFrom(
     targets: js.Any,
@@ -105,7 +115,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): TimelineLite = js.native
   def staggerFrom(
@@ -114,7 +124,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteScope: js.Any
   ): TimelineLite = js.native
@@ -145,7 +155,7 @@ class TimelineLite () extends SimpleTimeline {
     toVars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): TimelineLite = js.native
   def staggerFromTo(
     targets: js.Any,
@@ -154,7 +164,7 @@ class TimelineLite () extends SimpleTimeline {
     toVars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): TimelineLite = js.native
   def staggerFromTo(
@@ -164,7 +174,7 @@ class TimelineLite () extends SimpleTimeline {
     toVars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteAllScope: js.Any
   ): TimelineLite = js.native
@@ -180,7 +190,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): TimelineLite = js.native
   def staggerTo(
     targets: js.Any,
@@ -188,7 +198,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): TimelineLite = js.native
   def staggerTo(
@@ -197,7 +207,7 @@ class TimelineLite () extends SimpleTimeline {
     vars: js.Object,
     stagger: scala.Double,
     position: js.Any,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteAllScope: js.Any
   ): TimelineLite = js.native

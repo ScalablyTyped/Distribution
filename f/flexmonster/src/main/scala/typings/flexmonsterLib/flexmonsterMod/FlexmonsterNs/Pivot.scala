@@ -10,6 +10,7 @@ trait Pivot extends js.Object {
   var fusioncharts: js.UndefOr[flexmonsterLib.Anon_CallbackHandler] = js.native
   var googlecharts: js.UndefOr[flexmonsterLib.Anon_CallbackHandlerFormat] = js.native
   var highcharts: js.UndefOr[flexmonsterLib.Anon_CallbackHandlerFormatGetAxisFormat] = js.native
+  var toolbar: Toolbar = js.native
   var version: java.lang.String = js.native
   def addCalculatedMeasure(measure: Measure): scala.Unit = js.native
   def addCondition(condition: ConditionalFormat): scala.Unit = js.native

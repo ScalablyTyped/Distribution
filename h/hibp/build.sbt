@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hibp"
-version := "7.5.0-82f665"
+version := "7.5.1-82f665"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] extends js.Object {
+trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] extends js.Object {
   // ---------- Symbol Layout ----------
   /**
     * The height in pixels to clip symbol legend entries and limit their size.
@@ -145,7 +145,7 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] extends js.O
     *
     * __Default value:__ `"right"`
     */
-  var orient: js.UndefOr[LegendOrient] = js.undefined
+  var orient: js.UndefOr[LOR] = js.undefined
   /**
     * The padding between the border and content of the legend group.
     *
@@ -274,7 +274,7 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] extends js.O
 
 object BaseLegend {
   @scala.inline
-  def apply[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN](
+  def apply[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR](
     clipHeight: NS = null,
     columnPadding: NS = null,
     columns: NS = null,
@@ -300,7 +300,7 @@ object BaseLegend {
     labelPadding: N = null,
     labelSeparation: NS = null,
     offset: N = null,
-    orient: LegendOrient = null,
+    orient: LOR = null,
     padding: N = null,
     rowPadding: NS = null,
     strokeColor: C = null,
@@ -325,7 +325,7 @@ object BaseLegend {
     titleOpacity: N = null,
     titleOrient: O = null,
     titlePadding: N = null
-  ): BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] = {
+  ): BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR] = {
     val __obj = js.Dynamic.literal()
     if (clipHeight != null) __obj.updateDynamic("clipHeight")(clipHeight.asInstanceOf[js.Any])
     if (columnPadding != null) __obj.updateDynamic("columnPadding")(columnPadding.asInstanceOf[js.Any])
@@ -352,7 +352,7 @@ object BaseLegend {
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelSeparation != null) __obj.updateDynamic("labelSeparation")(labelSeparation.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (rowPadding != null) __obj.updateDynamic("rowPadding")(rowPadding.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
@@ -377,7 +377,7 @@ object BaseLegend {
     if (titleOpacity != null) __obj.updateDynamic("titleOpacity")(titleOpacity.asInstanceOf[js.Any])
     if (titleOrient != null) __obj.updateDynamic("titleOrient")(titleOrient.asInstanceOf[js.Any])
     if (titlePadding != null) __obj.updateDynamic("titlePadding")(titlePadding.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN]]
+    __obj.asInstanceOf[BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN, LOR]]
   }
 }
 

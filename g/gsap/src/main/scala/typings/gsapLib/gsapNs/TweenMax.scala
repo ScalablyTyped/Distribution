@@ -34,12 +34,21 @@ class TweenMax protected () extends TweenLite {
 @js.native
 object TweenMax extends js.Object {
   /** Provides a simple way to call a () => void after a set amount of time (or frames). */
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit]): gsapLib.gsapNs.TweenMax = js.native
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit], params: js.Array[_]): gsapLib.gsapNs.TweenMax = js.native
-  def delayedCall(delay: scala.Double, callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Object): gsapLib.gsapNs.TweenMax = js.native
+  def delayedCall(delay: scala.Double, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): gsapLib.gsapNs.TweenMax = js.native
   def delayedCall(
     delay: scala.Double,
-    callback: js.Function0[scala.Unit],
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_]
+  ): gsapLib.gsapNs.TweenMax = js.native
+  def delayedCall(
+    delay: scala.Double,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_],
+    scope: js.Object
+  ): gsapLib.gsapNs.TweenMax = js.native
+  def delayedCall(
+    delay: scala.Double,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
     params: js.Array[_],
     scope: js.Object,
     useFrames: scala.Boolean
@@ -82,7 +91,7 @@ object TweenMax extends js.Object {
   def killChildTweensOf(parent: js.Any): scala.Unit = js.native
   def killChildTweensOf(parent: js.Any, complete: scala.Boolean): scala.Unit = js.native
   /** Immediately kills all of the delayedCalls to a particular () => void. */
-  def killDelayedCallsTo(func: js.Function0[scala.Unit]): scala.Unit = js.native
+  def killDelayedCallsTo(func: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   /** Kills all the tweens (or specific tweening properties) of a particular object or the delayedCalls to a particular () => void. */
   def killTweensOf(target: js.Object): scala.Unit = js.native
   def killTweensOf(target: js.Object, vars: js.Object): scala.Unit = js.native
@@ -108,14 +117,14 @@ object TweenMax extends js.Object {
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Array[_] = js.native
   def staggerFrom(
     targets: js.Any,
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): js.Array[_] = js.native
   def staggerFrom(
@@ -123,7 +132,7 @@ object TweenMax extends js.Object {
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
@@ -144,7 +153,7 @@ object TweenMax extends js.Object {
     fromVars: js.Object,
     toVars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Array[_] = js.native
   def staggerFromTo(
     targets: js.Any,
@@ -152,7 +161,7 @@ object TweenMax extends js.Object {
     fromVars: js.Object,
     toVars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): js.Array[_] = js.native
   def staggerFromTo(
@@ -161,7 +170,7 @@ object TweenMax extends js.Object {
     fromVars: js.Object,
     toVars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteAllScope: js.Any
   ): js.Array[_] = js.native
@@ -175,14 +184,14 @@ object TweenMax extends js.Object {
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit]
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Array[_] = js.native
   def staggerTo(
     targets: js.Any,
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_]
   ): js.Array[_] = js.native
   def staggerTo(
@@ -190,7 +199,7 @@ object TweenMax extends js.Object {
     duration: scala.Double,
     vars: js.Object,
     stagger: scala.Double,
-    onCompleteAll: js.Function0[scala.Unit],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, scala.Unit],
     onCompleteAllParams: js.Array[_],
     onCompleteAllScope: js.Any
   ): js.Array[_] = js.native

@@ -15,3 +15,20 @@ trait ResolvedCollatorOptions extends js.Object {
   var usage: java.lang.String
 }
 
+object ResolvedCollatorOptions {
+  @scala.inline
+  def apply(
+    caseFirst: java.lang.String,
+    collation: java.lang.String,
+    ignorePunctuation: scala.Boolean,
+    locale: java.lang.String,
+    numeric: scala.Boolean,
+    sensitivity: java.lang.String,
+    usage: java.lang.String
+  ): ResolvedCollatorOptions = {
+    val __obj = js.Dynamic.literal(caseFirst = caseFirst, collation = collation, ignorePunctuation = ignorePunctuation, locale = locale, numeric = numeric, sensitivity = sensitivity, usage = usage)
+  
+    __obj.asInstanceOf[ResolvedCollatorOptions]
+  }
+}
+

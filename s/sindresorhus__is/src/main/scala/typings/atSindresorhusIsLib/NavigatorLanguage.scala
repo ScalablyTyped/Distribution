@@ -10,3 +10,12 @@ trait NavigatorLanguage extends js.Object {
   val languages: ReadonlyArray[java.lang.String]
 }
 
+object NavigatorLanguage {
+  @scala.inline
+  def apply(language: java.lang.String, languages: ReadonlyArray[java.lang.String]): NavigatorLanguage = {
+    val __obj = js.Dynamic.literal(language = language, languages = languages)
+  
+    __obj.asInstanceOf[NavigatorLanguage]
+  }
+}
+

@@ -50,6 +50,16 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.undefined
   /**
+    * The **`border-block`** CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-block
+    */
+  var borderBlock: js.UndefOr[BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]] = js.undefined
+  /**
     * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
@@ -100,6 +110,16 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/border-image
     */
   var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
+  /**
+    * The **`border-inline`** CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   | **66**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
+    */
+  var borderInline: js.UndefOr[BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]] = js.undefined
   /**
     * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
     *
@@ -347,7 +367,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
-    * | **1**  |   Yes   | **4**  | **12** | No  |
+    * | **1**  |  **2**  | **4**  | **12** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask
     */
@@ -484,11 +504,13 @@ object StandardShorthandPropertiesFallback {
     animation: AnimationProperty | js.Array[AnimationProperty] = null,
     background: BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]] = null,
     border: BorderProperty[TLength] | js.Array[BorderProperty[TLength]] = null,
+    borderBlock: BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]] = null,
     borderBlockEnd: BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]] = null,
     borderBlockStart: BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]] = null,
     borderBottom: BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]] = null,
     borderColor: BorderColorProperty | js.Array[BorderColorProperty] = null,
     borderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    borderInline: BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]] = null,
     borderInlineEnd: BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]] = null,
     borderInlineStart: BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]] = null,
     borderLeft: BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]] = null,
@@ -528,11 +550,13 @@ object StandardShorthandPropertiesFallback {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (borderBlock != null) __obj.updateDynamic("borderBlock")(borderBlock.asInstanceOf[js.Any])
     if (borderBlockEnd != null) __obj.updateDynamic("borderBlockEnd")(borderBlockEnd.asInstanceOf[js.Any])
     if (borderBlockStart != null) __obj.updateDynamic("borderBlockStart")(borderBlockStart.asInstanceOf[js.Any])
     if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderImage != null) __obj.updateDynamic("borderImage")(borderImage.asInstanceOf[js.Any])
+    if (borderInline != null) __obj.updateDynamic("borderInline")(borderInline.asInstanceOf[js.Any])
     if (borderInlineEnd != null) __obj.updateDynamic("borderInlineEnd")(borderInlineEnd.asInstanceOf[js.Any])
     if (borderInlineStart != null) __obj.updateDynamic("borderInlineStart")(borderInlineStart.asInstanceOf[js.Any])
     if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])

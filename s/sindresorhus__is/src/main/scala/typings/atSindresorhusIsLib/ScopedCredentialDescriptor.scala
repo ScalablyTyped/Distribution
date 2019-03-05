@@ -11,3 +11,18 @@ trait ScopedCredentialDescriptor extends js.Object {
   var `type`: ScopedCredentialType
 }
 
+object ScopedCredentialDescriptor {
+  @scala.inline
+  def apply(
+    `type`: ScopedCredentialType,
+    id: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer = null,
+    transports: Array[Transport] = null
+  ): ScopedCredentialDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    __obj.asInstanceOf[ScopedCredentialDescriptor]
+  }
+}
+

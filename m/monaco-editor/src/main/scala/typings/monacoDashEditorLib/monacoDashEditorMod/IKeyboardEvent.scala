@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IKeyboardEvent extends js.Object {
+  val _standardKeyboardEventBrand: monacoDashEditorLib.monacoDashEditorLibNumbers.`true`
   val altKey: scala.Boolean
   val browserEvent: stdLib.KeyboardEvent
   val code: java.lang.String
@@ -22,6 +23,7 @@ trait IKeyboardEvent extends js.Object {
 object IKeyboardEvent {
   @scala.inline
   def apply(
+    _standardKeyboardEventBrand: monacoDashEditorLib.monacoDashEditorLibNumbers.`true`,
     altKey: scala.Boolean,
     browserEvent: stdLib.KeyboardEvent,
     code: java.lang.String,
@@ -34,7 +36,7 @@ object IKeyboardEvent {
     stopPropagation: js.Function0[scala.Unit],
     target: stdLib.HTMLElement
   ): IKeyboardEvent = {
-    val __obj = js.Dynamic.literal(altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = equals, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target)
+    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = _standardKeyboardEventBrand, altKey = altKey, browserEvent = browserEvent, code = code, ctrlKey = ctrlKey, equals = equals, keyCode = keyCode, metaKey = metaKey, preventDefault = preventDefault, shiftKey = shiftKey, stopPropagation = stopPropagation, target = target)
   
     __obj.asInstanceOf[IKeyboardEvent]
   }

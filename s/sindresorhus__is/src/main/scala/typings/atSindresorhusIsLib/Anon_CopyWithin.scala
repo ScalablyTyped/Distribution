@@ -15,3 +15,20 @@ trait Anon_CopyWithin extends js.Object {
   var values: scala.Boolean
 }
 
+object Anon_CopyWithin {
+  @scala.inline
+  def apply(
+    copyWithin: scala.Boolean,
+    entries: scala.Boolean,
+    fill: scala.Boolean,
+    find: scala.Boolean,
+    findIndex: scala.Boolean,
+    keys: scala.Boolean,
+    values: scala.Boolean
+  ): Anon_CopyWithin = {
+    val __obj = js.Dynamic.literal(copyWithin = copyWithin, entries = entries, fill = fill, find = find, findIndex = findIndex, keys = keys, values = values)
+  
+    __obj.asInstanceOf[Anon_CopyWithin]
+  }
+}
+

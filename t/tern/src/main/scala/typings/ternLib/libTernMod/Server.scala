@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Server extends js.Object {
+  val cx: ternLib.libInferMod.Context = js.native
+  val files: js.Array[File] = js.native
+  val options: ConstructorOptions = js.native
+  val plugins: js.Any = js.native
   /**
     * Add a set of type definitions to the server. If `atFront` is true, they will be added before all other
     * existing definitions. Otherwise, they are added at the back.
@@ -53,10 +57,12 @@ trait Server extends js.Object {
   def request[Q /* <: Query */, D /* <: Document */](
     doc: D with ternLib.Anon_Query[Q],
     callback: js.Function2[
-      /* error */ js.UndefOr[stdLib.Error], 
+      /* error */ java.lang.String | scala.Null, 
       /* response */ js.UndefOr[js.Object | QueryResult[Q]], 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def reset(): scala.Unit = js.native
+  def signal(event: java.lang.String, file: File): scala.Unit = js.native
 }
 

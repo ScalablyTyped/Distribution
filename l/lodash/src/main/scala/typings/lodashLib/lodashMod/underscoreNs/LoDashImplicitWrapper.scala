@@ -1633,12 +1633,18 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     `this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]],
     path: TKey,
     defaultValue: TDefault
-  ): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  ): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](
     `this`: LoDashImplicitWrapper[js.UndefOr[TObject | scala.Null]],
     path: js.Array[TKey],
     defaultValue: TDefault
-  ): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  ): (stdLib.Exclude[
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+    js.UndefOr[scala.Nothing]
+  ]) | TDefault = js.native
   /**
     * @see _.get
     */

@@ -6,15 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Application extends js.Object {
-  var application: java.lang.String
-  var brand: java.lang.String
+  var application: js.UndefOr[java.lang.String] = js.undefined
+  var brand: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_Application {
   @scala.inline
-  def apply(application: java.lang.String, brand: java.lang.String): Anon_Application = {
-    val __obj = js.Dynamic.literal(application = application, brand = brand)
-  
+  def apply(application: java.lang.String = null, brand: java.lang.String = null): Anon_Application = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
     __obj.asInstanceOf[Anon_Application]
   }
 }

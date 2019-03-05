@@ -10,3 +10,12 @@ trait HmacKeyAlgorithm extends KeyAlgorithm {
   var length: scala.Double
 }
 
+object HmacKeyAlgorithm {
+  @scala.inline
+  def apply(hash: KeyAlgorithm, length: scala.Double, name: java.lang.String): HmacKeyAlgorithm = {
+    val __obj = js.Dynamic.literal(hash = hash, length = length, name = name)
+  
+    __obj.asInstanceOf[HmacKeyAlgorithm]
+  }
+}
+

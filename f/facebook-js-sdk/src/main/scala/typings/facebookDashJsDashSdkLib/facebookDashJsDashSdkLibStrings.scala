@@ -97,6 +97,12 @@ object facebookDashJsDashSdkLibStrings {
   sealed trait purchaseitem extends js.Object
   
   @js.native
+  sealed trait reauthenticate extends js.Object
+  
+  @js.native
+  sealed trait reauthorize extends js.Object
+  
+  @js.native
   sealed trait rerequest extends js.Object
   
   @js.native
@@ -174,6 +180,10 @@ object facebookDashJsDashSdkLibStrings {
   def purchaseiap: purchaseiap = "purchaseiap".asInstanceOf[purchaseiap]
   @scala.inline
   def purchaseitem: purchaseitem = "purchaseitem".asInstanceOf[purchaseitem]
+  @scala.inline
+  def reauthenticate: reauthenticate = "reauthenticate".asInstanceOf[reauthenticate]
+  @scala.inline
+  def reauthorize: reauthorize = "reauthorize".asInstanceOf[reauthorize]
   @scala.inline
   def rerequest: rerequest = "rerequest".asInstanceOf[rerequest]
   @scala.inline

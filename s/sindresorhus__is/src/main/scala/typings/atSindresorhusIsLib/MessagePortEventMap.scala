@@ -10,3 +10,12 @@ trait MessagePortEventMap extends js.Object {
   var messageerror: MessageEvent
 }
 
+object MessagePortEventMap {
+  @scala.inline
+  def apply(message: MessageEvent, messageerror: MessageEvent): MessagePortEventMap = {
+    val __obj = js.Dynamic.literal(message = message, messageerror = messageerror)
+  
+    __obj.asInstanceOf[MessagePortEventMap]
+  }
+}
+

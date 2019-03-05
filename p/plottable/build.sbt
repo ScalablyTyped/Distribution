@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plottable"
-version := "3.8.4-f0d6cd"
+version := "3.8.4-51c6db"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -41,7 +41,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190212Z-7a197a",
   "org.scalablytyped" %%% "is-plain-object" % "2.0.4-6255e6",
   "org.scalablytyped" %%% "isobject" % "3.0.1-9d54b1",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "tslib" % "1.9.3-d28c21",
   "org.scalablytyped" %%% "typesettable" % "4.1.0-154eae")

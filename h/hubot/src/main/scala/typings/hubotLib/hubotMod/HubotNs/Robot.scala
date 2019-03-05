@@ -11,6 +11,8 @@ trait Robot[A] extends js.Object {
   var alias: java.lang.String = js.native
   var brain: Brain = js.native
   var name: java.lang.String = js.native
+  def catchAll(callback: ListenerCallback[this.type]): scala.Unit = js.native
+  def catchAll(options: js.Any, callback: ListenerCallback[this.type]): scala.Unit = js.native
   def hear(regex: stdLib.RegExp, callback: ListenerCallback[this.type]): scala.Unit = js.native
   def hear(regex: stdLib.RegExp, options: js.Any, callback: ListenerCallback[this.type]): scala.Unit = js.native
   def helpCommands(): js.Array[java.lang.String] = js.native

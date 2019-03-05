@@ -10,3 +10,12 @@ trait RsaKeyGenParams extends Algorithm {
   var publicExponent: BigInteger
 }
 
+object RsaKeyGenParams {
+  @scala.inline
+  def apply(modulusLength: scala.Double, name: java.lang.String, publicExponent: BigInteger): RsaKeyGenParams = {
+    val __obj = js.Dynamic.literal(modulusLength = modulusLength, name = name, publicExponent = publicExponent)
+  
+    __obj.asInstanceOf[RsaKeyGenParams]
+  }
+}
+

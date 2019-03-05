@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.5-19f1e0"
+version := "3.1.5-506c91"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -30,7 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f5a31c",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-24c354",
   "org.scalablytyped" %%% "listr" % "0.13-dt-20180306Z-13267b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-2e7712",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190227Z-56553a",
   "org.scalablytyped" %%% "log-symbols" % "2.0-dt-20180214Z-5941ab",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-f71186",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-5de375",
@@ -39,8 +39,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-fd0a52",
   "org.scalablytyped" %%% "ramda" % "0.25-dt-20190228Z-295efd",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-e9e8b4",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190223Z-ffcec9",
-  "org.scalablytyped" %%% "sinon-chai" % "3.2.0-dt-20181212Z-461200",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190303Z-ffcec9",
+  "org.scalablytyped" %%% "sinon-chai" % "3.2.0-dt-20181212Z-d64d10",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b709fe",
   "org.scalablytyped" %%% "std" % "3.3-05be79",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-bedf31",

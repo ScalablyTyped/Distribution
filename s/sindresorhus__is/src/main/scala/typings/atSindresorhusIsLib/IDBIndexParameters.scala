@@ -10,3 +10,16 @@ trait IDBIndexParameters extends js.Object {
   var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDBIndexParameters {
+  @scala.inline
+  def apply(
+    multiEntry: js.UndefOr[scala.Boolean] = js.undefined,
+    unique: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDBIndexParameters = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(multiEntry)) __obj.updateDynamic("multiEntry")(multiEntry)
+    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[IDBIndexParameters]
+  }
+}
+

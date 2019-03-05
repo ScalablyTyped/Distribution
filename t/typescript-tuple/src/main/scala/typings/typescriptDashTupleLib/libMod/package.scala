@@ -35,6 +35,8 @@ package object libMod {
   type Reverse[Tuple /* <: js.Array[_] */] = typescriptDashTupleLib.libUtilsMod.Reverse[Tuple, js.Array[js.Any]]
   type ShortestTuple[TupleSet /* <: js.Array[js.Array[_]] */] = typescriptDashTupleLib.libUtilsMod.ShortestTuple[TupleSet, js.Array[js.Any]]
   type SingleTupleSet[Types /* <: js.Array[_] */] = typescriptDashTupleLib.libUtilsMod.SingleTupleSet[Types, js.Array[js.Any]]
+  type SliceStartQuantity[Tuple /* <: js.Array[_] */, Start /* <: scala.Double */, Quantity /* <: scala.Double */] = typescriptDashTupleLib.libUtilsMod.SliceStartQuantity[Tuple, Start, Quantity, js.Array[js.Any], js.Array[js.Any]]
   type SortTwoTuple[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */, WhenEqual] = typescriptDashTupleLib.libUtilsMod.SortTwoTuple[Left, Right, WhenEqual]
   type SplitInfiniteTuple[Tuple /* <: js.Array[_] */] = typescriptDashTupleLib.libUtilsMod.SplitInfiniteTuple[Tuple]
+  type Tail[Tuple /* <: js.Array[_] */] = typescriptDashTupleLib.libUtilsMod.Tail[Tuple]
 }

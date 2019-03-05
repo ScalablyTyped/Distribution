@@ -23,7 +23,10 @@ trait DataSource extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
   var proxyUrl: js.UndefOr[java.lang.String] = js.undefined
   var recordsetDelimiter: js.UndefOr[java.lang.String] = js.undefined
+  var requestHeader: js.UndefOr[js.Object] = js.undefined
   var roles: js.UndefOr[java.lang.String] = js.undefined
+  var subquery: js.UndefOr[java.lang.String] = js.undefined
+  var thousandSeparator: js.UndefOr[java.lang.String] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -47,7 +50,10 @@ object DataSource {
     password: java.lang.String = null,
     proxyUrl: java.lang.String = null,
     recordsetDelimiter: java.lang.String = null,
+    requestHeader: js.Object = null,
     roles: java.lang.String = null,
+    subquery: java.lang.String = null,
+    thousandSeparator: java.lang.String = null,
     username: java.lang.String = null
   ): DataSource = {
     val __obj = js.Dynamic.literal()
@@ -68,7 +74,10 @@ object DataSource {
     if (password != null) __obj.updateDynamic("password")(password)
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
     if (recordsetDelimiter != null) __obj.updateDynamic("recordsetDelimiter")(recordsetDelimiter)
+    if (requestHeader != null) __obj.updateDynamic("requestHeader")(requestHeader)
     if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (subquery != null) __obj.updateDynamic("subquery")(subquery)
+    if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[DataSource]
   }

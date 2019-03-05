@@ -11,3 +11,12 @@ trait AudioTrackListEventMap extends js.Object {
   var removetrack: TrackEvent
 }
 
+object AudioTrackListEventMap {
+  @scala.inline
+  def apply(addtrack: TrackEvent, change: Event, removetrack: TrackEvent): AudioTrackListEventMap = {
+    val __obj = js.Dynamic.literal(addtrack = addtrack, change = change, removetrack = removetrack)
+  
+    __obj.asInstanceOf[AudioTrackListEventMap]
+  }
+}
+

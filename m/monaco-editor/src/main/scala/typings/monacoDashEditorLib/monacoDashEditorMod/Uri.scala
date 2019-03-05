@@ -83,6 +83,7 @@ object Uri extends js.Object {
     * @param value A string which represents an Uri (see `Uri#toString`).
     */
   def parse(value: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
+  def parse(value: java.lang.String, _strict: scala.Boolean): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   def revive(data: js.Any): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   def revive(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
 }

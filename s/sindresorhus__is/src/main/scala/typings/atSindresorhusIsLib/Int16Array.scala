@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Int16Array
-  extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
+  extends TypedArray
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {
   /**
     * The size in bytes of each element in the array.
     */

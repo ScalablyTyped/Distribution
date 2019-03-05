@@ -38,6 +38,7 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
     vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
     vegaDashTypingsLib.typesSpecTitleMod.TitleFrame | vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
-    vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+    vegaDashTypingsLib.typesSpecValuesMod.AnchorValue, 
+    vegaDashTypingsLib.typesSpecTitleMod.TitleOrient | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ]
 }

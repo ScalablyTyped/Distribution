@@ -1638,14 +1638,20 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     path: TKey,
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
-    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](
     `this`: LoDashExplicitWrapper[js.UndefOr[TObject | scala.Null]],
     path: js.Array[TKey],
     defaultValue: TDefault
   ): LoDashExplicitWrapper[
-    (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault
+    (stdLib.Exclude[
+      /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any, 
+      js.UndefOr[scala.Nothing]
+    ]) | TDefault
   ] = js.native
   /**
     * @see _.groupBy

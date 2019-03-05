@@ -13,3 +13,18 @@ trait SVGFilterPrimitiveStandardAttributes extends js.Object {
   val y: SVGAnimatedLength
 }
 
+object SVGFilterPrimitiveStandardAttributes {
+  @scala.inline
+  def apply(
+    height: SVGAnimatedLength,
+    result: SVGAnimatedString,
+    width: SVGAnimatedLength,
+    x: SVGAnimatedLength,
+    y: SVGAnimatedLength
+  ): SVGFilterPrimitiveStandardAttributes = {
+    val __obj = js.Dynamic.literal(height = height, result = result, width = width, x = x, y = y)
+  
+    __obj.asInstanceOf[SVGFilterPrimitiveStandardAttributes]
+  }
+}
+

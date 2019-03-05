@@ -12,3 +12,20 @@ trait ScopedCredentialOptions extends js.Object {
   var timeoutSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScopedCredentialOptions {
+  @scala.inline
+  def apply(
+    excludeList: Array[ScopedCredentialDescriptor] = null,
+    extensions: WebAuthnExtensions = null,
+    rpId: java.lang.String = null,
+    timeoutSeconds: scala.Int | scala.Double = null
+  ): ScopedCredentialOptions = {
+    val __obj = js.Dynamic.literal()
+    if (excludeList != null) __obj.updateDynamic("excludeList")(excludeList)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (rpId != null) __obj.updateDynamic("rpId")(rpId)
+    if (timeoutSeconds != null) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScopedCredentialOptions]
+  }
+}
+

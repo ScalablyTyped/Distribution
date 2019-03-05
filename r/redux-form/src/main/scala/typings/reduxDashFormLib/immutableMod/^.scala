@@ -45,6 +45,6 @@ object ^ extends js.Object {
   ] = js.native
   def startSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def stopSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
-  def stopSubmit(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def stopSubmit(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[_, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
 }
 

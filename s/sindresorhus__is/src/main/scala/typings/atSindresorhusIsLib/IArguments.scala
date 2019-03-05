@@ -14,3 +14,17 @@ trait IArguments
   var length: scala.Double
 }
 
+object IArguments {
+  @scala.inline
+  def apply(
+    callee: Function,
+    iterator: js.Function0[IterableIterator[_]],
+    length: scala.Double,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] = null
+  ): IArguments = {
+    val __obj = js.Dynamic.literal(callee = callee, iterator = iterator, length = length)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[IArguments]
+  }
+}
+

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-b6966d"
+version := "3.6.0-f28e4a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,13 +21,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-1d199b",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-1a1d0f",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-71585c",
-  "org.scalablytyped" %%% "create-emotion" % "10.0.7-563ba5",
-  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-31eb81",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-49af40",
+  "org.scalablytyped" %%% "create-emotion" % "10.0.7-fadd08",
+  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-d713de",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-60f3ea",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20190212Z-c24282",
   "org.scalablytyped" %%% "detect-port" % "1.1-dt-20180214Z-96123e",
   "org.scalablytyped" %%% "emotion__cache" % "10.0.7-a901f7",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.4-818ba9",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.4-aa01a6",
   "org.scalablytyped" %%% "emotion__sheet" % "0.9.2-3f3db3",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-002494",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-38137e",
@@ -55,11 +55,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-6bf0c5",
   "org.scalablytyped" %%% "ramda" % "0.25-dt-20190228Z-295efd",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-aeafd9",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-7328c8",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-f7f3c1",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-e7b97a",
-  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-1769a3",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-1a5d56",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-aebcd2",
+  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-ccdcd8",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-502e31",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-33c2a4",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-c930b1",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-8d0e0b",
   "org.scalablytyped" %%% "source-map" % "0.7.3-39089e",

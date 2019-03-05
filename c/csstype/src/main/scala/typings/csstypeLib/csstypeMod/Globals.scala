@@ -16,6 +16,8 @@ trait Globals
      with BorderBlockStartColorProperty
      with BorderBlockStartStyleProperty
      with BorderBlockStartWidthProperty[js.Any]
+     with BorderBlockStyleProperty
+     with BorderBlockWidthProperty[js.Any]
      with BorderBottomColorProperty
      with BorderBottomStyleProperty
      with BorderBottomWidthProperty[js.Any]
@@ -26,6 +28,8 @@ trait Globals
      with BorderInlineStartColorProperty
      with BorderInlineStartStyleProperty
      with BorderInlineStartWidthProperty[js.Any]
+     with BorderInlineStyleProperty
+     with BorderInlineWidthProperty[js.Any]
      with BorderLeftColorProperty
      with BorderLeftStyleProperty
      with BorderLeftWidthProperty[js.Any]
@@ -207,7 +211,9 @@ trait Globals
      with _BaselineShiftProperty[js.Any]
      with _BlockOverflowProperty
      with _BlockSizeProperty[js.Any]
+     with _BorderBlockColorProperty
      with _BorderBlockEndProperty[js.Any]
+     with _BorderBlockProperty[js.Any]
      with _BorderBlockStartProperty[js.Any]
      with _BorderBottomProperty[js.Any]
      with _BorderColorProperty
@@ -215,7 +221,9 @@ trait Globals
      with _BorderImageRepeatProperty
      with _BorderImageSourceProperty
      with _BorderImageWidthProperty[js.Any]
+     with _BorderInlineColorProperty
      with _BorderInlineEndProperty[js.Any]
+     with _BorderInlineProperty[js.Any]
      with _BorderInlineStartProperty[js.Any]
      with _BorderLeftProperty[js.Any]
      with _BorderProperty[js.Any]
@@ -289,9 +297,11 @@ trait Globals
      with _ListStyleProperty
      with _ListStyleTypeProperty
      with _MarginBlockEndProperty[js.Any]
+     with _MarginBlockProperty[js.Any]
      with _MarginBlockStartProperty[js.Any]
      with _MarginBottomProperty[js.Any]
      with _MarginInlineEndProperty[js.Any]
+     with _MarginInlineProperty[js.Any]
      with _MarginInlineStartProperty[js.Any]
      with _MarginLeftProperty[js.Any]
      with _MarginProperty[js.Any]

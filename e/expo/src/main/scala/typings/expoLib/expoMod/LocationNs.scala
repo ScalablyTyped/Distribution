@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Location")
 @js.native
 object LocationNs extends js.Object {
+  @js.native
+  sealed trait Accuracy extends js.Object
+  
   trait Coords extends LocationProps {
     var accuracy: scala.Double
     var altitude: scala.Double
@@ -82,6 +85,42 @@ object LocationNs extends js.Object {
   def stopLocationUpdatesAsync(taskName: java.lang.String): js.Promise[scala.Unit] = js.native
   def watchHeadingAsync(callback: js.Function1[/* status */ HeadingStatus, scala.Unit]): fbemitterLib.fbemitterMod.EventSubscription = js.native
   def watchPositionAsync(options: LocationOptions, callback: LocationCallback): fbemitterLib.fbemitterMod.EventSubscription = js.native
+  @js.native
+  object Accuracy extends js.Object {
+    @js.native
+    sealed trait Balanced
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    @js.native
+    sealed trait BestForNavigation
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    @js.native
+    sealed trait High
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    @js.native
+    sealed trait Highest
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    @js.native
+    sealed trait Low
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    @js.native
+    sealed trait Lowest
+      extends expoLib.expoMod.LocationNs.Accuracy
+    
+    /* 3 */ val Balanced: Balanced with scala.Double = js.native
+    /* 6 */ val BestForNavigation: BestForNavigation with scala.Double = js.native
+    /* 4 */ val High: High with scala.Double = js.native
+    /* 5 */ val Highest: Highest with scala.Double = js.native
+    /* 2 */ val Low: Low with scala.Double = js.native
+    /* 1 */ val Lowest: Lowest with scala.Double = js.native
+    @JSBracketAccess
+    def apply(value: scala.Double): js.UndefOr[expoLib.expoMod.LocationNs.Accuracy with scala.Double] = js.native
+  }
+  
   type LocationCallback = js.Function1[/* data */ LocationData, scala.Unit]
 }
 

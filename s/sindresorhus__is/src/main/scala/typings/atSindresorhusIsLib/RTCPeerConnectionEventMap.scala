@@ -18,3 +18,23 @@ trait RTCPeerConnectionEventMap extends js.Object {
   var track: RTCTrackEvent
 }
 
+object RTCPeerConnectionEventMap {
+  @scala.inline
+  def apply(
+    connectionstatechange: Event,
+    datachannel: RTCDataChannelEvent,
+    icecandidate: RTCPeerConnectionIceEvent,
+    icecandidateerror: RTCPeerConnectionIceErrorEvent,
+    iceconnectionstatechange: Event,
+    icegatheringstatechange: Event,
+    negotiationneeded: Event,
+    signalingstatechange: Event,
+    statsended: RTCStatsEvent,
+    track: RTCTrackEvent
+  ): RTCPeerConnectionEventMap = {
+    val __obj = js.Dynamic.literal(connectionstatechange = connectionstatechange, datachannel = datachannel, icecandidate = icecandidate, icecandidateerror = icecandidateerror, iceconnectionstatechange = iceconnectionstatechange, icegatheringstatechange = icegatheringstatechange, negotiationneeded = negotiationneeded, signalingstatechange = signalingstatechange, statsended = statsended, track = track)
+  
+    __obj.asInstanceOf[RTCPeerConnectionEventMap]
+  }
+}
+

@@ -33,29 +33,29 @@ trait TweenConfig
     */
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   /**  A () => void that should be called when the animation has completed. */
-  var onComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** An Array of parameters to pass the onComplete () => void */
   var onCompleteParams: js.UndefOr[js.Array[_]] = js.undefined
   /** Defines the scope of the onComplete () => void (what "this" refers to inside that () => void). */
   var onCompleteScope: js.UndefOr[js.Object] = js.undefined
   /** A () => void that should be called when the tween gets overwritten by another tween. */
-  var onOverwrite: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onRepeat: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onOverwrite: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
+  var onRepeat: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   var onRepeatScope: js.UndefOr[js.Object] = js.undefined
   /** A () => void that should be called when the tween has reached its beginning again from the reverse direction. */
-  var onReverseComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onReverseComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** An Array of parameters to pass the onReverseComplete () => void. */
   var onReverseCompleteParams: js.UndefOr[js.Array[_]] = js.undefined
   /** Defines the scope of the onReverseComplete () => void (what "this" refers to inside that () => void). */
   var onReverseCompleteScope: js.UndefOr[js.Object] = js.undefined
   /** A () => void that should be called when the tween begins (when its time changes from 0 to some other value which can happen more than once if the tween is restarted multiple times). */
-  var onStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onStart: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** An Array of parameters to pass the onStart () => void. */
   var onStartParams: js.UndefOr[js.Array[_]] = js.undefined
   /** Defines the scope of the onStart () => void (what "this" refers to inside that () => void). */
   var onStartScope: js.UndefOr[js.Object] = js.undefined
   /** A () => void that should be called every time the animation updates (on every frame while the animation is active). */
-  var onUpdate: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** An Array of parameters to pass the onUpdate () => void. */
   var onUpdateParams: js.UndefOr[js.Array[_]] = js.undefined
   /** Defines the scope of the onUpdate () => void (what "this" refers to inside that () => void). */
@@ -89,19 +89,19 @@ object TweenConfig {
     ease: Ease = null,
     immediateRender: js.UndefOr[scala.Boolean] = js.undefined,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
-    onComplete: js.Function0[scala.Unit] = null,
+    onComplete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onCompleteParams: js.Array[_] = null,
     onCompleteScope: js.Object = null,
-    onOverwrite: js.Function0[scala.Unit] = null,
-    onRepeat: js.Function0[scala.Unit] = null,
+    onOverwrite: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    onRepeat: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onRepeatScope: js.Object = null,
-    onReverseComplete: js.Function0[scala.Unit] = null,
+    onReverseComplete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onReverseCompleteParams: js.Array[_] = null,
     onReverseCompleteScope: js.Object = null,
-    onStart: js.Function0[scala.Unit] = null,
+    onStart: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onStartParams: js.Array[_] = null,
     onStartScope: js.Object = null,
-    onUpdate: js.Function0[scala.Unit] = null,
+    onUpdate: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
     onUpdateParams: js.Array[_] = null,
     onUpdateScope: js.Object = null,
     overwrite: java.lang.String | scala.Double = null,

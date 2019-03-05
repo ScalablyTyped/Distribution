@@ -81,8 +81,7 @@ trait IndexSettings extends js.Object {
   var attributesToSnippet: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * List of attributes on which to do a decomposition of camel case words.
-    *
-    https://www.algolia.com/doc/api-reference/api-parameters/camelCaseAttributes/
+    * https://www.algolia.com/doc/api-reference/api-parameters/camelCaseAttributes/
     */
   var camelCaseAttributes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
@@ -202,6 +201,16 @@ trait IndexSettings extends js.Object {
     */
   var placeholders: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]] = js.undefined
   /**
+    * Sets the languages to be used by language-specific settings and functionalities
+    * such as ignorePlurals, removeStopWords, and CJK word-detection.
+    * https://www.algolia.com/doc/api-reference/api-parameters/queryLanguages/
+    */
+  var queryLanguages: js.UndefOr[
+    js.Array[
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+    ]
+  ] = js.undefined
+  /**
     * Selects how the query words are interpreted
     * default: 'prefixLast'
     * 'prefixAll' All query words are interpreted as prefixes. This option is not recommended.
@@ -266,6 +275,10 @@ trait IndexSettings extends js.Object {
     * https://github.com/algolia/algoliasearch-client-js#snippetellipsistext
     */
   var snippetEllipsisText: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Controls how facet values are sorted.
+    * https://www.algolia.com/doc/api-reference/api-parameters/sortFacetValuesBy/
+    */
   var sortFacetValuesBy: js.UndefOr[
     algoliasearchLib.algoliasearchLibStrings.count | algoliasearchLib.algoliasearchLibStrings.alpha
   ] = js.undefined
@@ -326,6 +339,9 @@ object IndexSettings {
     numericAttributesToIndex: js.Array[java.lang.String] = null,
     optionalWords: js.Array[java.lang.String] = null,
     placeholders: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    queryLanguages: js.Array[
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 68 */ js.Any
+    ] = null,
     queryType: algoliasearchLib.algoliasearchLibStrings.prefixAll | algoliasearchLib.algoliasearchLibStrings.prefixLast | algoliasearchLib.algoliasearchLibStrings.prefixNone = null,
     ranking: js.Array[java.lang.String] = null,
     removeStopWords: scala.Boolean | js.Array[java.lang.String] = null,
@@ -370,6 +386,7 @@ object IndexSettings {
     if (numericAttributesToIndex != null) __obj.updateDynamic("numericAttributesToIndex")(numericAttributesToIndex)
     if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords)
     if (placeholders != null) __obj.updateDynamic("placeholders")(placeholders)
+    if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages)
     if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
     if (ranking != null) __obj.updateDynamic("ranking")(ranking)
     if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])

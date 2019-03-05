@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class MaterialCreator ()
   extends threeLib.threeDashMtlloaderMod.MaterialCreator {
   def this(baseUrl: java.lang.String) = this()
-  def this(baseUrl: java.lang.String, options: js.Any) = this()
+  def this(baseUrl: java.lang.String, options: threeLib.threeDashMtlloaderMod.MaterialCreatorOptions) = this()
 }
 

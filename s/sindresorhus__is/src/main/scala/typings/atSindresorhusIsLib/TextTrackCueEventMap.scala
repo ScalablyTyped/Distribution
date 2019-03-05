@@ -10,3 +10,12 @@ trait TextTrackCueEventMap extends js.Object {
   var exit: Event
 }
 
+object TextTrackCueEventMap {
+  @scala.inline
+  def apply(enter: Event, exit: Event): TextTrackCueEventMap = {
+    val __obj = js.Dynamic.literal(enter = enter, exit = exit)
+  
+    __obj.asInstanceOf[TextTrackCueEventMap]
+  }
+}
+

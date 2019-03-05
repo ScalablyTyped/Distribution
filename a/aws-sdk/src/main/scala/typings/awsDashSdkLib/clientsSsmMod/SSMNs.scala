@@ -3512,6 +3512,20 @@ object SSMNs extends js.Object {
     var Sources: js.UndefOr[PatchSourceList] = js.undefined
   }
   
+  trait GetServiceSettingRequest extends js.Object {
+    /**
+      * The ID of the service setting to get.
+      */
+    var SettingId: ServiceSettingId
+  }
+  
+  trait GetServiceSettingResult extends js.Object {
+    /**
+      * The query result of the current service setting.
+      */
+    var ServiceSetting: js.UndefOr[ServiceSetting] = js.undefined
+  }
+  
   trait InstanceAggregatedAssociationOverview extends js.Object {
     /**
       * Detailed status information about the aggregated associations.
@@ -5430,6 +5444,20 @@ object SSMNs extends js.Object {
   
   trait RemoveTagsFromResourceResult extends js.Object
   
+  trait ResetServiceSettingRequest extends js.Object {
+    /**
+      * The ID of the service setting to reset.
+      */
+    var SettingId: ServiceSettingId
+  }
+  
+  trait ResetServiceSettingResult extends js.Object {
+    /**
+      * The current, effective service setting after calling the ResetServiceSetting API action.
+      */
+    var ServiceSetting: js.UndefOr[ServiceSetting] = js.undefined
+  }
+  
   trait ResolvedTargets extends js.Object {
     /**
       * A list of parameter values sent to targets that resolved during the Automation execution.
@@ -5689,6 +5717,33 @@ object SSMNs extends js.Object {
       * The request as it was received by Systems Manager. Also provides the command ID which can be used future references to this request.
       */
     var Command: js.UndefOr[Command] = js.undefined
+  }
+  
+  trait ServiceSetting extends js.Object {
+    /**
+      * The ARN of the service setting.
+      */
+    var ARN: js.UndefOr[String] = js.undefined
+    /**
+      * The last time the service setting was modified.
+      */
+    var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
+    /**
+      * The ARN of the last modified user. This field is populated only if the setting value was overwritten.
+      */
+    var LastModifiedUser: js.UndefOr[String] = js.undefined
+    /**
+      * The ID of the service setting.
+      */
+    var SettingId: js.UndefOr[ServiceSettingId] = js.undefined
+    /**
+      * The value of the service setting.
+      */
+    var SettingValue: js.UndefOr[ServiceSettingValue] = js.undefined
+    /**
+      * The status of the service setting. The value can be Default, Customized or PendingUpdate.   Default: The current setting uses a default value provisioned by the AWS service team.   Customized: The current setting use a custom value specified by the customer.   PendingUpdate: The current setting uses a default or custom value, but a setting change request is pending approval.  
+      */
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   trait Session extends js.Object {
@@ -7738,6 +7793,29 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetPatchBaselineForPatchGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the UpdateServiceSetting API action to change the default setting. Or use the ResetServiceSetting to change the value back to the original value defined by the AWS service team. Query the current service setting for the account. 
+      */
+    def getServiceSetting(): awsDashSdkLib.libRequestMod.Request[GetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getServiceSetting(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the UpdateServiceSetting API action to change the default setting. Or use the ResetServiceSetting to change the value back to the original value defined by the AWS service team. Query the current service setting for the account. 
+      */
+    def getServiceSetting(params: GetServiceSettingRequest): awsDashSdkLib.libRequestMod.Request[GetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getServiceSetting(
+      params: GetServiceSettingRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * A parameter label is a user-defined alias to help you manage different versions of a parameter. When you modify a parameter, Systems Manager automatically saves a new version and increments the version number by one. A label can help you remember the purpose of a parameter when there are multiple versions.  Parameter labels have the following requirements and restrictions.   A version of a parameter can have a maximum of 10 labels.   You can't attach the same label to different versions of the same parameter. For example, if version 1 has the label Production, then you can't attach Production to version 2.   You can move a label from one version of a parameter to another.   You can't create a label when you create a new parameter. You must attach a label to a specific version of a parameter.   You can't delete a parameter label. If you no longer want to use a parameter label, then you must move it to a different version of a parameter.   A label can have a maximum of 100 characters.   Labels can contain letters (case sensitive), numbers, periods (.), hyphens (-), or underscores (_).   Labels can't begin with a number, "aws," or "ssm" (not case sensitive). If a label fails to meet these requirements, then the label is not associated with a parameter and the system displays it in the list of InvalidLabels.  
       */
     def labelParameterVersion(): awsDashSdkLib.libRequestMod.Request[LabelParameterVersionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -8244,6 +8322,29 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the GetServiceSetting API action to view the current value. Use the UpdateServiceSetting API action to change the default setting.  Reset the service setting for the account to the default value as provisioned by the AWS service team. 
+      */
+    def resetServiceSetting(): awsDashSdkLib.libRequestMod.Request[ResetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def resetServiceSetting(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ResetServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ResetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the GetServiceSetting API action to view the current value. Use the UpdateServiceSetting API action to change the default setting.  Reset the service setting for the account to the default value as provisioned by the AWS service team. 
+      */
+    def resetServiceSetting(params: ResetServiceSettingRequest): awsDashSdkLib.libRequestMod.Request[ResetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def resetServiceSetting(
+      params: ResetServiceSettingRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ResetServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ResetServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Reconnects a session to an instance after it has been disconnected. Connections can be resumed for disconnected sessions, but not terminated sessions.  This command is primarily for use by client machines to automatically reconnect during intermittent network issues. It is not intended for any other use. 
       */
     def resumeSession(): awsDashSdkLib.libRequestMod.Request[ResumeSessionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -8634,6 +8735,29 @@ object SSMNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdatePatchBaselineResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the GetServiceSetting API action to view the current value. Or, use the ResetServiceSetting to change the value back to the original value defined by the AWS service team. Update the service setting for the account. 
+      */
+    def updateServiceSetting(): awsDashSdkLib.libRequestMod.Request[UpdateServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateServiceSetting(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the GetServiceSetting API action to view the current value. Or, use the ResetServiceSetting to change the value back to the original value defined by the AWS service team. Update the service setting for the account. 
+      */
+    def updateServiceSetting(params: UpdateServiceSettingRequest): awsDashSdkLib.libRequestMod.Request[UpdateServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateServiceSetting(
+      params: UpdateServiceSettingRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateServiceSettingResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateServiceSettingResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   trait UpdateAssociationRequest extends js.Object {
@@ -9169,6 +9293,19 @@ object SSMNs extends js.Object {
     var Sources: js.UndefOr[PatchSourceList] = js.undefined
   }
   
+  trait UpdateServiceSettingRequest extends js.Object {
+    /**
+      * The ID of the service setting to update.
+      */
+    var SettingId: ServiceSettingId
+    /**
+      * The new value to specify for the service setting.
+      */
+    var SettingValue: ServiceSettingValue
+  }
+  
+  trait UpdateServiceSettingResult extends js.Object
+  
   trait _AssociationComplianceSeverity extends js.Object
   
   trait _AssociationExecutionFilterKey extends js.Object
@@ -9675,6 +9812,8 @@ object SSMNs extends js.Object {
   type ScheduleExpression = java.lang.String
   type ScheduledWindowExecutionList = js.Array[ScheduledWindowExecution]
   type ServiceRole = java.lang.String
+  type ServiceSettingId = java.lang.String
+  type ServiceSettingValue = java.lang.String
   type SessionDetails = java.lang.String
   type SessionFilterKey = _SessionFilterKey | java.lang.String
   type SessionFilterList = js.Array[SessionFilter]

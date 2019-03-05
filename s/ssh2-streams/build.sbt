@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ssh2-streams"
-version := "v0.1.9-dt-20190126Z-81c72a"
+version := "v0.1.9-dt-20190218Z-4dd56e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

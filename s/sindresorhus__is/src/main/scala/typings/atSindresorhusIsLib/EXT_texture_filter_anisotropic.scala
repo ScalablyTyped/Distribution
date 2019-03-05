@@ -10,3 +10,12 @@ trait EXT_texture_filter_anisotropic extends js.Object {
   val TEXTURE_MAX_ANISOTROPY_EXT: GLenum
 }
 
+object EXT_texture_filter_anisotropic {
+  @scala.inline
+  def apply(MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum, TEXTURE_MAX_ANISOTROPY_EXT: GLenum): EXT_texture_filter_anisotropic = {
+    val __obj = js.Dynamic.literal(MAX_TEXTURE_MAX_ANISOTROPY_EXT = MAX_TEXTURE_MAX_ANISOTROPY_EXT, TEXTURE_MAX_ANISOTROPY_EXT = TEXTURE_MAX_ANISOTROPY_EXT)
+  
+    __obj.asInstanceOf[EXT_texture_filter_anisotropic]
+  }
+}
+

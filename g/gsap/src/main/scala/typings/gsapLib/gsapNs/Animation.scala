@@ -30,10 +30,19 @@ class Animation () extends js.Object {
     * Gets or sets an event callback like "onComplete", "onUpdate", "onStart", "onReverseComplete" or "onRepeat" (onRepeat only applies to TweenMax or TimelineMax instances) along with any
     * parameters that should be passed to that callback.
     */
-  def eventCallback(`type`: java.lang.String): js.Function0[scala.Unit] = js.native
-  def eventCallback(`type`: java.lang.String, callback: js.Function0[scala.Unit]): Animation = js.native
-  def eventCallback(`type`: java.lang.String, callback: js.Function0[scala.Unit], params: js.Array[_]): Animation = js.native
-  def eventCallback(`type`: java.lang.String, callback: js.Function0[scala.Unit], params: js.Array[_], scope: js.Any): Animation = js.native
+  def eventCallback(`type`: java.lang.String): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
+  def eventCallback(`type`: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Animation = js.native
+  def eventCallback(
+    `type`: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_]
+  ): Animation = js.native
+  def eventCallback(
+    `type`: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    params: js.Array[_],
+    scope: js.Any
+  ): Animation = js.native
   /**
     * Clears any initialization data (like starting/ending values in tweens) which can be useful if, for example, you want to restart a tween without reverting to any previously recorded
     * starting values.

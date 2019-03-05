@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FormData extends js.Object {
+trait FormData extends _BodyInit {
   def append(name: java.lang.String, value: Blob): scala.Unit = js.native
   def append(name: java.lang.String, value: Blob, fileName: java.lang.String): scala.Unit = js.native
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native

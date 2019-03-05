@@ -70,7 +70,7 @@ object domNs extends js.Object {
     def hasClass(elm: java.lang.String, cls: java.lang.String): scala.Boolean = js.native
     def hide(elm: java.lang.String): scala.Unit = js.native
     def insertAfter[T](node: stdLib.Element, referenceNode: stdLib.Element): stdLib.Element | js.Array[T] = js.native
-    def is(elm: stdLib.Node, selector: java.lang.String): scala.Unit = js.native
+    def is(elm: stdLib.Node, selector: java.lang.String): scala.Boolean = js.native
     def isBlock(node: stdLib.Node): scala.Boolean = js.native
     def isEmpty(): scala.Boolean = js.native
     def isEmpty(elements: js.Object): scala.Boolean = js.native
@@ -263,8 +263,8 @@ object domNs extends js.Object {
     def setContent(content: java.lang.String): scala.Unit = js.native
     def setContent(content: java.lang.String, args: js.Object): scala.Unit = js.native
     def setCursorLocation(): scala.Unit = js.native
-    def setCursorLocation(node: tinymceLib.tinymceMod.htmlNs.Node): scala.Unit = js.native
-    def setCursorLocation(node: tinymceLib.tinymceMod.htmlNs.Node, offset: scala.Double): scala.Unit = js.native
+    def setCursorLocation(node: stdLib.Node): scala.Unit = js.native
+    def setCursorLocation(node: stdLib.Node, offset: scala.Double): scala.Unit = js.native
     def setNode(elm: stdLib.Element): stdLib.Element = js.native
     def setRng(rng: stdLib.Range): scala.Unit = js.native
     def setRng(rng: stdLib.Range, forward: scala.Boolean): scala.Unit = js.native

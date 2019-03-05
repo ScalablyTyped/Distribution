@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimelineMax () extends TimelineLite {
   def this(vars: js.Object) = this()
-  def addCallback(callback: js.Function0[scala.Unit], position: js.Any): TimelineMax = js.native
-  def addCallback(callback: js.Function0[scala.Unit], position: js.Any, params: js.Array[_]): TimelineMax = js.native
-  def addCallback(callback: js.Function0[scala.Unit], position: js.Any, params: js.Array[_], scope: js.Any): TimelineMax = js.native
+  def addCallback(callback: js.Function1[/* repeated */ js.Any, scala.Unit], position: js.Any): TimelineMax = js.native
+  def addCallback(callback: js.Function1[/* repeated */ js.Any, scala.Unit], position: js.Any, params: js.Array[_]): TimelineMax = js.native
+  def addCallback(
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
+    position: js.Any,
+    params: js.Array[_],
+    scope: js.Any
+  ): TimelineMax = js.native
   def currentLabel(): java.lang.String = js.native
   def currentLabel(value: java.lang.String): TimelineMax = js.native
   def getActive(): Tween | js.Array[Timeline] = js.native
@@ -22,8 +27,8 @@ class TimelineMax () extends TimelineLite {
   def getLabelAfter(time: scala.Double): java.lang.String = js.native
   def getLabelBefore(time: scala.Double): java.lang.String = js.native
   def getLabelsArray(): js.Array[gsapLib.Anon_Name] = js.native
-  def removeCallback(callback: js.Function0[scala.Unit]): TimelineMax = js.native
-  def removeCallback(callback: js.Function0[scala.Unit], timeOrLabel: js.Any): TimelineMax = js.native
+  def removeCallback(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): TimelineMax = js.native
+  def removeCallback(callback: js.Function1[/* repeated */ js.Any, scala.Unit], timeOrLabel: js.Any): TimelineMax = js.native
   def removePause(position: js.Any): TimelineMax = js.native
   def repeat(): scala.Double = js.native
   def repeat(value: scala.Double): TimelineMax = js.native
