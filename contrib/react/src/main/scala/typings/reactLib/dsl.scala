@@ -18,13 +18,16 @@ object dsl {
       f.asInstanceOf[FC[P]]
   }
 
-  @inline implicit def fromComponent[P](_ctor: ComponentClass[P, _]): BuildComponent[P] = dsl.c(_ctor)
+  @inline implicit def fromComponentClass[P](_ctor: ComponentClass[P, _]): BuildComponent[P] = dsl.c(_ctor)
 
   @inline implicit def fromInstantiable1[P](_ctor: Instantiable1[P, ReactElement[_]]): BuildComponent[P] =
     dsl.c(_ctor)
 
   @inline implicit def fromInstantiable2[P](_ctor: Instantiable2[P, _, ReactElement[_]]): BuildComponent[P] =
     dsl.c(_ctor)
+
+  @inline implicit def fromComponentType[P](_ctor: ComponentType[P]): BuildComponent[P] =
+    c(_ctor.asInstanceOf[ComponentClass[P, _]])
 
   @inline implicit def fromFc[P](_ctor: FunctionComponent[P]): BuildComponent[P] = dsl.c(_ctor)
 
